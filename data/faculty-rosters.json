@@ -32,12 +32,12 @@
     "student": 25,
     "postdoc": 7
    },
-   "reviewed": 320,
+   "reviewed": 360,
    "reviewOutcomes": {
-    "confirmed-faculty": 300,
-    "not-listed": 7,
-    "extraction-noise": 8,
-    "unresolved": 3,
+    "confirmed-faculty": 326,
+    "not-listed": 15,
+    "extraction-noise": 13,
+    "unresolved": 4,
     "same-as-om-list": 2
    },
    "universities": 95,
@@ -2773,7 +2773,7 @@
    "listed": 378,
    "omList": 8,
    "unverified": 370,
-   "reviewed": 0
+   "reviewed": 4
   },
   {
    "universityId": "clemson-university",
@@ -2781,7 +2781,7 @@
    "listed": 279,
    "omList": 3,
    "unverified": 276,
-   "reviewed": 65
+   "reviewed": 66
   },
   {
    "universityId": "dartmouth-college",
@@ -2797,7 +2797,7 @@
    "listed": 254,
    "omList": 0,
    "unverified": 254,
-   "reviewed": 25
+   "reviewed": 27
   },
   {
    "universityId": "western-university",
@@ -2805,7 +2805,7 @@
    "listed": 248,
    "omList": 10,
    "unverified": 238,
-   "reviewed": 0
+   "reviewed": 8
   },
   {
    "universityId": "wilfrid-laurier-university",
@@ -2813,7 +2813,7 @@
    "listed": 244,
    "omList": 0,
    "unverified": 244,
-   "reviewed": 0
+   "reviewed": 1
   },
   {
    "universityId": "yale-university",
@@ -2821,7 +2821,7 @@
    "listed": 170,
    "omList": 10,
    "unverified": 159,
-   "reviewed": 0
+   "reviewed": 4
   },
   {
    "universityId": "georgia-institute-of-technology",
@@ -2829,7 +2829,7 @@
    "listed": 163,
    "omList": 2,
    "unverified": 156,
-   "reviewed": 2
+   "reviewed": 4
   },
   {
    "universityId": "university-of-california-irvine",
@@ -2853,7 +2853,7 @@
    "listed": 106,
    "omList": 7,
    "unverified": 98,
-   "reviewed": 0
+   "reviewed": 1
   },
   {
    "universityId": "the-hong-kong-university-of-science-and-technology",
@@ -2933,7 +2933,7 @@
    "listed": 47,
    "omList": 0,
    "unverified": 47,
-   "reviewed": 3
+   "reviewed": 19
   },
   {
    "universityId": "new-york-university-nyu",
@@ -2949,7 +2949,7 @@
    "listed": 43,
    "omList": 0,
    "unverified": 43,
-   "reviewed": 32
+   "reviewed": 33
   },
   {
    "universityId": "concordia-university",
@@ -6473,7 +6473,33 @@
    "researchStatus": null,
    "firstJob": null,
    "verification": "unverified",
-   "review": null
+   "review": {
+    "status": "confirmed-faculty",
+    "checkedAt": "2026-10-16",
+    "reason": "The College of Business Faculty & Staff directory (the redirect target of cob.alfaisal.edu/faculty_staff) lists him as 'Ph.D., University of Birmingham, UK. Associate Professor, Department of Marketing, College of Business'; the Faculty Portal profile it links to is client-rendered, and its data endpoint gives the designation Associate Professor of Marketing and a biography stating a Ph.D. in e-marketing from the University of Birmingham, with no year.",
+    "sources": [
+     {
+      "url": "https://cob.alfaisal.edu/en/faculty-staff",
+      "title": "Alfaisal University College of Business, Faculty & Staff directory"
+     },
+     {
+      "url": "https://fp.alfaisal.edu/profile/ashaltoni",
+      "title": "Abdel Monim Shaltoni, Alfaisal Faculty Portal profile (client-rendered)"
+     },
+     {
+      "url": "https://fp.alfaisal.edu/api/profile/ashaltoni",
+      "title": "Abdel Monim Shaltoni, Alfaisal Faculty Portal profile data (JSON)"
+     }
+    ],
+    "profileUrl": "https://fp.alfaisal.edu/profile/ashaltoni",
+    "titleConfirmed": "Associate Professor",
+    "areaConfirmed": "Department of Marketing, College of Business",
+    "phdInstitution": "University of Birmingham",
+    "phdYear": null,
+    "phdSourceUrl": "https://cob.alfaisal.edu/en/faculty-staff",
+    "omListFacultyId": null,
+    "note": null
+   }
   },
   {
    "id": "roster:alfaisal-university-au:admin-coordinator",
@@ -6504,7 +6530,25 @@
    "researchStatus": null,
    "firstJob": null,
    "verification": "unverified",
-   "review": null
+   "review": {
+    "status": "extraction-noise",
+    "checkedAt": "2026-10-16",
+    "reason": "Not a person: 'Admin Coordinator' is the job title shown under many entries in the Staff section of the College of Business Faculty & Staff directory (for example Moneerah Mutlaq Ben-Teni and Noura Abdullah AlMouzan), and the title attached to this entry (Administrative Specialist, Dean Assistant) belongs to the next staff entry, Sharifah Ahmed Bentani.",
+    "sources": [
+     {
+      "url": "https://cob.alfaisal.edu/en/faculty-staff",
+      "title": "Alfaisal University College of Business, Faculty & Staff directory"
+     }
+    ],
+    "profileUrl": null,
+    "titleConfirmed": null,
+    "areaConfirmed": null,
+    "phdInstitution": null,
+    "phdYear": null,
+    "phdSourceUrl": null,
+    "omListFacultyId": null,
+    "note": null
+   }
   },
   {
    "id": "roster:alfaisal-university-au:ahmed-ahmed-elamer",
@@ -6535,7 +6579,33 @@
    "researchStatus": null,
    "firstJob": null,
    "verification": "unverified",
-   "review": null
+   "review": {
+    "status": "confirmed-faculty",
+    "checkedAt": "2026-10-16",
+    "reason": "The College of Business Faculty & Staff directory lists him as 'PhD Univ. of Hudderfield, UK. Associate Professor, Department of Accounting, College of Business'; the Faculty Portal profile data gives the designation Associate Professor of Accounting and a biography stating he earned his PhD in Accounting from the University of Huddersfield, United Kingdom, with no year.",
+    "sources": [
+     {
+      "url": "https://cob.alfaisal.edu/en/faculty-staff",
+      "title": "Alfaisal University College of Business, Faculty & Staff directory"
+     },
+     {
+      "url": "https://fp.alfaisal.edu/profile/aelamer",
+      "title": "Ahmed Ahmed Elamer, Alfaisal Faculty Portal profile (client-rendered)"
+     },
+     {
+      "url": "https://fp.alfaisal.edu/api/profile/aelamer",
+      "title": "Ahmed Ahmed Elamer, Alfaisal Faculty Portal profile data (JSON)"
+     }
+    ],
+    "profileUrl": "https://fp.alfaisal.edu/profile/aelamer",
+    "titleConfirmed": "Associate Professor",
+    "areaConfirmed": "Department of Accounting, College of Business",
+    "phdInstitution": "University of Huddersfield",
+    "phdYear": null,
+    "phdSourceUrl": "https://fp.alfaisal.edu/api/profile/aelamer",
+    "omListFacultyId": null,
+    "note": null
+   }
   },
   {
    "id": "roster:alfaisal-university-au:ahmed-alanazi",
@@ -6566,7 +6636,33 @@
    "researchStatus": null,
    "firstJob": null,
    "verification": "unverified",
-   "review": null
+   "review": {
+    "status": "confirmed-faculty",
+    "checkedAt": "2026-10-16",
+    "reason": "The College of Business Faculty & Staff directory lists him as 'Ph.D., Griffith University, Australia. Assistant Professor, Department of Finance, College of Business'; the Faculty Portal profile data (name Ahmed Sair Alanazi, designation level Assistant Professor, department Finance) describes him as an assistant professor in finance and Vice-dean for community outreach but does not name the doctorate, so only the directory states the institution and no year is given.",
+    "sources": [
+     {
+      "url": "https://cob.alfaisal.edu/en/faculty-staff",
+      "title": "Alfaisal University College of Business, Faculty & Staff directory"
+     },
+     {
+      "url": "https://fp.alfaisal.edu/profile/ahalanazi",
+      "title": "Ahmed Alanazi, Alfaisal Faculty Portal profile (client-rendered)"
+     },
+     {
+      "url": "https://fp.alfaisal.edu/api/profile/ahalanazi",
+      "title": "Ahmed Alanazi, Alfaisal Faculty Portal profile data (JSON)"
+     }
+    ],
+    "profileUrl": "https://fp.alfaisal.edu/profile/ahalanazi",
+    "titleConfirmed": "Assistant Professor",
+    "areaConfirmed": "Department of Finance, College of Business",
+    "phdInstitution": "Griffith University",
+    "phdYear": null,
+    "phdSourceUrl": "https://cob.alfaisal.edu/en/faculty-staff",
+    "omListFacultyId": null,
+    "note": null
+   }
   },
   {
    "id": "roster:alfaisal-university-au:amina-raza-malik",
@@ -6597,7 +6693,33 @@
    "researchStatus": null,
    "firstJob": null,
    "verification": "unverified",
-   "review": null
+   "review": {
+    "status": "confirmed-faculty",
+    "checkedAt": "2026-10-16",
+    "reason": "The College of Business Faculty & Staff directory lists her as 'Ph.D., York University, Canada. Associate Professor, Department of Management, College of Business'; the Faculty Portal profile data gives the designation Associate Professor of Management and a biography stating a PhD in Human Resource Management from Canada, with no year.",
+    "sources": [
+     {
+      "url": "https://cob.alfaisal.edu/en/faculty-staff",
+      "title": "Alfaisal University College of Business, Faculty & Staff directory"
+     },
+     {
+      "url": "https://fp.alfaisal.edu/profile/amalik",
+      "title": "Amina Raza Malik, Alfaisal Faculty Portal profile (client-rendered)"
+     },
+     {
+      "url": "https://fp.alfaisal.edu/api/profile/amalik",
+      "title": "Amina Raza Malik, Alfaisal Faculty Portal profile data (JSON)"
+     }
+    ],
+    "profileUrl": "https://fp.alfaisal.edu/profile/amalik",
+    "titleConfirmed": "Associate Professor",
+    "areaConfirmed": "Department of Management, College of Business",
+    "phdInstitution": "York University",
+    "phdYear": null,
+    "phdSourceUrl": "https://cob.alfaisal.edu/en/faculty-staff",
+    "omListFacultyId": null,
+    "note": null
+   }
   },
   {
    "id": "roster:alfaisal-university-au:andrew-richard-timming",
@@ -6628,7 +6750,33 @@
    "researchStatus": null,
    "firstJob": null,
    "verification": "unverified",
-   "review": null
+   "review": {
+    "status": "confirmed-faculty",
+    "checkedAt": "2026-10-16",
+    "reason": "The College of Business Faculty & Staff directory lists him as 'PhD, University of Cambridge, UK. Professor of Management, College of Business' with no department line; the Faculty Portal profile data gives the designation Professor of Management, department Management, and a biography stating he holds a Ph.D. from the University of Cambridge, with no year.",
+    "sources": [
+     {
+      "url": "https://cob.alfaisal.edu/en/faculty-staff",
+      "title": "Alfaisal University College of Business, Faculty & Staff directory"
+     },
+     {
+      "url": "https://fp.alfaisal.edu/profile/atimming",
+      "title": "Andrew Richard Timming, Alfaisal Faculty Portal profile (client-rendered)"
+     },
+     {
+      "url": "https://fp.alfaisal.edu/api/profile/atimming",
+      "title": "Andrew Richard Timming, Alfaisal Faculty Portal profile data (JSON)"
+     }
+    ],
+    "profileUrl": "https://fp.alfaisal.edu/profile/atimming",
+    "titleConfirmed": "Professor of Management",
+    "areaConfirmed": "Management, College of Business",
+    "phdInstitution": "University of Cambridge",
+    "phdYear": null,
+    "phdSourceUrl": "https://cob.alfaisal.edu/en/faculty-staff",
+    "omListFacultyId": null,
+    "note": null
+   }
   },
   {
    "id": "roster:alfaisal-university-au:anfaal-ahmad-khan",
@@ -6659,7 +6807,33 @@
    "researchStatus": null,
    "firstJob": null,
    "verification": "unverified",
-   "review": null
+   "review": {
+    "status": "confirmed-faculty",
+    "checkedAt": "2026-10-16",
+    "reason": "The College of Business Faculty & Staff directory lists her as 'Ph.D., University of Glasgow, UK. Assistant Professor, Department of Accounting, College of Business'; the Faculty Portal profile data (name shown as Anfaal Ahmad) gives the designation Assistant Professor of Accounting and a biography stating she completed her PhD in Accounting and Finance from the University of Glasgow, U.K., with no year.",
+    "sources": [
+     {
+      "url": "https://cob.alfaisal.edu/en/faculty-staff",
+      "title": "Alfaisal University College of Business, Faculty & Staff directory"
+     },
+     {
+      "url": "https://fp.alfaisal.edu/profile/anahmad",
+      "title": "Anfaal Ahmad-Khan, Alfaisal Faculty Portal profile (client-rendered)"
+     },
+     {
+      "url": "https://fp.alfaisal.edu/api/profile/anahmad",
+      "title": "Anfaal Ahmad-Khan, Alfaisal Faculty Portal profile data (JSON)"
+     }
+    ],
+    "profileUrl": "https://fp.alfaisal.edu/profile/anahmad",
+    "titleConfirmed": "Assistant Professor",
+    "areaConfirmed": "Department of Accounting, College of Business",
+    "phdInstitution": "University of Glasgow",
+    "phdYear": null,
+    "phdSourceUrl": "https://cob.alfaisal.edu/en/faculty-staff",
+    "omListFacultyId": null,
+    "note": null
+   }
   },
   {
    "id": "roster:alfaisal-university-au:ashley-carreras",
@@ -6690,7 +6864,33 @@
    "researchStatus": null,
    "firstJob": null,
    "verification": "unverified",
-   "review": null
+   "review": {
+    "status": "confirmed-faculty",
+    "checkedAt": "2026-10-16",
+    "reason": "The College of Business Faculty & Staff directory lists him as 'Ph. D., Leicester University, UK. Assistant Professor, Department of Operations and Project Management, College of Business'; the Faculty Portal profile data (name Ashley Laurence Carreras) gives the designation Assistant Professor Operations & Project Management and a biography stating his PhD is from the University of Leicester, with no year.",
+    "sources": [
+     {
+      "url": "https://cob.alfaisal.edu/en/faculty-staff",
+      "title": "Alfaisal University College of Business, Faculty & Staff directory"
+     },
+     {
+      "url": "https://fp.alfaisal.edu/profile/acarreras",
+      "title": "Ashley Carreras, Alfaisal Faculty Portal profile (client-rendered)"
+     },
+     {
+      "url": "https://fp.alfaisal.edu/api/profile/acarreras",
+      "title": "Ashley Carreras, Alfaisal Faculty Portal profile data (JSON)"
+     }
+    ],
+    "profileUrl": "https://fp.alfaisal.edu/profile/acarreras",
+    "titleConfirmed": "Assistant Professor",
+    "areaConfirmed": "Department of Operations and Project Management, College of Business",
+    "phdInstitution": "University of Leicester",
+    "phdYear": null,
+    "phdSourceUrl": "https://fp.alfaisal.edu/api/profile/acarreras",
+    "omListFacultyId": null,
+    "note": null
+   }
   },
   {
    "id": "roster:alfaisal-university-au:bajis-dodin",
@@ -6774,7 +6974,33 @@
    "researchStatus": null,
    "firstJob": null,
    "verification": "unverified",
-   "review": null
+   "review": {
+    "status": "confirmed-faculty",
+    "checkedAt": "2026-10-16",
+    "reason": "The College of Business Faculty & Staff directory lists him as 'Ph.D,. University of Leicester, UK. Associate Professor, Department of Finance, College of Business'; the Faculty Portal profile data gives the designation Associate Professor Of Finance and a biography stating he holds a PhD and MSc in Finance from the University of Leicester, with no year.",
+    "sources": [
+     {
+      "url": "https://cob.alfaisal.edu/en/faculty-staff",
+      "title": "Alfaisal University College of Business, Faculty & Staff directory"
+     },
+     {
+      "url": "https://fp.alfaisal.edu/profile/blambe",
+      "title": "Brendan John Lambe, Alfaisal Faculty Portal profile (client-rendered)"
+     },
+     {
+      "url": "https://fp.alfaisal.edu/api/profile/blambe",
+      "title": "Brendan John Lambe, Alfaisal Faculty Portal profile data (JSON)"
+     }
+    ],
+    "profileUrl": "https://fp.alfaisal.edu/profile/blambe",
+    "titleConfirmed": "Associate Professor",
+    "areaConfirmed": "Department of Finance, College of Business",
+    "phdInstitution": "University of Leicester",
+    "phdYear": null,
+    "phdSourceUrl": "https://cob.alfaisal.edu/en/faculty-staff",
+    "omListFacultyId": null,
+    "note": null
+   }
   },
   {
    "id": "roster:alfaisal-university-au:burhanettin-ozdemir",
@@ -6805,7 +7031,33 @@
    "researchStatus": null,
    "firstJob": null,
    "verification": "unverified",
-   "review": null
+   "review": {
+    "status": "confirmed-faculty",
+    "checkedAt": "2026-10-16",
+    "reason": "The College of Business Faculty & Staff directory lists him as 'Ph.D., Georgia Institute of Technology, U.S.A. Assistant Professor, Department of Operations & Project Management, College of Business', but that degree line is identical to the neighbouring Mishal Ahmed entry, and the Faculty Portal profile data (designation Assistant Professor Operations & Project Management) carries a biography stating a Ph.D. in Educational Measurement and Statistics from Hacettepe University with a dissertation on multidimensional computerized adaptive testing; the institution is recorded from his own profile biography and the directory conflict should be verified before publication. No year is given.",
+    "sources": [
+     {
+      "url": "https://cob.alfaisal.edu/en/faculty-staff",
+      "title": "Alfaisal University College of Business, Faculty & Staff directory"
+     },
+     {
+      "url": "https://fp.alfaisal.edu/profile/bozdemir",
+      "title": "Burhanettin Ozdemir, Alfaisal Faculty Portal profile (client-rendered)"
+     },
+     {
+      "url": "https://fp.alfaisal.edu/api/profile/bozdemir",
+      "title": "Burhanettin Ozdemir, Alfaisal Faculty Portal profile data (JSON)"
+     }
+    ],
+    "profileUrl": "https://fp.alfaisal.edu/profile/bozdemir",
+    "titleConfirmed": "Assistant Professor",
+    "areaConfirmed": "Department of Operations & Project Management, College of Business",
+    "phdInstitution": "Hacettepe University",
+    "phdYear": null,
+    "phdSourceUrl": "https://fp.alfaisal.edu/api/profile/bozdemir",
+    "omListFacultyId": null,
+    "note": null
+   }
   },
   {
    "id": "roster:alfaisal-university-au:ernest-gyapong",
@@ -6836,7 +7088,33 @@
    "researchStatus": null,
    "firstJob": null,
    "verification": "unverified",
-   "review": null
+   "review": {
+    "status": "confirmed-faculty",
+    "checkedAt": "2026-10-16",
+    "reason": "The College of Business Faculty & Staff directory lists him as 'Ph.D., Griffith University, Australia. Associate Professor, Department of Accounting, College of Business'; the Faculty Portal profile data gives the designation Associate Professor of Accounting and a biography stating he earned his Ph.D. in accounting from Griffith University (Australia) in August 2016.",
+    "sources": [
+     {
+      "url": "https://cob.alfaisal.edu/en/faculty-staff",
+      "title": "Alfaisal University College of Business, Faculty & Staff directory"
+     },
+     {
+      "url": "https://fp.alfaisal.edu/profile/egyapong",
+      "title": "Ernest Gyapong, Alfaisal Faculty Portal profile (client-rendered)"
+     },
+     {
+      "url": "https://fp.alfaisal.edu/api/profile/egyapong",
+      "title": "Ernest Gyapong, Alfaisal Faculty Portal profile data (JSON)"
+     }
+    ],
+    "profileUrl": "https://fp.alfaisal.edu/profile/egyapong",
+    "titleConfirmed": "Associate Professor",
+    "areaConfirmed": "Department of Accounting, College of Business",
+    "phdInstitution": "Griffith University",
+    "phdYear": 2016,
+    "phdSourceUrl": "https://fp.alfaisal.edu/api/profile/egyapong",
+    "omListFacultyId": null,
+    "note": null
+   }
   },
   {
    "id": "roster:alfaisal-university-au:fahad-alammar",
@@ -6867,7 +7145,33 @@
    "researchStatus": null,
    "firstJob": null,
    "verification": "unverified",
-   "review": null
+   "review": {
+    "status": "confirmed-faculty",
+    "checkedAt": "2026-10-16",
+    "reason": "The College of Business Faculty & Staff directory lists him as 'Ph.D., Massey University, Auckland. Assistant Professor, Department of Management, College of Business'; the Faculty Portal profile data gives the designation Assistant Professor of Management and a biography stating he earned a Ph.D. in Management and Business Administration from Massey University, New Zealand, in 2018.",
+    "sources": [
+     {
+      "url": "https://cob.alfaisal.edu/en/faculty-staff",
+      "title": "Alfaisal University College of Business, Faculty & Staff directory"
+     },
+     {
+      "url": "https://fp.alfaisal.edu/profile/faalammar",
+      "title": "Fahad Alammar, Alfaisal Faculty Portal profile (client-rendered)"
+     },
+     {
+      "url": "https://fp.alfaisal.edu/api/profile/faalammar",
+      "title": "Fahad Alammar, Alfaisal Faculty Portal profile data (JSON)"
+     }
+    ],
+    "profileUrl": "https://fp.alfaisal.edu/profile/faalammar",
+    "titleConfirmed": "Assistant Professor",
+    "areaConfirmed": "Department of Management, College of Business",
+    "phdInstitution": "Massey University",
+    "phdYear": 2018,
+    "phdSourceUrl": "https://fp.alfaisal.edu/api/profile/faalammar",
+    "omListFacultyId": null,
+    "note": null
+   }
   },
   {
    "id": "roster:alfaisal-university-au:fidel-perez-sebastian",
@@ -6898,7 +7202,29 @@
    "researchStatus": null,
    "firstJob": null,
    "verification": "unverified",
-   "review": null
+   "review": {
+    "status": "confirmed-faculty",
+    "checkedAt": "2026-10-16",
+    "reason": "The College of Business Faculty & Staff directory lists him as 'Ph.D., University of Virginia, USA. Professor, Department of Finance, College of Business'; unlike the other faculty, his entry links only to the Faculty Portal's general college page (which renders no content), so no individual profile exists and the directory page is recorded as the profile URL. No year is given.",
+    "sources": [
+     {
+      "url": "https://cob.alfaisal.edu/en/faculty-staff",
+      "title": "Alfaisal University College of Business, Faculty & Staff directory"
+     },
+     {
+      "url": "https://fp.alfaisal.edu/faculty/college-of-business",
+      "title": "Alfaisal Faculty Portal, College of Business page (client-rendered, no content)"
+     }
+    ],
+    "profileUrl": "https://cob.alfaisal.edu/en/faculty-staff",
+    "titleConfirmed": "Professor",
+    "areaConfirmed": "Department of Finance, College of Business",
+    "phdInstitution": "University of Virginia",
+    "phdYear": null,
+    "phdSourceUrl": "https://cob.alfaisal.edu/en/faculty-staff",
+    "omListFacultyId": null,
+    "note": null
+   }
   },
   {
    "id": "roster:alfaisal-university-au:francesco-cannas",
@@ -6929,7 +7255,33 @@
    "researchStatus": null,
    "firstJob": null,
    "verification": "unverified",
-   "review": null
+   "review": {
+    "status": "confirmed-faculty",
+    "checkedAt": "2026-10-16",
+    "reason": "The College of Business Faculty & Staff directory lists him (as Dr. Francesco Cannas) as 'PhD Univ. of Economics & Busines, Vienna. Assistant Professor, Department of Accounting, College of Business'; the Faculty Portal profile data (designation level Assistant Professor, department Accounting) carries a biography stating an LL.M. in International Tax Law and a Ph.D. in International Business Taxation from the Vienna University of Economics and Business (WU) and describing him as Assistant Professor of Taxation, with no year.",
+    "sources": [
+     {
+      "url": "https://cob.alfaisal.edu/en/faculty-staff",
+      "title": "Alfaisal University College of Business, Faculty & Staff directory"
+     },
+     {
+      "url": "https://fp.alfaisal.edu/profile/fcannas",
+      "title": "Francesco Cannas, Alfaisal Faculty Portal profile (client-rendered)"
+     },
+     {
+      "url": "https://fp.alfaisal.edu/api/profile/fcannas",
+      "title": "Francesco Cannas, Alfaisal Faculty Portal profile data (JSON)"
+     }
+    ],
+    "profileUrl": "https://fp.alfaisal.edu/profile/fcannas",
+    "titleConfirmed": "Assistant Professor",
+    "areaConfirmed": "Department of Accounting, College of Business",
+    "phdInstitution": "Vienna University of Economics and Business (WU)",
+    "phdYear": null,
+    "phdSourceUrl": "https://fp.alfaisal.edu/api/profile/fcannas",
+    "omListFacultyId": null,
+    "note": null
+   }
   },
   {
    "id": "roster:alfaisal-university-au:haitham-a-al-zoubi",
@@ -6960,7 +7312,33 @@
    "researchStatus": null,
    "firstJob": null,
    "verification": "unverified",
-   "review": null
+   "review": {
+    "status": "confirmed-faculty",
+    "checkedAt": "2026-10-16",
+    "reason": "The College of Business Faculty & Staff directory lists him as 'Ph.D., University of New Orleans, USA. Professor, Department of Finance, College of Business'; the Faculty Portal profile data (name Haitham Akram Abdallah Al Zoubi, designation Professor of Finance) carries a biography stating he received his PhD in Finance from the University of New Orleans, Louisiana, USA in 2003.",
+    "sources": [
+     {
+      "url": "https://cob.alfaisal.edu/en/faculty-staff",
+      "title": "Alfaisal University College of Business, Faculty & Staff directory"
+     },
+     {
+      "url": "https://fp.alfaisal.edu/profile/halzoubi",
+      "title": "Haitham A. AL-Zoubi, Alfaisal Faculty Portal profile (client-rendered)"
+     },
+     {
+      "url": "https://fp.alfaisal.edu/api/profile/halzoubi",
+      "title": "Haitham A. AL-Zoubi, Alfaisal Faculty Portal profile data (JSON)"
+     }
+    ],
+    "profileUrl": "https://fp.alfaisal.edu/profile/halzoubi",
+    "titleConfirmed": "Professor",
+    "areaConfirmed": "Department of Finance, College of Business",
+    "phdInstitution": "University of New Orleans",
+    "phdYear": 2003,
+    "phdSourceUrl": "https://fp.alfaisal.edu/api/profile/halzoubi",
+    "omListFacultyId": null,
+    "note": null
+   }
   },
   {
    "id": "roster:alfaisal-university-au:hayat-khan",
@@ -6991,7 +7369,33 @@
    "researchStatus": null,
    "firstJob": null,
    "verification": "unverified",
-   "review": null
+   "review": {
+    "status": "confirmed-faculty",
+    "checkedAt": "2026-10-16",
+    "reason": "The College of Business Faculty & Staff directory lists him as 'Ph.D., University of Melbourne, Australia. Associate Professor, Department of Finance, College of Business'; the Faculty Portal profile data gives the designation Associate Professor of Economics (department Finance) and a biography describing him as Vice Dean of Undergraduate Programs who earned his PhD in Economics from the University of Melbourne, with no year.",
+    "sources": [
+     {
+      "url": "https://cob.alfaisal.edu/en/faculty-staff",
+      "title": "Alfaisal University College of Business, Faculty & Staff directory"
+     },
+     {
+      "url": "https://fp.alfaisal.edu/profile/hakhan",
+      "title": "Hayat Khan, Alfaisal Faculty Portal profile (client-rendered)"
+     },
+     {
+      "url": "https://fp.alfaisal.edu/api/profile/hakhan",
+      "title": "Hayat Khan, Alfaisal Faculty Portal profile data (JSON)"
+     }
+    ],
+    "profileUrl": "https://fp.alfaisal.edu/profile/hakhan",
+    "titleConfirmed": "Associate Professor",
+    "areaConfirmed": "Department of Finance, College of Business",
+    "phdInstitution": "University of Melbourne",
+    "phdYear": null,
+    "phdSourceUrl": "https://cob.alfaisal.edu/en/faculty-staff",
+    "omListFacultyId": null,
+    "note": null
+   }
   },
   {
    "id": "roster:alfaisal-university-au:hesham-albarrak",
@@ -16135,7 +16539,25 @@
    "researchStatus": null,
    "firstJob": null,
    "verification": "unverified",
-   "review": null
+   "review": {
+    "status": "not-listed",
+    "checkedAt": "2026-10-16",
+    "reason": "The Clemson profile page (slug jmonday, browser title 'Jeremy Monday | Profile', heading 'Jeremy Kröber') shows only the administrative title Director of Operations, Clemson MBA Program, Clemson Greenville ONE, & Center for Corporate Learning, with no academic rank and no education listed, so the page shows an administrative staff member rather than faculty.",
+    "sources": [
+     {
+      "url": "https://www.clemson.edu/business/about/profiles/jmonday",
+      "title": "Jeremy Kröber (page slug jmonday), Clemson Wilbur O. and Ann Powers College of Business profile"
+     }
+    ],
+    "profileUrl": null,
+    "titleConfirmed": null,
+    "areaConfirmed": null,
+    "phdInstitution": null,
+    "phdYear": null,
+    "phdSourceUrl": null,
+    "omListFacultyId": null,
+    "note": null
+   }
   },
   {
    "id": "roster:clemson-university:jeremy-vinson",
@@ -39137,7 +39559,25 @@
    "researchStatus": null,
    "firstJob": null,
    "verification": "unverified",
-   "review": null
+   "review": {
+    "status": "not-listed",
+    "checkedAt": "2026-10-16",
+    "reason": "The ISyE page lists her as Research Engineer II (research staff), not an academic rank; the title in the roster belongs to the neighbouring Joel Sokol entry. Her education list on the page states Ph.D. Optimization (2012), Georgia Institute of Technology, but she is not shown as faculty.",
+    "sources": [
+     {
+      "url": "https://www.isye.gatech.edu/users/hannah-smalley",
+      "title": "Hannah Smalley, Georgia Tech ISyE people page"
+     }
+    ],
+    "profileUrl": null,
+    "titleConfirmed": null,
+    "areaConfirmed": null,
+    "phdInstitution": null,
+    "phdYear": null,
+    "phdSourceUrl": null,
+    "omListFacultyId": null,
+    "note": null
+   }
   },
   {
    "id": "roster:georgia-institute-of-technology:harshal-kaushik",
@@ -39633,7 +40073,25 @@
    "researchStatus": null,
    "firstJob": null,
    "verification": "unverified",
-   "review": null
+   "review": {
+    "status": "confirmed-faculty",
+    "checkedAt": "2026-10-16",
+    "reason": "The ISyE page lists him as Director of the interdisciplinary Master of Science in Analytics, Terrell and Pierre Sovey Chair and Professor in the H. Milton Stewart School of Industrial and Systems Engineering; the Education section states Ph.D. Operations Research (1999), Massachusetts Institute of Technology.",
+    "sources": [
+     {
+      "url": "https://www.isye.gatech.edu/users/joel-sokol",
+      "title": "Joel Sokol, Georgia Tech ISyE people page"
+     }
+    ],
+    "profileUrl": "https://www.isye.gatech.edu/users/joel-sokol",
+    "titleConfirmed": "Director of the interdisciplinary Master of Science in Analytics; Terrell and Pierre Sovey Chair; Professor",
+    "areaConfirmed": "H. Milton Stewart School of Industrial and Systems Engineering",
+    "phdInstitution": "Massachusetts Institute of Technology",
+    "phdYear": 1999,
+    "phdSourceUrl": "https://www.isye.gatech.edu/users/joel-sokol",
+    "omListFacultyId": null,
+    "note": null
+   }
   },
   {
    "id": "roster:georgia-institute-of-technology:johannes-milz",
@@ -48401,7 +48859,25 @@
    "researchStatus": null,
    "firstJob": null,
    "verification": "unverified",
-   "review": null
+   "review": {
+    "status": "not-listed",
+    "checkedAt": "2026-10-16",
+    "reason": "The Quinlan profile shows only the administrative title Assistant Director of Analytics, AI Business Consortium, with no academic rank, so the page shows a staff member rather than faculty. Its education list states a PhD in Information Science, University of Missouri, without a year.",
+    "sources": [
+     {
+      "url": "https://www.luc.edu/quinlan/whyquinlan/facultyandstaff/profiles/yadamsurenborchuluun.shtml",
+      "title": "Borchuluun Yadamsuren, Loyola University Chicago Quinlan School of Business profile"
+     }
+    ],
+    "profileUrl": null,
+    "titleConfirmed": null,
+    "areaConfirmed": null,
+    "phdInstitution": null,
+    "phdYear": null,
+    "phdSourceUrl": null,
+    "omListFacultyId": null,
+    "note": null
+   }
   },
   {
    "id": "roster:loyola-university-chicago:brendan-shea",
@@ -52391,7 +52867,25 @@
    "researchStatus": null,
    "firstJob": null,
    "verification": "unverified",
-   "review": null
+   "review": {
+    "status": "not-listed",
+    "checkedAt": "2026-10-16",
+    "reason": "The Quinlan profile shows only the administrative title Associate Director of Finance and Academic Business Operations, with no academic rank and no education section, so the page shows a staff member rather than faculty.",
+    "sources": [
+     {
+      "url": "https://www.luc.edu/quinlan/whyquinlan/facultyandstaff/profiles/zbellalaura.shtml",
+      "title": "Laura Zbella, Loyola University Chicago Quinlan School of Business profile"
+     }
+    ],
+    "profileUrl": null,
+    "titleConfirmed": null,
+    "areaConfirmed": null,
+    "phdInstitution": null,
+    "phdYear": null,
+    "phdSourceUrl": null,
+    "omListFacultyId": null,
+    "note": null
+   }
   },
   {
    "id": "roster:loyola-university-chicago:lauren-demaat",
@@ -75411,7 +75905,29 @@
    "researchStatus": null,
    "firstJob": null,
    "verification": "unverified",
-   "review": null
+   "review": {
+    "status": "unresolved",
+    "checkedAt": "2026-10-16",
+    "reason": "Both the Center for Supply Chain Research leadership-staff page (profileUrl, tried three times including a trailing-slash variant) and the SCIS faculty page (facultyUrl) returned HTTP 503 Service Unavailable, so nothing could be verified; the roster title Executive Director of the Center for Supply Chain Research is an administrative role, but no page could be opened to confirm it.",
+    "sources": [
+     {
+      "url": "https://www.smeal.psu.edu/cscr/about/leadership-staff",
+      "title": "Penn State Smeal Center for Supply Chain Research leadership and staff (HTTP 503)"
+     },
+     {
+      "url": "https://www.smeal.psu.edu/scis/people/faculty",
+      "title": "Penn State Smeal Supply Chain and Information Systems faculty (HTTP 503)"
+     }
+    ],
+    "profileUrl": null,
+    "titleConfirmed": null,
+    "areaConfirmed": null,
+    "phdInstitution": null,
+    "phdYear": null,
+    "phdSourceUrl": null,
+    "omListFacultyId": null,
+    "note": null
+   }
   },
   {
    "id": "roster:the-pennsylvania-state-university:purdum-susan",
@@ -98422,7 +98938,25 @@
    "researchStatus": null,
    "firstJob": null,
    "verification": "unverified",
-   "review": null
+   "review": {
+    "status": "not-listed",
+    "checkedAt": "2026-10-16",
+    "reason": "The Mendoza directory profile shows only the administrative title Associate Director of Technology & Operations in Marketing & Brand Strategy, with no academic rank; the biography mentions a B.A. from Ball State University and an M.S. in Business Analytics from Notre Dame and no doctorate, so the page shows a staff member rather than faculty.",
+    "sources": [
+     {
+      "url": "https://mendoza.nd.edu/mendoza-directory/profile/david-grundy",
+      "title": "David Grundy, Notre Dame Mendoza College of Business directory profile"
+     }
+    ],
+    "profileUrl": null,
+    "titleConfirmed": null,
+    "areaConfirmed": null,
+    "phdInstitution": null,
+    "phdYear": null,
+    "phdSourceUrl": null,
+    "omListFacultyId": null,
+    "note": null
+   }
   },
   {
    "id": "roster:university-of-notre-dame:david-hartvigsen",
@@ -99518,7 +100052,25 @@
    "researchStatus": null,
    "firstJob": null,
    "verification": "unverified",
-   "review": null
+   "review": {
+    "status": "not-listed",
+    "checkedAt": "2026-10-16",
+    "reason": "The Mendoza directory profile shows only the administrative title Senior Associate Director, Admissions Pipeline & Operations in Graduate Enrollment, with no academic rank and no education section, so the page shows a staff member rather than faculty.",
+    "sources": [
+     {
+      "url": "https://mendoza.nd.edu/mendoza-directory/profile/helen-high",
+      "title": "Helen High, Notre Dame Mendoza College of Business directory profile"
+     }
+    ],
+    "profileUrl": null,
+    "titleConfirmed": null,
+    "areaConfirmed": null,
+    "phdInstitution": null,
+    "phdYear": null,
+    "phdSourceUrl": null,
+    "omListFacultyId": null,
+    "note": null
+   }
   },
   {
    "id": "roster:university-of-notre-dame:helen-keefe",
@@ -101865,7 +102417,25 @@
    "researchStatus": null,
    "firstJob": null,
    "verification": "unverified",
-   "review": null
+   "review": {
+    "status": "not-listed",
+    "checkedAt": "2026-10-16",
+    "reason": "The Mendoza directory profile shows only the administrative title Associate Director, Academic Operations in Student Experience, with no academic rank and no education section, so the page shows a staff member rather than faculty.",
+    "sources": [
+     {
+      "url": "https://mendoza.nd.edu/mendoza-directory/profile/kari-friestad",
+      "title": "Kari Friestad, Notre Dame Mendoza College of Business directory profile"
+     }
+    ],
+    "profileUrl": null,
+    "titleConfirmed": null,
+    "areaConfirmed": null,
+    "phdInstitution": null,
+    "phdYear": null,
+    "phdSourceUrl": null,
+    "omListFacultyId": null,
+    "note": null
+   }
   },
   {
    "id": "roster:university-of-notre-dame:karl-turnlund",
@@ -107028,7 +107598,25 @@
    "researchStatus": null,
    "firstJob": null,
    "verification": "unverified",
-   "review": null
+   "review": {
+    "status": "not-listed",
+    "checkedAt": "2026-10-16",
+    "reason": "The Mendoza directory profile shows only the administrative title Executive Director of College Operations & Finance (Mendoza Finance Team), with no academic rank and no education section, so the page shows a staff member rather than faculty.",
+    "sources": [
+     {
+      "url": "https://mendoza.nd.edu/mendoza-directory/profile/tracy-biggs",
+      "title": "Tracy Biggs, Notre Dame Mendoza College of Business directory profile"
+     }
+    ],
+    "profileUrl": null,
+    "titleConfirmed": null,
+    "areaConfirmed": null,
+    "phdInstitution": null,
+    "phdYear": null,
+    "phdSourceUrl": null,
+    "omListFacultyId": null,
+    "note": null
+   }
   },
   {
    "id": "roster:university-of-notre-dame:tracy-kulwicki",
@@ -116532,7 +117120,33 @@
    "researchStatus": null,
    "firstJob": null,
    "verification": "unverified",
-   "review": null
+   "review": {
+    "status": "confirmed-faculty",
+    "checkedAt": "2026-10-16",
+    "reason": "The Owen bio page is client-rendered (WebFetch and the faculty directory showed no text), so its content was read from the page's own data endpoint, which lists Richard H. Willis with the titles Senior Associate Provost for Research Operations; Vice Dean and Senior Associate Dean for the Faculty; Anne Marie and Thomas B. Walker, Jr. Chair, Professor of Accounting (area of expertise: accounting). The CV linked from that page (June 2025) lists Doctor of Philosophy, Graduate School of Business, University of Chicago, over the period 1992-1998 with no conferral year stated. He is an accounting, not operations, faculty member.",
+    "sources": [
+     {
+      "url": "https://business.vanderbilt.edu/bio/richard-willis",
+      "title": "Richard Willis, Vanderbilt Owen Graduate School of Management bio page (client-rendered)"
+     },
+     {
+      "url": "https://business.vanderbilt.edu/wp-content/themes/anchordown-futurevu-child-business/library/remote/peoplemanager-directory-remote-webcomm.php?pid=4328",
+      "title": "Richard Willis profile data loaded by the Owen bio page (slug richard-willis, pid 4328)"
+     },
+     {
+      "url": "https://cdn.vanderbilt.edu/vu-web/owen/files/people-328-vitarhwillis625-20250627083342.pdf",
+      "title": "Richard H. Willis CV, June 2025 (PDF linked from the Owen bio page)"
+     }
+    ],
+    "profileUrl": "https://business.vanderbilt.edu/bio/richard-willis",
+    "titleConfirmed": "Senior Associate Provost for Research Operations; Vice Dean and Senior Associate Dean for the Faculty; Anne Marie and Thomas B. Walker, Jr. Chair, Professor of Accounting",
+    "areaConfirmed": "Accounting",
+    "phdInstitution": "Graduate School of Business, University of Chicago",
+    "phdYear": null,
+    "phdSourceUrl": "https://cdn.vanderbilt.edu/vu-web/owen/files/people-328-vitarhwillis625-20250627083342.pdf",
+    "omListFacultyId": null,
+    "note": null
+   }
   },
   {
    "id": "roster:vanderbilt-university:rita-sowell",
@@ -124373,7 +124987,25 @@
    "researchStatus": null,
    "firstJob": null,
    "verification": "unverified",
-   "review": null
+   "review": {
+    "status": "confirmed-faculty",
+    "checkedAt": "2026-10-16",
+    "reason": "Ivey profile lists him as Professor, Management Science (George and Mary Turnbull Faculty Fellow), cross-appointed in Statistical & Actuarial Sciences and Epidemiology & Biostatistics; the biography states PhD and MS in management science from the Sauder School of Business, University of British Columbia, with no year given.",
+    "sources": [
+     {
+      "url": "https://www.ivey.uwo.ca/faculty_research/directory/mehmet-begen/",
+      "title": "Mehmet Begen, Ivey Business School faculty profile"
+     }
+    ],
+    "profileUrl": "https://www.ivey.uwo.ca/faculty_research/directory/mehmet-begen/",
+    "titleConfirmed": "Professor, Management Science",
+    "areaConfirmed": "Management Science",
+    "phdInstitution": "Sauder School of Business, University of British Columbia",
+    "phdYear": null,
+    "phdSourceUrl": "https://www.ivey.uwo.ca/faculty_research/directory/mehmet-begen/",
+    "omListFacultyId": null,
+    "note": null
+   }
   },
   {
    "id": "roster:western-university:mengxia-zhang",
@@ -124807,7 +125439,33 @@
    "researchStatus": null,
    "firstJob": null,
    "verification": "unverified",
-   "review": null
+   "review": {
+    "status": "confirmed-faculty",
+    "checkedAt": "2026-10-16",
+    "reason": "Ivey profile lists him as Associate Professor, Management Science (formerly Chair of the Department of Management at Bogazici University, 2018-2020) but states no degrees; the Ivey news article 'New Ivey faculty: Mustafa (Hayri) Tongarlak' (19 Sep 2024) states he holds a PhD in industrial engineering and management sciences from Northwestern University, and his Bogazici University CV lists 'Ph.D., Industrial Engineering and Management Sciences, Northwestern University, Evanston, IL 03.2011'.",
+    "sources": [
+     {
+      "url": "https://www.ivey.uwo.ca/faculty_research/directory/mustafa-tongarlak/",
+      "title": "Mustafa Tongarlak, Ivey Business School faculty profile"
+     },
+     {
+      "url": "https://www.ivey.uwo.ca/news/news-ivey/2024/september/new-ivey-faculty-mustafa-hayri-tongarlak/",
+      "title": "New Ivey faculty: Mustafa (Hayri) Tongarlak, Ivey news, 19 Sep 2024"
+     },
+     {
+      "url": "https://mgmt.bogazici.edu.tr/sites/mgmt.boun.edu.tr/files/ozgecmis/Tongarlak-CV.pdf",
+      "title": "Mustafa H. Tongarlak CV, Bogazici University Department of Management (PDF)"
+     }
+    ],
+    "profileUrl": "https://www.ivey.uwo.ca/faculty_research/directory/mustafa-tongarlak/",
+    "titleConfirmed": "Associate Professor, Management Science",
+    "areaConfirmed": "Management Science",
+    "phdInstitution": "Northwestern University",
+    "phdYear": 2011,
+    "phdSourceUrl": "https://mgmt.bogazici.edu.tr/sites/mgmt.boun.edu.tr/files/ozgecmis/Tongarlak-CV.pdf",
+    "omListFacultyId": null,
+    "note": null
+   }
   },
   {
    "id": "roster:western-university:nadine-de-gannes",
@@ -124869,7 +125527,25 @@
    "researchStatus": null,
    "firstJob": null,
    "verification": "unverified",
-   "review": null
+   "review": {
+    "status": "confirmed-faculty",
+    "checkedAt": "2026-10-16",
+    "reason": "Ivey profile lists her as Assistant Professor, Management Science; the biography states she received her PhD from Shanghai University of Finance and Economics (supervisor Bo Jiang), with no year given.",
+    "sources": [
+     {
+      "url": "https://www.ivey.uwo.ca/faculty_research/directory/nanxi-zhang/",
+      "title": "Nanxi Zhang, Ivey Business School faculty profile"
+     }
+    ],
+    "profileUrl": "https://www.ivey.uwo.ca/faculty_research/directory/nanxi-zhang/",
+    "titleConfirmed": "Assistant Professor, Management Science",
+    "areaConfirmed": "Management Science",
+    "phdInstitution": "Shanghai University of Finance and Economics",
+    "phdYear": null,
+    "phdSourceUrl": "https://www.ivey.uwo.ca/faculty_research/directory/nanxi-zhang/",
+    "omListFacultyId": null,
+    "note": null
+   }
   },
   {
    "id": "roster:western-university:nathan-leili",
@@ -125303,7 +125979,25 @@
    "researchStatus": null,
    "firstJob": null,
    "verification": "unverified",
-   "review": null
+   "review": {
+    "status": "confirmed-faculty",
+    "checkedAt": "2026-10-16",
+    "reason": "Ivey profile lists him as Professor Emeritus, Management Science; the biography states BA and MA from Oxford University and MBA and PhD degrees at the Graduate School of Business, the University of Chicago, with no years given.",
+    "sources": [
+     {
+      "url": "https://www.ivey.uwo.ca/faculty_research/directory/peter-bell/",
+      "title": "Peter Bell, Ivey Business School faculty profile"
+     }
+    ],
+    "profileUrl": "https://www.ivey.uwo.ca/faculty_research/directory/peter-bell/",
+    "titleConfirmed": "Professor Emeritus, Management Science",
+    "areaConfirmed": "Management Science",
+    "phdInstitution": "Graduate School of Business, the University of Chicago",
+    "phdYear": null,
+    "phdSourceUrl": "https://www.ivey.uwo.ca/faculty_research/directory/peter-bell/",
+    "omListFacultyId": null,
+    "note": null
+   }
   },
   {
    "id": "roster:western-university:peter-newson",
@@ -125365,7 +126059,25 @@
    "researchStatus": null,
    "firstJob": null,
    "verification": "unverified",
-   "review": null
+   "review": {
+    "status": "confirmed-faculty",
+    "checkedAt": "2026-10-16",
+    "reason": "Ivey profile lists him as Associate Professor, Management Science; the biography states he holds a PhD from the UCLA Anderson School of Management, with no year given.",
+    "sources": [
+     {
+      "url": "https://www.ivey.uwo.ca/faculty_research/directory/prashant-chintapalli/",
+      "title": "Prashant Chintapalli, Ivey Business School faculty profile"
+     }
+    ],
+    "profileUrl": "https://www.ivey.uwo.ca/faculty_research/directory/prashant-chintapalli/",
+    "titleConfirmed": "Associate Professor, Management Science",
+    "areaConfirmed": "Management Science",
+    "phdInstitution": "UCLA Anderson School of Management",
+    "phdYear": null,
+    "phdSourceUrl": "https://www.ivey.uwo.ca/faculty_research/directory/prashant-chintapalli/",
+    "omListFacultyId": null,
+    "note": null
+   }
   },
   {
    "id": "roster:western-university:prashant-rajaram",
@@ -125867,7 +126579,25 @@
    "researchStatus": null,
    "firstJob": null,
    "verification": "unverified",
-   "review": null
+   "review": {
+    "status": "confirmed-faculty",
+    "checkedAt": "2026-10-16",
+    "reason": "Ivey profile lists him as Lecturer, Operations Management and describes him as a member of the faculty in Operations Management; the biography states an MBA from Ivey and a biochemical engineering degree from Western University and mentions no doctorate.",
+    "sources": [
+     {
+      "url": "https://www.ivey.uwo.ca/faculty_research/directory/scott-loveland/",
+      "title": "Scott Loveland, Ivey Business School faculty profile"
+     }
+    ],
+    "profileUrl": "https://www.ivey.uwo.ca/faculty_research/directory/scott-loveland/",
+    "titleConfirmed": "Lecturer, Operations Management",
+    "areaConfirmed": "Operations Management",
+    "phdInstitution": null,
+    "phdYear": null,
+    "phdSourceUrl": null,
+    "omListFacultyId": null,
+    "note": null
+   }
   },
   {
    "id": "roster:western-university:sebastien-de-la-lande",
@@ -126363,7 +127093,25 @@
    "researchStatus": null,
    "firstJob": null,
    "verification": "unverified",
-   "review": null
+   "review": {
+    "status": "confirmed-faculty",
+    "checkedAt": "2026-10-16",
+    "reason": "Ivey profile lists her as Associate Professor, Management Science (Teaching Scholar); the biography states she earned her PhD and MASc in Applied Operations Research from the University of Waterloo, with no year given.",
+    "sources": [
+     {
+      "url": "https://www.ivey.uwo.ca/faculty_research/directory/tiffany-bayley/",
+      "title": "Tiffany Bayley, Ivey Business School faculty profile"
+     }
+    ],
+    "profileUrl": "https://www.ivey.uwo.ca/faculty_research/directory/tiffany-bayley/",
+    "titleConfirmed": "Associate Professor, Management Science",
+    "areaConfirmed": "Management Science",
+    "phdInstitution": "University of Waterloo",
+    "phdYear": null,
+    "phdSourceUrl": "https://www.ivey.uwo.ca/faculty_research/directory/tiffany-bayley/",
+    "omListFacultyId": null,
+    "note": null
+   }
   },
   {
    "id": "roster:western-university:tima-bansal",
@@ -126772,7 +127520,33 @@
    "researchStatus": null,
    "firstJob": null,
    "verification": "unverified",
-   "review": null
+   "review": {
+    "status": "confirmed-faculty",
+    "checkedAt": "2026-10-16",
+    "reason": "Ivey profile lists him as Associate Professor, Management Science and says he was previously a faculty member at CUHK Business School; neither the profile, the Management Science area-group page nor the PhD discipline page (where he is Discipline Coordinator) states his doctorate, the linked 'detailed profile' on discover.research.ivey.ca renders no content, and the archived CUHK staff page could not be opened (archive bot check), so the doctorate remains unknown.",
+    "sources": [
+     {
+      "url": "https://www.ivey.uwo.ca/faculty_research/directory/yang-li/",
+      "title": "Yang Li, Ivey Business School faculty profile"
+     },
+     {
+      "url": "https://www.ivey.uwo.ca/faculty_research/faculty/area-groups/management-science/",
+      "title": "Ivey Business School, Management Science area group"
+     },
+     {
+      "url": "https://www.ivey.uwo.ca/phd/disciplines/management-science/",
+      "title": "Ivey PhD program, Management Science discipline"
+     }
+    ],
+    "profileUrl": "https://www.ivey.uwo.ca/faculty_research/directory/yang-li/",
+    "titleConfirmed": "Associate Professor, Management Science",
+    "areaConfirmed": "Management Science",
+    "phdInstitution": null,
+    "phdYear": null,
+    "phdSourceUrl": null,
+    "omListFacultyId": null,
+    "note": null
+   }
   },
   {
    "id": "roster:western-university:yaqi-shi",
@@ -131918,7 +132692,25 @@
    "researchStatus": null,
    "firstJob": null,
    "verification": "unverified",
-   "review": null
+   "review": {
+    "status": "confirmed-faculty",
+    "checkedAt": "2026-10-16",
+    "reason": "The Lazaridis School profile header lists him as Associate Professor in the Supply Chain, Operations and Technology Management group (the older biography text still says assistant professor); the biography states he received his PhD in Operations Management and MSc in Industrial Engineering from the University of Toronto, with no year given.",
+    "sources": [
+     {
+      "url": "https://www.wlu.ca/academics/faculties/lazaridis-school-of-business-and-economics/faculty-profiles/mojtaba-araghi/index.html",
+      "title": "Mojtaba Araghi, Wilfrid Laurier University Lazaridis School faculty profile"
+     }
+    ],
+    "profileUrl": "https://www.wlu.ca/academics/faculties/lazaridis-school-of-business-and-economics/faculty-profiles/mojtaba-araghi/index.html",
+    "titleConfirmed": "Associate Professor",
+    "areaConfirmed": "Supply Chain, Operations and Technology Management, Lazaridis School of Business and Economics",
+    "phdInstitution": "University of Toronto",
+    "phdYear": null,
+    "phdSourceUrl": "https://www.wlu.ca/academics/faculties/lazaridis-school-of-business-and-economics/faculty-profiles/mojtaba-araghi/index.html",
+    "omListFacultyId": null,
+    "note": null
+   }
   },
   {
    "id": "roster:wilfrid-laurier-university:monica-jain",
@@ -135297,7 +136089,25 @@
    "researchStatus": null,
    "firstJob": null,
    "verification": "unverified",
-   "review": null
+   "review": {
+    "status": "extraction-noise",
+    "checkedAt": "2026-10-16",
+    "reason": "Not a person: on the Yale SOM faculty directory 'Commodity Markets' appears only as an area-of-expertise tag (under K. Geert Rouwenhorst), and the title attached to this entry belongs to a neighbouring faculty row.",
+    "sources": [
+     {
+      "url": "https://som.yale.edu/faculty-research/faculty-directory?field_area_of_expertise_value=All&field_discipline_value=Operations+Management&field_faculty_type_value=All",
+      "title": "Yale School of Management faculty directory (Operations Management discipline filter)"
+     }
+    ],
+    "profileUrl": null,
+    "titleConfirmed": null,
+    "areaConfirmed": null,
+    "phdInstitution": null,
+    "phdYear": null,
+    "phdSourceUrl": null,
+    "omListFacultyId": null,
+    "note": null
+   }
   },
   {
    "id": "roster:yale-university:corey-cusimano",
@@ -136100,7 +136910,25 @@
    "researchStatus": null,
    "firstJob": null,
    "verification": "unverified",
-   "review": null
+   "review": {
+    "status": "extraction-noise",
+    "checkedAt": "2026-10-16",
+    "reason": "Not a person: on the Yale SOM faculty directory 'Hedge Funds' appears only as an area-of-expertise tag under several finance faculty, and the title attached to this entry belongs to a neighbouring faculty row.",
+    "sources": [
+     {
+      "url": "https://som.yale.edu/faculty-research/faculty-directory?field_area_of_expertise_value=All&field_discipline_value=Operations+Management&field_faculty_type_value=All",
+      "title": "Yale School of Management faculty directory (Operations Management discipline filter)"
+     }
+    ],
+    "profileUrl": null,
+    "titleConfirmed": null,
+    "areaConfirmed": null,
+    "phdInstitution": null,
+    "phdYear": null,
+    "phdSourceUrl": null,
+    "omListFacultyId": null,
+    "note": null
+   }
   },
   {
    "id": "roster:yale-university:heidi-brooks",
@@ -138997,7 +139825,25 @@
    "researchStatus": null,
    "firstJob": null,
    "verification": "unverified",
-   "review": null
+   "review": {
+    "status": "extraction-noise",
+    "checkedAt": "2026-10-16",
+    "reason": "Not a person: on the Yale SOM faculty directory 'Social Networks' appears only as an area-of-expertise tag under several organizational behavior and finance faculty, and the title attached to this entry belongs to a neighbouring faculty row.",
+    "sources": [
+     {
+      "url": "https://som.yale.edu/faculty-research/faculty-directory?field_area_of_expertise_value=All&field_discipline_value=Operations+Management&field_faculty_type_value=All",
+      "title": "Yale School of Management faculty directory (Operations Management discipline filter)"
+     }
+    ],
+    "profileUrl": null,
+    "titleConfirmed": null,
+    "areaConfirmed": null,
+    "phdInstitution": null,
+    "phdYear": null,
+    "phdSourceUrl": null,
+    "omListFacultyId": null,
+    "note": null
+   }
   },
   {
    "id": "roster:yale-university:soheil-ghili",
@@ -139670,7 +140516,25 @@
    "researchStatus": null,
    "firstJob": null,
    "verification": "unverified",
-   "review": null
+   "review": {
+    "status": "extraction-noise",
+    "checkedAt": "2026-10-16",
+    "reason": "Not a person: on the Yale SOM faculty directory 'Venture Capital' appears only as an area-of-expertise tag (under Song Ma and Tauhid Zaman), and the title attached to this entry (Michael H. Jordan Professor of Operations, which the directory shows for Vahideh Manshadi) belongs to a neighbouring faculty row.",
+    "sources": [
+     {
+      "url": "https://som.yale.edu/faculty-research/faculty-directory?field_area_of_expertise_value=All&field_discipline_value=Operations+Management&field_faculty_type_value=All",
+      "title": "Yale School of Management faculty directory (Operations Management discipline filter)"
+     }
+    ],
+    "profileUrl": null,
+    "titleConfirmed": null,
+    "areaConfirmed": null,
+    "phdInstitution": null,
+    "phdYear": null,
+    "phdSourceUrl": null,
+    "omListFacultyId": null,
+    "note": null
+   }
   },
   {
    "id": "roster:yale-university:william-b-english",
