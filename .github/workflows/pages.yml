@@ -21,11 +21,14 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
+      - name: Validate data and explorer behavior
+        run: npm run check
       - name: Prepare public files
         run: |
           mkdir -p _site
           cp index.html .nojekyll _site/
           cp -r assets data _site/
+          cp robots.txt sitemap.xml _site/
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:

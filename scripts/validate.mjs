@@ -1,0 +1,3 @@
+import fs from 'node:fs';
+import {validateDataset} from '../assets/model.js';
+for(const name of ['faculty','placements']){const data=validateDataset(JSON.parse(fs.readFileSync(new URL(`../data/${name}.json`,import.meta.url),'utf8')));if(data.metadata?.recordCount!==undefined&&data.metadata.recordCount!==data.records.length)throw Error('Metadata count mismatch');if(name==='placements')for(const r of data.records){if(r.verificationStatus!=='verified-first-placement'||!r.evidenceUrl||!r.reviewedAt||!r.placementYear)throw Error('First placements require evidence, year and review');}console.log(`${name}: ${data.records.length} valid records`);}
