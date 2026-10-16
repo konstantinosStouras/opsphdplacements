@@ -105,3 +105,19 @@ Reviews keep finding three overlap patterns. They are treated as follows, and th
 3. A prospective announcement or hiring notice written before the degree does **not** establish a first job. A dated CV, an appointment record or a later profile that confirms the job began is required.
 
 The published `placementYear` remains the documented start year of the first new post-PhD job, never the cohort year.
+
+## Two databases and how they link (16 October 2026)
+
+The project maintains two databases that will be merged into one entity model.
+
+1. **Universities with operations departments** (`data/universities.json`, imported by `scripts/import-operations-academia.mjs` from the [Operations Academia](https://www.operationsacademia.org/universities) directory, the project owner's own site). One row per university, with its schools and departments, country, faculty pages, coordinates where the directory has them, and the directory's own source tags. Listing in the directory records that a university has an operations department; it does not establish that the university awards a doctorate in the field. Doctoral provision stays in `data/doctoral-programs.json`. Corrections made by signed-in users on the Operations Academia site are overlaid there at read time and are not in the committed file, so an import is a snapshot of the committed table.
+2. **People** (`data/faculty.json`, `data/placements.json`, `data/research-status.json`, derived `data/institutions.json` and `data/employers.json`): the OM List faculty directory import with source-reported doctorates and the researched first jobs.
+
+**Link key.** A university in database 1 is linked to a PhD institution in database 2 when both names resolve to the same Wikidata item, or when the names are identical after normalising spelling, or when the people-database name is the directory name plus a campus qualifier (at Ann Arbor, College Park). The match type is stored with every link so it can be reviewed; unmatched universities are left unlinked rather than guessed. The eventual merged entity is one institution record keyed by its Wikidata item, carrying every alias, its departments from database 1, its graduates and their careers from database 2, and its doctoral programs from the register, so that an update in either source reaches one place.
+
+## Decisions on evidence types (16 October 2026)
+
+- A permanent UK or Commonwealth lectureship is the entry grade of the permanent faculty track and is recorded as tenure-track unless the source states a fixed-term or teaching-only contract; teaching fellows, adjuncts and fixed-term lecturers are other academic.
+- An internal promotion at the employer where the person already worked before the degree is not a first new post-PhD job; the person stays unresolved with the employer at completion noted, until a new employer is documented.
+- An ORCID employment record is a self-maintained dated chronology, like a CV, and may establish a first job when it carries the known degree and employer affiliations of the person; it is cited as ORCID in the sources.
+- When a page could only be read through a reader proxy because the site blocks automated fetches, the original URL is cited and the note says how it was read.

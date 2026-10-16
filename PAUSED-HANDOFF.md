@@ -51,3 +51,8 @@ GitHub commit `9fbf00d` was discovered during this upload and preserved. Current
 - Integrated 195 reviews: 43 verified, 151 unresolved, 1 not-yet-completed PhD. One agent record (Spyros Zoumpoulis) was downgraded to unresolved by the integrator because the postdoc-first order rested on list order only. Published totals: 797 verified, 1,058 unresolved, 293 pending, 1 not-yet-completed, of 2,149.
 - Remaining first-pass reviews: A 260, C 33, B 0.
 - Shard C's chunk 4 arrived later and was integrated (13 verified, 20 unresolved after one integrator downgrade, Simone Peinkofer). Published totals: 810 verified, 1,078 unresolved, 260 pending, 1 not-yet-completed. Shard C's first pass is complete; shard A has 260 left.
+
+### Fourth integration, later on 16 October 2026
+
+- Shard A round 2, chunk 2 (40 people, 17 verified, 23 unresolved) integrated after one integrator downgrade (Marianne Jahre: internal promotion at the pre-degree employer is not a first new job). Two shard C records (Joern Meissner, Ilkka Leppänen) relabelled from other-academic to tenure-track under the new lectureship rule. Published totals: 826 verified, 1,102 unresolved, 220 pending, 1 not-yet-completed. Chunks r2-1 and r2-3 (80 people) were still running.
+- The Operations Academia directory was imported as `data/universities.json` (database 1) and linked to the people database by name and Wikidata item; the website does not show it yet.

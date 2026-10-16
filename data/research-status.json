@@ -4,9 +4,9 @@
     "updatedAt": "2026-10-16",
     "total": 2149,
     "counts": {
-      "unresolved": 1078,
-      "verified": 810,
-      "pending": 260,
+      "unresolved": 1102,
+      "verified": 826,
+      "pending": 220,
       "not-yet-completed-phd": 1
     }
   },
@@ -11744,10 +11744,21 @@
     {
       "facultyId": "omlist-ac2fdbf29c565363",
       "name": "Shu (Eunice) Guo",
-      "status": "pending",
-      "checkedAt": null,
-      "sources": [],
-      "reason": "Individual first-placement research is pending."
+      "status": "unresolved",
+      "checkedAt": "2026-10-16",
+      "reason": "The Liverpool staff profile confirms a Hong Kong Polytechnic University PhD (year not stated) and the current senior lectureship but gives no appointment dates or earlier posts, so it cannot be established whether the Liverpool post or an earlier role followed the 2018 degree. ORCID name search returned twelve same-name records with no identifying affiliation; a domain-restricted search found only Liverpool research/teaching pages without chronology.",
+      "sources": [
+        {
+          "url": "https://www.liverpool.ac.uk/people/eunice-guo",
+          "title": "Eunice Guo — University of Liverpool staff profile",
+          "notes": "Current senior lecturer role and PolyU PhD stated; no dates, no earlier employment, no CV link."
+        },
+        {
+          "url": "https://www.liverpool.ac.uk/people/eunice-guo/research",
+          "title": "Eunice Guo — research page",
+          "notes": "Research interests only; no career chronology."
+        }
+      ]
     },
     {
       "facultyId": "omlist-175c59195a46f7c0",
@@ -11842,10 +11853,26 @@
     {
       "facultyId": "omlist-8bad8375f978c85d",
       "name": "Diwakar Gupta",
-      "status": "pending",
-      "checkedAt": null,
-      "sources": [],
-      "reason": "Individual first-placement research is pending."
+      "status": "unresolved",
+      "checkedAt": "2026-10-16",
+      "reason": "The McCombs directory profile renders its content with client-side scripts and returned only page template text; the Digital Measures CV link recorded in the discovery index redirects to a university single-sign-on login; a McCombs faculty-vita PDF (GuptaD_dg36846.pdf on the agder.mccombs.utexas.edu host) surfaced in search but could not be opened because the host presents a mismatched TLS certificate and later returned 503. The ORCID record for Diwakar Gupta lists no affiliations. No opened primary source documents the first appointment after the 1988 Waterloo PhD (the imported degree data were not independently checked either).",
+      "sources": [
+        {
+          "url": "https://www.mccombs.utexas.edu/faculty-and-research/faculty-directory/profile/?username=dg36846",
+          "title": "Diwakar Gupta — McCombs faculty directory profile",
+          "notes": "Fetched twice (WebFetch and curl); profile body not server-rendered, only navigation returned."
+        },
+        {
+          "url": "https://agder.mccombs.utexas.edu/media/mccombs-website/content-assets/documents/faculty-and-research/faculty-vita/GuptaD_dg36846.pdf",
+          "title": "Diwakar Gupta — McCombs faculty vita (unopened)",
+          "notes": "Attempted; TLS certificate name mismatch on the host, 503 on a second attempt. Not read."
+        },
+        {
+          "url": "https://orcid.org/0000-0002-4716-2504",
+          "title": "ORCID record — Diwakar Gupta",
+          "notes": "Public API returned no employment or education entries."
+        }
+      ]
     },
     {
       "facultyId": "omlist-9de6a4f45ad9a362",
@@ -12063,10 +12090,34 @@
     {
       "facultyId": "omlist-6eff84506952fc4d",
       "name": "Albert Ha",
-      "status": "pending",
-      "checkedAt": null,
-      "sources": [],
-      "reason": "Individual first-placement research is pending."
+      "status": "verified",
+      "checkedAt": "2026-10-16",
+      "employer": "Yale University",
+      "position": "Assistant Professor, School of Management",
+      "placementYear": 1992,
+      "category": "tenure-track",
+      "phdYearVerified": 1992,
+      "phdInstitutionVerified": "Stanford University",
+      "evidenceNote": "HKUST ISOM faculty page lists PhD 1992 Stanford University (Business, Operations Management), Assistant Professor at the Yale School of Management 1992–1997, Associate Professor there 1997–2001, then HKUST. No postdoctoral, visiting or industry role is listed before Yale.",
+      "evidenceUrl": "https://isom.hkust.edu.hk/faculty-and-staff/directory/imayha",
+      "sources": [
+        {
+          "url": "https://isom.hkust.edu.hk/faculty-and-staff/directory/imayha",
+          "title": "Albert Y. Ha — HKUST ISOM faculty directory",
+          "notes": "Education and dated academic appointments reviewed. Direct requests returned 503; the page text was read through a reader proxy (r.jina.ai) on 2026-10-16."
+        },
+        {
+          "url": "https://facultyprofiles.hkust.edu.hk/profiles.php?profile=albert-ha-imayha",
+          "title": "Albert Yiu Cheung Ha — HKUST faculty profile",
+          "notes": "Confirms PhD in Business (Operations Management), Stanford University, 1992; lists ORCID 0000-0003-2345-0381."
+        },
+        {
+          "url": "https://orcid.org/0000-0003-2345-0381",
+          "title": "ORCID record — Albert Yiu Cheung Ha",
+          "notes": "Lists only the current HKUST appointment, undated."
+        }
+      ],
+      "reason": "University faculty page gives a dated appointment chronology starting the year of the degree."
     },
     {
       "facultyId": "omlist-481cb787a879eee3",
@@ -12106,10 +12157,26 @@
     {
       "facultyId": "omlist-99135850ca7782a7",
       "name": "Jane Haider",
-      "status": "pending",
-      "checkedAt": null,
-      "sources": [],
-      "reason": "Individual first-placement research is pending."
+      "status": "unresolved",
+      "checkedAt": "2026-10-16",
+      "reason": "Cardiff University blocks automated requests: the profiles.cardiff.ac.uk page returned 403 directly and through a reader proxy, and the people/view page (id 598275) returned 403 with only navigation text via the proxy. A search snippet of that page indicates visiting lecturer and research assistant roles at Hong Kong Polytechnic University before Cardiff and a 2010 PhD, but the snippet is not opened evidence and carries no dates, so the first post-PhD role (PolyU visiting lecturer or Cardiff lecturer) and its start year cannot be established. ORCID 0000-0002-5550-1342 lists no affiliations.",
+      "sources": [
+        {
+          "url": "https://profiles.cardiff.ac.uk/staff/haider",
+          "title": "Jane Haider — Cardiff University profile",
+          "notes": "HTTP 403 on direct fetch, curl with browser user agent, and reader proxy."
+        },
+        {
+          "url": "https://www.cardiff.ac.uk/people/view/598275-haider-jane",
+          "title": "Jane Haider — Cardiff University people page",
+          "notes": "HTTP 403 directly; proxy copy contained only site navigation. Search snippet mentions PolyU visiting lecturer/research assistant roles and PhD 2010, unverified."
+        },
+        {
+          "url": "https://orcid.org/0000-0002-5550-1342",
+          "title": "ORCID record — Jane Haider",
+          "notes": "No employment or education entries."
+        }
+      ]
     },
     {
       "facultyId": "omlist-041257ca9a5ffe7a",
@@ -12154,10 +12221,29 @@
     {
       "facultyId": "omlist-822e36426a0aabac",
       "name": "Georgina Hall",
-      "status": "pending",
-      "checkedAt": null,
-      "sources": [],
-      "reason": "Individual first-placement research is pending."
+      "status": "verified",
+      "checkedAt": "2026-10-16",
+      "employer": "INRIA",
+      "position": "Postdoctoral Researcher (DYOGENE team)",
+      "placementYear": 2018,
+      "category": "postdoc",
+      "phdYearVerified": 2018,
+      "phdInstitutionVerified": "Princeton University",
+      "evidenceNote": "Personal site dates the Princeton ORFE PhD to May 2018 (advisor Amir Ali Ahmadi), a postdoc under Laurent Massoulié at INRIA in academic year 2018–2019, and the INSEAD assistant professorship from September 2019. The INSEAD profile confirms the May 2018 degree and mentions a Gordon Wu fellowship at Princeton (a graduate fellowship), without naming the postdoc.",
+      "evidenceUrl": "https://sites.google.com/view/georgina-hall",
+      "sources": [
+        {
+          "url": "https://sites.google.com/view/georgina-hall",
+          "title": "Georgina Hall — personal academic website",
+          "notes": "Education and employment chronology with months/years reviewed."
+        },
+        {
+          "url": "https://www.insead.edu/faculty/georgina-hall",
+          "title": "Georgina Hall — INSEAD faculty profile",
+          "notes": "Confirms PhD May 2018 at Princeton; INSEAD start year not stated."
+        }
+      ],
+      "reason": "Self-maintained academic site provides a dated chronology, corroborated on the degree by the employer profile."
     },
     {
       "facultyId": "omlist-2f38dc490bc36d30",
@@ -12347,10 +12433,26 @@
     {
       "facultyId": "omlist-5f1bbce47c6753bb",
       "name": "Rim Hariss",
-      "status": "pending",
-      "checkedAt": null,
-      "sources": [],
-      "reason": "Individual first-placement research is pending."
+      "status": "unresolved",
+      "checkedAt": "2026-10-16",
+      "reason": "McGill Desautels profile dates the MIT Operations Research PhD to 2019 and lists the current assistant professorship but no start date; its 'Curriculum Vitae' label carries no link in the page HTML, and guessed CV file paths returned 404. ORCID 0000-0001-6981-1299 has no affiliations and the MIT ORC alumni page lists no individuals. The McGill start year and any intervening postdoc remain undocumented.",
+      "sources": [
+        {
+          "url": "https://www.mcgill.ca/desautels/rim-hariss",
+          "title": "Rim Hariss — McGill Desautels profile",
+          "notes": "Degrees with years (PhD 2019 MIT, MS 2014 and BS 2013 Ecole Polytechnique); current role without dates; no CV link resolvable."
+        },
+        {
+          "url": "https://orcid.org/0000-0001-6981-1299",
+          "title": "ORCID record — Rim Hariss",
+          "notes": "No employment or education entries."
+        },
+        {
+          "url": "https://orc.mit.edu/people/alumni",
+          "title": "MIT Operations Research Center — alumni page",
+          "notes": "General alumni landing page; no individual placement entries."
+        }
+      ]
     },
     {
       "facultyId": "omlist-199f0fac1364fd70",
@@ -12383,10 +12485,29 @@
     {
       "facultyId": "omlist-fffb457251b8a8c4",
       "name": "Shannon Harris",
-      "status": "pending",
-      "checkedAt": null,
-      "sources": [],
-      "reason": "Individual first-placement research is pending."
+      "status": "verified",
+      "checkedAt": "2026-10-16",
+      "employer": "The Ohio State University",
+      "position": "Assistant Professor (Management Sciences)",
+      "placementYear": 2016,
+      "category": "tenure-track",
+      "phdYearVerified": 2016,
+      "phdInstitutionVerified": "University of Pittsburgh",
+      "evidenceNote": "ORCID record dates the Pittsburgh Business Analytics and Operations doctorate Aug 2011–May 2016, an Ohio State assistant professorship in Management Sciences Aug 2016–Jun 2019, and the VCU assistant professorship from Jul 2019. The VCU directory confirms the 2016 Pittsburgh PhD and mentions earlier Deloitte Consulting and Technomics roles without dates (listed with her pre-doctoral background; BS 2007).",
+      "evidenceUrl": "https://orcid.org/0000-0002-9877-165X",
+      "sources": [
+        {
+          "url": "https://orcid.org/0000-0002-9877-165X",
+          "title": "ORCID record — Shannon Harris",
+          "notes": "Self-maintained dated employment and education entries (George Mason, Pittsburgh, Ohio State, VCU); identity matched on Pittsburgh/VCU affiliations."
+        },
+        {
+          "url": "https://directory.business.vcu.edu/profile.php?urn=harriss10",
+          "title": "Shannon Harris — VCU School of Business directory",
+          "notes": "PhD 2016 Pittsburgh, promotion to associate professor May 2023, undated Deloitte and Technomics work; personal Google site requires sign-in."
+        }
+      ],
+      "reason": "Dated ORCID employment chronology, with the degree corroborated by the employer directory, identifies the first post-PhD appointment."
     },
     {
       "facultyId": "omlist-b93702403b8faa5c",
@@ -12527,10 +12648,29 @@
     {
       "facultyId": "omlist-a413b2a611490504",
       "name": "Eryn He",
-      "status": "pending",
-      "checkedAt": null,
-      "sources": [],
-      "reason": "Individual first-placement research is pending."
+      "status": "verified",
+      "checkedAt": "2026-10-16",
+      "employer": "University of Utah",
+      "position": "Assistant Professor, Operations and Information Systems",
+      "placementYear": 2023,
+      "category": "tenure-track",
+      "phdYearVerified": 2022,
+      "phdInstitutionVerified": "National University of Singapore",
+      "evidenceNote": "ORCID record (Eryn Juan He) dates the NUS Institute of Operations Research and Analytics PhD Aug 2017–Jun 2022 and the Utah assistant professorship from Jan 2023; no employment is recorded for Jul–Dec 2022. The Eccles School directory confirms the tenure-track assistant professorship in operations management.",
+      "evidenceUrl": "https://orcid.org/0000-0001-6042-2481",
+      "sources": [
+        {
+          "url": "https://orcid.org/0000-0001-6042-2481",
+          "title": "ORCID record — Eryn Juan He",
+          "notes": "Dated education and employment entries; identity matched on NUS and Utah affiliations."
+        },
+        {
+          "url": "https://eccles.utah.edu/team/eryn-he/",
+          "title": "Eryn He — David Eccles School of Business directory",
+          "notes": "Assistant professor, tenure-track tag; no dates or earlier roles."
+        }
+      ],
+      "reason": "ORCID chronology shows the Utah appointment as the only employment after the June 2022 degree; the six-month gap before January 2023 is undocumented."
     },
     {
       "facultyId": "omlist-307910fcb99fe66e",
@@ -12577,10 +12717,34 @@
     {
       "facultyId": "omlist-63aa2ad72dd2d5f3",
       "name": "Taotao He",
-      "status": "pending",
-      "checkedAt": null,
-      "sources": [],
-      "reason": "Individual first-placement research is pending."
+      "status": "verified",
+      "checkedAt": "2026-10-16",
+      "employer": "Shanghai Jiao Tong University",
+      "position": "Assistant Professor, Antai College of Economics and Management",
+      "placementYear": 2019,
+      "category": "tenure-track",
+      "phdYearVerified": 2019,
+      "phdInstitutionVerified": "Purdue University",
+      "evidenceNote": "SJTU Chinese faculty page lists 博士, 普渡大学, 2019 and work experience of 助理教授 at Antai Sep 2019–Aug 2022 followed by 副教授 from Aug 2022; the personal site confirms the 2019 Purdue PhD (advisor Mohit Tawarmalani). No postdoc or industry role is listed.",
+      "evidenceUrl": "https://www.acem.sjtu.edu.cn/faculty/hetaotao.html",
+      "sources": [
+        {
+          "url": "https://www.acem.sjtu.edu.cn/faculty/hetaotao.html",
+          "title": "何涛涛 — SJTU Antai faculty page (Chinese)",
+          "notes": "工作经历 and 教育背景 with months reviewed."
+        },
+        {
+          "url": "https://taotaoohe.github.io/",
+          "title": "Taotao He — personal website",
+          "notes": "PhD 2019 Purdue (Quantitative Methods), current SJTU role; no dates."
+        },
+        {
+          "url": "https://www.acem.sjtu.edu.cn/en/faculty/hetaotao.html",
+          "title": "Taotao He — SJTU Antai faculty page (English)",
+          "notes": "Title and department only."
+        }
+      ],
+      "reason": "Employer faculty page gives a dated appointment chronology beginning the year of the degree."
     },
     {
       "facultyId": "omlist-87418bbb6d49a39e",
@@ -12660,10 +12824,26 @@
     {
       "facultyId": "omlist-eab5d4adeb918ac0",
       "name": "Christian Hendriksen",
-      "status": "pending",
-      "checkedAt": null,
-      "sources": [],
-      "reason": "Individual first-placement research is pending."
+      "status": "unresolved",
+      "checkedAt": "2026-10-16",
+      "reason": "CBS research portal and staff pages give only the current associate professorship (undated) and count one PhD thesis without showing it; ORCID 0000-0003-0987-329X lists the CBS appointment without dates. A search found a GBSN profile describing him as assistant professor (undated) and nothing on a postdoc; the GBSN and older CBS pages returned 404. The 2019 CBS PhD and the first role after it remain undocumented.",
+      "sources": [
+        {
+          "url": "https://research.cbs.dk/en/persons/christian-hendriksen",
+          "title": "Christian Hendriksen — CBS research portal",
+          "notes": "Current title only; links to ORCID and staff page."
+        },
+        {
+          "url": "https://www.cbs.dk/en/research/departments-and-centres/department-of-operations-management/staff/cheom",
+          "title": "Christian Hendriksen — CBS staff page",
+          "notes": "Associate professor, outside activities; no education or dates."
+        },
+        {
+          "url": "https://orcid.org/0000-0003-0987-329X",
+          "title": "ORCID record — Christian Hendriksen",
+          "notes": "One undated CBS employment entry; no education entries."
+        }
+      ]
     },
     {
       "facultyId": "omlist-513ea8b6ea68b4a8",
@@ -13033,10 +13213,26 @@
     {
       "facultyId": "omlist-c6833f9fd0fa9f7a",
       "name": "Seock-Jin Hong",
-      "status": "pending",
-      "checkedAt": null,
-      "sources": [],
-      "reason": "Individual first-placement research is pending."
+      "status": "unresolved",
+      "checkedAt": "2026-10-16",
+      "reason": "ORCID dates the Toulouse 1 Capitole doctorate Oct 1997–Apr 2001, Kedge Business School professorship Mar 2009–Mar 2016 and UNT from Sep 2015, but records nothing for 2001–2009. The UNT profile lists Korean Airlines, the Korea Transport Institute and Incheon National University without dates. A 2005 ICAO speaker bio (search snippet: Incheon professor from March 2004, earlier KOTI, Korean Air research institute and ITA Paris) could not be opened because the ICAO site is bot-protected. Which role immediately followed the April 2001 degree is therefore undocumented.",
+      "sources": [
+        {
+          "url": "https://cob.unt.edu/people/seock-jin-hong.html",
+          "title": "Seock-Jin Hong — UNT G. Brint Ryan College of Business profile",
+          "notes": "Undated career list; UNT from 2015; PhD Toulouse without year."
+        },
+        {
+          "url": "https://orcid.org/0000-0002-8348-5845",
+          "title": "ORCID record — Seock-Jin Hong",
+          "notes": "Dated education (Toulouse 1997–2001, Ponts 1995–1996) and employment (Kedge 2009–2016, UNT 2015–); 2001–2009 absent."
+        },
+        {
+          "url": "https://www.icao.int/Meetings/LiberalizationSymposium/Documents/2005_Icao-Symposium-Liberalization-Shanghai/Bios/Seock-JinHONG_bio.pdf",
+          "title": "ICAO 2005 symposium speaker bio (unopened)",
+          "notes": "HTTP 403 and bot-check page; content known only from a search snippet."
+        }
+      ]
     },
     {
       "facultyId": "omlist-4f4ab92e9e46a106",
@@ -13076,10 +13272,21 @@
     {
       "facultyId": "omlist-d5b1ebd0af3992a8",
       "name": "Barbara Hoopes",
-      "status": "pending",
-      "checkedAt": null,
-      "sources": [],
-      "reason": "Individual first-placement research is pending."
+      "status": "unresolved",
+      "checkedAt": "2026-10-16",
+      "reason": "Virginia Tech BIT directory and Graduate School directory pages name the UNC Chapel Hill Operations Research PhD without a year and list current roles without any start dates or prior employers. ORCID search found no record with a Virginia Tech affiliation and a web search surfaced no CV. The first appointment after the imported 1994 degree is undocumented.",
+      "sources": [
+        {
+          "url": "https://bit.vt.edu/faculty/directory/hoopes.html",
+          "title": "Barbara Hoopes — Virginia Tech Business Information Technology directory",
+          "notes": "Degrees without years; current associate professorship; no chronology."
+        },
+        {
+          "url": "https://graduateschool.vt.edu/about/contactus/directory/barbara-hoopes.html",
+          "title": "Barbara Hoopes — Virginia Tech Graduate School directory",
+          "notes": "Associate dean role and prior Pamplin administrative roles, undated."
+        }
+      ]
     },
     {
       "facultyId": "omlist-9367dd474ed14db6",
@@ -13351,10 +13558,21 @@
     {
       "facultyId": "omlist-ee18205f1e43017f",
       "name": "Qiying Hu",
-      "status": "pending",
-      "checkedAt": null,
-      "sources": [],
-      "reason": "Individual first-placement research is pending."
+      "status": "unresolved",
+      "checkedAt": "2026-10-16",
+      "reason": "The Fudan School of Management English profile loads its content by script (direct fetch returned an empty template and the backing API endpoint could not be resolved); read through a reader proxy it lists the Konan University doctorate without a year and only short visiting appointments from Aug 1998 onward, with no dated primary employment. ORCID 0000-0002-1313-4003 lists an undated Fudan professorship. Neither the 1998 degree nor the first job after it is documented.",
+      "sources": [
+        {
+          "url": "https://www.fdsm.fudan.edu.cn/en/faculty/list.htm?UID=012060",
+          "title": "Qiying Hu — Fudan School of Management faculty profile",
+          "notes": "Empty template on direct fetch; proxy-rendered text shows degrees without years and visiting positions 1998–2008 only."
+        },
+        {
+          "url": "https://orcid.org/0000-0002-1313-4003",
+          "title": "ORCID record — Qiying Hu",
+          "notes": "Undated Fudan professor entry; no education entries."
+        }
+      ]
     },
     {
       "facultyId": "omlist-e9fcb06676abec1a",
@@ -13504,10 +13722,34 @@
     {
       "facultyId": "omlist-135b63b84d2b0b35",
       "name": "Rihuan Huang",
-      "status": "pending",
-      "checkedAt": null,
-      "sources": [],
-      "reason": "Individual first-placement research is pending."
+      "status": "verified",
+      "checkedAt": "2026-10-16",
+      "employer": "The Chinese University of Hong Kong, Shenzhen",
+      "position": "Assistant Professor in Operations Management, School of Management and Economics",
+      "placementYear": 2022,
+      "category": "tenure-track",
+      "phdYearVerified": 2022,
+      "phdInstitutionVerified": "Cornell University",
+      "evidenceNote": "University-hosted CV lists the Cornell Johnson PhD in Operations, Technology & Information Management 2022 and the CUHK-Shenzhen assistant professorship 2022–present as the only academic position; teaching-assistant work at Cornell runs to Spring 2021. The CUHK-Shenzhen profile states the doctorate was obtained in 2022 and the assistant professorship from 2022.",
+      "evidenceUrl": "https://myweb.cuhk.edu.cn/Content/Upload/cv/20260226/CV_rihuanhuang.pdf",
+      "sources": [
+        {
+          "url": "https://myweb.cuhk.edu.cn/Content/Upload/cv/20260226/CV_rihuanhuang.pdf",
+          "title": "Rihuan Huang — Curriculum Vitae (CUHK-Shenzhen)",
+          "notes": "Academic position and education sections reviewed; no postdoc or industry entry."
+        },
+        {
+          "url": "https://myweb.cuhk.edu.cn/huangrihuan",
+          "title": "Rihuan Huang — CUHK-Shenzhen faculty page",
+          "notes": "States 2022 Cornell doctorate and assistant professor 2022–present."
+        },
+        {
+          "url": "https://rihuan.me/",
+          "title": "Rihuan Huang — personal website",
+          "notes": "Confirms current role and Cornell PhD; links the same CV."
+        }
+      ],
+      "reason": "Employer-hosted CV and profile give a chronology with the appointment starting in the degree year."
     },
     {
       "facultyId": "omlist-eb7dd315e987dc3e",
@@ -13706,10 +13948,34 @@
     {
       "facultyId": "omlist-8781c6693fe274d8",
       "name": "Alexander Hübner",
-      "status": "pending",
-      "checkedAt": null,
-      "sources": [],
-      "reason": "Individual first-placement research is pending."
+      "status": "verified",
+      "checkedAt": "2026-10-16",
+      "employer": "Catholic University of Eichstätt-Ingolstadt",
+      "position": "Assistant Professor (Operations Management)",
+      "placementYear": 2013,
+      "category": "tenure-track",
+      "phdYearVerified": null,
+      "phdInstitutionVerified": "Catholic University of Eichstätt-Ingolstadt",
+      "evidenceNote": "ORCID lists McKinsey & Company engagement manager May 2005–Dec 2012 (spanning the doctorate), assistant professor in Operations Management at Catholic University Eichstätt-Ingolstadt Jan 2013–Mar 2017, associate professor at the University of Luxembourg logistics centre Apr–Dec 2017, head of the EBS Institute of Supply Chain Management Jan–May 2018 and TUM full professor from Jun 2018. The TUM professor page confirms doctoral studies and an assistant professorship at KU Eichstätt-Ingolstadt, six years at McKinsey, the MIT-affiliated Luxembourg centre, EBS and TUM, without years. Under the overlap rule the McKinsey role that began before the degree is not the first post-PhD job; the 2013 assistant professorship is. The 2011 doctorate year is not independently verified (ORCID lists only the 2005 diploma); the German appointment type behind the 'assistant professor' title is unspecified.",
+      "evidenceUrl": "https://orcid.org/0000-0002-1358-1284",
+      "sources": [
+        {
+          "url": "https://orcid.org/0000-0002-1358-1284",
+          "title": "ORCID record — Alexander Hübner",
+          "notes": "Dated employment chronology 1994–2018; identity matched on Eichstätt, McKinsey, EBS and TUM affiliations."
+        },
+        {
+          "url": "https://www.professoren.tum.de/en/huebner-alexander",
+          "title": "Alexander Hübner — TUM professor profile",
+          "notes": "Career narrative without dates; birth year 1978; doctorate at KU Eichstätt-Ingolstadt."
+        },
+        {
+          "url": "https://mgt.tum.de/professors-1/info/prof-dr-alexander-huebner",
+          "title": "TUM School of Management profile (discovery-index link)",
+          "notes": "HTTP 404 at review time."
+        }
+      ],
+      "reason": "Dated ORCID chronology plus the employer narrative identify the first new job after a doctorate completed during continuing industry employment."
     },
     {
       "facultyId": "omlist-5232e57b95e802cf",
@@ -13872,10 +14138,26 @@
     {
       "facultyId": "omlist-9bf09279120f95ea",
       "name": "Rafay Ishfaq",
-      "status": "pending",
-      "checkedAt": null,
-      "sources": [],
-      "reason": "Individual first-placement research is pending."
+      "status": "unresolved",
+      "checkedAt": "2026-10-16",
+      "reason": "The Auburn Harbert profile names the University of Alabama PhD without a year, cites 25+ years of professional experience and teaching at Auburn, Texas A&M and Loyola University Chicago, all undated, so it cannot be determined which post followed the 2010 degree or whether the teaching preceded it. ORCID 0000-0003-0769-3148 has no affiliations; a ProQuest scholar profile returned by search belongs to a different Auburn faculty member; no CV was found.",
+      "sources": [
+        {
+          "url": "https://harbert.auburn.edu/directory/rafay-ishfaq.html",
+          "title": "Rafay Ishfaq — Auburn Harbert College of Business directory",
+          "notes": "Degrees without years; undated prior teaching and industry experience; no CV."
+        },
+        {
+          "url": "https://orcid.org/0000-0003-0769-3148",
+          "title": "ORCID record — Rafay Ishfaq",
+          "notes": "No employment or education entries."
+        },
+        {
+          "url": "https://scholars.proquest.com/gallery/auburn/profiles/9DC74102855411EA9A1E0ED64702888E",
+          "title": "ProQuest scholars profile (search result)",
+          "notes": "Opened; describes a different person (Tennessee PhD 2013), excluded."
+        }
+      ]
     },
     {
       "facultyId": "omlist-900c98c08c66d2ba",
@@ -14023,10 +14305,18 @@
     {
       "facultyId": "omlist-96cd3f0ce878cdd9",
       "name": "Marianne Jahre",
-      "status": "pending",
-      "checkedAt": null,
-      "sources": [],
-      "reason": "Individual first-placement research is pending."
+      "status": "unresolved",
+      "checkedAt": "2026-10-16",
+      "phdYearVerified": 1995,
+      "phdInstitutionVerified": "Chalmers University of Technology",
+      "sources": [
+        {
+          "url": "https://www.klu.org/faculty-research/faculty/resident-faculty/marianne-jahre",
+          "title": "Marianne Jahre — Kühne Logistics University profile with academic CV",
+          "notes": "Education and employment chronology in the on-page academic CV (anchor #c24957) reviewed."
+        }
+      ],
+      "reason": "Integrator downgrade (2026-10-16): the 1995 associate professorship is a promotion at BI Norwegian Business School, where the CV shows employment as PhD student/assistant professor from 1989, before and through the 1995 doctorate. Under the overlap rule, employment that began before the degree and continued is not the first new post-PhD job, and an internal promotion does not create a new employer. Employment at completion: BI. No later new employer is documented in the sources opened. Original research note: Employer-hosted academic CV dates the degree and the appointment that began in the degree year, with the doctoral-period employment noted."
     },
     {
       "facultyId": "omlist-0658d6453712c3d4",
@@ -14259,10 +14549,21 @@
     {
       "facultyId": "omlist-eccfc959389e42d1",
       "name": "Bin Jiang",
-      "status": "pending",
-      "checkedAt": null,
-      "sources": [],
-      "reason": "Individual first-placement research is pending."
+      "status": "unresolved",
+      "checkedAt": "2026-10-16",
+      "reason": "The DePaul faculty page lists the University of Texas at Arlington Operations Management PhD 2004, a USC MBA 2001 and a 1986 engineering degree, plus the current professorship and a 2023–2024 Fulbright award, but no appointment dates or earlier posts. A guessed DePaul CV path returned 404, ORCID search produced no record with a DePaul or Arlington affiliation, and an MDPI author biography page could not be read. Whether DePaul was the first post-PhD employer and from what year is undocumented.",
+      "sources": [
+        {
+          "url": "https://www.depaul.edu/faculty/bin-jiang",
+          "title": "Bin Jiang — DePaul University faculty profile",
+          "notes": "Degrees with years; current role; no chronology."
+        },
+        {
+          "url": "https://business.depaul.edu/faculty/faculty-a-z/Documents/CV/bin_jiang_cv.pdf",
+          "title": "Guessed DePaul CV path",
+          "notes": "HTTP 404."
+        }
+      ]
     },
     {
       "facultyId": "omlist-07aab4285c5a4c1e",
@@ -14455,10 +14756,39 @@
     {
       "facultyId": "omlist-4de260739bcf71e1",
       "name": "Zhibin Jiang",
-      "status": "pending",
-      "checkedAt": null,
-      "sources": [],
-      "reason": "Individual first-placement research is pending."
+      "status": "verified",
+      "checkedAt": "2026-10-16",
+      "employer": "Shanghai Jiao Tong University",
+      "position": "Professor and Head, Department of Industrial Engineering and Management",
+      "placementYear": 2001,
+      "category": "tenure-track",
+      "phdYearVerified": 1999,
+      "phdInstitutionVerified": "City University of Hong Kong",
+      "evidenceNote": "SJTU CIUG faculty page dates the City University of Hong Kong doctorate 1996–1999 and lists Hefei University of Technology employment 1985–Nov 1997 (lecturer, associate professor), Dec 1997–Aug 1999 professor, Sep 1999–Nov 2001 professor and head of the Manufacturing and Industrial Engineering Department, then SJTU professor and head of Industrial Engineering and Management from Dec 2001. ORCID dates the PhD Jun 1996–Aug 1999; the Antai English page confirms PhD 1999 and department deanship 2001–2018. The Hefei professorship began before the degree and continued (with a new department headship there from Sep 1999 at the same employer); SJTU in Dec 2001 is the first new employer after the degree.",
+      "evidenceUrl": "https://ciug.sjtu.edu.cn/Cn/FacultyDetail/21?w=59&p=58",
+      "sources": [
+        {
+          "url": "https://ciug.sjtu.edu.cn/Cn/FacultyDetail/21?w=59&p=58",
+          "title": "江志斌 — SJTU faculty detail page (教育背景 / 工作经历)",
+          "notes": "Dated education and employment chronology 1978–2001 reviewed."
+        },
+        {
+          "url": "https://orcid.org/0000-0002-9241-0212",
+          "title": "ORCID record — Zhibin Jiang",
+          "notes": "PhD CityU Jun 1996–Aug 1999; SJTU chair professor and head from Nov 2011 (only employment entry)."
+        },
+        {
+          "url": "https://www.acem.sjtu.edu.cn/en/faculty/jiangzhibin.html",
+          "title": "Zhibin Jiang — SJTU Antai faculty page (English)",
+          "notes": "PhD 1999 CityU; dean of IE&M department 2001–2018; academic affairs dean 2007–2014."
+        },
+        {
+          "url": "https://www.acem.sjtu.edu.cn/faculty/jiangzhibin.html",
+          "title": "江志斌 — SJTU Antai faculty page (Chinese)",
+          "notes": "Biography; department head 2001–2018; no earlier chronology."
+        }
+      ],
+      "reason": "Dated university chronology shows a pre-degree professorship continuing through the doctorate and SJTU as the first new post-PhD employer; integrator should confirm this reading of the overlap rule."
     },
     {
       "facultyId": "omlist-072857ffbd067acd",
@@ -14705,10 +15035,21 @@
     {
       "facultyId": "omlist-129032e6f3aba08c",
       "name": "Jorge Manuel Soares Julião",
-      "status": "pending",
-      "checkedAt": null,
-      "sources": [],
-      "reason": "Individual first-placement research is pending."
+      "status": "unresolved",
+      "checkedAt": "2026-10-16",
+      "reason": "ORCID dates the Cranfield PhD 2001–2005 while he was lecturer in industrial engineering and management at Universidade Católica Portuguesa (Viseu) 1995–2007, followed only by appointments at the same university: head of the Viseu School of Science and Technology 2005–2007, senior lecturer and associate dean in the engineering school 2007–2013, senior lecturer in operations management at Católica Lisbon 2008–2009 and 2017, and associate professor at Católica Porto from 2013. The Católica Porto profile gives no dates. Because the pre-degree lectureship continued and no new employer followed the degree, no distinct first post-PhD job can be assigned without a policy on internal promotions at a continuing employer.",
+      "sources": [
+        {
+          "url": "https://orcid.org/0000-0002-1937-8308",
+          "title": "ORCID record — Jorge Manuel Soares Julião",
+          "notes": "Dated employment (UCP 1995–present in several schools), Cranfield PhD 2001–2005 under qualifications, Coimbra degrees."
+        },
+        {
+          "url": "https://cpsbe.porto.ucp.pt/person/jorge-manuel-soares-juliao",
+          "title": "Jorge Julião — Católica Porto Business School profile",
+          "notes": "Cranfield PhD without year; early paper-industry engineering job; undated academic and leadership roles."
+        }
+      ]
     },
     {
       "facultyId": "omlist-7025cb721f2a3b24",
@@ -14853,10 +15194,21 @@
     {
       "facultyId": "omlist-fb152b1e1e8626dd",
       "name": "Basak Kalkanci",
-      "status": "pending",
-      "checkedAt": null,
-      "sources": [],
-      "reason": "Individual first-placement research is pending."
+      "status": "unresolved",
+      "checkedAt": "2026-10-16",
+      "reason": "The Scheller College profile lists the Stanford Management Science and Engineering PhD 2010 and states she 'worked as a postdoctoral associate at MIT before joining Georgia Tech', but gives no dates for the postdoc or the Georgia Tech start, and the Georgia Tech energy-institute page adds nothing. ORCID search found no record; Stanford MS&E alumni and archived Scheller pages could not be fetched; searches surfaced no CV. The MIT postdoctoral position is the likely first post-PhD job but its start year and any intervening role are undocumented.",
+      "sources": [
+        {
+          "url": "https://www.scheller.gatech.edu/directory/faculty/kalkanci/index.html",
+          "title": "Basak Kalkanci — Georgia Tech Scheller College of Business directory",
+          "notes": "PhD 2010 Stanford, BS 2004 Boğaziçi; undated MIT postdoctoral associate statement; no CV."
+        },
+        {
+          "url": "https://www.energy.gatech.edu/people/basak-kalkanci",
+          "title": "Basak Kalkanci — Georgia Tech Strategic Energy Institute people page (search result)",
+          "notes": "Title and contact only per search summary; not opened."
+        }
+      ]
     },
     {
       "facultyId": "omlist-c8e6ac5dfb53b29e",
@@ -15029,10 +15381,26 @@
     {
       "facultyId": "omlist-70b5631f02144398",
       "name": "Selçuk Karabatı",
-      "status": "pending",
-      "checkedAt": null,
-      "sources": [],
-      "reason": "Individual first-placement research is pending."
+      "status": "unresolved",
+      "checkedAt": "2026-10-16",
+      "reason": "The Koç GSB profile dates the University of Texas at Austin PhD to 1992 (MS USC 1989, BS Boğaziçi 1987) but lists no appointments; ORCID 0000-0001-6976-5405 records Koç University, College of Administrative Sciences and Economics, from Sep 1995 without a title; the personal site has no CV. Employment between the 1992 degree and the 1995 Koç appointment is undocumented, so the first post-PhD job cannot be identified.",
+      "sources": [
+        {
+          "url": "https://gsb.ku.edu.tr/about-gsb/full-time/?detail=true&id=skarabati",
+          "title": "Selçuk Karabatı — Koç University GSB profile",
+          "notes": "Education with years; biography without appointment dates."
+        },
+        {
+          "url": "https://orcid.org/0000-0001-6976-5405",
+          "title": "ORCID record — Selçuk Karabatı",
+          "notes": "Single employment entry: Koç University CASE from 1995-09, no title; no education entries."
+        },
+        {
+          "url": "https://mysite.ku.edu.tr/skarabati/home/",
+          "title": "Selçuk Karabatı — personal site",
+          "notes": "Home page only (personal/research/teaching subpages returned 403 to WebFetch); no CV found."
+        }
+      ]
     },
     {
       "facultyId": "omlist-bce0660ad2cfcf22",
@@ -15079,10 +15447,26 @@
     {
       "facultyId": "omlist-ab7d2e8af63b32a7",
       "name": "Zeynep Akşin Karaesmen",
-      "status": "pending",
-      "checkedAt": null,
-      "sources": [],
-      "reason": "Individual first-placement research is pending."
+      "status": "unresolved",
+      "checkedAt": "2026-10-16",
+      "reason": "Her personal site states the Wharton PhD (1996) and MS (1994), that she joined Koç University in Fall 2002 and that she was 'previously a faculty member at INSEAD'; the Koç GSB profile repeats the degrees. Neither source dates the INSEAD appointment or its rank, ORCID 0000-0002-8892-9601 lists only an undated Koç entry, and a web search returned nothing relevant. INSEAD is the only pre-Koç employer mentioned, but its start year and whether it immediately followed the 1996 degree are undocumented.",
+      "sources": [
+        {
+          "url": "https://mysite.ku.edu.tr/zaksin/",
+          "title": "Zeynep Akşin — personal site (quick bio)",
+          "notes": "Degrees with years, Koç from Fall 2002, prior INSEAD faculty membership undated, Kellogg visit 2008–2009."
+        },
+        {
+          "url": "https://gsb.ku.edu.tr/about-gsb/full-time/?detail=true&id=zaksin",
+          "title": "Zeynep Akşin — Koç University GSB profile",
+          "notes": "Education 1990/1994/1996; awards; no appointment chronology."
+        },
+        {
+          "url": "https://orcid.org/0000-0002-8892-9601",
+          "title": "ORCID record — Zeynep Akşin",
+          "notes": "Undated Koç employment only."
+        }
+      ]
     },
     {
       "facultyId": "omlist-dafaf5baded96b49",
@@ -15132,10 +15516,21 @@
     {
       "facultyId": "omlist-8af77f5b200cd4b3",
       "name": "Grigorios Kasapidis",
-      "status": "pending",
-      "checkedAt": null,
-      "sources": [],
-      "reason": "Individual first-placement research is pending."
+      "status": "unresolved",
+      "checkedAt": "2026-10-16",
+      "reason": "The Liverpool profile mentions NTUA degrees and a PhD without institution or year; ORCID 0000-0002-5272-9261 records a Liverpool Management School lectureship from Jun 2023 and senior lectureship from Jun 2026 (plus an undated lecturer entry) with no education entries and nothing before June 2023. The imported 2022 Athens University of Economics and Business doctorate is unverified and any research or other role between the degree and June 2023 is undocumented, so the first post-PhD job cannot be fixed.",
+      "sources": [
+        {
+          "url": "https://www.liverpool.ac.uk/people/grigorios-kasapidis",
+          "title": "Grigorios Kasapidis — University of Liverpool staff profile",
+          "notes": "Lecturer in OSCM; NTUA diploma and MSc; Horizon 2020 project involvement; no dates."
+        },
+        {
+          "url": "https://orcid.org/0000-0002-5272-9261",
+          "title": "ORCID record — Grigorios Kasapidis",
+          "notes": "Liverpool employments from 2023-06 and 2026-06; no earlier affiliation, no education."
+        }
+      ]
     },
     {
       "facultyId": "omlist-ab8ef33153137631",
@@ -15285,10 +15680,21 @@
     {
       "facultyId": "omlist-d5911ebd55bdd095",
       "name": "Sham Kekre",
-      "status": "pending",
-      "checkedAt": null,
-      "sources": [],
-      "reason": "Individual first-placement research is pending."
+      "status": "unresolved",
+      "checkedAt": "2026-10-16",
+      "reason": "The Tepper faculty profile lists the University of Rochester PhD 1984 and MA 1983 and, under 'public service', Kodak and Bosch Siemens roles between 1995 and 2009, but gives no start date for the Carnegie Mellon appointment or any other academic post. No CV is linked, the andrew.cmu.edu personal page returned 404, ORCID search found no record, and two web searches returned only unrelated people. The first appointment after the 1984 degree is undocumented.",
+      "sources": [
+        {
+          "url": "https://www.cmu.edu/tepper/faculty-and-research/faculty-profiles/kekre-sham",
+          "title": "Sham Kekre — CMU Tepper faculty profile",
+          "notes": "Education with years; later industry assignments 1995–2009; current distinguished service professorship undated."
+        },
+        {
+          "url": "https://www.andrew.cmu.edu/user/kekresh/",
+          "title": "Guessed CMU personal page",
+          "notes": "HTTP 404."
+        }
+      ]
     },
     {
       "facultyId": "omlist-6c3944c0cef9ec38",
@@ -15609,10 +16015,21 @@
     {
       "facultyId": "omlist-76078ba508419f91",
       "name": "Jaey (Jaeyoung) Kim",
-      "status": "pending",
-      "checkedAt": null,
-      "sources": [],
-      "reason": "Individual first-placement research is pending."
+      "status": "unresolved",
+      "checkedAt": "2026-10-16",
+      "reason": "The University of Dayton directory lists the Clemson PhD in Supply Chain and Operations Management 2023 and a UT Dallas MS 2018 and the current assistant professorship, but no start date and no earlier role. ORCID searches under Jaeyoung and Jaey Kim found no matching record, Clemson's TigerPrints search and PhD placement page could not be opened (403/404), and a web search surfaced only the Dayton page. Whether Dayton was the first post-PhD employer and from what year is undocumented.",
+      "sources": [
+        {
+          "url": "https://udayton.edu/directory/business/mis-osc-and-business-analytics/kim_jaey.php",
+          "title": "Jaey (Jaeyoung) Kim — University of Dayton directory",
+          "notes": "Degrees with years; current role without dates; no CV."
+        },
+        {
+          "url": "https://www.clemson.edu/business/academics/graduate/phd/placements.html",
+          "title": "Clemson College of Business PhD placements (attempted)",
+          "notes": "HTTP 404."
+        }
+      ]
     },
     {
       "facultyId": "omlist-81816923c1e363ef",
@@ -15723,10 +16140,29 @@
     {
       "facultyId": "omlist-bb105d04f595e9aa",
       "name": "Sang Won Kim",
-      "status": "pending",
-      "checkedAt": null,
-      "sources": [],
-      "reason": "Individual first-placement research is pending."
+      "status": "verified",
+      "checkedAt": "2026-10-16",
+      "employer": "The Chinese University of Hong Kong",
+      "position": "Assistant Professor, Department of Decisions, Operations and Technology, CUHK Business School",
+      "placementYear": 2013,
+      "category": "tenure-track",
+      "phdYearVerified": null,
+      "phdInstitutionVerified": "Columbia University",
+      "evidenceNote": "KAIST College of Business profile lists the Columbia Business School PhD in Decision, Risk and Operations (year not stated), a CUHK Business School assistant professorship Aug 2013–Dec 2019 and the current KAIST associate professorship; no postdoc or industry role is listed. The imported 2013 degree year is consistent with the August 2013 start but was not independently confirmed (Columbia Academic Commons search returned no results through the proxy and an access-denied page directly).",
+      "evidenceUrl": "https://www.business.kaist.edu/faculty/sk2559",
+      "sources": [
+        {
+          "url": "https://www.business.kaist.edu/faculty/sk2559",
+          "title": "Sang Won Kim — KAIST College of Business faculty profile",
+          "notes": "Education without years; dated CUHK employment Aug 2013–Dec 2019."
+        },
+        {
+          "url": "https://academiccommons.columbia.edu/search?q=%22Sang+Won+Kim%22",
+          "title": "Columbia Academic Commons search (attempted)",
+          "notes": "Access denied directly; empty result set through a reader proxy; dissertation year not confirmed."
+        }
+      ],
+      "reason": "Employer profile dates the first academic appointment; the degree year remains unverified."
     },
     {
       "facultyId": "omlist-bbc61b228bdd656e",
@@ -15967,10 +16403,21 @@
     {
       "facultyId": "omlist-ab0476abf91ba96e",
       "name": "Ioannis Koliousis",
-      "status": "pending",
-      "checkedAt": null,
-      "sources": [],
-      "reason": "Individual first-placement research is pending."
+      "status": "unresolved",
+      "checkedAt": "2026-10-16",
+      "reason": "The Cranfield profile names the University of Piraeus PhD without a year and a prior Coventry University associate-head role without dates; ORCID 0000-0002-4522-6930 records Coventry associate professor Apr 2018–Feb 2021 and Cranfield from Mar 2021 and nothing earlier. Employment between the imported 2015 degree and April 2018 (the profile cites over 20 years of academic, entrepreneurial and industrial experience) is undocumented, and the degree year is unverified.",
+      "sources": [
+        {
+          "url": "https://www.cranfield.ac.uk/som/people/dr-ioannis-koliousis-19951533",
+          "title": "Ioannis Koliousis — Cranfield School of Management profile",
+          "notes": "Degrees without years; current and Coventry roles undated; LinkedIn and ORCID links."
+        },
+        {
+          "url": "https://orcid.org/0000-0002-4522-6930",
+          "title": "ORCID record — Ioannis Koliousis",
+          "notes": "Two dated employments (Coventry 2018–2021, Cranfield 2021–); no education entries."
+        }
+      ]
     },
     {
       "facultyId": "omlist-6f8ee92b21f0d72a",
@@ -16080,10 +16527,34 @@
     {
       "facultyId": "omlist-f06a0bab8b993673",
       "name": "Ersin Korpeoglu",
-      "status": "pending",
-      "checkedAt": null,
-      "sources": [],
-      "reason": "Individual first-placement research is pending."
+      "status": "verified",
+      "checkedAt": "2026-10-16",
+      "employer": "University College London",
+      "position": "Assistant Professor, UCL School of Management",
+      "placementYear": 2015,
+      "category": "tenure-track",
+      "phdYearVerified": 2015,
+      "phdInstitutionVerified": "Carnegie Mellon University",
+      "evidenceNote": "ORCID record dates the Tepper School PhD in Operations Management Aug 2009–May 2015 and the UCL School of Management assistant professorship from Aug 2015, with no other employment. The UCL profile page and the UCL-hosted CV PDF linked from the discovery index returned 403 to every fetch attempt and could not be read.",
+      "evidenceUrl": "https://orcid.org/0000-0002-0288-6015",
+      "sources": [
+        {
+          "url": "https://orcid.org/0000-0002-0288-6015",
+          "title": "ORCID record — Ersin Korpeoglu",
+          "notes": "Dated education and employment; identity matched on Tepper and UCL affiliations."
+        },
+        {
+          "url": "https://www.ucl.ac.uk/management/sites/default/files/profile_cvs/Ersin_Korpeoglu_CV_0.pdf",
+          "title": "Ersin Korpeoglu — UCL-hosted CV (unopened)",
+          "notes": "HTTP 403 (WebFetch and curl); the old mgmt.ucl.ac.uk link redirects here."
+        },
+        {
+          "url": "https://www.ucl.ac.uk/management/people/ersin-korpeoglu",
+          "title": "Ersin Korpeoglu — UCL School of Management profile (unopened)",
+          "notes": "HTTP 403."
+        }
+      ],
+      "reason": "ORCID chronology places the UCL appointment three months after the degree with no intervening role; employer pages were inaccessible."
     },
     {
       "facultyId": "omlist-2779d3f22cd53ed4",
@@ -16184,10 +16655,29 @@
     {
       "facultyId": "omlist-733dd1ab623baff3",
       "name": "Isil Koyuncu",
-      "status": "pending",
-      "checkedAt": null,
-      "sources": [],
-      "reason": "Individual first-placement research is pending."
+      "status": "verified",
+      "checkedAt": "2026-10-16",
+      "employer": "The University of Texas at San Antonio",
+      "position": "Assistant Professor of Operations and Analytics",
+      "placementYear": 2020,
+      "category": "tenure-track",
+      "phdYearVerified": 2020,
+      "phdInstitutionVerified": "University of Alabama",
+      "evidenceNote": "ORCID record dates the University of Alabama PhD (Information Systems, Statistics and Management Science) Aug 2015–Aug 2020, preceded by a Koç MSc 2013–2015 and Bilkent BS 2008–2013, and the UTSA assistant professorship from Aug 2020 as the only employment. The UTSA profile page confirms the current affiliation but its biography did not render.",
+      "evidenceUrl": "https://orcid.org/0000-0001-8027-1924",
+      "sources": [
+        {
+          "url": "https://orcid.org/0000-0001-8027-1924",
+          "title": "ORCID record — Isil Koyuncu",
+          "notes": "Dated education and employment; identity matched on Alabama and UTSA affiliations."
+        },
+        {
+          "url": "https://business.utsa.edu/faculty/profiles/koyuncu-isil.html",
+          "title": "Isil Koyuncu — UTSA Alvarez College of Business profile",
+          "notes": "Name and college confirmed; biography content loaded by script and not captured."
+        }
+      ],
+      "reason": "ORCID chronology shows the UTSA appointment beginning the month the degree was completed, with no other role."
     },
     {
       "facultyId": "omlist-c79f6be59c49a343",
@@ -16389,10 +16879,30 @@
     {
       "facultyId": "omlist-f7802ba099212fce",
       "name": "Maneesh Kumar",
-      "status": "pending",
-      "checkedAt": null,
-      "sources": [],
-      "reason": "Individual first-placement research is pending."
+      "status": "verified",
+      "checkedAt": "2026-10-16",
+      "employer": "Cardiff University",
+      "position": "Lecturer (Service Operations), Cardiff Business School",
+      "placementYear": 2011,
+      "category": "tenure-track",
+      "phdYearVerified": 2010,
+      "phdInstitutionVerified": "University of Strathclyde",
+      "phdYearResolution": "Cardiff profile qualifications list the Strathclyde PhD (Six Sigma implementation in UK manufacturing SMEs) as 2010, correcting the imported 2008; ORCID lists the degree without dates.",
+      "evidenceNote": "Cardiff profile career overview lists lecturer at Edinburgh Napier University Sep 2008–Sep 2011, Cardiff lecturer (service operations) Oct 2011–Jun 2013, senior lecturer Jul 2013–Aug 2016, reader Sep 2016–Jul 2018 and professor from Aug 2018; qualifications date the Strathclyde PhD to 2010. The Napier lectureship began before the degree and continued through it, so the Oct 2011 Cardiff lectureship is the first new post-PhD job (a UK permanent lectureship, shown as tenure-track). ORCID confirms the Cardiff professorship from Aug 2018 and the Strathclyde doctorate.",
+      "evidenceUrl": "https://profiles.cardiff.ac.uk/staff/kumarm8",
+      "sources": [
+        {
+          "url": "https://profiles.cardiff.ac.uk/staff/kumarm8",
+          "title": "Maneesh Kumar — Cardiff University profile (Biography tab: qualifications and career overview)",
+          "notes": "Direct requests returned 403; the page text was read through a reader proxy (r.jina.ai) on 2026-10-16."
+        },
+        {
+          "url": "https://orcid.org/0000-0002-2469-1382",
+          "title": "ORCID record — Maneesh Kumar",
+          "notes": "Cardiff professor from 2018-08; Strathclyde PhD undated; Glasgow Caledonian MRes 2004–2005."
+        }
+      ],
+      "reason": "Employer profile gives a dated career overview; a pre-degree lectureship continued through the doctorate, so the next new post is recorded, and the degree year is corrected from the same source."
     },
     {
       "facultyId": "omlist-2680b62c14a65a4e",
@@ -16537,10 +17047,34 @@
     {
       "facultyId": "omlist-cc963de19fb783eb",
       "name": "Young Hoon Kwak",
-      "status": "pending",
-      "checkedAt": null,
-      "sources": [],
-      "reason": "Individual first-placement research is pending."
+      "status": "verified",
+      "checkedAt": "2026-10-16",
+      "employer": "Massachusetts Institute of Technology",
+      "position": "Visiting Engineer (post-doctoral researcher)",
+      "placementYear": 1997,
+      "category": "postdoc",
+      "phdYearVerified": 1997,
+      "phdInstitutionVerified": "University of California, Berkeley",
+      "evidenceNote": "Personal 'Professional Experiences' page lists Berkeley graduate student researcher Jan 1995–May 1997, MIT visiting engineer Sep 1997–Jun 1998 described as a post-doctoral researcher on project-management maturity, Florida International visiting assistant professor Aug 1998–Aug 1999 and GWU assistant professor from Aug 1999 (tenured 2006); the site home page dates the Berkeley PhD in Engineering and Project Management to 1997, as does the GWU profile. A consulting-engineer role for the U.S. Navy Feb 1997–Feb 1998 overlapped the degree and continued.",
+      "evidenceUrl": "https://blogs.gwu.edu/kwak/experiences/",
+      "sources": [
+        {
+          "url": "https://blogs.gwu.edu/kwak/experiences/",
+          "title": "Young Hoon Kwak — Professional Experiences (personal site)",
+          "notes": "Dated employment chronology 1991–2020 reviewed."
+        },
+        {
+          "url": "https://blogs.gwu.edu/kwak/",
+          "title": "Young Hoon Kwak — personal site home",
+          "notes": "Education with years (PhD 1997, MS 1992 Berkeley; BS 1991 Yonsei)."
+        },
+        {
+          "url": "https://business.gwu.edu/young-hoon-kwak",
+          "title": "Young Hoon Kwak — GWU School of Business profile",
+          "notes": "PhD 1997 Berkeley; undated visiting roles."
+        }
+      ],
+      "reason": "Self-maintained dated chronology, with the degree corroborated by the employer profile, identifies the first new post-PhD appointment."
     },
     {
       "facultyId": "omlist-e670a910867bbfc9",
@@ -16581,10 +17115,26 @@
     {
       "facultyId": "omlist-35c502a11927cf10",
       "name": "Kwame Owusu Kwateng",
-      "status": "pending",
-      "checkedAt": null,
-      "sources": [],
-      "reason": "Individual first-placement research is pending."
+      "status": "unresolved",
+      "checkedAt": "2026-10-16",
+      "reason": "KNUST School of Business page lists MSc, MBA and BA degrees and 'PhD' without institution or year; the KNUST staff-directory summary gives undated roles (associate professor, department head, former research fellow at CARISCA) and its qualifications and employment-records tabs are empty. ORCID 0000-0003-4866-997X has no affiliations; a search found only an undated CARISCA profile (senior lecturer) and nothing confirming the imported University of Southern Denmark doctorate. Neither the degree nor any dated employment is documented.",
+      "sources": [
+        {
+          "url": "https://business.knust.edu.gh/people/kwame-owusu-kwateng",
+          "title": "Kwame Owusu Kwateng — KNUST School of Business people page",
+          "notes": "Degrees without years; current titles only."
+        },
+        {
+          "url": "https://webapps.knust.edu.gh/staff/dirsearch/profile/summary/0a976f22f51d.html",
+          "title": "KNUST staff directory — profile summary",
+          "notes": "Undated roles; qualifications and employment-records pages state nothing is posted."
+        },
+        {
+          "url": "https://orcid.org/0000-0003-4866-997X",
+          "title": "ORCID record — Kwame Owusu Kwateng",
+          "notes": "No employment or education entries."
+        }
+      ]
     },
     {
       "facultyId": "omlist-ffcb69c6cc1b86cb",
@@ -16678,10 +17228,26 @@
     {
       "facultyId": "omlist-cab050bb80b4a05c",
       "name": "Alejandro Lago",
-      "status": "pending",
-      "checkedAt": null,
-      "sources": [],
-      "reason": "Individual first-placement research is pending."
+      "status": "unresolved",
+      "checkedAt": "2026-10-16",
+      "reason": "Berkeley ITS people page dates the Berkeley PhD in Civil and Environmental Engineering to 2003 (MS 1999); the IESE profile says that before joining IESE he worked as a researcher for the French CEA and for ITS and as a senior consultant, all undated, and gives no IESE start year. ORCID candidate 0000-0003-1121-5763 has no affiliations and a search found no appointment year. Which role followed the 2003 degree, and when IESE began, is undocumented.",
+      "sources": [
+        {
+          "url": "https://www.iese.edu/faculty-research/faculty/alejandro-lago/",
+          "title": "Alejandro Lago — IESE faculty profile",
+          "notes": "Degrees without years; undated CEA/ITS research and consulting; Strathmore visiting professor since 2007."
+        },
+        {
+          "url": "https://its.berkeley.edu/people/alejandro-lago-esteban",
+          "title": "Alejandro Lago Esteban — Berkeley Institute of Transportation Studies people page",
+          "notes": "PhD 2003 and MS 1999 Berkeley; same undated pre-IESE narrative."
+        },
+        {
+          "url": "https://orcid.org/0000-0003-1121-5763",
+          "title": "ORCID record — Alejandro Lago (candidate)",
+          "notes": "No affiliations; identity unconfirmed."
+        }
+      ]
     },
     {
       "facultyId": "omlist-56284a7203f46deb",
@@ -16726,10 +17292,21 @@
     {
       "facultyId": "omlist-fb7a34ef3ecb9c26",
       "name": "Guoming Lai",
-      "status": "pending",
-      "checkedAt": null,
-      "sources": [],
-      "reason": "Individual first-placement research is pending."
+      "status": "unresolved",
+      "checkedAt": "2026-10-16",
+      "reason": "The McCombs directory profile renders by script and returned no biography; the Digital Measures CV link requires single-sign-on; a guessed McCombs faculty-vita path (LaiG_gl5576.pdf) returned 404 on the main host and the alternate host failed on a certificate mismatch and 503. ORCID 0000-0003-3272-5201 lists only an undated UT Austin professorship and a search returned nothing about the 2009 Carnegie Mellon degree or the first appointment. Chronology after the PhD is undocumented.",
+      "sources": [
+        {
+          "url": "https://www.mccombs.utexas.edu/faculty-and-research/faculty-directory/profile/?username=gl5576",
+          "title": "Guoming Lai — McCombs faculty directory profile",
+          "notes": "Profile body not server-rendered; only navigation captured."
+        },
+        {
+          "url": "https://orcid.org/0000-0003-3272-5201",
+          "title": "ORCID record — Guoming Lai",
+          "notes": "Single undated UT Austin IROM professor entry; no education."
+        }
+      ]
     },
     {
       "facultyId": "omlist-081e3b5b476baba2",
@@ -16767,10 +17344,29 @@
     {
       "facultyId": "omlist-8d3682044c35703d",
       "name": "Hugo Lam",
-      "status": "pending",
-      "checkedAt": null,
-      "sources": [],
-      "reason": "Individual first-placement research is pending."
+      "status": "verified",
+      "checkedAt": "2026-10-16",
+      "employer": "University of Liverpool",
+      "position": "Lecturer in Operations Management, Management School",
+      "placementYear": 2015,
+      "category": "tenure-track",
+      "phdYearVerified": 2015,
+      "phdInstitutionVerified": "Hong Kong Polytechnic University",
+      "evidenceNote": "Liverpool profile states he joined the University of Liverpool Management School in December 2015 after graduating from The Hong Kong Polytechnic University with the Operations Management PhD, having earlier worked for several years as a lead engineer at a FTSE 100 company before doctoral study. ORCID dates the PolyU PhD 2011–2015 and the Liverpool lectureship Dec 2015–Sep 2018, senior lectureship Oct 2018–Dec 2021 and chair from Jan 2022. UK lectureship is a permanent academic post, shown as tenure-track.",
+      "evidenceUrl": "https://www.liverpool.ac.uk/people/hugo-lam",
+      "sources": [
+        {
+          "url": "https://www.liverpool.ac.uk/people/hugo-lam",
+          "title": "Hugo Lam — University of Liverpool staff profile",
+          "notes": "Biography with December 2015 start and pre-doctoral industry career; degrees without years."
+        },
+        {
+          "url": "https://orcid.org/0000-0002-4674-6145",
+          "title": "ORCID record — Hugo Lam",
+          "notes": "Dated Liverpool appointments 2015–2022 and PolyU PhD 2011–2015."
+        }
+      ],
+      "reason": "Employer profile and dated ORCID chronology agree on the first appointment immediately after the degree."
     },
     {
       "facultyId": "omlist-abd8b8e021c3bbd2",
@@ -17175,10 +17771,21 @@
     {
       "facultyId": "omlist-78714bbb681f0e26",
       "name": "Jung Young Lee",
-      "status": "pending",
-      "checkedAt": null,
-      "sources": [],
-      "reason": "Individual first-placement research is pending."
+      "status": "unresolved",
+      "checkedAt": "2026-10-16",
+      "reason": "The NIU College of Business directory lists the Michigan State supply chain management PhD and KAIST degrees without years and the current associate professorship without dates; ORCID 0000-0003-3112-0366 records an NIU assistant professorship and the MSU PhD, both undated. The MSU supply chain placement page returned no content and a web search found nothing. The first appointment after the imported 2010 degree is undocumented.",
+      "sources": [
+        {
+          "url": "https://www.cob.niu.edu/about/directory/lee-jung-young.shtml",
+          "title": "Jung Young Lee — Northern Illinois University College of Business directory",
+          "notes": "Degrees without years; current role; no chronology or CV."
+        },
+        {
+          "url": "https://orcid.org/0000-0003-3112-0366",
+          "title": "ORCID record — Jung Young Lee",
+          "notes": "NIU assistant professor (OMIS) and MSU PhD entries without dates."
+        }
+      ]
     },
     {
       "facultyId": "omlist-4af4cfef88007640",
@@ -17323,10 +17930,24 @@
     {
       "facultyId": "omlist-f33f8f959222e32f",
       "name": "Ming Lei",
-      "status": "pending",
-      "checkedAt": null,
-      "sources": [],
-      "reason": "Individual first-placement research is pending."
+      "status": "verified",
+      "checkedAt": "2026-10-16",
+      "employer": "Peking University",
+      "position": "Postdoctoral researcher in economics (national economy)",
+      "placementYear": 1993,
+      "category": "postdoc",
+      "phdYearVerified": 1993,
+      "phdInstitutionVerified": "Huazhong University of Science and Technology",
+      "evidenceNote": "Guanghua School of Management faculty page lists 教育背景 1986 Wuhan University BA (mathematics), 1989 Wuhan University MA (economics), 1993 华中科技大学 系统工程学 博士, and 职业经历 beginning 1993 北京大学经济学博士后（国民经济）, then 1995 associate professor in Guanghua's management science and MIS department, 1997–1998 visiting positions at Kyoto University and Kellogg, 2000 professor, 2004 department chair. No role precedes the 1993 postdoc.",
+      "evidenceUrl": "https://www.gsm.pku.edu.cn/faculty/leiming/",
+      "sources": [
+        {
+          "url": "https://www.gsm.pku.edu.cn/faculty/leiming/",
+          "title": "雷明 — Peking University Guanghua School of Management faculty page",
+          "notes": "Dated education and career list reviewed. Direct requests (https and http, en and cn hosts) failed to connect or returned 503; the page text was read through a reader proxy (r.jina.ai) on 2026-10-16."
+        }
+      ],
+      "reason": "Employer faculty page gives a dated career list starting with a postdoctoral position in the degree year."
     },
     {
       "facultyId": "omlist-b7e0cd6d25341840",
@@ -17373,10 +17994,26 @@
     {
       "facultyId": "omlist-39afb1cc8a5006f4",
       "name": "Miguel Lejeune",
-      "status": "pending",
-      "checkedAt": null,
-      "sources": [],
-      "reason": "Individual first-placement research is pending."
+      "status": "unresolved",
+      "checkedAt": "2026-10-16",
+      "reason": "The GWU School of Business profile lists the 2004 ProQuest dissertation (UMI 3131759), a Rutgers Newark excellence fellowship 2000–2003, a 2007 Carnegie Mellon MBA teaching award and undated visiting positions (Carnegie Mellon, Georgetown, UC Irvine and others) but no appointment titles or start dates and no CV. The GWU blog page requires institutional login, ORCID 0000-0001-6952-7212 has no affiliations and searches found no CV. The title and dates of the post-2004 Carnegie Mellon role and the GWU start are undocumented.",
+      "sources": [
+        {
+          "url": "https://business.gwu.edu/miguel-lejeune",
+          "title": "Miguel Lejeune — GWU School of Business profile",
+          "notes": "Dissertation 2004, fellowships and awards with years, undated visiting positions; read directly (503 once) and via reader proxy."
+        },
+        {
+          "url": "https://orcid.org/0000-0001-6952-7212",
+          "title": "ORCID record — Miguel Lejeune",
+          "notes": "No employment or education entries."
+        },
+        {
+          "url": "https://blogs.gwu.edu/mlejeune/",
+          "title": "GWU blog personal page (attempted)",
+          "notes": "Redirects to Shibboleth login."
+        }
+      ]
     },
     {
       "facultyId": "omlist-26633544e841090b",
@@ -17414,11 +18051,11 @@
           "notes": "Current title only; no history."
         }
       ],
-      "reason": "Only self-reported ORCID gives chronology: Aalto DSc ending June 2016, Loughborough Lecturer from Sept 2016 to Sept 2021, then Aalto. Aalto pages opened give no history to cross-check, so this rests on one author-maintained source; an independent CV would confirm that no postdoc or industry job intervened.",
+      "reason": "Integrator relabel (2026-10-16): a UK lectureship is the permanent faculty entry grade equivalent to an assistant professorship, so it is recorded as tenure-track unless the source says fixed-term (rule documented in RESEARCH-DESIGN.md). Only self-reported ORCID gives chronology: Aalto DSc ending June 2016, Loughborough Lecturer from Sept 2016 to Sept 2021, then Aalto. Aalto pages opened give no history to cross-check, so this rests on one author-maintained source; an independent CV would confirm that no postdoc or industry job intervened.",
       "employer": "Loughborough University",
       "position": "Lecturer",
       "placementYear": 2016,
-      "category": "other-academic",
+      "category": "tenure-track",
       "evidenceUrl": "https://pub.orcid.org/v3.0/0000-0003-3041-6819/employments",
       "evidenceNote": "ORCID lists Loughborough Lecturer from Sept 2016, immediately after the June 2016 Aalto doctorate, as earliest employment.",
       "phdYearVerified": 2016,
@@ -17648,10 +18285,29 @@
     {
       "facultyId": "omlist-85e6713a0fa43215",
       "name": "Chengzhang Li",
-      "status": "pending",
-      "checkedAt": null,
-      "sources": [],
-      "reason": "Individual first-placement research is pending."
+      "status": "verified",
+      "checkedAt": "2026-10-16",
+      "employer": "Shanghai Jiao Tong University",
+      "position": "Assistant Professor, Antai College of Economics and Management",
+      "placementYear": 2019,
+      "category": "tenure-track",
+      "phdYearVerified": 2019,
+      "phdInstitutionVerified": "Purdue University",
+      "evidenceNote": "SJTU Antai English faculty page lists the Purdue PhD in Operations Management 2019 (MS 2018, SJTU BS 2013) and Antai assistant professor Aug 2019–Jul 2022 followed by associate professor from Aug 2022; no postdoc or industry role is listed. The personal site confirms the Purdue degrees and current role without dates.",
+      "evidenceUrl": "https://www.acem.sjtu.edu.cn/en/faculty/lichengzhang.html",
+      "sources": [
+        {
+          "url": "https://www.acem.sjtu.edu.cn/en/faculty/lichengzhang.html",
+          "title": "Chengzhang Li — SJTU Antai faculty page (English)",
+          "notes": "Education with years and dated appointments reviewed."
+        },
+        {
+          "url": "https://li-chengzhang.github.io/",
+          "title": "Chengzhang Li — personal website",
+          "notes": "Degrees and current role without dates; CV page returned no content."
+        }
+      ],
+      "reason": "Employer faculty page gives a dated appointment chronology beginning the year of the degree."
     },
     {
       "facultyId": "omlist-1f0065f6a7ea0fb3",
@@ -20504,11 +21160,11 @@
           "notes": "CV: PhD Columbia GSB 2005; Lecturer in Management Science, Lancaster University Management School 2005-2011; Professor at KLU from 2011. No earlier post-PhD position listed; biography mentions founding Manhattan Review (undated)."
         }
       ],
-      "reason": "KLU academic CV dates the Columbia PhD to 2005 and the first academic position, Lecturer in Management Science at Lancaster, to 2005-2011; nothing is listed in between. His founding of Manhattan Review is mentioned undated and not as post-PhD employment. A UK lecturer post is classified other-academic rather than US tenure-track.",
+      "reason": "Integrator relabel (2026-10-16): a UK lectureship is the permanent faculty entry grade equivalent to an assistant professorship, so it is recorded as tenure-track unless the source says fixed-term (rule documented in RESEARCH-DESIGN.md). KLU academic CV dates the Columbia PhD to 2005 and the first academic position, Lecturer in Management Science at Lancaster, to 2005-2011; nothing is listed in between. His founding of Manhattan Review is mentioned undated and not as post-PhD employment. A UK lecturer post is classified other-academic rather than US tenure-track.",
       "employer": "Lancaster University Management School",
       "position": "Lecturer in Management Science",
       "placementYear": 2005,
-      "category": "other-academic",
+      "category": "tenure-track",
       "evidenceUrl": "https://www.klu.org/faculty-research/faculty/resident-faculty/joern-meissner",
       "evidenceNote": "KLU CV lists Lancaster lecturer 2005-2011 after the 2005 Columbia PhD; no earlier post-PhD role listed.",
       "phdYearVerified": 2005,

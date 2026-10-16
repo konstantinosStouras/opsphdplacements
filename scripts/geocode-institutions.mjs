@@ -7,9 +7,9 @@
 import fs from 'node:fs';
 import path from 'node:path';
 const root = path.resolve(import.meta.dirname, '..');
-const mode = process.argv[2] === 'employers' ? 'employers' : 'institutions';
-const cachePath = path.join(root, mode === 'employers' ? 'research/geocode-employers-cache.json' : 'research/geocode-cache.json');
-const outPath = path.join(root, mode === 'employers' ? 'data/employer-locations.json' : 'data/institution-locations.json');
+const mode = ['employers', 'universities'].includes(process.argv[2]) ? process.argv[2] : 'institutions';
+const cachePath = path.join(root, { employers: 'research/geocode-employers-cache.json', universities: 'research/geocode-universities-cache.json', institutions: 'research/geocode-cache.json' }[mode]);
+const outPath = path.join(root, { employers: 'data/employer-locations.json', universities: 'data/university-locations.json', institutions: 'data/institution-locations.json' }[mode]);
 const UA = 'opsphdplacements-research/1.0 (https://github.com/konstantinosStouras/opsphdplacements)';
 const EDU = /universit|college|school|institut|academy|polytechnic|hochschule|faculty|escuela|école|ecole|fundação|fundacao|business|company|corporation|enterprise|bank|laboratory|research|agency|organi[sz]ation|firm|manufacturer|retailer|airline|consult/i;
 const sleep = ms => new Promise(r => setTimeout(r, ms));
@@ -30,15 +30,15 @@ async function api(params) {
 const placements = JSON.parse(fs.readFileSync(path.join(root, 'data/placements.json'), 'utf8')).records;
 const byId = new Map(placements.map(p => [p.facultyId, p]));
 // Institutions use the verified PhD institution where a review corrected the import, matching the site's index.
-const rows = mode === 'employers' ? placements : JSON.parse(fs.readFileSync(path.join(root, 'data/faculty.json'), 'utf8')).records.map(f => ({ ...f, phdInstitution: byId.get(f.id)?.phdInstitution || f.phdInstitution }));
-const field = mode === 'employers' ? 'employer' : 'phdInstitution';
+const rows = mode === 'employers' ? placements : mode === 'universities' ? JSON.parse(fs.readFileSync(path.join(root, 'data/universities.json'), 'utf8')).records : JSON.parse(fs.readFileSync(path.join(root, 'data/faculty.json'), 'utf8')).records.map(f => ({ ...f, phdInstitution: byId.get(f.id)?.phdInstitution || f.phdInstitution }));
+const field = { employers: 'employer', universities: 'name', institutions: 'phdInstitution' }[mode];
 const counts = new Map();
 for (const f of rows) if (f[field]) counts.set(f[field], (counts.get(f[field]) || 0) + 1);
 const names = [...counts.keys()].sort((a, b) => counts.get(b) - counts.get(a));
 
 for (const name of names) {
   if (cache[name]) continue;
-  const search = await api({ action: 'wbsearchentities', search: name.replace(/ at (Ann Arbor|Chapel Hill|Fayetteville|Urbana-Champaign)$/i, ''), language: 'en', type: 'item', limit: '8' });
+  const search = await api({ action: 'wbsearchentities', search: name.replace(/ at (Ann Arbor|Chapel Hill|Fayetteville|Urbana-Champaign)$/i, '').replace(/\s*\([A-Z][A-Za-z&.\- ]{1,12}\)\s*$/, ''), language: 'en', type: 'item', limit: '8' });
   const ids = (search.search || []).filter(s => EDU.test(s.description || '') || EDU.test(s.label || '')).map(s => s.id);
   let pick = null;
   if (ids.length) {
@@ -56,7 +56,7 @@ for (const name of names) {
 }
 
 const retrievedAt = new Date().toISOString().slice(0, 10);
-const records = names.map(name => ({ [mode === 'employers' ? 'employer' : 'institution']: name, people: counts.get(name), ...cache[name] }));
+const records = names.map(name => ({ [{ employers: 'employer', universities: 'university', institutions: 'institution' }[mode]]: name, people: counts.get(name), ...cache[name] }));
 fs.writeFileSync(outPath, JSON.stringify({
   version: 1,
   metadata: { source: 'Wikidata item coordinates (P625), matched by name', retrievedAt, note: 'Approximate location for map display only. Matches are name based and unreviewed unless reviewed:true.', mapped: records.filter(r => r.qid).length, total: records.length },
