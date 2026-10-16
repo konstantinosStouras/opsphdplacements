@@ -6,9 +6,9 @@ See [RESEARCH-STATUS.md](RESEARCH-STATUS.md) for generated counts. This checklis
 
 ## Current research
 
-Position after the 16 October 2026 integration (published ledger): 754 verified, 907 unresolved, 488 pending of 2,149. Remaining first-pass reviews by original shard (faculty index modulo 3): **A 355, B 0, C 133**. Next concrete item: finish C's 133 pending people, then A's 355, using separate proposal files and one integrator.
+Position after the second 16 October 2026 integration (published ledger): 797 verified, 1,058 unresolved, 293 pending and 1 not-yet-completed PhD, of 2,149. Remaining first-pass reviews by original shard (faculty index modulo 3): **A 260, B 0, C 33** (C's chunk 4 proposal was not delivered). Next concrete item: finish those 293, in bounded batches, using separate proposal files and one integrator.
 
-- [ ] Individually review every pending imported profile (488 left; A 355, C 133). Do not bulk-label a retrieval as a review.
+- [ ] Individually review every pending imported profile (293 left; A 260, C 33). Do not bulk-label a retrieval as a review.
 - [ ] Finish the audit of destination-only placement tables for omitted postdocs and earlier industry jobs; correct or downgrade unsupported first-job claims.
 - [ ] Revisit unresolved cases using the specific gap recorded in the ledger. Separate ambiguous within-year chronology, missing degree completion, wrong-person matches and inaccessible evidence.
 - [ ] Preserve independent field-level sources for degree dates, degree institutions, employer, role and job dates; older first-placement records often have a shared source list and review date.
@@ -51,6 +51,11 @@ Position after the 16 October 2026 integration (published ledger): 754 verified,
 - [ ] Add a conservative recurring recheck process only if the user authorizes scheduling; none exists now.
 
 ## Known pitfalls to retain
+
+- Parallel research agents share one web-search budget per session. Ten agents at once exhausted it, so most shard A chunks stopped after 7 to 30 people. Run fewer agents per session, or give each a smaller chunk, and let agents leave unreached people out of their proposal rather than writing empty reviews.
+- Many university sites (HBS, MSU, UCL, Cardiff, Technion and others) block automated fetches with 403 or bot pages. Unresolved reasons record those failed attempts; a human browser may resolve several quickly.
+- Jobs that began before the degree and continued afterwards (Moritz Fleischmann, Silvia Padron, Gongbing Bi, Hao Xiao) are recorded as unresolved, not as first jobs. Decide and document how to treat this case before upgrading them.
+- Imported degree values flagged as doubtful in unresolved reasons: Harvey Wagner (MIT 1960, not Stanford), Enver Yucesan (Cornell, not Stanford), Ivana Ljubić (TU Wien 2004; the imported 2013 Vienna entry looks like a habilitation), Stefan Scholtes (Karlsruhe, not Bonn), Alvares (no doctorate shown), LaDonna Thornton (2013 vs 2012), Bagchi (1985 vs 1982). None were changed; each needs a primary record.
 
 - OM List samples faculty-listed people and excludes IE departments; it cannot estimate the share of all graduates entering academia.
 - University placement tables sometimes show a later faculty destination. Yue Hu's earlier Chicago Booth postdoc was found after a Stanford destination had initially been recorded.

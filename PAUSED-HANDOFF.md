@@ -44,3 +44,9 @@ The user explicitly authorized resuming. What happened:
 The originating desktop thread subsequently published `research-handoff/`: saved results, audits, pending lists, research helpers, the program pilot, 4,180 source discovery/retrieval metadata records and an inventory of 4,910 original files. A fresh clone contains all relevant continuation work. Full downloaded CVs/pages, duplicate imports, bytecode and the reproducible SQLite export are not republished. Their disposition and recovery paths are recorded in the archive.
 
 GitHub commit `9fbf00d` was discovered during this upload and preserved. Current committed data contain **754 verified, 907 unresolved and 488 pending**, with 1,661 reviewed people. The archive totals overlap those data; they are not additional placements. This desktop thread remains paused after uploading the handoff. No research or website deployment was started by the archive publication.
+
+### Second integration, later on 16 October 2026
+
+- Ten parallel research agents reviewed the remaining pending people of shards C and A, each writing its own proposal file (`research/placements-{a,c}/proposal-N.json`, ignored). The shared web-search budget ran out, so shard A reached only 95 of 355 people; shard C's chunk 4 (33 people) produced no proposal at all.
+- Integrated 195 reviews: 43 verified, 151 unresolved, 1 not-yet-completed PhD. One agent record (Spyros Zoumpoulis) was downgraded to unresolved by the integrator because the postdoc-first order rested on list order only. Published totals: 797 verified, 1,058 unresolved, 293 pending, 1 not-yet-completed, of 2,149.
+- Remaining first-pass reviews: A 260, C 33, B 0.
