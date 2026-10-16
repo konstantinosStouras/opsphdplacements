@@ -1,4 +1,4 @@
-import {normalize,filterRecords,groupCounts,csv,validateDataset} from './model.js';
+import {normalize,filterRecords,groupCounts,csv,validateDataset,isSourceUrl} from './model.js';
 const $=s=>document.querySelector(s), fmt=n=>n.toLocaleString('en-GB');
 const el=(tag,text,cls)=>{const e=document.createElement(tag);if(text!==undefined)e.textContent=text;if(cls)e.className=cls;return e;};
 const state={faculty:[],placements:[],mode:'faculty',page:0,sort:'name',direction:1,coverage:'institutions',profile:'institution',trend:'phdYear',filtered:[],progress:null}, SIZE=25;
@@ -6,7 +6,7 @@ function filters(){return{query:$('#query').value,institution:$('#institution').
 function empty(target,title,note){target.replaceChildren(el('strong',title),el('span',note));target.classList.add('empty');}
 function options(select,values,label){select.replaceChildren(new Option(label,''),...values.map(v=>new Option(v,v)));}
 function fillFilters(){const rows=state[state.mode];for(const[id,key,label]of[['institution','institution','All institutions'],['phd','phdInstitution','All PhD institutions'],['discipline','discipline','All disciplines']]){const select=$('#'+id),before=select.value,values=[...new Set(rows.map(r=>r[key]).filter(Boolean))].sort((a,b)=>a.localeCompare(b));options(select,values,label);if(values.includes(before))select.value=before;select.disabled=!values.length;}}
-function link(text,href){const a=el('a',text);if(/^https:\/\//.test(href||'')){a.href=href;a.target='_blank';a.rel='noopener noreferrer';}return a;}
+function link(text,href){const a=el('a',text);if(isSourceUrl(href)){a.href=href;a.target='_blank';a.rel='noopener noreferrer';}return a;}
 function renderTable(){
  state.filtered=filterRecords(state[state.mode],filters()).sort((a,b)=>{let av=a[state.sort],bv=b[state.sort];if(av==null||av==='')return 1;if(bv==null||bv==='')return -1;return(typeof av==='number'?av-bv:String(av).localeCompare(String(bv)))*state.direction;});
  const count=state.filtered.length,pages=Math.ceil(count/SIZE);state.page=Math.max(0,Math.min(state.page,pages-1));$('#result-count').textContent=count?`${fmt(state.page*SIZE+1)}–${fmt(Math.min((state.page+1)*SIZE,count))} of ${fmt(count)} records`:'0 records';$('#page-count').textContent=`Page ${pages?state.page+1:0} of ${pages}`;$('#previous').disabled=state.page===0;$('#next').disabled=state.page+1>=pages;

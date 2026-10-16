@@ -32,6 +32,10 @@ Search by name, affiliation, PhD institution, discipline and research tags; filt
 
 Source directory: https://omlist.edutool.org/faculty
 
+## Graduate census and career histories
+
+[RESEARCH-DESIGN.md](RESEARCH-DESIGN.md) specifies the subsequent expansion to all documented graduates of in-scope programs, including industry careers and sector transitions. [database/schema.sql](database/schema.sql) is the preparatory relational schema; it is not yet populated or serving the website. First-placement verification of the imported directory continues before expanded graduate collection.
+
 ## Local preview
 
 Serve the repository with any static HTTP server, for example `python -m http.server 8765`, then visit http://localhost:8765.
