@@ -1,0 +1,8 @@
+from helpers import *
+unresolvedhtml('omlist-00700b634bdc6bf2','Indiana faculty profile confirms Western Ontario doctorate but omits its year and initial employment chronology. IE teaching awards show prior affiliation without establishing the first job after completion.')
+unresolvedhtml('omlist-00c3eb090ed2eb62','Bristol institutional profile describes the current lecturer appointment and research interests but provides no dated doctorate or earlier employment chronology, so an initial placement cannot be verified.')
+unresolvedhtml('omlist-0131741ce2d998ee','Amsterdam profile provides current appointment and publications but no dated degree and employment history establishing the first post-PhD job. Secondary search leads to Twente employment but primary chronology remains needed.')
+unresolvedhtml('omlist-01900acc56f144ef','Rabat institutional profile confirms joint doctorate completed2018 and current assistant professorship, but does not date the appointment or state it was the first job after graduation.')
+unresolvedhtml('omlist-02b2af56dc2f82d3','Drexel biography says Princeton postdoctoral fellow after the PhD, while the detailed chronology lists Rutgers part-time lecturer startingAugust2001 and Princeton postdoc startingSeptember2001. The degree completion month is absent; which position began first after completion remains unresolved.')
+unresolvedhtml('omlist-037a00e8a282b048','HKU profile and personal academic page confirm Maryland doctorate and prior IESE appointment, but neither dates completion or initial employment. Later MIT and Northwestern visits cannot establish a first placement.')
+save()

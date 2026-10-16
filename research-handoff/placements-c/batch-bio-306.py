@@ -1,0 +1,23 @@
+from helpers import *
+bio('omlist-0e5527afaf4bd30e','The Ohio State University',None,'Assistant Professor','unknown','Ohio State biography states that McKie joined Fisher after earning her South Carolina PhD; earlier consulting preceded returning to academia. Degree and appointment years are not independently established.')
+for id,note in [
+('omlist-151a0bc76c1ee6b3','Harvard biography access failed and the discovered primary CV URL returned 404; search excerpts alone are insufficient to verify chronology.'),
+('omlist-161e82c2a76050b9','Personal academic site establishes current Toronto role but lacks dated degree and early employment chronology; institutional profile requires JavaScript.'),
+('omlist-16bd43d76ccb4ab0','HKUST school profile establishes identity, but detailed department biography could not be opened due to fetch/certificate failures. Search excerpts suggest chronology but have not been independently opened.'),
+('omlist-1addec742791f3c3','Ivey biography identifies a UNC doctorate and current role but supplies neither degree year nor a complete early appointment history.'),
+('omlist-1bc791b07df17814','Bristol biography dates NUS research fellowship from February 2017 and later roles, but does not establish doctoral completion timing or exclude an earlier post-PhD role.'),
+('omlist-1c56b230b26417d2','NC State biography identifies a 1990 UNC PhD but does not establish first employment; the linked legacy DOC CV was not readable with the available extraction.'),
+('omlist-1dc897a6fac0bf26','Personal site reports MIT PhD in 2014 and industry experience at Google and Morgan Stanley without dates; first post-PhD role cannot be established.'),
+('omlist-1e473b95075cf65c','Imported Case Western faculty profile returns 404; no readable current primary chronology was established.'),
+('omlist-1e6648037e0088a0','Personal CV lists an expected April 2020 Michigan PhD and Cornell postdoc May-December 2020, while a supervisor CV search result suggests 2019-2020. Exact completed degree timing and the inconsistent postdoc start need corroboration.')]:bio_unresolved(id,note)
+out[-1]['sources'].append(dict(url='https://drive.google.com/file/d/1ogQb6Xc_lqHHfXGv_rJfrNBDpfpB5aJt/view?usp=sharing',title='Qi Luo curriculum vitae',notes='Opened public CV; expected degree date and dated postdoc chronology require reconciliation.'))
+bio_unresolved('omlist-1abd6e6eb7e6bafe','Korea University profile dates Indiana PhD December 1991 and Marquette assistant professorship July 1991, explicitly beginning before doctoral completion. First job newly begun after PhD remains ambiguous.')
+out[-1]['sources']=[dict(url='https://biz.korea.ac.kr/professor/professor_view.html?pinfo=PcQqdjDNRXYCkcD_6Acxww',title='Daesoo Kim Korea University faculty profile',notes=out[-1]['reason'])]
+for name,employer,year,pos,cat,url,note in [
+('Aras Selvi','Princeton University',2025,'Postdoctoral Research Associate','postdoc','https://www.arasselvi.com/files/CV.pdf','CV lists Imperial OR PhD 2020-2025, Princeton ORFE postdoc 2025-2026, and UCL appointment from 2026. Earlier J.P. Morgan work was a PhD internship.'),
+('Zhenyu Hu','National University of Singapore',2015,'Assistant Professor','unknown','https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/05/KAE0R1631865659.pdf','CV lists Illinois Urbana-Champaign IE PhD ending July 2015 and NUS assistant professorship beginning July 2015; earlier corporate work consists of summer internships.'),
+('Ella Segev','Institute for Advanced Study',2004,'Research Scholar','postdoc','https://openscholar.huji.ac.il/sites/default/files/ella-segev/files/cv_for_website_segev_ella_october_2023.pdf','CV lists Tel Aviv PhD 1999-2004, IAS Princeton postdoc 2004-2005, and Technion lecturer appointment beginning 2005.'),
+('Helmut M. Dietl','Ludwig Maximilian University of Munich',1991,'Assistant Professor','unknown','https://www.business.uzh.ch/dam/jcr:6d60ed88-37ba-4f52-a0ef-28eda059d4e3/CVPP_2026_09_25.pdf','CV distinguishes LMU doctorate in 1991 from habilitation in 1996. Academic career begins with LMU assistant professorship 1991-1994; earlier research assistantship appears under doctoral education.')]:
+ add(name,employer,year,url,name+' curriculum vitae',note);out[-1].update(position=pos,category=cat,placementYear=year,reason='Primary faculty CV establishes degree and earliest post-PhD employment chronology.');out[-1]['sources'][0]['notes']='Opened primary faculty CV with education and employment chronology.'
+ if name=='Ella Segev':out[-1].update(phdInstitutionVerified='Tel Aviv University',phdInstitutionResolution='CV identifies Tel Aviv University as doctoral institution; imported institution was missing.')
+save()

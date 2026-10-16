@@ -9,6 +9,7 @@ An independent, static research directory for Operations Research, Operations Ma
 | Guide | Purpose |
 |---|---|
 | [PAUSED-HANDOFF.md](PAUSED-HANDOFF.md) | Historical pause record, resume log and the shard status after resumption |
+| [research-handoff/README.md](research-handoff/README.md) | Portable saved results, audits, scripts and source catalogue available in a fresh clone |
 | [AGENTS.md](AGENTS.md) | Entry instructions for models and research agents |
 | [CONTRIBUTING.md](CONTRIBUTING.md) | Evidence requirements, task ownership and submitting findings |
 | [WORKFLOW.md](WORKFLOW.md) | Research, integration, checks and publishing commands |

@@ -1,0 +1,16 @@
+from helpers import *
+def webcv(name,emp,year,url,pos,start,note):
+ add(name,emp,year,url,name+' — Curriculum Vitae',note,pos,'tenure-track',start)
+ records[-1]['reason']='Primary faculty CV degree and employment chronology establishes the initial appointment.'
+ records[-1]['sources'][0]['notes']='Faculty CV education and employment chronology reviewed.'
+webcv('Helen ZHOU Yangfang','Singapore Management University',2012,'https://business.smu.edu.sg/sites/business.smu.edu.sg/files/business/OperationsManagement/cv_YangfangZhou_2026.pdf','Assistant Professor of Operations Management',2013,'CV dates Carnegie Mellon PhD completion to 2012 and SMU assistant professorship to 2013–2021 as earliest faculty position; prior roles were doctoral teaching and research assistantships.')
+webcv('Xinyi Guan','Hong Kong Polytechnic University',2024,'https://xinyi-guan.github.io/CV_XinyiGuan.pdf','Assistant Professor of Logistics and Maritime Studies',2024,'CV dates UCLA PhD completion to June 2024 and Hong Kong Polytechnic assistant professor from August 2024 as earliest employment.')
+webcv('Ravi Aron','University of Pennsylvania',1999,'https://msbfile03.usc.edu/digitalmeasures/arunkund/pci/6649653129-1.PDF','Assistant Professor',1999,'CV dates NYU PhD to 1999 and Wharton assistant professor to 1999–2005. Earlier industry employment ended in 1993 before doctoral completion; university hiring announcement independently confirms appointment in 1999.')
+records[-1]['sources'].append(dict(url='https://magazine.wharton.upenn.edu/issues/fall-1999/school-update-16/',title='Wharton Magazine — Fall 1999 school update',notes='Contemporaneous new-faculty announcement identifies Ravi Aron as assistant professor with NYU PhD.'))
+unresolvedhtml('omlist-0533450ff50ab531','Official biography identifies UNC Chapel Hill as the beginning of the academic career, preceded by industry, but does not date the Purdue PhD or industry employment. First academic role cannot yet be treated as first post-PhD job.')
+records[-1]['sources'].append(dict(url='https://uh.edu/fulbright/faculty-staff/fulbright-scholars/basheer-khumawala.php',title='University of Houston — Basheer Khumawala Fulbright biography',notes='Identifies UNC assistant professor as initial academic role but lacks doctorate and prior industry dates.'))
+unresolvedhtml('omlist-08753eca74f27c2a','Public directory requires browser rendering. University business-school staff biography confirms Calgary MBA and PhD and substantial corporate background but omits degree year and employment chronology; first post-PhD job remains unresolved.')
+records[-1]['sources'].append(dict(url='https://www.businessmasters.auckland.ac.nz/about-us/our-staff/',title='Auckland Business School — Our staff',notes='David Robb biography confirms Calgary degrees but provides no dated first employment.'))
+unresolvedhtml('omlist-0907a0c4e443c24e','Auburn directory and linked personal site identify Alabama PhD in 2015, earlier Iowa State faculty employment, and pre-academic insurance work. No dated Iowa State appointment or complete post-degree chronology is provided.')
+records[-1]['sources'].append(dict(url='https://www.morgan.business/',title='Tyler Morgan — personal academic website',notes='Describes 2015 Alabama doctorate and previous Iowa State faculty position without appointment dates.'))
+save()

@@ -23,4 +23,4 @@ The program register is partial. It includes historical/predecessor records; its
 - Priorities and incomplete deliverables: [TODO.md](TODO.md).
 - Reproducible integration and publication: [WORKFLOW.md](WORKFLOW.md).
 
-Local ignored agent caches may contain work newer than this snapshot. Inspect active ownership and compare proposal dates before merging; a fresh clone will not contain those caches. No scheduled research or future automatic update is implied by this status file.
+The tracked [research-handoff snapshot](research-handoff/README.md) contains historical agent results, audits, scripts and source metadata available in a fresh clone. Its 1,661 saved reviews were integrated in commit `9fbf00d` and overlap the public counts above. Do not add them again. Compare dates and corrections before merging; full source-document caches are not republished. The originating desktop thread remains paused; consult the handoff for the separate integration history and obtain authorization for new work. No scheduled research or future automatic update is implied by this status file.

@@ -1,0 +1,6 @@
+from helpers import *
+addcv('omlist-0ea4df2ef7b66b55','University of Missouri–Rolla',2006,'Assistant Professor','tenure-track','CV dates Florida PhD toAugust2006 and Missouri–Rolla assistant professorship toAugust2006–July2009. Earlier Florida lecturing and SAP consulting predate the PhD.')
+addcv('omlist-10c1f123218aa25f','IBM Thomas J. Watson Research Center',2013,'Postdoctoral Researcher, Supply Chain Analytics','postdoc','CV dates MIT PhD to2013 and IBM postdoctoral researcher to2013–2014, before Michigan assistant professorship inSeptember2014.')
+addcv('omlist-129dbe639c0b1feb','Paris 1 Panthéon-Sorbonne University',2017,'Assistant Lecturer','other-academic','CV dates Toulon PhD to2017 and Paris1 assistant lecturer to2017–2020, with a parallel PRISM research fellowship from2017. Earlier Toulon teaching was during doctoral study; both first post-degree roles are at Paris1.')
+unresolvedcv('omlist-20df4660d9d9be90','CV dates Indiana PhD toSeptember2006 and i2 Technologies consultant employment fromJuly2006 toSeptember2008. This industry job began before completion and continued afterward; Toledo assistant professor beganSeptember2008. Initial new post-PhD employment cannot be distinguished from continuing employment at graduation.')
+save()

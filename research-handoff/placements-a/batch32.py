@@ -1,0 +1,15 @@
+from helpers import *
+unresolvedhtml('omlist-1cbd053cc453e8a4','The McCombs directory returns a blank faculty template and its linked CV could not be retrieved. A readable primary education and employment history is needed to verify the initial appointment.')
+addhtml('omlist-1da0592675561358','Dartmouth College',2017,'Postdoctoral Research Fellow','postdoc','The TU Eindhoven thesis biography states a September 2017 defense followed by an October 2017 Dartmouth postdoctoral fellowship. The current Nova SBE biography confirms the completed 2017 doctorate and Dartmouth postdoctoral research.')
+records[-1]['evidenceUrl']='https://pure.tue.nl/ws/files/74871666/20170912_Ge.pdf'
+records[-1]['sources'].append(dict(url=records[-1]['evidenceUrl'],title='TU Eindhoven — Jiwen Ge doctoral thesis, author biography',notes='Final page specifies Dartmouth postdoctoral fellowship from October 2017 after September 2017 defense.'))
+unresolvedhtml('omlist-1f86f6025d891199','Aalto confirms the doctorate in June 2009 and subsequent assistant professorships at Manchester and Nottingham, followed by Aalto in August 2012. The earlier appointments are undated, so their precise sequence and initial start cannot yet be established.')
+records[-1]['sources'].append(dict(url='https://research.aalto.fi/en/persons/katri-kauppi/',title='Aalto — Katri Kauppi research profile',notes='Doctorate awarded June 2009; previous Manchester and Nottingham roles undated.'))
+unresolvedhtml('omlist-202cb1ab2707bb4c','The university-hosted abbreviated CV gives Miami assistant professor 1985–1991 as the earliest academic appointment but omits the doctorate year. The degree-year lead in an Ohio State proposal could not be reopened because that PDF returns 404. Degree completion timing remains unverified.')
+doc=next(d for d in json.loads((root/'research/placements-a/documents/omlist-202cb1ab2707bb4c.json').read_text(encoding='utf-8'))['documents'] if d.get('kind')=='docx')
+records[-1]['sources'].append(dict(url=doc['url'],title='Walter Zinn — abbreviated CV, May 2021',notes='University-hosted Word CV lists academic employment from 1985 but omits degree dates.'))
+addhtml('omlist-2050fe638c837ba3','Columbia University',2001,'Assistant Professor','tenure-track','The Imperial seminar biography dates his first Columbia assistant professorship to January 2002 after the 2001 MIT PhD; hedge-fund employment followed the Columbia role in 2005.',start=2002)
+records[-1]['sources'].append(dict(url='https://groups.google.com/g/QUADS-Imperial/c/gcOvr6zvylI',title='Imperial QUADS seminar — Martin Haugh biography, November 2016',notes='Seminar organizer reproduces speaker biography with first Columbia appointment January 2002 and subsequent industry transition.'))
+records[-1]['evidenceUrl']='https://groups.google.com/g/QUADS-Imperial/c/gcOvr6zvylI'
+unresolvedhtml('omlist-20f0ab2e6409d584','The Amsterdam biography supplies Rabobank/Tilburg appointments from 1996, McKinsey from 1998 and Stibbe from 2004, but does not date the Erasmus doctorate or earlier employment. The earliest post-PhD job is not established by this partial history.')
+save()

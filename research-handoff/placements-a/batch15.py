@@ -1,0 +1,9 @@
+from helpers import *
+addcv('omlist-04dd90c1724a6532','University of Pennsylvania',1974,'Assistant Professor of Decision Sciences','tenure-track','CV records Northwestern PhD in 1974 and Wharton assistant professor, 1974–1980, as the earliest faculty appointment.')
+addcv('omlist-0760b5833d4a5cb5','University of Alberta',2020,'Assistant Professor of Operations Management','tenure-track','CV dates Wisconsin–Madison PhD to 2020 and Alberta assistant professorship from2020 as the first academic job.')
+addcv('omlist-f96c8c3cc5ed694b','Massachusetts Institute of Technology',1977,'Assistant Professor','tenure-track','CV dates Rochester PhD to1977 and MIT Sloan assistant professorship fromJuly1977. Previous Rochester summer teaching appears under doctoral-period employment.')
+addcv('omlist-fe243a38def24396','IBM Thomas J. Watson Research Center',2005,'Herman Goldstine Postdoctoral Fellow','postdoc','CV dates Cornell PhD completion toJuly2005 and IBM Herman Goldstine postdoctoral fellowship toJuly2005–August2006, preceding MIT employment.')
+unresolvedcv('omlist-00e42e99ba5eeb5f','CV dates Wharton PhD to1998 and Mississippi assistant professorship toAugust1997–June1999, starting before degree completion. The source establishes employment continuing at graduation, with Case Western startingJuly1999, but not a new initial post-PhD placement.')
+unresolvedcv('omlist-029229c2da72dca1','The linked public CV returned a PDF without readable text in extraction. Degree and employment chronology need visual review or an alternative primary source.')
+unresolvedcv('omlist-029b779bba9102d7','CV dates Aix-Marseille PhD to2022 and lists KEDGE courses in2022–2023, but gives no dated appointment history or explicit first-position statement. Course teaching alone cannot establish the first job.')
+save()

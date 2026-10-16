@@ -1,6 +1,6 @@
 # Remaining work and handoff priorities
 
-**Resumed on 16 October 2026 at the user's explicit request after a low-credit pause.** The three saved agent result files were recovered from the user's Dropbox copy of the checkout, merged and published (see [PAUSED-HANDOFF.md](PAUSED-HANDOFF.md) for the historical pause record and the resume log). No scheduled research runner exists.
+**Resumed on 16 October 2026 at the user's explicit request after a low-credit pause.** The three saved agent result files were recovered from the user's Dropbox copy of the checkout, merged and published (see [PAUSED-HANDOFF.md](PAUSED-HANDOFF.md) for the historical pause record and the resume log). No scheduled research runner exists. The originating desktop thread remains paused; its current authorization covers publishing the portable archive and guides only. [research-handoff/README.md](research-handoff/README.md) now provides the saved work on GitHub. This archive upload does not resume research or trigger deployment.
 
 See [RESEARCH-STATUS.md](RESEARCH-STATUS.md) for generated counts. This checklist describes unfinished deliverables, not a claim that work is already complete.
 

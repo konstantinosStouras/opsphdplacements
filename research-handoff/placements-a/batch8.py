@@ -1,0 +1,10 @@
+from helpers import *
+addcv('omlist-40c93123deb0294f','Oregon State University',2017,'Assistant Professor of Supply Chain and Logistics Management','tenure-track','CV lists the UNC operations PhD ending in 2017 and Oregon State assistant professorship from June 2017 through August 2020 as the earliest academic appointment.')
+addcv('omlist-46900ade572b2eed','ESMT Berlin',2019,'Assistant Professor of Management Science','tenure-track','CV dates the Duke PhD to 2019 and lists ESMT assistant professor, 2019–2025, as the first faculty appointment.')
+addcv('omlist-441951622da0f4f5','University of Cologne',2021,'W1 Professor','other-academic','CV dates the HKUST PhD to August 2021. Its earliest listed professional appointment is W1 Professor at Cologne starting March 2022, alongside Chief Machine Learning Scientist at Cologne’s Energy Economics Institute from the same month; no earlier post-PhD role is listed.')
+records[-1]['placementYear']=2022
+unresolvedcv('omlist-48c23c010332fe77','CV dates the UBC PhD to May 1998, but Carnegie Mellon visiting assistant professorship spans 1997–1998 and therefore began before degree completion. Rensselaer assistant professorship begins in 1998 without a month. The exact transition around completion needs clarification.')
+unresolvedcv('omlist-48fa3b62d30e5425','The institutional CV dates the PhD to 2013 and reports teaching at KEDGE from 2014, but supplies no complete employment chronology or explicit first appointment. Teaching records alone do not establish the first job.')
+unresolvedcv('omlist-50746044d32399c3','The September 2024 CV reports a CUHK assistant professorship from 2024 but still labels Berkeley PhD education 2019–current. Completion timing and the first post-PhD appointment cannot be confirmed from this stale chronology.')
+unresolvedcv('omlist-5701c16e754690e6','The CV dates the Wharton PhD to 1994 and Santa Clara assistant professorship to 1992–1998. This is employment continuing at PhD completion rather than a new post-PhD placement; the first new job after completion is not established.')
+save()

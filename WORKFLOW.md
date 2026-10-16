@@ -49,7 +49,7 @@ node scripts/update-research-status.mjs
 node scripts/build.mjs
 ```
 
-On this machine, the three existing agent files can be passed together instead of a proposal. They are local caches and unavailable in a fresh clone. On 16 October 2026 they were recovered into a cloud clone from the user's Dropbox copy of the checkout; compare counts with the handoff and run a conflict check against the published ledger (no duplicate or unknown IDs, no silent downgrades) before merging.
+The three saved agent result files, audit histories, scripts and source metadata are tracked under `research-handoff/` and available in a fresh clone. Their 1,661 reviews were already integrated in commit `9fbf00d`; do not merge them again blindly. Read `research-handoff/README.md` for evidence recovery and optional workbench restoration. Compare proposals against current public corrections before merging; full source documents remain excluded.
 
 `data/faculty.json` preserves the original import. `data/placements.json` contains reviewed first jobs. `data/research-status.json` covers every imported person exactly once and retains unresolved findings. The generated SQLite file, `research/operations-careers.sqlite`, is a disposable snapshot: **do not edit it as the canonical store**. Public JSON remains the source of truth until a reviewed migration introduces a persistent canonical database. New schema tables for advisors/publications/career histories do not imply these facts have been populated.
 

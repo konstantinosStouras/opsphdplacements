@@ -1,0 +1,15 @@
+from helpers import *
+addcv('omlist-11443db680d1b324','Uber Technologies',2019,'Postdoctoral Research Scientist','postdoc','CV dates Columbia PhD to 2019 and Uber postdoctoral research scientist to 2019–2020, preceding UCLA assistant professorship.')
+addcv('omlist-511de4252bc8c70f','Karlsruhe Institute of Technology',2006,'Postdoctoral Researcher','postdoc','CV dates Karlsruhe doctorate to 2006 and Karlsruhe postdoctoral research to 2006–2007, before Chicago postdoctoral appointment in 2007.')
+addcv('omlist-661fe778159a74e2','Yale University',2014,'Postdoctoral Associate in Operations Management','postdoc','CV dates Columbia PhD to 2014 and Yale postdoctoral associate to 2014–2015, before USC assistant professorship.')
+addcv('omlist-6b005177cadfb066','University of Arkansas',2012,'Assistant Professor of Supply Chain Management','tenure-track','CV dates Arizona State PhD to 2012 and Arkansas assistant professorship from January 2013 to May 2019. Consulting and founder roles ended before doctoral study.')
+records[-1]['placementYear']=2013
+addcv('omlist-8511d72c00639e87','University of Calgary',2007,'Postdoctoral Research Fellow','postdoc','CV dates Chinese University of Hong Kong PhD to 2007 and Calgary postdoctoral fellowship from January to December 2008, before Cambridge and Toronto fellowships.')
+records[-1]['placementYear']=2008
+addcv('omlist-9b51670dc3e67285','Purdue University',1995,'Visiting Assistant Professor of Management','other-academic','CV dates Purdue PhD to 1995 and Purdue visiting assistant professor to 1995–1996, before Illinois assistant professorship. Prior industry employment ended in 1992.')
+addcv('omlist-9edf82c7f6833c50','University of Pittsburgh',2019,'Assistant Professor of Business Analytics and Operations','tenure-track','CV dates Columbia PhD to 2019 and Pittsburgh assistant professorship from 2019 to 2026, preceding Baruch.')
+addcv('omlist-af2a314937b88431','Pennsylvania State University',2008,'Assistant Professor of Supply Chain and Information Systems','tenure-track','CV dates Mannheim PhD to 2008 and Penn State assistant professorship to 2008–2014 as earliest faculty employment.')
+addcv('omlist-da44c6423a224b5e','University of California, San Diego',1997,'Project Scientist / Postdoctoral Researcher','postdoc','CV dates INSEAD PhD to 1997 and UC San Diego project scientist/postdoctoral researcher to 1997–1998, before Wharton assistant professorship.')
+unresolvedcv('omlist-8d94f95b5004da85','CV dates Alabama PhD to 1992, Jackson State assistant professor to August 1990–June 1992, and Western Michigan associate professor from August 1992. Completion month is needed to distinguish employment continuing through graduation from the subsequent transition.')
+unresolvedcv('omlist-afb40fb712761f52','CV dates Georgia Tech PhD to 1998, Georgia Tech instructor to September 1997–June 1998 and International University in Germany associate professor from July 1998. Degree completion month is absent; the instructor role may have continued after completion, requiring chronology clarification.')
+save()

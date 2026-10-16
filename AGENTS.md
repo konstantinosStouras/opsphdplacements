@@ -10,6 +10,8 @@ Coordinate ownership before parallel edits. Research contributors write separate
 
 Follow `WORKFLOW.md` for validation and publication. Keep source caches, full CV downloads, credentials and personal contact details out of commits. `research/` and `_site/` are intentionally ignored. Do not add a CNAME, change the personal-site repository, or change the inherited domain. Push/deploy only within the user's authorization; no outreach or messages to graduates are authorized by these files.
 
+The user requires relevant continuation work to be available on GitHub, not only on this computer. `research-handoff/` is the tracked, dated snapshot of saved proposals, audits, scripts and source metadata. Read its README on a fresh clone. Preserve relevant new work in reviewed, portable proposal/handoff files; retain source URLs and retrieval details rather than publishing full source documents. Record which findings have been integrated and distinguish any remaining proposals from the public datasets. The working cache remains ignored.
+
 Report completed work, exact files changed, validation, unresolved limitations and the next concrete step. Do not claim a census or all first jobs are complete merely because a batch finished. Do not claim work will continue automatically: no scheduled research runner is configured.
 
 ## Standing documentation maintenance instruction

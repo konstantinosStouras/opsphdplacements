@@ -1,0 +1,9 @@
+from review_helpers import *
+unresolved('Vipul Garg','Texas State biography identifies North Texas doctorate and prior industry work but provides no dates or earliest employment chronology; a Texas A&M San Antonio CV search lead returned a missing-page response.',url='https://faculty.txst.edu/profile/2705012/detail')
+unresolved('Iryna Malacina','A public LUT researcher profile was located but could not be retrieved in readable form; no first-employer claim was accepted from search snippets.',url='https://research.lut.fi/converis/portal/detail/Person/10813615?auxfun=&lang=en_GB')
+unresolved('Reidar Hagtvedt','Alberta directory describes research without degree or earliest appointment dates; its public CV link failed to load. Earlier official calendar identifies Georgia Tech degrees, conflicting with imported Georgia State and requiring resolution.',url='https://apps.ualberta.ca/directory/person/hagtvedt')
+unresolved('Luk van Wassenhove','INSEAD biography describes research, honors and current emeritus roles without doctoral completion or first-employment chronology.',url='https://www.insead.edu/faculty/luk-van-wassenhove')
+unresolved('Cheryl Gaimon','CV dates earliest listed Ohio State assistant professorship to September 1981 but does not give a doctoral completion year, so post-degree ordering remains unverified.',url='https://www.scheller.gatech.edu/directory/faculty/gaimon/gaimon_vita.pdf')
+unresolved('Leroy (Lee) Schwartz','INFORMS biography identifies Leroy B. Schwarz and says Dartmouth followed the doctorate in 1970, but its education section lists PhD 1972 while imported record says 1969. Conflicting dates prevent first post-doctoral verification.',url='https://www.informs.org/Explore/History-of-O.R.-Excellence/Biographical-Profiles/Schwarz-Leroy-B')
+from collections import Counter
+print(len(records),Counter(x['status'] for x in records))
