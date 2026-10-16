@@ -5,11 +5,11 @@ Generated from committed-format public datasets by `node scripts/update-research
 | Measure | Count |
 |---|---:|
 | Imported faculty profiles | 2149 |
-| Individually reviewed profiles | 1856 |
-| Verified first jobs | 797 |
-| Researched but unresolved | 1058 |
+| Individually reviewed profiles | 1889 |
+| Verified first jobs | 810 |
+| Researched but unresolved | 1078 |
 | Degree completion unconfirmed | 1 |
-| Pending individual review | 293 |
+| Pending individual review | 260 |
 | Initial program-register records | 13 |
 | Institutions in the initial register | 10 |
 

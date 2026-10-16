@@ -95,3 +95,13 @@ The relational schema in `database/schema.sql` defines the next-stage canonical 
 Data flow: public sources → cached extraction proposals → identity/chronology review → canonical records and claims → validation → versioned public exports → website. Agents propose sourced facts; publication checks reject missing provenance and inconsistent IDs. An export never promotes unresolved claims simply because a source was downloaded.
 
 Use immutable release identifiers and change logs, with corrections superseding prior assertions. Do not overwrite accepted career history when refreshing an employer biography. Back up the canonical store, validate referential integrity and retain reproducible export scripts. Revisit full-text search or a hosted API only if measured dataset size or user needs exceed the static approach.
+
+## Decision: employment that overlaps the degree date (16 October 2026)
+
+Reviews keep finding three overlap patterns. They are treated as follows, and the overlap must be stated in the evidence note or reason.
+
+1. A regular job that began well before the degree and simply continued afterwards (for example an assistant professorship or a company role held throughout the doctorate) is **not** the first post-PhD job. The first *new* job after the degree is; if none is documented, the person stays unresolved with the overlap recorded.
+2. An explicitly post-doctoral appointment that starts in the final months before the formal degree date, after the dissertation was completed, **is** the first post-PhD job. Formal conferral often lags the defence by a term; the start month and the degree month are both recorded.
+3. A prospective announcement or hiring notice written before the degree does **not** establish a first job. A dated CV, an appointment record or a later profile that confirms the job began is required.
+
+The published `placementYear` remains the documented start year of the first new post-PhD job, never the cohort year.
