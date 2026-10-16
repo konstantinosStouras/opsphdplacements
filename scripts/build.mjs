@@ -1,7 +1,7 @@
 import fs from 'node:fs';
 import crypto from 'node:crypto';
 fs.mkdirSync('_site',{recursive:true});
-for(const file of ['index.html','.nojekyll','robots.txt','sitemap.xml'])fs.copyFileSync(file,`_site/${file}`);
+for(const file of ['index.html','.nojekyll','robots.txt','sitemap.xml','favicon.ico','site.webmanifest'])fs.copyFileSync(file,`_site/${file}`);
 for(const dir of ['assets','data'])fs.cpSync(dir,`_site/${dir}`,{recursive:true});
 // Keep the repository readable while reducing initial download size on the site.
 for(const file of fs.readdirSync('_site/data').filter(name=>name.endsWith('.json'))){const target=`_site/data/${file}`;fs.writeFileSync(target,JSON.stringify(JSON.parse(fs.readFileSync(target,'utf8'))));}

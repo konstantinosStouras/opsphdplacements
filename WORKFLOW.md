@@ -57,6 +57,8 @@ On this machine, the three existing agent files can be passed together instead o
 
 Run a local static server against `_site` and check the changed website interactions, source links and mobile layout. For search changes, verify both Enter and the arrow button and clear/reset behavior. For citation changes, test both copy buttons and BibTeX syntax. The program register loads independently so it cannot block the main search.
 
+For social metadata or icon changes, follow `SHARING.md` and run `node scripts/check-sharing.mjs _site` after the build. Verify the raw public HTML and referenced image/icon URLs after deployment; do not claim in-app preview testing from metadata checks alone. Keep social preview images versioned when the artwork changes.
+
 Commit only reviewed source files and public data. The existing GitHub Pages workflow deploys a push to `main` after validation. Publication must be within user authorization. Check the workflow result and the live page; a push alone does not establish deployment success. The project inherits `www.stouras.com` from the account site. Do not add a CNAME or change the separate personal-site repository.
 
 Record the deployed revision and unresolved work in a handoff. Use a new corrective commit for rollback; do not rewrite published history. No automatic research schedule is configured.

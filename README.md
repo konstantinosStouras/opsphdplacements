@@ -14,10 +14,11 @@ An independent, static research directory for Operations Research, Operations Ma
 | [RESEARCH-STATUS.md](RESEARCH-STATUS.md) | Generated counts and links to the current evidence ledger |
 | [TODO.md](TODO.md) | Remaining work and specific handoff priorities |
 | [RESEARCH-DESIGN.md](RESEARCH-DESIGN.md) | Population definition, historical programs and longitudinal dataset design |
+| [SHARING.md](SHARING.md) | Social previews, favicons, mobile icons and metadata maintenance |
 
 ## Deployment
 
-Push to `main` to run the GitHub Pages workflow. The project inherits the account site's custom domain; do not add a CNAME pointing the domain at this repository. The workflow publishes only `index.html`, `.nojekyll`, `assets/` and `data/`.
+Push to `main` to run the GitHub Pages workflow. The project inherits the account site's custom domain; do not add a CNAME pointing the domain at this repository. The workflow publishes `index.html`, `.nojekyll`, `robots.txt`, `sitemap.xml`, `favicon.ico`, `site.webmanifest`, `assets/` and `data/`.
 
 ## Data
 
@@ -44,6 +45,8 @@ First-placement records additionally require `verificationStatus: "verified-firs
 Search by name, affiliation, PhD institution, discipline and research tags; filter by institutions, status, discipline or PhD years; sort and paginate; download the filtered CSV. Institution and PhD-program profiles, comparisons of up to four institutions, and cohort and source-status charts use the same data. CSV exports neutralize spreadsheet formulas. All displayed source text uses safe text nodes.
 
 Source directory: https://omlist.edutool.org/faculty
+
+Social sharing uses static Open Graph and Twitter/X metadata with a 1200 × 630 preview image. SVG/PNG/ICO favicons and Apple/mobile icons provide matching saved-link branding. See [SHARING.md](SHARING.md) for regeneration, validation and preview-cache limitations.
 
 ## Graduate census and career histories
 

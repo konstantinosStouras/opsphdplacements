@@ -29,6 +29,8 @@ jobs:
           python3 scripts/build-research-database.py
       - name: Prepare public files
         run: node scripts/build.mjs
+      - name: Validate published sharing assets
+        run: node scripts/check-sharing.mjs _site
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:

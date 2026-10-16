@@ -37,6 +37,8 @@ See [RESEARCH-STATUS.md](RESEARCH-STATUS.md) for generated counts. This checklis
 
 ## Database and website
 
+- [x] Add static social-sharing metadata, a branded preview image, browser/mobile icons and reproducible asset checks; maintenance is documented in `SHARING.md`.
+
 - [ ] Implement a reviewed migration to a persistent canonical database before editing longitudinal data there. The present SQLite output is regenerated from JSON.
 - [ ] Add proposal intake/validation/export for new graduates, advisors, publications and later career events; schema support alone is not a finished ingestion pipeline.
 - [ ] Add graduate profiles with linked education, advisors, timeline, publications and fact-level evidence/check dates.
