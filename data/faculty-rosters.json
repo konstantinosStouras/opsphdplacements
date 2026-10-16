@@ -167336,7 +167336,7 @@
    "review": {
     "status": "confirmed-faculty",
     "checkedAt": "2026-10-16",
-    "reason": "Profile page lists her as Associate Professor, Organizational Behaviour. The bio states that she joined Ivey 'after finishing my doctoral studies in industrial relations at the Sloan School of Management, MIT' and that she has undergraduate and Masters degrees from the Faculty of Commerce at UBC; the page names the doctorate only in this wording (no degree name, no year), so the institution is recorded as written ('MIT', Sloan School of Management) with the year left null.",
+    "reason": "Profile page lists her as Associate Professor, Organizational Behaviour. The bio states that she joined Ivey 'after finishing my doctoral studies in industrial relations at the Sloan School of Management, MIT' and that she has undergraduate and Masters degrees from the Faculty of Commerce at UBC; the page names the doctorate only in this wording (no degree name, no year), so the institution is recorded as written ('MIT', Sloan School of Management) with the year left null. Integrator: the page says only that she finished doctoral studies at MIT, which is not a statement of the degree awarded, so the doctorate is left unrecorded.",
     "sources": [
      {
       "url": "https://www.ivey.uwo.ca/faculty_research/directory/ann-frost/",
@@ -167346,9 +167346,9 @@
     "profileUrl": "https://www.ivey.uwo.ca/faculty_research/directory/ann-frost/",
     "titleConfirmed": "Associate Professor, Organizational Behaviour",
     "areaConfirmed": "Organizational Behaviour",
-    "phdInstitution": "MIT",
+    "phdInstitution": null,
     "phdYear": null,
-    "phdSourceUrl": "https://www.ivey.uwo.ca/faculty_research/directory/ann-frost/",
+    "phdSourceUrl": null,
     "omListFacultyId": null,
     "note": null
    }
@@ -167981,7 +167981,7 @@
    "review": {
     "status": "confirmed-faculty",
     "checkedAt": "2026-10-16",
-    "reason": "Profile page lists him as Assistant Professor with no area group, bio or education. The live Ivey Faculty Directory also shows him as Assistant Professor with an empty area group, and the Ivey Discovery (Symplectic Elements) record (read from the JSON API behind discover.research.ivey.ca/cameron-mcalpine, which renders client-side) lists an institutional appointment as Assistant Professor, Western University, Ivey Business School, starting 2025, with no area or degrees. One web search found nothing beyond the Ivey profile, so area and doctorate remain unknown.",
+    "reason": "Profile page lists him as Assistant Professor with no area group, bio or education. The live Ivey Faculty Directory also shows him as Assistant Professor with an empty area group, and the Ivey Discovery (Symplectic Elements) record (read from the JSON API behind discover.research.ivey.ca/cameron-mcalpine, which renders client-side) lists an institutional appointment as Assistant Professor, Western University, Ivey Business School, starting 2025, with no area or degrees. One web search found nothing beyond Ivey pages; the Ivey Executive Education faculty page lists him as 'Assistant Professor, Organizational Behaviour' with no bio or degrees, so the doctorate remains unknown.",
     "sources": [
      {
       "url": "https://www.ivey.uwo.ca/faculty_research/directory/cameron-mcalpine/",
@@ -167992,13 +167992,17 @@
       "title": "Ivey Business School Faculty Directory (resolved from http://www.ivey.uwo.ca/faculty/directory/; read via curl)"
      },
      {
+      "url": "https://www.ivey.uwo.ca/executive-education/about/faculty/",
+      "title": "Ivey Faculty Facilitators | Ivey Executive Education (lists Cameron McAlpine as Assistant Professor, Organizational Behaviour)"
+     },
+     {
       "url": "https://discover.research.ivey.ca/api/users/cameron-mcalpine",
       "title": "Ivey Discovery (Symplectic Elements) profile record for Cameron McAlpine (JSON API behind discover.research.ivey.ca/cameron-mcalpine, which renders client-side)"
      }
     ],
     "profileUrl": "https://www.ivey.uwo.ca/faculty_research/directory/cameron-mcalpine/",
     "titleConfirmed": "Assistant Professor",
-    "areaConfirmed": null,
+    "areaConfirmed": "Organizational Behaviour (per the Ivey Executive Education faculty page; his own profile shows no area group)",
     "phdInstitution": null,
     "phdYear": null,
     "phdSourceUrl": null,
