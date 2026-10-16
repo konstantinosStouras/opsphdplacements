@@ -50,20 +50,21 @@ export async function renderUniversities(section, { openInstitution } = {}) {
   let rosterByUniversity = null;
   const rosterLine = (cell, uid) => {
     const s = rosterByUniversity?.get(uid); if (!s) return;
-    cell.append(html('small', 'roster-line', `Faculty page lists ${fmt(s.listed)} ${s.listed === 1 ? 'person' : 'people'}: ${fmt(s.omList)} on OM List, ${fmt(s.unverified)} unverified${s.reviewed ? `, ${fmt(s.reviewed)} reviewed` : ''}`));
+    cell.append(html('small', 'roster-line', `Faculty page lists ${fmt(s.listed)} ${s.listed === 1 ? 'person' : 'people'}: ${fmt(s.omList)} on OM List${s.reviewed ? `, ${fmt(s.reviewed)} reviewed (${fmt(s.confirmed || 0)} confirmed faculty)` : `, ${fmt(s.unverified)} unverified`}`));
   };
   const rosterBox = html('div', 'tiles'); summary.append(rosterBox);
   loadJson('data/faculty-rosters.json').then(roster => {
-    rosterByUniversity = new Map(roster.universities.map(u => [u.universityId, u]));
-    const c = roster.metadata.counts, pg = roster.metadata.pages;
+    rosterByUniversity = new Map(roster.universities.map(u => [u.universityId, { ...u, confirmed: 0 }]));
+    for (const r of roster.records) if (r.review?.status === 'confirmed-faculty') { const s = rosterByUniversity.get(r.universityId); if (s) s.confirmed++; }
+    const c = roster.metadata.counts, pg = roster.metadata.pages, o = c.reviewOutcomes || {};
     tiles(rosterBox, [
       { value: fmt(c.people), label: 'People listed on the faculty pages linked from the directory', note: `${fmt(pg.withPeople)} of ${fmt(pg.total)} linked pages could be read` },
       { value: fmt(c.omList), label: 'Also on OM List at the same university', note: `${fmt(c.omListNameOnly)} more share a name with an OM List profile elsewhere` },
-      { value: fmt(c.unverified), label: 'Unverified: no doctorate or first job known yet', note: `${fmt(c.reviewed)} reviewed one by one so far` }
+      { value: fmt(c.reviewed), label: `Reviewed one by one: ${fmt(o['confirmed-faculty'] || 0)} confirmed faculty, ${fmt(o['not-listed'] || 0)} students, staff or former members, ${fmt(o['extraction-noise'] || 0)} extraction noise, ${fmt(o.unresolved || 0)} unresolved`, note: `${fmt(c.people - c.reviewed)} not reviewed: OM List matches, or listed as students, staff or postdocs` }
     ]);
     for (const tr of body.querySelectorAll('tr[data-uid]')) rosterLine(tr.children[2], tr.dataset.uid);
     const p = html('p', 'map-note'); const a = html('a', undefined, 'faculty-rosters.json'); a.href = 'data/faculty-rosters.json';
-    p.append(`The faculty pages that the directory links were read on ${roster.metadata.generatedAt}: ${fmt(pg.fetched)} of ${fmt(pg.total)} pages answered and ${fmt(pg.withPeople)} listed people that could be extracted (the rest are dead links, pages that refuse automated readers or lists drawn by scripts). A listing establishes only that the page shows the name under that title. People also on OM List carry that profile's information; the ${fmt(c.unverified)} others are unverified until a reviewer opens their own page, and nothing about their doctorate or first job is assumed. Download `, a, '.');
+    p.append(`The faculty pages that the directory links were read on ${roster.metadata.generatedAt}: ${fmt(pg.fetched)} of ${fmt(pg.total)} pages answered and ${fmt(pg.withPeople)} listed people that could be extracted (the rest are dead links, pages that refuse automated readers or lists drawn by scripts). A listing establishes only that the page shows the name under that title. People also on OM List carry that profile's information; the others were reviewed one by one: a reviewer opened each person's own page and recorded the outcome, the title and area shown and, only when a page states it, the doctorate with that page's URL; no first job is assumed or recorded for them yet. Download `, a, '.');
     summary.append(p);
   }).catch(() => {});
   let shown = 0, rows = [];
