@@ -11,6 +11,9 @@ const root = path.resolve(path.dirname(new URL(import.meta.url).pathname), '..')
 const readJson = f => JSON.parse(fs.readFileSync(path.join(root, f), 'utf8'));
 const fmt = n => Number(n || 0).toLocaleString('en-US');
 
+// --in-review 87,88 counts chunks whose reviewers have not saved a row yet as in review.
+const argv = process.argv.slice(2);
+const flagged = new Set(argv.flatMap((a, i) => (a === '--in-review' ? String(argv[i + 1] || '').split(',').filter(Boolean).map(Number) : [])));
 const roster = readJson('data/faculty-rosters.json');
 const counts = roster.metadata.counts;
 const out = counts.reviewOutcomes || {};
@@ -31,7 +34,7 @@ if (fs.existsSync(dir)) {
     const people = JSON.parse(fs.readFileSync(path.join(dir, f), 'utf8')).people || [];
     const open = people.filter(p => !reviewed.has(p.id));
     if (open.length === 0) merged.push(n);
-    else if (fs.existsSync(path.join(dir, `proposal-${n}.json`))) {
+    else if (flagged.has(n) || fs.existsSync(path.join(dir, `proposal-${n}.json`))) {
       inFlight.push(n);
       for (const p of people) inFlightUniversities.add(p.university);
     } else {
