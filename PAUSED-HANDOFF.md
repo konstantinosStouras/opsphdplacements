@@ -61,3 +61,7 @@ GitHub commit `9fbf00d` was discovered during this upload and preserved. Current
 
 - Shard A round 2, chunk 3 (40 people, 16 verified after one integrator downgrade, 24 unresolved) integrated; two integrator relabels (Stefan Minner: postdoc; Ickhyun Nam: rank at start left null). Published totals: 842 verified, 1,126 unresolved, 180 pending, 1 not-yet-completed. Chunk r2-1 was still running with 16 of 40 people saved.
 - The Universities section now shows database 1 on the site; the Wikidata pass over the directory names (`node scripts/geocode-institutions.mjs universities`) was still running and will add links when the import is re-run.
+
+### Sixth integration, later on 16 October 2026
+
+- Shard A round 2, chunk 1 (40 people, 21 verified after one integrator downgrade, 19 unresolved) integrated. Published totals: 863 verified, 1,145 unresolved, 140 pending, 1 not-yet-completed. All three round-2 proposals are merged; shard A has 140 people left.

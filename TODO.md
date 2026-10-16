@@ -6,9 +6,9 @@ See [RESEARCH-STATUS.md](RESEARCH-STATUS.md) for generated counts. This checklis
 
 ## Current research
 
-Position after the fifth 16 October 2026 integration (published ledger): 842 verified, 1,126 unresolved, 180 pending and 1 not-yet-completed PhD, of 2,149. Remaining first-pass reviews by original shard (faculty index modulo 3): **A 180, B 0, C 0**. Shard A round-2 chunk r2-1 (40 people, 16 reviewed so far) was still being researched at the last integration. Next concrete item: integrate it, then finish shard A in batches of about 40 per agent with at most three agents per session.
+Position after the sixth 16 October 2026 integration (published ledger): 863 verified, 1,145 unresolved, 140 pending and 1 not-yet-completed PhD, of 2,149. Remaining first-pass reviews by original shard (faculty index modulo 3): **A 140, B 0, C 0**. Next concrete item: finish shard A's 140 in batches of about 40 per agent with at most three agents per session, then start a second pass on the unresolved cases whose reasons name a blocked page (a human browser can open several).
 
-- [ ] Individually review every pending imported profile (180 left; all in shard A). Do not bulk-label a retrieval as a review.
+- [ ] Individually review every pending imported profile (140 left; all in shard A). Do not bulk-label a retrieval as a review.
 - [ ] Finish the audit of destination-only placement tables for omitted postdocs and earlier industry jobs; correct or downgrade unsupported first-job claims.
 - [ ] Revisit unresolved cases using the specific gap recorded in the ledger. Separate ambiguous within-year chronology, missing degree completion, wrong-person matches and inaccessible evidence.
 - [ ] Preserve independent field-level sources for degree dates, degree institutions, employer, role and job dates; older first-placement records often have a shared source list and review date.
@@ -48,6 +48,7 @@ Position after the fifth 16 October 2026 integration (published ledger): 842 ver
 ## Database and website
 
 - [x] Rebuild the website around the Econ PhD Placements structure with plain SVG charts (16 October 2026): coverage map and by-year grid, trends (over time, by PhD institution, by field, top employers, directory counts), profiles (PhD institution, head-to-head comparison, employer, directory affiliation), explorer column filters and shareable URLs, a six-part methodology section with live availability counts, and derived institution and employer databases. Every share shown is a share of verified first jobs with unresolved and unreviewed counts beside it.
+- [ ] Re-run `node scripts/geocode-institutions.mjs employers`, `node scripts/wikidata-countries.mjs` and the Operations Academia import once the universities Wikidata pass finishes: 85 of 319 first employers and the newest verified names have no location yet, and the universities file gains links as the pass completes.
 - [ ] Map matching gaps: 12 PhD institution names and 63 first-employer names have no Wikidata match yet (ambiguous, renamed or absent items); they are counted on the map note and left unplaced. Review `research/geocode-cache.json` and `research/geocode-employers-cache.json` and add `rejected` notes or manual matches with a source.
 - [ ] Employer countries exist only for matched employers, so the "countries of first employers" panel undercounts; say so until matching is complete.
 - [x] Group nearby institutions on the map into count circles that split on click or tap (16 October 2026); the grouping distance is 32px on desktop and 24px on phones, recomputed at every zoom level.
