@@ -196,7 +196,7 @@ export function renderProfile(type, hosts, idx, actions) {
 }
 
 function renderInstitutionProfile({ controls, content }, idx, actions) {
-  controls.append(pickList('PhD institution', phdInstitutionValues(idx), () => profile.phd, v => { profile.phd = v; draw(); }), periodSelect(idx, profile.period, v => { profile.period = v; draw(); }));
+  controls.append(pickList('PhD institution', phdInstitutionValues(idx), () => profile.phd, v => { profile.phd = v; actions.urlChanged?.({ phd: v || null, employer: null, compare: null }); draw(); }), periodSelect(idx, profile.period, v => { profile.period = v; draw(); }));
   const draw = () => {
     content.replaceChildren(); content.classList.remove('empty');
     if (!profile.phd) { content.classList.add('empty'); content.append(html('strong', undefined, 'Explore a PhD institution'), html('span', undefined, 'Choose an institution above to see its people in the directory, their verified first jobs and what is still unknown.')); return; }
@@ -244,7 +244,7 @@ function renderInstitutionProfile({ controls, content }, idx, actions) {
 }
 
 function renderEmployerProfile({ controls, content }, idx, actions) {
-  controls.append(pickList('First employer', employerValues(idx), () => profile.employer, v => { profile.employer = v; draw(); }), periodSelect(idx, profile.employerPeriod, v => { profile.employerPeriod = v; draw(); }));
+  controls.append(pickList('First employer', employerValues(idx), () => profile.employer, v => { profile.employer = v; actions.urlChanged?.({ employer: v || null, phd: null, compare: null }); draw(); }), periodSelect(idx, profile.employerPeriod, v => { profile.employerPeriod = v; draw(); }));
   const draw = () => {
     content.replaceChildren(); content.classList.remove('empty');
     if (!profile.employer) { content.classList.add('empty'); content.append(html('strong', undefined, 'Explore a first employer'), html('span', undefined, 'Choose an employer above to see who it hired straight after the PhD, from which programs and into which roles.')); return; }
@@ -285,7 +285,7 @@ function renderEmployerProfile({ controls, content }, idx, actions) {
 
 function renderComparison({ controls, content }, idx, actions) {
   const values = phdInstitutionValues(idx);
-  for (let i = 0; i < 4; i++) controls.append(pickList(`Institution ${i + 1}`, values, () => profile.compare[i], v => { profile.compare[i] = v; draw(); }));
+  for (let i = 0; i < 4; i++) controls.append(pickList(`Institution ${i + 1}`, values, () => profile.compare[i], v => { profile.compare[i] = v; const chosen = [...new Set(profile.compare.filter(Boolean))]; actions.urlChanged?.({ compare: chosen.length >= 2 ? chosen.join('|') : null, phd: null, employer: null }); draw(); }));
   controls.append(periodSelect(idx, profile.comparePeriod, v => { profile.comparePeriod = v; draw(); }));
   const draw = () => {
     content.replaceChildren(); content.classList.remove('empty');

@@ -50,17 +50,19 @@ function countryRings(topo) {
   return out;
 }
 
-export async function renderMap(target, state, { onSelect } = {}) {
+export async function renderMap(target, state, { onSelect, isCurrent = () => true } = {}) {
   target.classList.remove('empty');
   target.replaceChildren(html('p', 'map-note', 'Loading the map…'));
   let world, locations;
   try {
     [world, locations] = await Promise.all([fetch('assets/vendor/world/countries-110m.json').then(r => r.json()), fetch('data/institution-locations.json').then(r => r.json())]);
   } catch {
+    if (!isCurrent()) return;
     target.classList.add('empty');
     target.replaceChildren(html('strong', undefined, 'The map could not be loaded'), html('span', undefined, 'Please reload the page, or use the bar chart tabs.'));
     return;
   }
+  if (!isCurrent()) return;  // another coverage view was chosen while the shapes loaded
 
   // Counts per PhD institution: imported profiles and verified first jobs.
   const profiles = new Map(), verified = new Map();
