@@ -34,7 +34,7 @@ Source directory: https://omlist.edutool.org/faculty
 
 ## Graduate census and career histories
 
-[RESEARCH-DESIGN.md](RESEARCH-DESIGN.md) specifies the subsequent expansion to all documented graduates of in-scope programs, including industry careers and sector transitions. [database/schema.sql](database/schema.sql) is the preparatory relational schema; it is not yet populated or serving the website. First-placement verification of the imported directory continues before expanded graduate collection.
+[RESEARCH-DESIGN.md](RESEARCH-DESIGN.md) specifies the subsequent expansion to all documented graduates of in-scope programs, including industry careers and sector transitions. [database/schema.sql](database/schema.sql) defines the relational schema. Run `python scripts/build-research-database.py` to produce the disposable local snapshot `research/operations-careers.sqlite` from the public JSON, including people, source-reported doctorates, reviewed first-job events and evidence. JSON remains the source of truth during current collection; the generated database does not yet serve the website. Rebuilding replaces that derived snapshot, so do not edit it directly. No later appointments or degree programs are inferred. First-placement verification of the imported directory continues before expanded graduate collection.
 
 ## Local preview
 
