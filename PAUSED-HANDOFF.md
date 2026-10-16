@@ -1,4 +1,4 @@
-# Paused handoff — 16 October 2026
+# Paused handoff — 16 October 2026 (historical record; work resumed, see the resume log at the end)
 
 The user explicitly paused all work in this thread because credits are low. All three research agents were interrupted. Do not resume research, reviews, merges or deployment until the user requests resumption. No automatic research schedule is configured.
 
@@ -28,3 +28,13 @@ These ignored files contain newer findings than the public ledger. Counts below 
 6. Continue the historical program register, program-year graduate census, then sourced careers/advisors/publications with fact-level check dates. Maintain honest coverage and unresolved labels.
 
 This handoff was saved during shutdown and is now being published to GitHub at the user's request so another model can access it. This documentation-only publication does not authorize resuming research or development. The ignored local research files listed above are not included. No new research data were published as part of pausing.
+
+## Resume log — 16 October 2026
+
+The user explicitly authorized resuming. What happened:
+
+- The ignored `research/placements-{a,b,c}/results.json` files were absent from the fresh cloud clone. They were recovered from the user's Dropbox copy of the checkout. Counts and file sizes matched this handoff exactly (A 362/229/133, B 716/284/432, C 583/241/342).
+- Conflict review before merging: 1,661 unique IDs, no duplicates, no unknown IDs or name mismatches. 1,359 overlapped the published ledger, with no verified row downgraded and no employer changed. 23 previously unresolved people became verified (including Jerry Anunrojwong's University of Washington postdoc). 302 people were newly reviewed (42 verified, 260 unresolved). Yue Hu, Mengzhenyu Zhang and Shining Wu keep their earlier postdocs.
+- Merged with `scripts/merge-placement-research.mjs`. Published totals are now 754 verified, 907 unresolved and 488 pending of 2,149.
+- Remaining first-pass reviews: A 355, B 0, C 133. Other local material (caches, program registry pilot, SQLite) was not copied and is still only in the user's Dropbox checkout.
+- Not done in this session: new individual research, program register expansion, graduate census, advisors and publications.

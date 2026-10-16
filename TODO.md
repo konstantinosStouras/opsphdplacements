@@ -1,12 +1,14 @@
 # Remaining work and handoff priorities
 
-**Paused by the user on 16 October 2026 due to low credits. Resume only on request. See [PAUSED-HANDOFF.md](PAUSED-HANDOFF.md) for saved, unpublished agent work.**
+**Resumed on 16 October 2026 at the user's explicit request after a low-credit pause.** The three saved agent result files were recovered from the user's Dropbox copy of the checkout, merged and published (see [PAUSED-HANDOFF.md](PAUSED-HANDOFF.md) for the historical pause record and the resume log). No scheduled research runner exists.
 
 See [RESEARCH-STATUS.md](RESEARCH-STATUS.md) for generated counts. This checklist describes unfinished deliverables, not a claim that work is already complete.
 
 ## Current research
 
-- [ ] Individually review every pending imported profile. Do not bulk-label a retrieval as a review.
+Position after the 16 October 2026 integration (published ledger): 754 verified, 907 unresolved, 488 pending of 2,149. Remaining first-pass reviews by original shard (faculty index modulo 3): **A 355, B 0, C 133**. Next concrete item: finish C's 133 pending people, then A's 355, using separate proposal files and one integrator.
+
+- [ ] Individually review every pending imported profile (488 left; A 355, C 133). Do not bulk-label a retrieval as a review.
 - [ ] Finish the audit of destination-only placement tables for omitted postdocs and earlier industry jobs; correct or downgrade unsupported first-job claims.
 - [ ] Revisit unresolved cases using the specific gap recorded in the ledger. Separate ambiguous within-year chronology, missing degree completion, wrong-person matches and inaccessible evidence.
 - [ ] Preserve independent field-level sources for degree dates, degree institutions, employer, role and job dates; older first-placement records often have a shared source list and review date.
