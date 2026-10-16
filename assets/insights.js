@@ -1,8 +1,8 @@
 // Coverage grid, trends and profiles built from the public datasets. See analytics.js for the
 // numbers and charts.js for the drawing. Nothing here infers a job: every chart counts verified
 // first jobs and shows the unresolved and not-yet-reviewed people beside them.
-import { bubbleGrid, columns, hbars, fmt, pct, html } from './charts.js';
-import { CATEGORIES, CAT, STATUSES, STATUS, buildIndex, loadCountries, institutionMetrics, inPeriod, periodLabel, fillPeriodSelect } from './analytics.js';
+import { bubbleGrid, columns, hbars, lines, rankedRows, tiles, fmt, pct, html } from './charts.js';
+import { CATEGORIES, CAT, STATUSES, STATUS, buildIndex, loadCountries, institutionMetrics, employerMetrics, inPeriod, periodLabel, fillPeriodSelect } from './analytics.js';
 
 let index = null;
 export async function getIndex(state) {
@@ -156,5 +156,155 @@ function renderEmployers({ controls, content, note }, idx, actions) {
     note.textContent = `First employers ranked by the number of verified first jobs across all PhD institutions, ${periodLabel(trend.empPeriod).toLowerCase()}${trend.empCat ? `, ${CAT[trend.empCat].label.toLowerCase()} jobs only` : ''}. Only verified first jobs are counted; an employer's later hires and the unresolved cases are not. Click a bar to open the records.`;
   };
   rankingControls(controls, idx, 'empPeriod', 'empCat', draw, { allCategory: true });
+  draw();
+}
+
+// ---------------------------------------------------------------------------------------------
+// Profiles: PhD institution, head-to-head comparison and first employer.
+const profile = { phd: '', employer: '', compare: ['', '', '', ''], period: 'all', comparePeriod: 'all', employerPeriod: 'all' };
+const COMPARE_COLORS = ['#2a78d6', '#eb6834', '#1f8a5a', '#6250d6'];
+export function presetProfile(type, value) { if (type === 'phd') profile.phd = value; if (type === 'employer') profile.employer = value; if (type === 'compare') profile.compare = [...value, '', '', ''].slice(0, 4); }
+export function profileSelection(type) { return type === 'phd' ? profile.phd : type === 'employer' ? profile.employer : profile.compare.filter(Boolean); }
+
+/** A select with a text box that narrows its options. */
+function pickList(labelText, values, current, onChange, placeholder = 'Type to narrow the list') {
+  const box = html('label', 'pick-list'); box.append(html('span', undefined, labelText));
+  const search = document.createElement('input'); search.type = 'search'; search.placeholder = placeholder; search.setAttribute('aria-label', `${labelText}: filter the list`);
+  const select = document.createElement('select'); select.setAttribute('aria-label', labelText);
+  const fill = () => {
+    const words = search.value.toLocaleLowerCase().trim().split(/\s+/).filter(Boolean);
+    const shown = values.filter(([v, t]) => !v || words.every(w => t.toLocaleLowerCase().includes(w)));
+    select.replaceChildren(...shown.map(([v, t]) => new Option(t, v)));
+    select.value = shown.some(([v]) => v === current()) ? current() : (shown[0]?.[0] ?? '');
+  };
+  search.addEventListener('input', fill);
+  select.addEventListener('change', () => onChange(select.value));
+  fill(); box.append(search, select);
+  return box;
+}
+const periodSelect = (idx, current, onChange) => { const s = document.createElement('select'); s.setAttribute('aria-label', 'Cohorts'); fillPeriodSelect(s, idx); s.value = current; s.addEventListener('change', () => onChange(s.value)); return labelled('Cohorts', s); };
+const phdInstitutionValues = idx => [['', 'Choose a PhD institution'], ...institutionsWithAtLeast(idx, 1)];
+const employerValues = idx => { const c = {}; for (const p of idx.people) if (p.placement) c[p.placement.employer] = (c[p.placement.employer] || 0) + 1; return [['', 'Choose an employer'], ...Object.entries(c).sort((a, b) => a[0].localeCompare(b[0])).map(([n, k]) => [n, `${n} (${k})`])]; };
+const mainCategory = cats => CATEGORIES.find(c => cats[c.id] === Math.max(0, ...Object.values(cats)));
+const panel = (title, cls) => { const p = html('div', 'profile-panel' + (cls ? ' ' + cls : '')); p.append(html('h4', undefined, title)); const body = html('div'); p.append(body); return [p, body]; };
+const link = (text, href) => { const a = html('a', undefined, text); a.href = href; a.target = '_blank'; a.rel = 'noopener noreferrer'; return a; };
+
+export function renderProfile(type, hosts, idx, actions) {
+  const { controls, content } = hosts;
+  controls.replaceChildren(); content.replaceChildren(); content.classList.remove('empty');
+  ({ phd: renderInstitutionProfile, employer: renderEmployerProfile, compare: renderComparison })[type]?.(hosts, idx, actions);
+}
+
+function renderInstitutionProfile({ controls, content }, idx, actions) {
+  controls.append(pickList('PhD institution', phdInstitutionValues(idx), () => profile.phd, v => { profile.phd = v; draw(); }), periodSelect(idx, profile.period, v => { profile.period = v; draw(); }));
+  const draw = () => {
+    content.replaceChildren(); content.classList.remove('empty');
+    if (!profile.phd) { content.classList.add('empty'); content.append(html('strong', undefined, 'Explore a PhD institution'), html('span', undefined, 'Choose an institution above to see its people in the directory, their verified first jobs and what is still unknown.')); return; }
+    const m = institutionMetrics(idx, profile.phd, profile.period);
+    const head = html('div', 'profile-head');
+    head.append(html('h3', undefined, m.name));
+    const meta = html('p', 'profile-meta');
+    meta.append(`${periodLabel(profile.period)}: ${m.range} · ${fmt(m.total)} people in the directory`);
+    const country = idx.institutionCountry.get(m.name); if (country) meta.append(` · ${country}`);
+    const all = html('button', 'text-button', `All ${fmt(m.total)} records in the table →`); all.type = 'button'; all.addEventListener('click', () => actions.selectInstitution?.(m.name)); meta.append(' · ', all);
+    head.append(meta); content.append(head);
+    const tileBox = html('div', 'tiles');
+    tiles(tileBox, [
+      { value: fmt(m.total), label: 'People in the directory' },
+      { value: fmt(m.verifiedCount), label: 'Verified first jobs', note: `${pct(m.verifiedCount, m.total)} of people` },
+      { value: pct(m.tt, m.verifiedCount), label: 'Tenure track', note: `${m.tt} of ${m.verifiedCount} verified` },
+      { value: pct(m.academic, m.verifiedCount), label: 'Any academic job', note: `${m.academic} of ${m.verifiedCount} verified` },
+      { value: fmt(m.unresolved), label: 'Researched, unresolved' },
+      { value: fmt(m.pending), label: 'Not yet reviewed' },
+      { value: m.perCohort ? m.perCohort.toFixed(1) : '—', label: 'People per cohort' }
+    ]);
+    content.append(tileBox);
+    const grid = html('div', 'profile-grid');
+    const [p1, b1] = panel('Verified first jobs by type');
+    hbars(b1, { items: CATEGORIES.map(c => ({ key: c.id, label: c.label, value: m.cats[c.id] || 0, total: m.verifiedCount, color: c.color })), label: 'First jobs by type', format: it => (it.value ? `${it.value} · ${pct(it.value, it.total)}` : ''), rowHeight: 26, tipLines: it => [{ text: it.label, strong: true }, `${it.value} of ${it.total} verified first jobs (${pct(it.value, it.total)})`] });
+    const [p2, b2] = panel('Top first employers');
+    rankedRows(b2, { items: m.employers.slice(0, 8).map(([name, e]) => { const mc = mainCategory(e.cats); return { label: name, value: e.n, color: mc?.color, colorLabel: mc?.label, key: name }; }), total: m.verifiedCount, onClick: it => actions.openEmployer?.(it.key), emptyText: 'No verified first jobs in this period.' });
+    grid.append(p1, p2);
+    const [p3, b3] = panel('People by cohort and research status');
+    columns(b3, { categories: m.years, series: [{ id: 'verified', name: 'Verified first job', color: STATUS.verified.color, data: m.years.map(y => m.byYear[y].verified) }, { id: 'unresolved', name: 'Researched, unresolved', color: STATUS.unresolved.color, data: m.years.map(y => m.byYear[y].unresolved) }, { id: 'pending', name: 'Not yet reviewed', color: STATUS.pending.color, data: m.years.map(y => m.byYear[y].pending) }], height: 230, label: 'People by cohort', tipLines: (i, active) => [{ text: `Class of ${m.years[i]}`, strong: true }, `${m.byYear[m.years[i]].n} people`, ...active.filter(s => s.data[i]).map(s => ({ text: `${s.name}: ${s.data[i]}`, color: s.color }))], onClick: i => actions.selectCohort?.(m.name, m.years[i]), tableHead: ['Class', 'People', 'Verified', 'Unresolved', 'Not reviewed'], tableRows: m.years.map(y => [y, m.byYear[y].n, m.byYear[y].verified, m.byYear[y].unresolved, m.byYear[y].pending]) });
+    const [p4, b4] = panel('Tenure-track share of verified first jobs by cohort');
+    const withV = m.years.filter(y => m.byYear[y].verified);
+    lines(b4, { categories: withV, series: [{ id: 'tt', name: 'Tenure track', color: CAT['tenure-track'].color, data: withV.map(y => Math.round(1000 * m.byYear[y].tt / m.byYear[y].verified) / 10) }], yMax: 100, height: 230, yFormat: v => `${v}%`, label: 'Tenure-track share by cohort', tipLines: i => { const y = withV[i], t = m.byYear[y]; return [{ text: `Class of ${y}`, strong: true }, `Tenure track: ${t.tt} of ${t.verified} verified first jobs (${pct(t.tt, t.verified)})`, { text: `${t.n} people in the cohort`, muted: true }]; }, tableHead: ['Class', 'Tenure track', 'Verified first jobs', 'Share'], tableRows: withV.map(y => [y, m.byYear[y].tt, m.byYear[y].verified, pct(m.byYear[y].tt, m.byYear[y].verified)]) });
+    b4.append(html('p', 'map-note', 'Cohorts with small numbers swing widely; hover a point for the counts behind it.'));
+    grid.append(p3, p4);
+    const [p5, b5] = panel('Countries of first employers');
+    if (m.countries.length) rankedRows(b5, { items: m.countries.map(([c, n]) => ({ label: c, value: n })), total: m.verifiedCount });
+    else b5.append(html('p', 'chart-empty', idx.employerCountry.size ? 'No employer country known for these first jobs.' : 'Employer countries are not available yet.'));
+    const [p6, b6] = panel('First job titles');
+    rankedRows(b6, { items: m.positions.slice(0, 8).map(([t, n]) => ({ label: t, value: n })), total: m.verifiedCount, emptyText: 'No verified first jobs in this period.' });
+    grid.append(p5, p6);
+    content.append(grid, html('p', 'source-stamp', 'People come from the OM List directory, so this is not every graduate of the program. First jobs are only those verified from a CV, placement report or appointment record; each one is linked from the explorer. Shares of job types are shares of verified first jobs.'));
+  };
+  draw();
+}
+
+function renderEmployerProfile({ controls, content }, idx, actions) {
+  controls.append(pickList('First employer', employerValues(idx), () => profile.employer, v => { profile.employer = v; draw(); }), periodSelect(idx, profile.employerPeriod, v => { profile.employerPeriod = v; draw(); }));
+  const draw = () => {
+    content.replaceChildren(); content.classList.remove('empty');
+    if (!profile.employer) { content.classList.add('empty'); content.append(html('strong', undefined, 'Explore a first employer'), html('span', undefined, 'Choose an employer above to see who it hired straight after the PhD, from which programs and into which roles.')); return; }
+    const m = employerMetrics(idx, profile.employer, profile.employerPeriod);
+    const head = html('div', 'profile-head'); head.append(html('h3', undefined, m.name));
+    const meta = html('p', 'profile-meta'), mc = mainCategory(m.cats);
+    meta.append([mc && `mostly ${mc.label.toLowerCase()} jobs`, m.country, `${periodLabel(profile.employerPeriod)}: ${m.range}`].filter(Boolean).join(' · '));
+    const all = html('button', 'text-button', `All ${fmt(m.total)} verified first jobs in the table →`); all.type = 'button'; all.addEventListener('click', () => actions.selectEmployer?.(m.name)); meta.append(' · ', all);
+    head.append(meta); content.append(head);
+    const tileBox = html('div', 'tiles');
+    const top5 = m.sources.slice(0, 5).reduce((s, [, g]) => s + g.n, 0);
+    tiles(tileBox, [{ value: fmt(m.total), label: 'Verified first jobs here' }, { value: fmt(m.sources.length), label: 'PhD institutions of origin' }, { value: m.years.length ? (m.total / m.years.length).toFixed(1) : '—', label: 'Hires per cohort' }, { value: pct(top5, m.total), label: 'From the top 5 sources' }]);
+    content.append(tileBox);
+    const grid = html('div', 'profile-grid');
+    const [p1, b1] = panel('Where the hires earned their PhD');
+    rankedRows(b1, { items: m.sources.slice(0, 10).map(([name, g]) => { const c = mainCategory(g.cats); return { key: name, label: name, value: g.n, color: c?.color, colorLabel: c?.label }; }), total: m.total, onClick: it => actions.openInstitution?.(it.key) });
+    const [p2, b2] = panel('Job titles');
+    rankedRows(b2, { items: m.positions.slice(0, 8).map(([t, g]) => ({ label: t, value: g.n })), total: m.total });
+    grid.append(p1, p2);
+    const [p3, b3] = panel('Hires by PhD cohort and type of job');
+    const used = CATEGORIES.filter(c => m.cats[c.id]); const years = []; if (m.years.length) for (let y = m.years[0]; y <= m.years[m.years.length - 1]; y++) years.push(y);
+    columns(b3, { categories: years, series: used.map(c => ({ id: c.id, name: c.label, color: c.color, data: years.map(y => m.byYear[y]?.[c.id] || 0) })), height: 240, label: 'Hires by cohort', tipLines: (i, active) => [{ text: `Class of ${years[i]}`, strong: true }, ...active.filter(s => s.data[i]).map(s => ({ text: `${s.name}: ${s.data[i]}`, color: s.color }))], tableHead: ['Class', ...used.map(c => c.label)], tableRows: years.map(y => [y, ...used.map(c => m.byYear[y]?.[c.id] || 0)]) });
+    const [p4, b4] = panel('Most recent cohorts hired');
+    for (const p of m.recent.slice(0, 8)) {
+      const row = html('div', 'hire-row');
+      row.append(html('span', 'hire-year', p.phdYear ? String(p.phdYear) : '—'));
+      row.append(p.placement.evidenceUrl ? link(p.name, p.placement.evidenceUrl) : html('span', undefined, p.name));
+      const inst = html('button', 'text-button', p.phdInstitution || 'PhD institution not reported'); inst.type = 'button'; inst.addEventListener('click', () => actions.openInstitution?.(p.phdInstitution)); row.append(inst);
+      row.append(html('span', 'hire-pos', [p.placement.position, p.placement.placementYear && `started ${p.placement.placementYear}`].filter(Boolean).join(' · ') || 'Role not reported'));
+      b4.append(row);
+    }
+    if (!m.recent.length) b4.append(html('p', 'chart-empty', 'No verified first jobs in this period.'));
+    grid.append(p3, p4);
+    content.append(grid, html('p', 'source-stamp', 'Counts are verified first jobs after the PhD among people in the OM List directory. They are not the employer\'s total hiring, and they exclude people whose first job is still unresolved or unreviewed. Names link to the evidence used.'));
+  };
+  draw();
+}
+
+function renderComparison({ controls, content }, idx, actions) {
+  const values = phdInstitutionValues(idx);
+  for (let i = 0; i < 4; i++) controls.append(pickList(`Institution ${i + 1}`, values, () => profile.compare[i], v => { profile.compare[i] = v; draw(); }));
+  controls.append(periodSelect(idx, profile.comparePeriod, v => { profile.comparePeriod = v; draw(); }));
+  const draw = () => {
+    content.replaceChildren(); content.classList.remove('empty');
+    const chosen = [...new Set(profile.compare.filter(Boolean))];
+    if (chosen.length < 2) { content.classList.add('empty'); content.append(html('strong', undefined, 'Compare PhD institutions'), html('span', undefined, 'Choose two to four institutions above.')); return; }
+    const ms = chosen.map((name, i) => ({ name, color: COMPARE_COLORS[i], m: institutionMetrics(idx, name, profile.comparePeriod) }));
+    const grid = html('div', 'stats-grid'); grid.style.setProperty('--n', ms.length);
+    const header = html('div', 'stats-row stats-header'); header.append(html('div', 'stats-label', ''));
+    for (const x of ms) { const h = html('div', 'stats-name'); const dot = html('span', 'chart-legend-dot'); dot.style.background = x.color; h.append(dot, html('span', undefined, x.name)); header.append(h); }
+    grid.append(header);
+    const rows = [['People in the directory', m => fmt(m.total)], ['Verified first jobs', m => `${fmt(m.verifiedCount)} (${pct(m.verifiedCount, m.total)})`], ['Tenure track, of verified', m => pct(m.tt, m.verifiedCount)], ['Any academic job, of verified', m => pct(m.academic, m.verifiedCount)], ['Industry, of verified', m => pct(m.cats.industry || 0, m.verifiedCount)], ['Researched, unresolved', m => fmt(m.unresolved)], ['Not yet reviewed', m => fmt(m.pending)], ['People per cohort', m => (m.perCohort ? m.perCohort.toFixed(1) : '—')], ['Cohorts', m => m.range]];
+    for (const [label, f] of rows) { const r = html('div', 'stats-row'); r.append(html('div', 'stats-label', label)); for (const x of ms) r.append(html('div', 'stats-value', f(x.m))); grid.append(r); }
+    content.append(grid);
+    const [p1, b1] = panel('Verified first jobs by type, share of each institution\'s verified first jobs');
+    columns(b1, { categories: CATEGORIES.map(c => c.label), series: ms.map(x => ({ id: x.name, name: x.name, color: x.color, data: CATEGORIES.map(c => (x.m.verifiedCount ? Math.round(1000 * (x.m.cats[c.id] || 0) / x.m.verifiedCount) / 10 : 0)) })), stacked: false, height: 320, yFormat: v => `${v}%`, label: 'First job types compared', tipLines: (i, active) => [{ text: CATEGORIES[i].label, strong: true }, ...active.map(s => { const x = ms.find(y => y.name === s.id); return { text: `${s.name}: ${s.data[i]}% (${x.m.cats[CATEGORIES[i].id] || 0} of ${x.m.verifiedCount})`, color: s.color }; })], tableHead: ['Type', ...ms.map(x => x.name)], tableRows: CATEGORIES.map((c, i) => [c.label, ...ms.map(x => `${x.m.cats[c.id] || 0} (${pct(x.m.cats[c.id] || 0, x.m.verifiedCount)})`)]) });
+    content.append(p1);
+    const dest = html('div', 'profile-grid compare-dest');
+    for (const x of ms) { const [p, b] = panel(`Top first employers: ${x.name}`); p.style.setProperty('--c', x.color); rankedRows(b, { items: x.m.employers.slice(0, 6).map(([n, e]) => { const c = mainCategory(e.cats); return { key: n, label: n, value: e.n, color: c?.color, colorLabel: c?.label }; }), total: x.m.verifiedCount, onClick: it => actions.openEmployer?.(it.key), emptyText: 'No verified first jobs in this period.' }); dest.append(p); }
+    content.append(dest, html('p', 'source-stamp', 'Shares are shares of verified first jobs, so an institution with many unreviewed people can look different once its review is complete; the unresolved and not-yet-reviewed rows show how far each review has got.'));
+  };
   draw();
 }

@@ -26,7 +26,8 @@ const THIS_YEAR = new Date().getFullYear();
 export function buildIndex(state) {
   const statusById = new Map((state.progress?.records || []).map(r => [r.facultyId, r]));
   const placementById = new Map(state.placements.map(p => [p.facultyId, p]));
-  const people = state.faculty.map(f => ({ ...f, status: statusById.get(f.id)?.status || 'pending', review: statusById.get(f.id) || null, placement: placementById.get(f.id) || null }));
+  // A verified review can correct the imported PhD institution or year; the corrected values win here.
+  const people = state.faculty.map(f => { const placement = placementById.get(f.id) || null; return { ...f, phdInstitution: placement?.phdInstitution || f.phdInstitution, phdYear: placement?.phdYear ?? f.phdYear, status: statusById.get(f.id)?.status || 'pending', review: statusById.get(f.id) || null, placement }; });
   const years = [...new Set(people.map(p => p.phdYear).filter(y => y && y <= THIS_YEAR))].sort((a, b) => a - b);
   const latest = years[years.length - 1];
   const employerCountry = new Map(), institutionCountry = new Map();

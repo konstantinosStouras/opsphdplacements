@@ -135,8 +135,9 @@ export function columns(target, { categories, series, stacked = true, percent = 
     const m = { l: 46, r: 10, t: 12, b: 34 }, w = width - m.l - m.r, h = height - m.t - m.b;
     const svg = makeSvg(width, height, label);
     const totals = categories.map((_, i) => active.reduce((t, s) => t + (s.data[i] || 0), 0));
-    const maxV = percent ? 100 : nice(Math.max(1, ...(stacked ? totals : active.flatMap(s => s.data))));
-    const ticks = 4;
+    const rawMax = Math.max(1, ...(stacked ? totals : active.flatMap(s => s.data)));
+    const maxV = percent ? 100 : rawMax <= 4 ? rawMax : nice(rawMax);
+    const ticks = percent ? 4 : Math.min(4, maxV);
     for (let k = 0; k <= ticks; k++) {
       const y = m.t + h - (h * k) / ticks, v = (maxV * k) / ticks;
       svg.append(svgEl('line', { x1: m.l, x2: m.l + w, y1: y, y2: y, stroke: k ? GRID : RULE, 'stroke-width': 1 }));
