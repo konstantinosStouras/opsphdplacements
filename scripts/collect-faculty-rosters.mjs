@@ -220,16 +220,21 @@ function buildRoster() {
 // Chunk files for reviewers: the unverified people, grouped by university, with what the page showed.
 function writeChunks() {
   const roster = read('data/faculty-rosters.json'), size = Number(opt('--size', 40));
-  // Faculty by title first, then names without a title; people the page calls students or staff wait.
+  // Order of review: people whose listed title names an operations field first, then people on department
+  // pages (at most 100 listed), then people on whole-college directories, which list every department;
+  // within each group faculty by title first, then names without a title. Students and staff wait.
+  const listedByUrl = new Map(roster.pages.map(p => [p.url, p.listed]));
+  const OPS = /operation|supply|logistic|management science|decision science|analytics|production|industrial engineering|\bom\b|\bscm\b/i;
   const todo = roster.records.filter(r => (r.verification === 'unverified' || r.verification === 'om-list-name-only' || r.omList?.match === 'ambiguous') && !r.review && ['faculty', 'untitled', 'unknown'].includes(r.listedRole));
+  const group = r => (OPS.test(r.titleAsListed || '') ? 0 : Math.max(...r.facultyUrls.map(u => listedByUrl.get(u) || 0)) <= 100 ? 1 : 2);
   const rank = { faculty: 0, untitled: 1, unknown: 2 };
-  todo.sort((a, b) => rank[a.listedRole] - rank[b.listedRole] || a.university.localeCompare(b.university) || a.name.localeCompare(b.name));
+  todo.sort((a, b) => group(a) - group(b) || rank[a.listedRole] - rank[b.listedRole] || a.university.localeCompare(b.university) || a.name.localeCompare(b.name));
   for (const f of fs.readdirSync(dir)) if (/^chunk-\d+\.json$/.test(f)) fs.unlinkSync(path.join(dir, f));
   let n = 0;
   for (let i = 0; i < todo.length; i += size) {
     n++;
-    const people = todo.slice(i, i + size).map(r => ({ id: r.id, name: r.name, titleAsListed: r.titleAsListed, university: r.university, departments: r.departments.map(d => [d.school, d.department].filter(Boolean).join(' · ')), country: r.country, facultyUrl: r.facultyUrls[0], profileUrl: r.profileUrl, omListNameOnly: r.omList?.facultyId ? { facultyId: r.omList.facultyId, currentInstitution: r.omList.currentInstitution } : null, omListAmbiguous: r.omList?.ambiguous || null }));
-    fs.writeFileSync(path.join(dir, `chunk-${n}.json`), JSON.stringify({ chunk: n, instructions: 'For each person: open the faculty page and the person\'s own page. Record whether the person is listed as operations faculty there (status confirmed-faculty), is not a person or not faculty (extraction-noise), has left (not-listed), is the same person as the OM List profile named (same-as-om-list), or could not be checked (unresolved, with the reason). For confirmed faculty, record the doctorate institution and year only if a page states them, with the URL; otherwise leave them null. Never infer a doctorate or a first job from a title or affiliation.', people }, null, 1) + '\n');
+    const people = todo.slice(i, i + size).map(r => ({ id: r.id, name: r.name, titleAsListed: r.titleAsListed, university: r.university, departments: r.departments.map(d => [d.school, d.department].filter(Boolean).join(' · ')), country: r.country, facultyUrl: r.facultyUrls[0], peopleListedOnPage: listedByUrl.get(r.facultyUrls[0]) || null, profileUrl: r.profileUrl, omListNameOnly: r.omList?.facultyId ? { facultyId: r.omList.facultyId, currentInstitution: r.omList.currentInstitution } : null, omListAmbiguous: r.omList?.ambiguous || null }));
+    fs.writeFileSync(path.join(dir, `chunk-${n}.json`), JSON.stringify({ chunk: n, instructions: 'For each person: open the person\'s own page (or the faculty page). Record whether the page shows the person as faculty (status confirmed-faculty, with the title and the department or area shown), is not a person or a garbled name (extraction-noise), is gone or is a student or staff member (not-listed), is the same person as the OM List profile named (same-as-om-list), or could not be checked (unresolved, with the reason). The department given here is the directory row that cites the page, not the person\'s own area; a page listing many people is usually a whole-college directory. For confirmed faculty, record the doctorate institution and year only if an opened page states them, with that page\'s URL; otherwise leave them null. Never infer a doctorate or a first job from a title or affiliation.', people }, null, 1) + '\n');
   }
   console.log(`wrote ${n} chunk files for ${todo.length} people in ${dir}`);
 }
