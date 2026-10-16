@@ -43,7 +43,7 @@ The pipeline stops if declared source counts disagree with extracted counts, pro
 
 ## Interpretation and limits
 
-* **First placements are unknown.** `firstPlacement` and `firstPlacementYear` are `null` for every imported record. Directory affiliation is not evidence of an initial job after graduation.
+* **The original import does not establish first placements.** Its `firstPlacement` and `firstPlacementYear` stay `null`. Separately researched results are published in `data/placements.json`; `data/research-status.json` tracks verified, unresolved and pending research for all 2,149 profiles.
 * The institution field preserves the source's directory affiliation. For retired, deceased or industry profiles, it must not be presented as a current active faculty appointment; the status is retained explicitly.
 * A missing professional title is stored as `null`; an institution name is never substituted for an omitted role.
 * [OMList's methodology](https://omlist.edutool.org/methodology.html) states that it focuses on business schools and excludes Industrial Engineering departments. This import is complete for the requested directory snapshot, not the OR/OM/IE profession.
@@ -51,3 +51,11 @@ The pipeline stops if declared source counts disagree with extracted counts, pro
 * Names, professional titles, faculty status, affiliation, doctorate institution/year, tenure year, research tags and source links are retained. Contact information, inferred demographics, paper abstracts, copied biographies and research scores are excluded.
 
 The public directory was processed locally from an already-downloaded snapshot at the user's request. No school/profile pages were crawled and no login, CAPTCHA or technical access controls were bypassed. The site's [robots.txt](https://omlist.edutool.org/robots.txt) discourages general crawlers from `/faculty.html` and `/schools/`; any future acquisition process should account for that guidance. These scripts contain no network acquisition or autonomous crawler.
+
+## First-placement verification
+
+Researchers inspect explicit initial-placement reports and dated employment histories in public CVs and university biographies. The first post-PhD appointment may be a postdoc or fellowship. Later faculty appointments must not displace earlier jobs. A source listing only a university supports an employer, not a tenure-track classification. A graduating cohort label does not establish an exact employment start date.
+
+Each published result includes its supporting URLs, short paraphrased evidence, review date, and any reconciliation of conflicting degree information. Exact job title, category or start year remain unknown where not established. Original imported degree facts are retained alongside verified corrections. Current affiliation is never used as a substitute for first employer. Partial results are not representative employment shares.
+
+The public research ledger distinguishes genuinely reviewed unresolved cases from pending cases; finding a CV URL alone does not constitute verification. Merge reviewed agent results with `node scripts/merge-placement-research.mjs research/placements-a/results.json research/placements-b/results.json research/placements-c/results.json`, then run `npm run check`. The merge checks identity, evidence, categories and degree-year discrepancies; the deployment validates that the ledger covers every imported person exactly once.

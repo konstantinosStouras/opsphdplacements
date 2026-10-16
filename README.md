@@ -10,13 +10,13 @@ Push to `main` to run the GitHub Pages workflow. The project inherits the accoun
 
 ## Data
 
-`data/faculty.json` holds all 2,149 profiles from the OM List all-faculty snapshot of 16 October 2026 across 202 institutions. Source status (active, industry, retired or deceased) is preserved. PhD information is joined by exact source profile URL. `data/placements.json` holds independently verified first placements and is currently empty. Never infer a first placement from a directory affiliation.
+`data/faculty.json` holds all 2,149 profiles from the OM List all-faculty snapshot of 16 October 2026 across 202 institutions. Source status (active, industry, retired or deceased) is preserved. PhD information is joined by exact source profile URL. `data/placements.json` holds independently verified first placements and contains the reviewed first-employer records published so far. Never infer a first placement from a directory affiliation.
 
 See [DATA-PROVENANCE.md](DATA-PROVENANCE.md) for source reconciliation, reproducible import commands and limitations. The source does not cover Industrial Engineering departments; its discipline labels do not verify the subject of someone's doctoral degree.
 
 ## Checks and publication
 
-Run `npm run check` with Node 22 or later. There are no application dependencies or build step. Checks cover dataset identity and provenance, filtering, missing years, grouped counts, and safe CSV export. Every production deployment runs these checks. Only public assets are deployed; research snapshots, import tools and test fixtures are excluded.
+Run `npm run check` with Node 22 or later. There are no application dependencies. The publishing script copies public files and versions assets to prevent stale pages after updates. Checks cover dataset identity and provenance, filtering, missing years, grouped counts, and safe CSV export. Every production deployment runs these checks. Only public assets are deployed; research snapshots, import tools and test fixtures are excluded.
 
 Preview with a static server, inspect changes and commit the reviewed data. A push to `main` validates and publishes the site. Roll back by reverting a commit and pushing; never overwrite history. No scheduled scraping is configured.
 
@@ -24,7 +24,7 @@ Preview with a static server, inspect changes and commit the reviewed data. A pu
 
 Faculty records require a unique stable `id`, `name`, `sourceUrl`, and `retrievedAt`. Unknown degree facts are null; a future doctorate year is flagged. Retain original source labels and source URLs. Faculty affiliation is not a placement outcome.
 
-First-placement records additionally require `verificationStatus: "verified-first-placement"`, `evidenceUrl`, `reviewedAt`, and `placementYear`. Review the explicit first-job evidence before adding any record. The public source facts have not been independently verified against university biographies.
+First-placement records additionally require `verificationStatus: "verified-first-placement"`, `evidenceUrl`, `reviewedAt`, and an explicitly known `placementYear` or null. Review the explicit first-job evidence before adding any record. The public source facts have not been independently verified against university biographies.
 
 ## Features
 
