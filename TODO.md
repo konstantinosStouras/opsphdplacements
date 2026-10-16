@@ -41,6 +41,7 @@ Position after the second 16 October 2026 integration (published ledger): 797 ve
 
 ## Database and website
 
+- [x] Add an interactive world map of PhD institutions with icons, zoom, region tabs and click-through to the explorer (16 October 2026). 358 of 369 imported PhD institution names are placed; 11 are unmatched or ambiguous (for example "Ecole Polytechnique", Montréal or Palaiseau) and need a person-level check.
 - [x] Add static social-sharing metadata, a branded preview image, browser/mobile icons and reproducible asset checks; maintenance is documented in `SHARING.md`.
 
 - [ ] Implement a reviewed migration to a persistent canonical database before editing longitudinal data there. The present SQLite output is regenerated from JSON.
