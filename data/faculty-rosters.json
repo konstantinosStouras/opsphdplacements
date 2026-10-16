@@ -32,11 +32,16 @@
     "student": 21,
     "postdoc": 5
    },
-   "reviewed": 0,
-   "reviewOutcomes": {},
+   "reviewed": 40,
+   "reviewOutcomes": {
+    "confirmed-faculty": 36,
+    "extraction-noise": 3,
+    "unresolved": 1
+   },
    "universities": 82,
    "omListProfilesSeen": 240
-  }
+  },
+  "reviewsUpdatedAt": "2026-10-16"
  },
  "pages": [
   {
@@ -2774,7 +2779,7 @@
    "listed": 279,
    "omList": 3,
    "unverified": 276,
-   "reviewed": 0
+   "reviewed": 25
   },
   {
    "universityId": "dartmouth-college",
@@ -2998,7 +3003,7 @@
    "listed": 30,
    "omList": 0,
    "unverified": 30,
-   "reviewed": 0
+   "reviewed": 2
   },
   {
    "universityId": "ecole-polytechnique-federale-de-lausanne-epfl",
@@ -3166,7 +3171,7 @@
    "listed": 11,
    "omList": 7,
    "unverified": 4,
-   "reviewed": 0
+   "reviewed": 4
   },
   {
    "universityId": "georgia-state-university",
@@ -3206,7 +3211,7 @@
    "listed": 6,
    "omList": 0,
    "unverified": 6,
-   "reviewed": 0
+   "reviewed": 6
   },
   {
    "universityId": "university-of-toulouse",
@@ -3230,7 +3235,7 @@
    "listed": 2,
    "omList": 0,
    "unverified": 2,
-   "reviewed": 0
+   "reviewed": 2
   },
   {
    "universityId": "ewha-school-of-business",
@@ -3294,7 +3299,7 @@
    "listed": 1,
    "omList": 0,
    "unverified": 1,
-   "reviewed": 0
+   "reviewed": 1
   },
   {
    "universityId": "imperial-college-london",
@@ -6544,7 +6549,25 @@
    "researchStatus": null,
    "firstJob": null,
    "verification": "unverified",
-   "review": null
+   "review": {
+    "status": "confirmed-faculty",
+    "checkedAt": "2026-10-16",
+    "reason": "The roster profile URL (isearch.asu.edu) redirects permanently to search.asu.edu; the ASU directory profile there shows him as Professor in the School of Electrical, Computer and Energy Engineering (the engineering roster listed him as President's Professor), and its education line reads 'Dr. rer. nat. University of Stuttgart', 1991 (research at the Max Planck Institute for Solid State Research). He is an electrical-engineering faculty member, not operations faculty.",
+    "sources": [
+     {
+      "url": "https://search.asu.edu/profile/109928",
+      "title": "Yong-Hang Zhang, ASU directory profile (redirect target of isearch.asu.edu/profile/109928)"
+     }
+    ],
+    "profileUrl": "https://search.asu.edu/profile/109928",
+    "titleConfirmed": "Professor",
+    "areaConfirmed": "School of Electrical, Computer and Energy Engineering",
+    "phdInstitution": "University of Stuttgart",
+    "phdYear": 1991,
+    "phdSourceUrl": "https://search.asu.edu/profile/109928",
+    "omListFacultyId": null,
+    "note": null
+   }
   },
   {
    "id": "roster:arizona-state-university:yu-yao",
@@ -6575,7 +6598,25 @@
    "researchStatus": null,
    "firstJob": null,
    "verification": "unverified",
-   "review": null
+   "review": {
+    "status": "confirmed-faculty",
+    "checkedAt": "2026-10-16",
+    "reason": "The roster profile URL redirects permanently to search.asu.edu; the ASU directory profile shows her as Associate Professor in the School of Electrical, Computer and Energy Engineering, with education 'Ph.D. Electrical Engineering, Princeton University 2011'. She is an electrical-engineering faculty member, not operations faculty; the roster title 'Fulton Schools Entrepreneurial Faculty' is a designation on the engineering listing, not her rank.",
+    "sources": [
+     {
+      "url": "https://search.asu.edu/profile/2465249",
+      "title": "Yu Yao, ASU directory profile (redirect target of isearch.asu.edu/profile/2465249)"
+     }
+    ],
+    "profileUrl": "https://search.asu.edu/profile/2465249",
+    "titleConfirmed": "Associate Professor",
+    "areaConfirmed": "School of Electrical, Computer and Energy Engineering",
+    "phdInstitution": "Princeton University",
+    "phdYear": 2011,
+    "phdSourceUrl": "https://search.asu.edu/profile/2465249",
+    "omListFacultyId": null,
+    "note": null
+   }
   },
   {
    "id": "roster:boston-college:jiri-chod",
@@ -6680,7 +6721,25 @@
    "researchStatus": null,
    "firstJob": null,
    "verification": "unverified",
-   "review": null
+   "review": {
+    "status": "extraction-noise",
+    "checkedAt": "2026-10-16",
+    "reason": "Not a person: the linked page is the 'Dean's Advisory Board Directory' of the Questrom School of Business, a listing of board members, picked up from site navigation on the faculty directory.",
+    "sources": [
+     {
+      "url": "https://www.bu.edu/questrom/about/leadership-team/boards-councils/deans-advisory-board/",
+      "title": "Dean's Advisory Board Directory, Questrom School of Business"
+     }
+    ],
+    "profileUrl": null,
+    "titleConfirmed": null,
+    "areaConfirmed": null,
+    "phdInstitution": null,
+    "phdYear": null,
+    "phdSourceUrl": null,
+    "omListFacultyId": null,
+    "note": null
+   }
   },
   {
    "id": "roster:california-state-polytechnic-university-pomona:jun-myers",
@@ -6711,7 +6770,29 @@
    "researchStatus": null,
    "firstJob": null,
    "verification": "unverified",
-   "review": null
+   "review": {
+    "status": "confirmed-faculty",
+    "checkedAt": "2026-10-16",
+    "reason": "The CBA 'Meet Our Faculty' page lists only six department chairs with no profile links; it shows Dr. Jun Myers as International Business and Marketing Management Chair (the roster's chair titles were shifted by one entry). Her CPP faculty page shows 'Professor, IBM Chair' in International Business & Marketing and states she received her Ph.D. in Mass Communication at the University of Minnesota, Twin Cities (no year); the linked education.shtml subpage returns 404. Not operations faculty.",
+    "sources": [
+     {
+      "url": "https://www.cpp.edu/~cba/our-faculty/index.shtml",
+      "title": "Meet Our Faculty (department chairs), College of Business Administration, Cal Poly Pomona"
+     },
+     {
+      "url": "https://www.cpp.edu/faculty/jrmyers/index.shtml",
+      "title": "Jun Myers, Cal Poly Pomona faculty page"
+     }
+    ],
+    "profileUrl": "https://www.cpp.edu/faculty/jrmyers/index.shtml",
+    "titleConfirmed": "Professor, IBM Chair",
+    "areaConfirmed": "International Business & Marketing, College of Business Administration",
+    "phdInstitution": "University of Minnesota, Twin Cities",
+    "phdYear": null,
+    "phdSourceUrl": "https://www.cpp.edu/faculty/jrmyers/index.shtml",
+    "omListFacultyId": null,
+    "note": null
+   }
   },
   {
    "id": "roster:california-state-polytechnic-university-pomona:magdy-farag",
@@ -6742,7 +6823,33 @@
    "researchStatus": null,
    "firstJob": null,
    "verification": "unverified",
-   "review": null
+   "review": {
+    "status": "confirmed-faculty",
+    "checkedAt": "2026-10-16",
+    "reason": "The CBA chairs page shows Dr. Magdy Farag as Accounting Chair (not Computer Information Systems Chair as the roster recorded). His CPP faculty page shows 'Professor and Chair', Accounting Department, and its bio and education subpage state a Ph.D. in Accounting (minor in Statistics) from Kent State University; no year is given on either page. Not operations faculty.",
+    "sources": [
+     {
+      "url": "https://www.cpp.edu/~cba/our-faculty/index.shtml",
+      "title": "Meet Our Faculty (department chairs), College of Business Administration, Cal Poly Pomona"
+     },
+     {
+      "url": "https://www.cpp.edu/faculty/mfarag/index.shtml",
+      "title": "Magdy Farag, Cal Poly Pomona faculty page"
+     },
+     {
+      "url": "https://www.cpp.edu/faculty/mfarag/education.shtml",
+      "title": "Magdy Farag, Education subpage"
+     }
+    ],
+    "profileUrl": "https://www.cpp.edu/faculty/mfarag/index.shtml",
+    "titleConfirmed": "Professor and Chair",
+    "areaConfirmed": "Accounting Department, College of Business Administration",
+    "phdInstitution": "Kent State University",
+    "phdYear": null,
+    "phdSourceUrl": "https://www.cpp.edu/faculty/mfarag/education.shtml",
+    "omListFacultyId": null,
+    "note": null
+   }
   },
   {
    "id": "roster:california-state-polytechnic-university-pomona:wei-yu",
@@ -6773,7 +6880,29 @@
    "researchStatus": null,
    "firstJob": null,
    "verification": "unverified",
-   "review": null
+   "review": {
+    "status": "confirmed-faculty",
+    "checkedAt": "2026-10-16",
+    "reason": "The CBA chairs page shows Dr. Wei Yu as Finance, Real Estate, and Law Chair (not the International Business chair title the roster recorded). His CPP faculty page shows 'Chair and Professor', Finance, Real Estate, and Law, with education 'Ph.D. Finance: Rutgers University' (no year); the education.shtml subpage returns 404. Not operations faculty.",
+    "sources": [
+     {
+      "url": "https://www.cpp.edu/~cba/our-faculty/index.shtml",
+      "title": "Meet Our Faculty (department chairs), College of Business Administration, Cal Poly Pomona"
+     },
+     {
+      "url": "https://www.cpp.edu/faculty/weiyu/index.shtml",
+      "title": "Wei Yu, Cal Poly Pomona faculty page"
+     }
+    ],
+    "profileUrl": "https://www.cpp.edu/faculty/weiyu/index.shtml",
+    "titleConfirmed": "Chair and Professor",
+    "areaConfirmed": "Finance, Real Estate, and Law, College of Business Administration",
+    "phdInstitution": "Rutgers University",
+    "phdYear": null,
+    "phdSourceUrl": "https://www.cpp.edu/faculty/weiyu/index.shtml",
+    "omListFacultyId": null,
+    "note": null
+   }
   },
   {
    "id": "roster:california-state-polytechnic-university-pomona:wenge-zhu",
@@ -6804,7 +6933,29 @@
    "researchStatus": null,
    "firstJob": null,
    "verification": "unverified",
-   "review": null
+   "review": {
+    "status": "confirmed-faculty",
+    "checkedAt": "2026-10-16",
+    "reason": "The CBA chairs page shows Dr. Wenge Zhu as TOM & EBZ Chair (the roster recorded the Finance chair title). His CPP faculty page shows 'Department Chair, Professor', Technology and Operations Department, and states he received his Ph.D. in Supply Chain and Operations Management from McCombs School of Business, the University of Texas at Austin, in 2005. He is the one operations-management faculty member among the six chairs.",
+    "sources": [
+     {
+      "url": "https://www.cpp.edu/~cba/our-faculty/index.shtml",
+      "title": "Meet Our Faculty (department chairs), College of Business Administration, Cal Poly Pomona"
+     },
+     {
+      "url": "https://www.cpp.edu/faculty/zhu/index.shtml",
+      "title": "Wenge Zhu, Cal Poly Pomona faculty page"
+     }
+    ],
+    "profileUrl": "https://www.cpp.edu/faculty/zhu/index.shtml",
+    "titleConfirmed": "Department Chair, Professor",
+    "areaConfirmed": "Technology and Operations Department, College of Business Administration",
+    "phdInstitution": "McCombs School of Business, the University of Texas at Austin",
+    "phdYear": 2005,
+    "phdSourceUrl": "https://www.cpp.edu/faculty/zhu/index.shtml",
+    "omListFacultyId": null,
+    "note": null
+   }
   },
   {
    "id": "roster:california-state-polytechnic-university-pomona:xuguang-guo",
@@ -6835,7 +6986,33 @@
    "researchStatus": null,
    "firstJob": null,
    "verification": "unverified",
-   "review": null
+   "review": {
+    "status": "confirmed-faculty",
+    "checkedAt": "2026-10-16",
+    "reason": "The CBA chairs page shows Dr. Xuguang Guo as Management and Human Resources Chair (the roster's 'Current Faculty Openings' title is a page heading). His CPP faculty page shows 'Professor of Human Resources & Chair', Management and Human Resources, and its education subpage lists 'Ph.D., Industrial Relations and Human Resources, Rutgers, The State University of New Jersey' with no year. Not operations faculty.",
+    "sources": [
+     {
+      "url": "https://www.cpp.edu/~cba/our-faculty/index.shtml",
+      "title": "Meet Our Faculty (department chairs), College of Business Administration, Cal Poly Pomona"
+     },
+     {
+      "url": "https://www.cpp.edu/faculty/xuguangguo/index.shtml",
+      "title": "Xuguang (Steve) Guo, Cal Poly Pomona faculty page"
+     },
+     {
+      "url": "https://www.cpp.edu/faculty/xuguangguo/education.shtml",
+      "title": "Xuguang (Steve) Guo, Education subpage"
+     }
+    ],
+    "profileUrl": "https://www.cpp.edu/faculty/xuguangguo/index.shtml",
+    "titleConfirmed": "Professor of Human Resources & Chair",
+    "areaConfirmed": "Management and Human Resources, College of Business Administration",
+    "phdInstitution": "Rutgers, The State University of New Jersey",
+    "phdYear": null,
+    "phdSourceUrl": "https://www.cpp.edu/faculty/xuguangguo/education.shtml",
+    "omListFacultyId": null,
+    "note": null
+   }
   },
   {
    "id": "roster:california-state-polytechnic-university-pomona:zhongming-ma",
@@ -6866,7 +7043,29 @@
    "researchStatus": null,
    "firstJob": null,
    "verification": "unverified",
-   "review": null
+   "review": {
+    "status": "confirmed-faculty",
+    "checkedAt": "2026-10-16",
+    "reason": "The CBA chairs page shows Dr. Zhongming Ma as Computer Information Systems Chair (the roster recorded the TOM & EBZ chair title). His CPP faculty page shows 'Chair, Professor, MSIS Director', Computer Information Systems Department, with education 'Ph.D., Information Systems, University of Utah' (no year); the education.shtml subpage returns 404. Not operations faculty.",
+    "sources": [
+     {
+      "url": "https://www.cpp.edu/~cba/our-faculty/index.shtml",
+      "title": "Meet Our Faculty (department chairs), College of Business Administration, Cal Poly Pomona"
+     },
+     {
+      "url": "https://www.cpp.edu/faculty/zma/index.shtml",
+      "title": "Zhongming Ma, Cal Poly Pomona faculty page"
+     }
+    ],
+    "profileUrl": "https://www.cpp.edu/faculty/zma/index.shtml",
+    "titleConfirmed": "Chair, Professor, MSIS Director",
+    "areaConfirmed": "Computer Information Systems Department, College of Business Administration",
+    "phdInstitution": "University of Utah",
+    "phdYear": null,
+    "phdSourceUrl": "https://www.cpp.edu/faculty/zma/index.shtml",
+    "omListFacultyId": null,
+    "note": null
+   }
   },
   {
    "id": "roster:california-state-university-east-bay:csu-webadmit",
@@ -6897,7 +7096,25 @@
    "researchStatus": null,
    "firstJob": null,
    "verification": "unverified",
-   "review": null
+   "review": {
+    "status": "extraction-noise",
+    "checkedAt": "2026-10-16",
+    "reason": "Not a person: the CSU East Bay 'Faculty' page is a faculty resources and tools page (no people listed), and 'CSU WebAdmit' is a link in its Faculty Tools list pointing to an admissions software site.",
+    "sources": [
+     {
+      "url": "https://www.csueastbay.edu/faculty/",
+      "title": "Faculty resources and tools page, California State University, East Bay"
+     }
+    ],
+    "profileUrl": null,
+    "titleConfirmed": null,
+    "areaConfirmed": null,
+    "phdInstitution": null,
+    "phdYear": null,
+    "phdSourceUrl": null,
+    "omListFacultyId": null,
+    "note": null
+   }
   },
   {
    "id": "roster:california-state-university-east-bay:vpn-access",
@@ -6928,7 +7145,25 @@
    "researchStatus": null,
    "firstJob": null,
    "verification": "unverified",
-   "review": null
+   "review": {
+    "status": "extraction-noise",
+    "checkedAt": "2026-10-16",
+    "reason": "Not a person: 'VPN Access' is a link in the 'More Faculty Tools' list on the CSU East Bay faculty resources page, which lists tools, calendars and offices rather than people.",
+    "sources": [
+     {
+      "url": "https://www.csueastbay.edu/faculty/",
+      "title": "Faculty resources and tools page, California State University, East Bay"
+     }
+    ],
+    "profileUrl": null,
+    "titleConfirmed": null,
+    "areaConfirmed": null,
+    "phdInstitution": null,
+    "phdYear": null,
+    "phdSourceUrl": null,
+    "omListFacultyId": null,
+    "note": null
+   }
   },
   {
    "id": "roster:carnegie-mellon-university:alan-scheller-wolf",
@@ -6996,7 +7231,37 @@
    "researchStatus": null,
    "firstJob": null,
    "verification": "unverified",
-   "review": null
+   "review": {
+    "status": "confirmed-faculty",
+    "checkedAt": "2026-10-16",
+    "reason": "His Tepper faculty profile shows Visiting Assistant Professor of Operations Management, Tepper School of Business, and the Operations Management area page lists him with the same title. The profile has no education section and no opened page states his doctorate, so it is left null: the 2022 Tepper new-faculty story does not mention him, and a search hit describing an Emory Goizueta 'Operations Management PhD Candidate' page for a Deepak Agrawal (unverified as the same person) now returns 404.",
+    "sources": [
+     {
+      "url": "https://www.cmu.edu/tepper/faculty-and-research/faculty-profiles/deepak-agrawal",
+      "title": "Deepak Agrawal, Tepper School of Business faculty profile"
+     },
+     {
+      "url": "https://www.cmu.edu/tepper/faculty-and-research/academic-areas/operations-management",
+      "title": "Operations Management area faculty, Tepper School of Business"
+     },
+     {
+      "url": "https://www.cmu.edu/tepper/news/stories/2022/september/new-faculty.html",
+      "title": "Tepper School new faculty story, September 2022 (does not mention him)"
+     },
+     {
+      "url": "https://goizueta.emory.edu/node/15531",
+      "title": "Emory Goizueta page from search hit (redirect target of business.emory.edu/node/15531; HTTP 404)"
+     }
+    ],
+    "profileUrl": "https://www.cmu.edu/tepper/faculty-and-research/faculty-profiles/deepak-agrawal",
+    "titleConfirmed": "Visiting Assistant Professor of Operations Management",
+    "areaConfirmed": "Operations Management, Tepper School of Business",
+    "phdInstitution": null,
+    "phdYear": null,
+    "phdSourceUrl": null,
+    "omListFacultyId": null,
+    "note": null
+   }
   },
   {
    "id": "roster:carnegie-mellon-university:evelyn-xiaoyue-gong",
@@ -7027,7 +7292,29 @@
    "researchStatus": null,
    "firstJob": null,
    "verification": "unverified",
-   "review": null
+   "review": {
+    "status": "confirmed-faculty",
+    "checkedAt": "2026-10-16",
+    "reason": "Her CMU scholars profile shows Assistant Professor of Operations Management, Tepper School of Business, and its Degrees section lists 'Ph D, Massachusetts Institute of Technology, Cambridge, United States, 2023' (BS, New York University, 2017). The Tepper Operations Management area page also lists her with that title.",
+    "sources": [
+     {
+      "url": "https://scholars.cmu.edu/13074-evelyn-xiaoyue-gong",
+      "title": "Evelyn Xiaoyue Gong, CMU scholars profile"
+     },
+     {
+      "url": "https://www.cmu.edu/tepper/faculty-and-research/academic-areas/operations-management",
+      "title": "Operations Management area faculty, Tepper School of Business"
+     }
+    ],
+    "profileUrl": "https://scholars.cmu.edu/13074-evelyn-xiaoyue-gong",
+    "titleConfirmed": "Assistant Professor of Operations Management",
+    "areaConfirmed": "Operations Management, Tepper School of Business",
+    "phdInstitution": "Massachusetts Institute of Technology",
+    "phdYear": 2023,
+    "phdSourceUrl": "https://scholars.cmu.edu/13074-evelyn-xiaoyue-gong",
+    "omListFacultyId": null,
+    "note": null
+   }
   },
   {
    "id": "roster:carnegie-mellon-university:joe-beaman",
@@ -7058,7 +7345,33 @@
    "researchStatus": null,
    "firstJob": null,
    "verification": "unverified",
-   "review": null
+   "review": {
+    "status": "unresolved",
+    "checkedAt": "2026-10-16",
+    "reason": "The Tepper Operations Management area page lists 'Joe Beaman, Adjunct Professor of Management; Director of Carnegie Mellon Dining Services' with a profile link to /joe-beaman, but that URL (https://www.cmu.edu/joe-beaman) returns 404 and the one alternative tried (the Tepper faculty-profiles path for his name) also returns 404, so no page of his own could be opened to confirm the appointment or any doctorate. The listing itself describes a primarily administrative (dining services) role with an adjunct title.",
+    "sources": [
+     {
+      "url": "https://www.cmu.edu/tepper/faculty-and-research/academic-areas/operations-management",
+      "title": "Operations Management area faculty, Tepper School of Business"
+     },
+     {
+      "url": "https://www.cmu.edu/joe-beaman",
+      "title": "Joe Beaman profile link from the area page (HTTP 404)"
+     },
+     {
+      "url": "https://www.cmu.edu/tepper/faculty-and-research/faculty-profiles/joe-beaman",
+      "title": "Alternative Tepper faculty-profiles URL tried (HTTP 404)"
+     }
+    ],
+    "profileUrl": null,
+    "titleConfirmed": null,
+    "areaConfirmed": null,
+    "phdInstitution": null,
+    "phdYear": null,
+    "phdSourceUrl": null,
+    "omListFacultyId": null,
+    "note": null
+   }
   },
   {
    "id": "roster:carnegie-mellon-university:mustafa-akan",
@@ -7173,7 +7486,29 @@
    "researchStatus": null,
    "firstJob": null,
    "verification": "unverified",
-   "review": null
+   "review": {
+    "status": "confirmed-faculty",
+    "checkedAt": "2026-10-16",
+    "reason": "His CMU scholars profile shows Distinguished Service Professor of Management, Tepper School of Business; its Degrees section lists 'Ph.D.: Industrial-Organizational Psychology, Colorado State University, Fort Collins, United States, 1975 - 1977' (the year recorded is the end of that range), plus an M.A. from the University of Texas at Austin and a B.A. from Drake University. The Tepper Operations Management area page lists him with the same title.",
+    "sources": [
+     {
+      "url": "https://scholars.cmu.edu/4143-robert-kelley",
+      "title": "Robert Kelley, CMU scholars profile"
+     },
+     {
+      "url": "https://www.cmu.edu/tepper/faculty-and-research/academic-areas/operations-management",
+      "title": "Operations Management area faculty, Tepper School of Business"
+     }
+    ],
+    "profileUrl": "https://scholars.cmu.edu/4143-robert-kelley",
+    "titleConfirmed": "Distinguished Service Professor of Management",
+    "areaConfirmed": "Operations Management area (listing), Tepper School of Business",
+    "phdInstitution": "Colorado State University",
+    "phdYear": 1977,
+    "phdSourceUrl": "https://scholars.cmu.edu/4143-robert-kelley",
+    "omListFacultyId": null,
+    "note": null
+   }
   },
   {
    "id": "roster:carnegie-mellon-university:sham-kekre",
@@ -7399,7 +7734,29 @@
    "researchStatus": null,
    "firstJob": null,
    "verification": "unverified",
-   "review": null
+   "review": {
+    "status": "confirmed-faculty",
+    "checkedAt": "2026-10-16",
+    "reason": "His Clemson business profile shows Assistant Professor (college only, no department line) with education 'Ph.D. Economics, Duke University 2023'; the college directory lists him under the John E. Walker Department of Economics as Assistant Professor. Not operations faculty: the roster's 'Management' department came from the directory page fragment, not from his listing.",
+    "sources": [
+     {
+      "url": "https://www.clemson.edu/business/about/profiles/asolima",
+      "title": "Adam Soliman, Clemson Wilbur O. and Ann Powers College of Business profile"
+     },
+     {
+      "url": "https://www.clemson.edu/business/about/directory.html",
+      "title": "College Directory, Wilbur O. and Ann Powers College of Business, Clemson University"
+     }
+    ],
+    "profileUrl": "https://www.clemson.edu/business/about/profiles/asolima",
+    "titleConfirmed": "Assistant Professor",
+    "areaConfirmed": "John E. Walker Department of Economics",
+    "phdInstitution": "Duke University",
+    "phdYear": 2023,
+    "phdSourceUrl": "https://www.clemson.edu/business/about/profiles/asolima",
+    "omListFacultyId": null,
+    "note": null
+   }
   },
   {
    "id": "roster:clemson-university:adam-stone",
@@ -7430,7 +7787,29 @@
    "researchStatus": null,
    "firstJob": null,
    "verification": "unverified",
-   "review": null
+   "review": {
+    "status": "confirmed-faculty",
+    "checkedAt": "2026-10-16",
+    "reason": "His Clemson business profile shows Professor of Practice (college only); the college directory lists him under the Department of Marketing with the same title. The profile's education lists an MBA (NYU Stern) and a B.S. (Lehigh), no doctorate.",
+    "sources": [
+     {
+      "url": "https://www.clemson.edu/business/about/profiles/aston22",
+      "title": "Adam Stone, Clemson Wilbur O. and Ann Powers College of Business profile"
+     },
+     {
+      "url": "https://www.clemson.edu/business/about/directory.html",
+      "title": "College Directory, Wilbur O. and Ann Powers College of Business, Clemson University"
+     }
+    ],
+    "profileUrl": "https://www.clemson.edu/business/about/profiles/aston22",
+    "titleConfirmed": "Professor of Practice",
+    "areaConfirmed": "Department of Marketing",
+    "phdInstitution": null,
+    "phdYear": null,
+    "phdSourceUrl": null,
+    "omListFacultyId": null,
+    "note": null
+   }
   },
   {
    "id": "roster:clemson-university:alec-pappas",
@@ -7461,7 +7840,25 @@
    "researchStatus": null,
    "firstJob": null,
    "verification": "unverified",
-   "review": null
+   "review": {
+    "status": "confirmed-faculty",
+    "checkedAt": "2026-10-16",
+    "reason": "His Clemson business profile (shown as Alec N Pappas) lists Assistant Professor of Marketing, with education 'Ph.D. Business Administration, Florida State University 2021' (the bio calls it a Ph.D. in Marketing). Marketing faculty, not operations.",
+    "sources": [
+     {
+      "url": "https://www.clemson.edu/business/about/profiles/pappas5",
+      "title": "Alec N Pappas, Clemson Wilbur O. and Ann Powers College of Business profile"
+     }
+    ],
+    "profileUrl": "https://www.clemson.edu/business/about/profiles/pappas5",
+    "titleConfirmed": "Assistant Professor of Marketing",
+    "areaConfirmed": "Marketing",
+    "phdInstitution": "Florida State University",
+    "phdYear": 2021,
+    "phdSourceUrl": "https://www.clemson.edu/business/about/profiles/pappas5",
+    "omListFacultyId": null,
+    "note": null
+   }
   },
   {
    "id": "roster:clemson-university:alexis-kennedy",
@@ -7492,7 +7889,29 @@
    "researchStatus": null,
    "firstJob": null,
    "verification": "unverified",
-   "review": null
+   "review": {
+    "status": "confirmed-faculty",
+    "checkedAt": "2026-10-16",
+    "reason": "Her profile page (profiles/amnewma) loads but is an empty template with no name, title or education, only the email ID. The college directory lists Alexis Kennedy as Lecturer in the Business Professionalism Curriculum, which is the source of the title recorded here. No doctorate is stated anywhere opened.",
+    "sources": [
+     {
+      "url": "https://www.clemson.edu/business/about/profiles/amnewma",
+      "title": "Clemson business profile page for amnewma (empty template)"
+     },
+     {
+      "url": "https://www.clemson.edu/business/about/directory.html",
+      "title": "College Directory, Wilbur O. and Ann Powers College of Business, Clemson University"
+     }
+    ],
+    "profileUrl": "https://www.clemson.edu/business/about/profiles/amnewma",
+    "titleConfirmed": "Lecturer",
+    "areaConfirmed": "Business Professionalism Curriculum",
+    "phdInstitution": null,
+    "phdYear": null,
+    "phdSourceUrl": null,
+    "omListFacultyId": null,
+    "note": null
+   }
   },
   {
    "id": "roster:clemson-university:allan-detoma",
@@ -7523,7 +7942,29 @@
    "researchStatus": null,
    "firstJob": null,
    "verification": "unverified",
-   "review": null
+   "review": {
+    "status": "confirmed-faculty",
+    "checkedAt": "2026-10-16",
+    "reason": "His profile page (profiles/ddetoma) loads but is an empty template with no name, title or education. The college directory lists Allan DeToma as Lecturer in the Department of Management, which is the source of the title recorded here. No doctorate is stated anywhere opened.",
+    "sources": [
+     {
+      "url": "https://www.clemson.edu/business/about/profiles/ddetoma",
+      "title": "Clemson business profile page for ddetoma (empty template)"
+     },
+     {
+      "url": "https://www.clemson.edu/business/about/directory.html",
+      "title": "College Directory, Wilbur O. and Ann Powers College of Business, Clemson University"
+     }
+    ],
+    "profileUrl": "https://www.clemson.edu/business/about/profiles/ddetoma",
+    "titleConfirmed": "Lecturer",
+    "areaConfirmed": "Department of Management",
+    "phdInstitution": null,
+    "phdYear": null,
+    "phdSourceUrl": null,
+    "omListFacultyId": null,
+    "note": null
+   }
   },
   {
    "id": "roster:clemson-university:allan-glass",
@@ -7554,7 +7995,29 @@
    "researchStatus": null,
    "firstJob": null,
    "verification": "unverified",
-   "review": null
+   "review": {
+    "status": "confirmed-faculty",
+    "checkedAt": "2026-10-16",
+    "reason": "His profile page (profiles/allang) loads but is an empty template with no name, title or education. The college directory lists Allan Glass as Lecturer in the Department of Management, which is the source of the title recorded here. No doctorate is stated anywhere opened.",
+    "sources": [
+     {
+      "url": "https://www.clemson.edu/business/about/profiles/allang",
+      "title": "Clemson business profile page for allang (empty template)"
+     },
+     {
+      "url": "https://www.clemson.edu/business/about/directory.html",
+      "title": "College Directory, Wilbur O. and Ann Powers College of Business, Clemson University"
+     }
+    ],
+    "profileUrl": "https://www.clemson.edu/business/about/profiles/allang",
+    "titleConfirmed": "Lecturer",
+    "areaConfirmed": "Department of Management",
+    "phdInstitution": null,
+    "phdYear": null,
+    "phdSourceUrl": null,
+    "omListFacultyId": null,
+    "note": null
+   }
   },
   {
    "id": "roster:clemson-university:allie-larson-thomson",
@@ -7616,7 +8079,29 @@
    "researchStatus": null,
    "firstJob": null,
    "verification": "unverified",
-   "review": null
+   "review": {
+    "status": "confirmed-faculty",
+    "checkedAt": "2026-10-16",
+    "reason": "Her Clemson business profile (Amanda W Bridges) shows Clinical Assistant Professor, with education 'Ed.D. Curriculum & Instruction, Gardner-Webb University 2013' (an Ed.D., recorded here as the doctorate); the college directory lists her as Assistant Professor in the Department of Graphic Communications. Not operations faculty.",
+    "sources": [
+     {
+      "url": "https://www.clemson.edu/business/about/profiles/awbridg",
+      "title": "Amanda W Bridges, Clemson Wilbur O. and Ann Powers College of Business profile"
+     },
+     {
+      "url": "https://www.clemson.edu/business/about/directory.html",
+      "title": "College Directory, Wilbur O. and Ann Powers College of Business, Clemson University"
+     }
+    ],
+    "profileUrl": "https://www.clemson.edu/business/about/profiles/awbridg",
+    "titleConfirmed": "Clinical Assistant Professor",
+    "areaConfirmed": "Department of Graphic Communications",
+    "phdInstitution": "Gardner-Webb University",
+    "phdYear": 2013,
+    "phdSourceUrl": "https://www.clemson.edu/business/about/profiles/awbridg",
+    "omListFacultyId": null,
+    "note": null
+   }
   },
   {
    "id": "roster:clemson-university:amanda-fine",
@@ -7647,7 +8132,25 @@
    "researchStatus": null,
    "firstJob": null,
    "verification": "unverified",
-   "review": null
+   "review": {
+    "status": "confirmed-faculty",
+    "checkedAt": "2026-10-16",
+    "reason": "Her Clemson business profile (Amanda Cooper Fine) shows Principal Lecturer and Assistant Department Chair in the Department of Marketing; education lists an MBA and MS Marketing (Clemson 2008) and a BA (Vanderbilt 2001), no doctorate. Marketing, not operations.",
+    "sources": [
+     {
+      "url": "https://www.clemson.edu/business/about/profiles/ACOOPE2",
+      "title": "Amanda Cooper Fine, Clemson Wilbur O. and Ann Powers College of Business profile"
+     }
+    ],
+    "profileUrl": "https://www.clemson.edu/business/about/profiles/ACOOPE2",
+    "titleConfirmed": "Principal Lecturer, Assistant Department Chair",
+    "areaConfirmed": "Department of Marketing",
+    "phdInstitution": null,
+    "phdYear": null,
+    "phdSourceUrl": null,
+    "omListFacultyId": null,
+    "note": null
+   }
   },
   {
    "id": "roster:clemson-university:amy-ingram",
@@ -7678,7 +8181,29 @@
    "researchStatus": null,
    "firstJob": null,
    "verification": "unverified",
-   "review": null
+   "review": {
+    "status": "confirmed-faculty",
+    "checkedAt": "2026-10-16",
+    "reason": "Her Clemson business profile (Amy Elizabeth Ingram) shows Professor in the header (an older bio paragraph still says associate professor), with education 'Ph.D Management, University of Cincinnati 2011'; the college directory lists her under the Department of Management as 'Professor, Graduate Coordinator'. Management, not operations.",
+    "sources": [
+     {
+      "url": "https://www.clemson.edu/business/about/profiles/AMYI",
+      "title": "Amy Elizabeth Ingram, Clemson Wilbur O. and Ann Powers College of Business profile"
+     },
+     {
+      "url": "https://www.clemson.edu/business/about/directory.html",
+      "title": "College Directory, Wilbur O. and Ann Powers College of Business, Clemson University"
+     }
+    ],
+    "profileUrl": "https://www.clemson.edu/business/about/profiles/AMYI",
+    "titleConfirmed": "Professor",
+    "areaConfirmed": "Department of Management",
+    "phdInstitution": "University of Cincinnati",
+    "phdYear": 2011,
+    "phdSourceUrl": "https://www.clemson.edu/business/about/profiles/AMYI",
+    "omListFacultyId": null,
+    "note": null
+   }
   },
   {
    "id": "roster:clemson-university:anastasia-thyroff",
@@ -7709,7 +8234,25 @@
    "researchStatus": null,
    "firstJob": null,
    "verification": "unverified",
-   "review": null
+   "review": {
+    "status": "confirmed-faculty",
+    "checkedAt": "2026-10-16",
+    "reason": "Her Clemson business profile shows Associate Professor, Marketing, with education 'Ph.D. Marketing, University of Arkansas 2013'. Marketing, not operations.",
+    "sources": [
+     {
+      "url": "https://www.clemson.edu/business/about/profiles/THYROFF",
+      "title": "Anastasia Thyroff, Clemson Wilbur O. and Ann Powers College of Business profile"
+     }
+    ],
+    "profileUrl": "https://www.clemson.edu/business/about/profiles/THYROFF",
+    "titleConfirmed": "Associate Professor",
+    "areaConfirmed": "Marketing",
+    "phdInstitution": "University of Arkansas",
+    "phdYear": 2013,
+    "phdSourceUrl": "https://www.clemson.edu/business/about/profiles/THYROFF",
+    "omListFacultyId": null,
+    "note": null
+   }
   },
   {
    "id": "roster:clemson-university:andrea-dear",
@@ -7740,7 +8283,29 @@
    "researchStatus": null,
    "firstJob": null,
    "verification": "unverified",
-   "review": null
+   "review": {
+    "status": "confirmed-faculty",
+    "checkedAt": "2026-10-16",
+    "reason": "Her Clemson business profile (Andrea (Andi) Dear) shows no title or department, only a cost-accounting course and education 'MS Taxation, University of San Diego 2015' (no doctorate); the college directory lists her as Lecturer in the School of Accountancy, the source of the title recorded here. Accounting, not operations.",
+    "sources": [
+     {
+      "url": "https://www.clemson.edu/business/about/profiles/adear",
+      "title": "Andrea (Andi) Dear, Clemson Wilbur O. and Ann Powers College of Business profile"
+     },
+     {
+      "url": "https://www.clemson.edu/business/about/directory.html",
+      "title": "College Directory, Wilbur O. and Ann Powers College of Business, Clemson University"
+     }
+    ],
+    "profileUrl": "https://www.clemson.edu/business/about/profiles/adear",
+    "titleConfirmed": "Lecturer",
+    "areaConfirmed": "School of Accountancy",
+    "phdInstitution": null,
+    "phdYear": null,
+    "phdSourceUrl": null,
+    "omListFacultyId": null,
+    "note": null
+   }
   },
   {
    "id": "roster:clemson-university:andrea-perla",
@@ -7802,7 +8367,33 @@
    "researchStatus": null,
    "firstJob": null,
    "verification": "unverified",
-   "review": null
+   "review": {
+    "status": "confirmed-faculty",
+    "checkedAt": "2026-10-16",
+    "reason": "His Sonoco Institute page (R. Andrew Hurley, Ph.D.) shows 'Professor' in the header while the bio calls him an associate professor of Packaging Science; the business college directory lists him as 'Partner Faculty, Packaging Science' under the Sonoco Institute, and his CAFLS profile shows Professor, Food, Nutrition, and Packaging Sciences Department. No opened page names the doctorate: the CAFLS education lines read only 'MIT '14' and 'Clemson '06, '08, '11' without degree names, so the doctorate is left null. Packaging science, not operations.",
+    "sources": [
+     {
+      "url": "https://www.clemson.edu/centers-institutes/sonoco-institute/about/staff/andrew-hurley.html",
+      "title": "R. Andrew Hurley, Sonoco Institute of Packaging Design and Graphics, Clemson University"
+     },
+     {
+      "url": "https://www.clemson.edu/business/about/directory.html",
+      "title": "College Directory, Wilbur O. and Ann Powers College of Business, Clemson University"
+     },
+     {
+      "url": "https://clemson.edu/cafls/faculty_staff/profiles/ruperth",
+      "title": "Andrew Hurley, Clemson CAFLS faculty profile"
+     }
+    ],
+    "profileUrl": "https://www.clemson.edu/centers-institutes/sonoco-institute/about/staff/andrew-hurley.html",
+    "titleConfirmed": "Professor",
+    "areaConfirmed": "Packaging Science (Sonoco Institute partner faculty; Food, Nutrition, and Packaging Sciences Department)",
+    "phdInstitution": null,
+    "phdYear": null,
+    "phdSourceUrl": null,
+    "omListFacultyId": null,
+    "note": null
+   }
   },
   {
    "id": "roster:clemson-university:angela-morgan",
@@ -7833,7 +8424,29 @@
    "researchStatus": null,
    "firstJob": null,
    "verification": "unverified",
-   "review": null
+   "review": {
+    "status": "confirmed-faculty",
+    "checkedAt": "2026-10-16",
+    "reason": "Her Clemson business profile (Angela G Morgan) shows Associate Professor with education 'PhD Finance, University of Georgia 1999'; the college directory lists her under the Department of Finance. Finance, not operations.",
+    "sources": [
+     {
+      "url": "https://www.clemson.edu/business/about/profiles/AM",
+      "title": "Angela G Morgan, Clemson Wilbur O. and Ann Powers College of Business profile"
+     },
+     {
+      "url": "https://www.clemson.edu/business/about/directory.html",
+      "title": "College Directory, Wilbur O. and Ann Powers College of Business, Clemson University"
+     }
+    ],
+    "profileUrl": "https://www.clemson.edu/business/about/profiles/AM",
+    "titleConfirmed": "Associate Professor",
+    "areaConfirmed": "Department of Finance",
+    "phdInstitution": "University of Georgia",
+    "phdYear": 1999,
+    "phdSourceUrl": "https://www.clemson.edu/business/about/profiles/AM",
+    "omListFacultyId": null,
+    "note": null
+   }
   },
   {
    "id": "roster:clemson-university:annette-tower",
@@ -7864,7 +8477,25 @@
    "researchStatus": null,
    "firstJob": null,
    "verification": "unverified",
-   "review": null
+   "review": {
+    "status": "confirmed-faculty",
+    "checkedAt": "2026-10-16",
+    "reason": "Her Clemson business profile (Annette Popp Tower) shows Assistant Professor of Marketing, joined the Department of Marketing in 2019, with education 'Ph.D. Marketing, University of Tennessee 2019'. Marketing, not operations.",
+    "sources": [
+     {
+      "url": "https://www.clemson.edu/business/about/profiles/atower",
+      "title": "Annette Popp Tower, Clemson Wilbur O. and Ann Powers College of Business profile"
+     }
+    ],
+    "profileUrl": "https://www.clemson.edu/business/about/profiles/atower",
+    "titleConfirmed": "Assistant Professor of Marketing",
+    "areaConfirmed": "Department of Marketing",
+    "phdInstitution": "University of Tennessee",
+    "phdYear": 2019,
+    "phdSourceUrl": "https://www.clemson.edu/business/about/profiles/atower",
+    "omListFacultyId": null,
+    "note": null
+   }
   },
   {
    "id": "roster:clemson-university:annieka-philo",
@@ -7895,7 +8526,29 @@
    "researchStatus": null,
    "firstJob": null,
    "verification": "unverified",
-   "review": null
+   "review": {
+    "status": "confirmed-faculty",
+    "checkedAt": "2026-10-16",
+    "reason": "Her Clemson business profile (Annieka Philo, CPA) shows Lecturer, with education MS Accountancy and BBA (Western Michigan University 2006, 2005), no doctorate; the college directory lists her as Senior Lecturer in the School of Accountancy. Accounting, not operations.",
+    "sources": [
+     {
+      "url": "https://www.clemson.edu/business/about/profiles/aphilo",
+      "title": "Annieka Philo, Clemson Wilbur O. and Ann Powers College of Business profile"
+     },
+     {
+      "url": "https://www.clemson.edu/business/about/directory.html",
+      "title": "College Directory, Wilbur O. and Ann Powers College of Business, Clemson University"
+     }
+    ],
+    "profileUrl": "https://www.clemson.edu/business/about/profiles/aphilo",
+    "titleConfirmed": "Lecturer",
+    "areaConfirmed": "School of Accountancy",
+    "phdInstitution": null,
+    "phdYear": null,
+    "phdSourceUrl": null,
+    "omListFacultyId": null,
+    "note": null
+   }
   },
   {
    "id": "roster:clemson-university:april-bowen",
@@ -7957,7 +8610,25 @@
    "researchStatus": null,
    "firstJob": null,
    "verification": "unverified",
-   "review": null
+   "review": {
+    "status": "confirmed-faculty",
+    "checkedAt": "2026-10-16",
+    "reason": "His Clemson business profile shows Assistant Professor; the bio says he joined the Department of Finance in 2020, and education lists 'Ph.D. Finance, University of Oregon 2020'. Finance, not operations.",
+    "sources": [
+     {
+      "url": "https://www.clemson.edu/business/about/profiles/adayani",
+      "title": "Arash Dayani, Clemson Wilbur O. and Ann Powers College of Business profile"
+     }
+    ],
+    "profileUrl": "https://www.clemson.edu/business/about/profiles/adayani",
+    "titleConfirmed": "Assistant Professor",
+    "areaConfirmed": "Department of Finance",
+    "phdInstitution": "University of Oregon",
+    "phdYear": 2020,
+    "phdSourceUrl": "https://www.clemson.edu/business/about/profiles/adayani",
+    "omListFacultyId": null,
+    "note": null
+   }
   },
   {
    "id": "roster:clemson-university:ashley-kearney",
@@ -8019,7 +8690,25 @@
    "researchStatus": null,
    "firstJob": null,
    "verification": "unverified",
-   "review": null
+   "review": {
+    "status": "confirmed-faculty",
+    "checkedAt": "2026-10-16",
+    "reason": "His Clemson business profile shows Professor in the John E. Walker Department of Economics, with education 'Ph.D. Economics, University of Chicago 2009'. Economics, not operations.",
+    "sources": [
+     {
+      "url": "https://www.clemson.edu/business/about/profiles/CGORRY",
+      "title": "Aspen Gorry, Clemson Wilbur O. and Ann Powers College of Business profile"
+     }
+    ],
+    "profileUrl": "https://www.clemson.edu/business/about/profiles/CGORRY",
+    "titleConfirmed": "Professor",
+    "areaConfirmed": "John E. Walker Department of Economics",
+    "phdInstitution": "University of Chicago",
+    "phdYear": 2009,
+    "phdSourceUrl": "https://www.clemson.edu/business/about/profiles/CGORRY",
+    "omListFacultyId": null,
+    "note": null
+   }
   },
   {
    "id": "roster:clemson-university:athena-russell",
@@ -8081,7 +8770,29 @@
    "researchStatus": null,
    "firstJob": null,
    "verification": "unverified",
-   "review": null
+   "review": {
+    "status": "confirmed-faculty",
+    "checkedAt": "2026-10-16",
+    "reason": "Her Clemson business profile shows Lecturer, Finance, with education 'M.Sc Finance, University of Oregon 2019' and a B.A. in Industrial Engineering (Amirkabir University of Technology 2014), no doctorate; the college directory lists her as Lecturer in the Department of Finance. Finance, not operations.",
+    "sources": [
+     {
+      "url": "https://www.clemson.edu/business/about/profiles/aamirta",
+      "title": "Atoosa Amirtash, Clemson Wilbur O. and Ann Powers College of Business profile"
+     },
+     {
+      "url": "https://www.clemson.edu/business/about/directory.html",
+      "title": "College Directory, Wilbur O. and Ann Powers College of Business, Clemson University"
+     }
+    ],
+    "profileUrl": "https://www.clemson.edu/business/about/profiles/aamirta",
+    "titleConfirmed": "Lecturer",
+    "areaConfirmed": "Department of Finance",
+    "phdInstitution": null,
+    "phdYear": null,
+    "phdSourceUrl": null,
+    "omListFacultyId": null,
+    "note": null
+   }
   },
   {
    "id": "roster:clemson-university:avery-williams",
@@ -8143,7 +8854,29 @@
    "researchStatus": null,
    "firstJob": null,
    "verification": "unverified",
-   "review": null
+   "review": {
+    "status": "confirmed-faculty",
+    "checkedAt": "2026-10-16",
+    "reason": "His Clemson business profile shows Associate Professor (college only), with education 'Ph.D. Accounting, Florida Atlantic University 2018'; the college directory still lists him as Assistant Professor in the School of Accountancy, so the rank differs between the two pages. Accounting, not operations.",
+    "sources": [
+     {
+      "url": "https://www.clemson.edu/business/about/profiles/bmammad",
+      "title": "Babak Mammadov, Clemson Wilbur O. and Ann Powers College of Business profile"
+     },
+     {
+      "url": "https://www.clemson.edu/business/about/directory.html",
+      "title": "College Directory, Wilbur O. and Ann Powers College of Business, Clemson University"
+     }
+    ],
+    "profileUrl": "https://www.clemson.edu/business/about/profiles/bmammad",
+    "titleConfirmed": "Associate Professor",
+    "areaConfirmed": "School of Accountancy",
+    "phdInstitution": "Florida Atlantic University",
+    "phdYear": 2018,
+    "phdSourceUrl": "https://www.clemson.edu/business/about/profiles/bmammad",
+    "omListFacultyId": null,
+    "note": null
+   }
   },
   {
    "id": "roster:clemson-university:barry-cook",
@@ -8335,7 +9068,29 @@
    "researchStatus": null,
    "firstJob": null,
    "verification": "unverified",
-   "review": null
+   "review": {
+    "status": "confirmed-faculty",
+    "checkedAt": "2026-10-16",
+    "reason": "Her Clemson business profile shows Principal Lecturer; the bio says she became a Principal Lecturer in the Department of Management in 2024, and education lists 'Ph.D. Industrial Engineering, Clemson University 2009'. The college directory still shows Senior Lecturer, Department of Management.",
+    "sources": [
+     {
+      "url": "https://www.clemson.edu/business/about/profiles/BETHY",
+      "title": "Beth Yoder, Clemson Wilbur O. and Ann Powers College of Business profile"
+     },
+     {
+      "url": "https://www.clemson.edu/business/about/directory.html",
+      "title": "College Directory, Wilbur O. and Ann Powers College of Business, Clemson University"
+     }
+    ],
+    "profileUrl": "https://www.clemson.edu/business/about/profiles/BETHY",
+    "titleConfirmed": "Principal Lecturer",
+    "areaConfirmed": "Department of Management",
+    "phdInstitution": "Clemson University",
+    "phdYear": 2009,
+    "phdSourceUrl": "https://www.clemson.edu/business/about/profiles/BETHY",
+    "omListFacultyId": null,
+    "note": null
+   }
   },
   {
    "id": "roster:clemson-university:bill-kettinger",
@@ -8366,7 +9121,29 @@
    "researchStatus": null,
    "firstJob": null,
    "verification": "unverified",
-   "review": null
+   "review": {
+    "status": "confirmed-faculty",
+    "checkedAt": "2026-10-16",
+    "reason": "His Clemson business profile (William J. Kettinger) shows 'Professor, William S. Lee Distinguished Professor in Management Information Systems' in the Management Department, and its education lists a Ph.D. from the University of South Carolina, 1992 (plus an M.S., South Carolina 1991, and an MPA, Massachusetts 1979). The college directory lists him as Professor, Department of Management. Information systems, not operations.",
+    "sources": [
+     {
+      "url": "https://www.clemson.edu/business/about/profiles/wkttngr",
+      "title": "William J. Kettinger, Clemson Wilbur O. and Ann Powers College of Business profile"
+     },
+     {
+      "url": "https://www.clemson.edu/business/about/directory.html",
+      "title": "College Directory, Wilbur O. and Ann Powers College of Business, Clemson University"
+     }
+    ],
+    "profileUrl": "https://www.clemson.edu/business/about/profiles/wkttngr",
+    "titleConfirmed": "Professor, William S. Lee Distinguished Professor in Management Information Systems",
+    "areaConfirmed": "Department of Management",
+    "phdInstitution": "University of South Carolina",
+    "phdYear": 1992,
+    "phdSourceUrl": "https://www.clemson.edu/business/about/profiles/wkttngr",
+    "omListFacultyId": null,
+    "note": null
+   }
   },
   {
    "id": "roster:clemson-university:bill-tumblin",
@@ -8397,7 +9174,29 @@
    "researchStatus": null,
    "firstJob": null,
    "verification": "unverified",
-   "review": null
+   "review": {
+    "status": "confirmed-faculty",
+    "checkedAt": "2026-10-16",
+    "reason": "His Clemson business profile shows Principal Lecturer (college only), with education MS Industrial Management (Clemson 1989) and BS Computer Engineering (Clemson 1988), no doctorate; the college directory lists him as Senior Lecturer in the Business Professionalism Curriculum.",
+    "sources": [
+     {
+      "url": "https://www.clemson.edu/business/about/profiles/wet2",
+      "title": "Bill Tumblin, Clemson Wilbur O. and Ann Powers College of Business profile"
+     },
+     {
+      "url": "https://www.clemson.edu/business/about/directory.html",
+      "title": "College Directory, Wilbur O. and Ann Powers College of Business, Clemson University"
+     }
+    ],
+    "profileUrl": "https://www.clemson.edu/business/about/profiles/wet2",
+    "titleConfirmed": "Principal Lecturer",
+    "areaConfirmed": "Business Professionalism Curriculum",
+    "phdInstitution": null,
+    "phdYear": null,
+    "phdSourceUrl": null,
+    "omListFacultyId": null,
+    "note": null
+   }
   },
   {
    "id": "roster:clemson-university:blerina-bela-zykaj",
@@ -8428,7 +9227,29 @@
    "researchStatus": null,
    "firstJob": null,
    "verification": "unverified",
-   "review": null
+   "review": {
+    "status": "confirmed-faculty",
+    "checkedAt": "2026-10-16",
+    "reason": "Her Clemson business profile shows Associate Professor (the text calls her an Associate Professor of Finance), with education 'Ph.D. Finance, Washington State University, 2011'; the college directory lists her under the Department of Finance. Finance, not operations.",
+    "sources": [
+     {
+      "url": "https://www.clemson.edu/business/about/profiles/BZYKAJ",
+      "title": "Blerina Bela Zykaj, Clemson Wilbur O. and Ann Powers College of Business profile"
+     },
+     {
+      "url": "https://www.clemson.edu/business/about/directory.html",
+      "title": "College Directory, Wilbur O. and Ann Powers College of Business, Clemson University"
+     }
+    ],
+    "profileUrl": "https://www.clemson.edu/business/about/profiles/BZYKAJ",
+    "titleConfirmed": "Associate Professor",
+    "areaConfirmed": "Department of Finance",
+    "phdInstitution": "Washington State University",
+    "phdYear": 2011,
+    "phdSourceUrl": "https://www.clemson.edu/business/about/profiles/BZYKAJ",
+    "omListFacultyId": null,
+    "note": null
+   }
   },
   {
    "id": "roster:clemson-university:bobby-congdon",
@@ -8459,7 +9280,29 @@
    "researchStatus": null,
    "firstJob": null,
    "verification": "unverified",
-   "review": null
+   "review": {
+    "status": "confirmed-faculty",
+    "checkedAt": "2026-10-16",
+    "reason": "His Clemson business profile shows Clinical Assistant Professor and Internship Coordinator, with education BS Graphic Communications (Clemson 2002), no doctorate; the college directory lists him as Adjunct Lecturer in the Department of Graphic Communications, so the title differs between pages. Graphic communications, not operations.",
+    "sources": [
+     {
+      "url": "https://www.clemson.edu/business/about/profiles/rcongdo",
+      "title": "Bobby Congdon, Clemson Wilbur O. and Ann Powers College of Business profile"
+     },
+     {
+      "url": "https://www.clemson.edu/business/about/directory.html",
+      "title": "College Directory, Wilbur O. and Ann Powers College of Business, Clemson University"
+     }
+    ],
+    "profileUrl": "https://www.clemson.edu/business/about/profiles/rcongdo",
+    "titleConfirmed": "Clinical Assistant Professor, Internship Coordinator",
+    "areaConfirmed": "Department of Graphic Communications",
+    "phdInstitution": null,
+    "phdYear": null,
+    "phdSourceUrl": null,
+    "omListFacultyId": null,
+    "note": null
+   }
   },
   {
    "id": "roster:clemson-university:bobby-couch",
@@ -8490,7 +9333,29 @@
    "researchStatus": null,
    "firstJob": null,
    "verification": "unverified",
-   "review": null
+   "review": {
+    "status": "confirmed-faculty",
+    "checkedAt": "2026-10-16",
+    "reason": "His profile page (profiles/jcouch) loads but is an empty template with no name, title or education. The college directory lists Bobby Couch as Professor of Practice in the Department of Management, which is the source of the title recorded here. No doctorate is stated anywhere opened.",
+    "sources": [
+     {
+      "url": "https://www.clemson.edu/business/about/profiles/jcouch",
+      "title": "Clemson business profile page for jcouch (empty template)"
+     },
+     {
+      "url": "https://www.clemson.edu/business/about/directory.html",
+      "title": "College Directory, Wilbur O. and Ann Powers College of Business, Clemson University"
+     }
+    ],
+    "profileUrl": "https://www.clemson.edu/business/about/profiles/jcouch",
+    "titleConfirmed": "Professor of Practice",
+    "areaConfirmed": "Department of Management",
+    "phdInstitution": null,
+    "phdYear": null,
+    "phdSourceUrl": null,
+    "omListFacultyId": null,
+    "note": null
+   }
   },
   {
    "id": "roster:clemson-university:brandon-lockhart",
