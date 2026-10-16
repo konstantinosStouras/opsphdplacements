@@ -1,5 +1,6 @@
 import {normalize,filterRecords,groupCounts,csv,validateDataset,isSourceUrl} from './model.js';
 import {renderMap} from './map.js';
+import {renderUniversities} from './universities.js';
 import {getIndex,coverageLede,renderCoverageYears,renderTrends as renderInsightTrends,renderProfile as renderInsightProfile,presetProfile,renderAvailability} from './insights.js';
 const $=s=>document.querySelector(s), fmt=n=>n.toLocaleString('en-GB');
 const el=(tag,text,cls)=>{const e=document.createElement(tag);if(text!==undefined)e.textContent=text;if(cls)e.className=cls;return e;};
@@ -91,3 +92,4 @@ for(const [button,target,label] of [['copy-citation','citation','Reference'],['c
 updateCitation();
 init();
 loadPrograms();
+renderUniversities(document.querySelector('#universities'),{openInstitution:name=>openInstitution(name)});

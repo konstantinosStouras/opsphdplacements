@@ -6,9 +6,9 @@ See [RESEARCH-STATUS.md](RESEARCH-STATUS.md) for generated counts. This checklis
 
 ## Current research
 
-Position after the fourth 16 October 2026 integration (published ledger): 826 verified, 1,102 unresolved, 220 pending and 1 not-yet-completed PhD, of 2,149. Remaining first-pass reviews by original shard (faculty index modulo 3): **A 220, B 0, C 0**. Two shard A round-2 proposals (chunks r2-1 and r2-3, 80 people) were still being researched at the last integration. Next concrete item: integrate them, then finish shard A in batches of about 40 per agent with at most three agents per session.
+Position after the fifth 16 October 2026 integration (published ledger): 842 verified, 1,126 unresolved, 180 pending and 1 not-yet-completed PhD, of 2,149. Remaining first-pass reviews by original shard (faculty index modulo 3): **A 180, B 0, C 0**. Shard A round-2 chunk r2-1 (40 people, 16 reviewed so far) was still being researched at the last integration. Next concrete item: integrate it, then finish shard A in batches of about 40 per agent with at most three agents per session.
 
-- [ ] Individually review every pending imported profile (220 left; all in shard A). Do not bulk-label a retrieval as a review.
+- [ ] Individually review every pending imported profile (180 left; all in shard A). Do not bulk-label a retrieval as a review.
 - [ ] Finish the audit of destination-only placement tables for omitted postdocs and earlier industry jobs; correct or downgrade unsupported first-job claims.
 - [ ] Revisit unresolved cases using the specific gap recorded in the ledger. Separate ambiguous within-year chronology, missing degree completion, wrong-person matches and inaccessible evidence.
 - [ ] Preserve independent field-level sources for degree dates, degree institutions, employer, role and job dates; older first-placement records often have a shared source list and review date.
@@ -17,7 +17,8 @@ Position after the fourth 16 October 2026 integration (published ledger): 826 ve
 
 - [x] Import the Operations Academia universities directory as the first database, `data/universities.json` (16 October 2026): 656 universities, 1,133 department rows, 40 countries; 210 linked to PhD institutions in the people database (200 exact names, 4 shared Wikidata items, 6 campus qualifiers).
 - [ ] Review the links between the two databases: the 6 campus-qualifier links, any Wikidata links added by `node scripts/geocode-institutions.mjs universities`, and the 446 directory universities with no link (most have no one in the people database; some are spelling differences such as abbreviations in brackets). Add the review outcome to the import script's rules rather than editing the file.
-- [ ] Show database 1 on the website (universities, departments, countries, which also appear as PhD institutions) and let the program register cite it as the discovery source for each program.
+- [x] Show database 1 on the website: the Universities section lists every directory university with its departments, country, link to the people database and sources, with search, country and link filters and a by-country chart (16 October 2026).
+- [ ] Let the program register cite the universities database as the discovery source for each program, and add a doctoral-provision flag to the universities database once a program is verified.
 - [ ] Define the merged institution entity (Wikidata-keyed, with aliases, departments, graduates and programs) and the update path so that a change in either source reaches one record.
 
 - [ ] Expand beyond the initial 13 program records. Verify candidates from Operations Academia, university catalogs, historical dissertation institutions and discipline associations.

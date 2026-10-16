@@ -56,3 +56,8 @@ GitHub commit `9fbf00d` was discovered during this upload and preserved. Current
 
 - Shard A round 2, chunk 2 (40 people, 17 verified, 23 unresolved) integrated after one integrator downgrade (Marianne Jahre: internal promotion at the pre-degree employer is not a first new job). Two shard C records (Joern Meissner, Ilkka Leppänen) relabelled from other-academic to tenure-track under the new lectureship rule. Published totals: 826 verified, 1,102 unresolved, 220 pending, 1 not-yet-completed. Chunks r2-1 and r2-3 (80 people) were still running.
 - The Operations Academia directory was imported as `data/universities.json` (database 1) and linked to the people database by name and Wikidata item; the website does not show it yet.
+
+### Fifth integration, later on 16 October 2026
+
+- Shard A round 2, chunk 3 (40 people, 16 verified after one integrator downgrade, 24 unresolved) integrated; two integrator relabels (Stefan Minner: postdoc; Ickhyun Nam: rank at start left null). Published totals: 842 verified, 1,126 unresolved, 180 pending, 1 not-yet-completed. Chunk r2-1 was still running with 16 of 40 people saved.
+- The Universities section now shows database 1 on the site; the Wikidata pass over the directory names (`node scripts/geocode-institutions.mjs universities`) was still running and will add links when the import is re-run.
