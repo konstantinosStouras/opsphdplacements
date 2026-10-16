@@ -32,9 +32,9 @@
     "student": 25,
     "postdoc": 7
    },
-   "reviewed": 190,
+   "reviewed": 200,
    "reviewOutcomes": {
-    "confirmed-faculty": 178,
+    "confirmed-faculty": 188,
     "not-listed": 5,
     "extraction-noise": 5,
     "unresolved": 2
@@ -2948,7 +2948,7 @@
    "listed": 43,
    "omList": 0,
    "unverified": 43,
-   "reviewed": 0
+   "reviewed": 3
   },
   {
    "universityId": "concordia-university",
@@ -3084,7 +3084,7 @@
    "listed": 28,
    "omList": 6,
    "unverified": 22,
-   "reviewed": 11
+   "reviewed": 13
   },
   {
    "universityId": "university-of-kentucky",
@@ -3100,7 +3100,7 @@
    "listed": 26,
    "omList": 16,
    "unverified": 10,
-   "reviewed": 0
+   "reviewed": 5
   },
   {
    "universityId": "emory-university",
@@ -61631,7 +61631,7 @@
    "review": {
     "status": "confirmed-faculty",
     "checkedAt": "2026-10-16",
-    "reason": "McCormick faculty directory profile lists him as Assistant Professor of Industrial Engineering and Management Sciences and Mechanical Engineering; its Education section names only institutions (University of Michigan, Ann Arbor; Peking University) without degrees or years. A March 2025 IEMS news article announcing his hire (joining fall 2025) describes him as 'currently a PhD candidate in the department of industrial and operations engineering at the University of Michigan', so no opened page states a completed doctorate and the fields are left null.",
+    "reason": "McCormick faculty directory profile lists him as Assistant Professor of Industrial Engineering and Management Sciences and Mechanical Engineering; its Education section names only institutions (University of Michigan, Ann Arbor; Peking University) without degrees or years. A March 2025 IEMS news article announcing his hire (joining fall 2025) describes him as 'currently a PhD candidate in the department of industrial and operations engineering at the University of Michigan'; a University of Michigan events listing for his IOE PhD defense surfaced in search but returned HTTP 403, so no opened page states a completed doctorate and the fields are left null.",
     "sources": [
      {
       "url": "https://www.mccormick.northwestern.edu/research-faculty/directory/profiles/shi-naichen.html",
@@ -61640,6 +61640,10 @@
      {
       "url": "https://www.mccormick.northwestern.edu/industrial/news-events/news/articles/2025/industrial-engineering-welcomes-two-assistant-professors.html",
       "title": "Industrial Engineering Welcomes Two Assistant Professors (Northwestern IEMS news, March 2025)"
+     },
+     {
+      "url": "https://events.umich.edu/event/133312",
+      "title": "University of Michigan events listing for Naichen Shi's IOE PhD defense (fetch refused, HTTP 403)"
      }
     ],
     "profileUrl": "https://www.mccormick.northwestern.edu/research-faculty/directory/profiles/shi-naichen.html",
@@ -64112,11 +64116,15 @@
    "review": {
     "status": "confirmed-faculty",
     "checkedAt": "2026-10-16",
-    "reason": "Rice Business profile lists him as Lecturer in Operations Management (field of interest Operations Management); the page has no Education section and the biography uses 'Dr.' without naming a doctorate institution, and a web search found no page stating it.",
+    "reason": "Rice Business profile lists him as Lecturer in Operations Management (field of interest Operations Management); neither it nor his Rice Online MBA faculty page has an Education section, both use 'Dr.' without naming a doctorate institution, and two web searches found no page stating it.",
     "sources": [
      {
       "url": "https://business.rice.edu/person/christopher-burke",
       "title": "Christopher Burke, Rice Business faculty profile"
+     },
+     {
+      "url": "https://onlinebusiness.rice.edu/mba/faculty/christopher-burke/",
+      "title": "Christopher Burke, Rice Business Online MBA faculty page"
      }
     ],
     "profileUrl": "https://business.rice.edu/person/christopher-burke",
@@ -64450,7 +64458,7 @@
    "review": {
     "status": "confirmed-faculty",
     "checkedAt": "2026-10-16",
-    "reason": "Rice Business profile lists him as Lecturer in Operations Management (field of interest Operations Management, office in Virani Hall); the page has no Education section and names no degrees, so the doctorate is not recorded.",
+    "reason": "Rice Business profile lists him as Lecturer in Operations Management (field of interest Operations Management, office in Virani Hall); the page has no Education section and names no degrees. Two web searches found only Rice course listings (statistics and business analytics courses, one under the name Hamidieh, Kamal) and no page stating his doctorate, and a guessed Rice Online MBA faculty URL returned 404, so the doctorate is not recorded.",
     "sources": [
      {
       "url": "https://business.rice.edu/person/kam-hamidieh",
@@ -64758,11 +64766,19 @@
    "review": {
     "status": "confirmed-faculty",
     "checkedAt": "2026-10-16",
-    "reason": "Rice Business profile header lists him as Lecturer in Operations Management under the Faculty department; the biography names him Qing (Ray) Cao, Ph.D., and describes him as UHD Distinguished Faculty and Petroleum & Land Management Endowed Professor at the University of Houston-Downtown and formerly a full professor at Texas Tech, so the Rice lecturer role is secondary to a primary appointment elsewhere. The page names no doctorate institution or year.",
+    "reason": "Rice Business profile header lists him as Lecturer in Operations Management under the Faculty department; the biography names him Qing (Ray) Cao, Ph.D., and describes him as UHD Distinguished Faculty and Petroleum & Land Management Endowed Professor at the University of Houston-Downtown and formerly a full professor at Texas Tech, so the Rice lecturer role is secondary to a primary appointment elsewhere. The UHD General Business, Marketing and Supply Chain Management faculty page lists 'Dr. Ray Qing Cao, Professor' with no degree lines, and his linked UHD faculty profile page holds only the heading 'Ray Qing Cao Faculty Profile' and a placeholder photo; no opened page names the doctorate institution or year.",
     "sources": [
      {
       "url": "https://business.rice.edu/person/ray-cao",
       "title": "Ray Cao, Rice Business faculty profile"
+     },
+     {
+      "url": "https://www.uhd.edu/academics/business/gmsc/general-business-marketing-and-supply-chain-management-faculty.aspx",
+      "title": "General Business, Marketing, and Supply Chain Management Faculty, University of Houston-Downtown"
+     },
+     {
+      "url": "https://www.uhd.edu/faculty/caoq.html",
+      "title": "Ray Qing Cao Faculty Profile, University of Houston-Downtown (name-only placeholder page)"
      }
     ],
     "profileUrl": "https://business.rice.edu/person/ray-cao",
@@ -65048,7 +65064,25 @@
    "researchStatus": null,
    "firstJob": null,
    "verification": "unverified",
-   "review": null
+   "review": {
+    "status": "confirmed-faculty",
+    "checkedAt": "2026-10-16",
+    "reason": "Rice Business profile lists her as Lecturer in Operations Management (field of interest Operations Management); the biography states degrees in Mechanical Engineering from Texas A&M University and an Executive MBA from Rice University, with no years, and no doctorate is listed.",
+    "sources": [
+     {
+      "url": "https://business.rice.edu/person/valerie-walker-0",
+      "title": "Valerie Walker, Rice Business faculty profile"
+     }
+    ],
+    "profileUrl": "https://business.rice.edu/person/valerie-walker-0",
+    "titleConfirmed": "Lecturer in Operations Management",
+    "areaConfirmed": "Operations Management",
+    "phdInstitution": null,
+    "phdYear": null,
+    "phdSourceUrl": null,
+    "omListFacultyId": null,
+    "note": null
+   }
   },
   {
    "id": "roster:rice-university:vicki-jackman",
@@ -65079,7 +65113,25 @@
    "researchStatus": null,
    "firstJob": null,
    "verification": "unverified",
-   "review": null
+   "review": {
+    "status": "confirmed-faculty",
+    "checkedAt": "2026-10-16",
+    "reason": "Rice Business profile lists her as Lecturer in Operations Management (field of interest Operations Management); the biography states an MBA from Rice University, a master's degree in health from Texas State University and a B.S. in health from Texas A&M University, with no years, and no doctorate is listed. The biography also says she is currently senior director of human resources at KB Home, so the lecturer role is held alongside a non-academic job.",
+    "sources": [
+     {
+      "url": "https://business.rice.edu/person/vicki-jackman",
+      "title": "Vicki Jackman, Rice Business faculty profile"
+     }
+    ],
+    "profileUrl": "https://business.rice.edu/person/vicki-jackman",
+    "titleConfirmed": "Lecturer in Operations Management",
+    "areaConfirmed": "Operations Management",
+    "phdInstitution": null,
+    "phdYear": null,
+    "phdSourceUrl": null,
+    "omListFacultyId": null,
+    "note": null
+   }
   },
   {
    "id": "roster:rice-university:yiangos-papanastasiou",
@@ -66900,7 +66952,25 @@
    "researchStatus": null,
    "firstJob": null,
    "verification": "unverified",
-   "review": null
+   "review": {
+    "status": "confirmed-faculty",
+    "checkedAt": "2026-10-16",
+    "reason": "SMU faculty directory profile lists her as Assistant Professor of Operations Management (Education) at the Lee Kong Chian School of Business, discipline Operations Management; Education states 2014 PhD. in Technology and Operations Management, INSEAD.",
+    "sources": [
+     {
+      "url": "https://faculty.smu.edu.sg/profile/buket-avci-1261",
+      "title": "Buket Avci, Singapore Management University faculty profile"
+     }
+    ],
+    "profileUrl": "https://faculty.smu.edu.sg/profile/buket-avci-1261",
+    "titleConfirmed": "Assistant Professor of Operations Management (Education)",
+    "areaConfirmed": "Operations Management, Lee Kong Chian School of Business",
+    "phdInstitution": "INSEAD",
+    "phdYear": 2014,
+    "phdSourceUrl": "https://faculty.smu.edu.sg/profile/buket-avci-1261",
+    "omListFacultyId": null,
+    "note": null
+   }
   },
   {
    "id": "roster:singapore-management-university-smu:daniel-zheng-zhichao",
@@ -67052,7 +67122,25 @@
    "researchStatus": null,
    "firstJob": null,
    "verification": "unverified",
-   "review": null
+   "review": {
+    "status": "confirmed-faculty",
+    "checkedAt": "2026-10-16",
+    "reason": "SMU faculty directory profile (Joyce LOW Mei Wan) lists her as Assistant Professor of Operations Management (Education) under LKCSB Full-time Faculty, discipline Operations Management, with a previous post as Senior Lecturer of Operations Management (Aug 2012 to Jul 2019); Education states 2004 - 2009 Doctor of Philosophy, National University of Singapore, Department of Industrial Systems Engineering and Management, so the completion year recorded is the end of that range. Integrator: the award year is left null because the page gives a study period (2004-2009), not a conferral year.",
+    "sources": [
+     {
+      "url": "https://faculty.smu.edu.sg/profile/joyce-low-mei-wan-1826",
+      "title": "Joyce Low Mei Wan, Singapore Management University faculty profile"
+     }
+    ],
+    "profileUrl": "https://faculty.smu.edu.sg/profile/joyce-low-mei-wan-1826",
+    "titleConfirmed": "Assistant Professor of Operations Management (Education)",
+    "areaConfirmed": "Operations Management, Lee Kong Chian School of Business",
+    "phdInstitution": "National University of Singapore",
+    "phdYear": null,
+    "phdSourceUrl": "https://faculty.smu.edu.sg/profile/joyce-low-mei-wan-1826",
+    "omListFacultyId": null,
+    "note": null
+   }
   },
   {
    "id": "roster:singapore-management-university-smu:kwan-eng-wee",
@@ -67083,7 +67171,25 @@
    "researchStatus": null,
    "firstJob": null,
    "verification": "unverified",
-   "review": null
+   "review": {
+    "status": "confirmed-faculty",
+    "checkedAt": "2026-10-16",
+    "reason": "SMU faculty directory profile (WEE Kwan Eng) lists him as Senior Lecturer of Operations Management (since 2012) under LKCSB Full-time Faculty, discipline Operations Management; Education states 2000 Ph.D. in Operations Management, Krannert Graduate School of Management, Purdue University.",
+    "sources": [
+     {
+      "url": "https://faculty.smu.edu.sg/profile/wee-kwan-eng-1581",
+      "title": "Wee Kwan Eng, Singapore Management University faculty profile"
+     }
+    ],
+    "profileUrl": "https://faculty.smu.edu.sg/profile/wee-kwan-eng-1581",
+    "titleConfirmed": "Senior Lecturer of Operations Management",
+    "areaConfirmed": "Operations Management, Lee Kong Chian School of Business",
+    "phdInstitution": "Krannert Graduate School of Management, Purdue University",
+    "phdYear": 2000,
+    "phdSourceUrl": "https://faculty.smu.edu.sg/profile/wee-kwan-eng-1581",
+    "omListFacultyId": null,
+    "note": null
+   }
   },
   {
    "id": "roster:singapore-management-university-smu:leon-xu-liang",
@@ -67156,7 +67262,25 @@
    "researchStatus": null,
    "firstJob": null,
    "verification": "unverified",
-   "review": null
+   "review": {
+    "status": "confirmed-faculty",
+    "checkedAt": "2026-10-16",
+    "reason": "SMU faculty directory profile (DEMEESTER Lieven) lists him as Associate Professor of Operations Management (Practice) under LKCSB Full-time Faculty, discipline Operations Management; Education states 1995 Ph.D., Operations and Technology Management, Anderson School of Management, University of California, Los Angeles.",
+    "sources": [
+     {
+      "url": "https://faculty.smu.edu.sg/profile/demeester-lieven-1186",
+      "title": "Lieven Demeester, Singapore Management University faculty profile"
+     }
+    ],
+    "profileUrl": "https://faculty.smu.edu.sg/profile/demeester-lieven-1186",
+    "titleConfirmed": "Associate Professor of Operations Management (Practice)",
+    "areaConfirmed": "Operations Management, Lee Kong Chian School of Business",
+    "phdInstitution": "Anderson School of Management, University of California, Los Angeles",
+    "phdYear": 1995,
+    "phdSourceUrl": "https://faculty.smu.edu.sg/profile/demeester-lieven-1186",
+    "omListFacultyId": null,
+    "note": null
+   }
   },
   {
    "id": "roster:singapore-management-university-smu:marcus-ang",
@@ -67187,7 +67311,25 @@
    "researchStatus": null,
    "firstJob": null,
    "verification": "unverified",
-   "review": null
+   "review": {
+    "status": "confirmed-faculty",
+    "checkedAt": "2026-10-16",
+    "reason": "SMU faculty directory profile (Marcus ANG Teck Meng) lists him as Associate Professor of Operations Management (Education), Academic Director, ITI, under LKCSB Full-time Faculty, discipline Operations Management; Education states 2008 Ph.D., National University of Singapore (field not stated), after an S.M. from the Singapore-MIT Alliance under NUS (2003).",
+    "sources": [
+     {
+      "url": "https://faculty.smu.edu.sg/profile/marcus-ang-teck-meng-6651",
+      "title": "Marcus Ang Teck Meng, Singapore Management University faculty profile"
+     }
+    ],
+    "profileUrl": "https://faculty.smu.edu.sg/profile/marcus-ang-teck-meng-6651",
+    "titleConfirmed": "Associate Professor of Operations Management (Education)",
+    "areaConfirmed": "Operations Management, Lee Kong Chian School of Business",
+    "phdInstitution": "National University of Singapore",
+    "phdYear": 2008,
+    "phdSourceUrl": "https://faculty.smu.edu.sg/profile/marcus-ang-teck-meng-6651",
+    "omListFacultyId": null,
+    "note": null
+   }
   },
   {
    "id": "roster:singapore-management-university-smu:meichun-lin",
@@ -72371,7 +72513,25 @@
    "researchStatus": null,
    "firstJob": null,
    "verification": "unverified",
-   "review": null
+   "review": {
+    "status": "confirmed-faculty",
+    "checkedAt": "2026-10-16",
+    "reason": "Smeal College of Business directory profile (Norman A. Aggon) lists him as Associate Teaching Professor in Supply Chain Management in the Supply Chain & Information Systems department, with a truncated second role string 'Asst/Assoc Department Head of'; Education states only MBA, James Madison University, 1981, so no doctorate is listed.",
+    "sources": [
+     {
+      "url": "https://directory.smeal.psu.edu/nxa12",
+      "title": "Norman A. Aggon, Penn State Smeal College of Business directory profile"
+     }
+    ],
+    "profileUrl": "https://directory.smeal.psu.edu/nxa12",
+    "titleConfirmed": "Associate Teaching Professor in Supply Chain Management, Asst/Assoc Department Head of",
+    "areaConfirmed": "Supply Chain & Information Systems",
+    "phdInstitution": null,
+    "phdYear": null,
+    "phdSourceUrl": null,
+    "omListFacultyId": null,
+    "note": null
+   }
   },
   {
    "id": "roster:the-pennsylvania-state-university:alptekinoglu-aydin",
@@ -72402,7 +72562,25 @@
    "researchStatus": null,
    "firstJob": null,
    "verification": "unverified",
-   "review": null
+   "review": {
+    "status": "confirmed-faculty",
+    "checkedAt": "2026-10-16",
+    "reason": "Smeal College of Business research faculty directory profile lists him as Professor of Supply Chain Management in the Supply Chain & Information Systems department; Education states Ph D, Operations Management, UCLA, 2004 (the biography names the UCLA Anderson School of Management).",
+    "sources": [
+     {
+      "url": "https://directory.smeal.psu.edu/axa60",
+      "title": "Aydin Alptekinoglu, Penn State Smeal College of Business directory profile"
+     }
+    ],
+    "profileUrl": "https://directory.smeal.psu.edu/axa60",
+    "titleConfirmed": "Professor of Supply Chain Management",
+    "areaConfirmed": "Supply Chain & Information Systems",
+    "phdInstitution": "UCLA",
+    "phdYear": 2004,
+    "phdSourceUrl": "https://directory.smeal.psu.edu/axa60",
+    "omListFacultyId": null,
+    "note": null
+   }
   },
   {
    "id": "roster:the-pennsylvania-state-university:amaya-johanna",
@@ -72433,7 +72611,25 @@
    "researchStatus": null,
    "firstJob": null,
    "verification": "unverified",
-   "review": null
+   "review": {
+    "status": "confirmed-faculty",
+    "checkedAt": "2026-10-16",
+    "reason": "Smeal College of Business research faculty directory profile lists her as Assistant Professor in Supply Chain & Information Systems; Education states PhD, Transportation Engineering, Rensselaer Polytechnic Institute, 2016.",
+    "sources": [
+     {
+      "url": "https://directory.smeal.psu.edu/jpa5602",
+      "title": "Johanna Amaya, Penn State Smeal College of Business directory profile"
+     }
+    ],
+    "profileUrl": "https://directory.smeal.psu.edu/jpa5602",
+    "titleConfirmed": "Assistant Professor in Supply Chain & Information Systems",
+    "areaConfirmed": "Supply Chain & Information Systems",
+    "phdInstitution": "Rensselaer Polytechnic Institute",
+    "phdYear": 2016,
+    "phdSourceUrl": "https://directory.smeal.psu.edu/jpa5602",
+    "omListFacultyId": null,
+    "note": null
+   }
   },
   {
    "id": "roster:the-pennsylvania-state-university:bansal-saurabh",
