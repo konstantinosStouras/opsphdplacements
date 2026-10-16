@@ -8,6 +8,7 @@ An independent, static research directory for Operations Research, Operations Ma
 
 | Guide | Purpose |
 |---|---|
+| [PAUSED-HANDOFF.md](PAUSED-HANDOFF.md) | Pause state, saved unpublished findings and safe resumption instructions |
 | [AGENTS.md](AGENTS.md) | Entry instructions for models and research agents |
 | [CONTRIBUTING.md](CONTRIBUTING.md) | Evidence requirements, task ownership and submitting findings |
 | [WORKFLOW.md](WORKFLOW.md) | Research, integration, checks and publishing commands |

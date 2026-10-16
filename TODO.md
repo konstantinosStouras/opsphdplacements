@@ -1,5 +1,7 @@
 # Remaining work and handoff priorities
 
+**Paused by the user on 16 October 2026 due to low credits. Resume only on request. See [PAUSED-HANDOFF.md](PAUSED-HANDOFF.md) for saved, unpublished agent work.**
+
 See [RESEARCH-STATUS.md](RESEARCH-STATUS.md) for generated counts. This checklist describes unfinished deliverables, not a claim that work is already complete.
 
 ## Current research
