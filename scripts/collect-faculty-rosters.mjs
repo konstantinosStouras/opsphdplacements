@@ -11,7 +11,10 @@
 //
 // Usage: node scripts/collect-faculty-rosters.mjs fetch [--refresh] [--render]  download the pages into research/rosters/ (ignored)
 //        node scripts/collect-faculty-rosters.mjs build                          extract, match and write data/faculty-rosters.json
-//        node scripts/collect-faculty-rosters.mjs chunks [--size 40]             write research/rosters/chunk-N.json for reviewers
+//        node scripts/collect-faculty-rosters.mjs chunks [--size 40] [--start N] [--skip chunk.json]
+//                                                       write research/rosters/chunk-N.json for reviewers (from number N on,
+//                                                       leaving earlier files alone; --skip leaves out the people of a chunk
+//                                                       a reviewer is still working on)
 // --render re-fetches with a headless browser the pages that failed or listed nobody (needs playwright).
 import fs from 'node:fs';
 import path from 'node:path';
@@ -219,18 +222,19 @@ function buildRoster() {
 
 // Chunk files for reviewers: the unverified people, grouped by university, with what the page showed.
 function writeChunks() {
-  const roster = read('data/faculty-rosters.json'), size = Number(opt('--size', 40));
+  const roster = read('data/faculty-rosters.json'), size = Number(opt('--size', 40)), start = Number(opt('--start', 1));
+  const skip = new Set(args.flatMap((a, i) => (a === '--skip' ? JSON.parse(fs.readFileSync(path.resolve(root, args[i + 1]), 'utf8')).people.map(p => p.id) : [])));
   // Order of review: people whose listed title names an operations field first, then people on department
   // pages (at most 100 listed), then people on whole-college directories, which list every department;
   // within each group faculty by title first, then names without a title. Students and staff wait.
   const listedByUrl = new Map(roster.pages.map(p => [p.url, p.listed]));
   const OPS = /operation|supply|logistic|management science|decision science|analytics|production|industrial engineering|\bom\b|\bscm\b/i;
-  const todo = roster.records.filter(r => (r.verification === 'unverified' || r.verification === 'om-list-name-only' || r.omList?.match === 'ambiguous') && !r.review && ['faculty', 'untitled', 'unknown'].includes(r.listedRole));
+  const todo = roster.records.filter(r => (r.verification === 'unverified' || r.verification === 'om-list-name-only' || r.omList?.match === 'ambiguous') && !r.review && !skip.has(r.id) && ['faculty', 'untitled', 'unknown'].includes(r.listedRole));
   const group = r => (OPS.test(r.titleAsListed || '') ? 0 : Math.max(...r.facultyUrls.map(u => listedByUrl.get(u) || 0)) <= 100 ? 1 : 2);
   const rank = { faculty: 0, untitled: 1, unknown: 2 };
   todo.sort((a, b) => group(a) - group(b) || rank[a.listedRole] - rank[b.listedRole] || a.university.localeCompare(b.university) || a.name.localeCompare(b.name));
-  for (const f of fs.readdirSync(dir)) if (/^chunk-\d+\.json$/.test(f)) fs.unlinkSync(path.join(dir, f));
-  let n = 0;
+  for (const f of fs.readdirSync(dir)) { const m = /^chunk-(\d+)\.json$/.exec(f); if (m && Number(m[1]) >= start) fs.unlinkSync(path.join(dir, f)); }
+  let n = start - 1;
   for (let i = 0; i < todo.length; i += size) {
     n++;
     const people = todo.slice(i, i + size).map(r => ({ id: r.id, name: r.name, titleAsListed: r.titleAsListed, university: r.university, departments: r.departments.map(d => [d.school, d.department].filter(Boolean).join(' · ')), country: r.country, facultyUrl: r.facultyUrls[0], peopleListedOnPage: listedByUrl.get(r.facultyUrls[0]) || null, profileUrl: r.profileUrl, omListNameOnly: r.omList?.facultyId ? { facultyId: r.omList.facultyId, currentInstitution: r.omList.currentInstitution } : null, omListAmbiguous: r.omList?.ambiguous || null }));
