@@ -46,8 +46,11 @@ npm run check
 python scripts/test-research-schema.py
 python scripts/build-research-database.py
 node scripts/update-research-status.mjs
+node scripts/build-institutions.mjs
 node scripts/build.mjs
 ```
+
+`build-institutions.mjs` regenerates `data/institutions.json` and `data/employers.json` from the public files; `npm run check` fails when they are stale. When a merge adds a new verified PhD institution or employer name, also run `node scripts/geocode-institutions.mjs`, `node scripts/geocode-institutions.mjs employers`, `node scripts/fetch-institution-logos.mjs` and `node scripts/wikidata-countries.mjs` before building, so the new names get a location.
 
 The three saved agent result files, audit histories, scripts and source metadata are tracked under `research-handoff/` and available in a fresh clone. Their 1,661 reviews were already integrated in commit `9fbf00d`; do not merge them again blindly. Read `research-handoff/README.md` for evidence recovery and optional workbench restoration. Compare proposals against current public corrections before merging; full source documents remain excluded.
 

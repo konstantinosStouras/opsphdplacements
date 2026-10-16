@@ -27,7 +27,10 @@ async function api(params) {
   throw new Error('Wikidata kept refusing: ' + JSON.stringify(params));
 }
 
-const rows = mode === 'employers' ? JSON.parse(fs.readFileSync(path.join(root, 'data/placements.json'), 'utf8')).records : JSON.parse(fs.readFileSync(path.join(root, 'data/faculty.json'), 'utf8')).records;
+const placements = JSON.parse(fs.readFileSync(path.join(root, 'data/placements.json'), 'utf8')).records;
+const byId = new Map(placements.map(p => [p.facultyId, p]));
+// Institutions use the verified PhD institution where a review corrected the import, matching the site's index.
+const rows = mode === 'employers' ? placements : JSON.parse(fs.readFileSync(path.join(root, 'data/faculty.json'), 'utf8')).records.map(f => ({ ...f, phdInstitution: byId.get(f.id)?.phdInstitution || f.phdInstitution }));
 const field = mode === 'employers' ? 'employer' : 'phdInstitution';
 const counts = new Map();
 for (const f of rows) if (f[field]) counts.set(f[field], (counts.get(f[field]) || 0) + 1);

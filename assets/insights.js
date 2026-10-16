@@ -2,7 +2,7 @@
 // numbers and charts.js for the drawing. Nothing here infers a job: every chart counts verified
 // first jobs and shows the unresolved and not-yet-reviewed people beside them.
 import { bubbleGrid, columns, hbars, lines, rankedRows, tiles, fmt, pct, html } from './charts.js';
-import { CATEGORIES, CAT, STATUSES, STATUS, buildIndex, loadCountries, institutionMetrics, employerMetrics, inPeriod, periodLabel, fillPeriodSelect } from './analytics.js';
+import { CATEGORIES, CAT, STATUSES, STATUS, buildIndex, loadCountries, loadJson, institutionMetrics, employerMetrics, inPeriod, periodLabel, fillPeriodSelect } from './analytics.js';
 
 let index = null;
 export async function getIndex(state) {
@@ -307,4 +307,15 @@ function renderComparison({ controls, content }, idx, actions) {
     content.append(dest, html('p', 'source-stamp', 'Shares are shares of verified first jobs, so an institution with many unreviewed people can look different once its review is complete; the unresolved and not-yet-reviewed rows show how far each review has got.'));
   };
   draw();
+}
+
+/** Live data-availability sentence for the methodology section. */
+export async function renderAvailability(target, idx) {
+  const inst = new Set(idx.people.map(p => p.phdInstitution).filter(Boolean));
+  const verified = idx.people.filter(p => p.placement).length, unresolved = idx.people.filter(p => p.status === 'unresolved').length, notYet = idx.people.filter(p => p.status === 'not-yet-completed-phd').length;
+  const pending = idx.people.length - verified - unresolved - notYet;
+  const withStart = idx.people.filter(p => p.placement?.placementYear).length, withRole = idx.people.filter(p => p.placement?.position).length, typed = idx.people.filter(p => p.placement && p.placement.category !== 'unknown').length;
+  let located = '';
+  try { const [il, el] = await Promise.all([loadJson('data/institution-locations.json'), loadJson('data/employer-locations.json')]); located = ` ${fmt(il.metadata.mapped)} of ${fmt(il.metadata.total)} PhD institution names and ${fmt(el.metadata.mapped)} of ${fmt(el.metadata.total)} first-employer names are matched to a map location.`; } catch { /* optional files */ }
+  target.textContent = `Available now: ${fmt(idx.people.length)} people from ${fmt(inst.size)} PhD institutions, with ${fmt(verified)} verified first jobs (${pct(verified, idx.people.length)}), ${fmt(unresolved)} people researched but unresolved, ${fmt(pending)} not yet reviewed and ${fmt(notYet)} who have not completed the doctorate. Of the verified first jobs, ${fmt(withStart)} have a documented start year, ${fmt(withRole)} a documented role and ${fmt(typed)} a known type of appointment.${located}`;
 }

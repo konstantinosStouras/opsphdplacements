@@ -41,6 +41,9 @@ Position after the third 16 October 2026 integration (published ledger): 810 ver
 
 ## Database and website
 
+- [x] Rebuild the website around the Econ PhD Placements structure with plain SVG charts (16 October 2026): coverage map and by-year grid, trends (over time, by PhD institution, by field, top employers, directory counts), profiles (PhD institution, head-to-head comparison, employer, directory affiliation), explorer column filters and shareable URLs, a six-part methodology section with live availability counts, and derived institution and employer databases. Every share shown is a share of verified first jobs with unresolved and unreviewed counts beside it.
+- [ ] Map matching gaps: 12 PhD institution names and 63 first-employer names have no Wikidata match yet (ambiguous, renamed or absent items); they are counted on the map note and left unplaced. Review `research/geocode-cache.json` and `research/geocode-employers-cache.json` and add `rejected` notes or manual matches with a source.
+- [ ] Employer countries exist only for matched employers, so the "countries of first employers" panel undercounts; say so until matching is complete.
 - [x] Add an interactive world map of PhD institutions with icons, zoom, region tabs and click-through to the explorer (16 October 2026). 358 of 369 imported PhD institution names are placed; 11 are unmatched or ambiguous (for example "Ecole Polytechnique", Montréal or Palaiseau) and need a person-level check.
 - [x] Add static social-sharing metadata, a branded preview image, browser/mobile icons and reproducible asset checks; maintenance is documented in `SHARING.md`.
 

@@ -28,3 +28,11 @@ for(const p of placements){
  }
 }
 console.log('Every published placement matches its reviewed evidence record.');
+
+// Derived databases are regenerated from the public files; their totals must agree with them.
+for(const [file,field,expected,label] of [['institutions','people',faculty.filter(f=>f.phdInstitution||placements.find(p=>p.facultyId===f.id)?.phdInstitution).length,'people with a PhD institution'],['employers','verifiedFirstJobs',placements.length,'verified first jobs']]){
+ const url=new URL(`../data/${file}.json`,import.meta.url);if(!fs.existsSync(url))throw Error(`Missing derived database data/${file}.json; run node scripts/build-institutions.mjs`);
+ const data=JSON.parse(fs.readFileSync(url,'utf8'));const total=data.records.reduce((n,r)=>n+r[field],0);
+ if(data.metadata.recordCount!==data.records.length||total!==expected)throw Error(`data/${file}.json is stale (${total} ${label}, expected ${expected}); run node scripts/build-institutions.mjs`);
+}
+console.log('Derived institution and employer databases agree with the public datasets.');

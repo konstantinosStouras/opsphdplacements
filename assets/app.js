@@ -1,6 +1,6 @@
 import {normalize,filterRecords,groupCounts,csv,validateDataset,isSourceUrl} from './model.js';
 import {renderMap} from './map.js';
-import {getIndex,coverageLede,renderCoverageYears,renderTrends as renderInsightTrends,renderProfile as renderInsightProfile,presetProfile} from './insights.js';
+import {getIndex,coverageLede,renderCoverageYears,renderTrends as renderInsightTrends,renderProfile as renderInsightProfile,presetProfile,renderAvailability} from './insights.js';
 const $=s=>document.querySelector(s), fmt=n=>n.toLocaleString('en-GB');
 const el=(tag,text,cls)=>{const e=document.createElement(tag);if(text!==undefined)e.textContent=text;if(cls)e.className=cls;return e;};
 const state={faculty:[],placements:[],mode:'faculty',page:0,sort:'name',direction:1,coverage:'map',coverageToken:0,profile:'phd',trend:'evolution',directoryTrend:'phdYear',filtered:[],progress:null}, SIZE=25;
@@ -25,7 +25,7 @@ function bars(target,groups,{limit=15,chronological=false,total=null}={}){
  for(const[name,count]of shown){const row=el('div',undefined,'bar-row'),track=el('div',undefined,'bar-track'),fill=el('div',undefined,'bar-fill');fill.style.width=`${count/max*100}%`;track.append(fill);row.append(el('span',chronological && Number(name)>new Date().getFullYear()?name+' (future year in source)':name),track,el('span',fmt(count),'bar-value'));container.append(row);}target.append(container);if(rows.length>shown.length)target.append(el('p',`Showing the ${shown.length} largest of ${fmt(rows.length)} groups. Use the directory to inspect all records.`,'source-stamp'));if(total!==null)target.append(el('p',`${fmt(total)} source-listed profiles, including active, industry, retired and deceased entries. Counts describe this directory only.`,'source-stamp'));
 }
 function selectPhdInstitution(name,year){setMode('faculty');$('#phd').value=name;$('#year-from').value=year||'';$('#year-to').value=year||'';state.page=0;renderTable();location.hash='explorer';$('#explorer').scrollIntoView();}
-function renderLede(){getIndex(state).then(idx=>{$('#coverage-lede').textContent=coverageLede(idx);});}
+function renderLede(){getIndex(state).then(idx=>{$('#coverage-lede').textContent=coverageLede(idx);renderAvailability($('#availability-counts'),idx);});}
 document.addEventListener('countries-loaded',renderLede);
 function renderCoverage(){const token=++state.coverageToken,isCurrent=()=>token===state.coverageToken;if(state.coverage==='map'){renderMap($('#coverage-content'),state,{onSelect:selectPhdInstitution,isCurrent});return;}if(state.coverage==='years'){getIndex(state).then(idx=>{if(isCurrent())renderCoverageYears($('#coverage-content'),idx,{onSelect:selectPhdInstitution});});return;}const key={institutions:'institution',discipline:'discipline',year:'phdYear'}[state.coverage];bars($('#coverage-content'),groupCounts(state.faculty,key),{limit:state.coverage==='year'?0:15,chronological:state.coverage==='year',total:state.faculty.length});}
 const INSIGHT_PROFILES=new Set(['phd','compare','employer']);
