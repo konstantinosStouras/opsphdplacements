@@ -260,11 +260,13 @@ export async function renderMap(target, state, { onSelect, openProfile, isCurren
     for (const p of [...pts.slice(0, major), ...pts.slice(major)]) {
       if (count >= maxLabels) break;
       const text = shortName(p.n.name), w = ctx.measureText(text).width + 6, h = fontSize + 2;
-      for (const side of [1, -1]) {
-        const x = side > 0 ? p.x + p.r + 3 : p.x - p.r - 3 - w, y = p.y - h / 2, box = { x, y, w, h };
+      // Right of the circle, then left, below and above: the first spot with room wins.
+      const spots = [[p.x + p.r + 3, p.y - h / 2, 'start'], [p.x - p.r - 3 - w, p.y - h / 2, 'end'], [p.x - w / 2, p.y + p.r + 2, 'middle'], [p.x - w / 2, p.y - p.r - 2 - h, 'middle']];
+      for (const [x, y, anchor] of spots) {
+        const box = { x, y, w, h };
         if (x < 0 || x + w > W || y < 0 || y + h > H || hits(box)) continue;
         boxes.push(box); count++;
-        L.labels.append(el('text', { x: (side > 0 ? x : x + w).toFixed(1), y: (p.y + fontSize * 0.35).toFixed(1), 'text-anchor': side > 0 ? 'start' : 'end', 'font-size': fontSize }, text));
+        L.labels.append(el('text', { x: (anchor === 'start' ? x : anchor === 'end' ? x + w : x + w / 2).toFixed(1), y: (y + h / 2 + fontSize * 0.35).toFixed(1), 'text-anchor': anchor, 'font-size': fontSize }, text));
         break;
       }
     }
