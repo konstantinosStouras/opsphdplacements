@@ -60,3 +60,15 @@ Run a local static server against `_site` and check the changed website interact
 Commit only reviewed source files and public data. The existing GitHub Pages workflow deploys a push to `main` after validation. Publication must be within user authorization. Check the workflow result and the live page; a push alone does not establish deployment success. The project inherits `www.stouras.com` from the account site. Do not add a CNAME or change the separate personal-site repository.
 
 Record the deployed revision and unresolved work in a handoff. Use a new corrective commit for rollback; do not rewrite published history. No automatic research schedule is configured.
+
+## 7. Keep the documentation current
+
+Documentation maintenance is a standing user requirement. Before completing a batch, handing work to another model or publishing a release:
+
+- Update `TODO.md` with completed tasks, new evidence gaps, changed priorities and newly discovered pitfalls.
+- Update `RESEARCH-DESIGN.md` when population definitions, source interpretation or analysis conventions change. Record the reason for substantive changes.
+- Update `WORKFLOW.md`, `CONTRIBUTING.md`, `AGENTS.md` and `README.md` when commands, contracts, storage, collaboration rules or website capabilities change.
+- After integrating public data, regenerate `RESEARCH-STATUS.md` with `node scripts/update-research-status.mjs`. Its counts describe the public dataset snapshot; unmerged local research belongs in an explicitly labeled handoff, not those totals.
+- Check that remaining-work descriptions and completion claims agree across the affected documents. Preserve unresolved questions and useful decision history. Commit documentation alongside the relevant data/code changes.
+
+Only edit files affected by new information. Future agents should follow this maintenance step without needing a separate reminder. It does not imply an automatic scheduled update service.
