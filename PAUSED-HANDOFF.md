@@ -72,3 +72,9 @@ GitHub commit `9fbf00d` was discovered during this upload and preserved. Current
 - The two databases and the program register were merged into `data/entities.json` (868 organisations, 736 keyed by a Wikidata item, 177 in both databases, no conflicts), with a validator check that every PhD institution, directory university and first employer is attached exactly once. Each PhD institution and first-employer profile on the site now ends with the merged record.
 - Reviewing the merges that rest on a shared Wikidata item found wrong search results; nine corrections were recorded in `data/location-review.json` (see RESEARCH-DESIGN.md) and the derived files rebuilt. The other name-based matches remain unreviewed.
 - Spellings that differ only in accents, punctuation, spacing or case are now one organisation in the derived files and on the site (1 PhD institution, 11 employers and 11 directory names were affected). No research ledger data changed in this step.
+
+### Faculty rosters, later on 16 October 2026
+
+- At the user's request, the faculty pages linked from the universities database were read as a second source of people: `data/faculty-rosters.json` (3,577 listed people at 82 universities from the 90 pages that answered and could be read; 212 the same as an OM List profile at the same university, 3,335 unverified with no doctorate or first job known). The rules are in RESEARCH-DESIGN.md; the Universities section shows the counts per university.
+- A one-by-one verification was set up (chunk files under the ignored `research/rosters/`, proposal files merged by `scripts/merge-roster-research.mjs`, validated by `npm run check`) and piloted on the first three chunks. Confirmed roster people are not yet part of the people database proper (open task in TODO.md).
+- 73 of the 247 faculty-page links were dead and 30 refused automated readers; the per-page status is published in the roster file for the directory's maintenance.

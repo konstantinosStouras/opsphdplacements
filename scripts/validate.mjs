@@ -52,3 +52,26 @@ console.log('Derived institution and employer databases agree with the public da
  const ids=new Set(entities.map(e=>e.id));if(ids.size!==entities.length)throw Error('Duplicate entity id');
  console.log('Merged entities cover every PhD institution, directory university and first employer exactly once.');
 }
+
+// Faculty rosters: every OM List link must exist, every review must carry its evidence, and a doctorate is never recorded without the page that states it.
+{
+ const url=new URL('../data/faculty-rosters.json',import.meta.url);
+ if(fs.existsSync(url)){
+  const roster=JSON.parse(fs.readFileSync(url,'utf8')), universityIds=new Set(JSON.parse(fs.readFileSync(new URL('../data/universities.json',import.meta.url),'utf8')).records.map(r=>r.id));
+  if(roster.metadata.counts.people!==roster.records.length)throw Error('data/faculty-rosters.json metadata count mismatch');
+  const seen=new Set();
+  for(const r of roster.records){
+   if(seen.has(r.id))throw Error(`Duplicate roster id ${r.id}`);seen.add(r.id);
+   if(!r.name||!universityIds.has(r.universityId)||!r.facultyUrls?.length||!r.facultyUrls.every(isSourceUrl)||!r.retrievedAt)throw Error(`Roster row without name, university, faculty page or retrieval date: ${r.id}`);
+   if(!['om-list','om-list-name-only','unverified'].includes(r.verification))throw Error(`Unknown roster verification: ${r.id}`);
+   if(r.omList?.facultyId&&!ids.has(r.omList.facultyId))throw Error(`Roster row links to an unknown OM List profile: ${r.id}`);
+   if(r.verification==='unverified'&&(r.phdInstitution||r.phdYear!=null||r.firstJob))throw Error(`Unverified roster row carries a doctorate or first job: ${r.id}`);
+   const v=r.review;if(!v)continue;
+   if(!['confirmed-faculty','extraction-noise','not-listed','same-as-om-list','unresolved'].includes(v.status)||!v.reason||!v.checkedAt||!v.sources?.length)throw Error(`Roster review without status, reason, date or sources: ${r.id}`);
+   for(const s of v.sources)if(!isSourceUrl(s.url)||!s.title)throw Error(`Invalid roster review source: ${r.id}`);
+   if((v.phdInstitution||v.phdYear!=null)&&!(v.phdSourceUrl&&v.sources.some(s=>s.url===v.phdSourceUrl)))throw Error(`Roster review records a doctorate without its source page: ${r.id}`);
+   if(v.status==='same-as-om-list'&&!ids.has(v.omListFacultyId))throw Error(`Roster review names an unknown OM List profile: ${r.id}`);
+  }
+  console.log(`Faculty rosters: ${roster.records.length} listed people, ${roster.records.filter(r=>r.review).length} reviewed, every link and review evidenced.`);
+ }
+}

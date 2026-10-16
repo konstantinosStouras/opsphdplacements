@@ -45,6 +45,27 @@ export async function renderUniversities(section, { openInstitution } = {}) {
   const countryLabel = html('label', undefined, 'Country'); const countrySelect = document.createElement('select'); countrySelect.append(new Option('All countries', '')); for (const c of countries) countrySelect.append(new Option(c, c)); countrySelect.append(new Option('No country in the directory', '__none')); countryLabel.append(countrySelect);
   const linkLabel = html('label', undefined, 'People database'); const linkSelect = document.createElement('select'); for (const [v, t] of [['', 'All universities'], ['linked', 'Linked to a PhD institution'], ['unlinked', 'Not linked']]) linkSelect.append(new Option(t, v)); linkLabel.append(linkSelect);
   controls.append(search, countryLabel, linkLabel);
+  // Faculty rosters (data/faculty-rosters.json): who the directory's faculty pages list, matched to OM List.
+  // The file loads after the table so it never delays it; rows already drawn get their line when it arrives.
+  let rosterByUniversity = null;
+  const rosterLine = (cell, uid) => {
+    const s = rosterByUniversity?.get(uid); if (!s) return;
+    cell.append(html('small', 'roster-line', `Faculty page lists ${fmt(s.listed)} ${s.listed === 1 ? 'person' : 'people'}: ${fmt(s.omList)} on OM List, ${fmt(s.unverified)} unverified${s.reviewed ? `, ${fmt(s.reviewed)} reviewed` : ''}`));
+  };
+  const rosterBox = html('div', 'tiles'); summary.append(rosterBox);
+  loadJson('data/faculty-rosters.json').then(roster => {
+    rosterByUniversity = new Map(roster.universities.map(u => [u.universityId, u]));
+    const c = roster.metadata.counts, pg = roster.metadata.pages;
+    tiles(rosterBox, [
+      { value: fmt(c.people), label: 'People listed on the faculty pages linked from the directory', note: `${fmt(pg.withPeople)} of ${fmt(pg.total)} linked pages could be read` },
+      { value: fmt(c.omList), label: 'Also on OM List at the same university', note: `${fmt(c.omListNameOnly)} more share a name with an OM List profile elsewhere` },
+      { value: fmt(c.unverified), label: 'Unverified: no doctorate or first job known yet', note: `${fmt(c.reviewed)} reviewed one by one so far` }
+    ]);
+    for (const tr of body.querySelectorAll('tr[data-uid]')) rosterLine(tr.children[2], tr.dataset.uid);
+    const p = html('p', 'map-note'); const a = html('a', undefined, 'faculty-rosters.json'); a.href = 'data/faculty-rosters.json';
+    p.append(`The faculty pages that the directory links were read on ${roster.metadata.generatedAt}: ${fmt(pg.fetched)} of ${fmt(pg.total)} pages answered and ${fmt(pg.withPeople)} listed people that could be extracted (the rest are dead links, pages that refuse automated readers or lists drawn by scripts). A listing establishes only that the page shows the name under that title. People also on OM List carry that profile's information; the ${fmt(c.unverified)} others are unverified until a reviewer opens their own page, and nothing about their doctorate or first job is assumed. Download `, a, '.');
+    summary.append(p);
+  }).catch(() => {});
   let shown = 0, rows = [];
   const filter = () => {
     const words = q.value.toLocaleLowerCase().trim().split(/\s+/).filter(Boolean), c = countrySelect.value, l = linkSelect.value;
@@ -69,6 +90,7 @@ export async function renderUniversities(section, { openInstitution } = {}) {
         const pd = r.peopleDatabase; const b = html('button', 'text-button', pd.phdInstitution); b.type = 'button'; b.addEventListener('click', () => openInstitution?.(pd.phdInstitution));
         people.append(b, html('small', undefined, `${fmt(pd.people)} people · ${fmt(pd.verifiedFirstJobs)} verified first jobs (${pct(pd.verifiedFirstJobs, pd.people)})`), html('span', 'badge', `Match: ${pd.match.replace('-', ' ')}`));
       } else people.append(html('span', undefined, 'No link yet'), html('small', undefined, 'No PhD institution in the people database matched this name.'));
+      tr.dataset.uid = r.id; rosterLine(people, r.id);
       const faculty = r.sources.filter(s => s.title.startsWith('Faculty page'));
       sources.append(link('Operations Academia directory ↗', 'https://www.operationsacademia.org/universities'), html('small', undefined, `${r.departmentCount} directory ${r.departmentCount === 1 ? 'row' : 'rows'} · tags: ${r.directorySources.join(', ') || 'none'}`));
       for (const f of faculty) sources.append(link('Faculty page ↗', f.url), html('br'));

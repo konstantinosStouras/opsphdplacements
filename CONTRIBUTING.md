@@ -21,6 +21,10 @@ The aim is a historical graduate census covering Operations Management, Operatio
 - Keep the source publication date, retrieval date and fact review date separate. A failed recheck must not refresh a successful confirmation date.
 - Use brief paraphrases and page/section locators. Do not publish complete CVs, large copyrighted extracts or private details.
 
+## Roster reviews
+
+People listed on the faculty pages linked from the universities database (`data/faculty-rosters.json`) are verified one by one. A reviewer takes a chunk file (`research/rosters/chunk-N.json`, written by `node scripts/collect-faculty-rosters.mjs chunks`), opens each person's own page, and writes `research/rosters/proposal-N.json`: one row per person with `id` and `name` copied exactly, a `status` (`confirmed-faculty`, `extraction-noise`, `not-listed`, `same-as-om-list`, `unresolved`), `checkedAt`, a plain `reason`, and the `sources` actually opened. Confirmed faculty need the `profileUrl`, the `titleConfirmed` and `areaConfirmed` as shown, and the doctorate only when an opened page states it (`phdInstitution`, `phdYear`, `phdSourceUrl` among the sources). Never infer a doctorate from a title or affiliation, never record a first job in a roster review, and leave people you did not reach out of the file rather than writing placeholders. One integrator merges with `node scripts/merge-roster-research.mjs` and reruns `npm run check`.
+
 ## Safe collaboration
 
 Existing agents have used three disjoint shards of the original faculty array: index modulo 3 equals 0, 1 or 2. Those are scheduling assignments, not permanent scientific identifiers. Check for active ownership before reusing a shard. New contributors can instead claim small explicit ID lists.

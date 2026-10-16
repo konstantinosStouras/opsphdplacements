@@ -6,7 +6,7 @@ This is a research dataset and a live public website. Never fabricate facts, fil
 
 Keep imported source data intact. Submit researched changes with stable person/program IDs, short evidence paraphrases, source URLs and per-fact check dates. Separate degree completion, first employment, first academic employment and later industry transitions. Generic placement lists may omit postdocs; an initial academic placement is not automatically the first job across all sectors.
 
-Coordinate ownership before parallel edits. Research contributors write separate proposal files; one integrator updates public datasets. Do not simultaneously edit another agent's proposal or overwrite the entire research ledger with a stale copy. Preserve corrections and unresolved findings.
+Coordinate ownership before parallel edits. Research contributors write separate proposal files (first-job reviews under `research/placements-*/`, roster reviews under `research/rosters/proposal-N.json` as described in `CONTRIBUTING.md`); one integrator updates public datasets. Do not simultaneously edit another agent's proposal or overwrite the entire research ledger with a stale copy. Preserve corrections and unresolved findings.
 
 Follow `WORKFLOW.md` for validation and publication. Keep source caches, full CV downloads, credentials and personal contact details out of commits. `research/` and `_site/` are intentionally ignored. Do not add a CNAME, change the personal-site repository, or change the inherited domain. Push/deploy only within the user's authorization; no outreach or messages to graduates are authorized by these files.
 
