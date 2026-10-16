@@ -15,6 +15,10 @@ const EDU = /universit|college|school|institut|academy|polytechnic|hochschule|fa
 const sleep = ms => new Promise(r => setTimeout(r, ms));
 const cache = fs.existsSync(cachePath) ? JSON.parse(fs.readFileSync(cachePath, 'utf8')) : {};
 const save = () => { fs.mkdirSync(path.dirname(cachePath), { recursive: true }); fs.writeFileSync(cachePath, JSON.stringify(cache)); };
+// Reviewed corrections (data/location-review.json): a name whose search result was the wrong item gets the
+// right item, or no item when the name alone does not identify one organisation. Applied over the cache.
+const reviewPath = path.join(root, 'data/location-review.json');
+const review = fs.existsSync(reviewPath) ? JSON.parse(fs.readFileSync(reviewPath, 'utf8')).corrections : {};
 
 async function api(params) {
   for (let attempt = 0; attempt < 8; attempt++) {
@@ -54,12 +58,25 @@ for (const name of names) {
   save();
   await sleep(900);
 }
+// Fetch the item a correction names, once; a correction to "no item" is applied when the records are written.
+for (const name of names) {
+  const fix = review[name];
+  if (!fix?.qid || cache[name]?.qid === fix.qid) continue;
+  const ents = await api({ action: 'wbgetentities', ids: fix.qid, props: 'claims|labels|descriptions', languages: 'en' });
+  const e = ents.entities?.[fix.qid], c = e?.claims?.P625?.[0]?.mainsnak?.datavalue?.value;
+  cache[name] = { qid: fix.qid, label: e?.labels?.en?.value, description: e?.descriptions?.en?.value, lat: c ? +c.latitude.toFixed(3) : null, lon: c ? +c.longitude.toFixed(3) : null };
+  save();
+  await sleep(900);
+}
 
 const retrievedAt = new Date().toISOString().slice(0, 10);
-const records = names.map(name => ({ [{ employers: 'employer', universities: 'university', institutions: 'institution' }[mode]]: name, people: counts.get(name), ...cache[name] }));
+const records = names.map(name => {
+  const fix = review[name], match = fix && !fix.qid ? { qid: null } : cache[name];
+  return { [{ employers: 'employer', universities: 'university', institutions: 'institution' }[mode]]: name, people: counts.get(name), ...match, ...(fix ? { reviewed: true, reviewReason: fix.reason, reviewedAt: fix.reviewedAt } : {}) };
+});
 fs.writeFileSync(outPath, JSON.stringify({
   version: 1,
-  metadata: { source: 'Wikidata item coordinates (P625), matched by name', retrievedAt, note: 'Approximate location for map display only. Matches are name based and unreviewed unless reviewed:true.', mapped: records.filter(r => r.qid).length, total: records.length },
+  metadata: { source: 'Wikidata item coordinates (P625), matched by name', retrievedAt, note: 'Approximate location for map display only. Matches are name based and unreviewed unless reviewed:true, in which case the match follows the correction recorded in data/location-review.json.', mapped: records.filter(r => r.qid).length, total: records.length, reviewed: records.filter(r => r.reviewed).length },
   records
 }, null, 1) + '\n');
-console.log(`mapped ${records.filter(r => r.qid).length} of ${records.length}`);
+console.log(`mapped ${records.filter(r => r.qid).length} of ${records.length} (${records.filter(r => r.reviewed).length} reviewed corrections applied)`);

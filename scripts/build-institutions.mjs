@@ -15,22 +15,37 @@ const slug = name => name.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '')
 const CATEGORIES = ['tenure-track', 'postdoc', 'other-academic', 'industry', 'government', 'nonprofit', 'unknown'];
 const generatedAt = new Date().toISOString().slice(0, 10);
 
+// Names that differ only in accents, punctuation, spacing or case ("Koç University" and "Koc University",
+// "University of California, Berkeley" and "University of California Berkeley") are one organisation: they
+// share a slug, which is the record id. The most used spelling is the record name; the others are kept in
+// "spellings" so the records they came from can still be found. The source files keep their own spellings.
+const spellingGroups = names => {
+  const groups = {};
+  for (const n of names) { const s = slug(n); (groups[s] ||= {})[n] = (groups[s][n] || 0) + 1; }
+  const canon = {}, variants = {};
+  for (const [s, counts] of Object.entries(groups)) { variants[s] = Object.keys(counts).sort((a, b) => a.localeCompare(b)); canon[s] = [...variants[s]].sort((a, b) => counts[b] - counts[a] || a.localeCompare(b))[0]; }
+  return { canon: name => canon[slug(name)], variants: name => (variants[slug(name)].length > 1 ? variants[slug(name)] : undefined) };
+};
+const firstLocation = (names, byName) => names.map(n => byName.get(n)).find(l => l?.qid) || names.map(n => byName.get(n)).find(Boolean) || null;
+
 // People with the verified PhD institution and year where a review corrected the import.
 const people = faculty.records.map(f => { const p = placementById.get(f.id); return { ...f, phdInstitution: p?.phdInstitution || f.phdInstitution, phdYear: p?.phdYear ?? f.phdYear, status: statusById.get(f.id) || 'pending', placement: p || null }; });
+const institutionNames = spellingGroups(people.map(p => p.phdInstitution).filter(Boolean)), employerNames = spellingGroups(people.filter(p => p.placement).map(p => p.placement.employer));
 
 const institutions = {};
 for (const p of people) {
   if (!p.phdInstitution) continue;
-  const r = (institutions[p.phdInstitution] ||= { name: p.phdInstitution, people: 0, verified: 0, unresolved: 0, pending: 0, notYetCompleted: 0, years: [], categories: Object.fromEntries(CATEGORIES.map(c => [c, 0])), employers: {} });
+  const name = institutionNames.canon(p.phdInstitution);
+  const r = (institutions[name] ||= { name, people: 0, verified: 0, unresolved: 0, pending: 0, notYetCompleted: 0, years: [], categories: Object.fromEntries(CATEGORIES.map(c => [c, 0])), employers: {} });
   r.people++;
-  if (p.placement) { r.verified++; r.categories[p.placement.category]++; r.employers[p.placement.employer] = (r.employers[p.placement.employer] || 0) + 1; }
+  if (p.placement) { const em = employerNames.canon(p.placement.employer); r.verified++; r.categories[p.placement.category]++; r.employers[em] = (r.employers[em] || 0) + 1; }
   else if (p.status === 'unresolved') r.unresolved++; else if (p.status === 'not-yet-completed-phd') r.notYetCompleted++; else r.pending++;
   if (p.phdYear) r.years.push(p.phdYear);
 }
 const institutionRecords = Object.values(institutions).sort((a, b) => b.people - a.people || a.name.localeCompare(b.name)).map(r => {
-  const loc = locByName.get(r.name), years = [...new Set(r.years)].sort((a, b) => a - b);
+  const spellings = institutionNames.variants(r.name), loc = firstLocation(spellings || [r.name], locByName), years = [...new Set(r.years)].sort((a, b) => a - b);
   return {
-    id: slug(r.name), name: r.name, country: loc?.country || null, wikidata: loc?.qid || null, coords: loc?.qid ? [loc.lat, loc.lon] : null, logo: loc?.logo || null,
+    id: slug(r.name), name: r.name, spellings, country: loc?.country || null, wikidata: loc?.qid || null, coords: loc?.qid ? [loc.lat, loc.lon] : null, logo: loc?.logo || null,
     people: r.people, verifiedFirstJobs: r.verified, unresolved: r.unresolved, pending: r.pending, notYetCompleted: r.notYetCompleted,
     firstYear: years[0] ?? null, lastYear: years[years.length - 1] ?? null, cohorts: years.length,
     firstJobTypes: r.categories,
@@ -42,16 +57,17 @@ const institutionRecords = Object.values(institutions).sort((a, b) => b.people -
 const employers = {};
 for (const p of people) {
   if (!p.placement) continue;
-  const e = (employers[p.placement.employer] ||= { name: p.placement.employer, hires: 0, years: [], startYears: [], categories: Object.fromEntries(CATEGORIES.map(c => [c, 0])), sources: {}, positions: {} });
+  const name = employerNames.canon(p.placement.employer);
+  const e = (employers[name] ||= { name, hires: 0, years: [], startYears: [], categories: Object.fromEntries(CATEGORIES.map(c => [c, 0])), sources: {}, positions: {} });
   e.hires++; e.categories[p.placement.category]++;
   if (p.phdYear) e.years.push(p.phdYear); if (p.placement.placementYear) e.startYears.push(p.placement.placementYear);
-  if (p.phdInstitution) e.sources[p.phdInstitution] = (e.sources[p.phdInstitution] || 0) + 1;
+  if (p.phdInstitution) { const inst = institutionNames.canon(p.phdInstitution); e.sources[inst] = (e.sources[inst] || 0) + 1; }
   const pos = p.placement.position || null; if (pos) e.positions[pos] = (e.positions[pos] || 0) + 1;
 }
 const employerRecords = Object.values(employers).sort((a, b) => b.hires - a.hires || a.name.localeCompare(b.name)).map(e => {
-  const loc = empLocByName.get(e.name), years = [...new Set(e.years)].sort((a, b) => a - b), starts = [...new Set(e.startYears)].sort((a, b) => a - b);
+  const spellings = employerNames.variants(e.name), loc = firstLocation(spellings || [e.name], empLocByName), years = [...new Set(e.years)].sort((a, b) => a - b), starts = [...new Set(e.startYears)].sort((a, b) => a - b);
   return {
-    id: slug(e.name), name: e.name, country: loc?.country || null, wikidata: loc?.qid || null, coords: loc?.qid ? [loc.lat, loc.lon] : null,
+    id: slug(e.name), name: e.name, spellings, country: loc?.country || null, wikidata: loc?.qid || null, coords: loc?.qid ? [loc.lat, loc.lon] : null,
     verifiedFirstJobs: e.hires, firstCohort: years[0] ?? null, lastCohort: years[years.length - 1] ?? null, firstStartYear: starts[0] ?? null, lastStartYear: starts[starts.length - 1] ?? null,
     firstJobTypes: e.categories,
     sourceInstitutions: Object.entries(e.sources).sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0])).map(([institution, count]) => ({ institution, count })),
@@ -61,6 +77,6 @@ const employerRecords = Object.values(employers).sort((a, b) => b.hires - a.hire
 });
 
 const write = (file, records, definition) => fs.writeFileSync(path.join(root, file), JSON.stringify({ version: 1, metadata: { generatedAt, derivedFrom: ['data/faculty.json', 'data/placements.json', 'data/research-status.json', 'data/institution-locations.json', 'data/employer-locations.json'], definition, recordCount: records.length }, records }, null, 1) + '\n');
-write('data/institutions.json', institutionRecords, 'One row per PhD-granting institution named in the OM List directory import. "people" counts directory members with that doctorate, not the program\'s graduates. First-job figures count verified first jobs only; unresolved and pending people are listed separately and never inferred.');
-write('data/employers.json', employerRecords, 'One row per employer of a verified first job after the PhD among directory members. Counts are verified first jobs only, not the employer\'s total hiring.');
+write('data/institutions.json', institutionRecords, 'One row per PhD-granting institution named in the OM List directory import. "people" counts directory members with that doctorate, not the program\'s graduates. First-job figures count verified first jobs only; unresolved and pending people are listed separately and never inferred. Names that differ only in accents, punctuation, spacing or case are one row; "spellings" lists the variants as written in the source files.');
+write('data/employers.json', employerRecords, 'One row per employer of a verified first job after the PhD among directory members. Counts are verified first jobs only, not the employer\'s total hiring. Names that differ only in accents, punctuation, spacing or case are one row; "spellings" lists the variants as written in the placement records.');
 console.log(`institutions: ${institutionRecords.length} (${institutionRecords.filter(r => r.coords).length} with a location), employers: ${employerRecords.length} (${employerRecords.filter(r => r.coords).length} with a location)`);

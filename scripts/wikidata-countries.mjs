@@ -20,7 +20,7 @@ async function entities(ids, props) {
   throw new Error('Wikidata kept refusing');
 }
 
-const files = ['data/institution-locations.json', 'data/employer-locations.json'].map(f => path.join(root, f)).filter(f => fs.existsSync(f));
+const files = ['data/institution-locations.json', 'data/employer-locations.json', 'data/university-locations.json'].map(f => path.join(root, f)).filter(f => fs.existsSync(f));
 const datasets = files.map(f => [f, JSON.parse(fs.readFileSync(f, 'utf8'))]);
 const qids = [...new Set(datasets.flatMap(([, d]) => d.records.filter(r => r.qid).map(r => r.qid)))].filter(q => !cache.items[q]);
 for (let i = 0; i < qids.length; i += 50) {

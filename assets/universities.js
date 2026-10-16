@@ -4,6 +4,7 @@
 // database under a name that could be matched.
 import { hbars, tiles, fmt, pct, html } from './charts.js';
 import { loadJson } from './analytics.js';
+import { entityCounts } from './insights.js';
 
 const PAGE = 50;
 const link = (text, href) => { const a = html('a', undefined, text); a.href = href; a.target = '_blank'; a.rel = 'noopener noreferrer'; return a; };
@@ -17,18 +18,26 @@ export async function renderUniversities(section, { openInstitution } = {}) {
   const { metadata: m, records } = data;
   const countryOf = r => (Array.isArray(r.country) ? r.country.join(', ') : r.country || '');
   const countries = [...new Set(records.flatMap(r => (Array.isArray(r.country) ? r.country : r.country ? [r.country] : [])))].sort((a, b) => a.localeCompare(b));
-  note.textContent = `Imported from the Operations Academia directory on ${m.retrievedAt}: ${fmt(m.universityCount)} universities, ${fmt(m.departmentCount)} school or department rows, ${fmt(m.countries)} countries (${fmt(records.filter(r => !r.country).length)} universities have no country in the directory). A listing records an operations department, not a doctoral program; doctoral provision is recorded in the program register below. ${fmt(m.linkedToPeopleDatabase.universities)} universities are linked to a PhD institution in the people database (${fmt(m.linkedToPeopleDatabase.exact)} by identical name, ${fmt(m.linkedToPeopleDatabase.wikidata)} by a shared Wikidata item, ${fmt(m.linkedToPeopleDatabase.campusQualifier)} by a campus qualifier); the other ${fmt(m.universityCount - m.linkedToPeopleDatabase.universities)} have no match yet, which usually means no one in the people database earned a doctorate there under that name. Corrections made on the Operations Academia site after this snapshot are not included.`;
+  note.textContent = `Imported from the Operations Academia directory on ${m.retrievedAt}: ${fmt(m.universityCount)} universities, ${fmt(m.departmentCount)} school or department rows, ${fmt(m.countries)} countries (${fmt(records.filter(r => !r.country).length)} universities have no country in the directory; directory spellings that differ only in accents or punctuation are one university). A listing records an operations department, not a doctoral program; doctoral provision is recorded in the program register below. ${fmt(m.linkedToPeopleDatabase.universities)} universities are linked to a PhD institution in the people database (${fmt(m.linkedToPeopleDatabase.exact)} by identical name, ${fmt(m.linkedToPeopleDatabase.wikidata)} by a shared Wikidata item, ${fmt(m.linkedToPeopleDatabase.campusQualifier)} by a campus qualifier); the other ${fmt(m.universityCount - m.linkedToPeopleDatabase.universities)} have no match yet, which usually means no one in the people database earned a doctorate there under that name. Corrections made on the Operations Academia site after this snapshot are not included.`;
   // Several directory entries can link to one PhD institution (a university and its statistics department, say), so count each institution once.
   const linkedPeople = [...new Map(records.filter(r => r.peopleDatabase).map(r => [r.peopleDatabase.institutionId, r.peopleDatabase.people])).values()].reduce((n, v) => n + v, 0);
   const tileBox = html('div', 'tiles');
-  tiles(tileBox, [
+  const tileRows = [
     { value: fmt(m.universityCount), label: 'Universities with operations departments' },
     { value: fmt(m.departmentCount), label: 'Schools and departments listed' },
     { value: fmt(m.countries), label: 'Countries' },
     { value: fmt(m.linkedToPeopleDatabase.universities), label: 'Linked to the people database', note: `${fmt(linkedPeople)} people earned their doctorate at a linked university` },
     { value: `${fmt(m.linkedToPeopleDatabase.peopleDatabaseInstitutionsCovered)} of ${fmt(m.linkedToPeopleDatabase.peopleDatabaseInstitutionsTotal)}`, label: 'PhD institutions in the people database that appear in the directory' }
-  ]);
+  ];
+  tiles(tileBox, tileRows);
   summary.replaceChildren(tileBox);
+  // The merged organisation database (data/entities.json) is larger, so its counts arrive after the table.
+  entityCounts().then(c => {
+    tiles(tileBox, [...tileRows, { value: fmt(c.entities), label: 'Organisations in the merged database', note: `${fmt(c.withWikidata)} keyed by a Wikidata item` }, { value: fmt(c.inBothDatabases), label: 'In both databases', note: `${fmt(c.conflicts)} ${c.conflicts === 1 ? 'conflict' : 'conflicts'} to review` }]);
+    const p = html('p', 'map-note'); const a = html('a', undefined, 'entities.json'); a.href = 'data/entities.json';
+    p.append(`Both databases and the program register are merged into one record per organisation in `, a, `: ${fmt(c.entities)} organisations (${fmt(c.phdInstitutions)} PhD institutions, ${fmt(c.directoryUniversities)} directory universities, ${fmt(c.firstEmployers)} first employers), keyed by Wikidata item where known, with every name from either source kept as an alias. Each PhD institution and first-employer profile shows what the other database holds for the same organisation.`);
+    summary.append(p);
+  }).catch(() => {});
 
   // Controls: search, country, link status.
   controls.replaceChildren();

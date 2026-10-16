@@ -4,18 +4,18 @@
   "source": "https://www.operationsacademia.org/data/directory.json",
   "retrievedAt": "2026-10-16",
   "rowCount": 1133,
-  "universityCount": 656,
+  "universityCount": 645,
   "departmentCount": 1133,
   "countries": 40,
   "definition": "Universities, schools and departments that do Operations, as listed in the Operations Academia directory. Listing in the directory does not establish that a university awards a doctorate in the field; doctoral provision is recorded separately in data/doctoral-programs.json.",
-  "note": "The directory file is the committed source of truth of the Operations Academia site; corrections made by signed-in users are overlaid there at read time and are not included here. Links to the people database: \"exact\" is the same name after normalising spelling, \"wikidata\" is the same Wikidata item matched independently for both names, \"campus-qualifier\" is a people-database name equal to the directory name plus a campus qualifier (at Ann Arbor, College Park). Unmatched universities are not linked.",
+  "note": "The directory file is the committed source of truth of the Operations Academia site; corrections made by signed-in users are overlaid there at read time and are not included here. Directory names that differ only in accents, punctuation, spacing or case are one university (\"spellings\" lists the variants). Links to the people database: \"exact\" is the same name after normalising spelling, \"wikidata\" is the same Wikidata item matched independently for both names, \"campus-qualifier\" is a people-database name equal to the directory name plus a campus qualifier (at Ann Arbor, College Park). Unmatched universities are not linked.",
   "linkedToPeopleDatabase": {
-   "universities": 213,
-   "exact": 200,
-   "wikidata": 9,
-   "campusQualifier": 4,
-   "peopleDatabaseInstitutionsCovered": 173,
-   "peopleDatabaseInstitutionsTotal": 373
+   "universities": 217,
+   "exact": 194,
+   "wikidata": 23,
+   "campusQualifier": 0,
+   "peopleDatabaseInstitutionsCovered": 177,
+   "peopleDatabaseInstitutionsTotal": 372
   }
  },
  "records": [
@@ -1841,13 +1841,7 @@
     "seed"
    ],
    "wikidata": "Q705316",
-   "peopleDatabase": {
-    "phdInstitution": "University of Navarra",
-    "institutionId": "university-of-navarra",
-    "match": "wikidata",
-    "people": 4,
-    "verifiedFirstJobs": 3
-   },
+   "peopleDatabase": null,
    "sources": [
     {
      "url": "https://www.operationsacademia.org/data/directory.json",
@@ -5661,6 +5655,121 @@
    ]
   },
   {
+   "id": "koc-university",
+   "name": "Koç University",
+   "spellings": [
+    "Koc University",
+    "Koç University"
+   ],
+   "country": "Turkey",
+   "departmentCount": 4,
+   "departments": [
+    {
+     "id": "koc-university____om-is",
+     "school": null,
+     "department": "OM/IS",
+     "type": "University",
+     "country": "Turkey",
+     "facultyUrl": null,
+     "departmentUrl": null,
+     "address": null,
+     "sources": [
+      "postings",
+      "seed"
+     ],
+     "postings": 1,
+     "lastPosted": "2025-09-27",
+     "lat": null,
+     "lng": null,
+     "characteristics": null
+    },
+    {
+     "id": "koc-university__college-of-administrative-sciences-and-economics-case",
+     "school": "College of Administrative Sciences and Economics (CASE)",
+     "department": null,
+     "type": "University",
+     "country": "Turkey",
+     "facultyUrl": null,
+     "departmentUrl": null,
+     "address": null,
+     "sources": [
+      "postings"
+     ],
+     "postings": 1,
+     "lastPosted": "2014-11-23",
+     "lat": null,
+     "lng": null,
+     "characteristics": null
+    },
+    {
+     "id": "koc-university__college-of-administrative-sciences-and-economics-case__operations-management-and-information-systems",
+     "school": "College of Administrative Sciences and Economics (CASE)",
+     "department": "Operations Management and Information Systems",
+     "type": "University",
+     "country": "Turkey",
+     "facultyUrl": "https://case.ku.edu.tr/en/people/faculty/",
+     "departmentUrl": null,
+     "address": "Rumelifeneri Mahallesi, Rumelifeneri Yolu, 34450 Sarıyer/İstanbul, Turkey",
+     "sources": [
+      "directory"
+     ],
+     "postings": null,
+     "lastPosted": null,
+     "lat": 41.1977964,
+     "lng": 29.0673835,
+     "characteristics": null
+    },
+    {
+     "id": "koc-university__graduate-school-of-business__operations-management-and-information-systems",
+     "school": "Graduate School of Business",
+     "department": "Operations Management and Information Systems",
+     "type": "Business School",
+     "country": null,
+     "facultyUrl": null,
+     "departmentUrl": "https://gsb.ku.edu.tr/about-gsb/full-time/?dp=16",
+     "address": null,
+     "sources": [
+      "omlist",
+      "seed"
+     ],
+     "postings": null,
+     "lastPosted": null,
+     "lat": null,
+     "lng": null,
+     "characteristics": null
+    }
+   ],
+   "coords": [
+    41.1977964,
+    29.0673835
+   ],
+   "directorySources": [
+    "directory",
+    "omlist",
+    "postings",
+    "seed"
+   ],
+   "wikidata": "Q1193155",
+   "peopleDatabase": {
+    "phdInstitution": "Koç University",
+    "institutionId": "koc-university",
+    "match": "exact",
+    "people": 2,
+    "verifiedFirstJobs": 1
+   },
+   "sources": [
+    {
+     "url": "https://www.operationsacademia.org/data/directory.json",
+     "title": "Operations Academia universities directory (flat table behind the universities page)",
+     "retrievedAt": "2026-10-16"
+    },
+    {
+     "url": "https://case.ku.edu.tr/en/people/faculty/",
+     "title": "Faculty page listed in the directory"
+    }
+   ]
+  },
+  {
    "id": "morgan-state-university",
    "name": "Morgan State University",
    "country": "United States",
@@ -5986,6 +6095,239 @@
     },
     {
      "url": "http://www.mccormick.northwestern.edu/industrial/people/faculty/index.html",
+     "title": "Faculty page listed in the directory"
+    }
+   ]
+  },
+  {
+   "id": "nova-school-of-business-and-economics",
+   "name": "Nova School of Business and Economics",
+   "spellings": [
+    "Nova School of Business and Economics",
+    "NOVA School of Business and Economics"
+   ],
+   "country": "Portugal",
+   "departmentCount": 4,
+   "departments": [
+    {
+     "id": "nova-school-of-business-and-economics",
+     "school": null,
+     "department": null,
+     "type": "Business School",
+     "country": "Portugal",
+     "facultyUrl": "http://www.novasbe.unl.pt/pt/faculty-research/faculty/faculty-members",
+     "departmentUrl": null,
+     "address": "1099-032 Lisbon, Portugal",
+     "sources": [
+      "directory",
+      "postings"
+     ],
+     "postings": 1,
+     "lastPosted": "2014-12-03",
+     "lat": 38.7222524,
+     "lng": -9.1393366,
+     "characteristics": null
+    },
+    {
+     "id": "nova-school-of-business-and-economics____information-systems",
+     "school": null,
+     "department": "Information Systems",
+     "type": "Business School",
+     "country": null,
+     "facultyUrl": null,
+     "departmentUrl": null,
+     "address": null,
+     "sources": [
+      "seed"
+     ],
+     "postings": null,
+     "lastPosted": null,
+     "lat": null,
+     "lng": null,
+     "characteristics": null
+    },
+    {
+     "id": "nova-school-of-business-and-economics____operations-management",
+     "school": null,
+     "department": "Operations Management",
+     "type": "Business School",
+     "country": "Portugal",
+     "facultyUrl": null,
+     "departmentUrl": null,
+     "address": null,
+     "sources": [
+      "postings"
+     ],
+     "postings": 1,
+     "lastPosted": "2024-08-26",
+     "lat": null,
+     "lng": null,
+     "characteristics": [
+      "Research seminars",
+      "PhD",
+      "Masters",
+      "MBA",
+      "Undergrad",
+      "Exec Ed"
+     ]
+    },
+    {
+     "id": "nova-school-of-business-and-economics__school-of-business-and-economics__operations-technology-and-innovation-management",
+     "school": "School of Business and Economics",
+     "department": "Operations, Technology and Innovation Management",
+     "type": "Business School",
+     "country": "Portugal",
+     "facultyUrl": null,
+     "departmentUrl": "https://www.novasbe.unl.pt/en/faculty-research/faculty",
+     "address": null,
+     "sources": [
+      "omlist",
+      "postings",
+      "seed"
+     ],
+     "postings": 1,
+     "lastPosted": "2026-09-22",
+     "lat": null,
+     "lng": null,
+     "characteristics": [
+      "Research seminars",
+      "PhD",
+      "Masters",
+      "MBA",
+      "Undergrad",
+      "Exec Ed"
+     ]
+    }
+   ],
+   "coords": [
+    38.7222524,
+    -9.1393366
+   ],
+   "directorySources": [
+    "directory",
+    "omlist",
+    "postings",
+    "seed"
+   ],
+   "wikidata": "Q392754",
+   "peopleDatabase": null,
+   "sources": [
+    {
+     "url": "https://www.operationsacademia.org/data/directory.json",
+     "title": "Operations Academia universities directory (flat table behind the universities page)",
+     "retrievedAt": "2026-10-16"
+    },
+    {
+     "url": "http://www.novasbe.unl.pt/pt/faculty-research/faculty/faculty-members",
+     "title": "Faculty page listed in the directory"
+    }
+   ]
+  },
+  {
+   "id": "san-jose-state-university",
+   "name": "San José State University",
+   "spellings": [
+    "San Jose State University",
+    "San José State University"
+   ],
+   "country": "United States",
+   "departmentCount": 4,
+   "departments": [
+    {
+     "id": "san-jose-state-university____ba-and-marketing",
+     "school": null,
+     "department": "BA and Marketing",
+     "type": "University",
+     "country": "United States",
+     "facultyUrl": null,
+     "departmentUrl": null,
+     "address": null,
+     "sources": [
+      "postings",
+      "seed"
+     ],
+     "postings": 1,
+     "lastPosted": "2025-07-31",
+     "lat": null,
+     "lng": null,
+     "characteristics": null
+    },
+    {
+     "id": "san-jose-state-university__lucas-college-and-graduate-school-of-business__information-systems-and-technology",
+     "school": "Lucas College and Graduate School of Business",
+     "department": "Information Systems and Technology",
+     "type": "Business School",
+     "country": "United States",
+     "facultyUrl": null,
+     "departmentUrl": null,
+     "address": null,
+     "sources": [
+      "postings",
+      "seed"
+     ],
+     "postings": 1,
+     "lastPosted": "2026-09-23",
+     "lat": null,
+     "lng": null,
+     "characteristics": null
+    },
+    {
+     "id": "san-jose-state-university__lucas-college-and-graduate-school-of-business__marketing-and-business-analytics",
+     "school": "Lucas College and Graduate School of Business",
+     "department": "Marketing and Business Analytics",
+     "type": "Business School",
+     "country": "United States",
+     "facultyUrl": null,
+     "departmentUrl": null,
+     "address": null,
+     "sources": [
+      "postings",
+      "seed"
+     ],
+     "postings": 1,
+     "lastPosted": "2026-10-11",
+     "lat": null,
+     "lng": null,
+     "characteristics": null
+    },
+    {
+     "id": "san-jose-state-university__lucas-college-and-graduate-school-of-business__marketing-and-decision-sciences",
+     "school": "Lucas College and Graduate School of Business",
+     "department": "Marketing and Decision Sciences",
+     "type": "Business School",
+     "country": "United States",
+     "facultyUrl": "http://www.sjsu.edu/mktds/faculty/",
+     "departmentUrl": null,
+     "address": "1 Washington Square, San Jose, CA 95112",
+     "sources": [
+      "directory"
+     ],
+     "postings": null,
+     "lastPosted": null,
+     "lat": 37.3379434,
+     "lng": -121.9378605,
+     "characteristics": null
+    }
+   ],
+   "coords": [
+    37.3379434,
+    -121.9378605
+   ],
+   "directorySources": [
+    "directory",
+    "postings",
+    "seed"
+   ],
+   "wikidata": "Q498526",
+   "peopleDatabase": null,
+   "sources": [
+    {
+     "url": "https://www.operationsacademia.org/data/directory.json",
+     "title": "Operations Academia universities directory (flat table behind the universities page)",
+     "retrievedAt": "2026-10-16"
+    },
+    {
+     "url": "http://www.sjsu.edu/mktds/faculty/",
      "title": "Faculty page listed in the directory"
     }
    ]
@@ -9413,98 +9755,6 @@
    ]
   },
   {
-   "id": "koc-university",
-   "name": "Koç University",
-   "country": "Turkey",
-   "departmentCount": 3,
-   "departments": [
-    {
-     "id": "koc-university__college-of-administrative-sciences-and-economics-case",
-     "school": "College of Administrative Sciences and Economics (CASE)",
-     "department": null,
-     "type": "University",
-     "country": "Turkey",
-     "facultyUrl": null,
-     "departmentUrl": null,
-     "address": null,
-     "sources": [
-      "postings"
-     ],
-     "postings": 1,
-     "lastPosted": "2014-11-23",
-     "lat": null,
-     "lng": null,
-     "characteristics": null
-    },
-    {
-     "id": "koc-university__college-of-administrative-sciences-and-economics-case__operations-management-and-information-systems",
-     "school": "College of Administrative Sciences and Economics (CASE)",
-     "department": "Operations Management and Information Systems",
-     "type": "University",
-     "country": "Turkey",
-     "facultyUrl": "https://case.ku.edu.tr/en/people/faculty/",
-     "departmentUrl": null,
-     "address": "Rumelifeneri Mahallesi, Rumelifeneri Yolu, 34450 Sarıyer/İstanbul, Turkey",
-     "sources": [
-      "directory"
-     ],
-     "postings": null,
-     "lastPosted": null,
-     "lat": 41.1977964,
-     "lng": 29.0673835,
-     "characteristics": null
-    },
-    {
-     "id": "koc-university__graduate-school-of-business__operations-management-and-information-systems",
-     "school": "Graduate School of Business",
-     "department": "Operations Management and Information Systems",
-     "type": "Business School",
-     "country": null,
-     "facultyUrl": null,
-     "departmentUrl": "https://gsb.ku.edu.tr/about-gsb/full-time/?dp=16",
-     "address": null,
-     "sources": [
-      "omlist",
-      "seed"
-     ],
-     "postings": null,
-     "lastPosted": null,
-     "lat": null,
-     "lng": null,
-     "characteristics": null
-    }
-   ],
-   "coords": [
-    41.1977964,
-    29.0673835
-   ],
-   "directorySources": [
-    "directory",
-    "omlist",
-    "postings",
-    "seed"
-   ],
-   "wikidata": "Q1193155",
-   "peopleDatabase": {
-    "phdInstitution": "Koç University",
-    "institutionId": "koc-university",
-    "match": "exact",
-    "people": 2,
-    "verifiedFirstJobs": 1
-   },
-   "sources": [
-    {
-     "url": "https://www.operationsacademia.org/data/directory.json",
-     "title": "Operations Academia universities directory (flat table behind the universities page)",
-     "retrievedAt": "2026-10-16"
-    },
-    {
-     "url": "https://case.ku.edu.tr/en/people/faculty/",
-     "title": "Faculty page listed in the directory"
-    }
-   ]
-  },
-  {
    "id": "ku-leuven",
    "name": "KU Leuven",
    "country": "Belgium",
@@ -10630,85 +10880,6 @@
     "seed"
    ],
    "wikidata": "Q2164222",
-   "peopleDatabase": null,
-   "sources": [
-    {
-     "url": "https://www.operationsacademia.org/data/directory.json",
-     "title": "Operations Academia universities directory (flat table behind the universities page)",
-     "retrievedAt": "2026-10-16"
-    }
-   ]
-  },
-  {
-   "id": "san-jose-state-university",
-   "name": "San José State University",
-   "country": "United States",
-   "departmentCount": 3,
-   "departments": [
-    {
-     "id": "san-jose-state-university____ba-and-marketing",
-     "school": null,
-     "department": "BA and Marketing",
-     "type": "University",
-     "country": "United States",
-     "facultyUrl": null,
-     "departmentUrl": null,
-     "address": null,
-     "sources": [
-      "postings",
-      "seed"
-     ],
-     "postings": 1,
-     "lastPosted": "2025-07-31",
-     "lat": null,
-     "lng": null,
-     "characteristics": null
-    },
-    {
-     "id": "san-jose-state-university__lucas-college-and-graduate-school-of-business__information-systems-and-technology",
-     "school": "Lucas College and Graduate School of Business",
-     "department": "Information Systems and Technology",
-     "type": "Business School",
-     "country": "United States",
-     "facultyUrl": null,
-     "departmentUrl": null,
-     "address": null,
-     "sources": [
-      "postings",
-      "seed"
-     ],
-     "postings": 1,
-     "lastPosted": "2026-09-23",
-     "lat": null,
-     "lng": null,
-     "characteristics": null
-    },
-    {
-     "id": "san-jose-state-university__lucas-college-and-graduate-school-of-business__marketing-and-business-analytics",
-     "school": "Lucas College and Graduate School of Business",
-     "department": "Marketing and Business Analytics",
-     "type": "Business School",
-     "country": "United States",
-     "facultyUrl": null,
-     "departmentUrl": null,
-     "address": null,
-     "sources": [
-      "postings",
-      "seed"
-     ],
-     "postings": 1,
-     "lastPosted": "2026-10-11",
-     "lat": null,
-     "lng": null,
-     "characteristics": null
-    }
-   ],
-   "coords": null,
-   "directorySources": [
-    "postings",
-    "seed"
-   ],
-   "wikidata": "Q498526",
    "peopleDatabase": null,
    "sources": [
     {
@@ -11990,6 +12161,105 @@
    ]
   },
   {
+   "id": "university-of-california-riverside",
+   "name": "University of California Riverside",
+   "spellings": [
+    "University of California Riverside",
+    "University of California, Riverside"
+   ],
+   "country": "United States",
+   "departmentCount": 3,
+   "departments": [
+    {
+     "id": "university-of-california-riverside____is",
+     "school": null,
+     "department": "IS",
+     "type": "University",
+     "country": "United States",
+     "facultyUrl": null,
+     "departmentUrl": null,
+     "address": null,
+     "sources": [
+      "postings",
+      "seed"
+     ],
+     "postings": 1,
+     "lastPosted": "2025-09-23",
+     "lat": null,
+     "lng": null,
+     "characteristics": null
+    },
+    {
+     "id": "university-of-california-riverside__a-gary-anderson-graduate-school-of-management__operations-and-supply-chain-management",
+     "school": "A. Gary Anderson Graduate School of Management",
+     "department": "Operations and Supply Chain Management",
+     "type": "Business School",
+     "country": "United States",
+     "facultyUrl": null,
+     "departmentUrl": null,
+     "address": null,
+     "sources": [
+      "postings",
+      "seed"
+     ],
+     "postings": 1,
+     "lastPosted": "2026-09-23",
+     "lat": null,
+     "lng": null,
+     "characteristics": [
+      "Research seminars",
+      "PhD",
+      "Masters",
+      "MBA",
+      "Undergrad"
+     ]
+    },
+    {
+     "id": "university-of-california-riverside__school-of-business__operations-and-supply-chain-management",
+     "school": "School of Business",
+     "department": "Operations and Supply Chain Management",
+     "type": "Business School",
+     "country": "United States",
+     "facultyUrl": "https://soba.ucr.edu/schools_areas/oscm_faculty.html",
+     "departmentUrl": "https://business.ucr.edu/areas/oscm",
+     "address": "Riverside, CA 92507",
+     "sources": [
+      "directory",
+      "omlist",
+      "seed"
+     ],
+     "postings": null,
+     "lastPosted": null,
+     "lat": 33.9734553,
+     "lng": -117.3263893,
+     "characteristics": null
+    }
+   ],
+   "coords": [
+    33.9734553,
+    -117.3263893
+   ],
+   "directorySources": [
+    "directory",
+    "omlist",
+    "postings",
+    "seed"
+   ],
+   "wikidata": "Q1075148",
+   "peopleDatabase": null,
+   "sources": [
+    {
+     "url": "https://www.operationsacademia.org/data/directory.json",
+     "title": "Operations Academia universities directory (flat table behind the universities page)",
+     "retrievedAt": "2026-10-16"
+    },
+    {
+     "url": "https://soba.ucr.edu/schools_areas/oscm_faculty.html",
+     "title": "Faculty page listed in the directory"
+    }
+   ]
+  },
+  {
    "id": "university-of-cambridge",
    "name": "University of Cambridge",
    "country": "United Kingdom",
@@ -13044,6 +13314,95 @@
    ]
   },
   {
+   "id": "university-of-tennessee-knoxville",
+   "name": "University of Tennessee - Knoxville",
+   "spellings": [
+    "University of Tennessee - Knoxville",
+    "University of Tennessee, Knoxville"
+   ],
+   "country": "United States",
+   "departmentCount": 3,
+   "departments": [
+    {
+     "id": "university-of-tennessee-knoxville____supply-chain-management",
+     "school": null,
+     "department": "Supply Chain Management",
+     "type": "University",
+     "country": "United States",
+     "facultyUrl": null,
+     "departmentUrl": null,
+     "address": null,
+     "sources": [
+      "postings",
+      "seed"
+     ],
+     "postings": 2,
+     "lastPosted": "2026-01-31",
+     "lat": null,
+     "lng": null,
+     "characteristics": null
+    },
+    {
+     "id": "university-of-tennessee-knoxville__haslam-college-of-business__business-analytics-and-statistics",
+     "school": "Haslam College of Business",
+     "department": "Business Analytics and Statistics",
+     "type": "Business School",
+     "country": "United States",
+     "facultyUrl": null,
+     "departmentUrl": null,
+     "address": null,
+     "sources": [
+      "postings",
+      "seed"
+     ],
+     "postings": 2,
+     "lastPosted": "2026-06-22",
+     "lat": null,
+     "lng": null,
+     "characteristics": null
+    },
+    {
+     "id": "university-of-tennessee-knoxville__tickle-college-of-engineering__industrial-and-systems-engineering",
+     "school": "Tickle College of Engineering",
+     "department": "Industrial and Systems Engineering",
+     "type": "University",
+     "country": "United States",
+     "facultyUrl": null,
+     "departmentUrl": null,
+     "address": null,
+     "sources": [
+      "postings",
+      "seed"
+     ],
+     "postings": 1,
+     "lastPosted": "2026-09-03",
+     "lat": null,
+     "lng": null,
+     "characteristics": null
+    }
+   ],
+   "coords": null,
+   "directorySources": [
+    "postings",
+    "seed"
+   ],
+   "wikidata": "Q1150105",
+   "peopleDatabase": {
+    "phdInstitution": "University of Tennessee at Knoxville",
+    "institutionId": "university-of-tennessee-at-knoxville",
+    "match": "exact",
+    "people": 10,
+    "verifiedFirstJobs": 2
+   },
+   "sources": [
+    {
+     "url": "https://www.operationsacademia.org/data/directory.json",
+     "title": "Operations Academia universities directory (flat table behind the universities page)",
+     "retrievedAt": "2026-10-16"
+    }
+   ]
+  },
+  {
    "id": "university-of-warwick",
    "name": "University of Warwick",
    "country": "United Kingdom",
@@ -13505,6 +13864,89 @@
     {
      "url": "http://www.ivey.uwo.ca/faculty/directory/",
      "title": "Faculty page listed in the directory"
+    }
+   ]
+  },
+  {
+   "id": "xi-an-jiaotong-liverpool-university",
+   "name": "Xi'an Jiaotong-Liverpool University",
+   "spellings": [
+    "Xi'an Jiaotong-Liverpool University",
+    "Xi’an Jiaotong-Liverpool University"
+   ],
+   "country": "China",
+   "departmentCount": 3,
+   "departments": [
+    {
+     "id": "xi-an-jiaotong-liverpool-university____sustainability",
+     "school": null,
+     "department": "sustainability",
+     "type": "University",
+     "country": "China",
+     "facultyUrl": null,
+     "departmentUrl": null,
+     "address": null,
+     "sources": [
+      "postings",
+      "seed"
+     ],
+     "postings": 1,
+     "lastPosted": "2025-05-25",
+     "lat": null,
+     "lng": null,
+     "characteristics": null
+    },
+    {
+     "id": "xi-an-jiaotong-liverpool-university__international-business-school-suzhou__intelligent-operations-and-marketing",
+     "school": "International Business School Suzhou",
+     "department": "Intelligent Operations and Marketing",
+     "type": "Business School",
+     "country": "China",
+     "facultyUrl": null,
+     "departmentUrl": null,
+     "address": null,
+     "sources": [
+      "postings",
+      "seed"
+     ],
+     "postings": 1,
+     "lastPosted": "2026-09-15",
+     "lat": null,
+     "lng": null,
+     "characteristics": null
+    },
+    {
+     "id": "xi-an-jiaotong-liverpool-university__school-of-intelligent-finance-and-business__supply-chain-management",
+     "school": "School of Intelligent Finance and Business",
+     "department": "Supply Chain Management",
+     "type": "Business School",
+     "country": "China",
+     "facultyUrl": null,
+     "departmentUrl": null,
+     "address": null,
+     "sources": [
+      "postings",
+      "seed"
+     ],
+     "postings": 1,
+     "lastPosted": "2026-07-22",
+     "lat": null,
+     "lng": null,
+     "characteristics": null
+    }
+   ],
+   "coords": null,
+   "directorySources": [
+    "postings",
+    "seed"
+   ],
+   "wikidata": "Q13562485",
+   "peopleDatabase": null,
+   "sources": [
+    {
+     "url": "https://www.operationsacademia.org/data/directory.json",
+     "title": "Operations Academia universities directory (flat table behind the universities page)",
+     "retrievedAt": "2026-10-16"
     }
    ]
   },
@@ -14074,6 +14516,77 @@
      "url": "https://www.operationsacademia.org/data/directory.json",
      "title": "Operations Academia universities directory (flat table behind the universities page)",
      "retrievedAt": "2026-10-16"
+    }
+   ]
+  },
+  {
+   "id": "california-state-polytechnic-university-pomona",
+   "name": "California State Polytechnic University Pomona",
+   "spellings": [
+    "California State Polytechnic University Pomona",
+    "California State Polytechnic University, Pomona"
+   ],
+   "country": "United States",
+   "departmentCount": 2,
+   "departments": [
+    {
+     "id": "california-state-polytechnic-university-pomona____technology-and-operations-management",
+     "school": null,
+     "department": "Technology and Operations Management",
+     "type": "University",
+     "country": "United States",
+     "facultyUrl": "https://www.cpp.edu/~cba/our-faculty/index.shtml",
+     "departmentUrl": null,
+     "address": "3801 W Temple Ave, Pomona, CA 91768",
+     "sources": [
+      "directory",
+      "postings"
+     ],
+     "postings": 1,
+     "lastPosted": "2014-09-26",
+     "lat": 34.0595698,
+     "lng": -117.8194997,
+     "characteristics": null
+    },
+    {
+     "id": "california-state-polytechnic-university-pomona__college-of-business-administration__computer-information-systems",
+     "school": "College of Business Administration",
+     "department": "Computer Information Systems",
+     "type": "Business School",
+     "country": null,
+     "facultyUrl": null,
+     "departmentUrl": null,
+     "address": null,
+     "sources": [
+      "seed"
+     ],
+     "postings": null,
+     "lastPosted": null,
+     "lat": null,
+     "lng": null,
+     "characteristics": null
+    }
+   ],
+   "coords": [
+    34.0595698,
+    -117.8194997
+   ],
+   "directorySources": [
+    "directory",
+    "postings",
+    "seed"
+   ],
+   "wikidata": "Q1026868",
+   "peopleDatabase": null,
+   "sources": [
+    {
+     "url": "https://www.operationsacademia.org/data/directory.json",
+     "title": "Operations Academia universities directory (flat table behind the universities page)",
+     "retrievedAt": "2026-10-16"
+    },
+    {
+     "url": "https://www.cpp.edu/~cba/our-faculty/index.shtml",
+     "title": "Faculty page listed in the directory"
     }
    ]
   },
@@ -14692,6 +15205,83 @@
    ]
   },
   {
+   "id": "cornell-university-cornell-tech",
+   "name": "Cornell University (Cornell Tech)",
+   "spellings": [
+    "Cornell University (Cornell Tech)",
+    "Cornell University/ Cornell Tech"
+   ],
+   "country": "United States",
+   "departmentCount": 2,
+   "departments": [
+    {
+     "id": "cornell-university-cornell-tech____operations-research-and-information-engineering",
+     "school": null,
+     "department": "Operations Research and Information Engineering",
+     "type": "University",
+     "country": null,
+     "facultyUrl": null,
+     "departmentUrl": null,
+     "address": null,
+     "sources": [
+      "seed"
+     ],
+     "postings": null,
+     "lastPosted": null,
+     "lat": null,
+     "lng": null,
+     "characteristics": null
+    },
+    {
+     "id": "cornell-university-cornell-tech__samuel-curtis-johnson-graduate-school-of-management",
+     "school": "Samuel Curtis Johnson Graduate School of Management",
+     "department": null,
+     "type": "Business School",
+     "country": "United States",
+     "facultyUrl": "https://www.johnson.cornell.edu/Faculty-And-Research/Faculty-by-Discipline",
+     "departmentUrl": null,
+     "address": "2 W Loop Rd, New York, NY 10044",
+     "sources": [
+      "directory",
+      "postings"
+     ],
+     "postings": 1,
+     "lastPosted": "2014-10-21",
+     "lat": 40.755644,
+     "lng": -73.9560965,
+     "characteristics": null
+    }
+   ],
+   "coords": [
+    40.755644,
+    -73.9560965
+   ],
+   "directorySources": [
+    "directory",
+    "postings",
+    "seed"
+   ],
+   "wikidata": "Q49115",
+   "peopleDatabase": {
+    "phdInstitution": "Cornell University",
+    "institutionId": "cornell-university",
+    "match": "wikidata",
+    "people": 37,
+    "verifiedFirstJobs": 21
+   },
+   "sources": [
+    {
+     "url": "https://www.operationsacademia.org/data/directory.json",
+     "title": "Operations Academia universities directory (flat table behind the universities page)",
+     "retrievedAt": "2026-10-16"
+    },
+    {
+     "url": "https://www.johnson.cornell.edu/Faculty-And-Research/Faculty-by-Discipline",
+     "title": "Faculty page listed in the directory"
+    }
+   ]
+  },
+  {
    "id": "cuhk-business-school",
    "name": "CUHK Business School",
    "country": "Hong Kong",
@@ -14946,6 +15536,81 @@
      "url": "https://www.operationsacademia.org/data/directory.json",
      "title": "Operations Academia universities directory (flat table behind the universities page)",
      "retrievedAt": "2026-10-16"
+    }
+   ]
+  },
+  {
+   "id": "ecole-polytechnique-federale-de-lausanne-epfl",
+   "name": "École polytechnique fédérale de Lausanne (EPFL)",
+   "spellings": [
+    "École polytechnique fédérale de Lausanne (EPFL)",
+    "École Polytechnique Fédérale de Lausanne (EPFL)"
+   ],
+   "country": "Switzerland",
+   "departmentCount": 2,
+   "departments": [
+    {
+     "id": "ecole-polytechnique-federale-de-lausanne__college-of-management-cdm__chair-of-technology-and-operations-management-tom",
+     "school": "College of Management CDM",
+     "department": "Chair of Technology and Operations Management TOM",
+     "type": "Business School",
+     "country": "Switzerland",
+     "facultyUrl": null,
+     "departmentUrl": null,
+     "address": null,
+     "sources": [
+      "postings"
+     ],
+     "postings": 1,
+     "lastPosted": "2014-09-11",
+     "lat": null,
+     "lng": null,
+     "characteristics": null
+    },
+    {
+     "id": "ecole-polytechnique-federale-de-lausanne__college-of-management-of-technology-cmt__technology-and-operations-management",
+     "school": "College of Management of Technology (CMT)",
+     "department": "Technology and Operations Management",
+     "type": null,
+     "country": "Switzerland",
+     "facultyUrl": "http://tom.epfl.ch/team",
+     "departmentUrl": null,
+     "address": "Route Cantonale, 1015 Lausanne, Switzerland",
+     "sources": [
+      "directory"
+     ],
+     "postings": null,
+     "lastPosted": null,
+     "lat": 46.5182428,
+     "lng": 6.5729056,
+     "characteristics": null
+    }
+   ],
+   "coords": [
+    46.5182428,
+    6.5729056
+   ],
+   "directorySources": [
+    "directory",
+    "postings"
+   ],
+   "wikidata": "Q262760",
+   "peopleDatabase": {
+    "phdInstitution": "École polytechnique fédérale de Lausanne",
+    "institutionId": "ecole-polytechnique-federale-de-lausanne",
+    "match": "exact",
+    "people": 2,
+    "verifiedFirstJobs": 1
+   },
+   "sources": [
+    {
+     "url": "https://www.operationsacademia.org/data/directory.json",
+     "title": "Operations Academia universities directory (flat table behind the universities page)",
+     "retrievedAt": "2026-10-16"
+    },
+    {
+     "url": "http://tom.epfl.ch/team",
+     "title": "Faculty page listed in the directory"
     }
    ]
   },
@@ -15969,14 +16634,8 @@
     "postings",
     "seed"
    ],
-   "wikidata": "Q1333303",
-   "peopleDatabase": {
-    "phdInstitution": "Hong Kong University of Science and Technology",
-    "institutionId": "hong-kong-university-of-science-and-technology",
-    "match": "exact",
-    "people": 19,
-    "verifiedFirstJobs": 9
-   },
+   "wikidata": null,
+   "peopleDatabase": null,
    "sources": [
     {
      "url": "https://www.operationsacademia.org/data/directory.json",
@@ -16160,13 +16819,7 @@
     "postings"
    ],
    "wikidata": "Q705316",
-   "peopleDatabase": {
-    "phdInstitution": "University of Navarra",
-    "institutionId": "university-of-navarra",
-    "match": "wikidata",
-    "people": 4,
-    "verifiedFirstJobs": 3
-   },
+   "peopleDatabase": null,
    "sources": [
     {
      "url": "https://www.operationsacademia.org/data/directory.json",
@@ -16306,7 +16959,7 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q666128",
    "peopleDatabase": null,
    "sources": [
     {
@@ -16366,7 +17019,7 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q1002573",
    "peopleDatabase": null,
    "sources": [
     {
@@ -16486,7 +17139,7 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q1046224",
    "peopleDatabase": null,
    "sources": [
     {
@@ -16685,7 +17338,7 @@
     "directory",
     "postings"
    ],
-   "wikidata": null,
+   "wikidata": "Q1537759",
    "peopleDatabase": null,
    "sources": [
     {
@@ -16749,7 +17402,7 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q6721877",
    "peopleDatabase": null,
    "sources": [
     {
@@ -17036,7 +17689,7 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q6841434",
    "peopleDatabase": null,
    "sources": [
     {
@@ -17096,7 +17749,7 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q142740",
    "peopleDatabase": null,
    "sources": [
     {
@@ -17228,7 +17881,7 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q5018694",
    "peopleDatabase": null,
    "sources": [
     {
@@ -17389,8 +18042,14 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
-   "peopleDatabase": null,
+   "wikidata": "Q1132346",
+   "peopleDatabase": {
+    "phdInstitution": "North Carolina State University",
+    "institutionId": "north-carolina-state-university",
+    "match": "wikidata",
+    "people": 4,
+    "verifiedFirstJobs": 2
+   },
    "sources": [
     {
      "url": "https://www.operationsacademia.org/data/directory.json",
@@ -17518,148 +18177,7 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
-   "peopleDatabase": null,
-   "sources": [
-    {
-     "url": "https://www.operationsacademia.org/data/directory.json",
-     "title": "Operations Academia universities directory (flat table behind the universities page)",
-     "retrievedAt": "2026-10-16"
-    }
-   ]
-  },
-  {
-   "id": "nova-school-of-business-and-economics",
-   "name": "Nova School of Business and Economics",
-   "country": "Portugal",
-   "departmentCount": 2,
-   "departments": [
-    {
-     "id": "nova-school-of-business-and-economics",
-     "school": null,
-     "department": null,
-     "type": "Business School",
-     "country": "Portugal",
-     "facultyUrl": "http://www.novasbe.unl.pt/pt/faculty-research/faculty/faculty-members",
-     "departmentUrl": null,
-     "address": "1099-032 Lisbon, Portugal",
-     "sources": [
-      "directory",
-      "postings"
-     ],
-     "postings": 1,
-     "lastPosted": "2014-12-03",
-     "lat": 38.7222524,
-     "lng": -9.1393366,
-     "characteristics": null
-    },
-    {
-     "id": "nova-school-of-business-and-economics____operations-management",
-     "school": null,
-     "department": "Operations Management",
-     "type": "Business School",
-     "country": "Portugal",
-     "facultyUrl": null,
-     "departmentUrl": null,
-     "address": null,
-     "sources": [
-      "postings"
-     ],
-     "postings": 1,
-     "lastPosted": "2024-08-26",
-     "lat": null,
-     "lng": null,
-     "characteristics": [
-      "Research seminars",
-      "PhD",
-      "Masters",
-      "MBA",
-      "Undergrad",
-      "Exec Ed"
-     ]
-    }
-   ],
-   "coords": [
-    38.7222524,
-    -9.1393366
-   ],
-   "directorySources": [
-    "directory",
-    "postings"
-   ],
-   "wikidata": null,
-   "peopleDatabase": null,
-   "sources": [
-    {
-     "url": "https://www.operationsacademia.org/data/directory.json",
-     "title": "Operations Academia universities directory (flat table behind the universities page)",
-     "retrievedAt": "2026-10-16"
-    },
-    {
-     "url": "http://www.novasbe.unl.pt/pt/faculty-research/faculty/faculty-members",
-     "title": "Faculty page listed in the directory"
-    }
-   ]
-  },
-  {
-   "id": "nova-school-of-business-and-economics",
-   "name": "NOVA School of Business and Economics",
-   "country": "Portugal",
-   "departmentCount": 2,
-   "departments": [
-    {
-     "id": "nova-school-of-business-and-economics____information-systems",
-     "school": null,
-     "department": "Information Systems",
-     "type": "Business School",
-     "country": null,
-     "facultyUrl": null,
-     "departmentUrl": null,
-     "address": null,
-     "sources": [
-      "seed"
-     ],
-     "postings": null,
-     "lastPosted": null,
-     "lat": null,
-     "lng": null,
-     "characteristics": null
-    },
-    {
-     "id": "nova-school-of-business-and-economics__school-of-business-and-economics__operations-technology-and-innovation-management",
-     "school": "School of Business and Economics",
-     "department": "Operations, Technology and Innovation Management",
-     "type": "Business School",
-     "country": "Portugal",
-     "facultyUrl": null,
-     "departmentUrl": "https://www.novasbe.unl.pt/en/faculty-research/faculty",
-     "address": null,
-     "sources": [
-      "omlist",
-      "postings",
-      "seed"
-     ],
-     "postings": 1,
-     "lastPosted": "2026-09-22",
-     "lat": null,
-     "lng": null,
-     "characteristics": [
-      "Research seminars",
-      "PhD",
-      "Masters",
-      "MBA",
-      "Undergrad",
-      "Exec Ed"
-     ]
-    }
-   ],
-   "coords": null,
-   "directorySources": [
-    "omlist",
-    "postings",
-    "seed"
-   ],
-   "wikidata": null,
+   "wikidata": "Q2001088",
    "peopleDatabase": null,
    "sources": [
     {
@@ -17724,7 +18242,7 @@
    "directorySources": [
     "postings"
    ],
-   "wikidata": null,
+   "wikidata": "Q13652966",
    "peopleDatabase": null,
    "sources": [
     {
@@ -18065,7 +18583,7 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q7395882",
    "peopleDatabase": null,
    "sources": [
     {
@@ -18132,7 +18650,7 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q7401829",
    "peopleDatabase": null,
    "sources": [
     {
@@ -18196,7 +18714,7 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q913861",
    "peopleDatabase": null,
    "sources": [
     {
@@ -18263,7 +18781,7 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q992830",
    "peopleDatabase": null,
    "sources": [
     {
@@ -18327,7 +18845,7 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q585828",
    "peopleDatabase": null,
    "sources": [
     {
@@ -18537,7 +19055,7 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q615998",
    "peopleDatabase": null,
    "sources": [
     {
@@ -18597,7 +19115,7 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q7573934",
    "peopleDatabase": null,
    "sources": [
     {
@@ -18660,7 +19178,7 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q1138374",
    "peopleDatabase": null,
    "sources": [
     {
@@ -18720,7 +19238,7 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q1061504",
    "peopleDatabase": null,
    "sources": [
     {
@@ -18780,7 +19298,7 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q7700206",
    "peopleDatabase": null,
    "sources": [
     {
@@ -18847,7 +19365,7 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q2302280",
    "peopleDatabase": null,
    "sources": [
     {
@@ -18911,7 +19429,7 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q626591",
    "peopleDatabase": null,
    "sources": [
     {
@@ -19261,7 +19779,7 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q559549",
    "peopleDatabase": null,
    "sources": [
     {
@@ -19320,7 +19838,7 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q1569421",
    "peopleDatabase": null,
    "sources": [
     {
@@ -19537,7 +20055,7 @@
    "peopleDatabase": {
     "phdInstitution": "University of Arkansas at Fayetteville",
     "institutionId": "university-of-arkansas-at-fayetteville",
-    "match": "campus-qualifier",
+    "match": "wikidata",
     "people": 10,
     "verifiedFirstJobs": 4
    },
@@ -19623,72 +20141,6 @@
     {
      "url": "http://www.business.auckland.ac.nz/people/isom",
      "title": "Faculty page listed in the directory"
-    }
-   ]
-  },
-  {
-   "id": "university-of-california-riverside",
-   "name": "University of California Riverside",
-   "country": "United States",
-   "departmentCount": 2,
-   "departments": [
-    {
-     "id": "university-of-california-riverside____is",
-     "school": null,
-     "department": "IS",
-     "type": "University",
-     "country": "United States",
-     "facultyUrl": null,
-     "departmentUrl": null,
-     "address": null,
-     "sources": [
-      "postings",
-      "seed"
-     ],
-     "postings": 1,
-     "lastPosted": "2025-09-23",
-     "lat": null,
-     "lng": null,
-     "characteristics": null
-    },
-    {
-     "id": "university-of-california-riverside__a-gary-anderson-graduate-school-of-management__operations-and-supply-chain-management",
-     "school": "A. Gary Anderson Graduate School of Management",
-     "department": "Operations and Supply Chain Management",
-     "type": "Business School",
-     "country": "United States",
-     "facultyUrl": null,
-     "departmentUrl": null,
-     "address": null,
-     "sources": [
-      "postings",
-      "seed"
-     ],
-     "postings": 1,
-     "lastPosted": "2026-09-23",
-     "lat": null,
-     "lng": null,
-     "characteristics": [
-      "Research seminars",
-      "PhD",
-      "Masters",
-      "MBA",
-      "Undergrad"
-     ]
-    }
-   ],
-   "coords": null,
-   "directorySources": [
-    "postings",
-    "seed"
-   ],
-   "wikidata": null,
-   "peopleDatabase": null,
-   "sources": [
-    {
-     "url": "https://www.operationsacademia.org/data/directory.json",
-     "title": "Operations Academia universities directory (flat table behind the universities page)",
-     "retrievedAt": "2026-10-16"
     }
    ]
   },
@@ -19991,7 +20443,7 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q1520608",
    "peopleDatabase": null,
    "sources": [
     {
@@ -20058,7 +20510,7 @@
     "omlist",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q2092392",
    "peopleDatabase": null,
    "sources": [
     {
@@ -20122,7 +20574,71 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q747053",
+   "peopleDatabase": null,
+   "sources": [
+    {
+     "url": "https://www.operationsacademia.org/data/directory.json",
+     "title": "Operations Academia universities directory (flat table behind the universities page)",
+     "retrievedAt": "2026-10-16"
+    }
+   ]
+  },
+  {
+   "id": "university-of-houston-downtown",
+   "name": "University of Houston - Downtown",
+   "spellings": [
+    "University of Houston - Downtown",
+    "University of Houston-Downtown"
+   ],
+   "country": "United States",
+   "departmentCount": 2,
+   "departments": [
+    {
+     "id": "university-of-houston-downtown____mis",
+     "school": null,
+     "department": "MIS",
+     "type": "University",
+     "country": "United States",
+     "facultyUrl": null,
+     "departmentUrl": null,
+     "address": null,
+     "sources": [
+      "postings",
+      "seed"
+     ],
+     "postings": 1,
+     "lastPosted": "2026-03-07",
+     "lat": null,
+     "lng": null,
+     "characteristics": null
+    },
+    {
+     "id": "university-of-houston-downtown____supply-chain-management",
+     "school": null,
+     "department": "Supply Chain Management",
+     "type": "University",
+     "country": "United States",
+     "facultyUrl": null,
+     "departmentUrl": null,
+     "address": null,
+     "sources": [
+      "postings",
+      "seed"
+     ],
+     "postings": 1,
+     "lastPosted": "2026-01-27",
+     "lat": null,
+     "lng": null,
+     "characteristics": null
+    }
+   ],
+   "coords": null,
+   "directorySources": [
+    "postings",
+    "seed"
+   ],
+   "wikidata": "Q7895509",
    "peopleDatabase": null,
    "sources": [
     {
@@ -20182,7 +20698,7 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q1563050",
    "peopleDatabase": null,
    "sources": [
     {
@@ -20372,10 +20888,74 @@
    "peopleDatabase": {
     "phdInstitution": "University of Missouri-Columbia",
     "institutionId": "university-of-missouri-columbia",
-    "match": "campus-qualifier",
+    "match": "wikidata",
     "people": 1,
     "verifiedFirstJobs": 0
    },
+   "sources": [
+    {
+     "url": "https://www.operationsacademia.org/data/directory.json",
+     "title": "Operations Academia universities directory (flat table behind the universities page)",
+     "retrievedAt": "2026-10-16"
+    }
+   ]
+  },
+  {
+   "id": "university-of-nevada-las-vegas",
+   "name": "University of Nevada Las Vegas",
+   "spellings": [
+    "University of Nevada Las Vegas",
+    "University of Nevada, Las Vegas"
+   ],
+   "country": "United States",
+   "departmentCount": 2,
+   "departments": [
+    {
+     "id": "university-of-nevada-las-vegas____supply-chain-management",
+     "school": null,
+     "department": "Supply Chain Management",
+     "type": "University",
+     "country": "United States",
+     "facultyUrl": null,
+     "departmentUrl": null,
+     "address": null,
+     "sources": [
+      "postings",
+      "seed"
+     ],
+     "postings": 1,
+     "lastPosted": "2026-04-23",
+     "lat": null,
+     "lng": null,
+     "characteristics": null
+    },
+    {
+     "id": "university-of-nevada-las-vegas__lee-business-school",
+     "school": "Lee Business School",
+     "department": null,
+     "type": "Business School",
+     "country": "United States",
+     "facultyUrl": null,
+     "departmentUrl": null,
+     "address": null,
+     "sources": [
+      "postings",
+      "seed"
+     ],
+     "postings": 1,
+     "lastPosted": "2026-08-20",
+     "lat": null,
+     "lng": null,
+     "characteristics": null
+    }
+   ],
+   "coords": null,
+   "directorySources": [
+    "postings",
+    "seed"
+   ],
+   "wikidata": "Q2302311",
+   "peopleDatabase": null,
    "sources": [
     {
      "url": "https://www.operationsacademia.org/data/directory.json",
@@ -20577,7 +21157,7 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q1781094",
    "peopleDatabase": null,
    "sources": [
     {
@@ -20640,7 +21220,7 @@
     "omlist",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q34433",
    "peopleDatabase": null,
    "sources": [
     {
@@ -20787,7 +21367,7 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q956780",
    "peopleDatabase": null,
    "sources": [
     {
@@ -20855,7 +21435,7 @@
    "peopleDatabase": {
     "phdInstitution": "University of Tennessee at Knoxville",
     "institutionId": "university-of-tennessee-at-knoxville",
-    "match": "campus-qualifier",
+    "match": "wikidata",
     "people": 10,
     "verifiedFirstJobs": 2
    },
@@ -20868,72 +21448,6 @@
     {
      "url": "http://bas.utk.edu/our-department/faculty/",
      "title": "Faculty page listed in the directory"
-    }
-   ]
-  },
-  {
-   "id": "university-of-tennessee-knoxville",
-   "name": "University of Tennessee - Knoxville",
-   "country": "United States",
-   "departmentCount": 2,
-   "departments": [
-    {
-     "id": "university-of-tennessee-knoxville____supply-chain-management",
-     "school": null,
-     "department": "Supply Chain Management",
-     "type": "University",
-     "country": "United States",
-     "facultyUrl": null,
-     "departmentUrl": null,
-     "address": null,
-     "sources": [
-      "postings",
-      "seed"
-     ],
-     "postings": 2,
-     "lastPosted": "2026-01-31",
-     "lat": null,
-     "lng": null,
-     "characteristics": null
-    },
-    {
-     "id": "university-of-tennessee-knoxville__haslam-college-of-business__business-analytics-and-statistics",
-     "school": "Haslam College of Business",
-     "department": "Business Analytics and Statistics",
-     "type": "Business School",
-     "country": "United States",
-     "facultyUrl": null,
-     "departmentUrl": null,
-     "address": null,
-     "sources": [
-      "postings",
-      "seed"
-     ],
-     "postings": 2,
-     "lastPosted": "2026-06-22",
-     "lat": null,
-     "lng": null,
-     "characteristics": null
-    }
-   ],
-   "coords": null,
-   "directorySources": [
-    "postings",
-    "seed"
-   ],
-   "wikidata": "Q1150105",
-   "peopleDatabase": {
-    "phdInstitution": "University of Tennessee at Knoxville",
-    "institutionId": "university-of-tennessee-at-knoxville",
-    "match": "exact",
-    "people": 10,
-    "verifiedFirstJobs": 2
-   },
-   "sources": [
-    {
-     "url": "https://www.operationsacademia.org/data/directory.json",
-     "title": "Operations Academia universities directory (flat table behind the universities page)",
-     "retrievedAt": "2026-10-16"
     }
    ]
   },
@@ -20987,7 +21501,7 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q1781384",
    "peopleDatabase": null,
    "sources": [
     {
@@ -21113,7 +21627,7 @@
    "directorySources": [
     "directory"
    ],
-   "wikidata": null,
+   "wikidata": "Q6120110",
    "peopleDatabase": null,
    "sources": [
     {
@@ -21324,7 +21838,7 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q940919",
    "peopleDatabase": null,
    "sources": [
     {
@@ -21389,7 +21903,7 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q2303536",
    "peopleDatabase": null,
    "sources": [
     {
@@ -21452,7 +21966,7 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q349055",
    "peopleDatabase": null,
    "sources": [
     {
@@ -21463,66 +21977,6 @@
     {
      "url": "http://ilitchbusiness.wayne.edu/faculty/index.php?group=2150",
      "title": "Faculty page listed in the directory"
-    }
-   ]
-  },
-  {
-   "id": "xi-an-jiaotong-liverpool-university",
-   "name": "Xi'an Jiaotong-Liverpool University",
-   "country": "China",
-   "departmentCount": 2,
-   "departments": [
-    {
-     "id": "xi-an-jiaotong-liverpool-university____sustainability",
-     "school": null,
-     "department": "sustainability",
-     "type": "University",
-     "country": "China",
-     "facultyUrl": null,
-     "departmentUrl": null,
-     "address": null,
-     "sources": [
-      "postings",
-      "seed"
-     ],
-     "postings": 1,
-     "lastPosted": "2025-05-25",
-     "lat": null,
-     "lng": null,
-     "characteristics": null
-    },
-    {
-     "id": "xi-an-jiaotong-liverpool-university__international-business-school-suzhou__intelligent-operations-and-marketing",
-     "school": "International Business School Suzhou",
-     "department": "Intelligent Operations and Marketing",
-     "type": "Business School",
-     "country": "China",
-     "facultyUrl": null,
-     "departmentUrl": null,
-     "address": null,
-     "sources": [
-      "postings",
-      "seed"
-     ],
-     "postings": 1,
-     "lastPosted": "2026-09-15",
-     "lat": null,
-     "lng": null,
-     "characteristics": null
-    }
-   ],
-   "coords": null,
-   "directorySources": [
-    "postings",
-    "seed"
-   ],
-   "wikidata": null,
-   "peopleDatabase": null,
-   "sources": [
-    {
-     "url": "https://www.operationsacademia.org/data/directory.json",
-     "title": "Operations Academia universities directory (flat table behind the universities page)",
-     "retrievedAt": "2026-10-16"
     }
    ]
   },
@@ -21645,7 +22099,7 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q4670157",
    "peopleDatabase": null,
    "sources": [
     {
@@ -21686,7 +22140,7 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q4682076",
    "peopleDatabase": null,
    "sources": [
     {
@@ -21727,7 +22181,7 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q4696126",
    "peopleDatabase": null,
    "sources": [
     {
@@ -21810,7 +22264,7 @@
    "directorySources": [
     "directory"
    ],
-   "wikidata": null,
+   "wikidata": "Q4118882",
    "peopleDatabase": null,
    "sources": [
     {
@@ -21855,7 +22309,7 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q4733529",
    "peopleDatabase": null,
    "sources": [
     {
@@ -21896,7 +22350,7 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q3198283",
    "peopleDatabase": null,
    "sources": [
     {
@@ -21978,7 +22432,7 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q18162019",
    "peopleDatabase": null,
    "sources": [
     {
@@ -22019,7 +22473,7 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q16827955",
    "peopleDatabase": null,
    "sources": [
     {
@@ -22060,7 +22514,7 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q4115992",
    "peopleDatabase": null,
    "sources": [
     {
@@ -22101,7 +22555,7 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q620640",
    "peopleDatabase": null,
    "sources": [
     {
@@ -22142,7 +22596,7 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q673111",
    "peopleDatabase": null,
    "sources": [
     {
@@ -22183,7 +22637,7 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q1523703",
    "peopleDatabase": null,
    "sources": [
     {
@@ -22224,7 +22678,7 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q760516",
    "peopleDatabase": null,
    "sources": [
     {
@@ -22265,7 +22719,7 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q3298397",
    "peopleDatabase": null,
    "sources": [
     {
@@ -22306,7 +22760,7 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q781153",
    "peopleDatabase": null,
    "sources": [
     {
@@ -22347,7 +22801,7 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q650167",
    "peopleDatabase": null,
    "sources": [
     {
@@ -22388,7 +22842,7 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q805122",
    "peopleDatabase": null,
    "sources": [
     {
@@ -22470,7 +22924,7 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q125477",
    "peopleDatabase": null,
    "sources": [
     {
@@ -22552,7 +23006,7 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q2894666",
    "peopleDatabase": null,
    "sources": [
     {
@@ -22593,7 +23047,7 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q4891499",
    "peopleDatabase": null,
    "sources": [
     {
@@ -22634,7 +23088,7 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q4894781",
    "peopleDatabase": null,
    "sources": [
     {
@@ -22673,7 +23127,7 @@
    "directorySources": [
     "members"
    ],
-   "wikidata": null,
+   "wikidata": "Q24382",
    "peopleDatabase": null,
    "sources": [
     {
@@ -22763,7 +23217,7 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q110664494",
    "peopleDatabase": null,
    "sources": [
     {
@@ -22804,7 +23258,7 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q4920974",
    "peopleDatabase": null,
    "sources": [
     {
@@ -22845,7 +23299,7 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q959524",
    "peopleDatabase": null,
    "sources": [
     {
@@ -22886,7 +23340,7 @@
     "omlist",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q959524",
    "peopleDatabase": null,
    "sources": [
     {
@@ -22927,7 +23381,7 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q897052",
    "peopleDatabase": null,
    "sources": [
     {
@@ -22969,7 +23423,7 @@
    "directorySources": [
     "directory"
    ],
-   "wikidata": null,
+   "wikidata": "Q49119",
    "peopleDatabase": null,
    "sources": [
     {
@@ -23014,7 +23468,7 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q3446076",
    "peopleDatabase": null,
    "sources": [
     {
@@ -23055,7 +23509,7 @@
     "omlist",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q332498",
    "peopleDatabase": null,
    "sources": [
     {
@@ -23096,7 +23550,7 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q1012699",
    "peopleDatabase": null,
    "sources": [
     {
@@ -23137,7 +23591,7 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q1017974",
    "peopleDatabase": null,
    "sources": [
     {
@@ -23178,7 +23632,7 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q1026846",
    "peopleDatabase": null,
    "sources": [
     {
@@ -23219,94 +23673,7 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
-   "peopleDatabase": null,
-   "sources": [
-    {
-     "url": "https://www.operationsacademia.org/data/directory.json",
-     "title": "Operations Academia universities directory (flat table behind the universities page)",
-     "retrievedAt": "2026-10-16"
-    }
-   ]
-  },
-  {
-   "id": "california-state-polytechnic-university-pomona",
-   "name": "California State Polytechnic University Pomona",
-   "country": "United States",
-   "departmentCount": 1,
-   "departments": [
-    {
-     "id": "california-state-polytechnic-university-pomona____technology-and-operations-management",
-     "school": null,
-     "department": "Technology and Operations Management",
-     "type": "University",
-     "country": "United States",
-     "facultyUrl": "https://www.cpp.edu/~cba/our-faculty/index.shtml",
-     "departmentUrl": null,
-     "address": "3801 W Temple Ave, Pomona, CA 91768",
-     "sources": [
-      "directory",
-      "postings"
-     ],
-     "postings": 1,
-     "lastPosted": "2014-09-26",
-     "lat": 34.0595698,
-     "lng": -117.8194997,
-     "characteristics": null
-    }
-   ],
-   "coords": [
-    34.0595698,
-    -117.8194997
-   ],
-   "directorySources": [
-    "directory",
-    "postings"
-   ],
-   "wikidata": null,
-   "peopleDatabase": null,
-   "sources": [
-    {
-     "url": "https://www.operationsacademia.org/data/directory.json",
-     "title": "Operations Academia universities directory (flat table behind the universities page)",
-     "retrievedAt": "2026-10-16"
-    },
-    {
-     "url": "https://www.cpp.edu/~cba/our-faculty/index.shtml",
-     "title": "Faculty page listed in the directory"
-    }
-   ]
-  },
-  {
-   "id": "california-state-polytechnic-university-pomona",
-   "name": "California State Polytechnic University, Pomona",
-   "country": null,
-   "departmentCount": 1,
-   "departments": [
-    {
-     "id": "california-state-polytechnic-university-pomona__college-of-business-administration__computer-information-systems",
-     "school": "College of Business Administration",
-     "department": "Computer Information Systems",
-     "type": "Business School",
-     "country": null,
-     "facultyUrl": null,
-     "departmentUrl": null,
-     "address": null,
-     "sources": [
-      "seed"
-     ],
-     "postings": null,
-     "lastPosted": null,
-     "lat": null,
-     "lng": null,
-     "characteristics": null
-    }
-   ],
-   "coords": null,
-   "directorySources": [
-    "seed"
-   ],
-   "wikidata": null,
+   "wikidata": "Q5019140",
    "peopleDatabase": null,
    "sources": [
     {
@@ -23347,7 +23714,7 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q1026902",
    "peopleDatabase": null,
    "sources": [
     {
@@ -23389,7 +23756,7 @@
    "directorySources": [
     "directory"
    ],
-   "wikidata": null,
+   "wikidata": "Q1026916",
    "peopleDatabase": null,
    "sources": [
     {
@@ -23434,7 +23801,7 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q1026925",
    "peopleDatabase": null,
    "sources": [
     {
@@ -23475,7 +23842,7 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q1026926",
    "peopleDatabase": null,
    "sources": [
     {
@@ -23516,7 +23883,7 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q1026939",
    "peopleDatabase": null,
    "sources": [
     {
@@ -23557,7 +23924,7 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q1026941",
    "peopleDatabase": null,
    "sources": [
     {
@@ -23598,7 +23965,7 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q2698482",
    "peopleDatabase": null,
    "sources": [
     {
@@ -23639,7 +24006,7 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q5028213",
    "peopleDatabase": null,
    "sources": [
     {
@@ -23825,7 +24192,7 @@
    "directorySources": [
     "directory"
    ],
-   "wikidata": null,
+   "wikidata": "Q125477",
    "peopleDatabase": null,
    "sources": [
     {
@@ -23911,7 +24278,7 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q1054064",
    "peopleDatabase": null,
    "sources": [
     {
@@ -23997,7 +24364,7 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q1805085",
    "peopleDatabase": null,
    "sources": [
     {
@@ -24038,7 +24405,7 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q5087708",
    "peopleDatabase": null,
    "sources": [
     {
@@ -24079,7 +24446,7 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q1073268",
    "peopleDatabase": null,
    "sources": [
     {
@@ -24121,7 +24488,7 @@
    "directorySources": [
     "directory"
    ],
-   "wikidata": null,
+   "wikidata": "Q762266",
    "peopleDatabase": null,
    "sources": [
     {
@@ -24166,7 +24533,7 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q4507421",
    "peopleDatabase": null,
    "sources": [
     {
@@ -24207,7 +24574,7 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q5146845",
    "peopleDatabase": null,
    "sources": [
     {
@@ -24249,7 +24616,7 @@
    "directorySources": [
     "directory"
    ],
-   "wikidata": null,
+   "wikidata": "Q875637",
    "peopleDatabase": null,
    "sources": [
     {
@@ -24294,7 +24661,7 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q1111367",
    "peopleDatabase": null,
    "sources": [
     {
@@ -24337,7 +24704,7 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q1111640",
    "peopleDatabase": null,
    "sources": [
     {
@@ -24378,7 +24745,7 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q5149615",
    "peopleDatabase": null,
    "sources": [
     {
@@ -24419,7 +24786,7 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q907481",
    "peopleDatabase": null,
    "sources": [
     {
@@ -24461,7 +24828,7 @@
    "directorySources": [
     "directory"
    ],
-   "wikidata": null,
+   "wikidata": "Q326342",
    "peopleDatabase": null,
    "sources": [
     {
@@ -24506,7 +24873,7 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q5159004",
    "peopleDatabase": null,
    "sources": [
     {
@@ -24600,106 +24967,13 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q5168881",
    "peopleDatabase": null,
    "sources": [
     {
      "url": "https://www.operationsacademia.org/data/directory.json",
      "title": "Operations Academia universities directory (flat table behind the universities page)",
      "retrievedAt": "2026-10-16"
-    }
-   ]
-  },
-  {
-   "id": "cornell-university-cornell-tech",
-   "name": "Cornell University (Cornell Tech)",
-   "country": null,
-   "departmentCount": 1,
-   "departments": [
-    {
-     "id": "cornell-university-cornell-tech____operations-research-and-information-engineering",
-     "school": null,
-     "department": "Operations Research and Information Engineering",
-     "type": "University",
-     "country": null,
-     "facultyUrl": null,
-     "departmentUrl": null,
-     "address": null,
-     "sources": [
-      "seed"
-     ],
-     "postings": null,
-     "lastPosted": null,
-     "lat": null,
-     "lng": null,
-     "characteristics": null
-    }
-   ],
-   "coords": null,
-   "directorySources": [
-    "seed"
-   ],
-   "wikidata": "Q49115",
-   "peopleDatabase": {
-    "phdInstitution": "Cornell University",
-    "institutionId": "cornell-university",
-    "match": "exact",
-    "people": 37,
-    "verifiedFirstJobs": 21
-   },
-   "sources": [
-    {
-     "url": "https://www.operationsacademia.org/data/directory.json",
-     "title": "Operations Academia universities directory (flat table behind the universities page)",
-     "retrievedAt": "2026-10-16"
-    }
-   ]
-  },
-  {
-   "id": "cornell-university-cornell-tech",
-   "name": "Cornell University/ Cornell Tech",
-   "country": "United States",
-   "departmentCount": 1,
-   "departments": [
-    {
-     "id": "cornell-university-cornell-tech__samuel-curtis-johnson-graduate-school-of-management",
-     "school": "Samuel Curtis Johnson Graduate School of Management",
-     "department": null,
-     "type": "Business School",
-     "country": "United States",
-     "facultyUrl": "https://www.johnson.cornell.edu/Faculty-And-Research/Faculty-by-Discipline",
-     "departmentUrl": null,
-     "address": "2 W Loop Rd, New York, NY 10044",
-     "sources": [
-      "directory",
-      "postings"
-     ],
-     "postings": 1,
-     "lastPosted": "2014-10-21",
-     "lat": 40.755644,
-     "lng": -73.9560965,
-     "characteristics": null
-    }
-   ],
-   "coords": [
-    40.755644,
-    -73.9560965
-   ],
-   "directorySources": [
-    "directory",
-    "postings"
-   ],
-   "wikidata": null,
-   "peopleDatabase": null,
-   "sources": [
-    {
-     "url": "https://www.operationsacademia.org/data/directory.json",
-     "title": "Operations Academia universities directory (flat table behind the universities page)",
-     "retrievedAt": "2026-10-16"
-    },
-    {
-     "url": "https://www.johnson.cornell.edu/Faculty-And-Research/Faculty-by-Discipline",
-     "title": "Faculty page listed in the directory"
     }
    ]
   },
@@ -24734,7 +25008,7 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q5175610",
    "peopleDatabase": null,
    "sources": [
     {
@@ -24775,7 +25049,7 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q5177637",
    "peopleDatabase": null,
    "sources": [
     {
@@ -24863,7 +25137,7 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q120751643",
    "peopleDatabase": null,
    "sources": [
     {
@@ -24904,7 +25178,7 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q25409994",
    "peopleDatabase": null,
    "sources": [
     {
@@ -24986,7 +25260,7 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q5210049",
    "peopleDatabase": null,
    "sources": [
     {
@@ -25027,7 +25301,7 @@
     "omlist",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q1179603",
    "peopleDatabase": null,
    "sources": [
     {
@@ -25068,7 +25342,7 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q5244080",
    "peopleDatabase": null,
    "sources": [
     {
@@ -25150,7 +25424,7 @@
     "omlist",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q603034",
    "peopleDatabase": null,
    "sources": [
     {
@@ -25192,7 +25466,7 @@
    "directorySources": [
     "directory"
    ],
-   "wikidata": null,
+   "wikidata": "Q458393",
    "peopleDatabase": null,
    "sources": [
     {
@@ -25237,7 +25511,7 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q634669",
    "peopleDatabase": null,
    "sources": [
     {
@@ -25278,7 +25552,7 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q624985",
    "peopleDatabase": null,
    "sources": [
     {
@@ -25320,8 +25594,14 @@
    "directorySources": [
     "directory"
    ],
-   "wikidata": null,
-   "peopleDatabase": null,
+   "wikidata": "Q316272",
+   "peopleDatabase": {
+    "phdInstitution": "European Business School",
+    "institutionId": "european-business-school",
+    "match": "wikidata",
+    "people": 1,
+    "verifiedFirstJobs": 0
+   },
    "sources": [
     {
      "url": "https://www.operationsacademia.org/data/directory.json",
@@ -25330,103 +25610,6 @@
     },
     {
      "url": "https://www.ebs.edu/en/business-school/departments/operations/department-members/",
-     "title": "Faculty page listed in the directory"
-    }
-   ]
-  },
-  {
-   "id": "ecole-polytechnique-federale-de-lausanne-epfl",
-   "name": "École polytechnique fédérale de Lausanne (EPFL)",
-   "country": "Switzerland",
-   "departmentCount": 1,
-   "departments": [
-    {
-     "id": "ecole-polytechnique-federale-de-lausanne__college-of-management-cdm__chair-of-technology-and-operations-management-tom",
-     "school": "College of Management CDM",
-     "department": "Chair of Technology and Operations Management TOM",
-     "type": "Business School",
-     "country": "Switzerland",
-     "facultyUrl": null,
-     "departmentUrl": null,
-     "address": null,
-     "sources": [
-      "postings"
-     ],
-     "postings": 1,
-     "lastPosted": "2014-09-11",
-     "lat": null,
-     "lng": null,
-     "characteristics": null
-    }
-   ],
-   "coords": null,
-   "directorySources": [
-    "postings"
-   ],
-   "wikidata": "Q262760",
-   "peopleDatabase": {
-    "phdInstitution": "École polytechnique fédérale de Lausanne",
-    "institutionId": "ecole-polytechnique-federale-de-lausanne",
-    "match": "exact",
-    "people": 2,
-    "verifiedFirstJobs": 1
-   },
-   "sources": [
-    {
-     "url": "https://www.operationsacademia.org/data/directory.json",
-     "title": "Operations Academia universities directory (flat table behind the universities page)",
-     "retrievedAt": "2026-10-16"
-    }
-   ]
-  },
-  {
-   "id": "ecole-polytechnique-federale-de-lausanne-epfl",
-   "name": "École Polytechnique Fédérale de Lausanne (EPFL)",
-   "country": "Switzerland",
-   "departmentCount": 1,
-   "departments": [
-    {
-     "id": "ecole-polytechnique-federale-de-lausanne__college-of-management-of-technology-cmt__technology-and-operations-management",
-     "school": "College of Management of Technology (CMT)",
-     "department": "Technology and Operations Management",
-     "type": null,
-     "country": "Switzerland",
-     "facultyUrl": "http://tom.epfl.ch/team",
-     "departmentUrl": null,
-     "address": "Route Cantonale, 1015 Lausanne, Switzerland",
-     "sources": [
-      "directory"
-     ],
-     "postings": null,
-     "lastPosted": null,
-     "lat": 46.5182428,
-     "lng": 6.5729056,
-     "characteristics": null
-    }
-   ],
-   "coords": [
-    46.5182428,
-    6.5729056
-   ],
-   "directorySources": [
-    "directory"
-   ],
-   "wikidata": "Q262760",
-   "peopleDatabase": {
-    "phdInstitution": "École polytechnique fédérale de Lausanne",
-    "institutionId": "ecole-polytechnique-federale-de-lausanne",
-    "match": "exact",
-    "people": 2,
-    "verifiedFirstJobs": 1
-   },
-   "sources": [
-    {
-     "url": "https://www.operationsacademia.org/data/directory.json",
-     "title": "Operations Academia universities directory (flat table behind the universities page)",
-     "retrievedAt": "2026-10-16"
-    },
-    {
-     "url": "http://tom.epfl.ch/team",
      "title": "Faculty page listed in the directory"
     }
    ]
@@ -25607,7 +25790,7 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q5376124",
    "peopleDatabase": null,
    "sources": [
     {
@@ -25646,8 +25829,14 @@
    "directorySources": [
     "postings"
    ],
-   "wikidata": null,
-   "peopleDatabase": null,
+   "wikidata": "Q633529",
+   "peopleDatabase": {
+    "phdInstitution": "Erasmus University Rotterdam",
+    "institutionId": "erasmus-university-rotterdam",
+    "match": "wikidata",
+    "people": 24,
+    "verifiedFirstJobs": 2
+   },
    "sources": [
     {
      "url": "https://www.operationsacademia.org/data/directory.json",
@@ -25687,7 +25876,7 @@
     "omlist",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q569528",
    "peopleDatabase": null,
    "sources": [
     {
@@ -25776,7 +25965,7 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q41114",
    "peopleDatabase": null,
    "sources": [
     {
@@ -25817,7 +26006,7 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q5454775",
    "peopleDatabase": null,
    "sources": [
     {
@@ -25858,7 +26047,7 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q1430054",
    "peopleDatabase": null,
    "sources": [
     {
@@ -25899,7 +26088,7 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q5461548",
    "peopleDatabase": null,
    "sources": [
     {
@@ -25940,7 +26129,7 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q664881",
    "peopleDatabase": null,
    "sources": [
     {
@@ -26039,7 +26228,7 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q5539406",
    "peopleDatabase": null,
    "sources": [
     {
@@ -26080,7 +26269,7 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q5547419",
    "peopleDatabase": null,
    "sources": [
     {
@@ -26121,7 +26310,7 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q5547517",
    "peopleDatabase": null,
    "sources": [
     {
@@ -26162,7 +26351,7 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q5547746",
    "peopleDatabase": null,
    "sources": [
     {
@@ -26203,8 +26392,14 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
-   "peopleDatabase": null,
+   "wikidata": "Q864855",
+   "peopleDatabase": {
+    "phdInstitution": "Georgia Institute of Technology",
+    "institutionId": "georgia-institute-of-technology",
+    "match": "wikidata",
+    "people": 47,
+    "verifiedFirstJobs": 25
+   },
    "sources": [
     {
      "url": "https://www.operationsacademia.org/data/directory.json",
@@ -26291,7 +26486,7 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q14685417",
    "peopleDatabase": null,
    "sources": [
     {
@@ -26332,7 +26527,7 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q1472315",
    "peopleDatabase": null,
    "sources": [
     {
@@ -26414,7 +26609,7 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q24911975",
    "peopleDatabase": null,
    "sources": [
     {
@@ -26455,7 +26650,7 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q5666316",
    "peopleDatabase": null,
    "sources": [
     {
@@ -26496,7 +26691,7 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q49126",
    "peopleDatabase": null,
    "sources": [
     {
@@ -26540,7 +26735,7 @@
     "directory",
     "postings"
    ],
-   "wikidata": null,
+   "wikidata": "Q49127",
    "peopleDatabase": null,
    "sources": [
     {
@@ -26585,7 +26780,7 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q1604967",
    "peopleDatabase": null,
    "sources": [
     {
@@ -26626,7 +26821,7 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q5756235",
    "peopleDatabase": null,
    "sources": [
     {
@@ -26757,7 +26952,7 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q5897438",
    "peopleDatabase": null,
    "sources": [
     {
@@ -26846,7 +27041,7 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q1656608",
    "peopleDatabase": null,
    "sources": [
     {
@@ -26887,7 +27082,7 @@
     "omlist",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q3156522",
    "peopleDatabase": null,
    "sources": [
     {
@@ -26928,8 +27123,14 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
-   "peopleDatabase": null,
+   "wikidata": "Q46027",
+   "peopleDatabase": {
+    "phdInstitution": "Indian Institute of Management Ahmedabad",
+    "institutionId": "indian-institute-of-management-ahmedabad",
+    "match": "wikidata",
+    "people": 1,
+    "verifiedFirstJobs": 0
+   },
    "sources": [
     {
      "url": "https://www.operationsacademia.org/data/directory.json",
@@ -27072,7 +27273,7 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q6608367",
    "peopleDatabase": null,
    "sources": [
     {
@@ -27117,7 +27318,7 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q6608367",
    "peopleDatabase": null,
    "sources": [
     {
@@ -27205,7 +27406,7 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q6023619",
    "peopleDatabase": null,
    "sources": [
     {
@@ -27246,7 +27447,7 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q124882",
    "peopleDatabase": null,
    "sources": [
     {
@@ -27287,7 +27488,7 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q258943",
    "peopleDatabase": null,
    "sources": [
     {
@@ -27386,7 +27587,7 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q1798494",
    "peopleDatabase": null,
    "sources": [
     {
@@ -27464,7 +27665,7 @@
    "directorySources": [
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q61931589",
    "peopleDatabase": null,
    "sources": [
     {
@@ -27505,7 +27706,7 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q6382148",
    "peopleDatabase": null,
    "sources": [
     {
@@ -27563,53 +27764,6 @@
    ]
   },
   {
-   "id": "koc-university",
-   "name": "Koc University",
-   "country": "Turkey",
-   "departmentCount": 1,
-   "departments": [
-    {
-     "id": "koc-university____om-is",
-     "school": null,
-     "department": "OM/IS",
-     "type": "University",
-     "country": "Turkey",
-     "facultyUrl": null,
-     "departmentUrl": null,
-     "address": null,
-     "sources": [
-      "postings",
-      "seed"
-     ],
-     "postings": 1,
-     "lastPosted": "2025-09-27",
-     "lat": null,
-     "lng": null,
-     "characteristics": null
-    }
-   ],
-   "coords": null,
-   "directorySources": [
-    "postings",
-    "seed"
-   ],
-   "wikidata": "Q1193155",
-   "peopleDatabase": {
-    "phdInstitution": "Koç University",
-    "institutionId": "koc-university",
-    "match": "exact",
-    "people": 2,
-    "verifiedFirstJobs": 1
-   },
-   "sources": [
-    {
-     "url": "https://www.operationsacademia.org/data/directory.json",
-     "title": "Operations Academia universities directory (flat table behind the universities page)",
-     "retrievedAt": "2026-10-16"
-    }
-   ]
-  },
-  {
    "id": "kogod-school-of-business",
    "name": "Kogod School of Business",
    "country": "United States",
@@ -27643,7 +27797,7 @@
     "directory",
     "postings"
    ],
-   "wikidata": null,
+   "wikidata": "Q3198283",
    "peopleDatabase": null,
    "sources": [
     {
@@ -27688,7 +27842,7 @@
     "omlist",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q39997",
    "peopleDatabase": null,
    "sources": [
     {
@@ -27729,7 +27883,7 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q3106542",
    "peopleDatabase": null,
    "sources": [
     {
@@ -27770,7 +27924,7 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q6475773",
    "peopleDatabase": null,
    "sources": [
     {
@@ -27858,8 +28012,14 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
-   "peopleDatabase": null,
+   "wikidata": "Q1481050",
+   "peopleDatabase": {
+    "phdInstitution": "London Business School",
+    "institutionId": "london-business-school",
+    "match": "wikidata",
+    "people": 4,
+    "verifiedFirstJobs": 4
+   },
    "sources": [
     {
      "url": "https://www.operationsacademia.org/data/directory.json",
@@ -27899,7 +28059,7 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q5591138",
    "peopleDatabase": null,
    "sources": [
     {
@@ -27940,7 +28100,7 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q6516492",
    "peopleDatabase": null,
    "sources": [
     {
@@ -27981,7 +28141,7 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q6523054",
    "peopleDatabase": null,
    "sources": [
     {
@@ -28022,7 +28182,7 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q14710034",
    "peopleDatabase": null,
    "sources": [
     {
@@ -28064,7 +28224,7 @@
    "directorySources": [
     "directory"
    ],
-   "wikidata": null,
+   "wikidata": "Q1541161",
    "peopleDatabase": null,
    "sources": [
     {
@@ -28171,7 +28331,7 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q4117087",
    "peopleDatabase": null,
    "sources": [
     {
@@ -28212,7 +28372,7 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q3551429",
    "peopleDatabase": null,
    "sources": [
     {
@@ -28341,7 +28501,7 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q5978689",
    "peopleDatabase": null,
    "sources": [
     {
@@ -28382,7 +28542,7 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q6761994",
    "peopleDatabase": null,
    "sources": [
     {
@@ -28423,7 +28583,7 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q188370",
    "peopleDatabase": null,
    "sources": [
     {
@@ -28465,7 +28625,7 @@
    "directorySources": [
     "directory"
    ],
-   "wikidata": null,
+   "wikidata": "Q16951274",
    "peopleDatabase": null,
    "sources": [
     {
@@ -28513,7 +28673,7 @@
     "directory",
     "postings"
    ],
-   "wikidata": null,
+   "wikidata": "Q1895354",
    "peopleDatabase": null,
    "sources": [
     {
@@ -28558,7 +28718,7 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q16951582",
    "peopleDatabase": null,
    "sources": [
     {
@@ -28681,7 +28841,7 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q1939211",
    "peopleDatabase": null,
    "sources": [
     {
@@ -28726,7 +28886,7 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q6879708",
    "peopleDatabase": null,
    "sources": [
     {
@@ -28767,7 +28927,7 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q1249251",
    "peopleDatabase": null,
    "sources": [
     {
@@ -28809,7 +28969,7 @@
    "directorySources": [
     "directory"
    ],
-   "wikidata": null,
+   "wikidata": "Q4380853",
    "peopleDatabase": null,
    "sources": [
     {
@@ -28852,8 +29012,14 @@
    "directorySources": [
     "seed"
    ],
-   "wikidata": null,
-   "peopleDatabase": null,
+   "wikidata": "Q49108",
+   "peopleDatabase": {
+    "phdInstitution": "Massachusetts Institute of Technology",
+    "institutionId": "massachusetts-institute-of-technology",
+    "match": "wikidata",
+    "people": 140,
+    "verifiedFirstJobs": 87
+   },
    "sources": [
     {
      "url": "https://www.operationsacademia.org/data/directory.json",
@@ -28893,7 +29059,7 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q6912982",
    "peopleDatabase": null,
    "sources": [
     {
@@ -28934,7 +29100,7 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q574586",
    "peopleDatabase": null,
    "sources": [
     {
@@ -28976,7 +29142,7 @@
    "directorySources": [
     "directory"
    ],
-   "wikidata": null,
+   "wikidata": "Q43401",
    "peopleDatabase": null,
    "sources": [
     {
@@ -29078,7 +29244,7 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q1515048",
    "peopleDatabase": null,
    "sources": [
     {
@@ -29121,7 +29287,7 @@
    "directorySources": [
     "members"
    ],
-   "wikidata": null,
+   "wikidata": "Q2783344",
    "peopleDatabase": null,
    "sources": [
     {
@@ -29244,7 +29410,7 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q1658675",
    "peopleDatabase": null,
    "sources": [
     {
@@ -29326,7 +29492,7 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q1709596",
    "peopleDatabase": null,
    "sources": [
     {
@@ -29419,7 +29585,7 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q566189",
    "peopleDatabase": null,
    "sources": [
     {
@@ -29460,7 +29626,7 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q632506",
    "peopleDatabase": null,
    "sources": [
     {
@@ -29501,7 +29667,7 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q1476484",
    "peopleDatabase": null,
    "sources": [
     {
@@ -29542,7 +29708,7 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q1476484",
    "peopleDatabase": null,
    "sources": [
     {
@@ -29630,7 +29796,7 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q7055690",
    "peopleDatabase": null,
    "sources": [
     {
@@ -29671,7 +29837,7 @@
     "omlist",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q1191344",
    "peopleDatabase": null,
    "sources": [
     {
@@ -29712,7 +29878,7 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q2001033",
    "peopleDatabase": null,
    "sources": [
     {
@@ -29753,8 +29919,14 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
-   "peopleDatabase": null,
+   "wikidata": "Q309350",
+   "peopleDatabase": {
+    "phdInstitution": "Northwestern University",
+    "institutionId": "northwestern-university",
+    "match": "wikidata",
+    "people": 45,
+    "verifiedFirstJobs": 24
+   },
    "sources": [
     {
      "url": "https://www.operationsacademia.org/data/directory.json",
@@ -29794,7 +29966,7 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q1979891",
    "peopleDatabase": null,
    "sources": [
     {
@@ -29835,7 +30007,7 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q32746",
    "peopleDatabase": null,
    "sources": [
     {
@@ -29876,7 +30048,7 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q770467",
    "peopleDatabase": null,
    "sources": [
     {
@@ -29917,7 +30089,7 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q782116",
    "peopleDatabase": null,
    "sources": [
     {
@@ -30005,7 +30177,7 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q7127976",
    "peopleDatabase": null,
    "sources": [
     {
@@ -30049,8 +30221,14 @@
     "directory",
     "postings"
    ],
-   "wikidata": null,
-   "peopleDatabase": null,
+   "wikidata": "Q24543",
+   "peopleDatabase": {
+    "phdInstitution": "Universitat Pompeu Fabra",
+    "institutionId": "universitat-pompeu-fabra",
+    "match": "wikidata",
+    "people": 2,
+    "verifiedFirstJobs": 0
+   },
    "sources": [
     {
      "url": "https://www.operationsacademia.org/data/directory.json",
@@ -30095,7 +30273,7 @@
    "directorySources": [
     "directory"
    ],
-   "wikidata": null,
+   "wikidata": "Q1129925",
    "peopleDatabase": null,
    "sources": [
     {
@@ -30140,7 +30318,7 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q3306469",
    "peopleDatabase": null,
    "sources": [
     {
@@ -30240,7 +30418,7 @@
     "directory",
     "postings"
    ],
-   "wikidata": null,
+   "wikidata": "Q1439629",
    "peopleDatabase": null,
    "sources": [
     {
@@ -30326,7 +30504,7 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q6023669",
    "peopleDatabase": null,
    "sources": [
     {
@@ -30368,7 +30546,7 @@
    "directorySources": [
     "directory"
    ],
-   "wikidata": null,
+   "wikidata": "Q1574578",
    "peopleDatabase": null,
    "sources": [
     {
@@ -30413,7 +30591,7 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q7270829",
    "peopleDatabase": null,
    "sources": [
     {
@@ -30454,7 +30632,7 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q7272195",
    "peopleDatabase": null,
    "sources": [
     {
@@ -30500,7 +30678,7 @@
     "omlist",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q842909",
    "peopleDatabase": null,
    "sources": [
     {
@@ -30545,7 +30723,7 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q2140778",
    "peopleDatabase": null,
    "sources": [
     {
@@ -30625,7 +30803,7 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q5594651",
    "peopleDatabase": null,
    "sources": [
     {
@@ -30666,7 +30844,7 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q1799872",
    "peopleDatabase": null,
    "sources": [
     {
@@ -30842,7 +31020,7 @@
     "omlist",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q700758",
    "peopleDatabase": null,
    "sources": [
     {
@@ -30883,7 +31061,7 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q734774",
    "peopleDatabase": null,
    "sources": [
     {
@@ -30924,7 +31102,7 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q1422594",
    "peopleDatabase": null,
    "sources": [
     {
@@ -30965,7 +31143,7 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q120751586",
    "peopleDatabase": null,
    "sources": [
     {
@@ -31007,7 +31185,7 @@
    "directorySources": [
     "directory"
    ],
-   "wikidata": null,
+   "wikidata": "Q1256981",
    "peopleDatabase": null,
    "sources": [
     {
@@ -31017,52 +31195,6 @@
     },
     {
      "url": "http://cob6.sfsu.edu/decision-sciences/faculty",
-     "title": "Faculty page listed in the directory"
-    }
-   ]
-  },
-  {
-   "id": "san-jose-state-university",
-   "name": "San Jose State University",
-   "country": "United States",
-   "departmentCount": 1,
-   "departments": [
-    {
-     "id": "san-jose-state-university__lucas-college-and-graduate-school-of-business__marketing-and-decision-sciences",
-     "school": "Lucas College and Graduate School of Business",
-     "department": "Marketing and Decision Sciences",
-     "type": "Business School",
-     "country": "United States",
-     "facultyUrl": "http://www.sjsu.edu/mktds/faculty/",
-     "departmentUrl": null,
-     "address": "1 Washington Square, San Jose, CA 95112",
-     "sources": [
-      "directory"
-     ],
-     "postings": null,
-     "lastPosted": null,
-     "lat": 37.3379434,
-     "lng": -121.9378605,
-     "characteristics": null
-    }
-   ],
-   "coords": [
-    37.3379434,
-    -121.9378605
-   ],
-   "directorySources": [
-    "directory"
-   ],
-   "wikidata": null,
-   "peopleDatabase": null,
-   "sources": [
-    {
-     "url": "https://www.operationsacademia.org/data/directory.json",
-     "title": "Operations Academia universities directory (flat table behind the universities page)",
-     "retrievedAt": "2026-10-16"
-    },
-    {
-     "url": "http://www.sjsu.edu/mktds/faculty/",
      "title": "Faculty page listed in the directory"
     }
    ]
@@ -31098,7 +31230,7 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q1020699",
    "peopleDatabase": null,
    "sources": [
     {
@@ -31139,7 +31271,7 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q3474474",
    "peopleDatabase": null,
    "sources": [
     {
@@ -31180,7 +31312,7 @@
     "omlist",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q39913",
    "peopleDatabase": null,
    "sources": [
     {
@@ -31221,7 +31353,7 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q7487933",
    "peopleDatabase": null,
    "sources": [
     {
@@ -31262,7 +31394,7 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q7502154",
    "peopleDatabase": null,
    "sources": [
     {
@@ -31308,7 +31440,7 @@
     "omlist",
     "postings"
    ],
-   "wikidata": null,
+   "wikidata": "Q201603",
    "peopleDatabase": null,
    "sources": [
     {
@@ -31452,7 +31584,7 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q7533758",
    "peopleDatabase": null,
    "sources": [
     {
@@ -31496,7 +31628,7 @@
     "directory",
     "postings"
    ],
-   "wikidata": null,
+   "wikidata": "Q4422083",
    "peopleDatabase": null,
    "sources": [
     {
@@ -31541,7 +31673,7 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q7345110",
    "peopleDatabase": null,
    "sources": [
     {
@@ -31580,7 +31712,7 @@
    "directorySources": [
     "members"
    ],
-   "wikidata": null,
+   "wikidata": "Q374457",
    "peopleDatabase": null,
    "sources": [
     {
@@ -31621,7 +31753,7 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q1724577",
    "peopleDatabase": null,
    "sources": [
     {
@@ -31662,7 +31794,7 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q1472474",
    "peopleDatabase": null,
    "sources": [
     {
@@ -31704,7 +31836,7 @@
    "directorySources": [
     "directory"
    ],
-   "wikidata": null,
+   "wikidata": "Q7568723",
    "peopleDatabase": null,
    "sources": [
     {
@@ -31749,7 +31881,7 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q632573",
    "peopleDatabase": null,
    "sources": [
     {
@@ -31790,7 +31922,7 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q7571324",
    "peopleDatabase": null,
    "sources": [
     {
@@ -31832,7 +31964,7 @@
    "directorySources": [
     "directory"
    ],
-   "wikidata": null,
+   "wikidata": "Q7392844",
    "peopleDatabase": null,
    "sources": [
     {
@@ -31877,7 +32009,7 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q7588902",
    "peopleDatabase": null,
    "sources": [
     {
@@ -31918,7 +32050,7 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q1136874",
    "peopleDatabase": null,
    "sources": [
     {
@@ -31959,7 +32091,7 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q3551491",
    "peopleDatabase": null,
    "sources": [
     {
@@ -32046,7 +32178,7 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q1413558",
    "peopleDatabase": null,
    "sources": [
     {
@@ -32087,7 +32219,7 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q6149540",
    "peopleDatabase": null,
    "sources": [
     {
@@ -32128,7 +32260,7 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q2341039",
    "peopleDatabase": null,
    "sources": [
     {
@@ -32223,7 +32355,7 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q14715866",
    "peopleDatabase": null,
    "sources": [
     {
@@ -32262,7 +32394,7 @@
    "directorySources": [
     "members"
    ],
-   "wikidata": null,
+   "wikidata": "Q41085",
    "peopleDatabase": null,
    "sources": [
     {
@@ -32303,7 +32435,7 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q16098697",
    "peopleDatabase": null,
    "sources": [
     {
@@ -32487,7 +32619,7 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q1343885",
    "peopleDatabase": null,
    "sources": [
     {
@@ -32621,7 +32753,7 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q1782948",
    "peopleDatabase": null,
    "sources": [
     {
@@ -32662,7 +32794,7 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q7700242",
    "peopleDatabase": null,
    "sources": [
     {
@@ -32703,7 +32835,7 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q7707466",
    "peopleDatabase": null,
    "sources": [
     {
@@ -32744,7 +32876,7 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q7707476",
    "peopleDatabase": null,
    "sources": [
     {
@@ -32785,7 +32917,7 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q179036",
    "peopleDatabase": null,
    "sources": [
     {
@@ -32882,7 +33014,7 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q7726772",
    "peopleDatabase": null,
    "sources": [
     {
@@ -32970,14 +33102,8 @@
    "directorySources": [
     "postings"
    ],
-   "wikidata": "Q1333303",
-   "peopleDatabase": {
-    "phdInstitution": "Hong Kong University of Science and Technology",
-    "institutionId": "hong-kong-university-of-science-and-technology",
-    "match": "exact",
-    "people": 19,
-    "verifiedFirstJobs": 9
-   },
+   "wikidata": null,
+   "peopleDatabase": null,
    "sources": [
     {
      "url": "https://www.operationsacademia.org/data/directory.json",
@@ -33325,7 +33451,7 @@
    "directorySources": [
     "postings"
    ],
-   "wikidata": null,
+   "wikidata": "Q487556",
    "peopleDatabase": null,
    "sources": [
     {
@@ -33464,7 +33590,7 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q16947",
    "peopleDatabase": null,
    "sources": [
     {
@@ -33505,7 +33631,7 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q1311379",
    "peopleDatabase": null,
    "sources": [
     {
@@ -33587,7 +33713,7 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q4564294",
    "peopleDatabase": null,
    "sources": [
     {
@@ -33710,7 +33836,7 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q20876413",
    "peopleDatabase": null,
    "sources": [
     {
@@ -33835,8 +33961,14 @@
    "directorySources": [
     "directory"
    ],
-   "wikidata": null,
-   "peopleDatabase": null,
+   "wikidata": "Q232141",
+   "peopleDatabase": {
+    "phdInstitution": "University of Chile",
+    "institutionId": "university-of-chile",
+    "match": "wikidata",
+    "people": 1,
+    "verifiedFirstJobs": 0
+   },
    "sources": [
     {
      "url": "https://www.operationsacademia.org/data/directory.json",
@@ -33881,7 +34013,7 @@
    "directorySources": [
     "directory"
    ],
-   "wikidata": null,
+   "wikidata": "Q1333933",
    "peopleDatabase": null,
    "sources": [
     {
@@ -33930,7 +34062,7 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q970751",
    "peopleDatabase": null,
    "sources": [
     {
@@ -34023,8 +34155,14 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
-   "peopleDatabase": null,
+   "wikidata": "Q378134",
+   "peopleDatabase": {
+    "phdInstitution": "University of Louvain",
+    "institutionId": "university-of-louvain",
+    "match": "wikidata",
+    "people": 1,
+    "verifiedFirstJobs": 1
+   },
    "sources": [
     {
      "url": "https://www.operationsacademia.org/data/directory.json",
@@ -34118,7 +34256,7 @@
     "directory",
     "postings"
    ],
-   "wikidata": null,
+   "wikidata": "Q574606",
    "peopleDatabase": null,
    "sources": [
     {
@@ -34249,7 +34387,7 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q1472663",
    "peopleDatabase": null,
    "sources": [
     {
@@ -34290,7 +34428,7 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q1285252",
    "peopleDatabase": null,
    "sources": [
     {
@@ -34331,7 +34469,7 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q1285262",
    "peopleDatabase": null,
    "sources": [
     {
@@ -34675,7 +34813,7 @@
    "directorySources": [
     "directory"
    ],
-   "wikidata": null,
+   "wikidata": "Q1728622",
    "peopleDatabase": null,
    "sources": [
     {
@@ -34685,56 +34823,6 @@
     },
     {
      "url": "http://www.ucmerced.edu/faculty-directory",
-     "title": "Faculty page listed in the directory"
-    }
-   ]
-  },
-  {
-   "id": "university-of-california-riverside",
-   "name": "University of California, Riverside",
-   "country": "United States",
-   "departmentCount": 1,
-   "departments": [
-    {
-     "id": "university-of-california-riverside__school-of-business__operations-and-supply-chain-management",
-     "school": "School of Business",
-     "department": "Operations and Supply Chain Management",
-     "type": "Business School",
-     "country": "United States",
-     "facultyUrl": "https://soba.ucr.edu/schools_areas/oscm_faculty.html",
-     "departmentUrl": "https://business.ucr.edu/areas/oscm",
-     "address": "Riverside, CA 92507",
-     "sources": [
-      "directory",
-      "omlist",
-      "seed"
-     ],
-     "postings": null,
-     "lastPosted": null,
-     "lat": 33.9734553,
-     "lng": -117.3263893,
-     "characteristics": null
-    }
-   ],
-   "coords": [
-    33.9734553,
-    -117.3263893
-   ],
-   "directorySources": [
-    "directory",
-    "omlist",
-    "seed"
-   ],
-   "wikidata": null,
-   "peopleDatabase": null,
-   "sources": [
-    {
-     "url": "https://www.operationsacademia.org/data/directory.json",
-     "title": "Operations Academia universities directory (flat table behind the universities page)",
-     "retrievedAt": "2026-10-16"
-    },
-    {
-     "url": "https://soba.ucr.edu/schools_areas/oscm_faculty.html",
      "title": "Faculty page listed in the directory"
     }
    ]
@@ -34828,7 +34916,7 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q1782724",
    "peopleDatabase": null,
    "sources": [
     {
@@ -34869,7 +34957,7 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q143451",
    "peopleDatabase": null,
    "sources": [
     {
@@ -34957,7 +35045,7 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q1468161",
    "peopleDatabase": null,
    "sources": [
     {
@@ -35054,7 +35142,7 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q4026988",
    "peopleDatabase": null,
    "sources": [
     {
@@ -35160,88 +35248,6 @@
     {
      "url": "http://www.gla.ac.uk/schools/computing/staff/",
      "title": "Faculty page listed in the directory"
-    }
-   ]
-  },
-  {
-   "id": "university-of-houston-downtown",
-   "name": "University of Houston - Downtown",
-   "country": "United States",
-   "departmentCount": 1,
-   "departments": [
-    {
-     "id": "university-of-houston-downtown____mis",
-     "school": null,
-     "department": "MIS",
-     "type": "University",
-     "country": "United States",
-     "facultyUrl": null,
-     "departmentUrl": null,
-     "address": null,
-     "sources": [
-      "postings",
-      "seed"
-     ],
-     "postings": 1,
-     "lastPosted": "2026-03-07",
-     "lat": null,
-     "lng": null,
-     "characteristics": null
-    }
-   ],
-   "coords": null,
-   "directorySources": [
-    "postings",
-    "seed"
-   ],
-   "wikidata": null,
-   "peopleDatabase": null,
-   "sources": [
-    {
-     "url": "https://www.operationsacademia.org/data/directory.json",
-     "title": "Operations Academia universities directory (flat table behind the universities page)",
-     "retrievedAt": "2026-10-16"
-    }
-   ]
-  },
-  {
-   "id": "university-of-houston-downtown",
-   "name": "University of Houston-Downtown",
-   "country": "United States",
-   "departmentCount": 1,
-   "departments": [
-    {
-     "id": "university-of-houston-downtown____supply-chain-management",
-     "school": null,
-     "department": "Supply Chain Management",
-     "type": "University",
-     "country": "United States",
-     "facultyUrl": null,
-     "departmentUrl": null,
-     "address": null,
-     "sources": [
-      "postings",
-      "seed"
-     ],
-     "postings": 1,
-     "lastPosted": "2026-01-27",
-     "lat": null,
-     "lng": null,
-     "characteristics": null
-    }
-   ],
-   "coords": null,
-   "directorySources": [
-    "postings",
-    "seed"
-   ],
-   "wikidata": null,
-   "peopleDatabase": null,
-   "sources": [
-    {
-     "url": "https://www.operationsacademia.org/data/directory.json",
-     "title": "Operations Academia universities directory (flat table behind the universities page)",
-     "retrievedAt": "2026-10-16"
     }
    ]
   },
@@ -35471,7 +35477,7 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q7895654",
    "peopleDatabase": null,
    "sources": [
     {
@@ -35512,7 +35518,7 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q1191833",
    "peopleDatabase": null,
    "sources": [
     {
@@ -35610,7 +35616,7 @@
    "directorySources": [
     "directory"
    ],
-   "wikidata": null,
+   "wikidata": "Q15144",
    "peopleDatabase": null,
    "sources": [
     {
@@ -35655,7 +35661,7 @@
     "omlist",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q15143",
    "peopleDatabase": null,
    "sources": [
     {
@@ -35746,7 +35752,7 @@
     "directory",
     "postings"
    ],
-   "wikidata": null,
+   "wikidata": "Q7895782",
    "peopleDatabase": null,
    "sources": [
     {
@@ -35795,7 +35801,7 @@
    "peopleDatabase": {
     "phdInstitution": "University of Missouri-Columbia",
     "institutionId": "university-of-missouri-columbia",
-    "match": "campus-qualifier",
+    "match": "wikidata",
     "people": 1,
     "verifiedFirstJobs": 0
    },
@@ -35838,7 +35844,7 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q940690",
    "peopleDatabase": null,
    "sources": [
     {
@@ -35881,7 +35887,7 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q625103",
    "peopleDatabase": null,
    "sources": [
     {
@@ -35922,7 +35928,7 @@
     "omlist",
     "seed"
    ],
-   "wikidata": "Q705316",
+   "wikidata": "Q926068",
    "peopleDatabase": {
     "phdInstitution": "University of Navarra",
     "institutionId": "university-of-navarra",
@@ -36033,7 +36039,7 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q7895890",
    "peopleDatabase": null,
    "sources": [
     {
@@ -36074,7 +36080,7 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q2495890",
    "peopleDatabase": null,
    "sources": [
     {
@@ -36116,7 +36122,7 @@
    "directorySources": [
     "directory"
    ],
-   "wikidata": null,
+   "wikidata": "Q1185955",
    "peopleDatabase": null,
    "sources": [
     {
@@ -36127,88 +36133,6 @@
     {
      "url": "http://www.unr.edu/business/people/managerial-sciences-faculty",
      "title": "Faculty page listed in the directory"
-    }
-   ]
-  },
-  {
-   "id": "university-of-nevada-las-vegas",
-   "name": "University of Nevada Las Vegas",
-   "country": "United States",
-   "departmentCount": 1,
-   "departments": [
-    {
-     "id": "university-of-nevada-las-vegas____supply-chain-management",
-     "school": null,
-     "department": "Supply Chain Management",
-     "type": "University",
-     "country": "United States",
-     "facultyUrl": null,
-     "departmentUrl": null,
-     "address": null,
-     "sources": [
-      "postings",
-      "seed"
-     ],
-     "postings": 1,
-     "lastPosted": "2026-04-23",
-     "lat": null,
-     "lng": null,
-     "characteristics": null
-    }
-   ],
-   "coords": null,
-   "directorySources": [
-    "postings",
-    "seed"
-   ],
-   "wikidata": null,
-   "peopleDatabase": null,
-   "sources": [
-    {
-     "url": "https://www.operationsacademia.org/data/directory.json",
-     "title": "Operations Academia universities directory (flat table behind the universities page)",
-     "retrievedAt": "2026-10-16"
-    }
-   ]
-  },
-  {
-   "id": "university-of-nevada-las-vegas",
-   "name": "University of Nevada, Las Vegas",
-   "country": "United States",
-   "departmentCount": 1,
-   "departments": [
-    {
-     "id": "university-of-nevada-las-vegas__lee-business-school",
-     "school": "Lee Business School",
-     "department": null,
-     "type": "Business School",
-     "country": "United States",
-     "facultyUrl": null,
-     "departmentUrl": null,
-     "address": null,
-     "sources": [
-      "postings",
-      "seed"
-     ],
-     "postings": 1,
-     "lastPosted": "2026-08-20",
-     "lat": null,
-     "lng": null,
-     "characteristics": null
-    }
-   ],
-   "coords": null,
-   "directorySources": [
-    "postings",
-    "seed"
-   ],
-   "wikidata": null,
-   "peopleDatabase": null,
-   "sources": [
-    {
-     "url": "https://www.operationsacademia.org/data/directory.json",
-     "title": "Operations Academia universities directory (flat table behind the universities page)",
-     "retrievedAt": "2026-10-16"
     }
    ]
   },
@@ -36243,7 +36167,7 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q917899",
    "peopleDatabase": null,
    "sources": [
     {
@@ -36284,7 +36208,7 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q1190812",
    "peopleDatabase": null,
    "sources": [
     {
@@ -36429,7 +36353,7 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q1783178",
    "peopleDatabase": null,
    "sources": [
     {
@@ -36470,7 +36394,7 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q2092214",
    "peopleDatabase": null,
    "sources": [
     {
@@ -36597,7 +36521,7 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q7895970",
    "peopleDatabase": null,
    "sources": [
     {
@@ -36643,7 +36567,7 @@
     "omlist",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q766145",
    "peopleDatabase": null,
    "sources": [
     {
@@ -36689,7 +36613,7 @@
    "directorySources": [
     "directory"
    ],
-   "wikidata": null,
+   "wikidata": "Q513658",
    "peopleDatabase": null,
    "sources": [
     {
@@ -36732,7 +36656,7 @@
    "directorySources": [
     "members"
    ],
-   "wikidata": null,
+   "wikidata": "Q866012",
    "peopleDatabase": null,
    "sources": [
     {
@@ -36776,7 +36700,7 @@
     "directory",
     "postings"
    ],
-   "wikidata": null,
+   "wikidata": "Q1115878",
    "peopleDatabase": null,
    "sources": [
     {
@@ -36870,7 +36794,7 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q7896316",
    "peopleDatabase": null,
    "sources": [
     {
@@ -36911,7 +36835,7 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q7896324",
    "peopleDatabase": null,
    "sources": [
     {
@@ -37151,7 +37075,7 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q940289",
    "peopleDatabase": null,
    "sources": [
     {
@@ -37197,7 +37121,7 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q624090",
    "peopleDatabase": null,
    "sources": [
     {
@@ -37242,7 +37166,7 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q963530",
    "peopleDatabase": null,
    "sources": [
     {
@@ -37283,55 +37207,8 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q751289",
    "peopleDatabase": null,
-   "sources": [
-    {
-     "url": "https://www.operationsacademia.org/data/directory.json",
-     "title": "Operations Academia universities directory (flat table behind the universities page)",
-     "retrievedAt": "2026-10-16"
-    }
-   ]
-  },
-  {
-   "id": "university-of-tennessee-knoxville",
-   "name": "University of Tennessee, Knoxville",
-   "country": "United States",
-   "departmentCount": 1,
-   "departments": [
-    {
-     "id": "university-of-tennessee-knoxville__tickle-college-of-engineering__industrial-and-systems-engineering",
-     "school": "Tickle College of Engineering",
-     "department": "Industrial and Systems Engineering",
-     "type": "University",
-     "country": "United States",
-     "facultyUrl": null,
-     "departmentUrl": null,
-     "address": null,
-     "sources": [
-      "postings",
-      "seed"
-     ],
-     "postings": 1,
-     "lastPosted": "2026-09-03",
-     "lat": null,
-     "lng": null,
-     "characteristics": null
-    }
-   ],
-   "coords": null,
-   "directorySources": [
-    "postings",
-    "seed"
-   ],
-   "wikidata": "Q1150105",
-   "peopleDatabase": {
-    "phdInstitution": "University of Tennessee at Knoxville",
-    "institutionId": "university-of-tennessee-at-knoxville",
-    "match": "exact",
-    "people": 10,
-    "verifiedFirstJobs": 2
-   },
    "sources": [
     {
      "url": "https://www.operationsacademia.org/data/directory.json",
@@ -37371,7 +37248,7 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q2093110",
    "peopleDatabase": null,
    "sources": [
     {
@@ -37467,7 +37344,7 @@
    "directorySources": [
     "directory"
    ],
-   "wikidata": null,
+   "wikidata": "Q3137221",
    "peopleDatabase": null,
    "sources": [
     {
@@ -37652,7 +37529,7 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q606140",
    "peopleDatabase": null,
    "sources": [
     {
@@ -37693,7 +37570,7 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q7896565",
    "peopleDatabase": null,
    "sources": [
     {
@@ -37830,7 +37707,7 @@
    "directorySources": [
     "directory"
    ],
-   "wikidata": null,
+   "wikidata": "Q659255",
    "peopleDatabase": null,
    "sources": [
     {
@@ -37970,7 +37847,7 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q2590529",
    "peopleDatabase": null,
    "sources": [
     {
@@ -38009,7 +37886,7 @@
    "directorySources": [
     "members"
    ],
-   "wikidata": null,
+   "wikidata": "Q3551772",
    "peopleDatabase": null,
    "sources": [
     {
@@ -38050,7 +37927,7 @@
     "omlist",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q206702",
    "peopleDatabase": null,
    "sources": [
     {
@@ -38134,7 +38011,7 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q183170",
    "peopleDatabase": null,
    "sources": [
     {
@@ -38175,7 +38052,7 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q1231724",
    "peopleDatabase": null,
    "sources": [
     {
@@ -38216,7 +38093,7 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q2508061",
    "peopleDatabase": null,
    "sources": [
     {
@@ -38257,7 +38134,7 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q7912012",
    "peopleDatabase": null,
    "sources": [
     {
@@ -38354,7 +38231,7 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q278044",
    "peopleDatabase": null,
    "sources": [
     {
@@ -38395,7 +38272,7 @@
     "omlist",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q86012411",
    "peopleDatabase": null,
    "sources": [
     {
@@ -38482,7 +38359,7 @@
     "omlist",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q2303536",
    "peopleDatabase": null,
    "sources": [
     {
@@ -38631,7 +38508,7 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q6122154",
    "peopleDatabase": null,
    "sources": [
     {
@@ -38672,7 +38549,7 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q941551",
    "peopleDatabase": null,
    "sources": [
     {
@@ -38713,7 +38590,7 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q1785291",
    "peopleDatabase": null,
    "sources": [
     {
@@ -38755,7 +38632,7 @@
    "directorySources": [
     "directory"
    ],
-   "wikidata": null,
+   "wikidata": "Q1787152",
    "peopleDatabase": null,
    "sources": [
     {
@@ -38800,7 +38677,7 @@
     "omlist",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q115376",
    "peopleDatabase": null,
    "sources": [
     {
@@ -38841,7 +38718,7 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q1552113",
    "peopleDatabase": null,
    "sources": [
     {
@@ -38882,7 +38759,7 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q1474005",
    "peopleDatabase": null,
    "sources": [
     {
@@ -38923,7 +38800,7 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q7988454",
    "peopleDatabase": null,
    "sources": [
     {
@@ -38964,7 +38841,7 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q14438080",
    "peopleDatabase": null,
    "sources": [
     {
@@ -39091,7 +38968,7 @@
    "directorySources": [
     "members"
    ],
-   "wikidata": null,
+   "wikidata": "Q429561",
    "peopleDatabase": null,
    "sources": [
     {
@@ -39133,7 +39010,7 @@
    "directorySources": [
     "directory"
    ],
-   "wikidata": null,
+   "wikidata": "Q2166701",
    "peopleDatabase": null,
    "sources": [
     {
@@ -39178,7 +39055,7 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q875637",
    "peopleDatabase": null,
    "sources": [
     {
@@ -39219,7 +39096,7 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q8023017",
    "peopleDatabase": null,
    "sources": [
     {
@@ -39260,7 +39137,7 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q8025153",
    "peopleDatabase": null,
    "sources": [
     {
@@ -39301,7 +39178,7 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q3233786",
    "peopleDatabase": null,
    "sources": [
     {
@@ -39340,7 +39217,7 @@
    "directorySources": [
     "members"
    ],
-   "wikidata": null,
+   "wikidata": "Q195046",
    "peopleDatabase": null,
    "sources": [
     {
@@ -39381,7 +39258,7 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q3446068",
    "peopleDatabase": null,
    "sources": [
     {
@@ -39423,7 +39300,7 @@
    "directorySources": [
     "directory"
    ],
-   "wikidata": null,
+   "wikidata": "Q278044",
    "peopleDatabase": null,
    "sources": [
     {
@@ -39466,48 +39343,7 @@
    "directorySources": [
     "seed"
    ],
-   "wikidata": null,
-   "peopleDatabase": null,
-   "sources": [
-    {
-     "url": "https://www.operationsacademia.org/data/directory.json",
-     "title": "Operations Academia universities directory (flat table behind the universities page)",
-     "retrievedAt": "2026-10-16"
-    }
-   ]
-  },
-  {
-   "id": "xi-an-jiaotong-liverpool-university",
-   "name": "Xi’an Jiaotong-Liverpool University",
-   "country": "China",
-   "departmentCount": 1,
-   "departments": [
-    {
-     "id": "xi-an-jiaotong-liverpool-university__school-of-intelligent-finance-and-business__supply-chain-management",
-     "school": "School of Intelligent Finance and Business",
-     "department": "Supply Chain Management",
-     "type": "Business School",
-     "country": "China",
-     "facultyUrl": null,
-     "departmentUrl": null,
-     "address": null,
-     "sources": [
-      "postings",
-      "seed"
-     ],
-     "postings": 1,
-     "lastPosted": "2026-07-22",
-     "lat": null,
-     "lng": null,
-     "characteristics": null
-    }
-   ],
-   "coords": null,
-   "directorySources": [
-    "postings",
-    "seed"
-   ],
-   "wikidata": null,
+   "wikidata": "Q981237",
    "peopleDatabase": null,
    "sources": [
     {
@@ -39645,7 +39481,7 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q1048851",
    "peopleDatabase": null,
    "sources": [
     {
@@ -39695,7 +39531,7 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q849751",
    "peopleDatabase": null,
    "sources": [
     {
@@ -39736,7 +39572,7 @@
     "postings",
     "seed"
    ],
-   "wikidata": null,
+   "wikidata": "Q1783191",
    "peopleDatabase": null,
    "sources": [
     {

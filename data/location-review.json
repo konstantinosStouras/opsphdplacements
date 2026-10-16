@@ -1,0 +1,15 @@
+{
+ "version": 1,
+ "note": "Reviewed corrections to the name-based Wikidata matches used for map locations, countries and the links between the two databases. scripts/geocode-institutions.mjs applies them on top of its search results for any name in any of the three location files. A null qid means the name does not identify one organisation well enough to match it; a qid replaces a wrong search result. Every other match remains a name-based, unreviewed search result.",
+ "corrections": {
+  "University of Navarra": { "qid": "Q926068", "reason": "The search returned IESE Business School (Q705316), the university's business school; the university itself is Q926068.", "reviewedAt": "2026-10-16" },
+  "York University": { "qid": "Q849751", "reason": "The search returned the University of York in England (Q967165); York University is the public research university in Toronto.", "reviewedAt": "2026-10-16" },
+  "University of Houston - Downtown": { "qid": "Q7895509", "reason": "The search returned the University of Houston (Q1472358); the Downtown campus is a separate university of the same system.", "reviewedAt": "2026-10-16" },
+  "Nevada State University": { "qid": "Q1658675", "reason": "The search returned the University of Nevada, Reno (Q1185955); Nevada State University in Henderson is the former Nevada State College, Q1658675.", "reviewedAt": "2026-10-16" },
+  "Minnesota State University": { "qid": null, "reason": "The search returned the University of Minnesota (Q238101), a different institution; the name alone does not say whether Mankato (Q1937387) or Moorhead is meant.", "reviewedAt": "2026-10-16" },
+  "HKUST(GZ)": { "qid": null, "reason": "The Guangzhou campus opened in 2022 as a separate institution; the search returned the Hong Kong item (Q1333303) and no item for the Guangzhou institution was found.", "reviewedAt": "2026-10-16" },
+  "Hong Kong University of Science and Technology (Guangzhou)": { "qid": null, "reason": "Separate institution in Guangzhou; the search returned the Hong Kong item (Q1333303) and no item for the Guangzhou institution was found.", "reviewedAt": "2026-10-16" },
+  "The Hong Kong University of Science and Technology (Guangzhou)": { "qid": null, "reason": "Separate institution in Guangzhou; the search returned the Hong Kong item (Q1333303) and no item for the Guangzhou institution was found.", "reviewedAt": "2026-10-16" },
+  "Indian Institute of Management": { "qid": null, "reason": "The search returned IIM Ahmedabad (Q46027); there are more than twenty Indian Institutes of Management and the placement record does not say which one.", "reviewedAt": "2026-10-16" }
+ }
+}

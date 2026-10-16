@@ -15,11 +15,13 @@ Position after the sixth 16 October 2026 integration (published ledger): 863 ver
 
 ## Step 1 — Historical doctoral program register
 
-- [x] Import the Operations Academia universities directory as the first database, `data/universities.json` (16 October 2026): 656 universities, 1,133 department rows, 40 countries; 210 linked to PhD institutions in the people database (200 exact names, 4 shared Wikidata items, 6 campus qualifiers).
-- [ ] Review the links between the two databases: the 6 campus-qualifier links, any Wikidata links added by `node scripts/geocode-institutions.mjs universities`, and the 446 directory universities with no link (most have no one in the people database; some are spelling differences such as abbreviations in brackets). Add the review outcome to the import script's rules rather than editing the file.
+- [x] Import the Operations Academia universities directory as the first database, `data/universities.json` (16 October 2026): 1,133 department rows under 656 directory names, grouped into 645 universities, 40 countries; after the Wikidata pass, 217 are linked to PhD institutions in the people database (194 identical names, 23 shared Wikidata items).
+- [x] Review the links that rest on a shared Wikidata item (16 October 2026): nine wrong or ambiguous search results corrected in `data/location-review.json` (York University, University of Houston–Downtown, Nevada State University, University of Navarra, Minnesota State University, the HKUST Guangzhou names, a bare "Indian Institute of Management"), applied by the geocode script.
+- [ ] Review the remaining name-based Wikidata matches (579 directory names, 361 PhD institutions and 243 employers are matched by search and unreviewed) and the 428 directory universities with no link to the people database; record each wrong match in `data/location-review.json` with its reason rather than editing a generated file.
 - [x] Show database 1 on the website: the Universities section lists every directory university with its departments, country, link to the people database and sources, with search, country and link filters and a by-country chart (16 October 2026).
 - [ ] Let the program register cite the universities database as the discovery source for each program, and add a doctoral-provision flag to the universities database once a program is verified.
-- [ ] Define the merged institution entity (Wikidata-keyed, with aliases, departments, graduates and programs) and the update path so that a change in either source reaches one record.
+- [x] Define and build the merged organisation entity (16 October 2026): `data/entities.json`, one record per organisation keyed by Wikidata item where known, with aliases, departments from the directory, people and first-employer figures from the people database and programs from the register; `npm run check` fails if a source row is missing or attached twice, and each PhD institution and first-employer profile on the site shows the record. Rules in RESEARCH-DESIGN.md.
+- [ ] Decide whether the 11 employer spelling variants in `data/placements.json` (University of California Berkeley / University of California, Berkeley and similar) should be normalised in the research ledger with a documented reason; the derived files and the site already count them as one organisation.
 
 - [ ] Expand beyond the initial 13 program records. Verify candidates from Operations Academia, university catalogs, historical dissertation institutions and discipline associations.
 - [ ] Freeze discovery-source versions. The Operations Academia website can overlay public edits on its static directory; a local JSON snapshot alone is not a complete snapshot of that live directory.
@@ -73,6 +75,9 @@ Position after the sixth 16 October 2026 integration (published ledger): 863 ver
 - University placement tables sometimes show a later faculty destination. Yue Hu's earlier Chicago Booth postdoc was found after a Stanford destination had initially been recorded.
 - Historical degrees can differ from directory imports; retain both original assertions and sourced corrections.
 - Public CV links can point to a namesake in another discipline. Name matches alone are unsafe.
+- A Wikidata name search returns a plausible but wrong item for short or shared names: "York University" gave the University of York, "Minnesota State University" the University of Minnesota, "University of Navarra" its IESE Business School, "Nevada State University" the University of Nevada, Reno. Review every merge that rests on a shared item, and record corrections in `data/location-review.json` (the research caches are ignored and would lose them).
+- A trailing bracketed campus or school name, "(Guangzhou)" or "(Kelley)", is not an abbreviation like "(NUS)": stripping it merged HKUST Guangzhou into HKUST. Name normalisation strips only all-caps brackets.
+- Several derived files keyed records by a slug of the name, so two spellings of one organisation ("Koç" and "Koc") produced duplicate ids and the entity validator failed; spellings are now grouped before ids are assigned.
 - The main search previously failed because a button named `reset` shadowed the form's reset method. Keep the distinct `reset-filters` ID and prototype-based reset call.
 
 ## Handoff template

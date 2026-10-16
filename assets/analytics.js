@@ -3,6 +3,7 @@
 // (one research disposition per person). Shares of first-job types are always shares of *verified*
 // first jobs; the unresolved and not-yet-reviewed counts travel alongside so no reader mistakes a
 // verified share for a share of all graduates.
+import { fold } from './model.js';
 export const CATEGORIES = [
   { id: 'tenure-track', label: 'Tenure track', color: '#1f8a5a' },
   { id: 'postdoc', label: 'Postdoc', color: '#2a78d6' },
@@ -23,11 +24,21 @@ export const STATUS = Object.fromEntries(STATUSES.map(s => [s.id, s]));
 export const ACADEMIC = new Set(['tenure-track', 'postdoc', 'other-academic']);
 const THIS_YEAR = new Date().getFullYear();
 
+/** Names that differ only in accents, punctuation, spacing or case are one organisation; the most used
+ *  spelling stands for all of them, the same rule as scripts/build-institutions.mjs. */
+function canonicalNames(names) {
+  const groups = new Map();
+  for (const n of names) { if (!n) continue; const k = fold(n); const g = groups.get(k) || new Map(); g.set(n, (g.get(n) || 0) + 1); groups.set(k, g); }
+  const canon = new Map();
+  for (const g of groups.values()) { const best = [...g].sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]))[0][0]; for (const n of g.keys()) canon.set(n, best); }
+  return n => (n && canon.get(n)) || n;
+}
 export function buildIndex(state) {
   const statusById = new Map((state.progress?.records || []).map(r => [r.facultyId, r]));
   const placementById = new Map(state.placements.map(p => [p.facultyId, p]));
+  const phdName = canonicalNames(state.faculty.map(f => placementById.get(f.id)?.phdInstitution || f.phdInstitution)), employerName = canonicalNames(state.placements.map(p => p.employer));
   // A verified review can correct the imported PhD institution or year; the corrected values win here.
-  const people = state.faculty.map(f => { const placement = placementById.get(f.id) || null; return { ...f, phdInstitution: placement?.phdInstitution || f.phdInstitution, phdYear: placement?.phdYear ?? f.phdYear, status: statusById.get(f.id)?.status || 'pending', review: statusById.get(f.id) || null, placement }; });
+  const people = state.faculty.map(f => { const raw = placementById.get(f.id) || null, placement = raw ? { ...raw, employer: employerName(raw.employer) } : null; return { ...f, phdInstitution: phdName(placement?.phdInstitution || f.phdInstitution), phdYear: placement?.phdYear ?? f.phdYear, status: statusById.get(f.id)?.status || 'pending', review: statusById.get(f.id) || null, placement }; });
   const years = [...new Set(people.map(p => p.phdYear).filter(y => y && y <= THIS_YEAR))].sort((a, b) => a - b);
   const latest = years[years.length - 1];
   const employerCountry = new Map(), institutionCountry = new Map();

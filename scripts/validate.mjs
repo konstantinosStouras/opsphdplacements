@@ -36,3 +36,19 @@ for(const [file,field,expected,label] of [['institutions','people',faculty.filte
  if(data.metadata.recordCount!==data.records.length||total!==expected)throw Error(`data/${file}.json is stale (${total} ${label}, expected ${expected}); run node scripts/build-institutions.mjs`);
 }
 console.log('Derived institution and employer databases agree with the public datasets.');
+
+// The merged entities must contain every PhD institution, directory university and first employer exactly once.
+{
+ const url=new URL('../data/entities.json',import.meta.url);if(!fs.existsSync(url))throw Error('Missing data/entities.json; run node scripts/build-entities.mjs');
+ const entities=JSON.parse(fs.readFileSync(url,'utf8')).records;
+ const seen=(key)=>{const ids=entities.flatMap(key);if(new Set(ids).size!==ids.length)throw Error('An organisation is attached to two entities: '+ids.find((v,i)=>ids.indexOf(v)!==i));return new Set(ids);};
+ const inst=seen(e=>e.people?e.people.institutions.map(i=>i.institutionId):[]), uni=seen(e=>e.directory?e.directory.universities.map(u=>u.id):[]), emp=seen(e=>e.employer?e.employer.employers.map(x=>x.employerId):[]);
+ for(const [file,expected,have] of [['institutions',JSON.parse(fs.readFileSync(new URL('../data/institutions.json',import.meta.url),'utf8')).records.map(r=>r.id),inst],['universities',JSON.parse(fs.readFileSync(new URL('../data/universities.json',import.meta.url),'utf8')).records.map(r=>r.id),uni],['employers',JSON.parse(fs.readFileSync(new URL('../data/employers.json',import.meta.url),'utf8')).records.map(r=>r.id),emp]]){
+  if(new Set(expected).size!==expected.length)throw Error(`data/${file}.json has a duplicate id; run node scripts/build-institutions.mjs or the import again`);
+  const missing=expected.filter(id=>!have.has(id));if(missing.length||have.size!==expected.length)throw Error(`data/entities.json is stale for ${file} (${missing.length} missing); run node scripts/build-entities.mjs`);
+ }
+ const sum=(k)=>entities.reduce((n,e)=>n+(e.people?e.people[k]:0),0), published=JSON.parse(fs.readFileSync(new URL('../data/institutions.json',import.meta.url),'utf8')).records;
+ if(sum('people')!==published.reduce((n,r)=>n+r.people,0)||sum('verifiedFirstJobs')!==published.reduce((n,r)=>n+r.verifiedFirstJobs,0))throw Error('data/entities.json people totals disagree with data/institutions.json; run node scripts/build-entities.mjs');
+ const ids=new Set(entities.map(e=>e.id));if(ids.size!==entities.length)throw Error('Duplicate entity id');
+ console.log('Merged entities cover every PhD institution, directory university and first employer exactly once.');
+}

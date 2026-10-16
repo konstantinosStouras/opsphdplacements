@@ -65,3 +65,10 @@ GitHub commit `9fbf00d` was discovered during this upload and preserved. Current
 ### Sixth integration, later on 16 October 2026
 
 - Shard A round 2, chunk 1 (40 people, 21 verified after one integrator downgrade, 19 unresolved) integrated. Published totals: 863 verified, 1,145 unresolved, 140 pending, 1 not-yet-completed. All three round-2 proposals are merged; shard A has 140 people left.
+
+### Merged organisation database, later on 16 October 2026
+
+- The Wikidata pass over the directory names finished (579 of 645 universities matched after grouping spellings) and `data/university-locations.json` was published with countries.
+- The two databases and the program register were merged into `data/entities.json` (868 organisations, 736 keyed by a Wikidata item, 177 in both databases, no conflicts), with a validator check that every PhD institution, directory university and first employer is attached exactly once. Each PhD institution and first-employer profile on the site now ends with the merged record.
+- Reviewing the merges that rest on a shared Wikidata item found wrong search results; nine corrections were recorded in `data/location-review.json` (see RESEARCH-DESIGN.md) and the derived files rebuilt. The other name-based matches remain unreviewed.
+- Spellings that differ only in accents, punctuation, spacing or case are now one organisation in the derived files and on the site (1 PhD institution, 11 employers and 11 directory names were affected). No research ledger data changed in this step.

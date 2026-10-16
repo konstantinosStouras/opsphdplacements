@@ -3,6 +3,7 @@
 // first jobs and shows the unresolved and not-yet-reviewed people beside them.
 import { bubbleGrid, columns, hbars, lines, rankedRows, tiles, fmt, pct, html } from './charts.js';
 import { CATEGORIES, CAT, STATUSES, STATUS, buildIndex, loadCountries, loadJson, institutionMetrics, employerMetrics, inPeriod, periodLabel, fillPeriodSelect } from './analytics.js';
+import { fold } from './model.js';
 
 let index = null;
 export async function getIndex(state) {
@@ -189,6 +190,61 @@ const mainCategory = cats => CATEGORIES.find(c => cats[c.id] === Math.max(0, ...
 const panel = (title, cls) => { const p = html('div', 'profile-panel' + (cls ? ' ' + cls : '')); p.append(html('h4', undefined, title)); const body = html('div'); p.append(body); return [p, body]; };
 const link = (text, href) => { const a = html('a', undefined, text); a.href = href; a.target = '_blank'; a.rel = 'noopener noreferrer'; return a; };
 
+// ---------------------------------------------------------------------------------------------
+// The merged organisation record: the two databases (universities with operations departments, and
+// people with their PhD institutions and first employers) and the program register joined into one
+// record per organisation in data/entities.json, looked up here by any of its names.
+let entitiesPromise = null;
+function loadEntities() {
+  if (!entitiesPromise) entitiesPromise = loadJson('data/entities.json').then(d => { const byName = new Map(); for (const e of d.records) for (const a of e.aliases) if (!byName.has(fold(a))) byName.set(fold(a), e); return { byName, counts: d.metadata.counts }; }).catch(e => { entitiesPromise = null; throw e; });
+  return entitiesPromise;
+}
+export async function entityFor(name) { return (await loadEntities()).byName.get(fold(name)) || null; }
+export async function entityCounts() { return (await loadEntities()).counts; }
+
+/** The panel under a profile: what the other database and the register hold for this organisation. */
+async function entityPanel(body, name, context, actions) {
+  let e = null, counts = null;
+  try { ({ counts } = await loadEntities()); e = await entityFor(name); } catch { body.replaceChildren(html('p', 'chart-empty', 'The merged organisation database (data/entities.json) could not be loaded.')); return; }
+  body.replaceChildren();
+  if (!e) { body.append(html('p', 'chart-empty', 'No merged organisation record carries this name yet.')); return; }
+  const head = html('p', 'entity-head'); head.append(html('strong', undefined, e.name));
+  if (e.wikidata) head.append(' · ', link(`Wikidata ${e.wikidata} ↗`, `https://www.wikidata.org/wiki/${e.wikidata}`));
+  if (e.country) head.append(` · ${e.country}`);
+  body.append(head);
+  const roles = html('p', 'entity-roles'), badge = t => { const s = html('span', 'badge', t); roles.append(' '); return s; };
+  if (e.people) roles.append(badge(`PhD institution of ${fmt(e.people.people)} ${e.people.people === 1 ? 'person' : 'people'} in the directory`));
+  if (e.directory) roles.append(badge(`${fmt(e.directory.departments.length)} operations ${e.directory.departments.length === 1 ? 'listing' : 'listings'} in the universities directory`));
+  if (e.employer) roles.append(badge(`First employer in ${fmt(e.employer.verifiedFirstJobs)} verified ${e.employer.verifiedFirstJobs === 1 ? 'first job' : 'first jobs'}`));
+  if (e.programs.length) roles.append(badge(`${e.programs.length} ${e.programs.length === 1 ? 'program' : 'programs'} in the register`));
+  body.append(roles);
+  // The other profile of the same organisation.
+  const crossLink = (text, onClick) => { const p = html('p', 'entity-sub'), b = html('button', 'text-button', text); b.type = 'button'; b.addEventListener('click', onClick); p.append(b); body.append(p); };
+  if (context === 'employer' && e.people) crossLink(`Open its PhD institution profile: ${fmt(e.people.people)} people in the directory, ${fmt(e.people.verifiedFirstJobs)} verified first jobs →`, () => actions.openInstitution?.(e.people.institutions[0].name));
+  if (context === 'phd' && e.employer) crossLink(`Open its first-employer profile: ${fmt(e.employer.verifiedFirstJobs)} verified first ${e.employer.verifiedFirstJobs === 1 ? 'job' : 'jobs'} started here →`, () => actions.openEmployer?.(e.employer.employers[0].name));
+  // Database 1: the departments.
+  if (e.directory) {
+    const how = e.directory.universities.map(u => `${u.name} (${u.match === 'new' ? 'directory only' : 'matched by ' + u.match.replace('-', ' ')})`).join('; ');
+    body.append(html('p', 'entity-sub', `In the Operations Academia directory as ${how}:`));
+    const list = html('ul', 'dept-list');
+    for (const d of e.directory.departments) { const li = html('li'); li.append(html('span', undefined, [d.school, d.department].filter(Boolean).join(' · ') || 'Department not named')); if (d.type) li.append(html('small', undefined, d.type)); if (d.facultyUrl) { li.append(' '); li.append(link('faculty page ↗', d.facultyUrl)); } list.append(li); }
+    body.append(list);
+  } else body.append(html('p', 'entity-sub', 'No listing in the universities directory matched any of its names.'));
+  // The program register.
+  if (e.programs.length) {
+    body.append(html('p', 'entity-sub', 'In the historical doctoral program register:'));
+    const list = html('ul', 'dept-list');
+    for (const p of e.programs) { const li = html('li'); li.append(html('span', undefined, [p.programName, p.school, p.degree, p.field].filter(Boolean).join(' · '))); li.append(html('small', undefined, `${p.status}${p.statusAsOf ? ', as of ' + p.statusAsOf : ''}`)); list.append(li); }
+    body.append(list);
+  }
+  const others = e.aliases.filter(a => a !== e.name);
+  if (others.length) body.append(html('p', 'entity-sub', `Also written as: ${others.join('; ')}.`));
+  const foot = html('p', 'source-stamp');
+  foot.append(`Record ${e.id} in `, link('entities.json', 'data/entities.json'), counts ? ` (${fmt(counts.entities)} organisations, ${fmt(counts.inBothDatabases)} in both databases). ` : '. ', 'One record per organisation, keyed by Wikidata item where known; a part that a source does not supply is simply absent, never inferred.');
+  body.append(foot);
+}
+const entityPanelFor = (grid, name, context, actions) => { const [p, b] = panel('The same organisation across both databases', 'entity-panel'); b.append(html('p', 'chart-empty', 'Loading the merged record…')); grid.append(p); entityPanel(b, name, context, actions); };
+
 export function renderProfile(type, hosts, idx, actions) {
   const { controls, content } = hosts;
   controls.replaceChildren(); content.replaceChildren(); content.classList.remove('empty');
@@ -238,6 +294,7 @@ function renderInstitutionProfile({ controls, content }, idx, actions) {
     const [p6, b6] = panel('First job titles');
     rankedRows(b6, { items: m.positions.slice(0, 8).map(([t, n]) => ({ label: t, value: n })), total: m.verifiedCount, emptyText: 'No verified first jobs in this period.' });
     grid.append(p5, p6);
+    entityPanelFor(grid, m.name, 'phd', actions);
     content.append(grid, html('p', 'source-stamp', 'People come from the OM List directory, so this is not every graduate of the program. First jobs are only those verified from a CV, placement report or appointment record; each one is linked from the explorer. Shares of job types are shares of verified first jobs.'));
   };
   draw();
@@ -278,6 +335,7 @@ function renderEmployerProfile({ controls, content }, idx, actions) {
     }
     if (!m.recent.length) b4.append(html('p', 'chart-empty', 'No verified first jobs in this period.'));
     grid.append(p3, p4);
+    entityPanelFor(grid, m.name, 'employer', actions);
     content.append(grid, html('p', 'source-stamp', 'Counts are verified first jobs after the PhD among people in the OM List directory. They are not the employer\'s total hiring, and they exclude people whose first job is still unresolved or unreviewed. Names link to the evidence used.'));
   };
   draw();
