@@ -24,6 +24,7 @@ def build():
     faculty = read("faculty")
     placements = read("placements")
     reviews = read("research-status")
+    programs = read("doctoral-programs")
     con = sqlite3.connect(":memory:")
     con.executescript((ROOT / "database" / "schema.sql").read_text(encoding="utf-8"))
 
@@ -54,6 +55,28 @@ def build():
                normalized_value=json.dumps(value, ensure_ascii=False), source_id=sid,
                evidence_note=note, review_status=status, reviewed_at=reviewed,
                reviewer="source review" if reviewed else None)
+
+    for p in programs["records"]:
+        oid = organization(p["university"])
+        # The university is explicit. A combined school/department label remains a sourced text claim.
+        con.execute("UPDATE organization SET kind='university' WHERE organization_id=?", (oid,))
+        source_ids = {s["id"]: source(s["url"], s["title"], s["lastCheckedAt"]) for s in p["sources"]}
+        insert("program", program_id=p["id"], organization_id=oid, name=p["programName"],
+               official_field="; ".join(p["fields"]),
+               scope_status="in-scope" if p["degree"] == "PhD" else "unresolved",
+               scope_note=p["scopeRationale"], scope_source_id=next(iter(source_ids.values())))
+        for fact in p["facts"]:
+            # Unknown fields retain investigation notes in the public register; no fact is manufactured.
+            if fact["value"] is None:
+                continue
+            for sid in fact["sourceIds"]:
+                claim("program_id", p["id"], fact["field"], fact["value"], source_ids[sid],
+                      fact["evidenceNote"], "verified", fact["lastCheckedAt"])
+        for i, event in enumerate(p.get("history", [])):
+            for sid in event["sourceIds"]:
+                claim("program_id", p["id"], f"history-{i}", event, source_ids[sid],
+                      event["event"], "verified", event["lastCheckedAt"])
+        # No invented opening/closure periods, graduate counts or links to directory doctorates.
 
     for f in faculty["records"]:
         pid = f["id"]
@@ -145,7 +168,7 @@ def build():
     finally:
         destination.close()
     temporary.replace(OUT)
-    print(f"Built {OUT}: {len(faculty['records'])} people, {count} first-job events. No additional careers inferred.")
+    print(f"Built {OUT}: {len(faculty['records'])} people, {count} first-job events, {len(programs['records'])} program records. No additional careers inferred.")
     con.close()
 
 

@@ -4,10 +4,13 @@ Version: 16 October 2026. This describes the planned graduate census and career-
 
 ## Population and collection order
 
-1. Finish individual first-job review of every imported faculty profile. Publish verified outcomes and separately record unresolved cases with the sources examined. A complete review is not the same as complete outcome ascertainment.
-2. Freeze the [Operations Academia university directory](https://www.operationsacademia.org/universities) as a dated sampling frame. Its cards combine schools and departments from postings and curated records; listing does not prove a department awards an in-scope PhD. Verify the doctoral programs and distinguish university, school, department and program identities.
-3. Enumerate **graduates by program and graduation cohort**, independently of subsequent employment. Combine official graduate/alumni lists, placement reports, commencement lists and dissertation repositories. Keep partial cohorts; do not present them as complete. A dissertation submission or a job-market candidacy alone does not establish that a degree was awarded.
-4. Research each graduate's initial outcome and subsequent career, including direct industry entry, corporate postdocs, academia-to-industry moves, industry-to-academia moves and returns. Retain people with unknown outcomes in the denominator.
+1. Build a worldwide register of universities and **historical doctoral programs** in Operations Management, Operations Research and Industrial Engineering, including programs that closed, suspended admissions, merged or changed names. Use the [Operations Academia university directory](https://www.operationsacademia.org/universities) as a dated discovery source, not an exhaustive population frame. Its cards combine schools and departments from postings and curated records; listing does not prove a department awards an in-scope PhD. Supplement it with official catalogs, archived university pages, dissertation repositories and documented predecessor programs. Distinguish university, school, department and program identities.
+2. Enumerate **all documented graduates by program and graduation cohort**, independently of subsequent employment. Combine official graduate/alumni lists, placement reports, commencement lists and dissertation repositories. Keep partial cohorts; do not present them as complete. A dissertation submission or a job-market candidacy alone does not establish that a degree was awarded. Include graduates who finished after admissions ceased and people never employed in academia.
+3. Enrich each graduate with sourced degree facts, advisors, publications through the PhD year, initial employment and subsequent career events, including direct industry entry, corporate postdocs, academia-to-industry moves, industry-to-academia moves and returns. Keep a last-checked date for each fact, not just the profile. Retain people with unknown outcomes in the denominator.
+
+Existing first-job review of the imported faculty directory continues in parallel and feeds these records. It is an enrichment stream, not the census sampling frame. A complete individual review is not the same as a verified outcome, and a complete-looking directory is not evidence of population coverage.
+
+Record program opening, admissions suspension/end and program closure separately, with date bounds and sources. Link predecessor and successor programs explicitly rather than overwriting old names or assigning old graduates to a new program. An absent current webpage is not evidence of closure. Historical graduate lists remain eligible even when the university no longer offers the degree. Broad degrees (for example a management PhD with an OM specialization) need explicit specialization evidence; research interests or the current department alone do not establish eligibility.
 
 Use all publicly documented cohorts, recording the actual start/end of coverage for each program. Do not silently impose a common historical window or discard programs with missing placements. Freeze a study-specific balanced cohort window for comparative analyses when needed.
 
@@ -20,10 +23,15 @@ The [Econ PhD Placements methodology](https://www.econphdplacements.com/#methodo
 | Person | A disambiguated individual | Stable ID, public professional name; aliases and linked source identifiers |
 | Organization | A university, school, department, company, agency or nonprofit | Stable ID, official name, parent organization, historical aliases |
 | Program | A doctorate-granting program | Organization, program name, official field, scope decision and evidence |
+| Program period / relationship | A documented operating period or predecessor/successor link | Admissions/closure status, date bounds, rename/merge/split and evidence |
 | Doctorate | A person's doctoral degree | Program, degree title, field, award/defense dates, completion status and evidence |
+| Advising | An advisor's relationship to a particular doctorate | Advisor identity, advisor/co-advisor/committee role and supporting source |
+| Publication / authorship | A distinct scholarly work and a person's authorship | DOI where available, title, venue, work type, dates, versions and disambiguated authors |
+| Degree publication | A work's eligibility for a PhD-year snapshot | Cutoff rule, date evidence, included/excluded/uncertain decision and check date |
 | Career event | An appointment or documented nonemployment interval | Employer, role, start/end bounds, sector, appointment type, full-time/primary status where explicit |
 | Source | A public document or dated version | URL, title, publisher, document date, retrieval date, optional archive URL and content hash |
 | Claim | One asserted fact about a record | Field, source assertion, locator, review decision, normalized value and rationale |
+| Claim check | A subsequent check of an existing assertion | Source version, check date, confirmation/conflict/unavailable outcome and reviewer |
 | Cohort coverage | A program in a graduation year | Published total if known, identified graduates, completeness assessment and sources |
 | Research review | A documented investigation | Target, reviewer, date, disposition, sources examined and next step |
 | Revision | An auditable change | Record ID, prior/new value, rationale, source and release |
@@ -55,6 +63,18 @@ Prefer original university placement reports, dated CVs, institutional appointme
 For every published job, record evidence for identity, employer, dates where available, and why the appointment is first or later. Scope verification to individual fields: an employer can be verified while role, sector or exact start date remains unknown. Use `verified`, `unresolved`, `contradicted` and `pending` claim states, with explanatory notes rather than unsupported numeric confidence scores.
 
 Record document date and retrieval date separately. A CV retrieved today may be years old. Preserve short supporting paraphrases and page/section locators in public data; retain permitted source snapshots and hashes in the research cache. Never publish entire downloaded CVs, private contact details or unpublished source files.
+
+Every fact displayed as checked must have its own review timestamp. Pending imported assertions retain their retrieval dates but must not be labeled independently checked. Rechecking an unchanged assertion appends a check event; changing a fact creates a revised claim and retains the old assertion. Failed access records a failed check, not renewed confirmation. Show both the latest check attempt and latest successful confirmation when they differ. A profile-level last-update date is only a convenience summary.
+
+## Advisors and publications at graduation
+
+Use dissertation front matter, official repository metadata, graduate records or an explicit CV statement to identify advisors. Preserve multiple co-advisors and distinguish them from committee members. Advisor names are independently disambiguated; being an advisor does not automatically put someone in the graduate census.
+
+The default requested publication snapshot is **works published through 31 December of the PhD award year**, labeled as a calendar-year measure. Also support a stricter **published by the actual degree date** measure where dates permit. Do not claim that a same-year article preceded graduation when only years are known. Keep accepted papers, preprints, journal articles and conference papers distinguishable; accepted or submitted work is not automatically published. Preserve first-online and print dates separately, using first formal publication for the main published-work measure and stating the convention.
+
+Resolve author identity using the person's CV, publisher records and public scholarly identifiers where available. A name match alone is insufficient. Record DOI, title, venue, author list/order, work type, source date and last check. Link preprint and published versions to prevent double counting. Keep uncertain identity and timing assessments out of confirmed counts. A current CV can reconstruct a historical publication list using dated works; it cannot establish historical citation counts. Publication-list coverage must be labeled partial unless reconciled against appropriate sources.
+
+For each graduate, the eventual profile presents education and advisors, a chronological career timeline, publications with year and PhD-cutoff filters, and expandable field-level sources/check dates. Downloads separate people, degrees, programs, jobs, advisors, works and evidence, with stable IDs linking them. Researchers can join them without parsing a single biography text field.
 
 Collection runs should cache responses, avoid repeated requests, record failures and retry conservatively. Do not bypass sign-in requirements, CAPTCHAs, paywalls or certificate warnings. A failed retrieval is not an unresolved substantive review until the attempted evidence and specific barrier are recorded.
 

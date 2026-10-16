@@ -1,5 +1,8 @@
 import fs from 'node:fs';
 import {validateDataset,isSourceUrl} from '../assets/model.js';
+import {validatePrograms} from './validate-programs.mjs';
+const programs=validatePrograms(JSON.parse(fs.readFileSync(new URL('../data/doctoral-programs.json',import.meta.url),'utf8')));
+console.log(`Program register: ${programs.records.length} sourced records with field check dates.`);
 const faculty=JSON.parse(fs.readFileSync(new URL('../data/faculty.json',import.meta.url),'utf8')).records;
 const ids=new Set(faculty.map(r=>r.id));
 for(const name of ['faculty','placements']){const data=validateDataset(JSON.parse(fs.readFileSync(new URL(`../data/${name}.json`,import.meta.url),'utf8')));if(data.metadata?.recordCount!==undefined&&data.metadata.recordCount!==data.records.length)throw Error('Metadata count mismatch');if(name==='placements')for(const r of data.records){if(r.verificationStatus!=='verified-first-placement'||!r.employer||!r.evidenceUrl||!r.evidenceNote||!r.reviewedAt||!ids.has(r.facultyId))throw Error('First placements require identity, employer, evidence and review');if(r.placementYear!==null&&(!Number.isInteger(r.placementYear)||r.placementYear<1900||r.placementYear>2100))throw Error('Invalid placement year');if(!r.sources?.some(s=>s.url===r.evidenceUrl))throw Error('Primary evidence missing from source list');}console.log(`${name}: ${data.records.length} valid records`);}
@@ -19,5 +22,9 @@ for(const p of placements){
  if(!r||r.employer!==p.employer||r.evidenceUrl!==p.evidenceUrl||r.checkedAt!==p.reviewedAt)throw Error(`Placement disagrees with research ledger: ${p.name}`);
  if(p.placementYear!=null&&p.phdYear!=null&&p.placementYear<p.phdYear)throw Error(`First new job predates doctorate: ${p.name}`);
  if(p.phdInstitution!==p.sourceImportedPhdInstitution&&!p.phdInstitutionResolution)throw Error(`Undocumented degree institution correction: ${p.name}`);
+ for(const [field,evidenceField] of [['phdYear','phdYearVerified'],['phdInstitution','phdInstitutionVerified']]){
+  const expected=r[evidenceField]!=null?'verified':p[field]!=null&&p[field]!==''?'source-reported':'unknown';
+  if(p[field+'VerificationStatus']!==expected)throw Error(`Incorrect degree-field verification status: ${p.name}`);
+ }
 }
 console.log('Every published placement matches its reviewed evidence record.');

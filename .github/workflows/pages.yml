@@ -23,6 +23,10 @@ jobs:
           node-version: '22'
       - name: Validate data and explorer behavior
         run: npm run check
+      - name: Validate research schema and reproducible database
+        run: |
+          python3 scripts/test-research-schema.py
+          python3 scripts/build-research-database.py
       - name: Prepare public files
         run: node scripts/build.mjs
       - uses: actions/configure-pages@v5
