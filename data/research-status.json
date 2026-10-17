@@ -4,24 +4,24 @@
     "updatedAt": "2026-10-17",
     "total": 3161,
     "counts": {
-      "unresolved": 1680,
-      "verified": 1477,
+      "unresolved": 1667,
+      "verified": 1490,
       "not-yet-completed-phd": 4
     },
     "bySource": {
       "omlist": {
         "total": 2149,
         "counts": {
-          "unresolved": 1165,
-          "verified": 983,
+          "unresolved": 1154,
+          "verified": 994,
           "not-yet-completed-phd": 1
         }
       },
       "faculty-page": {
         "total": 1012,
         "counts": {
-          "verified": 494,
-          "unresolved": 515,
+          "verified": 496,
+          "unresolved": 513,
           "not-yet-completed-phd": 3
         }
       }
@@ -4824,15 +4824,25 @@
       "facultyId": "omlist-174f9c99dfda16fb",
       "name": "Ryan W. Buell",
       "status": "unresolved",
-      "checkedAt": "2026-10-16",
+      "checkedAt": "2026-10-17",
+      "reason": "The HBS profile now answers a plain curl request with a browser user-agent (and is where ryanbuell.com redirects). It says he earned a DBA in Technology and Operations Management at Harvard Business School, an MBA there and a BBA at Michigan, and that before graduate study he co-founded the Tour Now Network and worked at McKinsey and General Motors; it lists his current chair but gives no dates, no first appointment and no CV link (the profile carries no Profile Files CV, unlike other TOM faculty). His ORCID record (0000-0002-6779-8593) is empty, and the HBS doctoral placement page covers only 2020-2026. The first post after the DBA, presumably at HBS, is undated and unconfirmed. Earlier review (2026-10-16): Public HBS profile returned access denied, leaving first employment chronology unavailable from the linked institutional source.",
       "sources": [
         {
           "url": "https://www.hbs.edu/faculty/Pages/profile.aspx?facId=320524",
-          "title": "Ryan W. Buell official profile",
-          "notes": "Public HBS profile returned access denied, leaving first employment chronology unavailable from the linked institutional source."
+          "title": "HBS faculty profile - Ryan W. Buell",
+          "notes": "Read with curl and a browser user-agent: DBA in TOM at HBS, MBA HBS, BBA Michigan; pre-graduate Tour Now Network, McKinsey, General Motors; no dates or CV link."
+        },
+        {
+          "url": "https://orcid.org/0000-0002-6779-8593",
+          "title": "ORCID - Ryan Buell",
+          "notes": "Read through pub.orcid.org/v3.0: no affiliations or works."
+        },
+        {
+          "url": "https://www.hbs.edu/doctoral/placement",
+          "title": "HBS Doctoral Programs - Placement",
+          "notes": "Lists placements for 2020-2026 only."
         }
       ],
-      "reason": "Public HBS profile returned access denied, leaving first employment chronology unavailable from the linked institutional source.",
       "source": "omlist"
     },
     {
@@ -5465,18 +5475,13 @@
       "facultyId": "omlist-d11999c81ef7cf2c",
       "name": "Andre Pereira de Carvalho",
       "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "Search results indicate an FGV-EAESP doctorate 2007-2011 and a faculty role at FGV-EAESP, but the Escavador (Lattes-derived) page returned HTTP 403 and the Lattes CV was not opened, so the start date and any role before FGV EAESP professor are unconfirmed.",
+      "checkedAt": "2026-10-17",
+      "reason": "The Lattes-derived Escavador record (read through the r.jina.ai reader because the site answers 403 to plain requests; data collected from Lattes on 02/05/2025) gives a doctorate in Administração de Empresas at FGV-SP, 2007-2011, and an employment history entirely at FGV-SP: researcher at the Centro de Estudos em Sustentabilidade (GVces) 2004-2011, Professor (CLT, 20 h) from 2008 to the present, vice-coordinator of the undergraduate programme 2012-2018 and researcher 2012 and from 2018. The FGV professorship began in 2008, three years before the 2011 doctorate, and simply continued, so under the overlap rule it is not a new post-PhD job, and the later FGV roles are internal. No new employer after 2011 is listed, so the first new post-PhD job is undocumented (he stayed at the pre-degree employer). Earlier review (2026-10-16): search results suggested an FGV-EAESP doctorate 2007-2011 and an FGV faculty role, but Escavador returned 403 and the Lattes CV was not opened, so the start date and earlier roles were unconfirmed.",
       "sources": [
         {
           "url": "https://www.escavador.com/sobre/5737514/andre-pereira-de-carvalho",
-          "title": "Escavador profile (Lattes-derived)",
-          "notes": "Attempted; HTTP 403."
-        },
-        {
-          "url": "https://eaesp.fgv.br/en/people/andre-pereira-carvalho",
-          "title": "FGV EAESP profile",
-          "notes": "Seen in search results only; current role."
+          "title": "Escavador - Andre Pereira de Carvalho (Lattes-derived)",
+          "notes": "Read through r.jina.ai (HTML return format); site answers 403 to curl. Formacao: Doutorado FGV-SP 2007-2011; Experiencia profissional: FGV-SP GVces researcher 2004-2011, Professor 2008-present, vice-coordinator 2012-2018, researcher 2012 and 2018-present. No other employer."
         }
       ],
       "source": "omlist"
@@ -6561,13 +6566,18 @@
       "facultyId": "omlist-6b5688522b30e485",
       "name": "Xiangfeng Chen",
       "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "Fudan page rendered a blank faculty template without individual education or appointment data.",
+      "checkedAt": "2026-10-17",
+      "reason": "The Fudan School of Management profile, read through its own data endpoint this time, gives a Doctor Degree in Management Science and Engineering at Fudan University, 1999-09 to 2002-06 (after an East China Normal University master 1996-1999) and, under academic experience, only visiting-scholar stays at NYU Stern (2006.08-2007.09), Kansas State (2010.07-08) and MIT Sloan (2012.08-12). It states no employment history and no year of joining Fudan, so it cannot show what the first post after the doctorate was or when it began. His ORCID record (0000-0003-0794-148X) lists an undated Fudan professorship only. Earlier review (2026-10-16): Fudan page rendered a blank faculty template without individual education or appointment data.",
       "sources": [
         {
           "url": "https://www.fdsm.fudan.edu.cn/en/faculty/list.htm?UID=012086",
-          "title": "Xiangfeng Chen public academic profile",
-          "notes": "Fudan page rendered a blank faculty template without individual education or appointment data."
+          "title": "Fudan School of Management - Xiangfeng Chen",
+          "notes": "Read through the page's own data endpoint (app.fdsm.fudan.edu.cn/NewTeacherService/api/Professor/GetSingleTeacherOtherInfo, labels personMessage, educationalBackground and academicExperience, English and Chinese), found by rendering the page in a headless browser; the English page itself rendered only publications through r.jina.ai. Education: a Doctor Degree in Management Science and Engineering at Fudan University, 1999-09 to 2002-06 (after an East China Normal University master 1996-1999). Academic experience: visiting-scholar stays at NYU Stern (2006.08-2007.09), Kansas State (2010.07-08) and MIT Sloan (2012.08-12). No employment chronology."
+        },
+        {
+          "url": "https://orcid.org/0000-0003-0794-148X",
+          "title": "ORCID - Xiangfeng Chen",
+          "notes": "Read through pub.orcid.org/v3.0: one undated employment entry (Professor, Department of Management Science, Fudan University); no dates."
         }
       ],
       "source": "omlist"
@@ -6935,28 +6945,33 @@
       "facultyId": "omlist-2e5351c84c6973fa",
       "name": "Ki Ling Cheung",
       "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "The HKUST ISOM directory page, which a search engine summarises as listing Material Planning Analyst, Sun Microsystems, California, 1990; Management Consultant, Teknekron Corporation, California, 1990-1992; and Assistant Professor, HKUST ISMT, 1993-1999, could not be opened (HTTP 503 via the fetcher, TLS failure via curl), and search snippets are not accepted as evidence. The HKUST faculty-profiles page confirms the Stanford PhD in Industrial Engineering 1990 but lists no employment history; the MSc Global Operations page and ORCID give the current associate professorship only. Even once the directory is opened, the order of the two 1990 industry roles relative to the degree date needs checking before a first job is recorded.",
+      "checkedAt": "2026-10-17",
+      "reason": "The HKUST ISOM directory page, now read over plain http, lists: PhD 1990 Stanford University (Industrial Engineering); Teaching Assistant, Stanford IE-EM, 1987-1990; Material Planning Analyst, Sun Microsystems, California, 1990; Management Consultant, Teknekron Corporation, California, 1990-1992; Assistant Professor of ISMT, HKUST, 1993-1999; Associate Professor 1999-present. Both industry posts begin in the degree year, and the list is not in strict date order (a 1996 visit sits under the 1993-1999 post, a 2012-2013 directorship under the 1999 post), so it does not show which of the two 1990 posts came first, or whether the Sun position (a single year, also cited among his consulting projects) followed the degree or was held while he finished it. The Stanford degree month could not be found: SearchWorks blocks automated requests and the Mathematics Genealogy Project gives the year only. The first job is industry in 1990 either way, but the employer is undetermined. Earlier review (2026-10-16): the directory page could not be opened (503 and TLS failure); the faculty-profiles page confirmed the 1990 Stanford PhD without an employment history.",
       "sources": [
+        {
+          "url": "https://isom.hkust.edu.hk/faculty-and-staff/directory/imcheung",
+          "title": "HKUST ISOM directory - Ki Ling Cheung",
+          "notes": "Read over plain http:// (the https host fails certificate validation for curl and the fetch tool); official HKUST ISOM directory page. Academic qualification: PhD 1990 Stanford, Industrial Engineering. Experience as listed: Associate Professor HKUST 1999-present; Director CMSCM 2012-2013; Assistant Professor ISMT HKUST 1993-1999; Visiting Scholar Stanford Jul-Dec 1996; Teaching Assistant Stanford 1987-1990; Management Consultant, Teknekron Corporation, California, 1990-1992; Material Planning Analyst, Sun Microsystem, California, 1990."
+        },
+        {
+          "url": "https://www.mathgenealogy.org/id.php?id=118238",
+          "title": "Mathematics Genealogy Project - Ki Cheung",
+          "notes": "Search result row: Cheung, Ki - Stanford University - 1990 (year only, no month)."
+        },
         {
           "url": "https://facultyprofiles.hkust.edu.hk/profiles.php?profile=ki-ling-cheung-imcheung",
           "title": "HKUST Faculty Profiles — Ki Ling Cheung",
-          "notes": "PhD in Industrial Engineering, Stanford University, 1990; Associate Professor, ISOM; no employment history."
-        },
-        {
-          "url": "https://isom.hkust.edu.hk/faculty-and-staff/directory/imcheung",
-          "title": "HKUST ISOM faculty directory — Ki Ling Cheung",
-          "notes": "Could not be opened (HTTP 503; curl TLS failure through the proxy). Search-engine summary reports Sun Microsystems 1990, Teknekron 1990-1992 and HKUST assistant professorship 1993-1999."
+          "notes": "Earlier review (2026-10-16): PhD in Industrial Engineering, Stanford University, 1990; Associate Professor, ISOM; no employment history."
         },
         {
           "url": "https://msgo.hkust.edu.hk/ki-ling-cheung",
           "title": "HKUST MSc Global Operations — Ki Ling Cheung",
-          "notes": "Associate Professor, ISOM; Stanford PhD (no year); no chronology."
+          "notes": "Earlier review (2026-10-16): Associate Professor, ISOM; Stanford PhD (no year); no chronology."
         },
         {
           "url": "https://omlist.edutool.org/schools/hong-kong-university-of-science-and-technology/faculty/ki-ling-cheung.html",
           "title": "OM List profile — Ki Ling Cheung",
-          "notes": "Directory entry (PhD Stanford 1990, tenured 1999); ORCID 0000-0003-3876-3495 lists HKUST without dates."
+          "notes": "Earlier review (2026-10-16): Directory entry (PhD Stanford 1990, tenured 1999); ORCID 0000-0003-3876-3495 lists HKUST without dates."
         }
       ],
       "source": "omlist"
@@ -7983,13 +7998,13 @@
       "facultyId": "omlist-bc8d388b072d927a",
       "name": "Xi Dai",
       "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "The Fudan profile returned a template without readable education or employment details.",
+      "checkedAt": "2026-10-17",
+      "reason": "The Fudan School of Management profile, read through its own data endpoint this time, gives a Doctor Degree in Management Science and Engineering at Fudan University, 2000-09 to 2004-06 (master in Operational Research and Cybernetics, Fudan, 1994-1997; the gap 1997-2000 is unexplained) and no work or academic experience entries. It states no employment history and no year of joining Fudan, so it cannot show what the first post after the doctorate was or when it began. No ORCID record with a Fudan affiliation was found under this name. Earlier review (2026-10-16): The Fudan profile returned a template without readable education or employment details.",
       "sources": [
         {
           "url": "https://www.fdsm.fudan.edu.cn/en/faculty/list.htm?UID=012087",
-          "title": "Xi Dai academic profile",
-          "notes": "The Fudan profile returned a template without readable education or employment details."
+          "title": "Fudan School of Management - Xi Dai",
+          "notes": "Read through the page's own data endpoint (app.fdsm.fudan.edu.cn/NewTeacherService/api/Professor/GetSingleTeacherOtherInfo, labels personMessage, educationalBackground and academicExperience, English and Chinese), found by rendering the page in a headless browser; the English page itself rendered only publications through r.jina.ai. Education: a Doctor Degree in Management Science and Engineering at Fudan University, 2000-09 to 2004-06 (master in Operational Research and Cybernetics, Fudan, 1994-1997; the gap 1997-2000 is unexplained). Academic experience: none listed. No employment chronology."
         }
       ],
       "source": "omlist"
@@ -7998,15 +8013,20 @@
       "facultyId": "omlist-92414bf200b63979",
       "name": "Yue Dai",
       "status": "unresolved",
-      "checkedAt": "2026-10-16",
+      "checkedAt": "2026-10-17",
+      "reason": "The Fudan School of Management profile, read through its own data endpoint this time, gives a Doctor Degree in Industrial Engineering at North Carolina State University, 1999-08 to 2003-05 (the OM List gives 2004) and, under academic experience, only visiting-scholar stays at the Singapore Institute of Manufacturing Technology (2004.10-2005.02), MIT Sloan (2005.08-2006.01) and City University of Hong Kong (2009.08-09). It states no employment history and no year of joining Fudan, so it cannot show what the first post after the doctorate was or when it began. The only ORCID record pairing her name with NC State and Fudan (0000-0001-5964-6509) has undated entries only. Earlier review (2026-10-16): Fudan profile returned unpopulated biography headings, not individual career details.",
       "sources": [
         {
           "url": "https://www.fdsm.fudan.edu.cn/en/faculty/list.htm?UID=012088",
-          "title": "Yue Dai Profile",
-          "notes": "Fudan profile returned unpopulated biography headings, not individual career details."
+          "title": "Fudan School of Management - Yue Dai",
+          "notes": "Read through the page's own data endpoint (app.fdsm.fudan.edu.cn/NewTeacherService/api/Professor/GetSingleTeacherOtherInfo, labels personMessage, educationalBackground and academicExperience, English and Chinese), found by rendering the page in a headless browser; the English page itself rendered only publications through r.jina.ai. Education: a Doctor Degree in Industrial Engineering at North Carolina State University, 1999-08 to 2003-05 (the OM List gives 2004). Academic experience: visiting-scholar stays at the Singapore Institute of Manufacturing Technology (2004.10-2005.02), MIT Sloan (2005.08-2006.01) and City University of Hong Kong (2009.08-09). No employment chronology."
+        },
+        {
+          "url": "https://orcid.org/0000-0001-5964-6509",
+          "title": "ORCID - Yue Dai",
+          "notes": "Read through pub.orcid.org/v3.0: undated education (North Carolina State University) and undated employment (Fudan University); other Fudan Yue Dai ORCIDs are namesakes (physics, sociology)."
         }
       ],
-      "reason": "Fudan profile returned unpopulated biography headings, not individual career details.",
       "source": "omlist"
     },
     {
@@ -8758,21 +8778,39 @@
     {
       "facultyId": "omlist-731b5d0570aaa595",
       "name": "Enrico Diecidue",
-      "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "INSEAD CV and profile endpoints returned access denied; earliest placement not established.",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "reason": "INSEAD pages and the CV PDF are still behind a Cloudflare bot check (curl 403, reader proxy and headless browser get the challenge page). His doctoral advisor Peter Wakker's page of former PhD students gives the thesis (Nonexpected Utility and Coherence, CentER, Tilburg University, 2 November 2001) and states that after his Ph.D. he became assistant professor in decision sciences at INSEAD in Fontainebleau, adding that in his second year of teaching, 2003, he won INSEAD's best overall teacher award. This is an explicit post-PhD placement record from the advisor. The start year is not stated (the 2003 remark fits a start in 2001-02 or 2002), so placementYear is left null; a continental-European assistant professorship is categorised unknown under the project convention.",
       "sources": [
         {
-          "url": "https://www.insead.edu/system/files/2025-09/diecidue-cv-2025-AUG-SHORT.pdf",
-          "title": "Enrico Diecidue public academic profile",
-          "notes": "INSEAD CV and profile endpoints returned access denied; earliest placement not established."
+          "url": "https://personal.eur.nl/wakker/miscella/phdstudents/wakkrphd.htm",
+          "title": "Peter Wakker - former PhD students",
+          "notes": "Advisor page, read with curl: Enrico Diecidue, 2 November 2001, Ph.D. thesis CentER, Tilburg Univ.; after his Ph.D.: assistant professor in decision sciences at INSEAD, Fontainebleau; in his second year of teaching, 2003, best overall teacher award at INSEAD."
         },
         {
-          "url": "https://www.insead.edu/faculty/enrico-diecidue",
-          "title": "Enrico Diecidue public academic profile",
-          "notes": "INSEAD CV and profile endpoints returned access denied; earliest placement not established."
+          "url": "https://www.mathgenealogy.org/id.php?id=95013",
+          "title": "Mathematics Genealogy Project - Enrico Diecidue",
+          "notes": "Search result row: Diecidue, Enrico - Tilburg University - 2001."
+        },
+        {
+          "url": "https://www.insead.edu/system/files/2025-09/diecidue-cv-2025-AUG-SHORT.pdf",
+          "title": "INSEAD CV (short, Aug 2025)",
+          "notes": "Attempted again: Cloudflare challenge (HTTP 403) to curl, r.jina.ai, headless browser and the fetch tool."
+        },
+        {
+          "url": "https://www.insead.edu/faculty-research/faculty/enrico-diecidue/personal-site",
+          "title": "INSEAD faculty personal site - Enrico Diecidue",
+          "notes": "Read by the verifier with the fetch tool (2026-10-17): economics degree Bocconi 1996; Ph.D. CentER, Tilburg University, 2001; \"Since 2001 he has been a resident faculty member at INSEAD, first in Singapore and then in France\"; later visiting Wharton 2008-2009 and sabbaticals. No title at start."
         }
       ],
+      "employer": "INSEAD",
+      "position": "Assistant Professor of Decision Sciences",
+      "placementYear": 2001,
+      "category": "unknown",
+      "evidenceUrl": "https://personal.eur.nl/wakker/miscella/phdstudents/wakkrphd.htm",
+      "evidenceNote": "Advisor's student page: Ph.D. thesis defended 2 November 2001 at CentER, Tilburg; after the Ph.D. he became assistant professor in decision sciences at INSEAD (second year of teaching 2003). Start year not stated. Verifier: placementYear set from null to 2001, because the INSEAD personal-site biography says he has been resident faculty at INSEAD since 2001 (first in Singapore); with the advisor page this dates the post-PhD assistant professorship to 2001. The start may precede the 2 November 2001 defense by some months, which is not well before the degree.",
+      "phdYearVerified": 2001,
+      "phdInstitutionVerified": "Tilburg University",
       "source": "omlist"
     },
     {
@@ -10890,16 +10928,29 @@
     {
       "facultyId": "omlist-151a0bc76c1ee6b3",
       "name": "Kris Johnson Ferreira",
-      "status": "unresolved",
-      "checkedAt": "2026-10-16",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "reason": "The HBS profile now answers a plain curl request with a browser user-agent and links her CV dated October 14, 2026. The CV gives Ph.D., Operations Research, MIT, 2015 (dissertation Analytics in Online Markets, chair David Simchi-Levi) and lists the Harvard appointments: Assistant Professor of Business Administration, Technology and Operations Management Unit, 7/1/15-6/30/23, then associate professor. Work experience (operations and supply-chain consultant 2007-2010, an internship in 2004) and MIT teaching (2012-2014) all precede the degree, and no post sits between the PhD and HBS. Plain Assistant Professor at a North American business school: tenure-track by convention.",
       "sources": [
         {
           "url": "https://www.hbs.edu/faculty/Pages/profile.aspx?facId=773347",
-          "title": "Kris Johnson Ferreira Profile",
-          "notes": "Fetch failed: HTTP Error 403: Forbidden"
+          "title": "HBS faculty profile - Kris Ferreira",
+          "notes": "Read with curl and a browser user-agent; links the CV PDF (Profile Files/Kris Ferreira CV 2026_10_14...)."
+        },
+        {
+          "url": "https://www.hbs.edu/faculty/Profile%20Files/Kris%20Ferreira%20CV%202026_10_14_778354cf-c7fe-48a6-aaf3-d93dc5fb4b2e.pdf",
+          "title": "Kris (Johnson) Ferreira CV, October 14, 2026",
+          "notes": "Downloaded with curl (redirects to hbs.edu/ris/...). Education: 2015 Ph.D., Operations Research, MIT. Harvard appointments: 7/1/15-6/30/23 Assistant Professor of Business Administration, TOM Unit; 7/1/23- associate professor. Work experience 2007-2010 consultant, 2004 intern (pre-PhD)."
         }
       ],
-      "reason": "Harvard biography access failed and the discovered primary CV URL returned 404; search excerpts alone are insufficient to verify chronology.",
+      "employer": "Harvard Business School",
+      "position": "Assistant Professor of Business Administration",
+      "placementYear": 2015,
+      "category": "tenure-track",
+      "evidenceUrl": "https://www.hbs.edu/faculty/Profile%20Files/Kris%20Ferreira%20CV%202026_10_14_778354cf-c7fe-48a6-aaf3-d93dc5fb4b2e.pdf",
+      "evidenceNote": "CV: Ph.D. MIT 2015; Assistant Professor of Business Administration, Technology and Operations Management Unit, Harvard Business School, from 7/1/15; consulting work 2007-2010 and MIT teaching preceded the doctorate.",
+      "phdYearVerified": 2015,
+      "phdInstitutionVerified": "Massachusetts Institute of Technology",
       "source": "omlist"
     },
     {
@@ -11444,18 +11495,18 @@
       "facultyId": "omlist-a44c7a93cacc476e",
       "name": "Frances X. Frei",
       "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "Searches did not surface a CV or dated HBS/Wharton biography (HBS profile fetch returned 403). It is likely but unverified that a Wharton appointment preceded HBS (joined 1998); the 1992 Penn PhD year was not confirmed either.",
+      "checkedAt": "2026-10-17",
+      "reason": "The HBS profile could not be read this time either: a plain curl request returns HTTP 202 with an empty body, and both the reader proxy and a headless browser receive a human-verification challenge. Her ORCID record (0000-0003-4423-5445) has a single employment entry, Professor, Technology and Operations Management, Harvard Business School, from 1998-07, which dates the HBS start but says nothing about the years between the Penn doctorate and 1998; the Penn repository has no dissertation record under her name, and the Mathematics Genealogy Project has no entry. Earlier review (2026-10-16): Searches did not surface a CV or dated HBS/Wharton biography (HBS profile fetch returned 403). It is likely but unverified that a Wharton appointment preceded HBS (joined 1998); the 1992 Penn PhD year was not confirmed either.",
       "sources": [
         {
-          "url": "https://www.hbs.edu/faculty/Pages/profile.aspx?facId=6477",
-          "title": "Frances Frei - HBS profile",
-          "notes": "Attempted; HTTP 403."
+          "url": "https://orcid.org/0000-0003-4423-5445",
+          "title": "ORCID - Frances Frei",
+          "notes": "Read through pub.orcid.org/v3.0: employment Professor, Technology and Operations Management, Harvard Business School, start 1998-07; no education or earlier employment."
         },
         {
-          "url": "https://www.bostonglobe.com/tech-power-players/year/2023/person/frances-frei-the-leadership-consortium/",
-          "title": "Boston Globe profile",
-          "notes": "Search result; Penn doctorate mentioned, no dated first job."
+          "url": "https://www.hbs.edu/faculty/Pages/profile.aspx?facId=6477",
+          "title": "HBS faculty profile - Frances X. Frei",
+          "notes": "Attempted: curl HTTP 202 empty body; r.jina.ai and headless browser get a human-verification page."
         }
       ],
       "source": "omlist"
@@ -11745,30 +11796,40 @@
       "facultyId": "omlist-01fb76cfa1dfd56d",
       "name": "Jelmer Pier van der Gaast",
       "status": "unresolved",
-      "checkedAt": "2026-10-16",
+      "checkedAt": "2026-10-17",
+      "reason": "The Fudan School of Management profile, read through its own data endpoint this time, gives a Doctor Degree in Operations Research at Erasmus University Rotterdam, 2011-01 to 2016-10 (master and bachelor in Econometrics and Management Science, EUR) and, under academic experience, only one visiting stay at MIT Sloan (2023.08-12). It states no employment history and no year of joining Fudan, so it cannot show what the first post after the doctorate was or when it began. His ORCID record (0000-0001-7591-1552) lists works only (Operations Research 2020, IISE Transactions 2019, Transportation Science 2018, Queueing Systems 2017) and no affiliations; the EUR RePub thesis record could not be located through the repository search. Earlier review (2026-10-16): Linked Fudan page exposes an empty faculty template and no usable degree or employment history.",
       "sources": [
         {
           "url": "https://www.fdsm.fudan.edu.cn/en/faculty/list.htm?UID=012120",
-          "title": "Jelmer Pier van der Gaast public academic profile",
-          "notes": "Linked Fudan page exposes an empty faculty template and no usable degree or employment history."
+          "title": "Fudan School of Management - Jelmer Pier van der Gaast",
+          "notes": "Read through the page's own data endpoint (app.fdsm.fudan.edu.cn/NewTeacherService/api/Professor/GetSingleTeacherOtherInfo, labels personMessage, educationalBackground and academicExperience, English and Chinese), found by rendering the page in a headless browser; the English page itself rendered only publications through r.jina.ai. Education: a Doctor Degree in Operations Research at Erasmus University Rotterdam, 2011-01 to 2016-10 (master and bachelor in Econometrics and Management Science, EUR). Academic experience: one visiting stay at MIT Sloan (2023.08-12). No employment chronology."
+        },
+        {
+          "url": "https://orcid.org/0000-0001-7591-1552",
+          "title": "ORCID - Jelmer Pier van der Gaast",
+          "notes": "Read through pub.orcid.org/v3.0: no education or employment entries; five journal works on order-picking and polling systems."
         }
       ],
-      "reason": "Linked Fudan page exposes an empty faculty template and no usable degree or employment history.",
       "source": "omlist"
     },
     {
       "facultyId": "omlist-4b6d749df9579c58",
       "name": "Anil Gaba",
       "status": "unresolved",
-      "checkedAt": "2026-10-16",
+      "checkedAt": "2026-10-17",
+      "reason": "The INSEAD profile is still behind a Cloudflare bot check (curl 403, reader proxy and headless browser get the challenge page; the Internet Archive is unreachable from here). The Mathematics Genealogy Project confirms the doctorate (Duke University 1989, dissertation A Bernoulli Process with Proportion-Dependent Noise Structure, advisor Robert L. Winkler) but no employment; his two ORCID records are empty, and no advisor CV with a student-placement list could be reached. The first post after the 1989 degree is undocumented. Earlier review (2026-10-16): INSEAD faculty profile returned 403; no primary chronology was established.",
       "sources": [
         {
+          "url": "https://www.mathgenealogy.org/id.php?id=214015",
+          "title": "Mathematics Genealogy Project - Anil Gaba",
+          "notes": "Ph.D. Duke University 1989; dissertation A Bernoulli Process with Proportion-Dependent Noise Structure; advisor Robert Lewis Winkler; no employment information."
+        },
+        {
           "url": "https://www.insead.edu/faculty/anil-gaba",
-          "title": "Anil Gaba Profile",
-          "notes": "Fetch failed: HTTP Error 403: Forbidden"
+          "title": "INSEAD - Anil Gaba",
+          "notes": "Attempted again: Cloudflare bot check (HTTP 403 to curl; r.jina.ai and a headless browser receive the challenge page; the fetch tool 403)."
         }
       ],
-      "reason": "INSEAD faculty profile returned 403; no primary chronology was established.",
       "source": "omlist"
     },
     {
@@ -13458,16 +13519,29 @@
     {
       "facultyId": "omlist-8228e27f94787753",
       "name": "Huiqi Guan",
-      "status": "unresolved",
-      "checkedAt": "2026-10-16",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "reason": "Her ORCID record, a self-maintained dated chronology, lists a single employment at Fudan University, Department of Management Science, starting 2018-08; the Fudan profile, read through its data endpoint, dates the University of Miami doctorate 2013-08 to 2018-08. The Fudan post therefore starts in the month the doctorate ended, leaving no room for an earlier job. Neither source gives the title held at the start, so the kind of post is unknown. Identity: the ORCID works (Management Science 2018, MSOM 2019, POM 2023) match the Fudan operations scholar.",
       "sources": [
         {
           "url": "https://www.fdsm.fudan.edu.cn/en/faculty/list.htm?UID=012117",
-          "title": "Huiqi Guan Profile",
-          "notes": "Fudan biography returns unpopulated section headings, without dated career details."
+          "title": "Fudan School of Management - Huiqi Guan",
+          "notes": "Read through the page's own data endpoint (app.fdsm.fudan.edu.cn/NewTeacherService/api/Professor/GetSingleTeacherOtherInfo, labels personMessage, educationalBackground and academicExperience, English and Chinese), found by rendering the page in a headless browser; the English page itself rendered only publications through r.jina.ai. Education: Doctor Degree, Business Administration and Management, University of Miami, USA, 2013-08 to 2018-08; master Mathematics, Tsinghua 2011-2013; bachelor Tsinghua 2007-2011. Current title Associate Professor, Management Science. No employment chronology."
+        },
+        {
+          "url": "https://orcid.org/0000-0001-6461-515X",
+          "title": "ORCID - Huiqi Guan",
+          "notes": "Read through pub.orcid.org/v3.0: employment Fudan University, Management Science, start 2018-08, no end date, no role title; works include Management Science (2018), MSOM (2019) and POM (2023) papers on supply chains."
         }
       ],
-      "reason": "Fudan biography returns unpopulated section headings, without dated career details.",
+      "employer": "Fudan University (School of Management, Department of Management Science)",
+      "position": null,
+      "placementYear": 2018,
+      "category": "unknown",
+      "evidenceUrl": "https://orcid.org/0000-0001-6461-515X",
+      "evidenceNote": "ORCID lists employment at Fudan University, Department of Management Science, from 2018-08 (no title); the Fudan profile dates the University of Miami doctorate 2013-08 to 2018-08, so the Fudan post began as the doctorate ended. Title at start not stated.",
+      "phdYearVerified": 2018,
+      "phdInstitutionVerified": "University of Miami",
       "source": "omlist"
     },
     {
@@ -14480,20 +14554,25 @@
       "facultyId": "omlist-5c2d9f167cda11a6",
       "name": "Sameer Hasija",
       "status": "unresolved",
-      "checkedAt": "2026-10-16",
+      "checkedAt": "2026-10-17",
+      "reason": "The INSEAD profile remains behind a Cloudflare bot check (curl 403; reader proxy and headless browser get the challenge; the archived 2023 copy cannot be reached). His personal site, re-read with curl, gives the Rochester Simon PhD in Operations Management, M.S. and IIT Madras B.Tech., and his present roles, with no dates. The Mathematics Genealogy Project confirms University of Rochester, 2007, and his ORCID record is empty. The first post after the 2007 degree is undocumented. Earlier review (2026-10-16): Personal biography identifies Rochester doctorate and current INSEAD role but no dated early employment chronology; institutional profile returned 403.",
       "sources": [
         {
-          "url": "https://www.insead.edu/faculty/sameer-hasija",
-          "title": "Sameer Hasija Profile",
-          "notes": "Fetch failed: HTTP Error 403: Forbidden"
+          "url": "http://www.sameerhasija.com/",
+          "title": "Sameer Hasija - personal website",
+          "notes": "Read with curl: Professor of Technology and Operations Management and Dean of Executive Education at INSEAD; Ph.D. Operations Management and M.S. from Simon School, University of Rochester; no dates or earlier posts."
         },
         {
-          "url": "http://www.sameerhasija.com/?utm_medium=direct&",
-          "title": "Sameer Hasija Website",
-          "notes": "Personal biography identifies Rochester doctorate and current INSEAD role but no dated early employment chronology; institutional profile returned 403."
+          "url": "https://www.mathgenealogy.org/id.php?id=290513",
+          "title": "Mathematics Genealogy Project - Sameer Hasija",
+          "notes": "Search result row: Hasija, Sameer - University of Rochester - 2007."
+        },
+        {
+          "url": "https://www.insead.edu/faculty/sameer-hasija",
+          "title": "INSEAD - Sameer Hasija",
+          "notes": "Attempted again: Cloudflare bot check (HTTP 403 to curl; r.jina.ai and a headless browser receive the challenge page; the fetch tool 403)."
         }
       ],
-      "reason": "Personal biography identifies Rochester doctorate and current INSEAD role but no dated early employment chronology; institutional profile returned 403.",
       "source": "omlist"
     },
     {
@@ -14594,15 +14673,20 @@
       "facultyId": "omlist-78941335bf541cc3",
       "name": "Jishnu Hazra",
       "status": "unresolved",
-      "checkedAt": "2026-10-16",
+      "checkedAt": "2026-10-17",
+      "reason": "The IIM Bangalore profile now opens with curl and a browser user-agent: it gives PhD (Operations Management), University of Rochester, without a year, and his research and publications, but no employment history (its Curriculum Vitae link is empty). His ORCID record (0000-0002-7443-8131) lists the Rochester PhD (undated) and one employment, Indian Institute of Management Bangalore, from 1996-08, with his present title. The OM List gives a 1995 Rochester PhD, which no opened source confirms (the Mathematics Genealogy Project has no entry); if the degree was in 1995, the year to August 1996 is unaccounted for, so IIMB cannot yet be shown to be the first post. Earlier review (2026-10-16): IIM Bangalore primary profile returned HTTP403; no readable first-employment chronology obtained.",
       "sources": [
         {
           "url": "https://www.iimb.ac.in/user/77/jishnu-hazra",
-          "title": "Jishnu Hazra Profile",
-          "notes": "Fetch failed: HTTP Error 403: Forbidden"
+          "title": "IIM Bangalore - Jishnu Hazra",
+          "notes": "Read with curl and a browser user-agent: Professor, Production and Operations Management; PhD (Operations Management), University of Rochester (no year); MTech IIT Bombay; BTech IIT Delhi; CV link empty; no employment chronology."
+        },
+        {
+          "url": "https://orcid.org/0000-0002-7443-8131",
+          "title": "ORCID - Jishnu Hazra",
+          "notes": "Read through pub.orcid.org/v3.0: education PhD Operations Management, University of Rochester (undated); employment Professor, Indian Institute of Management Bangalore, start 1996-08."
         }
       ],
-      "reason": "IIM Bangalore primary profile returned HTTP403; no readable first-employment chronology obtained.",
       "source": "omlist"
     },
     {
@@ -15497,15 +15581,20 @@
       "facultyId": "omlist-6f07a089dc34337a",
       "name": "Jianqiang Hu",
       "status": "unresolved",
-      "checkedAt": "2026-10-16",
+      "checkedAt": "2026-10-17",
+      "reason": "The Fudan School of Management profile, read through its own data endpoint this time, gives a Doctor Degree in Applied Mathematics at Harvard University, 1986-09 to 1990-06 (BS Fudan 1981-1986) and no work or academic experience entries. It states no employment history and no year of joining Fudan, so it cannot show what the first post after the doctorate was or when it began. His ORCID record (0000-0003-2989-8048) lists the Harvard PhD and an undated Fudan professorship only; any appointment between 1990 and his move to Fudan is not documented by an opened source. Earlier review (2026-10-16): Fudan profile returned section headings without populated education or employment details.",
       "sources": [
         {
           "url": "https://www.fdsm.fudan.edu.cn/en/faculty/list.htm?UID=012066",
-          "title": "Jianqiang Hu Profile",
-          "notes": "Fudan profile returned section headings without populated education or employment details."
+          "title": "Fudan School of Management - Jianqiang Hu",
+          "notes": "Read through the page's own data endpoint (app.fdsm.fudan.edu.cn/NewTeacherService/api/Professor/GetSingleTeacherOtherInfo, labels personMessage, educationalBackground and academicExperience, English and Chinese), found by rendering the page in a headless browser; the English page itself rendered only publications through r.jina.ai. Education: a Doctor Degree in Applied Mathematics at Harvard University, 1986-09 to 1990-06 (BS Fudan 1981-1986). Academic experience: none listed. No employment chronology."
+        },
+        {
+          "url": "https://orcid.org/0000-0003-2989-8048",
+          "title": "ORCID - Jian-Qiang Hu",
+          "notes": "Read through pub.orcid.org/v3.0: PhD Applied Mathematics Harvard (undated), B.S. Fudan (undated), employment Professor, Management Science, Fudan University (undated)."
         }
       ],
-      "reason": "Fudan profile returned section headings without populated education or employment details.",
       "source": "omlist"
     },
     {
@@ -16430,13 +16519,18 @@
       "facultyId": "omlist-20719616b2cbf017",
       "name": "Tarun Jain",
       "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "Official profile returned access denied; first placement could not be established from this source.",
+      "checkedAt": "2026-10-17",
+      "reason": "The IIM Bangalore profile now opens with curl and a browser user-agent; its summary says that prior to joining IIMB he served as Assistant Professor at the Indian Institute of Management Udaipur, without dates, and its CV link is empty. The IIMB doctoral alumni list confirms the doctorate: Tarun Jain, POM, thesis Supply Chain Sourcing and Pricing Decisions under Competition, 2017. The IIM Udaipur post is very likely the first job, but no opened source dates it or shows that nothing came between the 2017 degree and Udaipur; no ORCID record under his name with an IIM affiliation was found. Earlier review (2026-10-16): Official profile returned access denied; first placement could not be established from this source.",
       "sources": [
         {
           "url": "https://www.iimb.ac.in/user/191/tarun-jain",
-          "title": "Tarun Jain public academic profile",
-          "notes": "Official profile returned access denied; first placement could not be established from this source."
+          "title": "IIM Bangalore - Tarun Jain",
+          "notes": "Read with curl and a browser user-agent: Professor, POM; prior to joining IIMB he served as Assistant Professor at IIM Udaipur (no dates); CV link empty."
+        },
+        {
+          "url": "https://www.iimb.ac.in/programmes/doctoral-programme/alumni",
+          "title": "IIM Bangalore doctoral programme alumni",
+          "notes": "Lists Tarun Jain, POM, thesis Supply Chain Sourcing and Pricing Decisions under Competition, 2017."
         }
       ],
       "source": "omlist"
@@ -19808,16 +19902,24 @@
     {
       "facultyId": "omlist-b3f08ed69d1bf38b",
       "name": "Ronald Siu Man Lau",
-      "status": "unresolved",
-      "checkedAt": "2026-10-16",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "reason": "The HKUST ISOM directory page, read over plain http, gives PhD 1991 University of Alabama (Management Science) and a dated chronology: Instructor, College of Business Administration, University of Alabama, 1988-1992; Assistant Professor, School of Business, University of South Dakota, 1992-1997; Associate Professor there 1997-2001; then HKUST from 2001. The Alabama instructorship began three years before the degree and continued past it, so it is not a new post-PhD job; the South Dakota assistant professorship is the first new post. A plain Assistant Professor title at a North American business school is recorded as tenure-track by convention.",
       "sources": [
         {
           "url": "https://isom.hkust.edu.hk/faculty-and-staff/directory/rlau",
-          "title": "Ronald Siu Man Lau Profile",
-          "notes": "Fetch failed: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1028)>"
+          "title": "HKUST ISOM directory - Ronald Lau",
+          "notes": "Read over plain http:// (the https host fails certificate validation for curl and the fetch tool); official HKUST ISOM directory page. PhD 1991 University of Alabama, Management Science; MA 1989 Alabama; BBA 1987 Montevallo. Experience: Instructor, College of Business Administration, University of Alabama, 1988-1992; Assistant Professor, School of Business, University of South Dakota, 1992-1997; Associate Professor, USD, 1997-2001; Visiting Associate Professor HKUST 2001-2012; Associate Professor of Business Education 2013-2026; Adjunct Associate Professor 2026-present."
         }
       ],
-      "reason": "HKUST institutional profile failed certificate validation; no readable early-career chronology obtained.",
+      "employer": "University of South Dakota (School of Business)",
+      "position": "Assistant Professor",
+      "placementYear": 1992,
+      "category": "tenure-track",
+      "evidenceUrl": "https://isom.hkust.edu.hk/faculty-and-staff/directory/rlau",
+      "evidenceNote": "HKUST directory: PhD 1991 Alabama; Instructor at Alabama 1988-1992 (began before the degree and continued, so not a new job); Assistant Professor, School of Business, University of South Dakota, 1992-1997, the first new post after the degree.",
+      "phdYearVerified": 1991,
+      "phdInstitutionVerified": "University of Alabama",
       "source": "omlist"
     },
     {
@@ -20967,16 +21069,29 @@
     {
       "facultyId": "omlist-b05d42df3ea3bc76",
       "name": "Qing Li",
-      "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "The linked HKUST profile could not be retrieved because of a certificate verification error.",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "reason": "The HKUST faculty-profiles page gives PhD in Management Science, The University of British Columbia, 2001, and the ISOM directory page (read over plain http) lists her appointments from Assistant Professor of ISMT, HKUST, 2001-Jun 2008, through Associate Professor (Jul 2008-Jun 2017) and Professor (Jul 2017-), with no earlier post. The HKUST assistant professorship begins in the degree year and is the first listed appointment. Plain Assistant Professor at an Asian business school: tenure-track by convention.",
       "sources": [
         {
           "url": "https://isom.hkust.edu.hk/faculty-and-staff/directory/imqli",
-          "title": "Qing Li academic profile",
-          "notes": "The linked HKUST profile could not be retrieved because of a certificate verification error."
+          "title": "HKUST ISOM directory - Qing Li",
+          "notes": "Read over plain http:// (the https host fails certificate validation for curl and the fetch tool); official HKUST ISOM directory page. Academic qualification: PhD UBC, Operations and Logistics (no year); MS Fudan; BS Tsinghua. Experience: Assistant Professor of ISMT, HKUST, 2001-Jun 2008; Associate Professor Jul 2008-Jun 2017; Professor Jul 2017-present; Deputy Head 2023-2026; Head from Sep 2026."
+        },
+        {
+          "url": "https://facultyprofiles.hkust.edu.hk/profiles.php?profile=qing-li-imqli",
+          "title": "HKUST Faculty Profiles - Qing Li",
+          "notes": "Read with curl: PhD in Management Science, The University of British Columbia, 2001; Head and Professor, ISOM."
         }
       ],
+      "employer": "Hong Kong University of Science and Technology (Department of ISMT, School of Business and Management)",
+      "position": "Assistant Professor",
+      "placementYear": 2001,
+      "category": "tenure-track",
+      "evidenceUrl": "https://isom.hkust.edu.hk/faculty-and-staff/directory/imqli",
+      "evidenceNote": "HKUST directory lists Assistant Professor of ISMT, HKUST, 2001-Jun 2008 as the earliest appointment; the faculty-profiles page dates the UBC PhD to 2001.",
+      "phdYearVerified": 2001,
+      "phdInstitutionVerified": "University of British Columbia",
       "source": "omlist"
     },
     {
@@ -21144,13 +21259,13 @@
       "facultyId": "omlist-a7332773854a717c",
       "name": "Xu Li",
       "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "The Fudan profile returned a template without readable education or employment details.",
+      "checkedAt": "2026-10-17",
+      "reason": "The Fudan School of Management profile, read through its own data endpoint this time, gives a Doctor Degree in Ekistics (urban and regional planning) at the University of Tsukuba, 1998-04 to 2002-03 (the OM List gives 2004), after a Harbin Institute of Technology master 1984-1987; the years 1987-1998 are not described and no work or academic experience entries. It states no employment history and no year of joining Fudan, so it cannot show what the first post after the doctorate was or when it began. Whether a post held before the doctorate (1987-1998) continued afterwards, and when Fudan employment began, is undocumented; the Fudan-affiliated ORCID records under this name are namesakes or empty. Earlier review (2026-10-16): The Fudan profile returned a template without readable education or employment details.",
       "sources": [
         {
           "url": "https://www.fdsm.fudan.edu.cn/en/faculty/list.htm?UID=012089",
-          "title": "Xu Li academic profile",
-          "notes": "The Fudan profile returned a template without readable education or employment details."
+          "title": "Fudan School of Management - Xu Li",
+          "notes": "Read through the page's own data endpoint (app.fdsm.fudan.edu.cn/NewTeacherService/api/Professor/GetSingleTeacherOtherInfo, labels personMessage, educationalBackground and academicExperience, English and Chinese), found by rendering the page in a headless browser; the English page itself rendered only publications through r.jina.ai. Education: a Doctor Degree in Ekistics (urban and regional planning) at the University of Tsukuba, 1998-04 to 2002-03 (the OM List gives 2004), after a Harbin Institute of Technology master 1984-1987; the years 1987-1998 are not described. Academic experience: none listed. No employment chronology."
         }
       ],
       "source": "omlist"
@@ -22881,13 +22996,28 @@
       "facultyId": "omlist-3093cd149661386f",
       "name": "Guodong Lyu",
       "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "Official profile could not be retrieved because of a certificate verification error; no first-placement chronology established.",
+      "checkedAt": "2026-10-17",
+      "reason": "The doctorate is now dated: the NUS ScholarBank thesis record (Online Resource Allocation: Theory and Applications, Ph.D.) is dated 2019-01-02, his ORCID record gives the NUS Analytics and Operations PhD as 2014-08 to 2019-05, and the HKUST faculty-profiles page says National University of Singapore, 2019. The HKUST ISOM directory page (read over plain http) lists only Research Fellow, Institute of Operations Research and Analytics, NUS, 2021-2022, and Assistant Professor of ISOM, HKUST, 2022-present; ORCID dates the HKUST post from 2022-07. Nothing documents what he did between the 2019 degree and the 2021 research fellowship, so the IORA post cannot be shown to be the first job. Earlier review (2026-10-16): the official profile could not be retrieved because of a certificate error.",
       "sources": [
         {
           "url": "https://isom.hkust.edu.hk/faculty-and-staff/directory/imlyu",
-          "title": "Guodong Lyu public academic profile",
-          "notes": "Official profile could not be retrieved because of a certificate verification error; no first-placement chronology established."
+          "title": "HKUST ISOM directory - Guodong Lyu",
+          "notes": "Read over plain http:// (the https host fails certificate validation for curl and the fetch tool); official HKUST ISOM directory page. Academic qualification: PhD NUS, Department of Analytics & Operations (no year). Experience: Assistant Professor of ISOM, HKUST, 2022-present; Research Fellow, Institute of Operations Research & Analytics, NUS, 2021-2022. Nothing for 2019-2021."
+        },
+        {
+          "url": "https://facultyprofiles.hkust.edu.hk/profiles.php?profile=guodong-lyu-imlyu",
+          "title": "HKUST Faculty Profiles - Guodong Lyu",
+          "notes": "Read with curl: PhD in Management, National University of Singapore, 2019; Assistant Professor, ISOM."
+        },
+        {
+          "url": "https://scholarbank.nus.edu.sg/handle/10635/153738",
+          "title": "NUS ScholarBank - Online Resource Allocation: Theory and Applications (Guodong Lyu)",
+          "notes": "Read through the repository REST API (server/api/discover/search/objects): Thesis, Ph.D., author GUODONG LYU, dc.date.issued 2019-01-02."
+        },
+        {
+          "url": "https://orcid.org/0000-0002-3900-4258",
+          "title": "ORCID - Guodong Lyu",
+          "notes": "Read through pub.orcid.org/v3.0: PhD, Department of Analytics & Operations, National University (of Singapore), 2014-08 to 2019-05; employment Assistant Professor, ISOM, HKUST Business School, from 2022-07; no 2019-2022 entry."
         }
       ],
       "source": "omlist"
@@ -26399,13 +26529,13 @@
       "facultyId": "omlist-b9646523c9dadef9",
       "name": "Zhong Ning",
       "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "The Fudan profile returned a template without readable education or employment details.",
+      "checkedAt": "2026-10-17",
+      "reason": "The Fudan School of Management profile, read through its own data endpoint this time, gives a Doctor Degree in Western Economics at Wuhan University, 1998-09 to 2001-06 (the OM List gives 2002), after a Wuhan University of Technology master 1985-1988 and, under academic experience, only a post-doctoral research fellowship listed as a visiting stay at the University of Oxford (2005.03-2006.02) and a visit to Cologne and Duisburg-Essen (2007.08). It states no employment history and no year of joining Fudan, so it cannot show what the first post after the doctorate was or when it began. The Oxford fellowship began almost four years after the degree, so it is not shown to be the first post; the years 1988-2005 are not described. Earlier review (2026-10-16): The Fudan profile returned a template without readable education or employment details.",
       "sources": [
         {
           "url": "https://www.fdsm.fudan.edu.cn/en/faculty/list.htm?UID=012090",
-          "title": "Zhong Ning academic profile",
-          "notes": "The Fudan profile returned a template without readable education or employment details."
+          "title": "Fudan School of Management - Zhong Ning",
+          "notes": "Read through the page's own data endpoint (app.fdsm.fudan.edu.cn/NewTeacherService/api/Professor/GetSingleTeacherOtherInfo, labels personMessage, educationalBackground and academicExperience, English and Chinese), found by rendering the page in a headless browser; the English page itself rendered only publications through r.jina.ai. Education: a Doctor Degree in Western Economics at Wuhan University, 1998-09 to 2001-06 (the OM List gives 2002), after a Wuhan University of Technology master 1985-1988. Academic experience: a post-doctoral research fellowship listed as a visiting stay at the University of Oxford (2005.03-2006.02) and a visit to Cologne and Duisburg-Essen (2007.08). No employment chronology."
         }
       ],
       "source": "omlist"
@@ -27276,21 +27406,29 @@
     {
       "facultyId": "omlist-daeb376533f76730",
       "name": "Ely Laureano Paiva",
-      "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "Doctorate confirmed (UFRGS Administração 1999, FGV EAESP profile and Lattes summary) but the first post-doctoral employment is not documented. The FGV EAESP profile (opened) lists only education and undated visiting researcher stays at UNC Chapel Hill and Texas Pan American University, and says nothing about employers before FGV; the Escavador Lattes page returned 403. The date he joined FGV and whether a prior academic or industry job preceded it are unknown.",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "reason": "The Lattes CV, read through its Escavador mirror (r.jina.ai reader; Lattes data collected 03/09/2025), dates the doctorate (UFRGS, 1995-1999, obtained 1999) and lists every post: UFRGS substitute professor 1994-1995 and occasional visiting graduate teaching 1995-2004, an hourly professorship at PUCRS 1998-1999 (teaching 03/1998-07/1999), then Unisinos Professor 1999-2010 with teaching from 07/1999, and FGV-SP from 2009. The UFRGS and PUCRS roles began before the degree; the Unisinos professorship is the first new post. The month of the 1999 degree is not stated, so the July 1999 start may precede formal conferral by some months; the kind of post (rank, track) is not stated.",
       "sources": [
+        {
+          "url": "https://www.escavador.com/sobre/4969398/ely-laureano-paiva",
+          "title": "Escavador - Ely Laureano Paiva (Lattes-derived)",
+          "notes": "Read through r.jina.ai (HTML return format); plain curl answers 403. Formacao: Doutorado em Administracao, UFRGS, 1995-1999, ano de obtencao 1999 (advisors Fensterseifer and A. Roth). Experiencia profissional: UFRGS professor substituto 1994-1995; UFRGS professor visitante 1995-2004; PUCRS professor horista 1998-1999; Universidade do Vale do Rio dos Sinos professor 1999-2010 (teaching from 07/1999); FGV-SP professor colaborador 2009, Professor Adjunto 2010-present."
+        },
         {
           "url": "https://eaesp.fgv.br/node/9966",
           "title": "FGV EAESP profile, Ely Laureano Paiva",
-          "notes": "Opened: degrees 1986/1994/1999 UFRGS; undated visiting researcher posts; no employer chronology."
-        },
-        {
-          "url": "https://www.escavador.com/sobre/4969398/ely-laureano-paiva",
-          "title": "Escavador Lattes mirror",
-          "notes": "Attempted: HTTP 403 for both fetch methods."
+          "notes": "Earlier review (2026-10-16): Opened: degrees 1986/1994/1999 UFRGS; undated visiting researcher posts; no employer chronology."
         }
       ],
+      "employer": "Universidade do Vale do Rio dos Sinos (Unisinos)",
+      "position": "Professor",
+      "placementYear": 1999,
+      "category": "unknown",
+      "evidenceUrl": "https://www.escavador.com/sobre/4969398/ely-laureano-paiva",
+      "evidenceNote": "Lattes CV (Escavador mirror) lists the UFRGS doctorate obtained in 1999 and Professor at Unisinos 1999-2010 with teaching from July 1999; earlier UFRGS substitute/visiting teaching (from 1994-1995) and a PUCRS hourly post (1998-1999) began before the degree and are not new jobs. Degree month not given, so the Unisinos start may slightly precede conferral; rank and track not stated.",
+      "phdYearVerified": 1999,
+      "phdInstitutionVerified": "Federal University of Rio Grande do Sul",
       "source": "omlist"
     },
     {
@@ -31460,18 +31598,23 @@
       "facultyId": "omlist-7fda62d9a4c1c98b",
       "name": "Ville Satopaa",
       "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "The linked INSEAD profile returned an access-denied response.",
+      "checkedAt": "2026-10-17",
+      "reason": "The INSEAD profile and CV PDF are still behind a Cloudflare bot check (curl 403; reader proxy and headless browser get the challenge page). The degree is now documented differently from the OM List: the Penn ScholarlyCommons record (read through the repository API) is a University of Pennsylvania PhD dissertation in Statistics, Partial Information Framework: Basic Theory and Applications, 2016, advisors Lyle Ungar and Shane Jensen, not an MIT doctorate of 2012. The first post after the 2016 degree is undocumented by any opened source; his ORCID records have no affiliations. Earlier review (2026-10-16): The linked INSEAD profile returned an access-denied response.",
       "sources": [
         {
-          "url": "https://www.insead.edu/system/files?file=2023-12/cv-ville-satopaa.pdf&&",
-          "title": "Ville Satopaa academic profile",
-          "notes": "The linked INSEAD profile returned an access-denied response."
+          "url": "https://repository.upenn.edu/handle/20.500.14332/28860",
+          "title": "Penn repository - Partial Information Framework: Basic Theory and Applications",
+          "notes": "Read through repository.upenn.edu/server/api: Dissertation/Thesis, Doctor of Philosophy (PhD), author Satopaa, Ville Antton, graduate group Statistics, issued 2016, advisors Lyle H. Ungar and Shane T. Jensen."
         },
         {
-          "url": "https://www.insead.edu/faculty/ville-satopaa",
-          "title": "Ville Satopaa academic profile",
-          "notes": "The linked INSEAD profile returned an access-denied response."
+          "url": "https://www.insead.edu/system/files?file=2023-12/cv-ville-satopaa.pdf",
+          "title": "INSEAD CV - Ville Satopaa",
+          "notes": "Attempted again: Cloudflare bot check (HTTP 403 to curl; r.jina.ai and a headless browser receive the challenge page; the fetch tool 403)."
+        },
+        {
+          "url": "https://orcid.org/0000-0002-3787-7303",
+          "title": "ORCID - Ville Satopaa",
+          "notes": "Read through pub.orcid.org/v3.0: six works, no education or employment entries."
         }
       ],
       "source": "omlist"
@@ -37135,32 +37278,32 @@
       "name": "Canan Ulu",
       "status": "unresolved",
       "checkedAt": "2026-10-17",
-      "reason": "The Georgetown biography says she received her Ph.D. from Duke and was previously an assistant professor at UT Austin's McCombs School, without dates, and the UT Austin 2012-13 catalog lists her as Assistant Professor (IROM) with 'PhD, Duke University, 2007'. Neither source dates the start of the UT post or excludes a postdoc or other job between the 2007 degree and UT (the earliest online UT catalog is 2012-13). The Georgetown GU360 profile draws its content by script and did not load, the ORCID record has no entries and a web search found no CV.",
+      "reason": "The Georgetown Faculty360 profile, rendered this time in a headless browser, carries only the biography (associate professor at McDonough; previously an assistant professor at UT Austin McCombs; Ph.D. Duke; B.S. and M.S. METU) and an education list without years; it has no CV or dated appointments. The UT Austin start date therefore remains undocumented, and no source excludes a postdoc or other post between the 2007 Duke degree and UT Austin (the Mathematics Genealogy Project has no entry for her, and older UT catalogs sit in an image archive not reachable here). Earlier review (2026-10-17): The Georgetown biography says she received her Ph.D. from Duke and was previously an assistant professor at UT Austin's McCombs School, without dates, and the UT Austin 2012-13 catalog lists her as Assistant Professor (IROM) with 'PhD, Duke University, 2007'. Neither source dates the start of the UT post or excludes a postdoc or other job between the 2007 degree and UT (the earliest online UT catalog is 2012-13). The Georgetown GU360 profile draws its content by script and did not load, the ORCID record has no entries and a web search found no CV.",
       "sources": [
+        {
+          "url": "https://gufaculty360.georgetown.edu/s/contact/00336000014TUn4AAG",
+          "title": "Georgetown Faculty360 - Canan Ulu",
+          "notes": "Rendered in a headless browser (script-drawn page): bio says previously an assistant professor at UT Austin McCombs, Ph.D. Duke; education list Duke Ph.D., METU M.S. and B.S., no years; no CV attached."
+        },
         {
           "url": "https://omlist.edutool.org/schools/georgetown-university/faculty/canan-ulu.html",
           "title": "OM List profile - Canan Ulu",
-          "notes": "Imported directory profile; opened for links to the school page, ORCID and CV only. Not evidence of a first job."
+          "notes": "Earlier review (2026-10-17): Imported directory profile; opened for links to the school page, ORCID and CV only. Not evidence of a first job."
         },
         {
           "url": "https://msb.georgetown.edu/profiles/canan-ulu/",
           "title": "Georgetown McDonough - Canan Ulu",
-          "notes": "Associate professor; previously assistant professor at UT Austin McCombs; Ph.D. Duke; no dates."
+          "notes": "Earlier review (2026-10-17): Associate professor; previously assistant professor at UT Austin McCombs; Ph.D. Duke; no dates."
         },
         {
           "url": "https://catalog.utexas.edu/archive/2012-13/undergraduate/business/faculty/",
           "title": "UT Austin Undergraduate Catalog 2012-13 - McCombs faculty list",
-          "notes": "Canan Ulu, Assistant Professor, Department of Information, Risk, and Operations Management; PhD, Duke University, 2007."
-        },
-        {
-          "url": "https://gufaculty360.georgetown.edu/s/contact/00336000014TUn4AAG",
-          "title": "Georgetown GU360 profile - Canan Ulu",
-          "notes": "Script-drawn page; content did not load."
+          "notes": "Earlier review (2026-10-17): Canan Ulu, Assistant Professor, Department of Information, Risk, and Operations Management; PhD, Duke University, 2007."
         },
         {
           "url": "https://orcid.org/0000-0002-0498-1497",
           "title": "ORCID record - Canan Ulu",
-          "notes": "Record has no employment or education entries. Read through the ORCID public API (pub.orcid.org/v3.0/0000-0002-0498-1497/activities)."
+          "notes": "Earlier review (2026-10-17): Record has no employment or education entries. Read through the ORCID public API (pub.orcid.org/v3.0/0000-0002-0498-1497/activities)."
         }
       ],
       "source": "omlist"
@@ -38198,23 +38341,13 @@
       "facultyId": "omlist-e68f2a870d1ab9c1",
       "name": "Anyu Wang",
       "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "Wrong-person risk: the only ORCID matching the OpenAlex name is a Tsinghua Institute for Advanced Study (cryptography) record, not the Fudan management scholar, and the Fudan faculty profile pages opened were empty templates with no education or employment content. The imported 2001 Fudan PhD and first job could not be checked.",
+      "checkedAt": "2026-10-17",
+      "reason": "The Fudan School of Management profile, read through its own data endpoint this time, gives a Doctor Degree in Management Science and Engineering at Fudan University, 2000-02 to 2003-03 (the OM List gives 2001) and, under academic experience, only one visiting-scholar stay at MIT Sloan (2007.01-06). It states no employment history and no year of joining Fudan, so it cannot show what the first post after the doctorate was or when it began. The namesake ORCID noted earlier was set aside. Earlier review (2026-10-16): Wrong-person risk: the only ORCID matching the OpenAlex name is a Tsinghua Institute for Advanced Study (cryptography) record, not the Fudan management scholar, and the Fudan faculty profile pages opened were empty templates with no education or employment content. The imported 2001 Fudan PhD and first job could not be checked.",
       "sources": [
         {
           "url": "https://www.fdsm.fudan.edu.cn/en/faculty/list.htm?UID=012091",
-          "title": "Fudan School of Management faculty page (attempted)",
-          "notes": "Opened: template with no biographical entries."
-        },
-        {
-          "url": "https://orcid.org/0000-0002-1086-0288",
-          "title": "ORCID record linked from OM List",
-          "notes": "Opened: Tsinghua IAS entry; likely a different person (cryptography)."
-        },
-        {
-          "url": "https://omlist.edutool.org/schools/fudan-university/faculty/anyu-wang.html",
-          "title": "OM List profile - Anyu Wang",
-          "notes": "Imported profile only; lists PhD institution/year from the OM List import, no employment chronology."
+          "title": "Fudan School of Management - Anyu Wang",
+          "notes": "Read through the page's own data endpoint (app.fdsm.fudan.edu.cn/NewTeacherService/api/Professor/GetSingleTeacherOtherInfo, labels personMessage, educationalBackground and academicExperience, English and Chinese), found by rendering the page in a headless browser; the English page itself rendered only publications through r.jina.ai. Education: a Doctor Degree in Management Science and Engineering at Fudan University, 2000-02 to 2003-03 (the OM List gives 2001). Academic experience: one visiting-scholar stay at MIT Sloan (2007.01-06). No employment chronology."
         }
       ],
       "source": "omlist"
@@ -38697,16 +38830,24 @@
     {
       "facultyId": "omlist-2aedbf142d67ee5f",
       "name": "Xuan Wang",
-      "status": "unresolved",
-      "checkedAt": "2026-10-16",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "reason": "The HKUST ISOM directory page, read over plain http, gives Ph.D. 2016 New York University (Operations Management) and lists Assistant Professor of ISOM, HKUST, 2016-2022, then Associate Professor 2022-present, with no other post. The assistant professorship begins in the degree year. Plain Assistant Professor at an Asian business school: tenure-track by convention.",
       "sources": [
         {
           "url": "https://isom.hkust.edu.hk/faculty-and-staff/directory/xuanwang",
-          "title": "Xuan Wang Profile",
-          "notes": "Fetch failed: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1028)>"
+          "title": "HKUST ISOM directory - Xuan Wang",
+          "notes": "Read over plain http:// (the https host fails certificate validation for curl and the fetch tool); official HKUST ISOM directory page. Academic qualification: Ph.D. 2016 New York University, Operations Management; B.E. 2011 Tsinghua, IE. Experience: Associate Professor of ISOM, HKUST, 2022-present; Assistant Professor of ISOM, HKUST, 2016-2022."
         }
       ],
-      "reason": "HKUST department profile could not be fetched because certificate verification failed; no readable chronology reviewed.",
+      "employer": "Hong Kong University of Science and Technology (Department of ISOM)",
+      "position": "Assistant Professor",
+      "placementYear": 2016,
+      "category": "tenure-track",
+      "evidenceUrl": "https://isom.hkust.edu.hk/faculty-and-staff/directory/xuanwang",
+      "evidenceNote": "HKUST directory: Ph.D. 2016 NYU; Assistant Professor of ISOM, HKUST, 2016-2022 is the earliest listed appointment, starting in the degree year.",
+      "phdYearVerified": 2016,
+      "phdInstitutionVerified": "New York University",
       "source": "omlist"
     },
     {
@@ -39791,16 +39932,29 @@
     {
       "facultyId": "omlist-1a6fdf2a238bbe78",
       "name": "Xiaole Wu",
-      "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "The linked Fudan faculty page returns an empty biography template. A search-indexed advisor CV identifies Fudan as the 2011 first placement, but the underlying university PDF returns 404 and could not be read. This lead requires a readable primary source before verification.",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "reason": "The Fudan profile, read through its data endpoint, dates the Washington University in St. Louis doctorate 2006-09 to 2011-05 and lists, under academic experience, a Research Fellow post at the Boeing Center for Technology, Information and Manufacturing (Olin Business School) from 2011.06 to 2011.11, entered under the site's generic visiting-scholar heading. Her ORCID record dates the Olin PhD 2006-08 to 2011-05 and the Fudan University (Management Science) employment from 2011-12. The Boeing Center research fellowship began the month after the degree and preceded Fudan, so it is the first post-PhD position; it is recorded as a research-fellow (postdoctoral-type) post with the visiting label noted. An advisor's student list naming Fudan as the 2011 placement (noted earlier, PDF not readable) is consistent with Fudan being the first faculty post.",
       "sources": [
         {
           "url": "https://www.fdsm.fudan.edu.cn/en/faculty/list.htm?UID=012083",
-          "title": "Xiaole Wu — public academic profile",
-          "notes": "Professional biography and degree information reviewed for first-job evidence."
+          "title": "Fudan School of Management - Xiaole Wu",
+          "notes": "Read through the page's own data endpoint (app.fdsm.fudan.edu.cn/NewTeacherService/api/Professor/GetSingleTeacherOtherInfo, labels personMessage, educationalBackground and academicExperience, English and Chinese), found by rendering the page in a headless browser; the English page itself rendered only publications through r.jina.ai. Education: Doctor Degree, Management, Washington University in St. Louis, USA, 2006-09 to 2011-05; bachelor IE Tsinghua 2002-2006. Academic experience: 2011.06-2011.11, type Visiting Scholar, organisation The Boeing Center for Technology, Information & Manufacturing, job Research Fellow (Chinese: 研究员)."
+        },
+        {
+          "url": "https://orcid.org/0000-0003-0809-1843",
+          "title": "ORCID - Xiaole Wu",
+          "notes": "Read through pub.orcid.org/v3.0: education Ph.D., Olin Business School, Washington University in Saint Louis, 2006-08 to 2011-05; employment Associate Professor, Management Science, Fudan University, from 2011-12."
         }
       ],
+      "employer": "Washington University in St. Louis (Olin Business School, Boeing Center for Technology, Information and Manufacturing)",
+      "position": "Research Fellow",
+      "placementYear": 2011,
+      "category": "postdoc",
+      "evidenceUrl": "https://www.fdsm.fudan.edu.cn/en/faculty/list.htm?UID=012083",
+      "evidenceNote": "Fudan profile: PhD WashU 2006-09 to 2011-05, then Research Fellow at the Boeing Center for Technology, Information & Manufacturing 2011.06-2011.11 (listed under a visiting-scholar heading); ORCID: Fudan University from 2011-12. The research fellowship directly followed the May 2011 degree and preceded Fudan.",
+      "phdYearVerified": 2011,
+      "phdInstitutionVerified": "Washington University in St. Louis",
       "source": "omlist"
     },
     {
@@ -39972,13 +40126,18 @@
       "facultyId": "omlist-532a84ec2b885c29",
       "name": "Shihong Xiao",
       "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "Fudan profile rendered a blank faculty template without individual education and employment data.",
+      "checkedAt": "2026-10-17",
+      "reason": "The Fudan School of Management profile, read through its own data endpoint this time, gives a Doctor Degree in Industrial Engineering and Logistics Management at HKUST, 2012-09 to 2018-06 (the OM List gives 2017) and no work or academic experience entries. It states no employment history and no year of joining Fudan, so it cannot show what the first post after the doctorate was or when it began. Her ORCID record (0000-0001-6779-6259, created 2019; works in Management Science, MSOM and Operations Research match her) lists HKUST education and an undated University of Minnesota employment, which suggests a post (possibly a postdoc) between HKUST and Fudan, but neither its dates nor its type, nor the Fudan start, is documented. Earlier review (2026-10-16): Fudan profile rendered a blank faculty template without individual education and employment data.",
       "sources": [
         {
           "url": "https://www.fdsm.fudan.edu.cn/en/faculty/list.htm?UID=012510",
-          "title": "Shihong Xiao public academic profile",
-          "notes": "Fudan profile rendered a blank faculty template without individual education and employment data."
+          "title": "Fudan School of Management - Shihong Xiao",
+          "notes": "Read through the page's own data endpoint (app.fdsm.fudan.edu.cn/NewTeacherService/api/Professor/GetSingleTeacherOtherInfo, labels personMessage, educationalBackground and academicExperience, English and Chinese), found by rendering the page in a headless browser; the English page itself rendered only publications through r.jina.ai. Education: a Doctor Degree in Industrial Engineering and Logistics Management at HKUST, 2012-09 to 2018-06 (the OM List gives 2017). Academic experience: none listed. No employment chronology."
+        },
+        {
+          "url": "https://orcid.org/0000-0001-6779-6259",
+          "title": "ORCID - Shihong Xiao",
+          "notes": "Read through pub.orcid.org/v3.0: education HKUST (undated); employment University of Minnesota (undated, no role, entry created June 2019); works: Management Science 2022, MSOM 2020, Operations Research 2020."
         }
       ],
       "source": "omlist"
@@ -41081,13 +41240,13 @@
       "facultyId": "omlist-c8c51d25861a2789",
       "name": "Zhiwen Yin",
       "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "The Fudan profile returned a template without readable education or employment details.",
+      "checkedAt": "2026-10-17",
+      "reason": "The Fudan School of Management profile, read through its own data endpoint this time, gives a Doctor Degree in Operations Research and Control Theory at Fudan University, 1994-02 to 1998-01 (the OM List gives 2001) and, under academic experience, only visiting-scholar stays at MIT Sloan (1998.01-06 and 2001.02-03). It states no employment history and no year of joining Fudan, so it cannot show what the first post after the doctorate was or when it began. The first visit began in the month the doctorate ended, but a visiting stay is not shown to be employment, and the employer that sent him is not named. Earlier review (2026-10-16): The Fudan profile returned a template without readable education or employment details.",
       "sources": [
         {
           "url": "https://www.fdsm.fudan.edu.cn/en/faculty/list.htm?UID=011628",
-          "title": "Zhiwen Yin academic profile",
-          "notes": "The Fudan profile returned a template without readable education or employment details."
+          "title": "Fudan School of Management - Zhiwen Yin",
+          "notes": "Read through the page's own data endpoint (app.fdsm.fudan.edu.cn/NewTeacherService/api/Professor/GetSingleTeacherOtherInfo, labels personMessage, educationalBackground and academicExperience, English and Chinese), found by rendering the page in a headless browser; the English page itself rendered only publications through r.jina.ai. Education: a Doctor Degree in Operations Research and Control Theory at Fudan University, 1994-02 to 1998-01 (the OM List gives 2001). Academic experience: visiting-scholar stays at MIT Sloan (1998.01-06 and 2001.02-03). No employment chronology."
         }
       ],
       "source": "omlist"
@@ -41190,13 +41349,18 @@
       "facultyId": "omlist-bd7c6dd24e30a895",
       "name": "Jiayi Yu",
       "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "The Fudan profile returned a template without readable education or employment details.",
+      "checkedAt": "2026-10-17",
+      "reason": "The Fudan School of Management profile, read through its own data endpoint this time, gives a Doctor Degree in Management Science and Engineering at Tsinghua University, 2013-09 to 2018-07 and, under academic experience, only one visiting stay at UCLA (2025.04-09). It states no employment history and no year of joining Fudan, so it cannot show what the first post after the doctorate was or when it began. The Fudan-affiliated ORCID record under her name (0000-0003-2813-8864) has only an undated Fudan qualification. Earlier review (2026-10-16): The Fudan profile returned a template without readable education or employment details.",
       "sources": [
         {
           "url": "https://www.fdsm.fudan.edu.cn/en/faculty/list.htm?UID=012133",
-          "title": "Jiayi Yu academic profile",
-          "notes": "The Fudan profile returned a template without readable education or employment details."
+          "title": "Fudan School of Management - Jiayi Yu",
+          "notes": "Read through the page's own data endpoint (app.fdsm.fudan.edu.cn/NewTeacherService/api/Professor/GetSingleTeacherOtherInfo, labels personMessage, educationalBackground and academicExperience, English and Chinese), found by rendering the page in a headless browser; the English page itself rendered only publications through r.jina.ai. Education: a Doctor Degree in Management Science and Engineering at Tsinghua University, 2013-09 to 2018-07. Academic experience: one visiting stay at UCLA (2025.04-09). No employment chronology."
+        },
+        {
+          "url": "https://orcid.org/0000-0003-2813-8864",
+          "title": "ORCID - Jiayi Yu",
+          "notes": "Read through pub.orcid.org/v3.0: one undated qualification at Fudan University; no employment entries or works."
         }
       ],
       "source": "omlist"
@@ -41204,16 +41368,24 @@
     {
       "facultyId": "omlist-16bd43d76ccb4ab0",
       "name": "Man Yu",
-      "status": "unresolved",
-      "checkedAt": "2026-10-16",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "reason": "The HKUST ISOM directory page, read over plain http, gives PhD 2010 University of Michigan, Ross School of Business (Operations Management and Science) and lists Assistant Professor of ISOM, HKUST, 2010-2016, Associate Professor 2016-2022 and Professor 2022-present, with no other post. The assistant professorship begins in the degree year. Plain Assistant Professor at an Asian business school: tenure-track by convention.",
       "sources": [
         {
           "url": "https://isom.hkust.edu.hk/faculty-and-staff/directory/manyu",
-          "title": "Man Yu Profile",
-          "notes": "Fetch failed: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1028)>"
+          "title": "HKUST ISOM directory - Man Yu",
+          "notes": "Read over plain http:// (the https host fails certificate validation for curl and the fetch tool); official HKUST ISOM directory page. Academic qualification: PhD 2010 University of Michigan, Ross School of Business; M.Sc 2003 and B.Sc. 2001 Tsinghua SEM. Experience: Professor 2022-present; Associate Professor 2016-2022; Assistant Professor of ISOM, HKUST, 2010-2016."
         }
       ],
-      "reason": "HKUST school profile establishes identity, but detailed department biography could not be opened due to fetch/certificate failures. Search excerpts suggest chronology but have not been independently opened.",
+      "employer": "Hong Kong University of Science and Technology (Department of ISOM)",
+      "position": "Assistant Professor",
+      "placementYear": 2010,
+      "category": "tenure-track",
+      "evidenceUrl": "https://isom.hkust.edu.hk/faculty-and-staff/directory/manyu",
+      "evidenceNote": "HKUST directory: PhD 2010 Michigan Ross; Assistant Professor of ISOM, HKUST, 2010-2016 is the earliest listed appointment, starting in the degree year.",
+      "phdYearVerified": 2010,
+      "phdInstitutionVerified": "University of Michigan at Ann Arbor",
       "source": "omlist"
     },
     {
@@ -41696,13 +41868,13 @@
       "facultyId": "omlist-7e6d4ad7ecc9fdfc",
       "name": "Li Zhai",
       "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "The linked Fudan page returned a blank profile template without degree or employment chronology.",
+      "checkedAt": "2026-10-17",
+      "reason": "The Fudan School of Management profile, read through its own data endpoint this time, gives a Doctor Degree in Management Science at Fudan University, 1994-02 to 1998-01 (the OM List gives 1993) and, under academic experience, only a research assistantship at City University of Hong Kong during the doctorate (1995.10-1996.08) and later visits to Olin/WashU (1998.08-12), City University of Hong Kong (research fellow, 2000.11-12), MIT Sloan (international faculty fellow, 2002.08-12) and Kalamazoo College (2003). It states no employment history and no year of joining Fudan, so it cannot show what the first post after the doctorate was or when it began. The visits read as short stays from a home post that is not named or dated. Earlier review (2026-10-16): The linked Fudan page returned a blank profile template without degree or employment chronology.",
       "sources": [
         {
           "url": "https://www.fdsm.fudan.edu.cn/en/faculty/list.htm?UID=012005",
-          "title": "Li Zhai academic profile",
-          "notes": "The linked Fudan page returned a blank profile template without degree or employment chronology."
+          "title": "Fudan School of Management - Li Zhai",
+          "notes": "Read through the page's own data endpoint (app.fdsm.fudan.edu.cn/NewTeacherService/api/Professor/GetSingleTeacherOtherInfo, labels personMessage, educationalBackground and academicExperience, English and Chinese), found by rendering the page in a headless browser; the English page itself rendered only publications through r.jina.ai. Education: a Doctor Degree in Management Science at Fudan University, 1994-02 to 1998-01 (the OM List gives 1993). Academic experience: a research assistantship at City University of Hong Kong during the doctorate (1995.10-1996.08) and later visits to Olin/WashU (1998.08-12), City University of Hong Kong (research fellow, 2000.11-12), MIT Sloan (international faculty fellow, 2002.08-12) and Kalamazoo College (2003). No employment chronology."
         }
       ],
       "source": "omlist"
@@ -42069,26 +42241,29 @@
     {
       "facultyId": "omlist-a9aded2706d6786f",
       "name": "Hongtao Zhang",
-      "status": "unresolved",
+      "status": "verified",
       "checkedAt": "2026-10-17",
-      "reason": "The HKUST faculty profile confirms a PhD in Operations Research from MIT, 1990, but gives only the current title (Professor, ISOM) with no employment history or year of joining HKUST, and links no CV. The ISOM directory page linked from the OM List could not be read (curl TLS chain error, WebFetch 503). The ORCID iD on the OM List profile (0000-0003-2031-5985) lists only Beijing University of Posts and Telecommunications and appears to belong to a namesake. The first job after the 1990 doctorate is undocumented.",
+      "reason": "The HKUST ISOM directory page, now read over plain http, lists Senior Management Consultant, CSC Consulting, 1990-1994, before Assistant Professor of ISMT, HKUST, 1995-2002, Associate Professor 2002-June 2014 and Professor; the HKUST faculty-profiles page dates the MIT Operations Research PhD to 1990. The consulting post is the earliest listed and begins in the degree year (month not stated). Earlier review (2026-10-17): the directory page could not be read (TLS chain error, 503); the ORCID iD on the OM List profile belongs to a namesake and is not used.",
       "sources": [
         {
-          "url": "https://facultyprofiles.hkust.edu.hk/profiles.php?profile=hongtao-zhang-imhzhang",
-          "title": "HKUST faculty profile: Hongtao Zhang",
-          "notes": "PhD in Operations Research, Massachusetts Institute of Technology, 1990; Professor, Department of ISOM; no employment history or CV."
-        },
-        {
           "url": "https://isom.hkust.edu.hk/faculty-and-staff/directory/imhzhang",
-          "title": "HKUST ISOM directory page",
-          "notes": "Attempted: curl failed TLS verification and WebFetch returned 503."
+          "title": "HKUST ISOM directory - Hongtao Zhang",
+          "notes": "Read over plain http:// (the https host fails certificate validation for curl and the fetch tool); official HKUST ISOM directory page. Academic qualification: PhD MIT, Operations Research (no year); MS and BS Peking University. Experience: Professor of ISOM, present; Associate Professor 2002-June 2014; Assistant Professor of ISMT, HKUST, 1995-2002; Senior Management Consultant, CSC Consulting, 1990-1994."
         },
         {
-          "url": "https://orcid.org/0000-0003-2031-5985",
-          "title": "ORCID record linked from the OM List profile, public API",
-          "notes": "Only an undated Beijing University of Posts and Telecommunications employment entry; likely a different person of the same name."
+          "url": "https://facultyprofiles.hkust.edu.hk/profiles.php?profile=hongtao-zhang-imhzhang",
+          "title": "HKUST Faculty Profiles - Hongtao Zhang",
+          "notes": "Read with curl: PhD in Operations Research, Massachusetts Institute of Technology, 1990; Professor, ISOM."
         }
       ],
+      "employer": "CSC Consulting",
+      "position": "Senior Management Consultant",
+      "placementYear": 1990,
+      "category": "industry",
+      "evidenceUrl": "https://isom.hkust.edu.hk/faculty-and-staff/directory/imhzhang",
+      "evidenceNote": "HKUST directory: Senior Management Consultant, CSC Consulting, 1990-1994, then Assistant Professor at HKUST from 1995; faculty-profiles page: MIT PhD 1990. The consulting post starts in the degree year; months not stated.",
+      "phdYearVerified": 1990,
+      "phdInstitutionVerified": "Massachusetts Institute of Technology",
       "source": "omlist"
     },
     {
@@ -42849,21 +43024,29 @@
     {
       "facultyId": "omlist-ad106c514cadddd3",
       "name": "Shaohui Zheng",
-      "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "The personal HKUST page dates Columbia doctorate to 1994 but gives no early employment chronology; the official profile encountered a certificate error.",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "reason": "The HKUST ISOM directory page, read over plain http, gives Ph.D. in Operations Research, Columbia University, June 1994, and lists Assistant Professor, Department of Information and Systems Management, HKUST, July 1994-June 2000 as the earliest appointment, followed by Associate Professor (July 2000-June 2006), Professor and Chair Professor. The post began the month after the degree. Plain Assistant Professor at an Asian business school: tenure-track by convention.",
       "sources": [
         {
           "url": "https://isom.hkust.edu.hk/faculty-and-staff/directory/imzheng",
-          "title": "Shaohui Zheng academic profile",
-          "notes": "The personal HKUST page dates Columbia doctorate to 1994 but gives no early employment chronology; the official profile encountered a certificate error."
+          "title": "HKUST ISOM directory - Shaohui Zheng",
+          "notes": "Read over plain http:// (the https host fails certificate validation for curl and the fetch tool); official HKUST ISOM directory page. Academic qualification: Ph.D. in Operations Research, Columbia University, June 1994. Experience: Assistant Professor, Dept. of Information and System Management, HKUST, July 1994-June 2000; Associate Professor July 2000-June 2006; Professor July 2006-June 2015; Chair Professor since July 2015; administrative roles."
         },
         {
           "url": "http://imzheng.people.ust.hk/",
           "title": "Shaohui Zheng academic profile",
-          "notes": "The personal HKUST page dates Columbia doctorate to 1994 but gives no early employment chronology; the official profile encountered a certificate error."
+          "notes": "Earlier review (2026-10-16): The personal HKUST page dates Columbia doctorate to 1994 but gives no early employment chronology; the official profile encountered a certificate error."
         }
       ],
+      "employer": "Hong Kong University of Science and Technology (Department of Information and Systems Management)",
+      "position": "Assistant Professor",
+      "placementYear": 1994,
+      "category": "tenure-track",
+      "evidenceUrl": "https://isom.hkust.edu.hk/faculty-and-staff/directory/imzheng",
+      "evidenceNote": "HKUST directory: Ph.D. Columbia, June 1994; Assistant Professor, Dept. of Information and System Management, HKUST, July 1994-June 2000, the earliest listed appointment.",
+      "phdYearVerified": 1994,
+      "phdInstitutionVerified": "Columbia University",
       "source": "omlist"
     },
     {
@@ -43082,13 +43265,13 @@
       "facultyId": "omlist-2a408dfa236419f4",
       "name": "Rong Zhou",
       "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "Imported Fudan official faculty link renders an empty profile template. A newer official profile was discovered in search but could not be opened; no reviewed dated education and initial employment chronology establishes the first job.",
+      "checkedAt": "2026-10-17",
+      "reason": "The Fudan School of Management profile, read through its own data endpoint this time, gives a Doctor Degree in Management Science and Engineering at Fudan University, 1997-09 to 2002-07 (the OM List gives 2000), with a Fudan master in Operations Research 1989-1992 and a Norwegian School of Management master 1996-1998 and, under academic experience, only visits to RMIT (1998), MIT Sloan (1999), Yale (research scholar 2000.08-2001.06), CUHK (2006) and Columbia (2007). It states no employment history and no year of joining Fudan, so it cannot show what the first post after the doctorate was or when it began. The 1992-1997 gap and stays during the doctorate suggest a post held before the degree, which is not named or dated. Earlier review (2026-10-16): Imported Fudan official faculty link renders an empty profile template. A newer official profile was discovered in search but could not be opened; no reviewed dated education and initial employment chronology establishes the first job.",
       "sources": [
         {
           "url": "https://www.fdsm.fudan.edu.cn/en/faculty/list.htm?UID=011419",
-          "title": "Rong Zhou — public academic profile",
-          "notes": "Professional biography and degree information reviewed for first-job evidence."
+          "title": "Fudan School of Management - Rong Zhou",
+          "notes": "Read through the page's own data endpoint (app.fdsm.fudan.edu.cn/NewTeacherService/api/Professor/GetSingleTeacherOtherInfo, labels personMessage, educationalBackground and academicExperience, English and Chinese), found by rendering the page in a headless browser; the English page itself rendered only publications through r.jina.ai. Education: a Doctor Degree in Management Science and Engineering at Fudan University, 1997-09 to 2002-07 (the OM List gives 2000), with a Fudan master in Operations Research 1989-1992 and a Norwegian School of Management master 1996-1998. Academic experience: visits to RMIT (1998), MIT Sloan (1999), Yale (research scholar 2000.08-2001.06), CUHK (2006) and Columbia (2007). No employment chronology."
         }
       ],
       "source": "omlist"
@@ -48375,22 +48558,22 @@
       "name": "Gregory Lyon",
       "status": "unresolved",
       "checkedAt": "2026-10-17",
-      "reason": "The Georgetown profile says he earned his Ph.D. at Rutgers University and was a postdoctoral researcher in data science and survey research at Tufts University, which is plausibly the first post-PhD job, but neither the PhD year nor the Tufts dates are given and the profile does not say the postdoc came directly after the degree (it also mentions undated data-science consulting work). His Faculty360 page is script-drawn and could not be read, the two ORCID records under his name are empty, and no dissertation record was found in RUcore.",
+      "reason": "The Georgetown Faculty360 profile, now rendered in a headless browser, repeats the McDonough biography (Ph.D. at Rutgers University, then a postdoctoral researcher in data science and survey research at Tufts University; data-science work for survey research, workforce development and regulatory compliance projects) and lists Rutgers University-New Brunswick Ph.D. without a year; no CV is attached and no appointment is dated. The Rutgers degree year, the Tufts dates and whether the consulting work came before or after the postdoc remain unknown; the RUcore search page returned only a script shell. Earlier review (2026-10-17): The Georgetown profile says he earned his Ph.D. at Rutgers University and was a postdoctoral researcher in data science and survey research at Tufts University, which is plausibly the first post-PhD job, but neither the PhD year nor the Tufts dates are given and the profile does not say the postdoc came directly after the degree (it also mentions undated data-science consulting work). His Faculty360 page is script-drawn and could not be read, the two ORCID records under his name are empty, and no dissertation record was found in RUcore.",
       "sources": [
+        {
+          "url": "https://gufaculty360.georgetown.edu/s/contact/0031Q00002JsLQ4QAN",
+          "title": "Georgetown Faculty360 - Gregory Lyon",
+          "notes": "Rendered in a headless browser: Associate Teaching Professor, Operations and Analytics; earned his Ph.D. at Rutgers and was a postdoctoral researcher in data science and survey research at Tufts; education Rutgers University-New Brunswick Ph.D. (no year); no CV or dates."
+        },
         {
           "url": "https://msb.georgetown.edu/profiles/gregory-lyon/",
           "title": "Georgetown McDonough - Gregory Lyon",
-          "notes": "Current Associate Teaching Professor; Ph.D. Rutgers; postdoctoral researcher in data science and survey research at Tufts; analytics expert on various projects; no dates."
-        },
-        {
-          "url": "https://gufaculty360.georgetown.edu/s/contact/0031Q00002JsLQ4QAN",
-          "title": "Georgetown Faculty360 profile (linked, not readable)",
-          "notes": "Fetch tool returned only a loading/error template."
+          "notes": "Earlier review (2026-10-17): Current Associate Teaching Professor; Ph.D. Rutgers; postdoctoral researcher in data science and survey research at Tufts; analytics expert on various projects; no dates."
         },
         {
           "url": "https://orcid.org/0000-0003-2641-4159",
           "title": "ORCID record 0000-0003-2641-4159 (Gregory Lyon)",
-          "notes": "Read through the public ORCID API; empty (identity not confirmed). A second record 0000-0003-3271-0966 is also empty."
+          "notes": "Earlier review (2026-10-17): Read through the public ORCID API; empty (identity not confirmed). A second record 0000-0003-3271-0966 is also empty."
         }
       ],
       "source": "faculty-page"
@@ -48751,22 +48934,22 @@
       "name": "Chelsea White",
       "status": "unresolved",
       "checkedAt": "2026-10-17",
-      "reason": "The ISyE profile gives the Ph.D. (Computer, Information, and Control Engineering, University of Michigan, 1974) and later honors but no employment chronology, and his ORCID record has an undated Georgia Tech entry only. A web search snippet points to a CV on the European Forum Alpbach site listing an assistant professorship at Southern Methodist University (1974-1975) before posts at the University of Virginia, but that page could not be opened (HTTP 503 to the fetch tool, connection reset to curl), so the lead is unverified. Recheck that page or another dated CV.",
+      "reason": "The European Forum Alpbach page that a search snippet showed with a CV (assistant professor at Southern Methodist University 1974-1975, then the University of Virginia) still cannot be read: the reader proxy times out, a headless browser and curl get connection resets, the fetch tool gets HTTP 503, and the Internet Archive is unreachable from this environment. No other dated chronology was found (his ORCID record has only an undated Georgia Tech entry). The SMU lead stays unverified. Earlier review (2026-10-17): The ISyE profile gives the Ph.D. (Computer, Information, and Control Engineering, University of Michigan, 1974) and later honors but no employment chronology, and his ORCID record has an undated Georgia Tech entry only. A web search snippet points to a CV on the European Forum Alpbach site listing an assistant professorship at Southern Methodist University (1974-1975) before posts at the University of Virginia, but that page could not be opened (HTTP 503 to the fetch tool, connection reset to curl), so the lead is unverified. Recheck that page or another dated CV.",
       "sources": [
+        {
+          "url": "https://forum.alpbach.org/en/person/chelsea-c-white",
+          "title": "European Forum Alpbach - Chelsea C. White",
+          "notes": "Attempted again 2026-10-17: r.jina.ai timeout (422), headless browser and curl connection reset, fetch tool HTTP 503. Earlier review (2026-10-17): snippet-only lead of an SMU 1974-1975 assistant professorship; page never opened."
+        },
         {
           "url": "https://www.isye.gatech.edu/users/chelsea-white",
           "title": "Chelsea White - Georgia Tech ISyE profile",
-          "notes": "Education (Ph.D. 1974, Michigan); no prior positions."
+          "notes": "Earlier review (2026-10-17): Education (Ph.D. 1974, Michigan); no prior positions."
         },
         {
           "url": "https://orcid.org/0000-0001-8520-4640",
           "title": "ORCID - Chelsea White",
-          "notes": "Read via the public ORCID API; undated Georgia Tech entry only."
-        },
-        {
-          "url": "https://forum.alpbach.org/en/person/chelsea-c-white",
-          "title": "European Forum Alpbach - Chelsea C. White (attempted)",
-          "notes": "Fetch failed (HTTP 503; curl connection reset); CV content not read."
+          "notes": "Earlier review (2026-10-17): Read via the public ORCID API; undated Georgia Tech entry only."
         }
       ],
       "source": "faculty-page"
@@ -51802,26 +51985,39 @@
     {
       "facultyId": "roster:harvard-university:dustin-tingley",
       "name": "Dustin Tingley",
-      "status": "unresolved",
+      "status": "verified",
       "checkedAt": "2026-10-17",
-      "reason": "The Harvard Government directory and his Harvard scholar site say he received a PhD in Politics from Princeton (no year) and was a high-school teacher before graduate school; neither dates his first post. His CV (linked from the scholar site) could not be read: the file returned 403 to curl and the fetch tool and 503 through the reader proxy. His ORCID record (0000-0002-2216-6293) is empty. The first post-PhD job and PhD year therefore remain undocumented.",
+      "reason": "His CV, linked from the scholar site (now served at dtingley.scholars.harvard.edu; the PDF refuses direct requests but downloaded when the link was clicked in a headless browser), gives Princeton University, Ph.D., Politics, 2010, and lists Assistant Professor, Government Department, Harvard University, July 2010-June 2013, as the earliest appointment, followed by the Paul Sack associate professorship (2013-2015) and professorships. No post sits between the degree and Harvard. The post is in an arts-and-sciences department, not a business or engineering school, so the title alone does not establish the tenure track under the project convention and the category is unknown.",
       "sources": [
         {
-          "url": "https://www.gov.harvard.edu/directory/dustin-tingley/",
-          "title": "Harvard Department of Government - Dustin Tingley",
-          "notes": "Thomas D. Cabot Professor of Public Policy; PhD in Politics, Princeton; former high school teacher; no dates."
+          "url": "https://dtingley.scholars.harvard.edu/sites/g/files/omnuum8551/files/2025-08/cv.pdf",
+          "title": "Dustin Tingley CV (2025-08)",
+          "notes": "Downloaded by clicking the CV link in a headless browser from https://dtingley.scholars.harvard.edu/biocv (direct requests return 403). Education: Princeton Ph.D. Politics 2010. Appointments: Assistant Professor, Government Department, Harvard University, July 2010-June 2013; Paul Sack Associate Professor July 2013-July 2015; Professor from July 2015."
         },
         {
           "url": "https://scholar.harvard.edu/dtingley",
           "title": "Dustin Tingley - Harvard scholar site",
-          "notes": "Refused curl (403); read through the r.jina.ai reader proxy. Bio; links 'Curriculum Vitae' (cv.pdf, 2025-08)."
+          "notes": "Rendered in a headless browser: PhD in Politics from Princeton; links to the CV PDF."
+        },
+        {
+          "url": "https://www.gov.harvard.edu/directory/dustin-tingley/",
+          "title": "Harvard Department of Government - Dustin Tingley",
+          "notes": "Earlier review (2026-10-17): Thomas D. Cabot Professor of Public Policy; PhD in Politics, Princeton; former high school teacher; no dates."
         },
         {
           "url": "https://scholar.harvard.edu/sites/g/files/omnuum8551/files/2025-08/cv.pdf",
           "title": "Dustin Tingley CV (attempted)",
-          "notes": "HTTP 403 to curl and the fetch tool; the reader proxy reported a 503 from the origin. Not read."
+          "notes": "Earlier review (2026-10-17): HTTP 403 to curl and the fetch tool; the reader proxy reported a 503 from the origin. Not read."
         }
       ],
+      "employer": "Harvard University (Department of Government)",
+      "position": "Assistant Professor",
+      "placementYear": 2010,
+      "category": "unknown",
+      "evidenceUrl": "https://dtingley.scholars.harvard.edu/sites/g/files/omnuum8551/files/2025-08/cv.pdf",
+      "evidenceNote": "CV: Ph.D. Politics, Princeton, 2010; Assistant Professor, Government Department, Harvard University, July 2010-June 2013, the first listed appointment, starting in the degree year.",
+      "phdYearVerified": 2010,
+      "phdInstitutionVerified": "Princeton University",
       "source": "faculty-page"
     },
     {
@@ -52615,12 +52811,22 @@
       "name": "Alejandro Serrano",
       "status": "unresolved",
       "checkedAt": "2026-10-17",
-      "reason": "The IESE profile says that before joining academia he spent more than 10 years at several firms (Head of Logistics, Head of Production) and earned the Ph.D. in Logistics and Supply Chain Management in the MIT-Zaragoza Logistics Program (Universidad de Zaragoza), but gives no dates for the degree, the industry career or his first academic post. No ORCID record linked to IESE or Zaragoza was found, and the Zaragoza Logistics Center site refused automated requests (HTTP 403). Whether the industry work preceded the doctorate, and what the first post-PhD job was, is undocumented.",
+      "reason": "The Zaragoza Logistics Center staff page, read through r.jina.ai this time, describes him as Professor of Supply Chain Management at the MIT-Zaragoza International Logistics Program and Research Affiliate at MIT CTL, with a PhD and MSc from the MIT-Zaragoza programme (during the doctorate he spent time at MIT, HBS and the Kennedy School) and more than ten years in industry (Head of Logistics, Head of Production) before academia; it gives no dates. The IESE profile (re-read with curl) repeats the industry career without dates. The Zaguan repository has no thesis under his name and TESEO/Dialnet could not be queried (Dialnet answered 429). The PhD year and whether the ZLC professorship was his first post-PhD job remain undocumented; ZLC is the lead. Earlier review (2026-10-17): The IESE profile says that before joining academia he spent more than 10 years at several firms (Head of Logistics, Head of Production) and earned the Ph.D. in Logistics and Supply Chain Management in the MIT-Zaragoza Logistics Program (Universidad de Zaragoza), but gives no dates for the degree, the industry career or his first academic post. No ORCID record linked to IESE or Zaragoza was found, and the Zaragoza Logistics Center site refused automated requests (HTTP 403). Whether the industry work preceded the doctorate, and what the first post-PhD job was, is undocumented.",
       "sources": [
         {
+          "url": "https://www.zlc.edu.es/staff/dr-alejandro-serrano/",
+          "title": "Zaragoza Logistics Center - Dr. Alejandro Serrano",
+          "notes": "Read through r.jina.ai (site refuses automated requests): Professor of Supply Chain Management at the MIT-Zaragoza International Logistics Program; PhD and MSc MIT-Zaragoza; 10+ years industry before academia; no dates."
+        },
+        {
           "url": "https://www.iese.edu/faculty-research/faculty/alejandro-serrano/",
-          "title": "IESE Business School - Alejandro Serrano (Associate Professor of the Practice of Management)",
-          "notes": "Ph.D. Logistics and SCM, Universidad de Zaragoza (MIT-Zaragoza program); MBA IESE; 10+ years in industry before academia; research affiliate MIT CTL. No dates."
+          "title": "IESE - Alejandro Serrano",
+          "notes": "Read with curl: Associate Professor of the Practice; Ph.D. Universidad de Zaragoza (MIT-Zaragoza programme); more than 10 years at firms before academia; no dates."
+        },
+        {
+          "url": "https://zaguan.unizar.es/search?ln=en&p=author%3A%22Serrano%2C+Alejandro%22&of=hb&rg=25",
+          "title": "Zaguan (Universidad de Zaragoza repository) author search",
+          "notes": "No doctoral thesis by Alejandro Serrano in the results (only namesakes)."
         }
       ],
       "source": "faculty-page"
@@ -53073,26 +53279,44 @@
     {
       "facultyId": "roster:indian-institute-of-technology-iit-bombay:ketan-savla",
       "name": "Ketan Savla",
-      "status": "unresolved",
+      "status": "verified",
       "checkedAt": "2026-10-17",
-      "reason": "His advisor's group page (Francesco Bullo, UCSB) lists 'Ketan Savla, Ph.D., ECE, UCSB, Dec 2007' and a news line '2012 Aug: Ketan Savla starts as Assistant Professor at USC'. The USC Viterbi biography says that before USC he was a research scientist in MIT's Laboratory for Information and Decision Systems, without dates. Whether the 2008-2012 MIT period began as a postdoctoral appointment or directly as a research scientist, and its start date, is not documented. His USC homepage and CV (viterbi-web.usc.edu/~ksavla/) returned an untrusted-certificate error to plain requests and HTTP 503 to the fetch tool; the archived copy is not reachable from this environment; his ORCID record (0000-0002-1668-6380) is empty. Lead: MIT LIDS (research scientist) is the only documented post between the December 2007 PhD and USC in August 2012.",
+      "reason": "His advisor Francesco Bullo's CV, in its list of supervised doctoral students, gives for Ketan Savla (Ph.D., ECE, UCSB): Initial Placement, Postdoctoral Scientist, MIT; Current Placement, associate professor at USC. The Bullo group page dates the PhD December 2007 and records his start as Assistant Professor at USC in August 2012, and his USC biography says that before USC he was a research scientist in MIT's Laboratory for Information and Decision Systems. The first post was therefore the MIT postdoctoral appointment; its start date is not documented (placementYear left null). His homepage and bio page (read through r.jina.ai) carry no CV or dates.",
       "sources": [
         {
-          "url": "https://viterbi.usc.edu/directory/faculty/Savla/Ketan",
-          "title": "USC Viterbi directory - Ketan Savla",
-          "notes": "Associate Professor, Civil and Environmental Engineering (joint ECE, AME); 'Prior to that, he was a research scientist in the Laboratory for Information and Decision Systems at MIT'; Ph.D. EE UCSB; 2010 CCDC best PhD thesis award. No dates."
+          "url": "https://fbullo.github.io/fbullo-cv.pdf",
+          "title": "Francesco Bullo CV (advisor)",
+          "notes": "Downloaded with curl. Doctoral students: (v) Ketan Savla, Ph.D., ECE, UCSB; mentoring Aug 03-Aug 07; Initial Placement: Postdoctoral Scientist, MIT; Current Placement: Associate Professor and Shea Early Career Chair, USC."
         },
         {
           "url": "https://fbullo.github.io/group.html",
-          "title": "Francesco Bullo group (UCSB) - group members and alumni",
-          "notes": "Alumni list: 'Ketan Savla, Ph.D., ECE, UCSB, Dec 2007', thesis 'Multi UAV Systems with Motion and Communication Constraints'."
+          "title": "Bullo group page - alumni and news",
+          "notes": "Ketan Savla, Ph.D., ECE, UCSB, Dec 2007 (thesis Multi UAV Systems with Motion and Communication Constraints); current placement USC. Verifier (2026-10-17): this page carries no news line; the \"2012 Aug: Ketan Savla starts as Assistant Professor at USC\" item is on the Bullo homepage (https://fbullo.github.io/)."
+        },
+        {
+          "url": "https://viterbi-web.usc.edu/~ksavla/bio.html",
+          "title": "Ketan Savla - professional bio",
+          "notes": "Read through r.jina.ai: prior to USC he was a research scientist in the Laboratory for Information and Decision Systems at MIT; PhD EE UCSB; no dates."
+        },
+        {
+          "url": "https://viterbi.usc.edu/directory/faculty/Savla/Ketan",
+          "title": "USC Viterbi directory - Ketan Savla",
+          "notes": "Earlier review (2026-10-17): biography says he was previously a research scientist at MIT LIDS, without dates."
         },
         {
           "url": "https://fbullo.github.io/",
-          "title": "Francesco Bullo - home page news",
-          "notes": "'2012 Aug: Ketan Savla starts as Assistant Professor at USC'; 2015 NSF CAREER; 2017 Eckman Award."
+          "title": "Francesco Bullo homepage - news",
+          "notes": "Read with curl by the verifier (2026-10-17): news list includes \"2012 Aug: Ketan Savla starts as Assistant Professor at USC\"."
         }
       ],
+      "employer": "Massachusetts Institute of Technology (Laboratory for Information and Decision Systems)",
+      "position": "Postdoctoral Scientist",
+      "placementYear": null,
+      "category": "postdoc",
+      "evidenceUrl": "https://fbullo.github.io/fbullo-cv.pdf",
+      "evidenceNote": "Advisor's CV lists his Initial Placement as Postdoctoral Scientist, MIT, after the UCSB PhD (December 2007 per the group page); he later was a research scientist at MIT LIDS and started at USC in August 2012. Start year of the MIT post not stated. Verifier: re-read the advisor CV (Initial Placement: Postdoctoral Scientist, MIT; mentoring Aug 03-Aug 07) and the alumni list (Ph.D. Dec 2007); corrected the source attribution of the August 2012 USC start, which is on the Bullo homepage news list, not the group page.",
+      "phdYearVerified": 2007,
+      "phdInstitutionVerified": "University of California - Santa Barbara",
       "source": "faculty-page"
     },
     {
