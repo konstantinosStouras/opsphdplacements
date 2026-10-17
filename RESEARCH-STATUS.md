@@ -7,11 +7,11 @@ Generated from committed-format public datasets by `node scripts/update-research
 | People in the database | 3157 |
 | of which OM List profiles | 2149 |
 | of which operations faculty found on the linked faculty pages | 1008 |
-| Individually reviewed profiles | 3121 |
-| Verified first jobs | 1398 |
+| Individually reviewed profiles | 3122 |
+| Verified first jobs | 1399 |
 | Researched but unresolved | 1719 |
 | Degree completion unconfirmed | 4 |
-| Pending individual review | 36 |
+| Pending individual review | 35 |
 | Initial program-register records | 13 |
 | Institutions in the initial register | 10 |
 
