@@ -4,10 +4,10 @@
     "updatedAt": "2026-10-17",
     "total": 3156,
     "counts": {
-      "unresolved": 1242,
-      "verified": 884,
+      "unresolved": 1281,
+      "verified": 885,
       "not-yet-completed-phd": 3,
-      "pending": 1027
+      "pending": 987
     },
     "bySource": {
       "omlist": {
@@ -22,9 +22,9 @@
       "faculty-page": {
         "total": 1007,
         "counts": {
-          "pending": 887,
-          "verified": 21,
-          "unresolved": 97,
+          "pending": 847,
+          "verified": 22,
+          "unresolved": 136,
           "not-yet-completed-phd": 2
         }
       }
@@ -47121,10 +47121,16 @@
     {
       "facultyId": "roster:northwestern-university:patrick-mccarter",
       "name": "Patrick McCarter",
-      "status": "pending",
-      "checkedAt": null,
-      "sources": [],
-      "reason": "Individual first-placement research is pending.",
+      "status": "unresolved",
+      "checkedAt": "2026-10-17",
+      "reason": "The Northwestern McCormick profile (Professor of Practice, IEMS) lists Education as an MBA from Harvard Business School (2003-2005) and a BS in Industrial Engineering and Economics from Northwestern (1993-1998), and describes a private-equity career at Carlyle since 2001 after Morgan Stanley. No doctorate is stated, so there is no PhD whose first job could be reviewed. The integrator should confirm whether this professor of practice belongs in the doctoral population.",
+      "sources": [
+        {
+          "url": "https://www.mccormick.northwestern.edu/research-faculty/directory/profiles/mccarter-patrick.html",
+          "title": "Patrick McCarter, Northwestern Engineering faculty profile",
+          "notes": "Read as a plain HTML download. Education: MBA Harvard 2003-2005, BS Northwestern 1993-1998; Carlyle from 2001, earlier Morgan Stanley. No doctorate."
+        }
+      ],
       "source": "faculty-page"
     },
     {
@@ -47337,10 +47343,39 @@
     {
       "facultyId": "roster:rensselaer-polytechnic-institute-rpi:james-hendler",
       "name": "James Hendler",
-      "status": "pending",
-      "checkedAt": null,
-      "sources": [],
-      "reason": "Individual first-placement research is pending.",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "reason": "His own dated vita gives the PhD (Computer Science, Brown University, May 1986) and an employment chronology: Assistant Professor at the University of Maryland, College Park from January 1986 (to August 1992), followed by promotions there and the move to RPI in 2007. Jobs before the degree (Texas Instruments 1979-1982, Wellesley instructor 1983-1984, Brown lecturer 1984) predate the doctorate and are not post-PhD employment. The Maryland assistant professorship started about four months before the May 1986 conferral; it is the first regular appointment after the dissertation and is recorded as the first job with that overlap noted. The doctorate is in computer science (artificial intelligence), not operations; the integrator should confirm population scope. ORCID 0000-0003-3056-1960 lists only an undated RPI employment entry.",
+      "employer": "University of Maryland, College Park",
+      "position": "Assistant Professor (Computer Science Department)",
+      "placementYear": 1986,
+      "category": "tenure-track",
+      "evidenceUrl": "https://www.cs.rpi.edu/~hendler/NormalVita-hendler.pdf",
+      "evidenceNote": "Vita (updated 12/2019): PhD Computer Science, Brown University, May 1986; University of Maryland, College Park, Assistant Professor 1/86-8/92, Associate Professor 8/92-7/99, Full Professor 8/99-12/06; RPI from 1/07. The Maryland start (January 1986) precedes the May 1986 degree date by about four months.",
+      "phdYearVerified": 1986,
+      "phdInstitutionVerified": "Brown University",
+      "sources": [
+        {
+          "url": "https://www.cs.rpi.edu/~hendler/NormalVita-hendler.pdf",
+          "title": "James A. Hendler, curriculum vitae (PDF, linked from his RPI home page)",
+          "notes": "Downloaded with curl and read with pdftotext; Education and Experience in Higher Education sections give the degree month and dated appointments."
+        },
+        {
+          "url": "https://www.cs.rpi.edu/~hendler/",
+          "title": "James Hendler, RPI home page",
+          "notes": "Links the full vita (NormalVita-hendler.pdf, updated 12/2019); lists current and former Maryland roles without dates."
+        },
+        {
+          "url": "https://faculty.rpi.edu/james-hendler",
+          "title": "James Hendler, RPI faculty profile",
+          "notes": "Current titles only; links his home page. No dated chronology."
+        },
+        {
+          "url": "https://orcid.org/0000-0003-3056-1960",
+          "title": "ORCID record, James Hendler",
+          "notes": "Public record read through the ORCID public API; one undated Rensselaer Polytechnic Institute employment entry, no education entries."
+        }
+      ],
       "source": "faculty-page"
     },
     {
@@ -47454,10 +47489,21 @@
     {
       "facultyId": "roster:rice-university:christopher-burke",
       "name": "Christopher Burke",
-      "status": "pending",
-      "checkedAt": null,
-      "sources": [],
-      "reason": "Individual first-placement research is pending.",
+      "status": "unresolved",
+      "checkedAt": "2026-10-17",
+      "reason": "The Rice Business profile calls him Dr. Christopher Burke, Lecturer in Operations Management, and describes undated roles: 27 years in the U.S. Air Force in logistics, maintenance, acquisition and procurement, then Dell Technologies (inventory optimization, program manager, secure supply chain), and currently a senior program manager supporting the Department of Veterans Affairs. It names no degree, field, institution or year, so whether the title reflects a research doctorate (rather than, e.g., a DBA or professional doctorate) and when it was earned are unknown. An ORCID search combining his name with Rice, Dell or Air Force returned no record. With no degree date, the first post-doctoral job cannot be identified.",
+      "sources": [
+        {
+          "url": "https://business.rice.edu/person/christopher-burke",
+          "title": "Christopher Burke, Rice Business faculty profile",
+          "notes": "Read as a plain HTML download. Title Dr. used; no education listed; undated USAF, Dell and VA-support roles."
+        },
+        {
+          "url": "https://pub.orcid.org/v3.0/expanded-search/?q=family-name:Burke%20AND%20given-names:Christopher%20AND%20(affiliation-org-name:Rice%20OR%20affiliation-org-name:Dell%20OR%20affiliation-org-name:%22Air%20Force%22)",
+          "title": "ORCID public registry search, Christopher Burke with Rice/Dell/Air Force",
+          "notes": "Zero results."
+        }
+      ],
       "source": "faculty-page"
     },
     {
@@ -47472,28 +47518,46 @@
     {
       "facultyId": "roster:rice-university:david-vanhorn",
       "name": "David VanHorn",
-      "status": "pending",
-      "checkedAt": null,
-      "sources": [],
-      "reason": "Individual first-placement research is pending.",
+      "status": "unresolved",
+      "checkedAt": "2026-10-17",
+      "reason": "The Rice Business profile (Professor in the Practice of Operations Management, teaching at Rice since 2007) states an MBA from the Jones School (2000) and a B.S. (1989) and M.S. (1990) in Aerospace Engineering from Iowa State University, with a career at Boeing and in consulting (Deloitte, Archstone, Booz & Company, Angel Rock). No doctorate is stated, so there is no PhD whose first job could be reviewed. The integrator should confirm whether this professor of practice belongs in the doctoral population.",
+      "sources": [
+        {
+          "url": "https://business.rice.edu/person/david-vanhorn",
+          "title": "David VanHorn, Rice Business faculty profile",
+          "notes": "Read as a plain HTML download. Degrees: MBA Rice 2000; BS 1989 and MS 1990 Aerospace Engineering, Iowa State. No doctorate."
+        }
+      ],
       "source": "faculty-page"
     },
     {
       "facultyId": "roster:rice-university:doreen-stoller",
       "name": "Doreen Stoller",
-      "status": "pending",
-      "checkedAt": null,
-      "sources": [],
-      "reason": "Individual first-placement research is pending.",
+      "status": "unresolved",
+      "checkedAt": "2026-10-17",
+      "reason": "The Rice Business profile (Lecturer in Operations Management) states a B.A. from Yale, an M.A. from the Institute of Fine Arts and an M.B.A. from Rice (1991), followed by fifteen years in the high-tech industry and leadership of the Hermann Park Conservancy. No doctorate is stated, so there is no PhD whose first job could be reviewed. The integrator should confirm whether this lecturer belongs in the doctoral population.",
+      "sources": [
+        {
+          "url": "https://business.rice.edu/person/doreen-stoller",
+          "title": "Doreen Stoller, Rice Business faculty profile",
+          "notes": "Read as a plain HTML download. Degrees: BA Yale, MA Institute of Fine Arts, MBA Rice (1991). No doctorate."
+        }
+      ],
       "source": "faculty-page"
     },
     {
       "facultyId": "roster:rice-university:edmund-donaldson",
       "name": "Edmund Donaldson",
-      "status": "pending",
-      "checkedAt": null,
-      "sources": [],
-      "reason": "Individual first-placement research is pending.",
+      "status": "unresolved",
+      "checkedAt": "2026-10-17",
+      "reason": "The Rice Business profile (Adjunct Professor) states a B.A. in Quantitative Economics and Decision Sciences from UC San Diego (1989) and an MBA from Rice (1991), with 20 years at Hines and USAA Real Estate from 2014. No doctorate is stated, so there is no PhD whose first job could be reviewed. The integrator should confirm whether this adjunct belongs in the doctoral population.",
+      "sources": [
+        {
+          "url": "https://business.rice.edu/person/edmund-donaldson",
+          "title": "Edmund Donaldson, Rice Business faculty profile",
+          "notes": "Read as a plain HTML download. Degrees: BA UCSD 1989, MBA Rice 1991. No doctorate."
+        }
+      ],
       "source": "faculty-page"
     },
     {
@@ -47517,55 +47581,106 @@
     {
       "facultyId": "roster:rice-university:jim-hackett",
       "name": "Jim Hackett",
-      "status": "pending",
-      "checkedAt": null,
-      "sources": [],
-      "reason": "Individual first-placement research is pending.",
+      "status": "unresolved",
+      "checkedAt": "2026-10-17",
+      "reason": "The Rice Business profile (Adjunct Professor) states a bachelor's from the University of Illinois, an MBA and a Master in Theological Studies from Harvard, and an honorary Doctor of Letters from the University of St. Thomas, with an energy-industry executive career (Anadarko chairman and CEO; Riverstone 2013-2020). An honorary doctorate is not an earned research degree, so there is no PhD whose first job could be reviewed. The integrator should confirm whether this adjunct belongs in the doctoral population.",
+      "sources": [
+        {
+          "url": "https://business.rice.edu/person/jim-hackett",
+          "title": "Jim Hackett, Rice Business faculty profile",
+          "notes": "Read as a plain HTML download. Degrees: bachelor's Illinois, MBA and MTS Harvard, honorary Doctor of Letters (St. Thomas). No earned doctorate."
+        }
+      ],
       "source": "faculty-page"
     },
     {
       "facultyId": "roster:rice-university:kam-hamidieh",
       "name": "Kam Hamidieh",
-      "status": "pending",
-      "checkedAt": null,
-      "sources": [],
-      "reason": "Individual first-placement research is pending.",
+      "status": "unresolved",
+      "checkedAt": "2026-10-17",
+      "reason": "The Rice Business profile gives only the title Lecturer in Operations Management, an office and a phone number; it has no biography, education or employment history. The ORCID registry holds two records under the name Kam Hamidieh (0000-0003-3606-2775 and 0000-0002-9721-0762), both with no employment, education or works. One web search for a CV returned only namesakes in Iran, and guessed Wharton and Rice statistics profile URLs returned 404 or 406. Whether he holds a doctorate, its year, and his first post-PhD job are not established.",
+      "sources": [
+        {
+          "url": "https://business.rice.edu/person/kam-hamidieh",
+          "title": "Kam Hamidieh, Rice Business faculty profile",
+          "notes": "Read as a plain HTML download. Title, office and phone only; no education or history."
+        },
+        {
+          "url": "https://orcid.org/0000-0003-3606-2775",
+          "title": "ORCID record, Kam Hamidieh",
+          "notes": "Read through the ORCID public API; empty record (no employment, education or works)."
+        },
+        {
+          "url": "https://orcid.org/0000-0002-9721-0762",
+          "title": "ORCID record, Kam Hamidieh",
+          "notes": "Read through the ORCID public API; empty record (no employment, education or works)."
+        },
+        {
+          "url": "https://statistics.wharton.upenn.edu/profile/hamidieh/",
+          "title": "Wharton Statistics profile URL (attempted)",
+          "notes": "Returned 404 Page Not Found."
+        }
+      ],
       "source": "faculty-page"
     },
     {
       "facultyId": "roster:rice-university:kathleen-perley",
       "name": "Kathleen Perley",
-      "status": "pending",
-      "checkedAt": null,
-      "sources": [],
-      "reason": "Individual first-placement research is pending.",
+      "status": "unresolved",
+      "checkedAt": "2026-10-17",
+      "reason": "The Rice Business profile (Instructor in Management; Advisor on AI Initiatives) states a bachelor's degree in linguistics and communication science from Texas Christian University and says she is currently pursuing her MBA at Rice; her career is as founder of Decode and DemystifAI and chief innovation officer at Unlock Health. No doctorate is stated, so there is no PhD whose first job could be reviewed. The integrator should confirm whether this instructor belongs in the doctoral population.",
+      "sources": [
+        {
+          "url": "https://business.rice.edu/person/kathleen-perley-0",
+          "title": "Kathleen Perley, Rice Business faculty profile",
+          "notes": "Read as a plain HTML download. Degree: BA/BS linguistics and communication science, TCU; MBA in progress at Rice. No doctorate."
+        }
+      ],
       "source": "faculty-page"
     },
     {
       "facultyId": "roster:rice-university:manolo-sanchez",
       "name": "Manolo Sanchez",
-      "status": "pending",
-      "checkedAt": null,
-      "sources": [],
-      "reason": "Individual first-placement research is pending.",
+      "status": "unresolved",
+      "checkedAt": "2026-10-17",
+      "reason": "The Rice Business profile (Adjunct Professor) describes him as a Yale graduate with master's degrees from the London School of Economics (international relations) and the College of Europe in Bruges (advanced European economics), and a 27-year banking career at BBVA, including ten years as chairman and CEO of BBVA Compass. No doctorate is stated, so there is no PhD whose first job could be reviewed. The integrator should confirm whether this adjunct belongs in the doctoral population.",
+      "sources": [
+        {
+          "url": "https://business.rice.edu/person/manolo-sanchez",
+          "title": "Manolo Sanchez, Rice Business faculty profile",
+          "notes": "Read as a plain HTML download. Degrees: Yale undergraduate; master's LSE and College of Europe. No doctorate."
+        }
+      ],
       "source": "faculty-page"
     },
     {
       "facultyId": "roster:rice-university:mary-bourne-marth",
       "name": "Mary Bourne-Marth",
-      "status": "pending",
-      "checkedAt": null,
-      "sources": [],
-      "reason": "Individual first-placement research is pending.",
+      "status": "unresolved",
+      "checkedAt": "2026-10-17",
+      "reason": "The Rice Business profile (Lecturer in Management, Capstone instructor since 2010) states a B.S. in Business Administration (Economics) from the University of Missouri (1984) and an MBA from Rice (1987), and a marketing career including 28 years at Showtime Networks until May 2020. No doctorate is stated, so there is no PhD whose first job could be reviewed. The integrator should confirm whether this lecturer belongs in the doctoral population.",
+      "sources": [
+        {
+          "url": "https://business.rice.edu/person/mary-bourne-marth",
+          "title": "Mary Bourne-Marth, Rice Business faculty profile",
+          "notes": "Read as a plain HTML download. Degrees: BSBA Missouri 1984, MBA Rice 1987. No doctorate."
+        }
+      ],
       "source": "faculty-page"
     },
     {
       "facultyId": "roster:rice-university:michael-antonoff",
       "name": "Michael Antonoff",
-      "status": "pending",
-      "checkedAt": null,
-      "sources": [],
-      "reason": "Individual first-placement research is pending.",
+      "status": "unresolved",
+      "checkedAt": "2026-10-17",
+      "reason": "The Rice Business profile (Adjunct Professor) states an MBA from Rice, a negotiation program at Harvard Business School, a BS in Computer Information Systems from Purdue and the Kellogg Executive Development Program, with undated roles at MD Anderson, Well Health and CareSet Systems. No doctorate is stated, so there is no PhD whose first job could be reviewed. The integrator should confirm whether this adjunct belongs in the doctoral population.",
+      "sources": [
+        {
+          "url": "https://business.rice.edu/person/michael-antonoff",
+          "title": "Michael Antonoff, Rice Business faculty profile",
+          "notes": "Read as a plain HTML download. Degrees: MBA Rice, BS Purdue; executive programs. No doctorate."
+        }
+      ],
       "source": "faculty-page"
     },
     {
@@ -47580,55 +47695,108 @@
     {
       "facultyId": "roster:rice-university:ray-cao",
       "name": "Ray Cao",
-      "status": "pending",
-      "checkedAt": null,
-      "sources": [],
-      "reason": "Individual first-placement research is pending.",
+      "status": "unresolved",
+      "checkedAt": "2026-10-17",
+      "reason": "Identity: the Rice Business profile describes Qing (Ray) Cao, Ph.D., UHD Distinguished Faculty and endowed professor of supply chain management at the University of Houston-Downtown, previously at Texas Tech (2008-2015), with University of Missouri-Kansas City awards in 2005 and 2007 and college teaching since 1997. His UHD faculty profile (read through its Digital Measures data endpoint) lists Ph.D., University of Nebraska, 2001, Operations Management, but its professional-experience section starts only at UHD in August 2015. No source opened dates his first appointment after the 2001 degree: the UMKC post is known only from the 2005 and 2007 awards, its start year and rank are not given, and teaching since 1997 means some teaching predates the degree. ORCID searches combining his name with Houston, Texas Tech, Nebraska or Kansas City returned no record; two web searches found no CV; the older uhd.edu/faculty/qing-cao.aspx page now returns 404. The first post-PhD job (probably at UMKC, but unconfirmed in sequence and date) remains unresolved.",
+      "phdYearVerified": 2001,
+      "phdInstitutionVerified": "University of Nebraska",
+      "sources": [
+        {
+          "url": "https://business.rice.edu/person/ray-cao",
+          "title": "Ray Cao, Rice Business faculty profile",
+          "notes": "Read as a plain HTML download. Texas Tech 2008-2015, then UHD; UMKC awards 2005 and 2007; teaching since 1997; Ph.D. without institution or year."
+        },
+        {
+          "url": "https://www.uhd.edu/faculty/caoq.html",
+          "title": "Ray Qing Cao, UHD faculty profile",
+          "notes": "Page body is drawn by a Digital Measures script; the same public profile was read through its data endpoint (clients/0c42a677-06fc-5ae9-b8c8-c63057680aae, reportId 49900c86-4d9f-11ee-8e01-3be1296ca157, username caoq). Degrees Earned: Ph.D. University of Nebraska 2001 (Operations Management), MBA Wisconsin 1994, BS Shanghai Jiao Tong 1987. Professional Experience lists only UHD from August 2015."
+        },
+        {
+          "url": "https://www.uhd.edu/academics/business/gmsc/general-business-marketing-and-supply-chain-management-faculty.html",
+          "title": "UHD General Business, Marketing and Supply Chain Management faculty list",
+          "notes": "Lists Ray Qing Cao and links the caoq profile."
+        },
+        {
+          "url": "https://uhd.edu/faculty/qing-cao.aspx",
+          "title": "Older UHD faculty page for Qing Cao (attempted)",
+          "notes": "Seen in a search result; now redirects to a 404 page, so its content could not be read."
+        }
+      ],
       "source": "faculty-page"
     },
     {
       "facultyId": "roster:rice-university:scott-de-ruyter",
       "name": "Scott de Ruyter",
-      "status": "pending",
-      "checkedAt": null,
-      "sources": [],
-      "reason": "Individual first-placement research is pending.",
+      "status": "unresolved",
+      "checkedAt": "2026-10-17",
+      "reason": "The Rice Business profile (Lecturer in Operations Management) states a B.A. from Brigham Young University and an MBA from Pepperdine, a 25-plus-year advisory career as a principal at Growth Management Partners, and 15 years as a Pepperdine adjunct. No doctorate is stated, so there is no PhD whose first job could be reviewed. The integrator should confirm whether this lecturer belongs in the doctoral population.",
+      "sources": [
+        {
+          "url": "https://business.rice.edu/person/scott-de-ruyter",
+          "title": "Scott de Ruyter, Rice Business faculty profile",
+          "notes": "Read as a plain HTML download. Degrees: BA BYU, MBA Pepperdine. No doctorate. The linked CV (deruyter.pdf) was not needed because the profile states the degrees."
+        }
+      ],
       "source": "faculty-page"
     },
     {
       "facultyId": "roster:rice-university:terry-hemeyer",
       "name": "Terry Hemeyer",
-      "status": "pending",
-      "checkedAt": null,
-      "sources": [],
-      "reason": "Individual first-placement research is pending.",
+      "status": "unresolved",
+      "checkedAt": "2026-10-17",
+      "reason": "The Rice Business profile (Adjunct Professor) gives his education as the Stanford GSB Executive Program, an MA in communication from the University of Denver, a BS in education from Ohio State and the Harvard case-study program, with a U.S. Air Force, corporate-communications and Edelman career. No doctorate is stated, so there is no PhD whose first job could be reviewed. The integrator should confirm whether this adjunct belongs in the doctoral population.",
+      "sources": [
+        {
+          "url": "https://business.rice.edu/person/terry-hemeyer",
+          "title": "Terry Hemeyer, Rice Business faculty profile",
+          "notes": "Read as a plain HTML download. Degrees: MA Denver, BS Ohio State; executive programs. No doctorate."
+        }
+      ],
       "source": "faculty-page"
     },
     {
       "facultyId": "roster:rice-university:todd-cimino",
       "name": "Todd Cimino",
-      "status": "pending",
-      "checkedAt": null,
-      "sources": [],
-      "reason": "Individual first-placement research is pending.",
+      "status": "unresolved",
+      "checkedAt": "2026-10-17",
+      "reason": "The Rice Business profile (Lecturer in Operations Management) states a B.S. in Chemical Engineering from Worcester Polytechnic Institute and an MBA from Rice, and an oil-and-gas consulting career (Schlumberger, Kinder Morgan predecessor, Arthur Andersen, Hitachi Consulting, Wipro). No doctorate is stated, so there is no PhD whose first job could be reviewed. The integrator should confirm whether this lecturer belongs in the doctoral population.",
+      "sources": [
+        {
+          "url": "https://business.rice.edu/person/todd-cimino",
+          "title": "Todd Cimino, Rice Business faculty profile",
+          "notes": "Read as a plain HTML download. Degrees: BS WPI, MBA Rice. No doctorate."
+        }
+      ],
       "source": "faculty-page"
     },
     {
       "facultyId": "roster:rice-university:valerie-walker",
       "name": "Valerie Walker",
-      "status": "pending",
-      "checkedAt": null,
-      "sources": [],
-      "reason": "Individual first-placement research is pending.",
+      "status": "unresolved",
+      "checkedAt": "2026-10-17",
+      "reason": "The Rice Business profile (Lecturer in Operations Management) states degrees in Mechanical Engineering from Texas A&M and an Executive MBA from Rice, with an energy-industry career (BHP engineer, Anadarko commercial advisor, Fieldwood Energy asset manager). No doctorate is stated, so there is no PhD whose first job could be reviewed. The integrator should confirm whether this lecturer belongs in the doctoral population.",
+      "sources": [
+        {
+          "url": "https://business.rice.edu/person/valerie-walker-0",
+          "title": "Valerie Walker, Rice Business faculty profile",
+          "notes": "Read as a plain HTML download. Degrees: mechanical engineering, Texas A&M; Executive MBA, Rice. No doctorate. The linked October 2018 CV was not needed because the profile states the degrees."
+        }
+      ],
       "source": "faculty-page"
     },
     {
       "facultyId": "roster:rice-university:vicki-jackman",
       "name": "Vicki Jackman",
-      "status": "pending",
-      "checkedAt": null,
-      "sources": [],
-      "reason": "Individual first-placement research is pending.",
+      "status": "unresolved",
+      "checkedAt": "2026-10-17",
+      "reason": "The Rice Business profile (Lecturer in Operations Management) states an MBA from Rice, a master's degree in health from Texas State University and a B.S. in health from Texas A&M, with an HR career at GE, TechnipFMC and KB Home. No doctorate is stated, so there is no PhD whose first job could be reviewed. The integrator should confirm whether this lecturer belongs in the doctoral population.",
+      "sources": [
+        {
+          "url": "https://business.rice.edu/person/vicki-jackman",
+          "title": "Vicki Jackman, Rice Business faculty profile",
+          "notes": "Read as a plain HTML download. Degrees: MBA Rice, master's Texas State, BS Texas A&M. No doctorate."
+        }
+      ],
       "source": "faculty-page"
     },
     {
@@ -47751,10 +47919,16 @@
     {
       "facultyId": "roster:stanford-university:james-miller",
       "name": "James Miller",
-      "status": "pending",
-      "checkedAt": null,
-      "sources": [],
-      "reason": "Individual first-placement research is pending.",
+      "status": "unresolved",
+      "checkedAt": "2026-10-17",
+      "reason": "The Stanford GSB profile gives only the title The Walter and Elise Haas Professor of Business Administration, Emeritus, the academic area Operations, Information & Technology, and one academic appointment line (Haas Professor, Stanford GSB, 1977-1997). It states no degree, no doctoral institution or year, and no earlier employment. One web search found no CV or obituary for this person (only a namesake economist at Smith College and other Stanford Millers, none linked to this chair). His doctorate and first post-PhD job are not established.",
+      "sources": [
+        {
+          "url": "https://www.gsb.stanford.edu/faculty-research/faculty/james-miller",
+          "title": "James Miller, Stanford GSB faculty profile",
+          "notes": "Read as a plain HTML download. Emeritus title and Haas professorship 1977-1997 only; no education or earlier positions."
+        }
+      ],
       "source": "faculty-page"
     },
     {
@@ -47778,10 +47952,21 @@
     {
       "facultyId": "roster:stanford-university:kevin-a-schulman",
       "name": "Kevin A. Schulman",
-      "status": "pending",
-      "checkedAt": null,
-      "sources": [],
-      "reason": "Individual first-placement research is pending.",
+      "status": "unresolved",
+      "checkedAt": "2026-10-17",
+      "reason": "The Stanford GSB profile says he is a graduate of Dartmouth College, the New York University School of Medicine and the Wharton Health Care Management Program, and his Stanford Profiles page lists Medical Education: NYU School of Medicine (1988), internal-medicine residency at the Hospital of the University of Pennsylvania (1991) and board certification (1991). The MD is a professional degree, and no PhD or other research doctorate is stated, so there is no PhD whose first job could be reviewed. The integrator should confirm whether this courtesy professor belongs in the doctoral population.",
+      "sources": [
+        {
+          "url": "https://www.gsb.stanford.edu/faculty-research/faculty/kevin-schulman",
+          "title": "Kevin A. Schulman, Stanford GSB faculty profile",
+          "notes": "Read as a plain HTML download. Bio: Dartmouth, NYU School of Medicine, Wharton Health Care Management Program; no PhD stated."
+        },
+        {
+          "url": "https://profiles.stanford.edu/kevin-schulman",
+          "title": "Kevin Schulman, Stanford Profiles",
+          "notes": "Read as a plain HTML download. Professional Education: MD NYU School of Medicine 1988; residency Penn 1991; ABIM certification 1991. No research doctorate listed."
+        }
+      ],
       "source": "faculty-page"
     },
     {
@@ -47850,10 +48035,16 @@
     {
       "facultyId": "roster:the-hong-kong-university-of-science-and-technology:chao-he",
       "name": "Chao HE",
-      "status": "pending",
-      "checkedAt": null,
-      "sources": [],
-      "reason": "Individual first-placement research is pending.",
+      "status": "unresolved",
+      "checkedAt": "2026-10-17",
+      "reason": "The HKUST ISOM faculty directory lists Chao HE only as Adjunct Associate Professor in Information Systems, with no individual profile link, degree or employment history. No ORCID or web search was run because the name is too common to attribute a record without further identifiers. Whether he holds a doctorate, and if so his first post-PhD job, is not established.",
+      "sources": [
+        {
+          "url": "https://isom.hkust.edu.hk/faculty-and-staff/directory",
+          "title": "HKUST Department of ISOM faculty and staff directory",
+          "notes": "The HTTPS fetch failed (certificate chain error for curl, 503 for the fetch tool); the same public page was read over plain HTTP. Entry: Chao HE, Information Systems, Adjunct Associate Professor; profile link is a placeholder (#)."
+        }
+      ],
       "source": "faculty-page"
     },
     {
@@ -47868,10 +48059,16 @@
     {
       "facultyId": "roster:the-hong-kong-university-of-science-and-technology:david-a-brown",
       "name": "David A BROWN",
-      "status": "pending",
-      "checkedAt": null,
-      "sources": [],
-      "reason": "Individual first-placement research is pending.",
+      "status": "unresolved",
+      "checkedAt": "2026-10-17",
+      "reason": "The HKUST ISOM faculty directory lists David A BROWN only as Adjunct Assistant Professor in Operations Management, with no individual profile link, degree or employment history. No ORCID or web search was run because the name is too common to attribute a record without further identifiers. Whether he holds a doctorate, and if so his first post-PhD job, is not established.",
+      "sources": [
+        {
+          "url": "https://isom.hkust.edu.hk/faculty-and-staff/directory",
+          "title": "HKUST Department of ISOM faculty and staff directory",
+          "notes": "Read over plain HTTP after the HTTPS fetch failed. Entry: David A BROWN, Operations Management, Adjunct Assistant Professor; no profile page."
+        }
+      ],
       "source": "faculty-page"
     },
     {
@@ -47886,19 +48083,36 @@
     {
       "facultyId": "roster:the-hong-kong-university-of-science-and-technology:frederick-mutto",
       "name": "Frederick MUTTO",
-      "status": "pending",
-      "checkedAt": null,
-      "sources": [],
-      "reason": "Individual first-placement research is pending.",
+      "status": "unresolved",
+      "checkedAt": "2026-10-17",
+      "reason": "The HKUST ISOM faculty directory lists Frederick MUTTO only as Adjunct Associate Professor in Operations Management, with no individual profile link, degree or employment history. An ORCID family-name search for Mutto returned 17 records, none named Frederick. Whether he holds a doctorate, and if so his first post-PhD job, is not established.",
+      "sources": [
+        {
+          "url": "https://isom.hkust.edu.hk/faculty-and-staff/directory",
+          "title": "HKUST Department of ISOM faculty and staff directory",
+          "notes": "Read over plain HTTP after the HTTPS fetch failed. Entry: Frederick MUTTO, Operations Management, Adjunct Associate Professor; no profile page."
+        },
+        {
+          "url": "https://pub.orcid.org/v3.0/expanded-search/?q=family-name:Mutto",
+          "title": "ORCID public registry search, family name Mutto",
+          "notes": "17 records; none named Frederick."
+        }
+      ],
       "source": "faculty-page"
     },
     {
       "facultyId": "roster:the-hong-kong-university-of-science-and-technology:gabriel-leung",
       "name": "Gabriel LEUNG",
-      "status": "pending",
-      "checkedAt": null,
-      "sources": [],
-      "reason": "Individual first-placement research is pending.",
+      "status": "unresolved",
+      "checkedAt": "2026-10-17",
+      "reason": "The HKUST ISOM faculty directory lists Gabriel LEUNG only as Adjunct Professor in Information Systems, with no individual profile link, degree or employment history. No ORCID or web search was run because several well-known Hong Kong people share this name and the directory gives no identifier tying a record to the ISOM adjunct. Whether he holds a doctorate, and if so his first post-PhD job, is not established.",
+      "sources": [
+        {
+          "url": "https://isom.hkust.edu.hk/faculty-and-staff/directory",
+          "title": "HKUST Department of ISOM faculty and staff directory",
+          "notes": "Read over plain HTTP after the HTTPS fetch failed. Entry: Gabriel LEUNG, Information Systems, Adjunct Professor; no profile page."
+        }
+      ],
       "source": "faculty-page"
     },
     {
@@ -47913,10 +48127,16 @@
     {
       "facultyId": "roster:the-hong-kong-university-of-science-and-technology:hilton-k-h-chan",
       "name": "Hilton K H CHAN",
-      "status": "pending",
-      "checkedAt": null,
-      "sources": [],
-      "reason": "Individual first-placement research is pending.",
+      "status": "unresolved",
+      "checkedAt": "2026-10-17",
+      "reason": "The HKUST ISOM faculty directory lists Hilton K H CHAN only as Adjunct Professor in Information Systems, with no individual profile link, degree or employment history. No ORCID or web search was run because the directory gives no identifier (field, employer or degree) that would let a record be attributed to him. Whether he holds a doctorate, and if so his first post-PhD job, is not established.",
+      "sources": [
+        {
+          "url": "https://isom.hkust.edu.hk/faculty-and-staff/directory",
+          "title": "HKUST Department of ISOM faculty and staff directory",
+          "notes": "Read over plain HTTP after the HTTPS fetch failed (certificate chain error for curl, 503 for the fetch tool). Entry: Hilton K H CHAN, Information Systems, Adjunct Professor; no profile page."
+        }
+      ],
       "source": "faculty-page"
     },
     {
@@ -47940,46 +48160,91 @@
     {
       "facultyId": "roster:the-hong-kong-university-of-science-and-technology:jack-h-h-teh",
       "name": "Jack H H TEH",
-      "status": "pending",
-      "checkedAt": null,
-      "sources": [],
-      "reason": "Individual first-placement research is pending.",
+      "status": "unresolved",
+      "checkedAt": "2026-10-17",
+      "reason": "The HKUST ISOM faculty directory lists Jack H H TEH only as Adjunct Associate Professor in Information Systems, with no individual profile link, degree or employment history. No ORCID or web search was run because the directory gives no identifier that would let a record be attributed to him. Whether he holds a doctorate, and if so his first post-PhD job, is not established.",
+      "sources": [
+        {
+          "url": "https://isom.hkust.edu.hk/faculty-and-staff/directory",
+          "title": "HKUST Department of ISOM faculty and staff directory",
+          "notes": "Read over plain HTTP after the HTTPS fetch failed. Entry: Jack H H TEH, Information Systems, Adjunct Associate Professor; no profile page."
+        }
+      ],
       "source": "faculty-page"
     },
     {
       "facultyId": "roster:the-hong-kong-university-of-science-and-technology:james-lei",
       "name": "James LEI",
-      "status": "pending",
-      "checkedAt": null,
-      "sources": [],
-      "reason": "Individual first-placement research is pending.",
+      "status": "unresolved",
+      "checkedAt": "2026-10-17",
+      "reason": "The HKUST ISOM faculty directory lists James LEI only as Adjunct Professor in Information Systems, with no individual profile link, degree or employment history. No ORCID or web search was run because the directory gives no identifier that would let a record be attributed to him. Whether he holds a doctorate, and if so his first post-PhD job, is not established.",
+      "sources": [
+        {
+          "url": "https://isom.hkust.edu.hk/faculty-and-staff/directory",
+          "title": "HKUST Department of ISOM faculty and staff directory",
+          "notes": "Read over plain HTTP after the HTTPS fetch failed. Entry: James LEI, Information Systems, Adjunct Professor; no profile page."
+        }
+      ],
       "source": "faculty-page"
     },
     {
       "facultyId": "roster:the-hong-kong-university-of-science-and-technology:joseph-phi",
       "name": "Joseph PHI",
-      "status": "pending",
-      "checkedAt": null,
-      "sources": [],
-      "reason": "Individual first-placement research is pending.",
+      "status": "unresolved",
+      "checkedAt": "2026-10-17",
+      "reason": "The HKUST ISOM faculty directory lists Joseph PHI only as Adjunct Professor in Operations Management, with no individual profile link, degree or employment history. An ORCID search for given name Joseph and family name Phi returned no record. Whether he holds a doctorate, and if so his first post-PhD job, is not established.",
+      "sources": [
+        {
+          "url": "https://isom.hkust.edu.hk/faculty-and-staff/directory",
+          "title": "HKUST Department of ISOM faculty and staff directory",
+          "notes": "Read over plain HTTP after the HTTPS fetch failed. Entry: Joseph PHI, Operations Management, Adjunct Professor; no profile page."
+        },
+        {
+          "url": "https://pub.orcid.org/v3.0/expanded-search/?q=family-name:Phi+AND+given-names:Joseph",
+          "title": "ORCID public registry search, Joseph Phi",
+          "notes": "Zero results."
+        }
+      ],
       "source": "faculty-page"
     },
     {
       "facultyId": "roster:the-hong-kong-university-of-science-and-technology:kevin-wei-wang",
       "name": "Kevin Wei WANG",
-      "status": "pending",
-      "checkedAt": null,
-      "sources": [],
-      "reason": "Individual first-placement research is pending.",
+      "status": "unresolved",
+      "checkedAt": "2026-10-17",
+      "reason": "His HKUST ISOM profile page (node 2539) shows only the title Adjunct Professor and the area Operations Management; it has no biography, degree or employment history, and the directory entry adds nothing further. No ORCID or web search was run because the name is very common and the page gives no identifier to tie a record to him. Whether he holds a doctorate, and if so his first post-PhD job, is not established.",
+      "sources": [
+        {
+          "url": "https://isom.hkust.edu.hk/node/2539",
+          "title": "Kevin Wei WANG, HKUST ISOM profile",
+          "notes": "Read over plain HTTP after the HTTPS fetch failed. Title and area only."
+        },
+        {
+          "url": "https://isom.hkust.edu.hk/faculty-and-staff/directory",
+          "title": "HKUST Department of ISOM faculty and staff directory",
+          "notes": "Read over plain HTTP. Entry: Kevin Wei WANG, Operations Management, Adjunct Professor."
+        }
+      ],
       "source": "faculty-page"
     },
     {
       "facultyId": "roster:the-hong-kong-university-of-science-and-technology:mark-li",
       "name": "Mark LI",
-      "status": "pending",
-      "checkedAt": null,
-      "sources": [],
-      "reason": "Individual first-placement research is pending.",
+      "status": "unresolved",
+      "checkedAt": "2026-10-17",
+      "reason": "His HKUST MSc programme profile (Prof Mark LI, Adjunct Assistant Professor, Department of ISOM) lists only two current roles, Global Head of Product in traditional finance and DeFi at KVB Global Capital and CEO of a consulting firm in digital finance, new energy and technology, with no degrees and no dates. The ISOM directory adds nothing further. No doctorate is stated and no dated chronology exists, so whether he holds a doctorate, and his first post-PhD job, are not established.",
+      "sources": [
+        {
+          "url": "https://msgo.hkust.edu.hk/mark-li",
+          "title": "Mark LI, HKUST Business School MSc programmes profile",
+          "notes": "Read with the fetch tool (plain HTTP redirects to HTTPS). Current industry roles only; no education or dates."
+        },
+        {
+          "url": "https://isom.hkust.edu.hk/faculty-and-staff/directory",
+          "title": "HKUST Department of ISOM faculty and staff directory",
+          "notes": "Read over plain HTTP. Entry: Mark LI, Operations Management, Adjunct Assistant Professor."
+        }
+      ],
       "source": "faculty-page"
     },
     {
@@ -47994,19 +48259,41 @@
     {
       "facultyId": "roster:the-hong-kong-university-of-science-and-technology:suri-gurumurthi",
       "name": "Suri GURUMURTHI",
-      "status": "pending",
-      "checkedAt": null,
-      "sources": [],
-      "reason": "Individual first-placement research is pending.",
+      "status": "unresolved",
+      "checkedAt": "2026-10-17",
+      "reason": "The HKUST ISOM faculty directory lists Suri GURUMURTHI only as Visiting Associate Professor in Operations Management, with no individual profile link, degree or employment history. ORCID holds one record under the name Suri Gurumurthi (0009-0003-6072-0739) with no employment, education or works. One web search for his doctorate returned only unrelated people. Whether he holds a doctorate, its year, and his first post-PhD job are not established.",
+      "sources": [
+        {
+          "url": "https://isom.hkust.edu.hk/faculty-and-staff/directory",
+          "title": "HKUST Department of ISOM faculty and staff directory",
+          "notes": "Read over plain HTTP after the HTTPS fetch failed. Entry: Suri GURUMURTHI, Operations Management, Visiting Associate Professor; no profile page."
+        },
+        {
+          "url": "https://orcid.org/0009-0003-6072-0739",
+          "title": "ORCID record, Suri Gurumurthi",
+          "notes": "Read through the ORCID public API; empty record. Not confirmed to be the same person."
+        }
+      ],
       "source": "faculty-page"
     },
     {
       "facultyId": "roster:the-hong-kong-university-of-science-and-technology:tobin-joseph",
       "name": "Tobin JOSEPH",
-      "status": "pending",
-      "checkedAt": null,
-      "sources": [],
-      "reason": "Individual first-placement research is pending.",
+      "status": "unresolved",
+      "checkedAt": "2026-10-17",
+      "reason": "His HKUST ISOM profile page (node 2500) shows only the title Lecturer and the area Operations Management, with no biography, degree or employment history. The only ORCID record for the name (0000-0002-9283-9895) belongs to a UK physician (UCL MBBS 2019, MRCP, University of Leeds) and is not attributable to him. One web search found no HKUST biography or CV. Whether he holds a doctorate, and if so his first post-PhD job, is not established.",
+      "sources": [
+        {
+          "url": "https://isom.hkust.edu.hk/node/2500",
+          "title": "Tobin JOSEPH, HKUST ISOM profile",
+          "notes": "Read over plain HTTP after the HTTPS fetch failed. Title and area only."
+        },
+        {
+          "url": "https://orcid.org/0000-0002-9283-9895",
+          "title": "ORCID record, Tobin Joseph (namesake)",
+          "notes": "Read through the ORCID public API; a UK medical doctor, not attributable to the HKUST lecturer."
+        }
+      ],
       "source": "faculty-page"
     },
     {
@@ -48057,10 +48344,16 @@
     {
       "facultyId": "roster:the-pennsylvania-state-university:aggon-norm",
       "name": "Aggon, Norm",
-      "status": "pending",
-      "checkedAt": null,
-      "sources": [],
-      "reason": "Individual first-placement research is pending.",
+      "status": "unresolved",
+      "checkedAt": "2026-10-17",
+      "reason": "The Smeal directory profile of Norman A. Aggon (Associate Teaching Professor in Supply Chain Management, Assistant/Associate Department Head) lists Education as MBA, James Madison University, 1981, and no other degree. No doctorate is stated, so there is no PhD whose first job could be reviewed. The integrator should confirm whether this teaching professor belongs in the doctoral population.",
+      "sources": [
+        {
+          "url": "https://directory.smeal.psu.edu/nxa12",
+          "title": "Norman A. Aggon, Smeal College of Business directory profile",
+          "notes": "Read as a plain HTML download. Education: MBA, James Madison University, 1981. No doctorate."
+        }
+      ],
       "source": "faculty-page"
     },
     {
@@ -48102,10 +48395,16 @@
     {
       "facultyId": "roster:the-pennsylvania-state-university:blanco-marilyn",
       "name": "Blanco, Marilyn",
-      "status": "pending",
-      "checkedAt": null,
-      "sources": [],
-      "reason": "Individual first-placement research is pending.",
+      "status": "unresolved",
+      "checkedAt": "2026-10-17",
+      "reason": "The Smeal directory profile of Marilyn J. Blanco (Associate Teaching Professor in Supply Chain Management) lists Education as MS (2001) and BS (1996) in Management Science & Information Systems, both from Penn State. No doctorate is stated, so there is no PhD whose first job could be reviewed. The integrator should confirm whether this teaching professor belongs in the doctoral population.",
+      "sources": [
+        {
+          "url": "https://directory.smeal.psu.edu/mjb158",
+          "title": "Marilyn J. Blanco, Smeal College of Business directory profile",
+          "notes": "Read as a plain HTML download. Education: MS 2001 and BS 1996, MS&IS, Penn State. No doctorate. The linked vita (.docx) was not opened because the profile states the degrees."
+        }
+      ],
       "source": "faculty-page"
     },
     {
@@ -48219,10 +48518,16 @@
     {
       "facultyId": "roster:the-pennsylvania-state-university:lukoff-andrew",
       "name": "Lukoff, Andrew",
-      "status": "pending",
-      "checkedAt": null,
-      "sources": [],
-      "reason": "Individual first-placement research is pending.",
+      "status": "unresolved",
+      "checkedAt": "2026-10-17",
+      "reason": "The Smeal directory profile of Andy Lukoff (Instructor) lists Education as an MBA in Marketing from Temple University (1993) and a BS in Business Administration from Penn State (1983), plus MIT, Georgia Tech and APICS certificates, and over 40 years of supply-chain industry experience. No doctorate is stated, so there is no PhD whose first job could be reviewed. The integrator should confirm whether this instructor belongs in the doctoral population.",
+      "sources": [
+        {
+          "url": "https://directory.smeal.psu.edu/adl238",
+          "title": "Andy Lukoff, Smeal College of Business directory profile",
+          "notes": "Read as a plain HTML download. Education: MBA Temple 1993, BS Penn State 1983. No doctorate."
+        }
+      ],
       "source": "faculty-page"
     },
     {
@@ -48237,10 +48542,21 @@
     {
       "facultyId": "roster:the-pennsylvania-state-university:mulherin-thomas",
       "name": "Mulherin, Thomas",
-      "status": "pending",
-      "checkedAt": null,
-      "sources": [],
-      "reason": "Individual first-placement research is pending.",
+      "status": "unresolved",
+      "checkedAt": "2026-10-17",
+      "reason": "The Smeal directory profile of Tom Mulherin shows no title, only the department (Supply Chain & Information Systems), an email address and two courses taught (SCM 301, SCM 496); it has no biography, education or employment history. The only ORCID record for Thomas Mulherin (0000-0003-3370-6301) has no affiliations or education and one work, so it cannot be attributed to him. Whether he holds a doctorate, and if so his first post-PhD job, is not established.",
+      "sources": [
+        {
+          "url": "https://directory.smeal.psu.edu/tfm56",
+          "title": "Tom Mulherin, Smeal College of Business directory profile",
+          "notes": "Read as a plain HTML download. No title, education or history; courses only."
+        },
+        {
+          "url": "https://orcid.org/0000-0003-3370-6301",
+          "title": "ORCID record, Thomas Mulherin",
+          "notes": "Read through the ORCID public API; no employment or education entries; one work. Not attributable."
+        }
+      ],
       "source": "faculty-page"
     },
     {
@@ -48273,19 +48589,31 @@
     {
       "facultyId": "roster:the-pennsylvania-state-university:purdum-susan",
       "name": "Purdum, Susan",
-      "status": "pending",
-      "checkedAt": null,
-      "sources": [],
-      "reason": "Individual first-placement research is pending.",
+      "status": "unresolved",
+      "checkedAt": "2026-10-17",
+      "reason": "The Smeal directory profile of Susan Purdum (Associate Teaching Professor in Supply Chain Management) lists Education as an MBA from the University of Massachusetts (1987) and a BS in Industrial Engineering from Penn State (1980), with 20 years in industry (Avery Dennison, Johnson & Johnson, Hershey) and work at Penn State's Center for Supply Chain Research before teaching. No doctorate is stated, so there is no PhD whose first job could be reviewed. The integrator should confirm whether this teaching professor belongs in the doctoral population.",
+      "sources": [
+        {
+          "url": "https://directory.smeal.psu.edu/sbp3",
+          "title": "Susan Purdum, Smeal College of Business directory profile",
+          "notes": "Read as a plain HTML download. Education: MBA UMass 1987, BS IE Penn State 1980. No doctorate."
+        }
+      ],
       "source": "faculty-page"
     },
     {
       "facultyId": "roster:the-pennsylvania-state-university:riley-kathleen",
       "name": "Riley, Kathleen",
-      "status": "pending",
-      "checkedAt": null,
-      "sources": [],
-      "reason": "Individual first-placement research is pending.",
+      "status": "unresolved",
+      "checkedAt": "2026-10-17",
+      "reason": "The Smeal directory profile of Kathleen Riley (Associate Teaching Professor, Management Information Systems) lists Education as MS in Management Science & Information Systems (1999) and BS in Quantitative Business Analysis (1985), both from Penn State. No doctorate is stated, so there is no PhD whose first job could be reviewed. The integrator should confirm whether this teaching professor belongs in the doctoral population.",
+      "sources": [
+        {
+          "url": "https://directory.smeal.psu.edu/kab293",
+          "title": "Kathleen Riley, Smeal College of Business directory profile",
+          "notes": "Read as a plain HTML download. Education: MS 1999 and BS 1985, Penn State. No doctorate."
+        }
+      ],
       "source": "faculty-page"
     },
     {
@@ -48318,10 +48646,16 @@
     {
       "facultyId": "roster:the-pennsylvania-state-university:tracey-steve",
       "name": "Tracey, Steve",
-      "status": "pending",
-      "checkedAt": null,
-      "sources": [],
-      "reason": "Individual first-placement research is pending.",
+      "status": "unresolved",
+      "checkedAt": "2026-10-17",
+      "reason": "The Smeal directory profile of Steve Tracey (Professor of Practice; Executive Director of the Center for Supply Chain Research 2014-2024) says he earned a BS in Finance from Penn State and an MBA from Duke, served as a U.S. Army officer (1986-2002) and was SVP of Global Supply Chain at Standard Textile for over 15 years. No doctorate is stated, so there is no PhD whose first job could be reviewed. The integrator should confirm whether this professor of practice belongs in the doctoral population.",
+      "sources": [
+        {
+          "url": "https://directory.smeal.psu.edu/sft1",
+          "title": "Steve Tracey, Smeal College of Business directory profile",
+          "notes": "Read as a plain HTML download. Degrees: BS Finance Penn State, MBA Duke. No doctorate."
+        }
+      ],
       "source": "faculty-page"
     },
     {
@@ -48345,10 +48679,21 @@
     {
       "facultyId": "roster:the-pennsylvania-state-university:wood-doran",
       "name": "Wood, Doran",
-      "status": "pending",
-      "checkedAt": null,
-      "sources": [],
-      "reason": "Individual first-placement research is pending.",
+      "status": "unresolved",
+      "checkedAt": "2026-10-17",
+      "reason": "The Smeal directory profile shows Doran Wood as Assistant Professor in Supply Chain & Information Systems with an email address and one course (SCM 421); it has no biography, education, vita or employment history. An ORCID search for Doran Wood returned no record, and one web search for a dissertation found only this directory page. The assistant-professor title suggests a doctorate but does not establish one; the degree, its year and the first post-PhD job are not established.",
+      "sources": [
+        {
+          "url": "https://directory.smeal.psu.edu/dbw5651",
+          "title": "Doran Wood, Smeal College of Business directory profile",
+          "notes": "Read as a plain HTML download. Title and course only; no education or history."
+        },
+        {
+          "url": "https://pub.orcid.org/v3.0/expanded-search/?q=family-name:Wood+AND+given-names:Doran",
+          "title": "ORCID public registry search, Doran Wood",
+          "notes": "Zero results."
+        }
+      ],
       "source": "faculty-page"
     },
     {
