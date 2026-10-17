@@ -31,6 +31,8 @@ Existing agents have used three disjoint shards of the original faculty array: i
 
 The writable research cache lives under ignored `research/placements-a/`, `research/placements-b/` and `research/placements-c/`. The saved pause snapshot is tracked under `research-handoff/`, including all three result files, audit histories, scripts, discovery indexes and a source catalogue. A fresh clone therefore contains the relevant continuation work. Read `research-handoff/README.md` before resuming, and compare these historical findings with the public ledger; their 1,661 saved reviews were integrated in commit `9fbf00d`. Never assume a missing document cache means a person has not been reviewed. To exchange proposals through Git, use a dedicated branch and a small `proposals/<batch-name>.json` containing public facts and source references only. Do not commit caches or full documents.
 
+Facts a person reads on LinkedIn (scripts may not read it) go into `research/human-review/proposal-N.json` in the same record format, with the profile URL, who read it and the check date in the source note, and the identity check stated in the reason (matching photo, or the same doctorate and earlier employers as the university profile); copy each merged file to `research-handoff/human-review/`. A LinkedIn education range is not a degree date.
+
 Research agents should not publish directly or edit the shared public JSON concurrently. An integrator reviews proposals, reconciles conflicts, runs checks and publishes the combined result. If an existing verified claim turns out to be wrong, correct or downgrade it with a reason; do not preserve it just to keep totals rising.
 
 ## Pull request or handoff contents

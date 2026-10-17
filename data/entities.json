@@ -13,11 +13,11 @@
   ],
   "definition": "One record per organisation that appears in either database or the program register: the universities with operations departments (Operations Academia directory), the PhD institutions and first employers of the people in the OM List import, and the registered doctoral programs. Keyed by Wikidata item when known, otherwise by name. Parts that a source does not supply are null; nothing is inferred across sources. Where two source rows land on one entity, both rows stay listed under it and their figures are added.",
   "counts": {
-   "entities": 1414,
+   "entities": 1415,
    "withWikidata": 822,
    "phdInstitutions": 443,
    "directoryUniversities": 589,
-   "firstEmployers": 856,
+   "firstEmployers": 857,
    "withPrograms": 10,
    "inBothDatabases": 205,
    "directoryOnly": 327,
@@ -40140,18 +40140,18 @@
        "Washington State University"
       ],
       "people": 2,
-      "verifiedFirstJobs": 1
+      "verifiedFirstJobs": 2
      }
     ],
     "people": 2,
-    "verifiedFirstJobs": 1,
-    "unresolved": 1,
+    "verifiedFirstJobs": 2,
+    "unresolved": 0,
     "pending": 0,
     "notYetCompleted": 0,
-    "firstYear": 2018,
+    "firstYear": 2004,
     "lastYear": 2018,
     "firstJobTypes": {
-     "tenure-track": 1,
+     "tenure-track": 2,
      "postdoc": 0,
      "other-academic": 0,
      "industry": 0,
@@ -40160,6 +40160,10 @@
      "unknown": 0
     },
     "topFirstEmployers": [
+     {
+      "employer": "University of North Carolina at Pembroke",
+      "count": 1
+     },
      {
       "employer": "Western University (Ivey Business School)",
       "count": 1
@@ -117052,6 +117056,69 @@
     "positions": [
      {
       "position": "Assistant Professor of Business",
+      "count": 1
+     }
+    ]
+   },
+   "programs": [],
+   "sources": [
+    {
+     "url": "data/placements.json",
+     "title": "Verified first-job records (people database)"
+    }
+   ],
+   "review": {
+    "matches": [],
+    "conflicts": []
+   }
+  },
+  {
+   "id": "name:university-of-north-carolina-at-pembroke",
+   "wikidata": null,
+   "name": "University of North Carolina at Pembroke",
+   "aliases": [
+    "University of North Carolina at Pembroke"
+   ],
+   "country": null,
+   "coords": null,
+   "logo": null,
+   "roles": [
+    "first-employer"
+   ],
+   "people": null,
+   "directory": null,
+   "employer": {
+    "employers": [
+     {
+      "employerId": "university-of-north-carolina-at-pembroke",
+      "name": "University of North Carolina at Pembroke",
+      "spellings": [
+       "University of North Carolina at Pembroke"
+      ],
+      "verifiedFirstJobs": 1
+     }
+    ],
+    "verifiedFirstJobs": 1,
+    "firstCohort": 2004,
+    "lastCohort": 2004,
+    "firstJobTypes": {
+     "tenure-track": 1,
+     "postdoc": 0,
+     "other-academic": 0,
+     "industry": 0,
+     "government": 0,
+     "nonprofit": 0,
+     "unknown": 0
+    },
+    "sourceInstitutions": [
+     {
+      "institution": "Washington State University",
+      "count": 1
+     }
+    ],
+    "positions": [
+     {
+      "position": "Associate Professor",
       "count": 1
      }
     ]
