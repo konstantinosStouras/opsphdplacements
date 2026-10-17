@@ -5,7 +5,7 @@
 // Wikidata records for the institution (icon P2910, small logo P8972, logo P154; read from Wikimedia
 // Commons as PNG thumbnails). Icons identify institutions on the map only; trademarks belong to their
 // owners. Reviewed exceptions are in data/logo-review.json (`reject` drops a wrong icon, `url` names
-// the file to use). Missing icons are fine: the map falls back to initials.
+// the file to use, `skip` lists source URLs, or parts of them, that gave a wrong or unreadable icon). Missing icons are fine: the map falls back to initials.
 // Usage: node scripts/fetch-institution-logos.mjs [--refresh] [--missing] [--out DIR --cache FILE]
 //   (after scripts/geocode-institutions.mjs; --refresh re-fetches every icon, --missing retries the
 //   institutions without one; with neither, only institutions never tried are fetched. --out writes the
@@ -45,13 +45,15 @@ const claim = (e, p) => e?.claims?.[p]?.[0]?.mainsnak?.datavalue?.value || null;
 const data = JSON.parse(fs.readFileSync(locPath, 'utf8'));
 const mapped = data.records.filter(r => r.qid);
 // Website and Wikidata logo files, fetched once per item (and again for items cached before the logo fields existed).
-const need = mapped.filter(r => !cache[r.qid] || cache[r.qid].commons === undefined);
+const need = mapped.filter(r => !cache[r.qid] || cache[r.qid].commonsVersion !== 2);
 for (let i = 0; i < need.length; i += 50) {
   const batch = need.slice(i, i + 50);
   const ents = await wikidata(batch.map(r => r.qid));
   for (const r of batch) {
     const e = ents[r.qid];
-    cache[r.qid] = { ...(cache[r.qid] || {}), website: claim(e, 'P856') || cache[r.qid]?.website || null, commons: ['P2910', 'P8972', 'P154'].map(p => claim(e, p)).filter(Boolean) };
+    // Icon, small logo, seal and coat of arms before the full logo, which is often a wide wordmark;
+    // photographs (.jpg) entered as logos are skipped.
+    cache[r.qid] = { ...(cache[r.qid] || {}), website: claim(e, 'P856') || cache[r.qid]?.website || null, commons: ['P2910', 'P8972', 'P158', 'P94', 'P154'].map(p => claim(e, p)).filter(f => f && !/\.jpe?g$/i.test(f)), commonsVersion: 2 };
   }
   save();
   await sleep(1500);
@@ -89,7 +91,10 @@ const commonsUrl = file => `https://commons.wikimedia.org/w/index.php?title=Spec
 
 // Largest frame of an .ico, cropped to its visible content, scaled to fit 96px on a transparent canvas.
 // Rejects images under 32px (blurry once enlarged), nearly empty ones and ones too light to see on white.
-function convert(src, target) {
+// With strict on, a wide wordmark (more than 2.4 times wider than tall) is refused, because it shrinks to
+// a thin line in a circle; one up to 3 times as wide is used only when no source gives a squarer icon,
+// and a wider one never (the initials read better).
+function convert(src, target, strict) {
   execFileSync('python3', ['-I', '-c', `
 import sys
 from PIL import Image
@@ -103,18 +108,19 @@ box = im.getchannel('A').point(lambda a: 255 if a > 16 else 0).getbbox()
 if not box: raise SystemExit('empty')
 im = im.crop(box)
 if im.width < ${MIN * 0.75} and im.height < ${MIN * 0.75}: raise SystemExit('too small after crop')
+if max(im.width, im.height) > (2.4 if sys.argv[3] == 'strict' else 3.0) * min(im.width, im.height): raise SystemExit('wide')
 colours = im.convert('RGB').getcolors(1 << 16)
 if colours is not None and len(colours) < 2: raise SystemExit('blank')
 # The map draws icons on a white disc: an icon with almost no pixels darker than pale grey would vanish.
 px = list(zip(im.convert('L').getdata(), im.getchannel('A').getdata()))
 solid = [l for l, a in px if a > 128]
-if not solid or sum(1 for l in solid if l < 200) < 0.03 * len(solid): raise SystemExit('too light for a white disc')
+if not solid or sum(1 for l in solid if l < 170) < 0.03 * len(solid): raise SystemExit('too light for a white disc')
 scale = ${SIZE} / max(im.width, im.height)
 im = im.resize((max(1, round(im.width * scale)), max(1, round(im.height * scale))), Image.LANCZOS)
 canvas = Image.new('RGBA', (${SIZE}, ${SIZE}), (0, 0, 0, 0))
 canvas.paste(im, ((${SIZE} - im.width) // 2, (${SIZE} - im.height) // 2), im)
 canvas.quantize(colors=128, method=Image.Quantize.FASTOCTREE).save(sys.argv[2], optimize=True)
-`, src, target], { stdio: ['ignore', 'ignore', 'ignore'] });
+`, src, target, strict ? 'strict' : 'lenient'], { stdio: ['ignore', 'ignore', 'ignore'] });
 }
 
 let fetched = 0, tried = 0;
@@ -122,10 +128,12 @@ for (const r of mapped) {
   const entry = cache[r.qid], target = path.join(outDir, r.qid + '.png'), fix = review[r.qid];
   if (fix?.reject) { if (fs.existsSync(target)) fs.rmSync(target); entry.icon = null; entry.iconSource = 'rejected in review'; continue; }
   const missing = !fs.existsSync(target);
-  if (!(refresh || (fix?.url && entry.iconSource !== fix.url) || (missing && (retryMissing || entry.icon === undefined)))) continue;
+  const skippedNow = fix?.skip && entry.iconSource && fix.skip.some(part => entry.iconSource.includes(part));
+  if (!(refresh || skippedNow || (fix?.url && entry.iconSource !== fix.url) || (missing && (retryMissing || entry.icon === undefined)))) continue;
   tried++;
   const candidates = [];
   if (fix?.url) candidates.push({ url: fix.url, ua: fix.url.includes('wikimedia.org') ? UA : BROWSER_UA });
+  const skipped = url => (fix?.skip || []).some(part => url.includes(part));
   if (entry.website) {
     entry.domain = new URL(entry.website).hostname.replace(/^www\./, '');
     for (const url of await declaredIcons(entry.website)) candidates.push({ url });
@@ -133,13 +141,16 @@ for (const r of mapped) {
   }
   for (const file of entry.commons || []) candidates.push({ url: commonsUrl(file), ua: UA });
   const tmp = path.join(outDir, r.qid + '.raw'), out = path.join(outDir, r.qid + '.new.png');
-  let source = null;
+  let source = null, fallback = null;
   for (const c of candidates) {
+    if (skipped(c.url)) continue;
     const raw = await download(c.url, c.ua);
     if (!raw) continue;
     fs.writeFileSync(tmp, raw);
-    try { convert(tmp, out); source = c.url; break; } catch { /* try the next source */ }
+    try { convert(tmp, out, true); source = c.url; break; } catch { /* try the next source */ }
+    if (!fallback) { try { convert(tmp, out, false); fallback = { raw, url: c.url }; } catch { /* unusable */ } }
   }
+  if (!source && fallback) { fs.writeFileSync(tmp, fallback.raw); try { convert(tmp, out, false); source = fallback.url; } catch { /* none */ } }
   fs.rmSync(tmp, { force: true });
   if (source) { fs.renameSync(out, target); entry.icon = r.qid + '.png'; entry.iconSource = source; fetched++; }
   else { fs.rmSync(out, { force: true }); if (missing) { entry.icon = null; entry.iconSource = null; } }

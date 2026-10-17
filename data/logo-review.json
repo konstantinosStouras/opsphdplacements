@@ -1,0 +1,9 @@
+{
+ "version": 1,
+ "note": "Reviewed exceptions for the map icons fetched by scripts/fetch-institution-logos.mjs, keyed by Wikidata item. `skip` lists source URLs (or parts of them) that gave a wrong, generic or unreadable icon, so the next source is used; `reject` leaves the institution with initials; `url` names the file to use. Each entry gives the institution, the reason and the review date.",
+ "records": {
+  "Q34433": { "institution": "University of Oxford", "skip": ["icons.duckduckgo.com", "google.com/s2/favicons"], "reason": "Both favicon services return the generic Drupal content-system icon, not the university's.", "reviewedAt": "2026-10-17" },
+  "Q1481050": { "institution": "London Business School", "skip": ["london.edu"], "reason": "The site's icons are a plain navy block with a red line that does not identify the school on the map.", "reviewedAt": "2026-10-17" },
+  "Q1136919": { "institution": "Iowa State University", "skip": ["cdn.theme.iastate.edu/favicon/apple-touch-icon"], "reason": "The apple-touch icon is a plain red and gold block that does not identify the school on the map.", "reviewedAt": "2026-10-17" }
+ }
+}
