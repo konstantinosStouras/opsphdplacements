@@ -4,10 +4,10 @@
     "updatedAt": "2026-10-17",
     "total": 3156,
     "counts": {
-      "unresolved": 1563,
-      "verified": 1209,
+      "unresolved": 1577,
+      "verified": 1235,
       "not-yet-completed-phd": 4,
-      "pending": 380
+      "pending": 340
     },
     "bySource": {
       "omlist": {
@@ -22,10 +22,10 @@
       "faculty-page": {
         "total": 1007,
         "counts": {
-          "verified": 346,
-          "unresolved": 418,
+          "verified": 372,
+          "unresolved": 432,
           "not-yet-completed-phd": 3,
-          "pending": 240
+          "pending": 200
         }
       }
     }
@@ -53191,10 +53191,34 @@
     {
       "facultyId": "roster:rice-university:puyao-ge",
       "name": "Puyao Ge",
-      "status": "pending",
-      "checkedAt": null,
-      "sources": [],
-      "reason": "Individual first-placement research is pending.",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "employer": "Rice University (Department of Computational Applied Mathematics and Operations Research)",
+      "position": "Postdoctoral Associate",
+      "placementYear": 2024,
+      "category": "postdoc",
+      "evidenceUrl": "https://orcid.org/0009-0008-7268-7741",
+      "evidenceNote": "ORCID employment record lists PhD Candidate, Statistics and Operations Research, UNC Chapel Hill, 2019-08 to 2024-07, followed by Postdoctoral Associate, Computational Applied Mathematics and Operations Research, Rice University, from 2024-08. The Rice Business profile independently describes him as a postdoctoral research associate in Rice CMOR with a UNC Statistics and Operations Research PhD. Verifier: ORCID employments and the Rice Business profile re-opened and confirmed; the profile uses 'he', so the pronoun in this note was corrected. No other change.",
+      "phdYearVerified": null,
+      "phdInstitutionVerified": "University of North Carolina at Chapel Hill",
+      "reason": "Dated ORCID chronology carrying both the UNC doctoral affiliation and the Rice affiliation shows the Rice CMOR postdoc beginning August 2024, immediately after the UNC PhD candidacy ended in July 2024. The degree conferral year is not stated in any opened source (the ORCID candidacy end date is not a conferral record), so phdYearVerified is left null; the UNC Carolina Digital Repository search returned HTTP 503 (WebFetch) and a connection reset (curl).",
+      "sources": [
+        {
+          "url": "https://orcid.org/0009-0008-7268-7741",
+          "title": "ORCID record 0009-0008-7268-7741 (Puyao Ge), read through the public API pub.orcid.org/v3.0/0009-0008-7268-7741/activities",
+          "notes": "Employments: UNC Chapel Hill Statistics and Operations Research, PhD Candidate, 2019-08 to 2024-07; Rice University CMOR, Postdoctoral Associate, 2024-08 to present. No education entries."
+        },
+        {
+          "url": "https://business.rice.edu/person/puyao-ge",
+          "title": "Rice Business - Puyao Ge",
+          "notes": "States Ph.D. in Statistics and Operations Research from UNC Chapel Hill and a postdoctoral research associate post in Rice CMOR; current title Lecturer in Operations Management; no dates."
+        },
+        {
+          "url": "https://cdr.lib.unc.edu/catalog?q=%22Puyao+Ge%22",
+          "title": "UNC Carolina Digital Repository search (attempted)",
+          "notes": "Attempted for the dissertation record and conferral date; HTTP 503 via the fetch tool and connection reset via curl. Not read."
+        }
+      ],
       "source": "faculty-page"
     },
     {
@@ -53325,10 +53349,26 @@
     {
       "facultyId": "roster:singapore-management-university-smu:joyce-low",
       "name": "Joyce LOW",
-      "status": "pending",
-      "checkedAt": null,
-      "sources": [],
-      "reason": "Individual first-placement research is pending.",
+      "status": "unresolved",
+      "checkedAt": "2026-10-17",
+      "reason": "The CV linked from the SMU profile (August 2025) dates the NUS Industrial Systems Engineering and Management PhD 2004-2009, with the NUS PhD scholarship running January 2004 - December 2008, and lists Research Fellow, NUS Centre for Maritime Studies, Sep 2008 - Aug 2010, then Assistant Professor, Korea Aerospace University, Sep 2010 - Jul 2012, then SMU from Aug 2012. The NUS ScholarBank record of her thesis (A longitudinal analysis of port systems in Asia, Ph.D., supervisor Tang Loon Ching) gives dc.date.issued 2009-06-08. The research fellowship therefore began at the same university while she was still on the PhD scholarship and about nine months before the thesis date, so no opened source shows that the dissertation was complete when it started; it may be a pre-degree post that continued past the degree (overlap rule 1) rather than a post-doctoral appointment in the final months (rule 2). If the fellowship is excluded, the first new job after the degree would be the Korea Aerospace University assistant professorship from September 2010; the integrator, or a later review that finds the conferral date, should decide. Verifier: first-job order not established (the fellowship began during the doctorate, before the June 2009 thesis date).",
+      "sources": [
+        {
+          "url": "https://business.smu.edu.sg/sites/business.smu.edu.sg/files/business/OperationsManagement/JoyceM.W.Low-CV(Aug2025).pdf",
+          "title": "Curriculum Vitae - Joyce M.W. Low (August 2025)",
+          "notes": "Education and Positions Held sections read: PhD NUS ISEM 2004-2009; Research Fellow NUS Centre for Maritime Studies Sep 2008 - Aug 2010; Assistant Professor Korea Aerospace University Sep 2010 - Jul 2012; Visiting Assistant Professor Sungkyunkwan Jul-Sep 2011; SMU Senior Lecturer Aug 2012 - Jul 2019."
+        },
+        {
+          "url": "https://faculty.smu.edu.sg/profile/joyce-low-mei-wan-1826",
+          "title": "SMU faculty profile - Joyce Low Mei Wan",
+          "notes": "Gives PhD NUS 2004-2009 and SMU positions from Aug 2012; links the August 2025 CV."
+        },
+        {
+          "url": "https://scholarbank.nus.edu.sg/handle/10635/15851",
+          "title": "NUS ScholarBank - A longitudinal analysis of port systems in asia (LOW MEI WAN, JOYCE), read through the DSpace REST API",
+          "notes": "Thesis, Ph.D., degree conferred Doctor of Philosophy; supervisor Tang Loon Ching; dc.date.issued 2009-06-08; accessioned 2010-04-08."
+        }
+      ],
       "source": "faculty-page"
     },
     {
@@ -53448,10 +53488,24 @@
     {
       "facultyId": "roster:stanford-university:joseph-desimone",
       "name": "Joseph DeSimone",
-      "status": "pending",
-      "checkedAt": null,
-      "sources": [],
-      "reason": "Individual first-placement research is pending.",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "employer": "University of North Carolina at Chapel Hill (Department of Chemistry)",
+      "position": "Assistant Professor of Chemistry",
+      "placementYear": 1990,
+      "category": "tenure-track",
+      "evidenceUrl": "https://www.gsb.stanford.edu/faculty-research/faculty/joseph-desimone",
+      "evidenceNote": "Stanford GSB profile gives PhD in Polymer Chemistry, Virginia Tech, 1986-1990, and an academic chronology whose earliest post is Assistant Professor of Chemistry, UNC Chapel Hill, 1990-1994, followed by associate and full professorships at UNC and NC State; no postdoc or industry role is listed between the degree and the UNC appointment.",
+      "phdYearVerified": 1990,
+      "phdInstitutionVerified": "Virginia Tech",
+      "reason": "The profile's own dated academic history shows the UNC Chapel Hill assistant professorship starting in 1990, the year the Virginia Tech PhD ended. The degree is in polymer chemistry and the GSB appointment is by courtesy; scope is a question for the integrator, not for this review.",
+      "sources": [
+        {
+          "url": "https://www.gsb.stanford.edu/faculty-research/faculty/joseph-desimone",
+          "title": "Stanford GSB - Joseph DeSimone",
+          "notes": "Education (PhD Virginia Tech 1986-1990, BS Ursinus 1982-1986) and dated academic appointments from 1990 onward; Carbon cofounder 2014-2019."
+        }
+      ],
       "source": "faculty-page"
     },
     {
@@ -53656,10 +53710,34 @@
     {
       "facultyId": "roster:the-hong-kong-university-of-science-and-technology:inchi-hu",
       "name": "Inchi HU",
-      "status": "pending",
-      "checkedAt": null,
-      "sources": [],
-      "reason": "Individual first-placement research is pending.",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "employer": "University of Maryland (Department of Mathematics)",
+      "position": "Visiting Assistant Professor of Mathematics",
+      "placementYear": 1985,
+      "category": "other-academic",
+      "evidenceUrl": "https://isom.hkust.edu.hk/faculty-and-staff/directory/imichu",
+      "evidenceNote": "The HKUST ISOM profile's dated Academic and Professional Experience list begins with Visiting Assistant Professor of Mathematics, University of Maryland, 1985-1986, followed by Assistant Professor of Statistics, University of Pennsylvania, 1986-1993, and HKUST from 1994. The Mathematics Genealogy Project dissertation record dates the Stanford PhD to 1986, so the one-year Maryland visiting post started in the 1985-86 academic year before the 1986 degree date (overlap: start 1985, degree year 1986, months not stated); it is a new post-doctoral-type appointment, not a pre-degree job that continued.",
+      "phdYearVerified": 1986,
+      "phdInstitutionVerified": "Stanford University",
+      "reason": "Dated employer chronology on the HKUST profile plus the MGP dissertation record (Stanford, 1986, Repeated Significance Tests for Exponential Families, advisor David Siegmund) establish the Maryland visiting assistant professorship of 1985-1986 as the earliest new appointment. It began before the 1986 degree year, which the 17 October 2026 overlap rule allows by one year; the conferral month is not known, so a verifier may wish to confirm the dissertation was finished by autumn 1985. Stanford SearchWorks could not be read (JavaScript bot check), so the conferral year rests on MGP. The HKUST page answered WebFetch with HTTP 503 and HTTPS curl with a certificate-chain error, and was read through a plain curl request to the http:// address of the same public page. Identity: the profile and the MGP record both give a Stanford statistics PhD, and MGP lists his HKUST doctoral students.",
+      "sources": [
+        {
+          "url": "https://isom.hkust.edu.hk/faculty-and-staff/directory/imichu",
+          "title": "HKUST ISOM - Inchi HU, Professor Emeritus (read by plain curl of the http:// address after WebFetch returned HTTP 503)",
+          "notes": "PhD Stanford University, Statistics (no year). Experience: Chair Professor ISOM HKUST 2013-present; Professor ISOM 2000-2013; Associate Professor ISMT 1994-2000; Assistant Professor of Statistics, University of Pennsylvania, 1986-1993; Visiting Assistant Professor of Mathematics, University of Maryland, 1985-1986."
+        },
+        {
+          "url": "https://www.mathgenealogy.org/id.php?id=83241",
+          "title": "Mathematics Genealogy Project - Inchi Hu",
+          "notes": "Ph.D. Stanford University 1986; dissertation Repeated Significance Tests for Exponential Families; advisor David Oliver Siegmund; students include HKUST graduates."
+        },
+        {
+          "url": "https://searchworks.stanford.edu/catalog?q=%22Repeated+significance+tests+for+exponential+families%22",
+          "title": "Stanford SearchWorks catalog search (attempted)",
+          "notes": "Attempted for the thesis record and conferral date; returned a JavaScript traffic-check page. Not read."
+        }
+      ],
       "source": "faculty-page"
     },
     {
@@ -53822,10 +53900,29 @@
     {
       "facultyId": "roster:the-hong-kong-university-of-science-and-technology:zhaoli-meng",
       "name": "Zhaoli MENG",
-      "status": "pending",
-      "checkedAt": null,
-      "sources": [],
-      "reason": "Individual first-placement research is pending.",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "employer": "Renmin University of China",
+      "position": "Assistant Professor",
+      "placementYear": 2006,
+      "category": "tenure-track",
+      "evidenceUrl": "https://ctbe.hkust.edu.hk/people/detail/prof-zhaoli-meng-phd-associate-director",
+      "evidenceNote": "The HKUST CTBE profile gives a dated career list whose earliest entry is Assistant Professor at Renmin University of China, 2006-2008, followed by Samsung Economic Research Institute 2008-2011, Accenture 2011-2012, Deloitte 2012-2014, Tencent Research Institute 2014-2017 and later posts. The NUS ScholarBank thesis record (Ph.D., Information Systems) is dated 2006-02-20, so the Renmin post began in the year the doctorate was completed.",
+      "phdYearVerified": 2006,
+      "phdInstitutionVerified": "National University of Singapore",
+      "reason": "Employer biography with year ranges plus the NUS thesis record establish Renmin University of China (Assistant Professor, 2006-2008) as the first post-PhD job. The ScholarBank date 2006-02-20 is the record's issue date and may be the submission date rather than the formal conferral; both fall in 2006, the same year as the Renmin start. Category follows the project rule for an assistant professorship; whether Renmin's 2006 post was a tenure-track line is not stated, so a verifier may wish to confirm. Identity: the profile states a PhD from NUS; the ScholarBank record is an NUS Information Systems PhD by MENG ZHAOLI (supervisors Tom Lee Sang-Yong and Ivan Png) on economics in IS, consistent with his later chief-economist career. ORCID name search found several Zhaoli Meng records, none with NUS or these employers.",
+      "sources": [
+        {
+          "url": "https://ctbe.hkust.edu.hk/people/detail/prof-zhaoli-meng-phd-associate-director",
+          "title": "HKUST Center for Technology and Business Ecosystem - Prof. Zhaoli MENG, PhD",
+          "notes": "PhD, National University of Singapore (no year). Career: 2025- Professor of Business Practice, HKUST; 2023-2024 Micro Connect Research Institute; 2020-2023 Yidan Education Research Institute; 2018-2019 JD Finance/JD Digital research institutes; 2014-2017 Tencent Research Institute; 2012-2014 Deloitte; 2011-2012 Accenture; 2008-2011 Samsung Economic Research Institute; 2006-2008 Assistant Professor, Renmin University of China."
+        },
+        {
+          "url": "https://scholarbank.nus.edu.sg/handle/10635/15158",
+          "title": "NUS ScholarBank - Three applications of economic theory and methodology in information systems research (MENG ZHAOLI), read through the DSpace REST API search endpoint",
+          "notes": "Thesis, Ph.D, Doctor of Philosophy, Information Systems; supervisors Lee Sang-Yong Tom and Png Paak Liang Ivan; dc.date.issued 2006-02-20."
+        }
+      ],
       "source": "faculty-page"
     },
     {
@@ -54416,10 +54513,34 @@
     {
       "facultyId": "roster:the-university-of-alabama:ebru-bish",
       "name": "Ebru Bish",
-      "status": "pending",
-      "checkedAt": null,
-      "sources": [],
-      "reason": "Individual first-placement research is pending.",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "employer": "Virginia Tech (Industrial and Systems Engineering)",
+      "position": "Assistant Professor",
+      "placementYear": 1999,
+      "category": "tenure-track",
+      "evidenceUrl": "https://bpb-us-e2.wpmucdn.com/sites.ua.edu/dist/1/527/files/2026/09/Ebru-Bish_CV-Rev.-Sept-2026.pdf",
+      "evidenceNote": "CV (rev. September 2026) lists PhD in Industrial Engineering and Management Sciences, Northwestern University, 1999 (advisor David Simchi-Levi); Research and Teaching Assistant at Northwestern 1994-1999; Assistant Professor, Industrial and Systems Engineering, Virginia Tech, 1999-2006; Associate Professor there 2006-2020; University of Alabama from 2020. No postdoc, visiting or industry role is listed.",
+      "phdYearVerified": 1999,
+      "phdInstitutionVerified": "Northwestern University",
+      "reason": "Dated CV linked from her personal site (linked from the Culverhouse profile) shows the Virginia Tech assistant professorship starting in 1999, the PhD year.",
+      "sources": [
+        {
+          "url": "https://bpb-us-e2.wpmucdn.com/sites.ua.edu/dist/1/527/files/2026/09/Ebru-Bish_CV-Rev.-Sept-2026.pdf",
+          "title": "Ebru K. Bish CV (Rev. Sept. 2026)",
+          "notes": "Academic Experience and Education sections read; grep for visiting, postdoc, consulting or industry roles found none."
+        },
+        {
+          "url": "https://sites.ua.edu/ebish/",
+          "title": "Ebru Bish personal site (redirect target of ebish.people.ua.edu)",
+          "notes": "Links the September 2026 CV; no dates on the page itself."
+        },
+        {
+          "url": "https://culverhouse.ua.edu/people/ebru-bish/",
+          "title": "Culverhouse College of Business - Ebru Bish",
+          "notes": "States PhD in IEMS from Northwestern; no dates; links personal website."
+        }
+      ],
       "source": "faculty-page"
     },
     {
@@ -54485,37 +54606,135 @@
     {
       "facultyId": "roster:tulane-university:amin-sabzehzar",
       "name": "Amin Sabzehzar",
-      "status": "pending",
-      "checkedAt": null,
-      "sources": [],
-      "reason": "Individual first-placement research is pending.",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "employer": "Tulane University (A. B. Freeman School of Business)",
+      "position": "Assistant Professor of Management Science",
+      "placementYear": 2022,
+      "category": "tenure-track",
+      "evidenceUrl": "https://wpcarey.asu.edu/information-systems-degrees/phd-placement",
+      "evidenceNote": "The ASU W. P. Carey Information Systems PhD placement page lists Amin Sabzehzar, graduation year 2022, initial placement Tulane University. The Tulane Freeman profile says he joined the Freeman School after receiving his Ph.D. in Management of Information Systems from Arizona State University and gives his title as Assistant Professor. No start date is stated, so placementYear is left null. Verifier: a Freeman News article of 16 August 2022, written after the appointment began, lists him among four tenure-track assistant professors appointed effective 1 July 2022 as Assistant Professor of Management Science, joining from ASU after his recent PhD; placementYear was set from null to the documented start year 2022 and the position to the title at hire. The 2022 value is the documented start, not the cohort year.",
+      "phdYearVerified": 2022,
+      "phdInstitutionVerified": "Arizona State University",
+      "reason": "Official program initial-placement list (ASU W. P. Carey IS PhD placements: graduation year 2022, initial placement Tulane University), the employer's statement that he joined Tulane after the doctorate, and a Freeman News article dated 16 August 2022 establish Tulane as the first post-PhD employer: the article names him Assistant Professor of Management Science, one of four tenure-track assistant professors whose appointments were effective 1 July 2022, joining from Arizona State University where he had recently received his PhD. ASU KEEP (dissertation repository) returned HTTP 403 to the researcher; the ORCID record 0000-0001-5153-1803 has no employment or education entries.",
+      "sources": [
+        {
+          "url": "https://wpcarey.asu.edu/information-systems-degrees/phd-placement",
+          "title": "ASU W. P. Carey - Information Systems PhD placement data",
+          "notes": "Table of selected recent placements (student, graduation year, initial placement): Amin Sabzehzar, 2022, Tulane University."
+        },
+        {
+          "url": "https://freeman.tulane.edu/faculty-research/management-science/amin-sabzehzar",
+          "title": "Tulane Freeman School - Amin Sabzehzar, Assistant Professor",
+          "notes": "Says he joined the Freeman School of Business after receiving his Ph.D. in Management of Information Systems from Arizona State University; no dates."
+        },
+        {
+          "url": "https://keep.lib.asu.edu/search?search_api_fulltext=Sabzehzar",
+          "title": "ASU KEEP repository search (attempted)",
+          "notes": "HTTP 403 via WebFetch and curl; dissertation record not read."
+        },
+        {
+          "url": "https://orcid.org/0000-0001-5153-1803",
+          "title": "ORCID record 0000-0001-5153-1803 (Amin Sabzehzar), read through the public API",
+          "notes": "No employment, education or works entries."
+        },
+        {
+          "url": "https://freemannews.tulane.edu/2022/08/16/freeman-welcomes-5-to-faculty-for-2022-23",
+          "title": "Freeman News (Tulane) - Freeman welcomes 5 to faculty for 2022-23 (16 August 2022)",
+          "notes": "Appointments effective July 1 include four tenure-track assistant professors and one professor of practice; 'Amin Sabzehzar, Assistant Professor of Management Science' joins from Arizona State University, where he recently received his PhD in Management of Information Systems."
+        }
+      ],
       "source": "faculty-page"
     },
     {
       "facultyId": "roster:tulane-university:mubarak-iddrisu",
       "name": "Mubarak Iddrisu",
-      "status": "pending",
-      "checkedAt": null,
-      "sources": [],
-      "reason": "Individual first-placement research is pending.",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "employer": "Tulane University (A. B. Freeman School of Business)",
+      "position": "Visiting Assistant Professor of Management Science",
+      "placementYear": null,
+      "category": "other-academic",
+      "evidenceUrl": "https://freeman.tulane.edu/faculty-research/management-science/mubarak-iddrisu",
+      "evidenceNote": "The Tulane Freeman profile (read 17 October 2026) says Iddrisu joins the Freeman School as a Visiting Assistant Professor of Management Science and holds a PhD in Information Systems for Data Science and Management from UMass Boston. The Mathematics Genealogy Project record dates the UMass Boston PhD to 2026 (advisors Jeffrey Keisler and Michael P. Johnson). With the degree in 2026 and the visiting post already held in October 2026, the Tulane appointment is his first post-PhD job; its start date is not stated, so placementYear is left null.",
+      "phdYearVerified": 2026,
+      "phdInstitutionVerified": "University of Massachusetts Boston",
+      "reason": "Employer profile describing a newly joined visiting post plus a dissertation-genealogy record dating the degree to 2026 leave no room for an earlier post-PhD job, so the Tulane visiting assistant professorship is recorded as the first job with an unknown start year (2025 or 2026; if it began in autumn 2025 it would be an overlap appointment before a 2026 conferral). The conferral month and the dissertation title are not given by MGP; UMass Boston ScholarWorks returned a Cloudflare 403 to both WebFetch and curl. A verifier should confirm the conferral date and start term. The two ORCID records under this name carry undated University of Cape Coast or Ghanaian affiliations and were not used (identity not established).",
+      "sources": [
+        {
+          "url": "https://freeman.tulane.edu/faculty-research/management-science/mubarak-iddrisu",
+          "title": "Tulane Freeman School - Mubarak Iddrisu, Visiting Assistant Professor",
+          "notes": "Bio: joins the Freeman School as a Visiting Assistant Professor of Management Science; PhD Information Systems for Data Science and Management, UMass Boston; MS Mathematics, Ohio University; BS Mathematics, University of Cape Coast. No dates."
+        },
+        {
+          "url": "https://www.mathgenealogy.org/id.php?id=347044",
+          "title": "Mathematics Genealogy Project - Mubarak Iddrisu",
+          "notes": "Ph.D. University of Massachusetts Boston 2026; dissertation title blank; MSC 90 Operations research; advisors Jeffrey Keisler and Michael P. Johnson."
+        },
+        {
+          "url": "https://scholarworks.umb.edu/do/search/?q=Iddrisu&start=0&context=1407934",
+          "title": "UMass Boston ScholarWorks search (attempted)",
+          "notes": "Cloudflare challenge, HTTP 403 via WebFetch and curl; not read."
+        }
+      ],
       "source": "faculty-page"
     },
     {
       "facultyId": "roster:tulane-university:oleg-gredil",
       "name": "Oleg Gredil",
-      "status": "pending",
-      "checkedAt": null,
-      "sources": [],
-      "reason": "Individual first-placement research is pending.",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "employer": "Tulane University (A. B. Freeman School of Business)",
+      "position": "Assistant Professor of Finance",
+      "placementYear": 2015,
+      "category": "tenure-track",
+      "evidenceUrl": "https://tulane.box.com/s/u77yr0wqhqm093kng7rnvehlxm653duw",
+      "evidenceNote": "CV lists Ph.D. Business Administration (Finance), UNC Chapel Hill, August 2015, and employment as Assistant Professor of Finance, Tulane Freeman School, July 2015 - June 2022, then Associate Professor from July 2022. Overlap: the Tulane appointment began in July 2015, one month before the August 2015 degree date. The concurrent Private Equity Research Consortium research fellowship (from May 2015) is an affiliation, not an employer.",
+      "phdYearVerified": 2015,
+      "phdInstitutionVerified": "University of North Carolina at Chapel Hill",
+      "reason": "Dated CV linked as 'Download CV' from the Tulane profile. The only pre-PhD work mentioned is six years of investment banking and portfolio management before graduate study. The Tulane assistant professorship starting July 2015 falls in the final month before the August 2015 conferral and is the first post-PhD job. The person is in Finance, which may be out of scope for an operations dataset.",
+      "sources": [
+        {
+          "url": "https://tulane.box.com/s/u77yr0wqhqm093kng7rnvehlxm653duw",
+          "title": "Oleg R. Gredil CV (Tulane Box shared file, downloaded with curl through Box's public shared-file download link)",
+          "notes": "Employment and Education sections read: Tulane Assistant Professor of Finance July 2015 - June 2022; PhD UNC August 2015; MBA UNC May 2010."
+        },
+        {
+          "url": "https://freeman.tulane.edu/faculty-research/finance/oleg-gredil",
+          "title": "Tulane Freeman School - Oleg Gredil",
+          "notes": "PhD and MBA from UNC Chapel Hill without years; six years in investment banking and portfolio management before graduate study; links the CV."
+        }
+      ],
       "source": "faculty-page"
     },
     {
       "facultyId": "roster:tulane-university:osman-kazan",
       "name": "Osman Kazan",
-      "status": "pending",
-      "checkedAt": null,
-      "sources": [],
-      "reason": "Individual first-placement research is pending.",
+      "status": "unresolved",
+      "checkedAt": "2026-10-17",
+      "reason": "The Tulane profile lists a UT Dallas PhD without a year and says he worked as a senior management consultant for Sabre, Electronic Data Systems and Hewlett-Packard, without dates or order relative to the doctorate, so the first post-PhD job (consulting or the Tulane professorship of practice) cannot be determined. A June 2019 Freeman News research note calls him professor of practice and associate director of the Master of Business Analytics program but gives no start date or prior chronology. No CV was found; the Mathematics Genealogy Project has no record; the two ORCID records under the name have no employment or education entries; the UT Dallas repository API now returns the library's Primo discovery page instead of DSpace records. Needs a dated CV, LinkedIn-equivalent chronology or the UT Dallas dissertation date.",
+      "sources": [
+        {
+          "url": "https://freeman.tulane.edu/faculty-research/management-science/osman-kazan",
+          "title": "Tulane Freeman School - Osman Kazan, Professor of Practice",
+          "notes": "Education: University of Texas at Dallas Ph.D.; SUNY Buffalo M.S.; Middle East Technical University B.A. (no years). Senior management consultant for Sabre, EDS and Hewlett-Packard (no dates)."
+        },
+        {
+          "url": "https://freemannews.tulane.edu/2019/06/18/research-notes-osman-kazan",
+          "title": "Freeman News - Research notes: Osman Kazan (18 June 2019)",
+          "notes": "Professor of practice in management science and associate director of the Master of Business Analytics program; no PhD year, join date or prior jobs."
+        },
+        {
+          "url": "https://www.mathgenealogy.org/query-prep.php",
+          "title": "Mathematics Genealogy Project search for Osman Kazan",
+          "notes": "No record found."
+        },
+        {
+          "url": "https://orcid.org/0000-0001-7804-8168",
+          "title": "ORCID records 0000-0001-7804-8168 and 0009-0002-8104-586X (Osman Kazan), read through the public API",
+          "notes": "No employment or education entries in either record; identity not established."
+        }
+      ],
       "source": "faculty-page"
     },
     {
@@ -54536,10 +54755,35 @@
     {
       "facultyId": "roster:tulane-university:saeede-eftekhari",
       "name": "Saeede Eftekhari",
-      "status": "pending",
-      "checkedAt": null,
-      "sources": [],
-      "reason": "Individual first-placement research is pending.",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "employer": "Tulane University (A. B. Freeman School of Business)",
+      "position": "Assistant Professor of Management Science (Information Systems)",
+      "placementYear": 2019,
+      "category": "tenure-track",
+      "evidenceUrl": "https://saeede-eftekhari.github.io/",
+      "evidenceNote": "Her personal site lists the PhD in Management Science and Systems from SUNY Buffalo and states that she joined Tulane University as an Assistant Professor in 2019, with no other employment listed. The UB School of Management MSS PhD alumni table gives Tulane University, Louisiana as her initial appointment, and the Tulane profile also says she joined Tulane in 2019. Integrator: the evidence writes the doctorate-awarding institution as 'State University of New York at Buffalo', the same university as the record's 'University at Buffalo, The State University of New York', so it is stored under the record's name.",
+      "phdYearVerified": null,
+      "phdInstitutionVerified": "University at Buffalo, The State University of New York",
+      "reason": "Her own site's dated statement plus the UB official initial-appointment list establish Tulane (Assistant Professor from 2019) as the first post-PhD job, with no intervening postdoc listed. The PhD conferral year is not stated in any opened source (the UB alumni table has no years), so phdYearVerified is left null. UB School of Management pages answered plain curl with HTTP 403 and were read with the fetch tool. The ORCID record 0000-0001-9818-612X has no entries.",
+      "sources": [
+        {
+          "url": "https://saeede-eftekhari.github.io/",
+          "title": "Saeede Eftekhari - personal website",
+          "notes": "Education: Ph.D. Management Science and Systems, SUNY Buffalo; M.S. and B.S. Industrial Engineering, Isfahan University of Technology (no years). Joined Tulane University as an Assistant Professor in 2019."
+        },
+        {
+          "url": "https://management.buffalo.edu/degree-programs/phd-in-management/program/science-systems/alumni.html",
+          "title": "University at Buffalo School of Management - MSS PhD Alumni",
+          "notes": "Two-column table (Name, Initial Appointment): Eftekhari, Saeede - Tulane University, Louisiana. No graduation years."
+        },
+        {
+          "url": "https://freeman.tulane.edu/faculty-research/management-science/saeede-eftekhari",
+          "title": "Tulane Freeman School - Saeede Eftekhari, Assistant Professor",
+          "notes": "PhD Management Science and Systems, SUNY Buffalo (no year); joined Tulane University in 2019."
+        }
+      ],
+      "phdInstitutionVerifiedAsWritten": "State University of New York at Buffalo",
       "source": "faculty-page"
     },
     {
@@ -54594,28 +54838,78 @@
     {
       "facultyId": "roster:university-of-california-berkeley:sara-l-beckman",
       "name": "Sara L. Beckman",
-      "status": "pending",
-      "checkedAt": null,
-      "sources": [],
-      "reason": "Individual first-placement research is pending.",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "employer": "University of California, Berkeley (Haas School of Business)",
+      "position": "Assistant Professor, Management Science",
+      "placementYear": 1988,
+      "category": "tenure-track",
+      "evidenceUrl": "https://docs.google.com/document/d/1PfnDtYfut13j1R2WI-U6dINvJNE5JJhhuqXe_ehQdbo/edit?tab=t.0",
+      "evidenceNote": "CV gives the Stanford IEEM PhD as December 1986. Hewlett-Packard employment began June 1985 (Strategic Planner), well before the degree, and continued through internal moves (Program Manager, Corporate Manufacturing, Feb 1986 - Feb 1989; Manager, Surface Mount Technology Program, Feb 1989 - Nov 1989; Director, Product Generation Change Management Team, Nov 1989 - Nov 1991). The first new employer after the degree is Haas, where she was Assistant Professor, Management Science, July 1988 - July 1994 (Haas from September 1988).",
+      "phdYearVerified": 1986,
+      "phdInstitutionVerified": "Stanford University",
+      "reason": "Under the overlap rules, the HP role that began 18 months before the December 1986 degree and continued, with internal promotions, is not the first post-PhD job; the first new job is the Haas assistant professorship from July 1988. Earlier Booz Allen and self-employed consulting work (1980-1985) also predates the degree. The HP work continued alongside the Haas post until November 1991; this overlap is recorded here.",
+      "sources": [
+        {
+          "url": "https://docs.google.com/document/d/1PfnDtYfut13j1R2WI-U6dINvJNE5JJhhuqXe_ehQdbo/edit?tab=t.0",
+          "title": "Sara L. Beckman CV (Google Doc linked from the Haas profile; read through the document's public plain-text export)",
+          "notes": "Education, Research and Teaching, and Professional Experience sections read: PhD December 1986; Haas Assistant Professor July 1988 - July 1994; HP roles June 1985 - January 1993; Booz Allen August 1980 - December 1983."
+        },
+        {
+          "url": "https://haas.berkeley.edu/faculty/beckman-sara/",
+          "title": "Berkeley Haas - Sara Beckman",
+          "notes": "PhD Stanford IEEM without year; 'At Haas since 1988'; undated list of prior positions including HP and Booz Allen; links the CV."
+        }
+      ],
       "source": "faculty-page"
     },
     {
       "facultyId": "roster:university-of-california-berkeley:terrence-hendershott",
       "name": "Terrence Hendershott",
-      "status": "pending",
-      "checkedAt": null,
-      "sources": [],
-      "reason": "Individual first-placement research is pending.",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "employer": "University of Rochester (Simon School of Business Administration)",
+      "position": "Assistant Professor (Xerox Assistant Professor)",
+      "placementYear": 1999,
+      "category": "tenure-track",
+      "evidenceUrl": "https://faculty.haas.berkeley.edu/hender/cv.pdf",
+      "evidenceNote": "CV (August 2026) gives the Stanford GSB PhD in Operations, Information and Technology as 1999 and lists Xerox Assistant Professor, University of Rochester (1999-2001). The Haas profile gives assistant professor at the Simon School 1999-2001 and Haas from 2001; no position is listed between the degree and Rochester. Verifier: phdInstitutionVerified changed from 'Stanford University' to the record's name 'Graduate School of Business, Stanford University', which is also how the CV and the Haas profile write the awarding school, so no resolution is needed. Integrator: the evidence writes the doctorate-awarding institution as 'Graduate School of Business, Stanford University', the same university as the record's 'Stanford University', so it is stored under the record's name.",
+      "phdYearVerified": 1999,
+      "phdInstitutionVerified": "Stanford University",
+      "reason": "The CV and the Haas profile date the Rochester assistant professorship from 1999, the PhD year, with Haas following in 2001. The CV has no separate employment section; the Rochester post appears in its honors/positions list and in the profile's dated history.",
+      "sources": [
+        {
+          "url": "https://faculty.haas.berkeley.edu/hender/cv.pdf",
+          "title": "Terrence Hendershott CV (August 2026)",
+          "notes": "Education: PhD Stanford GSB 1999, BS Miami University 1989. Lists Xerox Assistant Professor, University of Rochester (1999-2001), and later visiting roles (NYSE 2005-2006, etc.)."
+        },
+        {
+          "url": "https://haas.berkeley.edu/faculty/hendershott-terrence/",
+          "title": "Berkeley Haas - Terrence Hendershott",
+          "notes": "Dated history: Simon School assistant professor 1999-2001; at Haas since 2001."
+        }
+      ],
+      "phdInstitutionVerifiedAsWritten": "Graduate School of Business, Stanford University",
       "source": "faculty-page"
     },
     {
       "facultyId": "roster:university-of-california-berkeley:thomas-y-lee",
       "name": "Thomas Y. Lee",
-      "status": "pending",
-      "checkedAt": null,
-      "sources": [],
-      "reason": "Individual first-placement research is pending.",
+      "status": "unresolved",
+      "checkedAt": "2026-10-17",
+      "reason": "The MIT DSpace thesis record dates the Engineering Systems Division (Technology, Management, and Policy) PhD to 2002. The Haas profile's dated history shows Lecturer, Boston University School of Management, 2000, and Lecturer, Operations and Information Management, Wharton, 2000-2002, both before the degree, then Assistant Professor at Wharton 2002-2009. The Wharton lectureship began about two years before the degree and continued as an assistant professorship at the same employer, an internal promotion that is not a first new post-PhD job under the project's rules. The next new employer is Berkeley Haas (Visiting Researcher from 2009, Associate Adjunct Professor from 2010), seven years later. Employer at completion: Wharton School, University of Pennsylvania (Assistant Professor from 2002). Left unresolved for the integrator; no CV with months was found on the profile (only a LinkedIn link).",
+      "sources": [
+        {
+          "url": "https://haas.berkeley.edu/faculty/lee-thomas/",
+          "title": "Berkeley Haas - Thomas Y. Lee",
+          "notes": "Dated history: BU Lecturer 2000; Wharton Lecturer 2000-2002, Assistant Professor 2002-2009, Adjunct Professor 2009-2010; Haas Visiting Researcher 2009-, Associate Adjunct Professor 2010-."
+        },
+        {
+          "url": "http://hdl.handle.net/1721.1/29251",
+          "title": "MIT DSpace - Attribution principles for data integration: technology and policy perspectives (Lee, Thomas Y. (Thomas Yupoo)), read through the DSpace search API",
+          "notes": "Thesis (Ph.D.), MIT Engineering Systems Division, Technology, Management, and Policy Program, 2002; advisor Stuart E. Madnick."
+        }
+      ],
       "source": "faculty-page"
     },
     {
@@ -54708,46 +55002,146 @@
     {
       "facultyId": "roster:university-of-california-irvine:kenneth-ethan-murphy",
       "name": "Kenneth Ethan Murphy",
-      "status": "pending",
-      "checkedAt": null,
-      "sources": [],
-      "reason": "Individual first-placement research is pending.",
+      "status": "unresolved",
+      "checkedAt": "2026-10-17",
+      "reason": "The UCI ScholarConnect profile dates his Carnegie Mellon PhD in Industrial Administration (Operations Research) to 1996, and the Mathematics Genealogy Project record agrees (CMU 1996, Scheduling Mail Sorting Machines, advisor Michael Trick). His first post-PhD employer is not documented: the Merage profile says only that his career spans 25 years and four universities and that he was associate provost and assistant dean at his former institution; ScholarConnect lists Chapman University posts (Associate Provost for Academic Administration, 3 years; Assistant Dean for Undergraduate Programs, 4 years) without start or end years, and his ORCID shows only UCI Assistant Professor of Teaching from 2019-07. No CV was found, and the Chapman faculty page now redirects to page-not-found (Wayback Machine unreachable from this session). Needs a dated CV or an employer record for 1996-1997.",
+      "sources": [
+        {
+          "url": "https://merage.uci.edu/research-faculty/faculty-directory/kenneth-murphy.html",
+          "title": "UCI Merage - Kenneth Ethan Murphy, Assistant Professor of Teaching (read by plain curl after WebFetch returned HTTP 503)",
+          "notes": "PhD Operations Research, Carnegie Mellon; MS Statistics, Oregon State; BA Mathematics, Reed. Experience spans 25 years and four universities; former associate provost and assistant dean at his former institution. No dates."
+        },
+        {
+          "url": "https://scholarconnect.uci.edu/murphyke",
+          "title": "UCI ScholarConnect - Kenneth E. Murphy",
+          "notes": "Ph.D. Industrial Administration (Operations Research), CMU, 1996; M.S. OR CMU 1990; M.S. Statistics Oregon State 1988; B.A. Reed 1983. Chapman University Associate Provost (3 years) and business-school Assistant Dean (4 years), undated; Director of Data and Systems 2019-2023."
+        },
+        {
+          "url": "https://www.mathgenealogy.org/id.php?id=154487",
+          "title": "Mathematics Genealogy Project - Kenneth Murphy",
+          "notes": "Ph.D. Carnegie Mellon University 1996; dissertation Scheduling Mail Sorting Machines; advisor Michael Alan Trick."
+        },
+        {
+          "url": "https://orcid.org/0009-0000-8062-6545",
+          "title": "ORCID record 0009-0000-8062-6545 (Kenneth Murphy), read through the public API",
+          "notes": "Employment: University of California, Irvine, Merage School of Business, Assistant Professor of Teaching, 2019-07 to present. No earlier entries."
+        },
+        {
+          "url": "https://www.chapman.edu/our-faculty/kenneth-murphy",
+          "title": "Chapman University faculty page (attempted)",
+          "notes": "Redirected to Chapman's page-not-found page."
+        }
+      ],
       "source": "faculty-page"
     },
     {
       "facultyId": "roster:university-of-california-irvine:rick-so",
       "name": "Rick So",
-      "status": "pending",
-      "checkedAt": null,
-      "sources": [],
-      "reason": "Individual first-placement research is pending.",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "employer": "AT&T Bell Laboratories (Princeton, New Jersey)",
+      "position": "Member of Technical Staff",
+      "placementYear": 1985,
+      "category": "industry",
+      "evidenceUrl": "https://merage.uci.edu/_files/documents/faculty-profiles/So-CV.pdf",
+      "evidenceNote": "CV gives the Stanford Operations Research PhD as 1985 and lists Member of Technical Staff, AT&T Bell Laboratories, Princeton, 1985-89, before Assistant Professor, UC Irvine Graduate School of Management, 1989-92. The Merage profile says he worked at AT&T Bell Laboratories for almost five years before joining UCI in 1989.",
+      "phdYearVerified": 1985,
+      "phdInstitutionVerified": "Stanford University",
+      "reason": "Dated CV linked from the Merage profile shows Bell Labs from 1985, the PhD year, as the first post-PhD job; the UCI faculty post followed in 1989. The Merage profile was read with curl because the fetch tool returned HTTP 503.",
+      "sources": [
+        {
+          "url": "https://merage.uci.edu/_files/documents/faculty-profiles/So-CV.pdf",
+          "title": "Curriculum Vitae - Rick K. C. So",
+          "notes": "Professional Experience and Education sections read: PhD Stanford OR 1985; AT&T Bell Labs MTS 1985-89; UCI Assistant Professor 1989-92, Associate 1992-98, Professor 1998-2020; HK PolyU 1996-98."
+        },
+        {
+          "url": "https://merage.uci.edu/research-faculty/faculty-directory/Rick-So.html",
+          "title": "UCI Merage - Rick So (read with curl; fetch tool returned HTTP 503)",
+          "notes": "Bio: almost five years at AT&T Bell Laboratories before joining UCI in 1989; PhD and MS in OR from Stanford."
+        }
+      ],
       "source": "faculty-page"
     },
     {
       "facultyId": "roster:university-of-california-irvine:robin-keller",
       "name": "Robin Keller",
-      "status": "pending",
-      "checkedAt": null,
-      "sources": [],
-      "reason": "Individual first-placement research is pending.",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "employer": "University of California, Irvine (Graduate School of Management)",
+      "position": "Assistant Professor",
+      "placementYear": 1982,
+      "category": "tenure-track",
+      "evidenceUrl": "https://faculty.sites.uci.edu/lrkeller/files/2025/03/L-Robin-Keller-Vita-UC-Irvine-3-20-2025-since-2016-in-red.pdf",
+      "evidenceNote": "Vita (March 2025) gives the Ph.D., UCLA Anderson Graduate School of Management, September 1982 (management science, decision analysis), and lists Assistant Professor at UC Irvine 1982-89, Associate Professor 1989-2001, Full Professor from 2001. Later concurrent roles (Duke visiting spring 1987, NSF program director 1989-1991) follow the UCI start. The start month of the 1982 appointment is not given.",
+      "phdYearVerified": 1982,
+      "phdInstitutionVerified": "University of California, Los Angeles",
+      "reason": "Dated vita linked from her CV page (linked from the Merage profile) shows the UCI assistant professorship from 1982, the year of the September 1982 PhD; no earlier post-PhD job is listed. The Merage profile was read with curl because the fetch tool returned HTTP 503.",
+      "sources": [
+        {
+          "url": "https://faculty.sites.uci.edu/lrkeller/files/2025/03/L-Robin-Keller-Vita-UC-Irvine-3-20-2025-since-2016-in-red.pdf",
+          "title": "L. Robin Keller Vita, UC Irvine (3-20-2025)",
+          "notes": "Education and Professional History sections, plus Sabbatical, Courtesy, Visiting and Other Appointments, read."
+        },
+        {
+          "url": "https://faculty.sites.uci.edu/lrkeller/bio/curriculum-vitae/",
+          "title": "Curriculum Vitae - L. Robin Keller (personal site)",
+          "notes": "Links the March 2025 vita PDF and Word versions."
+        },
+        {
+          "url": "https://merage.uci.edu/research-faculty/faculty-directory/Robin-Keller.html",
+          "title": "UCI Merage - Robin Keller (read with curl; fetch tool returned HTTP 503)",
+          "notes": "PhD, MBA and BA from UCLA without years; links CV page."
+        }
+      ],
       "source": "faculty-page"
     },
     {
       "facultyId": "roster:university-of-california-irvine:soheila-jorjani-sadri",
       "name": "Soheila Jorjani Sadri",
-      "status": "pending",
-      "checkedAt": null,
-      "sources": [],
-      "reason": "Individual first-placement research is pending.",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "employer": "University of Massachusetts Boston (College of Business, Management Science Department)",
+      "position": "Assistant Professor",
+      "placementYear": 1988,
+      "category": "tenure-track",
+      "evidenceUrl": "https://merage.uci.edu/_files/documents/faculty-profiles/Jorjani-Soheila-CV.pdf",
+      "evidenceNote": "CV (under the name Soheila Jorjani) gives Ph.D. Operations Research, UC Irvine Graduate School of Management, August 1988, and lists Assistant Professor, University of Massachusetts, College of Business, Management Science Department, Boston, starting September 1988 (end date printed as 'Aug. 1988', evidently a typo), followed by Visiting Professor, Cal State Fullerton, Sept. 1989 - Jan. 1992, and CSU San Marcos from January 1992. The Merage profile says that upon receiving her PhD she accepted an assistant professorship at UMass Boston until 1989. Verifier: the CV writes the awarding institution as 'University of California, Irvine', the same university as the record's 'UC Irvine', so phdInstitutionVerified is stored under the record's name with the written form kept in phdInstitutionVerifiedAsWritten. Integrator: the evidence writes the doctorate-awarding institution as 'UC Irvine', the same university as the record's 'University of California, Irvine', so it is stored under the record's name.",
+      "phdYearVerified": 1988,
+      "phdInstitutionVerified": "University of California, Irvine",
+      "reason": "Dated CV linked from the Merage profile and the profile's own narrative both make the UMass Boston assistant professorship, from September 1988, the first post-PhD job. The CV's UMass end date is internally inconsistent (printed Aug. 1988; the profile says until 1989); only the start is relied on. The Merage profile was read with curl because the fetch tool returned HTTP 503.",
+      "sources": [
+        {
+          "url": "https://merage.uci.edu/_files/documents/faculty-profiles/Jorjani-Soheila-CV.pdf",
+          "title": "Soheila Jorjani CV (CSU San Marcos address)",
+          "notes": "Education and Academic Employment Experience sections read."
+        },
+        {
+          "url": "https://merage.uci.edu/research-faculty/faculty-directory/Soheila-Jorjani-Sadri.html",
+          "title": "UCI Merage - Soheila Jorjani Sadri (read with curl; fetch tool returned HTTP 503)",
+          "notes": "PhD in OR from UC Irvine; 'Upon receiving her PhD' accepted UMass Boston assistant professorship until 1989; lecturer at UCI since August 1989; links CV."
+        }
+      ],
+      "phdInstitutionVerifiedAsWritten": "UC Irvine",
       "source": "faculty-page"
     },
     {
       "facultyId": "roster:university-of-california-irvine:thomas-eppel",
       "name": "Thomas Eppel",
-      "status": "pending",
-      "checkedAt": null,
-      "sources": [],
-      "reason": "Individual first-placement research is pending.",
+      "status": "unresolved",
+      "checkedAt": "2026-10-17",
+      "reason": "The CV (revised July 2017) gives the Ph.D. in Mathematical Psychology, University of Southern California, 1990, and lists Visiting Instructor, Krannert School of Management, Purdue University, 1989-1990, then Assistant Professor of Management, Krannert, 1990-1995, then Vice President, Decision Insights, Inc., 1996-1999 (with a 1998 Pepperdine adjunct post). The Purdue appointment began in 1989, before the 1990 degree (months not given), and continued as an assistant professorship at the same school, which the project's rules treat as an internal move rather than a first new post-PhD job; the CV biosketch nevertheless says he joined the Krannert faculty after receiving the PhD. Employer at completion: Purdue University (Krannert). The next new employer, Decision Insights (1996), is six years later and is not recorded as the first job. Needs an integrator decision, or the conferral and appointment months.",
+      "sources": [
+        {
+          "url": "https://merage.uci.edu/_files/documents/faculty-profiles/Eppel-Thomas-CV.pdf",
+          "title": "Curriculum Vitae - Thomas G. Eppel (revised July 2017)",
+          "notes": "Education (PhD USC 1990) and Professional Experience (Purdue Visiting Instructor 1989-1990, Assistant Professor 1990-1995; Decision Insights VP 1996-1999; USC research assistant 1984-1989) read."
+        },
+        {
+          "url": "https://merage.uci.edu/research-faculty/faculty-directory/Thomas-Eppel.html",
+          "title": "UCI Merage - Thomas Eppel (read with curl; fetch tool returned HTTP 503)",
+          "notes": "PhD in Mathematical Psychology from USC; after the PhD joined Krannert at Purdue; Decision Insights from 1996; UCI from January 2000."
+        }
+      ],
       "source": "faculty-page"
     },
     {
@@ -54815,19 +55209,68 @@
     {
       "facultyId": "roster:university-of-california-los-angeles-ucla:gareth-james",
       "name": "Gareth James",
-      "status": "pending",
-      "checkedAt": null,
-      "sources": [],
-      "reason": "Individual first-placement research is pending.",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "employer": "University of Southern California (Marshall School of Business)",
+      "position": "Assistant Professor of Information and Operations Management",
+      "placementYear": 1998,
+      "category": "tenure-track",
+      "evidenceUrl": "https://www.anderson.ucla.edu/sites/default/files/2026-06/James_CV.pdf",
+      "evidenceNote": "CV gives Ph.D., Statistics, Stanford University, June 1998 (advisor Trevor Hastie), and an employment history of Stanford teaching and research assistant 1994-1998, then Assistant Professor of Information and Operations Management, USC Marshall, 1998-2005, with later promotions at USC and the Emory deanship from July 2022.",
+      "phdYearVerified": 1998,
+      "phdInstitutionVerified": "Stanford University",
+      "reason": "Dated CV linked from the UCLA Anderson profile shows the USC Marshall assistant professorship starting in 1998, the year of the June 1998 PhD, with no intervening position.",
+      "sources": [
+        {
+          "url": "https://www.anderson.ucla.edu/sites/default/files/2026-06/James_CV.pdf",
+          "title": "Gareth M. James CV",
+          "notes": "Education and Employment History sections read."
+        },
+        {
+          "url": "https://www.anderson.ucla.edu/faculty-and-research/decisions-operations-and-technology-management/faculty/james",
+          "title": "UCLA Anderson - Gareth James",
+          "notes": "Dean from July 1, 2026; previously Emory Goizueta dean and more than two decades at USC Marshall; links the CV."
+        }
+      ],
       "source": "faculty-page"
     },
     {
       "facultyId": "roster:university-of-california-los-angeles-ucla:harriet-jeon",
       "name": "Harriet Jeon",
-      "status": "pending",
-      "checkedAt": null,
-      "sources": [],
-      "reason": "Individual first-placement research is pending.",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "employer": "University of Pennsylvania (Leonard Davis Institute of Health Economics)",
+      "position": "Postdoctoral Researcher",
+      "placementYear": 2025,
+      "category": "postdoc",
+      "evidenceUrl": "https://harrietjeon.github.io/cv/cv.pdf",
+      "evidenceNote": "CV (revised August 24, 2026) lists academic positions as Postdoctoral Researcher, Leonard Davis Institute, University of Pennsylvania, 2025-2026, then Assistant Professor of Decisions, Operations and Technology Management, UCLA Anderson, 2026-. Education: Ph.D., Managerial Science and Applied Economics, The Wharton School (no year). Her personal site says she was previously a postdoctoral researcher at LDI. Verifier: the Penn ScholarlyCommons dissertation record (Jeon, Harriet; PhD; advisor Hummy Song, a coauthor on her CV's lead paper; issued 2025) dates the degree to 2025, so phdYearVerified was added as 2025; phdInstitutionVerified was changed to the record's name 'The Wharton School, University of Pennsylvania', which is how the CV writes it. Integrator: the evidence writes the doctorate-awarding institution as 'The Wharton School, University of Pennsylvania', the same university as the record's 'University of Pennsylvania', so it is stored under the record's name.",
+      "phdYearVerified": 2025,
+      "phdInstitutionVerified": "University of Pennsylvania",
+      "reason": "Dated CV linked from the UCLA Anderson profile shows the Penn LDI postdoc (2025-2026) before the UCLA assistant professorship that began in 2026. The CV gives no PhD year; the Penn ScholarlyCommons dissertation record opened by the verifier dates the doctorate to 2025, the year the postdoc began, which is consistent with the postdoctoral title.",
+      "sources": [
+        {
+          "url": "https://harrietjeon.github.io/cv/cv.pdf",
+          "title": "H. Harriet Jeon CV (revised August 24, 2026)",
+          "notes": "Academic Positions and Education sections read; no PhD year given."
+        },
+        {
+          "url": "https://www.anderson.ucla.edu/faculty-research/decisions-operations-and-technology-management/jeon",
+          "title": "UCLA Anderson - Harriet Jeon",
+          "notes": "Joined UCLA Anderson in 2026 as assistant professor; links the CV."
+        },
+        {
+          "url": "https://www.harrietjeon.com/",
+          "title": "Harriet Jeon personal website",
+          "notes": "PhD and BS from Wharton; previously postdoctoral researcher at the Leonard Davis Institute; no dates."
+        },
+        {
+          "url": "https://repository.upenn.edu/entities/publication/38a20a32-62f9-4a21-966c-e4c59049aca7",
+          "title": "Penn ScholarlyCommons - Advancing Health Care Operations: Leveraging Technology and Operational Design (Jeon, Harriet), read through the DSpace REST API",
+          "notes": "Dissertation/Thesis, Doctor of Philosophy (PhD); advisor Hummy Song; dc.date.issued 2025; subjects Empirical Operations Management, Healthcare Operations Management."
+        }
+      ],
+      "phdInstitutionVerifiedAsWritten": "The Wharton School, University of Pennsylvania",
       "source": "faculty-page"
     },
     {
@@ -55079,46 +55522,137 @@
     {
       "facultyId": "roster:university-of-connecticut:craig-calvert",
       "name": "Craig Calvert",
-      "status": "pending",
-      "checkedAt": null,
-      "sources": [],
-      "reason": "Individual first-placement research is pending.",
+      "status": "unresolved",
+      "checkedAt": "2026-10-17",
+      "reason": "The CV (September 2026) and ORCID record list Graduate Assistant, University of Connecticut, 2000-2007; Inorganic Product Specialist/Product Manager, Milestone Inc., 2007-2008; Senior Scientist and Business Development Assistant, Fuss & O'Neill EnviroScience, 2008-2012; then NERAC, Electric Boat and UConn roles. Neither gives the PhD year. The ProQuest record of his UConn dissertation (Design, synthesis, and characterization of materials for controlled line deposition, environmental remediation, and doping of porous manganese oxide material) is dated 2008. The Milestone job (2007-2008) therefore began before the 2008-dated dissertation, and the within-year order of the 2008 degree and the 2008 Fuss & O'Neill start is unknown, so the first post-PhD job cannot be fixed between Milestone Inc. (if the dissertation was finished when he started there) and Fuss & O'Neill. The degree is in inorganic materials chemistry.",
+      "sources": [
+        {
+          "url": "https://www.business.uconn.edu/wp-content/uploads/sites/969/2026/08/Calvert-C-CV-Sept-2026.pdf",
+          "title": "Craig A. Calvert CV (September 2026; linked from the UConn profile on the www-business.media.uconn.edu host, read from the same path on www.business.uconn.edu because the media host failed TLS through the proxy and returned HTTP 503 to the fetch tool)",
+          "notes": "Professional Experience section read: years only, no PhD year."
+        },
+        {
+          "url": "https://orcid.org/0000-0001-9271-1667",
+          "title": "ORCID record 0000-0001-9271-1667 (Craig Calvert), read through the public API",
+          "notes": "Education: UConn Chemistry PhD (no date); employments match the CV (Milestone 2007-2008, Fuss and O'Neill 2008-2012, etc.)."
+        },
+        {
+          "url": "https://www.proquest.com/docview/304629881",
+          "title": "ProQuest Dissertations & Theses - Calvert, Craig A., University of Connecticut, 2008 (publication no. 3340456)",
+          "notes": "Record page states the title, UConn and 2008; degree month not shown."
+        },
+        {
+          "url": "https://www.business.uconn.edu/person/craig-calvert/",
+          "title": "UConn School of Business - Craig Calvert",
+          "notes": "PhD in Inorganic Materials Chemistry, UConn, no year; links CV."
+        }
+      ],
       "source": "faculty-page"
     },
     {
       "facultyId": "roster:university-of-connecticut:david-wanik",
       "name": "David Wanik",
-      "status": "pending",
-      "checkedAt": null,
-      "sources": [],
-      "reason": "Individual first-placement research is pending.",
+      "status": "unresolved",
+      "checkedAt": "2026-10-17",
+      "reason": "The March 2026 CV linked from the UConn profile dates the UConn Environmental Engineering PhD to August 2015 and gives a single entry, University of Connecticut, Department of Civil & Environmental Engineering, August 2011 - October 2017, 'Assistant Research Professor, Center Manager' (co-leading storm outage modeling research, teaching a graduate predictive analytics class and concurrently managing the Eversource Energy Center), followed by Hartford Steam Boiler/Munich Re, Senior Modeler, November 2017 - August 2019, and UConn OPIM from 2019. The 2011 start coincides with the end of his BS (August 2011) and the start of his graduate study, so the entry spans his MS and PhD research years; an assistant research professorship is a post-doctoral rank, and the CV does not say when that title or the center-manager role began. A new UConn research-faculty appointment around the August 2015 degree is therefore likely but undated, and the evidence does not establish that the November 2017 Hartford Steam Boiler post was the first post-PhD job. A dated appointment record for the UConn assistant research professorship is needed. Verifier: first-job order not established (an undated post-PhD UConn research professorship probably precedes the HSB job).",
+      "sources": [
+        {
+          "url": "https://www.business.uconn.edu/wp-content/uploads/sites/969/2019/08/CV_Dave_Wanik_March_2026_CV.pdf",
+          "title": "David W. Wanik CV (March 2026; linked from the UConn profile on the www-business.media.uconn.edu host, read from the same path on www.business.uconn.edu because the media host failed TLS through the proxy and returned HTTP 503 to the fetch tool)",
+          "notes": "Education and Work Experience sections read."
+        },
+        {
+          "url": "https://www.business.uconn.edu/person/david-wanik/",
+          "title": "UConn School of Business - David Wanik",
+          "notes": "PhD, MS and BS from UConn without years; former inaugural Eversource Energy Center manager; links CV."
+        }
+      ],
       "source": "faculty-page"
     },
     {
       "facultyId": "roster:university-of-connecticut:jaeung-sim",
       "name": "Jaeung Sim",
-      "status": "pending",
-      "checkedAt": null,
-      "sources": [],
-      "reason": "Individual first-placement research is pending.",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "employer": "University of Connecticut (School of Business)",
+      "position": "Assistant Professor of Operations and Information Management",
+      "placementYear": 2022,
+      "category": "tenure-track",
+      "evidenceUrl": "https://www.business.uconn.edu/wp-content/uploads/sites/969/2022/08/CV_Jaeung_Sim_Oct05_2026.pdf",
+      "evidenceNote": "CV (October 5, 2026) gives the PhD in Management Engineering, KAIST College of Business, 02/2016 - 08/2022, and the only academic position as Assistant Professor of Operations and Information Management, UConn, 08/2022 - present. Military service 2011-2013 predates the PhD.",
+      "phdYearVerified": 2022,
+      "phdInstitutionVerified": "KAIST",
+      "reason": "Dated CV linked from the UConn profile shows the UConn assistant professorship beginning in August 2022, the month the KAIST PhD ended; no postdoc, visiting or industry role is listed.",
+      "sources": [
+        {
+          "url": "https://www.business.uconn.edu/wp-content/uploads/sites/969/2022/08/CV_Jaeung_Sim_Oct05_2026.pdf",
+          "title": "CV - Jaeung (Jay) Sim (October 5, 2026; linked from the UConn profile on the www-business.media.uconn.edu host, read from the same path on www.business.uconn.edu)",
+          "notes": "Academic Position and Education sections read; grep found no other positions."
+        },
+        {
+          "url": "https://www.business.uconn.edu/person/jaeung-sim/",
+          "title": "UConn School of Business - Jaeung Sim",
+          "notes": "PhD in Management Engineering, KAIST; Assistant Professor OPIM; links CV."
+        }
+      ],
       "source": "faculty-page"
     },
     {
       "facultyId": "roster:university-of-connecticut:jing-peng",
       "name": "Jing Peng",
-      "status": "pending",
-      "checkedAt": null,
-      "sources": [],
-      "reason": "Individual first-placement research is pending.",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "employer": "University of Connecticut (School of Business)",
+      "position": "Assistant Professor, Operations and Information Management",
+      "placementYear": 2016,
+      "category": "tenure-track",
+      "evidenceUrl": "https://www.business.uconn.edu/wp-content/uploads/sites/969/2016/08/Peng-CV-July-2025.pdf",
+      "evidenceNote": "CV (July 2025) gives Ph.D., Operations, Information and Decisions, The Wharton School, August 2016, and lists Assistant Professor, Operations and Information Management, UConn School of Business, Aug 2016 - Aug 2023, then Associate Professor with tenure from Aug 2023. No other position is listed. Verifier: phdInstitutionVerified changed from 'University of Pennsylvania (The Wharton School)' to the record's name 'The Wharton School, University of Pennsylvania', which is how the CV writes the awarding school. Integrator: the evidence writes the doctorate-awarding institution as 'The Wharton School, University of Pennsylvania', the same university as the record's 'University of Pennsylvania', so it is stored under the record's name.",
+      "phdYearVerified": 2016,
+      "phdInstitutionVerified": "University of Pennsylvania",
+      "reason": "Dated CV linked from the UConn profile shows the UConn assistant professorship beginning in August 2016, the month of the Wharton PhD.",
+      "sources": [
+        {
+          "url": "https://www.business.uconn.edu/wp-content/uploads/sites/969/2016/08/Peng-CV-July-2025.pdf",
+          "title": "Jing Peng CV (July 2025; linked from the UConn profile on the www-business.media.uconn.edu host, read from the same path on www.business.uconn.edu)",
+          "notes": "Education and Academic Positions sections read."
+        },
+        {
+          "url": "https://www.business.uconn.edu/person/jing-peng/",
+          "title": "UConn School of Business - Jing Peng",
+          "notes": "PhD Wharton without year; links CV."
+        }
+      ],
+      "phdInstitutionVerifiedAsWritten": "The Wharton School, University of Pennsylvania",
       "source": "faculty-page"
     },
     {
       "facultyId": "roster:university-of-connecticut:ramesh-shankar",
       "name": "Ramesh Shankar",
-      "status": "pending",
-      "checkedAt": null,
-      "sources": [],
-      "reason": "Individual first-placement research is pending.",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "employer": "University of Connecticut (School of Business)",
+      "position": "Assistant Professor",
+      "placementYear": 2005,
+      "category": "tenure-track",
+      "evidenceUrl": "https://www.business.uconn.edu/wp-content/uploads/sites/969/2026/08/2026_10_08_Ramesh_Shankar_Resume.pdf",
+      "evidenceNote": "CV (October 2026) gives the NYU Stern PhD in Information Economics as 2005 (dissertation 'Essays on Information Systems and Contracting') and a work history of Assistant Professor, UConn School of Business, 2005-2011, then tenured Associate Professor from 2011. No other post-PhD position is listed. Verifier: the resume writes the awarding school as 'Stern School of Business, New York University', the same university and school as the record's 'NYU Stern School of Business', so phdInstitutionVerified is stored under the record's name with the written form kept in phdInstitutionVerifiedAsWritten. Integrator: the evidence writes the doctorate-awarding institution as 'NYU Stern School of Business', the same university as the record's 'New York University', so it is stored under the record's name.",
+      "phdYearVerified": 2005,
+      "phdInstitutionVerified": "New York University",
+      "reason": "Dated CV linked from the UConn profile shows the UConn assistant professorship from 2005, the PhD year. Name variant: some papers list him as Ramesh Sankaranarayanan (as in the CV's publication list).",
+      "sources": [
+        {
+          "url": "https://www.business.uconn.edu/wp-content/uploads/sites/969/2026/08/2026_10_08_Ramesh_Shankar_Resume.pdf",
+          "title": "Ramesh Shankar resume (October 2026; linked from the UConn profile on the www-business.media.uconn.edu host, read from the same path on www.business.uconn.edu)",
+          "notes": "Work and Education sections read."
+        },
+        {
+          "url": "https://www.business.uconn.edu/person/ramesh-shankar/",
+          "title": "UConn School of Business - Ramesh Shankar",
+          "notes": "PhD NYU Stern, MBA IIM Ahmedabad, BTech IIT Madras, no years; links resume."
+        }
+      ],
+      "phdInstitutionVerifiedAsWritten": "NYU Stern School of Business",
       "source": "faculty-page"
     },
     {
@@ -55139,10 +55673,30 @@
     {
       "facultyId": "roster:university-of-connecticut:wei-chen",
       "name": "Wei Chen",
-      "status": "pending",
-      "checkedAt": null,
-      "sources": [],
-      "reason": "Individual first-placement research is pending.",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "employer": "University of Arizona (Eller College of Management)",
+      "position": "Assistant Professor, Management Information Systems",
+      "placementYear": 2015,
+      "category": "tenure-track",
+      "evidenceUrl": "https://weichen.info/CV-WeiChen.pdf",
+      "evidenceNote": "CV lists the Rady School of Management, UC San Diego, 2009-2015, 'Ph.D. Innovation, Technology and Operations, 2016', and academic appointments as Assistant Professor, Management Information Systems, Eller College, University of Arizona, 2015-2023 (tenured April 2023), then UConn from 2023. Overlap: the Arizona appointment began in 2015, when the doctoral programme ended, and the degree is dated 2016. Integrator: the evidence writes the doctorate-awarding institution as 'University of California, San Diego', the same university as the record's 'University of California San Diego', so it is stored under the record's name.",
+      "phdYearVerified": 2016,
+      "phdInstitutionVerified": "University of California San Diego",
+      "reason": "Dated CV linked from the UConn profile. The Arizona assistant professorship began in 2015, after the 2009-2015 doctoral programme, and the degree was formally dated 2016; treated as the first post-PhD job under the final-months overlap rule, with the overlap noted. No postdoc or industry role is listed.",
+      "sources": [
+        {
+          "url": "https://weichen.info/CV-WeiChen.pdf",
+          "title": "Wei Chen CV",
+          "notes": "Academic Appointment and Education sections read."
+        },
+        {
+          "url": "https://www.business.uconn.edu/person/weichen-opim/",
+          "title": "UConn School of Business - Wei Chen",
+          "notes": "PhD UC San Diego without year; links CV."
+        }
+      ],
+      "phdInstitutionVerifiedAsWritten": "University of California, San Diego",
       "source": "faculty-page"
     },
     {
@@ -55282,19 +55836,63 @@
     {
       "facultyId": "roster:university-of-illinois-at-urbana-champaign:bhaskar-ray-chaudhury",
       "name": "Bhaskar Ray Chaudhury",
-      "status": "pending",
-      "checkedAt": null,
-      "sources": [],
-      "reason": "Individual first-placement research is pending.",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "employer": "University of Illinois Urbana-Champaign (Department of Computer Science)",
+      "position": "Future Faculty Fellow",
+      "placementYear": 2021,
+      "category": "postdoc",
+      "evidenceUrl": "https://ise.illinois.edu/directory/profile/braycha",
+      "evidenceNote": "Illinois ISE profile gives the Doctor of Natural Sciences, Department of Computer Science, Saarland University / Max Planck Institute for Informatics, 2017-2021, and academic positions as Future Faculty Fellow, Department of Computer Science, UIUC, 16 August 2021 - 15 August 2023, then Assistant Professor, ISE (CS affiliate), UIUC, from 16 August 2023. Verifier: the profile-linked CV re-opened; it calls the UIUC post 'Postdoctoral Researcher (Future Faculty Fellow)' from 2021 and lists a 2017-2021 MPI researcher post that covers the doctoral years, so the first-job claim stands. The profile writes the awarding institution as 'Saarland University, Max Planck Institute for Informatics', the same institution pair as the record's 'Saarland University / Max Planck Institute for Informatics', so phdInstitutionVerified is stored under the record's name with the written form kept in phdInstitutionVerifiedAsWritten.",
+      "phdYearVerified": 2021,
+      "phdInstitutionVerified": "Saarland University / Max Planck Institute for Informatics",
+      "reason": "The profile's own dated chronology shows the UIUC CS Future Faculty Fellowship, a postdoctoral fellowship, beginning in August 2021 after the 2017-2021 doctorate, before the ISE assistant professorship in 2023. The degree is a Dr. rer. nat. in computer science.",
+      "sources": [
+        {
+          "url": "https://ise.illinois.edu/directory/profile/braycha",
+          "title": "Illinois ISE - Bhaskar Ray Chaudhury (read with curl)",
+          "notes": "Education and Academic Positions sections with day-level dates."
+        },
+        {
+          "url": "https://ws.engr.illinois.edu/directory/getfile.asp?id=2678",
+          "title": "Bhaskar Ray Chaudhury CV (linked as CV from the Illinois ISE profile)",
+          "notes": "Employment: Assistant Professor ISE/CS UIUC 2023-present; Postdoctoral Researcher (Future Faculty Fellow), UIUC CS, 2021-2023; Researcher, Algorithms and Complexity, MPI for Informatics, 2017-2021 (the doctoral years). Education: PhD (Dr. rer. nat.) Computer Science, MPI for Informatics and Saarland University, 2017-2021, supervisor Kurt Mehlhorn."
+        }
+      ],
+      "phdInstitutionVerifiedAsWritten": "Saarland University, Max Planck Institute for Informatics",
       "source": "faculty-page"
     },
     {
       "facultyId": "roster:university-of-illinois-at-urbana-champaign:carolyn-l-beck",
       "name": "Carolyn L Beck",
-      "status": "pending",
-      "checkedAt": null,
-      "sources": [],
-      "reason": "Individual first-placement research is pending.",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "employer": "Lund Institute of Technology (Department of Automatic Control), Sweden",
+      "position": "Postdoctoral Associate",
+      "placementYear": 1996,
+      "category": "postdoc",
+      "evidenceUrl": "https://ise.illinois.edu/directory/profile/beck3",
+      "evidenceNote": "Illinois ISE profile lists Postdoctoral Associate, Lund Institute of Technology, Automatic Control, 1/96 - 6/96, then Assistant Professor, University of Pittsburgh, Electrical Engineering, 9/96 - 7/99, then Illinois from 8/99; Hewlett-Packard R&D engineer 12/1985 - 9/1989 predates the doctorate. The Caltech thesis title page reads '1997, Submitted January 12, 1996', so the postdoc began right after submission. Overlap: the degree year is 1997, after both the Lund postdoc and the Pittsburgh start.",
+      "phdYearVerified": 1997,
+      "phdInstitutionVerified": "California Institute of Technology",
+      "reason": "Dated profile chronology plus the CaltechTHESIS record (Model Reduction and Minimality for Uncertain Systems, Ph.D. 1997, DOI 10.7907/MPV7-2Q79; title page says submitted January 12, 1996). An explicitly postdoctoral appointment began in January 1996 after the dissertation was submitted, and is recorded as the first post-PhD job under the overlap decision. A verifier should note that the formal degree year (1997) is more than a year after the start, longer than the usual 'final months' gap; the fallback is Assistant Professor, University of Pittsburgh, September 1996, which also precedes the 1997 degree year.",
+      "sources": [
+        {
+          "url": "https://ise.illinois.edu/directory/profile/beck3",
+          "title": "Illinois ISE - Carolyn L Beck (read with curl)",
+          "notes": "Academic Positions and Other Professional Employment sections with month/year dates; education without years."
+        },
+        {
+          "url": "https://thesis.caltech.edu/28/",
+          "title": "CaltechTHESIS - Model Reduction and Minimality for Uncertain Systems (Beck, Carolyn Louise), reached through resolver.caltech.edu/CaltechETD:etd-01042008-091550",
+          "notes": "Year 1997, Dissertation (Ph.D.), advisor John C. Doyle, Electrical Engineering. Title page of the thesis PDF (thesis.caltech.edu/28/01/Beck_cl_1997.pdf, a scanned image viewed as a picture) reads 'California Institute of Technology, Pasadena, California, 1997, Submitted January 12, 1996'."
+        },
+        {
+          "url": "https://api.datacite.org/dois/10.7907/MPV7-2Q79",
+          "title": "DataCite metadata for DOI 10.7907/MPV7-2Q79",
+          "notes": "Creator Beck, Carolyn Louise; publisher Caltech; publication year 1997."
+        }
+      ],
       "source": "faculty-page"
     },
     {
@@ -55440,10 +56038,36 @@
     {
       "facultyId": "roster:university-of-illinois-at-urbana-champaign:grani-adiwena-hanasusanto",
       "name": "Grani Adiwena Hanasusanto",
-      "status": "pending",
-      "checkedAt": null,
-      "sources": [],
-      "reason": "Individual first-placement research is pending.",
+      "status": "unresolved",
+      "checkedAt": "2026-10-17",
+      "reason": "His personal site and the February 2023 Illinois ISE welcome story say that before Illinois he was an Assistant Professor at the University of Texas at Austin and a Postdoctoral Scholar at the College of Management of Technology, EPFL, and that his PhD in Operations Research is from Imperial College London. Neither source gives dates for these posts or the PhD year; the EPFL RAO lab team page lists him as a former PhD student (2011-2015), and his site lists an Imperial College International Scholarship 2011-2015. The EPFL postdoc is probably the first post-PhD job, but its start date (and therefore the order relative to the degree) is not documented in any opened source. The ORCID record (0000-0003-4900-2958) lists only the undated UIUC employment. Search engine discovery by name was not productive.",
+      "sources": [
+        {
+          "url": "https://ise.illinois.edu/news/grani-hanasusanto",
+          "title": "Illinois ISE - Welcome Grani Hanasusanto (February 22, 2023; read with curl)",
+          "notes": "Undated prior posts: UT Austin assistant professor; EPFL postdoctoral scholar; PhD Imperial College London."
+        },
+        {
+          "url": "https://grani.hanasusanto.com/about.html",
+          "title": "Grani A. Hanasusanto - About (read with curl)",
+          "notes": "Same undated history; Imperial College International Scholarship 2011-2015; NSF CAREER 2018."
+        },
+        {
+          "url": "https://www.epfl.ch/labs/rao/team/",
+          "title": "EPFL Risk Analytics and Optimization lab - team",
+          "notes": "Lists him as a former PhD student (2011-2015); no postdoc dates."
+        },
+        {
+          "url": "https://ise.illinois.edu/directory/profile/gah",
+          "title": "Illinois ISE - Grani Adiwena Hanasusanto",
+          "notes": "No education or dated positions."
+        },
+        {
+          "url": "https://orcid.org/0000-0003-4900-2958",
+          "title": "ORCID record 0000-0003-4900-2958 (read through the public API)",
+          "notes": "Only an undated UIUC ISE employment entry."
+        }
+      ],
       "source": "faculty-page"
     },
     {
@@ -55594,10 +56218,26 @@
     {
       "facultyId": "roster:university-of-illinois-at-urbana-champaign:jugal-garg",
       "name": "Jugal Garg",
-      "status": "pending",
-      "checkedAt": null,
-      "sources": [],
-      "reason": "Individual first-placement research is pending.",
+      "status": "unresolved",
+      "checkedAt": "2026-10-17",
+      "reason": "His homepage lists a BTech and PhD in Computer Science from IIT Bombay and prior postdocs at the Algorithms and Randomness Center, Georgia Tech, and the Algorithms and Complexity group, Max-Planck-Institut für Informatik, without any dates or order; the earliest dated item is a Georgia Tech course taught in spring 2013 and the first UIUC courses in spring 2016. No CV is linked, the Illinois ISE profile gives no education or dates, and the ORCID record (0000-0001-6439-7308) has no affiliations. The PhD year and the order and dates of the two postdocs are not established, so the first post-PhD job is unresolved (one of the two postdocs).",
+      "sources": [
+        {
+          "url": "https://jugal.ise.illinois.edu/",
+          "title": "Jugal Garg homepage",
+          "notes": "Undated postdocs at Georgia Tech ARC and MPI Informatik; PhD IIT Bombay without year; course list from spring 2013 (Georgia Tech CS 8803)."
+        },
+        {
+          "url": "https://ise.illinois.edu/directory/profile/jugal",
+          "title": "Illinois ISE - Jugal Garg (read with curl)",
+          "notes": "Courses from spring 2016 at Illinois and spring 2013 at Georgia Tech; no education or position dates."
+        },
+        {
+          "url": "https://orcid.org/0000-0001-6439-7308",
+          "title": "ORCID record 0000-0001-6439-7308 (read through the public API)",
+          "notes": "No education or employment entries."
+        }
+      ],
       "source": "faculty-page"
     },
     {
@@ -55769,10 +56409,31 @@
     {
       "facultyId": "roster:university-of-illinois-at-urbana-champaign:qiong-wang",
       "name": "Qiong Wang",
-      "status": "pending",
-      "checkedAt": null,
-      "sources": [],
-      "reason": "Individual first-placement research is pending.",
+      "status": "unresolved",
+      "checkedAt": "2026-10-17",
+      "reason": "The Illinois ISE profile gives a PhD in Engineering and Public Policy from Carnegie Mellon without a year; a May 2017 Illinois ISE story says he did research at Bell Labs for over a decade before joining ISE in 2012 (ORCID shows UIUC from 2012-10). Neither source gives the PhD year or the Bell Labs start date, and nothing excludes an earlier post-PhD position, so Bell Labs cannot be confirmed as the first job. His personal website lists publications only (no CV).",
+      "sources": [
+        {
+          "url": "https://ise.illinois.edu/directory/profile/qwang04",
+          "title": "Illinois ISE - Qiong Wang (read with curl)",
+          "notes": "PhD in Engineering and Public Policy, Carnegie Mellon; no dates."
+        },
+        {
+          "url": "https://ise.illinois.edu/news/qiong-wang",
+          "title": "Illinois ISE - Qiong Wang works on problems with managerial and policy implications (May 18, 2017)",
+          "notes": "Over a decade of research at Bell Labs (Alcatel-Lucent) before joining ISE in 2012; no start year."
+        },
+        {
+          "url": "http://qwang04.web.engr.illinois.edu/",
+          "title": "Qiong Wang's Research (personal website)",
+          "notes": "Publication list only; no CV or dated positions."
+        },
+        {
+          "url": "https://orcid.org/0000-0002-8782-0460",
+          "title": "ORCID record 0000-0002-8782-0460 (read through the public API)",
+          "notes": "Employment: University of Illinois at Urbana-Champaign from 2012-10; no education entries."
+        }
+      ],
       "source": "faculty-page"
     },
     {
@@ -55920,10 +56581,21 @@
     {
       "facultyId": "roster:university-of-illinois-at-urbana-champaign:yingying-li",
       "name": "Yingying Li",
-      "status": "pending",
-      "checkedAt": null,
-      "sources": [],
-      "reason": "Individual first-placement research is pending.",
+      "status": "unresolved",
+      "checkedAt": "2026-10-17",
+      "reason": "The Illinois ISE profile gives the PhD and MS in Applied Mathematics from Harvard and the BS from USTC without years and lists only current UIUC appointments; her homepage (www.yingying.li) gives no CV, education years or earlier positions. No opened source dates the PhD or establishes whether a postdoc or other job preceded the UIUC assistant professorship. Search engine discovery by name was not productive (the search tool did not return person-specific results).",
+      "sources": [
+        {
+          "url": "https://ise.illinois.edu/directory/profile/yl101",
+          "title": "Illinois ISE - Yingying Li (read with curl)",
+          "notes": "Education and current appointments without dates."
+        },
+        {
+          "url": "https://www.yingying.li/",
+          "title": "Yingying Li homepage",
+          "notes": "Research statement and current UIUC appointments; no CV or dates."
+        }
+      ],
       "source": "faculty-page"
     },
     {
@@ -55985,10 +56657,29 @@
     {
       "facultyId": "roster:university-of-illinois-at-urbana-champaign:yunzong-xu",
       "name": "Yunzong Xu",
-      "status": "pending",
-      "checkedAt": null,
-      "sources": [],
-      "reason": "Individual first-placement research is pending.",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "employer": "Microsoft Research",
+      "position": "Postdoctoral Researcher",
+      "placementYear": 2023,
+      "category": "postdoc",
+      "evidenceUrl": "https://orcid.org/0000-0002-1682-419X",
+      "evidenceNote": "ORCID lists the MIT PhD 2018-09 to 2023-06, Postdoctoral Researcher, Microsoft Research, 2023-07 to 2024-06, and Assistant Professor, UIUC, from 2024-08. The Illinois ISE profile independently gives the PhD at MIT IDSS 2018-2023 and Postdoctoral Researcher, Microsoft Research, 2023-2024.",
+      "phdYearVerified": 2023,
+      "phdInstitutionVerified": "Massachusetts Institute of Technology",
+      "reason": "ORCID chronology carrying the MIT, Tsinghua, Microsoft Research and UIUC affiliations, corroborated by the profile, shows the Microsoft Research postdoc starting July 2023, the month after the June 2023 PhD. The employer is a company, but the post is a postdoc.",
+      "sources": [
+        {
+          "url": "https://orcid.org/0000-0002-1682-419X",
+          "title": "ORCID record 0000-0002-1682-419X (Yunzong Xu), read through the public API",
+          "notes": "Education MIT PhD 2018-09 to 2023-06, Tsinghua bachelor 2014-2018; employment Microsoft Research postdoc 2023-07 to 2024-06, UIUC assistant professor from 2024-08."
+        },
+        {
+          "url": "https://ise.illinois.edu/directory/profile/xyz",
+          "title": "Illinois ISE - Yunzong Xu (read with curl)",
+          "notes": "PhD MIT IDSS 2018-2023; Postdoctoral Researcher, Microsoft Research, 2023-2024."
+        }
+      ],
       "source": "faculty-page"
     },
     {
@@ -56488,10 +57179,16 @@
     {
       "facultyId": "roster:university-of-louisville:mahesh-gupta",
       "name": "Mahesh Gupta",
-      "status": "pending",
-      "checkedAt": null,
-      "sources": [],
-      "reason": "Individual first-placement research is pending.",
+      "status": "unresolved",
+      "checkedAt": "2026-10-17",
+      "reason": "The University of Louisville profile (read through its own data endpoint) gives an M.Com. from the University of Jammu, an M.Sc. from the University of Manitoba and a PhD from the University of Louisville, all without years, and lists only the current professorship; it contains no employment chronology or CV. The PhD year and the first post-PhD employer are not established. Note: the doctorate and current employer are the same university, so any appointment there may have begun before the degree.",
+      "sources": [
+        {
+          "url": "https://profiles.louisville.edu/api/users/mahesh.gupta",
+          "title": "University of Louisville profiles - Mahesh Gupta (data endpoint behind profiles.louisville.edu/mahesh.gupta, read with curl)",
+          "notes": "Summary and degrees without years; position: Professor, College of Business."
+        }
+      ],
       "source": "faculty-page"
     },
     {
@@ -56677,28 +57374,75 @@
     {
       "facultyId": "roster:university-of-mannheim:dr-raik-stolletz",
       "name": "Dr. Raik Stolletz",
-      "status": "pending",
-      "checkedAt": null,
-      "sources": [],
-      "reason": "Individual first-placement research is pending.",
+      "status": "unresolved",
+      "checkedAt": "2026-10-17",
+      "reason": "The Mannheim profile says he has held the Chair of Production Management since December 2010 and previously served as Associate Professor for Operations Management at the Technical University of Denmark and as Assistant Professor at Leibniz University Hannover, with a PhD from TU Clausthal; none of the earlier posts or the PhD is dated, and the wording does not establish that Hannover was his first post-PhD position (German doctorates are often followed by a research-assistant or habilitation post). ORCID (0000-0003-2725-9322) lists only Mannheim from 2010-12. No CV was found on the profile.",
+      "sources": [
+        {
+          "url": "https://www.bwl.uni-mannheim.de/stolletz/team/prof-dr-raik-stolletz/",
+          "title": "University of Mannheim - Prof. Dr. Raik Stolletz (read with curl)",
+          "notes": "Chair since December 2010; undated prior posts at DTU and Leibniz University Hannover; PhD TU Clausthal without year."
+        },
+        {
+          "url": "https://orcid.org/0000-0003-2725-9322",
+          "title": "ORCID record 0000-0003-2725-9322 (read through the public API)",
+          "notes": "Employment: University of Mannheim from 2010-12; no education entries."
+        }
+      ],
       "source": "faculty-page"
     },
     {
       "facultyId": "roster:university-of-maryland:m-gisela-bardossy",
       "name": "M. Gisela Bardossy",
-      "status": "pending",
-      "checkedAt": null,
-      "sources": [],
-      "reason": "Individual first-placement research is pending.",
+      "status": "unresolved",
+      "checkedAt": "2026-10-17",
+      "reason": "The Smith School profile says she earned a PhD in Management Science from the Smith School, University of Maryland, and joined the DOIT department in fall 2018 from the Merrick School of Business, University of Baltimore, where she taught business statistics and operations research; her personal site repeats this without dates. The PhD year, the start of the Baltimore appointment and any earlier post are not given, and no CV is linked, so the first post-PhD job cannot be established (Baltimore is a candidate only).",
+      "sources": [
+        {
+          "url": "https://www.rhsmith.umd.edu/directory/m-gisela-bardossy",
+          "title": "UMD Smith School - M. Gisela Bardossy (read with curl)",
+          "notes": "PhD Management Science, UMD Smith; joined DOIT in fall 2018 from University of Baltimore; no other dates."
+        },
+        {
+          "url": "https://sites.google.com/site/mgbardossy/home",
+          "title": "M. Gisela Bardossy personal site",
+          "notes": "Joined DOIT in fall 2018 after teaching at University of Baltimore; no degree year or CV."
+        }
+      ],
       "source": "faculty-page"
     },
     {
       "facultyId": "roster:university-of-maryland:manmohan-aseri",
       "name": "Manmohan Aseri",
-      "status": "pending",
-      "checkedAt": null,
-      "sources": [],
-      "reason": "Individual first-placement research is pending.",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "employer": "Carnegie Mellon University (Tepper School of Business)",
+      "position": "Visiting Assistant Professor of Business Technologies",
+      "placementYear": 2018,
+      "category": "other-academic",
+      "evidenceUrl": "https://drive.google.com/file/d/1qZzROgq4R8l6z56rELasr2w9VucmLzMb/view?usp=sharing",
+      "evidenceNote": "CV lists the UT Dallas Ph.D. in Management Science (Information Systems), Aug 2012 - May 2018, then Visiting Assistant Professor of Business Technologies, Tepper School, Carnegie Mellon, July 2018 - May 2020, then Assistant Professor, Pitt Katz, June 2020 - Aug 2024, then Maryland from Aug 2024. ORCID gives the same three employments and dates. Pre-PhD work as a programmer (five years, per the Smith profile) predates the degree. Integrator: the evidence writes the doctorate-awarding institution as 'University of Texas at Dallas', the same university as the record's 'The University of Texas at Dallas', so it is stored under the record's name.",
+      "phdYearVerified": 2018,
+      "phdInstitutionVerified": "The University of Texas at Dallas",
+      "reason": "Dated CV linked from his personal website (linked from the Smith profile), corroborated by ORCID, shows the CMU visiting assistant professorship starting July 2018, two months after the May 2018 PhD.",
+      "sources": [
+        {
+          "url": "https://drive.google.com/file/d/1qZzROgq4R8l6z56rELasr2w9VucmLzMb/view?usp=sharing",
+          "title": "Manmohan Aseri CV (Google Drive file linked from sites.google.com/view/manmohanaseri; downloaded through Drive's public export link)",
+          "notes": "Academic Positions and Education sections read."
+        },
+        {
+          "url": "https://orcid.org/0000-0001-6943-2432",
+          "title": "ORCID record 0000-0001-6943-2432 (read through the public API)",
+          "notes": "Employments: CMU Visiting Assistant Professor 2018-07 to 2020-05; Pitt 2020-06 to 2024-08; UMD from 2024-08."
+        },
+        {
+          "url": "https://www.rhsmith.umd.edu/directory/manmohan-aseri",
+          "title": "UMD Smith School - Manmohan Aseri (read with curl)",
+          "notes": "PhD in information systems from UT Dallas; worked five years as a programmer before the PhD; links personal website."
+        }
+      ],
+      "phdInstitutionVerifiedAsWritten": "University of Texas at Dallas",
       "source": "faculty-page"
     },
     {
@@ -56727,19 +57471,63 @@
     {
       "facultyId": "roster:university-of-minnesota:archis-ghate",
       "name": "Archis Ghate",
-      "status": "pending",
-      "checkedAt": null,
-      "sources": [],
-      "reason": "Individual first-placement research is pending.",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "employer": "University of Washington (Industrial & Systems Engineering)",
+      "position": "Assistant Professor",
+      "placementYear": 2006,
+      "category": "tenure-track",
+      "evidenceUrl": "https://cse.umn.edu/isye/archis-ghate",
+      "evidenceNote": "University of Minnesota biography states that he joined the University of Washington as an Assistant Professor in 2006 after receiving a PhD in Industrial and Operations Engineering from the University of Michigan (MS Stanford 2003, BTech IIT Bombay 2001), later becoming Professor and Associate Chair at UW, then Fluor Endowed Chair at Clemson, then Minnesota. Verifier: the UMN biography re-opened and confirmed; the Mathematics Genealogy Project record (Ghate, Archis, Ph.D. University of Michigan 2006) dates the degree, so phdYearVerified was added as 2006, the same year as the UW start. Integrator: the evidence writes the doctorate-awarding institution as 'University of Michigan', the same university as the record's 'University of Michigan at Ann Arbor', so it is stored under the record's name.",
+      "phdYearVerified": 2006,
+      "phdInstitutionVerified": "University of Michigan at Ann Arbor",
+      "reason": "Employer biography gives an explicit sequence and year: he joined the University of Washington as an Assistant Professor in 2006 after receiving the Michigan IOE PhD (MS Stanford 2003). The Mathematics Genealogy Project record dates the Michigan PhD to 2006, the year of the UW start, so the three years between the 2003 MS and the 2006 UW appointment are the doctorate and leave no room for an intermediate post. The Michigan Deep Blue search API returned HTTP 403 to the researcher.",
+      "sources": [
+        {
+          "url": "https://cse.umn.edu/isye/archis-ghate",
+          "title": "University of Minnesota ISyE - Archis Ghate (read with curl)",
+          "notes": "Biography: joined UW as Assistant Professor in 2006 after receiving the Michigan IOE PhD; later Clemson and Minnesota."
+        },
+        {
+          "url": "https://sites.google.com/umn.edu/archisghate",
+          "title": "Archis Ghate personal page",
+          "notes": "Current title only; no CV or dates."
+        },
+        {
+          "url": "https://www.mathgenealogy.org/id.php?id=131155",
+          "title": "Mathematics Genealogy Project - Archis Ghate",
+          "notes": "Ph.D. University of Michigan 2006; dissertation \"Markov Chains, Game Theory, and Infinite Programming: Three Paradigms for Optimization of Complex Systems\"; advisor Robert Longworth Smith; his students include University of Washington graduates."
+        }
+      ],
+      "phdInstitutionVerifiedAsWritten": "University of Michigan",
       "source": "faculty-page"
     },
     {
       "facultyId": "roster:university-of-minnesota:arthur-hill",
       "name": "Arthur Hill",
-      "status": "pending",
-      "checkedAt": null,
-      "sources": [],
-      "reason": "Individual first-placement research is pending.",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "employer": "University of Minnesota (School of Management, Department of Management Sciences)",
+      "position": "Assistant Professor",
+      "placementYear": 1977,
+      "category": "tenure-track",
+      "evidenceUrl": "https://carlsonschool.umn.edu/sites/carlsonschool.umn.edu/files/faculty-cvcs/A%20Hill%20CV_1.14.19.pdf",
+      "evidenceNote": "CV (January 2019) gives the Ph.D. in Management, Krannert, Purdue University, 1977, and academic positions as graduate instructor and research assistant at Purdue September 1974 - June 1976, David Ross Thesis Grant June 1976 - August 1977, then Assistant Professor, Department of Management Sciences, School of Management, University of Minnesota, September 1977 - June 1983, with later promotions at Minnesota.",
+      "phdYearVerified": 1977,
+      "phdInstitutionVerified": "Purdue University",
+      "reason": "Dated CV linked from the Carlson profile shows the Minnesota assistant professorship starting September 1977, directly after the thesis grant ended in August 1977, in the PhD year. The CV lists no non-academic employment section.",
+      "sources": [
+        {
+          "url": "https://carlsonschool.umn.edu/sites/carlsonschool.umn.edu/files/faculty-cvcs/A%20Hill%20CV_1.14.19.pdf",
+          "title": "Arthur V. Hill CV (1.14.19)",
+          "notes": "Education and Academic Positions sections read."
+        },
+        {
+          "url": "https://carlsonschool.umn.edu/faculty/arthur-hill",
+          "title": "Carlson School - Arthur Hill (read with curl)",
+          "notes": "PhD Management, Purdue, no year; links the CV."
+        }
+      ],
       "source": "faculty-page"
     },
     {
