@@ -4,16 +4,16 @@
     "updatedAt": "2026-10-17",
     "total": 3161,
     "counts": {
-      "unresolved": 1143,
-      "verified": 2014,
+      "unresolved": 1120,
+      "verified": 2037,
       "not-yet-completed-phd": 4
     },
     "bySource": {
       "omlist": {
         "total": 2149,
         "counts": {
-          "unresolved": 698,
-          "verified": 1450,
+          "unresolved": 675,
+          "verified": 1473,
           "not-yet-completed-phd": 1
         }
       },
@@ -1596,15 +1596,40 @@
       "facultyId": "omlist-66e893ef19f8f45c",
       "name": "David Anderson",
       "status": "unresolved",
-      "checkedAt": "2026-10-16",
+      "checkedAt": "2026-10-17",
+      "reason": "Second pass: the Villanova individual profile now renders (headless browser; the plain request returns a generic page): Professor, Management & Operations, with publications only, no education dates or employment history. The UMD DRUM repository (API) holds his dissertation, The impact of resource management on hospital efficiency and quality of care, by David Ryberg Anderson, advisor Bruce L. Golden, Decision & Information Technologies, 2013, which confirms the imported Maryland 2013 degree. Villanova's 2023 release on his Poets&Quants award says he joined VSB in 2018, the Poets&Quants profile gives 'at current institution since 2018', and Villanova's 2018 expertise guide lists him as Assistant Professor of Analytics. What he did between the 2013 degree and 2018 (another faculty post, a postdoc or industry, including the PayAnalytics venture) is not documented in anything opened, so the first post-PhD job is unknown. Identity note: the ORCID record linked from his OM List profile (0000-0001-7104-122X, University of Sydney Faculty of Medicine, PhD 2017-2021) is a different David Anderson. Earlier review (2026-10-16): the imported Villanova link redirected to a general faculty page.",
       "sources": [
         {
           "url": "https://www.villanova.edu/university/business/faculty-and-research/faculty-by-department/biodetail.html?mail=david.anderson@villanova.edu&xsl=bio_long",
-          "title": "David Anderson Profile",
-          "notes": "Imported individual Villanova profile redirects to a general faculty/research page, not a dated individual biography."
+          "title": "David Anderson, PhD - Villanova School of Business faculty directory",
+          "notes": "Rendered with headless Chromium. Professor, Management & Operations; publications only; no dates."
+        },
+        {
+          "url": "https://api.drum.lib.umd.edu/server/api/discover/search/objects?query=dc.contributor.author:%22Anderson,%20David%22%20AND%20hospital&dsoType=ITEM&size=10",
+          "title": "UMD DRUM search API - dissertation 1903/14568",
+          "notes": "Dissertation by Anderson, David Ryberg, advisor Golden, Bruce L, Business and Management: Decision & Information Technologies, dc.date.issued 2013."
+        },
+        {
+          "url": "https://www.villanova.edu/university/business/about-vsb/news/pressreleases/2023/1215.html",
+          "title": "Villanova release: Poets&Quants names David Anderson among top 50 undergraduate business professors of 2023",
+          "notes": "Associate professor, Management & Operations; joined VSB in 2018."
+        },
+        {
+          "url": "https://poetsandquantsforundergrads.com/news/2023-best-undergraduate-professors-david-anderson-villanova-university-school-of-business/",
+          "title": "Poets&Quants 2023 Best Undergraduate Professors - David Anderson",
+          "notes": "Direct request HTTP 403; read through the r.jina.ai reader. At current institution since 2018; Ph.D. Robert H. Smith School; no earlier positions."
+        },
+        {
+          "url": "https://www.villanova.edu/content/dam/villanova/VSB/faculty-and-research/centers-of-excellence/center-for-business-analytics/villanova-expertise-2018.pdf",
+          "title": "Villanova expertise guide 2018 (Center for Business Analytics)",
+          "notes": "Assistant Professor of Analytics; PhD University of Maryland, Smith School, Operations Management and Statistics; undated."
+        },
+        {
+          "url": "https://orcid.org/0000-0001-7104-122X",
+          "title": "ORCID record linked from the OM List profile",
+          "notes": "University of Sydney Faculty of Medicine, PhD 2017-2021: a different person."
         }
       ],
-      "reason": "Imported individual Villanova profile redirects to a general faculty/research page, not a dated individual biography.",
       "source": "omlist"
     },
     {
@@ -2627,13 +2652,23 @@
       "facultyId": "omlist-ed558670865f4a5a",
       "name": "Ozge Safak Aydiner",
       "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "No CV, Bath profile or dissertation record located. A guessed Bath profile URL returned 404 and searches returned unrelated people, so neither PhD completion year nor any post-PhD position (e.g., a postdoc before Bath) could be established. Discovery web searches were also run; their snippets were not treated as verification.",
+      "checkedAt": "2026-10-17",
+      "reason": "Second pass: the Bath research portal (linked from the OM List profile) gives Lecturer (Assistant Professor), School of Management, and dates the Bilkent industrial-engineering Ph.D. (Optimizing airline operations under uncertainty) 2013-2019, with a UC Berkeley visiting research scholar stay in April-December 2017 during the doctorate; the Bilkent repository record of the thesis is dated 2019-06. Her ORCID record lists Bath Assistant Professor from 2023-03-31 and a second, undated University of Bath entry. Nothing opened says what she did between the June 2019 degree and March 2023 (the undated Bath entry may be an earlier research post, possibly with co-author Gunes Erdogan, but its title and dates are not given), so the first post-PhD job is not established. Earlier review (2026-10-16): no CV, Bath profile or dissertation record was located and a guessed Bath URL returned 404.",
       "sources": [
         {
-          "url": "https://www.bath.ac.uk/corporate-information/ozge-safak-aydiner/",
-          "title": "University of Bath profile (guessed URL)",
-          "notes": "Attempted; HTTP 404."
+          "url": "https://researchportal.bath.ac.uk/en/persons/ozge-safak-aydiner",
+          "title": "Ozge Safak Aydiner - University of Bath research portal",
+          "notes": "Read with curl. Lecturer (Assistant Professor); education: Bilkent Ph.D. 2013-2019, Berkeley visiting research scholar 1 Apr - 31 Dec 2017, Bilkent M.S. 2011-2013, Sabanci B.S. 2006-2011; no employment history."
+        },
+        {
+          "url": "https://orcid.org/0000-0001-9238-1872",
+          "title": "ORCID record 0000-0001-9238-1872 (Ozge Safak), public API",
+          "notes": "Employment: University of Bath, School of Management, Assistant Professor from 2023-03-31; University of Bath, undated, no title."
+        },
+        {
+          "url": "https://repository.bilkent.edu.tr/server/api/discover/search/objects?query=%22Optimizing%20airline%20operations%20under%20uncertainty%22",
+          "title": "Bilkent University repository (DSpace API) - thesis 11693/52081",
+          "notes": "Optimizing airline operations under uncertainty, Aydiner, Ozge Safak, dc.date.issued 2019-06."
         }
       ],
       "source": "omlist"
@@ -3224,18 +3259,23 @@
       "facultyId": "omlist-3f67d64ec468f8e7",
       "name": "Mihai Banciu",
       "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "Bucknell confirms Pittsburgh Operations Research PhD 2009, while its archived faculty catalog dates his initial Bucknell appointment 2007. Faculty employment therefore began before doctoral completion. No first new post-PhD position is established; preserve Bucknell employment at completion separately.",
+      "checkedAt": "2026-10-17",
+      "reason": "Second pass: Bucknell's online catalog archive reaches back only to 2014-2015 (the 2007-08 to 2013-14 directory URLs return 404 and the archive index lists no older catalogs), and that catalog lists him as 'Mihai Banciu (2007), Assistant Professor of Management, Ph.D. Pittsburgh', i.e., the 2014-15 title with the 2007 initial-appointment year. The Bucknell profile gives the PhD in Operations Research, University of Pittsburgh, 2009, and an MBA from James Madison 2002, with no employment history. His title on arrival in 2007 (instructor converted to assistant professor on completion, or assistant professor from the start) is still undocumented, so the rule for converted posts cannot be applied; a Pitt D-Scholarship search returned nothing usable. Bucknell employment began two years before the degree and continued; no other employer is documented. Earlier review (2026-10-16): Bucknell confirms the 2009 Pittsburgh PhD and the archived 2018-19 catalog dates the initial appointment 2007.",
       "sources": [
         {
+          "url": "https://coursecatalog.bucknell.edu/archive/2014-2015/directory/faculty/",
+          "title": "Bucknell University catalog 2014-2015 - faculty directory",
+          "notes": "Read with curl: Mihai Banciu (2007), Assistant Professor of Management, Ph.D. Pittsburgh. Earlier archive years return 404."
+        },
+        {
           "url": "https://www.bucknell.edu/fac-staff/mihai-banciu",
-          "title": "Mihai Banciu — public academic profile",
-          "notes": "Professional biography and degree information reviewed for first-job evidence."
+          "title": "Mihai Banciu - Bucknell profile",
+          "notes": "PhD Operations Research, University of Pittsburgh, 2009; MBA James Madison 2002; no employment dates."
         },
         {
           "url": "https://coursecatalog.bucknell.edu/archive/2018-2019/directory/faculty/",
-          "title": "Bucknell 2018–2019 faculty catalog",
-          "notes": "Catalog defines parenthesized year as initial faculty appointment; Banciu entry is 2007."
+          "title": "Bucknell 2018-2019 faculty catalog",
+          "notes": "Earlier review: parenthesized year is the initial faculty appointment; Banciu entry is 2007."
         }
       ],
       "source": "omlist"
@@ -4365,14 +4405,23 @@
     {
       "facultyId": "omlist-e56c4a14a98939a9",
       "name": "Christophe Bernard",
-      "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "The TBS chronology dates doctorate to 1997 but Toulouse lecturer employment 1995–1998, spanning completion; first post-completion job remains ambiguous.",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "employer": "TBS Education (Toulouse Business School)",
+      "position": "Professor of Industrial Organization, Logistics & Technology",
+      "placementYear": 1998,
+      "category": "unknown",
+      "evidenceUrl": "https://www.tbs-education.com/teacher/bernard-christophe/",
+      "evidenceNote": "TBS profile chronology: doctoral degree in economics, Universite Toulouse 1 Capitole, 1997; Lecturer in Economics, Universite Toulouse 1 Capitole, 1995 to 1998; Professor of Industrial Organization, Logistics & Technology at TBS Education since 1998. The Toulouse 1 lectureship began two years before the degree and continued after it, so under the overlap rule the first new post-PhD job is the TBS post from 1998. The kind of contract at the French business school is not stated, so the category is unknown.",
+      "phdYearVerified": 1997,
+      "phdInstitutionVerified": "Université Toulouse 1 Capitole",
+      "phdInstitutionResolution": "The TBS profile names Universite Toulouse 1 Capitole, a constituent university of the University of Toulouse named in the import; same institution in a more specific form.",
+      "reason": "Second pass under the overlap decision: the TBS chronology dates the doctorate 1997, a Toulouse 1 lectureship 1995-1998 that began before and continued after the degree, and the TBS professorship from 1998, which is the first new job. Site answers the plain request with HTTP 403; read through the r.jina.ai reader proxy.",
       "sources": [
         {
           "url": "https://www.tbs-education.com/teacher/bernard-christophe/",
-          "title": "Christophe Bernard academic profile",
-          "notes": "The TBS chronology dates doctorate to 1997 but Toulouse lecturer employment 1995–1998, spanning completion; first post-completion job remains ambiguous."
+          "title": "Christophe Bernard - TBS Education teacher profile",
+          "notes": "Direct request refused (HTTP 403); read through the r.jina.ai reader proxy. Education: 1997 doctorate in economics, Universite Toulouse 1 Capitole; experience: since 1998 Professor at TBS Education; 1995-1998 Lecturer in Economics, Universite Toulouse 1 Capitole."
         }
       ],
       "source": "omlist"
@@ -4817,16 +4866,29 @@
     {
       "facultyId": "omlist-afa1d0f28397c0e4",
       "name": "Max Biggs",
-      "status": "unresolved",
-      "checkedAt": "2026-10-16",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "employer": "IBM Watson (IBM Research)",
+      "position": "Post-Doctoral Researcher, AI for travel industry team",
+      "placementYear": 2019,
+      "category": "postdoc",
+      "evidenceUrl": "https://www.darden.virginia.edu/sites/default/files/inline-files/Biggs-CV-January2026.pdf",
+      "evidenceNote": "CV (January 2026): Ph.D., MIT Operations Research Center, 2014-2019; academic employment: 2019-2020 Post-Doctoral Researcher, IBM Watson; 2019 Adjunct Professor, Darden School of Business (taught two sections of the core Decision Analysis course); 2020- Assistant Professor of Business Administration, Darden. The adjunct post was a one-off part-time teaching assignment, so the IBM postdoc is recorded as the first primary post-PhD job, with the 2019 Darden adjunct teaching kept as a concurrent role. MIT DSpace dates the thesis 2019 (no month).",
+      "phdYearVerified": 2019,
+      "phdInstitutionVerified": "Massachusetts Institute of Technology",
+      "reason": "Second pass: re-read of the CV and the MIT DSpace thesis record (Prescriptive analytics in operations problems: a tree ensemble approach, Ph.D., Sloan School of Management, Operations Research Center, 2019). Following the concurrent-role rule, the 2019 Darden adjunct teaching (two course sections) is not the first primary job; the 2019-2020 IBM Watson postdoc is. Neither the degree month nor the start months of the two 2019 posts are stated.",
       "sources": [
         {
           "url": "https://www.darden.virginia.edu/sites/default/files/inline-files/Biggs-CV-January2026.pdf",
-          "title": "Max Biggs curriculum vitae",
-          "notes": "CV dates MIT doctorate to 2019 and lists both an IBM postdoc 2019–2020 and Darden adjunct professorship in 2019. Ordering of these roles is unspecified."
+          "title": "Max Biggs - curriculum vitae (January 2026)",
+          "notes": "Downloaded with curl; academic employment and education as summarised."
+        },
+        {
+          "url": "https://dspace.mit.edu/server/api/discover/search/objects?query=dc.contributor.author:%22Biggs,%20Max%22&dsoType=ITEM&size=20",
+          "title": "MIT DSpace search API - author Biggs, Max (thesis handle 1721.1/123709)",
+          "notes": "Thesis: Ph.D., MIT Sloan School of Management, Operations Research Center, 2019; dc.date.issued 2019."
         }
       ],
-      "reason": "CV dates MIT doctorate to 2019 and lists both an IBM postdoc 2019–2020 and Darden adjunct professorship in 2019. Ordering of these roles is unspecified.",
       "source": "omlist"
     },
     {
@@ -5756,14 +5818,32 @@
     {
       "facultyId": "omlist-eda693f6b21509d6",
       "name": "Amir Brudner",
-      "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "No CV, faculty page or dissertation record located; search returned only unrelated Hebrew University people. Degree year and first post-PhD position (including possible postdoc) unknown. Discovery web searches were also run; their snippets were not treated as verification.",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "employer": "Massachusetts Institute of Technology",
+      "position": "Postdoctoral Researcher, Intelligent Transportation Systems Laboratory, Department of Civil and Environmental Engineering",
+      "placementYear": 2023,
+      "category": "postdoc",
+      "evidenceUrl": "https://amirbrd.rbind.io/files/amir-cv.pdf",
+      "evidenceNote": "CV: Ph.D. in Operations Research, The Hebrew University of Jerusalem (the personal site dates it 2022); academic positions: 2023-2024 Postdoctoral Researcher, MIT ITS Lab; 2024-2025 Postdoctoral Researcher, Rotman, Toronto; 2025- Assistant Professor (Tenure Track), Hebrew University Business School. ORCID dates the MIT postdoc from 2023-01-26. Teaching posts begun before the degree (HUJI business school lecturer from 2016, Jerusalem College of Engineering teaching fellow and course instructor 2008-2022, lecturer 2011-2017) are pre-degree teaching roles, so the MIT postdoc is the first new post-PhD job.",
+      "phdYearVerified": 2022,
+      "phdInstitutionVerified": "The Hebrew University of Jerusalem",
+      "reason": "Second pass: his personal site (linked from the OM List profile) gives the 2022 HUJI PhD and a CV with dated academic positions, and ORCID gives the MIT postdoc start of 26 January 2023. Pre-degree teaching posts are noted. The degree month is not stated.",
       "sources": [
         {
-          "url": "https://business.huji.ac.il/en/people/amir-brudner",
-          "title": "Hebrew University business faculty page (guessed URL)",
-          "notes": "Attempted; host not found."
+          "url": "https://amirbrd.rbind.io/files/amir-cv.pdf",
+          "title": "Amir Brudner - CV (personal site)",
+          "notes": "Downloaded with curl; positions and teaching experience as summarised."
+        },
+        {
+          "url": "https://amirbrd.rbind.io/",
+          "title": "Amir Brudner - personal website",
+          "notes": "Ph.D. in Operations Research, 2022, The Hebrew University; previously postdoc at MIT ITS Lab and Rotman."
+        },
+        {
+          "url": "https://orcid.org/0000-0003-1646-3344",
+          "title": "ORCID record 0000-0003-1646-3344 (Amir Brudner), public API",
+          "notes": "MIT CEE Postdoc 2023-01-26 to 2024-07-31; Toronto Rotman Postdoc 2024-08-01 to 2025-08-01; MIT Research Affiliate from 2024-08; HUJI business school from 2025-07-01."
         }
       ],
       "source": "omlist"
@@ -5818,16 +5898,29 @@
     {
       "facultyId": "omlist-a9205145e712145c",
       "name": "Marjolein Buisman",
-      "status": "unresolved",
-      "checkedAt": "2026-10-16",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "employer": "WHU - Otto Beisheim School of Management",
+      "position": "Junior Professor (Assistant Professor) of Retail Analytics, Production Management",
+      "placementYear": 2020,
+      "category": "unknown",
+      "evidenceUrl": "https://orcid.org/0000-0002-6620-1396",
+      "evidenceNote": "ORCID employment: PhD Candidate, Operations Research and Logistics, Wageningen UR, 2015-11 to 2019-11; Assistant Professor, Production Management, WHU, 2020-02-01 to 2025-08-31; Assistant Professor, TUM, from 2025-09-01. The TUM profile says she obtained her Wageningen doctorate in 2019 and shortly after joined WHU as Junior Professor of Retail Analytics for five years. WHU is the first post-PhD job; a German junior professorship is not stated to be tenure-track, so the category is unknown.",
+      "phdYearVerified": 2019,
+      "phdInstitutionVerified": "Wageningen University",
+      "reason": "Second pass: the current TUM School of Management page (the old URL is dead) and her ORCID record together give a dated sequence: Wageningen PhD 2019 (doctoral employment ended November 2019), then WHU junior/assistant professor from February 2020, then TUM from September 2025.",
       "sources": [
         {
-          "url": "https://mgt.tum.de/professors-1/info/prof-dr-marjolein-buisman",
-          "title": "Marjolein Buisman Profile",
-          "notes": "Fetch failed: HTTP Error 404: Not Found"
+          "url": "https://orcid.org/0000-0002-6620-1396",
+          "title": "ORCID record 0000-0002-6620-1396 (Marjolein Buisman), public API",
+          "notes": "Employment entries with start and end dates as summarised; no education section."
+        },
+        {
+          "url": "https://www.mgt.tum.de/our-academic-staff/info/prof-dr-marjolein-buisman",
+          "title": "Prof. Dr. Marjolein Buisman - TUM School of Management",
+          "notes": "Read with curl. Doctorate in Operations Research and Logistics, Wageningen University, 2019; shortly after joined WHU as Junior Professor of Retail Analytics (five years); appointed at TUM in 2025."
         }
       ],
-      "reason": "TUM imported faculty profile returned HTTP404; earliest post-PhD appointment unverified.",
       "source": "omlist"
     },
     {
@@ -7559,16 +7652,24 @@
     {
       "facultyId": "omlist-d44318ae5e3c21db",
       "name": "Li Chen",
-      "status": "unresolved",
-      "checkedAt": "2026-10-16",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "employer": "TrueDemand Software (Los Gatos, CA)",
+      "position": "Cofounder and Lead Scientist",
+      "placementYear": 2004,
+      "category": "industry",
+      "evidenceUrl": "https://apps.business.cornell.edu/faculty-research/faculty/vita/lc785",
+      "evidenceNote": "Cornell vita: Ph.D. Management Science and Engineering, Stanford University, June 2005. Industry positions: Walmart.com supply chain consultant 06/2004-09/2004 (a summer post during the doctorate), then TrueDemand Software cofounder and lead scientist 09/2004-03/2008; academic positions begin with Duke Fuqua Assistant Professor 07/2008. TrueDemand began nine months before the June 2005 degree (overlap stated), in the final year of the doctorate rather than throughout it, and was not changed on completion; it continued for almost three years after the degree, so under the 17 October rule for a post begun a few months before the thesis was finished (Brynjolfsson precedent, eight months) it is the first job and keeps its own 2004 start year. If the integrator instead treats it as a pre-degree job continued after the degree, the first new job is Duke, Assistant Professor, July 2008 (tenure-track). Verifier (no field changed): the Cornell vita, re-opened on 2026-10-17, lists TrueDemand Software, Cofounder and Lead Scientist, 09/2004-03/2008, with no title change, the Walmart.com supply chain consultancy 06/2004-09/2004 and IBM research internships in 2003 before it, the Stanford Ph.D. dated June 2005, and Duke Fuqua Assistant Professor from 07/2008. Keeping the 2004 TrueDemand start is consistent with the published Brynjolfsson row and the verified Ying Kei (Mike) Tse row (posts begun about eight months before the degree or thesis submission and not retitled). The thesis submission month is not known. If the integrator instead treats a company role begun in the final doctoral year as a pre-degree job continued under rule 1, the first new job is Duke, July 2008, Assistant Professor at a business school (tenure-track by convention). Integrator (2026-10-17): kept as recorded after the integrator check proposed Duke 2008. Rule 1 covers a job begun well before the degree; a post begun in the final year of the doctorate and not changed on completion keeps its own start year under the rule for posts not retitled, which is applied to posts outside academia too (David Gamarnik: IBM Research from 1997 for a February 1998 degree), and nine months matches the accepted Brynjolfsson, Dhar and Piramuthu leads.",
+      "phdYearVerified": 2005,
+      "phdInstitutionVerified": "Stanford University",
+      "reason": "Second pass: the CV dates every post to the month. The record is settled by applying the overlap decision as in the published Brynjolfsson row (a post begun eight months before the degree and not retitled kept its own start year): TrueDemand, begun nine months before the June 2005 Ph.D., is recorded as the first job. This is a rule judgment the triage referred to the integrator; the alternative (Duke 2008) is stated in the evidence note.",
       "sources": [
         {
           "url": "https://apps.business.cornell.edu/faculty-research/faculty/vita/lc785",
-          "title": "Li Chen curriculum vitae",
-          "notes": "CV dates Stanford PhD to June 2005 but TrueDemand Software co-founder and lead scientist role to September 2004–March 2008. Industry employment spans graduation; Duke began in 2008. First post-degree placement cannot be assigned without resolving the overlapping role."
+          "title": "Li Chen - curriculum vitae (Cornell Johnson)",
+          "notes": "Downloaded with curl; academic and industry positions with months, education with June 2005 Ph.D."
         }
       ],
-      "reason": "CV dates Stanford PhD to June 2005 but TrueDemand Software co-founder and lead scientist role to September 2004–March 2008. Industry employment spans graduation; Duke began in 2008. First post-degree placement cannot be assigned without resolving the overlapping role.",
       "source": "omlist"
     },
     {
@@ -11157,21 +11258,24 @@
     {
       "facultyId": "omlist-8c7fb85e6096aa62",
       "name": "Diego DELLE Donne",
-      "status": "unresolved",
-      "checkedAt": "2026-10-16",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "employer": "Université Sorbonne Paris Nord (Paris XIII)",
+      "position": "Post-Doctorate",
+      "placementYear": 2018,
+      "category": "postdoc",
+      "evidenceUrl": "https://faculty.essec.edu/en/cv/delle-donne-diego",
+      "evidenceNote": "ESSEC CV (last update 8/9/22): Ph.D. in computer science, Universidad de Buenos Aires, 2016. Full-time academic appointments: Teaching Professor, UBA, 2004-2019; Teaching Professor, Universidad Nacional de General Sarmiento (UNGS), 2008-2017; Assistant Professor, UNGS, 2017-2019; Post-Doctorate, Universite Sorbonne Paris Nord, 2018-2019; Post-Doctorate, Ecole Polytechnique, 2019-2020; Post-Doctorate, ESSEC, 2020-2022; ESSEC tenure-track Assistant Professor from 2022. The bio says he left the UNGS full-time assistant professorship and the UBA part-time teaching post in 2018 when he moved to France. Both Argentine teaching posts were held through the doctorate, and the 2017 UNGS assistant professorship is an internal promotion at that pre-degree employer, so the first new employer after the degree is the Sorbonne Paris Nord postdoc from 2018 (as in the published Fleszar row).",
+      "phdYearVerified": 2016,
+      "phdInstitutionVerified": "Universidad de Buenos Aires",
+      "reason": "Second pass: re-read of the ESSEC CV gives a complete dated sequence. Under overlap rule 1 and the internal-promotion decision, the UBA (2004-2019) and UNGS (2008-2017) teaching posts held through the doctorate and the 2017 UNGS promotion to assistant professor are not new post-PhD jobs; the first new employer is Universite Sorbonne Paris Nord, postdoc 2018-2019. A verifier should confirm that the 2017 UNGS assistant professorship is an internal promotion rather than a post converted on completion (if the latter, it would be the first job, 2017, category unknown). The UBA thesis record was not opened; the degree month is not stated.",
       "sources": [
         {
           "url": "https://faculty.essec.edu/en/cv/delle-donne-diego",
-          "title": "Diego DELLE Donne Profile",
-          "notes": "Institutional CV gives Buenos Aires doctorate2016 with teaching employment2004-2019 at Buenos Aires and2008-2017 at General Sarmiento; concurrent predoctoral roles overlap degree, so earliest post-PhD role is ambiguous."
-        },
-        {
-          "url": "https://sites.google.com/site/diegodd/home",
-          "title": "Diego DELLE Donne Website",
-          "notes": "Institutional CV gives Buenos Aires doctorate2016 with teaching employment2004-2019 at Buenos Aires and2008-2017 at General Sarmiento; concurrent predoctoral roles overlap degree, so earliest post-PhD role is ambiguous."
+          "title": "Diego DELLE Donne - ESSEC faculty CV",
+          "notes": "Read with curl. Diplomas and full-time academic appointments with years as summarised; bio on leaving the Argentine posts in 2018."
         }
       ],
-      "reason": "Institutional CV gives Buenos Aires doctorate2016 with teaching employment2004-2019 at Buenos Aires and2008-2017 at General Sarmiento; concurrent predoctoral roles overlap degree, so earliest post-PhD role is ambiguous.",
       "source": "omlist"
     },
     {
@@ -14095,16 +14199,34 @@
     {
       "facultyId": "omlist-853658b1ba82f9fe",
       "name": "Magnus Fröhling",
-      "status": "unresolved",
-      "checkedAt": "2026-10-16",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "employer": "Karlsruhe Institute of Technology (Universität Karlsruhe), Institute for Industrial Production (IIP) / DFIU",
+      "position": "Akademischer Rat",
+      "placementYear": 2006,
+      "category": "other-academic",
+      "evidenceUrl": "https://orcid.org/0000-0001-5429-1163",
+      "evidenceNote": "ORCID employment: Research Associate, IIP/DFIU, Universitat Karlsruhe (TH), 2001-01-01 to 2006-05-31; Akademischer Rat, IIP/DFIU, KIT, 2006-06-01 to 2015-08-30; Professor of Resource Management, TU Bergakademie Freiberg, 2015-09 to 2018-08; TUM from 2018-09. The DNB record dates the dissertation Karlsruhe 2005 and the TUM page says Ph.D. 2005, habilitation at KIT 2011. The doctoral research-associate post began before and ran a few months past the degree; the first new post is the Akademischer Rat position from June 2006 at the same institute (recorded like the published Schlapp and Minner rows; the internal-move question is flagged). Verifier (no field changed): ORCID and the TUM page were re-opened on 2026-10-17 and confirm the dates. The month of the 2005 degree is not stated, so the research-associate post ran between about five and seventeen months past the degree, not necessarily only a few months. The Akademischer Rat post from 1 June 2006 is still the first separately titled post after the doctoral post, as in the published Cornelia Schön and Armin Fügenschuh rows.",
+      "phdYearVerified": 2005,
+      "phdInstitutionVerified": "Karlsruhe Institute of Technology",
+      "reason": "Second pass: the current TUM staff page (old URL dead), his ORCID record and the DNB catalogue give the chronology. Under the overlap rule the 2001-2006 doctoral research-associate post is pre-degree; the first new post is the Akademischer Rat position at the same Karlsruhe institute from 1 June 2006. Category other-academic because the source gives the German civil-service academic title without stating postdoctoral, fixed-term or permanent status. A verifier should confirm that this same-institute change of post is treated as a new job, as in the published Jochen Schlapp row, and not as an internal promotion.",
       "sources": [
         {
-          "url": "https://mgt.tum.de/professors-1/info/prof-dr-magnus-froehling",
-          "title": "Magnus Fröhling Profile",
-          "notes": "Fetch failed: HTTP Error 404: Not Found"
+          "url": "https://orcid.org/0000-0001-5429-1163",
+          "title": "ORCID record 0000-0001-5429-1163 (Magnus Fröhling), public API",
+          "notes": "Four dated employment entries as summarised; no education entries."
+        },
+        {
+          "url": "https://www.mgt.tum.de/our-academic-staff/info/prof-dr-magnus-froehling",
+          "title": "Prof. Dr. Magnus Fröhling - TUM School of Management",
+          "notes": "Read with curl. Ph.D. 2005 (Karlsruhe); built up a research group at Karlsruhe University; habilitation KIT 2011; QUT visiting scholar 2013; Freiberg professor 2015; TUM 2018."
+        },
+        {
+          "url": "https://services.dnb.de/sru/dnb?version=1.1&operation=searchRetrieve&query=per%3D%22Fr%C3%B6hling%2C%20Magnus%22%20and%20jhr%3D2006&recordSchema=oai_dc",
+          "title": "German National Library catalogue (SRU) - Fröhling dissertation",
+          "notes": "Zur taktisch-operativen Planung stoffstrombasierter Produktionssysteme (DUV 2006); note: Karlsruhe, Techn. Hochsch., Diss., 2005."
         }
       ],
-      "reason": "TUM imported faculty profile returned HTTP404; no readable career chronology obtained.",
       "source": "omlist"
     },
     {
@@ -16256,13 +16378,33 @@
       "facultyId": "omlist-aa5d2d1c1d86ec5b",
       "name": "Martin Grunow",
       "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "The TUM profile returned a missing-page response.",
+      "checkedAt": "2026-10-17",
+      "reason": "Second pass: the current TUM staff page (the old URL is dead) says he held a professorship at DTU, worked at TU Berlin and in the R&D department of Degussa, without dates or order. His ORCID record lists TU Berlin Assistant Professor (Production Management) 2000-01 to 2005-12, DTU Professor 2006-01 to 2010-07 and TUM (undated), but not the Degussa job or any pre-2000 post. The DNB catalogue dates the TU Berlin dissertation (Optimierung von Bestuckungsprozessen in der Elektronikmontage) to 1999 and a Lecturio bio repeats the 1999 doctorate and a 2005 habilitation. Whether the Degussa R&D job fell between the 1999 degree and the January 2000 TU Berlin post, and whether he already held a TU Berlin post during the doctorate, is not documented, so the first new job cannot be fixed. A search for a CV and the archived TUM professor page (web.archive.org refused) failed. Earlier review (2026-10-16): the old TUM profile URL returned a missing-page response.",
       "sources": [
         {
+          "url": "https://www.mgt.tum.de/our-academic-staff/info/prof-dr-martin-grunow",
+          "title": "Prof. Dr. Martin Grunow - TUM School of Management",
+          "notes": "Read with curl. Previously DTU professorship, TU Berlin and Degussa R&D, all undated."
+        },
+        {
+          "url": "https://orcid.org/0000-0002-5076-0169",
+          "title": "ORCID record 0000-0002-5076-0169 (Martin Grunow), public API",
+          "notes": "TU Berlin Assistant Professor 2000-01-01 to 2005-12-31; DTU Professor 2006-01-01 to 2010-07-31; TUM Professor undated. No Degussa entry, no education."
+        },
+        {
+          "url": "https://services.dnb.de/sru/dnb?version=1.1&operation=searchRetrieve&query=per%3D%22Grunow%2C%20Martin%22%20and%20jhr%3D2000&recordSchema=oai_dc",
+          "title": "German National Library catalogue (SRU) - Grunow dissertation",
+          "notes": "Optimierung von Bestuckungsprozessen in der Elektronikmontage (DUV 2000); note: Berlin, Techn. Univ., Diss., 1999."
+        },
+        {
+          "url": "https://www.lecturio.de/elearning/flow-shop-1587472497-217.vortrag",
+          "title": "Lecturio lecturer bio - Prof. Dr. rer. oec. Martin Grunow",
+          "notes": "Doctorate TU Berlin 1999, habilitation 2005."
+        },
+        {
           "url": "https://mgt.tum.de/professors-1/info/prof-dr-martin-grunow",
-          "title": "Martin Grunow academic profile",
-          "notes": "The TUM profile returned a missing-page response."
+          "title": "Old TUM profile URL",
+          "notes": "Earlier review (2026-10-16): missing-page response."
         }
       ],
       "source": "omlist"
@@ -18973,21 +19115,28 @@
     {
       "facultyId": "omlist-b027285685373819",
       "name": "Kejia Hu",
-      "status": "unresolved",
-      "checkedAt": "2026-10-16",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "employer": "Vanderbilt University, Owen Graduate School of Management",
+      "position": "Assistant Professor of Operations Management",
+      "placementYear": 2017,
+      "category": "tenure-track",
+      "evidenceUrl": "https://www.kejiahu.com/uploads/9/0/9/3/90937100/kejia_hu_oxford_public_cv.pdf",
+      "evidenceNote": "CV (updated May 2026): Ph.D. Operations Management, Kellogg, Northwestern, 2013-2017; previous positions: Assistant Professor of Operations Management, Vanderbilt Owen, 2017-2023; Associate Professor, CEIBS, 2022-2023; Oxford from 2023. The 2017-present Cornell Institute for Healthy Futures 'Academic Scholars' entry appears among standing affiliations (editorships, boards) and again under industry experience; it is an open-ended affiliation held alongside her faculty posts, not an employing post, so Vanderbilt is the first job. Kellogg's placement list also gives Vanderbilt for 2017. Integrator (2026-10-17): phdYearVerified removed. The CV gives the Ph.D. only as the study period 2013-2017 and the Kellogg list year is a placement cohort, so neither is a conferral year. The Vanderbilt post from 2017 is the first post listed after doctoral study, so the first-job finding does not change.",
+      "phdInstitutionVerified": "Northwestern University",
+      "reason": "Second pass: the CV places the Cornell Academic Scholars affiliation (2017-present) among ongoing service and affiliation roles rather than among academic employment, and lists Vanderbilt Owen as her first academic position from 2017, after the 2013-2017 Kellogg doctorate. The Cornell role is treated as a concurrent affiliation; a verifier may confirm that reading.",
       "sources": [
+        {
+          "url": "https://www.kejiahu.com/uploads/9/0/9/3/90937100/kejia_hu_oxford_public_cv.pdf",
+          "title": "Kejia Hu - public CV",
+          "notes": "Downloaded with curl; education, standing and previous positions, and industry experience as summarised."
+        },
         {
           "url": "https://www.kellogg.northwestern.edu/doctoral/placement/jobplacement/",
           "title": "Kellogg doctoral job placements",
-          "notes": "Operations Management 2017 placement list; exact role and start date unspecified. Reported destination: Vanderbilt University. This destination is retained as a research lead, not a verified first post-doctoral employer."
-        },
-        {
-          "url": "https://www.kejiahu.com/uploads/9/0/9/3/90937100/kejia_hu_oxford_public_cv.pdf",
-          "title": "Kejia Hu public CV",
-          "notes": "CV lists 2017 doctorate, Vanderbilt assistant professorship 2017–2023 and Cornell Academic Scholars from 2017. Exact nature/order of the Cornell affiliation remains unclear. Earlier industry roles ended by 2013."
+          "notes": "Read with curl. The 2017 list gives Kejia Hu - Vanderbilt University; role and start date not stated."
         }
       ],
-      "reason": "Full CV corroborates Vanderbilt employment but also lists a Cornell Academic Scholars affiliation from the same year; first-employer ordering remains unresolved.",
       "source": "omlist"
     },
     {
@@ -19705,16 +19854,29 @@
     {
       "facultyId": "omlist-264bc5a9bec05810",
       "name": "Rouba Ibrahim",
-      "status": "unresolved",
-      "checkedAt": "2026-10-16",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "employer": "University of Montreal",
+      "position": "Postdoctoral fellow (with P. L'Ecuyer)",
+      "placementYear": 2010,
+      "category": "postdoc",
+      "evidenceUrl": "https://www.roubaibrahim.com/Ibrahim_R.pdf",
+      "evidenceNote": "CV: Ph.D., Operations Research, Columbia University, 2010. Previous positions (reverse chronological): 2011 McGill University, postdoctoral fellow (NSERC CREATE Program); 2010-2011 Bell Canada, consultant; 2010 University of Montreal, postdoctoral fellow (with P. L'Ecuyer); 2009 Avaya Research Labs, research scientist; 2007 Deutsche Bank summer associate. Then UCL Assistant Professor from 2012. The Montreal postdoc is the earliest post-PhD entry; the Bell Canada consultancy also began in 2010 and ran into 2011, alongside the postdocs, so it is treated as a concurrent role. The degree month is not stated.",
+      "phdYearVerified": 2010,
+      "phdInstitutionVerified": "Columbia University",
+      "reason": "Second pass: re-read of the CV's Previous Positions list shows the Montreal postdoctoral fellowship (2010) as the first post-PhD entry, with Bell Canada consulting 2010-2011 listed above it and running through to the 2011 McGill postdoc; the earlier review also cited a Columbia advisor biography describing a Montreal postdoc in 2010 followed by McGill in 2011. A verifier should confirm that the Bell Canada consultancy was concurrent with, not before, the Montreal postdoc; both began in 2010, so placementYear is 2010 either way. Columbia Academic Commons (read with a headless browser) has no record of her thesis, so the degree month remains unknown.",
       "sources": [
         {
-          "url": "http://www.roubaibrahim.com/Ibrahim_R.pdf",
-          "title": "Rouba Ibrahim curriculum vitae",
-          "notes": "CV and Columbia advisor biography document Montreal postdoc in 2010 followed by McGill in 2011, but CV also gives Bell Canada consulting 2010–2011 without ordering; earliest post-doctoral job requires clarification."
+          "url": "https://www.roubaibrahim.com/Ibrahim_R.pdf",
+          "title": "Rouba Ibrahim - curriculum vitae",
+          "notes": "Downloaded with curl; academic positions, education and previous positions as summarised."
+        },
+        {
+          "url": "https://academiccommons.columbia.edu/search?q=%22Rouba+Ibrahim%22&search_field=all_fields",
+          "title": "Columbia Academic Commons search - Rouba Ibrahim",
+          "notes": "Rendered with headless Chromium past the Anubis check: no entries found."
         }
       ],
-      "reason": "CV and Columbia advisor biography document Montreal postdoc in 2010 followed by McGill in 2011, but CV also gives Bell Canada consulting 2010–2011 without ordering; earliest post-doctoral job requires clarification.",
       "source": "omlist"
     },
     {
@@ -26019,16 +26181,39 @@
     {
       "facultyId": "omlist-b6da03d9b778df14",
       "name": "Weiyuan Li",
-      "status": "unresolved",
-      "checkedAt": "2026-10-16",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "employer": "WU Vienna University of Economics and Business, Department of Business Analytics and Decision Sciences",
+      "position": "Tenure-track Assistant Professor",
+      "placementYear": null,
+      "category": "tenure-track",
+      "evidenceUrl": "https://www.wu.ac.at/en/bads/team/weiyuan-li",
+      "evidenceNote": "The current WU department page (read 17 October 2026) says, in his words: I am a tenure-track Assistant Professor in the Department of Business Analytics and Decision Sciences at WU; I received my Ph.D. in Operations Research from Cornell University in 2026 (advisor Huseyin Topaloglu); B.S. Peking University 2021. The page is written after the degree and in the present tense, so it confirms the post was taken up; it names no other post. The start date is not stated (an earlier search snippet reported a planned October 2026 start, not verified), so placementYear is left null.",
+      "phdYearVerified": 2026,
+      "phdInstitutionVerified": "Cornell University",
+      "reason": "Second pass: the old WU URL (team/assistant-professors/weiyuan-li) is dead, but the department team list links his current page at team/weiyuan-li, read with curl. It confirms the 2026 Cornell PhD and that he now holds a WU tenure-track assistant professorship, stated as such (so tenure-track despite the continental European title). The start month and year are not given. ORCID has only an undated Cornell education entry.",
       "sources": [
         {
+          "url": "https://www.wu.ac.at/en/bads/team/weiyuan-li",
+          "title": "Dr. Weiyuan Li - WU Department of Business Analytics and Decision Sciences",
+          "notes": "Read with curl (gzip). Academic career paragraph as summarised."
+        },
+        {
+          "url": "https://www.wu.ac.at/en/bads/team",
+          "title": "WU BADS team list",
+          "notes": "Links his current profile."
+        },
+        {
+          "url": "https://orcid.org/0000-0002-7125-7706",
+          "title": "ORCID record 0000-0002-7125-7706 (Weiyuan Li), public API",
+          "notes": "Education: Cornell University, undated; no employment."
+        },
+        {
           "url": "https://www.wu.ac.at/en/bads/team/assistant-professors/weiyuan-li",
-          "title": "Weiyuan Li Profile",
-          "notes": "Fetch failed: HTTP Error 404: Not Found"
+          "title": "Old WU profile URL",
+          "notes": "HTTP 404 (earlier review and now)."
         }
       ],
-      "reason": "WU biography search result reports Cornell doctorate2026 and plannedOctober2026 start, but opening actual institutional page returns404. Snippet alone is insufficient for verification.",
       "source": "omlist"
     },
     {
@@ -27912,16 +28097,28 @@
     {
       "facultyId": "omlist-83e5ef72131d3bdd",
       "name": "Jianwen Luo",
-      "status": "unresolved",
-      "checkedAt": "2026-10-16",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "employer": "Shanghai Jiao Tong University",
+      "position": "Postdoctoral researcher, Management Science and Engineering postdoctoral station",
+      "placementYear": null,
+      "category": "postdoc",
+      "evidenceUrl": "https://www.acem.sjtu.edu.cn/faculty/luojianwen.html",
+      "evidenceNote": "The Chinese Antai faculty page says he graduated successively from Nanjing University and Zhejiang University and in 2001 completed (exited) the SJTU Management Science and Engineering postdoctoral station and stayed on at SJTU. The English page dates the Zhejiang Ph.D. 1997.09-2000.06 and his SJTU faculty post from 2001.02. The first post-PhD job is therefore the SJTU postdoctoral station, held between June 2000 and February 2001; its start month is not stated, so placementYear is left null. Integrator (2026-10-17): phdYearVerified removed. The English page gives the Zhejiang Ph.D. only as the study period 1997.09-2000.06, which is not a conferral year, and the Chinese page gives no year.",
+      "phdInstitutionVerified": "Zhejiang University",
+      "reason": "Second pass: the Chinese-language ACEM profile, read with curl, supplies the missing step between the June 2000 Zhejiang PhD and the February 2001 SJTU faculty post: a postdoctoral stay at the SJTU Management Science and Engineering postdoctoral station, completed in 2001, after which he stayed on as faculty. No employment before or during the doctorate is mentioned. The start of the postdoc is undated (between June 2000 and February 2001), so placementYear is null.",
       "sources": [
         {
-          "url": "https://www.acem.sjtu.edu.cn/en/faculty/luojianwen.html#container?83",
-          "title": "Jianwen Luo Profile",
-          "notes": "SJTU profile dates Zhejiang doctorateJune2000 and full professor appointmentFebruary2001 but leaves intervening period and earlier career unspecified."
+          "url": "https://www.acem.sjtu.edu.cn/faculty/luojianwen.html",
+          "title": "Luo Jianwen - SJTU Antai faculty page (Chinese)",
+          "notes": "Read with curl. Biography: graduated from Nanjing University and Zhejiang University; exited the SJTU Management Science and Engineering postdoctoral station in 2001 and stayed on at SJTU."
+        },
+        {
+          "url": "https://www.acem.sjtu.edu.cn/en/faculty/luojianwen.html",
+          "title": "Jianwen Luo - SJTU Antai faculty page (English)",
+          "notes": "Read with curl. Ph.D. Zhejiang University 1997.09-2000.06; career 2001.02-present at Antai (listed as Full Professor); Georgia Tech senior visiting professor 2006.09-2007.02."
         }
       ],
-      "reason": "SJTU profile dates Zhejiang doctorateJune2000 and full professor appointmentFebruary2001 but leaves intervening period and earlier career unspecified.",
       "source": "omlist"
     },
     {
@@ -29476,33 +29673,28 @@
       "facultyId": "omlist-9674afeb77f34e3d",
       "name": "Jeremy Mattson",
       "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "NDSU directory lists him as Associate Professor and Transportation and Supply Chain graduate program director with NDSU PhD and MS and a Minnesota-Morris BA, all undated; ORCID dates the NDSU Transportation and Logistics PhD 2008-2017 and an Upper Great Plains Transportation Institute affiliation from 2007 that continued through and after the doctorate. The UGPTI staff biography (viewbio id 63), which a search snippet says lists \"Associate Professor of Transportation and Logistics, College of Business, 2017-present\" alongside \"Associate Research Fellow, UGPTI, 2007-present\", returns \"Staff bio ID not found\" from both fetch methods, and the UGPTI staff directory does not list him. Because the research-fellow job predates the degree, the first new post-PhD job would be the 2017 College of Business appointment, but its start and initial rank could not be opened in a primary source.",
+      "checkedAt": "2026-10-17",
+      "reason": "Second pass: no dated record of a College of Business appointment was found. The UGPTI staff biography (viewbio id 63) still returns 'Staff bio ID not found or invalid' to curl, and the current UGPTI staff list links no biography for him; the NDSU people page (re-read) gives Associate Professor and Transportation and Supply Chain Graduate Program Director with an undated NDSU PhD; ORCID (re-read) still lists only the Upper Great Plains Transportation Institute at NDSU from 2007 with no end date, and the NDSU PhD in Transportation and Logistics 2008-2017. His employer since 2007, before and after the 2017 degree, is NDSU itself (UGPTI is an NDSU institute), so a later faculty appointment in the College of Business would be a move within the pre-degree employer; under the internal-promotion decision no first new post-PhD job is documented while he remains at NDSU, and the start and rank of the business-school appointment are in any case not shown in a primary source. Earlier review (2026-10-16): the NDSU directory, ORCID and the UGPTI pages gave the same picture; a search snippet mentioned an associate professorship from 2017, not verified.",
       "sources": [
         {
-          "url": "https://omlist.edutool.org/schools/north-dakota-state-university/faculty/jeremy-mattson.html",
-          "title": "OM List faculty directory profile",
-          "notes": "Directory profile lists the NDSU 2017 PhD and 2023 tenure; links to the NDSU page, Google Scholar, LinkedIn and ORCID."
+          "url": "https://orcid.org/0000-0002-0826-5834",
+          "title": "ORCID record 0000-0002-0826-5834 (Jeremy Mattson), public API",
+          "notes": "Employment: NDSU Upper Great Plains Transportation Institute from 2007, no title or end; education: NDSU PhD 2008-2017, NDSU MS 1998-2000, Minnesota Morris BA 1994-1998."
         },
         {
           "url": "https://www.ndsu.edu/people/jeremy-mattson-phd",
           "title": "Jeremy Mattson, PhD - NDSU people directory",
-          "notes": "Associate Professor and graduate program director; degrees without years; no employment dates or UGPTI roles."
-        },
-        {
-          "url": "https://orcid.org/0000-0002-0826-5834",
-          "title": "ORCID record 0000-0002-0826-5834 (public API)",
-          "notes": "Employment: NDSU Upper Great Plains Transportation Institute from 2007 (no title, no end); education: NDSU PhD 2008-2017, MS 1998-2000, Minnesota Morris BA 1994-1998."
+          "notes": "Associate Professor, Transportation and Supply Chain Graduate Program Director; PhD NDSU (Transportation and Logistics), undated."
         },
         {
           "url": "https://www.ugpti.org/about/staff/viewbio.php?id=63",
           "title": "UGPTI staff biography (id 63)",
-          "notes": "\"Staff bio ID not found or invalid\" from both fetch methods; search snippet reports 2017-present associate professor and 2007-present associate research fellow entries, not verified."
+          "notes": "Staff bio ID not found or invalid (curl, again)."
         },
         {
           "url": "https://www.ugpti.org/about/staff/",
           "title": "UGPTI staff directory",
-          "notes": "Retrieved; lists twelve staff biographies, none for Mattson or Motuba."
+          "notes": "No biography link for Mattson."
         }
       ],
       "source": "omlist"
@@ -31098,13 +31290,18 @@
       "facultyId": "omlist-f21a21a18bc2727d",
       "name": "Jason Monios",
       "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "CV records two doctorates: Sydney English Literature in 2001 and Edinburgh Napier Transport Geography in 2012. Napier research fellow began in 2011 before the second doctorate; first employment after the initial 2001 doctorate is not documented. Degree scope and chronology require clarification.",
+      "checkedAt": "2026-10-17",
+      "reason": "Second pass: the KEDGE CV (October 2021, re-read) lists, under positions held: Research Assistant, Edinburgh Napier University, 2009-2011; Research Fellow, Napier, 2011-2013; Senior Research Fellow, Napier, 2013-2015; Associate Professor, Napier, 2015-2017; Associate Professor, KEDGE, 2017-2021; Professor, KEDGE, from 2021. Education: PhD Transport Geography, Napier, 2012; MSc Transport Planning, Napier, 2009; PhD English Literature, University of Sydney, 2001. Under the imported 2012 Napier doctorate, the Research Fellow post began before the degree and was not retitled: it is the first job (Napier, 2011, postdoc, overlap stated) only if it began a few months before the thesis was finished; otherwise it is a pre-degree post, the later Napier titles are internal promotions, and the first new employer would be KEDGE (2017). The degree month is unknown (the Napier repository search redirected to a holding page and the research portal refused the connection). The CV lists no employment between the 2001 Sydney doctorate and 2009, so under that earlier degree the first job is undocumented; which doctorate defines the record is the open TODO decision on people with two doctorates. Earlier review (2026-10-16): the same two doctorates and the 2011 Napier research fellowship before the second degree.",
       "sources": [
         {
           "url": "https://student.kedge.edu/content/download/68572/file/MONIOS%20Jason%20CV%20AACSB%2010-2021.pdf",
-          "title": "Jason Monios — Curriculum Vitae",
-          "notes": "Education and employment chronology reviewed; requires further clarification."
+          "title": "Jason Monios - Curriculum Vitae (KEDGE, AACSB 10-2021)",
+          "notes": "Downloaded with curl; education and positions held with years as summarised."
+        },
+        {
+          "url": "https://www.napier.ac.uk/research-and-innovation/research-search?fv=&q=monios+thesis",
+          "title": "Edinburgh Napier research search",
+          "notes": "Redirected to a holding page (applications2.napier.ac.uk/worktribeholdingpage); no thesis record."
         }
       ],
       "source": "omlist"
@@ -33020,13 +33217,28 @@
       "facultyId": "omlist-7b0e65a697d7e517",
       "name": "Uche Okongwu",
       "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "The linked Toulouse profile returned a missing-page response.",
+      "checkedAt": "2026-10-17",
+      "reason": "Second pass: the TBS teacher profile is still a 404 (checked at both URL orders, through the r.jina.ai reader); LinkedIn is blocked to the reader, and one web search found nothing about him. theses.fr confirms the INPL (Vandoeuvre-les-Nancy) doctorate in industrial systems engineering, 1990 (Contribution a la formalisation du concept de flexibilite des systemes industriels, advisor Maurice Castagne; only the year is given). His ORCID record has a single employment entry, Professor, Information, Operations and Management Sciences, Toulouse Business School, from 1991-05-01, and no education entries. TBS from May 1991 is the earliest dated post, but ORCID lists only the current employer, so it does not show whether he held another job between the 1990 thesis and May 1991 or a job that ran through the doctorate. Earlier review (2026-10-16): the linked Toulouse profile returned a missing-page response.",
       "sources": [
         {
+          "url": "https://orcid.org/0000-0002-1345-5966",
+          "title": "ORCID record 0000-0002-1345-5966 (Uche Okongwu), public API",
+          "notes": "One employment entry: Toulouse Business School, Professor, from 1991-05-01; no education entries."
+        },
+        {
+          "url": "https://theses.fr/api/v1/theses/recherche/?q=okongwu",
+          "title": "theses.fr search API - Okongwu",
+          "notes": "Thesis 1990INPL104N, INPL, discipline Genie des systemes industriels, defended 1990 (date given as year only)."
+        },
+        {
           "url": "https://www.tbs-education.com/teacher/okongwu-uche/",
-          "title": "Uche Okongwu academic profile",
-          "notes": "The linked Toulouse profile returned a missing-page response."
+          "title": "TBS Education teacher profile (dead link)",
+          "notes": "404 page through the r.jina.ai reader; the reversed-name URL also 404."
+        },
+        {
+          "url": "https://omlist.edutool.org/schools/tbs-education/faculty/uche-okongwu.html",
+          "title": "OM List profile - Uche Okongwu",
+          "notes": "Links the dead TBS page, LinkedIn and the ORCID record; PhD INPL 1990 (imported)."
         }
       ],
       "source": "omlist"
@@ -34196,15 +34408,20 @@
       "facultyId": "omlist-02b666e7ed77ab98",
       "name": "Rodney Parker",
       "status": "unresolved",
-      "checkedAt": "2026-10-16",
+      "checkedAt": "2026-10-17",
+      "reason": "Second pass: the Michigan degree month could not be found. Deep Blue (the Michigan repository) is behind a Cloudflare check that blocks curl and a headless browser, and ProQuest is not reachable. The Kelley profile (re-read) gives Ph.D., The University of Michigan, 2002, and Assistant Professor, Yale School of Management, 2001-2007, then Visiting Assistant Professor, Cornell Johnson, 2007-2008, Chicago Booth 2008-2016 and Kelley from 2016. The Yale assistant professorship began before the degree and was not retitled; under the 17 October overlap rule it is the first job (Yale, 2001, tenure-track, overlap stated) if it began a few months before the thesis was finished, as in the published Brynjolfsson row, but a pre-degree post if it began well before (then the first new job would be the 2007 Cornell visiting post). Without the 2002 degree month the gap cannot be measured. Earlier review (2026-10-16): the Kelley profile dates the doctorate 2002 and Yale 2001-2007.",
       "sources": [
         {
           "url": "https://kelley.iu.edu/faculty-research/faculty-directory/profile.html?id=RODP",
-          "title": "Rodney Parker official profile",
-          "notes": "Kelley profile dates Michigan doctorate to 2002 but Yale assistant professorship 2001–2007. Initial faculty job began before doctorate completion."
+          "title": "Rodney Parker - Kelley School of Business profile",
+          "notes": "Read with curl. Degrees and positions with years as summarised."
+        },
+        {
+          "url": "https://deepblue.lib.umich.edu/search?query=%22Parker%2C%20Rodney%22",
+          "title": "Deep Blue (University of Michigan) search",
+          "notes": "Cloudflare security check; HTTP 403 to curl and blocked in headless Chromium."
         }
       ],
-      "reason": "Kelley profile dates Michigan doctorate to 2002 but Yale assistant professorship 2001–2007. Initial faculty job began before doctorate completion.",
       "source": "omlist"
     },
     {
@@ -37415,15 +37632,25 @@
       "facultyId": "omlist-1ebfc17bfd680970",
       "name": "Joe Roh",
       "status": "unresolved",
-      "checkedAt": "2026-10-16",
+      "checkedAt": "2026-10-17",
+      "reason": "Second pass: the TCU Neeley profile (rendered with a headless browser because the page is script-drawn) and the TCU directory profile list him as Professor of Supply Chain Management with a PhD from Michigan State University, an MS from the Air Force Institute of Technology and a BS from the US Air Force Academy, all undated, plus publications from 2013 on; neither gives employment dates or links a CV. The degrees suggest prior US Air Force service, which may have continued into or after the doctorate, so even his TCU start would not settle the first job. No ORCID record (searched Joe/Joseph Roh), LinkedIn is blocked, OpenAlex refused for its daily limit, and one web search found only TCU job postings naming him as search chair. The degree year (2011 imported) and the first post-PhD employer remain unverified. Earlier review (2026-10-16): the TCU profile link redirected to a general directory without a career chronology.",
       "sources": [
         {
+          "url": "https://neeley.tcu.edu/view/roh-joe",
+          "title": "Joe Roh - TCU Neeley faculty profile",
+          "notes": "Rendered with headless Chromium. Professor of Supply Chain Management; PhD Michigan State, MS AFIT, BS USAFA, undated; no CV or dates."
+        },
+        {
+          "url": "https://www.tcu.edu/directory/profile/roh-joe.php",
+          "title": "Joe Roh - TCU directory profile",
+          "notes": "Same degrees, undated; selected publications 2013-2022; CSCMP Doctoral Consortium Fellow 2009, 2010."
+        },
+        {
           "url": "https://www.neeley.tcu.edu/Roh-Joe",
-          "title": "Joe Roh public academic profile",
-          "notes": "Linked TCU profile redirects to a general faculty directory and does not expose the individual career chronology."
+          "title": "Joe Roh public academic profile (old link)",
+          "notes": "Earlier review (2026-10-16): redirected to the general directory."
         }
       ],
-      "reason": "Linked TCU profile redirects to a general faculty directory and does not expose the individual career chronology.",
       "source": "omlist"
     },
     {
@@ -37942,15 +38169,20 @@
       "facultyId": "omlist-8b8a554934a15c1c",
       "name": "Philippe Ruiz",
       "status": "unresolved",
-      "checkedAt": "2026-10-16",
+      "checkedAt": "2026-10-17",
+      "reason": "Second pass: re-read of the 2018 KEDGE CV gives the full sequence: PhD in Strategy, Programme & Project Management, SKEMA Business School, 2007 (the import says 2006); MS SKEMA 2004; earlier Havas/Vivendi and other industry posts 1995-2000 and INSEAD research-centre manager 2000-2003; SKEMA (ESC Lille) full-time associate professor 2004-2012, held through the doctorate; then 2013-2018 a set of concurrent part-time posts (part-time professor at IESEG and HEI in Lille and EDC and PSB in Paris, DBA supervisor and adjunct MBA professor at Maastricht School of Management, research manager of a dual-degree programme at ESG/PSB, thesis supervisor for the University of Liverpool online DBA); KEDGE from 2018 (assistant professor in project management). Under overlap rule 1 the SKEMA post is not the first job, and the first new employment after it is the 2013 bundle of part-time teaching posts, for which the CV names no primary employer or start order; the first full-time post is KEDGE in 2018. Which of these the dataset should record is a judgment for the integrator, so the case stays unresolved. The 2007 degree year is not confirmed by a thesis record: a theses.fr search (Ruiz Philippe, projet) returned no thesis by him. Earlier review (2026-10-16): the CV dates the doctorate 2007 and the SKEMA full-time post from 2004.",
       "sources": [
         {
           "url": "https://student.kedge.edu/content/download/76560/file/RUIZ%20Philippe%20CV%202018.pdf",
-          "title": "Philippe Ruiz curriculum vitae",
-          "notes": "CV dates doctorate to 2007 but full-time SKEMA associate appointment starts in 2004. Earliest post-degree role cannot be separated from ongoing employment."
+          "title": "Philippe Ruiz - curriculum vitae (KEDGE, 2018)",
+          "notes": "Downloaded with curl; education and positions as summarised."
+        },
+        {
+          "url": "https://theses.fr/api/v1/theses/recherche/?q=Ruiz%20Philippe%20projet",
+          "title": "theses.fr search API - Ruiz Philippe projet",
+          "notes": "Seven hits, none by Philippe Ruiz."
         }
       ],
-      "reason": "CV dates doctorate to 2007 but full-time SKEMA associate appointment starts in 2004. Earliest post-degree role cannot be separated from ongoing employment.",
       "source": "omlist"
     },
     {
@@ -38275,14 +38507,28 @@
     {
       "facultyId": "omlist-9a7c873ce676eb3c",
       "name": "Sahika Sahan",
-      "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "Texas State dates the operations doctorate to 2024 but faculty employment from September 2023. A separate mathematics doctorate dates to 2017; the first-job relationship to each degree is unresolved.",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "employer": "Texas State University, McCoy College of Business",
+      "position": "Assistant Professor in Information Systems & Analytics",
+      "placementYear": 2023,
+      "category": "tenure-track",
+      "evidenceUrl": "https://faculty.txst.edu/api/cv/2461039/Sahika%20Sahan%20%20--%20CV-1.pdf",
+      "evidenceNote": "Texas State CV: Assistant Professor in Information Systems & Analytics, Texas State University, 09/2023-present; Ph.D. in Supply Chain, Operations, and Technology, Olin (WashU), 08/2018-present at the time of writing; earlier Ph.D. in Mathematics, Missouri S&T, 07/2017. The profile now dates the WashU Ph.D. to 2024 and says she has been on the faculty since September 2023. The assistant professorship began before the operations dissertation was finished and was not retitled on completion, so it keeps its own September 2023 start (overlap stated). Between the two doctorates the CV shows only continuing mathematics instructor teaching at Missouri S&T and Columbia College (to Fall 2017) and WashU doctoral teaching.",
+      "phdYearVerified": 2024,
+      "phdInstitutionVerified": "Washington University in St. Louis",
+      "phdYearResolution": "The Texas State profile and education list date the WashU (Olin) Ph.D. in Supply Chain, Operations, and Technology to 2024; the import gives 2023. Her CV, written after Spring 2024 teaching had been scheduled, still lists that Ph.D. as 08/2018-present. A separate Ph.D. in Mathematics (Missouri S&T, July 2017) precedes it.",
+      "reason": "Second pass: the Texas State profile and the CV it links fix the sequence. Recorded under the imported WashU operations doctorate (the open TODO item on people with two doctorates applies): the first job is the Texas State assistant professorship from September 2023, begun while the dissertation was unfinished, with the overlap stated. If the integrator instead keys the record to the 2017 mathematics doctorate, no new post-PhD job is documented before Texas State either: after July 2017 she continued pre-degree instructor teaching (Fall 2017) and then entered the WashU doctoral program in August 2018.",
       "sources": [
         {
+          "url": "https://faculty.txst.edu/api/cv/2461039/Sahika%20Sahan%20%20--%20CV-1.pdf",
+          "title": "Sahika Sahan Konur - CV (Texas State faculty profile)",
+          "notes": "Downloaded with curl from the profile's CV link; academic experience, education and teaching history as summarised."
+        },
+        {
           "url": "https://faculty.txstate.edu/profile/2461039",
-          "title": "Sahika Sahan academic profile",
-          "notes": "Texas State dates the operations doctorate to 2024 but faculty employment from September 2023. A separate mathematics doctorate dates to 2017; the first-job relationship to each degree is unresolved."
+          "title": "Dr. Sahika Sahan - Texas State faculty profile",
+          "notes": "On the faculty since September 2023; second Ph.D. WashU Olin 2024; first Ph.D. Mathematics, Missouri S&T 2017."
         }
       ],
       "source": "omlist"
@@ -38510,15 +38756,20 @@
       "facultyId": "omlist-0e53c58c673e1ead",
       "name": "Subhashish Samaddar",
       "status": "unresolved",
-      "checkedAt": "2026-10-16",
+      "checkedAt": "2026-10-17",
+      "reason": "Second pass: the degree month is still unknown, so the final-months test cannot be applied. The Kent State library catalogue (OhioLINK Primo, read with a headless browser) holds his dissertation, A monolithic approach for resource sharing and scheduling in multirobot assembly cell, Kent State University, 1991 (year only); ProQuest is not reachable. The CV gives Research & Teaching Fellow, Kent State, 1989-1990; Assistant Professor of Operations Management, Bryant College, 1990-1992 (with a concurrent Rhode Island Small Business Development Center consultancy 1990-1991); Assistant Professor, Western Illinois University, 1992-1993, then associate professor there. If the Bryant post began only in the final months before the 1991 conferral it would be the first job (Bryant, 1990, tenure-track, overlap noted); if it began a year or more before the degree it is a pre-degree post and the first new job is Western Illinois, 1992. Earlier review (2026-10-16): the CV dates the PhD 1991 and Bryant 1990-1992.",
       "sources": [
         {
           "url": "https://www.dropbox.com/scl/fi/j8lfz0v56ynjltdjkt4mf/Sub-Samaddar-CV.pdf?rlkey=7zeiz9o2py8dixeeg92gklcfi&st=5cgov8xj&dl=1",
-          "title": "Subhashish Samaddar curriculum vitae",
-          "notes": "CV dates Kent State PhD to 1991, but Bryant assistant appointment begins in 1990 and continues through 1992. Pre-degree appointment requires clarification."
+          "title": "Subhashish Samaddar - curriculum vitae",
+          "notes": "Downloaded with curl; academic and professional experience and education with years only."
+        },
+        {
+          "url": "https://ohiolink-ksu.primo.exlibrisgroup.com/discovery/search?vid=01OHIOLINK_KSU:KSU&tab=Everything&search_scope=MyInst_and_CI&query=any,contains,Samaddar%20dissertation&offset=0",
+          "title": "Kent State University Libraries catalogue (Primo) - Samaddar dissertation",
+          "notes": "Rendered with headless Chromium: dissertation, Kent State University, 1991, microfilm TS157.5 .S94x 1991; no month."
         }
       ],
-      "reason": "CV dates Kent State PhD to 1991, but Bryant assistant appointment begins in 1990 and continues through 1992. Pre-degree appointment requires clarification.",
       "source": "omlist"
     },
     {
@@ -38894,16 +39145,24 @@
     {
       "facultyId": "omlist-8aa2648ce72762a9",
       "name": "Sergei Savin",
-      "status": "unresolved",
-      "checkedAt": "2026-10-16",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "employer": "Columbia University, Graduate School of Business",
+      "position": "Assistant Professor",
+      "placementYear": 2001,
+      "category": "tenure-track",
+      "evidenceUrl": "https://faculty.wharton.upenn.edu/wp-content/uploads/2025/03/CVSavinFeb2025.pdf",
+      "evidenceNote": "CV (February 2025): Ph.D. in Operations and Information Management, Wharton, 2001; Ph.D. in Physics, University of Pennsylvania, 1996; academic experience starts with Columbia Graduate School of Business, Assistant Professor 2001-2004, then Associate Professor 2004-2008, LBS 2008-2009 and Wharton from 2009. Recorded under the imported 2001 Wharton operations doctorate: Columbia from 2001 is the first job after it. The CV lists no employment between the 1996 physics doctorate and 2001, so if the record were keyed to the physics degree the first job would be undocumented.",
+      "phdYearVerified": 2001,
+      "phdInstitutionVerified": "University of Pennsylvania",
+      "reason": "Second pass: the CV dates the operations doctorate (Wharton 2001) and the Columbia assistant professorship from 2001. Following the practice for people with two doctorates noted in TODO.md (record under the imported degree), Columbia 2001 is the first job after the operations PhD. The degree month and Columbia start month are not given. The integrator should note the earlier 1996 Penn physics doctorate.",
       "sources": [
         {
           "url": "https://faculty.wharton.upenn.edu/wp-content/uploads/2025/03/CVSavinFeb2025.pdf",
-          "title": "Sergei Savin curriculum vitae",
-          "notes": "CV lists two PhDs: Physics in 1996 and Operations in 2001, with Columbia faculty role from 2001. Employment between the doctorates is omitted; first job after earliest PhD unclear."
+          "title": "Sergei Savin - curriculum vitae (February 2025)",
+          "notes": "Downloaded with curl; academic experience and education as summarised."
         }
       ],
-      "reason": "CV lists two PhDs: Physics in 1996 and Operations in 2001, with Columbia faculty role from 2001. Employment between the doctorates is omitted; first job after earliest PhD unclear.",
       "source": "omlist"
     },
     {
@@ -39035,16 +39294,34 @@
     {
       "facultyId": "omlist-16f19d5e094c1f94",
       "name": "Maximilian Schiffer",
-      "status": "unresolved",
-      "checkedAt": "2026-10-16",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "employer": "RWTH Aachen University",
+      "position": "Postdoctoral researcher, Chair of Operations Management",
+      "placementYear": null,
+      "category": "postdoc",
+      "evidenceUrl": "https://www.gerad.ca/en/people/maximilian-schiffer",
+      "evidenceNote": "GERAD profile: Ph.D. RWTH Aachen, Jun 2014 - Sep 2017 (thesis Logistics Networks with Intermediate Stops); after finishing his thesis he became a GERAD associate member (December 2017); in 2018 he held a postdoctoral position at RWTH Aachen and a visiting scholar position at Stanford's Autonomous Systems Laboratory; in September 2018 he was appointed to the TUM School of Management. ORCID shows one continuous RWTH Chair of Operations Management entry, 2014-10-01 to 2018-09-16, then TUM Professor from 2018-09-17. The doctoral post ran into the postdoctoral post at the same chair, so the first post-PhD job is the RWTH postdoc; its start month (between September 2017 and 2018) is not stated, so placementYear is null.",
+      "phdYearVerified": 2017,
+      "phdInstitutionVerified": "RWTH Aachen University",
+      "reason": "Second pass: the GERAD member profile and ORCID establish the sequence: RWTH doctorate completed September 2017, a postdoctoral position at RWTH (held in 2018, with a concurrent Stanford visiting-scholar position), then TUM from 17 September 2018. The postdoc follows the doctoral post at the same chair, recorded like the published Schlapp and Minner rows; its start date is not given. The TUM staff page for him could not be found and professoren.tum.de and web.archive.org did not serve his older profile.",
       "sources": [
         {
-          "url": "https://mgt.tum.de/professors-1/info/prof-dr-maximilian-schiffer",
-          "title": "Maximilian Schiffer official profile",
-          "notes": "Linked TUM faculty profile returns not found; an alternate professor-directory request also failed. First post-doctoral role remains unverified."
+          "url": "https://www.gerad.ca/en/people/maximilian-schiffer",
+          "title": "GERAD - Maximilian Schiffer",
+          "notes": "Read with curl. Biography and education as summarised (PhD Jun 2014 - Sep 2017, RWTH Aachen; postdoc RWTH and Stanford visiting scholar in 2018; TUM from September 2018)."
+        },
+        {
+          "url": "https://orcid.org/0000-0003-2682-4975",
+          "title": "ORCID record 0000-0003-2682-4975 (Maximilian Schiffer), public API",
+          "notes": "RWTH Chair of Operations Management 2014-10-01 to 2018-09-16 (no title); TUM School of Management Professor from 2018-09-17."
+        },
+        {
+          "url": "https://www.professoren.tum.de/schiffer-maximilian/",
+          "title": "TUM professors page (404)",
+          "notes": "Returns 404 now; a search snippet said it lists Akademischer Rat at RWTH and a Stanford visit, not verified."
         }
       ],
-      "reason": "Linked TUM faculty profile returns not found; an alternate professor-directory request also failed. First post-doctoral role remains unverified.",
       "source": "omlist"
     },
     {
@@ -41218,29 +41495,28 @@
     {
       "facultyId": "omlist-025e610847f10c0d",
       "name": "Park Sinchaisri",
-      "status": "unresolved",
-      "checkedAt": "2026-10-16",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "employer": "University of California, Berkeley, Haas School of Business",
+      "position": "Assistant Professor, Operations and Information Technology Management",
+      "placementYear": 2021,
+      "category": "tenure-track",
+      "evidenceUrl": "https://parksinchaisri.github.io/files/cv.pdf",
+      "evidenceNote": "CV: Ph.D. in Operations, Information, and Decisions, Wharton, 9/2016-5/2021; Assistant Professor, Haas School of Business, UC Berkeley, 7/2021-; Lecturer, The Wharton School, OID, 7/2021-8/2021. The two-month Wharton summer lectureship is a short concurrent teaching post beside the Berkeley appointment, which began the same month, so the Berkeley assistant professorship is recorded as the first primary job (concurrent teaching post kept here). The Wharton OID placement list also gives UC Berkeley for him. Integrator (2026-10-17): phdYearVerified removed. The CV gives the doctorate only as the study period 9/2016-5/2021 and the Wharton list year is a placement cohort; no opened source dates the conferral. The Berkeley post from July 2021 is the first post listed after doctoral study, so the first-job finding does not change.",
+      "phdInstitutionVerified": "University of Pennsylvania",
+      "reason": "Second pass: the CV dates the Berkeley assistant professorship from July 2021 (open-ended) and the Wharton lectureship to July-August 2021 only, after the May 2021 PhD. Under the concurrent-role rule the summer teaching post is not the first new primary job; the Berkeley post is. A verifier may wish to confirm that a two-month lectureship starting the same month as the tenure-track post is treated as concurrent.",
       "sources": [
         {
-          "url": "https://oid.wharton.upenn.edu/programs/phd/post-wharton/",
-          "title": "Wharton OID — Post-Wharton placements",
-          "notes": "University doctoral placement list."
+          "url": "https://parksinchaisri.github.io/files/cv.pdf",
+          "title": "Park Sinchaisri - curriculum vitae",
+          "notes": "Downloaded with curl; academic positions and education with months as summarised."
         },
         {
-          "url": "https://parksinchaisri.github.io/files/cv.pdf",
-          "title": "Park Sinchaisri curriculum vitae",
-          "notes": "CV dates both Berkeley assistant professorship and Wharton lecturer appointment to July 2021, following May 2021 PhD. Same-month competing appointments prevent a unique first employer determination."
+          "url": "https://oid.wharton.upenn.edu/programs/phd/post-wharton/",
+          "title": "Wharton OID - Post-Wharton placements",
+          "notes": "Lists Park Sinchaisri with UC Berkeley in the 2021 group."
         }
       ],
-      "reason": "CV dates both Berkeley assistant professorship and Wharton lecturer appointment to July 2021, following May 2021 PhD. Same-month competing appointments prevent a unique first employer determination.",
-      "reportedAcademicPlacement": {
-        "employer": "University of California, Berkeley",
-        "position": null,
-        "placementYear": null,
-        "phdYearVerified": 2021,
-        "evidenceUrl": "https://oid.wharton.upenn.edu/programs/phd/post-wharton/",
-        "evidenceNote": "Listed in the 2021 doctoral cohort with this placement; position and employment start date are not stated."
-      },
       "source": "omlist"
     },
     {
@@ -43016,16 +43292,34 @@
     {
       "facultyId": "omlist-aaf8ad67ecb1ffa2",
       "name": "Jürgen Strohhecker",
-      "status": "unresolved",
-      "checkedAt": "2026-10-16",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "employer": "Frankfurt School of Finance & Management (then Hochschule für Bankwirtschaft, HfB)",
+      "position": "Professor of Business Administration, Production and Controlling",
+      "placementYear": 1999,
+      "category": "unknown",
+      "evidenceUrl": "https://www.frankfurt-school.de/de/home/research-and-faculty/faculty/faculty-directory/juergen-strohhecker",
+      "evidenceNote": "German Frankfurt School biography: professor of business administration, production and controlling at the Frankfurt School (formerly HfB) since 1999; 1992-1996 research associate (wissenschaftlicher Mitarbeiter) at the Industrieseminar, University of Mannheim; 1997 doctorate (Dr. rer. pol.); 1995-2001 managing director of SIMCON GmbH; January-August 2002 visiting research fellow, London Business School. ORCID dates the Frankfurt School professorship from 1999-04-01. The SIMCON post began before the 1997 degree and continued to 2001, so it is not a new post-PhD job; the first new post is the HfB/Frankfurt School professorship from April 1999. The contract type of the German private-university chair is not stated, so the category is unknown.",
+      "phdYearVerified": 1997,
+      "phdInstitutionVerified": "University of Mannheim",
+      "reason": "Second pass: the English biography omits his Frankfurt School start, but the German version of the same page (read with curl) gives it as 1999, and his ORCID record gives 1 April 1999. With the SIMCON managing directorship (1995-2001) held through the degree, the 1999 professorship is the first new job. Note: the ORCID education entries (Diplom-Kaufmann 1997-2002, Dr. rer. pol. 2002-2007) conflict with the biography (studies 1987-1992, doctorate 1997) and with his 1999 professorship, so they are disregarded as mis-entered; the doctorate year comes from the biography.",
       "sources": [
         {
+          "url": "https://www.frankfurt-school.de/de/home/research-and-faculty/faculty/faculty-directory/juergen-strohhecker",
+          "title": "Prof. Dr. Jürgen Strohhecker - Frankfurt School faculty directory (German)",
+          "notes": "Read with curl. Professor at the Frankfurt School since 1999 (formerly HfB); Mannheim research associate 1992-1996; Dr. rer. pol. 1997; SIMCON managing director 1995-2001; LBS visiting research fellow January-August 2002."
+        },
+        {
           "url": "https://www.frankfurt-school.de/en/home/research-and-faculty/faculty/faculty-directory/juergen-strohhecker",
-          "title": "Jürgen Strohhecker Profile",
-          "notes": "Frankfurt biography gives doctorate1997 with SIMCON managing director1995-2001 spanning degree; first new appointment after completion is not established."
+          "title": "Prof. Dr. Jürgen Strohhecker - Frankfurt School faculty directory (English)",
+          "notes": "Same chronology without the 1999 start."
+        },
+        {
+          "url": "https://orcid.org/0000-0002-6626-2439",
+          "title": "ORCID record 0000-0002-6626-2439 (Jürgen Strohhecker), public API",
+          "notes": "Employment: Frankfurt School, Management Department, Professor Dr., from 1999-04-01. Education entries with inconsistent dates (see reason)."
         }
       ],
-      "reason": "Frankfurt biography gives doctorate1997 with SIMCON managing director1995-2001 spanning degree; first new appointment after completion is not established.",
       "source": "omlist"
     },
     {
@@ -44862,14 +45156,27 @@
     {
       "facultyId": "omlist-6debac952ba6cb28",
       "name": "Jörn-Henrik Thun",
-      "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "Frankfurt biography dates Mannheim assistant lecturer 1998-2003 across doctorate 2002, followed by assistant professor 2003; first post-completion role transition is ambiguous.",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "employer": "University of Mannheim, Industrieseminar",
+      "position": "Wissenschaftlicher Assistent (assistant professor)",
+      "placementYear": 2003,
+      "category": "postdoc",
+      "evidenceUrl": "https://www.frankfurt-school.de/de/home/research-and-faculty/faculty/faculty-directory/joern-henrik-thun",
+      "evidenceNote": "Frankfurt School biography (German): 1998-2003 wissenschaftlicher Mitarbeiter (research associate, the doctoral post) at the Industrieseminar, University of Mannheim; 2002 Dr. rer. pol., Mannheim; 2003-2009 wissenschaftlicher Assistent at the Industrieseminar (the English page calls it assistant professor); 2009 habilitation; 2010 acting professorship, Hamburg; Frankfurt School professor since September 2010. The doctoral research-associate post ran a few months past the degree; the first new post is the 2003 wissenschaftlicher Assistent position at the same chair, recorded like the published Schlapp and Minner rows. Category postdoc: the German page titles the 2003-2009 post wissenschaftlicher Assistent, the fixed-term post-doctoral assistant post held up to his 2009 habilitation. It is recorded like the published Minner and Schön post-doctoral rows; the English page's 'assistant professor' is a translation and does not state a tenure-track post (integrator check, 2026-10-17).",
+      "phdYearVerified": 2002,
+      "phdInstitutionVerified": "University of Mannheim",
+      "reason": "Second pass: the German version of the Frankfurt School biography separates the 1998-2003 doctoral research-associate post (wissenschaftlicher Mitarbeiter) from the 2003-2009 post-doctoral assistant post (wissenschaftlicher Assistent), both at the Mannheim Industrieseminar. The 2003 post is a new post-doctoral position after the 2002 degree, as in the published German doctoral-to-postdoctoral rows. His ORCID record (0000-0002-0856-1174) has no entries.",
       "sources": [
         {
+          "url": "https://www.frankfurt-school.de/de/home/research-and-faculty/faculty/faculty-directory/joern-henrik-thun",
+          "title": "Prof. Dr. Jörn-Henrik Thun - Frankfurt School faculty directory (German)",
+          "notes": "Read with curl. Chronology as summarised."
+        },
+        {
           "url": "https://www.frankfurt-school.de/en/home/research-and-faculty/faculty/faculty-directory/joern-henrik-thun",
-          "title": "Jörn-Henrik Thun public academic profile",
-          "notes": "Frankfurt biography dates Mannheim assistant lecturer 1998-2003 across doctorate 2002, followed by assistant professor 2003; first post-completion role transition is ambiguous."
+          "title": "Prof. Dr. Jörn-Henrik Thun - Frankfurt School faculty directory (English)",
+          "notes": "Assistant lecturer 1998-2003; doctorate 2002; assistant professor at the Industrieseminar 2003-2009; Frankfurt School since September 2010."
         }
       ],
       "source": "omlist"
@@ -46645,14 +46952,28 @@
     {
       "facultyId": "omlist-6438a01d682bd347",
       "name": "Laurence Viale",
-      "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "CV dates Grenoble doctorate to 2018 but lists EM Strasbourg lecturer/assistant professor in 2011–2018 and independent consulting in 2009–2019, followed by an academic-director role from 2018. Employment continuing at degree completion and concurrent role transitions prevent a unique first post-PhD placement.",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "employer": "IÉSEG School of Management",
+      "position": "Professor of Purchasing and Supply Management",
+      "placementYear": 2025,
+      "category": "unknown",
+      "evidenceUrl": "https://www.ieseg.fr/academ/ProdAcadem/250056.pdf",
+      "evidenceNote": "IESEG CV (dated 17/10/2026): Ph.D., Business Administration, Operations Management, University Pierre Mendes France of Grenoble, 2018 (theses.fr: defended 1 June 2018, Universite Grenoble Alpes); HDR 2022. Academic posts: Lecturer / Assistant professor, EM Strasbourg, 2011-2018; Academic director PGE SCM PSM, EM Strasbourg, 2018-2024; Associate Dean Program Masters - Associate Professor, EM Strasbourg, 2024-2025; Professor of Purchasing and Supply Management, IESEG, from 2025. Consulting: LV Consulting owner 2009-2019. The EM Strasbourg post was held through the doctorate and her later EM Strasbourg roles are internal moves at that pre-degree employer; the consultancy began before the degree and ended in 2019. Under overlap rule 1 and the internal-promotion decision (as in the published Fleszar row) the first new employer after the degree is IESEG, from 2025. The contract type of the French business-school professorship is not stated, so the category is unknown.",
+      "phdYearVerified": 2018,
+      "phdInstitutionVerified": "Université Grenoble Alpes",
+      "phdInstitutionResolution": "theses.fr records the thesis (2018GREAG001, Contribution de la fonction achats dans le processus d'innovation des industries agro-alimentaires) as defended on 1 June 2018 at Universite Grenoble Alpes (ComUE), the university into which Pierre Mendes France merged in 2016; her CV and the import write University Pierre Mendes France of Grenoble.",
+      "reason": "Second pass: the triage asked for the employer of the 2018 academic-director role; the CV shows it was EM Strasbourg, her employer since 2011, so it is not a new employer. Applying overlap rule 1 and the internal-promotion decision, the first new post-PhD job is the IESEG professorship from 2025, seven years after the degree. A verifier should confirm that the 2018 change from lecturer/assistant professor to academic director at EM Strasbourg is an internal move rather than a post converted on completion (if converted, the first job would be EM Strasbourg, 2018, category unknown).",
       "sources": [
         {
           "url": "https://www.ieseg.fr/academ/ProdAcadem/250056.pdf",
-          "title": "Laurence Viale — Curriculum Vitae",
-          "notes": "Education and employment chronology reviewed; requires further clarification."
+          "title": "Laurence Viale - Curriculum Vitae (IESEG, dated 17/10/2026)",
+          "notes": "Downloaded with curl; education, academic, professional and consulting experience as summarised."
+        },
+        {
+          "url": "https://theses.fr/api/v1/theses/recherche/?q=Viale%20Laurence",
+          "title": "theses.fr search API - Viale Laurence",
+          "notes": "Thesis 2018GREAG001, Universite Grenoble Alpes (ComUE), defended 01/06/2018."
         }
       ],
       "source": "omlist"
@@ -46883,14 +47204,39 @@
     {
       "facultyId": "omlist-c8fdac2901816762",
       "name": "Chris Voss",
-      "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "The Warwick profile returned a person-not-found response.",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "employer": "University of Warwick",
+      "position": "Alan Edward Higgs Professor of Manufacturing Policy and Strategy",
+      "placementYear": 1985,
+      "category": "unknown",
+      "evidenceUrl": "https://assets.london.edu/hxo16fanegqh/61f378b9-fdbc-451e-90b6-77255bd5956b/3fe51aa047b8147c3d0ab9fc40a3d79f/chris-voss-cv-2018.pdf",
+      "evidenceNote": "CV (2018, linked from the LBS profile): PhD Business Administration, London Business School, 1982 (MSc LBS 1970, BSc Imperial 1964). Career: British Steel production controller 1964-1967; Harbridge House Europe manager 1970-1975; University of Western Ontario Assistant Professor 1975-1977; LBS Lecturer 1977-1985; Visiting Fellow, AGSM, and Project Fellow, Warren Centre, University of Sydney, 1984; Warwick Alan Edward Higgs Professor 1985-90; LBS Professor from 1990. The LBS lectureship began five years before the 1982 PhD and continued to 1985, so it is not a new post-PhD job; the 1984 Sydney fellowships were held while he was still an LBS lecturer (a visit, treated as concurrent). The first new primary post is the Warwick chair from 1985; the source names a named professorship without contract terms, so the category is unknown.",
+      "phdYearVerified": 1982,
+      "phdInstitutionVerified": "London Business School",
+      "phdYearResolution": "The LBS CV dates the PhD in Business Administration to 1982; 1970 (the imported year) is the year of his LBS MSc.",
+      "phdInstitutionResolution": "The CV names London Business School; the LBS profile writes the degrees as BSc MSc PhD (London). LBS is a constituent of the University of London named in the import, so this is the same institution in a more specific form.",
+      "reason": "Second pass: the Warwick link is dead (person not found) and the old LBS URL is a 404, but the current LBS profile (faculty-profiles/v/voss-c-a) links a 2018 CV with a dated career. It shows the doctorate was 1982, not 1970, earned while he was an LBS lecturer (1977-1985). Under the overlap rule that lectureship is not the first job; the first new post is the Warwick professorship from 1985. A verifier should check the treatment of the 1984 Australian visiting/project fellowships as concurrent with the LBS lectureship rather than as the first new job.",
       "sources": [
         {
+          "url": "https://assets.london.edu/hxo16fanegqh/61f378b9-fdbc-451e-90b6-77255bd5956b/3fe51aa047b8147c3d0ab9fc40a3d79f/chris-voss-cv-2018.pdf",
+          "title": "Chris Voss - CV 2018 (London Business School)",
+          "notes": "Downloaded with curl; positions and education with years as summarised."
+        },
+        {
+          "url": "https://www.london.edu/faculty-and-research/faculty-profiles/v/voss-c-a",
+          "title": "Chris Voss - London Business School faculty profile",
+          "notes": "Read with curl. Emeritus Professor; BSc MSc PhD (London); Masters and PhD at LBS; links the CV."
+        },
+        {
+          "url": "https://orcid.org/0000-0001-6138-5379",
+          "title": "ORCID record 0000-0001-6138-5379 (Chris Voss), public API",
+          "notes": "Undated Warwick and LBS employment; LBS PhD undated."
+        },
+        {
           "url": "https://www.wbs.ac.uk/about/person/christopher-voss",
-          "title": "Chris Voss academic profile",
-          "notes": "The Warwick profile returned a person-not-found response."
+          "title": "Warwick Business School person page",
+          "notes": "Person not found (earlier review and now)."
         }
       ],
       "source": "omlist"
@@ -48391,16 +48737,23 @@
     {
       "facultyId": "omlist-8dc9a7b3f4f4a376",
       "name": "Gabriel Weintraub",
-      "status": "unresolved",
-      "checkedAt": "2026-10-16",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "employer": "Columbia Business School",
+      "position": "Assistant Professor, Decision, Risk & Operations Division",
+      "placementYear": 2006,
+      "category": "tenure-track",
+      "evidenceUrl": "https://www.justice.gov/atr/media/1368371/dl",
+      "evidenceNote": "CV dated December 2023 (a public court exhibit): Ph.D. in Management Science and Engineering, Stanford, 2001-2006; Columbia Business School Assistant Professor, July 2006 - June 2010, then associate and tenured posts to 2016; Harvard Kennedy School Visiting Scholar, Mossavar-Rahmani Center, July 2006 - June 2007; earlier University of Chile full-time instructor November 1999 - August 2001 (before the doctorate). The Columbia appointment is dated from July 2006 and the Harvard visiting-scholar post is a concurrent one-year visit (his first Columbia teaching listed is Summer 2007), so Columbia is the first primary post-PhD job. Integrator (2026-10-17): phdYearVerified removed. The CV gives the Stanford Ph.D. only as the study period 2001-2006, which is not a conferral year. The Columbia post from July 2006 is the first post listed after doctoral study.",
+      "phdInstitutionVerified": "Stanford University",
+      "reason": "Second pass: the CV dates the Columbia assistant professorship from July 2006 as his employing post, with the July 2006 - June 2007 Harvard Kennedy School visiting-scholar position held alongside it; under the concurrent-role practice the Columbia post is the first job. A verifier may note that he apparently spent 2006-07 in residence at Harvard (first Columbia course Summer 2007); the CV still dates the Columbia post from July 2006.",
       "sources": [
         {
           "url": "https://www.justice.gov/atr/media/1368371/dl",
-          "title": "Gabriel Weintraub official profile",
-          "notes": "CV dates Stanford doctorate to 2006, Columbia assistant professorship July 2006 and Harvard visiting scholar July 2006. Concurrent appointments require clarification of the first employer."
+          "title": "Gabriel Y. Weintraub - curriculum vitae (December 2023, DOJ trial exhibit PTX1779)",
+          "notes": "Downloaded with curl; professional academic experience and education as summarised; teaching list starts at Columbia in Summer 2007."
         }
       ],
-      "reason": "CV dates Stanford doctorate to 2006, Columbia assistant professorship July 2006 and Harvard visiting scholar July 2006. Concurrent appointments require clarification of the first employer.",
       "source": "omlist"
     },
     {
@@ -48856,14 +49209,26 @@
     {
       "facultyId": "omlist-4a76ff96898fde0e",
       "name": "Gordon Wilmsmeier",
-      "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "KLU biography gives doctorate 2010 and Edinburgh Napier employment 2007-2011 spanning the doctorate, with undated consulting; first post-completion job remains ambiguous.",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "employer": "United Nations Economic Commission for Latin America and the Caribbean (UN-ECLAC), Santiago",
+      "position": "Economic Affairs Officer, Infrastructure Services Unit, Natural Resources and Infrastructure Division",
+      "placementYear": 2011,
+      "category": "government",
+      "evidenceUrl": "https://www.klu.org/faculty-research/faculty/resident-faculty/gordon-wilmsmeier",
+      "evidenceNote": "KLU profile academic CV: Doctorate (Dr. phil.), Osnabruck University, 2005-2010; positions: Principal Research Fellow, Transport Research Institute, Edinburgh Napier University, 2007-2011; Independent Research Fellow, Adelphi Research/Consult, Berlin, 2003-2010; Economic Affairs Officer, UN-ECLAC, Santiago, 2011-2017; Universidad de los Andes chair from 2017; KLU from 2021. ORCID dates the Napier post 2007-01 to 2011-07 and the ECLAC post 2011-07 to 2017-02-28. The Napier and Adelphi posts began before the 2010 degree (Napier continued into 2011), so the first new post-PhD job is UN-ECLAC from July 2011. Category government for a UN intergovernmental commission (no precedent in the published rows; flagged). Integrator (2026-10-17): phdYearVerified removed. The KLU CV gives the doctorate only as the study period 2005-2010, which is not a conferral year, ORCID has no education entry, and no opened source dates the conferral. The ECLAC start of July 2011 follows the end of that period, so the first-job finding does not change.",
+      "phdInstitutionVerified": "Osnabrück University",
+      "reason": "Second pass: the KLU page now carries a dated academic CV and the ORCID record gives months: Edinburgh Napier January 2007 - July 2011 (held through the 2005-2010 doctorate), then UN-ECLAC from July 2011, the first employer after the degree. Undated consulting for UN agencies, the World Bank and OAS is mentioned in the biography; the dated Adelphi fellowship ended in 2010.",
       "sources": [
         {
           "url": "https://www.klu.org/faculty-research/faculty/resident-faculty/gordon-wilmsmeier",
-          "title": "Gordon Wilmsmeier public academic profile",
-          "notes": "KLU biography gives doctorate 2010 and Edinburgh Napier employment 2007-2011 spanning the doctorate, with undated consulting; first post-completion job remains ambiguous."
+          "title": "Prof. Dr. Gordon Wilmsmeier - Kühne Logistics University",
+          "notes": "Read with curl. Biography and academic CV with years; education 2005-2010 Dr. phil. Osnabruck (thesis on international maritime transport costs)."
+        },
+        {
+          "url": "https://orcid.org/0000-0001-8848-9004",
+          "title": "ORCID record 0000-0001-8848-9004 (Gordon Wilmsmeier), public API",
+          "notes": "Employment: Napier TRI Principal Research Fellow 2007-01 to 2011-07; UN-ECLAC Economic Affairs Officer 2011-07 to 2017-02-28; Hochschule Bremen honorary professor from 2013-10; Los Andes from 2017-03; KLU from 2021-09."
         }
       ],
       "source": "omlist"
@@ -48906,21 +49271,29 @@
     {
       "facultyId": "omlist-b4aea40e5efcf864",
       "name": "Joel Wooten",
-      "status": "unresolved",
-      "checkedAt": "2026-10-16",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "employer": "University of South Carolina, Moore School of Business",
+      "position": "Assistant Professor of Management Science",
+      "placementYear": 2013,
+      "category": "tenure-track",
+      "evidenceUrl": "https://jwooten.weebly.com/uploads/1/6/0/9/16090314/cv_2025_2.pdf",
+      "evidenceNote": "CV (2025): PhD in Operations Management, Wharton, 2013; positions: Assistant Professor of Management Science, Moore School, University of South Carolina, 2013-2022, then Associate Professor; INSEAD visiting 2022-2024. Under Experience: Easy Eats, LLC - Founder, 2011-2013; Smatchy, Inc. - Founder, 2006-2009; Bain & Company, 2001-2004. The Easy Eats venture began two years before the degree and ended in the degree year, so it is a pre-degree role, not a new post-PhD job; the South Carolina assistant professorship from 2013 is the first new job. Wharton's placement list gives University of South Carolina for him.",
+      "phdYearVerified": 2013,
+      "phdInstitutionVerified": "University of Pennsylvania",
+      "reason": "Second pass: the CV shows the Easy Eats founder role (2011-2013) was a venture begun during the doctorate that ended in 2013, not a job continued after it; no other post intervenes, so the 2013 South Carolina assistant professorship is the first post-PhD job. Months are not given.",
       "sources": [
         {
-          "url": "https://oid.wharton.upenn.edu/programs/phd/post-wharton/",
-          "title": "Wharton OID: Post-Wharton placements",
-          "notes": "Listed in the 2013 graduating-student placement table; exact role and start date unspecified. Reported destination: University of South Carolina. This destination is retained as a research lead, not a verified first post-doctoral employer."
+          "url": "https://jwooten.weebly.com/uploads/1/6/0/9/16090314/cv_2025_2.pdf",
+          "title": "Joel Wooten - CV 2025",
+          "notes": "Downloaded with curl; positions, education and experience as summarised."
         },
         {
-          "url": "https://jwooten.weebly.com/uploads/1/6/0/9/16090314/cv_2025_2.pdf",
-          "title": "Joel Wooten CV",
-          "notes": "CV gives 2013 Wharton doctorate and South Carolina assistant professorship from 2013, but also an Easy Eats founder role spanning 2011–2013. Exact end date and degree completion ordering are absent."
+          "url": "https://oid.wharton.upenn.edu/programs/phd/post-wharton/",
+          "title": "Wharton OID - Post-Wharton placements",
+          "notes": "Lists Joel Wooten with University of South Carolina in the 2013 group."
         }
       ],
-      "reason": "First faculty appointment is corroborated, but a founder role overlaps the doctoral completion year; the first post-PhD employment sequence remains unclear.",
       "source": "omlist"
     },
     {
@@ -53546,22 +53919,27 @@
       "name": "Qinghua Zhu",
       "status": "unresolved",
       "checkedAt": "2026-10-17",
-      "reason": "Her ORCID record lists employment at Dalian University of Technology from April 1995 to November 2015 and at Shanghai Jiao Tong University from December 2015 (Distinguished Professor to June 2023), but has no education entries; neither ORCID nor the SJTU English and Chinese profiles state the doctorate or its year. If the imported Dalian 2000 PhD is right, the Dalian job began about five years before the degree and continued for fifteen years, so it is not a new post-PhD job, and the next documented employer (SJTU, 2015) cannot be confirmed as the first new job without a dated degree and a complete chronology.",
+      "reason": "Second pass: the doctorate is still undated. The SJTU Antai Chinese profile (re-read with curl) describes her as chair professor and associate dean with projects and awards, but gives no degree or employment chronology; the Dalian University of Technology faculty pages tried (faculty.dlut.edu.cn/zhuqinghua) return 404; CNKI is not reachable; and one Chinese-language web search found only namesakes. Her ORCID record (earlier review) lists Dalian University of Technology from April 1995 to November 2015 and SJTU from December 2015, with no education entries. If the imported Dalian 2000 PhD is right, the Dalian job began about five years before the degree and continued for fifteen years after it, so it is not a new post-PhD job; the next employer (SJTU, December 2015) could be the first new job, but without a dated degree that cannot be confirmed. Earlier review (2026-10-17): ORCID and the SJTU English and Chinese pages gave no degree or year.",
       "sources": [
+        {
+          "url": "https://www.acem.sjtu.edu.cn/faculty/zhuqinghua.html",
+          "title": "Qinghua Zhu - SJTU Antai (Chinese)",
+          "notes": "Re-read with curl. Chair professor and associate dean; projects and awards; no degree or employment chronology."
+        },
+        {
+          "url": "https://faculty.dlut.edu.cn/zhuqinghua/zh_CN/index.htm",
+          "title": "Dalian University of Technology faculty page (guessed)",
+          "notes": "HTTP 404."
+        },
         {
           "url": "https://orcid.org/0000-0003-2648-0260",
           "title": "Qinghua Zhu - ORCID record",
-          "notes": "Public API employment entries read: Dalian University of Technology 1995-04 to 2015-11; SJTU 2015-12 onward; no education entries."
+          "notes": "Earlier review: employment Dalian University of Technology 1995-04 to 2015-11; SJTU 2015-12 onward; no education entries."
         },
         {
           "url": "https://www.acem.sjtu.edu.cn/en/faculty/zhuqinghua.html",
           "title": "Qinghua Zhu - SJTU Antai (English)",
-          "notes": "Chair professor; awards and grants only; no degree or employment chronology."
-        },
-        {
-          "url": "https://www.acem.sjtu.edu.cn/faculty/zhuqinghua.html",
-          "title": "Qinghua Zhu - SJTU Antai (Chinese)",
-          "notes": "Chair professor and associate dean; projects listed; no degree or employment chronology."
+          "notes": "Earlier review: awards and grants only; no degree or employment chronology."
         }
       ],
       "source": "omlist"
@@ -54992,14 +55370,22 @@
     {
       "facultyId": "omlist-44015e00897ab6e2",
       "name": "Peter Ward",
-      "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "University-linked CV dates Boston University DBA May 1988, Northeastern visiting lecturer 1987–1988, and Ohio State assistant professor 1988–1995. Northeastern overlaps degree completion year and no appointment months establish whether it continued after May; Ohio State is the first clearly new role in 1988, but exact chronology needs review before treating it as first post-PhD employment.",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "employer": "The Ohio State University, Fisher College of Business",
+      "position": "Assistant Professor, Department of Management Sciences",
+      "placementYear": 1988,
+      "category": "tenure-track",
+      "evidenceUrl": "https://s3.us-east-2.amazonaws.com/files.fisher.osu.edu/public/faculty-cv/PWSVITA1.doc?VersionId=Ete7NBYroApzbWnDZ9gY8VthkUO7nbw7",
+      "evidenceNote": "Fisher CV: DBA in Operations Management, School of Management, Boston University, May 1988; experience: Northeastern University, College of Business Administration, Visiting Lecturer, Management Sciences group, 1987-88; Ohio State University, Fisher College of Business, 1988 to present, Assistant Professor 1988-1995. The Northeastern visiting lectureship began in the 1987-88 academic year, before the May 1988 degree, and ended in 1988, so it is a pre-degree role; the first new post after the degree is the Ohio State assistant professorship from 1988. No months are given for the posts. Earlier non-academic jobs (Bureau of Labor Statistics 1977-82, Wang Laboratories 1983-85) preceded the doctorate.",
+      "phdYearVerified": 1988,
+      "phdInstitutionVerified": "Boston University",
+      "reason": "Second pass: the CV (.doc, text extracted locally) gives the May 1988 BU degree, which is a DBA (recorded as such pending the scope decision on DBAs), a 1987-88 Northeastern visiting lectureship begun before the degree, and Ohio State from 1988. Under the overlap rules the Northeastern post is pre-degree and Ohio State is the first new job.",
       "sources": [
         {
           "url": "https://s3.us-east-2.amazonaws.com/files.fisher.osu.edu/public/faculty-cv/PWSVITA1.doc?VersionId=Ete7NBYroApzbWnDZ9gY8VthkUO7nbw7",
-          "title": "Peter Thomas Ward — Curriculum Vitae",
-          "notes": "Public university-linked Word CV readable text includes degree month and academic/industry employment chronology; transition month is absent."
+          "title": "Peter T. Ward - curriculum vitae (Fisher College of Business, Word file)",
+          "notes": "Downloaded with curl; experience and education sections as summarised; no months for the Northeastern or Ohio State posts."
         }
       ],
       "source": "omlist"
@@ -63058,17 +63444,22 @@
       "name": "Hise O. Gibson",
       "status": "unresolved",
       "checkedAt": "2026-10-17",
-      "reason": "His doctorate is a Doctor of Business Administration in Technology and Operations Management from HBS (a DBA, recorded as such pending a scope decision); no year is given. The HBS profile and the Rutgers page say he served over 25 years as a commissioned US Army officer (retiring as a Colonel in 2021), and until July 2021 was an Academy Professor in the Systems Engineering Department at the United States Military Academy, before becoming a Senior Lecturer at HBS. The Army career began well before the DBA and continued after it, so it is not a new post-PhD job; the post he took on completing the DBA (e.g., the West Point faculty assignment) and its date are undocumented in the sources opened.",
+      "reason": "Second pass: the DBA is still undated. The HBS profile (read through r.jina.ai) repeats the HBS DBA in Technology and Operations Management, the NPS and Air Command and Staff College master's degrees, 25+ years as an Army officer retiring as Colonel in 2021, and service until July 2021 as Academy Professor in the USMA Systems Engineering Department, with no years for the DBA or for the start of the West Point assignment. The HBS doctoral placement page for Technology & Operations Management lists graduates only from 2020 on and does not include him. Without the DBA date and the start of the USMA faculty assignment, it cannot be decided whether West Point was a new post after the degree (a faculty assignment at a new institution, other-academic under the military-officer rule) or the 2021 HBS senior lectureship is the first new job. The DBA is recorded as a DBA pending the scope decision. Earlier review (2026-10-17): the HBS profile and a Rutgers speaker bio gave the same undated career.",
       "sources": [
         {
           "url": "https://www.hbs.edu/faculty/Pages/profile.aspx?facId=660784",
           "title": "Harvard Business School - Hise O. Gibson faculty profile",
-          "notes": "Site refused direct requests (HTTP 403); read through the r.jina.ai reader proxy. DBA in Technology and Operations Management from HBS; 25+ years in the US Army, retired 2021; Academy Professor at USMA until July 2021. No dates for the DBA or the West Point assignment."
+          "notes": "Read through the r.jina.ai reader proxy (site refuses direct requests). Degrees and military career as summarised; no years for the DBA or the USMA appointment."
+        },
+        {
+          "url": "https://www.hbs.edu/doctoral/placement/technology-operations-management",
+          "title": "HBS Doctoral Programs - Technology & Operations Management placements",
+          "notes": "Read through r.jina.ai. Lists graduates 2020-2026 only; Gibson not listed."
         },
         {
           "url": "https://women.business.rutgers.edu/dr-hise-gibson",
           "title": "Rutgers Business School Center for Women in Business - Dr. Hise Gibson",
-          "notes": "Speaker bio repeating the HBS DBA, Army career and USMA Academy Professor role until July 2021; no dates for the doctorate."
+          "notes": "Earlier review: speaker bio with the HBS DBA, Army career and USMA Academy Professor role until July 2021; no doctorate date."
         }
       ],
       "source": "faculty-page"
@@ -72272,22 +72663,27 @@
       "name": "Maldonado-Guillen, Mauricio",
       "status": "unresolved",
       "checkedAt": "2026-10-17",
-      "reason": "The Smeal directory profile (listed under the Research Faculty Directory, Supply Chain & Information Systems) gives only his name, department, e-mail and courses taught (FIN 408, SCM 301, SCM 450W, SCM 597); it shows no title, education, biography or employment history, and links no CV or personal site. No doctorate (institution or year) and no dated chronology were found: he is not listed in the Smeal SCIS doctoral-student directory; the Penn State electronic theses repository (etda.libraries.psu.edu) refused both the fetch tool and a plain request (HTTP 403); an ORCID public search for Maldonado*/Mauricio returned 40 records, none named Maldonado Guillen or affiliated with Penn State; a Crossref author query and two web searches found no dissertation or publication under this name; an OpenAlex query was refused for rate limit. The first post-PhD job, and whether he holds a doctorate at all, remain unknown. The roster title (Assistant Clinical Professor) comes from the faculty list, not from this profile.",
+      "reason": "Second pass: the Penn State eTDA catalogue (the triage's suggested route) still refuses: a plain request returns HTTP 403 and both the r.jina.ai reader and a headless Chromium browser are stopped at its traffic-control bot check, so no Penn State dissertation search could be run; ProQuest is not reachable without a login. An ORCID public search on the compound family name (Maldonado Guillen / Maldonado-Guillen / Maldonado Guillén) returned four records (Erika, Victor Andres, Luz Diome, Jeniffer Yajabibe), none named Mauricio or affiliated with Penn State. Whether he holds a doctorate, and his first post-PhD job, remain unknown. Earlier review (2026-10-17): the Smeal directory profile gives only department, e-mail and courses taught, with no title, education or history; he is not in the SCIS doctoral-student directory, eTDA refused, and ORCID, Crossref and web searches found nothing.",
       "sources": [
+        {
+          "url": "https://etda.libraries.psu.edu/catalog?q=Maldonado+Guillen",
+          "title": "Penn State Electronic Theses and Dissertations catalogue",
+          "notes": "HTTP 403 to curl; r.jina.ai and headless Chromium both stopped at the traffic-control bot check."
+        },
+        {
+          "url": "https://pub.orcid.org/v3.0/expanded-search/?q=family-name:%22Maldonado%20Guillen%22",
+          "title": "ORCID public API search - Maldonado Guillen",
+          "notes": "Four records, none Mauricio or Penn State."
+        },
         {
           "url": "https://directory.smeal.psu.edu/mem7609",
           "title": "Mauricio Maldonado Guillen - Smeal College of Business directory",
-          "notes": "Read with the fetch tool and curl. Department SCIS; courses taught only; no title, education, biography or dates."
+          "notes": "Earlier review: department SCIS; courses taught only; no title, education, biography or dates."
         },
         {
           "url": "https://directory.smeal.psu.edu/doctoral/?dept=scis",
           "title": "Smeal Doctoral Students Directory - Supply Chain & Information Systems",
-          "notes": "Read with curl. He is not listed among current SCIS doctoral students."
-        },
-        {
-          "url": "https://pub.orcid.org/v3.0/expanded-search/?q=family-name:Maldonado*+AND+given-names:Mauricio&rows=20",
-          "title": "ORCID public API search - Maldonado / Mauricio",
-          "notes": "40 results; none is a Maldonado Guillen or has a Penn State affiliation."
+          "notes": "Earlier review: not listed among current SCIS doctoral students."
         }
       ],
       "source": "faculty-page"
@@ -72627,17 +73023,17 @@
       "name": "Wood, Doran",
       "status": "unresolved",
       "checkedAt": "2026-10-17",
-      "reason": "The Smeal directory profile shows Doran Wood as Assistant Professor in Supply Chain & Information Systems with an email address and one course (SCM 421); it has no biography, education, vita or employment history. An ORCID search for Doran Wood returned no record, and one web search for a dissertation found only this directory page. The assistant-professor title suggests a doctorate but does not establish one; the degree, its year and the first post-PhD job are not established.",
+      "reason": "Second pass: an ORCID full-text search now finds record 0009-0007-3478-9440 (Doran Wood), whose only entry is Assistant Professor, Supply Chain & Information Systems, Pennsylvania State University, from 2025-07-01; it has no education entries and no works. This suggests the Penn State post began in July 2025 but says nothing of a doctorate or of any job before it. One web search for a dissertation or job-market page found nothing about him. The doctorate (institution and year) and whether Penn State is the first post-PhD job remain unestablished. Earlier review (2026-10-17): the Smeal directory gives Assistant Professor in SCIS with one course and no education or history; an ORCID name search returned nothing.",
       "sources": [
+        {
+          "url": "https://orcid.org/0009-0007-3478-9440",
+          "title": "ORCID record 0009-0007-3478-9440 (Doran Wood), public API",
+          "notes": "Employment: Penn State SCIS Assistant Professor from 2025-07-01; no education, no works."
+        },
         {
           "url": "https://directory.smeal.psu.edu/dbw5651",
           "title": "Doran Wood, Smeal College of Business directory profile",
-          "notes": "Read as a plain HTML download. Title and course only; no education or history."
-        },
-        {
-          "url": "https://pub.orcid.org/v3.0/expanded-search/?q=family-name:Wood+AND+given-names:Doran",
-          "title": "ORCID public registry search, Doran Wood",
-          "notes": "Zero results."
+          "notes": "Earlier review: title and course only; no education or history."
         }
       ],
       "source": "faculty-page"
@@ -77520,27 +77916,27 @@
       "name": "Heng Xu",
       "status": "unresolved",
       "checkedAt": "2026-10-17",
-      "reason": "The CV's positions list starts with Assistant Professor, College of IST, Pennsylvania State University, 08/2006 - 06/2012, after a Ph.D. in Information Systems at NUS School of Computing dated 07/2001 - 06/2006 (valedictorian and Ph.D. commencement speaker 2006). But the honours list also gives a Singapore Millennium Foundation Postdoctoral Award and Fellowship, 2005-2006, described as supporting full-time postdoctoral research at a research institute or university in Singapore, and the ScholarBank@NUS thesis record ('Privacy considerations in the adoption of L-Commerce', supervisor Teo Hock Hai) is dated 2005-11-29. The fellowship may therefore have been a post-doctoral appointment held after thesis submission and before the 2006 conferral, which under the overlap rule would make it the first job; its host, start month and whether it was taken up as a post are not stated, so the first job cannot be fixed between the SMF postdoctoral fellowship (2005 or 2006, host unknown) and the Penn State assistant professorship (August 2006).",
+      "reason": "Second pass: no older CV or Singapore Millennium Foundation fellow list could be found. The old Penn State IST faculty page (faculty.ist.psu.edu/xu/, still online) gives only a research summary with no dates or CV link; the cv.pdf/CV.pdf guesses on that site return nothing. The current 2026 CV still lists the Penn State IST assistant professorship from 08/2006 as the first position after the NUS Ph.D. (07/2001-06/2006), and separately, under honours, a Singapore Millennium Foundation Postdoctoral Award and Fellowship, 2005-2006, described as supporting full-time postdoctoral research in Singapore. Whether that fellowship was taken up as a post after thesis submission (the ScholarBank thesis record is dated 2005-11-29), and at which host, is still undocumented, so the first job cannot be fixed between the fellowship and the August 2006 Penn State post. Earlier review (2026-10-17): the CV, ScholarBank, ORCID and Mendoza profile were read and left the same SMF-fellowship question open.",
       "sources": [
         {
           "url": "https://d23loykajbcndr.cloudfront.net/hxu24/pci/X-CV-2026-1.pdf",
           "title": "Heng Xu - CV 2026 (linked from the Mendoza profile)",
-          "notes": "Positions: Penn State IST Assistant Professor 08/2006-06/2012, Associate 2012-2018 (NSF program director 2013-2016), American University 2018-2023, Florida 2023-2025, Notre Dame from 07/2025. Education: PhD NUS 07/2001-06/2006. Honours: SMF Postdoctoral Award and Fellowship 2005-2006."
+          "notes": "Re-read: positions start with Penn State IST Assistant Professor 08/2006-06/2012; Ph.D. NUS 07/2001-06/2006; honours list the SMF Postdoctoral Award and Fellowship 2005-2006 without host or start."
+        },
+        {
+          "url": "http://faculty.ist.psu.edu/xu/",
+          "title": "Heng Xu - old Penn State IST faculty page",
+          "notes": "Read with curl. Research summary only; no dates or CV."
         },
         {
           "url": "https://scholarbank.nus.edu.sg/handle/10635/16984",
-          "title": "ScholarBank@NUS - Privacy considerations in the adoption of L-Commerce (XU HENG), read through the repository's public search API",
-          "notes": "Thesis, Ph.D., Information Systems, supervisor Teo Hock Hai, dc.date.issued 2005-11-29."
-        },
-        {
-          "url": "https://orcid.org/0000-0001-5642-6543",
-          "title": "ORCID record 0000-0001-5642-6543 (Heng Xu), public API",
-          "notes": "Only Notre Dame, Professor, from 2025-07."
+          "title": "ScholarBank@NUS - Privacy considerations in the adoption of L-Commerce (XU HENG)",
+          "notes": "Earlier review: Ph.D. thesis, supervisor Teo Hock Hai, dc.date.issued 2005-11-29."
         },
         {
           "url": "https://mendoza.nd.edu/mendoza-directory/profile/heng-xu",
           "title": "Mendoza directory - Heng Xu",
-          "notes": "Professor; NUS doctorate; links the CV."
+          "notes": "Earlier review: Professor; NUS doctorate; links the CV."
         }
       ],
       "source": "faculty-page"
@@ -79009,17 +79405,27 @@
       "name": "Lynn Wu",
       "status": "unresolved",
       "checkedAt": "2026-10-17",
-      "reason": "CV (March 2025): Ph.D., Management Science, MIT Sloan School of Management, 2011; employment: Research Scientist, IBM Research, 2008-2017; Research Faculty, MIT Sloan School of Management, 2011-2020; Assistant Professor, Wharton OID, 2012-2020; Associate Professor from 2020. The IBM research-scientist role began well before the degree and continued, so under the overlap rule it is not the first job. The first new post after the 2011 degree is either the MIT Sloan 'Research Faculty' role beginning in 2011 or the 2012 Wharton assistant professorship; because the MIT role ran concurrently with the Wharton post for eight years, the CV does not show whether it was a 2011-2012 employment post (which would be the first job) or a research affiliation. The Wharton profile only says she worked as a software engineer and research scientist at the MIT AI Lab and IBM before academia; no ORCID record was found.",
+      "reason": "Second pass: no older CV or MIT page could be found to show what the 2011-2020 MIT Sloan 'Research Faculty' entry was. The March 2025 CV linked from the Wharton profile (re-read) lists Research Scientist, IBM Research 2008-2017; Research Faculty, MIT Sloan 2011-2020; Assistant Professor, Wharton OID 2012-2020; MIT Sloan Ph.D. in Management Science 2011. Her old MIT web pages (web.mit.edu/lynnwu) return an empty page, lynnwu.org mirrors the Wharton profile, and the MIT IDE people page is not found. The IBM job began before the degree and continued, so it is not the first job; whether the MIT research-faculty role was a 2011-2012 employing post (which would be the first job) or a research affiliation held alongside Wharton remains undocumented. Earlier review (2026-10-17): the same CV and the Wharton profile left this question open; no ORCID record was found.",
       "sources": [
         {
           "url": "https://faculty.wharton.upenn.edu/wp-content/uploads/2016/11/LWU-CV-Mar2025_OID.pdf",
           "title": "Lynn L. Wu - CV March 2025 (linked from the Wharton profile)",
-          "notes": "Employment and education with years as summarised."
+          "notes": "Re-read: employment and education with years as summarised; no months."
+        },
+        {
+          "url": "http://www.lynnwu.org/",
+          "title": "lynnwu.org",
+          "notes": "Mirrors the Wharton profile; no further chronology."
+        },
+        {
+          "url": "https://ide.mit.edu/people/lynn-wu/",
+          "title": "MIT Initiative on the Digital Economy - people page",
+          "notes": "Page not found."
         },
         {
           "url": "https://oid.wharton.upenn.edu/profile/wulynn",
           "title": "Wharton OID - Lynn Wu profile",
-          "notes": "MIT degrees including the Sloan Ph.D. in Management Science; prior software engineer and research scientist at MIT AI Lab and IBM (undated)."
+          "notes": "Earlier review: MIT degrees; prior software engineer and research scientist at MIT AI Lab and IBM (undated)."
         }
       ],
       "source": "faculty-page"
