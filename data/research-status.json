@@ -4,24 +4,24 @@
     "updatedAt": "2026-10-17",
     "total": 3161,
     "counts": {
-      "unresolved": 1442,
-      "verified": 1715,
+      "unresolved": 1423,
+      "verified": 1734,
       "not-yet-completed-phd": 4
     },
     "bySource": {
       "omlist": {
         "total": 2149,
         "counts": {
-          "unresolved": 950,
-          "verified": 1198,
+          "unresolved": 933,
+          "verified": 1215,
           "not-yet-completed-phd": 1
         }
       },
       "faculty-page": {
         "total": 1012,
         "counts": {
-          "verified": 517,
-          "unresolved": 492,
+          "verified": 519,
+          "unresolved": 490,
           "not-yet-completed-phd": 3
         }
       }
@@ -2677,15 +2677,25 @@
       "facultyId": "omlist-24b98624edb6eb76",
       "name": "Matt Bailey",
       "status": "unresolved",
-      "checkedAt": "2026-10-16",
+      "checkedAt": "2026-10-17",
+      "reason": "Second pass: Bucknell's catalog faculty directory dates his Bucknell appointment to 2007 ('Bailey, Matthew D. (2007), Professor of Analytics & Operations Management, Ph.D. Michigan'), and the Bucknell profile gives the Michigan Industrial and Operations Engineering Ph.D. as 2002 (the OM List says 2001). His February 2008 Operations Research article already carries a Bucknell affiliation. What he did between the 2002 degree and the 2007 Bucknell start (his 2007 EJOR paper is co-authored with University of Pittsburgh industrial engineers) is not documented: the EJOR article page answered 403 through the reader proxy, OpenAlex refused further requests (daily limit), and no ORCID record or CV was found. Earlier review (2026-10-16): the Bucknell biography dates the Michigan PhD to 2002 but gives no early employment chronology.",
       "sources": [
         {
+          "url": "https://coursecatalog.bucknell.edu/directory/faculty/",
+          "title": "Bucknell University Catalog - Faculty directory",
+          "notes": "Read with plain curl. 'Bailey, Matthew D. (2007), Professor of Analytics & Operations Management, Ph.D. Michigan'."
+        },
+        {
           "url": "https://www.bucknell.edu/fac-staff/matt-bailey",
-          "title": "Matt Bailey Profile",
-          "notes": "Bucknell biography dates Michigan PhD to 2002 but provides no early employment chronology."
+          "title": "Matt Bailey - Bucknell University",
+          "notes": "Read with plain curl. (2025-2028) Presidential Professor; PhD Industrial and Operations Engineering, University of Michigan, 2002; MS 1997; BS Purdue 1996. No employment dates."
+        },
+        {
+          "url": "https://api.crossref.org/works?query.author=Matthew+D.+Bailey&query.bibliographic=HIV+therapy+ordered+states+electricity+oligopoly&filter=until-pub-date:2009&rows=8&select=title,author,issued,DOI",
+          "title": "Crossref metadata query for Matthew D. Bailey's early papers",
+          "notes": "The Optimal Time to Initiate HIV Therapy Under Ordered Health States (Operations Research, Feb 2008): affiliation 'Department of Management, Bucknell University'. EJOR 2007 electricity oligopoly paper with Mazumdar, Wang and Valenzuela: no affiliation in metadata."
         }
       ],
-      "reason": "Bucknell biography dates Michigan PhD to 2002 but provides no early employment chronology.",
       "source": "omlist"
     },
     {
@@ -4018,14 +4028,28 @@
     {
       "facultyId": "omlist-dfe32c87bf74bc82",
       "name": "Nicolò Bertani",
-      "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "CV confirms INSEAD/Sorbonne PhD ending 2021 and identifies the current Católica assistant professorship but gives no appointment start date. Teaching since fall2021 alone does not establish the first job chronology.",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "employer": "Católica Lisbon School of Business and Economics",
+      "position": "Assistant Professor",
+      "placementYear": 2021,
+      "category": "unknown",
+      "evidenceUrl": "https://orcid.org/0000-0003-4785-0611",
+      "evidenceNote": "ORCID lists him as an INSEAD Decision Sciences PhD candidate from 2016-08-25 to 2021-05-31 and then Assistant Professor at Universidade Católica Portuguesa from 2021-06-01. His Católica CV gives the Ph.D. in Decision Sciences from INSEAD and Sorbonne Université as 2016-21, a Marsh Global Analytics consultancy from Jan 2013 to Aug 2016 (before the doctorate), and Católica teaching from Fall 2021. A continental European assistant professorship with no stated tenure track is recorded as category unknown.",
+      "phdYearVerified": 2021,
+      "phdInstitutionVerified": "INSEAD",
+      "phdInstitutionVerifiedAsWritten": "INSEAD and Sorbonne Université",
+      "reason": "Second pass: the ORCID public record supplies the start date (2021-06-01) that the CV lacked, directly after the end of the INSEAD doctorate (2021-05-31). The CV (Católica asset, plain curl) confirms the 2016-21 joint INSEAD-Sorbonne Ph.D. and places the Marsh job before the doctorate.",
       "sources": [
         {
+          "url": "https://orcid.org/0000-0003-4785-0611",
+          "title": "ORCID record 0000-0003-4785-0611 (Nicolò Bertani)",
+          "notes": "Read through the public API. Employment: Universidade Católica Portuguesa, Assistant Professor, 2021-06-01 to present; INSEAD Decision Sciences, PhD candidate, 2016-08-25 to 2021-05-31."
+        },
+        {
           "url": "https://clsbe.lisboa.ucp.pt/asset/60641/download",
-          "title": "Nicolò Bertani — Curriculum Vitae",
-          "notes": "Education and employment chronology reviewed; requires further clarification."
+          "title": "Nicolò Bertani - CV (Católica Lisbon)",
+          "notes": "Downloaded with plain curl. Assistant Professor, Católica Lisbon SBE; Ph.D. Decision Sciences, INSEAD and Sorbonne Université, 2016-21; Marsh Global Analytics consultant Jan 2013 - Aug 2016; Católica MSc teaching since Fall 2021; INSEAD teaching assistant 2017-2018."
         }
       ],
       "source": "omlist"
@@ -4873,16 +4897,30 @@
     {
       "facultyId": "omlist-829efd3df5eee11f",
       "name": "Rebekah Inez (Bekki) Brau",
-      "status": "unresolved",
-      "checkedAt": "2026-10-16",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "employer": "Brigham Young University",
+      "position": "Assistant Professor of Global Supply Chain Management",
+      "placementYear": 2021,
+      "category": "tenure-track",
+      "evidenceUrl": "https://marriott.byu.edu/directory/details/vita?id=28907",
+      "evidenceNote": "Her BYU vita (dated 7/14/26) gives the Arkansas Ph.D. in Supply Chain Management as awarded May 2021 and lists 'Assistant Professor, Brigham Young University, 2021-Present' after 'Graduate Teaching Instructor, University of Arkansas, 2018-2021'. Her ORCID dates the BYU Assistant Professor of Global Supply Chain post (Marriott School) from 2021-05, the month of the degree. The Fortune 500 consulting listed for 2018 onward is concurrent work, not a primary job.",
+      "phdYearVerified": 2021,
+      "phdInstitutionVerified": "University of Arkansas at Fayetteville",
+      "reason": "Second pass: the ORCID public record dates the BYU assistant professorship from 2021-05, and the BYU vita (plain curl, PDF) gives the same post as 2021-present, directly after the May 2021 Arkansas Ph.D. and the 2018-2021 Arkansas graduate teaching. No postdoc or other job lies between them.",
       "sources": [
         {
           "url": "https://marriott.byu.edu/directory/details/vita?id=28907",
-          "title": "Rebekah Inez (Bekki) Brau curriculum vitae",
-          "notes": "Full CV confirms Arkansas PhD awarded May 2021 but gives current BYU assistant title without a dated employment chronology."
+          "title": "Rebekah (Bekki) Inez Brau - BYU Marriott vita (PDF)",
+          "notes": "Downloaded with plain curl; education and teaching sections read. Ph.D. Supply Chain Management, University of Arkansas, degree awarded May 2021; Assistant Professor, BYU, 2021-Present; Graduate Teaching Instructor, University of Arkansas, 2018-2021; consulting for Fortune 500 firms 2018-present."
+        },
+        {
+          "url": "https://orcid.org/0000-0002-4519-0042",
+          "title": "ORCID record 0000-0002-4519-0042 (Rebekah Inez Brau)",
+          "notes": "Read through the public API. Employment: Brigham Young University, Marketing and Global Supply Chain, Assistant Professor of Global Supply Chain, 2021-05 to present. Education: University of Arkansas PhD Supply Chain Management 2017-08 to 2021-05."
         }
       ],
-      "reason": "Full CV confirms Arkansas PhD awarded May 2021 but gives current BYU assistant title without a dated employment chronology.",
+      "phdInstitutionVerifiedAsWritten": "University of Arkansas",
       "source": "omlist"
     },
     {
@@ -5910,16 +5948,29 @@
     {
       "facultyId": "omlist-9f6854fd66d6c357",
       "name": "Matthew Castel",
-      "status": "unresolved",
-      "checkedAt": "2026-10-16",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "employer": "Boise State University",
+      "position": "Assistant Professor",
+      "placementYear": 2016,
+      "category": "tenure-track",
+      "evidenceUrl": "https://orcid.org/0000-0002-8716-1872",
+      "evidenceNote": "ORCID (public API) lists the Ph.D. in Business Administration (Supply Chain Management) at Michigan State University from 2011-09 to 2016-09 and, as the only employment entry, Assistant Professor in Information Technology and Supply Chain Management at Boise State University from 2016-09-17. The Boise State biography dates the Michigan State Ph.D. to 2016 and places his business-analyst, project-manager and consulting work before the doctorate. Boise State's ITSCM department sits in the College of Business and Economics, so the plain assistant title is read as tenure-track by convention.",
+      "phdYearVerified": 2016,
+      "phdInstitutionVerified": "Michigan State University",
+      "reason": "Second pass: the ORCID public record (pub.orcid.org v3.0) gives a dated chronology, with the Boise State assistant professorship starting 2016-09-17 straight after the doctorate (ended 2016-09). The Boise State biography (plain curl) confirms the 2016 Michigan State Ph.D. and that his industry roles preceded doctoral study. No postdoc or other post appears between the degree and Boise State.",
       "sources": [
         {
+          "url": "https://orcid.org/0000-0002-8716-1872",
+          "title": "ORCID record 0000-0002-8716-1872 (Matthew Castel)",
+          "notes": "Read through the public API (pub.orcid.org/v3.0/.../activities). Employment: Boise State University, Information Technology and Supply Chain Management, Assistant Professor, 2016-09-17 to present. Education: Michigan State University Ph.D. Business Administration (Supply Chain Management) 2011-09 to 2016-09; M.S. 2005-2006; B.S. 2001-2005."
+        },
+        {
           "url": "https://www.boisestate.edu/cobe-itscm/matthew-castel/",
-          "title": "Matthew Castel Profile",
-          "notes": "Boise State biography dates Michigan State doctorate2016 and predoctoral industry experience but omits date of initial academic appointment."
+          "title": "Matthew Castel, Ph.D. - Boise State ITSCM",
+          "notes": "Read with plain curl (redirects to the department directory page). Associate Professor; Ph.D. Business Administration, Operations & Sourcing Management, Michigan State University, 2016; worked as business analyst, project manager and senior consultant before the doctorate. No dated employment."
         }
       ],
-      "reason": "Boise State biography dates Michigan State doctorate2016 and predoctoral industry experience but omits date of initial academic appointment.",
       "source": "omlist"
     },
     {
@@ -7170,14 +7221,32 @@
     {
       "facultyId": "omlist-2d40db835e3c9e74",
       "name": "Yao Chen",
-      "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "Bucknell profile dates Clemson doctorate to 2024 but does not date appointment or establish first postdoctoral employer.",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "employer": "Bucknell University",
+      "position": "Assistant Professor of Analytics & Operations Management",
+      "placementYear": 2024,
+      "category": "tenure-track",
+      "evidenceUrl": "https://orcid.org/0000-0001-8770-7428",
+      "evidenceNote": "ORCID lists Clemson doctoral study (Department of Management) from 2018-08-27 and, as the only employment, Assistant Professor in Analytics and Operations Management at Bucknell University from 2024-08-01. Bucknell's catalog faculty directory gives her year of appointment as 2024, and her Bucknell profile states a Clemson Ph.D. in Supply Chain and Operations Management in 2024. The Bucknell department is in its Freeman College of Management, so the plain assistant title is read as tenure-track by convention.",
+      "phdYearVerified": 2024,
+      "phdInstitutionVerified": "Clemson University",
+      "reason": "Second pass: ORCID (public API) and the Bucknell catalog date the Bucknell appointment to August 2024, the year of the Clemson Ph.D. given on her Bucknell profile. Nothing between the doctorate and Bucknell is listed. TigerPrints, which would date the dissertation, answered 403 to curl, so the degree year rests on the Bucknell profile's statement.",
       "sources": [
         {
+          "url": "https://orcid.org/0000-0001-8770-7428",
+          "title": "ORCID record 0000-0001-8770-7428 (Yao Chen)",
+          "notes": "Read through the public API. Employment: Bucknell University, Analytics and Operations Management, Assistant Professor, 2024-08-01 to present. Education: Clemson University, Department of Management, Ph.D. Candidate from 2018-08-27 (no end date); Hong Kong Polytechnic University M.Sc. 2016-2018."
+        },
+        {
+          "url": "https://coursecatalog.bucknell.edu/directory/faculty/",
+          "title": "Bucknell University Catalog - Faculty directory",
+          "notes": "Read with plain curl. 'Chen, Yao (2024), Assistant Professor of Analytics & Operations Management, Ph.D. Clemson University' (year in parentheses is the year of appointment)."
+        },
+        {
           "url": "https://www.bucknell.edu/fac-staff/yao-chen",
-          "title": "Yao Chen public academic profile",
-          "notes": "Bucknell profile dates Clemson doctorate to 2024 but does not date appointment or establish first postdoctoral employer."
+          "title": "Yao Chen - Bucknell University",
+          "notes": "Read with plain curl. PhD, Supply Chain and Operations Management, Clemson University, 2024; MS Hong Kong Polytechnic 2018; BS Shanghai Maritime 2016."
         }
       ],
       "source": "omlist"
@@ -7568,18 +7637,28 @@
       "facultyId": "omlist-d1a948353bda7a43",
       "name": "Wei Yu (Kevin) Chiang",
       "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "The personal biography reports earlier US faculty and consulting work without dates, preventing first post-doctoral employer ordering.",
+      "checkedAt": "2026-10-17",
+      "reason": "Second pass: his ORCID record (public API) lists the UIUC Ph.D. in Business Administration as 1998-09-01 to 2003-05-31 (the OM List gives 2001), an undated Assistant Professor post at the University of Maryland Baltimore County, and City University of Hong Kong from 2005-08-15. His January 2003 Management Science article already carries the UMBC Department of Information Systems affiliation, so the UMBC post appears to have begun before the May 2003 degree date; neither its start date nor whether it was converted on completion is documented, and CityU is a later move. wchiang.net answered a robot-challenge page to curl, a headless browser and the reader proxy, and the CityU people-details and staff pages now return 404. Earlier review (2026-10-16): the personal biography reports earlier US faculty and consulting work without dates.",
       "sources": [
         {
-          "url": "https://www.cb.cityu.edu.hk/en/people-and-research/people/people-details?eid=wchiang",
-          "title": "Wei Yu (Kevin) Chiang academic profile",
-          "notes": "The personal biography reports earlier US faculty and consulting work without dates, preventing first post-doctoral employer ordering."
+          "url": "https://orcid.org/0000-0003-4806-7485",
+          "title": "ORCID record 0000-0003-4806-7485 (Wei-yu Kevin Chiang)",
+          "notes": "Read through the public API. Education: UIUC Ph.D. Business Administration 1998-09-01 to 2003-05-31. Employment: University of Maryland Baltimore County, Assistant Professor (no dates); City University of Hong Kong, Management Sciences, Professor, from 2005-08-15."
+        },
+        {
+          "url": "https://api.crossref.org/works?query.author=Wei-yu+Kevin+Chiang&filter=until-pub-date:2007&rows=20&select=title,author,issued,DOI,container-title",
+          "title": "Crossref metadata query for Wei-yu Kevin Chiang's papers to 2007",
+          "notes": "Direct Marketing, Indirect Profits (Management Science, January 2003): Department of Information Systems, University of Maryland at Baltimore County."
         },
         {
           "url": "http://www.wchiang.net/",
-          "title": "Wei Yu (Kevin) Chiang academic profile",
-          "notes": "The personal biography reports earlier US faculty and consulting work without dates, preventing first post-doctoral employer ordering."
+          "title": "wchiang.net (personal site)",
+          "notes": "Robot challenge screen to curl, headless Chromium and r.jina.ai on 2026-10-17; not read."
+        },
+        {
+          "url": "https://www.cb.cityu.edu.hk/en/people-and-research/people/people-details?eid=wchiang",
+          "title": "CityU College of Business people-details page",
+          "notes": "Earlier review read the biography (earlier US faculty and consulting work, no dates); now redirects to a 404 error page."
         }
       ],
       "source": "omlist"
@@ -11256,31 +11335,30 @@
       "facultyId": "omlist-88b8eada82b81be2",
       "name": "Alireza Fallahtafti",
       "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "phdYearVerified": 2021,
+      "checkedAt": "2026-10-17",
+      "reason": "Second pass: the OhioLINK ETD record (read in a headless browser) confirms his Ohio University Ph.D. in Industrial and Systems Engineering in 2021 (accession ohiou1627568962315484, deposited around late July 2021, advisor Gary Weckman). His current Weatherhead page says he has been on the CWRU faculty since 2022 and that before WSOM he was a Visiting Assistant Professor of Information Systems and Analytics at Miami University's Farmer School of Business, and the 24 August 2022 CWRU news item repeats this. No opened source gives the start date of the Miami post, so it still cannot be shown to have begun after the 2021 degree rather than during the doctorate. His ORCID has only the CWRU post (from 2022-07-01), and one web search found only Miami's generic 2021 visiting-position advertisements, none naming him (discovery only; not cited). Earlier review (2026-10-16): integrator downgrade because the Miami visiting assistant professorship between the 2021 degree and the July 2022 CWRU start is undated.",
       "sources": [
         {
+          "url": "https://etd.ohiolink.edu/acprod/odb_etd/r/etd/search/10?p10_accession_num=ohiou1627568962315484&clear=10",
+          "title": "Developing Risk-Minimizing Vehicle Routing Problem for Transportation of Valuables (OhioLINK ETD)",
+          "notes": "Read in a headless browser. Year and degree: 2021, Doctor of Philosophy (PhD), Ohio University, Industrial and Systems Engineering; advisor Gary Weckman."
+        },
+        {
           "url": "https://case.edu/weatherhead/about/faculty-and-staff-directory/alireza-fallahtafti",
-          "title": "Case Western Weatherhead — Alireza Fallahtafti",
-          "notes": "Employer biography: PhD Ohio University 2021; on the faculty since 2022; previously Visiting Assistant Professor at Miami University Farmer School; industry experience undated."
+          "title": "Alireza Fallahtafti - Weatherhead faculty directory",
+          "notes": "Read with plain curl. Assistant Professor of Operations, on the faculty since 2022; PhD Ohio University 2021; previously Visiting Assistant Professor of Information Systems and Analytics, Farmer School of Business, Miami University (undated); a decade of earlier industry experience."
         },
         {
           "url": "https://case.edu/weatherhead/about/news-and-events/news/weatherhead-welcomes-six-new-faculty-members",
-          "title": "Weatherhead welcomes six new faculty members (24 August 2022)",
-          "notes": "Prior to Weatherhead, Alireza was a visiting assistant professor for the Farmer School of Business at Miami University; no dates."
+          "title": "Weatherhead welcomes six new faculty members (CWRU news, 24 August 2022)",
+          "notes": "Read with plain curl. Prior to Weatherhead he was a visiting assistant professor for the Farmer School of Business at Miami University; no dates for that post."
         },
         {
           "url": "https://orcid.org/0000-0002-8233-4383",
-          "title": "Alireza Fallahtafti — ORCID record",
-          "notes": "Read through the ORCID public API. Employment: Assistant Professor, Operations, CWRU, from 2022-07-01 (end date entered as 2030-08-31). No education entries."
-        },
-        {
-          "url": "https://omlist.edutool.org/schools/case-western-reserve-university/faculty/alireza-fallahtafti.html",
-          "title": "OM List profile — Alireza Fallahtafti",
-          "notes": "Directory entry (PhD Ohio University 2021)."
+          "title": "ORCID record 0000-0002-8233-4383 (Alireza Fallahtafti)",
+          "notes": "Read through the public API. Only employment: CWRU, Operations, Assistant Professor, from 2022-07-01."
         }
       ],
-      "reason": "Integrator downgrade (2026-10-16): the Miami University visiting assistant professorship has no start date in the sources opened, so it cannot be shown to have begun after the 2021 degree rather than before it. A dated CV or appointment record is needed. Original research note: Employer biography and appointment announcement place a visiting assistant professorship between the 2021 degree and the July 2022 CWRU start; its exact start date is undocumented.",
       "source": "omlist"
     },
     {
@@ -12297,13 +12375,23 @@
       "facultyId": "omlist-4455ce6d72af55a3",
       "name": "Thomas Frandsen",
       "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "CBS faculty profile establishes current affiliation and research but does not provide a complete dated education and employment history. No explicit first post-PhD appointment is established from the reviewed profile; dissertation discovery alone would not verify first employment.",
+      "checkedAt": "2026-10-17",
+      "reason": "Second pass: his ORCID record (public API) has a single employment entry, Associate Professor, Department of Operations Management, Copenhagen Business School, from 2017-07-01, and no education entries. The CBS research portal (plain curl) lists one PhD thesis but no positions, and the CBS department page gives research themes and 2018-present external engagements only. His post or posts between the 2012 CBS doctorate and July 2017, and whether he simply stayed at CBS, are not documented. Earlier review (2026-10-16): the CBS faculty profile gives current affiliation and research without a dated history.",
       "sources": [
         {
+          "url": "https://orcid.org/0000-0002-9487-5339",
+          "title": "ORCID record 0000-0002-9487-5339 (Thomas Frandsen)",
+          "notes": "Read through the public API. Employment: Copenhagen Business School, Department of Operations Management, Associate Professor, from 2017-07-01. No education entries."
+        },
+        {
+          "url": "https://research.cbs.dk/en/persons/thomas-frandsen",
+          "title": "Thomas Frandsen - CBS Research Portal",
+          "notes": "Read with plain curl. Associate Professor, Department of Operations Management; one PhD thesis listed; no positions or dates of appointment."
+        },
+        {
           "url": "https://www.cbs.dk/en/research/departments/department-operations-management/thomas-frandsen",
-          "title": "Thomas Frandsen — public academic profile",
-          "notes": "Professional biography and degree information reviewed for first-job evidence."
+          "title": "Thomas Frandsen - CBS Department of Operations Management",
+          "notes": "Read with plain curl. Associate Professor; PhD coordinator; external engagements 2018-present; no employment history."
         }
       ],
       "source": "omlist"
@@ -14255,14 +14343,27 @@
     {
       "facultyId": "omlist-eb719f0df9248c96",
       "name": "Michael Goulder",
-      "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "The Case Western profile dates Doctor of Management to 2022 but does not provide early employment chronology or establish a first job after that degree.",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "employer": "Case Western Reserve University",
+      "position": "Assistant Professor of Operations and Director of the Master of Supply Chain Management program",
+      "placementYear": 2022,
+      "category": "tenure-track",
+      "evidenceUrl": "https://case.edu/weatherhead/about/news-and-events/news/weatherhead-welcomes-six-new-faculty-members",
+      "evidenceNote": "The CWRU news item of 24 August 2022 introduces him as a new full-time Weatherhead faculty member, assistant professor of operations and director of the Master of Supply Chain Management program. It says he began teaching at Weatherhead as an adjunct during the second year of his Doctor of Management program and earned the DM in August 2022, 'just in time' to begin the new full-time role. Before the DM he was a supply chain consultant (partner at McKinsey and Booz Allen) and an executive (COO of American Greetings, SVP supply chain at Joann). His directory page gives 'Initially Appointed: 2019' (the adjunct start) and the DM as 2022. The part-time adjunct role began before the degree; the full-time assistant professorship that followed completion is the first new post. The degree is a Doctor of Management (DM), a professional doctorate. Verifier: no opened source states the track (the directory calls him a full-time professor, now associate professor, and MSCM faculty director); the category stays tenure-track only under the plain-title convention for a North American business school, and the doctorate is a Doctor of Management (DM).",
+      "phdYearVerified": 2022,
+      "phdInstitutionVerified": "Case Western Reserve University",
+      "reason": "Second pass: the 24 August 2022 CWRU news item and the Weatherhead directory page (both read with plain curl) date the DM to August 2022 and give the new full-time assistant professorship that began on completion, after a pre-degree adjunct role at the same school since 2019. The plain assistant title at a North American business school is read as tenure-track by convention; the source does not state the track, so a verifier should confirm whether this was a non-tenure-track professional post. The DM is a professional doctorate, recorded as such.",
       "sources": [
         {
+          "url": "https://case.edu/weatherhead/about/news-and-events/news/weatherhead-welcomes-six-new-faculty-members",
+          "title": "Weatherhead welcomes six new faculty members (CWRU news, 24 August 2022)",
+          "notes": "Read with plain curl. Michael Goulder, assistant professor of operations and director of the Master of Supply Chain Management program; began teaching as an adjunct during the second year of the DM program; earned the Doctor of Management in August, in time to begin his new role as a full-time professor; earlier consulting and executive career."
+        },
+        {
           "url": "https://case.edu/weatherhead/about/faculty-and-staff-directory/michael-goulder",
-          "title": "Michael Goulder academic profile",
-          "notes": "The Case Western profile dates Doctor of Management to 2022 but does not provide early employment chronology or establish a first job after that degree."
+          "title": "Michael Goulder - Weatherhead faculty directory",
+          "notes": "Read with plain curl. Associate Professor, Department of Operations; Faculty Director, MSCM; Initially Appointed: 2019; Doctor of Management, Weatherhead School of Management, CWRU, 2022; MBA Wharton 1988; BS Michigan 1982."
         }
       ],
       "source": "omlist"
@@ -15387,20 +15488,25 @@
       "facultyId": "omlist-4beab51de1b73ab1",
       "name": "Kim Sundtoft Hald",
       "status": "unresolved",
-      "checkedAt": "2026-10-16",
+      "checkedAt": "2026-10-17",
+      "reason": "Second pass: his ORCID record (public API) dates the CBS PhD (Department of Operations Management, PhD programme in Technologies of Managing) to 2004-2007-03 and gives a CBS professorship from 2017-07-01, but nothing between March 2007 and 2017. The CBS department page (plain curl) says that before entering academia he held management and senior consultant posts at Bang & Olufsen, KPMG Consulting and PwC Consulting, and the CBS research portal lists no positions. His first post after the 2007 doctorate, and whether he stayed at CBS, are not documented. Earlier review (2026-10-16): CBS biographies describe teaching and research without dated doctoral and early employment chronology.",
       "sources": [
         {
-          "url": "https://www.cbs.dk/en/research/departments/department-operations-management/kim-sundtoft-hald",
-          "title": "Kim Sundtoft Hald Profile",
-          "notes": "CBS biographies describe current teaching and research without dated doctoral and early employment chronology."
+          "url": "https://orcid.org/0000-0002-4605-0156",
+          "title": "ORCID record 0000-0002-4605-0156 (Kim Sundtoft Hald)",
+          "notes": "Read through the public API. Education: CBS PhD, Department of Operations Management, 2004 to 2007-03; Aarhus M.Sc. Mathematics-Economics 1989-1996. Employment: CBS Operations Management, Professor with special responsibilities, from 2017-07-01."
         },
         {
-          "url": "https://research.cbs.dk/da/persons/kim-sundtoft-hald/",
-          "title": "Kim Sundtoft Hald Website",
-          "notes": "CBS biographies describe current teaching and research without dated doctoral and early employment chronology."
+          "url": "https://www.cbs.dk/en/research/departments/department-operations-management/kim-sundtoft-hald",
+          "title": "Kim Sundtoft Hald - CBS Department of Operations Management",
+          "notes": "Read with plain curl. Before entering academia: management and senior consultant positions at Bang & Olufsen, KPMG Consulting and PwC Consulting; no dates."
+        },
+        {
+          "url": "https://research.cbs.dk/en/persons/kim-sundtoft-hald/",
+          "title": "Kim Sundtoft Hald - CBS Research Portal",
+          "notes": "Read with plain curl. Professor, Department of Operations Management; no positions or dates of appointment."
         }
       ],
-      "reason": "CBS biographies describe current teaching and research without dated doctoral and early employment chronology.",
       "source": "omlist"
     },
     {
@@ -16766,13 +16872,23 @@
       "facultyId": "omlist-1f5e451efba54280",
       "name": "Vernon Ning Hsu",
       "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "Official profile lists several former universities without dates or ordering and does not establish first employment after the doctorate.",
+      "checkedAt": "2026-10-17",
+      "reason": "Second pass: the CUHK profile (plain curl) still lists earlier faculty posts at UNSW, George Mason and HKUST without dates or order, and links no CV. His ORCID has only a CUHK entry from 2009. Crossref metadata gives a George Mason affiliation ('School of Business Administration, George Mason University') on his August 1995 IIE Transactions article and George Mason affiliations on 2000-2001 papers (joint with HKUST on 2002 papers), which suggests George Mason was his first post after the 1994 Iowa degree, but an article affiliation does not date an appointment or exclude an earlier post. The Mathematics Genealogy Project has no record for him. Earlier review (2026-10-16): the official profile lists several former universities without dates or ordering.",
       "sources": [
         {
           "url": "https://www.bschool.cuhk.edu.hk/staff/hsu-vernon-ning/",
-          "title": "Vernon Ning Hsu public academic profile",
-          "notes": "Official profile lists several former universities without dates or ordering and does not establish first employment after the doctorate."
+          "title": "Vernon Hsu - CUHK Business School profile",
+          "notes": "Read with plain curl. BS Fujian Normal; MA, MS, PhD Iowa; has held faculty positions at UNSW, George Mason University and HKUST (no dates)."
+        },
+        {
+          "url": "https://orcid.org/0000-0003-4197-148X",
+          "title": "ORCID record 0000-0003-4197-148X (Vernon Hsu)",
+          "notes": "Read through the public API. One employment entry: CUHK Department of Decision Sciences and Managerial Economics, from 2009."
+        },
+        {
+          "url": "https://api.crossref.org/works?query.author=Vernon+Ning+Hsu&filter=until-pub-date:2003&rows=30&select=title,author,issued,DOI,container-title",
+          "title": "Crossref metadata query for Vernon Ning Hsu's papers to 2003",
+          "notes": "IIE Transactions, August 1995 (Tool selection for optimal part production): School of Business Administration, George Mason University. Management Science 2000 and Operations Research 2001: School of Management, George Mason. MSOM 2002: HKUST and George Mason."
         }
       ],
       "source": "omlist"
@@ -17096,14 +17212,32 @@
     {
       "facultyId": "omlist-dd4c49b129f23a68",
       "name": "Michael Huang",
-      "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "The Baruch College Zicklin profile (opened) confirms a USC Operations Management PhD and a current Assistant Professor title, but gives no degree year, start date or prior positions and no CV link. Without a CV or USC placement record, it cannot be shown whether Baruch is the first post-PhD job (a postdoc or industry job may precede it) or when it began. Imported PhD year 2023 is not independently supported. Namesake risk is high; the profile was matched through the Baruch page only.",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "employer": "City University of New York, Baruch College",
+      "position": "Assistant Professor",
+      "placementYear": 2024,
+      "category": "tenure-track",
+      "evidenceUrl": "https://faculty180.interfolio.com/url/?5M47JaXdCAYX0fxUxWS2f3KnZwqc|YOzzr4M7xFKo5KN1RqgYYBC3tzJQN5wF",
+      "evidenceNote": "His Baruch Faculty180 vita (linked as 'View CV' from the Baruch profile) gives the Ph.D. in Operations Management, University of Southern California, 2023 (dissertation 'Decision-Aware Learning in the Small-Data, Large-Scale Regime'), Columbia M.S. 2017 and B.Sc. 2015, and under Academic and Other Positions a single entry: Assistant Professor, Baruch College, 2024-ongoing. ORCID dates the USC doctorate 2017-08-21 to 2023-07-31 and lists only a March-June 2022 Boston Consulting Group engagement during the PhD. The Baruch profile shows his earliest Baruch teaching in Spring 2024. No post is recorded for the months between July 2023 and the 2024 Baruch start.",
+      "phdYearVerified": 2023,
+      "phdInstitutionVerified": "University of Southern California",
+      "reason": "Second pass: the Baruch profile now links a Faculty180 vita (rendered in a headless browser) that lists Baruch from 2024 as his only academic or other position after the 2023 USC Ph.D., and ORCID (public API) dates the doctorate to July 2023. Identity is matched by the USC Data Sciences and Operations doctorate and the Columbia operations-research degrees on both records. A verifier may want to confirm nothing occupied the second half of 2023; the vita lists nothing.",
       "sources": [
         {
+          "url": "https://faculty180.interfolio.com/url/?5M47JaXdCAYX0fxUxWS2f3KnZwqc|YOzzr4M7xFKo5KN1RqgYYBC3tzJQN5wF",
+          "title": "Michael Huang - Faculty180 Vita and Individual Profile Data Sheet (Baruch)",
+          "notes": "Rendered in a headless browser (script-drawn page). Education: 2023 Ph.D. Operations Management, USC; 2017 M.S. and 2015 B.Sc. Operations Research, Columbia. Academic and Other Positions: 2024 - Ongoing, Assistant Professor, Baruch College. Feb 2023 talk at CUNY Baruch."
+        },
+        {
           "url": "https://www.baruch.cuny.edu/profiles/faculty/Michael-Huang",
-          "title": "Baruch College faculty profile, Michael Huang",
-          "notes": "Opened. USC PhD in Operations Management; Asst Professor, Zicklin; no dates or prior positions."
+          "title": "Michael Huang - Baruch College faculty profile",
+          "notes": "Read with plain curl. Ph.D. Operations Management, USC; courses listed from Spring 2024 to Spring 2026; links the vita."
+        },
+        {
+          "url": "https://orcid.org/0000-0001-5440-4308",
+          "title": "ORCID record 0000-0001-5440-4308 (Michael Huang)",
+          "notes": "Read through the public API. Education: USC PhD Data Sciences and Operations 2017-08-21 to 2023-07-31; Columbia M.S. IEOR 2015-2016, B.S. IEOR 2011-2015. Employment: Boston Consulting Group 2022-03-14 to 2022-06-17 (during the PhD)."
         }
       ],
       "source": "omlist"
@@ -17777,16 +17911,29 @@
     {
       "facultyId": "omlist-0658d6453712c3d4",
       "name": "Aditya Jain",
-      "status": "unresolved",
-      "checkedAt": "2026-10-16",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "employer": "Indian School of Business",
+      "position": "Assistant Professor of Operations Management",
+      "placementYear": 2006,
+      "category": "tenure-track",
+      "evidenceUrl": "https://orcid.org/0000-0003-4491-363X",
+      "evidenceNote": "ORCID lists the Doctor of Philosophy in Operations Management at the University of Rochester's Simon School ending 2006, then Assistant Professor, Operations Management, Indian School of Business, 2006-08 to 2015-06; Visiting Assistant Professor at Kellogg 2013-06 to 2015-06 (overlapping the ISB post); and Baruch College Zicklin School of Business from 2015-09. A plain assistant professorship at an Asian business school is read as tenure-track by convention.",
+      "phdYearVerified": 2006,
+      "phdInstitutionVerified": "University of Rochester",
+      "reason": "Second pass: his ORCID record (public API), which carries all the affiliations of the person on the Baruch page (Rochester Simon, ISB, Kellogg, Baruch Zicklin, IIT Bombay), gives the dated chronology the Baruch profile lacked. The ISB assistant professorship began in August 2006, the year of the Rochester doctorate. The Zicklin profile could not be re-read this pass (TLS verification failure through the proxy).",
       "sources": [
         {
+          "url": "https://orcid.org/0000-0003-4491-363X",
+          "title": "ORCID record 0000-0003-4491-363X (Aditya Jain)",
+          "notes": "Read through the public API. Employment: Baruch College Zicklin, Management, from 2015-09; Kellogg, Visiting Assistant Professor, 2013-06 to 2015-06; Indian School of Business, Operations Management, Assistant Professor, 2006-08 to 2015-06. Education: Rochester Simon Doctor of Philosophy in Operations Management, ending 2006; M.S. 2003; IIT Bombay B.Tech 1999."
+        },
+        {
           "url": "https://zicklin.baruch.cuny.edu/faculty-profile/aditya-jain/",
-          "title": "Aditya Jain public academic profile",
-          "notes": "Baruch faculty profile lists current role and doctoral field but no degree year or earlier employment chronology."
+          "title": "Aditya Jain - Baruch Zicklin profile",
+          "notes": "Earlier review: current role and doctoral field, no degree year or employment chronology. TLS verification failure on 2026-10-17."
         }
       ],
-      "reason": "Baruch faculty profile lists current role and doctoral field but no degree year or earlier employment chronology.",
       "source": "omlist"
     },
     {
@@ -20620,16 +20767,34 @@
     {
       "facultyId": "omlist-aee2615f9d846c77",
       "name": "Jim Raymond (James) Kroes",
-      "status": "unresolved",
-      "checkedAt": "2026-10-16",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "employer": "University of Rhode Island",
+      "position": "Assistant Professor",
+      "placementYear": 2007,
+      "category": "tenure-track",
+      "evidenceUrl": "https://orcid.org/0000-0003-2143-2307",
+      "evidenceNote": "ORCID lists the Georgia Tech Ph.D. in Operations and Supply Chain Management 2003-2007, then Assistant Professor at the University of Rhode Island 2007-2011, then Boise State from 2011. The author affiliation of his 2009 Journal of Operations Management article (as indexed by OpenAlex) is the URI College of Business Administration, so the post is a plain assistant professorship at a North American business school.",
+      "phdYearVerified": 2007,
+      "phdInstitutionVerified": "Georgia Institute of Technology",
+      "reason": "Second pass: the ORCID public record gives a dated chronology (URI assistant professor 2007-2011 directly after the 2003-2007 Georgia Tech Ph.D.; Boise State from 2011). The Boise State biography dates the Ph.D. to 2007 and places his engineering, project-management and consulting work before doctoral study. The URI school context comes from the raw affiliation string of a 2009 JOM article in OpenAlex; the Wiley article page itself answered a bot check. Start month at URI is not given.",
       "sources": [
         {
+          "url": "https://orcid.org/0000-0003-2143-2307",
+          "title": "ORCID record 0000-0003-2143-2307 (James Kroes)",
+          "notes": "Read through the public API. Employment: University of Rhode Island, Assistant Professor, 2007-2011; Boise State University, Professor, 2011-present. Education: Georgia Institute of Technology PhD in Operations and Supply Chain Management 2003-2007; MS 1998-1999; RPI BS 1990-1994."
+        },
+        {
+          "url": "https://api.openalex.org/works/doi:10.1016/j.jom.2009.09.004",
+          "title": "OpenAlex record for Kroes and Ghosh (2010), Outsourcing congruence with competitive priorities, Journal of Operations Management",
+          "notes": "Raw author affiliation: James R. Kroes, University of Rhode Island, College of Business Administration, Ballentine Hall, Kingston, RI."
+        },
+        {
           "url": "https://www.boisestate.edu/cobe-itscm/jim-kroes/",
-          "title": "Jim Raymond (James) Kroes Profile",
-          "notes": "Boise State biography dates Georgia Tech doctorate2007 and identifies predoctoral industry roles but does not date initial faculty employment."
+          "title": "James Kroes, Ph.D. - Boise State ITSCM",
+          "notes": "Read with plain curl. Ph.D. Operations Management, Georgia Institute of Technology, 2007; industry work as mechanical engineer, project manager and consultant before doctoral studies. No dated employment."
         }
       ],
-      "reason": "Boise State biography dates Georgia Tech doctorate2007 and identifies predoctoral industry roles but does not date initial faculty employment.",
       "source": "omlist"
     },
     {
@@ -21059,19 +21224,32 @@
     {
       "facultyId": "omlist-b10e557003dcd729",
       "name": "Çiğdem Gizem Körpeoğlu",
-      "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "The personal biography identifies earlier UCL postdoc and Bilkent teaching but provides no dates or ordering relative to Carnegie Mellon doctorate.",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "employer": "University College London",
+      "position": "Post-doctoral Research Fellow, UCL School of Management",
+      "placementYear": 2015,
+      "category": "postdoc",
+      "evidenceUrl": "https://drive.google.com/file/d/1VAI4Bpn4FrnGTwzu14IAWKLzNpbp9ZYa/view?usp=drive_link",
+      "evidenceNote": "Her CV (linked from her personal website) gives the PhD and MS from the Tepper School, Carnegie Mellon, as 2009-2015 and lists previous academic positions as Post-doctoral Research Fellow, UCL School of Management, 2015-2020 (on leave 2019-2020); Assistant Professor, Bilkent University, 2019-2020; Assistant Professor, Eindhoven University of Technology, 2020-2025; then Associate Professor at Católica Porto Business School from 2025. The UCL postdoc began in the year the doctorate ended and precedes the Bilkent teaching.",
+      "phdYearVerified": 2015,
+      "phdInstitutionVerified": "Carnegie Mellon University",
+      "reason": "Second pass: the CV PDF linked from sites.google.com/view/cgizemkorpeoglu (downloaded with plain curl from Google Drive) dates and orders the UCL postdoc and the Bilkent and TU/e posts that the earlier review found undated. Her ORCID has only an undated Católica entry.",
       "sources": [
         {
-          "url": "https://catolicabs.porto.ucp.pt/person/cigdem-gizem-korpeoglu",
-          "title": "Çiğdem Gizem Körpeoğlu academic profile",
-          "notes": "The personal biography identifies earlier UCL postdoc and Bilkent teaching but provides no dates or ordering relative to Carnegie Mellon doctorate."
+          "url": "https://drive.google.com/file/d/1VAI4Bpn4FrnGTwzu14IAWKLzNpbp9ZYa/view?usp=drive_link",
+          "title": "C. Gizem Korpeoglu - CV (PDF on Google Drive, linked from her website)",
+          "notes": "Downloaded with plain curl; positions and education read. PhD & MS, Tepper School of Business, CMU, 2009-2015; Post-doctoral Research Fellow, UCL School of Management, 2015-2020 (on leave 2019-2020); Assistant Professor, Bilkent, 2019-2020; Assistant Professor, TU Eindhoven, 2020-2025; Associate Professor, Católica Porto, 2025-present."
         },
         {
           "url": "https://sites.google.com/view/cgizemkorpeoglu/home",
-          "title": "Çiğdem Gizem Körpeoğlu academic profile",
-          "notes": "The personal biography identifies earlier UCL postdoc and Bilkent teaching but provides no dates or ordering relative to Carnegie Mellon doctorate."
+          "title": "Gizem Korpeoglu - personal website",
+          "notes": "Read with plain curl. Before Católica Porto she was an assistant professor at TU/e; before that she taught at Bilkent and was a postdoctoral research fellow at the UCL School of Management; PhD and MS from Tepper, CMU."
+        },
+        {
+          "url": "https://orcid.org/0000-0001-9072-6398",
+          "title": "ORCID record 0000-0001-9072-6398 (C. Gizem Korpeoglu)",
+          "notes": "Read through the public API. One undated entry: Associate Professor of Operations Management, Católica Porto Business School."
         }
       ],
       "source": "omlist"
@@ -21209,16 +21387,39 @@
     {
       "facultyId": "omlist-a3d3a43e10f900c5",
       "name": "Joyaditya Laik",
-      "status": "unresolved",
-      "checkedAt": "2026-10-16",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "employer": "Bucknell University",
+      "position": "Assistant Professor of Analytics & Operations Management",
+      "placementYear": 2021,
+      "category": "tenure-track",
+      "evidenceUrl": "https://orcid.org/0009-0008-4325-4410",
+      "evidenceNote": "His ORCID records date the Pittsburgh Ph.D. in Business Analytics and Operations 2015-08-15 to 2021-07-25 (a second record lists him as a Katz PhD candidate 2015-09-01 to 2021-07-30) and the Bucknell Assistant Professor post in Analytics and Operations Management from 2021-08 (2021-08-21 on the second record). Bucknell's catalog gives his year of appointment as 2021, and his Bucknell profile states the Pittsburgh Ph.D. in 2021. Bucknell's department is in its Freeman College of Management, so the plain assistant title is read as tenure-track by convention.",
+      "phdYearVerified": 2021,
+      "phdInstitutionVerified": "University of Pittsburgh",
+      "reason": "Second pass: two ORCID records (public API) carrying his Pittsburgh and Bucknell affiliations, together with the Bucknell catalog, date the move from the Pittsburgh doctorate (ended July 2021) to the Bucknell assistant professorship (August 2021). The Bucknell catalog now shows a named title (Sydney L. Miller Assistant Professor of Operations Management), a later designation of the same post.",
       "sources": [
         {
+          "url": "https://orcid.org/0009-0008-4325-4410",
+          "title": "ORCID record 0009-0008-4325-4410 (Joyaditya Laik)",
+          "notes": "Read through the public API. Employment: Bucknell University, Analytics and Operations Management, Assistant Professor, 2021-08 to present. Education: University of Pittsburgh PhD Business Analytics and Operations, 2015-08-15 to 2021-07-25."
+        },
+        {
+          "url": "https://orcid.org/0000-0002-8915-2777",
+          "title": "ORCID record 0000-0002-8915-2777 (Joyaditya Laik)",
+          "notes": "Read through the public API. Employment: Bucknell University, Analytics and Operations Management, Assistant Professor, from 2021-08-21; University of Pittsburgh Katz Graduate School of Business, PhD Candidate, 2015-09-01 to 2021-07-30."
+        },
+        {
+          "url": "https://coursecatalog.bucknell.edu/directory/faculty/",
+          "title": "Bucknell University Catalog - Faculty directory",
+          "notes": "Read with plain curl. 'Laik, Joyaditya (2021), Sydney L. Miller Assistant Professor of Operations Management, Analytics & Operations Management, Ph.D. Pittsburgh'."
+        },
+        {
           "url": "https://www.bucknell.edu/fac-staff/joyaditya-laik",
-          "title": "Joyaditya Laik Profile",
-          "notes": "Bucknell biography dates Pittsburgh doctorate2021 but omits first appointment chronology."
+          "title": "Joyaditya Laik - Bucknell University",
+          "notes": "Read with plain curl. PhD Business Administration (Business Analytics & Operations Management), University of Pittsburgh, 2021; MBA Indian School of Mines 2007; BTech VTU 2005."
         }
       ],
-      "reason": "Bucknell biography dates Pittsburgh doctorate2021 but omits first appointment chronology.",
       "source": "omlist"
     },
     {
@@ -21304,14 +21505,32 @@
     {
       "facultyId": "omlist-bb0d82f0781e19b9",
       "name": "Anna Land",
-      "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "The Boise State biography dates Kassel doctorate to 2016 and mentions earlier Wisconsin-Whitewater associate professorship without its start or initial role.",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "employer": "University of Wisconsin-Whitewater",
+      "position": "Assistant Professor",
+      "placementYear": 2016,
+      "category": "tenure-track",
+      "evidenceUrl": "https://orcid.org/0000-0001-6024-7417",
+      "evidenceNote": "Her current ORCID record lists Assistant Professor, Information Technology and Supply Chain Management, University of Wisconsin-Whitewater, 2016-08 to 2022-08, then Boise State from 2022-08. A second ORCID record of hers (same Kassel M.Sc. and Ph.D. and University of Florida B.Sc. as the Boise State biography) dates the Kassel Ph.D. in Supply Chain Management 2013-02 to 2016-06-30 and a Kassel research-assistant post from 2012-11, which was held during the doctorate. The UW-Whitewater post therefore began about two months after the degree. The Boise State biography calls her later UW-Whitewater rank associate professor and program director, a later promotion; the ITSCM department is in UW-Whitewater's College of Business and Economics.",
+      "phdYearVerified": 2016,
+      "phdInstitutionVerified": "University of Kassel",
+      "reason": "Second pass: two ORCID records, linked to her by the identical degree history in the Boise State biography, give the dates. The Kassel doctorate ended 2016-06-30 and the UW-Whitewater assistant professorship began 2016-08. The earlier review saw only an undated UW-Whitewater associate professorship in the Boise State biography.",
       "sources": [
         {
+          "url": "https://orcid.org/0000-0001-6024-7417",
+          "title": "ORCID record 0000-0001-6024-7417 (Anna Land)",
+          "notes": "Read through the public API. Employment: University of Wisconsin-Whitewater, Information Technology and Supply Chain Management, Assistant Professor, 2016-08 to 2022-08; Boise State University, ITSCM, 2022-08 to present."
+        },
+        {
+          "url": "https://orcid.org/0000-0001-9760-6591",
+          "title": "ORCID record 0000-0001-9760-6591 (Anna Land, Kassel)",
+          "notes": "Read through the public API. Education: Universität Kassel FB07 PhD Supply Chain Management 2013-02-01 to 2016-06-30; Kassel MSc International Food Business and Consumer Studies 2010-2012; University of Florida BSc Food Science and Human Nutrition 2007-2010. Employment: Kassel research assistant, Supply Chain Management, from 2012-11-01 (no end date; held during the doctorate)."
+        },
+        {
           "url": "https://www.boisestate.edu/cobe-itscm/anna-land-ph-d/",
-          "title": "Anna Land academic profile",
-          "notes": "The Boise State biography dates Kassel doctorate to 2016 and mentions earlier Wisconsin-Whitewater associate professorship without its start or initial role."
+          "title": "Anna Land, Ph.D. - Boise State ITSCM",
+          "notes": "Read with plain curl. Ph.D. Supply Chain Management, University of Kassel, Germany, 2016; M.S. Kassel 2012; B.S. University of Florida 2010. Before Boise State she was associate professor and program director of Supply Chain Management at UW-Whitewater; lists UWW College of Business and Economics teaching awards 2018-2021."
         }
       ],
       "source": "omlist"
@@ -25004,23 +25223,25 @@
       "facultyId": "omlist-f8d965d2c66bb8f3",
       "name": "John Macdonald",
       "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "CSU profile confirms a University of Maryland College Park PhD (no year) and pre-doctoral industry roles at UTi Worldwide and others, but no post-PhD chronology or years. CSU start date not documented in opened sources.",
+      "checkedAt": "2026-10-17",
+      "reason": "Second pass: the Maryland DRUM record (repository API) dates his dissertation 'Supply Chain Disruption Management: A Conceptual Framework and Theoretical Model' (advisor Thomas Corsi, Logistics, Business & Public Policy) to 2008-11-06, consistent with the OM List's 2008. The first post after it is still undocumented: the CSU media-relations profile (plain curl) places his UTi Worldwide, Naigai Nitto, Allied Van Lines, Union Pacific, Ruan and J.M. Swank roles before the doctorate and gives no post-PhD dates, and his ORCID has a single undated Colorado State entry. Earlier review (2026-10-16): the CSU profile confirms the Maryland PhD without a year and lists pre-doctoral industry roles, with no post-PhD chronology.",
       "sources": [
         {
+          "url": "https://drum.lib.umd.edu/handle/1903/8803",
+          "title": "Supply Chain Disruption Management: A Conceptual Framework and Theoretical Model (DRUM)",
+          "notes": "Read through the DRUM search API. Author Macdonald, John R; advisor Corsi, Thomas M; department Logistics, Business & Public Policy; type Dissertation; date issued 2008-11-06."
+        },
+        {
           "url": "https://newsmediarelations.colostate.edu/contacts/john-macdonald/",
-          "title": "CSU media relations: John Macdonald",
-          "notes": "Opened. Education and pre-PhD industry roles; no years."
+          "title": "John Macdonald - CSU media relations expert profile",
+          "notes": "Read with plain curl. PhD in Logistics and Transportation, University of Maryland College Park (no year); prior to the doctorate he worked for UTi Worldwide and other logistics firms; no post-PhD dates."
+        },
+        {
+          "url": "https://orcid.org/0000-0001-6229-0312",
+          "title": "ORCID record 0000-0001-6229-0312 (John Macdonald)",
+          "notes": "Read through the public API. One undated employment entry: Associate Professor of Logistics and Supply Chain Management, Management, Colorado State University."
         }
       ],
-      "reportedAcademicPlacement": {
-        "employer": "Colorado State University",
-        "position": null,
-        "placementYear": null,
-        "phdYearVerified": null,
-        "evidenceUrl": "https://newsmediarelations.colostate.edu/contacts/john-macdonald/",
-        "evidenceNote": "Current employer only; start year and first-job status not established."
-      },
       "source": "omlist"
     },
     {
@@ -28093,15 +28314,20 @@
       "facultyId": "omlist-1016804c78833bb4",
       "name": "Mohamed Naim",
       "status": "unresolved",
-      "checkedAt": "2026-10-16",
+      "checkedAt": "2026-10-17",
+      "reason": "Second pass: the Cardiff profile (profiles.cardiff.ac.uk/staff/naimmm) answered a Cloudflare check (403) to plain curl, to the reader proxy r.jina.ai, to a headless browser and to the fetch tool, so its career-overview section could not be read. No ORCID record with a Cardiff affiliation was found through the public API, and Crossref metadata for his 1990-1994 papers carries no affiliations or dates of appointment. The degree year and the first post after it remain undocumented. Earlier review (2026-10-16): the Cardiff biography, opened through a web search, describes leadership roles and research but gives no degree date or early employment chronology.",
       "sources": [
         {
           "url": "https://profiles.cardiff.ac.uk/staff/naimmm",
-          "title": "Mohamed Naim Profile",
-          "notes": "Cardiff institutional biography was opened through web search. It describes current and former leadership roles and research but does not supply a degree date or early employment chronology."
+          "title": "Professor Mohamed Naim - Cardiff University profile",
+          "notes": "Earlier review read it through a web search: current and former leadership roles and research, no dated chronology. This pass: 403 Cloudflare challenge to curl, r.jina.ai, headless Chromium and the fetch tool."
+        },
+        {
+          "url": "https://api.crossref.org/works?query.author=Mohamed+Naim&filter=until-pub-date:1995&rows=15&select=title,author,issued,DOI",
+          "title": "Crossref metadata query for Mohamed M. Naim's early papers",
+          "notes": "1990 and 1994 papers by Mohamed M. Naim listed, without affiliations."
         }
       ],
-      "reason": "Cardiff institutional biography was opened through web search. It describes current and former leadership roles and research but does not supply a degree date or early employment chronology.",
       "source": "omlist"
     },
     {
@@ -29547,13 +29773,28 @@
       "facultyId": "omlist-74066cc4b559e8ec",
       "name": "Rema Padman",
       "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "The CMU biography gives degrees and a senior NIH fellowship without dates; the earliest post-doctoral employer cannot be established.",
+      "checkedAt": "2026-10-17",
+      "reason": "Second pass: the Mathematics Genealogy Project dates her University of Texas at Austin Ph.D. to 1986 (dissertation 'An Optimization-Based Intelligent Decision Support System for Logistics Planning', advisors Darwin Klingman, Leon Lasdon and Agha Iqbal Ali), which fills the degree the OM List import lacks. Her first post after 1986 is still undocumented: the Heinz profile (plain curl) gives degrees and the NLM senior fellowship without dates and links no CV, her ORCID has one undated Carnegie Mellon entry, and her old CMU user directories hold only 2004 slide files. Earlier review (2026-10-16): the CMU biography gives degrees and a senior NIH fellowship without dates.",
       "sources": [
         {
+          "url": "https://www.mathgenealogy.org/id.php?id=267475",
+          "title": "Rema Padman - Mathematics Genealogy Project",
+          "notes": "Ph.D. University of Texas at Austin 1986; dissertation and advisors as stated."
+        },
+        {
           "url": "https://www.heinz.cmu.edu/faculty-research/profiles/padman-rema",
-          "title": "Rema Padman academic profile",
-          "notes": "The CMU biography gives degrees and a senior NIH fellowship without dates; the earliest post-doctoral employer cannot be established."
+          "title": "Rema Padman - Heinz College profile",
+          "notes": "Read with plain curl. Trustees Professor; B.Tech IIT Kanpur, M.S. UT Dallas, PhD Operations Research UT Austin, NLM Senior Fellowship in Applied Informatics (Pittsburgh); no dates, no CV link."
+        },
+        {
+          "url": "https://orcid.org/0000-0003-4250-4357",
+          "title": "ORCID record 0000-0003-4250-4357 (Rema Padman)",
+          "notes": "Read through the public API. One undated employment entry: Trustees Professor, Heinz College, Carnegie Mellon University."
+        },
+        {
+          "url": "https://www.andrew.cmu.edu/user/rpadman/",
+          "title": "Index of /user/rpadman (CMU)",
+          "notes": "Directory listing with four 2004 slide files only; no CV."
         }
       ],
       "source": "omlist"
@@ -29601,19 +29842,37 @@
     {
       "facultyId": "omlist-7f576ccb7876444d",
       "name": "James Paine",
-      "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "Bucknell identifies MIT PhD in 2023, but the profiles do not provide a complete dated chronology separating prior industry work from post-doctoral employment.",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "employer": "Bucknell University",
+      "position": "Assistant Professor of Analytics & Operations Management",
+      "placementYear": 2023,
+      "category": "tenure-track",
+      "evidenceUrl": "https://orcid.org/0000-0002-1945-8359",
+      "evidenceNote": "ORCID gives a full dated chronology: GE-Hitachi Nuclear Energy engineer 2008-2011, Inmar 2013-2015 and HanesBrands 2015-2017 (all before the doctorate); MIT Sloan teaching assistant and PhD candidate 2018-08 to 2023-06-01 with a concurrent MIT Sloan graduate-admissions data-analyst job 2018-09 to 2023-06-01; then Assistant Professor in Analytics and Operations Management at Bucknell University from 2023-08-01. MIT DSpace dates his Ph.D. thesis June 2023. Bucknell's catalog gives his year of appointment as 2023; the department is in Bucknell's Freeman College of Management.",
+      "phdYearVerified": 2023,
+      "phdInstitutionVerified": "Massachusetts Institute of Technology",
+      "reason": "Second pass: the ORCID public record separates his pre-doctoral industry jobs and his student-period MIT jobs (both ending 2023-06-01) from the Bucknell assistant professorship that began 2023-08-01. The MIT DSpace thesis record (Ph.D., June 2023) dates the degree, and the Bucknell catalog dates the appointment to 2023. The jpaine.info CV was not needed.",
       "sources": [
         {
-          "url": "https://www.bucknell.edu/fac-staff/james-paine",
-          "title": "James Paine academic profile",
-          "notes": "Bucknell identifies MIT PhD in 2023, but the profiles do not provide a complete dated chronology separating prior industry work from post-doctoral employment."
+          "url": "https://orcid.org/0000-0002-1945-8359",
+          "title": "ORCID record 0000-0002-1945-8359 (James Paine)",
+          "notes": "Read through the public API. Employment: Bucknell University, Analytics and Operations Management, Assistant Professor, 2023-08-01 to present; MIT Sloan Graduate Admissions, Enrollment Data Analyst, 2018-09 to 2023-06-01; MIT Sloan, Teaching Assistant and PhD Candidate, 2018-08 to 2023-06-01; HanesBrands 2015-06 to 2017-09; Inmar 2013-05 to 2015-06; GE-Hitachi Nuclear Energy 2008-06 to 2011-07."
         },
         {
-          "url": "https://jpaine.info",
-          "title": "James Paine academic profile",
-          "notes": "Bucknell identifies MIT PhD in 2023, but the profiles do not provide a complete dated chronology separating prior industry work from post-doctoral employment."
+          "url": "https://dspace.mit.edu/handle/1721.1/151220",
+          "title": "Essays on Dynamic Supply Chains and Service Delivery Systems (MIT DSpace)",
+          "notes": "Read through the DSpace search API. Author Paine, James Edward; degree Ph.D.; date issued 2023-06."
+        },
+        {
+          "url": "https://coursecatalog.bucknell.edu/directory/faculty/",
+          "title": "Bucknell University Catalog - Faculty directory",
+          "notes": "Read with plain curl. 'Paine, James E. (2023), Assistant Professor of Analytics & Operations Management, Ph.D. Massachusetts Institute of Technology'."
+        },
+        {
+          "url": "https://www.bucknell.edu/fac-staff/james-paine",
+          "title": "James Paine - Bucknell University",
+          "notes": "Read with plain curl. PhD Management Science, System Dynamics, MIT, 2023; MBA Wake Forest 2014; MS Georgia Tech 2012; BS Florida 2009."
         }
       ],
       "source": "omlist"
@@ -29723,14 +29982,32 @@
     {
       "facultyId": "omlist-56ebdf0d2fe4f36b",
       "name": "Haley Paluzzi",
-      "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "Colorado State biography confirms Iowa State doctorate and industry experience but lacks dates and ordering.",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "employer": "Colorado State University",
+      "position": "Assistant Professor of Supply Chain Management",
+      "placementYear": 2024,
+      "category": "tenure-track",
+      "evidenceUrl": "https://orcid.org/0009-0001-6936-262X",
+      "evidenceNote": "ORCID lists Iowa State University, Supply Chain Management, 2020-08-01 to 2024-07-31 (her doctoral period) and Colorado State University, Management, from 2024-08-15, with nothing else. The Iowa State repository dates her Ph.D. dissertation (Department of Supply Chain Management) August 2024. Her CSU biography calls her Assistant Professor of Supply Chain Management at the College of Business and mentions earlier industry experience in quality control, operations and international logistics, which the dated record places before the doctorate. CSU's College of Business is a North American business school, so the plain assistant title is read as tenure-track.",
+      "phdYearVerified": 2024,
+      "phdInstitutionVerified": "Iowa State University",
+      "reason": "Second pass: the ORCID public record and the Iowa State Digital Repository dissertation record (API) give the sequence the earlier review lacked: the doctorate ended in July-August 2024 and the CSU post began 2024-08-15. The CSU biography (plain curl) gives the title. The ORCID entries carry no role titles, so the assistant title comes from the CSU page.",
       "sources": [
         {
+          "url": "https://orcid.org/0009-0001-6936-262X",
+          "title": "ORCID record 0009-0001-6936-262X (Haley Paluzzi)",
+          "notes": "Read through the public API. Employment: Colorado State University, Management, from 2024-08-15; Iowa State University, Supply Chain Management, 2020-08-01 to 2024-07-31 (no titles)."
+        },
+        {
+          "url": "https://dr.lib.iastate.edu/handle/20.500.12876/5w5pgWXz",
+          "title": "Understanding and leveraging the role of consumer-centrism in logistics and supply chain management (Iowa State dissertation)",
+          "notes": "Read through the repository search API. Author Paluzzi, Haley; Doctor of Philosophy, Iowa State University, Department of Supply Chain Management; advisors Haozhe Chen, Patricia Daugherty, Scott Grawe; date issued 2024-08."
+        },
+        {
           "url": "https://biz.colostate.edu/about/directory/c837179960",
-          "title": "Haley Paluzzi public academic profile",
-          "notes": "Colorado State biography confirms Iowa State doctorate and industry experience but lacks dates and ordering."
+          "title": "Haley Paluzzi - CSU College of Business directory",
+          "notes": "Read with plain curl. Assistant Professor of Supply Chain Management; Ph.D. in Supply Chain Management from Iowa State University; prior industry experience in quality control, operations management and international logistics (undated)."
         }
       ],
       "source": "omlist"
@@ -32791,13 +33068,18 @@
       "facultyId": "omlist-43186a50ae37ab2a",
       "name": "Zachary Rogers",
       "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "CSU official biography confirms ASU Supply Chain Management PhD and current CSU role, but neither doctorate year nor initial appointment date is stated. Prior purchasing and Quidsi operations work is explicitly before return to academia. A dated chronology is still needed.",
+      "checkedAt": "2026-10-17",
+      "reason": "Second pass: the CSU College of Business page (plain curl) again gives only the ASU Supply Chain Management Ph.D. without a year and says that before returning to academia he worked as a purchasing agent for a hotel-resort and as an operations manager for Quidsi. ASU's KEEP repository, where the dissertation would be dated, answered a Cloudflare check (403) to curl and to a headless browser, and the ORCID search found no record for him with a Colorado State or Arizona State affiliation. The degree year and the start of his first post after it remain undocumented. Earlier review (2026-10-16): the CSU biography confirms the ASU PhD and current role, with pre-academic purchasing and Quidsi work, but no years.",
       "sources": [
         {
           "url": "https://biz.colostate.edu/about/directory/colostate-zsrogers",
-          "title": "Zachary Rogers — public academic profile",
-          "notes": "Professional biography and degree information reviewed for first-job evidence."
+          "title": "Zac Rogers - CSU College of Business directory",
+          "notes": "Read with plain curl (redirects to /about/directory/zsrogers). Associate Professor of Operations and Supply Chain Management; PhD in supply chain management, Arizona State University; purchasing agent and Quidsi operations manager before returning to academia; no dates."
+        },
+        {
+          "url": "https://keep.lib.asu.edu/search?search_api_fulltext=Zachary%20Rogers%20supply%20chain",
+          "title": "ASU KEEP repository search",
+          "notes": "403 Cloudflare challenge to curl and headless Chromium on 2026-10-17; not read."
         }
       ],
       "source": "omlist"
@@ -34256,27 +34538,27 @@
       "name": "Alan Scheller-Wolf",
       "status": "unresolved",
       "checkedAt": "2026-10-17",
-      "reason": "The CMU Scholars profile confirms the degree (PhD, Operations Research, Columbia University, 1996) but lists no positions, the Tepper CV linked from the OM List returns 404, the ORCID record has only an undated Carnegie Mellon entry, and a web search found no CV. Whether he went straight to Carnegie Mellon or held a postdoc or other post first is not documented.",
+      "reason": "Second pass: the Tepper CV linked from the CMU Scholars profile still returns 404, the Wayback Machine has no snapshot of it (availability API) and web.archive.org itself reset the connection, the Mathematics Genealogy Project gives only the degree (Ph.D. Columbia 1996, advisor Karl Sigman), and his ORCID entry for Carnegie Mellon is undated. Whether he went straight from the 1996 Columbia doctorate to Carnegie Mellon, and in which year, is not documented. Earlier review (2026-10-17): the CMU Scholars profile confirms the 1996 Columbia Ph.D. but lists no positions, the CV link was dead and ORCID was undated.",
       "sources": [
         {
-          "url": "https://omlist.edutool.org/schools/carnegie-mellon-university/faculty/alan-scheller-wolf.html",
-          "title": "OM List profile - Alan Scheller-Wolf",
-          "notes": "Imported directory profile; opened for links to the school page, ORCID and CV only. Not evidence of a first job."
-        },
-        {
           "url": "https://scholars.cmu.edu/416-alan-schellerwolf",
-          "title": "CMU Scholars - Alan Scheller-Wolf",
-          "notes": "Degrees: PhD and M.Phil. Operations Research, Columbia, 1996; MS Columbia 1994; BA/BS Stanford 1989. No positions section."
+          "title": "Alan Scheller-Wolf - CMU Scholars",
+          "notes": "Read with plain curl. Degrees: Columbia University 1996 (and 1994), Stanford 1989; links the CV below; no positions."
         },
         {
           "url": "https://www.cmu.edu/tepper/faculty-and-research/assets/docs/scheller-wolf-alan.pdf",
-          "title": "Tepper CV link - Alan Scheller-Wolf",
-          "notes": "Returned HTTP 404 on 17 Oct 2026."
+          "title": "Tepper CV link (dead)",
+          "notes": "404 again to plain curl on 2026-10-17; no Wayback snapshot."
+        },
+        {
+          "url": "https://www.mathgenealogy.org/id.php?id=86567",
+          "title": "Alan Andrew Scheller-Wolf - Mathematics Genealogy Project",
+          "notes": "Ph.D. Columbia University 1996; dissertation 'Finite Moment Conditions for Stationary Content Processes with Applications to Fluid Models and Queues'; advisor Karl Sigman."
         },
         {
           "url": "https://orcid.org/0000-0001-6871-2360",
-          "title": "ORCID record - Alan Scheller-Wolf",
-          "notes": "Only an undated Carnegie Mellon University entry. Read through the ORCID public API (pub.orcid.org/v3.0/0000-0001-6871-2360/activities)."
+          "title": "ORCID record 0000-0001-6871-2360 (Alan Scheller-Wolf)",
+          "notes": "Earlier review: only an undated Carnegie Mellon entry."
         }
       ],
       "source": "omlist"
@@ -35813,32 +36095,22 @@
       "name": "Wan Hang (Stephen) Shum",
       "status": "unresolved",
       "checkedAt": "2026-10-17",
-      "reason": "CityU biographies state only that he received his PhD in Operations Research from MIT and list current and administrative roles without dates; the CityU department page refused the request (HTTP 400), the ORCID record has only an undated CityU entry, and a web search found no CV. The MIT DSpace thesis record (Shum, Wanhang, 'Effective contracts in supply chains', Ph.D., MIT Sloan Operations Research Center) dates the degree 2007, not the 2008 given by the OM List. The first post-PhD job is not documented.",
+      "reason": "Second pass: the CityU staff page (plain curl) now loads but still gives only degrees (PhD Operations Research, MIT; BSc UCLA) and current and administrative roles, with no CV; its earliest listed project is a Hong Kong RGC General Research Fund grant as PI for 2008-2010 ('Contracting, Renegotiation and Competition in Supply Chains', with Simchi-Levi), which places him at a Hong Kong institution by 2008 but does not date his appointment or rule out a post between the 2007 MIT thesis and CityU. ORCID has only an undated CityU entry. The MIT DSpace thesis record dates the Ph.D. to 2007, not the OM List's 2008. Earlier review (2026-10-17): CityU biographies give no dates, the department page refused the request, ORCID is undated and no CV was found.",
       "sources": [
         {
-          "url": "https://omlist.edutool.org/schools/city-university-of-hong-kong/faculty/wan-hang-stephen-shum.html",
-          "title": "OM List profile - Wan Hang (Stephen) Shum",
-          "notes": "Imported directory profile; opened for links to the school page, ORCID and CV only. Not evidence of a first job."
-        },
-        {
           "url": "https://www.cb.cityu.edu.hk/staff/swhshum/",
-          "title": "CityU College of Business - Stephen Shum",
-          "notes": "PhD in Operations Research from MIT (no year); Interim Dean, former Associate Provost and Associate Dean; no dates or earlier posts."
-        },
-        {
-          "url": "https://mba.cb.cityu.edu.hk/mba-community/profile/prof-stephen-shum",
-          "title": "CityU MBA community profile - Stephen Shum",
-          "notes": "PhD MIT, BSc UCLA; no dates or prior posts."
+          "title": "Prof. SHUM Stephen Wan Hang - CityU staff page",
+          "notes": "Read with plain curl. PhD Operations Research (MIT); Interim Dean, Professor; research grants listed back to an RGC GRF grant for 2008-2010; no employment dates."
         },
         {
           "url": "https://dspace.mit.edu/handle/1721.1/40385",
-          "title": "MIT DSpace - Effective contracts in supply chains (Shum, Wanhang)",
-          "notes": "Thesis (Ph.D.), MIT Sloan School of Management, Operations Research Center, 2007. Read through the DSpace search API."
+          "title": "Effective contracts in supply chains (MIT DSpace)",
+          "notes": "Earlier review: Shum, Wanhang, Ph.D., MIT Operations Research Center, dated 2007."
         },
         {
           "url": "https://orcid.org/0000-0001-7292-8121",
-          "title": "ORCID record - Wan Hang (Stephen) Shum",
-          "notes": "Only an undated City University of Hong Kong entry. Read through the ORCID public API (pub.orcid.org/v3.0/0000-0001-7292-8121/activities)."
+          "title": "ORCID record 0000-0001-7292-8121 (Stephen Shum)",
+          "notes": "Earlier review: only an undated CityU entry."
         }
       ],
       "source": "omlist"
@@ -41612,21 +41884,35 @@
     {
       "facultyId": "omlist-a5854451a3d98dc0",
       "name": "Jianfu Wang",
-      "status": "unresolved",
-      "checkedAt": "2026-10-16",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "employer": "Nanyang Technological University",
+      "position": "Assistant Professor, Information Technology and Operations Management, Nanyang Business School",
+      "placementYear": 2014,
+      "category": "tenure-track",
+      "evidenceUrl": "https://orcid.org/0000-0002-2393-8750",
+      "evidenceNote": "ORCID lists the Rotman (University of Toronto) Ph.D. in Operations Management and Statistics 2008-2014, then Assistant Professor in Information Technology and Operations Management at Nanyang Business School, NTU, from 2014 to 2019-12-31, and Associate Professor at City University of Hong Kong from 2020-01-02. The University of Toronto repository dates his PhD thesis 'Scheduling Policies in Service Networks' 2014-09-01 (deposit), and his CityU page says that before CityU he was on the faculty of Nanyang Business School. The start month at NTU is not given, so the post may have begun in the months around the 2014 thesis deposit. Verifier: the TSpace record also carries dc.date 2014-06 alongside the 2014-09-01 issue/deposit date; the 2014 degree year and the 2014 NTU start are unchanged.",
+      "phdYearVerified": 2014,
+      "phdInstitutionVerified": "University of Toronto",
+      "phdYearResolution": "The OM List gives 2013. The University of Toronto TSpace record dates the PhD thesis 2014-09-01, and his ORCID gives the doctorate as 2008-2014; 2014 is recorded.",
+      "reason": "Second pass: ORCID (public API), the TSpace thesis record (repository API) and the CityU staff page (plain curl) together give the sequence the earlier review lacked: the 2014 Toronto doctorate, then the NTU Nanyang Business School assistant professorship from 2014, then CityU from January 2020. A plain assistant professorship at an Asian business school is read as tenure-track by convention.",
       "sources": [
         {
-          "url": "https://www.cb.cityu.edu.hk/en/people-and-research/people/people-details?eid=jwang657",
-          "title": "Jianfu Wang Profile",
-          "notes": "Fetch failed: HTTP Error 400: Bad Request"
+          "url": "https://orcid.org/0000-0002-2393-8750",
+          "title": "ORCID record 0000-0002-2393-8750 (Jianfu Wang)",
+          "notes": "Read through the public API. Employment: CityU Management Sciences, Associate Professor, from 2020-01-02; Nanyang Business School, NTU, Information Technology and Operations Management, Assistant Professor, 2014 to 2019-12-31. Education: Rotman School of Management, University of Toronto, Ph.D. Operations Management and Statistics, 2008-2014."
+        },
+        {
+          "url": "https://utoronto.scholaris.ca/handle/1807/65765",
+          "title": "Scheduling Policies in Service Networks (University of Toronto TSpace)",
+          "notes": "Read through the repository search API. Thesis, PhD, author Wang, Jianfu; advisors Opher Baron, Oded Berman, Dmitry Krass; date issued 2014-09-01."
         },
         {
           "url": "https://www.cb.cityu.edu.hk/staff/jwang657/",
-          "title": "Jianfu Wang Website",
-          "notes": "CityU personal biography identifies Toronto doctorate and prior NTU faculty role without completion or initial employment dates."
+          "title": "Jianfu (Jeff) Wang - CityU staff page",
+          "notes": "Read with plain curl. Associate Professor; before joining CityU he was a faculty member at Nanyang Business School, NTU; Ph.D. in Operations Management, Rotman, University of Toronto."
         }
       ],
-      "reason": "CityU personal biography identifies Toronto doctorate and prior NTU faculty role without completion or initial employment dates.",
       "source": "omlist"
     },
     {
@@ -42389,34 +42675,37 @@
     {
       "facultyId": "omlist-6f0a7dc3f80da02f",
       "name": "Lai Wei",
-      "status": "unresolved",
+      "status": "verified",
       "checkedAt": "2026-10-17",
-      "reason": "Her own website says she is now an Assistant Professor at Stony Brook University and was previously an Assistant Professor of Business Analytics at Boston College's Carroll School, with a Ph.D. in Technology and Operations from Michigan Ross; it gives no dates, no degree year and no CV. The Boston College directory link returns 404, the Stony Brook profile link returns 404, the Ross PhD placement pages refuse automated requests (403), the ORCID record has no entries, and one web search found no CV. Without a dated chronology the Boston College post cannot be confirmed as the first post-PhD job, and the 2018 degree year is unverified.",
+      "employer": "Boston College",
+      "position": "Assistant Professor of Business Analytics",
+      "placementYear": null,
+      "category": "tenure-track",
+      "evidenceUrl": "https://michiganross.umich.edu/phd/areas-of-study/technology-operations",
+      "evidenceNote": "The Michigan Ross Technology and Operations PhD page lists her among its placements as 'Lai Wei, 2019 - Boston College'. The list covers academic and industry destinations (Amazon, Target, Bain) and marks visiting posts as such. Her own website says she was previously an Assistant Professor of Business Analytics at Boston College's Carroll School of Management, before her current Stony Brook post. Her teaching page lists Boston College courses from Spring 2020. The start year of the Boston College post is not stated, so placementYear is null. Ross lists her under 2019 while the OM List gives a 2018 Ph.D.; the conferral year is not independently documented.",
+      "phdYearVerified": null,
+      "phdInstitutionVerified": "University of Michigan at Ann Arbor",
+      "reason": "Second pass: the Ross Technology and Operations PhD page, read through the reader proxy r.jina.ai because the site refuses automated requests, gives Boston College as her placement. Her Google site (plain curl) confirms the title and the Michigan Ross Ph.D., and its teaching page shows Boston College teaching from Spring 2020. Deep Blue, where the dissertation would date the degree, answered a Cloudflare challenge to curl, the reader proxy and a headless browser. The ORCID search found no record with her affiliations. The Ross 2019 year versus the OM List 2018 year is left unresolved.",
       "sources": [
         {
-          "url": "https://omlist.edutool.org/schools/boston-college/faculty/lai-wei.html",
-          "title": "OM List profile - Lai Wei",
-          "notes": "Imported directory profile; opened for links to the school page, ORCID and CV only. Not evidence of a first job."
+          "url": "https://michiganross.umich.edu/phd/areas-of-study/technology-operations",
+          "title": "Michigan Ross - Technology and Operations PhD (Recent Technology and Operations Placements)",
+          "notes": "Read through r.jina.ai (site blocks automated fetches). Placement list entry: 'Lai Wei, 2019 - Boston College'."
         },
         {
           "url": "https://sites.google.com/umich.edu/laiwei/home",
-          "title": "Lai Wei - personal website",
-          "notes": "Current post Stony Brook; previously Assistant Professor of Business Analytics, Boston College Carroll School; Ph.D. Technology and Operations, Michigan Ross. No dates or CV."
+          "title": "Lai Wei - personal website (home)",
+          "notes": "Read with plain curl. Now Assistant Professor at Stony Brook; previously Assistant Professor of Business Analytics at the Carroll School of Management, Boston College; Ph.D. in Technology and Operations from Michigan Ross. No dates."
         },
         {
-          "url": "https://www.bc.edu/content/bc-web/schools/carroll-school/faculty-research/faculty-directory/lai-wei.html",
-          "title": "Boston College faculty directory - Lai Wei",
-          "notes": "Returned HTTP 404 on 17 Oct 2026."
+          "url": "https://sites.google.com/umich.edu/laiwei/teaching",
+          "title": "Lai Wei - personal website (teaching)",
+          "notes": "Read with plain curl. Boston College Business Stats taught Spring 2020, Spring 2021, Spring 2022, Spring 2023, Spring 2024, Fall 2024, Fall 2025; earlier Ross teaching as a student."
         },
         {
-          "url": "https://www.stonybrook.edu/commcms/business/about/_faculty/profile/lwei1",
-          "title": "Stony Brook College of Business profile - Lai Wei",
-          "notes": "Returned HTTP 404 on 17 Oct 2026."
-        },
-        {
-          "url": "https://orcid.org/0000-0001-6227-3643",
-          "title": "ORCID record - Lai Wei",
-          "notes": "Record has no employment or education entries. Read through the ORCID public API (pub.orcid.org/v3.0/0000-0001-6227-3643/activities)."
+          "url": "https://sites.google.com/umich.edu/laiwei/research",
+          "title": "Lai Wei - personal website (research)",
+          "notes": "Finalist, 2018 MSOM Student Paper Competition and 2018 IBM Service Science student paper award (consistent with being a student in 2018)."
         }
       ],
       "source": "omlist"
@@ -42629,19 +42918,37 @@
     {
       "facultyId": "omlist-428f45cb9e95b516",
       "name": "Holly Wiberg",
-      "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "CMU and personal biographies identify Flatiron and athenahealth work but provide no degree or employment dates establishing first postdoctoral role.",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "employer": "Flatiron Health",
+      "position": "Senior Machine Learning Operations Researcher (post-doctoral role)",
+      "placementYear": 2022,
+      "category": "postdoc",
+      "evidenceUrl": "https://hwiberg.github.io/files/cv.pdf",
+      "evidenceNote": "Her CV gives the MIT Ph.D. in Operations Research as May 2022 and, under Professional Experience, 'Flatiron Health, New York, NY, Senior Machine Learning Operations Researcher (Post-doctoral role)', 2022-2023, before her Carnegie Mellon Heinz College assistant professorship from Fall 2023 (ORCID: from 2023-08). The athenahealth data-science job and internship (2015-2017) preceded the doctorate. As with other industry postdocs in the dataset, the category is postdoc; the employer is a company.",
+      "phdYearVerified": 2022,
+      "phdInstitutionVerified": "Massachusetts Institute of Technology",
+      "reason": "Second pass: the CV linked from hwiberg.github.io (plain curl, PDF) gives the dated sequence the earlier review lacked: athenahealth 2015-2017, MIT Ph.D. May 2022 (the MIT DSpace thesis record is dated 2022-05), Flatiron Health post-doctoral role 2022-2023, CMU from Fall 2023. The OM List import had no doctorate; the MIT Ph.D. is an addition.",
       "sources": [
         {
-          "url": "https://www.heinz.cmu.edu/faculty-research/profiles/wiberg-holly",
-          "title": "Holly Wiberg public academic profile",
-          "notes": "CMU and personal biographies identify Flatiron and athenahealth work but provide no degree or employment dates establishing first postdoctoral role."
+          "url": "https://hwiberg.github.io/files/cv.pdf",
+          "title": "Holly Wiberg - CV (PDF)",
+          "notes": "Downloaded with plain curl; appointment, education and professional-experience sections read. Assistant Professor, CMU Heinz College, Fall 2023-present; PhD in Operations Research, MIT, May 2022; Flatiron Health Senior Machine Learning Operations Researcher (Post-doctoral role) 2022-2023; athenahealth 2015-2017."
         },
         {
           "url": "https://hwiberg.github.io",
-          "title": "Holly Wiberg public academic profile",
-          "notes": "CMU and personal biographies identify Flatiron and athenahealth work but provide no degree or employment dates establishing first postdoctoral role."
+          "title": "Holly Wiberg - personal website",
+          "notes": "Read with plain curl. Links the CV; says she completed her PhD at the MIT Operations Research Center and previously worked at Flatiron Health and athenahealth."
+        },
+        {
+          "url": "https://dspace.mit.edu/handle/1721.1/144629",
+          "title": "Data-driven healthcare via constraint learning and analytics (MIT DSpace)",
+          "notes": "Read through the DSpace search API. Author Wiberg, Holly Mika; degree Ph.D.; date issued 2022-05."
+        },
+        {
+          "url": "https://orcid.org/0000-0002-4251-905X",
+          "title": "ORCID record 0000-0002-4251-905X (Holly Wiberg)",
+          "notes": "Read through the public API. Employment: Carnegie Mellon University, Heinz College, Assistant Professor, 2023-08 to present."
         }
       ],
       "source": "omlist"
@@ -43934,13 +44241,18 @@
       "facultyId": "omlist-653f2ece20c9af29",
       "name": "Mei Xue",
       "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "Boston College biography lists degrees and research without dated early employment chronology.",
+      "checkedAt": "2026-10-17",
+      "reason": "Second pass: the Boston College profile (plain curl) still gives only her Wharton Ph.D. in Management Science and Applied Economics (no year), research and publications, with no CV link and no dated employment. The Wharton OID 'Post-Wharton' placement list (plain curl) starts in 2015 and does not reach a 2002 graduate. No ORCID record with a Boston College or Penn affiliation was found through the public API search. Whether Boston College was her first post after the Penn doctorate, and when it began, remains undocumented. Earlier review (2026-10-16): the Boston College biography lists degrees and research without a dated early employment chronology.",
       "sources": [
         {
           "url": "https://www.bc.edu/content/bc-web/schools/carroll-school/faculty-research/faculty-directory/mei-xue.html",
-          "title": "Mei Xue public academic profile",
-          "notes": "Boston College biography lists degrees and research without dated early employment chronology."
+          "title": "Mei Xue - Boston College Carroll School faculty directory",
+          "notes": "Read with plain curl. Ph.D. Management Science and Applied Economics, AM in OPIM (Wharton), MSE Systems Engineering (Penn). No dates or employment history; no CV link."
+        },
+        {
+          "url": "https://oid.wharton.upenn.edu/programs/phd/post-wharton/",
+          "title": "Wharton OID - Post-Wharton (Recent Placements)",
+          "notes": "Read with plain curl. Placement list runs from 2015 to 2021 only; no entry for Mei Xue."
         }
       ],
       "source": "omlist"
@@ -44828,15 +45140,25 @@
       "facultyId": "omlist-012cbe38dc594c2e",
       "name": "Yimin Yu",
       "status": "unresolved",
-      "checkedAt": "2026-10-16",
+      "checkedAt": "2026-10-17",
+      "reason": "Second pass: the CityU staff page (plain curl) gives only the Minnesota Ph.D. and research, with grants listed from 2015-2017; its CV link now returns 404, and the CV at the earlier checksum URL (still served) lists the 2009 Minnesota Ph.D., honours and publications but no employment history. ORCID (public API) dates the Minnesota Ph.D. to 2009-08-20 and has only an undated CityU employment entry. The first post after the 2009 degree and its start date remain undocumented. Earlier review (2026-10-16): the CV confirms the 2009 Minnesota PhD but gives no employment history or appointment start date.",
       "sources": [
         {
           "url": "https://www.cb.cityu.edu.hk/portfolio/getCV.cfm?filename=174007.pdf&eid=yiminyu&checksum=E3FA057F95F1402E53B97A48703BDF47",
-          "title": "Yimin Yu curriculum vitae",
-          "notes": "CV confirms Minnesota PhD in 2009 but supplies no employment history or current appointment start date."
+          "title": "Yimin Yu - CV (CityU portfolio PDF)",
+          "notes": "Downloaded with plain curl. Associate Professor, Department of Management Sciences, CityU; Education: 2009 Ph.D., Industrial Engineering, University of Minnesota; no employment section."
+        },
+        {
+          "url": "https://www.cb.cityu.edu.hk/staff/yiminyu/",
+          "title": "Yimin Yu - CityU staff page",
+          "notes": "Read with plain curl. PhD Industrial Engineering (Minnesota); grants 2015-2017, 2016-2020, 2018-2020; no employment dates."
+        },
+        {
+          "url": "https://orcid.org/0000-0002-4219-8479",
+          "title": "ORCID record 0000-0002-4219-8479 (Yimin Yu)",
+          "notes": "Read through the public API. Education: University of Minnesota Ph.D. Industrial and Systems Engineering, ending 2009-08-20. Employment: City University of Hong Kong (no dates or title)."
         }
       ],
-      "reason": "CV confirms Minnesota PhD in 2009 but supplies no employment history or current appointment start date.",
       "source": "omlist"
     },
     {
@@ -46421,14 +46743,27 @@
     {
       "facultyId": "omlist-3eb4f4458847584c",
       "name": "Xiande Zhao",
-      "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "CEIBS official biography confirms Utah PhD 1990 and earlier assistant/associate-professor appointments at Utah, Hampton and City University of Hong Kong, but does not date or order those early roles. First post-PhD employment cannot be distinguished from graduate-period appointments.",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "employer": "Hampton University",
+      "position": "Assistant Professor",
+      "placementYear": 1990,
+      "category": "tenure-track",
+      "evidenceUrl": "https://orcid.org/0000-0002-8155-8959",
+      "evidenceNote": "ORCID gives a dated chronology: Teaching Fellow, Department of Management, University of Utah, 1987-09 to 1990-06 (held during the doctorate); Utah Ph.D. in Business Administration completed 1990-08; Assistant Professor, Department of Management, Hampton University, 1990-08 to 1996-08; Assistant Professor, City University of Hong Kong, from 1995-08; then CUHK (2000-2012) and CEIBS (from 2013). The Hampton post is a plain assistant professorship in a management department of a U.S. business school.",
+      "phdYearVerified": 1990,
+      "phdInstitutionVerified": "University of Utah",
+      "reason": "Second pass: his ORCID record (public API), which carries all the affiliations in the CEIBS biography, orders the early roles the earlier review could not. The Utah posts were a pre-degree teaching fellowship, and the first new job after the August 1990 Utah Ph.D. was the Hampton University assistant professorship from August 1990.",
       "sources": [
         {
+          "url": "https://orcid.org/0000-0002-8155-8959",
+          "title": "ORCID record 0000-0002-8155-8959 (Xiande Zhao)",
+          "notes": "Read through the public API. Employment: CEIBS from 2013-01-01; CUHK Decision Sciences and Managerial Economics, Associate Professor 2000-08 to 2004-07 and Professor 2004-08 to 2012-12; City University of Hong Kong, Assistant Professor 1995-08 to 1998-12 and Associate Professor 1999-01 to 2000-08; Hampton University, Department of Management, Assistant Professor 1990-08 to 1996-08; University of Utah, Department of Management, Teaching Fellow 1987-09 to 1990-06. Education: University of Utah Ph.D. in Business Administration ending 1990-08."
+        },
+        {
           "url": "https://www.ceibs.edu/zhao-xiande",
-          "title": "Xiande Zhao — CEIBS official biography",
-          "notes": "Opened rendered public biography and academic degrees section; early appointment dates not reported."
+          "title": "Xiande Zhao - CEIBS faculty biography",
+          "notes": "Earlier review: confirms Utah PhD 1990 and earlier appointments at Utah, Hampton and City University of Hong Kong without dates."
         }
       ],
       "source": "omlist"
@@ -49488,22 +49823,27 @@
       "name": "Wenge Zhu",
       "status": "unresolved",
       "checkedAt": "2026-10-17",
-      "reason": "His Cal Poly Pomona faculty page states a Ph.D. in Supply Chain and Operations Management from McCombs School of Business, UT Austin, in 2005, and his ORCID (0000-0002-9729-6236) dates the Ph.D. to August 2005, but neither gives any dated employment: ORCID lists only an undated Associate Professor post at Cal Poly Pomona, and the faculty page has no CV. The first post-PhD job is not documented. A 2021 Cal Poly Pomona interview says he worked in industry for many years (project management, production management, business consulting) before the doctorate, but it does not date his move to Cal Poly Pomona.",
+      "reason": "Second pass: the Cal Poly Pomona catalog's Faculty and Administrative Staff Directory (2026-27 catalog, read in a headless browser because the site serves an AWS WAF challenge to curl) gives 'ZHU, WENGE (2007) Professor, Technology and Operations Management ... Ph.D., University of Texas, Austin, 2005', so he joined Cal Poly Pomona in 2007, two years after the August 2005 doctorate. What he did between 2005 and 2007 is not documented: his ORCID still has only an undated Cal Poly Pomona entry, the faculty page has no CV, and the 2021 interview places his industry work before the doctorate without dating anything after it. Earlier review (2026-10-17): the faculty page and ORCID date the Ph.D. to 2005 but give no dated employment.",
       "sources": [
         {
+          "url": "https://catalog.cpp.edu/content.php?catoid=78&navoid=6989",
+          "title": "Cal Poly Pomona 2026-2027 Catalog - Faculty and Administrative Staff Directory",
+          "notes": "Rendered in a headless browser (AWS WAF challenge to curl). Entry: 'ZHU, WENGE (2007) Professor, Technology and Operations Management; B.S., Wuhan University of Technology, 1989; M.S., 1992; Ph.D., University of Texas, Austin, 2005'."
+        },
+        {
           "url": "https://www.cpp.edu/faculty/zhu/index.shtml",
-          "title": "Cal Poly Pomona — Dr. Wenge Zhu",
-          "notes": "Department Chair, Professor; Ph.D. UT Austin McCombs 2005; publications; no employment history."
+          "title": "Wenge Zhu - Cal Poly Pomona faculty page",
+          "notes": "Earlier review: Ph.D. in Supply Chain and Operations Management, McCombs School of Business, UT Austin, 2005; no CV."
         },
         {
           "url": "https://orcid.org/0000-0002-9729-6236",
           "title": "ORCID record 0000-0002-9729-6236 (Wenge Zhu)",
-          "notes": "Read through public API. Education: Ph.D., University of Texas at Austin, ending 2005-08. Employment: Associate Professor, Technology & Operations Management, Cal Poly Pomona, undated."
+          "notes": "Earlier review and this search: Ph.D. dated August 2005; one undated Cal Poly Pomona Associate Professor entry."
         },
         {
           "url": "https://www.cpp.edu/cba/technology-and-operations-management/news-and-events/faculty-highlight-news/interview-with-wenge-zhu.shtml",
-          "title": "Cal Poly Pomona TOM — Interview with Wenge Zhu (November 2021)",
-          "notes": "Industry career before the UT Austin PhD; no date for joining Cal Poly Pomona."
+          "title": "Interview with Wenge Zhu - Cal Poly Pomona",
+          "notes": "Earlier review: many years of industry work (project management, production management, business consulting) before the doctorate; no dates after it."
         }
       ],
       "source": "faculty-page"
@@ -49673,12 +50013,17 @@
       "name": "Zachary Leffakis",
       "status": "unresolved",
       "checkedAt": "2026-10-17",
-      "reason": "The Clemson profile confirms a Ph.D. in Manufacturing Management from the University of Toledo (2009) and current title Senior Lecturer, but gives no employment history or CV; no ORCID record was found (public ORCID search for the surname returned no results). The first post-PhD job is undocumented.",
+      "reason": "Second pass: the OhioLINK ETD record (read in a headless browser) shows his dissertation 'The Effects of High Performance Work Systems on Operational Performance in Different Manufacturing Environments' for a Doctor of Manufacturing Management (a professional doctorate, which the faculty page calls a Ph.D.) from the University of Toledo, 2009, deposited around August 2009 (accession toledo1250604411). No dated employment was found: the Clemson profile has none, and ORCID has no record under the surname. The first post after the 2009 degree, and when he joined Clemson, remain undocumented. Earlier review (2026-10-17): the Clemson profile confirms the 2009 Toledo doctorate and the Senior Lecturer title but gives no employment history.",
       "sources": [
         {
+          "url": "https://etd.ohiolink.edu/acprod/odb_etd/r/etd/search/10?p10_accession_num=toledo1250604411&clear=10",
+          "title": "Leffakis dissertation (OhioLINK ETD)",
+          "notes": "Read in a headless browser. Year and degree: 2009, Doctor of Manufacturing Management, University of Toledo, Manufacturing Management; committee chair Dale Dwyer."
+        },
+        {
           "url": "https://www.clemson.edu/business/about/profiles/ZLEFFAK",
-          "title": "Clemson Powers College of Business — Zachary Leffakis",
-          "notes": "Senior Lecturer: Operations Management; Ph.D. Manufacturing Management, University of Toledo 2009; MBA and BS from California University of Pennsylvania; no dated positions."
+          "title": "Zachary Leffakis - Clemson profile",
+          "notes": "Earlier review: Senior Lecturer, Operations Management; Ph.D. in Manufacturing Management, University of Toledo, 2009; no employment history."
         }
       ],
       "source": "faculty-page"
@@ -49718,12 +50063,32 @@
       "name": "Amir Hosseinipour",
       "status": "unresolved",
       "checkedAt": "2026-10-17",
-      "reason": "The Concordia profile shows 'Dr Amir Hosseinipour, PhD of Business Administration' and the title Assistant Professor, with research areas and two papers, but no degree institution, year or employment chronology. It links a LinkedIn profile, which was not opened (login-walled). No ORCID record was found by name. The PhD and first post-PhD job are not established.",
+      "reason": "Second pass: the Concordia profile (plain curl) still shows only 'Dr Amir Hosseinipour, PhD of Business Administration' and the title Assistant Professor, with no institution, year or history. The ORCID record under his name (0000-0002-7487-8209) has no affiliations or works, and no other ORCID entry under the surname carries a Concordia or business-school affiliation. A Concordia site search (headless browser) returned no news item naming him, and the October 2021, October 2022 and October 2024 JMSB new-faculty stories do not include him. The doctorate and the first post-PhD job are not established. Earlier review (2026-10-17): the profile gives no degree institution, year or chronology; LinkedIn was not opened.",
       "sources": [
         {
           "url": "https://www.concordia.ca/faculty/amirhossein-hosseinipour.html",
-          "title": "Amir Hosseinipour - Concordia University faculty profile",
-          "notes": "PhD of Business Administration stated without institution or year; Assistant Professor, Supply Chain and Business Technology Management."
+          "title": "Dr Amir Hosseinipour - Concordia University",
+          "notes": "Read with plain curl. 'PhD of Business Administration'; Assistant Professor, Supply Chain and Business Technology Management; no dates."
+        },
+        {
+          "url": "https://orcid.org/0000-0002-7487-8209",
+          "title": "ORCID record 0000-0002-7487-8209 (Amir hosseinipour)",
+          "notes": "Read through the public API. No employment, education or works; identity with the Concordia professor cannot be confirmed."
+        },
+        {
+          "url": "https://www.concordia.ca/cunews/jmsb/2024/10/09/john-molson-school-of-business-welcomes-new-tenure-track-faculty.html",
+          "title": "John Molson School of Business welcomes new tenure track faculty (9 October 2024)",
+          "notes": "Read with plain curl. Six new tenure-track faculty; he is not among them."
+        },
+        {
+          "url": "https://www.concordia.ca/cunews/main/stories/2022/10/28/4-new-tenure-track-faculty-join-concordia-s-john-molson-school-of-business.html",
+          "title": "4 new tenure-track faculty join Concordia's John Molson School of Business (28 October 2022)",
+          "notes": "Read with plain curl. Four new tenure-track faculty (Sumin Song joins Supply Chain and Business Technology Management); he is not named."
+        },
+        {
+          "url": "https://www.concordia.ca/cunews/jmsb/2021/10/29/new-faculty-hires.html",
+          "title": "Welcoming new faculty members to John Molson (29 October 2021)",
+          "notes": "Read with plain curl. He is not named."
         }
       ],
       "source": "faculty-page"
@@ -49753,17 +50118,22 @@
       "name": "Anton Shevchenko",
       "status": "unresolved",
       "checkedAt": "2026-10-17",
-      "reason": "His Concordia profile gives his title (Associate Professor), his research focus (supply chain sustainability), publications from 2014 and awards, but no degree, institution, year or employment history. The ORCID record with a Concordia affiliation (0000-0001-8960-8626) has only one undated Concordia employment entry. A search for a CV or biography returned only a co-authored paper listing. The PhD and first post-PhD job are not established.",
+      "reason": "Second pass: the doctorate is now identified. YorkSpace holds his dissertation 'Re-Thinking Supplier Risk Management With Case Studies and Agent-Based Simulation' (PhD, Administration, York University; advisor Moren Levesque, his co-author on the papers listed on his Concordia profile), with copyright date 2017-06-07 and issue date 2018-03-01, so the degree is about 2017. The first post after it is still undocumented: the Concordia profile has no dates, his ORCID has one undated Concordia entry, and a Concordia site search found no appointment news. Earlier review (2026-10-17): the profile gives no degree or employment history and ORCID is undated.",
       "sources": [
         {
+          "url": "https://yorkspace.library.yorku.ca/handle/10315/34414",
+          "title": "Re-Thinking Supplier Risk Management With Case Studies and Agent-Based Simulation (YorkSpace)",
+          "notes": "Read through the YorkSpace search API. Author Shevchenko, Anton; PhD - Doctor of Philosophy, Administration, doctoral level; advisor Levesque, Moren; date.copyright 2017-06-07; date.issued 2018-03-01."
+        },
+        {
           "url": "https://www.concordia.ca/faculty/anton-shevchenko.html",
-          "title": "Anton Shevchenko - Concordia University faculty profile",
-          "notes": "Title, research statement, publications 2014-2024, awards 2017 and 2020; no education or positions."
+          "title": "Anton Shevchenko - Concordia University",
+          "notes": "Read with plain curl. Associate Professor; publications from 2014 (with Pagell, Levesque, Hajmohammad); awards 2017 and 2020; no degree or employment dates."
         },
         {
           "url": "https://orcid.org/0000-0001-8960-8626",
-          "title": "ORCID record 0000-0001-8960-8626 (Anton Shevchenko, Concordia)",
-          "notes": "Read through the public ORCID API; a single undated Concordia University employment entry."
+          "title": "ORCID record 0000-0001-8960-8626 (Anton Shevchenko)",
+          "notes": "Read through the public API. One undated Concordia employment entry."
         }
       ],
       "source": "faculty-page"
@@ -49771,24 +50141,37 @@
     {
       "facultyId": "roster:concordia-university:arman-sadreddin",
       "name": "Arman Sadreddin",
-      "status": "unresolved",
+      "status": "verified",
       "checkedAt": "2026-10-17",
-      "reason": "The Queen's University QSpace record shows his PhD thesis (Business, supervisor Yolande Chan) deposited in August 2020, so the degree is about 2020. The Concordia profile lists teaching from 2021-2022 (COMM 226) and mentions an FRQSC new-professor grant, but gives no appointment date, title at entry, or prior employment; his ORCID employment entry (Concordia) is undated. The start date of the Concordia appointment, and whether any job intervened between August 2020 and his first Concordia teaching in 2021, are not documented in the sources opened. LinkedIn was not consulted.",
+      "employer": "Concordia University",
+      "position": "Assistant Professor, Business Technology Management",
+      "placementYear": 2020,
+      "category": "tenure-track",
+      "evidenceUrl": "https://www.concordia.ca/cunews/jmsb/2021/10/29/new-faculty-hires.html",
+      "evidenceNote": "The John Molson news story 'Welcoming new faculty members to John Molson' (29 October 2021) says he is an assistant professor in Business Technology Management and joined John Molson in August 2020. The Queen's QSpace record of his PhD thesis (Business) was deposited on 2020-08-20, so the appointment began in the same month as the thesis deposit. His October 2021 AISWorld posting is signed 'Assistant Professor, Business Technology Management, John Molson School of Business'. No other post appears between the doctorate and Concordia.",
+      "phdYearVerified": 2020,
+      "phdInstitutionVerified": "Queen's University",
+      "reason": "Second pass: the October 2021 JMSB new-faculty story (found through a Concordia site search in a headless browser, then read with plain curl) dates his start to August 2020, which the earlier review lacked, and QSpace (repository API) dates the thesis deposit to 20 August 2020. The plain assistant title at a North American business school is read as tenure-track by convention. The thesis deposit and the start fall in the same month; the formal conferral date is not documented.",
       "sources": [
         {
-          "url": "https://www.concordia.ca/faculty/arman-sadreddin.html",
-          "title": "Arman Sadreddin - Concordia University profile",
-          "notes": "Read with curl. PhD and MSc in Management (MIS), Smith School of Business, Queen's University; teaching list starts 2021; no appointment date."
+          "url": "https://www.concordia.ca/cunews/jmsb/2021/10/29/new-faculty-hires.html",
+          "title": "Welcoming new faculty members to John Molson (Concordia news, 29 October 2021)",
+          "notes": "Read with plain curl. 'Arman Sadreddin is an assistant professor in Business Technology Management, and joined John Molson in August of 2020'; PhD and MSc in MIS from Queen's Smith School of Business."
         },
         {
           "url": "http://hdl.handle.net/1974/28020",
-          "title": "QSpace - Exploring Digitalization in New Venture Ecosystems - Three Essays (Sadreddin, PhD)",
-          "notes": "Read through the QSpace DSpace REST API: PhD, Queen's University at Kingston, Business; made available 2020-08-20."
+          "title": "Exploring Digitalization in New Venture Ecosystems - Three Essays (Queen's QSpace)",
+          "notes": "Read through the QSpace search API. Sadreddin, Arman; PhD; Business; Queen's University at Kingston; accessioned 2020-08-20."
         },
         {
-          "url": "https://orcid.org/0000-0002-6425-0696",
-          "title": "ORCID - Arman Sadreddin",
-          "notes": "Public API read: one undated Concordia University employment entry."
+          "url": "https://lists.aisnet.org/pipermail/aisworld_lists.aisnet.org/20211026/042659.html",
+          "title": "AISWorld posting by Arman Sadreddin, 26 October 2021",
+          "notes": "Read with plain curl. Signed 'Arman Sadreddin, PhD, Assistant Professor, Business Technology Management, John Molson School of Business, Concordia University'."
+        },
+        {
+          "url": "https://www.concordia.ca/faculty/arman-sadreddin.html",
+          "title": "Arman Sadreddin - Concordia University",
+          "notes": "Read with plain curl. Now Associate Professor of BTM; PhD and MSc from Smith School of Business, Queen's; COMM 226 taught 2021-2022."
         }
       ],
       "source": "faculty-page"
@@ -50203,27 +50586,27 @@
       "name": "Salim Lahmiri",
       "status": "unresolved",
       "checkedAt": "2026-10-17",
-      "reason": "The Concordia profile lists, without dates, Ph.D. Electrical Engineering (ÉTS), Post-doc at The Neuro, McGill University, and Ph.D. Computer Science (UQAM). Repository records show the UQAM doctoral thesis dated 2014 (Archipel) and the ÉTS doctoral thesis dated 2025 (Espace ÉTS, completed while already on the Concordia faculty), so the first doctorate is the 2014 UQAM PhD. The McGill (The Neuro) postdoc is the likely first post-PhD job, but no source opened gives its dates or confirms that nothing came between 2014 and it; the date he joined Concordia is also not given. ORCID (0000-0002-9237-4100) has one undated Concordia entry.",
+      "reason": "Second pass: Crossref author affiliations for his 2013-2018 papers show the UQAM Department of Computer Science together with ESCA School of Management, Casablanca (from 2013, before and after the 2014 UQAM doctorate), ESCA alone on several 2016-2018 papers, ÉTS from late 2015, and CENPARMI at Concordia in 2017. None of these is dated as employment, the McGill Neuro postdoc on his Concordia profile does not appear, and the ESCA affiliation that predates the degree means that even an ESCA post would not clearly be a new post-PhD job. The start of the Concordia appointment is also undated, and a Concordia site search found no appointment news. Earlier review (2026-10-17): the profile lists two doctorates (UQAM 2014, ÉTS 2025) and a McGill Neuro postdoc without dates; ORCID is undated.",
       "sources": [
         {
+          "url": "https://api.crossref.org/works?query.author=Salim+Lahmiri&filter=from-pub-date:2013,until-pub-date:2019&rows=60&select=title,author,issued,DOI,container-title",
+          "title": "Crossref metadata query for Salim Lahmiri's 2013-2018 papers",
+          "notes": "Affiliations: UQAM Computer Science and ESCA School of Management (Casablanca) from 2013; ESCA only on some 2016-2018 items; ÉTS Electrical Engineering from Dec 2015; CENPARMI Concordia Feb 2017. No McGill affiliation in this set."
+        },
+        {
           "url": "https://www.concordia.ca/faculty/salim-lahmiri.html",
-          "title": "Salim Lahmiri - Concordia University profile",
-          "notes": "Read with curl. Undated list: PhD ÉTS, Post-doc The Neuro McGill, PhD UQAM, MEng ÉTS."
+          "title": "Salim Lahmiri - Concordia University",
+          "notes": "Read with plain curl. Ph.D. ÉTS; Post-doc, The Neuro, McGill University; Ph.D. UQAM; no dates."
         },
         {
           "url": "https://archipel.uqam.ca/view/creators/Lahmiri=3ASalim=3A=3A.html",
-          "title": "Archipel UQAM - works by Lahmiri, Salim",
-          "notes": "Read with curl. Thèse ou essai doctoral accepté, 2014 (time-series prediction with wavelets and neural networks)."
-        },
-        {
-          "url": "https://espace.etsmtl.ca/cgi/search/archive/simple?screen=Search&dataset=archive&order=&q=Lahmiri&_action_search=Search",
-          "title": "Espace ÉTS - search results for Lahmiri",
-          "notes": "Read with curl. Thèse de doctorat, ÉTS, 2025 (newborn cry signals); mémoire de maîtrise, ÉTS, 2011."
+          "title": "Archipel UQAM - works by Salim Lahmiri",
+          "notes": "Earlier review: UQAM doctoral thesis dated 2014."
         },
         {
           "url": "https://orcid.org/0000-0002-9237-4100",
-          "title": "ORCID - Salim Lahmiri",
-          "notes": "Public API read: single undated Concordia employment entry."
+          "title": "ORCID record 0000-0002-9237-4100 (Salim Lahmiri)",
+          "notes": "Read through the public API. One undated Concordia employment entry."
         }
       ],
       "source": "faculty-page"
@@ -50233,22 +50616,27 @@
       "name": "Satyaveer S. Chauhan",
       "status": "unresolved",
       "checkedAt": "2026-10-17",
-      "reason": "theses.fr gives his doctorate (Automatique, Université de Metz, supervisor Jean-Marie Proth, thesis 2003METZ021S) as defended in 2003. The Concordia profile says he joined the Faculty in June 2007 as an Assistant Professor and that before Concordia he 'was working as a research fellow with University of Laval and as a faculty member with Bordeaux Business School, France', with no dates or order. Which of the Laval research fellowship and the Bordeaux faculty post came first after the 2003 degree, and when each began, is not documented in the sources opened. His ORCID record (0000-0003-0820-2849) has no education or employment entries; one web search found no CV.",
+      "reason": "Second pass: Crossref author affiliations give INRIA-SAGEP Metz on a June 2004 paper (the doctoral lab, after the 2003 defence), Bordeaux Business School on a January 2007 paper and John Molson School of Business on 2009 papers, while his 2009 forest supply-chain papers reflect the Laval collaboration. These affiliations do not date the Laval research fellowship or the Bordeaux faculty post, so which came first after the 2003 Metz doctorate, and whether the 2004 INRIA affiliation was itself a post-doctoral post, remain undocumented. The Concordia profile still says only that he joined in June 2007 as an Assistant Professor after working as a research fellow at Laval and a faculty member at Bordeaux Business School. Earlier review (2026-10-17): theses.fr dates the Metz doctorate to 2003; the profile gives the two earlier posts without dates or order.",
       "sources": [
         {
+          "url": "https://api.crossref.org/works?query.author=Satyaveer+S.+Chauhan&filter=from-pub-date:2002,until-pub-date:2009&rows=40&select=title,author,issued,DOI,container-title",
+          "title": "Crossref metadata query for Satyaveer S. Chauhan's 2002-2009 papers",
+          "notes": "Affiliations: INRIA-SAGEP, Metz (IJPR, June 2004); Bordeaux Business School, Talence (Journal of Decision Systems, January 2007); John Molson School of Business, Concordia (Interfaces, August 2009)."
+        },
+        {
           "url": "https://www.concordia.ca/faculty/satyaveer-chauhan.html",
-          "title": "Satyaveer S. Chauhan, PhD - Concordia University",
-          "notes": "Biography: joined the Faculty in June 2007 as Assistant Professor; PhD in Automation from INRIA at the University of Metz; before Concordia a research fellow at Université Laval and a faculty member at Bordeaux Business School (undated, unordered)."
+          "title": "Satyaveer S. Chauhan - Concordia University",
+          "notes": "Read with plain curl. Joined the Faculty in June 2007 as an Assistant Professor; PhD in Automation, INRIA / University of Metz; earlier research fellow at Laval and faculty member at Bordeaux Business School (no dates)."
         },
         {
           "url": "https://theses.fr/2003METZ021S",
-          "title": "theses.fr - Chaînes d'approvisionnement : approches stratégique et tactique (Satyaveer Singh Chauhan, Metz, 2003)",
-          "notes": "Read through the theses.fr public search API: thesis defended at Metz in 2003, discipline Automatique, director Jean-Marie Proth."
+          "title": "theses.fr record 2003METZ021S",
+          "notes": "Earlier review: doctorate in Automatique, Université de Metz, supervisor Jean-Marie Proth, defended 2003."
         },
         {
           "url": "https://orcid.org/0000-0003-0820-2849",
-          "title": "ORCID - Satyaveer Chauhan",
-          "notes": "Public API read: no education or employment entries."
+          "title": "ORCID record 0000-0003-0820-2849 (Satyaveer Chauhan)",
+          "notes": "Earlier review: no education or employment entries."
         }
       ],
       "source": "faculty-page"
@@ -50431,12 +50819,17 @@
       "name": "Tak K. Mak",
       "status": "unresolved",
       "checkedAt": "2026-10-17",
-      "reason": "The Concordia profile says he has been with the Faculty since 1991, holds a PhD in Statistics from the University of Western Ontario (no year), and that before Concordia he taught at the Hong Kong Polytechnic, the University of Hong Kong and Memorial University of Newfoundland, with no dates or order. The PhD year and which of these teaching posts came first after the degree are not documented in the sources opened. No matching ORCID record was found, and no CV was located.",
+      "reason": "Second pass: the Mathematics Genealogy Project dates his doctorate: Tak Kwan Mak, Ph.D. University of Western Ontario 1978, dissertation 'Estimation of linear structural and functional relationships' (statistics), advisor Lai Kow Chan, matching the Concordia profile's PhD in Statistics from Western. The order of his pre-Concordia teaching posts (Hong Kong Polytechnic, University of Hong Kong, Memorial University of Newfoundland) between 1978 and his 1991 Concordia appointment is still undocumented; Crossref metadata did not give affiliations for his early papers, no ORCID record was found and no CV was located. Earlier review (2026-10-17): the profile gives the 1991 Concordia start and the three earlier teaching posts without dates or order, and no PhD year.",
       "sources": [
         {
+          "url": "https://www.mathgenealogy.org/id.php?id=275396",
+          "title": "Tak Kwan Mak - Mathematics Genealogy Project",
+          "notes": "Ph.D. University of Western Ontario 1978; dissertation 'Estimation of linear structural and functional relationhips' [sic]; MSC 62 Statistics; advisor Lai Kow Chan."
+        },
+        {
           "url": "https://www.concordia.ca/faculty/tak-mak.html",
-          "title": "Tak K. Mak, PhD - Concordia University",
-          "notes": "Professor Emeritus; with the Faculty since 1991; PhD Statistics, Western Ontario; earlier teaching at Hong Kong Polytechnic, HKU and Memorial (undated)."
+          "title": "Tak K. Mak - Concordia University",
+          "notes": "Read with plain curl. With the Faculty since 1991; BSc CUHK, MA York, PhD Statistics Western Ontario; before Concordia taught at Hong Kong Polytechnic, the University of Hong Kong and Memorial University of Newfoundland (no dates or order)."
         }
       ],
       "source": "faculty-page"
@@ -50444,26 +50837,40 @@
     {
       "facultyId": "roster:concordia-university:tanya-giannelia",
       "name": "Tanya Giannelia",
-      "status": "unresolved",
+      "status": "verified",
       "checkedAt": "2026-10-17",
-      "reason": "HEC Montréal's IT doctoral placement list records Tanya Giannelia (2025) with destination Concordia University (no title), and she is now Assistant Professor at Concordia, but no opened source dates the start of the Concordia post or shows whether she held any earlier or concurrent post (the same list demonstrably omits postdocs, e.g. for Mahdi Mirhoseini). Her ORCID (0000-0003-0253-3313) has only an undated Concordia entry. The Concordia placement is kept as a lead, not as a verified first job.",
+      "employer": "Concordia University",
+      "position": "Assistant Professor, Supply Chain and Business Technology Management",
+      "placementYear": 2024,
+      "category": "tenure-track",
+      "evidenceUrl": "https://www.concordia.ca/cunews/jmsb/2024/10/09/john-molson-school-of-business-welcomes-new-tenure-track-faculty.html",
+      "evidenceNote": "The John Molson news story of 9 October 2024, 'John Molson School of Business welcomes new tenure track faculty', introduces her as an assistant professor in the Department of Supply Chain and Business Technology Management, with a decade of earlier non-profit experience, holding an MBA from HEC Montréal 'where she is currently completing her PhD'. HEC Montréal's IT doctoral placement list records 'Tanya Giannelia (2025) - Concordia University'. The tenure-track post therefore began in 2024, before the doctorate was completed (degree year 2025 on the HEC list). No retitling on completion is recorded, so under the overlap rule it keeps its own 2024 start year. The overlap is about one academic year, longer than a few months. Verifier: the Concordia profile now styles her 'MBA, PhD', consistent with the 2025 completion on the HEC list, but the month of the degree is not documented, so the overlap with the 2024 tenure-track start may be anywhere from several months to more than a year; the row is kept under the rule for an assistant professorship not retitled on completion (Brynjolfsson), with placementYear 2024 one year before the 2025 degree year.",
+      "phdYearVerified": null,
+      "phdInstitutionVerified": "HEC Montreal",
+      "reason": "Second pass: the 9 October 2024 JMSB story (found through a Concordia site search in a headless browser, then read with plain curl) dates the Concordia tenure-track appointment to 2024 and shows it began while she was completing her HEC Montréal PhD; the HEC list gives 2025 as her year. The thesis record and conferral date were not found (Library and Archives Canada answered 403), so phdYearVerified is left null. A verifier should confirm that a tenure-track post begun about a year before completion and not retitled is to be treated as the first job, as in the Brynjolfsson decision, rather than as a pre-degree role.",
       "sources": [
         {
+          "url": "https://www.concordia.ca/cunews/jmsb/2024/10/09/john-molson-school-of-business-welcomes-new-tenure-track-faculty.html",
+          "title": "John Molson School of Business welcomes new tenure track faculty (Concordia news, 9 October 2024)",
+          "notes": "Read with plain curl. Six new tenure-track faculty; Tanya Giannelia is an assistant professor in Supply Chain and Business Technology Management; MBA from HEC Montréal, where she is currently completing her PhD; a decade of non-profit experience."
+        },
+        {
           "url": "https://www.hec.ca/en/it/phd/placements/index.html",
-          "title": "HEC Montréal Department of IT — Placements of doctoral students",
-          "notes": "Tanya Giannelia (2025): Concordia University; supervisor Ann-Frances Cameron. No title or start date."
+          "title": "HEC Montréal - IT PhD placements of doctoral students",
+          "notes": "Read with plain curl. 'Tanya Giannelia (2025) - Concordia University; research supervisor Ann-Frances Cameron'."
         },
         {
           "url": "https://www.concordia.ca/faculty/tanya-giannelia.html",
-          "title": "Concordia University — Tanya Giannelia",
-          "notes": "Current Assistant Professor; no chronology."
+          "title": "Tanya Giannelia - Concordia University",
+          "notes": "Read with plain curl. Tanya Giannelia, MBA, PhD; Assistant Professor, Supply Chain and Business Technology Management; no dates."
         },
         {
           "url": "https://orcid.org/0000-0003-0253-3313",
           "title": "ORCID record 0000-0003-0253-3313 (Tanya Giannelia)",
-          "notes": "Read through public API; one undated employment entry, Concordia University, Supply Chain and Business Technology Management."
+          "notes": "Read through the public API. One undated employment entry: Concordia University, Supply Chain and Business Technology Management."
         }
       ],
+      "phdInstitutionVerifiedAsWritten": "HEC Montréal",
       "source": "faculty-page"
     },
     {
