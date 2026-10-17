@@ -4,16 +4,16 @@
     "updatedAt": "2026-10-17",
     "total": 3161,
     "counts": {
-      "unresolved": 1076,
-      "verified": 2081,
+      "unresolved": 1070,
+      "verified": 2087,
       "not-yet-completed-phd": 4
     },
     "bySource": {
       "omlist": {
         "total": 2149,
         "counts": {
-          "unresolved": 630,
-          "verified": 1518,
+          "unresolved": 624,
+          "verified": 1524,
           "not-yet-completed-phd": 1
         }
       },
@@ -1479,15 +1479,20 @@
       "facultyId": "omlist-f297336230f7bdc1",
       "name": "Antonio Carlos Teixeira Alvares",
       "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "The FGV EAESP faculty profile lists a mechanical engineering degree (USP, 1969), a business administration postgraduate degree (FGV/EAESP, 1973) and a faculty post at FGV EAESP from 1974, plus a long industrial management career at Brasilata from 1978. It does not mention a 2018 doctorate, so the imported PhD year and institution are unsupported by the reviewed page and the person may be mis-profiled or hold a later doctorate recorded only in a Lattes CV that was not opened. No post-PhD first job can be established.",
+      "reason": "Third pass: the ORCID record linked from the OM List (0000-0002-9514-7122) was read through the public API. Its education entries are 'Doutorado em Administração de Empresas', Fundação Getulio Vargas-SP, 2020-2023 (a study period, not a conferral record), a Mestrado at FGV 2017-2018 (which may explain the imported 2018 year) and a USP mechanical engineering degree 1965-1969. Its employment entries show posts that long predate any doctorate and continue: Professor Extracarreira at FGV EAESP's POI department from 1974 and Brasilata S.A. (Diretor Superintendente 1978-2014, board vice-president from 2015), plus board and association roles from 2004-2018. No new employer after the doctorate is listed, so under the overlap rule no first new post-PhD job is documented, and the doctorate's conferral year is not verified. Earlier review (2026-10-16): the FGV EAESP profile showed the 1974 FGV faculty post and the Brasilata career but no doctorate.",
       "sources": [
         {
+          "url": "https://orcid.org/0000-0002-9514-7122",
+          "title": "ORCID record 0000-0002-9514-7122",
+          "notes": "Read via public API: Doutorado FGV-SP 2020-2023; Mestrado FGV 2017-2018; USP engineering 1965-1969; employment FGV EAESP Professor Extracarreira from 1974, Brasilata 1978 onward, FIESP, SINIEM, SEBRAE, SENAI and other board roles 2004-2018."
+        },
+        {
           "url": "https://eaesp.fgv.br/en/people/antonio-carlos-teixeira-alvares",
-          "title": "FGV EAESP — faculty profile",
-          "notes": "Opened; career 1974-present at FGV EAESP, no PhD listed; does not establish a 2018 doctorate or a post-PhD first job."
+          "title": "FGV EAESP profile: Antonio Carlos Teixeira Alvares",
+          "notes": "Earlier review: FGV EAESP faculty from 1974; Brasilata career from 1978; no doctorate listed."
         }
       ],
+      "checkedAt": "2026-10-17",
       "source": "omlist"
     },
     {
@@ -2443,15 +2448,25 @@
       "facultyId": "omlist-343efb0a6af3b0d1",
       "name": "Arash Asadpour",
       "status": "unresolved",
-      "checkedAt": "2026-10-17",
-      "reason": "Second pass: the Baruch-hosted CV (read through the reader proxy; a plain request failed on the certificate chain) gives the Stanford Ph.D. in Management Science and Engineering as 2005-2010 (thesis 'Rounding by Sampling', advisor Amin Saberi), then Assistant Professor at NYU Stern 2011-2018, Lyft Marketplace Labs research scientist 2018-2020 and Baruch from 2020; under teaching it lists a graduate course at Sharif University of Technology in 2011. Nothing covers the months between the 2010 degree and the 2011 NYU start: whether the Sharif course was a paid post before NYU, or whether a postdoc or other job filled 2010-2011, is unknown, and the Stanford conferral month could not be read (SearchWorks refuses requests). Earlier review (2026-10-16): the CV gave the 2010 Stanford PhD, Sharif teaching in 2011 and NYU from 2011, without the order within 2011.",
+      "reason": "Third pass: the Zicklin profile linked from the OM List (read through the reader proxy; plain curl fails on the certificate chain) gives only the degrees (PhD MS&E Stanford 2010; B.Sc. Sharif 2005) and the current Associate Professor title; the ORCID record (0000-0002-6674-3857) is empty. The CV, re-read through the reader proxy, still lists professional experience starting with NYU Stern Assistant Professor 2011-2018, and teaching of a graduate course at Sharif University of Technology in 2011. What he did between the 2010 Stanford degree and the 2011 NYU start (including whether the Sharif course was a post) is still undocumented, and a Stanford catalogue lookup for the conferral month was refused by the proxy's rate limit. Earlier review (2026-10-17): the CV gives the 2010 Stanford PhD and NYU from 2011 but nothing for 2010-2011.",
       "sources": [
         {
+          "url": "https://zicklin.baruch.cuny.edu/faculty-profile/arash-asadpour/",
+          "title": "Zicklin School of Business profile: Arash Asadpour",
+          "notes": "Read through r.jina.ai: Associate Professor; PhD Stanford 2010; B.Sc. Sharif 2005; no employment dates."
+        },
+        {
+          "url": "https://orcid.org/0000-0002-6674-3857",
+          "title": "ORCID record 0000-0002-6674-3857",
+          "notes": "Read via public API: no employment or education entries."
+        },
+        {
           "url": "https://zicklin.baruch.cuny.edu/wp-content/uploads/sites/10/2020/07/AsadpourCV.pdf",
-          "title": "Arash Asadpour - CV (Baruch Zicklin)",
-          "notes": "Read through r.jina.ai: Ph.D. Stanford MS&E 2005-2010; NYU Stern Assistant Professor 2011-2018; Lyft 2018-2020; Baruch from 2020; Sharif graduate course 2011."
+          "title": "Arash Asadpour CV (Baruch)",
+          "notes": "Re-read through r.jina.ai: Ph.D. Stanford 2005-2010; NYU Stern Assistant Professor 2011-2018; Lyft 2018-2020; Baruch from 2020; Sharif graduate course 2011."
         }
       ],
+      "checkedAt": "2026-10-17",
       "source": "omlist"
     },
     {
@@ -3981,17 +3996,22 @@
       "name": "Alok Baveja",
       "status": "unresolved",
       "checkedAt": "2026-10-17",
-      "reason": "Second pass: the Rutgers CV (re-read) gives the SUNY Buffalo Doctor of Philosophy in Industrial Engineering/Operations Research as 1993 (no month) and an Academic Positions section that begins with Assistant Professor, School of Business - Camden, Rutgers, 1994-2000; its teaching history lists courses without institutions or dates. The only Buffalo items after 1991 are honors: 'Professor of the Year, Institute of Industrial Engineers, SUNY-Buffalo, 1994' (a student-chapter award that implies teaching at Buffalo around 1993-94, title unknown) and a 1991 outstanding teaching assistant award. The Mathematics Genealogy Project has no entry for him and no dissertation record was reached, so whether a post-PhD Buffalo teaching post preceded Rutgers is still open. Earlier review (2026-10-16): the CV dates the doctorate to 1993 and Rutgers to 1994; the 1994 Buffalo award suggests an omitted intervening appointment.",
+      "reason": "Third pass: the ORCID record (self-asserted) dates his Rutgers employment from 1 July 1994, and the Rutgers CV gives the SUNY Buffalo Ph.D. in IE/OR as 1993 (no month) with Academic Positions beginning Assistant Professor, School of Business - Camden, 1994-2000. But the same CV records activity at Buffalo after the degree year that neither chronology explains: \"Professor of the Year, Institute of Industrial Engineers, SUNY-Buffalo, 1994\" (an award for teaching, separate from his 1991 Outstanding Teaching Assistant award) and two master's theses supervised in 1994 on industrial-engineering topics (aircraft maintenance routing; prison academic programmes) whose topics match Buffalo industrial-engineering work rather than a business-school programme. Together they point to a teaching post at Buffalo during 1993-94 of unknown title and dates. The degree month was not found (no Mathematics Genealogy entry, no dissertation record reached, Crossref and a web search give no conferral date), so it cannot be told whether that Buffalo post followed the degree (and would be the first job) or began during the doctorate. The Rutgers start in July 1994 is dated, but it is not shown to be the first post-PhD job. Verifier: order not established; a probable 1993-94 Buffalo teaching post may sit between the 1993 degree and Rutgers.",
       "sources": [
         {
-          "url": "https://www.business.rutgers.edu/sites/default/files/documents/faculty/cv-alok-baveja.pdf",
-          "title": "Alok Baveja curriculum vitae (Rutgers)",
-          "notes": "Education: SUNY Buffalo Ph.D. IE/OR 1993; Academic positions from Assistant Professor, Rutgers-Camden, 1994; honors include IIE Professor of the Year, SUNY-Buffalo, 1994."
+          "url": "https://orcid.org/0000-0001-7228-7731",
+          "title": "ORCID record 0000-0001-7228-7731",
+          "notes": "Read via public API: employment Rutgers The State University of New Jersey, Supply Chain Management, Professor, start 1994-07-01; no other employment; no education entries."
         },
         {
-          "url": "https://www.mathgenealogy.org/query-prep.php",
-          "title": "Mathematics Genealogy Project — search for family name Baveja",
-          "notes": "No records found."
+          "url": "https://www.business.rutgers.edu/sites/default/files/documents/faculty/cv-alok-baveja.pdf",
+          "title": "Alok Baveja CV (Rutgers Business School)",
+          "notes": "Re-read with pdftotext: Ph.D. SUNY Buffalo 1993; Academic Positions start with Assistant Professor, Rutgers-Camden, 1994-2000; honours include Rutgers-Camden Research Excellence Award 1994 and IIE Professor of the Year, SUNY-Buffalo, 1994. Verifier re-read: honours list IIE Professor of the Year, SUNY-Buffalo, 1994, and Outstanding Teaching Assistant, IIE student chapter, SUNY-Buffalo, 1991; supervision list includes master's theses by Jay Turnbull and Pradeep Bandla, 1994."
+        },
+        {
+          "url": "https://www.business.rutgers.edu/faculty/alok-baveja",
+          "title": "Rutgers Business School faculty profile: Alok Baveja",
+          "notes": "Read with curl: M.S. and Ph.D. IE/OR, SUNY-Buffalo; five-time Rutgers-Camden teaching award; no dates."
         }
       ],
       "source": "omlist"
@@ -4275,16 +4295,29 @@
     {
       "facultyId": "omlist-23b71cb5794fc02b",
       "name": "Alexandre Belloni",
-      "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "CV lists PhD June 2006 and overlapping MIT and IBM postdoctoral appointments in 2006–2007, plus MIT summer 2006. Exact first appointment ordering needs confirmation.",
+      "status": "verified",
+      "employer": "MIT Sloan School of Management",
+      "position": "Post-Doctoral Associate",
+      "placementYear": 2006,
+      "category": "postdoc",
+      "evidenceUrl": "https://go.fuqua.duke.edu/fw/cms/FuquaWorld/Documents/Vita/abn5.pdf",
+      "evidenceNote": "Duke CV (last updated 30 July 2025): PhD in Operations Research, MIT, June 2006. Professional Experience lists, before any other post-PhD role, 'Summer 2006, MIT Sloan School of Management, Post-Doctoral Associate' (supervisors Freund and Chernozhukov), followed by concurrent 2006-2007 posts as IBM T. J. Watson Herman Goldstine Post-Doctoral Fellow and MIT Sloan Post-Doctoral Fellow, then Assistant Professor of Decision Sciences at Duke Fuqua 2007-2011. The only earlier entry is a Fall 2005 IBM co-op internship during the doctorate. Whichever of the concurrent 2006-07 fellowships came first, the first post-PhD job is a 2006 postdoctoral appointment, the summer 2006 MIT Sloan one being the earliest listed.",
+      "phdYearVerified": 2006,
+      "phdInstitutionVerified": "Massachusetts Institute of Technology",
+      "reason": "Third pass: the OM List ORCID (0000-0001-9368-8833) is empty (no employment, education or works). The Duke CV, re-read with pdftotext, resolves the ordering question left by the first review: the summer 2006 MIT Sloan Post-Doctoral Associate post directly follows the June 2006 degree and precedes the overlapping 2006-2007 IBM and MIT postdoctoral fellowships, so the first job is a 2006 postdoc at MIT Sloan. The Fuqua profile and Google Sites links from the OM List were not needed beyond the CV the profile hosts.",
       "sources": [
         {
           "url": "https://go.fuqua.duke.edu/fw/cms/FuquaWorld/Documents/Vita/abn5.pdf",
-          "title": "Alexandre Belloni — Curriculum Vitae",
-          "notes": "Degree and career chronology reviewed; overlapping appointments prevent exact ordering."
+          "title": "Alexandre Belloni CV (Duke Fuqua, updated 30 July 2025)",
+          "notes": "Downloaded with curl, education and professional experience sections read with pdftotext: PhD MIT June 2006; Summer 2006 MIT Sloan Post-Doctoral Associate; 2006-2007 IBM Goldstine and MIT Sloan postdoctoral fellowships; Duke assistant professor 2007-2011; Fall 2005 IBM co-op."
+        },
+        {
+          "url": "https://orcid.org/0000-0001-9368-8833",
+          "title": "ORCID record 0000-0001-9368-8833",
+          "notes": "Read via public API: no employment, education or works."
         }
       ],
+      "checkedAt": "2026-10-17",
       "source": "omlist"
     },
     {
@@ -6944,15 +6977,25 @@
       "facultyId": "omlist-d11999c81ef7cf2c",
       "name": "Andre Pereira de Carvalho",
       "status": "unresolved",
-      "checkedAt": "2026-10-17",
-      "reason": "The Lattes-derived Escavador record (read through the r.jina.ai reader because the site answers 403 to plain requests; data collected from Lattes on 02/05/2025) gives a doctorate in Administração de Empresas at FGV-SP, 2007-2011, and an employment history entirely at FGV-SP: researcher at the Centro de Estudos em Sustentabilidade (GVces) 2004-2011, Professor (CLT, 20 h) from 2008 to the present, vice-coordinator of the undergraduate programme 2012-2018 and researcher 2012 and from 2018. The FGV professorship began in 2008, three years before the 2011 doctorate, and simply continued, so under the overlap rule it is not a new post-PhD job, and the later FGV roles are internal. No new employer after 2011 is listed, so the first new post-PhD job is undocumented (he stayed at the pre-degree employer). Earlier review (2026-10-16): search results suggested an FGV-EAESP doctorate 2007-2011 and an FGV faculty role, but Escavador returned 403 and the Lattes CV was not opened, so the start date and earlier roles were unconfirmed.",
+      "reason": "Third pass: the FGV EAESP profile linked from the OM List (read with curl) describes him as Professor in the POI department and researcher at GVces, Vice-Coordinator of the graduate programme from January 2012 to March 2018, with earlier work at the NGO Amigos da Terra Amazônia Brasileira (2001-2004) and at Shell Brazil and Cargill Agrícola (1997-2000), all before the doctorate; the ORCID record (0000-0002-9451-9609) has a single undated FGV EAESP employment entry and no education. Nothing shows a new employer after the 2011 doctorate. Earlier review (2026-10-17): the Lattes-derived Escavador record gives the FGV doctorate 2007-2011 and an FGV professorship from 2008 that continued, so he stayed at the pre-degree employer and no first new post-PhD job is documented.",
       "sources": [
         {
+          "url": "https://eaesp.fgv.br/en/people/andre-pereira-carvalho",
+          "title": "FGV EAESP profile: Andre Pereira de Carvalho",
+          "notes": "Read with curl: POI professor and GVces researcher; Vice-Coordinator Jan 2012-Mar 2018; pre-doctoral NGO (2001-2004) and Shell/Cargill (1997-2000) roles; doctorate FGV-EAESP, no year."
+        },
+        {
+          "url": "https://orcid.org/0000-0002-9451-9609",
+          "title": "ORCID record 0000-0002-9451-9609",
+          "notes": "Read via public API: one undated employment entry, Fundação Getulio Vargas, FGV-EAESP; no education."
+        },
+        {
           "url": "https://www.escavador.com/sobre/5737514/andre-pereira-de-carvalho",
-          "title": "Escavador - Andre Pereira de Carvalho (Lattes-derived)",
-          "notes": "Read through r.jina.ai (HTML return format); site answers 403 to curl. Formacao: Doutorado FGV-SP 2007-2011; Experiencia profissional: FGV-SP GVces researcher 2004-2011, Professor 2008-present, vice-coordinator 2012-2018, researcher 2012 and 2018-present. No other employer."
+          "title": "Escavador (Lattes-derived) record",
+          "notes": "Earlier review via r.jina.ai: doctorate FGV-SP 2007-2011; FGV-SP professor from 2008; GVces researcher 2004-2011."
         }
       ],
+      "checkedAt": "2026-10-17",
       "source": "omlist"
     },
     {
@@ -12392,25 +12435,30 @@
       "facultyId": "omlist-0c2bb1b1226731d1",
       "name": "Banu Ekren",
       "status": "unresolved",
-      "checkedAt": "2026-10-17",
-      "reason": "Second pass: her ORCID record (0009-0009-4228-7795, public API) gives the Louisville Ph.D. in Industrial Engineering with study dates 2008-01 to 2009-12 and only one employment, Cranfield Senior Lecturer from 2021-09, plus Turkish research council grants from 2015; the Cranfield profile URL now returns 'Content not found'. Crossref metadata shows a December 2009 article listing her at Pamukkale University's industrial engineering department and the University of Louisville, and 2014 encyclopedia entries listing Izmir University of Economics, but publication affiliations do not date employment. What job she took after the December 2009 degree (and the 2011-2012 postdoctoral work mentioned in the earlier review) remains undocumented. Earlier review (2026-10-16): a university biography reported the 2009 Louisville doctorate and postdoctoral work in 2011-2012 but nothing for the intervening period.",
+      "reason": "Third pass: the ORCID linked from the OM List (0000-0001-6491-1389) is a deprecated account that the public API redirects to 0009-0009-4228-7795, already read (Louisville Ph.D. study dates 2008-01 to 2009-12; only employment Cranfield Senior Lecturer from 2021-09-27). The Cranfield profile now returns 'Content not found'. A December 2009 article lists her at Pamukkale University and Louisville and 2014 entries at Izmir University of Economics, but affiliations do not date posts, so the job she took after the December 2009 degree remains undocumented. Earlier review (2026-10-17): ORCID and Crossref gave no dated post between the 2009 degree and Cranfield; an earlier Cranfield biography mentioned postdoctoral work in 2011-2012.",
       "sources": [
         {
+          "url": "https://orcid.org/0000-0001-6491-1389",
+          "title": "ORCID record 0000-0001-6491-1389 (OM List link)",
+          "notes": "Public API: account deprecated, redirects to 0009-0009-4228-7795."
+        },
+        {
           "url": "https://orcid.org/0009-0009-4228-7795",
-          "title": "ORCID - Banu Yetkin Ekren",
-          "notes": "Public API: Ph.D. Louisville 2008-01 to 2009-12; Cranfield Senior Lecturer from 2021-09; TUBITAK grants 2015-2021."
+          "title": "ORCID record 0009-0009-4228-7795",
+          "notes": "Re-read via public API: only employment Cranfield Senior Lecturer from 2021-09-27; Louisville PhD 2008-01 to 2009-12."
         },
         {
           "url": "https://www.cranfield.ac.uk/som/people/dr-banu-yetkin-ekren-32641733",
-          "title": "Cranfield profile (now 'Content not found')",
-          "notes": "Earlier review: biography with 2009 Louisville doctorate and 2011-2012 postdoctoral work."
+          "title": "Cranfield School of Management profile",
+          "notes": "Re-read with curl: 'Content not found'."
         },
         {
           "url": "https://api.crossref.org/works?query.author=Banu+Yetkin+Ekren&filter=until-pub-date:2014",
-          "title": "Crossref metadata - Banu Yetkin Ekren works to 2014",
-          "notes": "Dec 2009 article: Pamukkale University and University of Louisville; 2014 entries: Izmir University of Economics."
+          "title": "Crossref author search: Banu Yetkin Ekren to 2014",
+          "notes": "Earlier review: Pamukkale/Louisville (Dec 2009) and Izmir University of Economics (2014) affiliations only."
         }
       ],
+      "checkedAt": "2026-10-17",
       "source": "omlist"
     },
     {
@@ -14956,20 +15004,35 @@
       "facultyId": "omlist-4b6d749df9579c58",
       "name": "Anil Gaba",
       "status": "unresolved",
-      "checkedAt": "2026-10-17",
-      "reason": "The INSEAD profile is still behind a Cloudflare bot check (curl 403, reader proxy and headless browser get the challenge page; the Internet Archive is unreachable from here). The Mathematics Genealogy Project confirms the doctorate (Duke University 1989, dissertation A Bernoulli Process with Proportion-Dependent Noise Structure, advisor Robert L. Winkler) but no employment; his two ORCID records are empty, and no advisor CV with a student-placement list could be reached. The first post after the 1989 degree is undocumented. Earlier review (2026-10-16): INSEAD faculty profile returned 403; no primary chronology was established.",
+      "reason": "Third pass: the ORCID record linked from the OM List (0000-0002-8748-6300) was read through the public API and has no employment or education entries. The INSEAD profile still answers the reader proxy with a block page, and INSEAD Knowledge answers 403. A discovery search (and one web search) returned a World Economic Forum people-page snippet reading 'PhD in Decision Sciences, Duke University. Since 1989, Professor, INSEAD', which would place him at INSEAD from the 1989 degree year, but the WEF page answers 403 to curl and the reader proxy returns no biography text, so the statement could not be read on the page itself and is kept only as a lead. Earlier review (2026-10-17): the Mathematics Genealogy Project confirms the 1989 Duke PhD; INSEAD blocked all fetches; no dated chronology was found.",
       "sources": [
         {
-          "url": "https://www.mathgenealogy.org/id.php?id=214015",
-          "title": "Mathematics Genealogy Project - Anil Gaba",
-          "notes": "Ph.D. Duke University 1989; dissertation A Bernoulli Process with Proportion-Dependent Noise Structure; advisor Robert Lewis Winkler; no employment information."
+          "url": "https://orcid.org/0000-0002-8748-6300",
+          "title": "ORCID record 0000-0002-8748-6300",
+          "notes": "Read via public API: no employment or education entries."
+        },
+        {
+          "url": "https://www.weforum.org/people/anil-gaba/",
+          "title": "World Economic Forum people page: Anil Gaba",
+          "notes": "HTTP 403 to curl; r.jina.ai returns the page shell without the biography. A search snippet (discovery only) quotes 'Since 1989, Professor, INSEAD'."
         },
         {
           "url": "https://www.insead.edu/faculty/anil-gaba",
-          "title": "INSEAD - Anil Gaba",
-          "notes": "Attempted again: Cloudflare bot check (HTTP 403 to curl; r.jina.ai and a headless browser receive the challenge page; the fetch tool 403)."
+          "title": "INSEAD faculty profile: Anil Gaba",
+          "notes": "Attempted through r.jina.ai: block page; earlier reviews got a Cloudflare challenge."
+        },
+        {
+          "url": "https://knowledge.insead.edu/author/anil-gaba",
+          "title": "INSEAD Knowledge author page",
+          "notes": "HTTP 403 to curl."
+        },
+        {
+          "url": "https://www.mathgenealogy.org/id.php?id=214015",
+          "title": "Mathematics Genealogy Project: Anil Gaba",
+          "notes": "Earlier review: Ph.D. Duke 1989, advisor Winkler."
         }
       ],
+      "checkedAt": "2026-10-17",
       "source": "omlist"
     },
     {
@@ -16244,30 +16307,35 @@
       "facultyId": "omlist-345bda1b0516d57f",
       "name": "Bilal Gokpinar",
       "status": "unresolved",
-      "checkedAt": "2026-10-17",
-      "reason": "UCL Profiles, rendered in a headless browser, now confirms the degrees (Northwestern PhD 2008, MSc 2005; Purdue BSc 2004) and mentions General Motors R&D experience and teaching at several schools, but lists no appointment dates and no CV. The CV Bilal_cv_2025.pdf still answers HTTP 403 to curl and 404 through the r.jina.ai reader (removed); the Wayback Machine is unreachable from this environment; ORCID lists UCL without dates; one web search found nothing relevant. The first post-PhD employer and year remain undocumented. Earlier review (2026-10-16): the UCL CV and people page returned 403, the old IRIS profile was script-only, ORCID had no dates, and no source for the degree or first job could be opened.",
+      "reason": "Third pass: the OM List's new UCL links were tried: the CV at www.mgmt.ucl.ac.uk/sites/default/files/profile_cvs/Bilal_cv_2025.pdf answers 403 to curl and 404 through the reader proxy, and the people page www.mgmt.ucl.ac.uk/people/bilalgokpinar answers 403 to curl and 404 through the reader proxy. A Crossref search found a March 2010 Management Science article listing him at UCL's Department of Management Science and Innovation (affiliation only), and one web search found no dated appointment notice. The first post after the 2008 Northwestern degree and its start date remain undocumented (General Motors R&D experience mentioned on UCL Profiles is undated). Earlier review (2026-10-17): UCL Profiles confirms the 2008 Northwestern PhD without appointment dates; ORCID lists UCL without dates.",
       "sources": [
         {
-          "url": "https://profiles.ucl.ac.uk/9507",
-          "title": "UCL Profiles - Prof Bilal Gokpinar",
-          "notes": "Rendered in a headless browser: bio and degrees (PhD Northwestern University 2008); no academic-positions section, no CV link."
+          "url": "https://www.mgmt.ucl.ac.uk/sites/default/files/profile_cvs/Bilal_cv_2025.pdf",
+          "title": "Bilal Gokpinar CV 2025 (UCL School of Management)",
+          "notes": "curl with browser user-agent: 403; r.jina.ai: 404 Not Found. Not read."
         },
         {
-          "url": "https://www.ucl.ac.uk/management/sites/default/files/profile_cvs/Bilal_cv_2025.pdf",
-          "title": "Bilal Gokpinar - CV (UCL School of Management)",
-          "notes": "Curl with a browser user-agent: 403; r.jina.ai reader: 404. Not read."
+          "url": "https://www.mgmt.ucl.ac.uk/people/bilalgokpinar",
+          "title": "UCL School of Management people page",
+          "notes": "curl: 403; r.jina.ai: 404. Not read."
+        },
+        {
+          "url": "https://api.crossref.org/works/10.1287/mnsc.1090.1117",
+          "title": "Crossref: The Impact of Misalignment of Organizational Structure... (Management Science, March 2010)",
+          "notes": "Affiliation Department of Management Science and Innovation, UCL; affiliation only."
+        },
+        {
+          "url": "https://profiles.ucl.ac.uk/9507",
+          "title": "UCL Profiles: Bilal Gokpinar",
+          "notes": "Earlier review: PhD Northwestern 2008; GM R&D experience; no dates."
         },
         {
           "url": "https://orcid.org/0000-0001-9299-2876",
-          "title": "ORCID - Bilal Gokpinar",
-          "notes": "Read through pub.orcid.org: University College London employment without dates or role."
-        },
-        {
-          "url": "https://omlist.edutool.org/schools/university-college-london/faculty/bilal-gokpinar.html",
-          "title": "OM List profile - Bilal Gokpinar",
-          "notes": "Earlier review: directory entry (PhD Northwestern 2008)."
+          "title": "ORCID record 0000-0001-9299-2876",
+          "notes": "Earlier review: UCL without dates."
         }
       ],
+      "checkedAt": "2026-10-17",
       "source": "omlist"
     },
     {
@@ -16811,15 +16879,25 @@
       "facultyId": "omlist-a2768146530417a3",
       "name": "Alberto Grando",
       "status": "unresolved",
-      "checkedAt": "2026-10-16",
+      "reason": "Third pass: the SDA Bocconi profile and the linked CV (both re-read) state that he earned a degree in Business Administration from Università Bocconi and completed the International Teachers Programme at London Business School, with no doctorate; the ORCID record (0000-0001-9047-0548) lists an undated Bocconi education entry without a degree title and undated SDA Bocconi and Bocconi employment entries. No opened source documents a research doctorate, so doctoral eligibility and any first post-PhD job remain unestablished. Earlier review (2026-10-16): the linked biography gave a Bocconi degree and the ITP but no doctorate or dated early employment.",
       "sources": [
         {
+          "url": "https://www.sdabocconi.it/en/faculty-research/faculty-knowledge/alberto-grando/",
+          "title": "SDA Bocconi faculty profile: Alberto Grando",
+          "notes": "Read with curl: Full Professor; SDA Dean 2006-2012; Bocconi degree in Business Administration and LBS ITP; no doctorate."
+        },
+        {
+          "url": "https://orcid.org/0000-0001-9047-0548",
+          "title": "ORCID record 0000-0001-9047-0548",
+          "notes": "Read via public API: undated Bocconi education (no degree title) and undated SDA Bocconi/Bocconi employment entries."
+        },
+        {
           "url": "https://sda-website-prod-sdawebsiteprodbucketpublic693d05b-w3mwb4fo9x9p.s3.eu-south-1.amazonaws.com/professor/1737/AlbertoGrando-EN.pdf",
-          "title": "Alberto Grando curriculum vitae",
-          "notes": "Official linked biography gives a Bocconi degree and International Teachers Programme but no doctorate or dated early employment. Doctoral eligibility and first placement are unverified."
+          "title": "SDA Bocconi CV: Alberto Grando",
+          "notes": "Biography section re-read with pdftotext: same degree and ITP statement, no doctorate or early employment dates."
         }
       ],
-      "reason": "Official linked biography gives a Bocconi degree and International Teachers Programme but no doctorate or dated early employment. Doctoral eligibility and first placement are unverified.",
+      "checkedAt": "2026-10-17",
       "source": "omlist"
     },
     {
@@ -17018,24 +17096,42 @@
     {
       "facultyId": "omlist-e82e6118e7f3dbc4",
       "name": "Abhay Grover",
-      "status": "unresolved",
+      "status": "verified",
       "checkedAt": "2026-10-17",
-      "reason": "Identity and degree now established, first job still unresolved. The Iowa State Ivy College directory (read with curl) lists Abhay Grover, Assistant Professor of Supply Chain Management, Ph.D. Supply Chain Management, University of Maryland, 2024, with more than five years of industry operations and supply chain roles before academia (undated). Maryland's DRUM repository holds his 2024 dissertation (advisor Martin Dresner). But his Transportation Journal article published 29-30 October 2024 gives his affiliation as Department of Management and Marketing, College of Business, University of Wyoming, so he appears to have held a post at Wyoming after the degree and before Iowa State; no source gives the Wyoming title or dates, or the Iowa State start date. The ORCID record linked from the OM List is empty, and Wyoming profile URLs returned errors. Earlier review (2026-10-16): no profile or CV confirming the 2024 degree or the first job was found.",
+      "employer": "University of Wyoming",
+      "position": "Assistant Professor of Supply Chain and Operations Management",
+      "placementYear": 2024,
+      "category": "tenure-track",
+      "evidenceUrl": "https://pau.edu/index.php?_act=manageEvent&DO=viewEventDetail&dataE=datae&intID=9491",
+      "evidenceNote": "Punjab Agricultural University news item dated 21 August 2024 reports that its alumnus Dr Abhay Grover, who has earned his Ph.D. in Supply Chain Management from the University of Maryland (2024), was selected as Assistant Professor of Supply Chain and Operations Management at the College of Business, University of Wyoming; his earlier roles (John Deere, Iowa State CIRAS extension specialist) are described as previous, pre-doctoral industry experience. A Transportation Journal article published 29 October 2024 (Crossref) carries his University of Wyoming College of Business affiliation, confirming the post had begun; Iowa State, his current post, came later. Verifier: re-opened the PAU item, the Crossref record, DRUM and the Iowa State directory; the PAU item says only that the John Deere and CIRAS roles were held \"previously\", and the Iowa State directory places over five years of industry roles \"prior to joining academia\", so Wyoming is the first academic post with no post shown between the 2024 degree and it; fields unchanged.",
+      "phdYearVerified": 2024,
+      "phdInstitutionVerified": "University of Maryland, College Park",
+      "reason": "Third pass: the OM List ORCID record (0000-0003-3316-7141) is empty (no employment, education or biography; one work). A discovery search through the reader proxy led to a dated Punjab Agricultural University alumni news item (21 August 2024, written after the 2024 degree) naming the University of Wyoming assistant professorship; the October 2024 Crossref affiliation confirms he was in post at Wyoming. Pre-doctoral roles were industry and extension posts. Category tenure-track by the plain-title convention for a North American business school. The Wyoming start month is not stated (fall 2024 implied by the announcement date and the October affiliation).",
       "sources": [
         {
-          "url": "https://www.ivybusiness.iastate.edu/directory/agrover/",
-          "title": "Iowa State Ivy College directory: Abhay Grover",
-          "notes": "Read with curl (compressed). Assistant Professor of SCM; Ph.D. SCM, University of Maryland, 2024; prior industry experience, undated."
-        },
-        {
-          "url": "https://api.drum.lib.umd.edu/server/api/discover/search/objects?query=Abhay%20Grover&dsoType=ITEM&size=5",
-          "title": "DRUM (University of Maryland) search: Abhay Grover",
-          "notes": "Dissertation by Grover, Abhay Kumar, 2024: 'Promoting safety in food supply chains: navigating regulations, inspector schedules, and incentive structures' (advisor Martin E. Dresner)."
+          "url": "https://pau.edu/index.php?_act=manageEvent&DO=viewEventDetail&dataE=datae&intID=9491",
+          "title": "Punjab Agricultural University news: PAU alumnus gets selected as Assistant Prof at US varsity (21 August 2024)",
+          "notes": "Read with curl. Dated 21-08-2024; Ph.D. University of Maryland (2024); selected as Assistant Professor of Supply Chain and Operations Management, College of Business, University of Wyoming; previous John Deere and Iowa State CIRAS roles."
         },
         {
           "url": "https://api.crossref.org/works/10.1002/tjo3.12034",
           "title": "Crossref record: Developing cultural awareness competencies in purchasing and supply management education (Transportation Journal, 2024)",
-          "notes": "Abhay K. Grover affiliated with Department of Management and Marketing, College of Business, University of Wyoming. Affiliation only."
+          "notes": "Published online 2024-10-29; Abhay K. Grover affiliated with Department of Management and Marketing, College of Business, University of Wyoming."
+        },
+        {
+          "url": "https://api.drum.lib.umd.edu/server/api/discover/search/objects?query=Abhay%20Grover&dsoType=ITEM&size=5",
+          "title": "DRUM (University of Maryland) search: Abhay Grover",
+          "notes": "Dissertation 'Promoting safety in food supply chains...' issued 2024, advisor Martin E. Dresner; accessioned 2024-09-23."
+        },
+        {
+          "url": "https://www.ivybusiness.iastate.edu/directory/agrover/",
+          "title": "Iowa State Ivy College directory: Abhay Grover",
+          "notes": "Re-read with curl. Current Assistant Professor of SCM at Iowa State; Ph.D. SCM, University of Maryland, 2024; over five years of prior industry roles; no dates."
+        },
+        {
+          "url": "https://orcid.org/0000-0003-3316-7141",
+          "title": "ORCID record 0000-0003-3316-7141",
+          "notes": "Read via public API (employments, educations, record): no employment or education entries."
         }
       ],
       "source": "omlist"
@@ -18133,15 +18229,20 @@
       "facultyId": "omlist-89f3dd69edef96b4",
       "name": "Ahmed Hamdi",
       "status": "unresolved",
-      "checkedAt": "2026-10-17",
-      "reason": "Still unresolved. The current RBS profile (read with curl) gives his PhD in Supply Chain Management from Rennes School of Business and his current RBS roles, without dates or earlier posts. theses.fr has no Rennes School of Business thesis by him; the 2015 Aix-Marseille thesis by an Ahmed Hamdi on Tunisian dialect processing is a namesake. ORCID searches return 26 records named Ahmed Hamdi, none carrying Rennes or RBS. The degree year and the first post-PhD job remain undocumented. Earlier review (2026-10-16): the Rabat biography identifies the Rennes doctorate and current role without dates or initial employment chronology.",
+      "reason": "Third pass: the ORCID record linked from the OM List (0000-0002-3947-3820, name Ahmed Hamdi) was read through the public API and has no employment, education, biography, links or works. The Rabat Business School profile (re-read with curl) still gives only the Rennes School of Business PhD in Supply Chain Management and his current Assistant Professor and programme-manager roles, without dates. Neither the degree year nor any post-PhD job is dated. Earlier review (2026-10-17): the RBS profile was undated, theses.fr had no Rennes thesis by him, and ORCID name searches found no Rennes-linked record.",
       "sources": [
         {
+          "url": "https://orcid.org/0000-0002-3947-3820",
+          "title": "ORCID record 0000-0002-3947-3820",
+          "notes": "Read via public API (employments, educations, record): empty apart from the name."
+        },
+        {
           "url": "https://rbs.uir.ac.ma/ahmed-hamdi/",
-          "title": "Rabat Business School profile — Ahmed Hamdi",
-          "notes": "Read with curl. PhD, Supply Chain Management, Rennes School of Business; Assistant Professor and programme manager; no dates."
+          "title": "Rabat Business School profile: Ahmed Hamdi",
+          "notes": "Re-read with curl: PhD SCM Rennes School of Business; Assistant Professor; no dates."
         }
       ],
+      "checkedAt": "2026-10-17",
       "source": "omlist"
     },
     {
@@ -19179,20 +19280,25 @@
       "facultyId": "omlist-8921d49f30cee694",
       "name": "Adam Hindle",
       "status": "unresolved",
-      "checkedAt": "2026-10-17",
-      "reason": "Second pass: ORCID 0009-0009-1549-4318 (Lancaster University, Management Science) gives only one dated post, Senior Lecturer from 2014-09-01, with no education entries and nothing between the imported 2005 Lancaster doctorate and 2014. The Lancaster profile (re-read with curl) gives the Senior Lecturer title without dates or earlier posts; the Lancaster research portal sits behind a Cloudflare check that a headless browser did not pass. The doctorate itself was not dated from an opened record. The first post-PhD job remains unknown. Earlier review (2026-10-16): the Lancaster profile described the current senior lectureship without doctoral or early employment chronology.",
+      "reason": "Third pass: the new Lancaster department profile linked from the OM List (read with curl) gives only 'Dr Adam Hindle, Senior Lecturer in Management Science' with no dates, education or earlier posts; the Lancaster research portal, read through the reader proxy, lists the current Senior Lecturer post and an undated former 'Honorary/Visiting' affiliation in Management Science. A discovery search surfaced only a ResearchGate snippet calling him Teaching Fellow and Director of the MSc Operational Research (undated) and aggregator snippets, none primary. Nothing dates a post between the 2005 doctorate and the 2014 senior lectureship, and the doctorate itself is still not dated from a conferral record. Earlier review (2026-10-17): ORCID gives only Senior Lecturer from 2014-09-01 and the Lancaster profile had no chronology.",
       "sources": [
         {
-          "url": "https://orcid.org/0009-0009-1549-4318",
-          "title": "ORCID record 0009-0009-1549-4318 (Adam Hindle)",
-          "notes": "Read via the public API; Lancaster University Management Science, Senior Lecturer, 2014-09-01 onward; no other entries."
+          "url": "https://www.lancaster.ac.uk/lums/our-departments/management-science/people/adam-hindle",
+          "title": "Lancaster Management Science profile: Adam Hindle",
+          "notes": "Read with curl: Senior Lecturer in Management Science; no dates or history."
         },
         {
-          "url": "https://www.lancaster.ac.uk/lums/people/adam-hindle",
-          "title": "Adam Hindle - Lancaster University Management School profile",
-          "notes": "Read with curl; Senior Lecturer in Management Science, no dates."
+          "url": "https://research.lancaster-university.uk/en/persons/adam-hindle/",
+          "title": "Lancaster research portal: Adam Hindle",
+          "notes": "Read through r.jina.ai (site blocks scripts): Senior Lecturer; former affiliation Honorary/Visiting, Management Science; no dates."
+        },
+        {
+          "url": "https://orcid.org/0009-0009-1549-4318",
+          "title": "ORCID record 0009-0009-1549-4318",
+          "notes": "Earlier review via public API: Senior Lecturer, Lancaster, from 2014-09-01 only."
         }
       ],
+      "checkedAt": "2026-10-17",
       "source": "omlist"
     },
     {
@@ -20769,30 +20875,30 @@
       "facultyId": "omlist-f760da8b30dcc8d7",
       "name": "Cagatay Iris",
       "status": "unresolved",
-      "checkedAt": "2026-10-17",
-      "reason": "Still unresolved. The Liverpool profile (re-opened) says only that before joining in August 2019 he was a postdoctoral research fellow at Nanyang Technological University, with no dates. ORCID gives the DTU PhD ending 2016-08 and Liverpool from 2019. His 2017 Transportation Research Part E paper acknowledges DTU research-project funding, and the 2018 Transportation Research Part B paper (read through the reader proxy) says he was supported by grant M4061473 at NTU, so the NTU postdoc was under way by 2018, but nothing dates its start or shows what he did from August 2016 (a DTU post on the funded projects cannot be excluded). Earlier review (2026-10-16): the Liverpool profile confirms the 2016 DTU PhD and an undated NTU postdoc before August 2019; no CV.",
+      "reason": "Third pass: the Management School staff page linked from the OM List (read through the reader proxy) and his profiles.liverpool.ac.uk page repeat that he joined ULMS in August 2019 and was previously a postdoctoral research fellow at Nanyang Technological University, with a 2016 DTU PhD, but give no NTU dates. The ORCID record (re-read) gives the DTU PhD ending 2016-08 and Liverpool from 2019 only; a Crossref affiliation search for 2016-2019 and a discovery search found nothing dating the NTU start or covering August 2016 onward. The NTU postdoc is the only post named between the degree and Liverpool, but its start, and whether a DTU post came first, remain undocumented. Earlier review (2026-10-17): the 2018 TR-B paper shows NTU funding by 2018 and the 2017 TR-E paper acknowledges DTU project funding.",
       "sources": [
         {
-          "url": "https://www.liverpool.ac.uk/people/cagatay-iris",
-          "title": "University of Liverpool profile - Cagatay Iris",
-          "notes": "Re-opened with curl: joined ULMS August 2019; before that a postdoctoral research fellow at NTU (undated); PhD DTU 2016."
+          "url": "https://www.liverpool.ac.uk/management/staff/cagatay-iris/",
+          "title": "University of Liverpool Management School staff page: Dr Cagatay Iris",
+          "notes": "Read through r.jina.ai: joined ULMS August 2019; previously NTU postdoctoral research fellow (undated); PhD DTU 2016."
+        },
+        {
+          "url": "https://profiles.liverpool.ac.uk/21583-cagatay-iris",
+          "title": "Liverpool research profile: Cagatay Iris",
+          "notes": "Read through r.jina.ai: same biography; no NTU dates."
         },
         {
           "url": "https://orcid.org/0000-0001-5422-354X",
-          "title": "ORCID record - Cagatay Iris",
-          "notes": "Re-read through the public API: Liverpool from 2019; DTU PhD ending 2016-08; no NTU entry."
+          "title": "ORCID record 0000-0001-5422-354X",
+          "notes": "Re-read via public API: DTU PhD ending 2016-08; Liverpool from 2019 and Senior Lecturer from 2022-10; no NTU entry."
         },
         {
           "url": "https://www.sciencedirect.com/science/article/pii/S0191261517308196",
-          "title": "Iris et al., Flexible ship loading problem with transfer vehicle assignment and scheduling (Transportation Research Part B, 2018)",
-          "notes": "Read through the reader proxy. Acknowledgements: first author also supported by M4061473 at Nanyang Technological University. No dates of employment."
-        },
-        {
-          "url": "https://www.sciencedirect.com/science/article/pii/S1366554516308535",
-          "title": "Iris et al. (Transportation Research Part E, 2017)",
-          "notes": "Read through the reader proxy. Acknowledges DTU research-project funding (Danish Maritime Cluster); no employment details."
+          "title": "Transportation Research Part B (2018) acknowledgements",
+          "notes": "Earlier review: NTU grant M4061473 support."
         }
       ],
+      "checkedAt": "2026-10-17",
       "source": "omlist"
     },
     {
@@ -21354,20 +21460,25 @@
       "facultyId": "omlist-eccfc959389e42d1",
       "name": "Bin Jiang",
       "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "The DePaul faculty page lists the University of Texas at Arlington Operations Management PhD 2004, a USC MBA 2001 and a 1986 engineering degree, plus the current professorship and a 2023–2024 Fulbright award, but no appointment dates or earlier posts. A guessed DePaul CV path returned 404, ORCID search produced no record with a DePaul or Arlington affiliation, and an MDPI author biography page could not be read. Whether DePaul was the first post-PhD employer and from what year is undocumented.",
+      "reason": "Third pass: the ORCID record linked from the OM List (0000-0001-6911-7424) has no employment or education entries (public API). The DePaul profile (re-read) gives PhD Operations Management, UT Arlington, 2004, the current professorship and Driehaus Fellowship and the 2023-2024 Fulbright, with no appointment dates; five guessed DePaul CV paths returned 404; a web search found no CV; a Crossref search shows a June 2004 case article with a UT Arlington affiliation only. Whether DePaul was the first post-PhD employer, and from what year, is still undocumented. Earlier review (2026-10-16): the DePaul page gave degrees with years but no chronology.",
       "sources": [
         {
+          "url": "https://orcid.org/0000-0001-6911-7424",
+          "title": "ORCID record 0000-0001-6911-7424",
+          "notes": "Read via public API: no employment or education entries."
+        },
+        {
           "url": "https://www.depaul.edu/faculty/bin-jiang",
-          "title": "Bin Jiang — DePaul University faculty profile",
-          "notes": "Degrees with years; current role; no chronology."
+          "title": "DePaul faculty page: Bin Jiang",
+          "notes": "Re-read with curl: PhD UT Arlington 2004; MBA USC 2001; current professor; no appointment dates."
         },
         {
           "url": "https://business.depaul.edu/faculty/faculty-a-z/Documents/CV/bin_jiang_cv.pdf",
           "title": "Guessed DePaul CV path",
-          "notes": "HTTP 404."
+          "notes": "HTTP 404 (variants jiang_bin_cv.pdf, Bin_Jiang_CV.pdf, bjiang_cv.pdf, jiang_cv.pdf also 404)."
         }
       ],
+      "checkedAt": "2026-10-17",
       "source": "omlist"
     },
     {
@@ -22377,26 +22488,29 @@
     {
       "facultyId": "omlist-fb152b1e1e8626dd",
       "name": "Basak Kalkanci",
-      "status": "unresolved",
-      "checkedAt": "2026-10-17",
-      "reason": "Second pass: the Scheller profile (plain curl) again gives the Stanford Management Science and Engineering PhD (2010) and says she 'worked as a postdoctoral associate at MIT before joining Georgia Tech', with no dates; it links only paper PDFs and news items, no CV or personal site. The ORCID public API has no record for her (seven Kalkanci records, none hers); Stanford SearchWorks rejected both curl and a headless browser ('requested URL was rejected'), so the dissertation record was not read; one web search for a CV returned only unrelated people. The MIT postdoctoral associate post is the only post named between the degree and Georgia Tech, but its start year (and whether it began after the 2010 degree) and the Georgia Tech start year remain undocumented. Earlier review (2026-10-16): the Scheller profile lists the 2010 Stanford PhD and an undated MIT postdoc before Georgia Tech; ORCID, Stanford MS&E alumni and archived Scheller pages could not be used.",
+      "status": "verified",
+      "employer": "Massachusetts Institute of Technology (Center for Transportation & Logistics)",
+      "position": "Postdoctoral Associate",
+      "placementYear": 2011,
+      "category": "postdoc",
+      "evidenceUrl": "https://orcid.org/0000-0002-6779-2431",
+      "evidenceNote": "ORCID record (self-asserted, name Başak Kalkancı) lists as its earliest employment Postdoctoral Associate, Center for Transportation & Logistics, MIT, 1 February 2011 to 1 March 2013, then Georgia Tech Scheller College of Business from 15 June 2013 (listed under the current title Associate Professor) and UCSB Bren School from July 2026; education: PhD, Management Science and Engineering, Stanford (undated). The Scheller profile gives the Ph.D. in Management Science and Engineering, Stanford University, 2010, and says she worked as a postdoctoral associate at MIT before joining Georgia Tech. No post is listed between the 2010 degree and the February 2011 MIT start.",
+      "phdYearVerified": 2010,
+      "phdInstitutionVerified": "Stanford University",
+      "reason": "Third pass: the ORCID record linked from the OM List (not found by the earlier name searches) dates the MIT postdoctoral post the Scheller profile names, February 2011 to March 2013, ahead of Georgia Tech from June 2013, and lists nothing earlier. The few months between the 2010 Stanford degree (month not documented) and February 2011 are not covered by any listed job.",
       "sources": [
         {
+          "url": "https://orcid.org/0000-0002-6779-2431",
+          "title": "ORCID record 0000-0002-6779-2431",
+          "notes": "Read via public API: MIT CTL Postdoctoral Associate 2011-02-01 to 2013-03-01; Georgia Tech Scheller from 2013-06-15; UCSB from 2026-07-01; education PhD MS&E Stanford, undated."
+        },
+        {
           "url": "https://www.scheller.gatech.edu/directory/faculty/kalkanci/index.html",
-          "title": "Basak Kalkanci - Georgia Tech Scheller College of Business directory",
-          "notes": "Read with plain curl. Ph.D. in Management Science and Engineering, Stanford University, 2010; B.S. Bogazici 2004; 'She worked as a postdoctoral associate at MIT before joining Georgia Tech' (undated); awards 2014-2019; no CV."
-        },
-        {
-          "url": "https://pub.orcid.org/v3.0/expanded-search/?q=family-name:Kalkanci&rows=10",
-          "title": "ORCID public API search - Kalkanci",
-          "notes": "Seven records, none for Basak Kalkanci."
-        },
-        {
-          "url": "https://searchworks.stanford.edu/?q=Kalkanci+Basak&search_field=search",
-          "title": "Stanford SearchWorks search (attempted)",
-          "notes": "Request rejected (support-ID page) to curl and a headless browser; not read."
+          "title": "Scheller College profile: Basak Kalkanci",
+          "notes": "Re-read with curl: Ph.D. MS&E Stanford 2010; worked as a postdoctoral associate at MIT before joining Georgia Tech."
         }
       ],
+      "checkedAt": "2026-10-17",
       "source": "omlist"
     },
     {
@@ -22737,40 +22851,45 @@
       "facultyId": "omlist-ca5318f8867e2d09",
       "name": "Amir Karimi",
       "status": "unresolved",
-      "checkedAt": "2026-10-17",
-      "reason": "The University of Minnesota Conservancy (DSpace API) dates his dissertation, 'Designing Public Health Supply Chains: Towards Improving Health Commodity Availability in Developing Countries' (Karimi, Amir), to 2020-07. The UTSA appointment start is still undocumented: ORCID 0000-0003-0037-403X has one undated entry (Assistant Professor, Department of Operations and Analytics, UTSA); the personal site's only CV link is the UTSA SharePoint file that needs a login; the 2024 Alvarez alumni magazine calls him assistant professor without a start date. Whether he went straight to UTSA after July 2020 is not shown. Earlier review (2026-10-16): the UTSA profile and personal site confirmed a Minnesota PhD and a current UTSA assistant professorship without a PhD year, start date or postdoc information, and the CV needed a login.",
+      "reason": "Third pass: the CV link on the OM List (a UTSA SharePoint file, tried with curl and a download parameter) and the CV link on his website (tried through the reader proxy) both return the UTSA 'Sign in to your account' page, so the CV remains unreadable. The UTSA profile (re-read) gives Assistant Professor, Operations and Analytics, and Alvarez Research Fellow without dates. A Crossref author search for 2019-2022 found UTSA-affiliated papers only by a namesake writing on higher education, and a discovery search found no dated appointment notice. The start of the UTSA post after the July 2020 Minnesota dissertation, and any intervening role, remain undocumented. Earlier review (2026-10-17): the Minnesota Conservancy dates the dissertation to 2020-07; ORCID gives an undated UTSA assistant professorship; the 2024 alumni magazine gives no start date.",
       "sources": [
         {
-          "url": "https://conservancy.umn.edu/server/api/discover/search/objects?query=Karimi%20Amir&dsoType=ITEM&size=10",
-          "title": "UMN Conservancy (DSpace API) - Karimi, Amir dissertation (handle 11299/216379)",
-          "notes": "Thesis or Dissertation, issued 2020-07."
-        },
-        {
-          "url": "https://pub.orcid.org/v3.0/0000-0003-0037-403X/employments",
-          "title": "ORCID 0000-0003-0037-403X (Amir Karimi, UTSA)",
-          "notes": "Assistant Professor, Operations and Analytics, UTSA, undated."
-        },
-        {
-          "url": "https://business.utsa.edu/images/alumni/Alvarez-Alumni-Magazine-2024.pdf",
-          "title": "Alvarez Business alumni magazine 2024 (UTSA)",
-          "notes": "Feature on his research; calls him assistant professor of management science and statistics; no start date."
-        },
-        {
-          "url": "https://www.karimiamir.com/",
-          "title": "Amir Karimi - personal website",
-          "notes": "Re-read: PhD Supply Chain & Operations, University of Minnesota (no year); CV link is a UTSA SharePoint file."
-        },
-        {
-          "url": "https://business.utsa.edu/faculty/profiles/karimi-amir.html",
-          "title": "UTSA Alvarez College faculty profile",
-          "notes": "First-pass source (2026-10-16): Opened. Minnesota PhD; current Assistant Professor; no years."
+          "url": "https://utsacloud-my.sharepoint.com/:b:/r/personal/a_karimi_utsa_edu/Documents/Conferences/Curriculam%20Viate/Web/Amir%20Karimi_Curriculum%20Vitae_Web.pdf?csf=1&web=1&e=EeAIg2",
+          "title": "Amir Karimi CV (UTSA SharePoint, OM List link)",
+          "notes": "Attempted with curl (also with download=1): returns the UTSA sign-in page; not readable."
         },
         {
           "url": "https://utsacloud-my.sharepoint.com/:b:/g/personal/a_karimi_utsa_edu/ESYgfIzqhpNOuXfWugNmPQ8Bi9MlNysxSv3jm-CvF7w83Q?e=lSxObU",
-          "title": "Karimi CV (SharePoint)",
-          "notes": "First-pass source (2026-10-16): HTTP 401; not readable."
+          "title": "Amir Karimi CV (website link)",
+          "notes": "Attempted through r.jina.ai: sign-in page only."
+        },
+        {
+          "url": "https://business.utsa.edu/faculty/profiles/karimi-amir.html",
+          "title": "UTSA Alvarez College profile: Amir Karimi",
+          "notes": "Re-read with curl: Assistant Professor, Operations and Analytics; Alvarez Research Fellow; no dates."
+        },
+        {
+          "url": "https://www.karimiamir.com/",
+          "title": "Amir Karimi personal website",
+          "notes": "Re-read: CV link is the UTSA SharePoint file."
+        },
+        {
+          "url": "https://conservancy.umn.edu/server/api/discover/search/objects?query=Karimi%20Amir&dsoType=ITEM&size=10",
+          "title": "University of Minnesota Conservancy search: Karimi, Amir",
+          "notes": "Earlier review: dissertation issued 2020-07."
+        },
+        {
+          "url": "https://pub.orcid.org/v3.0/0000-0003-0037-403X/employments",
+          "title": "ORCID 0000-0003-0037-403X employments",
+          "notes": "Earlier review: undated UTSA assistant professorship."
+        },
+        {
+          "url": "https://business.utsa.edu/images/alumni/Alvarez-Alumni-Magazine-2024.pdf",
+          "title": "Alvarez Alumni Magazine 2024",
+          "notes": "Earlier review: calls him assistant professor; no start date."
         }
       ],
+      "checkedAt": "2026-10-17",
       "source": "omlist"
     },
     {
@@ -23361,16 +23480,29 @@
     {
       "facultyId": "omlist-db0ee3960699971f",
       "name": "Bowon Kim",
-      "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "Only a Coursera instructor bio surfaced, describing a Harvard Doctor of Business Administration (not a PhD) with no year, and no career chronology. Degree type, year and first job unresolved; per project rules a DBA stays a DBA pending scope decision. Discovery web searches were also run; their snippets were not treated as verification.",
+      "status": "verified",
+      "employer": "Korea Advanced Institute of Science and Technology (KAIST Business School)",
+      "position": "Assistant Professor",
+      "placementYear": 1996,
+      "category": "tenure-track",
+      "evidenceUrl": "https://www.business.kaist.edu/faculty/bwkim",
+      "evidenceNote": "ORCID record (self-asserted, name Bowon Kim) gives education Doctor of Business Administration, Harvard Graduate School of Business Administration, September 1991 to November 1995 (after a 1990-91 Berkeley Haas PhD studentship and a Stanford MS in Operations Research), and a single employment entry: KAIST Business School from August 1996, listed under his current title Professor. No post is listed between the November 1995 end of the doctorate and August 1996. The doctorate is a Harvard DBA, not a PhD; its conferral year is not dated by a conferral record. The starting rank at KAIST is not stated. Verifier: the KAIST profile, re-read from its raw HTML (the reader proxy drops the Biography tab), states \"DBA (Doctor of Business Administration) in Technology and Operations Management, November 1995\" at Harvard Graduate School of Business Administration (dissertation supervised by Ramchandran Jaikumar) and a career list whose earliest entry is \"Assistant Professor (August 1996 - February 2001)\", KAIST Business School, with no earlier post; so position set to Assistant Professor, category corrected from unknown to tenure-track (plain title at an Asian business school), phdYearVerified set to 1995 from the dated award line, and evidenceUrl moved to that profile. The degree is a DBA, recorded as such pending the project's scope decision. The page also carries commented-out Korean template text about a different person (Stanford Ph.D. 1993, AT&T Bell Labs), which was ignored.",
+      "phdYearVerified": 1995,
+      "phdInstitutionVerified": "Harvard University",
+      "reason": "Third pass: the ORCID record linked from the OM List (not opened before) gives a dated chronology: Harvard DBA studies to November 1995, then KAIST Business School from August 1996, its only employment entry. The KAIST profile (read through the reader proxy; plain curl got an empty response) lists publications only, including Harvard Business School cases co-written with faculty in 1995-1996, which do not show an appointment. Degree type is a DBA, recorded as such pending the project's scope decision on historical DBAs; the ORCID study range does not verify the year. Category unknown because the starting title is not given. Verifier: the KAIST profile biography tab (raw HTML) dates the DBA to November 1995 and the starting title to Assistant Professor, August 1996, so the year and category statements above are superseded (see evidenceNote).",
       "sources": [
         {
-          "url": "https://business.kaist.edu/faculty/bowon-kim",
-          "title": "KAIST Business School faculty page",
-          "notes": "Opened; returned only directory navigation, no profile text."
+          "url": "https://orcid.org/0000-0002-5479-2977",
+          "title": "ORCID record 0000-0002-5479-2977",
+          "notes": "Read via public API: DBA Harvard 1991-09 to 1995-11; Berkeley Haas PhD student 1990-09 to 1991-08; Stanford MS OR 1988-89; Seoul National BBA 1984-88; employment KAIST Business School, Professor, from 1996-08."
+        },
+        {
+          "url": "https://www.business.kaist.edu/faculty/bwkim",
+          "title": "KAIST College of Business profile: Bowon Kim",
+          "notes": "Raw HTML read with curl (the reader proxy shows only publications): Education: Harvard GSBA, DBA in Technology and Operations Management, November 1995; Stanford MS OR June 1989; SNU BBA February 1988. Career: KAIST Business School Assistant Professor August 1996 - February 2001, Associate Professor March 2001 - August 2006, Professor from September 2006; UBC Sauder visiting professor 2002 and 2007-08. Publication list includes HBS cases 1994-1996."
         }
       ],
+      "checkedAt": "2026-10-17",
       "source": "omlist"
     },
     {
@@ -25163,25 +25295,25 @@
       "facultyId": "omlist-07cb144bf85a0f15",
       "name": "Arnab Kumar Laha",
       "status": "unresolved",
-      "checkedAt": "2026-10-17",
-      "reason": "Second pass: the Mathematics Genealogy Project (id 88740) records his Ph.D. at the Indian Statistical Institute, Kolkata, in 2003 with advisor Ashis SenGupta (and an IIM Ahmedabad student in 2023, which matches the person), not the imported 1999. The IIM Ahmedabad directory profile (plain curl) lists professional experience without dates: Vice President and Technical Training Leader, Analytics CoE, Genpact; Lecturer and Academic Coordinator at the National Institute of Management Calcutta; Programmer at R S Software; and IIMA roles from 2009. His personal IIMA page (updated 2012) gives only degrees. Which of these posts followed the doctorate, and whether he had already joined IIMA before 2003, is undocumented; the ISI repository did not answer. Earlier review (2026-10-16): the institutional and personal pages confirmed an ISI PhD without a year or dated employment history.",
+      "reason": "Third pass: the ORCID record linked from the OM List (0000-0002-4689-3700, name Arnab Laha) was read through the public API: one undated employment entry, Associate Professor, Production & Quantitative Methods, IIM Ahmedabad, and no education entries. It adds no dates, so it cannot show whether IIMA, the National Institute of Management Calcutta lectureship or the Genpact post followed the 2003 doctorate, or whether he had joined IIMA before it. Earlier review (2026-10-17): the Mathematics Genealogy Project dates the ISI Kolkata Ph.D. to 2003 (not the imported 1999); the IIMA profiles list Genpact, NIM Calcutta and R S Software posts without dates.",
       "sources": [
         {
+          "url": "https://orcid.org/0000-0002-4689-3700",
+          "title": "ORCID record 0000-0002-4689-3700",
+          "notes": "Read via public API: undated IIMA Associate Professor entry; no education."
+        },
+        {
           "url": "https://www.mathgenealogy.org/id.php?id=88740",
-          "title": "Arnab Laha - Mathematics Genealogy Project",
-          "notes": "Ph.D. Indian Statistical Institute, Kolkata, 2003; advisor Ashis SenGupta; student Sourav Majumdar (IIM Ahmedabad, 2023)."
+          "title": "Mathematics Genealogy Project: Arnab Kumar Laha",
+          "notes": "Earlier review: Ph.D. ISI Kolkata 2003, advisor Ashis SenGupta."
         },
         {
           "url": "https://www.iima.ac.in/faculty-research/faculty-directory/arnab-kumar-laha",
-          "title": "Arnab Kumar Laha - IIM Ahmedabad profile",
-          "notes": "Plain curl. Ph.D., M.Stat, B.Stat ISI (undated). Professional experience undated: Genpact VP and Technical Training Leader; Lecturer, National Institute of Management Calcutta; Programmer, R S Software. IIMA roles 2009-2017."
-        },
-        {
-          "url": "https://faculty.iima.ac.in/arnab/",
-          "title": "Prof. Arnab Laha - personal IIMA page",
-          "notes": "Plain curl. Professor, P&QM; Ph.D., M.Stat, B.Stat from ISI; page updated 20-07-2012; no dates."
+          "title": "IIM Ahmedabad faculty directory: Arnab Kumar Laha",
+          "notes": "Earlier review: undated professional experience (Genpact, NIM Calcutta, R S Software)."
         }
       ],
+      "checkedAt": "2026-10-17",
       "source": "omlist"
     },
     {
@@ -25340,30 +25472,30 @@
       "facultyId": "omlist-8cdd1426ac8c585f",
       "name": "Bart Lameijer",
       "status": "unresolved",
-      "checkedAt": "2026-10-17",
-      "reason": "Second pass: the UvA-DARE record of his thesis 'Implementing Lean Six Sigma in organizations' gives an award date of 17 October 2017, and the thesis curriculum vitae says that from 2014 he worked for ABN AMRO bank as a Lean Six Sigma Black Belt and then Master Black Belt while a PhD candidate at the University of Amsterdam. The UvA-fed ORCID record lists UvA research associate from February 2014 and associate professor from February 2018, both without end dates and with current titles. Because he held a UvA affiliation from 2014 and the ABN AMRO job began before the degree, it is not documented whether the 2018 UvA post was a new job or a change within the UvA affiliation, whether ABN AMRO continued alongside it, or what title it had at the start; the first new post-PhD job remains unresolved. Earlier review (2026-10-16): the Amsterdam profile listed publications and later professional activities without a doctoral-to-employment chronology.",
+      "reason": "Third pass: the UvA profile linked from the OM List (read with curl) gives his current title, Associate Professor of Business Analytics, Faculty of Economics and Business, and his publications, without appointment dates or an earlier career. Nothing new shows whether the February 2018 UvA post was a new job after the 17 October 2017 doctorate or a change within the UvA affiliation he held from February 2014, nor whether his ABN AMRO job (from 2014, before the degree) continued. Earlier review (2026-10-17): UvA-DARE dates the award to 17 October 2017; the thesis CV gives ABN AMRO Lean Six Sigma roles from 2014 while a PhD candidate; ORCID lists UvA research associate from 2014-02 and associate professor from 2018-02.",
       "sources": [
         {
+          "url": "https://www.uva.nl/profile/l/a/b.a.lameijer/b.a.lameijer.html",
+          "title": "University of Amsterdam profile: Dr. B.A. (Bart) Lameijer",
+          "notes": "Read with curl: Associate Professor of Business Analytics; publications; no appointment dates."
+        },
+        {
           "url": "https://dare.uva.nl/personal/search?identifier=ccafcbe1-5ef6-4907-a044-e9b5bf1e84b4",
-          "title": "UvA-DARE: Implementing Lean Six Sigma in organizations (PhD thesis)",
-          "notes": "Award date 17 October 2017; supervisor R.J.M.M. Does."
+          "title": "UvA-DARE thesis record",
+          "notes": "Earlier review: award date 17 October 2017."
         },
         {
           "url": "https://pure.uva.nl/ws/files/17592950/Thesis.pdf",
-          "title": "Lameijer (2017) thesis PDF, curriculum vitae",
-          "notes": "Since 2014 Lean Six Sigma Black Belt and later Master Black Belt at ABN AMRO; meanwhile PhD candidate at UvA."
+          "title": "Lameijer thesis (curriculum vitae)",
+          "notes": "Earlier review: ABN AMRO Black Belt / Master Black Belt from 2014 while a PhD candidate."
         },
         {
           "url": "https://orcid.org/0000-0001-9352-4337",
-          "title": "ORCID: Bart Lameijer",
-          "notes": "UvA Pure-fed entries: research associate from 2014-02; associate professor from 2018-02; no end dates."
-        },
-        {
-          "url": "https://www.uva.nl/en/profile/l/a/b.a.lameijer/b.a.lameijer.html",
-          "title": "University of Amsterdam profile: Bart Lameijer",
-          "notes": "Lists the 2017 thesis."
+          "title": "ORCID record 0000-0001-9352-4337",
+          "notes": "Earlier review: UvA research associate from 2014-02; associate professor from 2018-02."
         }
       ],
+      "checkedAt": "2026-10-17",
       "source": "omlist"
     },
     {
@@ -26292,30 +26424,35 @@
       "facultyId": "omlist-9a530a6922ab737b",
       "name": "Adam Letchford",
       "status": "unresolved",
-      "checkedAt": "2026-10-17",
-      "reason": "Second pass: his personal Lancaster homepage (staff/letchfoa, read with curl) gives only links, his ORCID iD and publication lists, with no CV or dated positions; ORCID 0000-0002-3191-5006 has no employment or education entries; the official Lancaster profile (re-read) lists BA 1989, MSc 1993 and PhD Management Science Lancaster 1997, fellowships and memberships with years, and PhD students supervised from 2006, but no appointment dates. The 1997 Lancaster PhD is confirmed, but no opened source dates his first post after it (lectureship, research post or visiting position). Earlier review (2026-10-16): the Lancaster profile and the Mathematics Genealogy record confirmed the 1997 PhD but gave no employment chronology.",
+      "reason": "Third pass: the new Lancaster department profile linked from the OM List (read with curl) repeats the qualifications (PhD Management Science, Lancaster, 1997), fellowships and dated research projects (the earliest, 'Cutting-Plane Approaches to Integer Programming', from 1 January 1997) but no appointment dates. The Lancaster research portal, read through the reader proxy, lists former affiliations Research Associate, Reader, Deputy Head of Department and Honorary/Visiting in Management Science, all undated, so it shows an early research-associate post but not when it began or whether it followed the degree. A discovery search found no dated CV or appointment notice. Earlier review (2026-10-17): his homepage, the Lancaster profile, an empty ORCID and the Mathematics Genealogy record confirm the 1997 Lancaster PhD but date no first post.",
       "sources": [
         {
+          "url": "https://www.lancaster.ac.uk/lums/our-departments/management-science/people/adam-letchford",
+          "title": "Lancaster Management Science profile: Adam Letchford",
+          "notes": "Read with curl: qualifications BA 1989, MSc 1993, PhD 1997 Lancaster; projects from 1997; no appointment dates."
+        },
+        {
+          "url": "https://research.lancaster-university.uk/en/persons/adam-letchford/",
+          "title": "Lancaster research portal: Adam Letchford",
+          "notes": "Read through r.jina.ai: former affiliations Research Associate, Reader, Deputy Head, Honorary/Visiting; all undated."
+        },
+        {
           "url": "https://www.lancaster.ac.uk/staff/letchfoa/",
-          "title": "Adam N. Letchford - personal web site",
-          "notes": "Read with curl; links to publication lists and ORCID; no CV or employment dates."
-        },
-        {
-          "url": "https://www.lancaster.ac.uk/lums/people/adam-letchford",
-          "title": "Adam Letchford - Lancaster University Management School profile",
-          "notes": "Read with curl; qualifications BA 1989, MSc 1993, PhD 1997 Lancaster; no appointment dates."
-        },
-        {
-          "url": "https://orcid.org/0000-0002-3191-5006",
-          "title": "ORCID record 0000-0002-3191-5006 (Adam Letchford)",
-          "notes": "Read via the public API; no employment or education entries."
+          "title": "Adam N. Letchford home page",
+          "notes": "Earlier review: links and ORCID only; no CV."
         },
         {
           "url": "https://www.genealogy.math.ndsu.nodak.edu/id.php?id=79658",
-          "title": "Mathematics Genealogy Project - Adam Letchford",
-          "notes": "Opened in the earlier review; 1997 Lancaster dissertation, advisor Eglese."
+          "title": "Mathematics Genealogy Project: Adam Letchford",
+          "notes": "Earlier review: 1997 Lancaster dissertation, advisor Eglese."
+        },
+        {
+          "url": "https://orcid.org/0000-0002-3191-5006",
+          "title": "ORCID record 0000-0002-3191-5006",
+          "notes": "No employment or education entries."
         }
       ],
+      "checkedAt": "2026-10-17",
       "source": "omlist"
     },
     {
@@ -27849,25 +27986,35 @@
       "facultyId": "omlist-5089beefbdd688aa",
       "name": "Andrew Lim",
       "status": "unresolved",
-      "checkedAt": "2026-10-17",
-      "reason": "Second pass: discovery.nus.edu.sg/3815 was rendered in a headless browser and identifies the person as Andrew Ee Beng Lim, who says he was a faculty member in Berkeley's Department of Industrial Engineering and Operations Research from 2002 to 2014 before NUS (appointments from 2022 shown); it lists no degrees and nothing before 2002. Berkeley IEOR pages for him return 404 and no CV was found, so the first job after the 1998 ANU doctorate (imported) and whether anything preceded Berkeley are unknown. Identity: the OM List profile mixes in publications from 1989-1994 that belong to a different Andrew Lim. Earlier review (2026-10-16): NUS Discovery required JavaScript and the website tried belonged to someone else.",
+      "reason": "Third pass: identity check on the OM List links. The linked ORCID (0000-0003-0510-8080) belongs to a namesake: a University of Minnesota computer-science PhD (1987-1992) who is Chief Scientist at Red Jasper Holdings, not Andrew E. B. Lim of the ANU (Mathematics Genealogy: Ph.D. ANU 1998). The linked website andreaslimoncello.net is his: its Bio page says he is a Professor in NUS Analytics & Operations and Finance and was on the Berkeley IEOR faculty 2002-2014, with nothing earlier. A Crossref affiliation search found a February 2002 Mathematics of Operations Research paper listing him at Columbia University's IEOR department, suggesting a Columbia post between the 1998 degree and Berkeley, but no title or dates were found, and the 1998-2001 period is otherwise blank. Earlier review (2026-10-17): NUS Discovery gives Berkeley IEOR 2002-2014 and no degrees or earlier posts; the Berkeley page is a 404.",
       "sources": [
         {
+          "url": "https://www.andreaslimoncello.net/bio",
+          "title": "Andrew Lim website: Bio",
+          "notes": "Read with curl: NUS professor; Berkeley IEOR faculty 2002-2014; nothing earlier."
+        },
+        {
+          "url": "https://orcid.org/0000-0003-0510-8080",
+          "title": "ORCID record 0000-0003-0510-8080 (OM List link)",
+          "notes": "Read via public API: PhD Computer Science, University of Minnesota 1987-1992; Chief Scientist, Red Jasper Holdings from 2021; a namesake, not this person."
+        },
+        {
+          "url": "https://www.mathgenealogy.org/id.php?id=88302",
+          "title": "Mathematics Genealogy Project: Andrew E. B. Lim",
+          "notes": "Found by discovery search (snippet: Ph.D. Australian National University 1998, 'Optimal Control of Systems With Constraints'); not opened directly."
+        },
+        {
+          "url": "https://api.crossref.org/works?query.author=Andrew+E.+B.+Lim&filter=from-pub-date:1997,until-pub-date:2003",
+          "title": "Crossref author search: Andrew E. B. Lim 1997-2003",
+          "notes": "MOOR 27(1), February 2002 (10.1287/moor.27.1.101.337): Department of IEOR, Columbia University; affiliation only; other hits are namesakes."
+        },
+        {
           "url": "https://discovery.nus.edu.sg/3815",
-          "title": "NUS Discovery - Andrew Ee Beng Lim",
-          "notes": "Rendered in a headless browser: Professor, Analytics & Operations and Finance; Berkeley IEOR faculty 2002-2014; NSF CAREER award; no degrees listed."
-        },
-        {
-          "url": "https://ieor.berkeley.edu/people/andrew-lim/",
-          "title": "Berkeley IEOR (guessed people page)",
-          "notes": "404."
-        },
-        {
-          "url": "https://omlist.edutool.org/schools/national-university-of-singapore/faculty/andrew-lim.html",
-          "title": "OM List profile - Andrew Lim",
-          "notes": "Read with curl: links Discovery 3815; publication list includes 1989 and 1994 Naval Research Logistics papers likely by a different Andrew Lim."
+          "title": "NUS Discovery profile 3815",
+          "notes": "Earlier review: Berkeley IEOR faculty 2002-2014; no degrees."
         }
       ],
+      "checkedAt": "2026-10-17",
       "source": "omlist"
     },
     {
@@ -29530,35 +29677,25 @@
       "facultyId": "omlist-f3dc9c36a2c9c351",
       "name": "Andrew (Andy) Lyons",
       "status": "unresolved",
-      "checkedAt": "2026-10-17",
-      "reason": "Second pass: re-read ORCID 0000-0003-3105-1567 through the public API. It now has a qualification entry, PhD, University of Liverpool, Industrial Studies, ending 1996-07, which supports the imported 1996 degree. Its employment still starts at the University of Liverpool (Operations and Supply Chain Management) from 1999-09-01, under his current title Professor, and nothing earlier is listed. A Crossref author search for 1995-2000 found no works by him with affiliations. One web search found a reproduction of the Springer author biography for Customer-driven Supply Chains (first published 2012), on a bookseller page. It says he 'has been a Lecturer in Operations Management at the University of Liverpool Management School since 2002' and gained his Ph.D. in Manufacturing Management from Liverpool in 1996. So the Management School lectureship dates from 2002, while ORCID places him at Liverpool from September 1999 in an unstated role. No Liverpool thesis record or 1996-1999 staff list could be opened (the Wayback Machine is blocked here). Still missing: his employment from July 1996 to September 1999, and his role at Liverpool from 1999 until the 2002 lectureship. Earlier review (2026-10-16): staff pages list degrees without dates and ORCID begins in September 1999, so the 1996-1999 period and the initial rank are undocumented.",
+      "reason": "Third pass: the Management School staff page linked from the OM List (read with curl) gives 'Professor Andrew Lyons, M.Eng., Ph.D.' and dated leadership roles only from September 2017 (Head of Marketing & Operations Subject Group 2017-2018, Interim Head of Marketing 2018-2020, Head of OSCM from September 2018), with no earlier appointments. ORCID still starts Liverpool employment at 1999-09-01 under his current title, and the publisher author note found in the second pass dates the Management School lectureship to 2002. The July 1996 to September 1999 period and his role from 1999 to 2002 remain undocumented. Earlier review (2026-10-17): ORCID gives a Liverpool PhD ending 1996-07 and Liverpool employment from September 1999; no 1996-1999 record was found.",
       "sources": [
         {
+          "url": "https://www.liverpool.ac.uk/management/staff/andrew-lyons/",
+          "title": "University of Liverpool Management School staff page: Professor Andrew Lyons",
+          "notes": "Read with curl: roles dated from September 2017; degrees M.Eng., Ph.D. without dates; no earlier posts."
+        },
+        {
           "url": "https://orcid.org/0000-0003-3105-1567",
-          "title": "ORCID record 0000-0003-3105-1567 (Andrew Lyons), public API",
-          "notes": "Read 2026-10-17: qualification PhD, University of Liverpool, Industrial Studies, end 1996-07; employment University of Liverpool OSCM, Professor, from 1999-09-01 (two duplicate entries); nothing earlier."
-        },
-        {
-          "url": "http://www.liverpool.ac.uk/people/andrew-lyons/",
-          "title": "Andrew Lyons - University of Liverpool staff page",
-          "notes": "From the earlier review: roles dated from 2017; degrees without institution or year."
-        },
-        {
-          "url": "https://www.liverpool.ac.uk/people/andrew-lyons/professional",
-          "title": "Andrew Lyons - University of Liverpool staff page, professional activities",
-          "notes": "From the earlier review: no previous appointments listed."
-        },
-        {
-          "url": "https://omlist.edutool.org/schools/university-of-liverpool/faculty/andy-lyons.html",
-          "title": "OM List faculty directory profile",
-          "notes": "Imported directory profile (Liverpool 1996 PhD); not evidence of a first job."
+          "title": "ORCID record 0000-0003-3105-1567",
+          "notes": "Earlier review: PhD Liverpool ending 1996-07; employment Liverpool from 1999-09-01 (title Professor)."
         },
         {
           "url": "https://www.sanmin.com.tw/product/index/006690591",
-          "title": "Sanmin bookstore listing - Customer-driven Supply Chains (Lyons, Coronado Mondragon, Piller, Poler; Springer), author biography",
-          "notes": "Opened 2026-10-17; a retailer reproduction of the publisher's author note, used only as a lead: Lecturer in Operations Management, University of Liverpool Management School, since 2002; Ph.D. Manufacturing Management, Liverpool, 1996."
+          "title": "Retailer reproduction of Springer author note (Customer-driven Supply Chains)",
+          "notes": "Earlier review, lead only: Lecturer in Operations Management, Liverpool Management School since 2002; PhD Liverpool 1996."
         }
       ],
+      "checkedAt": "2026-10-17",
       "source": "omlist"
     },
     {
@@ -31273,20 +31410,30 @@
       "facultyId": "omlist-d05745f2ad6c441b",
       "name": "Anuj Mehrotra",
       "status": "unresolved",
-      "checkedAt": "2026-10-17",
-      "reason": "Second pass: the Mathematics Genealogy Project lists Anuj Mehrotra, Ph.D. Georgia Institute of Technology, 1992 (no month). The Scheller dean biography (re-read) gives only the Georgia Tech doctorate and later deanships, without dates for the Miami start or anything in 1992-1993, and links no CV; one web search found no CV. Whether a post filled 1992-93 and his starting rank at Miami remain undocumented. Earlier review (2026-10-16): search snippets said he joined Miami in 1993 after the 1992 PhD, but no opened page gave years and no CV was found.",
+      "reason": "Third pass: the Scheller directory profile linked from the OM List (read with curl) gives his Georgia Tech deanship, the earlier GWSB deanship and his Miami roles (senior vice dean, interim dean, vice deans, chair of Management Science) without any dates for joining Miami or his starting rank, and links no CV. A web search led to the GW Hatchet student newspaper article of 12 April 2018 on his GW appointment (read with curl), which says he 'has been teaching at Miami since 1993' but attributes this to his LinkedIn profile; that second-hand statement gives neither a title nor whether anything filled 1992-93, so it is kept as a lead only. The first post after the 1992 Georgia Tech doctorate remains undocumented in a primary source. Earlier review (2026-10-17): the Mathematics Genealogy Project dates the PhD to 1992; the Scheller dean biography gives no early-career dates.",
       "sources": [
         {
+          "url": "https://www.scheller.gatech.edu/directory/faculty/mehrotra/index.html",
+          "title": "Scheller College directory profile: Anuj Mehrotra",
+          "notes": "Read with curl: deanships and Miami roles, undated; no CV link."
+        },
+        {
+          "url": "https://www.gwhatchet.com/2018/04/12/university-of-miami-administrator-to-lead-business-school/",
+          "title": "GW Hatchet, 12 April 2018: University of Miami administrator to lead business school",
+          "notes": "Read with curl: 'Mehrotra has been teaching at Miami since 1993 ... according to his LinkedIn profile'; doctorate in OR from Georgia Tech. Second-hand; lead only."
+        },
+        {
           "url": "https://www.mathgenealogy.org/id.php?id=124261",
-          "title": "Mathematics Genealogy Project — Anuj Mehrotra",
-          "notes": "Ph.D. Georgia Institute of Technology 1992; dissertation \"Constrained Graph Partitioning: Decomposition, Polyhedral Structure and Algorithms\"; advisors George L. Nemhauser and Ellis L. Johnson. No month or employment."
+          "title": "Mathematics Genealogy Project: Anuj Mehrotra",
+          "notes": "Earlier review: Ph.D. Georgia Tech 1992."
         },
         {
           "url": "https://www.scheller.gatech.edu/about-scheller/about-the-dean/index.html",
-          "title": "Georgia Tech Scheller — About the Dean",
-          "notes": "Re-read: joined Scheller 1 January 2024 after GWSB deanship; earlier Miami vice dean; doctorate in OR from Georgia Tech; no dates for early career."
+          "title": "Scheller About the Dean",
+          "notes": "Earlier review: no early-career dates."
         }
       ],
+      "checkedAt": "2026-10-17",
       "source": "omlist"
     },
     {
@@ -34251,22 +34398,22 @@
       "facultyId": "omlist-bbed3a825496e295",
       "name": "Bruna Suzanne Aiello Tsu Nishikawa",
       "status": "unresolved",
-      "reason": "Second pass: The full Lattes CV (lattes.cnpq.br, which would date each post) now opens only behind an image 'Codigo de seguranca' check for plain curl and the reader proxy, and the Escavador mirror answers 403 with a Cloudflare check, so only the public Lattes summary page (preview.do) could be read. The summary (certified 21/04/2026) gives a doctorate in business administration from FGV EAESP (2022), says she led the Student Services area of FGV EAESP from 2022 to 2025 and now coordinates the undergraduate business programme, and describes more than 25 years in professional-services firms and NGOs, 'most recently' in education. The Student Services post is a lead, but its start month relative to the 2022 degree is not given, and the summary does not say whether she already worked at FGV EAESP or elsewhere in education before or during the doctorate, so it cannot yet be recorded as the first new post-PhD job. Earlier review (2026-10-16): the FGV profile described the dissertation and research without a completion date or employment chronology.",
+      "reason": "Third pass: the ORCID record linked from the OM List (0000-0002-8533-7029) was read through the public API and has no employment or education entries. Nothing new dates the FGV EAESP Student Services post relative to the 2022 doctorate or shows whether she already worked at FGV EAESP before it. Earlier review (2026-10-17): the public Lattes summary gives the FGV EAESP doctorate (2022) and Student Services leadership 2022-2025 without months; the full Lattes CV sits behind a captcha and Escavador behind Cloudflare.",
       "sources": [
         {
-          "url": "https://eaesp.fgv.br/en/people/bruna-suzanne-aiello-tsu-nishikawa",
-          "title": "Bruna Suzanne Aiello Tsu Nishikawa - FGV EAESP profile",
-          "notes": "Re-read with curl; links Lattes CV 1207573887398754."
+          "url": "https://orcid.org/0000-0002-8533-7029",
+          "title": "ORCID record 0000-0002-8533-7029",
+          "notes": "Read via public API: no employment or education entries."
         },
         {
           "url": "http://buscatextual.cnpq.br/buscatextual/preview.do?metodo=apresentar&id=K4252550Y7",
-          "title": "Lattes CV summary (CNPq) - Bruna Suzanne Aiello Tsu Nishikawa",
-          "notes": "Doctorate FGV EAESP (2022); led FGV EAESP Student Services 2022 to 2025; now coordinates the undergraduate business programme; earlier professional-services and NGO career undated."
+          "title": "Lattes public summary",
+          "notes": "Earlier review: doctorate FGV EAESP 2022; led Student Services 2022-2025."
         },
         {
-          "url": "http://lattes.cnpq.br/1207573887398754",
-          "title": "Lattes CV (full)",
-          "notes": "Not read: security-code (captcha) page."
+          "url": "https://eaesp.fgv.br/en/people/bruna-suzanne-aiello-tsu-nishikawa",
+          "title": "FGV EAESP profile",
+          "notes": "Earlier review: links Lattes CV; no chronology."
         }
       ],
       "checkedAt": "2026-10-17",
@@ -36207,25 +36354,30 @@
       "facultyId": "omlist-295614b4f85f536c",
       "name": "Anand Paul",
       "status": "unresolved",
-      "checkedAt": "2026-10-17",
-      "reason": "Second pass: the CV on the Warrington directory (re-read with pdftotext) still lists only 'PhD: University of Texas at Austin' and the current Florida professorship, without years. Crossref places him at the University of Florida on a December 2000 Operations Research article and at Warrington's Decision and Information Sciences department in April 2001, so Florida is the likely first post, but no source dates the degree or the appointment, or excludes an earlier post. Texas ScholarWorks answered 403, the Mathematics Genealogy Project has no record, and no ORCID record with a Florida affiliation was found. Earlier review (2026-10-16): the CV listed the Texas PhD and current Florida professorship without degree date or employment chronology.",
+      "reason": "Third pass: the ORCID record linked from the OM List (0000-0002-1952-9743, Anand Paul) was read through the public API and has no employment, education, biography or works. A discovery search for his Texas dissertation found only the Warrington directory and a journal author note saying he completed his Ph.D. at the University of Texas at Austin, undated. The degree year and the start of the Florida post remain undocumented, and an earlier post is not excluded. Earlier review (2026-10-17): the Warrington CV gives an undated Texas PhD and current professorship; Crossref places him at Florida from December 2000.",
       "sources": [
         {
+          "url": "https://orcid.org/0000-0002-1952-9743",
+          "title": "ORCID record 0000-0002-1952-9743",
+          "notes": "Read via public API: name only; no employment, education or works."
+        },
+        {
           "url": "https://apps.warrington.ufl.edu/Directory/uploads/vita/anand-paul-5237-cv.pdf",
-          "title": "Anand Paul - curriculum vitae (Warrington)",
-          "notes": "Downloaded with curl and read with pdftotext. PhD: University of Texas at Austin (no year); employment: Professor, ISOM, Warrington; publications from 2001."
+          "title": "Anand Paul CV (Warrington)",
+          "notes": "Earlier review: PhD UT Austin without year; current Florida professorship."
         },
         {
           "url": "https://api.crossref.org/works?query.author=Anand+Paul&filter=until-pub-date:2003",
-          "title": "Crossref works for Anand Paul up to 2003",
-          "notes": "Operations Research, December 2000: The University of Florida, Gainesville; Management Science, April 2001: Decision and Information Sciences, Warrington College of Business."
+          "title": "Crossref author search: Anand Paul to 2003",
+          "notes": "Earlier review: University of Florida affiliation on a December 2000 Operations Research article; affiliation only."
         },
         {
           "url": "https://warrington.ufl.edu/directory/anand-paul",
-          "title": "Anand Paul - Warrington directory",
-          "notes": "Read with plain curl; links the CV above."
+          "title": "Warrington directory: Anand Paul",
+          "notes": "Earlier review: links the CV."
         }
       ],
+      "checkedAt": "2026-10-17",
       "source": "omlist"
     },
     {
@@ -37647,26 +37799,34 @@
     {
       "facultyId": "omlist-ce98daa72ee522f8",
       "name": "Anyan Qi",
-      "status": "unresolved",
-      "checkedAt": "2026-10-17",
-      "reason": "Second pass: the correct UT Dallas page (jindal.utdallas.edu/faculty/anyan-qi, rendered in a headless browser because it is script-drawn) gives the University of Michigan PhD, 2014, his current title (Associate Professor, Operations Management) and a 2015-2016 JSOM teaching award, but no appointment date, starting rank or CV (the page's CV link is empty). He is not found in the profiles.utdallas.edu search, his ORCID record lists only education, the Michigan Deep Blue API refused the request (403), and one web search found no CV. The first post-PhD job and its start year remain undocumented. Earlier review (2026-10-16): the guessed UT Dallas profile URL returned 404 and no primary source was opened.",
+      "status": "verified",
+      "employer": "The University of Texas at Dallas (Naveen Jindal School of Management)",
+      "position": null,
+      "placementYear": 2014,
+      "category": "unknown",
+      "evidenceUrl": "https://qi-anyan.github.io/",
+      "evidenceNote": "His personal website (site updated 12 October 2026) says that before joining UT Dallas he earned his Ph.D. at Michigan Ross, and its dated teaching record lists UT Dallas courses from Fall 2014 (OPRE 3360, Fall 2014, then every fall to 2019 and later), with Michigan teaching only in Winter 2011 as a doctoral student; honours include Michigan fellowships to 2014 and JSOM's Outstanding Undergraduate Teacher of the Year (2016). The JSOM faculty page gives PhD, University of Michigan, 2014. He was therefore teaching at UT Dallas from the semester after the 2014 degree; no intervening post appears. The starting rank is not stated on any opened page (current title Associate Professor on JSOM, Professor on his site).",
+      "phdYearVerified": 2014,
+      "phdInstitutionVerified": "University of Michigan at Ann Arbor",
+      "reason": "Third pass: his personal website, linked from the OM List and not cited before, supplies the chronology the earlier reviews lacked: UT Dallas teaching from Fall 2014 straight after the 2014 Michigan Ph.D. (confirmed again on the JSOM page read through the reader proxy). The kind of post is not stated, so position is null and the category unknown; an assistant professorship is likely but undocumented.",
       "sources": [
         {
-          "url": "https://jindal.utdallas.edu/faculty/anyan-qi",
-          "title": "Anyan Qi - Naveen Jindal School of Management faculty page",
-          "notes": "Rendered with a headless browser: PhD University of Michigan 2014; Associate Professor; Outstanding Undergraduate Teacher of the Year 2015-2016, JSOM, UT Dallas; no dates of appointment."
+          "url": "https://qi-anyan.github.io/",
+          "title": "Anyan Qi personal website",
+          "notes": "Read with curl: before joining UT-Dallas earned the Michigan Ross Ph.D.; UT Dallas teaching from Fall 2014; Michigan OMS 311 Winter 2011; Michigan fellowships 2008-2014; JSOM teaching award 2016."
+        },
+        {
+          "url": "https://jindal.utdallas.edu/faculty/anyan-qi/",
+          "title": "UT Dallas JSOM faculty page: Anyan Qi",
+          "notes": "Read through r.jina.ai: Associate Professor, Operations Management; PhD, University of Michigan, 2014."
         },
         {
           "url": "https://pub.orcid.org/v3.0/0000-0003-2933-8294/record",
-          "title": "ORCID public record 0000-0003-2933-8294 (Anyan Qi)",
-          "notes": "Education only: University of Michigan, Technology and Operations, PhD; Tsinghua bachelor's degrees; no employment."
-        },
-        {
-          "url": "https://profiles.utdallas.edu/anyan.qi",
-          "title": "UT Dallas profiles (earlier guess, attempted again)",
-          "notes": "Returns 404; the profiles browse search finds no entry for Anyan Qi."
+          "title": "ORCID record 0000-0003-2933-8294",
+          "notes": "Earlier review: education only (Michigan PhD, Tsinghua bachelor's); no employment."
         }
       ],
+      "checkedAt": "2026-10-17",
       "source": "omlist"
     },
     {
@@ -41526,26 +41686,39 @@
     {
       "facultyId": "omlist-249a88c905f77e04",
       "name": "Andreas S. Schulz",
-      "status": "unresolved",
-      "checkedAt": "2026-10-17",
-      "reason": "Second pass: his MIT 'Bio/CV' page (web.mit.edu/schulz/www/bio.html) says he got the Ph.D. in Mathematics from TU Berlin in 1996 and joined the MIT faculty in 1998, and lists 1996 dissertation prizes, but gives no 1996-1998 position. Crossref affiliations add a lead: a November 1997 PNAS paper ('Approximation algorithms') lists him at the Fachbereich Mathematik, Technische Universität Berlin, so he was most likely still at TU Berlin after the degree, but no title or dated appointment was found. Earlier review (2026-10-16): the TUM profile returned 404 and a Humboldt biography dates MIT to 1998 and the dissertation awards to 1996.",
+      "status": "verified",
+      "employer": "Technische Universität Berlin",
+      "position": null,
+      "placementYear": 1996,
+      "category": "unknown",
+      "evidenceUrl": "https://orcid.org/0000-0002-9595-459X",
+      "evidenceNote": "ORCID employment record (self-asserted by Andreas S Schulz) lists, as its earliest entry, Technische Universität Berlin from 1 April 1996 to 31 August 1998 (no role title), then Massachusetts Institute of Technology from 1 September 1998 to 30 June 2015 and Technische Universität München from 1 July 2015. The Deutsche Nationalbibliothek catalogue dates his dissertation 'Polytopes and Scheduling' to TU Berlin, 1996 (no month), and his MIT bio says he got the Ph.D. in Mathematics from TU Berlin in 1996 and joined the MIT faculty in 1998. The TU Berlin post thus began in 1996, the degree year; the exact conferral month is not documented, so a start a few months before formal conferral cannot be excluded.",
+      "phdYearVerified": 1996,
+      "phdInstitutionVerified": "Technical University of Berlin",
+      "reason": "Third pass: the ORCID record linked from the OM List (not cited before) fills the 1996-1998 gap: a TU Berlin employment entry dated 1996-04-01 to 1998-08-31 precedes the MIT faculty post from September 1998. No earlier employment is listed, so the TU Berlin post is not one held through the doctorate. Its title is not given (likely a post-doctoral research post, but unstated), so the category is unknown. The November 1997 PNAS affiliation (TU Berlin mathematics) found in the second pass is consistent.",
       "sources": [
         {
+          "url": "https://orcid.org/0000-0002-9595-459X",
+          "title": "ORCID record 0000-0002-9595-459X",
+          "notes": "Read via public API: employments TU Berlin 1996-04-01 to 1998-08-31 (no title), MIT 1998-09-01 to 2015-06-30, TU München from 2015-07-01; no education entries."
+        },
+        {
+          "url": "https://services.dnb.de/sru/dnb?version=1.1&operation=searchRetrieve&query=per%3DSchulz%2C%20Andreas%20and%20tit%3DPolytopes&recordSchema=oai_dc",
+          "title": "Deutsche Nationalbibliothek catalogue: Polytopes and Scheduling",
+          "notes": "Read via the DNB SRU API: 'Polytopes and Scheduling / vorgelegt von Andreas S. Schulz', Berlin, Techn. Univ., Diss., 1996."
+        },
+        {
           "url": "http://web.mit.edu/schulz/www/bio.html",
-          "title": "Andreas S. Schulz — Bio/CV (MIT)",
-          "notes": "Read with curl: Ph.D. Mathematics TU Berlin 1996; joined MIT faculty 1998; honors list; no early positions."
+          "title": "Andreas S. Schulz: Bio/CV (MIT)",
+          "notes": "Re-read with curl: Ph.D. Mathematics TU Berlin 1996; joined the MIT faculty in 1998; no 1996-1998 position."
         },
         {
           "url": "https://doi.org/10.1073/pnas.94.24.12734",
-          "title": "Approximation algorithms (PNAS, November 1997)",
-          "notes": "Crossref metadata: Fachbereich Mathematik, Technische Universität Berlin (with a second affiliation for a co-author)."
-        },
-        {
-          "url": "https://mgt.tum.de/professors-1/info/prof-dr-andreas-s-schulz",
-          "title": "Andreas S. Schulz — TUM profile (attempted)",
-          "notes": "Earlier review: HTTP 404."
+          "title": "PNAS 1997 'Approximation algorithms' (Crossref metadata)",
+          "notes": "Earlier review: TU Berlin Fachbereich Mathematik affiliation, November 1997."
         }
       ],
+      "checkedAt": "2026-10-17",
       "source": "omlist"
     },
     {
@@ -43014,40 +43187,45 @@
       "facultyId": "omlist-441bc189c8ec46ef",
       "name": "Abhinav Shubham",
       "status": "unresolved",
-      "checkedAt": "2026-10-17",
-      "reason": "Second pass: the Georgia Tech dissertation record dates the Ph.D. (submitted August 2025, issued 2025-07-31), and his personal website now says he is an Assistant Professor in Operations Management at the University of Cincinnati, but no opened source dates the start of the Cincinnati post or excludes an earlier role: the CV linked from his site is the job-market version (Ph.D. expected 2025, no employment), his ORCID lists only the Georgia Tech doctoral studentship from August 2019, and the UC Research Directory (rendered in a headless browser) shows only 'Asst Professor (F2)' with no dates. The Lindner faculty URLs tried redirect or return 404. Earlier review (2026-10-16): only the Georgia Tech placement table was opened, which reports a placement without establishing first employment.",
+      "reason": "Third pass: the Lindner College faculty page linked from the OM List (read with curl and through the reader proxy) gives only his name and contact block, with no title history or start date; a reader-proxy discovery search found the same page snippet (Assistant Professor, Department of OBAIS) and his website, but no dated appointment announcement or post-PhD CV. His website (re-read) still states only that he is an Assistant Professor at Cincinnati, and its teaching page has no dated courses. It therefore remains undocumented whether the Cincinnati post began in 2025 straight after the degree or after an intervening role. Earlier review (2026-10-17): the Georgia Tech dissertation dates the Ph.D. to 2025 and his site names the Cincinnati post, but no opened source dated the Cincinnati start or excluded an earlier role.",
       "sources": [
         {
-          "url": "https://hdl.handle.net/1853/82051",
-          "title": "Disparities in environmental impacts and occupational hazards from facility operations - Georgia Tech dissertation record",
-          "notes": "Read through the repository REST search endpoint: Ph.D. dissertation, Scheller College of Business, submitted August 2025, advisor Ravi Subramanian."
+          "url": "https://www.business.uc.edu/faculty-research/obais/faculty/abhinav-shubham.html",
+          "title": "Lindner College of Business faculty page: Abhinav Shubham",
+          "notes": "Read with curl and via r.jina.ai: name and address block only; no title dates or biography."
         },
         {
           "url": "https://www.abhinavshubham.com/",
-          "title": "Abhinav Shubham - personal website",
-          "notes": "Home page states he is an Assistant Professor in Operations Management at the University of Cincinnati; no dates."
+          "title": "Abhinav Shubham personal website",
+          "notes": "Re-read: Assistant Professor in Operations Management at the University of Cincinnati; no dates."
+        },
+        {
+          "url": "https://www.abhinavshubham.com/teaching",
+          "title": "Abhinav Shubham website: Teaching",
+          "notes": "Teaching philosophy only; no dated courses or institutions."
+        },
+        {
+          "url": "https://hdl.handle.net/1853/82051",
+          "title": "Georgia Tech SMARTech dissertation record",
+          "notes": "Earlier review: Ph.D. dissertation, Scheller College of Business, August 2025, advisor Ravi Subramanian."
         },
         {
           "url": "https://www.abhinavshubham.com/_files/ugd/4ec727_3262de0bd7bf4caba72c157a2df30245.pdf",
-          "title": "Abhinav Shubham - CV (job-market version)",
-          "notes": "Ph.D. Georgia Tech expected 2025; M.S. Temple 2018; only teaching and research roles during the doctorate; no post-PhD employment."
+          "title": "Abhinav Shubham job-market CV",
+          "notes": "Earlier review: Ph.D. expected 2025; no post-PhD employment."
         },
         {
           "url": "https://researchdirectory.uc.edu/p/shubhaav",
-          "title": "Abhinav Priyatam Shubham - UC Research Directory",
-          "notes": "Script-drawn page rendered with a headless browser: title Asst Professor (F2), no dates or history."
-        },
-        {
-          "url": "https://pub.orcid.org/v3.0/0000-0003-4221-8916/record",
-          "title": "ORCID public record 0000-0003-4221-8916 (Abhinav Shubham)",
-          "notes": "Only entry: Georgia Tech Scheller, PhD Student, from 2019-08."
+          "title": "UC Research Directory: Abhinav Shubham",
+          "notes": "Earlier review: Asst Professor (F2), no dates."
         },
         {
           "url": "https://www.scheller.gatech.edu/explore-programs/phd/academics/concentrations/operations-management.html",
-          "title": "Georgia Tech Scheller operations management PhD concentration (earlier review)",
-          "notes": "Earlier review: placement table reports the Cincinnati placement without dates."
+          "title": "Georgia Tech Scheller OM PhD placements",
+          "notes": "Earlier review: lists Cincinnati placement without dates."
         }
       ],
+      "checkedAt": "2026-10-17",
       "source": "omlist"
     },
     {
@@ -44112,25 +44290,30 @@
       "facultyId": "omlist-5aee2d44bc45b67e",
       "name": "Amrik Sohal",
       "status": "unresolved",
-      "checkedAt": "2026-10-17",
-      "reason": "Second pass: his author profile on The Conversation says he trained as an engineer in the UK, worked in manufacturing industry for over a decade, then completed a PhD in Operations Management (Education: University of Bradford, PhD, 1986) and 'since 1986 has been a full time academic', having held academic positions at the University of Bradford, at the University of Melbourne and, since 1991, at Monash University. This makes a University of Bradford post from about 1986 the likely first post-PhD job, but the profile gives neither its title nor its start date, does not say the list is in order, and does not exclude that the Bradford post began during the doctorate at the Bradford Management Centre. The Monash research portal biography gives the Bradford PhD and awards from 2001 without career dates, and ORCID 0000-0003-1247-4337 has no entries. Earlier review (2026-10-16): the Monash biography named the Bradford PhD and later awards but no dated early career chronology.",
+      "reason": "Third pass: the only unopened OM List link, labelled 'Personal', is the DOI of a 2019 Journal of Developing Areas article titled 'Personal Relationships and Loyalty in Supply Chain' (Crossref record read; no affiliations or biography), not a personal page. No new career evidence was found. The Bradford post that The Conversation profile names first is still without a title or start date, and it could have begun while he was a doctoral student at the Bradford Management Centre. Earlier review (2026-10-17): The Conversation profile gives a Bradford PhD in 1986 and academic posts at Bradford, Melbourne and, from 1991, Monash, without titles or order; the Monash portal and an empty ORCID give no career dates.",
       "sources": [
         {
+          "url": "https://doi.org/10.1353/jda.2019.0050",
+          "title": "DOI 10.1353/jda.2019.0050 (OM List 'Personal' link)",
+          "notes": "Resolved with curl and Crossref API: journal article 'Personal Relationships And Loyalty In Supply Chain' (Butt, Sohal, Prajogo); no affiliations; not a personal page."
+        },
+        {
           "url": "https://theconversation.com/profiles/amrik-sohal-1226720",
-          "title": "Amrik Sohal - The Conversation author profile",
-          "notes": "Read with curl; PhD University of Bradford 1986; full-time academic since 1986; academic positions at Bradford, Melbourne and since 1991 Monash; no titles or other dates."
+          "title": "The Conversation author profile: Amrik Sohal",
+          "notes": "Earlier review: PhD Bradford 1986; full-time academic since 1986 at Bradford, Melbourne and since 1991 Monash; no titles or dates for the first two."
         },
         {
           "url": "https://research.monash.edu/en/persons/amrik-sohal",
-          "title": "Amrik Sohal - Monash research portal",
-          "notes": "Read with curl; PhD Operations Management, University of Bradford Management Centre; awards 2001-2013; no career dates."
+          "title": "Monash research portal: Amrik Sohal",
+          "notes": "Earlier review: Bradford PhD; no career dates."
         },
         {
           "url": "https://orcid.org/0000-0003-1247-4337",
-          "title": "ORCID record 0000-0003-1247-4337 (Amrik Sohal)",
-          "notes": "Read via the public API; no employment or education entries."
+          "title": "ORCID record 0000-0003-1247-4337",
+          "notes": "Earlier review: no entries."
         }
       ],
+      "checkedAt": "2026-10-17",
       "source": "omlist"
     },
     {
@@ -46086,30 +46269,30 @@
       "facultyId": "omlist-cb24903114d858be",
       "name": "Aris Syntetos",
       "status": "unresolved",
-      "checkedAt": "2026-10-17",
-      "reason": "Second pass: the Cardiff profile and every Cardiff host (including the CMS mirror caru-dev.matrix.squiz.cloud surfaced by a web search) return Cloudflare 403 pages to curl, r.jina.ai and a headless browser; his ORCID record (0000-0003-4639-0756) still has works only. One web search's summary of the Cardiff profile (discovery only, not opened) lists the Brunel PhD in Operational Research in 2001, '2001-2003 Military Service - Greek National' and a 2005 Salford teaching certificate, but no Salford start date. Compulsory military service after the degree and the start of the Salford post therefore remain undated in any source actually read, so the first post-PhD job cannot be recorded. Earlier review (2026-10-16): no primary chronology could be read; Wikipedia (discovery only) gave the 2001 Brunel PhD, Greek military service 2001-03, then Salford, and Cardiff from 2012.",
+      "reason": "Third pass: the only unopened OM List link, labelled 'Personal', is DOI 10.1111/poms.13981, a 2023 Production and Operations Management article ('Personal fabrication as an operational strategy...') by Sethuraman, Parlaktürk and Swaminathan (Crossref record read), unrelated to him. No new career evidence was found. Earlier review (2026-10-17): every Cardiff profile host returned Cloudflare blocks, his ORCID has works only, and a search summary (not opened) of a 2001 Brunel PhD, Greek military service 2001-2003 and a later Salford post leaves the first post-PhD job undated in any source actually read.",
       "sources": [
         {
-          "url": "https://orcid.org/0000-0003-4639-0756",
-          "title": "ORCID record 0000-0003-4639-0756 (public API)",
-          "notes": "12 works; no education or employment entries."
-        },
-        {
-          "url": "https://caru-dev.matrix.squiz.cloud/people/view/598321-syntetos-aris",
-          "title": "Cardiff CMS mirror of the Syntetos profile",
-          "notes": "Found by a web search; Cloudflare 403 to curl; not read."
+          "url": "https://doi.org/10.1111/poms.13981",
+          "title": "DOI 10.1111/poms.13981 (OM List 'Personal' link)",
+          "notes": "Crossref record read: article by Sethuraman, Parlaktürk and Swaminathan (2023); not about him."
         },
         {
           "url": "https://profiles.cardiff.ac.uk/staff/syntetosa",
-          "title": "Aris Syntetos - Cardiff University profile",
-          "notes": "Cloudflare verification (403) to curl, r.jina.ai and headless browser."
+          "title": "Cardiff University profile: Aris Syntetos",
+          "notes": "Earlier review: Cloudflare 403 to curl, r.jina.ai and headless browser."
+        },
+        {
+          "url": "https://orcid.org/0000-0003-4639-0756",
+          "title": "ORCID record 0000-0003-4639-0756",
+          "notes": "Earlier review: works only."
         },
         {
           "url": "https://en.wikipedia.org/wiki/Aris_Syntetos",
-          "title": "Aris Syntetos - Wikipedia",
+          "title": "Wikipedia: Aris Syntetos",
           "notes": "Earlier review, discovery only: Brunel PhD 2001, military service 2001-03, Salford, Cardiff 2012."
         }
       ],
+      "checkedAt": "2026-10-17",
       "source": "omlist"
     },
     {
@@ -46204,25 +46387,25 @@
       "facultyId": "omlist-7347548a333fca9b",
       "name": "Ali Taghizadegan",
       "status": "unresolved",
-      "checkedAt": "2026-10-17",
-      "reason": "The degree is now dated: the University of Liverpool Repository (read through the reader proxy because direct requests answer 403) holds his Doctor of Philosophy thesis 'Collaborative Innovation in SMEs; Antecedents, Challenges, and Process' (2021; supervisors Andrew Lyons and Hossein Sharifi; deposited 16 December 2022), a year later than the imported 2020. His first job is still unknown: the Liverpool people page shows only his name and degrees, and no ORCID record under his name was found. Earlier review (2026-10-16): the linked Liverpool profile returned no readable biography or chronology.",
+      "reason": "Third pass: the School of Management staff page linked from the OM List (read with curl and through the reader proxy) gives only 'Dr Ali Taghizadegan, BSc, MSc, PhD, Operations and Supply Chain Management' with empty About/Research tabs and no title, dates or earlier posts. No ORCID is linked and none was found earlier. The 2021 Liverpool thesis dates the degree, but whether his first post-PhD job was the current Liverpool lectureship, a research or teaching post at Liverpool, or a post elsewhere is not documented. Earlier review (2026-10-17): the Liverpool repository dates the PhD thesis to 2021 (not the imported 2020), and the people page and ORCID search gave no employment chronology.",
       "sources": [
         {
-          "url": "https://livrepository.liverpool.ac.uk/3165172/",
-          "title": "University of Liverpool Repository - Taghizadegan, Ali (2021) Collaborative Innovation in SMEs",
-          "notes": "Read through r.jina.ai. Thesis (Doctor of Philosophy), School of Management, 2021; supervisors Lyons, Andrew and Sharifi, Hossein; deposited 16 Dec 2022."
+          "url": "https://www.liverpool.ac.uk/management/staff/ali-taghizadegan/",
+          "title": "University of Liverpool Management School staff page: Dr Ali Taghizadegan",
+          "notes": "Read with curl and via r.jina.ai: name, degrees and subject group only; no biography or dates."
         },
         {
-          "url": "https://www.liverpool.ac.uk/people/ali-taghizadegan",
-          "title": "University of Liverpool - Dr Ali Taghizadegan",
-          "notes": "Name and degrees (BSc, MSc, PhD) only; no biography."
+          "url": "https://livrepository.liverpool.ac.uk/3165172/",
+          "title": "University of Liverpool Repository: Taghizadegan PhD thesis",
+          "notes": "Earlier review via r.jina.ai: Doctor of Philosophy thesis, 2021, supervisors Lyons and Sharifi; deposited 16 December 2022."
         },
         {
           "url": "https://pub.orcid.org/v3.0/expanded-search/?rows=20&q=family-name%3ATaghizadegan",
-          "title": "ORCID public search - Taghizadegan",
-          "notes": "No record for Ali Taghizadegan."
+          "title": "ORCID expanded search: Taghizadegan",
+          "notes": "Earlier review: no record for Ali Taghizadegan."
         }
       ],
+      "checkedAt": "2026-10-17",
       "source": "omlist"
     },
     {
@@ -46670,25 +46853,25 @@
       "facultyId": "omlist-e400946c5146c079",
       "name": "André Tchokogué",
       "status": "unresolved",
-      "checkedAt": "2026-10-17",
-      "reason": "Second pass: theses.fr (1993BOR1D014, 'Contribution à la connaissance des mécanismes de compensation inter-entreprises', sciences de gestion, director Hirigoyen) confirms a 1993 Bordeaux 1 doctorate without day or month. His ORCID record (0000-0002-0894-604X) has no employment or education entries, and the HEC Montréal profile (plain curl) lists the Bordeaux I doctorate and an ISLI certificate without dates or career history. No dated source shows his first post after 1993 or when he joined HEC Montréal. Earlier review (2026-10-16): the HEC profile listed the Bordeaux doctorate without a completion date and did not establish earliest employment.",
+      "reason": "Third pass: the HEC Montréal profile linked from the OM List (read with curl at the .html address) gives Associate Professor, Department of Logistics and Operations Management, with the ISLI certificate and the Bordeaux I doctorate without dates, current teaching and roles, and no career history. No new dated evidence of his first post after the 1993 doctorate or of when he joined HEC Montréal was found. Earlier review (2026-10-17): theses.fr confirms the 1993 Bordeaux 1 doctorate; ORCID has no employment or education; the HEC profile had no dates.",
       "sources": [
         {
-          "url": "https://theses.fr/1993BOR1D014",
-          "title": "theses.fr 1993BOR1D014 - Contribution à la connaissance des mécanismes de compensation inter-entreprises",
-          "notes": "Read through the theses.fr API. Author Tchokogué, André; Bordeaux 1; sciences de gestion; 1993; director Hirigoyen."
+          "url": "https://www.hec.ca/en/profs/andre.tchokogue.html",
+          "title": "HEC Montréal profile: André Tchokogué",
+          "notes": "Read with curl: Associate Professor; ISLI certificate; Doctorat (sciences de gestion), Université Bordeaux I; no dates or career history."
         },
         {
-          "url": "https://www.hec.ca/en/profs/andre-tchokogue",
-          "title": "André Tchokogué - HEC Montréal profile",
-          "notes": "Plain curl. Certificat d'études supérieures (logistique industrielle), ISLI; Doctorat (sciences de gestion), Université Bordeaux I; no dates."
+          "url": "https://theses.fr/1993BOR1D014",
+          "title": "theses.fr 1993BOR1D014",
+          "notes": "Earlier review: Bordeaux 1 doctorate in sciences de gestion, 1993, director Hirigoyen."
         },
         {
           "url": "https://orcid.org/0000-0002-0894-604X",
-          "title": "ORCID record 0000-0002-0894-604X (André Tchokogué)",
-          "notes": "Public API: no employment or education entries; one 2022 work."
+          "title": "ORCID record 0000-0002-0894-604X",
+          "notes": "Earlier review: no employment or education entries."
         }
       ],
+      "checkedAt": "2026-10-17",
       "source": "omlist"
     },
     {
@@ -49847,15 +50030,20 @@
       "facultyId": "omlist-e68f2a870d1ab9c1",
       "name": "Anyu Wang",
       "status": "unresolved",
-      "checkedAt": "2026-10-17",
-      "reason": "The Fudan School of Management profile, read through its own data endpoint this time, gives a Doctor Degree in Management Science and Engineering at Fudan University, 2000-02 to 2003-03 (the OM List gives 2001) and, under academic experience, only one visiting-scholar stay at MIT Sloan (2007.01-06). It states no employment history and no year of joining Fudan, so it cannot show what the first post after the doctorate was or when it began. The namesake ORCID noted earlier was set aside. Earlier review (2026-10-16): Wrong-person risk: the only ORCID matching the OpenAlex name is a Tsinghua Institute for Advanced Study (cryptography) record, not the Fudan management scholar, and the Fudan faculty profile pages opened were empty templates with no education or employment content. The imported 2001 Fudan PhD and first job could not be checked.",
+      "reason": "Third pass: the only unopened OM List link is ORCID 0000-0002-1086-0288 (name Anyu Wang), whose single undated employment entry is Tsinghua University's Institute for Advanced Study; it has no education entries and is the cryptography namesake set aside in the earlier reviews, not the Fudan management scholar. No other new source was found. Earlier review (2026-10-17): the Fudan School of Management profile, read through its data endpoint, gives a Fudan doctorate 2000-02 to 2003-03 (the OM List gives 2001) and a 2007 MIT Sloan visiting-scholar stay, but no employment history or year of joining Fudan.",
       "sources": [
         {
+          "url": "https://orcid.org/0000-0002-1086-0288",
+          "title": "ORCID record 0000-0002-1086-0288 (OM List link)",
+          "notes": "Read via public API: one undated employment entry, Tsinghua University Institute for Advanced Study; no education; a namesake."
+        },
+        {
           "url": "https://www.fdsm.fudan.edu.cn/en/faculty/list.htm?UID=012091",
-          "title": "Fudan School of Management - Anyu Wang",
-          "notes": "Read through the page's own data endpoint (app.fdsm.fudan.edu.cn/NewTeacherService/api/Professor/GetSingleTeacherOtherInfo, labels personMessage, educationalBackground and academicExperience, English and Chinese), found by rendering the page in a headless browser; the English page itself rendered only publications through r.jina.ai. Education: a Doctor Degree in Management Science and Engineering at Fudan University, 2000-02 to 2003-03 (the OM List gives 2001). Academic experience: one visiting-scholar stay at MIT Sloan (2007.01-06). No employment chronology."
+          "title": "Fudan School of Management profile: Anyu Wang",
+          "notes": "Earlier review via the page's data endpoint: Fudan doctorate 2000-02 to 2003-03; MIT Sloan visiting scholar 2007; no employment history."
         }
       ],
+      "checkedAt": "2026-10-17",
       "source": "omlist"
     },
     {
@@ -51404,25 +51592,25 @@
       "facultyId": "omlist-e62cc7948b71e5d8",
       "name": "Brent D. Williams",
       "status": "unresolved",
-      "checkedAt": "2026-10-17",
-      "reason": "Second pass: his Walton College directory page (headless browser) lists only a PhD in Logistics from the University of Arkansas, with no year and no professional-experience panel; no ORCID record was found by the ORCID search API; no older dated CV from his TCU or Auburn years was found. The order and dates of the TCU and Auburn posts after the doctorate, and the doctorate year, remain unestablished. Earlier review (2026-10-16): Arkansas news and Walton pages gave a Walton PhD (no year), faculty posts at TCU and Auburn before joining Walton in 2011, and the 2024 deanship, but no dates or order for TCU and Auburn.",
+      "reason": "Third pass: the Walton College dean's-office directory page linked from the OM List (read with curl) is a script-drawn listing that returns only navigation and footer text, no biography, degrees or dates. No new source dates the TCU and Auburn posts or his Arkansas doctorate. Earlier review (2026-10-17): the Walton directory page lists a PhD in Logistics from Arkansas with no year; university news says he held faculty posts at TCU and Auburn before joining Walton in 2011, without dates or order.",
       "sources": [
         {
+          "url": "https://walton.uark.edu/directory/deans-office/uid/bdw013/name/Brent+D.+Williams/",
+          "title": "Walton College dean's office directory: Brent D. Williams",
+          "notes": "Read with curl: navigation and footer only; no profile text."
+        },
+        {
           "url": "https://walton.uark.edu/directory/all-staff/uid/bdw013/name/Brent+D.+Williams/",
-          "title": "Walton College directory: Brent D. Williams",
-          "notes": "PhD, Logistics, University of Arkansas; no year or experience entries."
+          "title": "Walton College staff directory",
+          "notes": "Earlier review (headless browser): PhD Logistics, University of Arkansas; no year."
         },
         {
           "url": "https://news.uark.edu/articles/69223/brent-d-williams-named-dean-of-sam-m-walton-college-of-business",
-          "title": "University of Arkansas news: Brent D. Williams named dean",
-          "notes": "Earlier review: TCU and Auburn faculty posts before joining Walton in 2011, undated."
-        },
-        {
-          "url": "https://walton.uark.edu/dean/",
-          "title": "Walton College dean page",
-          "notes": "Earlier review."
+          "title": "University of Arkansas news: Williams named dean",
+          "notes": "Earlier review: TCU and Auburn faculty posts before Walton in 2011, undated."
         }
       ],
+      "checkedAt": "2026-10-17",
       "source": "omlist"
     },
     {
@@ -56258,20 +56446,30 @@
       "facultyId": "omlist-db2782cccbbec15b",
       "name": "Cheng (Emily) Zhu",
       "status": "unresolved",
-      "checkedAt": "2026-10-17",
-      "reason": "The degree is now settled: McGill's repository (mcgill.scholaris.ca, read through its DSpace API) holds 'Three essays on data-driven models in health care operations management' by Zhu, Cheng, Doctor of Philosophy, McGill University, 2018, matching the Texas State profile's 'PhD in Management, McGill University, 2018' (the imported 2017 is not supported). Her first job is still undocumented: the Texas State profile and its detail page (curl) give no CV link and no appointment history, only grants from September 2023 onwards and her current associate-professor title; the ORCID search found no record for her. Earlier review (2026-10-16): the Texas State profile dated the McGill doctorate to 2018 but did not establish her earliest employment after completion.",
+      "reason": "Third pass: the Texas State faculty profile linked from the OM List (faculty.txstate.edu/profile/2154219, read with curl) and its awards and service activity pages give her current Associate Professor title and dated items from 2019 (a September 2019 CoSearch research competition, a July 2020 Texas State Alumni Association teaching award, a 2022 Presidential teaching award, the August 2023 Olney Early Career Research Award, reviewing from November 2019), and McGill awards to 2014, but no appointment start, starting rank or CV. A web search found nothing relevant. Texas State is placed by 2019, but whether she went there directly after the 2018 McGill degree is undocumented. Earlier review (2026-10-17): the McGill repository dates the doctorate to 2018 (not the imported 2017); the profile gave no appointment history.",
       "sources": [
         {
-          "url": "https://mcgill.scholaris.ca/handle/20.500.14905/114078",
-          "title": "McGill eScholarship - Three essays on data-driven models in health care operations management (Zhu, Cheng)",
-          "notes": "Read through the DSpace search API: Doctor of Philosophy, McGill University, 2018."
+          "url": "https://faculty.txstate.edu/profile/2154219",
+          "title": "Texas State faculty profile: Dr. Emily Zhu",
+          "notes": "Read with curl: Associate Professor, Information Systems & Analytics; no appointment dates."
         },
         {
-          "url": "https://faculty.txst.edu/profile/2154219",
-          "title": "Texas State faculty profile - Cheng (Emily) Zhu",
-          "notes": "Curl: PhD in Management, McGill University, 2018; grants from Sept 2023; no CV link or appointment dates."
+          "url": "https://faculty.txstate.edu/profile/2154219/activity/awards",
+          "title": "Texas State profile: awards",
+          "notes": "Read with curl: Texas State awards from September 2019; McGill awards 2012-2014."
+        },
+        {
+          "url": "https://faculty.txstate.edu/profile/2154219/activity/service",
+          "title": "Texas State profile: service",
+          "notes": "Read with curl: reviewing from November 2019; committee roles from 2020."
+        },
+        {
+          "url": "https://mcgill.scholaris.ca/handle/20.500.14905/114078",
+          "title": "McGill eScholarship thesis record",
+          "notes": "Earlier review: Doctor of Philosophy, McGill, 2018."
         }
       ],
+      "checkedAt": "2026-10-17",
       "source": "omlist"
     },
     {
@@ -57140,30 +57338,30 @@
       "facultyId": "omlist-2eea912981049f2d",
       "name": "Awi Federgruen",
       "status": "unresolved",
-      "checkedAt": "2026-10-17",
-      "reason": "Second pass: the Columbia Business School profile still returns a Cloudflare security check (403) to plain curl with a browser user-agent, to r.jina.ai and to a headless browser, so no Columbia CV was read. The MIT ORC seminar biographies (2002 and 2010, opened) say he joined Columbia in 1979 after the Amsterdam doctorate and after being a Research Fellow at the Mathematical Centre in Amsterdam and a faculty member at the University of Rochester Graduate School of Management, without dates or order. One web search found no CV with dates for the Rochester post. The Amsterdam Album Academicum dates the doctorate 17 May 1978, so the Rochester post (if it began after May 1978) or a continuing Mathematical Centre fellowship could be the first job; neither is dated in any source read. Earlier review (2026-10-16): the Album Academicum gave the 17 May 1978 doctorate and the MIT bio the undated Mathematical Centre and Rochester posts before Columbia in 1979; Columbia refused automated requests.",
+      "reason": "Third pass: the Columbia faculty website linked from the OM List (www0.gsb.columbia.edu/faculty/afedergruen/) answers 403 to curl with a browser user-agent, and the ORCID record (0000-0002-7584-4721) has no employment or education entries. No dated source for the Mathematical Centre fellowship or the Rochester post was found, so which of them followed the 17 May 1978 doctorate, and when, is still unknown. Earlier review (2026-10-17): MIT ORC seminar biographies name a Mathematical Centre research fellowship and a Rochester faculty post before Columbia in 1979, undated; the Amsterdam Album Academicum dates the doctorate 17 May 1978; Columbia pages blocked automated requests.",
       "sources": [
         {
-          "url": "https://web.mit.edu/orc/www/archive/seminars/2010f/bio/Federgruen_bio.html",
-          "title": "MIT ORC seminar biography, Fall 2010",
-          "notes": "Joined Columbia in 1979 after the Amsterdam doctorate, after being a Research Fellow at the Mathematical Centre and a faculty member at Rochester's Graduate School of Management; no dates."
+          "url": "https://www0.gsb.columbia.edu/faculty/afedergruen/",
+          "title": "Awi Federgruen Columbia faculty website",
+          "notes": "HTTP 403 to curl with a browser user-agent; not read."
         },
         {
-          "url": "https://web.mit.edu/orc/www/archive/seminars/2002sp/bios/Federgruen.html",
-          "title": "MIT ORC seminar biography, Spring 2002",
-          "notes": "Same wording; no dates."
+          "url": "https://orcid.org/0000-0002-7584-4721",
+          "title": "ORCID record 0000-0002-7584-4721",
+          "notes": "Read via public API: no employment or education entries."
+        },
+        {
+          "url": "https://web.mit.edu/orc/www/archive/seminars/2010f/bio/Federgruen_bio.html",
+          "title": "MIT ORC seminar biography (2010)",
+          "notes": "Earlier review: Mathematical Centre research fellow and Rochester faculty before joining Columbia in 1979; undated."
         },
         {
           "url": "https://albumacademicum.uva.nl/en/id/id050948",
-          "title": "University of Amsterdam Album Academicum",
-          "notes": "Earlier review: doctorate 17 May 1978, thesis on Markovian control problems."
-        },
-        {
-          "url": "https://business.columbia.edu/faculty/people/awi-federgruen",
-          "title": "Awi Federgruen - Columbia Business School profile",
-          "notes": "Cloudflare security check (403) to curl, r.jina.ai and headless browser."
+          "title": "Album Academicum, University of Amsterdam",
+          "notes": "Earlier review: doctorate 17 May 1978."
         }
       ],
+      "checkedAt": "2026-10-17",
       "source": "omlist"
     },
     {
