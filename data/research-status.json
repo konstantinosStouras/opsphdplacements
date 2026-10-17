@@ -4,24 +4,24 @@
     "updatedAt": "2026-10-17",
     "total": 3161,
     "counts": {
-      "unresolved": 1120,
-      "verified": 2037,
+      "unresolved": 1101,
+      "verified": 2056,
       "not-yet-completed-phd": 4
     },
     "bySource": {
       "omlist": {
         "total": 2149,
         "counts": {
-          "unresolved": 675,
-          "verified": 1473,
+          "unresolved": 659,
+          "verified": 1489,
           "not-yet-completed-phd": 1
         }
       },
       "faculty-page": {
         "total": 1012,
         "counts": {
-          "verified": 564,
-          "unresolved": 445,
+          "verified": 567,
+          "unresolved": 442,
           "not-yet-completed-phd": 3
         }
       }
@@ -402,15 +402,30 @@
       "facultyId": "omlist-8c89f3bfa1373fc1",
       "name": "Philipp Afeche",
       "status": "unresolved",
-      "checkedAt": "2026-10-16",
+      "checkedAt": "2026-10-17",
+      "reason": "Second pass: his University of Toronto Discover Research profile (public data endpoint) lists dated academic appointments: Assistant Professor of Information Management, Kellogg School of Management, Northwestern, 1997-2002; Assistant Professor of Operations Management, Kellogg, 2003-2005; Visiting Assistant Professor of Operations Management, University of Chicago GSB, 2005-2006; Rotman Assistant Professor 2007-2013, Associate Professor 2013-2019 and Professor from 2019; it lists BA St. Gallen and MS and PhD Stanford without years. The Kellogg assistant professorship began in 1997, two years before the imported 1999 Stanford PhD year. The degree year could not be verified (Stanford SearchWorks rejected plain requests, a headless browser and the reader proxy; the Mathematics Genealogy Project entry has no degree data; one web search found none), so it is unknown whether Kellogg 1997 is the first post-PhD job (if the degree came in 1997) or a pre-degree post held through a 1999 degree (in which case the first new post would be the 2005 Chicago visiting post). Earlier review (2026-10-16): the Chicago Booth biography gave current visiting role and degrees without early appointment chronology.",
       "sources": [
         {
+          "url": "https://discover.research.utoronto.ca/15099-philipp-afeche",
+          "title": "University of Toronto Discover Research - Philipp Afeche",
+          "notes": "Read through discover.research.utoronto.ca/api/users/15099; dated academic appointments 1997-present; degrees undated."
+        },
+        {
+          "url": "https://www.rotman.utoronto.ca/the-rotman-experience/our-community/people/afeche-philipp/",
+          "title": "Rotman - Philipp Afeche",
+          "notes": "Undated biography; no CV link."
+        },
+        {
+          "url": "https://www.mathgenealogy.org/id.php?id=275603",
+          "title": "Mathematics Genealogy Project - Philipp Afeche",
+          "notes": "Entry without dissertation, school or year."
+        },
+        {
           "url": "https://www.chicagobooth.edu/faculty/directory/a/philipp-afeche",
-          "title": "Chicago Booth — Philipp Afèche biography",
-          "notes": "Current visiting role and degrees, without early appointment chronology."
+          "title": "Chicago Booth - Philipp Afeche",
+          "notes": "Visiting from Rotman; undated."
         }
       ],
-      "reason": "University biography does not establish first post-PhD job.",
       "source": "omlist"
     },
     {
@@ -1532,18 +1547,28 @@
       "facultyId": "omlist-d44ef6bb34313633",
       "name": "Krishnan Anand",
       "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "Utah profile snippets say he was previously on the faculty at Wharton and Kellogg after a Stanford GSB PhD, but no source opened gives the order or dates of those appointments or confirms the 2001 PhD year; Wharton bio gives no years. First employer cannot be uniquely determined. Discovery web searches were also run; their snippets were not treated as verification.",
+      "checkedAt": "2026-10-17",
+      "reason": "Second pass: the Eccles profile (now served in full to a plain request) says that before Utah he was a faculty member at the Wharton School and at the Kellogg Graduate School of Management, and that he holds a Stanford GSB Ph.D., without dates or order; its CV link redirects to the Utah Symplectic profile, whose public data endpoint lists only a Utah associate professorship (July 2009-June 2020) and a Utah professorship from 2020, and his ORCID record (0000-0002-9175-1541) lists only an undated Utah entry. Stanford SearchWorks rejected plain requests, a headless browser and the reader proxy, and the Mathematics Genealogy Project has no entry under his name, so neither the Stanford degree year nor the order of the Wharton and Kellogg posts is established. Earlier review (2026-10-16): Utah snippets and a Tuck page named Wharton and Kellogg faculty posts after a Stanford GSB PhD without dates or order.",
       "sources": [
         {
           "url": "https://eccles.utah.edu/team/krishnan-anand/",
-          "title": "Utah Eccles profile: Krishnan Anand",
-          "notes": "Opened; fetch returned navigation only, no biography text."
+          "title": "Eccles School - Krishnan S Anand",
+          "notes": "Undated biography: Wharton and Kellogg faculty before Utah; Stanford GSB Ph.D."
+        },
+        {
+          "url": "https://profiles.faculty.utah.edu/?id=u0672002",
+          "title": "University of Utah faculty profile - Krishnan Anand",
+          "notes": "Read through profiles.faculty.utah.edu/api/users/u0672002; Utah associate professor 2009-07 to 2020-06, professor from 2020-07; nothing earlier."
+        },
+        {
+          "url": "https://pub.orcid.org/v3.0/0000-0002-9175-1541/activities",
+          "title": "ORCID - Krishnan Anand",
+          "notes": "Only an undated University of Utah employment entry."
         },
         {
           "url": "https://digitalstrategies.tuck.dartmouth.edu/?p=6465",
-          "title": "Tuck digital strategies author bio",
-          "notes": "Opened. Lists Assistant Professor of Operations and Information Management at Wharton; no years."
+          "title": "Tuck Digital Strategies - Krishnan Anand",
+          "notes": "Earlier review: Assistant Professor of OPIM at Wharton; no years."
         }
       ],
       "source": "omlist"
@@ -2256,24 +2281,34 @@
     {
       "facultyId": "omlist-1629d6bdcc3605fc",
       "name": "Priyank Arora",
-      "status": "unresolved",
-      "checkedAt": "2026-10-16",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "employer": "University of Massachusetts Amherst",
+      "position": "Assistant Professor, Department of Operations & Information Management, Isenberg School of Management",
+      "placementYear": 2018,
+      "category": "tenure-track",
+      "evidenceUrl": "https://sc.edu/study/colleges_schools/moore/documents/curriculum_vitae/priyank_arora_cv_0824.pdf",
+      "evidenceNote": "CV (last updated 27 August 2024) linked from his Moore School profile: PhD, Scheller College of Business, Georgia Tech, 2013-18; Assistant Professor, Operations & Information Management, Isenberg School of Management, UMass Amherst, 2018-2022; then Assistant Professor (2022-2024) and Associate Professor (from 2024), University of South Carolina. No post between the degree and UMass is listed. Scheller's placement table also lists 'Arora, Priyank, Operations Management, Summer 2018 - University of Massachusetts - Amherst'. Plain assistant professor title at a US business school, recorded as tenure-track by convention.",
+      "phdYearVerified": 2018,
+      "phdInstitutionVerified": "Georgia Institute of Technology",
+      "reason": "Second pass: the dated CV on the Moore School site confirms the Scheller placement-table destination as the first post after the 2018 Georgia Tech PhD.",
       "sources": [
         {
-          "url": "https://www.scheller.gatech.edu/explore-programs/phd/academics/concentrations/operations-management.html",
-          "title": "Georgia Tech Scheller — Doctoral placements",
-          "notes": "University doctoral placement list."
+          "url": "https://sc.edu/study/colleges_schools/moore/documents/curriculum_vitae/priyank_arora_cv_0824.pdf",
+          "title": "Priyank Arora - CV (August 2024)",
+          "notes": "Downloaded PDF; read appointment and education sections."
+        },
+        {
+          "url": "https://www.scheller.gatech.edu/degree-programs/phd/index.html",
+          "title": "Scheller College PhD - recent placements",
+          "notes": "Arora, Priyank, Operations Management, Summer 2018: University of Massachusetts - Amherst."
+        },
+        {
+          "url": "https://sc.edu/study/colleges_schools/moore/directory/arora_priyank.php",
+          "title": "Moore School directory - Priyank Arora",
+          "notes": "Links the CV."
         }
       ],
-      "reason": "Placement-table audit: the source reports a placement but does not explicitly establish first employment or exclude an earlier postdoc. Individual CV chronology is required.",
-      "reportedAcademicPlacement": {
-        "employer": "University of Massachusetts Amherst",
-        "position": null,
-        "placementYear": null,
-        "phdYearVerified": 2018,
-        "evidenceUrl": "https://www.scheller.gatech.edu/explore-programs/phd/academics/concentrations/operations-management.html",
-        "evidenceNote": "Listed in the 2018 doctoral cohort with this placement; position and employment start date are not stated."
-      },
       "source": "omlist"
     },
     {
@@ -2535,18 +2570,23 @@
       "facultyId": "omlist-f321428bb22d9c81",
       "name": "Igor Averbakh",
       "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "Rotman profile confirms a Moscow Institute of Physics and Technology PhD (1990) but gives no employment chronology. A Math-Net.Ru record (seen only via search summary; the page returned HTTP 503) supports the 1990 candidate degree. No CV or dated appointment list was found, so the first post-PhD job, possibly in Russia or elsewhere before Toronto, is unknown.",
+      "checkedAt": "2026-10-17",
+      "reason": "Second pass: Math-Net.Ru (person30055) still fails (connection refused to plain requests on www and m hosts, HTTP 503 on the legacy URL, and an error through the reader proxy); his ORCID record (0000-0001-6168-4424) has no education or employment entries; the University of Toronto Discover Research search returns no profile for him; the Rotman profile has no CV link and guessed UTSC Management profile URLs return 404 pages; one web search found no CV. The Rotman profile's Moscow Institute of Physics and Technology PhD (1990) remains the only dated fact, and his posts between 1990 and Toronto are undocumented. Earlier review (2026-10-16): the Rotman profile confirmed the 1990 MIPT PhD but gave no employment chronology, and Math-Net.Ru returned HTTP 503.",
       "sources": [
         {
-          "url": "https://www.rotman.utoronto.ca/the-rotman-experience/our-community/people/averbakh-igor-/",
-          "title": "Igor Averbakh - Rotman profile",
-          "notes": "Opened; degrees only."
+          "url": "https://www.rotman.utoronto.ca/the-rotman-experience/our-community/people/averbakh-igor/",
+          "title": "Rotman - Igor Averbakh",
+          "notes": "Professor, UTSC Department of Management, cross-appointed to Rotman; no dated appointments or CV."
+        },
+        {
+          "url": "https://pub.orcid.org/v3.0/0000-0001-6168-4424/activities",
+          "title": "ORCID - Igor Averbakh",
+          "notes": "No education or employment entries."
         },
         {
           "url": "https://m.mathnet.ru/eng/person30055",
-          "title": "Math-Net.Ru person record",
-          "notes": "Attempted; HTTP 503."
+          "title": "Math-Net.Ru - Igor Averbakh",
+          "notes": "Not read: connection failures and HTTP 503 (also earlier)."
         }
       ],
       "source": "omlist"
@@ -3045,18 +3085,23 @@
       "facultyId": "omlist-ac621340ec227c16",
       "name": "Nitin Bakshi",
       "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "The program placement table reports London Business School for the 2008 cohort, but does not explicitly establish first employment across sectors. Reviewed profile information does not provide a complete dated initial-job chronology; the placement therefore needs corroboration before publication as the first post-PhD job.",
+      "checkedAt": "2026-10-17",
+      "reason": "Second pass: the Utah Symplectic profile (public data endpoint) gives degrees B.Tech. IIT Bombay 1998, MS Stanford 2002 and PhD Wharton 2008, and Utah appointments from 2016-07; its biography says only that before Utah he served on the faculty at London Business School. His ORCID record (0000-0002-9825-189X) has no entries; LBS profile URLs return 404; one web search found no CV. Wharton's 'Recent Placements' list (which marks postdocs where they occur) still gives London Business School for the 2008 graduate, but no source dates the LBS start or excludes an earlier post, so the first job is not established as dated or explicitly initial. Earlier review (2026-10-16): the Wharton placement table reported LBS for the 2008 cohort without establishing first employment across sectors, and the Utah profile gave no dated chronology.",
       "sources": [
         {
           "url": "https://oid.wharton.upenn.edu/programs/phd/post-wharton/",
-          "title": "Wharton OID — Post-Wharton graduate placements",
-          "notes": "Program-reported placement retained as a lead; not sufficient alone to establish first post-PhD employment."
+          "title": "Wharton OID - Post-Wharton (Recent Placements)",
+          "notes": "2008: Nitin Bakshi, London Business School; list headed 'Recent Placements'."
+        },
+        {
+          "url": "https://profiles.faculty.utah.edu/?id=u6008135",
+          "title": "University of Utah faculty profile - Nitin Bakshi",
+          "notes": "Read through profiles.faculty.utah.edu/api/users/u6008135; PhD Wharton 2008; Utah from 2016-07; LBS before Utah, undated."
         },
         {
           "url": "https://eccles.utah.edu/team/nitin-bakshi/",
-          "title": "Nitin Bakshi — professional profile",
-          "notes": "Reviewed; does not establish complete first-job chronology."
+          "title": "Eccles School - Nitin Bakshi",
+          "notes": "Earlier review; no dated chronology."
         }
       ],
       "source": "omlist"
@@ -3431,19 +3476,32 @@
     {
       "facultyId": "omlist-ecb3b0fc88c98013",
       "name": "Nasser Barjesteh",
-      "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "The Toronto profile lists Chicago doctorate without completion date or first employment chronology; linked CV returned a missing page.",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "employer": "University of Toronto (Rotman School of Management)",
+      "position": "Assistant Professor of Operations Management and Statistics",
+      "placementYear": 2020,
+      "category": "tenure-track",
+      "evidenceUrl": "https://discover.research.utoronto.ca/22938-nasser-barjesteh",
+      "evidenceNote": "University of Toronto Discover Research profile (public data endpoint): degrees PhD and MBA, Booth School of Business, University of Chicago, 2020 (MSc Toronto 2014, MSc Waterloo 2013, BSc Amirkabir 2011); academic appointment Assistant Professor of Operations Management and Statistics, Rotman School of Management, from 2020, the only appointment listed. ORCID (0000-0002-5184-3863) ends the Booth PhD/MBA in 2020-08 and lists only the Rotman assistant professorship. Plain assistant professor title at a North American business school, recorded as tenure-track by convention.",
+      "phdYearVerified": 2020,
+      "phdInstitutionVerified": "University of Chicago",
+      "reason": "Second pass: the University of Toronto research profile dates the Booth PhD (2020) and the Rotman assistant professorship (from 2020), and ORCID ends the doctorate in August 2020 with no other employment; the Rotman profile's personal-site link now returns 404.",
       "sources": [
         {
-          "url": "http://www-2.rotman.utoronto.ca/nasser.barjesteh/files/CV_Nasser_Barjesteh.pdf",
-          "title": "Nasser Barjesteh academic profile",
-          "notes": "The Toronto profile lists Chicago doctorate without completion date or first employment chronology; linked CV returned a missing page."
+          "url": "https://discover.research.utoronto.ca/22938-nasser-barjesteh",
+          "title": "University of Toronto Discover Research - Nasser Barjesteh",
+          "notes": "Read through discover.research.utoronto.ca/api/users/22938; dated degrees and appointment."
+        },
+        {
+          "url": "https://pub.orcid.org/v3.0/0000-0002-5184-3863/activities",
+          "title": "ORCID - Nasser Barjesteh",
+          "notes": "Education Booth PhD and MBA ending 2020-08; employment Rotman Assistant Professor, undated."
         },
         {
           "url": "https://www.rotman.utoronto.ca/the-rotman-experience/our-community/people/barjesteh-nasser/",
-          "title": "Nasser Barjesteh academic profile",
-          "notes": "The Toronto profile lists Chicago doctorate without completion date or first employment chronology; linked CV returned a missing page."
+          "title": "Rotman - Nasser Barjesteh",
+          "notes": "Assistant Professor; Booth PhD and MBA; undated."
         }
       ],
       "source": "omlist"
@@ -5309,19 +5367,37 @@
     {
       "facultyId": "omlist-26ace954ced47d35",
       "name": "Olga Bountali",
-      "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "Official Rotman biography identifies postdoctoral fellowships at both Southern Methodist University and Koç University before Toronto, plus consulting, but omits their dates/order and doctorate year. Cannot determine first post-PhD appointment from this biography.",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "employer": "Koç University",
+      "position": "Postdoctoral fellow, Industrial Engineering",
+      "placementYear": 2014,
+      "category": "postdoc",
+      "evidenceUrl": "https://pub.orcid.org/v3.0/0000-0001-6869-4772/activities",
+      "evidenceNote": "ORCID record (affiliations Athens, Koç, SMU, Toronto) lists employment: Koç University, Industrial Engineering, Postdoctoral fellow, 2014-09 to 2015-09; Southern Methodist University, OREM, Postdoctoral fellow, 2015-10 to 2018-07; University of Toronto from 2018-07 (the Toronto research profile dates the assistant professorship from 2 July 2018). The Greek National Archive of PhD Theses dates her University of Athens (Department of Mathematics) doctoral thesis 2014. The Koç postdoc is the earliest post and follows the 2014 doctorate, which resolves the order of the two postdocs named in the Rotman biography.",
+      "phdYearVerified": 2014,
+      "phdInstitutionVerified": "University of Athens",
+      "reason": "Second pass: ORCID dates and orders the two postdoctoral posts (Koç from September 2014, then SMU from October 2015) before Toronto, and the national thesis archive dates the Athens PhD 2014.",
       "sources": [
         {
-          "url": "https://discover.research.utoronto.ca/2435-olga-bountali",
-          "title": "Olga Bountali — public academic profile",
-          "notes": "Professional biography and degree information reviewed for first-job evidence."
+          "url": "https://pub.orcid.org/v3.0/0000-0001-6869-4772/activities",
+          "title": "ORCID - Olga Bountali",
+          "notes": "Dated employments: Koç 2014-09 to 2015-09; SMU 2015-10 to 2018-07; Toronto 2018-07."
         },
         {
-          "url": "https://rotman.utoronto.ca/the-rotman-experience/our-community/people/bountali-olga-/",
-          "title": "Rotman — Olga Bountali official profile",
-          "notes": "Identifies Athens doctorate, two postdoctoral institutions and prior consulting but lacks dated chronology."
+          "url": "https://www.didaktorika.gr/eadd/handle/10442/45494",
+          "title": "National Archive of PhD Theses (Greece) - Bountali, Olga: Strategic customers in queuing systems with batch removals",
+          "notes": "Date 2014; National and Kapodistrian University of Athens, Department of Mathematics."
+        },
+        {
+          "url": "https://discover.research.utoronto.ca/2435-olga-bountali",
+          "title": "University of Toronto Discover Research - Olga Bountali",
+          "notes": "Read through its public data endpoint; Assistant Professor from 2018-07-02; degrees undated."
+        },
+        {
+          "url": "https://www.rotman.utoronto.ca/the-rotman-experience/our-community/people/bountali-olga/",
+          "title": "Rotman - Olga Bountali",
+          "notes": "Postdoctoral fellow at SMU and Koç before Toronto; PhD Athens; undated."
         }
       ],
       "source": "omlist"
@@ -8941,19 +9017,32 @@
     {
       "facultyId": "omlist-0dfa8110958f6289",
       "name": "Andre Cire",
-      "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "Rotman profile confirms Carnegie Mellon doctorate in 2014, but neither the official profile nor personal academic site gives a dated initial appointment or complete employment history.",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "employer": "University of Toronto",
+      "position": "Assistant Professor, Operations Management, Department of Management, University of Toronto Scarborough (cross-appointed to Rotman)",
+      "placementYear": 2014,
+      "category": "tenure-track",
+      "evidenceUrl": "https://www.andre-cire.com/CV_CireAndre.pdf",
+      "evidenceNote": "CV (April 2026) linked from his personal site: Ph.D., Operations Research, Tepper School of Business, Carnegie Mellon University, August 2014 (dissertation 'Decision Diagrams for Optimization'); Assistant Professor, Operations Management, Department of Management, University of Toronto Scarborough, cross-appointed to Rotman, July 2014-July 2021; Associate Professor from July 2021. The assistant professorship began in July 2014, one month before the August 2014 degree, and is the first job (overlap noted). Plain assistant professor title at a North American business school, recorded as tenure-track by convention.",
+      "phdYearVerified": 2014,
+      "phdInstitutionVerified": "Carnegie Mellon University",
+      "reason": "Second pass: the CV on his personal site dates the CMU PhD (August 2014) and the Toronto assistant professorship (from July 2014); no other appointment is listed.",
       "sources": [
         {
-          "url": "https://www.rotman.utoronto.ca/the-rotman-experience/our-community/people/cire-andre/",
-          "title": "Andre Cire — public academic profile",
-          "notes": "Professional biography and degree information reviewed for first-job evidence."
+          "url": "https://www.andre-cire.com/CV_CireAndre.pdf",
+          "title": "Andre Augusto Cire - CV (April 2026)",
+          "notes": "Downloaded PDF; read academic appointments and education."
         },
         {
           "url": "http://andre-cire.com/",
-          "title": "Andre Cire — public academic profile",
-          "notes": "Professional biography and degree information reviewed for first-job evidence."
+          "title": "Andre Cire - personal site",
+          "notes": "Links the CV."
+        },
+        {
+          "url": "https://www.rotman.utoronto.ca/the-rotman-experience/our-community/people/cire-andre/",
+          "title": "Rotman - Andre Cire",
+          "notes": "Earlier review: CMU doctorate 2014; no dated appointments."
         }
       ],
       "source": "omlist"
@@ -10420,14 +10509,27 @@
     {
       "facultyId": "omlist-7db18f46e75fc8b7",
       "name": "Sarv Devaraj",
-      "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "The Notre Dame Mendoza profile confirms a University of Minnesota PhD but gives no degree year and no career chronology. No dated CV or appointment announcement was found (web search budget ran out), so the first post-PhD job and its start year are unknown.",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "employer": "University of Notre Dame",
+      "position": "Assistant Professor, Department of Management, Mendoza College of Business",
+      "placementYear": 1997,
+      "category": "tenure-track",
+      "evidenceUrl": "https://d23loykajbcndr.cloudfront.net/sdevaraj/pci/Sarv%20Vita%20Feb%202025-1.doc",
+      "evidenceNote": "CV (February 2025) linked from the Mendoza profile: Ph.D. Business Administration (Operations and Technology Management), University of Minnesota, 1997; Research Assistant (1991-1996) and Teaching Assistant (1994-1996) at Minnesota; Assistant Professor, Department of Management, Mendoza College of Business, University of Notre Dame, August 1997-August 2003; Infosys fellow 2001; Associate Professor 2003. The Notre Dame assistant professorship is the first post listed after the doctorate.",
+      "phdYearVerified": 1997,
+      "phdInstitutionVerified": "University of Minnesota",
+      "reason": "Second pass: the CV linked from the Mendoza profile (a Word file on the school's CloudFront host) dates the Minnesota PhD 1997 and the Notre Dame assistant professorship from August 1997.",
       "sources": [
         {
+          "url": "https://d23loykajbcndr.cloudfront.net/sdevaraj/pci/Sarv%20Vita%20Feb%202025-1.doc",
+          "title": "Sarv Devaraj - Vita (February 2025)",
+          "notes": "Downloaded and converted to text; read education and professional experience sections only."
+        },
+        {
           "url": "https://mendoza.nd.edu/mendoza-directory/profile/sarv-devaraj/",
-          "title": "Sarv Devaraj - Mendoza College of Business profile",
-          "notes": "Opened; PhD Minnesota without year; no earlier positions."
+          "title": "Mendoza directory - Sarv Devaraj",
+          "notes": "Links the CV; Minnesota PhD without year."
         }
       ],
       "source": "omlist"
@@ -10901,14 +11003,32 @@
     {
       "facultyId": "omlist-8bd2b5c42ec2f4d7",
       "name": "Yuanyuan Ding",
-      "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "The Oregon profile dates Minnesota doctorate to 2025 but does not establish appointment start or exclude an intervening role.",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "employer": "University of Oregon",
+      "position": "Assistant Professor, Operations and Business Analytics",
+      "placementYear": 2024,
+      "category": "tenure-track",
+      "evidenceUrl": "https://pub.orcid.org/v3.0/0000-0002-5616-9804/activities",
+      "evidenceNote": "ORCID record (affiliations Minnesota and Oregon) gives education: University of Minnesota PhD, Supply Chain and Operations, 2018-09 to 2024-05, and employment: University of Oregon, Operations and Business Analytics, Assistant Professor from 2024-06, with no other employment. The University Digital Conservancy dates the dissertation ('Managing operational design within innovative retail contexts', advisors Karen Donohue and Necati Ertekin) April 2025, and the Oregon profile gives PhD 2025, so the Oregon post began about ten months before the dissertation was formally dated; it was not retitled and is the first job, with the overlap noted.",
+      "phdYearVerified": 2025,
+      "phdInstitutionVerified": "University of Minnesota",
+      "reason": "Second pass: ORCID dates the Oregon assistant professorship from June 2024 directly after the Minnesota doctoral programme (ended 2024-05 by ORCID); the dissertation record and profile date the degree 2025. The assistant professorship that began before formal conferral keeps its own start year (overlap stated).",
       "sources": [
         {
+          "url": "https://pub.orcid.org/v3.0/0000-0002-5616-9804/activities",
+          "title": "ORCID - Yuanyuan Ding",
+          "notes": "Education Minnesota PhD 2018-09 to 2024-05; employment Oregon Assistant Professor 2024-06 to present."
+        },
+        {
+          "url": "https://hdl.handle.net/11299/275878",
+          "title": "University Digital Conservancy - Managing operational design within innovative retail contexts",
+          "notes": "Read through the DSpace search API; University of Minnesota Ph.D. dissertation, April 2025, major Business Administration."
+        },
+        {
           "url": "https://business.uoregon.edu/directory/operations-business-analytics/all/ydin",
-          "title": "Yuanyuan Ding academic profile",
-          "notes": "The Oregon profile dates Minnesota doctorate to 2025 but does not establish appointment start or exclude an intervening role."
+          "title": "Oregon Lundquist directory - Yuanyuan Ding",
+          "notes": "Degree history: PhD Supply Chain and Operations Management, University of Minnesota, 2025; no appointment date."
         }
       ],
       "source": "omlist"
@@ -16053,13 +16173,23 @@
       "facultyId": "omlist-635dde4f9a7dc85d",
       "name": "Qinglong Gou",
       "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "The USTC faculty page lists a professor title and an unspecified doctorate with no institution, year or work history; the imported 2007 USTC PhD and the first job are not established.",
+      "checkedAt": "2026-10-17",
+      "reason": "Second pass: his Chinese USTC faculty page says he received the USTC bachelor's in economics in 2000 and the USTC doctorate in management in 2007 and visited UT Dallas from September 2013 to August 2014, and the School of Management English profile says he 'Joined University of Science and Technology of China in 2000' and received the Ph.D. in Management Science in 2007. His USTC employment therefore appears to have begun in 2000, well before the 2007 doctorate, and continued; no new post after the degree is documented (titles and dates of his USTC posts are not given), so under the overlap rule the first new post-PhD job is not established. Earlier review (2026-10-16): the USTC faculty page gave a professor title and an unspecified doctorate with no institution, year or work history.",
       "sources": [
         {
+          "url": "https://faculty.ustc.edu.cn/gouqinglong/zh_CN/index.htm",
+          "title": "USTC faculty site - Gou Qinglong (Chinese)",
+          "notes": "Bachelor's 2000 and doctorate 2007, both USTC; UTD visit 2013-09 to 2014-08; no work history."
+        },
+        {
+          "url": "https://bs.ustc.edu.cn/english/profile-51.html",
+          "title": "USTC School of Management - Qinglong Gou",
+          "notes": "'Joined University of Science and Technology of China in 2000'; Ph.D. Management Science 2007."
+        },
+        {
           "url": "https://faculty.ustc.edu.cn/gouqinglong/zh_CN/zhym/87722/list/index.htm",
-          "title": "USTC faculty page - Qinglong Gou",
-          "notes": "Opened; no education or work experience dates."
+          "title": "USTC faculty site - research page",
+          "notes": "Earlier review; no education or work dates."
         }
       ],
       "source": "omlist"
@@ -17934,14 +18064,37 @@
     {
       "facultyId": "omlist-40af9da6172aed6d",
       "name": "Timothy (Tim) Hawkins",
-      "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "UNT profile provides current role and contact details without doctoral or early career chronology.",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "employer": "Naval Postgraduate School",
+      "position": "Lieutenant Colonel / Assistant Professor, Graduate School of Business & Public Policy (U.S. Air Force military faculty)",
+      "placementYear": 2008,
+      "category": "other-academic",
+      "evidenceUrl": "https://facultyinfo.unt.edu/faculty-profile-cv?profile=tgh0041",
+      "evidenceNote": "UNT Faculty Information System CV: PhD University of North Texas 2007 (dissertation 'Explaining Buyer Opportunism in Business-to-Business Relationships'); military posts Acquisition Staff Officer USAF 2002-2004, then no post listed until Major/Contracting Squadron Commander, USAF 386th Airlift Wing, Kuwait, 2007-2008; then Lieutenant Colonel/Assistant Professor, Naval Postgraduate School 2008-2013 and Western Kentucky University from 2014. The UNT Digital Library dates the dissertation May 2007. The CV lists U.S. Air Force posts from 1994 and no separation, with the rank of Major both before (2002-2004) and after (2007-2008) the doctoral years, so his uniformed service is treated as continuing through the doctorate. The 2007-2008 Kuwait contracting squadron command is an assignment within that continuing service, not a new job (rule 1 and the internal-promotion rule). Under the decision for serving officers assigned to a faculty post at a new institution (Bell, Brewer, Griffis, Seagren and Kirschenman precedents), the Naval Postgraduate School faculty assignment from 2008 is the first new post-PhD job. The continuing Air Force service is noted, the category is other-academic, and no start month is given for the NPS post. Integrator (2026-10-17): employer, position, year and category changed from the USAF Kuwait command (2007, government) after the integrator check, consistent with the Steven Pilnick record.",
+      "phdYearVerified": 2007,
+      "phdInstitutionVerified": "University of North Texas",
+      "reason": "Second pass: the UNT Faculty Information System public CV (found through its name search; the cob.unt.edu profile has no chronology) gives a dated military and academic chronology, and the UNT Digital Library record (read in a headless browser after its bot check) dates the dissertation May 2007. The 2007-2008 USAF contracting squadron command in Kuwait continues his Air Force service; under the serving-officer rule the first new post is the Naval Postgraduate School faculty assignment from 2008.",
       "sources": [
         {
+          "url": "https://facultyinfo.unt.edu/faculty-profile-cv?profile=tgh0041",
+          "title": "UNT Faculty Information System - Tim G. Hawkins CV",
+          "notes": "Plain request; education (PhD UNT 2007) and dated professional positions (USAF assignments 1994-2008, NPS 2008-2013, WKU 2014-2019)."
+        },
+        {
+          "url": "https://digital.library.unt.edu/search/?q=%22Explaining+Buyer+Opportunism%22&t=fulltext",
+          "title": "UNT Digital Library search - Explaining Buyer Opportunism in Business-to-Business Relationships",
+          "notes": "Search result (item ark:/67531/metadc3664) read in a headless browser after the site's Altcha bot check; dissertation by Hawkins, Timothy Glenn, dated May 2007."
+        },
+        {
+          "url": "https://facultyinfo.unt.edu/faculty-profile?profile=tgh0041",
+          "title": "UNT Faculty Information System - Tim G. Hawkins profile",
+          "notes": "Same education entry; links the CV."
+        },
+        {
           "url": "https://cob.unt.edu/people/tim-hawkins.html",
-          "title": "Timothy (Tim) Hawkins public academic profile",
-          "notes": "UNT profile provides current role and contact details without doctoral or early career chronology."
+          "title": "UNT Ryan College of Business - Tim Hawkins",
+          "notes": "Current title and contact only (earlier review)."
         }
       ],
       "source": "omlist"
@@ -19142,16 +19295,34 @@
     {
       "facultyId": "omlist-4baaaee5909dbd11",
       "name": "Ming Hu",
-      "status": "unresolved",
-      "checkedAt": "2026-10-16",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "employer": "University of Toronto (Rotman School of Management)",
+      "position": "Assistant Professor",
+      "placementYear": 2009,
+      "category": "tenure-track",
+      "evidenceUrl": "http://s530376901.onlinehome.us/download/cv_minghu.pdf",
+      "evidenceNote": "CV (October 2026) linked from his University of Toronto personal page: M.Phil. 2007 and PhD in Operations Research 2009, Columbia University; Acting Assistant Professor, Rotman, Jul 2008-Jun 2009; Assistant Professor, Rotman, Jul 2009-Jun 2015; Associate Professor with tenure Jul 2015. The acting title began before the 2009 degree and was converted to the assistant professorship from July 2009, which is recorded as the first job (acting title kept here). Plain assistant professor title at a North American business school, recorded as tenure-track by convention.",
+      "phdYearVerified": 2009,
+      "phdInstitutionVerified": "Columbia University",
+      "reason": "Second pass: the dated CV linked from his personal page shows a Rotman acting assistant professorship from July 2008 converted to an assistant professorship from July 2009 after the 2009 Columbia PhD.",
       "sources": [
         {
+          "url": "http://s530376901.onlinehome.us/download/cv_minghu.pdf",
+          "title": "Ming Hu - Curriculum Vita (October 2026)",
+          "notes": "Downloaded PDF; read education and positions."
+        },
+        {
+          "url": "http://individual.utoronto.ca/minghu/",
+          "title": "Ming Hu - University of Toronto personal page",
+          "notes": "Links the CV."
+        },
+        {
           "url": "https://www.rotman.utoronto.ca/the-rotman-experience/our-community/people/hu-ming/",
-          "title": "Ming Hu Profile",
-          "notes": "Rotman biography gives Columbia OR PhD 2009 but does not provide early employment history."
+          "title": "Rotman - Ming Hu",
+          "notes": "Columbia OR PhD 2009; no early chronology."
         }
       ],
-      "reason": "Rotman biography gives Columbia OR PhD 2009 but does not provide early employment history.",
       "source": "omlist"
     },
     {
@@ -20486,16 +20657,28 @@
     {
       "facultyId": "omlist-559abe23b40fbec8",
       "name": "Justin Jia",
-      "status": "unresolved",
-      "checkedAt": "2026-10-16",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "employer": "Purdue University",
+      "position": "Assistant Professor, Krannert School of Management",
+      "placementYear": 2011,
+      "category": "tenure-track",
+      "evidenceUrl": "https://pub.orcid.org/v3.0/0000-0001-9440-3852/activities",
+      "evidenceNote": "ORCID record (also named Zheng Jia; affiliations Penn State, Purdue, Tennessee) gives education: Pennsylvania State University, Smeal College of Business, Ph.D., 2006-2012, and employment: Purdue University, Krannert School of Management, Assistant Professor, 2011-2019; then University of Tennessee Haslam College, Assistant Professor 2019-2023 and Associate Professor from 2023-08. ORCID gives the Penn State doctorate only as a study period (2006-2012, no month), which is not a conferral year. No dated conferral record was opened (the Penn State ETD catalogue blocks automated requests), so phdYearVerified is left empty and the OM List year 2012 stays source-reported (integrator check, 2026-10-17). The Purdue assistant professorship began in 2011, one year before the recorded 2012 degree and within the study period, and was not retitled. It is the first job and keeps its own start year, with the overlap noted (Brynjolfsson precedent; no month is given for either date). Plain assistant professor title at a US business school, recorded as tenure-track by convention.",
+      "phdInstitutionVerified": "Pennsylvania State University",
+      "reason": "Second pass: his ORCID record gives the Penn State doctoral study period (2006-2012) and the Purdue Krannert assistant professorship (2011-2019), matching the Haslam biography (Penn State PhD, faculty member at Purdue before Haslam). The Penn State ETD catalogue answered 403 and the reader proxy found no record, so the conferral month is unknown.",
       "sources": [
         {
+          "url": "https://pub.orcid.org/v3.0/0000-0001-9440-3852/activities",
+          "title": "ORCID - Justin Jia",
+          "notes": "Education Penn State Smeal Ph.D. 2006-2012; employments Purdue Krannert AP 2011-2019, Tennessee Haslam AP 2019-2023-07, Associate Professor 2023-08."
+        },
+        {
           "url": "https://haslam.utk.edu/people/profile/justin-jia/",
-          "title": "Justin Jia Profile",
-          "notes": "Tennessee biography identifies Penn State doctorate and prior Purdue faculty appointment without dates or complete early chronology."
+          "title": "Haslam College - Justin Jia",
+          "notes": "Penn State Ph.D. in Supply Chain Management; faculty member at Purdue before Haslam; undated."
         }
       ],
-      "reason": "Tennessee biography identifies Penn State doctorate and prior Purdue faculty appointment without dates or complete early chronology.",
       "source": "omlist"
     },
     {
@@ -20521,21 +20704,34 @@
     {
       "facultyId": "omlist-07aab4285c5a4c1e",
       "name": "Hansheng Jiang",
-      "status": "unresolved",
-      "checkedAt": "2026-10-16",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "employer": "University of Toronto (Rotman School of Management)",
+      "position": "Assistant Professor",
+      "placementYear": 2023,
+      "category": "tenure-track",
+      "evidenceUrl": "https://pub.orcid.org/v3.0/0000-0001-7733-850X/activities",
+      "evidenceNote": "ORCID record (affiliations Berkeley and Toronto) lists employment: University of California, Berkeley, Graduate Researcher, ending 2023-05, then University of Toronto, Rotman School of Management, Professor (Assistant) from 2023-07. The Rotman profile and the Toronto research profile give the Berkeley IEOR PhD as 2023, and the research profile dates the assistant professorship from 2023. No post between May and July 2023 is listed. Plain assistant professor title at a North American business school, recorded as tenure-track by convention.",
+      "phdYearVerified": 2023,
+      "phdInstitutionVerified": "University of California, Berkeley",
+      "reason": "Second pass: ORCID dates the end of the Berkeley graduate research post (May 2023) and the Rotman assistant professorship (July 2023); the Rotman profile states the 2023 Berkeley PhD.",
       "sources": [
         {
-          "url": "https://discover.research.utoronto.ca/53438",
-          "title": "Hansheng Jiang public academic profile",
-          "notes": "Personal biography links Berkeley doctoral study to Toronto but omits degree completion and appointment dates needed to establish the first post-doctoral role."
+          "url": "https://pub.orcid.org/v3.0/0000-0001-7733-850X/activities",
+          "title": "ORCID - Hansheng Jiang",
+          "notes": "Employment: Berkeley Graduate Researcher to 2023-05; Rotman Assistant Professor from 2023-07."
         },
         {
-          "url": "https://hanshengjiang.github.io/",
-          "title": "Hansheng Jiang public academic profile",
-          "notes": "Personal biography links Berkeley doctoral study to Toronto but omits degree completion and appointment dates needed to establish the first post-doctoral role."
+          "url": "https://www.rotman.utoronto.ca/the-rotman-experience/our-community/people/jiang-hansheng/",
+          "title": "Rotman - Hansheng Jiang",
+          "notes": "PhD IEOR, UC Berkeley, 2023; B.S. USTC 2017."
+        },
+        {
+          "url": "https://discover.research.utoronto.ca/53438",
+          "title": "University of Toronto Discover Research - Hansheng Jiang",
+          "notes": "Read through its public data endpoint; PhD 2023; Assistant Professor, Rotman, from 2023."
         }
       ],
-      "reason": "Personal biography links Berkeley doctoral study to Toronto but omits degree completion and appointment dates needed to establish the first post-doctoral role.",
       "source": "omlist"
     },
     {
@@ -23332,15 +23528,30 @@
       "facultyId": "omlist-af484560192b8ea9",
       "name": "Jeremy Kovach",
       "status": "unresolved",
-      "checkedAt": "2026-10-16",
+      "checkedAt": "2026-10-17",
+      "reason": "Second pass: Georgia Tech's repository dates his PhD dissertation ('Operational challenges of strategy execution', Scheller College of Business, advisors Atalay Atasu and Stylianos Kavadias) August 2014. His ORCID record (0000-0001-5416-2871) lists the Georgia Tech PhD without dates and only one employment, Texas Christian University (Supply Chain) from 2026-08, so it says nothing about 2014-2026. The UNT profile still shows him as Assistant Professor with contact details only; the UNT Faculty Information System name search returns no profile for him; Scheller's recent-placement table starts in 2015 and does not list him; the INSEAD page of his advisor Atasu answered 403 (and empty through the reader proxy); one web search found nothing. The first post-PhD job and its start year remain unknown. Earlier review (2026-10-16): the UNT profile gave only his current title and contact details, with no degree or employment chronology.",
       "sources": [
         {
+          "url": "https://repository.gatech.edu/server/api/discover/search/objects?query=Kovach%20Jeremy&dsoType=ITEM",
+          "title": "Georgia Tech repository search - Kovach, Jeremy J.",
+          "notes": "Handle 1853/52273: dissertation 'Operational challenges of strategy execution', issued 2014-06-11, degree date August 2014, advisors Atasu and Kavadias."
+        },
+        {
+          "url": "https://pub.orcid.org/v3.0/0000-0001-5416-2871/activities",
+          "title": "ORCID - Jeremy Kovach",
+          "notes": "Education: Georgia Tech PhD Operations Management, undated; employment: Texas Christian University from 2026-08 only."
+        },
+        {
           "url": "https://cob.unt.edu/people/jeremy-kovach.html",
-          "title": "Jeremy Kovach Profile",
-          "notes": "UNT profile returns current title/contact only; no degree or first employment chronology."
+          "title": "UNT Ryan College of Business - Jeremy Kovach",
+          "notes": "Assistant Professor, Supply Chain Management; contact details only, no CV."
+        },
+        {
+          "url": "https://www.scheller.gatech.edu/degree-programs/phd/index.html",
+          "title": "Scheller College PhD - recent placements",
+          "notes": "Placement table covers 2015 onward; Kovach not listed."
         }
       ],
-      "reason": "UNT profile returns current title/contact only; no degree or first employment chronology.",
       "source": "omlist"
     },
     {
@@ -26401,19 +26612,32 @@
     {
       "facultyId": "omlist-68f4739726ef963c",
       "name": "Jie (Jet) Lian",
-      "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "University and personal biographies describe current role, degree and prior industry experience without dates.",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "employer": "University of Oklahoma",
+      "position": "Assistant Professor, Price College of Business",
+      "placementYear": 2024,
+      "category": "tenure-track",
+      "evidenceUrl": "https://pub.orcid.org/v3.0/0000-0002-3246-6177/activities",
+      "evidenceNote": "ORCID record (University of Oklahoma affiliation; its one work is the 2024 Journal of Operations Management paper listed on the OU profile) gives employment as Assistant Professor, Price College of Business, University of Oklahoma from 2024-08 and no other employment. The South Carolina dissertation ('Environmental Implication of Environmental Disclosure', Darla Moore School, major professors Yan Dong and Keith Skowronski) is dated 8-19-2024, so the OU post began in the month the degree was completed; earlier industry work (supply chain and sales operations) preceded the doctorate.",
+      "phdYearVerified": 2024,
+      "phdInstitutionVerified": "University of South Carolina",
+      "reason": "Second pass: the Scholar Commons dissertation record (found through its OAI endpoint, PDF front matter read through the reader proxy because the site answers 403) dates the PhD August 2024, and ORCID dates the Oklahoma assistant professorship from August 2024, leaving no room for an intervening job.",
       "sources": [
         {
-          "url": "https://www.ou.edu/content/price/bios/jie-lian",
-          "title": "Jie (Jet) Lian public academic profile",
-          "notes": "University and personal biographies describe current role, degree and prior industry experience without dates."
+          "url": "https://pub.orcid.org/v3.0/0000-0002-3246-6177/activities",
+          "title": "ORCID - Jie Lian (University of Oklahoma)",
+          "notes": "Employment: University of Oklahoma, Price College of Business, Assistant Professor, 2024-08 to present; no other entries."
         },
         {
-          "url": "https://www.jlian.net/",
-          "title": "Jie (Jet) Lian public academic profile",
-          "notes": "University and personal biographies describe current role, degree and prior industry experience without dates."
+          "url": "https://scholarcommons.sc.edu/context/etd/article/8761/viewcontent/1049606.pdf",
+          "title": "Scholar Commons - Environmental Implication of Environmental Disclosure (Jie Lian, 2024)",
+          "notes": "Read through r.jina.ai; dated 8-19-2024; PhD Business Administration, Darla Moore School; B.Eng Northeastern University (China), MBA Michigan State 2019; recommended citation scholarcommons.sc.edu/etd/7853."
+        },
+        {
+          "url": "https://www.ou.edu/content/price/bios/jie-lian",
+          "title": "OU Price College - Jie 'Jet' Lian",
+          "notes": "Assistant Professor; Ph.D. Management Science, South Carolina; MBA Michigan State; prior industry experience; undated."
         }
       ],
       "source": "omlist"
@@ -28866,21 +29090,34 @@
     {
       "facultyId": "omlist-161e82c2a76050b9",
       "name": "Azarakhsh Malekian",
-      "status": "unresolved",
-      "checkedAt": "2026-10-16",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "employer": "Northwestern University",
+      "position": "Postdoctoral Fellow",
+      "placementYear": 2010,
+      "category": "postdoc",
+      "evidenceUrl": "https://discover.research.utoronto.ca/22380",
+      "evidenceNote": "University of Toronto Discover Research profile (public data endpoint) lists dated academic appointments: Teaching Assistant, University of Maryland, College Park, 2005-2009; Postdoctoral Fellow, Northwestern University, 2010-2011; Postdoctoral Fellow, MIT Laboratory for Information and Decision Systems, 2011-2013; Assistant Professor, Rotman, 2013-2019; Associate Professor 2019; Professor from 2024-07. The Maryland DRUM repository dates her computer science dissertation ('Combinatorial Problems in Online Advertising', advisor Samir Khuller) 2009. The Northwestern postdoc is the first post listed after the degree (nothing is listed for the interval between 2009 and 2010). Verifier: the same Discover Research record also lists non-academic appointments, among them Microsoft Research, Research Intern, 2009 (start and end 2009) and Yahoo! Applied Research Intern posts in 2007 and 2008, which the note had not mentioned; DRUM accessioned the dissertation on 19 February 2010, consistent with a late-2009 degree, so the 2009 internship is read as a doctoral-student internship rather than a post-degree job, and the Northwestern postdoc from 2010 stays the first post.",
+      "phdYearVerified": 2009,
+      "phdInstitutionVerified": "University of Maryland, College Park",
+      "reason": "Second pass: the University of Toronto research profile gives a dated appointment history, and DRUM dates the Maryland PhD 2009; the first post after it is a Northwestern postdoctoral fellowship from 2010, followed by an MIT LIDS postdoc and Rotman in 2013.",
       "sources": [
         {
           "url": "https://discover.research.utoronto.ca/22380",
-          "title": "Azarakhsh Malekian Profile",
-          "notes": "Personal academic site establishes current Toronto role but lacks dated degree and early employment chronology; institutional profile requires JavaScript."
+          "title": "University of Toronto Discover Research - Azarakhsh Malekian",
+          "notes": "Read through discover.research.utoronto.ca/api/users/22380; dated academic appointments 2005-present."
+        },
+        {
+          "url": "https://api.drum.lib.umd.edu/server/api/discover/search/objects?query=Malekian&dsoType=ITEM",
+          "title": "UMD DRUM search - Malekian",
+          "notes": "Handle 1903/9969: dissertation 'Combinatorial Problems in Online Advertising', Malekian, Azarakhsh, 2009, advisor Samir Khuller."
         },
         {
           "url": "https://azarakhshm.github.io/",
-          "title": "Azarakhsh Malekian Website",
-          "notes": "Personal academic site establishes current Toronto role but lacks dated degree and early employment chronology; institutional profile requires JavaScript."
+          "title": "Azarakhsh Malekian - personal site",
+          "notes": "Earlier review: current Toronto role only."
         }
       ],
-      "reason": "Personal academic site establishes current Toronto role but lacks dated degree and early employment chronology; institutional profile requires JavaScript.",
       "source": "omlist"
     },
     {
@@ -29195,16 +29432,29 @@
     {
       "facultyId": "omlist-ae3ed529a533971a",
       "name": "Ila Manuj",
-      "status": "unresolved",
-      "checkedAt": "2026-10-16",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "employer": "University of North Texas",
+      "position": "Assistant Professor",
+      "placementYear": 2007,
+      "category": "tenure-track",
+      "evidenceUrl": "https://facultyinfo.unt.edu/faculty-profile-cv?profile=im0051",
+      "evidenceNote": "UNT Faculty Information System CV: PhD University of Tennessee 2007 (Business Administration - Logistics); Assistant Professor, University of North Texas, 2007-Present; earlier posts were all pre-doctoral (CARE Management Trainee 2000-2001, Program Associate 2001-2002, Supply Management unit 2002). No other post is listed between the degree and UNT. Plain Assistant Professor title at a US business school, recorded as tenure-track by convention.",
+      "phdYearVerified": 2007,
+      "phdInstitutionVerified": "University of Tennessee at Knoxville",
+      "reason": "Second pass: the UNT Faculty Information System public CV dates the Tennessee PhD (2007) and lists the UNT assistant professorship from 2007 as the first post after it; the CARE roles were before the doctorate. The CV writes the institution as 'University of Tennessee' (Knoxville campus, the record's name).",
       "sources": [
         {
+          "url": "https://facultyinfo.unt.edu/faculty-profile-cv?profile=im0051",
+          "title": "UNT Faculty Information System - Ila Manuj CV",
+          "notes": "Plain request; education and dated professional positions."
+        },
+        {
           "url": "https://cob.unt.edu/people/ila-manuj.html",
-          "title": "Ila Manuj Profile",
-          "notes": "UNT biography identifies Tennessee doctorate and prior CARE employment without dates establishing first post-PhD role."
+          "title": "UNT Ryan College of Business - Ila Manuj",
+          "notes": "Undated biography (earlier review): Tennessee doctorate and CARE employment."
         }
       ],
-      "reason": "UNT biography identifies Tennessee doctorate and prior CARE employment without dates establishing first post-PhD role.",
       "source": "omlist"
     },
     {
@@ -32519,23 +32769,23 @@
       "facultyId": "omlist-627d381313d6926d",
       "name": "Steve New",
       "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "Hertford College's staff page states he studied physics at Southampton with a Rolls-Royce graduate apprenticeship, worked in management consulting and the automotive industry, took a PhD at Manchester Business School (year not stated), \"taught at UMIST for five years\" and joined Oxford and its newly established business school in 1996; the Said Business School profile returned HTTP 403 for every fetch method. The UMIST post is undated and, counting back from 1996, appears to have begun around 1991, i.e. before or during the 1992 doctorate, so the first new post-PhD job (the UMIST lectureship or the 1996 Oxford appointment) cannot be identified without a dated CV.",
+      "checkedAt": "2026-10-17",
+      "reason": "Second pass: his ORCID record (0000-0002-0350-7902) lists one employment, Associate Professor, Said Business School, University of Oxford, from 1996-07, and no education or UMIST entry. The Said Business School profile still answers a Cloudflare check to plain requests, the reader proxy and a headless browser, and Jisc Library Hub Discover (for the Manchester thesis) answered 403. The UMIST teaching post (five years before Oxford by the Hertford page, so from about 1991) remains undated and may have begun before the 1992 doctorate, so the first new post-PhD job (UMIST or the 1996 Oxford appointment) cannot be identified. Earlier review (2026-10-16): Hertford College's page gave the sequence industry, Manchester Business School PhD, five years teaching at UMIST and Oxford from 1996 without dates, and the SBS profile returned 403.",
       "sources": [
         {
-          "url": "https://omlist.edutool.org/schools/university-of-oxford/faculty/steve-new.html",
-          "title": "OM List faculty directory profile",
-          "notes": "Directory profile lists the Manchester 1992 PhD and 1996 tenure; links to the SBS profile, Google Scholar, LinkedIn and ORCID."
+          "url": "https://pub.orcid.org/v3.0/0000-0002-0350-7902/activities",
+          "title": "ORCID - Steve New",
+          "notes": "Employment: University of Oxford, Said Business School, Associate Professor, 1996-07 to present; nothing earlier."
         },
         {
           "url": "https://www.hertford.ox.ac.uk/staff/steve-new",
-          "title": "Steve New - Hertford College, Oxford staff page",
-          "notes": "Biography with the sequence industry, Manchester Business School PhD, five years teaching at UMIST, Oxford from 1996; no dates for the earlier posts."
+          "title": "Hertford College - Steve New",
+          "notes": "Earlier review: undated sequence industry, Manchester PhD, five years at UMIST, Oxford from 1996."
         },
         {
           "url": "https://www.sbs.ox.ac.uk/about-us/people/steve-new",
-          "title": "Steve New - Said Business School profile",
-          "notes": "HTTP 403 with both fetch methods."
+          "title": "Said Business School - Steve New",
+          "notes": "Cloudflare check to plain request, reader proxy and headless browser; not read."
         }
       ],
       "source": "omlist"
@@ -32723,16 +32973,29 @@
     {
       "facultyId": "omlist-7845169e0ce32e84",
       "name": "Suman Niranjan",
-      "status": "unresolved",
-      "checkedAt": "2026-10-16",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "employer": "State University of New York at Binghamton",
+      "position": "Visiting Assistant Professor for Supply Chain Management",
+      "placementYear": 2008,
+      "category": "other-academic",
+      "evidenceUrl": "https://facultyinfo.unt.edu/faculty-profile-cv?profile=sn0301",
+      "evidenceNote": "UNT Faculty Information System CV: PhD Wright State University 2008 (Engineering, Industrial and Human Systems Engineering); Graduate Research Assistant, Wright State 2004-2008; Visiting Assistant Professor for Supply Chain Management, SUNY Binghamton 2008-2010; then Assistant Professor, Savannah State University 2010-2015, Associate Professor there 2015-2019, and UNT from 2019. The Binghamton visiting post is the first post after the 2008 degree.",
+      "phdYearVerified": 2008,
+      "phdInstitutionVerified": "Wright State University",
+      "reason": "Second pass: the UNT Faculty Information System public CV gives a dated chronology; the first post after the Wright State PhD (2008) is a visiting assistant professorship at SUNY Binghamton, 2008-2010.",
       "sources": [
         {
+          "url": "https://facultyinfo.unt.edu/faculty-profile-cv?profile=sn0301",
+          "title": "UNT Faculty Information System - Dr. Suman Niranjan CV",
+          "notes": "Plain request; education and dated positions."
+        },
+        {
           "url": "https://cob.unt.edu/people/suman-niranjan.html",
-          "title": "Suman Niranjan Profile",
-          "notes": "UNT profile contains current title/contact details without doctoral or initial career chronology."
+          "title": "UNT Ryan College of Business - Suman Niranjan",
+          "notes": "Current title and contact only (earlier review)."
         }
       ],
-      "reason": "UNT profile contains current title/contact details without doctoral or initial career chronology.",
       "source": "omlist"
     },
     {
@@ -32935,13 +33198,23 @@
       "facultyId": "omlist-57e140601ce525ee",
       "name": "Yu Nu",
       "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "South Carolina biography confirms Cornell doctorate but lacks degree and appointment dates.",
+      "checkedAt": "2026-10-17",
+      "reason": "Second pass: Cornell eCommons records her dissertation 'AI Solutions for Food Waste Reduction' (Ph.D., Management, chair Karan Girotra) issued 2025-08, so the doctorate is August 2025. The Moore School directory biography says she 'joins the Darla Moore School of Business as an assistant professor of Management Science' but carries no date; her ORCID record (0009-0000-1305-7725) lists only an undated Cornell education entry; the Moore School 2025 and 2026 news archives have no item on her hiring; and one web search found only the directory entry. When the South Carolina appointment began, and whether any post came between August 2025 and it, are undocumented. Earlier review (2026-10-16): the South Carolina biography confirmed the Cornell doctorate without degree or appointment dates.",
       "sources": [
         {
+          "url": "https://ecommons.cornell.edu/server/api/discover/search/objects?query=dc.contributor.author:%22Nu,%20Yu%22&dsoType=ITEM",
+          "title": "Cornell eCommons search - Nu, Yu",
+          "notes": "Handle 1813/120752: 'AI Solutions for Food Waste Reduction', issued 2025-08, Ph.D. Management, chair Karan Girotra."
+        },
+        {
           "url": "https://www.sc.edu/study/colleges_schools/moore/directory/nu_yu.php",
-          "title": "Yu Nu public academic profile",
-          "notes": "South Carolina biography confirms Cornell doctorate but lacks degree and appointment dates."
+          "title": "Moore School directory - Yu Nu",
+          "notes": "'joins ... as an assistant professor of Management Science'; Cornell Ph.D.; undated."
+        },
+        {
+          "url": "https://pub.orcid.org/v3.0/0009-0000-1305-7725/activities",
+          "title": "ORCID - Yu Nu",
+          "notes": "Education: Cornell, undated; no employment."
         }
       ],
       "source": "omlist"
@@ -33180,15 +33453,25 @@
       "facultyId": "omlist-0bd153823b9ba6fb",
       "name": "Divesh Ojha",
       "status": "unresolved",
-      "checkedAt": "2026-10-16",
+      "checkedAt": "2026-10-17",
+      "reason": "Second pass: the UNT Faculty Information System public CV lists PhD, Clemson University, 2008 (dissertation 'Impact of Strategic Agility on competitive capabilities and financial performance'; the status line 'Dissertation successfully defended on' is cut off with no date), Teaching Assistant at Clemson 2004-2008, Instructor at UNT 2008-2009, Assistant Professor at UNT 2009-2015 and Associate Professor from 2015 (Electrolux India 1996-2001 was before the doctorate). The instructor post at the same school, converted to an assistant professorship the next year, may be the pre-degree (ABD) title that the conversion rule treats as a pre-degree role (first job then the 2009 assistant professorship), or a post that began after a 2008 degree (first job then the 2008 instructorship). Neither the defence nor the conferral month is documented: the dissertation is not in Clemson's TigerPrints (all 4,363 dissertation records read through its OAI endpoint), the TigerPrints search page answers 403, OpenAlex is rate-limited, and one web search found only a bibliography citation of the 2008 thesis. Earlier review (2026-10-16): the UNT faculty page gave only his current title and contact details, without degree or employment chronology.",
       "sources": [
         {
+          "url": "https://facultyinfo.unt.edu/faculty-profile-cv?profile=do0045",
+          "title": "UNT Faculty Information System - Divesh Ojha CV",
+          "notes": "Plain request; PhD Clemson 2008 with truncated defence line; Instructor UNT 2008-2009; Assistant Professor UNT 2009-2015."
+        },
+        {
+          "url": "https://tigerprints.clemson.edu/do/oai/?verb=ListRecords&metadataPrefix=oai_dc&set=publication:all_dissertations",
+          "title": "TigerPrints OAI - all dissertations",
+          "notes": "All pages read; no record by Ojha."
+        },
+        {
           "url": "https://cob.unt.edu/people/ojha-divesh.html",
-          "title": "Divesh Ojha Profile",
-          "notes": "UNT faculty page provides current title and contact details only, without degree and employment chronology."
+          "title": "UNT Ryan College of Business - Divesh Ojha",
+          "notes": "Current title and contact only (earlier review)."
         }
       ],
-      "reason": "UNT faculty page provides current title and contact details only, without degree and employment chronology.",
       "source": "omlist"
     },
     {
@@ -34842,15 +35125,25 @@
       "facultyId": "omlist-71e54705d8264e12",
       "name": "Pradeep K. Pendem",
       "status": "unresolved",
-      "checkedAt": "2026-10-16",
+      "checkedAt": "2026-10-17",
+      "reason": "Second pass: the Oregon profile gives PhD Operations Management, UNC Chapel Hill, 2018 (MS Management UNC 2017), says he worked as a forecasting analyst at Fidelity Investments before his academic career, and lists a 2021 Oregon junior-faculty research award, but dates no appointment. His ORCID record (0000-0001-7900-9427) lists only an undated Oregon assistant professorship. UNC Kenan-Flagler's placements page lists destination schools without names or years; the Carolina Digital Repository answered 403 (also through the reader proxy); guessed personal sites were empty or unreachable and the Oregon profile site search returned nothing; one web search found no CV. The Oregon start year and whether any post preceded it remain undocumented. Earlier review (2026-10-16): the Oregon biography verified the 2018 UNC doctorate and pre-academic Fidelity work but not the date or order of the first post-PhD job.",
       "sources": [
         {
           "url": "https://business.uoregon.edu/directory/operations-business-analytics/all/pradeepp",
-          "title": "Pradeep K. Pendem Profile",
-          "notes": "Oregon biography verifies UNC doctorate2018 and preacademic Fidelity work but omits the date and ordering of initial post-PhD employment."
+          "title": "Oregon Lundquist directory - Pradeep K. Pendem",
+          "notes": "Degree history (PhD UNC 2018), Fidelity before academia, awards from 2017; no appointment dates."
+        },
+        {
+          "url": "https://pub.orcid.org/v3.0/0000-0001-7900-9427/activities",
+          "title": "ORCID - Pradeep Pendem",
+          "notes": "Employment: University of Oregon, Assistant Professor, undated."
+        },
+        {
+          "url": "https://www.kenan-flagler.unc.edu/programs/phd/job-market-candidates-placements/",
+          "title": "UNC Kenan-Flagler - Job Market Candidates & Placements",
+          "notes": "Operations placements listed by school only (includes University of Oregon); no names or years."
         }
       ],
-      "reason": "Oregon biography verifies UNC doctorate2018 and preacademic Fidelity work but omits the date and ordering of initial post-PhD employment.",
       "source": "omlist"
     },
     {
@@ -35199,13 +35492,23 @@
       "facultyId": "omlist-e07954eca627d6a5",
       "name": "Ken Petersen",
       "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "The Oklahoma biography lists several prior universities and Navy service without dates or doctoral completion chronology.",
+      "checkedAt": "2026-10-17",
+      "reason": "Second pass: the Oklahoma biography says that before Oklahoma he was Dean of the College of Business and Economics at Boise State, John H. Dove Endowed Chair at Tennessee and a faculty member at Arizona State, Oregon and Colorado State, holds a Michigan State Ph.D., and served as a submarine-qualified Supply Corps officer in the U.S. Navy, all without dates. Robert Handfield's CV (NC State) lists 'Kenneth Peterson (Information Systems and Supply Chain Management), 1998' among his Michigan State doctoral committees, which places the degree about 1998 (spelling differs; not a degree record). His ORCID record (0000-0002-8366-4069) lists only the Oklahoma senior associate dean post from 2024-07. No dated CV or announcement ordering Colorado State, Oregon and Arizona State was found (Boise State news search found nothing relevant), so the first post-PhD job and its start year remain unknown. Earlier review (2026-10-16): the Oklahoma biography listed several prior universities and Navy service without dates or doctoral chronology.",
       "sources": [
         {
           "url": "https://www.ou.edu/price/bios/ken-petersen.html",
-          "title": "Ken Petersen academic profile",
-          "notes": "The Oklahoma biography lists several prior universities and Navy service without dates or doctoral completion chronology."
+          "title": "OU Price College - Ken Petersen",
+          "notes": "Undated career list; Michigan State Ph.D.; U.S. Navy Supply Corps."
+        },
+        {
+          "url": "https://poole.ncsu.edu/wp-content/uploads/sites/421/2016/11/VITARBH2025.doc",
+          "title": "Robert B. Handfield CV (2025)",
+          "notes": "Michigan State doctoral dissertation committees: 'Kenneth Peterson (ISSCM), 1998'."
+        },
+        {
+          "url": "https://pub.orcid.org/v3.0/0000-0002-8366-4069/activities",
+          "title": "ORCID - Kenneth Petersen (University of Oklahoma)",
+          "notes": "Only employment: OU senior associate dean from 2024-07."
         }
       ],
       "source": "omlist"
@@ -35589,19 +35892,32 @@
     {
       "facultyId": "omlist-62538d612f4dc34f",
       "name": "Terrance (Terry) Pohlen",
-      "status": "unresolved",
+      "status": "verified",
       "checkedAt": "2026-10-17",
-      "reason": "The UNT profile says he holds an MS in Logistics from the Air Force Institute of Technology and an MA and PhD in Business Administration from Ohio State, and retired from the USAF with 20 years' experience in logistics, but it gives no dates and does not say what he did after the doctorate (for example a new Air Force assignment or faculty post) or when he joined UNT. ORCID has no employment or education entries. No dated CV was found, so the first new post-PhD job is not established; the continuing USAF service would need a dated new assignment to count.",
+      "employer": "Air Force Institute of Technology",
+      "position": "Assistant Professor of Logistics Management",
+      "placementYear": 1993,
+      "category": "other-academic",
+      "evidenceUrl": "https://facultyinfo.unt.edu/faculty-profile-cv?profile=tlp0039",
+      "evidenceNote": "UNT Faculty Information System CV: PhD Ohio State University 1993 (Business Administration - Logistics; dissertation 'The Effect of Activity-Based Costing on Logistics Management'); Graduate student, Ohio State 1990-1993; Assistant Professor of Logistics Management, Air Force Institute of Technology 1993-1996; then Chief, Business Analysis Office and Deputy Comptroller, Defense Supply Center 1996-1999, Research Associate Ohio State 1996-1999, University of North Florida 1999-2003 and UNT from 2003. Earlier USAF assignments (1980-1990) preceded the doctorate. He was a serving USAF officer (the profile says he retired after 20 years); the AFIT faculty assignment after the degree is a new post at a new institution, recorded as other-academic like a military assistant professorship.",
+      "phdYearVerified": 1993,
+      "phdInstitutionVerified": "The Ohio State University",
+      "reason": "Second pass: the UNT Faculty Information System public CV gives a dated chronology; the first new post after the 1993 Ohio State PhD is the 1993-1996 AFIT assistant professorship, a military faculty assignment.",
       "sources": [
         {
+          "url": "https://facultyinfo.unt.edu/faculty-profile-cv?profile=tlp0039",
+          "title": "UNT Faculty Information System - Dr. Terrance L. Pohlen CV",
+          "notes": "Plain request; education and dated academic, professional and USAF positions."
+        },
+        {
           "url": "https://cob.unt.edu/people/terry-pohlen.html",
-          "title": "UNT Ryan College of Business — Terry Pohlen",
-          "notes": "Undated bio; degrees and USAF retirement after 20 years."
+          "title": "UNT Ryan College of Business - Terry Pohlen",
+          "notes": "Undated bio (earlier review): degrees and USAF retirement after 20 years."
         },
         {
           "url": "https://orcid.org/0000-0001-7850-2527",
-          "title": "ORCID — Terrance Pohlen",
-          "notes": "Public API read: no education or employment entries."
+          "title": "ORCID - Terrance Pohlen",
+          "notes": "Earlier review: no education or employment entries."
         }
       ],
       "source": "omlist"
@@ -40370,21 +40686,17 @@
       "name": "Jennifer Shang",
       "status": "unresolved",
       "checkedAt": "2026-10-17",
-      "reason": "The Pitt Katz profile lists the degree as PhD, Operations Management, University of Texas at Austin, and ORCID dates that Ph.D. 1983-08 to 1988-05, contradicting the imported University of Pennsylvania 2005. Neither source dates her appointments (ORCID lists only an undated Pitt area-director role; the profile's earliest dated item is a 2002-2004 teaching award), so the first post-PhD job is not established.",
-      "phdYearVerified": 1988,
-      "phdInstitutionVerified": "The University of Texas at Austin",
-      "phdYearResolution": "ORCID dates the UT Austin Ph.D. 1983-08 to 1988-05; the imported 2005 is not supported by any opened source.",
-      "phdInstitutionResolution": "The Pitt Katz profile (Degrees: PhD, Operations Management, University of Texas at Austin) and ORCID give UT Austin, not the imported University of Pennsylvania.",
+      "reason": "Second pass: the Katz profile still gives PhD, Operations Management, University of Texas at Austin, with no year, teaching awards from 2002 and no appointment history or CV link; Scholars@Pitt has no profile for her under that name. The degree conflict with the imported University of Pennsylvania 2005 (ORCID and the profile say UT Austin; ORCID dates the doctorate 1983-08 to 1988-05) stands, but no source dates her first post after 1988 or her Pitt start, so the first post-PhD job is not established. Earlier review (2026-10-17): the Katz profile and ORCID gave the UT Austin Ph.D. (1983-1988 on ORCID) and an undated Pitt role only.",
       "sources": [
         {
           "url": "https://www.business.pitt.edu/professors/jennifer-shang/",
-          "title": "Pitt Business — Jennifer Shang",
-          "notes": "Degrees: PhD Operations Management, UT Austin; MBA Iowa; no dated appointments."
+          "title": "Pitt Business - Jennifer Shang",
+          "notes": "PhD Operations Management, UT Austin; no dated appointments."
         },
         {
           "url": "https://orcid.org/0000-0001-7400-9954",
-          "title": "ORCID — Jennifer Shang",
-          "notes": "Education: UT Austin Ph.D. Management 1983-08 to 1988-05; employment: Pitt area director, undated."
+          "title": "ORCID - Jennifer Shang",
+          "notes": "Earlier review: education UT Austin Ph.D. 1983-08 to 1988-05; employment Pitt, undated."
         }
       ],
       "source": "omlist"
@@ -40861,14 +41173,32 @@
     {
       "facultyId": "omlist-9567f417c49f33f9",
       "name": "Ye Shi",
-      "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "The USTC biography dates doctorate and joining USTC to 2016 but does not supply a complete employment chronology or explicit first-employer statement.",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "employer": "University of Science and Technology of China",
+      "position": "Postdoc, School of Management",
+      "placementYear": 2016,
+      "category": "postdoc",
+      "evidenceUrl": "https://bs.ustc.edu.cn/pub/file/20211126/16378976585363050.pdf",
+      "evidenceNote": "CV linked from his Chinese USTC School of Management profile: Ph.D. in Management Science, USTC, Sep. 2010-Jul. 2016; experience at the USTC School of Management from Sep. 2016, as Postdoc Sep. 2016-Jun. 2019 and Assistant Professor from Jul. 2019 (visits to CUHK 2015-2016 and NUS 2018-2019). The postdoc beginning September 2016 is the first post after the July 2016 degree; the English profile's 'joined USTC in 2016' refers to it.",
+      "phdYearVerified": 2016,
+      "phdInstitutionVerified": "University of Science and Technology of China",
+      "reason": "Second pass: the CV linked from the Chinese profile gives month-level dates; the first post after the July 2016 USTC PhD is a USTC School of Management postdoctoral post from September 2016.",
       "sources": [
         {
+          "url": "https://bs.ustc.edu.cn/pub/file/20211126/16378976585363050.pdf",
+          "title": "Ye SHI - CV (USTC School of Management)",
+          "notes": "Downloaded PDF; read education and experience sections."
+        },
+        {
+          "url": "https://bs.ustc.edu.cn/chinese/profile-379.html",
+          "title": "USTC School of Management - Shi Ye (Chinese)",
+          "notes": "2016 USTC doctorate; links the CV."
+        },
+        {
           "url": "https://bs.ustc.edu.cn/english/profile-379.html",
-          "title": "Ye Shi academic profile",
-          "notes": "The USTC biography dates doctorate and joining USTC to 2016 but does not supply a complete employment chronology or explicit first-employer statement."
+          "title": "USTC School of Management - SHI Ye",
+          "notes": "Associate Professor; joined USTC in 2016; PhD USTC 2016."
         }
       ],
       "source": "omlist"
@@ -48821,13 +49151,13 @@
       "facultyId": "omlist-f2889c2450d1df5e",
       "name": "Richard E. Wendell",
       "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "The Pittsburgh biography dates doctorate to 1971 but lists earlier Ohio State, Carnegie Mellon and RPI affiliations without dates or first-employer ordering.",
+      "checkedAt": "2026-10-17",
+      "reason": "Second pass: the Katz profile gives PhD in Operations Research, Northwestern University (1971), MS and BS in Industrial Engineering from Pitt (1966, 1965), consulting clients and publications, but no appointment history or CV link. Scholars@Pitt has no profile for him, ORCID name matches have no affiliations, and no dated source orders the Ohio State, Carnegie Mellon and RPI affiliations mentioned in the earlier biography against his Pitt appointment. Earlier review (2026-10-16): the Pittsburgh biography dated the doctorate to 1971 but listed Ohio State, Carnegie Mellon and RPI affiliations without dates or order.",
       "sources": [
         {
           "url": "https://www.business.pitt.edu/professors/richard-e-wendell/",
-          "title": "Richard E. Wendell academic profile",
-          "notes": "The Pittsburgh biography dates doctorate to 1971 but lists earlier Ohio State, Carnegie Mellon and RPI affiliations without dates or first-employer ordering."
+          "title": "Pitt Business - Richard E. Wendell",
+          "notes": "Degrees: PhD OR Northwestern 1971; no dated appointments."
         }
       ],
       "source": "omlist"
@@ -77891,22 +78221,32 @@
       "name": "Frederick Nwanganga",
       "status": "unresolved",
       "checkedAt": "2026-10-17",
-      "reason": "The Mendoza profile says he has over 20 years of IT leadership experience in the private sector and higher education, co-founded and ran an IT consulting company for 3 years before his time at Notre Dame, and holds a Notre Dame Ph.D. in Computer Science and Engineering, but gives no dates, no CV and no order relative to the doctorate; whether his Notre Dame employment began before the PhD is unknown. His ORCID record (0000-0002-4514-6527) has no employment or education entries. CurateND (Notre Dame's dissertation repository) answered 403 to the fetch tool and 202 with an empty body to a plain request, and one web search found nothing. The first post-PhD job and the PhD year remain unknown.",
+      "reason": "Second pass: CurateND (now hosted on Figshare, read through the public Figshare API) records his Notre Dame Ph.D. dissertation in Computer Science and Engineering ('Optimizing Workload Resource Allocation in the Cloud: A Data-Driven Approach', research director Nitesh V. Chawla) with defence date 2019-03-22, so the doctorate is 2019. Mendoza event pages from September 2020 and October 2021 say that before joining Mendoza as full-time faculty he was Manager of the Database Services and Platform Services teams in Notre Dame's Office of Information Technologies, where he led the university's cloud migration; none of the pages dates the move to the faculty, so whether the faculty post began before or after the March 2019 defence, and therefore whether it is a new post-PhD job, is unknown (it was held by September 2020). The Mendoza profile has no CV link, the WordPress site search found only event pages, and one web search added nothing dated. Earlier review (2026-10-17): the Mendoza profile gave an undated career (20 years of IT leadership, a consulting company, Notre Dame PhD), ORCID had no entries and CurateND could not be read.",
       "sources": [
+        {
+          "url": "https://curate.nd.edu/articles/thesis/Optimizing_Workload_Resource_Allocation_in_the_Cloud_A_Data-Driven_Approach/24824178",
+          "title": "CurateND - Optimizing Workload Resource Allocation in the Cloud (Frederick C. Nwanganga)",
+          "notes": "Read through api.figshare.com/v2/articles/24824178; Doctoral Dissertation, CSE, defence date 2019-03-22."
+        },
+        {
+          "url": "https://mendoza.nd.edu/event/msba-chicago-faculty-series-fred-nwanganga/",
+          "title": "Mendoza event - MSBA Chicago Faculty Series, Fred Nwanganga (16 September 2020)",
+          "notes": "Bio: before joining Mendoza as full-time faculty he managed OIT database and platform services teams; undated."
+        },
+        {
+          "url": "https://mendoza.nd.edu/event/msba-chicago-masterclass-featuring-fred-nwanganga",
+          "title": "Mendoza event - The Main Course (6 October 2021)",
+          "notes": "Same undated bio."
+        },
         {
           "url": "https://mendoza.nd.edu/mendoza-directory/profile/frederick-nwanganga",
           "title": "Mendoza directory - Frederick Nwanganga",
-          "notes": "Undated bio as summarised; no CV link."
+          "notes": "Undated bio; no CV link."
         },
         {
           "url": "https://orcid.org/0000-0002-4514-6527",
-          "title": "ORCID record 0000-0002-4514-6527 (Frederick Nwanganga), public API",
-          "notes": "No employment or education entries; one work."
-        },
-        {
-          "url": "https://curate.nd.edu/catalog?q=Nwanganga",
-          "title": "CurateND search (attempted)",
-          "notes": "HTTP 403 via the fetch tool; HTTP 202 with empty body via plain request. Not read."
+          "title": "ORCID - Frederick Nwanganga",
+          "notes": "Earlier review: no employment or education entries."
         }
       ],
       "source": "faculty-page"
@@ -78213,22 +78553,27 @@
       "name": "Margaret Traeger",
       "status": "unresolved",
       "checkedAt": "2026-10-17",
-      "reason": "The Mendoza profile says she completed a Ph.D. in Sociology at Yale (Human Nature Lab, Yale Institute for Network Science) and is an Assistant Professor of ITAO, but gives no dates, no CV and no earlier positions, so a postdoc or other post between the Yale degree and Notre Dame cannot be ruled out and the degree year is unknown. Her ORCID record (0000-0001-6782-0140) has no employment or education entries. The Yale Sociology profile that a web search surfaced (listing her as a Ph.D. candidate) now returns 404 to a plain request, Yale EliScholar returned 403, and guessed Yale placement pages returned 404.",
+      "reason": "Second pass: Yale Sociology's graduate placements page lists 'Margaret Traeger, PhD 2021, Assistant Professor of IT, Analytics, and Operations, Notre Dame', which dates the doctorate (2021) and gives a reported destination, but the Human Nature Lab personnel page at Yale lists her under the role 'Postdoc' (with the same Notre Dame biography), so a postdoctoral post between the 2021 degree and Notre Dame is likely and the placement list may skip it. No source dates either the postdoc or the Notre Dame start: ORCID (0000-0001-6782-0140) has works only, Yale EliScholar and its search answer a Cloudflare check to plain requests, the reader proxy and a headless browser, the Mendoza site search finds no news item, and one web search found nothing. The first post-PhD job and its start year remain unknown. Earlier review (2026-10-17): the Mendoza profile gave an undated Yale Sociology PhD and current title only; ORCID had no employment or education entries and Yale pages could not be read.",
       "sources": [
+        {
+          "url": "https://sociology.yale.edu/graduate-program/graduate-placements",
+          "title": "Yale Sociology - Graduate Placements",
+          "notes": "Lists Margaret Traeger, PhD 2021, Assistant Professor of ITAO, Notre Dame; reported destination, no start date."
+        },
+        {
+          "url": "https://humannaturelab.net/personnel/margaret-traeger",
+          "title": "Human Nature Lab (Yale) - Margaret Traeger",
+          "notes": "Role shown as Postdoc; biography as on the Mendoza page; no dates."
+        },
         {
           "url": "https://mendoza.nd.edu/mendoza-directory/profile/margaret-traeger",
           "title": "Mendoza directory - Margaret Traeger",
-          "notes": "Undated bio: Yale Ph.D. (also MA, MPhil) in Sociology, M.P.H. Michigan, B.S. Wisconsin; no CV link."
+          "notes": "Undated bio: Yale PhD (also MA, MPhil) in Sociology; no CV link."
         },
         {
-          "url": "https://orcid.org/0000-0001-6782-0140",
-          "title": "ORCID record 0000-0001-6782-0140 (Margaret Traeger), public API",
-          "notes": "No employment or education entries; six works."
-        },
-        {
-          "url": "https://sociology.yale.edu/people/margaret-traeger",
-          "title": "Yale Sociology - Margaret Traeger (attempted)",
-          "notes": "Surfaced by search as a Ph.D. candidate profile; HTTP 404 to a plain request on the check date. Not read."
+          "url": "https://pub.orcid.org/v3.0/0000-0001-6782-0140/works",
+          "title": "ORCID - Margaret Traeger works",
+          "notes": "Six works 2018-2025; no employment or education entries."
         }
       ],
       "source": "faculty-page"
@@ -78939,22 +79284,27 @@
       "name": "David Robertson",
       "status": "unresolved",
       "checkedAt": "2026-10-17",
-      "reason": "The Wharton profile says that before joining IMD in 2002 he was a Post-Doctoral Research Fellow at the MIT Computer Science and Artificial Intelligence Laboratory, a McKinsey consultant for five years and an executive at four enterprise software companies, and that he holds an MBA and PhD from MIT Sloan; his own site's about page says he was a senior executive (including CEO) at four enterprise software companies and two consumer-products startups and, before that, spent five years at McKinsey. Neither page dates these roles or the PhD, and the two lists do not fix the order of the MIT postdoctoral fellowship relative to the McKinsey and software posts, so the first post-PhD job (possibly the MIT postdoc or McKinsey) cannot be established. An MIT DSpace search for his thesis returned nothing usable. Identity note: his site describes him now as an MIT Sloan senior lecturer and says he was at Wharton 2010-2017, while the Wharton profile says he joined in 2011 and still lists him as a lecturer.",
+      "reason": "Second pass: MIT DSpace holds the thesis 'CAD systems and communication in design engineering--a test of the information processing model' by David C. (David Chandler) Robertson, Ph.D., Sloan School of Management, 1990 (advisor Thomas J. Allen), and a 2006 MIT CISR working paper by Nils Fonstad and David C. Robertson, consistent with the IMD and Wharton innovation lecturer, so the doctorate is likely MIT Sloan 1990. His MIT Sloan senior-lecturer profile carries no biography text in the served page, and his own site's about page gives only IMD 2002-2010 and Wharton 2010-2017 dates. The order and dates of the MIT computer-science postdoctoral fellowship, the five years at McKinsey and the software-company posts that preceded IMD remain undocumented, so the first post-PhD job is not established. Earlier review (2026-10-17): the Wharton profile and his site listed the MIT postdoc, McKinsey and software executive roles before IMD (2002) without dates or order, and no thesis record had been found.",
       "sources": [
         {
-          "url": "https://oid.wharton.upenn.edu/profile/drobe",
-          "title": "Wharton OID - David Robertson profile",
-          "notes": "Undated bio as summarised; IMD LEGO Professor 2002-2010; joined Wharton 2011."
+          "url": "http://hdl.handle.net/1721.1/13593",
+          "title": "MIT DSpace - Robertson, David C., Ph.D. thesis 1990",
+          "notes": "Read through the DSpace search API; Thesis (Ph.D.), Sloan School of Management, 1990, advisor Thomas J. Allen."
+        },
+        {
+          "url": "https://mitsloan.mit.edu/faculty/directory/david-robertson",
+          "title": "MIT Sloan - David Robertson",
+          "notes": "Senior Lecturer, Operations Management; no dated biography in the served page."
         },
         {
           "url": "https://robertsoninnovation.com/about/",
-          "title": "Robertson Innovation - About Dave Robertson",
-          "notes": "Undated: senior executive in four enterprise software companies and two consumer-products startups; before that five years at McKinsey; Wharton 2010-2017; IMD 2002-2010; now MIT Sloan senior lecturer."
+          "title": "Robertson Innovation - About",
+          "notes": "Executive and McKinsey roles undated; Wharton 2010-2017, IMD LEGO Professor 2002-2010."
         },
         {
-          "url": "https://dspace.mit.edu/server/api/discover/search/objects?query=Robertson%20product%20development%20software%20Sloan%20Ph.D.&dsoType=ITEM&size=10",
-          "title": "MIT DSpace search API (attempted)",
-          "notes": "No thesis record for him among the results."
+          "url": "https://oid.wharton.upenn.edu/profile/drobe",
+          "title": "Wharton OID - David Robertson",
+          "notes": "Earlier review: MIT postdoc, McKinsey and software roles before IMD, undated."
         }
       ],
       "source": "faculty-page"
@@ -79152,25 +79502,25 @@
       "facultyId": "roster:university-of-pennsylvania:james-emery",
       "name": "James Emery",
       "status": "unresolved",
-      "reason": "The Wharton OID faculty list names James Emery only as Professor Emeritus, with no profile page, degree or chronology (oid.wharton.upenn.edu/profile/emery and faculty.wharton.upenn.edu/profile/emery both return 404). MIT DSpace holds 1964-1965 Sloan School working papers by a James C. Emery, which is a likely but unconfirmed identity link and states neither a doctorate nor an appointment. ORCID has no matching record and one web search found no obituary or CV. Doctorate, degree year and first post-PhD job are all unestablished.",
+      "checkedAt": "2026-10-17",
+      "reason": "Second pass: a fresh MIT DSpace search for an Emery thesis found no thesis record, only the 1964 Sloan item 'Planning as an iterative hierarchical process and its formalization in computer models' by James C. Emery (no degree statement) besides the working papers seen before; the identity link between that James C. Emery and the Wharton emeritus remains unconfirmed and nothing dates a doctorate or appointment. No profile page, CV or obituary was found. Doctorate, degree year and first post-PhD job remain unestablished. Earlier review (2026-10-17): the Wharton OID faculty list named him only as Professor Emeritus with no profile, and only 1964-1965 MIT working papers by a James C. Emery were found.",
       "sources": [
         {
           "url": "https://oid.wharton.upenn.edu/faculty/faculty-list/",
-          "title": "Wharton OID faculty list",
-          "notes": "Read as a plain HTML download; lists 'James Emery, Professor Emeritus' with no link, degree or dates."
+          "title": "Wharton OID - Faculty list",
+          "notes": "Earlier review: 'James Emery, Professor Emeritus', no link, degree or dates."
         },
         {
-          "url": "https://oid.wharton.upenn.edu/profile/emery/",
-          "title": "Wharton OID profile URL for Emery (attempted)",
-          "notes": "Plain request returned HTTP 404; faculty.wharton.upenn.edu/profile/emery/ also 404."
+          "url": "http://hdl.handle.net/1721.1/48794",
+          "title": "MIT DSpace - Planning as an iterative hierarchical process (Emery, James C., 1964)",
+          "notes": "Read through the DSpace search API; no degree or affiliation statement."
         },
         {
           "url": "http://hdl.handle.net/1721.1/48215",
-          "title": "MIT DSpace: Emery, James C., The impact of information technology on organization (Sloan School working paper 103-64, 1964)",
-          "notes": "Read through the DSpace search API; a 1964 working paper only. No degree, affiliation title or link to the Wharton emeritus is stated."
+          "title": "MIT DSpace - 1964 working paper by James C. Emery",
+          "notes": "Earlier review; no degree or appointment stated."
         }
       ],
-      "checkedAt": "2026-10-17",
       "source": "faculty-page"
     },
     {
@@ -79567,55 +79917,58 @@
       "facultyId": "roster:university-of-pennsylvania:uri-zak",
       "name": "Uri Zak",
       "status": "unresolved",
-      "reason": "The dated CV (June 2026) linked from the Wharton profile lists a Ph.D. in Cognitive Sciences from The Hebrew University, 2017-2023, and two posts beginning in 2023: Postdoctoral Researcher, Faculty of Data and Decision Sciences, Technion (2023), and Lady Davis Fellow at The Hebrew University Business School (2023-2024, also listed as a Lady Davis Fellowship Trust postdoctoral fellowship), followed by Wharton OID Postdoctoral Researcher from 2024. No months are given for the degree or for either 2023 post, so which of the two came first after the degree (and whether the Technion post began before the degree) cannot be established. The first post-PhD job appears to be a 2023 postdoctoral post, but its employer is not determined. Verifier: first-job order failed; two 2023 postdoctoral posts at different institutions (Technion and Hebrew University) cannot be ordered from the CV, so the Technion post is not established as the first job.",
+      "checkedAt": "2026-10-17",
+      "reason": "Second pass: the June 2026 CV linked from the Wharton profile now lists, under Academic Appointments, Postdoctoral Researcher, Faculty of Data and Decision Sciences, Technion, 2023, and Wharton OID Postdoctoral Researcher from 2024, and separately, under Visiting, Lady Davis Fellow at The Hebrew University Business School, 2023-2024 (also listed under fellowships as a Lady Davis Fellowship Trust postdoctoral fellowship, 2023-2024); the Hebrew University Ph.D. in Cognitive Sciences is dated 2017-2023 with no month. His ORCID record (0000-0001-5908-4008) has no education or employment entries. Both 2023 posts still lack months, so which began first after the degree (and whether the Technion post began before it) cannot be established; no Hebrew University thesis record was reached. Earlier review (2026-10-17): the same CV gave the 2017-2023 PhD and two 2023 postdoctoral posts (Technion; Lady Davis fellowship at the Hebrew University) without months, so the first post-PhD employer was not determined.",
       "sources": [
         {
           "url": "https://faculty.wharton.upenn.edu/wp-content/uploads/2025/06/Uri-Zak_CV_2026-06-1.pdf",
-          "title": "Uri Zak CV, June 2026 (linked from Wharton faculty profile)",
-          "notes": "Downloaded PDF; read education and appointment sections only."
+          "title": "Uri Zak CV (June 2026)",
+          "notes": "Downloaded PDF; read appointments, education, visiting and fellowship sections only."
         },
         {
-          "url": "https://faculty.wharton.upenn.edu/profile/zaku/",
-          "title": "Uri Zak, Wharton faculty platform profile",
-          "notes": "Links the CV; overview describes him as a postdoctoral lecturer and researcher in OID."
+          "url": "https://pub.orcid.org/v3.0/0000-0001-5908-4008/activities",
+          "title": "ORCID - Uri Zak",
+          "notes": "No education or employment entries."
         },
         {
           "url": "https://oid.wharton.upenn.edu/profile/zaku",
-          "title": "Uri Zak, Wharton OID profile",
-          "notes": "Overview: postdoctoral lecturer and researcher teaching negotiations."
+          "title": "Wharton OID - Uri Zak",
+          "notes": "Earlier review: postdoctoral lecturer and researcher."
         }
       ],
-      "checkedAt": "2026-10-17",
       "source": "faculty-page"
     },
     {
       "facultyId": "roster:university-of-pennsylvania:vitaly-meursault",
       "name": "Vitaly Meursault",
-      "status": "unresolved",
-      "reason": "Neither Wharton profile (oid.wharton.upenn.edu or faculty.wharton.upenn.edu) carries a biography, education entry or CV link. The NBER people page gives only a current Federal Reserve Bank of Philadelphia affiliation. The vitalymeursault.com domain did not resolve, guessed Philadelphia Fed staff URLs returned 404, and the ORCID record 0000-0001-8673-6294 has no public education or employment entries. One web search found only directory listings. No doctorate year or institution and no dated first job were established.",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "employer": "Federal Reserve Bank of Philadelphia",
+      "position": null,
+      "placementYear": null,
+      "category": "government",
+      "evidenceUrl": "https://www.cmu.edu/tepper/programs/phd/job-market",
+      "evidenceNote": "Tepper School's 'Initial Placements of Ph.D. Graduates' table lists, under Financial Economics, graduation year 2020, 'Vitaly Merso' - Federal Reserve Bank of Philadelphia. His April 2024 Philadelphia Fed CV gives Ph.D. in Financial Economics, Carnegie Mellon Tepper, 2015-2020, and employment as Machine Learning Economist, Federal Reserve Bank of Philadelphia, 2022-present (plus a 2024 CMU adjunct post); it lists nothing for 2020-2022. The official initial-placement list establishes the employer; the start year and first title are not documented (the CV dates only the current title from 2022).",
+      "phdYearVerified": 2020,
+      "phdInstitutionVerified": "Carnegie Mellon University",
+      "reason": "Second pass: the Philadelphia Fed hosts his CV at its standard curricula-vitae path (found by the bank's naming pattern after his personal site linked it), which dates the Tepper PhD 2015-2020, and Tepper's official initial-placement table records the 2020 Financial Economics graduate's initial placement as the Federal Reserve Bank of Philadelphia. The name there is written 'Vitaly Merso'; programme, year and employer all match.",
       "sources": [
         {
-          "url": "https://oid.wharton.upenn.edu/profile/vitalym",
-          "title": "Vitaly Meursault, Wharton OID profile",
-          "notes": "Read as a plain HTML download; teaching listing only."
+          "url": "https://www.cmu.edu/tepper/programs/phd/job-market",
+          "title": "Tepper School - Job Market and Placements (Initial Placements of Ph.D. Graduates)",
+          "notes": "Plain request; Financial Economics: 2020, Vitaly Merso, Federal Reserve Bank of Philadelphia."
         },
         {
-          "url": "https://faculty.wharton.upenn.edu/profile/vitalym/",
-          "title": "Vitaly Meursault, Wharton faculty platform profile",
-          "notes": "No bio, education or CV."
+          "url": "https://www.philadelphiafed.org/-/media/frbp/assets/people/curricula-vitae/vita_meursault.pdf",
+          "title": "Vitaly M. Meursault, Ph.D. - Curriculum Vitae (April 2024)",
+          "notes": "Downloaded PDF; employment 2022-present Machine Learning Economist, Philadelphia Fed; education Ph.D. Financial Economics, CMU Tepper 2015-2020."
         },
         {
-          "url": "https://www.nber.org/people/vitaly_meursault_1",
-          "title": "Vitaly Meursault, NBER people page",
-          "notes": "Current affiliation Federal Reserve Bank of Philadelphia only; no dates."
-        },
-        {
-          "url": "https://orcid.org/0000-0001-8673-6294",
-          "title": "ORCID record, Vitaly Meursault",
-          "notes": "Read through the public ORCID API; no education or employment entries."
+          "url": "https://vmeursault.com/",
+          "title": "Vitaly Meursault - personal site",
+          "notes": "Machine Learning Economist at the Philly Fed; links the CV above."
         }
       ],
-      "checkedAt": "2026-10-17",
       "source": "faculty-page"
     },
     {
@@ -79735,34 +80088,27 @@
     {
       "facultyId": "roster:university-of-pittsburgh:bopaya-bidanda",
       "name": "Bopaya Bidanda",
-      "status": "unresolved",
+      "status": "verified",
       "checkedAt": "2026-10-17",
-      "reason": "The Pitt profile gives the Penn State Ph.D. in Industrial and Management Systems Engineering (1987) and lists awards from 1987-88 onward (IIE student chapter awards, Pitt faculty fellowships), but gives no dated appointment history or start date at Pitt. A web search summary claimed a Pitt page says he joined Pitt in 1987 after the doctorate, but the pages opened (Pitt study-abroad node, UH seminar announcement and page, USIEF Fulbright profiles) do not contain that statement. No CV was found. Pre-PhD and post-PhD employment therefore cannot be ordered from primary evidence.",
+      "employer": "University of Pittsburgh",
+      "position": "Assistant Professor, Department of Industrial Engineering",
+      "placementYear": 1987,
+      "category": "tenure-track",
+      "evidenceUrl": "https://discover.scholars.pitt.edu/4401-bopaya-bidanda",
+      "evidenceNote": "Scholars@Pitt profile (public data endpoint): degree Ph.D., Industrial and Management Systems Engineering, The Pennsylvania State University, May 1987; academic appointments Assistant Professor, Department of Industrial Engineering, University of Pittsburgh, 1987 (month field January) to 1992, Associate Professor 1992-1998, Professor from 1998. No other post is listed between the Penn State doctorate and Pitt. If the January month is literal, the assistant professorship began a few months before the May 1987 conferral; it was not retitled and is the first job (overlap noted). Plain assistant professor title at a US engineering school, recorded as tenure-track by convention.",
+      "phdYearVerified": 1987,
+      "phdInstitutionVerified": "Pennsylvania State University",
+      "reason": "Second pass: the Scholars@Pitt record, read through its public data endpoint, carries dated degrees and appointments; the first post after the 1987 Penn State PhD is the Pitt industrial engineering assistant professorship from 1987.",
       "sources": [
         {
+          "url": "https://discover.scholars.pitt.edu/4401-bopaya-bidanda",
+          "title": "Scholars@Pitt - Bopaya Bidanda",
+          "notes": "Read through discover.scholars.pitt.edu/api/users/4401; degrees with months and academic appointments with start and end dates."
+        },
+        {
           "url": "https://www.engineering.pitt.edu/people/faculty/bopaya-bidanda/",
-          "title": "Bopaya Bidanda | Pitt Swanson School of Engineering",
-          "notes": "Bio, awards and education reviewed; no dated chronology."
-        },
-        {
-          "url": "https://abroad.pitt.edu/node/1948",
-          "title": "Pitt study abroad page (search lead)",
-          "notes": "Opened; no biographical dates for Bidanda found in the served text."
-        },
-        {
-          "url": "https://www.ie.uh.edu/sites/ie/files/seminars/2017/apr-7_dr.bidandapittsburgh_ie-seminar-announcement.pdf",
-          "title": "University of Houston IE seminar announcement, April 2017",
-          "notes": "Speaker bio gives current titles only; no start date."
-        },
-        {
-          "url": "https://www.ie.uh.edu/research/seminar/201704/re-emerging-directions-industrial-engineering-manufacturing-research",
-          "title": "University of Houston IE seminar page, April 2017",
-          "notes": "Read with the fetch tool; bio gives no Pitt start date or doctorate details."
-        },
-        {
-          "url": "https://www.usief.org.in/meet-our-usa-fulbrig/bopaya-bidanda/",
-          "title": "USIEF Fulbright profile: Bopaya Bidanda",
-          "notes": "Project description only; no employment dates."
+          "title": "Pitt Swanson School - Bopaya Bidanda",
+          "notes": "Earlier review: Penn State Ph.D. 1987; no dated appointment history."
         }
       ],
       "source": "faculty-page"
@@ -79915,24 +80261,32 @@
     {
       "facultyId": "roster:university-of-pittsburgh:mary-besterfield-sacre",
       "name": "Mary Besterfield-Sacre",
-      "status": "unresolved",
+      "status": "verified",
       "checkedAt": "2026-10-17",
-      "reason": "The Pitt profile gives the Pitt PhD in Industrial Engineering (1996) and awards including a 1991 U.S. Army performance award and a 1995 ASEE 'Apprentice Faculty' grant, but no dated appointments. A 2016 Pitt news release says that before returning to Pitt she was an Assistant Professor of Industrial Engineering at the University of Texas at El Paso, without dates. The UTEP post is the likely first academic job, but its start is undated and the 1995 apprentice-faculty grant suggests she may already have held a faculty post before the 1996 degree, so whether it is a new post-PhD job cannot be determined. No CV was found; ORCID 0000-0002-3758-6100 has only an undated Pitt entry.",
+      "employer": "University of Texas at El Paso",
+      "position": "Assistant Professor, Mechanical and Industrial Engineering",
+      "placementYear": 1996,
+      "category": "tenure-track",
+      "evidenceUrl": "https://discover.scholars.pitt.edu/5312-mary-besterfield-sacre",
+      "evidenceNote": "Scholars@Pitt profile (public data endpoint): PhD Industrial Engineering, University of Pittsburgh, December 1996; academic appointments Assistant Professor, Mechanical and Industrial Engineering, University of Texas at El Paso, August 1996 to July 1999, then Assistant Professor, Pitt Industrial Engineering from August 1999. The UTEP assistant professorship began four months before the December 1996 conferral and was not retitled; it is the first job, with the overlap noted (the 2016 Pitt release also says she was a UTEP assistant professor before returning to Pitt). Plain assistant professor title at a US engineering school, recorded as tenure-track by convention.",
+      "phdYearVerified": 1996,
+      "phdInstitutionVerified": "University of Pittsburgh",
+      "reason": "Second pass: the Scholars@Pitt record, read through its public data endpoint, dates the Pitt PhD (December 1996) and the UTEP assistant professorship (August 1996-July 1999), resolving the earlier gap.",
       "sources": [
         {
-          "url": "https://www.engineering.pitt.edu/people/faculty/mary-besterfield-sacre/",
-          "title": "Mary Besterfield-Sacre | Pitt Swanson School of Engineering",
-          "notes": "Bio, dated awards and education reviewed; no appointment history."
+          "url": "https://discover.scholars.pitt.edu/5312-mary-besterfield-sacre",
+          "title": "Scholars@Pitt - Mary Besterfield-Sacre",
+          "notes": "Read through discover.scholars.pitt.edu/api/users/5312; dated degrees and academic appointments."
         },
         {
           "url": "https://news.engineering.pitt.edu/pitts-swanson-school-of-engineering-announces-transition-in-academic-affairs-leadership/",
-          "title": "Pitt's Swanson School of Engineering announces transition in academic affairs leadership (10 Nov 2016)",
-          "notes": "Says she was an Assistant Professor of IE at UTEP before returning to Pitt; no dates."
+          "title": "Pitt Swanson School news (2016)",
+          "notes": "Earlier review: assistant professor of IE at UTEP before returning to Pitt; undated."
         },
         {
-          "url": "https://pub.orcid.org/v3.0/0000-0002-3758-6100/activities",
-          "title": "ORCID 0000-0002-3758-6100 (Mary Besterfield-Sacre)",
-          "notes": "Only an undated University of Pittsburgh employment entry."
+          "url": "https://www.engineering.pitt.edu/people/faculty/mary-besterfield-sacre/",
+          "title": "Pitt Swanson School - Mary Besterfield-Sacre",
+          "notes": "Earlier review: Pitt PhD 1996; no appointment history."
         }
       ],
       "source": "faculty-page"
@@ -79942,27 +80296,22 @@
       "name": "Mostafa Moussa",
       "status": "unresolved",
       "checkedAt": "2026-10-17",
-      "reason": "The University of Windsor repository records his PhD dissertation (Process Planning for Assembly and Hybrid Manufacturing in Smart Environments, advisor Hoda ElMaraghy) dated 2020-07-07, matching the ElMaraghy co-authored papers on the Pitt profile. No dated employment between 2020 and the current Pitt assistant professorship was found: the Pitt profile and Pitt Discovery record list degrees only, and his ORCID record (0000-0001-5240-5147) has no employment entries. The first post-PhD job and its start year remain unknown.",
+      "reason": "Second pass: the Scholars@Pitt biography (public data endpoint) says that before joining Pitt he worked as a Management Professional in Energy, Research and Innovation at the Great Lakes Water Authority (Michigan), that he was a Post-Doctoral Fellow and Senior Research Engineer at the Intelligent Manufacturing Systems Centre in Windsor, and that earlier he was a Research Engineer there and a consultant at Allied Consulting (Egypt); the record lists degrees and the current assistant professorship only, with no dates. The IMS Centre postdoctoral fellowship is the likely first post after the July 2020 Windsor dissertation, but its start, and its order relative to the GLWA job, are not dated. Earlier review (2026-10-17): the Windsor repository dated the dissertation 2020-07-07; the Pitt profile, Pitt Discovery record and ORCID gave no dated employment.",
       "sources": [
         {
-          "url": "https://www.engineering.pitt.edu/people/faculty/mostafa-moussa/",
-          "title": "Mostafa Moussa - Pitt Swanson School profile",
-          "notes": "Lists Ph.D. Industrial and Manufacturing Systems Engineering, University of Windsor; current Assistant Professor; no dates or prior positions."
+          "url": "https://discover.scholars.pitt.edu/119680-mostafa-moussa",
+          "title": "Scholars@Pitt - Mostafa Moussa",
+          "notes": "Read through discover.scholars.pitt.edu/api/users/119680; undated biography naming GLWA, the IMS Centre postdoctoral fellowship and earlier research-engineer and consulting posts."
         },
         {
           "url": "https://uwindsor.scholaris.ca/handle/20.500.14776/9151",
-          "title": "University of Windsor Scholarship at UWindsor - Moussa dissertation record",
-          "notes": "Found through the repository's public search endpoint; Ph.D. dissertation by Moussa, Mostafa Abdelrahman Mohamed Abdelrahman, issued 2020-07-07, advisor Hoda ElMaraghy."
-        },
-        {
-          "url": "https://discover.scholars.pitt.edu/119680-mostafa-moussa",
-          "title": "Mostafa Moussa - Pitt Discovery profile",
-          "notes": "Read through its public data endpoint; degrees without dates, no appointments listed."
+          "title": "University of Windsor Scholarship at UWindsor - Moussa PhD dissertation",
+          "notes": "Earlier review: issued 2020-07-07, advisor Hoda ElMaraghy."
         },
         {
           "url": "https://pub.orcid.org/v3.0/0000-0001-5240-5147/record",
-          "title": "Mostafa Moussa - ORCID public record",
-          "notes": "No education or employment entries."
+          "title": "ORCID - Mostafa Moussa",
+          "notes": "Earlier review: no education or employment entries."
         }
       ],
       "source": "faculty-page"
@@ -79972,17 +80321,22 @@
       "name": "Natasa Vidic",
       "status": "unresolved",
       "checkedAt": "2026-10-17",
-      "reason": "The Pitt profile gives Ph.D., Industrial Engineering, University of Pittsburgh, 2008, but no appointment history. Her ORCID record lists the Pitt PhD with dates 2002-09 to 2007-05 (differing from the profile's 2008) and only an undated University of Pittsburgh employment entry. No source documents when her Pitt employment began or whether any other job followed the degree, so the first post-PhD job is unknown. No CV was linked.",
+      "reason": "Second pass: D-Scholarship@Pitt (all 23,739 records read through its OAI endpoint, since the catalogue search sits behind a bot check) holds her ETD 'Developing Methods to Solve the Workforce Assignment Problem Considering Worker Heterogeneity and Learning and Forgetting' by Vidic, Natasa S., dated 2008-06-10, which supports the profile's 2008 PhD (ORCID's 2002-09 to 2007-05 is a programme range). Scholars@Pitt returns no profile for her. No source dates when her Pitt employment began or whether another job followed the degree, so the first post-PhD job remains unknown. Earlier review (2026-10-17): the Pitt profile gave a 2008 Pitt PhD without appointment history; ORCID gave PhD 2002-2007 and an undated Pitt employment entry.",
       "sources": [
         {
+          "url": "https://d-scholarship.pitt.edu/concern/etds/981fc496-2229-4c08-977e-aad17d177de2",
+          "title": "D-Scholarship@Pitt - Vidic, Natasa S. ETD (2008)",
+          "notes": "Record read through d-scholarship.pitt.edu/catalog/oai ListRecords; dc:date 2008-06-10."
+        },
+        {
           "url": "https://www.engineering.pitt.edu/people/faculty/natasa-vidic/",
-          "title": "Natasa Vidic | Pitt Swanson School of Engineering",
-          "notes": "Education and publications reviewed; no dated appointments."
+          "title": "Pitt Swanson School - Natasa Vidic",
+          "notes": "Earlier review: Ph.D. IE, Pitt, 2008; no dated appointments."
         },
         {
           "url": "https://pub.orcid.org/v3.0/0000-0002-4174-4079/activities",
-          "title": "ORCID 0000-0002-4174-4079 (Natasa Vidic)",
-          "notes": "Education: PhD Industrial Engineering, Pitt, 2002-09 to 2007-05; MS Delaware undated; employment: Pitt, undated."
+          "title": "ORCID - Natasa Vidic",
+          "notes": "Earlier review: education Pitt PhD 2002-09 to 2007-05; employment Pitt, undated."
         }
       ],
       "source": "faculty-page"
@@ -80058,22 +80412,27 @@
       "name": "Renee Clark",
       "status": "unresolved",
       "checkedAt": "2026-10-17",
-      "reason": "The Pitt profile states a Pitt PhD in Industrial Engineering followed by post-doctoral studies in engineering education at Pitt, and over 30 years of experience as an engineer and IT analyst in industry and academia, but gives no dates. The Pitt Discovery record lists the PhD and a Pitt 'Post Doctorate' without dates, and ORCID (0000-0002-1782-073X) lists Pitt employment without dates. The PhD year, whether an industry or IT job continued through the doctorate, and the postdoc start year are all undocumented.",
+      "reason": "Second pass: D-Scholarship@Pitt (read through its OAI endpoint) holds her ETD 'A Methodology to Develop a Decision Model Using a Large Categorical Database with Application to Identifying Critical Variables during a Transport-Related Hazardous Materials Release' by Clark, Renee M, dated 2006-06-02, so the Pitt PhD is about 2006. The Scholars@Pitt record still lists the PhD and a Pitt 'Post Doctorate' in engineering education without dates and no appointments; its biography mentions over 30 years as an engineer and IT analyst in industry and academia, undated. Whether an industry or IT job continued through the doctorate, and when the postdoc began, remain undocumented. Earlier review (2026-10-17): the Pitt profile, Pitt Discovery record and ORCID gave the Pitt PhD and postdoc without any dates.",
       "sources": [
         {
-          "url": "https://www.engineering.pitt.edu/people/faculty/renee-clark/",
-          "title": "Renee Clark - Pitt Swanson School profile",
-          "notes": "Ph.D. Industrial Engineering, Pitt; Post Doctorate, Industrial Engineering & Engineering Education, Pitt; no dates."
+          "url": "https://d-scholarship.pitt.edu/concern/etds/ebc4deff-d599-4299-9347-66999ba99571",
+          "title": "D-Scholarship@Pitt - Clark, Renee M ETD (2006)",
+          "notes": "Record read through d-scholarship.pitt.edu/catalog/oai ListRecords; dc:date 2006-06-02."
         },
         {
           "url": "https://discover.scholars.pitt.edu/19944-renee-clark",
-          "title": "Renee Clark - Pitt Discovery profile",
-          "notes": "Read through its public data endpoint; degrees (BS Pitt, MS Case Western, PhD Pitt, Post Doctorate Pitt) without dates; no appointments."
+          "title": "Scholars@Pitt - Renee Clark",
+          "notes": "Read through its public data endpoint; degrees (including Post Doctorate, Pitt) undated; no appointments."
+        },
+        {
+          "url": "https://www.engineering.pitt.edu/people/faculty/renee-clark/",
+          "title": "Pitt Swanson School - Renee Clark",
+          "notes": "Earlier review: Pitt PhD then postdoctoral studies in engineering education; no dates."
         },
         {
           "url": "https://pub.orcid.org/v3.0/0000-0002-1782-073X/record",
-          "title": "Renee Clark - ORCID public record",
-          "notes": "Employment: University of Pittsburgh, no dates."
+          "title": "ORCID - Renee Clark",
+          "notes": "Earlier review: Pitt employment without dates."
         }
       ],
       "source": "faculty-page"
