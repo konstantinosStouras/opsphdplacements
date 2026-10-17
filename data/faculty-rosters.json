@@ -34,10 +34,10 @@
    },
    "reviewed": 3787,
    "reviewOutcomes": {
-    "not-listed": 354,
-    "confirmed-faculty": 3128,
+    "not-listed": 355,
+    "confirmed-faculty": 3138,
     "extraction-noise": 250,
-    "unresolved": 28,
+    "unresolved": 17,
     "same-as-om-list": 27
    },
    "universities": 95,
@@ -117648,25 +117648,32 @@
    "firstJob": null,
    "verification": "unverified",
    "review": {
-    "status": "unresolved",
-    "checkedAt": "2026-10-16",
-    "reason": "No page showing his title or doctorate could be opened: the UCL profiles page (profiles.ucl.ac.uk/67709-davide-ravasi) rendered only the title 'Discovery' with no body text (client-side rendered), and the UCL School of Management people page (www.mgmt.ucl.ac.uk/people/davideravasi, which redirects to www.ucl.ac.uk/management/people/davideravasi) returned HTTP 403. The roster title 'EA to the Director:' is a neighbouring staff entry's label, not a title shown for him.",
+    "status": "confirmed-faculty",
+    "checkedAt": "2026-10-17",
+    "reason": "Re-checked through routes that failed before. The School's 'Meet our academic faculty' page (read through the r.jina.ai reader proxy because the site answers 403) lists him under Strategy & Entrepreneurship, Academics, as 'Director and Professor', and the 'Our people' page heads his entry 'Director and Professor' (the roster's 'EA to the Director:' is the contact line for his executive assistant). His UCL Profiles record, read from the script-drawn page's public data endpoint, gives the position Professor of Strategy & Entrepreneurship, UCL School of Management, a degree record 'Doctorate, Management, Bocconi University, 1999', and a bio saying he received his PhD in Business Administration and Management at Bocconi University. Earlier check (2026-10-16): no page showing his title or doctorate could be opened, because the UCL Profiles page rendered empty and the School of Management people page returned HTTP 403, and 'EA to the Director:' was a neighbouring staff label.",
     "sources": [
      {
       "url": "https://profiles.ucl.ac.uk/67709-davide-ravasi",
-      "title": "UCL profiles page for Davide Ravasi (rendered empty, title 'Discovery')"
+      "title": "Davide Ravasi | UCL Profiles",
+      "notes": "Script-drawn Symplectic Discovery page; read on 2026-10-17 from its public data endpoint https://profiles.ucl.ac.uk/api/users/67709 with curl (positions, appointments, degrees and bio)."
      },
      {
-      "url": "https://www.ucl.ac.uk/management/people/davideravasi",
-      "title": "UCL School of Management people page for Davide Ravasi (HTTP 403 on 2026-10-16)"
+      "url": "https://www.ucl.ac.uk/management/about/our-people/meet-our-academic-faculty",
+      "title": "Meet our academic faculty | UCL School of Management",
+      "notes": "Read through the public reader proxy https://r.jina.ai/ on 2026-10-17 because www.ucl.ac.uk answers curl and the fetch tool with HTTP 403. Lists academics by group (Finance, Accounting & Economics; Marketing & Analytics; Operations & Technology; Organisations & Innovation; Strategy & Entrepreneurship), split into Academics and Education-focused academics, each with a title and a UCL Profiles link."
+     },
+     {
+      "url": "https://www.ucl.ac.uk/management/people",
+      "title": "Our people | UCL School of Management",
+      "notes": "Read through the public reader proxy https://r.jina.ai/ on 2026-10-17 because www.ucl.ac.uk answers curl and the fetch tool with HTTP 403. Read as markdown and as HTML; the Senior Leadership team is an accordion in which each heading (h2 button text) is the role title and the panel below it holds the name, office and email, so the roster extractor paired each name with the next person's heading."
      }
     ],
-    "profileUrl": null,
-    "titleConfirmed": null,
-    "areaConfirmed": null,
-    "phdInstitution": null,
-    "phdYear": null,
-    "phdSourceUrl": null,
+    "profileUrl": "https://profiles.ucl.ac.uk/67709-davide-ravasi",
+    "titleConfirmed": "Professor of Strategy & Entrepreneurship (UCL Profiles); Director and Professor (School pages)",
+    "areaConfirmed": "UCL School of Management, Strategy & Entrepreneurship",
+    "phdInstitution": "Bocconi University",
+    "phdYear": 1999,
+    "phdSourceUrl": "https://profiles.ucl.ac.uk/67709-davide-ravasi",
     "omListFacultyId": null,
     "note": null
    }
@@ -117701,17 +117708,29 @@
    "firstJob": null,
    "verification": "unverified",
    "review": {
-    "status": "unresolved",
-    "checkedAt": "2026-10-16",
-    "reason": "The UCL School of Management people page (the mgmt.ucl.ac.uk URL redirects to www.ucl.ac.uk/management/people) returned HTTP 403 to the fetcher, and her profile URL, reached via the old mgmt.ucl.ac.uk/people/jackieloveland redirect, also returned 403, so no page could be read. The roster title 'Professor (Education), Director of Studies and Deputy Director (Education)' could not be verified and may belong to a neighbouring entry.",
+    "status": "not-listed",
+    "checkedAt": "2026-10-17",
+    "reason": "Re-checked. The School's 'Our people' page (read through the r.jina.ai reader proxy because the site answers 403) lists her in the Senior Leadership team under the heading 'Head of Operations', with an office and email, which is a professional-services role; the roster's 'Professor (Education), Director of Studies and Deputy Director (Education)' is the next heading, which belongs to Alan Parkinson. She is not listed on the 'Meet our academic faculty' page, a UCL Profiles name search through the search page's own data endpoint returns no profile for 'Jackie Loveland', and her old School profile URL now answers 404. She is shown as staff, not academic faculty. Earlier check (2026-10-16): the School people page and her profile URL both returned HTTP 403 to the fetcher, so no page could be read and the roster title could not be verified.",
     "sources": [
      {
       "url": "https://www.ucl.ac.uk/management/people",
-      "title": "UCL School of Management people page (HTTP 403 to the fetcher)"
+      "title": "Our people | UCL School of Management",
+      "notes": "Read through the public reader proxy https://r.jina.ai/ on 2026-10-17 because www.ucl.ac.uk answers curl and the fetch tool with HTTP 403. Read as markdown and as HTML; the Senior Leadership team is an accordion in which each heading (h2 button text) is the role title and the panel below it holds the name, office and email, so the roster extractor paired each name with the next person's heading."
+     },
+     {
+      "url": "https://www.ucl.ac.uk/management/about/our-people/meet-our-academic-faculty",
+      "title": "Meet our academic faculty | UCL School of Management",
+      "notes": "Read through the public reader proxy https://r.jina.ai/ on 2026-10-17 because www.ucl.ac.uk answers curl and the fetch tool with HTTP 403. Lists academics by group (Finance, Accounting & Economics; Marketing & Analytics; Operations & Technology; Organisations & Innovation; Strategy & Entrepreneurship), split into Academics and Education-focused academics, each with a title and a UCL Profiles link."
      },
      {
       "url": "https://www.ucl.ac.uk/management/people/jackieloveland",
-      "title": "Jackie Loveland, UCL School of Management profile (HTTP 403 to the fetcher)"
+      "title": "404 - Error page not found | UCL (old School profile URL)",
+      "notes": "Read through r.jina.ai on 2026-10-17; the target returned HTTP 404 Not Found."
+     },
+     {
+      "url": "https://profiles.ucl.ac.uk/search?by=text&type=user&v=Jackie%20Loveland",
+      "title": "UCL Profiles experts search for 'Jackie Loveland'",
+      "notes": "Queried on 2026-10-17 through the search page's own data endpoint (POST https://profiles.ucl.ac.uk/api/users with the text 'Jackie Loveland'), found by rendering the search page in headless Chromium; total 0 results."
      }
     ],
     "profileUrl": null,
@@ -117754,25 +117773,32 @@
    "firstJob": null,
    "verification": "unverified",
    "review": {
-    "status": "unresolved",
-    "checkedAt": "2026-10-16",
-    "reason": "The UCL School of Management people page (the mgmt.ucl.ac.uk URL redirects to www.ucl.ac.uk/management/people) returned HTTP 403 to the fetcher, and her profile URL, reached via the old mgmt.ucl.ac.uk/people/leilaalinaghian redirect, also returned 403, so no page could be read. The roster title 'Professor and Lead (Equality, Diversity and Inclusion)' could not be verified and may belong to a neighbouring entry.",
+    "status": "confirmed-faculty",
+    "checkedAt": "2026-10-17",
+    "reason": "Re-checked through routes that failed before. The School's 'Meet our academic faculty' page (read through the r.jina.ai reader proxy because the site answers 403) lists her under Operations & Technology, Education-focused academics, as 'Associate Professor (Education) and Director of Postgraduate Programmes', the heading of her Senior Leadership entry on the 'Our people' page (the roster's 'Professor and Lead (Equality, Diversity and Inclusion)' is the next heading, Raina Brands's). Her UCL Profiles record, read from the script-drawn page's public data endpoint, gives the position Associate Professor (Teaching), UCL School of Management, a degree record 'Doctorate, PhD in Engineering, Manufacturing and Management, University of Cambridge, 2015', and a bio saying she holds an MPhil and a PhD in Engineering, Manufacturing and Management from the University of Cambridge. Earlier check (2026-10-16): the School people page and her profile URL both returned HTTP 403 to the fetcher, so no page could be read and the roster title could not be verified.",
     "sources": [
      {
-      "url": "https://www.ucl.ac.uk/management/people",
-      "title": "UCL School of Management people page (HTTP 403 to the fetcher)"
+      "url": "https://profiles.ucl.ac.uk/29560-leila-alinaghian",
+      "title": "Leila Alinaghian | UCL Profiles",
+      "notes": "Script-drawn Symplectic Discovery page; read on 2026-10-17 from its public data endpoint https://profiles.ucl.ac.uk/api/users/29560 with curl (positions, appointments, degrees and bio)."
      },
      {
-      "url": "https://www.ucl.ac.uk/management/people/leilaalinaghian",
-      "title": "Leila Alinaghian, UCL School of Management profile (HTTP 403 to the fetcher)"
+      "url": "https://www.ucl.ac.uk/management/about/our-people/meet-our-academic-faculty",
+      "title": "Meet our academic faculty | UCL School of Management",
+      "notes": "Read through the public reader proxy https://r.jina.ai/ on 2026-10-17 because www.ucl.ac.uk answers curl and the fetch tool with HTTP 403. Lists academics by group (Finance, Accounting & Economics; Marketing & Analytics; Operations & Technology; Organisations & Innovation; Strategy & Entrepreneurship), split into Academics and Education-focused academics, each with a title and a UCL Profiles link."
+     },
+     {
+      "url": "https://www.ucl.ac.uk/management/people",
+      "title": "Our people | UCL School of Management",
+      "notes": "Read through the public reader proxy https://r.jina.ai/ on 2026-10-17 because www.ucl.ac.uk answers curl and the fetch tool with HTTP 403. Read as markdown and as HTML; the Senior Leadership team is an accordion in which each heading (h2 button text) is the role title and the panel below it holds the name, office and email, so the roster extractor paired each name with the next person's heading."
      }
     ],
-    "profileUrl": null,
-    "titleConfirmed": null,
-    "areaConfirmed": null,
-    "phdInstitution": null,
-    "phdYear": null,
-    "phdSourceUrl": null,
+    "profileUrl": "https://profiles.ucl.ac.uk/29560-leila-alinaghian",
+    "titleConfirmed": "Associate Professor (Teaching) (UCL Profiles); Associate Professor (Education) and Director of Postgraduate Programmes (School pages)",
+    "areaConfirmed": "UCL School of Management, Operations & Technology (education-focused academics)",
+    "phdInstitution": "University of Cambridge",
+    "phdYear": 2015,
+    "phdSourceUrl": "https://profiles.ucl.ac.uk/29560-leila-alinaghian",
     "omListFacultyId": null,
     "note": null
    }
@@ -117807,25 +117833,32 @@
    "firstJob": null,
    "verification": "unverified",
    "review": {
-    "status": "unresolved",
-    "checkedAt": "2026-10-16",
-    "reason": "The UCL School of Management people page (the mgmt.ucl.ac.uk URL redirects to www.ucl.ac.uk/management/people) returned HTTP 403 to the fetcher, and his profile URL, reached via the old mgmt.ucl.ac.uk/people/michaelmanlangit redirect, also returned 403, so no page could be read. The roster title 'Meet our academic faculty' is a page heading, not a title, so his actual title and group are unknown.",
+    "status": "confirmed-faculty",
+    "checkedAt": "2026-10-17",
+    "reason": "Re-checked through routes that failed before. The School's 'Meet our academic faculty' page (read through the r.jina.ai reader proxy because the site answers 403) lists him under Finance, Accounting & Economics, Education-focused academics, as 'Associate Professor (Education) and Director of International Programmes', the heading of his entry on the 'Our people' page (the roster's 'Meet our academic faculty' is a link label). His UCL Profiles page, rendered with headless Chromium and read from its public data endpoint, shows the honorific 'Mr', the position Associate Professor (Teaching), UCL School of Management, and under Degrees 'Doctorate, Doctor of Philosophy, University College London' with no date (also a Bachelor of Engineering from McGill University and a Master of Science from UCL). The institution is recorded as the Degrees section states it and the year stays null; the 'Mr' honorific sits oddly with a doctorate and should be checked before the degree is relied on. Earlier check (2026-10-16): the School people page and his profile URL both returned HTTP 403 to the fetcher, so no page could be read and his title and group were unknown.",
     "sources": [
      {
-      "url": "https://www.ucl.ac.uk/management/people",
-      "title": "UCL School of Management people page (HTTP 403 to the fetcher)"
+      "url": "https://profiles.ucl.ac.uk/28414-michael-manlangit",
+      "title": "Michael Manlangit | UCL Profiles",
+      "notes": "Script-drawn Symplectic Discovery page; read on 2026-10-17 from its public data endpoint https://profiles.ucl.ac.uk/api/users/28414 with curl (positions, appointments, degrees and bio). Also rendered with headless Chromium on 2026-10-17: the page shows 'MR', Associate Professor (Teaching), UCL School of Management, and Degrees 'Doctorate, Doctor of Philosophy, University College London' with no year."
      },
      {
-      "url": "https://www.ucl.ac.uk/management/people/michaelmanlangit",
-      "title": "Michael Manlangit, UCL School of Management profile (HTTP 403 to the fetcher)"
+      "url": "https://www.ucl.ac.uk/management/about/our-people/meet-our-academic-faculty",
+      "title": "Meet our academic faculty | UCL School of Management",
+      "notes": "Read through the public reader proxy https://r.jina.ai/ on 2026-10-17 because www.ucl.ac.uk answers curl and the fetch tool with HTTP 403. Lists academics by group (Finance, Accounting & Economics; Marketing & Analytics; Operations & Technology; Organisations & Innovation; Strategy & Entrepreneurship), split into Academics and Education-focused academics, each with a title and a UCL Profiles link."
+     },
+     {
+      "url": "https://www.ucl.ac.uk/management/people",
+      "title": "Our people | UCL School of Management",
+      "notes": "Read through the public reader proxy https://r.jina.ai/ on 2026-10-17 because www.ucl.ac.uk answers curl and the fetch tool with HTTP 403. Read as markdown and as HTML; the Senior Leadership team is an accordion in which each heading (h2 button text) is the role title and the panel below it holds the name, office and email, so the roster extractor paired each name with the next person's heading."
      }
     ],
-    "profileUrl": null,
-    "titleConfirmed": null,
-    "areaConfirmed": null,
-    "phdInstitution": null,
+    "profileUrl": "https://profiles.ucl.ac.uk/28414-michael-manlangit",
+    "titleConfirmed": "Associate Professor (Teaching) (UCL Profiles); Associate Professor (Education) and Director of International Programmes (School pages)",
+    "areaConfirmed": "UCL School of Management, Finance, Accounting & Economics (education-focused academics)",
+    "phdInstitution": "University College London",
     "phdYear": null,
-    "phdSourceUrl": null,
+    "phdSourceUrl": "https://profiles.ucl.ac.uk/28414-michael-manlangit",
     "omListFacultyId": null,
     "note": null
    }
@@ -117860,25 +117893,37 @@
    "firstJob": null,
    "verification": "unverified",
    "review": {
-    "status": "unresolved",
-    "checkedAt": "2026-10-16",
-    "reason": "The UCL School of Management people page (the mgmt.ucl.ac.uk URL redirects to www.ucl.ac.uk/management/people) returned HTTP 403 to the fetcher, and her profile URL, reached via the old mgmt.ucl.ac.uk/people/ninaseppala redirect, also returned 403, so no page could be read. The roster title 'Professor (Education) and Deputy Director for Student Experience' could not be verified and may belong to a neighbouring entry.",
+    "status": "confirmed-faculty",
+    "checkedAt": "2026-10-17",
+    "reason": "Re-checked through routes that failed before. The School's 'Our people' page (read through the r.jina.ai reader proxy because the site answers 403) heads her Senior Leadership entry 'Professor (Education) and Deputy Director (Faculty and Accreditations)'; the roster's 'Professor (Education) and Deputy Director for Student Experience' is the next heading, Susan Smith's. She is not in the group lists of 'Meet our academic faculty'. A UCL Profiles name search, rendered with headless Chromium, found her profile; its public data endpoint gives the position Professor (Teaching), UCL School of Management, research fields Applied ethics and Strategy, management and organisational behaviour, a bio stating she is Deputy Director (Faculty and Accreditations) and holds a PhD from the University of Warwick, and a degree record 'Doctorate, Doctor of Philosophy, University of Warwick, 2007'. Earlier check (2026-10-16): the School people page and her profile URL both returned HTTP 403 to the fetcher, so no page could be read and the roster title could not be verified.",
     "sources": [
      {
-      "url": "https://www.ucl.ac.uk/management/people",
-      "title": "UCL School of Management people page (HTTP 403 to the fetcher)"
+      "url": "https://profiles.ucl.ac.uk/7663-nina-seppala",
+      "title": "Nina Seppala | UCL Profiles",
+      "notes": "Script-drawn Symplectic Discovery page; read on 2026-10-17 from its public data endpoint https://profiles.ucl.ac.uk/api/users/7663 with curl (positions, appointments, degrees and bio)."
      },
      {
-      "url": "https://www.ucl.ac.uk/management/people/ninaseppala",
-      "title": "Nina Seppala, UCL School of Management profile (HTTP 403 to the fetcher)"
+      "url": "https://profiles.ucl.ac.uk/search?by=text&type=user&v=seppala",
+      "title": "UCL Profiles experts search for 'seppala'",
+      "notes": "Rendered with headless Chromium on 2026-10-17 (the page draws its results with scripts); one result, Dr Nina Seppala, Professor (Teaching), UCL School of Management, profile id 7663-nina-seppala (id read from the page's own POST https://profiles.ucl.ac.uk/api/users endpoint)."
+     },
+     {
+      "url": "https://www.ucl.ac.uk/management/people",
+      "title": "Our people | UCL School of Management",
+      "notes": "Read through the public reader proxy https://r.jina.ai/ on 2026-10-17 because www.ucl.ac.uk answers curl and the fetch tool with HTTP 403. Read as markdown and as HTML; the Senior Leadership team is an accordion in which each heading (h2 button text) is the role title and the panel below it holds the name, office and email, so the roster extractor paired each name with the next person's heading."
+     },
+     {
+      "url": "https://www.ucl.ac.uk/management/about/our-people/meet-our-academic-faculty",
+      "title": "Meet our academic faculty | UCL School of Management",
+      "notes": "Read through the public reader proxy https://r.jina.ai/ on 2026-10-17 because www.ucl.ac.uk answers curl and the fetch tool with HTTP 403. Lists academics by group (Finance, Accounting & Economics; Marketing & Analytics; Operations & Technology; Organisations & Innovation; Strategy & Entrepreneurship), split into Academics and Education-focused academics, each with a title and a UCL Profiles link."
      }
     ],
-    "profileUrl": null,
-    "titleConfirmed": null,
-    "areaConfirmed": null,
-    "phdInstitution": null,
-    "phdYear": null,
-    "phdSourceUrl": null,
+    "profileUrl": "https://profiles.ucl.ac.uk/7663-nina-seppala",
+    "titleConfirmed": "Professor (Teaching) (UCL Profiles); Professor (Education) and Deputy Director (Faculty and Accreditations) (School people page)",
+    "areaConfirmed": "UCL School of Management (no subject group shown; research fields Applied ethics; Strategy, management and organisational behaviour)",
+    "phdInstitution": "University of Warwick",
+    "phdYear": 2007,
+    "phdSourceUrl": "https://profiles.ucl.ac.uk/7663-nina-seppala",
     "omListFacultyId": null,
     "note": null
    }
@@ -117913,25 +117958,32 @@
    "firstJob": null,
    "verification": "unverified",
    "review": {
-    "status": "unresolved",
-    "checkedAt": "2026-10-16",
-    "reason": "The UCL School of Management people page (the mgmt.ucl.ac.uk URL redirects to www.ucl.ac.uk/management/people) returned HTTP 403 to the fetcher, and his profile URL, reached via the old mgmt.ucl.ac.uk/people/paolotaticchi redirect, also returned 403, so no page could be read. The roster title 'Associate Professor (Education) and Director of Undergraduate Programmes' could not be verified and may belong to a neighbouring entry.",
+    "status": "confirmed-faculty",
+    "checkedAt": "2026-10-17",
+    "reason": "Re-checked through routes that failed before. The School's 'Meet our academic faculty' page (read through the r.jina.ai reader proxy because the site answers 403) lists him under Strategy & Entrepreneurship, Education-focused academics, as 'Professor (Education) and Deputy Director (MBA and Executive Education)', the heading of his entry on the 'Our people' page (the roster's 'Associate Professor (Education) and Director of Undergraduate Programmes' is the next heading, Maya Cara's). His UCL Profiles record, read from the script-drawn page's public data endpoint, gives the position Professor (Teaching), UCL School of Management, and a bio describing him as Professor of Strategy and Sustainability and stating that he holds a PhD in Industrial Engineering (operations management) from the University of Perugia; no year is given and the record has no degrees section, so the year stays null. The doctoral field is operations management but the area shown is Strategy & Entrepreneurship. Earlier check (2026-10-16): the School people page and his profile URL both returned HTTP 403 to the fetcher, so no page could be read and the roster title could not be verified.",
     "sources": [
      {
-      "url": "https://www.ucl.ac.uk/management/people",
-      "title": "UCL School of Management people page (HTTP 403 to the fetcher)"
+      "url": "https://profiles.ucl.ac.uk/77989-paolo-taticchi",
+      "title": "Paolo Taticchi | UCL Profiles",
+      "notes": "Script-drawn Symplectic Discovery page; read on 2026-10-17 from its public data endpoint https://profiles.ucl.ac.uk/api/users/77989 with curl (positions, appointments, degrees and bio)."
      },
      {
-      "url": "https://www.ucl.ac.uk/management/people/paolotaticchi",
-      "title": "Paolo Taticchi, UCL School of Management profile (HTTP 403 to the fetcher)"
+      "url": "https://www.ucl.ac.uk/management/about/our-people/meet-our-academic-faculty",
+      "title": "Meet our academic faculty | UCL School of Management",
+      "notes": "Read through the public reader proxy https://r.jina.ai/ on 2026-10-17 because www.ucl.ac.uk answers curl and the fetch tool with HTTP 403. Lists academics by group (Finance, Accounting & Economics; Marketing & Analytics; Operations & Technology; Organisations & Innovation; Strategy & Entrepreneurship), split into Academics and Education-focused academics, each with a title and a UCL Profiles link."
+     },
+     {
+      "url": "https://www.ucl.ac.uk/management/people",
+      "title": "Our people | UCL School of Management",
+      "notes": "Read through the public reader proxy https://r.jina.ai/ on 2026-10-17 because www.ucl.ac.uk answers curl and the fetch tool with HTTP 403. Read as markdown and as HTML; the Senior Leadership team is an accordion in which each heading (h2 button text) is the role title and the panel below it holds the name, office and email, so the roster extractor paired each name with the next person's heading."
      }
     ],
-    "profileUrl": null,
-    "titleConfirmed": null,
-    "areaConfirmed": null,
-    "phdInstitution": null,
+    "profileUrl": "https://profiles.ucl.ac.uk/77989-paolo-taticchi",
+    "titleConfirmed": "Professor (Teaching) (UCL Profiles); Professor (Education) and Deputy Director (MBA and Executive Education) (School pages)",
+    "areaConfirmed": "UCL School of Management, Strategy & Entrepreneurship (education-focused academics)",
+    "phdInstitution": "University of Perugia",
     "phdYear": null,
-    "phdSourceUrl": null,
+    "phdSourceUrl": "https://profiles.ucl.ac.uk/77989-paolo-taticchi",
     "omListFacultyId": null,
     "note": null
    }
@@ -117966,25 +118018,32 @@
    "firstJob": null,
    "verification": "unverified",
    "review": {
-    "status": "unresolved",
-    "checkedAt": "2026-10-16",
-    "reason": "The UCL School of Management people page (the mgmt.ucl.ac.uk URL redirects to www.ucl.ac.uk/management/people) returned HTTP 403 to the fetcher, and her profile URL, reached via the old mgmt.ucl.ac.uk/people/rainabrands redirect, also returned 403, so no page could be read. The roster title 'Professor, Deputy Director (Research), and Head (Organisations and Innovation)' could not be verified and may belong to a neighbouring entry.",
+    "status": "confirmed-faculty",
+    "checkedAt": "2026-10-17",
+    "reason": "Re-checked through routes that failed before. The School's 'Meet our academic faculty' page (read through the r.jina.ai reader proxy because the site answers 403) lists her under Organisations & Innovation, Academics, as 'Professor and Lead (Equality, Diversity and Inclusion)', the heading of her entry on the 'Our people' page (the roster's 'Professor, Deputy Director (Research), and Head (Organisations and Innovation)' is the next heading, Martin Kilduff's). Her UCL Profiles record, read from the script-drawn page's public data endpoint, gives the position Professor of Organisational Behaviour, UCL School of Management, a degree record 'Doctorate, Management, University of Cambridge, 2011', and a bio saying she earned her PhD from Judge Business School at the University of Cambridge. Earlier check (2026-10-16): the School people page and her profile URL both returned HTTP 403 to the fetcher, so no page could be read and the roster title could not be verified.",
     "sources": [
      {
-      "url": "https://www.ucl.ac.uk/management/people",
-      "title": "UCL School of Management people page (HTTP 403 to the fetcher)"
+      "url": "https://profiles.ucl.ac.uk/83716-raina-brands",
+      "title": "Raina Brands | UCL Profiles",
+      "notes": "Script-drawn Symplectic Discovery page; read on 2026-10-17 from its public data endpoint https://profiles.ucl.ac.uk/api/users/83716 with curl (positions, appointments, degrees and bio)."
      },
      {
-      "url": "https://www.ucl.ac.uk/management/people/rainabrands",
-      "title": "Raina Brands, UCL School of Management profile (HTTP 403 to the fetcher)"
+      "url": "https://www.ucl.ac.uk/management/about/our-people/meet-our-academic-faculty",
+      "title": "Meet our academic faculty | UCL School of Management",
+      "notes": "Read through the public reader proxy https://r.jina.ai/ on 2026-10-17 because www.ucl.ac.uk answers curl and the fetch tool with HTTP 403. Lists academics by group (Finance, Accounting & Economics; Marketing & Analytics; Operations & Technology; Organisations & Innovation; Strategy & Entrepreneurship), split into Academics and Education-focused academics, each with a title and a UCL Profiles link."
+     },
+     {
+      "url": "https://www.ucl.ac.uk/management/people",
+      "title": "Our people | UCL School of Management",
+      "notes": "Read through the public reader proxy https://r.jina.ai/ on 2026-10-17 because www.ucl.ac.uk answers curl and the fetch tool with HTTP 403. Read as markdown and as HTML; the Senior Leadership team is an accordion in which each heading (h2 button text) is the role title and the panel below it holds the name, office and email, so the roster extractor paired each name with the next person's heading."
      }
     ],
-    "profileUrl": null,
-    "titleConfirmed": null,
-    "areaConfirmed": null,
-    "phdInstitution": null,
-    "phdYear": null,
-    "phdSourceUrl": null,
+    "profileUrl": "https://profiles.ucl.ac.uk/83716-raina-brands",
+    "titleConfirmed": "Professor of Organisational Behaviour (UCL Profiles); Professor and Lead (Equality, Diversity and Inclusion) (School pages)",
+    "areaConfirmed": "UCL School of Management, Organisations & Innovation",
+    "phdInstitution": "University of Cambridge",
+    "phdYear": 2011,
+    "phdSourceUrl": "https://profiles.ucl.ac.uk/83716-raina-brands",
     "omListFacultyId": null,
     "note": null
    }
@@ -118019,25 +118078,32 @@
    "firstJob": null,
    "verification": "unverified",
    "review": {
-    "status": "unresolved",
-    "checkedAt": "2026-10-16",
-    "reason": "The UCL School of Management people page (the mgmt.ucl.ac.uk URL redirects to www.ucl.ac.uk/management/people) returned HTTP 403 to the fetcher, and her profile URL, reached via the old mgmt.ucl.ac.uk/people/susansmith redirect, also returned 403, so no page could be read. The roster title 'Professor (Education) and Deputy Director (MBA and Executive Education)' could not be verified and may belong to a neighbouring entry.",
+    "status": "confirmed-faculty",
+    "checkedAt": "2026-10-17",
+    "reason": "Re-checked through routes that failed before. The School's 'Meet our academic faculty' page (read through the r.jina.ai reader proxy because the site answers 403) lists her under Finance, Accounting & Economics, Education-focused academics, as 'Professor (Education) and Deputy Director for Student Experience', the heading of her entry on the 'Our people' page (the roster's 'Professor (Education) and Deputy Director (MBA and Executive Education)' is the next heading, Paolo Taticchi's). Her UCL Profiles record, read from the script-drawn page's public data endpoint, gives the position Professor (Teaching) in Accounting, UCL School of Management, a bio stating she holds a PhD in Accounting from the University of Sussex, and a degree record 'Doctorate, Doctor, University of Sussex, 2020'. Earlier check (2026-10-16): the School people page and her profile URL both returned HTTP 403 to the fetcher, so no page could be read and the roster title could not be verified.",
     "sources": [
      {
-      "url": "https://www.ucl.ac.uk/management/people",
-      "title": "UCL School of Management people page (HTTP 403 to the fetcher)"
+      "url": "https://profiles.ucl.ac.uk/93155-susan-smith",
+      "title": "Susan Smith | UCL Profiles",
+      "notes": "Script-drawn Symplectic Discovery page; read on 2026-10-17 from its public data endpoint https://profiles.ucl.ac.uk/api/users/93155 with curl (positions, appointments, degrees and bio)."
      },
      {
-      "url": "https://www.ucl.ac.uk/management/people/susansmith",
-      "title": "Susan Smith, UCL School of Management profile (HTTP 403 to the fetcher)"
+      "url": "https://www.ucl.ac.uk/management/about/our-people/meet-our-academic-faculty",
+      "title": "Meet our academic faculty | UCL School of Management",
+      "notes": "Read through the public reader proxy https://r.jina.ai/ on 2026-10-17 because www.ucl.ac.uk answers curl and the fetch tool with HTTP 403. Lists academics by group (Finance, Accounting & Economics; Marketing & Analytics; Operations & Technology; Organisations & Innovation; Strategy & Entrepreneurship), split into Academics and Education-focused academics, each with a title and a UCL Profiles link."
+     },
+     {
+      "url": "https://www.ucl.ac.uk/management/people",
+      "title": "Our people | UCL School of Management",
+      "notes": "Read through the public reader proxy https://r.jina.ai/ on 2026-10-17 because www.ucl.ac.uk answers curl and the fetch tool with HTTP 403. Read as markdown and as HTML; the Senior Leadership team is an accordion in which each heading (h2 button text) is the role title and the panel below it holds the name, office and email, so the roster extractor paired each name with the next person's heading."
      }
     ],
-    "profileUrl": null,
-    "titleConfirmed": null,
-    "areaConfirmed": null,
-    "phdInstitution": null,
-    "phdYear": null,
-    "phdSourceUrl": null,
+    "profileUrl": "https://profiles.ucl.ac.uk/93155-susan-smith",
+    "titleConfirmed": "Professor (Teaching) in Accounting (UCL Profiles); Professor (Education) and Deputy Director for Student Experience (School pages)",
+    "areaConfirmed": "UCL School of Management, Finance, Accounting & Economics (education-focused academics)",
+    "phdInstitution": "University of Sussex",
+    "phdYear": 2020,
+    "phdSourceUrl": "https://profiles.ucl.ac.uk/93155-susan-smith",
     "omListFacultyId": null,
     "note": null
    }
@@ -175912,23 +175978,31 @@
    "verification": "unverified",
    "review": {
     "status": "unresolved",
-    "checkedAt": "2026-10-16",
-    "reason": "The profile page shows only the name, a contact link and a link to an external 'detailed profile' (read via curl after the fetch tool returned the same content): no title, area or bio. The live Ivey Faculty Directory lists 'Brian Rivard' with an empty title and no area group; the 'Lecturer, Business Foundations' title in the chunk belongs to the next directory entry (Julianna Rizzo). The Ivey Discovery (Symplectic Elements) record for him, read from the JSON API behind discover.research.ivey.ca/brian-rivard because that page renders client-side, lists no position or appointment and only the label 'Ivey Energy Policy and Management Centre'. No opened page shows him as academic staff, so his status cannot be decided.",
+    "checkedAt": "2026-10-17",
+    "reason": "Re-checked. His Ivey Faculty Directory card has an empty title line, no area group and appointment code -1 (the code the directory gives entries with no appointment type), his profile page shows only name and contact, and his Discovery record has no positions, appointments or degrees, only the label 'Ivey Energy Policy and Management Centre'. That centre's 'Faculty & Staff' page, which lists faculty members together with the centre coordinator, names him 'Brian Rivard, Executive Residence' and describes an energy-market practitioner (a member of Ontario's Electricity Market Surveillance Panel, formerly a Principal at Charles River Associates and Director of Markets at the IESO) who received his MA and PhD in Economics from the University of Western Ontario (no year); it gives no faculty rank and does not say he teaches. Not an operations area. Earlier check (2026-10-16): his profile page and the directory showed no title, area or bio (the roster's 'Lecturer, Business Foundations' belongs to Julianna Rizzo), and his Discovery record listed no position, so his status could not be decided. Verifier: 'Executive Residence' on a centre page that lists both faculty and staff is a practitioner appointment, not a faculty title, and no opened Ivey page gives him a faculty rank or teaching role, so confirmed-faculty is not supported; the title, area and doctorate fields were removed (the doctorate the centre page states is kept in this reason only).",
     "sources": [
      {
+      "url": "https://www.ivey.uwo.ca/energycentre/about-us/faculty-staff/",
+      "title": "Faculty & Staff | Ivey Energy Policy and Management Centre",
+      "notes": "Read with curl on 2026-10-17. Lists Brandon Schaufele (Director), Adam Fremeth, Bissan Ghaddar, Guy Holburn, Joshua Pearce, 'Brian Rivard, Executive Residence' and Yixuan Pang (Centre Coordinator); Rivard's bio states he received his MA and PhD in Economics from the University of Western Ontario."
+     },
+     {
       "url": "https://www.ivey.uwo.ca/faculty_research/directory/brian-rivard/",
-      "title": "Brian Rivard | Faculty & Research | Ivey Business School faculty profile"
+      "title": "Brian Rivard | Faculty & Research | Ivey Business School",
+      "notes": "Read with curl on 2026-10-17. Shows only the name, a contact-by-email link and a link to the detailed profile; no title, area, biography or degrees."
      },
      {
       "url": "https://www.ivey.uwo.ca/faculty_research/directory/",
-      "title": "Ivey Business School Faculty Directory (resolved from http://www.ivey.uwo.ca/faculty/directory/; read via curl)"
+      "title": "Faculty Directory | Ivey Business School",
+      "notes": "Read with curl on 2026-10-17. Each card carries data-areagroup and data-appointment codes decoded by the page's own filters (appointment 0 Assistant Professor, 1 Professor, 2 Professor Emeritus, 3 Lecturer, 4 Associate Professor, 5 Adjunct Professor, 6 Dean). Twelve cards, including this person's, have an empty area group, appointment code -1 and an empty title line."
      },
      {
-      "url": "https://discover.research.ivey.ca/api/users/brian-rivard",
-      "title": "Ivey Discovery (Symplectic Elements) profile record for Brian Rivard (JSON API behind discover.research.ivey.ca/brian-rivard, which renders client-side)"
+      "url": "https://discover.research.ivey.ca/brian-rivard",
+      "title": "Brian Rivard | Ivey Discovery research profile",
+      "notes": "Script-drawn Symplectic Discovery page; read on 2026-10-17 from its public data endpoint https://discover.research.ivey.ca/api/users/brian-rivard with curl. The record has no positions, appointments, degrees or biography; its only label is 'Ivey Energy Policy and Management Centre' (Centres & Institutes & Labs)."
      }
     ],
-    "profileUrl": null,
+    "profileUrl": "https://www.ivey.uwo.ca/faculty_research/directory/brian-rivard/",
     "titleConfirmed": null,
     "areaConfirmed": null,
     "phdInstitution": null,
@@ -176820,22 +176894,34 @@
    "firstJob": null,
    "verification": "unverified",
    "review": {
-    "status": "unresolved",
-    "checkedAt": "2026-10-16",
-    "reason": "Ivey directory profile page exists but shows only the name, photo and a contact-by-email link, with no title, area group or biography; the cached directory listing also has an empty title for him (the chunk's 'Professor Emeritus, Strategy' belongs to a neighbouring entry) and the Discovery profile data has no positions, appointments or degrees. A web search for the name with Ivey/Western found nothing, so whether he is faculty, staff or a student cannot be decided.",
+    "status": "confirmed-faculty",
+    "checkedAt": "2026-10-17",
+    "reason": "Re-checked. His directory card still has an empty title, no area group and appointment code -1, his profile page shows only name and contact, and his Discovery record is empty. A site-restricted web search led to Ivey's 'Business Foundations Instructors' page (read with curl), which lists him among the instructors of 'Business 1299E: Business for Engineers' with the credential HBA (Ivey), an ivey.ca email and an office in Somerville House. He is confirmed as a Business Foundations course instructor on the school's own pages; the page gives no faculty rank, and no doctorate is shown, so none is recorded. Not an operations area. Earlier check (2026-10-16): his profile page and the directory showed no title, area or bio (the roster's 'Professor Emeritus, Strategy' belongs to a neighbouring entry), his Discovery data had no positions, and a web search found nothing, so his status could not be decided.",
     "sources": [
      {
-      "url": "https://www.ivey.uwo.ca/faculty_research/directory/daniel-rosin/",
-      "title": "Daniel Rosin, Ivey Business School faculty directory profile, Western University"
+      "url": "https://www.ivey.uwo.ca/pre-ivey-experiences/business-foundations-courses/instructors/",
+      "title": "Business Foundations Instructors | Ivey Business School",
+      "notes": "Read with curl on 2026-10-17 (found through a site-restricted web search). Lists the Business Foundations Faculty Directors and the instructors of Business 1220E, 1299E, 2257 and 2295F/G, each with credentials, an ivey.ca email and a Somerville House office."
      },
      {
-      "url": "https://discover.research.ivey.ca/api/users/daniel-rosin",
-      "title": "Daniel Rosin, Ivey Discovery research profile data (public JSON endpoint behind discover.research.ivey.ca/daniel-rosin, read with curl)"
+      "url": "https://www.ivey.uwo.ca/faculty_research/directory/daniel-rosin/",
+      "title": "Daniel Rosin | Faculty & Research | Ivey Business School",
+      "notes": "Read with curl on 2026-10-17. Shows only the name, a contact-by-email link and a link to the detailed profile; no title, area, biography or degrees."
+     },
+     {
+      "url": "https://www.ivey.uwo.ca/faculty_research/directory/",
+      "title": "Faculty Directory | Ivey Business School",
+      "notes": "Read with curl on 2026-10-17. Each card carries data-areagroup and data-appointment codes decoded by the page's own filters (appointment 0 Assistant Professor, 1 Professor, 2 Professor Emeritus, 3 Lecturer, 4 Associate Professor, 5 Adjunct Professor, 6 Dean). Twelve cards, including this person's, have an empty area group, appointment code -1 and an empty title line."
+     },
+     {
+      "url": "https://discover.research.ivey.ca/daniel-rosin",
+      "title": "Daniel Rosin | Ivey Discovery research profile",
+      "notes": "Script-drawn Symplectic Discovery page; read on 2026-10-17 from its public data endpoint https://discover.research.ivey.ca/api/users/daniel-rosin with curl. The record has no positions, appointments, degrees or biography."
      }
     ],
-    "profileUrl": null,
-    "titleConfirmed": null,
-    "areaConfirmed": null,
+    "profileUrl": "https://www.ivey.uwo.ca/faculty_research/directory/daniel-rosin/",
+    "titleConfirmed": "Instructor, Business 1299E: Business for Engineers (Business Foundations Instructors page)",
+    "areaConfirmed": "Ivey Business School, Business Foundations",
     "phdInstitution": null,
     "phdYear": null,
     "phdSourceUrl": null,
@@ -177751,26 +177837,29 @@
    "firstJob": null,
    "verification": "unverified",
    "review": {
-    "status": "unresolved",
-    "checkedAt": "2026-10-16",
-    "reason": "His Ivey directory page shows only his name and an email contact, with no title, discipline or biography, and the Ivey faculty directory lists 'Don Barclay' with no title line between Tima Bansal and David Barrett ('Assistant Professor, Operations Management', which is where the roster's title came from); the linked detailed profile at discover.research.ivey.ca renders no text, so neither his rank nor his area can be confirmed from the pages.",
+    "status": "confirmed-faculty",
+    "checkedAt": "2026-10-17",
+    "reason": "Re-checked. The directory card and profile page still show no title or area (the roster's 'Assistant Professor, Operations Management' is David Barrett's line). His linked detailed profile at discover.research.ivey.ca, which rendered no text before, was rendered with headless Chromium and read from its public data endpoint this time: under Ivey Business School Appointments it lists Assistant Professor (1 Jan 1985 - 30 Jun 1992), Associate Professor (1 Jul 1992 - 30 Jun 2008) and 'Emeriti-Ivey' (1 Jul 2008 - present), with over 100 linked publications. He is confirmed as emeritus faculty of the school; the record shows no area and no degrees, so no area or doctorate is recorded. Earlier check (2026-10-16): his directory page showed only name and email, the directory listing showed no title line, and the Discovery profile rendered no text, so neither rank nor area could be confirmed.",
     "sources": [
      {
+      "url": "https://discover.research.ivey.ca/don-barclay",
+      "title": "Don Barclay | Ivey Discovery research profile",
+      "notes": "Script-drawn Symplectic Discovery page; read on 2026-10-17 from its public data endpoint https://discover.research.ivey.ca/api/users/don-barclay with curl. Also rendered with headless Chromium on 2026-10-17. Ivey Business School Appointments: Associate Professor, 1 Jul 1992 - 30 Jun 2008; Emeriti-Ivey, 1 Jul 2008 - present; Assistant Professor, 1 Jan 1985 - 30 Jun 1992. No degrees, area or biography."
+     },
+     {
       "url": "https://www.ivey.uwo.ca/faculty_research/directory/don-barclay/",
-      "title": "Don Barclay, Ivey Business School faculty directory page"
+      "title": "Don Barclay | Faculty & Research | Ivey Business School",
+      "notes": "Read with curl on 2026-10-17. Shows only the name, a contact-by-email link and a link to the detailed profile; no title, area, biography or degrees."
      },
      {
       "url": "https://www.ivey.uwo.ca/faculty_research/directory/",
-      "title": "Ivey Business School faculty directory listing"
-     },
-     {
-      "url": "https://discover.research.ivey.ca/don-barclay",
-      "title": "Ivey Discover research profile (script-rendered, no text retrieved)"
+      "title": "Faculty Directory | Ivey Business School",
+      "notes": "Read with curl on 2026-10-17. Each card carries data-areagroup and data-appointment codes decoded by the page's own filters (appointment 0 Assistant Professor, 1 Professor, 2 Professor Emeritus, 3 Lecturer, 4 Associate Professor, 5 Adjunct Professor, 6 Dean). Twelve cards, including this person's, have an empty area group, appointment code -1 and an empty title line."
      }
     ],
-    "profileUrl": null,
-    "titleConfirmed": null,
-    "areaConfirmed": null,
+    "profileUrl": "https://www.ivey.uwo.ca/faculty_research/directory/don-barclay/",
+    "titleConfirmed": "Emeriti-Ivey (from 1 Jul 2008; Associate Professor 1992-2008 and Assistant Professor 1985-1992 before that)",
+    "areaConfirmed": "Ivey Business School (no area group shown)",
     "phdInstitution": null,
     "phdYear": null,
     "phdSourceUrl": null,
@@ -182247,20 +182336,28 @@
    "verification": "unverified",
    "review": {
     "status": "unresolved",
-    "checkedAt": "2026-10-16",
-    "reason": "Ivey profile page is a stub with only her name, photo and email, and the faculty directory listing shows no title line under her name (the chunk's 'Assistant Professor, Marketing' belongs to the next entry, Guneet Nagpal); her Discovery research record (JSON read with curl because the linked detailed profile is JavaScript-rendered) has no appointments, position or degrees, so neither rank nor area can be confirmed.",
+    "checkedAt": "2026-10-17",
+    "reason": "Tried now: the live directory card (empty title line, empty area group and appointment code -1, the code the directory uses for entries with no appointment type), her profile page (name, photo, email and detailed-profile link only), her Discovery record (no positions, appointments, degrees or bio), Ivey's Business Foundations Instructors page (she is not listed), a test copy of the directory named in a search result (test.ivey.uwo.ca, HTTP 403 directly and through the r.jina.ai reader proxy, and not the school's live page in any case), and two web searches, one restricted to Ivey and Western domains, which found only her directory page. No opened page gives her role, rank or area, so her status still cannot be decided. Earlier check (2026-10-16): her profile page was a stub, the directory showed no title under her name (the roster's 'Assistant Professor, Marketing' belongs to Guneet Nagpal), and her Discovery record had no appointments or degrees, so neither rank nor area could be confirmed.",
     "sources": [
      {
       "url": "https://www.ivey.uwo.ca/faculty_research/directory/lori-murray/",
-      "title": "Lori Murray, Ivey Business School faculty profile"
+      "title": "Lori Murray | Faculty & Research | Ivey Business School",
+      "notes": "Read with curl on 2026-10-17. Shows only the name, a contact-by-email link and a link to the detailed profile; no title, area, biography or degrees."
      },
      {
       "url": "https://www.ivey.uwo.ca/faculty_research/directory/",
-      "title": "Ivey Business School faculty directory"
+      "title": "Faculty Directory | Ivey Business School",
+      "notes": "Read with curl on 2026-10-17. Each card carries data-areagroup and data-appointment codes decoded by the page's own filters (appointment 0 Assistant Professor, 1 Professor, 2 Professor Emeritus, 3 Lecturer, 4 Associate Professor, 5 Adjunct Professor, 6 Dean). Twelve cards, including this person's, have an empty area group, appointment code -1 and an empty title line."
      },
      {
-      "url": "https://discover.research.ivey.ca/api/users/lori-murray",
-      "title": "Lori Murray, Ivey Discovery research profile record (JSON behind https://discover.research.ivey.ca/lori-murray, read with curl)"
+      "url": "https://discover.research.ivey.ca/lori-murray",
+      "title": "Lori Murray | Ivey Discovery research profile",
+      "notes": "Script-drawn Symplectic Discovery page; read on 2026-10-17 from its public data endpoint https://discover.research.ivey.ca/api/users/lori-murray with curl. The record has no positions, appointments, degrees or biography."
+     },
+     {
+      "url": "https://www.ivey.uwo.ca/pre-ivey-experiences/business-foundations-courses/instructors/",
+      "title": "Business Foundations Instructors | Ivey Business School",
+      "notes": "Read with curl on 2026-10-17 (found through a site-restricted web search). Lists the Business Foundations Faculty Directors and the instructors of Business 1220E, 1299E, 2257 and 2295F/G, each with credentials, an ivey.ca email and a Somerville House office. Lori Murray is not listed."
      }
     ],
     "profileUrl": null,
@@ -183254,20 +183351,28 @@
    "verification": "unverified",
    "review": {
     "status": "unresolved",
-    "checkedAt": "2026-10-16",
-    "reason": "Ivey profile page and the faculty directory listing show his name with no rank or area line (the chunk's 'Assistant Professor, Strategy' belongs to the adjacent entry, Mehdi Hossein-Nejad); the bio describes a lawyer and management consultant who teaches Fintech and Disruption of Banking at Ivey and Securities Law at Windsor Law School, and his Discovery research record (JSON read with curl) has no appointments or degrees, so his faculty status and any doctorate cannot be confirmed from these pages.",
+    "checkedAt": "2026-10-17",
+    "reason": "Tried now: the live directory card (empty title line, empty area group, appointment code -1), his profile page and Discovery record (bio only: a lawyer and management consultant at North Star Legal and North Star Consultants who teaches Fintech and Disruption of Banking at Ivey and Securities Law at Windsor Law School; no position, appointment or degree), the Scotiabank Digital Banking Lab team, education and student-engagement pages (he is not named), and one web search, which found only his directory page and unrelated pages about Michael King. His own Ivey page says he teaches at Ivey, but no opened page gives a title or rank, so whether to record him as faculty (for example a sessional instructor) is left to the integrator; no doctorate is stated. Earlier check (2026-10-16): his profile page and the directory showed no rank or area (the roster's 'Assistant Professor, Strategy' belongs to Mehdi Hossein-Nejad), the bio described a lawyer and consultant who teaches at Ivey, and his Discovery record had no appointments or degrees, so his status could not be confirmed.",
     "sources": [
      {
       "url": "https://www.ivey.uwo.ca/faculty_research/directory/michael-holder/",
-      "title": "Michael Holder, Ivey Business School faculty profile"
+      "title": "Michael Holder | Faculty & Research | Ivey Business School",
+      "notes": "Read with curl on 2026-10-17. Shows the name, contact link, detailed-profile link and a two-paragraph bio: lawyer and management consultant (North Star Legal, North Star Consultants) who teaches Fintech and Disruption of Banking at Ivey and Securities Law at Windsor Law School. No title, area or degrees."
      },
      {
       "url": "https://www.ivey.uwo.ca/faculty_research/directory/",
-      "title": "Ivey Business School faculty directory"
+      "title": "Faculty Directory | Ivey Business School",
+      "notes": "Read with curl on 2026-10-17. Each card carries data-areagroup and data-appointment codes decoded by the page's own filters (appointment 0 Assistant Professor, 1 Professor, 2 Professor Emeritus, 3 Lecturer, 4 Associate Professor, 5 Adjunct Professor, 6 Dean). Twelve cards, including this person's, have an empty area group, appointment code -1 and an empty title line."
      },
      {
-      "url": "https://discover.research.ivey.ca/api/users/michael-holder",
-      "title": "Michael Holder, Ivey Discovery research profile record (JSON behind https://discover.research.ivey.ca/michael-holder, read with curl)"
+      "url": "https://discover.research.ivey.ca/michael-holder",
+      "title": "Michael Holder | Ivey Discovery research profile",
+      "notes": "Script-drawn Symplectic Discovery page; read on 2026-10-17 from its public data endpoint https://discover.research.ivey.ca/api/users/michael-holder with curl. The record has the same bio as the Ivey profile and no positions, appointments or degrees."
+     },
+     {
+      "url": "https://www.ivey.uwo.ca/scotiabank-digital-banking-lab/the-lab/our-team/",
+      "title": "Our Team | Scotiabank Digital Banking Lab, Ivey Business School",
+      "notes": "Read with curl on 2026-10-17; Michael Holder is not named (the education and student-engagement pages of the lab, also read, do not name him either)."
      }
     ],
     "profileUrl": null,
@@ -185331,26 +185436,39 @@
    "firstJob": null,
    "verification": "unverified",
    "review": {
-    "status": "unresolved",
-    "checkedAt": "2026-10-16",
-    "reason": "Her Ivey directory page shows only her name, an email link and a link to a detailed profile, with no title, area or bio, and the faculty directory listing also shows her name with no title (the 'Professor Emeritus, Management Communications' title in the chunk belongs to the next directory entry, Denis Shackel). The detailed profile at discover.research.ivey.ca rendered only a 'Discovery' heading when opened, so the page does not show enough to decide whether she is academic staff.",
+    "status": "confirmed-faculty",
+    "checkedAt": "2026-10-17",
+    "reason": "Re-checked. Her directory card still has an empty title, no area group and appointment code -1 (the roster's 'Professor Emeritus, Management Communications' is Denis Shackel's line), her profile page shows only name and contact, and her Discovery record is empty. A site-restricted web search led to Ivey's 'Business Foundations Instructors' page (read with curl), which lists her among the instructors of 'Business 2257: Accounting and Business Analysis' with BMOS (Western), MSc (Ivey), an ivey.ca email and an office in Somerville House, and the 2026-27 Business 2257 course outline lists her under 'Business 2257 Instructors'. She is confirmed as a Business Foundations course instructor on the school's own pages; no faculty rank is given, and no doctorate is shown, so none is recorded. Not an operations area. Earlier check (2026-10-16): her directory page and the directory listing showed only her name (the title belonged to Denis Shackel) and the Discovery profile rendered only a heading, so whether she is academic staff could not be decided.",
     "sources": [
      {
-      "url": "https://www.ivey.uwo.ca/faculty_research/directory/ruqayyah-shabbir/",
-      "title": "Ruqayyah Shabbir, Ivey Business School directory page"
+      "url": "https://www.ivey.uwo.ca/pre-ivey-experiences/business-foundations-courses/instructors/",
+      "title": "Business Foundations Instructors | Ivey Business School",
+      "notes": "Read with curl on 2026-10-17 (found through a site-restricted web search). Lists the Business Foundations Faculty Directors and the instructors of Business 1220E, 1299E, 2257 and 2295F/G, each with credentials, an ivey.ca email and a Somerville House office."
      },
      {
-      "url": "https://www.ivey.uwo.ca/faculty_research/faculty/faculty-directory/",
-      "title": "Ivey Business School faculty directory"
+      "url": "https://www.ivey.uwo.ca/media/0v5j45hj/main-campus-business-2257-course-outline-fw-2026-27.pdf",
+      "title": "Course Outline, Business 2257: Accounting and Business Analysis, 2026-27 (Ivey Business Foundations)",
+      "notes": "PDF downloaded with curl on 2026-10-17 and read as text; the Contacts section lists the course coordinator, the Business Foundations Faculty Directors and seven 'Business 2257 Instructors', including Ruqayyah Shabbir, Somerville House 2315A."
+     },
+     {
+      "url": "https://www.ivey.uwo.ca/faculty_research/directory/ruqayyah-shabbir/",
+      "title": "Ruqayyah Shabbir | Faculty & Research | Ivey Business School",
+      "notes": "Read with curl on 2026-10-17. Shows only the name, a contact-by-email link and a link to the detailed profile; no title, area, biography or degrees."
+     },
+     {
+      "url": "https://www.ivey.uwo.ca/faculty_research/directory/",
+      "title": "Faculty Directory | Ivey Business School",
+      "notes": "Read with curl on 2026-10-17. Each card carries data-areagroup and data-appointment codes decoded by the page's own filters (appointment 0 Assistant Professor, 1 Professor, 2 Professor Emeritus, 3 Lecturer, 4 Associate Professor, 5 Adjunct Professor, 6 Dean). Twelve cards, including this person's, have an empty area group, appointment code -1 and an empty title line."
      },
      {
       "url": "https://discover.research.ivey.ca/ruqayyah-shabbir",
-      "title": "Ruqayyah Shabbir, Ivey Discovery detailed profile (rendered only a heading)"
+      "title": "Ruqayyah Shabbir | Ivey Discovery research profile",
+      "notes": "Script-drawn Symplectic Discovery page; read on 2026-10-17 from its public data endpoint https://discover.research.ivey.ca/api/users/ruqayyah-shabbir with curl. The record has no positions, appointments, degrees or biography."
      }
     ],
-    "profileUrl": null,
-    "titleConfirmed": null,
-    "areaConfirmed": null,
+    "profileUrl": "https://www.ivey.uwo.ca/faculty_research/directory/ruqayyah-shabbir/",
+    "titleConfirmed": "Instructor, Business 2257: Accounting and Business Analysis (Business Foundations Instructors page and 2026-27 course outline)",
+    "areaConfirmed": "Ivey Business School, Business Foundations",
     "phdInstitution": null,
     "phdYear": null,
     "phdSourceUrl": null,
@@ -186323,20 +186441,33 @@
    "verification": "unverified",
    "review": {
     "status": "unresolved",
-    "checkedAt": "2026-10-16",
-    "reason": "Her directory entry and her profile page show only her name, photo and contact link with no title, area or biography (the 'Lecturer, Finance' title in the chunk belongs to the neighbouring directory entry, John Peloza), and her research data record (read with curl) lists no position; nothing opened shows whether she is academic staff.",
+    "checkedAt": "2026-10-17",
+    "reason": "Tried now: the live directory card (empty title line, empty area group, appointment code -1), her profile page (name, photo, email and detailed-profile link only), her Discovery record (no positions, appointments, degrees or bio), Ivey's Business Foundations Instructors page (she is not listed) and two web searches. The only other Ivey page found is a 27 November 2017 Ivey blog post by a Tessa Peerless, described then as an HBA1 student; it does not show a current role and is not shown to be the same person. Her status still cannot be decided. Earlier check (2026-10-16): her directory entry and profile showed only name, photo and contact (the roster's 'Lecturer, Finance' belongs to John Peloza) and her research data record listed no position, so nothing showed whether she is academic staff.",
     "sources": [
      {
       "url": "https://www.ivey.uwo.ca/faculty_research/directory/tessa-peerless/",
-      "title": "Tessa Peerless, Ivey Business School faculty profile"
-     },
-     {
-      "url": "https://discover.research.ivey.ca/api/users/tessa-peerless",
-      "title": "Tessa Peerless, Ivey research profile data record (discover.research.ivey.ca API)"
+      "title": "Tessa Peerless | Faculty & Research | Ivey Business School",
+      "notes": "Read with curl on 2026-10-17. Shows only the name, a contact-by-email link and a link to the detailed profile; no title, area, biography or degrees."
      },
      {
       "url": "https://www.ivey.uwo.ca/faculty_research/directory/",
-      "title": "Ivey Business School faculty directory"
+      "title": "Faculty Directory | Ivey Business School",
+      "notes": "Read with curl on 2026-10-17. Each card carries data-areagroup and data-appointment codes decoded by the page's own filters (appointment 0 Assistant Professor, 1 Professor, 2 Professor Emeritus, 3 Lecturer, 4 Associate Professor, 5 Adjunct Professor, 6 Dean). Twelve cards, including this person's, have an empty area group, appointment code -1 and an empty title line."
+     },
+     {
+      "url": "https://discover.research.ivey.ca/tessa-peerless",
+      "title": "Tessa Peerless | Ivey Discovery research profile",
+      "notes": "Script-drawn Symplectic Discovery page; read on 2026-10-17 from its public data endpoint https://discover.research.ivey.ca/api/users/tessa-peerless with curl. The record has no positions, appointments, degrees or biography."
+     },
+     {
+      "url": "https://www.ivey.uwo.ca/pre-ivey-experiences/business-foundations-courses/instructors/",
+      "title": "Business Foundations Instructors | Ivey Business School",
+      "notes": "Read with curl on 2026-10-17 (found through a site-restricted web search). Lists the Business Foundations Faculty Directors and the instructors of Business 1220E, 1299E, 2257 and 2295F/G, each with credentials, an ivey.ca email and a Somerville House office. Tessa Peerless is not listed."
+     },
+     {
+      "url": "https://www.ivey.uwo.ca/news/blogs/2017/11/rob-khazzam-hba-09-expect-the-unexpected/",
+      "title": "Rob Khazzam, HBA '09: Expect the unexpected | Ivey Business School blog (27 Nov 2017)",
+      "notes": "Read with curl on 2026-10-17. Byline Tessa Peerless, described as an HBA1 student who attended the 2017 Ivey Leaders Forum; says nothing about any later role."
      }
     ],
     "profileUrl": null,
