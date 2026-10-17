@@ -34,3 +34,7 @@ node scripts/merge-placement-research.mjs research-handoff/placements-a/results.
 **The command above illustrates the accepted input paths; these results are already integrated. Do not replay the merge without a specific need, authorization to resume, and review of newer public corrections.** For older research helpers, `python scripts/restore-research-workbench.py` previews restoration; append `--apply` to copy missing work products into the ignored workbench. Existing differing files are never overwritten. This restores proposals and scripts, not full documents. Re-fetch only needed public evidence from the source catalogue before using helpers that expect source text. It performs no network requests and executes no research scripts.
 
 This is a dated snapshot. Preserve it and use separate proposals for subsequent work; do not confuse historical audit records or old batch scripts with current accepted facts. Update this guide and the handoff when later snapshots are published.
+
+## First-job pass for the faculty-page people (17 October 2026)
+
+[placements-roster/](placements-roster/README.md) holds the unmerged, unverified drafts of the first-job pass for the people found on the faculty pages, the partial verification state, and the workflow script and merge routine needed to finish it. They are not findings; merged results live in the public datasets.
