@@ -227,8 +227,8 @@ export async function renderMap(target, state, { onSelect, openProfile, isCurren
       g.append(body); L.dots.append(g); L.items.push([g, it]);
       // Touch screens emulate mouse events on whatever lies under the finger, which may not be the circle a
       // tap resolves to; only pointer devices get the hover behaviour.
-      g.addEventListener('mouseenter', () => { if (!M.panning && hoverable()) showCard(it, false); });
-      g.addEventListener('mouseleave', () => { if (hoverable() && M.selected !== it.id) hideCard(); });
+      g.addEventListener('mouseenter', () => { if (!M.panning && hoverable()) hoverEnter(it); });
+      g.addEventListener('mouseleave', () => { if (hoverable()) hoverLeave(it); });
       g.addEventListener('focus', () => { if (hoverable()) showCard(it, false); });
       g.addEventListener('keydown', e => { if (e.key === 'Enter') { e.preventDefault(); activate(it); } if (e.key === 'Escape') hideCard(); });
     });
@@ -298,7 +298,26 @@ export async function renderMap(target, state, { onSelect, openProfile, isCurren
   }
 
   // ---- Card ----
+  // A hover card stays open while the pointer travels from the circle to the card and while it is over
+  // the card, so its links can be clicked: leaving starts a short timer that the card cancels. A circle
+  // crossed on the way to an open card replaces it only if the pointer stays on that circle for a moment.
+  let hideTimer = 0, showTimer = 0, cardItem = null;
+  const HIDE_DELAY = 350, SWITCH_DELAY = 140;
+  function hoverEnter(it) {
+    clearTimeout(hideTimer); clearTimeout(showTimer);
+    if (!card.hidden && cardItem?.id === it.id) return;
+    if (card.hidden) showCard(it, false);
+    else showTimer = setTimeout(() => showCard(it, false), SWITCH_DELAY);
+  }
+  function hoverLeave(it) {
+    clearTimeout(showTimer);
+    if (cardItem?.id === it.id && M.selected !== it.id) hideSoon();
+  }
+  function hideSoon() { clearTimeout(hideTimer); hideTimer = setTimeout(() => { if (!M.selected) hideCard(); }, HIDE_DELAY); }
+  card.addEventListener('mouseenter', () => { clearTimeout(hideTimer); clearTimeout(showTimer); });
+  card.addEventListener('mouseleave', () => { if (hoverable() && !M.selected) hideSoon(); });
   function showCard(it, pinned) {
+    clearTimeout(hideTimer); clearTimeout(showTimer); cardItem = it;
     M.selected = pinned ? it.id : null;
     for (const [g, d] of M.layout.items) g.classList.toggle('selected', pinned && d.id === it.id);
     card.replaceChildren();
@@ -336,7 +355,7 @@ export async function renderMap(target, state, { onSelect, openProfile, isCurren
     if (left + cw > stage.clientWidth) left = p.x - p.r - 12 - cw;
     card.style.left = `${Math.max(0, left)}px`; card.style.top = `${Math.max(0, Math.min(stage.clientHeight - ch, top))}px`;
   }
-  function hideCard() { M.selected = null; card.hidden = true; if (M.layout) for (const [g] of M.layout.items) g.classList.remove('selected'); }
+  function hideCard() { clearTimeout(hideTimer); clearTimeout(showTimer); cardItem = null; M.selected = null; card.hidden = true; if (M.layout) for (const [g] of M.layout.items) g.classList.remove('selected'); }
   document.addEventListener('keydown', e => { if (e.key === 'Escape' && !card.hidden) hideCard(); });
 
   // ---- Legend ----
