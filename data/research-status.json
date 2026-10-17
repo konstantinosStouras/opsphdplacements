@@ -1,13 +1,13 @@
 {
   "version": 1,
   "metadata": {
-    "updatedAt": "2026-10-16",
+    "updatedAt": "2026-10-17",
     "total": 3156,
     "counts": {
-      "unresolved": 1145,
-      "verified": 863,
-      "not-yet-completed-phd": 1,
-      "pending": 1147
+      "unresolved": 1180,
+      "verified": 866,
+      "not-yet-completed-phd": 3,
+      "pending": 1107
     },
     "bySource": {
       "omlist": {
@@ -22,7 +22,10 @@
       "faculty-page": {
         "total": 1007,
         "counts": {
-          "pending": 1007
+          "pending": 967,
+          "unresolved": 35,
+          "not-yet-completed-phd": 2,
+          "verified": 3
         }
       }
     }
@@ -41587,10 +41590,21 @@
     {
       "facultyId": "roster:concordia-university:peter-rosenthal",
       "name": "Peter Rosenthal",
-      "status": "pending",
-      "checkedAt": null,
-      "sources": [],
-      "reason": "Individual first-placement research is pending.",
+      "status": "unresolved",
+      "checkedAt": "2026-10-17",
+      "reason": "The Concordia profile (read by plain request) shows only his name, the title Lecturer, Supply Chain and Business Technology Management, and an e-mail address: no degrees, no doctorate and no employment history. An ORCID public-API name search returned three Peter Rosenthal records (University of Colorado Boulder, a VA medical centre/Witwatersrand radiologist, Francis Crick Institute/Harvard), none linked to Concordia or supply chain, so none was used. No doctorate is documented for him, so neither a degree nor a first post-PhD job can be established; scope note for the integrator: he may not hold a research doctorate.",
+      "sources": [
+        {
+          "url": "https://www.concordia.ca/faculty/peter-rosenthal.html",
+          "title": "Peter Rosenthal - Concordia University",
+          "notes": "Read by plain curl request; profile lists title and e-mail only, no education or career history."
+        },
+        {
+          "url": "https://pub.orcid.org/v3.0/expanded-search/?q=given-names:Peter+AND+family-name:Rosenthal",
+          "title": "ORCID public API name search: Peter Rosenthal",
+          "notes": "Three records, none affiliated with Concordia or operations; not used (namesakes)."
+        }
+      ],
       "source": "faculty-page"
     },
     {
@@ -41632,28 +41646,71 @@
     {
       "facultyId": "roster:concordia-university:shahram-sharifi",
       "name": "Shahram Sharifi",
-      "status": "pending",
-      "checkedAt": null,
-      "sources": [],
-      "reason": "Individual first-placement research is pending.",
+      "status": "unresolved",
+      "checkedAt": "2026-10-17",
+      "reason": "The Concordia profile (read by plain request) shows only his titles (Lecturer, Mechanical, Industrial and Aerospace Engineering; Part-Time Professor, Supply Chain and Business Technology Management) and an e-mail: no degree, doctorate or career dates. An ORCID public-API search returned six Shahram Sharifi records (Cardiff University, Urmia/Islamic Azad University, University of Tehran and three without affiliation), none connected to Concordia, so none could be attributed to him. Concordia's thesis repository (Spectrum) returned HTTP 503 to the fetch tool and failed TLS verification with curl, so a possible Concordia dissertation could not be checked. No doctorate or first post-PhD job is established.",
+      "sources": [
+        {
+          "url": "https://www.concordia.ca/faculty/shahram-sharifi.html",
+          "title": "Shahram Sharifi - Concordia University",
+          "notes": "Read by plain curl request; titles and e-mail only."
+        },
+        {
+          "url": "https://pub.orcid.org/v3.0/expanded-search/?q=given-names:Shahram+AND+family-name:Sharifi",
+          "title": "ORCID public API name search: Shahram Sharifi",
+          "notes": "Six records; none affiliated with Concordia; identity not established, not used."
+        },
+        {
+          "url": "https://spectrum.library.concordia.ca/cgi/search/simple?q=Sharifi+Shahram",
+          "title": "Concordia Spectrum repository search (attempted)",
+          "notes": "Fetch tool got HTTP 503; curl failed TLS verification; not read."
+        }
+      ],
       "source": "faculty-page"
     },
     {
       "facultyId": "roster:concordia-university:sirage-alattas",
       "name": "Sirage Alattas",
-      "status": "pending",
-      "checkedAt": null,
-      "sources": [],
-      "reason": "Individual first-placement research is pending.",
+      "status": "unresolved",
+      "checkedAt": "2026-10-17",
+      "reason": "The Concordia profile (read by plain request) shows only the title Lecturer, Supply Chain and Business Technology Management and an e-mail; it states no degree, doctorate or employment history. An ORCID public-API search for the name returned no records. The Concordia Spectrum thesis repository could not be read (HTTP 503 to the fetch tool, TLS failure with curl). No doctorate or first post-PhD job is documented.",
+      "sources": [
+        {
+          "url": "https://www.concordia.ca/faculty/sirage-alattas.html",
+          "title": "Sirage Alattas - Concordia University",
+          "notes": "Read by plain curl request; title and e-mail only."
+        },
+        {
+          "url": "https://pub.orcid.org/v3.0/expanded-search/?q=given-names:Sirage+AND+family-name:Alattas",
+          "title": "ORCID public API name search: Sirage Alattas",
+          "notes": "Zero records."
+        }
+      ],
       "source": "faculty-page"
     },
     {
       "facultyId": "roster:concordia-university:sonia-benghiat",
       "name": "Sonia Benghiat",
-      "status": "pending",
-      "checkedAt": null,
-      "sources": [],
-      "reason": "Individual first-placement research is pending.",
+      "status": "not-yet-completed-phd",
+      "checkedAt": "2026-10-17",
+      "reason": "The Concordia profile of Associate Professor Salim Lahmiri lists, under 'Current Ph.D students', Sonia Benghiat (Ph.D. in Business Administration / Supply Chain and Business Technology Management, John Molson School of Business, Concordia University). Her own Concordia profile (read by plain request) shows only the title Lecturer, Supply Chain and Business Technology Management and an e-mail, with no degree. Her ORCID record (0009-0003-2151-8263) lists one undated Concordia employment and no education. The supervisor page carries no date, so completion after it was written cannot be excluded; no completed doctorate was found (the Concordia Spectrum thesis repository returned HTTP 503 / failed TLS and could not be checked). Treated as a doctoral candidate pending a recheck.",
+      "sources": [
+        {
+          "url": "https://www.concordia.ca/faculty/sonia-benghiat.html",
+          "title": "Sonia Benghiat - Concordia University",
+          "notes": "Read by plain curl request; title and e-mail only."
+        },
+        {
+          "url": "https://www.concordia.ca/faculty/salim-lahmiri.html",
+          "title": "Salim Lahmiri - Concordia University",
+          "notes": "Read by plain curl request; undated list of current Ph.D. students includes Sonia Benghiat (JMSB SCBTM Ph.D.)."
+        },
+        {
+          "url": "https://orcid.org/0009-0003-2151-8263",
+          "title": "ORCID record: Sonia Benghiat",
+          "notes": "Read via the ORCID public API; one undated Concordia University employment entry, no education."
+        }
+      ],
       "source": "faculty-page"
     },
     {
@@ -41785,10 +41842,16 @@
     {
       "facultyId": "roster:dartmouth-college:andrew-herchek",
       "name": "Andrew Herchek",
-      "status": "pending",
-      "checkedAt": null,
-      "sources": [],
-      "reason": "Individual first-placement research is pending.",
+      "status": "unresolved",
+      "checkedAt": "2026-10-17",
+      "reason": "The Dartmouth Engineering profile lists his education as BA Applied Mathematics & Computer Science, Colby College 2007; BE Engineering Sciences, Dartmouth 2008; MEM, Thayer School 2009; and MBA, Harvard Business School 2016. No doctorate is listed, so there is no post-PhD first job to establish. Scope note for the integrator: the profile indicates he does not hold a PhD.",
+      "sources": [
+        {
+          "url": "https://engineering.dartmouth.edu/community/faculty/andrew-herchek",
+          "title": "Andrew Herchek | Visiting Instructor | Dartmouth Engineering",
+          "notes": "Education section lists BA, BE, MEM and MBA only; no doctorate."
+        }
+      ],
       "source": "faculty-page"
     },
     {
@@ -41857,19 +41920,31 @@
     {
       "facultyId": "roster:dartmouth-college:jared-fry",
       "name": "Jared Fry",
-      "status": "pending",
-      "checkedAt": null,
-      "sources": [],
-      "reason": "Individual first-placement research is pending.",
+      "status": "unresolved",
+      "checkedAt": "2026-10-17",
+      "reason": "The Dartmouth Engineering profile describes him as founder and COO of Collision Communications and lists his education as AB Engineering Sciences, Dartmouth 2001; BE Engineering Sciences, Dartmouth 2002; and MEM Engineering Management, Dartmouth 2002. No doctorate is listed, so no post-PhD first job can be established. Scope note: the profile indicates he does not hold a PhD.",
+      "sources": [
+        {
+          "url": "https://engineering.dartmouth.edu/community/faculty/jared-fry",
+          "title": "Jared Fry | Visiting Instructor | Dartmouth Engineering",
+          "notes": "Education lists AB, BE and MEM; no doctorate."
+        }
+      ],
       "source": "faculty-page"
     },
     {
       "facultyId": "roster:dartmouth-college:jason-amaral",
       "name": "Jason Amaral",
-      "status": "pending",
-      "checkedAt": null,
-      "sources": [],
-      "reason": "Individual first-placement research is pending.",
+      "status": "unresolved",
+      "checkedAt": "2026-10-17",
+      "reason": "The Dartmouth Engineering profile describes 25 years as an executive and consultant and lists his education as BS Ceramic Engineering, Alfred University 1992 and SM Technology and Policy, MIT 1994. No doctorate is listed, so no post-PhD first job can be established. Scope note: the profile indicates he does not hold a PhD.",
+      "sources": [
+        {
+          "url": "https://engineering.dartmouth.edu/community/faculty/jason-amaral",
+          "title": "Jason Amaral | Visiting Instructor | Dartmouth Engineering",
+          "notes": "Education lists BS and SM only; no doctorate."
+        }
+      ],
       "source": "faculty-page"
     },
     {
@@ -41992,10 +42067,44 @@
     {
       "facultyId": "roster:erasmus-university-rotterdam:alok-gupta",
       "name": "Alok Gupta",
-      "status": "pending",
-      "checkedAt": null,
-      "sources": [],
-      "reason": "Individual first-placement research is pending.",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "employer": "University of Connecticut",
+      "position": "Visiting Assistant Professor, Department of Operations and Information Management",
+      "placementYear": 1996,
+      "category": "other-academic",
+      "evidenceUrl": "https://carlsonschool.umn.edu/sites/carlsonschool.umn.edu/files/faculty-cvcs/alok-gupta-cv.pdf",
+      "evidenceNote": "His CV lists a Ph.D. from the University of Texas at Austin (1996) and, as the earliest appointment, Visiting Assistant Professor, Dept. of OPIM, University of Connecticut, 1996-1997, followed by Assistant Professor at UConn 1997-2001 and Minnesota from 2001. The Carlson profile says he started his academic career in 1996 as a visiting assistant professor at UConn OPIM. ORCID dates the PhD to May 1996 and a UConn post from August 1996 (labelled Assistant Professor there, so the CV's visiting title for 1996-97 is used). No earlier post-PhD job is listed. Verifier: employment and degree re-read in the CV and ORCID and confirmed; the reason's statement that the CV lists several Erasmus talks was removed because the CV text contains no Erasmus or Rotterdam entry, and the identity link was restated from the CV's Ketter/van Heck flower-auction papers and the RSM page's iFlow article and ERIM award.",
+      "phdYearVerified": 1996,
+      "phdInstitutionVerified": "The University of Texas at Austin",
+      "reason": "Dated CV shows the first appointment after the May 1996 PhD was a visiting assistant professorship at UConn starting in 1996. Identity: the RSM page gives only 'Prof.dr. A. (Alok) Gupta', Visiting Professor, with an RSM Discovery article on AI for floriculture; his Minnesota CV lists flower-market and smart-market papers with RSM's Wolfgang Ketter and Eric van Heck (including papers on information disclosure and buyers' strategic behaviour in B2B flower auctions, the iFlow findings the RSM article describes), and the RSM page lists an ERIM Top Article Award (2013), so the RSM visitor is taken to be the Minnesota professor.",
+      "sources": [
+        {
+          "url": "https://www.rsm.nl/people/alok-gupta/",
+          "title": "Prof.dr. A. (Alok) Gupta - RSM",
+          "notes": "Visiting Professor, Department of Technology and Operations Management; no biography or degree text."
+        },
+        {
+          "url": "https://www.rsm.nl/discovery/2020/floriculture-ai/",
+          "title": "RSM Discovery: Optimise floriculture and make it more sustainable with AI algorithms",
+          "notes": "Features Gupta with Wolfgang Ketter; used for identity linkage only."
+        },
+        {
+          "url": "https://carlsonschool.umn.edu/faculty/alok-gupta",
+          "title": "Alok Gupta | Carlson School of Management",
+          "notes": "Says he started his academic career in 1996 as a visiting assistant professor at UConn OPIM and received his Ph.D. from UT Austin in 1996."
+        },
+        {
+          "url": "https://carlsonschool.umn.edu/sites/carlsonschool.umn.edu/files/faculty-cvcs/alok-gupta-cv.pdf",
+          "title": "Alok Gupta curriculum vitae (Carlson School)",
+          "notes": "Education: Ph.D. 1996 UT Austin. Appointments: Visiting Asst. Prof. UConn OPIM 1996-1997; Asst. Prof. UConn 1997-2001; Assoc. Prof. Minnesota 2001-2005; Professor from 2005. Coauthors include Ketter and van Heck (RSM)."
+        },
+        {
+          "url": "https://orcid.org/0000-0002-2097-1643",
+          "title": "ORCID record: Alok Gupta",
+          "notes": "Read via public API: Ph.D. UT Austin 1992-08 to 1996-05; University of Connecticut Assistant Professor 1996-08 to 2001-05; Minnesota from 2001-08."
+        }
+      ],
       "source": "faculty-page"
     },
     {
@@ -42055,10 +42164,26 @@
     {
       "facultyId": "roster:erasmus-university-rotterdam:peter-vervest",
       "name": "Peter Vervest",
-      "status": "pending",
-      "checkedAt": null,
-      "sources": [],
-      "reason": "Individual first-placement research is pending.",
+      "status": "unresolved",
+      "checkedAt": "2026-10-17",
+      "reason": "The RSM and Erasmus University profiles give his title (prof.dr. P.H.M. Vervest, professor of information management and networks, now visiting professor) and publications, but no doctorate details and no career history. His ORCID record (0000-0002-5301-9309) lists only Erasmus University Rotterdam employment: full professor 2009-01 to 2013-12 and 2014-01 to 2021-09, then visiting professor from 2021-09, with no education entries. One web search found no dissertation record or earlier career. The PhD institution and year, and the first post-PhD job, are not established.",
+      "sources": [
+        {
+          "url": "https://www.rsm.nl/people/peter-vervest/",
+          "title": "Peter Vervest - RSM",
+          "notes": "Short profile and publications; no degree or career dates."
+        },
+        {
+          "url": "https://www.eur.nl/en/people/peter-vervest",
+          "title": "prof.dr. PHM (Peter) Vervest | Erasmus University Rotterdam",
+          "notes": "Same biography text; lists visiting professor; no degree or career dates."
+        },
+        {
+          "url": "https://orcid.org/0000-0002-5301-9309",
+          "title": "ORCID record: Peter Vervest",
+          "notes": "Read via public API; Erasmus employment from 2009 only; no education."
+        }
+      ],
       "source": "faculty-page"
     },
     {
@@ -42118,10 +42243,21 @@
     {
       "facultyId": "roster:george-mason-university:andy-yao",
       "name": "Andy Yao",
-      "status": "pending",
-      "checkedAt": null,
-      "sources": [],
-      "reason": "Individual first-placement research is pending.",
+      "status": "unresolved",
+      "checkedAt": "2026-10-17",
+      "reason": "The George Mason profile says he holds B.S., M.S. and Ph.D. degrees in Computer Science, has worked in higher education since 1985 (positions including Full Professor, Program Manager and Department Chair) and in the private sector since 1983, but names no degree institution, degree year, employer or dated position. ORCID searches found two Andy Yao records with no matching affiliation or content. The PhD institution and year and the first post-PhD job are not established; the 1983 private-sector start may predate the doctorate.",
+      "sources": [
+        {
+          "url": "https://business.gmu.edu/profiles/ayao2",
+          "title": "Andy Yao | Costello College of Business, George Mason University",
+          "notes": "Biography: Ph.D. in Computer Science (no institution or year); higher education since 1985; private sector since 1983; no employers named."
+        },
+        {
+          "url": "https://pub.orcid.org/v3.0/expanded-search/?q=given-names:Andy+AND+family-name:Yao",
+          "title": "ORCID public API name search: Andy Yao",
+          "notes": "Two records (one Oxford, one empty); no link to George Mason; not used."
+        }
+      ],
       "source": "faculty-page"
     },
     {
@@ -42145,10 +42281,22 @@
     {
       "facultyId": "roster:george-mason-university:brian-ngac",
       "name": "Brian Ngac",
-      "status": "pending",
-      "checkedAt": null,
-      "sources": [],
-      "reason": "Individual first-placement research is pending.",
+      "status": "unresolved",
+      "checkedAt": "2026-10-17",
+      "reason": "The George Mason profile lists PhD in Information Technology (2024), MS (2017) and BS (2016), without naming the institution, and says he has been at George Mason since August 2012, teaching in higher education since January 2018 and joined the ISOM unit in 2019; it also describes industry roles at Parsons Corporation from a 2013 internship onward, undated. His academic post at George Mason therefore began about five years before the 2024 doctorate and continued, so it is not a new post-PhD job, and no new employer after 2024 is documented. His ORCID record (0000-0001-6368-5244) has no employment or education entries. Overlap noted; first post-PhD job not established.",
+      "sources": [
+        {
+          "url": "https://business.gmu.edu/profiles/bngac",
+          "title": "Brian Ngac | Costello College of Business, George Mason University",
+          "notes": "Education: PhD in Information Technology (2024), institution not named. Teaching since January 2018; joined ISOM 2019; Parsons roles undated."
+        },
+        {
+          "url": "https://orcid.org/0000-0001-6368-5244",
+          "title": "ORCID record: Brian Ngac",
+          "notes": "Read via public API; no employment or education entries."
+        }
+      ],
+      "phdYearVerified": 2024,
       "source": "faculty-page"
     },
     {
@@ -42289,10 +42437,16 @@
     {
       "facultyId": "roster:george-mason-university:toni-garcia",
       "name": "Toni Garcia",
-      "status": "pending",
-      "checkedAt": null,
-      "sources": [],
-      "reason": "Individual first-placement research is pending.",
+      "status": "unresolved",
+      "checkedAt": "2026-10-17",
+      "reason": "The George Mason profile says she joined Mason in fall 2015 as an instructor of business analytics after more than 13 years of teaching at Catholic University of America and Arizona State University, and lists her education as MS Statistics and BA Mathematics, Arizona State University. No doctorate is listed, so no post-PhD first job exists to establish. Scope note: the profile indicates she does not hold a PhD.",
+      "sources": [
+        {
+          "url": "https://business.gmu.edu/profiles/tgarcia3",
+          "title": "Toni Garcia | Costello College of Business, George Mason University",
+          "notes": "Education: MS Statistics and BA Mathematics (ASU); no doctorate."
+        }
+      ],
       "source": "faculty-page"
     },
     {
@@ -42442,10 +42596,16 @@
     {
       "facultyId": "roster:georgia-institute-of-technology:charles-easley",
       "name": "Charles Easley",
-      "status": "pending",
-      "checkedAt": null,
-      "sources": [],
-      "reason": "Individual first-placement research is pending.",
+      "status": "unresolved",
+      "checkedAt": "2026-10-17",
+      "reason": "The ISyE profile lists only a B.S. in Industrial Management (1986) from Georgia Tech and describes corporate roles (Kurt Salmon Associates, Lowe's, Walgreens) and his own firm, EPIC Performance Group. No doctorate is listed, so no post-PhD first job can be established. Scope note: the profile indicates he does not hold a PhD.",
+      "sources": [
+        {
+          "url": "https://www.isye.gatech.edu/users/charles-easley",
+          "title": "Charles Easley | Georgia Tech ISyE",
+          "notes": "Education: B.S. Industrial Management 1986 only."
+        }
+      ],
       "source": "faculty-page"
     },
     {
@@ -42469,10 +42629,16 @@
     {
       "facultyId": "roster:georgia-institute-of-technology:chris-gaffney",
       "name": "Chris Gaffney",
-      "status": "pending",
-      "checkedAt": null,
-      "sources": [],
-      "reason": "Individual first-placement research is pending.",
+      "status": "unresolved",
+      "checkedAt": "2026-10-17",
+      "reason": "The ISyE profile lists B.S. (1985) and M.S. (1986) in Industrial and Systems Engineering from Georgia Tech and a 25-year career at The Coca-Cola Company until 2020. No doctorate is listed, so no post-PhD first job can be established. Scope note: the profile indicates he does not hold a PhD.",
+      "sources": [
+        {
+          "url": "https://www.isye.gatech.edu/users/chris-gaffney",
+          "title": "Chris Gaffney | Georgia Tech ISyE",
+          "notes": "Education: B.S. 1985 and M.S. 1986 ISyE, Georgia Tech; no doctorate."
+        }
+      ],
       "source": "faculty-page"
     },
     {
@@ -42658,10 +42824,27 @@
     {
       "facultyId": "roster:georgia-institute-of-technology:gerald-thuesen",
       "name": "Gerald Thuesen",
-      "status": "pending",
-      "checkedAt": null,
-      "sources": [],
-      "reason": "Individual first-placement research is pending.",
+      "status": "unresolved",
+      "checkedAt": "2026-10-17",
+      "reason": "The ISyE profile shows only 'Professor (Retired)'. An ISyE news feature on Jerry Thuesen says he first came to Georgia Tech as an associate professor, hired by school chair Bob Lehrer (chair 1966-1978), received tenure in 1971, became full professor in 1977 and retired in 1996 after nearly 30 years; the article mentions 1968 as context but does not state his arrival year. An ASEE paper biography says he received his B.S., M.S. and Ph.D. in Industrial Engineering from Stanford, with no years. Arriving as an associate professor suggests earlier positions, which are undocumented. PhD year and first post-PhD job are not established.",
+      "sources": [
+        {
+          "url": "https://www.isye.gatech.edu/users/gerald-thuesen",
+          "title": "Gerald Thuesen | Georgia Tech ISyE",
+          "notes": "Title only (Professor, Retired); no education or history."
+        },
+        {
+          "url": "https://www.isye.gatech.edu/node/7365",
+          "title": "Retired ISyE Professor Jerry Thuesen Reflects on Tenure with ISyE",
+          "notes": "Arrived as associate professor (year not stated; 1968 given as context); tenure 1971; full professor 1977; retired 1996."
+        },
+        {
+          "url": "https://peer.asee.org/8344.pdf",
+          "title": "ASEE conference paper with author biography of Gerald J. Thuesen",
+          "notes": "B.S., M.S. and Ph.D. in Industrial Engineering from Stanford; no years."
+        }
+      ],
+      "phdInstitutionVerified": "Stanford University",
       "source": "faculty-page"
     },
     {
@@ -42685,10 +42868,21 @@
     {
       "facultyId": "roster:georgia-institute-of-technology:guillermo-lopez-velarde",
       "name": "Guillermo Lopez Velarde",
-      "status": "pending",
-      "checkedAt": null,
-      "sources": [],
-      "reason": "Individual first-placement research is pending.",
+      "status": "unresolved",
+      "checkedAt": "2026-10-17",
+      "reason": "The ISyE profile shows only the title Part Time Lecturer and an office; no education or career history. An ORCID name search returned only unrelated Velarde records, and a Georgia Tech repository (SMARTech) search found no thesis by him. No doctorate or first post-PhD job is documented.",
+      "sources": [
+        {
+          "url": "https://www.isye.gatech.edu/users/guillermo-lopez-velarde",
+          "title": "Guillermo Lopez Velarde | Georgia Tech ISyE",
+          "notes": "Title only."
+        },
+        {
+          "url": "https://repository.gatech.edu/server/api/discover/search/objects?query=Velarde&size=5",
+          "title": "Georgia Tech repository search: Velarde",
+          "notes": "No thesis by him found."
+        }
+      ],
       "source": "faculty-page"
     },
     {
@@ -42712,10 +42906,16 @@
     {
       "facultyId": "roster:georgia-institute-of-technology:harvey-donaldson",
       "name": "Harvey Donaldson",
-      "status": "pending",
-      "checkedAt": null,
-      "sources": [],
-      "reason": "Individual first-placement research is pending.",
+      "status": "unresolved",
+      "checkedAt": "2026-10-17",
+      "reason": "The ISyE profile lists M.S. Management (MIT, 1987), M.S. Operations Research (Alabama, 1967) and B.S. Industrial Engineering (Alabama, 1966), and a career at International Paper, Computer Sciences Corporation and 16 years at the U.S. Postal Service before joining Georgia Tech's general faculty in 1998. No doctorate is listed, so no post-PhD first job can be established. Scope note: the profile indicates he does not hold a PhD.",
+      "sources": [
+        {
+          "url": "https://www.isye.gatech.edu/users/harvey-donaldson",
+          "title": "Harvey Donaldson | Georgia Tech ISyE",
+          "notes": "Education: two M.S. degrees and a B.S.; no doctorate."
+        }
+      ],
       "source": "faculty-page"
     },
     {
@@ -42748,10 +42948,21 @@
     {
       "facultyId": "roster:georgia-institute-of-technology:i-hsiang-lee",
       "name": "I-Hsiang Lee",
-      "status": "pending",
-      "checkedAt": null,
-      "sources": [],
-      "reason": "Individual first-placement research is pending.",
+      "status": "unresolved",
+      "checkedAt": "2026-10-17",
+      "reason": "The ISyE profile shows only the title Lecturer and an office; no education or career history. An ORCID name search returned 189 loosely matching records with none identifiable as him, and a Georgia Tech repository search found no thesis under his name. No doctorate or first post-PhD job is documented.",
+      "sources": [
+        {
+          "url": "https://www.isye.gatech.edu/users/i-hsiang-lee",
+          "title": "I-Hsiang Lee | Georgia Tech ISyE",
+          "notes": "Title only."
+        },
+        {
+          "url": "https://repository.gatech.edu/server/api/discover/search/objects?query=Lee%2C%20I-Hsiang&size=5",
+          "title": "Georgia Tech repository search: Lee, I-Hsiang",
+          "notes": "No matching thesis."
+        }
+      ],
       "source": "faculty-page"
     },
     {
@@ -42955,19 +43166,41 @@
     {
       "facultyId": "roster:georgia-institute-of-technology:maurice-trebuchon",
       "name": "Maurice Trebuchon",
-      "status": "pending",
-      "checkedAt": null,
-      "sources": [],
-      "reason": "Individual first-placement research is pending.",
+      "status": "unresolved",
+      "checkedAt": "2026-10-17",
+      "reason": "The ISyE profile lists only a B.S. in Industrial Engineering (1986) from Georgia Tech and more than 25 years of consulting as a partner at IBM Global Business Services and PwC Consulting. No doctorate is listed, so no post-PhD first job can be established. Scope note: the profile indicates he does not hold a PhD.",
+      "sources": [
+        {
+          "url": "https://www.isye.gatech.edu/users/maurice-trebuchon",
+          "title": "Maurice Trebuchon | Georgia Tech ISyE",
+          "notes": "Education: B.S. Industrial Engineering 1986 only."
+        }
+      ],
       "source": "faculty-page"
     },
     {
       "facultyId": "roster:georgia-institute-of-technology:mohammad-bisheh",
       "name": "Mohammad Bisheh",
-      "status": "pending",
-      "checkedAt": null,
-      "sources": [],
-      "reason": "Individual first-placement research is pending.",
+      "status": "unresolved",
+      "checkedAt": "2026-10-17",
+      "reason": "The Georgia Tech ISyE page lists Mohammad Bisheh only as Part-Time Lecturer, with no dates, degree or biography. His ORCID record (as Mohammad Najjartabar Bisheh) lists a single employment, Postdoctoral Fellow, ISyE, Georgia Institute of Technology, from 2023-03, and no education entries; its works (for example a 2023 laser-scribing transfer-learning paper) match the topic of the Kansas State dissertation by Mohammad Najjartabar Bisheh (Doctor of Philosophy, Industrial & Manufacturing Systems Engineering, graduation month August 2022). Because the ORCID record does not carry the degree, it is not a complete dated chronology under the ORCID rule, the August 2022 to March 2023 interval is undocumented in any source opened, and the start of the part-time lectureship is not dated; no CV was found (one search, no result). So the postdoc cannot be shown to be his first post-PhD job. Verifier: first-job order not established (ORCID lists no degree or earlier history and the seven months after the degree are undocumented).",
+      "sources": [
+        {
+          "url": "https://www.isye.gatech.edu/users/mohammad-bisheh",
+          "title": "Mohammad Bisheh | Georgia Tech ISyE",
+          "notes": "Title Part-Time Lecturer only."
+        },
+        {
+          "url": "https://orcid.org/0000-0002-7791-2468",
+          "title": "ORCID record: Mohammad Najjartabar Bisheh",
+          "notes": "Read via public API: Postdoctoral Fellow, ISyE, Georgia Institute of Technology, 2023-03 to present; no education entries; works on manufacturing ML and supply chain."
+        },
+        {
+          "url": "https://hdl.handle.net/2097/42449",
+          "title": "Machine learning modeling for image segmentation in manufacturing and agriculture applications (K-State dissertation)",
+          "notes": "Read via the KREx repository API: Doctor of Philosophy, Industrial & Manufacturing Systems Engineering, Kansas State University, graduation month August, issued 2022."
+        }
+      ],
       "source": "faculty-page"
     },
     {
@@ -43009,10 +43242,28 @@
     {
       "facultyId": "roster:georgia-institute-of-technology:nicole-redder",
       "name": "Nicole Redder",
-      "status": "pending",
-      "checkedAt": null,
-      "sources": [],
-      "reason": "Individual first-placement research is pending.",
+      "status": "unresolved",
+      "checkedAt": "2026-10-17",
+      "reason": "The ISyE profile shows only the title Part Time Lecturer. The Georgia Tech repository records her Ph.D. dissertation 'Power Systems for Sustainability' (Operations Research, ISyE; advisors Santanu Dey and Valerie Thomas), issued 2025-07-30 with degree date August 2025. The start date of the part-time lectureship is not stated (it may have begun during the doctorate), and her ORCID record (0000-0003-4928-8909) is empty. The first post-PhD job is not established.",
+      "sources": [
+        {
+          "url": "https://www.isye.gatech.edu/users/nicole-redder",
+          "title": "Nicole Redder | Georgia Tech ISyE",
+          "notes": "Title only; no dates."
+        },
+        {
+          "url": "https://hdl.handle.net/1853/78723",
+          "title": "Power Systems for Sustainability (Georgia Tech dissertation)",
+          "notes": "Read via the repository API: Ph.D., Operations Research, Georgia Institute of Technology, issued 2025-07-30, submitted August 2025."
+        },
+        {
+          "url": "https://orcid.org/0000-0003-4928-8909",
+          "title": "ORCID record: Nicole Redder",
+          "notes": "Read via public API; no entries."
+        }
+      ],
+      "phdYearVerified": 2025,
+      "phdInstitutionVerified": "Georgia Institute of Technology",
       "source": "faculty-page"
     },
     {
@@ -43072,10 +43323,29 @@
     {
       "facultyId": "roster:georgia-institute-of-technology:r-gary-parker",
       "name": "R. Gary Parker",
-      "status": "pending",
-      "checkedAt": null,
-      "sources": [],
-      "reason": "Individual first-placement research is pending.",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "employer": "Georgia Institute of Technology",
+      "position": null,
+      "placementYear": 1972,
+      "category": "unknown",
+      "evidenceUrl": "https://www.isye.gatech.edu/users/r-gary-parker",
+      "evidenceNote": "The ISyE profile says he joined the faculty in January 1972 and retired at the end of 2011, and lists education '(1972), Kansas State University'. The Mathematics Genealogy Project records his Ph.D. from Kansas State University in 1972 (dissertation on a unified treatment of combinatorial problems; advisor Said Ashour) and Georgia Tech students. The rank on joining is not stated, and the degree month is unknown, so the January 1972 start may fall in the final months before conferral (overlap noted).",
+      "phdYearVerified": 1972,
+      "phdInstitutionVerified": "Kansas State University",
+      "reason": "Georgia Tech faculty appointment in January 1972 directly follows (or slightly precedes) the 1972 Kansas State Ph.D.; no other job is recorded. Category unknown because the profile does not give the starting rank.",
+      "sources": [
+        {
+          "url": "https://www.isye.gatech.edu/users/r-gary-parker",
+          "title": "R. Gary Parker | Georgia Tech ISyE",
+          "notes": "Joined the faculty January 1972; retired end of 2011; education (1972) Kansas State University, degree not labelled."
+        },
+        {
+          "url": "https://www.mathgenealogy.org/id.php?id=86498",
+          "title": "Mathematics Genealogy Project: R. Gary (Robert) Parker",
+          "notes": "Ph.D. Kansas State University 1972; advisor Said Ashour; students at Georgia Tech (1988, 1997)."
+        }
+      ],
       "source": "faculty-page"
     },
     {
@@ -43252,10 +43522,16 @@
     {
       "facultyId": "roster:georgia-institute-of-technology:tejas-santanam",
       "name": "Tejas Santanam",
-      "status": "pending",
-      "checkedAt": null,
-      "sources": [],
-      "reason": "Individual first-placement research is pending.",
+      "status": "not-yet-completed-phd",
+      "checkedAt": "2026-10-17",
+      "reason": "The ISyE profile lists 'Ph.D. Industrial Engineering (Expected 2028), Georgia Institute of Technology', M.S. Analytics (2022) and B.S. Industrial Engineering (2021), and says he is pursuing the Ph.D. part-time while working as a Research Engineer at Beep and lecturing at ISyE. The doctorate is not complete.",
+      "sources": [
+        {
+          "url": "https://www.isye.gatech.edu/users/tejas-santanam",
+          "title": "Tejas Santanam | Georgia Tech ISyE",
+          "notes": "Ph.D. expected 2028; currently part-time doctoral student."
+        }
+      ],
       "source": "faculty-page"
     },
     {
@@ -43414,10 +43690,16 @@
     {
       "facultyId": "roster:harvard-university:allison-h-mnookin",
       "name": "Allison H. Mnookin",
-      "status": "pending",
-      "checkedAt": null,
-      "sources": [],
-      "reason": "Individual first-placement research is pending.",
+      "status": "unresolved",
+      "checkedAt": "2026-10-17",
+      "reason": "The HBS profile (read by plain request; the fetch tool got HTTP 403) says she holds an M.B.A. from Harvard Business School and an AB from Harvard College, and describes roles at Oracle, Intuit and Quick Base before teaching at HBS. No doctorate is listed, so no post-PhD first job can be established. Scope note: the profile indicates she does not hold a PhD.",
+      "sources": [
+        {
+          "url": "https://www.hbs.edu/faculty/Pages/profile.aspx?facId=116971",
+          "title": "Allison H. Mnookin - Faculty - Harvard Business School",
+          "notes": "Read by plain curl request with a browser user agent; education MBA and AB only."
+        }
+      ],
       "source": "faculty-page"
     },
     {
@@ -43450,10 +43732,16 @@
     {
       "facultyId": "roster:harvard-university:christina-r-wing",
       "name": "Christina R. Wing",
-      "status": "pending",
-      "checkedAt": null,
-      "sources": [],
-      "reason": "Individual first-placement research is pending.",
+      "status": "unresolved",
+      "checkedAt": "2026-10-17",
+      "reason": "The HBS profile (read by plain request) says she holds a B.B.A. from Southern Methodist University and an M.B.A. from Harvard Business School, and describes investment banking at Goldman Sachs and Kidder Peabody, startup and family-office roles before HBS. No doctorate is listed, so no post-PhD first job can be established. Scope note: the profile indicates she does not hold a PhD.",
+      "sources": [
+        {
+          "url": "https://www.hbs.edu/faculty/Pages/profile.aspx?facId=109656",
+          "title": "Christina R. Wing - Faculty - Harvard Business School",
+          "notes": "Read by plain curl request; education BBA and MBA only."
+        }
+      ],
       "source": "faculty-page"
     },
     {
@@ -43495,10 +43783,34 @@
     {
       "facultyId": "roster:harvard-university:iavor-i-bojinov",
       "name": "Iavor I. Bojinov",
-      "status": "pending",
-      "checkedAt": null,
-      "sources": [],
-      "reason": "Individual first-placement research is pending.",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "employer": "LinkedIn",
+      "position": "Data Scientist",
+      "placementYear": 2018,
+      "category": "industry",
+      "evidenceUrl": "https://www.hbs.edu/ris/Profile%20Files/Iav%20Bojinov%20CV%20FINAL%20with%20collaborators%2005282024_db1d2e55-85bd-4842-8116-02b7dca2cae2.pdf",
+      "evidenceNote": "His CV (dated 05/28/2024) lists Ph.D., Statistics, Harvard University, 2018, and under work experience 'Data Scientist, LinkedIn, Mountain View, CA, 2018-2019', then Assistant Professor of Business Administration at Harvard from 8/01/2019. ORCID dates the PhD 2013-08 to 2018-05. The HBS profile confirms he worked as a data scientist at LinkedIn before joining HBS.",
+      "phdYearVerified": 2018,
+      "phdInstitutionVerified": "Harvard University",
+      "reason": "Dated CV shows the first job after the 2018 Harvard Ph.D. was a 2018-2019 data scientist role at LinkedIn, before the August 2019 HBS assistant professorship.",
+      "sources": [
+        {
+          "url": "https://www.hbs.edu/faculty/Pages/profile.aspx?facId=1199332",
+          "title": "Iavor I. Bojinov - Faculty - Harvard Business School",
+          "notes": "Read by plain curl request (fetch tool got HTTP 403); says before HBS he was a data scientist at LinkedIn; Ph.D. and MA in Statistics from Harvard."
+        },
+        {
+          "url": "https://www.hbs.edu/ris/Profile%20Files/Iav%20Bojinov%20CV%20FINAL%20with%20collaborators%2005282024_db1d2e55-85bd-4842-8116-02b7dca2cae2.pdf",
+          "title": "Iavor Bojinov CV (05/28/2024)",
+          "notes": "Education: Ph.D. Statistics Harvard 2018. Work experience: Data Scientist, LinkedIn, 2018-2019. Harvard appointment: Assistant Professor from 8/01/2019."
+        },
+        {
+          "url": "https://orcid.org/0000-0002-3470-8539",
+          "title": "ORCID record: Iavor Bojinov",
+          "notes": "Read via public API: PhD Statistics Harvard 2013-08 to 2018-05; HBS employment from 2019-08 (LinkedIn not listed)."
+        }
+      ],
       "source": "faculty-page"
     },
     {
@@ -43531,19 +43843,36 @@
     {
       "facultyId": "roster:harvard-university:rob-markey",
       "name": "Rob Markey",
-      "status": "pending",
-      "checkedAt": null,
-      "sources": [],
-      "reason": "Individual first-placement research is pending.",
+      "status": "unresolved",
+      "checkedAt": "2026-10-17",
+      "reason": "The HBS profile (read by plain request) says he earned his MBA from Harvard Business School and a BA in economics from Brown University. No doctorate is listed, so no post-PhD first job can be established. Scope note: the profile indicates he does not hold a PhD.",
+      "sources": [
+        {
+          "url": "https://www.hbs.edu/faculty/Pages/profile.aspx?facId=7754",
+          "title": "Rob Markey - Faculty - Harvard Business School",
+          "notes": "Read by plain curl request; education MBA and BA only."
+        }
+      ],
       "source": "faculty-page"
     },
     {
       "facultyId": "roster:harvard-university:roberto-verganti",
       "name": "Roberto Verganti",
-      "status": "pending",
-      "checkedAt": null,
-      "sources": [],
-      "reason": "Individual first-placement research is pending.",
+      "status": "unresolved",
+      "checkedAt": "2026-10-17",
+      "reason": "The HBS profile (read by plain request) describes him as Josefsson Family chair in Art and Innovation at the Stockholm School of Economics, faculty of the Harvard Ms/MBA and co-founder of Leadin'Lab at Politecnico di Milano, and mentions only an Honorary Doctorate from the University of Vaasa; it states no earned doctorate and no dated career. The Stockholm School of Economics MBA people page was opened but its text did not include his biography. One web search found no CV with a PhD or first-position date. The doctorate (if any) and the first post-PhD job are not established.",
+      "sources": [
+        {
+          "url": "https://www.hbs.edu/faculty/Pages/profile.aspx?facId=438654",
+          "title": "Roberto Verganti - Faculty - Harvard Business School",
+          "notes": "Read by plain curl request; honorary doctorate only; no dated history."
+        },
+        {
+          "url": "https://www.hhs.se/en/education/mba/people/peoples-profiles/roberto-verganti/",
+          "title": "Stockholm School of Economics MBA people profile: Roberto Verganti",
+          "notes": "Opened; served text contained programme information, not his education or career dates."
+        }
+      ],
       "source": "faculty-page"
     },
     {
@@ -43657,10 +43986,16 @@
     {
       "facultyId": "roster:hec-montreal:lourdel-olivier",
       "name": "Lourdel, Olivier",
-      "status": "pending",
-      "checkedAt": null,
-      "sources": [],
-      "reason": "Individual first-placement research is pending.",
+      "status": "unresolved",
+      "checkedAt": "2026-10-17",
+      "reason": "The HEC Montreal profile lists his education as Maitrise en administration des affaires (MBA), HEC Montreal, and Ingenieur ENSAM. No doctorate is listed, so no post-PhD first job can be established. Scope note: the profile indicates he does not hold a PhD.",
+      "sources": [
+        {
+          "url": "https://www.hec.ca/en/profs/olivier-lourdel",
+          "title": "Olivier Lourdel | HEC Montreal",
+          "notes": "Education: MBA HEC Montreal; engineering diploma ENSAM; no doctorate."
+        }
+      ],
       "source": "faculty-page"
     },
     {
@@ -43693,19 +44028,31 @@
     {
       "facultyId": "roster:hec-montreal:poirier-veronique",
       "name": "Poirier, Véronique",
-      "status": "pending",
-      "checkedAt": null,
-      "sources": [],
-      "reason": "Individual first-placement research is pending.",
+      "status": "unresolved",
+      "checkedAt": "2026-10-17",
+      "reason": "The HEC Montreal profile lists her education as a specialised bachelor's in applied mathematics (Universite de Montreal) and an M.Sc. in operations research (HEC Montreal). No doctorate is listed, so no post-PhD first job can be established. Scope note: the profile indicates she does not hold a PhD.",
+      "sources": [
+        {
+          "url": "https://www.hec.ca/en/profs/veronique-poirier",
+          "title": "Veronique Poirier | HEC Montreal",
+          "notes": "Education: bachelor's and M.Sc. only."
+        }
+      ],
       "source": "faculty-page"
     },
     {
       "facultyId": "roster:hec-montreal:poitras-claire",
       "name": "Poitras, Claire",
-      "status": "pending",
-      "checkedAt": null,
-      "sources": [],
-      "reason": "Individual first-placement research is pending.",
+      "status": "unresolved",
+      "checkedAt": "2026-10-17",
+      "reason": "The HEC Montreal profile lists her education as B.A.A. and MBA, both HEC Montreal. No doctorate is listed, so no post-PhD first job can be established. Scope note: the profile indicates she does not hold a PhD.",
+      "sources": [
+        {
+          "url": "https://www.hec.ca/en/profs/claire-poitras",
+          "title": "Claire Poitras | HEC Montreal",
+          "notes": "Education: B.A.A. and MBA only."
+        }
+      ],
       "source": "faculty-page"
     },
     {
@@ -43729,19 +44076,31 @@
     {
       "facultyId": "roster:ie-business-school:alber-sabanoglu-segura",
       "name": "Alber Sabanoglu Segura",
-      "status": "pending",
-      "checkedAt": null,
-      "sources": [],
-      "reason": "Individual first-placement research is pending.",
+      "status": "unresolved",
+      "checkedAt": "2026-10-17",
+      "reason": "The IE profile lists his academic background as B.S. Engineering and B.A. History, Brown University (1983) and M.A. Mathematics, Tufts University (1986), with dated posts (Instructor, Tufts 1984-89; Alcatel R&D engineer 1991-93; Assistant Professor, Carlos III University 1994-96; Assistant Professor, Universidad Alfonso X 1996-98; IE adjunct from 2003). No doctorate is listed, so no post-PhD first job can be established. Scope note: the profile indicates he does not hold a PhD.",
+      "sources": [
+        {
+          "url": "https://www.ie.edu/business-school/faculty-and-research/faculty/alber-sabanoglu-segura/",
+          "title": "Alber Sabanoglu Segura - Faculty | IE",
+          "notes": "Academic background: B.S., B.A. (Brown 1983), M.A. (Tufts 1986); no doctorate; dated career list."
+        }
+      ],
       "source": "faculty-page"
     },
     {
       "facultyId": "roster:iese-business-school:albert-girbal-puig",
       "name": "Albert Girbal Puig",
-      "status": "pending",
-      "checkedAt": null,
-      "sources": [],
-      "reason": "Individual first-placement research is pending.",
+      "status": "unresolved",
+      "checkedAt": "2026-10-17",
+      "reason": "The IESE profile lists Industrial Engineering (UPC), M.Sc. degrees in Energy Engineering and Mechanical Engineering (University of Pennsylvania), an EMBA (EADA) and a PDG at IESE, with an industrial management and consulting career. No doctorate is listed, so no post-PhD first job can be established. Scope note: the profile indicates he does not hold a PhD.",
+      "sources": [
+        {
+          "url": "https://www.iese.edu/faculty-research/faculty/albert-girbal/",
+          "title": "Albert Girbal Puig | IESE Business School",
+          "notes": "Education: engineering degree, two M.Sc., EMBA; no doctorate."
+        }
+      ],
       "source": "faculty-page"
     },
     {
@@ -43783,19 +44142,31 @@
     {
       "facultyId": "roster:iese-business-school:carlos-gavilanes",
       "name": "Carlos Gavilanes",
-      "status": "pending",
-      "checkedAt": null,
-      "sources": [],
-      "reason": "Individual first-placement research is pending.",
+      "status": "unresolved",
+      "checkedAt": "2026-10-17",
+      "reason": "The IESE profile says he holds an M.Sc. in Physics (Universidad Autonoma de Madrid) and an Executive MBA (IESE), and that he began as a theoretical-physics researcher at CSIC before Telefonica R&D, Telefonica corporate strategy and GSMA. No doctorate is listed, so no post-PhD first job can be established. Scope note: the profile indicates he does not hold a PhD.",
+      "sources": [
+        {
+          "url": "https://www.iese.edu/faculty-research/faculty/carlos-gavilanes/",
+          "title": "Carlos Gavilanes | IESE Business School",
+          "notes": "Education: M.Sc. Physics and Executive MBA; no doctorate."
+        }
+      ],
       "source": "faculty-page"
     },
     {
       "facultyId": "roster:iese-business-school:carlos-racca",
       "name": "Carlos Racca",
-      "status": "pending",
-      "checkedAt": null,
-      "sources": [],
-      "reason": "Individual first-placement research is pending.",
+      "status": "unresolved",
+      "checkedAt": "2026-10-17",
+      "reason": "The IESE profile lists only a degree in Electrical Engineering from the Escola Politecnica da Universidade de Sao Paulo and says he teaches IESE programmes in Brazil and is a visiting professor at AESE and IEEM. No doctorate is listed, so no post-PhD first job can be established. Scope note: the profile indicates he does not hold a PhD.",
+      "sources": [
+        {
+          "url": "https://www.iese.edu/faculty-research/faculty/carlos-racca/",
+          "title": "Carlos Racca | IESE Business School",
+          "notes": "Education: electrical engineering degree only."
+        }
+      ],
       "source": "faculty-page"
     },
     {
@@ -43936,19 +44307,48 @@
     {
       "facultyId": "roster:indian-institute-of-technology-iit-bombay:jv-prasad",
       "name": "JV Prasad",
-      "status": "pending",
-      "checkedAt": null,
-      "sources": [],
-      "reason": "Individual first-placement research is pending.",
+      "status": "unresolved",
+      "checkedAt": "2026-10-17",
+      "reason": "The IIT Bombay IEOR profile lists actuarial fellowships (Institute of Actuaries of India, Singapore, and the Institute and Faculty of Actuaries, UK), a Master's in Actuarial Science (Waterloo), an MBA and a Bachelor's in Engineering (University of Delhi), and dated industry roles (ICICI Lombard 2004-2019, Willis Towers Watson 2019-2021, own consultancy from September 2021). No doctorate is listed, so no post-PhD first job can be established. Scope note: the profile indicates he does not hold a PhD.",
+      "sources": [
+        {
+          "url": "https://www.ieor.iitb.ac.in/JV%20Prasad",
+          "title": "JV Prasad | IEOR @ IIT Bombay",
+          "notes": "Educational background lists actuarial qualifications, master's, MBA and bachelor's; no doctorate."
+        }
+      ],
       "source": "faculty-page"
     },
     {
       "facultyId": "roster:indian-institute-of-technology-iit-bombay:kavita-ramanan",
       "name": "Kavita Ramanan",
-      "status": "pending",
-      "checkedAt": null,
-      "sources": [],
-      "reason": "Individual first-placement research is pending.",
+      "status": "unresolved",
+      "checkedAt": "2026-10-17",
+      "reason": "Her CV (linked from her Brown site) lists the Ph.D. in Applied Mathematics, Brown University, May 1998, and employment beginning 02/1997-10/1997 as Postdoctoral Fellow, Technion, Haifa (with O. Zeitouni), then 11/1997-12/2002 Member of Technical Staff, Math Center, Bell Labs, then Carnegie Mellon from 2003 (associate professor 09/2003) and Brown from 2010; it also lists Visiting Professor, IIT Bombay (2023-2025), confirming identity. Both the Technion postdoc (begun 15 months before conferral) and Bell Labs (begun 6 months before conferral and continuing) started before the formal May 1998 degree, and no dissertation-completion date was found (the Mathematics Genealogy Project gives only the year 1998). If the dissertation was finished by early 1997, the Technion postdoc would be the first post-PhD job; under the overlap rules this cannot be decided from the documents opened, so the integrator should decide.",
+      "sources": [
+        {
+          "url": "https://appliedmath.brown.edu/people/kavita-ramanan",
+          "title": "Kavita Ramanan | Applied Mathematics, Brown University",
+          "notes": "Profile; links her personal site."
+        },
+        {
+          "url": "https://sites.google.com/brown.edu/kavita-ramanan/about",
+          "title": "Kavita Ramanan - About (personal site)",
+          "notes": "Links the Curriculum Vitae document."
+        },
+        {
+          "url": "https://docs.google.com/document/d/1XCODUzAQH9zIVRZIMB2Xv4P2i7FaI3hAODzGlpxAdnQ/edit?tab=t.0",
+          "title": "Kavita Ramanan curriculum vitae (Google Doc)",
+          "notes": "Read as plain-text export. Ph.D. Brown May 1998; Technion postdoc 02/1997-10/1997; Bell Labs MTS 11/1997-12/2002; CMU from 2003; Brown from 2010; visiting professor IIT Bombay 2023-2025."
+        },
+        {
+          "url": "https://www.mathgenealogy.org/id.php?id=193826",
+          "title": "Mathematics Genealogy Project: Kavita Ramanan",
+          "notes": "Search result lists Brown University 1998."
+        }
+      ],
+      "phdYearVerified": 1998,
+      "phdInstitutionVerified": "Brown University",
       "source": "faculty-page"
     },
     {
@@ -43990,19 +44390,31 @@
     {
       "facultyId": "roster:loyola-university-chicago:david-bohm",
       "name": "David Bohm",
-      "status": "pending",
-      "checkedAt": null,
-      "sources": [],
-      "reason": "Individual first-placement research is pending.",
+      "status": "unresolved",
+      "checkedAt": "2026-10-17",
+      "reason": "The Loyola Quinlan profile lists his education as MBA, University of Miami, and BA Biology, Indiana University Bloomington, and describes a consulting career with healthcare and technology firms. No doctorate is listed, so no post-PhD first job can be established. Scope note: the profile indicates he does not hold a PhD.",
+      "sources": [
+        {
+          "url": "https://www.luc.edu/quinlan/whyquinlan/facultyandstaff/profiles/bohmdavid.shtml",
+          "title": "David Bohm | Quinlan School of Business, Loyola University Chicago",
+          "notes": "Education: MBA and BA only."
+        }
+      ],
       "source": "faculty-page"
     },
     {
       "facultyId": "roster:loyola-university-chicago:diana-dram",
       "name": "Diana Dram",
-      "status": "pending",
-      "checkedAt": null,
-      "sources": [],
-      "reason": "Individual first-placement research is pending.",
+      "status": "unresolved",
+      "checkedAt": "2026-10-17",
+      "reason": "The Loyola Quinlan profile says she holds an MBA from Northwestern University, graduate degrees from Purdue University (MS Economics) and the University of Amsterdam (postgraduate degree in International Relations) and an undergraduate degree from Alexandru Ioan Cuza University, and that before Loyola she was Director of Global Supply Chain Resiliency and S&OP at McDonald's. No doctorate is listed, so no post-PhD first job can be established. Scope note: the profile indicates she does not hold a PhD.",
+      "sources": [
+        {
+          "url": "https://www.luc.edu/quinlan/whyquinlan/facultyandstaff/profiles/dramdiana.shtml",
+          "title": "Diana Dram | Quinlan School of Business, Loyola University Chicago",
+          "notes": "Education: MBA, MS, postgraduate and undergraduate degrees; no doctorate."
+        }
+      ],
       "source": "faculty-page"
     },
     {
@@ -44044,10 +44456,16 @@
     {
       "facultyId": "roster:loyola-university-chicago:haroon-qureshi",
       "name": "Haroon Qureshi",
-      "status": "pending",
-      "checkedAt": null,
-      "sources": [],
-      "reason": "Individual first-placement research is pending.",
+      "status": "unresolved",
+      "checkedAt": "2026-10-17",
+      "reason": "The Loyola Quinlan profile describes him as a PMP-certified project management and BPM advisor and lists his education as MS Information Management Systems, Loyola University Chicago. No doctorate is listed, so no post-PhD first job can be established. Scope note: the profile indicates he does not hold a PhD.",
+      "sources": [
+        {
+          "url": "https://www.luc.edu/quinlan/whyquinlan/facultyandstaff/profiles/qureshiharoon.shtml",
+          "title": "Haroon Qureshi | Quinlan School of Business, Loyola University Chicago",
+          "notes": "Education: MS only."
+        }
+      ],
       "source": "faculty-page"
     },
     {

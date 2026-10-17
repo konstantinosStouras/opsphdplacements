@@ -1,17 +1,17 @@
 # Research status
 
-Generated from committed-format public datasets by `node scripts/update-research-status.mjs`. Snapshot check date: 2026-10-16. Refresh this file with each data release. Git history identifies the published revision.
+Generated from committed-format public datasets by `node scripts/update-research-status.mjs`. Snapshot check date: 2026-10-17. Refresh this file with each data release. Git history identifies the published revision.
 
 | Measure | Count |
 |---|---:|
 | People in the database | 3156 |
 | of which OM List profiles | 2149 |
 | of which operations faculty found on the linked faculty pages | 1007 |
-| Individually reviewed profiles | 2009 |
-| Verified first jobs | 863 |
-| Researched but unresolved | 1145 |
-| Degree completion unconfirmed | 1 |
-| Pending individual review | 1147 |
+| Individually reviewed profiles | 2049 |
+| Verified first jobs | 866 |
+| Researched but unresolved | 1180 |
+| Degree completion unconfirmed | 3 |
+| Pending individual review | 1107 |
 | Initial program-register records | 13 |
 | Institutions in the initial register | 10 |
 
