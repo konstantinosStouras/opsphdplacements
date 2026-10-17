@@ -4,10 +4,9 @@
     "updatedAt": "2026-10-17",
     "total": 3161,
     "counts": {
-      "unresolved": 1732,
+      "unresolved": 1736,
       "verified": 1421,
-      "not-yet-completed-phd": 4,
-      "pending": 4
+      "not-yet-completed-phd": 4
     },
     "bySource": {
       "omlist": {
@@ -22,8 +21,7 @@
         "total": 1012,
         "counts": {
           "verified": 493,
-          "unresolved": 512,
-          "pending": 4,
+          "unresolved": 516,
           "not-yet-completed-phd": 3
         }
       }
@@ -44709,10 +44707,36 @@
     {
       "facultyId": "roster:carnegie-mellon-university:joe-beaman",
       "name": "Joe Beaman",
-      "status": "pending",
-      "checkedAt": null,
-      "sources": [],
-      "reason": "Individual first-placement research is pending.",
+      "status": "unresolved",
+      "checkedAt": "2026-10-17",
+      "reason": "No doctorate is documented in any source opened, so there is no PhD whose first job could be reviewed. The Tepper Operations Management area page lists him only as 'Adjunct Professor of Management; Director of Carnegie Mellon Dining Services', and its link to his individual profile (/joe-beaman, also tried as tepper/faculty-and-research/faculty-profiles/joe-beaman, beaman-joe and joseph-beaman) returns HTTP 404. The CMU Dining Services staff page, the Student Affairs 'who we are' page, a 2026 CMU dining news item and a Food Service Director article describe him as CMU's dining/foodservice director who also teaches a Restaurant Builder course as an adjunct, with no degrees, dates or prior employment. An ORCID public search (Beaman, Joe*, affiliation Carnegie) found no record. One web search found nothing further. The integrator should confirm whether this adjunct, whose primary post is a university dining director, belongs in the doctoral population at all.",
+      "sources": [
+        {
+          "url": "https://www.cmu.edu/tepper/faculty-and-research/academic-areas/operations-management",
+          "title": "Tepper School - Operations Management faculty",
+          "notes": "Read with curl. Lists Joe Beaman, Adjunct Professor of Management; Director of Carnegie Mellon Dining Services; profile link /joe-beaman returns 404."
+        },
+        {
+          "url": "https://cmu.edu/dining/about-us/who-we-are/dining-services.html",
+          "title": "CMU Dining Services - Who we are",
+          "notes": "Read with curl. Joe Beaman, Director of Dining Services; no biography, degrees or dates."
+        },
+        {
+          "url": "https://www.cmu.edu/student-affairs/about-us/who-we-are.html",
+          "title": "CMU Student Affairs - Who we are",
+          "notes": "Read with curl. Director of Dining Services listing only."
+        },
+        {
+          "url": "https://www.cmu.edu/dining/news/2026/newindining2026.html",
+          "title": "CMU Dining news 2026 - new dining locations (Tartan article)",
+          "notes": "Read with curl. Describes his current role managing Chartwells and local vendors; no education or career dates."
+        },
+        {
+          "url": "https://www.foodservicedirector.com/colleges-universities/meet-the-people-behind-the-local-flavors-of-carnegie-mellon-university",
+          "title": "Food Service Director - Meet the people behind the local flavors of Carnegie Mellon University",
+          "notes": "Read with curl. Calls him CMU Foodservice Director and an adjunct professor teaching the Restaurant Builder course; no degrees or dates."
+        }
+      ],
       "source": "faculty-page"
     },
     {
@@ -59481,19 +59505,41 @@
     {
       "facultyId": "roster:the-pennsylvania-state-university:maldonado-guillen-mauricio",
       "name": "Maldonado-Guillen, Mauricio",
-      "status": "pending",
-      "checkedAt": null,
-      "sources": [],
-      "reason": "Individual first-placement research is pending.",
+      "status": "unresolved",
+      "checkedAt": "2026-10-17",
+      "reason": "The Smeal directory profile (listed under the Research Faculty Directory, Supply Chain & Information Systems) gives only his name, department, e-mail and courses taught (FIN 408, SCM 301, SCM 450W, SCM 597); it shows no title, education, biography or employment history, and links no CV or personal site. No doctorate (institution or year) and no dated chronology were found: he is not listed in the Smeal SCIS doctoral-student directory; the Penn State electronic theses repository (etda.libraries.psu.edu) refused both the fetch tool and a plain request (HTTP 403); an ORCID public search for Maldonado*/Mauricio returned 40 records, none named Maldonado Guillen or affiliated with Penn State; a Crossref author query and two web searches found no dissertation or publication under this name; an OpenAlex query was refused for rate limit. The first post-PhD job, and whether he holds a doctorate at all, remain unknown. The roster title (Assistant Clinical Professor) comes from the faculty list, not from this profile.",
+      "sources": [
+        {
+          "url": "https://directory.smeal.psu.edu/mem7609",
+          "title": "Mauricio Maldonado Guillen - Smeal College of Business directory",
+          "notes": "Read with the fetch tool and curl. Department SCIS; courses taught only; no title, education, biography or dates."
+        },
+        {
+          "url": "https://directory.smeal.psu.edu/doctoral/?dept=scis",
+          "title": "Smeal Doctoral Students Directory - Supply Chain & Information Systems",
+          "notes": "Read with curl. He is not listed among current SCIS doctoral students."
+        },
+        {
+          "url": "https://pub.orcid.org/v3.0/expanded-search/?q=family-name:Maldonado*+AND+given-names:Mauricio&rows=20",
+          "title": "ORCID public API search - Maldonado / Mauricio",
+          "notes": "40 results; none is a Maldonado Guillen or has a Penn State affiliation."
+        }
+      ],
       "source": "faculty-page"
     },
     {
       "facultyId": "roster:the-pennsylvania-state-university:mowery-andrew",
       "name": "Mowery, Andrew",
-      "status": "pending",
-      "checkedAt": null,
-      "sources": [],
-      "reason": "Individual first-placement research is pending.",
+      "status": "unresolved",
+      "checkedAt": "2026-10-17",
+      "reason": "The Smeal staff-directory profile (Andy Mowery) describes a 34-year industry career, mainly at Johnson & Johnson and The Clorox Company, ending as Clorox Senior Vice President and Chief Product Supply Officer on retirement in December 2020, followed by board and advisory roles and adjunct teaching at Smeal (all other roles undated). It lists his education as a Bachelor of Science in Quantitative Business Analysis (as a Penn State alumnus) and a Master of Business Administration from Villanova University. No doctorate is stated, so there is no PhD whose first job could be reviewed. An ORCID public search for Mowery/Andrew found no record. The integrator should confirm whether this adjunct belongs in the doctoral population at all.",
+      "sources": [
+        {
+          "url": "https://directory.smeal.psu.edu/ajm9160",
+          "title": "Andy Mowery - Smeal College of Business staff directory",
+          "notes": "Read with the fetch tool and curl. Adjunct instructor; BS Quantitative Business Analysis (Penn State) and MBA (Villanova); no doctorate; industry career with only the December 2020 retirement dated."
+        }
+      ],
       "source": "faculty-page"
     },
     {
@@ -59593,10 +59639,31 @@
     {
       "facultyId": "roster:the-pennsylvania-state-university:palumbo-donna",
       "name": "Palumbo, Donna",
-      "status": "pending",
-      "checkedAt": null,
-      "sources": [],
-      "reason": "Individual first-placement research is pending.",
+      "status": "unresolved",
+      "checkedAt": "2026-10-17",
+      "reason": "Penn State's 23 August 2024 announcement (naming her Donna Palumbo-Miele) says she became executive director of the Smeal Center for Supply Chain Research on 26 August 2024, and lists a bachelor's in logistics from Penn State, an MBA from the University of Tampa and a doctorate in organizational leadership from Nova Southeastern University, with no years and without saying whether the doctorate is a PhD, EdD or DBA. Her prior career (founder of Concordia Supply Chain Group, leadership roles at EY, The Walt Disney Company, Johnson & Johnson and Bloomberg L.P., more than 12 years as an adjunct professor) is given without dates, so the doctorate year and the first new job after it cannot be established; the 2024 Penn State post is a late-career appointment, not shown to be the first post-doctoral job. Attempts: the chunk's profile page (smeal.psu.edu/cscr/about/leadership-staff) returned HTTP 503 to the fetch tool twice and failed TLS verification for curl; her Smeal directory entry shows only the executive-director title; the Smeal magazine article gives no education or dates; her ORCID record (Palumbo-Miele) has no education or employment entries; NSUWorks (Nova Southeastern's dissertation repository) refused the fetch tool and curl (HTTP 403). The doctorate field is organizational leadership, and its type is unknown, which the integrator should weigh for scope.",
+      "sources": [
+        {
+          "url": "https://www.psu.edu/news/smeal-college-business/story/penn-state-smeal-names-new-director-center-supply-chain-research",
+          "title": "Penn State Smeal names new director of Center for Supply Chain Research (23 August 2024)",
+          "notes": "Start 26 August 2024 as CSCR executive director; BS logistics Penn State, MBA Tampa, doctorate in organizational leadership Nova Southeastern (no years, type not stated); prior roles undated."
+        },
+        {
+          "url": "https://directory.smeal.psu.edu/dgp107",
+          "title": "Donna Palumbo - Smeal College of Business directory",
+          "notes": "Read with curl after a directory name search. Title: Executive Director of the Center for Supply Chain Research; no education or dates."
+        },
+        {
+          "url": "https://magazine.smeal.psu.edu/donna-palumbo-named-2024-women-in-supply-chain-award-winner-and-new-cscr-director/",
+          "title": "Smeal Magazine - Donna Palumbo named 2024 Women in Supply Chain award winner and new CSCR director",
+          "notes": "Read with the fetch tool (curl got 403). Lists EY, Disney and Johnson & Johnson without dates; no education."
+        },
+        {
+          "url": "https://orcid.org/0000-0003-2289-6816",
+          "title": "ORCID - Donna Palumbo-Miele",
+          "notes": "Read through the ORCID public API. Name only; no education or employment entries."
+        }
+      ],
       "source": "faculty-page"
     },
     {
