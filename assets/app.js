@@ -96,3 +96,26 @@ updateCitation();
 init();
 loadPrograms();
 renderUniversities(document.querySelector('#universities'),{openInstitution:name=>openInstitution(name)});
+
+// Reading progress: the thin line at the very top shows how far down the page the reader is, and the
+// menu link of the section in view turns blue.
+const progressBar=document.querySelector('.read-progress span');
+const navLinks=[...document.querySelectorAll('header nav a')];
+const navTargets=navLinks.map(a=>[a,document.querySelector(a.getAttribute('href'))]).filter(([,s])=>s);
+let progressQueued=false;
+function updateProgress(){
+  progressQueued=false;
+  const max=document.documentElement.scrollHeight-innerHeight;
+  const share=max>0?Math.min(1,Math.max(0,scrollY/max)):0;
+  if(progressBar)progressBar.style.transform=`scaleX(${share})`;
+  const line=Math.max(0,document.querySelector('header')?.getBoundingClientRect().bottom||0)+60;
+  let current=null,top=-Infinity;
+  for(const [a,s] of navTargets){const t=s.getBoundingClientRect().top;if(t<=line&&t>top){top=t;current=a;}}
+  if(share>=0.999&&navTargets.length)current=navTargets.reduce((m,x)=>x[1].getBoundingClientRect().top>m[1].getBoundingClientRect().top?x:m)[0];
+  for(const a of navLinks){a.classList.toggle('active',a===current);if(a===current)a.setAttribute('aria-current','location');else a.removeAttribute('aria-current');}
+}
+const queueProgress=()=>{if(!progressQueued){progressQueued=true;requestAnimationFrame(updateProgress);}};
+addEventListener('scroll',queueProgress,{passive:true});
+addEventListener('resize',queueProgress);
+if('ResizeObserver' in window)new ResizeObserver(queueProgress).observe(document.body);
+updateProgress();
