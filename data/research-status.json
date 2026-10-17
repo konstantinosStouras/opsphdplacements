@@ -4,24 +4,24 @@
     "updatedAt": "2026-10-17",
     "total": 3161,
     "counts": {
-      "unresolved": 1299,
-      "verified": 1858,
+      "unresolved": 1287,
+      "verified": 1870,
       "not-yet-completed-phd": 4
     },
     "bySource": {
       "omlist": {
         "total": 2149,
         "counts": {
-          "unresolved": 823,
-          "verified": 1325,
+          "unresolved": 813,
+          "verified": 1335,
           "not-yet-completed-phd": 1
         }
       },
       "faculty-page": {
         "total": 1012,
         "counts": {
-          "verified": 533,
-          "unresolved": 476,
+          "verified": 535,
+          "unresolved": 474,
           "not-yet-completed-phd": 3
         }
       }
@@ -1601,15 +1601,20 @@
       "facultyId": "omlist-88da6b307c8bf9df",
       "name": "Dimitrios A. Andritsos",
       "status": "unresolved",
-      "checkedAt": "2026-10-16",
+      "checkedAt": "2026-10-17",
+      "reason": "Second pass: the HEC Paris profile now shows publications but no biography in either the English or French version (plain curl), so the UCLA doctorate and pre-doctoral consulting reported in the first review can no longer be read there. His ORCID record (0000-0002-7491-9197) is empty; the Mathematics Genealogy Project has no entry; one web search for a CV found only general HEC pages; the Wayback Machine could not be reached through the proxy. The start of his first post after the 2011 UCLA degree remains undated. Earlier review (2026-10-16): the HEC biography gave the UCLA doctorate (2011) and pre-doctoral consulting but did not date his first academic employment.",
       "sources": [
         {
-          "url": "https://www.hec.edu/en/faculty-research/faculty-directory/faculty-member/andritsos-dimitriosa.",
-          "title": "Dimitrios A. Andritsos Profile",
-          "notes": "HEC biography verifies UCLA doctorate2011 and explicitly predoctoral consulting, but does not date first academic employment."
+          "url": "https://www.hec.edu/en/faculty-research/faculty-directory/faculty-member/andritsos-dimitriosa",
+          "title": "Dimitrios A. Andritsos - HEC Paris profile",
+          "notes": "Plain curl (English and French). Associate Professor; publication list only, no biography, education or dates on the current page."
+        },
+        {
+          "url": "https://orcid.org/0000-0002-7491-9197",
+          "title": "ORCID record 0000-0002-7491-9197 (Dimitrios Andritsos)",
+          "notes": "Public API: no education, employment or works."
         }
       ],
-      "reason": "HEC biography verifies UCLA doctorate2011 and explicitly predoctoral consulting, but does not date first academic employment.",
       "source": "omlist"
     },
     {
@@ -1994,13 +1999,28 @@
       "facultyId": "omlist-c4659ad1abfa433b",
       "name": "Luis Fernando Perez Armas",
       "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "Institutional CV dates Lille PhD to 2024 but lists IÉSEG teaching and research assistant continuously from 2019 to present while its heading says assistant professor. Appointment transition timing and first post-PhD role require clarification.",
+      "checkedAt": "2026-10-17",
+      "reason": "Second pass: theses.fr (2024ULILA006, 'Quantum Computing for Operations Research: A special approach for Project Scheduling', director Creemers) dates the Université de Lille defence to 16 April 2024. The IÉSEG profile and CV (plain curl) head him as Assistant Professor but list only 'Teaching and Research Assistant, IÉSEG, 2019 - present' (after Schlumberger 2012-2017), while his ORCID record (0000-0002-3680-2377, linked from the OM List page) lists 'Assistant Professor, Operations Management, IÉSEG' from 2019-08 with no change of title. The sources thus disagree on whether the IÉSEG post held since 2019 was converted to an assistant professorship on completion, and none dates such a conversion, so the converted-post rule cannot be applied and no new post after April 2024 is documented. Earlier review (2026-10-16): the IÉSEG CV dated the Lille PhD to 2024 but listed the IÉSEG teaching and research assistantship continuously from 2019 under an assistant-professor heading.",
       "sources": [
         {
+          "url": "https://theses.fr/2024ULILA006",
+          "title": "theses.fr 2024ULILA006 - Quantum Computing for Operations Research: A special approach for Project Scheduling",
+          "notes": "Read through the theses.fr API. Author Pérez Armas, Luis Fernando; Université de Lille; Sciences économiques; defended 16/04/2024; director Creemers."
+        },
+        {
           "url": "https://www.ieseg.fr/academ/ProdAcadem/200273.pdf",
-          "title": "Luis Fernando Perez Armas — Curriculum Vitae",
-          "notes": "Education and employment chronology reviewed; requires further clarification."
+          "title": "Luis Fernando Pérez Armas - IÉSEG CV",
+          "notes": "Plain curl. Heading Assistant Professor, Operations Management; Ph.D. Economics Lille 2024; Teaching and Research Assistant IÉSEG 2019-present; Project Manager Schlumberger 2012-2017."
+        },
+        {
+          "url": "https://www.ieseg.fr/en/faculty-and-research/professor/?id=3308",
+          "title": "Luis Fernando Pérez Armas - IÉSEG profile",
+          "notes": "Plain curl. Assistant Professor; same education and experience list; no start date for the assistant professorship."
+        },
+        {
+          "url": "https://orcid.org/0000-0002-3680-2377",
+          "title": "ORCID record 0000-0002-3680-2377 (luis fernando perez armas), public API",
+          "notes": "Employment: Institut d'Economie Scientifique Et de Gestion (IÉSEG), Operations Management, Assistant Professor, from 2019-08. No education entries."
         }
       ],
       "source": "omlist"
@@ -2826,13 +2846,23 @@
       "facultyId": "omlist-e2ccfd3b17cb9583",
       "name": "Xingyu Bai",
       "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "The PolyU biography dates Illinois doctorate to 2024 but does not date appointment start or give a complete employment chronology.",
+      "checkedAt": "2026-10-17",
+      "reason": "Second pass: the Illinois IDEALS record (plain curl) dates his Ph.D. dissertation 'Inventory management with incomplete information' (Industrial Engineering, directors Xin Chen and Alexander Stolyar) to 18 June 2024, graduation semester 2024-08. The PolyU LMS profile (plain curl) says that prior to joining PolyU he received the Illinois Ph.D. in 2024, and his ORCID record (0000-0001-5410-0064, linked from the profile) lists the PolyU assistant professorship without a start date. No source gives the date he joined PolyU, so the start year is undocumented and an interim post between August 2024 and PolyU cannot be excluded. Earlier review (2026-10-16): the PolyU biography dated the Illinois doctorate to 2024 but did not date the appointment.",
       "sources": [
         {
+          "url": "https://www.ideals.illinois.edu/items/132747",
+          "title": "Inventory management with incomplete information (IDEALS, University of Illinois)",
+          "notes": "Plain curl. Author Bai, Xingyu; issue date 2024-06-18; Ph.D. dissertation, Industrial & Enterprise Systems Engineering; directors Xin Chen and Alexander Stolyar; graduation semester 2024-08."
+        },
+        {
           "url": "https://www.polyu.edu.hk/lms/people/academic-staff/xingyu-bai/",
-          "title": "Xingyu Bai academic profile",
-          "notes": "The PolyU biography dates Illinois doctorate to 2024 but does not date appointment start or give a complete employment chronology."
+          "title": "Xingyu Bai - PolyU LMS profile",
+          "notes": "Plain curl. Assistant Professor; prior to joining PolyU received the Illinois Ph.D. in 2024 and a SUFE bachelor's in 2018; no start date."
+        },
+        {
+          "url": "https://orcid.org/0000-0001-5410-0064",
+          "title": "ORCID record 0000-0001-5410-0064 (Xingyu Bai), public API",
+          "notes": "Employment: The Hong Kong Polytechnic University, LMS, Assistant Professor, undated. No education entries."
         }
       ],
       "source": "omlist"
@@ -6266,13 +6296,18 @@
       "facultyId": "omlist-3095ace4fcd0a805",
       "name": "Marco Caserta",
       "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "Official profile lists Illinois lecturer 2003-2004 spanning 2004 doctorate and both consulting and Monterrey employment in 2004 without exact ordering.",
+      "checkedAt": "2026-10-17",
+      "reason": "Second pass: the IE profile (plain curl) gives the dated but year-only chronology: Ph.D. in Operations Research, University of Illinois at Chicago, 2001-2004; Lecturer, University of Illinois, 2003-2004 (begun before the degree); Consultant in Optimization, Goal Systems, Spain, 2004; Professor, Tecnológico de Monterrey, 2004-2007; postdoc at Hamburg 2007-2011; IE adjunct 2010-2013 and assistant professor from 2013. Both new 2004 posts began in the degree year, so the start year 2004 is clear, but which came first, and whether the consulting job was a full post, is not stated. ORCID 0000-0003-3844-6561 lists IE University only (undated); the second record is empty; one web search for a CV found nothing relevant; the UIC dissertation date was not found. Earlier review (2026-10-16): the IE profile listed the 2003-2004 Illinois lectureship spanning the 2004 doctorate and both the consulting and Monterrey posts in 2004 without an order.",
       "sources": [
         {
           "url": "https://www.ie.edu/university/about/faculty/marco-caserta/",
-          "title": "Marco Caserta public academic profile",
-          "notes": "Official profile lists Illinois lecturer 2003-2004 spanning 2004 doctorate and both consulting and Monterrey employment in 2004 without exact ordering."
+          "title": "Marco Caserta - IE University profile",
+          "notes": "Plain curl. Academic experience: IE Assistant Professor of Statistics 2013-; IE Adjunct 2010-2013; Postdoc Hamburg 2007-2011; Professor, Tecnológico de Monterrey 2004-2007; Lecturer, University of Illinois 2003-2004. Ph.D. UIC 2001-2004. Corporate: Consultant in Optimization, Goal Systems, Spain, 2004."
+        },
+        {
+          "url": "https://orcid.org/0000-0003-3844-6561",
+          "title": "ORCID record 0000-0003-3844-6561 (Marco Caserta)",
+          "notes": "Public API: employment IE University, undated; works from 2007."
         }
       ],
       "source": "omlist"
@@ -8681,13 +8716,23 @@
       "facultyId": "omlist-9b1598cc6d7dfc41",
       "name": "Daniel Corsten",
       "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "IE lists earlier St Gallen, LBS and corporate roles without dates for doctoral completion or the corporate positions; first post-doctoral employer cannot be ordered.",
+      "checkedAt": "2026-10-17",
+      "reason": "Second pass: the swisscovery library catalogue (SRU interface) records his doctoral dissertation 'Gestaltungsmodelle für Marketingaufgaben: Entwurf und Umsetzung im Investitionsgütermarketing' as Diss. Wirtschaftswiss. St. Gallen, 1997, Nr. 2047, and his Habilitationsschrift 'Efficient consumer response adoption' as Habil.-Schr. St. Gallen 2001; the imported 2001 PhD year therefore appears to be the habilitation year. His ORCID record (0000-0001-9496-0499) gives the St. Gallen PhD 1993-1997 and, as the first employment, Assistant/Associate Professor at the HSG Institute of Technology Management 1998-2005 (then visiting INSEAD 2000-2001, Wharton 2005, LBS 2006-2007, IE from 2007); the IE profile lists associate professor at St. Gallen 2001-2005. The St. Gallen assistant professorship from 1998 is thus the likely first post, but the IE profile also lists undated corporate roles (international marketing manager at Bayer AG, logistics project manager at Agfa in New Jersey) that ORCID omits, and no source places them before the 1997 degree; with ORCID giving only years, a corporate role in 1997-1998 cannot be excluded. One web search found no dated biography. Earlier review (2026-10-16): the IE profile listed earlier St. Gallen, LBS and corporate roles without dates for the doctorate or the corporate positions.",
       "sources": [
         {
+          "url": "https://swisscovery.slsp.ch/view/sru/41SLSP_NETWORK?version=1.2&operation=searchRetrieve&maximumRecords=20&query=alma.creator%3D%22Corsten%2C%20Daniel%22",
+          "title": "swisscovery catalogue records for Daniel Corsten (SRU)",
+          "notes": "Read as MARC XML. 'Gestaltungsmodelle für Marketingaufgaben' by Daniel Simon Corsten: Diss. Wirtschaftswiss. St. Gallen, 1997, Nr 2047. 'Efficient consumer response adoption': Habil.-Schr., Univ. St. Gallen, 2001."
+        },
+        {
+          "url": "https://orcid.org/0000-0001-9496-0499",
+          "title": "ORCID record 0000-0001-9496-0499 (Daniel Corsten), public API",
+          "notes": "Education: University St. Gallen PhD 1993-1997. Employment: HSG Institute of Technology Management Assistant/Associate Professor 1998-2005; IE University Professor from 2007. Invited: INSEAD 2000-2001, Wharton Visiting Scholar 2005, LBS 2006-2007, HBS 2018. Years only."
+        },
+        {
           "url": "https://www.ie.edu/university/about/faculty/daniel-corsten/",
-          "title": "Daniel Corsten academic profile",
-          "notes": "IE lists earlier St Gallen, LBS and corporate roles without dates for doctoral completion or the corporate positions; first post-doctoral employer cannot be ordered."
+          "title": "Daniel Corsten - IE University profile",
+          "notes": "Plain curl. IE associate professor 2007-; visiting associate professor LBS 2006-2007; associate professor St. Gallen 2001-2005; PhD at St. Gallen where he was also assistant professor; MSc Cologne; corporate experience Bayer AG and Agfa AG, undated."
         }
       ],
       "source": "omlist"
@@ -8851,16 +8896,34 @@
     {
       "facultyId": "omlist-2026a8c977c165f9",
       "name": "Florian Cramer",
-      "status": "unresolved",
-      "checkedAt": "2026-10-16",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "employer": "IÉSEG School of Management",
+      "position": "Assistant Professor of Supply Chain Management (Operations Management)",
+      "placementYear": 2025,
+      "category": "unknown",
+      "evidenceUrl": "https://orcid.org/0000-0002-5596-6035",
+      "evidenceNote": "His ORCID record (self-maintained, linked from the OM List page) gives the Dr. rer. pol. at the University of Bayreuth from 2021-05-01 to 2025-04-29 and employment as Research Fellow, Chair of Food Supply Chain Management, Bayreuth, 2021-05-01 to 2025-04-30; Researcher Food Supply, Kühne Logistics University, 2022-05-01 to 2025-06-30; and Assistant Professor Supply Chain Management, IÉSEG, from 2025-09-01. The KLU research post began three years before the degree and ended two months after it, so it is a continuing pre-degree role, not a new job; the IÉSEG assistant professorship is the first new post. The IÉSEG CV gives the same posts by year and the 2025 Bayreuth doctorate. Category unknown: a French assistant-professor title without a stated tenure track.",
+      "phdYearVerified": 2025,
+      "phdInstitutionVerified": "University of Bayreuth",
+      "reason": "Second pass: ORCID 0000-0002-5596-6035 (Florian Cramer; affiliations IÉSEG, KLU, Bayreuth) gives the month-level chronology missing from the IÉSEG CV: doctorate ending 29 April 2025, the KLU researcher post continuing to 30 June 2025, and the IÉSEG assistant professorship from 1 September 2025.",
       "sources": [
         {
+          "url": "https://orcid.org/0000-0002-5596-6035",
+          "title": "ORCID record 0000-0002-5596-6035 (Florian Cramer), public API",
+          "notes": "Education: University of Bayreuth, Economics, Dr. rer. pol., 2021-05-01 to 2025-04-29. Employment: Bayreuth Chair of Food SCM Research Fellow 2021-05-01 to 2025-04-30; KLU Research Group on Food SCM, Researcher Food Supply, 2022-05-01 to 2025-06-30; IÉSEG, Operations Management, Assistant Professor Supply Chain Management, from 2025-09-01."
+        },
+        {
           "url": "https://www.ieseg.fr/academ/ProdAcadem/249804.pdf",
-          "title": "Florian Cramer curriculum vitae",
-          "notes": "CV shows doctorate in 2025 and research associate roles through 2025, but lacks IÉSEG appointment start date and within-year chronology."
+          "title": "Florian Cramer - IÉSEG CV",
+          "notes": "Plain curl. Assistant Professor, Operations Management; Dr.rer.pol. Bayreuth 2025; Research Associate KLU 2022-2025; Research Assistant Bayreuth 2021-2025; EDEKA posts 2013-2021 before the doctorate."
+        },
+        {
+          "url": "https://www.ieseg.fr/en/faculty-and-research/professor/?id=143748618",
+          "title": "Florian Cramer - IÉSEG profile",
+          "notes": "Plain curl. Same education and experience list as the CV; no start date for IÉSEG."
         }
       ],
-      "reason": "CV shows doctorate in 2025 and research associate roles through 2025, but lacks IÉSEG appointment start date and within-year chronology.",
       "source": "omlist"
     },
     {
@@ -9596,13 +9659,23 @@
       "facultyId": "omlist-bd0df95c1dfccf73",
       "name": "Christian van Delft",
       "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "The HEC Paris profile gives a 1991 Université de Genève doctorate and lists institutions where he has taught (HEC Genève, École Centrale Paris, HEC Lausanne, EPFL) without dates or titles, so the first post-doctoral position is not identified. The profile is also internally inconsistent about the degree name.",
+      "checkedAt": "2026-10-17",
+      "reason": "Second pass: the Mathematics Genealogy Project (id 113930) records his Ph.D. at the Université de Genève in 1991 with advisors Jean-Philippe Vial and Alain Haurie, matching the imported year. The HEC Paris profile (plain curl) says only that he received a Ph.D. in Operations Management from HEC Genève and has taught at HEC-Genève, École Centrale Paris, HEC-Lausanne and EPFL, without dates, titles or order; his ORCID record (0000-0001-9488-019X) lists HEC Paris 'professeur' with no dates and an undated HEC Paris education entry. The Geneva archive-ouverte record is a script-drawn portal that returned only its shell. When he joined HEC Paris and what post followed the 1991 degree are not documented. Earlier review (2026-10-16): the HEC Paris profile gave the 1991 Geneva doctorate and teaching institutions without dates or titles.",
       "sources": [
         {
+          "url": "https://www.mathgenealogy.org/id.php?id=113930",
+          "title": "Christian van Delft - Mathematics Genealogy Project",
+          "notes": "Ph.D. Université de Genève 1991; advisors Jean-Philippe Vial and Alain Haurie; one student (Ali Cheaitou, École Centrale 2008)."
+        },
+        {
           "url": "https://www.hec.edu/en/faculty-research/faculty-directory/faculty-member/vandelft-christian",
-          "title": "HEC Paris - Christian van Delft",
-          "notes": "Education and teaching affiliations without dates."
+          "title": "Christian van Delft - HEC Paris profile",
+          "notes": "Plain curl. Associate Professor, ISOM; Ph.D. in Operations Management from HEC Genève; taught at HEC-Genève, École Centrale Paris, HEC-Lausanne, EPFL; no dates."
+        },
+        {
+          "url": "https://orcid.org/0000-0001-9488-019X",
+          "title": "ORCID record 0000-0001-9488-019X (van Delft Christian)",
+          "notes": "Public API: employment HEC Paris, 'professeur', undated; education HEC Paris MOSI, undated."
         }
       ],
       "source": "omlist"
@@ -14469,19 +14542,38 @@
     {
       "facultyId": "omlist-dda159d4a5088c82",
       "name": "Jorge Mendoza Gimenez",
-      "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "First post-PhD job not established. The HEC Montréal profile opened lists a PhD in Applied Computer Science from Université de Nantes plus a PhD/MSc from Universidad de los Andes without years; search summaries say he was previously associate professor at Polytech Tours (Université de Tours) before joining HEC in 2018, but no dated CV was opened, so the sequence (Nantes 2009 PhD, any postdoc/ATER, Los Andes, Tours) and start years are unknown. Two doctorates mean the 2009 degree year and which doctorate is the 'PhD' also need confirmation.",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "employer": "Université Catholique de l'Ouest",
+      "position": "Associate Professor (Institut de Mathématiques Appliquées)",
+      "placementYear": 2009,
+      "category": "unknown",
+      "evidenceUrl": "https://orcid.org/0000-0003-2473-2655",
+      "evidenceNote": "His ORCID record (self-maintained, read through the public API) gives the Université de Nantes doctorate in applied computer science from 2007-01-07 to 2009-12-04 and, as the earliest employment, Associate Professor at the Institut de Mathématiques Appliquées, Université Catholique de l'Ouest (Angers), from 2009-11-16 to 2014-08-31; then Polytech Tours (Université de Tours) Associate Professor 2014-09 to 2018-08, HEC Montréal visiting professor from 2018-08-27 and associate professor from 2020-01-06. Overlap: the UCO post began about three weeks before the 4 December 2009 doctorate date and was not retitled, so it is the first job with its own start year. Category unknown: a French private-university associate-professor title whose permanence is not stated.",
+      "phdYearVerified": 2009,
+      "phdInstitutionVerified": "Université de Nantes",
+      "phdInstitutionResolution": "The chunk (OM List import) gives École des Mines de Nantes. theses.fr (2009NANT2051, 'Solving real-world vehicle routing problems in uncertain environments', Informatique appliquée) and his ORCID record and personal site name Université de Nantes as the awarding institution; his personal site lists him as a PhD student at École des Mines de Nantes, where the research was done, and a second 2009 PhD in industrial engineering from Universidad de los Andes (co-supervised, directors Guéret, Medaglia, Castanier, Velasco).",
+      "reason": "Second pass: the ORCID public API record (0000-0003-2473-2655, linked from his personal site) gives a dated chronology starting with the Université Catholique de l'Ouest associate professorship from 16 November 2009, which began just before the 4 December 2009 doctorate date; theses.fr dates the Nantes thesis 2009 and his personal site lists both 2009 doctorates (Nantes and Los Andes). The HEC Montréal profile (plain curl) still gives degrees without years.",
       "sources": [
         {
-          "url": "https://www.hec.ca/en/profs/jorge-mendoza",
-          "title": "HEC Montréal faculty profile, Jorge Mendoza Gimenez",
-          "notes": "Opened: education list (Nantes PhD, Los Andes PhD and MSc) without years; no career chronology."
+          "url": "https://orcid.org/0000-0003-2473-2655",
+          "title": "ORCID record 0000-0003-2473-2655 (Jorge E. Mendoza), public API",
+          "notes": "Read through pub.orcid.org/v3.0. Education: Université de Nantes, Doctorat en Informatique Appliquée, 2007-01-07 to 2009-12-04. Employment: Université Catholique de l'Ouest, Institut de Mathématiques Appliquées, Associate Professor, 2009-11-16 to 2014-08-31; Université de Tours, Polytech, Associate Professor, 2014-09-01 to 2018-08-26; HEC Montréal visiting professor 2018-08-27 to 2020-05-31, associate professor from 2020-01-06, professor from 2025-06-01. All entries self-asserted."
         },
         {
-          "url": "https://ivado.ca/en/persons/jorge-mendoza",
-          "title": "IVADO profile",
-          "notes": "Search-result summary only: previous Polytech Tours associate professor; not opened."
+          "url": "https://theses.fr/2009NANT2051",
+          "title": "theses.fr 2009NANT2051 - Solving real-world vehicle routing problems in uncertain environments",
+          "notes": "Read through the theses.fr API. Author Mendoza, Jorge-Ernesto; Nantes; discipline Informatique appliquée; status soutenue; year 2009 (day/month not given); directors Guéret, Medaglia, Castanier, Velasco Rodriguez."
+        },
+        {
+          "url": "http://www.jorge-mendoza.com",
+          "title": "Jorge E. Mendoza - personal website",
+          "notes": "Plain curl. Education: Ph.D. Applied Computer Science, Université de Nantes, 2009; Ph.D. Industrial Engineering, Universidad de los Andes, 2009; earlier associate professor at Polytech Tours before HEC; links the ORCID record."
+        },
+        {
+          "url": "https://www.hec.ca/en/profs/jorge-mendoza",
+          "title": "Jorge Mendoza - HEC Montréal profile",
+          "notes": "Plain curl. Professor; education list (Nantes PhD, Los Andes PhD and MSc) without years; no career chronology."
         }
       ],
       "source": "omlist"
@@ -19349,13 +19441,23 @@
       "facultyId": "omlist-71f8acb9586b799b",
       "name": "Shenyang Jiang",
       "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "PolyU biography identifies previous Tongji research and faculty roles but no dates or degree year.",
+      "checkedAt": "2026-10-17",
+      "reason": "Second pass: his ORCID record (0000-0002-0582-2762, linked from the PolyU profile) dates the PolyU LMS assistant professorship from 2025-03 and lists a Zhejiang University education entry without dates. The PolyU profile (plain curl) says he received his Ph.D. from Zhejiang University and previously worked as an Assistant Researcher and Associate Professor at Tongji University, without dates. Crossref metadata show a Zhejiang University affiliation in 2020 and Tongji University (Advanced Institute of Business) from early 2024, which does not date the start of the Tongji post. The Tongji assistant researcher post is the likely first job, but its start year and the Zhejiang degree date are not documented. Earlier review (2026-10-16): the PolyU biography named the earlier Tongji research and faculty roles without dates or a degree year.",
       "sources": [
         {
+          "url": "https://orcid.org/0000-0002-0582-2762",
+          "title": "ORCID record 0000-0002-0582-2762 (Shenyang Jiang), public API",
+          "notes": "Employment: Hong Kong Polytechnic University, Assistant Professor, from 2025-03. Education: Zhejiang University, undated. Works from 2020."
+        },
+        {
           "url": "https://www.polyu.edu.hk/lms/people/academic-staff/shenyang-jiang/",
-          "title": "Shenyang Jiang public academic profile",
-          "notes": "PolyU biography identifies previous Tongji research and faculty roles but no dates or degree year."
+          "title": "Shenyang Jiang - PolyU LMS profile",
+          "notes": "Plain curl. Ph.D. Zhejiang University; bachelor's Jilin University; previously Assistant Researcher and Associate Professor at Tongji University; no dates."
+        },
+        {
+          "url": "https://doi.org/10.1287/mnsc.2023.01026",
+          "title": "The Bullwhip Effect in Servitized Manufacturers (Management Science, Crossref metadata)",
+          "notes": "Crossref record created 2024-04-25 gives Advanced Institute of Business, Tongji University and PolyU LMS as his affiliations. Affiliation only, not a start date."
         }
       ],
       "source": "omlist"
@@ -19744,13 +19846,28 @@
       "facultyId": "omlist-0df8ce78f1acf19d",
       "name": "Sihem Jouini",
       "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "HEC biography dates Paris Dauphine doctorate to 1998 and HEC appointment to 2006, with earlier Paris 11 lecturer and Polytechnique research activity undated. The earliest post-PhD employer and position cannot be sequenced.",
+      "checkedAt": "2026-10-17",
+      "reason": "Second pass: her ORCID record (0000-0001-7172-395X, Sihem BenMahmoud-Jouini) dates the Paris Dauphine PhD to 1998-12-20 and the HEC Paris associate professorship (GREGHEC, ISOM) from 2006-01-01, and theses.fr (1998PA090060, director Midler) confirms the 1998 Paris 9 doctorate. The HEC biography (plain curl) says she did her research at the École Polytechnique Management Research Center (CRG), was a lecturer at Université Paris 11 where she supervised a master's in management sciences, and visited NYU Stern and Babson, all undated; her IdRef authority record notes only that she was at CRG and LAMSADE in 1996 (during the doctorate). No HAL CV exists under the expected names. The Paris 11 lectureship is the likely first post between 1998 and 2006, but its start year is not documented. Earlier review (2026-10-16): the HEC biography dated the doctorate 1998 and the HEC appointment 2006, with the Paris 11 lectureship and Polytechnique research undated.",
       "sources": [
         {
+          "url": "https://orcid.org/0000-0001-7172-395X",
+          "title": "ORCID record 0000-0001-7172-395X (Sihem BenMahmoud-Jouini), public API",
+          "notes": "Education: Paris Dauphine University, PhD, 1998-12-20. Employment: HEC Paris-GREGHEC, Information System and Operations Management, Associate Professor, 2006-01-01 to present. Self-asserted; no other employment."
+        },
+        {
+          "url": "https://theses.fr/1998PA090060",
+          "title": "theses.fr 1998PA090060 - Stratégies d'offres innovantes et dynamiques des processus de conception",
+          "notes": "Read through the theses.fr API. Author Ben Mahmoud Jouini, Sihem; Paris 9; Gestion; 1998; director Midler."
+        },
+        {
           "url": "https://www.hec.edu/en/faculty-research/faculty-directory/faculty-member/jouini-sihem",
-          "title": "Sihem Jouini — public academic profile",
-          "notes": "Professional biography and degree information reviewed for first-job evidence."
+          "title": "Sihem BenMahmoud-Jouini - HEC Paris profile",
+          "notes": "Plain curl. Associate professor and GREGHEC researcher since January 2006; earlier undated: design-office experience before the doctorate, research at CRG École Polytechnique, lecturer at Université Paris 11, visiting NYU Stern and Babson."
+        },
+        {
+          "url": "https://www.idref.fr/052493253",
+          "title": "IdRef authority record 052493253 (Ben Mahmoud Jouini, Sihem)",
+          "notes": "Read as XML: 'En poste au Centre de recherche en gestion de l'École polytechnique, LAMSADE, Université Paris IX Dauphine (en 1996)'."
         }
       ],
       "source": "omlist"
@@ -22574,20 +22691,25 @@
       "facultyId": "omlist-07cb144bf85a0f15",
       "name": "Arnab Kumar Laha",
       "status": "unresolved",
-      "checkedAt": "2026-10-16",
+      "checkedAt": "2026-10-17",
+      "reason": "Second pass: the Mathematics Genealogy Project (id 88740) records his Ph.D. at the Indian Statistical Institute, Kolkata, in 2003 with advisor Ashis SenGupta (and an IIM Ahmedabad student in 2023, which matches the person), not the imported 1999. The IIM Ahmedabad directory profile (plain curl) lists professional experience without dates: Vice President and Technical Training Leader, Analytics CoE, Genpact; Lecturer and Academic Coordinator at the National Institute of Management Calcutta; Programmer at R S Software; and IIMA roles from 2009. His personal IIMA page (updated 2012) gives only degrees. Which of these posts followed the doctorate, and whether he had already joined IIMA before 2003, is undocumented; the ISI repository did not answer. Earlier review (2026-10-16): the institutional and personal pages confirmed an ISI PhD without a year or dated employment history.",
       "sources": [
         {
+          "url": "https://www.mathgenealogy.org/id.php?id=88740",
+          "title": "Arnab Laha - Mathematics Genealogy Project",
+          "notes": "Ph.D. Indian Statistical Institute, Kolkata, 2003; advisor Ashis SenGupta; student Sourav Majumdar (IIM Ahmedabad, 2023)."
+        },
+        {
           "url": "https://www.iima.ac.in/faculty-research/faculty-directory/arnab-kumar-laha",
-          "title": "Arnab Kumar Laha Profile",
-          "notes": "Institutional and personal faculty pages confirm Indian Statistical Institute PhD but omit its year and a dated employment history. First post-degree job is not established."
+          "title": "Arnab Kumar Laha - IIM Ahmedabad profile",
+          "notes": "Plain curl. Ph.D., M.Stat, B.Stat ISI (undated). Professional experience undated: Genpact VP and Technical Training Leader; Lecturer, National Institute of Management Calcutta; Programmer, R S Software. IIMA roles 2009-2017."
         },
         {
           "url": "https://faculty.iima.ac.in/arnab/",
-          "title": "Arnab Kumar Laha Website",
-          "notes": "Institutional and personal faculty pages confirm Indian Statistical Institute PhD but omit its year and a dated employment history. First post-degree job is not established."
+          "title": "Prof. Arnab Laha - personal IIMA page",
+          "notes": "Plain curl. Professor, P&QM; Ph.D., M.Stat, B.Stat from ISI; page updated 20-07-2012; no dates."
         }
       ],
-      "reason": "Institutional and personal faculty pages confirm Indian Statistical Institute PhD but omit its year and a dated employment history. First post-degree job is not established.",
       "source": "omlist"
     },
     {
@@ -22622,20 +22744,30 @@
       "facultyId": "omlist-081e3b5b476baba2",
       "name": "Kee-hung (Mike) Lai",
       "status": "unresolved",
-      "checkedAt": "2026-10-16",
+      "checkedAt": "2026-10-17",
+      "reason": "Second pass: his ORCID record (0000-0001-9296-0882) carries only an undated PolyU LMS employment entry added by the PolyU library. The PolyU LMS profile (plain curl) lists BA and PhD without dates and has no CV link, and his Google Site (plain curl) describes his research and current roles only. The PolyU LMS PhD graduate placements table lists graduates from 2003 onward with current, not first, placements and does not include him. The PolyU theses repository API did not answer. No dated source shows his first post after the 2002 PolyU doctorate, or whether he was already employed at PolyU during it. Earlier review (2026-10-16): the PolyU profile listed his doctorate and current chair without a dated career history.",
       "sources": [
         {
           "url": "https://www.polyu.edu.hk/lms/people/academic-staff/mike-lai/",
-          "title": "Kee-hung (Mike) Lai public academic profile",
-          "notes": "PolyU profile lists doctorate and current chair but omits dated career history and first placement."
+          "title": "Mike Lai Kee-hung - PolyU LMS profile",
+          "notes": "Plain curl. Chair Professor; BA, PhD; no dates or CV link."
         },
         {
           "url": "https://sites.google.com/view/mike-lai/",
-          "title": "Kee-hung (Mike) Lai public academic profile",
-          "notes": "PolyU profile lists doctorate and current chair but omits dated career history and first placement."
+          "title": "Prof. Mike Lai - Google Site",
+          "notes": "Plain curl. Director of the Shipping Research Centre; research summary and news; no dated career history."
+        },
+        {
+          "url": "https://orcid.org/0000-0001-9296-0882",
+          "title": "ORCID record 0000-0001-9296-0882 (Kee-hung Lai), public API",
+          "notes": "Employment: Hong Kong Polytechnic University, LMS, undated (source: PolyU Pao Yue-kong Library). No education entries."
+        },
+        {
+          "url": "https://www.polyu.edu.hk/lms/study/rpg/phd-graduate-placements/",
+          "title": "PolyU LMS PhD Graduate Placements",
+          "notes": "Plain curl. Table of LMS PhD graduates (2003 onward) with current placements; Lai appears only as a supervisor."
         }
       ],
-      "reason": "PolyU profile lists doctorate and current chair but omits dated career history and first placement.",
       "source": "omlist"
     },
     {
@@ -27653,16 +27785,29 @@
     {
       "facultyId": "omlist-4ed3073b6549a17c",
       "name": "Andrea Masini",
-      "status": "unresolved",
-      "checkedAt": "2026-10-16",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "employer": "London Business School",
+      "position": "Assistant Professor (Operations and Technology Management)",
+      "placementYear": 2002,
+      "category": "unknown",
+      "evidenceUrl": "https://orcid.org/0000-0002-8365-5306",
+      "evidenceNote": "His ORCID record (self-maintained, read through the public API) gives the INSEAD PhD in Technology Management from 1997-09-01 to 2003-06-30 and the employment sequence: INSEAD Center for the Management of Environmental Resources research associate 1996-01 to 1997-08 (before the doctorate), London Business School Assistant Professor of Operations and Technology Management 2002-08-01 to 2010-07-31, then HEC Paris associate professor from 2010-09-01. The HEC Paris profile confirms the INSEAD Ph.D. and the LBS assistant professorship before HEC in 2010. Overlap: the LBS post began about ten months before the June 2003 end of the PhD and was not retitled, so it is the first job with its own start year. Category unknown because a UK assistant-professor title is not by itself evidence of a tenure-track post.",
+      "phdYearVerified": 2003,
+      "phdInstitutionVerified": "INSEAD",
+      "reason": "Second pass: ORCID 0000-0002-8365-5306 (Andrea Masini; affiliations HEC Paris, INSEAD, LBS, La Sapienza) supplies the dated chronology missing in the first review: LBS Assistant Professor from August 2002, overlapping the final year of the INSEAD PhD (ended June 2003), with no other job between. The HEC CV PDF suggested by the triage is no longer linked from the HEC profile.",
       "sources": [
         {
+          "url": "https://orcid.org/0000-0002-8365-5306",
+          "title": "ORCID record 0000-0002-8365-5306 (Andrea Masini), public API",
+          "notes": "Education: INSEAD Technology Management PhD 1997-09-01 to 2003-06-30; INSEAD MSc 1997-1999; La Sapienza MSc Mechanical Engineering 1989-1995. Employment: INSEAD CMER Research Associate 1996-01-06 to 1997-08-31; London Business School, Operations and Technology Management, Assistant Professor 2002-08-01 to 2010-07-31; HEC Paris, Operations Management, Associate Professor from 2010-09-01. Self-asserted."
+        },
+        {
           "url": "https://www.hec.edu/en/faculty-research/faculty-directory/faculty-member/masini-andrea",
-          "title": "Andrea Masini Profile",
-          "notes": "HEC biography gives INSEAD PhD 2003 and previous LBS assistant professorship, but does not date that role or exclude intervening employment."
+          "title": "Andrea Masini - HEC Paris profile",
+          "notes": "Plain curl. Ph.D. in Management from INSEAD; prior to joining HEC Paris in 2010, Assistant Professor of Operations and Technology Management at London Business School; now Dean of Faculty and Research."
         }
       ],
-      "reason": "HEC biography gives INSEAD PhD 2003 and previous LBS assistant professorship, but does not date that role or exclude intervening employment.",
       "source": "omlist"
     },
     {
@@ -30034,13 +30179,23 @@
       "facultyId": "omlist-5c01ddba4c4b5298",
       "name": "Sajjad Najafi",
       "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "HEC profile identifies Michigan research fellowship before HEC and Toronto doctorate 2016, but omits timing or complete employment history for that interval.",
+      "checkedAt": "2026-10-17",
+      "reason": "Second pass: the University of Toronto TSpace record (read through its DSpace API) dates his thesis 'Essays in Dynamic Pricing of Multiple Substitutable Products' (advisor Chi-Guhn Lee) to November 2016. The HEC Paris profile (plain curl) still says only that before HEC he was a Research Fellow at the Ross School of Business, University of Michigan, without dates. His ORCID record (0000-0001-5372-9813) lists HEC Paris and Toronto without dates; no personal site with a CV was found under common addresses; Crossref affiliations show HEC Paris by a January 2022 Management Science article but do not date the move. The Michigan fellowship is very probably the first post, but neither its start nor the HEC start is dated, and no source excludes another post in late 2016. Earlier review (2026-10-16): the HEC profile named the Michigan research fellowship and the 2016 Toronto doctorate but gave no timing.",
       "sources": [
         {
+          "url": "https://utoronto.scholaris.ca/items/5919f452-7305-4385-b5f3-7ca192e455eb",
+          "title": "Essays in Dynamic Pricing of Multiple Substitutable Products (University of Toronto TSpace)",
+          "notes": "Read through the repository's DSpace search API: author Najafi, Sajjad; dc.date.issued 2016-11; type Thesis; advisor Lee, Chi-Guhn; handle 1807/82595."
+        },
+        {
           "url": "https://www.hec.edu/en/faculty-research/faculty-directory/faculty-member/najafi-sajjad",
-          "title": "Sajjad Najafi public academic profile",
-          "notes": "HEC profile identifies Michigan research fellowship before HEC and Toronto doctorate 2016, but omits timing or complete employment history for that interval."
+          "title": "Sajjad Najafi - HEC Paris profile",
+          "notes": "Plain curl. Associate Professor of ISOM; Ph.D. in Operations Research, University of Toronto; prior to HEC a Research Fellow at Michigan Ross; no dates."
+        },
+        {
+          "url": "https://orcid.org/0000-0001-5372-9813",
+          "title": "ORCID record 0000-0001-5372-9813 (Sajjad Najafi)",
+          "notes": "Public API: education University of Toronto (undated); employment HEC Paris, Associate Professor (undated)."
         }
       ],
       "source": "omlist"
@@ -30481,15 +30636,25 @@
       "facultyId": "omlist-4cf8efc720113066",
       "name": "Chi-to (Daniel) Ng",
       "status": "unresolved",
-      "checkedAt": "2026-10-16",
+      "checkedAt": "2026-10-17",
+      "reason": "Second pass: the PolyU LMS CV (plain curl, docdrive PDF) lists a BSc in Mathematics from HKU and a PhD in Operations Management from CUHK without dates, his current professorship and publications from 1996, but no employment history. His ORCID record (0000-0003-0020-8234) has only an undated PolyU employment entry added by the PolyU library. No source dates the 1996 degree or his first post. Earlier review (2026-10-16): the linked faculty CV listed undated degrees and the current position with publications but no dated employment.",
       "sources": [
         {
-          "url": "https://www.polyu.edu.hk/lms/docdrive/people/curriculum-vitae/Daniel NG.pdf",
-          "title": "Chi-to (Daniel) Ng curriculum vitae",
-          "notes": "Linked faculty CV lists undated degrees and current position, with publications but no dated employment chronology."
+          "url": "https://www.polyu.edu.hk/lms/docdrive/people/curriculum-vitae/Daniel%20NG.pdf",
+          "title": "Prof. Chi To Daniel Ng - curriculum vitae (PolyU LMS)",
+          "notes": "Plain curl. Professor, Director of Logistics Research Centre; BSc (Hons) Mathematics HKU; PhD Operations Management CUHK; undated; selected publications from 1996; no employment section."
+        },
+        {
+          "url": "https://orcid.org/0000-0003-0020-8234",
+          "title": "ORCID record 0000-0003-0020-8234 (Chi To Ng), public API",
+          "notes": "Employment: Hong Kong Polytechnic University, LMS, undated (source: PolyU library). No education entries."
+        },
+        {
+          "url": "https://www.polyu.edu.hk/lms/people/academic-staff/daniel-ng/",
+          "title": "Daniel Ng - PolyU LMS profile",
+          "notes": "Plain curl. Links the CV; no dates."
         }
       ],
-      "reason": "Linked faculty CV lists undated degrees and current position, with publications but no dated employment chronology.",
       "source": "omlist"
     },
     {
@@ -31870,14 +32035,32 @@
     {
       "facultyId": "omlist-f338d840bf754278",
       "name": "King Wah (Anthony) Pang",
-      "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "No CV or PolyU profile located; searches returned unrelated HKUST/PolyU pages. PhD 2001 and first job unestablished. Discovery web searches were also run; their snippets were not treated as verification.",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "employer": "Hong Kong University of Science and Technology",
+      "position": "Visiting Assistant Lecturer",
+      "placementYear": 2001,
+      "category": "other-academic",
+      "evidenceUrl": "https://www.polyu.edu.hk/lms/docdrive/people/curriculum-vitae/Anthony%20PANG.pdf",
+      "evidenceNote": "His PolyU LMS CV gives the Ph.D. in Industrial Engineering and Engineering Management from HKUST in 2001 and the dated employment history: Visiting Assistant Lecturer, HKUST, September 2001 to June 2003; Research Associate, HKUST, June 2003 to December 2003; Lecturer, PolyU, December 2003 to October 2007; Assistant Professor, PolyU, November 2007 to June 2014; then Associate Professor. His ORCID record gives the same posts with day-level dates and the HKUST PhD from 1998-09-01 to 2001-08-31, so the visiting lectureship began the day after the doctorate ended.",
+      "phdYearVerified": 2001,
+      "phdInstitutionVerified": "Hong Kong University of Science and Technology",
+      "reason": "Second pass: the PolyU LMS profile now links a CV (plain curl) with a dated chronology, and ORCID 0000-0002-0909-6753 (King Wah Pang; affiliations HKUST and PolyU) matches it. The first post after the August 2001 HKUST doctorate is a visiting assistant lectureship at HKUST from September 2001. The HKUST repository search redirects to a captcha even over http, so the thesis record itself was not opened.",
       "sources": [
         {
-          "url": "https://www.lgt.polyu.edu.hk/people/academic-staff/anthony-pang",
-          "title": "PolyU LGT staff page (guessed URL)",
-          "notes": "Attempted; HTTP 503."
+          "url": "https://www.polyu.edu.hk/lms/docdrive/people/curriculum-vitae/Anthony%20PANG.pdf",
+          "title": "Anthony King Wah PANG - curriculum vitae (PolyU LMS)",
+          "notes": "Plain curl. Ph.D. HKUST IEEM 2001 (MPhil 1998, BEng 1997); Visiting Assistant Lecturer HKUST Sep 2001-Jun 2003; Research Associate HKUST Jun-Dec 2003; Lecturer PolyU Dec 2003-Oct 2007; Assistant Professor PolyU Nov 2007-Jun 2014."
+        },
+        {
+          "url": "https://orcid.org/0000-0002-0909-6753",
+          "title": "ORCID record 0000-0002-0909-6753 (King Wah Pang), public API",
+          "notes": "Education: HKUST PhD IEEM 1998-09-01 to 2001-08-31; MPhil 1997-1998. Employment: HKUST IELM Visiting Assistant Lecturer 2001-09-01 to 2003-06-30; PolyU Lecturer 2003-12-01 to 2007-10-31; Assistant Professor 2007-11-01 to 2014-06-30; Associate Professor and Associate Head from 2014-07-01."
+        },
+        {
+          "url": "https://www.polyu.edu.hk/lms/people/academic-staff/anthony-pang/",
+          "title": "Anthony Pang - PolyU LMS profile",
+          "notes": "Plain curl. Associate Professor; links the CV PDF."
         }
       ],
       "source": "omlist"
@@ -31975,16 +32158,30 @@
     {
       "facultyId": "omlist-6f40dd3c1bec33cc",
       "name": "Julie Paquette",
-      "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "HEC profile lists doctorate without year and current teaching, without earliest employment chronology.",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "employer": "HEC Montréal",
+      "position": null,
+      "placementYear": 2010,
+      "category": "unknown",
+      "evidenceUrl": "https://orcid.org/0000-0002-7047-1700",
+      "evidenceNote": "Her ORCID record (self-maintained, read through the public API) lists a single employment, HEC Montréal, Logistics and Operations Management, from 2010-06-01 to present, with her current title (Associate professor); no earlier employment is listed. The HEC Montréal profile gives her Ph.D. (administration), M.Sc. and B.A.A. all from HEC Montréal without years; the 2010 doctorate year is the OM List import and was not confirmed in a thesis record. The title at the 2010 start is not stated, so position and category are left null/unknown. Verifier: kept. The ORCID record was re-read (single employment, HEC Montréal from 2010-06-01, no earlier job). The degree date is still not confirmed: a web search found her 2007 and 2011 CIRRELT working papers on dial-a-ride quality of service but no thesis record, and the Wayback Machine and OpenAlex could not be queried. If the reported 2010 degree year is right, the HEC post begun in that year is the first new job whether it began just before or just after the defence (a post not retitled on completion keeps its own start year); the row rests on that imported year.",
+      "phdYearVerified": null,
+      "phdInstitutionVerified": "HEC Montreal",
+      "reason": "Second pass: ORCID 0000-0002-7047-1700 (the only Julie Paquette record with an HEC Montréal affiliation; the other two are empty) dates her HEC Montréal employment from 1 June 2010 with no earlier job, matching the imported 2010 HEC doctorate. The HEC thesis repository could not be searched: thesis PDFs at biblos.hec.ca under the usual surname_given_tYEAR names returned 404 for 1998-2014, and the library's WorldCat Discovery search, Library and Archives Canada (403, empty through the reader proxy) and the Mathematics Genealogy Project gave nothing. A verifier should confirm that the doctorate was completed by mid-2010.",
       "sources": [
         {
-          "url": "https://www.hec.ca/en/profs/julie.paquette.html",
-          "title": "Julie Paquette public academic profile",
-          "notes": "HEC profile lists doctorate without year and current teaching, without earliest employment chronology."
+          "url": "https://orcid.org/0000-0002-7047-1700",
+          "title": "ORCID record 0000-0002-7047-1700 (Julie Paquette), public API",
+          "notes": "Employment: HEC Montréal, Logistics and Operations Management, Associate professor, 2010-06-01 to present (self-asserted). No education entries. Researcher URL a LinkedIn profile named 'juliepaquettephdcandidate'. Works 2009-2018."
+        },
+        {
+          "url": "https://www.hec.ca/en/profs/julie-paquette",
+          "title": "Julie Paquette - HEC Montréal profile",
+          "notes": "Plain curl. Education: Ph.D. (administration), M.Sc. (logistique), B.A.A. (méthodes quantitatives de gestion), all HEC Montréal, no years; no career chronology."
         }
       ],
+      "phdInstitutionVerifiedAsWritten": "HEC Montréal",
       "source": "omlist"
     },
     {
@@ -32243,16 +32440,36 @@
     {
       "facultyId": "omlist-f10c4a38e654e7b6",
       "name": "Federico Pasin",
-      "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "The HEC profile lists an industrial engineering doctorate without date or early employment chronology.",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "employer": "HEC Montréal",
+      "position": null,
+      "placementYear": 1994,
+      "category": "unknown",
+      "evidenceUrl": "https://orcid.org/0009-0003-2163-714X",
+      "evidenceNote": "His ORCID record (self-maintained, read through the public API) lists one employment, HEC Montréal, Department of Logistics and Operations Management, from 1994-06 to present, with his current title (Professor); no earlier employment is listed. theses.fr dates his École Centrale de Paris doctorate in industrial engineering ('La flexibilité des entreprises', director Liu) to 1994 without day or month, so whether the June 1994 start fell just before or after the defence is not documented; either way the HEC post, begun in the degree year, is the first new post documented. Title at the start not stated. Verifier: phdInstitutionVerified changed from CentraleSupélec to École centrale de Paris, the awarding school named by the opened theses.fr record, because CentraleSupélec is its 2015 merger successor and a predecessor is not mapped to its successor; the HEC Montréal first job and 1994 start are unchanged (ORCID re-read: single employment from 1994-06).",
+      "phdYearVerified": 1994,
+      "phdInstitutionVerified": "École centrale de Paris",
+      "reason": "Second pass: ORCID 0009-0003-2163-714X (HEC Montréal affiliation) dates the HEC Montréal employment from June 1994 with no earlier job, and theses.fr (1994ECAP0370) confirms the 1994 École Centrale de Paris doctorate (CentraleSupélec's predecessor). The HEC Montréal profile (plain curl) lists the Centrale doctorate and an M.Ing. from École Polytechnique without dates. The month of the defence is not given, so the overlap with the June 1994 start is unknown.",
       "sources": [
         {
-          "url": "https://www.hec.ca/en/profs/federico.pasin.html",
-          "title": "Federico Pasin academic profile",
-          "notes": "The HEC profile lists an industrial engineering doctorate without date or early employment chronology."
+          "url": "https://orcid.org/0009-0003-2163-714X",
+          "title": "ORCID record 0009-0003-2163-714X (Federico Pasin), public API",
+          "notes": "Employment: HEC Montréal, Department of Logistics and Operations Management, Professor, 1994-06 to present (self-asserted). No education entries; works 2025-2026."
+        },
+        {
+          "url": "https://theses.fr/1994ECAP0370",
+          "title": "theses.fr 1994ECAP0370 - La flexibilité des entreprises",
+          "notes": "Read through the theses.fr API. Author Pasin, Federico; Châtenay-Malabry, École centrale de Paris; Génie industriel; 1994 (no day or month); director Liu."
+        },
+        {
+          "url": "https://www.hec.ca/en/profs/federico-pasin",
+          "title": "Federico Pasin - HEC Montréal profile",
+          "notes": "Plain curl. Education: M.Ing., École Polytechnique; Doctorat (génie industriel), École Centrale de Paris; no dates or career history."
         }
       ],
+      "phdInstitutionVerifiedAsWritten": "École centrale de Paris",
+      "phdInstitutionResolution": "The chunk (OM List import) gives CentraleSupélec; theses.fr (1994ECAP0370) names the awarding school as École centrale de Paris (Châtenay-Malabry), and the HEC Montréal profile writes École Centrale de Paris. CentraleSupélec was formed in 2015 by the merger of École Centrale Paris and Supélec; under the project rule that a predecessor institution is not mapped to its successor, the verified value is the 1994 awarding school.",
       "source": "omlist"
     },
     {
@@ -33262,16 +33479,30 @@
     {
       "facultyId": "omlist-83ae0b6328e95958",
       "name": "Silvia I. Ponce",
-      "status": "unresolved",
-      "checkedAt": "2026-10-16",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "employer": "HEC Montréal",
+      "position": null,
+      "placementYear": 2000,
+      "category": "unknown",
+      "evidenceUrl": "https://orcid.org/0000-0002-0725-7875",
+      "evidenceNote": "Her ORCID record (self-maintained, read through the public API) lists her Ph.D. in Production & Operations Management at HEC Montréal (undated) and a single employment, HEC Montréal, Logistics & Operations Management, from 2000-10-30 to present with her current title (Associate Professor); no earlier employment is listed. The 2000 doctorate year is the OM List import; no thesis record dating it was found, so the order of degree and appointment within 2000 is not documented. Title at the start not stated. Verifier: kept. The ORCID record was re-read (HEC Montréal Ph.D. undated; single employment, HEC Montréal from 2000-10-30). A web search for the HEC thesis found only her faculty profiles, so the 2000 degree year remains the OM List value; the row rests on it, with the HEC post begun in the reported degree year treated as the first new job under the rule for a post not retitled on completion.",
+      "phdYearVerified": null,
+      "phdInstitutionVerified": "HEC Montreal",
+      "reason": "Second pass: ORCID 0000-0002-0725-7875 (Silvia I. Ponce, HEC Montréal) dates her HEC Montréal employment from 30 October 2000 and lists no other job, matching the imported 2000 HEC doctorate. The HEC Montréal profile (plain curl) gives the Ph.D. (administration) and an M.Sc.A. from Polytechnique Montréal without dates. No HEC thesis record could be opened (biblos.hec.ca name patterns returned 404; WorldCat Discovery did not render results). A verifier should confirm the doctorate was complete by late 2000.",
       "sources": [
         {
-          "url": "https://www.hec.ca/en/profs/silvia.ponce.html",
-          "title": "Silvia I. Ponce Profile",
-          "notes": "HEC biography identifies doctorate and current role without completion or employment dates."
+          "url": "https://orcid.org/0000-0002-0725-7875",
+          "title": "ORCID record 0000-0002-0725-7875 (Silvia I. Ponce), public API",
+          "notes": "Education: HEC Montréal, Production & Operations Management, Ph.D. (undated). Employment: HEC Montréal, Logistics & Operations Management, Associate Professor, 2000-10-30 to present (self-asserted)."
+        },
+        {
+          "url": "https://www.hec.ca/en/profs/silvia-ponce",
+          "title": "Silvia Ponce - HEC Montréal profile",
+          "notes": "Plain curl. Education: M.Sc.A. (génie chimique), Polytechnique-Montréal; Ph.D. (administration), HEC Montréal; no dates or career chronology."
         }
       ],
-      "reason": "HEC biography identifies doctorate and current role without completion or employment dates.",
+      "phdInstitutionVerifiedAsWritten": "HEC Montréal",
       "source": "omlist"
     },
     {
@@ -34055,15 +34286,35 @@
       "facultyId": "omlist-66e3dcb70d99d4bf",
       "name": "Marie-Ève Rancourt",
       "status": "unresolved",
-      "checkedAt": "2026-10-16",
+      "checkedAt": "2026-10-17",
+      "reason": "Second pass: two HEC Montréal news items (plain curl) state that she has been a member of the HEC Montréal faculty since 2016 (2021 Canada Research Chair announcement) and an associate professor in the Department of Logistics and Operations Management since 2016 (April 2019 item); both give the HEC Montréal Ph.D. in administration without a year. With the imported 2013 doctorate, about three years separate the degree from HEC, and no source opened names or dates the post (or posts) held in between. The HEC profile (plain curl) lists the doctorate, an M.Sc. and a Université de Montréal B.Sc. without years. Both ORCID records under her name (0000-0002-1500-2012, 0000-0001-5029-4519) are empty; the Mathematics Genealogy Project has no entry; HEC thesis PDFs could not be located under the usual biblos.hec.ca names; one web search found only HEC pages. Earlier review (2026-10-16): the HEC biography gave her doctorate and current professorship without dated early appointments.",
       "sources": [
         {
-          "url": "https://www.hec.ca/en/profs/marie-eve.rancourt.html",
-          "title": "Marie-Ève Rancourt Profile",
-          "notes": "HEC biography identifies its doctorate and current professorship without dated early appointments."
+          "url": "https://www.hec.ca/nouvelles/2021/chaire-recherche-m-e-rancourt",
+          "title": "HEC Montréal news: new Canada Research Chair in humanitarian supply chain analytics (2021)",
+          "notes": "Plain curl. Associate professor; chair effective 1 July 2021; Ph.D. in administration from HEC Montréal; 'membre du corps professoral de l'École depuis 2016'; affiliated with MIT; CIRRELT member."
+        },
+        {
+          "url": "https://www.hec.ca/nouvelles/2019/marie-eve-rancourt-saluee-pour-sa-recherche-innovante-et-inspirante",
+          "title": "HEC Montréal news: Marie-Ève Rancourt recognised by AACSB (9 April 2019)",
+          "notes": "Plain curl. Doctorate in administration from HEC Montréal; associate professor in the Department of Logistics and Operations Management since 2016."
+        },
+        {
+          "url": "https://www.hec.ca/en/profs/marie-eve-rancourt",
+          "title": "Marie-Ève Rancourt - HEC Montréal profile",
+          "notes": "Plain curl. Professor; Doctorat (administration), HEC Montréal; M.Sc. (modélisation et décision), HEC Montréal; B.Sc. mathématiques, Université de Montréal; no dates."
+        },
+        {
+          "url": "https://orcid.org/0000-0002-1500-2012",
+          "title": "ORCID record 0000-0002-1500-2012 (Marie-Eve Rancourt)",
+          "notes": "Public API: no education, employment or works."
+        },
+        {
+          "url": "https://orcid.org/0000-0001-5029-4519",
+          "title": "ORCID record 0000-0001-5029-4519 (Marie-Eve Rancourt)",
+          "notes": "Public API: no education, employment or works."
         }
       ],
-      "reason": "HEC biography identifies its doctorate and current professorship without dated early appointments.",
       "source": "omlist"
     },
     {
@@ -34348,15 +34599,20 @@
       "facultyId": "omlist-b74950e40ddc74d5",
       "name": "Claudia Rebolledo",
       "status": "unresolved",
-      "checkedAt": "2026-10-16",
+      "checkedAt": "2026-10-17",
+      "reason": "Second pass: her ORCID record (0000-0002-5947-0862, HEC Montréal) lists one employment, HEC Montréal, Logistics and Operations Management, from 2004-06-01 with her current title (Full Professor), and no education. That start precedes the imported 2005 HEC Montréal doctorate year, and no thesis record dates the degree (biblos.hec.ca name patterns 404; WorldCat Discovery did not render). The title held in June 2004 is not stated, so it cannot be told whether this was a pre-degree post converted on completion (whose conversion year would be the placement year) or an appointment that simply began shortly before the thesis was finished. The HEC profile gives the Ph.D. (administration) and M.Sc. (marketing) from HEC Montréal without years. Earlier review (2026-10-16): the HEC profile listed her doctorate and current teaching without a dated early-career chronology.",
       "sources": [
         {
-          "url": "https://www.hec.ca/en/profs/claudia.rebolledo.html",
-          "title": "Claudia Rebolledo Profile",
-          "notes": "HEC profile lists its doctorate and current teaching/research without dated early-career chronology."
+          "url": "https://orcid.org/0000-0002-5947-0862",
+          "title": "ORCID record 0000-0002-5947-0862 (Claudia Rebolledo), public API",
+          "notes": "Employment: HEC Montréal, Logistics and Operations Management, Full Professor, 2004-06-01 to present (self-asserted). No education entries."
+        },
+        {
+          "url": "https://www.hec.ca/en/profs/claudia-rebolledo",
+          "title": "Claudia Rebolledo - HEC Montréal profile",
+          "notes": "Plain curl. Education: M.Sc. (marketing) and Ph.D. (administration), HEC Montréal, no years; no career chronology."
         }
       ],
-      "reason": "HEC profile lists its doctorate and current teaching/research without dated early-career chronology.",
       "source": "omlist"
     },
     {
@@ -35085,18 +35341,28 @@
       "facultyId": "omlist-ecd218e7498ed65c",
       "name": "Sonja Rohmer",
       "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "HEC Montréal profile confirms a Wageningen PhD (operations research and logistics) but no dates or earlier positions. Affiliation hints (Eindhoven and Tours around 2019-2021) suggest a postdoc before HEC in 2022, but no CV or profile gives dates, so the first post-PhD job and PhD completion year (imported 2019) are not verified.",
+      "checkedAt": "2026-10-17",
+      "reason": "Second pass: the Wageningen research portal (plain curl) dates the PhD thesis award to 20 September 2019 (Doctor of Philosophy, Wageningen University). The TU/e research portal profile (plain curl) says she received the PhD in September 2019 and describes her as 'currently working as an Assistant Professor' in the OPAC group at Eindhoven University of Technology, and lists an external position 'Assistant Professor, HEC Montréal, Jul 2021 →'. The TU/e post is therefore the likely first post-PhD job, but no source opened dates its start or excludes an earlier postdoc (the earlier triage also noted a Tours affiliation): the TU/e projects and publications subpages are behind a Cloudflare check (403 to curl and the reader proxy), and her ORCID record (0000-0003-4472-0328) is empty. Earlier review (2026-10-16): the HEC profile confirmed the Wageningen PhD without dates and Eindhoven/Tours affiliation hints suggested a postdoc before HEC in 2022.",
       "sources": [
         {
-          "url": "https://www.hec.ca/en/profs/sonja-ursula-katharina.rohmer.html",
-          "title": "HEC Montréal profile - Sonja Rohmer",
-          "notes": "Opened: education without dates; no career history."
+          "url": "https://research.wur.nl/en/publications/rethinking-the-food-system-an-operations-research-approach/",
+          "title": "Rethinking the food system: an Operations Research approach (WUR research portal)",
+          "notes": "Plain curl. Internal PhD, Wageningen University; qualification Doctor of Philosophy; award date 20 Sept 2019; promotors Bloemhof and van 't Veer, co-promotor Claassen; DOI 10.18174/498977."
         },
         {
-          "url": "https://omlist.edutool.org/schools/hec-montreal/faculty/sonja-rohmer.html",
-          "title": "OM List profile - Sonja Rohmer",
-          "notes": "Imported profile only; lists PhD institution/year from the OM List import, no employment chronology."
+          "url": "https://research.tue.nl/en/persons/sonja-uk-rohmer/",
+          "title": "Sonja U.K. Rohmer - TU/e research portal",
+          "notes": "Plain curl. Bio: 'currently working as an Assistant Professor within the OPAC group at Eindhoven University of Technology'; PhD Wageningen September 2019; external position Assistant Professor, HEC Montréal, Jul 2021 onward. No start date for the TU/e post."
+        },
+        {
+          "url": "https://www.hec.ca/en/profs/sonja-ursula-katharina-rohmer",
+          "title": "Sonja Rohmer - HEC Montréal profile",
+          "notes": "Plain curl. Ph.D. (Operations Research and Logistics), Wageningen; M.Res., Polytech Tours; no dates or career history."
+        },
+        {
+          "url": "https://orcid.org/0000-0003-4472-0328",
+          "title": "ORCID record 0000-0003-4472-0328 (Sonja Rohmer)",
+          "notes": "Public API: no education, employment or works entries."
         }
       ],
       "source": "omlist"
@@ -37264,15 +37530,45 @@
       "facultyId": "omlist-0aa08b61ec166f39",
       "name": "Flore Sentenac",
       "status": "unresolved",
-      "checkedAt": "2026-10-16",
+      "checkedAt": "2026-10-17",
+      "reason": "Second pass: theses.fr (2023IPPAG005) dates her Institut polytechnique de Paris (CREST/ENSAE) doctorate in applied mathematics to 11 July 2023, and an HEC Paris news item of 20 October 2023 says she 'will arrive in the ISOM department in January 2024', a post her site and HEC profile show she now holds. However, the team page of Csaba Szepesvári's group at the University of Alberta (plain curl, re-checked by the verifier) lists her under alumni 'Post-doctoral fellows, research associates' with the dates 2023/09/01-2024/04/01 and present position Assistant Professor in ISOM at HEC Paris; two later papers with Szepesvári and Alberta co-authors (arXiv 2410.01112 and 2502.08259) give her affiliation as HEC Paris. The Alberta post began after the July 2023 defence and before the announced January 2024 HEC start, so HEC Paris is not shown to be the first post-PhD job. The Alberta post would be, but the team listing alone does not say whether it was a postdoctoral fellowship or a research associateship, whether it was held on site, or when exactly the HEC post began relative to its April 2024 end, so the first job is left unresolved for a reviewer who can open an appointment record or a dated CV. Earlier review (2026-10-16): Linked CV is an outdated doctoral-student CV with no completion date or subsequent employment. It cannot establish the first post-doctoral role. Verifier: a University of Alberta postdoctoral fellow/research associate post from 1 September 2023 began between the degree and the HEC Paris post, so HEC Paris is not the first job.",
       "sources": [
         {
+          "url": "https://www.hec.edu/en/faculty-research/news/hec-accelerates-its-recruitment-drive-top-research-professors",
+          "title": "HEC accelerates its recruitment drive of top research professors (HEC Paris news, 20 Oct 2023)",
+          "notes": "Plain curl. Lists Flore Sentenac among new HEC professors; 'will arrive in the ISOM department in January 2024', mentions her 2022 L'Oréal-UNESCO Young Talent award."
+        },
+        {
+          "url": "https://theses.fr/2023IPPAG005",
+          "title": "theses.fr 2023IPPAG005 - Learning and Algorithms for Online Matching",
+          "notes": "Read through the theses.fr API. Author Sentenac, Flore; Institut polytechnique de Paris; defended 11/07/2023; director Perchet; Mathématiques appliquées."
+        },
+        {
+          "url": "https://floresentenac.github.io/",
+          "title": "Flore Sentenac - personal site",
+          "notes": "Plain curl. Assistant Professor, ISOM, HEC Paris; Ph.D. in Applied Mathematics from ENSAE Paris in 2023 under Vianney Perchet; no other post listed."
+        },
+        {
+          "url": "https://www.hec.edu/en/faculty-research/faculty-directory/faculty-member/sentenac-flore",
+          "title": "Flore Sentenac - HEC Paris profile",
+          "notes": "Plain curl. Assistant Professor, ISOM; Ph.D. Applied Mathematics, ENSAE Paris, 2023; no start date."
+        },
+        {
           "url": "https://floresentenac.github.io/files/CV_flore_sentenac.pdf",
-          "title": "Flore Sentenac curriculum vitae",
-          "notes": "Linked CV is an outdated doctoral-student CV with no completion date or subsequent employment. It cannot establish the first post-doctoral role."
+          "title": "Flore Sentenac CV (doctoral-period version)",
+          "notes": "PhD student at CREST/ENSAE from 09/2020; research intern DeepMind London 06/2022-10/2022; teaching assistant ENSAE; no post-PhD entries."
+        },
+        {
+          "url": "https://sites.ualberta.ca/~szepesva/team.html",
+          "title": "Csaba Szepesvári's team page, University of Alberta",
+          "notes": "Verifier, plain curl. Alumni, 'Post-doctoral fellows, research associates': 'Flore Sentenac. 2023/09/01-2024/04/01. Present position: Assistant Professor in the Department of Information Systems and Operations Management at HEC Paris.'"
+        },
+        {
+          "url": "https://arxiv.org/abs/2502.08259",
+          "title": "Sentenac, Lee, Szepesvari, 'Balancing optimism and pessimism in offline-to-online learning' (arXiv, February 2025)",
+          "notes": "Verifier: first page gives Sentenac's affiliation as HEC Paris and her co-authors' as University of Alberta (Szepesvari also DeepMind London); no dates of her Alberta stay."
         }
       ],
-      "reason": "Linked CV is an outdated doctoral-student CV with no completion date or subsequent employment. It cannot establish the first post-doctoral role.",
       "source": "omlist"
     },
     {
@@ -39370,27 +39666,27 @@
       "name": "Svenja Sommer",
       "status": "unresolved",
       "checkedAt": "2026-10-17",
-      "reason": "The HEC Paris profile dates her Ph.D. in Management at INSEAD 2004, says that before HEC she was on the faculty at Purdue's Krannert School, and lists her organising the OM lecture series at Krannert 2005-2008; a 2012 Poets&Quants profile gives 'At HEC since 2008'. No source dates the start of the Purdue post or its title, or excludes another job between the 2004 degree and Purdue. ORCID has no entries and a web search found no CV.",
+      "reason": "Second pass: the HEC Paris profile (plain curl) still says only that she received her Ph.D. in Management from INSEAD and that before HEC she was on the faculty of Purdue's Krannert School of Management, without dates or title. The INSEAD PhD alumni and placements pages answer 403 to curl and return only a bot-check stub through the reader proxy; the Mathematics Genealogy Project has no entry; one web search found only a Coursera bio repeating the Purdue line. No source dates the start of the Purdue post or excludes another job between the 2004 degree and Purdue. Earlier review (2026-10-17): the HEC profile gave the 2004 INSEAD Ph.D., prior Purdue faculty service and an OM lecture series at Krannert 2005-2008, and Poets&Quants gave 'at HEC since 2008', but the Purdue start and title were undated.",
       "sources": [
         {
-          "url": "https://omlist.edutool.org/schools/hec-paris/faculty/sommer-svenja.html",
-          "title": "OM List profile - Svenja Sommer",
-          "notes": "Imported directory profile; opened for links to the school page, ORCID and CV only. Not evidence of a first job."
-        },
-        {
           "url": "https://www.hec.edu/en/faculty-research/faculty-directory/faculty-member/sommer-svenja",
-          "title": "HEC Paris - Svenja Sommer",
-          "notes": "Education: 2004 Ph.D. in Management, INSEAD; prior to HEC on the faculty at Krannert, Purdue; organised OM lecture series at Krannert 2005-2008."
+          "title": "Svenja Sommer - HEC Paris profile",
+          "notes": "Plain curl. Professor, OMIT; Ph.D. in Management, INSEAD; prior to HEC on the faculty at Krannert, Purdue; no dates on the current page."
         },
         {
           "url": "https://poetsandquants.com/?p=12065",
-          "title": "Poets&Quants - Svenja Sommer profile (2012)",
+          "title": "Poets&Quants profile (from the first review)",
           "notes": "Before HEC: Krannert, Purdue (no title or dates); at HEC since 2008."
         },
         {
           "url": "https://orcid.org/0000-0001-8062-7804",
-          "title": "ORCID record - Svenja Sommer",
-          "notes": "Record has no employment or education entries. Read through the ORCID public API (pub.orcid.org/v3.0/0000-0001-8062-7804/activities)."
+          "title": "ORCID record 0000-0001-8062-7804 (from the first review)",
+          "notes": "No employment or education entries."
+        },
+        {
+          "url": "https://www.insead.edu/phd/alumni",
+          "title": "INSEAD PhD alumni page",
+          "notes": "Attempted: HTTP 403 to curl; the reader proxy returned only a short stub."
         }
       ],
       "source": "omlist"
@@ -40586,19 +40882,42 @@
     {
       "facultyId": "omlist-f1271eab6bc01dbd",
       "name": "Qinghe Sun",
-      "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "The personal page dates NUS doctorate 2017–2022 but neither retrieved profile supplies earliest employment dates.",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "employer": "Hong Kong Polytechnic University",
+      "position": "Assistant Professor (Department of Logistics and Maritime Studies)",
+      "placementYear": 2022,
+      "category": "tenure-track",
+      "evidenceUrl": "https://orcid.org/0000-0001-8930-3689",
+      "evidenceNote": "Her ORCID record (self-maintained, read through the public API) gives the NUS Ph.D. (Institute of Operations Research and Analytics) from 2017-08-01 to 2022-07-31 and, as the only employment, Assistant Professor, Department of Logistics and Maritime Studies, PolyU Faculty of Business, from 2022-12-15. The NUS ScholarBank record dates her thesis 'Sustainable operations: emissions, waste and energy in maritime shipping' 2022-02-28, and her personal site lists the NUS Ph.D. 2017-2022 and the PolyU post with no other position. A plain assistant professorship at an Asian business school. No post is listed for the months between the end of the PhD and December 2022. Verifier: kept. Her NUS IORA student profile and the 2021 CV linked there list a Research Engineer post in the NUS Civil Engineering Department from October 2020 ('Present' on that undated page), which ORCID omits; that post began during the doctorate, so even if it ran on after the degree it is a pre-degree role, not a new post-PhD job. No opened source shows a new post between the 2022 degree and the 15 December 2022 PolyU start.",
+      "phdYearVerified": 2022,
+      "phdInstitutionVerified": "National University of Singapore",
+      "reason": "Second pass: ORCID 0000-0001-8930-3689 (Qinghe Sun; affiliations NTU, NUS, PolyU) supplies the dated chronology the first review lacked: NUS PhD ending July 2022, PolyU assistant professorship from 15 December 2022, nothing in between; the NUS ScholarBank thesis record (DSpace API) and her Google Site agree. A verifier may wish to check for a short research post in the second half of 2022, which none of these sources mentions.",
       "sources": [
         {
-          "url": "https://www.polyu.edu.hk/lms/people/academic-staff/qinghe-sun/",
-          "title": "Qinghe Sun academic profile",
-          "notes": "The personal page dates NUS doctorate 2017–2022 but neither retrieved profile supplies earliest employment dates."
+          "url": "https://orcid.org/0000-0001-8930-3689",
+          "title": "ORCID record 0000-0001-8930-3689 (Qinghe Sun), public API",
+          "notes": "Education: NUS IORA Ph.D. 2017-08-01 to 2022-07-31; NTU B.Sc. Maritime Studies 2013-2017. Employment: PolyU Faculty of Business, LMS, Assistant Professor, from 2022-12-15. Self-asserted."
+        },
+        {
+          "url": "https://scholarbank.nus.edu.sg/handle/10635/227916",
+          "title": "Sustainable operations: emissions, waste and energy in maritime shipping (NUS ScholarBank)",
+          "notes": "Read through the repository's DSpace search API: author Sun Qinghe; type Thesis; dc.date.issued 2022-02-28; accessioned 2022-07-05."
         },
         {
           "url": "https://sites.google.com/view/qinghesun/home",
-          "title": "Qinghe Sun academic profile",
-          "notes": "The personal page dates NUS doctorate 2017–2022 but neither retrieved profile supplies earliest employment dates."
+          "title": "Qinghe Sun - personal Google Site",
+          "notes": "Plain curl. Assistant Professor, LMS, PolyU Business School; Ph.D. NUS 2017-2022; B.Sc. NTU 2013-2017; no other post."
+        },
+        {
+          "url": "https://www.polyu.edu.hk/lms/people/academic-staff/qinghe-sun/",
+          "title": "Qinghe Sun - PolyU LMS profile",
+          "notes": "Plain curl. Assistant Professor; no start date."
+        },
+        {
+          "url": "https://iora.nus.edu.sg/people-p/sun-qinghe",
+          "title": "Sun Qinghe - NUS IORA student/alumni profile",
+          "notes": "Verifier: read through the r.jina.ai reader (the site answers plain requests with a bot check). Alumni; Education: NUS Aug 2017 - Present, Ph.D. Candidate; Work experience: Research Engineer, NUS Civil Engineering Department, Oct 2020 - Present (undated page); links a 2021 CV giving the PhD as Aug 2017 - May 2022."
         }
       ],
       "source": "omlist"
@@ -41392,13 +41711,23 @@
       "facultyId": "omlist-e400946c5146c079",
       "name": "André Tchokogué",
       "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "The HEC profile lists Bordeaux doctorate without completion date and does not establish earliest employment.",
+      "checkedAt": "2026-10-17",
+      "reason": "Second pass: theses.fr (1993BOR1D014, 'Contribution à la connaissance des mécanismes de compensation inter-entreprises', sciences de gestion, director Hirigoyen) confirms a 1993 Bordeaux 1 doctorate without day or month. His ORCID record (0000-0002-0894-604X) has no employment or education entries, and the HEC Montréal profile (plain curl) lists the Bordeaux I doctorate and an ISLI certificate without dates or career history. No dated source shows his first post after 1993 or when he joined HEC Montréal. Earlier review (2026-10-16): the HEC profile listed the Bordeaux doctorate without a completion date and did not establish earliest employment.",
       "sources": [
         {
-          "url": "https://www.hec.ca/en/profs/andre.tchokogue.html",
-          "title": "André Tchokogué academic profile",
-          "notes": "The HEC profile lists Bordeaux doctorate without completion date and does not establish earliest employment."
+          "url": "https://theses.fr/1993BOR1D014",
+          "title": "theses.fr 1993BOR1D014 - Contribution à la connaissance des mécanismes de compensation inter-entreprises",
+          "notes": "Read through the theses.fr API. Author Tchokogué, André; Bordeaux 1; sciences de gestion; 1993; director Hirigoyen."
+        },
+        {
+          "url": "https://www.hec.ca/en/profs/andre-tchokogue",
+          "title": "André Tchokogué - HEC Montréal profile",
+          "notes": "Plain curl. Certificat d'études supérieures (logistique industrielle), ISLI; Doctorat (sciences de gestion), Université Bordeaux I; no dates."
+        },
+        {
+          "url": "https://orcid.org/0000-0002-0894-604X",
+          "title": "ORCID record 0000-0002-0894-604X (André Tchokogué)",
+          "notes": "Public API: no employment or education entries; one 2022 work."
         }
       ],
       "source": "omlist"
@@ -45796,15 +46125,20 @@
       "facultyId": "omlist-3195b4f12420e5f7",
       "name": "Christina Wong",
       "status": "unresolved",
-      "checkedAt": "2026-10-16",
+      "checkedAt": "2026-10-17",
+      "reason": "Second pass: the PolyU research portal profile (plain curl) still shows her current role, awards and publications from 2002 but no dated degree or employment history. Her ORCID record (0000-0002-6130-9613, Christina W.Y. Wong) carries only an undated PolyU Institute of Textiles and Clothing employment entry added by the PolyU library; the PolyU theses repository API did not answer. Whether she was already employed at PolyU while completing the 2005 PolyU doctorate, and what post followed it, is undocumented. Earlier review (2026-10-16): the PolyU research profile established her current role and publications without a dated degree or early employment history.",
       "sources": [
         {
           "url": "https://research.polyu.edu.hk/en/persons/christina-wong/",
-          "title": "Christina Wong Profile",
-          "notes": "PolyU research profile establishes current role and publications but no dated degree or early employment history."
+          "title": "Christina Wong - PolyU research portal",
+          "notes": "Plain curl. Current professorship, awards (2012, 2014, 2018) and publications from 2002; no dated degree or career history."
+        },
+        {
+          "url": "https://orcid.org/0000-0002-6130-9613",
+          "title": "ORCID record 0000-0002-6130-9613 (Christina W.Y. Wong), public API",
+          "notes": "Employment: Hong Kong Polytechnic University, ITC, undated (source: PolyU Pao Yue-kong Library). No education entries; works from 2002."
         }
       ],
-      "reason": "PolyU research profile establishes current role and publications but no dated degree or early employment history.",
       "source": "omlist"
     },
     {
@@ -46342,14 +46676,27 @@
     {
       "facultyId": "omlist-dc2155f34de98a1e",
       "name": "Wenyi Xia",
-      "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "The HEC profile lists UBC degrees without completion dates or early employment chronology.",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "employer": "HEC Montréal",
+      "position": "Assistant Professor (Department of Logistics and Operations Management)",
+      "placementYear": 2020,
+      "category": "tenure-track",
+      "evidenceUrl": "https://orcid.org/0009-0006-3456-0788",
+      "evidenceNote": "Her ORCID record (self-maintained, read through the public API) gives the PhD at the University of British Columbia, Sauder School of Business (OPLOG), from 2015-09-01 to 2020-05-20, and the first and only employment as Assistant Professor, Department of Logistics and Operations Management, HEC Montréal, from 2020-06-01. The HEC Montréal profile (now Associate Professor) confirms the UBC Ph.D. and M.Sc. in business administration. A plain assistant professorship at a North American business school, begun eleven days after the degree end date.",
+      "phdYearVerified": 2020,
+      "phdInstitutionVerified": "University of British Columbia",
+      "reason": "Second pass: ORCID 0009-0006-3456-0788 (Wenyi Xia, affiliations HEC Montréal and UBC) gives a dated chronology: UBC PhD ending 20 May 2020, then HEC Montréal Assistant Professor from 1 June 2020, with no other job. The UBC cIRcle record could not be read (the Open Collections search stays on 'Loading' after the UBC browser check and cIRcle discover redirects to a login), so the degree date rests on ORCID.",
       "sources": [
         {
-          "url": "https://www.hec.ca/en/profs/wenyi.xia.html",
-          "title": "Wenyi Xia academic profile",
-          "notes": "The HEC profile lists UBC degrees without completion dates or early employment chronology."
+          "url": "https://orcid.org/0009-0006-3456-0788",
+          "title": "ORCID record 0009-0006-3456-0788 (Wenyi Xia), public API",
+          "notes": "Education: University of British Columbia, Sauder School of Business - OPLOG, PhD, 2015-09-01 to 2020-05-20. Employment: HEC Montréal, Department of Logistics and Operations Management, Assistant Professor, 2020-06-01 to present. Self-asserted; works from 2016."
+        },
+        {
+          "url": "https://www.hec.ca/en/profs/wenyi-xia",
+          "title": "Wenyi Xia - HEC Montréal profile",
+          "notes": "Plain curl. Associate Professor, Department of Logistics and Operations Management; Ph.D. and M.Sc. (Business Administration), University of British Columbia; no dates."
         }
       ],
       "source": "omlist"
@@ -47363,15 +47710,25 @@
       "facultyId": "omlist-f7cbedfe54a64cfe",
       "name": "Ekaterina Yatskovskaya",
       "status": "unresolved",
-      "checkedAt": "2026-10-16",
+      "checkedAt": "2026-10-17",
+      "reason": "Second pass: the IÉSEG profile and CV (plain curl) give the 2023 Cambridge Ph.D. in Manufacturing Engineering, an MRes from Bayes (Cass) 2013, a 2020 Associate Fellowship of Higher Education through Greenwich Business School and a 2021 teaching award in the Oxford MBA, but no employment history or IÉSEG start date. Her ORCID record (0000-0002-9497-2809) lists Cambridge PhD candidacy from 2014-01-15 and a Cambridge Engineering research-assistant post from 2016-01-15 with no end date, and nothing later. The Greenwich and Oxford teaching links predate the degree; what post followed the 2023 doctorate, and when she joined IÉSEG, is undocumented. The Cambridge repository search did not answer. Earlier review (2026-10-16): the IÉSEG CV dated the Cambridge doctorate to 2023 but gave no employment chronology or start date.",
       "sources": [
         {
           "url": "https://www.ieseg.fr/academ/ProdAcadem/238437.pdf",
-          "title": "Ekaterina Yatskovskaya curriculum vitae",
-          "notes": "IESEG CV dates Cambridge doctorate to 2023 but omits an employment chronology and starting date for the current appointment. Earliest post-doctoral employment remains unverified."
+          "title": "Ekaterina Yatskovskaya - IÉSEG CV",
+          "notes": "Plain curl. Assistant Professor, Operations Management; Ph.D. Manufacturing Engineering, Cambridge, 2023; MRes Bayes 2013; AFHEA via Greenwich Business School 2020; no employment section."
+        },
+        {
+          "url": "https://www.ieseg.fr/en/faculty-and-research/professor/?id=108232541",
+          "title": "Ekaterina Yatskovskaya - IÉSEG profile",
+          "notes": "Plain curl. Education list as in the CV; 2021 Teaching Excellence Award, Oxford MBA; no start date."
+        },
+        {
+          "url": "https://orcid.org/0000-0002-9497-2809",
+          "title": "ORCID record 0000-0002-9497-2809 (Ekaterina Yatskovskaya), public API",
+          "notes": "Education: Cambridge Engineering PhD candidate from 2014-01-15; Cass Business School 2012-2013. Employment: Cambridge Engineering research assistant from 2016-01-15 (no end)."
         }
       ],
-      "reason": "IESEG CV dates Cambridge doctorate to 2023 but omits an employment chronology and starting date for the current appointment. Earliest post-doctoral employment remains unverified.",
       "source": "omlist"
     },
     {
@@ -47514,18 +47871,18 @@
       "facultyId": "omlist-eb4a456aeb16753f",
       "name": "Wai Yee (Rachel) Yee",
       "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "PolyU research portal confirms a PolyU PhD (no year) and current associate professorship at PolyU School of Fashion and Textiles, with no dated chronology. The ORCID listed on the OM List page returned no entries. The imported 2009 PhD year and first post-PhD employment (PolyU or elsewhere) could not be established.",
+      "checkedAt": "2026-10-17",
+      "reason": "Second pass: the PolyU research portal profile (plain curl) lists a Doctor of Philosophy from The Hong Kong Polytechnic University without a year, research output from 2001, and her current associate professorship, but no employment history. The ORCID record on the OM List page (0000-0001-9698-5681) still has no public affiliations, and the PolyU theses repository API did not answer, so neither the imported 2009 degree year nor her first post-PhD job (at PolyU or elsewhere) could be dated. Earlier review (2026-10-16): the PolyU research portal confirmed a PolyU PhD (no year) and the current associate professorship in the School of Fashion and Textiles, with no dated chronology.",
       "sources": [
         {
           "url": "https://research.polyu.edu.hk/en/persons/wai-yee-yee/",
-          "title": "PolyU research portal - Wai Yee Yee",
-          "notes": "Opened: degrees without dates; current role; no career dates."
+          "title": "Wai Yee Yee - PolyU research portal",
+          "notes": "Plain curl. Doctor of Philosophy, The Hong Kong Polytechnic University (no year); research output 2001-2024; no career dates."
         },
         {
           "url": "https://orcid.org/0000-0001-9698-5681",
-          "title": "ORCID record linked from OM List",
-          "notes": "Opened: no public affiliations."
+          "title": "ORCID record 0000-0001-9698-5681 (from the first review)",
+          "notes": "No public affiliations."
         }
       ],
       "source": "omlist"
@@ -47567,15 +47924,25 @@
       "facultyId": "omlist-4d8c6ec209a60bf0",
       "name": "Xiajie Yi",
       "status": "unresolved",
-      "checkedAt": "2026-10-16",
+      "checkedAt": "2026-10-17",
+      "reason": "Second pass: the IÉSEG profile and CV (plain curl) give only the 2020 Ph.D. in Operations Management from Ghent University and publications, with no employment section. Her ORCID record (0000-0002-6407-1495, linked from the OM List page) has works only, and the Ghent Biblio search answered HTTP 500. No dated source covers the years between the 2020 degree and IÉSEG. Earlier review (2026-10-16): the linked CV dated the doctorate to 2020 but gave no employment chronology.",
       "sources": [
         {
           "url": "https://www.ieseg.fr/academ/ProdAcadem/215224.pdf",
-          "title": "Xiajie Yi curriculum vitae",
-          "notes": "Linked CV dates doctorate to 2020 but provides no dated employment chronology or first-placement evidence."
+          "title": "Xiajie Yi - IÉSEG CV",
+          "notes": "Plain curl. Assistant Professor, Operations Management; Ph.D. in Operations Management, University of Gent, 2020; publications only."
+        },
+        {
+          "url": "https://www.ieseg.fr/en/faculty-and-research/professor/?id=63232522",
+          "title": "Xiajie Yi - IÉSEG profile",
+          "notes": "Plain curl. Same content; no start date."
+        },
+        {
+          "url": "https://orcid.org/0000-0002-6407-1495",
+          "title": "ORCID record 0000-0002-6407-1495 (Xiajie Yi)",
+          "notes": "Public API: no education or employment; works from 2016."
         }
       ],
-      "reason": "Linked CV dates doctorate to 2020 but provides no dated employment chronology or first-placement evidence.",
       "source": "omlist"
     },
     {
@@ -47640,16 +48007,34 @@
     {
       "facultyId": "omlist-1f5ede69a7bb1151",
       "name": "T. L. Yip",
-      "status": "unresolved",
-      "checkedAt": "2026-10-16",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "employer": "University of Hong Kong",
+      "position": "Research Associate",
+      "placementYear": 1998,
+      "category": "other-academic",
+      "evidenceUrl": "https://www.polyu.edu.hk/lms/docdrive/people/curriculum-vitae/T%20%20L%20YIP.pdf",
+      "evidenceNote": "His PolyU LMS CV lists the career history: The University of Hong Kong, Research Associate 1998-1999 and Post-Doctoral Fellow 2000-2002; British Maritime Technology Asia Pacific, Senior Marine Engineer 2002-2004 and Principal Marine Engineer 2004-2005; PolyU Lecturer 2005-2007, Assistant Professor 2007-2014, Associate Professor from 2014. His ORCID record gives the HKU PhD in maritime engineering (Department of Mechanical Engineering) from 1993-07-01 to 1997-12-31 and HKU Department of Mechanical Engineering employment from 1998-01-01, so the research associateship began right after the doctorate ended.",
+      "phdYearVerified": 1997,
+      "phdInstitutionVerified": "University of Hong Kong",
+      "reason": "Second pass: the CV linked from the PolyU LMS profile (plain curl, docdrive PDF) has a dated career history that the first review did not read in full, and ORCID 0000-0002-7277-7666 (Tsz Leung Yip; affiliations HKU, Manchester, PolyU) dates the HKU PhD to December 1997 and the HKU Mechanical Engineering employment from January 1998. First post: HKU Research Associate from 1998.",
       "sources": [
         {
+          "url": "https://www.polyu.edu.hk/lms/docdrive/people/curriculum-vitae/T%20%20L%20YIP.pdf",
+          "title": "Dr T. L. Yip - curriculum vitae (PolyU LMS)",
+          "notes": "Plain curl. Education: MBA Manchester; PhD Maritime Engineering HKU; BEng HKU (undated). Career history: HKU Research Associate 1998-1999, Post-Doctoral Fellow 2000-2002; BMT Asia Pacific 2002-2005; PolyU Lecturer 2005-2007, Assistant Professor 2007-2014, Associate Professor 2014-."
+        },
+        {
+          "url": "https://orcid.org/0000-0002-7277-7666",
+          "title": "ORCID record 0000-0002-7277-7666 (Tsz Leung Yip), public API",
+          "notes": "Education: HKU Mechanical Engineering, PhD in maritime engineering, 1993-07-01 to 1997-12-31; BEng 1990-1993; Manchester MBA 2002-2004. Employment: HKU Department of Mechanical Engineering 1998-01-01 to 2002-04; PolyU LMS Lecturer/Assistant/Associate Professor from 2005-05-01."
+        },
+        {
           "url": "https://www.polyu.edu.hk/lms/people/academic-staff/t-l-yip/",
-          "title": "T. L. Yip Profile",
-          "notes": "PolyU biography and linked CV identify a Hong Kong maritime engineering PhD but no degree date or early employment chronology."
+          "title": "T. L. Yip - PolyU LMS profile",
+          "notes": "Plain curl. Links the CV PDF."
         }
       ],
-      "reason": "PolyU biography and linked CV identify a Hong Kong maritime engineering PhD but no degree date or early employment chronology.",
       "source": "omlist"
     },
     {
@@ -59805,24 +60190,37 @@
     {
       "facultyId": "roster:harvard-university:willy-c-shih",
       "name": "Willy C. Shih",
-      "status": "unresolved",
+      "status": "verified",
       "checkedAt": "2026-10-17",
-      "reason": "His ORCID record gives the Ph.D. in Chemistry at the University of California (Berkeley) from 1973-09 to 1979-11 and HBS employment from 2007-01. The HBS profile and the Analysis Group expert page say he spent 28 years in industry before HBS at IBM, Digital Equipment, Silicon Graphics, Eastman Kodak and Thomson SA, but give no dates or explicit sequence for these employers, so the first post-PhD employer and its start year are not documented in the sources opened.",
+      "employer": "IBM",
+      "position": null,
+      "placementYear": null,
+      "category": "industry",
+      "evidenceUrl": "https://www.uscc.gov/sites/default/files/Willy%20Shih_bio.pdf",
+      "evidenceNote": "His biography filed with the U.S.-China Economic and Security Review Commission (written while he was a Professor of Management Practice at HBS, which he joined in January 2007) gives the order of his industry career: 18 years in the computer industry, 14 at IBM, mostly in product development; subsequently Digital Equipment Corporation (Alpha workstation business, Windows NT and UNIX marketing); then Silicon Graphics; from 1997 until early 2005 president of Kodak's Consumer Digital unit; then Thomson. A later bio says he spent 28 years in industry before HBS in 2007. ORCID gives the Berkeley chemistry Ph.D. as ending 20 November 1979. IBM is therefore his first employer after the doctorate. The durations imply an IBM start around 1979 (28 years before 2007; 18 computer-industry years before 1997), but no start date is stated, so placementYear is left null.",
+      "phdYearVerified": 1979,
+      "phdInstitutionVerified": "University of California, Berkeley",
+      "reason": "Second pass: a web search led to two bios on uscc.gov (downloaded with curl): the earlier one lists the employers in order with durations (IBM 14 years first, then DEC, SGI, Kodak from 1997, Thomson), which supplies the sequence the first review lacked. The HBS profile (reader proxy, HTTP 403 to curl) repeats the 28 years in industry before HBS in 2007. The IBM start date and first title are not stated.",
       "sources": [
         {
+          "url": "https://www.uscc.gov/sites/default/files/Willy%20Shih_bio.pdf",
+          "title": "Dr. Willy Shih - biography (U.S.-China Economic and Security Review Commission)",
+          "notes": "Plain curl. Joined HBS TOM in January 2007; before HBS 18 years in the computer industry, 14 at IBM mostly in product development; subsequently managed DEC's Alpha workstation business and Windows NT/UNIX marketing; then Silicon Graphics; from 1997 until early 2005 president of Kodak's Consumer Digital unit; most recently EVP at Thomson. S.B. MIT, Ph.D. UC Berkeley."
+        },
+        {
+          "url": "https://www.uscc.gov/sites/default/files/Panel%203_Willy%20C.%20Shih_Bio.pdf",
+          "title": "Dr. Willy C. Shih - panel biography (USCC)",
+          "notes": "Plain curl. Prior to HBS in 2007, 28 years in industry at IBM, Digital Equipment, Silicon Graphics, Eastman Kodak and Thomson SA; architect of IBM's collaboration with Apple and Motorola in the early 1990s."
+        },
+        {
           "url": "https://orcid.org/0000-0002-8089-1127",
-          "title": "ORCID record 0000-0002-8089-1127 (Willy Shih)",
-          "notes": "Read through the public ORCID API. Education: University of California, Chemistry, Ph.D., 1973-09 to 1979-11; MIT S.B. 1969-1973. Employment: HBS TOM, Cizik Professor of Management Practice, 2007-01-. No industry entries."
+          "title": "ORCID record 0000-0002-8089-1127 (Willy Shih), public API",
+          "notes": "Education: University of California, Chemistry, Ph.D., 1973-09-01 to 1979-11-20; MIT S.B. Chemistry and Life Sciences 1969-1973. Employment: HBS TOM, Cizik Professor of Management Practice, from 2007-01-01."
         },
         {
           "url": "https://www.hbs.edu/faculty/Pages/profile.aspx?facId=194874",
-          "title": "Harvard Business School - Willy C. Shih faculty profile",
-          "notes": "Site refused direct requests (HTTP 403); read through the r.jina.ai reader proxy. Prior to HBS in 2007, 28 years in industry at IBM, Digital Equipment, Silicon Graphics, Eastman Kodak and Thomson SA (undated); PhD from UC Berkeley."
-        },
-        {
-          "url": "https://www.analysisgroup.com/people/affiliated-experts/willy-c--shih/",
-          "title": "Analysis Group - Willy C. Shih, affiliated expert",
-          "notes": "Ph.D. chemistry, UC Berkeley; 28 years in private industry with senior roles at IBM, DEC, SGI and Kodak; no dates."
+          "title": "Willy C. Shih - HBS faculty profile",
+          "notes": "HTTP 403 to curl; read through the r.jina.ai reader proxy. Prior to HBS in 2007, 28 years in industry at IBM, Digital Equipment, Silicon Graphics, Eastman Kodak and Thomson SA; no dates."
         }
       ],
       "source": "faculty-page"
@@ -59914,24 +60312,42 @@
     {
       "facultyId": "roster:hec-montreal:charpin-remi",
       "name": "Charpin, Rémi",
-      "status": "unresolved",
+      "status": "verified",
       "checkedAt": "2026-10-17",
-      "reason": "His Clemson University dissertation 'Essays on Political Risk in Supply Chain and Operations Management Practices' (Doctor of Philosophy) is dated 2018 in TigerPrints (online 27 June 2018), matching the HEC profile's Clemson PhD. The HEC profile and HEC Executive Education bio give no start date for his HEC appointment and mention earlier undated supply-chain work in the US and China, so whether HEC (or another job) was the first post-PhD employment, and when it began, is undocumented. No ORCID record was found.",
+      "employer": "HEC Montréal",
+      "position": null,
+      "placementYear": 2018,
+      "category": "unknown",
+      "evidenceUrl": "https://orcid.org/0000-0002-8853-8889",
+      "evidenceNote": "His ORCID record (self-maintained, read through the public API; the only ORCID record named Rémi Charpin, affiliation HEC Montréal) lists one employment, HEC Montréal, from 2018-08-30, with no department or title. The Clemson TigerPrints record dates his PhD dissertation to 2018 (online 27 June 2018), so the HEC start follows the degree within the same summer and leaves no room for another post. His earlier supply-chain work in the US and China (HEC Executive Education bio, undated) precedes the doctorate as far as the sources show. The title at the start is not stated.",
+      "phdYearVerified": 2018,
+      "phdInstitutionVerified": "Clemson University",
+      "reason": "Second pass: the ORCID public API record 0000-0002-8853-8889 (remi charpin, HEC Montréal) dates the start of his HEC Montréal employment to 30 August 2018, after the 2018 Clemson dissertation found in the first review. Crossref metadata show HEC Montréal as his affiliation in a 2020 Journal of Operations Management article; the HEC profile (plain curl) gives no start date or rank history. Position at the 2018 start is not documented.",
       "sources": [
         {
+          "url": "https://orcid.org/0000-0002-8853-8889",
+          "title": "ORCID record 0000-0002-8853-8889 (remi charpin), public API",
+          "notes": "Employment: HEC Montréal, start 2018-08-30, no end, no department or role title (self-asserted). No education entries or works."
+        },
+        {
           "url": "https://tigerprints.clemson.edu/all_dissertations/2161",
-          "title": "Clemson TigerPrints - Charpin, Remi, Essays on Political Risk in Supply Chain and Operations Management Practices",
-          "notes": "Dissertation metadata: Doctor of Philosophy (PhD), Clemson University, 2018; online date 2018/6/27. The page as fetched does not show the committee (a search snippet named Aleda Roth as chair; not confirmed). Full text withdrawn."
+          "title": "Essays on Political Risk in Supply Chain and Operations Management Practices (Clemson TigerPrints)",
+          "notes": "From the first review: Doctor of Philosophy, Clemson University, 2018; online date 2018-06-27."
         },
         {
           "url": "https://www.hec.ca/en/profs/remi-charpin",
-          "title": "HEC Montréal - Rémi Charpin",
-          "notes": "Current Associate Professor; Ph.D. Clemson, MBA Winthrop; no dates."
+          "title": "Rémi Charpin - HEC Montréal profile",
+          "notes": "Plain curl. Associate Professor, Department of Logistics and Operations Management; Ph.D. Clemson, MBA Winthrop; no dates."
         },
         {
           "url": "https://executive-education.hec.ca/pages/animateurs/charpin",
-          "title": "HEC Montréal Executive Education - Rémi Charpin",
-          "notes": "PhD in business administration from Clemson; worked in supply chain management in the US and China (undated); no appointment date."
+          "title": "Rémi Charpin - HEC Executive Education bio",
+          "notes": "From the first review: PhD Clemson; worked in supply chain management in the US and China (undated)."
+        },
+        {
+          "url": "https://doi.org/10.1002/joom.1127",
+          "title": "The influence of perceived host country political risk on foreign subunits' supplier development strategies (J. Operations Management, Crossref metadata)",
+          "notes": "Crossref record created 2020-10-20 gives Charpin's affiliation as Department of Logistics and Operations Management, HEC Montréal. Affiliation only, not a start date."
         }
       ],
       "source": "faculty-page"
@@ -60370,17 +60786,22 @@
       "name": "Alex Grasas",
       "status": "unresolved",
       "checkedAt": "2026-10-17",
-      "reason": "The IESE profile gives a University of Florida Ph.D. in Industrial and Systems Engineering without a year and describes consulting, teaching at various universities and co-founding the Institute for Transformational Leadership, all undated. His ORCID record lists only Founding Partner, Institute for Transformational Leadership, from 2016-10. The doctorate year and the first post-PhD job are undocumented.",
+      "reason": "Second pass: the IESE profile (plain curl) still gives the University of Florida Ph.D. and M.S. in Industrial and Systems Engineering and a UPC B.Sc. without years, and describes consulting, teaching 'in various universities and business schools' and co-founding the Institute for Transformational Leadership, all undated. ORCID (0000-0001-8168-339X) lists only Founding Partner, IfTL, from 2016-10-17. Crossref metadata show Universitat Pompeu Fabra (Department of Economics and Business) as his affiliation in 2013-2014 articles and EADA Business School in a 2014 article, which shows where he worked by then but not when or in what post he started. The UFDC search returned no record of the dissertation. The doctorate year and the first post-PhD job remain undocumented. Earlier review (2026-10-17): the IESE profile and ORCID gave the Florida Ph.D. without a year and only the 2016 IfTL post.",
       "sources": [
         {
           "url": "https://www.iese.edu/faculty-research/faculty/alex-grasas/",
-          "title": "IESE Business School - Alex Grasas (Lecturer)",
-          "notes": "Ph.D. and M.S. ISE, University of Florida; B.Sc. UPC; co-founder of IfTL; consultant; taught at various universities. No dates."
+          "title": "Alex Grasas - IESE profile",
+          "notes": "Plain curl. Lecturer, OIT; Ph.D. and M.S. ISE, University of Florida; B.Sc. UPC; consultant; taught at various universities; co-founder of IfTL. No dates."
         },
         {
           "url": "https://orcid.org/0000-0001-8168-339X",
-          "title": "ORCID - Alex Grasas (read through the public API pub.orcid.org/v3.0)",
-          "notes": "Employment: Institute for Transformational Leadership, Agile Operations, Founding Partner, 2016-10 onward. No education entries."
+          "title": "ORCID record 0000-0001-8168-339X (Alex Grasas), public API",
+          "notes": "Employment: Institute for Transformational Leadership, Agile Operations, Founding Partner, from 2016-10-17. No education entries; works from 2009."
+        },
+        {
+          "url": "https://doi.org/10.1111/poms.12081",
+          "title": "When to Carry Eccentric Products? (Production and Operations Management, Crossref metadata)",
+          "notes": "Crossref record created 2013-05-02 gives Grasas's affiliation as Department of Economics and Business, Universitat Pompeu Fabra. Affiliation only."
         }
       ],
       "source": "faculty-page"
@@ -60527,17 +60948,22 @@
       "name": "Javier Zamora",
       "status": "unresolved",
       "checkedAt": "2026-10-17",
-      "reason": "His ORCID record gives the Columbia Ph.D. in Electrical Engineering as 1993-09 to 1997-05 and the IESE Professor of the Practice post from 2009-02. The IESE profile lists his earlier career without dates: five years researching video-on-demand at Columbia's Center for Telecommunications Research (probably during the doctorate), four years as Director of Product Development at Xbind in New York, and eight years as General Manager of eNeo Labs. Whether Xbind began before or after the May 1997 degree, and the order of these jobs, is not documented, so the first post-PhD job is unresolved (likely industry). LinkedIn (linked from the profile) was not opened.",
+      "reason": "Second pass: the IESE profile (plain curl) gives the career in order but without dates: eight years as General Manager of eNeo Labs; before that ('previous professional experience') four years as Director of Product Development at Xbind in New York, and five years researching video-on-demand at Columbia's Center for Telecommunications Research and Image and Advanced Television Laboratory. With the IESE post from 2009-02 (ORCID) the durations imply Xbind from about 1997, close to the May 1997 Columbia Ph.D. (ORCID 1993-09 to 1997-05), but the durations are approximate and the Columbia research years overlap the doctorate, so it is not documented whether Xbind began before or after the degree. Crossref and the IEEE Xplore page (reader proxy) for his 1999-2000 papers show no affiliations. Earlier review (2026-10-17): ORCID gave the Columbia Ph.D. 1993-09 to 1997-05 and IESE from 2009-02, and the IESE profile listed Columbia CTR, Xbind and eNeo Labs without dates; the first job was likely industry but unresolved.",
       "sources": [
         {
           "url": "https://www.iese.edu/faculty-research/faculty/javier-zamora/",
-          "title": "IESE Business School - Javier Zamora (Professor of the Practice of Management)",
-          "notes": "Ph.D. EE Columbia; M.Sc. UPC. Undated earlier career: Columbia CTR research (5 years), Xbind Director of Product Development (4 years), eNeo Labs General Manager (8 years); co-founder of Inqbarna."
+          "title": "Javier Zamora - IESE profile",
+          "notes": "Plain curl. Ph.D. EE Columbia; M.Sc. UPC; eNeo Labs GM for eight years; previously four years Director of Product Development at Xbind (New York) and five years of video-on-demand research at Columbia CTR; MPEG-4 editor. No dates."
         },
         {
           "url": "https://orcid.org/0000-0001-5704-7043",
-          "title": "ORCID - Javier Zamora (read through the public API pub.orcid.org/v3.0)",
-          "notes": "Education: Columbia University, Electrical Engineering, Ph.D., 1993-09 to 1997-05. Employment: IESE Business School, Professor of the Practice of Management, 2009-02 to present. Nothing for 1997-2009."
+          "title": "ORCID record 0000-0001-5704-7043 (Javier Zamora), public API",
+          "notes": "Education: Columbia University, Electrical Engineering, Ph.D., 1993-09 to 1997-05. Employment: IESE Business School, Information Systems, Professor of the Practice of Management, from 2009-02."
+        },
+        {
+          "url": "https://ieeexplore.ieee.org/document/825870",
+          "title": "A practical methodology for guaranteeing quality of service for video-on-demand (IEEE TCSVT 2000)",
+          "notes": "Curl answered 202 with no content; read through the reader proxy: author list and abstract only, no affiliations shown."
         }
       ],
       "source": "faculty-page"
@@ -60577,17 +61003,17 @@
       "name": "Josep Valor Sabatier",
       "status": "unresolved",
       "checkedAt": "2026-10-17",
-      "reason": "The IESE profile lists three doctorates (Ph.D. Operations Research MIT; Sc.D. Medical Engineering Harvard-MIT HST; Doctor of Industrial Engineering UPC) without years and no employment history. MIT DSpace records the Sc.D. thesis 'Mathematical tools and budgetary mechanisms for hospital cost control' (Valor Sabatier, Josep) as 1985; the OR Ph.D. year was not found. No dated first post-PhD job, and no IESE start date, is documented; no ORCID record was found.",
+      "reason": "Second pass: the IESE profile (plain curl) still lists three doctorates (Doctor in Operations Research, MIT; Sc.D. in Medical Engineering, Harvard-MIT HST; Doctor of Industrial Engineering, UPC) without years and no employment history beyond his emeritus status, the Indra Chair and the 2002 ICIS co-chairmanship. MIT DSpace (search API) again returned only the 1985 Sc.D. thesis (advisors Barbara J. McNeil and Regina Herzlinger) and no OR Ph.D. thesis; ORCID and the Mathematics Genealogy Project have no record under his name. No dated first post-PhD job or IESE start date is documented. Earlier review (2026-10-17): the IESE profile listed three doctorates without years, MIT DSpace dated the Sc.D. thesis 1985, and no first job or IESE start date was found.",
       "sources": [
         {
           "url": "https://www.iese.edu/faculty-research/faculty/josep-valor-sabatier/",
-          "title": "IESE Business School - Josep Valor Sabatier (Professor Emeritus)",
-          "notes": "Ph.D. OR MIT; Sc.D. Medical Engineering Harvard-MIT HST; Doctor of Industrial Engineering UPC; Indra Chair of Digital Strategy; ICIS 2002 co-chair. No degree years or appointment dates."
+          "title": "Josep Valor Sabatier - IESE profile",
+          "notes": "Plain curl. Professor Emeritus, OIT; Indra Chair of Digital Strategy; Ph.D. OR MIT; Sc.D. Medical Engineering Harvard-MIT HST; Doctor of Industrial Engineering UPC; ICIS 2002 co-chair. No dates."
         },
         {
           "url": "https://dspace.mit.edu/handle/1721.1/29513",
-          "title": "MIT DSpace - Mathematical tools and budgetary mechanisms for hospital cost control (Valor Sabatier, Josep)",
-          "notes": "Read through the repository's public search endpoint: Sc.D. thesis, 1985."
+          "title": "Mathematical tools and budgetary mechanisms for hospital cost control (MIT DSpace)",
+          "notes": "Read through the repository's search API: Valor Sabatier, Josep; Thesis; 1985; advisors Barbara J. McNeil and Regina Herzlinger."
         }
       ],
       "source": "faculty-page"
@@ -60667,17 +61093,22 @@
       "name": "Pablo Sartor",
       "status": "unresolved",
       "checkedAt": "2026-10-17",
-      "reason": "The IESE profile lists two doctorates (Computer Sciences, INRIA France; Information Systems, UdelaR Uruguay) without years, more than 25 years of consulting (undated), a full professorship at IEEM Business School since 2009, and current work at Grant Thornton Uruguay. No degree year and no dated first post-PhD job are documented; his ORCID record (0000-0001-7076-3917) has no employment or education entries.",
+      "reason": "Second pass: theses.fr (2013REN1S102, 'Propriétés et méthodes de calcul de la fiabilité diamètre-bornée des réseaux', author Sartor del Giudice, Pablo Enrique; directors Rubino and Cancela) dates the Rennes 1 (INRIA) computer-science doctorate to 18 December 2013. The IESE profile (plain curl) says he has been a full professor at IEEM Business School since 2009 and has consulted for more than 25 years, and that he is now developing the IT Advisory department at Grant Thornton Uruguay, without other dates. The IEEM professorship therefore began four years before the doctorate and continued after it, so it is not a new post-PhD job; no source dates a new post after December 2013 (the Grant Thornton role, the IESE affiliated lectureship and the UdelaR doctorate are undated). ORCID (0000-0001-7076-3917) is empty and the Mathematics Genealogy Project has no entry. Earlier review (2026-10-17): the IESE profile listed two undated doctorates (INRIA and UdelaR), 25+ years of consulting and the IEEM full professorship since 2009.",
       "sources": [
         {
+          "url": "https://theses.fr/2013REN1S102",
+          "title": "theses.fr 2013REN1S102 - Propriétés et méthodes de calcul de la fiabilité diamètre-bornée des réseaux",
+          "notes": "Read through the theses.fr API. Author Sartor del Giudice, Pablo Enrique; Rennes 1; Informatique; defended 18/12/2013; directors Rubino and Cancela."
+        },
+        {
           "url": "https://www.iese.edu/faculty-research/faculty/pablo-sartor/",
-          "title": "IESE Business School - Pablo Sartor (Affiliated Lecturer)",
-          "notes": "Ph.D. Computer Sciences (INRIA) and Ph.D. Information Systems (UdelaR); full professor at IEEM since 2009; 25+ years consulting. No degree years."
+          "title": "Pablo Sartor - IESE profile",
+          "notes": "Plain curl. Affiliated lecturer; Ph.D. Computer Sciences (INRIA) and Ph.D. Information Systems (UdelaR); full professor at IEEM since 2009; consulting for 25+ years; currently IT Advisory at Grant Thornton Uruguay."
         },
         {
           "url": "https://orcid.org/0000-0001-7076-3917",
-          "title": "ORCID - Pablo Sartor (read through the public API pub.orcid.org/v3.0)",
-          "notes": "Record has a name only; no education or employment entries."
+          "title": "ORCID record 0000-0001-7076-3917 (Pablo Sartor)",
+          "notes": "Public API: name only; no education or employment."
         }
       ],
       "source": "faculty-page"
@@ -60687,17 +61118,22 @@
       "name": "Paulo Rocha e Oliveira",
       "status": "unresolved",
       "checkedAt": "2026-10-17",
-      "reason": "MIT DSpace records his Ph.D. thesis 'Service delivery and learning in automated interfaces' (Oliveira, Paulo Rocha e, born 1974) as 2002. The IESE profile describes him as a part-time Senior Lecturer and gives no employment history or dates; his ORCID record (0000-0001-6293-6830) is empty. The first job after the 2002 doctorate is undocumented.",
+      "reason": "Second pass: MIT DSpace (search API) again dates his Ph.D. thesis 'Service delivery and learning in automated interfaces' (advisors Gabriel R. Bitran and Dan Ariely) to 2002. The IESE profile (plain curl) describes him as a part-time Senior Lecturer with an A.B. from Princeton and a Ph.D. from MIT, without employment history; the 'personal website' it links (paulomarketing.com) is a frame pointing to another domain with no content, and the reader proxy returned nothing; ORCID (0000-0001-6293-6830) is empty. No dated first post after the 2002 doctorate is documented. Earlier review (2026-10-17): MIT DSpace dated the thesis 2002 and the IESE profile gave no employment history.",
       "sources": [
         {
-          "url": "https://www.iese.edu/faculty-research/faculty/paulo-rocha-e-oliveira/",
-          "title": "IESE Business School - Paulo Rocha e Oliveira (Senior Lecturer)",
-          "notes": "Part-time Senior Lecturer, Marketing and OIT; A.B. Mathematics Princeton; Ph.D. Management MIT. No career dates."
+          "url": "https://dspace.mit.edu/handle/1721.1/29262",
+          "title": "Service delivery and learning in automated interfaces (MIT DSpace)",
+          "notes": "Read through the repository's search API: Oliveira, Paulo Rocha e, 1974-; Thesis; 2002; advisors Gabriel R. Bitran and Dan Ariely."
         },
         {
-          "url": "https://dspace.mit.edu/handle/1721.1/29262",
-          "title": "MIT DSpace - Service delivery and learning in automated interfaces (Oliveira, Paulo Rocha e, 1974-)",
-          "notes": "Read through the repository's public search endpoint: Ph.D. thesis, 2002."
+          "url": "https://www.iese.edu/faculty-research/faculty/paulo-rocha-e-oliveira/",
+          "title": "Paulo Rocha e Oliveira - IESE profile",
+          "notes": "Plain curl. Part-time Senior Lecturer, Marketing and OIT; A.B. Mathematics Princeton; Ph.D. Management MIT; no career dates; links paulomarketing.com."
+        },
+        {
+          "url": "http://paulomarketing.com/",
+          "title": "Paulo Rocha e Oliveira - personal website (linked from IESE)",
+          "notes": "Plain curl: a frameset pointing to pro.idados.id with no biography; reader proxy returned an empty page."
         }
       ],
       "source": "faculty-page"
@@ -60762,32 +61198,32 @@
       "name": "Tawfiq Alashoor",
       "status": "unresolved",
       "checkedAt": "2026-10-17",
-      "reason": "The IESE profile says he completed a postdoc program at the University of Notre Dame after his Ph.D. in Computer Information Systems at Georgia State, and that before IESE he taught at Copenhagen Business School, King Fahd University of Petroleum and Minerals (KFUPM), Notre Dame and Georgia State, all without dates. ORCID lists only the IESE assistant professorship from 2023-09. On re-checking: the Georgia State ScholarWorks record (read through the repository's public search endpoint) dates his doctoral dissertation (Doctor of Philosophy) to 2019-08-13; a paper in Interacting with Computers (March 2020) gives Notre Dame ITAO as his only affiliation; a paper in Psychology & Health received 2020-02-04 gives both Notre Dame ITAO and KFUPM Business School; CBS appears by December 2022 and IESE by September 2023. Neither the postdoc nor the KFUPM post has a start date in any opened source, so whether a KFUPM appointment began between the August 2019 degree and the postdoc, at the same time, or before the degree cannot be told, and no CV was found. The Notre Dame postdoc is a likely first job but is not established. Verifier: first-job order not established (undated postdoc beside an undated KFUPM affiliation held in early 2020).",
+      "reason": "Second pass: the IESE profile (plain curl) still says he completed a postdoc program at Notre Dame after his Georgia State Ph.D. and taught at Copenhagen Business School, KFUPM, Notre Dame and Georgia State before IESE, all undated; ORCID (0000-0003-4564-3854) lists only the IESE assistant professorship from 2023-09-01. KFUPM and CBS research-portal pages under his name return 404, and one web search for a CV found only other people. The order of the undated Notre Dame postdoc and the KFUPM post (both named in a paper received in February 2020) after the August 2019 degree is still unknown. Earlier review (2026-10-17): GSU ScholarWorks dated the dissertation 2019-08-13; papers showed Notre Dame ITAO alone in March 2020 and Notre Dame plus KFUPM in a paper received February 2020; the Notre Dame postdoc was a likely but unestablished first job.",
       "sources": [
         {
           "url": "https://www.iese.edu/faculty-research/faculty/tawfiq-alashoor/",
-          "title": "IESE Business School - Tawfiq Alashoor (Assistant Professor)",
-          "notes": "Ph.D. Computer Information Systems, Georgia State; M.S. Penn State; B.S. KFUPM. 'He completed a postdoc program at the University of Notre Dame (U.S.) after his Ph.D.' Taught at CBS, KFUPM, Notre Dame and Georgia State before IESE (undated)."
+          "title": "Tawfiq Alashoor - IESE profile",
+          "notes": "Plain curl. Assistant Professor OIT; Ph.D. CIS Georgia State; completed a postdoc program at Notre Dame after the Ph.D.; taught at CBS, KFUPM, Notre Dame and Georgia State; no dates."
         },
         {
           "url": "https://orcid.org/0000-0003-4564-3854",
-          "title": "ORCID - Tawfiq Alashoor (read through the public API pub.orcid.org/v3.0)",
-          "notes": "Employment: IESE Business School, Department of Operations, Information and Technology, Assistant Professor, 2023-09 to present. No education entries."
+          "title": "ORCID record 0000-0003-4564-3854 (Tawfiq Alashoor), public API",
+          "notes": "Employment: IESE Business School, OIT, Assistant Professor, from 2023-09-01. No education entries."
         },
         {
           "url": "https://scholarworks.gsu.edu/items/991b48df-e612-4bb8-80b5-f96c59762821",
-          "title": "Georgia State ScholarWorks - Explaining the Privacy Paradox through Identifying Boundary Conditions of the Relationship between Privacy Concerns and Disclosure Behaviors (Alashoor, Tawfiq)",
-          "notes": "Read by the verifier through the repository's public search endpoint (scholarworks.gsu.edu/server/api): Doctor of Philosophy (PhD); advisors Mark Keil, Richard Baskerville, Likoebe Maruping, Zhenhui Jiang; date issued 2019-08-13."
+          "title": "Georgia State ScholarWorks dissertation record (from the earlier review)",
+          "notes": "Doctor of Philosophy; dated 2019-08-13; advisors Mark Keil, Richard Baskerville and others."
         },
         {
           "url": "https://doi.org/10.1093/iwc/iwaa009",
-          "title": "Albashrawi and Alashoor, Entrepreneurial Intention, Interacting with Computers (March 2020)",
-          "notes": "Crossref metadata read by the verifier: Tawfiq Alashoor's affiliation is Information Technology, Analytics, and Operations, Mendoza College of Business, University of Notre Dame (only affiliation)."
+          "title": "Interacting with Computers article, March 2020 (from the earlier review)",
+          "notes": "Crossref metadata: affiliation Notre Dame ITAO only."
         },
         {
           "url": "https://doi.org/10.1080/08870446.2020.1798958",
-          "title": "Alashoor and Han, The smoking paradox, Psychology & Health (2020)",
-          "notes": "Crossref metadata read by the verifier: received 2020-02-04; affiliations Notre Dame ITAO and Information Systems & Operations Management, KFUPM Business School."
+          "title": "Psychology & Health article received 2020-02-04 (from the earlier review)",
+          "notes": "Crossref metadata: affiliations Notre Dame ITAO and KFUPM Business School."
         }
       ],
       "source": "faculty-page"
