@@ -119,3 +119,17 @@ addEventListener('scroll',queueProgress,{passive:true});
 addEventListener('resize',queueProgress);
 if('ResizeObserver' in window)new ResizeObserver(queueProgress).observe(document.body);
 updateProgress();
+
+// If large text settings or zoom make the menu too long for one line beside the title, put it under the
+// title instead (still one line), and only let it wrap when even that is too narrow; never cut links off.
+const siteHeader=document.querySelector('header');
+function fitHeader(){
+  if(!siteHeader||matchMedia('(max-width:950px)').matches){siteHeader?.classList.remove('stacked','wrap');return;}
+  const over=()=>siteHeader.scrollWidth>siteHeader.clientWidth+1;
+  siteHeader.classList.remove('stacked','wrap');
+  if(over())siteHeader.classList.add('stacked');
+  if(over())siteHeader.classList.add('wrap');
+}
+addEventListener('resize',fitHeader);
+document.fonts?.ready.then(fitHeader);
+fitHeader();
