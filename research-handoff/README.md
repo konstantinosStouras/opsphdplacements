@@ -42,3 +42,7 @@ This is a dated snapshot. Preserve it and use separate proposals for subsequent 
 ## Human reviews of LinkedIn profiles (17 October 2026)
 
 [human-review/](human-review/) holds first-job reviews built from facts a person read on LinkedIn in a browser (scripts never read LinkedIn). `proposal-1.json` (Lucie (Xin) Li, George Mason University) is merged into the public datasets; do not add it again. The rules are in RESEARCH-DESIGN.md under "Decisions on evidence types".
+
+## Third pass on unresolved first jobs (17 October 2026)
+
+[third-pass/](third-pass/) holds the verified proposals of the third pass, which opened the ORCID, school-profile, website and CV links on each unresolved person's OM List page that earlier reviews had not cited. Every file here is merged into the public datasets; do not add them again. Progress and open chunks are in TODO.md.
