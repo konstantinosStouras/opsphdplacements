@@ -13,15 +13,15 @@
   ],
   "definition": "One record per organisation that appears in either database or the program register: the universities with operations departments (Operations Academia directory), the PhD institutions and first employers of the people in the OM List import, and the registered doctoral programs. Keyed by Wikidata item when known, otherwise by name. Parts that a source does not supply are null; nothing is inferred across sources. Where two source rows land on one entity, both rows stay listed under it and their figures are added.",
   "counts": {
-   "entities": 1331,
-   "withWikidata": 792,
-   "phdInstitutions": 444,
+   "entities": 1335,
+   "withWikidata": 791,
+   "phdInstitutions": 443,
    "directoryUniversities": 589,
-   "firstEmployers": 753,
+   "firstEmployers": 760,
    "withPrograms": 10,
    "inBothDatabases": 205,
-   "directoryOnly": 333,
-   "peopleOnly": 239,
+   "directoryOnly": 332,
+   "peopleOnly": 238,
    "conflicts": 0
   }
  },
@@ -1246,7 +1246,7 @@
        "University of Michigan at Ann Arbor"
       ],
       "people": 72,
-      "verifiedFirstJobs": 50
+      "verifiedFirstJobs": 52
      },
      {
       "institutionId": "university-of-michigan",
@@ -1259,20 +1259,20 @@
      }
     ],
     "people": 73,
-    "verifiedFirstJobs": 51,
-    "unresolved": 22,
+    "verifiedFirstJobs": 53,
+    "unresolved": 20,
     "pending": 0,
     "notYetCompleted": 0,
     "firstYear": 1974,
     "lastYear": 2026,
     "firstJobTypes": {
-     "tenure-track": 34,
+     "tenure-track": 35,
      "postdoc": 12,
      "other-academic": 1,
      "industry": 1,
      "government": 0,
      "nonprofit": 0,
-     "unknown": 3
+     "unknown": 4
     },
     "topFirstEmployers": [
      {
@@ -1285,6 +1285,10 @@
      },
      {
       "employer": "Cornell University",
+      "count": 2
+     },
+     {
+      "employer": "Indiana University, Kelley School of Business",
       "count": 2
      },
      {
@@ -1309,10 +1313,6 @@
      },
      {
       "employer": "Georgia Institute of Technology (H. Milton Stewart School of Industrial and Systems Engineering)",
-      "count": 1
-     },
-     {
-      "employer": "Georgia Institute of Technology (Scheller College of Business)",
       "count": 1
      }
     ]
@@ -3313,18 +3313,18 @@
        "University of Maryland, College Park"
       ],
       "people": 45,
-      "verifiedFirstJobs": 29
+      "verifiedFirstJobs": 30
      }
     ],
     "people": 45,
-    "verifiedFirstJobs": 29,
-    "unresolved": 16,
+    "verifiedFirstJobs": 30,
+    "unresolved": 15,
     "pending": 0,
     "notYetCompleted": 0,
     "firstYear": 1991,
     "lastYear": 2024,
     "firstJobTypes": {
-     "tenure-track": 18,
+     "tenure-track": 19,
      "postdoc": 5,
      "other-academic": 2,
      "industry": 0,
@@ -3878,7 +3878,7 @@
       "count": 1
      },
      {
-      "employer": "Indiana University (Kelley School of Business)",
+      "employer": "Indiana University, Kelley School of Business",
       "count": 1
      },
      {
@@ -4682,18 +4682,18 @@
        "Pennsylvania State University"
       ],
       "people": 37,
-      "verifiedFirstJobs": 23
+      "verifiedFirstJobs": 24
      }
     ],
     "people": 37,
-    "verifiedFirstJobs": 23,
-    "unresolved": 14,
+    "verifiedFirstJobs": 24,
+    "unresolved": 13,
     "pending": 0,
     "notYetCompleted": 0,
     "firstYear": 1982,
     "lastYear": 2023,
     "firstJobTypes": {
-     "tenure-track": 17,
+     "tenure-track": 18,
      "postdoc": 0,
      "other-academic": 2,
      "industry": 0,
@@ -4727,6 +4727,10 @@
       "count": 1
      },
      {
+      "employer": "Iowa State University",
+      "count": 1
+     },
+     {
       "employer": "Koç University (College of Administrative Sciences and Economics)",
       "count": 1
      },
@@ -4736,10 +4740,6 @@
      },
      {
       "employer": "Missouri University of Science and Technology",
-      "count": 1
-     },
-     {
-      "employer": "Northeastern University",
       "count": 1
      }
     ]
@@ -6487,7 +6487,8 @@
    "logo": null,
    "roles": [
     "phd-institution",
-    "directory-university"
+    "directory-university",
+    "first-employer"
    ],
    "people": {
     "institutions": [
@@ -6498,19 +6499,19 @@
        "Michigan State University"
       ],
       "people": 29,
-      "verifiedFirstJobs": 14
+      "verifiedFirstJobs": 16
      }
     ],
     "people": 29,
-    "verifiedFirstJobs": 14,
-    "unresolved": 15,
+    "verifiedFirstJobs": 16,
+    "unresolved": 13,
     "pending": 0,
     "notYetCompleted": 0,
     "firstYear": 1971,
     "lastYear": 2024,
     "firstJobTypes": {
-     "tenure-track": 12,
-     "postdoc": 1,
+     "tenure-track": 13,
+     "postdoc": 2,
      "other-academic": 0,
      "industry": 0,
      "government": 1,
@@ -6551,11 +6552,11 @@
       "count": 1
      },
      {
-      "employer": "Rutgers University",
+      "employer": "Iowa State University, Ivy College of Business",
       "count": 1
      },
      {
-      "employer": "U.S. Army Concepts Analysis Agency",
+      "employer": "Michigan State University",
       "count": 1
      }
     ]
@@ -6621,7 +6622,42 @@
      }
     ]
    },
-   "employer": null,
+   "employer": {
+    "employers": [
+     {
+      "employerId": "michigan-state-university",
+      "name": "Michigan State University",
+      "spellings": [
+       "Michigan State University"
+      ],
+      "verifiedFirstJobs": 1
+     }
+    ],
+    "verifiedFirstJobs": 1,
+    "firstCohort": 1988,
+    "lastCohort": 1988,
+    "firstJobTypes": {
+     "tenure-track": 0,
+     "postdoc": 1,
+     "other-academic": 0,
+     "industry": 0,
+     "government": 0,
+     "nonprofit": 0,
+     "unknown": 0
+    },
+    "sourceInstitutions": [
+     {
+      "institution": "Michigan State University",
+      "count": 1
+     }
+    ],
+    "positions": [
+     {
+      "position": "Post Doctoral Fellow",
+      "count": 1
+     }
+    ]
+   },
    "programs": [],
    "sources": [
     {
@@ -6639,6 +6675,10 @@
     {
      "url": "https://broad.msu.edu/supply-chain-management/",
      "title": "Faculty page listed in the directory"
+    },
+    {
+     "url": "data/placements.json",
+     "title": "Verified first-job records (people database)"
     }
    ],
    "review": {
@@ -6646,6 +6686,11 @@
      {
       "source": "directory",
       "university": "Michigan State University",
+      "match": "exact"
+     },
+     {
+      "source": "employers",
+      "employer": "Michigan State University",
       "match": "exact"
      }
     ],
@@ -10280,7 +10325,7 @@
       "count": 1
      },
      {
-      "employer": "Indiana University (Kelley School of Business)",
+      "employer": "Indiana University, Kelley School of Business",
       "count": 1
      },
      {
@@ -14738,157 +14783,6 @@
    }
   },
   {
-   "id": "wd:Q170027",
-   "wikidata": "Q170027",
-   "name": "University of London",
-   "aliases": [
-    "University of London"
-   ],
-   "country": "United Kingdom",
-   "coords": [
-    51.521,
-    -0.129
-   ],
-   "logo": null,
-   "roles": [
-    "phd-institution",
-    "directory-university"
-   ],
-   "people": {
-    "institutions": [
-     {
-      "institutionId": "university-of-london",
-      "name": "University of London",
-      "spellings": [
-       "University of London"
-      ],
-      "people": 11,
-      "verifiedFirstJobs": 6
-     }
-    ],
-    "people": 11,
-    "verifiedFirstJobs": 6,
-    "unresolved": 5,
-    "pending": 0,
-    "notYetCompleted": 0,
-    "firstYear": 1970,
-    "lastYear": 2025,
-    "firstJobTypes": {
-     "tenure-track": 5,
-     "postdoc": 0,
-     "other-academic": 0,
-     "industry": 0,
-     "government": 0,
-     "nonprofit": 0,
-     "unknown": 1
-    },
-    "topFirstEmployers": [
-     {
-      "employer": "Catholic University of Portugal",
-      "count": 1
-     },
-     {
-      "employer": "Indiana University Bloomington",
-      "count": 1
-     },
-     {
-      "employer": "Pennsylvania State University (Smeal College of Business)",
-      "count": 1
-     },
-     {
-      "employer": "Singapore Management University",
-      "count": 1
-     },
-     {
-      "employer": "University of Oregon",
-      "count": 1
-     },
-     {
-      "employer": "University of Pennsylvania, Wharton School",
-      "count": 1
-     }
-    ]
-   },
-   "directory": {
-    "universities": [
-     {
-      "id": "university-of-london",
-      "name": "University of London",
-      "spellings": [
-       "University of London"
-      ],
-      "country": "United Kingdom",
-      "departmentCount": 4,
-      "match": "exact"
-     }
-    ],
-    "departments": [
-     {
-      "id": "university-of-london",
-      "university": "University of London",
-      "school": null,
-      "department": null,
-      "type": "University",
-      "facultyUrl": null,
-      "departmentUrl": null
-     },
-     {
-      "id": "university-of-london__bayes-business-school",
-      "university": "University of London",
-      "school": "Bayes Business School",
-      "department": null,
-      "type": "Business School",
-      "facultyUrl": null,
-      "departmentUrl": null
-     },
-     {
-      "id": "university-of-london__bayes-business-school__operations-and-supply-chain-management",
-      "university": "University of London",
-      "school": "Bayes Business School",
-      "department": "Operations and Supply Chain Management",
-      "type": "Business School",
-      "facultyUrl": null,
-      "departmentUrl": "https://www.bayes.citystgeorges.ac.uk/faculties-and-research/management/people#accordion-927190-header-2"
-     },
-     {
-      "id": "university-of-london__london-business-school__management-science-and-operations",
-      "university": "University of London",
-      "school": "London Business School",
-      "department": "Management Science and Operations",
-      "type": "Business School",
-      "facultyUrl": null,
-      "departmentUrl": "https://www.london.edu/faculty-and-research/management-science-and-operations/faculty-profiles#sortCriteria=%40profilesurname%20ascending"
-     }
-    ]
-   },
-   "employer": null,
-   "programs": [],
-   "sources": [
-    {
-     "url": "https://omlist.edutool.org/phd/by-year.html",
-     "title": "OM List, PhD graduates by year (people database)"
-    },
-    {
-     "url": "https://www.wikidata.org/wiki/Q170027",
-     "title": "Wikidata item"
-    },
-    {
-     "url": "https://www.operationsacademia.org/universities",
-     "title": "Operations Academia universities directory (universities database)"
-    }
-   ],
-   "review": {
-    "matches": [
-     {
-      "source": "directory",
-      "university": "University of London",
-      "match": "exact"
-     }
-    ],
-    "conflicts": []
-   }
-  },
-  {
    "id": "wd:Q300980",
    "wikidata": "Q300980",
    "name": "Aalto University",
@@ -15813,6 +15707,157 @@
      {
       "source": "employers",
       "employer": "University of Tennessee at Knoxville",
+      "match": "exact"
+     }
+    ],
+    "conflicts": []
+   }
+  },
+  {
+   "id": "wd:Q170027",
+   "wikidata": "Q170027",
+   "name": "University of London",
+   "aliases": [
+    "University of London"
+   ],
+   "country": "United Kingdom",
+   "coords": [
+    51.521,
+    -0.129
+   ],
+   "logo": null,
+   "roles": [
+    "phd-institution",
+    "directory-university"
+   ],
+   "people": {
+    "institutions": [
+     {
+      "institutionId": "university-of-london",
+      "name": "University of London",
+      "spellings": [
+       "University of London"
+      ],
+      "people": 10,
+      "verifiedFirstJobs": 6
+     }
+    ],
+    "people": 10,
+    "verifiedFirstJobs": 6,
+    "unresolved": 4,
+    "pending": 0,
+    "notYetCompleted": 0,
+    "firstYear": 1970,
+    "lastYear": 2025,
+    "firstJobTypes": {
+     "tenure-track": 5,
+     "postdoc": 0,
+     "other-academic": 0,
+     "industry": 0,
+     "government": 0,
+     "nonprofit": 0,
+     "unknown": 1
+    },
+    "topFirstEmployers": [
+     {
+      "employer": "Catholic University of Portugal",
+      "count": 1
+     },
+     {
+      "employer": "Indiana University Bloomington",
+      "count": 1
+     },
+     {
+      "employer": "Pennsylvania State University (Smeal College of Business)",
+      "count": 1
+     },
+     {
+      "employer": "Singapore Management University",
+      "count": 1
+     },
+     {
+      "employer": "University of Oregon",
+      "count": 1
+     },
+     {
+      "employer": "University of Pennsylvania, Wharton School",
+      "count": 1
+     }
+    ]
+   },
+   "directory": {
+    "universities": [
+     {
+      "id": "university-of-london",
+      "name": "University of London",
+      "spellings": [
+       "University of London"
+      ],
+      "country": "United Kingdom",
+      "departmentCount": 4,
+      "match": "exact"
+     }
+    ],
+    "departments": [
+     {
+      "id": "university-of-london",
+      "university": "University of London",
+      "school": null,
+      "department": null,
+      "type": "University",
+      "facultyUrl": null,
+      "departmentUrl": null
+     },
+     {
+      "id": "university-of-london__bayes-business-school",
+      "university": "University of London",
+      "school": "Bayes Business School",
+      "department": null,
+      "type": "Business School",
+      "facultyUrl": null,
+      "departmentUrl": null
+     },
+     {
+      "id": "university-of-london__bayes-business-school__operations-and-supply-chain-management",
+      "university": "University of London",
+      "school": "Bayes Business School",
+      "department": "Operations and Supply Chain Management",
+      "type": "Business School",
+      "facultyUrl": null,
+      "departmentUrl": "https://www.bayes.citystgeorges.ac.uk/faculties-and-research/management/people#accordion-927190-header-2"
+     },
+     {
+      "id": "university-of-london__london-business-school__management-science-and-operations",
+      "university": "University of London",
+      "school": "London Business School",
+      "department": "Management Science and Operations",
+      "type": "Business School",
+      "facultyUrl": null,
+      "departmentUrl": "https://www.london.edu/faculty-and-research/management-science-and-operations/faculty-profiles#sortCriteria=%40profilesurname%20ascending"
+     }
+    ]
+   },
+   "employer": null,
+   "programs": [],
+   "sources": [
+    {
+     "url": "https://omlist.edutool.org/phd/by-year.html",
+     "title": "OM List, PhD graduates by year (people database)"
+    },
+    {
+     "url": "https://www.wikidata.org/wiki/Q170027",
+     "title": "Wikidata item"
+    },
+    {
+     "url": "https://www.operationsacademia.org/universities",
+     "title": "Operations Academia universities directory (universities database)"
+    }
+   ],
+   "review": {
+    "matches": [
+     {
+      "source": "directory",
+      "university": "University of London",
       "match": "exact"
      }
     ],
@@ -17684,6 +17729,270 @@
    }
   },
   {
+   "id": "wd:Q1481050",
+   "wikidata": "Q1481050",
+   "name": "London Business School",
+   "aliases": [
+    "London Business School",
+    "LBS",
+    "London Business School (LBS)"
+   ],
+   "country": "United Kingdom",
+   "coords": [
+    51.526,
+    -0.161
+   ],
+   "logo": null,
+   "roles": [
+    "phd-institution",
+    "directory-university",
+    "first-employer"
+   ],
+   "people": {
+    "institutions": [
+     {
+      "institutionId": "london-business-school",
+      "name": "London Business School",
+      "spellings": [
+       "London Business School"
+      ],
+      "people": 8,
+      "verifiedFirstJobs": 8
+     }
+    ],
+    "people": 8,
+    "verifiedFirstJobs": 8,
+    "unresolved": 0,
+    "pending": 0,
+    "notYetCompleted": 0,
+    "firstYear": 2009,
+    "lastYear": 2024,
+    "firstJobTypes": {
+     "tenure-track": 4,
+     "postdoc": 2,
+     "other-academic": 0,
+     "industry": 0,
+     "government": 0,
+     "nonprofit": 0,
+     "unknown": 2
+    },
+    "topFirstEmployers": [
+     {
+      "employer": "Bilkent University",
+      "count": 1
+     },
+     {
+      "employer": "Imperial College Business School, Imperial College London",
+      "count": 1
+     },
+     {
+      "employer": "MIT Sloan School of Management",
+      "count": 1
+     },
+     {
+      "employer": "Singapore Management University (Lee Kong Chian School of Business)",
+      "count": 1
+     },
+     {
+      "employer": "Stanford University (Graduate School of Business)",
+      "count": 1
+     },
+     {
+      "employer": "University of California, Berkeley",
+      "count": 1
+     },
+     {
+      "employer": "University of Toronto",
+      "count": 1
+     },
+     {
+      "employer": "University of Virginia",
+      "count": 1
+     }
+    ]
+   },
+   "directory": {
+    "universities": [
+     {
+      "id": "london-business-school",
+      "name": "London Business School",
+      "spellings": [
+       "London Business School"
+      ],
+      "country": "United Kingdom",
+      "departmentCount": 2,
+      "match": "exact"
+     },
+     {
+      "id": "lbs",
+      "name": "LBS",
+      "spellings": [
+       "LBS"
+      ],
+      "country": "United Kingdom",
+      "departmentCount": 1,
+      "match": "wikidata"
+     },
+     {
+      "id": "london-business-school-lbs",
+      "name": "London Business School (LBS)",
+      "spellings": [
+       "London Business School (LBS)"
+      ],
+      "country": "United Kingdom",
+      "departmentCount": 1,
+      "match": "exact"
+     }
+    ],
+    "departments": [
+     {
+      "id": "london-business-school",
+      "university": "London Business School",
+      "school": null,
+      "department": null,
+      "type": "Business School",
+      "facultyUrl": null,
+      "departmentUrl": null
+     },
+     {
+      "id": "london-business-school____om",
+      "university": "London Business School",
+      "school": null,
+      "department": "OM",
+      "type": "Business School",
+      "facultyUrl": null,
+      "departmentUrl": null
+     },
+     {
+      "id": "lbs____om-or",
+      "university": "LBS",
+      "school": null,
+      "department": "OM/OR",
+      "type": null,
+      "facultyUrl": null,
+      "departmentUrl": null
+     },
+     {
+      "id": "london-business-school____management-science-and-operations",
+      "university": "London Business School (LBS)",
+      "school": null,
+      "department": "Management Science and Operations",
+      "type": "Business School",
+      "facultyUrl": "https://www.london.edu/faculty-and-research/subject-areas/management-science-and-operations#.Vf8no9KUfg0",
+      "departmentUrl": null
+     }
+    ]
+   },
+   "employer": {
+    "employers": [
+     {
+      "employerId": "london-business-school",
+      "name": "London Business School",
+      "spellings": [
+       "London Business School"
+      ],
+      "verifiedFirstJobs": 7
+     }
+    ],
+    "verifiedFirstJobs": 7,
+    "firstCohort": 2002,
+    "lastCohort": 2025,
+    "firstJobTypes": {
+     "tenure-track": 0,
+     "postdoc": 0,
+     "other-academic": 0,
+     "industry": 0,
+     "government": 0,
+     "nonprofit": 0,
+     "unknown": 7
+    },
+    "sourceInstitutions": [
+     {
+      "institution": "Cornell University",
+      "count": 1
+     },
+     {
+      "institution": "INSEAD",
+      "count": 1
+     },
+     {
+      "institution": "Massachusetts Institute of Technology",
+      "count": 1
+     },
+     {
+      "institution": "University of California, Berkeley",
+      "count": 1
+     },
+     {
+      "institution": "University of Chicago",
+      "count": 1
+     }
+    ],
+    "positions": [
+     {
+      "position": "Assistant Professor of Management Science and Operations",
+      "count": 4
+     },
+     {
+      "position": "Assistant Professor",
+      "count": 2
+     },
+     {
+      "position": "Assistant Professor of Decision Sciences",
+      "count": 1
+     }
+    ]
+   },
+   "programs": [],
+   "sources": [
+    {
+     "url": "https://omlist.edutool.org/phd/by-year.html",
+     "title": "OM List, PhD graduates by year (people database)"
+    },
+    {
+     "url": "https://www.wikidata.org/wiki/Q1481050",
+     "title": "Wikidata item"
+    },
+    {
+     "url": "https://www.operationsacademia.org/universities",
+     "title": "Operations Academia universities directory (universities database)"
+    },
+    {
+     "url": "https://www.london.edu/faculty-and-research/subject-areas/management-science-and-operations#.Vf8no9KUfg0",
+     "title": "Faculty page listed in the directory"
+    },
+    {
+     "url": "data/placements.json",
+     "title": "Verified first-job records (people database)"
+    }
+   ],
+   "review": {
+    "matches": [
+     {
+      "source": "directory",
+      "university": "London Business School",
+      "match": "exact"
+     },
+     {
+      "source": "directory",
+      "university": "LBS",
+      "match": "wikidata"
+     },
+     {
+      "source": "directory",
+      "university": "London Business School (LBS)",
+      "match": "exact"
+     },
+     {
+      "source": "employers",
+      "employer": "London Business School",
+      "match": "wikidata"
+     }
+    ],
+    "conflicts": []
+   }
+  },
+  {
    "id": "wd:Q178848",
    "wikidata": "Q178848",
    "name": "University of Notre Dame",
@@ -18992,266 +19301,6 @@
      {
       "source": "employers",
       "employer": "University of Utah",
-      "match": "wikidata"
-     }
-    ],
-    "conflicts": []
-   }
-  },
-  {
-   "id": "wd:Q1481050",
-   "wikidata": "Q1481050",
-   "name": "London Business School",
-   "aliases": [
-    "London Business School",
-    "LBS",
-    "London Business School (LBS)"
-   ],
-   "country": "United Kingdom",
-   "coords": [
-    51.526,
-    -0.161
-   ],
-   "logo": null,
-   "roles": [
-    "phd-institution",
-    "directory-university",
-    "first-employer"
-   ],
-   "people": {
-    "institutions": [
-     {
-      "institutionId": "london-business-school",
-      "name": "London Business School",
-      "spellings": [
-       "London Business School"
-      ],
-      "people": 7,
-      "verifiedFirstJobs": 7
-     }
-    ],
-    "people": 7,
-    "verifiedFirstJobs": 7,
-    "unresolved": 0,
-    "pending": 0,
-    "notYetCompleted": 0,
-    "firstYear": 2009,
-    "lastYear": 2024,
-    "firstJobTypes": {
-     "tenure-track": 3,
-     "postdoc": 2,
-     "other-academic": 0,
-     "industry": 0,
-     "government": 0,
-     "nonprofit": 0,
-     "unknown": 2
-    },
-    "topFirstEmployers": [
-     {
-      "employer": "Bilkent University",
-      "count": 1
-     },
-     {
-      "employer": "Imperial College Business School, Imperial College London",
-      "count": 1
-     },
-     {
-      "employer": "Singapore Management University (Lee Kong Chian School of Business)",
-      "count": 1
-     },
-     {
-      "employer": "Stanford University (Graduate School of Business)",
-      "count": 1
-     },
-     {
-      "employer": "University of California, Berkeley",
-      "count": 1
-     },
-     {
-      "employer": "University of Toronto",
-      "count": 1
-     },
-     {
-      "employer": "University of Virginia",
-      "count": 1
-     }
-    ]
-   },
-   "directory": {
-    "universities": [
-     {
-      "id": "london-business-school",
-      "name": "London Business School",
-      "spellings": [
-       "London Business School"
-      ],
-      "country": "United Kingdom",
-      "departmentCount": 2,
-      "match": "exact"
-     },
-     {
-      "id": "lbs",
-      "name": "LBS",
-      "spellings": [
-       "LBS"
-      ],
-      "country": "United Kingdom",
-      "departmentCount": 1,
-      "match": "wikidata"
-     },
-     {
-      "id": "london-business-school-lbs",
-      "name": "London Business School (LBS)",
-      "spellings": [
-       "London Business School (LBS)"
-      ],
-      "country": "United Kingdom",
-      "departmentCount": 1,
-      "match": "exact"
-     }
-    ],
-    "departments": [
-     {
-      "id": "london-business-school",
-      "university": "London Business School",
-      "school": null,
-      "department": null,
-      "type": "Business School",
-      "facultyUrl": null,
-      "departmentUrl": null
-     },
-     {
-      "id": "london-business-school____om",
-      "university": "London Business School",
-      "school": null,
-      "department": "OM",
-      "type": "Business School",
-      "facultyUrl": null,
-      "departmentUrl": null
-     },
-     {
-      "id": "lbs____om-or",
-      "university": "LBS",
-      "school": null,
-      "department": "OM/OR",
-      "type": null,
-      "facultyUrl": null,
-      "departmentUrl": null
-     },
-     {
-      "id": "london-business-school____management-science-and-operations",
-      "university": "London Business School (LBS)",
-      "school": null,
-      "department": "Management Science and Operations",
-      "type": "Business School",
-      "facultyUrl": "https://www.london.edu/faculty-and-research/subject-areas/management-science-and-operations#.Vf8no9KUfg0",
-      "departmentUrl": null
-     }
-    ]
-   },
-   "employer": {
-    "employers": [
-     {
-      "employerId": "london-business-school",
-      "name": "London Business School",
-      "spellings": [
-       "London Business School"
-      ],
-      "verifiedFirstJobs": 7
-     }
-    ],
-    "verifiedFirstJobs": 7,
-    "firstCohort": 2002,
-    "lastCohort": 2025,
-    "firstJobTypes": {
-     "tenure-track": 0,
-     "postdoc": 0,
-     "other-academic": 0,
-     "industry": 0,
-     "government": 0,
-     "nonprofit": 0,
-     "unknown": 7
-    },
-    "sourceInstitutions": [
-     {
-      "institution": "Cornell University",
-      "count": 1
-     },
-     {
-      "institution": "INSEAD",
-      "count": 1
-     },
-     {
-      "institution": "Massachusetts Institute of Technology",
-      "count": 1
-     },
-     {
-      "institution": "University of California, Berkeley",
-      "count": 1
-     },
-     {
-      "institution": "University of Chicago",
-      "count": 1
-     }
-    ],
-    "positions": [
-     {
-      "position": "Assistant Professor of Management Science and Operations",
-      "count": 4
-     },
-     {
-      "position": "Assistant Professor",
-      "count": 2
-     },
-     {
-      "position": "Assistant Professor of Decision Sciences",
-      "count": 1
-     }
-    ]
-   },
-   "programs": [],
-   "sources": [
-    {
-     "url": "https://omlist.edutool.org/phd/by-year.html",
-     "title": "OM List, PhD graduates by year (people database)"
-    },
-    {
-     "url": "https://www.wikidata.org/wiki/Q1481050",
-     "title": "Wikidata item"
-    },
-    {
-     "url": "https://www.operationsacademia.org/universities",
-     "title": "Operations Academia universities directory (universities database)"
-    },
-    {
-     "url": "https://www.london.edu/faculty-and-research/subject-areas/management-science-and-operations#.Vf8no9KUfg0",
-     "title": "Faculty page listed in the directory"
-    },
-    {
-     "url": "data/placements.json",
-     "title": "Verified first-job records (people database)"
-    }
-   ],
-   "review": {
-    "matches": [
-     {
-      "source": "directory",
-      "university": "London Business School",
-      "match": "exact"
-     },
-     {
-      "source": "directory",
-      "university": "LBS",
-      "match": "wikidata"
-     },
-     {
-      "source": "directory",
-      "university": "London Business School (LBS)",
-      "match": "exact"
-     },
-     {
-      "source": "employers",
-      "employer": "London Business School",
       "match": "wikidata"
      }
     ],
@@ -22278,6 +22327,209 @@
    }
   },
   {
+   "id": "wd:Q189022",
+   "wikidata": "Q189022",
+   "name": "Imperial College London",
+   "aliases": [
+    "Imperial College London"
+   ],
+   "country": "United Kingdom",
+   "coords": [
+    51.498,
+    -0.177
+   ],
+   "logo": null,
+   "roles": [
+    "phd-institution",
+    "directory-university",
+    "first-employer"
+   ],
+   "people": {
+    "institutions": [
+     {
+      "institutionId": "imperial-college-london",
+      "name": "Imperial College London",
+      "spellings": [
+       "Imperial College London"
+      ],
+      "people": 5,
+      "verifiedFirstJobs": 3
+     }
+    ],
+    "people": 5,
+    "verifiedFirstJobs": 3,
+    "unresolved": 2,
+    "pending": 0,
+    "notYetCompleted": 0,
+    "firstYear": 2009,
+    "lastYear": 2025,
+    "firstJobTypes": {
+     "tenure-track": 0,
+     "postdoc": 3,
+     "other-academic": 0,
+     "industry": 0,
+     "government": 0,
+     "nonprofit": 0,
+     "unknown": 0
+    },
+    "topFirstEmployers": [
+     {
+      "employer": "Imperial College London",
+      "count": 1
+     },
+     {
+      "employer": "Imperial College London, Department of Computing (Computational Optimisation Group)",
+      "count": 1
+     },
+     {
+      "employer": "Princeton University",
+      "count": 1
+     }
+    ]
+   },
+   "directory": {
+    "universities": [
+     {
+      "id": "imperial-college-london",
+      "name": "Imperial College London",
+      "spellings": [
+       "Imperial College London"
+      ],
+      "country": "United Kingdom",
+      "departmentCount": 3,
+      "match": "exact"
+     }
+    ],
+    "departments": [
+     {
+      "id": "imperial-college-london",
+      "university": "Imperial College London",
+      "school": null,
+      "department": null,
+      "type": "University",
+      "facultyUrl": null,
+      "departmentUrl": null
+     },
+     {
+      "id": "imperial-college-london__imperial-college-business-school__analytics-and-operations",
+      "university": "Imperial College London",
+      "school": "Imperial College Business School",
+      "department": "Analytics and Operations",
+      "type": "Business School",
+      "facultyUrl": "http://wwwf.imperial.ac.uk/business-school/people/faculty-by-department/",
+      "departmentUrl": "https://www.imperial.ac.uk/business-school/faculty-research/academic-areas/analytics-operations/people/"
+     },
+     {
+      "id": "imperial-college-london__imperial-college-business-school__operations-management",
+      "university": "Imperial College London",
+      "school": "Imperial College Business School",
+      "department": "Operations Management",
+      "type": "Business School",
+      "facultyUrl": null,
+      "departmentUrl": null
+     }
+    ]
+   },
+   "employer": {
+    "employers": [
+     {
+      "employerId": "imperial-college-london",
+      "name": "Imperial College London",
+      "spellings": [
+       "Imperial College London"
+      ],
+      "verifiedFirstJobs": 4
+     }
+    ],
+    "verifiedFirstJobs": 4,
+    "firstCohort": 2014,
+    "lastCohort": 2025,
+    "firstJobTypes": {
+     "tenure-track": 0,
+     "postdoc": 1,
+     "other-academic": 1,
+     "industry": 0,
+     "government": 0,
+     "nonprofit": 0,
+     "unknown": 2
+    },
+    "sourceInstitutions": [
+     {
+      "institution": "Columbia University",
+      "count": 1
+     },
+     {
+      "institution": "Imperial College London",
+      "count": 1
+     },
+     {
+      "institution": "National University of Singapore",
+      "count": 1
+     },
+     {
+      "institution": "University of Toronto",
+      "count": 1
+     }
+    ],
+    "positions": [
+     {
+      "position": "Assistant Professor of Operations",
+      "count": 1
+     },
+     {
+      "position": "Assistant Professor of Operations Management",
+      "count": 1
+     },
+     {
+      "position": "Postdoctoral Researcher",
+      "count": 1
+     },
+     {
+      "position": "Research Associate",
+      "count": 1
+     }
+    ]
+   },
+   "programs": [],
+   "sources": [
+    {
+     "url": "https://omlist.edutool.org/phd/by-year.html",
+     "title": "OM List, PhD graduates by year (people database)"
+    },
+    {
+     "url": "https://www.wikidata.org/wiki/Q189022",
+     "title": "Wikidata item"
+    },
+    {
+     "url": "https://www.operationsacademia.org/universities",
+     "title": "Operations Academia universities directory (universities database)"
+    },
+    {
+     "url": "http://wwwf.imperial.ac.uk/business-school/people/faculty-by-department/",
+     "title": "Faculty page listed in the directory"
+    },
+    {
+     "url": "data/placements.json",
+     "title": "Verified first-job records (people database)"
+    }
+   ],
+   "review": {
+    "matches": [
+     {
+      "source": "directory",
+      "university": "Imperial College London",
+      "match": "exact"
+     },
+     {
+      "source": "employers",
+      "employer": "Imperial College London",
+      "match": "wikidata"
+     }
+    ],
+    "conflicts": []
+   }
+  },
+  {
    "id": "wd:Q749718",
    "wikidata": "Q749718",
    "name": "Oklahoma State University",
@@ -24360,205 +24612,6 @@
    }
   },
   {
-   "id": "wd:Q189022",
-   "wikidata": "Q189022",
-   "name": "Imperial College London",
-   "aliases": [
-    "Imperial College London"
-   ],
-   "country": "United Kingdom",
-   "coords": [
-    51.498,
-    -0.177
-   ],
-   "logo": null,
-   "roles": [
-    "phd-institution",
-    "directory-university",
-    "first-employer"
-   ],
-   "people": {
-    "institutions": [
-     {
-      "institutionId": "imperial-college-london",
-      "name": "Imperial College London",
-      "spellings": [
-       "Imperial College London"
-      ],
-      "people": 4,
-      "verifiedFirstJobs": 2
-     }
-    ],
-    "people": 4,
-    "verifiedFirstJobs": 2,
-    "unresolved": 2,
-    "pending": 0,
-    "notYetCompleted": 0,
-    "firstYear": 2009,
-    "lastYear": 2025,
-    "firstJobTypes": {
-     "tenure-track": 0,
-     "postdoc": 2,
-     "other-academic": 0,
-     "industry": 0,
-     "government": 0,
-     "nonprofit": 0,
-     "unknown": 0
-    },
-    "topFirstEmployers": [
-     {
-      "employer": "Imperial College London",
-      "count": 1
-     },
-     {
-      "employer": "Princeton University",
-      "count": 1
-     }
-    ]
-   },
-   "directory": {
-    "universities": [
-     {
-      "id": "imperial-college-london",
-      "name": "Imperial College London",
-      "spellings": [
-       "Imperial College London"
-      ],
-      "country": "United Kingdom",
-      "departmentCount": 3,
-      "match": "exact"
-     }
-    ],
-    "departments": [
-     {
-      "id": "imperial-college-london",
-      "university": "Imperial College London",
-      "school": null,
-      "department": null,
-      "type": "University",
-      "facultyUrl": null,
-      "departmentUrl": null
-     },
-     {
-      "id": "imperial-college-london__imperial-college-business-school__analytics-and-operations",
-      "university": "Imperial College London",
-      "school": "Imperial College Business School",
-      "department": "Analytics and Operations",
-      "type": "Business School",
-      "facultyUrl": "http://wwwf.imperial.ac.uk/business-school/people/faculty-by-department/",
-      "departmentUrl": "https://www.imperial.ac.uk/business-school/faculty-research/academic-areas/analytics-operations/people/"
-     },
-     {
-      "id": "imperial-college-london__imperial-college-business-school__operations-management",
-      "university": "Imperial College London",
-      "school": "Imperial College Business School",
-      "department": "Operations Management",
-      "type": "Business School",
-      "facultyUrl": null,
-      "departmentUrl": null
-     }
-    ]
-   },
-   "employer": {
-    "employers": [
-     {
-      "employerId": "imperial-college-london",
-      "name": "Imperial College London",
-      "spellings": [
-       "Imperial College London"
-      ],
-      "verifiedFirstJobs": 4
-     }
-    ],
-    "verifiedFirstJobs": 4,
-    "firstCohort": 2014,
-    "lastCohort": 2025,
-    "firstJobTypes": {
-     "tenure-track": 0,
-     "postdoc": 1,
-     "other-academic": 1,
-     "industry": 0,
-     "government": 0,
-     "nonprofit": 0,
-     "unknown": 2
-    },
-    "sourceInstitutions": [
-     {
-      "institution": "Columbia University",
-      "count": 1
-     },
-     {
-      "institution": "Imperial College London",
-      "count": 1
-     },
-     {
-      "institution": "National University of Singapore",
-      "count": 1
-     },
-     {
-      "institution": "University of Toronto",
-      "count": 1
-     }
-    ],
-    "positions": [
-     {
-      "position": "Assistant Professor of Operations",
-      "count": 1
-     },
-     {
-      "position": "Assistant Professor of Operations Management",
-      "count": 1
-     },
-     {
-      "position": "Postdoctoral Researcher",
-      "count": 1
-     },
-     {
-      "position": "Research Associate",
-      "count": 1
-     }
-    ]
-   },
-   "programs": [],
-   "sources": [
-    {
-     "url": "https://omlist.edutool.org/phd/by-year.html",
-     "title": "OM List, PhD graduates by year (people database)"
-    },
-    {
-     "url": "https://www.wikidata.org/wiki/Q189022",
-     "title": "Wikidata item"
-    },
-    {
-     "url": "https://www.operationsacademia.org/universities",
-     "title": "Operations Academia universities directory (universities database)"
-    },
-    {
-     "url": "http://wwwf.imperial.ac.uk/business-school/people/faculty-by-department/",
-     "title": "Faculty page listed in the directory"
-    },
-    {
-     "url": "data/placements.json",
-     "title": "Verified first-job records (people database)"
-    }
-   ],
-   "review": {
-    "matches": [
-     {
-      "source": "directory",
-      "university": "Imperial College London",
-      "match": "exact"
-     },
-     {
-      "source": "employers",
-      "employer": "Imperial College London",
-      "match": "wikidata"
-     }
-    ],
-    "conflicts": []
-   }
-  },
-  {
    "id": "wd:Q1136919",
    "wikidata": "Q1136919",
    "name": "Iowa State University",
@@ -24674,14 +24727,14 @@
       "spellings": [
        "Iowa State University"
       ],
-      "verifiedFirstJobs": 3
+      "verifiedFirstJobs": 4
      }
     ],
-    "verifiedFirstJobs": 3,
+    "verifiedFirstJobs": 4,
     "firstCohort": 1998,
     "lastCohort": 2023,
     "firstJobTypes": {
-     "tenure-track": 3,
+     "tenure-track": 4,
      "postdoc": 0,
      "other-academic": 0,
      "industry": 0,
@@ -24695,6 +24748,10 @@
       "count": 2
      },
      {
+      "institution": "Pennsylvania State University",
+      "count": 1
+     },
+     {
       "institution": "University of Arkansas at Fayetteville",
       "count": 1
      }
@@ -24706,7 +24763,7 @@
      },
      {
       "position": "Assistant Professor of Transportation and Logistics",
-      "count": 1
+      "count": 2
      }
     ]
    },
@@ -25641,18 +25698,18 @@
        "University of North Texas"
       ],
       "people": 4,
-      "verifiedFirstJobs": 1
+      "verifiedFirstJobs": 2
      }
     ],
     "people": 4,
-    "verifiedFirstJobs": 1,
-    "unresolved": 3,
+    "verifiedFirstJobs": 2,
+    "unresolved": 2,
     "pending": 0,
     "notYetCompleted": 0,
     "firstYear": 2007,
     "lastYear": 2024,
     "firstJobTypes": {
-     "tenure-track": 1,
+     "tenure-track": 2,
      "postdoc": 0,
      "other-academic": 0,
      "industry": 0,
@@ -25663,6 +25720,10 @@
     "topFirstEmployers": [
      {
       "employer": "Auburn University",
+      "count": 1
+     },
+     {
+      "employer": "John Carroll University",
       "count": 1
      }
     ]
@@ -32254,18 +32315,18 @@
        "Indian School of Business"
       ],
       "people": 2,
-      "verifiedFirstJobs": 0
+      "verifiedFirstJobs": 1
      }
     ],
     "people": 2,
-    "verifiedFirstJobs": 0,
-    "unresolved": 2,
+    "verifiedFirstJobs": 1,
+    "unresolved": 1,
     "pending": 0,
     "notYetCompleted": 0,
     "firstYear": 2021,
     "lastYear": 2025,
     "firstJobTypes": {
-     "tenure-track": 0,
+     "tenure-track": 1,
      "postdoc": 0,
      "other-academic": 0,
      "industry": 0,
@@ -32273,7 +32334,12 @@
      "nonprofit": 0,
      "unknown": 0
     },
-    "topFirstEmployers": []
+    "topFirstEmployers": [
+     {
+      "employer": "Indian Institute of Management Ahmedabad",
+      "count": 1
+     }
+    ]
    },
    "directory": {
     "universities": [
@@ -34815,12 +34881,12 @@
        "Aix Marseille Université"
       ],
       "people": 2,
-      "verifiedFirstJobs": 0
+      "verifiedFirstJobs": 1
      }
     ],
     "people": 2,
-    "verifiedFirstJobs": 0,
-    "unresolved": 2,
+    "verifiedFirstJobs": 1,
+    "unresolved": 1,
     "pending": 0,
     "notYetCompleted": 0,
     "firstYear": 2021,
@@ -34832,9 +34898,14 @@
      "industry": 0,
      "government": 0,
      "nonprofit": 0,
-     "unknown": 0
+     "unknown": 1
     },
-    "topFirstEmployers": []
+    "topFirstEmployers": [
+     {
+      "employer": "KEDGE Business School",
+      "count": 1
+     }
+    ]
    },
    "directory": null,
    "employer": null,
@@ -36125,12 +36196,12 @@
        "International University of Rabat"
       ],
       "people": 2,
-      "verifiedFirstJobs": 0
+      "verifiedFirstJobs": 1
      }
     ],
     "people": 2,
-    "verifiedFirstJobs": 0,
-    "unresolved": 2,
+    "verifiedFirstJobs": 1,
+    "unresolved": 1,
     "pending": 0,
     "notYetCompleted": 0,
     "firstYear": 2025,
@@ -36142,9 +36213,14 @@
      "industry": 0,
      "government": 0,
      "nonprofit": 0,
-     "unknown": 0
+     "unknown": 1
     },
-    "topFirstEmployers": []
+    "topFirstEmployers": [
+     {
+      "employer": "International University of Rabat (Rabat Business School)",
+      "count": 1
+     }
+    ]
    },
    "directory": null,
    "employer": null,
@@ -44139,14 +44215,14 @@
       "spellings": [
        "Indian Institute of Management Ahmedabad"
       ],
-      "verifiedFirstJobs": 1
+      "verifiedFirstJobs": 2
      }
     ],
-    "verifiedFirstJobs": 1,
+    "verifiedFirstJobs": 2,
     "firstCohort": 2009,
-    "lastCohort": 2009,
+    "lastCohort": 2021,
     "firstJobTypes": {
-     "tenure-track": 1,
+     "tenure-track": 2,
      "postdoc": 0,
      "other-academic": 0,
      "industry": 0,
@@ -44156,6 +44232,10 @@
     },
     "sourceInstitutions": [
      {
+      "institution": "Indian School of Business",
+      "count": 1
+     },
+     {
       "institution": "University of Waterloo",
       "count": 1
      }
@@ -44163,7 +44243,7 @@
     "positions": [
      {
       "position": "Assistant Professor",
-      "count": 1
+      "count": 2
      }
     ]
    },
@@ -44284,10 +44364,10 @@
       "spellings": [
        "KEDGE Business School"
       ],
-      "verifiedFirstJobs": 1
+      "verifiedFirstJobs": 2
      }
     ],
-    "verifiedFirstJobs": 1,
+    "verifiedFirstJobs": 2,
     "firstCohort": 2022,
     "lastCohort": 2022,
     "firstJobTypes": {
@@ -44297,9 +44377,13 @@
      "industry": 0,
      "government": 0,
      "nonprofit": 0,
-     "unknown": 1
+     "unknown": 2
     },
     "sourceInstitutions": [
+     {
+      "institution": "Aix Marseille Université",
+      "count": 1
+     },
      {
       "institution": "Grenoble Alpes University",
       "count": 1
@@ -48209,71 +48293,6 @@
     },
     {
      "url": "https://www.wikidata.org/wiki/Q1711196",
-     "title": "Wikidata item"
-    }
-   ],
-   "review": {
-    "matches": [],
-    "conflicts": []
-   }
-  },
-  {
-   "id": "wd:Q152087",
-   "wikidata": "Q152087",
-   "name": "Humboldt-Universität zu Berlin",
-   "aliases": [
-    "Humboldt-Universität zu Berlin",
-    "University of Berlin"
-   ],
-   "country": "Germany",
-   "coords": [
-    52.518,
-    13.393
-   ],
-   "logo": null,
-   "roles": [
-    "phd-institution"
-   ],
-   "people": {
-    "institutions": [
-     {
-      "institutionId": "university-of-berlin",
-      "name": "University of Berlin",
-      "spellings": [
-       "University of Berlin"
-      ],
-      "people": 1,
-      "verifiedFirstJobs": 0
-     }
-    ],
-    "people": 1,
-    "verifiedFirstJobs": 0,
-    "unresolved": 1,
-    "pending": 0,
-    "notYetCompleted": 0,
-    "firstYear": 2008,
-    "lastYear": 2008,
-    "firstJobTypes": {
-     "tenure-track": 0,
-     "postdoc": 0,
-     "other-academic": 0,
-     "industry": 0,
-     "government": 0,
-     "nonprofit": 0,
-     "unknown": 0
-    },
-    "topFirstEmployers": []
-   },
-   "directory": null,
-   "employer": null,
-   "programs": [],
-   "sources": [
-    {
-     "url": "https://omlist.edutool.org/phd/by-year.html",
-     "title": "OM List, PhD graduates by year (people database)"
-    },
-    {
-     "url": "https://www.wikidata.org/wiki/Q152087",
      "title": "Wikidata item"
     }
    ],
@@ -63474,7 +63493,8 @@
    ],
    "logo": null,
    "roles": [
-    "directory-university"
+    "directory-university",
+    "first-employer"
    ],
    "people": null,
    "directory": {
@@ -63511,16 +63531,61 @@
      }
     ]
    },
-   "employer": null,
+   "employer": {
+    "employers": [
+     {
+      "employerId": "mit-sloan-school-of-management",
+      "name": "MIT Sloan School of Management",
+      "spellings": [
+       "MIT Sloan School of Management"
+      ],
+      "verifiedFirstJobs": 1
+     }
+    ],
+    "verifiedFirstJobs": 1,
+    "firstCohort": 2016,
+    "lastCohort": 2016,
+    "firstJobTypes": {
+     "tenure-track": 1,
+     "postdoc": 0,
+     "other-academic": 0,
+     "industry": 0,
+     "government": 0,
+     "nonprofit": 0,
+     "unknown": 0
+    },
+    "sourceInstitutions": [
+     {
+      "institution": "London Business School",
+      "count": 1
+     }
+    ],
+    "positions": [
+     {
+      "position": "Assistant Professor of Operations Management",
+      "count": 1
+     }
+    ]
+   },
    "programs": [],
    "sources": [
     {
      "url": "https://www.operationsacademia.org/universities",
      "title": "Operations Academia universities directory (universities database)"
+    },
+    {
+     "url": "data/placements.json",
+     "title": "Verified first-job records (people database)"
     }
    ],
    "review": {
-    "matches": [],
+    "matches": [
+     {
+      "source": "employers",
+      "employer": "MIT Sloan School of Management",
+      "match": "exact"
+     }
+    ],
     "conflicts": []
    }
   },
@@ -92243,6 +92308,69 @@
    }
   },
   {
+   "id": "name:imperial-college-london-department-of-computing-computational-optimisation-group",
+   "wikidata": null,
+   "name": "Imperial College London, Department of Computing (Computational Optimisation Group)",
+   "aliases": [
+    "Imperial College London, Department of Computing (Computational Optimisation Group)"
+   ],
+   "country": null,
+   "coords": null,
+   "logo": null,
+   "roles": [
+    "first-employer"
+   ],
+   "people": null,
+   "directory": null,
+   "employer": {
+    "employers": [
+     {
+      "employerId": "imperial-college-london-department-of-computing-computational-optimisation-group",
+      "name": "Imperial College London, Department of Computing (Computational Optimisation Group)",
+      "spellings": [
+       "Imperial College London, Department of Computing (Computational Optimisation Group)"
+      ],
+      "verifiedFirstJobs": 1
+     }
+    ],
+    "verifiedFirstJobs": 1,
+    "firstCohort": 2010,
+    "lastCohort": 2010,
+    "firstJobTypes": {
+     "tenure-track": 0,
+     "postdoc": 1,
+     "other-academic": 0,
+     "industry": 0,
+     "government": 0,
+     "nonprofit": 0,
+     "unknown": 0
+    },
+    "sourceInstitutions": [
+     {
+      "institution": "Imperial College London",
+      "count": 1
+     }
+    ],
+    "positions": [
+     {
+      "position": "Post-doctoral researcher (research assistant)",
+      "count": 1
+     }
+    ]
+   },
+   "programs": [],
+   "sources": [
+    {
+     "url": "data/placements.json",
+     "title": "Verified first-job records (people database)"
+    }
+   ],
+   "review": {
+    "matches": [],
+    "conflicts": []
+   }
+  },
+  {
    "id": "name:imperial-college-of-science-and-technology-london",
    "wikidata": null,
    "name": "Imperial College of Science and Technology, London",
@@ -92624,83 +92752,6 @@
    }
   },
   {
-   "id": "name:indiana-university-kelley-school-of-business",
-   "wikidata": null,
-   "name": "Indiana University (Kelley School of Business)",
-   "aliases": [
-    "Indiana University (Kelley School of Business)",
-    "Indiana University, Kelley School of Business"
-   ],
-   "country": null,
-   "coords": null,
-   "logo": null,
-   "roles": [
-    "first-employer"
-   ],
-   "people": null,
-   "directory": null,
-   "employer": {
-    "employers": [
-     {
-      "employerId": "indiana-university-kelley-school-of-business",
-      "name": "Indiana University (Kelley School of Business)",
-      "spellings": [
-       "Indiana University (Kelley School of Business)",
-       "Indiana University, Kelley School of Business"
-      ],
-      "verifiedFirstJobs": 3
-     }
-    ],
-    "verifiedFirstJobs": 3,
-    "firstCohort": 1990,
-    "lastCohort": 2026,
-    "firstJobTypes": {
-     "tenure-track": 2,
-     "postdoc": 0,
-     "other-academic": 0,
-     "industry": 0,
-     "government": 0,
-     "nonprofit": 0,
-     "unknown": 1
-    },
-    "sourceInstitutions": [
-     {
-      "institution": "Purdue University",
-      "count": 1
-     },
-     {
-      "institution": "University of Cambridge",
-      "count": 1
-     },
-     {
-      "institution": "University of Michigan at Ann Arbor",
-      "count": 1
-     }
-    ],
-    "positions": [
-     {
-      "position": "Assistant Professor",
-      "count": 1
-     },
-     {
-      "position": "Assistant Professor of Operations and Decision Technologies",
-      "count": 1
-     }
-    ]
-   },
-   "programs": [],
-   "sources": [
-    {
-     "url": "data/placements.json",
-     "title": "Verified first-job records (people database)"
-    }
-   ],
-   "review": {
-    "matches": [],
-    "conflicts": []
-   }
-  },
-  {
    "id": "name:indiana-university-bloomington-inquiry-methodology-program-department-of-counseling-and-educational-psychology",
    "wikidata": null,
    "name": "Indiana University Bloomington (Inquiry Methodology Program, Department of Counseling and Educational Psychology)",
@@ -92810,6 +92861,87 @@
     "positions": [
      {
       "position": "Assistant Professor of Operations Management",
+      "count": 1
+     }
+    ]
+   },
+   "programs": [],
+   "sources": [
+    {
+     "url": "data/placements.json",
+     "title": "Verified first-job records (people database)"
+    }
+   ],
+   "review": {
+    "matches": [],
+    "conflicts": []
+   }
+  },
+  {
+   "id": "name:indiana-university-kelley-school-of-business",
+   "wikidata": null,
+   "name": "Indiana University, Kelley School of Business",
+   "aliases": [
+    "Indiana University, Kelley School of Business",
+    "Indiana University (Kelley School of Business)"
+   ],
+   "country": null,
+   "coords": null,
+   "logo": null,
+   "roles": [
+    "first-employer"
+   ],
+   "people": null,
+   "directory": null,
+   "employer": {
+    "employers": [
+     {
+      "employerId": "indiana-university-kelley-school-of-business",
+      "name": "Indiana University, Kelley School of Business",
+      "spellings": [
+       "Indiana University (Kelley School of Business)",
+       "Indiana University, Kelley School of Business"
+      ],
+      "verifiedFirstJobs": 5
+     }
+    ],
+    "verifiedFirstJobs": 5,
+    "firstCohort": 1990,
+    "lastCohort": 2026,
+    "firstJobTypes": {
+     "tenure-track": 4,
+     "postdoc": 0,
+     "other-academic": 0,
+     "industry": 0,
+     "government": 0,
+     "nonprofit": 0,
+     "unknown": 1
+    },
+    "sourceInstitutions": [
+     {
+      "institution": "University of Michigan at Ann Arbor",
+      "count": 2
+     },
+     {
+      "institution": "Purdue University",
+      "count": 1
+     },
+     {
+      "institution": "University of Cambridge",
+      "count": 1
+     },
+     {
+      "institution": "University of Maryland, College Park",
+      "count": 1
+     }
+    ],
+    "positions": [
+     {
+      "position": "Assistant Professor",
+      "count": 3
+     },
+     {
+      "position": "Assistant Professor of Operations and Decision Technologies",
       "count": 1
      }
     ]
@@ -93212,6 +93344,69 @@
    }
   },
   {
+   "id": "name:international-university-of-rabat-rabat-business-school",
+   "wikidata": null,
+   "name": "International University of Rabat (Rabat Business School)",
+   "aliases": [
+    "International University of Rabat (Rabat Business School)"
+   ],
+   "country": null,
+   "coords": null,
+   "logo": null,
+   "roles": [
+    "first-employer"
+   ],
+   "people": null,
+   "directory": null,
+   "employer": {
+    "employers": [
+     {
+      "employerId": "international-university-of-rabat-rabat-business-school",
+      "name": "International University of Rabat (Rabat Business School)",
+      "spellings": [
+       "International University of Rabat (Rabat Business School)"
+      ],
+      "verifiedFirstJobs": 1
+     }
+    ],
+    "verifiedFirstJobs": 1,
+    "firstCohort": 2025,
+    "lastCohort": 2025,
+    "firstJobTypes": {
+     "tenure-track": 0,
+     "postdoc": 0,
+     "other-academic": 0,
+     "industry": 0,
+     "government": 0,
+     "nonprofit": 0,
+     "unknown": 1
+    },
+    "sourceInstitutions": [
+     {
+      "institution": "International University of Rabat",
+      "count": 1
+     }
+    ],
+    "positions": [
+     {
+      "position": "Assistant Professor",
+      "count": 1
+     }
+    ]
+   },
+   "programs": [],
+   "sources": [
+    {
+     "url": "data/placements.json",
+     "title": "Verified first-job records (people database)"
+    }
+   ],
+   "review": {
+    "matches": [],
+    "conflicts": []
+   }
+  },
+  {
    "id": "name:interuniversity-research-centre-on-enterprise-networks-logistics-and-transportation-cirrelt-and-esg-universite-du-quebec-a-montreal",
    "wikidata": null,
    "name": "Interuniversity Research Centre on Enterprise Networks, Logistics and Transportation (CIRRELT) and ESG, Université du Québec à Montréal",
@@ -93411,6 +93606,69 @@
    }
   },
   {
+   "id": "name:iowa-state-university-ivy-college-of-business",
+   "wikidata": null,
+   "name": "Iowa State University, Ivy College of Business",
+   "aliases": [
+    "Iowa State University, Ivy College of Business"
+   ],
+   "country": null,
+   "coords": null,
+   "logo": null,
+   "roles": [
+    "first-employer"
+   ],
+   "people": null,
+   "directory": null,
+   "employer": {
+    "employers": [
+     {
+      "employerId": "iowa-state-university-ivy-college-of-business",
+      "name": "Iowa State University, Ivy College of Business",
+      "spellings": [
+       "Iowa State University, Ivy College of Business"
+      ],
+      "verifiedFirstJobs": 1
+     }
+    ],
+    "verifiedFirstJobs": 1,
+    "firstCohort": 2022,
+    "lastCohort": 2022,
+    "firstJobTypes": {
+     "tenure-track": 1,
+     "postdoc": 0,
+     "other-academic": 0,
+     "industry": 0,
+     "government": 0,
+     "nonprofit": 0,
+     "unknown": 0
+    },
+    "sourceInstitutions": [
+     {
+      "institution": "Michigan State University",
+      "count": 1
+     }
+    ],
+    "positions": [
+     {
+      "position": "Assistant Professor",
+      "count": 1
+     }
+    ]
+   },
+   "programs": [],
+   "sources": [
+    {
+     "url": "data/placements.json",
+     "title": "Verified first-job records (people database)"
+    }
+   ],
+   "review": {
+    "matches": [],
+    "conflicts": []
+   }
+  },
+  {
    "id": "name:ivey-business-school-western-university",
    "wikidata": null,
    "name": "Ivey Business School, Western University",
@@ -93465,6 +93723,69 @@
      },
      {
       "position": "Assistant Professor, Management Science",
+      "count": 1
+     }
+    ]
+   },
+   "programs": [],
+   "sources": [
+    {
+     "url": "data/placements.json",
+     "title": "Verified first-job records (people database)"
+    }
+   ],
+   "review": {
+    "matches": [],
+    "conflicts": []
+   }
+  },
+  {
+   "id": "name:john-carroll-university",
+   "wikidata": null,
+   "name": "John Carroll University",
+   "aliases": [
+    "John Carroll University"
+   ],
+   "country": null,
+   "coords": null,
+   "logo": null,
+   "roles": [
+    "first-employer"
+   ],
+   "people": null,
+   "directory": null,
+   "employer": {
+    "employers": [
+     {
+      "employerId": "john-carroll-university",
+      "name": "John Carroll University",
+      "spellings": [
+       "John Carroll University"
+      ],
+      "verifiedFirstJobs": 1
+     }
+    ],
+    "verifiedFirstJobs": 1,
+    "firstCohort": 2020,
+    "lastCohort": 2020,
+    "firstJobTypes": {
+     "tenure-track": 1,
+     "postdoc": 0,
+     "other-academic": 0,
+     "industry": 0,
+     "government": 0,
+     "nonprofit": 0,
+     "unknown": 0
+    },
+    "sourceInstitutions": [
+     {
+      "institution": "University of North Texas",
+      "count": 1
+     }
+    ],
+    "positions": [
+     {
+      "position": "Assistant Professor",
       "count": 1
      }
     ]
@@ -93598,6 +93919,64 @@
       "count": 1
      }
     ]
+   },
+   "programs": [],
+   "sources": [
+    {
+     "url": "data/placements.json",
+     "title": "Verified first-job records (people database)"
+    }
+   ],
+   "review": {
+    "matches": [],
+    "conflicts": []
+   }
+  },
+  {
+   "id": "name:kaist-college-of-business",
+   "wikidata": null,
+   "name": "KAIST College of Business",
+   "aliases": [
+    "KAIST College of Business"
+   ],
+   "country": null,
+   "coords": null,
+   "logo": null,
+   "roles": [
+    "first-employer"
+   ],
+   "people": null,
+   "directory": null,
+   "employer": {
+    "employers": [
+     {
+      "employerId": "kaist-college-of-business",
+      "name": "KAIST College of Business",
+      "spellings": [
+       "KAIST College of Business"
+      ],
+      "verifiedFirstJobs": 1
+     }
+    ],
+    "verifiedFirstJobs": 1,
+    "firstCohort": 2016,
+    "lastCohort": 2016,
+    "firstJobTypes": {
+     "tenure-track": 0,
+     "postdoc": 0,
+     "other-academic": 0,
+     "industry": 0,
+     "government": 0,
+     "nonprofit": 0,
+     "unknown": 1
+    },
+    "sourceInstitutions": [
+     {
+      "institution": "University of Michigan at Ann Arbor",
+      "count": 1
+     }
+    ],
+    "positions": []
    },
    "programs": [],
    "sources": [
