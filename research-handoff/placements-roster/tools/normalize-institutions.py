@@ -22,7 +22,8 @@ for k in ('--same', '--differs'):
     if k in args: break
 same = {x for x in same if not x.startswith('--')}; differs = {x for x in differs if not x.startswith('--')}
 FJ_DIR = os.environ.get('FJ_DIR', 'placements-roster'); OM = FJ_DIR == 'placements-omlist'
-people = {p['id']: p for p in json.load(open(f'{ROOT}/data/' + ('faculty.json' if OM else 'faculty-roster-people.json')))['records']}
+# Both people files, so mixed batches (the second pass) resolve every person.
+people = {p['id']: p for f in ('faculty.json', 'faculty-roster-people.json') for p in json.load(open(f'{ROOT}/data/{f}'))['records']}
 aliases = json.load(open(f'{ROOT}/data/institution-aliases.json'))['aliases']
 for n in chunks:
     path = f'{ROOT}/research/{FJ_DIR}/proposal-{n}.json'; rows = json.load(open(path)); changed = 0
@@ -35,7 +36,7 @@ for n in chunks:
             r['evidenceNote'] = r['evidenceNote'].rstrip() + f" Integrator: the evidence writes the doctorate-awarding institution as '{v}', the same university as the record's '{rec}', so it is stored under the record's name."
             changed += 1
         elif r['facultyId'] in differs:
-            r['phdInstitutionResolution'] = ("The imported OM List record" if OM else "The faculty page") + f" names the doctorate-awarding institution as '{rec}'; the evidence cited in this review names '{v}', which is recorded as verified. Integrator decision."
+            r['phdInstitutionResolution'] = ("The faculty page" if str(r["facultyId"]).startswith("roster:") else "The imported OM List record") + f" names the doctorate-awarding institution as '{rec}'; the evidence cited in this review names '{v}', which is recorded as verified. Integrator decision."
             changed += 1
         else:
             print(f'  DECIDE chunk {n}: {r["facultyId"]} | record "{rec}" | verified "{v}"')

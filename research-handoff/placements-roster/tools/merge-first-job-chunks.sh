@@ -4,7 +4,7 @@ set -e
 cd /home/user/opsphdplacements
 inreview="$1"; shift
 # FJ_DIR=placements-omlist merges OM List proposals; the default is the faculty-page folder.
-dir="${FJ_DIR:-placements-roster}"; who=$([ "$dir" = placements-omlist ] && echo "OM List people" || echo "faculty-page people")
+dir="${FJ_DIR:-placements-roster}"; who=$(case "$dir" in placements-omlist) echo "OM List people";; second-pass) echo "the second pass on unresolved reviews";; *) echo "faculty-page people";; esac)
 files=(); for n in "$@"; do files+=("research/$dir/proposal-$n.json"); done
 node scripts/merge-placement-research.mjs "${files[@]}"
 node scripts/build-institutions.mjs | tail -1
