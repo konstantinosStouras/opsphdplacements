@@ -106,6 +106,8 @@ Reviews keep finding three overlap patterns. They are treated as follows, and th
 
 The published `placementYear` remains the documented start year of the first new post-PhD job, never the cohort year.
 
+Added 17 October 2026: when such an appointment starts in the final months before a formal conferral that falls in the next calendar year (a 2022-23 assistant professorship for a thesis McGill dates 2023), `placementYear` may be one year before the degree year; the evidence note must state the overlap, and the validator accepts nothing earlier. A serving military officer who completes a doctorate and is then assigned to a faculty post at a new institution (a U.S. Army officer posted to the Naval Postgraduate School as a military assistant professor) has a new post-PhD job: the uniformed service continues, but the faculty assignment at a new institution is a new post, unlike an internal promotion at the pre-degree employer; the continuing service is noted and the category is other-academic.
+
 ## Two databases and how they link (16 October 2026)
 
 The project maintains two databases that will be merged into one entity model.

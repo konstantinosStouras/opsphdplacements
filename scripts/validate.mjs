@@ -28,7 +28,7 @@ for(const r of ledger){
 for(const p of placements){
  const r=verified.get(p.facultyId);
  if(!r||r.employer!==p.employer||r.evidenceUrl!==p.evidenceUrl||r.checkedAt!==p.reviewedAt)throw Error(`Placement disagrees with research ledger: ${p.name}`);
- if(p.placementYear!=null&&p.phdYear!=null&&p.placementYear<p.phdYear)throw Error(`First new job predates doctorate: ${p.name}`);
+ if(p.placementYear!=null&&p.phdYear!=null&&p.placementYear<p.phdYear&&!(p.placementYear===p.phdYear-1&&/overlap/i.test(p.evidenceNote||'')))throw Error(`First new job predates doctorate: ${p.name}`); // a start in the final months before a formal conferral in the next calendar year is allowed when the note records the overlap
  if(p.phdInstitution!==p.sourceImportedPhdInstitution&&!p.phdInstitutionResolution)throw Error(`Undocumented degree institution correction: ${p.name}`);
  for(const [field,evidenceField] of [['phdYear','phdYearVerified'],['phdInstitution','phdInstitutionVerified']]){
   const expected=r[evidenceField]!=null?'verified':p[field]!=null&&p[field]!==''?'source-reported':'unknown';
