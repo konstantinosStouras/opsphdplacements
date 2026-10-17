@@ -4,16 +4,16 @@
     "updatedAt": "2026-10-17",
     "total": 3161,
     "counts": {
-      "unresolved": 1423,
-      "verified": 1734,
+      "unresolved": 1406,
+      "verified": 1751,
       "not-yet-completed-phd": 4
     },
     "bySource": {
       "omlist": {
         "total": 2149,
         "counts": {
-          "unresolved": 933,
-          "verified": 1215,
+          "unresolved": 916,
+          "verified": 1232,
           "not-yet-completed-phd": 1
         }
       },
@@ -3960,19 +3960,32 @@
     {
       "facultyId": "omlist-327e2fddc90bf8c4",
       "name": "Emre Berk",
-      "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "Official Bilkent catalog confirms University of Washington Operations Management PhD 1996, but faculty biography lists several teaching institutions without dates. No complete early career chronology or explicit first-job source establishes the initial employer.",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "employer": "Bilkent University, Faculty of Business Administration",
+      "position": null,
+      "placementYear": 1996,
+      "category": "unknown",
+      "evidenceUrl": "https://orcid.org/0000-0001-9674-5194",
+      "evidenceNote": "ORCID (self-entered, linked from the OM List profile) has one employment: Bilkent University, Faculty of Business Administration, from 1996-09 to the present, with his current rank 'Professor' as the role, so the starting title is not stated. Bilkent's online academic catalog gives Ph.D., Operations Management, University of Washington, 1996. His Bilkent biography lists teaching at the University of Washington, Bilkent, METU, MIT Zaragoza and Texas A&M without dates; with Bilkent continuous from September 1996, those other posts are teaching during the doctorate or later visits.",
+      "phdYearVerified": 1996,
+      "phdInstitutionVerified": "University of Washington",
+      "reason": "ORCID dates continuous Bilkent employment from September 1996, the year of the Washington PhD; the initial rank is unknown.",
       "sources": [
         {
-          "url": "https://fba.bilkent.edu.tr/academic-staff/emre-berk/",
-          "title": "Emre Berk — public academic profile",
-          "notes": "Professional biography and degree information reviewed for first-job evidence."
+          "url": "https://orcid.org/0000-0001-9674-5194",
+          "title": "ORCID, emre berk",
+          "notes": "Public API: Bilkent University, Faculty of Business Administration, Professor, from 1996-09."
         },
         {
           "url": "https://catalog.bilkent.edu.tr/instructor/i03958.html",
-          "title": "Bilkent academic catalog — Emre Berk",
-          "notes": "Confirms University of Washington PhD 1996; does not date first appointment."
+          "title": "Bilkent Online Academic Catalog, Emre Berk",
+          "notes": "Ph.D., Operations Management, University of Washington, 1996."
+        },
+        {
+          "url": "https://fba.bilkent.edu.tr/academic-staff/emre-berk/",
+          "title": "Bilkent FBA profile, Emre Berk",
+          "notes": "Biography lists teaching institutions without dates."
         }
       ],
       "source": "omlist"
@@ -4500,13 +4513,33 @@
       "facultyId": "omlist-b6d6e837c58d9f96",
       "name": "Jen Blackhurst",
       "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "The Auburn profile dates Iowa doctorate to 2002 and describes later Iowa leadership but does not establish the first post-doctoral employer.",
+      "checkedAt": "2026-10-17",
+      "reason": "A likely first job was found but could not be opened. One web search surfaced her CV hosted for the 2025 University of Iowa graduate-dean search (graduate-dean.jobs.uiowa.edu/.../Jennifer Blackhurst CV.pdf), whose search summary lists Assistant Professor of Operations and Supply Chain Management, College of Management, North Carolina State University, July 2002-June 2005, then Iowa State from June 2005; but that host no longer resolves (curl, the fetch tool and the reader proxy all failed), so the claim stays a search snippet. Opened sources show only later posts: Iowa State catalogs list her as Associate Professor (2014-15) and Professor (2015-16) of Supply Chain and Information Systems with Ph.D. 2002, Iowa; the Harbert profile mentions a 2007 paper written on the Iowa State faculty and gives PhD Industrial Engineering, Iowa (2002); Iowa Now says she joined Iowa in 2014; ORCID has an undated Auburn entry only. Verifier: an openable copy of the CV or an NC State record would settle this. Earlier review (2026-10-16): the Auburn profile dated the 2002 Iowa doctorate and later Iowa leadership but not the first employer.",
       "sources": [
         {
           "url": "https://harbert.auburn.edu/directory/jen-blackhurst.html",
-          "title": "Jen Blackhurst academic profile",
-          "notes": "The Auburn profile dates Iowa doctorate to 2002 and describes later Iowa leadership but does not establish the first post-doctoral employer."
+          "title": "Harbert College profile, Jen Blackhurst",
+          "notes": "PhD Industrial Engineering, Iowa (2002); Iowa State faculty in 2007; later Tippie associate dean."
+        },
+        {
+          "url": "https://catalog.iastate.edu/previouscatalogs/2014-15/faculty/",
+          "title": "Iowa State University catalog 2014-15, faculty list",
+          "notes": "Blackhurst, Jennifer Jane, Associate Professor of Supply Chain and Information Systems; Ph.D., 2002, Iowa."
+        },
+        {
+          "url": "https://now.uiowa.edu/node/56696",
+          "title": "Iowa Now, second graduate-dean candidate (April 2025)",
+          "notes": "Joined Iowa in 2014; no earlier dates."
+        },
+        {
+          "url": "https://graduate-dean.jobs.uiowa.edu/sites/graduate-dean.jobs.uiowa.edu/files/2025-03/Jennifer%20Blackhurst%20CV.pdf",
+          "title": "Jennifer Blackhurst CV (Iowa graduate-dean search) - attempted",
+          "notes": "Host could not be resolved or reached (curl 502, fetch tool ENOTFOUND, reader proxy could not resolve); content known only from a search summary."
+        },
+        {
+          "url": "https://orcid.org/0000-0003-2193-1501",
+          "title": "ORCID, Jennifer Blackhurst",
+          "notes": "Public API: one undated Auburn entry."
         }
       ],
       "source": "omlist"
@@ -6946,14 +6979,32 @@
     {
       "facultyId": "omlist-83f1610fe62d1aca",
       "name": "Qian Chen",
-      "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "Searches returned only generic Penn State Smeal job postings; no profile, CV or dissertation record establishing the degree or the first post-PhD job was found. Common name; wrong-person risk.",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "employer": "University of Nebraska–Lincoln",
+      "position": "Assistant Professor of Marketing",
+      "placementYear": 2020,
+      "category": "tenure-track",
+      "evidenceUrl": "https://qianchen-psu.github.io/",
+      "evidenceNote": "Her academic website (linked from the OM List profile) lists Academic Positions: 2020-2022 Assistant Professor of Marketing, College of Business, University of Nebraska-Lincoln, then 2022-present Assistant Professor, Supply Chain and Information Systems, Penn State Smeal; Education: 2020 Ph.D. in Marketing, Penn State (advisors DeSarbo and Fong). Her AvePoint industry roles (2012-2014) predate the doctorate, so Nebraska in 2020 is the first post-PhD job.",
+      "phdYearVerified": 2020,
+      "phdInstitutionVerified": "Pennsylvania State University",
+      "reason": "Identity fixed through the OM List profile, which links her Smeal directory entry, ORCID and personal website; the website gives a dated chronology with the 2020 Penn State PhD (in Marketing) followed directly by a 2020-2022 assistant professorship of marketing at Nebraska-Lincoln.",
       "sources": [
         {
-          "url": "https://poms.org/sites/default/files/2024-09/AD%20SCM%20Fall%202024%20Recruiting.pdf",
-          "title": "Penn State SCM recruiting ad",
-          "notes": "Search result only; generic posting."
+          "url": "https://qianchen-psu.github.io/",
+          "title": "Qian Chen, personal academic website",
+          "notes": "Read with plain curl; Academic Positions, Education and Corporate Experiences sections."
+        },
+        {
+          "url": "https://omlist.edutool.org/schools/pennsylvania-state-university/faculty/qian-chen.html",
+          "title": "OM List profile, Qian Chen (Penn State)",
+          "notes": "Links directory.smeal.psu.edu/quc20, the personal website and ORCID 0000-0003-1894-2824; import gives Penn State PhD 2020."
+        },
+        {
+          "url": "https://orcid.org/0000-0003-1894-2824",
+          "title": "ORCID, Qian Chen",
+          "notes": "Read through the public API; education: Pennsylvania State University, Marketing, PhD, start 2014-08-24; no employment entries."
         }
       ],
       "source": "omlist"
@@ -8735,16 +8786,29 @@
     {
       "facultyId": "omlist-04ec069dd9f39a32",
       "name": "Jessica Darby",
-      "status": "unresolved",
-      "checkedAt": "2026-10-16",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "employer": "Auburn University, Harbert College of Business",
+      "position": "Assistant Professor, Supply Chain Management",
+      "placementYear": 2020,
+      "category": "tenure-track",
+      "evidenceUrl": "https://orcid.org/0000-0003-0068-1603",
+      "evidenceNote": "ORCID (self-entered, linked from the OM List profile): education University of Arkansas, Supply Chain Management, Doctor of Philosophy, 2016-08 to 2020-05-10; employment Auburn University, Supply Chain Management, Assistant Professor, from 2020-05-15. Her other entries are doctoral-period posts (Arkansas Distinguished Doctoral Fellow 2016-2020; Mercatus Center Adam Smith Fellow 2017-2019). The Harbert profile confirms the Arkansas PhD and her later Auburn associate professorship.",
+      "phdYearVerified": 2020,
+      "phdInstitutionVerified": "University of Arkansas at Fayetteville",
+      "reason": "ORCID gives the May 2020 Arkansas PhD followed five days later by the Auburn assistant professorship; earlier entries are fellowships held during the doctorate.",
       "sources": [
         {
+          "url": "https://orcid.org/0000-0003-0068-1603",
+          "title": "ORCID, Jessica L. Darby",
+          "notes": "Public API: dated employments and education."
+        },
+        {
           "url": "https://harbert.auburn.edu/directory/jessica-darby.html",
-          "title": "Jessica Darby Profile",
-          "notes": "Institutional biography names Arkansas PhD and current Auburn position but does not provide graduation and initial employment chronology."
+          "title": "Harbert College profile, Jessica L. Darby",
+          "notes": "Thompson Associate Professor; PhD, MBA and BSBA from Arkansas (no years)."
         }
       ],
-      "reason": "Institutional biography names Arkansas PhD and current Auburn position but does not provide graduation and initial employment chronology.",
       "source": "omlist"
     },
     {
@@ -8855,13 +8919,23 @@
       "facultyId": "omlist-8b012554e8444287",
       "name": "Beth Davis-Sramek",
       "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "No CV or dated chronology located; searches returned unrelated CVs. Degree year and first post-Tennessee position are unestablished.",
+      "checkedAt": "2026-10-17",
+      "reason": "Degree year now stated but the first job is still unknown. The Harbert profile gives PhD, Logistics and Marketing, University of Tennessee, 2006 (the OM List import says 2007), MBA 1994 and BS 1992, with no prior positions; ORCID 0000-0002-7145-1277 lists only Auburn (Gayle Parks Forehand Professor) from 2017-08. Tennessee's TRACE repository API found no dissertation record for her, and an ORCID name search found no other record. Her employer and post between the 2006 degree and Auburn in 2017 are undocumented. Earlier review (2026-10-16): no CV or dated chronology was located, so the degree year and first post-Tennessee position were unestablished.",
       "sources": [
         {
-          "url": "https://www.myeducator.com/tag/sustainability/",
-          "title": "Beth Davis-Sramek feature",
-          "notes": "Search-result lead; current Auburn role only."
+          "url": "https://harbert.auburn.edu/directory/beth-davis-sramek.html",
+          "title": "Harbert College profile, Beth Davis-Sramek",
+          "notes": "Read with curl: PhD Tennessee 2006; current chair; no earlier positions."
+        },
+        {
+          "url": "https://orcid.org/0000-0002-7145-1277",
+          "title": "ORCID, Beth Davis-Sramek",
+          "notes": "Public API: Auburn from 2017-08 only."
+        },
+        {
+          "url": "https://trace.tennessee.edu/server/api/discover/search/objects?query=Davis%20Beth%20logistics%202006&dsoType=ITEM&size=10",
+          "title": "TRACE (University of Tennessee) search API",
+          "notes": "No matching dissertation."
         }
       ],
       "source": "omlist"
@@ -9790,19 +9864,37 @@
     {
       "facultyId": "omlist-5bed5794875c8ceb",
       "name": "David Dobrzykowski",
-      "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "University and personal biographies identify pre-academic industry career and later faculty institutions without doctoral and first appointment dates.",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "employer": "Eastern Michigan University, College of Business",
+      "position": "Assistant Professor of Operations and Supply Chain Management",
+      "placementYear": 2010,
+      "category": "tenure-track",
+      "evidenceUrl": "https://dobrzykowski.wordpress.com/dissertation/",
+      "evidenceNote": "The Career & Consulting page of his own website gives a dated career list: Eastern Michigan University, Asst. Professor of Operations and Supply Chain Management, College of Business, August 2010-July 2012; University of Toledo, Asst. Professor, July 2012-December 2013; Rutgers Business School, tenure-track Assistant Professor January 2014-July 2016 and then Associate Professor to July 2017; Bowling Green 2017-2019; Arkansas from June 2019. His industry posts (latest UnitedHealthcare, December 2006-August 2007) predate the doctorate. OhioLINK ETD records his University of Toledo Doctor of Philosophy, 2010, Manufacturing and Technology Management.",
+      "phdYearVerified": 2010,
+      "phdInstitutionVerified": "University of Toledo",
+      "reason": "His website's dated career list, previously missed (it sits under the 'dissertation' URL titled Career & Consulting), shows the 2010 Toledo PhD (dated by OhioLINK) followed by an Eastern Michigan assistant professorship from August 2010.",
       "sources": [
         {
-          "url": "https://harbert.auburn.edu/directory/david-dobrzykowski.html",
-          "title": "David Dobrzykowski public academic profile",
-          "notes": "University and personal biographies identify pre-academic industry career and later faculty institutions without doctoral and first appointment dates."
+          "url": "https://dobrzykowski.wordpress.com/dissertation/",
+          "title": "Dr. David Dobrzykowski, Career & Consulting",
+          "notes": "Read with curl: CAREER section with month-year dates for each post."
+        },
+        {
+          "url": "https://etd.ohiolink.edu/acprod/odb_etd/r/etd/search/10?p10_accession_num=toledo1289833170",
+          "title": "OhioLINK ETD: Dobrzykowski, Linking Antecedents and Consequences of Value Density in the Healthcare Delivery Supply Chain",
+          "notes": "Found with the OhioLINK search form in a headless browser: Doctor of Philosophy, University of Toledo, 2010."
         },
         {
           "url": "https://dobrzykowski.wordpress.com/",
-          "title": "David Dobrzykowski public academic profile",
-          "notes": "University and personal biographies identify pre-academic industry career and later faculty institutions without doctoral and first appointment dates."
+          "title": "Dr. David Dobrzykowski, home page",
+          "notes": "Bio: tenure at Rutgers, full professor at Arkansas, 13-year healthcare career before academia; PhD Toledo (no year)."
+        },
+        {
+          "url": "https://harbert.auburn.edu/directory/david-dobrzykowski.html",
+          "title": "Harbert College profile (earlier review)",
+          "notes": "Bickerstaff Chair; earlier tenure at Rutgers; undated."
         }
       ],
       "source": "omlist"
@@ -10058,19 +10150,32 @@
     {
       "facultyId": "omlist-63b5ef54f8a5e33c",
       "name": "Karen Donohue",
-      "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "Only current/recent affiliations (Carlson School Minnesota, ASU from 2025) and a Northwestern IEMS PhD (no year) were found; no CV or dated early career. First post-PhD job and the 1993 degree year are unverified.",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "employer": "The Wharton School, University of Pennsylvania",
+      "position": "Assistant Professor, Operations and Information Management Department",
+      "placementYear": 1993,
+      "category": "tenure-track",
+      "evidenceUrl": "https://carlsonschool.umn.edu/sites/carlsonschool.umn.edu/files/faculty-cvcs/Donohue%20CV_Fall%20'23.pdf",
+      "evidenceNote": "Carlson School CV (Fall 2023, footer dated 12/18/2023): Ph.D. in Industrial Engineering and Management Science, Northwestern McCormick School, June 1993 (advisor Mark Spearman); Academic Positions: The Wharton School, Operations and Information Management, Assistant Professor (1993-1999), with an Arthur Andersen Term Chair 1993-1995; then Carlson School faculty since 2000. She taught the Wharton MBA operations core from Fall 1993. No industry post is listed between the degree and Wharton. Verifier: the CV's Wharton teaching list also shows an MBA elective and an undergraduate elective taught in Spring 1993, so the Wharton appointment began a few months before the June 1993 degree (not only from Fall 1993); it is still the first post-PhD job and 1993 remains the start year.",
+      "phdYearVerified": 1993,
+      "phdInstitutionVerified": "Northwestern University",
+      "reason": "The OM List profile links her Carlson CV, which dates the June 1993 Northwestern PhD and a Wharton assistant professorship from 1993.",
       "sources": [
         {
-          "url": "https://pop.umn.edu/people/karen-donohue",
-          "title": "Karen Donohue - Minnesota profile",
-          "notes": "Opened; education only (Northwestern MS/PhD), no career history."
+          "url": "https://carlsonschool.umn.edu/sites/carlsonschool.umn.edu/files/faculty-cvcs/Donohue%20CV_Fall%20'23.pdf",
+          "title": "Karen L. Donohue CV, Fall 2023 (Carlson School)",
+          "notes": "Downloaded with curl, pdftotext; Education, Academic Positions and teaching sections read."
         },
         {
-          "url": "https://news.wpcarey.asu.edu/20250127-sustainable-supply-chain-expert-joins-w-p-carey-distinguished-chair",
-          "title": "ASU announcement",
-          "notes": "Search-result lead; current appointment only."
+          "url": "https://omlist.edutool.org/schools/arizona-state-university/faculty/karen-donohue.html",
+          "title": "OM List profile, Karen Donohue (ASU)",
+          "notes": "Links the Carlson CV, ASU profile and ORCID 0000-0002-2779-6331 (no public affiliations)."
+        },
+        {
+          "url": "https://pop.umn.edu/people/karen-donohue",
+          "title": "UMN profile (earlier review)",
+          "notes": "Earlier review: Northwestern MS/PhD, no career history."
         }
       ],
       "source": "omlist"
@@ -11449,14 +11554,32 @@
     {
       "facultyId": "omlist-da06f01ac41f2783",
       "name": "Xin Fang",
-      "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "Could not open any SMU profile or CV (guessed profile URL returned 404; searches gave only a dated SMU listing of an Associate Professor Xin Fang with no education or chronology). PhD and first job unestablished; common-name risk. Discovery web searches were also run; their snippets were not treated as verification.",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "employer": "Singapore Management University, Lee Kong Chian School of Business",
+      "position": "Assistant Professor of Operations Management",
+      "placementYear": 2014,
+      "category": "tenure-track",
+      "evidenceUrl": "https://business.smu.edu.sg/sites/business.smu.edu.sg/files/business/OperationsManagement/XinFang_CV_20250826.pdf",
+      "evidenceNote": "CV dated 26 August 2025: Employment lists only SMU Lee Kong Chian School of Business, Assistant Professor of Operations Management 2014-2022, Associate Professor 2022-present; Education: Ph.D. in Operations Management, Carnegie Mellon Tepper School, 2014 (thesis on competition and cooperation in global supply chain networks; chair Soo-Haeng Cho); Bachelor, Fudan 2008. No other post between the 2014 PhD and SMU.",
+      "phdYearVerified": 2014,
+      "phdInstitutionVerified": "Carnegie Mellon University",
+      "reason": "The OM List profile links an SMU-hosted CV (the earlier guessed profile URL was wrong); the dated CV shows the 2014 CMU PhD followed directly by an SMU assistant professorship from 2014.",
       "sources": [
         {
+          "url": "https://business.smu.edu.sg/sites/business.smu.edu.sg/files/business/OperationsManagement/XinFang_CV_20250826.pdf",
+          "title": "Xin Fang CV, 26 August 2025 (SMU)",
+          "notes": "Downloaded with curl, extracted with pdftotext; Employment and Education sections read."
+        },
+        {
+          "url": "https://omlist.edutool.org/schools/singapore-management-university/faculty/xin-fang.html",
+          "title": "OM List profile, Xin Fang (SMU)",
+          "notes": "Links the SMU CV, faculty.smu.edu.sg/profile/fang-xin-2141 and ORCID 0000-0001-7449-972X (no public affiliations)."
+        },
+        {
           "url": "https://faculty.smu.edu.sg/profile/xin-fang-3441",
-          "title": "SMU faculty profile (guessed URL)",
-          "notes": "Attempted; HTTP 404."
+          "title": "SMU profile (guessed URL, earlier review)",
+          "notes": "Earlier review: HTTP 404; the correct profile is fang-xin-2141."
         }
       ],
       "source": "omlist"
@@ -12020,14 +12143,37 @@
     {
       "facultyId": "omlist-a15fe9a8b23b6ae9",
       "name": "Max Finne",
-      "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "The Aalto profile lists current role and awards but does not establish doctoral completion or earliest post-doctoral employment.",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "employer": "Warwick Business School, University of Warwick",
+      "position": "Assistant Professor",
+      "placementYear": 2014,
+      "category": "unknown",
+      "evidenceUrl": "https://research.aalto.fi/en/activities/warwick-business-school/",
+      "evidenceNote": "Aalto research portal activity entered for Finne: 'I worked altogether 4 years at Warwick Business School, first as Assistant Professor and then as Associate Professor', period 1 Sept 2014 to 31 Aug 2018. His portal profile gives the doctoral degree award date 31 Aug 2014, and Aaltodoc records the dissertation (School of Science) defended 8 Aug 2014. Warwick therefore began the day after the degree. Category unknown because a UK assistant-professor title does not by itself state a permanent post.",
+      "phdYearVerified": 2014,
+      "phdInstitutionVerified": "Aalto University",
+      "reason": "Dated by the Aalto research portal: degree awarded 31 August 2014, Warwick Business School post from 1 September 2014 as Assistant Professor (the portal files it as a visit, but the description states employment).",
       "sources": [
         {
+          "url": "https://research.aalto.fi/en/activities/warwick-business-school/",
+          "title": "Aalto research portal activity: Warwick Business School (Finne, M.)",
+          "notes": "Read with curl; description and period 1 Sept 2014 to 31 Aug 2018."
+        },
+        {
+          "url": "https://research.aalto.fi/en/persons/max-finne",
+          "title": "Aalto research portal, Max Finne",
+          "notes": "Doctoral degree, Engineering and Technology, award date 31 Aug 2014; master's 29 Apr 2009."
+        },
+        {
+          "url": "https://aaltodoc.aalto.fi/handle/123456789/13429",
+          "title": "Aaltodoc: Servitization and solution provision of manufacturing companies (Finne, 2014)",
+          "notes": "Read through the Aaltodoc search API: article-based doctoral dissertation, School of Science, defence 2014-08-08."
+        },
+        {
           "url": "https://www.aalto.fi/en/node/31346",
-          "title": "Max Finne academic profile",
-          "notes": "The Aalto profile lists current role and awards but does not establish doctoral completion or earliest post-doctoral employment."
+          "title": "Aalto people page, Max Finne",
+          "notes": "Associate Professor; no dates."
         }
       ],
       "source": "omlist"
@@ -15736,13 +15882,23 @@
       "facultyId": "omlist-887a5b2f290aaaf4",
       "name": "Joe Hanna",
       "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "The Auburn profile dates doctorate to 1997 and mentions earlier industry employers, but does not establish first employment after completion.",
+      "checkedAt": "2026-10-17",
+      "reason": "The years between the 1997 PhD and Auburn are still undocumented. The Harbert profile gives PhD, Logistics, New Mexico State University, 1997 and BA 1987, and Auburn's 2025 'new faculty and leadership' booklet says that during his 25-year Auburn career he helped build the supply chain department and served as associate dean of research and interim dean, and that earlier in his career he worked in the oil and gas industry and consulting. A 25-year Auburn career implies a start around 2000, three years after the degree, but no source dates his Auburn start or names any post between 1997 and Auburn (the industry and consulting work is not dated relative to the PhD). No ORCID record was found for him. Earlier review (2026-10-16): the Auburn profile dated the 1997 doctorate and mentioned earlier industry employers without placing the first post-PhD job.",
       "sources": [
         {
+          "url": "https://harbert.auburn.edu/binaries/documents/new-faculty-2025.pdf",
+          "title": "Harbert College, new faculty and leadership 2025 (PDF)",
+          "notes": "Downloaded with curl, pdftotext: Joe Hanna entry (25-year Auburn career; earlier oil and gas and consulting; PhD NMSU)."
+        },
+        {
           "url": "https://harbert.auburn.edu/directory/joe-hanna.html",
-          "title": "Joe Hanna academic profile",
-          "notes": "The Auburn profile dates doctorate to 1997 and mentions earlier industry employers, but does not establish first employment after completion."
+          "title": "Harbert College profile, Joe Hanna",
+          "notes": "PhD Logistics, NMSU, 1997; no dated positions."
+        },
+        {
+          "url": "https://omlist.edutool.org/schools/auburn-university/faculty/joe-hanna.html",
+          "title": "OM List profile, Joe Hanna",
+          "notes": "Links the Harbert profile and LinkedIn only; no ORCID."
         }
       ],
       "source": "omlist"
@@ -16644,15 +16800,30 @@
       "facultyId": "omlist-2683c821b7741310",
       "name": "Tito Homem-De-Mello",
       "status": "unresolved",
-      "checkedAt": "2026-10-16",
+      "checkedAt": "2026-10-17",
+      "reason": "The order of his U.S. posts is still undated. ORCID 0000-0002-2044-3306 (linked from the OM List profile) dates the Georgia Tech ISE PhD 1993-08-15 to 1998-09-01 and lists only one employment, Universidad Adolfo Ibáñez School of Business, Professor, from 2011-08-01. The UAI profile says he has been full-time at UAI since 2011 and previously worked full-time at Northwestern, Ohio State and the University of Illinois at Chicago, listed in no chronological order. His old Northwestern IEMS page now shows only an adjunct-professor note pointing to a UAI page (mansci.uai.cl), which is unreachable; the guessed UIC profile returned 404, and one web search for a CV found nothing. Gap: which of Ohio State, Northwestern or UIC came first after September 1998, and when. Earlier review (2026-10-16): the UAI biography gave the 1998 Georgia Tech doctorate and the three earlier posts without dates or order.",
       "sources": [
         {
+          "url": "https://orcid.org/0000-0002-2044-3306",
+          "title": "ORCID, Tito Homem-de-Mello",
+          "notes": "Public API: PhD Georgia Tech ISE 1993-08-15 to 1998-09-01; UAI Professor from 2011-08-01; no earlier employment."
+        },
+        {
           "url": "https://www.uai.cl/profesores/negocios/tito-homem-de-mello",
-          "title": "Tito Homem-De-Mello Profile",
-          "notes": "UAI biography gives Georgia Tech doctorate 1998 and prior Northwestern, Ohio State and Illinois Chicago roles without their dates or order."
+          "title": "UAI profile, Tito Homem-De-Mello",
+          "notes": "Read with curl: PhD ISE Georgia Tech 1998; UAI since 2011; earlier Northwestern, Ohio State and UIC, undated."
+        },
+        {
+          "url": "http://users.iems.northwestern.edu/~tito/",
+          "title": "Northwestern IEMS personal page (old)",
+          "notes": "Adjunct Professor note only; links mansci.uai.cl/~thmello/, which was unreachable (503 and address unreachable through the reader proxy)."
+        },
+        {
+          "url": "https://mie.uic.edu/profiles/homem-de-mello-tito/",
+          "title": "UIC MIE profile (guessed URL)",
+          "notes": "Returned 404."
         }
       ],
-      "reason": "UAI biography gives Georgia Tech doctorate 1998 and prior Northwestern, Ohio State and Illinois Chicago roles without their dates or order.",
       "source": "omlist"
     },
     {
@@ -17387,14 +17558,37 @@
     {
       "facultyId": "omlist-23b46d879901df46",
       "name": "Molly Hughes",
-      "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "Searches returned no relevant profile; no evidence of the Ohio State PhD or the first post-PhD job was found. Common name; wrong-person risk.",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "employer": "West Virginia University, John Chambers College of Business and Economics",
+      "position": "Assistant Professor",
+      "placementYear": 2023,
+      "category": "tenure-track",
+      "evidenceUrl": "http://infostations.wvu.edu/Webform/Wayfinding/WFBUE/WFBUEMedia/CV_HughesMolly3575.pdf",
+      "evidenceNote": "CV updated 13 January 2025 (linked from her WVU profile): Academic Positions: West Virginia University, Chambers College, Assistant Professor, August 2023-present; Ohio State Fisher College, Doctoral Research and Teaching Assistant, August 2018-August 2023; Education: PhD in Logistics, Ohio State, August 2018-August 2023 (minor Operations Management). ORCID gives the same dates.",
+      "phdYearVerified": 2023,
+      "phdInstitutionVerified": "The Ohio State University",
+      "reason": "The OM List profile links the correct WVU directory entry (pid=3575; the earlier review had opened another person's pid=3455), whose CV dates the August 2023 Ohio State PhD and the WVU assistant professorship from August 2023.",
       "sources": [
         {
-          "url": "https://business.wvu.edu/faculty-and-staff/directory/profile?pid=3455",
-          "title": "WVU directory profile",
-          "notes": "Search result; belonged to a different faculty member (Rutgers PhD)."
+          "url": "http://infostations.wvu.edu/Webform/Wayfinding/WFBUE/WFBUEMedia/CV_HughesMolly3575.pdf",
+          "title": "Molly M. Hughes CV, updated January 13, 2025",
+          "notes": "Downloaded with curl, pdftotext; Academic Positions and Education read."
+        },
+        {
+          "url": "https://business.wvu.edu/faculty-and-staff/directory/profile?pid=3575",
+          "title": "WVU Chambers College profile, Molly Hughes, Ph.D.",
+          "notes": "Assistant Professor, MIS and Supply Chain; links the CV."
+        },
+        {
+          "url": "https://orcid.org/0000-0002-3758-5749",
+          "title": "ORCID, Molly M. Hughes",
+          "notes": "Public API: WVU MIS & SCM Assistant Professor from 2023-08; Ohio State Marketing & Logistics Ph.D. 2018-08 to 2023-08."
+        },
+        {
+          "url": "https://omlist.edutool.org/schools/west-virginia-university/faculty/molly-hughes.html",
+          "title": "OM List profile, Molly Hughes",
+          "notes": "Links WVU profile pid=3575 and ORCID."
         }
       ],
       "source": "omlist"
@@ -19337,18 +19531,28 @@
       "facultyId": "omlist-1f86f6025d891199",
       "name": "Katri Kauppi",
       "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "Aalto confirms the doctorate in June 2009 and subsequent assistant professorships at Manchester and Nottingham, followed by Aalto in August 2012. The earlier appointments are undated, so their precise sequence and initial start cannot yet be established.",
+      "checkedAt": "2026-10-17",
+      "reason": "The Manchester and Nottingham posts are still undated. The Aalto research portal (re-read) gives the doctoral award date 5 June 2009 (Business and Economics) and a biography saying that after graduating she worked as Assistant Professor of Operations Management at Manchester Business School and as Assistant Professor of Purchasing and Supply Chain Management at Nottingham University Business School, and started on Aalto's tenure track in August 2012. Her ORCID (0000-0001-5946-0907, linked from the OM List profile) has only Aalto School of Business from 2012-08-01. The biography joins the two UK posts with 'and' without dates, so neither the first employer nor its start year is documented; Crossref records of her 2011-2013 papers carry no affiliations. Earlier review (2026-10-16): Aalto confirmed the June 2009 doctorate and the Manchester and Nottingham assistant professorships before August 2012 but did not date them.",
       "sources": [
         {
-          "url": "https://www.aalto.fi/en/node/17906",
-          "title": "Katri Kauppi — public academic profile",
-          "notes": "Professional biography and degree information reviewed for first-job evidence."
+          "url": "https://research.aalto.fi/en/persons/katri-kauppi",
+          "title": "Aalto research portal, Katri Kauppi",
+          "notes": "Re-read with curl: biography and doctoral award date 5 Jun 2009; no dates for the UK posts."
         },
         {
-          "url": "https://research.aalto.fi/en/persons/katri-kauppi/",
-          "title": "Aalto — Katri Kauppi research profile",
-          "notes": "Doctorate awarded June 2009; previous Manchester and Nottingham roles undated."
+          "url": "https://orcid.org/0000-0001-5946-0907",
+          "title": "ORCID, Katri Kauppi",
+          "notes": "Public API: Aalto-yliopisto kauppakorkeakoulu from 2012-08-01 only."
+        },
+        {
+          "url": "https://www.aalto.fi/en/node/17906",
+          "title": "Aalto people page, Katri Kauppi",
+          "notes": "Same biography; Aalto tenure track from August 2012, tenured 2018."
+        },
+        {
+          "url": "https://omlist.edutool.org/schools/aalto-university/faculty/katri-kauppi.html",
+          "title": "OM List profile, Katri Kauppi",
+          "notes": "Links ORCID and the Aalto profile."
         }
       ],
       "source": "omlist"
@@ -20020,14 +20224,32 @@
     {
       "facultyId": "omlist-bbc61b228bdd656e",
       "name": "Seongtae Kim",
-      "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "The Aalto profile dates Hull doctorate to 2016 and reports an ETH Zurich postdoc before Aalto in 2019, but does not date the postdoc or explicitly establish it as first employer.",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "employer": "ETH Zurich, Chair of Logistics Management",
+      "position": "Postdoctoral Researcher",
+      "placementYear": 2016,
+      "category": "postdoc",
+      "evidenceUrl": "https://orcid.org/0000-0002-9340-6493",
+      "evidenceNote": "ORCID (self-entered, linked from the OM List profile): ETH Zurich, Department of Management, Technology and Economics, Postdoctoral Researcher, 2016-2019; Aalto University, Assistant Professor, from 2019. The Aalto research portal biography says that before joining Aalto in 2019 he was a postdoctoral researcher in the Chair of Logistics Management at ETH Zurich and that he did his PhD (2013-2016) at the University of Hull Logistics Institute; doctoral award date 30 Sept 2016. The postdoc start month is not given, so it may have begun in the last months before the September 2016 award.",
+      "phdYearVerified": 2016,
+      "phdInstitutionVerified": "University of Hull",
+      "reason": "ORCID now dates the ETH Zurich postdoc from 2016, the year of the Hull doctorate, and the Aalto biography confirms it preceded Aalto in 2019.",
       "sources": [
         {
+          "url": "https://orcid.org/0000-0002-9340-6493",
+          "title": "ORCID, Seongtae Kim",
+          "notes": "Public API: employment ETH Zurich postdoc 2016-2019, Aalto Assistant Professor 2019-."
+        },
+        {
+          "url": "https://research.aalto.fi/en/persons/seongtae-kim",
+          "title": "Aalto research portal, Seongtae Kim",
+          "notes": "Biography (ETH postdoc before Aalto 2019; PhD 2013-2016 Hull); doctoral degree award date 30 Sept 2016."
+        },
+        {
           "url": "https://www.aalto.fi/en/node/129571",
-          "title": "Seongtae Kim academic profile",
-          "notes": "The Aalto profile dates Hull doctorate to 2016 and reports an ETH Zurich postdoc before Aalto in 2019, but does not date the postdoc or explicitly establish it as first employer."
+          "title": "Aalto people page, Seongtae Kim (earlier review)",
+          "notes": "Earlier review: same biography without dates for the postdoc."
         }
       ],
       "source": "omlist"
@@ -22417,13 +22639,33 @@
       "facultyId": "omlist-c219223261d4bf7f",
       "name": "Michael Lewis",
       "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "Not established. The University of Bristol profile opened lists only the current Professor of Operations Management post with MEng, PhD (no institution or year). A search-result summary shows a Michael Lewis professor at University of Bath (Operations & Supply Management) but nothing links Bath/Bristol or the imported 1995 Cambridge PhD to a dated chronology, and Michael Lewis is a very common name (wrong-person risk). No CV or thesis record found.",
+      "checkedAt": "2026-10-17",
+      "reason": "Identity is now settled but the first job is still undated. The OM List profile links ORCID 0000-0002-7620-1891, which (self-entered and Pure-fed) records University of Bath, School of Management, Professor of Operations and Supply Management, 2004-06-01 to 2025-11-30, and University of Bristol Business School, Professor of Operations Management, from 2025-12-01, so the Bristol professor is the former Bath professor. Nothing in ORCID covers 1995-2004. A conference speaker biography (MINEX Eurasia 2024) says he trained as a mechanical engineer, received his PhD from Cambridge and 'began his teaching career at Warwick Business School', without dates; that establishes the first teaching post but neither its start year nor whether a research or industry post came first. The Bristol research portal lists only 'MEng, PhD'; the Bath research portal returned 404 for the guessed profile and a bot check for search; no Cambridge thesis record could be reached (Apollo connection reset). Gap: a dated record of the Warwick appointment and the PhD year. Earlier review (2026-10-16): the Bristol profile gave only the current post and MEng, PhD, and nothing linked the imported 1995 Cambridge PhD to a dated chronology for this common name.",
       "sources": [
         {
+          "url": "https://orcid.org/0000-0002-7620-1891",
+          "title": "ORCID, Michael Lewis",
+          "notes": "Public API: Bath Professor of Operations and Supply Management 2004-06-01 to 2025-11-30; Bristol Professor of Operations Management from 2025-12-01; no education entries."
+        },
+        {
+          "url": "https://2024.minexeurasia.com/forum-speakers/mike-lewis/",
+          "title": "MINEX Eurasia 2024 speaker biography, Dr. Mike Lewis (University of Bath School of Management)",
+          "notes": "Read with curl: mechanical engineer by training, Cambridge PhD, began teaching career at Warwick Business School; no dates. Found through one web search."
+        },
+        {
+          "url": "https://research-information.bris.ac.uk/en/persons/mike-lewis/",
+          "title": "University of Bristol research portal, Professor Mike Lewis",
+          "notes": "MEng, PhD; current post and projects only."
+        },
+        {
+          "url": "https://omlist.edutool.org/schools/university-of-bristol/faculty/michael-lewis.html",
+          "title": "OM List profile, Michael Lewis (Bristol)",
+          "notes": "Links ORCID, the Bristol portal and LinkedIn."
+        },
+        {
           "url": "https://www.bristol.ac.uk/people/person/Michael-Lewis-faf1929b-74d3-4a29-bbc0-8820ed28331a",
-          "title": "University of Bristol profile, Michael Lewis",
-          "notes": "Opened: current position and MEng, PhD only."
+          "title": "University of Bristol people page (earlier review)",
+          "notes": "Earlier review: current position and MEng, PhD only."
         }
       ],
       "source": "omlist"
@@ -23487,13 +23729,33 @@
       "facultyId": "omlist-531e9b0e508c4c5c",
       "name": "Juuso Liesiö",
       "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "Aalto pages (opened) confirm D.Sc. 2008 but give no dated post-doctoral chronology; a search summary mentioned an IIASA research scholar stint that the opened page did not show. First job after 2008 undetermined.",
+      "checkedAt": "2026-10-17",
+      "reason": "Still no dated chronology after the December 2008 doctorate. The Aalto research portal (person page reached by its UUID from the Aalto people page) gives Doctoral degree, Engineering and Technology, award date 16 Dec 2008 (Licentiate 2006, Master's 2004), and Aaltodoc holds his 2008 article dissertation 'Portfolio decision analysis for robust project selection and resource allocation'. The portal's only dated external positions are a Loughborough visiting fellowship (2018-2021) and the FORS presidency (2018-2019); the biography mentions an IIASA research-scholar stint without dates. ORCID 0000-0002-8178-3179 has no public affiliations, and a search of IIASA's publication repository found nothing. The first post after December 2008 (IIASA, a Helsinki University of Technology post, or another) is undocumented. Earlier review (2026-10-16): Aalto pages confirmed the 2008 D.Sc. but gave no dated post-doctoral chronology; an IIASA stint seen in a search summary was not on the opened page.",
       "sources": [
         {
+          "url": "https://research.aalto.fi/en/persons/d75d3ca2-73b0-4b6f-89a3-326839b56d28",
+          "title": "Aalto research portal, Juuso Liesiö",
+          "notes": "Read with curl: degree award dates; external positions 2018-2021 only; biography mentions IIASA research scholar without dates."
+        },
+        {
+          "url": "https://aaltodoc.aalto.fi/handle/123456789/4543",
+          "title": "Aaltodoc: Portfolio decision analysis for robust project selection and resource allocation (Liesiö, 2008)",
+          "notes": "Read through the Aaltodoc search API; article-based doctoral dissertation, 2008."
+        },
+        {
+          "url": "https://www.aalto.fi/en/node/938556",
+          "title": "Aalto people page, Juuso Liesiö",
+          "notes": "M.Sc. (Tech) and Dr.Sc. (Tech.) from Helsinki University of Technology; IIASA research scholar, undated."
+        },
+        {
+          "url": "https://orcid.org/0000-0002-8178-3179",
+          "title": "ORCID, Juuso Liesiö",
+          "notes": "Public API: no affiliations."
+        },
+        {
           "url": "https://sal.aalto.fi/en/personnel/juuso.liesio/",
-          "title": "Juuso Liesio - Aalto SAL profile",
-          "notes": "Opened; titles conflict; no career timeline."
+          "title": "Systems Analysis Laboratory personnel page",
+          "notes": "Re-read: current Professor title only; no CV link."
         }
       ],
       "source": "omlist"
@@ -23670,15 +23932,25 @@
       "facultyId": "omlist-3d4d587ddd61a921",
       "name": "Yasemin Limon",
       "status": "unresolved",
-      "checkedAt": "2026-10-16",
+      "checkedAt": "2026-10-17",
+      "reason": "Still no dated appointment. The Bilkent FBA profile (re-read) says she received her Ph.D. in Industrial Engineering from Wisconsin-Madison in 2019 and is an Assistant Professor of Operations Management, with no start date or earlier posts; her ORCID (0000-0001-6126-4016, linked from the OM List profile) has one undated Bilkent entry. YÖK Akademik, whose records list Turkish academic appointments with years, could not be reached (connection reset; the reader proxy timed out). Whether Bilkent followed the 2019 degree directly, or a postdoc or other job came first, is unknown. Earlier review (2026-10-16): the Bilkent biography gave the 2019 Wisconsin PhD but no dated early appointment history.",
       "sources": [
         {
           "url": "https://fba.bilkent.edu.tr/academic-staff/yasemin-limon/",
-          "title": "Yasemin Limon Profile",
-          "notes": "Bilkent biography gives Wisconsin IE PhD 2019 but no dated early appointment history."
+          "title": "Bilkent FBA profile, Yasemin Limon",
+          "notes": "Re-read with curl: 2019 Wisconsin-Madison PhD; Assistant Professor; no dates."
+        },
+        {
+          "url": "https://orcid.org/0000-0001-6126-4016",
+          "title": "ORCID, Yasemin Limon",
+          "notes": "Public API: one undated Bilkent entry."
+        },
+        {
+          "url": "https://akademik.yok.gov.tr/AkademikArama/",
+          "title": "YÖK Akademik (attempted)",
+          "notes": "Connection reset; reader proxy timed out."
         }
       ],
-      "reason": "Bilkent biography gives Wisconsin IE PhD 2019 but no dated early appointment history.",
       "source": "omlist"
     },
     {
@@ -25248,13 +25520,38 @@
       "facultyId": "omlist-f9ce7142e1fb3ac8",
       "name": "Alan Mackelprang",
       "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "Searches suggest current affiliation is Georgia Southern rather than the imported UNT; no CV or PhD record found, so degree and first job are unestablished.",
+      "checkedAt": "2026-10-17",
+      "reason": "Degree confirmed, first job still undated. Georgia Southern's Parker College profile lists Ph.D. (Operations Management), University of South Carolina, 2011, and his Georgia Southern Pure profile gives Ph.D. in Management Science, University of South Carolina, 2011; a 2016 Georgia Southern release calls him associate professor of operations management and PhD program director there. The UNT profile (his current post, Professor and Endowed Chair) gives no history, ORCID 0000-0002-0278-0202 has no public entries, the UNT Faculty Information System search rendered empty, and Georgia Southern's Digital Commons CV entry (faccv/9) returned 404. No source dates when he started at Georgia Southern or says whether any post came between the 2011 degree and Georgia Southern. Earlier review (2026-10-16): searches pointed to Georgia Southern rather than UNT, and no CV or PhD record was found.",
       "sources": [
         {
+          "url": "https://ww2.georgiasouthern.edu/parker/lscm/?p=85",
+          "title": "Georgia Southern Parker College profile, Alan Mackelprang",
+          "notes": "Read with curl: Director of the PhD program and Professor of Operations Management; Ph.D. (Operations Management), South Carolina, 2011; no appointment dates."
+        },
+        {
+          "url": "https://scholars.georgiasouthern.edu/en/persons/alan-w-mackelprang-2/",
+          "title": "Georgia Southern research portal, Alan W. Mackelprang",
+          "notes": "Education: Ph.D. in Management Science, University of South Carolina, to 2011; publications from 2010."
+        },
+        {
+          "url": "https://jobs.georgiasouthern.edu/?p=50458",
+          "title": "Georgia Southern release on the 2016 DSI awards",
+          "notes": "Associate professor of operations management at Georgia Southern in 2016."
+        },
+        {
+          "url": "https://digitalcommons.georgiasouthern.edu/faccv/9",
+          "title": "Georgia Southern Digital Commons faculty CV entry",
+          "notes": "Returned 404."
+        },
+        {
+          "url": "https://cob.unt.edu/people/alan-mackelprang.html",
+          "title": "UNT G. Brint Ryan College of Business profile",
+          "notes": "Professor and Endowed Chair, Supply Chain Management; no history."
+        },
+        {
           "url": "https://mailman.mit.edu/pipermail/logprofs/2022/001138.html",
-          "title": "Logprofs post",
-          "notes": "Search result; Georgia Southern role only."
+          "title": "Logprofs list message, 2022 (earlier review)",
+          "notes": "Earlier review: Georgia Southern role only."
         }
       ],
       "source": "omlist"
@@ -27173,16 +27470,44 @@
     {
       "facultyId": "omlist-dc9bba400af2642d",
       "name": "Liu Ming",
-      "status": "unresolved",
-      "checkedAt": "2026-10-16",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "employer": "The Chinese University of Hong Kong, Shenzhen",
+      "position": "Assistant Professor, School of Management and Economics",
+      "placementYear": 2017,
+      "category": "tenure-track",
+      "evidenceUrl": "https://orcid.org/0000-0003-4144-3054",
+      "evidenceNote": "ORCID (self-entered): education University of Maryland, Robert H. Smith School of Business, Ph.D., 2012-09-01 to 2017-06-11; employment CUHK-Shenzhen School of Management and Economics, Assistant Professor, 2017-09-01 to 2024-06-30, then Associate Professor (and Shenzhen Finance Institute) from 2024-07-01. Maryland's DRUM repository records his 2017 dissertation 'Essays on Dynamic Pricing and Choice in the Internet and Sharing Economy' (advisor Tunay Tunca). Nothing between June and September 2017.",
+      "phdYearVerified": 2017,
+      "phdInstitutionVerified": "University of Maryland, College Park",
+      "reason": "Identity settled: the earlier review's linked CV belonged to a CUHK finance namesake. This person's ORCID lists Maryland Smith School and CUHK-Shenzhen, DRUM holds his 2017 Maryland dissertation, and his CUHK-SZ personal page (Maryland OM/MS doctorate, papers with Tunca) matches; ORCID dates the CUHK-SZ assistant professorship from September 2017.",
       "sources": [
         {
+          "url": "https://orcid.org/0000-0003-4144-3054",
+          "title": "ORCID, liu ming",
+          "notes": "Found by ORCID expanded search (family name Ming, given Liu, affiliation Shenzhen/Maryland); read through the public API: employments and education with dates."
+        },
+        {
+          "url": "https://api.drum.lib.umd.edu/server/api/discover/search/objects?query=Ming%20Liu%20group%20buying&dsoType=ITEM&size=5",
+          "title": "DRUM (University of Maryland) search API: handle 1903/19822",
+          "notes": "Dissertation by Ming, Liu, 2017, 'Essays on Dynamic Pricing and Choice in the Internet and Sharing Economy', advisor Tunca, Tunay I."
+        },
+        {
+          "url": "https://myweb.cuhk.edu.cn/mingliu",
+          "title": "Liu Ming, CUHK-Shenzhen School of Management and Economics personal page",
+          "notes": "Read with curl (Chinese version): Associate Professor; PhD in operations management/management science, University of Maryland College Park; no dated work history shown."
+        },
+        {
+          "url": "https://omlist.edutool.org/schools/the-chinese-university-of-hong-kong-shenzhen/faculty/liu-ming.html",
+          "title": "OM List profile, Liu Ming",
+          "notes": "Links myweb.cuhk.edu.cn/mingliu and the unrelated CUHK finance CV."
+        },
+        {
           "url": "https://www.bschool.cuhk.edu.hk/wp-content/uploads/353_Ming-Liu-CV-2012Dec.pdf",
-          "title": "Liu Ming curriculum vitae",
-          "notes": "The linked CV belongs to Ming Liu in CUHK Finance with a Duke Economics PhD in 1996. The imported person is Liu Ming at CUHK Shenzhen with a Maryland PhD in 2017. The linked document has a different identity and cannot support placement."
+          "title": "CV of CUHK finance namesake (earlier review)",
+          "notes": "Earlier review: Duke Economics PhD 1996; a different person."
         }
       ],
-      "reason": "The linked CV belongs to Ming Liu in CUHK Finance with a Duke Economics PhD in 1996. The imported person is Liu Ming at CUHK Shenzhen with a Maryland PhD in 2017. The linked document has a different identity and cannot support placement.",
       "source": "omlist"
     },
     {
@@ -27810,19 +28135,47 @@
     {
       "facultyId": "omlist-0907a0c4e443c24e",
       "name": "Tyler Morgan",
-      "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "Auburn directory and linked personal site identify Alabama PhD in 2015, earlier Iowa State faculty employment, and pre-academic insurance work. No dated Iowa State appointment or complete post-degree chronology is provided.",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "employer": "Iowa State University, College of Business",
+      "position": "Assistant Professor of Supply Chain and Information Systems",
+      "placementYear": 2015,
+      "category": "tenure-track",
+      "evidenceUrl": "https://www.morgan.business/",
+      "evidenceNote": "His website says that before moving to Auburn he was a faculty member at Iowa State University, that he earned his PhD in 2015 from the University of Alabama, and that his six years in the insurance industry came before he returned to academia; his teaching page lists courses only at Alabama (as a PhD student), Iowa State and Auburn (from Fall 2020), and his honors page lists Iowa State College of Business teaching recognitions in 2017 and 2018. Iowa State's 2016-2017 catalog lists 'Morgan, Tyler, Assistant Professor of Supply Chain and Information Systems; Ph.D., 2015, Alabama' (he is absent from the 2015-16 catalog, which is compiled before the academic year). The Iowa State start year (2015 or 2016) is not documented, so placementYear is null. Verifier: placementYear corrected from null to 2015. The College Service list on his Honors and Service page (a cited source) gives, under 2015, 'Faculty Adviser, ISU Business Learning Teams', with Iowa State committee work continuing in 2016-2018, and the same page gives his 2015 University of Alabama graduate-student teaching award. So the Iowa State post began in 2015, the year of the Alabama PhD. The same list puts his Auburn service in 2018-2019, so Auburn did not start only in Fall 2020; that date is when his current course began.",
+      "phdYearVerified": 2015,
+      "phdInstitutionVerified": "University of Alabama",
+      "reason": "His own site orders the career (insurance before the doctorate, 2015 Alabama PhD, Iowa State faculty, then Auburn) and the Iowa State catalog gives the assistant-professor title by 2016-17; the start year is not stated.",
       "sources": [
         {
-          "url": "https://harbert.auburn.edu/directory/tyler-morgan.html",
-          "title": "Tyler Morgan — public academic profile",
-          "notes": "Professional biography and degree information reviewed for first-job evidence."
+          "url": "https://www.morgan.business/",
+          "title": "Morgan.Business, About",
+          "notes": "Read with curl: Iowa State before Auburn; PhD 2015 Alabama; insurance industry before returning to academia."
         },
         {
-          "url": "https://www.morgan.business/",
-          "title": "Tyler Morgan — personal academic website",
-          "notes": "Describes 2015 Alabama doctorate and previous Iowa State faculty position without appointment dates."
+          "url": "https://www.morgan.business/honorsservice",
+          "title": "Morgan.Business, Honors and Service",
+          "notes": "2018 Early Achievement in Teaching Award and 2017 teaching-award nomination, Iowa State College of Business."
+        },
+        {
+          "url": "https://www.morgan.business/teaching",
+          "title": "Morgan.Business, Teaching",
+          "notes": "Courses at Alabama, Iowa State and Auburn (Fall 2020-present)."
+        },
+        {
+          "url": "https://catalog.iastate.edu/previouscatalogs/2016-2017/faculty/faculty.pdf",
+          "title": "Iowa State University catalog 2016-2017, faculty list (PDF)",
+          "notes": "Downloaded with curl, pdftotext: Assistant Professor of Supply Chain and Information Systems; B.S. 2003, M.B.A. 2011, Ph.D. 2015, Alabama."
+        },
+        {
+          "url": "https://catalog.iastate.edu/previouscatalogs/2015-16/faculty/",
+          "title": "Iowa State University catalog 2015-16, faculty list",
+          "notes": "Morgan not listed."
+        },
+        {
+          "url": "https://harbert.auburn.edu/directory/tyler-morgan.html",
+          "title": "Harbert College profile, Tyler Morgan (earlier review)",
+          "notes": "PhD, University of Alabama."
         }
       ],
       "source": "omlist"
@@ -28810,14 +29163,42 @@
     {
       "facultyId": "omlist-d653bff82f93f5c6",
       "name": "Jason Nguyen",
-      "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "No CV or Ivey profile located (searches returned other Ivey faculty). PhD 2018 and first post-PhD position unestablished; common-name risk. Discovery web searches were also run; their snippets were not treated as verification.",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "employer": "UNSW Business School, University of New South Wales",
+      "position": "Lecturer (Assistant Professor)",
+      "placementYear": null,
+      "category": "tenure-track",
+      "evidenceUrl": "https://discover.research.ivey.ca/jason-nguyen",
+      "evidenceNote": "Ivey's expert profile (linked from the OM List profile) says that before joining Ivey (Assistant Professor, 2021-present) he was a Lecturer (Assistant Professor) at the UNSW Business School and founding faculty at VinUniversity's College of Business and Management, and gives PhD, Supply Chain and Operations, University of Minnesota, 2018. A June 2020 Devpolicy author note describes him as Assistant Professor at VinUni and says that prior to joining VinUni he was a Lecturer at the UNSW Business School, which fixes the order UNSW, then VinUni, then Ivey. ORCID dates the Minnesota PhD to 2018-02-17 and Ivey from 2021-07-01. The UNSW start date is not given, so placementYear is null; a lectureship is recorded as tenure-track under the Commonwealth-lectureship rule (no fixed-term contract is stated).",
+      "phdYearVerified": 2018,
+      "phdInstitutionVerified": "University of Minnesota",
+      "reason": "The gap between the February 2018 PhD and Ivey (July 2021) is now filled: UNSW Business School lectureship first, then VinUniversity, then Ivey. The UNSW start year is undocumented.",
       "sources": [
         {
-          "url": "https://www.ivey.uwo.ca/faculty/directory/jason-nguyen/",
-          "title": "Ivey faculty page (guessed URL)",
-          "notes": "Attempted; HTTP 404."
+          "url": "https://discover.research.ivey.ca/jason-nguyen",
+          "title": "Ivey Business School expert profile, Jason Nguyen",
+          "notes": "Script-drawn; read in a headless browser. Bio, Ivey appointment 2021-present and degrees with years."
+        },
+        {
+          "url": "https://devpolicy.org/author/jason-nguyen/",
+          "title": "Devpolicy Blog author page, Jason Q. Nguyen (June 2020)",
+          "notes": "Read with curl: Assistant Professor of OSCM at VinUni; previously Lecturer at UNSW Business School. Found through one web search."
+        },
+        {
+          "url": "https://www.ivey.uwo.ca/faculty_research/directory/jason-nguyen/",
+          "title": "Ivey faculty directory, Jason Nguyen",
+          "notes": "Same biography: UNSW Lecturer (Assistant Professor) and VinUni founding faculty before Ivey; Minnesota PhD."
+        },
+        {
+          "url": "https://orcid.org/0000-0001-7976-3796",
+          "title": "ORCID, Jason Nguyen",
+          "notes": "Public API: Ivey Assistant Professor from 2021-07-01; Minnesota PhD 2011-08-25 to 2018-02-17."
+        },
+        {
+          "url": "https://omlist.edutool.org/schools/western-university-canada-university-of-western-at-london-ontario/faculty/jason-nguyen.html",
+          "title": "OM List profile, Jason Nguyen (Ivey)",
+          "notes": "Links the Ivey directory, discover.research.ivey.ca and ORCID."
         }
       ],
       "source": "omlist"
@@ -31129,14 +31510,33 @@
     {
       "facultyId": "omlist-7046dc9959dbf1ee",
       "name": "Heikki Peura",
-      "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "Aalto biography confirms prior Imperial assistant professorship and LBS doctorate but lacks dates and complete early chronology.",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "employer": "Imperial College Business School, Imperial College London",
+      "position": "Assistant Professor",
+      "placementYear": 2016,
+      "category": "unknown",
+      "evidenceUrl": "https://orcid.org/0000-0002-1414-107X",
+      "evidenceNote": "ORCID (self-entered, linked from the OM List profile): Imperial College London, Business School / Operations and Analytics, Assistant Professor, 2016-08-01 to 2023-12-31; Aalto University, Associate Professor, from 2024-01-01. The Aalto research portal records PhD, Management Science and Operations, London Business School, award date 30 Jun 2016, and says he was an Assistant Professor at Imperial before Aalto. Category unknown because a UK assistant-professor title does not by itself state a permanent post.",
+      "phdYearVerified": 2016,
+      "phdInstitutionVerified": "London Business School",
+      "phdInstitutionResolution": "The Aalto research portal names London Business School as the awarding school (award date 30 June 2016); the OM List import gives University of London, of which LBS is a member institution. Same degree, recorded under the school's name.",
+      "reason": "ORCID dates the Imperial assistant professorship from 1 August 2016, a month after the LBS PhD award recorded by Aalto.",
       "sources": [
         {
+          "url": "https://orcid.org/0000-0002-1414-107X",
+          "title": "ORCID, Heikki Peura",
+          "notes": "Public API: Imperial Assistant Professor 2016-08-01 to 2023-12-31; Aalto Associate Professor from 2024-01-01."
+        },
+        {
+          "url": "https://research.aalto.fi/en/persons/heikki-peura",
+          "title": "Aalto research portal, Heikki Peura",
+          "notes": "Biography and education: PhD Management Science and Operations, LBS, award date 30 Jun 2016."
+        },
+        {
           "url": "https://www.aalto.fi/en/node/986081",
-          "title": "Heikki Peura public academic profile",
-          "notes": "Aalto biography confirms prior Imperial assistant professorship and LBS doctorate but lacks dates and complete early chronology."
+          "title": "Aalto people page, Heikki Peura (earlier review)",
+          "notes": "Earlier review: Imperial assistant professorship and LBS doctorate without dates."
         }
       ],
       "source": "omlist"
@@ -31382,14 +31782,32 @@
     {
       "facultyId": "omlist-8319f8aedd31f174",
       "name": "Mikaella Polyviou",
-      "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "The ASU profile lists the Ohio State doctorate without a completion date or earliest employment chronology.",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "employer": "Arizona State University, W. P. Carey School of Business",
+      "position": "Assistant Professor, Supply Chain Management",
+      "placementYear": 2016,
+      "category": "tenure-track",
+      "evidenceUrl": "https://orcid.org/0000-0003-3181-2653",
+      "evidenceNote": "ORCID (self-entered, linked from the OM List profile): Arizona State University, Supply chain management, Assistant Professor, from 2016-08-15 (no other employment). OhioLINK ETD records her Ohio State Doctor of Philosophy in Business Administration, 2016, dissertation 'Essays on Supply Chain Disruptions: A Schema, Managerial Reactions, and Decision-Making'. The ASU profile confirms the Ohio State Master's and PhD and her W. P. Carey teaching.",
+      "phdYearVerified": 2016,
+      "phdInstitutionVerified": "The Ohio State University",
+      "reason": "ORCID dates the ASU assistant professorship from 15 August 2016, the year of her Ohio State PhD (OhioLINK).",
       "sources": [
         {
+          "url": "https://orcid.org/0000-0003-3181-2653",
+          "title": "ORCID, Mikaella Polyviou",
+          "notes": "Public API: ASU Assistant Professor from 2016-08-15."
+        },
+        {
+          "url": "https://etd.ohiolink.edu/acprod/odb_etd/r/etd/search/10?p10_accession_num=osu1469078168",
+          "title": "OhioLINK ETD: Polyviou, Essays on Supply Chain Disruptions (Ohio State, 2016)",
+          "notes": "Found with the OhioLINK search form in a headless browser: Doctor of Philosophy, The Ohio State University, 2016, Business Administration."
+        },
+        {
           "url": "https://search.asu.edu/profile/1728255",
-          "title": "Mikaella Polyviou academic profile",
-          "notes": "The ASU profile lists the Ohio State doctorate without a completion date or earliest employment chronology."
+          "title": "ASU profile, Mikaella Polyviou",
+          "notes": "Script-drawn; read in a headless browser: Master's and Ph.D. from Ohio State; no dates."
         }
       ],
       "source": "omlist"
@@ -32717,13 +33135,18 @@
       "facultyId": "omlist-ac27210a3c4724ac",
       "name": "Glenn Richey",
       "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "The Auburn profile dates doctorate to 2003 and describes earlier industry work, but does not establish initial academic employment or its ordering around completion.",
+      "checkedAt": "2026-10-17",
+      "reason": "Still no dated academic chronology. ORCID 0000-0002-7620-4435 (self-entered) gives Ph.D., Supply Chain Management & Marketing, University of Oklahoma, 2003-05, and Auburn, Eminent Scholar, from 2015-06-01, with nothing in between. The Harbert profile (re-read) gives the 2003 Oklahoma PhD, ten years of pre-academic industry work at Scott Paper and Genuine Parts' S.P. Richards division, publications since 2003, a research professorship at Bath and eight years at Edinburgh, and a University of Alabama teaching award, all undated. One web search for his CV returned only namesakes. The employer and start of his first post after May 2003 (probably the University of Alabama, but undated) are not documented. Earlier review (2026-10-16): the Auburn profile dated the 2003 doctorate and earlier industry work but not the initial academic post.",
       "sources": [
         {
+          "url": "https://orcid.org/0000-0002-7620-4435",
+          "title": "ORCID, Robert Glenn Richey, Jr",
+          "notes": "Public API: Oklahoma Ph.D. 2003-05; Auburn Eminent Scholar from 2015-06-01."
+        },
+        {
           "url": "https://harbert.auburn.edu/directory/glenn-richey.html",
-          "title": "Glenn Richey academic profile",
-          "notes": "The Auburn profile dates doctorate to 2003 and describes earlier industry work, but does not establish initial academic employment or its ordering around completion."
+          "title": "Harbert College profile, Glenn Richey",
+          "notes": "Read with curl: degrees with years; industry career before academia; undated academic posts."
         }
       ],
       "source": "omlist"
@@ -32782,13 +33205,18 @@
       "facultyId": "omlist-e4f9d695367763c7",
       "name": "Anthony Roath",
       "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "Auburn profile gives Michigan State MBA/PhD and pre-PhD Air Force and consulting careers with no years; a 2010 press release (seen via search snippet) places him at the University of Oklahoma around 2010 and says he worked at the Logistics Management Institute during the doctorate. No source gives a post-PhD start date or confirms Oklahoma was his first job. Discovery web searches were also run; their snippets were not treated as verification.",
+      "checkedAt": "2026-10-17",
+      "reason": "No dated source found. The Harbert profile (re-read) gives BS USAF Academy and MBA and PhD Michigan State without years, Air Force service and management consulting before academia, and a Fulbright in the UK, all undated. The OM List profile links no ORCID; the ORCID record for 'anthony roath' (0000-0002-2154-6403) is empty. No CV or dissertation record was opened, so neither the PhD year nor the first post (the Oklahoma appointment seen in an earlier search snippet) is dated. Earlier review (2026-10-16): the Auburn profile listed degrees and pre-PhD Air Force and consulting careers without years; a 2010 press release seen only as a snippet placed him at Oklahoma.",
       "sources": [
         {
           "url": "https://harbert.auburn.edu/directory/anthony-roath.html",
-          "title": "Auburn Harbert directory: Anthony Roath",
-          "notes": "Opened. Degrees without years; no Oklahoma mention."
+          "title": "Harbert College profile, Anthony Roath",
+          "notes": "Re-read with curl: degrees without years; Air Force and consulting before academia."
+        },
+        {
+          "url": "https://orcid.org/0000-0002-2154-6403",
+          "title": "ORCID, anthony roath",
+          "notes": "Public API: no affiliations or works; identity not confirmed."
         }
       ],
       "source": "omlist"
@@ -39575,19 +40003,38 @@
     {
       "facultyId": "omlist-c2d3fcca4231115d",
       "name": "LaDonna Thornton",
-      "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "First post-PhD job not established and the PhD year conflicts. Auburn Harbert directory (opened) gives PhD Logistics, University of Tennessee, 2013 whereas the imported value is 2012, so the PhD year needs resolution. The Auburn bio mentions University of Nebraska research awards and a search-result mailing list shows her as a Florida State assistant professor in 2015, so Nebraska and/or Florida State preceded Auburn, but no dated CV was found to identify which was first or its start year.",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "employer": "University of Nebraska",
+      "position": null,
+      "placementYear": 2013,
+      "category": "unknown",
+      "evidenceUrl": "https://orcid.org/0000-0002-8256-9705",
+      "evidenceNote": "ORCID (self-entered, linked from the OM List profile): University of Nebraska, 2013-08 to 2015-05; Florida State University, 2015-05 to 2018-05-04; Auburn University, Assistant Professor of Supply Chain Management, from 2018-05-16; education University of Tennessee (undated). The Harbert profile gives PhD, Logistics, University of Tennessee, 2013 and mentions University of Nebraska research awards, and a September 2015 list message signs her as Assistant Professor, Florida State. The ORCID Nebraska entry gives no campus or title, so the position is null and the category unknown.",
+      "phdYearVerified": 2013,
+      "phdInstitutionVerified": "University of Tennessee at Knoxville",
+      "phdYearResolution": "The Harbert College profile (her current employer) gives PhD, Logistics, University of Tennessee, 2013; the OM List import gives 2012. The 2013 year matches the August 2013 start at Nebraska; no dissertation record was found in TRACE to settle it independently.",
+      "reason": "ORCID now dates the Nebraska post from August 2013, followed by Florida State (2015) and Auburn (2018), which settles the order the earlier review could not.",
       "sources": [
         {
+          "url": "https://orcid.org/0000-0002-8256-9705",
+          "title": "ORCID, LaDonna Thornton",
+          "notes": "Public API: Nebraska 2013-08 to 2015-05, Florida State 2015-05 to 2018-05-04, Auburn from 2018-05-16."
+        },
+        {
           "url": "https://www.harbert.auburn.edu/directory/ladonna-thornton.html",
-          "title": "Auburn Harbert directory, LaDonna Thornton",
-          "notes": "Opened: PhD Logistics Tennessee 2013; mentions Nebraska awards; seven and a half years industry before academia (pre-PhD)."
+          "title": "Harbert College profile, LaDonna Thornton",
+          "notes": "PhD Logistics, Tennessee, 2013; Nebraska research awards; seven and a half years in industry before academia."
         },
         {
           "url": "https://mailman.mit.edu/pipermail/logprofs/2015/000544.html",
-          "title": "Logprofs 2015 post (FSU)",
-          "notes": "Search-result discovery only; not opened."
+          "title": "Logprofs list message, 16 September 2015",
+          "notes": "Opened now: signature LaDonna M. Thornton Ph.D, Assistant Professor, Florida State University, Department of Marketing."
+        },
+        {
+          "url": "https://trace.tennessee.edu/server/api/discover/search/objects?query=LaDonna%20Thornton&dsoType=ITEM&size=10",
+          "title": "TRACE (University of Tennessee) search API",
+          "notes": "No dissertation record found."
         }
       ],
       "source": "omlist"
@@ -39640,14 +40087,37 @@
     {
       "facultyId": "omlist-cdcb21c8f544647b",
       "name": "Feng Tian",
-      "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "No CV or HKU profile located; search returned unrelated faculty. Michigan PhD 2021 and first post-PhD job unestablished; common-name risk. Discovery web searches were also run; their snippets were not treated as verification.",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "employer": "The University of Hong Kong, HKU Business School",
+      "position": "Assistant Professor",
+      "placementYear": 2021,
+      "category": "tenure-track",
+      "evidenceUrl": "https://orcid.org/0000-0002-5211-2384",
+      "evidenceNote": "ORCID (self-entered, linked from the OM List profile): one employment, The University of Hong Kong, from 2021-08-13, and education University of Michigan, Technology and Operations (from 2016-07-01, no end date). The HKU Business School profile lists him as Assistant Professor, Innovation and Information Management, with a PhD in Technology and Operations from the Ross School of Business. The ORCID entry gives no title; the title is the one on the HKU profile.",
+      "phdYearVerified": null,
+      "phdInstitutionVerified": "University of Michigan at Ann Arbor",
+      "reason": "Identity fixed through the OM List profile, which links ORCID 0000-0002-5211-2384 and the HKU profile; ORCID's only employment is HKU from August 2021, consistent with the imported 2021 Michigan PhD. The degree year itself was not confirmed from a dated degree record (Deep Blue and the Ross placement page were blocked by bot checks).",
       "sources": [
         {
+          "url": "https://orcid.org/0000-0002-5211-2384",
+          "title": "ORCID, Feng Tian",
+          "notes": "Read through the public API: employment HKU from 2021-08-13; education Michigan Technology and Operations from 2016-07-01."
+        },
+        {
           "url": "https://www.hkubs.hku.hk/people/feng-tian/",
-          "title": "HKU Business School profile",
-          "notes": "Opened; only the title and heading returned, no education/career content."
+          "title": "HKU Business School profile, Feng Tian",
+          "notes": "Read through r.jina.ai (plain fetch returned only the page shell): Assistant Professor; PhD Technology and Operations, University of Michigan; Master in Economics, Duke; no dates."
+        },
+        {
+          "url": "https://omlist.edutool.org/schools/university-of-hong-kong/faculty/feng-tian.html",
+          "title": "OM List profile, Feng Tian (HKU)",
+          "notes": "Links ORCID, the HKU profile and sites.google.com/umich.edu/ftor (a sign-in page)."
+        },
+        {
+          "url": "https://deepblue.lib.umich.edu/search?query=%22Tian%2C%20Feng%22",
+          "title": "Deep Blue search (attempted)",
+          "notes": "Cloudflare challenge in a headless browser; API returned 403."
         }
       ],
       "source": "omlist"
@@ -41299,13 +41769,23 @@
       "facultyId": "omlist-545f2afaae22fa8f",
       "name": "Veronica Villena",
       "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "ASU biography identifies prior Penn State faculty role but lacks dates and complete early chronology.",
+      "checkedAt": "2026-10-17",
+      "reason": "The Penn State post is still undated. The ASU profile (rendered in a headless browser) says that before joining W. P. Carey she was an assistant professor of supply chain management at Penn State, and that she holds a doctorate in business and an MBA from IE Business School; it lists a 2019 Penn State faculty sustainability award but no CV or dates. Her ORCID (0000-0001-6340-8896) has only ASU, Associate Professor, from 2021-06-01. One web search found a Penn State Smeal update of January 2021 calling her an assistant professor there, but nothing dating her start or confirming that Penn State followed the 2011 IE degree directly. Gap: start year of the Penn State assistant professorship and any post between the doctorate and Penn State. Earlier review (2026-10-16): the ASU biography named the prior Penn State faculty role without dates.",
       "sources": [
         {
           "url": "https://search.asu.edu/profile/1566928",
-          "title": "Veronica Villena public academic profile",
-          "notes": "ASU biography identifies prior Penn State faculty role but lacks dates and complete early chronology."
+          "title": "ASU profile, Veronica Villena",
+          "notes": "Read in a headless browser: earlier Penn State assistant professorship (undated); Ph.D. Business Administration, IE Business School; no CV tab."
+        },
+        {
+          "url": "https://orcid.org/0000-0001-6340-8896",
+          "title": "ORCID, Veronica H. Villena Martinez",
+          "notes": "Public API: ASU Associate Professor from 2021-06-01 only."
+        },
+        {
+          "url": "https://omlist.edutool.org/schools/arizona-state-university/faculty/veronica-villena.html",
+          "title": "OM List profile, Veronica Villena",
+          "notes": "Links the ASU profile, ORCID and LinkedIn."
         }
       ],
       "source": "omlist"
@@ -47272,16 +47752,34 @@
     {
       "facultyId": "omlist-24b253c8e5cd1561",
       "name": "Zenan Zhou",
-      "status": "unresolved",
-      "checkedAt": "2026-10-16",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "employer": "Arizona State University, W. P. Carey School of Business",
+      "position": "Assistant Professor, NASPO Department of Supply Chain Management",
+      "placementYear": 2022,
+      "category": "tenure-track",
+      "evidenceUrl": "https://orcid.org/0000-0001-7654-9145",
+      "evidenceNote": "ORCID (self-entered): The Ohio State University, Department of Marketing and Logistics, Graduate Research Associate, 2018-08-01 to 2022-08-07; education Ph.D. in Business Administration, Ohio State, 2018-08-01 to 2022-08-07; Arizona State University, NASPO Department of Supply Chain Management, Assistant Professor, from 2022-08-08. The ASU profile gives the same PhD dates (08/2018-08/2022) and a full-time operations research analyst job in 2016-2018, before the doctorate; OhioLINK ETD records his 2022 Ohio State dissertation.",
+      "phdYearVerified": 2022,
+      "phdInstitutionVerified": "The Ohio State University",
+      "reason": "ORCID dates the ASU assistant professorship from 8 August 2022, the day after the Ohio State PhD ended; his only industry job (2016-2018) predates the doctorate.",
       "sources": [
         {
+          "url": "https://orcid.org/0000-0001-7654-9145",
+          "title": "ORCID, Zenan Zhou",
+          "notes": "Public API: employments and education with day-level dates."
+        },
+        {
           "url": "https://search.asu.edu/profile/3283287",
-          "title": "Zenan Zhou Profile",
-          "notes": "ASU biography dates the Ohio State PhD August 2022 and predoctoral industry employment 2016-2018, but does not date the ASU appointment or establish the first role."
+          "title": "ASU profile, Zenan Zhou",
+          "notes": "Read in a headless browser: Assistant Professor; Ph.D. Ohio State 08/2018-08/2022; operations research analyst 2016-2018."
+        },
+        {
+          "url": "https://etd.ohiolink.edu/acprod/odb_etd/r/etd/search/10?p10_accession_num=osu1658107634714902",
+          "title": "OhioLINK ETD: Zhou, Impacts of Innovative Technologies and Services in Supply Chain via Mobile Apps (Ohio State, 2022)",
+          "notes": "Found with the OhioLINK search form in a headless browser: Doctor of Philosophy, Ohio State, 2022, Business Administration."
         }
       ],
-      "reason": "ASU biography dates the Ohio State PhD August 2022 and predoctoral industry employment 2016-2018, but does not date the ASU appointment or establish the first role.",
       "source": "omlist"
     },
     {
@@ -47419,13 +47917,33 @@
       "facultyId": "omlist-ff13f5607e826d40",
       "name": "Ning Zhu",
       "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "Not researched to a result. Searches for a USTC or Tianjin University profile found nothing matching; Ning Zhu is a very common name (a finance Ning Zhu surfaced and was excluded) and a Chinese-language search could not be run (search budget exhausted). No CV or chronology opened.",
+      "checkedAt": "2026-10-17",
+      "reason": "Identity now fixed but the first job remains unknown. The OM List profile links USTC School of Management profile-2529 and ORCID 0000-0001-8560-5946. The English page says Professor, Department of Management Science, joined USTC in 2025; the Chinese page says he graduated from Tianjin University in 2012 with a doctorate in Management Science and Engineering and is now a USTC professor and NSFC Excellent Young Scientist, with no employment history. ORCID lists only Tianjin University as an undated education entry. Where he worked from 2012 until joining USTC in 2025 (and whether the first post was at Tianjin University itself) is not documented in any opened source; no Tianjin University staff page was found. Earlier review (2026-10-16): no USTC or Tianjin profile matching this person was found (profile-313 was a search lead), and a Chinese-language search could not be run.",
       "sources": [
         {
+          "url": "https://bs.ustc.edu.cn/chinese/profile-2529.html",
+          "title": "USTC School of Management profile (Chinese), Zhu Ning",
+          "notes": "Read with curl: 2012 Tianjin University doctorate in Management Science and Engineering; current USTC professor; no work history."
+        },
+        {
+          "url": "https://bs.ustc.edu.cn/english/profile-2529.html",
+          "title": "USTC School of Management profile (English), ZHU Ning",
+          "notes": "Professor, Department of Management Science, Operations Management; 'Joined University of Science and Technology of China in 2025'."
+        },
+        {
+          "url": "https://orcid.org/0000-0001-8560-5946",
+          "title": "ORCID, Ning Zhu",
+          "notes": "Public API: one undated education entry, Tianjin University; 51 works; no employment entries."
+        },
+        {
+          "url": "https://omlist.edutool.org/schools/university-of-science-and-technology-of-china/faculty/ning-zhu.html",
+          "title": "OM List profile, Ning Zhu (USTC)",
+          "notes": "Links profile-2529 and ORCID."
+        },
+        {
           "url": "https://bs.ustc.edu.cn/english/profile-313.html",
-          "title": "USTC School of Management profile hit",
-          "notes": "Search-result discovery only; not confirmed as this person."
+          "title": "USTC profile-313 (earlier review)",
+          "notes": "Earlier review: search lead only, not this person's linked profile."
         }
       ],
       "source": "omlist"
@@ -49104,27 +49622,27 @@
       "name": "Jussi Leppinen",
       "status": "unresolved",
       "checkedAt": "2026-10-17",
-      "reason": "Doctorate is complete (Aalto research portal: doctoral degree award date 30 March 2026; public defence 27 February 2026 in Systems and Operations Research). He is now listed as University Lecturer in the Department of Information and Service Management, but no opened source dates the start of that lectureship or says whether any other post came first; he was a project member on Aalto research projects during the doctorate (2019-2023). ORCID 0000-0003-2221-8302 has only an undated Aalto University entry. The first post-PhD job cannot be dated from the evidence.",
+      "reason": "The start of his University Lecturer post is still undated. The Aalto research portal (re-read) gives only the current title (University Lecturer, Information and Service Management / Management Science), the doctoral award date 30 Mar 2026 and master's degrees of 2019 and 2020, plus project memberships during the doctorate (2019-2023 and a 2024 project); it has no position history. ORCID 0000-0003-2221-8302 still has only undated Aalto employment and education entries added by Aalto. No source says when the lectureship began relative to the March 2026 degree or whether another post came first. Earlier review (2026-10-17): doctorate complete (award 30 March 2026, defence 27 February 2026) and now a University Lecturer, but no source dates the lectureship.",
       "sources": [
         {
           "url": "https://research.aalto.fi/en/persons/jussi-leppinen",
-          "title": "Aalto research portal — Jussi Leppinen",
-          "notes": "Current University Lecturer; doctoral degree (Engineering and Technology) award date 30 Mar 2026; doctoral thesis 'Decision models for preventive maintenance of technical systems' (2026). Project memberships 2019-2030 are not employment titles."
-        },
-        {
-          "url": "https://www.aalto.fi/en/events/public-defence-in-the-field-of-systems-and-operations-research-msc-jussi-leppinen",
-          "title": "Aalto University — Public defence in Systems and Operations Research, Jussi Leppinen",
-          "notes": "Defence 27 February 2026, Department of Mathematics and Systems Analysis, School of Science (page redirected to the -msc-tech- URL)."
-        },
-        {
-          "url": "https://www.aalto.fi/en/people/jussi-leppinen",
-          "title": "Aalto University people page — Jussi Leppinen",
-          "notes": "Current title University Lecturer only; no dates."
+          "title": "Aalto research portal, Jussi Leppinen",
+          "notes": "Re-read with curl: titles, degree award dates, projects; no position dates."
         },
         {
           "url": "https://orcid.org/0000-0003-2221-8302",
-          "title": "ORCID record 0000-0003-2221-8302 (Jussi Leppinen)",
-          "notes": "Read through public API; only undated Aalto University employment and education entries added by Aalto."
+          "title": "ORCID, Jussi Leppinen",
+          "notes": "Public API: undated Aalto employment and education entries only."
+        },
+        {
+          "url": "https://www.aalto.fi/en/events/public-defence-in-the-field-of-systems-and-operations-research-msc-jussi-leppinen",
+          "title": "Aalto public defence announcement (earlier review)",
+          "notes": "Earlier review: defence 27 February 2026."
+        },
+        {
+          "url": "https://www.aalto.fi/en/people/jussi-leppinen",
+          "title": "Aalto people page (earlier review)",
+          "notes": "University Lecturer; no dates."
         }
       ],
       "source": "faculty-page"
@@ -49134,22 +49652,22 @@
       "name": "Jyrki Wallenius",
       "status": "unresolved",
       "checkedAt": "2026-10-17",
-      "reason": "Aaltodoc records his monograph doctoral dissertation 'Interactive multiple criteria decision methods: an investigation and an approach' at the Helsinki School of Economics (now Aalto School of Business), defended 1975-09-19. The Aalto research portal shows him as professor emeritus with publications from 1975 but no employment chronology. His ORCID record has only an emeritus professorship from 2017-11 and an odd education entry ('PhD Professor', ending 2017-10) that is not a degree record. No dated CV was opened, so the first post-PhD job is not established.",
+      "reason": "No dated CV was found. Aaltodoc (searched through its API) still gives the monograph dissertation 'Interactive multiple criteria decision methods: an investigation and an approach', Helsinki School of Economics, defended 1975-09-19. The Aalto research portal (re-read) lists him as Professor Emeritus with outputs from 1975 and prizes (including an HSE bronze medal, 1999) but no positions or education, and ORCID 0000-0002-6851-2809 (the only ORCID match) has only the 2017 emeritus entry. No MCDM Society or other dated biography could be opened in this pass, so the first post after September 1975 remains unknown. Earlier review (2026-10-17): Aaltodoc dates the 1975 defence, but neither the Aalto portal nor ORCID gives an employment chronology.",
       "sources": [
         {
           "url": "https://aaltodoc.aalto.fi/handle/123456789/33233",
-          "title": "Aaltodoc - Interactive multiple criteria decision methods (Wallenius, Jyrki), doctoral thesis",
-          "notes": "Monograph dissertation, Kauppakorkeakoulu / School of Business; defence date 1975-09-19."
+          "title": "Aaltodoc dissertation record, Wallenius 1975",
+          "notes": "Re-confirmed through the Aaltodoc search API: monograph dissertation, defence 1975-09-19."
         },
         {
           "url": "https://research.aalto.fi/en/persons/jyrki-wallenius",
-          "title": "Jyrki Wallenius - Aalto University research portal",
-          "notes": "Professor Emeritus, Department of Information and Service Management; no positions or education listed."
+          "title": "Aalto research portal, Jyrki Wallenius",
+          "notes": "Re-read with curl: Professor Emeritus; no positions."
         },
         {
           "url": "https://orcid.org/0000-0002-6851-2809",
-          "title": "ORCID record 0000-0002-6851-2809 (Jyrki Wallenius)",
-          "notes": "Read through the public ORCID API. Employment: Aalto Emeritus Professor from 2017-11 only."
+          "title": "ORCID, Jyrki Wallenius (earlier review)",
+          "notes": "Emeritus professorship from 2017-11 only."
         }
       ],
       "source": "faculty-page"
@@ -49159,27 +49677,27 @@
       "name": "Lauri Kuula",
       "status": "unresolved",
       "checkedAt": "2026-10-17",
-      "reason": "Aaltodoc records his article-based doctoral dissertation on procurement and international recruitment in Finnish social and health care (Aalto University Doctoral Theses series, 2026), defended 2026-03-06, so the doctorate appears complete. His research-portal education list still shows only a Master's (2023) and a Bachelor's (2021) in Business and Economics. He is now a University Lecturer at Aalto, but no source gives the start date of that post, so it is unknown whether it began before or after the March 2026 defence. ORCID 0009-0001-3614-3228 has one undated Aalto employment entry. The first post-PhD job is not established.",
+      "reason": "The start of his University Lecturer post is still undated. The Aalto research portal (re-read) shows the current title University Lecturer (Information and Service Management, Logistics) and education only to the Master's of 24 Apr 2023, without a position history; ORCID 0009-0001-3614-3228 has one undated Aalto entry. No source says whether the lectureship began before or after the 6 March 2026 defence. Earlier review (2026-10-17): Aaltodoc dates his article-based dissertation defence to 6 March 2026, but no source gives the start date of the lectureship.",
       "sources": [
         {
-          "url": "https://www.aalto.fi/en/people/lauri-kuula",
-          "title": "Lauri Kuula - Aalto University people page",
-          "notes": "University Lecturer, Logistics; no dates."
-        },
-        {
           "url": "https://research.aalto.fi/en/persons/1177a070-9e94-4eb3-aec1-6e299841fee6",
-          "title": "Lauri Kuula - Aalto research portal",
-          "notes": "Education: Master's 24 Apr 2023, Bachelor's 31 Dec 2021; research output includes a 2026 doctoral thesis."
+          "title": "Aalto research portal, Lauri Kuula",
+          "notes": "Re-read with curl: University Lecturer; Master's 24 Apr 2023, Bachelor's 31 Dec 2021; no position dates."
         },
         {
           "url": "https://aaltodoc.aalto.fi/items/9010fe28-5664-4a20-b889-5dcd4d79e941",
-          "title": "Aaltodoc - Kuula, Managing resources in the Finnish social and health care sector (doctoral thesis)",
-          "notes": "Reached from urn.fi/URN:ISBN:978-952-64-3031-7. Article dissertation; defence date 2026-03-06."
+          "title": "Aaltodoc dissertation record (earlier review)",
+          "notes": "Earlier review: article dissertation, defence 2026-03-06."
         },
         {
           "url": "https://orcid.org/0009-0001-3614-3228",
-          "title": "ORCID record 0009-0001-3614-3228 (Lauri Kuula)",
-          "notes": "Read through the public ORCID API; one undated Aalto employment entry."
+          "title": "ORCID, Lauri Kuula (earlier review)",
+          "notes": "One undated Aalto employment entry."
+        },
+        {
+          "url": "https://www.aalto.fi/en/people/lauri-kuula",
+          "title": "Aalto people page (earlier review)",
+          "notes": "University Lecturer, Logistics; no dates."
         }
       ],
       "source": "faculty-page"
@@ -49249,17 +49767,22 @@
       "name": "Pekka Malo",
       "status": "unresolved",
       "checkedAt": "2026-10-17",
-      "reason": "The Aalto research portal gives a doctoral degree (Business and Economics) award date of 21 September 2007 and a biography saying he holds a PhD in quantitative methods (with an MSc in mathematics) from the University of Helsinki, but it gives no employment chronology beyond two external positions (visiting scholar, Michigan State University, January-September 2013; algorithm advisor, Tieto Oyj, 2016-2017). His publications at Aalto/Helsinki School of Economics begin in 2005, so he may have been employed there before the degree; no opened source dates his first post-PhD appointment. ORCID 0000-0002-1583-015X has only an undated Aalto entry.",
+      "reason": "First post still undated, and the awarding school differs from the faculty page's statement. Aaltodoc records his article dissertation 'Higher order moments in distribution modelling with applications to risk management' in the Acta Universitatis Oeconomicae Helsingiensis series, published by the Helsinki School of Economics (School of Business), defended 2007-08-08; the Aalto portal gives the doctoral award date 21 Sept 2007 (Business and Economics) and an HSE award for a high-quality thesis (2007). So the doctorate appears to be from the Helsinki School of Economics, not the University of Helsinki named on the faculty page (the biography's wording is ambiguous: 'PhD in quantitative methods and M.Sc. in mathematics from University of Helsinki'). The portal's only dated positions are external (Michigan State visiting scholar January-September 2013; Tieto algorithm advisor 2016-2017); his outputs at HSE begin in 2005, so he probably worked there before the degree, and no source dates his first post-PhD appointment. ORCID 0000-0002-1583-015X has one undated Aalto entry. Earlier review (2026-10-17): the portal dated the September 2007 doctorate but gave no employment chronology beyond two later external positions.",
       "sources": [
         {
+          "url": "https://aaltodoc.aalto.fi/handle/123456789/33322",
+          "title": "Aaltodoc: Higher order moments in distribution modelling (Malo, 2007)",
+          "notes": "Item metadata read through the Aaltodoc API: publisher Helsinki School of Economics; school Kauppakorkeakoulu/School of Business; defence 2007-08-08."
+        },
+        {
           "url": "https://research.aalto.fi/en/persons/pekka-malo",
-          "title": "Aalto research portal — Pekka Malo",
-          "notes": "Tenured Associate Professor of Statistics; doctoral degree award date 21 Sept 2007; external positions dated 2013 and 2016-2017 only. Degree field listed as Business and Economics while the bio names quantitative methods at the University of Helsinki; awarding institution wording is ambiguous."
+          "title": "Aalto research portal, Pekka Malo",
+          "notes": "Re-read with curl: doctoral award date 21 Sept 2007; external positions 2013 and 2016-2017 only."
         },
         {
           "url": "https://orcid.org/0000-0002-1583-015X",
-          "title": "ORCID record 0000-0002-1583-015X (Pekka Malo)",
-          "notes": "Read through public API; single undated Aalto University employment entry."
+          "title": "ORCID, Pekka Malo (earlier review)",
+          "notes": "One undated Aalto entry."
         }
       ],
       "source": "faculty-page"
@@ -49269,27 +49792,27 @@
       "name": "Sami Helander",
       "status": "unresolved",
       "checkedAt": "2026-10-17",
-      "reason": "The doctorate is documented: the Aalto research portal lists his doctoral thesis 'New approaches for analysing functional data - a focus on shape' (Aalto University, 2022), and Aaltodoc gives the School of Science, Department of Mathematics and Systems Analysis, with defence date 2022-08-25. He is now a University Lecturer in Management Science at Aalto, but no source gives when that post began or what he did between August 2022 and the lectureship. The portal education list shows only a 2018 master's in natural sciences, and ORCID 0000-0001-6550-1381 has no entries. The first post-PhD job is not established.",
+      "reason": "Still no dated post after the August 2022 defence. The Aalto research portal (re-read) shows the current title University Lecturer (Information and Service Management, Management Science) and only a 2018 master's in its education list, with no position history or post-2022 project memberships; ORCID 0000-0001-6550-1381 has no entries. When the lectureship began, and what he did between August 2022 and it, remain unknown. Earlier review (2026-10-17): Aaltodoc dates his School of Science dissertation defence to 25 August 2022, but nothing dates the University Lecturer post or any intermediate job.",
       "sources": [
         {
-          "url": "https://www.aalto.fi/en/people/sami-helander",
-          "title": "Sami Helander - Aalto University people page",
-          "notes": "University Lecturer; no dates."
-        },
-        {
           "url": "https://research.aalto.fi/en/persons/sami-helander/",
-          "title": "Sami Helander - Aalto research portal",
-          "notes": "University Lecturer, Department of Information and Service Management; master's 16 Nov 2018; 2022 doctoral thesis in research output."
+          "title": "Aalto research portal, Sami Helander",
+          "notes": "Re-read with curl: University Lecturer; master's 16 Nov 2018; no position dates."
         },
         {
           "url": "https://aaltodoc.aalto.fi/items/be00e057-f895-4441-a15b-a480f4bb1854",
-          "title": "Aaltodoc - Helander, New approaches for analysing functional data (doctoral thesis)",
-          "notes": "Reached from urn.fi/URN:ISBN:978-952-64-0882-8. School of Science; defence date 2022-08-25."
+          "title": "Aaltodoc dissertation record (earlier review)",
+          "notes": "Earlier review: School of Science, defence 2022-08-25."
         },
         {
           "url": "https://orcid.org/0000-0001-6550-1381",
-          "title": "ORCID record 0000-0001-6550-1381 (Sami Helander)",
-          "notes": "Read through the public ORCID API; no affiliations recorded."
+          "title": "ORCID, Sami Helander (earlier review)",
+          "notes": "No affiliations recorded."
+        },
+        {
+          "url": "https://www.aalto.fi/en/people/sami-helander",
+          "title": "Aalto people page (earlier review)",
+          "notes": "University Lecturer; no dates."
         }
       ],
       "source": "faculty-page"
@@ -49707,22 +50230,27 @@
       "name": "Douglas Montgomery",
       "status": "unresolved",
       "checkedAt": "2026-10-17",
-      "reason": "The ASU profile confirms Ph.D. Industrial Engineering, Virginia Tech 1969, but gives no employment chronology and links no CV. The ASU Regents' Professor announcement (June 2006) and his Coursera instructor bio say only that before ASU (since 1988) he was at the University of Washington and, earlier, a professor at Georgia Tech, and that he has industrial experience with Union Carbide and Eli Lilly, all undated. Search snippets of publisher bios give Georgia Tech 1969-1984, but those pages could not be opened (gov.wiley.com did not resolve; the www.wiley.com path returned 404; a Wikipedia API request returned HTTP 429). Because the industry roles are undated, the first post-PhD job cannot be established.",
+      "reason": "Still no dated chronology. The ASU profile (rendered in a headless browser) gives only Ph.D. Industrial Engineering, Virginia Tech 1969 (M.S. 1967, B.S. 1965) and no positions or CV. His old ASU personal pages (public.asu.edu/~dcmontgo/) now sit behind a Cloudflare Access sign-in, and Wikipedia's raw text could not be retrieved for him (the title tried redirects to a namesake; the variant returned 404); in any case an encyclopedia entry would be discovery only. The undated industrial experience with Union Carbide and Eli Lilly means the first post after 1969 cannot be placed. Earlier review (2026-10-17): the ASU profile, the 2006 Regents' Professor release and a Coursera bio name Georgia Tech, Washington, Union Carbide and Eli Lilly without dates; publisher bios giving Georgia Tech 1969-1984 could not be opened.",
       "sources": [
         {
           "url": "https://search.asu.edu/profile/10123",
-          "title": "ASU Search — Douglas Montgomery",
-          "notes": "Regents Professor of Industrial Engineering and Statistics; education Ph.D. IE Virginia Tech 1969, M.S. 1967, B.S. 1965; no dated positions before ASU."
+          "title": "ASU profile, Douglas Montgomery",
+          "notes": "Re-read in a headless browser: degrees with years only."
+        },
+        {
+          "url": "https://www.public.asu.edu/~dcmontgo/",
+          "title": "Old ASU personal page",
+          "notes": "Cloudflare Access sign-in page."
         },
         {
           "url": "https://news.engineering.asu.edu/2006/06/industrial-engineer-douglas-montgomery-named-asu-regents-professor/",
-          "title": "ASU Engineering News — Industrial engineer Douglas Montgomery named ASU Regents' Professor (June 2006)",
-          "notes": "At ASU since 1988; previously director of industrial engineering and professor of mechanical engineering at the University of Washington and professor at Georgia Tech; undated."
+          "title": "ASU Regents' Professor release, June 2006 (earlier review)",
+          "notes": "Earlier review: ASU since 1988; previously Washington and Georgia Tech; undated."
         },
         {
           "url": "https://www.coursera.org/instructor/~47295909",
-          "title": "Coursera — Douglas C. Montgomery, instructor bio",
-          "notes": "Undated: UW Fluke Distinguished Professor; Georgia Tech professor; industrial experience with Union Carbide and Eli Lilly."
+          "title": "Coursera instructor bio (earlier review)",
+          "notes": "Earlier review: undated Georgia Tech, Washington, Union Carbide and Eli Lilly."
         }
       ],
       "source": "faculty-page"
@@ -49788,32 +50316,27 @@
       "name": "Teresa Wu",
       "status": "unresolved",
       "checkedAt": "2026-10-17",
-      "reason": "Her ORCID record gives PhD, Industrial Engineering, University of Iowa, 1998-01 to 2001-07, but its only employment entry is Professor, Arizona State University, from 2014. The ASU profile gives no dated appointment history beyond an NSF CAREER award (2003), an ASU tenure and promotion exemplar recognition (2006) and a 2018 Mayo Clinic courtesy appointment, which suggest but do not establish an ASU assistant professorship from about 2001. No CV was found: the faculty.engineering.asu.edu pages returned 404, the ASU Pure profile and Wu lab page have no career dates, and one web search found no dated CV. Gap: the employer and start date of the first job after July 2001.",
+      "reason": "The first post after the July 2001 PhD is still undated. The NSF award database (public API) shows her earliest NSF award as CAREER award 0239276, 'Design and Implementation of a Virtual Product Development Environment', at Arizona State University starting 1 March 2003, so she held an ASU faculty post by the 2002 proposal cycle, but no source gives her ASU start date or rules out a post between July 2001 and then. The ASU profile (re-read) still gives only the Iowa PhD (no year), the CAREER award (2003) and the 2006 tenure exemplar; ORCID gives PhD Iowa 1998-01 to 2001-07 and ASU from 2014 only; one web search found no biography or CV. Earlier review (2026-10-17): ORCID dated the Iowa PhD to July 2001, but no source dated an appointment before 2014, and ASU pages and the Wu lab page gave no career dates.",
       "sources": [
         {
+          "url": "https://api.nsf.gov/services/v1/awards.json?pdPIName=Teresa+Wu&printFields=id,title,awardeeName,startDate,piFirstName,piLastName&rpp=50",
+          "title": "NSF award search API, PI Teresa Wu",
+          "notes": "Earliest award: 0239276 CAREER, Arizona State University, start 03/01/2003."
+        },
+        {
           "url": "https://search.asu.edu/profile/342678",
-          "title": "Teresa Wu - ASU Search profile",
-          "notes": "Ph.D. Industrial Engineering, University of Iowa (no year); current titles; CAREER 2003; tenure exemplar 2006; no appointment dates."
+          "title": "ASU profile, Teresa Wu",
+          "notes": "Re-read in a headless browser: Ph.D. IE Iowa; CAREER 2003; tenure exemplar 2006; no dates of appointment."
         },
         {
           "url": "https://orcid.org/0000-0002-0529-7048",
-          "title": "ORCID - Teresa Wu",
-          "notes": "Public API read: PhD Iowa 1998-01 to 2001-07; employment ASU Professor from 2014 only."
-        },
-        {
-          "url": "https://asu.elsevierpure.com/en/persons/teresa-wu",
-          "title": "Teresa Wu - ASU Pure research profile",
-          "notes": "Read with curl; no appointment history."
-        },
-        {
-          "url": "https://labs.engineering.asu.edu/wulab/people/",
-          "title": "Wu Lab - People",
-          "notes": "Lists students and alumni; no career dates for Wu."
+          "title": "ORCID, Teresa Wu (earlier review)",
+          "notes": "PhD Iowa 1998-01 to 2001-07; ASU Professor from 2014."
         },
         {
           "url": "https://faculty.engineering.asu.edu/teresawu/",
-          "title": "ASU engineering faculty site (attempted)",
-          "notes": "Returned HTTP 404."
+          "title": "Old ASU faculty page (earlier review)",
+          "notes": "Earlier review: HTTP 404."
         }
       ],
       "source": "faculty-page"
@@ -66849,17 +67372,32 @@
       "name": "David Wanik",
       "status": "unresolved",
       "checkedAt": "2026-10-17",
-      "reason": "The March 2026 CV linked from the UConn profile dates the UConn Environmental Engineering PhD to August 2015 and gives a single entry, University of Connecticut, Department of Civil & Environmental Engineering, August 2011 - October 2017, 'Assistant Research Professor, Center Manager' (co-leading storm outage modeling research, teaching a graduate predictive analytics class and concurrently managing the Eversource Energy Center), followed by Hartford Steam Boiler/Munich Re, Senior Modeler, November 2017 - August 2019, and UConn OPIM from 2019. The 2011 start coincides with the end of his BS (August 2011) and the start of his graduate study, so the entry spans his MS and PhD research years; an assistant research professorship is a post-doctoral rank, and the CV does not say when that title or the center-manager role began. A new UConn research-faculty appointment around the August 2015 degree is therefore likely but undated, and the evidence does not establish that the November 2017 Hartford Steam Boiler post was the first post-PhD job. A dated appointment record for the UConn assistant research professorship is needed. Verifier: first-job order not established (an undated post-PhD UConn research professorship probably precedes the HSB job).",
+      "reason": "The start of his UConn assistant research professorship is still undated. Re-reading the March 2026 CV (PhD Environmental Engineering, August 2015; single UConn entry 'August 2011-October 2017, Assistant Research Professor, Center Manager'; then Hartford Steam Boiler/Munich Re from November 2017) and the UConn Today new-faculty article of August 2019 (PhD 2015; 'has previously served as an assistant research professor in the Department of Civil & Environmental Engineering at UConn, as an adjunct professor of business, and as a data scientist at Hartford Steam Boiler') gives no start date for the research professorship. ORCID 0000-0003-1992-8979 is empty, and a UConn Today search found only a 2015 graduate poster prize (as a student). Because a post-doctoral UConn research title probably began between 2015 and 2017, the November 2017 HSB job cannot be called the first post-PhD job. Earlier review (2026-10-17): the CV's single 2011-2017 UConn entry spans his graduate years and an undated post-PhD assistant research professorship, so the first job's start is undated.",
       "sources": [
         {
           "url": "https://www.business.uconn.edu/wp-content/uploads/sites/969/2019/08/CV_Dave_Wanik_March_2026_CV.pdf",
-          "title": "David W. Wanik CV (March 2026; linked from the UConn profile on the www-business.media.uconn.edu host, read from the same path on www.business.uconn.edu because the media host failed TLS through the proxy and returned HTTP 503 to the fetch tool)",
-          "notes": "Education and Work Experience sections read."
+          "title": "David Wanik CV, March 2026",
+          "notes": "Re-downloaded; Education and Work Experience re-read; grants list his roles from 2015 without titles."
+        },
+        {
+          "url": "https://today.uconn.edu/2019/08/new-business-school-faculty-2019/",
+          "title": "UConn Today, New business school faculty 2019",
+          "notes": "Joins OPIM as assistant professor-in-residence; PhD 2015; earlier UConn assistant research professor, adjunct and HSB data scientist roles, undated."
+        },
+        {
+          "url": "https://today.uconn.edu/?s=Wanik",
+          "title": "UConn Today search for Wanik",
+          "notes": "No article dating the research professorship."
         },
         {
           "url": "https://www.business.uconn.edu/person/david-wanik/",
-          "title": "UConn School of Business - David Wanik",
-          "notes": "PhD, MS and BS from UConn without years; former inaugural Eversource Energy Center manager; links CV."
+          "title": "UConn School of Business profile",
+          "notes": "Earlier review: degrees without years; links CV."
+        },
+        {
+          "url": "https://orcid.org/0000-0003-1992-8979",
+          "title": "ORCID, David Wanik",
+          "notes": "Public API: no affiliations or works."
         }
       ],
       "source": "faculty-page"
@@ -72444,15 +72982,25 @@
       "facultyId": "roster:university-of-utah:alex-schmid",
       "name": "Alex Schmid",
       "status": "unresolved",
-      "reason": "The Eccles profile (published 1 July 2026 according to its page metadata) gives only Assistant Professor, Department of Operations and Information Systems, tenure track, with an email address: no degree, prior positions or links. ORCID search found no record tied to Utah or operations, and one web search found only the department's tenure-track postings for July 2026 starts, nothing about this person. Doctorate, degree date and whether Utah is the first post-PhD job are unknown; a July 2026 start is suggested by the page date but not documented.",
+      "checkedAt": "2026-10-17",
+      "reason": "Still no evidence of the doctorate or of any earlier post. The Eccles profile, re-read with curl, is unchanged (Assistant Professor, Operations and Information Systems, Faculty, Tenure Track; schema datePublished 2026-07-01) and links no CV or personal site. ORCID searches found only an empty Alex Schmid record (0000-0003-2492-3152) and an unrelated emeritus professor; nothing tied to Utah or operations. One web search for job-market candidate pages found nothing about this person, and the OperationsAcademia candidate and previous-market pages do not list the name. Gap: PhD institution and year, and whether Utah (apparently from July 2026) is the first post-PhD job. Earlier review (2026-10-17): the Eccles page gives only the tenure-track title, ORCID had nothing, and a July 2026 start is suggested by the page date but not documented.",
       "sources": [
         {
           "url": "https://eccles.utah.edu/team/alex-schmid/",
-          "title": "Alex Schmid, Eccles School profile",
-          "notes": "Read as a plain HTML download; title and tenure-track tag only; schema metadata shows datePublished 2026-07-01."
+          "title": "Eccles School profile, Alex Schmid",
+          "notes": "Re-read with curl; title and tenure-track tag; datePublished and dateModified 2026-07-01."
+        },
+        {
+          "url": "https://orcid.org/0000-0003-2492-3152",
+          "title": "ORCID, Alex Schmid",
+          "notes": "Public API: no affiliations or works; identity not established."
+        },
+        {
+          "url": "https://operationsacademia.org/previous-markets",
+          "title": "OperationsAcademia previous markets",
+          "notes": "Read with curl; the name does not appear."
         }
       ],
-      "checkedAt": "2026-10-17",
       "source": "faculty-page"
     },
     {
@@ -75272,32 +75820,32 @@
       "name": "Abbas Keramati",
       "status": "unresolved",
       "checkedAt": "2026-10-17",
-      "reason": "Identity not established. Laurier's ODS directory lists 'Abbas Keramati, Assistant Professor' with no profile link (the guessed profile URL returns Laurier's 404 page), and no opened page ties that listing to a particular person. A namesake with a full dated CV exists: the University at Buffalo ISE CV (last updated July 2025) of Abbas Keramati, Ph.D. Industrial Engineering, Tarbiat Modares University, March 2005, lists Quality manager, Iran Test and Research Auto Center 2002-2005; Head of the Department of Technology Management, Research Institute for Energy Management and Planning (affiliated with the University of Tehran) 2005-2006; Assistant Professor, University of Tehran 2006-2011; and later Toronto Metropolitan University (limited-term assistant professor 2017-2021) and Buffalo (2022 onward). But Buffalo's official profile still lists him as Buffalo's Associate Professor of Teaching, his ORCID lists only Buffalo (from 2023-07), and nothing opened records a move to Laurier. If an integrator confirms he is the Laurier person, his first new post-PhD job would be the 2005-2006 department-head post (start month not stated, so its timing against the March 2005 degree is unknown). One web search (name + Laurier) found nothing relevant.",
+      "reason": "Identity still not established. The Laurier faculty-and-staff page (re-read with curl) still lists 'Abbas Keramati, Assistant Professor' under Operations and Decision Sciences with no profile link, and the profile URL variants tried (faculty-profiles/abbas-keramati.html, keramati-abbas/index.html) return Laurier's 404 page. An ORCID search finds two records: 0000-0001-5897-2935 (University at Buffalo, Associate Professor of Teaching from 2023-07, no Laurier entry) and 0000-0002-0657-0173 (empty). Nothing opened ties the Laurier listing to the Buffalo CV holder, so no first job can be assigned. Earlier review (2026-10-17): Laurier lists him without a profile, and the only dated CV found belongs to a Buffalo namesake (PhD Tarbiat Modares 2005; department head 2005-2006, University of Tehran 2006-2011) whose own records never mention Laurier.",
       "sources": [
         {
-          "url": "https://www.wlu.ca/academics/faculties/lazaridis-school-of-business-and-economics/faculty-and-staff.html#ODS",
-          "title": "Laurier Lazaridis School faculty and staff directory, ODS section",
-          "notes": "Read as a plain HTML download; lists Abbas Keramati, Assistant Professor, without a link or profile."
+          "url": "https://www.wlu.ca/academics/faculties/lazaridis-school-of-business-and-economics/faculty-and-staff.html",
+          "title": "Laurier Lazaridis School faculty and staff",
+          "notes": "Re-read with curl: 'Abbas Keramati, Assistant Professor' without a link."
         },
         {
           "url": "https://www.wlu.ca/academics/faculties/lazaridis-school-of-business-and-economics/faculty-profiles/abbas-keramati/index.html",
-          "title": "Guessed Laurier profile URL for Abbas Keramati",
-          "notes": "Returned Laurier's '404: Page Not Found' page."
-        },
-        {
-          "url": "https://engineering.buffalo.edu/industrial-systems/people/faculty-directory.host.html/content/shared/engineering/industrial-systems/profiles/faculty/keramati-abbas.detail.html",
-          "title": "Abbas Keramati, University at Buffalo ISE faculty profile",
-          "notes": "Lists him as Associate Professor of Teaching at Buffalo; PhD Industrial Engineering, Tarbiat Modares University, 2005; links the CV."
-        },
-        {
-          "url": "https://engineering.buffalo.edu/content/dam/engineering/industrial-systems/People/faculty-cvs/SEAS-CV-Keramati-2025.pdf",
-          "title": "Abbas Keramati CV (University at Buffalo, last updated July 2025)",
-          "notes": "Plain curl was refused (403); read the PDF as fetched by the fetch tool and extracted with pdftotext. Education and professional-experience sections only; no mention of Laurier."
+          "title": "Laurier profile (guessed URL)",
+          "notes": "Laurier 404 page (earlier review and variants now)."
         },
         {
           "url": "https://orcid.org/0000-0001-5897-2935",
-          "title": "Abbas Keramati, ORCID record",
-          "notes": "Read through the public API; one employment, University at Buffalo, Associate Professor of Teaching, from 2023-07; no education entries."
+          "title": "ORCID, Abbas Keramati (Buffalo)",
+          "notes": "Public API: University at Buffalo, Associate Professor of Teaching, from 2023-07; no Laurier entry."
+        },
+        {
+          "url": "https://orcid.org/0000-0002-0657-0173",
+          "title": "ORCID, Abbas Keramati (second record)",
+          "notes": "Public API: no affiliations or works."
+        },
+        {
+          "url": "https://engineering.buffalo.edu/content/dam/engineering/industrial-systems/People/faculty-cvs/SEAS-CV-Keramati-2025.pdf",
+          "title": "Buffalo ISE CV of Abbas Keramati (earlier review)",
+          "notes": "Earlier review: PhD IE Tarbiat Modares March 2005; dated posts in Iran, Toronto Metropolitan and Buffalo; no Laurier."
         }
       ],
       "source": "faculty-page"
