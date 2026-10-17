@@ -4,24 +4,24 @@
     "updatedAt": "2026-10-17",
     "total": 3161,
     "counts": {
-      "unresolved": 1406,
-      "verified": 1751,
+      "unresolved": 1391,
+      "verified": 1766,
       "not-yet-completed-phd": 4
     },
     "bySource": {
       "omlist": {
         "total": 2149,
         "counts": {
-          "unresolved": 916,
-          "verified": 1232,
+          "unresolved": 902,
+          "verified": 1246,
           "not-yet-completed-phd": 1
         }
       },
       "faculty-page": {
         "total": 1012,
         "counts": {
-          "verified": 519,
-          "unresolved": 490,
+          "verified": 520,
+          "unresolved": 489,
           "not-yet-completed-phd": 3
         }
       }
@@ -195,13 +195,23 @@
       "facultyId": "omlist-4e1a07ff62c2c1d2",
       "name": "Ismail Abushaikha",
       "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "Cranfield biography lists doctorate and academic and industry experience without dated employment history.",
+      "checkedAt": "2026-10-17",
+      "reason": "Second pass: the Cranfield biography (plain curl) states the Heriot-Watt PhD and MSc, academic and executive-education experience in the UK, Germany, Belgium and the Middle East, and industry roles at Aramex and Goodyear, all undated. ORCID 0000-0001-5011-2578 has a single undated Cranfield employment entry added by Cranfield Elements. The Heriot-Watt repository search answers 403 to curl. The 2014 degree date and the first post-PhD employer and its start year remain undocumented. Earlier review (2026-10-16): the Cranfield biography lists the doctorate and academic and industry experience without dated employment history.",
       "sources": [
         {
           "url": "https://www.cranfield.ac.uk/som/people/dr-ismail-abushaikha-34086966",
-          "title": "Ismail Abushaikha public academic profile",
-          "notes": "Cranfield biography lists doctorate and academic and industry experience without dated employment history."
+          "title": "Dr Ismail Abushaikha - Cranfield University",
+          "notes": "Read with plain curl. PhD and MSc Heriot-Watt; academic experience in UK, Germany, Belgium and Middle East; Aramex and Goodyear industry roles; no dates."
+        },
+        {
+          "url": "https://orcid.org/0000-0001-5011-2578",
+          "title": "ORCID record 0000-0001-5011-2578 (public API)",
+          "notes": "One undated employment entry (Cranfield University, via Cranfield Elements)."
+        },
+        {
+          "url": "https://www.ros.hw.ac.uk/discover?query=Abushaikha",
+          "title": "Heriot-Watt Research Gateway search",
+          "notes": "Attempted; 403 to plain curl."
         }
       ],
       "source": "omlist"
@@ -400,15 +410,30 @@
       "facultyId": "omlist-00bec30250605b3e",
       "name": "Niels Agatz",
       "status": "unresolved",
-      "checkedAt": "2026-10-16",
+      "checkedAt": "2026-10-17",
+      "reason": "Second pass: the EUR Pure record of his doctoral thesis 'Demand management in E-fulfillment' (supervisor van Nunen, co-supervisor Fleischmann) gives the award date 2 April 2009 at Erasmus University Rotterdam, confirming the earlier finding that the imported MIT institution is wrong. His RSM and Pure profiles mention an NWO Rubicon grant and visiting positions at Georgia Tech and the Pontifical Catholic University of Chile, all undated, and ORCID 0000-0003-3514-201X is empty. The first post-PhD post (a Rubicon-funded stay abroad or an RSM appointment) and its start year remain undocumented. Earlier review (2026-10-16): the university biography confirms the Erasmus PhD, contradicting the imported MIT institution; the Georgia Tech visit is undated.",
       "sources": [
         {
+          "url": "https://pure.eur.nl/en/publications/demand-management-in-e-fulfillment/",
+          "title": "Demand management in E-fulfillment (EUR Pure)",
+          "notes": "Read with plain curl. Doctoral Thesis, Erasmus University Rotterdam; award date 2 Apr 2009; hdl 1765/15425."
+        },
+        {
+          "url": "https://pure.eur.nl/en/persons/niels-agatz",
+          "title": "prof.dr.ir. Niels Agatz - EUR Pure",
+          "notes": "Read with plain curl. PhD from RSM; NWO Rubicon grant; visiting positions at Georgia Tech and PUC Chile (undated)."
+        },
+        {
           "url": "https://www.rsm.nl/people/niels-agatz/",
-          "title": "Erasmus RSM — Niels Agatz profile",
-          "notes": "University biography confirms Erasmus PhD, contradicting imported MIT degree institution. Georgia Tech visit is listed without dates or complete career chronology; first job unresolved."
+          "title": "Niels Agatz - RSM",
+          "notes": "Read with plain curl. Same biography; no dates or CV."
+        },
+        {
+          "url": "https://orcid.org/0000-0003-3514-201X",
+          "title": "ORCID record 0000-0003-3514-201X (public API)",
+          "notes": "Name only; no entries."
         }
       ],
-      "reason": "University biography confirms Erasmus PhD, contradicting imported MIT degree institution. Georgia Tech visit is listed without dates or complete career chronology; first job unresolved.",
       "source": "omlist"
     },
     {
@@ -1247,14 +1272,27 @@
     {
       "facultyId": "omlist-f0c6dc61660b36b6",
       "name": "Nezih Altay",
-      "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "The DePaul profile dates doctorate to 2001 and teaching since 1999 without employer chronology around completion.",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "employer": "University of Richmond",
+      "position": "Assistant Professor, Management",
+      "placementYear": 2000,
+      "category": "tenure-track",
+      "evidenceUrl": "https://orcid.org/0000-0002-1264-6859",
+      "evidenceNote": "The self-maintained ORCID record lists the Texas A&M PhD from 1996 to 2001, Assistant Professor of Management at the University of Richmond from 2000 to 2009 and Professor at DePaul from 2009. The DePaul profile gives the PhD in Operations Management, Texas A&M, 2001. The Richmond assistant professorship began in 2000, before the 2001 degree, and was not retitled on completion (overlap noted); his teaching since 1999 refers to teaching during the doctorate. A plain assistant professorship at a North American business school is recorded as tenure-track by convention.",
+      "phdYearVerified": 2001,
+      "phdInstitutionVerified": "Texas A&M University",
+      "reason": "Second pass: the ORCID public API record gives the dated sequence, and the DePaul profile (plain curl) states the 2001 Texas A&M PhD. The months are not given, so the gap between the 2000 start and the 2001 degree cannot be measured; the post is recorded under the rule for assistant professorships begun shortly before completion and not retitled.",
       "sources": [
         {
+          "url": "https://orcid.org/0000-0002-1264-6859",
+          "title": "ORCID record 0000-0002-1264-6859 (public API)",
+          "notes": "Education: Texas A&M PhD 1996-2001. Employment: University of Richmond, Management, Assistant Professor 2000-2009; DePaul, Management, Professor from 2009."
+        },
+        {
           "url": "https://www.depaul.edu/faculty/nezih-altay-2",
-          "title": "Nezih Altay academic profile",
-          "notes": "The DePaul profile dates doctorate to 2001 and teaching since 1999 without employer chronology around completion."
+          "title": "Nezih Altay - DePaul University",
+          "notes": "Read with plain curl. PhD Operations Management, Texas A&M University, 2001; MBA UT Pan American 1996; teaching since 1999."
         }
       ],
       "source": "omlist"
@@ -4799,13 +4837,18 @@
       "facultyId": "omlist-2b052b0e917c7ca6",
       "name": "Michael Bourlakis",
       "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "Cranfield biography covers current leadership and research without doctoral date or earliest employment chronology.",
+      "checkedAt": "2026-10-17",
+      "reason": "Second pass: the Cranfield biography (plain curl) describes his current research-director roles and 'numerous leadership positions in the past twenty years' without dates, institutions or degree; ORCID 0000-0001-5093-5398 has a single undated Cranfield employment entry (Cranfield Elements). No Edinburgh thesis record or dated CV was opened, so the degree date and first post-PhD job remain undocumented. Earlier review (2026-10-16): the Cranfield biography covers current leadership and research without doctoral date or earliest employment chronology.",
       "sources": [
         {
           "url": "https://www.cranfield.ac.uk/som/people/professor-michael-bourlakis-841715",
-          "title": "Michael Bourlakis public academic profile",
-          "notes": "Cranfield biography covers current leadership and research without doctoral date or earliest employment chronology."
+          "title": "Professor Michael Bourlakis - Cranfield University",
+          "notes": "Read with plain curl. Current research-director roles; no dated history."
+        },
+        {
+          "url": "https://orcid.org/0000-0001-5093-5398",
+          "title": "ORCID record 0000-0001-5093-5398 (public API)",
+          "notes": "One undated employment entry (Cranfield University)."
         }
       ],
       "source": "omlist"
@@ -6175,15 +6218,25 @@
       "facultyId": "omlist-042ce6800e9de8b9",
       "name": "Mert Cetin",
       "status": "unresolved",
-      "checkedAt": "2026-10-16",
+      "checkedAt": "2026-10-17",
+      "reason": "Second pass: the RSM profile and the EUR Pure profile (plain curl) give his IESE Ph.D. in Operations Management and his current RSM assistant professorship without dates; the RSM course list shows teaching from study year 2024/2025, which suggests but does not date the start. No ORCID record tied to him was found, and IESE's PhD placement pages return 404. The degree date and whether anything preceded RSM remain undocumented. Earlier review (2026-10-16): the RSM profile confirms the IESE doctorate and current appointment but gives no first employment start.",
       "sources": [
         {
           "url": "https://www.rsm.nl/people/mert-cetin/",
-          "title": "Mert Cetin public academic profile",
-          "notes": "RSM profile confirms IESE doctorate and current appointment but gives no first employment start or complete prior history."
+          "title": "Mert Cetin - RSM",
+          "notes": "Read with plain curl. Assistant Professor; Ph.D. and MRM from IESE; courses listed from study year 2024/2025."
+        },
+        {
+          "url": "https://pure.eur.nl/en/persons/mert-%C3%A7etin",
+          "title": "dr. Mert Cetin - EUR Pure",
+          "notes": "Read with plain curl. Same biography; no dates."
+        },
+        {
+          "url": "https://www.iese.edu/phd-in-management/",
+          "title": "IESE PhD in Management",
+          "notes": "Read with plain curl; no placement list (placement paths return 404)."
         }
       ],
-      "reason": "RSM profile confirms IESE doctorate and current appointment but gives no first employment start or complete prior history.",
       "source": "omlist"
     },
     {
@@ -8167,13 +8220,13 @@
       "facultyId": "omlist-be5e9e49e164aa8b",
       "name": "Lori S. Cook",
       "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "The DePaul profile dates doctorate to 1992 and mentions earlier engineering jobs without dates; first post-doctoral employer cannot be ordered.",
+      "checkedAt": "2026-10-17",
+      "reason": "Second pass: the DePaul profile (plain curl) was re-read: PhD Industrial Engineering, University of Louisville (1992), MEng and BS Louisville 1986, consulting work and engineering positions with Armco Eastern Steel and Kentucky Fried Chicken, all undated, with no CV link; ORCID searches for Lori Cook with a DePaul affiliation found no record. Whether the engineering jobs preceded or followed the 1992 degree, and her first post-PhD employer, remain undocumented. Earlier review (2026-10-16): the DePaul profile dates the doctorate to 1992 and mentions earlier engineering jobs without dates.",
       "sources": [
         {
           "url": "https://www.depaul.edu/faculty/lori-s-cook",
-          "title": "Lori S. Cook academic profile",
-          "notes": "The DePaul profile dates doctorate to 1992 and mentions earlier engineering jobs without dates; first post-doctoral employer cannot be ordered."
+          "title": "Lori S. Cook - DePaul University",
+          "notes": "Read with plain curl. PhD Louisville IE 1992; engineering positions at Armco Eastern Steel and KFC; undated; no CV link."
         }
       ],
       "source": "omlist"
@@ -8743,14 +8796,37 @@
     {
       "facultyId": "omlist-27a1900a8b91a7ff",
       "name": "Jan van Dalen",
-      "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "Official RSM profile identifies current associate professorship and publications but provides no doctoral completion date or early employment chronology; first post-PhD employer cannot be established.",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "employer": "Erasmus University Rotterdam (Rotterdam School of Management)",
+      "position": null,
+      "placementYear": 1992,
+      "category": "unknown",
+      "evidenceUrl": "https://orcid.org/0000-0002-0606-3366",
+      "evidenceNote": "His self-entered ORCID employment record gives RSM Erasmus University, Technology and Operations Management, from 1992-09 (entered under his current title, Associate professor of Statistics), and the later Pure-sourced entries continue at the same department from 2009. The EUR Pure record of his doctoral thesis 'Quantitative Studies in Wholesaling' (supervisors Roy Thurik and Koerts; marked externally published) gives the award date 3 December 1992. The RSM post therefore began about three months before the defence (overlap noted); no earlier employment is listed. The starting title is not documented, so position is null and the category unknown. Verifier: kept. His ORCID works list includes a 1988 EIM research publication and a 1990 chapter in a Statistics Netherlands (CBS) volume, and the Pure thesis record lists him under an external organisation, which is consistent with pre-degree work outside RSM; no opened source shows an RSM post before September 1992 or a pre-degree job continuing after the December 1992 defence.",
+      "phdYearVerified": 1992,
+      "phdInstitutionVerified": "Erasmus University Rotterdam",
+      "reason": "Second pass: following the triage step, the ORCID public API record (linked from his EUR Pure profile) dates the start of his RSM employment to September 1992, and the Pure thesis record (found through his ORCID works list; plain curl) dates the Erasmus doctorate to 3 December 1992. A verifier should note that the ORCID title is his present one and that any pre-degree employment (for example at a research institute during the doctorate) is not documented either way.",
       "sources": [
         {
+          "url": "https://orcid.org/0000-0002-0606-3366",
+          "title": "ORCID record 0000-0002-0606-3366 (public API)",
+          "notes": "Employment: RSM Erasmus University, Technology and Operations Management, Associate professor of Statistics, from 1992-09 (self-asserted); EUR TOM Associate professor 2009-2013 and from 2014 (Pure-sourced). Works: dissertation 'Quantitative Studies in Wholesaling', 1992."
+        },
+        {
+          "url": "https://pure.eur.nl/en/publications/quantitative-studies-in-wholesaling/",
+          "title": "Quantitative Studies in Wholesaling (EUR Pure)",
+          "notes": "Read with plain curl. Doctoral Thesis, Erasmus University Rotterdam; supervisors Thurik, Roy and Koerts; award date 3 Dec 1992; externally published."
+        },
+        {
+          "url": "https://pure.eur.nl/en/persons/jan-van-dalen",
+          "title": "dr. Jan van Dalen - EUR Pure",
+          "notes": "Read with plain curl. Associate professor, RSM, Department of Technology and Operations Management; links ORCID."
+        },
+        {
           "url": "https://www.rsm.nl/people/jan-van-dalen/",
-          "title": "Jan van Dalen — public academic profile",
-          "notes": "Professional biography and degree information reviewed for first-job evidence."
+          "title": "Jan van Dalen - RSM",
+          "notes": "Earlier review: current associate professorship, no chronology."
         }
       ],
       "source": "omlist"
@@ -9016,19 +9092,37 @@
     {
       "facultyId": "omlist-c2c6d01a926373f0",
       "name": "Laurens Debo",
-      "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "Tuck profiles date INSEAD doctorate to 2002 and mention earlier Carnegie Mellon and Chicago affiliations without start dates or first-employer wording.",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "employer": "Carnegie Mellon University (Tepper School of Business)",
+      "position": "Instructor, Operations Management and Manufacturing",
+      "placementYear": 2002,
+      "category": "other-academic",
+      "evidenceUrl": "https://faculty.tuck.dartmouth.edu/uploads/laurensDebo/files/resume_may_2025.pdf",
+      "evidenceNote": "His May 2025 CV lists the INSEAD PhD in Operations Management as 1998-Sept. 2002 and, under positions held, Instructor in Operations Management and Manufacturing at CMU's Tepper School from Sept. 2002 to Aug. 2003, then Assistant Professor there from Sept. 2003 to May 2008, Chicago Booth from July 2008 and Tuck from 2014. The instructor post began the month the degree was completed and lasted a full year before the assistant professorship, so it is recorded as the first post-PhD job (not a pre-degree title converted on completion). Verifier: kept. The CV gives the PhD as completed in September 2002 and his ORCID education entry ends on 2002-08-01, so both self-maintained sources place the degree before the September 2002 instructor start; the rule for instructor titles begun before the dissertation was complete therefore does not apply on this evidence, and the instructor year stands as the first post-PhD job.",
+      "phdYearVerified": 2002,
+      "phdInstitutionVerified": "INSEAD",
+      "reason": "Second pass: the CV PDF linked from his Tuck faculty site (plain curl) gives a dated chronology. The overlap rule for pre-degree instructor titles was considered: the instructor post began in September 2002, the month the CV gives for the PhD, and was converted to an assistant professorship only in September 2003, so it is treated as a post-PhD instructor year. A verifier may prefer to record the September 2003 assistant professorship if the INSEAD degree was formally conferred later.",
       "sources": [
         {
-          "url": "https://www.tuck.dartmouth.edu/faculty/faculty-directory/laurens-debo",
-          "title": "Laurens Debo academic profile",
-          "notes": "Tuck profiles date INSEAD doctorate to 2002 and mention earlier Carnegie Mellon and Chicago affiliations without start dates or first-employer wording."
+          "url": "https://faculty.tuck.dartmouth.edu/uploads/laurensDebo/files/resume_may_2025.pdf",
+          "title": "Laurens G. Debo CV (May 2025)",
+          "notes": "Downloaded with curl. Positions: Instructor, Tepper/CMU Sept 2002-Aug 2003; Assistant Professor, Tepper Sept 2003-May 2008; Assistant Professor, Chicago Booth July 2008-June 2010; Associate Professor Booth 2010-2015; Tuck from Sept 2014. Education: PhD INSEAD 1998-Sept 2002."
+        },
+        {
+          "url": "https://faculty.tuck.dartmouth.edu/laurens-debo/curriculum-vitae",
+          "title": "Laurens Debo - Tuck faculty site, CV page",
+          "notes": "Links the CV PDF."
         },
         {
           "url": "https://faculty.tuck.dartmouth.edu/laurens-debo/",
-          "title": "Laurens Debo academic profile",
-          "notes": "Tuck profiles date INSEAD doctorate to 2002 and mention earlier Carnegie Mellon and Chicago affiliations without start dates or first-employer wording."
+          "title": "Laurens Debo - Tuck faculty site",
+          "notes": "PhD, Operations Management, INSEAD, 2002; previously on the faculty of CMU Tepper and Chicago Booth."
+        },
+        {
+          "url": "https://orcid.org/0000-0002-2330-7078",
+          "title": "ORCID record 0000-0002-2330-7078 (public API)",
+          "notes": "Education INSEAD 1998-09-01 to 2002-08-01; employment Tuck from 2015-06-01."
         }
       ],
       "source": "omlist"
@@ -9274,14 +9368,32 @@
     {
       "facultyId": "omlist-f81cb73ade2da092",
       "name": "Ajay Deshmukh",
-      "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "The Cranfield biography lists earlier World Maritime University research associate and industry roles without dates or ordering around doctoral completion.",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "employer": "World Maritime University",
+      "position": "Research Associate, Shipping and Port Management",
+      "placementYear": 2023,
+      "category": "other-academic",
+      "evidenceUrl": "https://orcid.org/0009-0005-2132-7584",
+      "evidenceNote": "The self-maintained ORCID record lists the WMU PhD (Shipping and Port Management) from 2019-06-01 to 2023-04-19, then Research Associate at WMU from 2023-03-01 to 2024-02-28 and Lecturer at Cranfield's Centre for Logistics and Supply Chain Management from 2024-04-01. The research-associate post began about seven weeks before the recorded PhD end date (overlap noted); WMU Commons gives the degree (Doctor of Philosophy in Maritime Affairs) as awarded in 2023, and the Cranfield biography confirms he was a WMU Research Associate before Cranfield. His Indian logistics-industry roles are listed by Cranfield as earlier experience and do not appear after the doctorate.",
+      "phdYearVerified": 2023,
+      "phdInstitutionVerified": "World Maritime University",
+      "reason": "Second pass: the ORCID public API record gives a dated sequence from the WMU doctorate (ending April 2023) to a WMU research-associate post from March 2023 to February 2024 and Cranfield from April 2024; the WMU Commons dissertation record (Hinterland connectivity and market share: a case of Indian container ports; advisor Dong-Wook Song) dates the award 2023. The post starts shortly before the degree end date, so it is recorded as the first post-PhD job with the overlap stated.",
       "sources": [
         {
+          "url": "https://orcid.org/0009-0005-2132-7584",
+          "title": "ORCID record 0009-0005-2132-7584 (public API)",
+          "notes": "Education: WMU PhD 2019-06-01 to 2023-04-19; Heriot-Watt MSc 2011-2012. Employment: WMU Research Associate 2023-03-01 to 2024-02-28; Cranfield Lecturer from 2024-04-01."
+        },
+        {
+          "url": "https://commons.wmu.se/phd_dissertations/30/",
+          "title": "Hinterland connectivity and market share: a case of Indian container ports (WMU Commons)",
+          "notes": "Read with plain curl. Date of award 2023; Doctor of Philosophy in Maritime Affairs; first advisor Dong-Wook Song."
+        },
+        {
           "url": "https://www.cranfield.ac.uk/people/dr-ajay-deshmukh-e3080",
-          "title": "Ajay Deshmukh academic profile",
-          "notes": "The Cranfield biography lists earlier World Maritime University research associate and industry roles without dates or ordering around doctoral completion."
+          "title": "Dr Ajay Deshmukh - Cranfield University",
+          "notes": "Read with plain curl. Lecturer; before Cranfield a Research Associate at WMU; about 8 years in Indian logistics industry (undated, earlier)."
         }
       ],
       "source": "omlist"
@@ -13594,14 +13706,32 @@
     {
       "facultyId": "omlist-5cbb3bf619e9c466",
       "name": "Abhijeet Ghadge",
-      "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "Cranfield biography identifies prior Heriot-Watt role and Loughborough doctorate without dates or complete earlier chronology.",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "employer": "Heriot-Watt University",
+      "position": "Assistant Professor of Logistics and Supply Chain Management, Logistics Research Centre",
+      "placementYear": 2012,
+      "category": "unknown",
+      "evidenceUrl": "https://orcid.org/0000-0002-0310-2761",
+      "evidenceNote": "The self-maintained ORCID record lists the Loughborough PhD (School of Business and Economics) from 2009-10-01 to 2012-09-30, then Assistant Professor of Logistics and Supply Chain Management at Heriot-Watt from 2012-10-08 to 2018-09-23, Cranfield Senior Lecturer from 2018-09-24 and Associate Professor from 2021-10-01. The Loughborough repository dates the doctoral thesis 2013, so the Heriot-Watt post began after the end of his doctoral study but before the formal 2013 award (overlap noted); it was not retitled. A UK assistant-professor title is not stated to be permanent, so the category is unknown.",
+      "phdYearVerified": 2013,
+      "phdInstitutionVerified": "Loughborough University",
+      "reason": "Second pass: the ORCID public API record gives a complete dated chronology with no post between the end of the Loughborough PhD (September 2012) and the Heriot-Watt assistant professorship (October 2012); the Loughborough repository thesis record (read through the Figshare public API) gives publication date 2013, matching the imported year. The Cranfield biography confirms the earlier Heriot-Watt post.",
       "sources": [
         {
+          "url": "https://orcid.org/0000-0002-0310-2761",
+          "title": "ORCID record 0000-0002-0310-2761 (public API)",
+          "notes": "Education: Loughborough PhD 2009-10-01 to 2012-09-30; IIT Kharagpur MTech 2007-2009. Employment: Heriot-Watt Assistant Professor 2012-10-08 to 2018-09-23; Cranfield Senior Lecturer 2018-09-24 to 2021-09-30; Associate Professor from 2021-10-01."
+        },
+        {
+          "url": "https://repository.lboro.ac.uk/articles/thesis/A_systems_thinking_approach_for_modelling_supply_chain_risk_propagation/9495803",
+          "title": "A systems thinking approach for modelling supply chain risk propagation (Loughborough repository)",
+          "notes": "Read through the Figshare public API (article 9495803): Doctoral thesis for the award of Doctor of Philosophy of Loughborough University; publication date 2013; School of Business and Economics; hdl 2134/13561."
+        },
+        {
           "url": "https://www.cranfield.ac.uk/som/people/dr-abhijeet-ghadge-21552988",
-          "title": "Abhijeet Ghadge public academic profile",
-          "notes": "Cranfield biography identifies prior Heriot-Watt role and Loughborough doctorate without dates or complete earlier chronology."
+          "title": "Dr Abhijeet Ghadge - Cranfield University",
+          "notes": "Read with plain curl. Previously Assistant Professor and Programme Director for Logistics and SCM at Heriot-Watt; PhD Loughborough (undated)."
         }
       ],
       "source": "omlist"
@@ -15545,13 +15675,18 @@
       "facultyId": "omlist-481cb787a879eee3",
       "name": "Farooq Habib",
       "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "Cranfield biography lists degrees and industry experience without dated chronology.",
+      "checkedAt": "2026-10-17",
+      "reason": "Second pass: the Cranfield biography (plain curl) lists his Cranfield PhD, FHEA and MSc by Research, visiting-faculty posts at Birkbeck, Buckingham, Bedfordshire and Breda, and more than 15 years in senior industry management before 'these roles', all undated. ORCID searches for Farooq Habib with a Cranfield affiliation return no record, and Cranfield's CERES repository answers 403 to curl and to its API. The 2015 degree date and which post came first after it remain undocumented. Earlier review (2026-10-16): the Cranfield biography lists degrees and industry experience without dated chronology.",
       "sources": [
         {
           "url": "https://www.cranfield.ac.uk/som/people/dr-farooq-habib-396915",
-          "title": "Farooq Habib public academic profile",
-          "notes": "Cranfield biography lists degrees and industry experience without dated chronology."
+          "title": "Dr Farooq Habib - Cranfield University",
+          "notes": "Read with plain curl. Senior Lecturer; visiting faculty at Birkbeck, Buckingham, Bedfordshire, Breda; earlier senior industry management; PhD Cranfield; no dates."
+        },
+        {
+          "url": "https://dspace.lib.cranfield.ac.uk/discover?query=Farooq+Habib",
+          "title": "Cranfield CERES search",
+          "notes": "Attempted; 403 to plain curl and to the DSpace REST API."
         }
       ],
       "source": "omlist"
@@ -15816,16 +15951,30 @@
     {
       "facultyId": "omlist-19d79ae18c1ce79a",
       "name": "Zheng Han",
-      "status": "unresolved",
-      "checkedAt": "2026-10-16",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "employer": "University of Science and Technology of China (School of Management)",
+      "position": "Assistant Professor, Business Administration",
+      "placementYear": 2020,
+      "category": "tenure-track",
+      "evidenceUrl": "https://orcid.org/0000-0002-0308-8648",
+      "evidenceNote": "The self-maintained ORCID record lists two University of Kansas doctorates, a PhD in Mathematics (2010-08 to 2015-09-15) and a PhD in Analytics, Information and Operations Management (2015-08 to 2020-08-01), then Assistant Professor in Business Administration at USTC's School of Management from 2020-09-25 to 2022-06-20 and Assistant Professor at DePaul from 2022-07-01. No employment is listed between the mathematics PhD and the business doctorate, so USTC is the first post-PhD job after either degree. A plain assistant professorship at an Asian business school is recorded as tenure-track by convention.",
+      "phdYearVerified": 2020,
+      "phdInstitutionVerified": "University of Kansas",
+      "phdYearResolution": "The imported 2015 matches his first Kansas doctorate, in mathematics (ORCID end date 2015-09-15); his operations doctorate (Analytics, Information and Operations Management, KU School of Business) ended 2020-08-01 per ORCID, and the DePaul profile confirms both Kansas doctorates. The operations degree year 2020 is recorded; the integrator should decide which degree the record keeps.",
+      "reason": "Second pass: the ORCID public API record gives a dated chronology and both doctorates; the DePaul profile (plain curl) confirms 'PhD, Analytics & Operations' and 'PhD, Mathematics', both from Kansas, without years. KU ScholarWorks could not be queried (API connection failed), so neither dissertation was dated from a repository.",
       "sources": [
         {
+          "url": "https://orcid.org/0000-0002-0308-8648",
+          "title": "ORCID record 0000-0002-0308-8648 (public API)",
+          "notes": "Education: KU PhD AIOM 2015-08-01 to 2020-08-01; KU PhD Mathematics 2010-08-01 to 2015-09-15. Employment: USTC School of Management Assistant Professor 2020-09-25 to 2022-06-20; DePaul Assistant Professor from 2022-07-01."
+        },
+        {
           "url": "https://www.depaul.edu/faculty/zheng-han",
-          "title": "Zheng Han public academic profile",
-          "notes": "DePaul profile confirms two Kansas doctorates and current assistant professorship but omits degree and appointment dates."
+          "title": "Zheng Han - DePaul University",
+          "notes": "Read with plain curl. PhD Analytics & Operations, Kansas; PhD Mathematics, Kansas; undated."
         }
       ],
-      "reason": "DePaul profile confirms two Kansas doctorates and current assistant professorship but omits degree and appointment dates.",
       "source": "omlist"
     },
     {
@@ -16877,13 +17026,23 @@
       "facultyId": "omlist-fc185f5d1f9e8687",
       "name": "Ymro Hoogendoorn",
       "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "No dissertation record, ERIM/RSM page or CV located (searches returned only other Hoogendoorns). PhD 2024 completion and any postdoc or other job before the current assistant professorship are unverified. Discovery web searches were also run; their snippets were not treated as verification.",
+      "checkedAt": "2026-10-17",
+      "reason": "Second pass: the ORCID public API record (employment entries sourced from EUR Pure) lists PhD candidate in Econometrics at Erasmus University Rotterdam from 2018-09-16 to 2023-09-15, Visiting fellow in Econometrics from 2023-10-01 to 2024-05-31, and Assistant professor in RSM's Department of Technology and Operations Management from 2024-04-01; the EUR Pure profile dates his doctoral thesis 'Vehicle routing with varying levels of demand information' 19 January 2024. The visiting fellowship is a visiting title at his own doctoral department that began about three and a half months before the defence, two weeks after the PhD contract ended, and ran on into the assistant professorship; no opened source shows that it was a paid post taken up after a completed dissertation rather than a guest affiliation held while the thesis was finished. Under the rule for visiting titles begun before the degree and followed by an assistant professorship at the same university it is a pre-degree role, and the first new job would then be the April 2024 TOM assistant professorship (a continental European assistant professorship whose track is not stated), which was not the claim reviewed here. Earlier review (2026-10-16): no dissertation record or CV had been found. Verifier: the claimed first job (EUR Econometrics visiting fellow from October 2023) began before the January 2024 degree at the doctoral department and is not shown to be a post-PhD employment post.",
       "sources": [
         {
+          "url": "https://orcid.org/0000-0002-9816-8842",
+          "title": "ORCID record 0000-0002-9816-8842 (public API)",
+          "notes": "Employment (source: EUR Pure): Econometrics PhD candidate 2018-09-16 to 2023-09-15; Econometrics Visiting fellow 2023-10-01 to 2024-05-31; TOM Assistant professor from 2024-04-01."
+        },
+        {
+          "url": "https://pure.eur.nl/en/persons/ymro-hoogendoorn",
+          "title": "Ymro Hoogendoorn - EUR Pure",
+          "notes": "Read with plain curl. Doctoral thesis 'Vehicle routing with varying levels of demand information', 19 Jan 2024, Erasmus University Rotterdam, 208 p."
+        },
+        {
           "url": "https://www.eur.nl/en/people/ymro-hoogendoorn",
-          "title": "Erasmus profile: Ymro Hoogendoorn",
-          "notes": "Opened. Current assistant professor role at RSM; no education or PhD year."
+          "title": "Ymro Hoogendoorn - EUR",
+          "notes": "Earlier review: current assistant professorship only."
         }
       ],
       "source": "omlist"
@@ -17068,20 +17227,25 @@
       "facultyId": "omlist-457002fa613c23a2",
       "name": "Juliana Hsuan",
       "status": "unresolved",
-      "checkedAt": "2026-10-16",
+      "checkedAt": "2026-10-17",
+      "reason": "Second pass: the CBS staff page and the CBS research portal profile (both read with plain curl) give only her current professorship, an affiliated professorship at Chalmers and research interests; the portal links ORCID 0000-0003-3084-6288, whose public API record has no education or employment entries. The portal's PhD-thesis listing, which would date the 2003 CBS thesis, answers 403 (Cloudflare check) to curl, to the r.jina.ai reader and to a headless browser, and the CBS Open Archive search now redirects to the same blocked portal; a DNB catalogue query under her earlier name (Mikkola, Juliana Hsuan) found nothing. No dated CV or appointment record was found, so neither the degree date nor the first post-PhD job (and whether it was a continuation of a pre-degree CBS post) is established. Earlier review (2026-10-16): CBS institutional profiles describe research, teaching and current affiliation but no dated early career chronology.",
       "sources": [
         {
-          "url": "https://www.cbs.dk/en/research/departments/department-operations-management/juliana-hsuan",
-          "title": "Juliana Hsuan Profile",
-          "notes": "CBS institutional profiles describe research, teaching and current affiliation but no dated early career chronology."
+          "url": "https://research.cbs.dk/en/persons/juliana-hsuan",
+          "title": "Juliana Hsuan - CBS Research Portal",
+          "notes": "Read with plain curl. Professor, Department of Operations Management; links ORCID 0000-0003-3084-6288; lists one PhD thesis among research outputs, but the filtered listing is blocked (403 Cloudflare) to curl, reader proxy and headless browser."
         },
         {
-          "url": "https://research.cbs.dk/da/persons/juliana-hsuan/",
-          "title": "Juliana Hsuan Website",
-          "notes": "CBS institutional profiles describe research, teaching and current affiliation but no dated early career chronology."
+          "url": "https://www.cbs.dk/en/research/departments/department-operations-management/juliana-hsuan",
+          "title": "Juliana Hsuan | CBS staff page",
+          "notes": "Read with plain curl. Teaching and supervision, affiliated professor at Chalmers; no dated career history."
+        },
+        {
+          "url": "https://orcid.org/0000-0003-3084-6288",
+          "title": "ORCID record 0000-0003-3084-6288 (public API)",
+          "notes": "Name only; no education or employment entries."
         }
       ],
-      "reason": "CBS institutional profiles describe research, teaching and current affiliation but no dated early career chronology.",
       "source": "omlist"
     },
     {
@@ -18453,20 +18617,25 @@
       "facultyId": "omlist-9a83420d8b2ff75e",
       "name": "Liping Jiang",
       "status": "unresolved",
-      "checkedAt": "2026-10-16",
+      "checkedAt": "2026-10-17",
+      "reason": "Second pass: the CBS staff page and CBS research portal profile (plain curl) describe shipping-economics research and teaching only and link no ORCID; ORCID public-API searches for Liping Jiang with Copenhagen or Denmark affiliations return no record. The University of Southern Denmark research portal search, which might date the 2008 thesis, answers 403 to curl. No dated CV, thesis record or appointment record was found, so the degree date and first post-PhD job remain undocumented. Earlier review (2026-10-16): CBS primary pages provide research interests and publications without doctoral or initial employment chronology.",
       "sources": [
         {
           "url": "https://www.cbs.dk/en/research/departments/department-operations-management/liping-jiang",
-          "title": "Liping Jiang Profile",
-          "notes": "CBS primary pages provide research interests and publications without doctoral or initial employment chronology."
+          "title": "Liping Jiang | CBS staff page",
+          "notes": "Read with plain curl. Associate Professor; research and teaching description; no degree or dated history."
         },
         {
-          "url": "https://research.cbs.dk/da/persons/liping-jiang/",
-          "title": "Liping Jiang Website",
-          "notes": "CBS primary pages provide research interests and publications without doctoral or initial employment chronology."
+          "url": "https://research.cbs.dk/en/persons/liping-jiang",
+          "title": "Liping Jiang - CBS Research Portal",
+          "notes": "Read with plain curl. No ORCID link and no career history."
+        },
+        {
+          "url": "https://portal.findresearcher.sdu.dk/en/searchAll/index/?search=Liping+Jiang",
+          "title": "SDU research portal search",
+          "notes": "Attempted; 403 to plain curl."
         }
       ],
-      "reason": "CBS primary pages provide research interests and publications without doctoral or initial employment chronology.",
       "source": "omlist"
     },
     {
@@ -18881,19 +19050,37 @@
     {
       "facultyId": "omlist-3d95dd50a7ccf3c5",
       "name": "Marin Jovanovic",
-      "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "CBS profile describes current research and outside activities without doctoral and earliest employment chronology.",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "employer": "Copenhagen Business School",
+      "position": "Assistant Professor, Department of Operations Management",
+      "placementYear": 2018,
+      "category": "unknown",
+      "evidenceUrl": "https://orcid.org/0000-0001-8542-1848",
+      "evidenceNote": "The self-maintained ORCID record lists doctoral candidacy at KTH (Industrial Economics and Management, 2013-10-01 to 2018-06-30; joint with Universidad Politecnica de Madrid to 2018-07-19), then Assistant Professor at CBS's Department of Operations Management from 2018-08-15 to 2022-12-15 and Associate Professor from 2022-12-15. The only other post-2018 entry is a 2019 visiting-scholar invitation at Lulea, which began after the CBS post. A Danish assistant professorship is not stated to be tenure-track, so the category is unknown.",
+      "phdYearVerified": null,
+      "phdInstitutionVerified": null,
+      "reason": "Second pass: the ORCID public API record (linked from the CBS research portal profile) gives a dated chronology: PhD candidate at KTH until mid-2018, then CBS Assistant Professor from 15 August 2018. The KTH DiVA thesis record could not be opened (connection reset to curl, 503 to the fetch tool, timeout through the reader proxy) and OpenAlex refused for rate limits, so the degree year is not independently verified; the ORCID candidacy end date (June 2018) agrees with the imported 2018.",
       "sources": [
         {
-          "url": "https://www.cbs.dk/en/research/departments/department-operations-management/marin-jovanovic",
-          "title": "Marin Jovanovic public academic profile",
-          "notes": "CBS profile describes current research and outside activities without doctoral and earliest employment chronology."
+          "url": "https://orcid.org/0000-0001-8542-1848",
+          "title": "ORCID record 0000-0001-8542-1848 (public API)",
+          "notes": "Education: KTH PhD Candidate 2013-10-01 to 2018-06-30; UPM PhD Candidate to 2018-07-19. Employment: CBS Assistant Professor 2018-08-15 to 2022-12-15; Associate Professor from 2022-12-15. Invited: Cambridge visiting researcher 2017; Lulea visiting scholar from 2019-04."
         },
         {
-          "url": "https://www.industryplatforms.org/",
-          "title": "Marin Jovanovic public academic profile",
-          "notes": "CBS profile describes current research and outside activities without doctoral and earliest employment chronology."
+          "url": "https://research.cbs.dk/en/persons/marin-jovanovic",
+          "title": "Marin Jovanovic - CBS Research Portal",
+          "notes": "Read with plain curl; links the ORCID iD; no dated history."
+        },
+        {
+          "url": "https://www.cbs.dk/en/research/departments/department-operations-management/marin-jovanovic",
+          "title": "Marin Jovanovic | CBS staff page",
+          "notes": "Read with plain curl; research description only."
+        },
+        {
+          "url": "https://kth.diva-portal.org/smash/resultList.jsf?searchType=SIMPLE&query=Marin+Jovanovic",
+          "title": "KTH DiVA search",
+          "notes": "Attempted; connection reset (curl), HTTP 503 (fetch tool), timeout (reader proxy). Not read."
         }
       ],
       "source": "omlist"
@@ -19648,16 +19835,35 @@
     {
       "facultyId": "omlist-679e0fb0cea3d65f",
       "name": "Diwas Kc",
-      "status": "unresolved",
-      "checkedAt": "2026-10-16",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "employer": "Emory University (Goizueta Business School)",
+      "position": null,
+      "placementYear": 2008,
+      "category": "unknown",
+      "evidenceUrl": "https://orcid.org/0000-0003-4358-2058",
+      "evidenceNote": "His ORCID record lists the Wharton Ph.D. from 2003-09 to 2008-05 and a single employment, Emory University's Goizueta Business School from 2008-07-05 to the present (entered under his current title, Professor). Wharton OID's post-Wharton placement list records 'KC Diwas, Emory Goizueta' for the 2008 cohort, and the Goizueta profile says his pre-doctoral job was at Oracle. The starting title is not given in these sources, so position is null and the category unknown.",
+      "phdYearVerified": 2008,
+      "phdInstitutionVerified": "University of Pennsylvania",
+      "phdYearResolution": "The imported year is 2009; his ORCID record ends the Wharton Ph.D. in May 2008 and Wharton's placement list files him under 2008, so 2008 is recorded. Formal conferral could have been later; no dissertation record was opened.",
+      "reason": "Second pass: the ORCID public API record gives a dated sequence with no gap or intervening job between the May 2008 end of the Wharton PhD and the July 2008 start at Emory Goizueta, and the Wharton OID placement page (plain curl) names Emory Goizueta as his placement.",
       "sources": [
         {
+          "url": "https://orcid.org/0000-0003-4358-2058",
+          "title": "ORCID record 0000-0003-4358-2058 (public API)",
+          "notes": "Education: Wharton Ph.D. 2003-09 to 2008-05; Stanford MS 2001-2003; Brown ScB 1995-1999. Employment: Emory University, Goizueta Business School, Professor, from 2008-07-05."
+        },
+        {
+          "url": "https://oid.wharton.upenn.edu/programs/phd/post-wharton/",
+          "title": "Wharton OID - Post-Wharton placements",
+          "notes": "Read with plain curl. Under 2008: KC Diwas, Emory Goizueta."
+        },
+        {
           "url": "https://goizueta.emory.edu/faculty/profiles/diwas-kc",
-          "title": "Diwas Kc Profile",
-          "notes": "Emory biography identifies Wharton doctorate and predoctoral Oracle work but omits initial post-PhD employment chronology."
+          "title": "Diwas KC - Goizueta profile",
+          "notes": "Read with plain curl. PhD Wharton; before doctoral studies a Principal Software Engineer at Oracle; no dated history."
         }
       ],
-      "reason": "Emory biography identifies Wharton doctorate and predoctoral Oracle work but omits initial post-PhD employment chronology.",
       "source": "omlist"
     },
     {
@@ -20258,15 +20464,25 @@
       "facultyId": "omlist-713358cece9e256a",
       "name": "Seung-Lae Kim",
       "status": "unresolved",
-      "checkedAt": "2026-10-16",
+      "checkedAt": "2026-10-17",
+      "reason": "Second pass: the LeBow profile (plain curl) gives his current professorship in Decision Sciences and MIS, expertise and publications only, with no degree or history; the Drexel Research Discovery profile (headless browser) lists BA and MBA from Korea University and a PhD in Management Science from Penn State, all undated; the ORCID record found for the name (0000-0002-1343-8541) is empty and cannot be tied to him. No CV or older Drexel page dating his first appointment after the 1990 Penn State degree was found. Earlier review (2026-10-16): the Drexel biography lists current role and selected publications without doctoral and early employment chronology.",
       "sources": [
         {
           "url": "https://www.lebow.drexel.edu/people/seung-laekim",
-          "title": "Seung-Lae Kim Profile",
-          "notes": "Drexel biography lists current role and selected publications without doctoral and early employment chronology."
+          "title": "Seung-Lae Kim, PhD - Drexel LeBow",
+          "notes": "Read with plain curl. Professor, Decision Sciences and MIS; publications; no dated history."
+        },
+        {
+          "url": "https://researchdiscovery.drexel.edu/esploro/profile/seunglae_kim",
+          "title": "Seung-Lae Kim - Drexel Research Discovery",
+          "notes": "Read in a headless browser. Education: BA and MBA Korea University; PhD Management Science, Pennsylvania State University; undated; no employment history."
+        },
+        {
+          "url": "https://orcid.org/0000-0002-1343-8541",
+          "title": "ORCID record 0000-0002-1343-8541 (public API)",
+          "notes": "Name only; no entries; identity not confirmed."
         }
       ],
-      "reason": "Drexel biography lists current role and selected publications without doctoral and early employment chronology.",
       "source": "omlist"
     },
     {
@@ -20641,18 +20857,23 @@
       "facultyId": "omlist-ea5bf5734bcb6a59",
       "name": "Otto Koppius",
       "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "The Erasmus/RSM profile (opened) shows only a current assistant professorship in Technology and Operations Management, with no career history. The Mathematics Genealogy and search-result text (not opened) report a 2002 Erasmus PhD under Eric van Heck, but no source seen documents what he did after 2002 (the imported 'currentInstitution' equals the PhD institution, so a continuous or interim appointment cannot be assumed). The first post-PhD job is unknown.",
+      "checkedAt": "2026-10-17",
+      "reason": "Second pass: the EUR Pure record of his doctoral thesis 'Information architecture and electronic market performance' (supervisors Peter Vervest and Eric van Heck) gives the award date 16 May 2002, and his self-entered ORCID record (0000-0002-4878-5973) has a single untitled employment entry, Rotterdam School of Management, from 2001-09-01. That entry may mark an RSM post begun about eight months before the defence, or simply the earliest date he chose to list for continuous RSM employment that began with the doctorate; with no title and no other history (the EUR Pure profile shows only his current assistant professorship), the first post-PhD job is not established. Earlier review (2026-10-16): the EUR/RSM profile shows only a current assistant professorship, with no career history.",
       "sources": [
         {
-          "url": "https://www.eur.nl/en/people/otto-koppius",
-          "title": "Erasmus University profile, Otto Koppius",
-          "notes": "Opened. Current Assistant Professor at RSM; no earlier positions; links to personal site not followed."
+          "url": "https://pure.eur.nl/en/publications/information-architecture-and-electronic-market-performance/",
+          "title": "Information architecture and electronic market performance (EUR Pure)",
+          "notes": "Read with plain curl. Doctoral Thesis, Erasmus University Rotterdam; supervisors Vervest and van Heck; award date 16 May 2002; hdl 1765/921."
         },
         {
-          "url": "https://www.eur.nl/en/erim/people/otto-koppius",
-          "title": "ERIM profile (redirect target)",
-          "notes": "HTTP 404."
+          "url": "https://orcid.org/0000-0002-4878-5973",
+          "title": "ORCID record 0000-0002-4878-5973 (public API)",
+          "notes": "One employment entry: Erasmus University Rotterdam, Rotterdam School of Management, from 2001-09-01, no title."
+        },
+        {
+          "url": "https://pure.eur.nl/en/persons/otto-koppius",
+          "title": "dr.ir. Otto Koppius - EUR Pure",
+          "notes": "Read with plain curl. Assistant professor, RSM, Technology and Operations Management; no dated history."
         }
       ],
       "source": "omlist"
@@ -22032,13 +22253,28 @@
       "facultyId": "omlist-094818229d7cf89f",
       "name": "Donald Lee",
       "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "Emory biography identifies prior Yale faculty employment and Stanford doctorate but provides no degree year, first appointment date, or earlier chronology. First post-PhD position remains unverified.",
+      "checkedAt": "2026-10-17",
+      "reason": "Second pass: ORCID 0000-0003-4599-892X (self-maintained) lists Yale University, Associate Professor, 2014-2018 and Emory from 2019, with undated Stanford MS/PhD and Cambridge degrees. With the imported 2013 PhD, a 2013-2014 post may precede Yale, and the Stanford dissertation could not be dated: Stanford SearchWorks answers with a bot-detection page to curl and a headless browser, a Mathematics Genealogy query timed out, and one web search returned no CV. The Goizueta and Expertfile profiles say only that he was an associate professor at Yale before Emory. The first post-PhD job and its start year remain undocumented. Earlier review (2026-10-16): the Emory biography identifies prior Yale faculty employment and the Stanford doctorate but gives no dates.",
       "sources": [
         {
+          "url": "https://orcid.org/0000-0003-4599-892X",
+          "title": "ORCID record 0000-0003-4599-892X (public API)",
+          "notes": "Education: Stanford MS (Statistics)/PhD (Operations Research), undated; Cambridge BA/MA/MMath, undated. Employment: Yale Associate Professor 2014-2018; Emory Associate Professor from 2019."
+        },
+        {
           "url": "https://goizueta.emory.edu/faculty/profiles/donald-lee",
-          "title": "Donald Lee — public academic profile",
-          "notes": "Professional biography and degree information reviewed for first-job evidence."
+          "title": "Donald Lee - Goizueta profile",
+          "notes": "Read with plain curl. Before Emory, associate professor at Yale (SOM and Statistics & Data Science); no dates."
+        },
+        {
+          "url": "https://expertfile.com/experts/donald.lee",
+          "title": "Donald Lee - Expertfile profile",
+          "notes": "Read with plain curl. Same biography; education undated."
+        },
+        {
+          "url": "https://searchworks.stanford.edu/",
+          "title": "Stanford SearchWorks",
+          "notes": "Attempted a thesis search; bot-detection page to curl and headless browser."
         }
       ],
       "source": "omlist"
@@ -22429,14 +22665,32 @@
     {
       "facultyId": "omlist-26633544e841090b",
       "name": "Stef Lemmens",
-      "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "RSM biography confirms prior INSEAD postdoctoral role but provides no dates or complete chronology establishing that role as first after the doctorate.",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "employer": "INSEAD",
+      "position": "Post-doctoral researcher, Technology and Operations Management",
+      "placementYear": 2018,
+      "category": "postdoc",
+      "evidenceUrl": "https://orcid.org/0000-0001-7345-6402",
+      "evidenceNote": "His self-maintained ORCID record lists Post-doctoral researcher in INSEAD's Technology and Operations Management area from 2018-09-17 and Assistant professor at Erasmus University Rotterdam from 2020-02-01. The EUR Pure profile dates his KU Leuven doctoral thesis ('The Trade-off between Inventories, Lead Time and Capacity: Application to Vaccine Supply Chain Design') 23 October 2018, so the postdoc began about five weeks before the formal degree date (overlap noted). The RSM profile confirms that before RSM he obtained the KU Leuven PhD and worked as a postdoctoral researcher at INSEAD.",
+      "phdYearVerified": 2018,
+      "phdInstitutionVerified": "KU Leuven",
+      "reason": "Second pass: the ORCID public API record supplies the INSEAD postdoc start date (17 September 2018) that the earlier review lacked, and the EUR Pure profile (plain curl) dates the KU Leuven thesis to 23 October 2018; the explicitly post-doctoral appointment starting weeks before the degree date is the first post-PhD job under the overlap rule.",
       "sources": [
         {
+          "url": "https://orcid.org/0000-0001-7345-6402",
+          "title": "ORCID record 0000-0001-7345-6402 (public API)",
+          "notes": "Employment: INSEAD, Technology and Operations Management, Post-doctoral researcher from 2018-09-17 (no end date entered); Erasmus Universiteit Rotterdam, TOM, Assistant professor from 2020-02-01."
+        },
+        {
+          "url": "https://pure.eur.nl/en/persons/stef-lemmens",
+          "title": "Stef Lemmens - EUR Pure",
+          "notes": "Read with plain curl. Doctoral thesis, KU Leuven, 23 Oct 2018."
+        },
+        {
           "url": "https://www.rsm.nl/people/stef-lemmens/",
-          "title": "Stef Lemmens public academic profile",
-          "notes": "RSM biography confirms prior INSEAD postdoctoral role but provides no dates or complete chronology establishing that role as first after the doctorate."
+          "title": "Stef Lemmens - RSM",
+          "notes": "Read with plain curl. PhD in Applied Economics, KU Leuven; postdoctoral researcher at INSEAD TOM before RSM."
         }
       ],
       "source": "omlist"
@@ -22571,14 +22825,32 @@
     {
       "facultyId": "omlist-e04a5714ae53712c",
       "name": "Benjamin Lev",
-      "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "No primary source for the 1970 Case Western PhD or the post-degree chronology was opened. Wikipedia (opened, secondary) lists Temple University 1970-1987 as his earliest dated position, followed by WPI, Michigan-Dearborn and Drexel, but it does not give the PhD year, does not say Temple was the first job, and is not an authoritative CV or institutional record. A first-job claim requires a dated CV, dissertation record or Drexel/Temple bio.",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "employer": "Temple University (School of Business Administration)",
+      "position": "Assistant Professor, Management Department",
+      "placementYear": 1970,
+      "category": "tenure-track",
+      "evidenceUrl": "https://www.lebow.drexel.edu/people/benjaminlev",
+      "evidenceNote": "His Drexel LeBow biography lists his faculty appointments with dates, beginning with Assistant Professor (rising to Associate Professor, Professor and Department Head) in Temple University's Management Department, School of Business Administration, 1970 to 1987, then Worcester Polytechnic Institute 1987-90, Michigan-Dearborn 1990-2009 and Drexel from 2009; a 1974-75 visit to Tel Aviv University and other short appointments came later. The Mathematics Genealogy Project gives his Ph.D. as Case Western Reserve University, 1970 (dissertation on transportation problems, advisor Leon Lasdon), so the Temple post began in the degree year. A plain assistant professorship at a North American business school is recorded as tenure-track by convention.",
+      "phdYearVerified": 1970,
+      "phdInstitutionVerified": "Case Western Reserve University",
+      "reason": "Second pass: the Drexel LeBow profile (plain curl) gives a dated list of faculty appointments starting at Temple in 1970, and the Mathematics Genealogy Project record (id 243808) dates the Case Western PhD 1970. The list is headed 'faculty appointments', but no other employment fits between the 1970 degree and the 1970 Temple start.",
       "sources": [
         {
+          "url": "https://www.lebow.drexel.edu/people/benjaminlev",
+          "title": "Benjamin Lev, PhD - Drexel LeBow",
+          "notes": "Read with plain curl. Faculty appointments: Temple University, Management Department, School of Business Administration, Assistant Professor to Professor and Department Head, 1970-87; WPI 1987-90; UM-Dearborn 1990-2009; Drexel 2009-present; short appointments including Tel Aviv University 1974-75."
+        },
+        {
+          "url": "https://www.mathgenealogy.org/id.php?id=243808",
+          "title": "Benjamin Lev - Mathematics Genealogy Project",
+          "notes": "Ph.D. Case Western Reserve University 1970; dissertation 'Non-iterative algorithm for special structure transportation problems'; advisor Leon Stephen Lasdon."
+        },
+        {
           "url": "https://en.wikipedia.org/wiki/Benjamin_Lev",
-          "title": "Wikipedia, Benjamin Lev",
-          "notes": "Opened (secondary). Temple 1970-1987 listed as earliest dated post; no PhD year."
+          "title": "Benjamin Lev - Wikipedia",
+          "notes": "Earlier review (secondary): Temple University 1970-1987 as earliest dated position."
         }
       ],
       "source": "omlist"
@@ -25560,13 +25832,18 @@
       "facultyId": "omlist-cc60ad819f730801",
       "name": "Juan Pablo Madiedo",
       "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "The RSM biography mentions IE doctorate and earlier IE and Los Andes roles without degree or appointment dates.",
+      "checkedAt": "2026-10-17",
+      "reason": "Second pass: the RSM profile (plain curl) says he obtained his Ph.D. in Business Studies at IE Business School and that before RSM he held positions at IE University and Universidad de los Andes, with a later visiting-scholar post at INCAE; none is dated. His ORCID record (0000-0002-4992-535X) has a single undated RSM employment entry, and the EUR Pure person page is not found at the expected address. The degree date and the first post-PhD employer remain undocumented. Earlier review (2026-10-16): the RSM biography mentions the IE doctorate and earlier IE and Los Andes roles without dates.",
       "sources": [
         {
           "url": "https://www.rsm.nl/people/juan-pablo-madiedo/",
-          "title": "Juan Pablo Madiedo academic profile",
-          "notes": "The RSM biography mentions IE doctorate and earlier IE and Los Andes roles without degree or appointment dates."
+          "title": "Juan Pablo Madiedo - RSM",
+          "notes": "Read with plain curl. Associate Professor; Ph.D. in Business Studies, IE; earlier positions at IE University and Universidad de los Andes; visiting scholar at INCAE; undated."
+        },
+        {
+          "url": "https://orcid.org/0000-0002-4992-535X",
+          "title": "ORCID record 0000-0002-4992-535X (public API)",
+          "notes": "One undated employment entry: Erasmus University Rotterdam, RSM."
         }
       ],
       "source": "omlist"
@@ -26561,15 +26838,25 @@
       "facultyId": "omlist-23d2dba1db5c5edf",
       "name": "Aristides Matopoulos",
       "status": "unresolved",
-      "checkedAt": "2026-10-16",
+      "checkedAt": "2026-10-17",
+      "reason": "Second pass: the Cranfield biography (plain curl) says he joined Cranfield in 2022 and previously headed Engineering Systems and Supply Chain Management at Aston, with no earlier dates or degree. ORCID 0000-0002-5083-0534 has two undated employment entries (Cranfield; Aston, from Aston Research Explorer). The Aston Research Explorer person page returns 404 at the expected address and its search answers 403. The 2006 University of Macedonia degree date and the first post-PhD job remain undocumented. Earlier review (2026-10-16): the Cranfield biography describes the 2022 appointment and prior Aston role but omits doctoral timing and early appointments.",
       "sources": [
         {
           "url": "https://www.cranfield.ac.uk/som/people/professor-aris-matopoulos-36430385",
-          "title": "Aristides Matopoulos Profile",
-          "notes": "Cranfield biography describes 2022 appointment and prior Aston role but omits doctoral timing and early appointments."
+          "title": "Professor Aris Matopoulos - Cranfield University",
+          "notes": "Read with plain curl. Joined Cranfield 2022; previously at Aston (head of department); no earlier dates."
+        },
+        {
+          "url": "https://orcid.org/0000-0002-5083-0534",
+          "title": "ORCID record 0000-0002-5083-0534 (public API)",
+          "notes": "Employment: Cranfield Professor (undated); Aston University (undated)."
+        },
+        {
+          "url": "https://research.aston.ac.uk/en/persons/aristides-matopoulos",
+          "title": "Aston Research Explorer",
+          "notes": "Attempted; 404 at this address, search 403."
         }
       ],
-      "reason": "Cranfield biography describes 2022 appointment and prior Aston role but omits doctoral timing and early appointments.",
       "source": "omlist"
     },
     {
@@ -26878,14 +27165,27 @@
     {
       "facultyId": "omlist-e0d2080c1bc420d0",
       "name": "Sameer Mehta",
-      "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "The RSM profile identifies earlier Illinois assistant professorship and Texas Dallas doctorate but omits appointment dates needed to establish the earliest employer.",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "employer": "University of Illinois at Urbana-Champaign (Gies College of Business)",
+      "position": "Assistant Professor, Business Administration",
+      "placementYear": 2020,
+      "category": "tenure-track",
+      "evidenceUrl": "https://orcid.org/0000-0002-0410-3248",
+      "evidenceNote": "His self-maintained ORCID record lists the UT Dallas Ph.D. in Management Science from 2015-08 to 2020-05, then Assistant Professor of Business Administration at the University of Illinois at Urbana-Champaign from 2020-06 to 2021-08, RSM Assistant Professor from 2021-09 and Associate Professor from 2025-11; a research-associate post at the Indian School of Business (2012-2015) preceded the doctorate. The RSM profile confirms the Gies assistant professorship came before RSM and lists his 2020 UT Dallas doctoral thesis. A plain assistant professorship at a North American business school is recorded as tenure-track by convention.",
+      "phdYearVerified": 2020,
+      "phdInstitutionVerified": "The University of Texas at Dallas",
+      "reason": "Second pass: the ORCID public API record gives the dated chronology the earlier review lacked, with the Illinois post starting the month after the May 2020 degree; the RSM profile (plain curl) agrees.",
       "sources": [
         {
+          "url": "https://orcid.org/0000-0002-0410-3248",
+          "title": "ORCID record 0000-0002-0410-3248 (public API)",
+          "notes": "Education: UT Dallas Ph.D. Management Science 2015-08 to 2020-05; IIT Kanpur MSc 2007-2012. Employment: ISB Research Associate 2012-06 to 2015-05; UIUC Assistant Professor 2020-06 to 2021-08; RSM Assistant Professor 2021-09 to 2025-11; EUR Associate professor from 2025-11-06."
+        },
+        {
           "url": "https://www.rsm.nl/people/sameer-mehta/",
-          "title": "Sameer Mehta academic profile",
-          "notes": "The RSM profile identifies earlier Illinois assistant professorship and Texas Dallas doctorate but omits appointment dates needed to establish the earliest employer."
+          "title": "Sameer Mehta - RSM",
+          "notes": "Read with plain curl. Before RSM an Assistant Professor at Gies College of Business, UIUC; Ph.D. UT Dallas; doctoral thesis 'Monetization of High-Technology Products and Services' (2020)."
         }
       ],
       "source": "omlist"
@@ -29968,20 +30268,25 @@
       "facultyId": "omlist-482e02b17ff93ac2",
       "name": "Nikolay Osadchiy",
       "status": "unresolved",
-      "checkedAt": "2026-10-16",
+      "checkedAt": "2026-10-17",
+      "reason": "Second pass: his personal site (nikolayosadchiy.com, plain curl) links a CV at data/osadchiy_web.pdf, which now returns 404 under http, https and the bare domain; the site and the Goizueta profile give the NYU Stern PhD and the current Emory associate professorship without dates. No ORCID record for him was found among 25 Osadchiy records. His first post-PhD job and its start year remain undocumented. Earlier review (2026-10-16): Emory and personal biographies identify the NYU doctorate and current Emory role but supply no early employment dates.",
       "sources": [
         {
-          "url": "https://goizueta.emory.edu/faculty/profiles/nikolay-osadchiy",
-          "title": "Nikolay Osadchiy Profile",
-          "notes": "Emory and personal biographies identify NYU doctorate and current Emory role but supply no early employment dates."
+          "url": "http://www.nikolayosadchiy.com/",
+          "title": "Nikolay Osadchiy homepage",
+          "notes": "Read with plain curl. Associate Professor at Goizueta; research list; CV link."
         },
         {
-          "url": "http://www.nikolayosadchiy.com/",
-          "title": "Nikolay Osadchiy Website",
-          "notes": "Emory and personal biographies identify NYU doctorate and current Emory role but supply no early employment dates."
+          "url": "http://www.nikolayosadchiy.com/data/osadchiy_web.pdf",
+          "title": "Nikolay Osadchiy CV (linked from homepage)",
+          "notes": "Attempted; HTTP 404."
+        },
+        {
+          "url": "https://goizueta.emory.edu/faculty/profiles/nikolay-osadchiy",
+          "title": "Nikolay Osadchiy - Goizueta profile",
+          "notes": "Read with plain curl. PhD in Operations Management, NYU Stern; no dates."
         }
       ],
-      "reason": "Emory and personal biographies identify NYU doctorate and current Emory role but supply no early employment dates.",
       "source": "omlist"
     },
     {
@@ -32408,15 +32713,25 @@
       "facultyId": "omlist-06def0e27c86dc3a",
       "name": "Jawwad Raja",
       "status": "unresolved",
-      "checkedAt": "2026-10-16",
+      "checkedAt": "2026-10-17",
+      "reason": "Second pass: the CBS staff page (plain curl) describes his servitization research and an external-examiner role only; the CBS research portal profile links ORCID 0000-0001-8123-5781, whose public API record has a single undated CBS employment entry (added by him) and no education. No CV, Reading thesis record or appointment announcement was found, so the 2006 degree date and his first post-PhD job remain undocumented. Earlier review (2026-10-16): the linked CBS profile exposes no usable career chronology.",
       "sources": [
         {
           "url": "https://www.cbs.dk/en/research/departments/department-operations-management/jawwad-raja",
-          "title": "Jawwad Raja public academic profile",
-          "notes": "Linked CBS profile exposes no usable career chronology in the public page retrieved."
+          "title": "Jawwad Raja | CBS staff page",
+          "notes": "Read with plain curl. Associate Professor; research and teaching description; no dated history."
+        },
+        {
+          "url": "https://research.cbs.dk/en/persons/jawwad-raja",
+          "title": "Jawwad Raja - CBS Research Portal",
+          "notes": "Read with plain curl; links ORCID iD; no history."
+        },
+        {
+          "url": "https://orcid.org/0000-0001-8123-5781",
+          "title": "ORCID record 0000-0001-8123-5781 (public API)",
+          "notes": "One undated employment entry: Copenhagen Business School."
         }
       ],
-      "reason": "Linked CBS profile exposes no usable career chronology in the public page retrieved.",
       "source": "omlist"
     },
     {
@@ -32879,15 +33194,30 @@
       "facultyId": "omlist-9f47b746095ef2f4",
       "name": "Hendrik Reefke",
       "status": "unresolved",
-      "checkedAt": "2026-10-16",
+      "checkedAt": "2026-10-17",
+      "reason": "Second pass: the University of Auckland ResearchSpace record (read through its DSpace REST API) dates his doctoral thesis 'Sustainable Supply Chain Management: Concepts, Models and Roadmap' (supervisors Sundaram and Robb) 2012, matching the imported year, and a 2014 Auckland thesis lists him as co-supervisor, which suggests but does not establish an Auckland post after the degree. The Cranfield biography (plain curl) mentions academic posts in the UK, Germany and New Zealand and earlier automotive roles without dates, and ORCID 0000-0002-0093-4327 is empty. The first post-PhD employer and its start year remain undocumented. Earlier review (2026-10-16): the Cranfield biography lists the Auckland doctorate and academic/automotive roles across countries without dates or earliest appointment identity.",
       "sources": [
         {
+          "url": "https://researchspace.auckland.ac.nz/handle/2292/19418",
+          "title": "Sustainable Supply Chain Management: Concepts, Models and Roadmap (ResearchSpace)",
+          "notes": "Read through the ResearchSpace DSpace REST API search: thesis by Reefke, Hendrik; date issued 2012; advisors Sundaram, D and Robb, D."
+        },
+        {
+          "url": "https://researchspace.auckland.ac.nz/handle/2292/23053",
+          "title": "Promoting Sustainability through Evaluation of Waste Streams in Supply Chains (ResearchSpace)",
+          "notes": "2014 Auckland thesis listing Olsen, T and Reefke, H as advisors; a lead only, not dated employment."
+        },
+        {
           "url": "https://www.cranfield.ac.uk/som/people/dr-hendrik-reefke-350315",
-          "title": "Hendrik Reefke Profile",
-          "notes": "Cranfield biography lists Auckland doctorate and academic/automotive roles across countries without dates or earliest appointment identity."
+          "title": "Dr Hendrik Reefke - Cranfield University",
+          "notes": "Read with plain curl. Academic positions in the UK, Germany and New Zealand; earlier automotive roles; undated."
+        },
+        {
+          "url": "https://orcid.org/0000-0002-0093-4327",
+          "title": "ORCID record 0000-0002-0093-4327 (public API)",
+          "notes": "Name only; no entries."
         }
       ],
-      "reason": "Cranfield biography lists Auckland doctorate and academic/automotive roles across countries without dates or earliest appointment identity.",
       "source": "omlist"
     },
     {
@@ -34639,18 +34969,23 @@
       "facultyId": "omlist-7c56ae24deb726bc",
       "name": "Leonardo Santiago",
       "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "The CBS profiles discuss current and earlier Minas Gerais affiliations but lack doctoral completion and first-job dates.",
+      "checkedAt": "2026-10-17",
+      "reason": "Second pass: the CBS staff page (plain curl) describes current research only; the CBS research portal profile links ORCID 0000-0002-7041-7480, whose public API record has no education or employment entries. No dated CV was found, so the Boston University degree date and whether his first post-PhD job was the Minas Gerais post mentioned earlier or another remain undocumented. Earlier review (2026-10-16): the CBS profiles discuss current and earlier Minas Gerais affiliations but lack doctoral completion and first-job dates.",
       "sources": [
         {
           "url": "https://www.cbs.dk/en/research/departments/department-operations-management/leonardo-santiago",
-          "title": "Leonardo Santiago academic profile",
-          "notes": "The CBS profiles discuss current and earlier Minas Gerais affiliations but lack doctoral completion and first-job dates."
+          "title": "Leonardo Santiago | CBS staff page",
+          "notes": "Read with plain curl. Associate Professor; research description; no dated history."
         },
         {
-          "url": "https://research.cbs.dk/da/persons/leonardo-santiago/",
-          "title": "Leonardo Santiago academic profile",
-          "notes": "The CBS profiles discuss current and earlier Minas Gerais affiliations but lack doctoral completion and first-job dates."
+          "url": "https://research.cbs.dk/en/persons/leonardo-santiago",
+          "title": "Leonardo Santiago - CBS Research Portal",
+          "notes": "Read with plain curl; links ORCID iD."
+        },
+        {
+          "url": "https://orcid.org/0000-0002-7041-7480",
+          "title": "ORCID record 0000-0002-7041-7480 (public API)",
+          "notes": "Name only; no entries."
         }
       ],
       "source": "omlist"
@@ -34949,14 +35284,32 @@
     {
       "facultyId": "omlist-cd5b560aaa4f0109",
       "name": "Oliver Schaer",
-      "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "The Drexel research profile (opened) states he was a research associate at the Darden School of Business, University of Virginia 'prior to joining Drexel' and earlier a project manager at a Swiss medtech firm, with a Lancaster PhD in Management Science, but it gives no dates for any of these. The Darden role is probably the first post-PhD job (a postdoc-type appointment), but without dates the PhD completion (imported 2019), the Darden start year and whether any other role intervened cannot be established. Preserve as reported destination: Darden research associate, then Drexel assistant professor.",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "employer": "University of Virginia (Darden School of Business)",
+      "position": "Research Associate",
+      "placementYear": 2020,
+      "category": "other-academic",
+      "evidenceUrl": "https://orcid.org/0000-0003-1878-8134",
+      "evidenceNote": "The ORCID record lists him as PhD Student in Management Science at Lancaster University Management School from 2014-09-01 to 2019-10-31 (a Lancaster Pure-sourced education entry ends 2019-10-23), then Research Associate at UVA's Darden School of Business from 2020-01-15 to 2022-08-24 and Assistant Professor at Drexel LeBow from 2022-09-01. The Drexel profile confirms the Darden research-associate post came before Drexel and gives the Lancaster PhD in Management Science; his Swiss medtech project-manager work is described as earlier industry experience.",
+      "phdYearVerified": null,
+      "phdInstitutionVerified": "Lancaster University",
+      "reason": "Second pass: following the triage step, the ORCID public API record supplies the dates the earlier review lacked: the Lancaster doctorate ended in October 2019 and the Darden research associate post began 15 January 2020, with nothing in between. No Lancaster thesis record was found in Lancaster EPrints, so the degree year is left unverified, although the ORCID end dates agree with the imported 2019.",
       "sources": [
         {
+          "url": "https://orcid.org/0000-0003-1878-8134",
+          "title": "ORCID record 0000-0003-1878-8134 (public API)",
+          "notes": "Education: Lancaster University (source Lancaster Pure), ending 2019-10-23. Employment: Lancaster LUMS Management Science PhD Student 2014-09-01 to 2019-10-31; UVA Darden Research Associate 2020-01-15 to 2022-08-24; Drexel LeBow Assistant Professor from 2022-09-01."
+        },
+        {
+          "url": "https://www.lebow.drexel.edu/people/oliverschaer",
+          "title": "Oliver Schaer - Drexel LeBow",
+          "notes": "Read with plain curl. Before Drexel, research associate at Darden; PhD in Management Science and MSc in Marketing Analytics from Lancaster; earlier project manager at a Swiss medtech company."
+        },
+        {
           "url": "https://researchdiscovery.drexel.edu/esploro/profile/oliver_schaer",
-          "title": "Drexel Research Discovery profile, Oliver Schaer",
-          "notes": "Opened. Lancaster PhD; research associate at Darden before Drexel; no dates."
+          "title": "Oliver Schaer - Drexel Research Discovery",
+          "notes": "Read in a headless browser. Education: BSc Lucerne; MSc and PhD Management Science, Lancaster; undated."
         }
       ],
       "source": "omlist"
@@ -35009,21 +35362,39 @@
     {
       "facultyId": "omlist-aff06c3569e967a9",
       "name": "Tim Schlaich",
-      "status": "unresolved",
-      "checkedAt": "2026-10-16",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "employer": "Copenhagen Business School",
+      "position": "Assistant Professor, Operations Management",
+      "placementYear": 2025,
+      "category": "unknown",
+      "evidenceUrl": "https://orcid.org/0000-0002-8777-4759",
+      "evidenceNote": "The self-maintained ORCID record lists Kuehne Logistics University from 2019-10-01 to 2025-06-30 (his doctoral period) and then Assistant Professor in Operations Management at CBS from 2025-09-01; no other post sits between. KLU's PhD-graduates page lists him as a KLU PhD graduate now Assistant Professor of Supply Chain Management at CBS. A Danish assistant professorship is not stated to be tenure-track, so the category is unknown.",
+      "phdYearVerified": null,
+      "phdInstitutionVerified": "Kühne Logistics University",
+      "reason": "Second pass: the ORCID public API record (linked from the CBS research portal) gives the dated sequence KLU 2019-10 to 2025-06, then CBS Assistant Professor from 1 September 2025; the KLU PhD-graduates page (plain curl, klu.org) confirms he is a KLU PhD graduate. No dissertation record with a defence date was found (the KLU profile under the-klu.org fails certificate checks), so the degree year is left unverified; the KLU end date agrees with the imported 2025.",
       "sources": [
         {
-          "url": "https://www.cbs.dk/en/research/departments/department-operations-management/tim-schlaich",
-          "title": "Tim Schlaich Profile",
-          "notes": "CBS faculty and research pages describe current research without dated doctoral-to-employment chronology."
+          "url": "https://orcid.org/0000-0002-8777-4759",
+          "title": "ORCID record 0000-0002-8777-4759 (public API)",
+          "notes": "Employment: Kuehne Logistics University 2019-10-01 to 2025-06-30 (no title); Copenhagen Business School, Operations Management, Assistant Professor from 2025-09-01."
         },
         {
-          "url": "https://research.cbs.dk/da/persons/tim-schlaich/",
-          "title": "Tim Schlaich Website",
-          "notes": "CBS faculty and research pages describe current research without dated doctoral-to-employment chronology."
+          "url": "https://www.klu.org/faculty-research/faculty/phd-graduates",
+          "title": "KLU - PhD graduates",
+          "notes": "Read with plain curl. Lists Tim Schlaich among KLU PhD graduates with current role Assistant Professor of Supply Chain Management, Copenhagen Business School."
+        },
+        {
+          "url": "https://research.cbs.dk/en/persons/tim-schlaich",
+          "title": "Tim Schlaich - CBS Research Portal",
+          "notes": "Read with plain curl; links ORCID iD."
+        },
+        {
+          "url": "https://www.cbs.dk/en/research/departments/department-operations-management/tim-schlaich",
+          "title": "Tim Schlaich | CBS staff page",
+          "notes": "Read with plain curl; research description only."
         }
       ],
-      "reason": "CBS faculty and research pages describe current research without dated doctoral-to-employment chronology.",
       "source": "omlist"
     },
     {
@@ -35152,15 +35523,25 @@
       "facultyId": "omlist-28ae3da320118152",
       "name": "Matthew Schneider",
       "status": "unresolved",
-      "checkedAt": "2026-10-16",
+      "checkedAt": "2026-10-17",
+      "reason": "Second pass: the LeBow profile (plain curl) says that before finishing his Cornell PhD he worked at the RAND Corporation from 2008 to 2013 (and earlier in the U.S. Navy, 2003-2005), and that before Drexel he was an Assistant Professor of Marketing at Northwestern, a Visiting Scholar at Cornell's Johnson School and Director of Research at Fort Rock Asset Management, with no dates or order for those three. The Drexel Research Discovery profile (headless browser) lists the Cornell PhD without a year; ORCID searches with Drexel or Northwestern affiliations found no record; one web search found no CV and the Cornell statistics dissertation-topics page it pointed to returns 404. The degree date and which of the three posts came first remain undocumented. Earlier review (2026-10-16): the Drexel biography identifies prior Northwestern faculty, Cornell visiting and Fort Rock roles but omits dates.",
       "sources": [
         {
           "url": "https://www.lebow.drexel.edu/people/matthewschneider",
-          "title": "Matthew Schneider Profile",
-          "notes": "Drexel biography identifies prior Northwestern faculty, Cornell visiting and Fort Rock Asset Management roles but omits doctoral and postdoctoral employment dates."
+          "title": "Matthew Schneider, PhD - Drexel LeBow",
+          "notes": "Read with plain curl. RAND 2008-2013 and Navy 2003-2005 before finishing the PhD; Northwestern assistant professor of marketing, Cornell Johnson visiting scholar and Fort Rock director of research before Drexel (undated)."
+        },
+        {
+          "url": "https://researchdiscovery.drexel.edu/esploro/profile/matthew_schneider",
+          "title": "Matthew Schneider - Drexel Research Discovery",
+          "notes": "Read in a headless browser. Education: BS USNA, MS CMU, PhD Cornell; undated."
+        },
+        {
+          "url": "https://stat.cornell.edu/academics/phd/recent-dissertation-topics/2013-0",
+          "title": "Cornell Statistics - recent dissertation topics 2013",
+          "notes": "Found by web search; returns 404 to curl and the fetch tool."
         }
       ],
-      "reason": "Drexel biography identifies prior Northwestern faculty, Cornell visiting and Fort Rock Asset Management roles but omits doctoral and postdoctoral employment dates.",
       "source": "omlist"
     },
     {
@@ -36119,13 +36500,23 @@
       "facultyId": "omlist-2ddf32f7fb370a4a",
       "name": "Wenjing Shen",
       "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "Drexel biography describes current role and scholarship without doctoral and initial employment chronology.",
+      "checkedAt": "2026-10-17",
+      "reason": "Second pass: the Drexel Research Discovery profile (read in a headless browser) gives her education as BE Tsinghua 2001 and PhD University of Michigan-Ann Arbor 2008, and the Mathematics Genealogy Project search also lists Shen, Wenjing, University of Michigan, 2008, so the imported degree year is supported. Neither it nor the LeBow profile (plain curl) gives any employment history, and no ORCID record or CV was found, so her first post-PhD job is undocumented. Earlier review (2026-10-16): the Drexel biography describes current role and scholarship without doctoral and initial employment chronology.",
       "sources": [
         {
+          "url": "https://researchdiscovery.drexel.edu/esploro/profile/wenjing_shen",
+          "title": "Wenjing Shen - Drexel Research Discovery",
+          "notes": "Read in a headless browser. Associate Professor of Operations Management; education: 2001 BE Tsinghua; 2008 PhD University of Michigan-Ann Arbor; no employment history."
+        },
+        {
           "url": "https://www.lebow.drexel.edu/people/wenjingshen",
-          "title": "Wenjing Shen public academic profile",
-          "notes": "Drexel biography describes current role and scholarship without doctoral and initial employment chronology."
+          "title": "Wenjing Shen, PhD - Drexel LeBow",
+          "notes": "Read with plain curl. Current role and publications only."
+        },
+        {
+          "url": "https://www.mathgenealogy.org/search.php",
+          "title": "Mathematics Genealogy Project search",
+          "notes": "Search result: Shen, Wenjing, University of Michigan, 2008."
         }
       ],
       "source": "omlist"
@@ -40468,13 +40859,23 @@
       "facultyId": "omlist-8b698ce2220a8405",
       "name": "Caterina Trevisan",
       "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "The CBS profile describes research and current affiliation without doctoral completion or first employment chronology.",
+      "checkedAt": "2026-10-17",
+      "reason": "Second pass: the University of Trento IRIS record of her doctoral thesis (Adopting the circular economy: supply chain and organizational perspectives; supervisor Marco Formentini; cycle XXXVIII) gives the final examination date 28 November 2025, which dates the degree. Her CBS Assistant Professor post is documented only by the CBS staff page and an undated ORCID employment entry (0009-0000-6975-9152), so it is not established when the CBS post began, whether it started before or after the November 2025 defence, or whether another post came first. Earlier review (2026-10-16): the CBS profile describes research and current affiliation without doctoral completion or first employment chronology.",
       "sources": [
         {
+          "url": "https://iris.unitn.it/handle/11572/467271",
+          "title": "Adopting the circular economy: supply chain and organizational perspectives (IRIS UniTrento)",
+          "notes": "Read with plain curl (full record). Doctoral thesis, Universita degli studi di Trento; defended 28 Nov 2025; academic year 2024-2025; cycle XXXVIII; supervisor Formentini, Marco."
+        },
+        {
+          "url": "https://orcid.org/0009-0000-6975-9152",
+          "title": "ORCID record 0009-0000-6975-9152 (public API)",
+          "notes": "One undated employment entry: Copenhagen Business School, Operations Management, Assistant professor."
+        },
+        {
           "url": "https://www.cbs.dk/en/research/departments/department-operations-management/caterina-trevisan",
-          "title": "Caterina Trevisan academic profile",
-          "notes": "The CBS profile describes research and current affiliation without doctoral completion or first employment chronology."
+          "title": "Caterina Trevisan | CBS staff page",
+          "notes": "Read with plain curl; research description; no dates."
         }
       ],
       "source": "omlist"
@@ -43469,19 +43870,42 @@
     {
       "facultyId": "omlist-139dfb3aa4460fba",
       "name": "Andreas Wieland",
-      "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "The CBS faculty biography and personal research website identify current research and appointments but do not provide a dated doctoral-to-employment chronology. Initial postdoctoral or faculty employment cannot be established from these pages.",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "employer": "Copenhagen Business School",
+      "position": "Assistant Professor of Supply Chain Management, Department of Operations Management",
+      "placementYear": 2014,
+      "category": "unknown",
+      "evidenceUrl": "https://orcid.org/0000-0003-0010-4240",
+      "evidenceNote": "The self-maintained ORCID record lists Researcher at TU Berlin (Economics and Management) from 2007-03-01 to 2013-12-31, then Assistant Professor of Supply Chain Management at CBS from 2014-04-15 to 2017-02-28 and Associate Professor from 2017-03-01. The DNB catalogue dates his dissertation (An empirical examination of strategies to cope with supply chains risks) Berlin, Techn. Univ., Diss., 2012. The TU Berlin post began well before the 2012 degree and simply continued to end-2013, so it is a pre-degree job; the CBS assistant professorship is the first new post-PhD job. A Danish assistant professorship is not stated to be tenure-track, so the category is unknown.",
+      "phdYearVerified": 2012,
+      "phdInstitutionVerified": "Technical University of Berlin",
+      "reason": "Second pass: the ORCID public API record (linked from the CBS research portal) gives the dated sequence TU Berlin researcher 2007-2013 then CBS Assistant Professor from April 2014, and the German National Library catalogue (SRU interface) records the TU Berlin dissertation as 2012. Applied the overlap rule: the TU Berlin researcher post held through the doctorate is not the first post-PhD job. scmresearch.org answers 403 to curl and, through the reader proxy, has no CV.",
       "sources": [
         {
+          "url": "https://orcid.org/0000-0003-0010-4240",
+          "title": "ORCID record 0000-0003-0010-4240 (public API)",
+          "notes": "Employment: TU Berlin, Economics and Management, Researcher 2007-03-01 to 2013-12-31; CBS Assistant Professor of SCM 2014-04-15 to 2017-02-28; CBS Associate Professor of SCM from 2017-03-01."
+        },
+        {
+          "url": "https://services.dnb.de/sru/dnb?version=1.1&operation=searchRetrieve&recordSchema=MARC21-xml&query=per%3D%22Wieland%2C%20Andreas%22%20and%20tit%3Dsupply",
+          "title": "Deutsche Nationalbibliothek catalogue (SRU) - Wieland, Andreas",
+          "notes": "Record 1026513472: An empirical examination of strategies to cope with supply chains risks; thesis note 'Berlin, Techn. Univ., Diss., 2012'. The d-nb.info page itself shows an Anubis bot check."
+        },
+        {
+          "url": "https://research.cbs.dk/en/persons/andreas-wieland",
+          "title": "Andreas Wieland - CBS Research Portal",
+          "notes": "Read with plain curl; links ORCID iD."
+        },
+        {
           "url": "https://www.cbs.dk/en/research/departments/department-operations-management/andreas-wieland",
-          "title": "Andreas Wieland — public academic profile",
-          "notes": "Professional biography and degree information reviewed for first-job evidence."
+          "title": "Andreas Wieland | CBS staff page",
+          "notes": "Read with plain curl; research and editorship description; no dated history."
         },
         {
           "url": "https://scmresearch.org/",
-          "title": "Andreas Wieland — public academic profile",
-          "notes": "Professional biography and degree information reviewed for first-job evidence."
+          "title": "Supply Chain Management Research (blog)",
+          "notes": "403 to curl; read through r.jina.ai: blog posts, no CV."
         }
       ],
       "source": "omlist"
@@ -49366,22 +49790,27 @@
       "name": "Nagesh Gavirneni",
       "status": "unresolved",
       "checkedAt": "2026-10-17",
-      "reason": "The Cornell Chronicle obituary (July 2023) states that he completed his Ph.D. in manufacturing and operations systems at Carnegie Mellon in 1997 and that, before joining Cornell (2004), he was an assistant professor in Indiana University's Kelley School and a research scientist at Schlumberger in Austin; it gives no dates or order for those two posts. The ORCID record has no entries and a web search found no CV, so the first post-PhD job (Schlumberger or Indiana) is not established. Degree: Carnegie Mellon, 1997, per the obituary.",
+      "reason": "Second pass: the triage route (advisor Sridhar Tayur's vita) failed: the CMU scholars page links tayur-vita.pdf on cmu.edu, which now returns 404, and the Internet Archive copy could not be reached (connection reset; the reader proxy is barred from web.archive.org). No dated CV or appointment record for the Schlumberger research-scientist and Indiana Kelley assistant-professor posts was found, so their order and start years after the 1997 Carnegie Mellon PhD remain undocumented. Earlier review (2026-10-17): the Cornell Chronicle obituary gives the 1997 CMU PhD and names Indiana (assistant professor) and Schlumberger (research scientist) before Cornell in 2004, without dates or order; ORCID is empty.",
       "sources": [
         {
-          "url": "https://omlist.edutool.org/schools/cornell-university/faculty/nagesh-gavirneni.html",
-          "title": "OM List profile - Nagesh Gavirneni",
-          "notes": "Imported directory profile; opened for links to the school page, ORCID and CV only. Not evidence of a first job."
+          "url": "https://news.cornell.edu/stories/2023/07/sc-johnson-college-professor-srinagesh-gavirneni-dies-56",
+          "title": "Cornell Chronicle obituary (July 2023)",
+          "notes": "Earlier review: PhD Carnegie Mellon 1997; before Cornell (2004) assistant professor at Indiana Kelley and research scientist at Schlumberger, undated."
         },
         {
-          "url": "https://news.cornell.edu/stories/2023/07/sc-johnson-college-professor-srinagesh-gavirneni-dies-56",
-          "title": "Cornell Chronicle - SC Johnson College professor Srinagesh Gavirneni dies at 56",
-          "notes": "Ph.D. Carnegie Mellon 1997; before Cornell: assistant professor at Indiana Kelley and research scientist at Schlumberger, Austin (no dates or order); joined Cornell's Johnson School in 2004."
+          "url": "https://scholars.cmu.edu/4733-sridhar-tayur",
+          "title": "Sridhar Tayur - CMU Scholars profile",
+          "notes": "Read with plain curl; links a vita PDF on cmu.edu."
+        },
+        {
+          "url": "https://www.cmu.edu/tepper/faculty-and-research/assets/docs/tayur-vita.pdf",
+          "title": "Sridhar Tayur vita (cmu.edu)",
+          "notes": "Attempted: HTTP 404; no archived copy reachable."
         },
         {
           "url": "https://orcid.org/0000-0002-4107-8539",
-          "title": "ORCID record - Nagesh Gavirneni",
-          "notes": "Record has no employment or education entries. Read through the ORCID public API (pub.orcid.org/v3.0/0000-0002-4107-8539/activities)."
+          "title": "ORCID record 0000-0002-4107-8539",
+          "notes": "Earlier review: no entries."
         }
       ],
       "source": "omlist"
@@ -51548,34 +51977,42 @@
     {
       "facultyId": "roster:cornell-university:nathan-kallus",
       "name": "Nathan Kallus",
-      "status": "unresolved",
+      "status": "verified",
       "checkedAt": "2026-10-17",
-      "reason": "The MIT DSpace record dates his Ph.D. thesis (From data to decisions through new interfaces between optimization and statistics, advisor Dimitris Bertsimas) 2015. The Cornell Tech profile and an Illinois seminar bio (April 2024) both say that before Cornell he was a visiting scholar at USC's Department of Data Sciences and Operations and a postdoctoral associate in MIT's Operations Research and Statistics group, but give no dates or order. His personal site (nathankallus.com) has no CV, his ORCID records (0000-0003-1672-0507 lists Cornell undated; 0000-0002-2757-1570 is empty) carry no chronology, and the Internet Archive could not be reached from this environment. Which of the two pre-Cornell posts was first, and when each began, is not established.",
+      "employer": "Massachusetts Institute of Technology",
+      "position": "Postdoctoral Associate, Operations Research and Statistics group",
+      "placementYear": 2015,
+      "category": "postdoc",
+      "evidenceUrl": "https://dbertsim.mit.edu/students",
+      "evidenceNote": "Dimitris Bertsimas's MIT group page lists Nathan Kallus among its graduated postdoctoral students for 2015-2016. The MIT DSpace record dates his Ph.D. thesis (advisor Bertsimas, Operations Research Center) 2015, and the Cornell Tech profile says that before Cornell he was a postdoctoral associate in MIT's Operations Research and Statistics group and also a visiting scholar at USC's Department of Data Sciences and Operations. The USC visit is undated; since the MIT postdoc began in the degree year, it is recorded as the first post-PhD job. Verifier: kept. The Cornell ORIE profile (also opened) repeats that before Cornell he was a visiting scholar at USC's Department of Data Sciences and Operations and a postdoctoral associate at MIT, still without dates; the MIT DSpace record of the 2015 thesis was accessioned on 17 September 2015. No opened source dates the USC visit, so nothing shows it began between the 2015 degree and the MIT postdoc that the advisor's page dates from 2015; the Cornell wording places the USC visit immediately before Cornell.",
+      "phdYearVerified": 2015,
+      "phdInstitutionVerified": "Massachusetts Institute of Technology",
+      "reason": "Second pass: following the triage step, the advisor's MIT group page (dbertsim.mit.edu/students, plain curl) dates the MIT postdoc 2015-2016, the year of the 2015 MIT thesis (DSpace). The USC visiting-scholar post named on the Cornell Tech profile carries no date and is taken to fall within or after the postdoc; a verifier should confirm it did not precede the postdoc in 2015. Bertsimas's CV PDF (dbertsim.mit.edu/pdfs/cv.pdf) returns 404.",
       "sources": [
         {
-          "url": "https://tech.cornell.edu/people/nathan-kallus/",
-          "title": "Cornell Tech - Nathan Kallus",
-          "notes": "Bio: PhD MIT; before Cornell, visiting scholar at USC Data Sciences and Operations, and postdoctoral associate at MIT ORS group; no dates."
+          "url": "https://dbertsim.mit.edu/students",
+          "title": "Dimitris Bertsimas group - students (MIT)",
+          "notes": "Read with plain curl. 'Graduated Postdoctoral Students' list includes Nathan Kallus, 2015-2016."
         },
         {
           "url": "https://hdl.handle.net/1721.1/98570",
-          "title": "MIT DSpace - From data to decisions through new interfaces between optimization and statistics (Kallus, Nathan), Ph.D. 2015",
-          "notes": "Read through the repository's public search API: Ph.D., 2015, advisor Dimitris Bertsimas."
+          "title": "From data to decisions through new interfaces between optimization and statistics (MIT DSpace)",
+          "notes": "Thesis: Ph.D., MIT, Sloan School of Management, Operations Research Center, 2015; advisor Dimitris Bertsimas; date issued 2015."
         },
         {
-          "url": "https://calendars.illinois.edu/detail/7604/33481982",
-          "title": "Research Seminars @ Illinois - Nathan Kallus (4 April 2024)",
-          "notes": "Speaker bio repeats the USC visiting scholar and MIT postdoctoral associate roles without dates."
+          "url": "https://tech.cornell.edu/people/nathan-kallus/",
+          "title": "Nathan Kallus - Cornell Tech profile",
+          "notes": "PhD in operations research from MIT; before Cornell, visiting scholar at USC's Department of Data Sciences and Operations and postdoctoral associate at MIT's Operations Research and Statistics group (undated)."
         },
         {
           "url": "https://nathankallus.com/",
-          "title": "Nathan Kallus - personal website",
-          "notes": "Lists students and publications; no CV or employment dates."
+          "title": "Nathan Kallus personal site",
+          "notes": "Read with plain curl; research group and publications; no CV or dated history."
         },
         {
-          "url": "https://orcid.org/0000-0003-1672-0507",
-          "title": "ORCID - Nathan Kallus",
-          "notes": "Public API read: one undated employment entry (Cornell University); no education entries."
+          "url": "https://www.orie.cornell.edu/faculty-directory/nathan-kallus",
+          "title": "Nathan Kallus - Cornell ORIE faculty directory",
+          "notes": "Read with plain curl by the verifier. Ph.D. (Operations Research), MIT 2015; before Cornell a Visiting Scholar at USC Data Sciences and Operations and a Postdoctoral Associate at MIT's Operations Research and Statistics group (undated)."
         }
       ],
       "source": "faculty-page"
@@ -52020,22 +52457,27 @@
       "name": "Reed Harder",
       "status": "unresolved",
       "checkedAt": "2026-10-17",
-      "reason": "The Dartmouth profile gives PhD, Engineering Sciences, Dartmouth 2020 and current title Lecturer, with no history. An undated Coursera instructor bio (Dartmouth College course) says he is a Research Scientist with Multivariate Systems and recently completed a PhD in Operations Research at Thayer; it gives no start date, so it cannot be established that this role began after the degree or was his first post-PhD job. ORCID 0000-0001-9281-8974 has no public employment entries. Lead: Multivariate Systems, research scientist.",
+      "reason": "Second pass: the Multivariate Systems team page (multivariatesystems.com/about.html, plain curl) lists only its founders and director of operations and does not name him, so the research-scientist role from the Coursera bio still has no start date. The Dartmouth Engineering profile still gives only PhD, Engineering Sciences, Dartmouth 2020 and the current Lecturer title, and ORCID 0000-0001-9281-8974 still has no entries. Whether the Multivariate Systems role began after the degree and whether it was his first post-PhD job remain undocumented. Earlier review (2026-10-17): the Dartmouth profile and an undated Coursera bio give the 2020 PhD and a Multivariate Systems research-scientist role without dates.",
       "sources": [
         {
           "url": "https://engineering.dartmouth.edu/community/faculty/reed-harder",
-          "title": "Dartmouth Engineering — Reed Harder",
-          "notes": "Lecturer; AB Dartmouth 2013; PhD Engineering Sciences, Dartmouth 2020; no positions."
+          "title": "Reed Harder - Dartmouth Engineering",
+          "notes": "Read with plain curl. Lecturer; PhD Engineering Sciences, Dartmouth 2020; no history."
+        },
+        {
+          "url": "https://www.multivariatesystems.com/about.html",
+          "title": "Multivariate Systems - The Team",
+          "notes": "Read with plain curl. Lists Paradis, Vaze, Elliott, Halter and Ronzio; Harder not listed."
         },
         {
           "url": "https://www.coursera.org/instructor/~99544675",
-          "title": "Coursera — Reed H. Harder, instructor (Dartmouth College)",
-          "notes": "Undated bio: Research Scientist with Multivariate Systems; recently completed a PhD in Operations Research at Thayer."
+          "title": "Reed Harder - Coursera instructor bio",
+          "notes": "Earlier review: research scientist with Multivariate Systems; recently completed a PhD in Operations Research at Thayer; undated."
         },
         {
           "url": "https://orcid.org/0000-0001-9281-8974",
-          "title": "ORCID record 0000-0001-9281-8974 (Reed Harder)",
-          "notes": "Read through public API; no employment or education entries."
+          "title": "ORCID record 0000-0001-9281-8974 (public API)",
+          "notes": "Name only; no entries."
         }
       ],
       "source": "faculty-page"
@@ -52045,12 +52487,12 @@
       "name": "Robert Graves",
       "status": "unresolved",
       "checkedAt": "2026-10-17",
-      "reason": "The Dartmouth profile confirms PhD, Industrial Engineering, State University of New York at Buffalo 1974 (BSIE Syracuse 1967, MSIE Buffalo 1969), but gives no employment chronology; a search found only the same profile (which elsewhere describes him as professor emeritus at Rensselaer Polytechnic Institute, undated). No CV or dated history was found, so the first post-PhD job is undocumented.",
+      "reason": "Second pass: the Dartmouth Engineering profile (plain curl) was re-read: it gives the 1974 Buffalo PhD, his emeritus titles at Dartmouth, Tuck and Rensselaer, awards (including RPI's School of Engineering Research Award, 2003) and society memberships (INFORMS since 1973), but no appointment dates. No RPI page, obituary or CV with his first post after 1974 was found. Earlier review (2026-10-17): the Dartmouth profile confirms PhD, Industrial Engineering, SUNY Buffalo 1974 but gives no employment chronology.",
       "sources": [
         {
           "url": "https://engineering.dartmouth.edu/community/faculty/robert-graves",
-          "title": "Dartmouth Engineering — Robert Graves",
-          "notes": "John H. Krehbiel Sr. Professor for Emerging Technologies, Emeritus; PhD IE SUNY Buffalo 1974; awards from 1992; no dated positions."
+          "title": "Robert Graves - Dartmouth Engineering",
+          "notes": "Read with plain curl. Krehbiel Professor Emeritus; Professor Emeritus, RPI; BSIE Syracuse 1967, MSIE Buffalo 1969, PhD Buffalo 1974; no appointment dates."
         }
       ],
       "source": "faculty-page"
@@ -52330,27 +52772,22 @@
       "name": "Ramnath K Chellappa",
       "status": "unresolved",
       "checkedAt": "2026-10-17",
-      "reason": "The Mathematics Genealogy Project gives his Ph.D. as University of Texas at Austin, 1997 (dissertation Electronic Commerce for Digital Product Companies). His ORCID record lists Emory (Goizueta) from 2005-08. The Goizueta profile says that before Emory he 'served on the faculty of Marshall School of Business, University of Southern California from' (the date is missing from the page) and founded USC's eBizLab; no title or start date is given. Whether USC Marshall was his first post-PhD job, and when it began, is not documented in the sources opened; one web search found no CV, and his old Emory page (bus.emory.edu/ram/) returns 404.",
+      "reason": "Second pass: the Goizueta profile (plain curl) still reads 'Prior to joining Emory University, Chellappa served on the faculty of Marshall School of Business, University of Southern California from' with the date missing, and gives no title; it links only papers on the old bus.emory.edu/ram site. No CV was found, so whether USC Marshall was his first post after the 1997 Texas PhD, and when it began, remain undocumented. Earlier review (2026-10-17): the Mathematics Genealogy Project gives the UT Austin PhD in 1997; ORCID lists Emory from 2005-08; the profile's USC date is missing.",
       "sources": [
         {
           "url": "https://goizueta.emory.edu/faculty/profiles/ramnath-k-chellappa",
-          "title": "Ramnath K. Chellappa - Goizueta Business School",
-          "notes": "Prior to Emory on the faculty of USC Marshall (start date blank on page); no rank."
-        },
-        {
-          "url": "https://orcid.org/0000-0001-9522-8849",
-          "title": "ORCID - Ramnath Chellappa",
-          "notes": "Public API read: Professor, Goizueta, Emory, from 2005-08; no earlier entries."
+          "title": "Ramnath K Chellappa - Goizueta profile",
+          "notes": "Read with plain curl. USC Marshall faculty before Emory (start date missing on the page); founding director of USC eBizLab; PhD McCombs, UT Austin."
         },
         {
           "url": "https://www.mathgenealogy.org/id.php?id=123137",
-          "title": "Mathematics Genealogy Project - Ramnath K. Chellappa",
-          "notes": "Ph.D. University of Texas at Austin 1997."
+          "title": "Ramnath Chellappa - Mathematics Genealogy Project",
+          "notes": "Earlier review: Ph.D. University of Texas at Austin 1997."
         },
         {
-          "url": "http://www.bus.emory.edu/ram/",
-          "title": "Former Emory personal page",
-          "notes": "Returns 404."
+          "url": "https://orcid.org/0000-0001-9522-8849",
+          "title": "ORCID record 0000-0001-9522-8849",
+          "notes": "Earlier review: Emory (Goizueta) from 2005-08."
         }
       ],
       "source": "faculty-page"
