@@ -36,6 +36,8 @@ for (const r of roster.records) {
   if (!v || v.status !== 'confirmed-faculty') continue;
   const shown = `${v.areaConfirmed || ''} | ${v.titleConfirmed || ''}`;
   if (!OPERATIONS.test(shown)) continue;
+  // An honorary title is not an appointment, so the person is not counted as academic staff (decided 17 October 2026).
+  if (/\bhonorary\b/i.test(v.titleConfirmed || '')) continue;
   const sources = (v.sources || []).map(s => s.url).filter(Boolean);
   records.push({
     id: r.id,
@@ -86,6 +88,7 @@ const metadata = {
   limitations: [
     'A listing and a profile establish the appointment and the field shown on the retrieval date; a doctorate is what an opened page states, with that page as phdInstitutionSourceUrl, and is not an independently verified degree.',
     'The discipline label is derived from the department name shown (industrial or systems engineering; supply chain or logistics; decision sciences, management science or operations research; otherwise operations) and is not a source classification.',
+    'People whose only title is honorary are left out, because an honorary title is not an appointment.',
     'Whole-college directories were reviewed in full; only the people whose own page shows an operations area or title are included here, so the file is not a census of operations faculty at these universities.',
     'No first job is known for anyone in this file until it is researched and published in data/placements.json through the research ledger.'
   ]

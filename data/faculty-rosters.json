@@ -34,11 +34,11 @@
    },
    "reviewed": 3787,
    "reviewOutcomes": {
-    "not-listed": 355,
-    "confirmed-faculty": 3138,
+    "not-listed": 358,
+    "confirmed-faculty": 3147,
     "extraction-noise": 250,
-    "unresolved": 17,
-    "same-as-om-list": 27
+    "same-as-om-list": 27,
+    "unresolved": 5
    },
    "universities": 95,
    "omListProfilesSeen": 284
@@ -10036,13 +10036,34 @@
    "firstJob": null,
    "verification": "unverified",
    "review": {
-    "status": "unresolved",
-    "checkedAt": "2026-10-16",
-    "reason": "The roster's facultyUrl is the Fulton Schools faculty awards-and-distinctions listing (names under honor headings, not a staff directory), so roster titles are award categories, often misaligned. The roster has no profile URL; the awards page lists Cun-Zheng Ning under OSA Fellows and under IEEE Fellows with an '(emeritus)' annotation but gives no link, and three web searches found no ASU profile or directory page for him (only third-party profiles, which were not opened). Current ASU status and doctorate could not be verified from any opened page.",
+    "status": "not-listed",
+    "checkedAt": "2026-10-17",
+    "reason": "Re-checked on 2026-10-17. The only ASU page that names him is still the Fulton Schools awards-and-distinctions listing (re-read with curl). It lists Cun-Zheng Ning under OSA Fellows and as 'Cun-Zheng Ning (emeritus)' under IEEE Fellows. The roster title 'President’s Professor' is the next heading on that page, not his title. ASU's public faculty and staff directory data (the search.asu.edu web-directory endpoint, queried with curl) has no record for him under 'Cun-Zheng', 'Cunzheng' or 'Zheng Ning', or among all 137 results for 'ning'. The same directory does list the other emeriti from the awards page that were checked: Constantine Balanis and David Ferry (Regents' Professor Emeritus), Joseph Palais (Professor Emeritus), Gennady Gildenblat and Richard Kiehl. The ECEE faculty-by-rank page (rendered in headless Chromium, because the ECEE site answers curl with a Cloudflare 403) does not list him either. His Alexander von Humboldt Foundation network profile (Humboldt Research Award programme, 2020; first funding 1 May 2022) gives his current position as 'Professor W-3 und Äquivalente' and his current institution as Shenzhen Technology University, College of Integrated Circuits and Optoelectronic Chips, Shenzhen, China. So he is a former ASU faculty member now at another university. No opened ASU staff page shows an emeritus appointment, and no page states a doctorate. Earlier check (2026-10-16): the Fulton awards listing was the only ASU page found, it gave no profile link, and web searches found no ASU profile, so his current status and doctorate could not be verified.",
     "sources": [
      {
       "url": "https://engineering.asu.edu/faculty/",
-      "title": "Fulton Schools faculty (awards and distinctions listing, Ira A. Fulton Schools of Engineering)"
+      "title": "Fulton Schools faculty awards and distinctions listing, Ira A. Fulton Schools of Engineering",
+      "notes": "Re-read with curl on 2026-10-17. Lists 'Cun-Zheng Ning' under OSA Fellows (followed by the heading President’s Professor) and 'Cun-Zheng Ning (emeritus)' under IEEE Fellows; no link or profile."
+     },
+     {
+      "url": "https://search.asu.edu/api/v1/webdir-profiles/faculty-staff/filtered?query=ning&size=50&page=1",
+      "title": "ASU Search faculty and staff directory data (public JSON endpoint), query 'ning'",
+      "notes": "Read with curl on 2026-10-17; all three pages (137 results) contain no Cun-Zheng Ning. Queries for 'cun-zheng', 'cunzheng', 'Zheng Ning' and 'cning' were also run against the same endpoint and found no such record."
+     },
+     {
+      "url": "https://search.asu.edu/api/v1/webdir-profiles/faculty-staff/filtered?query=Balanis&size=10",
+      "title": "ASU Search faculty and staff directory data, control query for an emeritus on the same awards page",
+      "notes": "Read with curl on 2026-10-17. Returns Constantine Balanis with the titles Regents' Professor Emeritus and Emeritus Professor, so the directory does include emeriti. Similar queries returned David Ferry, Joseph Palais, Gennady Gildenblat and Richard Kiehl."
+     },
+     {
+      "url": "https://faculty.engineering.asu.edu/directory/ecee/rank",
+      "title": "School of Electrical, Computer and Energy Engineering faculty by rank, Fulton Schools faculty directory",
+      "notes": "ecee.engineering.asu.edu/faculty/ answers curl with a Cloudflare 403 and redirects in a browser to this page. Rendered in headless Chromium on 2026-10-17; it does not list Ning."
+     },
+     {
+      "url": "https://www.humboldt-foundation.de/vernetzen/recherche-im-humboldt-netzwerk/einzelansicht/1142619/%7B%7Bhref%7D%7D",
+      "title": "Prof. Dr. Cun-Zheng Ning, Humboldt network profile, Alexander von Humboldt Foundation",
+      "notes": "Found by web search. The same profile path without the trailing segment returned 404; this URL was read with curl on 2026-10-17. Current position 'Professor W-3 und Äquivalente'; current institution Shenzhen Technology University, College of Integrated Circuits and Optoelectronic Chips; Humboldt Research Award programme 2020, first funding 1 May 2022, hosted at TU Berlin."
      }
     ],
     "profileUrl": null,
@@ -12149,26 +12170,34 @@
    "firstJob": null,
    "verification": "unverified",
    "review": {
-    "status": "unresolved",
-    "checkedAt": "2026-10-16",
-    "reason": "The Tepper Operations Management area page lists 'Joe Beaman, Adjunct Professor of Management; Director of Carnegie Mellon Dining Services' with a profile link to /joe-beaman, but that URL (https://www.cmu.edu/joe-beaman) returns 404 and the one alternative tried (the Tepper faculty-profiles path for his name) also returns 404, so no page of his own could be opened to confirm the appointment or any doctorate. The listing itself describes a primarily administrative (dining services) role with an adjunct title.",
+    "status": "confirmed-faculty",
+    "checkedAt": "2026-10-17",
+    "reason": "Re-checked on 2026-10-17 with curl. The Tepper School's Operations Management area page lists Joe Beaman among its 11 'Operations Management Faculty' bios as 'Adjunct Professor of Management; Director of Carnegie Mellon Dining Services'. His bio card still links to /joe-beaman, which returns HTTP 404. The Tepper faculty-profile slugs joe-beaman, beaman-joe (the site's last-first pattern, as in kekre-sham) and joseph-beaman also return 404, so he has no individual page. CMU Dining Services' 'Who We Are' page lists Joe Beaman as Director of Dining Services. Under the integrator rule for a person listed with a faculty rank on the school's own page but without an individual page, he is confirmed from the area listing, with that page as the profile URL. The rank is an adjunct title held by a university administrator. No page states a doctorate. Earlier check (2026-10-16): the area page listed him with this title, but his profile link and one alternative Tepper URL returned HTTP 404, so no page of his own could be opened.",
     "sources": [
      {
       "url": "https://www.cmu.edu/tepper/faculty-and-research/academic-areas/operations-management",
-      "title": "Operations Management area faculty, Tepper School of Business"
+      "title": "Operations Management area faculty, Tepper School of Business",
+      "notes": "Read with curl on 2026-10-17. 'Operations Management Faculty ... of 11 bios'; entry 'Joe Beaman, Adjunct Professor of Management; Director of Carnegie Mellon Dining Services', linking to /joe-beaman."
      },
      {
       "url": "https://www.cmu.edu/joe-beaman",
-      "title": "Joe Beaman profile link from the area page (HTTP 404)"
+      "title": "Joe Beaman profile link from the area page",
+      "notes": "HTTP 404 on 2026-10-17."
      },
      {
-      "url": "https://www.cmu.edu/tepper/faculty-and-research/faculty-profiles/joe-beaman",
-      "title": "Alternative Tepper faculty-profiles URL tried (HTTP 404)"
+      "url": "https://www.cmu.edu/tepper/faculty-and-research/faculty-profiles/beaman-joe",
+      "title": "Tepper faculty-profile URL, last-first slug (tried)",
+      "notes": "HTTP 404 on 2026-10-17; joseph-beaman also returned 404."
+     },
+     {
+      "url": "https://www.cmu.edu/dining/about-us/who-we-are/index.html",
+      "title": "Who We Are, Carnegie Mellon University Dining Services",
+      "notes": "Read with curl on 2026-10-17. Lists 'Joe Beaman, Director of Dining Services'."
      }
     ],
-    "profileUrl": null,
-    "titleConfirmed": null,
-    "areaConfirmed": null,
+    "profileUrl": "https://www.cmu.edu/tepper/faculty-and-research/academic-areas/operations-management",
+    "titleConfirmed": "Adjunct Professor of Management; Director of Carnegie Mellon Dining Services",
+    "areaConfirmed": "Operations Management (Tepper School of Business area faculty list)",
     "phdInstitution": null,
     "phdYear": null,
     "phdSourceUrl": null,
@@ -21128,22 +21157,29 @@
    "firstJob": null,
    "verification": "unverified",
    "review": {
-    "status": "unresolved",
-    "checkedAt": "2026-10-16",
-    "reason": "The two opened pages conflict: her own profile page shows the title Academic Advisor (a staff role) with an MBA (Clemson University 2022) and a BS in Civil Engineering (Georgia Tech 1998), while the college directory lists her as Lecturer in the Department of Marketing. Neither page places her in operations, and no doctorate is shown.",
+    "status": "confirmed-faculty",
+    "checkedAt": "2026-10-17",
+    "reason": "Re-checked on 2026-10-17 with curl, this time adding the Department of Marketing's own Faculty and Staff page. That page lists Kristy Lockhart under its 'Faculty' heading as Lecturer (office 330C Wilbur O. and Ann Powers Hall), linking to her profile. The college directory again lists her as Lecturer, Department of Marketing. Her self-updated profile page ('Update Profile') still shows Academic Advisor at office 309L, but the department page now lists David O'Nan, Advisor, at 309L under its separate 'Staff' heading, so the profile title appears to be out of date. The department page is used as the profile URL because it is the page that shows her current title. Her area is marketing, not operations. Her profile's Educational Background lists a Masters Business Administration (Clemson University 2022) and a BS in Civil Engineering (Georgia Institute of Technology 1998), and no doctorate. Earlier check (2026-10-16): her profile page showed Academic Advisor (a staff role) while the college directory showed Lecturer in Marketing, and the conflict was left unsettled.",
     "sources": [
      {
-      "url": "https://www.clemson.edu/business/about/profiles/KRISTYL",
-      "title": "Kristy Lockhart, Clemson University College of Business profile"
+      "url": "https://www.clemson.edu/business/departments/marketing/faculty-staff.html",
+      "title": "Department of Marketing Faculty and Staff, Wilbur O. and Ann Powers College of Business, Clemson University",
+      "notes": "Read with curl on 2026-10-17. Under 'Faculty': 'Kristy Lockhart, Lecturer, 330C Wilbur O. and Ann Powers Hall', linked to her profile. Under 'Staff': advisors including 'David O’Nan, Advisor, 309L Wilbur O. and Ann Powers Hall'."
      },
      {
       "url": "https://www.clemson.edu/business/about/directory.html",
-      "title": "Clemson University Wilbur O. and Ann Powers College of Business directory"
+      "title": "Wilbur O. and Ann Powers College of Business directory",
+      "notes": "Re-read with curl on 2026-10-17. 'Kristy Lockhart, Lecturer, Department of Marketing'."
+     },
+     {
+      "url": "https://www.clemson.edu/business/about/profiles/KRISTYL",
+      "title": "Kristy Lockhart, Clemson University College of Business profile",
+      "notes": "Re-read with curl on 2026-10-17. Still shows 'Academic Advisor', office 309L Powers Hall; Educational Background: MBA, Clemson University 2022; BS Civil Engineering, Georgia Institute of Technology 1998."
      }
     ],
-    "profileUrl": null,
-    "titleConfirmed": null,
-    "areaConfirmed": null,
+    "profileUrl": "https://www.clemson.edu/business/departments/marketing/faculty-staff.html",
+    "titleConfirmed": "Lecturer",
+    "areaConfirmed": "Department of Marketing",
     "phdInstitution": null,
     "phdYear": null,
     "phdSourceUrl": null,
@@ -66552,17 +66588,34 @@
    "firstJob": null,
    "verification": "unverified",
    "review": {
-    "status": "unresolved",
-    "checkedAt": "2026-10-16",
-    "reason": "The IIT Bombay IEOR faculty page lists him under Visiting Faculty as Visiting Assistant Professor with the affiliation '(Assistant Professor, Dept. of Electronics, Information and Bioengineering, Politecnico di Milano, Italy)', but his own Politecnico di Milano page carries the status label 'Retired professors' under his name while its biography says 'Pietro Belotti is Associate Professor in the Operations Research group' and states 'a Doctoral degree in 2003, both in Computer Engineering' from the Politecnico di Milano. The two pages conflict on his current status, and he is not IIT Bombay faculty beyond the visiting listing, so his current position cannot be settled from the opened pages.",
+    "status": "not-listed",
+    "checkedAt": "2026-10-17",
+    "reason": "Re-checked on 2026-10-17 with curl. The IIT Bombay IEOR faculty page still lists him only under 'Visiting Faculty' as Visiting Assistant Professor, with the affiliation '(Assistant Professor, Dept. of Electronics, Information and Bioengineering, Politecnico di Milano, Italy)' and a polimi.it address. Politecnico's DEIB department settles the earlier conflict. Its role lists put 'Belotti Pietro Luigi' on the 'Retired professors' list (people-role-list/PFS) and not on the 'Associate professor' list, and the Italian version of his DEIB page labels him 'Professori fuori servizio' (professors no longer in service). The biography on that page ('Associate Professor in the Operations Research group'; 'a Doctoral degree in 2003, both in Computer Engineering, from the Politecnico di Milano') is therefore an old CV, and the home post shown on the IIT Bombay page is no longer current. He is not among IIT Bombay's own core, adjunct, associated or emeritus faculty. Unlike the visitors confirmed from their home-university pages (Kavita Ramanan, Ketan Savla, Reinoud Joosten), no opened page shows him in a current faculty post. He is therefore recorded as not IIT Bombay academic staff, as was Subodha Dharmapriya, a visitor on the same page. Earlier check (2026-10-16): the IIT Bombay page listed him as a visitor from Politecnico di Milano, while his Politecnico page carried a 'Retired professors' label above a biography calling him Associate Professor, and the conflict was left unsettled.",
     "sources": [
      {
-      "url": "https://www.deib.polimi.it/eng/people/details/85850",
-      "title": "Belotti Pietro Luigi | DEIB, Politecnico di Milano"
+      "url": "http://www.ieor.iitb.ac.in/people/faculty",
+      "title": "Faculty | Industrial Engineering and Operations Research, IIT Bombay",
+      "notes": "Re-read with curl on 2026-10-17. Under 'Visiting Faculty': 'Pietro Belotti (Assistant Professor, Dept. of Electronics, Information and Bioengineering, Politecnico di Milano, Italy) Visiting Assistant Professor', polimi.it address."
      },
      {
-      "url": "http://www.ieor.iitb.ac.in/people/faculty",
-      "title": "Faculty | Industrial Engineering and Operations Research, IIT Bombay"
+      "url": "https://www.deib.polimi.it/eng/people/details/85850",
+      "title": "Belotti Pietro Luigi | DEIB, Politecnico di Milano",
+      "notes": "Re-read with curl on 2026-10-17. Label 'Retired professors' under the name; the Curriculum Vitae text calls him Associate Professor and states 'a Laurea degree in 1999 and a Doctoral degree in 2003, both in Computer Engineering, from the Politecnico di Milano'."
+     },
+     {
+      "url": "https://www.deib.polimi.it/ita/personale/dettagli/85850",
+      "title": "Belotti Pietro Luigi | DEIB, Politecnico di Milano (Italian page)",
+      "notes": "Found by web search and read with curl on 2026-10-17. Label 'Professori fuori servizio' under the name, above the same English CV text."
+     },
+     {
+      "url": "https://www.deib.polimi.it/eng/people-role-list/PFS",
+      "title": "DEIB people by role: Retired professors",
+      "notes": "Read with curl on 2026-10-17. The list includes 'Belotti Pietro Luigi'."
+     },
+     {
+      "url": "https://www.deib.polimi.it/eng/people-role-list/A",
+      "title": "DEIB people by role: Associate professor",
+      "notes": "Read with curl on 2026-10-17. Belotti is not on this list."
      }
     ],
     "profileUrl": null,
@@ -66707,13 +66760,29 @@
    "firstJob": null,
    "verification": "unverified",
    "review": {
-    "status": "unresolved",
-    "checkedAt": "2026-10-16",
-    "reason": "No personal page could be opened: the roster's LinkedIn URL refused the fetch (HTTP 999) and the IEOR site has no profile page for him (https://www.ieor.iitb.ac.in/Royston%20Fernandes returned 404). The IEOR faculty page lists him under Visiting Faculty as Guest Lecturer with the credentials '(B.E. (Hons) Production, M.O.M., C.P.I.M.)' and no doctorate, i.e. an external practitioner guest lecturer rather than regular faculty.",
+    "status": "not-listed",
+    "checkedAt": "2026-10-17",
+    "reason": "Re-checked on 2026-10-17. The IIT Bombay IEOR faculty page (curl) still lists him only under 'Visiting Faculty' as Guest Lecturer. The entry shows the credentials '(B.E. (Hons) Production, M.O.M., C.P.I.M.)', practitioner research interests (Supply Chain Strategy, Operations Excellence, Program Management, Supply Chain Analytics) and a link only to a LinkedIn profile. The IEOR site still has no page for him: https://www.ieor.iitb.ac.in/Royston%20Fernandes returns 404 over both https and http, while the same URL pattern serves JV Prasad's page. The LinkedIn profile refused every route: HTTP 999 to curl, a sign-in wall in headless Chromium, and HTTP 403 (anonymous access blocked) from the r.jina.ai reader proxy. Guest Lecturer is not a faculty rank, and no opened page gives him an IIT Bombay appointment beyond that entry. This follows the treatment of Subodha Dharmapriya, a Guest Lecturer on the same page recorded not-listed. JV Prasad, also listed there as Guest Lecturer, was confirmed only because his own IEOR page shows Visiting Assistant Professor. No doctorate is listed. Earlier check (2026-10-16): no personal page could be opened (LinkedIn returned HTTP 999 and the IEOR profile URL returned 404), and the faculty page showed him only as a practitioner Guest Lecturer.",
     "sources": [
      {
       "url": "http://www.ieor.iitb.ac.in/people/faculty",
-      "title": "Faculty | Industrial Engineering and Operations Research, IIT Bombay"
+      "title": "Faculty | Industrial Engineering and Operations Research, IIT Bombay",
+      "notes": "Re-read with curl on 2026-10-17. Under 'Visiting Faculty': 'Royston Fernandes (B.E. (Hons) Production, M.O.M., C.P.I.M.) Guest Lecturer', linked only to linkedin.com/in/roystonfernandes."
+     },
+     {
+      "url": "https://www.ieor.iitb.ac.in/Royston%20Fernandes",
+      "title": "IEOR person-page URL pattern for Royston Fernandes (tried)",
+      "notes": "HTTP 404 over https and http on 2026-10-17."
+     },
+     {
+      "url": "https://www.ieor.iitb.ac.in/JV%20Prasad",
+      "title": "JV Prasad | IEOR, IIT Bombay (control for the person-page URL pattern)",
+      "notes": "HTTP 200 on 2026-10-17, so the IEOR site does serve person pages at this pattern; none exists for Fernandes."
+     },
+     {
+      "url": "https://www.linkedin.com/in/roystonfernandes/",
+      "title": "Royston Fernandes LinkedIn profile (refused)",
+      "notes": "Not readable on 2026-10-17: HTTP 999 to curl, a LinkedIn authwall in headless Chromium, and HTTP 403 AbuseAlleviationError from https://r.jina.ai/ for this URL."
      }
     ],
     "profileUrl": null,
@@ -107000,30 +107069,24 @@
    "firstJob": null,
    "verification": "unverified",
    "review": {
-    "status": "unresolved",
-    "checkedAt": "2026-10-16",
-    "reason": "His Smeal directory page (shown as Mauricio Maldonado Guillen) gives only the department Supply Chain & Information Systems and an email, with no title and no Education section, and the same directory also lists administrative staff, so it does not establish academic-staff status on its own. The SCIS faculty listing that carries the Assistant Clinical Professor title returned HTTP 503 on every attempt (www and non-www hosts and the parent /scis/people page), the Wayback Machine is not reachable from this tool, and two web searches found no page naming him.",
+    "status": "confirmed-faculty",
+    "checkedAt": "2026-10-17",
+    "reason": "Re-checked on 2026-10-17. The SCIS department faculty page still timed out to plain curl, so it was read in headless Chromium and also through the r.jina.ai reader proxy. Under 'Faculty Contact Information' it lists 'Maldonado-Guillen, Mauricio' as Assistant Clinical Professor of Supply Chain Management (office 426A Business Building), linking to his directory page mem7609 with the same psu.edu address. That directory page (curl, shown as Mauricio Maldonado Guillen) now sits under the 'Research Faculty Directory' heading. It gives the department Supply Chain & Information Systems and lists courses taught (FIN 408, SCM 301, SCM 450W, SCM 597). It has no title line and no Education section, so no doctorate is stated. Earlier check (2026-10-16): his directory page showed only the department and an email, with no title, and the SCIS faculty list carrying his title returned HTTP 503 on every attempt.",
     "sources": [
      {
-      "url": "https://directory.smeal.psu.edu/mem7609",
-      "title": "Mauricio Maldonado Guillen, Smeal College of Business directory entry (no title shown)"
-     },
-     {
-      "url": "https://directory.smeal.psu.edu/?name=M",
-      "title": "Smeal College of Business directory, M section"
-     },
-     {
-      "url": "https://directory.smeal.psu.edu/graduate/?dept=scis",
-      "title": "Smeal College of Business directory filtered to Supply Chain & Information Systems"
-     },
-     {
       "url": "https://www.smeal.psu.edu/scis/people/faculty",
-      "title": "Smeal SCIS faculty listing (attempted; HTTP 503, not retrieved)"
+      "title": "Faculty, Department of Supply Chain and Information Systems, Smeal College of Business",
+      "notes": "Plain curl timed out on 2026-10-17, so the same public page was rendered in headless Chromium and also read through https://r.jina.ai/https://www.smeal.psu.edu/scis/people/faculty. Under 'Faculty Contact Information': 'Maldonado-Guillen, Mauricio | Assistant Clinical Professor of Supply Chain Management | 426A Business Building', linked to directory.smeal.psu.edu/mem7609 (email address not recorded here)."
+     },
+     {
+      "url": "https://directory.smeal.psu.edu/mem7609",
+      "title": "Mauricio Maldonado Guillen, Smeal College of Business directory",
+      "notes": "Read with curl on 2026-10-17. Heading 'Research Faculty Directory'; department Supply Chain & Information Systems; courses taught FIN 408, SCM 301, SCM 450W, SCM 597; no title and no Education section."
      }
     ],
-    "profileUrl": null,
-    "titleConfirmed": null,
-    "areaConfirmed": null,
+    "profileUrl": "https://directory.smeal.psu.edu/mem7609",
+    "titleConfirmed": "Assistant Clinical Professor of Supply Chain Management",
+    "areaConfirmed": "Supply Chain & Information Systems",
     "phdInstitution": null,
     "phdYear": null,
     "phdSourceUrl": null,
@@ -107118,22 +107181,24 @@
    "firstJob": null,
    "verification": "unverified",
    "review": {
-    "status": "unresolved",
-    "checkedAt": "2026-10-16",
-    "reason": "The SCIS faculty list page returned HTTP 503, and the Smeal research faculty directory filtered to Supply Chain & Information Systems (opened) does not list him; a web-search snippet of the faculty list shows 'Mowery, Andrew | Adjunct Instructor', but that page could not be opened to verify it.",
+    "status": "confirmed-faculty",
+    "checkedAt": "2026-10-17",
+    "reason": "Re-checked on 2026-10-17. The SCIS department faculty page (read in headless Chromium and through the r.jina.ai reader proxy, because plain curl timed out) lists 'Mowery, Andrew' under 'Faculty Contact Information' as Adjunct Instructor, with no profile link and a psu.edu address whose user ID is ajm9160. The Smeal directory page for that same ID (curl) is filed under 'Staff Directory' as Andy Mowery. Its biography describes a retired industry supply chain executive and states 'Andy is also an adjunct instructor at The Smeal College of Business'. It says he 'holds a Bachelor of Science in Quantitative Business Analysis and a Master of Business Administration from Villanova University', and lists no doctorate. He is confirmed as adjunct teaching faculty in Supply Chain and Information Systems, consistent with adjunct instructors confirmed in earlier proposals. Earlier check (2026-10-16): the SCIS faculty list returned HTTP 503 and the research-faculty directory did not list him, so the 'Adjunct Instructor' title, seen only in a web-search snippet, could not be verified.",
     "sources": [
      {
-      "url": "http://www.smeal.psu.edu/scis/people/faculty",
-      "title": "Penn State Smeal SCIS faculty list (HTTP 503 at check time)"
+      "url": "https://www.smeal.psu.edu/scis/people/faculty",
+      "title": "Faculty, Department of Supply Chain and Information Systems, Smeal College of Business",
+      "notes": "Plain curl timed out on 2026-10-17, so the same public page was rendered in headless Chromium and also read through https://r.jina.ai/https://www.smeal.psu.edu/scis/people/faculty. Under 'Faculty Contact Information': 'Mowery, Andrew | Adjunct Instructor', with no profile link and a psu.edu address under the user ID ajm9160 (email address not recorded here)."
      },
      {
-      "url": "https://directory.smeal.psu.edu/faculty/?dept=scis",
-      "title": "Penn State Smeal research faculty directory, Supply Chain & Information Systems"
+      "url": "https://directory.smeal.psu.edu/ajm9160",
+      "title": "Andy Mowery, Smeal College of Business directory (Staff Directory)",
+      "notes": "Read with curl on 2026-10-17; the ID matches the address on the SCIS faculty page. Biography: 'Andy is also an adjunct instructor at The Smeal College of Business'; bachelor's and MBA only, no doctorate."
      }
     ],
-    "profileUrl": null,
-    "titleConfirmed": null,
-    "areaConfirmed": null,
+    "profileUrl": "https://directory.smeal.psu.edu/ajm9160",
+    "titleConfirmed": "Adjunct Instructor",
+    "areaConfirmed": "Supply Chain and Information Systems (listed on the department faculty page)",
     "phdInstitution": null,
     "phdYear": null,
     "phdSourceUrl": null,
@@ -107371,22 +107436,29 @@
    "firstJob": null,
    "verification": "unverified",
    "review": {
-    "status": "unresolved",
-    "checkedAt": "2026-10-16",
-    "reason": "Both the Center for Supply Chain Research leadership-staff page (profileUrl, tried three times including a trailing-slash variant) and the SCIS faculty page (facultyUrl) returned HTTP 503 Service Unavailable, so nothing could be verified; the roster title Executive Director of the Center for Supply Chain Research is an administrative role, but no page could be opened to confirm it.",
+    "status": "confirmed-faculty",
+    "checkedAt": "2026-10-17",
+    "reason": "Re-checked on 2026-10-17. The Center for Supply Chain Research leadership-and-staff page still timed out to plain curl and returned only a tracking-pixel stub through the r.jina.ai reader proxy, so it was read in headless Chromium. Under 'Center for Supply Chain Research (CSCR) Leadership Team' it lists 'Donna Palumbo, CSCR Executive Director, Professor of Practice, Department of Supply Chain & Information Systems'. The SCIS faculty page (headless Chromium and the reader proxy) lists 'Palumbo, Donna' under 'Faculty Contact Information' as Executive Director of the Center for Supply Chain Research and Professor of Practice in Supply Chain Management. Her Smeal directory page (dgp107, curl), filed under 'Staff Directory', shows only the Executive Director title. No page shows her education, so no doctorate is stated. Earlier check (2026-10-16): both the CSCR leadership page and the SCIS faculty page returned HTTP 503, so the Executive Director title could not be confirmed. Verifier: the CSCR leadership page did not load for the verifier on 2026-10-17 (HTTP 502 in headless Chromium, a timeout to curl and only a tracking stub through r.jina.ai), but the SCIS faculty page, read through r.jina.ai, shows the same 'Professor of Practice in Supply Chain Management' title, so the confirmation stands.",
     "sources": [
      {
       "url": "https://www.smeal.psu.edu/cscr/about/leadership-staff",
-      "title": "Penn State Smeal Center for Supply Chain Research leadership and staff (HTTP 503)"
+      "title": "Leadership & Staff, Center for Supply Chain Research, Smeal College of Business",
+      "notes": "Plain curl timed out and the r.jina.ai reader proxy returned only a tracking-pixel stub, so the same public page was rendered in headless Chromium on 2026-10-17. 'Donna Palumbo, CSCR Executive Director, Professor of Practice, Department of Supply Chain & Information Systems'."
      },
      {
       "url": "https://www.smeal.psu.edu/scis/people/faculty",
-      "title": "Penn State Smeal Supply Chain and Information Systems faculty (HTTP 503)"
+      "title": "Faculty, Department of Supply Chain and Information Systems, Smeal College of Business",
+      "notes": "Plain curl timed out on 2026-10-17, so the same public page was rendered in headless Chromium and also read through https://r.jina.ai/https://www.smeal.psu.edu/scis/people/faculty. 'Palumbo, Donna | Executive Director of the Center for Supply Chain Research; Professor of Practice in Supply Chain Management | 488B Business Building'."
+     },
+     {
+      "url": "https://directory.smeal.psu.edu/dgp107",
+      "title": "Donna Palumbo, Smeal College of Business directory (Staff Directory)",
+      "notes": "Read with curl on 2026-10-17. 'Executive Director of the Center for Supply Chain Research, Center for Supply Chain Research'; no education."
      }
     ],
-    "profileUrl": null,
-    "titleConfirmed": null,
-    "areaConfirmed": null,
+    "profileUrl": "https://www.smeal.psu.edu/cscr/about/leadership-staff",
+    "titleConfirmed": "CSCR Executive Director, Professor of Practice",
+    "areaConfirmed": "Department of Supply Chain & Information Systems",
     "phdInstitution": null,
     "phdYear": null,
     "phdSourceUrl": null,
@@ -112157,22 +112229,24 @@
    "firstJob": null,
    "verification": "unverified",
    "review": {
-    "status": "unresolved",
-    "checkedAt": "2026-10-16",
-    "reason": "Profile page exists under Faculty Members in the Management section but shows no title, biography or degrees, only an email and the school address; the Freeman faculty listing page also shows names without titles, so the page does not show enough to confirm an academic appointment or rank.",
+    "status": "confirmed-faculty",
+    "checkedAt": "2026-10-17",
+    "reason": "Re-checked on 2026-10-17 with curl. His profile page is unchanged: under 'Faculty Members' it shows only his name, a tulane.edu email and the school address, with the meta description 'David Gardner is a faculty member for the A.B. Freeman School of Business Tulane University'. The Freeman 'Management Faculty' page groups people under the headings Tenured and Tenure Track Faculty, Professors of Practice, Postdoctoral Fellows, Visitors and Adjuncts. It lists David Gardner under 'Adjuncts', with a 'See Bio' link to that profile. He is confirmed as adjunct faculty in Management from that school listing. The page shows no rank beyond the heading, and no biography or degree, so no doctorate is stated. His area is management, not management science or operations. Earlier check (2026-10-16): the profile page showed no title, biography or degrees, and the faculty listing showed names without titles, so an academic appointment could not be confirmed.",
     "sources": [
      {
       "url": "https://freeman.tulane.edu/faculty-research/management/david-gardner",
-      "title": "David Gardner, Tulane University Freeman School of Business profile page"
+      "title": "David Gardner, Tulane University Freeman School of Business profile page",
+      "notes": "Re-read with curl on 2026-10-17. Name, email and school address only; meta description calls him 'a faculty member for the A.B. Freeman School of Business'."
      },
      {
-      "url": "https://freeman.tulane.edu/faculty-research/faculty-listings.php?area=info",
-      "title": "Freeman School of Business faculty listings (redirect target of the business.tulane.edu listing URL)"
+      "url": "https://freeman.tulane.edu/faculty-research/management",
+      "title": "Management Faculty, Freeman School of Business, Tulane University",
+      "notes": "Read with curl on 2026-10-17. Headings Tenured and Tenure Track Faculty, Professors of Practice, Postdoctoral Fellows, Visitors, Adjuncts; 'David Gardner' is listed under 'Adjuncts'."
      }
     ],
-    "profileUrl": null,
-    "titleConfirmed": null,
-    "areaConfirmed": null,
+    "profileUrl": "https://freeman.tulane.edu/faculty-research/management/david-gardner",
+    "titleConfirmed": "Adjunct (listed under the 'Adjuncts' heading of the Management Faculty page)",
+    "areaConfirmed": "Management",
     "phdInstitution": null,
     "phdYear": null,
     "phdSourceUrl": null,
@@ -118138,22 +118212,19 @@
    "firstJob": null,
    "verification": "unverified",
    "review": {
-    "status": "unresolved",
-    "checkedAt": "2026-10-16",
-    "reason": "The profiles.auckland.ac.nz profile page returned only a 'browser not supported' notice to the fetcher, and the ISOM department directory (which redirects to a profiles.auckland.ac.nz search page) returned the same notice, so no page content could be read. The roster title Honorary Professor could not be verified.",
+    "status": "confirmed-faculty",
+    "checkedAt": "2026-10-17",
+    "reason": "Re-checked on 2026-10-17. The profile page sends a 'browser not supported' notice to plain fetches, so it was rendered in headless Chromium. It shows 'DR / Suzanne Rivard / Honorary Professor / Information Systems and Operations Management', and under 'University of Auckland Appointments' it lists 'Honorary Professor, Information Systems and Operations Management, New Zealand'. The page has no biography, other affiliation or education section. The 'DR' honorific is not taken as a stated doctorate. She is confirmed with the title as shown; the page gives only an honorary title, which the integrator may wish to treat separately from employed faculty ranks. Earlier check (2026-10-16): the profile page and the ISOM directory returned only a 'browser not supported' notice, so the Honorary Professor title could not be verified.",
     "sources": [
      {
       "url": "https://profiles.auckland.ac.nz/sriv969",
-      "title": "Suzanne Rivard, University of Auckland profile (content not rendered)"
-     },
-     {
-      "url": "https://profiles.auckland.ac.nz/search?by=text&type=user&d=Information%20Systems%20and%20Operations%20Management",
-      "title": "University of Auckland profiles search, Information Systems and Operations Management (content not rendered)"
+      "title": "Suzanne Rivard, University of Auckland profile",
+      "notes": "The fetch tool and plain requests get a 'browser not supported' notice, so the same public page was rendered in headless Chromium on 2026-10-17. Shows Honorary Professor, Information Systems and Operations Management, and under 'University of Auckland Appointments' Honorary Professor; no education section."
      }
     ],
-    "profileUrl": null,
-    "titleConfirmed": null,
-    "areaConfirmed": null,
+    "profileUrl": "https://profiles.auckland.ac.nz/sriv969",
+    "titleConfirmed": "Honorary Professor",
+    "areaConfirmed": "Information Systems and Operations Management",
     "phdInstitution": null,
     "phdYear": null,
     "phdSourceUrl": null,
@@ -127646,25 +127717,37 @@
    "firstJob": null,
    "verification": "unverified",
    "review": {
-    "status": "unresolved",
-    "checkedAt": "2026-10-16",
-    "reason": "The Booth Nobel laureates profile (under Faculty and Insights) states 'Joined the faculty at Chicago Booth' in 1995 with no departure and 'Earned PhD in economics from the University of Rochester' in 1974, but shows no current rank; his faculty-directory profile could not be opened (HTTP 404 at /faculty/directory/t/richard-h-thaler and at /t/richard-thaler, and the directory listing page loads its entries dynamically and shows him only in the Nobel Laureates menu). Behavioral economics, not operations, so no search was spent on him. Integrator: set to unresolved because the only opened page is a prize biography with no current rank, and the faculty directory profile could not be opened.",
+    "status": "confirmed-faculty",
+    "checkedAt": "2026-10-17",
+    "reason": "Re-checked on 2026-10-17. The Booth faculty directory, rendered in headless Chromium, lists 283 faculty profiles from A to Z, including Eugene F. Fama, Douglas W. Diamond and Lars Hansen. It has no entry for Thaler between Richard Thakor and Alexander Todorov; he appears only in its Nobel Laureates menu, and /faculty/directory/t/richard-h-thaler still returns 404. A web search led to his Booth emeriti profile (read with curl). It shows 'Richard H. Thaler, Charles R. Walgreen Distinguished Service Professor Emeritus of Behavioral Science and Economics', with academic areas Behavioral Science and Microeconomics and a 2024 (Autumn) course. It states that he attended the University of Rochester, 'where he received a master's degree in 1970 and a PhD in 1974', and that he joined the Chicago Booth faculty in 1995. The University of Chicago online directory (curl) lists him with affiliation 'staff, emeritus', appointment 'Emeritus/Emerita, Professor', the Walgreen title and department 'Chicago Booth School of Business, Faculty'. He is confirmed as emeritus faculty, recorded in the same way as emeritus professors confirmed in earlier reviews. His area is behavioral science, not operations. The re-opened Nobel laureate page gives the same PhD (economics, University of Rochester, 1974). Earlier check (2026-10-16): the only page opened was the Nobel prize biography, which shows no current rank, and his faculty-directory profile returned HTTP 404.",
     "sources": [
      {
-      "url": "https://www.chicagobooth.edu/faculty/nobel-laureates/richard-h-thaler",
-      "title": "Richard H. Thaler | The University of Chicago Booth School of Business"
+      "url": "https://www.chicagobooth.edu/faculty/emeriti/richard-h-thaler",
+      "title": "Richard H Thaler | Emeriti | The University of Chicago Booth School of Business",
+      "notes": "Found by web search and read with curl on 2026-10-17. Title 'Charles R. Walgreen Distinguished Service Professor Emeritus of Behavioral Science and Economics'; academic areas Behavioral Science, Microeconomics; biography: University of Rochester 'master's degree in 1970 and a PhD in 1974'; joined Chicago Booth in 1995."
+     },
+     {
+      "url": "https://directory.uchicago.edu/individuals/2741",
+      "title": "Richard Thaler, The University of Chicago online directory",
+      "notes": "Found by web search and read with curl on 2026-10-17. Affiliation 'staff, emeritus'; appointment 'Emeritus/Emerita, Professor'; title Charles R. Walgreen Distinguished Service Professor of Behavioral Science and Economics; department Chicago Booth School of Business, Faculty."
      },
      {
       "url": "https://www.chicagobooth.edu/faculty/directory",
-      "title": "Faculty Directory | The University of Chicago Booth School of Business"
+      "title": "Faculty Directory | The University of Chicago Booth School of Business",
+      "notes": "The list is drawn by scripts, so it was rendered in headless Chromium on 2026-10-17. It has 283 profile links from A to Z (Fama, Diamond and Hansen are included); Thaler is absent from the T section and appears only in the Nobel Laureates menu. /faculty/directory/t/richard-h-thaler returned 404 to curl."
+     },
+     {
+      "url": "https://www.chicagobooth.edu/faculty/nobel-laureates/richard-h-thaler",
+      "title": "Richard H. Thaler | Nobel Laureates | The University of Chicago Booth School of Business",
+      "notes": "Re-rendered in headless Chromium on 2026-10-17. Milestones: 1974 'Earned PhD in economics from the University of Rochester'; 1995 'Joined the faculty at Chicago Booth'; no current rank."
      }
     ],
-    "profileUrl": "https://www.chicagobooth.edu/faculty/nobel-laureates/richard-h-thaler",
-    "titleConfirmed": "No rank shown on the opened page; it states 'Joined the faculty at Chicago Booth' (1995)",
-    "areaConfirmed": "Behavioral economics (no department shown on the opened page)",
+    "profileUrl": "https://www.chicagobooth.edu/faculty/emeriti/richard-h-thaler",
+    "titleConfirmed": "Charles R. Walgreen Distinguished Service Professor Emeritus of Behavioral Science and Economics",
+    "areaConfirmed": "Behavioral Science; Microeconomics",
     "phdInstitution": "University of Rochester",
     "phdYear": 1974,
-    "phdSourceUrl": "https://www.chicagobooth.edu/faculty/nobel-laureates/richard-h-thaler",
+    "phdSourceUrl": "https://www.chicagobooth.edu/faculty/emeriti/richard-h-thaler",
     "omListFacultyId": null,
     "note": null
    }
@@ -137246,19 +137329,21 @@
    "verification": "unverified",
    "review": {
     "status": "unresolved",
-    "checkedAt": "2026-10-16",
-    "reason": "His own page at the University of Michigan IOE department returned HTTP 403 to WebFetch and again to a direct request with a browser user agent (Cloudflare 'Just a moment...' challenge), so it could not be opened. The UMN ISyE directory lists him under Affiliated Faculty as 'Seth Bonder Professor, Department of Industrial and Systems Engineering, University of Michigan' and links to that blocked page; no opened page states his doctorate.",
+    "checkedAt": "2026-10-17",
+    "reason": "Re-checked on 2026-10-17. His University of Michigan IOE page answers plain requests with a Cloudflare HTTP 403 challenge, so it was read through the r.jina.ai reader proxy. It shows him as Seth Bonder Collegiate Professor, filed under Faculty > Tenure and Tenure-track Faculty, and its biography says he 'is the Seth Bonder Collegiate Professor and Professor of Industrial and Operations Engineering (IOE) at the University of Michigan (U-M)' and Goff Smith Co-Director of the Tauber Institute for Global Operations. It adds that 'Prior to joining the U-M, he was the McKnight Presidential Endowed Professor and Distinguished McKnight University Professor at the University of Minnesota', where he also served as Head of the Department of Industrial and Systems Engineering. The page's Education heading is empty, so no doctorate is stated. The UMN ISyE directory (re-read with curl) lists him only under 'Affiliated Faculty', with the title 'Seth Bonder Professor, Department of Industrial and Systems Engineering, University of Michigan' and no Minnesota title. No opened page shows a current University of Minnesota appointment or rank. Earlier check (2026-10-16): his Michigan page returned HTTP 403 to every request, and the UMN directory listed him only under Affiliated Faculty with a Michigan title. Verifier: confirmed-faculty is not supported, because his only University of Minnesota entry carries a title at another university (an entry the integrator rule keeps unresolved), his own page describes Minnesota as a former post, and the draft confirmed a Michigan appointment rather than one at Minnesota; the IIT Bombay visitors cited as precedent each had an IIT Bombay visiting title on that page (Distinguished Visiting Professor, Visiting Associate Professor, Visitor), which he does not have at Minnesota; the title and area fields were removed.",
     "sources": [
      {
       "url": "https://ioe.engin.umich.edu/people/saif-benjaafar/",
-      "title": "Saif Benjaafar, University of Michigan Industrial and Operations Engineering profile (blocked, HTTP 403)"
+      "title": "Saif Benjaafar - Industrial & Operations Engineering, University of Michigan",
+      "notes": "Plain curl still gets a Cloudflare HTTP 403 challenge, so the same public page was read through https://r.jina.ai/https://ioe.engin.umich.edu/people/saif-benjaafar/ on 2026-10-17. Title 'Seth Bonder Collegiate Professor'; breadcrumb Faculty > Tenure and Tenure-track Faculty; biography as quoted in the reason; Education section empty. Re-read the same way by the verifier on 2026-10-17 with the same content."
      },
      {
       "url": "https://cse.umn.edu/isye/faculty",
-      "title": "Faculty directory, Department of Industrial and Systems Engineering, University of Minnesota"
+      "title": "Faculty directory, Department of Industrial and Systems Engineering, University of Minnesota",
+      "notes": "Re-read with curl on 2026-10-17. Under 'Affiliated Faculty': 'Saif Benjaafar, Seth Bonder Professor, Department of Industrial and Systems Engineering, University of Michigan'. Re-read by the verifier with curl on 2026-10-17; unchanged."
      }
     ],
-    "profileUrl": null,
+    "profileUrl": "https://ioe.engin.umich.edu/people/saif-benjaafar/",
     "titleConfirmed": null,
     "areaConfirmed": null,
     "phdInstitution": null,
@@ -167805,29 +167890,37 @@
    "firstJob": null,
    "verification": "unverified",
    "review": {
-    "status": "unresolved",
-    "checkedAt": "2026-10-16",
-    "reason": "The Owen faculty directory lists Francisco Perez-Gonzalez with the title 'Dean (Business) and Professor of Finance at ITAM (Mexico City)'; the profile has no biography and a blank subject-area tag, so the area is taken from the title and his role at Vanderbilt itself is not stated on the page. The Education section states Ph.D., Economics, Harvard University, with no year given (also Masters, Economics, Harvard; B.A., Economics, ITAM). The profile page body is script-loaded, so its content was read from the page's own public JSON data endpoints (listed in sources). Integrator: the Owen directory gives only his title at ITAM and does not state a Vanderbilt appointment, so the entry stays unresolved rather than confirmed.",
+    "status": "confirmed-faculty",
+    "checkedAt": "2026-10-17",
+    "reason": "Re-checked on 2026-10-17. The Owen faculty directory, rendered in headless Chromium, has a 'Faculty Types' filter. With 'Adjunct' selected, page 2 of the filtered list shows Francisco Perez-Gonzalez with the title 'Dean (Business) and Professor of Finance at ITAM (Mexico City)', among adjunct professors such as Lewis Agnew and Jamison Monroe. The directory's own public data endpoint for that listing (group 301, read with curl) gives his entry facultytypes 'adjunct', academicprograms 'executive-mba,global-executive-mba-americas' and a blank subject area. So the school's own directory classes him as adjunct faculty in its executive MBA programs, a Vanderbilt appointment type that the earlier reading did not see. His profile page, rendered in headless Chromium, shows the same title and an Education section listing 'Ph.D., Economics, Harvard University' (no year), 'Masters, Economics, Harvard University' and 'B.A., Economics, ITAM'. His area is finance, not operations. Earlier check (2026-10-16): the Owen profile gave only his title at ITAM, with a blank subject-area tag and a Harvard PhD without a year, and the integrator kept the entry unresolved because no Vanderbilt appointment was stated.",
     "sources": [
      {
       "url": "https://business.vanderbilt.edu/bio/francisco-perez-gonazlez",
-      "title": "Francisco Perez-Gonzalez | Biography | Owen Graduate School of Management, Vanderbilt University (faculty profile; body script-rendered)"
+      "title": "Francisco Perez-Gonzalez | Biography | Owen Graduate School of Management, Vanderbilt University",
+      "notes": "The body is drawn by scripts, so the page was rendered in headless Chromium on 2026-10-17. Title 'Dean (Business) and Professor of Finance at ITAM (Mexico City)'; Education 'Ph.D., Economics, Harvard University', 'Masters, Economics, Harvard University', 'B.A., Economics, ITAM'."
      },
      {
-      "url": "https://business.vanderbilt.edu/wp-content/themes/anchordown-futurevu-child-business/library/remote/peoplemanager-directory-remote-webcomm.php?pid=4645&profile=true&showdept=true",
-      "title": "Owen people-manager profile data (JSON) for Francisco Perez-Gonzalez, pid 4645"
+      "url": "https://business.vanderbilt.edu/faculty/directory/",
+      "title": "Faculty Directory | Owen Graduate School of Management, Vanderbilt University",
+      "notes": "Rendered in headless Chromium on 2026-10-17 (the roster URL /our-school/faculty/faculty-directory/ redirects here). With the 'Faculty Types' select set to 'Adjunct', page 2 lists Francisco Perez-Gonzalez."
+     },
+     {
+      "url": "https://business.vanderbilt.edu/wp-content/themes/anchordown-futurevu-child-business/library/remote/peoplemanager-directory-remote-webcomm.php?showdept=false&affiliated=all&option=choose-department&school=10&department=all&group=301&person=none",
+      "title": "Owen faculty directory data (public JSON endpoint used by the directory page)",
+      "notes": "Read with curl on 2026-10-17. Entry id 4645: facultytypes 'adjunct', academicprograms 'executive-mba,global-executive-mba-americas', subjectareas blank, same title and education."
      },
      {
       "url": "https://business.vanderbilt.edu/wp-content/themes/anchordown-futurevu-child-business/library/remote/peoplemanager-directory-remote-webcomm.php?pid=4645&education=true",
-      "title": "Owen people-manager education data (JSON) for Francisco Perez-Gonzalez, pid 4645"
+      "title": "Owen people-manager education data (JSON) for Francisco Perez-Gonzalez, pid 4645",
+      "notes": "Re-read with curl on 2026-10-17. Same three degrees as the rendered profile page."
      }
     ],
-    "profileUrl": null,
-    "titleConfirmed": null,
-    "areaConfirmed": null,
-    "phdInstitution": null,
+    "profileUrl": "https://business.vanderbilt.edu/bio/francisco-perez-gonazlez",
+    "titleConfirmed": "Adjunct faculty (Owen directory faculty type 'Adjunct'); title shown: Dean (Business) and Professor of Finance at ITAM (Mexico City)",
+    "areaConfirmed": "None shown (blank Owen subject-area tag); directory data lists the Executive MBA and Global Executive MBA Americas programs",
+    "phdInstitution": "Harvard University",
     "phdYear": null,
-    "phdSourceUrl": null,
+    "phdSourceUrl": "https://business.vanderbilt.edu/bio/francisco-perez-gonazlez",
     "omListFacultyId": null,
     "note": null
    }
