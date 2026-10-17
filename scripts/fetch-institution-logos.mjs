@@ -4,10 +4,10 @@
 //   node scripts/fetch-institution-logos.mjs --collect [--refresh]
 //     downloads every candidate for every mapped institution into research/logo-candidates/<qid>/
 //     (ignored), with a manifest of where each came from. Candidates: the icons the institution's official
-//     website (Wikidata P856) declares and its /apple-touch-icon.png, the logo images in the homepage's own
-//     markup, the logo files Wikidata records for the institution on Wikimedia Commons (icon P2910, small
+//     website (Wikidata P856) declares and its /apple-touch-icon.png, the logo files Wikidata records for the institution on Wikimedia Commons (icon P2910, small
 //     logo P8972, seal P158, coat of arms P94, logo P154; photographs skipped), the lead image of the English
-//     Wikipedia article, and DuckDuckGo's and Google's copies of the site icon. SVG files are drawn at
+//     Wikipedia article, seal, logo, emblem and coat-of-arms files on Commons whose file name contains the
+//     institution's name, and DuckDuckGo's and Google's copies of the site icon. SVG files are drawn at
 //     512 px by the pre-installed Chromium. Without --refresh, institutions already collected are skipped.
 //
 //   node scripts/fetch-institution-logos.mjs --choose [--out DIR]
@@ -90,7 +90,8 @@ async function download(url, ua) {
     return { buf, ext: svg ? 'svg' : 'img' };
   } catch { return null; }
 }
-// Icons the homepage declares and the logo images in its markup (an <img>, or an SVG file, whose tag says logo).
+// Icons the homepage declares. (Images in the page markup are not used: on review they were as often social-media
+// icons, ranking badges, anniversary or alliance marks and photos as the institution's logo.)
 async function homepage(website) {
   try {
     const res = await fetch(website, { headers: { 'User-Agent': BROWSER_UA, Accept: 'text/html' }, redirect: 'follow', signal: AbortSignal.timeout(20000) });
@@ -104,16 +105,28 @@ async function homepage(website) {
       out.push({ url, kind: /apple-touch/.test(rel) ? 'site-apple' : 'site-icon' });
     }
     out.push({ url: new URL('/apple-touch-icon.png', base).href, kind: 'site-apple' });
-    let n = 0;
-    for (const tag of html.match(/<img\b[^>]*>/gi) || []) {
-      if (!/logo|seal|crest|emblem/i.test(tag) || n >= 4) continue;
-      const src = attr(tag, 'src') || attr(tag, 'data-src'); const url = src && !src.startsWith('data:') && abs(src);
-      if (url) { out.push({ url, kind: 'site-logo' }); n++; }
-    }
     return out;
   } catch { return []; }
 }
 const commonsUrl = file => `https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/${encodeURIComponent(file.replace(/ /g, '_'))}&width=512`;
+// Seal, logo, emblem and coat-of-arms files on Commons whose name contains the institution's full name (as the
+// data writes it, as Wikidata labels it or as its English Wikipedia article is titled), so that "Michigan State
+// University seal.svg" is found for Michigan State and never for the University of Michigan.
+const fold = t => String(t || '').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/[^a-z0-9]+/g, ' ').trim();
+const MARK = /\b(logo|seal|emblem|coat of arms|arms|crest|wordmark|insignia|siegel|wappen|escudo|sello|stemma|sigillum|brasao|blason|embleme|logotipo|logotype)\b/;
+async function commonsSearch(q) {
+  const names = [...new Set([...data.records.filter(r => r.qid === q).flatMap(r => [r.institution, r.label]), meta[q]?.enwiki].map(fold).filter(n => n && n.split(' ').length >= 2))];
+  const found = [];
+  for (const name of names.slice(0, 2)) {
+    const res = await wm('https://commons.wikimedia.org/w/api.php?' + new URLSearchParams({ action: 'query', list: 'search', srnamespace: '6', srsearch: `${name} logo OR seal OR emblem OR coat of arms`, srlimit: '20', format: 'json' }));
+    let hits = []; try { hits = (await res.json()).query?.search || []; } catch { /* none */ }
+    for (const h of hits) {
+      const file = h.title.replace(/^File:/, ''), f = fold(file.replace(/\.[a-z]+$/i, ''));
+      if (/\.(svg|png)$/i.test(file) && f.includes(name) && MARK.test(f) && !/\b(old|former|historic|historical|19\d\d|18\d\d)\b/.test(f) && !found.includes(file)) found.push(file);
+    }
+  }
+  return found.slice(0, 6).map(commonsUrl);
+}
 const PROP = { P2910: 'commons-icon', P8972: 'commons-small-logo', P158: 'commons-seal', P94: 'commons-arms', P154: 'commons-logo' };
 
 async function collectOne(q) {
@@ -136,6 +149,7 @@ async function collectOne(q) {
     }
     if (m.pageImage && /\.(svg|png)$/i.test(m.pageImage) && !(m.commons || []).some(c => c.file.replace(/ /g, '_') === m.pageImage)) list.push({ url: `https://en.wikipedia.org/w/index.php?title=Special:Redirect/file/${encodeURIComponent(m.pageImage)}&width=512`, kind: 'wikipedia-image' });
   }
+  for (const url of await commonsSearch(q)) list.push({ url, kind: 'commons-search' });
   const seen = new Set(), manifest = [];
   for (const c of list) {
     if (seen.has(c.url)) continue; seen.add(c.url);
@@ -166,7 +180,7 @@ async function renderSvgs() {
   await browser.close();
 }
 
-const KIND_RANK = { review: 1.2, 'site-apple': 1, 'site-icon': 1, 'site-logo': 1, 'commons-icon': 1, 'commons-small-logo': 1, 'commons-seal': 1, 'commons-arms': 1, 'commons-logo': 1, 'wikipedia-image': 0.8, ddg: 0.4, google: 0.4 };
+const KIND_RANK = { review: 1.2, 'site-apple': 1, 'site-icon': 1, 'site-logo': 1, 'commons-icon': 1, 'commons-small-logo': 1, 'commons-seal': 1, 'commons-arms': 1, 'commons-logo': 1, 'commons-search': 0.9, 'wikipedia-image': 0.8, ddg: 0.4, google: 0.4 };
 function choose() {
   fs.mkdirSync(outDir, { recursive: true });
   const tmp = path.join(candRoot, '.layout.png'), choices = {};
@@ -185,7 +199,10 @@ function choose() {
       catch (err) { tried.push({ k: e.k, kind: e.kind, failed: String(err.stderr || '').trim().split('\n').pop() }); continue; }
       // Fill counts most, then sharpness (the logo's own pixels; 150 or more is sharp at the largest map size),
       // then the source: the institution's own files before the favicon services.
-      const score = 3 * Math.min(r.fill / 0.85, 1) + 2 * Math.min(r.native / 150, 1) + (KIND_RANK[e.kind] ?? 0.5) + (fix.pick && e.url.includes(fix.pick) ? 100 : 0);
+      // A whole-square picture is accepted only from the site's own icons (elsewhere it was a photograph).
+      if (r.mode === 'cover' && !/^(site-apple|site-icon|ddg|google|review)$/.test(e.kind)) { tried.push({ k: e.k, kind: e.kind, failed: 'picture, not a logo' }); continue; }
+      if (e.kind === 'site-logo' && !(fix.pick && e.url.includes(fix.pick))) continue;
+      const score = 3 * Math.min(r.fill / 0.85, 1) + 2 * Math.min(r.native / 150, 1) - (r.native < 96 ? 1.5 : 0) - (r.mode === 'cover' ? 0.5 : 0) + (KIND_RANK[e.kind] ?? 0.5) + (fix.pick && e.url.includes(fix.pick) ? 100 : 0);
       tried.push({ k: e.k, kind: e.kind, ...r, score: +score.toFixed(2) });
       if (!best || score > best.score) { best = { score, e, r }; fs.copyFileSync(tmp, target + '.tmp'); }
     }
@@ -209,5 +226,22 @@ if (has('--collect')) {
   await renderSvgs();
   console.log(`collected candidates for ${qids.length} institutions in ${candRoot}`);
 }
+// --extra adds the Commons search candidates to institutions already collected, without downloading the rest again.
+if (has('--extra')) {
+  let added = 0;
+  for (const q of qids) {
+    const dir = path.join(candRoot, q), manPath = path.join(dir, 'manifest.json'), man = readJson(manPath, null);
+    if (!man || man.some(e => e.kind === 'commons-search' || e.searched)) continue;
+    for (const url of await commonsSearch(q)) {
+      if (man.some(e => e.url === url)) continue;
+      const got = await download(url, UA), entry = { url, kind: 'commons-search', k: man.length, file: null };
+      if (got) { entry.file = `${entry.k}.${got.ext}`; fs.writeFileSync(path.join(dir, entry.file), got.buf); added++; }
+      man.push(entry);
+    }
+    man.push({ url: 'commons-search', kind: 'marker', k: man.length, file: null, searched: true });
+    fs.writeFileSync(manPath, JSON.stringify(man, null, 1));
+  }
+  console.log(`added ${added} Commons search files`);
+}
 if (has('--choose')) choose();
-if (!has('--collect') && !has('--choose')) console.log('Give --collect, --choose or both.');
+if (!has('--collect') && !has('--choose') && !has('--extra')) console.log('Give --collect, --extra, --choose or a combination.');
