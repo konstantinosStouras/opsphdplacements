@@ -4,16 +4,16 @@
     "updatedAt": "2026-10-17",
     "total": 3161,
     "counts": {
-      "unresolved": 1313,
-      "verified": 1844,
+      "unresolved": 1299,
+      "verified": 1858,
       "not-yet-completed-phd": 4
     },
     "bySource": {
       "omlist": {
         "total": 2149,
         "counts": {
-          "unresolved": 837,
-          "verified": 1311,
+          "unresolved": 823,
+          "verified": 1325,
           "not-yet-completed-phd": 1
         }
       },
@@ -748,16 +748,36 @@
     {
       "facultyId": "omlist-1e4bf2355b4e3e3a",
       "name": "Henk Akkermans",
-      "status": "unresolved",
-      "checkedAt": "2026-10-16",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "employer": "McKinsey & Company",
+      "position": null,
+      "placementYear": 1995,
+      "category": "industry",
+      "evidenceUrl": "https://research.tilburguniversity.edu/en/persons/b5bb2eb3-0d14-4549-91b8-2eda3160f225",
+      "evidenceNote": "His Tilburg research-portal profile lists past employment: 1987-1988 Philips International; 1988-1990 Utrecht University; 1990-1995 Eindhoven University of Technology, Dept. Technology Management; 1991-1995 BSO Business Consulting; 1995-1996 McKinsey & Co (Amsterdam, Chicago and Houston); 1996-2000 Origin Business Consulting; later Minase, TU Eindhoven (2000-2004) and the Tilburg chair from 2005. His ORCID record gives the TU Eindhoven Ph.D. (Industrial Engineering) from 1990 to 1995-06-24 and the 1995 dissertation 'Modelling with managers'. The TU Eindhoven and BSO roles were held during the doctorate and ended in 1995, so McKinsey (1995-1996) is the first new post after the June 1995 degree; the McKinsey start month is not given.",
+      "phdYearVerified": 1995,
+      "phdInstitutionVerified": "Eindhoven University of Technology",
+      "phdYearResolution": "The imported OM List gives 1992; his ORCID record dates the Ph.D. to 1990-1995 (ending 1995-06-24) with the dissertation 'Modelling with managers' (1995), and the Tilburg profile places his TU Eindhoven doctoral-period post in 1990-1995.",
+      "phdInstitutionResolution": "The imported OM List gives Delft University of Technology; his ORCID education entry names Technische Universiteit Eindhoven (Industrial Engineering), consistent with the 1990-1995 TU Eindhoven Technology Management post on his Tilburg profile.",
+      "reason": "Dated career list on the Tilburg research portal plus ORCID: TU Eindhoven Ph.D. completed June 1995, then McKinsey & Co 1995-1996, after a consulting job at BSO that ran 1991-1995 during the doctorate.",
       "sources": [
         {
+          "url": "https://research.tilburguniversity.edu/en/persons/b5bb2eb3-0d14-4549-91b8-2eda3160f225",
+          "title": "Tilburg University research portal - Henk Akkermans",
+          "notes": "Curl: Career - past employment 1987-1988 Philips; 1988-1990 Utrecht University; 1990-1995 TU Eindhoven; 1991-1995 BSO Business Consulting; 1995-1996 McKinsey & Co; 1996-2000 Origin; 2000-2004 TU Eindhoven; 2000-2006 Minase; 2005-2015 Tilburg chair."
+        },
+        {
+          "url": "https://orcid.org/0000-0001-6365-1052",
+          "title": "ORCID - Henk Akkermans",
+          "notes": "Public API: education TU Eindhoven, Industrial Engineering, Ph.D., 1990-01-01 to 1995-06-24; dissertation-thesis 'Modelling with managers' (1995); employment Tilburg TiSEM Professor from 2005-01-01."
+        },
+        {
           "url": "https://www.tilburguniversity.edu/staff/ha",
-          "title": "Henk Akkermans public academic profile",
-          "notes": "Tilburg profile describes current research and roles but does not give doctoral completion and initial employment chronology."
+          "title": "Tilburg University - prof. dr. Henk Akkermans",
+          "notes": "Curl: 403; read through r.jina.ai: publications and link to the research-portal profile."
         }
       ],
-      "reason": "Tilburg profile describes current research and roles but does not give doctoral completion and initial employment chronology.",
       "source": "omlist"
     },
     {
@@ -1749,22 +1769,32 @@
       "name": "Karca Aral",
       "status": "unresolved",
       "checkedAt": "2026-10-17",
-      "reason": "The January 2025 CV hosted by Syracuse lists Employment only at the Whitman School of Management, Syracuse University: Associate Professor (with tenure), Supply Chain Management/Marketing, and Whitman Research Fellow; earlier Assistant Professor, Supply Chain Management/Marketing. Its Education section gives the INSEAD Ph.D. and M.Sc. in Technology and Operations Management. The earlier review called this a full dated CV and said its date columns did not survive text extraction. Re-read on 2026-10-17 with layout-preserving extraction and as a rendered page image, the CV has no dates at all for any position or degree. The PhD year 2014 came from an earlier reading of the Whitman faculty listing; the profile page, re-opened, lists the INSEAD Ph.D. without a year. ORCID record 0009-0003-7380-6806 has no affiliations. No source opened dates the Syracuse start or orders it relative to the degree. The evidence therefore does not establish the Syracuse assistant professorship as the first new post-PhD job: an undated list cannot exclude an earlier post or a start before the degree. Audit (2026-10-17): R6.",
+      "reason": "Nothing new dates her first post. The INSEAD PhD pages (four guessed placement/alumni URLs) answer 403 to curl and an empty shell through the r.jina.ai reader, so no INSEAD placement or dissertation record could be read; the Syracuse University news search returns only a 2024 grant story; the Whitman profile (re-opened by curl) has no CV link beyond the undated January 2025 CV; ORCID 0009-0003-7380-6806 still has no affiliations. The Syracuse assistant professorship is the only employment named, but no source dates it or the INSEAD degree. Earlier review (2026-10-17): the January 2025 Syracuse CV lists only Whitman appointments and the INSEAD PhD without any dates, and ORCID has no entries.",
       "sources": [
         {
           "url": "https://whitman.syracuse.edu/dmsync/facultysuccess/kdaral/narratives/CV_January2025-1.pdf",
-          "title": "Karca D. Aral CV (January 2025)",
-          "notes": "Employment lists only Syracuse Whitman appointments; PhD INSEAD."
+          "title": "Karca Aral - CV, January 2025 (Syracuse Whitman)",
+          "notes": "Earlier review: employment only Syracuse Whitman (assistant, then associate professor with tenure); INSEAD PhD; no dates."
         },
         {
           "url": "https://whitman.syracuse.edu/faculty-and-research/faculty-staff-directory/details/kdaral",
-          "title": "Karca Aral - Whitman faculty profile",
-          "notes": "INSEAD PhD 2014 per listing."
+          "title": "Whitman directory - Karca Aral",
+          "notes": "Re-opened by curl: no dated chronology or further CV link."
         },
         {
           "url": "https://orcid.org/0009-0003-7380-6806",
-          "title": "ORCID record - Karca Aral",
-          "notes": "Found through the ORCID public search (given name Karca, family name Aral; one match) and read through the public API on 2026-10-17: no employment or education entries."
+          "title": "ORCID - Karca Aral",
+          "notes": "Public API: no employment or education entries."
+        },
+        {
+          "url": "https://news.syr.edu/?s=Karca+Aral",
+          "title": "Syracuse University Today - search 'Karca Aral'",
+          "notes": "One result (March 2024 Lender Center grants); no appointment date."
+        },
+        {
+          "url": "https://www.insead.edu/phd/placements",
+          "title": "INSEAD PhD - placements (guessed URL)",
+          "notes": "Curl: 403; INSEAD PhD pages through r.jina.ai return an empty shell."
         }
       ],
       "source": "omlist"
@@ -2388,15 +2418,25 @@
       "facultyId": "omlist-a894cbbd981fbc42",
       "name": "Yossi Aviv",
       "status": "unresolved",
-      "checkedAt": "2026-10-16",
+      "checkedAt": "2026-10-17",
+      "reason": "No dated chronology was found. The Coller profile (curl) still says only that he held an academic position at Washington University's Olin School, ending as Dan Broida Professor, with no dates; ORCID 0000-0002-6479-2583 lists only Tel Aviv University from 2015-10-01; the TAU research portal shows research output from 1997 onwards, not appointments; one web search found no CV; the Mathematics Genealogy Project has no record. The Columbia degree year and the start and rank of the Olin post (or any earlier job) remain undocumented. Earlier review (2026-10-16): the Tel Aviv biography named the Columbia doctorate and the prior Washington University faculty position without dates or a full early-career sequence.",
       "sources": [
         {
           "url": "https://en-coller.tau.ac.il/profile/yaviv",
-          "title": "Yossi Aviv Profile",
-          "notes": "Tel Aviv biography identifies Columbia doctorate and prior Washington University faculty position without dates or full early-career sequence."
+          "title": "Coller School of Management - Prof. Yossi Aviv",
+          "notes": "Curl: Technion B.Sc. 1990 and M.Sc. 1993; Ph.D. Columbia (no year); held an academic position at Olin, last as Dan Broida Professor; no dates."
+        },
+        {
+          "url": "https://orcid.org/0000-0002-6479-2583",
+          "title": "ORCID - Yossi Aviv",
+          "notes": "Public API: Tel Aviv University, Professor, from 2015-10-01 only."
+        },
+        {
+          "url": "https://cris.tau.ac.il/en/persons/yossi-aviv/",
+          "title": "Tel Aviv University research portal - Yossi Aviv",
+          "notes": "Curl: Full Professor, Coller; research-output timeline 1997-2022; no employment history."
         }
       ],
-      "reason": "Tel Aviv biography identifies Columbia doctorate and prior Washington University faculty position without dates or full early-career sequence.",
       "source": "omlist"
     },
     {
@@ -3751,16 +3791,40 @@
     {
       "facultyId": "omlist-81baf7ff88235996",
       "name": "Simon Belieres",
-      "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "Only current-affiliation material was found (a TBS Education / ANR AD-Lib project page naming him assistant professor of operations research at Toulouse Business School). No PhD record, CV or dated career history was located, so neither the Toulouse degree completion nor any postdoc or first job before TBS is established.",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "employer": "HEC Montréal",
+      "position": "Post-doctoral fellow",
+      "placementYear": 2020,
+      "category": "postdoc",
+      "evidenceUrl": "https://orcid.org/0000-0001-8245-3043",
+      "evidenceNote": "His ORCID record (self-maintained, read through the public API) lists LAAS-CNRS, PhD student, 2016-10-01 to 2019-09-30; HEC Montréal, Department of Logistics and Operations Management, Post-doctoral fellow, 2020-01-01 to 2021-06-30; and Toulouse Business School, Assistant Professor, from 2021-09-01. theses.fr dates his thesis (INSA Toulouse, LAAS, directors Nicolas Jozefowiez and Frédéric Semet) to a defence on 6 November 2019, so the HEC Montréal postdoc two months later is the first post-PhD job. HAL lists his 2022 article with HEC Montréal and TBS affiliations. The degree was delivered by INSA Toulouse, a member of the Université de Toulouse, so it is stored under the record's 'University of Toulouse' with the written form kept separately.",
+      "phdYearVerified": 2019,
+      "phdInstitutionVerified": "University of Toulouse",
+      "reason": "ORCID chronology gives the HEC Montréal postdoctoral fellowship from 1 January 2020, after the 6 November 2019 thesis defence recorded on theses.fr and before the September 2021 TBS assistant professorship.",
       "sources": [
+        {
+          "url": "https://orcid.org/0000-0001-8245-3043",
+          "title": "ORCID - Simon Belieres",
+          "notes": "Read through pub.orcid.org/v3.0: LAAS-CNRS PhD student 2016-10-01 to 2019-09-30; HEC Montréal Post-doctoral fellow 2020-01-01 to 2021-06-30; Toulouse Business School Assistant Professor from 2021-09-01."
+        },
+        {
+          "url": "https://theses.fr/2019ISAT0022",
+          "title": "theses.fr - Mathematical programming for tactical transportation planning in a multi-product supply chain (Simon Belieres)",
+          "notes": "Read through the theses.fr API: defended 06/11/2019, establishment Toulouse, INSA; LAAS; directors Nicolas Jozefowiez, Frédéric Semet."
+        },
+        {
+          "url": "https://api.archives-ouvertes.fr/search/?q=authFullName_s:%22Simon%20Belieres%22",
+          "title": "HAL - publications of Simon Belieres",
+          "notes": "HAL API: 2017-2021 items with LAAS affiliation; 2022 article with HEC Montréal and Toulouse Business School; later items TBS."
+        },
         {
           "url": "https://anr-ad-lib.pages.math.cnrs.fr/website/author/simon-belieres/",
           "title": "ANR AD-Lib - Simon Belieres",
-          "notes": "Search-result lead showing current TBS role only; not a first-job record."
+          "notes": "Earlier review: current TBS role only."
         }
       ],
+      "phdInstitutionVerifiedAsWritten": "Toulouse, INSA (Institut national des sciences appliquées de Toulouse), theses.fr 2019ISAT0022",
       "source": "omlist"
     },
     {
@@ -5222,14 +5286,32 @@
     {
       "facultyId": "omlist-de44f0d2af9baeea",
       "name": "Thomas Breugem",
-      "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "The Tilburg biography identifies Erasmus doctorate and INSEAD visiting affiliation without dates or earliest employment chronology.",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "employer": "INSEAD",
+      "position": "Post Doctoral Research Fellow",
+      "placementYear": 2019,
+      "category": "postdoc",
+      "evidenceUrl": "https://research.tilburguniversity.edu/en/persons/049a5686-667c-4e7f-bbbd-ef4da914cd1b",
+      "evidenceNote": "His Tilburg research-portal profile gives Career: Post Doctoral Research Fellow, INSEAD, France, Sep 2019 - 2022 (Humanitarian Research Group), and Assistant Professor, Supply Chain Management, TiSEM, Tilburg University (later); Education: PhD, Erasmus University Rotterdam, 2015 to 2019. The imported degree year is 2020; the formal defence date was not found, so the INSEAD postdoc either followed the doctorate or began in its final months before a 2020 conferral (an explicitly post-doctoral appointment, which counts under the overlap rule). The Tilburg staff page confirms the Erasmus School of Economics PhD and the continuing INSEAD visiting link.",
+      "phdYearVerified": null,
+      "phdInstitutionVerified": "Erasmus University Rotterdam",
+      "reason": "The profile's dated career list puts an INSEAD postdoctoral fellowship from September 2019, after a PhD period of 2015-2019 at Erasmus and before the Tilburg assistant professorship; the defence date (OM List: 2020) was not found, so the overlap is noted and placementYear is one year before the imported degree year.",
       "sources": [
         {
-          "url": "https://www.tilburguniversity.edu/staff/t-breugem?x=0&lan=en",
-          "title": "Thomas Breugem academic profile",
-          "notes": "The Tilburg biography identifies Erasmus doctorate and INSEAD visiting affiliation without dates or earliest employment chronology."
+          "url": "https://research.tilburguniversity.edu/en/persons/049a5686-667c-4e7f-bbbd-ef4da914cd1b",
+          "title": "Tilburg University research portal - Thomas Breugem",
+          "notes": "Curl: Career - Assistant Professor, Supply Chain Management, TiSEM; Post Doctoral Research Fellow, INSEAD, France, Sep 2019 - 2022. Education - PhD, Erasmus University Rotterdam, 2015 to 2019."
+        },
+        {
+          "url": "https://www.tilburguniversity.edu/staff/t-breugem",
+          "title": "Tilburg University - dr. Thomas Breugem",
+          "notes": "Curl: 403; read through r.jina.ai: associate professor; PhD Erasmus School of Economics; visiting scholar at INSEAD's Humanitarian Research Group."
+        },
+        {
+          "url": "https://repub.eur.nl/search?q=Breugem",
+          "title": "Erasmus RePub - search 'Breugem'",
+          "notes": "Curl and headless browser returned no readable results; the thesis date was not found."
         }
       ],
       "source": "omlist"
@@ -5614,14 +5696,27 @@
     {
       "facultyId": "omlist-7917b115066628f4",
       "name": "Metin Cakanyildirim",
-      "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "No CV, dissertation record or dated career history was found for this person in the available searches; results returned only generic UT Dallas rosters. The first post-PhD position after the Cornell degree remains unestablished.",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "employer": "The University of Texas at Dallas",
+      "position": "Assistant Professor",
+      "placementYear": 2000,
+      "category": "tenure-track",
+      "evidenceUrl": "https://profiles.utdallas.edu/metin.cakanyildirim",
+      "evidenceNote": "His UT Dallas research profile lists the Ph.D. in Operations Research, Cornell University, 2000, and Appointments: Assistant Professor, University of Texas at Dallas, 2000-2006; Visiting Professor, Fu Jen University, Taiwan, 2004; Associate Professor, UT Dallas, 2006-present. Its presentations list job talks at Columbia, Michigan, Northwestern, Texas A&M and IBM Watson in February-April 2000. The Mathematics Genealogy Project also gives a Cornell Ph.D. in 2000. Plain assistant professorship at a North American business school: tenure-track by convention. Verifier: the profile's appointment list also gives pre-degree roles (research and teaching assistant, Cornell, 1995-2000; instructor, Cornell, 1999; intern, IBM Watson Research Center, 1996), all during the doctorate, so the earlier 'no earlier post' wording was corrected; none falls between the 2000 degree and the UT Dallas post.",
+      "phdYearVerified": 2000,
+      "phdInstitutionVerified": "Cornell University",
+      "reason": "The UT Dallas profile's dated appointments put the UT Dallas assistant professorship from 2000, the year of the Cornell Ph.D., with no other post between the degree and it; the earlier Cornell and IBM roles fell during the doctorate and the 2004 Fu Jen visiting post came later.",
       "sources": [
         {
-          "url": "https://news.utdallas.edu/?p=1991",
-          "title": "UT Dallas news - New hires",
-          "notes": "Search-result lead; not shown to concern this person."
+          "url": "https://profiles.utdallas.edu/metin.cakanyildirim",
+          "title": "UT Dallas Profiles - Metin Cakanyildirim",
+          "notes": "Curl: Ph.D. Operations Research, Cornell 2000; Appointments: Assistant Professor UTD 2000-2006; Visiting Professor Fu Jen 2004; Associate Professor UTD 2006-present; 2000 job-talk presentations."
+        },
+        {
+          "url": "https://www.mathgenealogy.org/id.php?id=85155",
+          "title": "Mathematics Genealogy Project - Metin Cakanyildirim",
+          "notes": "Ph.D. Cornell University 2000; dissertation 'Capacity Expansion with Uncertain Forecasts'; advisor Robin Otho Roundy."
         }
       ],
       "source": "omlist"
@@ -7977,14 +8072,32 @@
     {
       "facultyId": "omlist-a0f6f82e060c9bae",
       "name": "Sanghoon Cho",
-      "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "A TCU Neeley directory listing shows an assistant professorship in business analytics, but no source for the South Carolina PhD, dissertation date or start date was found, so the first post-PhD job is not established.",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "employer": "Texas Christian University",
+      "position": "Assistant Professor",
+      "placementYear": 2022,
+      "category": "tenure-track",
+      "evidenceUrl": "https://orcid.org/0000-0002-7480-885X",
+      "evidenceNote": "His ORCID record (self-maintained, read through the public API) lists one employment: Texas Christian University, Information Systems and Supply Chain, Assistant Professor, from 2022-08. The University of South Carolina Scholar Commons OAI record (etd-7767) dates his dissertation 'Innovative Data-Driven Demand Estimation Strategies in Revenue Management' to 2022-04-01. The TCU directory profile gives the South Carolina PhD, his co-authored work with Ferguson and Pekgun, and the 2023 Buffa dissertation award. Plain assistant professorship at a North American business school: tenure-track by convention.",
+      "phdYearVerified": 2022,
+      "phdInstitutionVerified": "University of South Carolina",
+      "reason": "The South Carolina dissertation record is dated April 2022 and ORCID dates the TCU Neeley assistant professorship from August 2022, with no other employment listed.",
       "sources": [
         {
-          "url": "https://neeley.tcu.edu/Directory/Departments/Faculty",
-          "title": "TCU Neeley faculty directory",
-          "notes": "Search-result listing; current role only."
+          "url": "https://orcid.org/0000-0002-7480-885X",
+          "title": "ORCID - Sanghoon Cho",
+          "notes": "Found by the ORCID public search; public API: Texas Christian University, Information Systems and Supply Chain, Assistant Professor, from 2022-08; no education entries."
+        },
+        {
+          "url": "https://scholarcommons.sc.edu/do/oai/?verb=ListRecords&metadataPrefix=oai_dc&set=publication:etd&from=2022-01-01&until=2023-12-31",
+          "title": "University of South Carolina Scholar Commons - OAI-PMH theses and dissertations",
+          "notes": "Record oai:scholarcommons.sc.edu:etd-7767: Cho, Sanghoon, 'Innovative Data-Driven Demand Estimation Strategies in Revenue Management', date 2022-04-01 (the PDF itself answered 403)."
+        },
+        {
+          "url": "https://www.tcu.edu/directory/profile/cho-sanghoon.php",
+          "title": "TCU directory - Sanghoon Cho",
+          "notes": "Curl: PhD University of South Carolina (no year); 2023 Buffa Doctoral Dissertation Competition winner; no appointment dates."
         }
       ],
       "source": "omlist"
@@ -8675,15 +8788,20 @@
       "facultyId": "omlist-9d87128e853a4de2",
       "name": "Nathan Craig",
       "status": "unresolved",
-      "checkedAt": "2026-10-16",
+      "checkedAt": "2026-10-17",
+      "reason": "The doctorate is now confirmed: Harvard DASH (read through its DSpace API) holds 'Essays on Retail Operations Management' by Nathan Charles Craig, D.B.A., Harvard Business School, Technology & Operations Management, degree date 2014, advisor Ananth Raman. His first job is still undocumented: the Fisher profile (curl and headless browser) gives the HBS doctorate and current roles but no dates, CV or earlier posts, and ORCID records under his name carry no matching affiliation. Note the degree is a DBA, not a PhD. Earlier review (2026-10-16): the Ohio State biography identified the Harvard doctorate and current role without dated initial employment.",
       "sources": [
         {
+          "url": "https://dash.harvard.edu/handle/1/37367803",
+          "title": "Harvard DASH - Essays on Retail Operations Management (Craig, Nathan Charles)",
+          "notes": "DSpace API metadata: D.B.A., Harvard Business School, Technology & Operations Management, thesis.degree.date 2014; advisor Ananth Raman."
+        },
+        {
           "url": "https://fisher.osu.edu/people/craig.186",
-          "title": "Nathan Craig Profile",
-          "notes": "Ohio State biography identifies Harvard doctorate and current role without dated initial employment."
+          "title": "Fisher College of Business - Nate Craig",
+          "notes": "Curl and headless browser: associate professor; DBA Technology and Operations Management, Harvard Business School; no dates or CV."
         }
       ],
-      "reason": "Ohio State biography identifies Harvard doctorate and current role without dated initial employment.",
       "source": "omlist"
     },
     {
@@ -11204,13 +11322,28 @@
       "facultyId": "omlist-547aacae58691c4e",
       "name": "Wouter van Elmpt",
       "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "Tilburg profile gives Maastricht doctorate 2009 but does not establish first employment after completion.",
+      "checkedAt": "2026-10-17",
+      "reason": "The Tilburg staff page (curl answers 403; read through r.jina.ai) states an MSc in Applied Physics from TU Eindhoven (2004) and a PhD from Maastricht University (FHML, 2009), his endowed Tilburg chair and his current role as programme manager of the physics innovation team at Maastro; the Tilburg research portal lists external positions (honorary assistant professor at Maastricht University from 1 January 2015; programme manager at Maastro, undated); the Maastricht research portal shows him as Assistant Professor, FHML/Maastro Research, with research output from 2009, but no career dates; his ORCID record (0000-0001-8820-0784) is empty. His first post after the 2009 PhD (for example a medical-physics post at Maastro) is not dated by any source. Earlier review (2026-10-16): the Tilburg profile gave the 2009 Maastricht doctorate but did not establish his first employment after completion.",
       "sources": [
         {
-          "url": "https://www.tilburguniversity.edu/staff/w-j-c-vanelmpt?x=0&lan=en",
-          "title": "Wouter van Elmpt public academic profile",
-          "notes": "Tilburg profile gives Maastricht doctorate 2009 but does not establish first employment after completion."
+          "url": "https://www.tilburguniversity.edu/staff/w-j-c-vanelmpt",
+          "title": "Tilburg University - prof. dr. ir. Wouter van Elmpt",
+          "notes": "Curl: 403; read through r.jina.ai: MSc TU Eindhoven 2004; PhD Maastricht University (FHML, 2009); programme manager physics innovation, Maastro."
+        },
+        {
+          "url": "https://research.tilburguniversity.edu/en/persons/edc41399-932c-4b0a-b76f-7e4c28fe1b63",
+          "title": "Tilburg University research portal - Wouter van Elmpt",
+          "notes": "Curl: external positions, honorary assistant professor Maastricht University from 1 Jan 2015; programme manager Maastro (undated)."
+        },
+        {
+          "url": "https://cris.maastrichtuniversity.nl/en/persons/wouter-van-elmpt",
+          "title": "Maastricht University research portal - Wouter van Elmpt",
+          "notes": "Curl: Assistant Professor, FHML, Maastro Research; output 2009-2026; no career dates."
+        },
+        {
+          "url": "https://orcid.org/0000-0001-8820-0784",
+          "title": "ORCID - Wouter van Elmpt",
+          "notes": "Public API: no employment or education entries."
         }
       ],
       "source": "omlist"
@@ -11948,15 +12081,20 @@
       "facultyId": "omlist-0514fdf5066aa077",
       "name": "Feng Fang",
       "status": "unresolved",
-      "checkedAt": "2026-10-16",
+      "checkedAt": "2026-10-17",
+      "reason": "The degree is confirmed: the Tilburg staff page (read through r.jina.ai; curl answers 403) and her ORCID record (0000-0001-6704-3636) list the doctoral thesis 'When performance shortfall arises, contract or trust? ...' [Doctoral Thesis, Tilburg University], 2019. Her employment is not dated: ORCID's only employment is Tilburg University with no dates or role, the staff page shows publications only, and the Tilburg research-portal person search answers 403 to curl and returned no person page through the reader. Whether she stayed at Tilburg directly after the 2019 thesis (and in what post) or worked elsewhere first is not documented. Earlier review (2026-10-16): the Tilburg profile listed a doctoral thesis but no employment chronology.",
       "sources": [
         {
+          "url": "https://orcid.org/0000-0001-6704-3636",
+          "title": "ORCID - Feng Fang",
+          "notes": "Public API: employment Tilburg University (no dates, no role); dissertation-thesis work 2019."
+        },
+        {
           "url": "https://www.tilburguniversity.edu/staff/f-fang",
-          "title": "Feng Fang public academic profile",
-          "notes": "Tilburg profile lists a doctoral thesis but does not provide an employment chronology sufficient to identify first placement."
+          "title": "Tilburg University - Feng Fang",
+          "notes": "Curl: 403; read through r.jina.ai: publication list incl. the 2019 Tilburg doctoral thesis (CentER); no career section."
         }
       ],
-      "reason": "Tilburg profile lists a doctoral thesis but does not provide an employment chronology sufficient to identify first placement.",
       "source": "omlist"
     },
     {
@@ -12149,29 +12287,32 @@
     {
       "facultyId": "omlist-769c008870f10ec9",
       "name": "Soraya Fatehi",
-      "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "No opened source gives an employment chronology. The Jindal School faculty page renders only a title, the UTD profiles page returned 404, ORCID lists UT Dallas without dates or title, and the OM List entry has no CV. A web search surfaced a 2020 UT Dallas new-faculty feature describing her as Assistant Professor of Operations Management with a University of Washington Foster PhD (2020), but the article could not be located or opened (the magazine new-faculty archive starts with autumn 2021 and the Foster placement page URL returned 404), so the UT Dallas appointment remains an unconfirmed lead for the first job.",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "employer": "The University of Texas at Dallas",
+      "position": "Assistant Professor",
+      "placementYear": null,
+      "category": "tenure-track",
+      "evidenceUrl": "https://foster.uw.edu/academics/degree-programs/phd-program/placements/",
+      "evidenceNote": "The University of Washington Foster School's official doctoral job-placements page lists, under 2020, 'Soraya Fatehi – Assistant Professor, University of Texas, Dallas' (the list includes industry placements such as LinkedIn and Amazon). Her Jindal School faculty page (rendered in a headless browser) gives the PhD in Operations Management, Michael G. Foster School of Business, University of Washington, 2020, and her current title Assistant Professor, Operations Management. The start month and year of the UT Dallas post are not stated. Plain assistant professorship at a North American business school: tenure-track by convention.",
+      "phdYearVerified": 2020,
+      "phdInstitutionVerified": "University of Washington",
+      "reason": "The degree-granting program's job-placement list gives a UT Dallas assistant professorship as her 2020 placement, and UT Dallas confirms the 2020 Foster PhD and the assistant-professor title; no other post is named. The start year is not documented, so placementYear stays null.",
       "sources": [
         {
-          "url": "https://jindal.utdallas.edu/faculty/soraya-fatehi",
-          "title": "UT Dallas Jindal School — Soraya Fatehi, PhD",
-          "notes": "Page title only; the biography did not render via the fetcher or curl."
+          "url": "https://foster.uw.edu/academics/degree-programs/phd-program/placements/",
+          "title": "UW Foster School - PhD Job Placements",
+          "notes": "Curl: 2020 - Soraya Fatehi, Assistant Professor, University of Texas, Dallas."
+        },
+        {
+          "url": "https://jindal.utdallas.edu/faculty/soraya-fatehi/",
+          "title": "UT Dallas Jindal School - Soraya Fatehi",
+          "notes": "Rendered in a headless browser (curl showed only a title): Assistant Professor, Operations Management; PhD Operations Management, Foster School, University of Washington, 2020."
         },
         {
           "url": "https://orcid.org/0000-0002-3383-148X",
-          "title": "Soraya Fatehi — ORCID record",
-          "notes": "Read through the ORCID public API: The University of Texas at Dallas, no dates or role."
-        },
-        {
-          "url": "https://managementmagazine.utdallas.edu/new-faculty/",
-          "title": "UT Dallas Management Magazine — New Faculty category",
-          "notes": "Lists new-faculty features for autumn 2021-2024 only; none mentions her."
-        },
-        {
-          "url": "https://omlist.edutool.org/schools/the-university-of-texas-at-dallas/faculty/soraya-fatehi.html",
-          "title": "OM List profile — Soraya Fatehi",
-          "notes": "Directory entry (PhD University of Washington 2020)."
+          "title": "ORCID - Soraya Fatehi",
+          "notes": "Earlier review: UT Dallas employment without dates or role."
         }
       ],
       "source": "omlist"
@@ -13849,15 +13990,25 @@
       "facultyId": "omlist-7329764769ac36bf",
       "name": "Vipul Garg",
       "status": "unresolved",
-      "checkedAt": "2026-10-16",
+      "checkedAt": "2026-10-17",
+      "reason": "The Texas State vita linked from his profile (downloaded and read) gives the degrees (PhD Business-Logistics Systems, University of North Texas, 2024; MS 2020) but has no employment section; its funded internal grants from Texas A&M University-San Antonio (October 2024 to October 2026) and the profile's 2024-2025 and 2025 Texas A&M-San Antonio awards point to a Texas A&M University-San Antonio post before Texas State, but no source dates its start, gives its title or orders it against the degree month. The profile says he spent five years as a data scientist and product manager before academia (undated). The UNT Digital Library answers a bot check to curl and the headless browser; guessed Texas A&M-San Antonio profile URLs show no page for him; ORCID records under his name carry no affiliations. Earlier review (2026-10-16): the Texas State biography named the North Texas doctorate and prior industry work without dates, and a Texas A&M-San Antonio CV lead returned a missing page.",
       "sources": [
         {
-          "url": "https://faculty.txst.edu/profile/2705012/detail",
-          "title": "Vipul Garg official profile",
-          "notes": "Texas State biography identifies North Texas doctorate and prior industry work but provides no dates or earliest employment chronology; a Texas A&M San Antonio CV search lead returned a missing-page response."
+          "url": "https://faculty.txst.edu/profile/2705012",
+          "title": "Texas State faculty profile - Vipul Garg",
+          "notes": "Curl: Assistant Professor, McCoy College; PhD UNT 2024; five years as data scientist/product manager before academia; awards from Texas A&M-San Antonio 2024-2025 and 2025."
+        },
+        {
+          "url": "https://faculty.txst.edu/api/cv/2705012/CV_GARG%20VIPUL-1.pdf",
+          "title": "Texas State Vita - Vipul Garg",
+          "notes": "Curl, pdftotext: degrees PhD 2024 and MS 2020 (UNT); internal grants from Texas A&M University-San Antonio funded Oct 2024-Oct 2026 and Mar-Dec 2026; no employment dates."
+        },
+        {
+          "url": "https://digital.library.unt.edu/search/?q=%22Garg%2C+Vipul%22&t=fulltext",
+          "title": "UNT Digital Library - search",
+          "notes": "Curl and headless browser: bot check ('Validating your request'); not read."
         }
       ],
-      "reason": "Texas State biography identifies North Texas doctorate and prior industry work but provides no dates or earliest employment chronology; a Texas A&M San Antonio CV search lead returned a missing-page response.",
       "source": "omlist"
     },
     {
@@ -15906,18 +16057,33 @@
       "facultyId": "omlist-f3d0997a4280873d",
       "name": "Haresh Gurnani",
       "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "The Stony Brook profile lists Carnegie Mellon doctorate without dates; linked CV returned a missing-page response.",
+      "checkedAt": "2026-10-17",
+      "reason": "His ORCID record (read through the public API) now gives the Carnegie Mellon Tepper PhD as an education entry running 1987-08-25 to 1992-08-24, which conflicts with the imported 1998, but its only employment is Stony Brook University, Professor, from 2023-07-01. The Stony Brook CV path (hgurnani.pdf) still answers 404 to curl; the current Stony Brook profile lists the CMU PhD only; the Wikipedia article names only his later Wake Forest and University of Miami roles without dates; the old Wake Forest directory page now returns 'Page not found' through the reader proxy; the Wayback Machine is unreachable from this environment; one web search found no CV. No source dates or orders his first post after the CMU degree. Earlier review (2026-10-16): the Stony Brook profile listed the CMU doctorate without dates and the linked CV returned a missing-page response.",
       "sources": [
         {
-          "url": "https://www.stonybrook.edu/commcms/business/_cv/faculty/hgurnani.pdf",
-          "title": "Haresh Gurnani academic profile",
-          "notes": "The Stony Brook profile lists Carnegie Mellon doctorate without dates; linked CV returned a missing-page response."
+          "url": "https://orcid.org/0000-0002-3639-203X",
+          "title": "ORCID - Haresh Gurnani",
+          "notes": "Read through pub.orcid.org/v3.0: education Carnegie Mellon University, Tepper School, PhD, 1987-08-25 to 1992-08-24; employment Stony Brook University, Professor, from 2023-07-01 only."
         },
         {
-          "url": "https://www.stonybrook.edu/commcms/business/about/_faculty/profile/hgurnani#Biography",
-          "title": "Haresh Gurnani academic profile",
-          "notes": "The Stony Brook profile lists Carnegie Mellon doctorate without dates; linked CV returned a missing-page response."
+          "url": "https://www.stonybrook.edu/commcms/business/about/_faculty/profile/hgurnani",
+          "title": "Stony Brook College of Business - Haresh Gurnani profile",
+          "notes": "Curl with a browser user-agent: Professor, Operations and Decision Analytics; Education: PhD, Carnegie Mellon University; no dates, no CV link."
+        },
+        {
+          "url": "https://www.stonybrook.edu/commcms/business/_cv/faculty/hgurnani.pdf",
+          "title": "Stony Brook - Gurnani CV (old path)",
+          "notes": "Curl: HTTP 404. Not read."
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Haresh_Gurnani",
+          "title": "Wikipedia - Haresh Gurnani",
+          "notes": "Read as raw wikitext: dean at Stony Brook from July 2023, earlier Wake Forest and University of Miami roles; no dates for early career. Discovery only."
+        },
+        {
+          "url": "https://business.wfu.edu/directory/haresh-gurnani/",
+          "title": "Wake Forest School of Business - directory (old)",
+          "notes": "Read through r.jina.ai: 'Page not found'."
         }
       ],
       "source": "omlist"
@@ -16200,13 +16366,23 @@
       "facultyId": "omlist-2f38dc490bc36d30",
       "name": "Nicholas G. Hall",
       "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "Ohio State profile lists doctorate and research but does not date earliest employment.",
+      "checkedAt": "2026-10-17",
+      "reason": "The imported doctorate looks wrong but cannot be dated: the Fisher profile (curl) says he received a Ph.D. from the University of California, Berkeley, and his ORCID record (0000-0003-4484-9252) lists a UC Berkeley Ph.D. without dates, not a 1995 University of Pennsylvania degree; the Mathematics Genealogy Project entry gives no school or year (it lists a 1995 Toronto student he advised). No source gives his first appointment: the Fisher page names visiting professorships (Kellogg, Wharton, NUS and others) and a 1998 Fisher award but no appointment dates, a headless-browser render shows no CV link, and one web search found no CV. Earlier review (2026-10-16): the Ohio State profile listed the doctorate and research but did not date his earliest employment.",
       "sources": [
         {
           "url": "https://fisher.osu.edu/people/hall.33",
-          "title": "Nicholas G. Hall public academic profile",
-          "notes": "Ohio State profile lists doctorate and research but does not date earliest employment."
+          "title": "Fisher College of Business - Nicholas G. Hall",
+          "notes": "Curl: Ph.D. University of California, Berkeley (no year); visiting professorships and awards; no appointment dates or CV link."
+        },
+        {
+          "url": "https://orcid.org/0000-0003-4484-9252",
+          "title": "ORCID - Nicholas Hall",
+          "notes": "Public API: employment Ohio State Fisher (no dates); education UC Berkeley Ph.D. (no dates)."
+        },
+        {
+          "url": "https://www.mathgenealogy.org/id.php?id=234816",
+          "title": "Mathematics Genealogy Project - Nicholas G. Hall",
+          "notes": "No dissertation, school or year; one student (University of Toronto 1995)."
         }
       ],
       "source": "omlist"
@@ -16981,13 +17157,23 @@
       "facultyId": "omlist-513ea8b6ea68b4a8",
       "name": "Yale T. Herer",
       "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "Technion biography gives Cornell doctorate 1990 but lacks dates for earliest academic or industry employment.",
+      "checkedAt": "2026-10-17",
+      "reason": "The Mathematics Genealogy Project now confirms the degree (Yale Thomas Herer, Ph.D. Cornell University 1990, advisor Robin Roundy), but no source dates his first job. The Technion Data and Decision Sciences profile (curl) repeats the 1990 Cornell degrees, his professorship, consulting and the 2018-2023 vice-dean term, without any appointment chronology or CV link; his ORCID record (0000-0001-8902-7848) is empty; old Technion personal-page URLs reset the connection or return 404. The first post-PhD employer and year remain undocumented. Earlier review (2026-10-16): the Technion biography gave the 1990 Cornell doctorate but no dates for earliest academic or industry employment.",
       "sources": [
         {
+          "url": "https://www.mathgenealogy.org/id.php?id=85218",
+          "title": "Mathematics Genealogy Project - Yale Herer",
+          "notes": "Ph.D. Cornell University 1990; dissertation on one-warehouse multi-retailer inventory with TSP routing costs; advisor Robin Otho Roundy. No employment."
+        },
+        {
           "url": "https://dds.technion.ac.il/people/academic-staff/yale-t-herer/",
-          "title": "Yale T. Herer public academic profile",
-          "notes": "Technion biography gives Cornell doctorate 1990 but lacks dates for earliest academic or industry employment."
+          "title": "Technion DDS - Yale T. Herer",
+          "notes": "Curl: B.S. 1986, M.S. 1990, Ph.D. 1990 Cornell ORIE; Professor; vice dean 2018-2023; no early appointments or CV."
+        },
+        {
+          "url": "https://orcid.org/0000-0001-8902-7848",
+          "title": "ORCID - Yale Herer",
+          "notes": "Public API: no employment or education entries."
         }
       ],
       "source": "omlist"
@@ -18556,14 +18742,27 @@
     {
       "facultyId": "omlist-900c98c08c66d2ba",
       "name": "Jane Iversen",
-      "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "The Texas A&M profile describes current assistant professorship but provides no doctoral completion or prior employment dates.",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "employer": "Texas A&M University",
+      "position": "Assistant Professor",
+      "placementYear": 2025,
+      "category": "tenure-track",
+      "evidenceUrl": "https://orcid.org/0000-0002-1953-2627",
+      "evidenceNote": "Her ORCID record (self-maintained, read through the public API) lists The Ohio State University, Operations and Business Analytics, PhD in Business Administration, 2019-08-01 to 2025-05-10, and one employment: Texas A&M University, Information Systems and Operations Management, Assistant Professor, from 2025-07-01. The Mays directory lists her as an assistant professor. The Texas A&M post began seven weeks after the degree; plain assistant professorship at a North American business school, tenure-track by convention.",
+      "phdYearVerified": 2025,
+      "phdInstitutionVerified": "The Ohio State University",
+      "reason": "ORCID dates the Texas A&M Mays assistant professorship from 1 July 2025, after the Ohio State PhD that ended on 10 May 2025; no other employment is listed.",
       "sources": [
         {
+          "url": "https://orcid.org/0000-0002-1953-2627",
+          "title": "ORCID - Jane Iversen",
+          "notes": "Found by the ORCID public search; public API: education Ohio State PhD in Business Administration 2019-08-01 to 2025-05-10; employment Texas A&M ISOM Assistant Professor from 2025-07-01."
+        },
+        {
           "url": "https://mays.tamu.edu/directory/jane-iversen/",
-          "title": "Jane Iversen academic profile",
-          "notes": "The Texas A&M profile describes current assistant professorship but provides no doctoral completion or prior employment dates."
+          "title": "Mays Business School directory - Jane Iversen",
+          "notes": "Earlier review and curl: current assistant professorship; no dates."
         }
       ],
       "source": "omlist"
@@ -19662,16 +19861,40 @@
     {
       "facultyId": "omlist-8e9c8e45817589ca",
       "name": "Carla Juvin",
-      "status": "unresolved",
-      "checkedAt": "2026-10-16",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "employer": "École Nationale de l'Aviation Civile (ENAC)",
+      "position": "Adjunct Faculty",
+      "placementYear": 2023,
+      "category": "other-academic",
+      "evidenceUrl": "https://www.tbs-education.com/teacher/juvin-carla/",
+      "evidenceNote": "Her TBS Education profile (read through the r.jina.ai reader; the site answers 403 to curl) gives a dated chronology: 2020-2023 doctoral candidate and lecturer at INSA Toulouse; 2023-2024 Adjunct Faculty, École Nationale de l'Aviation Civile (ENAC), Toulouse; since 2024 Assistant Professor, TBS Education; its non-academic section lists only a 2019-2020 contract at Balyo. theses.fr dates her Toulouse 3 thesis defence to 4 October 2023. HAL lists her 2024 PMS workshop paper with an ENAC affiliation, and ORCID dates the TBS post from 2024-09. The year-only entry means the ENAC start may fall in the autumn 2023 term around the defence; the start month is not stated. The degree was delivered by Université Toulouse III - Paul Sabatier, a member of the Université de Toulouse, so it is stored under the record's 'University of Toulouse' with the written form kept separately. Verifier: re-read the TBS profile; its 'Teaching Experience' list serves as the profile's academic career list (Simon Belieres's TBS profile lists his HEC Montréal postdoctoral fellowship there), and it shows no research post for 2023-2024; ORCID lists only the TBS employment from 2024-09, and HAL's April 2024 paper adds ENAC to her LAAS thesis-team affiliation, so the ENAC adjunct post stands as the first job, with its part-time or full-time status not stated.",
+      "phdYearVerified": 2023,
+      "phdInstitutionVerified": "University of Toulouse",
+      "reason": "The TBS profile's dated chronology puts an ENAC adjunct faculty post in 2023-2024 between the October 2023 thesis defence and the 2024 TBS assistant professorship; a 2024 HAL paper carries the ENAC affiliation. A verifier may want to confirm that the ENAC post was her main appointment rather than part-time teaching beside an unlisted research post.",
       "sources": [
         {
           "url": "https://www.tbs-education.com/teacher/juvin-carla/",
-          "title": "Carla Juvin Profile",
-          "notes": "TBS teaching chronology gives doctorate2023 and ENAC adjunct2023-2024, but covers teaching rather than full employment and lacks exact transition dates; first post-PhD role unverified."
+          "title": "TBS Education - Carla Juvin",
+          "notes": "Curl: 403; read through r.jina.ai. Education 2023 doctoral degree LAAS-CNRS Université Toulouse 3; Teaching Experience: since 2024 TBS Assistant Professor; 2023-2024 Adjunct Faculty ENAC Toulouse; 2020-2023 doctoral candidate, lecturer INSA Toulouse; non-academic: 2019-2020 Balyo."
+        },
+        {
+          "url": "https://theses.fr/2023TOU30200",
+          "title": "theses.fr - Méthodes hybrides pour l'ordonnancement disjonctif ... (Carla Juvin)",
+          "notes": "Read through the theses.fr API: defended 04/10/2023, Toulouse 3, LAAS; directors Pierre Lopez, Laurent Houssin."
+        },
+        {
+          "url": "https://orcid.org/0009-0000-6985-9866",
+          "title": "ORCID - Carla Juvin",
+          "notes": "Public API: employment TBS from 2024-09; dissertation-thesis work 2023."
+        },
+        {
+          "url": "https://api.archives-ouvertes.fr/search/?q=authFullName_s:%22Carla%20Juvin%22",
+          "title": "HAL - publications of Carla Juvin",
+          "notes": "HAL API: 2024 PMS workshop paper lists Ecole Nationale de l'Aviation Civile among her affiliations; 2025 EJOR article Toulouse Business School."
         }
       ],
-      "reason": "TBS teaching chronology gives doctorate2023 and ENAC adjunct2023-2024, but covers teaching rather than full employment and lacks exact transition dates; first post-PhD role unverified.",
+      "phdInstitutionVerifiedAsWritten": "Toulouse 3 (Université Toulouse III - Paul Sabatier), theses.fr 2023TOU30200",
       "source": "omlist"
     },
     {
@@ -21848,14 +22071,27 @@
     {
       "facultyId": "omlist-83ca161708fc6207",
       "name": "Cindy Kuijpers",
-      "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "The Tilburg profile gives teaching and publications without a doctoral or early employment chronology.",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "employer": "Tilburg University (CentER Applied Research)",
+      "position": "Senior researcher",
+      "placementYear": 2001,
+      "category": "other-academic",
+      "evidenceUrl": "https://research.tilburguniversity.edu/en/persons/ef6c1fb3-0d56-4553-a9bf-c6409ab1c20a",
+      "evidenceNote": "Her Tilburg research-portal profile gives a dated career list: 1992-1993 MSc thesis project, Philips Research; 1994-1995 researcher, University of the Basque Country; 1996-2001 PhD student, University of Twente; 2001-2005 Senior researcher, CentER Applied Research, Tilburg University; 2006-2011 Lecturer, Dept. Organisation and Strategy, Tilburg; 2011-2021 Assistant Professor; 2021-2024 Senior Lecturer; 2024-now Associate Professor. The CentER Applied Research post is the first job after the Twente doctorate. The profile lists CentER Applied Research as part of Tilburg University, so the post is classed as a university research post (other-academic). The exact defence date is not given.",
+      "phdYearVerified": null,
+      "phdInstitutionVerified": "University of Twente",
+      "reason": "Dated career list on the Tilburg research portal: PhD student at Twente 1996-2001, then senior researcher at CentER Applied Research, Tilburg University, 2001-2005, before her Tilburg lectureship.",
       "sources": [
         {
+          "url": "https://research.tilburguniversity.edu/en/persons/ef6c1fb3-0d56-4553-a9bf-c6409ab1c20a",
+          "title": "Tilburg University research portal - Cindy Kuijpers",
+          "notes": "Curl: career list 1992-2024 as quoted in the evidence note."
+        },
+        {
           "url": "https://www.tilburguniversity.edu/staff/c-m-h-kuijpers",
-          "title": "Cindy Kuijpers academic profile",
-          "notes": "The Tilburg profile gives teaching and publications without a doctoral or early employment chronology."
+          "title": "Tilburg University - dr. ir. Cindy Kuijpers",
+          "notes": "Curl: 403; read through r.jina.ai: publications from 1999 (Basque Country co-authors) and link to the research-portal profile."
         }
       ],
       "source": "omlist"
@@ -24116,14 +24352,27 @@
     {
       "facultyId": "omlist-44a52f65b971a3fb",
       "name": "Rong Li",
-      "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "Syracuse profile confirms Purdue Industrial Engineering doctorate and previous Nankai and Singapore Management University appointments, but does not date the degree or early appointments. The ordering and first post-PhD role require a CV or explicit first-placement source. Unrelated researchers sharing this name were excluded.",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "employer": "Singapore Management University",
+      "position": "Assistant Professor",
+      "placementYear": 2004,
+      "category": "tenure-track",
+      "evidenceUrl": "https://orcid.org/0000-0001-5116-5858",
+      "evidenceNote": "Her ORCID record (self-maintained, read through the public API) lists a Purdue School of Industrial Engineering Ph.D. from 2001-08 to 2004-06, then Singapore Management University, Operations Management, Assistant Professor, 2004-07-01 to 2012-06; Nankai University Business School, Associate Professor, 2013-08 to 2017-05; and Syracuse Whitman, Assistant Professor, from 2017-08-22. The SMU post began the month after the Purdue degree ended and no earlier employment is listed. A plain assistant professorship at an Asian business school is classed tenure-track by the project convention.",
+      "phdYearVerified": 2004,
+      "phdInstitutionVerified": "Purdue University",
+      "reason": "ORCID chronology: Purdue PhD ending June 2004, then SMU Assistant Professor from 1 July 2004; it carries the Purdue, Nankai, SMU and Syracuse affiliations named on the Syracuse profile, which confirms identity.",
       "sources": [
         {
+          "url": "https://orcid.org/0000-0001-5116-5858",
+          "title": "ORCID - Rong Li",
+          "notes": "Found by the ORCID public search (Rong Li, affiliation Syracuse); read through pub.orcid.org/v3.0: education Purdue PhD 2001-08-15 to 2004-06; employments SMU Assistant Professor 2004-07-01 to 2012-06, Nankai Associate Professor 2013-08-01 to 2017-05-11, Syracuse Assistant Professor from 2017-08-22."
+        },
+        {
           "url": "https://whitman.syracuse.edu/faculty-and-research/faculty-staff-directory/details/rli138",
-          "title": "Rong Li — public academic profile",
-          "notes": "Professional biography and degree information reviewed for first-job evidence."
+          "title": "Whitman directory - Rong Li",
+          "notes": "Earlier review: Purdue Industrial Engineering doctorate and previous Nankai and SMU appointments, undated."
         }
       ],
       "source": "omlist"
@@ -25341,19 +25590,32 @@
     {
       "facultyId": "omlist-ba3dfabdfb4328cc",
       "name": "Ye Liu",
-      "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "The personal biography identifies Washington University doctorate without a completion date or earliest employment chronology; Syracuse link returned a missing page.",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "employer": "Syracuse University",
+      "position": "Assistant Professor of Supply Chain Management",
+      "placementYear": 2024,
+      "category": "tenure-track",
+      "evidenceUrl": "https://orcid.org/0009-0005-1277-2264",
+      "evidenceNote": "Her ORCID record (self-maintained, read through the public API) lists a Washington University in St. Louis Ph.D. (Supply Chain, Operations and Technologies) from 2018-08-01 to 2024-05-13 and one employment: Syracuse University, Assistant Professor of Supply Chain Management, from 2024-08-19. WashU Olin's PhD and DBA placements page lists Ye Liu (Supply Chain, Operations & Technology) under 2024 with the initial placement Martin J. Whitman School of Management, Syracuse University. Her personal site now gives a later move to the University of Iowa Tippie College of Business. Plain assistant professorship at a North American business school: tenure-track by convention.",
+      "phdYearVerified": 2024,
+      "phdInstitutionVerified": "Washington University in St. Louis",
+      "reason": "ORCID dates the Syracuse assistant professorship from 19 August 2024, three months after the WashU PhD ended on 13 May 2024; Olin's official placement list gives Syracuse Whitman as her 2024 initial placement.",
       "sources": [
         {
-          "url": "https://whitman.syracuse.edu/faculty-and-research/faculty-staff-directory/details/yliu623",
-          "title": "Ye Liu academic profile",
-          "notes": "The personal biography identifies Washington University doctorate without a completion date or earliest employment chronology; Syracuse link returned a missing page."
+          "url": "https://orcid.org/0009-0005-1277-2264",
+          "title": "ORCID - Ye Liu",
+          "notes": "Read through pub.orcid.org/v3.0: education WashU Ph.D. 2018-08-01 to 2024-05-13; employment Syracuse University (Marketing dept.), Assistant Professor of Supply Chain Management, from 2024-08-19."
+        },
+        {
+          "url": "https://olin.washu.edu/programs/doctoral/placements.php",
+          "title": "WashU Olin - PhD and DBA Placements",
+          "notes": "Curl: 2024 list includes Ye Liu (Supply Chain, Operations & Technology), Martin J. Whitman School of Management, Syracuse University."
         },
         {
           "url": "https://www.yeliu.io/",
-          "title": "Ye Liu academic profile",
-          "notes": "The personal biography identifies Washington University doctorate without a completion date or earliest employment chronology; Syracuse link returned a missing page."
+          "title": "Ye (Angelina) Liu - personal site",
+          "notes": "Curl: now Assistant Professor of Business Analytics, Tippie College of Business, University of Iowa; PhD WashU Olin; no dates."
         }
       ],
       "source": "omlist"
@@ -25631,14 +25893,32 @@
     {
       "facultyId": "omlist-2b08570b9e502ad7",
       "name": "Jose Lopez",
-      "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "Official profile lists current assistant professorship and expertise without education or prior employment dates.",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "employer": "Texas A&M University",
+      "position": "Assistant Professor",
+      "placementYear": 2024,
+      "category": "tenure-track",
+      "evidenceUrl": "https://orcid.org/0009-0004-8336-5925",
+      "evidenceNote": "His ORCID record (self-maintained, read through the public API) lists Massachusetts Institute of Technology, System Dynamics, PhD, 2019-09-01 to 2024-05-31, and one employment: Texas A&M University, INFO (Information and Operations Management), Assistant Professor, from 2024-06-01. MIT DSpace holds the doctoral thesis 'Essays in System Dynamics for Operations Management: Policy, Platforms and Pricing' by Jose Luis López Quirós, issued 2024-05. Plain assistant professorship at a North American business school: tenure-track by convention.",
+      "phdYearVerified": 2024,
+      "phdInstitutionVerified": "Massachusetts Institute of Technology",
+      "reason": "ORCID dates the Texas A&M assistant professorship from 1 June 2024, directly after the MIT PhD ending May 2024 (DSpace thesis record dated 2024-05); no other employment is listed.",
       "sources": [
         {
+          "url": "https://orcid.org/0009-0004-8336-5925",
+          "title": "ORCID - Jose Lopez",
+          "notes": "Found by the ORCID public search (Jose Lopez, affiliation Texas); public API: MIT System Dynamics PhD 2019-09-01 to 2024-05-31; Texas A&M INFO Assistant Professor from 2024-06-01."
+        },
+        {
+          "url": "https://dspace.mit.edu/handle/1721.1/155917",
+          "title": "MIT DSpace - Essays in System Dynamics for Operations Management: Policy, Platforms and Pricing",
+          "notes": "Read through the DSpace search API: author López Quirós, Jose Luis; Doctoral; issued 2024-05."
+        },
+        {
           "url": "https://mays.tamu.edu/directory/jose-lopez/",
-          "title": "Jose Lopez public academic profile",
-          "notes": "Official profile lists current assistant professorship and expertise without education or prior employment dates."
+          "title": "Mays Business School directory - Jose Lopez",
+          "notes": "Earlier review and curl: current assistant professorship; no education or dates."
         }
       ],
       "source": "omlist"
@@ -28579,19 +28859,27 @@
     {
       "facultyId": "omlist-076ab2597baabb41",
       "name": "Neda Mirzaeian",
-      "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "Degree completion and first job not established. Tepper pages (seen via search results) show her as an Operations Management PhD candidate and 2021 fellowship recipient, but no thesis record, job-market profile or UT Dallas profile with her chronology could be opened; a UT Dallas CV search hit was a different person. UT Dallas appointment (current institution) cannot be assumed to be the first job without evidence of a postdoc/other job between 2022 and the present.",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "employer": "The University of Texas at Dallas",
+      "position": null,
+      "placementYear": null,
+      "category": "unknown",
+      "evidenceUrl": "https://www.cmu.edu/tepper/programs/phd/job-market",
+      "evidenceNote": "Carnegie Mellon Tepper's 'Job Market and Placements' page, in its table 'Initial Placements of Ph.D. Graduates' (which includes companies such as United Airlines and CNA Corporation), lists graduation year 2022, Neda Mirzaeian, hiring institution University of Texas at Dallas. Her Jindal School faculty page (rendered in a headless browser) gives Ph.D. Carnegie Mellon University, Operations Management (2022), and her current title Assistant Professor, Operations Management. The initial title and start year are not stated on the placement list.",
+      "phdYearVerified": 2022,
+      "phdInstitutionVerified": "Carnegie Mellon University",
+      "reason": "The degree-granting school's official initial-placement table names UT Dallas as her first placement after the 2022 Tepper PhD, and UT Dallas confirms the degree; start year and initial rank are not documented.",
       "sources": [
         {
-          "url": "https://www.cmu.edu/tepper/programs/phd/student-awards",
-          "title": "Tepper PhD student awards",
-          "notes": "Search-result discovery: lists Neda Mirzaeian as 2021 Homaira Akbari fellowship recipient; not a placement source."
+          "url": "https://www.cmu.edu/tepper/programs/phd/job-market",
+          "title": "Tepper School - Job Market and Placements (Initial Placements of Ph.D. Graduates)",
+          "notes": "Curl: row 2022, Neda Mirzaeian, University of Texas at Dallas."
         },
         {
-          "url": "https://dox.utdallas.edu/pcv14622",
-          "title": "UT Dallas CV hit from search",
-          "notes": "Opened: CV of a different person (Shazia Ali); excluded."
+          "url": "https://jindal.utdallas.edu/faculty/neda-mirzaeian/",
+          "title": "UT Dallas Jindal School - Neda Mirzaeian",
+          "notes": "Rendered in a headless browser: Assistant Professor, Operations Management; Ph.D. Carnegie Mellon University, Operations Management (2022); M.Sc. Pittsburgh 2016; B.Sc. Sharif 2013."
         }
       ],
       "source": "omlist"
@@ -30273,15 +30561,25 @@
       "facultyId": "omlist-1b65d8fd4a319ee1",
       "name": "Julie Niederhoff",
       "status": "unresolved",
-      "checkedAt": "2026-10-16",
+      "checkedAt": "2026-10-17",
+      "reason": "ORCID lists a single employment, Syracuse University Whitman School of Management, from 2007-08 under her current Associate Professor title and with no education entry, and Syracuse University Today (13 Aug 2025) says she has been with the Whitman School since 2007; the Whitman profile and that story give a master's and Ph.D. in operations management from Washington University's Olin School without a year. No opened source dates the doctorate (2007 is only the imported value; searches found no dissertation record or CV), so it is not shown that the Syracuse post began after the degree with no earlier post, and the starting rank is not stated. Verifier: degree date and the order of degree and job not documented; the ORCID record carries only the current employer, not the degree, so it is not a dated chronology.",
       "sources": [
         {
+          "url": "https://orcid.org/0009-0009-8535-2091",
+          "title": "ORCID - Julie Niederhoff",
+          "notes": "Found by the ORCID public search (family name Niederhoff, affiliation Syracuse); public API: one employment, Syracuse University, Whitman School of Management, Associate Professor, from 2007-08; no education entries."
+        },
+        {
+          "url": "https://news.syr.edu/2025/08/13/whitman-school-names-julie-niederhoff-as-chair-of-marketing-department/",
+          "title": "Syracuse University Today - Whitman School Names Julie Niederhoff as Chair of Marketing Department (13 Aug 2025)",
+          "notes": "Curl: 'Niederhoff has been with the Whitman School since 2007'; chair of marketing effective Aug. 4, 2025."
+        },
+        {
           "url": "https://whitman.syracuse.edu/faculty-and-research/faculty-staff-directory/details/jniederh",
-          "title": "Julie Niederhoff public academic profile",
-          "notes": "Syracuse profile confirms Washington University doctorate but omits its date and a complete employment chronology."
+          "title": "Whitman directory - Julie Niederhoff",
+          "notes": "Curl: Ph.D., Operations Management, Washington University (no year); no CV link on the page."
         }
       ],
-      "reason": "Syracuse profile confirms Washington University doctorate but omits its date and a complete employment chronology.",
       "source": "omlist"
     },
     {
@@ -38255,12 +38553,27 @@
       "name": "Serdar Simsek",
       "status": "unresolved",
       "checkedAt": "2026-10-17",
-      "reason": "The UT Dallas profile linked from OM List returns 404 (and guessed profiles.utdallas.edu and personal.utdallas.edu addresses gave no profile), his ORCID record is empty, and one web search found no CV or dated appointment. Neither the Columbia 2013 PhD nor the first post-PhD job is established.",
+      "reason": "The Jindal School faculty page (rendered in a headless browser; curl gets only a shell) gives PhD and MPhil, Columbia University, 2013, and BS Bilkent 2008, and his publications appear as A. Serdar Şimşek; Columbia's Academic Commons (rendered past its bot check) lists a 2013 Business thesis 'Pricing Decentralization in Customized Pricing Systems and Network Models' by Simsek, Ahmet, which fits his pricing research (identity likely, not confirmed). No source dates his first job: the page lists no appointments, the personal-website link now redirects to a UT Dallas information page, the Columbia Business School doctoral pages answer 403 to curl and an empty shell through r.jina.ai, and ORCID 0000-0003-2334-5944 is empty. Earlier review (2026-10-17): the linked UT Dallas profile returned 404, ORCID was empty and a web search found no CV or dated appointment.",
       "sources": [
         {
+          "url": "https://jindal.utdallas.edu/faculty/serdar-simsek/",
+          "title": "UT Dallas Jindal School - Serdar Simsek",
+          "notes": "Headless browser: Associate Professor, Operations Management; PhD Columbia 2013; MPhil Columbia 2013; BS Bilkent 2008; no appointment history."
+        },
+        {
+          "url": "https://academiccommons.columbia.edu/search?q=Simsek&search_field=all_fields",
+          "title": "Columbia Academic Commons - search 'Simsek'",
+          "notes": "Headless browser: 'Pricing Decentralization in Customized Pricing Systems and Network Models', Simsek, Ahmet, 2013, Theses, Business."
+        },
+        {
+          "url": "https://business.columbia.edu/doctoral",
+          "title": "Columbia Business School - doctoral program",
+          "notes": "Curl: 403; r.jina.ai: empty page. Placement records not read."
+        },
+        {
           "url": "https://orcid.org/0000-0003-2334-5944",
-          "title": "A. Serdar Simsek - ORCID record",
-          "notes": "Public API record read; no affiliations or works."
+          "title": "ORCID - Serdar Simsek",
+          "notes": "Earlier review: no affiliations or works."
         }
       ],
       "source": "omlist"
@@ -40519,19 +40832,27 @@
     {
       "facultyId": "omlist-41f67f8070d79b53",
       "name": "Morgan Swink",
-      "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "TCU CV is not found and profile redirects to general faculty directory.",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "employer": "Indiana University",
+      "position": "Assistant Professor",
+      "placementYear": 1992,
+      "category": "tenure-track",
+      "evidenceUrl": "https://www.tcu.edu/directory/files/Swink_Morgan_CV.pdf",
+      "evidenceNote": "His CV hosted on the TCU directory gives the Indiana University Graduate School of Business Ph.D., 1992, and the appointments Associate Instructor, Indiana University, August 1988 - July 1992; Assistant Professor, Indiana University, August 1992 - May 1998; Associate Professor, Michigan State University, from June 1998. Texas Instruments engineering roles (1978-1988) predate the doctorate. The associate-instructor post was his doctoral-student teaching role, and the assistant professorship at the same school began on completion (the converted-post rule). Plain assistant professorship at a North American business school: tenure-track by convention.",
+      "phdYearVerified": 1992,
+      "phdInstitutionVerified": "Indiana University Bloomington",
+      "reason": "Dated CV: Indiana Ph.D. 1992, then Assistant Professor at Indiana University from August 1992, after a doctoral associate-instructor post there (1988-1992); industry work at Texas Instruments ended in 1988.",
       "sources": [
         {
-          "url": "https://www.neeley.tcu.edu/getattachment/bee05570-8c60-4480-804a-7610b482dccc/swink_morgan_cv.pdf?disposition=attachment",
-          "title": "Morgan Swink public academic profile",
-          "notes": "TCU CV is not found and profile redirects to general faculty directory."
+          "url": "https://www.tcu.edu/directory/files/Swink_Morgan_CV.pdf",
+          "title": "Morgan L. Swink - CV (TCU directory)",
+          "notes": "Curl, pdftotext: Education Indiana Ph.D. 1992; Appointments: Associate Instructor Indiana Aug 1988-Jul 1992, Assistant Professor Indiana Aug 1992-May 1998, Associate Professor Michigan State Jun 1998-Jun 2006, Professor MSU 2006-2008, TCU West Chair from Sep 2010; Texas Instruments 1978-1988."
         },
         {
-          "url": "https://www.neeley.tcu.edu/Swink-Morgan",
-          "title": "Morgan Swink public academic profile",
-          "notes": "TCU CV is not found and profile redirects to general faculty directory."
+          "url": "https://www.tcu.edu/directory/profile/swink-morgan.php",
+          "title": "TCU directory - Morgan Swink",
+          "notes": "Curl: PhD Indiana University; links the CV PDF."
         }
       ],
       "source": "omlist"
@@ -41430,18 +41751,23 @@
       "facultyId": "omlist-d242bc8d9988ab47",
       "name": "Sriram Thirumalai",
       "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "The TCU directory profile (opened, updated April 2026) lists University of Minnesota PhD and MS and current professor rank, with no employment history or years. No CV was found, so the 2005 PhD year and first post-PhD employer are unverified. Not inferred from the current TCU position.",
+      "checkedAt": "2026-10-17",
+      "reason": "The TCU directory profile (curl) still lists only the Minnesota PhD and MS and current publications, with no CV link (a guessed TCU CV file path returns 404); the ORCID public search on the family name Thirumalai returns no record for him; the University of Minnesota Conservancy has no record of a 2005 dissertation by him; the Carlson School placements page covers only 2017 onwards; one web search found only his TCU profiles. The degree year and the first post-PhD employer remain undocumented. Earlier review (2026-10-16): the TCU profile lists the Minnesota PhD and MS and current rank with no employment history or years, and no CV was found.",
       "sources": [
         {
           "url": "https://www.tcu.edu/directory/profile/thirumalai-sriram.php",
-          "title": "TCU directory profile, Sriram Thirumalai",
-          "notes": "Opened. Minnesota PhD/MS; no career dates."
+          "title": "TCU directory - Sriram Thirumalai",
+          "notes": "Curl: PhD and MS University of Minnesota; no dates or CV."
         },
         {
-          "url": "https://neeley.tcu.edu/Thirumalai-Sriram",
-          "title": "Neeley faculty page",
-          "notes": "Redirected to generic directory; no individual content."
+          "url": "https://conservancy.umn.edu/server/api/discover/search/objects?query=Thirumalai&dsoType=ITEM&size=10",
+          "title": "University of Minnesota Conservancy - search 'Thirumalai'",
+          "notes": "DSpace API: 38 items, none a dissertation by Sriram Thirumalai."
+        },
+        {
+          "url": "https://carlsonschool.umn.edu/graduate/phd/current-students/graduate-placements",
+          "title": "Carlson School - PhD graduate placements",
+          "notes": "Curl: covers 2017-2026 placements only."
         }
       ],
       "source": "omlist"
@@ -41838,13 +42164,18 @@
       "facultyId": "omlist-416673ccd98386c6",
       "name": "Travis Tokar",
       "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "Linked TCU profile redirects to general directory rather than individual career history.",
+      "checkedAt": "2026-10-17",
+      "reason": "His ORCID record (read through the public API) now dates the degree: University of Arkansas Fayetteville, Marketing and Logistics, Ph.D., 2002-08 to 2006-05; but its only employment is Texas Christian University, Information Systems and Supply Chain Management, from 2009-08 (role given as his current professorship). The three years between the May 2006 degree and the August 2009 TCU start are not covered by any source opened: the TCU directory profile (curl) lists his Arkansas PhD, MTLM and BS/BA and publications without career dates, guessed TCU CV file paths return 404, and the Walton College PhD pages tried return 404; one web search found only TCU job postings and an author profile. The first post-PhD employer and year remain undocumented. Earlier review (2026-10-16): the linked TCU profile redirected to the general directory rather than an individual career history.",
       "sources": [
         {
-          "url": "https://www.neeley.tcu.edu/Tokar-Travis",
-          "title": "Travis Tokar public academic profile",
-          "notes": "Linked TCU profile redirects to general directory rather than individual career history."
+          "url": "https://orcid.org/0000-0003-0884-0277",
+          "title": "ORCID - Travis Tokar",
+          "notes": "Public API: education University of Arkansas Fayetteville Ph.D. 2002-08 to 2006-05; employment Texas Christian University from 2009-08 (Professor of Supply Chain Management); nothing between."
+        },
+        {
+          "url": "https://www.tcu.edu/directory/profile/tokar-travis.php",
+          "title": "TCU directory - Travis Tokar",
+          "notes": "Curl: PhD, MTLM and BS/BA University of Arkansas; publications 2016-2021; no career dates or CV."
         }
       ],
       "source": "omlist"
@@ -45892,12 +46223,17 @@
       "name": "Zhengping Wu",
       "status": "unresolved",
       "checkedAt": "2026-10-17",
-      "reason": "The Syracuse Whitman profile states his PhD in operations management from Purdue's Krannert School (no year) and that he was previously on the faculty of Singapore Management University's Lee Kong Chian School of Business, where he was nominated for a teaching award in 2013, but gives no appointment dates or rank, and no CV is linked. One web search found no dated SMU appointment. The first post-PhD job and its year are not established.",
+      "reason": "The Whitman profile, re-opened by curl, still has no CV link (only a photo file in the faculty-success folder). The ORCID public search finds six Zhengping Wu records, none with a Purdue, SMU or Syracuse affiliation; one web search for an SMU appointment found only other SMU faculty CVs; guessed CV file names in SMU's operations-management folder all return 404; OpenAlex refused requests (daily limit). His prior SMU faculty membership is undated, so the first post after the Purdue degree and its year are not established. Earlier review (2026-10-17): the Whitman profile gives the Purdue Krannert PhD and earlier SMU faculty membership (teaching-award nomination 2013) with no dates or rank, and a web search found no dated SMU appointment.",
       "sources": [
         {
           "url": "https://whitman.syracuse.edu/faculty-and-research/faculty-staff-directory/details/zwu12",
-          "title": "Zhengping Wu - Syracuse Whitman profile",
-          "notes": "Degrees without years; prior SMU faculty membership without dates."
+          "title": "Whitman directory - Zhengping Wu",
+          "notes": "Curl: degrees without years; prior SMU faculty membership without dates; no CV link."
+        },
+        {
+          "url": "https://pub.orcid.org/v3.0/expanded-search/?q=family-name:Wu+AND+given-names:Zhengping",
+          "title": "ORCID public search - Zhengping Wu",
+          "notes": "Six records; none carries Purdue, SMU or Syracuse affiliations."
         }
       ],
       "source": "omlist"
@@ -47070,13 +47406,18 @@
       "facultyId": "omlist-557e273ad43ec995",
       "name": "Müge Yayla-Küllü",
       "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "CV identifies UNC doctorate, earlier Rensselaer assistant professorship and several industry jobs but omits all employment and degree dates. The sequence relative to PhD completion cannot be verified.",
+      "checkedAt": "2026-10-17",
+      "reason": "Re-read with layout, raw and word-box extraction, the September 2024 UTSA CV has no dates for any degree or position (dates appear only in the publication list). Its Academic Experience section lists, in reverse order, UTSA (associate professor), University of Central Florida (associate professor), Rensselaer Lally School (assistant professor), Instructor at UNC Kenan-Flagler, and graduate assistantships; its Professional Employment History lists Finansbank, Havelsan and two internships in Turkey, all undated. The order suggests the Rensselaer post followed a UNC instructorship, but without dates neither the start year nor its position relative to the degree (or to the undated industry jobs) is established. The UNC Carolina Digital Repository and Rensselaer homepages refused connections from this environment. Earlier review (2026-10-16): the CV identified the UNC doctorate, the earlier Rensselaer assistant professorship and several industry jobs but omitted all employment and degree dates.",
       "sources": [
         {
           "url": "https://business.utsa.edu/faculty/documents/yayla-kullu-muge_cv_2024_09_12.pdf",
-          "title": "Müge Yayla-Küllü — Curriculum Vitae",
-          "notes": "Education and employment chronology reviewed; requires further clarification."
+          "title": "H. Müge Yayla-Küllü - CV, 12 Sept 2024 (UTSA)",
+          "notes": "Curl, pdftotext (layout, raw, bbox): degrees and positions listed without any dates."
+        },
+        {
+          "url": "https://cdr.lib.unc.edu/catalog?q=Yayla",
+          "title": "UNC Carolina Digital Repository - search",
+          "notes": "Connection reset; not read."
         }
       ],
       "source": "omlist"
@@ -49197,13 +49538,23 @@
       "facultyId": "omlist-a95e02e6ac255120",
       "name": "Xuying Zhao",
       "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "The Texas A&M biography describes sixteen years at Notre Dame and the Texas Dallas doctorate, but supplies no doctoral or first-employment dates.",
+      "checkedAt": "2026-10-17",
+      "reason": "UT Dallas Jindal's Operations Management placement table lists Xuying Zhao under 2007 at the University of Notre Dame with a later title (Associate Professor), and its footnote says the placements are typically first placements but that a second placement may be reported for graduates who moved quickly; her Mays profile says she spent sixteen years on the faculty of Notre Dame's Mendoza College before joining Texas A&M, with no dates. Neither source dates the Notre Dame start or says it directly followed the UT Dallas degree; the Mendoza profile renders empty, no archived Notre Dame page or CV was found, and two searches for a CV returned nothing. Verifier: the placement table is not strictly a first-placement list and the biography is undated, so Notre Dame as the first post-PhD job is not established.",
       "sources": [
         {
+          "url": "https://jindal.utdallas.edu/phd-programs/management-science/operations-management/",
+          "title": "UT Dallas Jindal - PhD in Management Science, Operations Management concentration: Student Placements",
+          "notes": "Curl: table row 2007, Xuying Zhao, University of Notre Dame, Associate Professor; footnote: placements are typically first placements."
+        },
+        {
           "url": "https://mays.tamu.edu/directory/xuying-zhao/",
-          "title": "Xuying Zhao academic profile",
-          "notes": "The Texas A&M biography describes sixteen years at Notre Dame and the Texas Dallas doctorate, but supplies no doctoral or first-employment dates."
+          "title": "Mays Business School directory - Xuying Zhao",
+          "notes": "Curl: before joining Texas A&M, sixteen years on the faculty of Notre Dame's Mendoza College; PhD Operations Management, UT Dallas; no dates."
+        },
+        {
+          "url": "https://mendoza.nd.edu/mendoza-directory/profile/xuying-zhao/",
+          "title": "Notre Dame Mendoza directory - Xuying Zhao",
+          "notes": "Curl, r.jina.ai and a headless browser all returned an empty page."
         }
       ],
       "source": "omlist"
@@ -49777,13 +50128,18 @@
       "facultyId": "omlist-db2782cccbbec15b",
       "name": "Cheng (Emily) Zhu",
       "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "The Texas State profile dates McGill doctorate to 2018 but does not establish earliest employment after completion.",
+      "checkedAt": "2026-10-17",
+      "reason": "The degree is now settled: McGill's repository (mcgill.scholaris.ca, read through its DSpace API) holds 'Three essays on data-driven models in health care operations management' by Zhu, Cheng, Doctor of Philosophy, McGill University, 2018, matching the Texas State profile's 'PhD in Management, McGill University, 2018' (the imported 2017 is not supported). Her first job is still undocumented: the Texas State profile and its detail page (curl) give no CV link and no appointment history, only grants from September 2023 onwards and her current associate-professor title; the ORCID search found no record for her. Earlier review (2026-10-16): the Texas State profile dated the McGill doctorate to 2018 but did not establish her earliest employment after completion.",
       "sources": [
         {
-          "url": "https://faculty.txstate.edu/profile/2154219",
-          "title": "Cheng (Emily) Zhu academic profile",
-          "notes": "The Texas State profile dates McGill doctorate to 2018 but does not establish earliest employment after completion."
+          "url": "https://mcgill.scholaris.ca/handle/20.500.14905/114078",
+          "title": "McGill eScholarship - Three essays on data-driven models in health care operations management (Zhu, Cheng)",
+          "notes": "Read through the DSpace search API: Doctor of Philosophy, McGill University, 2018."
+        },
+        {
+          "url": "https://faculty.txst.edu/profile/2154219",
+          "title": "Texas State faculty profile - Cheng (Emily) Zhu",
+          "notes": "Curl: PhD in Management, McGill University, 2018; grants from Sept 2023; no CV link or appointment dates."
         }
       ],
       "source": "omlist"
@@ -67647,17 +68003,22 @@
       "name": "Alptekinoglu, Aydin",
       "status": "unresolved",
       "checkedAt": "2026-10-17",
-      "reason": "The Smeal bio gives the PhD (Operations Management, UCLA Anderson, 2004) and says that before joining Smeal in 2013 he held faculty positions at the University of Florida and Southern Methodist University, without dates, ranks or order, so the first post-PhD job cannot be named. No vita is linked from the Smeal page; his ORCID record (0000-0002-8448-2531) has no employment entries; one web search found no CV (only the Smeal page and a Mathematics Genealogy entry for the 2004 UCLA PhD, not opened); Wayback availability checks for guessed old faculty URLs returned nothing and the Wayback CDX query was refused (connection reset).",
+      "reason": "UCLA Anderson's official Ph.D. placements page lists 'Aydin Alptekinoglu (Ph.D. '04), First academic placement: University of Florida', dissertation 'Essays on Operations-Marketing Strategy' (co-chairs Corbett and Tang), and the Smeal bio says he held faculty positions at Florida and SMU before joining Smeal in 2013. The UCLA record is restricted to academic placements and neither source dates the Florida start or gives his rank, so a non-academic post between the 2004 degree and Florida is not excluded and the start year is unknown; the University of Florida destination is kept as the reported first academic placement. The Smeal page links no vita (only Google Scholar). Earlier review (2026-10-17): the Smeal bio gave the 2004 UCLA PhD and undated Florida and SMU faculty posts, ORCID had no employment, and no CV was found.",
       "sources": [
         {
+          "url": "https://www.anderson.ucla.edu/degrees/phd-program/placement",
+          "title": "UCLA Anderson - Ph.D. Placements",
+          "notes": "Curl: 'Aydin Alptekinoglu (Ph.D. '04) First academic placement: University of Florida'; dissertation Essays on Operations-Marketing Strategy; co-chairs Professors Corbett and Tang."
+        },
+        {
           "url": "https://directory.smeal.psu.edu/axa60",
-          "title": "Smeal directory: Aydin Alptekinoglu",
-          "notes": "Bio: Ph.D. Operations Management, UCLA Anderson, 2004; prior to joining Smeal in 2013 held faculty positions at University of Florida and Southern Methodist University (undated, unordered). Education: Ph D UCLA 2004; MS Arizona 1996; BS Bilkent 1993."
+          "title": "Smeal directory - Aydin Alptekinoglu",
+          "notes": "Curl: Ph.D. Operations Management, UCLA, 2004; before joining Smeal in 2013 held faculty positions at the University of Florida and SMU (undated); no vita link."
         },
         {
           "url": "https://orcid.org/0000-0002-8448-2531",
-          "title": "ORCID record 0000-0002-8448-2531 (Aydin Alptekinoglu)",
-          "notes": "Read through the public ORCID API (v3.0 employments): no employment entries."
+          "title": "ORCID - Aydin Alptekinoglu",
+          "notes": "Earlier review: no employment entries."
         }
       ],
       "source": "faculty-page"
@@ -67797,22 +68158,22 @@
       "name": "Eruysal, Ferdi",
       "status": "unresolved",
       "checkedAt": "2026-10-17",
-      "reason": "The Smeal page gives the PhD (Management Information Systems, University of Illinois at Chicago, 2014) and an undated bio mentioning extensive teaching and industry collaboration; his personal site names only the current Penn State post and links LinkedIn, which was not read. ORCID record 0000-0002-3152-2616 has no employment entries and one web search found no CV, so no dated post-PhD chronology was found.",
+      "reason": "The UIC Indigo thesis record (read through the figshare API) now dates the degree: 'Business Intelligence and Smart Pricing in Uncertain Competitive Environment' by Ferdi Eruysal, Doctoral, University of Illinois at Chicago, Information and Decision Sciences, submitted 2014-08, advisor Aris Ouksel. No source gives his employment after August 2014: his personal site (re-opened by curl) names only the current Penn State clinical post and links no CV; ORCID 0000-0002-3152-2616 has no employment entries. Earlier review (2026-10-17): the Smeal page gave the 2014 UIC PhD and an undated bio, the personal site named only Penn State, ORCID was empty, and a web search found no CV.",
       "sources": [
         {
-          "url": "https://directory.smeal.psu.edu/fpe5024",
-          "title": "Smeal directory: Ferdi Eruysal",
-          "notes": "Assistant Clinical Professor. Education: PhD MIS, UIC, 2014; MS IT Bahcesehir 2003; BS IE METU 2000. Undated bio."
+          "url": "https://indigo.uic.edu/articles/thesis/Business_Intelligence_and_Smart_Pricing_in_Uncertain_Competitive_Environment/10863710",
+          "title": "UIC Indigo - Business Intelligence and Smart Pricing in Uncertain Competitive Environment (Ferdi Eruysal)",
+          "notes": "figshare API: Doctoral, University of Illinois at Chicago, Information and Decision Sciences; submitted 2014-08; advisor Aris M. Ouksel."
         },
         {
           "url": "http://ferdi.eruysal.com/",
-          "title": "Ferdi Eruysal personal site",
-          "notes": "Current role Clinical Assistant Professor at Penn State; no dated history or CV."
+          "title": "Ferdi Eruysal - personal site",
+          "notes": "Curl: Clinical Assistant Professor at Penn State; no dated history or CV."
         },
         {
-          "url": "https://orcid.org/0000-0002-3152-2616",
-          "title": "ORCID record 0000-0002-3152-2616 (Ferdi Eruysal)",
-          "notes": "Read through the public ORCID API: no employment entries."
+          "url": "https://directory.smeal.psu.edu/fpe5024",
+          "title": "Smeal directory - Ferdi Eruysal",
+          "notes": "Earlier review: PhD MIS UIC 2014; undated bio."
         }
       ],
       "source": "faculty-page"
@@ -67956,12 +68317,22 @@
       "name": "Jones, Arthur C.",
       "status": "unresolved",
       "checkedAt": "2026-10-17",
-      "reason": "The Smeal page lists him as Teaching Professor with Ph D, MS (2004) and BS (2000) all from Penn State, the PhD dated 2010, but has no biography, vita or employment history. No ORCID record matched the name with Penn State. Whether he held a Penn State teaching post before the 2010 degree, and what his first post-PhD job was, is not documented; no web search was spent on him (search budget exhausted).",
+      "reason": "Penn State's eTDA OAI-PMH interface (harvested for 2009-2011) holds his PhD dissertation in Information Sciences and Technology, 'The effects of variations in inter-modal human-computer interface designs on accuracy, timeliness, and situational awareness of users' by Jones, Arthur Charles (advisor Michael McNeese), and its catalog page gives the date of defense as December 2, 2010 (final submission 2011-04-11), consistent with the faculty page's 2010. The catalog page links the dissertation PDF, whose vita page could give his employment, but the site's file downloads answer a bot check (tried with curl and a headless browser). No source opened names or dates any job after the degree, so whether his Penn State teaching post began before or after it is unknown. Earlier review (2026-10-17): the Smeal page lists him as Teaching Professor with Penn State PhD 2010, MS 2004 and BS 2000, with no biography or vita, and no ORCID record matched.",
       "sources": [
         {
+          "url": "https://etda.libraries.psu.edu/catalog/oai?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:etda.libraries.psu.edu:11780",
+          "title": "Penn State eTDA - OAI record 11780 (Jones, Arthur Charles)",
+          "notes": "Found by harvesting ListRecords for 2011, then read by GetRecord: PHD, Information Sciences and Technology; advisor Mike McNeese; dc:date 2011-04-11; datestamp 2011-05-16."
+        },
+        {
+          "url": "https://etda.libraries.psu.edu/catalog/11780",
+          "title": "Penn State eTDA - catalog record 11780",
+          "notes": "Curl: Graduate Program Information Sciences and Technology; Doctor of Philosophy; Date of Defense December 02, 2010; links Dissertation_-_FINAL.pdf, but the site's file downloads were refused by its bot check when tried (curl and headless browser) for another record, so the vita page was not read."
+        },
+        {
           "url": "https://directory.smeal.psu.edu/acj100",
-          "title": "Smeal directory: Arthur C. Jones",
-          "notes": "Teaching Professor. Education: Ph D Penn State 2010; MS Penn State 2004; BS MS&IS Penn State 2000. No bio or vita."
+          "title": "Smeal directory - Arthur C. Jones",
+          "notes": "Earlier review: Teaching Professor; Ph D Penn State 2010; no bio or vita."
         }
       ],
       "source": "faculty-page"
@@ -68228,17 +68599,27 @@
       "name": "Naumov, Sergey",
       "status": "unresolved",
       "checkedAt": "2026-10-17",
-      "reason": "The Smeal page lists him as Associate Professor of Supply Chain Management with Ph D (Management Science, System Dynamics), MIT, 2019, but no biography or vita; his personal site names the Penn State post and an MIT Sloan research affiliation without dates or a CV. ORCID searches returned several Sergey Naumov records, none identifiable as him. One web search found no dated chronology, so the start of the Penn State post and any job between the 2019 degree and it are unknown.",
+      "reason": "MIT DSpace (read through its search API) confirms the doctoral thesis 'Essays on automated vehicles and the future of mobility' by Naumov, Sergey A., 2019. The start of his Penn State post is still undocumented: his personal site (curl) names only the Smeal assistant professorship and an MIT Sloan research affiliation without dates; one web search returned a snippet of an MIT Sloan PhD student profile naming Penn State as his placement, but that page now answers 404 directly and through the r.jina.ai reader, so it could not be read; ORCID records under his name carry no matching affiliation. Whether Penn State followed the 2019 degree directly or after another post (for example at MIT) is not established. Earlier review (2026-10-17): the Smeal page gave the 2019 MIT PhD without a biography, the personal site gave no dates or CV, and ORCID and a web search found no dated chronology.",
       "sources": [
         {
-          "url": "https://directory.smeal.psu.edu/spn5266",
-          "title": "Smeal directory: Sergey Naumov",
-          "notes": "Associate Professor of SCM. Education: Ph D MIT 2019; MS MIT 2017; MS MIT 2013; MS Bauman Moscow State Technical University 1995. No bio or vita."
+          "url": "https://dspace.mit.edu/handle/1721.1/123383",
+          "title": "MIT DSpace - Essays on automated vehicles and the future of mobility (Naumov, Sergey A.)",
+          "notes": "DSpace search API: Thesis, 2019."
         },
         {
           "url": "https://www.sergnaumov.com/",
-          "title": "Sergey Naumov personal site",
-          "notes": "Read with the fetch tool: Assistant Professor of SCM at Smeal and Research Affiliate, MIT Sloan System Dynamics group; no dates, no CV link."
+          "title": "Sergey Naumov - personal site",
+          "notes": "Curl: Assistant Professor of SCM at Smeal and Research Affiliate, MIT Sloan System Dynamics group; no dates or CV."
+        },
+        {
+          "url": "https://mitsloan.mit.edu/phd/students/sergey-naumov",
+          "title": "MIT Sloan PhD student profile - Sergey Naumov",
+          "notes": "Search-result lead said placement Penn State; the page answers 404 to curl and through r.jina.ai. Not read."
+        },
+        {
+          "url": "https://directory.smeal.psu.edu/spn5266",
+          "title": "Smeal directory - Sergey Naumov",
+          "notes": "Earlier review: Ph D MIT 2019; no bio or vita."
         }
       ],
       "source": "faculty-page"
@@ -68338,12 +68719,22 @@
       "name": "Sharma, Rashmi",
       "status": "unresolved",
       "checkedAt": "2026-10-17",
-      "reason": "The Smeal page gives the PhD (Supply Chain and Information Systems, Penn State, 2018; MBA Penn State 2012) and says she worked in industry for nearly nine years before coming to Penn State, without dates. No vita is linked and no ORCID record matched her name with Penn State. Whether her Penn State teaching post began before the 2018 degree (she studied there from about 2010) and what her first post-PhD job was are not documented; no web search was spent on her (search budget exhausted).",
+      "reason": "Penn State's eTDA records now date the degree: her PhD dissertation in Business Administration, 'Essays on Operations Management' (advisor Aydin Alptekinoglu), was defended on June 12, 2018 (catalog page; OAI record 15698ros5253, found by harvesting the OAI-PMH interface). Her first job after it is still undocumented: the Smeal page says only that she worked in industry for nearly nine years before coming to Penn State (undated); the dissertation PDF, whose vita page might list her positions, is behind the site's bot check (tried with curl and a headless browser); no ORCID record matched. Whether her Penn State clinical post began before or after the June 2018 defence is not known. Earlier review (2026-10-17): the Smeal page gave the 2018 Penn State PhD and nine undated years of industry work before Penn State, with no vita or ORCID.",
       "sources": [
         {
+          "url": "https://etda.libraries.psu.edu/catalog/15698ros5253",
+          "title": "Penn State eTDA - Essays on Operations Management (Sharma, Rashmi)",
+          "notes": "Curl: Graduate Program Business Administration; Doctor of Philosophy; Date of Defense June 12, 2018."
+        },
+        {
+          "url": "https://etda.libraries.psu.edu/catalog/oai?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:etda.libraries.psu.edu:15698ros5253",
+          "title": "Penn State eTDA - OAI record 15698ros5253",
+          "notes": "PHD, Business Administration; advisor Aydin Alptekinoglu; committee chair Anthony Kwasnica; dc:date 2018-06-30."
+        },
+        {
           "url": "https://directory.smeal.psu.edu/ros5253",
-          "title": "Smeal directory: Rashmi Sharma",
-          "notes": "Associate Clinical Professor; managing director of LEMA. Bio: nearly nine years in industry before Penn State (undated). Education: Ph D SC&IS Penn State 2018; MBA Penn State 2012; MCA IGNOU 2005; BS Rajasthan 2001."
+          "title": "Smeal directory - Rashmi Sharma",
+          "notes": "Earlier review: Associate Clinical Professor; nearly nine years in industry before Penn State (undated); Ph D Penn State 2018."
         }
       ],
       "source": "faculty-page"
@@ -68353,12 +68744,17 @@
       "name": "Solo, Christopher",
       "status": "unresolved",
       "checkedAt": "2026-10-17",
-      "reason": "The Smeal page gives the PhD (IE & OR, Penn State, 2009) and says that before Smeal he served over 21 years on active duty in the U.S. Air Force (intelligence, acquisition program management, operations research analyst), including a period on the U.S. Air Force Academy faculty, retiring as a lieutenant colonel. No dates are given, so it is not known whether the Air Force Academy assignment followed the 2009 doctorate (which would count as a new post-PhD post) or preceded it. No vita is linked; no ORCID record found; one web search found no dated chronology.",
+      "reason": "Penn State's eTDA catalog page now dates the degree: his Industrial Engineering PhD dissertation 'Multi-objective, integrated supply chain design and operation under uncertainty' (advisor A. Ravindran) was defended on May 28, 2009. The order of his Air Force assignments is still unknown: the Smeal bio says he served over 21 years on active duty, including a period on the U.S. Air Force Academy faculty, and retired as a lieutenant colonel, but gives no dates; the dissertation PDF (vita page) is behind the site's bot check (curl and headless browser); one web search found only the Smeal page. Whether the Academy faculty assignment followed the 2009 degree (a new post-PhD post under the military-officer rule) or preceded it is not documented. Earlier review (2026-10-17): the Smeal page gave the 2009 Penn State PhD and an undated Air Force career with an Academy faculty period.",
       "sources": [
         {
+          "url": "https://etda.libraries.psu.edu/catalog/9709",
+          "title": "Penn State eTDA - Multi-objective, integrated supply chain design and operation under uncertainty (Solo, Christopher James)",
+          "notes": "Curl: Graduate Program Industrial Engineering; Doctor of Philosophy; Date of Defense May 28, 2009; file Solo--dissertation--3_Jun_09.pdf refused by the bot check (curl and headless browser)."
+        },
+        {
           "url": "https://directory.smeal.psu.edu/cjs9",
-          "title": "Smeal directory: Christopher J. Solo",
-          "notes": "Associate Clinical Professor. Bio: 21+ years USAF active duty; served on the USAF Academy faculty; retired lieutenant colonel (all undated). Education: Ph D IE&OR Penn State 2009; MS OR AFIT 2004; BS Math Penn State 1994."
+          "title": "Smeal directory - Christopher J. Solo",
+          "notes": "Earlier review and web-search discovery: 21+ years USAF active duty; served on the USAF Academy faculty; retired lieutenant colonel; all undated."
         }
       ],
       "source": "faculty-page"
@@ -68411,12 +68807,22 @@
       "name": "Tyworth, Michael",
       "status": "unresolved",
       "checkedAt": "2026-10-17",
-      "reason": "The Smeal page gives the PhD (Information Sciences & Technology, Penn State, 2009) and degrees from Indiana (2004) and Penn State (1992), but no biography, vita or employment history. No ORCID record was found for him; one web search returned nothing about him. The first post-PhD job is unknown.",
+      "reason": "Penn State's eTDA catalog page now dates the degree: his Information Sciences and Technology PhD dissertation 'Reflections of identity: how information systems mirror the organization as a social actor' (advisors Andrea Tapia and Steven Sawyer) was defended on November 13, 2009. No source opened names or dates any job after it: the Smeal page has no biography or vita, the dissertation PDF (vita page) is behind the site's bot check, and the ORCID search on his family name returns only another person. Earlier review (2026-10-17): the Smeal page gave the 2009 Penn State PhD with no biography or employment history, and no ORCID record or web result was found.",
       "sources": [
         {
+          "url": "https://etda.libraries.psu.edu/catalog/10336",
+          "title": "Penn State eTDA - Reflections of Identity (Tyworth, Michael J.)",
+          "notes": "Curl: Graduate Program Information Sciences and Technology; Doctor of Philosophy; Date of Defense November 13, 2009."
+        },
+        {
+          "url": "https://pub.orcid.org/v3.0/expanded-search/?q=family-name:Tyworth",
+          "title": "ORCID public search - Tyworth",
+          "notes": "One record (John Tyworth); none for Michael Tyworth."
+        },
+        {
           "url": "https://directory.smeal.psu.edu/mjt241",
-          "title": "Smeal directory: Michael J. Tyworth",
-          "notes": "Assistant Clinical Professor. Education: Ph D IST (Social & Organizational Informatics), Penn State, 2009; MIS Indiana 2004; BS Psychology Penn State 1992. No bio or vita."
+          "title": "Smeal directory - Michael Tyworth",
+          "notes": "Earlier review: Assistant Clinical Professor; Ph D IST Penn State 2009; no bio or vita."
         }
       ],
       "source": "faculty-page"
@@ -68509,24 +68915,22 @@
       "name": "Yilmaz, Serkan",
       "status": "unresolved",
       "checkedAt": "2026-10-17",
-      "reason": "The Smeal directory profile (Assistant Clinical Professor, Supply Chain & Information Systems) gives no education or employment history; it lists nuclear fuel-management publications from 1998 to 2016, including papers on Global Nuclear Fuel (GNF) design tools from 2007 to 2011. Penn State's ETD catalogue (record 6671, read through its public OAI-PMH interface because the catalogue pages answer with a bot check) holds a PhD dissertation in Nuclear Engineering by Yilmaz, Serkan, 'Multi level optimization of burnable poison utilization for advanced PWR fuel management', chaired by Kostadin Ivanov and Yousry Azmy, with an OAI datestamp of 2005-08-15; its committee (Ivanov, Levine, Mahgerefteh) matches his 2003-2006 co-authors on the profile, so the identity is likely. No source opened states the conferral year or names and dates his first post-PhD employer: the GNF-related papers suggest industry work by 2007, but no dated chronology was found. One web search found nothing about him; an ORCID name search reported 26 Serkan Yilmaz records, and none of the 20 returned showed a Penn State or GNF affiliation.",
-      "phdInstitutionVerified": "The Pennsylvania State University",
-      "phdYearVerified": null,
+      "reason": "Re-opened by curl, the Penn State eTDA catalog page for record 6671 shows the dissertation file 'Serkan_Yilmaz_PhD_Thesis_ETD_version.pdf' but leaves the graduate program, degree and date-of-defence fields empty, and the file itself is behind the site's bot check (tried with curl and a headless browser on the same site), so neither the conferral date nor a vita listing his employment could be read. No other source dates his first job; the GNF-related papers on his Smeal profile still only suggest nuclear-industry work by 2007. Earlier review (2026-10-17): the Smeal profile gave no education or career history; eTDA record 6671 (OAI datestamp 2005-08-15) holds his Nuclear Engineering PhD dissertation chaired by Kostadin Ivanov, likely the same person; ORCID and a web search found nothing dated.",
       "sources": [
         {
-          "url": "https://directory.smeal.psu.edu/sxy149",
-          "title": "Serkan Yilmaz - Smeal College of Business directory",
-          "notes": "Read by plain request; title, courses and publication list only; no education or career dates."
+          "url": "https://etda.libraries.psu.edu/catalog/6671",
+          "title": "Penn State eTDA - catalog record 6671 (Yilmaz, Serkan)",
+          "notes": "Curl: title page with empty program, degree and defence-date fields; file Serkan_Yilmaz_PhD_Thesis_ETD_version.pdf not downloadable (bot check)."
         },
         {
           "url": "https://etda.libraries.psu.edu/catalog/oai?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:etda.libraries.psu.edu:6671",
-          "title": "Penn State ETD OAI record 6671: Yilmaz, Serkan, PhD dissertation (Nuclear Engineering)",
-          "notes": "Relation PHD, coverage Nuclear Engineering, committee chair Kostadin Ivanov; OAI datestamp 2005-08-15 (not stated as conferral date). Catalogue page https://etda.libraries.psu.edu/catalog/6671 refused automated reading (bot check)."
+          "title": "Penn State eTDA - OAI record 6671",
+          "notes": "Earlier review: PHD, Nuclear Engineering; committee chair Kostadin Ivanov; OAI datestamp 2005-08-15."
         },
         {
-          "url": "https://pub.orcid.org/v3.0/expanded-search/?q=given-names:Serkan+AND+family-name:Yilmaz",
-          "title": "ORCID public API name search: Serkan Yilmaz",
-          "notes": "26 records reported; the 20 returned showed no Penn State, GNF or nuclear-industry affiliation; not used."
+          "url": "https://directory.smeal.psu.edu/sxy149",
+          "title": "Smeal directory - Serkan Yilmaz",
+          "notes": "Earlier review: title, courses and nuclear fuel-management publications 1998-2016; no education or career dates."
         }
       ],
       "source": "faculty-page"
@@ -68783,17 +69187,22 @@
       "name": "Inaiya Armeen",
       "status": "unresolved",
       "checkedAt": "2026-10-17",
-      "reason": "No dated employment chronology found. The Culverhouse profile gives only the current title (Assistant Professor of MIS) and the Ph.D. in MIS, Texas Tech University, 2021, with no start date at Alabama or earlier positions. Her ORCID record (0000-0002-6060-029X) has no employment, education or works entries. The Texas Tech repository API refused the request (HTTP 403). One web search for a CV found nothing about her, and Crossref records for her papers carry no dated affiliations. Whether Alabama was her first post-PhD job, and when it began, is not documented.",
+      "reason": "The Texas Tech repository's DSpace API (the HTML pages answer 403) now dates the degree: 'Exploiting user participation to enhance user experience (UX): An emotional approach' by Armeen, Inaiya, Doctor of Philosophy, Information Systems and Quantitative Sciences, August 2021 (chair Eric Walden). Her start at Alabama, and any job between August 2021 and it, remain undocumented: the Culverhouse profile and the Culverhouse site search (curl) give only the current title and the degrees; ORCID 0000-0002-6060-029X is empty. Earlier review (2026-10-17): the Culverhouse profile gave only the current title and the 2021 Texas Tech PhD, ORCID was empty, the repository refused the request, and a web search found no CV.",
       "sources": [
         {
+          "url": "https://ttu-ir.tdl.org/handle/2346/88048",
+          "title": "Texas Tech University repository - Exploiting user participation to enhance user experience (UX) (Armeen, Inaiya)",
+          "notes": "Read through the DSpace search API: Doctor of Philosophy, Information Systems and Quantitative Sciences; issued 2021-08; submitted August 2021; chair Eric Walden."
+        },
+        {
           "url": "https://culverhouse.ua.edu/people/inaiya-armeen/",
-          "title": "Culverhouse directory profile: Inaiya Armeen",
-          "notes": "Current Assistant Professor of MIS; Education: Ph.D. MIS Texas Tech 2021, M.S. MIS Northern Illinois 2016, B.E. Osmania. No dated history; only a LinkedIn link (not opened)."
+          "title": "Culverhouse College of Business - Inaiya Armeen",
+          "notes": "Curl: Ph.D. MIS Texas Tech 2021; M.S. NIU 2016; no dates for the Alabama post or earlier jobs."
         },
         {
           "url": "https://orcid.org/0000-0002-6060-029X",
-          "title": "ORCID record 0000-0002-6060-029X (Inaiya Armeen)",
-          "notes": "Read through the public ORCID API; record contains only the name, with no employments, educations or works."
+          "title": "ORCID - Inaiya Armeen",
+          "notes": "Public API: no employment or education entries."
         }
       ],
       "source": "faculty-page"
