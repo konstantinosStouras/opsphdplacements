@@ -34,16 +34,16 @@
    },
    "reviewed": 3787,
    "reviewOutcomes": {
-    "not-listed": 343,
-    "confirmed-faculty": 3126,
+    "not-listed": 354,
+    "confirmed-faculty": 3128,
     "extraction-noise": 250,
-    "unresolved": 42,
-    "same-as-om-list": 26
+    "unresolved": 28,
+    "same-as-om-list": 27
    },
    "universities": 95,
    "omListProfilesSeen": 284
   },
-  "reviewsUpdatedAt": "2026-10-16"
+  "reviewsUpdatedAt": "2026-10-17"
  },
  "pages": [
   {
@@ -101521,17 +101521,19 @@
    "firstJob": null,
    "verification": "unverified",
    "review": {
-    "status": "unresolved",
-    "checkedAt": "2026-10-16",
-    "reason": "Could not be checked: the profile page isom.hkust.edu.hk/node/2507 returned HTTP 503 on 2026-10-16 (also with a trailing-slash variant), the ISOM directory returned HTTP 503 on repeated attempts, and the www.bm.ust.hk alias reset the connection. The roster extraction shows the title 'Teaching Associate', a teaching-support grade rather than a faculty rank, but this could not be verified against the live page.",
+    "status": "not-listed",
+    "checkedAt": "2026-10-17",
+    "reason": "Re-checked: HTTPS still fails here with a certificate-chain error (curl exit 60), so her ISOM page (node/2507) and the ISOM People directory were read over plain http:// with curl on 2026-10-17. Her own page shows only 'Athena M F CHAU', 'Operations Management', 'Teaching Associate' with no biography or degree, and the directory lists her as Teaching Associate, Operations Management, under its 'Teaching/Research Support Staff' heading (with Instructional Designers and Instructional Assistants), separate from the Regular, Teaching Track and Adjunct & Visiting Faculty headings; a teaching-support staff grade, not a faculty appointment. Earlier check (2026-10-16): the profile page and directory returned HTTP 503 and the www.bm.ust.hk alias reset the connection, so the 'Teaching Associate' title could not be verified against the live page.",
     "sources": [
      {
       "url": "https://isom.hkust.edu.hk/node/2507",
-      "title": "HKUST ISOM profile page node/2507 (HTTP 503 on 2026-10-16)"
+      "title": "Athena M F CHAU | HKUST Department of ISOM",
+      "notes": "HTTPS still fails here with a certificate-chain error (curl exit 60), so the same public page was read over plain http:// with curl on 2026-10-17 (http://isom.hkust.edu.hk/node/2507). Shows name, area Operations Management and title Teaching Associate only."
      },
      {
       "url": "https://isom.hkust.edu.hk/faculty-and-staff/directory",
-      "title": "HKUST ISOM Faculty and Staff directory (HTTP 503 on 2026-10-16)"
+      "title": "People | HKUST Department of ISOM (faculty and staff directory)",
+      "notes": "HTTPS still fails here with a certificate-chain error (curl exit 60), so the same public page was read over plain http:// with curl on 2026-10-17 (http://isom.hkust.edu.hk/faculty-and-staff/directory). The page groups 126 entries under the headings Regular Faculty, Emeritus Faculty, Teaching Track Faculty, Adjunct & Visiting Faculty, General Office, MScBA/MScGO/MScICSM/MScISM Program Offices, RMBI Office and Teaching/Research Support Staff; each entry shows a position, the name, an area (for some) and a title."
      }
     ],
     "profileUrl": null,
@@ -101835,13 +101837,14 @@
    "firstJob": null,
    "verification": "unverified",
    "review": {
-    "status": "unresolved",
-    "checkedAt": "2026-10-16",
-    "reason": "Could not be checked: the only page cited is the ISOM directory (the profileUrl is the directory with a fragment), which returned HTTP 503 on 2026-10-16 on repeated attempts, and the www.bm.ust.hk alias reset the connection. The roster extraction shows the title 'Teaching Associate', which is a teaching-support or support-staff grade rather than a faculty rank, but this could not be verified against the live page.",
+    "status": "not-listed",
+    "checkedAt": "2026-10-17",
+    "reason": "Re-checked: HTTPS still fails here with a certificate-chain error (curl exit 60), so the ISOM People directory was read over plain http:// with curl on 2026-10-17 (http://isom.hkust.edu.hk/faculty-and-staff/directory). The directory lists Chris S H TSE as 'Instructional Designer', area Information Systems, under its 'Teaching/Research Support Staff' heading, with no individual page; the roster's 'Teaching Associate' is not the title his entry shows. A support-staff role, not a faculty appointment, and no degree is shown. Earlier check (2026-10-16): the only page cited (the ISOM directory) returned HTTP 503 on repeated attempts and the www.bm.ust.hk alias reset the connection, so the roster title could not be verified against the live page.",
     "sources": [
      {
       "url": "https://isom.hkust.edu.hk/faculty-and-staff/directory",
-      "title": "HKUST ISOM Faculty and Staff directory (HTTP 503 on 2026-10-16)"
+      "title": "People | HKUST Department of ISOM (faculty and staff directory)",
+      "notes": "HTTPS still fails here with a certificate-chain error (curl exit 60), so the same public page was read over plain http:// with curl on 2026-10-17 (http://isom.hkust.edu.hk/faculty-and-staff/directory). The page groups 126 entries under the headings Regular Faculty, Emeritus Faculty, Teaching Track Faculty, Adjunct & Visiting Faculty, General Office, MScBA/MScGO/MScICSM/MScISM Program Offices, RMBI Office and Teaching/Research Support Staff; each entry shows a position, the name, an area (for some) and a title."
      }
     ],
     "profileUrl": null,
@@ -102083,13 +102086,14 @@
    "firstJob": null,
    "verification": "unverified",
    "review": {
-    "status": "unresolved",
-    "checkedAt": "2026-10-16",
-    "reason": "Could not be checked: the only page cited is the ISOM directory (the profileUrl is the directory with a fragment), which returned HTTP 503 on 2026-10-16 on repeated attempts, and the www.bm.ust.hk alias reset the connection. The roster extraction shows the title 'Teaching Associate', which is a teaching-support or support-staff grade rather than a faculty rank, but this could not be verified against the live page.",
+    "status": "not-listed",
+    "checkedAt": "2026-10-17",
+    "reason": "Re-checked: HTTPS still fails here with a certificate-chain error (curl exit 60), so the ISOM People directory was read over plain http:// with curl on 2026-10-17 (http://isom.hkust.edu.hk/faculty-and-staff/directory). The directory lists Elvis W H LEE as 'Teaching Associate', area Business Statistics, under its 'Teaching/Research Support Staff' heading (with Instructional Designers and Instructional Assistants), separate from the Regular, Teaching Track and Adjunct & Visiting Faculty headings, and the entry has no individual page; a teaching-support staff grade, not a faculty appointment, and no degree is shown. Earlier check (2026-10-16): the only page cited (the ISOM directory) returned HTTP 503 on repeated attempts and the www.bm.ust.hk alias reset the connection, so the roster title could not be verified against the live page.",
     "sources": [
      {
       "url": "https://isom.hkust.edu.hk/faculty-and-staff/directory",
-      "title": "HKUST ISOM Faculty and Staff directory (HTTP 503 on 2026-10-16)"
+      "title": "People | HKUST Department of ISOM (faculty and staff directory)",
+      "notes": "HTTPS still fails here with a certificate-chain error (curl exit 60), so the same public page was read over plain http:// with curl on 2026-10-17 (http://isom.hkust.edu.hk/faculty-and-staff/directory). The page groups 126 entries under the headings Regular Faculty, Emeritus Faculty, Teaching Track Faculty, Adjunct & Visiting Faculty, General Office, MScBA/MScGO/MScICSM/MScISM Program Offices, RMBI Office and Teaching/Research Support Staff; each entry shows a position, the name, an area (for some) and a title."
      }
     ],
     "profileUrl": null,
@@ -102362,42 +102366,43 @@
    },
    "verification": "om-list-name-only",
    "review": {
-    "status": "unresolved",
-    "checkedAt": "2026-10-16",
-    "reason": "The HKUST ISOM page (opened over plain HTTP; the HTTPS fetch returned 503 through the proxy) shows only 'Hau L LEE, Adjunct Professor, Operations Management' with no bio, degrees or other affiliation, and the ISOM directory lists him under Adjunct & Visiting Faculty with the same title and area. The OM List name-only match is Hau L. Lee of Stanford (omlist-cfcf5e051f0b1db9): his Stanford GSB profile (The Thoma Professor of Operations, Information & Technology, Emeritus; PhD, Wharton School, University of Pennsylvania, 1983; Honorary Doctor of Engineering, Hong Kong University of Science and Technology, 2006), his Stanford bio page and the two HKUST IAS pages (IAS Senior Visiting Fellow) mention no ISOM adjunct appointment, so none of the opened pages shows whether the HKUST adjunct entry is the same individual; left for the integrator rather than inferred from the matching name and field.",
+    "status": "same-as-om-list",
+    "checkedAt": "2026-10-17",
+    "reason": "Re-checked: HTTPS still fails here with a certificate-chain error (curl exit 60), so the ISOM page (node/2193) and the ISOM People directory were read over plain http:// with curl on 2026-10-17. The ISOM page shows only 'Hau L LEE', 'Operations Management', 'Adjunct Professor' (no biography, degrees or other affiliation), and the directory lists him under 'Adjunct & Visiting Faculty' with the same title and area, so he is confirmed from the school's own page as an adjunct faculty member. The OM List name-only candidate omlist-cfcf5e051f0b1db9 (Hau Lee, Stanford) is not linked: the HKUST pages opened now (IAS Distinguished Lecture page, Li & Fung Supply Chain Institute 2025 speakers page, Center for Marketing and Supply Chain Management advisory committee page) describe Hau L. Lee of Stanford (Thoma Professor, Emeritus; IAS Senior Visiting Fellow) but none mentions an ISOM adjunct appointment, so no opened page shows that the ISOM entry is the same individual; under the integrator rule the row is confirmed on its own and the candidate stays unlinked. No doctorate is recorded because the ISOM page states none (the Wharton 1983 PhD on the IAS and CMSCM pages belongs to the Stanford profile, which is not shown to be this entry). Earlier check (2026-10-16): the ISOM page and directory showed only the adjunct title and area, and the Stanford GSB, Stanford bio and two HKUST IAS pages mentioned no ISOM adjunct appointment, so the row was left unresolved for the integrator rather than linked by name. Integrator (17 October 2026): recorded as the same person as the OM List profile omlist-cfcf5e051f0b1db9 (Hau Lee, Stanford). The ISOM entry gives the same name with the same middle initial (Hau L. Lee) in the same field (operations management), and the HKUST pages opened in this re-check document the Stanford Hau L. Lee's own HKUST roles (IAS Senior Visiting Fellow, Li & Fung Supply Chain Institute, Center for Marketing and Supply Chain Management advisory committee); a second operations scholar of that exact name at HKUST is not plausible, and adding the entry as a new person would duplicate him.",
     "sources": [
      {
-      "url": "http://isom.hkust.edu.hk/node/2193",
-      "title": "Hau L LEE, HKUST ISOM faculty page (opened over HTTP)"
+      "url": "https://isom.hkust.edu.hk/node/2193",
+      "title": "Hau L LEE | HKUST Department of ISOM",
+      "notes": "HTTPS still fails here with a certificate-chain error (curl exit 60), so the same public page was read over plain http:// with curl on 2026-10-17 (http://isom.hkust.edu.hk/node/2193). Shows name, area Operations Management and title Adjunct Professor only."
      },
      {
-      "url": "http://isom.hkust.edu.hk/faculty-and-staff/directory",
-      "title": "HKUST ISOM Faculty and Staff Directory (opened over HTTP)"
+      "url": "https://isom.hkust.edu.hk/faculty-and-staff/directory",
+      "title": "People | HKUST Department of ISOM (faculty and staff directory)",
+      "notes": "HTTPS still fails here with a certificate-chain error (curl exit 60), so the same public page was read over plain http:// with curl on 2026-10-17 (http://isom.hkust.edu.hk/faculty-and-staff/directory). The page groups 126 entries under the headings Regular Faculty, Emeritus Faculty, Teaching Track Faculty, Adjunct & Visiting Faculty, General Office, MScBA/MScGO/MScICSM/MScISM Program Offices, RMBI Office and Teaching/Research Support Staff; each entry shows a position, the name, an area (for some) and a title."
      },
      {
-      "url": "https://www.gsb.stanford.edu/faculty-research/faculty/hau-l-lee",
-      "title": "Hau L. Lee, Stanford Graduate School of Business faculty profile"
+      "url": "https://ias.hkust.edu.hk/events/the-new-triple-a-supply-chain",
+      "title": "The New Triple A Supply Chain | HKUST Jockey Club Institute for Advanced Study",
+      "notes": "Read with curl. 24 April 2025 lecture by Prof. Hau L. LEE, Thoma Professor of Operations, Information & Technology, Emeritus, Stanford University; IAS Senior Visiting Fellow; speaker note states PhD in Operations Research, Wharton School, University of Pennsylvania, 1983. No ISOM adjunct appointment mentioned."
      },
      {
-      "url": "https://web.stanford.edu/~haulee/bio.htm",
-      "title": "HAU L. LEE - Professional Career (Stanford personal page)"
+      "url": "https://gscc.hkust.edu.hk/node/134",
+      "title": "2025 conference - Speakers Academic Conference | HKUST Li & Fung Supply Chain Institute",
+      "notes": "Read with curl. Speaker entry: Hau L. LEE, Stanford University, Thoma Professor Emeritus; no ISOM adjunct appointment mentioned."
      },
      {
-      "url": "https://ias.hkust.edu.hk/people/ias-members/visitors/prof-hau-l-lee",
-      "title": "Prof. Hau L. LEE, HKUST Institute for Advanced Study (visitors)"
-     },
-     {
-      "url": "https://ias.hkust.edu.hk/people/ias-members/alumni/prof-hau-l-lee",
-      "title": "Prof. Hau L. LEE, HKUST Institute for Advanced Study (alumni)"
+      "url": "https://bmvh104.ust.hk/~cmscm/cv/haullee.html",
+      "title": "Center for Marketing and Supply Chain Management, HKUST: Advisory Committee > Hau L LEE",
+      "notes": "Read with curl. Page dated copyright 2008; describes Hau L. Lee as Thoma Professor at Stanford GSB with PhD from Wharton (1983); an advisory-committee listing, not the ISOM adjunct appointment."
      }
     ],
-    "profileUrl": null,
-    "titleConfirmed": null,
-    "areaConfirmed": null,
+    "profileUrl": "https://isom.hkust.edu.hk/node/2193",
+    "titleConfirmed": "Adjunct Professor",
+    "areaConfirmed": "Operations Management",
     "phdInstitution": null,
     "phdYear": null,
     "phdSourceUrl": null,
-    "omListFacultyId": null,
+    "omListFacultyId": "omlist-cfcf5e051f0b1db9",
     "note": null
    }
   },
@@ -103354,13 +103359,14 @@
    "firstJob": null,
    "verification": "unverified",
    "review": {
-    "status": "unresolved",
-    "checkedAt": "2026-10-16",
-    "reason": "Could not be checked: the only page cited is the ISOM directory (the profileUrl is the directory with a fragment), which returned HTTP 503 on 2026-10-16 on repeated attempts, and the www.bm.ust.hk alias reset the connection. The roster extraction shows the title 'Teaching/Research Support Staff', which is a teaching-support or support-staff grade rather than a faculty rank, but this could not be verified against the live page.",
+    "status": "not-listed",
+    "checkedAt": "2026-10-17",
+    "reason": "Re-checked: HTTPS still fails here with a certificate-chain error (curl exit 60), so the ISOM People directory was read over plain http:// with curl on 2026-10-17 (http://isom.hkust.edu.hk/faculty-and-staff/directory). The directory lists Katy S L LING as 'Officer' under the 'RMBI Office' heading, with no area and no individual page; the roster's 'Teaching/Research Support Staff' is the heading of the next section, not her title. An administrative staff role, not a faculty appointment. Earlier check (2026-10-16): the only page cited (the ISOM directory) returned HTTP 503 on repeated attempts and the www.bm.ust.hk alias reset the connection, so the roster title could not be verified against the live page.",
     "sources": [
      {
       "url": "https://isom.hkust.edu.hk/faculty-and-staff/directory",
-      "title": "HKUST ISOM Faculty and Staff directory (HTTP 503 on 2026-10-16)"
+      "title": "People | HKUST Department of ISOM (faculty and staff directory)",
+      "notes": "HTTPS still fails here with a certificate-chain error (curl exit 60), so the same public page was read over plain http:// with curl on 2026-10-17 (http://isom.hkust.edu.hk/faculty-and-staff/directory). The page groups 126 entries under the headings Regular Faculty, Emeritus Faculty, Teaching Track Faculty, Adjunct & Visiting Faculty, General Office, MScBA/MScGO/MScICSM/MScISM Program Offices, RMBI Office and Teaching/Research Support Staff; each entry shows a position, the name, an area (for some) and a title."
      }
     ],
     "profileUrl": null,
@@ -103673,13 +103679,14 @@
    "firstJob": null,
    "verification": "unverified",
    "review": {
-    "status": "unresolved",
-    "checkedAt": "2026-10-16",
-    "reason": "Could not be checked: the only page cited is the ISOM directory (the profileUrl is the directory with a fragment), which returned HTTP 503 on 2026-10-16 on repeated attempts, and the www.bm.ust.hk alias reset the connection. The roster extraction shows the title 'Teaching Associate', which is a teaching-support or support-staff grade rather than a faculty rank, but this could not be verified against the live page.",
+    "status": "not-listed",
+    "checkedAt": "2026-10-17",
+    "reason": "Re-checked: HTTPS still fails here with a certificate-chain error (curl exit 60), so the ISOM People directory was read over plain http:// with curl on 2026-10-17 (http://isom.hkust.edu.hk/faculty-and-staff/directory). The directory lists Marcela María LEÓN BARRIOS as 'Teaching Associate' under the 'MScBA Program Office' heading (a program-office staff section, not one of the faculty headings), with no area and no individual page; a teaching-support staff grade, not a faculty appointment, and no degree is shown. Earlier check (2026-10-16): the only page cited (the ISOM directory) returned HTTP 503 on repeated attempts and the www.bm.ust.hk alias reset the connection, so the roster title could not be verified against the live page.",
     "sources": [
      {
       "url": "https://isom.hkust.edu.hk/faculty-and-staff/directory",
-      "title": "HKUST ISOM Faculty and Staff directory (HTTP 503 on 2026-10-16)"
+      "title": "People | HKUST Department of ISOM (faculty and staff directory)",
+      "notes": "HTTPS still fails here with a certificate-chain error (curl exit 60), so the same public page was read over plain http:// with curl on 2026-10-17 (http://isom.hkust.edu.hk/faculty-and-staff/directory). The page groups 126 entries under the headings Regular Faculty, Emeritus Faculty, Teaching Track Faculty, Adjunct & Visiting Faculty, General Office, MScBA/MScGO/MScICSM/MScISM Program Offices, RMBI Office and Teaching/Research Support Staff; each entry shows a position, the name, an area (for some) and a title."
      }
     ],
     "profileUrl": null,
@@ -104028,13 +104035,14 @@
    "firstJob": null,
    "verification": "unverified",
    "review": {
-    "status": "unresolved",
-    "checkedAt": "2026-10-16",
-    "reason": "Could not be checked: the only page cited is the ISOM directory (the profileUrl is the directory with a fragment), which returned HTTP 503 on 2026-10-16 on repeated attempts, and the www.bm.ust.hk alias reset the connection. The roster extraction shows the title 'Teaching Associate', which is a teaching-support or support-staff grade rather than a faculty rank, but this could not be verified against the live page.",
+    "status": "not-listed",
+    "checkedAt": "2026-10-17",
+    "reason": "Re-checked: HTTPS still fails here with a certificate-chain error (curl exit 60), so the ISOM People directory was read over plain http:// with curl on 2026-10-17 (http://isom.hkust.edu.hk/faculty-and-staff/directory). The directory lists Ray N C PANG as 'Teaching Associate', area Information Systems, under its 'Teaching/Research Support Staff' heading (with Instructional Designers and Instructional Assistants), separate from the Regular, Teaching Track and Adjunct & Visiting Faculty headings, and the entry has no individual page; a teaching-support staff grade, not a faculty appointment, and no degree is shown. Earlier check (2026-10-16): the only page cited (the ISOM directory) returned HTTP 503 on repeated attempts and the www.bm.ust.hk alias reset the connection, so the roster title could not be verified against the live page.",
     "sources": [
      {
       "url": "https://isom.hkust.edu.hk/faculty-and-staff/directory",
-      "title": "HKUST ISOM Faculty and Staff directory (HTTP 503 on 2026-10-16)"
+      "title": "People | HKUST Department of ISOM (faculty and staff directory)",
+      "notes": "HTTPS still fails here with a certificate-chain error (curl exit 60), so the same public page was read over plain http:// with curl on 2026-10-17 (http://isom.hkust.edu.hk/faculty-and-staff/directory). The page groups 126 entries under the headings Regular Faculty, Emeritus Faculty, Teaching Track Faculty, Adjunct & Visiting Faculty, General Office, MScBA/MScGO/MScICSM/MScISM Program Offices, RMBI Office and Teaching/Research Support Staff; each entry shows a position, the name, an area (for some) and a title."
      }
     ],
     "profileUrl": null,
@@ -104404,13 +104412,14 @@
    "firstJob": null,
    "verification": "unverified",
    "review": {
-    "status": "unresolved",
-    "checkedAt": "2026-10-16",
-    "reason": "Could not be checked: the only page cited is the ISOM directory (the profileUrl is the directory with a fragment), which returned HTTP 503 on 2026-10-16 on repeated attempts, and the www.bm.ust.hk alias reset the connection. The roster extraction shows the title 'Teaching Associate', which is a teaching-support or support-staff grade rather than a faculty rank, but this could not be verified against the live page.",
+    "status": "not-listed",
+    "checkedAt": "2026-10-17",
+    "reason": "Re-checked: HTTPS still fails here with a certificate-chain error (curl exit 60), so the ISOM People directory was read over plain http:// with curl on 2026-10-17 (http://isom.hkust.edu.hk/faculty-and-staff/directory). The directory lists Sophie J GU as 'Teaching Associate', area Information Systems, under its 'Teaching/Research Support Staff' heading (with Instructional Designers and Instructional Assistants), separate from the Regular, Teaching Track and Adjunct & Visiting Faculty headings, and the entry has no individual page; a teaching-support staff grade, not a faculty appointment, and no degree is shown. Earlier check (2026-10-16): the only page cited (the ISOM directory) returned HTTP 503 on repeated attempts and the www.bm.ust.hk alias reset the connection, so the roster title could not be verified against the live page.",
     "sources": [
      {
       "url": "https://isom.hkust.edu.hk/faculty-and-staff/directory",
-      "title": "HKUST ISOM Faculty and Staff directory (HTTP 503 on 2026-10-16)"
+      "title": "People | HKUST Department of ISOM (faculty and staff directory)",
+      "notes": "HTTPS still fails here with a certificate-chain error (curl exit 60), so the same public page was read over plain http:// with curl on 2026-10-17 (http://isom.hkust.edu.hk/faculty-and-staff/directory). The page groups 126 entries under the headings Regular Faculty, Emeritus Faculty, Teaching Track Faculty, Adjunct & Visiting Faculty, General Office, MScBA/MScGO/MScICSM/MScISM Program Offices, RMBI Office and Teaching/Research Support Staff; each entry shows a position, the name, an area (for some) and a title."
      }
     ],
     "profileUrl": null,
@@ -104453,13 +104462,14 @@
    "firstJob": null,
    "verification": "unverified",
    "review": {
-    "status": "unresolved",
-    "checkedAt": "2026-10-16",
-    "reason": "Could not be checked: the only page cited is the ISOM directory (the profileUrl is the directory with a fragment), which returned HTTP 503 on 2026-10-16 on repeated attempts, and the www.bm.ust.hk alias reset the connection. The roster extraction shows the title 'Teaching Associate', which is a teaching-support or support-staff grade rather than a faculty rank, but this could not be verified against the live page.",
+    "status": "not-listed",
+    "checkedAt": "2026-10-17",
+    "reason": "Re-checked: HTTPS still fails here with a certificate-chain error (curl exit 60), so the ISOM People directory was read over plain http:// with curl on 2026-10-17 (http://isom.hkust.edu.hk/faculty-and-staff/directory). The directory lists Stacy D S DENG as 'Teaching Associate', area Operations Management, under its 'Teaching/Research Support Staff' heading (with Instructional Designers and Instructional Assistants), separate from the Regular, Teaching Track and Adjunct & Visiting Faculty headings, and the entry has no individual page; a teaching-support staff grade, not a faculty appointment, and no degree is shown. Earlier check (2026-10-16): the only page cited (the ISOM directory) returned HTTP 503 on repeated attempts and the www.bm.ust.hk alias reset the connection, so the roster title could not be verified against the live page.",
     "sources": [
      {
       "url": "https://isom.hkust.edu.hk/faculty-and-staff/directory",
-      "title": "HKUST ISOM Faculty and Staff directory (HTTP 503 on 2026-10-16)"
+      "title": "People | HKUST Department of ISOM (faculty and staff directory)",
+      "notes": "HTTPS still fails here with a certificate-chain error (curl exit 60), so the same public page was read over plain http:// with curl on 2026-10-17 (http://isom.hkust.edu.hk/faculty-and-staff/directory). The page groups 126 entries under the headings Regular Faculty, Emeritus Faculty, Teaching Track Faculty, Adjunct & Visiting Faculty, General Office, MScBA/MScGO/MScICSM/MScISM Program Offices, RMBI Office and Teaching/Research Support Staff; each entry shows a position, the name, an area (for some) and a title."
      }
     ],
     "profileUrl": null,
@@ -104551,13 +104561,14 @@
    "firstJob": null,
    "verification": "unverified",
    "review": {
-    "status": "unresolved",
-    "checkedAt": "2026-10-16",
-    "reason": "Could not be checked: the only page cited is the ISOM directory (the profileUrl is the directory with a fragment), which returned HTTP 503 on 2026-10-16 on repeated attempts, and the www.bm.ust.hk alias reset the connection. The roster extraction shows the title 'Teaching Associate', which is a teaching-support or support-staff grade rather than a faculty rank, but this could not be verified against the live page.",
+    "status": "not-listed",
+    "checkedAt": "2026-10-17",
+    "reason": "Re-checked: HTTPS still fails here with a certificate-chain error (curl exit 60), so the ISOM People directory was read over plain http:// with curl on 2026-10-17 (http://isom.hkust.edu.hk/faculty-and-staff/directory). The directory lists Suri LIANG as 'Assistant Officer' under the 'MScBA Program Office' heading, with no area and no individual page; the roster's 'Teaching Associate' is the title of the next entry (Marcela María LEÓN BARRIOS), not hers. An administrative staff role, not a faculty appointment. Earlier check (2026-10-16): the only page cited (the ISOM directory) returned HTTP 503 on repeated attempts and the www.bm.ust.hk alias reset the connection, so the roster title could not be verified against the live page.",
     "sources": [
      {
       "url": "https://isom.hkust.edu.hk/faculty-and-staff/directory",
-      "title": "HKUST ISOM Faculty and Staff directory (HTTP 503 on 2026-10-16)"
+      "title": "People | HKUST Department of ISOM (faculty and staff directory)",
+      "notes": "HTTPS still fails here with a certificate-chain error (curl exit 60), so the same public page was read over plain http:// with curl on 2026-10-17 (http://isom.hkust.edu.hk/faculty-and-staff/directory). The page groups 126 entries under the headings Regular Faculty, Emeritus Faculty, Teaching Track Faculty, Adjunct & Visiting Faculty, General Office, MScBA/MScGO/MScICSM/MScISM Program Offices, RMBI Office and Teaching/Research Support Staff; each entry shows a position, the name, an area (for some) and a title."
      }
     ],
     "profileUrl": null,
@@ -104755,13 +104766,14 @@
    "firstJob": null,
    "verification": "unverified",
    "review": {
-    "status": "unresolved",
-    "checkedAt": "2026-10-16",
-    "reason": "Could not be checked: the only page cited is the ISOM directory (the profileUrl is the directory with a fragment), which returned HTTP 503 on 2026-10-16 on repeated attempts, and the www.bm.ust.hk alias reset the connection. The roster extraction shows the title 'Teaching Associate', which is a teaching-support or support-staff grade rather than a faculty rank, but this could not be verified against the live page.",
+    "status": "not-listed",
+    "checkedAt": "2026-10-17",
+    "reason": "Re-checked: HTTPS still fails here with a certificate-chain error (curl exit 60), so the ISOM People directory was read over plain http:// with curl on 2026-10-17 (http://isom.hkust.edu.hk/faculty-and-staff/directory). The directory lists Tommy K W NG as 'Teaching Associate', area Information Systems, under its 'Teaching/Research Support Staff' heading (with Instructional Designers and Instructional Assistants), separate from the Regular, Teaching Track and Adjunct & Visiting Faculty headings, and the entry has no individual page; a teaching-support staff grade, not a faculty appointment, and no degree is shown. Earlier check (2026-10-16): the only page cited (the ISOM directory) returned HTTP 503 on repeated attempts and the www.bm.ust.hk alias reset the connection, so the roster title could not be verified against the live page.",
     "sources": [
      {
       "url": "https://isom.hkust.edu.hk/faculty-and-staff/directory",
-      "title": "HKUST ISOM Faculty and Staff directory (HTTP 503 on 2026-10-16)"
+      "title": "People | HKUST Department of ISOM (faculty and staff directory)",
+      "notes": "HTTPS still fails here with a certificate-chain error (curl exit 60), so the same public page was read over plain http:// with curl on 2026-10-17 (http://isom.hkust.edu.hk/faculty-and-staff/directory). The page groups 126 entries under the headings Regular Faculty, Emeritus Faculty, Teaching Track Faculty, Adjunct & Visiting Faculty, General Office, MScBA/MScGO/MScICSM/MScISM Program Offices, RMBI Office and Teaching/Research Support Staff; each entry shows a position, the name, an area (for some) and a title."
      }
     ],
     "profileUrl": null,
@@ -104804,17 +104816,19 @@
    "firstJob": null,
    "verification": "unverified",
    "review": {
-    "status": "unresolved",
-    "checkedAt": "2026-10-16",
-    "reason": "No page could be opened: the ISOM directory profile returned HTTP 503 to WebFetch, the alternative ISOM faculty-and-staff directory page also returned HTTP 503, and a curl retrieval through the session proxy failed TLS verification (unable to get local issuer certificate from the origin). Whether the entry is faculty or staff therefore cannot be decided from any opened page; no search was spent.",
+    "status": "not-listed",
+    "checkedAt": "2026-10-17",
+    "reason": "Re-checked: HTTPS still fails here with a certificate-chain error (curl exit 60), so his ISOM directory page and the ISOM People directory were read over plain http:// with curl on 2026-10-17. His own page shows only 'Tsz Chun LEUNG' and the title 'Manager', and the directory lists him as Manager under the 'MScBA Program Office' heading, a program-office staff section; an administrative staff role, not a faculty appointment, and no degree is shown. Earlier check (2026-10-16): no page could be opened because the profile and directory returned HTTP 503 to the fetch tool and curl failed TLS verification, so faculty or staff could not be decided.",
     "sources": [
      {
       "url": "https://isom.hkust.edu.hk/faculty-and-staff/directory/chunleungusthk",
-      "title": "HKUST ISOM directory profile for Tsz Chun LEUNG (fetch failed: HTTP 503; curl TLS verification failure)"
+      "title": "Tsz Chun LEUNG | HKUST Department of ISOM",
+      "notes": "HTTPS still fails here with a certificate-chain error (curl exit 60), so the same public page was read over plain http:// with curl on 2026-10-17 (http://isom.hkust.edu.hk/faculty-and-staff/directory/chunleungusthk). Shows name and title Manager only."
      },
      {
       "url": "https://isom.hkust.edu.hk/faculty-and-staff/directory",
-      "title": "HKUST ISOM Faculty and Staff Directory (fetch failed: HTTP 503)"
+      "title": "People | HKUST Department of ISOM (faculty and staff directory)",
+      "notes": "HTTPS still fails here with a certificate-chain error (curl exit 60), so the same public page was read over plain http:// with curl on 2026-10-17 (http://isom.hkust.edu.hk/faculty-and-staff/directory). The page groups 126 entries under the headings Regular Faculty, Emeritus Faculty, Teaching Track Faculty, Adjunct & Visiting Faculty, General Office, MScBA/MScGO/MScICSM/MScISM Program Offices, RMBI Office and Teaching/Research Support Staff; each entry shows a position, the name, an area (for some) and a title."
      }
     ],
     "profileUrl": null,
@@ -105695,25 +105709,27 @@
    "firstJob": null,
    "verification": "unverified",
    "review": {
-    "status": "unresolved",
-    "checkedAt": "2026-10-16",
-    "reason": "The ISOM directory profile returned HTTP 503 Service Unavailable on two attempts and the ISOM faculty directory also returned HTTP 503, so no page showing this person could be opened; the roster lists him as Adjunct Associate Professor but that could not be verified.",
+    "status": "confirmed-faculty",
+    "checkedAt": "2026-10-17",
+    "reason": "Re-checked: HTTPS still fails here with a certificate-chain error (curl exit 60), so his ISOM directory page and the ISOM People directory were read over plain http:// with curl on 2026-10-17. His ISOM page shows 'Yongsuk KIM', 'Information Systems', 'Adjunct Associate Professor', and the directory lists him under 'Adjunct & Visiting Faculty' with the same title and area. Academic Qualification on the page: 'PhD 2011 University of Texas at Austin, Information Systems'; the page also lists Associate Professor, Sungkyunkwan University (SKKU), 2020-present, and Assistant Professor, Dept of ISOM, HKUST, 2011-2018 (recorded here only as page content; no first job is recorded in a roster review). Information systems, not an operations field. Earlier check (2026-10-16): the ISOM profile and directory returned HTTP 503 on repeated attempts, so the 'Adjunct Associate Professor' title could not be verified.",
     "sources": [
      {
       "url": "https://isom.hkust.edu.hk/faculty-and-staff/directory/yongskim",
-      "title": "Yongsuk KIM, HKUST ISOM directory profile (HTTP 503 at check time)"
+      "title": "Yongsuk KIM | HKUST Department of ISOM",
+      "notes": "HTTPS still fails here with a certificate-chain error (curl exit 60), so the same public page was read over plain http:// with curl on 2026-10-17 (http://isom.hkust.edu.hk/faculty-and-staff/directory/yongskim). Shows title Adjunct Associate Professor, area Information Systems, Academic Qualification PhD 2011 University of Texas at Austin, Information Systems."
      },
      {
-      "url": "http://www.bm.ust.hk/isom/faculty-and-staff/directory",
-      "title": "HKUST ISOM faculty and staff directory (HTTP 503 at check time)"
+      "url": "https://isom.hkust.edu.hk/faculty-and-staff/directory",
+      "title": "People | HKUST Department of ISOM (faculty and staff directory)",
+      "notes": "HTTPS still fails here with a certificate-chain error (curl exit 60), so the same public page was read over plain http:// with curl on 2026-10-17 (http://isom.hkust.edu.hk/faculty-and-staff/directory). The page groups 126 entries under the headings Regular Faculty, Emeritus Faculty, Teaching Track Faculty, Adjunct & Visiting Faculty, General Office, MScBA/MScGO/MScICSM/MScISM Program Offices, RMBI Office and Teaching/Research Support Staff; each entry shows a position, the name, an area (for some) and a title."
      }
     ],
-    "profileUrl": null,
-    "titleConfirmed": null,
-    "areaConfirmed": null,
-    "phdInstitution": null,
-    "phdYear": null,
-    "phdSourceUrl": null,
+    "profileUrl": "https://isom.hkust.edu.hk/faculty-and-staff/directory/yongskim",
+    "titleConfirmed": "Adjunct Associate Professor",
+    "areaConfirmed": "Information Systems",
+    "phdInstitution": "University of Texas at Austin",
+    "phdYear": 2011,
+    "phdSourceUrl": "https://isom.hkust.edu.hk/faculty-and-staff/directory/yongskim",
     "omListFacultyId": null,
     "note": null
    }
@@ -105895,25 +105911,32 @@
    "firstJob": null,
    "verification": "unverified",
    "review": {
-    "status": "unresolved",
-    "checkedAt": "2026-10-16",
-    "reason": "The ISOM profile node returned HTTP 503 Service Unavailable on two attempts and the ISOM faculty directory also returned HTTP 503, so no page showing this person could be opened; the roster lists a Research Assistant Professor but that could not be verified.",
+    "status": "confirmed-faculty",
+    "checkedAt": "2026-10-17",
+    "reason": "Re-checked: HTTPS still fails here with a certificate-chain error (curl exit 60), so the ISOM page (node/2528) and the ISOM People directory were read over plain http:// with curl on 2026-10-17. The ISOM page shows 'Zihan WANG', 'Business Statistics', 'Research Assistant Professor', and the directory lists Zihan WANG under 'Regular Faculty' with the same title and area. The HKUST Faculty Profiles page (read with curl over HTTPS) for Zihan WANG, Research Assistant Professor, Department of Information Systems, Business Statistics and Operations Management (the only Zihan WANG in the ISOM directory), states 'PhD in Statistics, Tsinghua University, 2026'. Business statistics, not an operations field. Earlier check (2026-10-16): the ISOM profile node and directory returned HTTP 503 on two attempts, so the 'Research Assistant Professor' title could not be verified.",
     "sources": [
      {
       "url": "https://isom.hkust.edu.hk/node/2528",
-      "title": "Zihan WANG, HKUST ISOM profile node (HTTP 503 at check time)"
+      "title": "Zihan WANG | HKUST Department of ISOM",
+      "notes": "HTTPS still fails here with a certificate-chain error (curl exit 60), so the same public page was read over plain http:// with curl on 2026-10-17 (http://isom.hkust.edu.hk/node/2528). Shows name, area Business Statistics and title Research Assistant Professor only."
      },
      {
-      "url": "http://www.bm.ust.hk/isom/faculty-and-staff/directory",
-      "title": "HKUST ISOM faculty and staff directory (HTTP 503 at check time)"
+      "url": "https://isom.hkust.edu.hk/faculty-and-staff/directory",
+      "title": "People | HKUST Department of ISOM (faculty and staff directory)",
+      "notes": "HTTPS still fails here with a certificate-chain error (curl exit 60), so the same public page was read over plain http:// with curl on 2026-10-17 (http://isom.hkust.edu.hk/faculty-and-staff/directory). The page groups 126 entries under the headings Regular Faculty, Emeritus Faculty, Teaching Track Faculty, Adjunct & Visiting Faculty, General Office, MScBA/MScGO/MScICSM/MScISM Program Offices, RMBI Office and Teaching/Research Support Staff; each entry shows a position, the name, an area (for some) and a title."
+     },
+     {
+      "url": "https://facultyprofiles.hkust.edu.hk/profiles.php?profile=zihan-wang-wangzihan",
+      "title": "Faculty Profiles - WANG Zihan | The Hong Kong University of Science and Technology",
+      "notes": "Read with curl over HTTPS (found through the site's own facultylisting.php). Shows Zihan WANG, Research Assistant Professor, Department of Information Systems, Business Statistics and Operations Management; PhD in Statistics, Tsinghua University, 2026."
      }
     ],
-    "profileUrl": null,
-    "titleConfirmed": null,
-    "areaConfirmed": null,
-    "phdInstitution": null,
-    "phdYear": null,
-    "phdSourceUrl": null,
+    "profileUrl": "https://isom.hkust.edu.hk/node/2528",
+    "titleConfirmed": "Research Assistant Professor",
+    "areaConfirmed": "Business Statistics",
+    "phdInstitution": "Tsinghua University",
+    "phdYear": 2026,
+    "phdSourceUrl": "https://facultyprofiles.hkust.edu.hk/profiles.php?profile=zihan-wang-wangzihan",
     "omListFacultyId": null,
     "note": null
    }
