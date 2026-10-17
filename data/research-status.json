@@ -4,10 +4,10 @@
     "updatedAt": "2026-10-17",
     "total": 3156,
     "counts": {
-      "unresolved": 1532,
-      "verified": 1114,
-      "not-yet-completed-phd": 3,
-      "pending": 507
+      "unresolved": 1536,
+      "verified": 1116,
+      "not-yet-completed-phd": 4,
+      "pending": 500
     },
     "bySource": {
       "omlist": {
@@ -22,10 +22,10 @@
       "faculty-page": {
         "total": 1007,
         "counts": {
-          "verified": 251,
-          "unresolved": 387,
-          "pending": 367,
-          "not-yet-completed-phd": 2
+          "verified": 253,
+          "unresolved": 391,
+          "pending": 360,
+          "not-yet-completed-phd": 3
         }
       }
     }
@@ -59965,19 +59965,74 @@
     {
       "facultyId": "roster:western-university:yang-li",
       "name": "Yang Li",
-      "status": "pending",
-      "checkedAt": null,
-      "sources": [],
-      "reason": "Individual first-placement research is pending.",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "employer": "The Chinese University of Hong Kong (CUHK Business School)",
+      "position": "Assistant Professor",
+      "placementYear": 2016,
+      "category": "tenure-track",
+      "evidenceUrl": "https://discover.research.ivey.ca/yang-li",
+      "evidenceNote": "Ivey's research-profile record lists one prior academic appointment, Assistant Professor (2016-2021) at CUHK Business School, before his Ivey post. His ORCID (linked from that record) dates doctoral study at Rotman, University of Toronto, Sept 2010 to Dec 2015, CUHK Business School faculty Jan 2016 to Dec 2021 and Ivey from Jan 2022, with no other employment. Overlap: the Toronto thesis record dates the Ph.D. convocation June 2016, so the CUHK post began about five months before formal conferral, after doctoral study had ended.",
+      "phdYearVerified": 2016,
+      "phdInstitutionVerified": "University of Toronto",
+      "reason": "Employer research-profile record with dated appointment (Assistant Professor, CUHK, 2016-2021) corroborated by the person's ORCID chronology (PhD Toronto to Dec 2015, CUHK from Jan 2016) and the University of Toronto thesis record (Ph.D., convocation 2016-06; advisors Philipp Afeche and Ming Hu). Identity: the ORCID iD is the one on the Ivey record, and Ming Hu is a co-author of his CUHK-era queueing paper.",
+      "sources": [
+        {
+          "url": "https://discover.research.ivey.ca/yang-li",
+          "title": "Yang Li, Ivey Business School research profile (Discovery)",
+          "notes": "The page is drawn by script; read through the page's own data endpoint https://discover.research.ivey.ca/api/users/yang-li with a plain request. Academic appointment: Assistant Professor (2016-2021), CUHK Business School; degrees: PhD Business Administration, University of Toronto (no year); ORCID 0000-0002-8381-7272."
+        },
+        {
+          "url": "https://www.ivey.uwo.ca/faculty_research/directory/yang-li/",
+          "title": "Yang Li, Ivey faculty directory profile",
+          "notes": "Associate Professor, Management Science; says that before Ivey he was a faculty member at CUHK Business School; no dates or education."
+        },
+        {
+          "url": "https://orcid.org/0000-0002-8381-7272",
+          "title": "Yang Li, ORCID record",
+          "notes": "Read through the public API (pub.orcid.org/v3.0). Education: Ph.D., Rotman School of Management, University of Toronto, 2010-09 to 2015-12. Employment: CUHK Business School, Faculty, 2016-01 to 2021-12; Western University Ivey Business School from 2022-01. Self-asserted."
+        },
+        {
+          "url": "http://hdl.handle.net/1807/80430",
+          "title": "Li, Yang: Ordering Flexibility, Delay Information Heterogeneity, and Time-of-Service Preferences in Operations Management (University of Toronto TSpace thesis)",
+          "notes": "Read through the TSpace (utoronto.scholaris.ca) search API. Ph.D., Department of Management; date accepted and convocation 2016-06; advisors Philipp Afeche and Ming Hu."
+        }
+      ],
       "source": "faculty-page"
     },
     {
       "facultyId": "roster:wilfrid-laurier-university:abbas-keramati",
       "name": "Abbas Keramati",
-      "status": "pending",
-      "checkedAt": null,
-      "sources": [],
-      "reason": "Individual first-placement research is pending.",
+      "status": "unresolved",
+      "checkedAt": "2026-10-17",
+      "reason": "Identity not established. Laurier's ODS directory lists 'Abbas Keramati, Assistant Professor' with no profile link (the guessed profile URL returns Laurier's 404 page), and no opened page ties that listing to a particular person. A namesake with a full dated CV exists: the University at Buffalo ISE CV (last updated July 2025) of Abbas Keramati, Ph.D. Industrial Engineering, Tarbiat Modares University, March 2005, lists Quality manager, Iran Test and Research Auto Center 2002-2005; Head of the Department of Technology Management, Research Institute for Energy Management and Planning (affiliated with the University of Tehran) 2005-2006; Assistant Professor, University of Tehran 2006-2011; and later Toronto Metropolitan University (limited-term assistant professor 2017-2021) and Buffalo (2022 onward). But Buffalo's official profile still lists him as Buffalo's Associate Professor of Teaching, his ORCID lists only Buffalo (from 2023-07), and nothing opened records a move to Laurier. If an integrator confirms he is the Laurier person, his first new post-PhD job would be the 2005-2006 department-head post (start month not stated, so its timing against the March 2005 degree is unknown). One web search (name + Laurier) found nothing relevant.",
+      "sources": [
+        {
+          "url": "https://www.wlu.ca/academics/faculties/lazaridis-school-of-business-and-economics/faculty-and-staff.html#ODS",
+          "title": "Laurier Lazaridis School faculty and staff directory, ODS section",
+          "notes": "Read as a plain HTML download; lists Abbas Keramati, Assistant Professor, without a link or profile."
+        },
+        {
+          "url": "https://www.wlu.ca/academics/faculties/lazaridis-school-of-business-and-economics/faculty-profiles/abbas-keramati/index.html",
+          "title": "Guessed Laurier profile URL for Abbas Keramati",
+          "notes": "Returned Laurier's '404: Page Not Found' page."
+        },
+        {
+          "url": "https://engineering.buffalo.edu/industrial-systems/people/faculty-directory.host.html/content/shared/engineering/industrial-systems/profiles/faculty/keramati-abbas.detail.html",
+          "title": "Abbas Keramati, University at Buffalo ISE faculty profile",
+          "notes": "Lists him as Associate Professor of Teaching at Buffalo; PhD Industrial Engineering, Tarbiat Modares University, 2005; links the CV."
+        },
+        {
+          "url": "https://engineering.buffalo.edu/content/dam/engineering/industrial-systems/People/faculty-cvs/SEAS-CV-Keramati-2025.pdf",
+          "title": "Abbas Keramati CV (University at Buffalo, last updated July 2025)",
+          "notes": "Plain curl was refused (403); read the PDF as fetched by the fetch tool and extracted with pdftotext. Education and professional-experience sections only; no mention of Laurier."
+        },
+        {
+          "url": "https://orcid.org/0000-0001-5897-2935",
+          "title": "Abbas Keramati, ORCID record",
+          "notes": "Read through the public API; one employment, University at Buffalo, Associate Professor of Teaching, from 2023-07; no education entries."
+        }
+      ],
       "source": "faculty-page"
     },
     {
@@ -60036,10 +60091,28 @@
     {
       "facultyId": "roster:wilfrid-laurier-university:david-wheatley",
       "name": "David Wheatley",
-      "status": "pending",
-      "checkedAt": null,
-      "sources": [],
-      "reason": "Individual first-placement research is pending.",
+      "status": "unresolved",
+      "checkedAt": "2026-10-17",
+      "reason": "His Laurier profile lists only research interests and publications, with no education, CV or dated positions. His author profile on The Conversation (Assistant Professor in Operations & Decision Sciences, Wilfrid Laurier University) gives a PhD in Management Science from the University of Waterloo, 2013, but no employment dates. A search result pointed to an Ivey directory entry for a part-time assistant professor of the same name, but that page now returns 404, so it could not be read or dated. Waterloo's UWSpace thesis repository answered only with a bot-check page, no ORCID record with his Waterloo or Laurier affiliation was found, and Crossref gave no dated affiliations. No first job between the 2013 degree and the Laurier post is established.",
+      "phdYearVerified": 2013,
+      "phdInstitutionVerified": "University of Waterloo",
+      "sources": [
+        {
+          "url": "https://www.wlu.ca/academics/faculties/lazaridis-school-of-business-and-economics/faculty-profiles/david-wheatley/index.html",
+          "title": "David Wheatley, Laurier Lazaridis faculty profile",
+          "notes": "Assistant Professor, ODS; research on food security in the Northwest Territories and Nunavut; no education or dates."
+        },
+        {
+          "url": "https://theconversation.com/profiles/david-wheatley-2328538",
+          "title": "David Wheatley, The Conversation author profile",
+          "notes": "Assistant Professor in Operations & Decision Sciences, Wilfrid Laurier University (no start date); education: University of Waterloo, PhD Management Science, 2013."
+        },
+        {
+          "url": "https://ivey.uwo.ca/faculty_research/directory/david-wheatley",
+          "title": "Ivey directory entry for David Wheatley (from a search result)",
+          "notes": "Returned 404 to both the fetch tool and a plain request; not read."
+        }
+      ],
       "source": "faculty-page"
     },
     {
@@ -60060,10 +60133,21 @@
     {
       "facultyId": "roster:wilfrid-laurier-university:hari-stirbet",
       "name": "Hari Stirbet",
-      "status": "pending",
-      "checkedAt": null,
-      "sources": [],
-      "reason": "Individual first-placement research is pending.",
+      "status": "unresolved",
+      "checkedAt": "2026-10-17",
+      "reason": "His Laurier profile gives only his name, the title Lecturer and contact details: no education, CV, biography or dated positions. One web search on the exact name found nothing about him, ORCID has no record under the name, and Crossref lists no works by a Hari Stirbet. Whether he holds a doctorate at all is unknown, and no first job is established.",
+      "sources": [
+        {
+          "url": "https://www.wlu.ca/academics/faculties/lazaridis-school-of-business-and-economics/faculty-profiles/hari-stirbet/index.html",
+          "title": "Hari Stirbet, Laurier Lazaridis faculty profile",
+          "notes": "Lecturer; contact details only."
+        },
+        {
+          "url": "https://www.wlu.ca/academics/faculties/lazaridis-school-of-business-and-economics/faculty-and-staff.html#ODS",
+          "title": "Laurier Lazaridis School faculty and staff directory, ODS section",
+          "notes": "Lists Hari Stirbet, Lecturer."
+        }
+      ],
       "source": "faculty-page"
     },
     {
@@ -60078,10 +60162,38 @@
     {
       "facultyId": "roster:wilfrid-laurier-university:jiejian-feng",
       "name": "Jiejian Feng",
-      "status": "pending",
-      "checkedAt": null,
-      "sources": [],
-      "reason": "Individual first-placement research is pending.",
+      "status": "unresolved",
+      "checkedAt": "2026-10-17",
+      "reason": "Doctorate established (HKUST Ph.D. dissertation 'Issues in assemble-to-order systems', 2006, per the HKUST DOI record) but the first job is not dated. A UPEI 2022 tenure-track candidate notice says he has been a limited-term assistant professor at Laurier's Lazaridis School since 2020 and that before that he worked at the Sobey School of Business, Saint Mary's University, with no dates, title or statement that Saint Mary's was his first post. Journal affiliations show Saint Mary's from 2010, leaving 2006-2010 undocumented. The HKUST repository answered with a CAPTCHA page, his ORCID (0000-0002-3873-7601) has no affiliations or works, and no CV was found. Saint Mary's University is a lead, not an established first job.",
+      "phdYearVerified": 2006,
+      "phdInstitutionVerified": "The Hong Kong University of Science and Technology",
+      "sources": [
+        {
+          "url": "https://www.wlu.ca/academics/faculties/lazaridis-school-of-business-and-economics/faculty-and-staff.html#ODS",
+          "title": "Laurier Lazaridis School faculty and staff directory, ODS section",
+          "notes": "Lists Jiejian Feng, Assistant Professor, with no profile link; the guessed profile URL returned Laurier's 404 page."
+        },
+        {
+          "url": "https://upei.ca/notice/2022/03/jiejian-jack-feng-tenure-track-candidate-teaching-demonstration-faculty-business",
+          "title": "UPEI notice: Dr. Jiejian (Jack) Feng, tenure-track candidate teaching demonstration (March 2022)",
+          "notes": "Bio: limited-term assistant professor at Laurier since 2020; earlier worked at Saint Mary's University Sobey School (undated); PhD and MPhil, IEEM, HKUST."
+        },
+        {
+          "url": "https://doi.org/10.1080/0740817x.2010.504684",
+          "title": "Feng et al.: An efficient dynamic optimization method for sequential identification of group-testable items (IIE Transactions, published online 2010-11-30), Crossref record",
+          "notes": "Read the Crossref metadata: Jiejian Feng's affiliation is Saint Mary's University. This is the earliest Saint Mary's affiliation found; it does not date the start of the job."
+        },
+        {
+          "url": "https://doi.org/10.14711/thesis-b936941",
+          "title": "Feng, Jiejian: Issues in assemble-to-order systems (HKUST Ph.D. thesis, DOI record)",
+          "notes": "Read the Crossref metadata for the DOI (api.crossref.org/works/10.14711/thesis-b936941): dissertation, Ph.D., HKUST, 2006. The landing repository (repository.hkust.edu.hk) served a CAPTCHA page."
+        },
+        {
+          "url": "https://orcid.org/0000-0002-3873-7601",
+          "title": "Jiejian Feng, ORCID record",
+          "notes": "Read through the public API; no employments, educations or works."
+        }
+      ],
       "source": "faculty-page"
     },
     {
@@ -60216,19 +60328,64 @@
     {
       "facultyId": "roster:wilfrid-laurier-university:qiang-li",
       "name": "Qiang Li",
-      "status": "pending",
-      "checkedAt": null,
-      "sources": [],
-      "reason": "Individual first-placement research is pending.",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "employer": "University of Houston",
+      "position": null,
+      "placementYear": null,
+      "category": "unknown",
+      "evidenceUrl": "https://www.business.rutgers.edu/phd/alumni",
+      "evidenceNote": "Rutgers Business School's Ph.D. alumni page, which lists each graduate of the last five years 'with their initial placement' (industry placements included), shows Qiang Li, Supply Chain Management, 2021, advisors Xiaowei Xu and Meng Li, initial placement University of Houston. The page gives no title or start date, so the kind of post (possibly a postdoc) and the start year are not established.",
+      "phdYearVerified": 2021,
+      "phdInstitutionVerified": "Rutgers University",
+      "reason": "Explicit initial-placement record published by the degree-granting program (Rutgers Business School Ph.D. in Supply Chain Management, 2021). Identity: Laurier's ODS directory lists Qiang Li, Assistant Professor, without a profile page; the Lazaridis-affiliated Qiang Li of 2026 Service Science and MSOM papers carries ORCID 0000-0001-5525-3986, the same iD as the Qiang Li of the Rutgers Department of Supply Chain Management on a 2020 Management Science paper co-written with Meng Li, one of the two Rutgers advisors named in the alumni table. His ORCID record itself has no affiliations, and no CV was found, so title and start year stay null.",
+      "sources": [
+        {
+          "url": "https://www.business.rutgers.edu/phd/alumni",
+          "title": "Rutgers Business School Ph.D. program, Alumni of the Program (Supply Chain Management table)",
+          "notes": "Read as a plain HTML download. Row: 2021, Qiang Li, University of Houston, advisors Xiaowei Xu and Meng Li. The page describes the list as graduates of the last five years with their initial placement."
+        },
+        {
+          "url": "https://www.wlu.ca/academics/faculties/lazaridis-school-of-business-and-economics/faculty-and-staff.html#ODS",
+          "title": "Laurier Lazaridis School faculty and staff directory, ODS section",
+          "notes": "Lists Qiang Li, Assistant Professor, with no profile link; the guessed profile URL returned Laurier's 404 page."
+        },
+        {
+          "url": "https://doi.org/10.1287/serv.2025.0077",
+          "title": "Li, Cui and Xu: Environmental Responsibility: Impact of Waste-Sorting Regulation on Secondary Market (Service Science, 2026), Crossref record",
+          "notes": "Read the Crossref metadata: Qiang Li, ORCID 0000-0001-5525-3986, Lazaridis School of Business and Economics, Wilfrid Laurier University."
+        },
+        {
+          "url": "https://doi.org/10.1287/mnsc.2019.3411",
+          "title": "Cui, Li and Li: Value of High-Quality Logistics: Evidence from a Clash Between SF Express and Alibaba (Management Science, 2020), Crossref record",
+          "notes": "Read the Crossref metadata: Qiang Li, same ORCID 0000-0001-5525-3986, Department of Supply Chain Management, Rutgers University, Newark."
+        },
+        {
+          "url": "https://orcid.org/0000-0001-5525-3986",
+          "title": "Qiang Li, ORCID record",
+          "notes": "Read through the public API; no employment or education entries."
+        }
+      ],
       "source": "faculty-page"
     },
     {
       "facultyId": "roster:wilfrid-laurier-university:redwan-siddiqui",
       "name": "Redwan Siddiqui",
-      "status": "pending",
-      "checkedAt": null,
-      "sources": [],
-      "reason": "Individual first-placement research is pending.",
+      "status": "not-yet-completed-phd",
+      "checkedAt": "2026-10-17",
+      "reason": "His Laurier profile says he is pursuing a PhD in Management Science & Engineering at the University of Waterloo, and his personal site lists the Waterloo PhD (Management Sciences) as 2024 to present with no completion date. He holds an MBA (University of Dhaka). He was in industry operations roles before and during the doctorate (for example Terminal Operations Specialist, TransX Group / CN Rail, 2019 to present). No completed doctorate, so no post-PhD first job.",
+      "sources": [
+        {
+          "url": "https://www.wlu.ca/academics/faculties/lazaridis-school-of-business-and-economics/faculty-profiles/redwan-siddiqui/index.html",
+          "title": "Redwan Siddiqui, Laurier Lazaridis faculty profile",
+          "notes": "Lecturer, ODS; states he is pursuing a PhD at the University of Waterloo; MBA University of Dhaka."
+        },
+        {
+          "url": "https://redwan.ca/",
+          "title": "Redwan Siddiqui, personal website",
+          "notes": "Education list gives the Waterloo PhD as 2024 to present; dated industry roles from 2007 onward."
+        }
+      ],
       "source": "faculty-page"
     },
     {
