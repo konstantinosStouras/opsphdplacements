@@ -6,8 +6,8 @@
 //     (ignored), with a manifest of where each came from. Candidates: the icons the institution's official
 //     website (Wikidata P856) declares and its /apple-touch-icon.png, the logo files Wikidata records for the institution on Wikimedia Commons (icon P2910, small
 //     logo P8972, seal P158, coat of arms P94, logo P154; photographs skipped), the lead image of the English
-//     Wikipedia article, seal, logo, emblem and coat-of-arms files on Commons whose file name contains the
-//     institution's name, and DuckDuckGo's and Google's copies of the site icon. SVG files are drawn at
+//     Wikipedia article and the seal, logo and coat-of-arms files in its infobox, files on Commons whose title
+//     contains the institution's name and a word such as logo or seal, and DuckDuckGo's and Google's copies of the site icon. SVG files are drawn at
 //     512 px by the pre-installed Chromium. Without --refresh, institutions already collected are skipped.
 //
 //   node scripts/fetch-institution-logos.mjs --choose [--out DIR]
@@ -113,12 +113,12 @@ const commonsUrl = file => `https://commons.wikimedia.org/w/index.php?title=Spec
 // data writes it, as Wikidata labels it or as its English Wikipedia article is titled), so that "Michigan State
 // University seal.svg" is found for Michigan State and never for the University of Michigan.
 const fold = t => String(t || '').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/[^a-z0-9]+/g, ' ').trim();
-const MARK = /\b(logo|seal|emblem|coat of arms|arms|crest|wordmark|insignia|siegel|wappen|escudo|sello|stemma|sigillum|brasao|blason|embleme|logotipo|logotype)\b/;
+const MARK = /\b(logo|seal|emblem|coat of arms|arms|crest|shield|badge|escutcheon|wordmark|insignia|siegel|wappen|escudo|sello|stemma|sigillum|brasao|blason|embleme|logotipo|logotype)\b/;
 async function commonsSearch(q) {
   const names = [...new Set([...data.records.filter(r => r.qid === q).flatMap(r => [r.institution, r.label]), meta[q]?.enwiki].map(fold).filter(n => n && n.split(' ').length >= 2))];
   const found = [];
   for (const name of names.slice(0, 2)) {
-    const res = await wm('https://commons.wikimedia.org/w/api.php?' + new URLSearchParams({ action: 'query', list: 'search', srnamespace: '6', srsearch: `${name} logo OR seal OR emblem OR coat of arms`, srlimit: '20', format: 'json' }));
+    const res = await wm('https://commons.wikimedia.org/w/api.php?' + new URLSearchParams({ action: 'query', list: 'search', srnamespace: '6', srsearch: `intitle:"${name}"`, srlimit: '50', format: 'json' }));
     let hits = []; try { hits = (await res.json()).query?.search || []; } catch { /* none */ }
     for (const h of hits) {
       const file = h.title.replace(/^File:/, ''), f = fold(file.replace(/\.[a-z]+$/i, ''));
@@ -180,7 +180,7 @@ async function renderSvgs() {
   await browser.close();
 }
 
-const KIND_RANK = { review: 1.2, 'site-apple': 1, 'site-icon': 1, 'site-logo': 1, 'commons-icon': 1, 'commons-small-logo': 1, 'commons-seal': 1, 'commons-arms': 1, 'commons-logo': 1, 'commons-search': 0.9, 'wikipedia-image': 0.8, ddg: 0.4, google: 0.4 };
+const KIND_RANK = { review: 1.2, 'site-apple': 1, 'site-icon': 1, 'site-logo': 1, 'commons-icon': 1, 'commons-small-logo': 1, 'commons-seal': 1, 'commons-arms': 1, 'commons-logo': 1, 'commons-search': 0.9, 'wikipedia-infobox': 0.95, 'wikipedia-image': 0.8, ddg: 0.4, google: 0.4 };
 function choose() {
   fs.mkdirSync(outDir, { recursive: true });
   const tmp = path.join(candRoot, '.layout.png'), choices = {};
@@ -226,22 +226,34 @@ if (has('--collect')) {
   await renderSvgs();
   console.log(`collected candidates for ${qids.length} institutions in ${candRoot}`);
 }
-// --extra adds the Commons search candidates to institutions already collected, without downloading the rest again.
+// The seal, logo and coat-of-arms files in the lead section (the infobox) of the English Wikipedia article.
+// Most university seals and logos are stored on English Wikipedia itself as non-free files, not on Commons.
+const JUNK = /(commons-logo|wiktionary|wikiquote|wikisource|wikinews|wikiversity|wikidata|wikibooks|wikivoyage|edit-clear|question book|ooui|oojs|symbol |flag of|padlock|disambig|ambox|portal|crystal|nuvola|increase|decrease|steady|red pog|blue pog|map|locator)/i;
+async function infoboxFiles(q) {
+  const title = meta[q]?.enwiki; if (!title) return [];
+  const res = await wm('https://en.wikipedia.org/w/api.php?' + new URLSearchParams({ action: 'parse', page: title, prop: 'images', section: '0', redirects: '1', format: 'json' }));
+  let files = []; try { files = (await res.json()).parse?.images || []; } catch { return []; }
+  return files.filter(f => /\.(svg|png)$/i.test(f) && MARK.test(fold(f.replace(/\.[a-z]+$/i, ''))) && !JUNK.test(f)).slice(0, 4)
+    .map(f => `https://en.wikipedia.org/w/index.php?title=Special:Redirect/file/${encodeURIComponent(f)}&width=512`);
+}
+// --extra adds the infobox and Commons search candidates to institutions already collected, without downloading the rest again.
 if (has('--extra')) {
   let added = 0;
   for (const q of qids) {
     const dir = path.join(candRoot, q), manPath = path.join(dir, 'manifest.json'), man = readJson(manPath, null);
-    if (!man || man.some(e => e.kind === 'commons-search' || e.searched)) continue;
-    for (const url of await commonsSearch(q)) {
+    if (!man || man.some(e => e.searched === 2)) continue;
+    const extra = [...(await infoboxFiles(q)).map(url => ({ url, kind: 'wikipedia-infobox' })), ...(await commonsSearch(q)).map(url => ({ url, kind: 'commons-search' }))];
+    for (const { url, kind } of extra) {
       if (man.some(e => e.url === url)) continue;
-      const got = await download(url, UA), entry = { url, kind: 'commons-search', k: man.length, file: null };
+      const got = await download(url, UA), entry = { url, kind, k: man.length, file: null };
       if (got) { entry.file = `${entry.k}.${got.ext}`; fs.writeFileSync(path.join(dir, entry.file), got.buf); added++; }
       man.push(entry);
     }
-    man.push({ url: 'commons-search', kind: 'marker', k: man.length, file: null, searched: true });
+    man.push({ url: 'extra-search', kind: 'marker', k: man.length, file: null, searched: 2 });
     fs.writeFileSync(manPath, JSON.stringify(man, null, 1));
   }
-  console.log(`added ${added} Commons search files`);
+  console.log(`added ${added} files from Wikipedia infoboxes and Commons`);
+  await renderSvgs();
 }
 if (has('--choose')) choose();
 if (!has('--collect') && !has('--choose') && !has('--extra')) console.log('Give --collect, --extra, --choose or a combination.');
