@@ -4,24 +4,24 @@
     "updatedAt": "2026-10-17",
     "total": 3161,
     "counts": {
-      "unresolved": 1596,
-      "verified": 1561,
+      "unresolved": 1571,
+      "verified": 1586,
       "not-yet-completed-phd": 4
     },
     "bySource": {
       "omlist": {
         "total": 2149,
         "counts": {
-          "unresolved": 1084,
-          "verified": 1064,
+          "unresolved": 1061,
+          "verified": 1087,
           "not-yet-completed-phd": 1
         }
       },
       "faculty-page": {
         "total": 1012,
         "counts": {
-          "verified": 497,
-          "unresolved": 512,
+          "verified": 499,
+          "unresolved": 510,
           "not-yet-completed-phd": 3
         }
       }
@@ -971,24 +971,37 @@
     {
       "facultyId": "omlist-fb6ae36427bea79f",
       "name": "Özden Gür Ali",
-      "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "Could not establish the first post-PhD job. Secondary profile text (AMiner author page and search-result snippets of a Koç University centre profile) says she was at GE Research and Development (data mining/Six Sigma), then ZS Associates consulting, and joined Koç University in 2004 after about ten years of consulting/industry experience, but no dated chronology was found, so it is unknown whether GE R&D or another industry job was the first post-PhD job and when it started. The 1994 Rensselaer PhD year was not independently confirmed (the profile text gives institution and field only, and an MS dated 1990). No dated CV could be opened: the Koç personal site returned 403 and the kumpem.ku.edu.tr profile redirected/403.",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "employer": "General Electric Corporate Research & Development",
+      "position": "Management Scientist",
+      "placementYear": 1994,
+      "category": "industry",
+      "evidenceUrl": "https://orcid.org/0000-0002-9409-4532",
+      "evidenceNote": "Her ORCID record lists, as its earliest employment, Management Scientist in the Information Technology Lab of General Electric Corporate Research & Development from 1994 to 1998, then Manager at ZS Associates (Evanston) 1998-2004 and Koç University from 2004-09. The GE start year equals the imported 1994 Rensselaer PhD year; the ORCID record has no education entries, so the degree year and the month order of degree and GE start are not independently confirmed.",
+      "phdYearVerified": null,
+      "phdInstitutionVerified": null,
+      "reason": "Second pass: the ORCID public API (pub.orcid.org/v3.0) record found by name search carries the GE R&D, ZS Associates and Koç affiliations already described in secondary profile text, with dates, and establishes GE Corporate R&D (1994) as the first listed job. The Koç personal site (mysite.ku.edu.tr/ogurali) now answers 404 to curl and 403 through the reader proxy, and the Koç GSB profile page served by curl contains no biography. Verifier: the 1994 PhD year is the OM List value only. Earlier review (2026-10-16): secondary text named GE R&D, ZS Associates and a 2004 Koç start without dates, so the first job and its year were not established.",
       "sources": [
         {
-          "url": "https://www.aminer.org/profile/fatma-ozden-gur-ali/53f47b6cdabfaec09f28edfa",
-          "title": "AMiner profile (Fatma) Ozden Gur Ali",
-          "notes": "Opened via WebFetch: page body returned no bio text; the bio (GE R&D, ZS Associates, Koç 2004, RPI PhD) was seen only in a search-result summary. Discovery only."
-        },
-        {
-          "url": "https://kumpem.ku.edu.tr/en/?p=4679",
-          "title": "Koç University KUMPEM profile of Yrd. Doc. Dr. Özden Gür Ali",
-          "notes": "Attempted: direct fetch returned HTTP 403 and WebFetch reported a redirect to a generic KUMPEM page; no chronology obtained."
+          "url": "https://orcid.org/0000-0002-9409-4532",
+          "title": "ORCID record 0000-0002-9409-4532 - Ozden Gur Ali (public API)",
+          "notes": "Employment: General Electric Corporate Research & Development, Information Technology Lab, Management Scientist, 1994-1998; ZS Associates Evanston, Manager, 1998-2004; Koç University Business Administration, Professor, from 2004-09. No education entries."
         },
         {
           "url": "https://mysite.ku.edu.tr/ogurali/",
-          "title": "Guessed Koç personal site",
-          "notes": "Attempted: HTTP 403 (CloudFront); no CV obtained."
+          "title": "Koç personal site (guessed)",
+          "notes": "Attempted again: 404 to browser-UA curl, 403 (CloudFront) through r.jina.ai."
+        },
+        {
+          "url": "https://gsb.ku.edu.tr/about-gsb/full-time/?detail=true&id=ogurali",
+          "title": "Koç GSB full-time faculty page (id=ogurali)",
+          "notes": "Served to curl, but contains only the generic faculty-list template, no personal entry."
+        },
+        {
+          "url": "https://kumpem.ku.edu.tr/en/?p=4679",
+          "title": "Koç University KUMPEM profile",
+          "notes": "From the earlier review: 403 / redirect, no chronology."
         }
       ],
       "source": "omlist"
@@ -2251,18 +2264,23 @@
       "facultyId": "omlist-5a083bf8802c3e4e",
       "name": "Goker Aydin",
       "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "Official profile and public CV endpoint both returned access denied; first placement not established.",
+      "checkedAt": "2026-10-17",
+      "reason": "Second pass: the Carey profile, read through the r.jina.ai reader proxy, says he joined Carey in 2017 and earlier served on the faculty of Indiana's Kelley School and of Michigan's Department of Industrial and Operations Engineering, with a Stanford PhD in Industrial Engineering, but gives no years or order. The Carey CV PDF is behind a Cloudflare challenge that refused curl, the reader proxy and a headless browser; ORCID 0000-0001-7079-0798 lists works only; one web search found no other CV. The Michigan appointment is the likely first job, but its start year and the absence of an earlier post are unverified. Earlier review (2026-10-16): the official profile and the public CV both returned access denied.",
       "sources": [
         {
-          "url": "https://carey.jhu.edu/sites/default/files/2024-03/aydin-goker-cv-spring-2024.pdf",
-          "title": "Goker Aydin public academic profile",
-          "notes": "Official profile and public CV endpoint both returned access denied; first placement not established."
+          "url": "https://carey.jhu.edu/faculty/faculty-directory/goker-aydin-phd",
+          "title": "Goker Aydin - Johns Hopkins Carey Business School profile",
+          "notes": "Read through r.jina.ai: joined Carey 2017; previously on the faculty of Kelley (Indiana) and Michigan IOE; PhD Industrial Engineering Stanford, MS Purdue, BS Bogazici; no dates."
         },
         {
-          "url": "https://carey.jhu.edu/faculty/faculty-directory/goker-aydin-phd",
-          "title": "Goker Aydin public academic profile",
-          "notes": "Official profile and public CV endpoint both returned access denied; first placement not established."
+          "url": "https://carey.jhu.edu/sites/default/files/2024-03/aydin-goker-cv-spring-2024.pdf",
+          "title": "Goker Aydin CV (spring 2024)",
+          "notes": "Attempted: Cloudflare challenge to curl, r.jina.ai and headless Chromium; not read."
+        },
+        {
+          "url": "https://orcid.org/0000-0001-7079-0798",
+          "title": "ORCID record 0000-0001-7079-0798 - Goker Aydin",
+          "notes": "Public API: 26 works, no employment or education entries."
         }
       ],
       "source": "omlist"
@@ -2799,19 +2817,27 @@
     {
       "facultyId": "omlist-c0201f4b29b87291",
       "name": "Chaithanya Bandi",
-      "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "The NUS profile returned an application shell and linked PDF returned no readable text.",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "employer": "Northwestern University (Kellogg School of Management)",
+      "position": "Donald P. Jacobs Scholar",
+      "placementYear": 2013,
+      "category": "other-academic",
+      "evidenceUrl": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/05/Trbae1670318471.pdf",
+      "evidenceNote": "His CV gives the MIT Sloan / Operations Research Center Ph.D. in Operations Research, 2013, and lists at Northwestern's Kellogg School of Management: Donald P. Jacobs Scholar 2013, Assistant Professor of Operations 2014, Associate Professor 2017, then NUS Business School 2020. The 2013 Jacobs Scholar appointment is the first post-PhD post; the CV does not describe its nature, so it is recorded as other-academic rather than postdoc or tenure-track. Verifier: category corrected from other-academic to unknown, because the CV (re-read 2026-10-17) lists the 2013 Donald P. Jacobs Scholar title at Kellogg without describing the kind of post (not stated as postdoctoral, visiting, fixed-term or tenure-track), and an unstated kind of post is recorded as unknown; the assistant professorship followed in 2014. Integrator (17 October 2026): category set to other-academic, as for the other published Kellogg Donald P. Jacobs Scholar first jobs (Achal Bassamboo, Gad Allon, Tarek Abdallah): a named one-year appointment at the school before the assistant professorship, neither a postdoc by title nor a tenure-track post (RESEARCH-DESIGN.md).",
+      "phdYearVerified": 2013,
+      "phdInstitutionVerified": "Massachusetts Institute of Technology",
+      "reason": "Second pass: the CV PDF linked from the NUS profile now downloads with curl and reads with pdftotext. Verifier: decide whether the Kellogg 'Donald P. Jacobs Scholar' title should be classed as postdoc; if the integrator prefers the assistant professorship, it began in 2014. Earlier review (2026-10-16): the NUS profile returned an application shell and the linked PDF gave no readable text.",
       "sources": [
         {
           "url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/05/Trbae1670318471.pdf",
-          "title": "Chaithanya Bandi academic profile",
-          "notes": "The NUS profile returned an application shell and linked PDF returned no readable text."
+          "title": "Chaithanya Bandi - CV (NUS Business School)",
+          "notes": "Academic appointments: NUS Associate Professor 2020; Kellogg Associate Professor 2017, Assistant Professor 2014, Donald P. Jacobs Scholar 2013. Education: MIT Ph.D. Operations Research 2013; IIT Madras B.Tech 2008."
         },
         {
           "url": "https://discovery.nus.edu.sg/18952-chaithanya-bandi",
-          "title": "Chaithanya Bandi academic profile",
-          "notes": "The NUS profile returned an application shell and linked PDF returned no readable text."
+          "title": "NUS Discovery profile - Chaithanya Bandi",
+          "notes": "From the earlier review: application shell."
         }
       ],
       "source": "omlist"
@@ -5196,19 +5222,27 @@
     {
       "facultyId": "omlist-99bbe8797ed70816",
       "name": "Juan Camilo",
-      "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "The McGill biography focuses on current research initiatives and lacks an early career chronology; the public Google Doc CV returned only document navigation.",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "employer": "McGill University (Desautels Faculty of Management)",
+      "position": "Assistant Professor",
+      "placementYear": 2016,
+      "category": "tenure-track",
+      "evidenceUrl": "https://docs.google.com/document/d/1KvpGKaqBYHCv3Y9vxfvPaL9Trk-HfaMyNw86jkcUIOs/edit?usp=sharing",
+      "evidenceNote": "The CV of Juan Camilo Serpa (Desautels Faculty of Management, McGill) gives the Ph.D., University of British Columbia, 2015, and lists Assistant Professor 2016-2019 and Associate Professor (early tenure) from 2019 under its McGill appointments; a McGill start-up grant is dated 2016-2019, and job-market seminars are listed for December 2015 and January 2016. No other appointment is listed between the 2015 degree and 2016. Plain assistant professor title at a North American business school, recorded as tenure-track by convention.",
+      "phdYearVerified": 2015,
+      "phdInstitutionVerified": "University of British Columbia",
+      "reason": "Second pass: the public Google Doc CV linked from the McGill profile was read through its /export?format=txt endpoint with curl. Identity: the record's name is the first part of 'Juan Camilo Serpa'; the McGill Desautels affiliation and the 2015 UBC doctorate match. Earlier review (2026-10-16): the McGill biography gave no early chronology and the Google Doc returned only document navigation.",
       "sources": [
         {
           "url": "https://docs.google.com/document/d/1KvpGKaqBYHCv3Y9vxfvPaL9Trk-HfaMyNw86jkcUIOs/edit?usp=sharing",
-          "title": "Juan Camilo academic profile",
-          "notes": "The McGill biography focuses on current research initiatives and lacks an early career chronology; the public Google Doc CV returned only document navigation."
+          "title": "Juan C. Serpa - curriculum vitae (public Google Doc)",
+          "notes": "Read as plain text via the document's /export?format=txt endpoint. Appointments: Assistant Professor 2016-2019, Associate Professor 2019-present (McGill Desautels); Education: Ph.D. UBC 2015; McGill Start-up Grant 2016-2019; seminars Dec 2015 and Jan 2016."
         },
         {
           "url": "https://www.mcgill.ca/desautels/juan-camilo",
-          "title": "Juan Camilo academic profile",
-          "notes": "The McGill biography focuses on current research initiatives and lacks an early career chronology; the public Google Doc CV returned only document navigation."
+          "title": "McGill Desautels profile - Juan Camilo",
+          "notes": "From the earlier review: current research only, links the CV."
         }
       ],
       "source": "omlist"
@@ -6243,24 +6277,32 @@
     {
       "facultyId": "omlist-be78dec50d1e38a3",
       "name": "Chien-Ming Chen",
-      "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "A 2016 seminar biography reports a postdoctoral scholar and lecturer role at the UCLA Institute of the Environment and Sustainability before Nanyang Business School, with the Erasmus (RSM) PhD in 2009, but gives no dates for either UCLA role or the NBS start; the NTU profile's 'Prior to joining NBS in ...' sentence was truncated and the NTU repository page returned HTTP 405. An NTU EMBA page for a similarly named person (PhD Leuven 1993) is a different individual and was not used.",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "employer": "University of California, Los Angeles (Institute of the Environment and Sustainability)",
+      "position": "Postdoctoral Scholar and Lecturer",
+      "placementYear": null,
+      "category": "postdoc",
+      "evidenceUrl": "https://dr.ntu.edu.sg/server/api/core/items/57205083-ff80-46a7-a937-812e8da79d23",
+      "evidenceNote": "His DR-NTU researcher profile states that he obtained his PhD from the Rotterdam School of Management, Erasmus University in 2009 and that, prior to joining Nanyang Business School in 2011, he was a postdoctoral scholar and lecturer at the UCLA Institute of the Environment and Sustainability. The UCLA post therefore falls between the 2009 degree and the 2011 NTU start; its start year is not stated.",
+      "phdYearVerified": 2009,
+      "phdInstitutionVerified": "Erasmus University Rotterdam",
+      "reason": "Second pass: the DR-NTU person page is behind an AWS WAF human check, but the repository's DSpace REST API serves the same profile record (dc.description.abstract), which completes the sentence truncated on the NTU faculty list ('Prior to joining NBS in 2011'). Verifier: the UCLA start year is unknown, so placementYear is null. Earlier review (2026-10-16): a 2016 seminar biography reported the UCLA postdoc without dates and the NTU sentence was truncated.",
       "sources": [
         {
-          "url": "https://jjxy.hfut.edu.cn/2016/0526/c9293a186073/page.htm",
-          "title": "HFUT seminar announcement - Chen Chien-Ming",
-          "notes": "Biography: RSM PhD 2009; UCLA postdoc/lecturer before NTU; no dates."
+          "url": "https://dr.ntu.edu.sg/server/api/core/items/57205083-ff80-46a7-a937-812e8da79d23",
+          "title": "DR-NTU researcher profile record - Assoc Prof Chen Chien-Ming (DSpace REST API)",
+          "notes": "Read through the repository API (the person page answers with a WAF human check). PhD RSM Erasmus 2009; prior to joining NBS in 2011, postdoctoral scholar and lecturer at the UCLA Institute of the Environment and Sustainability."
         },
         {
           "url": "https://www.ntu.edu.sg/business/admissions/graduate-studies/msc-business-analytics/faculty",
-          "title": "NTU Nanyang Business School faculty list",
-          "notes": "PhD RSM 2009; biography truncated before NBS start."
+          "title": "NTU Nanyang Business School - MSc Business Analytics faculty list",
+          "notes": "Read with curl: same biography truncated at 'Prior to joining NBS in ...'."
         },
         {
-          "url": "https://dr.ntu.edu.sg/entities/person/Chen-Chien-Ming",
-          "title": "NTU DR-NTU profile",
-          "notes": "Attempted; HTTP 405."
+          "url": "https://jjxy.hfut.edu.cn/2016/0526/c9293a186073/page.htm",
+          "title": "HFUT seminar announcement - Chen Chien-Ming",
+          "notes": "From the earlier review: RSM PhD 2009; UCLA postdoc/lecturer before NTU; no dates."
         }
       ],
       "source": "omlist"
@@ -6393,33 +6435,33 @@
       "facultyId": "omlist-b84913833673b98b",
       "name": "Haozhe Chen",
       "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "The Iowa State directory confirms the University of Oklahoma PhD in Supply Chain Management (2007) but lists no employment history; an InformIT author biography describes him as Associate Professor of Marketing and Supply Chain Management at East Carolina University without dates; the Reverse Logistics Association profile (HTTP 503) and the Iowa State repository person page (HTTP 403) could not be opened, and an Iowa State departmental deck found on the Iowa DOT site gives only his current title. A web search summarises a departmental source as stating about eight years at ECU and an Iowa State start in 2015, consistent with an ECU appointment from 2007, but no opened source dates or titles the ECU post, so the first post-PhD job is not established.",
+      "checkedAt": "2026-10-17",
+      "reason": "Second pass: the Reverse Logistics Association profile reset the connection to curl and timed out through the r.jina.ai reader; the Iowa State scholarly-repository profile (dr.lib.iastate.edu Esploro) answered 403 to curl, the reader proxy and a headless browser; ORCID 0000-0003-2460-8769 still has no employment or education entries. No dated source for the East Carolina appointment or any post between the 2007 Oklahoma PhD and Iowa State was opened, so the first post-PhD job and its year remain unestablished. Earlier review (2026-10-16): the Iowa State directory confirmed the 2007 Oklahoma PhD without employment history and an undated InformIT bio placed him at East Carolina, while the RLA and repository pages could not be opened.",
       "sources": [
         {
           "url": "https://www.ivybusiness.iastate.edu/directory/hzchen/",
-          "title": "Iowa State Ivy College of Business — Haozhe Chen",
-          "notes": "Fetched with curl after the fetcher was rejected. Academic history: Ph.D. Supply Chain Management, University of Oklahoma, 2007; MBA Alabama 2003; BA Anhui University 1993. No employment history."
+          "title": "Iowa State Ivy College of Business - Haozhe Chen",
+          "notes": "From the earlier review (curl): Ph.D. Supply Chain Management, University of Oklahoma, 2007; no employment history. Through the reader proxy now: empty."
         },
         {
           "url": "https://www.informit.com/authors/bio/cb3dce96-bb29-474e-acf7-4d792c11debb",
-          "title": "InformIT author biography — Haozhe Chen",
-          "notes": "Associate Professor of Marketing and Supply Chain Management, College of Business, East Carolina University; eight years of industry experience in China; no dates."
+          "title": "InformIT author biography - Haozhe Chen",
+          "notes": "From the earlier review: Associate Professor at East Carolina University, no dates."
         },
         {
           "url": "https://rla.org/user/profile/6081",
-          "title": "Reverse Logistics Association — Haozhe Chen profile",
-          "notes": "Surfaced by search; HTTP 503 on two attempts."
+          "title": "Reverse Logistics Association - Haozhe Chen profile",
+          "notes": "Attempted again: connection reset to curl; reader proxy timed out."
         },
         {
-          "url": "https://iowadot.gov/media/10570/download",
-          "title": "Iowa State Department of Supply Chain Management presentation (Iowa DOT site)",
-          "notes": "Downloaded PDF; gives only his current title (Walker Professor, Interim Chair) and contact details, no chronology."
+          "url": "https://dr.lib.iastate.edu/esploro/profile/haozhe_chen/overview",
+          "title": "Iowa State Digital Repository profile (Esploro)",
+          "notes": "Attempted: 403 to curl, r.jina.ai and a headless browser."
         },
         {
-          "url": "https://omlist.edutool.org/schools/iowa-state-university/faculty/haozhe-chen.html",
-          "title": "OM List profile — Haozhe Chen",
-          "notes": "Directory entry (PhD University of Oklahoma 2007); ORCID 0000-0003-2460-8769 has no employment or education entries."
+          "url": "https://orcid.org/0000-0003-2460-8769",
+          "title": "ORCID record 0000-0003-2460-8769",
+          "notes": "Public API: no employment or education entries."
         }
       ],
       "source": "omlist"
@@ -7381,16 +7423,29 @@
     {
       "facultyId": "omlist-be6408f99285b14b",
       "name": "Adrian Choo",
-      "status": "unresolved",
-      "checkedAt": "2026-10-16",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "employer": "Rensselaer Polytechnic Institute (Lally School of Management & Technology)",
+      "position": "Assistant Professor",
+      "placementYear": 2003,
+      "category": "tenure-track",
+      "evidenceUrl": "https://bps.broad.msu.edu/documents/vitas/6411103f5a16be03738b4569-6ace8b805cc2a897368896.pdf",
+      "evidenceNote": "His Michigan State CV lists academic employment as Assistant Professor at the Lally School of Management & Technology, Rensselaer Polytechnic Institute, 2003-2010, then Georgia State (2010-2016) and Michigan State (from 2016). The CV gives the Minnesota Ph.D. without a year and lists a 2002 Carlson dissertation fellowship; it contains no non-academic employment section. The RPI start equals the imported 2003 PhD year. Plain assistant professor title at a North American business school, recorded as tenure-track by convention.",
+      "phdYearVerified": null,
+      "phdInstitutionVerified": "University of Minnesota",
+      "reason": "Second pass: the Broad College profile behind Incapsula was rendered in a headless Chromium browser, and its 'Curriculum Vitae' link was downloaded with the browser session's cookies and read with pdftotext. Verifier: the CV section is headed 'Academic employment', and the degree year is not on the CV. Earlier review (2026-10-16): the profile returned an access-security error page.",
       "sources": [
         {
+          "url": "https://bps.broad.msu.edu/documents/vitas/6411103f5a16be03738b4569-6ace8b805cc2a897368896.pdf",
+          "title": "Adrian S. Choo - CV (Michigan State Broad College)",
+          "notes": "Downloaded through a headless-browser session (bot protection). Academic employment: RPI Lally Assistant Professor 2003-2010; Georgia State Assistant Professor 2010-2016; MSU Assistant Professor 2016-2022, Associate Professor 2022-present. Ph.D. Business Administration, Carlson School, Minnesota (no year)."
+        },
+        {
           "url": "https://broad.msu.edu/profile/chooadri",
-          "title": "Adrian Choo Profile",
-          "notes": "Michigan State profile returned an access-security error page; no readable individual chronology obtained."
+          "title": "MSU Broad College profile - Adrian Choo",
+          "notes": "Rendered in a headless browser: Associate Professor; Minnesota PhD; CV link."
         }
       ],
-      "reason": "Michigan State profile returned an access-security error page; no readable individual chronology obtained.",
       "source": "omlist"
     },
     {
@@ -7418,19 +7473,27 @@
     {
       "facultyId": "omlist-fffcab7552e742cc",
       "name": "Mabel Chou",
-      "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "The NUS profile returned an application shell and linked PDF returned no readable text.",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "employer": "National University of Singapore (Department of Decision Sciences)",
+      "position": "Assistant Professor",
+      "placementYear": 2001,
+      "category": "tenure-track",
+      "evidenceUrl": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/05/FFybc1481174281.pdf",
+      "evidenceNote": "Her CV gives the PhD in Industrial Engineering and Management Sciences, Northwestern University, 2001, and lists Assistant Professor, Department of Decision Sciences, National University of Singapore, October 2001-December 2009 (then Associate Professor from January 2010); the only earlier post is Instructor at Northwestern IEMS in 2000, during the doctorate. Plain assistant professor title at an Asian business school, recorded as tenure-track by convention.",
+      "phdYearVerified": 2001,
+      "phdInstitutionVerified": "Northwestern University",
+      "reason": "Second pass: the CV PDF linked from the NUS profile now downloads with curl and reads with pdftotext. Earlier review (2026-10-16): the NUS profile returned an application shell and the linked PDF gave no readable text.",
       "sources": [
         {
           "url": "https://bizfaculty.nus.edu.sg/wp-content/uploads/sites/139/2024/05/FFybc1481174281.pdf",
-          "title": "Mabel Chou academic profile",
-          "notes": "The NUS profile returned an application shell and linked PDF returned no readable text."
+          "title": "Mabel C. Chou - CV (NUS Business School)",
+          "notes": "Education: PhD Northwestern IEMS 2001. Experience: NUS Decision Sciences Assistant Professor Oct 2001-Dec 2009; Associate Professor Jan 2010-present; Northwestern instructor 2000; visiting posts 2002-2012."
         },
         {
           "url": "https://discovery.nus.edu.sg/906",
-          "title": "Mabel Chou academic profile",
-          "notes": "The NUS profile returned an application shell and linked PDF returned no readable text."
+          "title": "NUS Discovery profile - Mabel Chou",
+          "notes": "From the earlier review: application shell."
         }
       ],
       "source": "omlist"
@@ -8165,15 +8228,25 @@
       "facultyId": "omlist-8eda8b8a6f27e4e0",
       "name": "Maqbool Dada",
       "status": "unresolved",
-      "checkedAt": "2026-10-16",
+      "checkedAt": "2026-10-17",
+      "reason": "Second pass: the Carey profile was read through the r.jina.ai reader proxy; it says he joined Carey in 2009 and lists the MIT Ph.D. in Management without a year, but gives no earlier positions. The linked CV (carey.jhu.edu/sites/default/files/2024-03/dada-maqbool-cv-spring-2024.pdf) sits behind a Cloudflare challenge that refused browser-UA curl, the reader proxy and a headless browser; ORCID 0000-0002-5256-1446 has no affiliations; one web search found no other copy of his CV. The first job after the 1984 MIT degree is undocumented. Earlier review (2026-10-16): the Johns Hopkins biography returned HTTP 403 and no early career evidence was read.",
       "sources": [
         {
           "url": "https://carey.jhu.edu/faculty/faculty-directory/maqbool-dada-phd",
-          "title": "Maqbool Dada Profile",
-          "notes": "Fetch failed: HTTP Error 403: Forbidden"
+          "title": "Maqbool Dada - Johns Hopkins Carey Business School profile",
+          "notes": "Read through r.jina.ai (403 to direct requests): joined Carey in 2009; Ph.D. Management, MIT, and BS Berkeley, no years; associate editorships from 2003."
+        },
+        {
+          "url": "https://carey.jhu.edu/sites/default/files/2024-03/dada-maqbool-cv-spring-2024.pdf",
+          "title": "Maqbool Dada CV (spring 2024)",
+          "notes": "Attempted: Cloudflare 'Just a moment' challenge to curl, r.jina.ai and headless Chromium; not read."
+        },
+        {
+          "url": "https://orcid.org/0000-0002-5256-1446",
+          "title": "ORCID record 0000-0002-5256-1446 - Maqbool Dada",
+          "notes": "Public API: no employment, education or works."
         }
       ],
-      "reason": "Johns Hopkins biography returned HTTP403; no readable early career evidence obtained.",
       "source": "omlist"
     },
     {
@@ -9365,19 +9438,33 @@
     {
       "facultyId": "omlist-d87cc5cc82814cc1",
       "name": "Anne Dohmen",
-      "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "The MSU profile returned an access-protection response and linked PDF returned no readable text.",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "employer": "Michigan State University (Broad College of Business)",
+      "position": "Assistant Professor",
+      "placementYear": 2023,
+      "category": "tenure-track",
+      "evidenceUrl": "https://bps.broad.msu.edu/documents/vitas/65a69c3d5a16be42278b4567-6ace8ba36d874336634991.pdf",
+      "evidenceNote": "Her CV dates the University of Tennessee (Haslam) Ph.D. in Supply Chain Management to May 2023 and lists Assistant Professor, Michigan State University, May 2023-present, after Doctoral Research Assistant at Tennessee (August 2019-May 2023); her professional experience (engineering posts) ends in 2017, before the doctorate. The Broad College's October 2023 new-faculty article confirms she joined the Department of Supply Chain Management as an assistant professor for 2023-24.",
+      "phdYearVerified": 2023,
+      "phdInstitutionVerified": "University of Tennessee at Knoxville",
+      "phdYearResolution": "Her CV dates the University of Tennessee, Knoxville Ph.D. to May 2023 (dissertation 'Leveraging supply chain planning for improved supply chain performance'); the OM List import gives 2024. 2023 is proposed.",
+      "reason": "Second pass: the Broad College profile behind Incapsula was rendered in a headless browser, and the CV it links was downloaded with the browser session's cookies and read with pdftotext; the new-faculty news item was rendered the same way. Earlier review (2026-10-16): the profile returned an access-protection response and the linked PDF gave no readable text.",
       "sources": [
         {
-          "url": "https://bps.broad.msu.edu/media/documents/65a69c3d5a16be42278b4567.pdf",
-          "title": "Anne Dohmen academic profile",
-          "notes": "The MSU profile returned an access-protection response and linked PDF returned no readable text."
+          "url": "https://bps.broad.msu.edu/documents/vitas/65a69c3d5a16be42278b4567-6ace8ba36d874336634991.pdf",
+          "title": "Anne E. Dohmen - CV (Michigan State Broad College)",
+          "notes": "Downloaded through a headless-browser session. Academic positions: MSU Assistant Professor May 2023-present; UT Knoxville Doctoral Research Assistant Aug 2019-May 2023. Education: UT Knoxville Ph.D. May 2023. Professional experience: engineering roles 2011-2017."
+        },
+        {
+          "url": "https://broad.msu.edu/news/new-faculty-23/",
+          "title": "Broad College welcomes new faculty members for 2023-24 year (12 October 2023)",
+          "notes": "Rendered in a headless browser: lists her among new supply chain management assistant professors in the 2023-24 year."
         },
         {
           "url": "https://broad.msu.edu/profile/dohmenan",
-          "title": "Anne Dohmen academic profile",
-          "notes": "The MSU profile returned an access-protection response and linked PDF returned no readable text."
+          "title": "MSU Broad College profile - Anne Dohmen",
+          "notes": "Rendered in a headless browser; CV link."
         }
       ],
       "source": "omlist"
@@ -12996,14 +13083,32 @@
     {
       "facultyId": "omlist-82cd493157a619a0",
       "name": "Joel Goh",
-      "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "The NUS profile returned a JavaScript application shell without a readable biography.",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "employer": "Harvard Business School",
+      "position": "Assistant Professor",
+      "placementYear": 2014,
+      "category": "tenure-track",
+      "evidenceUrl": "https://www.joelgoh.net",
+      "evidenceNote": "His personal site lists previous academic appointments: Assistant Professor, Harvard Business School, 2014-2017; then President's Assistant Professor at NUS Business School from 2017. ORCID dates the Stanford GSB PhD 2009-2014 and lists Harvard Business School employment from 2014 and NUS from 2017. HBS is the first post-PhD job; plain assistant professor title at a North American business school, recorded as tenure-track by convention.",
+      "phdYearVerified": 2014,
+      "phdInstitutionVerified": "Stanford University",
+      "reason": "Second pass: the NUS Discovery profile was rendered in a headless browser and points to joelgoh.net, read with curl; ORCID was read through the public API. Earlier review (2026-10-16): the NUS profile returned a JavaScript application shell without a biography.",
       "sources": [
         {
+          "url": "https://www.joelgoh.net",
+          "title": "Joel Goh - personal webpage",
+          "notes": "Read with curl. Previous academic appointments: HBS Assistant Professor 2014-2017; NUS President's Assistant Professor 2017-2020; Dean's Chair Associate Professor 2020-2025; HBS visiting scholar 2017-2022."
+        },
+        {
+          "url": "https://orcid.org/0000-0002-3473-9191",
+          "title": "ORCID record 0000-0002-3473-9191 - Joel Goh (public API)",
+          "notes": "Education: Stanford GSB PhD 2009-2014. Employment: Harvard Business School from 2014; National University of Singapore from 2017."
+        },
+        {
           "url": "https://discovery.nus.edu.sg/1865-joel-goh",
-          "title": "Joel Goh academic profile",
-          "notes": "The NUS profile returned a JavaScript application shell without a readable biography."
+          "title": "NUS Discovery profile - Joel Goh",
+          "notes": "Rendered in a headless browser: prior to NUS he was Assistant Professor of Business Administration at HBS; NUS appointments from 2017; Stanford GSB doctorate (no year)."
         }
       ],
       "source": "omlist"
@@ -13618,24 +13723,32 @@
     {
       "facultyId": "omlist-ee84ede2767d23fa",
       "name": "Stanley Griffis",
-      "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "Michigan State CV versions (bps.broad.msu.edu) and the Broad College profile could not be opened: the CV host returned a bot-protection page to direct download and HTTP 404 to the fetch tool, and the profile page returned no readable content. Search-result text only (not verified) indicates an Ohio State Business Administration PhD, 20 years as a US Air Force logistics officer (1989-2009) and an AFIT assistant professorship dated 2001-2005 in some CV versions but through 2009 in others. Because AFIT duty overlapped active military service and dates conflict between CV versions, the first post-PhD job and its start year are not established.",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "employer": "Air Force Institute of Technology",
+      "position": "Assistant Professor of Logistics Management",
+      "placementYear": 2001,
+      "category": "other-academic",
+      "evidenceUrl": "https://bps.broad.msu.edu/documents/vitas/698d085d5a16be64038b4567-6ace8bd38dd2b012005147.doc",
+      "evidenceNote": "His Michigan State vita (as of 2/10/2026) lists Assistant Professor of Logistics Management, Air Force Institute of Technology, 2001-2005, within twenty years as a U.S. Air Force logistics and supply chain officer (1989-2009), followed by Michigan State from 2009. Under the rule for serving officers assigned to a faculty post at a new institution after the doctorate, the AFIT faculty post is the first new post-PhD job; the continuing Air Force service is noted and the category is other-academic. The vita gives the Ohio State Ph.D. without a year; 2001 is the imported year.",
+      "phdYearVerified": null,
+      "phdInstitutionVerified": "The Ohio State University",
+      "reason": "Second pass: the Broad College profile was rendered in a headless browser and its current vita (.doc) was downloaded with the session's cookies and converted with LibreOffice. Verifier: an earlier review saw search text saying some CV versions date the AFIT post to 2009; this version gives 2001-2005, and the PhD year is not on it, so if the degree was conferred after 2001 the start would precede it. Earlier review (2026-10-16): the CV documents could not be opened and the AFIT dates conflicted between CV versions seen only in search results.",
       "sources": [
         {
-          "url": "https://broad.msu.edu/profile/griffis1",
-          "title": "MSU Broad College profile",
-          "notes": "Fetched; no usable education/employment content returned."
+          "url": "https://bps.broad.msu.edu/documents/vitas/698d085d5a16be64038b4567-6ace8bd38dd2b012005147.doc",
+          "title": "Stanley E. Griffis - vita (Michigan State Broad College), as of 2/10/2026",
+          "notes": "Downloaded through a headless-browser session and converted to text. Experience: MSU from 2009; AFIT Assistant Professor of Logistics Management 2001-2005; U.S. Air Force officer 1989-2009 (retired Lt. Col.). Education: Ph.D. Ohio State (no year), M.A. Ohio State, M.S. AFIT."
         },
         {
-          "url": "https://a-capp.msu.edu/member/stan-griffis/",
-          "title": "MSU A-CAPP member page",
-          "notes": "Fetched; empty content."
+          "url": "https://broad.msu.edu/profile/griffis1",
+          "title": "MSU Broad College profile - Stanley Griffis",
+          "notes": "Rendered in a headless browser; vita link."
         },
         {
           "url": "https://bps.broad.msu.edu/media/documents/698d085d5a16be64038b4567.doc",
-          "title": "Griffis CV version (MSU)",
-          "notes": "HTTP 404 to fetch tool; curl received a bot-protection stub. Not read."
+          "title": "Older Griffis CV URL",
+          "notes": "From the earlier review: 404 / bot-protection stub."
         }
       ],
       "source": "omlist"
@@ -14632,16 +14745,29 @@
     {
       "facultyId": "omlist-3b9acef77e450669",
       "name": "Jinhui Han",
-      "status": "unresolved",
-      "checkedAt": "2026-10-16",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "employer": "University of Toronto (Rotman School of Management)",
+      "position": "Postdoctoral Fellow",
+      "placementYear": null,
+      "category": "postdoc",
+      "evidenceUrl": "http://en.gsm.pku.edu.cn/faculty/jinhui.han/",
+      "evidenceNote": "His Peking University Guanghua faculty record states that he received the Ph.D. in Statistics from The Chinese University of Hong Kong in 2021 (education entries: CUHK Ph.D. admitted 2017, graduated 2021) and that, prior to his Guanghua assistant professorship, he was a Postdoctoral Fellow at the Rotman School of Management, University of Toronto; his personal site says the same and names Ming Hu as postdoctoral advisor. No start date is given for the Rotman post, so placementYear is null.",
+      "phdYearVerified": 2021,
+      "phdInstitutionVerified": "Chinese University of Hong Kong",
+      "reason": "Second pass: the Guanghua page draws its content from a JSON endpoint (/system/resource/getjsoncs_en.jsp?type=3&user_id=jinhui.han), which was read through the r.jina.ai reader proxy because the host resets direct connections; the personal Google site was read with curl. Its CV page embeds a file that did not load in a headless browser. Verifier: the sources give the order (2021 PhD, Rotman postdoc, then PKU) but no dates for the postdoc. Earlier review (2026-10-16): the PKU faculty page failed the TLS handshake and no chronology was read.",
       "sources": [
         {
           "url": "http://en.gsm.pku.edu.cn/faculty/jinhui.han/",
-          "title": "Jinhui Han Profile",
-          "notes": "Fetch failed: <urlopen error [SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake failure (_ssl.c:1028)>"
+          "title": "Peking University Guanghua School of Management - Jinhui Han (faculty record via its JSON endpoint)",
+          "notes": "Read through r.jina.ai: Assistant Professor, Boya Young Fellow; prior to this a Postdoctoral Fellow at Rotman, University of Toronto; Ph.D. Statistics CUHK 2021 (2017-2021); BS Zhejiang 2017."
+        },
+        {
+          "url": "https://sites.google.com/view/han-jinhui",
+          "title": "Jinhui Han - personal site",
+          "notes": "Read with curl: PKU assistant professor; previously Postdoctoral Fellow advised by Ming Hu at Rotman; CUHK Ph.D. 2021. Updated March 2025."
         }
       ],
-      "reason": "Peking University faculty link failed TLS handshake; no readable primary chronology reviewed.",
       "source": "omlist"
     },
     {
@@ -20730,15 +20856,20 @@
       "facultyId": "omlist-4ff96bb85b4322ba",
       "name": "Wee Kiat Lee",
       "status": "unresolved",
-      "checkedAt": "2026-10-16",
+      "checkedAt": "2026-10-17",
+      "reason": "Second pass: the DR-NTU person page answers with an AWS WAF human check even in a headless browser, but the repository's DSpace REST API returned his profile record: Assistant Professor, Nanyang Business School; Ph.D. and M.S. in Operations Management from Cornell's Johnson School; a pre-academic engineering career in the maritime industry (Tuas Port). It gives no years for the degree or the NTU appointment and does not say whether a post came between the Cornell PhD (imported 2023) and NTU; no Cornell placement page or personal CV was found. Earlier review (2026-10-16): the NTU profile returned only a site heading without a biography.",
       "sources": [
         {
+          "url": "https://dr.ntu.edu.sg/server/api/core/items/dc6abdd1-3bd5-4caa-825b-278aba42d3a9",
+          "title": "DR-NTU researcher profile record - Asst Prof Wee Kiat Lee (DSpace REST API)",
+          "notes": "Read through the repository API (the person page answers with a WAF check): Cornell Ph.D. and M.S. in Operations Management; NUS MSc and BEng; earlier maritime-industry engineer; no dates."
+        },
+        {
           "url": "https://dr.ntu.edu.sg/cris/rp/rp00270",
-          "title": "Wee Kiat Lee Profile",
-          "notes": "NTU profile returned only a site heading without readable biography or chronology."
+          "title": "Wee Kiat Lee - DR-NTU profile page",
+          "notes": "Rendered in a headless browser: WAF 'confirm you are human' page."
         }
       ],
-      "reason": "NTU profile returned only a site heading without readable biography or chronology.",
       "source": "omlist"
     },
     {
@@ -22130,20 +22261,25 @@
       "facultyId": "omlist-5089beefbdd688aa",
       "name": "Andrew Lim",
       "status": "unresolved",
-      "checkedAt": "2026-10-16",
+      "checkedAt": "2026-10-17",
+      "reason": "Second pass: discovery.nus.edu.sg/3815 was rendered in a headless browser and identifies the person as Andrew Ee Beng Lim, who says he was a faculty member in Berkeley's Department of Industrial Engineering and Operations Research from 2002 to 2014 before NUS (appointments from 2022 shown); it lists no degrees and nothing before 2002. Berkeley IEOR pages for him return 404 and no CV was found, so the first job after the 1998 ANU doctorate (imported) and whether anything preceded Berkeley are unknown. Identity: the OM List profile mixes in publications from 1989-1994 that belong to a different Andrew Lim. Earlier review (2026-10-16): NUS Discovery required JavaScript and the website tried belonged to someone else.",
       "sources": [
         {
           "url": "https://discovery.nus.edu.sg/3815",
-          "title": "Andrew Lim Profile",
-          "notes": "NUS discovery requires JavaScript and personal website identifies only current role; no early employment chronology."
+          "title": "NUS Discovery - Andrew Ee Beng Lim",
+          "notes": "Rendered in a headless browser: Professor, Analytics & Operations and Finance; Berkeley IEOR faculty 2002-2014; NSF CAREER award; no degrees listed."
         },
         {
-          "url": "https://www.andreaslimoncello.net/",
-          "title": "Andrew Lim Website",
-          "notes": "NUS discovery requires JavaScript and personal website identifies only current role; no early employment chronology."
+          "url": "https://ieor.berkeley.edu/people/andrew-lim/",
+          "title": "Berkeley IEOR (guessed people page)",
+          "notes": "404."
+        },
+        {
+          "url": "https://omlist.edutool.org/schools/national-university-of-singapore/faculty/andrew-lim.html",
+          "title": "OM List profile - Andrew Lim",
+          "notes": "Read with curl: links Discovery 3815; publication list includes 1989 and 1994 Naval Research Logistics papers likely by a different Andrew Lim."
         }
       ],
-      "reason": "NUS discovery requires JavaScript and personal website identifies only current role; no early employment chronology.",
       "source": "omlist"
     },
     {
@@ -22219,28 +22355,23 @@
       "facultyId": "omlist-659721ea6b4cad07",
       "name": "Stanley Lim",
       "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "Michigan State University pages (the Broad College profile and the Broad news item on his early-career research award) are blocked by Incapsula bot protection for both fetch methods and returned no content. A search-engine snippet of the news item says he joined the Broad College faculty in 2021, two years after the 2019 Cambridge PhD, but the page could not be opened and the 2019-2021 interval is undocumented. ORCID lists Singapore Ministry of Defence employment October 2003-September 2014 (pre-doctoral) and the Cambridge PhD in Supply Chain Management 2014-2019 but no post-PhD employment. The first post-PhD job (possibly a research post before MSU) remains unverified.",
+      "checkedAt": "2026-10-17",
+      "reason": "Second pass: the Broad College profile and the December 2025 news item on his early-career award, both behind Incapsula, were rendered in a headless browser. The news item confirms that he joined the Broad College faculty in 2021 (Cambridge Supply Chain Management PhD); the profile has no CV link and gives no positions between the 2019 Cambridge PhD and 2021, and a site search of broad.msu.edu found no appointment notice. The 2019-2021 interval (a possible first post-PhD job elsewhere) is still undocumented, so the MSU post cannot be recorded as the first job. Earlier review (2026-10-16): the MSU pages were blocked, a snippet said he joined in 2021, and ORCID listed only pre-doctoral Ministry of Defence employment and the Cambridge PhD (2014-2019).",
       "sources": [
         {
-          "url": "https://omlist.edutool.org/schools/michigan-state-university/faculty/stanley-lim.html",
-          "title": "OM List faculty directory profile",
-          "notes": "Directory profile lists the Cambridge 2019 PhD, 2024 tenure and links to the MSU profile, ORCID and LinkedIn; no employment history."
+          "url": "https://broad.msu.edu/news/stanley-lim-early-career-research-award/",
+          "title": "Stanley Lim recognized with early career research award - Broad College news (5 December 2025)",
+          "notes": "Rendered in a headless browser: 'Lim joined the Broad College of Business faculty in 2021'; Cambridge PhD, UIUC master's, Warwick MBA."
         },
         {
           "url": "https://broad.msu.edu/profile/slim",
-          "title": "Stanley Lim - Broad College of Business profile",
-          "notes": "Attempted with two fetch methods and browser-like headers; Incapsula \"Request unsuccessful\" block, no content."
-        },
-        {
-          "url": "https://broad.msu.edu/news/stanley-lim-early-career-research-award/",
-          "title": "Stanley Lim recognized with early career research award - Broad College news",
-          "notes": "Page returned empty content (bot protection); search snippet reports he joined Broad in 2021, not verified."
+          "title": "Stanley Lim - Broad College profile",
+          "notes": "Rendered in a headless browser: associate professor; degrees without years; no CV link or earlier positions."
         },
         {
           "url": "https://orcid.org/0000-0003-2211-9654",
-          "title": "ORCID record 0000-0003-2211-9654 (public API)",
-          "notes": "Employment: Ministry of Defence (Singapore) 2003-10 to 2014-09; education: Cambridge PhD 2014-2019, UIUC MCS, Warwick MBA; no post-PhD employment."
+          "title": "ORCID record 0000-0003-2211-9654",
+          "notes": "From the earlier review: Ministry of Defence (Singapore) 2003-10 to 2014-09; Cambridge PhD 2014-2019; no post-PhD employment."
         }
       ],
       "source": "omlist"
@@ -24154,16 +24285,34 @@
     {
       "facultyId": "omlist-231a0e268ac0ae85",
       "name": "Chandrasekhar (Chandu) Manchiraju",
-      "status": "unresolved",
-      "checkedAt": "2026-10-16",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "employer": "Michigan State University (Broad College of Business)",
+      "position": "Assistant Professor",
+      "placementYear": 2023,
+      "category": "tenure-track",
+      "evidenceUrl": "https://broad.msu.edu/news/new-faculty-23/",
+      "evidenceNote": "The Broad College article of 12 October 2023, written with the 2023-24 year underway, lists him among new full-time faculty who have joined, as an assistant professor in Supply Chain Management with a UT Dallas operations management Ph.D. His Broad profile gives Ph.D. Management Science 2023, The University of Texas at Dallas, so the MSU post began in the year of the degree with no room for an intervening job. Plain assistant professor title at a North American business school, recorded as tenure-track by convention.",
+      "phdYearVerified": 2023,
+      "phdInstitutionVerified": "The University of Texas at Dallas",
+      "reason": "Second pass: the Broad College profile and the news item it links, both behind Incapsula, were rendered in a headless Chromium browser. The profile has no CV link; his personal Google site gives the UT Dallas degree without a date. Earlier review (2026-10-16): the profile returned an access challenge.",
       "sources": [
         {
+          "url": "https://broad.msu.edu/news/new-faculty-23/",
+          "title": "Broad College welcomes new faculty members for 2023-24 year (12 October 2023)",
+          "notes": "Rendered in a headless browser: Manchiraju joins the Department of Supply Chain Management as an assistant professor; UT Dallas Ph.D."
+        },
+        {
           "url": "https://broad.msu.edu/profile/manchir5",
-          "title": "Chandrasekhar (Chandu) Manchiraju Profile",
-          "notes": "Michigan State faculty profile returned an access challenge rather than a readable biography; no chronology verified."
+          "title": "MSU Broad College profile - Chandu Manchiraju",
+          "notes": "Rendered in a headless browser: Assistant Professor; Education: Ph.D. Management Science 2023, UT Dallas; IIT Madras degrees 2014."
+        },
+        {
+          "url": "https://sites.google.com/view/mchandrasekhar",
+          "title": "Chandrasekhar Manchiraju - personal site",
+          "notes": "Read with curl: MSU assistant professor; UT Dallas PhD advised by Dawande and Janakiraman; no CV file."
         }
       ],
-      "reason": "Michigan State faculty profile returned an access challenge rather than a readable biography; no chronology verified.",
       "source": "omlist"
     },
     {
@@ -26703,14 +26852,27 @@
     {
       "facultyId": "omlist-c55e87b69d583dbc",
       "name": "Jafar Namdar",
-      "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "The MSU profile returned an access-protection response.",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "employer": "Massachusetts Institute of Technology",
+      "position": "Postdoctoral Associate",
+      "placementYear": 2022,
+      "category": "postdoc",
+      "evidenceUrl": "https://bps.broad.msu.edu/documents/vitas/67afb4555a16be692f8b4567-6ace8d16b2a76953184542.pdf",
+      "evidenceNote": "His CV dates the University of Iowa (Tippie) Ph.D. in Business Analytics Aug 2017-May 2022 and lists Postdoctoral Associate at the Massachusetts Institute of Technology from July 2022 to July 2024 (teaching supply chain courses), before Assistant Professor at Michigan State's Broad College from July 2024. The MIT postdoc, not the MSU post, is the first post-PhD job.",
+      "phdYearVerified": 2022,
+      "phdInstitutionVerified": "University of Iowa",
+      "reason": "Second pass: the Broad College profile behind Incapsula was rendered in a headless browser and its CV was downloaded with the session's cookies and read with pdftotext. Earlier review (2026-10-16): the profile returned an access-protection response.",
       "sources": [
         {
+          "url": "https://bps.broad.msu.edu/documents/vitas/67afb4555a16be692f8b4567-6ace8d16b2a76953184542.pdf",
+          "title": "Jafar Namdar - CV (Michigan State Broad College)",
+          "notes": "Downloaded through a headless-browser session. Academic positions: MSU Assistant Professor July 2024-present; MIT Postdoctoral Associate July 2022-July 2024. Education: Iowa Ph.D. Aug 2017-May 2022; Tennessee and Tehran M.Sc."
+        },
+        {
           "url": "https://broad.msu.edu/profile/namdarja",
-          "title": "Jafar Namdar academic profile",
-          "notes": "The MSU profile returned an access-protection response."
+          "title": "MSU Broad College profile - Jafar Namdar",
+          "notes": "Rendered in a headless browser; CV link."
         }
       ],
       "source": "omlist"
@@ -26771,13 +26933,23 @@
       "facultyId": "omlist-e3600179e335afe7",
       "name": "Sriram Narayanan",
       "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "A Michigan State CV surfaced in search results (bps.broad.msu.edu document 51391ab184ebd5a773001421.pdf) whose summary reportedly lists a UNC Kenan-Flagler PhD (2002-2007) and a Michigan State assistant professorship beginning in 2007, but the document could not be opened (HTTP 404 to the fetch tool, bot-protection stub to curl). Without reading the CV, neither the start year nor the absence of an intervening postdoc or visiting role is verified.",
+      "checkedAt": "2026-10-17",
+      "reason": "Second pass: the Broad College profile (broad.msu.edu/profile/sriram) was rendered in a headless browser; it gives the UNC doctorate without a year, says he worked at Maruti Suzuki and HCL Technologies before doctoral studies, and has no CV link. ORCID 0000-0003-2126-4227 has a single Michigan State employment entry from 2007-07 (current title Professor) and no education. The old CV document (bps.broad.msu.edu/media/documents/51391ab184ebd5a773001421.pdf) returns 404 even inside a browser session, and the UNC repository was unreachable, so the PhD year and the title and start of the first post are not confirmed from an opened source; the MSU start of July 2007 is the likely first job. Earlier review (2026-10-16): a CV seen only in search results reportedly gave a UNC PhD (2002-2007) and an MSU assistant professorship from 2007, but it could not be opened.",
       "sources": [
         {
+          "url": "https://broad.msu.edu/profile/sriram",
+          "title": "Sriram Narayanan - Broad College profile",
+          "notes": "Rendered in a headless browser: McConnell Endowed Chair; doctoral degree from UNC Chapel Hill (no year); pre-doctoral industry roles; no CV link."
+        },
+        {
+          "url": "https://orcid.org/0000-0003-2126-4227",
+          "title": "ORCID record 0000-0003-2126-4227 - Sriram Narayanan (public API)",
+          "notes": "Employment: Michigan State University, Department of Supply Chain Management, Professor, from 2007-07; no education entries."
+        },
+        {
           "url": "https://bps.broad.msu.edu/media/documents/51391ab184ebd5a773001421.pdf",
-          "title": "Narayanan CV (Michigan State)",
-          "notes": "HTTP 404 to fetch tool; curl received a bot-protection page. Content known only from search-result text."
+          "title": "Narayanan CV (older MSU document URL)",
+          "notes": "Attempted inside a headless-browser session: 404."
         }
       ],
       "source": "omlist"
@@ -27374,23 +27546,23 @@
       "facultyId": "omlist-76ef2b91ce059cbd",
       "name": "Gilbert Nyaga",
       "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "Northeastern's D'Amore-McKim profile lists the Michigan State PhD (Marketing & Logistics), Miami University MBA/MA and University of Nairobi BA without years and gives no appointment dates (earliest dated item: Joe Dichiacchio Faculty Fellow award, 1 September 2010). The Michigan State logistics PhD placement page, which a search snippet reports as listing a 2005 graduation (marketing major, logistics minor) and a Northeastern assistant professorship, is blocked by Incapsula bot protection for both fetch methods, so neither the degree year (imported 2006 versus reported 2005) nor the first appointment could be confirmed from an opened source.",
+      "checkedAt": "2026-10-17",
+      "reason": "Second pass: the Michigan State logistics PhD placements page, blocked by Incapsula before, was rendered in a headless browser. It says G. Nyaga graduated from Michigan State in 2005 (major marketing, minor logistics) and 'is currently an assistant professor at Northeastern University', which is an undated current-position statement rather than a dated first placement; ORCID 0000-0002-6693-1794 is empty and the Northeastern profile gives no appointment dates. Verifier: the page's 2005 graduation year differs from the imported 2006. Earlier review (2026-10-16): the Northeastern profile gave degrees without years and the MSU placement page could not be opened.",
       "sources": [
         {
-          "url": "https://omlist.edutool.org/schools/northeastern-university/faculty/gilbert-nyaga.html",
-          "title": "OM List faculty directory profile",
-          "notes": "Directory profile lists the Michigan State 2006 PhD and 2012 tenure; links to the Northeastern profile, Google Scholar and LinkedIn."
+          "url": "https://broad.msu.edu/phd/logistics/students-placements/",
+          "title": "Michigan State Broad College - Logistics & Supply Chain Placements",
+          "notes": "Rendered in a headless browser: graduated from Michigan State in 2005, marketing major and logistics minor; 'currently an assistant professor at Northeastern University' (page undated)."
         },
         {
           "url": "https://damore-mckim.northeastern.edu/people/gilbert-nyaga/",
-          "title": "Gilbert Nyaga - Northeastern University D'Amore-McKim School of Business profile",
-          "notes": "Associate Professor, Supply Chain & Information Management; degrees without years; no appointment dates."
+          "title": "Gilbert Nyaga - Northeastern D'Amore-McKim profile",
+          "notes": "From the earlier review: degrees without years; earliest dated item a 2010 faculty fellowship."
         },
         {
-          "url": "https://broad.msu.edu/phd/logistics/students-placements/",
-          "title": "Michigan State University Broad College - logistics PhD students and placements",
-          "notes": "Incapsula \"Request unsuccessful\" block with both fetch methods; search snippet reports a 2005 graduation and Northeastern assistant professorship, not verified."
+          "url": "https://orcid.org/0000-0002-6693-1794",
+          "title": "ORCID record 0000-0002-6693-1794 - Gilbert Nyaga",
+          "notes": "Public API: no entries."
         }
       ],
       "source": "omlist"
@@ -28998,22 +29170,27 @@
       "name": "Yijie Peng",
       "status": "unresolved",
       "checkedAt": "2026-10-17",
-      "reason": "A search result summarising an x-mol faculty page reports a Fudan management-school PhD (2010.09-2014.07) followed by a Fudan postdoc (2014-2015), a University of Maryland postdoc (2015-2016), a George Mason research assistant professorship (2016.03-2017.08) and Peking University from 2017.08; this is a lead only, because the x-mol page opened as a login wall and the Peking University GSM profile could not be read (curl TLS chain error, WebFetch 503, archive fetch refused). ORCID has no entries. The first post-PhD job (probably a Fudan postdoc) remains to be confirmed from a primary page.",
+      "reason": "Second pass: the Guanghua profile pages (English and Chinese) were read through the r.jina.ai reader proxy because the host resets direct connections; both draw their content from a JSON endpoint, and the endpoints (getjsoncs_en.jsp and getjsoncs.jsp with user_id=pengyijie, as the pages request) return data: null, so no biography or career entries could be read. The Fudan postdoc and later posts reported by an earlier search summary remain unconfirmed from a primary page. Earlier review (2026-10-17): a search summary of an x-mol page gave a Fudan PhD (2010-2014) followed by a Fudan postdoc, but the x-mol page was a login wall and the PKU profile could not be read.",
       "sources": [
         {
           "url": "http://en.gsm.pku.edu.cn/faculty/pengyijie/",
-          "title": "Peking University Guanghua School of Management profile (English)",
-          "notes": "Attempted: curl failed TLS verification (incomplete certificate chain) and WebFetch returned 503; Chinese version also 503."
+          "title": "Peking University Guanghua - Yijie Peng (English profile)",
+          "notes": "Read through r.jina.ai: empty template; its JSON endpoint returns data null."
+        },
+        {
+          "url": "https://www.gsm.pku.edu.cn/faculty/pengyijie/",
+          "title": "Peking University Guanghua - Yijie Peng (Chinese profile)",
+          "notes": "Read through r.jina.ai: empty template; its JSON endpoint returns data null."
         },
         {
           "url": "https://x-mol.com/university/faculty/83129",
           "title": "x-mol faculty page (Yijie Peng)",
-          "notes": "Opened with curl and WebFetch: login page only; the chronology seen in a search summary could not be read on the page."
+          "notes": "From the earlier review: login wall."
         },
         {
           "url": "https://orcid.org/0000-0003-2584-8131",
-          "title": "ORCID record 0000-0003-2584-8131, public API",
-          "notes": "No employment or education entries."
+          "title": "ORCID record 0000-0003-2584-8131",
+          "notes": "From the earlier review: no entries."
         }
       ],
       "source": "omlist"
@@ -30437,19 +30614,32 @@
     {
       "facultyId": "omlist-ee2ca67c55693780",
       "name": "David Rea",
-      "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "The Lehigh biography lists degrees without dates; the personal vitae page returned only a heading and print link.",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "employer": "Lehigh University (College of Business)",
+      "position": "Assistant Professor",
+      "placementYear": 2021,
+      "category": "tenure-track",
+      "evidenceUrl": "https://davidjrea.github.io/DavidRea_CV_website.pdf",
+      "evidenceNote": "His CV gives the University of Cincinnati Ph.D. in Operations and Business Analytics, 2021, and lists Assistant Professor, Decision and Technology Analytics, College of Business, Lehigh University from Aug. 2021. Its 'full employment history' (stated to include all paid activities since undergraduate studies) shows only doctoral research (2016-2021), a 2016 GE Aviation consultancy and earlier pre-doctoral roles, so the Lehigh post is the first post-PhD job.",
+      "phdYearVerified": 2021,
+      "phdInstitutionVerified": "University of Cincinnati",
+      "reason": "Second pass: the vitae page embeds DavidRea_CV_website.pdf; the PDF was downloaded with curl and read with pdftotext. Earlier review (2026-10-16): the Lehigh biography lists degrees without dates and the vitae page returned only a heading and a print link.",
       "sources": [
         {
+          "url": "https://davidjrea.github.io/DavidRea_CV_website.pdf",
+          "title": "David Rea - curriculum vitae (personal site)",
+          "notes": "Academic appointments: Lehigh Assistant Professor and College of Health affiliated faculty, Aug. 2021-present. Full employment history and education: Ph.D. Cincinnati 2021."
+        },
+        {
           "url": "https://davidjrea.github.io/vitae.html",
-          "title": "David Rea academic profile",
-          "notes": "The Lehigh biography lists degrees without dates; the personal vitae page returned only a heading and print link."
+          "title": "David Rea - Vitae page",
+          "notes": "Page embeds and links the CV PDF."
         },
         {
           "url": "https://business.lehigh.edu/directory/david-rea",
-          "title": "David Rea academic profile",
-          "notes": "The Lehigh biography lists degrees without dates; the personal vitae page returned only a heading and print link."
+          "title": "Lehigh directory - David Rea",
+          "notes": "From the earlier review: degrees without dates."
         }
       ],
       "source": "omlist"
@@ -32507,19 +32697,32 @@
     {
       "facultyId": "omlist-c2a252f859a4342e",
       "name": "Serpil Sayın",
-      "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "Both linked Koç academic pages returned access-denied responses.",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "employer": "Bilkent University (Faculty of Business Administration)",
+      "position": "Assistant Professor",
+      "placementYear": 1992,
+      "category": "unknown",
+      "evidenceUrl": "https://orcid.org/0000-0002-3672-0769",
+      "evidenceNote": "ORCID lists the University of Florida PhD in Decision and Information Sciences (1988-08 to 1992-08) and employment as Assistant Prof. in Business Administration at Bilkent University from 1992-09 to 1996-08, then Koç University from 1996-09. Her Koç personal site likewise says she completed the Florida PhD in 1992 and worked as an assistant professor at Bilkent until July 1996. A Turkish assistant-professor title is recorded as unknown under the convention for posts outside North American and Asian business schools.",
+      "phdYearVerified": 1992,
+      "phdInstitutionVerified": "University of Florida",
+      "reason": "Second pass: the Koç personal site that refused the fetch tool was read with a plain browser-UA curl request, and the ORCID public API record dates both the degree and the Bilkent appointment. Earlier review (2026-10-16): both linked Koç pages returned access-denied responses.",
       "sources": [
         {
-          "url": "https://gsb.ku.edu.tr/about-gsb/full-time/?detail=true&id=ssayin",
-          "title": "Serpil Sayın academic profile",
-          "notes": "Both linked Koç academic pages returned access-denied responses."
+          "url": "https://orcid.org/0000-0002-3672-0769",
+          "title": "ORCID record 0000-0002-3672-0769 - Serpil Sayin (public API)",
+          "notes": "Education: University of Florida PhD, 1988-08 to 1992-08. Employment: Bilkent Universitesi, Business Administration, Assistant Prof., 1992-09 to 1996-08; Koc Universitesi, Prof, from 1996-09."
         },
         {
           "url": "https://mysite.ku.edu.tr/ssayin/",
-          "title": "Serpil Sayın academic profile",
-          "notes": "Both linked Koç academic pages returned access-denied responses."
+          "title": "Serpil Sayın - Koç University personal site",
+          "notes": "Read with browser-UA curl (fetch tool and reader proxy blocked). Completed Ph.D. studies at Florida in 1992; assistant professor at Bilkent until July 1996; then Koç."
+        },
+        {
+          "url": "https://gsb.ku.edu.tr/about-gsb/full-time/?detail=true&id=ssayin",
+          "title": "Koç GSB faculty profile (id=ssayin)",
+          "notes": "From the earlier review: access denied to the fetch tool."
         }
       ],
       "source": "omlist"
@@ -32780,15 +32983,25 @@
       "facultyId": "omlist-43fc974cc1cd09c4",
       "name": "Tobias Schoenherr",
       "status": "unresolved",
-      "checkedAt": "2026-10-16",
+      "checkedAt": "2026-10-17",
+      "reason": "Second pass: the Broad College profile was rendered in a headless browser and its linked CV downloaded with the session's cookies, but it is an 'Abbreviated CV' (20 March 2020) with publications and honours only, no education or employment sections; it mentions Eastern Michigan University awards for 2005-2006 and 2007 and an Indiana University doctoral award for 2003-2004, which suggest but do not date an Eastern Michigan appointment. ORCID 0000-0003-4958-189X lists only the MSU endowed professorship from 2018-08. The first post-PhD job and its start year remain unestablished. Earlier review (2026-10-16): the Michigan State profile returned an access challenge and no chronology was read.",
       "sources": [
         {
+          "url": "https://bps.broad.msu.edu/documents/vitas/5e7540b05a16beb0508b4567-6ace8d8df3641338477560.pdf",
+          "title": "Tobias Schoenherr - Abbreviated CV, March 20, 2020 (Michigan State Broad College)",
+          "notes": "Downloaded through a headless-browser session: publications and honours only; Eastern Michigan research awards 2005-2006 and a 2007 nomination; Indiana University award 2003-2004; no positions or degree dates."
+        },
+        {
           "url": "https://broad.msu.edu/profile/schoen48",
-          "title": "Tobias Schoenherr Profile",
-          "notes": "Michigan State faculty profile returned an access challenge; no readable degree and early job chronology."
+          "title": "Tobias Schoenherr - Broad College profile",
+          "notes": "Rendered in a headless browser; CV link."
+        },
+        {
+          "url": "https://orcid.org/0000-0003-4958-189X",
+          "title": "ORCID record 0000-0003-4958-189X - Tobias Schoenherr (public API)",
+          "notes": "Employment: Michigan State University, Hoagland-Metzler Endowed Professor, from 2018-08; nothing earlier."
         }
       ],
-      "reason": "Michigan State faculty profile returned an access challenge; no readable degree and early job chronology.",
       "source": "omlist"
     },
     {
@@ -34204,18 +34417,28 @@
       "facultyId": "omlist-8bd38b90f30e478d",
       "name": "Melvyn Sim",
       "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "The NUS profile returned an application shell and the publicly linked Dropbox CV could not be retrieved in readable form.",
+      "checkedAt": "2026-10-17",
+      "reason": "Second pass: the Dropbox CV now reports 'File Deleted'; discovery.nus.edu.sg/768 was rendered in a headless browser and shows only appointments from 2016 onward and the MIT doctorate (dated 1 Jan 2004); ORCID 0000-0001-9798-2482 gives the MIT Operations Research PhD 2000-07 to 2004-06 but no employment; the MIT ORC 2003-04 report to the President names no graduate placements. When he joined NUS, and in what post, is undocumented. Earlier review (2026-10-16): the NUS profile returned an application shell and the Dropbox CV could not be retrieved in readable form.",
       "sources": [
         {
-          "url": "https://www.dropbox.com/scl/fi/hnvp6s3vxuspdxik6ns6m/MELVYN_CV.pdf?rlkey=b8xy223qxrgsl0cm4wn2hpd3p&dl=0",
-          "title": "Melvyn Sim academic profile",
-          "notes": "The NUS profile returned an application shell and the publicly linked Dropbox CV could not be retrieved in readable form."
+          "url": "https://discovery.nus.edu.sg/768",
+          "title": "NUS Discovery - Melvyn Sim",
+          "notes": "Rendered in a headless browser: Provost's Chair (Apr 2016), Professor (2023); Doctor of Philosophy, MIT (1 Jan 2004); CV link to Dropbox."
         },
         {
-          "url": "https://discovery.nus.edu.sg/768",
-          "title": "Melvyn Sim academic profile",
-          "notes": "The NUS profile returned an application shell and the publicly linked Dropbox CV could not be retrieved in readable form."
+          "url": "https://www.dropbox.com/scl/fi/hnvp6s3vxuspdxik6ns6m/MELVYN_CV.pdf?rlkey=b8xy223qxrgsl0cm4wn2hpd3p&dl=0",
+          "title": "Melvyn Sim CV (Dropbox link from NUS profile)",
+          "notes": "Requested with dl=1 and raw=1: Dropbox 'File Deleted' page."
+        },
+        {
+          "url": "https://orcid.org/0000-0001-9798-2482",
+          "title": "ORCID record 0000-0001-9798-2482 - Melvyn Sim (public API)",
+          "notes": "Education: MIT Operations Research PhD 2000-07 to 2004-06. No employment."
+        },
+        {
+          "url": "https://dspace.mit.edu/handle/1721.1/163815",
+          "title": "MIT Report to the President for year ended June 30, 2004 - Operations Research Center",
+          "notes": "PDF read: eight PhDs conferred in 2003-04; no names or placements."
         }
       ],
       "source": "omlist"
@@ -36613,27 +36836,22 @@
       "name": "Sri Talluri",
       "status": "unresolved",
       "checkedAt": "2026-10-17",
-      "reason": "No dated chronology was opened. The Broad College profile and the vita PDF linked from the OM List could not be read (the profile is behind bot protection and returned an empty page to WebFetch; the vita URL returns 404), ORCID has only an undated Michigan State entry, and the MSU Today article on his 2019 DSI fellowship gives no career history. The first post-PhD job after the UT Arlington doctorate (imported as 1996) is undocumented.",
+      "reason": "Second pass: the Broad College profile was rendered in a headless browser; its biography gives the UT Arlington Ph.D. in Production and Operations Management (1996) but no positions before Michigan State, and it has no CV link. A web search surfaced MSU CV documents whose summary (discovery only, not opened) reports a UT Arlington visiting assistant professorship from Fall 1996 to Summer 1997, then Fairleigh Dickinson University 1997-2000 and Michigan State from 2000; all nine bps.broad.msu.edu/media/documents/ URLs returned 404 even inside a browser session, and archived copies could not be reached. The first post-PhD job is therefore still not confirmed from an opened source. Earlier review (2026-10-17): the profile and vita could not be read, and ORCID and an MSU Today article gave no dated career history.",
       "sources": [
         {
           "url": "https://broad.msu.edu/profile/talluri",
-          "title": "MSU Broad College profile: Sri Talluri",
-          "notes": "Attempted: curl blocked by Incapsula; WebFetch returned empty content."
+          "title": "Srinivas (Sri) Talluri - Broad College profile",
+          "notes": "Rendered in a headless browser: B.S. 1989, UT Arlington M.S. 1992 and Ph.D. 1996; Hoagland-Metzler Endowed Professor August 2018-November 2025; no earlier positions; no CV link."
         },
         {
-          "url": "https://bps.broad.msu.edu/media/documents/6856c73b5a16be26488b4567.pdf",
-          "title": "Vita link from the OM List profile",
-          "notes": "Attempted with curl and WebFetch: 404 Not Found."
+          "url": "https://bps.broad.msu.edu/media/documents/543fa18f10edd5ec10c85e33.pdf",
+          "title": "MSU CV document surfaced by search (one of nine tried)",
+          "notes": "Attempted inside a headless-browser session: 404, like the other eight media/documents URLs from the search."
         },
         {
           "url": "https://orcid.org/0000-0003-1338-6902",
-          "title": "ORCID record 0000-0003-1338-6902 (Srinivas Talluri), public API",
-          "notes": "Single undated Michigan State University employment entry."
-        },
-        {
-          "url": "https://msutoday.msu.edu/news/2019/12/supply-chain-professor-becomes-decision-sciences-institute-fellow",
-          "title": "MSU Today: supply chain professor becomes Decision Sciences Institute Fellow (2019)",
-          "notes": "DSI membership of more than 23 years; no positions or dates."
+          "title": "ORCID record 0000-0003-1338-6902 (Srinivas Talluri)",
+          "notes": "From the earlier review: single undated Michigan State entry."
         }
       ],
       "source": "omlist"
@@ -37158,24 +37376,37 @@
     {
       "facultyId": "omlist-e5fa98fed6c747e1",
       "name": "Leann Thayaparan",
-      "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "A search-result snippet of a JHU Health Behavior and Health Interventions page said she joined Carey in Fall 2024 as an assistant professor, but the page itself and the Carey profile returned HTTP 403 and no CV, MIT placement page or thesis record could be opened. The PhD completion date (imported 2024) and whether a postdoc or other post preceded Carey are unverified; the snippet is discovery only.",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "employer": "Johns Hopkins University (Carey Business School)",
+      "position": "Assistant Professor",
+      "placementYear": 2024,
+      "category": "tenure-track",
+      "evidenceUrl": "https://hbhi.jhu.edu/node/575",
+      "evidenceNote": "The Hopkins Business of Health Initiative core-faculty page states that she joined the Carey Business School as an Assistant Professor in Fall 2024 and holds an MIT PhD in Operations Research. MIT DSpace records her Ph.D. thesis as issued 2024-05, so the Carey post began a few months after the degree and no intervening job fits. Plain assistant professor title at a North American business school, recorded as tenure-track by convention.",
+      "phdYearVerified": 2024,
+      "phdInstitutionVerified": "Massachusetts Institute of Technology",
+      "reason": "Second pass: the HBHI page that refused the fetch tool was read through the r.jina.ai reader proxy and dates the Carey start to Fall 2024; the MIT DSpace REST API dates the doctoral thesis to May 2024. The Carey profile URL used earlier now returns a not-found page through the proxy. Earlier review (2026-10-16): only a search snippet of the HBHI page was seen and the Carey profile returned 403, so the 2024 degree and the start of the Carey post were unverified.",
       "sources": [
         {
           "url": "https://hbhi.jhu.edu/node/575",
-          "title": "JHU HBHI core faculty page (attempted)",
-          "notes": "HTTP 403; only a search snippet seen, not verified."
+          "title": "JHU Hopkins Business of Health Initiative - Leann Thayaparan, PhD (core faculty)",
+          "notes": "Read through the r.jina.ai reader proxy because the site answers 403 to automated fetches. Joined Carey as Assistant Professor in Fall 2024; PhD in Operations Research and Master's in Business Analytics from MIT."
+        },
+        {
+          "url": "https://dspace.mit.edu/handle/1721.1/155474",
+          "title": "MIT DSpace - Analytics and Decision Making in Sustainable Operations (Thayaparan, Leann), Ph.D. thesis",
+          "notes": "Read through the DSpace REST API (discover/search): dc.date.issued 2024-05, degree Ph.D., Doctoral."
+        },
+        {
+          "url": "https://dspace.mit.edu/handle/1721.1/156209",
+          "title": "MIT Operations Research Center, Report to the President for year ended June 30, 2024",
+          "notes": "PDF read: the year's graduates were placed as Assistant Professors at institutions including Johns Hopkins (no names); lists her as a PhD student winning 2024 paper-competition recognitions. Corroboration only."
         },
         {
           "url": "https://orcid.org/0000-0001-6768-0467",
           "title": "ORCID record - Leann Thayaparan",
-          "notes": "Opened: JHU assistant professor (Carey), no dates."
-        },
-        {
-          "url": "https://orc.mit.edu/admissions/placement/",
-          "title": "MIT ORC placement page",
-          "notes": "Opened: generic placement summary; no individual entries."
+          "notes": "From the earlier review: JHU Carey assistant professor entry without dates."
         }
       ],
       "source": "omlist"
@@ -38819,19 +39050,34 @@
     {
       "facultyId": "omlist-bd4efdc95fb487c3",
       "name": "Shawnee Vickery",
-      "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "The MSU profile returned an access-protection response and its linked legacy Word CV returned no readable text.",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "employer": "Michigan State University (College of Business Administration)",
+      "position": "Assistant Professor of Operations Management",
+      "placementYear": 1984,
+      "category": "tenure-track",
+      "evidenceUrl": "https://bps.broad.msu.edu/documents/vitas/5d1664ef10edd59f7459dc62-6ace8e08006b0066313644.doc",
+      "evidenceNote": "Her MSU vita gives the Ph.D. in Business Administration (Management Science), University of South Carolina, 1983, and lists Assistant Professor of Operations Management, Department of Management, Michigan State, 1984-1989, rising to professor there; it also lists a 1983 post as Production Consultant at Burroughs Wellcome Co. Her ORCID dates the South Carolina PhD 1978-08 to 1983-12 and her Michigan State employment from 1983-12, which places the 1983 consultancy before the December 1983 degree. The MSU assistant professorship is the first post-PhD job; the CV's 1984 start is recorded (ORCID gives 1983-12 for joining MSU).",
+      "phdYearVerified": 1983,
+      "phdInstitutionVerified": "University of South Carolina",
+      "phdYearResolution": "Her vita and ORCID both date the doctorate to 1983 (ORCID: 1978-08 to 1983-12); the OM List import gives 1995, which matches no degree in her record (1995 is when she became full professor at MSU).",
+      "phdInstitutionResolution": "Her vita and ORCID give the Ph.D. from the University of South Carolina; the OM List import gives Michigan State University, which is her employer since 1983-84, not her degree institution.",
+      "reason": "Second pass: the Broad College profile was rendered in a headless browser and its legacy Word vita was downloaded with the session's cookies and converted with LibreOffice; ORCID was read through the public API. Verifier: the start year is 1984 on the CV and 1983-12 on ORCID. Earlier review (2026-10-16): the profile was blocked and the Word CV gave no readable text.",
       "sources": [
         {
-          "url": "https://bps.broad.msu.edu/media/documents/5d1664ef10edd59f7459dc62.doc",
-          "title": "Shawnee Vickery academic profile",
-          "notes": "The MSU profile returned an access-protection response and its linked legacy Word CV returned no readable text."
+          "url": "https://bps.broad.msu.edu/documents/vitas/5d1664ef10edd59f7459dc62-6ace8e08006b0066313644.doc",
+          "title": "Shawnee K. Vickery - vita (Michigan State Broad College)",
+          "notes": "Downloaded through a headless-browser session and converted to text. Experience: MSU Assistant Professor of Operations Management 1984-1989, Associate Professor 1989-1995, Professor 1995-; Burroughs Wellcome Co. Production Consultant 1983. Education: Ph.D. Business Administration, University of South Carolina, 1983."
+        },
+        {
+          "url": "https://orcid.org/0000-0001-7405-2581",
+          "title": "ORCID record 0000-0001-7405-2581 - Shawnee Vickery (public API)",
+          "notes": "Education: University of South Carolina, PhD in Business Administration, 1978-08 to 1983-12. Employment: Michigan State University, from 1983-12."
         },
         {
           "url": "https://broad.msu.edu/profile/vickery",
-          "title": "Shawnee Vickery academic profile",
-          "notes": "The MSU profile returned an access-protection response and its linked legacy Word CV returned no readable text."
+          "title": "MSU Broad College profile - Shawnee Vickery",
+          "notes": "Rendered in a headless browser; vita link."
         }
       ],
       "source": "omlist"
@@ -40146,19 +40392,37 @@
     {
       "facultyId": "omlist-406527affa56976e",
       "name": "Don Warsing",
-      "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "NCSU biography lists prior Penn State and IBM roles without dates; personal site links a public CV that could not be opened by the web reader.",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "employer": "Pennsylvania State University (Smeal College of Business)",
+      "position": "Assistant Professor, Operations and Supply Chain Management",
+      "placementYear": 2000,
+      "category": "tenure-track",
+      "evidenceUrl": "https://drive.google.com/file/d/15bdfSNZ58ubFhkEelf01YG2dhhBtEbLp/view",
+      "evidenceNote": "His vita gives the Ph.D. in Business Administration (Operations Management), University of North Carolina at Chapel Hill, 2000, and lists Assistant Professor, Operations and Supply Chain Management, Pennsylvania State University, 2000-2003, then North Carolina State from 2003. The NC State bio mentions undated IBM industrial-engineering roles; since the vita's appointments run continuously from 2000, the IBM work preceded the doctorate. Plain assistant professor title at a North American business school, recorded as tenure-track by convention.",
+      "phdYearVerified": 2000,
+      "phdInstitutionVerified": "University of North Carolina at Chapel Hill",
+      "reason": "Second pass: the 'Link to vita' Drive file on his Google Sites page was downloaded with curl through Drive's export-download endpoint and read with pdftotext; ORCID also gives the UNC Ph.D. ending 2000. Earlier review (2026-10-16): the NC State biography listed Penn State and IBM without dates and the linked CV could not be opened.",
       "sources": [
         {
-          "url": "https://poole.ncsu.edu/people/dpwarsin/",
-          "title": "Don Warsing public academic profile",
-          "notes": "NCSU biography lists prior Penn State and IBM roles without dates; personal site links a public CV that could not be opened by the web reader."
+          "url": "https://drive.google.com/file/d/15bdfSNZ58ubFhkEelf01YG2dhhBtEbLp/view",
+          "title": "Donald P. Warsing, Jr. - vita (Google Drive, linked from his site)",
+          "notes": "Downloaded via the uc?export=download endpoint. Education: UNC Ph.D. 2000; NCSU M.S. 1995; Ohio State B.S. 1989. Appointments: Penn State Assistant Professor 2000-2003; NCSU Assistant Professor 2003-2009, Associate Professor 2009-present."
         },
         {
           "url": "https://sites.google.com/ncsu.edu/dp-warsing/home",
-          "title": "Don Warsing public academic profile",
-          "notes": "NCSU biography lists prior Penn State and IBM roles without dates; personal site links a public CV that could not be opened by the web reader."
+          "title": "Don Warsing - personal site",
+          "notes": "Read with curl; 'Link to vita'."
+        },
+        {
+          "url": "https://poole.ncsu.edu/people/dpwarsin/",
+          "title": "NC State Poole College profile - Don Warsing",
+          "notes": "Read with curl: prior to NC State he was on the Penn State Smeal faculty and worked for IBM; no dates."
+        },
+        {
+          "url": "https://orcid.org/0000-0002-1306-6477",
+          "title": "ORCID record 0000-0002-1306-6477 - Donald Warsing (public API)",
+          "notes": "Education: UNC Kenan-Flagler Ph.D. ending 2000. Employment: NCSU, undated."
         }
       ],
       "source": "omlist"
@@ -40979,13 +41243,23 @@
       "facultyId": "omlist-7be4f71152660f0c",
       "name": "Yaozhong Wu",
       "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "The linked NUS page returned only an application shell without a readable biography.",
+      "checkedAt": "2026-10-17",
+      "reason": "Second pass: discovery.nus.edu.sg/1319-yaozhong-wu was rendered in a headless browser and shows only the current Associate Professor appointment (from 2022) with no biography, degrees or CV; ORCID 0000-0002-3300-5815 has a single undated NUS Decision Sciences entry; the INSEAD PhD alumni pages answer 403 / a Cloudflare check to curl and the reader proxy. The first job after the 2006 INSEAD doctorate (imported) is undocumented. Earlier review (2026-10-16): the NUS page returned only an application shell without a biography.",
       "sources": [
         {
           "url": "https://discovery.nus.edu.sg/1319-yaozhong-wu/",
-          "title": "Yaozhong Wu academic profile",
-          "notes": "The linked NUS page returned only an application shell without a readable biography."
+          "title": "NUS Discovery - Yaozhong Wu",
+          "notes": "Rendered in a headless browser: Associate Professor, Analytics and Operations (appointment shown from 1 Jan 2022); no bio, degrees or CV."
+        },
+        {
+          "url": "https://orcid.org/0000-0002-3300-5815",
+          "title": "ORCID record 0000-0002-3300-5815 - Yaozhong Wu (public API)",
+          "notes": "Single undated National University of Singapore, Decision Sciences employment entry; no education."
+        },
+        {
+          "url": "https://www.insead.edu/phd/alumni",
+          "title": "INSEAD PhD alumni page (attempted)",
+          "notes": "403 to curl; Cloudflare check through r.jina.ai."
         }
       ],
       "source": "omlist"
@@ -43249,16 +43523,29 @@
     {
       "facultyId": "omlist-74ea328c8e7b2714",
       "name": "Han Zhang",
-      "status": "unresolved",
-      "checkedAt": "2026-10-16",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "employer": "Michigan State University (Broad College of Business)",
+      "position": "Assistant Professor",
+      "placementYear": 2020,
+      "category": "tenure-track",
+      "evidenceUrl": "https://bps.broad.msu.edu/documents/vitas/6908d3a05a16bee9068b4567-6ace8e460e2ac710562857.pdf",
+      "evidenceNote": "His CV gives the Ph.D. in Business (Operations Management), Kelley School of Business, Indiana University Bloomington, 2020, and lists academic experience as Assistant Professor, Eli Broad College of Business, Michigan State University, 2020-, with no intervening post. Plain assistant professor title at a North American business school, recorded as tenure-track by convention.",
+      "phdYearVerified": 2020,
+      "phdInstitutionVerified": "Indiana University Bloomington",
+      "reason": "Second pass: the Broad College profile behind Incapsula was rendered in a headless browser and its CV was downloaded with the session's cookies and read with pdftotext. Identity: the Kelley dissertation committee (Aydin, Parker) and the MSU address match. Earlier review (2026-10-16): the profile returned an access-security error page.",
       "sources": [
         {
+          "url": "https://bps.broad.msu.edu/documents/vitas/6908d3a05a16bee9068b4567-6ace8e460e2ac710562857.pdf",
+          "title": "Han Zhang - CV (Michigan State Broad College)",
+          "notes": "Downloaded through a headless-browser session. Education: Ph.D. Business, Kelley, Indiana University Bloomington, 2020. Academic experience: MSU Assistant Professor 2020-; affiliate 2021-."
+        },
+        {
           "url": "https://broad.msu.edu/profile/zhan1792",
-          "title": "Han Zhang Profile",
-          "notes": "Michigan State profile returned an access-security error page, not a readable career chronology."
+          "title": "MSU Broad College profile - Han Zhang",
+          "notes": "Rendered in a headless browser; CV link."
         }
       ],
-      "reason": "Michigan State profile returned an access-security error page, not a readable career chronology.",
       "source": "omlist"
     },
     {
@@ -44987,21 +45274,34 @@
     {
       "facultyId": "omlist-55a17243f671e745",
       "name": "Erhun Özkan",
-      "status": "unresolved",
-      "checkedAt": "2026-10-16",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "employer": "Koç University",
+      "position": "Assistant Professor",
+      "placementYear": 2018,
+      "category": "unknown",
+      "evidenceUrl": "https://orcid.org/0000-0001-6870-9495",
+      "evidenceNote": "ORCID (linked from his Koç GSB profile) lists the USC Data Sciences and Operations Ph.D. from 2013-08 to 2018-08 and a single employment, Assistant Professor in Business Administration at Koç University from 2018-09; the Koç GSB profile gives PhD University of Southern California, 2018. A Turkish assistant-professor title is recorded as unknown under the convention for posts outside North American and Asian business schools.",
+      "phdYearVerified": 2018,
+      "phdInstitutionVerified": "University of Southern California",
+      "reason": "Second pass: the Koç GSB profile that refused the fetch tool was read with browser-UA curl and links his ORCID iD, whose public-API record dates the degree and the Koç start. Earlier review (2026-10-16): the Koç profile returned 403 and the personal Google site redirected to a sign-in page.",
       "sources": [
         {
+          "url": "https://orcid.org/0000-0001-6870-9495",
+          "title": "ORCID record 0000-0001-6870-9495 - Erhun Ozkan (public API)",
+          "notes": "Education: USC Data Sciences and Operations Ph.D., 2013-08 to 2018-08; Eindhoven and METU master's; METU BSc. Employment: Koç University, Business Administration, Assistant Professor, from 2018-09."
+        },
+        {
           "url": "https://gsb.ku.edu.tr/about-gsb/full-time/?detail=true&id=erhozkan",
-          "title": "Erhun Özkan Profile",
-          "notes": "Fetch failed: HTTP Error 403: Forbidden"
+          "title": "Koç GSB faculty profile - Erhun Özkan",
+          "notes": "Read with browser-UA curl. Asst. Prof.; Education: 2018 PhD University of Southern California; 2010 master's and 2008 bachelor's METU; links to ORCID and personal site."
         },
         {
           "url": "https://sites.google.com/site/erhunozkan/",
-          "title": "Erhun Özkan Website",
-          "notes": "Koc profile returned 403 and linked personal site redirects to sign-in; no readable primary chronology."
+          "title": "Erhun Özkan personal site",
+          "notes": "From the earlier review: redirected to sign-in."
         }
       ],
-      "reason": "Koc profile returned 403 and linked personal site redirects to sign-in; no readable primary chronology.",
       "source": "omlist"
     },
     {
@@ -45035,16 +45335,34 @@
     {
       "facultyId": "omlist-01da0add52ed7055",
       "name": "Nikolaos Kourentzes",
-      "status": "unresolved",
-      "checkedAt": "2026-10-16",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "employer": "Lancaster University (Department of Management Science)",
+      "position": "Post-Doctorate Research Associate",
+      "placementYear": 2009,
+      "category": "postdoc",
+      "evidenceUrl": "http://kourentzes.com/forecasting/wp-content/uploads/2020/05/CV_Nikolaos-Kourentzes_v5.pdf",
+      "evidenceNote": "His CV dates the Lancaster PhD in Management Science 10/2006-12/2009 and lists a Research Associate post at the Lancaster Centre for Forecasting 10/2006-10/2009 (held during the doctorate), then Post-Doctorate Research Associate in the Department of Management Science 10/2009-09/2011 and Assistant Professor 09/2011-07/2015. The explicitly post-doctoral post began in October 2009, two months before the December 2009 degree date, and counts as the first post-PhD job under the overlap rule. No non-academic employment is listed.",
+      "phdYearVerified": 2009,
+      "phdInstitutionVerified": "Lancaster University",
+      "reason": "Second pass: kourentzes.com only redirects to a browser game demo, but his research site kourentzes.com/forecasting/about/ links a downloadable CV, read with curl and pdftotext. Earlier review (2026-10-16): the linked homepage gave only a redirection page without a chronology.",
       "sources": [
         {
+          "url": "http://kourentzes.com/forecasting/wp-content/uploads/2020/05/CV_Nikolaos-Kourentzes_v5.pdf",
+          "title": "Curriculum vitae of Nikolaos Kourentzes (v5, 2020)",
+          "notes": "Education: PhD Management Science, Lancaster, 10/2006-12/2009. Academic positions: Research Associate 10/2006-10/2009; Post-Doctorate Research Associate 10/2009-09/2011; Assistant Professor 09/2011-07/2015; later posts at Lancaster, SSE and Skövde."
+        },
+        {
+          "url": "https://kourentzes.com/forecasting/about/",
+          "title": "About - Nikolaos Kourentzes (forecasting research site)",
+          "notes": "Current Skövde and Lancaster affiliations; 'Download CV' link to the PDF above."
+        },
+        {
           "url": "https://kourentzes.com",
-          "title": "Nikolaos Kourentzes public academic profile",
-          "notes": "Linked personal homepage provides only a redirection page, without degree and appointment chronology."
+          "title": "kourentzes.com root",
+          "notes": "Redirects to kourentzes.com/ssl/main/, an HTML5 game demo with no academic content."
         }
       ],
-      "reason": "Linked personal homepage provides only a redirection page, without degree and appointment chronology.",
       "source": "omlist"
     },
     {
@@ -45611,31 +45929,59 @@
     {
       "facultyId": "omlist-d9c86110c013b256",
       "name": "Steven Melnyk",
-      "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "The MSU profile returned an access-protection response.",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "employer": "Michigan State University (Graduate School of Business Administration)",
+      "position": "Assistant Professor, Production/Operations Management",
+      "placementYear": 1980,
+      "category": "tenure-track",
+      "evidenceUrl": "https://bps.broad.msu.edu/documents/vitas/5a733c7c10edd56de0d6ef7e-6ace8cd1aa38f763640786.docx",
+      "evidenceNote": "His vita (current as of October 2026) lists the Ph.D. (Business) at the University of Western Ontario with study dates 1976-1981 and dates the dissertation to September 1980; work experience shows only research-assistant posts at Western Ontario (1975-1978) before Assistant Professor of Production/Operations Management, Michigan State University, 1980-1985. The MSU post began around the September 1980 dissertation date; if the degree was conferred in 1981, the start precedes conferral by a few months, which the overlap rule accepts for a post not retitled on completion.",
+      "phdYearVerified": null,
+      "phdInstitutionVerified": "Western University (Canada) /  University of Western at London, Ontario",
+      "phdInstitutionResolution": "Not a correction: the vita writes University of Western Ontario, London, Ontario, the former name of Western University (Canada), the institution in the record.",
+      "reason": "Second pass: the Broad College profile was rendered in a headless browser and its Word vita was downloaded with the session's cookies and converted with LibreOffice. The degree year is left null because the vita gives the dissertation as September 1980 but the Ph.D. study span as 1976-1981. Earlier review (2026-10-16): the MSU profile returned an access-protection response.",
       "sources": [
         {
-          "url": "https://broad.msu.edu/profile/melnyk/",
-          "title": "Steven Melnyk academic profile",
-          "notes": "The MSU profile returned an access-protection response."
+          "url": "https://bps.broad.msu.edu/documents/vitas/5a733c7c10edd56de0d6ef7e-6ace8cd1aa38f763640786.docx",
+          "title": "Steven A. Melnyk - vita (Michigan State Broad College), current as of October 17, 2026",
+          "notes": "Downloaded through a headless-browser session and converted to text. Degrees: Windsor B.A. 1971-1975; Western Ontario M.A. 1975-1976 and Ph.D. 1976-1981; dissertation dated September 1980. Related work experience: Western Ontario research assistant 1975-1978; MSU Assistant Professor 1980-1985, Associate Professor 1985-1990, Professor 1990-."
+        },
+        {
+          "url": "https://broad.msu.edu/profile/melnyk",
+          "title": "MSU Broad College profile - Steven Melnyk",
+          "notes": "Rendered in a headless browser; vita link."
         }
       ],
+      "phdInstitutionVerifiedAsWritten": "University of Western Ontario",
       "source": "omlist"
     },
     {
       "facultyId": "omlist-5beced8ddbbe842c",
       "name": "Ram Narasimhan",
-      "status": "unresolved",
-      "checkedAt": "2026-10-16",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "employer": "University of Minnesota (Department of Management Sciences)",
+      "position": "Assistant Professor (visiting)",
+      "placementYear": 1976,
+      "category": "other-academic",
+      "evidenceUrl": "https://bps.broad.msu.edu/documents/vitas/55396acd10edd5fc3ab6648e-6ace8d1922783339534530.pdf",
+      "evidenceNote": "His vita (revised April 2015) gives the University of Minnesota Ph.D. in Management Science, 1976, and lists Assistant Professor (visiting), Department of Management Sciences, University of Minnesota, 1976-1977, after teaching-associate and research-assistant posts there (1971-1976) and a 1973-1974 industrial-engineer job at Control Data; Michigan State assistant professorship follows from 1977 (an MIT system-dynamics internship is listed for 1977-78). The visiting assistant professorship is the first post-PhD job.",
+      "phdYearVerified": 1976,
+      "phdInstitutionVerified": "University of Minnesota",
+      "reason": "Second pass: the Broad College profile was rendered in a headless browser and its vita PDF was downloaded with the session's cookies and read with pdftotext. Earlier review (2026-10-16): the profile returned an access challenge.",
       "sources": [
         {
-          "url": "https://broad.msu.edu/profile/narasimh/",
-          "title": "Ram Narasimhan Profile",
-          "notes": "Michigan State profile returned an access challenge; no readable primary career history."
+          "url": "https://bps.broad.msu.edu/documents/vitas/55396acd10edd5fc3ab6648e-6ace8d1922783339534530.pdf",
+          "title": "Ram Narasimhan - vita (Michigan State Broad College), revised April 2015",
+          "notes": "Downloaded through a headless-browser session. Education: Minnesota Ph.D. Management Science 1976. Academic employment: Minnesota visiting assistant professor 1976-1977; MSU Assistant Professor 1977-1980, Associate Professor 1980-1985, then professor and chair. Industrial employment: Control Data 1973-1974."
+        },
+        {
+          "url": "https://broad.msu.edu/profile/narasimh",
+          "title": "MSU Broad College profile - Ram Narasimhan",
+          "notes": "Rendered in a headless browser; vita link."
         }
       ],
-      "reason": "Michigan State profile returned an access challenge; no readable primary career history.",
       "source": "omlist"
     },
     {
@@ -45843,29 +46189,38 @@
     {
       "facultyId": "omlist-e290b6362d18aced",
       "name": "John Boylan",
-      "status": "unresolved",
+      "status": "verified",
       "checkedAt": "2026-10-17",
-      "reason": "John Edward Boylan (1959-2023) worked in operational research at Rolls-Royce (Aero) and Unipart Group after an Oxford mathematics degree and holds MSc and PhD degrees from Warwick (per IIF pages seen only as search results), and he joined Lancaster's forecasting centre in January 2015; no opened source gives a dated chronology for the period around the Warwick PhD (imported as 1996), so the job held at completion and the first new post-PhD job are unknown. The IMA Journal obituary covers only his Lancaster post and editorial service; the IIF obituary returned 403 to WebFetch and a bot challenge to curl; the Lancaster news item about his joining had no readable article body; ORCID has only a Lancaster Pure entry ending 2023-07-07.",
+      "employer": "Lancaster University (Management School)",
+      "position": null,
+      "placementYear": 2015,
+      "category": "unknown",
+      "evidenceUrl": "https://forecasters.org/blog/2023/07/20/john-edward-boylan-1959-2023",
+      "evidenceNote": "The IIF obituary says that after eight years in industry (Rolls-Royce Aero, Unipart) he joined Buckinghamshire Chilterns University College in 1990, started the Warwick PhD the same year, was awarded the PhD in 1997, stayed as the college became Buckinghamshire New University (rising to Academic Dean), and in 2015 left to join Lancaster University Management School. The Buckinghamshire post began seven years before the degree and continued, so under the overlap rule the first new post-PhD job is the 2015 Lancaster appointment; his title on joining is not stated.",
+      "phdYearVerified": 1997,
+      "phdInstitutionVerified": "University of Warwick",
+      "phdYearResolution": "The IIF obituary states that he was awarded the Warwick PhD in 1997; the OM List import gives 1996. The obituary is a dated primary account by his first doctoral student; 1997 is proposed, pending a WRAP or British Library thesis record.",
+      "reason": "Second pass: the IIF obituary, which answered 403 to the fetch tool and a bot challenge to curl, was rendered in a headless Chromium browser and gives the dated chronology. The Lancaster news item about his joining still renders with no article body. Verifier: the record follows the rule that a job held through the doctorate is not the first job, which makes the first new job eighteen years after the degree. Earlier review (2026-10-17): no opened source dated the period around the Warwick PhD; the IIF obituary was blocked.",
       "sources": [
         {
-          "url": "https://academic.oup.com/imaman/article-abstract/35/1/5/7240576",
-          "title": "Obituary: John Edward Boylan (1959-2023), IMA Journal of Management Mathematics 35(1)",
-          "notes": "Read with WebFetch; Professor of Business Analytics at Lancaster and CMAF director; died 7 July 2023; no education or earlier career."
+          "url": "https://forecasters.org/blog/2023/07/20/john-edward-boylan-1959-2023",
+          "title": "IIF: In memory of Professor John Edward Boylan, 1959-2023",
+          "notes": "Rendered in a headless browser (403 to WebFetch, bot challenge to curl and r.jina.ai). Oxford mathematics, Warwick MSc, eight years at Rolls-Royce (Aero) and Unipart; joined BCUC in 1990 and began the Warwick PhD in 1990; PhD awarded 1997; left Buckinghamshire New University in 2015 for Lancaster University Management School."
         },
         {
-          "url": "https://forecasters.org/blog/2023/07/20/john-edward-boylan-1959-2023",
-          "title": "IIF: In memory of Professor John Edward Boylan",
-          "notes": "Attempted: WebFetch 403; curl received a bot-protection challenge. Search snippet (discovery only) mentions Rolls-Royce, Unipart and Warwick MSc/PhD."
+          "url": "https://academic.oup.com/imaman/article-abstract/35/1/5/7240576",
+          "title": "Obituary: John Edward Boylan (1959-2023), IMA Journal of Management Mathematics",
+          "notes": "From the earlier review: covers the Lancaster post and editorial service only."
         },
         {
           "url": "https://www.lancaster.ac.uk/lums/news/archive/john-boylan-joins-the-centre-for-forecasting",
           "title": "Lancaster LUMS news: John Boylan joins the Centre for Forecasting",
-          "notes": "Opened with curl and WebFetch; only navigation was returned, no article text."
+          "notes": "Rendered in a headless browser: page chrome only, no article text."
         },
         {
           "url": "https://orcid.org/0000-0001-5036-5137",
-          "title": "ORCID record 0000-0001-5036-5137, public API",
-          "notes": "Only an undated Lancaster University entry ending 2023-07-07."
+          "title": "ORCID record 0000-0001-5036-5137",
+          "notes": "From the earlier review: only an undated Lancaster entry ending 2023-07-07."
         }
       ],
       "source": "omlist"
@@ -55594,27 +55949,27 @@
       "name": "Amaury Lendasse",
       "status": "unresolved",
       "checkedAt": "2026-10-17",
-      "reason": "The Missouri S&T Pure profile lists research output from 1998 onward but no degrees or employment history, and the EMSE directory gives only his current titles. ORCID 0000-0001-5410-4751 dates only his last two posts (University of Houston Associate Professor 2018-08 to 2024-07; Missouri S&T Department Chair from 2024-08). A search snippet of a UCLouvain DYSCO alumni list suggests a 2003 UCLouvain thesis and a later lecturer post at Helsinki University of Technology, but that page returned HTTP 503 on two attempts and could not be read, and the UCLouvain DIAL repository reset the connection. No dated CV was found in two searches. The PhD year and the first post-PhD job are not established.",
+      "reason": "Second pass: the UCLouvain DYSCO alumni page still answers 503 (curl, the r.jina.ai reader proxy and a headless browser), the UCLouvain DIAL repository timed out through the reader proxy, the Aalto research portal has no person page for him, and the Missouri S&T Pure profile again lists research output from 1998 but no degrees or positions. The doctorate (a 2003 UCLouvain thesis per an earlier snippet) and the first post-PhD job, possibly at Helsinki University of Technology, remain undocumented. Earlier review (2026-10-17): the Pure profile, EMSE directory and ORCID gave only recent posts (Houston from 2018, Missouri S&T from 2024), and the DYSCO list and DIAL could not be read.",
       "sources": [
+        {
+          "url": "https://sites.uclouvain.be/dysco/Alumni/A",
+          "title": "UCLouvain DYSCO PhD alumni list",
+          "notes": "Attempted again: 503 to curl, r.jina.ai and headless Chromium."
+        },
         {
           "url": "https://mst.elsevierpure.com/en/persons/amaury-lendasse",
           "title": "Amaury Lendasse - Missouri S&T Pure profile",
-          "notes": "Read with curl. Research output 1998-2026; no degrees or employment chronology."
+          "notes": "Read with curl: Department Chair and Professor; research output 1998-2026; no degrees or employment."
         },
         {
-          "url": "https://emse.mst.edu/facultystafffacilities/emsefaculty/",
-          "title": "Missouri S&T EMSE faculty directory",
-          "notes": "Read with curl. Current titles and research interests only."
+          "url": "https://research.aalto.fi/en/persons/amaury-lendasse",
+          "title": "Aalto University research portal (guessed person page)",
+          "notes": "404."
         },
         {
           "url": "https://pub.orcid.org/v3.0/0000-0001-5410-4751/record",
           "title": "Amaury Lendasse - ORCID public record",
-          "notes": "Employment: Houston Associate Professor 2018-08 to 2024-07; Missouri S&T Department Chair 2024-08 onward; no education or earlier posts."
-        },
-        {
-          "url": "https://sites.uclouvain.be/dysco/Alumni/A",
-          "title": "UCLouvain DYSCO PhD alumni list",
-          "notes": "Attempted with curl and the fetch tool; HTTP 503. Its content was seen only as a search snippet, which is discovery, not evidence."
+          "notes": "From the earlier review: Houston Associate Professor 2018-08 to 2024-07; Missouri S&T from 2024-08; nothing earlier."
         }
       ],
       "source": "faculty-page"
@@ -57804,14 +58159,27 @@
     {
       "facultyId": "roster:new-york-university-nyu:grace-haaf",
       "name": "Grace Haaf",
-      "status": "unresolved",
+      "status": "verified",
       "checkedAt": "2026-10-17",
-      "reason": "The NYU Stern bio gives PhD, Mechanical Engineering, Carnegie Mellon, 2014 (MS 2012, BS Northwestern 2008) and says she returned to NYU in September 2025 as Clinical Associate Professor; before Stern she was a rapid evaluator at Google X, and she has 10+ years of industry experience as an analytics consultant and data scientist, including McKinsey. No dates or order are given for these roles, so the first job after the 2014 doctorate is not established. A web-search summary of her academia.edu profile reported that she spent a year at McKinsey (Chicago) after graduate school and later worked at Convoy, but that page (https://cmu.academia.edu/GraceHaaf) refused both a plain request and the fetch tool with HTTP 403, so it was not read and is not relied on. The search also reported earlier NYU Shanghai teaching, which the bio's 'returned to NYU' is consistent with, also undated. ORCID has no record for her.",
+      "employer": "McKinsey & Company (Chicago office)",
+      "position": null,
+      "placementYear": null,
+      "category": "industry",
+      "evidenceUrl": "https://cmu.academia.edu/GraceHaaf",
+      "evidenceNote": "Her self-written Academia.edu profile (Carnegie Mellon Mechanical Engineering alumna) states that after graduate school she spent a year in management consulting at McKinsey & Co. in the Chicago office, and that she was then a pricing analyst at Convoy in Seattle. The NYU Stern bio gives the CMU Mechanical Engineering PhD as 2014 and confirms McKinsey among her industry roles. The profile gives no start date, so placementYear is null; the job title is not stated. Verifier: the reason says the NYU Shanghai teaching was not seen on an opened page, but the NYU Stern bio, re-read on 2026-10-17, does say (without a date) that she was previously a business analytics professor at NYU Shanghai. The self-written Academia.edu statement that McKinsey came straight after graduate school still puts McKinsey first.",
+      "phdYearVerified": 2014,
+      "phdInstitutionVerified": "Carnegie Mellon University",
+      "reason": "Second pass: the Academia.edu profile that refused curl and the fetch tool was read through the r.jina.ai reader proxy; it orders McKinsey first after graduate school. Verifier: 'post graduate school' is read as after the 2014 PhD; NYU Shanghai teaching reported by an earlier search snippet is undated and was not seen on any opened page. Earlier review (2026-10-17): the Stern bio listed Google X, McKinsey and analytics consulting without dates or order, and the Academia.edu page returned 403.",
       "sources": [
         {
+          "url": "https://cmu.academia.edu/GraceHaaf",
+          "title": "Grace Haaf - Academia.edu profile",
+          "notes": "Read through r.jina.ai (403 to direct requests). Carnegie Mellon Mechanical Engineering alumna; currently pricing analyst at Convoy; 'Post graduate school, I spent a year in management consulting at McKinsey & Co. based out of the Chicago office.'"
+        },
+        {
           "url": "https://www.stern.nyu.edu/faculty/bio/c-grace-haaf",
-          "title": "C. Grace Haaf, NYU Stern faculty bio",
-          "notes": "Read with a plain curl request. Joined Stern 2025; PhD 2014 CMU; undated industry roles (Google X, McKinsey, analytics consulting)."
+          "title": "C. Grace Haaf - NYU Stern faculty bio",
+          "notes": "Read with curl (markdown version). PhD Mechanical Engineering 2014, MS 2012, BS 2008; prior to Stern a rapid evaluator at Google X; 10+ years of industry analytics experience including McKinsey; no dates."
         }
       ],
       "source": "faculty-page"
@@ -57847,29 +58215,32 @@
     {
       "facultyId": "roster:new-york-university-nyu:hanna-halaburda",
       "name": "Hanna Halaburda",
-      "status": "unresolved",
+      "status": "verified",
       "checkedAt": "2026-10-17",
-      "reason": "The first post-PhD job cannot be established from primary evidence. The Stern bio lists the Northwestern Ph.D. in Economics without a year and gives no career history; the Bank of Canada staff profile lists publications only; no CV was found (halaburda.com belongs to an unrelated artist; a Google Sites address returns a sign-in page; the HBS faculty page refused the request with 403). A secondary crypto-encyclopedia entry (IQ.wiki, found by search and not opened as evidence) reports a 2007 Northwestern Ph.D. and an HBS assistant professorship 2007-2012 followed by the Bank of Canada; a dated CV or HBS appointment record is needed to confirm that HBS was the first post-PhD job.",
+      "employer": "Harvard Business School",
+      "position": "Assistant Professor of Business Administration (Strategy Unit)",
+      "placementYear": 2007,
+      "category": "tenure-track",
+      "evidenceUrl": "https://drive.google.com/file/d/1pASHI9JPcoyWr6PZ1EVn6mVckBtFc5My/view",
+      "evidenceNote": "Her CV (December 2024) gives the PhD in Economics, Northwestern University, 2007, and lists Assistant Professor of Business Administration, Strategy Unit, Harvard Business School, 2007-2012, then Senior Economist at the Bank of Canada 2012-2019 and NYU Stern posts from 2015. HBS is the first post-PhD job; plain assistant professor title at a North American business school, recorded as tenure-track by convention.",
+      "phdYearVerified": 2007,
+      "phdInstitutionVerified": "Northwestern University",
+      "reason": "Second pass: the Stern bio's markdown version links her personal site www.halaburda.ca (a Google Site, not the artist's halaburda.com tried before); its 'vita & contact' page links a Drive PDF, downloaded with curl through Drive's export-download endpoint and read with pdftotext. The 2007 degree year is an addition to the faculty-page record, which gave none. Earlier review (2026-10-17): no CV was found and the HBS page refused the request, so the 2007 PhD and HBS start were known only from a secondary encyclopedia entry.",
       "sources": [
         {
+          "url": "https://drive.google.com/file/d/1pASHI9JPcoyWr6PZ1EVn6mVckBtFc5My/view",
+          "title": "Hanna Halaburda - CV, December 2024 (Google Drive, linked from halaburda.ca)",
+          "notes": "Affiliation: NYU Stern 2015-present (visiting, then associate professor 2019); Bank of Canada Senior Economist 2012-2019; Harvard Business School Assistant Professor of Business Administration, Strategy Unit, 2007-2012. Education: 2007 PhD Economics, Northwestern."
+        },
+        {
+          "url": "http://www.halaburda.ca/vita-contact",
+          "title": "Hanna Halaburda - vita & contact (personal site)",
+          "notes": "Read with curl; Stern address and VITA link to the Drive PDF."
+        },
+        {
           "url": "https://www.stern.nyu.edu/faculty/bio/hanna-halaburda",
-          "title": "NYU Stern faculty bio: Hanna Halaburda",
-          "notes": "Associate Professor; Ph.D. Economics Northwestern; M.A. Warsaw School of Economics; M.A. Philosophy Warsaw University; no dates or prior positions."
-        },
-        {
-          "url": "https://www.bankofcanada.ca/profile/hanna-halaburda/",
-          "title": "Bank of Canada staff profile: Hanna Halaburda",
-          "notes": "Publication list (staff notes 2014-2018); no biography dates."
-        },
-        {
-          "url": "https://www.halaburda.com/",
-          "title": "halaburda.com",
-          "notes": "Read through the fetch tool after a 429 bot check on plain request: site of an unrelated artist; not this person."
-        },
-        {
-          "url": "https://orcid.org/0000-0002-2438-4972",
-          "title": "ORCID record 0000-0002-2438-4972 (Hanna Halaburda)",
-          "notes": "Read through the public ORCID API: no employment or education entries."
+          "title": "NYU Stern faculty bio - Hanna Halaburda",
+          "notes": "Read with curl (also the .md version): joined Stern 2019; Ph.D. Economics (no year); personal website www.halaburda.ca."
         }
       ],
       "source": "faculty-page"
@@ -57928,27 +58299,27 @@
       "name": "João Sedoc",
       "status": "unresolved",
       "checkedAt": "2026-10-17",
-      "reason": "The first post-PhD job cannot be dated. The Stern bio says that before Stern he was an Assistant Research Professor in Computer Science at Johns Hopkins and earlier worked in quantitative finance (Chivalric Trading, Millennium Management, BNP Paribas/Cooper Neff), with a Penn Ph.D. in Computer and Information Science, but gives no years or order relative to the doctorate. His ORCID record starts with Stern (Assistant Professor from September 2020). His JHU homepage links a CV (cs.jhu.edu/~jsedoc/cv.pdf), but the server refused it (HTTP 403) to both a plain request and the fetch tool, and the Penn ScholarlyCommons repository has no record of his dissertation. The JHU research professorship is the likely first post-PhD job, but its start and the degree year are unconfirmed.",
+      "reason": "Second pass: cs.jhu.edu/~jsedoc/cv.pdf still answers 403 Forbidden to browser-UA curl and the r.jina.ai reader (a server-side permission refusal, not a bot check); the JHU homepage gives only his Assistant Research Professor title; the Stern markdown bio repeats the undated JHU and quantitative-finance roles; joaosedoc.com redirects to the Stern directory; the Mathematics Genealogy Project has no record. The Penn PhD year and the start of the JHU research professorship (the likely first post-PhD job) remain unconfirmed. Earlier review (2026-10-17): the Stern bio named JHU and finance roles without dates, ORCID began at Stern in 2020-09, and the JHU CV returned 403.",
       "sources": [
         {
           "url": "https://www.stern.nyu.edu/faculty/bio/joao-sedoc",
-          "title": "NYU Stern faculty bio: João Sedoc",
-          "notes": "Before Stern: Assistant Research Professor, JHU Computer Science; quantitative finance roles (Chivalric Trading founder, Millennium portfolio manager, BNP Paribas/Cooper Neff researcher); BS/BSE/PhD University of Pennsylvania; no dates."
+          "title": "NYU Stern faculty bio - João Sedoc",
+          "notes": "Read with curl (markdown version): before Stern, Assistant Research Professor in Computer Science at JHU; Chivalric Trading, Millennium, BNP Paribas/Cooper Neff; no dates."
+        },
+        {
+          "url": "https://www.cs.jhu.edu/~jsedoc/",
+          "title": "João Sedoc - JHU homepage",
+          "notes": "Read with curl: Assistant Research Professor, JHU Computer Science; CV link."
+        },
+        {
+          "url": "https://www.cs.jhu.edu/~jsedoc/cv.pdf",
+          "title": "João Sedoc CV (JHU)",
+          "notes": "Attempted: 403 Forbidden to curl and r.jina.ai."
         },
         {
           "url": "https://orcid.org/0000-0001-6369-3711",
           "title": "ORCID record 0000-0001-6369-3711 (João Sedoc)",
-          "notes": "Read through the public ORCID API: NYU Stern Assistant Professor 2020-09 to 2026-09, Associate Professor from 2026-09; nothing earlier."
-        },
-        {
-          "url": "https://www.cs.jhu.edu/~jsedoc/",
-          "title": "João Sedoc JHU homepage",
-          "notes": "States he is an Assistant Research Professor in Computer Science; links cv.pdf, which returned HTTP 403 (plain request and fetch tool)."
-        },
-        {
-          "url": "https://repository.upenn.edu/",
-          "title": "Penn ScholarlyCommons (repository search)",
-          "notes": "Searched through the public DSpace API for Sedoc: no dissertation record found."
+          "notes": "From the earlier review: NYU Stern from 2020-09; nothing earlier."
         }
       ],
       "source": "faculty-page"
