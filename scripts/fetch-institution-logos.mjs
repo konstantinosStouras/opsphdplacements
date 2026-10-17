@@ -88,7 +88,7 @@ async function declaredIcons(website) {
 const commonsUrl = file => `https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/${encodeURIComponent(file.replace(/ /g, '_'))}&width=192`;
 
 // Largest frame of an .ico, cropped to its visible content, scaled to fit 96px on a transparent canvas.
-// Rejects images under 32px (blurry once enlarged) and nearly empty ones.
+// Rejects images under 32px (blurry once enlarged), nearly empty ones and ones too light to see on white.
 function convert(src, target) {
   execFileSync('python3', ['-I', '-c', `
 import sys
@@ -105,6 +105,10 @@ im = im.crop(box)
 if im.width < ${MIN * 0.75} and im.height < ${MIN * 0.75}: raise SystemExit('too small after crop')
 colours = im.convert('RGB').getcolors(1 << 16)
 if colours is not None and len(colours) < 2: raise SystemExit('blank')
+# The map draws icons on a white disc: an icon with almost no pixels darker than pale grey would vanish.
+px = list(zip(im.convert('L').getdata(), im.getchannel('A').getdata()))
+solid = [l for l, a in px if a > 128]
+if not solid or sum(1 for l in solid if l < 200) < 0.03 * len(solid): raise SystemExit('too light for a white disc')
 scale = ${SIZE} / max(im.width, im.height)
 im = im.resize((max(1, round(im.width * scale)), max(1, round(im.height * scale))), Image.LANCZOS)
 canvas = Image.new('RGBA', (${SIZE}, ${SIZE}), (0, 0, 0, 0))
