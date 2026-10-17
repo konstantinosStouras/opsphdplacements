@@ -1,18 +1,17 @@
-# First-job pass for the faculty-page people: unmerged work (snapshot of 17 October 2026, 07:30 UTC)
+# First-job pass for the faculty-page people: completed 17 October 2026
 
-This folder makes the unfinished first-job pass for the 1,007 people in `data/faculty-roster-people.json` portable. **Nothing here is a finding.** Only verified proposals merged into `data/placements.json` and `data/research-status.json` are published results; at this snapshot chunks 1, 13, 21, 22 and 23 were merged (200 people: 45 verified first jobs, 153 unresolved, 2 without a completed doctorate).
+All 26 chunks of the first-job pass for the 1,007 people in `data/faculty-roster-people.json` were researched, adversarially verified and merged into `data/placements.json` and `data/research-status.json` on 17 October 2026 (494 verified first jobs, 510 unresolved, 3 without a completed doctorate; see RESEARCH-STATUS.md). The unverified researcher drafts that this folder held at the 07:30 UTC pause point were removed after their verified proposals were merged, because the published ledger supersedes them; nothing unmerged from the faculty-page pass remains. Integrator corrections made while merging are written into the ledger rows as "Integrator:" notes.
+
+The same tools now also run the OM List people's last batches (`research/placements-omlist/`, with `dir: "placements-omlist"` and `FJ_DIR=placements-omlist`) and the re-check of unresolved roster rows (`tools/roster-recheck.js`).
 
 ## What is here
 
-- `drafts/draft-N.json`: researcher drafts that have **not** been through the adversarial verification yet (results format of `scripts/merge-placement-research.mjs`). Complete (40 people): 2, 3, 4, 5, 10, 11, 12, 14, 19, 20, 24, 25. Partial: 6 (23 of 40), 9 (18 of 40), 17 (20 of 40). Not started at the snapshot: 7, 8, 15, 16, 18, 26. Later drafts in the live working folder may be further along.
-- `drafts/verify-state-N.json`: rows a verifier had already checked (chunks 5 and 14), to be reused by the next verifier.
-- `drafts/fj-summary-N.json`: the researcher's own summary of each complete draft, including the items it asked a verifier to double check.
 - `tools/roster-first-jobs-chains.js`: the workflow script (research brief, adversarial verification brief, chain runner). Arguments: `chains` (lists of chunk numbers run one after another), `verifyOnly` (chunks whose draft is complete), `continueChunks` (partial drafts to continue), `date`, and `dir` (`placements-roster` by default; `placements-omlist` runs the OM List people's chunks from `node scripts/write-placement-chunks.mjs --source omlist`). The scan, the institution-name step and the merge routine read `FJ_DIR` (same values) to pick the folder.
 - `tools/merge-first-job-chunks.sh` and `tools/scan-first-job-proposal.py`: the integrator's merge-and-publish routine and the structural scan run before every merge.
 - `tools/normalize-institutions.py`: run before every merge (`python3 tools/normalize-institutions.py N`). It stores a verified doctorate that names the record's own university in another form (a school name, a longer or older name) under the record's name and keeps the written form; pairs it cannot settle are printed as DECIDE and recorded with `--same <ids>` or `--differs <ids>` (one flag per run). Without it the checks stop the merge with "Undocumented degree institution correction".
 
-## Resume
+## Resume (for later batches)
 
-1. Copy `drafts/*` into `research/placements-roster/` (ignored), unless the live folder already holds newer files. Regenerate the chunk files only if they are missing: `node scripts/write-placement-chunks.mjs --source faculty-page` (pending people only; it renumbers, so do it before any research starts).
-2. Run the workflow script with `verifyOnly` for the complete drafts, `continueChunks` for the partial ones, and plain chains for the rest; edit the scratch and repository paths at the top of the script if the checkout lives elsewhere.
-3. When `proposal-N.json` appears, scan it, apply the integrator rules in RESEARCH-DESIGN.md (study period is not a start year; a current affiliation is not a first job; overlaps recorded), then merge with the routine and publish. Update this README, the handoff and TODO.md as chunks are merged.
+1. Write chunk files for pending people: `node scripts/write-placement-chunks.mjs --source faculty-page|omlist --start N` (it renumbers chunks from N; never reuse a number whose proposal was merged).
+2. Run `tools/roster-first-jobs-chains.js` as a workflow with `chains` (one chain per chunk runs them all in parallel), `verifyOnly` for chunks whose draft is complete, `continueChunks` for partial drafts, `dir` and `date`; edit the scratch and repository paths at the top of the script if the checkout lives elsewhere. Drafts are saved every 8 people and verifier progress in `verify-state-N.json`, so a stopped run resumes without loss.
+3. When `proposal-N.json` appears: `python3 tools/scan-first-job-proposal.py N`, `python3 tools/normalize-institutions.py N`, read every verified row against the overlap, conversion and concurrent-role rules in RESEARCH-DESIGN.md (write any correction into the row as an "Integrator:" note), then `bash tools/merge-first-job-chunks.sh "<chunks still in review>" N` (prefix `FJ_DIR=placements-omlist` for OM List batches). It stops on any failed check.

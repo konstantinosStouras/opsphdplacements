@@ -37,4 +37,4 @@ This is a dated snapshot. Preserve it and use separate proposals for subsequent 
 
 ## First-job pass for the faculty-page people (17 October 2026)
 
-[placements-roster/](placements-roster/README.md) holds the unmerged, unverified drafts of the first-job pass for the people found on the faculty pages, the partial verification state, and the workflow script and merge routine needed to finish it. They are not findings; merged results live in the public datasets.
+[placements-roster/](placements-roster/README.md) holds the workflow scripts, the scan, the institution-name step and the merge routine of the first-job pass. The pass for the 1,007 people found on the faculty pages was completed and merged on 17 October 2026, so the unverified drafts it held earlier were removed; the same tools run the last OM List batches and the roster re-check. Merged results live in the public datasets.
