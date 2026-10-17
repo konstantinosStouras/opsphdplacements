@@ -49,7 +49,7 @@ const ranges = nums => {
   for (let i = 0; i < s.length; i++) {
     let j = i;
     while (j + 1 < s.length && s[j + 1] === s[j] + 1) j++;
-    parts.push(j > i + 1 ? `${s[i]} to ${s[j]}` : j === i + 1 ? `${s[i]} and ${s[j]}` : String(s[i]));
+    if (j > i + 1) parts.push(`${s[i]} to ${s[j]}`); else if (j === i + 1) parts.push(String(s[i]), String(s[j])); else parts.push(String(s[i]));
     i = j;
   }
   return parts.length > 1 ? parts.slice(0, -1).join(', ') + ' and ' + parts.at(-1) : parts[0] || 'none';
