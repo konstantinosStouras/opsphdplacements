@@ -7,6 +7,13 @@ const root=path.resolve(import.meta.dirname,'..');
 const rosterFile=path.join(root,'data/faculty-roster-people.json');
 const faculty=[...JSON.parse(fs.readFileSync(path.join(root,'data/faculty.json'),'utf8')).records,...(fs.existsSync(rosterFile)?JSON.parse(fs.readFileSync(rosterFile,'utf8')).records:[])];
 const byId=new Map(faculty.map(r=>[r.id,r]));
+// A verified PhD institution that names the same university as the person's record (a reviewed alias in
+// data/institution-aliases.json, or a spelling that differs only in accents, punctuation, spacing or case) confirms
+// that record rather than correcting it, so it is stored under the record's name.
+const aliasFile=path.join(root,'data/institution-aliases.json');
+const aliasOf=fs.existsSync(aliasFile)?JSON.parse(fs.readFileSync(aliasFile,'utf8')).aliases:{};
+const fold=s=>String(s??'').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/[^a-z0-9]+/g,' ').trim();
+const sameInstitution=(a,b)=>!!a&&!!b&&(fold(aliasOf[a]?.canonical||a)===fold(aliasOf[b]?.canonical||b)||fold(a)===fold(b));
 const priorFile=path.join(root,'data/research-status.json');
 const prior=fs.existsSync(priorFile)?JSON.parse(fs.readFileSync(priorFile,'utf8')).records:[];
 const reviews=new Map(prior.filter(r=>r.status!=='pending').map(r=>[r.facultyId,r]));
@@ -15,6 +22,7 @@ if(!files.length)console.log('No results file given: rewriting the ledger and pl
 for(const file of files){const parsed=JSON.parse(fs.readFileSync(path.resolve(root,file),'utf8').replace(/^\uFEFF/,''));const rows=Array.isArray(parsed)?parsed:parsed.records||parsed.results; if(!Array.isArray(rows))throw Error(`Invalid results: ${file}`);
  for(const r of rows){const person=byId.get(r.facultyId);if(!person)throw Error(`Unknown faculty: ${r.facultyId}`);if(person.name!==r.name)throw Error(`Name mismatch for ${r.facultyId}`);if(!['verified','unresolved','not-yet-completed-phd'].includes(r.status))throw Error(`Invalid status: ${r.name}`);if(!r.checkedAt||!r.reason||!Array.isArray(r.sources)||!r.sources.length)throw Error(`Missing research provenance: ${r.name}`);for(const source of r.sources)if(!/^https?:\/\//.test(source.url)||!source.title)throw Error(`Invalid evidence URL/title: ${r.name}`);
  if(r.status==='verified'){if(!r.employer||!r.evidenceNote||!r.evidenceUrl||!r.sources.some(s=>s.url===r.evidenceUrl))throw Error(`Missing placement evidence: ${r.name}`);if(!['tenure-track','postdoc','other-academic','industry','government','nonprofit','unknown'].includes(r.category))throw Error(`Invalid category: ${r.name}`);if(r.placementYear!=null&&(!Number.isInteger(r.placementYear)||r.placementYear<1900||r.placementYear>2100))throw Error(`Invalid start year: ${r.name}`);if(r.phdYearVerified&&person.phdYear&&r.phdYearVerified!==person.phdYear&&!r.phdYearResolution)throw Error(`Unresolved PhD year conflict: ${r.name}`);}
+ if(r.phdInstitutionVerified&&person.phdInstitution&&r.phdInstitutionVerified!==person.phdInstitution&&sameInstitution(r.phdInstitutionVerified,person.phdInstitution)){r.phdInstitutionVerifiedAsWritten=r.phdInstitutionVerified;r.phdInstitutionVerified=person.phdInstitution;}
  reviews.set(r.facultyId,r);
  }}
 const records=faculty.map(person=>({...(reviews.get(person.id)||{facultyId:person.id,name:person.name,status:'pending',checkedAt:null,sources:[],reason:'Individual first-placement research is pending.'}),source:person.source||'omlist'}));

@@ -1,0 +1,651 @@
+{
+  "version": 1,
+  "note": "Reviewed aliases for PhD institution names as university faculty pages write them (abbreviations, short forms, spelling variants and schools of a university). Each entry maps the written name to the PhD institution of the same university already in data/faculty.json; a name enters only after a first reviewer proposed it and a second reviewer failed to refute it (17 October 2026). The written form is kept on each person as phdInstitutionAsWritten. Names that could mean more than one university or campus are not mapped.",
+  "aliases": {
+    "Aalto University School of Business": {
+      "canonical": "Aalto University",
+      "reason": "Q1358296 is this school, and since 2010 its doctorates are awarded by Aalto University (this one was defended in 2019). Second reviewer: sameAs is right: the 2019 doctorate is awarded by Aalto University. But the proposed QID Q1358296 (the school, P749 parent Q300980) conflicts with the sameAs entry's QID Q300980, and in the existing list Q1358296 is already used by 'Helsinki School of Economics and Business Administration'. Batch 4 mapped 'Aalto University School of Science' to Q300980 and 'Aalto University', so the QID should be Q300980 here too. That makes the match effectively 'wrong' rather than 'correct'.",
+      "reviewedAt": "2026-10-17"
+    },
+    "Aalto University School of Science": {
+      "canonical": "Aalto University",
+      "reason": "The matched Helsinki University of Technology closed in 2010; the School of Science is part of Aalto University, which awards its doctorates (this defence is in 2026). Second reviewer: Q1646874 (Helsinki University of Technology) was dissolved on 2010-12-31. The 2026 public defence on aalto.fi is held at Aalto University, which awards the doctorate. Q300980 is Aalto University, founded 2010, and matches the existing entry 'Aalto University' (Q300980).",
+      "reviewedAt": "2026-10-17"
+    },
+    "Aalto-yliopisto (Aalto University)": {
+      "canonical": "Aalto University",
+      "reason": "Aalto-yliopisto is the Finnish name of Aalto University (Q300980), and the 2014 PhD falls after its founding in 2010. Second reviewer: Q300980 is Aalto University (inception 2010-01-01), the existing entry's item. 'Aalto-yliopisto' is its Finnish name, and the 2014 PhD falls after the founding.",
+      "reviewedAt": "2026-10-17"
+    },
+    "Anderson School of Management, University of California, Los Angeles": {
+      "canonical": "University of California, Los Angeles",
+      "reason": "This names the UCLA Anderson School of Management (Q2197052), whose doctorates UCLA awards. Second reviewer: UCLA awards Anderson doctorates, so sameAs UCLA is right. But correctQid Q2197052 (the school, P749 parent Q174710) conflicts with the sameAs entry's QID Q174710. Use the parent university's QID.",
+      "reviewedAt": "2026-10-17"
+    },
+    "CMU": {
+      "canonical": "Carnegie Mellon University",
+      "reason": "CMU is the standard abbreviation for Carnegie Mellon University (Q190080), and the context of a US computer-vision PhD rules out other CMUs. Second reviewer: rehg.org says 'He received his Ph.D. from CMU in 1995', next to his DEC Cambridge computer-vision work, which identifies Carnegie Mellon (Q190080), the existing entry's item. Only this person uses the abbreviation. It would need re-checking if 'CMU' later appears meaning, for example, Central Michigan University.",
+      "reviewedAt": "2026-10-17"
+    },
+    "Carlson School of Management, University of Minnesota – Twin Cities": {
+      "canonical": "University of Minnesota",
+      "reason": "The Carlson School is part of the University of Minnesota Twin Cities (Q238101), which awards its doctorates. Second reviewer: The text explicitly says Twin Cities. Q238101 is the Twin Cities university (aliases 'University of Minnesota, Twin Cities', site twin-cities.umn.edu), and it is part of the UMN system item Q14552696. The existing entry 'University of Minnesota' is Q238101. The Carlson School's doctorates are awarded by UMN.",
+      "reviewedAt": "2026-10-17"
+    },
+    "Carnegie Mellon": {
+      "canonical": "Carnegie Mellon University",
+      "reason": "This is the short form of Carnegie Mellon University. Second reviewer: Short form of Carnegie Mellon University, Q190080. The existing entry has the same QID.",
+      "reviewedAt": "2026-10-17"
+    },
+    "Carnegie Mellon University (Tepper School of Business)": {
+      "canonical": "Carnegie Mellon University",
+      "reason": "This names the Tepper School of Business (Q7701381), a school of Carnegie Mellon University, which awards its doctorates. Second reviewer: The doctorate-awarding university is Carnegie Mellon, so sameAs is right. But correctQid Q7701381 (Tepper, P361 part of Q190080) conflicts with the sameAs entry's QID Q190080 and would create a separate entity or a recorded conflict. Batch 4 mapped Carlson, Ross, Johnson and Warrington to the parent university, so use Q190080.",
+      "reviewedAt": "2026-10-17"
+    },
+    "Carnegie-Mellon University": {
+      "canonical": "Carnegie Mellon University",
+      "reason": "This is the hyphenated older spelling of Carnegie Mellon University. Second reviewer: This is the older hyphenated spelling of Carnegie Mellon University. Q190080 is the same item as the existing entry.",
+      "reviewedAt": "2026-10-17"
+    },
+    "Catholic University of Leuven, Belgium (profile: School of Public Health, University of Leuven, Belgium)": {
+      "canonical": "KU Leuven",
+      "reason": "Both parts name the university in Leuven, and for a doctorate in 2000 that is KU Leuven (Katholieke Universiteit Leuven), not the French-speaking UCLouvain. Second reviewer: The cached Alfaisal profile states a 'PhD in Biostatistics from the School of Public Health, University of Leuven, Belgium', earned in 2000. 'Leuven' (the Dutch name of the city) and that date point to KU Leuven (Q833670, founded 1968/1970). UCLouvain is the 'Catholic University of Louvain', located in Louvain-la-Neuve and Brussels. Q833670 matches the existing 'KU Leuven' entry.",
+      "reviewedAt": "2026-10-17"
+    },
+    "Columbia": {
+      "canonical": "Columbia University",
+      "reason": "As a doctorate-granting institution, 'Columbia' is the usual short form for Columbia University in New York. Second reviewer: As the name of a doctorate-granting institution, the bare 'Columbia' means Columbia University (Q49088), the same item as the existing entry. No other university is plausibly written as just 'Columbia'.",
+      "reviewedAt": "2026-10-17"
+    },
+    "Cornell University (S.C. Johnson School of Management)": {
+      "canonical": "Cornell University",
+      "reason": "The S.C. Johnson School of Management is part of Cornell University, which awards its doctorates. Second reviewer: The Johnson School is part of Cornell University (Q49115), which awards its PhDs. The existing entry 'Cornell University' is Q49115.",
+      "reviewedAt": "2026-10-17"
+    },
+    "David Eccles School of Business, University of Utah": {
+      "canonical": "University of Utah",
+      "reason": "This names the David Eccles School of Business (Q5233254), whose doctorates the University of Utah awards. Second reviewer: The University of Utah awards Eccles doctorates, so sameAs is right. But correctQid Q5233254 (the school, P749 parent Q168515) conflicts with the sameAs entry's QID Q168515. Use the parent university's QID.",
+      "reviewedAt": "2026-10-17"
+    },
+    "Duke University's Fuqua School of Business": {
+      "canonical": "Duke University",
+      "reason": "Fuqua is Duke University's business school, and Duke awards its doctorates. Second reviewer: Wikidata confirms Q2568866 is the Fuqua School of Business, whose parent is Duke University (Q168751). Duke awards its doctorates, so sameAs 'Duke University' is right.",
+      "reviewedAt": "2026-10-17"
+    },
+    "Ecole Centrale Paris, France": {
+      "canonical": "Ecole Centrale Paris",
+      "reason": "This is École Centrale Paris (Q273447), the existing entry of the same name; it is the pre-2015 school, not CentraleSupélec. Second reviewer: Q273447 is École Centrale Paris (dissolved 2015, replaced by CentraleSupélec). theses.fr 2011ECAP0061 confirms Seroussi defended at Ecole centrale de Paris in 2011, before the merger, so the existing 'Ecole Centrale Paris' entry is the right sameAs.",
+      "reviewedAt": "2026-10-17"
+    },
+    "Erasmus University": {
+      "canonical": "Erasmus University Rotterdam",
+      "reason": "'Erasmus University' is the short form of Erasmus University Rotterdam, the matched item and the existing entry. Second reviewer: Q633529 is Erasmus University Rotterdam, the existing entry's QID. 'Erasmus University' is its usual short form.",
+      "reviewedAt": "2026-10-17"
+    },
+    "Fuqua School of Business, Duke University": {
+      "canonical": "Duke University",
+      "reason": "Q2568866 is Duke's Fuqua School of Business, whose doctorates Duke University awards. Second reviewer: Q2568866 is Fuqua, with P749/P361 Q168751, which is the existing 'Duke University' entry's QID.",
+      "reviewedAt": "2026-10-17"
+    },
+    "Georgia Institute of Technology (School of Industrial and Systems Engineering)": {
+      "canonical": "Georgia Institute of Technology",
+      "reason": "Wikidata Q5628427 is Georgia Tech's H. Milton Stewart School of Industrial and Systems Engineering, and Georgia Tech awards its doctorates. Second reviewer: Q5628427 is the ISyE school, and its P361 is Q16246732, not Georgia Tech itself. The sameAs is right, but the QID should be the existing entry's Q864855, as the earlier review did for 'Stanford University (Department of Management Science and Engineering)', which went to Q41506.",
+      "reviewedAt": "2026-10-17"
+    },
+    "Georgia Tech": {
+      "canonical": "Georgia Institute of Technology",
+      "reason": "Georgia Tech is the common short name of the Georgia Institute of Technology. Second reviewer: Q864855's English label is 'Georgia Tech', and the existing entry 'Georgia Institute of Technology' has the same QID.",
+      "reviewedAt": "2026-10-17"
+    },
+    "Graduate School of Business, Stanford University": {
+      "canonical": "Stanford University",
+      "reason": "Wikidata Q1413558 is the Stanford Graduate School of Business, part of Stanford University (Q41506). Second reviewer: Q1413558 is the Stanford GSB (P749/P361 Q41506), and the sameAs is right. The QID should be the existing entry's Q41506, the university that awards the doctorate.",
+      "reviewedAt": "2026-10-17"
+    },
+    "Graduate School of Business, University of Chicago": {
+      "canonical": "University of Chicago",
+      "reason": "This is the former name of the Booth School of Business (Q2963304, part of the University of Chicago Q131252), renamed in 2008. Second reviewer: This is the pre-2008 name of what is now Booth (Q2963304, P361 Q131252; its listed site includes gsb.uchicago.edu), and the sameAs is right. The QID should be the existing entry's Q131252, the university that awards the doctorate.",
+      "reviewedAt": "2026-10-17"
+    },
+    "Graduate School of Business, the University of Chicago": {
+      "canonical": "University of Chicago",
+      "reason": "This is the pre-2008 name of the University of Chicago's Booth School of Business (Q2963304). Second reviewer: Same as the previous spelling: the former name of Booth (Q2963304, part of Q131252). The sameAs is right, and the QID should be the existing entry's Q131252.",
+      "reviewedAt": "2026-10-17"
+    },
+    "Graduate School of Industrial Administration (now Tepper School of Business), Carnegie Mellon University": {
+      "canonical": "Carnegie Mellon University",
+      "reason": "GSIA is the former name of Carnegie Mellon's Tepper School of Business, and Carnegie Mellon awards its doctorates. Second reviewer: Wikidata confirms Q7701381 is the Tepper School of Business, part of Carnegie Mellon University (Q190080). GSIA is its former name, and Carnegie Mellon awards its doctorates, so sameAs 'Carnegie Mellon University' is right.",
+      "reviewedAt": "2026-10-17"
+    },
+    "HEC Montréal": {
+      "canonical": "HEC Montreal",
+      "reason": "The match is the Montreal business school, and the existing 'HEC Montreal' is the same school spelled without the accent. Second reviewer: Q273527 is HEC Montréal, the business school in Montréal. The existing 'HEC Montreal' entry carries the same item, and the two names differ only by the accent.",
+      "reviewedAt": "2026-10-17"
+    },
+    "Harvard": {
+      "canonical": "Harvard University",
+      "reason": "Harvard on its own, as the institution that awarded a doctorate, means Harvard University. Second reviewer: As a doctorate-granting institution, 'Harvard' means Harvard University (Q13371), whose schools all award Harvard University degrees. The 1969 PhD is well after its founding. The existing entry 'Harvard University' is Q13371.",
+      "reviewedAt": "2026-10-17"
+    },
+    "Harvard Business School": {
+      "canonical": "Harvard University",
+      "reason": "Harvard Business School is a school of Harvard University, which confers its doctorates. Second reviewer: Wikidata confirms Q49126 is Harvard Business School, which is part of Harvard University (Q13371). Harvard confers HBS doctorates, so sameAs 'Harvard University' is right. The school item will differ from the university entity's item if the name is merged.",
+      "reviewedAt": "2026-10-17"
+    },
+    "INSEAD-European Institute of Business Administration": {
+      "canonical": "INSEAD",
+      "reason": "INSEAD stands for the European Institute of Business Administration, and INSEAD (Q1136829) is already in the existing list. Second reviewer: INSEAD is the Institut européen d'administration des affaires (the ptwiki title of Q1136829), which awards its own PhD. The existing 'INSEAD' entry has the same QID.",
+      "reviewedAt": "2026-10-17"
+    },
+    "ISyE - Georgia Tech": {
+      "canonical": "Georgia Institute of Technology",
+      "reason": "ISyE at Georgia Tech is the H. Milton Stewart School of Industrial and Systems Engineering (Q5628427), a school of Georgia Tech, which awards its doctorates. Second reviewer: Q5628427 is the H. Milton Stewart School of Industrial and Systems Engineering, part of the Georgia Tech College of Engineering (Q16246732). Georgia Tech (Q864855, the existing entry) awards its doctorates.",
+      "reviewedAt": "2026-10-17"
+    },
+    "Isenberg School of Management, University of Massachusetts, Amherst": {
+      "canonical": "University of Massachusetts Amherst",
+      "reason": "Q14715617 is the Isenberg School of Management at UMass Amherst, which awards its doctorates. Second reviewer: Q14715617 is the Isenberg School of Management at UMass Amherst. The written name names UMass Amherst explicitly, which is the existing entry (Q15142).",
+      "reviewedAt": "2026-10-17"
+    },
+    "Ivey Business School": {
+      "canonical": "Western University (Canada) /  University of Western at London, Ontario",
+      "reason": "Ivey is the business school of the University of Western Ontario, which awards its doctorates. Second reviewer: Wikidata confirms Q7326695 is the Ivey Business School, whose parent is the University of Western Ontario (Q1144262). Western awards Ivey's PhDs, and the existing Western University entry carries Q1144262.",
+      "reviewedAt": "2026-10-17"
+    },
+    "Ivey Business School (Western University)": {
+      "canonical": "Western University (Canada) /  University of Western at London, Ontario",
+      "reason": "The Ivey Business School is part of Western University (University of Western Ontario), which awards its doctorates. Second reviewer: Ivey is part of Western University, the University of Western Ontario (Q1144262, alias 'Western University'), which awards its PhDs. The existing entry 'Western University (Canada) /  University of Western at London, Ontario' has QID Q1144262 and is quoted exactly, including the double space.",
+      "reviewedAt": "2026-10-17"
+    },
+    "Katholieke Universiteit Leuven": {
+      "canonical": "KU Leuven",
+      "reason": "Katholieke Universiteit Leuven is the full name of KU Leuven. Second reviewer: The Dutch-language name denotes the post-1968 KU Leuven. Q833670 has label 'Katholieke Universiteit Leuven' and the existing entry 'KU Leuven' has the same QID. It cannot mean the French-speaking UCLouvain.",
+      "reviewedAt": "2026-10-17"
+    },
+    "Korea Advanced Institute of Science and Technology": {
+      "canonical": "KAIST",
+      "reason": "This is the full name of KAIST. Second reviewer: The full name is a listed alias of Q39949 (KAIST), and the existing entry 'KAIST' is Q39949.",
+      "reviewedAt": "2026-10-17"
+    },
+    "Krannert Graduate School of Management, Purdue University": {
+      "canonical": "Purdue University",
+      "reason": "Krannert is Purdue's business school (now renamed the Daniels School of Business), and Purdue awards its doctorates. Second reviewer: Wikidata confirms Q6436111 is the Mitchell E. Daniels, Jr. School of Business, the renamed Krannert School, whose parent is Purdue University (Q217741). Purdue awards its doctorates, so sameAs 'Purdue University' is right.",
+      "reviewedAt": "2026-10-17"
+    },
+    "Kuehne Logistics University (KLU), Hamburg, Germany (PhD in Business Administration from University of Hamburg)": {
+      "canonical": "University of Hamburg",
+      "reason": "The text names KLU but states that the PhD in Business Administration is from the University of Hamburg, so Hamburg is the institution that awarded the doctorate. Second reviewer: The text itself states that the PhD in Business Administration (2016) is from the University of Hamburg, so Hamburg is the awarding body even though the person was at KLU. Q156725 is the University of Hamburg, and the existing entry 'University of Hamburg' is Q156725.",
+      "reviewedAt": "2026-10-17"
+    },
+    "Lally School of Management and Technology, Rensselaer Polytechnic Institute": {
+      "canonical": "Rensselaer Polytechnic Institute",
+      "reason": "Wikidata Q6480505 is RPI's Lally School of Management & Technology (website lally.rpi.edu), and RPI awards its doctorates. Second reviewer: Q6480505 is the Lally School (lally.rpi.edu; the item has no parent claim), and the sameAs is right. The QID should be the existing entry's Q49211, the institute that awards the doctorate.",
+      "reviewedAt": "2026-10-17"
+    },
+    "MIT": {
+      "canonical": "Massachusetts Institute of Technology",
+      "reason": "MIT is the standard abbreviation for the Massachusetts Institute of Technology. Second reviewer: MIT is the standard abbreviation of the Massachusetts Institute of Technology (Q49108), the same item as the existing entry.",
+      "reviewedAt": "2026-10-17"
+    },
+    "MIT Operations Research Center": {
+      "canonical": "Massachusetts Institute of Technology",
+      "reason": "The Operations Research Center is an MIT unit whose doctorates MIT awards, and Wikidata has no item for the center itself. Second reviewer: Wikidata search found no item for the center, and MIT awards its doctorates, so sameAs MIT is right. But leaving correctQid null while sameAs points to MIT (Q49108) is inconsistent. Use Q49108, the same parent-university treatment as for the business-school names.",
+      "reviewedAt": "2026-10-17"
+    },
+    "MIT Sloan School of Management": {
+      "canonical": "Massachusetts Institute of Technology",
+      "reason": "The matched item is MIT Sloan, a school of MIT, whose doctorates MIT awards. Second reviewer: Q142740 is MIT Sloan, with parent and part-of Q49108 (MIT). The sameAs target MIT is Q49108, which awards Sloan PhDs.",
+      "reviewedAt": "2026-10-17"
+    },
+    "Massachusetts Institute of Technology (MIT)": {
+      "canonical": "Massachusetts Institute of Technology",
+      "reason": "This is MIT: the matched item and the existing entry. Second reviewer: Q49108 is MIT, the existing entry's QID.",
+      "reviewedAt": "2026-10-17"
+    },
+    "McCombs School of Business, the University of Texas at Austin": {
+      "canonical": "The University of Texas at Austin",
+      "reason": "Q6800462 is McCombs School of Business, a UT Austin school whose doctorates UT Austin awards. Second reviewer: Q6800462 is McCombs, with P749 (parent organization) Q49213, which is the existing UT Austin entry's QID.",
+      "reviewedAt": "2026-10-17"
+    },
+    "NYU Stern School of Business": {
+      "canonical": "New York University",
+      "reason": "Q770467 is the Stern School of Business, which is part of New York University (Q49210). Second reviewer: The search returned Q770467 (Stern, P749 Q49210). The sameAs is right, but the item should be the existing entry's Q49210, the university that awards the doctorate. Keeping the school item would conflict with the sameAs entity.",
+      "reviewedAt": "2026-10-17"
+    },
+    "New York University, Stern School of Business": {
+      "canonical": "New York University",
+      "reason": "Wikidata Q770467 is NYU's Stern School of Business, which is part of New York University (Q49210). Second reviewer: Q770467 is Stern (P749/P361 Q49210), and the sameAs is right. The QID should be the existing entry's Q49210, the university that awards the doctorate, consistent with the other school-name mappings.",
+      "reviewedAt": "2026-10-17"
+    },
+    "Pamplin College of Business, Virginia Polytechnic Institute": {
+      "canonical": "Virginia Tech",
+      "reason": "Q22025995 is the Pamplin College of Business of Virginia Tech (Virginia Polytechnic Institute and State University), which awards its doctorates. Second reviewer: Q22025995 is Virginia Tech's Pamplin College of Business, with P749 Q65379, which is the existing 'Virginia Tech' entry's QID.",
+      "reviewedAt": "2026-10-17"
+    },
+    "Princeton": {
+      "canonical": "Princeton University",
+      "reason": "Used as a doctorate-awarding institution, Princeton is the short form of Princeton University, which is the matched item. Second reviewer: Q21578 is Princeton University, the existing entry's QID. Both people (Tingley, Hurvich) hold Princeton University PhDs, and no other doctorate-awarding body is plausibly meant.",
+      "reviewedAt": "2026-10-17"
+    },
+    "Purdue University West Lafayette": {
+      "canonical": "Purdue University",
+      "reason": "West Lafayette is Purdue's main campus, which is Q217741, the item the existing 'Purdue University' entry is matched to. Second reviewer: Q217741 is Purdue University in West Lafayette, the main campus, and the existing 'Purdue University' entry's QID.",
+      "reviewedAt": "2026-10-17"
+    },
+    "Queen's University (Kingston, Canada)": {
+      "canonical": "Queen's University",
+      "reason": "The Kingston qualifier identifies Queen's University at Kingston (Q1420038), the same item the existing 'Queen's University' entry is matched to. Second reviewer: Q1420038 is Queen's University in Kingston, Ontario, the QID of the existing 'Queen's University' entry.",
+      "reviewedAt": "2026-10-17"
+    },
+    "Ross School of Business, University of Michigan - Ann Arbor": {
+      "canonical": "University of Michigan at Ann Arbor",
+      "reason": "The Ross School of Business is part of the University of Michigan in Ann Arbor, which awards its doctorates. Second reviewer: The text names Ann Arbor explicitly. Ross is part of the University of Michigan (Q230492, Ann Arbor), which awards its doctorates. The existing entry 'University of Michigan at Ann Arbor' is Q230492.",
+      "reviewedAt": "2026-10-17"
+    },
+    "Sapienza University of Rome": {
+      "canonical": "Sapienza Università di Roma",
+      "reason": "This is the English name of the same university as the existing Italian-named entry. Second reviewer: This is the English name of the existing entry 'Sapienza Università di Roma'. Both use item Q209344.",
+      "reviewedAt": "2026-10-17"
+    },
+    "Sauder School of Business at University of British Columbia": {
+      "canonical": "University of British Columbia",
+      "reason": "Q7427076 is the Sauder School of Business, a school of UBC, which awards its doctorates. Second reviewer: Q7427076 is Sauder, with P749/P361 Q391028, which is the existing 'University of British Columbia' entry's QID.",
+      "reviewedAt": "2026-10-17"
+    },
+    "Sauder School of Business, University of British Columbia": {
+      "canonical": "University of British Columbia",
+      "reason": "This names the Sauder School of Business (Q7427076), whose doctorates the University of British Columbia awards. Second reviewer: UBC awards Sauder doctorates, so sameAs is right. But correctQid Q7427076 (the school, P361 part of Q391028) conflicts with the sameAs entry's QID Q391028. Use the parent university's QID.",
+      "reviewedAt": "2026-10-17"
+    },
+    "School of Management, UT Dallas": {
+      "canonical": "The University of Texas at Dallas",
+      "reason": "This is UT Dallas's (Naveen Jindal) School of Management, but the only Wikidata item found for it describes a building, not the school, so no QID is given. Second reviewer: Verified: the only Wikidata item for the Naveen Jindal School of Management, Q108073379, is a school building (P31 Q1244442), and a search for 'Jindal School of Management' returns nothing else. correctQid null with sameAs 'The University of Texas at Dallas' (Q1781394) correctly links the university that awards the degree.",
+      "reviewedAt": "2026-10-17"
+    },
+    "Sheffield University, UK": {
+      "canonical": "University of Sheffield",
+      "reason": "Sheffield University is the common short form of the University of Sheffield. Second reviewer: 'Sheffield University' is a Wikidata alias of Q823917 (University of Sheffield) and is the standard colloquial name. Sheffield Hallam is always called by its own name. The existing entry 'University of Sheffield' is Q823917.",
+      "reviewedAt": "2026-10-17"
+    },
+    "Smith School of Business at Queen's University": {
+      "canonical": "Queen's University",
+      "reason": "Wikidata Q105424537 is the Smith School of Business, a faculty of Queen's University in Kingston (Q1420038, the existing entry's item). Second reviewer: Q105424537 is the Smith School (part of Q1420038, Kingston), and the sameAs is right: 'at Queen's University' with smith.queensu.ca rules out Queen's Belfast. The QID should be the existing entry's Q1420038, consistent with how school names are mapped to the degree-awarding university.",
+      "reviewedAt": "2026-10-17"
+    },
+    "Smith School of Business, Queen's University": {
+      "canonical": "Queen's University",
+      "reason": "Q105424537 is the Smith School of Business, a faculty of Queen's University in Kingston (Q1420038), which awards its doctorates. Second reviewer: Q105424537 is the Smith School of Business, a faculty of Queen's University (P361 Q1420038). A search found no other Smith or Queen's School of Business item (Q7345110 is Maryland's Robert H. Smith School). sameAs Queen's University (Q1420038) is correct.",
+      "reviewedAt": "2026-10-17"
+    },
+    "Stanford": {
+      "canonical": "Stanford University",
+      "reason": "'Stanford' is the usual short form for Stanford University. Second reviewer: 'Stanford' is the usual short form of Stanford University. Q41506 is the same item as the existing entry.",
+      "reviewedAt": "2026-10-17"
+    },
+    "Stanford University (Department of Management Science and Engineering)": {
+      "canonical": "Stanford University",
+      "reason": "This is a department of Stanford University, which awards its doctorates. Second reviewer: MS&E is a Stanford department, and Stanford University (Q41506) awards its PhDs. The existing entry 'Stanford University' is Q41506.",
+      "reviewedAt": "2026-10-17"
+    },
+    "State University of New York at Buffalo": {
+      "canonical": "University at Buffalo, The State University of New York",
+      "reason": "This is an older name of the University at Buffalo, which is both the matched item and an existing entry. Second reviewer: 'State University of New York at Buffalo' is a listed alias of Q681025 (University at Buffalo). The existing entry 'University at Buffalo, The State University of New York' is Q681025.",
+      "reviewedAt": "2026-10-17"
+    },
+    "State University of New York, Buffalo": {
+      "canonical": "University at Buffalo, The State University of New York",
+      "reason": "SUNY Buffalo is the University at Buffalo, which is the matched item. Second reviewer: This is the 1974-era name (SUNY at Buffalo) of Q681025, matching the existing entry's QID. Buffalo State College did not award this kind of doctorate.",
+      "reviewedAt": "2026-10-17"
+    },
+    "TU Darmstadt, Germany": {
+      "canonical": "Technical University of Darmstadt",
+      "reason": "TU Darmstadt is the standard short form of the Technical University of Darmstadt. Second reviewer: 'TU Darmstadt' is a Wikidata alias of Q310695 (Technical University of Darmstadt). The existing entry 'Technical University of Darmstadt' is Q310695.",
+      "reviewedAt": "2026-10-17"
+    },
+    "Technion": {
+      "canonical": "Technion – Israel Institute of Technology",
+      "reason": "Technion is the standard short name of the Technion – Israel Institute of Technology. Second reviewer: 'Technion' unambiguously denotes the Technion – Israel Institute of Technology (Q333705). The 1975 PhD is after its founding in 1924. The existing entry has the same exact name and QID.",
+      "reviewedAt": "2026-10-17"
+    },
+    "Tepper School of Business, Carnegie Mellon University": {
+      "canonical": "Carnegie Mellon University",
+      "reason": "This names Carnegie Mellon's Tepper School of Business (Q7701381), whose doctorates Carnegie Mellon University awards. Second reviewer: sameAs CMU is right, since CMU awards Tepper doctorates. But correctQid Q7701381 (the school) differs from the sameAs entry's QID Q190080. Use the parent university's QID so the pair is consistent and matches the batch 4 convention for business schools.",
+      "reviewedAt": "2026-10-17"
+    },
+    "Texas A & M University - College Station": {
+      "canonical": "Texas A&M University",
+      "reason": "This is Texas A&M University's main campus in College Station (Q49212). Second reviewer: Q49212 is Texas A&M University in College Station (P131 College Station), the existing entry's item. The College Station qualifier rules out the other Texas A&M system campuses.",
+      "reviewedAt": "2026-10-17"
+    },
+    "The George Washington University School of Business": {
+      "canonical": "George Washington University",
+      "reason": "Q7736192 is the GWU School of Business, whose parent is George Washington University (Q432637), which awards its doctorates. Second reviewer: The search returned Q7736192, the GWU School of Business (P749 Q432637). The sameAs is right, but the item should be the existing entry's Q432637, the university that awards the doctorate, so the verdict becomes a correction from the school item to the university.",
+      "reviewedAt": "2026-10-17"
+    },
+    "The Hong Kong University of Science and Technology": {
+      "canonical": "Hong Kong University of Science and Technology",
+      "reason": "Q1333303 is HKUST; the leading 'The' is only a style variant. Second reviewer: Q1333303 is HKUST in Clear Water Bay, the existing entry's item. The name has no Guangzhou qualifier, and the 2010 PhD predates the Guangzhou campus (opened 2022).",
+      "reviewedAt": "2026-10-17"
+    },
+    "The Pennsylvania State University": {
+      "canonical": "Pennsylvania State University",
+      "reason": "This is Penn State's formal name with the article, and the matched item is Penn State. Second reviewer: Formal name of Penn State with the article. Q739627 is Penn State (psu.edu), and the existing entry 'Pennsylvania State University' carries the same QID. No campus is named, so it means the degree-granting university.",
+      "reviewedAt": "2026-10-17"
+    },
+    "The Pennsylvania State University, University Park": {
+      "canonical": "Pennsylvania State University",
+      "reason": "University Park is Penn State's main campus, and Penn State (Q739627) awards its doctorates. Second reviewer: University Park is Penn State's main campus, and 'Pennsylvania State University, University Park' is a Wikidata alias of Q739627. The existing entry 'Pennsylvania State University' is Q739627.",
+      "reviewedAt": "2026-10-17"
+    },
+    "The University of Arizona": {
+      "canonical": "University of Arizona",
+      "reason": "Q503419 is the University of Arizona in Tucson; the leading 'The' is only a style variant. Second reviewer: Q503419 is the University of Arizona in Tucson (arizona.edu), the existing entry's item. The leading article does not change the meaning, and Arizona State is a different name.",
+      "reviewedAt": "2026-10-17"
+    },
+    "The University of California, Los Angeles": {
+      "canonical": "University of California, Los Angeles",
+      "reason": "This is the University of California, Los Angeles written with the article. Second reviewer: This is UCLA written with the article. Q174710 is the same item as the existing entry.",
+      "reviewedAt": "2026-10-17"
+    },
+    "The University of Chicago": {
+      "canonical": "University of Chicago",
+      "reason": "This is the University of Chicago written with the article. Second reviewer: This is the University of Chicago written with the article. Q131252 is the same item as the existing entry.",
+      "reviewedAt": "2026-10-17"
+    },
+    "The University of Connecticut": {
+      "canonical": "University of Connecticut",
+      "reason": "This is the University of Connecticut (Q49206), the existing entry; only the leading 'The' differs. Second reviewer: Q49206 is the University of Connecticut (Storrs), the existing entry's QID. Only the article differs.",
+      "reviewedAt": "2026-10-17"
+    },
+    "The University of Georgia": {
+      "canonical": "University of Georgia",
+      "reason": "The matched item is a university in Tbilisi founded in 2004, which a 1992 PhD rules out, so the name means the University of Georgia in Athens, Georgia, USA. Second reviewer: The matched Q1509484 is a university in Tbilisi with inception 2004, which cannot have awarded a 1992 PhD. The person is US-based faculty (Penn State Smeal). Q761534 is the University of Georgia in Athens (founded 1785), and the existing entry 'University of Georgia' is Q761534.",
+      "reviewedAt": "2026-10-17"
+    },
+    "The University of Iowa": {
+      "canonical": "University of Iowa",
+      "reason": "Q182973 is the University of Iowa in Iowa City; the leading 'The' is only a style variant. Second reviewer: Q182973 is the University of Iowa in Iowa City. The leading article does not change which university is meant, and the existing 'University of Iowa' entry uses Q182973.",
+      "reviewedAt": "2026-10-17"
+    },
+    "The University of Michigan": {
+      "canonical": "University of Michigan at Ann Arbor",
+      "reason": "The University of Michigan with no campus suffix is the Ann Arbor university, which is the matched item. Second reviewer: Without a campus suffix, 'The University of Michigan' conventionally means the Ann Arbor flagship. Dearborn and Flint always name their campus. Q230492 is the Ann Arbor university, and the existing entry 'University of Michigan at Ann Arbor' is Q230492.",
+      "reviewedAt": "2026-10-17"
+    },
+    "The University of New South Wales": {
+      "canonical": "University of New South Wales",
+      "reason": "This is the University of New South Wales written with the article. Second reviewer: This is UNSW written with the article. Q734764 is the same item as the existing entry.",
+      "reviewedAt": "2026-10-17"
+    },
+    "The University of Rochester": {
+      "canonical": "University of Rochester",
+      "reason": "This is the University of Rochester (Q149990) with a leading 'The'. Second reviewer: Q149990 is the University of Rochester, the existing entry's item. The leading article does not change the meaning.",
+      "reviewedAt": "2026-10-17"
+    },
+    "The University of Texas at Arlington (UTA)": {
+      "canonical": "University of Texas at Arlington",
+      "reason": "This is UT Arlington (Q1230739), the existing entry. Second reviewer: Q1230739 is UT Arlington (UT System), the existing 'University of Texas at Arlington' entry's QID.",
+      "reviewedAt": "2026-10-17"
+    },
+    "The University of Texas at Austin, McCombs School of Business": {
+      "canonical": "The University of Texas at Austin",
+      "reason": "Wikidata Q6800462 is the McCombs School of Business, whose parent is the University of Texas at Austin (Q49213). Second reviewer: Q6800462 is McCombs (P749 Q49213), and the sameAs is right. The QID should be the existing entry's Q49213, because the university awards the doctorate; a school item would conflict with the sameAs entity.",
+      "reviewedAt": "2026-10-17"
+    },
+    "The Wharton School": {
+      "canonical": "University of Pennsylvania",
+      "reason": "The Wharton School is the business school of the University of Pennsylvania, which awards its doctorates. Second reviewer: Wikidata confirms Q1329269 is the Wharton School, which is part of the University of Pennsylvania (Q49117). The university awards its doctorates, so sameAs 'University of Pennsylvania' is right. If the integrator merges this name into the Penn entity, the school item will be recorded as an item conflict.",
+      "reviewedAt": "2026-10-17"
+    },
+    "The Wharton School, University of Pennsylvania": {
+      "canonical": "University of Pennsylvania",
+      "reason": "Wikidata Q1329269 is The Wharton School, a school of the University of Pennsylvania (Q49117), which awards its doctorates. Second reviewer: Q1329269 is Wharton (part of Q49117), and the sameAs is right. But the existing 'University of Pennsylvania' entry uses Q49117, and the earlier review mapped school names to the university that awards the degree (Warrington to Q501758, Carlson to Q238101). Keeping the school item would conflict with the sameAs entity.",
+      "reviewedAt": "2026-10-17"
+    },
+    "UC Berkeley": {
+      "canonical": "University of California, Berkeley",
+      "reason": "UC Berkeley is the standard short form for the Berkeley campus of the University of California. Second reviewer: UC Berkeley is the standard short form for the Berkeley campus. Q168756 is the same item as the existing 'University of California, Berkeley' entry.",
+      "reviewedAt": "2026-10-17"
+    },
+    "UC Irvine": {
+      "canonical": "University of California, Irvine",
+      "reason": "UC Irvine is the short form of the University of California, Irvine. Second reviewer: Standard short form of Q868421, matching the existing entry's QID.",
+      "reviewedAt": "2026-10-17"
+    },
+    "UCLA": {
+      "canonical": "University of California, Los Angeles",
+      "reason": "UCLA is the standard abbreviation of the University of California, Los Angeles. Second reviewer: UCLA is an alias of Q174710 and is unambiguous. The PhD years (1972, 1994, 2004) fall after its founding. The existing entry 'University of California, Los Angeles' is Q174710.",
+      "reviewedAt": "2026-10-17"
+    },
+    "UCLA Anderson School of Management": {
+      "canonical": "University of California, Los Angeles",
+      "reason": "The matched item is UCLA Anderson, a school of UCLA, which awards its doctorates. Second reviewer: Q2197052 is UCLA Anderson, with P749 Q174710, which is the existing 'University of California, Los Angeles' entry's QID.",
+      "reviewedAt": "2026-10-17"
+    },
+    "UCSD Rady School of Management": {
+      "canonical": "University of California San Diego",
+      "reason": "Wikidata Q7281806 is the Rady School of Management at UC San Diego (website rady.ucsd.edu), and UCSD awards its doctorates. Second reviewer: Q7281806 is the Rady School (rady.ucsd.edu), and the sameAs is right. The QID should be the existing entry's Q622664, the university that awards the doctorate.",
+      "reviewedAt": "2026-10-17"
+    },
+    "Universidad de Zaragoza": {
+      "canonical": "University of Zaragoza",
+      "reason": "This is the Spanish-language name of the University of Zaragoza. Second reviewer: This is the Spanish name of the University of Zaragoza. Q633561 is the same item as the existing entry.",
+      "reviewedAt": "2026-10-17"
+    },
+    "University at Buffalo": {
+      "canonical": "University at Buffalo, The State University of New York",
+      "reason": "Q681025 is the University at Buffalo, which the existing entry names in full. Second reviewer: Q681025 is the University at Buffalo (buffalo.edu), the item the existing full-name entry uses. 'University at Buffalo' means UB specifically, not SUNY Buffalo State, and the 1990 PhD is the same institution under its earlier name.",
+      "reviewedAt": "2026-10-17"
+    },
+    "University at Buffalo, State University of New York": {
+      "canonical": "University at Buffalo, The State University of New York",
+      "reason": "This is the official name of the University at Buffalo (Q681025), which already exists in the database. Second reviewer: Official name of the University at Buffalo. Q681025 has the alias 'University at Buffalo, The State University of New York', and the existing entry with that exact name is Q681025.",
+      "reviewedAt": "2026-10-17"
+    },
+    "University of Arkansas": {
+      "canonical": "University of Arkansas at Fayetteville",
+      "reason": "The unqualified name is the official name of the Fayetteville flagship, the same item as the existing Fayetteville entry. Second reviewer: Q1070333 is labelled 'University of Arkansas' (Fayetteville), and its parent is the University of Arkansas System. The other system campuses all carry qualifiers ('at Little Rock', 'for Medical Sciences'), so the bare name is the Fayetteville flagship. The existing 'University of Arkansas at Fayetteville' entry has the same item.",
+      "reviewedAt": "2026-10-17"
+    },
+    "University of Birmingham, United Kingdom": {
+      "canonical": "University of Birmingham",
+      "reason": "The UK qualifier identifies the University of Birmingham (Q223429), which matches the existing entry. Second reviewer: Q223429 is the University of Birmingham, England, the same QID as the existing 'University of Birmingham' entry. The UK qualifier rules out other Birminghams.",
+      "reviewedAt": "2026-10-17"
+    },
+    "University of California Davis": {
+      "canonical": "University of California, Davis",
+      "reason": "Same campus as the matched item and the existing entry; only the comma is missing. Second reviewer: Q129421 is UC Davis (part of the UC system), the same QID as the existing 'University of California, Davis'.",
+      "reviewedAt": "2026-10-17"
+    },
+    "University of California at Berkeley": {
+      "canonical": "University of California, Berkeley",
+      "reason": "This is a spelling variant of the University of California, Berkeley, which is the matched item. Second reviewer: Spelling variant of Q168756. All 6 people are plainly at Berkeley, and the existing entry has the same QID.",
+      "reviewedAt": "2026-10-17"
+    },
+    "University of California at Davis": {
+      "canonical": "University of California, Davis",
+      "reason": "Q129421 is UC Davis, and this is a wording variant of the existing name. Second reviewer: Q129421 is UC Davis, the existing entry's item. The name is only a wording variant.",
+      "reviewedAt": "2026-10-17"
+    },
+    "University of California at Los Angeles": {
+      "canonical": "University of California, Los Angeles",
+      "reason": "This is a spelling variant of the University of California, Los Angeles. Second reviewer: This is a spelling variant of UCLA. Q174710 is the same item as the existing entry.",
+      "reviewedAt": "2026-10-17"
+    },
+    "University of California, San Diego": {
+      "canonical": "University of California San Diego",
+      "reason": "Same campus as the matched item and the existing entry; only punctuation differs. Second reviewer: Q622664 is UC San Diego, the same QID as the existing 'University of California San Diego'.",
+      "reviewedAt": "2026-10-17"
+    },
+    "University of Chicago Booth School of Business": {
+      "canonical": "University of Chicago",
+      "reason": "The matched item is Booth, a school of the University of Chicago, which awards its doctorates. Second reviewer: Q2963304 is Booth, with P361 Q131252, which is the existing 'University of Chicago' entry's QID.",
+      "reviewedAt": "2026-10-17"
+    },
+    "University of Illinois at Chicago": {
+      "canonical": "University of Illinois Chicago",
+      "reason": "This is the former official name of the University of Illinois Chicago, which is the matched item. Second reviewer: Q955764 (UIC, from 1983) lists 'University of Illinois at Chicago' as an alias. The name only existed after the 1982 merger, so it cannot mean a predecessor campus. The existing entry 'University of Illinois Chicago' has QID Q955764.",
+      "reviewedAt": "2026-10-17"
+    },
+    "University of Illinois at Urbana Champaign": {
+      "canonical": "University of Illinois Urbana-Champaign",
+      "reason": "Q457281 is the Urbana-Champaign campus; the name is a spelling variant of the existing one. Second reviewer: Q457281 is UIUC, and the name is a spelling variant (missing hyphen) of the existing 'University of Illinois Urbana-Champaign' entry, which uses the same item. The 2014 PhD fits.",
+      "reviewedAt": "2026-10-17"
+    },
+    "University of Illinois at Urbana-Champaign": {
+      "canonical": "University of Illinois Urbana-Champaign",
+      "reason": "Q457281 is the Urbana-Champaign campus; this is the older form of the existing name. Second reviewer: Q457281 is the University of Illinois Urbana-Champaign (illinois.edu). The written name is its former official name, and the existing entry with the same name uses the same item.",
+      "reviewedAt": "2026-10-17"
+    },
+    "University of Kent, UK": {
+      "canonical": "University of Kent",
+      "reason": "The added country makes this the University of Kent in England (Q1516684), which is already in the existing list. Second reviewer: The 'UK' suffix rules out Kent State. Q1516684 is the University of Kent and matches the existing entry's QID.",
+      "reviewedAt": "2026-10-17"
+    },
+    "University of Maryland": {
+      "canonical": "University of Maryland, College Park",
+      "reason": "Plain \"University of Maryland\" is the usual name of the College Park flagship (it is also the label of Q503415), and the system's other campuses always carry a qualifier. Second reviewer: Q503415 is labelled 'University of Maryland' (College Park, umd.edu). I checked all 9 people in the dataset with this written name, including Dongwon Lee's HKUST page ('PhD in Information Systems, The University of Maryland, 2017'), and none points to UMBC or UMB. Those campuses always carry a qualifier.",
+      "reviewedAt": "2026-10-17"
+    },
+    "University of Maryland at College Park": {
+      "canonical": "University of Maryland, College Park",
+      "reason": "This is a spelling variant of the University of Maryland, College Park. Second reviewer: 'University of Maryland at College Park' is a listed alias of Q503415. The College Park suffix excludes the other campuses (UMBC, UMB, etc.). The existing entry 'University of Maryland, College Park' is Q503415.",
+      "reviewedAt": "2026-10-17"
+    },
+    "University of Maryland, College Park (Smith School of Business)": {
+      "canonical": "University of Maryland, College Park",
+      "reason": "This names the Robert H. Smith School of Business (Q7345110), whose doctorates the University of Maryland, College Park awards. Second reviewer: The College Park university awards Smith doctorates, so sameAs is right. But correctQid Q7345110 (the school, P749 parent Q503415) conflicts with the sameAs entry's QID Q503415. Use the parent university's QID.",
+      "reviewedAt": "2026-10-17"
+    },
+    "University of Massachusetts-Amherst": {
+      "canonical": "University of Massachusetts Amherst",
+      "reason": "This is a hyphenated spelling of the University of Massachusetts Amherst. Second reviewer: This is a hyphenated spelling of the University of Massachusetts Amherst. Q15142 is the same item as the existing entry.",
+      "reviewedAt": "2026-10-17"
+    },
+    "University of Michigan": {
+      "canonical": "University of Michigan at Ann Arbor",
+      "reason": "The unqualified name conventionally denotes the Ann Arbor flagship, which is the matched item and the existing Ann Arbor entry. Second reviewer: Q230492 is the University of Michigan in Ann Arbor, the same QID as the existing 'University of Michigan at Ann Arbor' entry. All three people listed (Marrero, White, Garcia) have Ann Arbor doctorates, and the unqualified name conventionally means the flagship.",
+      "reviewedAt": "2026-10-17"
+    },
+    "University of Michigan - Ann Arbor": {
+      "canonical": "University of Michigan at Ann Arbor",
+      "reason": "This is the University of Michigan at Ann Arbor (Q230492), written differently. Second reviewer: Same university as the existing 'University of Michigan at Ann Arbor' (Q230492), with different punctuation.",
+      "reviewedAt": "2026-10-17"
+    },
+    "University of Michigan, Ann Arbor": {
+      "canonical": "University of Michigan at Ann Arbor",
+      "reason": "This is the Ann Arbor University of Michigan, written slightly differently from the existing entry. Second reviewer: Q230492 is the Ann Arbor University of Michigan, and the existing 'University of Michigan at Ann Arbor' entry has the same QID.",
+      "reviewedAt": "2026-10-17"
+    },
+    "University of Minnesota-Twin Cities": {
+      "canonical": "University of Minnesota",
+      "reason": "The match is the Twin Cities campus item, the same item as the existing 'University of Minnesota' entry. Second reviewer: Q238101 is the Minneapolis-Saint Paul university (twin-cities.umn.edu), the same item as the existing 'University of Minnesota' entry. The written name names the campus explicitly.",
+      "reviewedAt": "2026-10-17"
+    },
+    "University of Missouri": {
+      "canonical": "University of Missouri-Columbia",
+      "reason": "University of Missouri is the official name of the Columbia flagship; the system's other campuses always carry a qualifier. Second reviewer: Q579968, labelled 'University of Missouri' (Columbia), is the existing 'University of Missouri-Columbia' entry. UMKC, UMSL and Missouri S&T always carry their own names.",
+      "reviewedAt": "2026-10-17"
+    },
+    "University of Montreal": {
+      "canonical": "Université de Montréal",
+      "reason": "This is the English form of Université de Montréal (Q392189). Second reviewer: Q392189 is the Université de Montréal (umontreal.ca), the existing entry's item. 'University of Montreal' is its standard English name, not HEC Montréal, Polytechnique, McGill or Concordia.",
+      "reviewedAt": "2026-10-17"
+    },
+    "University of Pennsylvania's Wharton School": {
+      "canonical": "University of Pennsylvania",
+      "reason": "The name denotes the Wharton School of the University of Pennsylvania, which awards its doctorates. Second reviewer: This is the same organisation as the entry above: Q1329269 is the Wharton School, part of Penn (Q49117), and sameAs 'University of Pennsylvania' is right.",
+      "reviewedAt": "2026-10-17"
+    },
+    "University of Pennsylvania, Wharton School": {
+      "canonical": "University of Pennsylvania",
+      "reason": "The name denotes the Wharton School of the University of Pennsylvania, which awards its doctorates. Second reviewer: Q1329269 is the Wharton School, part of the University of Pennsylvania (Q49117), which awards its doctorates. Both the item and sameAs 'University of Pennsylvania' are consistent with the 'The Wharton School' decision.",
+      "reviewedAt": "2026-10-17"
+    },
+    "University of Texas at Austin": {
+      "canonical": "The University of Texas at Austin",
+      "reason": "Same university as the matched item and the existing entry; only the leading 'The' differs. Second reviewer: Q49213 is UT Austin (UT System parent), the same QID as the existing 'The University of Texas at Austin'. Only the article differs.",
+      "reviewedAt": "2026-10-17"
+    },
+    "University of Texas at Dallas": {
+      "canonical": "The University of Texas at Dallas",
+      "reason": "This is the same university as the existing entry, written without the leading article. Second reviewer: Same university as the existing entry 'The University of Texas at Dallas' (Q1781394), written without the article. There is no other UT Dallas.",
+      "reviewedAt": "2026-10-17"
+    },
+    "University of Texas-Austin": {
+      "canonical": "The University of Texas at Austin",
+      "reason": "This is a spelling variant of the University of Texas at Austin. Second reviewer: This is a spelling variant of the University of Texas at Austin. Wikidata confirms Q49213 is UT Austin, the same item as the existing entry.",
+      "reviewedAt": "2026-10-17"
+    },
+    "University of Utah School of Medicine": {
+      "canonical": "University of Utah",
+      "reason": "Q7896521 is the University of Utah School of Medicine, whose doctorates the University of Utah awards. Second reviewer: The search returned Q7896521, the School of Medicine. The sameAs is right, but the item should be the existing entry's Q168515, the university that awards the doctorate, consistent with the other school-name mappings.",
+      "reviewedAt": "2026-10-17"
+    },
+    "University of Virginia (Darden School)": {
+      "canonical": "University of Virginia",
+      "reason": "The Darden School is part of the University of Virginia, which awards its doctorates. Second reviewer: Darden is a school of the University of Virginia (Q213439), which awards its doctorates. The existing entry 'University of Virginia' is Q213439.",
+      "reviewedAt": "2026-10-17"
+    },
+    "University of Washington, Seattle": {
+      "canonical": "University of Washington",
+      "reason": "This is the University of Washington's Seattle campus, item Q219563, the same item as the existing entry. Second reviewer: Q219563 is the University of Washington in Seattle (uw.edu), the item the existing 'University of Washington' entry uses. The Seattle qualifier only names the main campus.",
+      "reviewedAt": "2026-10-17"
+    },
+    "University of Western Ontario": {
+      "canonical": "Western University (Canada) /  University of Western at London, Ontario",
+      "reason": "The match is the London, Ontario university, the same item as the existing Western University entry. Second reviewer: Q1144262 is the University of Western Ontario in London, Ontario (short name UWO), the same item as the existing Western University entry.",
+      "reviewedAt": "2026-10-17"
+    },
+    "University of Wisconsin - Madison": {
+      "canonical": "University of Wisconsin–Madison",
+      "reason": "Q838330 is the Madison campus; the name differs from the existing one only in punctuation. Second reviewer: Q838330 is the Madison campus, and the existing 'University of Wisconsin–Madison' entry uses it. The names differ only in the dash.",
+      "reviewedAt": "2026-10-17"
+    },
+    "University of Wisconsin, Madison": {
+      "canonical": "University of Wisconsin–Madison",
+      "reason": "This is the University of Wisconsin–Madison, written with a comma instead of a dash. Second reviewer: Punctuation variant of Q838330, matching the existing entry's QID.",
+      "reviewedAt": "2026-10-17"
+    },
+    "University of Wisconsin-Madison": {
+      "canonical": "University of Wisconsin–Madison",
+      "reason": "Same university; the written name differs from the existing entry only by hyphen versus en dash. Second reviewer: SPARQL confirms Q838330 is the University of Wisconsin–Madison. The existing entry has the same QID and differs only by en dash versus hyphen.",
+      "reviewedAt": "2026-10-17"
+    },
+    "Université Laval, Canada": {
+      "canonical": "Université Laval",
+      "reason": "This is the existing entry Université Laval with a country suffix added. Second reviewer: Q1067935 (Laval University, alias 'Université Laval', Quebec City). The existing entry 'Université Laval' is Q1067935. The country suffix only confirms which university is meant.",
+      "reviewedAt": "2026-10-17"
+    },
+    "Université de Nantes": {
+      "canonical": "University of Nantes",
+      "reason": "Q259388 is the Nantes university item (French label 'université de Nantes', website univ-nantes.fr), but the existing 'University of Nantes' entry points to Q3551644, a rowing club, and needs correcting. Second reviewer: Q259388 is Nantes University (French label 'université de Nantes', univ-nantes.fr). The HEC page lists 'Ph. D. Informatique Appliquée, Université de Nantes', which is not the separate École des Mines de Nantes. The existing 'University of Nantes' entry points to Q3551644, which Wikidata describes as a French rowing club, so that entry needs correcting to Q259388.",
+      "reviewedAt": "2026-10-17"
+    },
+    "Virginia Polytechnic Institute and State University": {
+      "canonical": "Virginia Tech",
+      "reason": "This is the official name of Virginia Tech, which is the matched item. Second reviewer: Official name of Q65379, whose Finnish label is exactly this string. The existing 'Virginia Tech' entry has the same QID.",
+      "reviewedAt": "2026-10-17"
+    },
+    "Warrington College of Business at the University of Florida": {
+      "canonical": "University of Florida",
+      "reason": "The Warrington College of Business is part of the University of Florida, which awards its doctorates. Second reviewer: Warrington is a college of the University of Florida (Q501758), which awards its doctorates. The existing entry 'University of Florida' is Q501758.",
+      "reviewedAt": "2026-10-17"
+    },
+    "Warrington College of Business, University of Florida": {
+      "canonical": "University of Florida",
+      "reason": "Wikidata Q7970719 is the Warrington College of Business (website warrington.ufl.edu), the University of Florida's business school. Second reviewer: Q7970719 is the Warrington College (warrington.ufl.edu), and the sameAs is right. The earlier review mapped 'Warrington College of Business at the University of Florida' to Q501758, the existing entry's item, so this spelling should match it.",
+      "reviewedAt": "2026-10-17"
+    },
+    "Weatherhead School of Management, Case Western Reserve University": {
+      "canonical": "Case Western Reserve University",
+      "reason": "Q7978295 is the Weatherhead School of Management, a school of Case Western Reserve University, which awards its doctorates. Second reviewer: Q7978295 is the Weatherhead School of Management, with P361 Q1047060, which is the existing 'Case Western Reserve University' entry's QID.",
+      "reviewedAt": "2026-10-17"
+    },
+    "École Centrale de Paris": {
+      "canonical": "Ecole Centrale Paris",
+      "reason": "This is a spelling variant of École Centrale Paris, the matched item and the existing entry. Second reviewer: Q273447 is École Centrale Paris. theses.fr 1994ECAP0370 shows Pasin defended at Ecole centrale de Paris in 1994, long before the 2015 CentraleSupélec merger, so the existing 'Ecole Centrale Paris' entry is right.",
+      "reviewedAt": "2026-10-17"
+    }
+  }
+}
