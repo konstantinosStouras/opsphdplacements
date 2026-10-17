@@ -4,16 +4,16 @@
     "updatedAt": "2026-10-17",
     "total": 3161,
     "counts": {
-      "unresolved": 1616,
-      "verified": 1541,
+      "unresolved": 1596,
+      "verified": 1561,
       "not-yet-completed-phd": 4
     },
     "bySource": {
       "omlist": {
         "total": 2149,
         "counts": {
-          "unresolved": 1104,
-          "verified": 1044,
+          "unresolved": 1084,
+          "verified": 1064,
           "not-yet-completed-phd": 1
         }
       },
@@ -401,23 +401,23 @@
       "facultyId": "omlist-69e5624de7e281eb",
       "name": "Rohit Aggarwal",
       "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "Utah appears to be the first academic position (a search-result summary of the Eccles profile reports joining as assistant professor in 2008) but the Eccles profile could not be opened (HTTP 403/404), so the start date is not verified from a primary page. The faculty bio PDF and UC Riverside announcement were opened but give no dates or earlier positions; no dated CV was found, so a postdoc or industry job between the PhD and Utah is not excluded and the PhD year was not independently confirmed.",
+      "checkedAt": "2026-10-17",
+      "reason": "The Eccles profile now returns 404, and the University of Utah faculty-profile API has no record for him. His ORCID record dates the UConn PhD in Operations and Information Management from 2004-08-01 to 2008-07-10 (consistent with the imported 2008) and lists the University of Utah (Information Systems, Professor) without dates. No source dates the start of the Utah post or excludes an intervening job. Earlier review (2026-10-16): a search summary said he joined Utah as an assistant professor in 2008, but the Eccles profile could not be opened; the faculty bio PDF and the UC Riverside announcement gave no dates.",
       "sources": [
         {
-          "url": "https://eccles.utah.edu/team/rohit-aggarwal/",
-          "title": "Rohit Aggarwal - Eccles School profile",
-          "notes": "Attempted; inaccessible (403/404). Content seen only via a search summary."
+          "url": "https://orcid.org/0000-0001-7536-2127",
+          "title": "ORCID - Rohit Aggarwal",
+          "notes": "Read through pub.orcid.org: UConn PhD 2004-08-01 to 2008-07-10; University of Utah employment without dates."
         },
         {
-          "url": "https://d30i16bbj53pdg.cloudfront.net/sites/default/files/documents/master-of-science-in-information-systems/faculty_bios_ft__pt.pdf",
-          "title": "Utah MSIS faculty biographies",
-          "notes": "Opened; lists UConn PhD and Utah assistant professor title, no dates."
+          "url": "https://eccles.utah.edu/team/rohit-aggarwal/",
+          "title": "Eccles School - Rohit Aggarwal",
+          "notes": "HTTP 404 to curl on 17 Oct 2026."
         },
         {
           "url": "https://business.ucr.edu/news/2026/09/09/leading-voice-ai-work-and-human-potential",
-          "title": "UC Riverside announcement",
-          "notes": "Opened; lists later roles only, no dates."
+          "title": "UC Riverside School of Business news (Sept 2026)",
+          "notes": "Earlier review: announcement without dates or earlier positions."
         }
       ],
       "source": "omlist"
@@ -1705,19 +1705,32 @@
     {
       "facultyId": "omlist-f161238ffc3abf71",
       "name": "Kenan Arifoglu",
-      "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "Degree is supported only by search-result text from the UCL School of Management profile and a 2021 CV (Northwestern IEMS PhD, August 2012), but the CV itself could not be opened: both the old and redirected UCL URLs returned HTTP 403 to the fetch tool and curl. The search snippet indicates a postdoctoral position at Michigan Ross preceding a UCL lectureship from August 2012, which would make the first job ambiguous (postdoc versus UCL) and its dates unverified. Not recorded as verified because no primary page was read.",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "employer": "University of Michigan, Ross School of Business",
+      "position": "Postdoctoral position",
+      "placementYear": null,
+      "category": "postdoc",
+      "evidenceUrl": "https://profiles.ucl.ac.uk/35790-kenan-arifoglu",
+      "evidenceNote": "The UCL Profiles page says he received his PhD from Northwestern IEMS in 2012 and that before joining UCL he had a postdoctoral position at the Ross Business School, University of Michigan; its academic-positions list dates the UCL Assistant Professor post from 1 Aug 2012. The postdoc therefore came between the 2012 doctorate and August 2012 (or ran up to it); its start date is not given, so the year stays null.",
+      "phdYearVerified": 2012,
+      "phdInstitutionVerified": "Northwestern University",
+      "reason": "UCL's own profile orders the career: Northwestern PhD 2012, a Michigan Ross postdoctoral position, then UCL Assistant Professor from 1 August 2012. The postdoc is the first job; its start date is undocumented.",
       "sources": [
         {
-          "url": "https://www.ucl.ac.uk/management/sites/default/files/profile_cvs/karifoglu_CV2021_0.pdf",
-          "title": "Arifoglu CV 2021 (UCL, redirected URL)",
-          "notes": "HTTP 403 on fetch and curl; contents not read."
+          "url": "https://profiles.ucl.ac.uk/35790-kenan-arifoglu",
+          "title": "UCL Profiles - Dr Kenan Arifoglu",
+          "notes": "Rendered in a headless browser: bio (PhD Northwestern IEMS 2012; postdoctoral position at Ross, University of Michigan before UCL); academic positions Assistant Professor 1 Aug 2012 - 1 Oct 2021, Associate Professor from 1 Oct 2021; degrees list Doctor of Philosophy, Northwestern University 2012."
         },
         {
-          "url": "https://www.ucl.ac.uk/management/user/45",
-          "title": "UCL School of Management profile",
-          "notes": "HTTP 403; not opened."
+          "url": "https://www.ucl.ac.uk/management/sites/default/files/profile_cvs/karifoglu_CV2021_0.pdf",
+          "title": "UCL School of Management - Arifoglu CV 2021 (unavailable)",
+          "notes": "Earlier review: HTTP 403. Now: curl with a browser user-agent gives 403 and the r.jina.ai reader reports 404 (file removed); not read."
+        },
+        {
+          "url": "https://orcid.org/0000-0003-2191-4031",
+          "title": "ORCID - Kenan Arifoglu",
+          "notes": "Read through pub.orcid.org: UCL employment without dates; no further chronology."
         }
       ],
       "source": "omlist"
@@ -2999,19 +3012,32 @@
     {
       "facultyId": "omlist-5c3e628ddd1f88ee",
       "name": "Opher Baron",
-      "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "Rotman profile describes current role and degrees without dates; linked research profile requires JavaScript.",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "employer": "University of Toronto, Rotman School of Management",
+      "position": "Assistant Professor",
+      "placementYear": 2003,
+      "category": "tenure-track",
+      "evidenceUrl": "https://discover.research.utoronto.ca/10004",
+      "evidenceNote": "His University of Toronto research profile lists academic positions beginning with Assistant Professor, Rotman School of Management, 2003-2009, then Associate Professor 2009-2014 (with a 2009-2010 Technion visiting associate professorship) and Full Professor from 2014; degrees BSc and MBA Technion, PhD MIT. DSpace@MIT holds his Ph.D. thesis ('Pricing and admission control for shared computer services using the token bucket mechanism', Baron, Opher, 1970-) dated 2003. No earlier post is listed.",
+      "phdYearVerified": 2003,
+      "phdInstitutionVerified": "Massachusetts Institute of Technology",
+      "reason": "University research profile: Rotman assistant professorship from 2003, the year of the MIT Ph.D. thesis; no intervening post listed.",
       "sources": [
         {
-          "url": "https://www.rotman.utoronto.ca/the-rotman-experience/our-community/people/baron-opher/",
-          "title": "Opher Baron public academic profile",
-          "notes": "Rotman profile describes current role and degrees without dates; linked research profile requires JavaScript."
+          "url": "https://discover.research.utoronto.ca/10004",
+          "title": "University of Toronto Discover Research - Opher Baron",
+          "notes": "Rendered in a headless browser (earlier: JavaScript required) and read through discover.research.utoronto.ca/api/users/10004: academic positions with years; degrees."
         },
         {
-          "url": "https://discover.research.utoronto.ca/10004",
-          "title": "Opher Baron public academic profile",
-          "notes": "Rotman profile describes current role and degrees without dates; linked research profile requires JavaScript."
+          "url": "https://dspace.mit.edu/handle/1721.1/16634",
+          "title": "DSpace@MIT - Pricing and admission control for shared computer services using the token bucket mechanism (Baron, Opher)",
+          "notes": "Read through the DSpace search API: Ph.D. thesis, date issued 2003."
+        },
+        {
+          "url": "https://www.rotman.utoronto.ca/the-rotman-experience/our-community/people/baron-opher/",
+          "title": "Rotman School - Opher Baron",
+          "notes": "Re-opened with curl: profile page; earlier review found degrees without dates."
         }
       ],
       "source": "omlist"
@@ -5410,19 +5436,27 @@
     {
       "facultyId": "omlist-65f5c12517b11177",
       "name": "Carlos Cardonha",
-      "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "UConn profile reports IBM Research - Brazil Research Staff Member 2012-2019 and a TU Berlin PhD in 2011, but does not state whether any role (for example a guest/research position at Zuse Institute Berlin) filled 2011-2012. The linked 2025 CV could not be retrieved (HTTP 503), so the IBM role cannot be shown to be the first post-PhD job.",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "employer": "IBM Research Brazil",
+      "position": "Research Staff Member",
+      "placementYear": 2012,
+      "category": "industry",
+      "evidenceUrl": "https://www-business.media.uconn.edu/wp-content/uploads/sites/969/2021/01/CV-2025.pdf",
+      "evidenceNote": "His 2025 CV lists a TU Berlin Ph.D. in Mathematics, 2007-2011 (advisor Martin Groetschel), with a Zuse Institute Berlin visiting-researcher post April 2007-October 2011 that coincides with the doctorate; then Research Staff Member, IBM Research Brazil, January 2012-August 2019; then UConn Assistant Professor from August 2019. The 2011-2012 gap is covered: the ZIB post ended October 2011 and IBM began January 2012.",
+      "phdYearVerified": 2011,
+      "phdInstitutionVerified": "Technical University of Berlin",
+      "reason": "Dated CV: the ZIB post was the doctoral position and ended in October 2011; the first new job is IBM Research Brazil from January 2012.",
       "sources": [
         {
-          "url": "https://www.business.uconn.edu/?p=32652",
-          "title": "Carlos Cardonha - UConn School of Business",
-          "notes": "Employment history IBM Research Brazil 2012-2019; PhD TU Berlin 2011."
+          "url": "https://www-business.media.uconn.edu/wp-content/uploads/sites/969/2021/01/CV-2025.pdf",
+          "title": "Carlos Cardonha - CV 2025 (UConn)",
+          "notes": "Earlier HTTP 503; curl now fails TLS verification through the proxy, so it was read through the r.jina.ai reader. Experience and education sections read."
         },
         {
-          "url": "https://www-business.media.uconn.edu/wp-content/uploads/sites/969/2021/01/CV-2025.pdf",
-          "title": "Carlos Cardonha CV 2025",
-          "notes": "Attempted; server returned HTTP 503."
+          "url": "https://www.business.uconn.edu/?p=32652",
+          "title": "UConn School of Business - Carlos Cardonha",
+          "notes": "Re-opened with curl (redirects to /person/carlos-cardonha/): Ph.D. in Mathematics, Technische Universitaet Berlin, 2011; Research Staff Member at IBM Research - Brazil from 2012 until 2019."
         }
       ],
       "source": "omlist"
@@ -10260,13 +10294,23 @@
       "facultyId": "omlist-ed86ffda8d8debbc",
       "name": "Güneş Erdoğan",
       "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "A search summary of his Bath resume page (people.bath.ac.uk/ge277/resume) reported Bilkent research assistant 1999-2005, Bilkent PhD 2001-2007, a CIRRELT/Montreal postdoc 2007-2008, then Ozyegin 2008-2011, Southampton 2011-2014 and Bath, plus a software-firm role of unclear timing. The page redirected to the Bath homepage when fetched, so it could not be opened and the order and dates of the software role and the postdoc are unconfirmed. Likely first job: CIRRELT postdoc (lead only).",
+      "checkedAt": "2026-10-17",
+      "reason": "His ORCID record now gives a dated chronology: Bilkent PhD 2001-09 to 2007-02-01 (the Bath research portal gives the award date as 1 Feb 2007), then Assistant Professor, Ozyegin University, 2008-09-01 to 2011-08-31, Lecturer, Southampton, 2011-2014, and Bath from 2015. ORCID is silent on February 2007 to September 2008, and it also skips 2014-2015, so it is not complete. The resume page (people.bath.ac.uk/ge277/resume and the ?p= forms a web search returned) redirects to the Bath home page for curl and the fetch tool, and the Wayback Machine is unreachable. A web-search summary of that page again reports a 2007-2008 CIRRELT post-doctoral position in Montreal (with Laporte and Cordeau), which would be the first job, but no primary page with that entry could be opened. Lead: CIRRELT postdoc 2007; otherwise Ozyegin assistant professor 2008. Earlier review (2026-10-16): a search summary of the Bath resume page reported a 2007-2008 CIRRELT postdoc, then Ozyegin, Southampton and Bath, plus a software-firm role of unclear timing; the page could not be opened.",
       "sources": [
         {
+          "url": "https://orcid.org/0000-0002-2456-3719",
+          "title": "ORCID - Gunes Erdogan",
+          "notes": "Read through pub.orcid.org: educations (Bilkent PhD 2001-09 to 2007-02-01) and employments (Ozyegin 2008-09-01 to 2011-08-31; Southampton 2011-09-01 to 2014-09; Bath Reader 2015-10-01, Professor 2019-08-01)."
+        },
+        {
+          "url": "https://researchportal.bath.ac.uk/en/persons/gunes-erdogan",
+          "title": "University of Bath research portal - Gunes Erdogan",
+          "notes": "Fetched with curl: Doctor of Philosophy in Industrial Engineering, Bilkent University, award date 1 Feb 2007; no employment history."
+        },
+        {
           "url": "https://people.bath.ac.uk/ge277/resume",
-          "title": "Gunes Erdogan - professional experience",
-          "notes": "Attempted; fetch redirected to bath.ac.uk homepage. Summary seen only in search result."
+          "title": "Gunes Erdogan - resume (University of Bath personal pages)",
+          "notes": "Redirects to www.bath.ac.uk for curl, the fetch tool and the ?p=1669 form; not read."
         }
       ],
       "source": "omlist"
@@ -11787,19 +11831,27 @@
     {
       "facultyId": "omlist-3cd11262c991363f",
       "name": "Craig Froehle",
-      "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "Public CV endpoint returned a server error and university page has only name; no first-placement evidence obtained.",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "employer": "University of Cincinnati, Lindner College of Business",
+      "position": null,
+      "placementYear": 2001,
+      "category": "unknown",
+      "evidenceUrl": "https://orcid.org/0000-0002-9255-4822",
+      "evidenceNote": "His ORCID record (self-maintained) lists education at UNC Chapel Hill Kenan-Flagler, PhD, 1997-2001, and a single employment, University of Cincinnati Lindner College of Business, from 2001 (recorded under his current title, Professor). The UC faculty profile confirms the PhD (UNC Chapel Hill, 2001) and says he worked in the engineering industry and founded a dot-com startup before the PhD. The title at his 2001 start is not stated, so the category stays unknown.",
+      "phdYearVerified": 2001,
+      "phdInstitutionVerified": "University of North Carolina at Chapel Hill",
+      "reason": "ORCID chronology: UNC PhD 1997-2001, then University of Cincinnati from 2001; industry work and a startup came before the doctorate. Entry title undocumented.",
       "sources": [
         {
-          "url": "https://www.digitalmeasures.com/login/uc/faculty/files?file=ZnJvZWhsY20vcGNpL2NtZi1jdl9GVUxMLTIwMjUwNy0xLnBkZg%3D%3D&surId=180093&public=true&ver=2&expire=1777371895&sgntr=l8910dMkvNxkwk6lwgZtVbfFUbw%3D",
-          "title": "Craig Froehle public academic profile",
-          "notes": "Public CV endpoint returned a server error and university page has only name; no first-placement evidence obtained."
+          "url": "https://orcid.org/0000-0002-9255-4822",
+          "title": "ORCID - Craig Froehle",
+          "notes": "Read through pub.orcid.org/v3.0: employment University of Cincinnati, Lindner College of Business, from 2001; education UNC Chapel Hill PhD 1997-2001, UC MBA 1994-1996, UC BS 1987-1992."
         },
         {
           "url": "https://www.business.uc.edu/faculty-research/obais/faculty/craig-froehle.html",
-          "title": "Craig Froehle public academic profile",
-          "notes": "Public CV endpoint returned a server error and university page has only name; no first-placement evidence obtained."
+          "title": "Lindner College of Business - Craig Froehle",
+          "notes": "Rendered in a headless browser; the page draws its content from a Digital Measures profile endpoint: credentials Ph.D. UNC Chapel Hill 2001; bio on pre-PhD industry work. No CV link is offered now (the signed link opened earlier had expired)."
         }
       ],
       "source": "omlist"
@@ -12975,33 +13027,28 @@
       "facultyId": "omlist-345bda1b0516d57f",
       "name": "Bilal Gokpinar",
       "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "The UCL-hosted CV (Bilal_cv_2025.pdf) and the UCL School of Management people page returned HTTP 403, the retired IRIS profile redirects to a JavaScript-only profiles page, and ORCID lists UCL without dates. No source for the 2008 Northwestern PhD date or for the first post-PhD position could be opened.",
+      "checkedAt": "2026-10-17",
+      "reason": "UCL Profiles, rendered in a headless browser, now confirms the degrees (Northwestern PhD 2008, MSc 2005; Purdue BSc 2004) and mentions General Motors R&D experience and teaching at several schools, but lists no appointment dates and no CV. The CV Bilal_cv_2025.pdf still answers HTTP 403 to curl and 404 through the r.jina.ai reader (removed); the Wayback Machine is unreachable from this environment; ORCID lists UCL without dates; one web search found nothing relevant. The first post-PhD employer and year remain undocumented. Earlier review (2026-10-16): the UCL CV and people page returned 403, the old IRIS profile was script-only, ORCID had no dates, and no source for the degree or first job could be opened.",
       "sources": [
         {
-          "url": "https://www.ucl.ac.uk/management/sites/default/files/profile_cvs/Bilal_cv_2025.pdf",
-          "title": "Bilal Gokpinar — CV (UCL School of Management)",
-          "notes": "HTTP 403 via the fetcher and curl (also at the older mgmt.ucl.ac.uk path)."
-        },
-        {
-          "url": "https://www.ucl.ac.uk/management/people/bilal-gokpinar",
-          "title": "UCL School of Management — Bilal Gokpinar",
-          "notes": "HTTP 403."
-        },
-        {
           "url": "https://profiles.ucl.ac.uk/9507",
-          "title": "UCL Profiles — Bilal Gokpinar",
-          "notes": "Redirect target of the IRIS profile; JavaScript-only, no content."
+          "title": "UCL Profiles - Prof Bilal Gokpinar",
+          "notes": "Rendered in a headless browser: bio and degrees (PhD Northwestern University 2008); no academic-positions section, no CV link."
+        },
+        {
+          "url": "https://www.ucl.ac.uk/management/sites/default/files/profile_cvs/Bilal_cv_2025.pdf",
+          "title": "Bilal Gokpinar - CV (UCL School of Management)",
+          "notes": "Curl with a browser user-agent: 403; r.jina.ai reader: 404. Not read."
         },
         {
           "url": "https://orcid.org/0000-0001-9299-2876",
-          "title": "Bilal Gokpinar — ORCID record",
-          "notes": "Read through the ORCID public API: University College London, no dates or role."
+          "title": "ORCID - Bilal Gokpinar",
+          "notes": "Read through pub.orcid.org: University College London employment without dates or role."
         },
         {
           "url": "https://omlist.edutool.org/schools/university-college-london/faculty/bilal-gokpinar.html",
-          "title": "OM List profile — Bilal Gokpinar",
-          "notes": "Directory entry (PhD Northwestern 2008)."
+          "title": "OM List profile - Bilal Gokpinar",
+          "notes": "Earlier review: directory entry (PhD Northwestern 2008)."
         }
       ],
       "source": "omlist"
@@ -15099,18 +15146,23 @@
       "facultyId": "omlist-fb7d9b28e70121bb",
       "name": "G.G. Hegde",
       "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "The Pitt Business (Katz) faculty profile lists a University of Rochester PhD and says he has taught at Katz, Duke, Georgetown, Maryland and Rochester, but it gives no years or roles, so no first post-PhD employer is established (the 1985 PhD year is also unsupported). A possible CV on a UConn business media server surfaced in search results but returned HTTP 503 and could not be read or tied to this person. Teaching affiliations without dates must not be treated as chronology.",
+      "checkedAt": "2026-10-17",
+      "reason": "His ORCID record (Gajanan Hegde, 0000-0003-0970-7902) gives a Rochester Simon School Ph.D. 1979-1985, consistent with the imported 1985 degree, and a University of Pittsburgh employment without dates. The Pitt Katz profile (re-opened) still lists teaching at Katz, Duke, Georgetown, Maryland and Rochester without years. The CV Hegdecv20.pdf fails TLS verification through this environment's proxy for curl, and the r.jina.ai reader reports that the file no longer exists (BlobNotFound). The first post-PhD employer and year remain undocumented. Earlier review (2026-10-16): the Katz profile gave the Rochester PhD and the list of schools without dates; the UConn-hosted CV returned 503.",
       "sources": [
         {
+          "url": "https://orcid.org/0000-0003-0970-7902",
+          "title": "ORCID - Gajanan Hegde",
+          "notes": "Read through pub.orcid.org: education University of Rochester, Simon Graduate School, Ph.D, 1979-1985; Karnataka M.Sc 1972-1974; University of Pittsburgh employment without dates."
+        },
+        {
           "url": "https://www.business.pitt.edu/?p=13131",
-          "title": "Pitt Business profile, G.G. Hegde",
-          "notes": "Opened. Rochester PhD/MS; teaching listed at several schools without dates."
+          "title": "Pitt Business - G. G. Hegde",
+          "notes": "Fetched with curl (redirects to /professors/g-g-hegde/): degrees and schools where he taught, no dates."
         },
         {
           "url": "https://www-business.media.uconn.edu/wp-content/uploads/sites/969/2014/12/Hegdecv20.pdf",
-          "title": "Possible Hegde CV on UConn host",
-          "notes": "HTTP 503; not read; identity not confirmed."
+          "title": "Hegdecv20.pdf (UConn media server)",
+          "notes": "curl: TLS verification failure through the proxy; r.jina.ai: BlobNotFound (file removed). Not read."
         }
       ],
       "source": "omlist"
@@ -15280,16 +15332,29 @@
     {
       "facultyId": "omlist-af9cc5a4973cb0b6",
       "name": "Lisa Hillas",
-      "status": "unresolved",
-      "checkedAt": "2026-10-16",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "employer": "University of Auckland",
+      "position": "Lecturer",
+      "placementYear": 2023,
+      "category": "tenure-track",
+      "evidenceUrl": "https://profiles.auckland.ac.nz/lisa-hillas",
+      "evidenceNote": "The Auckland profile says she joined the University of Auckland as a Lecturer in 2023 after completing her PhD in Operations Management at Chicago Booth; the profile's data record dates the institutional Lecturer appointment from 2023-07-20. Knowledge@UChicago dates her Booth Ph.D. dissertation August 2023, so the appointment began a few weeks before formal conferral, after the dissertation was complete according to the profile. A New Zealand lectureship is the entry grade of the permanent track.",
+      "phdYearVerified": 2023,
+      "phdInstitutionVerified": "University of Chicago",
+      "reason": "Auckland profile and its appointment record: Lecturer from 20 July 2023, after the Chicago Booth PhD (dissertation dated August 2023); no other post is mentioned.",
       "sources": [
         {
           "url": "https://profiles.auckland.ac.nz/lisa-hillas",
-          "title": "Lisa Hillas Profile",
-          "notes": "Auckland profile requires JavaScript and supplied no readable biography in retrieved content."
+          "title": "University of Auckland profile - Lisa Aoki Hillas",
+          "notes": "Rendered in a headless browser and read through the page's own data endpoint profiles.auckland.ac.nz/api/users/lisa-hillas: joined as Lecturer in 2023 after the Chicago PhD; institutional appointment Lecturer, start date 2023-07-20."
+        },
+        {
+          "url": "https://knowledge.uchicago.edu/records/8yxey-r4p28",
+          "title": "Knowledge@UChicago - Designing Service Menus for Bipartite Queueing Systems (Hillas, Lisa Catherine Aoki)",
+          "notes": "Read through the repository API: Ph.D. dissertation, Booth School of Business, publication date 2023-08."
         }
       ],
-      "reason": "Auckland profile requires JavaScript and supplied no readable biography in retrieved content.",
       "source": "omlist"
     },
     {
@@ -15544,13 +15609,28 @@
       "facultyId": "omlist-2f69bec981893a28",
       "name": "Matthias Holweg",
       "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "Official profile retrieval returned access denied; first placement remains unverified.",
+      "checkedAt": "2026-10-17",
+      "reason": "The Said Business School profile returns 403 to curl and a Cloudflare check through the r.jina.ai reader; ORCID lists Oxford only, without dates. His Christ Church page gives PhD and DScEcon from Cardiff and says that before returning to Oxford he was on the University of Cambridge faculty and a Sloan Industry Center Fellow at MIT. A Cambridge CSaP profile (found through one web search) says that before joining Judge Business School he was a Sloan Industry Center Fellow at MIT's Center for Technology, Policy and Industrial Development and a Senior Research Associate at the Lean Enterprise Research Centre, Cardiff Business School. No source dates these posts or says whether the Cardiff post was held during the 2002 doctorate, so the first post-PhD job (MIT fellowship, Cardiff research post or Cambridge lectureship) is not established. Earlier review (2026-10-16): the official profile returned access denied.",
       "sources": [
         {
           "url": "https://www.sbs.ox.ac.uk/about-us/people/matthias-holweg",
-          "title": "Matthias Holweg public academic profile",
-          "notes": "Official profile retrieval returned access denied; first placement remains unverified."
+          "title": "Said Business School - Matthias Holweg",
+          "notes": "403 to curl; Cloudflare check through r.jina.ai; not read."
+        },
+        {
+          "url": "https://www.chch.ox.ac.uk/people/professor-matthias-holweg",
+          "title": "Christ Church, Oxford - Professor Matthias Holweg",
+          "notes": "Fetched with curl: MEng (Wedel), MSc (Buckingham), MSc (Oxford), PhD and DScEcon (Cardiff); Cambridge faculty and MIT Sloan Industry Center Fellow before Oxford; no dates."
+        },
+        {
+          "url": "https://www.admin-csap.csap.cam.ac.uk/network/matthias-holweg/",
+          "title": "Cambridge Centre for Science and Policy - Dr Matthias Holweg",
+          "notes": "Fetched with curl: before Judge, MIT Sloan Industry Center Fellow and Senior Research Associate at the Cardiff Lean Enterprise Research Centre; no dates."
+        },
+        {
+          "url": "https://orcid.org/0000-0001-9403-1681",
+          "title": "ORCID - Matthias Holweg",
+          "notes": "Read through pub.orcid.org: University of Oxford (Christ Church; Said Business School), no dates."
         }
       ],
       "source": "omlist"
@@ -15574,23 +15654,23 @@
       "facultyId": "omlist-c6833f9fd0fa9f7a",
       "name": "Seock-Jin Hong",
       "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "ORCID dates the Toulouse 1 Capitole doctorate Oct 1997–Apr 2001, Kedge Business School professorship Mar 2009–Mar 2016 and UNT from Sep 2015, but records nothing for 2001–2009. The UNT profile lists Korean Airlines, the Korea Transport Institute and Incheon National University without dates. A 2005 ICAO speaker bio (search snippet: Incheon professor from March 2004, earlier KOTI, Korean Air research institute and ITA Paris) could not be opened because the ICAO site is bot-protected. Which role immediately followed the April 2001 degree is therefore undocumented.",
+      "checkedAt": "2026-10-17",
+      "reason": "The 2005 ICAO speaker biography is behind a Cloudflare check for curl (403), the r.jina.ai reader and a headless browser, so it still could not be read. The UNT profile (re-opened) lists Kedge, Incheon National University, the Korea Transport Institute and Korean Air without dates or order relative to the 2001 degree. Which post followed the April 2001 Toulouse doctorate is still undocumented. Earlier review (2026-10-16): ORCID dates the Toulouse doctorate Oct 1997 to Apr 2001, Kedge Mar 2009 to Mar 2016 and UNT from Sep 2015, but nothing for 2001-2009; a search snippet of the ICAO bio (Incheon from March 2004, earlier KOTI, Korean Air research institute and ITA Paris) could not be opened.",
       "sources": [
         {
+          "url": "https://www.icao.int/Meetings/LiberalizationSymposium/Documents/2005_Icao-Symposium-Liberalization-Shanghai/Bios/Seock-JinHONG_bio.pdf",
+          "title": "ICAO 2005 symposium speaker biography - Seock-Jin Hong",
+          "notes": "Cloudflare: 403 to curl and a headless browser; challenge page through r.jina.ai. Not read."
+        },
+        {
           "url": "https://cob.unt.edu/people/seock-jin-hong.html",
-          "title": "Seock-Jin Hong — UNT G. Brint Ryan College of Business profile",
-          "notes": "Undated career list; UNT from 2015; PhD Toulouse without year."
+          "title": "UNT G. Brint Ryan College of Business - Seock-Jin Hong",
+          "notes": "Re-opened with curl: prior posts listed without dates."
         },
         {
           "url": "https://orcid.org/0000-0002-8348-5845",
-          "title": "ORCID record — Seock-Jin Hong",
-          "notes": "Dated education (Toulouse 1997–2001, Ponts 1995–1996) and employment (Kedge 2009–2016, UNT 2015–); 2001–2009 absent."
-        },
-        {
-          "url": "https://www.icao.int/Meetings/LiberalizationSymposium/Documents/2005_Icao-Symposium-Liberalization-Shanghai/Bios/Seock-JinHONG_bio.pdf",
-          "title": "ICAO 2005 symposium speaker bio (unopened)",
-          "notes": "HTTP 403 and bot-check page; content known only from a search snippet."
+          "title": "ORCID - Seock-Jin Hong",
+          "notes": "Earlier review: Toulouse doctorate Oct 1997 to Apr 2001; Kedge 2009-2016; UNT from 2015."
         }
       ],
       "source": "omlist"
@@ -17313,13 +17393,28 @@
       "facultyId": "omlist-882e65e3aa01b9db",
       "name": "Nitindra Joglekar",
       "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "The linked Villanova URL returned the general faculty directory rather than an individual biography.",
+      "checkedAt": "2026-10-17",
+      "reason": "The Villanova biography, rendered in a headless browser, says he joined Villanova in 2024 from Boston University's Questrom School, where he had taught since 1999, and that he has founded software startups; his BU personal page gives Questrom faculty service 1999-2024. ORCID dates the MIT Sloan PhD 1992-09-02 to 1997-05-31, and DSpace@MIT holds the 1997 Ph.D. thesis. Nothing documents June 1997 to 1999, so the first post-PhD job (a startup, another post, or BU if it began earlier than the 1999 teaching date) is not established; one web search found no CV. Earlier review (2026-10-16): the Villanova URL returned the general directory instead of a biography.",
       "sources": [
         {
           "url": "https://www.villanova.edu/university/business/faculty-and-research/faculty-by-department/biodetail.html?mail=nitindra.joglekar@villanova.edu&xsl=bio_long",
-          "title": "Nitindra Joglekar academic profile",
-          "notes": "The linked Villanova URL returned the general faculty directory rather than an individual biography."
+          "title": "Villanova School of Business - Nitindra Joglekar",
+          "notes": "Rendered in a headless browser: joined VSB in 2024 from BU Questrom, where he had taught since 1999."
+        },
+        {
+          "url": "https://orcid.org/0000-0002-6478-337X",
+          "title": "ORCID - Nitindra Joglekar",
+          "notes": "Read through pub.orcid.org: MIT Sloan PhD 1992-09-02 to 1997-05-31; Villanova from 2024-08-22; nothing between."
+        },
+        {
+          "url": "https://dspace.mit.edu/handle/1721.1/9817",
+          "title": "DSpace@MIT - The technology treadmill (Joglekar, Nitindra R), Ph.D. thesis",
+          "notes": "Read through the DSpace search API: Ph.D., 1997."
+        },
+        {
+          "url": "https://people.bu.edu/joglekar/index.html",
+          "title": "Nitin R. Joglekar - personal page (Boston University)",
+          "notes": "Fetched with curl (found through one web search): served on the Questrom faculty 1999-2024; no CV."
         }
       ],
       "source": "omlist"
@@ -23754,28 +23849,23 @@
       "facultyId": "omlist-d0d331b1d3235cf2",
       "name": "Stephen Mahar",
       "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "No CV or dated chronology for the period after the 2005 Indiana PhD could be opened. The Villanova biography URL on the directory loads only client-side (its bio component endpoint returns HTTP 500), the faculty-directory and legacy www1 variants return 404, guessed UNC Wilmington personal-page URLs return 404 or the generic Cameron School home page, and a web search returned only unrelated namesakes. His earlier UNC Wilmington appointment and its dates therefore remain undocumented.",
+      "checkedAt": "2026-10-17",
+      "reason": "The Villanova biography, rendered in a headless browser, lists publications and awards, among them a Kelley School associate-instructor teaching award for 2002-2003, UNC Wilmington and Cameron School of Business teaching awards in 2008, 2009 and 2010, and a 2011 CSB/ISOM department teaching award, but no education section and no appointment dates. His ORCID record (0000-0003-4379-6515) is empty, and one web search found nothing about him. The awards place him at UNC Wilmington by 2008, but neither the PhD date nor the start of his first post-PhD job is documented. Earlier review (2026-10-16): the Villanova biography could not be loaded, legacy and guessed UNCW URLs failed, and his UNC Wilmington appointment and dates were undocumented.",
       "sources": [
         {
-          "url": "https://omlist.edutool.org/schools/villanova-university/faculty/stephen-mahar.html",
-          "title": "OM List faculty directory profile",
-          "notes": "Directory profile lists the Indiana 2005 PhD and 2012 tenure; links to the Villanova biography, Google Scholar and LinkedIn."
-        },
-        {
           "url": "https://www.villanova.edu/university/business/faculty-and-research/faculty-by-department/biodetail.html?mail=stephen.mahar@villanova.edu&xsl=bio_long",
-          "title": "Stephen Mahar - Villanova School of Business biography (directory link)",
-          "notes": "Page shell retrieved without biography content; the embedded bio XML endpoint returned HTTP 500."
+          "title": "Villanova School of Business - Stephen Mahar",
+          "notes": "Rendered in a headless browser (earlier: client-side only): publications, honors and awards with years; no appointment dates."
         },
         {
-          "url": "https://www1.villanova.edu/villanova/business/facultyandresearch/facultyandstaff/biodetail.html?mail=stephen.mahar@villanova.edu&xsl=bio_long",
-          "title": "Stephen Mahar - Villanova legacy biography URL",
-          "notes": "HTTP 404."
+          "url": "https://orcid.org/0000-0003-4379-6515",
+          "title": "ORCID - Stephen Mahar",
+          "notes": "Read through pub.orcid.org: no employment or education entries."
         },
         {
           "url": "https://csb.uncw.edu/people/mahars/",
-          "title": "UNC Wilmington Cameron School of Business - guessed personal page",
-          "notes": "Returned the generic school home page; no profile."
+          "title": "UNC Wilmington Cameron School - guessed personal page",
+          "notes": "Earlier review: 404 or the generic school page."
         }
       ],
       "source": "omlist"
@@ -23783,14 +23873,27 @@
     {
       "facultyId": "omlist-689cb420f9f623b5",
       "name": "Mahdi Mahmoudzadeh",
-      "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "Auckland research profile returned a JavaScript application notice without readable career chronology.",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "employer": "University of Auckland",
+      "position": "Senior Lecturer",
+      "placementYear": 2020,
+      "category": "tenure-track",
+      "evidenceUrl": "https://profiles.auckland.ac.nz/mahdi-mahmoudzadeh",
+      "evidenceNote": "The Auckland profile says he joined the University of Auckland after obtaining his PhD in Operations Management from Georgia Tech; the profile's data record dates his institutional appointment (Senior Lecturer, Information Systems and Operations Management) from 2020-08-17. Georgia Tech's repository dates the Ph.D. dissertation 2020-06-16 (degree date August 2020). The record shows the current title on that appointment; whether he was first appointed at that grade or as Lecturer is not stated separately.",
+      "phdYearVerified": 2020,
+      "phdInstitutionVerified": "Georgia Institute of Technology",
+      "reason": "Auckland profile: joined Auckland after the Georgia Tech PhD; appointment record from 17 August 2020; Georgia Tech dissertation issued June 2020. No intervening post is mentioned.",
       "sources": [
         {
           "url": "https://profiles.auckland.ac.nz/mahdi-mahmoudzadeh",
-          "title": "Mahdi Mahmoudzadeh public academic profile",
-          "notes": "Auckland research profile returned a JavaScript application notice without readable career chronology."
+          "title": "University of Auckland profile - Mahdi Mahmoudzadeh",
+          "notes": "Rendered in a headless browser and read through profiles.auckland.ac.nz/api/users/mahdi-mahmoudzadeh: bio and institutional appointment (Senior Lecturer, start date 2020-08-17)."
+        },
+        {
+          "url": "https://repository.gatech.edu/handle/1853/63617",
+          "title": "Georgia Tech repository - Behavioral research on sustainable and socially/environmentally responsible operations (Mahmoudzadeh, Mahdi)",
+          "notes": "Read through the repository search API: Ph.D., date issued 2020-06-16, date created 2020-08."
         }
       ],
       "source": "omlist"
@@ -26453,14 +26556,27 @@
     {
       "facultyId": "omlist-bce42a4f037ab507",
       "name": "Mahesh Nagarajan",
-      "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "A search summary of the UBC Sauder profile suggests a USC PhD (2003) and a move to UBC Sauder in 2003, but the Sauder page (and CV link) returned HTTP 403 and could not be opened, so the start date and absence of an intervening postdoc are unverified.",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "employer": "University of British Columbia, Sauder School of Business",
+      "position": "Assistant Professor",
+      "placementYear": 2003,
+      "category": "tenure-track",
+      "evidenceUrl": "https://www.sauder.ubc.ca/sites/default/files/2026-05/Nagarajan%2C%20Mahesh%20CV%202026.pdf",
+      "evidenceNote": "His 2026 UBC faculty CV gives a record of employment that begins with Assistant Professor, Sauder School of Business, UBC, 2003-2009, followed by Associate Professor 2010-2011 and Professor from 2014; no earlier post is listed. The Sauder profile gives the Ph.D. as University of Southern California without a year; the imported 2003 degree year is consistent but was not confirmed from an opened source.",
+      "phdYearVerified": null,
+      "phdInstitutionVerified": "University of Southern California",
+      "reason": "UBC-format CV record of employment starts with the Sauder assistant professorship in 2003, the imported PhD year; no postdoc or other job is listed before it.",
       "sources": [
         {
+          "url": "https://www.sauder.ubc.ca/sites/default/files/2026-05/Nagarajan%2C%20Mahesh%20CV%202026.pdf",
+          "title": "Mahesh Nagarajan - UBC Curriculum Vitae for Faculty Members (2026)",
+          "notes": "Downloaded with curl and a browser user-agent; section 2 Record of Employment read."
+        },
+        {
           "url": "https://www.sauder.ubc.ca/people/mahesh-nagarajan",
-          "title": "Mahesh Nagarajan - UBC Sauder profile",
-          "notes": "Attempted; HTTP 403. Claim seen only in a search summary."
+          "title": "UBC Sauder - Mahesh Nagarajan",
+          "notes": "Fetched with curl and a browser user-agent (earlier 403 to the fetch tool): Education Ph.D. and M.A., University of Southern California; links the CV."
         }
       ],
       "source": "omlist"
@@ -27416,13 +27532,23 @@
       "facultyId": "omlist-4ecbf75675c01975",
       "name": "Jeffrey W. Ohlmann",
       "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "Iowa profile returned only a directory shell without readable career information.",
+      "checkedAt": "2026-10-17",
+      "reason": "The Tippie profile, rendered in a headless browser, lists a Michigan IOE PhD, current titles and awards (INFORMS Dantzig Dissertation Award 2004, Iowa MBA Instructor of the Year 2006, Tippie teaching awards 2009 and 2010) but no appointment dates or CV. The Mathematics Genealogy Project dates the Michigan Ph.D. 2003. No ORCID record was found, and his old myweb.uiowa.edu page no longer resolves. One web search cited a textbook author listing saying he has served at the University of Iowa since 2003, but that listing could not be read (no author text in the fetched or reader copies). Lead: University of Iowa from 2003, title not given. Earlier review (2026-10-16): the Iowa profile returned only a directory shell.",
       "sources": [
         {
           "url": "https://tippie.uiowa.edu/people/jeffrey-ohlmann",
-          "title": "Jeffrey W. Ohlmann public academic profile",
-          "notes": "Iowa profile returned only a directory shell without readable career information."
+          "title": "Tippie College of Business - Jeffrey W. Ohlmann",
+          "notes": "Rendered in a headless browser: education, current positions, awards; no dates of appointment and no CV."
+        },
+        {
+          "url": "https://www.mathgenealogy.org/id.php?id=147798",
+          "title": "Mathematics Genealogy Project - Jeffrey Ohlmann",
+          "notes": "Ph.D. University of Michigan 2003, dissertation 'Theory and Applications of Compressed Annealing', advisors James C. Bean and Shane G. Henderson."
+        },
+        {
+          "url": "https://www.textbookrush.com/browse/books/9781285187273",
+          "title": "Textbook listing with author biographies (from a web search)",
+          "notes": "Fetched with curl and the reader; no author biography text in the copies received; not used."
         }
       ],
       "source": "omlist"
@@ -27791,14 +27917,37 @@
     {
       "facultyId": "omlist-d00639d43292cc14",
       "name": "Binyamin Oz",
-      "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "The Auckland profile returned an application shell without a readable biography.",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "employer": "University of Auckland, Department of Statistics",
+      "position": "Postdoctoral Research Fellow",
+      "placementYear": 2016,
+      "category": "postdoc",
+      "evidenceUrl": "https://sites.google.com/site/binyaminoz/",
+      "evidenceNote": "His personal academic site (same b.oz@auckland.ac.nz address as the Auckland profile) says he earned his PhD in Statistics at the Hebrew University of Jerusalem (advisor Moshe Haviv) and was a postdoctoral research fellow in the Department of Statistics, University of Auckland, from 2016 to 2018 (with Ilze Ziedins), then a senior lecturer at the Hebrew University Business School before returning to Auckland. The Mathematics Genealogy Project dates the Hebrew University Ph.D. ('Strategic behavior in queues', advisor Moshe Haviv) 2016; the Auckland profile's appointment record dates his current Senior Lecturer post from 2024-07-01.",
+      "phdYearVerified": 2016,
+      "phdInstitutionVerified": "The Hebrew University of Jerusalem",
+      "reason": "Personal site gives the sequence: Hebrew University PhD, Auckland Statistics postdoc 2016-2018, Hebrew University senior lecturer, Auckland senior lecturer (from July 2024 per the profile record). MGP dates the PhD 2016, so the postdoc began in the degree year.",
       "sources": [
         {
+          "url": "https://sites.google.com/site/binyaminoz/",
+          "title": "Binyamin Oz - personal academic website",
+          "notes": "Fetched with curl (found through one web search): postdoc at Auckland Statistics 2016-2018; PhD Hebrew University; earlier senior lecturer at the Hebrew University Business School."
+        },
+        {
+          "url": "https://www.mathgenealogy.org/id.php?id=206277",
+          "title": "Mathematics Genealogy Project - Binyamin Oz",
+          "notes": "Ph.D. Hebrew University of Jerusalem 2016, dissertation 'Strategic behavior in queues', advisor Moshe Haviv."
+        },
+        {
           "url": "https://profiles.auckland.ac.nz/b-oz",
-          "title": "Binyamin Oz academic profile",
-          "notes": "The Auckland profile returned an application shell without a readable biography."
+          "title": "University of Auckland profile - Binyamin Oz",
+          "notes": "Rendered in a headless browser and read through profiles.auckland.ac.nz/api/users/b-oz: Senior Lecturer, Information Systems and Operations Management, institutional appointment from 2024-07-01; no biography."
+        },
+        {
+          "url": "https://bschool-en.huji.ac.il/binyamin-oz",
+          "title": "Hebrew University Business School - Dr. Binyamin Oz",
+          "notes": "Returned HTTP 403 to curl; not read."
         }
       ],
       "source": "omlist"
@@ -30163,16 +30312,29 @@
     {
       "facultyId": "omlist-ad91cb52c9fec68e",
       "name": "Uday Rao",
-      "status": "unresolved",
-      "checkedAt": "2026-10-16",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "employer": "University of British Columbia, Sauder School of Business",
+      "position": "Visiting Assistant Professor",
+      "placementYear": 1991,
+      "category": "other-academic",
+      "evidenceUrl": "https://www.digitalmeasures.com/login/uc/faculty/files?file=cmFvdXMvcGNpL3ZpdGFfc2hvcnRfdWRheV9yYW8gSnV5IDIwMjEtMS5wZGY%3D&surId=180126&public=true&ver=2&expire=1792836787&sgntr=v8le7d7QdCbD139DjHI9lSu4tvA%3D",
+      "evidenceNote": "His July 2021 biographical sketch (public CV linked from the Cincinnati profile) lists M.S. and Ph.D., Cornell ORIE, 1992, and employment: Visiting Assistant Professor, Sauder School of Business, UBC, 8/1991-4/1993; Visiting Assistant Professor, Cornell SORIE, 5/1993-8/1994; Assistant Professor, GSIA Carnegie Mellon, 9/1994-8/2001; Cincinnati from 9/2001. The UBC post began in August 1991, before the 1992 degree (month not given); it was not retitled on completion, so it is recorded as the first job with its own start year and the overlap noted.",
+      "phdYearVerified": 1992,
+      "phdInstitutionVerified": "Cornell University",
+      "reason": "Dated CV: first post after Cornell is the UBC visiting assistant professorship that began in August 1991, before the 1992 Cornell PhD; only an engineering internship (1986-1987) precedes it. Overlap of about a year or less with the degree date.",
       "sources": [
         {
+          "url": "https://www.digitalmeasures.com/login/uc/faculty/files?file=cmFvdXMvcGNpL3ZpdGFfc2hvcnRfdWRheV9yYW8gSnV5IDIwMjEtMS5wZGY%3D&surId=180126&public=true&ver=2&expire=1792836787&sgntr=v8le7d7QdCbD139DjHI9lSu4tvA%3D",
+          "title": "Uday S. Rao - Short biographical sketch, July 2021 (public CV, Digital Measures)",
+          "notes": "Signed public link taken from the profile's Digital Measures data endpoint on 17 Oct 2026 and downloaded with curl; education and employment read. The signature expires, so a later reader must take a fresh link from the profile."
+        },
+        {
           "url": "https://www.business.uc.edu/faculty-research/obais/faculty/uday-rao.html",
-          "title": "Uday Rao Profile",
-          "notes": "Cincinnati imported profile returns only the name and empty content, with no career chronology."
+          "title": "Lindner College of Business - Uday Rao",
+          "notes": "Rendered in a headless browser; profile data from profiles.digitalmeasures.com: Ph.D. 1992 Cornell; worked at Cornell, UBC and Carnegie Mellon before Cincinnati; CV link."
         }
       ],
-      "reason": "Cincinnati imported profile returns only the name and empty content, with no career chronology.",
       "source": "omlist"
     },
     {
@@ -30691,19 +30853,27 @@
     {
       "facultyId": "omlist-08753eca74f27c2a",
       "name": "David Robb",
-      "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "Public directory requires browser rendering. University business-school staff biography confirms Calgary MBA and PhD and substantial corporate background but omits degree year and employment chronology; first post-PhD job remains unresolved.",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "employer": "University of Calgary",
+      "position": "Assistant Professor",
+      "placementYear": 1992,
+      "category": "unknown",
+      "evidenceUrl": "https://profiles.auckland.ac.nz/d-robb",
+      "evidenceNote": "The Auckland profile states that he holds an MBA and PhD in Operations Management from the University of Calgary, where he also served as Assistant Professor (1992-1994), and that he joined the University of Auckland Business School in 1994; its degree record dates the Calgary PhD from 1989-05-01 to 1992-04-30. The Calgary faculty is not named, so the post is not classed as tenure-track.",
+      "phdYearVerified": 1992,
+      "phdInstitutionVerified": "University of Calgary",
+      "reason": "Auckland profile and its data record: Calgary PhD completed 30 April 1992, Calgary Assistant Professor 1992-1994, Auckland from 1994. His corporate experience is described as work and consulting without dates; the degree sequence (BE 1986, MBA 1987-1989, PhD 1989-1992) leaves no room for a full-time job between the PhD and the Calgary post.",
       "sources": [
         {
           "url": "https://profiles.auckland.ac.nz/d-robb",
-          "title": "David Robb — public academic profile",
-          "notes": "Professional biography and degree information reviewed for first-job evidence."
+          "title": "University of Auckland profile - David Robb",
+          "notes": "Rendered in a headless browser and read through profiles.auckland.ac.nz/api/users/d-robb: bio (Calgary Assistant Professor 1992-1994; joined Auckland 1994) and degree records with dates."
         },
         {
           "url": "https://www.businessmasters.auckland.ac.nz/about-us/our-staff/",
-          "title": "Auckland Business School — Our staff",
-          "notes": "David Robb biography confirms Calgary degrees but provides no dated first employment."
+          "title": "University of Auckland Business Masters - our staff",
+          "notes": "Re-opened with curl on 17 Oct 2026: staff list entry for Professor David Robb (Calgary MBA and PhD, corporate background); no dates."
         }
       ],
       "source": "omlist"
@@ -30893,19 +31063,27 @@
     {
       "facultyId": "omlist-db5ab3496555d3d4",
       "name": "Ricky Roet-Green",
-      "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "The Rochester biography dates doctorate to 2014 and reports a two-year Toronto postdoc before Simon, but does not date that appointment or explicitly exclude an earlier role; Box CV was not readable.",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "employer": "University of Toronto, Rotman School of Management and Mechanical and Industrial Engineering",
+      "position": "Post-Doctoral Fellow",
+      "placementYear": 2013,
+      "category": "postdoc",
+      "evidenceUrl": "https://rochester.box.com/s/qy1bxyhofq01we7q6fn6j4ob879o57ff",
+      "evidenceNote": "Her CV lists a 2014 PhD in Operations Research from Tel Aviv University (advisor Refael Hassin) and, as the first academic position, a Post-Doctoral Fellowship at the Rotman School of Management and Mechanical and Industrial Engineering, University of Toronto, 2013-2015, followed by Assistant Professor at Simon, Rochester, 2015-2022. The postdoctoral fellowship began in 2013, before the 2014 degree year (formal conferral at Tel Aviv lags submission); the overlap is noted.",
+      "phdYearVerified": 2014,
+      "phdInstitutionVerified": "Tel Aviv University",
+      "reason": "Dated CV: Toronto postdoctoral fellowship 2013-2015 is the first post; it began in the year before the 2014 Tel Aviv degree, which the overlap rule allows for an explicitly post-doctoral appointment.",
       "sources": [
         {
           "url": "https://rochester.box.com/s/qy1bxyhofq01we7q6fn6j4ob879o57ff",
-          "title": "Ricky Roet-Green academic profile",
-          "notes": "The Rochester biography dates doctorate to 2014 and reports a two-year Toronto postdoc before Simon, but does not date that appointment or explicitly exclude an earlier role; Box CV was not readable."
+          "title": "Ricky Roet-Green CV (Box link from the Simon profile)",
+          "notes": "The Box viewer is script-drawn; the public file was downloaded through Box's static-download form of the same shared link (rochester.box.com/shared/static/<id>.pdf) and read with pdftotext."
         },
         {
           "url": "https://simon.rochester.edu/faculty/ricky-roet-green",
-          "title": "Ricky Roet-Green academic profile",
-          "notes": "The Rochester biography dates doctorate to 2014 and reports a two-year Toronto postdoc before Simon, but does not date that appointment or explicitly exclude an earlier role; Box CV was not readable."
+          "title": "Simon Business School - Ricky Roet-Green",
+          "notes": "Re-opened with curl: PhD in Operations Research, Tel Aviv University, 2014; spent two years as a postdoc at the University of Toronto before joining Simon."
         }
       ],
       "source": "omlist"
@@ -31117,15 +31295,30 @@
       "facultyId": "omlist-a204fbe6e20756b8",
       "name": "Claudia Rosales",
       "status": "unresolved",
-      "checkedAt": "2026-10-16",
+      "checkedAt": "2026-10-17",
+      "reason": "The Walton directory page, rendered in a headless browser, gives a University of Cincinnati PhD in Operations Management and CPG-industry work before her academic career, with no dates. Her ORCID lists only Arkansas, Assistant Professor, from 2021-08-16. Her doctoral adviser Uday Rao's July 2021 CV lists her among his more recent PhD graduates as Assistant Professor, Michigan State University, without dates; that list mixes initial and current appointments, so it does not show that Michigan State was her first job or when it began. One web search pointed to Michigan State-hosted CVs (bps.broad.msu.edu), which now return 404 directly and through the reader. The OhioLINK ETD search could not be queried. Lead: Michigan State University assistant professor before Arkansas (2021). Earlier review (2026-10-16): the Arkansas directory page returned only her name and heading, with no career details.",
       "sources": [
         {
           "url": "https://walton.uark.edu/departments/supplychain/directory/uid/crosales/name/Claudia+Rosales/",
-          "title": "Claudia Rosales Profile",
-          "notes": "Arkansas directory page returns name and page heading without individual career details."
+          "title": "Walton College - Claudia Rosales",
+          "notes": "Rendered in a headless browser: bio and education without dates."
+        },
+        {
+          "url": "https://orcid.org/0000-0001-8221-961X",
+          "title": "ORCID - Claudia Rosales",
+          "notes": "Read through pub.orcid.org: University of Arkansas, Department of Supply Chain Management, Assistant Professor, from 2021-08-16; nothing earlier."
+        },
+        {
+          "url": "https://www.digitalmeasures.com/login/uc/faculty/files?file=cmFvdXMvcGNpL3ZpdGFfc2hvcnRfdWRheV9yYW8gSnV5IDIwMjEtMS5wZGY%3D&surId=180126&public=true&ver=2&expire=1792836787&sgntr=v8le7d7QdCbD139DjHI9lSu4tvA%3D",
+          "title": "Uday S. Rao - Short biographical sketch, July 2021 (her doctoral adviser)",
+          "notes": "Student-advising section: 'Assistant Professors (more recent grads): Claudia Rosales, Michigan State University'. No dates."
+        },
+        {
+          "url": "https://bps.broad.msu.edu/media/documents/5c545f4310edd5da3417d7e4.docx",
+          "title": "Claudia R. Rosales CV (Michigan State, from a web search)",
+          "notes": "HTTP 404 to curl and through the r.jina.ai reader; not read."
         }
       ],
-      "reason": "Arkansas directory page returns name and page heading without individual career details.",
       "source": "omlist"
     },
     {
@@ -31675,16 +31868,29 @@
     {
       "facultyId": "omlist-7923d01b35eeb005",
       "name": "Florian Sachs",
-      "status": "unresolved",
-      "checkedAt": "2026-10-16",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "employer": "University of Cologne",
+      "position": "Junior Professor (Juniorprofessor) for Supply Chain Analytics",
+      "placementYear": 2023,
+      "category": "unknown",
+      "evidenceUrl": "https://wiso.uni-koeln.de/de/forschung/professorinnen/professorinnen-a-bis-z/jun-prof-dr-florian-e-sachs",
+      "evidenceNote": "The Cologne faculty profile CV lists a 2022 TUM doctorate (Dr. rer. pol., supervisor Gudrun P. Kiesmueller), Research Assistant at TUM's Center for Digital Transformation 2020-2023, and Assistant Professor for Supply Chain Analytics at Cologne since 2023. His personal website says he defended on 1 December 2022 and was appointed Juniorprofessor at Cologne as of 1 March 2023. The TUM research-assistant post began before the degree and ran to its end, so the Cologne junior professorship is the first new job. Whether the junior professorship carries a tenure track is not stated.",
+      "phdYearVerified": 2022,
+      "phdInstitutionVerified": "Technical University of Munich",
+      "reason": "Faculty CV and personal site: TUM doctorate defended 1 December 2022 while a TUM research assistant (2020-2023); new post at Cologne from 1 March 2023.",
       "sources": [
         {
           "url": "https://wiso.uni-koeln.de/de/forschung/professorinnen/professorinnen-a-bis-z/jun-prof-dr-florian-e-sachs",
-          "title": "Florian Sachs Profile",
-          "notes": "Fetch failed: HTTP Error 403: Forbidden"
+          "title": "WiSo-Fakultaet Koeln - Jun.-Prof. Dr. Florian E. Sachs",
+          "notes": "The site reset plain curl connections; read through the r.jina.ai reader. Curriculum vitae section read."
+        },
+        {
+          "url": "https://www.sachs.one/",
+          "title": "Florian Sachs - personal website",
+          "notes": "Fetched with curl: defence on 1 December 2022 at TUM; TUM Heilbronn research post from March 2020; appointed Juniorprofessor at Cologne as of 1 March 2023."
         }
       ],
-      "reason": "Cologne primary profile returned HTTP403; first employment could not be established.",
       "source": "omlist"
     },
     {
@@ -31736,13 +31942,18 @@
       "facultyId": "omlist-ea0ef088775f7414",
       "name": "Funda Sahin",
       "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "UH profiles surfaced via search confirm a Texas A&M PhD (no year in snippet) but no CV or dated chronology; the UH Bauer page returned HTTP 403. First post-PhD job unestablished. Discovery web searches were also run; their snippets were not treated as verification.",
+      "checkedAt": "2026-10-17",
+      "reason": "The Bauer directory page refused every route tried now: HTTP 403 to curl with a browser user-agent, an empty response through the r.jina.ai reader, and 'Access denied' in a headless browser; guessed uh.edu paths return 404. Her ORCID record (0000-0001-9037-285X) has no affiliations. One web search found only a University of Houston bio giving a Texas A&M PhD in operations and supply chain management and an MBA, with no dates. No dated chronology after the Texas A&M degree was found. Earlier review (2026-10-16): University of Houston profiles found by search confirmed a Texas A&M PhD without a year, the Bauer page returned 403, and no CV or dated chronology was found.",
       "sources": [
         {
           "url": "https://www.bauer.uh.edu/directory/funda-sahin.php",
-          "title": "UH Bauer faculty page (guessed URL)",
-          "notes": "Attempted; HTTP 403."
+          "title": "UH Bauer directory - Funda Sahin",
+          "notes": "403 to curl and a headless browser; r.jina.ai returned an empty-file error. Not read."
+        },
+        {
+          "url": "https://orcid.org/0000-0001-9037-285X",
+          "title": "ORCID - Funda Sahin",
+          "notes": "Read through pub.orcid.org: no employment or education entries."
         }
       ],
       "source": "omlist"
@@ -33241,19 +33452,27 @@
     {
       "facultyId": "omlist-2a7945ef18d1995e",
       "name": "Yaron Shaposhnik",
-      "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "University profile lacks early career chronology; linked public Box CV renders only a JavaScript notice.",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "employer": "University of Rochester, Simon Business School",
+      "position": "Assistant Professor",
+      "placementYear": 2016,
+      "category": "tenure-track",
+      "evidenceUrl": "https://rochester.box.com/s/a9savbg34v7kj3q8w87dvs67mwn8l8gw",
+      "evidenceNote": "His CV gives an MIT PhD in Operations Research, September 2016 (advisors Retsef Levi and Thomas Magnanti); professional experience: Assistant professor, University of Rochester, 2016-2024, preceded only by MIT research and teaching assistantships (2011-2016), a 2014 hospital research internship, and pre-PhD jobs as a logistics planner (2010-2011) and software engineer (2006-2007).",
+      "phdYearVerified": 2016,
+      "phdInstitutionVerified": "Massachusetts Institute of Technology",
+      "reason": "Dated CV: Rochester (Simon) assistant professorship from 2016, the year of the September 2016 MIT PhD; industry jobs predate the doctorate.",
       "sources": [
         {
           "url": "https://rochester.box.com/s/a9savbg34v7kj3q8w87dvs67mwn8l8gw",
-          "title": "Yaron Shaposhnik public academic profile",
-          "notes": "University profile lacks early career chronology; linked public Box CV renders only a JavaScript notice."
+          "title": "Yaron Shaposhnik CV (Box link from the Simon profile)",
+          "notes": "The Box viewer is script-drawn; downloaded through the static-download form of the same shared link and read with pdftotext (education, academic appointments, professional experience)."
         },
         {
           "url": "https://simon.rochester.edu/faculty/yaron-shaposhnik",
-          "title": "Yaron Shaposhnik public academic profile",
-          "notes": "University profile lacks early career chronology; linked public Box CV renders only a JavaScript notice."
+          "title": "Simon Business School - Yaron Shaposhnik",
+          "notes": "Re-opened with curl: faculty page that links the CV; no early chronology on the page itself."
         }
       ],
       "source": "omlist"
@@ -33323,14 +33542,27 @@
     {
       "facultyId": "omlist-e50f35f70ba5af3d",
       "name": "Steven Shechter",
-      "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "No CV located. UBC Sauder page returned HTTP 403 and searches found nothing on the Pittsburgh PhD or early career. First post-PhD job unestablished. Discovery web searches were also run; their snippets were not treated as verification.",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "employer": "University of British Columbia, Sauder School of Business",
+      "position": "Assistant Professor",
+      "placementYear": 2006,
+      "category": "tenure-track",
+      "evidenceUrl": "https://www.sauder.ubc.ca/sites/default/files/2026-08/Shechter_Steven_Research_CV_2026.pdf",
+      "evidenceNote": "His UBC faculty CV (dated March 31, 2026) lists a University of Pittsburgh PhD in Industrial Engineering 1/2002-7/2006 (advisor Andrew J. Schaefer); before UBC he was a Pittsburgh research assistant 1/2002-7/2006, a United Airlines senior analyst 7/1999-10/2001 and a simulation analyst in 1998; at UBC, Assistant Professor 7/2006-8/2013.",
+      "phdYearVerified": 2006,
+      "phdInstitutionVerified": "University of Pittsburgh",
+      "reason": "Dated CV: the UBC Sauder assistant professorship began in July 2006, the month the Pittsburgh PhD ended; the industry posts preceded the doctorate.",
       "sources": [
         {
+          "url": "https://www.sauder.ubc.ca/sites/default/files/2026-08/Shechter_Steven_Research_CV_2026.pdf",
+          "title": "Steven Shechter - UBC Curriculum Vitae for Faculty Members (March 2026)",
+          "notes": "Downloaded with curl and a browser user-agent; education and employment record read."
+        },
+        {
           "url": "https://www.sauder.ubc.ca/people/steven-shechter",
-          "title": "UBC Sauder profile (guessed URL)",
-          "notes": "Attempted; HTTP 403."
+          "title": "UBC Sauder - Steven Shechter",
+          "notes": "Fetched with curl and a browser user-agent (earlier 403 to the fetch tool); links the CV."
         }
       ],
       "source": "omlist"
@@ -35265,14 +35497,32 @@
     {
       "facultyId": "omlist-4e2ba7073be3dcd2",
       "name": "Heletjé van Staden",
-      "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "University profile returned only a Discovery application shell without readable career information.",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "employer": "University College Dublin",
+      "position": "Assistant Professor",
+      "placementYear": 2021,
+      "category": "unknown",
+      "evidenceUrl": "https://orcid.org/0000-0002-2543-2673",
+      "evidenceNote": "Her ORCID record (self-maintained, read through the public API) lists one employment: University College Dublin, Assistant Professor, from 2021-10-01, and a KU Leuven dissertation dated 2021-06-28; the KU Leuven Lirias record dates the PhD thesis (supervisor Robert Boute) 28 June 2021. The UCD profile says that before her PhD she was a lecturer at the University of Namibia, so the UCD post three months after the thesis is the first new job. An Irish assistant-professor title is not classed as tenure-track without a statement of a permanent post.",
+      "phdYearVerified": 2021,
+      "phdInstitutionVerified": "KU Leuven",
+      "reason": "ORCID dates the UCD assistant professorship from 1 October 2021, three months after the KU Leuven thesis of 28 June 2021 (Lirias); the only earlier job named on the UCD profile, a University of Namibia lectureship, was held before the PhD.",
       "sources": [
         {
+          "url": "https://orcid.org/0000-0002-2543-2673",
+          "title": "ORCID - Heletje van Staden",
+          "notes": "Read through pub.orcid.org/v3.0 (employments, works): UCD Assistant Professor from 2021-10-01; dissertation-thesis work dated 2021-06-28 (Lirias id 3465588)."
+        },
+        {
+          "url": "https://kuleuven.limo.libis.be/discovery/search?query=any,contains,LIRIAS3465588&tab=LIRIAS&search_scope=lirias_profile&vid=32KUL_KUL:Lirias&offset=0",
+          "title": "KU Leuven Lirias - PhD thesis record 3465588",
+          "notes": "Rendered in a headless browser: PhD thesis 'Decision making in the presence of uncertainty: Industry 4.0 enabled preventive maintenance', Van Staden, Heletje; Boute, Robert (Supervisor), 2021-06-28."
+        },
+        {
           "url": "https://people.ucd.ie/heletje.vanstaden",
-          "title": "Heletjé van Staden public academic profile",
-          "notes": "University profile returned only a Discovery application shell without readable career information."
+          "title": "UCD People - Heletje Van Staden",
+          "notes": "Rendered in a headless browser (earlier fetch returned only an application shell): PhD from the Faculty of Economics and Business Leuven; held a lecturer position at the University of Namibia before her PhD; current title Lecturer/Assistant Professor; no dates."
         }
       ],
       "source": "omlist"
@@ -35552,14 +35802,22 @@
     {
       "facultyId": "omlist-81828830bcf8bf3b",
       "name": "Fabian Sting",
-      "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "The linked Cologne profile returned an access-denied response.",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "employer": "INSEAD",
+      "position": "Post-Doctoral Research Fellow in Technology and Operations Management",
+      "placementYear": 2008,
+      "category": "postdoc",
+      "evidenceUrl": "https://cd.wiso.uni-koeln.de/en/team/supply-chain-management-strategie-und-innovation/prof-dr-fabian-j-sting",
+      "evidenceNote": "The Cologne team profile CV lists a 2005-2008 doctorate in Production Management at WHU (Dr. rer. pol.), then a 2008-2010 Post-Doctoral Research Fellowship in Technology and Operations Management at INSEAD, Fontainebleau, then Assistant Professor at Rotterdam School of Management 2010-2014.",
+      "phdYearVerified": 2008,
+      "phdInstitutionVerified": "WHU – Otto Beisheim School of Management",
+      "reason": "Dated CV on the employer's page: INSEAD postdoctoral fellowship 2008-2010 directly after the 2005-2008 WHU doctorate.",
       "sources": [
         {
           "url": "https://cd.wiso.uni-koeln.de/en/team/supply-chain-management-strategie-und-innovation/prof-dr-fabian-j-sting",
-          "title": "Fabian Sting academic profile",
-          "notes": "The linked Cologne profile returned an access-denied response."
+          "title": "University of Cologne - Prof. Dr. Fabian J. Sting",
+          "notes": "Fetched with curl and a browser user-agent (earlier access denied to the fetch tool); curriculum vitae section read."
         }
       ],
       "source": "omlist"
@@ -37812,14 +38070,27 @@
     {
       "facultyId": "omlist-9b992f4f3ef3927b",
       "name": "Danko Turcic",
-      "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "The UCR profile returned an application shell without a readable individual biography.",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "employer": "Washington University in St. Louis, Olin Business School",
+      "position": "Assistant Professor of Operations and Manufacturing Management",
+      "placementYear": 2008,
+      "category": "tenure-track",
+      "evidenceUrl": "https://profiles.ucr.edu/api/CvAttachment/18486058",
+      "evidenceNote": "His CV (attached to the UCR profile) lists a Case Western Reserve PhD in Operations Research, 2004-2008, then Assistant Professor of Operations and Manufacturing Management at Olin Business School, Washington University in St. Louis, 2008-2015, Associate Professor there 2015-2019, and UC Riverside from 2019. No other post is listed between the PhD and Olin.",
+      "phdYearVerified": 2008,
+      "phdInstitutionVerified": "Case Western Reserve University",
+      "reason": "Dated CV: Olin assistant professorship from 2008, the year the CWRU doctorate (2004-2008) ended.",
       "sources": [
         {
+          "url": "https://profiles.ucr.edu/api/CvAttachment/18486058",
+          "title": "Danko Turcic CV (UCR Profiles attachment)",
+          "notes": "Downloaded with curl and a browser user-agent from the CV link on the profile; academic employment and education read."
+        },
+        {
           "url": "https://profiles.ucr.edu/app/home/profile/dankot",
-          "title": "Danko Turcic academic profile",
-          "notes": "The UCR profile returned an application shell without a readable individual biography."
+          "title": "UCR Profiles - Danko Turcic",
+          "notes": "Rendered in a headless browser (earlier fetch returned an application shell): Ph.D. in Operations Research, CWRU, 2008; links the CV."
         }
       ],
       "source": "omlist"
@@ -39159,22 +39430,22 @@
       "name": "Geng Wang",
       "status": "unresolved",
       "checkedAt": "2026-10-17",
-      "reason": "The Liverpool profile says she received her Ph.D. from Aalborg University in December 2023 and joined Liverpool in May 2024 (ORCID: Lecturer from 2024-05-01), but ORCID also lists an Aalborg University employment with no start date or role ending 31 May 2024. Whether that Aalborg entry is only the doctoral fellowship or a post-PhD research post (which would be the first job) is not stated. Aalborg's research portal (vbn.aau.dk) refused both the fetch tool (403) and curl (Cloudflare challenge). Candidate if the Aalborg entry is the fellowship: University of Liverpool Lecturer, May 2024.",
+      "reason": "ORCID, re-read in full: Liverpool Lecturer from 2024-05-01; an Aalborg University employment pushed by Aalborg University itself, with no start date and no role, ending 2024-05-31; a 2023 dissertation-thesis work. Whether the Aalborg post continued after the December 2023 PhD as a new post-doctoral or research post, or was only the doctoral fellowship running out, is still not stated. The Aalborg research portal (vbn.aau.dk) shows a Cloudflare challenge to curl, to the r.jina.ai reader (including its browser engine) and to a headless browser. Candidate if the Aalborg entry is the fellowship: University of Liverpool Lecturer, May 2024. Earlier review (2026-10-17): the Liverpool profile gives a December 2023 Aalborg PhD and a May 2024 Liverpool start, ORCID shows the undated Aalborg employment ending 31 May 2024, and the Aalborg portal refused both tools.",
       "sources": [
         {
-          "url": "https://www.liverpool.ac.uk/management/staff/geng-wang/",
-          "title": "University of Liverpool — Dr Geng Wang",
-          "notes": "PhD Aalborg December 2023; joined Liverpool School of Management May 2024; pre-doctoral auditor career."
-        },
-        {
           "url": "https://orcid.org/0000-0002-1830-7495",
-          "title": "ORCID — Geng Wang",
-          "notes": "Employment: Liverpool Lecturer from 2024-05-01; Aalborg University (no role, no start) ending 2024-05-31."
+          "title": "ORCID - Geng Wang",
+          "notes": "Read through pub.orcid.org: employments (Liverpool Lecturer from 2024-05-01; Aalborg University, end 2024-05-31, no role) and works (dissertation-thesis 2023)."
         },
         {
           "url": "https://vbn.aau.dk/en/persons/?search=Geng%20Wang",
-          "title": "Aalborg University research portal search",
-          "notes": "Attempted; blocked (403 / Cloudflare)."
+          "title": "Aalborg University research portal - person search",
+          "notes": "Cloudflare challenge for curl, r.jina.ai (also with its browser engine) and a headless browser; not read."
+        },
+        {
+          "url": "https://www.liverpool.ac.uk/management/staff/geng-wang/",
+          "title": "University of Liverpool - Geng Wang",
+          "notes": "Earlier review: PhD from Aalborg University in December 2023; joined Liverpool in May 2024."
         }
       ],
       "source": "omlist"
@@ -40983,22 +41254,27 @@
       "name": "Shenghao Xie",
       "status": "unresolved",
       "checkedAt": "2026-10-17",
-      "reason": "The Liverpool profile calls him a Lecturer (Assistant Professor) and says he did his PhD at Southampton, but gives no completion date or Liverpool start date. ORCID shows the Southampton PhD starting 2020-09 with no end date and no employment entries. The Southampton ePrints thesis search refused both curl and the fetch tool (403). Neither the degree date nor any dated first job is established.",
+      "reason": "The Liverpool profile (re-opened; now at liverpool.ac.uk/people/shenghao-xie) calls him a Lecturer (Assistant Professor) and describes his Southampton PhD, still without dates. The Southampton ePrints search returns 403 to curl and a security check through the r.jina.ai reader. DataCite now shows a Southampton dataset (doi 10.5258/soton/d3026, creator Xie, Shenghao, issued 2024) supporting his doctoral thesis 'Blockchain application in recycling: from the supply chain perspective', so the thesis is from about 2024, but neither the degree date nor the Liverpool start date is documented. Earlier review (2026-10-17): the Liverpool profile gave no completion or start date, ORCID showed the Southampton PhD starting 2020-09 with no end and no employment, and ePrints refused both tools.",
       "sources": [
         {
           "url": "https://www.liverpool.ac.uk/management/staff/shenghao-xie/",
-          "title": "University of Liverpool — Dr Shenghao Xie",
-          "notes": "Undated; current Lecturer; PhD at University of Southampton mentioned without a date."
+          "title": "University of Liverpool - Dr Shenghao Xie",
+          "notes": "Fetched with curl (redirects to /people/shenghao-xie): Lecturer (Assistant Professor); PhD at the University of Southampton; no dates."
         },
         {
-          "url": "https://orcid.org/0000-0003-1134-5285",
-          "title": "ORCID — Shenghao Xie",
-          "notes": "Education: Southampton PhD from 2020-09 (no end), Leeds MSc 2019-2020; no employment."
+          "url": "https://api.datacite.org/dois/10.5258/soton/d3026",
+          "title": "DataCite - Dataset in support of the University of Southampton Doctoral thesis 'Blockchain application in recycling: from the supply chain perspective'",
+          "notes": "Creator Xie, Shenghao; publisher University of Southampton; issued 2024."
         },
         {
           "url": "https://eprints.soton.ac.uk/cgi/search/archive/simple?screen=Search&dataset=archive&q=Shenghao+Xie&_action_search=Search",
-          "title": "University of Southampton ePrints search",
-          "notes": "Attempted; HTTP 403 to curl and fetch tool."
+          "title": "Southampton ePrints search",
+          "notes": "403 to curl; security check through r.jina.ai; not read."
+        },
+        {
+          "url": "https://orcid.org/0000-0003-1134-5285",
+          "title": "ORCID - Shenghao Xie",
+          "notes": "Earlier review: Southampton PhD from 2020-09, no end date, no employment."
         }
       ],
       "source": "omlist"
@@ -44822,13 +45098,23 @@
       "facultyId": "omlist-b69131220d3224cf",
       "name": "Oded Berman",
       "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "The Toronto profile returned a JavaScript application shell without a readable biography.",
+      "checkedAt": "2026-10-17",
+      "reason": "The Toronto Discover Research profile (rendered in a headless browser; data read from its own API) confirms the MIT PhD, and the Rotman people page dates it 1978, but the listed academic appointments start only in 1992 (Toronto Faculty of Management). One web search surfaced a Rotman-hosted CV (cd-www.rotman.utoronto.ca/-/media/Files/Faculty-Bios/CVs/98F0B447E03047378885065BA159A6D9pdf.pdf) whose summary reports a research associate post at MIT's Laboratory for Information and Decision Systems in early 1978 and an assistant professorship at the University of Calgary from July 1978. That host reset every connection (curl and a headless browser), answered 503 to the fetch tool and timed out through the reader, and the same path on www.rotman.utoronto.ca is 404, so the CV was not read. Lead: Calgary assistant professor from July 1978 (or an MIT LIDS research associate post earlier in 1978). Earlier review (2026-10-16): the Toronto profile was a JavaScript shell without a readable biography.",
       "sources": [
         {
           "url": "https://discover.research.utoronto.ca/12113-oded-berman",
-          "title": "Oded Berman academic profile",
-          "notes": "The Toronto profile returned a JavaScript application shell without a readable biography."
+          "title": "University of Toronto Discover Research - Oded Berman",
+          "notes": "Rendered in a headless browser; discover.research.utoronto.ca/api/users/12113 read: PhD MIT; appointments from 1992 only."
+        },
+        {
+          "url": "https://www.rotman.utoronto.ca/the-rotman-experience/our-community/people/berman-oded/",
+          "title": "Rotman School - Oded Berman",
+          "notes": "Fetched with curl: PhD (1978) in Operations Research from MIT; no CV or earlier appointments."
+        },
+        {
+          "url": "https://cd-www.rotman.utoronto.ca/-/media/Files/Faculty-Bios/CVs/98F0B447E03047378885065BA159A6D9pdf.pdf",
+          "title": "Oded Berman CV (Rotman, found through a web search)",
+          "notes": "Connection reset for curl and a headless browser, 503 to the fetch tool, timeout through r.jina.ai; not read."
         }
       ],
       "source": "omlist"
@@ -45063,19 +45349,27 @@
     {
       "facultyId": "omlist-ddb593f613de807d",
       "name": "Henri Groenevelt",
-      "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "The Rochester biography notes 44 years of service without degree or earliest appointment dates; Box CV returned an application shell.",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "employer": "University of Rochester, William E. Simon Graduate School of Business Administration",
+      "position": "Assistant Professor of Operations Management",
+      "placementYear": 1984,
+      "category": "tenure-track",
+      "evidenceUrl": "https://rochester.box.com/s/kijz6d0rco388skckzzu2piu0cmy653f",
+      "evidenceNote": "His CV (dated 04/30/2025) lists a Columbia Ph.D. conferred January 1985 (advisor Awi Federgruen) and employment: Teaching and Research Assistant, Columbia Graduate School of Business, 1/1982-8/1984; Assistant Professor of Operations Management, Simon School, University of Rochester, 9/1984-6/1990; Associate Professor from 7/1990. The Rochester post began in September 1984, four months before the January 1985 conferral, and was not retitled; the overlap is noted.",
+      "phdYearVerified": 1985,
+      "phdInstitutionVerified": "Columbia University",
+      "reason": "Dated CV: Simon assistant professorship from September 1984, directly after the Columbia assistantship and four months before the formal January 1985 degree.",
       "sources": [
         {
           "url": "https://rochester.box.com/s/kijz6d0rco388skckzzu2piu0cmy653f",
-          "title": "Henri Groenevelt academic profile",
-          "notes": "The Rochester biography notes 44 years of service without degree or earliest appointment dates; Box CV returned an application shell."
+          "title": "Henri Groenevelt CV, 04/30/2025 (Box link from the Simon profile)",
+          "notes": "The Box viewer returned an application shell earlier; downloaded through the static-download form of the same shared link and read with pdftotext (degrees, employment summary)."
         },
         {
           "url": "https://simon.rochester.edu/faculty/henri-groenevelt",
-          "title": "Henri Groenevelt academic profile",
-          "notes": "The Rochester biography notes 44 years of service without degree or earliest appointment dates; Box CV returned an application shell."
+          "title": "Simon Business School - Henri Groenevelt",
+          "notes": "Re-opened with curl: faculty page that links the CV; no degree or appointment dates on the page itself."
         }
       ],
       "source": "omlist"
@@ -45210,15 +45504,20 @@
       "facultyId": "omlist-278cc46dbdff7915",
       "name": "Phillip Lederer",
       "status": "unresolved",
-      "checkedAt": "2026-10-16",
+      "checkedAt": "2026-10-17",
+      "reason": "The Simon profile (re-opened) says he has taught and researched operations management at Rochester since August 1984 but gives no degree. Its CV link is a Box file link that now requires a Box login (the shared link reports it has been removed or is unavailable, and the static-download form returns 404). The Mathematics Genealogy Project has no entry for him. Without the doctorate's institution and year, Rochester from August 1984 cannot be shown to be the first post-PhD job. Earlier review (2026-10-16): the Rochester biography dated his employment from August 1984 but omitted degree timing and early career; the CV was a Box viewer.",
       "sources": [
         {
           "url": "https://simon.rochester.edu/faculty/phillip-lederer",
-          "title": "Phillip Lederer Profile",
-          "notes": "Rochester biography dates employment from August 1984 but omits degree timing and early career chronology; linked CV is a Box viewer."
+          "title": "Simon Business School - Phillip Lederer",
+          "notes": "Fetched with curl: at Rochester since August 1984; CV link to rochester.app.box.com/file/761240849522."
+        },
+        {
+          "url": "https://rochester.app.box.com/file/761240849522?s=geaxtn8wapzk4t7k3qvns7vxv601wi99",
+          "title": "Box - Lederer CV",
+          "notes": "Headless browser shows a Box login page; the /s/ shared link reports 'removed or unavailable'; not read."
         }
       ],
-      "reason": "Rochester biography dates employment from August 1984 but omits degree timing and early career chronology; linked CV is a Box viewer.",
       "source": "omlist"
     },
     {
@@ -45404,16 +45703,34 @@
     {
       "facultyId": "omlist-79cc9df2609b19fa",
       "name": "Roger Schroeder",
-      "status": "unresolved",
-      "checkedAt": "2026-10-16",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "employer": "Naval Postgraduate School",
+      "position": "Assistant Professor of Operations Research",
+      "placementYear": 1965,
+      "category": "other-academic",
+      "evidenceUrl": "https://hdl.handle.net/10945/31696",
+      "evidenceNote": "The Naval Postgraduate School Catalogue for 1966-1967 lists Roger Glenn Schroeder, Lieutenant Junior Grade, U.S. Navy, Assistant Professor of Operations Research (1965), B.S. Minnesota 1962, M.S.I.E. 1963, Ph.D. Northwestern 1966. An NPS technical report of June 1966 says the work was part of his Northwestern dissertation (advisor A. Charnes), done while he was in the Navy's Junior Line Officer Advanced Scientific Educational Program. The Carlson profile says he was on the NPS faculty before joining Minnesota. The NPS appointment (1965) began about a year before the 1966 degree and was not retitled on completion; he held it as a serving naval officer. Verifier: re-opened the 1966-67 catalogue entry and the June 1966 technical report; the catalogue gives the year in parentheses with every faculty entry and dates his NPS appointment 1965, the report says the research was part of the Northwestern dissertation and was done under the Navy educational program, and nothing records an ABD or acting title, so the NPS post is kept as a new post that began about a year before the 1966 degree and was not retitled (overlap rule, Brynjolfsson precedent; within the one-year allowance), with the continuing naval service noted and category other-academic under the military-faculty rule.",
+      "phdYearVerified": 1966,
+      "phdInstitutionVerified": "Northwestern University",
+      "reason": "Official NPS catalogue dates his assistant professorship from 1965, with the Northwestern PhD in 1966; it is his first faculty post and the only one named before Minnesota. Recorded under the overlap rule with the 1965 start; a verifier may judge that a 1965 start is too early to count as a post-PhD job.",
       "sources": [
         {
+          "url": "https://hdl.handle.net/10945/31696",
+          "title": "Naval Postgraduate School - Catalogue for 1966-1967 (Calhoun)",
+          "notes": "PDF downloaded through the Calhoun DSpace API (item 481ab790-d55f-4042-b716-9c97e43a9a73) and searched with pdftotext; faculty entry for Roger Glenn Schroeder read."
+        },
+        {
+          "url": "https://hdl.handle.net/10945/31865",
+          "title": "Calhoun - Search and evasion games (Schroeder, Roger Glenn), NPS technical report, June 1966",
+          "notes": "Repository metadata read through the API: part of his Northwestern Ph.D. dissertation; Junior Line Officer Advanced Scientific Educational Program."
+        },
+        {
           "url": "https://carlsonschool.umn.edu/faculty/roger-schroeder",
-          "title": "Roger Schroeder Profile",
-          "notes": "Fetch failed: HTTP Error 403: Forbidden"
+          "title": "Carlson School of Management - Roger Schroeder",
+          "notes": "Fetched with curl and a browser user-agent (earlier 403): PhD 1966 Northwestern; on the faculty of the U.S. Naval Postgraduate School before Minnesota; no dates."
         }
       ],
-      "reason": "Minnesota faculty biography returned HTTP403; no readable primary early-career chronology obtained.",
       "source": "omlist"
     },
     {
@@ -45642,16 +45959,29 @@
     {
       "facultyId": "omlist-3e950cd357788c34",
       "name": "Reidar Hagtvedt",
-      "status": "unresolved",
-      "checkedAt": "2026-10-16",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "employer": "University of Georgia, Terry College of Business",
+      "position": "Visiting Assistant Professor",
+      "placementYear": 2000,
+      "category": "other-academic",
+      "evidenceUrl": "https://apps.ualberta.ca/directory/person/hagtvedt/cv",
+      "evidenceNote": "His University of Alberta CV lists a Georgia State Robinson College PhD in Business Administration, 1999 (dissertation 'Chaos in Stock Returns'), an Instructor post at Georgia State 1995-2000 (held through the doctorate) and statistical consulting at GSU 1995-1999, then Visiting Assistant Professor, Dept. of Banking & Finance, Terry College of Business, University of Georgia, 2000-2003. The CV also lists a second doctorate, a Georgia Tech PhD in Industrial and Systems Engineering in 2008, after which he was Visiting Assistant Professor at the Alberta School of Business from 2008.",
+      "phdYearVerified": 1999,
+      "phdInstitutionVerified": "Georgia State University",
+      "reason": "Dated CV: the Georgia State instructor post (1995-2000) began before the 1999 GSU PhD and continued, so the first new post-PhD job is the University of Georgia visiting assistant professorship from 2000. The earlier conflict over Georgia Tech is explained by a second doctorate (Georgia Tech ISyE, 2008); the record's Georgia State 1999 degree is confirmed.",
       "sources": [
         {
+          "url": "https://apps.ualberta.ca/directory/person/hagtvedt/cv",
+          "title": "University of Alberta directory - Reidar Hagtvedt curriculum vitae (PDF)",
+          "notes": "Fetched with curl and a browser user-agent (the fetch tool failed earlier); academic experience and education sections read."
+        },
+        {
           "url": "https://apps.ualberta.ca/directory/person/hagtvedt",
-          "title": "Reidar Hagtvedt official profile",
-          "notes": "Alberta directory describes research without degree or earliest appointment dates; its public CV link failed to load. Earlier official calendar identifies Georgia Tech degrees, conflicting with imported Georgia State and requiring resolution."
+          "title": "Directory@UAlberta - Reidar Hagtvedt",
+          "notes": "Research and teaching overview without dates; links the CV."
         }
       ],
-      "reason": "Alberta directory describes research without degree or earliest appointment dates; its public CV link failed to load. Earlier official calendar identifies Georgia Tech degrees, conflicting with imported Georgia State and requiring resolution.",
       "source": "omlist"
     },
     {
@@ -64905,24 +65235,22 @@
       "name": "William Harrington",
       "status": "unresolved",
       "checkedAt": "2026-10-17",
-      "reason": "The University of Louisville ThinkIR record (read through the OAI-PMH interface) for 'Performance analysis of organizations as complex systems' by Harrington, William C., Jr. gives degree Ph. D., program Industrial Engineering, PhD, advisor Ki-Hwan Bae, date May 2017 (the PDF file name calls him Bill Harrington). That a Louisville IE doctorate holder of this name is now a Louisville ISE lecturer makes the identity likely, but no source ties them explicitly. The dissertation PDF and its vita could not be read (HTTP 403, Cloudflare). No opened source names or dates any job after May 2017; the Speed School directory answers HTTP 403, no ORCID record matches, and one web search found nothing about him. The first post-PhD employer and year are not established.",
-      "phdInstitutionVerified": "University of Louisville",
-      "phdYearVerified": 2017,
+      "reason": "The ThinkIR dissertation PDF (403 to curl) was read through the r.jina.ai reader. Its curriculum vita (William Charles Harrington, Jr., Louisville address) lists a University of Cincinnati BS in Mechanical Engineering (1996-2001) and a Case Western MBA (2005-2008), and undated professional experience headed by Director of Clinical Effectiveness, Norton Healthcare, apparently his post while finishing the doctorate, followed by Rockwell Automation, Goodyear, Motor Vehicle Forensic Services and Ford posts. No source dates any new job after the May 2017 PhD or the start of his Louisville lectureship, so if he simply stayed at Norton Healthcare the case stays open under the overlap rule. Earlier review (2026-10-17): the ThinkIR record dates the Louisville IE PhD May 2017 (advisor Ki-Hwan Bae); the PDF and vita could not be read; no post-2017 job was found.",
       "sources": [
         {
-          "url": "https://ir.library.louisville.edu/do/oai/?verb=GetRecord&metadataPrefix=document-export&identifier=oai:ir.library.louisville.edu:etd-3719",
-          "title": "ThinkIR OAI record etd-3719: Harrington, William C., Jr., Performance analysis of organizations as complex systems",
-          "notes": "degree_name Ph. D.; program Industrial Engineering, PhD; advisor Ki-Hwan Bae; publication date 2017-05."
+          "url": "https://ir.library.louisville.edu/context/etd/article/3719/viewcontent/Dissertation_Bill_Harrington_03_27_17.pdf",
+          "title": "ThinkIR - Performance analysis of organizations as complex systems (dissertation PDF)",
+          "notes": "403 to curl; read through r.jina.ai; curriculum vita section read."
         },
         {
-          "url": "https://ir.library.louisville.edu/context/etd/article/3719/viewcontent/Dissertation_Bill_Harrington_03_27_17.pdf",
-          "title": "Harrington dissertation PDF (ThinkIR)",
-          "notes": "HTTP 403 (Cloudflare) to a plain request and the fetch tool; vita not read."
+          "url": "https://ir.library.louisville.edu/do/oai/?verb=GetRecord&metadataPrefix=document-export&identifier=oai:ir.library.louisville.edu:etd-3719",
+          "title": "ThinkIR OAI record etd-3719",
+          "notes": "Earlier review: Ph.D. Industrial Engineering, advisor Ki-Hwan Bae, May 2017."
         },
         {
           "url": "https://engineering.louisville.edu/academics/faculty/?cat=14&filters=31",
-          "title": "Speed School faculty directory (Industrial & Systems Engineering filter)",
-          "notes": "HTTP 403 on 2026-10-17; roster review had recorded Lecturer, Industrial & Systems Engineering."
+          "title": "Speed School faculty listing",
+          "notes": "Earlier review: lists William Harrington as a Lecturer."
         }
       ],
       "source": "faculty-page"
@@ -68754,12 +69082,17 @@
       "name": "Chong Oh",
       "status": "unresolved",
       "checkedAt": "2026-10-17",
-      "reason": "The Eccles profile lists Ph.D. 2013, Information Systems, University of Utah, and the current career-line title Professor (Lecturer), but no employment history. No CV is linked; the University of Utah faculty-profile system redirects to a script-drawn page that returned no content; ORCID search with a Utah affiliation found no record; one web search found no CV. Whether he worked at Utah before the degree, and what his first post-PhD job was, cannot be established.",
+      "reason": "The University of Utah faculty-profile API (record u0557836, found through the profile search) gives a University of Utah PhD dated 2013 and Utah posts starting with Assistant Professor (Lecturer), Operations and Information Systems, from 2015-07-01, then Associate Professor (Lecturer) 2018-2022 and Professor (Lecturer) from 2022-07-01. Nothing covers 2013-2015, so the first post-PhD job is not established: it may be an undated Utah or outside post before July 2015. Earlier review (2026-10-17): the Eccles profile gives a 2013 Utah PhD and the career-line title without employment history; the Utah faculty profile was a script-drawn page; ORCID and one web search found nothing.",
       "sources": [
         {
+          "url": "https://profiles.faculty.utah.edu/u0557836",
+          "title": "University of Utah faculty profile - Chong Oh",
+          "notes": "Rendered in a headless browser; data from profiles.faculty.utah.edu/api/users/u0557836: degrees (PhD University of Utah 2013) and dated academic appointments from 2015-07-01."
+        },
+        {
           "url": "https://eccles.utah.edu/team/chong-oh/",
-          "title": "Chong Oh | Eccles School of Business",
-          "notes": "Title, education and publications reviewed; no dated appointments."
+          "title": "Eccles School - Chong Oh",
+          "notes": "Earlier review: Ph.D. 2013 Information Systems, University of Utah; no employment history."
         }
       ],
       "source": "faculty-page"
@@ -68768,20 +69101,20 @@
       "facultyId": "roster:university-of-utah:chris-dansie",
       "name": "Chris Dansie",
       "status": "unresolved",
-      "reason": "The Eccles profile states that he received a BS in Electrical Engineering and master's and doctorate degrees in Mechanical Engineering from the University of Utah, plus a Stanford clinical informatics certificate, and describes over 30 years in IT at startups, consulting firms and enterprises. It gives no degree years and no dated job sequence. The linked faculty.utah.edu profile returned only a script-drawn template, the University of Utah ETD search refused the automated request (HTTP 418), and LinkedIn was not used. The doctorate year and the first post-doctoral job remain unknown.",
+      "checkedAt": "2026-10-17",
+      "reason": "The University of Utah faculty profile, read through its own API (u0077434), now dates his degrees: PhD in Mechanical Engineering, University of Utah, 2009 (MS 1996, BS 1993) and Utah posts from Assistant Professor (Lecturer), Operations and Information Systems, 1 May 2013. His bio describes over 30 years in IT at startups, consulting firms and enterprises with no dates. The job he held at the 2009 doctorate, and whether he took any new job between 2009 and May 2013, are not documented, so the first post-doctoral job is not established. Earlier review (2026-10-17): the Eccles profile gives Utah ME master's and doctorate without years and a 30-year IT career; the faculty profile was a script-drawn template and the Utah ETD search refused the request.",
       "sources": [
         {
-          "url": "https://eccles.utah.edu/team/chris-dansie/",
-          "title": "Chris Dansie, Eccles School profile",
-          "notes": "Read as a plain HTML download. Doctorate in Mechanical Engineering, University of Utah, no year; undated career summary."
+          "url": "https://faculty.utah.edu/u0077434-CHRIS_DANSIE/biography/index.hml",
+          "title": "University of Utah faculty profile - Chris Dansie",
+          "notes": "Redirects to profiles.faculty.utah.edu/u0077434; rendered in a headless browser and read through its API: PhD 2009; academic positions from 2013-05-01."
         },
         {
-          "url": "https://faculty.utah.edu/u0077434-CHRIS_DANSIE/biography/index.hml",
-          "title": "Chris Dansie, University of Utah faculty profile",
-          "notes": "Returned an empty script-drawn template to a plain request; no content read."
+          "url": "https://eccles.utah.edu/team/chris-dansie/",
+          "title": "Eccles School - Chris Dansie",
+          "notes": "Earlier review: BS EE, MS and doctorate in ME from Utah, no years; IT career without dates."
         }
       ],
-      "checkedAt": "2026-10-17",
       "source": "faculty-page"
     },
     {
@@ -68924,17 +69257,17 @@
       "name": "Paul Hu",
       "status": "unresolved",
       "checkedAt": "2026-10-17",
-      "reason": "The Eccles profile lists Ph.D. 1998, Management Information Systems, University of Arizona, and awards, but no employment history. The University of Utah faculty profile (faculty.utah.edu/u0239890-Paul_Hu) redirects to a script-drawn page; neither the page nor its public API returned his record. ORCID search with a Utah affiliation found nothing; one web search found no CV. The first post-PhD employer and start year are not documented.",
+      "reason": "The University of Utah faculty-profile API returns 404 for his user id (u0239890), and the profile search finds no Paul Hu; ORCID searches under Paul Hu with a Utah affiliation and under Paul Jen-Hwa Hu return nothing. No dated employment after the 1998 Arizona PhD was found. Earlier review (2026-10-17): the Eccles profile lists Ph.D. 1998, MIS, University of Arizona, without employment history; the faculty profile and its API returned nothing; ORCID and one web search found no CV.",
       "sources": [
         {
-          "url": "https://eccles.utah.edu/team/paul-hu/",
-          "title": "Paul Hu | Eccles School of Business",
-          "notes": "Education and awards reviewed; no dated appointments."
+          "url": "https://profiles.faculty.utah.edu/api/users/u0239890",
+          "title": "University of Utah faculty-profile API - u0239890",
+          "notes": "HTTP 404 on 17 Oct 2026."
         },
         {
-          "url": "https://profiles.faculty.utah.edu/u0239890",
-          "title": "University of Utah faculty profile (attempted)",
-          "notes": "Script-drawn page; no content readable by plain request; API lookups returned no record."
+          "url": "https://eccles.utah.edu/team/paul-hu/",
+          "title": "Eccles School - Paul Hu",
+          "notes": "Earlier review: Ph.D. 1998 MIS, University of Arizona; no employment history."
         }
       ],
       "source": "faculty-page"
@@ -69633,25 +69966,25 @@
       "facultyId": "roster:virginia-tech:brian-m-kleiner",
       "name": "Brian M. Kleiner",
       "status": "unresolved",
-      "reason": "The Virginia Tech profile gives the Ph.D. as State University of New York, 1990, but its 'Professional History at Virginia Tech' starts with Associate Professor in 1994 and lists only Virginia Tech posts. A 2010 Virginia Tech news release calls him a member of the College of Engineering since 1991, without a rank; his HFES profile lists only current top positions. No opened source dates his rank at Virginia Tech in 1991-1994 or any job between the 1990 degree and 1991, so the first post-PhD job and its title are not established. Lead: Virginia Tech from 1991. The University at Buffalo alumni page that may say more refused the request (HTTP 403).",
+      "checkedAt": "2026-10-17",
+      "reason": "The Virginia Tech profile (re-opened) still gives only Virginia Tech posts from Associate Professor (1994) and a SUNY PhD in 1990. Both ORCID records under his name are empty. VTechWorks searches for Board of Visitors appointment minutes or a 1991-1993 catalogue that would give his entry rank found nothing usable. No source dates his rank at Virginia Tech in 1991-1994 or any job between the 1990 degree and 1991. Lead: Virginia Tech College of Engineering from 1991. Earlier review (2026-10-17): the VT profile's history starts in 1994; a 2010 VT news release puts him in the College of Engineering since 1991 without a rank; the HFES profile lists only current positions; the University at Buffalo alumni page refused the request.",
       "sources": [
         {
           "url": "https://ise.vt.edu/people/faculty/kleiner.html",
-          "title": "Brian M. Kleiner - Virginia Tech ISE faculty profile",
-          "notes": "Ph.D. SUNY 1990; VT-only history from 1994 (Associate Professor). Read with a plain HTTP request."
+          "title": "Virginia Tech ISE - Brian M. Kleiner",
+          "notes": "Fetched with curl: Ph.D. SUNY 1990; Professional History at Virginia Tech from 1994."
         },
         {
           "url": "https://news.vt.edu/articles/2010/06/2010-482.html",
           "title": "Virginia Tech News (2010) - Kleiner receives Bogle Professor Fellowship",
-          "notes": "Member of the College of Engineering since 1991; no rank or prior jobs."
+          "notes": "Earlier review: member of the College of Engineering since 1991, no rank."
         },
         {
           "url": "https://www.hfes.org/Portals/0/Documents/profile_kleiner.pdf",
           "title": "HFES profile - Brian Kleiner",
-          "notes": "Lists current positions only; education at University at Buffalo."
+          "notes": "Earlier review: current positions only; education at University at Buffalo."
         }
       ],
-      "checkedAt": "2026-10-17",
       "source": "faculty-page"
     },
     {
