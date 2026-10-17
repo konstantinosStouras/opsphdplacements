@@ -10,6 +10,8 @@ node scripts/merge-placement-research.mjs "${files[@]}"
 node scripts/build-institutions.mjs | tail -1
 node scripts/build-entities.mjs | tail -1
 npm run check > /tmp/opsphd-check.log 2>&1 || { echo "CHECK FAILED:"; grep -E "Error" /tmp/opsphd-check.log | head -5; exit 1; }
+# The publish workflow also runs these; a failure here means the live site would not update.
+python3 scripts/test-research-schema.py > /tmp/opsphd-schema.log 2>&1 && python3 scripts/build-research-database.py > /tmp/opsphd-db.log 2>&1 || { echo "DATABASE CHECK FAILED:"; tail -3 /tmp/opsphd-schema.log /tmp/opsphd-db.log; exit 1; }
 grep -E "ledger|placement" /tmp/opsphd-check.log | head -3
 node scripts/update-research-status.mjs
 node scripts/build.mjs | tail -1

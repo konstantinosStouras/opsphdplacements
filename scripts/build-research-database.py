@@ -22,6 +22,8 @@ def key(prefix, *parts):
 
 def build():
     faculty = read("faculty")
+    # Second source of people: faculty-page people confirmed on their own university pages.
+    roster_people = read("faculty-roster-people")
     placements = read("placements")
     reviews = read("research-status")
     programs = read("doctoral-programs")
@@ -100,6 +102,31 @@ def build():
                 claim("doctorate_id", did, field, f[field], dsid,
                       "Imported source assertion; original value retained even if later evidence corrects it.")
 
+    for f in roster_people["records"]:
+        pid = f["id"]
+        insert("person", person_id=pid, display_name=f["name"], created_at=f["retrievedAt"])
+        # Several people can share one directory page, so the stable person id is the identifier.
+        insert("person_identifier", person_id=pid, namespace="faculty-page-person", value=pid)
+        fsid = source(f["sourceUrl"], "University faculty page", f["retrievedAt"])
+        for field in ("currentInstitution", "title", "facultyStatus", "discipline"):
+            if f.get(field):
+                claim("person_id", pid, "directory_" + field, f[field], fsid,
+                      "Faculty-page assertion; not an independently verified employment spell or degree field.")
+        did = "doctorate-" + pid
+        yr = f.get("phdYear")
+        stated = bool(f.get("phdInstitution") or yr)
+        insert("doctorate", doctorate_id=did, person_id=pid,
+               awarding_organization_id=organization(f.get("phdInstitution")),
+               completion_status="source-reported" if stated else "unresolved",
+               award_lower=f"{yr}-01-01" if yr else None,
+               award_upper=f"{yr}-12-31" if yr else None,
+               award_precision="year" if yr else "unknown", award_original=str(yr) if yr else None)
+        dsid = source(f.get("phdInstitutionSourceUrl") or f["sourceProfileUrl"], "University faculty page (doctorate)", f["retrievedAt"])
+        for field in ("phdYear", "phdInstitution"):
+            if f.get(field):
+                claim("doctorate_id", did, field, f[field], dsid,
+                      "Faculty-page assertion; original value retained even if later evidence corrects it.")
+
     for r in placements["records"]:
         pid = r["facultyId"]
         eid = r["id"]
@@ -168,7 +195,7 @@ def build():
     finally:
         destination.close()
     temporary.replace(OUT)
-    print(f"Built {OUT}: {len(faculty['records'])} people, {count} first-job events, {len(programs['records'])} program records. No additional careers inferred.")
+    print(f"Built {OUT}: {len(faculty['records']) + len(roster_people['records'])} people, {count} first-job events, {len(programs['records'])} program records. No additional careers inferred.")
     con.close()
 
 
