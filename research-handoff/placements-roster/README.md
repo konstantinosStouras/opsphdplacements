@@ -9,6 +9,7 @@ This folder makes the unfinished first-job pass for the 1,007 people in `data/fa
 - `drafts/fj-summary-N.json`: the researcher's own summary of each complete draft, including the items it asked a verifier to double check.
 - `tools/roster-first-jobs-chains.js`: the workflow script (research brief, adversarial verification brief, chain runner). Arguments: `chains` (lists of chunk numbers run one after another), `verifyOnly` (chunks whose draft is complete), `continueChunks` (partial drafts to continue), `date`.
 - `tools/merge-first-job-chunks.sh` and `tools/scan-first-job-proposal.py`: the integrator's merge-and-publish routine and the structural scan run before every merge.
+- `tools/normalize-institutions.py`: run before every merge (`python3 tools/normalize-institutions.py N`). It stores a verified doctorate that names the record's own university in another form (a school name, a longer or older name) under the record's name and keeps the written form; pairs it cannot settle are printed as DECIDE and recorded with `--same <ids>` or `--differs <ids>` (one flag per run). Without it the checks stop the merge with "Undocumented degree institution correction".
 
 ## Resume
 
