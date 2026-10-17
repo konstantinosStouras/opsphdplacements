@@ -143,6 +143,7 @@ The people database began as the OM List import. A second source of people is th
 ## Decisions on evidence types (16 October 2026)
 
 - A permanent UK or Commonwealth lectureship is the entry grade of the permanent faculty track and is recorded as tenure-track unless the source states a fixed-term or teaching-only contract; teaching fellows, adjuncts and fixed-term lecturers are other academic.
+- A part-time or one-term teaching post held alongside a job that began before the degree and continued is a concurrent role, not the first new job; the first new primary job is recorded and the concurrent post is kept in the evidence note (decided 17 October 2026, Thomas W. Lucas: a Spring 1992 UC Riverside lectureship held beside a continuing Hughes job, then RAND from July 1992).
 - An internal promotion at the employer where the person already worked before the degree is not a first new post-PhD job; the person stays unresolved with the employer at completion noted, until a new employer is documented.
 - An ORCID employment record is a self-maintained dated chronology, like a CV, and may establish a first job when it carries the known degree and employer affiliations of the person; it is cited as ORCID in the sources.
 - When a page could only be read through a reader proxy because the site blocks automated fetches, the original URL is cited and the note says how it was read.
