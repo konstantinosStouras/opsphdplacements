@@ -56,6 +56,16 @@ Sector and appointment type are separate. For example, an IBM postdoc can have `
 
 Retain concurrent roles. An adjunct appointment, consulting project or advisory board role does not establish a primary-job change or an exit from academia. An academia-to-industry transition requires supported sequence and evidence about the primary employment transition; otherwise label it an observed cross-sector overlap or unresolved transition.
 
+## Career histories and snapshots (planned, recorded 17 October 2026)
+
+The follow-up step after the first-job pass (TODO.md, Step 4) records each person's employment history from the degree to the latest observation and derives a status at fixed points after the degree.
+
+- **Population.** A faculty list only contains people who are in academia now, so it cannot show how many graduates left academia or never entered it. Rates of moving to or from industry are measured on graduate lists by program and year (Step 2); faculty-list people are a subset of those cohorts, and the site says which population a figure uses.
+- **Assumption under test.** "A graduate whose first job is in industry does not return to academia" is not used as a rule. On 17 October 2026 all 63 people with a verified first job outside academia were, by construction, on a faculty list later; the share who never return can only be estimated from graduate lists.
+- **Snapshots.** The status at k years (k = 5, 10, 20) is the primary job held on 1 July of the degree year plus k, read from the dated history; when the history does not cover that date, the status is unknown. When that date is after the latest observation, the status is "not reached yet" (for future dates) or "not observed" (past dates without evidence). A latest observed job carries the date it was observed.
+- **Transitions.** An academia-to-industry move needs a dated end of the academic primary job and a dated start of the industry primary job (or the reverse); an adjunct post, consulting or an advisory role alongside a primary job is not a move (see "Retain concurrent roles" above). Moves between universities, countries and continents are read from the employers' locations.
+- **Sources.** As for first jobs: dated CVs, ORCID, employer biographies and announcements; LinkedIn is not read by scripts (it refuses automated reading and its terms forbid scraping), and a human reviewer may record dated facts from a public profile with its URL and check date, without contact details.
+
 ## Evidence and review
 
 Prefer original university placement reports, dated CVs, institutional appointment announcements and employer biographies. Dissertation repositories establish degree facts, not later employment. Search snippets and aggregators are discovery aids; open and inspect the underlying source before verification.
