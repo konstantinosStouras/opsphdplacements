@@ -4,16 +4,16 @@
     "updatedAt": "2026-10-17",
     "total": 3161,
     "counts": {
-      "unresolved": 1691,
-      "verified": 1466,
+      "unresolved": 1680,
+      "verified": 1477,
       "not-yet-completed-phd": 4
     },
     "bySource": {
       "omlist": {
         "total": 2149,
         "counts": {
-          "unresolved": 1176,
-          "verified": 972,
+          "unresolved": 1165,
+          "verified": 983,
           "not-yet-completed-phd": 1
         }
       },
@@ -785,19 +785,32 @@
     {
       "facultyId": "omlist-55f4daee1015ece3",
       "name": "M. Serkan Akturk",
-      "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "Clemson profile gives doctorate 2017 but lacks appointment history; linked Box CV renders a JavaScript notice.",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "employer": "Clemson University",
+      "position": "Assistant Professor, Department of Management",
+      "placementYear": 2017,
+      "category": "tenure-track",
+      "evidenceUrl": "https://orcid.org/0000-0003-4432-2020",
+      "evidenceNote": "His ORCID record gives the PhD in Information and Operations Management at Texas A&M, August 2012 - May 2017, and as the only employment Assistant Professor, Department of Management, Clemson University, from August 2017. The Clemson profile confirms the Texas A&M PhD (2017), and his earlier Clemson CV (Box) lists the same education (PhD 2012-2017) under his Assistant Professor, Department of Management, Clemson title. Clemson's Department of Management is in the Powers College of Business, so the plain assistant professorship counts as tenure-track by convention. Verifier (confirmed): the Box CV, downloaded through Box's shared-file endpoint, has a dated Professional Experience section: Turkish Army posts June 2003 - August 2012 (last, Project Manager, Turkish Army Logistics Command HQ, December 2010 - August 2012), PhD student at Texas A&M August 2012 - May 2017, then Assistant Professor at Clemson's Powers College of Business from May 2017; no post in between.",
+      "phdYearVerified": 2017,
+      "phdInstitutionVerified": "Texas A&M University",
+      "reason": "Second pass: the ORCID record (degree and employer matching the directory) dates the degree and the Clemson start; the Box CV now renders in a headless browser. Verifier note: his BS is from the Turkish Military Academy and his MBA from the Naval Postgraduate School (2009-2010), so he served as a Turkish officer before the doctorate; no source shows military service after May 2017, and Clemson is in any case a new employer.",
       "sources": [
         {
-          "url": "https://tinyurl.com/akturkms",
-          "title": "M. Serkan Akturk public academic profile",
-          "notes": "Clemson profile gives doctorate 2017 but lacks appointment history; linked Box CV renders a JavaScript notice."
+          "url": "https://orcid.org/0000-0003-4432-2020",
+          "title": "ORCID record 0000-0003-4432-2020 (public API)",
+          "notes": "PhD Information and Operations Management, Texas A&M, 2012-08 to 2017-05; Assistant Professor, Department of Management, Clemson University, from 2017-08."
         },
         {
           "url": "https://www.clemson.edu/business/about/profiles/makturk",
-          "title": "M. Serkan Akturk public academic profile",
-          "notes": "Clemson profile gives doctorate 2017 but lacks appointment history; linked Box CV renders a JavaScript notice."
+          "title": "M. Serkan Akturk - Clemson profile",
+          "notes": "Associate Professor of Management Science; PhD Texas A&M 2017; MBA Naval Postgraduate School; BS Turkish Military Academy."
+        },
+        {
+          "url": "https://clemson.app.box.com/s/jzwr3rkhqvirn6558vhj2n8u2r6wodu2",
+          "title": "Akturk CV.pdf (Clemson Box, via tinyurl.com/akturkms)",
+          "notes": "Rendered in a headless browser: Assistant Professor, Department of Management, Clemson; PhD Texas A&M 2012-2017; MBA NPS 2009-2010; BS Turkish Military Academy 1998-2002."
         }
       ],
       "source": "omlist"
@@ -6723,19 +6736,32 @@
     {
       "facultyId": "omlist-35db8568ed53d8f6",
       "name": "Youhua (Frank) Chen",
-      "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "Linked CV returned an empty response and official profile returned a bad-request error; first placement not verified.",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "employer": "Northwestern University",
+      "position": "Post-doctoral Fellow",
+      "placementYear": 1996,
+      "category": "postdoc",
+      "evidenceUrl": "https://scholars.cityu.edu.hk/en/persons/youhchen/",
+      "evidenceNote": "CityU's official scholars profile states that after finishing his PhD (Management, University of Toronto) he went to Northwestern University as a post-doc fellow (9/1996-6/1997), then was on the faculty of NUS Business School (7/1997-6/2001) and CUHK (2001-2012) before CityU. The Northwestern postdoc is the first post-PhD job. Verifier: phdYearVerified changed from null to 1996: his ORCID record (0000-0003-4707-9361, linked from the CityU profile) gives the University of Toronto PhD in Management ending 1996-09, followed by NUS Assistant Professor 1997-07 to 2001-06 and CUHK 2001-07 to 2012-05.",
+      "phdYearVerified": 1996,
+      "phdInstitutionVerified": "University of Toronto",
+      "reason": "Second pass: the old College of Business profile and getCV links still return 400/empty responses, but CityU's Pure scholars profile (plain curl) carries a dated biography. The profile does not give the year of the Toronto doctorate; his ORCID record (added by the verifier) dates the PhD ending September 1996, which fits the September 1996 postdoc start.",
       "sources": [
         {
-          "url": "https://www.cb.cityu.edu.hk/portfolio/getCV.cfm?filename=202036.pdf&eid=youhchen&checksum=CEA9DDF70B81F1ADCB107D2E95C532A3",
-          "title": "Youhua (Frank) Chen public academic profile",
-          "notes": "Linked CV returned an empty response and official profile returned a bad-request error; first placement not verified."
+          "url": "https://scholars.cityu.edu.hk/en/persons/youhchen/",
+          "title": "Youhua (Frank) Chen - CityU Scholars profile",
+          "notes": "Read with plain curl. Biography: post-doc fellow at Northwestern 9/1996-6/1997 after finishing the PhD; NUS 7/1997-6/2001; CUHK 2001-2012; PhD Management (Toronto)."
         },
         {
           "url": "https://www.cb.cityu.edu.hk/en/people-and-research/people/people-details?eid=youhchen",
-          "title": "Youhua (Frank) Chen public academic profile",
-          "notes": "Linked CV returned an empty response and official profile returned a bad-request error; first placement not verified."
+          "title": "Old CityU College of Business profile",
+          "notes": "Retried with curl and headless browser: HTTP 400; the getCV link returns an empty response."
+        },
+        {
+          "url": "https://orcid.org/0000-0003-4707-9361",
+          "title": "ORCID record 0000-0003-4707-9361 (public API)",
+          "notes": "Opened by the verifier. Education: PhD, Management, University of Toronto, ending 1996-09. Employment: NUS Decision Sciences, Assistant Professor 1997-07 to 2001-06; CUHK SEEM, Associate Professor 2001-07 to 2012-05; CityU from 2012-05. The Northwestern postdoc is not listed."
         }
       ],
       "source": "omlist"
@@ -7821,19 +7847,32 @@
     {
       "facultyId": "omlist-e934a9bb5957555c",
       "name": "Ruomeng Cui",
-      "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "The Emory biography lists doctorate and current role without early career dates; linked CV returned a missing-page response.",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "employer": "Indiana University",
+      "position": "Assistant Professor, Kelley School of Business",
+      "placementYear": 2014,
+      "category": "tenure-track",
+      "evidenceUrl": "http://ruomengcui.com/wp-content/uploads/2026/09/Cui_CV.pdf",
+      "evidenceNote": "Her current CV lists the PhD in Operations Management from Kellogg, Northwestern, in 2014 and, as the earliest academic appointment, Assistant Professor, Kelley School of Business, Indiana University, 2014-2017, then Emory Goizueta (Assistant Professor 2017-2021, tenured 2021). Its professional experience section lists only a 2011 PepsiCo analyst role (during the doctorate), JD.com consulting in 2018 and Amazon Scholar 2022-2024. ORCID dates the PhD September 2009 - May 2014.",
+      "phdYearVerified": 2014,
+      "phdInstitutionVerified": "Northwestern University",
+      "reason": "Second pass: the CV link that returned a missing page has moved; her homepage (ruomengcui.com) links the current CV (uploads/2026/09/Cui_CV.pdf), downloaded with curl and read with pdftotext.",
       "sources": [
         {
-          "url": "http://ruomengcui.com/wp-content/uploads/2026/04/Cui_CV.pdf",
-          "title": "Ruomeng Cui academic profile",
-          "notes": "The Emory biography lists doctorate and current role without early career dates; linked CV returned a missing-page response."
+          "url": "http://ruomengcui.com/wp-content/uploads/2026/09/Cui_CV.pdf",
+          "title": "Ruomeng Cui - CV (September 2026)",
+          "notes": "Academic appointments: Kelley School of Business, Indiana University, Assistant Professor 2014-2017; Emory 2017-. Education: PhD Kellogg, Northwestern, 2014."
         },
         {
-          "url": "https://goizueta.emory.edu/faculty/profiles/ruomeng-cui",
-          "title": "Ruomeng Cui academic profile",
-          "notes": "The Emory biography lists doctorate and current role without early career dates; linked CV returned a missing-page response."
+          "url": "http://ruomengcui.com/",
+          "title": "Ruomeng Cui - homepage",
+          "notes": "Links the current CV."
+        },
+        {
+          "url": "https://orcid.org/0000-0003-0939-8759",
+          "title": "ORCID record 0000-0003-0939-8759 (public API)",
+          "notes": "Education: PhD Northwestern 2009-09 to 2014-05; employment Emory (undated) and Amazon Scholar from 2022-06."
         }
       ],
       "source": "omlist"
@@ -8348,13 +8387,18 @@
       "facultyId": "omlist-a8baae05989c48f5",
       "name": "Emrah Demir",
       "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "The Cardiff profile returned an access-denied response.",
+      "checkedAt": "2026-10-17",
+      "reason": "Second pass: every Cardiff host (profiles.cardiff.ac.uk, www.cardiff.ac.uk, orca.cardiff.ac.uk) still serves a Cloudflare 'Verification Required' page to plain curl with a browser user-agent, to the r.jina.ai reader and to a headless browser, and archived copies are not reachable from this environment. His ORCID record (0000-0002-4726-2556) lists a Southampton PhD without dates and employment only from October 2016 (Senior Lecturer, Cardiff) onward, then Reader 2019, Professor 2021 and Khalifa University from 2026-08; it says nothing about 2012-2016. The TU/e research portal has no person page under his name, and one web search found no CV. The first post after the 2012 Southampton PhD and its date remain unknown. Earlier review (2026-10-16): the Cardiff profile returned an access-denied response.",
       "sources": [
         {
+          "url": "https://orcid.org/0000-0002-4726-2556",
+          "title": "ORCID record 0000-0002-4726-2556 (public API)",
+          "notes": "Education: PhD, University of Southampton Business School (undated). Employment: Senior Lecturer Cardiff 2016-10 to 2019-08; Reader 2019-09; Professor 2021-08; Khalifa University 2026-08."
+        },
+        {
           "url": "https://profiles.cardiff.ac.uk/staff/demire",
-          "title": "Emrah Demir academic profile",
-          "notes": "The Cardiff profile returned an access-denied response."
+          "title": "Emrah Demir - Cardiff University profile",
+          "notes": "Retried with curl (browser user-agent), r.jina.ai and a headless browser: Cloudflare verification page (403) each time."
         }
       ],
       "source": "omlist"
@@ -9468,13 +9512,23 @@
       "facultyId": "omlist-7c661eba04b92798",
       "name": "Lilun Du",
       "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "The linked City University profile returned an HTTP 400 response.",
+      "checkedAt": "2026-10-17",
+      "reason": "Second pass: the CityU scholars profile (curl) and the Department of Decision Analytics and Operations detail page (headless browser) were read; both give the Wisconsin PhD in Statistics and his current associate professorship but no career chronology (the scholars bio says only that he received the PhD in 2015). His ORCID record (0000-0002-9865-7128) dates the PhD July 2010 - August 2015 and lists an undated CityU employment entry. A 2016-2019 RGC Early Career Scheme grant is listed but does not date an appointment or name the host. One web search found nothing further, and UW-Madison Statistics publishes no placement list. The first post-PhD employer and start year remain unknown. Earlier review (2026-10-16): the old CityU profile returned HTTP 400.",
       "sources": [
         {
-          "url": "https://www.cb.cityu.edu.hk/en/people-and-research/people/people-details?eid=lilundu",
-          "title": "Lilun Du academic profile",
-          "notes": "The linked City University profile returned an HTTP 400 response."
+          "url": "https://scholars.cityu.edu.hk/en/persons/lilundu/",
+          "title": "Lilun Du - CityU Scholars profile",
+          "notes": "Associate Professor; PhD Statistics, Wisconsin-Madison, 2015; ECS grant 2016-2019; no dated positions."
+        },
+        {
+          "url": "https://www.cb.cityu.edu.hk/dao/about-us/faculty-and-staff/academic-staff/detail?eid=lilundu",
+          "title": "Lilun Du - CityU DAO faculty page",
+          "notes": "Rendered in a headless browser: degree and publications only."
+        },
+        {
+          "url": "https://orcid.org/0000-0002-9865-7128",
+          "title": "ORCID record 0000-0002-9865-7128 (public API)",
+          "notes": "PhD Statistics, Wisconsin-Madison, 2010-07 to 2015-08; employment City University of Hong Kong, undated."
         }
       ],
       "source": "omlist"
@@ -10281,20 +10335,25 @@
       "facultyId": "omlist-7ced6c0ab0d5d3e5",
       "name": "Daniel Eyers",
       "status": "unresolved",
-      "checkedAt": "2026-10-16",
+      "checkedAt": "2026-10-17",
+      "reason": "Second pass: the Cardiff profile and personal site remain blocked (Cardiff serves a Cloudflare verification page to curl, the reader proxy and a headless browser), but his ORCID record (0000-0001-5499-0116) gives a dated chronology: Research Associate, Cardiff Business School 2008-2010; PhD, Cardiff Business School 2010-2015; Lecturer, Cardiff Business School 2011-2018; Senior Lecturer 2019-2021; Reader 2021-2024; Professor from 2024-08. The Cardiff lectureship began in 2011, about four years before the 2015 doctorate, and continued after it, so under the overlap rule it is not a first post-PhD job; the later posts are internal promotions at the same employer. No new post-PhD employer is documented, so the case stays unresolved with Cardiff University as the employer at completion. Earlier review (2026-10-16): both the Cardiff profile and the personal manufacturing website returned HTTP 403.",
       "sources": [
         {
+          "url": "https://orcid.org/0000-0001-5499-0116",
+          "title": "ORCID record 0000-0001-5499-0116 (public API)",
+          "notes": "PhD Cardiff Business School 2010-2015; Lecturer Cardiff 2011-2018; Research Associate Cardiff 2008-2010; Senior Lecturer 2019; Reader 2021; Professor 2024."
+        },
+        {
           "url": "https://profiles.cardiff.ac.uk/staff/eyersdr",
-          "title": "Daniel Eyers Profile",
-          "notes": "Fetch failed: HTTP Error 403: Forbidden"
+          "title": "Daniel Eyers - Cardiff University profile",
+          "notes": "Cloudflare verification page (403) to curl, r.jina.ai and headless browser; not read."
         },
         {
           "url": "http://www.manufacturing.cymru/",
-          "title": "Daniel Eyers Website",
-          "notes": "Fetch failed: HTTP Error 403: Forbidden"
+          "title": "Daniel Eyers website",
+          "notes": "Earlier review: HTTP 403."
         }
       ],
-      "reason": "Both Cardiff and personal manufacturing website returned HTTP403; no readable primary chronology obtained.",
       "source": "omlist"
     },
     {
@@ -14298,23 +14357,23 @@
       "facultyId": "omlist-eb6be3f1c570651f",
       "name": "Gang Hao",
       "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "No chronology source could be opened. The CityU College of Business profile returned a 400 error, LinkedIn returned an access block, and the ORCID record opened lists only a CityU employment entry with no dates or title. The imported 1996 Pittsburgh PhD year and any first job between 1996 and CityU remain unverified.",
+      "checkedAt": "2026-10-17",
+      "reason": "Second pass: the old College of Business profile still returns HTTP 400. CityU's scholars profile (msghao, plain curl) now marks him as former staff and gives only qualifications (PhD Decision Science and Operations Management, MI Industrial Engineering, BSc Mathematics) and research output from 1994 onward, with no appointment dates; his ORCID record (0000-0002-7921-3919) has an undated CityU entry only. No CV or dated chronology was found, so the 1996 Pittsburgh degree and the first post-PhD job remain unverified. Earlier review (2026-10-16): the CityU profile returned 400, LinkedIn was blocked and ORCID was undated.",
       "sources": [
         {
-          "url": "https://www.cb.cityu.edu.hk/en/people-and-research/people/people-details?eid=msghao",
-          "title": "CityU College of Business profile (attempted)",
-          "notes": "HTTP 400; not opened."
+          "url": "https://scholars.cityu.edu.hk/en/persons/msghao/",
+          "title": "Gang Hao - CityU Scholars profile",
+          "notes": "Former staff; qualifications without years; research output 1994-2026; no dated positions."
         },
         {
           "url": "https://orcid.org/0000-0002-7921-3919",
-          "title": "ORCID record - Gang Hao",
-          "notes": "Opened: CityU employment, no start date or title."
+          "title": "ORCID record 0000-0002-7921-3919",
+          "notes": "Earlier review: a single undated CityU employment entry."
         },
         {
-          "url": "https://omlist.edutool.org/schools/city-university-of-hong-kong/faculty/gang-hao.html",
-          "title": "OM List profile - Gang Hao",
-          "notes": "Imported profile only; lists PhD institution/year from the OM List import, no employment chronology."
+          "url": "https://www.cb.cityu.edu.hk/en/people-and-research/people/people-details?eid=msghao",
+          "title": "Old CityU College of Business profile",
+          "notes": "HTTP 400."
         }
       ],
       "source": "omlist"
@@ -20825,21 +20884,39 @@
     {
       "facultyId": "omlist-0514e71a6cfe4210",
       "name": "Menglong Li",
-      "status": "unresolved",
-      "checkedAt": "2026-10-16",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "employer": "Massachusetts Institute of Technology",
+      "position": "Postdoctoral Associate, Institute for Data, Systems, and Society",
+      "placementYear": 2021,
+      "category": "postdoc",
+      "evidenceUrl": "https://orcid.org/0000-0001-9770-0908",
+      "evidenceNote": "His ORCID record gives the PhD in Industrial and Enterprise Systems Engineering at UIUC, September 2016 - December 2020, then Postdoctoral Associate, MIT Institute for Data, Systems, and Society, January - October 2021, followed by City University of Hong Kong. The CityU DAO page and his homepage confirm that before joining CityU he was a postdoctoral associate at MIT IDSS (in David Simchi-Levi's group).",
+      "phdYearVerified": 2020,
+      "phdInstitutionVerified": "University of Illinois Urbana-Champaign",
+      "reason": "Second pass: the old CityU getCV link still fails, but the CityU DAO faculty page (headless browser), the CityU scholars profile, his homepage and his ORCID record give the sequence and dates.",
       "sources": [
         {
-          "url": "https://www.cb.cityu.edu.hk/portfolio/getCV.cfm?filename=191185.pdf&eid=mengloli&checksum=32409E5B0F6A19BFC9F6613BC8A24A27",
-          "title": "Menglong Li public academic profile",
-          "notes": "Linked CityU CV returned no usable curriculum vitae and faculty profile request failed; no first-job evidence was available."
+          "url": "https://orcid.org/0000-0001-9770-0908",
+          "title": "ORCID record 0000-0001-9770-0908 (public API)",
+          "notes": "PhD UIUC 2016-09 to 2020-12; Postdoctoral Associate, MIT IDSS, 2021-01 to 2021-10; City University of Hong Kong (undated)."
         },
         {
-          "url": "https://www.cb.cityu.edu.hk/en/people-and-research/people/people-details?eid=mengloli",
-          "title": "Menglong Li public academic profile",
-          "notes": "Linked CityU CV returned no usable curriculum vitae and faculty profile request failed; no first-job evidence was available."
+          "url": "https://www.cb.cityu.edu.hk/dao/about-us/faculty-and-staff/academic-staff/detail?eid=mengloli",
+          "title": "Menglong Li - CityU DAO faculty page",
+          "notes": "Rendered in a headless browser: before joining CityU he was a postdoctoral associate of MIT IDSS; PhD Operations Research (UIUC)."
+        },
+        {
+          "url": "https://menglongmath.github.io",
+          "title": "Menglong Li - homepage",
+          "notes": "Tenured associate professor at CityU; before joining CityU a postdoctoral associate in David Simchi-Levi's group at MIT."
+        },
+        {
+          "url": "https://scholars.cityu.edu.hk/en/persons/mengloli/",
+          "title": "Menglong Li - CityU Scholars profile",
+          "notes": "Same biography as the DAO page."
         }
       ],
-      "reason": "Linked CityU CV returned no usable curriculum vitae and faculty profile request failed; no first-job evidence was available.",
       "source": "omlist"
     },
     {
@@ -20861,28 +20938,28 @@
       "facultyId": "omlist-1ffb97011f5df953",
       "name": "Qian Li",
       "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "No dated CV, thesis record or employment chronology could be opened. The Cardiff University staff profile is behind a Cloudflare verification wall (HTTP 403 for both fetch methods) and the University of Reading CentAUR repository search is blocked by an Anubis bot check. The ORCID iD printed on the directory page (0000-0003-3562-1627) belongs to a different Qian Li (Tsinghua University School of Environment PhD 2015-2019, Sheffield MSc), so it was excluded as a namesake. A web search returned only the Cardiff logistics and operations staff listing naming her Senior Lecturer in Sustainable Business Operations without dates. The 2016 Reading PhD and the first post-PhD appointment are therefore unverified.",
+      "checkedAt": "2026-10-17",
+      "reason": "Second pass: Cardiff hosts still serve a Cloudflare verification page to curl, the reader proxy and a headless browser. A second ORCID record, 0000-0003-0827-2134 ('Qian (Jan) Li'), links the Cardiff people page 1427956-li-qian and lists Lecturer in Sustainable Business Operations, Cardiff Business School from 2019-01 and Postdoctoral Researcher, Saïd Business School, Oxford, 2017-03 to 2018-09, with a 2015 book chapter on responsible investment in China. This is very probably the Cardiff lecturer, and the Oxford postdoc is the earliest employment it lists, but the record has no education entry, so it does not show the Reading doctorate or its date, nor whether any post came between the degree and March 2017. The Reading CentAUR repository, now readable in a headless browser, returned no thesis for her. First job therefore not settled; the Oxford postdoc (2017) is the leading candidate. Earlier review (2026-10-16): the Cardiff profile and CentAUR were blocked, and the ORCID iD on the directory page (0000-0003-3562-1627) belongs to a namesake.",
       "sources": [
         {
-          "url": "https://omlist.edutool.org/schools/cardiff-university/faculty/qian-li.html",
-          "title": "OM List faculty directory profile",
-          "notes": "Directory profile lists the Reading 2016 PhD and links to the Cardiff profile, an ORCID iD that belongs to a namesake, Google Scholar and LinkedIn."
+          "url": "https://orcid.org/0000-0003-0827-2134",
+          "title": "ORCID record 0000-0003-0827-2134, Qian (Jan) Li (public API)",
+          "notes": "Employment: Lecturer in Sustainable Business Operations, Cardiff Business School, 2019-01 onward; Postdoctoral Researcher, Saïd Business School, Oxford, 2017-03 to 2018-09. No education. Researcher URL: cardiff.ac.uk/people/view/1427956-li-qian."
+        },
+        {
+          "url": "https://centaur.reading.ac.uk/cgi/search/simple?q=%22Li%2C+Qian%22+thesis+PhD&_action_search=Search",
+          "title": "CentAUR search (University of Reading)",
+          "notes": "Read in a headless browser past the bot check; no thesis by Qian Li found."
         },
         {
           "url": "https://profiles.cardiff.ac.uk/staff/liq50",
           "title": "Qian Li - Cardiff University staff profile",
-          "notes": "Attempted twice; Cloudflare \"Verification Required\" page / HTTP 403, no content retrieved."
+          "notes": "Cloudflare verification (403) via curl, r.jina.ai and headless browser."
         },
         {
           "url": "https://orcid.org/0000-0003-3562-1627",
-          "title": "ORCID record 0000-0003-3562-1627 (public API)",
-          "notes": "Education: Tsinghua University School of Environment PhD 2015-08 to 2019-07 and Sheffield MSc; employment: Tsinghua library. Different person from the Cardiff lecturer; excluded."
-        },
-        {
-          "url": "https://centaur.reading.ac.uk/cgi/search/simple?q=Qian+Li+thesis&_action_search=Search",
-          "title": "CentAUR (University of Reading repository) search",
-          "notes": "Blocked by Anubis bot protection (\"Access Denied\"); thesis record not retrieved."
+          "title": "ORCID record 0000-0003-3562-1627",
+          "notes": "Earlier review: a namesake (Tsinghua environment PhD); excluded."
         }
       ],
       "source": "omlist"
@@ -20906,15 +20983,25 @@
       "facultyId": "omlist-51a93b7bf1f3350b",
       "name": "Qinyun Li",
       "status": "unresolved",
-      "checkedAt": "2026-10-16",
+      "checkedAt": "2026-10-17",
+      "reason": "Second pass: profiles.cardiff.ac.uk/staff/liqy and every other Cardiff host still serve a Cloudflare 'Verification Required' page to plain curl with a browser user-agent, to the r.jina.ai reader and to a headless browser; archived copies are not reachable from this environment. The ORCID record linked from the directory page (0000-0001-5978-1903) has a single undated Cardiff University employment entry and no education, so it neither dates the 2014 Cardiff PhD nor shows whether she held a research post at Cardiff before or after it. No CV or dated chronology was found. Earlier review (2026-10-16): the Cardiff profile returned 403 and no readable chronology was obtained.",
       "sources": [
         {
+          "url": "https://orcid.org/0000-0001-5978-1903",
+          "title": "ORCID record 0000-0001-5978-1903 (public API)",
+          "notes": "Employment: Cardiff University, undated, no title; no education entries."
+        },
+        {
+          "url": "https://omlist.edutool.org/schools/cardiff-university/faculty/qinyun-li.html",
+          "title": "OM List directory profile",
+          "notes": "Lists the Cardiff profile and ORCID only."
+        },
+        {
           "url": "https://profiles.cardiff.ac.uk/staff/liqy",
-          "title": "Qinyun Li Profile",
-          "notes": "Fetch failed: HTTP Error 403: Forbidden"
+          "title": "Qinyun Li - Cardiff University profile",
+          "notes": "Cloudflare verification (403) to curl, r.jina.ai and headless browser."
         }
       ],
-      "reason": "Cardiff faculty profile returned 403; no readable primary chronology.",
       "source": "omlist"
     },
     {
@@ -21071,19 +21158,27 @@
     {
       "facultyId": "omlist-ea373735235ee754",
       "name": "Yanzhi (David) Li",
-      "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "CityU profile (found via search; direct fetch failed with HTTP 400) gives an HKUST PhD but no year or post-PhD chronology. First job unestablished. Discovery web searches were also run; their snippets were not treated as verification.",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "employer": "City University of Hong Kong",
+      "position": "Assistant Professor, Department of Management Sciences",
+      "placementYear": 2006,
+      "category": "tenure-track",
+      "evidenceUrl": "https://scholars.cityu.edu.hk/en/persons/yanzhili/",
+      "evidenceNote": "CityU's scholars profile lists his faculty positions: Assistant Professor, Management Sciences, City University of Hong Kong, 7/2006 - 6/2012, then Associate Professor from 7/2012. His ORCID record dates the HKUST PhD (Industrial Engineering and Logistics Management) September 2002 - June 2006 and lists CityU Management Sciences from 2006-07 as his only employment, so the CityU assistant professorship began the month after the degree.",
+      "phdYearVerified": 2006,
+      "phdInstitutionVerified": "Hong Kong University of Science and Technology",
+      "reason": "Second pass: the scholars profile, which earlier failed, now answers plain curl at its eid-based address (yanzhili) and lists dated CityU positions; ORCID gives the degree dates. A plain Assistant Professor title in a business school in Asia counts as tenure-track by the project convention.",
       "sources": [
         {
-          "url": "https://scholars.cityu.edu.hk/en/persons/yanzhi-li",
-          "title": "CityU Scholars profile (guessed URL)",
-          "notes": "Attempted; HTTP 404."
+          "url": "https://scholars.cityu.edu.hk/en/persons/yanzhili/",
+          "title": "Yanzhi Li - CityU Scholars profile",
+          "notes": "Faculty Positions: Assistant Professor 7/2006 - 6/2012, Associate Professor 7/2012 - now (Management Sciences); PhD IEEM, HKUST."
         },
         {
-          "url": "https://www.cb.cityu.edu.hk/dao/about-us/faculty-and-staff/prof-li-yanzhi-david",
-          "title": "CityU faculty profile",
-          "notes": "Attempted twice; HTTP 400. Search snippet only."
+          "url": "https://orcid.org/0000-0003-2109-6657",
+          "title": "ORCID record 0000-0003-2109-6657 (public API)",
+          "notes": "Education: PhD HKUST 2002-09 to 2006-06; BSc Tsinghua 1998-2002. Employment: Management Sciences, City University of Hong Kong, from 2006-07."
         }
       ],
       "source": "omlist"
@@ -21478,18 +21573,23 @@
       "facultyId": "omlist-c5a2e1954468e491",
       "name": "Sehwa Lim",
       "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "Not established. The Cardiff profile page returned HTTP 403 and the omlist page provides only a title (Lecturer) and PhD (Cardiff, 2022); no CV, ORCID or dated chronology was found. Whether Lim moved directly into a Cardiff lecturer post or held a research/teaching assistant or postdoc role after the PhD is unknown.",
+      "checkedAt": "2026-10-17",
+      "reason": "Second pass: the Cardiff profile (profiles.cardiff.ac.uk/staff/lims10) still returns a Cloudflare verification page to curl with a browser user-agent, the r.jina.ai reader and a headless browser. The only ORCID record under the name (0000-0003-3121-6608) has no works, education or employment; LinkedIn is not readable without signing in; Cardiff's ORCA thesis repository is behind the same Cloudflare block. The 2022 Cardiff PhD and whether a lectureship followed directly, or a research or teaching post came first, remain undocumented. Earlier review (2026-10-16): the Cardiff profile returned 403 and the directory gave only the title and the 2022 Cardiff PhD.",
       "sources": [
         {
-          "url": "https://profiles.cardiff.ac.uk/staff/lims10",
-          "title": "Cardiff University profile (attempted)",
-          "notes": "HTTP 403; not opened."
+          "url": "https://omlist.edutool.org/schools/cardiff-university/faculty/sehwa-lim.html",
+          "title": "OM List directory profile",
+          "notes": "Lecturer; PhD Cardiff 2022; links Cardiff profile and LinkedIn."
         },
         {
-          "url": "https://omlist.edutool.org/schools/cardiff-university/faculty/sehwa-lim.html",
-          "title": "OM List profile - Sehwa Lim",
-          "notes": "Imported profile only; lists PhD institution/year from the OM List import, no employment chronology."
+          "url": "https://orcid.org/0000-0003-3121-6608",
+          "title": "ORCID record 0000-0003-3121-6608 (public API)",
+          "notes": "Empty record; identity with the Cardiff lecturer not established."
+        },
+        {
+          "url": "https://profiles.cardiff.ac.uk/staff/lims10",
+          "title": "Sehwa Lim - Cardiff University profile",
+          "notes": "Cloudflare verification (403) to curl, r.jina.ai and headless browser."
         }
       ],
       "source": "omlist"
@@ -22250,15 +22350,25 @@
       "facultyId": "omlist-916cefab81b4d2eb",
       "name": "Maryam Lotfi",
       "status": "unresolved",
-      "checkedAt": "2026-10-16",
+      "checkedAt": "2026-10-17",
+      "reason": "Second pass: the Cardiff profile is still behind Cloudflare for curl, the reader proxy and a headless browser. The ORCID record linked from the directory page (0000-0002-1261-9834) gives the PhD in Supply Chain Management at Cass Business School, September 2011 - January 2015, and Lecturer, Logistics and Operations Management, Cardiff Business School from 2018-05, with nothing for 2015-2018. The first post after the 2015 degree is therefore undocumented; the Cardiff lectureship began more than three years later and cannot be assumed to be the first job. Earlier review (2026-10-16): the Cardiff profile returned HTTP 403 and no chronology was read.",
       "sources": [
         {
+          "url": "https://orcid.org/0000-0002-1261-9834",
+          "title": "ORCID record 0000-0002-1261-9834 (public API)",
+          "notes": "PhD Supply Chain Management, Cass Business School, 2011-09 to 2015-01; Lecturer, Cardiff Business School, from 2018-05. No entries 2015-2018."
+        },
+        {
+          "url": "https://omlist.edutool.org/schools/cardiff-university/faculty/maryam-lotfi.html",
+          "title": "OM List directory profile",
+          "notes": "Links the Cardiff profile, LinkedIn and this ORCID iD."
+        },
+        {
           "url": "https://profiles.cardiff.ac.uk/staff/lotfim",
-          "title": "Maryam Lotfi Profile",
-          "notes": "Fetch failed: HTTP Error 403: Forbidden"
+          "title": "Maryam Lotfi - Cardiff University profile",
+          "notes": "Cloudflare verification (403) to curl, r.jina.ai and headless browser."
         }
       ],
-      "reason": "Cardiff primary profile returned HTTP403; no readable career chronology obtained.",
       "source": "omlist"
     },
     {
@@ -22497,13 +22607,28 @@
       "facultyId": "omlist-e797537bd5a8db8b",
       "name": "Ye Lu",
       "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "The City University profile returned an HTTP 400 response.",
+      "checkedAt": "2026-10-17",
+      "reason": "Second pass: the CityU scholars profile (yelu22, plain curl) and the DAO faculty page (headless browser) were read. They give the MIT PhD in operations research (2009), a Notre Dame PhD in mathematics (2006) and a Tsinghua BS (2002), and only one dated item, PhD-programme director from 3/2015; no appointment dates. MIT DSpace confirms the thesis 'Essays on inventory, pricing and financial trading strategies' (Ph.D., 2009). His ORCID record (0000-0003-4234-7435) has an undated CityU entry only. The first post after the 2009 MIT degree (CityU or elsewhere) and its start year remain undocumented. Earlier review (2026-10-16): the old CityU profile returned HTTP 400.",
       "sources": [
         {
-          "url": "https://www.cb.cityu.edu.hk/en/people-and-research/people/people-details?eid=yelu22",
-          "title": "Ye Lu academic profile",
-          "notes": "The City University profile returned an HTTP 400 response."
+          "url": "https://scholars.cityu.edu.hk/en/persons/yelu22/",
+          "title": "Ye Lu - CityU Scholars profile",
+          "notes": "PhD OR MIT 2009, PhD Mathematics Notre Dame 2006; College of Business PhD Programs Director from 3/2015; no appointment dates."
+        },
+        {
+          "url": "https://www.cb.cityu.edu.hk/dao/about-us/faculty-and-staff/academic-staff/detail?eid=yelu22",
+          "title": "Ye Lu - CityU DAO faculty page",
+          "notes": "Rendered in a headless browser: degrees and publications only."
+        },
+        {
+          "url": "https://dspace.mit.edu/handle/1721.1/54658",
+          "title": "Essays on inventory, pricing and financial trading strategies (MIT DSpace)",
+          "notes": "Read through the DSpace API: Lu, Ye, Ph.D. MIT, 2009."
+        },
+        {
+          "url": "https://orcid.org/0000-0003-4234-7435",
+          "title": "ORCID record 0000-0003-4234-7435 (public API)",
+          "notes": "Employment: City University of Hong Kong, undated."
         }
       ],
       "source": "omlist"
@@ -22701,20 +22826,25 @@
       "facultyId": "omlist-69d67844e558420c",
       "name": "Jane Lynch",
       "status": "unresolved",
-      "checkedAt": "2026-10-16",
+      "checkedAt": "2026-10-17",
+      "reason": "Second pass: the Cardiff profile remains blocked by Cloudflare for curl, the reader proxy and a headless browser, but her ORCID record (0000-0003-2863-8594, linked from the directory) dates her Cardiff Business School employment from 2006-09 (entry titled Reader) and a Professor in Procurement entry from 2022-08, with the Cardiff PhD entered from 2015-07. She was therefore employed at Cardiff Business School from 2006, well before the 2015 doctorate, and stayed; under the overlap rule that continuing post is not a first post-PhD job and the later professorship is an internal promotion. No new post-PhD employer is documented, so the case stays unresolved with Cardiff University as employer at completion. Earlier review (2026-10-16): the Cardiff profile returned 403 and the Procurious profile had no dated early chronology.",
       "sources": [
         {
-          "url": "https://profiles.cardiff.ac.uk/staff/lynchj2",
-          "title": "Jane Lynch Profile",
-          "notes": "Fetch failed: HTTP Error 403: Forbidden"
+          "url": "https://orcid.org/0000-0003-2863-8594",
+          "title": "ORCID record 0000-0003-2863-8594 (public API)",
+          "notes": "Education: PhD, Logistics & Operations Management, Cardiff University Business School, 2015-07. Employment: Reader, Cardiff Business School, from 2006-09; Professor in Procurement from 2022-08."
         },
         {
           "url": "https://www.procurious.com/professionals/jane-lynch",
-          "title": "Jane Lynch Website",
-          "notes": "Cardiff profile returned HTTP403 and the additional public profile contains no readable early career chronology."
+          "title": "Jane Lynch - Procurious profile",
+          "notes": "Earlier review: no dated early chronology."
+        },
+        {
+          "url": "https://profiles.cardiff.ac.uk/staff/lynchj2",
+          "title": "Jane Lynch - Cardiff University profile",
+          "notes": "Cloudflare verification (403) to curl, r.jina.ai and headless browser."
         }
       ],
-      "reason": "Cardiff profile returned HTTP403 and the additional public profile contains no readable early career chronology.",
       "source": "omlist"
     },
     {
@@ -23096,16 +23226,44 @@
     {
       "facultyId": "omlist-3e365f2ed6b2f01d",
       "name": "Iryna Malacina",
-      "status": "unresolved",
-      "checkedAt": "2026-10-16",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "employer": "LUT University",
+      "position": "Postdoctoral Researcher",
+      "placementYear": null,
+      "category": "postdoc",
+      "evidenceUrl": "https://www.aalto.fi/en/people/iryna-malacina",
+      "evidenceNote": "Aalto's official people page states that before joining Aalto in 2026 she worked as a Postdoctoral Researcher at LUT University, where she also earned her D.Sc. (Econ. & Bus. Adm.) in 2023. The LUTPub record dates the doctoral dissertation 29 September 2023. The postdoc is the only post named between the degree and Aalto; its start year is not stated, so placementYear is null.",
+      "phdYearVerified": 2023,
+      "phdInstitutionVerified": "LUT University",
+      "reason": "Second pass: the LUTPub dissertation record (read in a headless browser after the Anubis bot check) dates the LUT doctoral dissertation 2023-09-29, and the Aalto University people page (plain curl) gives the post-degree sequence: Postdoctoral Researcher at LUT, then Aalto in 2026. ORCID lists only LUT as doctoral study and an Aalto Assistant Professor post from 2026-09. The LUT Converis profile still answers 'Invalid request' (403) to curl, the reader proxy and a headless browser. Start date of the LUT postdoc is not documented.",
       "sources": [
         {
+          "url": "https://www.aalto.fi/en/people/iryna-malacina",
+          "title": "Iryna Malacina | Aalto University people page",
+          "notes": "Read with plain curl. Bio: Assistant Professor of Supply Chain Management; before joining Aalto in 2026 she worked as a Postdoctoral Researcher at LUT University, where she earned her D.Sc. in 2023."
+        },
+        {
+          "url": "https://lutpub.lut.fi/handle/10024/166334",
+          "title": "Zooming in and out: the strategic management of innovation across multiple levels of complex supply networks (LUTPub)",
+          "notes": "Read in a headless browser (Anubis bot check). Doctoral dissertation, LUT School of Business and Management, dc.date.issued 2023-09-29; supervisors Lintukangas and Kähkönen."
+        },
+        {
+          "url": "https://orcid.org/0000-0002-5928-0049",
+          "title": "ORCID record 0000-0002-5928-0049 (public API)",
+          "notes": "Education: LUT University, Doctoral Student (undated). Employment: Aalto University (undated, institution-asserted) and Assistant Professor, Aalto, from 2026-09-01."
+        },
+        {
+          "url": "https://research.aalto.fi/en/persons/iryna-malacina",
+          "title": "Iryna Malacina - Aalto research portal",
+          "notes": "Current title Assistant Professor, Department of Information and Service Management; D.Sc.; no dated career history."
+        },
+        {
           "url": "https://research.lut.fi/converis/portal/detail/Person/10813615?auxfun=&lang=en_GB",
-          "title": "Iryna Malacina official profile",
-          "notes": "A public LUT researcher profile was located but could not be retrieved in readable form; no first-employer claim was accepted from search snippets."
+          "title": "Iryna Malacina - LUT Converis profile",
+          "notes": "Retried: plain curl, r.jina.ai and headless browser all return 'Invalid request.' (403); not read."
         }
       ],
-      "reason": "A public LUT researcher profile was located but could not be retrieved in readable form; no first-employer claim was accepted from search snippets.",
       "source": "omlist"
     },
     {
@@ -23714,15 +23872,25 @@
       "facultyId": "omlist-02cdb6f69efad81a",
       "name": "Robert Mason",
       "status": "unresolved",
-      "checkedAt": "2026-10-16",
+      "checkedAt": "2026-10-17",
+      "reason": "Second pass: the Cardiff profile is still blocked by Cloudflare for curl, the reader proxy and a headless browser. The ORCID iD on the directory page (0000-0002-2988-7173) belongs to a namesake, a professor of US history at Edinburgh, and is excluded. An ORCID search found 0000-0001-9089-2521 (Robert Mason, Professor of Logistics, Cardiff Business School, from 2001-02), which fits the Cardiff logistics professor. If it is the same person, he was employed at Cardiff Business School from 2001, before the 2009 Cardiff PhD, and stayed, so that post is not a first post-PhD job and no new post-PhD employer is documented. The record has no education entry, and no CV or Cardiff thesis record (ORCA is also blocked) could be read. Earlier review (2026-10-16): the Cardiff profile returned access denied.",
       "sources": [
         {
+          "url": "https://orcid.org/0000-0001-9089-2521",
+          "title": "ORCID record 0000-0001-9089-2521 (public API)",
+          "notes": "Employment: Professor of Logistics, Cardiff Business School, Cardiff University, from 2001-02 (title probably current grade). No education."
+        },
+        {
+          "url": "https://orcid.org/0000-0002-2988-7173",
+          "title": "ORCID record 0000-0002-2988-7173 (linked from the directory)",
+          "notes": "Namesake: Professor of Twentieth-Century U.S. History, University of Edinburgh; excluded."
+        },
+        {
           "url": "https://profiles.cardiff.ac.uk/staff/masonrj",
-          "title": "Robert Mason public academic profile",
-          "notes": "Public Cardiff profile returned an access-denied response; first-placement evidence was not available from that source."
+          "title": "Robert Mason - Cardiff University profile",
+          "notes": "Cloudflare verification (403) to curl, r.jina.ai and headless browser."
         }
       ],
-      "reason": "Public Cardiff profile returned an access-denied response; first-placement evidence was not available from that source.",
       "source": "omlist"
     },
     {
@@ -24932,13 +25100,23 @@
       "facultyId": "omlist-c16e2cf0bc360218",
       "name": "Dnyaneshwar Mogale",
       "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "The Cardiff profile returned an access-denied response.",
+      "checkedAt": "2026-10-17",
+      "reason": "Second pass: the Cardiff profile is still blocked by Cloudflare. His ORCID record (0000-0002-7977-0360), with the IIT Kharagpur degree and the Cardiff employment shown on the directory, gives the IIT Kharagpur PhD in Industrial and Systems Engineering as December 2014 - April 2019, then Visiting Researcher, School of Management, Cranfield University, 8 May - 7 October 2019, and Lecturer in Logistics and Operations Management, Cardiff Business School, from 6 January 2020 (Senior Lecturer from August 2023); a March-May 2018 visiting post at HES-SO Geneva fell within the doctorate. The IIT Kharagpur repository record of his thesis (Modelling and Analysis of Procurement, Transportation and Storage in Food Grain Supply Chain, supervisors M.K. Tiwari and S.K. Kumar) is dated October 2019, the month the Cranfield visit ended. The completion date is therefore unsettled (April 2019 in ORCID, October 2019 on the thesis record, 2018 in the OM List), and the five-month Cranfield visit may have been a research visit made before the thesis was finished rather than a post-PhD job. If it was, the next post is the Cardiff lectureship from January 2020, which a later pass can check once the award date is documented. Earlier review (2026-10-16): the Cardiff profile returned an access-denied response. Verifier: identity and employer hold, but the thesis record dated October 2019 places the Cranfield visit (May-October 2019) before the thesis date, so it is not shown to be a new post-PhD job.",
       "sources": [
         {
+          "url": "https://orcid.org/0000-0002-7977-0360",
+          "title": "ORCID record 0000-0002-7977-0360 (public API)",
+          "notes": "PhD IIT Kharagpur 2014-12 to 2019-04; Visiting Researcher, Cranfield School of Management 2019-05 to 2019-10; Lecturer, Cardiff Business School 2020-01 to 2023-07; Senior Lecturer from 2023-08; Visiting Researcher HES-SO Geneva 2018-03 to 2018-05."
+        },
+        {
           "url": "https://profiles.cardiff.ac.uk/staff/mogaled",
-          "title": "Dnyaneshwar Mogale academic profile",
-          "notes": "The Cardiff profile returned an access-denied response."
+          "title": "Dnyaneshwar Mogale - Cardiff University profile",
+          "notes": "Cloudflare verification (403) to curl, r.jina.ai and headless browser."
+        },
+        {
+          "url": "http://www.idr.iitkgp.ac.in/xmlui/handle/123456789/10978",
+          "title": "Modelling and Analysis of Procurement, Transportation and Storage in Food Grain Supply Chain (IIT Kharagpur IDR thesis record)",
+          "notes": "Opened by the verifier with curl: Ph.D. thesis, Department of Industrial and Systems Engineering, author Mogale Dnyaneshwar Gangadhar, supervisors Prof. Manoj Kumar Tiwari and Dr. Sri Krishna Kumar; dc.date.issued 2019-10 (collection page: October, 2019); full text restricted."
         }
       ],
       "source": "omlist"
@@ -25381,15 +25559,35 @@
       "facultyId": "omlist-2c6c6009e7cdbdf0",
       "name": "Lama Moussawi",
       "status": "unresolved",
-      "checkedAt": "2026-10-16",
+      "checkedAt": "2026-10-17",
+      "reason": "Second pass: the AUB profile was rendered in a headless browser and its public data service (spservices.aub.edu.lb FMIS_GetProfileDetails) was read directly. The Education record lists a PhD from the University of Texas at Dallas dated 2006 (with MS 2005, MBA 2002, BS AUB 2001), but the WorkExperience record is empty ('null') and the short bio gives only her current tenured professorship and associate deanship. The earliest dated trace of her AUB employment found is a 2008 AUB Engineering Management thesis record in AUB ScholarWorks naming 'Dr. Lama Moussawi, Assistant Professor, Business Information and [Decision Systems]' as a committee member, which shows she was an AUB assistant professor by 2008 but not when she started; the earliest AUB grant listed is for 2009-2010. ORCID 0000-0002-1399-2817 has works only. Two web searches found only a WiDS profile repeating the 2006 PhD and current AUB catalogue pages. Whether AUB was her first post after the 2006 degree, and from which year, remains undocumented. Earlier review (2026-10-16): the AUB profile returned a shell page without a readable biography.",
       "sources": [
         {
           "url": "https://www.aub.edu.lb/pages/profile.aspx?memberId=lm34",
-          "title": "Lama Moussawi Profile",
-          "notes": "The linked AUB profile returned a shell page without a readable faculty biography."
+          "title": "Lama Moussawi - AUB faculty profile",
+          "notes": "Rendered in a headless browser: Professor & Associate Dean of Research & Faculty Development, Business Information and Decision Systems; bio gives UT Dallas PhD in Management Science without career dates."
+        },
+        {
+          "url": "https://spservices.aub.edu.lb/PublicWebService.svc/FMIS_GetProfileDetails?memberId=lm34&detailType=Education",
+          "title": "AUB public profile data service - Education (lm34)",
+          "notes": "PhD University of Texas at Dallas, period 'Jan 2006'; MS UT Dallas 2005; MBA UT Dallas 2002; BS AUB 2001. The WorkExperience call for the same profile returns null."
+        },
+        {
+          "url": "https://spservices.aub.edu.lb/PublicWebService.svc/FMIS_GetProfileDetails?memberId=lm34&detailType=Grants",
+          "title": "AUB public profile data service - Grants (lm34)",
+          "notes": "Earliest listed grant URB 2009-2010; not an appointment date."
+        },
+        {
+          "url": "https://scholarworks.aub.edu.lb/handle/10938/7848",
+          "title": "Reducing congestion in heavy-tailed queues (AUB M.E.M. thesis, 2008) - ScholarWorks record",
+          "notes": "Read through the ScholarWorks API: committee member 'Dr. Lama Moussawi, Assistant Professor, Business Information and ...' in a 2008 thesis; establishes AUB assistant professorship by 2008, not its start."
+        },
+        {
+          "url": "https://orcid.org/0000-0002-1399-2817",
+          "title": "ORCID record 0000-0002-1399-2817 (public API)",
+          "notes": "23 works; no education or employment entries."
         }
       ],
-      "reason": "The linked AUB profile returned a shell page without a readable faculty biography.",
       "source": "omlist"
     },
     {
@@ -25850,14 +26048,38 @@
     {
       "facultyId": "omlist-fcc732fd7e0daada",
       "name": "Walid Nasr",
-      "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "The AUB profile returned navigation without readable individual biography.",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "employer": "IBM",
+      "position": "Senior Consultant",
+      "placementYear": 2008,
+      "category": "industry",
+      "evidenceUrl": "https://www.aub.edu.lb/pages/profile.aspx?memberId=wn12",
+      "evidenceNote": "The AUB faculty profile's Work Experience section (served by AUB's public profile data service) lists a single prior post, Senior Consultant at IBM, 2008-2009, before his AUB appointment; its Education section lists the Virginia Tech PhD in 2008. The VTechWorks ETD record dates the dissertation defence 18 January 2008 (approved 26 February 2008), so the IBM post began after the doctorate was completed.",
+      "phdYearVerified": 2008,
+      "phdInstitutionVerified": "Virginia Tech",
+      "phdYearResolution": "The OM List imports 2007. The VTechWorks ETD record gives dc.date.issued (defence) 2008-01-18 and approval 2008-02-26, and the AUB profile lists the PhD in 2008; 2008 is used.",
+      "reason": "Second pass: the AUB profile (headless browser) loads its sections from a public AUB data service; its Work Experience record gives IBM Senior Consultant 2008-2009 as the only earlier job, and the VTechWorks dissertation record dates the Virginia Tech ISE PhD to early 2008. Identity: the dissertation (Analysis and Approximations of Time Dependent Queueing Models, chair Michael Taaffe) matches the AUB profile's queueing research.",
       "sources": [
         {
           "url": "https://www.aub.edu.lb/pages/profile.aspx?memberId=wn12",
-          "title": "Walid Nasr academic profile",
-          "notes": "The AUB profile returned navigation without readable individual biography."
+          "title": "Walid Nasr - AUB faculty profile",
+          "notes": "Rendered in a headless browser; Associate Professor, Business Information and Decision Systems; Education and Work Experience tabs filled from the AUB data service."
+        },
+        {
+          "url": "https://spservices.aub.edu.lb/PublicWebService.svc/FMIS_GetProfileDetails?memberId=wn12&detailType=WorkExperience",
+          "title": "AUB public profile data service - Work Experience (wn12)",
+          "notes": "Single entry: 2008 - 2009, IBM, Senior Consultant."
+        },
+        {
+          "url": "https://spservices.aub.edu.lb/PublicWebService.svc/FMIS_GetProfileDetails?memberId=wn12&detailType=Education",
+          "title": "AUB public profile data service - Education (wn12)",
+          "notes": "PhD Virginia Tech 2008; MS Virginia Tech 2003; BE AUB 2002."
+        },
+        {
+          "url": "https://vtechworks.lib.vt.edu/handle/10919/26090",
+          "title": "Analysis and Approximations of Time Dependent Queueing Models (VTechWorks ETD)",
+          "notes": "Read through the VTechWorks DSpace API. Ph.D. dissertation, Industrial and Systems Engineering; defence/issued 2008-01-18, approval 2008-02-26; chair Michael R. Taaffe."
         }
       ],
       "source": "omlist"
@@ -25985,18 +26207,33 @@
       "facultyId": "omlist-e0b76cb0af27dc22",
       "name": "Torbjörn Netland",
       "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "The ETH individual and group pages returned navigation without a readable individual biography.",
+      "checkedAt": "2026-10-17",
+      "reason": "Second pass: the ETH D-MTEC person page and the POM chair person page were rendered in a headless browser; they give his current full professorship, contact details and awards from 2017 onward, but no career chronology. His blog's About page (better-operations.com/about, plain curl) says he previously worked as an Associate Professor at NTNU and as a Senior Researcher at SINTEF Technology & Society, with visiting stays at Cambridge and Georgetown, all undated, and says nothing about the order relative to the 2013 NTNU doctorate. His ORCID record (0000-0001-7382-1051) has one undated ETH entry, and his Cristin person record (Norwegian research registry, public API) lists an inactive NTNU affiliation as Associate professor and a SINTEF affiliation as Researcher, without dates. One web search found only an undated Shingo directory bio with the same two prior posts. The first post-PhD job and its start year remain unknown (the SINTEF post may have preceded or overlapped the doctorate). Earlier review (2026-10-16): the ETH pages returned navigation without a readable biography.",
       "sources": [
         {
-          "url": "https://mtec.ethz.ch/people/person-detail.torbjoernnetland.html",
-          "title": "Torbjörn Netland academic profile",
-          "notes": "The ETH individual and group pages returned navigation without a readable individual biography."
+          "url": "https://better-operations.com/about/",
+          "title": "About - Better Operations (Netland's blog)",
+          "notes": "Previously Associate Professor at NTNU and Senior Researcher at SINTEF Technology & Society, Trondheim; visiting researcher at Cambridge and Georgetown; undated."
         },
         {
-          "url": "https://pom.ethz.ch/",
-          "title": "Torbjörn Netland academic profile",
-          "notes": "The ETH individual and group pages returned navigation without a readable individual biography."
+          "url": "https://mtec.ethz.ch/people/person-detail.torbjoernnetland.html",
+          "title": "Prof. Dr. Torbjörn Netland - ETH D-MTEC",
+          "notes": "Rendered in a headless browser: current title, awards; no chronology."
+        },
+        {
+          "url": "https://pom.ethz.ch/people/person-detail.MjI2Mjc4.TGlzdC8yMjg5LDE2MTAyMDc4MDY=.html",
+          "title": "Netland - ETH POM chair person page",
+          "notes": "Rendered in a headless browser; same content, no chronology."
+        },
+        {
+          "url": "https://orcid.org/0000-0001-7382-1051",
+          "title": "ORCID record 0000-0001-7382-1051 (public API)",
+          "notes": "Single undated ETH Zurich employment entry."
+        },
+        {
+          "url": "https://api.nva.unit.no/cristin/person/40329",
+          "title": "Cristin person record 40329, Torbjørn H. Netland (NVA public API)",
+          "notes": "Affiliations: NTNU, Associate professor (inactive); SINTEF, Researcher; no dates."
         }
       ],
       "source": "omlist"
@@ -28480,15 +28717,25 @@
       "facultyId": "omlist-b1ceefa341587589",
       "name": "Andrew Potter",
       "status": "unresolved",
-      "checkedAt": "2026-10-16",
+      "checkedAt": "2026-10-17",
+      "reason": "Second pass: the Cardiff profile and ORCA repository remain behind Cloudflare for curl, the reader proxy and a headless browser. His ORCID record (0000-0002-3157-9735, linked from the directory) has a single undated Cardiff Business School employment entry and no education. Publication metadata (discovery only) show Cardiff affiliations from 2003, before the 2004 Cardiff PhD, which suggests he worked at Cardiff during the doctorate, but no dated appointment record, CV or thesis record was read, so the first post-PhD job (or whether a pre-degree Cardiff post simply continued) cannot be established. Earlier review (2026-10-16): the Cardiff profile returned HTTP 403.",
       "sources": [
         {
+          "url": "https://orcid.org/0000-0002-3157-9735",
+          "title": "ORCID record 0000-0002-3157-9735 (public API)",
+          "notes": "Employment: Cardiff University Business School, undated, no title; 199 works; no education."
+        },
+        {
+          "url": "https://api.openalex.org/authors/orcid:0000-0002-3157-9735",
+          "title": "OpenAlex author record (discovery only)",
+          "notes": "Publication affiliations with Cardiff University from 2003; not employment evidence."
+        },
+        {
           "url": "https://profiles.cardiff.ac.uk/staff/potterat",
-          "title": "Andrew Potter Profile",
-          "notes": "Fetch failed: HTTP Error 403: Forbidden"
+          "title": "Andrew Potter - Cardiff University profile",
+          "notes": "Cloudflare verification (403) to curl, r.jina.ai and headless browser."
         }
       ],
-      "reason": "Cardiff primary profile returnedHTTP403; no readable chronology obtained.",
       "source": "omlist"
     },
     {
@@ -28625,22 +28872,27 @@
       "name": "Laura Purvis",
       "status": "unresolved",
       "checkedAt": "2026-10-17",
-      "reason": "Her ORCID record lists one employment entry, Senior Lecturer, Cardiff Business School, from 2007-08, and no education entry. That suggests Cardiff employment from August 2007, but the role title is probably a later grade attached to the whole entry, the degree date (2007, Edinburgh Napier, per the OM List) is not documented anywhere opened, and nothing shows whether she held another post before Cardiff or how the Cardiff start relates to the degree. The Cardiff profile and all Cardiff domains refuse automated requests; no CV was found.",
+      "reason": "Second pass: Cardiff hosts still serve a Cloudflare verification page to curl with a browser user-agent, r.jina.ai and a headless browser, and the Edinburgh Napier repository (napier-repository.worktribe.com) also returns a Cloudflare challenge (403) to curl and a headless browser, so neither the Cardiff career history nor the Napier thesis date could be read. The only dated source remains her ORCID record: one employment entry, Senior Lecturer, Cardiff Business School, from 2007-08, with no education. Cardiff from August 2007 is a strong lead, but the title is probably her later grade attached to the whole entry, the 2007 degree date is undocumented, and nothing shows whether she held another post (for example at Edinburgh Napier) between the degree and Cardiff. Earlier review (2026-10-16): the same ORCID entry was found, with the degree date and any earlier post undocumented and the Cardiff profile refused.",
       "sources": [
         {
-          "url": "https://omlist.edutool.org/schools/cardiff-university/faculty/laura-purvis.html",
-          "title": "OM List profile - Laura Purvis",
-          "notes": "Imported directory profile; opened for links to the school page, ORCID and CV only. Not evidence of a first job."
+          "url": "https://orcid.org/0000-0002-1425-5894",
+          "title": "ORCID record 0000-0002-1425-5894 (public API)",
+          "notes": "Employment: Senior Lecturer, Cardiff Business School, from 2007-08; no education entries."
+        },
+        {
+          "url": "https://napier-repository.worktribe.com/search?q=Purvis",
+          "title": "Edinburgh Napier research repository search",
+          "notes": "Cloudflare challenge (403) to curl and headless browser; thesis not read."
         },
         {
           "url": "https://profiles.cardiff.ac.uk/staff/purvisl",
-          "title": "Cardiff University profile - Laura Purvis",
-          "notes": "Refused automated requests (HTTP 403 Cloudflare challenge) through the fetch tool, curl and a reader proxy on 17 Oct 2026; www.cardiff.ac.uk and the ORCA repository are blocked the same way. Not read."
+          "title": "Laura Purvis - Cardiff University profile",
+          "notes": "Cloudflare verification (403) to curl, r.jina.ai and headless browser."
         },
         {
-          "url": "https://orcid.org/0000-0002-1425-5894",
-          "title": "ORCID record - Laura Purvis",
-          "notes": "Only Senior Lecturer, Cardiff University, Cardiff Business School, from 2007-08; no education entries. Read through the ORCID public API (pub.orcid.org/v3.0/0000-0002-1425-5894/activities)."
+          "url": "https://omlist.edutool.org/schools/cardiff-university/faculty/laura-purvis.html",
+          "title": "OM List directory profile",
+          "notes": "Edinburgh Napier PhD 2007 (imported)."
         }
       ],
       "source": "omlist"
@@ -29826,13 +30078,23 @@
       "facultyId": "omlist-9362d0e29ed2488f",
       "name": "Vasco Sanchez Rodrigues",
       "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "The Cardiff profile returned an access-denied response.",
+      "checkedAt": "2026-10-17",
+      "reason": "Second pass: the Cardiff profile is still behind Cloudflare for curl with a browser user-agent, r.jina.ai and a headless browser. The ORCID iD on the directory page (0000-0001-6991-2129) belongs to a namesake (Universidade do Porto PhD 2002, Católica Porto Business School) and is excluded. An ORCID search found 0000-0003-3375-3079, which lists one employment entry, Reader in Logistics & Operations Management, Cardiff University, from 2011-12, and no education. If this is the same person, his Cardiff employment as recorded there began in December 2011, the year of the imported Cardiff PhD, but the entry carries his later grade, the degree month is undocumented, and nothing shows whether he already worked at Cardiff (for example as a researcher) during the doctorate, which would make the post an internal move rather than a first new job. Earlier review (2026-10-16): the Cardiff profile returned access denied.",
       "sources": [
         {
+          "url": "https://orcid.org/0000-0003-3375-3079",
+          "title": "ORCID record 0000-0003-3375-3079 (public API)",
+          "notes": "Employment: Reader in Logistics & Operations Management, Cardiff University, from 2011-12; no education."
+        },
+        {
+          "url": "https://orcid.org/0000-0001-6991-2129",
+          "title": "ORCID record 0000-0001-6991-2129 (linked from the directory)",
+          "notes": "Namesake: PhD Faculdade de Economia do Porto 2002, Associate Professor Católica Porto Business School; excluded."
+        },
+        {
           "url": "https://profiles.cardiff.ac.uk/staff/sanchezrodriguesva1",
-          "title": "Vasco Sanchez Rodrigues academic profile",
-          "notes": "The Cardiff profile returned an access-denied response."
+          "title": "Vasco Sanchez Rodrigues - Cardiff University profile",
+          "notes": "Cloudflare verification (403) to curl, r.jina.ai and headless browser."
         }
       ],
       "source": "omlist"
@@ -29956,16 +30218,34 @@
     {
       "facultyId": "omlist-54375570bbbca1b4",
       "name": "Dale Rogers",
-      "status": "unresolved",
-      "checkedAt": "2026-10-16",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "employer": "University of Nevada, Reno",
+      "position": "Assistant Professor of Marketing and Logistics",
+      "placementYear": 1990,
+      "category": "tenure-track",
+      "evidenceUrl": "https://search.asu.edu/profile/2429319/cv",
+      "evidenceNote": "His ASU CV lists the Michigan State PhD (1990), research and teaching assistant at Michigan State January 1987 - December 1989, then Assistant Professor of Marketing and Logistics, University of Nevada, January 1990 - July 1994 (Associate Professor from July 1994). His ORCID record dates the PhD study September 1987 - March 1990, so the post began about two months before the degree was completed and was not retitled on completion; per the overlap rule it is the first job with its own start year. The CV places the university's events in Reno, NV.",
+      "phdYearVerified": 1990,
+      "phdInstitutionVerified": "Michigan State University",
+      "reason": "Second pass: the linked ASU CV (search.asu.edu/profile/2429319/cv), which had been rate-limited, downloads as a Word document with plain curl and a browser user-agent; it gives a dated work history. Pre-PhD jobs (Harris Corporation, Dialog Systems, teaching) all ended before the doctorate.",
       "sources": [
         {
+          "url": "https://search.asu.edu/profile/2429319/cv",
+          "title": "Dale S. Rogers - Curriculum Vitae (ASU)",
+          "notes": "Downloaded with curl (browser user-agent) as .docx. Work experience: Assistant Professor of Marketing and Logistics, University of Nevada, January 1990 - July 1994; RA/TA Michigan State 1987-1989; PhD 1990."
+        },
+        {
           "url": "https://search.asu.edu/profile/2429319",
-          "title": "Dale Rogers Profile",
-          "notes": "ASU biography gives Michigan State PhD 1990 but no dated early job chronology. Linked CV could not be opened due to rate limiting."
+          "title": "Dale Rogers - ASU Search profile",
+          "notes": "Rendered in a headless browser: Ph.D. Michigan State University 1990; links the CV."
+        },
+        {
+          "url": "https://orcid.org/0000-0003-4414-0243",
+          "title": "ORCID record 0000-0003-4414-0243 (public API)",
+          "notes": "Education: PhD Marketing & Logistics, Michigan State, 1987-09 to 1990-03; employment ASU from 2014-07."
         }
       ],
-      "reason": "ASU biography gives Michigan State PhD 1990 but no dated early job chronology. Linked CV could not be opened due to rate limiting.",
       "source": "omlist"
     },
     {
@@ -31544,18 +31824,18 @@
       "facultyId": "omlist-35100aee9b2d9292",
       "name": "Eugene Schneller",
       "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "ASU confirms NYU Sociology PhD 1973 and ASU employment from 1985, but lists earlier appointments without dates or ordering. The linked CV could not be read (public URL returned 403). First post-PhD employer remains unverified; degree field also requires scope review.",
+      "checkedAt": "2026-10-17",
+      "reason": "Second pass: the ASU CV (search.asu.edu/profile/24008/cv, dated March 2023) now downloads with plain curl and gives a dated chronology, but the degree date it implies is inconsistent. The Education section gives 'Ph.D., New York University, Department of Sociology ... 1973', while the publications list describes the dissertation as 'Accepted as a dissertation in the Department of Sociology, New York University, December 1974'. Academic appointments: Assistant Professor of Sociology, Duke University, and Assistant Professor of Community Health Sciences, Duke University Medical Center, both September 1972-1975; then Associate Professor & Chairman, Department of Sociology, Union College, 1975-1978 (tenured). Pre-degree roles (NYU research assistant 1969-70, Montefiore project director 1970-72) ended before Duke. The Duke assistant professorship began before the dissertation was finished and was not retitled: if the degree came in 1973, Duke may be the first job under the overlap rule; if the dissertation was accepted only in December 1974, Duke was held through the doctorate and Union College (1975) would be the first new job. The CV does not settle the conferral date, so neither is recorded. The doctorate is in sociology and still needs a scope decision. Earlier review (2026-10-16): the ASU profile gave the NYU 1973 sociology PhD and ASU from 1985 but undated earlier posts, and the CV URL returned 403.",
       "sources": [
         {
-          "url": "https://search.asu.edu/profile/24008",
-          "title": "Eugene Schneller — public academic profile",
-          "notes": "Professional biography and degree information reviewed for first-job evidence."
+          "url": "https://search.asu.edu/profile/24008/cv",
+          "title": "Eugene S. Schneller - Curriculum Vita (ASU, March 2023)",
+          "notes": "Downloaded with curl (browser user-agent) as .docx. Duke Assistant Professor September 1972-1975; Union College Associate Professor & Chairman 1975-1978; Education: NYU Sociology PhD 1973; dissertation listed as accepted December 1974."
         },
         {
-          "url": "https://search.asu.edu/profile/24008/cv",
-          "title": "Eugene Schneller — public academic profile",
-          "notes": "Professional biography and degree information reviewed for first-job evidence."
+          "url": "https://search.asu.edu/profile/24008",
+          "title": "Eugene Schneller - ASU Search profile",
+          "notes": "Earlier review: NYU Sociology PhD 1973 and ASU from 1985; earlier posts undated."
         }
       ],
       "source": "omlist"
@@ -35107,32 +35387,27 @@
       "name": "Aris Syntetos",
       "status": "unresolved",
       "checkedAt": "2026-10-17",
-      "reason": "No primary chronology could be read. The Cardiff profile and every Cardiff domain refuse automated requests, the ORCID record has no entries, and one web search found no CV. Wikipedia (discovery only, uncited for these sentences) says he earned the Brunel PhD in 2001, completed military service as a Greek national 2001-03 and began his academic career at the University of Salford, joining Cardiff in 2012. If correct, compulsory military service overlapping or following the degree, then Salford, would precede any academic post, so the first post-PhD job cannot be named without a dated primary source. The 2001 Brunel degree is unverified.",
+      "reason": "Second pass: the Cardiff profile and every Cardiff host (including the CMS mirror caru-dev.matrix.squiz.cloud surfaced by a web search) return Cloudflare 403 pages to curl, r.jina.ai and a headless browser; his ORCID record (0000-0003-4639-0756) still has works only. One web search's summary of the Cardiff profile (discovery only, not opened) lists the Brunel PhD in Operational Research in 2001, '2001-2003 Military Service - Greek National' and a 2005 Salford teaching certificate, but no Salford start date. Compulsory military service after the degree and the start of the Salford post therefore remain undated in any source actually read, so the first post-PhD job cannot be recorded. Earlier review (2026-10-16): no primary chronology could be read; Wikipedia (discovery only) gave the 2001 Brunel PhD, Greek military service 2001-03, then Salford, and Cardiff from 2012.",
       "sources": [
         {
-          "url": "https://omlist.edutool.org/schools/cardiff-university/faculty/aris-syntetos.html",
-          "title": "OM List profile - Aris Syntetos",
-          "notes": "Imported directory profile; opened for links to the school page, ORCID and CV only. Not evidence of a first job."
+          "url": "https://orcid.org/0000-0003-4639-0756",
+          "title": "ORCID record 0000-0003-4639-0756 (public API)",
+          "notes": "12 works; no education or employment entries."
+        },
+        {
+          "url": "https://caru-dev.matrix.squiz.cloud/people/view/598321-syntetos-aris",
+          "title": "Cardiff CMS mirror of the Syntetos profile",
+          "notes": "Found by a web search; Cloudflare 403 to curl; not read."
         },
         {
           "url": "https://profiles.cardiff.ac.uk/staff/syntetosa",
-          "title": "Cardiff University profile - Aris Syntetos",
-          "notes": "Refused automated requests (HTTP 403 Cloudflare challenge) through the fetch tool, curl and a reader proxy on 17 Oct 2026; www.cardiff.ac.uk and the ORCA repository are blocked the same way. Not read."
-        },
-        {
-          "url": "https://orcid.org/0000-0003-4639-0756",
-          "title": "ORCID record - Aris Syntetos",
-          "notes": "Record has no employment or education entries. Read through the ORCID public API (pub.orcid.org/v3.0/0000-0003-4639-0756/activities)."
+          "title": "Aris Syntetos - Cardiff University profile",
+          "notes": "Cloudflare verification (403) to curl, r.jina.ai and headless browser."
         },
         {
           "url": "https://en.wikipedia.org/wiki/Aris_Syntetos",
-          "title": "Wikipedia - Aris Syntetos",
-          "notes": "Discovery only: PhD Brunel 2001; military service as a Greek national 2001-03; academic career began at Salford; joined Cardiff 2012. Career sentences uncited."
-        },
-        {
-          "url": "https://ideas.repec.org/a/for/ijafaa/y2014i34p18.html",
-          "title": "IDEAS/RePEc - Foresight 2014 interview with Aris Syntetos",
-          "notes": "The source Wikipedia cites for the military-service sentence; only a one-sentence abstract is public, with no biography."
+          "title": "Aris Syntetos - Wikipedia",
+          "notes": "Earlier review, discovery only: Brunel PhD 2001, military service 2001-03, Salford, Cardiff 2012."
         }
       ],
       "source": "omlist"
@@ -36509,16 +36784,34 @@
     {
       "facultyId": "omlist-1e29031303bca1f1",
       "name": "Ying Kei (Mike) Tse",
-      "status": "unresolved",
-      "checkedAt": "2026-10-16",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "employer": "University of York",
+      "position": null,
+      "placementYear": 2011,
+      "category": "unknown",
+      "evidenceUrl": "https://orcid.org/0000-0001-6174-0326",
+      "evidenceNote": "His ORCID record lists the PhD at Nottingham University Business School (ending 2012) and, as the earliest employment, The York Management School, University of York, from November 2011 to January 2020 (entry titled Senior Lecturer), then Reader (2020) and Professor (2022) at Cardiff Business School. The Nottingham repository dates the PhD thesis 2012, so the York post began a few months before the degree was completed and continued afterwards; it was not a pre-existing job held through the doctorate, so it is the first job with its own start year, with the overlap noted. The initial grade at York is not stated (the entry carries the final title), so position is null and category unknown. Verifier: the thesis text in the Nottingham repository has the title page 'Thesis submitted to the University of Nottingham for the degree of Doctor of Philosophy, July 2012', so the York post began about eight months before the thesis was submitted; no retitling on completion is recorded, so the 2011 start year is kept under the overlap rule.",
+      "phdYearVerified": 2012,
+      "phdInstitutionVerified": "University of Nottingham",
+      "reason": "Second pass: the Cardiff profile is still blocked by Cloudflare, but the ORCID record (degree and employers matching the directory) and the University of Nottingham repository's thesis record (Supply chain quality risk management, PhD 2012, supervisors K.H. Tan and R. Ramanathan; read in a headless browser and through the repository's public API) date the degree and the first post.",
       "sources": [
         {
+          "url": "https://orcid.org/0000-0001-6174-0326",
+          "title": "ORCID record 0000-0001-6174-0326 (public API)",
+          "notes": "Education: PhD, Nottingham University Business School, ending 2012. Employment: Senior Lecturer, The York Management School, University of York, 2011-11 to 2020-01; Reader, Cardiff 2020-01 to 2022-07; Professor, Cardiff from 2022-08."
+        },
+        {
+          "url": "https://repository.nottingham.ac.uk/handle/123456789/47117",
+          "title": "Supply chain quality risk management: an empirical study of its dimensions and impact on firm performance (Nottingham repository)",
+          "notes": "PhD ethesis, Nottingham University Business School, dc.date.issued 2012; originally deposited 2013-11-06."
+        },
+        {
           "url": "https://profiles.cardiff.ac.uk/staff/tsem1",
-          "title": "Ying Kei (Mike) Tse public academic profile",
-          "notes": "Linked Cardiff profile returned access denied, so first employment could not be established from that source."
+          "title": "Ying Kei (Mike) Tse - Cardiff University profile",
+          "notes": "Cloudflare verification (403) to curl, r.jina.ai and headless browser."
         }
       ],
-      "reason": "Linked Cardiff profile returned access denied, so first employment could not be established from that source.",
       "source": "omlist"
     },
     {
@@ -36918,13 +37211,28 @@
       "facultyId": "omlist-029229c2da72dca1",
       "name": "Bengisu Urlu",
       "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "The linked public CV returned a PDF without readable text in extraction. Degree and employment chronology need visual review or an alternative primary source.",
+      "checkedAt": "2026-10-17",
+      "reason": "Second pass: the Católica CV PDF (clsbe.lisboa.ucp.pt/asset/67821/download) is an image-only PDF; it was downloaded with curl and read visually page by page. It lists 'Ph.D. Candidate in Management - Technology & Operations Management, INSEAD, September 2019 - Present' and the current post 'Invited Assistant Professor - Operations & Data Science, Católica Lisbon School of Business and Economics, September 2025 - Present'. Her ORCID record (0000-0002-1423-3548) likewise has the INSEAD PhD from 2019-08 with no end date and the Católica post from 2025-09, and the Católica profile mentions her PhD at INSEAD without saying it was awarded. No source opened shows the doctorate completed; INSEAD's PhD pages answer 403. If the 2026 degree imported by the OM List was conferred, the Católica post began about a year earlier, while she was still a candidate, so it would be a pre-degree post whose treatment depends on the conferral date. Status left unresolved rather than not-yet-completed because the 2026 completion cannot be excluded. Earlier review (2026-10-16): the CV PDF yielded no extractable text.",
       "sources": [
         {
           "url": "https://clsbe.lisboa.ucp.pt/asset/67821/download",
-          "title": "Bengisu Urlu — Curriculum Vitae",
-          "notes": "Education and employment chronology reviewed; requires further clarification."
+          "title": "Bengisu Urlu - Curriculum Vitae (Católica Lisbon)",
+          "notes": "Image-only PDF read visually: INSEAD PhD candidate Sept 2019 - present; Invited Assistant Professor, Católica Lisbon, Sept 2025 - present; TU/e MSc Aug 2019; Bilkent BSc July 2017."
+        },
+        {
+          "url": "https://clsbe.lisboa.ucp.pt/person/bengisu-urlu",
+          "title": "Bengisu Urlu - Católica Lisbon profile",
+          "notes": "Invited Assistant Professor of Operations and Data Science; 'prior to her PhD at INSEAD' she earned TU/e and Bilkent degrees; no award date."
+        },
+        {
+          "url": "https://orcid.org/0000-0002-1423-3548",
+          "title": "ORCID record 0000-0002-1423-3548 (public API)",
+          "notes": "Education: PhD in Management, INSEAD, from 2019-08 (no end date); Employment: Invited Assistant Professor, Católica-Lisbon, from 2025-09."
+        },
+        {
+          "url": "https://www.insead.edu/phd/job-market-candidates",
+          "title": "INSEAD PhD pages",
+          "notes": "HTTP 403 to curl; not read."
         }
       ],
       "source": "omlist"
@@ -37702,15 +38010,25 @@
       "facultyId": "omlist-65299133f305f6a3",
       "name": "Stephan Wagner",
       "status": "unresolved",
-      "checkedAt": "2026-10-16",
+      "checkedAt": "2026-10-17",
+      "reason": "Second pass: the ETH Chair of Logistics Management profile (scm.ethz.ch/people/wagner.html, headless browser) now gives a biography: before ETH he served on the faculty of WHU - Otto Beisheim School of Management and worked for 10 years as head of supply chain management for a Swiss-based technology group and as senior manager for an international top-management consulting firm; he holds a Washington State MBA and a PhD and Habilitation from St. Gallen. None of these posts is dated, so it is not known whether the industry and consulting years preceded, overlapped or followed the 2000 doctorate, or when the WHU post began. His ORCID record (0000-0003-0471-5663) lists only Professor and Chair at ETH from 2008-05. Earlier review (2026-10-16): the ETH profile was a script-drawn page without a readable chronology.",
       "sources": [
         {
+          "url": "https://scm.ethz.ch/people/wagner.html",
+          "title": "Wagner, Stephan, Prof. Dr. - ETH Chair of Logistics Management",
+          "notes": "Rendered in a headless browser: prior WHU faculty post; 10 years in industry and consulting; St. Gallen PhD and Habilitation; no dates; WHU teaching award 2006."
+        },
+        {
+          "url": "https://orcid.org/0000-0003-0471-5663",
+          "title": "ORCID record 0000-0003-0471-5663 (public API)",
+          "notes": "Employment: Professor and Chair of Logistics Management, ETH Zurich, from 2008-05; no education or earlier employment."
+        },
+        {
           "url": "https://mtec.ethz.ch/people/person-detail.stephanwagner.html",
-          "title": "Stephan Wagner Profile",
-          "notes": "ETH profile returned a JavaScript-dependent page without a readable career chronology."
+          "title": "Stephan Wagner - ETH D-MTEC profile",
+          "notes": "Earlier review: script-drawn page without chronology."
         }
       ],
-      "reason": "ETH profile returned a JavaScript-dependent page without a readable career chronology.",
       "source": "omlist"
     },
     {
@@ -37718,22 +38036,27 @@
       "name": "Helen Walker",
       "status": "unresolved",
       "checkedAt": "2026-10-17",
-      "reason": "The only readable source with dates is her ORCID record, which lists a single employment entry (Professor, Cardiff Business School, from 2012-03) and no education; it says nothing about her first post after the doctorate. The Cardiff profile and all Cardiff domains refuse automated requests, and no CV was found. The first post-PhD job and the 1999 Bath degree are unverified.",
+      "reason": "Second pass: the Cardiff profile is still behind Cloudflare for curl, r.jina.ai and a headless browser, and the University of Bath research portal (for the 1999 thesis and her former Bath staff record) also returns a 403 challenge to curl. Her ORCID record (0000-0002-0892-9231) still lists only Professor, Cardiff Business School, from 2012-03, with no education. No CV, thesis record or dated chronology for 1999-2012 was read, so the first post-PhD job remains unknown. Earlier review (2026-10-16): the same ORCID entry was the only dated source.",
       "sources": [
         {
-          "url": "https://omlist.edutool.org/schools/cardiff-university/faculty/helen-walker.html",
-          "title": "OM List profile - Helen Walker",
-          "notes": "Imported directory profile; opened for links to the school page, ORCID and CV only. Not evidence of a first job."
+          "url": "https://orcid.org/0000-0002-0892-9231",
+          "title": "ORCID record 0000-0002-0892-9231 (public API)",
+          "notes": "Employment: Professor, Cardiff Business School, from 2012-03; no education."
+        },
+        {
+          "url": "https://researchportal.bath.ac.uk/en/persons/?search=Helen+Walker",
+          "title": "University of Bath research portal search",
+          "notes": "HTTP 403 challenge to curl; not read."
         },
         {
           "url": "https://profiles.cardiff.ac.uk/staff/walkerhl",
-          "title": "Cardiff University profile - Helen Walker",
-          "notes": "Refused automated requests (HTTP 403 Cloudflare challenge) through the fetch tool, curl and a reader proxy on 17 Oct 2026; www.cardiff.ac.uk and the ORCA repository are blocked the same way. Not read."
+          "title": "Helen Walker - Cardiff University profile",
+          "notes": "Cloudflare verification (403) to curl, r.jina.ai and headless browser."
         },
         {
-          "url": "https://orcid.org/0000-0002-0892-9231",
-          "title": "ORCID record - Helen Walker",
-          "notes": "Only Professor, Cardiff University, Cardiff Business School, from 2012-03. Read through the ORCID public API (pub.orcid.org/v3.0/0000-0002-0892-9231/activities)."
+          "url": "https://omlist.edutool.org/schools/cardiff-university/faculty/helen-walker.html",
+          "title": "OM List directory profile",
+          "notes": "Bath PhD 1999 (imported)."
         }
       ],
       "source": "omlist"
@@ -38290,15 +38613,30 @@
       "facultyId": "omlist-798a22ebcece84ef",
       "name": "Xiaobei Wang",
       "status": "unresolved",
-      "checkedAt": "2026-10-16",
+      "checkedAt": "2026-10-17",
+      "reason": "Second pass: the Cardiff profile is still behind Cloudflare for curl, r.jina.ai and a headless browser, and the BI Open repository host refuses connections from this environment. The Norwegian national research archive (NVA/Cristin public API) records her BI doctoral thesis, 'Strategizing in logistics networks: The role of logistics service providers as mediators and network facilitators' (DegreePhd, BI Series of Dissertations, 2016; supervisors Lars Huemer and Kurt Gøran Persson), which confirms the 2016 BI degree, and its Cristin person record lists only an inactive BI affiliation as Research fellow (stipendiat), i.e. the doctoral fellowship. Her ORCID record (0000-0001-6811-3587) gives the undated BI doctorate and Lecturer (Assistant Professor), Cardiff Business School, from 2017-10, with no other employment. The Cardiff lectureship is the leading candidate, but the degree month is not recorded and nothing documents what she did between the 2016 degree and October 2017, so it cannot be recorded as the first job. Earlier review (2026-10-16): the Cardiff biography returned HTTP 403.",
       "sources": [
         {
+          "url": "https://orcid.org/0000-0001-6811-3587",
+          "title": "ORCID record 0000-0001-6811-3587 (public API)",
+          "notes": "Qualification: Doctor of Philosophy on Strategic Management, BI Norwegian Business School (undated). Employment: Lecturer (Assistant Professor), Cardiff Business School, from 2017-10."
+        },
+        {
+          "url": "https://api.nva.unit.no/publication/0198cc8011ec-765de7ab-e8d3-4165-9ccd-f88049939a9c",
+          "title": "Strategizing in logistics networks (BI PhD thesis, NVA record)",
+          "notes": "Read through the NVA public API: DegreePhd, BI Series of Dissertations, 2016; creator Xiaobei Wang; supervisors Huemer and Persson."
+        },
+        {
+          "url": "https://api.nva.unit.no/cristin/person/325201",
+          "title": "Cristin person record 325201 (NVA public API)",
+          "notes": "Single inactive affiliation: BI Norwegian Business School, Research fellow (stipendiat)."
+        },
+        {
           "url": "https://profiles.cardiff.ac.uk/staff/wangx150",
-          "title": "Xiaobei Wang Profile",
-          "notes": "Fetch failed: HTTP Error 403: Forbidden"
+          "title": "Xiaobei Wang - Cardiff University profile",
+          "notes": "Cloudflare verification (403) to curl, r.jina.ai and headless browser."
         }
       ],
-      "reason": "Cardiff primary biography returned HTTP403; no readable first-employment evidence obtained.",
       "source": "omlist"
     },
     {
@@ -38376,22 +38714,22 @@
       "name": "Xun (Paul) Wang",
       "status": "unresolved",
       "checkedAt": "2026-10-17",
-      "reason": "No chronology could be read: the Cardiff profile and all Cardiff domains refuse automated requests, the linked ORCID record has no entries, and no CV or personal page was found. The first post-PhD job and the 2013 Beihang degree are unverified.",
+      "reason": "Second pass: the Cardiff profile is still behind Cloudflare for curl, r.jina.ai and a headless browser, and the ORCID iD on the directory page (0000-0001-7800-726X) is still empty. An ORCID search for a Beihang-affiliated Xun Wang found 0000-0002-1156-3840, but that person took a PhD at Université de Technologie de Compiègne (2011-2014) and is now a professor at Beihang, so it is a namesake and excluded. No CV, thesis record or dated chronology was found; the 2013 Beihang degree and the first post-PhD job remain unverified. Earlier review (2026-10-16): the Cardiff profile was refused, the linked ORCID record had no entries and no CV was found.",
       "sources": [
         {
-          "url": "https://omlist.edutool.org/schools/cardiff-university/faculty/paul-wang.html",
-          "title": "OM List profile - Xun (Paul) Wang",
-          "notes": "Imported directory profile; opened for links to the school page, ORCID and CV only. Not evidence of a first job."
+          "url": "https://orcid.org/0000-0001-7800-726X",
+          "title": "ORCID record 0000-0001-7800-726X (linked from the directory)",
+          "notes": "No works, education or employment."
+        },
+        {
+          "url": "https://orcid.org/0000-0002-1156-3840",
+          "title": "ORCID record 0000-0002-1156-3840",
+          "notes": "Namesake: UTC Compiègne PhD 2011-2014, Aix-Marseille postdoc, HKUST, Beihang professor; excluded."
         },
         {
           "url": "https://profiles.cardiff.ac.uk/staff/wangx46",
-          "title": "Cardiff University profile - Xun (Paul) Wang",
-          "notes": "Refused automated requests (HTTP 403 Cloudflare challenge) through the fetch tool, curl and a reader proxy on 17 Oct 2026; www.cardiff.ac.uk and the ORCA repository are blocked the same way. Not read."
-        },
-        {
-          "url": "https://orcid.org/0000-0001-7800-726X",
-          "title": "ORCID record - Xun (Paul) Wang",
-          "notes": "Record has no employment or education entries. Read through the ORCID public API (pub.orcid.org/v3.0/0000-0001-7800-726X/activities)."
+          "title": "Xun (Paul) Wang - Cardiff University profile",
+          "notes": "Cloudflare verification (403) to curl, r.jina.ai and headless browser."
         }
       ],
       "source": "omlist"
@@ -38422,15 +38760,20 @@
       "facultyId": "omlist-99fdc0612af143fc",
       "name": "Yingli Wang",
       "status": "unresolved",
-      "checkedAt": "2026-10-16",
+      "checkedAt": "2026-10-17",
+      "reason": "Second pass: the Cardiff profile is still behind Cloudflare for curl, r.jina.ai and a headless browser. Her ORCID record (0000-0001-5630-9558, linked from the directory) gives the PhD at Cardiff Business School from October 2004 to October 2007 and an undated Professor entry at Cardiff Business School, Logistics and Operations Management. The record dates the doctorate (2007, against the imported 2008) but not the start of any Cardiff post, so whether she stayed at Cardiff directly after the degree, held a post there during it, or worked elsewhere first is not documented. Earlier review (2026-10-16): the Cardiff biography returned HTTP 403.",
       "sources": [
         {
+          "url": "https://orcid.org/0000-0001-5630-9558",
+          "title": "ORCID record 0000-0001-5630-9558 (public API)",
+          "notes": "Education: PhD, Cardiff Business School, 2004-10 to 2007-10. Employment: Professor, Cardiff Business School, undated."
+        },
+        {
           "url": "https://profiles.cardiff.ac.uk/staff/wangy14",
-          "title": "Yingli Wang Profile",
-          "notes": "Fetch failed: HTTP Error 403: Forbidden"
+          "title": "Yingli Wang - Cardiff University profile",
+          "notes": "Cloudflare verification (403) to curl, r.jina.ai and headless browser."
         }
       ],
-      "reason": "Cardiff institutional biography returned HTTP403; first job remains unverified.",
       "source": "omlist"
     },
     {
@@ -38810,16 +39153,40 @@
     {
       "facultyId": "omlist-fc7d55f46bc09c29",
       "name": "Peter Wells",
-      "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "The Cardiff University profile returned HTTP 403 and search results did not give a biography with dates; no source for the 1989 PhD or his post-PhD career was opened. The imported PhD and current institution are both Cardiff, so a continuous Cardiff career cannot be assumed. First job unknown.",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "employer": "Cardiff University",
+      "position": null,
+      "placementYear": null,
+      "category": "unknown",
+      "evidenceUrl": "https://orcid.org/0000-0002-4376-7178",
+      "evidenceNote": "His ORCID record gives the PhD in City and Regional Planning at the University of Wales College of Cardiff, October 1984 - June 1989, and one employment entry, Cardiff Business School, Cardiff University, from October 1989 (entry titled with his current post, Professor of Business and Sustainability). No employment is listed before or during the doctorate, so the Cardiff Business School post from October 1989 is the first post-PhD job; its original title is not stated. Verifier: placementYear changed from 1989 to null. ORCID dates the Cardiff Business School entry from October 1989, but his 2011 Sustainable Innovation conference biography says he joined Cardiff Business School in 1990, so the start year is not settled; the employer (Cardiff Business School, Cardiff University) is the same in both and no other post after June 1989 is listed.",
+      "phdYearVerified": 1989,
+      "phdInstitutionVerified": "University of Wales College of Cardiff",
+      "reason": "Second pass: the Cardiff profile is still blocked by Cloudflare (curl, r.jina.ai, headless browser), but an ORCID search found his record (0000-0002-4376-7178), which carries the doctorate, earlier degrees (Leeds BA 1981, UWIST MSc 1983) and the Cardiff Business School employment. A second ORCID record (0000-0002-0409-2841, Distinguished Research Professor, School of Engineering) belongs to a different Peter Wells. Verifier: the doctorate is in city and regional planning, and the institution is written under its former name.",
       "sources": [
         {
+          "url": "https://orcid.org/0000-0002-4376-7178",
+          "title": "ORCID record 0000-0002-4376-7178 (public API)",
+          "notes": "Education: PhD City and Regional Planning, University of Wales College of Cardiff, 1984-10 to 1989-06. Employment: Professor of Business and Sustainability, Cardiff Business School, Cardiff University, from 1989-10."
+        },
+        {
+          "url": "https://orcid.org/0000-0002-0409-2841",
+          "title": "ORCID record 0000-0002-0409-2841",
+          "notes": "A different Peter Wells (School of Engineering); excluded."
+        },
+        {
           "url": "https://www.cardiff.ac.uk/people/view/peter-wells",
-          "title": "Cardiff University staff profile (attempted)",
-          "notes": "HTTP 403; no content."
+          "title": "Peter Wells - Cardiff University profile",
+          "notes": "Cloudflare verification (403) to curl; not read."
+        },
+        {
+          "url": "https://cfsd.org.uk/site-pdfs/si11/speaker-pdf/Speaker%20Biog-Photo%20Peter%20Wells.pdf",
+          "title": "Speaker biography: Dr Peter Wells (Sustainable Innovation 2011, CfSD)",
+          "notes": "Opened by the verifier (PDF, pdftotext): Reader at Cardiff Business School; since joining Cardiff Business School in 1990 his work has been research and writing on the automotive industry. No earlier post named."
         }
       ],
+      "phdInstitutionResolution": "ORCID names the awarding body as the University of Wales College of Cardiff, the 1988-1999 name of the institution now called Cardiff University (the OM List's value). It is the same institution under its former name; the written form is kept for the integrator to map.",
       "source": "omlist"
     },
     {
@@ -41517,13 +41884,23 @@
       "facultyId": "omlist-6ed6243b4cef06f6",
       "name": "Danni Zhang",
       "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "Cardiff profile returned access denied; no first-placement chronology obtained.",
+      "checkedAt": "2026-10-17",
+      "reason": "Second pass: the Cardiff profile is still behind Cloudflare for curl with a browser user-agent, r.jina.ai and a headless browser, and the Southampton ePrints repository (for the 2021 thesis) answers a headless browser with a BotStopper 'Access Denied' page. Her ORCID record (0000-0002-2729-9562, linked from the directory) lists Lecturer, Logistics and Operations Management, Cardiff University, from 2023-09 and an untitled University of Southampton employment entry with no start date, ending 2024-08. The Southampton post (title, start date, and whether it began after the 2021 degree) is therefore undocumented, and the Cardiff lectureship two years after the imported degree year cannot be assumed to be the first job. Earlier review (2026-10-16): the Cardiff profile returned access denied.",
       "sources": [
         {
+          "url": "https://orcid.org/0000-0002-2729-9562",
+          "title": "ORCID record 0000-0002-2729-9562 (public API)",
+          "notes": "Employment: Lecturer, Cardiff University, from 2023-09; University of Southampton, no title or start date, ending 2024-08. No education."
+        },
+        {
+          "url": "https://eprints.soton.ac.uk/cgi/search/simple?q=%22Danni+Zhang%22+thesis&_action_search=Search",
+          "title": "Southampton ePrints search",
+          "notes": "BotStopper 'Access Denied' (403) to a headless browser; not read."
+        },
+        {
           "url": "https://profiles.cardiff.ac.uk/staff/zhangd38",
-          "title": "Danni Zhang public academic profile",
-          "notes": "Cardiff profile returned access denied; no first-placement chronology obtained."
+          "title": "Danni Zhang - Cardiff University profile",
+          "notes": "Cloudflare verification (403) to curl, r.jina.ai and headless browser."
         }
       ],
       "source": "omlist"
@@ -43489,32 +43866,27 @@
       "name": "Awi Federgruen",
       "status": "unresolved",
       "checkedAt": "2026-10-17",
-      "reason": "The University of Amsterdam Album Academicum records his doctorate (promotie) on 17 May 1978, thesis 'Markovian control problems: functional equations and algorithms'. His MIT ORC seminar biography says he joined Columbia in 1979 after the Amsterdam doctorate, after being a Research Fellow at the Mathematical Center in Amsterdam and a faculty member at the University of Rochester Graduate School of Management, but gives no dates or order for those two posts (a web-search summary of Wikipedia, discovery only and not opened, places the Mathematical Centre fellowship in the early 1970s, i.e. before the degree). The Columbia profile refuses automated requests and no CV was read, so whether the Rochester post was his first new post-PhD job, and its title and start year, are undocumented.",
+      "reason": "Second pass: the Columbia Business School profile still returns a Cloudflare security check (403) to plain curl with a browser user-agent, to r.jina.ai and to a headless browser, so no Columbia CV was read. The MIT ORC seminar biographies (2002 and 2010, opened) say he joined Columbia in 1979 after the Amsterdam doctorate and after being a Research Fellow at the Mathematical Centre in Amsterdam and a faculty member at the University of Rochester Graduate School of Management, without dates or order. One web search found no CV with dates for the Rochester post. The Amsterdam Album Academicum dates the doctorate 17 May 1978, so the Rochester post (if it began after May 1978) or a continuing Mathematical Centre fellowship could be the first job; neither is dated in any source read. Earlier review (2026-10-16): the Album Academicum gave the 17 May 1978 doctorate and the MIT bio the undated Mathematical Centre and Rochester posts before Columbia in 1979; Columbia refused automated requests.",
       "sources": [
         {
-          "url": "https://omlist.edutool.org/schools/columbia-university/faculty/awi-federgruen.html",
-          "title": "OM List profile - Awi Federgruen",
-          "notes": "Imported directory profile; opened for links to the school page, ORCID and CV only. Not evidence of a first job."
-        },
-        {
-          "url": "https://albumacademicum.uva.nl/en/id/id050948",
-          "title": "UvA Album Academicum - A. Federgroen",
-          "notes": "Promotie, Faculteit der Wiskunde en Natuurwetenschappen, 17 May 1978; supervisors Tijms and de Leve."
+          "url": "https://web.mit.edu/orc/www/archive/seminars/2010f/bio/Federgruen_bio.html",
+          "title": "MIT ORC seminar biography, Fall 2010",
+          "notes": "Joined Columbia in 1979 after the Amsterdam doctorate, after being a Research Fellow at the Mathematical Centre and a faculty member at Rochester's Graduate School of Management; no dates."
         },
         {
           "url": "https://web.mit.edu/orc/www/archive/seminars/2002sp/bios/Federgruen.html",
-          "title": "MIT ORC seminar biographical sketch - Awi Federgruen (2002)",
-          "notes": "Joined Columbia in 1979 after the Amsterdam doctorate and after being a Research Fellow at the Mathematical Center and a faculty member at Rochester; no dates for the latter two."
+          "title": "MIT ORC seminar biography, Spring 2002",
+          "notes": "Same wording; no dates."
+        },
+        {
+          "url": "https://albumacademicum.uva.nl/en/id/id050948",
+          "title": "University of Amsterdam Album Academicum",
+          "notes": "Earlier review: doctorate 17 May 1978, thesis on Markovian control problems."
         },
         {
           "url": "https://business.columbia.edu/faculty/people/awi-federgruen",
-          "title": "Columbia Business School - Awi Federgruen",
-          "notes": "Refused automated requests (HTTP 403 Cloudflare challenge) through the fetch tool, curl and a reader proxy; not read."
-        },
-        {
-          "url": "https://orcid.org/0000-0002-7584-4721",
-          "title": "ORCID record - Awi Federgruen",
-          "notes": "Record has no employment or education entries. Read through the ORCID public API (pub.orcid.org/v3.0/0000-0002-7584-4721/activities)."
+          "title": "Awi Federgruen - Columbia Business School profile",
+          "notes": "Cloudflare security check (403) to curl, r.jina.ai and headless browser."
         }
       ],
       "source": "omlist"
@@ -43954,18 +44326,38 @@
       "facultyId": "omlist-8305b7f9737b0c41",
       "name": "Garrett van Ryzin",
       "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "The Columbia profile was access-denied; Amazon author page describes current affiliation without doctoral and earliest employment chronology.",
+      "checkedAt": "2026-10-17",
+      "reason": "Second pass: the Columbia Business School profile and CV still return a Cloudflare security check to curl, r.jina.ai and a headless browser. The MIT ORC seminar biographies (1999, 2003, 2014; opened) confirm the MIT ORC PhD in 1991 and describe him as a Columbia professor, the Cornell Chronicle profile says only that before Cornell Tech he was on the Columbia faculty, the MIT LIDS speaker page gives the Columbia DRO chair (2010-2015) and Uber from 2015, and the Cornell Tech page has no biography. One web search found no CV. No source gives the year he joined Columbia or whether any post came between the 1991 degree and Columbia. Earlier review (2026-10-16): the Columbia profile was refused and the Amazon Science author page gave only his current affiliation.",
       "sources": [
         {
+          "url": "https://web.mit.edu/orc/www/archive/seminars/1999sp/bios/ryzin.html",
+          "title": "MIT ORC seminar biography, Spring 1999",
+          "notes": "Professor of Management at Columbia; PhD from the ORC in 1991; no appointment dates."
+        },
+        {
+          "url": "https://web.mit.edu/orc/www/archive/seminars/2014f/bio/Ryzin_bio.html",
+          "title": "MIT ORC seminar biography, Fall 2014",
+          "notes": "Paul M. Montrone Professor at Columbia; no dates."
+        },
+        {
+          "url": "https://news.cornell.edu/node/290616",
+          "title": "Cornell Chronicle faculty profile",
+          "notes": "Before joining Cornell Tech he was on the faculty of Columbia Business School; no start year."
+        },
+        {
+          "url": "https://lidssmart.lids.mit.edu/speaker/garrett-van-ryzin/",
+          "title": "MIT LIDS speaker page",
+          "notes": "DRO division chair 2010-2015; Uber from 2015; no early dates."
+        },
+        {
           "url": "https://business.columbia.edu/faculty/people/garrett-van-ryzin",
-          "title": "Garrett van Ryzin academic profile",
-          "notes": "The Columbia profile was access-denied; Amazon author page describes current affiliation without doctoral and earliest employment chronology."
+          "title": "Garrett van Ryzin - Columbia Business School profile",
+          "notes": "Cloudflare security check (403); not read."
         },
         {
           "url": "https://www.amazon.science/author/garrett-van-ryzin",
-          "title": "Garrett van Ryzin academic profile",
-          "notes": "The Columbia profile was access-denied; Amazon author page describes current affiliation without doctoral and earliest employment chronology."
+          "title": "Amazon Science author page",
+          "notes": "Current affiliation only."
         }
       ],
       "source": "omlist"
@@ -44125,14 +44517,37 @@
     {
       "facultyId": "omlist-ce70a1a287e07257",
       "name": "Richard W. Conway",
-      "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "The INFORMS biography returned an access-denied response.",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "employer": "Cornell University",
+      "position": null,
+      "placementYear": null,
+      "category": "unknown",
+      "evidenceUrl": "https://news.cornell.edu/stories/2024/03/dick-conway-architect-computer-science-cornell-dies-92",
+      "evidenceNote": "The Cornell Chronicle obituary states that he arrived at Cornell as an undergraduate in 1949 and spent the entirety of his academic and professional career there, receiving the BME in 1954 and in 1958 the first PhD from what is now ORIE, and that he was a Cornell professor for roughly 40 years before retiring in 1999. The INFORMS biographical profile likewise says he spent his entire career with Cornell and that after the 1958 PhD he took on his first PhD student; a 1961 RAND stint was a sabbatical. Cornell is therefore his first and only post-PhD employer; the starting title and year are not stated. Verifier (confirmed): his own recollections (Dick Conway Recollections, 1951-2000, linked from the INFORMS profile) describe teaching the first IBM 650 course in 1956 as 'a new graduate student' in his second year of graduate study, so his pre-degree teaching was graduate-student teaching, not a regular post held through the doctorate; the post-PhD Cornell appointment is the first new job, title and year unstated.",
+      "phdYearVerified": 1958,
+      "phdInstitutionVerified": "Cornell University",
+      "reason": "Second pass: the INFORMS biographical profile, refused earlier, now answers plain curl with a browser user-agent, and the Cornell Chronicle obituary it cites was opened. Verifier note: neither source says whether he already held a Cornell instructorship while a doctoral student (simulation work from 1956-57); if he did and simply continued, the overlap rule would make this the employer at completion rather than a new post. The faculty career of about 40 years ending in 1999 is consistent with an appointment around the 1958 degree, but no start year is recorded.",
       "sources": [
         {
+          "url": "https://news.cornell.edu/stories/2024/03/dick-conway-architect-computer-science-cornell-dies-92",
+          "title": "Dick Conway, architect of computer science at Cornell, dies at 92 (Cornell Chronicle, March 2024)",
+          "notes": "Entire academic and professional career at Cornell; BME 1954, PhD 1958; professor about 40 years; retired 1999."
+        },
+        {
           "url": "https://www.informs.org/Explore/History-of-O.R.-Excellence/Biographical-Profiles/Conway-Richard-W",
-          "title": "Richard W. Conway academic profile",
-          "notes": "The INFORMS biography returned an access-denied response."
+          "title": "INFORMS biographical profile - Richard W. Conway",
+          "notes": "Read with curl (browser user-agent). Educated at and spent his entire career with Cornell; PhD 1958 under Andy Schultz; 1961 sabbatical at RAND."
+        },
+        {
+          "url": "https://ecommons.cornell.edu/items/f93b3fa1-e986-4639-8a20-49414ca37d6d",
+          "title": "A Conversation with Richard W. Conway (Cornell eCommons)",
+          "notes": "Interview record; summary gives the 1958 PhD and CS department founding; video only, not transcribed."
+        },
+        {
+          "url": "https://www.informs.org/content/download/368340/3847744/file/Dick%20Conway%20Recollections,%201951%20-%202000.pdf",
+          "title": "Dick Conway Recollections, 1951-2000 (prepared by John Rudan, 2002; INFORMS copy)",
+          "notes": "Opened by the verifier (PDF, pdftotext): in 1956 he was in his second year of graduate study and taught the new IBM 650 course as a graduate student; finished the PhD thesis (machine-shop scheduling simulation) on the 650; no appointment dates."
         }
       ],
       "source": "omlist"
@@ -44263,18 +44678,18 @@
       "facultyId": "omlist-cb03c472e8ab4d5b",
       "name": "Martin K. Starr",
       "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "INFORMS history page (opened) confirms BS MIT and MS and PhD in Operations Research / Management Science from Columbia and a long Columbia professorship (32 years), but gives no PhD year or date of first position. A search-result excerpt of an INFORMS memorial (fetch returned HTTP 403) mentions work as a method engineer before the PhD. The imported 1953 PhD year and first post-PhD job are unverified. He died in January 2025.",
+      "checkedAt": "2026-10-17",
+      "reason": "Second pass: the INFORMS ORMS Today memorial (pubsonline.informs.org) still returns a Cloudflare security check to the r.jina.ai reader and to a headless browser. The INFORMS presidential portrait page (opened with curl) gives BS MIT and MS and PhD (Operations Research, Management Science) from Columbia, his Columbia professorship, vice-deanship and Rollins College post, but no PhD year or date of any first position. No CV, obituary with dates or dissertation record was read, so the 1953 degree and the first post-PhD job (Columbia or otherwise, and any industrial post) remain unverified. Earlier review (2026-10-16): the INFORMS history page gave the degrees and long Columbia professorship without dates, and a search excerpt of the memorial mentioned work as a methods engineer before the PhD.",
       "sources": [
         {
           "url": "https://www.informs.org/Explore/History-of-O.R.-Excellence/Miser-Harris-Presidential-Portrait-Gallery/Martin-K.-Starr",
-          "title": "INFORMS presidential portrait, Martin K. Starr",
-          "notes": "Opened. Columbia MS/PhD; Columbia professor emeritus; no dates for early career."
+          "title": "INFORMS Presidential Portrait Gallery - Martin K. Starr",
+          "notes": "TIMS President 1974-75; BS MIT, MS and PhD Columbia; Columbia professor emeritus and vice dean; Rollins College; no dates for degrees or first post."
         },
         {
           "url": "https://pubsonline.informs.org/do/10.1287/orms.2025.01.04n/full/",
-          "title": "INFORMS OR/MS Today memorial",
-          "notes": "HTTP 403; not opened."
+          "title": "ORMS Today memorial",
+          "notes": "Cloudflare security check (403) to r.jina.ai and headless browser; not read."
         }
       ],
       "source": "omlist"
