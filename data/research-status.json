@@ -4,24 +4,24 @@
     "updatedAt": "2026-10-17",
     "total": 3161,
     "counts": {
-      "unresolved": 1356,
-      "verified": 1801,
+      "unresolved": 1347,
+      "verified": 1810,
       "not-yet-completed-phd": 4
     },
     "bySource": {
       "omlist": {
         "total": 2149,
         "counts": {
-          "unresolved": 870,
-          "verified": 1278,
+          "unresolved": 863,
+          "verified": 1285,
           "not-yet-completed-phd": 1
         }
       },
       "faculty-page": {
         "total": 1012,
         "counts": {
-          "verified": 523,
-          "unresolved": 486,
+          "verified": 525,
+          "unresolved": 484,
           "not-yet-completed-phd": 3
         }
       }
@@ -1313,24 +1313,34 @@
     {
       "facultyId": "omlist-a6d0d4c67ea497c0",
       "name": "Mehmet Altug",
-      "status": "unresolved",
-      "checkedAt": "2026-10-16",
+      "status": "verified",
+      "employer": "The George Washington University",
+      "position": "Assistant Professor",
+      "placementYear": 2009,
+      "category": "tenure-track",
+      "evidenceUrl": "https://orcid.org/0000-0002-1012-4598",
+      "evidenceNote": "His self-maintained ORCID record gives Columbia Business School PhD 2003-08-16 to 2009-05-14, then Assistant Professor, Decision Sciences, George Washington University, 2009-08-01 to 2019-06-01, then Associate Professor at George Mason from 2019-08-25. The GMU profile confirms that before GMU he was on the faculty of GWU's Decision Sciences department, and that he worked at i2 Technologies before starting the PhD. A plain assistant professorship at a US business school is recorded as tenure-track by the project convention.",
+      "phdYearVerified": 2009,
+      "phdInstitutionVerified": "Columbia University",
+      "reason": "Second pass: ORCID supplies the dated chronology that the placement table lacked (degree May 2009, GWU assistant professorship from August 2009); the GMU profile places the GWU post before GMU and i2 Technologies before the PhD. The Columbia DRO placement page now answers 403 to curl.",
       "sources": [
         {
+          "url": "https://orcid.org/0000-0002-1012-4598",
+          "title": "ORCID record 0000-0002-1012-4598 (public API)",
+          "notes": "Education: Columbia University Business School, PhD, 2003-08-16 to 2009-05-14. Employment: GWU Decision Sciences Assistant Professor 2009-08-01 to 2019-06-01; GMU ISOM Associate Professor from 2019-08-25."
+        },
+        {
+          "url": "https://business.gmu.edu/profiles/maltug",
+          "title": "Mehmet Altug - GMU Costello College of Business",
+          "notes": "Read with plain curl: prior faculty member of GWU's Decision Sciences department; PhD Decision, Risk and Operations, Columbia; i2 Technologies before the PhD."
+        },
+        {
           "url": "https://business.columbia.edu/faculty/divisions/dro/phd",
-          "title": "Columbia DRO — PhD placements",
-          "notes": "University doctoral placement list."
+          "title": "Columbia DRO - PhD placements",
+          "notes": "Earlier review: placement listed; now 403 to curl."
         }
       ],
-      "reason": "Placement-table audit: the source reports a placement but does not explicitly establish first employment or exclude an earlier postdoc. Individual CV chronology is required.",
-      "reportedAcademicPlacement": {
-        "employer": "George Washington University",
-        "position": null,
-        "placementYear": null,
-        "phdYearVerified": 2009,
-        "evidenceUrl": "https://business.columbia.edu/faculty/divisions/dro/phd",
-        "evidenceNote": "Listed in the 2009 doctoral cohort with this placement; position and employment start date are not stated."
-      },
+      "checkedAt": "2026-10-17",
       "source": "omlist"
     },
     {
@@ -5223,15 +5233,25 @@
       "facultyId": "omlist-11af46af700bf3eb",
       "name": "Luiz Artur Ledur Brito",
       "status": "unresolved",
-      "checkedAt": "2026-10-16",
+      "reason": "Second pass: The full Lattes CV (lattes.cnpq.br, which would date each post) now opens only behind an image 'Codigo de seguranca' check for plain curl and the reader proxy, and the Escavador mirror answers 403 with a Cloudflare check, so only the public Lattes summary page (preview.do) could be read. That summary (certified 30/01/2026) and the FGV profile both give the FGV EAESP doctorate in 2005, chemical engineering at UFRGS (1976), the FGV EAESP directorship since February 2015 and earlier management posts at Sanbra, Santista Alimentos and Dixie Toga 'before the academic activity', but neither dates his first FGV appointment or says whether it began before or after the 2005 doctorate. The first post-PhD job is not established. Earlier review (2026-10-16): the FGV biography dated the doctorate 2005 but not the private-sector career or the first academic appointment.",
       "sources": [
         {
           "url": "https://eaesp.fgv.br/en/people/luiz-artur-ledur-brito",
-          "title": "Luiz Artur Ledur Brito official profile",
-          "notes": "FGV biography dates doctorate to 2005 but does not date the earlier private-sector management career or initial academic appointment."
+          "title": "Luiz Artur Ledur Brito - FGV EAESP profile",
+          "notes": "Re-read with curl: doctorate FGV EAESP 2005; director since February 2015; earlier private-sector posts undated; links Lattes CV 1414078365813012."
+        },
+        {
+          "url": "http://buscatextual.cnpq.br/buscatextual/preview.do?metodo=apresentar&id=K4778817Y2",
+          "title": "Lattes CV summary (CNPq) - Luiz Artur Ledur Brito",
+          "notes": "Public summary: doctorate EAESP-FGV (2005); full professor; director since February 2015; Sanbra, Santista Alimentos, Dixie Toga before academia; no appointment dates."
+        },
+        {
+          "url": "http://lattes.cnpq.br/1414078365813012",
+          "title": "Lattes CV (full)",
+          "notes": "Not read: security-code (captcha) page to curl and the reader proxy."
         }
       ],
-      "reason": "FGV biography dates doctorate to 2005 but does not date the earlier private-sector management career or initial academic appointment.",
+      "checkedAt": "2026-10-17",
       "source": "omlist"
     },
     {
@@ -8732,24 +8752,39 @@
     {
       "facultyId": "omlist-f9de6a91c23d40be",
       "name": "Shiliang Cui",
-      "status": "unresolved",
-      "checkedAt": "2026-10-16",
+      "status": "verified",
+      "employer": "Georgetown University (McDonough School of Business)",
+      "position": "Assistant Professor of Operations and Information Management",
+      "placementYear": 2014,
+      "category": "tenure-track",
+      "evidenceUrl": "https://www.metromba.com/2014/09/mcdonough-hires-eight-news-faculty-members/",
+      "evidenceNote": "A MetroMBA news item dated 5 September 2014 reports that McDonough hired eight new full-time faculty 'last month', listing Shiliang (John) Cui as assistant professor of operations and information management, who 'most recently was a lecturer for the Wharton Doctoral Programs' (a teaching role during his doctorate) and earned his PhD at Wharton. Wharton OID's post-Wharton placement list gives Georgetown University for its 2014 graduate, and his Georgetown profile dates the Wharton PhD to 2014. A plain assistant professorship at a US business school is recorded as tenure-track by the project convention.",
+      "phdYearVerified": 2014,
+      "phdInstitutionVerified": "University of Pennsylvania",
+      "reason": "Second pass: the official Wharton placement list and a news report written after the August 2014 hire agree that his first post after the 2014 Wharton PhD was the Georgetown McDonough assistant professorship. The Georgetown profile and GU360 page give the 2014 PhD but no appointment history; his Google site has no CV. MetroMBA is a secondary news source written after the job began, not a prospective announcement.",
       "sources": [
         {
+          "url": "https://www.metromba.com/2014/09/mcdonough-hires-eight-news-faculty-members/",
+          "title": "MetroMBA - McDonough Hires Eight News Faculty Members (5 September 2014)",
+          "notes": "Read with plain curl (found through one web search): Cui hired in August 2014 as assistant professor of operations and information management; previously a lecturer for the Wharton Doctoral Programs; Wharton PhD."
+        },
+        {
           "url": "https://oid.wharton.upenn.edu/programs/phd/post-wharton/",
-          "title": "Wharton OID — Post-Wharton placements",
-          "notes": "University doctoral placement list."
+          "title": "Wharton OID - Post-Wharton placements",
+          "notes": "Re-read with curl: 2014 - Shiliang Cui, Georgetown University."
+        },
+        {
+          "url": "https://msb.georgetown.edu/profiles/shiliang-cui/",
+          "title": "Shiliang Cui - Georgetown McDonough profile",
+          "notes": "Professor of Operations and Analytics; received his Ph.D. from Wharton in 2014."
+        },
+        {
+          "url": "https://gufaculty360.georgetown.edu/s/contact/00336000014SsRbAAK",
+          "title": "Shiliang Cui - Georgetown GU360 profile",
+          "notes": "Rendered in a headless browser: Professor; Education: University of Pennsylvania, Ph.D., Operations & Information Mgmt; no appointment history."
         }
       ],
-      "reason": "Placement-table audit: the source reports a placement but does not explicitly establish first employment or exclude an earlier postdoc. Individual CV chronology is required.",
-      "reportedAcademicPlacement": {
-        "employer": "Georgetown University",
-        "position": null,
-        "placementYear": null,
-        "phdYearVerified": 2014,
-        "evidenceUrl": "https://oid.wharton.upenn.edu/programs/phd/post-wharton/",
-        "evidenceNote": "Listed in the 2014 doctoral cohort with this placement; position and employment start date are not stated."
-      },
+      "checkedAt": "2026-10-17",
       "source": "omlist"
     },
     {
@@ -9006,15 +9041,20 @@
       "facultyId": "omlist-f16abfc135e91a3a",
       "name": "Sidhartha Das",
       "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "The George Mason biography lists degrees and research without doctoral completion or initial appointment dates.",
+      "reason": "Second pass: the GMU profile (plain curl) still gives only his PhD and MBA from the University of Houston (no year), engineering degrees, teaching, consulting for Perot Systems, SWIFT, INOVA and USGS, and recent publications; it links no CV. His old GMU personal page (mason.gmu.edu/~sdas) is a course-links page with no CV (cv.pdf 404). Six ORCID records carry his name; none has GMU or Houston affiliations. No dated source for his first post after the Houston doctorate was found. Earlier review (2026-10-16): the GMU biography gave degrees and research without a degree or appointment date.",
       "sources": [
         {
           "url": "https://business.gmu.edu/profiles/sdas",
-          "title": "Sidhartha Das academic profile",
-          "notes": "The George Mason biography lists degrees and research without doctoral completion or initial appointment dates."
+          "title": "Sidhartha Das - GMU Costello College of Business",
+          "notes": "Re-read with curl: PhD and MBA, University of Houston (no year); consulting and teaching; no dates."
+        },
+        {
+          "url": "https://mason.gmu.edu/~sdas/",
+          "title": "Sidhartha Das - personal course page at GMU",
+          "notes": "Course links only; no CV."
         }
       ],
+      "checkedAt": "2026-10-17",
       "source": "omlist"
     },
     {
@@ -10539,20 +10579,30 @@
       "facultyId": "omlist-b95512501a9e4d8e",
       "name": "Cheryl Druehl",
       "status": "unresolved",
-      "checkedAt": "2026-10-16",
+      "reason": "Second pass: her ORCID record gives the Stanford GSB PhD as 1997-2003 and George Mason employment from 2008, with nothing in between. Her personal site (mason.gmu.edu/~cdruehl) says that before GMU she was an Assistant Professor at the R.H. Smith School of Business, University of Maryland, and at Stonehill College, and that she worked before the doctorate (most recently at Price Waterhouse), without dates or order. Crossref affiliations suggest Maryland first (a 2005 POMS article lists the Smith School; a January 2008 POMS article lists Stonehill College; 2013 onward lists GMU), but publication affiliations are not dated appointments. No dated CV or appointment record was found, so the Maryland post's start year and its position as first job are not documented. Earlier review (2026-10-16): GMU and personal biographies named the Stanford doctorate and Maryland and Stonehill roles without dates.",
       "sources": [
         {
-          "url": "https://business.gmu.edu/profiles/cdruehl",
-          "title": "Cheryl Druehl Profile",
-          "notes": "GMU and personal biographies identify Stanford doctorate and prior Maryland/Stonehill roles, but omit dates ordering first post-PhD employment."
+          "url": "https://orcid.org/0000-0002-2496-5881",
+          "title": "ORCID record 0000-0002-2496-5881 (public API)",
+          "notes": "Education: Stanford GSB PhD 1997 to 2003. Employment: George Mason University Professor from 2008."
         },
         {
-          "url": "http://mason.gmu.edu/~cdruehl/",
-          "title": "Cheryl Druehl Website",
-          "notes": "GMU and personal biographies identify Stanford doctorate and prior Maryland/Stonehill roles, but omit dates ordering first post-PhD employment."
+          "url": "https://mason.gmu.edu/~cdruehl/",
+          "title": "Cheryl Druehl - personal site",
+          "notes": "Previously Assistant Professor at the R.H. Smith School, University of Maryland, and Stonehill College; Price Waterhouse before the doctorate; no dates."
+        },
+        {
+          "url": "https://api.crossref.org/works?query.author=Cheryl+Druehl&rows=20&select=DOI,title,author,issued,container-title",
+          "title": "Crossref metadata - Druehl publications",
+          "notes": "Affiliations: Smith School, University of Maryland (POMS, 2005); Stonehill College (POMS, January 2008); George Mason (2013 onward)."
+        },
+        {
+          "url": "https://business.gmu.edu/profiles/cdruehl",
+          "title": "Cheryl Druehl - GMU profile",
+          "notes": "Earlier review: undated prior roles."
         }
       ],
-      "reason": "GMU and personal biographies identify Stanford doctorate and prior Maryland/Stonehill roles, but omit dates ordering first post-PhD employment.",
+      "checkedAt": "2026-10-17",
       "source": "omlist"
     },
     {
@@ -17023,15 +17073,15 @@
       "facultyId": "omlist-27974fd242cc5f8e",
       "name": "Paulo Sodré Hollaender",
       "status": "unresolved",
-      "checkedAt": "2026-10-16",
+      "reason": "Second pass: the FGV profile (plain curl) states a PhD in Business Administration from FGV EAESP (2023, best-thesis award), a master's from FCA UNICAMP (2019) and a Poli USP degree (2005), and says he is a professor in FGV EAESP's POI department and in FGV executive education, an MBA professor at FIAP and an undergraduate professor at the Maua Institute of Technology, all without start dates; the profile carries no Lattes link, and a full Lattes CV could not be read (image security check). Which of these teaching posts, if any, began after the 2023 doctorate is unknown. Earlier review (2026-10-16): the FGV biography dated the doctorate 2023 and listed concurrent faculty and earlier consulting and industry roles without dates.",
       "sources": [
         {
           "url": "https://eaesp.fgv.br/en/people/paulo-sodre-hollaender",
-          "title": "Paulo Sodré Hollaender Profile",
-          "notes": "FGV biography dates doctorate to 2023 and lists concurrent faculty and earlier consulting/industry roles without start and end dates, preventing first-job attribution."
+          "title": "Paulo Sodré Hollaender - FGV EAESP profile",
+          "notes": "Re-read with curl: PhD FGV EAESP 2023; current FGV, FIAP and IMT teaching posts undated; no Lattes link."
         }
       ],
-      "reason": "FGV biography dates doctorate to 2023 and lists concurrent faculty and earlier consulting/industry roles without start and end dates, preventing first-job attribution.",
+      "checkedAt": "2026-10-17",
       "source": "omlist"
     },
     {
@@ -19353,15 +19403,25 @@
       "facultyId": "omlist-7025cb721f2a3b24",
       "name": "Jose Bento Carlos Amaral Junior",
       "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "FGV biography lists doctorate without date and professional appointments without full early chronology.",
+      "reason": "Second pass: The full Lattes CV (lattes.cnpq.br, which would date each post) now opens only behind an image 'Codigo de seguranca' check for plain curl and the reader proxy, and the Escavador mirror answers 403 with a Cloudflare check, so only the public Lattes summary page (preview.do) could be read. The summary (certified 21/09/2025) gives his doctorate as 'Doutorado em Ciencias Sociais pela PUC-SP (2008)', not the FGV EAESP 2011 doctorate of the OM List import, which needs reconciling. It describes him as a non-career ('extra-carreira') FGV professor and dates only FGV Projetos roles (deputy director 01/2013 to 06/2017, executive manager since 04/2019) and later committee memberships; nothing is dated between 2008 and 2013 or identifies a first post after the doctorate. Earlier review (2026-10-16): the FGV biography listed the doctorate without a date and appointments without an early chronology.",
       "sources": [
         {
           "url": "https://eaesp.fgv.br/en/people/jose-bento-carlos-amaral-junior",
-          "title": "Jose Bento Carlos Amaral Junior public academic profile",
-          "notes": "FGV biography lists doctorate without date and professional appointments without full early chronology."
+          "title": "Jose Bento Carlos Amaral Junior - FGV EAESP profile",
+          "notes": "Re-read with curl; links Lattes CV 6784013680484210; no dated early career."
+        },
+        {
+          "url": "http://buscatextual.cnpq.br/buscatextual/preview.do?metodo=apresentar&id=K4786652D3",
+          "title": "Lattes CV summary (CNPq) - Jose Bento Carlos Amaral Junior",
+          "notes": "Doctorate in Social Sciences, PUC-SP (2008); FGV Projetos deputy director 01/2013-06/2017, executive manager since 04/2019; FGV non-career professor."
+        },
+        {
+          "url": "http://lattes.cnpq.br/6784013680484210",
+          "title": "Lattes CV (full)",
+          "notes": "Not read: security-code (captcha) page."
         }
       ],
+      "checkedAt": "2026-10-17",
       "source": "omlist"
     },
     {
@@ -20300,20 +20360,25 @@
       "facultyId": "omlist-e7607440aed2ba91",
       "name": "Janne Kettunen",
       "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "Doctorate confirmed (D.Sc. Helsinki University of Technology/Aalto, 2009) but the first post-PhD job is not established. The GWU profile (opened) lists a 2009 Dean's Research Grant from the Haskayne School of Business (Calgary) and 2008 Research Fellow at London Business School, and says he taught at several institutions since 2001, with pre-academic work at Nokia (Japan), the UK Board for Actuarial Standards and others. No dated CV was found, so whether Haskayne was a new post-PhD appointment, whether LBS or a postdoc preceded it, and the start year are unknown.",
+      "reason": "Second pass: Aaltodoc records his doctoral dissertation (monograph) 'Applications of stochastic modeling for investment decision-making under market uncertainties' (Teknillinen korkeakoulu, Systems Analysis Laboratory, issued 2009). The GWU profile (re-read) adds University of Calgary-area research grants for 2010, 2011 and 2012 (ISEEE, Natural Resources Canada, Carbon Management Canada), which point to a Haskayne (Calgary) post after the degree, but neither it nor any other source opened gives a Haskayne title or start date, and ORCID 0000-0003-0896-6005 has no entries. Whether the 2008 London Business School research fellowship ended before the degree, and whether Haskayne was a new appointment in 2009, remain undocumented. Earlier review (2026-10-16): the GWU profile gave the 2009 D.Sc., a 2009 Haskayne grant and a 2008 LBS research fellowship, without appointment dates.",
       "sources": [
         {
-          "url": "https://business.gwu.edu/node/184",
-          "title": "GWU School of Business profile, Janne Kettunen",
-          "notes": "Opened: Education (D.Sc. 2009 HUT/Aalto), distinctions incl. Haskayne 2009 grant and LBS 2008 fellow; no appointment dates."
+          "url": "https://aaltodoc.aalto.fi/server/api/core/items/5939ceb7-88a7-4b05-958d-ae6cc7695677",
+          "title": "Aaltodoc - Kettunen, Applications of stochastic modeling for investment decision-making under market uncertainties",
+          "notes": "Read through the DSpace API: doctoral dissertation (monograph), Teknillinen korkeakoulu, Systems Analysis Laboratory, issued 2009, ISBN 978-952-248-148-1."
         },
         {
-          "url": "https://sal.aalto.fi/en/personnel/janne.kettunen",
-          "title": "Aalto Systems Analysis Laboratory personnel page",
-          "notes": "Opened: current GWU title only."
+          "url": "https://business.gwu.edu/janne-kettunen",
+          "title": "Janne Kettunen - GWU School of Business",
+          "notes": "Re-read with curl: taught since 2001 at several institutions including LBS; pre-academic work at Nokia and others; research grants 2010-2012 from ISEEE, NRCan and CMC; no appointment dates."
+        },
+        {
+          "url": "https://orcid.org/0000-0003-0896-6005",
+          "title": "ORCID record 0000-0003-0896-6005",
+          "notes": "Public API: no entries."
         }
       ],
+      "checkedAt": "2026-10-17",
       "source": "omlist"
     },
     {
@@ -22911,25 +22976,25 @@
       "facultyId": "omlist-39afb1cc8a5006f4",
       "name": "Miguel Lejeune",
       "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "The GWU School of Business profile lists the 2004 ProQuest dissertation (UMI 3131759), a Rutgers Newark excellence fellowship 2000–2003, a 2007 Carnegie Mellon MBA teaching award and undated visiting positions (Carnegie Mellon, Georgetown, UC Irvine and others) but no appointment titles or start dates and no CV. The GWU blog page requires institutional login, ORCID 0000-0001-6952-7212 has no affiliations and searches found no CV. The title and dates of the post-2004 Carnegie Mellon role and the GWU start are undocumented.",
+      "reason": "Second pass: the personal site that his ORCID record lists (milejeune.org) no longer resolves; the RUTCOR alumni list (rutcor.rutgers.edu/alumni.html) does not include him, so his 2004 Rutgers doctorate was not a RUTCOR degree listed there; ORCID 0000-0001-6952-7212 still has no employment or education entries. The title and dates of his post-2004 Carnegie Mellon role and the GWU start remain undocumented. Earlier review (2026-10-16): the GWU profile listed the 2004 dissertation, a 2007 Carnegie Mellon MBA teaching award and undated visiting posts.",
       "sources": [
         {
           "url": "https://business.gwu.edu/miguel-lejeune",
-          "title": "Miguel Lejeune — GWU School of Business profile",
-          "notes": "Dissertation 2004, fellowships and awards with years, undated visiting positions; read directly (503 once) and via reader proxy."
+          "title": "Miguel Lejeune - GWU School of Business profile",
+          "notes": "Earlier review: 2004 dissertation, 2007 CMU teaching award, undated visiting positions."
         },
         {
           "url": "https://orcid.org/0000-0001-6952-7212",
-          "title": "ORCID record — Miguel Lejeune",
-          "notes": "No employment or education entries."
+          "title": "ORCID record - Miguel Lejeune",
+          "notes": "Public API: no entries; researcher URL milejeune.org (domain no longer resolves)."
         },
         {
-          "url": "https://blogs.gwu.edu/mlejeune/",
-          "title": "GWU blog personal page (attempted)",
-          "notes": "Redirects to Shibboleth login."
+          "url": "https://rutcor.rutgers.edu/alumni.html",
+          "title": "RUTCOR alumni list",
+          "notes": "Read with curl: 93 alumni with advisers and dates; Lejeune not listed."
         }
       ],
+      "checkedAt": "2026-10-17",
       "source": "omlist"
     },
     {
@@ -27922,15 +27987,25 @@
       "facultyId": "omlist-56576499ab9c402e",
       "name": "Priscila Laczynski de Souza Miguel",
       "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "FGV biography describes doctorate and industry career but lacks dated chronology establishing first postdoctoral job.",
+      "reason": "Second pass: The full Lattes CV (lattes.cnpq.br, which would date each post) now opens only behind an image 'Codigo de seguranca' check for plain curl and the reader proxy, and the Escavador mirror answers 403 with a Cloudflare check, so only the public Lattes summary page (preview.do) could be read. The summary (certified 07/10/2026) and the FGV profile give a chemical engineering degree (Unicamp, 1995), a master's and doctorate at FGV EAESP (undated in both), a postdoctoral stay at UFSCar's production engineering department (undated), ten years in logistics at Procter & Gamble, Nortel Networks and Agfa, FGV-CELog coordination from May 2015 to September 2020 and assistant editorship of JOSCM in 2008 and 2011-2013. Neither dates the doctorate or her first FGV appointment, and the UFSCar postdoc may have been held while she was already at FGV, so the first post-PhD job cannot be ordered. Earlier review (2026-10-16): the FGV biography described the doctorate and industry career without a dated chronology.",
       "sources": [
         {
           "url": "https://eaesp.fgv.br/en/people/priscila-laczynski-souza-miguel",
-          "title": "Priscila Laczynski de Souza Miguel public academic profile",
-          "notes": "FGV biography describes doctorate and industry career but lacks dated chronology establishing first postdoctoral job."
+          "title": "Priscila Laczynski de Souza Miguel - FGV EAESP profile",
+          "notes": "Re-read with curl; FGVcelog coordinator since 2015; undated doctorate and industry career; links Lattes CV 6364115193923610."
+        },
+        {
+          "url": "http://buscatextual.cnpq.br/buscatextual/preview.do?metodo=apresentar&id=K4201316Z3",
+          "title": "Lattes CV summary (CNPq) - Priscila Laczynski de Souza Miguel",
+          "notes": "Undated FGV EAESP master's and doctorate; UFSCar postdoc (undated); FGV-CELog coordinator May 2015 to September 2020."
+        },
+        {
+          "url": "http://lattes.cnpq.br/6364115193923610",
+          "title": "Lattes CV (full)",
+          "notes": "Not read: security-code (captcha) page."
         }
       ],
+      "checkedAt": "2026-10-17",
       "source": "omlist"
     },
     {
@@ -29998,15 +30073,25 @@
       "facultyId": "omlist-bbed3a825496e295",
       "name": "Bruna Suzanne Aiello Tsu Nishikawa",
       "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "The FGV profile describes dissertation and research but lacks doctoral completion and employment chronology.",
+      "reason": "Second pass: The full Lattes CV (lattes.cnpq.br, which would date each post) now opens only behind an image 'Codigo de seguranca' check for plain curl and the reader proxy, and the Escavador mirror answers 403 with a Cloudflare check, so only the public Lattes summary page (preview.do) could be read. The summary (certified 21/04/2026) gives a doctorate in business administration from FGV EAESP (2022), says she led the Student Services area of FGV EAESP from 2022 to 2025 and now coordinates the undergraduate business programme, and describes more than 25 years in professional-services firms and NGOs, 'most recently' in education. The Student Services post is a lead, but its start month relative to the 2022 degree is not given, and the summary does not say whether she already worked at FGV EAESP or elsewhere in education before or during the doctorate, so it cannot yet be recorded as the first new post-PhD job. Earlier review (2026-10-16): the FGV profile described the dissertation and research without a completion date or employment chronology.",
       "sources": [
         {
           "url": "https://eaesp.fgv.br/en/people/bruna-suzanne-aiello-tsu-nishikawa",
-          "title": "Bruna Suzanne Aiello Tsu Nishikawa academic profile",
-          "notes": "The FGV profile describes dissertation and research but lacks doctoral completion and employment chronology."
+          "title": "Bruna Suzanne Aiello Tsu Nishikawa - FGV EAESP profile",
+          "notes": "Re-read with curl; links Lattes CV 1207573887398754."
+        },
+        {
+          "url": "http://buscatextual.cnpq.br/buscatextual/preview.do?metodo=apresentar&id=K4252550Y7",
+          "title": "Lattes CV summary (CNPq) - Bruna Suzanne Aiello Tsu Nishikawa",
+          "notes": "Doctorate FGV EAESP (2022); led FGV EAESP Student Services 2022 to 2025; now coordinates the undergraduate business programme; earlier professional-services and NGO career undated."
+        },
+        {
+          "url": "http://lattes.cnpq.br/1207573887398754",
+          "title": "Lattes CV (full)",
+          "notes": "Not read: security-code (captcha) page."
         }
       ],
+      "checkedAt": "2026-10-17",
       "source": "omlist"
     },
     {
@@ -31545,15 +31630,25 @@
       "facultyId": "omlist-321a639170c643f2",
       "name": "Leandro Alves Patah",
       "status": "unresolved",
-      "checkedAt": "2026-10-16",
+      "reason": "Second pass: The full Lattes CV (lattes.cnpq.br, which would date each post) now opens only behind an image 'Codigo de seguranca' check for plain curl and the reader proxy, and the Escavador mirror answers 403 with a Cloudflare check, so only the public Lattes summary page (preview.do) could be read. The summary (certified 25/04/2026) and the FGV profile list a Wharton postdoctorate, the Poli-USP doctorate and master's, a Harvard sustainability master's, FGV EAESP teaching and the FGV PMO and FGVcelog roles without dates; the older FGV profile text says he has taught in UNINOVE's professional master's and doctoral programmes since 2012 and supervises at Poli-USP. Neither source dates the doctorate (2010 only in the OM List import) or orders the Wharton postdoc and the first teaching or industry post after it. Earlier review (2026-10-16): the FGV biography mentioned the Wharton postdoc, USP doctorate, industry work and several academic posts without a dated sequence.",
       "sources": [
         {
           "url": "https://eaesp.fgv.br/en/people/leandro-alves-patah",
-          "title": "Leandro Alves Patah Profile",
-          "notes": "FGV biography mentions Wharton postdoctoral study, USP doctorate, industry employment and several academic appointments without a dated sequence."
+          "title": "Leandro Alves Patah - FGV EAESP profile",
+          "notes": "Re-read with curl: Wharton post-doctorate, Poli-USP doctorate; UNINOVE teaching since 2012; links Lattes CV 9630816378078767."
+        },
+        {
+          "url": "http://buscatextual.cnpq.br/buscatextual/preview.do?metodo=apresentar&id=K4772948A8",
+          "title": "Lattes CV summary (CNPq) - Leandro Alves Patah",
+          "notes": "Undated Wharton postdoc, USP doctorate, FGV EAESP professor, FGV PMO and FGVcelog roles."
+        },
+        {
+          "url": "http://lattes.cnpq.br/9630816378078767",
+          "title": "Lattes CV (full)",
+          "notes": "Not read: security-code (captcha) page."
         }
       ],
-      "reason": "FGV biography mentions Wharton postdoctoral study, USP doctorate, industry employment and several academic appointments without a dated sequence.",
+      "checkedAt": "2026-10-17",
       "source": "omlist"
     },
     {
@@ -32018,15 +32113,25 @@
       "facultyId": "omlist-9efda5d8a25c18a5",
       "name": "Susana Carla Farias Pereira",
       "status": "unresolved",
-      "checkedAt": "2026-10-16",
+      "reason": "Second pass: The full Lattes CV (lattes.cnpq.br, which would date each post) now opens only behind an image 'Codigo de seguranca' check for plain curl and the reader proxy, and the Escavador mirror answers 403 with a Cloudflare check, so only the public Lattes summary page (preview.do) could be read. The summary (certified 16/09/2026) and the FGV profile give the FGV doctorate (undated), a Birmingham master's, a visiting post at George Washington University (undated), a CNPq productivity fellowship since 2021 and current FGV roles; nothing dates her first FGV appointment, the GWU visit or the consulting career relative to the doctorate (2003 only in the OM List import). Earlier review (2026-10-16): the FGV biography gave the doctorate, the visiting scholarship and 15 years of consulting without dates.",
       "sources": [
         {
           "url": "https://eaesp.fgv.br/en/people/susana-carla-f-pereira",
-          "title": "Susana Carla Farias Pereira Profile",
-          "notes": "FGV biography identifies its doctorate, visiting scholarship and 15 years consulting, without dates needed to order first post-PhD employment."
+          "title": "Susana Carla Farias Pereira - FGV EAESP profile",
+          "notes": "Re-read with curl: undated FGV PhD and GWU visiting scholarship; links Lattes CV 4071795741573215."
+        },
+        {
+          "url": "http://buscatextual.cnpq.br/buscatextual/preview.do?metodo=apresentar&id=K4709252U8",
+          "title": "Lattes CV summary (CNPq) - Susana Carla Farias Pereira",
+          "notes": "Full professor FGV EAESP; FGV doctorate and GWU visiting post undated."
+        },
+        {
+          "url": "http://lattes.cnpq.br/4071795741573215",
+          "title": "Lattes CV (full)",
+          "notes": "Not read: security-code (captcha) page."
         }
       ],
-      "reason": "FGV biography identifies its doctorate, visiting scholarship and 15 years consulting, without dates needed to order first post-PhD employment.",
+      "checkedAt": "2026-10-17",
       "source": "omlist"
     },
     {
@@ -32570,25 +32675,35 @@
       "facultyId": "omlist-fe1fd1b3f6eea4ff",
       "name": "Morteza Pourakbar",
       "status": "unresolved",
-      "checkedAt": "2026-10-17",
-      "reason": "The RSM profile gives only his current post (Associate Professor, Technology and Operations Management) and lists a 2011 Erasmus University Rotterdam doctoral thesis ('End-of-Life Inventory Decisions of Service Parts') among his publications; it has no career history or CV. The ORCID record has only an undated Erasmus entry. Whether he held a postdoc, an assistant professorship elsewhere or went straight to an RSM post after 2011 is undocumented.",
+      "reason": "Second pass: the RePub record of the doctoral thesis 'End-of-Life Inventory Decisions of Service Parts' (ERIM Ph.D. Series, promotor R. Dekker) dates it 2011-11-29, and the thesis PDF's Curriculum Vitae gives only his education (BS Sharif 2002, MS Amirkabir 2005, PhD programme at Erasmus School of Economics from November 2006) and says nothing about a post after the defence. Crossref metadata for his 2014 POMS article lists him at Rotterdam School of Management, but an author affiliation gives no title or start date. The ORCID public API still shows only an undated Associate Professor entry at Erasmus (ERIM). The ERIM defence-event page now returns 404, EUR Pure is behind a Cloudflare check (plain curl 403; reader proxy and headless browser stop at 'Just a moment...'), and the Wayback Machine refused connections (direct reset; reader proxy blocked). Whether he went straight to an RSM post, and under what title and in which year, is still undocumented. Earlier review (2026-10-17): the RSM profile and ORCID gave only his current Erasmus associate professorship and the 2011 thesis, with no career history.",
       "sources": [
         {
-          "url": "https://omlist.edutool.org/schools/erasmus-university-rotterdam/faculty/morteza-pourakbar.html",
-          "title": "OM List profile - Morteza Pourakbar",
-          "notes": "Imported directory profile; opened for links to the school page, ORCID and CV only. Not evidence of a first job."
+          "url": "https://repub.eur.nl/pub/30584",
+          "title": "RePub - M. Pourakbar, End-of-Life Inventory Decisions of Service Parts (dissertation)",
+          "notes": "Read with plain curl. Dissertation dated 2011-11-29, ERIM Ph.D. Series, promotor R. Dekker, ISBN 978-90-5892-297-7."
+        },
+        {
+          "url": "https://repub.eur.nl/pub/30584/Erim%20Morteza%20Pourakbar.pdf",
+          "title": "Thesis PDF - Curriculum Vitae page",
+          "notes": "Downloaded; CV covers education only and the November 2006 start of the PhD programme at Erasmus School of Economics; no post-defence position."
         },
         {
           "url": "https://www.rsm.nl/people/morteza-pourakbar/",
           "title": "RSM - Morteza Pourakbar",
-          "notes": "Current title only; publications include a 2011 Erasmus doctoral thesis; no positions or CV."
+          "notes": "Re-read with curl: current title only; publication list includes the 2011 doctoral thesis; no career history."
         },
         {
           "url": "https://orcid.org/0000-0002-7835-1930",
-          "title": "ORCID record - Morteza Pourakbar",
-          "notes": "Only an undated Associate Professor, Erasmus University Rotterdam (ERIM) entry. Read through the ORCID public API (pub.orcid.org/v3.0/0000-0002-7835-1930/activities)."
+          "title": "ORCID record 0000-0002-7835-1930 (public API)",
+          "notes": "Re-read: one undated employment entry, Associate Professor, Erasmus University Rotterdam (ERIM)."
+        },
+        {
+          "url": "https://api.crossref.org/works/10.1111/poms.12176",
+          "title": "Crossref metadata - Pourakbar, van der Laan and Dekker (2014), POMS 23(9)",
+          "notes": "Author affiliation Rotterdam School of Management, Erasmus University; no title or dates."
         }
       ],
+      "checkedAt": "2026-10-17",
       "source": "omlist"
     },
     {
@@ -32632,25 +32747,20 @@
       "facultyId": "omlist-87a4f5977fcff6cf",
       "name": "Srinivas Prasad",
       "status": "unresolved",
-      "checkedAt": "2026-10-17",
-      "reason": "The GW School of Business profile lists his education (Ph.D., State University of New York at Buffalo, 1992; M.S. Buffalo 1988; B.T. IIT 1986) and current title only, with no earlier positions or CV. The ORCID record has no entries. The first post-PhD job is undocumented.",
+      "reason": "Second pass: no ORCID record with George Washington affiliations was found (an affiliation-filtered ORCID search returned nothing), and no advisor CV, Buffalo dissertation record or older GW CV was located. The first post after the 1992 Buffalo doctorate remains undocumented. Earlier review (2026-10-17): the GW profile gave the 1992 SUNY Buffalo PhD and current title only, and the ORCID record found had no entries.",
       "sources": [
-        {
-          "url": "https://omlist.edutool.org/schools/george-washington-university/faculty/srinivas-prasad.html",
-          "title": "OM List profile - Srinivas Prasad",
-          "notes": "Imported directory profile; opened for links to the school page, ORCID and CV only. Not evidence of a first job."
-        },
         {
           "url": "https://business.gwu.edu/srinivas-prasad",
           "title": "GW School of Business - Srinivas Prasad",
-          "notes": "Ph.D. SUNY Buffalo 1992; Associate Professor of Decision Sciences; no career history."
+          "notes": "Earlier review: Ph.D. SUNY Buffalo 1992; Associate Professor of Decision Sciences; no career history."
         },
         {
           "url": "https://orcid.org/0009-0007-4577-2089",
           "title": "ORCID record - Srinivas Prasad",
-          "notes": "Record has no employment or education entries. Read through the ORCID public API (pub.orcid.org/v3.0/0009-0007-4577-2089/activities)."
+          "notes": "Earlier review: no employment or education entries."
         }
       ],
+      "checkedAt": "2026-10-17",
       "source": "omlist"
     },
     {
@@ -32728,16 +32838,40 @@
     {
       "facultyId": "omlist-38ce61e5886bc917",
       "name": "Chong Min (Eugene) Pyun",
-      "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "RSM profile lists current role and courses but has no education or employment chronology.",
+      "status": "verified",
+      "employer": "Fordham University",
+      "position": null,
+      "placementYear": null,
+      "category": "unknown",
+      "evidenceUrl": "https://www.mccombs.utexas.edu/placement/",
+      "evidenceNote": "The McCombs PhD placement page (Management) lists Eugene Pyun, 2022, with the placement Fordham University, not his current school. Texas ScholarWorks dates his UT Austin Management PhD dissertation August 2022, and his ORCID record (supplied by Erasmus Pure) starts his Erasmus assistant professorship on 2023-09-01, so Fordham falls between the degree and Rotterdam. The page gives neither the title nor the start date at Fordham, so position and placementYear are null.",
+      "phdYearVerified": 2022,
+      "phdInstitutionVerified": "The University of Texas at Austin",
+      "phdYearResolution": "The chunk's OM List year is 2023; the Texas ScholarWorks dissertation record (dc.date.issued 2022-08-18, submitted August 2022, Doctor of Philosophy, Management, supervisor Puay Khoon Toh) and the McCombs placement page (2022) both give 2022.",
+      "reason": "Second pass: the official McCombs PhD placement page names Fordham University as his placement after the 2022 degree; the dissertation record dates the degree to August 2022, and ORCID puts the Erasmus appointment at September 2023. Title and start year at Fordham remain unknown (two searches for a Fordham page or a CV found nothing).",
       "sources": [
         {
+          "url": "https://www.mccombs.utexas.edu/placement/",
+          "title": "Texas McCombs PhD - Placement",
+          "notes": "Read with plain curl. Management list: 'Eugene Pyun, 2022, Fordham University'."
+        },
+        {
+          "url": "https://repositories.lib.utexas.edu/server/api/core/items/5166bb6a-691b-488b-8863-f1763e8c54e8",
+          "title": "Texas ScholarWorks - Pyun, Eugene, Standardization and firms' innovative activities within ecosystems: two essays on the Formula One industry",
+          "notes": "Read through the repository DSpace API (the handle page hdl 2152/116926 answers 403 to curl): Doctor of Philosophy, Management, dc.date.issued 2022-08-18, submitted August 2022, supervisor Toh, Puay Khoon."
+        },
+        {
+          "url": "https://orcid.org/0000-0001-9142-0091",
+          "title": "ORCID record 0000-0001-9142-0091 (public API)",
+          "notes": "Employment: Assistant professor, Department of Technology and Operations Management, Erasmus University Rotterdam, from 2023-09-01 (source: EUR Pure)."
+        },
+        {
           "url": "https://www.rsm.nl/people/eugene-pyun/",
-          "title": "Chong Min (Eugene) Pyun public academic profile",
-          "notes": "RSM profile lists current role and courses but has no education or employment chronology."
+          "title": "RSM - Dr. E.C.M. (Eugene Chong Min) Pyun",
+          "notes": "Current Assistant Professor title only; no education or chronology."
         }
       ],
+      "checkedAt": "2026-10-17",
       "source": "omlist"
     },
     {
@@ -32980,15 +33114,30 @@
       "facultyId": "omlist-ee426c2d0dde3d94",
       "name": "Erik van Raaij",
       "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "Erasmus profile states a Twente PhD in marketing with no year and lists current roles only; no CV or dated career chronology opened. PhD year, and first post-PhD job (possibly industry or Twente) unestablished.",
+      "reason": "Second pass: his ORCID record (self-asserted) gives the University of Twente PhD with an end date of 2001-06-15, but its dated employment entries, all supplied by Erasmus Pure, start only with an assistant professorship in the Department of Management of Technology and Innovation from 2009-01-01, which looks like the start of Pure's records rather than his first job; 2001-2008 is blank. The EUR people page (erik.vanraaij.net redirects there) and the bio in his 2016 inaugural address 'Purchasing Value' (RePub) give his degrees and current chairs without dates or earlier employers. The Twente research portal (Pure) answers 403 to curl and a Cloudflare check to the headless browser, so the thesis record and its CV page could not be read. The first post after the 2001 degree is undocumented. Earlier review (2026-10-16): the Erasmus profile stated a Twente PhD in marketing with no year and listed current roles only.",
       "sources": [
+        {
+          "url": "https://orcid.org/0000-0002-3758-5431",
+          "title": "ORCID record 0000-0002-3758-5431 (public API)",
+          "notes": "Education: University of Twente, PhD, end date 2001-06-15. Employment (EUR Pure): EUR assistant professor 2009-01 to 2012-04, associate professor 2012-05 onwards, later professorships; nothing dated before 2009."
+        },
         {
           "url": "https://www.eur.nl/en/people/erik-van-raaij",
           "title": "Erasmus University profile: Erik van Raaij",
-          "notes": "Opened. PhD Marketing, Twente (no year); current positions only."
+          "notes": "Re-read: Engineering degree and PhD in Marketing from Twente, no years; current positions only."
+        },
+        {
+          "url": "https://repub.eur.nl/pub/93665",
+          "title": "RePub - van Raaij, Purchasing Value (inaugural address, 2016-10-14)",
+          "notes": "PDF bio (p. 50) gives MSc and PhD from Twente and current chair; no dates or earlier posts."
+        },
+        {
+          "url": "https://research.utwente.nl/en/publications/?search=van+Raaij+market+orientation",
+          "title": "University of Twente research portal search",
+          "notes": "Not read: 403 to curl and a Cloudflare check in a headless browser."
         }
       ],
+      "checkedAt": "2026-10-17",
       "source": "omlist"
     },
     {
@@ -33844,15 +33993,25 @@
       "facultyId": "omlist-567019cfdb07634e",
       "name": "Lisanne van Rijn",
       "status": "unresolved",
-      "checkedAt": "2026-10-16",
+      "reason": "Second pass: the RSM profile (plain curl) now lists her doctoral thesis as 'Improving access to healthcare in underserved rural areas' (Doctoral Thesis, Erasmus University Rotterdam, 2025) and her current title as Assistant Professor. Her self-maintained ORCID record gives PhD candidate, Econometric Institute, Erasmus, 2018-09-01 to 2023-08-31, then Lecturer, Rotterdam School of Management, from 2023-09-01. The lecturer post therefore began about two years before the 2025 doctorate, and the start date of the assistant professorship (which may be the post converted on completion) is not stated anywhere opened. The defence date could not be read: RePub stops before 2025, EUR Pure is behind a Cloudflare check, and the eur.nl search is script-driven. Under the overlap rules the first new post (the lecturer post or the later assistant professorship) cannot be fixed without the defence date and the assistant-professor start date. Earlier review (2026-10-16): the RSM profile had returned navigation material without a dated degree or early employment.",
       "sources": [
         {
           "url": "https://www.rsm.nl/people/lisanne-rijn-van/",
-          "title": "Lisanne van Rijn Profile",
-          "notes": "RSM profile returned navigation and directory material without a dated degree and early employment chronology."
+          "title": "RSM - Lisanne van Rijn",
+          "notes": "Read with plain curl: Assistant Professor; Doctoral Thesis (1): van Rijn, L. (2025), Improving access to healthcare in underserved rural areas, Erasmus University Rotterdam."
+        },
+        {
+          "url": "https://orcid.org/0000-0002-3626-9963",
+          "title": "ORCID record 0000-0002-3626-9963 (public API)",
+          "notes": "Self-asserted employment: PhD candidate, Econometric Institute, EUR, 2018-09-01 to 2023-08-31; Lecturer, RSM, from 2023-09-01."
+        },
+        {
+          "url": "https://repub.eur.nl/search",
+          "title": "RePub search (JSON endpoint)",
+          "notes": "No dissertation by van Rijn; RePub holds no 2025 theses."
         }
       ],
-      "reason": "RSM profile returned navigation and directory material without a dated degree and early employment chronology.",
+      "checkedAt": "2026-10-17",
       "source": "omlist"
     },
     {
@@ -34318,27 +34477,25 @@
       "facultyId": "omlist-6a85778a1fcbafdd",
       "name": "Robert Rooderkerk",
       "status": "unresolved",
-      "checkedAt": "2026-10-17",
-      "reason": "The chunk carries no doctorate. Tilburg University's research portal records his doctoral thesis 'Optimizing product lines and assortments' (award date 15 June 2007, promotor H.J. van Heerde). The RSM profile describes his current associate professorship and a 2009-2012 academic-board role at the Marketing Productivity Group but gives no appointment dates or prior employers; ORCID has no education or employment entries. Publications from around 2013 carry TiasNimbas/Tilburg affiliations (search snippet only, not opened), so the first post-PhD job is not established.",
+      "reason": "Second pass: the Tilburg research portal record was re-read with plain curl and confirms the doctoral thesis 'Optimizing product lines and assortments' (Tilburg University, CentER, award date 15 June 2007), but the thesis PDF on the same portal answers 403 (Cloudflare), so its author page could not be read. ORCID 0000-0002-6463-7735 still has no education or employment entries, and the RSM profile gives no appointment dates. No CV, staff record or announcement dating a post between June 2007 and his RSM appointment was found, so the first post-PhD job (possibly at TiasNimbas or Tilburg, as earlier search snippets suggested) is not established. Earlier review (2026-10-17): Tilburg's portal gave the 2007 thesis, while the RSM profile and ORCID gave no dated career history.",
       "sources": [
         {
           "url": "https://research.tilburguniversity.edu/en/publications/optimizing-product-lines-and-assortments/",
-          "title": "Tilburg University research portal — R.P. Rooderkerk, Optimizing product lines and assortments (doctoral thesis)",
-          "notes": "Found through web search; awarding institution Tilburg University, award date 15 Jun 2007."
+          "title": "Tilburg University research portal - R.P. Rooderkerk, Optimizing product lines and assortments (doctoral thesis)",
+          "notes": "Re-read with plain curl: awarding institution Tilburg University, award date 15 Jun 2007. Linked PDF (/files/843682/225930.pdf) returns 403."
         },
         {
           "url": "https://www.rsm.nl/people/robert-rooderkerk/",
-          "title": "Rotterdam School of Management — Robert Rooderkerk",
+          "title": "Rotterdam School of Management - Robert Rooderkerk",
           "notes": "Undated bio; no degree or career history."
         },
         {
           "url": "https://orcid.org/0000-0002-6463-7735",
-          "title": "ORCID — Robert Rooderkerk",
-          "notes": "Public API read: no education or employment entries."
+          "title": "ORCID - Robert Rooderkerk",
+          "notes": "Public API re-read: no education or employment entries."
         }
       ],
-      "phdYearVerified": 2007,
-      "phdInstitutionVerified": "Tilburg University",
+      "checkedAt": "2026-10-17",
       "source": "omlist"
     },
     {
@@ -40524,16 +40681,44 @@
     {
       "facultyId": "omlist-4fc6b9e3556cf71f",
       "name": "Müge Tekin",
-      "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "RSM profile explicitly says it no longer exists; no first-placement chronology available there.",
+      "status": "verified",
+      "employer": "Imperial College London (Imperial College Business School)",
+      "position": "Postdoctoral Researcher",
+      "placementYear": null,
+      "category": "postdoc",
+      "evidenceUrl": "https://www.eur.nl/en/people/muge-tekin",
+      "evidenceNote": "The Erasmus University people page says she holds a PhD in Operations Management from Universitat Pompeu Fabra and that before joining RSM she worked at Imperial College Business School as a postdoctoral researcher. Her ORCID record (employment supplied by Erasmus Pure) starts the RSM assistant professorship on 2020-09-01. The Imperial postdoc is the only post named between the doctorate and RSM; its start year is not stated, so placementYear is null. Verifier: phdYearVerified set from null to 2018: the UPF repository record (read through its DSpace search API) dates her UPF doctoral thesis 2018-09-17, director Kalyan Talluri, which matches the OM List year; the Imperial postdoc therefore falls between September 2018 and the September 2020 RSM start, and no other post is named in that window.",
+      "phdYearVerified": 2018,
+      "phdInstitutionVerified": "Universitat Pompeu Fabra",
+      "reason": "Second pass: the EUR people page (plain curl; found after one web search pointed to the eur.nl people directory) gives the sequence Pompeu Fabra PhD, Imperial College Business School postdoc, RSM; ORCID dates the RSM post to September 2020 and later moves (EUR visiting fellow and Turkish Technology from May 2026). The degree year (2018 in the OM List import) could not be checked: UPF's placement pages and the TDX and UPF repositories answered 403 or returned nothing. Co-authorship with Kalyan Talluri (Imperial) is consistent with the postdoc. Verifier: the degree date was later found in the UPF repository (thesis dated 2018-09-17), so the degree year is now checked.",
       "sources": [
         {
+          "url": "https://www.eur.nl/en/people/muge-tekin",
+          "title": "dr. M (Müge) Tekin - Erasmus University Rotterdam people page",
+          "notes": "Read with plain curl: Assistant Professor of Operations Management at RSM; before RSM, postdoctoral researcher at Imperial College Business School; PhD in Operations Management, Universitat Pompeu Fabra; Masters, Koc University."
+        },
+        {
+          "url": "https://orcid.org/0000-0002-3406-004X",
+          "title": "ORCID record 0000-0002-3406-004X (public API)",
+          "notes": "Employment: EUR assistant professor 2020-09-01 to 2026-04-30 (EUR Pure); EUR visiting fellow from 2026-05-01; Turkish Technology Expert OR Scientist from 2026-05-04 (self-asserted). No education entries."
+        },
+        {
           "url": "https://www.rsm.nl/people/muge-tekin/",
-          "title": "Müge Tekin public academic profile",
-          "notes": "RSM profile explicitly says it no longer exists; no first-placement chronology available there."
+          "title": "Müge Tekin - RSM profile",
+          "notes": "Earlier review: the profile said it no longer exists."
+        },
+        {
+          "url": "https://www.upf.edu/web/econ/placement",
+          "title": "UPF Economics and Business - placement",
+          "notes": "403 to curl; empty page through the reader proxy."
+        },
+        {
+          "url": "https://repositori.upf.edu/server/api/discover/search/objects?query=Tekin%20M%C3%BCge&size=10",
+          "title": "Repositori UPF - Tekin, Müge, Competitive intelligence analytics for operations managers (doctoral thesis, TDX handle 10803/663488)",
+          "notes": "Read through the repository DSpace search API by the verifier: doctoral thesis, Programa de doctorat en Economia, Finances i Empresa, Universitat Pompeu Fabra, dc.date.issued 2018-09-17, director Kalyan T. Talluri."
         }
       ],
+      "checkedAt": "2026-10-17",
       "source": "omlist"
     },
     {
@@ -41620,15 +41805,20 @@
       "facultyId": "omlist-37ab7f462c1cf466",
       "name": "Angelos Tsoukalas",
       "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "RSM biography lists multiple postdocs and industry experience without dates or ordering, so first postdoctoral job is unclear.",
+      "reason": "Second pass: the RSM profile (plain curl) states that he obtained his PhD in Operations Research from Imperial College London and, before RSM, was a faculty member at the American University of Beirut, held postdoctoral appointments at the Royal Melbourne Institute of Technology and the Massachusetts Institute of Technology, and spent a couple of years as a data scientist in the maritime sector, with no dates or order. ORCID 0000-0003-2679-3953 has works only (2008-2026) and no education or employment. The works suggest RMIT-era (feasibility pump, 2012) and MIT-era (Mitsos, 2014-2015) papers but publication years cannot order the two postdocs. No dated CV was found, so which postdoc came first after the 2009 degree is still unknown. Earlier review (2026-10-16): the RSM biography listed several postdocs and industry experience without dates or order.",
       "sources": [
         {
           "url": "https://www.rsm.nl/people/angelos-tsoukalas/",
-          "title": "Angelos Tsoukalas public academic profile",
-          "notes": "RSM biography lists multiple postdocs and industry experience without dates or ordering, so first postdoctoral job is unclear."
+          "title": "RSM - Angelos Tsoukalas",
+          "notes": "Re-read with plain curl: Imperial PhD; earlier AUB faculty post, RMIT and MIT postdocs, maritime data scientist; all undated."
+        },
+        {
+          "url": "https://orcid.org/0000-0003-2679-3953",
+          "title": "ORCID record 0000-0003-2679-3953 (public API)",
+          "notes": "Works only; no education or employment entries."
         }
       ],
+      "checkedAt": "2026-10-17",
       "source": "omlist"
     },
     {
@@ -42285,15 +42475,25 @@
       "facultyId": "omlist-a3f93753c7685a36",
       "name": "Luis Henrique Rigato Vasconcellos",
       "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "The FGV profile dates doctorate to 2010 but describes prior executive and consulting work without dates; first post-doctoral employer cannot be ordered.",
+      "reason": "Second pass: The full Lattes CV (lattes.cnpq.br, which would date each post) now opens only behind an image 'Codigo de seguranca' check for plain curl and the reader proxy, and the Escavador mirror answers 403 with a Cloudflare check, so only the public Lattes summary page (preview.do) could be read. The summary (certified 13/10/2026) dates the doctorate in production engineering at the Escola Politecnica of USP to 2010 and says he has taught in FGV EAESP's operations department 'since 2007', after experience as an executive and consultant; he coordinated FGV's MBM course from 2016 to 2020. The FGV teaching post therefore began about three years before the doctorate and continued, so under the overlap rule it is not a new post-PhD job; no new employer after 2010 is documented. Earlier review (2026-10-16): the FGV profile dated the doctorate 2010 but gave undated executive and consulting work.",
       "sources": [
         {
           "url": "https://eaesp.fgv.br/en/people/luis-henrique-rigato-vasconcellos",
-          "title": "Luis Henrique Rigato Vasconcellos academic profile",
-          "notes": "The FGV profile dates doctorate to 2010 but describes prior executive and consulting work without dates; first post-doctoral employer cannot be ordered."
+          "title": "Luis Henrique Rigato Vasconcellos - FGV EAESP profile",
+          "notes": "Re-read with curl; links Lattes CV 7130637349417719."
+        },
+        {
+          "url": "http://buscatextual.cnpq.br/buscatextual/preview.do?metodo=apresentar&id=K4513473T6",
+          "title": "Lattes CV summary (CNPq) - Luis Henrique Rigato Vasconcellos",
+          "notes": "Doctorate Poli-USP (2010); MBA FGV (2002); professor at EAESP/FGV operations department since 2007; MBM coordinator 2016-2020."
+        },
+        {
+          "url": "http://lattes.cnpq.br/7130637349417719",
+          "title": "Lattes CV (full)",
+          "notes": "Not read: security-code (captcha) page."
         }
       ],
+      "checkedAt": "2026-10-17",
       "source": "omlist"
     },
     {
@@ -42343,31 +42543,59 @@
     {
       "facultyId": "omlist-581a5de1f6820e44",
       "name": "Luuk Veelenturf",
-      "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "RSM biography describes current role and research without doctoral or earliest employment chronology.",
+      "status": "verified",
+      "employer": "Eindhoven University of Technology",
+      "position": "Assistant Professor",
+      "placementYear": 2014,
+      "category": "unknown",
+      "evidenceUrl": "https://repub.eur.nl/pub/77155/EPS2014327LIS9789058923783.pdf",
+      "evidenceNote": "The Curriculum Vitae in his Erasmus dissertation (L.P. Veelenturf, 'Disruption Management in Passenger Railways', defended 2014-11-21) says he began his PhD at RSM after his 2009 master's and that since September 2014 he has been an Assistant Professor at the School of Industrial Engineering of Eindhoven University of Technology. The post began about two and a half months before the defence, after the dissertation was written; it is the first post named after the PhD. The thesis does not say whether the post was on a tenure track, so the category is unknown under the rule for continental European assistant professorships.",
+      "phdYearVerified": 2014,
+      "phdInstitutionVerified": "Erasmus University Rotterdam",
+      "reason": "Second pass: the RePub dissertation record dates the Erasmus doctorate 2014-11-21 and the thesis CV, written after the post began, gives the September 2014 Eindhoven assistant professorship. Identity: 'Luuk' is the short form of Lucas; the thesis is the railway-disruption work at RSM that matches his current Erasmus profile.",
       "sources": [
+        {
+          "url": "https://repub.eur.nl/pub/77155",
+          "title": "RePub - L.P. Veelenturf (Lucas), Disruption Management in Passenger Railways: Models for Timetable, Rolling Stock and Crew Rescheduling (dissertation)",
+          "notes": "Read with plain curl; dissertation dated 2014-11-21, promotor L.G. Kroon, RSM."
+        },
+        {
+          "url": "https://repub.eur.nl/pub/77155/EPS2014327LIS9789058923783.pdf",
+          "title": "Dissertation PDF (EPS-2014-327-LIS) - Curriculum Vitae",
+          "notes": "'Since September 2014, Lucas is as an Assistant Professor at the School of Industrial Engineering of Eindhoven University of Technology.'"
+        },
         {
           "url": "https://www.rsm.nl/people/luuk-veelenturf/",
           "title": "Luuk Veelenturf public academic profile",
-          "notes": "RSM biography describes current role and research without doctoral or earliest employment chronology."
+          "notes": "Earlier review: current role and research only."
         }
       ],
+      "checkedAt": "2026-10-17",
       "source": "omlist"
     },
     {
       "facultyId": "omlist-520e08e78e51c33d",
       "name": "Albert Veenstra",
       "status": "unresolved",
-      "checkedAt": "2026-10-16",
+      "reason": "Second pass: the RSM profile (plain curl) lists his doctoral thesis 'Quantitative Modelling of Shipping Markets' (Erasmus University Rotterdam, 1999) and current roles (Professor of Trade and Logistics, Scientific Director TKI Dinalog), and publications from 2000 onward, but no career history. His ORCID record 0000-0002-9821-110X has only Erasmus entries from 2017 (visiting fellow 2017-01 to 2019-07, then associate/endowed professor and Professor of Trade and Logistics from 2019-08), and a second ORCID 0000-0003-4318-6186 under the same name is empty. The 1999 thesis is not in RePub (title searches of the RePub JSON index return nothing), so its CV page could not be read. Nothing opened dates or names his first post after 1999 (the period before 2017, which included TNO and Dinalog work according to other sources not opened, is blank). Earlier review (2026-10-16): the Rotterdam profile listed publications and the doctoral thesis but no dated chronology.",
       "sources": [
         {
           "url": "https://www.rsm.nl/people/albert-veenstra/",
-          "title": "Albert Veenstra Profile",
-          "notes": "Rotterdam profile lists publications and doctoral thesis but no dated first-employment chronology."
+          "title": "RSM - Albert Veenstra",
+          "notes": "Read with plain curl: Doctoral Thesis, Veenstra, A. (1999), Quantitative Modelling of Shipping Markets, Erasmus University Rotterdam; current roles; no career dates."
+        },
+        {
+          "url": "https://orcid.org/0000-0002-9821-110X",
+          "title": "ORCID record 0000-0002-9821-110X (public API)",
+          "notes": "Employment only from 2017 (EUR visiting fellow 2017-01-01 to 2019-07-31; associate and endowed professor from 2019-08-01); no education entries."
+        },
+        {
+          "url": "https://orcid.org/0000-0003-4318-6186",
+          "title": "ORCID record 0000-0003-4318-6186 (public API)",
+          "notes": "Same name; no employment or education entries."
         }
       ],
-      "reason": "Rotterdam profile lists publications and doctoral thesis but no dated first-employment chronology.",
+      "checkedAt": "2026-10-17",
       "source": "omlist"
     },
     {
@@ -42869,16 +43097,39 @@
     {
       "facultyId": "omlist-0a30fad647c011b3",
       "name": "Harwin de Vries",
-      "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "Erasmus biography documents prior INSEAD postdoctoral research and an Erasmus PhD, but gives neither degree nor postdoc dates. Further dated chronology is needed before confirming the initial placement.",
+      "status": "verified",
+      "employer": "INSEAD",
+      "position": "Post-Doctoral Research Fellow",
+      "placementYear": 2017,
+      "category": "postdoc",
+      "evidenceUrl": "https://orcid.org/0000-0002-4012-2913",
+      "evidenceNote": "His self-maintained ORCID record lists PhD candidate, Econometric Institute, Erasmus University Rotterdam, 2012-01-01 to 2016-12-31; Postdoctoral Research Fellow, INSEAD Technology and Operations Management, 2017-01-01 to 2019-07-31; then Assistant Professor at RSM from 2019-08-01. The dissertation 'Evidence-Based Optimization in Humanitarian Logistics' was defended on 2017-11-10 (RePub), and its CV, printed for the defence, says he 'presently works as a Post-Doctoral Research Fellow at the INSEAD Social Innovation Centre'. The postdoc began in January 2017, after the PhD contract ended and about ten months before the formal defence; this is the pre-conferral postdoc case, with the overlap stated.",
+      "phdYearVerified": 2017,
+      "phdInstitutionVerified": "Erasmus University Rotterdam",
+      "reason": "Second pass: ORCID gives the dated sequence (Erasmus PhD candidacy to December 2016, INSEAD postdoc from January 2017, RSM from August 2019), RePub dates the Erasmus dissertation 2017-11-10, and the thesis CV confirms that he was then working as an INSEAD postdoctoral fellow. Minor discrepancy: the thesis CV says the PhD candidacy started in 2013, ORCID says 2012-01-01.",
       "sources": [
         {
+          "url": "https://orcid.org/0000-0002-4012-2913",
+          "title": "ORCID record 0000-0002-4012-2913 (public API)",
+          "notes": "Employment: EUR Econometric Institute PhD candidate 2012-01-01 to 2016-12-31; INSEAD Postdoctoral Research Fellow 2017-01-01 to 2019-07-31; RSM Assistant Professor from 2019-08-01 (all self-asserted)."
+        },
+        {
+          "url": "https://repub.eur.nl/pub/102771",
+          "title": "RePub - H. de Vries (Harwin), Evidence-Based Optimization in Humanitarian Logistics (dissertation)",
+          "notes": "Read with plain curl: dissertation dated 2017-11-10, promotors A.P.M. Wagelmans and J.J. van de Klundert, ERIM EPS-2017-435-LIS."
+        },
+        {
+          "url": "https://repub.eur.nl/pub/102771/EPS2017435LIS9789058924971.pdf",
+          "title": "Dissertation PDF - Curriculum Vitae",
+          "notes": "PhD candidacy at ERIM from 2013; 'Harwin presently works as a Post-Doctoral Research Fellow at the INSEAD Social Innovation Centre, specifically with the Humanitarian Research Group.'"
+        },
+        {
           "url": "https://www.rsm.nl/people/harwin-de-vries/",
-          "title": "Harwin de Vries — public academic profile",
-          "notes": "Professional biography and degree information reviewed for first-job evidence."
+          "title": "Harwin de Vries - public academic profile",
+          "notes": "Earlier review: mentions the INSEAD postdoc and Erasmus PhD without dates."
         }
       ],
+      "checkedAt": "2026-10-17",
       "source": "omlist"
     },
     {
@@ -45185,15 +45436,30 @@
       "facultyId": "omlist-c6ec5aefdc911a66",
       "name": "Finn Wynstra",
       "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "The RSM profile gives a Eindhoven PhD (no year) and says he previously worked at Eindhoven University of Technology and Jonkoping International Business School without dates or order; the first post-PhD job is not established.",
+      "reason": "Second pass: ORCID 0000-0002-3475-1625 has only Erasmus employment supplied by Pure, starting with an associate professorship in Management of Technology and Innovation from 2009-01-01 (then full professor from 2011-10), which is the start of Pure's records rather than of his career; it has no education entries. The bio in his 2006 Erasmus inaugural address ('Inkoop, Leveranciers en Innovatie: Van VOC tot Space Shuttle', RePub) says he studied economics at Erasmus and did his PhD research at the Technology Management department of TU Eindhoven and at Uppsala University, with no dates or earlier employers. The TU/e research portal answers 403 (Cloudflare), so the 1998 thesis and its CV could not be read. The order and dates of the Eindhoven and Jonkoping posts named on the RSM profile remain unknown. Earlier review (2026-10-16): the RSM profile gave an Eindhoven PhD (no year) and undated posts at Eindhoven University of Technology and Jonkoping International Business School.",
       "sources": [
+        {
+          "url": "https://orcid.org/0000-0002-3475-1625",
+          "title": "ORCID record 0000-0002-3475-1625 (public API)",
+          "notes": "EUR associate professor 2009-01-01 to 2011-09-30, full professor from 2011-10-01 (EUR Pure); nothing earlier; no education."
+        },
+        {
+          "url": "https://repub.eur.nl/pub/7439",
+          "title": "RePub - J.Y.F. Wynstra, Inkoop, Leveranciers en Innovatie: Van VOC tot Space Shuttle (inaugural address, 2006-02-17)",
+          "notes": "PDF cover bio: professor by special appointment (NEVI chair); PhD research at TU/e Technology Management and Uppsala; no dates."
+        },
         {
           "url": "https://www.rsm.nl/people/finn-wynstra/",
           "title": "Erasmus RSM - Finn Wynstra",
-          "notes": "Opened; undated prior positions."
+          "notes": "Earlier review: undated prior positions at TU/e and Jonkoping International Business School."
+        },
+        {
+          "url": "https://research.tue.nl/en/publications/?search=Wynstra+purchasing+involvement",
+          "title": "TU/e research portal search",
+          "notes": "Not read: 403 (Cloudflare) to curl."
         }
       ],
+      "checkedAt": "2026-10-17",
       "source": "omlist"
     },
     {
@@ -46326,15 +46592,25 @@
       "facultyId": "omlist-f5534be108469290",
       "name": "Hannah M Yee",
       "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "The RSM profile lists current role and publications without doctoral completion or first employment chronology.",
+      "reason": "Second pass: her self-maintained ORCID record (0000-0001-5732-0484) lists PhD student, Research Centre for Operations Management, KU Leuven, from 2019-09-01 with no end date, and Assistant Professor, Technology and Operations Management, Erasmus University Rotterdam, from 2024-11; the ORCID search index also associates her with Flanders Make, which appears in no dated entry. The KU Leuven degree date could not be checked: Lirias resets the connection to curl, shows an empty script page through the reader proxy and returns 404 to the fetch tool. With the degree dated 2023 only by the OM List import and the Erasmus post starting in November 2024, a gap of a year or more (possibly a Flanders Make or Leuven post) is unaccounted for, so the Erasmus post cannot be called the first job. Earlier review (2026-10-16): the RSM profile listed her current role and publications without a degree date or chronology.",
       "sources": [
         {
+          "url": "https://orcid.org/0000-0001-5732-0484",
+          "title": "ORCID record 0000-0001-5732-0484 (public API)",
+          "notes": "Employment (self-asserted): KU Leuven PhD student from 2019-09-01 (no end); EUR Assistant Professor from 2024-11. Works list four journal articles, no thesis."
+        },
+        {
           "url": "https://www.rsm.nl/people/hannah-yee/",
-          "title": "Hannah M Yee academic profile",
-          "notes": "The RSM profile lists current role and publications without doctoral completion or first employment chronology."
+          "title": "RSM - Hannah Yee",
+          "notes": "Re-read with curl: current title and publications only."
+        },
+        {
+          "url": "https://lirias.kuleuven.be/discover?query=%22Yee%2C+Hannah%22",
+          "title": "KU Leuven Lirias search",
+          "notes": "Not read: connection reset to curl; empty script page through the reader proxy."
         }
       ],
+      "checkedAt": "2026-10-17",
       "source": "omlist"
     },
     {
@@ -46946,15 +47222,30 @@
       "facultyId": "omlist-fe6ad52e903899ae",
       "name": "Dainis Zegners",
       "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "The RSM biography identifies Munich doctorate and earlier Cologne assistant professorship without completion or appointment dates.",
+      "reason": "Second pass: the German National Library catalogue (DNB SRU) records his thesis 'Information asymmetries in digital markets: aftermarkets, information disclosure and reputation' as 'Dissertation, Ludwig-Maximilians-Universitat Munchen, 2016'; it is not on LMU's edoc server. ORCID 0000-0003-4560-1152 gives Assistant Professor at RSM from 2018-09-01 (self-asserted and from EUR Pure) and nothing earlier. The RSM profile says that before RSM he was Assistant Professor at the University of Cologne, without dates, and does not say that this was his first post. One web search for a CV or a Cologne staff page returned only unrelated Cologne pages. The Cologne post's start date (and whether anything came between the 2016 degree and Cologne) is still undocumented. Earlier review (2026-10-16): the RSM biography named the Munich doctorate and the earlier Cologne assistant professorship without dates.",
       "sources": [
         {
+          "url": "https://services.dnb.de/sru/dnb?version=1.1&operation=searchRetrieve&query=per%3DZegners&recordSchema=oai_dc&maximumRecords=10",
+          "title": "Deutsche Nationalbibliothek catalogue (SRU) - Zegners",
+          "notes": "Record 1126460176: Information asymmetries in digital markets, Dissertation, Ludwig-Maximilians-Universitat Munchen, 2016."
+        },
+        {
+          "url": "https://orcid.org/0000-0003-4560-1152",
+          "title": "ORCID record 0000-0003-4560-1152 (public API)",
+          "notes": "Employment: RSM Assistant Professor from 2018-09-01; nothing earlier; no education."
+        },
+        {
           "url": "https://www.rsm.nl/people/dainis-zegners/",
-          "title": "Dainis Zegners academic profile",
-          "notes": "The RSM biography identifies Munich doctorate and earlier Cologne assistant professorship without completion or appointment dates."
+          "title": "RSM - Dainis Zegners",
+          "notes": "PhD in Management, LMU Munich; before RSM he was Assistant Professor at the University of Cologne (undated)."
+        },
+        {
+          "url": "https://edoc.ub.uni-muenchen.de/cgi/search/simple?q=Zegners",
+          "title": "LMU Electronic Theses search",
+          "notes": "No match."
         }
       ],
+      "checkedAt": "2026-10-17",
       "source": "omlist"
     },
     {
@@ -48711,21 +49002,34 @@
     {
       "facultyId": "omlist-41eab280563d68e6",
       "name": "Minglong Zhou",
-      "status": "unresolved",
-      "checkedAt": "2026-10-16",
+      "status": "verified",
+      "employer": "National University of Singapore (Institute of Operations Research and Analytics)",
+      "position": "Research Fellow",
+      "placementYear": 2021,
+      "category": "postdoc",
+      "evidenceUrl": "https://orcid.org/0000-0002-3249-571X",
+      "evidenceNote": "His self-maintained ORCID record lists Research Fellow, Institute of Operations Research and Analytics, National University of Singapore, 2021-01 to 2022-07, then Assistant Professor, Management Science, Fudan University, from 2022-08. His personal site says he received his PhD from the NUS Business School's Department of Analytics and Operations in April 2021 (supervisor Melvyn Sim). The research fellowship began about three months before the April 2021 degree date, after the thesis work, and is the first post named; the overlap is stated.",
+      "phdYearVerified": 2021,
+      "phdInstitutionVerified": "National University of Singapore",
+      "reason": "Second pass: ORCID now gives the dated sequence (NUS IORA research fellow January 2021 to July 2022, then Fudan from August 2022), which the personal site's April 2021 degree date frames. Identity: the ORCID record carries both NUS and Fudan affiliations; four other ORCID records with the same name have no such affiliations. The Fudan FDSM profile was not re-read.",
       "sources": [
         {
-          "url": "https://www.fdsm.fudan.edu.cn/en/faculty/list.htm?UID=012567",
-          "title": "Minglong Zhou Profile",
-          "notes": "Personal site establishes NUS PhD April 2021 and current Fudan role; no start date or complete employment chronology is supplied."
+          "url": "https://orcid.org/0000-0002-3249-571X",
+          "title": "ORCID record 0000-0002-3249-571X (public API)",
+          "notes": "Employment (self-asserted): NUS Institute of Operations Research and Analytics, Research Fellow, 2021-01 to 2022-07; Fudan University, Management Science, Assistant Professor, from 2022-08."
         },
         {
           "url": "https://sites.google.com/view/minglongzhou",
-          "title": "Minglong Zhou Website",
-          "notes": "Personal site establishes NUS PhD April 2021 and current Fudan role; no start date or complete employment chronology is supplied."
+          "title": "Minglong Zhou - personal website",
+          "notes": "Read with plain curl: now associate professor at Fudan's School of Management; PhD from NUS Business School's Department of Analytics and Operations in April 2021, supervised by Melvyn Sim; visited MIT LIDS in spring 2020."
+        },
+        {
+          "url": "https://www.fdsm.fudan.edu.cn/en/faculty/list.htm?UID=012567",
+          "title": "Minglong Zhou - Fudan profile",
+          "notes": "Earlier review: current Fudan role; no start date."
         }
       ],
-      "reason": "Personal site establishes NUS PhD April 2021 and current Fudan role; no start date or complete employment chronology is supplied.",
+      "checkedAt": "2026-10-17",
       "source": "omlist"
     },
     {
@@ -49333,15 +49637,25 @@
       "facultyId": "omlist-f6a0ffd4176a4526",
       "name": "Rob Zuidwijk",
       "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "The RSM biography describes current research and role without doctoral completion or earliest employment chronology.",
+      "reason": "Second pass: the RSM profile (plain curl) lists his doctoral thesis 'Complementary trangular forms for pairs of matrices and operators' (Erasmus University Rotterdam, 1994) and publications from 1998 (Linear Algebra and Its Applications with H. Bart and L.G. Kroon) onward. The author bio in his 2015 inaugural address 'Are we connected?' (RePub) says only that he received a PhD in mathematics from Erasmus and held a one-year visiting position at UCLA in 2009/2010; ORCID 0000-0002-1493-3974 has no employment or education entries. The 1994 thesis is not in RePub's index, so its CV page could not be read. His first post after 1994 is undocumented. Earlier review (2026-10-16): the RSM biography gave his current research and role without a degree date or early chronology.",
       "sources": [
         {
           "url": "https://www.rsm.nl/people/rob-zuidwijk/",
-          "title": "Rob Zuidwijk academic profile",
-          "notes": "The RSM biography describes current research and role without doctoral completion or earliest employment chronology."
+          "title": "RSM - Rob Zuidwijk",
+          "notes": "Doctoral Thesis: Zuidwijk, R. (1994), Erasmus University Rotterdam; no career dates."
+        },
+        {
+          "url": "https://repub.eur.nl/pub/79091",
+          "title": "RePub - R.A. Zuidwijk, Are we connected? (inaugural address, 2015-11-13)",
+          "notes": "PDF bio: PhD in Mathematics from Erasmus; one-year visiting position at UCLA in 2009/2010; no earlier dates."
+        },
+        {
+          "url": "https://orcid.org/0000-0002-1493-3974",
+          "title": "ORCID record 0000-0002-1493-3974 (public API)",
+          "notes": "No employment or education entries."
         }
       ],
+      "checkedAt": "2026-10-17",
       "source": "omlist"
     },
     {
@@ -49971,25 +50285,25 @@
       "facultyId": "omlist-3b50ec863bdfcc97",
       "name": "René de Koster",
       "status": "unresolved",
-      "checkedAt": "2026-10-17",
-      "reason": "The RSM biography states that after completing his PhD at Eindhoven University of Technology (1988) he worked as a consultant, and that he joined Erasmus University in 1995. The first post-PhD job is therefore a consulting role, but the employer is not named and its dates are not given, so it cannot be recorded as verified. The RSM page gives the degree year as 1988, not the 1987 in the OM List. ORCID has only an undated RSM entry and no CV was found.",
+      "reason": "Second pass: the TU/e research portal (where the Eindhoven thesis record would settle 1987 vs 1988) answers 403 to curl, and the RePub JSON index has no inaugural address or other document of his with a dated CV (only a 2014 video). No CV naming the consulting employer was found. The RSM biography still says only that after his 1988 Eindhoven PhD he worked as a consultant (employer and dates not given) and joined Erasmus in 1995, and ORCID has an undated RSM entry only. The first post-PhD job is a consulting role whose employer and dates are unknown. Earlier review (2026-10-17): the RSM biography gave the 1988 Eindhoven PhD, unnamed consulting work, and the move to Erasmus in 1995.",
       "sources": [
-        {
-          "url": "https://omlist.edutool.org/schools/erasmus-university-rotterdam/faculty/ren-de-koster.html",
-          "title": "OM List profile - René de Koster",
-          "notes": "Imported directory profile; opened for links to the school page, ORCID and CV only. Not evidence of a first job."
-        },
         {
           "url": "https://www.rsm.nl/people/rene-de-koster/",
           "title": "RSM - René de Koster",
-          "notes": "Biography: PhD Eindhoven University of Technology (1988), then worked as a consultant (employer and dates not given); joined Erasmus University in 1995."
+          "notes": "Earlier review: PhD Eindhoven University of Technology (1988), then consultant (employer and dates not given); joined Erasmus in 1995."
         },
         {
           "url": "https://orcid.org/0000-0002-1740-7822",
           "title": "ORCID record - René de Koster",
-          "notes": "Only an undated RSM Erasmus University entry. Read through the ORCID public API (pub.orcid.org/v3.0/0000-0002-1740-7822/activities)."
+          "notes": "Only an undated RSM Erasmus University entry (public API)."
+        },
+        {
+          "url": "https://research.tue.nl/en/publications/?search=de+Koster+1988&type=thesis",
+          "title": "TU/e research portal search",
+          "notes": "Not read: 403 (Cloudflare)."
         }
       ],
+      "checkedAt": "2026-10-17",
       "source": "omlist"
     },
     {
@@ -53564,21 +53878,39 @@
     {
       "facultyId": "roster:erasmus-university-rotterdam:daan-stam",
       "name": "Daan Stam",
-      "status": "unresolved",
-      "checkedAt": "2026-10-17",
-      "reason": "The RSM profile confirms the doctorate (doctoral thesis Stam, D. (2008), Managing dreams and ambitions, Erasmus University Rotterdam) but gives no employment chronology: it describes only his current endowed professorship. His ORCID record (0000-0003-1904-5404) lists no employment or education entries, and no CV or personal site is linked (only LinkedIn, not opened). The first post-PhD employer, title and start year are undocumented; it is unknown whether he held an RSM post that began before the 2008 defence.",
+      "status": "verified",
+      "employer": "Rotterdam School of Management, Erasmus University",
+      "position": "Assistant Professor",
+      "placementYear": 2008,
+      "category": "unknown",
+      "evidenceUrl": "https://repub.eur.nl/pub/14080/EPS2008149ORGStam.pdf",
+      "evidenceNote": "The author's page of his ERIM dissertation 'Managing Dreams and Ambitions: A Psychological Analysis of Vision Communication' (defended 2008-12-04) says his PhD project ran in the Department of Organization and Personnel Management at RSM between September 2004 and August 2008 and that he 'currently works as an assistant professor for the department of Management of Technology and Innovation of RSM'. The assistant professorship therefore began between September and the thesis printing in late 2008, in the final months before the defence and after the PhD project ended; the overlap is stated. Before the PhD he worked as a researcher at PLATO and Leiden University. The source does not state a tenure track, so the category is unknown under the rule for continental European assistant professorships.",
+      "phdYearVerified": 2008,
+      "phdInstitutionVerified": "Erasmus University Rotterdam",
+      "reason": "Second pass, following the triage suggestion: the RePub record dates the Erasmus dissertation 2008-12-04, and its 'about the author' page gives the end of the PhD project (August 2008) and the RSM assistant professorship he already held at printing. This was a new post in another department after the doctoral contract, not a job held through the doctorate.",
       "sources": [
         {
-          "url": "https://www.rsm.nl/people/daan-stam/",
-          "title": "Daan Stam - RSM profile",
-          "notes": "Biography (current post only) and publication list with the 2008 doctoral thesis."
+          "url": "https://repub.eur.nl/pub/14080",
+          "title": "RePub - D.A. Stam (Daan), Managing Dreams and Ambitions: A Psychological Analysis of Vision Communication (dissertation)",
+          "notes": "Read with plain curl: dissertation dated 2008-12-04, ERIM EPS-2008-149-ORG."
         },
         {
-          "url": "https://orcid.org/0000-0003-1904-5404",
-          "title": "ORCID - Daan Stam",
-          "notes": "Read via the public ORCID API; no affiliation entries."
+          "url": "https://repub.eur.nl/pub/14080/EPS2008149ORGStam.pdf",
+          "title": "Dissertation PDF - about the author (p. 151)",
+          "notes": "PhD project at RSM September 2004 to August 2008; currently assistant professor, Department of Management of Technology and Innovation, RSM."
+        },
+        {
+          "url": "https://repub.eur.nl/pub/117229",
+          "title": "RePub - D.A. Stam, Leading for Innovation (inaugural address, 2019-06-21)",
+          "notes": "Says that after a PhD in organizational behaviour on leadership he moved to the Innovation Management group, where he had worked for the last decade."
+        },
+        {
+          "url": "https://www.rsm.nl/people/daan-stam/",
+          "title": "RSM - Daan Stam",
+          "notes": "Faculty page: Endowed Professor of Innovation Management; Erasmus PhD 2008."
         }
       ],
+      "checkedAt": "2026-10-17",
       "source": "faculty-page"
     },
     {
@@ -53613,25 +53945,30 @@
       "facultyId": "roster:erasmus-university-rotterdam:eric-van-heck",
       "name": "Eric van Heck",
       "status": "unresolved",
-      "checkedAt": "2026-10-17",
-      "reason": "The RSM and Erasmus Pure profiles state a PhD in Information Systems from Wageningen University (no year), earlier work as a software programmer and system analyst at Cap Gemini 'before academia', and undated visiting positions (NYU, MIT-CISR, Jyväskylä, ITB). Neither gives a degree year or any dated appointment, and his ORCID record (0000-0002-8058-6640) has no education or employment entries. The first post-PhD job and its date are not established.",
+      "reason": "Second pass: the Wageningen research portal and the WUR library catalogue both answer 403 to curl (Cloudflare), so the Wageningen thesis record and its curriculum vitae page could not be read; the RePub JSON index has no inaugural address or other document of his with a CV; the German National Library catalogue lists only later co-authored works (2004, 2009). The degree year and the order of his Cap Gemini work, the Wageningen doctorate and his first academic post remain undocumented. Earlier review (2026-10-17): the RSM and Erasmus Pure profiles gave a Wageningen PhD (no year), Cap Gemini 'before academia' and undated visiting posts, and ORCID had no entries.",
       "sources": [
         {
           "url": "https://www.rsm.nl/people/eric-van-heck/",
           "title": "Eric van Heck - Rotterdam School of Management",
-          "notes": "Bio: Wageningen PhD; Cap Gemini before academia; undated visiting posts; no CV."
-        },
-        {
-          "url": "https://pure.eur.nl/en/persons/eric-van-heck/",
-          "title": "Eric van Heck - Erasmus University Research Portal",
-          "notes": "Same bio; no dated positions."
+          "notes": "Earlier review: Wageningen PhD; Cap Gemini before academia; undated visiting posts; no CV."
         },
         {
           "url": "https://orcid.org/0000-0002-8058-6640",
           "title": "ORCID - Eric van Heck",
-          "notes": "Public API read: no education or employment entries."
+          "notes": "Public API: no education or employment entries."
+        },
+        {
+          "url": "https://research.wur.nl/en/publications/?search=van+Heck+Eric&type=thesis",
+          "title": "Wageningen University & Research portal search",
+          "notes": "Not read: 403 (Cloudflare) to curl."
+        },
+        {
+          "url": "https://services.dnb.de/sru/dnb?version=1.1&operation=searchRetrieve&query=per%3D%22Heck%2C%20Eric%20van%22&recordSchema=oai_dc&maximumRecords=10",
+          "title": "Deutsche Nationalbibliothek catalogue (SRU) - Heck, Eric van",
+          "notes": "Two later co-authored works only; no thesis."
         }
       ],
+      "checkedAt": "2026-10-17",
       "source": "faculty-page"
     },
     {
@@ -53658,20 +53995,20 @@
       "facultyId": "roster:erasmus-university-rotterdam:jan-dul",
       "name": "Jan Dul",
       "status": "unresolved",
-      "checkedAt": "2026-10-17",
-      "reason": "The RSM profile lists the 1983 Vanderbilt doctoral thesis (and a 1979 Twente thesis) and names earlier positions without dates or order: Twente University of Technology, Vanderbilt University, the Foundation for Ergonomic Technology, ergonomics researcher and later head of the Department of Posture and Movement Research at the TNO Institute of Preventive Health Care (Leiden), and head of the Department of Innovation at the Netherlands Institute for Work and Employment, before joining RSM. Which of these was the first job after the 1983 degree, and when it began, is not documented; his ORCID record has an undated RSM entry only. No CV was found.",
+      "reason": "Second pass: no dated CV was found. The RePub JSON index has no inaugural address or dissertation of his with a CV (title searches on ergonomics and human factors return only other authors' theses), ORCID 0000-0001-6844-2225 still has a single undated RSM entry, and the 1983 Vanderbilt thesis could not be opened in a repository. Which of the posts the RSM profile names (Twente, Vanderbilt, the Foundation for Ergonomic Technology, TNO Institute of Preventive Health Care, the Netherlands Institute for Work and Employment) came first after the 1983 degree is still undocumented. Earlier review (2026-10-17): the RSM profile listed the 1983 Vanderbilt thesis and these posts without dates or order.",
       "sources": [
         {
           "url": "https://www.rsm.nl/people/jan-dul/",
           "title": "Jan Dul - RSM profile",
-          "notes": "Undated list of pre-RSM positions; doctoral thesis Dul, J. (1983), Vanderbilt University."
+          "notes": "Earlier review: undated list of pre-RSM posts; doctoral thesis Dul, J. (1983), Vanderbilt University."
         },
         {
           "url": "https://orcid.org/0000-0001-6844-2225",
           "title": "ORCID - Jan Dul",
-          "notes": "Read via the public ORCID API; single undated RSM employment entry."
+          "notes": "Public API: one undated RSM employment entry."
         }
       ],
+      "checkedAt": "2026-10-17",
       "source": "faculty-page"
     },
     {
@@ -53703,25 +54040,30 @@
       "facultyId": "roster:erasmus-university-rotterdam:peter-vervest",
       "name": "Peter Vervest",
       "status": "unresolved",
-      "checkedAt": "2026-10-17",
-      "reason": "The RSM and Erasmus University profiles give his title (prof.dr. P.H.M. Vervest, professor of information management and networks, now visiting professor) and publications, but no doctorate details and no career history. His ORCID record (0000-0002-5301-9309) lists only Erasmus University Rotterdam employment: full professor 2009-01 to 2013-12 and 2014-01 to 2021-09, then visiting professor from 2021-09, with no education entries. One web search found no dissertation record or earlier career. The PhD institution and year, and the first post-PhD job, are not established.",
+      "reason": "Second pass: the 'About the author' page of his 2021 ERIM lecture booklet 'Fast forward digital: A new kind of university' (RePub, ERIM EAL-2021-005-LIS) gives a dated outline: student at RSM from 1976, graduated in law and management science, joined Philips Telecommunications in 1979, 'graduated summa cum laude (1986) at Delft University of Technology' after specialising in open information systems, divisional director of Philips Electronics UK (1987), co-founded a high-tech software and project firm in London (1991), appointed professor at Erasmus in 1992, partner at D-Age (2000). The Delft 1986 graduation is most likely his doctorate, but the booklet does not say 'PhD' and the TU Delft repository search is script-drawn, so the degree is not verified. If it is, he was a Philips employee from 1979 through the degree, and the 1987 Philips Electronics UK directorship is a move within the same company rather than a documented new employer; the next new employer, the 1991 London firm, is unnamed. The first new post-PhD job therefore cannot be recorded. Earlier review (2026-10-17): the RSM and Erasmus profiles gave no doctorate or career history, and ORCID listed Erasmus posts from 2009 only.",
       "sources": [
         {
-          "url": "https://www.rsm.nl/people/peter-vervest/",
-          "title": "Peter Vervest - RSM",
-          "notes": "Short profile and publications; no degree or career dates."
+          "url": "https://repub.eur.nl/pub/135681",
+          "title": "RePub - P.H.M. Vervest (Peter), Fast forward digital: A new kind of university (2021-09-24)",
+          "notes": "Read with plain curl; ERIM lecture series booklet."
         },
         {
-          "url": "https://www.eur.nl/en/people/peter-vervest",
-          "title": "prof.dr. PHM (Peter) Vervest | Erasmus University Rotterdam",
-          "notes": "Same biography text; lists visiting professor; no degree or career dates."
+          "url": "https://repub.eur.nl/pub/135681/EAL2021005LIS9789058926173-002-.pdf",
+          "title": "Booklet PDF - About the author",
+          "notes": "Philips Telecommunications from 1979; 'graduated summa cum laude (1986) at Delft University of Technology'; Philips Electronics UK divisional director (1987); co-founded a London software and project firm (1991); professor at Erasmus from 1992; D-Age partner (2000)."
         },
         {
           "url": "https://orcid.org/0000-0002-5301-9309",
           "title": "ORCID record: Peter Vervest",
-          "notes": "Read via public API; Erasmus employment from 2009 only; no education."
+          "notes": "Public API: Erasmus employment from 2009 only; no education."
+        },
+        {
+          "url": "https://www.rsm.nl/people/peter-vervest/",
+          "title": "Peter Vervest - RSM",
+          "notes": "Earlier review: short profile and publications; no degree or career dates."
         }
       ],
+      "checkedAt": "2026-10-17",
       "source": "faculty-page"
     },
     {
@@ -53790,31 +54132,39 @@
     {
       "facultyId": "roster:george-mason-university:abhishek-ray",
       "name": "Abhishek Ray",
-      "status": "unresolved",
-      "checkedAt": "2026-10-17",
-      "reason": "Purdue's thesis repository records his Doctor of Philosophy dissertation (Management; chair Karthik Kannan) as published 2019-11-25. His GMU profile and personal site describe him as an assistant professor at GMU, with five years of IT consulting before entering academia and a 2018 research collaboration at Facebook during the PhD, but no source opened gives the GMU start date or says whether any job came between the late-2019 degree and GMU. A GMU research spotlight (about November 2021) gives no dates. No ORCID record with entries was found among the candidates checked.",
+      "status": "verified",
+      "employer": "George Mason University",
+      "position": "Assistant Professor",
+      "placementYear": 2019,
+      "category": "tenure-track",
+      "evidenceUrl": "https://orcid.org/0000-0001-9963-1918",
+      "evidenceNote": "His self-maintained ORCID record (linked to his personal site) gives Purdue Krannert PhD 2014-08-21 to 2019-12-16 and Assistant Professor, School of Business, George Mason University, from 2019-09-25. Purdue's thesis repository dates the dissertation 2019-11-25. The GMU post began about two to three months before the dissertation was deposited and the degree conferred, under the same title it still carries (not an ABD or visiting title later converted), so it keeps its 2019 start year; the overlap is stated. A plain assistant professorship at a US business school is recorded as tenure-track by the project convention.",
+      "phdYearVerified": 2019,
+      "phdInstitutionVerified": "Purdue University",
+      "reason": "Second pass: the ORCID record that earlier searches missed (0000-0001-9963-1918, carrying Purdue and GMU affiliations and his Google-site URL) dates the GMU start to September 2019, with nothing between the PhD and GMU; Purdue's repository gives the November 2019 dissertation and ORCID the December 2019 degree end.",
       "sources": [
         {
-          "url": "https://business.gmu.edu/profiles/aray8",
-          "title": "Abhishek Ray - Costello College of Business, GMU",
-          "notes": "Assistant professor; Ph.D. (MIS) Purdue (no year); IT consulting five years before academia."
+          "url": "https://orcid.org/0000-0001-9963-1918",
+          "title": "ORCID record 0000-0001-9963-1918 (public API)",
+          "notes": "Education: Purdue Krannert PhD 2014-08-21 to 2019-12-16 (also MS Economics 2016, MS Industrial Engineering 2017). Employment: GMU School of Business Assistant Professor from 2019-09-25. Researcher URL sites.google.com/view/abberay."
         },
         {
           "url": "https://hammer.purdue.edu/articles/thesis/Scalability_and_Business_Outcomes_Essays_on_Managing_Trade-Offs_when_Fringe_Technologies_go_Mainstream/11048195",
-          "title": "Purdue University Graduate School thesis - Scalability and Business Outcomes (Abhishek Ray), 2019",
-          "notes": "Read through the figshare public API: Doctor of Philosophy, Management, published 2019-11-25, chair Karthik Kannan, co-chair Hossein Ghasemkhani."
+          "title": "Purdue University Graduate School thesis - Scalability and Business Outcomes (Abhishek Ray)",
+          "notes": "Earlier review (figshare API): Doctor of Philosophy, Management, published 2019-11-25, chair Karthik Kannan."
         },
         {
           "url": "https://sites.google.com/view/abberay/",
           "title": "Abhishek Ray - personal website",
-          "notes": "Home, teaching and non-academic pages: Purdue PhD, Facebook research collaborator during 2018, no CV and no GMU start date."
+          "notes": "Re-read with curl: Assistant Professor, ISOM, Costello College of Business, GMU; PhD from Purdue's Daniels School; no CV or start date."
         },
         {
-          "url": "https://idia.gmu.edu/research-spotlight-on-abhishek-ray/",
-          "title": "Research Spotlight on Abhishek Ray - GMU Institute for Digital Innovation",
-          "notes": "Undated (photo path 2021/11); no employment dates."
+          "url": "https://business.gmu.edu/profiles/aray8",
+          "title": "Abhishek Ray - GMU profile",
+          "notes": "Assistant professor; links the personal site."
         }
       ],
+      "checkedAt": "2026-10-17",
       "source": "faculty-page"
     },
     {
@@ -53864,40 +54214,45 @@
       "facultyId": "roster:george-mason-university:amirhossein-alamdar-yazdi",
       "name": "Amirhossein Alamdar Yazdi",
       "status": "unresolved",
-      "checkedAt": "2026-10-17",
-      "reason": "ScholarWorks@UMass Amherst records his Doctor of Philosophy dissertation as issued 2018-09, and his ORCID record lists Assistant Professor, Decision Sciences and Marketing, Adelphi University, from 2018-09-01. The GMU profile says that before GMU he served as a visiting assistant professor at Lehigh University and as an assistant professor of decision sciences at Adelphi, without dates or order. If the Lehigh visiting post came after Adelphi, Adelphi (September 2018) is the first post-PhD job; if it came before, it fell before the September 2018 degree date and might count under the overlap rule. The Lehigh dates are not documented in the sources opened (one web search found no CV), so the case is left unresolved with Adelphi as the leading candidate.",
+      "reason": "Second pass: ORCID 0000-0002-6236-2950 still lists only Assistant Professor, Decision Sciences and Marketing, Adelphi University, from 2018-09-01, and the GMU profile (re-read) still names a Lehigh visiting assistant professorship and the Adelphi assistant professorship before GMU without dates or order. Lehigh's catalogue archive URLs tried (catalog.lehigh.edu archives, previous catalogs, faculty, decision and technology analytics) all return 404, and no CV was found. Adelphi (September 2018, the month of the UMass Amherst degree) remains the leading candidate, but the Lehigh post is still undated. Earlier review (2026-10-17): ScholarWorks dated the PhD 2018-09 and ORCID gave the Adelphi start; the Lehigh visiting post could have preceded it.",
       "sources": [
         {
           "url": "https://business.gmu.edu/profiles/aalamdar",
-          "title": "Amirhossein Alamdar Yazdi - Costello College of Business, GMU",
-          "notes": "Instructional assistant professor; earlier VAP at Lehigh and assistant professor at Adelphi (undated); PhD UMass Amherst."
+          "title": "Amirhossein Alamdar Yazdi - GMU profile",
+          "notes": "Re-read: before GMU, visiting assistant professor at Lehigh and assistant professor of decision sciences at Adelphi; PhD UMass Amherst; no dates."
         },
         {
           "url": "https://orcid.org/0000-0002-6236-2950",
           "title": "ORCID - Amirhossein Alamdar Yazdi",
-          "notes": "Public API read: Assistant Professor, Adelphi University, from 2018-09-01; no other entries."
+          "notes": "Public API: Assistant Professor, Adelphi University, from 2018-09-01; no other entries."
         },
         {
           "url": "https://hdl.handle.net/20.500.14394/17631",
-          "title": "ScholarWorks@UMass Amherst - The linkages among market structure, market conduct, and service quality (Alamdar Yazdi, Amirhossein), Ph.D. 2018-09",
-          "notes": "Read through the repository's public search API: Dissertation, Doctor of Philosophy, issued 2018-09."
+          "title": "ScholarWorks@UMass Amherst - Alamdar Yazdi dissertation",
+          "notes": "Earlier review: Doctor of Philosophy, issued 2018-09."
         }
       ],
+      "checkedAt": "2026-10-17",
       "source": "faculty-page"
     },
     {
       "facultyId": "roster:george-mason-university:amitava-dutta",
       "name": "Amitava Dutta",
       "status": "unresolved",
-      "checkedAt": "2026-10-17",
-      "reason": "The GMU profile states a PhD in management information systems from Purdue (no year) and that before joining Mason in 1992 he held faculty positions at the University of Iowa and the Simon School, University of Rochester (plus undated visiting posts at TU Darmstadt and IIM Calcutta), without dates or order. The PhD year and which of Iowa and Rochester came first are not documented in the sources opened. No ORCID record carrying his affiliations was found among the namesakes listed, and no CV was located.",
+      "reason": "Second pass: his old GMU personal page (mason.gmu.edu/~adutta) is a frameset whose bio frame (web_bio.htm) answers 403 Forbidden; nine ORCID records carry his name and none has GMU or Purdue affiliations among those shown; no CV was found and the Purdue doctorate could not be dated. The order of his Iowa and Rochester (Simon) faculty posts before he joined GMU in 1992 is still undocumented. Earlier review (2026-10-17): the GMU profile gave a Purdue MIS PhD (no year), GMU from 1992 and undated earlier faculty posts at Iowa and Rochester.",
       "sources": [
         {
           "url": "https://business.gmu.edu/profiles/adutta",
-          "title": "Amitava Dutta - Costello College of Business, GMU",
+          "title": "Amitava Dutta - GMU profile",
           "notes": "Joined Mason 1992; earlier faculty at Iowa and Rochester (Simon), undated; PhD Purdue (no year)."
+        },
+        {
+          "url": "https://mason.gmu.edu/~adutta/",
+          "title": "Amitava Dutta - GMU personal page",
+          "notes": "Frameset; bio frame web_bio.htm returns 403 Forbidden."
         }
       ],
+      "checkedAt": "2026-10-17",
       "source": "faculty-page"
     },
     {
@@ -54036,25 +54391,25 @@
       "facultyId": "roster:george-mason-university:fatou-diouf",
       "name": "Fatou Diouf",
       "status": "unresolved",
-      "checkedAt": "2026-10-17",
-      "reason": "theses.fr records a doctorate by Fatou Diouf at Clermont-Ferrand 2 (Université Blaise Pascal), Électromagnétisme, 2008 (probabilistic methods for electromagnetic-compatibility coupling), which matches the GMU profile's PhD in Electronics (statistical modelling and simulation) from Blaise Pascal; a 2014 Rouen thesis by a Fatou Diouf on EMI prediction for DC motors also exists and may be a namesake. The GMU profile says she was a Marie-Curie Research Fellow and worked for several years as a research scientist and consultant in the Netherlands, then taught business analytics at Old Dominion University before GMU, all without dates or employers. The first post-PhD job and its date are not established; no ORCID record with entries or CV was found.",
+      "reason": "Second pass: no further dated source was found. Her GMU personal page (mason.gmu.edu/~fdiouf) answers 403, the GMU profile still describes an undated Marie-Curie Research Fellowship, research-scientist and consulting work in the Netherlands and teaching at Old Dominion University, and ORCID 0000-0001-9380-6123 (identity unconfirmed) has no entries. A CORDIS lookup of the Marie Curie project was not completed (the CORDIS search is script-driven). The first post after the 2008 Clermont-Ferrand doctorate is still undated. Earlier review (2026-10-17): theses.fr recorded the 2008 Blaise Pascal doctorate, and the GMU profile gave undated post-doctoral work.",
       "sources": [
         {
           "url": "https://business.gmu.edu/profiles/fdiouf",
-          "title": "Fatou Diouf - Costello College of Business, GMU",
-          "notes": "Joined from ODU; Marie-Curie Research Fellow; research scientist and consultant in the Netherlands (undated); PhD Electronics, Université Blaise Pascal."
+          "title": "Fatou Diouf - GMU profile",
+          "notes": "Re-read with curl: Marie-Curie Research Fellow; research scientist and consultant in the Netherlands; Old Dominion before GMU; all undated."
         },
         {
           "url": "https://theses.fr/2008CLF21832",
-          "title": "theses.fr - Application de méthodes probabilistes à l'analyse des couplages en Compatibilité Électromagnétique (Fatou Diouf, Clermont-Ferrand 2, 2008)",
-          "notes": "Read through the theses.fr public search API: defended 2008, discipline Électromagnétisme, directors Paladian and Fogli."
+          "title": "theses.fr - Fatou Diouf, Clermont-Ferrand 2, 2008",
+          "notes": "Earlier review: defended 2008, Electromagnetisme."
         },
         {
           "url": "https://orcid.org/0000-0001-9380-6123",
           "title": "ORCID - Fatou Diouf",
-          "notes": "Public API read: no education or employment entries (identity not confirmed)."
+          "notes": "Public API: no entries (identity not confirmed)."
         }
       ],
+      "checkedAt": "2026-10-17",
       "source": "faculty-page"
     },
     {
@@ -54275,30 +54630,30 @@
       "facultyId": "roster:george-mason-university:pallab-sanyal",
       "name": "Pallab Sanyal",
       "status": "unresolved",
-      "checkedAt": "2026-10-17",
-      "reason": "His University of Minnesota dissertation ('Design implications of real-time feedback in continuous combinatorial auctions: an experimental investigation') is dated 2009-06 in the UMN Conservancy. The GMU profile says he worked nine years as an IT consultant before academia and received a GMU teaching award in 2014, but gives no start date for GMU or any other post-PhD job. His personal site (psanyal.net, linked from the profile) is now a parked domain, his ORCID record (0000-0003-0439-0248) has no entries, and one search found no CV, so the first post-PhD job is undocumented.",
+      "reason": "Second pass: ORCID 0000-0003-0439-0248 still has no entries, his GMU personal page (mason.gmu.edu/~psanyal) shows only a placeholder ('Hello World'), and the GMU profile still gives no start date. No 2009 GMU new-faculty announcement or CV was found. The first post after the June 2009 Minnesota dissertation is undocumented. Earlier review (2026-10-17): the UMN Conservancy dated the dissertation 2009-06, the GMU profile gave nine years of IT consulting before academia and no dates, and his personal domain was parked.",
       "sources": [
         {
           "url": "https://business.gmu.edu/profiles/psanyal",
-          "title": "George Mason University Costello College of Business - Pallab Sanyal",
-          "notes": "Current Professor and ISOM Area Chair; nine years as an IT consultant before academia; GMU Teaching Excellence Award 2014; no dated chronology."
+          "title": "Pallab Sanyal - GMU profile",
+          "notes": "Re-read with curl: current professor and area chair; no dated chronology."
+        },
+        {
+          "url": "https://mason.gmu.edu/~psanyal/",
+          "title": "Pallab Sanyal - GMU personal page",
+          "notes": "Placeholder text only."
         },
         {
           "url": "https://conservancy.umn.edu/server/api/discover/search/objects?query=Sanyal%20Pallab&dsoType=ITEM&size=5",
-          "title": "University of Minnesota Conservancy search - Sanyal, Pallab dissertation",
-          "notes": "Thesis or dissertation 'Design implications of real-time feedback in continuous combinatorial auctions: an experimental investigation', issued 2009-06 (handle 11299/54813)."
-        },
-        {
-          "url": "http://psanyal.net",
-          "title": "psanyal.net (personal site linked from GMU profile)",
-          "notes": "Returns only a redirect to a parked-domain lander; no content."
+          "title": "University of Minnesota Conservancy search - Sanyal dissertation",
+          "notes": "Earlier review: dissertation issued 2009-06 (handle 11299/54813)."
         },
         {
           "url": "https://orcid.org/0000-0003-0439-0248",
-          "title": "ORCID record 0000-0003-0439-0248 (Pallab Sanyal)",
-          "notes": "Read through the public ORCID API; no employment or education entries."
+          "title": "ORCID record 0000-0003-0439-0248",
+          "notes": "Public API: no entries."
         }
       ],
+      "checkedAt": "2026-10-17",
       "source": "faculty-page"
     },
     {
