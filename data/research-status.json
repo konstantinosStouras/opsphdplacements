@@ -4,24 +4,24 @@
     "updatedAt": "2026-10-17",
     "total": 3161,
     "counts": {
-      "unresolved": 1321,
-      "verified": 1836,
+      "unresolved": 1313,
+      "verified": 1844,
       "not-yet-completed-phd": 4
     },
     "bySource": {
       "omlist": {
         "total": 2149,
         "counts": {
-          "unresolved": 840,
-          "verified": 1308,
+          "unresolved": 837,
+          "verified": 1311,
           "not-yet-completed-phd": 1
         }
       },
       "faculty-page": {
         "total": 1012,
         "counts": {
-          "verified": 528,
-          "unresolved": 481,
+          "verified": 533,
+          "unresolved": 476,
           "not-yet-completed-phd": 3
         }
       }
@@ -343,16 +343,39 @@
     {
       "facultyId": "omlist-146aeb97af495e0b",
       "name": "Yossiri Adulyasak",
-      "status": "unresolved",
-      "checkedAt": "2026-10-16",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "employer": "Massachusetts Institute of Technology (Singapore-MIT Alliance for Research and Technology, SMART)",
+      "position": "Postdoctoral Associate",
+      "placementYear": 2013,
+      "category": "postdoc",
+      "evidenceUrl": "https://sites.google.com/site/ayossiri/brief-cv",
+      "evidenceNote": "His Brief CV (personal site linked from the HEC Montréal profile; last updated June 2025) gives the HEC Montréal Ph.D. in Business Administration (operations research and logistics; supervisors Cordeau and Jans) as 2009-2012, then under Academic and Research Positions: 2013-2014 Postdoctoral Associate, Massachusetts Institute of Technology, Singapore-MIT Alliance for Research and Technology (SMART), supervisor Patrick Jaillet; under full-time employment 2014-2015 Data Scientist at JDA Software; and HEC Montréal Assistant Professor from 2015. Earlier full-time posts (Colgate-Palmolive 2007-2009) predate the doctorate. The MIT/SMART postdoc is the first post after the 2012 degree. Verifier: phdYearVerified corrected from 2012 to null: the Brief CV lists every education entry as a period and gives the HEC Montreal Ph.D. only as 2009-2012, and a study period is not a conferral year; no opened source dates the conferral (the chunk's 2012 is not contradicted). The first-job finding does not depend on the exact year: his GERAD biography confirms the order doctorate, postdoctoral research, JDA data scientist, return to academia.",
+      "phdYearVerified": null,
+      "phdInstitutionVerified": "HEC Montreal",
+      "reason": "Second pass: the dated Brief CV on his personal Google site (plain curl) gives the full sequence after the 2012 HEC Montréal Ph.D.: MIT/SMART postdoc 2013-2014, JDA data scientist 2014-2015, HEC Montréal assistant professor from 2015. The HEC profile confirms the HEC doctorate and links the site; his ORCID record (0000-0002-6996-0742) is empty. Earlier review (2026-10-16): the HEC Montréal profile focuses on current research and supervision without a first-job chronology.",
       "sources": [
         {
+          "url": "https://sites.google.com/site/ayossiri/brief-cv",
+          "title": "Yossiri Adulyasak - Brief CV (personal site)",
+          "notes": "Read with plain curl. Positions: 2013-2014 Postdoctoral Associate, MIT / SMART (supervisor Patrick Jaillet); HEC Montréal Assistant Professor 2015-2020, Associate 2020-2025, Full 2025-; full-time employment JDA Software Data Scientist 2014-2015, Colgate-Palmolive 2007-2009. Education: HEC Montréal Ph.D. 2009-2012."
+        },
+        {
           "url": "https://www.hec.ca/en/profs/yossiri.adulyasak.html",
-          "title": "Yossiri Adulyasak official profile",
-          "notes": "HEC Montreal profile focuses on current research and supervision without a complete first-job chronology."
+          "title": "Yossiri Adulyasak - HEC Montréal profile",
+          "notes": "Read with plain curl: Professor; Ph.D. (gestion des opérations et de la logistique), HEC Montréal; links the personal page."
+        },
+        {
+          "url": "https://orcid.org/0000-0002-6996-0742",
+          "title": "ORCID record 0000-0002-6996-0742 - Yossiri Adulyasak (public API)",
+          "notes": "Name only; no affiliations."
+        },
+        {
+          "url": "https://www.gerad.ca/en/people/yossiri-adulyasak",
+          "title": "GERAD - Yossiri Adulyasak (biography)",
+          "notes": "Opened by the verifier with plain curl: early research as a PhD student on integrated production-inventory-distribution planning; then postdoctoral research on stochastic and robust vehicle routing; before returning to academia he worked at JDA Innovation Labs in Montreal as a data scientist. No dates."
         }
       ],
-      "reason": "HEC Montreal profile focuses on current research and supervision without a complete first-job chronology.",
       "source": "omlist"
     },
     {
@@ -2534,13 +2557,23 @@
       "facultyId": "omlist-eabccef0836ffdb8",
       "name": "Volodymyr Babich",
       "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "The Georgetown biography identifies Case Western doctorate and earlier Michigan appointment and visiting roles without dates or initial-employer wording.",
+      "checkedAt": "2026-10-17",
+      "reason": "Second pass: the Georgetown McDonough profile (plain curl) still lists, without dates or order, an Assistant Professorship at the University of Michigan, Ann Arbor, visiting posts at London Business School, Chicago Booth and Wharton, and the Case Western Weatherhead PhD in Operations Research with no year; it links no CV or personal site. The ORCID public API has no record under his name; guessed Georgetown faculty-site URLs (faculty.georgetown.edu/vob2) return 404; the University of Michigan Regents' Proceedings search (quod.lib.umich.edu), which would date a Michigan appointment, answers a Cloudflare bot check to curl and to a headless browser; the Internet Archive refused the connection; one web search for a CV found only namesakes. The start year of the Michigan assistant professorship, whether anything preceded it after the degree, and the degree year remain undocumented. Earlier review (2026-10-16): the Georgetown biography names the Case Western doctorate and an earlier Michigan appointment and visiting roles, without dates or initial-employer wording.",
       "sources": [
         {
           "url": "https://msb.georgetown.edu/profiles/volodymyr-babich/",
-          "title": "Volodymyr Babich academic profile",
-          "notes": "The Georgetown biography identifies Case Western doctorate and earlier Michigan appointment and visiting roles without dates or initial-employer wording."
+          "title": "Volodymyr Babich - Georgetown McDonough profile",
+          "notes": "Read with plain curl. Heisley Family Chair Professor; past roles listed without dates: visiting Associate Professor LBS, visiting scholar Chicago Booth and Wharton, Assistant Professor University of Michigan, Ann Arbor; Ph.D. in Operations Research, Case Western Reserve University (no year). No CV link."
+        },
+        {
+          "url": "https://pub.orcid.org/v3.0/expanded-search/?q=given-names:Volodymyr+AND+family-name:Babich&rows=10",
+          "title": "ORCID public API search - Volodymyr Babich",
+          "notes": "No matching record (num-found 0)."
+        },
+        {
+          "url": "https://quod.lib.umich.edu/cgi/t/text/text-idx?c=umregproc;cc=umregproc;type=simple;rgn=full%20text;q1=Babich;view=reslist;subview=detail;sort=occur",
+          "title": "University of Michigan Regents' Proceedings full-text search (attempted)",
+          "notes": "Cloudflare security check (HTTP 403) to curl and to a headless browser; not read."
         }
       ],
       "source": "omlist"
@@ -5507,18 +5540,28 @@
       "facultyId": "omlist-ed8c63e01bae0661",
       "name": "Valérie Bélanger",
       "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "The official HEC Montreal profile lists a PhD in administration from HEC Montreal but no degree year and no appointment dates. A search snippet of a LinkedIn profile suggests an assistant professor role starting June 2016, but the LinkedIn page could not be opened and it does not exclude a postdoc or other position between 2015 and 2016, so no first job is established.",
+      "checkedAt": "2026-10-17",
+      "reason": "Second pass: her ORCID record (0000-0001-9184-7896, HEC Montréal) lists one employment, 'Professeure adjointe', Gestion des opérations et de la logistique, HEC Montréal, with no dates, and no education; another Valerie Belanger record (0000-0003-1981-0663) is empty and cannot be tied to her. The English and French HEC profiles (plain curl) give the HEC Ph.D. in administration and Laval engineering degrees without years and no appointment history; the guessed HEC thesis PDF addresses return 404. The 2016 assistant-professor start seen earlier only in a LinkedIn snippet remains unconfirmed, and nothing opened excludes a postdoc or other post between the 2015 degree and HEC. Earlier review (2026-10-16): the HEC profile lists the HEC PhD without year and no appointment dates; a LinkedIn snippet suggesting an assistant professorship from June 2016 could not be opened.",
       "sources": [
         {
-          "url": "https://www.hec.ca/profs/valerie.3.belanger.html",
+          "url": "https://orcid.org/0000-0001-9184-7896",
+          "title": "ORCID record 0000-0001-9184-7896 - Valérie Bélanger (public API)",
+          "notes": "Employment: HEC Montréal, Gestion des opérations et de la logistique, Professeure adjointe (no dates); no education."
+        },
+        {
+          "url": "https://www.hec.ca/en/profs/valerie.3.belanger.html",
           "title": "Valérie Bélanger - HEC Montréal profile",
-          "notes": "Opened; degrees without years; no earlier positions or hiring date."
+          "notes": "Read with plain curl: Professor; Ph.D. (administration), HEC Montréal; M.Sc. and B.Ing. Université Laval (no years); no appointment history."
+        },
+        {
+          "url": "https://www.hec.ca/profs/valerie.3.belanger.html",
+          "title": "Valérie Bélanger - HEC Montréal profile (French)",
+          "notes": "Read with plain curl; no biography with dates."
         },
         {
           "url": "https://ca.linkedin.com/in/val%C3%A9rie-b%C3%A9langer-933128127",
           "title": "Valérie Bélanger - LinkedIn",
-          "notes": "Attempted; page content not accessible. Only a search snippet (assistant professor from 2016) was seen; not relied on."
+          "notes": "Earlier review: not accessible; snippet only, not relied on."
         }
       ],
       "source": "omlist"
@@ -6637,15 +6680,25 @@
       "facultyId": "omlist-9eec37c81f8261c9",
       "name": "Remi Charpin",
       "status": "unresolved",
-      "checkedAt": "2026-10-16",
+      "checkedAt": "2026-10-17",
+      "reason": "Second pass: his ORCID record (0000-0002-8853-8889) lists a single employment, HEC Montréal from 2018-08-30, without a title, and no education; the HEC profile (plain curl) gives 'Ph. D., Clemson University' and an MBA from Winthrop without years and no appointment history. The Clemson degree date could not be checked: TigerPrints search pages answer 403 to curl, the reader proxy and a headless browser, and a full harvest of the Clemson OAI-PMH dissertation set (44 pages) contains no record for Charpin. Without the degree date and starting title, the August 2018 HEC Montréal post cannot be placed against the doctorate or classified. Earlier review (2026-10-16): the HEC biography identifies the Clemson doctorate and current role without dated initial employment.",
       "sources": [
         {
+          "url": "https://orcid.org/0000-0002-8853-8889",
+          "title": "ORCID record 0000-0002-8853-8889 - Remi Charpin (public API)",
+          "notes": "Employment: HEC Montréal from 2018-08-30 (no title); no education entries."
+        },
+        {
           "url": "https://www.hec.ca/en/profs/remi.charpin.html",
-          "title": "Remi Charpin Profile",
-          "notes": "HEC biography identifies Clemson doctorate and current role without dated initial employment."
+          "title": "Rémi Charpin - HEC Montréal profile",
+          "notes": "Read with plain curl: Associate Professor, Department of Logistics and Operations Management; Education: Ph. D., Clemson University; MBA, Winthrop University (no years)."
+        },
+        {
+          "url": "https://open.clemson.edu/do/oai/?verb=ListRecords&metadataPrefix=oai_dc&set=publication:all_dissertations",
+          "title": "Clemson TigerPrints OAI-PMH - all_dissertations set",
+          "notes": "Harvested all 44 pages with plain curl; no record mentioning Charpin."
         }
       ],
-      "reason": "HEC biography identifies Clemson doctorate and current role without dated initial employment.",
       "source": "omlist"
     },
     {
@@ -8408,19 +8461,37 @@
     {
       "facultyId": "omlist-7131987608ee080c",
       "name": "Jean-François Cordeau",
-      "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "HEC Montréal pages give the 1999 Polytechnique Montréal PhD and describe him as an HEC professor since 1999 with Master's program responsibility from 2000, but no dated CV was retrieved, the title at start is not stated, and a postdoctoral or other earlier role is not explicitly excluded.",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "employer": "HEC Montréal",
+      "position": null,
+      "placementYear": 1999,
+      "category": "unknown",
+      "evidenceUrl": "https://www.hec.ca/en/about/contributors/jean-francois-cordeau.html",
+      "evidenceNote": "HEC Montréal's own contributor page describes him as 'An HEC Montréal Professor since 1999', and the GERAD profile says he obtained his Ph.D. in Applied Mathematics at the École Polytechnique de Montréal in 1999 and was responsible for HEC's M.Sc. in Global Supply Chain Management from 2000. HEC Montréal is the only employer named, from the same year as the degree; the starting rank is not stated ('Professor' is generic), so position and category are unknown.",
+      "phdYearVerified": 1999,
+      "phdInstitutionVerified": "Polytechnique Montréal",
+      "reason": "Second pass: re-read with plain curl, the HEC Montréal contributor page dates his HEC professorship from 1999 and the GERAD profile dates the Polytechnique Ph.D. to 1999; no other employer appears on either page or on his HEC profile (the GERAD supervision list names postdocs he supervised, not a postdoc of his own). The HEC profile links no CV and his ORCID record (0000-0002-4963-1298) is empty, so the 1999 title is unknown; verifier: a short post-doctoral stint within 1999 before HEC is not excluded by any source, though none is mentioned. Earlier review (2026-10-16): the HEC pages give the 1999 Polytechnique PhD and an HEC professorship since 1999, but the starting title was not stated and a postdoctoral or earlier role was not explicitly excluded.",
       "sources": [
         {
           "url": "https://www.hec.ca/en/about/contributors/jean-francois-cordeau.html",
-          "title": "HEC Montréal - Jean-François Cordeau",
-          "notes": "Professor at HEC since 1999; no earlier employer listed."
+          "title": "HEC Montréal - Jean-François Cordeau (contributors page)",
+          "notes": "Read with plain curl: 'An HEC Montréal Professor since 1999 ... In 2006, at age 35, he became the youngest holder of a Canada Research Chair at the School.'"
         },
         {
           "url": "https://www.gerad.ca/en/people/42",
           "title": "GERAD - Jean-François Cordeau",
-          "notes": "PhD Applied Mathematics 1999; dated roles from 2000; no first-job statement."
+          "notes": "Read with plain curl: Ph.D. in Applied Mathematics at the École Polytechnique de Montréal in 1999; professor of Operations Management at HEC Montréal; responsible for the M.Sc. in Global Supply Chain Management 2000-2018."
+        },
+        {
+          "url": "https://www.hec.ca/en/profs/jean-francois.cordeau.html",
+          "title": "Jean-François Cordeau - HEC Montréal profile",
+          "notes": "Read with plain curl: Professor; M.Sc. HEC Montréal; Ph.D. (mathématiques de l'ingénieur), Polytechnique Montréal; no dates, no CV."
+        },
+        {
+          "url": "https://orcid.org/0000-0002-4963-1298",
+          "title": "ORCID record 0000-0002-4963-1298 - Jean-François Cordeau (public API)",
+          "notes": "Name only; no affiliations."
         }
       ],
       "source": "omlist"
@@ -8574,13 +8645,28 @@
       "facultyId": "omlist-38117ae85e98e026",
       "name": "Martin Cousineau",
       "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "HEC profile lists McGill doctorate without year and current teaching, with no early employment chronology.",
+      "checkedAt": "2026-10-17",
+      "reason": "Second pass: his ORCID record (0000-0001-9184-3553) dates his employment as Assistant Professor, Department of Logistics and Operations Management, HEC Montréal, from 2018-06-01 to 2025-05-31 and Associate Professor from 2025-06-01, while his website gives the McGill Ph.D. in Management as 2020 and McGill's repository dates the thesis 'Analytics for medical decision making: Applications to the management of treatment-resistant depression' (supervisor Vedat Verter) to 2020. The HEC assistant professorship therefore began about two years before the degree and simply continued (the 2025 promotion is internal), so under the overlap decision it is a pre-degree job, not a first post-PhD job; no new employer after 2020 is documented. His CV link (martincousi.github.io/uploads/CV.pdf) returns 404. Earlier review (2026-10-16): the HEC profile lists a McGill doctorate without year and current teaching, with no early employment chronology.",
       "sources": [
         {
+          "url": "https://orcid.org/0000-0001-9184-3553",
+          "title": "ORCID record 0000-0001-9184-3553 - Martin Cousineau (public API)",
+          "notes": "Employment (self-asserted): HEC Montréal, Logistics and Operations Management, Assistant Professor 2018-06-01 to 2025-05-31; Associate Professor from 2025-06-01."
+        },
+        {
+          "url": "https://martincousi.github.io/",
+          "title": "Martin Cousineau - personal website",
+          "notes": "Read with plain curl: Associate Professor, HEC Montréal; Education: Ph.D. in Management, 2020, McGill; M.Sc. 2013 HEC Montréal; B.Ing. 2010 Polytechnique. CV link (./uploads/CV.pdf) returns 404."
+        },
+        {
+          "url": "https://mcgill.scholaris.ca/server/api/discover/search/objects?query=Cousineau%20Martin&dsoType=ITEM&size=3",
+          "title": "McGill Scholaris REST search - Cousineau, Martin (thesis 20.500.14905/124106)",
+          "notes": "Analytics for medical decision making: Applications to the management of treatment-resistant depression; Doctor of Philosophy, McGill University; supervisor Verter, Nafiz Vedat; dc.date.issued 2020."
+        },
+        {
           "url": "https://www.hec.ca/en/profs/martin.cousineau.html",
-          "title": "Martin Cousineau public academic profile",
-          "notes": "HEC profile lists McGill doctorate without year and current teaching, with no early employment chronology."
+          "title": "Martin Cousineau - HEC Montréal profile",
+          "notes": "Read with plain curl: Associate Professor; Ph.D. (management), McGill University (no year); links personal page."
         }
       ],
       "source": "omlist"
@@ -14792,13 +14878,28 @@
       "facultyId": "omlist-7620a7756535e3e9",
       "name": "Deepa Goradia",
       "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "The GSU profile lists the South Carolina doctorate and current role, but no degree date or earliest employment chronology.",
+      "checkedAt": "2026-10-17",
+      "reason": "Second pass: her ORCID record (0000-0003-3321-8789) lists a single employment, Georgia State University from 2020-08-01, and no education. Crossref metadata for her 2018 Journal of Operations Management papers shows she published as Deepa Wani (with Manoj Malhotra and Sriram Venkataraman), and the University of South Carolina Scholar Commons OAI feed records her dissertation 'Investigating The Role Of Internal Hospital Factors And The External Environment On Healthcare Quality Outcomes And Patient Choice' by Wani, Deepa, dated 2016. So there are about four years between the 2016 degree and the August 2020 Georgia State start, and no opened source names or dates what she did then (a first post elsewhere is likely). The GSU profile gives only the South Carolina Ph.D. (Management Science); an ORCID search under Wani found nothing and one web search under the Wani name returned nothing relevant. Earlier review (2026-10-16): the GSU profile lists the South Carolina doctorate and current role, with no degree date or earliest employment chronology.",
       "sources": [
         {
+          "url": "https://orcid.org/0000-0003-3321-8789",
+          "title": "ORCID record 0000-0003-3321-8789 - Deepa Goradia (public API)",
+          "notes": "Employment: Georgia State University from 2020-08-01; no other entries."
+        },
+        {
+          "url": "https://scholarcommons.sc.edu/etd/3816",
+          "title": "Wani, Deepa (2016) dissertation - University of South Carolina Scholar Commons (OAI record)",
+          "notes": "Read through the Scholar Commons OAI-PMH feed (set badm_etd; the item page answers 403 to curl): Investigating The Role Of Internal Hospital Factors And The External Environment On Healthcare Quality Outcomes And Patient Choice; creator Wani, Deepa; date 2016."
+        },
+        {
+          "url": "https://api.crossref.org/works/10.1016/j.jom.2017.12.002",
+          "title": "Crossref metadata - Impact of competition on process of care and resource investments (JOM, 2018)",
+          "notes": "Authors Deepa Wani, Manoj Malhotra, Sriram Venkataraman; no affiliations in the metadata. Name variant Wani identified; the OM List profile lists this paper under Goradia."
+        },
+        {
           "url": "https://robinson.gsu.edu/profile/deepa-goradia/",
-          "title": "Deepa Goradia academic profile",
-          "notes": "The GSU profile lists the South Carolina doctorate and current role, but no degree date or earliest employment chronology."
+          "title": "Deepa Goradia - Georgia State Robinson profile",
+          "notes": "Read with plain curl: Ph.D. (Management Science), University of South Carolina; publications; no dates or earlier employers."
         }
       ],
       "source": "omlist"
@@ -19378,19 +19479,42 @@
     {
       "facultyId": "omlist-813759f353d63510",
       "name": "Victor Jose",
-      "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "The Georgetown and personal biographies describe research and current role without a dated early career chronology.",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "employer": "Georgetown University (McDonough School of Business)",
+      "position": "Assistant Professor",
+      "placementYear": 2009,
+      "category": "tenure-track",
+      "evidenceUrl": "https://orcid.org/0000-0001-8078-368X",
+      "evidenceNote": "His ORCID record (self-asserted; linked from his own website) dates his employment as Assistant Professor, McDonough School of Business, Georgetown University, 2009-08 to 2015-07, then Associate Professor 2015-08 to 2023-07 and Professor from 2023-08, with no earlier post. The DukeSpace record of his Duke dissertation (Business Administration; advisor Robert L. Winkler) is dated 2009 and was deposited 1 May 2009, so the Georgetown assistant professorship from August 2009 follows the degree directly, leaving no room for an intervening job.",
+      "phdYearVerified": 2009,
+      "phdInstitutionVerified": "Duke University",
+      "reason": "Second pass: the ORCID public API record linked from his Google site gives a dated chronology starting with the Georgetown assistant professorship in August 2009, and DukeSpace dates the Duke PhD dissertation 2009 (deposited May 2009). A plain assistant professorship at a North American business school is recorded as tenure-track by convention. The ORCID record has no education entry; the degree is from DukeSpace. Earlier review (2026-10-16): the Georgetown and personal biographies describe research and his current role without a dated early-career chronology.",
       "sources": [
         {
-          "url": "https://msb.georgetown.edu/profiles/victor-jose/",
-          "title": "Victor Jose academic profile",
-          "notes": "The Georgetown and personal biographies describe research and current role without a dated early career chronology."
+          "url": "https://orcid.org/0000-0001-8078-368X",
+          "title": "ORCID record 0000-0001-8078-368X - Victor Richmond Jose (public API)",
+          "notes": "Read through pub.orcid.org/v3.0. Employment (self-asserted): Georgetown University, McDonough School of Business, Assistant Professor 2009-08 to 2015-07; Associate Professor 2015-08 to 2023-07; Professor, Operations and Analytics Area, from 2023-08. No education entries."
+        },
+        {
+          "url": "https://dukespace.lib.duke.edu/server/api/discover/search/objects?query=Victor%20Richmond%20Jose&dsoType=ITEM&size=5",
+          "title": "DukeSpace REST search - dissertation record 10161/1270 (Jose, Victor Richmond)",
+          "notes": "Read through the DukeSpace REST search API (the handle page is a script-drawn shell). Item 10161/1270: The Verification of Probabilistic Forecasts in Decision and Risk Analysis; Dissertation; Business Administration; advisor Winkler, Robert L; dc.date.issued 2009; accessioned 2009-05-01."
         },
         {
           "url": "https://sites.google.com/view/vrjose",
-          "title": "Victor Jose academic profile",
-          "notes": "The Georgetown and personal biographies describe research and current role without a dated early career chronology."
+          "title": "Victor Richmond R. Jose, PhD - personal website",
+          "notes": "Read with plain curl. Professor, Operations and Analytics, Georgetown McDonough; links his ORCID iD 0000-0001-8078-368X; research page lists publications from 2008 with Duke co-authors (Winkler, Nau); no CV."
+        },
+        {
+          "url": "https://msb.georgetown.edu/profiles/victor-jose/",
+          "title": "Victor Jose - Georgetown McDonough profile",
+          "notes": "Current role and research only; no dates."
+        },
+        {
+          "url": "https://gufaculty360.georgetown.edu/s/contact/00336000014RZ3eAAG/victor-jose",
+          "title": "Victor Jose - Georgetown Faculty360 profile",
+          "notes": "Rendered in a headless browser: Professor, McDonough School of Business; Education: Duke University - Ph.D. (no year); no appointment dates."
         }
       ],
       "source": "omlist"
@@ -19691,18 +19815,23 @@
       "facultyId": "omlist-fb152b1e1e8626dd",
       "name": "Basak Kalkanci",
       "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "The Scheller College profile lists the Stanford Management Science and Engineering PhD 2010 and states she 'worked as a postdoctoral associate at MIT before joining Georgia Tech', but gives no dates for the postdoc or the Georgia Tech start, and the Georgia Tech energy-institute page adds nothing. ORCID search found no record; Stanford MS&E alumni and archived Scheller pages could not be fetched; searches surfaced no CV. The MIT postdoctoral position is the likely first post-PhD job but its start year and any intervening role are undocumented.",
+      "checkedAt": "2026-10-17",
+      "reason": "Second pass: the Scheller profile (plain curl) again gives the Stanford Management Science and Engineering PhD (2010) and says she 'worked as a postdoctoral associate at MIT before joining Georgia Tech', with no dates; it links only paper PDFs and news items, no CV or personal site. The ORCID public API has no record for her (seven Kalkanci records, none hers); Stanford SearchWorks rejected both curl and a headless browser ('requested URL was rejected'), so the dissertation record was not read; one web search for a CV returned only unrelated people. The MIT postdoctoral associate post is the only post named between the degree and Georgia Tech, but its start year (and whether it began after the 2010 degree) and the Georgia Tech start year remain undocumented. Earlier review (2026-10-16): the Scheller profile lists the 2010 Stanford PhD and an undated MIT postdoc before Georgia Tech; ORCID, Stanford MS&E alumni and archived Scheller pages could not be used.",
       "sources": [
         {
           "url": "https://www.scheller.gatech.edu/directory/faculty/kalkanci/index.html",
-          "title": "Basak Kalkanci — Georgia Tech Scheller College of Business directory",
-          "notes": "PhD 2010 Stanford, BS 2004 Boğaziçi; undated MIT postdoctoral associate statement; no CV."
+          "title": "Basak Kalkanci - Georgia Tech Scheller College of Business directory",
+          "notes": "Read with plain curl. Ph.D. in Management Science and Engineering, Stanford University, 2010; B.S. Bogazici 2004; 'She worked as a postdoctoral associate at MIT before joining Georgia Tech' (undated); awards 2014-2019; no CV."
         },
         {
-          "url": "https://www.energy.gatech.edu/people/basak-kalkanci",
-          "title": "Basak Kalkanci — Georgia Tech Strategic Energy Institute people page (search result)",
-          "notes": "Title and contact only per search summary; not opened."
+          "url": "https://pub.orcid.org/v3.0/expanded-search/?q=family-name:Kalkanci&rows=10",
+          "title": "ORCID public API search - Kalkanci",
+          "notes": "Seven records, none for Basak Kalkanci."
+        },
+        {
+          "url": "https://searchworks.stanford.edu/?q=Kalkanci+Basak&search_field=search",
+          "title": "Stanford SearchWorks search (attempted)",
+          "notes": "Request rejected (support-ID page) to curl and a headless browser; not read."
         }
       ],
       "source": "omlist"
@@ -19761,13 +19890,23 @@
       "facultyId": "omlist-9c893e4030e66468",
       "name": "Bardia Kamrad",
       "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "Search returned no relevant biography; no CV or dated career history located for the 1990 Case Western degree.",
+      "checkedAt": "2026-10-17",
+      "reason": "Second pass: his individual Georgetown McDonough profile (plain curl) says he joined Georgetown's faculty in the Fall of 1991 but gives no title at entry and no earlier positions, and links no CV. The Mathematics Genealogy Project records his Case Western Reserve University Ph.D. as 1990. His ORCID record (0000-0003-3451-3501) has no employment or education entries. Nothing opened covers the interval between the 1990 degree and the Fall 1991 Georgetown appointment, so whether Georgetown was his first post-PhD job (and his starting rank) is undocumented. Earlier review (2026-10-16): search returned no relevant biography and no CV or dated career history was located; only the school homepage had been reached.",
       "sources": [
         {
-          "url": "https://msb.georgetown.edu/",
-          "title": "Georgetown McDonough",
-          "notes": "Search results were about other faculty."
+          "url": "https://msb.georgetown.edu/profiles/bardia-kamrad/",
+          "title": "Bardia Kamrad - Georgetown McDonough profile",
+          "notes": "Read with plain curl. 'Professor Kamrad joined the Georgetown's Faculty in the Fall of 1991'; research, teaching and memberships; no rank at entry, no earlier employers, no CV."
+        },
+        {
+          "url": "https://www.mathgenealogy.org/id.php?id=155620",
+          "title": "Mathematics Genealogy Project - Bardia Kamrad",
+          "notes": "Ph.D. Case Western Reserve University 1990; dissertation: A Multinomial Lattice Option Pricing Methodology for Valuing Risky Ventures with Multiple Sources of Uncertainty."
+        },
+        {
+          "url": "https://orcid.org/0000-0003-3451-3501",
+          "title": "ORCID record 0000-0003-3451-3501 - Bardia Kamrad (public API)",
+          "notes": "Name only; no employment or education entries."
         }
       ],
       "source": "omlist"
@@ -33447,13 +33586,18 @@
       "facultyId": "omlist-6048f471b5733f95",
       "name": "Morvarid Rahmani",
       "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "The Georgia Tech Scheller profile lists a UCLA Anderson PhD in Management but no degree year, start date or earlier employment. A search summary indicated she was an assistant professor at Georgia Tech before promotion, but no dated source for the first post-PhD appointment (or any postdoc) was opened.",
+      "checkedAt": "2026-10-17",
+      "reason": "Second pass: the Scheller profile (plain curl) still gives the UCLA Anderson Ph.D. in Management without a year, her current associate professorship and teaching awards, and links Google Scholar, SSRN, ResearchGate and LinkedIn but no CV. Her ORCID record (0000-0002-7504-2841) lists Georgia Tech Scheller employment and the UCLA Anderson education, both without dates. No opened source dates her first post after the doctorate or excludes a postdoc or other role before Georgia Tech. Earlier review (2026-10-16): the Scheller profile lists the UCLA PhD without year, start date or earlier employment; a search summary suggesting she began as a Georgia Tech assistant professor was not backed by an opened dated source.",
       "sources": [
         {
           "url": "https://www.scheller.gatech.edu/directory/faculty/rahmani/index.html",
-          "title": "Georgia Tech Scheller faculty profile",
-          "notes": "Opened; UCLA PhD without year; no appointment start dates."
+          "title": "Morvarid Rahmani - Georgia Tech Scheller profile",
+          "notes": "Read with plain curl. Associate Professor; Ph.D. Management, UCLA Anderson (no year); three master's degrees; service roles 2024-27; no appointment dates or CV."
+        },
+        {
+          "url": "https://orcid.org/0000-0002-7504-2841",
+          "title": "ORCID record 0000-0002-7504-2841 - Morvarid Rahmani (public API)",
+          "notes": "Employment: Georgia Institute of Technology Ernest Scheller Jr College of Business (no dates). Education: UCLA Anderson School of Management (no dates)."
         }
       ],
       "source": "omlist"
@@ -33548,15 +33692,25 @@
       "facultyId": "omlist-569c08ee65435c16",
       "name": "Karthik Ramachandran",
       "status": "unresolved",
-      "checkedAt": "2026-10-16",
+      "checkedAt": "2026-10-17",
+      "reason": "Second pass: the Scheller profile (plain curl) still gives the Ph.D. in Supply Chain and Operations Management from the McCombs School, University of Texas at Austin, without a year, and no appointment dates or earlier employers; no CV or personal site is linked. His ORCID record (0000-0003-2906-6575) has one undated Georgia Tech employment entry. Texas ScholarWorks (repositories.lib.utexas.edu), which would date the dissertation, answered HTTP 403 to its search API. The first post-PhD employer and year, and the 2007 degree year, remain undocumented. Earlier review (2026-10-16): the Georgia Tech biography identifies the Texas Austin doctorate but no dated first-employment chronology.",
       "sources": [
         {
           "url": "https://www.scheller.gatech.edu/directory/faculty/ramachandran/index.html",
-          "title": "Karthik Ramachandran Profile",
-          "notes": "Georgia Tech biography identifies Texas Austin doctorate but no dated first employment chronology."
+          "title": "Karthik Ramachandran - Georgia Tech Scheller profile",
+          "notes": "Read with plain curl. Ph.D. Operations Management, McCombs, UT Austin (no year); M.S. OR UT Austin; B.S. IIT Madras; no appointment dates or CV."
+        },
+        {
+          "url": "https://orcid.org/0000-0003-2906-6575",
+          "title": "ORCID record 0000-0003-2906-6575 - Karthik Ramachandran (public API)",
+          "notes": "One employment entry, Georgia Institute of Technology, undated; no education."
+        },
+        {
+          "url": "https://repositories.lib.utexas.edu/server/api/discover/search/objects?query=Ramachandran%20Karthik%20dissertation&dsoType=ITEM&size=3",
+          "title": "Texas ScholarWorks search API (attempted)",
+          "notes": "HTTP 403; not read."
         }
       ],
-      "reason": "Georgia Tech biography identifies Texas Austin doctorate but no dated first employment chronology.",
       "source": "omlist"
     },
     {
@@ -42426,13 +42580,23 @@
       "facultyId": "omlist-f4d88e2898d4f0f0",
       "name": "Sezer Ulku",
       "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "The Georgetown biography lists INSEAD degrees and current role without doctoral completion or initial appointment dates.",
+      "checkedAt": "2026-10-17",
+      "reason": "Second pass: the Georgetown McDonough profile (plain curl) still gives only his INSEAD M.S. and Ph.D. in Management and Bilkent degrees, his research, teaching and consulting, with no degree year and no appointment dates or earlier employers, and it links no CV. His ORCID record (0000-0002-6348-1425) is empty. INSEAD's PhD pages answer HTTP 403 to plain requests at every alumni/placement URL tried, so the INSEAD cohort placement list was not read. The first post-PhD employer and year, and the 2002 degree year, remain undocumented. Earlier review (2026-10-16): the Georgetown biography lists INSEAD degrees and the current role without doctoral completion or initial appointment dates.",
       "sources": [
         {
           "url": "https://msb.georgetown.edu/profiles/sezer-ulku/",
-          "title": "Sezer Ulku academic profile",
-          "notes": "The Georgetown biography lists INSEAD degrees and current role without doctoral completion or initial appointment dates."
+          "title": "Sezer Ulku - Georgetown McDonough profile",
+          "notes": "Read with plain curl. M.S. and Ph.D. in Management from INSEAD; B.S. and M.S. Bilkent; no dates or prior employers."
+        },
+        {
+          "url": "https://orcid.org/0000-0002-6348-1425",
+          "title": "ORCID record 0000-0002-6348-1425 - Sezer Ulku (public API)",
+          "notes": "Name only; no affiliations."
+        },
+        {
+          "url": "https://www.insead.edu/phd/alumni",
+          "title": "INSEAD PhD alumni page (attempted)",
+          "notes": "HTTP 403 to plain curl, as were /phd/placement and /phd-programme/alumni; not read."
         }
       ],
       "source": "omlist"
@@ -45858,15 +46022,20 @@
       "facultyId": "omlist-8bd92fe77d8f7943",
       "name": "Yusen Xia",
       "status": "unresolved",
-      "checkedAt": "2026-10-16",
+      "checkedAt": "2026-10-17",
+      "reason": "Second pass: his ORCID record (0000-0003-2360-5574) gives the UT Austin McCombs Ph.D. as 1999 to 2004 and two undated Georgia State University employment entries (one as Professor, Robinson College of Business). The GSU profile (plain curl) gives the UT Austin Ph.D. without a year, his directorship of the Institute for Insight and publications from 2005, with no appointment dates or earlier employers; Texas ScholarWorks answered 403 to its search API. When he started at Georgia State, in what rank, and whether anything came between the 2004 degree and Georgia State are undocumented. Earlier review (2026-10-16): the Georgia State biography identifies the UT Austin doctorate but omits the degree year and early appointment chronology.",
       "sources": [
         {
+          "url": "https://orcid.org/0000-0003-2360-5574",
+          "title": "ORCID record 0000-0003-2360-5574 - Yusen Xia (public API)",
+          "notes": "Education: The University of Texas at Austin, McCombs School of Business, PhD, 1999 to 2004. Employment: Georgia State University (undated); Georgia State University, Robinson College of Business, Professor (undated)."
+        },
+        {
           "url": "https://robinson.gsu.edu/profile/yusen-xia/",
-          "title": "Yusen Xia Profile",
-          "notes": "Georgia State biography identifies UT Austin doctorate but omits degree year and early appointment chronology."
+          "title": "Yusen Xia - Georgia State Robinson profile",
+          "notes": "Read with plain curl: Ph.D., University of Texas at Austin (no year); Director of Institute for Insight; publications from 2005; no dates of appointment."
         }
       ],
-      "reason": "Georgia State biography identifies UT Austin doctorate but omits degree year and early appointment chronology.",
       "source": "omlist"
     },
     {
@@ -47282,27 +47451,37 @@
       "name": "Qiuping Yu",
       "status": "unresolved",
       "checkedAt": "2026-10-17",
-      "reason": "Her website says she holds a PhD in Industrial Engineering and Management Sciences from Northwestern and was on the faculty at Georgia Tech and Indiana University before Georgetown, without dates or degree year (the 'CV' mention is not linked). Her ORCID record dates Georgia Tech 2019-06 to 2023-05 and Georgetown from 2022-06 but gives the Indiana University entry and the Northwestern education no dates. A Georgetown welcome item (August 2022) repeats the two prior posts without years. The Indiana start date and whether anything preceded it are undocumented; the 2014 degree year is unverified.",
+      "reason": "Second pass: her website's teaching page (plain curl) lists Kelley School of Business, Indiana University courses taught in Spring 2015, Spring 2016, Spring 2017, Fall 2017, Fall 2018 and Summer 2018, which places the Indiana post before Georgia Tech (ORCID 2019-06 to 2023-05) and shows she was teaching there by Spring 2015, but no opened source gives the Indiana start date or title. The ORCID record (re-read through the public API) still has the Indiana entry and the Northwestern and HKUST education without dates; the WordPress media library that might hold the unlinked CV requires authentication; Northwestern's Arch repository has no record of her dissertation (ProQuest not reachable). Because the degree date is unverified, a post between the doctorate and Indiana cannot be excluded, and the Indiana start year is unknown. Earlier review (2026-10-17): the website, ORCID record and a Georgetown welcome item name Georgia Tech and Indiana University as prior faculty posts, with ORCID dating only Georgia Tech (2019-2023) and Georgetown (from 2022), and the 2014 degree year unverified.",
       "sources": [
         {
-          "url": "https://omlist.edutool.org/schools/georgetown-university/faculty/qiuping-yu.html",
-          "title": "OM List profile - Qiuping Yu",
-          "notes": "Imported directory profile; opened for links to the school page, ORCID and CV only. Not evidence of a first job."
+          "url": "https://qiupingyu.com/teaching/",
+          "title": "Qiuping Yu - Teaching",
+          "notes": "Read with plain curl. Kelley School of Business, Indiana University: BUS-P421 Supply Chain Management Spring 2015-Fall 2018; BUS-P635 PhD course Spring 2015 and 2017; X572 Online MBA Summer 2018. Also Scheller (Georgia Tech) teaching. No appointment dates or titles."
+        },
+        {
+          "url": "https://orcid.org/0000-0001-7476-866X",
+          "title": "ORCID record - Qiuping Yu (public API)",
+          "notes": "Employment: Indiana University (no dates); Georgia Institute of Technology 2019-06-01 to 2023-05-31; Georgetown University from 2022-06-01. Education: Northwestern University; HKUST (no dates)."
         },
         {
           "url": "https://qiupingyu.com/",
           "title": "Qiuping Yu - personal website",
-          "notes": "PhD IEMS and M.A. Economics, Northwestern; before Georgetown on the faculty at Georgia Tech and Indiana University; no dates; CV not linked."
+          "notes": "PhD IEMS, Northwestern; prior faculty at Georgia Tech and Indiana University; no dates; CV not linked."
         },
         {
-          "url": "https://orcid.org/0000-0001-7476-866X",
-          "title": "ORCID record - Qiuping Yu",
-          "notes": "Employment: Georgia Institute of Technology 2019-06 to 2023-05; Georgetown University from 2022-06; Indiana University (no dates). Education: Northwestern University and HKUST (no dates). Read through the ORCID public API (pub.orcid.org/v3.0/0000-0001-7476-866X/activities)."
+          "url": "https://msb.georgetown.edu/profiles/qiuping-yu/",
+          "title": "Qiuping Yu - Georgetown McDonough profile",
+          "notes": "Read with plain curl. 'Prior to McDonough, she was a faculty at Indiana University and Georgia Tech'; no dates."
+        },
+        {
+          "url": "https://arch.library.northwestern.edu/catalog?q=Qiuping+Yu",
+          "title": "Northwestern Arch repository search",
+          "notes": "No entries found for her dissertation."
         },
         {
           "url": "https://msb.georgetown.edu/?p=45471",
           "title": "Georgetown McDonough - new faculty welcome (30 Aug 2022)",
-          "notes": "Quotes her as previously on the faculty at Indiana University's Kelley School and Georgia Tech; no years."
+          "notes": "Earlier review: previously on the faculty at Indiana University's Kelley School and Georgia Tech; no years."
         }
       ],
       "source": "omlist"
@@ -48490,13 +48669,18 @@
       "facultyId": "omlist-c8da3424b631fed8",
       "name": "Peter Zhang",
       "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "The Georgia State biography describes research and current role without doctoral completion or earliest employment chronology.",
+      "checkedAt": "2026-10-17",
+      "reason": "Second pass: the GSU profile (plain curl) gives G. Peter Zhang as Professor and Chair of the Department of Management with a Ph.D. from Kent State University (no year) and publications from 1998, but no appointment dates or earlier employers, and links no CV. ORCID searches (Zhang with Guoqiang or G. Peter and a Georgia State affiliation) found no record of his. No dated source for his first post after the Kent State doctorate was found, and the 1998 degree year is unverified. Earlier review (2026-10-16): the Georgia State biography describes research and current role without doctoral completion or earliest employment chronology.",
       "sources": [
         {
-          "url": "https://robinson.gsu.edu/profile/peter-zhang/#profile-overview-tab",
-          "title": "Peter Zhang academic profile",
-          "notes": "The Georgia State biography describes research and current role without doctoral completion or earliest employment chronology."
+          "url": "https://robinson.gsu.edu/profile/peter-zhang/",
+          "title": "Peter Zhang - Georgia State Robinson profile",
+          "notes": "Read with plain curl: Professor and Chair, Department of Management; Ph.D., Kent State University (no year); selected publications 1998-2007; no appointment dates."
+        },
+        {
+          "url": "https://pub.orcid.org/v3.0/expanded-search/?q=family-name:Zhang+AND+given-names:Guoqiang+AND+affiliation-org-name:Georgia&rows=10",
+          "title": "ORCID public API search - Zhang, Guoqiang, Georgia",
+          "notes": "No records; a search with Georgia State affiliation found only another Zhang."
         }
       ],
       "source": "omlist"
@@ -55304,12 +55488,27 @@
       "name": "A. Mehrotra",
       "status": "unresolved",
       "checkedAt": "2026-10-17",
-      "reason": "The Scheller profile (Anuj Mehrotra) gives the Ph.D. in Operations Research, Georgia Tech, 1992, and a career in reverse order without dates for the early posts: dean at GWSB since 2018, and before that senior vice dean and other roles and department chair at the University of Miami; it also mentions visiting positions at Carnegie Mellon's Tepper School and the IBM T. J. Watson Research Center, undated. The first post-PhD employer, title and start year cannot be established from it. One web search for a CV found nothing relevant; no CV is linked from the profile.",
+      "reason": "Second pass: the GW Today announcement of his GWSB deanship (April 2018) describes his Miami posts at the time (senior vice dean, Leslie O. Barnes Scholar, professor of management science) without a start year; The GW Hatchet's report of the same appointment (12 April 2018) says he 'has been teaching at Miami since 1993', citing his LinkedIn profile, which is a newspaper's second-hand account rather than a dated record; the Georgia Tech news release on his Scheller deanship (June 2023) and the Scheller profile give later roles only and mention undated visiting positions at Carnegie Mellon's Tepper School and the IBM T. J. Watson Research Center. With the Georgia Tech Ph.D. dated 1992 on the profile, the post (if any) between 1992 and the reported 1993 Miami start, and his starting title at Miami, are not documented; the undated Tepper and IBM visiting posts could fall in that gap. LinkedIn was not read (login wall). Earlier review (2026-10-17): the Scheller profile gives the 1992 Georgia Tech PhD and an undated reverse chronology (GWSB dean from 2018, Miami senior vice dean and chair, visiting posts at Tepper and IBM).",
       "sources": [
+        {
+          "url": "https://www.gwhatchet.com/2018/04/12/university-of-miami-administrator-to-lead-business-school/",
+          "title": "University of Miami administrator to lead business school - The GW Hatchet (12 Apr 2018)",
+          "notes": "Read with plain curl. 'Mehrotra has been teaching at Miami since 1993 ... according to his LinkedIn profile.' Student-newspaper report citing LinkedIn; no title at entry."
+        },
+        {
+          "url": "https://gwtoday.gwu.edu/node/8781",
+          "title": "Anuj Mehrotra Named Dean of GWSB - GW Today (April 2018)",
+          "notes": "Read with plain curl. Joins GWSB 1 July 2018 from the University of Miami, where he is senior vice dean for faculty development and research, Leslie O. Barnes Scholar and professor of management science; interim dean 2016-17; no start year at Miami."
+        },
+        {
+          "url": "https://www.news.gatech.edu/news/2023/06/06/anuj-mehrotra-named-dean-scheller-college-business",
+          "title": "Anuj Mehrotra Named Dean of Scheller College of Business - Georgia Tech News (6 Jun 2023)",
+          "notes": "Read with plain curl. GWSB dean since 2018 and professor of Decision Sciences; no early career dates."
+        },
         {
           "url": "https://www.scheller.gatech.edu/directory/faculty/mehrotra/index.html",
           "title": "Anuj Mehrotra - Georgia Tech Scheller profile",
-          "notes": "Education (Ph.D. OR 1992, Georgia Tech) and undated career narrative."
+          "notes": "Ph.D. Operations Research, Georgia Tech ISyE, 1992; M.S. OR Virginia Tech 1988; undated visiting positions at CMU Tepper and IBM T. J. Watson Research Center; dean at GWSB from 2018 and at Scheller from 1 January 2024."
         }
       ],
       "source": "faculty-page"
@@ -55347,27 +55546,22 @@
       "name": "Alan Porter",
       "status": "unresolved",
       "checkedAt": "2026-10-17",
-      "reason": "The ISyE profile says he served on the University of Washington faculty through 1974 and joined Georgia Tech in 1975; ORCID gives the UCLA PhD as 1967-09 to 1972-06 and Georgia Tech employment from 1975-01, with no Washington entry. The start date and rank of the Washington post, and whether any other role (for example a postdoc) came between June 1972 and the Washington faculty post, are not documented. One web search and the Georgia Tech archives finding aid and TPAC people page gave no dated CV.",
+      "reason": "Second pass: the ISyE profile (plain curl) still says only that he 'served on the University of Washington faculty through 1974' and joined Georgia Tech ISyE in 1975, with the UCLA Ph.D. in Engineering and Psychology dated 1972; ORCID (earlier read through the public API) gives the UCLA doctorate 1967-09 to 1972-06 and Georgia Tech from 1975-01, with no Washington entry. No opened source gives the start date or rank of the Washington post or rules out another post (for example a postdoc or research appointment) between June 1972 and the Washington faculty post. The Internet Archive refused connections from this environment, so archived CVs could not be checked. Earlier review (2026-10-17): the ISyE profile and ORCID establish the 1972 UCLA PhD, a University of Washington faculty post through 1974 and Georgia Tech from 1975, without the Washington start date or rank.",
       "sources": [
         {
           "url": "https://www.isye.gatech.edu/users/alan-porter",
           "title": "Alan Porter - Georgia Tech ISyE profile",
-          "notes": "Education (Ph.D. Engineering and Psychology 1972, UCLA); University of Washington faculty through 1974; Georgia Tech from 1975."
+          "notes": "Read with plain curl. Ph.D. Engineering and Psychology (1972), UCLA; 'served on the University of Washington faculty through 1974. In 1975 he joined' Georgia Tech ISyE."
         },
         {
           "url": "https://orcid.org/0000-0002-4520-6518",
           "title": "ORCID - Alan Porter",
-          "notes": "Read via the public ORCID API: UCLA PhD 1967-09 to 1972-06; employment Georgia Tech from 1975-01 and Search Technology from 2002-01."
-        },
-        {
-          "url": "https://finding-aids.library.gatech.edu/repositories/2/resources/1765",
-          "title": "Georgia Tech Archives finding aid (Technology Opportunities Analysis oral histories)",
-          "notes": "Opened; no career chronology."
+          "notes": "Earlier review, public ORCID API: UCLA PhD 1967-09 to 1972-06; employment Georgia Tech from 1975-01 and Search Technology from 2002-01; no Washington entry."
         },
         {
           "url": "https://tpac.spp.gatech.edu/people",
           "title": "Technology Policy and Assessment Center - people",
-          "notes": "Opened; no dated career entries found."
+          "notes": "Earlier review: no dated career entries."
         }
       ],
       "source": "faculty-page"
@@ -55410,17 +55604,32 @@
       "name": "Alexander Shapiro",
       "status": "unresolved",
       "checkedAt": "2026-10-17",
-      "reason": "The ISyE profile and personal website give the Ph.D. (Applied Mathematics-Statistics, Ben-Gurion University of the Negev, 1981) and current chair, honors and editorial roles, but no employment chronology; neither links a CV, and no ORCID record matching his Georgia Tech affiliation was found. One web search found no dated CV. The first post-PhD employer and start year are undocumented.",
+      "reason": "Second pass: no CV is held on his Georgia Tech WordPress site (its public media listing, read through the WordPress API, contains papers, notes and reports but no CV or biography), and the ISyE profile gives only the Ph.D. (Applied Mathematics-Statistics, Ben-Gurion University of the Negev, 1981) and later books. The earliest paper hosted there, his 1982 Psychometrika article, gives his affiliation as Ben-Gurion University of the Negev and a reprint address at the Department of Statistics & O.R., University of South Africa, Pretoria; a 1985 Psychometrika paper with J. H. Steiger also lists the University of South Africa. This places him at the University of South Africa by 1982, but paper addresses do not date an appointment, give its title, or exclude an earlier post after the 1981 degree, and a Georgia Tech College of Engineering service-anniversary list (May-June 2021) gives his Georgia Tech service date as 6/24/1991, so the decade after the degree (University of South Africa and possibly other posts) is where the first job lies, undated. Earlier review (2026-10-17): the ISyE profile and personal website give the 1981 Ben-Gurion PhD and current roles but no employment chronology or CV, and no matching ORCID record was found.",
       "sources": [
+        {
+          "url": "https://sites.gatech.edu/alexander-shapiro/files/2021/03/Psych82.pdf",
+          "title": "Shapiro (1982), Psychometrika article - PDF on his Georgia Tech site",
+          "notes": "First page: author affiliation Ben-Gurion University of the Negev; reprint requests to A. Shapiro, Department of Statistics & O.R., University of South Africa, Pretoria. Presence only, no appointment date."
+        },
+        {
+          "url": "https://sites.gatech.edu/alexander-shapiro/files/2021/03/Psych85.pdf",
+          "title": "Steiger and Shapiro (1985), Psychometrika article - PDF on his Georgia Tech site",
+          "notes": "Affiliations University of British Columbia and University of South Africa; no dates of appointment."
+        },
+        {
+          "url": "https://sites.gatech.edu/coe-cares/2021/06/16/may-and-june-service-anniversaries/",
+          "title": "May and June Service Anniversaries (Georgia Tech College of Engineering, CoE Cares, 16 Jun 2021)",
+          "notes": "Read with plain curl: 'Shapiro, Alexander, 6/24/1991, Professor'."
+        },
+        {
+          "url": "https://sites.gatech.edu/alexander-shapiro/wp-json/wp/v2/media?per_page=100",
+          "title": "Alexander Shapiro Georgia Tech site - public media listing (WordPress API)",
+          "notes": "Papers, lecture notes and reports; searches for cv, vita, resume and bio found no CV."
+        },
         {
           "url": "https://www.isye.gatech.edu/users/alexander-shapiro",
           "title": "Alexander Shapiro - Georgia Tech ISyE profile",
-          "notes": "Education and current post; no prior positions."
-        },
-        {
-          "url": "https://sites.gatech.edu/alexander-shapiro/",
-          "title": "Alexander Shapiro - personal website",
-          "notes": "Opened; biography without dated positions; no CV link."
+          "notes": "Ph.D. Applied Mathematics-Statistics (1981), Ben-Gurion University of the Negev; M.Sc. Mathematics (1971), Moscow University; no prior positions."
         }
       ],
       "source": "faculty-page"
@@ -55557,17 +55766,17 @@
       "name": "Ben Wang",
       "status": "unresolved",
       "checkedAt": "2026-10-17",
-      "reason": "The ISyE profile gives the Ph.D. in Industrial Engineering, Pennsylvania State University, 1986, and describes his emeritus status and earlier role as Executive Director of the Georgia Tech Manufacturing Institute, but lists no positions before Georgia Tech and links no CV or personal site. His ORCID record (0000-0001-6484-1253) has only an undated Georgia Tech entry. The first post-PhD employer and start year are undocumented.",
+      "reason": "Second pass: the ISyE profile (plain curl) still gives the Ph.D. in Industrial Engineering, Pennsylvania State University, 1986 (M.S. 1985, B.S. Tunghai 1976) and honors from 2005-2012, with no positions before Georgia Tech, and links no CV; his ORCID record (0000-0001-6484-1253) has only an undated Georgia Tech entry. No dated source for his first post after the 1986 degree was found; the Internet Archive refused connections and no FAMU-FSU or Georgia Tech hiring item was located. Earlier review (2026-10-17): the ISyE profile gives the 1986 Penn State PhD and his emeritus and Manufacturing Institute roles but no earlier positions, and ORCID has only an undated Georgia Tech entry.",
       "sources": [
         {
           "url": "https://www.isye.gatech.edu/users/ben-wang",
           "title": "Ben Wang - Georgia Tech ISyE profile",
-          "notes": "Education and current/emeritus roles only."
+          "notes": "Read with plain curl. Ph.D. Industrial Engineering (1986), Penn State; awards 2009; no earlier employers or dates."
         },
         {
           "url": "https://orcid.org/0000-0001-6484-1253",
           "title": "ORCID - Ben Wang",
-          "notes": "Read via the public ORCID API; undated Georgia Tech entry only."
+          "notes": "Earlier review, public ORCID API: undated Georgia Tech entry only."
         }
       ],
       "source": "faculty-page"
@@ -55746,22 +55955,32 @@
       "name": "Chuck Zhang",
       "status": "unresolved",
       "checkedAt": "2026-10-17",
-      "reason": "The ISyE profile and personal website give the Ph.D. in Industrial Engineering, University of Iowa, 1993, and say that before Georgia Tech he was Professor and Chair of Industrial & Manufacturing Engineering at the FAMU-FSU College of Engineering and Deputy Director of the High-Performance Materials Institute at Florida State, without dates or starting rank. His ORCID record (0000-0001-7681-5538) has only an undated Georgia Tech entry, and one web search found no CV. The first post-PhD employer and year are not established.",
+      "reason": "Second pass: his Georgia Tech website (pages read through the WordPress API) repeats that before Georgia Tech he was Professor and Chair of Industrial & Manufacturing Engineering at the FAMU-FSU College of Engineering and Deputy Director of Florida State's High-Performance Materials Institute, with the Iowa Ph.D. dated 1993; it gives no start date or starting rank at FAMU-FSU, and its media library holds no CV. The ISyE profile and ORCID (0000-0001-7681-5538, undated Georgia Tech entry only) add nothing dated. An ISyE news item of 16 August 2012 dates his Georgia Tech arrival (as a tenured professor, 15 August 2012) and again names FAMU-FSU as his previous employer without dates. Whether FAMU-FSU was his first post after 1993, and from when, remains undocumented. Earlier review (2026-10-17): the profile and website give the 1993 Iowa PhD and undated FAMU-FSU and FSU roles; ORCID has only an undated Georgia Tech entry and a web search found no CV.",
       "sources": [
+        {
+          "url": "https://sites.gatech.edu/chuck-zhang/",
+          "title": "Chuck Zhang - personal website (home page, read through the WordPress API)",
+          "notes": "Ph.D. (1993) IE, University of Iowa; prior Professor and Chair, Department of Industrial & Manufacturing Engineering, FAMU-FSU College of Engineering, and Deputy Director, High-Performance Materials Institute, FSU; SME Outstanding Young Manufacturing Engineer Award 1999; no dates of appointments."
+        },
+        {
+          "url": "https://www.isye.gatech.edu/news/isye-welcomes-new-faculty",
+          "title": "ISyE Welcomes New Faculty - Georgia Tech ISyE news (16 Aug 2012)",
+          "notes": "Read with plain curl. Chuck Zhang joined ISyE as a tenured professor on 15 August 2012; previously professor and chairman, Department of Industrial and Manufacturing Engineering, FAMU-FSU College of Engineering (undated); Iowa PhD (no year)."
+        },
+        {
+          "url": "https://sites.gatech.edu/chuck-zhang/wp-json/wp/v2/media?per_page=100&search=cv",
+          "title": "Chuck Zhang Georgia Tech site - media search (WordPress API)",
+          "notes": "No CV, vita or resume file."
+        },
         {
           "url": "https://www.isye.gatech.edu/users/chuck-zhang",
           "title": "Chuck Zhang - Georgia Tech ISyE profile",
-          "notes": "Education and undated prior FAMU-FSU roles."
-        },
-        {
-          "url": "https://sites.gatech.edu/chuck-zhang/",
-          "title": "Chuck Zhang - personal website",
-          "notes": "Same biography; no CV link."
+          "notes": "Same biography; no dates for prior posts."
         },
         {
           "url": "https://orcid.org/0000-0001-7681-5538",
           "title": "ORCID - Chun (Chuck) Zhang",
-          "notes": "Read via the public ORCID API; undated Georgia Tech entry only."
+          "notes": "Earlier review, public ORCID API: undated Georgia Tech entry only."
         }
       ],
       "source": "faculty-page"
@@ -55829,17 +56048,27 @@
       "name": "Damon Williams",
       "status": "unresolved",
       "checkedAt": "2026-10-17",
-      "reason": "The ISyE profile gives the Ph.D. in Industrial & Operations Engineering, University of Michigan, 2009 (and an M.Div., Columbia Theological Seminary, 2012) and says he began his academic career as a faculty member in ISyE, lecturing in applied probability, with promotion to associate dean in 2022. It gives no start date or title for the first ISyE post and does not exclude a non-academic job after 2009. ORCID (0009-0002-0186-0021) lists only an undated associate dean entry. The first post-PhD job and year are not established.",
+      "reason": "Second pass: the Georgia Tech College of Engineering list of December 2024-February 2025 service anniversaries gives 'Williams, Damon P, Associate Dean-Academic, Engineering, College of, 01/01/2015' among 10-year anniversaries, so his current continuous Georgia Tech service began on 1 January 2015, more than five years after the 2009 Michigan Ph.D. stated on his ISyE profile (the profile also lists an M.Div., Columbia Theological Seminary, 2012). The ISyE profile (plain curl) says he 'began his academic career as a faculty member' in ISyE, lecturing in applied probability and operations analysis, without dates. What he did between 2009 and 2015 is undocumented, and the service date may postdate an earlier Georgia Tech appointment if service was interrupted, so the first post-PhD job and year are not established. Michigan's Deep Blue search API answered 403. Earlier review (2026-10-17): the profile gives the 2009 Michigan PhD and an undated start as an ISyE faculty member, with promotion to associate dean in 2022.",
       "sources": [
         {
           "url": "https://www.isye.gatech.edu/users/damon-williams",
           "title": "Damon Williams - Georgia Tech ISyE profile",
-          "notes": "Education and undated account of starting as an ISyE faculty member."
+          "notes": "Read with plain curl. Senior Lecturer; Ph.D. IOE (2009), University of Michigan; 'began his academic career as a faculty member' in ISyE; no dates."
+        },
+        {
+          "url": "https://sites.gatech.edu/coe-cares/2025/03/07/december-january-and-february-service-anniversaries/",
+          "title": "December, January, and February Service Anniversaries (Georgia Tech College of Engineering, CoE Cares, 7 Mar 2025)",
+          "notes": "Read with plain curl. 10 Years: 'Williams, Damon P, Associate Dean-Academic, Engineering, College of, 01/01/2015'."
         },
         {
           "url": "https://orcid.org/0009-0002-0186-0021",
           "title": "ORCID - Damon Williams",
-          "notes": "Read via the public ORCID API; undated associate dean entry only."
+          "notes": "Earlier review, public ORCID API: undated associate dean entry only."
+        },
+        {
+          "url": "https://deepblue.lib.umich.edu/server/api/discover/search/objects?query=Williams%20Damon%20dissertation%202009&dsoType=ITEM&size=3",
+          "title": "Michigan Deep Blue search API (attempted)",
+          "notes": "HTTP 403; not read."
         }
       ],
       "source": "faculty-page"
@@ -55847,24 +56076,37 @@
     {
       "facultyId": "roster:georgia-institute-of-technology:david-goldsman",
       "name": "David Goldsman",
-      "status": "unresolved",
+      "status": "verified",
       "checkedAt": "2026-10-17",
-      "reason": "The ISyE profile gives the Ph.D. (Operations Research and Industrial Engineering, Cornell, 1984) and lists visiting posts (Cornell, Syracuse, UNC Chapel Hill, AT&T Bell Laboratories, NEC USA and others) without dates; neither it nor his personal ISyE pages give a dated chronology or CV. His ORCID record (0000-0001-9033-8475) has no affiliation entries, and one web search found no dated CV. The first post-PhD employer and year are not established.",
+      "employer": "Georgia Institute of Technology (School of Industrial and Systems Engineering)",
+      "position": null,
+      "placementYear": 1984,
+      "category": "unknown",
+      "evidenceUrl": "https://sites.gatech.edu/coe-cares/2024/09/11/july-august-september-service-anniversaries/",
+      "evidenceNote": "The Georgia Tech College of Engineering list of July-September 2024 service anniversaries lists 'Goldsman, David, Professor, Industrial & Systems Engr, 9/17/84' among 40-year anniversaries, so his continuous Georgia Tech service began on 17 September 1984. His ISyE profile says he received his Ph.D. in 1984 from Cornell's School of Operations Research and Industrial Engineering (the Mathematics Genealogy Project also gives Cornell 1984), so Georgia Tech followed the degree within the same year and no other employer is documented in between; the visiting posts on the profile (Cornell, Syracuse, UNC, AT&T Bell Laboratories, NEC) are undated and he has remained at Georgia Tech since 1984. His starting title is not stated (the list gives his 2024 rank), so position and category are unknown.",
+      "phdYearVerified": 1984,
+      "phdInstitutionVerified": "Cornell University",
+      "reason": "Second pass: an official College of Engineering service-anniversary list dates his Georgia Tech service from 17 September 1984, the year of his Cornell Ph.D., which the ISyE profile and the Mathematics Genealogy Project both give as 1984. The old ISyE home page has no CV (guessed CV filenames return 404) and ORCID has no affiliations, so the 1984 title is unknown. Verifier: the undated visiting posts are presumed later (sabbatical-type) roles; nothing places any of them between the degree and September 1984. Earlier review (2026-10-17): the ISyE profile and personal pages give the 1984 Cornell PhD and undated visiting posts; no dated chronology or CV was found.",
       "sources": [
+        {
+          "url": "https://sites.gatech.edu/coe-cares/2024/09/11/july-august-september-service-anniversaries/",
+          "title": "July, August & September Service Anniversaries (Georgia Tech College of Engineering, CoE Cares, 11 Sep 2024)",
+          "notes": "Read with plain curl. 40 Years: 'Goldsman, David, Professor, Industrial & Systems Engr, 9/17/84'."
+        },
         {
           "url": "https://www.isye.gatech.edu/users/david-goldsman",
           "title": "David Goldsman - Georgia Tech ISyE profile",
-          "notes": "Education and undated visiting positions."
+          "notes": "Read with plain curl. 'He received his Ph.D. in 1984 from the School of Operations Research and Industrial Engineering at Cornell University'; visiting professor or scientist at Cornell, Syracuse, UNC-Chapel Hill, AT&T Bell Laboratories, NEC and others (undated)."
         },
         {
-          "url": "https://www2.isye.gatech.edu/people/faculty/David_Goldsman/",
-          "title": "David Goldsman - personal ISyE page",
-          "notes": "Research interests and links only; no CV."
+          "url": "https://www.mathgenealogy.org/id.php?id=85064",
+          "title": "Mathematics Genealogy Project - David Goldsman",
+          "notes": "Ph.D. Cornell University 1984; dissertation: On Using Standardized Time Series to Analyze Stochastic Processes."
         },
         {
-          "url": "https://orcid.org/0000-0001-9033-8475",
-          "title": "ORCID - David Goldsman",
-          "notes": "Read via the public ORCID API; no affiliation entries."
+          "url": "https://www2.isye.gatech.edu/~sman/",
+          "title": "Prof. David Goldsman - old ISyE home page",
+          "notes": "Read with plain curl. Research interests and links; no CV; guessed CV filenames return 404."
         }
       ],
       "source": "faculty-page"
@@ -55958,27 +56200,32 @@
       "name": "Dima Nazzal",
       "status": "unresolved",
       "checkedAt": "2026-10-17",
-      "reason": "ORCID (0000-0003-1137-2603) records the Georgia Tech PhD as 2002-01 to 2006-08 and Georgia Tech employment only from 2012-08. The ISyE and Georgia Tech Professional Education bios say that before joining Georgia Tech she was Director of Research and Development at Fortna, Inc. (undated), and the latter mentions a 2011 Most Outstanding Faculty Member award from the University of Central Florida IIE student chapter, which suggests a UCF faculty post but gives no title or dates. The first job between August 2006 and 2012 and its start year are not documented.",
+      "reason": "Second pass: her Georgia Tech website (home and teaching pages read through the WordPress API) says that before rejoining Georgia Tech in 2018 she was Director of Research and Development at Fortna, Inc., and before that Executive Director of Academic Administration and Student Experience for ISyE, and lists University of Central Florida teaching awards in 2010 and 2011 and a 2009 'Solution Provider' award from a Professional Engineering Management Program. Combined with ORCID (PhD 2002-01 to 2006-08; Georgia Tech from 2012-08), the sequence is UCF (by 2010) then Georgia Tech (2012) then Fortna then Georgia Tech again (2018), and a College of Engineering service-anniversary list (May-June 2023) gives her current Georgia Tech service date as 05/15/2018, matching the 2018 return; but nothing opened gives her first post after August 2006, its title or start year, so the UCF post (or another job) cannot be dated as the first. Earlier review (2026-10-17): ORCID dates the PhD to August 2006 and Georgia Tech from 2012; bios mention an undated Fortna R&D post and a 2011 UCF award suggesting an undated UCF faculty post.",
       "sources": [
         {
-          "url": "https://www.isye.gatech.edu/users/dima-nazzal",
-          "title": "Dima Nazzal - Georgia Tech ISyE profile",
-          "notes": "Education (Ph.D. IE 2006, Georgia Tech); prior Director of R&D at Fortna, undated."
+          "url": "https://sites.gatech.edu/dima-nazzal/",
+          "title": "Dima Nazzal - personal website (home page, read through the WordPress API)",
+          "notes": "Ph.D. IE Georgia Tech 2006; M.S. UCF 2001; prior to rejoining Georgia Tech in 2018, Director of R&D at Fortna, Inc.; before that Executive Director of Academic Administration and Student Experience, ISyE."
         },
         {
-          "url": "https://pe.gatech.edu/instructors/dima-nazzal",
-          "title": "Dima Nazzal - Georgia Tech Professional Education instructor bio",
-          "notes": "Fortna role (undated) and 2011 UCF IIE student chapter faculty award."
+          "url": "https://sites.gatech.edu/dima-nazzal/teaching/",
+          "title": "Dima Nazzal - Teaching (read through the WordPress API)",
+          "notes": "Awards: UCF Teaching Incentive Program Award (2011); Most Outstanding Faculty Member, UCF IIE chapter (2011); UCF CECS Undergraduate Teaching Excellence Award (2010); 'Solution Provider' award, Professional Engineering Management Program (2009). No appointment dates."
+        },
+        {
+          "url": "https://sites.gatech.edu/coe-cares/2023/07/17/may-june-service-anniversaries-3/",
+          "title": "May & June Service Anniversaries (Georgia Tech College of Engineering, CoE Cares, 17 Jul 2023)",
+          "notes": "Read with plain curl. Table 'Name / Job Title / Department / Hire Date': 'Nazzal, Dima, Principal Acad Professional, Industrial & Systems Engr, 05/15/2018'."
         },
         {
           "url": "https://orcid.org/0000-0003-1137-2603",
           "title": "ORCID - Dima Nazzal",
-          "notes": "Read via the public ORCID API: PhD 2002-01 to 2006-08; Georgia Tech employment from 2012-08."
+          "notes": "Earlier review, public ORCID API: PhD 2002-01 to 2006-08; Georgia Tech employment from 2012-08."
         },
         {
-          "url": "https://sites.gatech.edu/dima-nazzal/",
-          "title": "Dima Nazzal - personal website",
-          "notes": "Opened; no CV or dated positions."
+          "url": "https://pe.gatech.edu/instructors/dima-nazzal",
+          "title": "Dima Nazzal - Georgia Tech Professional Education instructor bio",
+          "notes": "Earlier review: undated Fortna role and 2011 UCF IIE chapter award."
         }
       ],
       "source": "faculty-page"
@@ -56016,22 +56263,27 @@
       "name": "Donald Ratliff",
       "status": "unresolved",
       "checkedAt": "2026-10-17",
-      "reason": "The ISyE profile and his old ISyE personal page give the Ph.D. (Operations Research & Industrial Engineering, Johns Hopkins, 1970) and later roles (founding executive director of the Supply Chain and Logistics Institute, founder of Delivery Dynamics) without an employment chronology; the personal page's employment-history link is disabled. A search snippet says the World Economic Forum profile dates his joining the Georgia Tech ISyE faculty to 1978, but that page returned HTTP 403 and was not read; in any case the 1970-1978 interval, where the first post-PhD job lies, is undocumented.",
+      "reason": "Second pass: the World Economic Forum profile that a search snippet had said dates his joining Georgia Tech to 1978 now returns 'Page not found' (HTTP 404) both through the reader proxy and in a headless browser, so it could not be read. The ISyE profile (plain curl) gives the Ph.D. in Operations Research & Industrial Engineering, Johns Hopkins, 1970 (confirmed by the Mathematics Genealogy Project, which lists H. Donald Ratliff, Johns Hopkins, 1970) and later Georgia Tech roles only. No opened source covers 1970-1978, where the first post-PhD job lies. Earlier review (2026-10-17): the ISyE profile and old personal page give the 1970 Johns Hopkins PhD and later roles without an employment chronology; the WEF profile returned 403.",
       "sources": [
         {
           "url": "https://www.isye.gatech.edu/users/donald-ratliff",
           "title": "Donald Ratliff - Georgia Tech ISyE profile",
-          "notes": "Education and undated career summary."
-        },
-        {
-          "url": "https://www2.isye.gatech.edu/~hratliff/",
-          "title": "Donald Ratliff - ISyE personal web site",
-          "notes": "Biography only; employment-history page not available (404 at /employment/)."
+          "notes": "Read with plain curl. Regents' Professor Emeritus; Ph.D. OR & IE (1970), Johns Hopkins; M.S. and B.S. University of Alabama; founding executive director of the Supply Chain and Logistics Institute; no employment dates."
         },
         {
           "url": "https://www.weforum.org/people/h-donald-ratliff",
           "title": "World Economic Forum - H. Donald Ratliff (attempted)",
-          "notes": "HTTP 403 to curl; not read."
+          "notes": "Through r.jina.ai and in a headless browser: 'Page not found' (404); not read."
+        },
+        {
+          "url": "https://www.mathgenealogy.org/id.php?id=124024",
+          "title": "Mathematics Genealogy Project - H. Donald Ratliff",
+          "notes": "Ph.D. The Johns Hopkins University 1970."
+        },
+        {
+          "url": "https://www2.isye.gatech.edu/~hratliff/",
+          "title": "Donald Ratliff - ISyE personal web site",
+          "notes": "Earlier review: biography only; employment-history page unavailable."
         }
       ],
       "source": "faculty-page"
@@ -56041,17 +56293,22 @@
       "name": "Douglas Bodner",
       "status": "unresolved",
       "checkedAt": "2026-10-17",
-      "reason": "The ISyE profile gives the Ph.D. in Industrial Engineering, Georgia Tech, 1996, and describes him as a part-time instructor and former principal research engineer with the Tennenbaum Institute; his personal website says he is a principal research engineer in the Institute for People & Technology. Neither gives dates, his first post-PhD title or whether a Georgia Tech research post predates the degree. No CV or ORCID record with affiliations was found. The first post-PhD job and year are not established.",
+      "reason": "Second pass: the Georgia Tech repository (SMARTech, read through its REST search API) dates his Ph.D. dissertation 'Real-time control approaches to deadlock management in automated manufacturing systems' (advisor Leon F. McGinnis) to August 1996, and lists later Georgia Tech technical reports under his name (2009). The ISyE profile (plain curl) describes him as a part-time instructor and former principal research engineer with the Tennenbaum Institute, and his website has no CV or dated positions (its WordPress pages and media hold none). No opened source gives his first post after August 1996, its title or start year, or whether a Georgia Tech research post predates the degree. Earlier review (2026-10-17): the ISyE profile gives the 1996 Georgia Tech PhD and undated research-engineer roles; no CV or ORCID affiliations were found.",
       "sources": [
+        {
+          "url": "https://repository.gatech.edu/server/api/discover/search/objects?query=Bodner%20Douglas&dsoType=ITEM&size=3",
+          "title": "Georgia Tech repository (SMARTech) REST search - Bodner, Douglas",
+          "notes": "Item 1853/25607: Real-time control approaches to deadlock management in automated manufacturing systems; Bodner, Douglas Anthony; advisor McGinnis, Leon F.; Ph.D.; dc.date.issued 1996-08. Item 1853/29074: technical report, 2009-06-05."
+        },
         {
           "url": "https://www.isye.gatech.edu/users/douglas-bodner",
           "title": "Douglas Bodner - Georgia Tech ISyE profile",
-          "notes": "Education and undated research-engineer role."
+          "notes": "Read with plain curl. Part-Time Lecturer; Ph.D. IE (1996), Georgia Tech; former principal research engineer with the Tennenbaum Institute; no dates."
         },
         {
           "url": "https://sites.gatech.edu/doug-bodner/",
           "title": "Doug Bodner - personal website",
-          "notes": "Current role only; no CV."
+          "notes": "Pages read through the WordPress API: current role, projects, publications (2007), courses; no CV or dated positions; media library empty."
         }
       ],
       "source": "faculty-page"
@@ -56204,17 +56461,22 @@
       "name": "Gamze Tokol-Goldsman",
       "status": "unresolved",
       "checkedAt": "2026-10-17",
-      "reason": "The ISyE profile gives a 1994 METU PhD in Operational Research and says she has taught at Georgia Tech since 2009, and that earlier she taught at Southern Polytechnic State University and METU and worked as a quality assurance engineer at CAPS Logistics and the Earley Corporation in Atlanta, with a NATO visiting research scholarship at Cornell during the doctorate. None of the pre-2009 roles are dated or ordered, so the first post-PhD job (and whether the METU teaching continued from before the degree) cannot be established. No CV is linked from the profile and no ORCID record was found (registry search for Gamze Tokol returned none).",
+      "reason": "Second pass: the ISyE profile (plain curl) again gives the METU Ph.D. in Operational Research (1994) and says she has taught ISyE courses since 2009 as Part-Time Lecturer, Lecturer and Senior Lecturer; Georgia Tech College of Engineering service-anniversary lists give her service date as 8/15/2015 (Senior Lecturer in the 2025 list), which marks the current continuous appointment, not her first job. Her earlier roles (teaching at Southern Polytechnic State University and METU, quality assurance engineer at CAPS Logistics and the Earley Corporation, per the earlier review) remain undated and unordered, so the first job after 1994 cannot be identified. No CV or ORCID record was found. Earlier review (2026-10-17): the profile lists the 1994 METU PhD, Georgia Tech teaching since 2009 and undated earlier teaching and industry posts.",
       "sources": [
         {
           "url": "https://www.isye.gatech.edu/users/gamze-tokol-goldsman",
-          "title": "Gamze Tokol-Goldsman, Georgia Tech ISyE profile",
-          "notes": "Education (PhD Operational Research 1994, METU) and undated list of prior employers read."
+          "title": "Gamze Tokol-Goldsman - Georgia Tech ISyE profile",
+          "notes": "Read with plain curl. Senior Lecturer; Ph.D. Operational Research (1994), METU; teaching ISyE courses since 2009 as Part-Time Lecturer, Lecturer, Senior Lecturer; earlier posts undated."
+        },
+        {
+          "url": "https://sites.gatech.edu/coe-cares/2025/11/17/service-anniversaries-june-october-2025/",
+          "title": "Service Anniversaries - June-October 2025 (Georgia Tech College of Engineering, CoE Cares)",
+          "notes": "Lists 'Tokol-Goldsman, Gamze, Senior Lecturer, Industrial & Systems Engr, 8/15/15' among 10-year anniversaries."
         },
         {
           "url": "https://pub.orcid.org/v3.0/expanded-search/?q=given-names:Gamze+AND+family-name:Tokol*&rows=10",
           "title": "ORCID public registry search (Gamze Tokol*)",
-          "notes": "Returned no records."
+          "notes": "Earlier review: no records."
         }
       ],
       "source": "faculty-page"
@@ -56252,25 +56514,29 @@
       "name": "Gerald Thuesen",
       "status": "unresolved",
       "checkedAt": "2026-10-17",
-      "reason": "The ISyE profile shows only 'Professor (Retired)'. An ISyE news feature on Jerry Thuesen says he first came to Georgia Tech as an associate professor, hired by school chair Bob Lehrer (chair 1966-1978), received tenure in 1971, became full professor in 1977 and retired in 1996 after nearly 30 years; the article mentions 1968 as context but does not state his arrival year. An ASEE paper biography says he received his B.S., M.S. and Ph.D. in Industrial Engineering from Stanford, with no years. Arriving as an associate professor suggests earlier positions, which are undocumented. PhD year and first post-PhD job are not established.",
+      "reason": "Second pass: the Mathematics Genealogy Project has no record under Thuesen, and Stanford SearchWorks (which would date the Stanford Ph.D.) rejected curl and a headless browser. The ISyE profile still shows only 'Professor (Retired)'. Per the earlier review, an ISyE feature says he came to Georgia Tech as an associate professor hired by chair Bob Lehrer (1966-1978), was tenured in 1971 and retired in 1996, and an ASEE author biography says his B.S., M.S. and Ph.D. in Industrial Engineering are from Stanford, without years. Arriving as an associate professor implies earlier posts, which remain undocumented, and the PhD year is unknown. Earlier review (2026-10-17): profile title only; an ISyE news feature and an ASEE biography give a Georgia Tech arrival as associate professor (year unstated), tenure 1971 and Stanford degrees without years.",
       "sources": [
         {
           "url": "https://www.isye.gatech.edu/users/gerald-thuesen",
-          "title": "Gerald Thuesen | Georgia Tech ISyE",
-          "notes": "Title only (Professor, Retired); no education or history."
+          "title": "Gerald Thuesen - Georgia Tech ISyE profile",
+          "notes": "Read with plain curl: Professor (Retired); no education or history."
         },
         {
           "url": "https://www.isye.gatech.edu/node/7365",
           "title": "Retired ISyE Professor Jerry Thuesen Reflects on Tenure with ISyE",
-          "notes": "Arrived as associate professor (year not stated; 1968 given as context); tenure 1971; full professor 1977; retired 1996."
+          "notes": "Earlier review: arrived as associate professor (year not stated); tenure 1971; full professor 1977; retired 1996."
         },
         {
           "url": "https://peer.asee.org/8344.pdf",
           "title": "ASEE conference paper with author biography of Gerald J. Thuesen",
-          "notes": "B.S., M.S. and Ph.D. in Industrial Engineering from Stanford; no years."
+          "notes": "Earlier review: B.S., M.S. and Ph.D. in Industrial Engineering from Stanford; no years."
+        },
+        {
+          "url": "https://www.mathgenealogy.org/query-prep.php",
+          "title": "Mathematics Genealogy Project search - Thuesen",
+          "notes": "No records found."
         }
       ],
-      "phdInstitutionVerified": "Stanford University",
       "source": "faculty-page"
     },
     {
@@ -56492,17 +56758,27 @@
       "name": "Hongzhao Guan",
       "status": "unresolved",
       "checkedAt": "2026-10-17",
-      "reason": "The ISyE profile lists a Georgia Tech PhD in Machine Learning (2024) and his current title Research Engineer II, with no biography or dates. His ORCID record lists the PhD ending 2024-12 and no employment entries. The start date of the Georgia Tech research-engineer post (and whether it began before the degree) and any intervening job are undocumented. LinkedIn was not read (login wall).",
+      "reason": "Second pass: the Georgia Tech repository record of his dissertation 'Incorporating Travel Behaviors into Transit Network Designs: Methods, Applications, and Extensions' (Ph.D., Machine Learning program, ISyE; advisor Pascal Van Hentenryck) gives dc.date.issued 2024-12-02 and submission December 2024, and his ORCID record (re-read) lists the Ph.D. ending 2024-12 and no employment. The ISyE profile gives his current title, Research Engineer II, with no start date; his name does not appear in the Georgia Tech College of Engineering service-anniversary lists, the AI4OPT team page, or at the guessed personal homepages tried (github.io addresses return 404). Whether the research-engineer post began before or after the December 2024 degree, and whether another job intervened, are undocumented. Earlier review (2026-10-17): the profile lists the 2024 Georgia Tech PhD and the Research Engineer II title without dates; ORCID has the PhD ending 2024-12 and no employment.",
       "sources": [
         {
-          "url": "https://www.isye.gatech.edu/users/hongzhao-guan",
-          "title": "Hongzhao Guan, Georgia Tech ISyE profile",
-          "notes": "Education list only; title Research Engineer II; no dates."
+          "url": "https://repository.gatech.edu/server/api/discover/search/objects?query=Guan%20Hongzhao&dsoType=ITEM&size=3",
+          "title": "Georgia Tech repository (SMARTech) REST search - Guan, Hongzhao",
+          "notes": "Item 1853/76883: dissertation, Ph.D., degree program Machine Learning, ISyE; advisor Van Hentenryck, Pascal; dc.date.issued 2024-12-02; dc.date.submitted December 2024."
         },
         {
           "url": "https://orcid.org/0000-0002-5006-1165",
-          "title": "ORCID record 0000-0002-5006-1165 (Hongzhao Guan)",
-          "notes": "Read through the public ORCID API: educations (PhD Machine Learning, Georgia Tech, ending 2024-12); employments empty."
+          "title": "ORCID record 0000-0002-5006-1165 - Hongzhao Guan (public API)",
+          "notes": "Education: Ph.D. Machine Learning, Georgia Tech, ending 2024-12; M.S. OR 2019-05; M.S. Music Technology 2018-05; B.S. IE 2016-05. No employment entries."
+        },
+        {
+          "url": "https://www.isye.gatech.edu/users/hongzhao-guan",
+          "title": "Hongzhao Guan - Georgia Tech ISyE profile",
+          "notes": "Read with plain curl: Research Engineer II; no dates."
+        },
+        {
+          "url": "https://sites.gatech.edu/coe-cares/",
+          "title": "CoE Cares - Georgia Tech College of Engineering service anniversaries",
+          "notes": "All 66 posts read through the WordPress API; no entry for Guan."
         }
       ],
       "source": "faculty-page"
@@ -56683,29 +56959,37 @@
     {
       "facultyId": "roster:georgia-institute-of-technology:joel-sokol",
       "name": "Joel Sokol",
-      "status": "unresolved",
+      "status": "verified",
       "checkedAt": "2026-10-17",
-      "reason": "The ISyE profile gives a 1999 MIT PhD in Operations Research and current titles only; his personal page repeats the MIT PhD without dates or earlier posts. No CV is linked from either page, his ORCID record (0000-0001-8228-8359) has no employment or education entries, and one web search found Georgia Tech pages on later titles (an associate professorship from 2013 and promotion to professor in 2018, seen only as search snippets) but nothing dating or naming his first post after 1999. First job not established.",
+      "employer": "Georgia Institute of Technology (H. Milton Stewart School of Industrial and Systems Engineering)",
+      "position": "Assistant Professor",
+      "placementYear": 1999,
+      "category": "tenure-track",
+      "evidenceUrl": "https://www2.isye.gatech.edu/~jsokol/cv.pdf",
+      "evidenceNote": "His CV (an early version headed Assistant Professor, School of Industrial and Systems Engineering, Georgia Tech) lists the Ph.D. in Operations Research from MIT, June 1999, and under Employment: Assistant Professor, Georgia Institute of Technology (Industrial and Systems Engineering), 1999 - present, preceded only by MIT research and teaching assistantships (1994-1999) and a Bellcore research internship (1996-1997) held during the doctorate. The Georgia Tech College of Engineering service-anniversary list for July-September 2024 gives his Georgia Tech service date as 8/17/99, two months after the June 1999 degree.",
+      "phdYearVerified": 1999,
+      "phdInstitutionVerified": "Massachusetts Institute of Technology",
+      "reason": "Second pass: his CV at www2.isye.gatech.edu/~jsokol/cv.pdf (plain curl) gives a dated chronology from the June 1999 MIT Ph.D. straight to a Georgia Tech ISyE assistant professorship from 1999, confirmed by a 17 August 1999 service date in an official College of Engineering anniversary list. A plain assistant professorship in a North American engineering school is recorded as tenure-track by convention. Earlier review (2026-10-17): the ISyE profile and personal page give the 1999 MIT PhD and current titles only; ORCID is empty and a search found no dated record of the first post.",
       "sources": [
         {
+          "url": "https://www2.isye.gatech.edu/~jsokol/cv.pdf",
+          "title": "Joel S. Sokol - curriculum vitae (Georgia Tech ISyE)",
+          "notes": "Downloaded with plain curl; read sections I (earned degrees) and II (employment). Ph.D. MIT (Operations Research) June 1999; B.S. and B.A. Rutgers May 1994. Employment: Assistant Professor, Georgia Tech ISyE, 1999 - present; Research Assistant MIT ORC 1994-1999; Teaching Assistant MIT Sloan 1996-1999; Applied Research Intern, Bellcore 1996-1997."
+        },
+        {
+          "url": "https://sites.gatech.edu/coe-cares/2024/09/11/july-august-september-service-anniversaries/",
+          "title": "July, August & September Service Anniversaries (Georgia Tech College of Engineering, CoE Cares, 11 Sep 2024)",
+          "notes": "25-year anniversaries: 'Sokol, Joel S, Professor, Industrial & Systems Engr, 8/17/99'."
+        },
+        {
+          "url": "https://www2.isye.gatech.edu/~jsokol/",
+          "title": "Joel Sokol - ISyE personal page",
+          "notes": "Read with plain curl; links the CV."
+        },
+        {
           "url": "https://www.isye.gatech.edu/users/joel-sokol",
-          "title": "Joel Sokol, Georgia Tech ISyE profile",
-          "notes": "Education and biography read; no employment chronology."
-        },
-        {
-          "url": "https://www2.isye.gatech.edu/faculty/Joel_Sokol/",
-          "title": "Joel Sokol personal page (Georgia Tech ISyE)",
-          "notes": "Biography read; no dates or CV."
-        },
-        {
-          "url": "https://orcid.org/0000-0001-8228-8359",
-          "title": "ORCID record 0000-0001-8228-8359 (Joel Sokol)",
-          "notes": "Read through the public ORCID API; employments and educations empty, so identity cannot be confirmed from it either."
-        },
-        {
-          "url": "https://research.gatech.edu/joel-sokol",
-          "title": "Joel Sokol, Georgia Tech Research profile",
-          "notes": "Opened; no dated earlier appointments found."
+          "title": "Joel Sokol - Georgia Tech ISyE profile",
+          "notes": "Earlier review: 1999 MIT PhD in Operations Research and current titles."
         }
       ],
       "source": "faculty-page"
@@ -56769,24 +57053,42 @@
     {
       "facultyId": "roster:georgia-institute-of-technology:john-vande-vate",
       "name": "John Vande Vate",
-      "status": "unresolved",
+      "status": "verified",
       "checkedAt": "2026-10-17",
-      "reason": "The ISyE profile gives a Ph.D. in Operations Research from MIT (no year) and mentions visiting professorships (Chicago Booth, MIT Sloan, CMU Tepper, Pitt Economics) and 30 years of consulting, with no dates or order. His older personal page (www2.isye.gatech.edu) has no CV and his ORCID record (0000-0001-8629-5871) is empty, so neither the PhD year nor the first post-PhD job is documented.",
+      "employer": "Georgia Institute of Technology (School of Industrial and Systems Engineering)",
+      "position": null,
+      "placementYear": null,
+      "category": "unknown",
+      "evidenceUrl": "https://sites.gatech.edu/coe-cares/2024/09/11/july-august-september-service-anniversaries/",
+      "evidenceNote": "The Georgia Tech College of Engineering list of July-September 2024 service anniversaries lists 'Vande Vate, John, Professor, Industrial & Systems Engr, 9/17/84' among 40-year anniversaries, so his continuous Georgia Tech service began on 17 September 1984; he remained at Georgia Tech (now Professor Emeritus). DSpace@MIT records his Ph.D. thesis 'The linear matroid parity problem' (advisor James B. Orlin) with copyright 1984 and issue date 1985, and the Mathematics Genealogy Project dates the MIT Ph.D. 1985. The scanned thesis on DSpace@MIT gives the degree as February 1985 on its title page, with the author signature dated 10 October 1984, and its abstract page says it was submitted to the Department of Electrical Engineering and Computer Science in October 1984, so the Georgia Tech service began about three weeks before the thesis was submitted and about five months before the February 1985 conferral. His starting title is not stated (the list gives his 2024 rank), so position and category are unknown. Verifier: placementYear corrected from 1984 to null. The thesis title and abstract pages show the dissertation was not yet submitted when the Georgia Tech service began on 17 September 1984, so the one-year allowance does not apply; whether the 1984 start is the first-job start (a post not retitled on completion) or a pre-degree title that Georgia Tech converted on completion (the converted post, starting 1985 or later, would then be the first job) depends on his starting title, which no source states. Georgia Tech as the first employer after the degree is unaffected.",
+      "phdYearVerified": 1985,
+      "phdInstitutionVerified": "Massachusetts Institute of Technology",
+      "reason": "Second pass: an official College of Engineering service-anniversary list dates his Georgia Tech service from 17 September 1984, and DSpace@MIT (thesis copyright 1984, issued 1985) with the Mathematics Genealogy Project (1985) date the MIT degree, so Georgia Tech is the only employer after the doctorate. The appointment started on 17 September 1984, before the thesis was submitted (October 1984, signed 10 October 1984) and about five months before the February 1985 conferral; the starting rank is undocumented, so the start year of the first post-PhD job cannot be fixed under the overlap decision and placementYear is null (verifier correction). Earlier review (2026-10-17): the ISyE profile gives an MIT PhD without year and undated visiting posts; his old page and ORCID gave no chronology.",
       "sources": [
         {
+          "url": "https://sites.gatech.edu/coe-cares/2024/09/11/july-august-september-service-anniversaries/",
+          "title": "July, August & September Service Anniversaries (Georgia Tech College of Engineering, CoE Cares, 11 Sep 2024)",
+          "notes": "Read with plain curl. 40 Years: 'Vande Vate, John, Professor, Industrial & Systems Engr, 9/17/84' (and Goldsman, David, same date)."
+        },
+        {
+          "url": "https://dspace.mit.edu/server/api/discover/search/objects?query=Vande%20Vate&dsoType=ITEM&size=4",
+          "title": "DSpace@MIT REST search - Vande Vate (thesis 1721.1/15255)",
+          "notes": "The linear matroid parity problem; Vande Vate, John H; advisor James B. Orlin; Ph.D.; dc.date.copyright 1984; dc.date.issued 1985. MIT ORC working papers by him dated 1982 and 1983."
+        },
+        {
+          "url": "https://www.mathgenealogy.org/id.php?id=85157",
+          "title": "Mathematics Genealogy Project - John Hagood Vande Vate",
+          "notes": "Ph.D. Massachusetts Institute of Technology 1985."
+        },
+        {
           "url": "https://www.isye.gatech.edu/users/john-vande-vate",
-          "title": "Georgia Tech ISyE - John Vande Vate",
-          "notes": "Professor Emeritus; Ph.D. Operations Research, MIT; B.S. Vanderbilt; visiting posts and consulting, undated."
+          "title": "John Vande Vate - Georgia Tech ISyE profile",
+          "notes": "Read with plain curl. Professor Emeritus; Ph.D. Operations Research, MIT (no year); visiting professorships at Chicago Booth, MIT Sloan, CMU Tepper and Pittsburgh Economics, undated."
         },
         {
-          "url": "https://www2.isye.gatech.edu/faculty/John_VandeVate/",
-          "title": "John H. Vande Vate faculty page (ISyE legacy site)",
-          "notes": "Brief page (Professor and EMIL Executive Director, contact details); no chronology."
-        },
-        {
-          "url": "https://orcid.org/0000-0001-8629-5871",
-          "title": "ORCID record 0000-0001-8629-5871 (John Vande Vate)",
-          "notes": "Read through the public ORCID API; no employment or education entries."
+          "url": "https://dspace.mit.edu/server/api/core/bitstreams/fe1fae4e-08eb-47a8-a430-3478e1ce2e12/content",
+          "title": "The linear matroid parity problem - John H. Vande Vate, MIT Ph.D. thesis (scanned PDF, DSpace@MIT 1721.1/15255)",
+          "notes": "Verifier opened the title and abstract pages only (rendered images): degree of Doctor of Philosophy in Electrical Engineering and Computer Science, MIT, February 1985; copyright 1984; author signature dated October 10, 1984; thesis supervisor James B. Orlin; accepted by the Interdepartmental Committee in Operations Research; abstract page: submitted to the Department in October 1984."
         }
       ],
       "source": "faculty-page"
@@ -56873,19 +57175,32 @@
     {
       "facultyId": "roster:georgia-institute-of-technology:kaitlyn-moug",
       "name": "Kaitlyn Moug",
-      "status": "unresolved",
+      "status": "verified",
       "checkedAt": "2026-10-17",
-      "reason": "The ISyE profile states she received her PhD in industrial and operations engineering from the University of Michigan in 2023 and is a Lecturer at Georgia Tech, but gives no start date for the lectureship or any intervening post. No CV or personal site is linked and the ORCID registry search for Kaitlyn Moug returned no records. The Georgia Tech lectureship cannot be dated as the first post-PhD job.",
+      "employer": "Georgia Institute of Technology (H. Milton Stewart School of Industrial and Systems Engineering)",
+      "position": "Lecturer",
+      "placementYear": 2023,
+      "category": "other-academic",
+      "evidenceUrl": "https://sites.gatech.edu/coe-cares/2024/09/11/july-august-september-service-anniversaries/",
+      "evidenceNote": "The Georgia Tech College of Engineering list of July-September 2024 service anniversaries lists 'Moug, Kaitlyn, Lecturer, Industrial & Systems Engr, 8/1/23', giving 1 August 2023 as the start of her Georgia Tech service. Her ISyE profile states a Ph.D. in Industrial and Operations Engineering from the University of Michigan (2023), after an M.A. in Mathematics (Central Michigan, 2019), and describes her as a Lecturer. No other post is documented between the 2023 degree and the August 2023 lectureship; the degree month is not stated, so the lectureship may have started shortly before formal conferral.",
+      "phdYearVerified": 2023,
+      "phdInstitutionVerified": "University of Michigan at Ann Arbor",
+      "reason": "Second pass: an official College of Engineering service-anniversary list dates her Georgia Tech lectureship from 1 August 2023, the year of the Michigan doctorate stated on her ISyE profile. A lectureship is recorded as other-academic. Michigan's Deep Blue search API answered 403, so the degree month was not checked. Earlier review (2026-10-17): the ISyE profile states the 2023 Michigan PhD and her Lecturer title without a start date; ORCID had no record.",
       "sources": [
         {
+          "url": "https://sites.gatech.edu/coe-cares/2024/09/11/july-august-september-service-anniversaries/",
+          "title": "July, August & September Service Anniversaries (Georgia Tech College of Engineering, CoE Cares, 11 Sep 2024)",
+          "notes": "Read with plain curl. 'Moug, Kaitlyn, Lecturer, Industrial & Systems Engr, 8/1/23'."
+        },
+        {
           "url": "https://www.isye.gatech.edu/users/kaitlyn-moug",
-          "title": "Kaitlyn Moug, Georgia Tech ISyE profile",
-          "notes": "Education and biography read; no employment dates."
+          "title": "Kaitlyn Moug - Georgia Tech ISyE profile",
+          "notes": "Read with plain curl. Lecturer; Ph.D. Industrial and Operations Engineering (2023), University of Michigan; M.A. Mathematics (2019), Central Michigan University; B.A. Sociology (2013), Yale."
         },
         {
           "url": "https://pub.orcid.org/v3.0/expanded-search/?q=given-names:Kaitlyn+AND+family-name:Moug*&rows=10",
           "title": "ORCID public registry search (Kaitlyn Moug*)",
-          "notes": "Returned no records."
+          "notes": "Earlier review: no records."
         }
       ],
       "source": "faculty-page"
@@ -57119,22 +57434,32 @@
       "name": "Martin Savelsbergh",
       "status": "unresolved",
       "checkedAt": "2026-10-17",
-      "reason": "The ISyE profile (and its older copy) confirms a 1988 PhD from Erasmus University Rotterdam but dates only recent posts: CSIRO July 2010-October 2011, Newcastle (Australia), and a return to Georgia Tech in August 2014. His ORCID record lists only Georgia Tech from 2014-08 and no education. The 'employment' page linked from his old ISyE site returns 404, the Internet Archive availability API had no snapshot and its CDX search reset the connection, and one web search found no dated chronology for 1988-1992. First job after 1988 not established.",
+      "reason": "Second pass: his ORCID record (re-read through the public API) still has a single employment entry, Georgia Tech ISyE from 2014-08-01, and no education; a Georgia Tech College of Engineering service-anniversary list (2019) gives his current service date as 2014/07/31, which is his return, not his first arrival. The Mathematics Genealogy Project confirms the Erasmus Universiteit Rotterdam Ph.D. as 1988. The employment page linked from his old ISyE site still returns 404 and the Internet Archive refused connections, so no dated record of 1988 onward (his first post after the degree and his first Georgia Tech period) was read. Earlier review (2026-10-17): the ISyE profile confirms the 1988 Erasmus PhD but dates only CSIRO (2010-2011), Newcastle and the 2014 return; ORCID has only Georgia Tech from 2014.",
       "sources": [
         {
-          "url": "https://www.isye.gatech.edu/users/martin-savelsbergh",
-          "title": "Martin Savelsbergh, Georgia Tech ISyE profile",
-          "notes": "Education and biography read."
+          "url": "https://orcid.org/0000-0001-7031-5516",
+          "title": "ORCID record 0000-0001-7031-5516 - Martin Savelsbergh (public API)",
+          "notes": "One employment: Georgia Institute of Technology, School of Industrial and Systems Engineering, from 2014-08-01; no education."
+        },
+        {
+          "url": "https://sites.gatech.edu/coe-cares/2019/05/21/may-june-service-anniversaries/",
+          "title": "July/August Service Anniversaries (Georgia Tech College of Engineering, CoE Cares, 2019)",
+          "notes": "Read with plain curl: 'Savelsbergh, Mathieu W, 2014/07/31' (current service date)."
+        },
+        {
+          "url": "https://www.mathgenealogy.org/id.php?id=51372",
+          "title": "Mathematics Genealogy Project - Martin Savelsbergh",
+          "notes": "Ph.D. Erasmus Universiteit Rotterdam 1988; dissertation: Computer Aided Routing."
         },
         {
           "url": "https://www2.isye.gatech.edu/~ms79/",
-          "title": "Martin Savelsbergh older ISyE personal site",
-          "notes": "Biography read; links an employment page that now returns 404."
+          "title": "Martin Savelsbergh - older ISyE personal site",
+          "notes": "Read with plain curl: biography (return to Georgia Tech August 2014 from Newcastle); 'Employment History' link to /~ms79/employment/ returns 404."
         },
         {
-          "url": "https://orcid.org/0000-0001-7031-5516",
-          "title": "ORCID record 0000-0001-7031-5516 (Martin Savelsbergh)",
-          "notes": "Read through the public ORCID API: one employment (Georgia Tech ISyE from 2014-08); no educations."
+          "url": "https://www.isye.gatech.edu/users/martin-savelsbergh",
+          "title": "Martin Savelsbergh - Georgia Tech ISyE profile",
+          "notes": "Earlier review: 1988 Erasmus PhD; CSIRO July 2010-October 2011; Newcastle; return to Georgia Tech August 2014."
         }
       ],
       "source": "faculty-page"
@@ -57246,22 +57571,27 @@
       "name": "Mohsen Moghaddam",
       "status": "unresolved",
       "checkedAt": "2026-10-17",
-      "reason": "The ISyE profile gives a 2016 Purdue PhD in Industrial Engineering, and both it and his SAIL lab page say he completed a Postdoctoral Associate position at the GE-Purdue Partnership in Research and Innovation in Advanced Manufacturing and was previously an assistant professor at Northeastern University. Neither page dates these roles or states their order, so the GE-Purdue postdoc is a strong lead but not a documented first job. Two guessed Northeastern profile URLs returned 404, the ORCID record under the plain name (0000-0001-6616-3986) is empty and cannot be tied to him, and one web search found nothing relevant.",
+      "reason": "Second pass: the ISyE profile (plain curl) gives the Purdue Ph.D. in Industrial Engineering (2016) and Northeastern University faculty awards dated 2022 and 2024, and the SAIL lab page repeats that he completed a postdoctoral associate position at the GE-Purdue Partnership in Research and Innovation in Advanced Manufacturing and was an assistant professor at Northeastern, all undated. Northeastern profile URLs (coe.northeastern.edu and mie.northeastern.edu, two spellings each) return 404 and the old Northeastern SAIL site carries no biography; the github.io lab pages linked from the profile and one web search gave no CV. The GE-Purdue postdoc remains the likely first post-PhD job, but its start date (and whether it began after the 2016 degree) is undocumented. Earlier review (2026-10-17): the ISyE and SAIL pages name the GE-Purdue postdoc and the Northeastern assistant professorship without dates or order; two Northeastern URLs returned 404 and the ORCID record under his name was empty.",
       "sources": [
         {
           "url": "https://www.isye.gatech.edu/users/mohsen-moghaddam",
-          "title": "Mohsen Moghaddam, Georgia Tech ISyE profile",
-          "notes": "Education and biography read; prior roles undated."
+          "title": "Mohsen Moghaddam - Georgia Tech ISyE profile",
+          "notes": "Read with plain curl. Ph.D. Industrial Engineering (2016), Purdue; M.S. (2012), University of Tehran; Northeastern faculty awards 2022 and 2024; prior roles undated."
         },
         {
           "url": "https://sail.coe.gatech.edu/people",
-          "title": "SAIL lab people page",
-          "notes": "Biography repeats the GE-Purdue postdoc and Northeastern assistant professorship without dates."
+          "title": "SAIL lab people page (Georgia Tech)",
+          "notes": "Read with plain curl; biography and students; no dates for the GE-Purdue postdoc or Northeastern."
         },
         {
-          "url": "https://coe.northeastern.edu/people/moghaddam-mohsen/",
-          "title": "Northeastern College of Engineering profile (attempted)",
-          "notes": "Returned 404."
+          "url": "https://mie.northeastern.edu/people/mohsen-moghaddam/",
+          "title": "Northeastern MIE profile (attempted)",
+          "notes": "HTTP 404, as were coe.northeastern.edu/people/mohsen-moghaddam/ and the earlier-tried coe.northeastern.edu/people/moghaddam-mohsen/."
+        },
+        {
+          "url": "https://sail.northeastern.edu/",
+          "title": "SAIL - Northeastern University lab site",
+          "notes": "Read with plain curl; no biography or dated positions."
         }
       ],
       "source": "faculty-page"
@@ -57300,27 +57630,27 @@
       "name": "Nagi Gebraeel",
       "status": "unresolved",
       "checkedAt": "2026-10-17",
-      "reason": "A Georgia Tech ISyE news release (1 August 2007) says he joined ISyE as an assistant professor in July 2007, came from the University of Iowa, where he was assistant professor of industrial engineering, and before that was a visiting assistant professor in Purdue's School of Industrial Engineering, where he also earned his master's and doctorate. His ORCID record gives the Purdue PhD as January 1999 to December 2003 and lists only the Georgia Tech employment; the ISyE profile and his Georgia Tech site give the 2003 Purdue PhD but no employment dates. No opened source dates the Purdue visiting post or the Iowa post, so the Purdue post cannot be placed after the December 2003 degree: a visiting post at his own doctoral school may have begun during the doctorate and continued. A dated CV or appointment record is needed. Verifier: order against the degree not established (the Purdue visiting post is undated; no dated CV was found on the ISyE profile, the personal site sites.gatech.edu/nagi or by search).",
+      "reason": "Second pass: his ORCID record (re-read) gives the Purdue Ph.D. as 1999-01-07 to 2003-12-15 and only Georgia Tech employment from 2007-07, and a 2018 ISyE promotion release repeats the Purdue M.S. (1998) and Ph.D. (2003) without earlier posts. The 2007 Georgia Tech release (earlier review) says he came from the University of Iowa, where he was assistant professor of industrial engineering, and before that was a visiting assistant professor in Purdue's School of Industrial Engineering; neither post is dated by any source opened. His Georgia Tech site has no CV (pages and media read through the WordPress API), and one web search found no Iowa appointment notice or CV. Because a visiting post at his own doctoral school may have begun before the December 2003 degree, the first post-PhD job and year remain undocumented. Earlier review (2026-10-17): the 2007 release gives the sequence Purdue visiting assistant professor, Iowa assistant professor, Georgia Tech July 2007, but no source dated the Purdue or Iowa posts against the December 2003 degree.",
       "sources": [
+        {
+          "url": "https://orcid.org/0000-0001-7337-2401",
+          "title": "ORCID record 0000-0001-7337-2401 - Nagi Gebraeel (public API)",
+          "notes": "Education: Purdue PhD IE 1999-01-07 to 2003-12-15; MS 1997-08-14 to 1998-12-10. Employment: Georgia Institute of Technology from 2007-07 only."
+        },
         {
           "url": "https://hg.gatech.edu/node/50158/xml",
           "title": "Georgia Tech news release (August 2007): Nagi Gebraeel joins ISyE",
-          "notes": "Read through the Georgia Tech news system's XML view (found via a search result); career sequence paragraph read."
+          "notes": "Earlier review: joined ISyE as assistant professor July 2007 from the University of Iowa (assistant professor of IE); before that visiting assistant professor at Purdue IE; no dates for those posts."
         },
         {
-          "url": "https://orcid.org/0000-0001-7337-2401",
-          "title": "ORCID record 0000-0001-7337-2401 (Nagi Gebraeel)",
-          "notes": "Read through the public ORCID API: PhD Purdue IE 1999-01 to 2003-12; only employment Georgia Tech from 2007-07."
-        },
-        {
-          "url": "https://www.isye.gatech.edu/users/nagi-gebraeel",
-          "title": "Nagi Gebraeel, Georgia Tech ISyE profile",
-          "notes": "Lists PhD Industrial Engineering (2003), Purdue; no prior employment dates."
+          "url": "https://www.tlwarc.hg.gatech.edu/node/603174/xml",
+          "title": "Georgia Tech ISyE release (March 2018): Gebraeel promoted to professor",
+          "notes": "Read with plain curl: promotion effective 15 August 2018; M.S. (1998) and Ph.D. (2003) Purdue; no earlier posts."
         },
         {
           "url": "https://sites.gatech.edu/nagi/",
-          "title": "Nagi Gebraeel personal site (Georgia Tech)",
-          "notes": "Opened by the verifier; lists the 2003 Purdue PhD and 1998 MS, no CV link and no employment dates."
+          "title": "Nagi Gebraeel - Georgia Tech site",
+          "notes": "Pages and media read through the WordPress API: biography, students, projects, publications; no CV or employment dates."
         }
       ],
       "source": "faculty-page"
@@ -57330,26 +57660,29 @@
       "name": "Nicole Redder",
       "status": "unresolved",
       "checkedAt": "2026-10-17",
-      "reason": "The ISyE profile shows only the title Part Time Lecturer. The Georgia Tech repository records her Ph.D. dissertation 'Power Systems for Sustainability' (Operations Research, ISyE; advisors Santanu Dey and Valerie Thomas), issued 2025-07-30 with degree date August 2025. The start date of the part-time lectureship is not stated (it may have begun during the doctorate), and her ORCID record (0000-0003-4928-8909) is empty. The first post-PhD job is not established.",
+      "reason": "Second pass: the ISyE profile (plain curl) still shows only the title Part Time Lecturer, and her name does not appear in any of the 66 Georgia Tech College of Engineering service-anniversary posts (read through the WordPress API), which in any case run to late 2025. The Georgia Tech repository record (earlier review) dates her Ph.D. dissertation 'Power Systems for Sustainability' to July-August 2025. When the part-time lectureship began (it may have started during the doctorate) and whether another job followed the degree are undocumented. Earlier review (2026-10-17): profile title only; the dissertation was issued 2025-07-30 with an August 2025 degree date; ORCID empty.",
       "sources": [
         {
           "url": "https://www.isye.gatech.edu/users/nicole-redder",
-          "title": "Nicole Redder | Georgia Tech ISyE",
-          "notes": "Title only; no dates."
+          "title": "Nicole Redder - Georgia Tech ISyE profile",
+          "notes": "Read with plain curl: Part Time Lecturer; no education or dates."
         },
         {
           "url": "https://hdl.handle.net/1853/78723",
           "title": "Power Systems for Sustainability (Georgia Tech dissertation)",
-          "notes": "Read via the repository API: Ph.D., Operations Research, Georgia Institute of Technology, issued 2025-07-30, submitted August 2025."
+          "notes": "Earlier review, repository API: Ph.D., Operations Research, issued 2025-07-30, submitted August 2025; advisors Santanu Dey and Valerie Thomas."
+        },
+        {
+          "url": "https://sites.gatech.edu/coe-cares/",
+          "title": "CoE Cares - Georgia Tech College of Engineering service anniversaries",
+          "notes": "All 66 posts read through the WordPress API; no entry for Redder."
         },
         {
           "url": "https://orcid.org/0000-0003-4928-8909",
-          "title": "ORCID record: Nicole Redder",
-          "notes": "Read via public API; no entries."
+          "title": "ORCID record - Nicole Redder",
+          "notes": "Earlier review: no entries."
         }
       ],
-      "phdYearVerified": 2025,
-      "phdInstitutionVerified": "Georgia Institute of Technology",
       "source": "faculty-page"
     },
     {
@@ -57446,19 +57779,38 @@
     {
       "facultyId": "roster:georgia-institute-of-technology:parisa-yousefi-zowj",
       "name": "Parisa Yousefi Zowj",
-      "status": "unresolved",
+      "status": "verified",
       "checkedAt": "2026-10-17",
-      "reason": "The ISyE profile lists a Georgia Tech PhD in Bioinformatics (2020) but its biography only says she 'pursued a PhD degree in Bioinformatics', and it gives her current Lecturer title and ISyE Teaching Fellow role without dates. No CV or personal site is linked, and none of the nine ORCID records for Parisa Yousefi could be tied to her. Neither the first post-PhD job nor its date is documented.",
+      "employer": "Georgia Institute of Technology (H. Milton Stewart School of Industrial and Systems Engineering)",
+      "position": "Lecturer",
+      "placementYear": 2020,
+      "category": "other-academic",
+      "evidenceUrl": "https://www.isye.gatech.edu/news/isye-welcomes-parisa-yousefi-zowj",
+      "evidenceNote": "An ISyE news item dated 20 August 2020 says she joined ISyE on 15 August 2020 as a lecturer and was then 'currently pursuing a Ph.D. in bioinformatics at Georgia Tech'; the College of Engineering service-anniversary list for June-October 2025 gives 'Yousefi Zowj, Parisa, Lecturer, Industrial & Systems Engr, 8/1/20', and she is still a Lecturer. The Georgia Tech repository dates her Ph.D. dissertation (advisors David Goldsman and Brani Vidakovic) to 14 January 2021, with degree submission May 2021. Overlap: the lectureship began about five months before the dissertation was issued and nine months before the May 2021 degree, while the doctorate was unfinished; it was not retitled on completion, so under the overlap decision it is the first job with its own 2020 start year. No other job is documented.",
+      "phdYearVerified": 2021,
+      "phdInstitutionVerified": "Georgia Institute of Technology",
+      "phdYearResolution": "The ISyE profile (and the chunk) gives the Bioinformatics Ph.D. as 2020, but the Georgia Tech repository record of the dissertation gives dc.date.issued 2021-01-14 and dc.date.submitted May 2021 (dc.date.created 2021-05), and the August 2020 ISyE news item says she was still pursuing the Ph.D.; 2021 is recorded.",
+      "reason": "Second pass: an ISyE welcome item (August 2020), a College of Engineering service-anniversary list and the Georgia Tech repository's dissertation record give a dated sequence: lecturer from 15 August 2020 while finishing the doctorate, dissertation issued January 2021, degree May 2021. Recorded under the rule for posts not retitled on completion (Brynjolfsson decision, 17 October 2026); because the evidence shows the thesis unfinished when the post began, a verifier should confirm this treatment rather than the stricter rule for jobs held through the doctorate. A Georgia Tech lectureship is recorded as other-academic. Earlier review (2026-10-17): the ISyE profile lists a 2020 Georgia Tech Bioinformatics PhD and her Lecturer and Teaching Fellow roles without dates; no CV or matching ORCID record.",
       "sources": [
         {
-          "url": "https://www.isye.gatech.edu/users/parisa-yousefi-zowj",
-          "title": "Parisa Yousefi Zowj, Georgia Tech ISyE profile",
-          "notes": "Education and biography read; no employment dates."
+          "url": "https://www.isye.gatech.edu/news/isye-welcomes-parisa-yousefi-zowj",
+          "title": "ISyE Welcomes Parisa Yousefi Zowj - Georgia Tech ISyE news (20 Aug 2020)",
+          "notes": "Read with plain curl. 'Parisa Yousefi Zowj joined ISyE on August 15, 2020 as a lecturer'; B.S. Payam-e-Noor, M.S. Azad, M.S. applied statistics ISyE; 'currently pursuing a Ph.D. in bioinformatics at Georgia Tech'."
         },
         {
-          "url": "https://pub.orcid.org/v3.0/expanded-search/?q=given-names:Parisa+AND+family-name:Yousefi*&rows=10",
-          "title": "ORCID public registry search (Parisa Yousefi*)",
-          "notes": "Nine records, none linked to Georgia Tech."
+          "url": "https://sites.gatech.edu/coe-cares/2025/11/17/service-anniversaries-june-october-2025/",
+          "title": "Service Anniversaries - June-October 2025 (Georgia Tech College of Engineering, CoE Cares)",
+          "notes": "Read with plain curl: 'Yousefi Zowj, Parisa, Lecturer, Industrial & Systems Engr, 8/1/20'."
+        },
+        {
+          "url": "https://repository.gatech.edu/server/api/discover/search/objects?query=Yousefi%20Zowj%20Parisa&dsoType=ITEM&size=3",
+          "title": "Georgia Tech repository (SMARTech) REST search - Yousefi Zowj, Parisa (item 1853/64626)",
+          "notes": "Topics on Multiresolution Signal Processing and Bayesian Modeling with Applications in Bioinformatics; Ph.D. dissertation; advisors Goldsman, David and Vidakovic, Brani; department ISyE; dc.date.issued 2021-01-14; dc.date.submitted May 2021."
+        },
+        {
+          "url": "https://www.isye.gatech.edu/users/parisa-yousefi-zowj",
+          "title": "Parisa Yousefi Zowj - Georgia Tech ISyE profile",
+          "notes": "Read with plain curl: Lecturer; Ph.D. Bioinformatics (2020), Georgia Tech; M.S. Statistics (2017), Georgia Tech."
         }
       ],
       "source": "faculty-page"
@@ -57621,12 +57973,22 @@
       "name": "Richard Serfozo",
       "status": "unresolved",
       "checkedAt": "2026-10-17",
-      "reason": "The ISyE profile gives the Ph.D. in Industrial Engineering and Management Sciences from Northwestern in 1969 (after a 1961 B.S. and 1965 M.A.) and says that before Georgia Tech (1983-2005) he was an assistant and associate professor of industrial engineering and operations research at Syracuse University and held positions at Bell Laboratories, The Boeing Company and Ford Motor Company. None of these is dated or ordered, and the industry posts may predate the doctorate, so the first post-PhD job is not established. No CV was found; one web search returned only the same profile.",
+      "reason": "Second pass: the Mathematics Genealogy Project confirms the Northwestern Ph.D. as 1969. The Springer page of his 2009 book Basics of Applied Stochastic Processes (read through the reader proxy and a headless browser after a client challenge to curl) gives only his Georgia Tech affiliation, with no author biography. The ISyE profile (earlier review) lists assistant and associate professorships at Syracuse and posts at Bell Laboratories, Boeing and Ford before Georgia Tech (1983-2005), undated and unordered; the industry posts may predate the doctorate. The first post after 1969 remains undocumented. Earlier review (2026-10-17): the ISyE profile gives the 1969 Northwestern PhD and undated Syracuse, Bell Labs, Boeing and Ford positions before Georgia Tech (1983-2005).",
       "sources": [
         {
+          "url": "https://www.mathgenealogy.org/id.php?id=12571",
+          "title": "Mathematics Genealogy Project - Richard Serfozo",
+          "notes": "Ph.D. Northwestern University 1969; dissertation: Time and Space Transformations of Semi-Markov Processes."
+        },
+        {
+          "url": "https://link.springer.com/book/10.1007/978-3-540-89332-5",
+          "title": "Basics of Applied Stochastic Processes (Springer, 2009) - book page",
+          "notes": "Read through r.jina.ai and a headless browser (curl got a client challenge): author affiliation Georgia Tech ISyE only; no biography."
+        },
+        {
           "url": "https://www.isye.gatech.edu/users/richard-serfozo",
-          "title": "Georgia Tech ISyE — Richard Serfozo profile",
-          "notes": "Education with years; Georgia Tech 1983-2005; undated Syracuse, Bell Labs, Boeing and Ford positions."
+          "title": "Richard Serfozo - Georgia Tech ISyE profile",
+          "notes": "Earlier review: education with years; Georgia Tech 1983-2005; undated Syracuse, Bell Labs, Boeing and Ford positions."
         }
       ],
       "source": "faculty-page"
@@ -58096,17 +58458,17 @@
       "name": "Steven Hackman",
       "status": "unresolved",
       "checkedAt": "2026-10-17",
-      "reason": "The ISyE profile and his own site give the Ph.D. in IEOR from UC Berkeley (1983) and say, without dates, that he worked as an Industrial Engineer at the Naval Supply Center, Oakland, co-founded and was President of Integrated Warehouse Design, Inc., and consulted for Fortune 500 companies; he is now associate professor emeritus at Georgia Tech. No page opened says when he joined Georgia Tech or whether the Naval Supply Center job came before or after the doctorate. No CV was found on his site (home and publications pages only).",
+      "reason": "Second pass: his Georgia Tech site (pages and media read through the WordPress API) has a home page, a book page and a publications list whose earliest items are dated 1986, but no CV or dated positions; the old ISyE address redirects to the same site. He does not appear in the Georgia Tech College of Engineering service-anniversary lists, and the Mathematics Genealogy Project has no record for him. As in the earlier review, the ISyE profile gives the Berkeley IEOR Ph.D. (1983) and undated work as an industrial engineer at the Naval Supply Center, Oakland, as co-founder of Integrated Warehouse Design, Inc., and as a consultant; when he joined Georgia Tech and whether the Naval Supply Center job followed the doctorate are undocumented. Earlier review (2026-10-17): profile and site give the 1983 Berkeley PhD and undated Naval Supply Center, company and consulting work; no CV.",
       "sources": [
         {
-          "url": "https://www.isye.gatech.edu/users/steven-hackman",
-          "title": "Georgia Tech ISyE — Steven Hackman profile",
-          "notes": "Degrees with years; undated work history."
+          "url": "https://sites.gatech.edu/steven-hackman/",
+          "title": "Steven Hackman - personal site (read through the WordPress API)",
+          "notes": "Home, book and publications pages (publications from 1986); one media file (a 2023 paper PDF); no CV or dated employment."
         },
         {
-          "url": "https://sites.gatech.edu/steven-hackman/",
-          "title": "Steven Hackman — personal site",
-          "notes": "Same undated biography; no CV link."
+          "url": "https://www.isye.gatech.edu/users/steven-hackman",
+          "title": "Steven Hackman - Georgia Tech ISyE profile",
+          "notes": "Earlier review: degrees with years (Ph.D. IEOR 1983, Berkeley); undated work history."
         }
       ],
       "source": "faculty-page"
@@ -58316,32 +58678,32 @@
       "name": "William Rouse",
       "status": "unresolved",
       "checkedAt": "2026-10-17",
-      "reason": "His ORCID record gives the PhD in Mechanical Engineering at MIT, 1969-09 to 1972-08, but lists only his 2019 Georgetown research professorship as employment. The ISyE profile, his personal site, a Georgia Tech news item and the SERC memorial notice (he died in August 2026) list faculty posts at Tufts, the University of Illinois, Delft, Georgia Tech and Stevens and founding the Georgia Tech Center for Man-Machine Systems Research in 1981, but none dates or orders the posts held right after 1972, so the first post-PhD job is undocumented.",
+      "reason": "Second pass: his website's home, awards, engagements and books pages (plain curl) list faculty service at Georgetown, Georgia Tech, Illinois, Delft, Stevens and Tufts and companies he founded, without any 1970s dates; the Mathematics Genealogy Project confirms the MIT Ph.D. as 1972; ORCID (earlier review) dates the MIT doctorate 1969-09 to 1972-08 and lists only a 2019 Georgetown post. A Georgia Tech release of 24 September 2004 naming him director of the Tennenbaum Institute (read through the news system's JSON view) says he served on the faculty of the University of Illinois at Urbana-Champaign and, in visiting positions, on the faculties of Delft and Tufts, so the Tufts post was a visiting one, but it gives no dates. One web search found no CV. No dated CV or biography for 1972-1981 was found, so which of Tufts, Illinois or another post came first after August 1972, and from when, remains undocumented. Earlier review (2026-10-17): ORCID dates the MIT PhD to August 1972; the ISyE profile, personal site, a Georgia Tech news item and the SERC memorial list Tufts, Illinois, Delft, Georgia Tech and Stevens without dates for the posts right after 1972.",
       "sources": [
+        {
+          "url": "https://www.billrouse.com/",
+          "title": "Bill Rouse - personal website",
+          "notes": "Read with plain curl, with its awards, engagements and books pages: faculties of Georgetown, Georgia Tech, Illinois, Delft, Stevens and Tufts, undated."
+        },
+        {
+          "url": "https://www.tlwarc.hg.gatech.edu/node/59983/json",
+          "title": "Bill Rouse Named Director of Tennenbaum Institute - Georgia Tech news (24 Sep 2004), JSON view",
+          "notes": "Read with plain curl: 'Rouse has served on the faculty of the University of Illinois at Urbana-Champaign and, in visiting positions, on the faculties of Delft University of Technology in The Netherlands and Tufts University'; no dates."
+        },
+        {
+          "url": "https://www.mathgenealogy.org/id.php?id=163720",
+          "title": "Mathematics Genealogy Project - William Rouse",
+          "notes": "Ph.D. Massachusetts Institute of Technology 1972; dissertation: Cognitive Sources of Suboptimal Human Prediction."
+        },
         {
           "url": "https://orcid.org/0000-0003-4009-8447",
           "title": "ORCID record 0000-0003-4009-8447 (William Rouse)",
-          "notes": "Read through the public ORCID API. Education: MIT Mechanical Engineering PhD 1969-09 to 1972-08. Employment: Georgetown School of Public Policy, Research Professor, 2019-07-."
-        },
-        {
-          "url": "https://www.isye.gatech.edu/users/william-rouse",
-          "title": "Georgia Tech ISyE - William Rouse",
-          "notes": "Professor Emeritus; B.S. URI, S.M. and Ph.D. MIT (no years); biography without dated chronology."
-        },
-        {
-          "url": "https://www.billrouse.com/",
-          "title": "Bill Rouse personal website",
-          "notes": "Lists faculties of Georgetown, Georgia Tech, Illinois, Delft, Stevens and Tufts without dates."
+          "notes": "Earlier review: MIT Mechanical Engineering PhD 1969-09 to 1972-08; employment Georgetown Research Professor from 2019-07 only."
         },
         {
           "url": "https://hg.gatech.edu/node/57667",
           "title": "Georgia Tech news item on William B. Rouse",
-          "notes": "Founded and directed the Center for Man-Machine Systems Research at Georgia Tech 1981-85; adjunct professor from 1988; held faculty and visiting appointments at UIUC, Delft and Tufts (undated)."
-        },
-        {
-          "url": "https://sercuarc.org/news/serc-mourns-passing-of-dr-bill-rouse/",
-          "title": "SERC - SERC Mourns Passing of Dr. Bill Rouse (August 2026)",
-          "notes": "Memorial notice; repeats the undated list of faculties and MIT doctorate."
+          "notes": "Earlier review: founded the Center for Man-Machine Systems Research at Georgia Tech 1981-85; earlier UIUC, Delft and Tufts appointments undated."
         }
       ],
       "source": "faculty-page"
