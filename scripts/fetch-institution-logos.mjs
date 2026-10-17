@@ -1,9 +1,9 @@
-// Download a small identifying icon (96px PNG) for each mapped institution into assets/logos/<qid>.png.
+// Download an identifying icon (128 px PNG) for each mapped institution into assets/logos/<qid>.png.
 // Official websites come from Wikidata (P856) in batches. Icon sources, best first: the icons the
 // homepage itself declares (apple-touch-icon, then sized icons, then the plain favicon), the site's
 // /apple-touch-icon.png, DuckDuckGo's and Google's favicon services, and finally the logo files that
 // Wikidata records for the institution (icon P2910, small logo P8972, logo P154; read from Wikimedia
-// Commons as PNG thumbnails). Icons identify institutions on the map only; trademarks belong to their
+// Commons as PNG thumbnails), then the lead image of the English Wikipedia article. Icons identify institutions on the map only; trademarks belong to their
 // owners. Reviewed exceptions are in data/logo-review.json (`reject` drops a wrong icon, `url` names
 // the file to use, `skip` lists source URLs, or parts of them, that gave a wrong or unreadable icon). Missing icons are fine: the map falls back to initials.
 // Usage: node scripts/fetch-institution-logos.mjs [--refresh] [--missing] [--out DIR --cache FILE]
@@ -22,7 +22,7 @@ const outDir = arg('--out') ? path.resolve(arg('--out')) : defaultDir, staging =
 const cachePath = arg('--cache') ? path.resolve(arg('--cache')) : path.join(root, 'research/logo-cache.json');
 const UA = 'opsphdplacements-research/1.0 (https://github.com/konstantinosStouras/opsphdplacements)';
 const BROWSER_UA = 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36';
-const SIZE = 96, MIN = 32;
+const SIZE = 128, MIN = 32, SHARP = 120;
 const refresh = process.argv.includes('--refresh'), retryMissing = process.argv.includes('--missing');
 const sleep = ms => new Promise(r => setTimeout(r, ms));
 fs.mkdirSync(outDir, { recursive: true });
@@ -33,7 +33,7 @@ const save = () => fs.writeFileSync(cachePath, JSON.stringify(cache));
 
 async function wikidata(ids) {
   for (let attempt = 0; attempt < 8; attempt++) {
-    const res = await fetch('https://www.wikidata.org/w/api.php?' + new URLSearchParams({ action: 'wbgetentities', ids: ids.join('|'), props: 'claims', format: 'json' }), { headers: { 'User-Agent': UA } });
+    const res = await fetch('https://www.wikidata.org/w/api.php?' + new URLSearchParams({ action: 'wbgetentities', ids: ids.join('|'), props: 'claims|sitelinks', sitefilter: 'enwiki', format: 'json' }), { headers: { 'User-Agent': UA } });
     const text = await res.text();
     if (res.ok && text.startsWith('{')) return JSON.parse(text).entities || {};
     await sleep(4000 * (attempt + 1));
@@ -45,7 +45,7 @@ const claim = (e, p) => e?.claims?.[p]?.[0]?.mainsnak?.datavalue?.value || null;
 const data = JSON.parse(fs.readFileSync(locPath, 'utf8'));
 const mapped = data.records.filter(r => r.qid);
 // Website and Wikidata logo files, fetched once per item (and again for items cached before the logo fields existed).
-const need = mapped.filter(r => !cache[r.qid] || cache[r.qid].commonsVersion !== 2);
+const need = mapped.filter(r => !cache[r.qid] || cache[r.qid].commonsVersion !== 3);
 for (let i = 0; i < need.length; i += 50) {
   const batch = need.slice(i, i + 50);
   const ents = await wikidata(batch.map(r => r.qid));
@@ -53,7 +53,7 @@ for (let i = 0; i < need.length; i += 50) {
     const e = ents[r.qid];
     // Icon, small logo, seal and coat of arms before the full logo, which is often a wide wordmark;
     // photographs (.jpg) entered as logos are skipped.
-    cache[r.qid] = { ...(cache[r.qid] || {}), website: claim(e, 'P856') || cache[r.qid]?.website || null, commons: ['P2910', 'P8972', 'P158', 'P94', 'P154'].map(p => claim(e, p)).filter(f => f && !/\.jpe?g$/i.test(f)), commonsVersion: 2 };
+    cache[r.qid] = { ...(cache[r.qid] || {}), website: claim(e, 'P856') || cache[r.qid]?.website || null, commons: ['P2910', 'P8972', 'P158', 'P94', 'P154'].map(p => claim(e, p)).filter(f => f && !/\.jpe?g$/i.test(f)), enwiki: e?.sitelinks?.enwiki?.title || null, commonsVersion: 3 };
   }
   save();
   await sleep(1500);
@@ -87,15 +87,16 @@ async function declaredIcons(website) {
     return out.sort((a, b) => b.rank - a.rank).map(o => o.url);
   } catch { return []; }
 }
-const commonsUrl = file => `https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/${encodeURIComponent(file.replace(/ /g, '_'))}&width=192`;
+const commonsUrl = file => `https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/${encodeURIComponent(file.replace(/ /g, '_'))}&width=256`;
 
 // Largest frame of an .ico, cropped to its visible content, scaled to fit 96px on a transparent canvas.
 // Rejects images under 32px (blurry once enlarged), nearly empty ones and ones too light to see on white.
 // With strict on, a wide wordmark (more than 2.4 times wider than tall) is refused, because it shrinks to
 // a thin line in a circle; one up to 3 times as wide is used only when no source gives a squarer icon,
 // and a wider one never (the initials read better).
+// Prints the icon's own resolution after cropping (the longer side, in pixels), so the sharpest source can be chosen.
 function convert(src, target, strict) {
-  execFileSync('python3', ['-I', '-c', `
+  return +execFileSync('python3', ['-I', '-c', `
 import sys
 from PIL import Image
 im = Image.open(sys.argv[1])
@@ -115,12 +116,14 @@ if colours is not None and len(colours) < 2: raise SystemExit('blank')
 px = list(zip(im.convert('L').getdata(), im.getchannel('A').getdata()))
 solid = [l for l, a in px if a > 128]
 if not solid or sum(1 for l in solid if l < 170) < 0.03 * len(solid): raise SystemExit('too light for a white disc')
-scale = ${SIZE} / max(im.width, im.height)
+native = max(im.width, im.height)
+scale = ${SIZE} / native
 im = im.resize((max(1, round(im.width * scale)), max(1, round(im.height * scale))), Image.LANCZOS)
 canvas = Image.new('RGBA', (${SIZE}, ${SIZE}), (0, 0, 0, 0))
 canvas.paste(im, ((${SIZE} - im.width) // 2, (${SIZE} - im.height) // 2), im)
-canvas.quantize(colors=128, method=Image.Quantize.FASTOCTREE).save(sys.argv[2], optimize=True)
-`, src, target, strict ? 'strict' : 'lenient'], { stdio: ['ignore', 'ignore', 'ignore'] });
+canvas.quantize(colors=256, method=Image.Quantize.FASTOCTREE).save(sys.argv[2], optimize=True)
+print(native)
+`, src, target, strict ? 'strict' : 'lenient'], { stdio: ['ignore', 'pipe', 'ignore'] }).toString().trim();
 }
 
 let fetched = 0, tried = 0;
@@ -140,17 +143,37 @@ for (const r of mapped) {
     candidates.push({ url: `https://icons.duckduckgo.com/ip3/${entry.domain}.ico` }, { url: `https://www.google.com/s2/favicons?domain=${entry.domain}&sz=128` });
   }
   for (const file of entry.commons || []) candidates.push({ url: commonsUrl(file), ua: UA });
+  // Last: the lead image of the English Wikipedia article, which for a university is usually its seal or
+  // logo (a drawing, .svg or .png; photographs are skipped).
+  if (entry.enwiki) {
+    if (entry.pageImage === undefined) {
+      try {
+        const res = await fetch('https://en.wikipedia.org/w/api.php?' + new URLSearchParams({ action: 'query', prop: 'pageimages', piprop: 'name', titles: entry.enwiki, redirects: '1', format: 'json' }), { headers: { 'User-Agent': UA }, signal: AbortSignal.timeout(20000) });
+        const pages = (await res.json()).query?.pages || {};
+        entry.pageImage = Object.values(pages)[0]?.pageimage || null;
+      } catch { entry.pageImage = null; }
+    }
+    if (entry.pageImage && /\.(svg|png)$/i.test(entry.pageImage)) candidates.push({ url: `https://en.wikipedia.org/w/index.php?title=Special:Redirect/file/${encodeURIComponent(entry.pageImage)}&width=256`, ua: UA });
+  }
   const tmp = path.join(outDir, r.qid + '.raw'), out = path.join(outDir, r.qid + '.new.png');
-  let source = null, fallback = null;
+  // Sharpness first: the first square source (in the order above) that is at least 120 px on its own wins;
+  // otherwise the sharpest square source; otherwise a moderately wide one.
+  let source = null, best = null, fallback = null;
   for (const c of candidates) {
     if (skipped(c.url)) continue;
     const raw = await download(c.url, c.ua);
     if (!raw) continue;
     fs.writeFileSync(tmp, raw);
-    try { convert(tmp, out, true); source = c.url; break; } catch { /* try the next source */ }
-    if (!fallback) { try { convert(tmp, out, false); fallback = { raw, url: c.url }; } catch { /* unusable */ } }
+    try {
+      const native = convert(tmp, out, true);
+      if (native >= SHARP) { source = c.url; best = null; break; }
+      if (!best || native > best.native) best = { raw, url: c.url, native };
+      continue;
+    } catch { /* not square or unusable */ }
+    if (!fallback) { try { const native = convert(tmp, out, false); fallback = { raw, url: c.url, native }; } catch { /* unusable */ } }
   }
-  if (!source && fallback) { fs.writeFileSync(tmp, fallback.raw); try { convert(tmp, out, false); source = fallback.url; } catch { /* none */ } }
+  const pick = source ? null : best || fallback;
+  if (pick) { fs.writeFileSync(tmp, pick.raw); try { convert(tmp, out, pick === best); source = pick.url; } catch { /* none */ } }
   fs.rmSync(tmp, { force: true });
   if (source) { fs.renameSync(out, target); entry.icon = r.qid + '.png'; entry.iconSource = source; fetched++; }
   else { fs.rmSync(out, { force: true }); if (missing) { entry.icon = null; entry.iconSource = null; } }
