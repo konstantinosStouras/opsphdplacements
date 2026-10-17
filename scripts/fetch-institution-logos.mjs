@@ -19,7 +19,7 @@
 // --only Q1,Q2 limits either step to those items.
 // Reviewed exceptions are in data/logo-review.json: `pick` names (part of) the candidate URL to use, `skip`
 // lists (parts of) candidate URLs that are wrong or unreadable, `url` adds a candidate, `reject` leaves the
-// institution without a logo. Logos identify institutions on the map only; trademarks belong to their owners.
+// institution without a logo, `same` gives a merged or historical institution its successor's logo. Logos identify institutions on the map only; trademarks belong to their owners.
 import fs from 'node:fs';
 import path from 'node:path';
 import { createRequire } from 'node:module';
@@ -191,7 +191,7 @@ function choose() {
     const man = readJson(path.join(candRoot, q, 'manifest.json'), []);
     let best = null; const tried = [];
     for (const e of man) {
-      if (!e.file || (fix.skip || []).some(part => e.url.includes(part))) continue;
+      if (!e.file || (e.kind !== 'review' && (fix.skip || []).some(part => e.url.includes(part)))) continue;
       const file = path.join(candRoot, q, e.file.endsWith('.svg') ? e.k + '.png' : e.file);
       if (!fs.existsSync(file)) continue;
       let r;
@@ -209,8 +209,15 @@ function choose() {
     if (best) { fs.renameSync(target + '.tmp', target); n++; choices[q] = { url: best.e.url, kind: best.e.kind, ...best.r, tried }; }
     else { fs.rmSync(target, { force: true }); choices[q] = { reason: 'no usable candidate', tried }; }
   }
+  // `same` gives a merged or historical institution its successor's (or parent's) logo.
+  for (const q of qids) {
+    const other = review[q]?.same; if (!other) continue;
+    const src = path.join(outDir, other + '.png');
+    if (fs.existsSync(src)) { fs.copyFileSync(src, path.join(outDir, q + '.png')); if (!choices[q]?.url) n++; choices[q] = { same: other, kind: 'same', url: choices[other]?.url || null }; }
+  }
   fs.rmSync(tmp, { force: true });
-  fs.writeFileSync(path.join(root, 'research/logo-choices.json'), JSON.stringify(choices, null, 1));
+  const choicesPath = path.join(root, 'research/logo-choices.json');
+  fs.writeFileSync(choicesPath, JSON.stringify(only ? { ...readJson(choicesPath, {}), ...choices } : choices, null, 1));
   console.log(`chose ${n} logos for ${qids.length} mapped institutions in ${outDir}`);
   if (staging) return;
   for (const r of data.records) r.logo = r.qid && fs.existsSync(path.join(outDir, r.qid + '.png')) ? `assets/logos/${r.qid}.png` : null;

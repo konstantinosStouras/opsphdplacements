@@ -136,8 +136,9 @@ else:
     fill = float((disc & box).sum() / disc.sum())
     mode += '+emblem' if emblem else ''
 # A plain picture with almost no shapes (two flat colour blocks, a bare colour square) is not a logo.
-g = np.asarray(out.convert('RGBA')).astype(np.int16)
-a = g[..., 3] > 40
+flat = Image.new('RGBA', out.size, (255, 255, 255, 255))
+flat.alpha_composite(out.convert('RGBA'))  # as it shows on the white disc
+g = np.asarray(flat).astype(np.int16)
 edge = (np.abs(np.diff(g[..., :3], axis=0)).max(-1)[:, :-1] > 60) | (np.abs(np.diff(g[..., :3], axis=1)).max(-1)[:-1, :] > 60)
 yy, xx = np.mgrid[0:SIZE - 1, 0:SIZE - 1]
 inside = np.hypot(xx + 1 - SIZE / 2, yy + 1 - SIZE / 2) < SIZE / 2 - 2
