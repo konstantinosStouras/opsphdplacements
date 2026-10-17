@@ -72,11 +72,15 @@ for (const name of names) {
 const retrievedAt = new Date().toISOString().slice(0, 10);
 const records = names.map(name => {
   const fix = review[name], match = fix && !fix.qid ? { qid: null } : cache[name];
-  return { [{ employers: 'employer', universities: 'university', institutions: 'institution' }[mode]]: name, people: counts.get(name), ...match, ...(fix ? { reviewed: true, reviewReason: fix.reason, reviewedAt: fix.reviewedAt } : {}) };
+  const rec = { [{ employers: 'employer', universities: 'university', institutions: 'institution' }[mode]]: name, people: counts.get(name), ...match, ...(fix ? { reviewed: true, reviewReason: fix.reason, reviewedAt: fix.reviewedAt } : {}) };
+  // Keep the map icons that scripts/fetch-institution-logos.mjs downloaded (rewriting this file used to drop them).
+  if (mode === 'institutions') rec.logo = rec.qid && fs.existsSync(path.join(root, 'assets/logos', rec.qid + '.png')) ? `assets/logos/${rec.qid}.png` : null;
+  return rec;
 });
+const previousLogos = mode === 'institutions' && fs.existsSync(outPath) ? JSON.parse(fs.readFileSync(outPath, 'utf8')).metadata?.logos : null;
 fs.writeFileSync(outPath, JSON.stringify({
   version: 1,
-  metadata: { source: 'Wikidata item coordinates (P625), matched by name', retrievedAt, note: 'Approximate location for map display only. Matches are name based and unreviewed unless reviewed:true, in which case the match follows the correction recorded in data/location-review.json.', mapped: records.filter(r => r.qid).length, total: records.length, reviewed: records.filter(r => r.reviewed).length },
+  metadata: { source: 'Wikidata item coordinates (P625), matched by name', retrievedAt, note: 'Approximate location for map display only. Matches are name based and unreviewed unless reviewed:true, in which case the match follows the correction recorded in data/location-review.json.', mapped: records.filter(r => r.qid).length, total: records.length, reviewed: records.filter(r => r.reviewed).length, ...(mode === 'institutions' ? { logos: { ...(previousLogos || {}), count: records.filter(r => r.logo).length } } : {}) },
   records
 }, null, 1) + '\n');
 console.log(`mapped ${records.filter(r => r.qid).length} of ${records.length} (${records.filter(r => r.reviewed).length} reviewed corrections applied)`);
