@@ -15,6 +15,11 @@ import path from 'node:path';
 const root = path.resolve(path.dirname(new URL(import.meta.url).pathname), '..');
 const read = f => JSON.parse(fs.readFileSync(path.join(root, f), 'utf8'));
 const roster = read('data/faculty-rosters.json');
+// Reviewed aliases (data/institution-aliases.json): a PhD institution written as an abbreviation, short form, spelling
+// variant or school of a university that is already in the people database counts as that university; the written form
+// is kept in phdInstitutionAsWritten. Only reviewed entries apply; every other name is kept as the page writes it.
+const aliasFile = path.join(root, 'data/institution-aliases.json');
+const aliases = fs.existsSync(aliasFile) ? read('data/institution-aliases.json').aliases : {};
 
 // The operations rule, applied to the area and the title the profile shows (not to the directory row).
 const OPERATIONS = /operation|supply|logistic|management science|decision scien|decision technolog|industrial|systems engineering|production|\bisye\b|\bise\b|\bom\b|\bscm\b|\bods\b|\bodt\b|\bitao\b|\bisom\b|\bOR\b/i;
@@ -41,7 +46,8 @@ for (const r of roster.records) {
     title: v.titleConfirmed || null,
     facultyStatus: /emerit|retired/i.test(v.titleConfirmed || '') ? 'retired' : 'active',
     phdYear: v.phdYear ?? null,
-    phdInstitution: v.phdInstitution || null,
+    phdInstitution: v.phdInstitution ? (aliases[v.phdInstitution]?.canonical || v.phdInstitution) : null,
+    phdInstitutionAsWritten: v.phdInstitution && aliases[v.phdInstitution] ? v.phdInstitution : undefined,
     phdInstitutionSourceUrl: v.phdInstitution ? v.phdSourceUrl || null : null,
     currentInstitution: r.university,
     currentInstitutionSourceUrl: v.profileUrl || r.profileUrl || null,
@@ -73,6 +79,7 @@ const metadata = {
   recordCount: records.length,
   withPhdInstitutionCount: records.filter(r => r.phdInstitution).length,
   withPhdYearCount: records.filter(r => r.phdYear != null).length,
+  aliasedPhdInstitutionCount: records.filter(r => r.phdInstitutionAsWritten).length,
   disciplineCounts: count('discipline', r => r.discipline),
   statusCounts: count('facultyStatus', r => r.facultyStatus),
   universityCount: new Set(records.map(r => r.universityId)).size,
