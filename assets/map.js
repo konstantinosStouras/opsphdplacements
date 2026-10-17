@@ -97,7 +97,8 @@ export async function renderMap(target, state, { onSelect, openProfile, isCurren
     stats.set(p.phdInstitution, s);
   }
   if (!indexed) for (const r of state.placements) { const s = stats.get(r.phdInstitution); if (s) { s.verified++; if (r.category === 'tenure-track') s.tt++; } }
-  const nodes = locations.records.filter(r => r.qid && stats.has(r.institution)).map(r => ({ type: 'node', id: r.institution, name: r.institution, qid: r.qid, country: r.country || null, logo: r.logo || null, lat: r.lat, lon: r.lon, ...stats.get(r.institution) }));
+  // A matched item without coordinates is left off the map (and counted as unplaced), never drawn at 0°, 0°.
+  const nodes = locations.records.filter(r => r.qid && Number.isFinite(r.lat) && Number.isFinite(r.lon) && stats.has(r.institution)).map(r => ({ type: 'node', id: r.institution, name: r.institution, qid: r.qid, country: r.country || null, logo: r.logo || null, lat: r.lat, lon: r.lon, ...stats.get(r.institution) }));
   const unmapped = [...stats.keys()].filter(name => !nodes.some(n => n.id === name));
   const unmappedPeople = unmapped.reduce((n, name) => n + stats.get(name).people, 0);
 

@@ -71,7 +71,10 @@ for (const name of names) {
 
 const retrievedAt = new Date().toISOString().slice(0, 10);
 const records = names.map(name => {
-  const fix = review[name], match = fix && !fix.qid ? { qid: null } : cache[name];
+  const fix = review[name];
+  let match = fix && !fix.qid ? { qid: null } : cache[name];
+  // A reviewed correction may also give the coordinates, for an item that has none on Wikidata or a wrong one.
+  if (fix?.qid && Number.isFinite(fix.lat) && Number.isFinite(fix.lon)) match = { ...match, lat: fix.lat, lon: fix.lon, coordinateSource: fix.coordinateSource || null };
   const rec = { [{ employers: 'employer', universities: 'university', institutions: 'institution' }[mode]]: name, people: counts.get(name), ...match, ...(fix ? { reviewed: true, reviewReason: fix.reason, reviewedAt: fix.reviewedAt } : {}) };
   // Keep the map icons that scripts/fetch-institution-logos.mjs downloaded (rewriting this file used to drop them).
   if (mode === 'institutions') rec.logo = rec.qid && fs.existsSync(path.join(root, 'assets/logos', rec.qid + '.png')) ? `assets/logos/${rec.qid}.png` : null;
