@@ -2,7 +2,8 @@
 // Land shapes: world-atlas countries-110m (Natural Earth, ISC licence; see assets/vendor/world/LICENSE.txt).
 // Projection: Equal Earth (Savric, Patterson & Jenny 2018). Locations: data/institution-locations.json.
 // Institutions that sit close together at the current zoom are grouped into one larger circle that shows
-// how many it holds; clicking or tapping it zooms in until the group splits. A single institution is a
+// how many it holds; clicking or tapping it zooms in until the group splits (at the deepest zoom every
+// institution is drawn on its own, nudged apart from its neighbours). A single institution is a
 // white disc holding its site icon inside a ring coloured by the share of its people with a verified
 // first job. Circle area is people in the dataset (or verified first jobs). Hover shows a card and a
 // click opens the profile on devices with a pointer; on touch screens a tap shows the card below the map.
@@ -166,11 +167,14 @@ export async function renderMap(target, state, { onSelect, openProfile, isCurren
   // ---- Clustering at the current zoom: institutions within a short screen distance share one circle ----
   function cluster() {
     const L = M.layout, { k, tx, ty } = M.zoom, s = Math.pow(k, ZOOM_GROWTH), T = L.clusterDistance;
+    // At the deepest zoom nothing is grouped: institutions in the same city (or at the same coordinates)
+    // would otherwise stay one circle that can never be opened; spread() nudges them apart instead.
+    const atMax = k >= MAX_ZOOM - 0.001;
     const pts = L.nodes.map(n => ({ n, x: n.x0 * k + tx, y: n.y0 * k + ty })).filter(p => p.x > -150 && p.x < L.W + 150 && p.y > -150 && p.y < L.H + 150).sort((a, b) => value(b.n) - value(a.n));
     const taken = new Set(), items = [];
     for (const seed of pts) {
       if (taken.has(seed.n.id)) continue;
-      const members = pts.filter(p => !taken.has(p.n.id) && Math.hypot(p.x - seed.x, p.y - seed.y) <= T);
+      const members = atMax ? [seed] : pts.filter(p => !taken.has(p.n.id) && Math.hypot(p.x - seed.x, p.y - seed.y) <= T);
       for (const p of members) taken.add(p.n.id);
       if (members.length === 1) { const n = seed.n; items.push({ type: 'node', id: n.id, node: n, x0: n.x0, y0: n.y0, r: n.r * s, value: value(n) }); continue; }
       const total = members.reduce((t, p) => t + value(p.n), 0);
