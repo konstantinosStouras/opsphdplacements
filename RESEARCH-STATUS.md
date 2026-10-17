@@ -8,8 +8,8 @@ Generated from committed-format public datasets by `node scripts/update-research
 | of which OM List profiles | 2149 |
 | of which operations faculty found on the linked faculty pages | 1012 |
 | Individually reviewed profiles | 3161 |
-| Verified first jobs | 1490 |
-| Researched but unresolved | 1667 |
+| Verified first jobs | 1520 |
+| Researched but unresolved | 1637 |
 | Degree completion unconfirmed | 4 |
 | Pending individual review | 0 |
 | Initial program-register records | 13 |
