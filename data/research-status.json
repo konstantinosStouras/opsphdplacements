@@ -4,24 +4,24 @@
     "updatedAt": "2026-10-17",
     "total": 3161,
     "counts": {
-      "unresolved": 1244,
-      "verified": 1913,
+      "unresolved": 1234,
+      "verified": 1923,
       "not-yet-completed-phd": 4
     },
     "bySource": {
       "omlist": {
         "total": 2149,
         "counts": {
-          "unresolved": 775,
-          "verified": 1373,
+          "unresolved": 767,
+          "verified": 1381,
           "not-yet-completed-phd": 1
         }
       },
       "faculty-page": {
         "total": 1012,
         "counts": {
-          "verified": 540,
-          "unresolved": 469,
+          "verified": 542,
+          "unresolved": 467,
           "not-yet-completed-phd": 3
         }
       }
@@ -1958,14 +1958,27 @@
     {
       "facultyId": "omlist-1b326e92528dc8e9",
       "name": "Mazhar Arikan",
-      "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "Kansas dates the Purdue doctorate to 2011 and lists Kansas course instruction from fall 2011. However, course teaching entries are not an employment chronology and do not state an initial appointment rank or rule out an intervening appointment. A CV or explicit initial-placement source is needed.",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "employer": "University of Kansas",
+      "position": null,
+      "placementYear": 2011,
+      "category": "unknown",
+      "evidenceUrl": "https://pub.orcid.org/v3.0/0000-0002-6347-2561/employments",
+      "evidenceNote": "His ORCID record lists the Purdue PhD in Operations Management from 2006-08-15 to 2011-08-01 and then a University of Kansas employment from 2011-08-15 with no role title, and no other employer. The KU profile dates the Purdue PhD to 2011 and lists his KU teaching from Fall 2011 (SCM 401), after Purdue teaching through 2010. The initial rank is not stated in either source, so the category stays unknown.",
+      "phdYearVerified": 2011,
+      "phdInstitutionVerified": "Purdue University",
+      "reason": "The dated ORCID chronology, carrying his Purdue doctorate, starts Kansas on 15 August 2011, two weeks after the degree end date, with no intervening post; the KU teaching record from Fall 2011 agrees. The rank at appointment is undocumented.",
       "sources": [
         {
+          "url": "https://pub.orcid.org/v3.0/0000-0002-6347-2561/employments",
+          "title": "ORCID 0000-0002-6347-2561 (Mazhar Arikan) - employments and educations",
+          "notes": "Read through the ORCID public API. Employment: University of Kansas from 2011-08-15 (no role or department). Education: Purdue PhD Operations Management 2006-08-15 to 2011-08-01."
+        },
+        {
           "url": "https://business.ku.edu/people/mazhar-arikan",
-          "title": "Mazhar Arikan — public academic profile",
-          "notes": "Professional biography and degree information reviewed for first-job evidence."
+          "title": "KU School of Business - Mazhar Arikan",
+          "notes": "Ph.D. in Operations Management, Purdue University, 2011; teaching list: KU SCM 401 Fall 2011, BBA 405 and SCM 701 Spring 2012; Purdue teaching 2006-2010."
         }
       ],
       "source": "omlist"
@@ -2002,15 +2015,25 @@
       "facultyId": "omlist-b250a1e0331a7b6c",
       "name": "Milad Armaghan",
       "status": "unresolved",
-      "checkedAt": "2026-10-16",
+      "checkedAt": "2026-10-17",
+      "reason": "The Houston directory profile still shows only his title and contact. His ORCID record (0009-0006-9528-3796, public API) lists an undated Southern Methodist University affiliation with no role and Assistant Professor in Decision & Information Sciences at the University of Houston from 2025-06-01; a second ORCID record under his name (0009-0001-8398-9461) is empty. SMU is therefore the likely first employer after the 2023 UT Dallas degree, but its title and dates are not documented: a guessed SMU Cox faculty URL returned 404, one web search found no SMU or UT Dallas page, and the UT Dallas repository search endpoint returned a discovery-system page instead of records, so the dissertation date was not checked. Earlier review (2026-10-16): the Houston directory profile contains current title and contact but no degree or employment chronology.",
       "sources": [
         {
           "url": "https://www.bauer.uh.edu/search/directory/profile.asp?firstname=Milad&lastname=Armaghan",
-          "title": "Milad Armaghan Profile",
-          "notes": "Houston directory profile contains current title/contact but no degree or employment chronology."
+          "title": "Bauer College - Milad Armaghan",
+          "notes": "Title and contact only; no education or employment."
+        },
+        {
+          "url": "https://pub.orcid.org/v3.0/0009-0006-9528-3796/employments",
+          "title": "ORCID 0009-0006-9528-3796 (Milad Armaghan) - employments",
+          "notes": "Read through the public API. Southern Methodist University (undated, no role); University of Houston, Assistant Professor, Decision & Information Sciences, from 2025-06-01. No education entries."
+        },
+        {
+          "url": "https://www.smu.edu/cox/academics/faculty/milad-armaghan",
+          "title": "SMU Cox - guessed faculty page",
+          "notes": "HTTP 404."
         }
       ],
-      "reason": "Houston directory profile contains current title/contact but no degree or employment chronology.",
       "source": "omlist"
     },
     {
@@ -3462,20 +3485,30 @@
       "facultyId": "omlist-03e0d4c6ce932e52",
       "name": "Beste Basciftci",
       "status": "unresolved",
-      "checkedAt": "2026-10-16",
+      "checkedAt": "2026-10-17",
+      "reason": "The doctorate is now dated: Georgia Tech's repository (data endpoint) records her dissertation 'Data-driven stochastic optimization approaches with applications in power systems' (advisors Shabbir Ahmed and Nagi Gebraeel), submitted August 2019 and issued 2019-07-26. The post between August 2019 and the Iowa appointment is still undocumented: her ORCID record (0000-0002-3876-2559) is empty; the Tippie profile, rendered in a headless browser because a plain request returns an empty template, lists only education and awards; her site's home, research, teaching and professional-activities pages carry no CV or dated positions; Crossref shows a Georgia Tech affiliation on a 2019 paper and Iowa on a 2022 paper; one web search found nothing. A Georgia Tech postdoc between the degree and Iowa is possible but unconfirmed. Earlier review (2026-10-16): her biography confirms the Georgia Tech doctorate and the Iowa appointment but gives no dated chronology.",
       "sources": [
         {
+          "url": "https://repository.gatech.edu/server/api/discover/search/objects?query=Basciftci&dsoType=ITEM",
+          "title": "Georgia Tech repository - Basciftci, Beste, dissertation (handle 1853/61765)",
+          "notes": "Repository data endpoint: Dissertation, Industrial and Systems Engineering; advisors Ahmed, Shabbir and Gebraeel, Nagi; issued 2019-07-26; submitted August 2019."
+        },
+        {
           "url": "https://tippie.uiowa.edu/people/beste-basciftci",
-          "title": "Beste Basciftci public academic profile",
-          "notes": "Personal biography confirms Georgia Tech doctorate and Iowa appointment but does not provide a complete dated employment chronology."
+          "title": "Tippie College of Business - Beste Basciftci",
+          "notes": "Rendered with a headless browser: PhD and MS in Operations Research, Georgia Tech; awards 2018-2024; no positions or dates."
         },
         {
           "url": "https://sites.google.com/view/bestebasciftci/home",
-          "title": "Beste Basciftci public academic profile",
-          "notes": "Personal biography confirms Georgia Tech doctorate and Iowa appointment but does not provide a complete dated employment chronology."
+          "title": "Beste Basciftci personal site",
+          "notes": "Current Iowa assistant professorship and Georgia Tech doctorate; no CV; research, teaching and professional-activities subpages also undated."
+        },
+        {
+          "url": "https://pub.orcid.org/v3.0/0000-0002-3876-2559/employments",
+          "title": "ORCID 0000-0002-3876-2559 (Beste Basciftci)",
+          "notes": "Read through the public API; no employment or education entries."
         }
       ],
-      "reason": "Personal biography confirms Georgia Tech doctorate and Iowa appointment but does not provide a complete dated employment chronology.",
       "source": "omlist"
     },
     {
@@ -4978,21 +5011,40 @@
     {
       "facultyId": "omlist-9be089c8edb78f7a",
       "name": "Christoph Bode",
-      "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "The Mannheim biography identifies earlier Tilburg and ETH affiliations and the WHU doctorate without dates or explicit first-employer wording.",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "employer": "ETH Zurich",
+      "position": "Senior Researcher and Lecturer, Department of Management, Technology, and Economics",
+      "placementYear": 2008,
+      "category": "other-academic",
+      "evidenceUrl": "https://pub.orcid.org/v3.0/0000-0001-5006-5804/employments",
+      "evidenceNote": "His ORCID record lists the WHU Ph.D. from 2005-06-01 to 2008-08-31, then Senior Researcher and Lecturer at ETH Zurich's D-MTEC from 2008-09-01 to 2013-09-30 (with a Habilitation at ETH from 2008-09 to 2014-05), Assistant Professor (tenured) at Tilburg from 2013-10-01 to 2014-07-31 and the Mannheim chair from 2014-08-01. The Mannheim biographies name the WHU doctorate, the ETH habilitation and the Tilburg and ETH posts without dates. A senior researcher and lecturer post at a university is recorded as other-academic. Verifier: kept; the Mannheim faculty-profile CV (Lebenslauf) independently dates the WHU Dr. rer. pol. to 2008 and the ETH Zurich D-MTEC lecturer post to 2008-2013, listing no earlier post, and the English chair page links the same ORCID iD, confirming identity.",
+      "phdYearVerified": 2008,
+      "phdInstitutionVerified": "WHU – Otto Beisheim School of Management",
+      "reason": "A dated ORCID chronology carrying his WHU doctorate and every employer named by Mannheim puts the ETH Zurich post first, from September 2008, the month after the August 2008 degree end date; Tilburg came in 2013.",
       "sources": [
         {
-          "url": "https://www.bwl.uni-mannheim.de/en/bode/",
-          "title": "Christoph Bode academic profile",
-          "notes": "The Mannheim biography identifies earlier Tilburg and ETH affiliations and the WHU doctorate without dates or explicit first-employer wording."
+          "url": "https://pub.orcid.org/v3.0/0000-0001-5006-5804/employments",
+          "title": "ORCID 0000-0001-5006-5804 (Christoph Bode) - employments and educations",
+          "notes": "Read through the ORCID public API. ETH Zurich D-MTEC Senior Researcher and Lecturer 2008-09-01 to 2013-09-30; Tilburg Assistant Professor (tenured) 2013-10-01 to 2014-07-31; Mannheim Professor from 2014-08-01. Education: WHU Ph.D. 2005-06-01 to 2008-08-31; ETH Habilitation 2008-09-01 to 2014-05-31."
+        },
+        {
+          "url": "https://www.bwl.uni-mannheim.de/bode/team/lehrstuhlinhaber/",
+          "title": "Universitaet Mannheim - Lehrstuhlinhaber Prof. Dr. Christoph Bode (German)",
+          "notes": "Chair since August 2014; doctorate at WHU, habilitation at ETH Zurich; before Mannheim at Tilburg University (Department of Organization and Strategy) and CentER; no dates for earlier posts."
         },
         {
           "url": "https://www.bwl.uni-mannheim.de/en/bode/team/chair-holder/prof-dr-bode-christoph/",
-          "title": "Christoph Bode academic profile",
-          "notes": "The Mannheim biography identifies earlier Tilburg and ETH affiliations and the WHU doctorate without dates or explicit first-employer wording."
+          "title": "University of Mannheim - Prof. Dr. Christoph Bode (English)",
+          "notes": "Ph.D. from WHU, Habilitation from ETH Zurich; served at Tilburg and at D-MTEC, ETH Zurich before Mannheim; undated."
+        },
+        {
+          "url": "https://www.bwl.uni-mannheim.de/fakultaet/areas-und-lehrstuehle/faculty-profile/bode",
+          "title": "Universitaet Mannheim Business School - Faculty profile Prof. Dr. Christoph Bode (Lebenslauf)",
+          "notes": "Dated CV: 2005 Diplom-Wirtschaftsingenieur, Karlsruhe; 2008 Dr. rer. pol., WHU; 2008-2013 Lecturer, D-MTEC, ETH Zurich; 2013-2014 Assistant Professor (tenured), Tilburg; 2014 Habilitation, ETH Zurich; since 2014 Professor of Procurement, Mannheim."
         }
       ],
+      "phdInstitutionVerifiedAsWritten": "WHU Otto-Beisheim-Hochschule",
       "source": "omlist"
     },
     {
@@ -6686,16 +6738,34 @@
     {
       "facultyId": "omlist-51cc53c3dde00996",
       "name": "Soudipta Chakraborty",
-      "status": "unresolved",
-      "checkedAt": "2026-10-16",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "employer": "University of Kansas School of Business",
+      "position": "Assistant Professor, Supply Chain Management",
+      "placementYear": 2020,
+      "category": "tenure-track",
+      "evidenceUrl": "https://pub.orcid.org/v3.0/0000-0002-9944-2137/employments",
+      "evidenceNote": "His ORCID record lists the Duke Fuqua PhD in Operations Management from 2014-08-01 to 2020-06-23 and then Assistant Professor, Supply Chain Management, at the University of Kansas School of Business from 2020-08-18, with no other employment. The KU profile states Ph.D. in Operations Management, Duke University, 2020, and Duke's placement page reports Kansas as his placement. Plain assistant professor at a North American business school, recorded as tenure-track by convention.",
+      "phdYearVerified": 2020,
+      "phdInstitutionVerified": "Duke University",
+      "reason": "The dated ORCID chronology starts the Kansas assistant professorship in August 2020, two months after the June 2020 degree end date, with no postdoc or other job in between, which the Duke academic-placement list alone could not establish.",
       "sources": [
         {
+          "url": "https://pub.orcid.org/v3.0/0000-0002-9944-2137/employments",
+          "title": "ORCID 0000-0002-9944-2137 (Soudipta Chakraborty) - employments and educations",
+          "notes": "Read through the ORCID public API. Employment: University of Kansas School of Business, Assistant Professor, Supply Chain Management, from 2020-08-18. Education: Duke Fuqua PhD 2014-08-01 to 2020-06-23."
+        },
+        {
+          "url": "https://business.ku.edu/people/soudipta-chakraborty",
+          "title": "KU School of Business - Soudipta Chakraborty",
+          "notes": "Assistant Professor; Ph.D. in Operations Management, Duke University, 2020."
+        },
+        {
           "url": "https://areas.fuqua.duke.edu/operations-management/ph-d-program/placement/",
-          "title": "Duke Fuqua Operations Management initial placements",
-          "notes": "Explicit initial doctoral academic placement; role and precise start date unspecified. Reported destination: University of Kansas. This destination is retained as a research lead, not a verified first post-doctoral employer."
+          "title": "Duke Fuqua Operations Management PhD placement",
+          "notes": "Opened in the earlier review; reports University of Kansas as his academic placement."
         }
       ],
-      "reason": "Duke reports this as the initial academic placement. This does not exclude earlier post-doctoral employment outside academia; a full chronology or unrestricted first-employer statement is required.",
       "source": "omlist"
     },
     {
@@ -8333,13 +8403,23 @@
       "facultyId": "omlist-e98bb1f9eb9e48be",
       "name": "Tsan-Ming (Jason) Choi",
       "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "The Liverpool biography describes current role and research without a dated doctoral and earliest employment chronology.",
+      "checkedAt": "2026-10-17",
+      "reason": "His ORCID record (0000-0003-3865-7043, public API) dates his posts but not his degree: The Chinese University of Hong Kong, Department of Systems Engineering and Engineering Management, 2001-09 to 2004-08 (no title); Hong Kong Polytechnic University 2004-09 to 2021-09; National Taiwan University 2021-10 to 2022-08; Liverpool chair from 2022-09-01. The CUHK post began before the imported 2002 CUHK doctorate and continued after it, so under the overlap rule it is either a pre-degree job (making PolyU in September 2004 the first new post) or a post-dissertation appointment in the final months before conferral (making it the first job); the PhD conferral date and the CUHK title are needed to decide. The Liverpool people page has no chronology and the PolyU research-portal URLs tried returned 404. Earlier review (2026-10-16): the Liverpool biography describes his current role and research without a dated doctoral and earliest-employment chronology.",
       "sources": [
         {
+          "url": "https://pub.orcid.org/v3.0/0000-0003-3865-7043/employments",
+          "title": "ORCID 0000-0003-3865-7043 (Tsan-Ming Choi) - employments",
+          "notes": "Read through the public API. CUHK SEEM 2001-09 to 2004-08; PolyU 2004-09 to 2021-09; National Taiwan University 2021-10 to 2022-08; Liverpool Chair from 2022-09-01. No titles before Liverpool; no education entries."
+        },
+        {
+          "url": "https://www.liverpool.ac.uk/people/jason-choi",
+          "title": "University of Liverpool - Professor Jason Choi",
+          "notes": "Chair in Operations and Supply Chain Management and Director of the Centre for Supply Chain Research; no dated chronology."
+        },
+        {
           "url": "https://www.liverpool.ac.uk/management/staff/jason-choi/",
-          "title": "Tsan-Ming (Jason) Choi academic profile",
-          "notes": "The Liverpool biography describes current role and research without a dated doctoral and earliest employment chronology."
+          "title": "Liverpool Management School - Jason Choi (staff page)",
+          "notes": "Opened in the earlier review and again now; no chronology."
         }
       ],
       "source": "omlist"
@@ -9564,13 +9644,23 @@
       "facultyId": "omlist-cf89841ee985bd71",
       "name": "Jennifer Davies",
       "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "The Liverpool biography describes a substantial earlier creative-industry career and doctoral research without completion or transition dates.",
+      "checkedAt": "2026-10-17",
+      "reason": "The Liverpool people page says that before moving into academia she spent 14 years in the creative industries (music and fashion) and that she conducted PhD research on Industry 4.0 technologies in operations and supply chain management, without dates. Her ORCID record (0000-0003-1683-220X, public API) lists the Liverpool PhD in Operations and Supply Chain Management and the Lecturer in Project Management post, both undated. A search of the Liverpool repository (direct requests answer 403; read through the reader proxy) found no thesis under her name, so neither the degree date nor the start of the lectureship, nor whether the creative-industry career continued past the degree, is documented. Earlier review (2026-10-16): the Liverpool biography describes a long earlier creative-industry career and doctoral research without completion or transition dates.",
       "sources": [
         {
-          "url": "https://www.liverpool.ac.uk/management/staff/jennifer-davies/",
-          "title": "Jennifer Davies academic profile",
-          "notes": "The Liverpool biography describes a substantial earlier creative-industry career and doctoral research without completion or transition dates."
+          "url": "https://www.liverpool.ac.uk/people/jennifer-davies",
+          "title": "University of Liverpool - Dr Jennifer Davies",
+          "notes": "Lecturer; 14-year creative-industries career before academia; PhD research on blockchain and tracer technologies; teaching awards 2024; no dates for the degree or appointment."
+        },
+        {
+          "url": "https://pub.orcid.org/v3.0/0000-0003-1683-220X/employments",
+          "title": "ORCID 0000-0003-1683-220X (Jennifer Davies) - employments and educations",
+          "notes": "Read through the public API. Lecturer in Project Management, Liverpool (undated); PhD, Operations and Supply Chain Management, Liverpool (undated)."
+        },
+        {
+          "url": "https://livrepository.liverpool.ac.uk/cgi/search/archive/simple?screen=Search&dataset=archive&q=Davies%2C+Jennifer&_action_search=Search",
+          "title": "University of Liverpool Repository - search 'Davies, Jennifer'",
+          "notes": "Read through r.jina.ai (direct request 403); no operations-management thesis by her among the results."
         }
       ],
       "source": "omlist"
@@ -12813,15 +12903,25 @@
       "facultyId": "omlist-a94417c624f66981",
       "name": "Yuanjun Feng",
       "status": "unresolved",
-      "checkedAt": "2026-10-16",
+      "checkedAt": "2026-10-17",
+      "reason": "The Liverpool people page says she holds a Liverpool PhD on container stacking and relocation whose thesis won the 8th Maritime Economics & Logistics best PhD thesis competition (2019-2022 triennium), without a degree date. Her ORCID record (0000-0002-3918-2564, public API) lists a single University of Liverpool employment starting 2022 with no role and no education entries, so the post's title and whether anything came between the degree and 2022 are not established. A search of the Liverpool repository (through the reader proxy) did not surface her thesis, and Crossref shows no affiliations on her 2019-2022 papers. Earlier review (2026-10-16): the Liverpool biography identifies the doctorate and thesis awards but lacks a dated employment sequence.",
       "sources": [
         {
+          "url": "https://www.liverpool.ac.uk/people/yuanjun-feng",
+          "title": "University of Liverpool - Dr Yuanjun Feng",
+          "notes": "PhD from Liverpool; thesis First Prize in the 8th MEL Best PhD Thesis Competition (2019-2022 triennium); FHEA 2024; no appointment date."
+        },
+        {
+          "url": "https://pub.orcid.org/v3.0/0000-0002-3918-2564/employments",
+          "title": "ORCID 0000-0002-3918-2564 (Yuanjun Feng) - employments",
+          "notes": "Read through the public API. University of Liverpool from 2022 (no role, no department); no education entries."
+        },
+        {
           "url": "https://www.liverpool.ac.uk/management/staff/yuanjun-feng/",
-          "title": "Yuanjun Feng Profile",
-          "notes": "Liverpool biography identifies its doctorate and thesis awards but lacks dated employment sequence."
+          "title": "Liverpool Management School - Yuanjun Feng (staff page)",
+          "notes": "Opened in the earlier review; no dated chronology."
         }
       ],
-      "reason": "Liverpool biography identifies its doctorate and thesis awards but lacks dated employment sequence.",
       "source": "omlist"
     },
     {
@@ -16202,18 +16302,23 @@
       "facultyId": "omlist-ac2fdbf29c565363",
       "name": "Shu (Eunice) Guo",
       "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "The Liverpool staff profile confirms a Hong Kong Polytechnic University PhD (year not stated) and the current senior lectureship but gives no appointment dates or earlier posts, so it cannot be established whether the Liverpool post or an earlier role followed the 2018 degree. ORCID name search returned twelve same-name records with no identifying affiliation; a domain-restricted search found only Liverpool research/teaching pages without chronology.",
+      "checkedAt": "2026-10-17",
+      "reason": "Re-read the Liverpool people page: it says she obtained her PhD from the Hong Kong Polytechnic University and describes her research, with no degree date, appointment date or earlier posts. An ORCID search restricted to Liverpool affiliations returned no record, and the PolyU electronic theses site did not return her thesis to search or author browsing, so the 2018 degree date and the post that followed it remain undocumented. Earlier review (2026-10-16): the Liverpool staff profile confirms the PolyU PhD and current senior lectureship but gives no appointment dates or earlier posts; ORCID name search found twelve unidentifiable namesakes.",
       "sources": [
         {
           "url": "https://www.liverpool.ac.uk/people/eunice-guo",
-          "title": "Eunice Guo — University of Liverpool staff profile",
-          "notes": "Current senior lecturer role and PolyU PhD stated; no dates, no earlier employment, no CV link."
+          "title": "University of Liverpool - Dr Eunice Guo",
+          "notes": "PhD from The Hong Kong Polytechnic University; research summary; no dates."
         },
         {
-          "url": "https://www.liverpool.ac.uk/people/eunice-guo/research",
-          "title": "Eunice Guo — research page",
-          "notes": "Research interests only; no career chronology."
+          "url": "https://pub.orcid.org/v3.0/expanded-search/?rows=20&q=family-name%3AGuo%20AND%20given-names%3AShu%20AND%20affiliation-org-name%3ALiverpool",
+          "title": "ORCID public search - Shu Guo, Liverpool",
+          "notes": "No results."
+        },
+        {
+          "url": "https://theses.lib.polyu.edu.hk/",
+          "title": "PolyU Electronic Theses",
+          "notes": "Author browse and simple search returned no record for her."
         }
       ],
       "source": "omlist"
@@ -18553,15 +18658,25 @@
       "facultyId": "omlist-5bbefc34c793630c",
       "name": "Xing Hu",
       "status": "unresolved",
-      "checkedAt": "2026-10-16",
+      "checkedAt": "2026-10-17",
+      "reason": "Re-read the HKU profile over plain http (the https request was reset): it still says only that she received her Ph.D. from NYU Stern and taught at the University of Oregon before HKU, with no dates and no CV link. The ORCID public search found only a namesake (0009-0007-4571-2879, an HKU PhD candidate 2020-2025), and no record carrying NYU or Oregon; guessed Oregon business-school faculty URLs returned no page for her; the HKU research-hub profile answers with a bot check. One web search found her Mathematics Genealogy entry, which gives Ph.D. New York University 2012 (dissertation 'Towards the Theory of Efficient Resource Sharing in Business Alliances', advisor Rene A. Caldentey), a year later than the imported 2011. The Oregon start year and title, and whether anything preceded Oregon, remain undocumented. Earlier review (2026-10-16): the HKU biography names the NYU PhD and a prior Oregon teaching post but gives no dates establishing the first post-PhD job.",
       "sources": [
         {
           "url": "https://www.hkubs.hku.hk/people/xing-hu/",
-          "title": "Xing Hu Profile",
-          "notes": "HKU biography identifies NYU PhD and prior Oregon faculty appointment but no dates establishing first post-PhD employment."
+          "title": "HKU Business School - Xing Hu",
+          "notes": "Read over plain http. Ph.D. from NYU Stern; BSc Mathematics, Peking University; before HKU she taught at the University of Oregon. No dates, no CV link."
+        },
+        {
+          "url": "https://www.mathgenealogy.org/id.php?id=179645",
+          "title": "Mathematics Genealogy Project - Xing Hu",
+          "notes": "Ph.D. New York University 2012; dissertation 'Towards the Theory of Efficient Resource Sharing in Business Alliances'; advisor Rene A. Caldentey. Differs from the imported 2011."
+        },
+        {
+          "url": "https://pub.orcid.org/v3.0/expanded-search/?rows=20&q=given-names%3AXing%20AND%20family-name%3AHu%20AND%20affiliation-org-name%3A%22Hong%20Kong%22",
+          "title": "ORCID public search - Xing Hu, Hong Kong",
+          "notes": "Only 0009-0007-4571-2879, an HKU PhD candidate 2020-2025 (a namesake). Searches with Oregon or New York University returned nothing."
         }
       ],
-      "reason": "HKU biography identifies NYU PhD and prior Oregon faculty appointment but no dates establishing first post-PhD employment.",
       "source": "omlist"
     },
     {
@@ -23926,13 +24041,13 @@
       "facultyId": "omlist-66f7dac80164d863",
       "name": "Thomas Y. S. Lee",
       "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "UIC profile dates Yale doctorate 1991 but does not identify earliest employment.",
+      "checkedAt": "2026-10-17",
+      "reason": "Re-read the UIC profile with a plain request: it gives PhD, Yale University, 1991, a 1996 UIC teaching-award nomination and publications from 1989 (including Yale co-authors and a 1993 paper with IBM's B. Dietrich), but no CV link or employment history, so the first post after 1991 and whether UIC was it are not documented. No other source was found. Earlier review (2026-10-16): the UIC profile dates the Yale doctorate to 1991 but does not identify the earliest employment.",
       "sources": [
         {
           "url": "https://business.uic.edu/profiles/lee-thomas/",
-          "title": "Thomas Y. S. Lee public academic profile",
-          "notes": "UIC profile dates Yale doctorate 1991 but does not identify earliest employment."
+          "title": "UIC Business - Thomas Lee",
+          "notes": "Associate Professor, Information and Decision Sciences; Education: PhD, Yale University, 1991; 1996 Silver Circle nominee at UIC; publication list from 1989; no employment dates."
         }
       ],
       "source": "omlist"
@@ -24233,15 +24348,25 @@
       "facultyId": "omlist-90ab0c140912e403",
       "name": "Ka Ho (Eric) Leung",
       "status": "unresolved",
-      "checkedAt": "2026-10-16",
+      "checkedAt": "2026-10-17",
+      "reason": "The Liverpool people page says that before joining the Management School he was a Post-doctoral Research Fellow in the Department of Industrial and Manufacturing Systems Engineering at the University of Hong Kong, and that his PhD is from the Hong Kong Polytechnic University; neither the PhD nor the postdoc is dated. An ORCID search under his name with a Liverpool affiliation returned no record, and the PolyU electronic theses site returned nothing to author browsing or search, so the 2018 degree date and the postdoc start are still undocumented. The HKU postdoc is the strong lead for the first job. Earlier review (2026-10-16): the Liverpool biography identifies an earlier Hong Kong postdoc and the PolyU doctorate, but no dates show whether that was the first post-PhD role.",
       "sources": [
         {
-          "url": "https://www.liverpool.ac.uk/management/staff/eric-leung/",
-          "title": "Ka Ho (Eric) Leung Profile",
-          "notes": "Liverpool biography identifies earlier Hong Kong postdoc and PolyU doctorate, but neither completion nor employment dates establish whether that was the first post-PhD role."
+          "url": "https://www.liverpool.ac.uk/people/eric-leung",
+          "title": "University of Liverpool - Dr Eric Leung",
+          "notes": "Associate Professor (Senior Lecturer); prior to ULMS a Post-doctoral Research Fellow at HKU IMSE; PhD from PolyU; undated."
+        },
+        {
+          "url": "https://pub.orcid.org/v3.0/expanded-search/?rows=20&q=family-name%3ALeung%20AND%20given-names%3A%22Ka%20Ho%22%20AND%20affiliation-org-name%3ALiverpool",
+          "title": "ORCID public search - Ka Ho Leung, Liverpool",
+          "notes": "No results."
+        },
+        {
+          "url": "https://theses.lib.polyu.edu.hk/",
+          "title": "PolyU Electronic Theses",
+          "notes": "Author browse for 'Leung, Ka Ho' and a keyword search returned no record."
         }
       ],
-      "reason": "Liverpool biography identifies earlier Hong Kong postdoc and PolyU doctorate, but neither completion nor employment dates establish whether that was the first post-PhD role.",
       "source": "omlist"
     },
     {
@@ -24550,15 +24675,25 @@
       "facultyId": "omlist-07d536c90b4efc6b",
       "name": "Dong Li",
       "status": "unresolved",
-      "checkedAt": "2026-10-16",
+      "checkedAt": "2026-10-17",
+      "reason": "His ORCID record (0000-0002-5884-2943, public API) lists a University of Liverpool employment from 2002-09-09 under his present title (Reader, Operations and Supply Chain Management), an undated Management School entry and an undated University of Nottingham education entry. If the 1997 Nottingham doctorate is correct, the 1997-2002 interval is undocumented, so Liverpool cannot be shown to be the first job, and the 2002 entry's starting rank is unknown. The Liverpool people page has no biography. Earlier review (2026-10-16): the Liverpool profile lists only selected awards and grants and establishes neither the PhD nor first-employment dates.",
       "sources": [
         {
+          "url": "https://pub.orcid.org/v3.0/0000-0002-5884-2943/employments",
+          "title": "ORCID 0000-0002-5884-2943 (Dong Li) - employments and educations",
+          "notes": "Read through the public API. University of Liverpool, Reader, OSCM, from 2002-09-09; undated Management School entry; education: University of Nottingham (undated)."
+        },
+        {
+          "url": "https://www.liverpool.ac.uk/people/dong-li",
+          "title": "University of Liverpool - Dong Li",
+          "notes": "No biography or chronology."
+        },
+        {
           "url": "https://www.liverpool.ac.uk/management/staff/dong-li/",
-          "title": "Dong Li Profile",
-          "notes": "Liverpool profile only provides selected awards and grants. It does not establish PhD or first employment dates."
+          "title": "Liverpool Management School - Dong Li (staff page)",
+          "notes": "Opened in the earlier review; awards and grants only."
         }
       ],
-      "reason": "Liverpool profile only provides selected awards and grants. It does not establish PhD or first employment dates.",
       "source": "omlist"
     },
     {
@@ -27735,13 +27870,23 @@
       "facultyId": "omlist-38e77aea0d7397d9",
       "name": "Suman Mallik",
       "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "Kansas profile dates Wharton doctorate 1998 but lacks early employment chronology.",
+      "checkedAt": "2026-10-17",
+      "reason": "A 2019 KU news story (found with one web search and opened) says he joined KU in 2008, and the KU profile dates the Wharton Ph.D. to 1998, so the first job falls in the undocumented 1998-2008 interval. His ORCID record (0000-0002-1633-3630) has no entries; the KU profile has no CV link; no dated chronology for 1998-2008 was found (frequent co-authorship with Illinois faculty is not evidence of employment). Earlier review (2026-10-16): the Kansas profile dates the 1998 Wharton doctorate but lacks an early employment chronology.",
       "sources": [
         {
           "url": "https://business.ku.edu/people/suman-mallik",
-          "title": "Suman Mallik public academic profile",
-          "notes": "Kansas profile dates Wharton doctorate 1998 but lacks early employment chronology."
+          "title": "KU School of Business - Suman Mallik",
+          "notes": "Ph.D. in Operations Management, Wharton, 1998; M.A. Wharton 1998; M.S. Colorado 1994; B.Tech. IIT Kharagpur 1990; publications; no employment history or CV."
+        },
+        {
+          "url": "https://news.ku.edu/news/article/annual-shutz-lecture-consider-science-better",
+          "title": "KU News - Annual Shutz Lecture to consider 'Science of Better' (18 March 2019)",
+          "notes": "He joined KU in 2008; doctorate and master's from Wharton; no earlier posts named."
+        },
+        {
+          "url": "https://pub.orcid.org/v3.0/0000-0002-1633-3630/employments",
+          "title": "ORCID 0000-0002-1633-3630 (Suman Mallik)",
+          "notes": "Read through the public API; no entries."
         }
       ],
       "source": "omlist"
@@ -29647,15 +29792,20 @@
       "facultyId": "omlist-6e61c7cbb2730c4c",
       "name": "Fotios Misopoulos",
       "status": "unresolved",
-      "checkedAt": "2026-10-16",
+      "checkedAt": "2026-10-17",
+      "reason": "The degree and his employment are now dated, and they show no new post after the doctorate. His ORCID record (0000-0002-0046-8055, public API) gives the PhD in Applied Informatics from the University of Macedonia ending 2019-09-04 and a University of Liverpool post (Director of Education, OSCM) from 2013-10-01. The Liverpool people page says that before coming to Liverpool in 2013 he was a Senior Lecturer at City College, the International Faculty of the University of Sheffield, for twelve years, after earlier Greek academic roles and industry consulting. Under the overlap rule, the Liverpool post began six years before the degree and continued, so it is not a first post-PhD job, and no new employer after September 2019 is documented. Earlier review (2026-10-16): the Liverpool biography lists Sheffield, Greek academic and research posts and consulting without the dates needed to order them against the degree.",
       "sources": [
         {
-          "url": "https://www.liverpool.ac.uk/management/staff/fotios-misopoulos/",
-          "title": "Fotios Misopoulos Profile",
-          "notes": "Liverpool biography lists earlier Sheffield and Greek academic/research roles plus industry consulting, without degree and job dates needed to order first post-PhD employment."
+          "url": "https://pub.orcid.org/v3.0/0000-0002-0046-8055/employments",
+          "title": "ORCID 0000-0002-0046-8055 (Fotios Misopoulos) - employments and educations",
+          "notes": "Read through the public API. Liverpool, Director of Education (OSCM), from 2013-10-01; education: PhD Applied Informatics, University of Macedonia, ending 2019-09-04; MSc Ball State 1986-1988; BA IUPUI 1980-1984."
+        },
+        {
+          "url": "https://www.liverpool.ac.uk/people/fotios-misopoulos",
+          "title": "University of Liverpool - Fotios Misopoulos",
+          "notes": "Joined ULMS in 2013; previously Senior Lecturer at City College (University of Sheffield International Faculty) for twelve years; earlier Greek academic roles and consulting."
         }
       ],
-      "reason": "Liverpool biography lists earlier Sheffield and Greek academic/research roles plus industry consulting, without degree and job dates needed to order first post-PhD employment.",
       "source": "omlist"
     },
     {
@@ -32189,21 +32339,34 @@
     {
       "facultyId": "omlist-2d93faf973ea2cb6",
       "name": "Huiyin Ouyang",
-      "status": "unresolved",
-      "checkedAt": "2026-10-16",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "employer": "Northwestern University",
+      "position": "Postdoctoral Fellow, Department of Industrial Engineering and Management Sciences",
+      "placementYear": 2016,
+      "category": "postdoc",
+      "evidenceUrl": "https://pub.orcid.org/v3.0/0000-0002-0020-1860/employments",
+      "evidenceNote": "Her ORCID record (employments and educations, read through the public API) lists the UNC Chapel Hill PhD in Statistics and Operations Research from 2011-08 to 2016-06, then a postdoc fellowship in Northwestern's Industrial Engineering and Management Sciences department from 2016-07 to 2017-06, then Assistant Professor at the University of Hong Kong from 2017-07. The HKU biography independently states she was a Northwestern IEMS postdoctoral fellow before joining HKU.",
+      "phdYearVerified": 2016,
+      "phdInstitutionVerified": "University of North Carolina at Chapel Hill",
+      "reason": "A self-maintained, dated ORCID chronology that carries her UNC doctorate and the Northwestern and HKU affiliations named in her HKU biography shows the Northwestern postdoc starting in July 2016, the month after the June 2016 degree end date, with no other post in between.",
       "sources": [
         {
+          "url": "https://pub.orcid.org/v3.0/0000-0002-0020-1860/employments",
+          "title": "ORCID 0000-0002-0020-1860 (Huiyin Ouyang) - employments and educations",
+          "notes": "Read through the ORCID public API (employments and educations endpoints). Employment: Northwestern IEMS postdoc fellow 2016-07 to 2017-06; HKU Assistant Professor from 2017-07. Education: UNC Chapel Hill PhD 2011-08 to 2016-06."
+        },
+        {
           "url": "https://www.hkubs.hku.hk/people/huiyin-ouyang/",
-          "title": "Huiyin Ouyang Profile",
-          "notes": "HKU and personal biographies identify a Northwestern postdoc before HKU and a UNC doctorate, but provide no dated chronology to establish this as the first post-PhD role."
+          "title": "HKU Business School - Huiyin Ouyang",
+          "notes": "Read over plain http (the https request was reset). Biography: PhD in Statistics and Operations Research from UNC Chapel Hill; before HKU she was a postdoctoral fellow in Northwestern's IEMS department. Links the personal site ouyanghuiyin.github.io."
         },
         {
           "url": "https://ouyanghuiyin.github.io/",
-          "title": "Huiyin Ouyang Website",
-          "notes": "HKU and personal biographies identify a Northwestern postdoc before HKU and a UNC doctorate, but provide no dated chronology to establish this as the first post-PhD role."
+          "title": "Huiyin Ouyang personal site",
+          "notes": "Opened in the earlier review; biography without dates."
         }
       ],
-      "reason": "HKU and personal biographies identify a Northwestern postdoc before HKU and a UNC doctorate, but provide no dated chronology to establish this as the first post-PhD role.",
       "source": "omlist"
     },
     {
@@ -35841,13 +36004,23 @@
       "facultyId": "omlist-2c69fcba1bd70e9f",
       "name": "Powell Robinson",
       "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "Houston biography gives previous Texas A&M role and doctorate but lacks dates and earlier complete chronology.",
+      "checkedAt": "2026-10-17",
+      "reason": "The Bauer profile (re-read with a plain request) says he was a faculty member and department head at Texas A&M before UH and lists an MBA and a Ph.D. in Operations Management from the University of Texas, with no dates and no CV link. His ORCID record (0000-0002-4773-6475) has no employment or education entries; a search of the UT Austin repository data endpoint found no dissertation record for him; guessed UH faculty-CV portal URLs returned 404. Neither the start of the Texas A&M post nor anything between the 1990 degree and it is documented. Earlier review (2026-10-16): the Houston biography gives the previous Texas A&M role and the doctorate but lacks dates and an earlier chronology.",
       "sources": [
         {
           "url": "https://www.bauer.uh.edu/search/directory/profile.asp?firstname=Powell&lastname=Robinson",
-          "title": "Powell Robinson public academic profile",
-          "notes": "Houston biography gives previous Texas A&M role and doctorate but lacks dates and earlier complete chronology."
+          "title": "Bauer College - Powell Robinson",
+          "notes": "Professor of Supply Chain Management; prior faculty member and department head at Texas A&M; MBA and Ph.D. in Operations Management, University of Texas; undated."
+        },
+        {
+          "url": "https://pub.orcid.org/v3.0/0000-0002-4773-6475/employments",
+          "title": "ORCID 0000-0002-4773-6475 (Powell Robinson)",
+          "notes": "Read through the public API; no employment or education entries."
+        },
+        {
+          "url": "https://repositories.lib.utexas.edu/server/api/discover/search/objects?query=Robinson%20Powell&dsoType=ITEM",
+          "title": "Texas ScholarWorks search - Robinson Powell",
+          "notes": "Repository data endpoint; no dissertation record for him among the results."
         }
       ],
       "source": "omlist"
@@ -38517,16 +38690,29 @@
     {
       "facultyId": "omlist-b4dbb999fb2d7981",
       "name": "Sridhar Seshadri",
-      "status": "unresolved",
-      "checkedAt": "2026-10-16",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "employer": "New York University, Stern School of Business",
+      "position": "Assistant Professor, Department of Statistics and Operations Research",
+      "placementYear": 1993,
+      "category": "tenure-track",
+      "evidenceUrl": "https://pub.orcid.org/v3.0/0000-0002-7917-5537/employments",
+      "evidenceNote": "His ORCID record lists the Berkeley Doctor of Philosophy in Management Science ending 1993, then Assistant Professor in NYU Stern's Department of Statistics and Operations Research 1993-1997, Associate Professor there 1997-2004, Toyota Professor 2004-2008, Professor at UT Austin 2008-2012, Indian School of Business from 2013 and Illinois from 2018-03-01. The Gies profile dates the Berkeley PhD to 1993. Plain assistant professor at a North American business school, recorded as tenure-track by convention.",
+      "phdYearVerified": 1993,
+      "phdInstitutionVerified": "University of California, Berkeley",
+      "reason": "A dated ORCID chronology that carries his Berkeley doctorate and the employers named elsewhere puts the NYU Stern assistant professorship in 1993, the degree year, as the first post after the PhD; the Illinois profile had only covered 2018 onward.",
       "sources": [
         {
+          "url": "https://pub.orcid.org/v3.0/0000-0002-7917-5537/employments",
+          "title": "ORCID 0000-0002-7917-5537 (Sridhar Seshadri) - employments and educations",
+          "notes": "Read through the ORCID public API. NYU Stern Assistant Professor 1993-1997; Associate Professor 1997-2004; Toyota Professor 2004-2008; UT Austin Professor 2008-2012; ISB from 2013-06; Illinois from 2018-03-01. Education: Berkeley PhD Management Science ending 1993; IIM Ahmedabad 1980; IIT Madras 1978."
+        },
+        {
           "url": "https://gies.illinois.edu/profile/sridhar-seshadri",
-          "title": "Sridhar Seshadri Profile",
-          "notes": "Illinois profile dates Berkeley doctorate1993 but employment entries only cover Illinois2018 onward, leaving first post-PhD career unspecified."
+          "title": "Gies College of Business - Sridhar Seshadri",
+          "notes": "Ph.D., Management Science, University of California at Berkeley, 1993; joined Illinois in 2018; positions listed only from 2018."
         }
       ],
-      "reason": "Illinois profile dates Berkeley doctorate1993 but employment entries only cover Illinois2018 onward, leaving first post-PhD career unspecified.",
       "source": "omlist"
     },
     {
@@ -40654,13 +40840,23 @@
       "facultyId": "omlist-bce14bf15316b9a2",
       "name": "Dongping Song",
       "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "The Liverpool biography lists earlier universities and joining in 2013 but lacks doctoral completion and first-employment dates.",
+      "checkedAt": "2026-10-17",
+      "reason": "The Liverpool people page says he joined the Management School in September 2013 and before that studied and worked at Nankai University, Zhejiang University, Newcastle University, Imperial College London and Plymouth University, without dates or roles. His ORCID record (0000-0003-2630-6836, public API) lists only the Liverpool chair from 2013-09-01. A search of Newcastle's theses site did not find his thesis, so the 2001 Newcastle degree, and which of the Newcastle, Imperial or Plymouth posts came first after it, remain undocumented. Earlier review (2026-10-16): the Liverpool biography lists earlier universities and the 2013 move but lacks doctoral completion and first-employment dates.",
       "sources": [
         {
-          "url": "https://www.liverpool.ac.uk/management/staff/dongping-song/",
-          "title": "Dongping Song academic profile",
-          "notes": "The Liverpool biography lists earlier universities and joining in 2013 but lacks doctoral completion and first-employment dates."
+          "url": "https://www.liverpool.ac.uk/people/dongping-song",
+          "title": "University of Liverpool - Professor Dongping Song",
+          "notes": "Joined Liverpool in September 2013; earlier studied and worked at Nankai, Zhejiang, Newcastle, Imperial College London and Plymouth (undated)."
+        },
+        {
+          "url": "https://pub.orcid.org/v3.0/0000-0003-2630-6836/employments",
+          "title": "ORCID 0000-0003-2630-6836 (Dongping Song) - employments",
+          "notes": "Read through the public API. Liverpool Chair of Supply Chain Management from 2013-09-01 only; no education entries."
+        },
+        {
+          "url": "https://theses.ncl.ac.uk/jspui/simple-search?query=Dongping+Song",
+          "title": "Newcastle University eTheses - search 'Dongping Song'",
+          "notes": "No matching thesis returned."
         }
       ],
       "source": "omlist"
@@ -42317,13 +42513,23 @@
       "facultyId": "omlist-7347548a333fca9b",
       "name": "Ali Taghizadegan",
       "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "The linked Liverpool profile returned no readable biography or chronology.",
+      "checkedAt": "2026-10-17",
+      "reason": "The degree is now dated: the University of Liverpool Repository (read through the reader proxy because direct requests answer 403) holds his Doctor of Philosophy thesis 'Collaborative Innovation in SMEs; Antecedents, Challenges, and Process' (2021; supervisors Andrew Lyons and Hossein Sharifi; deposited 16 December 2022), a year later than the imported 2020. His first job is still unknown: the Liverpool people page shows only his name and degrees, and no ORCID record under his name was found. Earlier review (2026-10-16): the linked Liverpool profile returned no readable biography or chronology.",
       "sources": [
         {
-          "url": "https://www.liverpool.ac.uk/management/staff/ali-taghizadegan/",
-          "title": "Ali Taghizadegan academic profile",
-          "notes": "The linked Liverpool profile returned no readable biography or chronology."
+          "url": "https://livrepository.liverpool.ac.uk/3165172/",
+          "title": "University of Liverpool Repository - Taghizadegan, Ali (2021) Collaborative Innovation in SMEs",
+          "notes": "Read through r.jina.ai. Thesis (Doctor of Philosophy), School of Management, 2021; supervisors Lyons, Andrew and Sharifi, Hossein; deposited 16 Dec 2022."
+        },
+        {
+          "url": "https://www.liverpool.ac.uk/people/ali-taghizadegan",
+          "title": "University of Liverpool - Dr Ali Taghizadegan",
+          "notes": "Name and degrees (BSc, MSc, PhD) only; no biography."
+        },
+        {
+          "url": "https://pub.orcid.org/v3.0/expanded-search/?rows=20&q=family-name%3ATaghizadegan",
+          "title": "ORCID public search - Taghizadegan",
+          "notes": "No record for Ali Taghizadegan."
         }
       ],
       "source": "omlist"
@@ -43397,15 +43603,20 @@
       "facultyId": "omlist-b126c974e194dca5",
       "name": "Matthew Tickle",
       "status": "unresolved",
-      "checkedAt": "2026-10-16",
+      "checkedAt": "2026-10-17",
+      "reason": "The Liverpool people page says he holds a BSc and a PhD in Operations Management from Liverpool, with a thesis on business-to-business virtual communities, and that before his academic appointment he worked as a project manager in software development; none of this is dated. His ORCID record (0000-0003-4709-7869) has no entries, and a search of the Liverpool repository (through the reader proxy) did not return his thesis. Whether the software job continued past the 2011 degree and when the Liverpool appointment began remain undocumented. Earlier review (2026-10-16): the Liverpool biography lists the doctorate and prior software project-management employment without dates.",
       "sources": [
         {
-          "url": "https://www.liverpool.ac.uk/management/staff/matthew-tickle/",
-          "title": "Matthew Tickle Profile",
-          "notes": "Liverpool biography lists its doctorate and prior software project-management employment without dates establishing whether industry work preceded degree completion."
+          "url": "https://www.liverpool.ac.uk/people/matthew-tickle",
+          "title": "University of Liverpool - Dr Matthew Tickle",
+          "notes": "Senior Lecturer; BSc and PhD in Operations Management, Liverpool; prior to his academic appointment a project manager in software development; undated."
+        },
+        {
+          "url": "https://pub.orcid.org/v3.0/0000-0003-4709-7869/employments",
+          "title": "ORCID 0000-0003-4709-7869 (Matthew Tickle)",
+          "notes": "Read through the public API; no entries."
         }
       ],
-      "reason": "Liverpool biography lists its doctorate and prior software project-management employment without dates establishing whether industry work preceded degree completion.",
       "source": "omlist"
     },
     {
@@ -45614,16 +45825,30 @@
     {
       "facultyId": "omlist-a357d8103b79a0c4",
       "name": "Zhixi Wan",
-      "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "The HKU biography identifies HEC, Illinois, Oregon and industry roles without dates or ordering around doctoral completion.",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "employer": "HEC Paris",
+      "position": "Assistant Professor, Information Systems and Operations Management",
+      "placementYear": 2009,
+      "category": "unknown",
+      "evidenceUrl": "https://pub.orcid.org/v3.0/0000-0003-4066-3864/employments",
+      "evidenceNote": "His ORCID record lists the Ph.D. in Business Administration at Michigan's Ross School from 2003-08 to 2009-08, then Assistant Professor in Information Systems and Operations Management at HEC Paris from 2009-09 to 2012-08, Assistant Professor at the University of Illinois Urbana-Champaign from 2012-08 to 2014-12, Assistant/Associate Professor at the University of Oregon from 2014-12 to 2019-12 and Professor at HKU from 2019-12. The HKU biography names the same HEC Paris, Illinois and Oregon posts without dates. Category left unknown because a continental European assistant-professor title does not by itself state a tenure-track post.",
+      "phdYearVerified": 2009,
+      "phdInstitutionVerified": "University of Michigan at Ann Arbor",
+      "reason": "The dated ORCID chronology, which carries his Michigan doctorate and every employer named in the HKU biography, places HEC Paris immediately after the August 2009 degree end date, before the Illinois post; the HKU biography's undated list had left the order open.",
       "sources": [
         {
+          "url": "https://pub.orcid.org/v3.0/0000-0003-4066-3864/employments",
+          "title": "ORCID 0000-0003-4066-3864 (Zhixi Wan) - employments and educations",
+          "notes": "Read through the ORCID public API. HEC Paris Assistant Professor 2009-09 to 2012-08; UIUC Assistant Professor 2012-08 to 2014-12; Oregon 2014-12 to 2019-12; HKU Professor from 2019-12. Education: Michigan Ross Ph.D. 2003-08 to 2009-08; Tsinghua bachelor 1999-2003."
+        },
+        {
           "url": "https://www.hkubs.hku.hk/people/zhixi-wan/",
-          "title": "Zhixi Wan academic profile",
-          "notes": "The HKU biography identifies HEC, Illinois, Oregon and industry roles without dates or ordering around doctoral completion."
+          "title": "HKU Business School - Zhixi Wan",
+          "notes": "Biography: Ph.D. in Operations and Management Science from Michigan Ross; before HKU a tenured associate professor at Oregon, and an assistant professor at HEC Paris and at the University of Illinois (undated); academic leave at DiDi (undated)."
         }
       ],
+      "phdInstitutionVerifiedAsWritten": "University of Michigan (Ross School of Business)",
       "source": "omlist"
     },
     {
@@ -45849,15 +46074,25 @@
       "facultyId": "omlist-127950f48a542cff",
       "name": "Liao Wang",
       "status": "unresolved",
-      "checkedAt": "2026-10-16",
+      "checkedAt": "2026-10-17",
+      "reason": "Re-read the HKU profile over plain http: it states the Columbia IEOR Ph.D. in Operations Research in 2017 and her NUS and Cornell degrees, but no employment history. Her ORCID record (0000-0002-3427-542X, public API) confirms the Columbia PhD from 2012-09-01 to 2017-08-31 but lists only an HKU Associate Professor entry from 2024-09, so the 2017-2024 interval, including the first post after the degree, is undocumented. Columbia IEOR alumni pages answered 403 to a plain request and, through the reader proxy, showed only current people; Columbia Academic Commons answers with a bot check; one web search found nothing about her. Earlier review (2026-10-16): the HKU biography gives the 2017 Columbia PhD and current title but no dated employment chronology or explicit first placement.",
       "sources": [
         {
           "url": "https://www.hkubs.hku.hk/people/liao-wang/",
-          "title": "Liao Wang Profile",
-          "notes": "HKU biography gives Columbia PhD in 2017 and current faculty title, but no dated employment chronology or explicit first placement."
+          "title": "HKU Business School - Liao Wang",
+          "notes": "Read over plain http. Ph.D. in Operations Research, Columbia IEOR, 2017; BSc NUS, MEng Cornell; no employment dates."
+        },
+        {
+          "url": "https://pub.orcid.org/v3.0/0000-0002-3427-542X/employments",
+          "title": "ORCID 0000-0002-3427-542X (Liao Wang) - employments and educations",
+          "notes": "Read through the public API. Employment: HKU Associate Professor from 2024-09 only. Education: Columbia PhD Operations Research 2012-09-01 to 2017-08-31; Cornell MEng 2010-2011; NUS BSc 2006-2010."
+        },
+        {
+          "url": "https://ieor.columbia.edu/phd-alumni",
+          "title": "Columbia IEOR - PhD alumni",
+          "notes": "Plain request answered 403; read through r.jina.ai, which returned only a current-people listing without her."
         }
       ],
-      "reason": "HKU biography gives Columbia PhD in 2017 and current faculty title, but no dated employment chronology or explicit first placement.",
       "source": "omlist"
     },
     {
@@ -48284,13 +48519,18 @@
       "facultyId": "omlist-c6ed8a63e8532bd4",
       "name": "Zhen (Jason) Xu",
       "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "Liverpool profile lists HKUST PhD (Industrial Engineering and Decision Analytics, no year) and career entries Assistant Professor at Fudan, a postdoctoral position at Columbia, and the current Liverpool lectureship, with no years or order. First post-PhD job (Fudan vs Columbia postdoc) cannot be determined. Discovery web searches were also run; their snippets were not treated as verification.",
+      "checkedAt": "2026-10-17",
+      "reason": "His ORCID record (0000-0002-7201-3383, public API) gives the HKUST PhD in Industrial Engineering and Logistics Management from 2012-09-01 to 2017-09-01 and lists the Liverpool lectureship and a Fudan assistant professorship without dates; the Columbia postdoc is absent. The Liverpool people page says that before Liverpool he served as an Assistant Professor at Fudan and held a postdoctoral position at Columbia, without dates or order, and lists a Shanghai Pujiang Talent Program grant for 2021-2024, which suggests the Fudan post was under way by 2021; the Columbia postdoc probably filled 2017-2021, but that is inference. The HKUST repository answers with a CAPTCHA and one web search found no CV. Earlier review (2026-10-16): the Liverpool profile lists the HKUST PhD, the Fudan post, a Columbia postdoc and the Liverpool lectureship with no years or order.",
       "sources": [
         {
-          "url": "http://www.liverpool.ac.uk/people/zhen-xu/",
-          "title": "Liverpool profile: Zhen Xu",
-          "notes": "Opened. Undated list: Fudan assistant professor; Columbia postdoc; Liverpool lecturer."
+          "url": "https://pub.orcid.org/v3.0/0000-0002-7201-3383/employments",
+          "title": "ORCID 0000-0002-7201-3383 (Zhen Xu) - employments and educations",
+          "notes": "Read through the public API. Liverpool Lecturer (undated); Fudan Assistant Professor (undated). Education: HKUST PhD IELM 2012-09-01 to 2017-09-01; Peking University bachelor degrees 2008-2012."
+        },
+        {
+          "url": "https://www.liverpool.ac.uk/people/zhen-xu",
+          "title": "University of Liverpool - Dr Zhen Xu",
+          "notes": "Before Liverpool, Assistant Professor at Fudan and a postdoctoral position at Columbia; HKUST PhD; Shanghai Pujiang Talent Program grant 2021-2024."
         }
       ],
       "source": "omlist"
@@ -50809,14 +51049,32 @@
     {
       "facultyId": "omlist-51fd7f775c223a0c",
       "name": "Yudi Zhang",
-      "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "Liverpool biography confirms Bristol doctorate but gives no degree year or earliest employment chronology.",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "employer": "University of Liverpool",
+      "position": "Lecturer, School of Management",
+      "placementYear": 2024,
+      "category": "tenure-track",
+      "evidenceUrl": "https://pub.orcid.org/v3.0/0000-0001-6246-8432/employments",
+      "evidenceNote": "Her ORCID record lists the University of Bristol Business School PhD from 2020-10-01 to 2025-02-01 and a Lecturer post in the University of Liverpool School of Management from 2024-10-01, with no other employment. The appointment began four months before the recorded degree end date (overlap noted under the overlap rule; nothing opened shows the dissertation unfinished in October 2024). The Liverpool profile confirms the Bristol PhD and the current Lecturer in Operations and Supply Chain Management title. A UK lectureship not stated as fixed-term is recorded as tenure-track.",
+      "phdYearVerified": 2025,
+      "phdInstitutionVerified": "University of Bristol",
+      "reason": "The ORCID chronology carrying her Bristol doctorate shows the Liverpool lectureship as her only post, starting in October 2024 in the final months before the February 2025 degree end date. The Bristol thesis record could not be read (the research portal answers with a CAPTCHA), so the conferral date rests on ORCID.",
       "sources": [
         {
+          "url": "https://pub.orcid.org/v3.0/0000-0001-6246-8432/employments",
+          "title": "ORCID 0000-0001-6246-8432 (Yudi Zhang) - employments and educations",
+          "notes": "Read through the ORCID public API. Employment: University of Liverpool School of Management, Lecturer, from 2024-10-01. Education: University of Bristol Business School PhD 2020-10-01 to 2025-02-01."
+        },
+        {
+          "url": "https://www.liverpool.ac.uk/people/yudi-zhang",
+          "title": "University of Liverpool - Yudi Zhang",
+          "notes": "Lecturer in Operations and Supply Chain Management; PhD in Operations Management from Bristol; MSc Manchester, BA ANU; no dates."
+        },
+        {
           "url": "https://www.liverpool.ac.uk/management/staff/yudi-zhang/",
-          "title": "Yudi Zhang public academic profile",
-          "notes": "Liverpool biography confirms Bristol doctorate but gives no degree year or earliest employment chronology."
+          "title": "University of Liverpool Management School - Yudi Zhang (staff page)",
+          "notes": "Opened in the earlier review; confirms the Bristol doctorate without dates."
         }
       ],
       "source": "omlist"
@@ -51822,19 +52080,37 @@
     {
       "facultyId": "omlist-037a00e8a282b048",
       "name": "Weiming Zhu",
-      "status": "unresolved",
-      "checkedAt": "2026-10-16",
-      "reason": "HKU profile and personal academic page confirm Maryland doctorate and prior IESE appointment, but neither dates completion or initial employment. Later MIT and Northwestern visits cannot establish a first placement.",
+      "status": "verified",
+      "checkedAt": "2026-10-17",
+      "employer": "IESE Business School, University of Navarra",
+      "position": "Assistant Professor, Department of Production, Technology and Operations Management",
+      "placementYear": 2016,
+      "category": "unknown",
+      "evidenceUrl": "https://pub.orcid.org/v3.0/0000-0001-9231-555X/employments",
+      "evidenceNote": "His ORCID employment record lists Assistant Professor in IESE's Department of Production, Technology and Operations Management from 2016-09-01 to 2022-08-31, then Associate Professor at the University of Hong Kong from 2022-09-01, with no earlier entry. The University of Maryland DRUM repository dates his dissertation 'Essays on Supply Chain Finance' (advisor Tunay Tunca) to 2016, deposited 2016-09-08. Category left unknown because a continental European assistant-professor title does not by itself state a tenure-track post.",
+      "phdYearVerified": 2016,
+      "phdInstitutionVerified": "University of Maryland, College Park",
+      "reason": "The Maryland dissertation record dates the doctorate to 2016 and the ORCID chronology starts IESE in September 2016 with no other post; the HKU profile and his personal site confirm IESE was his post before HKU. The later MIT and Kellogg visits are not first jobs.",
       "sources": [
         {
+          "url": "https://pub.orcid.org/v3.0/0000-0001-9231-555X/employments",
+          "title": "ORCID 0000-0001-9231-555X (Weiming Zhu) - employments",
+          "notes": "Read through the ORCID public API. IESE Assistant Professor 2016-09-01 to 2022-08-31; HKU Associate Professor from 2022-09-01. No education entries."
+        },
+        {
+          "url": "https://api.drum.lib.umd.edu/server/api/discover/search/objects?query=%22Zhu%2C%20Weiming%22&dsoType=ITEM",
+          "title": "DRUM (University of Maryland) - Zhu, Weiming, Essays on Supply Chain Finance (handle 1903/18751)",
+          "notes": "Repository data endpoint: Dissertation, issued 2016, advisor Tunca, Tunay, department Business and Management: Decision & Information Technologies; accessioned 2016-09-08."
+        },
+        {
           "url": "https://www.hkubs.hku.hk/people/weiming-zhu/",
-          "title": "Weiming Zhu — public academic profile",
-          "notes": "Professional biography and degree information reviewed for first-job evidence."
+          "title": "HKU Business School - Weiming Zhu",
+          "notes": "Read over plain http. Ph.D. in Operations Management from Maryland's Smith School; prior to HKU an Associate Professor at IESE; visiting posts at MIT IDSS and Kellogg (undated)."
         },
         {
           "url": "https://sites.google.com/view/weimingzhu",
-          "title": "Weiming Zhu — public academic profile",
-          "notes": "Professional biography and degree information reviewed for first-job evidence."
+          "title": "Weiming Zhu personal site",
+          "notes": "Same biography as HKU; no CV or dates."
         }
       ],
       "source": "omlist"
@@ -72210,19 +72486,37 @@
     {
       "facultyId": "roster:university-of-illinois-at-urbana-champaign:avinash-gupta",
       "name": "Avinash Gupta",
-      "status": "unresolved",
+      "status": "verified",
       "checkedAt": "2026-10-17",
-      "reason": "The ISE profile gives the Ph.D. in Computer Science, Oklahoma State University, 2021, and no positions list. An ISE news item dated 23 December 2021 welcomes him as Specialized Teaching Assistant Professor and says he brings experience in industry as well as the Oklahoma State doctorate, but it gives no start date and does not date the industry experience, so whether an industry job came between the degree and Illinois is unknown. No ORCID record matched. The first post-PhD job and its start year are not documented.",
+      "employer": "University of Illinois Urbana-Champaign",
+      "position": "Specialized Teaching Assistant Professor, Industrial and Enterprise Systems Engineering",
+      "placementYear": null,
+      "category": "other-academic",
+      "evidenceUrl": "https://ise.illinois.edu/news/welcoming-avinash-gupta",
+      "evidenceNote": "His Illinois lab biography says he completed the Oklahoma State Ph.D. in Computer Science (advisor J. Cecil) in Fall 2021. An Illinois ISE story published 23 December 2021 welcomes him as Specialized Teaching Assistant Professor supporting the MS in Health Technology, and his ISE profile lists him among teachers ranked excellent in Spring 2022, so the post had begun by Spring 2022. The start month (December 2021 or January 2022) is not stated, so the year is left null. The welcome says he brings industry experience, but no source dates it; 2020-2022 paper affiliations show only Oklahoma State and then Illinois.",
+      "phdYearVerified": 2021,
+      "phdInstitutionVerified": "Oklahoma State University",
+      "reason": "The degree was completed in Fall 2021 and Illinois welcomed him as a teaching-track assistant professor in December 2021, with Spring 2022 teaching confirming the job began, leaving no room for an intervening job. Verifier should note the undated industry experience, which on the available evidence predates the doctorate.",
       "sources": [
         {
-          "url": "https://ise.illinois.edu/directory/profile/avinashg",
-          "title": "Illinois ISE directory profile: Avinash Gupta",
-          "notes": "Read with a plain curl request. Current Teaching Assistant Professor; Education only; teaching honours from Spring 2022."
+          "url": "https://ise.illinois.edu/news/welcoming-avinash-gupta",
+          "title": "Illinois ISE - Welcoming Avinash Gupta (23 December 2021)",
+          "notes": "Welcomes Specialized Teaching Assistant Professor Avinash Gupta to Illinois; brings industry experience and an Oklahoma State doctorate; no start date."
         },
         {
-          "url": "https://ise.illinois.edu/news/welcoming-avinash-gupta",
-          "title": "Illinois ISE news: Welcoming Avinash Gupta (23 December 2021)",
-          "notes": "Welcomes him as Specialized Teaching Assistant Professor supporting the MS in Health Technology; mentions undated industry experience."
+          "url": "https://hxri.ise.illinois.edu/avinash-gupta/",
+          "title": "HXRI Laboratory - Avinash Gupta",
+          "notes": "Lab biography: Specialized Teaching Assistant Professor in ISE; completed his Ph.D. in Computer Science under Professor J. Cecil at Oklahoma State University in the Fall of 2021."
+        },
+        {
+          "url": "https://ise.illinois.edu/directory/profile/avinashg",
+          "title": "Illinois ISE profile - Avinash Gupta",
+          "notes": "Ph.D., Computer Science, Oklahoma State University, 2021; teaching honors list him as ranked excellent in Spring 2022, Fall 2022, Fall 2023 and Spring 2024."
+        },
+        {
+          "url": "https://api.crossref.org/works?rows=40&query.author=Avinash%20Gupta&filter=from-pub-date:2020,until-pub-date:2023&query.bibliographic=virtual+reality",
+          "title": "Crossref works query - Avinash Gupta, 2020-2023",
+          "notes": "Affiliations on his 2020-2022 papers are Oklahoma State University (Center for Cyber Physical Systems) and, from a 2022 paper, the Illinois ISE department; no industry affiliation. Supporting only."
         }
       ],
       "source": "faculty-page"
@@ -72483,32 +72777,37 @@
       "name": "Grani Adiwena Hanasusanto",
       "status": "unresolved",
       "checkedAt": "2026-10-17",
-      "reason": "His personal site and the February 2023 Illinois ISE welcome story say that before Illinois he was an Assistant Professor at the University of Texas at Austin and a Postdoctoral Scholar at the College of Management of Technology, EPFL, and that his PhD in Operations Research is from Imperial College London. Neither source gives dates for these posts or the PhD year; the EPFL RAO lab team page lists him as a former PhD student (2011-2015), and his site lists an Imperial College International Scholarship 2011-2015. The EPFL postdoc is probably the first post-PhD job, but its start date (and therefore the order relative to the degree) is not documented in any opened source. The ORCID record (0000-0003-4900-2958) lists only the undated UIUC employment. Search engine discovery by name was not productive.",
+      "reason": "The doctorate is now dated: Imperial's Spiral repository (data endpoint) holds his thesis 'Decision making under uncertainty: Robust and data-driven approaches' (supervisors Daniel Kuhn and Wolfram Wiesemann), issued 2015-01, so the PhD year is 2015 (the faculty page gave none). The first job is still not dated. The EPFL RAO lab team page lists him as a PhD student 2011-2015 with 'First position: Assistant Professor at the University of Texas at Austin', while his own site and the Illinois welcome story say he was a Postdoctoral Scholar at EPFL's College of Management of Technology before UT Austin, so the lab's first-position entry skips the postdoc. The postdoc must postdate the January 2015 thesis, but no opened source gives its start or end; Crossref affiliations show Imperial on a 2015 paper and UT Austin from 2017; EPFL's people directory has no entry for him; his site has no CV; one web search found nothing. If the integrator accepts an undated postdoc as the first job, the EPFL post is the candidate. Earlier review (2026-10-17): his site and the 2023 Illinois story name the UT Austin assistant professorship and an EPFL postdoc without dates, and the order relative to the degree was not documented.",
       "sources": [
         {
-          "url": "https://ise.illinois.edu/news/grani-hanasusanto",
-          "title": "Illinois ISE - Welcome Grani Hanasusanto (February 22, 2023; read with curl)",
-          "notes": "Undated prior posts: UT Austin assistant professor; EPFL postdoctoral scholar; PhD Imperial College London."
-        },
-        {
-          "url": "https://grani.hanasusanto.com/about.html",
-          "title": "Grani A. Hanasusanto - About (read with curl)",
-          "notes": "Same undated history; Imperial College International Scholarship 2011-2015; NSF CAREER 2018."
+          "url": "https://spiral.imperial.ac.uk/server/api/discover/search/objects?query=Hanasusanto&dsoType=ITEM&size=40",
+          "title": "Imperial Spiral - Hanasusanto, Grani Adiwena, thesis (handle 10044/1/25741)",
+          "notes": "Repository data endpoint: Thesis 'Decision making under uncertainty: Robust and data-driven approaches', issued 2015-01, advisors Kuhn, Daniel and Wiesemann, Wolfram."
         },
         {
           "url": "https://www.epfl.ch/labs/rao/team/",
           "title": "EPFL Risk Analytics and Optimization lab - team",
-          "notes": "Lists him as a former PhD student (2011-2015); no postdoc dates."
+          "notes": "Former PhD student Grani Hanasusanto (2011-2015); first position listed as Assistant Professor at the University of Texas at Austin (omits the EPFL postdoc named on his own site)."
         },
         {
-          "url": "https://ise.illinois.edu/directory/profile/gah",
-          "title": "Illinois ISE - Grani Adiwena Hanasusanto",
-          "notes": "No education or dated positions."
+          "url": "https://grani.hanasusanto.com/about.html",
+          "title": "Grani A. Hanasusanto - About",
+          "notes": "Re-fetched with a plain request; no CV link. Earlier review read: Assistant Professor at UT Austin and Postdoctoral Scholar at EPFL CDM before Illinois, undated."
+        },
+        {
+          "url": "https://ise.illinois.edu/news/grani-hanasusanto",
+          "title": "Illinois ISE - Welcome Grani Hanasusanto (February 2023)",
+          "notes": "Opened in the earlier review; same undated prior posts."
+        },
+        {
+          "url": "https://api.crossref.org/works?rows=40&query.author=Grani%20Hanasusanto&filter=from-pub-date:2014,until-pub-date:2018",
+          "title": "Crossref works query - Grani Hanasusanto, 2014-2018",
+          "notes": "Affiliation Imperial College London on a 2015 Operations Research paper; UT Austin ORIE on 2017 and 2018 papers. Supporting only."
         },
         {
           "url": "https://orcid.org/0000-0003-4900-2958",
-          "title": "ORCID record 0000-0003-4900-2958 (read through the public API)",
-          "notes": "Only an undated UIUC ISE employment entry."
+          "title": "ORCID 0000-0003-4900-2958",
+          "notes": "Opened in the earlier review; only an undated UIUC employment."
         }
       ],
       "source": "faculty-page"
@@ -72576,22 +72875,22 @@
       "name": "James Allison",
       "status": "unresolved",
       "checkedAt": "2026-10-17",
-      "reason": "The ISE profile gives the Ph.D. in Mechanical Engineering, University of Michigan, 2008, and lists three roles all dated 2008 with no months: Postdoctoral Research Fellow in Mechanical Engineering at Michigan (2008), Consulting Engineer at Ford Motor Company (2008) and Senior Engineer at MathWorks (2008-2011), followed by Lecturer at Tufts 2010-2011 and UIUC Assistant Professor from 2011 (ORCID: 2011-08-16). His lab biography adds undated work at GM on hybrid powertrains. Which of the 2008 roles came first, and whether the Ford or GM work preceded the degree, cannot be established, so the first post-PhD job is unresolved; a CV with months is needed.",
+      "reason": "Re-read the ISE profile: it still dates three roles only to 2008 (Postdoctoral Research Fellow in Mechanical Engineering at Michigan, 2008; Consulting Engineer at Ford, 2008; Senior Engineer at MathWorks, 2008-2011), followed by a Tufts lectureship 2010-2011 and UIUC from 2011, with the Michigan Ph.D. dated 2008. The ORCID record (public API) still lists only the UIUC posts from 2011-08-16. No CV is linked from the lab page; guessed CV file names on systemdesign.illinois.edu returned 404; the Deep Blue repository endpoint answered 403, so the dissertation month was not obtained. Which 2008 role followed the degree first, and whether the Ford or GM work preceded it, is still unknown. Earlier review (2026-10-17): the profile lists three roles all dated 2008 without months, so the first post-PhD job could not be ordered.",
       "sources": [
         {
           "url": "https://ise.illinois.edu/directory/profile/jtalliso",
-          "title": "Illinois ISE directory profile: James Allison",
-          "notes": "Read with a plain curl request. Education, Academic Positions and Other Professional Employment read."
+          "title": "Illinois ISE - James Allison",
+          "notes": "Ph.D., Mechanical Engineering, University of Michigan, 2008; Postdoctoral Research Fellow, Michigan, 2008; Consulting Engineer, Ford, 2008; Senior Engineer, MathWorks, 2008-2011; Lecturer, Tufts, 2010-2011; UIUC from 2011."
         },
         {
           "url": "https://systemdesign.illinois.edu/people/james-allison/",
-          "title": "Engineering System Design Laboratory: James Allison",
-          "notes": "Lab bio: before UIUC in 2011 he worked as lecturer at Tufts, senior engineer at MathWorks, at GM (hybrid powertrain design) and at Ford (engine design optimization); undated. No CV link."
+          "title": "Engineering System Design Lab - James Allison",
+          "notes": "Prior to UIUC in 2011: Tufts lecturer, MathWorks senior engineer, GM hybrid powertrain work, Ford engine design optimization; undated; no CV link."
         },
         {
-          "url": "https://orcid.org/0000-0002-2054-836X",
-          "title": "ORCID record 0000-0002-2054-836X (James Allison)",
-          "notes": "Read through the public ORCID API; only UIUC employments (Assistant Professor from 2011-08-16, Associate Professor from 2018-08-16)."
+          "url": "https://pub.orcid.org/v3.0/0000-0002-2054-836X/employments",
+          "title": "ORCID 0000-0002-2054-836X (James Allison) - employments",
+          "notes": "Read through the public API: UIUC Assistant Professor 2011-08-16 to 2018-08-15; Associate Professor from 2018-08-16; nothing earlier."
         }
       ],
       "source": "faculty-page"
@@ -72661,24 +72960,47 @@
     {
       "facultyId": "roster:university-of-illinois-at-urbana-champaign:jugal-garg",
       "name": "Jugal Garg",
-      "status": "unresolved",
+      "status": "verified",
       "checkedAt": "2026-10-17",
-      "reason": "His homepage lists a BTech and PhD in Computer Science from IIT Bombay and prior postdocs at the Algorithms and Randomness Center, Georgia Tech, and the Algorithms and Complexity group, Max-Planck-Institut für Informatik, without any dates or order; the earliest dated item is a Georgia Tech course taught in spring 2013 and the first UIUC courses in spring 2016. No CV is linked, the Illinois ISE profile gives no education or dates, and the ORCID record (0000-0001-6439-7308) has no affiliations. The PhD year and the order and dates of the two postdocs are not established, so the first post-PhD job is unresolved (one of the two postdocs).",
+      "employer": "Georgia Institute of Technology",
+      "position": "Postdoctoral researcher, Algorithms and Randomness Center",
+      "placementYear": 2012,
+      "category": "postdoc",
+      "evidenceUrl": "https://arc.gatech.edu/postdocs",
+      "evidenceNote": "Georgia Tech's Algorithms and Randomness Center lists its former postdocs with dates and next positions: Jugal Garg (2012 - 2014), then University of Illinois at Urbana-Champaign. His homepage says he received the BTech and PhD in Computer Science from IIT-Bombay and later was a postdoc at the ARC at Georgia Tech and in the Algorithms and Complexity group at the Max-Planck-Institut fuer Informatik, in that order. Paper affiliations (STOC 2012 IIT-Bombay; 2014 Georgia Tech; 2015 MPI; 2016 Illinois) fit that sequence. Verifier: phdYearVerified set to 2012 (was null) from the Theory of Computing author note, which says he received the IIT-Bombay Ph.D. under Milind Sohoni and Bharat Adsul in August 2012, matching the Simons Institute biography (Ph.D. 2012); with the STOC 2012 paper still carrying an IIT-Bombay affiliation, the ARC postdoc beginning in 2012 is the first post after the degree.",
+      "phdYearVerified": 2012,
+      "phdInstitutionVerified": "IIT-Bombay",
+      "reason": "The official ARC former-postdoc list dates the Georgia Tech postdoc to 2012-2014, and his homepage places it after the IIT-Bombay doctorate and before the MPI postdoc; the earlier review lacked the ARC dates. The Theory of Computing author note dates the IIT-Bombay degree to August 2012 (added by the verifier).",
       "sources": [
+        {
+          "url": "https://arc.gatech.edu/postdocs",
+          "title": "Georgia Tech Algorithms and Randomness Center - Postdocs",
+          "notes": "Former postdocs list: Jugal Garg (2012 - 2014): University of Illinois at Urbana-Champaign."
+        },
         {
           "url": "https://jugal.ise.illinois.edu/",
           "title": "Jugal Garg homepage",
-          "notes": "Undated postdocs at Georgia Tech ARC and MPI Informatik; PhD IIT Bombay without year; course list from spring 2013 (Georgia Tech CS 8803)."
+          "notes": "BTech and PhD in Computer Science from IIT-Bombay; later a postdoc at the ARC, Georgia Tech, and in the Algorithms and Complexity group at MPI Informatik, Saarbruecken; co-taught a Georgia Tech course in Spring 2013."
         },
         {
-          "url": "https://ise.illinois.edu/directory/profile/jugal",
-          "title": "Illinois ISE - Jugal Garg (read with curl)",
-          "notes": "Courses from spring 2016 at Illinois and spring 2013 at Georgia Tech; no education or position dates."
+          "url": "https://api.crossref.org/works?rows=40&query.author=Jugal%20Garg&filter=from-pub-date:2010,until-pub-date:2016",
+          "title": "Crossref works query - Jugal Garg, 2010-2016",
+          "notes": "Affiliations: IIT Bombay (2011, STOC 2012), Georgia Institute of Technology (2014), Max-Planck-Institut fuer Informatik (2015), Illinois (2016). Supporting only."
         },
         {
           "url": "https://orcid.org/0000-0001-6439-7308",
-          "title": "ORCID record 0000-0001-6439-7308 (read through the public API)",
-          "notes": "No education or employment entries."
+          "title": "ORCID 0000-0001-6439-7308 (Jugal Garg)",
+          "notes": "Opened in the earlier review; no affiliations."
+        },
+        {
+          "url": "https://toc.cs.uchicago.edu/articles/v012a020/about.html",
+          "title": "Theory of Computing - About the Authors (vol. 12, article 20): Jugal Garg",
+          "notes": "Author note: Ph.D. from IIT-Bombay under the guidance of Milind Sohoni and Bharat Adsul in August 2012; postdoctoral fellow at MPI Informatik and Georgia Tech (order not given); then a research assistant professor at Illinois."
+        },
+        {
+          "url": "https://simons.berkeley.edu/people/jugal-garg",
+          "title": "Simons Institute - Jugal Garg",
+          "notes": "Biography: Ph.D. from IIT-Bombay in 2012; before Illinois a postdoctoral fellow at the Max-Planck-Institute for Informatics and Georgia Tech."
         }
       ],
       "source": "faculty-page"
@@ -72955,22 +73277,27 @@
       "name": "Roshanak Khaleghi",
       "status": "unresolved",
       "checkedAt": "2026-10-17",
-      "reason": "The profile and the August 2025 ISE news story confirm a 2021 UIUC Ph.D. in Industrial Engineering and state she joined Illinois in 2025 from Fraser Health Authority (Vancouver), where she worked as a Senior Data Analyst. Neither page dates the Fraser Health role or says whether it was her first job after the 2021 degree, so the 2021-2025 interval has no dated chronology. ORCID search returned no record for her. No CV was found on the opened pages.",
+      "reason": "The doctorate is now dated: the Illinois IDEALS record of her dissertation 'Algorithms for computing liveness enforcing supervisors for discrete event-driven systems modeled by petri nets' (director Ramavarapu Sreenivas) gives issue date 2021-07-08, Ph.D., Industrial Engineering, UIUC. The first job is still undated: the 2025 ISE news and profile say she came to Illinois from Fraser Health Authority, where she was a Senior Data Analyst, but no source dates that post or says it followed the degree directly. ORCID still has no record for her; Crossref shows UIUC affiliations on 2020 papers and a 2024 paper with Fraser Health co-authors that carries no affiliations. Earlier review (2026-10-17): the profile and news story confirm the 2021 UIUC doctorate and the Fraser Health Senior Data Analyst role but do not date it, leaving 2021-2025 without a chronology.",
       "sources": [
         {
-          "url": "https://ise.illinois.edu/directory/profile/khalegh2",
-          "title": "Roshanak Khaleghi - Illinois ISE directory profile",
-          "notes": "States Ph.D., Industrial Engineering, UIUC, 2021; no employment chronology."
+          "url": "https://www.ideals.illinois.edu/items/121073",
+          "title": "IDEALS - Khaleghi, Roshanak, dissertation",
+          "notes": "Issue date 2021-07-08; director of research Sreenivas, Ramavarapu; Department of Industrial & Enterprise Systems Engineering; Ph.D.; ingested 2022-01-12."
         },
         {
           "url": "https://ise.illinois.edu/news/77344",
-          "title": "Dong, Khaleghi, and Touri Join ISE Faculty at Illinois (ISE news, 22 August 2025)",
-          "notes": "Says she joins from Fraser Health Authority as a Senior Data Analyst; no start date for that role. Lead for an industry/health-system first job, not established."
+          "title": "Illinois ISE news - Dong, Khaleghi, and Touri join ISE faculty (August 2025)",
+          "notes": "Opened in the earlier review: joined Illinois in 2025 from Fraser Health Authority, where she worked as a Senior Data Analyst; undated."
         },
         {
-          "url": "https://pub.orcid.org/v3.0/expanded-search/?q=family-name:Khaleghi%20AND%20given-names:Roshanak",
-          "title": "ORCID public search - Roshanak Khaleghi",
-          "notes": "No matching ORCID record found."
+          "url": "https://ise.illinois.edu/directory/profile/khalegh2",
+          "title": "Illinois ISE - Roshanak Khaleghi",
+          "notes": "Opened in the earlier review: 2021 UIUC Ph.D. in Industrial Engineering."
+        },
+        {
+          "url": "https://api.crossref.org/works?rows=40&query.author=Roshanak%20Khaleghi&filter=from-pub-date:2019",
+          "title": "Crossref works query - Roshanak Khaleghi, from 2019",
+          "notes": "UIUC affiliation on two 2020 abstracts; a 2024 BMC paper with Fraser Health co-authors has no affiliation data. Supporting only."
         }
       ],
       "source": "faculty-page"
@@ -73368,24 +73695,22 @@
       "name": "Aman Gupta",
       "status": "unresolved",
       "checkedAt": "2026-10-17",
-      "reason": "The University of Louisville ThinkIR record for 'Optimization modeling for the operation of closed-loop supply chains' (Gupta, Aman, 1978-; read through the repository's OAI-PMH interface because its web pages answer with a Cloudflare check) gives degree Ph. D., department Industrial Engineering, advisor Gerald W. Evans, date December 2007. That a Louisville IE doctorate holder of this name is now a Louisville ISE lecturer makes the identity likely but not certain; no opened source ties the two explicitly. No source names or dates any job after December 2007: the Speed School directory listing (his only profile) answers HTTP 403, no ORCID record under his name is affiliated with Louisville, and one web search found nothing about him. The first post-PhD employer and year are not established.",
-      "phdInstitutionVerified": "University of Louisville",
-      "phdYearVerified": 2007,
+      "reason": "The Speed School Industrial Engineering faculty directory, which answered a plain request over HTTP/1.1 (the reader proxy met a bot check), lists Aman Gupta only as Lecturer, Industrial & Systems Engineering, with an email address and no profile page, degree or dates. The ThinkIR OAI record was re-read and gives the full-text link of the December 2007 dissertation (advisor Gerald W. Evans), but the PDF, whose vita could date his posts, is behind a Cloudflare check for plain requests, a headless browser and the reader proxy alike. No source ties the 2007 Louisville doctorate holder to the lecturer explicitly, and no job after December 2007 is named or dated. Earlier review (2026-10-17): the ThinkIR record dates a December 2007 Louisville IE Ph.D. by an Aman Gupta, identity with the lecturer is likely but unconfirmed, and no source names or dates a post after it.",
       "sources": [
-        {
-          "url": "https://ir.library.louisville.edu/do/oai/?verb=GetRecord&metadataPrefix=document-export&identifier=oai:ir.library.louisville.edu:etd-1547",
-          "title": "ThinkIR OAI record etd-1547: Gupta, Aman, Optimization modeling for the operation of closed-loop supply chains",
-          "notes": "degree_name Ph. D.; department Industrial Engineering; advisor Gerald W. Evans; publication date 2007-12. Article page and PDF answered 403 (Cloudflare)."
-        },
         {
           "url": "https://engineering.louisville.edu/industrial/personnel/faculty/",
           "title": "Speed School Industrial Engineering faculty directory",
-          "notes": "HTTP 403 on 2026-10-17; roster review had recorded Lecturer, Industrial & Systems Engineering."
+          "notes": "Read with a plain request over HTTP/1.1. Aman Gupta, Lecturer, Industrial & Systems Engineering; no profile link."
+        },
+        {
+          "url": "https://ir.library.louisville.edu/do/oai/?verb=GetRecord&metadataPrefix=document-export&identifier=oai:ir.library.louisville.edu:etd-1547",
+          "title": "ThinkIR OAI record etd-1547: Gupta, Aman, Optimization modeling for the operation of closed-loop supply chains",
+          "notes": "Publication date 2007-12; full-text PDF link given, but the PDF is behind a Cloudflare check."
         },
         {
           "url": "https://pub.orcid.org/v3.0/expanded-search/?q=given-names:Aman+AND+family-name:Gupta+AND+affiliation-org-name:Louisville",
           "title": "ORCID public API search: Aman Gupta, Louisville",
-          "notes": "No records."
+          "notes": "Opened in the earlier review; no matching record."
         }
       ],
       "source": "faculty-page"
@@ -73420,24 +73745,22 @@
       "name": "Elizabeth Gentry",
       "status": "unresolved",
       "checkedAt": "2026-10-17",
-      "reason": "University of Louisville ThinkIR records (read through the OAI-PMH interface; the article pages answer with a Cloudflare check) show an M. Eng. thesis in Industrial Engineering by Gentry, Elizabeth (December 2009, advisor Gail W. Depuy) and a Ph. D. dissertation in Industrial Engineering, 'A hybrid method for generating objectives' (August 2013, advisor Gail W. Depuy). That a Louisville IE doctorate holder of this name is now a Louisville ISE lecturer makes the identity likely, but no source ties them explicitly. No opened source names or dates any job after August 2013: the Speed School directory (her only profile) answers HTTP 403 and no ORCID record matches. The first post-PhD employer and year are not established.",
-      "phdInstitutionVerified": "University of Louisville",
-      "phdYearVerified": 2013,
+      "reason": "The Speed School Industrial Engineering faculty directory, read with a plain request over HTTP/1.1, lists Elizabeth Gentry only as Lecturer, Industrial & Systems Engineering, with phone and email and no profile page or dates. The ThinkIR OAI record of the August 2013 Ph.D. dissertation (advisor Gail W. Depuy) gives its full-text link, but the PDF, whose vita could date her posts, is behind a Cloudflare check for plain requests, a headless browser and the reader proxy. No job after August 2013 is named or dated, and no source ties the doctorate holder to the lecturer explicitly. Earlier review (2026-10-17): ThinkIR shows a December 2009 M.Eng. thesis and an August 2013 Ph.D. dissertation in Industrial Engineering by an Elizabeth Gentry; identity is likely, and no post after the degree is documented.",
       "sources": [
-        {
-          "url": "https://ir.library.louisville.edu/do/oai/?verb=GetRecord&metadataPrefix=document-export&identifier=oai:ir.library.louisville.edu:etd-1484",
-          "title": "ThinkIR OAI record etd-1484: Gentry, Elizabeth, A hybrid method for generating objectives",
-          "notes": "degree_name Ph. D.; department Industrial Engineering; advisor Gail W. Depuy; publication date 2013-08."
-        },
-        {
-          "url": "https://ir.library.louisville.edu/do/oai/?verb=GetRecord&metadataPrefix=document-export&identifier=oai:ir.library.louisville.edu:etd-1483",
-          "title": "ThinkIR OAI record etd-1483: Gentry, Elizabeth, Analysis of patient throughput time at Kosair Children's Hospital emergency room",
-          "notes": "degree_name M. Eng.; Industrial Engineering; 2009-12."
-        },
         {
           "url": "https://engineering.louisville.edu/industrial/personnel/faculty/",
           "title": "Speed School Industrial Engineering faculty directory",
-          "notes": "HTTP 403 on 2026-10-17; roster review had recorded Lecturer, Industrial & Systems Engineering."
+          "notes": "Read with a plain request over HTTP/1.1. Elizabeth Gentry, Lecturer, Industrial & Systems Engineering; no profile link."
+        },
+        {
+          "url": "https://ir.library.louisville.edu/do/oai/?verb=GetRecord&metadataPrefix=document-export&identifier=oai:ir.library.louisville.edu:etd-1484",
+          "title": "ThinkIR OAI record etd-1484: Gentry, Elizabeth, A hybrid method for generating objectives",
+          "notes": "Publication date 2013-08; full-text PDF link given, but the PDF is behind a Cloudflare check."
+        },
+        {
+          "url": "https://ir.library.louisville.edu/do/oai/?verb=GetRecord&metadataPrefix=document-export&identifier=oai:ir.library.louisville.edu:etd-1483",
+          "title": "ThinkIR OAI record etd-1483: Gentry, Elizabeth (M.Eng. thesis)",
+          "notes": "Opened in the earlier review; December 2009 M.Eng. thesis."
         }
       ],
       "source": "faculty-page"
@@ -73475,22 +73798,32 @@
       "name": "Faisal Aqlan",
       "status": "unresolved",
       "checkedAt": "2026-10-17",
-      "reason": "The UofL profile and ORCID confirm a Binghamton Ph.D. in Industrial and Systems Engineering (ORCID: 2010-08 to 2013-12). ORCID dates only one earlier employer, Penn State Behrend, from 2014-07 to 2021-07. The profile and lab page say that before UofL he held positions at Penn State, the University of New Haven, IBM Corporation and Innovation Associates, but give no dates or order. A New Haven or industry job may fall between the December 2013 degree and July 2014, and IBM may have been held during the doctorate, so the first post-PhD job is not established. One WebSearch for the New Haven role returned nothing relevant.",
+      "reason": "His ORCID record (public API) now shows the Binghamton Ph.D. from 2010-08-15 to 2013-12-01 and Penn State Behrend from 2014-07-01 to 2021-07-01 (no title), plus an undated Louisville entry. The UofL profile data endpoint and lab team page still say only that before UofL he held positions at Penn State, the University of New Haven, IBM Corporation and Innovation Associates, without dates. Crossref shows a 2014 conference paper (FAIM 2014) giving his affiliation as the University of New Haven, consistent with a New Haven post between the December 2013 degree and July 2014, but it gives no title or start date; the University of New Haven's archived catalogs for 2010-2016 returned no faculty entry for him; the lab site has no CV. IBM may have been held during the doctorate. Earlier review (2026-10-17): ORCID dated only Penn State Behrend (2014-07 to 2021-07), and New Haven, IBM and Innovation Associates were undated.",
       "sources": [
         {
-          "url": "https://profiles.louisville.edu/faisal.aqlan",
-          "title": "Faisal Aqlan - University of Louisville profile",
-          "notes": "Read through the profile data endpoint https://profiles.louisville.edu/api/users/faisal.aqlan; Ph.D. Binghamton 2013 and an undated list of prior employers."
+          "url": "https://pub.orcid.org/v3.0/0000-0002-0695-5364/employments",
+          "title": "ORCID 0000-0002-0695-5364 (Faisal Aqlan) - employments and educations",
+          "notes": "Read through the public API. Penn State Behrend, Industrial Engineering, 2014-07-01 to 2021-07-01; University of Louisville (undated). Education: Binghamton Ph.D. 2010-08-15 to 2013-12-01."
         },
         {
-          "url": "https://orcid.org/0000-0002-0695-5364",
-          "title": "ORCID - Faisal Aqlan",
-          "notes": "Public ORCID API: Penn State Behrend 2014-07 to 2021-07, UofL undated; PhD Binghamton 2010-08 to 2013-12."
+          "url": "https://profiles.louisville.edu/api/users/faisal.aqlan",
+          "title": "UofL Discovery profile data - Faisal Aqlan",
+          "notes": "Ph.D. Binghamton (degree date 2013-05 in the profile data); prior positions at Penn State, University of New Haven, IBM and Innovation Associates, undated."
         },
         {
           "url": "https://aqlanlab.org/team",
-          "title": "Aqlan Lab - Team page",
-          "notes": "Same undated list of prior employers (Penn State, University of New Haven, IBM, Innovation Associates)."
+          "title": "Aqlan Lab - Team",
+          "notes": "Same undated list of prior employers; no CV."
+        },
+        {
+          "url": "https://api.crossref.org/works?rows=40&query.author=Faisal%20Aqlan&filter=from-pub-date:2012,until-pub-date:2016",
+          "title": "Crossref works query - Faisal Aqlan, 2012-2016",
+          "notes": "2014 FAIM conference paper (doi 10.14809/faim.2014.1017) lists University of New Haven; 2015 paper lists Penn State Behrend. Supporting lead only."
+        },
+        {
+          "url": "https://catalog.newhaven.edu/misc/catalog_list.php",
+          "title": "University of New Haven catalog archive",
+          "notes": "Archived catalogs 2009-2016 searched for his name; no result."
         }
       ],
       "source": "faculty-page"
@@ -73538,17 +73871,22 @@
       "name": "Jason Saleem",
       "status": "unresolved",
       "checkedAt": "2026-10-17",
-      "reason": "The UofL profile states a 2003 Virginia Tech Ph.D. in Industrial and Systems Engineering and that before joining UofL in 2015 he spent several years with the U.S. Department of Veterans Affairs as a research investigator. ORCID dates only the UofL post (from 2015-01). The VA period and any role between 2003 and the VA post are undated. A search snippet, not opened, also linked him to Regenstrief Institute and IUPUI posts, so the first post-PhD job and its year are not established. One WebSearch for a CV found none.",
+      "reason": "His ORCID record (public API) gives the Virginia Tech Ph.D. 2000-2003 and only the Louisville post from 2015-01-01; the UofL profile data say that before 2015 he spent several years with the U.S. Department of Veterans Affairs as a research investigator, undated. PubMed affiliations now add a lead: a 2005 paper gives the VA Getting at Patient Safety (GAPS) Center at the Cincinnati VA Medical Center, and 2007 papers give the VA HSR&D Center at Roudebush VAMC in Indianapolis (with an IUPUI email). No source dates the start or title of his first post after the 2003 degree, so the Cincinnati VA role is a strong lead but not established. Earlier review (2026-10-17): the profile says he was with the VA for several years before 2015, and ORCID dates only the Louisville post.",
       "sources": [
         {
-          "url": "https://profiles.louisville.edu/jason.saleem",
-          "title": "Jason Saleem - University of Louisville profile",
-          "notes": "Read through the profile data endpoint https://profiles.louisville.edu/api/users/jason.saleem; Ph.D. 2003 and undated VA research investigator role."
+          "url": "https://pub.orcid.org/v3.0/0000-0002-7397-5170/employments",
+          "title": "ORCID 0000-0002-7397-5170 (Jason Saleem) - employments and educations",
+          "notes": "Read through the public API. University of Louisville, Associate Professor, from 2015-01-01. Education: Virginia Tech PhD 2000-2003, MS 1998-2000; Pittsburgh BS 1993-1997."
         },
         {
-          "url": "https://orcid.org/0000-0002-7397-5170",
-          "title": "ORCID - Jason Saleem",
-          "notes": "Public ORCID API: UofL Associate Professor from 2015-01; PhD Virginia Tech 2000-2003; no earlier employment."
+          "url": "https://profiles.louisville.edu/api/users/jason.saleem",
+          "title": "UofL Discovery profile data - Jason Saleem",
+          "notes": "Ph.D. Virginia Tech 2003; before joining UofL in 2015, several years with the VA as a research investigator; undated."
+        },
+        {
+          "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=18693914,18693853,17915595,17600106,15802482&retmode=xml",
+          "title": "PubMed records for Saleem JJ, 2003-2007 (E-utilities)",
+          "notes": "2005 (PMID 15802482): VA GAPS Center, Cincinnati VAMC; 2007: VA HSR&D Center on Implementing Evidence-Based Practice, Roudebush VAMC, Indianapolis, and VA GAPS Center Cincinnati with an IUPUI email. Affiliation lead only."
         }
       ],
       "source": "faculty-page"
@@ -73558,22 +73896,22 @@
       "name": "Kevin Chou",
       "status": "unresolved",
       "checkedAt": "2026-10-17",
-      "reason": "The UofL profile records a 1994 Purdue Ph.D. in Industrial Engineering and says he joined UofL in January 2017, previously being a Professor of Mechanical Engineering at The University of Alabama. It gives no dates or positions between 1994 and the Alabama professorship. His ORCID record (0009-0001-7056-7761) has no employment entries, and the research group page lists publications only. The first post-PhD job is not established.",
+      "reason": "The UofL profile data say he joined UofL in January 2017 after being a Professor of Mechanical Engineering at The University of Alabama, with the Purdue Ph.D. dated May 1994; nothing between 1994 and Alabama is dated, and his ORCID record (0009-0001-7056-7761) still has no entries. Crossref adds a lead only: 1996 and 1997 ASME conference papers by Y. Kevin Chou give the National Institute of Standards and Technology as his affiliation, which suggests a NIST post in the mid-1990s, but no source names the post or dates its start. Earlier review (2026-10-17): the profile records the 1994 Purdue Ph.D. and the Alabama professorship but no positions or dates between them.",
       "sources": [
         {
-          "url": "https://profiles.louisville.edu/kevin.chou",
-          "title": "Kevin Chou - University of Louisville profile",
-          "notes": "Read through the profile data endpoint https://profiles.louisville.edu/api/users/kevin.chou; Ph.D. 1994 and an undated Alabama professorship."
+          "url": "https://profiles.louisville.edu/api/users/kevin.chou",
+          "title": "UofL Discovery profile data - Kevin Chou",
+          "notes": "Joined UofL in January 2017; previously Professor of Mechanical Engineering at Alabama; Ph.D. Industrial Engineering, Purdue, degree date 1994-05."
+        },
+        {
+          "url": "https://api.crossref.org/works?rows=40&query.author=Y.%20Kevin%20Chou&filter=from-pub-date:1993,until-pub-date:2002",
+          "title": "Crossref works query - Y. Kevin Chou, 1993-2002",
+          "notes": "1996 and 1997 ASME IMECE papers on hard turning list National Institute of Standards and Technology. Lead only."
         },
         {
           "url": "https://orcid.org/0009-0001-7056-7761",
-          "title": "ORCID - Kevin Chou",
-          "notes": "Public ORCID API returned no employment or education entries."
-        },
-        {
-          "url": "https://louisville.edu/research/chouresearchgroup",
-          "title": "Chou Research Group (UofL)",
-          "notes": "Publication lists only; no career chronology."
+          "title": "ORCID 0009-0001-7056-7761 (Kevin Chou)",
+          "notes": "Opened in the earlier review; no employment entries."
         }
       ],
       "source": "faculty-page"
@@ -73611,17 +73949,27 @@
       "name": "Lihui Bai",
       "status": "unresolved",
       "checkedAt": "2026-10-17",
-      "reason": "The UofL profile states a 2004 University of Florida Ph.D. in Industrial and Systems Engineering (ORCID: 2000-01 to 2004-07) and says that before joining UofL she taught operations management, statistics and management science at the Valparaiso University School of Business. ORCID dates only a UofL Associate Professor entry from 2010-05. Neither source dates the Valparaiso post or says it immediately followed the doctorate. Valparaiso is a strong lead for the first job, but its start year and rank are undocumented. One WebSearch returned no Valparaiso record.",
+      "reason": "Her ORCID record (public API) gives the University of Florida PhD from 2000-01 to 2004-07 and only a UofL Associate Professor entry from 2010-05; the UofL profile data say she previously taught at the Valparaiso University School of Business, undated. Crossref shows a 2009 Operations Research paper listing the College of Business Administration, Valparaiso University, which confirms the Valparaiso post by 2009 but not its start or rank. Valparaiso's online catalogs go back only to 2022-23, and one web search found no Valparaiso record. Valparaiso remains the strong but undated lead for the first job after July 2004. Earlier review (2026-10-17): the profile names the Valparaiso teaching post and ORCID dates only UofL from 2010, so the Valparaiso start and rank were undocumented.",
       "sources": [
         {
-          "url": "https://profiles.louisville.edu/lihui.bai",
-          "title": "Lihui Bai - University of Louisville profile",
-          "notes": "Read through the profile data endpoint https://profiles.louisville.edu/api/users/lihui.bai; Ph.D. 2004 and undated Valparaiso teaching."
+          "url": "https://pub.orcid.org/v3.0/0000-0002-1314-5490/employments",
+          "title": "ORCID 0000-0002-1314-5490 (Lihui Bai) - employments and educations",
+          "notes": "Read through the public API. University of Louisville, Associate Professor, Industrial Engineering, from 2010-05. Education: University of Florida PhD 2000-01 to 2004-07."
         },
         {
-          "url": "https://orcid.org/0000-0002-1314-5490",
-          "title": "ORCID - Lihui Bai",
-          "notes": "Public ORCID API: UofL Associate Professor from 2010-05; PhD Florida 2000-01 to 2004-07; no earlier employment."
+          "url": "https://profiles.louisville.edu/api/users/lihui.bai",
+          "title": "UofL Discovery profile data - Lihui Bai",
+          "notes": "Before UofL she taught operations management, statistics and management science at the Valparaiso University School of Business; undated."
+        },
+        {
+          "url": "https://api.crossref.org/works?rows=40&query.author=Lihui%20Bai&filter=from-pub-date:2003,until-pub-date:2011",
+          "title": "Crossref works query - Lihui Bai, 2003-2011",
+          "notes": "2009 Operations Research paper (doi 10.1287/opre.1090.0694) lists College of Business Administration, Valparaiso University. Supporting lead only."
+        },
+        {
+          "url": "https://catalog.valpo.edu/misc/catalog_list.php",
+          "title": "Valparaiso University catalog list",
+          "notes": "Online catalogs begin with 2022-2023; no 2004-2010 catalogs available."
         }
       ],
       "source": "faculty-page"
@@ -73685,17 +74033,22 @@
       "name": "Monica Gentili",
       "status": "unresolved",
       "checkedAt": "2026-10-17",
-      "reason": "The UofL profile records a 2003 Sapienza University of Rome Ph.D. in Operations Research but describes only her research areas, with no employment chronology. ORCID 0000-0003-3895-0629 lists only an undated UofL affiliation. No CV was found: one WebSearch for an Italian institutional CV returned only other people. Her first post-PhD job is not established.",
+      "reason": "The UofL profile data record a 2003 Sapienza Ph.D. in Operations Research and her research areas only; her ORCID record (0000-0003-3895-0629, public API) lists one undated UofL affiliation. Crossref affiliations add a lead: 2011 and 2012 Transportation Research Record papers give the Department of Computer Science, University of Salerno, but no source names her post there or dates any job after 2003. One web search for an Italian institutional CV found only other people. Earlier review (2026-10-17): the profile gives the 2003 Sapienza doctorate without employment chronology, and ORCID lists only an undated UofL affiliation.",
       "sources": [
         {
-          "url": "https://profiles.louisville.edu/monica.gentili",
-          "title": "Monica Gentili - University of Louisville profile",
-          "notes": "Read through the profile data endpoint https://profiles.louisville.edu/api/users/monica.gentili; degree only."
+          "url": "https://profiles.louisville.edu/api/users/monica.gentili",
+          "title": "UofL Discovery profile data - Monica Gentili",
+          "notes": "Ph.D. in Operations Research, Sapienza University of Rome, 2003; research areas; no employment history."
         },
         {
-          "url": "https://orcid.org/0000-0003-3895-0629",
-          "title": "ORCID - Monica Gentili",
-          "notes": "Public ORCID API: undated University of Louisville entry only."
+          "url": "https://pub.orcid.org/v3.0/0000-0003-3895-0629/employments",
+          "title": "ORCID 0000-0003-3895-0629 (Monica Gentili)",
+          "notes": "Read through the public API. University of Louisville (undated); no education entries."
+        },
+        {
+          "url": "https://api.crossref.org/works?rows=40&query.author=Monica%20Gentili&filter=from-pub-date:2002,until-pub-date:2012",
+          "title": "Crossref works query - Monica Gentili, 2002-2012",
+          "notes": "2011 and 2012 TRR papers list Department of Computer Science, University of Salerno. Lead only."
         }
       ],
       "source": "faculty-page"
@@ -73758,24 +74111,22 @@
       "name": "Scott Hoover",
       "status": "unresolved",
       "checkedAt": "2026-10-17",
-      "reason": "University of Louisville ThinkIR records (read through the OAI-PMH interface) show an M.S. thesis in Industrial Engineering by Hoover, Scott R. (December 2010, advisor Gail W. Depuy) and a Ph. D. dissertation in Industrial Engineering, 'Evaluation of a children's hospital's direct admission process to improve outcomes and efficiency of care' (August 2013, advisors Grady T. Holman and Gail W. Depuy). That a Louisville IE doctorate holder of this name is now a Louisville ISE lecturer makes the identity likely, but no source ties them explicitly. No opened source names or dates any job after August 2013: the Speed School directory (his only profile) answers HTTP 403 and no ORCID record matches. The first post-PhD employer and year are not established.",
-      "phdInstitutionVerified": "University of Louisville",
-      "phdYearVerified": 2013,
+      "reason": "The Speed School Industrial Engineering faculty directory, read with a plain request over HTTP/1.1, lists Scott Hoover only as Lecturer, Industrial & Systems Engineering, with an email address and no profile page or dates. The ThinkIR OAI record of his August 2013 Ph.D. dissertation (advisors Grady T. Holman and Gail W. Depuy) gives its full-text link, but the PDF vita suggested by the triage note could not be read: the file is behind a Cloudflare check for plain requests with a browser user-agent, a headless browser and the reader proxy. No job after August 2013 is named or dated, and no source ties the doctorate holder to the lecturer explicitly. Earlier review (2026-10-17): ThinkIR shows a December 2010 M.S. thesis and an August 2013 Ph.D. dissertation in Industrial Engineering by Scott R. Hoover; identity is likely, and no post after the degree is documented.",
       "sources": [
+        {
+          "url": "https://engineering.louisville.edu/industrial/personnel/faculty/",
+          "title": "Speed School Industrial Engineering faculty directory",
+          "notes": "Read with a plain request over HTTP/1.1. Scott Hoover, Lecturer, Industrial & Systems Engineering; no profile link."
+        },
         {
           "url": "https://ir.library.louisville.edu/do/oai/?verb=GetRecord&metadataPrefix=document-export&identifier=oai:ir.library.louisville.edu:etd-1631",
           "title": "ThinkIR OAI record etd-1631: Hoover, Scott R., Evaluation of a children's hospital's direct admission process",
-          "notes": "degree_name Ph. D.; department Industrial Engineering; advisors Grady T. Holman, Gail W. Depuy; publication date 2013-08."
+          "notes": "Publication date 2013-08; full-text PDF link given, but the PDF is behind a Cloudflare check."
         },
         {
           "url": "https://ir.library.louisville.edu/do/oai/?verb=GetRecord&metadataPrefix=document-export&identifier=oai:ir.library.louisville.edu:etd-1630",
-          "title": "ThinkIR OAI record etd-1630: Hoover, Scott R., Simulation analysis of resident and attending physician teaching methods",
-          "notes": "degree_name M.S.; Industrial Engineering; 2010-12."
-        },
-        {
-          "url": "https://engineering.louisville.edu/academics/faculty/?cat=14&filters=31",
-          "title": "Speed School faculty directory (Industrial & Systems Engineering filter)",
-          "notes": "HTTP 403 on 2026-10-17; roster review had recorded Lecturer, Industrial & Systems Engineering."
+          "title": "ThinkIR OAI record etd-1630: Hoover, Scott R. (M.S. thesis)",
+          "notes": "Opened in the earlier review; December 2010 M.S. thesis."
         }
       ],
       "source": "faculty-page"
@@ -73810,22 +74161,22 @@
       "name": "Xiaomei Wang",
       "status": "unresolved",
       "checkedAt": "2026-10-17",
-      "reason": "The UofL profile states a University at Buffalo Ph.D. in Industrial Engineering awarded February 2020 (ORCID education 2014-09 to 2020-02). It says that before UofL she worked at Texas A&M University as a Postdoctoral Fellow, but gives no start date and does not say this followed the degree directly. A Texas A&M ACE lab news page (read with the fetch tool after a plain request was refused with 403) only notes that a Dr. Wang won a 2021 article award. ORCID has no employment entries. The Texas A&M postdoc is a strong lead for the first job, but its start date and the February 2020 to postdoc interval are undocumented.",
+      "reason": "Her ORCID record (public API) gives the University at Buffalo Ph.D. in Industrial and Systems Engineering from 2014-09-01 to 2020-02-01 and no employment. The UofL profile says that before UofL she was a Postdoctoral Fellow at Texas A&M, undated. The Texas A&M ACE lab people page (rendered with a headless browser) lists her among lab members and alumni with the 2020 Buffalo Ph.D. and her current Louisville assistant professorship, but gives no postdoc dates. The postdoc is the strong lead for the first job, but its start date, and so the interval after February 2020, remains undocumented. Earlier review (2026-10-17): the profile names the Texas A&M postdoc without dates, and ORCID had no employment entries.",
       "sources": [
         {
+          "url": "https://pub.orcid.org/v3.0/0000-0002-3432-0227/employments",
+          "title": "ORCID 0000-0002-3432-0227 (Xiaomei Wang) - employments and educations",
+          "notes": "Read through the public API. No employment entries. Education: University at Buffalo, Doctor of Philosophy, Industrial and Systems Engineering, 2014-09-01 to 2020-02-01."
+        },
+        {
+          "url": "https://acelab.tamu.edu/people-all/",
+          "title": "Texas A&M ACE Lab - People",
+          "notes": "Rendered with a headless browser. Xiaomei Wang: Ph.D., Industrial and Systems Engineering (Human Factors), University at Buffalo, 2020; University of Louisville, Assistant Professor; no dates for her time at the lab."
+        },
+        {
           "url": "https://profiles.louisville.edu/xiaomei.wang",
-          "title": "Xiaomei Wang - University of Louisville profile",
-          "notes": "Read through the profile data endpoint https://profiles.louisville.edu/api/users/xiaomei.wang; Ph.D. February 2020 and undated Texas A&M postdoc."
-        },
-        {
-          "url": "https://orcid.org/0000-0002-3432-0227",
-          "title": "ORCID - Xiaomei Wang",
-          "notes": "Public ORCID API: education only (UB PhD 2014-09 to 2020-02)."
-        },
-        {
-          "url": "https://acelab.tamu.edu/2022/01/20/dr-xiaomei-wang-wins-the-best-student-ergonomics-in-design-award/",
-          "title": "Texas A&M ACE Lab - Dr. Xiaomei Wang wins the Best Student Ergonomics in Design Award",
-          "notes": "Award notice only; no role or dates."
+          "title": "UofL profile - Xiaomei Wang",
+          "notes": "Opened in the earlier review: before UofL she was a Postdoctoral Fellow at Texas A&M; undated."
         }
       ],
       "source": "faculty-page"
