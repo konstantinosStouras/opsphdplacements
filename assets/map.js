@@ -98,8 +98,20 @@ export async function renderMap(target, state, { onSelect, openProfile, isCurren
   }
   if (!indexed) for (const r of state.placements) { const s = stats.get(r.phdInstitution); if (s) { s.verified++; if (r.category === 'tenure-track') s.tt++; } }
   // A matched item without coordinates is left off the map (and counted as unplaced), never drawn at 0°, 0°.
-  const nodes = locations.records.filter(r => r.qid && Number.isFinite(r.lat) && Number.isFinite(r.lon) && stats.has(r.institution)).map(r => ({ type: 'node', id: r.institution, name: r.institution, qid: r.qid, country: r.country || null, logo: r.logo || null, lat: r.lat, lon: r.lon, ...stats.get(r.institution) }));
-  const unmapped = [...stats.keys()].filter(name => !nodes.some(n => n.id === name));
+  // Spellings of one institution that share a Wikidata item ("University of Michigan" and "University of
+  // Michigan at Ann Arbor") are one circle, named after the spelling with the most people.
+  const byItem = new Map();
+  for (const r of locations.records) {
+    if (!r.qid || !Number.isFinite(r.lat) || !Number.isFinite(r.lon) || !stats.has(r.institution)) continue;
+    const s = stats.get(r.institution), n = byItem.get(r.qid);
+    if (!n) { byItem.set(r.qid, { type: 'node', id: r.institution, name: r.institution, names: [r.institution], qid: r.qid, country: r.country || null, logo: r.logo || null, lat: r.lat, lon: r.lon, ...s, top: s.people }); continue; }
+    n.names.push(r.institution); n.logo ||= r.logo || null;
+    if (s.people > n.top) { n.id = n.name = r.institution; n.top = s.people; n.lat = r.lat; n.lon = r.lon; }
+    for (const k of ['people', 'verified', 'unresolved', 'tt']) n[k] += s[k];
+    n.first = Math.min(n.first, s.first); n.last = Math.max(n.last, s.last);
+  }
+  const nodes = [...byItem.values()];
+  const unmapped = [...stats.keys()].filter(name => !nodes.some(n => n.names.includes(name)));
   const unmappedPeople = unmapped.reduce((n, name) => n + stats.get(name).people, 0);
 
   const M = { region: 'world', metric: 'people', zoom: { k: 1, tx: 0, ty: 0 }, selected: null, layout: null, anim: 0, frame: 0, panning: false, dragged: false };
@@ -221,7 +233,8 @@ export async function renderMap(target, state, { onSelect, openProfile, isCurren
         const n = it.node, bin = ringBin(n.people ? n.verified / n.people : 0);
         g.setAttribute('aria-label', `${n.name}: ${fmt(n.people)} people in the dataset, ${fmt(n.verified)} verified first jobs`);
         body.append(el('circle', { class: 'map-shade', r: it.r + 0.4, cy: 0.9 }), el('circle', { class: 'map-ring', r: it.r, fill: bin.color }));
-        const inner = it.r - (it.r < 9 ? 1.4 : Math.max(1.8, it.r * 0.15));
+        // A thin ring (about 11 % of the radius) carries the verified share; the logo gets the rest of the circle.
+        const inner = it.r - (it.r < 9 ? 1.2 : Math.max(1.5, it.r * 0.11));
         body.append(el('circle', { class: 'map-mono-disc', r: inner }));
         if (n.logo) {
           const img = el('image', { href: n.logo, x: -inner, y: -inner, width: 2 * inner, height: 2 * inner, 'clip-path': 'url(#map-logo-clip)', preserveAspectRatio: 'xMidYMid meet' });
@@ -344,6 +357,7 @@ export async function renderMap(target, state, { onSelect, openProfile, isCurren
       card.append(html('p', 'map-card-name', n.name));
       const meta = [n.country, Number.isFinite(n.first) ? (n.first === n.last ? `class of ${n.first}` : `classes of ${n.first}–${n.last}`) : null].filter(Boolean).join(' · ');
       if (meta) card.append(html('p', 'map-card-meta', meta));
+      if (n.names.length > 1) card.append(html('p', 'map-card-meta', `Counts include the spellings ${n.names.filter(x => x !== n.name).join('; ')}`));
       const dl = html('dl');
       for (const [k, v] of [['People in the dataset', fmt(n.people)], ['Verified first jobs', `${fmt(n.verified)} (${pct(n.verified, n.people)})`], ['Tenure track, of verified', n.verified ? pct(n.tt, n.verified) : '—'], ['Researched, unresolved', fmt(n.unresolved)], ['Not yet reviewed', fmt(n.people - n.verified - n.unresolved)]]) { const row = html('div'); row.append(html('dt', undefined, k), html('dd', undefined, v)); dl.append(row); }
       card.append(dl);

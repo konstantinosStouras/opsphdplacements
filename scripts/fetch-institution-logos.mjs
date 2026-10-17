@@ -1,171 +1,213 @@
-// Download an identifying icon (160 px PNG) for each mapped institution into assets/logos/<qid>.png.
-// Official websites come from Wikidata (P856) in batches. Icon sources, best first: the icons the
-// homepage itself declares (apple-touch-icon, then sized icons, then the plain favicon), the site's
-// /apple-touch-icon.png, DuckDuckGo's and Google's favicon services, and finally the logo files that
-// Wikidata records for the institution (icon P2910, small logo P8972, logo P154; read from Wikimedia
-// Commons as PNG thumbnails), then the lead image of the English Wikipedia article. Icons identify institutions on the map only; trademarks belong to their
-// owners. Reviewed exceptions are in data/logo-review.json (`reject` drops a wrong icon, `url` names
-// the file to use, `skip` lists source URLs, or parts of them, that gave a wrong or unreadable icon). Missing icons are fine: the map falls back to initials.
-// Usage: node scripts/fetch-institution-logos.mjs [--refresh] [--missing] [--out DIR --cache FILE]
-//   (after scripts/geocode-institutions.mjs; --refresh re-fetches every icon, --missing retries the
-//   institutions without one; with neither, only institutions never tried are fetched. --out writes the
-//   icons to a staging folder for review instead of assets/logos, and then leaves the locations file alone.)
+// Logos for the coverage map: one 192 px PNG per mapped institution in assets/logos/<qid>.png, laid out by
+// scripts/logo-layout.py so the logo fills the circle. Two steps:
+//
+//   node scripts/fetch-institution-logos.mjs --collect [--refresh]
+//     downloads every candidate for every mapped institution into research/logo-candidates/<qid>/
+//     (ignored), with a manifest of where each came from. Candidates: the icons the institution's official
+//     website (Wikidata P856) declares and its /apple-touch-icon.png, the logo images in the homepage's own
+//     markup, the logo files Wikidata records for the institution on Wikimedia Commons (icon P2910, small
+//     logo P8972, seal P158, coat of arms P94, logo P154; photographs skipped), the lead image of the English
+//     Wikipedia article, and DuckDuckGo's and Google's copies of the site icon. SVG files are drawn at
+//     512 px by the pre-installed Chromium. Without --refresh, institutions already collected are skipped.
+//
+//   node scripts/fetch-institution-logos.mjs --choose [--out DIR]
+//     lays out every candidate and keeps, per institution, the one that best fills the circle while staying
+//     sharp, preferring the institution's own files to the favicon services. Writes the logo fields of
+//     data/institution-locations.json (not with --out, which stages the logos in DIR for review) and records
+//     each choice in research/logo-choices.json.
+//
+// --only Q1,Q2 limits either step to those items.
+// Reviewed exceptions are in data/logo-review.json: `pick` names (part of) the candidate URL to use, `skip`
+// lists (parts of) candidate URLs that are wrong or unreadable, `url` adds a candidate, `reject` leaves the
+// institution without a logo. Logos identify institutions on the map only; trademarks belong to their owners.
 import fs from 'node:fs';
 import path from 'node:path';
+import { createRequire } from 'node:module';
 import { execFileSync } from 'node:child_process';
 const root = path.resolve(import.meta.dirname, '..');
 const locPath = path.join(root, 'data/institution-locations.json');
 const reviewPath = path.join(root, 'data/logo-review.json');
 const arg = name => { const i = process.argv.indexOf(name); return i > 0 ? process.argv[i + 1] : null; };
+const has = name => process.argv.includes(name);
 const defaultDir = path.join(root, 'assets/logos');
 const outDir = arg('--out') ? path.resolve(arg('--out')) : defaultDir, staging = outDir !== defaultDir;
-const cachePath = arg('--cache') ? path.resolve(arg('--cache')) : path.join(root, 'research/logo-cache.json');
+const metaPath = path.join(root, 'research/logo-cache.json');
+const candRoot = path.join(root, 'research/logo-candidates');
 const UA = 'opsphdplacements-research/1.0 (https://github.com/konstantinosStouras/opsphdplacements)';
 const BROWSER_UA = 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36';
-const SIZE = 160, MIN = 32, SHARP = 120;
-const refresh = process.argv.includes('--refresh'), retryMissing = process.argv.includes('--missing');
+const SIZE = 192;
 const sleep = ms => new Promise(r => setTimeout(r, ms));
-fs.mkdirSync(outDir, { recursive: true });
-fs.mkdirSync(path.dirname(cachePath), { recursive: true });
-const cache = fs.existsSync(cachePath) ? JSON.parse(fs.readFileSync(cachePath, 'utf8')) : {};
-const review = fs.existsSync(reviewPath) ? JSON.parse(fs.readFileSync(reviewPath, 'utf8')).records || {} : {};
-const save = () => fs.writeFileSync(cachePath, JSON.stringify(cache));
+const readJson = (p, d) => fs.existsSync(p) ? JSON.parse(fs.readFileSync(p, 'utf8')) : d;
+const meta = readJson(metaPath, {});
+const review = readJson(reviewPath, { records: {} }).records || {};
+const data = JSON.parse(fs.readFileSync(locPath, 'utf8'));
+const only = arg('--only')?.split(',');
+const qids = [...new Set(data.records.filter(r => r.qid).map(r => r.qid))].filter(q => !only || only.includes(q));
+const saveMeta = () => { fs.mkdirSync(path.dirname(metaPath), { recursive: true }); fs.writeFileSync(metaPath, JSON.stringify(meta)); };
 
-async function wikidata(ids) {
-  for (let attempt = 0; attempt < 8; attempt++) {
-    const res = await fetch('https://www.wikidata.org/w/api.php?' + new URLSearchParams({ action: 'wbgetentities', ids: ids.join('|'), props: 'claims|sitelinks', sitefilter: 'enwiki', format: 'json' }), { headers: { 'User-Agent': UA } });
-    const text = await res.text();
-    if (res.ok && text.startsWith('{')) return JSON.parse(text).entities || {};
-    await sleep(4000 * (attempt + 1));
+// Wikimedia asks for one request at a time with an identifying User-Agent; every Wikimedia request goes
+// through this queue, at most one per second.
+let wmLast = 0;
+async function wm(url, init = {}) {
+  for (let attempt = 0; attempt < 6; attempt++) {
+    const wait = wmLast + 1000 - Date.now(); if (wait > 0) await sleep(wait);
+    wmLast = Date.now();
+    try {
+      const res = await fetch(url, { ...init, headers: { 'User-Agent': UA, ...(init.headers || {}) }, signal: AbortSignal.timeout(30000) });
+      if (res.status === 429 || res.status >= 500) { await sleep(5000 * (attempt + 1)); continue; }
+      return res;
+    } catch { await sleep(3000 * (attempt + 1)); }
   }
-  throw new Error('Wikidata kept refusing');
+  return null;
 }
 const claim = (e, p) => e?.claims?.[p]?.[0]?.mainsnak?.datavalue?.value || null;
-
-const data = JSON.parse(fs.readFileSync(locPath, 'utf8'));
-const mapped = data.records.filter(r => r.qid);
-// Website and Wikidata logo files, fetched once per item (and again for items cached before the logo fields existed).
-const need = mapped.filter(r => !cache[r.qid] || cache[r.qid].commonsVersion !== 3);
-for (let i = 0; i < need.length; i += 50) {
-  const batch = need.slice(i, i + 50);
-  const ents = await wikidata(batch.map(r => r.qid));
-  for (const r of batch) {
-    const e = ents[r.qid];
-    // Icon, small logo, seal and coat of arms before the full logo, which is often a wide wordmark;
-    // photographs (.jpg) entered as logos are skipped.
-    cache[r.qid] = { ...(cache[r.qid] || {}), website: claim(e, 'P856') || cache[r.qid]?.website || null, commons: ['P2910', 'P8972', 'P158', 'P94', 'P154'].map(p => claim(e, p)).filter(f => f && !/\.jpe?g$/i.test(f)), enwiki: e?.sitelinks?.enwiki?.title || null, commonsVersion: 3 };
+async function wikidataMeta() {
+  const need = qids.filter(q => meta[q]?.commonsVersion !== 4);
+  for (let i = 0; i < need.length; i += 50) {
+    const batch = need.slice(i, i + 50);
+    const res = await wm('https://www.wikidata.org/w/api.php?' + new URLSearchParams({ action: 'wbgetentities', ids: batch.join('|'), props: 'claims|sitelinks', sitefilter: 'enwiki', format: 'json' }));
+    const ents = res && res.ok ? (await res.json()).entities || {} : {};
+    for (const q of batch) {
+      const e = ents[q]; if (!e) continue;
+      const commons = [];
+      for (const p of ['P2910', 'P8972', 'P158', 'P94', 'P154']) for (const c of e.claims?.[p] || []) { const f = c.mainsnak?.datavalue?.value; if (f && !/\.jpe?g$/i.test(f)) commons.push({ prop: p, file: f }); }
+      meta[q] = { ...(meta[q] || {}), website: claim(e, 'P856') || meta[q]?.website || null, commons, enwiki: e.sitelinks?.enwiki?.title || null, commonsVersion: 4 };
+    }
+    saveMeta();
   }
-  save();
-  await sleep(1500);
 }
 
-async function download(url, ua = BROWSER_UA) {
+async function download(url, ua) {
+  const init = { headers: { 'User-Agent': ua, Accept: 'image/avif,image/webp,image/png,image/svg+xml,image/*;q=0.8,*/*;q=0.5' }, redirect: 'follow' };
   try {
-    const res = await fetch(url, { headers: { 'User-Agent': ua, Accept: 'image/avif,image/webp,image/png,image/*;q=0.8,*/*;q=0.5' }, redirect: 'follow', signal: AbortSignal.timeout(20000) });
-    if (!res.ok) return null;
+    const res = /wikimedia\.org|wikipedia\.org/.test(url) ? await wm(url, init) : await fetch(url, { ...init, signal: AbortSignal.timeout(20000) });
+    if (!res || !res.ok) return null;
     const type = res.headers.get('content-type') || '';
-    if (/text\/html|svg/i.test(type)) return null;
+    if (/text\/html/i.test(type)) return null;
     const buf = Buffer.from(await res.arrayBuffer());
-    return buf.length > 200 ? buf : null;
+    if (buf.length < 150) return null;
+    const svg = /svg/i.test(type) || /^\s*(<\?xml[^>]*>\s*)?(<!--[\s\S]*?-->\s*)*<svg/i.test(buf.subarray(0, 600).toString('utf8'));
+    return { buf, ext: svg ? 'svg' : 'img' };
   } catch { return null; }
 }
-// Icons the homepage declares, largest first: apple-touch-icon, then icons with sizes, then the plain favicon.
-async function declaredIcons(website) {
+// Icons the homepage declares and the logo images in its markup (an <img>, or an SVG file, whose tag says logo).
+async function homepage(website) {
   try {
     const res = await fetch(website, { headers: { 'User-Agent': BROWSER_UA, Accept: 'text/html' }, redirect: 'follow', signal: AbortSignal.timeout(20000) });
     if (!res.ok) return [];
-    const html = (await res.text()).slice(0, 400000), base = res.url, out = [];
+    const html = (await res.text()).slice(0, 600000), base = res.url, out = [];
+    const attr = (tag, name) => (tag.match(new RegExp(`\\b${name}\\s*=\\s*("([^"]*)"|'([^']*)'|([^\\s>]+))`, 'i')) || []).slice(2).find(v => v !== undefined);
+    const abs = href => { try { return new URL(href.replace(/&amp;/g, '&'), base).href; } catch { return null; } };
     for (const tag of html.match(/<link\b[^>]*>/gi) || []) {
-      const attr = name => (tag.match(new RegExp(`\\b${name}\\s*=\\s*("([^"]*)"|'([^']*)'|([^\\s>]+))`, 'i')) || []).slice(2).find(v => v !== undefined);
-      const rel = (attr('rel') || '').toLowerCase(), href = attr('href');
-      if (!href || !/icon/.test(rel) || /mask-icon/.test(rel) || /\.svg(\?|$)/i.test(href)) continue;
-      const size = Math.max(0, ...((attr('sizes') || '').match(/\d+/g) || []).map(Number));
-      let url; try { url = new URL(href.replace(/&amp;/g, '&'), base).href; } catch { continue; }
-      out.push({ url, rank: /apple-touch/.test(rel) ? 2000 + (size || 180) : size ? 1000 + size : 500 });
+      const rel = (attr(tag, 'rel') || '').toLowerCase(), url = abs(attr(tag, 'href') || '');
+      if (!url || !/icon/.test(rel) || /mask-icon/.test(rel)) continue;
+      out.push({ url, kind: /apple-touch/.test(rel) ? 'site-apple' : 'site-icon' });
     }
-    out.push({ url: new URL('/apple-touch-icon.png', base).href, rank: 400 });
-    return out.sort((a, b) => b.rank - a.rank).map(o => o.url);
+    out.push({ url: new URL('/apple-touch-icon.png', base).href, kind: 'site-apple' });
+    let n = 0;
+    for (const tag of html.match(/<img\b[^>]*>/gi) || []) {
+      if (!/logo|seal|crest|emblem/i.test(tag) || n >= 4) continue;
+      const src = attr(tag, 'src') || attr(tag, 'data-src'); const url = src && !src.startsWith('data:') && abs(src);
+      if (url) { out.push({ url, kind: 'site-logo' }); n++; }
+    }
+    return out;
   } catch { return []; }
 }
-const commonsUrl = file => `https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/${encodeURIComponent(file.replace(/ /g, '_'))}&width=256`;
+const commonsUrl = file => `https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/${encodeURIComponent(file.replace(/ /g, '_'))}&width=512`;
+const PROP = { P2910: 'commons-icon', P8972: 'commons-small-logo', P158: 'commons-seal', P94: 'commons-arms', P154: 'commons-logo' };
 
-// Layout and checks live in scripts/logo-layout.py (an app icon covers the whole disc; a transparent logo is
-// scaled so its farthest pixel sits just inside the circle). It refuses images under 32 px, blank or too
-// pale ones and, with strict on, wordmarks more than 2.4 times wider than tall (up to 3 times otherwise,
-// used only when nothing squarer exists). It prints the icon's own resolution, so the sharpest source wins.
-const convert = (src, target, strict) => +execFileSync('python3', ['-I', path.join(root, 'scripts/logo-layout.py'), src, target, strict ? 'strict' : 'lenient', String(SIZE), String(MIN)], { stdio: ['ignore', 'pipe', 'ignore'] }).toString().trim();
-// The chosen source file is kept (research/logo-sources/, ignored) so the layout can be redone without downloads.
-const rawDir = path.join(path.dirname(cachePath), 'logo-sources');
-fs.mkdirSync(rawDir, { recursive: true });
-if (process.argv.includes('--relayout')) {
-  let n = 0;
-  for (const r of mapped) {
-    const raw = path.join(rawDir, r.qid + '.bin'), entry = cache[r.qid];
-    if (!fs.existsSync(raw) || review[r.qid]?.reject) continue;
-    try { convert(raw, path.join(outDir, r.qid + '.png'), !entry?.wideFallback); n++; } catch { /* keep the old file */ }
+async function collectOne(q) {
+  const dir = path.join(candRoot, q), manPath = path.join(dir, 'manifest.json');
+  if (!has('--refresh') && fs.existsSync(manPath)) return;
+  fs.rmSync(dir, { recursive: true, force: true }); fs.mkdirSync(dir, { recursive: true });
+  const m = meta[q] || {}, fix = review[q] || {}, list = [];
+  if (fix.url) list.push({ url: fix.url, kind: 'review' });
+  if (m.website) {
+    list.push(...await homepage(m.website));
+    const domain = new URL(m.website).hostname.replace(/^www\./, '');
+    list.push({ url: `https://icons.duckduckgo.com/ip3/${domain}.ico`, kind: 'ddg' }, { url: `https://www.google.com/s2/favicons?domain=${domain}&sz=256`, kind: 'google' });
   }
-  console.log(`relaid ${n} icons`);
-}
-
-let fetched = 0, tried = 0;
-for (const r of mapped) {
-  const entry = cache[r.qid], target = path.join(outDir, r.qid + '.png'), fix = review[r.qid];
-  if (fix?.reject) { if (fs.existsSync(target)) fs.rmSync(target); entry.icon = null; entry.iconSource = 'rejected in review'; continue; }
-  const missing = !fs.existsSync(target);
-  const skippedNow = fix?.skip && entry.iconSource && fix.skip.some(part => entry.iconSource.includes(part));
-  if (process.argv.includes('--relayout') || !(refresh || skippedNow || (fix?.url && entry.iconSource !== fix.url) || (missing && (retryMissing || entry.icon === undefined)))) continue;
-  tried++;
-  const candidates = [];
-  if (fix?.url) candidates.push({ url: fix.url, ua: fix.url.includes('wikimedia.org') ? UA : BROWSER_UA });
-  const skipped = url => (fix?.skip || []).some(part => url.includes(part));
-  if (entry.website) {
-    entry.domain = new URL(entry.website).hostname.replace(/^www\./, '');
-    for (const url of await declaredIcons(entry.website)) candidates.push({ url });
-    candidates.push({ url: `https://icons.duckduckgo.com/ip3/${entry.domain}.ico` }, { url: `https://www.google.com/s2/favicons?domain=${entry.domain}&sz=128` });
-  }
-  for (const file of entry.commons || []) candidates.push({ url: commonsUrl(file), ua: UA });
-  // Last: the lead image of the English Wikipedia article, which for a university is usually its seal or
-  // logo (a drawing, .svg or .png; photographs are skipped).
-  if (entry.enwiki) {
-    if (entry.pageImage === undefined) {
-      try {
-        const res = await fetch('https://en.wikipedia.org/w/api.php?' + new URLSearchParams({ action: 'query', prop: 'pageimages', piprop: 'name', titles: entry.enwiki, redirects: '1', format: 'json' }), { headers: { 'User-Agent': UA }, signal: AbortSignal.timeout(20000) });
-        const pages = (await res.json()).query?.pages || {};
-        entry.pageImage = Object.values(pages)[0]?.pageimage || null;
-      } catch { entry.pageImage = null; }
+  for (const c of m.commons || []) list.push({ url: commonsUrl(c.file), kind: PROP[c.prop], file: c.file });
+  if (m.enwiki) {
+    if (m.pageImage === undefined) {
+      const res = await wm('https://en.wikipedia.org/w/api.php?' + new URLSearchParams({ action: 'query', prop: 'pageimages', piprop: 'name', titles: m.enwiki, redirects: '1', format: 'json' }));
+      try { m.pageImage = Object.values((await res.json()).query?.pages || {})[0]?.pageimage || null; } catch { m.pageImage = null; }
+      meta[q] = m;
     }
-    if (entry.pageImage && /\.(svg|png)$/i.test(entry.pageImage)) candidates.push({ url: `https://en.wikipedia.org/w/index.php?title=Special:Redirect/file/${encodeURIComponent(entry.pageImage)}&width=256`, ua: UA });
+    if (m.pageImage && /\.(svg|png)$/i.test(m.pageImage) && !(m.commons || []).some(c => c.file.replace(/ /g, '_') === m.pageImage)) list.push({ url: `https://en.wikipedia.org/w/index.php?title=Special:Redirect/file/${encodeURIComponent(m.pageImage)}&width=512`, kind: 'wikipedia-image' });
   }
-  const tmp = path.join(outDir, r.qid + '.raw'), out = path.join(outDir, r.qid + '.new.png');
-  // Sharpness first: the first square source (in the order above) that is at least 120 px on its own wins;
-  // otherwise the sharpest square source; otherwise a moderately wide one.
-  let source = null, best = null, fallback = null;
-  for (const c of candidates) {
-    if (skipped(c.url)) continue;
-    const raw = await download(c.url, c.ua);
-    if (!raw) continue;
-    fs.writeFileSync(tmp, raw);
-    try {
-      const native = convert(tmp, out, true);
-      if (native >= SHARP) { source = c.url; best = null; break; }
-      if (!best || native > best.native) best = { raw, url: c.url, native };
-      continue;
-    } catch { /* not square or unusable */ }
-    if (!fallback) { try { const native = convert(tmp, out, false); fallback = { raw, url: c.url, native }; } catch { /* unusable */ } }
+  const seen = new Set(), manifest = [];
+  for (const c of list) {
+    if (seen.has(c.url)) continue; seen.add(c.url);
+    const got = await download(c.url, /wikimedia|wikipedia/.test(c.url) ? UA : BROWSER_UA);
+    const entry = { ...c, k: manifest.length, file: null };
+    if (got) { entry.file = `${entry.k}.${got.ext}`; fs.writeFileSync(path.join(dir, entry.file), got.buf); }
+    manifest.push(entry);
   }
-  const pick = source ? null : best || fallback;
-  if (pick) { fs.writeFileSync(tmp, pick.raw); try { convert(tmp, out, pick === best); source = pick.url; } catch { /* none */ } }
-  if (source) { fs.copyFileSync(tmp, path.join(rawDir, r.qid + '.bin')); entry.wideFallback = pick === fallback && !!pick; }
-  fs.rmSync(tmp, { force: true });
-  if (source) { fs.renameSync(out, target); entry.icon = r.qid + '.png'; entry.iconSource = source; fetched++; }
-  else { fs.rmSync(out, { force: true }); if (missing) { entry.icon = null; entry.iconSource = null; } }
-  save();
-  if (tried % 20 === 0) console.log(`  ${tried} tried, ${fetched} fetched`);
-  await sleep(200);
+  fs.writeFileSync(manPath, JSON.stringify(manifest, null, 1));
 }
-const have = mapped.filter(r => fs.existsSync(path.join(outDir, r.qid + '.png')));
-if (staging) { console.log(`staged: ${have.length} of ${mapped.length} mapped institutions in ${outDir} (${fetched} fetched this run)`); process.exit(0); }
-for (const r of data.records) r.logo = r.qid && fs.existsSync(path.join(outDir, r.qid + '.png')) ? `assets/logos/${r.qid}.png` : null;
-data.metadata.logos = { note: 'Icons declared by each institution\'s official website (Wikidata P856), or the logo files Wikidata records for it, for identification only.', count: have.length };
-fs.writeFileSync(locPath, JSON.stringify(data, null, 1) + '\n');
-console.log(`logos: ${have.length} of ${mapped.length} mapped institutions (${fetched} fetched this run)`);
+// Draw every collected SVG at 512 px (longest side) on a transparent background with the pre-installed Chromium.
+async function renderSvgs() {
+  const jobs = [];
+  for (const q of qids) for (const e of readJson(path.join(candRoot, q, 'manifest.json'), [])) if (e.file?.endsWith('.svg') && !fs.existsSync(path.join(candRoot, q, e.k + '.png'))) jobs.push(path.join(candRoot, q, e.file));
+  if (!jobs.length) return;
+  const req = createRequire('/usr/lib/node_modules/');
+  const pw = req('playwright');
+  const browser = await pw.chromium.launch({ executablePath: process.env.CHROMIUM || '/opt/pw-browsers/chromium' }).catch(() => pw.chromium.launch());
+  const page = await browser.newPage();
+  for (const f of jobs) {
+    try {
+      const uri = 'data:image/svg+xml;base64,' + fs.readFileSync(f).toString('base64');
+      await page.setContent(`<html><body style="margin:0;background:transparent"><img id="i" src="${uri}"></body></html>`);
+      const box = await page.evaluate(() => new Promise(done => { const i = document.getElementById('i'); const go = () => { const w = i.naturalWidth || 300, h = i.naturalHeight || 150, s = 512 / Math.max(w, h); i.style.width = w * s + 'px'; i.style.height = h * s + 'px'; done({ w: w * s, h: h * s }); }; i.complete ? go() : (i.onload = go, i.onerror = () => done(null)); }));
+      if (box) await (await page.$('#i')).screenshot({ path: f.replace(/\.svg$/, '.png'), omitBackground: true });
+    } catch { /* unreadable SVG */ }
+  }
+  await browser.close();
+}
+
+const KIND_RANK = { review: 1.2, 'site-apple': 1, 'site-icon': 1, 'site-logo': 1, 'commons-icon': 1, 'commons-small-logo': 1, 'commons-seal': 1, 'commons-arms': 1, 'commons-logo': 1, 'wikipedia-image': 0.8, ddg: 0.4, google: 0.4 };
+function choose() {
+  fs.mkdirSync(outDir, { recursive: true });
+  const tmp = path.join(candRoot, '.layout.png'), choices = {};
+  let n = 0;
+  for (const q of qids) {
+    const fix = review[q] || {}, target = path.join(outDir, q + '.png');
+    if (fix.reject) { fs.rmSync(target, { force: true }); choices[q] = { reason: 'rejected in review' }; continue; }
+    const man = readJson(path.join(candRoot, q, 'manifest.json'), []);
+    let best = null; const tried = [];
+    for (const e of man) {
+      if (!e.file || (fix.skip || []).some(part => e.url.includes(part))) continue;
+      const file = path.join(candRoot, q, e.file.endsWith('.svg') ? e.k + '.png' : e.file);
+      if (!fs.existsSync(file)) continue;
+      let r;
+      try { r = JSON.parse(execFileSync('python3', ['-I', path.join(root, 'scripts/logo-layout.py'), file, tmp, String(SIZE)], { stdio: ['ignore', 'pipe', 'pipe'] }).toString()); }
+      catch (err) { tried.push({ k: e.k, kind: e.kind, failed: String(err.stderr || '').trim().split('\n').pop() }); continue; }
+      // Fill counts most, then sharpness (the logo's own pixels; 150 or more is sharp at the largest map size),
+      // then the source: the institution's own files before the favicon services.
+      const score = 3 * Math.min(r.fill / 0.85, 1) + 2 * Math.min(r.native / 150, 1) + (KIND_RANK[e.kind] ?? 0.5) + (fix.pick && e.url.includes(fix.pick) ? 100 : 0);
+      tried.push({ k: e.k, kind: e.kind, ...r, score: +score.toFixed(2) });
+      if (!best || score > best.score) { best = { score, e, r }; fs.copyFileSync(tmp, target + '.tmp'); }
+    }
+    if (best) { fs.renameSync(target + '.tmp', target); n++; choices[q] = { url: best.e.url, kind: best.e.kind, ...best.r, tried }; }
+    else { fs.rmSync(target, { force: true }); choices[q] = { reason: 'no usable candidate', tried }; }
+  }
+  fs.rmSync(tmp, { force: true });
+  fs.writeFileSync(path.join(root, 'research/logo-choices.json'), JSON.stringify(choices, null, 1));
+  console.log(`chose ${n} logos for ${qids.length} mapped institutions in ${outDir}`);
+  if (staging) return;
+  for (const r of data.records) r.logo = r.qid && fs.existsSync(path.join(outDir, r.qid + '.png')) ? `assets/logos/${r.qid}.png` : null;
+  data.metadata.logos = { note: 'Logos from each institution\'s official website (Wikidata P856) or the logo, seal and coat-of-arms files Wikidata records for it, for identification only.', count: n };
+  fs.writeFileSync(locPath, JSON.stringify(data, null, 1) + '\n');
+}
+
+if (has('--collect')) {
+  await wikidataMeta();
+  let done = 0; const queue = [...qids];
+  await Promise.all(Array.from({ length: 4 }, async () => { while (queue.length) { const q = queue.shift(); await collectOne(q); if (++done % 25 === 0) { saveMeta(); console.log(`  ${done} of ${qids.length} collected`); } } }));
+  saveMeta();
+  await renderSvgs();
+  console.log(`collected candidates for ${qids.length} institutions in ${candRoot}`);
+}
+if (has('--choose')) choose();
+if (!has('--collect') && !has('--choose')) console.log('Give --collect, --choose or both.');
