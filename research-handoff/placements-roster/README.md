@@ -4,6 +4,8 @@ All 26 chunks of the first-job pass for the 1,007 people in `data/faculty-roster
 
 The same tools now also run the OM List people's last batches (`research/placements-omlist/`, with `dir: "placements-omlist"` and `FJ_DIR=placements-omlist`) and the re-check of unresolved roster rows (`tools/roster-recheck.js`).
 
+Second pass (17 October 2026): all 1,736 unresolved reviews were triaged and re-researched in 40 chunks with `tools/second-pass-chains.js` (folder `research/second-pass/`, `FJ_DIR=second-pass`), each verified, put through `tools/integrator-check.js` and merged; two consistency passes then re-read the published rows (`tools/predegree-title-consistency.js`, `tools/degree-year-consistency.js`), with corrections merged by `tools/merge-ledger-corrections.sh`. Every proposal from these runs is merged into the public ledger, so nothing unmerged is held here; the ledger rows carry the reasons, sources and "Integrator", "Consistency check" and "Degree-year check" notes.
+
 ## What is here
 
 - `tools/roster-first-jobs-chains.js`: the workflow script (research brief, adversarial verification brief, chain runner). Arguments: `chains` (lists of chunk numbers run one after another), `verifyOnly` (chunks whose draft is complete), `continueChunks` (partial drafts to continue), `date`, and `dir` (`placements-roster` by default; `placements-omlist` runs the OM List people's chunks from `node scripts/write-placement-chunks.mjs --source omlist`). The scan, the institution-name step and the merge routine read `FJ_DIR` (same values) to pick the folder.
