@@ -1,4 +1,4 @@
-// Download an identifying icon (128 px PNG) for each mapped institution into assets/logos/<qid>.png.
+// Download an identifying icon (160 px PNG) for each mapped institution into assets/logos/<qid>.png.
 // Official websites come from Wikidata (P856) in batches. Icon sources, best first: the icons the
 // homepage itself declares (apple-touch-icon, then sized icons, then the plain favicon), the site's
 // /apple-touch-icon.png, DuckDuckGo's and Google's favicon services, and finally the logo files that
@@ -22,7 +22,7 @@ const outDir = arg('--out') ? path.resolve(arg('--out')) : defaultDir, staging =
 const cachePath = arg('--cache') ? path.resolve(arg('--cache')) : path.join(root, 'research/logo-cache.json');
 const UA = 'opsphdplacements-research/1.0 (https://github.com/konstantinosStouras/opsphdplacements)';
 const BROWSER_UA = 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36';
-const SIZE = 128, MIN = 32, SHARP = 120;
+const SIZE = 160, MIN = 32, SHARP = 120;
 const refresh = process.argv.includes('--refresh'), retryMissing = process.argv.includes('--missing');
 const sleep = ms => new Promise(r => setTimeout(r, ms));
 fs.mkdirSync(outDir, { recursive: true });
@@ -89,41 +89,22 @@ async function declaredIcons(website) {
 }
 const commonsUrl = file => `https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/${encodeURIComponent(file.replace(/ /g, '_'))}&width=256`;
 
-// Largest frame of an .ico, cropped to its visible content, scaled to fit 96px on a transparent canvas.
-// Rejects images under 32px (blurry once enlarged), nearly empty ones and ones too light to see on white.
-// With strict on, a wide wordmark (more than 2.4 times wider than tall) is refused, because it shrinks to
-// a thin line in a circle; one up to 3 times as wide is used only when no source gives a squarer icon,
-// and a wider one never (the initials read better).
-// Prints the icon's own resolution after cropping (the longer side, in pixels), so the sharpest source can be chosen.
-function convert(src, target, strict) {
-  return +execFileSync('python3', ['-I', '-c', `
-import sys
-from PIL import Image
-im = Image.open(sys.argv[1])
-if getattr(im, 'ico', None):
-    sizes = sorted(im.ico.sizes(), key=lambda s: s[0]*s[1])
-    im = im.ico.getimage(sizes[-1])
-im = im.convert('RGBA')
-if im.width < ${MIN} or im.height < ${MIN}: raise SystemExit('too small')
-box = im.getchannel('A').point(lambda a: 255 if a > 16 else 0).getbbox()
-if not box: raise SystemExit('empty')
-im = im.crop(box)
-if im.width < ${MIN * 0.75} and im.height < ${MIN * 0.75}: raise SystemExit('too small after crop')
-if max(im.width, im.height) > (2.4 if sys.argv[3] == 'strict' else 3.0) * min(im.width, im.height): raise SystemExit('wide')
-colours = im.convert('RGB').getcolors(1 << 16)
-if colours is not None and len(colours) < 2: raise SystemExit('blank')
-# The map draws icons on a white disc: an icon with almost no pixels darker than pale grey would vanish.
-px = list(zip(im.convert('L').getdata(), im.getchannel('A').getdata()))
-solid = [l for l, a in px if a > 128]
-if not solid or sum(1 for l in solid if l < 170) < 0.03 * len(solid): raise SystemExit('too light for a white disc')
-native = max(im.width, im.height)
-scale = ${SIZE} / native
-im = im.resize((max(1, round(im.width * scale)), max(1, round(im.height * scale))), Image.LANCZOS)
-canvas = Image.new('RGBA', (${SIZE}, ${SIZE}), (0, 0, 0, 0))
-canvas.paste(im, ((${SIZE} - im.width) // 2, (${SIZE} - im.height) // 2), im)
-canvas.quantize(colors=256, method=Image.Quantize.FASTOCTREE).save(sys.argv[2], optimize=True)
-print(native)
-`, src, target, strict ? 'strict' : 'lenient'], { stdio: ['ignore', 'pipe', 'ignore'] }).toString().trim();
+// Layout and checks live in scripts/logo-layout.py (an app icon covers the whole disc; a transparent logo is
+// scaled so its farthest pixel sits just inside the circle). It refuses images under 32 px, blank or too
+// pale ones and, with strict on, wordmarks more than 2.4 times wider than tall (up to 3 times otherwise,
+// used only when nothing squarer exists). It prints the icon's own resolution, so the sharpest source wins.
+const convert = (src, target, strict) => +execFileSync('python3', ['-I', path.join(root, 'scripts/logo-layout.py'), src, target, strict ? 'strict' : 'lenient', String(SIZE), String(MIN)], { stdio: ['ignore', 'pipe', 'ignore'] }).toString().trim();
+// The chosen source file is kept (research/logo-sources/, ignored) so the layout can be redone without downloads.
+const rawDir = path.join(path.dirname(cachePath), 'logo-sources');
+fs.mkdirSync(rawDir, { recursive: true });
+if (process.argv.includes('--relayout')) {
+  let n = 0;
+  for (const r of mapped) {
+    const raw = path.join(rawDir, r.qid + '.bin'), entry = cache[r.qid];
+    if (!fs.existsSync(raw) || review[r.qid]?.reject) continue;
+    try { convert(raw, path.join(outDir, r.qid + '.png'), !entry?.wideFallback); n++; } catch { /* keep the old file */ }
+  }
+  console.log(`relaid ${n} icons`);
 }
 
 let fetched = 0, tried = 0;
@@ -132,7 +113,7 @@ for (const r of mapped) {
   if (fix?.reject) { if (fs.existsSync(target)) fs.rmSync(target); entry.icon = null; entry.iconSource = 'rejected in review'; continue; }
   const missing = !fs.existsSync(target);
   const skippedNow = fix?.skip && entry.iconSource && fix.skip.some(part => entry.iconSource.includes(part));
-  if (!(refresh || skippedNow || (fix?.url && entry.iconSource !== fix.url) || (missing && (retryMissing || entry.icon === undefined)))) continue;
+  if (process.argv.includes('--relayout') || !(refresh || skippedNow || (fix?.url && entry.iconSource !== fix.url) || (missing && (retryMissing || entry.icon === undefined)))) continue;
   tried++;
   const candidates = [];
   if (fix?.url) candidates.push({ url: fix.url, ua: fix.url.includes('wikimedia.org') ? UA : BROWSER_UA });
@@ -174,6 +155,7 @@ for (const r of mapped) {
   }
   const pick = source ? null : best || fallback;
   if (pick) { fs.writeFileSync(tmp, pick.raw); try { convert(tmp, out, pick === best); source = pick.url; } catch { /* none */ } }
+  if (source) { fs.copyFileSync(tmp, path.join(rawDir, r.qid + '.bin')); entry.wideFallback = pick === fallback && !!pick; }
   fs.rmSync(tmp, { force: true });
   if (source) { fs.renameSync(out, target); entry.icon = r.qid + '.png'; entry.iconSource = source; fetched++; }
   else { fs.rmSync(out, { force: true }); if (missing) { entry.icon = null; entry.iconSource = null; } }
