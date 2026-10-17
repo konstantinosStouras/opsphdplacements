@@ -1,7 +1,8 @@
 # Integrator scan of a first-job proposal: structure problems and rows worth a human look.
-import json, sys, re, collections
+import json, sys, re, collections, os
 n = sys.argv[1]
-base = '/home/user/opsphdplacements/research/placements-roster'
+# FJ_DIR=placements-omlist scans the OM List folder; the default is the faculty-page folder.
+base = '/home/user/opsphdplacements/research/' + os.environ.get('FJ_DIR', 'placements-roster')
 rows = json.load(open(f'{base}/proposal-{n}.json'))
 chunk = {p['facultyId']: p for p in json.load(open(f'{base}/chunk-{n}.json'))['people']}
 print(n, len(rows), 'rows', dict(collections.Counter(r['status'] for r in rows)))

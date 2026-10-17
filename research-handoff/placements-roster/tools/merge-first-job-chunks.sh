@@ -3,7 +3,9 @@
 set -e
 cd /home/user/opsphdplacements
 inreview="$1"; shift
-files=(); for n in "$@"; do files+=("research/placements-roster/proposal-$n.json"); done
+# FJ_DIR=placements-omlist merges OM List proposals; the default is the faculty-page folder.
+dir="${FJ_DIR:-placements-roster}"; who=$([ "$dir" = placements-omlist ] && echo "OM List people" || echo "faculty-page people")
+files=(); for n in "$@"; do files+=("research/$dir/proposal-$n.json"); done
 node scripts/merge-placement-research.mjs "${files[@]}"
 node scripts/build-institutions.mjs | tail -1
 node scripts/build-entities.mjs | tail -1
@@ -14,7 +16,7 @@ node scripts/build.mjs | tail -1
 if [ -n "$inreview" ]; then node scripts/update-roster-notes.mjs --first-job-in-review "$inreview" | head -1; else node scripts/update-roster-notes.mjs | head -1; fi
 git add data/placements.json data/research-status.json data/institutions.json data/employers.json data/entities.json RESEARCH-STATUS.md TODO.md PAUSED-HANDOFF.md DATA-PROVENANCE.md
 git commit -q -F - <<MSG
-Merge first-job research for faculty-page people, chunk(s) $* (verified by an adversarial second reviewer before merging)
+Merge first-job research for $who, chunk(s) $* (verified by an adversarial second reviewer before merging)
 
 Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
 Claude-Session: https://claude.ai/code/session_01PUoaBtan3V6ye4Pv3sNgDq

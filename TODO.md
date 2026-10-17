@@ -8,7 +8,7 @@ See [RESEARCH-STATUS.md](RESEARCH-STATUS.md) for generated counts. This checklis
 
 Position after the sixth 16 October 2026 integration (published ledger): 863 verified, 1,145 unresolved, 140 pending and 1 not-yet-completed PhD, of 2,149. Remaining first-pass reviews by original shard (faculty index modulo 3): **A 140, B 0, C 0**. Next concrete item: finish shard A's 140 in batches of about 40 per agent with at most three agents per session, then start a second pass on the unresolved cases whose reasons name a blocked page (a human browser can open several).
 
-- [ ] Individually review every pending imported profile (140 left; all in shard A). Do not bulk-label a retrieval as a review.
+- [ ] Individually review every pending imported profile (140 left; all in shard A). Do not bulk-label a retrieval as a review. In progress since 17 October 2026: the 140 are queued as `research/placements-omlist/chunk-1.json` to `chunk-4.json` and run through the research-then-verify workflow; merge each `proposal-N.json` with `FJ_DIR=placements-omlist` (see WORKFLOW.md).
 - [ ] Finish the audit of destination-only placement tables for omitted postdocs and earlier industry jobs; correct or downgrade unsupported first-job claims.
 - [ ] Revisit unresolved cases using the specific gap recorded in the ledger. Separate ambiguous within-year chronology, missing degree completion, wrong-person matches and inaccessible evidence.
 - [ ] Preserve independent field-level sources for degree dates, degree institutions, employer, role and job dates; older first-placement records often have a shared source list and review date.
