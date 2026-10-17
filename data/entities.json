@@ -13,8 +13,8 @@
   ],
   "definition": "One record per organisation that appears in either database or the program register: the universities with operations departments (Operations Academia directory), the PhD institutions and first employers of the people in the OM List import, and the registered doctoral programs. Keyed by Wikidata item when known, otherwise by name. Parts that a source does not supply are null; nothing is inferred across sources. Where two source rows land on one entity, both rows stay listed under it and their figures are added.",
   "counts": {
-   "entities": 1212,
-   "withWikidata": 791,
+   "entities": 1211,
+   "withWikidata": 792,
    "phdInstitutions": 443,
    "directoryUniversities": 589,
    "firstEmployers": 610,
@@ -18857,7 +18857,7 @@
      {
       "source": "employers",
       "employer": "University of Illinois at Chicago",
-      "match": "exact"
+      "match": "wikidata"
      }
     ],
     "conflicts": []
@@ -19586,7 +19586,7 @@
      {
       "source": "employers",
       "employer": "WHU – Otto Beisheim School of Management",
-      "match": "exact"
+      "match": "wikidata"
      }
     ],
     "conflicts": []
@@ -28770,7 +28770,7 @@
      {
       "source": "employers",
       "employer": "Syracuse University",
-      "match": "exact"
+      "match": "wikidata"
      }
     ],
     "conflicts": []
@@ -33009,7 +33009,7 @@
      {
       "source": "employers",
       "employer": "Stevens Institute of Technology",
-      "match": "exact"
+      "match": "wikidata"
      }
     ],
     "conflicts": []
@@ -50710,7 +50710,8 @@
    "name": "TU Dresden",
    "aliases": [
     "TU Dresden",
-    "Technical University of Dresden"
+    "Technical University of Dresden",
+    "Technische Universität Dresden"
    ],
    "country": "Germany",
    "coords": [
@@ -50719,7 +50720,8 @@
    ],
    "logo": null,
    "roles": [
-    "phd-institution"
+    "phd-institution",
+    "first-employer"
    ],
    "people": {
     "institutions": [
@@ -50757,7 +50759,42 @@
     ]
    },
    "directory": null,
-   "employer": null,
+   "employer": {
+    "employers": [
+     {
+      "employerId": "technische-universitat-dresden",
+      "name": "Technische Universität Dresden",
+      "spellings": [
+       "Technische Universität Dresden"
+      ],
+      "verifiedFirstJobs": 1
+     }
+    ],
+    "verifiedFirstJobs": 1,
+    "firstCohort": 2009,
+    "lastCohort": 2009,
+    "firstJobTypes": {
+     "tenure-track": 0,
+     "postdoc": 1,
+     "other-academic": 0,
+     "industry": 0,
+     "government": 0,
+     "nonprofit": 0,
+     "unknown": 0
+    },
+    "sourceInstitutions": [
+     {
+      "institution": "Technical University of Dresden",
+      "count": 1
+     }
+    ],
+    "positions": [
+     {
+      "position": "Post-doc Research Fellow and Lecturer",
+      "count": 1
+     }
+    ]
+   },
    "programs": [],
    "sources": [
     {
@@ -50767,10 +50804,20 @@
     {
      "url": "https://www.wikidata.org/wiki/Q158158",
      "title": "Wikidata item"
+    },
+    {
+     "url": "data/placements.json",
+     "title": "Verified first-job records (people database)"
     }
    ],
    "review": {
-    "matches": [],
+    "matches": [
+     {
+      "source": "employers",
+      "employer": "Technische Universität Dresden",
+      "match": "wikidata"
+     }
+    ],
     "conflicts": []
    }
   },
@@ -83420,7 +83467,7 @@
     ],
     "positions": [
      {
-      "position": "Acting Assistant Professor of Operations Management",
+      "position": "Assistant Professor of Operations Management",
       "count": 1
      }
     ]
@@ -94400,14 +94447,17 @@
    }
   },
   {
-   "id": "name:salisbury-university",
-   "wikidata": null,
+   "id": "wd:Q7404818",
+   "wikidata": "Q7404818",
    "name": "Salisbury University",
    "aliases": [
     "Salisbury University"
    ],
-   "country": null,
-   "coords": null,
+   "country": "United States",
+   "coords": [
+    38.346,
+    -75.606
+   ],
    "logo": null,
    "roles": [
     "first-employer"
@@ -95675,69 +95725,6 @@
      {
       "position": "Postdoctoral Researcher",
       "count": 2
-     }
-    ]
-   },
-   "programs": [],
-   "sources": [
-    {
-     "url": "data/placements.json",
-     "title": "Verified first-job records (people database)"
-    }
-   ],
-   "review": {
-    "matches": [],
-    "conflicts": []
-   }
-  },
-  {
-   "id": "name:technische-universitat-dresden",
-   "wikidata": null,
-   "name": "Technische Universität Dresden",
-   "aliases": [
-    "Technische Universität Dresden"
-   ],
-   "country": null,
-   "coords": null,
-   "logo": null,
-   "roles": [
-    "first-employer"
-   ],
-   "people": null,
-   "directory": null,
-   "employer": {
-    "employers": [
-     {
-      "employerId": "technische-universitat-dresden",
-      "name": "Technische Universität Dresden",
-      "spellings": [
-       "Technische Universität Dresden"
-      ],
-      "verifiedFirstJobs": 1
-     }
-    ],
-    "verifiedFirstJobs": 1,
-    "firstCohort": 2009,
-    "lastCohort": 2009,
-    "firstJobTypes": {
-     "tenure-track": 0,
-     "postdoc": 1,
-     "other-academic": 0,
-     "industry": 0,
-     "government": 0,
-     "nonprofit": 0,
-     "unknown": 0
-    },
-    "sourceInstitutions": [
-     {
-      "institution": "Technical University of Dresden",
-      "count": 1
-     }
-    ],
-    "positions": [
-     {
-      "position": "Post-doc Research Fellow and Lecturer",
-      "count": 1
      }
     ]
    },
@@ -99311,7 +99298,7 @@
     ],
     "positions": [
      {
-      "position": "Instructor and Assistant Professor",
+      "position": "Assistant Professor of Business Administration",
       "count": 1
      }
     ]
