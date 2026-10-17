@@ -7,7 +7,8 @@ files=(); for n in "$@"; do files+=("research/placements-roster/proposal-$n.json
 node scripts/merge-placement-research.mjs "${files[@]}"
 node scripts/build-institutions.mjs | tail -1
 node scripts/build-entities.mjs | tail -1
-npm run check 2>&1 | grep -E "Error|error|ledger|placement" | head -6
+npm run check > /tmp/opsphd-check.log 2>&1 || { echo "CHECK FAILED:"; grep -E "Error" /tmp/opsphd-check.log | head -5; exit 1; }
+grep -E "ledger|placement" /tmp/opsphd-check.log | head -3
 node scripts/update-research-status.mjs
 node scripts/build.mjs | tail -1
 if [ -n "$inreview" ]; then node scripts/update-roster-notes.mjs --first-job-in-review "$inreview" | head -1; else node scripts/update-roster-notes.mjs | head -1; fi
