@@ -97,5 +97,37 @@ if (/Reviews merged so far \(as of [^)]*\): [^\n]*?unresolved\./.test(prov)) {
 }
 if (prov !== provBefore) fs.writeFileSync(provPath, prov);
 
+
+// First-job pass for the faculty-page people: position from the research ledger (counts by source) and the
+// chunk files under research/placements-roster/ (--first-job-in-review 7,8 names chunks launched without a saved row).
+{
+  const ledger = readJson('data/research-status.json');
+  const fp = ledger.metadata.bySource?.['faculty-page'];
+  if (fp) {
+    const flaggedFj = new Set(argv.flatMap((a, i) => (a === '--first-job-in-review' ? String(argv[i + 1] || '').split(',').filter(Boolean).map(Number) : [])));
+    const pendingIds = new Set(ledger.records.filter(r => r.source === 'faculty-page' && r.status === 'pending').map(r => r.facultyId));
+    const fdir = path.join(root, 'research', 'placements-roster');
+    const fMerged = [], fInFlight = [], fQueued = []; let fLeft = 0;
+    if (fs.existsSync(fdir)) for (const f of fs.readdirSync(fdir)) {
+      const m = /^chunk-(\d+)\.json$/.exec(f); if (!m) continue;
+      const n = Number(m[1]); const people = JSON.parse(fs.readFileSync(path.join(fdir, f), 'utf8')).people || [];
+      const open = people.filter(p => pendingIds.has(p.facultyId));
+      if (open.length === 0) fMerged.push(n);
+      else if (flaggedFj.has(n) || fs.existsSync(path.join(fdir, `proposal-${n}.json`))) fInFlight.push(n);
+      else { fQueued.push(n); fLeft += open.length; }
+    }
+    const c = fp.counts || {};
+    const reviewedFj = fp.total - (c.pending || 0);
+    const whenFj = new Date(ledger.metadata.updatedAt || updated).toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC' });
+    const sentence = `First-job pass position (last updated ${whenFj}): ${fmt(reviewedFj)} of ${fmt(fp.total)} faculty-page people researched (${fmt(c.verified)} verified first jobs, ${fmt(c.unresolved)} unresolved, ${fmt(c['not-yet-completed-phd'])} without a completed doctorate); ${fMerged.length ? `chunks ${ranges(fMerged)} merged` : 'no chunk merged yet'}; ${fInFlight.length ? `chunks ${ranges(fInFlight)} in review` : 'no chunk in review'}; ${fmt(fLeft)} people still queued.`;
+    for (const [file, pattern] of [['TODO.md', /(Position: see RESEARCH-STATUS\.md \(ledger counts by source\) and PAUSED-HANDOFF\.md\.|First-job pass position \(last updated [^)]*\): [^\n]*?people still queued\.)/], ['PAUSED-HANDOFF.md', /(First-job pass position: see the "faculty-page" counts in RESEARCH-STATUS\.md \(regenerated after every merge\)\.|First-job pass position \(last updated [^)]*\): [^\n]*?people still queued\.)/]]) {
+      const p = path.join(root, file); const before = fs.readFileSync(p, 'utf8');
+      if (!pattern.test(before)) { console.log(`${file}: first-job position sentence not found; add it by hand`); continue; }
+      const after = before.replace(pattern, sentence); if (after !== before) fs.writeFileSync(p, after);
+    }
+    console.log(`first-job notes: ${sentence}`);
+  }
+}
+
 console.log(`roster notes: ${fmt(counts.reviewed)} of ${fmt(counts.people)} reviewed; merged chunks ${ranges(merged)}; in review ${inFlight.length ? ranges(inFlight) : 'none'}; ${fmt(left)} people queued` +
   ` (${[todoChanged && 'TODO.md', handoffChanged && 'PAUSED-HANDOFF.md', prov !== provBefore && 'DATA-PROVENANCE.md'].filter(Boolean).join(', ') || 'no guide changed'})`);
