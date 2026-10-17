@@ -1,4 +1,4 @@
-// Look up approximate locations for the PhD-granting institutions in data/faculty.json using Wikidata.
+// Look up approximate locations for the PhD-granting institutions in data/faculty.json and data/faculty-roster-people.json using Wikidata.
 // Output: data/institution-locations.json. Every coordinate keeps its Wikidata ID and description so a
 // reviewer can check the match. Names that cannot be matched with confidence stay unmapped (null).
 // Usage: node scripts/geocode-institutions.mjs            PhD institutions -> data/institution-locations.json
@@ -34,7 +34,7 @@ async function api(params) {
 const placements = JSON.parse(fs.readFileSync(path.join(root, 'data/placements.json'), 'utf8')).records;
 const byId = new Map(placements.map(p => [p.facultyId, p]));
 // Institutions use the verified PhD institution where a review corrected the import, matching the site's index.
-const rows = mode === 'employers' ? placements : mode === 'universities' ? JSON.parse(fs.readFileSync(path.join(root, 'data/universities.json'), 'utf8')).records : JSON.parse(fs.readFileSync(path.join(root, 'data/faculty.json'), 'utf8')).records.map(f => ({ ...f, phdInstitution: byId.get(f.id)?.phdInstitution || f.phdInstitution }));
+const rows = mode === 'employers' ? placements : mode === 'universities' ? JSON.parse(fs.readFileSync(path.join(root, 'data/universities.json'), 'utf8')).records : [...JSON.parse(fs.readFileSync(path.join(root, 'data/faculty.json'), 'utf8')).records, ...(fs.existsSync(path.join(root, 'data/faculty-roster-people.json')) ? JSON.parse(fs.readFileSync(path.join(root, 'data/faculty-roster-people.json'), 'utf8')).records : [])].map(f => ({ ...f, phdInstitution: byId.get(f.id)?.phdInstitution || f.phdInstitution }));
 const field = { employers: 'employer', universities: 'name', institutions: 'phdInstitution' }[mode];
 const counts = new Map();
 for (const f of rows) if (f[field]) counts.set(f[field], (counts.get(f[field]) || 0) + 1);

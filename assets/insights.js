@@ -18,7 +18,8 @@ export function coverageLede(idx) {
   const years = idx.people.map(p => p.phdYear).filter(Boolean);
   const verified = idx.people.filter(p => p.placement).length, unresolved = idx.people.filter(p => p.status === 'unresolved').length;
   const pending = idx.people.length - verified - unresolved;
-  return `${fmt(inst.size)} PhD-granting institutions${countries.size ? ` in ${countries.size} countries` : ''} appear in the dataset: ${fmt(idx.people.length)} people listed in the OM List faculty directory, from the class of ${Math.min(...years)} to the class of ${Math.max(...years)}. ${fmt(verified)} of them have a verified first job after the PhD; ${fmt(unresolved)} were researched without a firm answer, and ${fmt(pending)} have not been reviewed yet or have not completed the doctorate. These are directory members, not every graduate of each program.`;
+  const fromPages = idx.people.filter(p => p.source === 'faculty-page').length;
+  return `${fmt(inst.size)} PhD-granting institutions${countries.size ? ` in ${countries.size} countries` : ''} appear in the dataset: ${fmt(idx.people.length)} people, ${fmt(idx.people.length - fromPages)} listed in the OM List faculty directory and ${fmt(fromPages)} found on the faculty pages linked from the universities database, from the class of ${Math.min(...years)} to the class of ${Math.max(...years)}. ${fmt(verified)} of them have a verified first job after the PhD; ${fmt(unresolved)} were researched without a firm answer, and ${fmt(pending)} have not been reviewed yet or have not completed the doctorate. These are directory members, not every graduate of each program.`;
 }
 
 /** Coverage by year: one row per PhD institution, one circle per graduating class. */

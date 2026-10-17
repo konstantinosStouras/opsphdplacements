@@ -7,6 +7,7 @@ import path from 'node:path';
 const root = path.resolve(import.meta.dirname, '..');
 const read = f => JSON.parse(fs.readFileSync(path.join(root, f), 'utf8'));
 const faculty = read('data/faculty.json'), placements = read('data/placements.json'), status = read('data/research-status.json');
+const rosterPeople = fs.existsSync(path.join(root, 'data/faculty-roster-people.json')) ? read('data/faculty-roster-people.json').records : [];
 const locations = fs.existsSync(path.join(root, 'data/institution-locations.json')) ? read('data/institution-locations.json').records : [];
 const employerLocations = fs.existsSync(path.join(root, 'data/employer-locations.json')) ? read('data/employer-locations.json').records : [];
 const locByName = new Map(locations.map(r => [r.institution, r])), empLocByName = new Map(employerLocations.map(r => [r.employer, r]));
@@ -29,15 +30,15 @@ const spellingGroups = names => {
 const firstLocation = (names, byName) => names.map(n => byName.get(n)).find(l => l?.qid) || names.map(n => byName.get(n)).find(Boolean) || null;
 
 // People with the verified PhD institution and year where a review corrected the import.
-const people = faculty.records.map(f => { const p = placementById.get(f.id); return { ...f, phdInstitution: p?.phdInstitution || f.phdInstitution, phdYear: p?.phdYear ?? f.phdYear, status: statusById.get(f.id) || 'pending', placement: p || null }; });
+const people = [...faculty.records, ...rosterPeople].map(f => { const p = placementById.get(f.id); return { ...f, phdInstitution: p?.phdInstitution || f.phdInstitution, phdYear: p?.phdYear ?? f.phdYear, status: statusById.get(f.id) || 'pending', placement: p || null }; });
 const institutionNames = spellingGroups(people.map(p => p.phdInstitution).filter(Boolean)), employerNames = spellingGroups(people.filter(p => p.placement).map(p => p.placement.employer));
 
 const institutions = {};
 for (const p of people) {
   if (!p.phdInstitution) continue;
   const name = institutionNames.canon(p.phdInstitution);
-  const r = (institutions[name] ||= { name, people: 0, verified: 0, unresolved: 0, pending: 0, notYetCompleted: 0, years: [], categories: Object.fromEntries(CATEGORIES.map(c => [c, 0])), employers: {} });
-  r.people++;
+  const r = (institutions[name] ||= { name, people: 0, omList: 0, facultyPage: 0, verified: 0, unresolved: 0, pending: 0, notYetCompleted: 0, years: [], categories: Object.fromEntries(CATEGORIES.map(c => [c, 0])), employers: {} });
+  r.people++; if (p.source === 'faculty-page') r.facultyPage++; else r.omList++;
   if (p.placement) { const em = employerNames.canon(p.placement.employer); r.verified++; r.categories[p.placement.category]++; r.employers[em] = (r.employers[em] || 0) + 1; }
   else if (p.status === 'unresolved') r.unresolved++; else if (p.status === 'not-yet-completed-phd') r.notYetCompleted++; else r.pending++;
   if (p.phdYear) r.years.push(p.phdYear);
@@ -46,11 +47,11 @@ const institutionRecords = Object.values(institutions).sort((a, b) => b.people -
   const spellings = institutionNames.variants(r.name), loc = firstLocation(spellings || [r.name], locByName), years = [...new Set(r.years)].sort((a, b) => a - b);
   return {
     id: slug(r.name), name: r.name, spellings, country: loc?.country || null, wikidata: loc?.qid || null, coords: loc?.qid ? [loc.lat, loc.lon] : null, logo: loc?.logo || null,
-    people: r.people, verifiedFirstJobs: r.verified, unresolved: r.unresolved, pending: r.pending, notYetCompleted: r.notYetCompleted,
+    people: r.people, peopleBySource: { omList: r.omList, facultyPage: r.facultyPage }, verifiedFirstJobs: r.verified, unresolved: r.unresolved, pending: r.pending, notYetCompleted: r.notYetCompleted,
     firstYear: years[0] ?? null, lastYear: years[years.length - 1] ?? null, cohorts: years.length,
     firstJobTypes: r.categories,
     topFirstEmployers: Object.entries(r.employers).sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0])).slice(0, 10).map(([employer, count]) => ({ employer, count })),
-    sources: [{ url: 'https://omlist.edutool.org/phd/by-year.html', title: 'OM List, PhD graduates by year (directory listing of people, not a graduate roster)' }, ...(loc?.qid ? [{ url: `https://www.wikidata.org/wiki/${loc.qid}`, title: 'Wikidata item used for the location and country' }] : [])]
+    sources: [...(r.omList ? [{ url: 'https://omlist.edutool.org/phd/by-year.html', title: 'OM List, PhD graduates by year (directory listing of people, not a graduate roster)' }] : []), ...(r.facultyPage ? [{ url: 'data/faculty-roster-people.json', title: 'Operations faculty found on the faculty pages linked from the universities database, each with the page that states the doctorate' }] : []), ...(loc?.qid ? [{ url: `https://www.wikidata.org/wiki/${loc.qid}`, title: 'Wikidata item used for the location and country' }] : [])]
   };
 });
 
@@ -76,7 +77,7 @@ const employerRecords = Object.values(employers).sort((a, b) => b.hires - a.hire
   };
 });
 
-const write = (file, records, definition) => fs.writeFileSync(path.join(root, file), JSON.stringify({ version: 1, metadata: { generatedAt, derivedFrom: ['data/faculty.json', 'data/placements.json', 'data/research-status.json', 'data/institution-locations.json', 'data/employer-locations.json'], definition, recordCount: records.length }, records }, null, 1) + '\n');
-write('data/institutions.json', institutionRecords, 'One row per PhD-granting institution named in the OM List directory import. "people" counts directory members with that doctorate, not the program\'s graduates. First-job figures count verified first jobs only; unresolved and pending people are listed separately and never inferred. Names that differ only in accents, punctuation, spacing or case are one row; "spellings" lists the variants as written in the source files.');
+const write = (file, records, definition) => fs.writeFileSync(path.join(root, file), JSON.stringify({ version: 1, metadata: { generatedAt, derivedFrom: ['data/faculty.json', 'data/faculty-roster-people.json', 'data/placements.json', 'data/research-status.json', 'data/institution-locations.json', 'data/employer-locations.json'], definition, recordCount: records.length }, records }, null, 1) + '\n');
+write('data/institutions.json', institutionRecords, 'One row per PhD-granting institution named in the people database (the OM List import and the operations faculty found on the faculty pages linked from the universities database). "people" counts people in the database with that doctorate (peopleBySource splits them by source), not the program\'s graduates. First-job figures count verified first jobs only; unresolved and pending people are listed separately and never inferred. Names that differ only in accents, punctuation, spacing or case are one row; "spellings" lists the variants as written in the source files.');
 write('data/employers.json', employerRecords, 'One row per employer of a verified first job after the PhD among directory members. Counts are verified first jobs only, not the employer\'s total hiring. Names that differ only in accents, punctuation, spacing or case are one row; "spellings" lists the variants as written in the placement records.');
 console.log(`institutions: ${institutionRecords.length} (${institutionRecords.filter(r => r.coords).length} with a location), employers: ${employerRecords.length} (${employerRecords.filter(r => r.coords).length} with a location)`);
