@@ -386,7 +386,7 @@ def candidates(args):
     business = business_hosts_of(domains)
     groups = {}
     for fn in sorted(os.listdir(CDIR)):
-        if not (fn.startswith('hits-') or fn.startswith('lookup-')):
+        if not (fn.startswith('hits-') or fn.startswith('lookup-')) or not fn.endswith('.jsonl'):
             continue
         for line in open(os.path.join(CDIR, fn), encoding='utf-8'):
             h = json.loads(line)
