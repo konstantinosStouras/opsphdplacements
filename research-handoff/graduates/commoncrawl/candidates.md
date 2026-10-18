@@ -4,17 +4,20 @@ One line per address: institution | years captured | known page? | address. Acce
 
 - (unknown) | 2013–2013 (1) | known program-list | http://sites.uclouvain.be/dysco/Alumni/A
 - Aalborg University | 2019–2019 (1) | known not-a-list | https://www.alumni.aau.dk/nyheder/nyhed/phd-alumner-fortaeller-om-deres-karrierevej-uden-for-universitetsverdenen.cid316250
+- Aalborg University | 2021–2021 (1) | new | https://www.cmi.aau.dk/phd/phd-theses/re-engineering-governance--e-government-as-a-tool-for-decentralization--ghana-as-a-case-study.cid169102
+- Aalborg University | 2021–2021 (1) | new | https://www.cmi.aau.dk/phd/phd-theses/research-on-web-2.0-usage-for-knowledge-management-processes--the-case-of-ghana-cocoa-board--cocobod-.cid330711
 - Aalborg University | 2018–2018 (1) | known single-record | https://www.hcci.aau.dk/phd-theses/show/ph.d.-afhandling-ved-rikke-gaardboe--kritiske-succesfaktorer-for-business-intelligence-.cid361671
 - Aalborg University | 2017–2017 (1) | known not-a-list | http://www.phd.engineering.aau.dk/doctoral-dissertations/
 - Aristotle University of Thessaloniki | 2020–2020 (2) | new | https://meteo.geo.auth.gr/?account-dissertation-key-management
+- Arizona State University | 2021–2021 (1) | new | https://fengju.engineering.asu.edu/2021/04/feifan-successfully-defended-his-phd-dissertation-congratualtions-dr-wang/
 - Arizona State University | 2019–2020 (61) | known not-a-list | https://repository.asu.edu/collections/7?sub=Management&cont=Adame%2C+Elissa&type=Doctoral+Dissertation
 - Arizona State University | 2018–2018 (1) | known not-a-list | http://terrpress.personal.asu.edu/2017/11/learn-what-exactly-gurus-tend-to-be-telling-relating-to-groundwork-essay-or-dissertation/
-- Arizona State University | 2015–2017 (18) | known not-a-list | https://wpcarey.asu.edu/alumni | 28 pages below it
+- Arizona State University | 2015–2021 (19) | known not-a-list | https://wpcarey.asu.edu/alumni | 27 pages below it
 - Arizona State University | 2013–2014 (3) | known program-list | http://wpcarey.asu.edu/candidates-on-the-market
 - Arizona State University | 2013–2013 (2) | known program-list | http://wpcarey.asu.edu/management-degree/doctoral/alumni.cfm
 - Arizona State University | 2013–2013 (2) | known program-list | http://wpcarey.asu.edu/management-degree/doctoral/candidates.cfm
-- Arizona State University | 2013–2018 (8) | known program-list | http://wpcarey.asu.edu/management-degrees/alumni
-- Arizona State University | 2013–2018 (9) | known program-list | http://wpcarey.asu.edu/management-degrees/candidates
+- Arizona State University | 2013–2021 (9) | known program-list | http://wpcarey.asu.edu/management-degrees/alumni
+- Arizona State University | 2013–2021 (10) | known program-list | http://wpcarey.asu.edu/management-degrees/candidates
 - Arizona State University | 2019–2019 (3) | known not-a-list | https://wpcarey.asu.edu/news-releases/2010-10-04/school-recognized-impressive-job-placement
 - Arizona State University | 2020–2020 (1) | new | https://wpcarey.asu.edu/supply-chain-management-degrees/placement-data
 - Arizona State University | 2013–2013 (1) | known not-a-list | http://wpcarey.asu.edu/top/department_news_display.cfm?num=352&dept=Alumni
@@ -42,7 +45,7 @@ One line per address: institution | years captured | known page? | address. Acce
 - Boston University | 2019–2019 (2) | known not-a-list | http://www.bu.edu/today/2016/the-best-job-market-in-years-awaits-graduates/
 - Boston University | 2013–2015 (7) | known program-list | http://management.bu.edu/faculty-research/departments/operations/doctoral-graduates/
 - Brown University | 2013–2017 (7) | known not-a-list | http://brown.edu/academics/engineering/advanced-placement-and-transfer-credit
-- Brown University | 2020–2020 (1) | new | https://www.brown.edu/howard-foundation/content/14-can-project-be-continuation-my-dissertation-or-should-it-be-new-topic
+- Brown University | 2020–2021 (2) | new | https://www.brown.edu/howard-foundation/content/14-can-project-be-continuation-my-dissertation-or-should-it-be-new-topic
 - Brunel University | 2019–2019 (1) | known not-a-list | https://www.brunel.ac.uk/flood-and-coastal-engineering/why-study-flood-and-coastal-engineering-at-brunel/placements
 - California Institute of Technology | 2016–2017 (2) | known not-a-list | http://www.alumni.caltech.edu/class-notes/2015/7/16/clyde-zaidins-bs-62-ms-63-phd-67
 - California Institute of Technology | 2016–2018 (3) | known not-a-list | http://www.alumni.caltech.edu/class-notes/2015/7/23/ashwin-vasavada-phd-98
@@ -232,6 +235,7 @@ One line per address: institution | years captured | known page? | address. Acce
 - California Institute of Technology | 2013–2013 (2) | known not-a-list | http://www.hss.caltech.edu/jobmarket
 - California Institute of Technology | 2013–2013 (1) | known not-a-list | http://www.hss.caltech.edu/ss/phds/alumni
 - California Institute of Technology | 2019–2020 (3) | known not-a-list | http://hss.divisions.caltech.edu/academics/graduate-studies/job-market-candidates
+- California Institute of Technology | 2021–2021 (3) | new | https://murray.cds.caltech.edu/index.php?title=Special:UserLogin&returnto=Special%3ASearchByProperty%2FSource%2FPhD-20Dissertation%2C-20Caltech%2C-20Jul-201996&returntoquery=limit%3D100%26offset%3D0%26property%3DSource%26value%3DPhD-20Dissertation%252C-20Caltech%252C-20Jul-201996
 - California Institute of Technology | 2018–2018 (1) | known not-a-list | http://vigeland.paradise.caltech.edu/dissertations.html
 - California Institute of Technology | 2013–2013 (1) | known not-a-list | http://www.wordsmatter.caltech.edu/jobmarket
 - Carnegie Institute of Technology | 2013–2013 (1) | known not-a-list | http://www.cit.cmu.edu/current_students/graduates/phd_policies.html
@@ -259,18 +263,22 @@ One line per address: institution | years captured | known page? | address. Acce
 - Case Western Reserve University | 2020–2020 (1) | new | https://engineering.case.edu/centers/sdle/Graduate-Theses
 - Case Western Reserve University | 2017–2017 (1) | known not-a-list | http://sages.case.edu/2016-case-western-reserve-university-dissertation-boot-camp/
 - Case Western Reserve University | 2014–2016 (7) | known program-list | http://weatherhead.case.edu/degrees/doctorate/doctor-management/alumni | 15 pages below it
-- Case Western Reserve University | 2019–2019 (1) | known program-list | https://weatherhead.case.edu/degrees/doctorate/doctor-management/community/alumni | 22 pages below it
+- Case Western Reserve University | 2019–2021 (2) | known program-list | https://weatherhead.case.edu/degrees/doctorate/doctor-management/community/alumni | 22 pages below it
 - Case Western Reserve University | 2019–2020 (2) | known not-a-list | https://weatherhead.case.edu/degrees/doctorate/doctor-management/dissertations
-- Case Western Reserve University | 2014–2020 (14) | known not-a-list | http://weatherhead.case.edu/degrees/doctorate/phd-management/designing-sustainable-systems/alumni
-- Case Western Reserve University | 2020–2020 (1) | new | https://weatherhead.case.edu/degrees/doctorate/phd-management/designing-sustainable-systems/learning-community/alumni | 8 pages below it
+- Case Western Reserve University | 2014–2021 (15) | known not-a-list | http://weatherhead.case.edu/degrees/doctorate/phd-management/designing-sustainable-systems/alumni
+- Case Western Reserve University | 2020–2021 (2) | new | https://weatherhead.case.edu/degrees/doctorate/phd-management/designing-sustainable-systems/learning-community/alumni | 8 pages below it
 - Case Western Reserve University | 2013–2014 (6) | known not-a-list | http://weatherhead.case.edu/degrees/phd-management/designing-sustainable-systems/alumni
 - Case Western Reserve University | 2013–2013 (1) | known not-a-list | http://weatherhead.case.edu/support/honor-roll/doctoral-alumni
+- Christian-Albrechts-Universität Kiel | 2021–2021 (2) | new | http://www.bosch.zoologie.uni-kiel.de/wp-content/uploads/?dissertation-report-on-risk-management-in-banks
 - Christian-Albrechts-Universität Kiel | 2020–2020 (1) | new | https://www.techman.uni-kiel.de/en/team/alumni/dipl.-kfm.-jan-sternkopf/doctoral-seminars-examples
 - City University of Hong Kong | 2020–2020 (1) | new | https://scholars.cityu.edu.hk/en/persons/haolin-wang(3e7f7ee5-2535-438f-a3d7-39379e5c03c0)/theses.html
 - Clemson University | 2018–2018 (1) | known not-a-list | http://www.clemson.edu/business/chapman/where-are-they.html
 - Clemson University | 2019–2019 (1) | known not-a-list | https://tigerprints.clemson.edu/all_dissertations/ | 3 pages below it
 - Clemson University | 2018–2019 (3) | known not-a-list | https://tigerprints.clemson.edu/arv_dissertations/
 - Clemson University | 2019–2019 (1) | known not-a-list | https://tigerprints.clemson.edu/dissertations/
+- Clemson University | 2021–2021 (1) | new | https://tigerprints.clemson.edu/dissertations_athl_ldrshp/
+- Clemson University | 2021–2021 (1) | new | https://tigerprints.clemson.edu/dissertations_curr_instr/
+- Clemson University | 2021–2021 (1) | new | https://tigerprints.clemson.edu/dissertations_ed_leader_p12/
 - Clemson University | 2020–2020 (1) | new | https://tigerprints.clemson.edu/dissertations_edu_sys/
 - Clemson University | 2020–2020 (1) | new | https://tigerprints.clemson.edu/dissertations_env_eng/
 - Clemson University | 2020–2020 (1) | new | https://tigerprints.clemson.edu/dissertations_highered_ldrship/
@@ -279,6 +287,7 @@ One line per address: institution | years captured | known page? | address. Acce
 - Clemson University | 2020–2020 (1) | new | https://tigerprints.clemson.edu/dissertations_number_theory/
 - Clemson University | 2018–2018 (1) | known not-a-list | https://tigerprints.clemson.edu/dissertations_parks_rec/
 - Clemson University | 2020–2020 (1) | new | https://tigerprints.clemson.edu/dissertations_rhet_comm_info/
+- Clemson University | 2021–2021 (1) | new | https://tigerprints.clemson.edu/dissertations_tsa/
 - Clemson University | 2020–2020 (1) | new | https://tigerprints.clemson.edu/dissertations_voc_teched/
 - Clemson University | 2020–2020 (1) | new | https://tigerprints.clemson.edu/theses_admin/
 - Clemson University | 2020–2020 (1) | new | https://tigerprints.clemson.edu/theses_ag_ed/
@@ -310,6 +319,7 @@ One line per address: institution | years captured | known page? | address. Acce
 - Clemson University | 2020–2020 (1) | new | https://tigerprints.clemson.edu/theses_hydrogeo/
 - Clemson University | 2020–2020 (1) | new | https://tigerprints.clemson.edu/theses_ind_eng/
 - Clemson University | 2020–2020 (1) | new | https://tigerprints.clemson.edu/theses_ind_org_psy/
+- Clemson University | 2021–2021 (1) | new | https://tigerprints.clemson.edu/theses_intl_family/
 - Clemson University | 2018–2020 (2) | known not-a-list | https://tigerprints.clemson.edu/theses_land_arch/
 - Clemson University | 2020–2020 (1) | new | https://tigerprints.clemson.edu/theses_literacy/
 - Clemson University | 2020–2020 (1) | new | https://tigerprints.clemson.edu/theses_llc/
@@ -333,21 +343,23 @@ One line per address: institution | years captured | known page? | address. Acce
 - Colorado State University | 2017–2017 (1) | known not-a-list | http://publiclands.colostate.edu/dissertation-project-management-tool-usage
 - Colorado State University | 2017–2017 (1) | known not-a-list | http://publiclands.colostate.edu/dissertation-proposal-on-performance-management
 - Columbia University | 2013–2018 (254) | known not-a-list | http://academiccommons.columbia.edu/?f[department_facet][]=Anthropology&f[genre_facet][]=Dissertations
+- Columbia University | 2021–2021 (1) | new | https://academics.gsb.columbia.edu/phd/job-market-candidates | 1 pages below it
+- Columbia University | 2021–2021 (1) | new | https://academics.gsb.columbia.edu/research-opportunities/predoctoral-fellows-program/alumni-and-placements
 - Columbia University | 2013–2018 (10) | known not-a-list | http://bulletin.engineering.columbia.edu/advanced-placement
 - Columbia University | 2013–2014 (3) | known not-a-list | http://bulletin.engineering.columbia.edu/advanced-placement-0
 - Columbia University | 2018–2018 (1) | known program-list | http://www.corc.ieor.columbia.edu/theses/theses.html
 - Columbia University | 2020–2020 (1) | new | https://www.ee.columbia.edu/ee-phd-candidates-are-finalists-best-student-paper-conference-decision-and-control
 - Columbia University | 2017–2017 (1) | known not-a-list | http://eee.columbia.edu/past-theses-sustainable-waste-management
-- Columbia University | 2019–2020 (4) | known not-a-list | https://engineering.columbia.edu/career-placement-team
+- Columbia University | 2019–2021 (5) | known not-a-list | https://engineering.columbia.edu/career-placement-team
 - Columbia University | 2018–2019 (5) | known program-list | https://ieor.columbia.edu/doctoral/students/recent-alumni-placements
-- Columbia University | 2018–2020 (3) | known not-a-list | https://ieor.columbia.edu/ieor-audience/alumni
+- Columbia University | 2018–2021 (4) | known not-a-list | https://ieor.columbia.edu/ieor-audience/alumni
 - Columbia University | 2018–2018 (1) | known not-a-list | http://www.iserp.columbia.edu/content/doctoral-dissertation-research-legitimizing-state-or-grievance
-- Columbia University | 2013–2013 (67) | known program-list | http://www4.gsb.columbia.edu/dissertations | 13 pages below it
+- Columbia University | 2013–2013 (67) | known program-list | http://www4.gsb.columbia.edu/dissertations | 12 pages below it
 - Columbia University | 2013–2013 (1) | known not-a-list | http://www4.gsb.columbia.edu/publicoffering/post/723736/The+MBA+Class+of+2009+Graduates
 - Columbia University | 2013–2013 (4) | known program-list | http://www7.gsb.columbia.edu/phd/jobmarket/
 - Columbia University | 2013–2013 (4) | known program-list | http://www7.gsb.columbia.edu/phd/whycolumbia/placement/
 - Columbia University | 2013–2017 (27) | known not-a-list | http://www8.gsb.columbia.edu/alumni/stay-connected/communities/phd-alumni
-- Columbia University | 2015–2017 (404) | known program-list | http://www8.gsb.columbia.edu/programs/doctoral-program/dissertations | 97 pages below it
+- Columbia University | 2015–2017 (404) | known program-list | http://www8.gsb.columbia.edu/programs/doctoral-program/dissertations | 71 pages below it
 - Columbia University | 2015–2019 (4) | known program-list | http://www8.gsb.columbia.edu/programs/doctoral-program/dissertations?year=1998
 - Columbia University | 2015–2019 (4) | known program-list | http://www8.gsb.columbia.edu/programs/doctoral-program/dissertations?year=1999
 - Columbia University | 2015–2019 (4) | known program-list | http://www8.gsb.columbia.edu/programs/doctoral-program/dissertations?year=2000
@@ -373,7 +385,9 @@ One line per address: institution | years captured | known page? | address. Acce
 - Columbia University | 2015–2015 (2) | known not-a-list | http://www8.gsb.columbia.edu/programs/doctoral-program/dissertations_for_crawlers
 - Columbia University | 2015–2020 (6) | known program-list | http://www8.gsb.columbia.edu/programs/doctoral-program/job-market | 2 pages below it
 - Columbia University | 2015–2020 (6) | known program-list | http://www8.gsb.columbia.edu/programs/doctoral-program/why-columbia-phd/placement
+- Copenhagen Business School | 2021–2021 (1) | new | https://www.cbs.dk/en/cbs-news-en/21/faster-entry-into-the-job-market
 - Copenhagen Business School | 2017–2017 (1) | known not-a-list | https://www.cbs.dk/en/where-can-find-other-peoples-theses
+- Copenhagen Business School | 2021–2021 (1) | new | https://www.cbs.dk/forskning/phd/phd-placement
 - Copenhagen Business School | 2018–2018 (1) | known not-a-list | http://sar.cbs.dk/diploma_programmes/statues_regulations_etc/educational_conditions_merits_graduate_theses_complaints_regarding_lectures_etc
 - Copenhagen Business School | 2018–2018 (1) | known not-a-list | http://uk.sar.cbs.dk/diploma_programmes/statues_regulations_etc/educational_conditions_merits_graduate_theses_complaints_regarding_lectures_etc
 - Cornell University | 2017–2017 (1) | known not-a-list | http://gradschool.cornell.edu/about/ask-dean/are-all-cornell-dissertations-automatically-published-or-without-embargo
@@ -435,14 +449,21 @@ One line per address: institution | years captured | known page? | address. Acce
 - Geneva School of Economics and Management | 2013–2016 (8) | known not-a-list | http://www.unige.ch/cyberdocuments/theses2003/RivaraC-B/these_body.html
 - Geneva School of Economics and Management | 2013–2016 (6) | known not-a-list | http://www.unige.ch/cyberdocuments/theses2004/HeQ/these_body.html
 - George Mason University | 2016–2020 (5) | known not-a-list | http://artsmanagement.gmu.edu/alumni-placement/
+- George Mason University | 2021–2021 (1) | new | https://ds.gmu.edu/field-placement/
+- George Mason University | 2021–2021 (1) | new | https://smif.business.gmu.edu/placement/
+- George Washington University | 2021–2021 (1) | new | https://bootcamp.cps.gwu.edu/coding/landing-ftpt/?s=Google-Unbranded_RFull_&msg_cv_scta=4&msg_cv_stbn=1&msg_cv_fcta=1&fqvar1=3&pkw=%2Bcoding&pcrid=453410087756&pmt=b&utm_source=google&utm_medium=cpc&utm_campaign=GGL%7CGEORGE-WASHINGTON%7CSEM%7CCODING%7C-%7COFL%7C_RFull_%7CALL%7CNBD-G%7CBMM%7CCore%7CGeneral&utm_term=%2Bcoding&s=google&k=%2Bcoding&utm_adgroupid=107466145364&utm_locationphysicalms=9008578&utm_matchtype=b&utm_network=g&utm_device=c&utm_content=453410087756&utm_placement=&gclid=CjwKCAiArIH_BRB2EiwALfbH1IYcFuQhyCx8OWvl5FddHvwe9VVtDQ1fceNj9aJjnqZ1Q2GQsKm84hoCV7IQAvD_BwE&gclsrc=aw.ds
 - George Washington University | 2013–2013 (1) | known program-list | http://business.gwu.edu/management/cfee/department-research-dissertations.cfm
 - George Washington University | 2013–2013 (1) | known not-a-list | http://business.gwu.edu/smpp/doctoral-candidates/ | 7 pages below it
 - Georgia Institute of Technology | 2017–2020 (5) | known program-list | http://www.aco.gatech.edu/academics/aco-dissertations
 - Georgia Institute of Technology | 2017–2020 (6) | known not-a-list | http://www.aco.gatech.edu/academics/dissertations
+- Georgia Institute of Technology | 2021–2021 (1) | new | https://ae.gatech.edu/ae-doctoral-dissertation-2017-2018
+- Georgia Institute of Technology | 2021–2021 (1) | new | https://ae.gatech.edu/ae-doctoral-dissertation-2018-2019
+- Georgia Institute of Technology | 2021–2021 (1) | new | https://ae.gatech.edu/ae-doctoral-dissertations-2019-2020
 - Georgia Institute of Technology | 2019–2020 (3) | known not-a-list | https://ae.gatech.edu/putting-research-test-ae-doctoral-dissertations
 - Georgia Institute of Technology | 2017–2017 (2) | known not-a-list | http://www.cig.gatech.edu/rojas-pena-successfully-defends-dissertation
 - Georgia Institute of Technology | 2019–2019 (1) | known not-a-list | http://dilab.gatech.edu/david-joyner-passes-dissertation-proposal/
 - Georgia Institute of Technology | 2018–2020 (2) | known not-a-list | https://dm.lmc.gatech.edu/alumni-dissertations/
+- Georgia Institute of Technology | 2021–2021 (2) | new | http://eilab.gatech.edu/theses.html
 - Georgia Institute of Technology | 2017–2017 (1) | known not-a-list | http://eislab.gatech.edu/pubs/theses/chuang93/
 - Georgia Institute of Technology | 2013–2017 (7) | known not-a-list | http://eislab.gatech.edu/pubs/theses/goehlich89/
 - Georgia Institute of Technology | 2017–2017 (1) | known not-a-list | http://eislab.gatech.edu/pubs/theses/jazbutis96/
@@ -453,6 +474,8 @@ One line per address: institution | years captured | known page? | address. Acce
 - Georgia Institute of Technology | 2013–2017 (8) | known not-a-list | http://eislab.gatech.edu/pubs/theses/wang93/
 - Georgia Institute of Technology | 2013–2017 (8) | known not-a-list | http://eislab.gatech.edu/pubs/theses/whelan89/
 - Georgia Institute of Technology | 2017–2017 (1) | known not-a-list | http://eislab.gatech.edu/pubs/theses/yeh92/
+- Georgia Institute of Technology | 2021–2021 (1) | new | https://www.epic.gatech.edu/congratulations-to-dr-inseung-kang-on-successfully-defending-his-dissertation/
+- Georgia Institute of Technology | 2021–2021 (1) | new | https://www.epic.gatech.edu/congratulations-to-dr-jonathan-camargo-on-successfully-defending-his-dissertation/
 - Georgia Institute of Technology | 2017–2017 (1) | known not-a-list | http://etv.gatech.edu/theses/amrutha-krishnan-newspad/
 - Georgia Institute of Technology | 2017–2017 (1) | known not-a-list | http://etv.gatech.edu/theses/brighton-vino-jegarajan-insync/
 - Georgia Institute of Technology | 2017–2017 (1) | known not-a-list | http://etv.gatech.edu/theses/ibharatha/
@@ -461,43 +484,65 @@ One line per address: institution | years captured | known page? | address. Acce
 - Georgia Institute of Technology | 2017–2017 (1) | known not-a-list | http://etv.gatech.edu/theses/sergio-goldenberg-the-virtual-tv-couch/
 - Georgia Institute of Technology | 2017–2017 (1) | known not-a-list | http://etv.gatech.edu/theses/tagging-for-tv/
 - Georgia Institute of Technology | 2017–2017 (1) | known not-a-list | http://etv.gatech.edu/theses/tarun-chakravorty-mylathones/
+- Georgia Institute of Technology | 2021–2021 (1) | new | https://frc.gatech.edu/wilks-dissertation-2016/
 - Georgia Institute of Technology | 2017–2017 (1) | known not-a-list | http://www.gatech.edu/techlanta-job-market
-- Georgia Institute of Technology | 2017–2020 (4) | known not-a-list | http://www.grad.gatech.edu/theses-dissertations
+- Georgia Institute of Technology | 2017–2021 (5) | known not-a-list | http://www.grad.gatech.edu/theses-dissertations
 - Georgia Institute of Technology | 2017–2019 (2) | known not-a-list | http://www.grad.gatech.edu/theses-dissertations-deadlines
-- Georgia Institute of Technology | 2017–2020 (2) | known not-a-list | http://www.grad.gatech.edu/theses-dissertations-forms
+- Georgia Institute of Technology | 2017–2021 (3) | known not-a-list | http://www.grad.gatech.edu/theses-dissertations-forms
 - Georgia Institute of Technology | 2018–2019 (4) | known not-a-list | http://gradadmiss.gatech.edu/theses-dissertations
-- Georgia Institute of Technology | 2017–2020 (2) | known not-a-list | http://icsl.gatech.edu/phd_graduates/
+- Georgia Institute of Technology | 2017–2021 (3) | known not-a-list | http://icsl.gatech.edu/phd_graduates/
+- Georgia Institute of Technology | 2021–2021 (1) | new | https://icsl.gatech.edu/specialwhatlinkshere/phd_graduates/
 - Georgia Institute of Technology | 2017–2020 (10) | known not-a-list | https://isye.gatech.edu/academics/doctoral/phd-industrial-engineering/placement
 - Georgia Institute of Technology | 2017–2020 (9) | known not-a-list | https://www.isye.gatech.edu/academics/doctoral/phd-operations-research/placement
 - Georgia Institute of Technology | 2019–2019 (1) | known not-a-list | http://www.me.gatech.edu/graduate/phd/dissertation
 - Georgia Institute of Technology | 2019–2019 (1) | known not-a-list | http://www.me.gatech.edu/graduate/theses/archives
+- Georgia Institute of Technology | 2021–2021 (3) | new | https://mediaspace.gatech.edu/tag?tagid=dissertation
 - Georgia Institute of Technology | 2018–2019 (2) | known not-a-list | http://ml.gatech.edu/content/curriculum-phd-dissertation
 - Georgia Institute of Technology | 2020–2020 (1) | new | https://new.isye.gatech.edu/academics/doctoral/phd-industrial-engineering/placement
 - Georgia Institute of Technology | 2020–2020 (1) | new | https://new.isye.gatech.edu/academics/doctoral/phd-operations-research/placement
-- Georgia Institute of Technology | 2020–2020 (1) | new | https://policylibrary.gatech.edu/records-publications/graduate-thesis-and-dissertation-publication
+- Georgia Institute of Technology | 2021–2021 (1) | new | https://penlab.gatech.edu/theses/amrutha-krishnan-newspad/
+- Georgia Institute of Technology | 2021–2021 (1) | new | https://penlab.gatech.edu/theses/brighton-vino-jegarajan-insync/
+- Georgia Institute of Technology | 2021–2021 (1) | new | https://penlab.gatech.edu/theses/miro-malesevic-steampumpt/
+- Georgia Institute of Technology | 2021–2021 (1) | new | https://penlab.gatech.edu/theses/negar-farhi-broadband-news-aggregator/
+- Georgia Institute of Technology | 2021–2021 (1) | new | https://penlab.gatech.edu/theses/ricky-yu-the-grand-palace/
+- Georgia Institute of Technology | 2021–2021 (1) | new | https://penlab.gatech.edu/theses/sanat-rath/
+- Georgia Institute of Technology | 2021–2021 (1) | new | https://penlab.gatech.edu/theses/sarah-cooper-reliving-last-night/
+- Georgia Institute of Technology | 2021–2021 (1) | new | https://penlab.gatech.edu/theses/sergio-goldenberg-the-virtual-tv-couch/
+- Georgia Institute of Technology | 2021–2021 (1) | new | https://penlab.gatech.edu/theses/tagging-for-tv/
+- Georgia Institute of Technology | 2021–2021 (1) | new | https://penlab.gatech.edu/theses/tarun-chakravorty-mylathones/
+- Georgia Institute of Technology | 2021–2021 (1) | new | https://penlab.gatech.edu/theses/vi-nguyen-to-be-a-friend/
+- Georgia Institute of Technology | 2021–2021 (1) | new | https://policylibrary.gatech.edu/academic-affairs/publication-theses
+- Georgia Institute of Technology | 2021–2021 (1) | new | https://policylibrary.gatech.edu/academic-affairs/thesis-and-dissertations
+- Georgia Institute of Technology | 2020–2021 (2) | new | https://policylibrary.gatech.edu/records-publications/graduate-thesis-and-dissertation-publication
+- Georgia Institute of Technology | 2021–2021 (1) | new | https://policylibrary.gatech.edu/student-affairs/publication-theses
+- Georgia Institute of Technology | 2021–2021 (1) | new | https://policylibrary.gatech.edu/student-affairs/thesis-and-dissertations
 - Georgia Institute of Technology | 2020–2020 (1) | new | https://qbios.gatech.edu/elma-kajtaz-dissertation-proposal
 - Georgia Institute of Technology | 2017–2017 (1) | known not-a-list | http://rearlab.gatech.edu/theses.php
 - Georgia Institute of Technology | 2020–2020 (1) | new | http://s1.policylibrary.gatech.edu/student-affairs/publication-theses
 - Georgia Institute of Technology | 2020–2020 (1) | new | http://s1.policylibrary.gatech.edu/student-affairs/thesis-and-dissertations
 - Georgia Institute of Technology | 2020–2020 (1) | new | https://www.scheller.gatech.edu/news-events/latest-news/2020/the-resilience-of-scheller-graduates-in-a-covid-19-job-market.html
 - Georgia Institute of Technology | 2018–2018 (1) | known not-a-list | https://www.scs.gatech.edu/phd-candidates
-- Georgia Institute of Technology | 2013–2019 (8) | known not-a-list | http://techstyle.lmc.gatech.edu/digitizing-research-interests-for-the-classroom-and-the-job-market-d-ped-seminar-topic-for-91411/
-- Georgia Institute of Technology | 2017–2020 (178) | known not-a-list | http://www2.me.gatech.edu/theses/summary.asp?db=1&LASTNAME=Ameur&FIRSTNAME=Amir
+- Georgia Institute of Technology | 2013–2021 (9) | known not-a-list | http://techstyle.lmc.gatech.edu/digitizing-research-interests-for-the-classroom-and-the-job-market-d-ped-seminar-topic-for-91411/
+- Georgia Institute of Technology | 2021–2021 (1) | new | https://temenoff.gatech.edu/trevino-defends-dissertation-and-gets-job-at-fda/
+- Georgia Institute of Technology | 2017–2021 (182) | known not-a-list | http://www2.me.gatech.edu/theses/summary.asp?db=1&LASTNAME=Ameur&FIRSTNAME=Amir
 - Georgia Institute of Technology | 2013–2015 (6) | known not-a-list | http://www2.me.gatech.edu/www/theses/msthesis.asp
 - HEC Montreal | 2018–2019 (2) | known not-a-list | http://chairecontroledegestion.hec.ca/theses-memoires-et-projets-supervises/
 - HEC Montreal | 2018–2020 (2) | known not-a-list | http://expertise.hec.ca/cicpa/comptabilite_management/non-classe/services-de-placement-universitaire/
 - HEC Montreal | 2017–2017 (1) | known not-a-list | http://expertise.hec.ca/martin_boyer/enseignement/directions-de-memoires-ou-de-theses/
-- HEC Montreal | 2018–2018 (1) | known not-a-list | http://www.hec.ca/biblio/banques-de-donnees/proquest-dissertations-theses-global.html
+- HEC Montreal | 2018–2021 (2) | known not-a-list | http://www.hec.ca/biblio/banques-de-donnees/proquest-dissertations-theses-global.html
+- HEC Montreal | 2021–2021 (1) | new | https://www.hec.ca/biblio/banques-de-donnees/theses-canada.html
 - HEC Montreal | 2019–2019 (1) | known program-list | https://www.hec.ca/en/iea/students/phd/placement.html
 - HEC Montreal | 2017–2017 (1) | known program-list | http://www.hec.ca/en/it/studying/Ph.D._Graduates.html
 - HEC Montreal | 2018–2018 (1) | known not-a-list | http://www.hec.ca/salle_de_presse/communiques/2015/CP_IdQ_Fonds_placement.html
 - HEC Montreal | 2017–2017 (1) | known not-a-list | http://www.hec.ca/sct/politiques_et_procedures/placement/sct_politiquesproceduresplacements_g.html
-- HEC Paris | 2019–2020 (4) | known program-list | https://www.hec.edu/en/doctoral-program/job-market-season
+- HEC Paris | 2019–2021 (5) | known program-list | https://www.hec.edu/en/doctoral-program/job-market-season
 - HEC Paris | 2019–2020 (4) | known program-list | https://www.hec.edu/en/doctoral-program/placement
 - HEC Paris | 2020–2020 (1) | new | https://www.hec.edu/en/news-room/2019-hec-phd-graduates
 - HEC Paris | 2018–2018 (1) | known not-a-list | http://www.hec.edu/News-Room/HEC-in-the-Press/MIT-Sloan-s-In-Talks-With-McKinsey-Amazon-Facebook-On-Big-Data-Placements-For-Students
 - HEC Paris | 2018–2018 (1) | known not-a-list | http://www.hec.edu/News-Room/HEC-in-the-Press/The-job-market-Brighter-prospects-for-landing-a-dream-role
 - HEC Paris | 2016–2018 (3) | known program-list | http://www.hec.edu/Ph.D/Placements-Alumni/Placements
+- HEC Paris | 2021–2021 (1) | new | https://learning-center.hec.edu/database/dissertation-express/
+- HEC Paris | 2021–2021 (1) | new | https://learning-center.hec.edu/database/theses-fr/
 - Harvard University | 2013–2014 (2) | known not-a-list | http://lib.harvard.edu/university-archives/records-management-news/8_dissertations
 - Heriot-Watt University | 2020–2020 (1) | new | https://www.hw.ac.uk/uk/study/postgraduate/international-business-management-industry-placement.htm
 - Hong Kong Polytechnic University | 2019–2019 (1) | known program-list | https://fb.polyu.edu.hk/dba/students-alumni/2018-graduates/
@@ -538,7 +583,7 @@ One line per address: institution | years captured | known page? | address. Acce
 - IE University | 2017–2020 (4) | known not-a-list | http://careers.blogs.ie.edu/graduate-placement-survey
 - IE University | 2020–2020 (1) | new | https://drivinginnovation.ie.edu/how-business-administration-laws-combination-need-tomorrows-job-market/?cat=true
 - IE University | 2019–2020 (3) | known not-a-list | https://drivinginnovation.ie.edu/why-ple-and-big-data-are-the-perfect-pair-for-tomorrows-job-market/
-- IE University | 2016–2018 (2) | known not-a-list | http://www.eaa-jobmarket.ie.edu/
+- IE University | 2016–2021 (3) | known not-a-list | http://www.eaa-jobmarket.ie.edu/
 - IE University | 2019–2020 (2) | known not-a-list | https://eaa-jobmarket.ie.edu/registration-for-candidates/
 - IIM Bangalore | 2018–2018 (1) | known not-a-list | http://iimb.ac.in/community/placement2001
 - IIM Bangalore | 2018–2018 (1) | known not-a-list | http://iimb.ac.in/pgp/placement
@@ -547,7 +592,7 @@ One line per address: institution | years captured | known page? | address. Acce
 - IIT-Bombay | 2019–2019 (1) | known not-a-list | http://www.ieor.iitb.ac.in/opportunities/placements
 - IIT-Bombay | 2013–2013 (1) | known not-a-list | http://www.som.iitb.ac.in/placements/advantage_SJMSOM/
 - INSEAD | 2013–2014 (5) | known not-a-list | http://www.insead.edu/alumni/imef/index.cfm?allocation=iaf&class=02J
-- INSEAD | 2018–2019 (4) | known program-list | https://www.insead.edu/phd/job-market
+- INSEAD | 2018–2021 (5) | known program-list | https://www.insead.edu/phd/job-market
 - INSEAD | 2013–2013 (1) | known program-list | http://phd.insead.edu/alumni_and_placements/
 - Imperial College London | 2020–2020 (1) | new | https://www.imperial.ac.uk/business-school/programmes/doctoral-degree/career-impact/graduate-placements/
 - Indian Institute of Management Ahmedabad | 2018–2020 (17) | known program-list | http://vslopac.iima.ac.in/cgi-bin/koha/opac-search.pl?q=ccl=location%3DAV&sort_by=title_az&limit=itype:THESES
@@ -578,6 +623,7 @@ One line per address: institution | years captured | known page? | address. Acce
 - Indiana University Bloomington | 2013–2014 (43) | known not-a-list | http://www.kelley.iu.edu/alumni/ | 2 pages below it
 - Indiana University Bloomington | 2013–2014 (9) | known not-a-list | http://www.kelley.iu.edu/CBL/alumni/page15101.html
 - Indiana University Bloomington | 2013–2015 (12) | known program-list | http://kelley.iu.edu/Doctoral/Careers/PhD%20Placements/page13961.html
+- Indiana University Bloomington | 2021–2021 (1) | known program-list | https://kelley.iu.edu/faculty-research/departments/operations-decision-technologies/phd/placements.html
 - Indiana University Bloomington | 2013–2014 (12) | known not-a-list | http://kelley.iu.edu/ISGP/Alumni/page29809.html
 - Indiana University Bloomington | 2013–2013 (2) | known not-a-list | http://kelley.iu.edu/reclub/alumni.html
 - Indiana University Bloomington | 2013–2014 (3) | known not-a-list | http://kelley.iu.edu/ugrad/alumni/event_V.cfm?key=IN130228&returnpage=none
@@ -592,6 +638,8 @@ One line per address: institution | years captured | known page? | address. Acce
 - Iowa State University | 2019–2019 (1) | known program-list | https://www.ivybusiness.iastate.edu/phd/job-placements/
 - Istanbul Technical University | 2019–2019 (1) | known program-list | http://islmuh.itu.edu.tr/en/alumni/management-engineering-alumni/management-engineering-ph-d-alumni
 - J.C. Bose University of Science and Technology | 2018–2018 (1) | known not-a-list | http://ymcaust.ac.in/index.php/current-news/701-final-list-of-candidates-for-entrance-of-ph-d-even-sem-2017
+- Johns Hopkins University | 2021–2021 (1) | new | https://engineering.jhu.edu/ams/academics/graduate-studies/doctoral-program/dissertations/
+- Johns Hopkins University | 2021–2021 (1) | new | https://engineering.jhu.edu/case/alumni/where-are-they-now/
 - KTH Royal Institute of Technology | 2019–2019 (1) | known not-a-list | https://www.aphys.kth.se/se/previous-dissertatio/dissertations-1.33870
 - KTH Royal Institute of Technology | 2013–2013 (1) | known not-a-list | http://www.brinell.kth.se/Dissertations.htm
 - KTH Royal Institute of Technology | 2017–2017 (1) | known not-a-list | http://www.csc.kth.se/tcs/dissertations/
@@ -617,21 +665,26 @@ One line per address: institution | years captured | known page? | address. Acce
 - Karlsruhe Institute of Technology | 2013–2013 (1) | known not-a-list | http://www.iks.kit.edu/QIV/index.php?id=theses&L=1
 - Karlsruhe Institute of Technology | 2019–2020 (2) | known not-a-list | http://www.ksop.kit.edu/PhD_alumni.php
 - Karlsruhe Institute of Technology | 2013–2019 (19) | known not-a-list | http://lfm.iti.kit.edu/theses.php
-- Kent State University | 2019–2019 (1) | known not-a-list | https://www.kent.edu/acaa/advanced-placement-ap-credits
+- Kent State University | 2019–2021 (2) | known not-a-list | https://www.kent.edu/acaa/advanced-placement-ap-credits
 - Kent State University | 2013–2013 (3) | known not-a-list | http://www.kent.edu/business/Alumni/ | 4 pages below it
+- Kent State University | 2021–2021 (1) | new | https://www.kent.edu/business/job-market-candidates-2019-2020
+- Kent State University | 2021–2021 (1) | new | https://www.kent.edu/business/job-market-candidates-2019-2020-0
+- Kent State University | 2021–2021 (1) | new | https://www.kent.edu/business/placement
 - Kent State University | 2013–2013 (2) | known not-a-list | http://www.kent.edu/cacm/camtrack/faculty-thesis-dissertation-list.cfm
-- Kent State University | 2020–2020 (1) | new | https://www.kent.edu/cas/esl-center/online-placement-tool
+- Kent State University | 2020–2021 (2) | new | https://www.kent.edu/cas/esl-center/online-placement-tool
+- Kent State University | 2021–2021 (1) | new | https://www.kent.edu/cde/learning-placements
 - Kent State University | 2020–2020 (1) | new | https://www.kent.edu/credittransfer/advanced-placement
 - Kent State University | 2020–2020 (1) | new | https://www.kent.edu/ehhs/fla/cult/recent-dissertations-cultural-foundations
-- Kent State University | 2016–2019 (2) | known not-a-list | http://www.kent.edu/ehhs/hs/spa/phd-alumni
+- Kent State University | 2021–2021 (1) | new | https://www.kent.edu/ehhs/fla/hied/dissertation
+- Kent State University | 2016–2021 (3) | known not-a-list | http://www.kent.edu/ehhs/hs/spa/phd-alumni
 - Kent State University | 2013–2013 (3) | known not-a-list | http://www.kent.edu/ehhs/oaa/dissertations/index.cfm
 - Kent State University | 2018–2018 (1) | known not-a-list | https://www.kent.edu/ehhs/offices/oaa/dissertations
 - Kent State University | 2018–2018 (1) | known not-a-list | https://www.kent.edu/ehhs/offices/oaa/electronic-theses-dissertations
-- Kent State University | 2018–2018 (1) | known not-a-list | https://www.kent.edu/ehhs/voss/how-does-one-apply-field-experience-placements
-- Kent State University | 2018–2018 (1) | known not-a-list | https://www.kent.edu/ehhs/voss/when-will-placements-be-confirmed
+- Kent State University | 2018–2021 (2) | known not-a-list | https://www.kent.edu/ehhs/voss/how-does-one-apply-field-experience-placements
+- Kent State University | 2018–2021 (2) | known not-a-list | https://www.kent.edu/ehhs/voss/when-will-placements-be-confirmed
 - Kent State University | 2013–2013 (10) | known not-a-list | http://www.kent.edu/graduatestudies/current-students/dissertations-and-theses.cfm
-- Kent State University | 2018–2020 (3) | known not-a-list | https://www.kent.edu/graduatestudies/dissertation-boot-camp
-- Kent State University | 2016–2016 (1) | known not-a-list | http://www.kent.edu/graduatestudies/thesis-dissertation
+- Kent State University | 2018–2021 (4) | known not-a-list | https://www.kent.edu/graduatestudies/dissertation-boot-camp
+- Kent State University | 2016–2021 (2) | known not-a-list | http://www.kent.edu/graduatestudies/thesis-dissertation
 - Kent State University | 2013–2013 (35) | known not-a-list | http://www.kent.edu/honors/seniorhonorsthesis/bsci-theses.cfm
 - Kent State University | 2013–2013 (36) | known not-a-list | http://www.kent.edu/honors/seniorhonorsthesis/ehhs-theses.cfm
 - Kent State University | 2013–2013 (9) | known not-a-list | http://www.kent.edu/honors/seniorhonorsthesis/jmc-theses.cfm
@@ -645,11 +698,14 @@ One line per address: institution | years captured | known page? | address. Acce
 - Kent State University | 2013–2013 (37) | known not-a-list | http://www.kent.edu/honors/seniorhonorsthesis/tech-theses.cfm
 - Kent State University | 2013–2013 (8) | known not-a-list | http://www.kent.edu/honors/seniorhonorsthesis/vcd-theses.cfm
 - Kent State University | 2013–2013 (1) | known not-a-list | http://www.kent.edu/mcls/languageprograms/asl/asl-placement.cfm
+- Kent State University | 2021–2021 (1) | new | https://www.kent.edu/polisci/graduate-student-placements
 - Kent State University | 2013–2013 (1) | known not-a-list | http://www.kent.edu/polisci/graduate/previous-doctoral-dissertations.cfm
-- Kent State University | 2019–2019 (1) | known not-a-list | https://www.kent.edu/polisci/successful-doctoral-dissertations
-- Kent State University | 2019–2019 (2) | known not-a-list | https://www.kent.edu/spcs/spcs-faculty-thesis-dissertation-list
+- Kent State University | 2019–2021 (2) | known not-a-list | https://www.kent.edu/polisci/successful-doctoral-dissertations
+- Kent State University | 2019–2021 (3) | known not-a-list | https://www.kent.edu/spcs/spcs-faculty-thesis-dissertation-list
+- Kent State University | 2021–2021 (1) | new | https://www.kent.edu/stark/first-step-placement-assessment-instructions
 - Kent State University | 2014–2015 (2) | known not-a-list | http://www.kent.edu/success/placement
-- Kent State University | 2018–2020 (2) | known not-a-list | https://www.kent.edu/success/placement-assessment-spring
+- Kent State University | 2021–2021 (1) | new | https://www.kent.edu/success/placement-assessment-2
+- Kent State University | 2018–2021 (3) | known not-a-list | https://www.kent.edu/success/placement-assessment-spring
 - Kent State University | 2013–2013 (9) | known not-a-list | http://www.kent.edu/transfercenter/advanced-placement.cfm
 - Kent State University | 2014–2015 (19) | known program-list | http://www2.kent.edu/business/Alumni/phd.cfm
 - Kent State University | 2015–2015 (5) | known not-a-list | http://www2.kent.edu/comm/comm-programs/graduate/theses.cfm
@@ -733,26 +789,6 @@ One line per address: institution | years captured | known page? | address. Acce
 - Massachusetts Institute of Technology | 2018–2018 (1) | known not-a-list | https://groups.csail.mit.edu/graphics/ProjectTimeLapse/?june=dissertation-gantt-chart-example
 - Massachusetts Institute of Technology | 2017–2017 (184) | known not-a-list | http://groups.csail.mit.edu/mers/wp-content/uploads/?test=bibtex-dissertation-statt-phd-thesis&mn=2
 - Massachusetts Institute of Technology | 2019–2019 (1) | known not-a-list | http://lnsp.mit.edu/phd-alumni/
-- Massachusetts Institute of Technology | 2020–2020 (1) | new | http://mce.csail.mit.edu/institute/british-dissertation-help/21/
-- Massachusetts Institute of Technology | 2020–2020 (1) | new | http://mce.csail.mit.edu/institute/can-you-write-a-dissertation-in-2-weeks/21/
-- Massachusetts Institute of Technology | 2020–2020 (1) | new | http://mce.csail.mit.edu/institute/custom-dissertation-service/21/
-- Massachusetts Institute of Technology | 2020–2020 (1) | new | http://mce.csail.mit.edu/institute/dissertation-abstract-help/21/
-- Massachusetts Institute of Technology | 2020–2020 (1) | new | http://mce.csail.mit.edu/institute/dissertation-editing-cost/21/
-- Massachusetts Institute of Technology | 2020–2020 (1) | new | http://mce.csail.mit.edu/institute/dissertation-editing-editors/21/
-- Massachusetts Institute of Technology | 2020–2020 (1) | new | http://mce.csail.mit.edu/institute/dissertation-editing-prices/21/
-- Massachusetts Institute of Technology | 2020–2020 (1) | new | http://mce.csail.mit.edu/institute/dissertation-editing/21/
-- Massachusetts Institute of Technology | 2020–2020 (1) | new | http://mce.csail.mit.edu/institute/dissertation-help-forum/21/
-- Massachusetts Institute of Technology | 2020–2020 (1) | new | http://mce.csail.mit.edu/institute/dissertation-help-in-oxford/21/
-- Massachusetts Institute of Technology | 2020–2020 (1) | new | http://mce.csail.mit.edu/institute/dissertation-introduction-help/21/
-- Massachusetts Institute of Technology | 2020–2020 (1) | new | http://mce.csail.mit.edu/institute/dissertation-page-order/21/
-- Massachusetts Institute of Technology | 2020–2020 (1) | new | http://mce.csail.mit.edu/institute/dissertation-title-creator/21/
-- Massachusetts Institute of Technology | 2020–2020 (1) | new | http://mce.csail.mit.edu/institute/dissertation-writers-for-hire/21/
-- Massachusetts Institute of Technology | 2020–2020 (1) | new | http://mce.csail.mit.edu/institute/do-my-dissertation-uk/21/
-- Massachusetts Institute of Technology | 2020–2020 (1) | new | http://mce.csail.mit.edu/institute/ivy-league-dissertation-editing/21/
-- Massachusetts Institute of Technology | 2020–2020 (1) | new | http://mce.csail.mit.edu/institute/paid-dissertation-uk/21/
-- Massachusetts Institute of Technology | 2020–2020 (1) | new | http://mce.csail.mit.edu/institute/phd-dissertation-ghostwriter/21/
-- Massachusetts Institute of Technology | 2020–2020 (1) | new | http://mce.csail.mit.edu/institute/write-dissertation-for-me/21/
-- Massachusetts Institute of Technology | 2020–2020 (1) | new | http://mce.csail.mit.edu/institute/write-my-dissertation-for-me/21/
 - Massachusetts Institute of Technology | 2013–2013 (1) | known not-a-list | http://www.mit.edu/newsoffice/2011/esd-doctoral-alumni-celebration.html
 - Massachusetts Institute of Technology | 2020–2020 (1) | new | https://mitpress.mit.edu/books/abstracts-theses-1963-1964
 - Massachusetts Institute of Technology | 2013–2020 (16) | known not-a-list | http://www.mitpress.mit.edu/books/series/acm-distinguished-dissertation
@@ -946,9 +982,9 @@ One line per address: institution | years captured | known page? | address. Acce
 - Polytechnique Montréal | 2018–2018 (1) | known not-a-list | https://www.polymtl.ca/carrefour-actualite/nouvelles/prix-decernes-par-polytechnique-aux-meilleurs-memoires-et-theses-2008-2009
 - Polytechnique Montréal | 2017–2017 (1) | known not-a-list | http://www.polymtl.ca/carrefour/cms/infotech/num_50/theses.php
 - Polytechnique Montréal | 2017–2017 (1) | known not-a-list | http://www.polymtl.ca/etudes-superieures/en/thesis-and-dissertation
-- Polytechnique Montréal | 2018–2018 (1) | known not-a-list | https://publications.polymtl.ca/theses.html
+- Polytechnique Montréal | 2018–2021 (2) | known not-a-list | https://publications.polymtl.ca/theses.html
 - Princeton University | 2013–2014 (3) | known not-a-list | http://www.princeton.edu/EngineeringPhysics/theses.html
-- Purdue University | 2013–2020 (11) | known not-a-list | http://docs.lib.purdue.edu/dissertations/ | 214 pages below it
+- Purdue University | 2013–2020 (11) | known not-a-list | http://docs.lib.purdue.edu/dissertations/
 - Purdue University | 2017–2017 (1) | known not-a-list | http://docs.lib.purdue.edu/open_access_dissertations/
 - Purdue University | 2015–2016 (3) | known not-a-list | https://engineering.purdue.edu/AAC/dissertations/
 - Purdue University | 2015–2016 (3) | known not-a-list | https://engineering.purdue.edu/AAC/ph-d-candidates/ | 1 pages below it
@@ -1013,6 +1049,7 @@ One line per address: institution | years captured | known page? | address. Acce
 - Purdue University | 2016–2017 (2) | known not-a-list | https://masters.krannert.purdue.edu/departments/kpdc/placement-data/home.asp
 - Queen's University | 2013–2015 (7) | known not-a-list | http://business.queensu.ca/bcom/career/placement.php
 - RWTH Aachen University | 2019–2019 (1) | known not-a-list | http://dbis.rwth-aachen.de/cms/theses/data-annotation-data-management
+- RWTH Aachen University | 2021–2021 (1) | new | http://dbis.rwth-aachen.de/cms/theses/data-management-in-the-cloud
 - RWTH Aachen University | 2018–2019 (2) | known not-a-list | http://dbis.rwth-aachen.de/cms/theses/data-management-of-large-scale-data
 - RWTH Aachen University | 2017–2020 (4) | known not-a-list | http://dbis.rwth-aachen.de/cms/theses/post-mortem-cis-success-analytics
 - RWTH Aachen University | 2017–2017 (4) | known not-a-list | http://www.or.rwth-aachen.de/teaching/theses/?tx_txsocialmedia_pi1%5Bsocial%5D=facebook
@@ -1045,17 +1082,23 @@ One line per address: institution | years captured | known page? | address. Acce
 - Stockholm University | 2017–2017 (1) | known not-a-list | http://www.socant.su.se/om-oss/evenemang/work-in-progress-how-to-title-your-dissertation-1.199635
 - Stony Brook University | 2020–2020 (1) | new | https://news.stonybrook.edu/alumni/college-of-engineering-and-applied-sciences-inducts-john-l-hennessy-ms-75-phd-77-into-distinguished-alumni-hall-of-fame/
 - Stony Brook University | 2019–2019 (1) | known not-a-list | https://news.stonybrook.edu/alumni/college-of-engineering-and-applied-sciences-inducts-myung-oh-72-phd-into-alumni-hall-of-fame/
+- Technical University of Berlin | 2021–2021 (1) | new | https://www.tu.berlin/en/studying/organizing-your-studies/final-theses/
 - Technical University of Clausthal | 2019–2019 (1) | known not-a-list | https://www.ievb.tu-clausthal.de/en/teaching/final-theses/
 - Technical University of Clausthal | 2019–2019 (2) | known not-a-list | https://www.ievb.tu-clausthal.de/en/teaching/group-theses/
 - Technical University of Clausthal | 2018–2020 (3) | known not-a-list | https://www.ub.tu-clausthal.de/angebote-fuer-wissenschaftlerinnen/dissertation-u-a-qualifikationsarbeiten/
 - Technical University of Clausthal | 2017–2018 (2) | known not-a-list | http://www.ub.tu-clausthal.de/de/angebote-fuer-wissenschaftlerinnen/dissertation-u-a-qualifikationsarbeiten/
 - Technical University of Clausthal | 2018–2018 (1) | known not-a-list | http://www.wiwi.tu-clausthal.de/en/chairs/umweltoekonomie/academics/student-projects-and-diploma-theses/
+- Technical University of Darmstadt | 2021–2021 (1) | new | https://www.architektur.tu-darmstadt.de/zmg/zmg/forschung_____dissertation_zmg/index.de.jsp
 - Technical University of Darmstadt | 2017–2017 (1) | known not-a-list | http://www.ausy.tu-darmstadt.de/Theses/Ongoing
 - Technical University of Darmstadt | 2017–2017 (1) | known not-a-list | http://www.ausy.tu-darmstadt.de/Theses/RegisterNewStudent
 - Technical University of Darmstadt | 2020–2020 (1) | new | https://www.ce.tu-darmstadt.de/ce/graduate_school_ce/research_projects/theses_completed/index.en.jsp
 - Technical University of Darmstadt | 2020–2020 (1) | new | https://www.ce.tu-darmstadt.de/ce/graduate_school_ce/research_projects/theses_in_progress/index.en.jsp
 - Technical University of Darmstadt | 2016–2016 (1) | known not-a-list | http://www.ec-spride.tu-darmstadt.de/en/research-groups/secure-software-engineering-group/teaching/theses-topics/
+- Technical University of Darmstadt | 2021–2021 (1) | new | https://www.eins.tu-darmstadt.de/open-theses
+- Technical University of Darmstadt | 2021–2021 (1) | new | https://www.eins.tu-darmstadt.de/running-theses
 - Technical University of Darmstadt | 2019–2019 (1) | known not-a-list | https://www.eins.tu-darmstadt.de/teaching/open-theses/
+- Technical University of Darmstadt | 2021–2021 (1) | new | https://www.eins.tu-darmstadt.de/theses-1/2021
+- Technical University of Darmstadt | 2021–2021 (1) | new | https://www.eins.tu-darmstadt.de/theses/finished-theses | 3 pages below it
 - Technical University of Darmstadt | 2013–2014 (5) | known not-a-list | http://www.es.tu-darmstadt.de/de/forschung/dissertation/
 - Technical University of Darmstadt | 2019–2019 (1) | known not-a-list | https://www.es.tu-darmstadt.de/en/teaching/theses/?dissertation=424&cHash=20b614a256773b2fb2537e78af832c69 | 1 pages below it
 - Technical University of Darmstadt | 2017–2017 (1) | known not-a-list | http://www.es.tu-darmstadt.de/es/team/erhan-leblebici/teaching-and-theses/
@@ -1063,10 +1106,27 @@ One line per address: institution | years captured | known page? | address. Acce
 - Technical University of Darmstadt | 2013–2014 (5) | known not-a-list | http://www.es.tu-darmstadt.de/index.php?id=208&dissertation=107
 - Technical University of Darmstadt | 2017–2018 (2) | known not-a-list | http://www.ew.tu-darmstadt.de/institut/dissertation_grimm.de.jsp
 - Technical University of Darmstadt | 2018–2018 (1) | known not-a-list | https://www.gcc.tu-darmstadt.de/home/pub/dissertations/ | 1 pages below it
+- Technical University of Darmstadt | 2021–2021 (1) | new | https://www.hst.tu-darmstadt.de/lehre_hst/student_theses_hst/abschlussarbeiten_hst_details_10368.de.jsp
+- Technical University of Darmstadt | 2021–2021 (1) | new | https://www.hst.tu-darmstadt.de/lehre_hst/student_theses_hst/abschlussarbeiten_hst_details_10432.de.jsp
+- Technical University of Darmstadt | 2021–2021 (1) | new | https://www.hst.tu-darmstadt.de/lehre_hst/student_theses_hst/abschlussarbeiten_hst_details_10496.de.jsp
+- Technical University of Darmstadt | 2021–2021 (1) | new | https://www.hst.tu-darmstadt.de/lehre_hst/student_theses_hst/abschlussarbeiten_hst_details_10560.de.jsp
+- Technical University of Darmstadt | 2021–2021 (1) | new | https://www.hst.tu-darmstadt.de/lehre_hst/student_theses_hst/abschlussarbeiten_hst_details_10624.de.jsp
+- Technical University of Darmstadt | 2021–2021 (1) | new | https://www.hst.tu-darmstadt.de/lehre_hst/student_theses_hst/abschlussarbeiten_hst_details_10688.de.jsp
+- Technical University of Darmstadt | 2021–2021 (1) | new | https://www.hst.tu-darmstadt.de/lehre_hst/student_theses_hst/abschlussarbeiten_hst_details_10752.de.jsp
+- Technical University of Darmstadt | 2021–2021 (1) | new | https://www.hst.tu-darmstadt.de/lehre_hst/student_theses_hst/abschlussarbeiten_hst_details_10816.de.jsp
+- Technical University of Darmstadt | 2021–2021 (1) | new | https://www.hst.tu-darmstadt.de/lehre_hst/student_theses_hst/abschlussarbeiten_hst_details_10880.de.jsp
+- Technical University of Darmstadt | 2021–2021 (1) | new | https://www.hst.tu-darmstadt.de/lehre_hst/student_theses_hst/abschlussarbeiten_hst_details_10944.de.jsp
+- Technical University of Darmstadt | 2021–2021 (1) | new | https://www.hst.tu-darmstadt.de/lehre_hst/student_theses_hst/abschlussarbeiten_hst_details_11008.de.jsp
+- Technical University of Darmstadt | 2021–2021 (1) | new | https://www.hst.tu-darmstadt.de/lehre_hst/student_theses_hst/abschlussarbeiten_hst_details_11072.de.jsp
+- Technical University of Darmstadt | 2021–2021 (1) | new | https://www.hst.tu-darmstadt.de/lehre_hst/student_theses_hst/abschlussarbeiten_hst_details_11136.de.jsp
+- Technical University of Darmstadt | 2021–2021 (1) | new | https://www.hst.tu-darmstadt.de/lehre_hst/student_theses_hst/abschlussarbeiten_hst_details_11520.de.jsp
+- Technical University of Darmstadt | 2021–2021 (1) | new | https://www.hst.tu-darmstadt.de/lehre_hst/student_theses_hst/abschlussarbeiten_hst_details_11840.de.jsp
+- Technical University of Darmstadt | 2021–2021 (1) | new | https://www.hst.tu-darmstadt.de/lehre_hst/student_theses_hst/index.de.jsp
 - Technical University of Darmstadt | 2018–2018 (1) | known not-a-list | https://www.ikp.tu-darmstadt.de/gruppen_ikp/achimrichter/quantumchaos/theses/theses.en.jsp
 - Technical University of Darmstadt | 2018–2018 (1) | known not-a-list | https://www.ikp.tu-darmstadt.de/gruppen_ikp/ag_noertershaeuser/publications_wn/finished_theses_wn/index.de.jsp
 - Technical University of Darmstadt | 2019–2019 (1) | known not-a-list | https://www.iwar.tu-darmstadt.de/abwasser/fgat/forschung_at/dissertation_at/dissertation_1.de.jsp
 - Technical University of Darmstadt | 2019–2019 (1) | known not-a-list | https://www.iwar.tu-darmstadt.de/abwasser/fgat/forschung_at/dissertation_at/dissertation_1.en.jsp
+- Technical University of Darmstadt | 2021–2021 (1) | new | https://www.kom.tu-darmstadt.de/de/teaching/theses/best/
 - Technical University of Darmstadt | 2020–2020 (1) | new | https://www.kom.tu-darmstadt.de/de/teaching/theses/plagiarism/
 - Technical University of Darmstadt | 2018–2018 (7) | known not-a-list | https://www.kom.tu-darmstadt.de/en/2/14/14/?no_cache=1&theses%5BshowUid%5D=1253&cHash=040472bef94d2157e20f5cbf1d69972a
 - Technical University of Darmstadt | 2018–2018 (26) | known not-a-list | https://www.kom.tu-darmstadt.de/en/research-results/phd-theses/
@@ -1076,12 +1136,13 @@ One line per address: institution | years captured | known page? | address. Acce
 - Technical University of Darmstadt | 2019–2019 (1) | known not-a-list | https://www.kom.tu-darmstadt.de/teaching/theses/best/
 - Technical University of Darmstadt | 2020–2020 (1) | new | https://www.kom.tu-darmstadt.de/teaching/theses/completed/?no_cache=1
 - Technical University of Darmstadt | 2020–2020 (1) | new | https://www.kom.tu-darmstadt.de/teaching/theses/in-progress/?no_cache=1
-- Technical University of Darmstadt | 2019–2020 (3) | known not-a-list | https://www.kom.tu-darmstadt.de/teaching/theses/open/
+- Technical University of Darmstadt | 2019–2021 (4) | known not-a-list | https://www.kom.tu-darmstadt.de/teaching/theses/open/
 - Technical University of Darmstadt | 2017–2017 (1) | known not-a-list | http://www.kunstgeschichte.architektur.tu-darmstadt.de/ku_ge/forsch_diss_kuge/jenrich_dissertation.de.jsp
 - Technical University of Darmstadt | 2017–2017 (1) | known not-a-list | http://www.kunstgeschichte.architektur.tu-darmstadt.de/ku_ge/forsch_diss_kuge/koeberer_dissertation.de.jsp
 - Technical University of Darmstadt | 2018–2018 (1) | known not-a-list | https://www.kunstgeschichte.architektur.tu-darmstadt.de/ku_ge/forsch_diss_kuge/rohrdrommel_dissertation.de.jsp
 - Technical University of Darmstadt | 2018–2018 (1) | known not-a-list | https://www.kunstgeschichte.architektur.tu-darmstadt.de/ku_ge/forsch_diss_kuge/scheppat_dissertation.de.jsp
 - Technical University of Darmstadt | 2020–2020 (1) | new | https://www.rs.tu-darmstadt.de/en/teaching/finished-theses/2018/
+- Technical University of Darmstadt | 2021–2021 (1) | new | https://www.rsm.tu-darmstadt.de/teaching_rsm/theses_rsm/index.de.jsp
 - Technical University of Darmstadt | 2018–2018 (2) | known not-a-list | https://www.seemoo.tu-darmstadt.de/theses/details/?C=D;O=A
 - Technical University of Darmstadt | 2017–2017 (1) | known not-a-list | http://www.stg.tu-darmstadt.de/teaching/theses/details_1536.en.jsp
 - Technical University of Darmstadt | 2017–2017 (1) | known not-a-list | http://www.stg.tu-darmstadt.de/teaching/theses/details_1600.en.jsp
@@ -1102,7 +1163,9 @@ One line per address: institution | years captured | known page? | address. Acce
 - Technical University of Darmstadt | 2017–2017 (1) | known not-a-list | http://www.stg.tu-darmstadt.de/teaching/theses/details_7040.en.jsp
 - Technical University of Darmstadt | 2017–2017 (1) | known not-a-list | http://www.stg.tu-darmstadt.de/teaching/theses/index.de.jsp
 - Technical University of Darmstadt | 2016–2019 (3) | known not-a-list | http://www.stg.tu-darmstadt.de/teaching/theses/index.en.jsp
-- Technical University of Darmstadt | 2020–2020 (1) | new | https://theorie.ikp.physik.tu-darmstadt.de/tnp/index.php?doc=theses
+- Technical University of Darmstadt | 2021–2021 (1) | new | https://www.stg.tu-darmstadt.de/teaching_stg/theses_stg/index.en.jsp
+- Technical University of Darmstadt | 2021–2021 (1) | new | https://theorie.ikp.physik.tu-darmstadt.de/tnp/?doc=theses | 1 pages below it
+- Technical University of Darmstadt | 2021–2021 (1) | new | https://www.ulb.tu-darmstadt.de/forschen_publizieren/publizieren/dissertation/index.de.jsp
 - Technical University of Darmstadt | 2019–2019 (1) | known not-a-list | https://www.visinf.tu-darmstadt.de/pubs/dissertation/index.en.jsp
 - Technical University of Darmstadt | 2020–2020 (1) | new | https://www.visinf.tu-darmstadt.de/vi_research/pubs/dissertation/index.en.jsp
 - Technical University of Denmark | 2020–2020 (1) | new | https://www.alumni.dtu.dk/kalender/Arrangement?id=%7B197F0B7F-E023-4008-8F15-090232705DBA%7D
@@ -1129,12 +1192,14 @@ One line per address: institution | years captured | known page? | address. Acce
 - Technical University of Denmark | 2019–2019 (1) | known not-a-list | https://www.alumni.dtu.dk/nyhed/nyhed?id=F645C84C-D1D2-46AA-8D1B-B6029F87E91A&utm_device=web&utm_source=RelatedNews&utm_campaign=Phd-forsvar-Sebastian-Politis
 - Technical University of Denmark | 2019–2019 (1) | known not-a-list | https://www.alumni.dtu.dk/nyhed/nyhed?id=FCE375BB-10C5-47D3-A836-10C55F172E92&utm_device=web&utm_source=RelatedNews&utm_campaign=Phd-forsvar-Sebastian-Politis
 - Technical University of Dortmund | 2020–2020 (1) | new | https://brost.ifj.tu-dortmund.de/startseite/aktuelles/siic-fellow-michael-serwornoo-hat-dissertation-erfolgreich-verteidigt/
-- Technical University of Dortmund | 2019–2019 (1) | known not-a-list | http://epc.tu-dortmund.de/wordpress/de/teaching/topics-for-theses/
+- Technical University of Dortmund | 2019–2021 (2) | known not-a-list | http://epc.tu-dortmund.de/wordpress/de/teaching/topics-for-theses/
 - Technical University of Dortmund | 2020–2020 (1) | new | http://epc.tu-dortmund.de/wordpress/en/teaching/topics-for-theses/
 - Technical University of Dortmund | 2018–2020 (3) | known not-a-list | http://www.perfect.lfo.tu-dortmund.de/dissertation-projects/
+- Technical University of Dortmund | 2021–2021 (1) | new | https://physik.tu-dortmund.de/en/study/courses-and-qualification/doctoral-program/completed-dissertations/
 - Technical University of Dortmund | 2020–2020 (1) | new | https://www.statistik.tu-dortmund.de/iwus-theses.html
-- Technical University of Dortmund | 2020–2020 (1) | new | https://www.statistik.tu-dortmund.de/ligges_theses.html
+- Technical University of Dortmund | 2020–2021 (2) | new | https://www.statistik.tu-dortmund.de/ligges_theses.html
 - Technical University of Dortmund | 2020–2020 (1) | new | https://www.statistik.tu-dortmund.de/msind-theses.html
+- Technical University of Dortmund | 2021–2021 (1) | new | https://www.statistik.tu-dortmund.de/natwi-theses.html
 - Technical University of Dortmund | 2020–2020 (1) | new | https://www.tu-dortmund.de/en/international/studying-at-tu-dortmund-university/doctoral-candidates/
 - Technical University of Dortmund | 2018–2018 (1) | known not-a-list | http://www.zhb.tu-dortmund.de/zhb/hdhf/en/teaching/graduation-theses/
 - Technical University of Munich | 2016–2017 (2) | known not-a-list | http://www.gs.tum.de/en/doctoral-candidates/administrative-matters/
@@ -1182,17 +1247,18 @@ One line per address: institution | years captured | known page? | address. Acce
 - The Ohio State University | 2013–2014 (5) | known not-a-list | http://fisher.osu.edu/mble/alumni/
 - The Ohio State University | 2013–2014 (5) | known not-a-list | http://fisher.osu.edu/mhrm/alumni/
 - The University of Melbourne | 2020–2020 (1) | new | https://findanexpert.unimelb.edu.au/scholarlywork/265980-rights-issues-versus-placements-in-australia--regulation-or-choice%3F
+- The University of Melbourne | 2021–2021 (1) | new | https://findanexpert.unimelb.edu.au/scholarlywork/327692-ventriculocystostomy-and-endoscopic-third-ventriculostomy-shunt-placement-in-the-management-of-hydrocephalus-secondary-to-giant-retrocerebellar-cysts-in-infancy-report-of-3-cases
 - The University of Mississippi | 2019–2019 (1) | known not-a-list | https://gradschool.olemiss.edu/tdm-parts-of-a-thesis-or-dissertation/
 - The University of Mississippi | 2013–2016 (8) | known not-a-list | http://news.olemiss.edu/recreation-management-majors-enjoy-thriving-job-market/
 - The University of Texas at Austin | 2013–2017 (35) | known not-a-list | http://www.mccombs.utexas.edu/404?item=%2f2013%2f02%2fmoney-ethics-and-energy-at-the-alumni-business-conference&user=extranet%5cAnonymous&site=website
-- The University of Texas at Austin | 2013–2020 (64) | known not-a-list | http://www.mccombs.utexas.edu/Alumni | 20 pages below it
+- The University of Texas at Austin | 2013–2020 (64) | known not-a-list | http://www.mccombs.utexas.edu/Alumni | 17 pages below it
 - The University of Texas at Austin | 2013–2017 (21) | known not-a-list | http://www.mccombs.utexas.edu/Alumni.aspx
 - The University of Texas at Austin | 2013–2014 (10) | known not-a-list | http://www.mccombs.utexas.edu/BBA/Advising/New/Freshman/Placement.aspx
 - The University of Texas at Austin | 2013–2013 (2) | known not-a-list | http://www.mccombs.utexas.edu/BBA/Graduation/McCombs-BBA-Ceremony/Graduates-Instructions.aspx
 - The University of Texas at Austin | 2013–2013 (2) | known not-a-list | http://www.mccombs.utexas.edu/BBA/Graduation/McCombs-BBA-Ceremony/Guests-of-Graduates.aspx
 - The University of Texas at Austin | 2013–2014 (6) | known not-a-list | http://www.mccombs.utexas.edu/bba/ip/alumni | 3 pages below it
 - The University of Texas at Austin | 2013–2014 (7) | known not-a-list | http://www.mccombs.utexas.edu/BBA/IP/Alumni.aspx
-- The University of Texas at Austin | 2013–2015 (17) | known not-a-list | http://www.mccombs.utexas.edu/BHP/Alumni | 10 pages below it
+- The University of Texas at Austin | 2013–2015 (17) | known not-a-list | http://www.mccombs.utexas.edu/BHP/Alumni | 8 pages below it
 - The University of Texas at Austin | 2013–2015 (14) | known not-a-list | http://www.mccombs.utexas.edu/BHP/Alumni.aspx
 - The University of Texas at Austin | 2020–2020 (1) | new | https://www.mccombs.utexas.edu/Centers/Social-Innovation-Initiative/Alumni
 - The University of Texas at Austin | 2018–2020 (3) | known not-a-list | https://www.mccombs.utexas.edu/Centers/Texas-Venture-Labs/Alumni
@@ -1202,7 +1268,7 @@ One line per address: institution | years captured | known page? | address. Acce
 - The University of Texas at Austin | 2013–2013 (1) | known not-a-list | http://www.mccombs.utexas.edu/Home/BBA/Graduation/McCombs-BBA-Ceremony/Graduates-Instructions
 - The University of Texas at Austin | 2013–2013 (1) | known not-a-list | http://www.mccombs.utexas.edu/Home/BBA/Graduation/McCombs-BBA-Ceremony/Guests-of-Graduates
 - The University of Texas at Austin | 2013–2013 (1) | known not-a-list | http://www.mccombs.utexas.edu/Home/BBA/IP/Alumni | 2 pages below it
-- The University of Texas at Austin | 2013–2015 (9) | known not-a-list | http://www.mccombs.utexas.edu/Home/BHP/Alumni | 5 pages below it
+- The University of Texas at Austin | 2013–2015 (9) | known not-a-list | http://www.mccombs.utexas.edu/Home/BHP/Alumni | 4 pages below it
 - The University of Texas at Austin | 2013–2013 (1) | known not-a-list | http://www.mccombs.utexas.edu/Home/Centers/Venture-Labs-Investment-Competition/Alumni-Panel
 - The University of Texas at Austin | 2013–2016 (11) | known not-a-list | http://www.mccombs.utexas.edu/Home/Invest-In-McCombs/Alumni
 - The University of Texas at Austin | 2014–2015 (5) | known not-a-list | http://www.mccombs.utexas.edu/Home/MPA/Alumni
@@ -1232,6 +1298,7 @@ One line per address: institution | years captured | known page? | address. Acce
 - Tilburg University | 2019–2019 (1) | known not-a-list | https://research.tilburguniversity.edu/en/activities/external-examiner-of-dissertation-mr-m-wilkinson
 - Tilburg University | 2019–2019 (1) | known single-record | https://research.tilburguniversity.edu/en/activities/member-dissertation-committee-student-np-fumero
 - Tilburg University | 2020–2020 (1) | new | https://research.tilburguniversity.edu/en/activities/phd-dissertation-jacob-hartvig-sandager-hansen-i-am-the-bubble-ma
+- Tsinghua University | 2021–2021 (4) | new | https://cslt.riit.tsinghua.edu.cn/mediawiki/index.php?title=Pre-dissertation_of_Miao_Fan&action=edit | 2 pages below it
 - Universitat Pompeu Fabra | 2016–2016 (20) | known not-a-list | http://complex.upf.edu/?ma=business-dissertation-topics
 - Universitat Pompeu Fabra | 2013–2014 (4) | known not-a-list | http://www.upf.edu/alumni/actualitat/lluisgalter.html
 - Universitat Pompeu Fabra | 2013–2014 (4) | known not-a-list | http://www.upf.edu/alumni/actualitat/nachosequeira.html
@@ -1251,6 +1318,9 @@ One line per address: institution | years captured | known page? | address. Acce
 - University College Dublin | 2020–2020 (1) | new | http://faraday1.ucd.ie/theses.html
 - University College Dublin | 2020–2020 (2) | new | http://ngrams.ucd.ie/therex2/common-nouns/member.action?member=electrode_placement
 - University College Dublin | 2019–2019 (15) | known not-a-list | http://ngrams.ucd.ie/therex3/common-nouns/member.action?kw=boulder_placement
+- University at Buffalo, The State University of New York | 2021–2021 (1) | new | https://management.buffalo.edu/degree-programs/phd-in-management/program/operations-strategy/alumni.html
+- University at Buffalo, The State University of New York | 2021–2021 (1) | new | https://management.buffalo.edu/degree-programs/phd-in-management/program/organization-human-resources/alumni.html
+- University at Buffalo, The State University of New York | 2021–2021 (1) | known program-list | https://management.buffalo.edu/degree-programs/phd-in-management/program/science-systems/alumni.html
 - University at Buffalo, The State University of New York | 2018–2018 (1) | known not-a-list | https://research.lib.buffalo.edu/industrial-systems-engineering/dissertations
 - University of Alberta | 2019–2019 (1) | known program-list | https://www.ualberta.ca/business/programs/phd/our-students/job-market
 - University of Alberta | 2019–2019 (1) | known program-list | https://www.ualberta.ca/business/programs/phd/our-students/list-of-graduates
@@ -1297,6 +1367,7 @@ One line per address: institution | years captured | known page? | address. Acce
 - University of Bristol | 2017–2020 (2) | known not-a-list | http://www.bristol.ac.uk/academic-quality/assessment/regulations-and-code-of-practice-for-taught-programmes/industrial-placements/
 - University of Bristol | 2019–2019 (1) | known not-a-list | http://www.bristol.ac.uk/doctoral-college/current-research-students/pgr-funds/industrial-phd-placement-fund/
 - University of British Columbia | 2013–2013 (1) | known not-a-list | http://engineering.ubc.ca/eng/students/1st-year/second-year-placement
+- University of British Columbia | 2021–2021 (2) | new | https://www.grad.ubc.ca/current-students/dissertation-thesis-preparation/including-published-co-authored-or-collaborative
 - University of British Columbia | 2018–2018 (1) | known not-a-list | https://www.grad.ubc.ca/current-students/dissertation-thesis-preparation/including-published-material-thesis-or-dissertation
 - University of British Columbia | 2017–2017 (1) | known not-a-list | https://www.grad.ubc.ca/current-students/graduate-pathways-success/start-your-thesis-or-dissertation
 - University of British Columbia | 2017–2017 (1) | known not-a-list | https://www.mail.ubc.ca/owa/auth/logon.aspx?url=http://www.mail.ubc.ca/owa/redir.aspx%3FC=Cr_Iy754Ku2NcxhjYOc-wUQL74oLYfJsQOBwjQzDdGJrNhLD7uPTCA..%26URL=https%253A%252F%252Fwww.grad.ubc.ca%252Fcurrent-students%252Fdissertation-thesis-preparation%252Fincluding-published-material-thesis-or-dissertation&reason=0
@@ -1353,10 +1424,14 @@ One line per address: institution | years captured | known page? | address. Acce
 - University of California San Diego | 2018–2019 (5) | known program-list | https://rady.ucsd.edu/programs/phd/job-market-candidates/
 - University of California San Diego | 2013–2014 (12) | known not-a-list | http://rady.ucsd.edu/student-alumni-connections/
 - University of California at Riverside | 2014–2017 (7) | known not-a-list | http://www.ee.ucr.edu/news-events/article.php?EID=40&Article=How-To-Succeed-In-The-Entry-Level-Engineering-Job-Market-
+- University of California, Berkeley | 2021–2021 (1) | new | https://blumcenter.berkeley.edu/another-year-of-outstanding-development-engineering-and-infews-doctoral-graduates/
+- University of California, Berkeley | 2021–2021 (1) | new | https://bootcamp.berkeley.edu/data/landing1/?s=Google-Unbranded&msg_cv_scta=4&msg_cv_stbn=1&msg_cv_fcta=1&fqvar1=3&pkw=python%20tutorial&pcrid=459930239712&pmt=e&utm_source=google&utm_medium=cpc&utm_campaign=GGL%7CUC-BERKELEY%7CSEM%7CDATA%7C-%7COFL%7CTIER-1%7CALL%7CNBD-G%7CEXACT%7CSoftware%7CSubject-Matter&utm_term=python%20tutorial&s=google&k=python%20tutorial&utm_adgroupid=109059828953&utm_locationphysicalms=9032064&utm_matchtype=e&utm_network=g&utm_device=c&utm_content=459930239712&utm_placement=&gclid=EAIaIQobChMI1-CjurbY7AIVPB-tBh2feQpkEAAYASAAEgIzovD_BwE&gclsrc=aw.ds
 - University of California, Berkeley | 2017–2018 (2) | known not-a-list | http://engineering.berkeley.edu/what-job-placement-rate-engineering-students-after-graduation
 - University of California, Berkeley | 2020–2020 (1) | new | https://grad.berkeley.edu/deadline/file-thesis-or-dissertation-fall-2019-deadline/
+- University of California, Berkeley | 2021–2021 (1) | new | https://grad.berkeley.edu/deadline/file-thesis-or-dissertation-fall-2021-deadline/
 - University of California, Berkeley | 2019–2020 (2) | known not-a-list | https://grad.berkeley.edu/deadline/file-thesis-or-dissertation-summer-2019-deadline/
 - University of California, Berkeley | 2020–2020 (1) | new | https://grad.berkeley.edu/deadline/file-thesis-or-dissertation-summer-2020-deadline/
+- University of California, Berkeley | 2021–2021 (1) | new | https://grad.berkeley.edu/deadline/file-thesis-or-dissertation-summer-2021-deadline/
 - University of California, Berkeley | 2013–2016 (16) | known program-list | http://haas.berkeley.edu/Phd/academics/bpp/placement.html
 - University of California, Berkeley | 2013–2015 (24) | known program-list | http://www.haas.berkeley.edu/Phd/academics/jobmarket.html
 - University of California, Berkeley | 2013–2016 (15) | known program-list | http://haas.berkeley.edu/Phd/academics/management/placement.html
@@ -1364,10 +1439,14 @@ One line per address: institution | years captured | known page? | address. Acce
 - University of California, Berkeley | 2018–2020 (4) | known program-list | https://haas.berkeley.edu/phd/careers/job-placements/
 - University of California, Berkeley | 2013–2016 (17) | known program-list | http://www.haas.berkeley.edu/Phd/careers/jobmarket.html
 - University of California, Berkeley | 2013–2016 (17) | known program-list | http://www.haas.berkeley.edu/Phd/community/alumni/ | 19 pages below it
-- University of California, Berkeley | 2018–2020 (5) | known program-list | https://haas.berkeley.edu/phd/community/alumni-network/ | 10 pages below it
-- University of California, Berkeley | 2017–2019 (4) | known not-a-list | http://ieor.berkeley.edu/alumni/
-- University of California, Berkeley | 2019–2019 (1) | known not-a-list | https://ieor.berkeley.edu/meng-alumni-are-finalists-in-ibm-call-for-code-2019-global-prize/
-- University of California, Berkeley | 2019–2019 (1) | known not-a-list | https://ieor.berkeley.edu/uc-researchers-show-how-better-placement-of-defibrillators-can-save-lives/
+- University of California, Berkeley | 2018–2021 (6) | known program-list | https://haas.berkeley.edu/phd/community/alumni-network/ | 10 pages below it
+- University of California, Berkeley | 2021–2021 (1) | new | https://ieor.berkeley.edu/about/where-alumni-work/
+- University of California, Berkeley | 2021–2021 (1) | new | https://ieor.berkeley.edu/academics/phd/recent-phd-placements/
+- University of California, Berkeley | 2017–2019 (4) | known not-a-list | http://ieor.berkeley.edu/alumni/ | 3 pages below it
+- University of California, Berkeley | 2021–2021 (2) | new | http://ieor.berkeley.edu/alumni-friends/
+- University of California, Berkeley | 2021–2021 (1) | new | https://ieor.berkeley.edu/alumni-gather-for-spring-2016-alumni-social/
+- University of California, Berkeley | 2019–2021 (2) | known not-a-list | https://ieor.berkeley.edu/meng-alumni-are-finalists-in-ibm-call-for-code-2019-global-prize/
+- University of California, Berkeley | 2019–2021 (2) | known not-a-list | https://ieor.berkeley.edu/uc-researchers-show-how-better-placement-of-defibrillators-can-save-lives/
 - University of California, Berkeley | 2019–2019 (1) | known not-a-list | https://mfe.haas.berkeley.edu/careers/mfe-placements
 - University of California, Berkeley | 2017–2017 (1) | known not-a-list | http://newsroom.haas.berkeley.edu/phd-graduates-teach-12-universities-worldwide/
 - University of California, Davis | 2017–2017 (1) | known not-a-list | http://das.engineering.ucdavis.edu/alumni-dissertations/
@@ -1427,7 +1506,7 @@ One line per address: institution | years captured | known page? | address. Acce
 - University of Cincinnati | 2019–2023 (17) | known program-list | https://business.uc.edu/academics/phd/marketing/placements.html
 - University of Cincinnati | 2019–2023 (20) | known not-a-list | https://business.uc.edu/academics/phd/obais/placements.html
 - University of Cologne | 2020–2020 (1) | new | https://iis.uni-koeln.de/de/teaching/theses/project-management
-- University of Colorado Boulder | 2019–2019 (1) | known program-list | https://www.colorado.edu/business/phd/phd-placements
+- University of Colorado Boulder | 2019–2021 (2) | known program-list | https://www.colorado.edu/business/phd/phd-placements
 - University of Connecticut | 2017–2017 (1) | known single-record | http://alumni.business.uconn.edu/brian-fox-17-ph-d/
 - University of Connecticut | 2020–2020 (1) | new | https://management.business.uconn.edu/ph-d-in-management/alumni/
 - University of Connecticut | 2017–2017 (1) | known not-a-list | http://management.business.uconn.edu/ph-d-in-management/dissertation-proposal/
@@ -1464,6 +1543,7 @@ One line per address: institution | years captured | known page? | address. Acce
 - University of Houston | 2013–2013 (2) | known not-a-list | http://www.bauer.uh.edu/doctoral/management/dissertation-new.asp
 - University of Houston | 2013–2020 (22) | known not-a-list | http://bauer.uh.edu/doctoral/management/dissertation-new.php
 - University of Illinois Urbana-Champaign | 2019–2019 (1) | known program-list | https://ise.illinois.edu/graduate/dissertations.html
+- University of Illinois Urbana-Champaign | 2021–2021 (1) | new | https://publish.illinois.edu/hergenrother-lab/group-business/dissertations/
 - University of Iowa | 2014–2014 (1) | known not-a-list | http://www.engineering.uiowa.edu/ess/fun-facts/placement-rate
 - University of Iowa | 2014–2014 (3) | known not-a-list | http://www.engineering.uiowa.edu/ess/what-are-first-destination-placement-rates-starting-salaries-engineering-iowa-graduates
 - University of Iowa | 2014–2015 (7) | known not-a-list | http://www.engineering.uiowa.edu/mie/graduate-program/industrial-engineering-graduate-program/recent-theses-dissertations
@@ -1483,9 +1563,13 @@ One line per address: institution | years captured | known page? | address. Acce
 - University of Iowa | 2013–2015 (8) | known not-a-list | http://tippie.uiowa.edu/phd/placement.cfm
 - University of Kansas | 2017–2019 (16) | known not-a-list | https://business.ku.edu/phd-alumni
 - University of Kent | 2019–2019 (1) | known not-a-list | https://blogs.kent.ac.uk/aspirations/wp-login.php?redirect_to=https%3A%2F%2Fblogs.kent.ac.uk%2Faspirations%2F2019%2F03%2F14%2F12-month-london-based-asset-management-placements%2F
+- University of Lausanne | 2021–2021 (1) | new | https://cin.cms.unil.ch/hec-phd/home/menuinst/programs/phd-in-management/past-phd-theses.html
+- University of Lausanne | 2021–2021 (1) | new | https://cin.cms.unil.ch/hec-phd/home/menuinst/programs/phd-in-management/placements--alumni.html
+- University of Lausanne | 2021–2021 (1) | new | https://iltp.cms.unil.ch/hec-phd/home/menuinst/programs/phd-in-management/past-phd-theses.html
+- University of Lausanne | 2021–2021 (1) | new | https://iltp.cms.unil.ch/hec-phd/home/menuinst/programs/phd-in-management/placements--alumni.html
 - University of Lausanne | 2019–2019 (1) | known program-list | https://www.unil.ch/hec-phd/en/home/menuinst/programs/phd-in-management/past-phd-theses.html
 - University of Lausanne | 2019–2020 (4) | known not-a-list | http://www.unil.ch/hec-phd/home/menuinst/programs/phd-in-management/past-phd-theses.html
-- University of Lausanne | 2019–2020 (3) | known program-list | http://www.unil.ch/hec-phd/home/menuinst/programs/phd-in-management/placements--alumni.html
+- University of Lausanne | 2019–2021 (5) | known program-list | http://www.unil.ch/hec-phd/home/menuinst/programs/phd-in-management/placements--alumni.html
 - University of Lausanne | 2020–2020 (1) | new | https://www.unil.ch/lacs/fr/home/menuinst/recherche/theses-en-cours/chautems-caroline.html
 - University of Lausanne | 2019–2019 (1) | known not-a-list | https://www.unil.ch/lacs/home/menuinst/recherche/theses-en-cours/chautems-caroline.html
 - University of Leicester | 2017–2017 (1) | known not-a-list | https://www2.le.ac.uk/colleges/scieng/industrial-placements-1/ | 2 pages below it
@@ -1495,13 +1579,13 @@ One line per address: institution | years captured | known page? | address. Acce
 - University of Louisville | 2017–2017 (1) | known not-a-list | https://louisville.edu/dehs/emergency/doc/cepdoc/suppdoc/advanced-placement-summer-institute/emergency_poster-pdf/view
 - University of Louisville | 2015–2019 (9) | known not-a-list | http://louisville.edu/dentistry/placement | 1 pages below it
 - University of Louisville | 2020–2020 (1) | new | https://louisville.edu/graduate/current-students/electronic-thesis-dissertation-signature-pages-1
-- University of Louisville | 2013–2013 (2) | known not-a-list | http://louisville.edu/graduate/news-1/deadlines-for-submitting-thesis-dissertation-2013-2014 | 1 pages below it
+- University of Louisville | 2013–2013 (2) | known not-a-list | http://louisville.edu/graduate/news-1/deadlines-for-submitting-thesis-dissertation-2013-2014
 - University of Louisville | 2014–2014 (1) | known not-a-list | http://louisville.edu/graduate/news-1/deadlines-for-submitting-thesis-dissertation-2014-2015
 - University of Louisville | 2013–2016 (3) | known not-a-list | http://louisville.edu/honors/Enrichment-opportunities/senior-honors-theses | 2 pages below it
 - University of Louisville | 2014–2020 (5) | known not-a-list | http://louisville.edu/honors/senior-honors-theses | 8 pages below it
 - University of Louisville | 2017–2018 (4) | known not-a-list | https://louisville.edu/oapa/ie/job-placement-data
 - University of Louisville | 2016–2016 (2) | known not-a-list | https://louisville.edu/parking/rules-regulations/placement-of-permit
-- University of Louisville | 2013–2013 (1) | known not-a-list | http://louisville.edu/parking/rules/permit_placement.html | 1 pages below it
+- University of Louisville | 2013–2013 (1) | known not-a-list | http://louisville.edu/parking/rules/permit_placement.html
 - University of Louisville | 2019–2019 (1) | known not-a-list | http://louisville.edu/politicalscience/graduate-studies-2/graduate-student-alumni-where-are-they-now/these-alums-are-pursuing-additional-graduate-study
 - University of Louisville | 2019–2019 (1) | known not-a-list | http://louisville.edu/politicalscience/graduate-studies-2/graduate-student-alumni-where-are-they-now/these-alums-are-successful-in-various-fields
 - University of Louisville | 2019–2019 (1) | known not-a-list | http://louisville.edu/politicalscience/graduate-studies-2/graduate-student-alumni-where-are-they-now/these-alums-became-academics
@@ -1509,16 +1593,17 @@ One line per address: institution | years captured | known page? | address. Acce
 - University of Louisville | 2013–2014 (3) | known not-a-list | http://louisville.edu/speed/events-1/2012/thesis-and-dissertation-deadline-for-dec-2012.ics | 1 pages below it
 - University of Louisville | 2013–2013 (2) | known program-list | http://louisville.edu/speed/industrial/academics/examples-of-completed-dissertations.html
 - University of Louisville | 2017–2018 (2) | known not-a-list | http://louisville.edu/sphis/alumni-and-donors/alumni-news/todd-misener-phd-named-oklahoma-state-university2019s-chief-wellness-officer
-- University of Louisville | 2014–2014 (2) | known not-a-list | http://louisville.edu/upa/phd-program-graduates.html | 1 pages below it
+- University of Louisville | 2014–2014 (2) | known not-a-list | http://louisville.edu/upa/phd-program-graduates.html
 - University of Louisville | 2018–2018 (1) | known not-a-list | http://louisville.edu/upa/programs/mpa/mpa-job-placements-1
 - University of Louisville | 2018–2019 (3) | known not-a-list | http://louisville.edu/upa/programs/mup/mup-job-placements
 - University of Louisville | 2019–2019 (1) | known not-a-list | http://louisville.edu/upa/programs/PhD_Grad_Dissertation_Titles_092719.pdf/view
 - University of Louvain | 2013–2013 (1) | known not-a-list | http://sites.uclouvain.be/alumni-akal/
 - University of Louvain | 2013–2013 (1) | known not-a-list | http://sites.uclouvain.be/alumni/louvain.html
+- University of Louvain | 2021–2021 (1) | new | https://sites.uclouvain.be/reso/opac_css/index.php?lvl=more_results&mode=keyword&user_query=ALTERNATIVE+AU+PLACEMENT&tags=ok
 - University of Manchester | 2019–2019 (1) | known not-a-list | https://www.research.manchester.ac.uk/portal/en/researchers/caroline-jay(734c8dde-9334-4cb6-a4f6-373e08044413)/theses.html
 - University of Manchester | 2019–2019 (1) | known not-a-list | https://www.research.manchester.ac.uk/portal/en/researchers/ian-anderson(f02b1ceb-6075-4813-a582-48c0d0aa4681)/theses.html
-- University of Mannheim | 2018–2020 (2) | known program-list | https://gess.uni-mannheim.de/doctoral-programs/business-cdsb/alumni.html
-- University of Mannheim | 2018–2019 (3) | known not-a-list | https://gess.uni-mannheim.de/doctoral-programs/business-cdsb/job-market-candidates.html
+- University of Mannheim | 2018–2021 (3) | known program-list | https://gess.uni-mannheim.de/doctoral-programs/business-cdsb/alumni.html
+- University of Mannheim | 2018–2021 (4) | known not-a-list | https://gess.uni-mannheim.de/doctoral-programs/business-cdsb/job-market-candidates.html
 - University of Mannheim | 2019–2019 (1) | new | https://gess.uni-mannheim.de/placements/alumni-map.html
 - University of Mannheim | 2019–2019 (1) | new | https://gess.uni-mannheim.de/placements/alumni.html
 - University of Mannheim | 2019–2019 (1) | new | https://gess.uni-mannheim.de/placements/job-market-candidates.html
@@ -1533,7 +1618,7 @@ One line per address: institution | years captured | known page? | address. Acce
 - University of Maryland, College Park | 2013–2019 (11) | known program-list | http://www.rhsmith.umd.edu/programs/phd-program/your-career/job-market-candidates
 - University of Maryland, College Park | 2014–2015 (10) | known not-a-list | http://www.rhsmith.umd.edu/tags/dissertation
 - University of Massachusetts Amherst | 2018–2018 (1) | known not-a-list | https://www.cics.umass.edu/industrial-affiliates/job-placement
-- University of Massachusetts Amherst | 2013–2017 (9) | known not-a-list | http://scholarworks.umass.edu/dissertations/ | 2932 pages below it
+- University of Massachusetts Amherst | 2013–2017 (9) | known not-a-list | http://scholarworks.umass.edu/dissertations/
 - University of Massachusetts Amherst | 2020–2020 (1) | new | https://scholarworks.umass.edu/dissertations_1/
 - University of Massachusetts Amherst | 2014–2019 (6) | known not-a-list | http://scholarworks.umass.edu/dissertations_2/ | 2 pages below it
 - University of Massachusetts Amherst | 2013–2016 (9) | known program-list | http://scholarworks.umass.edu/management_dissertations/ | 1 pages below it
@@ -1674,6 +1759,8 @@ One line per address: institution | years captured | known page? | address. Acce
 - University of Missouri-Columbia | 2017–2019 (3) | known not-a-list | https://business.missouri.edu/phd-placements
 - University of Missouri-Columbia | 2019–2019 (1) | known not-a-list | https://engineering.missouri.edu/2006/10/career-fair-reflects-strong-engineering-job-market/
 - University of Missouri-Columbia | 2013–2018 (9) | known not-a-list | http://engineering.missouri.edu/2013/06/airport-designs-net-placements-in-national-faa-competition/
+- University of New South Wales | 2021–2021 (1) | new | https://www.unsw.edu.au/business/engage-us/alumni-stories/postgraduate-stories/what-its-do-business-placement-overseas
+- University of New South Wales | 2021–2021 (1) | new | https://www.unsw.edu.au/business/our-research/research-excellence/student-placements
 - University of North Carolina at Chapel Hill | 2019–2019 (3) | known program-list | https://areas.kenan-flagler.unc.edu/operations/phd-graduates
 - University of North Carolina at Chapel Hill | 2017–2019 (5) | known not-a-list | http://blog.kenan-flagler.unc.edu/how-ube-opened-the-job-market-for-me/
 - University of North Carolina at Chapel Hill | 2013–2016 (7) | known not-a-list | http://blogs.kenan-flagler.unc.edu/ube/2010/03/standing-out-in-todays-competitive-job-market/
@@ -1734,7 +1821,8 @@ One line per address: institution | years captured | known page? | address. Acce
 - University of Southern California | 2020–2020 (1) | new | https://www.marshall.usc.edu/programs/phd-program/placement
 - University of Southern California | 2017–2017 (1) | known not-a-list | http://news.usc.edu/54834/research-confronts-efficacy-of-foster-care-placement-in-reducing-obesity/
 - University of St. Gallen | 2019–2019 (1) | known not-a-list | https://energymanagement.unisg.ch/en/forschung/doktorat/economicsandfinance/job-market-candidates
-- University of St. Gallen | 2020–2020 (1) | new | https://energymanagement.unisg.ch/en/forschung/doktorat/internationalaffairsandpoliticaleconomydia/alumni
+- University of St. Gallen | 2021–2021 (1) | new | https://energymanagement.unisg.ch/en/forschung/doktorat/graduateprogrammeeconomicsandandfinance/placements
+- University of St. Gallen | 2020–2021 (2) | new | https://energymanagement.unisg.ch/en/forschung/doktorat/internationalaffairsandpoliticaleconomydia/alumni
 - University of St. Gallen | 2017–2017 (1) | known not-a-list | https://ifm.unisg.ch/theses-in-luxury-management/
 - University of St. Gallen | 2013–2015 (4) | known not-a-list | http://www.item.unisg.ch/de/Chairs/Operations+Mgmt/Theses.aspx
 - University of St. Gallen | 2013–2015 (4) | known not-a-list | http://www.item.unisg.ch/en/Chairs/Operations+Mgmt/Theses.aspx
@@ -1747,6 +1835,7 @@ One line per address: institution | years captured | known page? | address. Acce
 - University of Sterling | 2017–2017 (2) | known not-a-list | http://www.stir.ac.uk/management/modules/postgraduate/international-business-2015-16/international-business-dissertation/
 - University of Sterling | 2017–2017 (1) | known not-a-list | http://www.stir.ac.uk/management/modules/postgraduate/international-business-and-socio-economic-development/dissertation-in-socio-economic-development/
 - University of Strathclyde | 2017–2017 (2) | known not-a-list | http://atom.lib.strath.ac.uk/unpublished-papers-theses-and-lectures-by-or-relating-to-patrick-geddes;isad?sf_culture=es
+- University of Stuttgart | 2021–2021 (1) | new | https://www.gradus.uni-stuttgart.de/aktuelles/veranstaltung/Self-management-for-Ph.D.-Candidates-digital-seminar/
 - University of Tennessee at Knoxville | 2019–2019 (1) | known program-list | https://haslam.utk.edu/management/phd/strategy-entrepreneurship-organizations/student-placement
 - University of Texas at Arlington | 2019–2019 (2) | known not-a-list | http://wweb.uta.edu/business/gradbiz/newgradbiz/PhD/alumni.html
 - University of Texas at Arlington | 2013–2013 (2) | known not-a-list | http://wweb.uta.edu/business/gradbiz/newgradbiz/thesis&dissertation.html
@@ -1807,12 +1896,15 @@ One line per address: institution | years captured | known page? | address. Acce
 - University of the West of England, Bristol (Bristol Business School, UWE) | 2019–2019 (1) | known not-a-list | https://people.uwe.ac.uk/SearchResults?query=%20Dissertation%20Supervision
 - Université Grenoble Alpes | 2019–2019 (1) | known not-a-list | https://phd-alumni.univ-grenoble-alpes.fr/page/help/a-quoi-sert-l-annuaire-des-entreprises-what-is-the-purpose-of-the-business-directory/36
 - Université Grenoble Alpes | 2019–2019 (1) | known not-a-list | https://phd-alumni.univ-grenoble-alpes.fr/page/help/comment-changer-l-adresse-email-ou-le-mot-de-passe-avec-lequel-je-me-suis-inscrit-how-do-i-change-the-email-address-or-password-i-registered-with/21
+- Université Laval | 2021–2021 (2) | new | https://lta.fsaa.ulaval.ca/?dissertation-topics-in-supply-chain-management=&chash=b64899c0d96af59542201cfc8dec3ef9&cHash=713f3f49ee751831aebc6e1ac5344a80
+- Université Laval | 2021–2021 (2) | new | https://lta.fsaa.ulaval.ca/en/?dissertation-topics-in-supply-chain-management=&chash=b64899c0d96af59542201cfc8dec3ef9&cHash=713f3f49ee751831aebc6e1ac5344a80
 - WHU – Otto Beisheim School of Management | 2017–2017 (1) | known not-a-list | https://www.whu.edu/alumni/kooperationsmoeglichkeiten/post-placement/
 - WHU – Otto Beisheim School of Management | 2016–2016 (1) | known not-a-list | https://www.whu.edu/en/career/doctoral-candidates-in-scm/
 - WHU – Otto Beisheim School of Management | 2020–2020 (1) | new | https://www.whu.edu/en/faculty-research/supply-chain-management-group/production-management/dissertation-in-production-management/
 - WHU – Otto Beisheim School of Management | 2015–2015 (1) | known not-a-list | https://www.whu.edu/karriere/doctoral-candidates-in-scm/
 - WHU – Otto Beisheim School of Management | 2013–2015 (4) | known not-a-list | http://www.whu.edu/ueber-die-whu/karriere/doctoral-candidates-in-scm/
 - Warsaw University of Technology | 2016–2017 (10) | known not-a-list | http://www.arch.pw.edu.pl/?business-dissertation-management-skill-student
+- Western University (Canada) /  University of Western at London, Ontario | 2021–2021 (1) | new | https://www.ivey.uwo.ca/internationalbusiness/students/ivey-ib-phd-graduates/
 - World Maritime University | 2017–2017 (1) | known not-a-list | http://commons.wmu.se/all_dissertations/
 - World Maritime University | 2017–2017 (1) | known not-a-list | http://commons.wmu.se/gmaep_dissertations/
 - World Maritime University | 2017–2017 (1) | known not-a-list | http://commons.wmu.se/itl_dissertations/
@@ -1876,7 +1968,6 @@ One line per address: institution | years captured | known page? | address. Acce
 - (no institution for host) | 2018–2020 (5) | new | https://ostm.edu/careers-placement/july-25-2018-professional-massage-spaces-for-rent-in-the-south-wedge/attachment/colin-coffey/
 - (no institution for host) | 2020–2020 (1) | new | https://ostm.edu/careers-placement/massage-business-for-salenovember-5th-2019/
 - (no institution for host) | 2018–2019 (4) | new | https://placement.missouriwestern.edu/
-- (no institution for host) | 2018–2019 (3) | new | https://placement.missouriwestern.edu/webwork2/? | 2 pages below it
 - (no institution for host) | 2020–2020 (1) | new | https://www.reaseheath.ac.uk/aspiring-businesswoman-hannah-puts-dissertation-research-action/
 - (no institution for host) | 2015–2015 (1) | new | https://www.rgu.ac.uk/about/faculties-schools-and-departments/aberdeen-business-school/abs-placement-office
 - (no institution for host) | 2014–2015 (4) | new | http://www.rgu.ac.uk/areas-of-study/subjects/engineering/placements-and-industrial-links | 1 pages below it
@@ -1892,7 +1983,8 @@ One line per address: institution | years captured | known page? | address. Acce
 - (no institution for host) | 2018–2019 (3) | new | https://virginiawestern.edu/dualenrollment/placement.php
 - (no institution for host) | 2019–2019 (1) | new | https://vvpedulink.ac.in/departments/computer-engineering/placement/
 - (no institution for host) | 2019–2019 (1) | new | https://vvpedulink.ac.in/departments/elec-comm-engineering/placement/
-- École polytechnique fédérale de Lausanne | 2017–2020 (17) | known not-a-list | http://algo.epfl.ch/en/output/phd_theses
+- École polytechnique fédérale de Lausanne | 2017–2021 (41) | known not-a-list | http://algo.epfl.ch/en/output/phd_theses
+- École polytechnique fédérale de Lausanne | 2021–2021 (1) | new | https://www.epfl.ch/labs/lions/alumni-phd-students/ilija-bogunovic-1/
 - École polytechnique fédérale de Lausanne | 2019–2019 (1) | known not-a-list | https://www.epfl.ch/labs/lms/research-current-phd-theses/
 - École polytechnique fédérale de Lausanne | 2019–2019 (1) | known program-list | https://www.epfl.ch/labs/transp-or/phd-graduates/
 - École polytechnique fédérale de Lausanne | 2019–2020 (2) | known not-a-list | https://www.epfl.ch/labs/transp-or/phd-theses/
