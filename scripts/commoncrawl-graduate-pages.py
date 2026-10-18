@@ -308,7 +308,11 @@ def norm_url(u):
     if host.startswith('www.'):
         host = host[4:]
     path = (re.sub(r'/+$', '', s.path) or '/').lower()
-    return host + path
+    # Most query strings are tracking or paging noise, but a few sites select the department or degree by query
+    # (a thesis database's ?Fac=20&Degree=3), and those are different pages.
+    q = s.query.lower()
+    keep = '?' + q if re.search(r'(^|&)(key|fac|degree|dept|department|program|programme|area|field|major|year|id)=', q) else ''
+    return host + path + keep
 
 
 def institution_of(host, domains):
