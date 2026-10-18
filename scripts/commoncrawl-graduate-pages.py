@@ -15,6 +15,9 @@ list research/graduate-list-pages.json and the snapshots feed the usual chunk ->
       Group the hits by page address, attach the institution by host, and write candidates.json plus a
       review sheet candidates.md: known pages (already in graduate-list-pages.json) and new addresses for
       a reviewer to accept with scope "program-list" (or refuse) in graduate-list-pages.json.
+  lookup --prefix P [P ...] (--all | --crawl ID ...)
+      Every capture of the given address prefixes in the chosen crawls, into lookup-<crawl>.jsonl, which
+      `candidates` reads like a hits file: for lead pages whose live address has moved.
   peek
       Save the text of the latest capture of each new candidate (commoncrawl/peek/) for the reviewers.
   review-chunks [--size 40] [--start N]
@@ -304,6 +307,54 @@ def scan(args):
         log(f'{crawl}: done, {hits} hits from {len(chunks)} chunks ({failed} failed), {int(time.time() - t0)}s')
 
 
+def lookup(args):
+    """Targeted lookup: every capture of the given address prefixes in the chosen crawls (--prefix P [P ...],
+    --all or --crawl ...). Streams each crawl's cluster.idx, reads only the chunks that cover the prefixes and
+    appends matching captures to lookup-<crawl>.jsonl (read by `candidates` like any hits file)."""
+    prefixes_in = args[args.index('--prefix') + 1:]
+    prefixes_in = [x for x in prefixes_in if not x.startswith('--')]
+    surts = []
+    for pfx in prefixes_in:
+        u = urlsplit(pfx if '://' in pfx else 'http://' + pfx)
+        host = u.netloc.lower()
+        host = host[4:] if host.startswith('www.') else host
+        path = u.path.lower()
+        surts.append((surt(host) + ')' + path + (('?' + u.query.lower()) if u.query else ''), pfx))
+    keys = sorted({k for k, _ in surts})
+    crawls = choose_crawls(['--all'] if '--all' in args else args)
+    log(f'{len(keys)} prefixes, {len(crawls)} crawls')
+    done = read_json(os.path.join(CDIR, 'lookup-done.json'), {})
+    for crawl in crawls:
+        mark = crawl + '|' + '|'.join(keys)
+        if mark in done:
+            continue
+        chunks = needed_chunks(crawl, keys)
+        if chunks is None:
+            log(f'{crawl}: cluster.idx unreadable, skipped')
+            continue
+        base = DATA + f'cc-index/collections/{crawl}/indexes/'
+        n = 0
+        with open(os.path.join(CDIR, f'lookup-{crawl}.jsonl'), 'a', encoding='utf-8') as out:
+            for f, o, l in chunks:
+                time.sleep(0.25)
+                r = get(base + f, headers={'Range': f'bytes={o}-{o + l - 1}'}, timeout=120)
+                if r is None:
+                    log(f'{crawl}: chunk {f}@{o} refused')
+                    continue
+                for line in gzip.decompress(r.content).decode('utf-8', 'replace').split('\n'):
+                    try:
+                        key, ts, js = line.split(' ', 2)
+                        j = json.loads(js)
+                    except ValueError:
+                        continue
+                    if any(key.startswith(k) for k in keys) and j.get('status') == '200' and 'html' in j.get('mime', ''):
+                        out.write(json.dumps({'crawl': crawl, 'key': key, 'ts': ts, 'url': j.get('url', ''), 'digest': j.get('digest'), 'filename': j.get('filename'), 'offset': int(j.get('offset', 0)), 'length': int(j.get('length', 0))}, ensure_ascii=False) + '\n')
+                        n += 1
+        done[mark] = {'at': time.strftime('%Y-%m-%d'), 'captures': n, 'chunks': len(chunks)}
+        write_json(os.path.join(CDIR, 'lookup-done.json'), done)
+        log(f'{crawl}: {n} captures from {len(chunks)} chunks')
+
+
 def norm_url(u):
     s = urlsplit(u.strip())
     host = s.netloc.lower()
@@ -335,7 +386,7 @@ def candidates(args):
     business = business_hosts_of(domains)
     groups = {}
     for fn in sorted(os.listdir(CDIR)):
-        if not fn.startswith('hits-'):
+        if not (fn.startswith('hits-') or fn.startswith('lookup-')):
             continue
         for line in open(os.path.join(CDIR, fn), encoding='utf-8'):
             h = json.loads(line)
@@ -557,6 +608,8 @@ if __name__ == '__main__':
         scan(a)
     elif mode == 'candidates':
         candidates(a)
+    elif mode == 'lookup':
+        lookup(a)
     elif mode == 'peek':
         peek(a)
     elif mode == 'review-chunks':
