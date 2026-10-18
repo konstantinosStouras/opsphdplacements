@@ -205,9 +205,9 @@ function choose() {
       if (e.kind === 'site-logo' && !(fix.pick && e.url.includes(fix.pick))) continue;
       // A Commons title search also finds the marks of bodies attached to the university (a law review, a press,
       // a sports or student club, a hospital): never chosen automatically.
-      if (e.kind === 'commons-search' && NOT_UNIVERSITY.test(decodeURIComponent(e.url)) && !(fix.pick && e.url.includes(fix.pick))) continue;
+      if (e.kind === 'commons-search' && NOT_UNIVERSITY.test(decodeURIComponent(e.url.split('/file/')[1] || '')) && !(fix.pick && e.url.includes(fix.pick))) continue;
       // ...and bold, coloured marks before thin line drawings, which turn grey on small circles.
-      const score = 3 * Math.min(r.fill / 0.85, 1) + 2 * Math.min(r.native / 150, 1) + 1.5 * Math.min((r.ink ?? 0.35) / 0.35, 1) - ((r.ink ?? 1) < 0.12 ? 2 : 0) - (r.native < 96 ? 1.5 : 0) - (r.mode === 'cover' ? 0.5 : 0) + (KIND_RANK[e.kind] ?? 0.5) + (fix.pick && e.url.includes(fix.pick) ? 100 : 0);
+      const score = 3 * Math.min(r.fill / 0.85, 1) + 2 * Math.min(r.native / 150, 1) + 1.5 * Math.min((r.ink ?? 0.35) / 0.35, 1) - ((r.ink ?? 1) < 0.12 ? 2 : 0) - (r.native < 96 ? 1.5 : 0) - (r.mode === 'cover' ? 0.5 : 0) + (KIND_RANK[e.kind] ?? 0.5) + ((fix.pick && e.url.includes(fix.pick)) || e.kind === 'review' ? 100 : 0);
       tried.push({ k: e.k, kind: e.kind, ...r, score: +score.toFixed(2) });
       if (!best || score > best.score) { best = { score, e, r }; fs.copyFileSync(tmp, target + '.tmp'); }
     }
