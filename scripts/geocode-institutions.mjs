@@ -2,6 +2,7 @@
 // Output: data/institution-locations.json. Every coordinate keeps its Wikidata ID and description so a
 // reviewer can check the match. Names that cannot be matched with confidence stay unmapped (null).
 // Usage: node scripts/geocode-institutions.mjs            PhD institutions -> data/institution-locations.json
+//        (names once searched without a match are tried again after the matching rules change: cache version 2)
 //        node scripts/geocode-institutions.mjs employers  verified first employers -> data/employer-locations.json
 // Slow on purpose: Wikidata rate-limits anonymous clients.
 import fs from 'node:fs';
@@ -40,23 +41,51 @@ const counts = new Map();
 for (const f of rows) if (f[field]) counts.set(f[field], (counts.get(f[field]) || 0) + 1);
 const names = [...counts.keys()].sort((a, b) => counts.get(b) - counts.get(a));
 
+// An employer written as a school of a university ("Georgia Institute of Technology (School of Industrial and
+// Systems Engineering)", "Columbia University, Columbia Business School", "The Wharton School, University of
+// Pennsylvania") is placed at the university: the name is searched as written first, then the university part
+// alone. The record says which name matched (matchedName), so a reviewer can check it.
+const PARENT = /universit|institute of technology|polytechnic|college\b|école|ecole|hochschule/i;
+function nameVariants(name) {
+  const base = name.replace(/ at (Ann Arbor|Chapel Hill|Fayetteville|Urbana-Champaign)$/i, '').replace(/\s*\([A-Z][A-Za-z&.\- ]{1,12}\)\s*$/, '');
+  const out = [base];
+  if (mode !== 'employers') return out;
+  const noParen = base.replace(/\s*\([^)]*\)\s*$/, '').trim();
+  if (noParen !== base && noParen) out.push(noParen);
+  const parts = noParen.split(/\s*,\s*/).map(p => p.replace(/^The\s+/i, '')).filter(p => p.length > 3);
+  if (parts.length > 1) for (const p of parts.filter(x => PARENT.test(x))) out.push(p);
+  return [...new Set(out)];
+}
+// An item's own coordinates, else the coordinates of its headquarters item (companies and institutes rarely carry P625).
+async function placeOf(e) {
+  const c = e?.claims?.P625?.[0]?.mainsnak?.datavalue?.value;
+  if (c) return { lat: +c.latitude.toFixed(3), lon: +c.longitude.toFixed(3) };
+  const hq = e?.claims?.P159?.[0]?.mainsnak?.datavalue?.value?.id;
+  if (!hq) return null;
+  await sleep(700);
+  const ents = await api({ action: 'wbgetentities', ids: hq, props: 'claims|labels', languages: 'en' });
+  const h = ents.entities?.[hq], hc = h?.claims?.P625?.[0]?.mainsnak?.datavalue?.value;
+  return hc ? { lat: +hc.latitude.toFixed(3), lon: +hc.longitude.toFixed(3), coordinateSource: `headquarters (P159): ${h.labels?.en?.value || hq} (${hq})` } : null;
+}
 for (const name of names) {
-  if (cache[name]) continue;
-  const search = await api({ action: 'wbsearchentities', search: name.replace(/ at (Ann Arbor|Chapel Hill|Fayetteville|Urbana-Champaign)$/i, '').replace(/\s*\([A-Z][A-Za-z&.\- ]{1,12}\)\s*$/, ''), language: 'en', type: 'item', limit: '8' });
-  const ids = (search.search || []).filter(s => EDU.test(s.description || '') || EDU.test(s.label || '')).map(s => s.id);
+  if (cache[name] && (cache[name].qid || cache[name].version === 2)) continue;
   let pick = null;
-  if (ids.length) {
-    await sleep(700);
-    const ents = await api({ action: 'wbgetentities', ids: ids.join('|'), props: 'claims|labels|descriptions', languages: 'en' });
-    for (const id of ids) {
-      const e = ents.entities?.[id];
-      const c = e?.claims?.P625?.[0]?.mainsnak?.datavalue?.value;
-      if (c) { pick = { qid: id, label: e.labels?.en?.value, description: e.descriptions?.en?.value, lat: +c.latitude.toFixed(3), lon: +c.longitude.toFixed(3) }; break; }
+  for (const variant of nameVariants(name)) {
+    const search = await api({ action: 'wbsearchentities', search: variant, language: 'en', type: 'item', limit: '8' });
+    const ids = (search.search || []).filter(s => EDU.test(s.description || '') || EDU.test(s.label || '')).map(s => s.id);
+    if (ids.length) {
+      await sleep(700);
+      const ents = await api({ action: 'wbgetentities', ids: ids.join('|'), props: 'claims|labels|descriptions', languages: 'en' });
+      for (const id of ids) {
+        const e = ents.entities?.[id], place = await placeOf(e);
+        if (place) { pick = { qid: id, label: e.labels?.en?.value, description: e.descriptions?.en?.value, ...place, ...(variant !== name ? { matchedName: variant } : {}) }; break; }
+      }
     }
+    await sleep(900);
+    if (pick) break;
   }
-  cache[name] = pick || { qid: null };
+  cache[name] = pick || { qid: null, version: 2 };
   save();
-  await sleep(900);
 }
 // Fetch the item a correction names, once; a correction to "no item" is applied when the records are written.
 for (const name of names) {

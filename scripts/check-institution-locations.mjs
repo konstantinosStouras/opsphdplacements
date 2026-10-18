@@ -1,18 +1,20 @@
-// Cross-check every PhD institution's map location against an independent geocoder (OpenStreetMap
-// Nominatim), so wrong Wikidata matches and missing coordinates can be reviewed. Writes a report to
-// research/location-check.json (ignored); corrections go into data/location-review.json after review.
+// Cross-check every PhD institution's (or, with `employers`, every first employer's) map location against an
+// independent geocoder (OpenStreetMap Nominatim), so wrong Wikidata matches and missing coordinates can be
+// reviewed. Writes a report to research/location-check.json (research/location-check-employers.json for
+// employers; both ignored); corrections go into data/location-review.json after review.
 // Nominatim's usage policy allows one request per second with an identifying User-Agent; results are cached
-// in research/nominatim-cache.json. Usage: node scripts/check-institution-locations.mjs [--threshold KM]
+// in research/nominatim-cache.json. Usage: node scripts/check-institution-locations.mjs [employers] [--threshold KM]
 import fs from 'node:fs';
 import path from 'node:path';
 const root = path.resolve(import.meta.dirname, '..');
 const UA = 'opsphdplacements-research/1.0 (https://github.com/konstantinosStouras/opsphdplacements)';
-const cachePath = path.join(root, 'research/nominatim-cache.json'), outPath = path.join(root, 'research/location-check.json');
+const employers = process.argv.includes('employers');
+const cachePath = path.join(root, 'research/nominatim-cache.json'), outPath = path.join(root, employers ? 'research/location-check-employers.json' : 'research/location-check.json');
 const i = process.argv.indexOf('--threshold'), THRESHOLD = i > 0 ? +process.argv[i + 1] : 25;
 const sleep = ms => new Promise(r => setTimeout(r, ms));
 const cache = fs.existsSync(cachePath) ? JSON.parse(fs.readFileSync(cachePath, 'utf8')) : {};
 const save = () => { fs.mkdirSync(path.dirname(cachePath), { recursive: true }); fs.writeFileSync(cachePath, JSON.stringify(cache)); };
-const loc = JSON.parse(fs.readFileSync(path.join(root, 'data/institution-locations.json'), 'utf8')).records;
+const loc = JSON.parse(fs.readFileSync(path.join(root, employers ? 'data/employer-locations.json' : 'data/institution-locations.json'), 'utf8')).records.map(r => ({ ...r, institution: employers ? r.employer : r.institution }));
 
 async function search(q) {
   if (cache[q]) return cache[q];
@@ -26,13 +28,14 @@ async function search(q) {
   return null;
 }
 const km = (a, b) => { const R = 6371, r = x => x * Math.PI / 180, dl = r(b.lat - a.lat), dn = r(b.lon - a.lon); return 2 * R * Math.asin(Math.sqrt(Math.sin(dl / 2) ** 2 + Math.cos(r(a.lat)) * Math.cos(r(b.lat)) * Math.sin(dn / 2) ** 2)); };
-const EDU = new Set(['university', 'college', 'school', 'research_institute', 'kindergarten']);
+const EDU = new Set(['university', 'college', 'school', 'research_institute', 'kindergarten', 'company', 'office', 'industrial', 'commercial', 'government', 'research']);
 // Strip suffixes the directory adds ("..., France", "(LSE)") that confuse a place search.
 const clean = name => name.replace(/,\s*(France|Germany|Italy|Spain|Canada|USA|United States|UK|India|China|Turkey|Iran|Brazil|Mexico|Japan|Korea)$/i, '').replace(/\s*\([^)]*\)\s*$/, '').trim();
+// For an employer, the name the geocode script matched (the university part of "University, School") is searched too.
 
 const report = [];
 for (const r of loc) {
-  const queries = [...new Set([clean(r.institution), r.label && clean(r.label)].filter(Boolean))];
+  const queries = [...new Set([clean(r.institution), r.matchedName && clean(r.matchedName), r.label && clean(r.label)].filter(Boolean))];
   let hits = [];
   for (const q of queries) { const h = await search(q); if (h) hits.push(...h.map(x => ({ ...x, query: q }))); }
   const edu = hits.filter(h => EDU.has(h.type) || h.category === 'amenity' && /universit|college|school|institut/i.test(h.name || ''));
@@ -45,7 +48,7 @@ for (const r of loc) {
   if (!best) flags.push('no-geocoder-hit');
   if (has && edu.length && km(r, nearest) > THRESHOLD) flags.push(`far-from-geocoder:${Math.round(km(r, nearest))}km`);
   if (has && best && r.country && best.country && !best.country.toLowerCase().includes(r.country.toLowerCase().split(' ')[0]) && !r.country.toLowerCase().includes((best.country || '').toLowerCase().split(' ')[0])) flags.push('country-differs');
-  report.push({ institution: r.institution, people: r.people, qid: r.qid || null, label: r.label || null, description: r.description || null, lat: has ? r.lat : null, lon: has ? r.lon : null, country: r.country || null,
+  report.push({ institution: r.institution, people: r.people, matchedName: r.matchedName || null, coordinateSource: r.coordinateSource || null, qid: r.qid || null, label: r.label || null, description: r.description || null, lat: has ? r.lat : null, lon: has ? r.lon : null, country: r.country || null,
     geocoder: best && { name: best.name, display: best.display, lat: best.lat, lon: best.lon, type: best.type, country: best.country, query: best.query },
     nearestEducationHitKm: nearest ? Math.round(km(r, nearest)) : null, flags });
 }
