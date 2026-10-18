@@ -497,7 +497,12 @@ def fetch(args):
                 continue
             seen_digest.add(cap['digest'])
             base = os.path.join(d, cap['ts'])
-            if os.path.exists(base + '.txt') or os.path.exists(base + '.failed'):
+            if os.path.exists(base + '.txt'):
+                # saved earlier: make sure the plan knows it (another writer may have rewritten plan.json)
+                if not any(s.get('timestamp') == cap['ts'] for s in entry['snapshots']):
+                    entry['snapshots'].append({'timestamp': cap['ts'], 'digest': cap['digest'], 'length': cap['length'], 'via': 'commoncrawl', 'crawl': cap['crawl']})
+                continue
+            if os.path.exists(base + '.failed'):
                 continue
             body = warc_body(cap)
             if body is None:
