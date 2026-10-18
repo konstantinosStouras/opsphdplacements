@@ -226,7 +226,8 @@ function choose() {
   console.log(`chose ${n} logos for ${qids.length} mapped institutions in ${outDir}`);
   if (staging) return;
   for (const r of data.records) r.logo = r.qid && fs.existsSync(path.join(outDir, r.qid + '.png')) ? `assets/logos/${r.qid}.png` : null;
-  data.metadata.logos = { note: 'Logos from each institution\'s official website (Wikidata P856) or the logo, seal and coat-of-arms files Wikidata records for it, for identification only.', count: n };
+  const withLogo = new Set(data.records.filter(r => r.logo).map(r => r.qid));
+  data.metadata.logos = { note: 'Logos from each institution\'s official website (Wikidata P856), the logo, seal and coat-of-arms files Wikidata, Wikimedia Commons and Wikipedia record for it, or a reviewed file listed in data/logo-review.json; for identification only.', count: withLogo.size };
   fs.writeFileSync(locPath, JSON.stringify(data, null, 1) + '\n');
 }
 
