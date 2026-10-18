@@ -6,6 +6,8 @@
 //   node scripts/collect-graduate-lists.mjs snapshots            list the archived snapshots of every page (CDX API),
 //                                                                one per calendar year per distinct content, into
 //                                                                research/graduates/plan.json
+//   node scripts/collect-graduate-lists.mjs discover [--host H]  find older placement, alumni and graduate pages on each
+//                                                                institution's archived site (research/graduates/discovery.json)
 //   node scripts/collect-graduate-lists.mjs fetch [--page KEY] [--live-only]  download each planned snapshot (raw, "id_" form) and
 //                                                                the live page into research/graduates/snapshots/<slug>/,
 //                                                                with a plain-text copy for the reader
@@ -84,6 +86,35 @@ if (mode === 'snapshots') {
   console.log(`planned ${n} snapshots for ${Object.keys(plan.pages).length} pages`);
 }
 
+// Older lists lived at other addresses than today's page, so the current URL's history rarely reaches back
+// more than a few years. `discover` asks the archive's index for every archived page on each institution's
+// site(s) whose address mentions placement, alumni, graduates or job market (research/graduates/domains.json,
+// built from the institutions' websites and the known pages), writing candidates to research/graduates/discovery.json
+// for a reviewer to accept into research/graduate-list-pages.json (scope "program-list") before they are read.
+if (mode === 'discover') {
+  const domainsPath = path.join(dir, 'domains.json'), outPath = path.join(dir, 'discovery.json');
+  const domains = JSON.parse(fs.readFileSync(domainsPath, 'utf8'));
+  const found = fs.existsSync(outPath) ? JSON.parse(fs.readFileSync(outPath, 'utf8')) : {};
+  const onlyHost = arg('--host');
+  for (const d of domains) {
+    for (const host of d.hosts) {
+      if (onlyHost && host !== onlyHost) continue;
+      if (found[host]) continue;
+      const pattern = '(?i).*(placement|phd-?alumni|doctoral-?alumni|phd-?graduates|doctoral-?graduates|job-?market|jobmarket|recent-?graduates|dissertations?-?list).*';
+      const q = `https://web.archive.org/cdx/search/cdx?url=${encodeURIComponent(host + '/*')}&output=json&fl=original,timestamp,statuscode&filter=statuscode:200&filter=${encodeURIComponent('original:' + pattern)}&collapse=urlkey&from=1996&limit=400`;
+      const got = await archiveGet(q);
+      let rows = [];
+      if (got.text) { try { rows = JSON.parse(got.text.replace(/^[\s\S]*?(\[\[)/, '$1')).slice(1); } catch { rows = []; } }
+      // Keep page-like addresses only: no images, scripts, feeds or query strings; print the earliest capture.
+      const cands = rows.filter(([u]) => !/\.(png|jpe?g|gif|svg|css|js|pdf|xml|ico|woff2?)(\?|$)/i.test(u) && !/[?&]/.test(u)).map(([u, ts]) => ({ url: u, firstSeen: ts.slice(0, 4) }));
+      found[host] = { qid: d.qid, institution: d.institution, via: got.via, error: got.text ? null : (got.error || `HTTP ${got.status || '?'}`), candidates: cands, listedAt: new Date().toISOString().slice(0, 10) };
+      fs.writeFileSync(outPath, JSON.stringify(found, null, 1));
+      console.log(`${host} (${d.institution}): ${cands.length} candidate addresses (${got.via}${got.text ? '' : ', failed'})`);
+      await sleep(2500);
+    }
+  }
+}
+
 if (mode === 'fetch') {
   const only = arg('--page');
   for (const [key, p] of Object.entries(plan.pages)) {
@@ -116,4 +147,4 @@ if (mode === 'chunks') {
   for (let i = 0; i < entries.length; i += size) { n++; fs.writeFileSync(path.join(dir, `chunk-${n}.json`), JSON.stringify({ chunk: n, pages: entries.slice(i, i + size) }, null, 1)); }
   console.log(`wrote chunks ${start} to ${n} for ${entries.length} pages with text not yet extracted`);
 }
-if (!['snapshots', 'fetch', 'chunks'].includes(mode)) console.log('Give snapshots, fetch or chunks.');
+if (!['snapshots', 'discover', 'fetch', 'chunks'].includes(mode)) console.log('Give snapshots, discover, fetch or chunks.');
