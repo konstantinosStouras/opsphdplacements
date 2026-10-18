@@ -55,6 +55,8 @@ for (const file of files) {
     const pg = pageByKey.get(r.pageKey); if (pg && pageScope.get(pg.url) === 'not-a-list') { heldOut++; continue; }
     // A page that mixes master's graduates into its list: rows whose degree the page gives as a master's are left out.
     if (/^(MRes|M\.?Sc\.?|MBA|M\.?A\.?|Master)/i.test(r.degree || '')) { heldOut++; continue; }
+    // A surname alone (a page that prints "examples of completed dissertations" by surname) cannot be matched or shown as a person.
+    if (!/\s/.test(String(r.name).trim())) { heldOut++; continue; }
     for (const k of ['institution', 'pageKey', 'sourceUrl', 'sourceDate', 'name']) if (!r[k] || typeof r[k] !== 'string') throw Error(`Missing ${k} in ${file}: ${JSON.stringify(r).slice(0, 120)}`);
     if (!/^https?:\/\//.test(r.sourceUrl)) throw Error(`Bad URL in ${file}: ${r.sourceUrl}`);
     if (!/^\d{4}-\d{2}-\d{2}$/.test(r.sourceDate)) throw Error(`Bad date in ${file}: ${r.sourceDate}`);

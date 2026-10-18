@@ -1,0 +1,408 @@
+# Common Crawl candidate pages (review sheet)
+
+One line per address: institution | years captured | known page? | address. Accept a new address by adding it to research/graduate-list-pages.json with scope "program-list" and the institution; refuse with scope "not-a-list" and a reason.
+
+- (unknown) | 2013–2013 (1) | known program-list | http://sites.uclouvain.be/dysco/Alumni/A
+- Arizona State University | 2013–2013 (1) | new | http://wpcarey.asu.edu/candidates-on-the-market
+- Arizona State University | 2013–2013 (2) | new | http://wpcarey.asu.edu/management-degree/doctoral/alumni.cfm
+- Arizona State University | 2013–2013 (2) | new | http://wpcarey.asu.edu/management-degree/doctoral/candidates.cfm
+- Arizona State University | 2013–2013 (1) | new | http://wpcarey.asu.edu/management-degrees/alumni
+- Arizona State University | 2013–2013 (1) | new | http://wpcarey.asu.edu/management-degrees/candidates
+- Arizona State University | 2019–2019 (3) | new | https://wpcarey.asu.edu/news-releases/2010-10-04/school-recognized-impressive-job-placement
+- Arizona State University | 2013–2013 (1) | new | http://wpcarey.asu.edu/top/department_news_display.cfm?num=352&dept=Alumni
+- Aston University | 2013–2013 (1) | new | http://www1.aston.ac.uk/business/links-to-business/previous-news-stories/2010/june/engineering-placements/
+- Aston University | 2013–2013 (1) | new | http://www1.aston.ac.uk/business/support/case-studies/placement-scheme/
+- Aston University | 2013–2013 (1) | new | http://www1.aston.ac.uk/clipp/learning-innovation/project-reports/2009/pebblepad-and-placements-an-aid-to-develop-reflective-practice-or-technological-barrier/
+- Auburn University | 2013–2013 (1) | new | http://www.vetmed.auburn.edu/home/departments/pathobiology/graduate-program/pathobiology-graduate-program/areas-for-thesis-or-dissertation-research
+- Benedictine University | 2013–2013 (3) | new | http://www.ben.edu/academic_programs/business/Doctoral_Programs/PhDinOD/dissertation.cfm
+- Boston College | 2013–2013 (4) | new | http://www.bc.edu/content/bc/schools/cas/pulse/placements/sociedad.html
+- Boston University | 2013–2013 (2) | new | http://management.bu.edu/faculty-research/departments/operations/doctoral-graduates/
+- Brown University | 2013–2013 (1) | new | http://brown.edu/academics/engineering/advanced-placement-and-transfer-credit
+- California Institute of Technology | 2019–2019 (1) | new | https://www.alumni.caltech.edu/news-classic/2013/9/19/darpa-director-arati-prabhakar-phd-85-engages-alumni-in-dc
+- California Institute of Technology | 2019–2019 (1) | new | http://www.hss.caltech.edu/academics/graduate-studies/job-market-candidates
+- California Institute of Technology | 2013–2013 (1) | new | http://www.hss.caltech.edu/jobmarket
+- California Institute of Technology | 2013–2013 (1) | new | http://www.hss.caltech.edu/ss/phds/alumni
+- California Institute of Technology | 2019–2019 (1) | new | http://hss.divisions.caltech.edu/academics/graduate-studies/job-market-candidates
+- California Institute of Technology | 2013–2013 (1) | new | http://www.wordsmatter.caltech.edu/jobmarket
+- Carnegie Institute of Technology | 2013–2013 (1) | new | http://www.cit.cmu.edu/current_students/graduates/phd_policies.html
+- Carnegie Institute of Technology | 2013–2013 (2) | new | http://www.cit.cmu.edu/current_students/graduates/thesis_dissertation_policies.html
+- Carnegie Mellon University | 2013–2013 (2) | new | http://www.cmu.edu/campaign/involved/alumni.html
+- Carnegie Mellon University | 2013–2013 (2) | new | http://www.cmu.edu/graduate/professional-development/alumni.html
+- Carnegie Mellon University | 2013–2013 (1) | new | http://www.cmu.edu/homepage/multimedia/cmu-notable-alumni.shtml
+- Carnegie Mellon University | 2013–2013 (1) | new | http://www.cmu.edu/hss/advisory-center/pick-classes/advanced-placement.html
+- Carnegie Mellon University | 2013–2013 (2) | new | http://www.cmu.edu/ir/cirp-people/alumni-network.html
+- Carnegie Mellon University | 2013–2013 (1) | new | http://www.cmu.edu/me/alumni/barbara-samardzich.html
+- Carnegie Mellon University | 2013–2013 (2) | new | http://www.cmu.edu/me/alumni/get-involved.html
+- Carnegie Mellon University | 2013–2013 (1) | new | http://www.cmu.edu/me/alumni/submit-news.html
+- Carnegie Mellon University | 2013–2013 (1) | new | http://www.cmu.edu/mpd/careers/where-alumni-work.html
+- Carnegie Mellon University | 2013–2013 (1) | new | http://www.cmu.edu/ms-compbio/alumni/ms-alumni.html
+- Carnegie Mellon University | 2013–2013 (1) | new | http://www.cmu.edu/PR/releases05/051019_alumni.html
+- Carnegie Mellon University | 2013–2013 (1) | new | http://www.cmu.edu/scholarly-communications/scforum/2009-2010/electronic-theses-and-dissertations.html
+- Carnegie Mellon University | 2013–2013 (1) | new | http://www.cmu.edu/silicon-valley/alumni/get-involved.html
+- Carnegie Mellon University | 2013–2013 (2) | new | http://www.cmu.edu/uro/highlights/alumni-sam-swift.html
+- Carnegie Mellon University | 2013–2013 (2) | new | http://www.cmu.edu/uro/highlights/alumni-sheela-ramesh.html
+- Case Western Reserve University | 2013–2013 (2) | new | http://weatherhead.case.edu/degrees/phd-management/designing-sustainable-systems/alumni
+- Columbia University | 2013–2013 (10) | new | http://academiccommons.columbia.edu/?f[department_facet][]=Business&f[genre_facet][]=Dissertations
+- Columbia University | 2013–2013 (2) | new | http://bulletin.engineering.columbia.edu/advanced-placement
+- Columbia University | 2013–2013 (2) | new | http://bulletin.engineering.columbia.edu/advanced-placement-0
+- Columbia University | 2019–2019 (2) | new | https://engineering.columbia.edu/career-placement-team
+- Columbia University | 2019–2019 (3) | new | https://ieor.columbia.edu/doctoral/students/recent-alumni-placements
+- Columbia University | 2013–2013 (25) | new | http://www4.gsb.columbia.edu/dissertations | 13 pages below it
+- Columbia University | 2013–2013 (4) | new | http://www7.gsb.columbia.edu/phd/jobmarket/
+- Columbia University | 2013–2013 (4) | new | http://www7.gsb.columbia.edu/phd/whycolumbia/placement/
+- Columbia University | 2013–2013 (1) | new | http://www8.gsb.columbia.edu/alumni/stay-connected/communities/phd-alumni
+- Columbia University | 2019–2019 (1) | new | https://www8.gsb.columbia.edu/programs/doctoral-program/job-market/dro
+- Columbia University | 2019–2019 (1) | new | https://www8.gsb.columbia.edu/programs/doctoral-program/job-market/management
+- Columbia University | 2019–2019 (1) | new | https://www8.gsb.columbia.edu/programs/doctoral-program/why-columbia-phd/placement
+- Duke University | 2019–2019 (2) | new | https://areas.fuqua.duke.edu/management/ph-d-program/phd-student-placements/
+- Duke University | 2013–2013 (1) | new | http://www.fuqua.duke.edu/mms-foundations-of-business/?placement=US&ad_start=031909
+- Duke University | 2013–2013 (3) | new | http://www.fuqua.duke.edu/programs/other_programs/mms_foundations_of_business/?placement=US&ad_start=031909
+- Ecole Polytechnique | 2019–2019 (1) | new | https://portail.polytechnique.edu/economie/fr/job-market-2019-incoming
+- Emory University | 2013–2013 (3) | new | http://goizueta.emory.edu/alumni/ | 16 pages below it
+- Emory University | 2013–2013 (2) | new | http://goizueta.emory.edu/degree/phd/job_candidates/placement.html
+- Emory University | 2013–2013 (2) | new | http://goizueta.emory.edu/degree/phd/organization_management/dissertations_placements.html
+- Erasmus University Rotterdam | 2013–2013 (5) | new | http://repub.eur.nl/dissertations
+- George Mason University | 2019–2019 (1) | new | https://artsmanagement.gmu.edu/alumni-placement/
+- George Washington University | 2013–2013 (1) | new | http://business.gwu.edu/smpp/doctoral-candidates/jennifer-DeBoer.cfm
+- George Washington University | 2013–2013 (1) | new | http://business.gwu.edu/smpp/doctoral-candidates/juan-roeschmann.cfm
+- George Washington University | 2013–2013 (1) | new | http://business.gwu.edu/smpp/doctoral-candidates/lili-yan.cfm
+- George Washington University | 2013–2013 (1) | new | http://business.gwu.edu/smpp/doctoral-candidates/patricia-kanashiro.cfm
+- George Washington University | 2013–2013 (1) | new | http://business.gwu.edu/smpp/doctoral-candidates/smita-trivedi.cfm
+- George Washington University | 2013–2013 (1) | new | http://business.gwu.edu/smpp/doctoral-candidates/viviane-clement.cfm
+- George Washington University | 2013–2013 (1) | new | http://business.gwu.edu/smpp/doctoral-candidates/yoon-youm.cfm
+- Georgia Institute of Technology | 2019–2019 (2) | new | https://www.isye.gatech.edu/academics/doctoral/phd-industrial-engineering/placement
+- Georgia Institute of Technology | 2019–2019 (2) | new | https://www.isye.gatech.edu/academics/doctoral/phd-operations-research/placement
+- Georgia Institute of Technology | 2013–2013 (1) | new | http://techstyle.lmc.gatech.edu/digitizing-research-interests-for-the-classroom-and-the-job-market-d-ped-seminar-topic-for-91411/
+- HEC Montreal | 2019–2019 (1) | new | https://www.hec.ca/en/iea/students/phd/placement.html
+- HEC Paris | 2019–2019 (2) | new | https://www.hec.edu/en/doctoral-program/job-market-season
+- HEC Paris | 2019–2019 (3) | new | https://www.hec.edu/en/doctoral-program/placement
+- Harvard University | 2013–2013 (1) | new | http://lib.harvard.edu/university-archives/records-management-news/8_dissertations
+- Hong Kong Polytechnic University | 2013–2013 (1) | new | http://www.lib.polyu.edu.hk/researchhelp/tutorials/dissertations
+- IE University | 2019–2019 (1) | new | https://alumninews.blogs.ie.edu/placement-report
+- IE University | 2019–2019 (1) | new | https://alumninews.blogs.ie.edu/placement-report-not-seeking
+- IE University | 2019–2019 (1) | new | https://alumninews.blogs.ie.edu/placement-report-seeking
+- IE University | 2019–2019 (1) | new | https://alumninews.blogs.ie.edu/placement-report-setting-my-own-company
+- IE University | 2019–2019 (1) | new | https://careers.blogs.ie.edu/graduate-placement-survey
+- IE University | 2019–2019 (1) | new | https://drivinginnovation.ie.edu/why-ple-and-big-data-are-the-perfect-pair-for-tomorrows-job-market/
+- IE University | 2019–2019 (1) | new | https://eaa-jobmarket.ie.edu/registration-for-candidates/
+- IIM Calcutta | 2013–2013 (1) | new | http://www.iimcal.ac.in/iim-calcutta-graduates-get-tips-mumbai-dabbawalas
+- IIT-Bombay | 2013–2013 (1) | new | http://www.som.iitb.ac.in/placements/advantage_SJMSOM/
+- INSEAD | 2013–2013 (1) | new | http://www.insead.edu/alumni/imef/index.cfm?allocation=iaf&class=02J
+- INSEAD | 2019–2019 (2) | new | https://www.insead.edu/phd/job-market
+- INSEAD | 2013–2013 (1) | new | http://phd.insead.edu/alumni_and_placements/
+- Indian Institute of Technology Delhi | 2019–2019 (2) | new | http://www.cse.iitd.ac.in/index.php/2011-12-29-23-14-30/alumni/m-tech-placements/2-uncategorised/101-post-doctoral-fellows
+- Indian Institute of Technology Delhi | 2019–2019 (24) | new | http://www.cse.iitd.ac.in/index.php/2011-12-29-23-14-30/alumni/phd-alumni?id=12 | 2 pages below it
+- Indian Institute of Technology, Madras | 2019–2019 (3) | new | http://chennai36.iitm.ac.in/placement-guru-data-analytics-at-exl-services/
+- Indian School of Business | 2013–2013 (1) | new | http://www.isb.edu/alumni
+- Indian School of Business | 2019–2019 (1) | new | https://www.isb.edu/caf/research-associate-program/placements
+- Indian School of Business | 2013–2013 (1) | new | http://www.isb.edu/cioacademy/Alumni.html
+- Indian School of Business | 2019–2019 (1) | new | https://www.isb.edu/fpm/placements-and-careers
+- Indian School of Business | 2013–2013 (1) | new | http://www.isb.edu/lrc/alumni_main.shtml
+- Indian School of Business | 2013–2013 (1) | new | http://www.isb.edu/PGP/alumni-media.shtml
+- Indian School of Business | 2019–2019 (2) | new | https://www.isb.edu/pgp/careers/placement-trends
+- Indian School of Business | 2013–2013 (2) | new | http://www.isb.edu/pgp/Placement_Highlights.Shtml
+- Indiana University Bloomington | 2013–2013 (4) | new | http://www.kelley.iu.edu/alumni/ | 15 pages below it
+- Indiana University Bloomington | 2013–2013 (2) | new | http://www.kelley.iu.edu/CBL/alumni/page15101.html
+- Indiana University Bloomington | 2013–2013 (2) | new | http://kelley.iu.edu/Doctoral/Careers/PhD%20Placements/page13961.html
+- Indiana University Bloomington | 2013–2013 (2) | new | http://kelley.iu.edu/ISGP/Alumni/page29809.html
+- Indiana University Bloomington | 2013–2013 (2) | new | http://kelley.iu.edu/reclub/alumni.html
+- Indiana University Bloomington | 2013–2013 (12) | new | http://kelley.iu.edu/ugrad/alumni/event_V.cfm?key=IN130228&returnpage=none
+- Indiana University Bloomington | 2013–2013 (1) | new | http://kelley.iu.edu/ugrad/alumni/index.cfm
+- Indiana University Bloomington | 2013–2013 (1) | new | http://kelley.iu.edu/ugrad/alumni/story_V.cfm?itemID=39
+- Indiana University Bloomington | 2013–2013 (1) | new | http://kelley.iu.edu/ugrad/alumni/vignette_Q.cfm
+- Iowa State University | 2013–2013 (1) | new | http://www.business.iastate.edu/phd/candidates
+- Iowa State University | 2019–2019 (1) | new | https://www.ivybusiness.iastate.edu/phd/job-placements/
+- KTH Royal Institute of Technology | 2013–2013 (1) | new | http://www.brinell.kth.se/Dissertations.htm
+- KTH Royal Institute of Technology | 2013–2013 (1) | new | http://www.designfakulteten.kth.se/doktorander/alumni
+- KTH Royal Institute of Technology | 2019–2019 (1) | new | https://www.kth.se/en/aktuellt/nyheter/kth-to-help-new-arrivals-get-foot-in-it-job-market-1.655940
+- Karlsruhe Institute of Technology | 2019–2019 (1) | new | http://www.ksop.kit.edu/PhD_alumni.php
+- Kent State University | 2013–2013 (4) | new | http://www.kent.edu/business/alumni/phd.cfm
+- London Business School | 2019–2019 (2) | new | https://www.london.edu/faculty-and-research/subject-areas/management-science-and-operations/phd-programme/recent-mso-phd-graduates
+- London School of Economics | 2013–2013 (1) | new | http://www.lse.ac.uk/alumni/LSEConnect/Home.aspx
+- London School of Economics | 2013–2013 (1) | new | http://www.lse.ac.uk/economicHistory/Alumni/Alumni.aspx
+- Massachusetts Institute of Technology | 2013–2013 (1) | new | http://esd.mit.edu/phd/alumni/alumni_workshop_announcement.html
+- Massachusetts Institute of Technology | 2019–2019 (1) | new | http://lnsp.mit.edu/phd-alumni/
+- Massachusetts Institute of Technology | 2013–2013 (2) | new | http://www.mitpress.mit.edu/books/series/acm-distinguished-dissertation
+- Massachusetts Institute of Technology | 2019–2019 (1) | new | https://mitsloan.mit.edu/ideas-made-to-matter/where-are-they-now-catch-19-mits-smartest-startups
+- Massachusetts Institute of Technology | 2013–2013 (1) | new | http://mitsloan.mit.edu/phd/dissertation.php
+- Massachusetts Institute of Technology | 2013–2013 (1) | new | http://web.mit.edu/cheme/academics/grad/phdcep-alumni.html
+- Massachusetts Institute of Technology | 2013–2013 (1) | new | http://web.mit.edu/dusp/epp/academics/dissertations.html
+- Massachusetts Institute of Technology | 2013–2013 (2) | new | http://web.mit.edu/newsoffice/2011/esd-doctoral-alumni-celebration.html
+- Massachusetts Institute of Technology | 2013–2013 (2) | new | http://web.mit.edu/philos/www/dissertations.html
+- Michigan State University | 2013–2013 (1) | new | http://broad.msu.edu/alumni/
+- National University of Singapore | 2019–2019 (2) | new | https://bschool.nus.edu.sg/phd/alumni/alumni-achievement
+- National University of Singapore | 2019–2019 (2) | new | https://bschool.nus.edu.sg/phd/alumni/job-placement
+- National University of Singapore | 2013–2013 (31) | new | http://bschool.nus.edu.sg/redirect/biz404.asp?http:/bschool.nus.edu:80/alumni/mandarin/albumMA/CNY2012/pages/12CNY366_TIF.htm
+- New Mexico State University | 2019–2019 (1) | new | https://business.nmsu.edu/academics/graduate-programs/mgt-phd/alumni/
+- New Mexico State University | 2019–2019 (1) | new | https://business.nmsu.edu/academics/graduate-programs/mktg-phd/alumni/
+- New Mexico State University | 2013–2013 (1) | new | http://business.nmsu.edu/wordpress/wp-login.php?redirect_to=/academics/management-gb/management-programs/phd/alumni/
+- New York University | 2013–2013 (1) | new | http://ifp.nyu.edu/2012/journal-article-abstracts/towards-a-second-order-view-of-child-protection-placement-related-decision-making/
+- New York University | 2019–2019 (1) | new | http://people.stern.nyu.edu/panos/phd-appl/alumni.html
+- New York University | 2019–2019 (1) | new | http://www.stern.nyu.edu/experience-stern/about/departments-centers-initiatives/academic-departments/management-and-organizations/academic-programs/phd-overview/phd-placements
+- New York University | 2019–2019 (1) | new | http://www.stern.nyu.edu/experience-stern/news-events/wsj-tambe-digital-job-market
+- North Carolina State University | 2013–2013 (1) | new | http://www.cals.ncsu.edu/agcomm/news-center/economic-perspective/news-on-north-carolina%E2%80%99s-job-market/
+- North Carolina State University | 2013–2013 (1) | new | http://www.cals.ncsu.edu/agcomm/news-center/perspectives/career-expo-2012-gives-students-a-head-start-in-job-market-connections/attachment/resizedcropped-prestage-boothcareer-expo-9-27-12-024/
+- North Carolina State University | 2013–2013 (1) | new | http://www.cals.ncsu.edu/agcomm/news-center/perspectives/career-expo-2012-gives-students-a-head-start-in-job-market-connections/attachment/resizedcropped-technekes-boothcareer-expo-9-27-12-076/
+- North Carolina State University | 2019–2019 (1) | new | https://content.ces.ncsu.edu/africanized-honey-bees-where-are-they-now-and-when-will-they-arrive-in-north-carolina
+- North Dakota State University | 2013–2013 (1) | new | http://www.ndsu.edu/emgt/graduate/current_students/emergency_management_student_theses_and_dissertations/
+- North Dakota State University | 2013–2013 (1) | new | http://www.ndsu.edu/hde/graduate/dissertations/phdabstract_k_anderson/
+- North Dakota State University | 2013–2013 (1) | new | http://www.ndsu.edu/hde/graduate/dissertations/phdabstract_k_bertolini/
+- North Dakota State University | 2013–2013 (1) | new | http://www.ndsu.edu/hde/graduate/dissertations/phdabstract_v_anderson/
+- Northeastern University | 2019–2019 (1) | new | https://bouve.northeastern.edu/csd/external-placement/
+- Northeastern University | 2013–2013 (1) | new | http://www.northeastern.edu/che/co-op/student-co-op-placements/
+- Northeastern University | 2013–2013 (1) | new | http://www.northeastern.edu/polisci/dissertation-proposal-development-fellowship/
+- Northeastern University | 2013–2013 (1) | new | http://www.northeastern.edu/polisci/international-dissertation-research-fellowship/
+- Northeastern University | 2013–2013 (1) | new | http://www.northeastern.edu/polisci/jennings-randolph-peace-scholarship-dissertation-program/
+- Northeastern University | 2013–2013 (1) | new | http://www.northeastern.edu/polisci/phd-candidate-dissertation-marian-gheorghe-simion/
+- Northeastern University | 2013–2013 (1) | new | http://www.northeastern.edu/polisci/phd-spring-workshop-series-dissertation-proposals/
+- Northeastern University | 2013–2013 (1) | new | http://www.northeastern.edu/polisci/phd-spring-workshop-series-dissertation-research/
+- Northeastern University | 2013–2013 (1) | new | http://www.northeastern.edu/polisci/phd-spring-workshop-series-getting-started-on-the-dissertation/
+- Northeastern University | 2013–2013 (1) | new | http://www.northeastern.edu/polisci/phd-workshop-dissertation-proposal-presentations/
+- Northeastern University | 2013–2013 (1) | new | http://www.northeastern.edu/polisci/phd-workshop-essential-elements-of-the-dissertation-proposal/
+- Northeastern University | 2013–2013 (1) | new | http://www.northeastern.edu/polisci/phd-workshop-fall-2012-dissertation-proposal-presentations/
+- Northeastern University | 2013–2013 (1) | new | http://www.northeastern.edu/polisci/phd-workshop-going-on-the-job-market-academic-vs-non-academic-tracks/
+- Northeastern University | 2013–2013 (1) | new | http://www.northeastern.edu/polisci/phd-workshop-introduction-to-the-workshop-and-essential-elements-of-the-dissertation-proposal/
+- Northeastern University | 2013–2013 (1) | new | http://www.northeastern.edu/sccj/doctoral-student-travels-to-rwanda-for-dissertation-research/
+- Northeastern University | 2013–2013 (1) | new | http://www.northeastern.edu/sccj/navigating-the-academic-job-market/
+- Northeastern University | 2013–2013 (1) | new | http://www.northeastern.edu/seattle/northeastern-looks-northwest-aims-to-fill-voids-in-tech-job-market/
+- Northeastern University | 2013–2013 (1) | new | http://www.northeastern.edu/socant/graduate/phd-alumni | 1 pages below it
+- Northeastern University | 2013–2013 (1) | new | http://www.northeastern.edu/womensstudies/graduate/phd_dissertations/
+- Northeastern University | 2019–2019 (1) | new | https://web.northeastern.edu/nulab/fall2016-nulab-infosession-dhcss-jobmarket/
+- Northwestern University | 2013–2013 (1) | new | http://florencekelley.northwestern.edu/archives/dissertation/
+- Northwestern University | 2013–2013 (2) | new | http://www.kellogg.northwestern.edu/Certificate/newsrepository/Alumni-Newsleter-Fall2011.aspx
+- Northwestern University | 2013–2013 (2) | new | http://www.kellogg.northwestern.edu/Departments/mors/programs/phd/alumni.aspx
+- Northwestern University | 2013–2013 (2) | new | http://www.kellogg.northwestern.edu/Departments/mors/programs/phd/phd_candidates.aspx
+- Northwestern University | 2013–2013 (1) | new | http://www.kellogg.northwestern.edu/Departments/seek/alumni.aspx
+- Northwestern University | 2019–2019 (2) | new | https://www.kellogg.northwestern.edu/doctoral-intranet/job-market.aspx
+- Northwestern University | 2019–2019 (2) | new | https://www.kellogg.northwestern.edu/doctoral/placement.aspx
+- Northwestern University | 2013–2013 (8) | new | http://www.kellogg.northwestern.edu/News-Events/Alumni_In_The_Media.aspx
+- Northwestern University | 2013–2013 (1) | new | http://www.kellogg.northwestern.edu/News_Articles/2007/Alumni_entrepren_2007.aspx
+- Northwestern University | 2013–2013 (1) | new | http://www.kellogg.northwestern.edu/News_Articles/2007/rebelo-alumni.aspx
+- Northwestern University | 2013–2013 (2) | new | http://kellogg.northwestern.edu/Programs/DoctoralProgram/JobPlacement.aspx
+- Northwestern University | 2013–2013 (1) | new | http://www.kellogg.northwestern.edu/Programs/DoctoralProgram/PhDOverview/JobPlacement.aspx
+- Northwestern University | 2013–2013 (1) | new | http://www.kellogg.northwestern.edu/student/boardfellows/alumni_info.htm
+- Northwestern University | 2013–2013 (1) | new | http://mailto:achizhik2012@kellogg.northwestern.edu/Programs/DoctoralProgram/JobPlacement.aspx
+- Ohio University | 2019–2019 (2) | new | https://business.ohio.edu/academics/selective-programs/derivatives-management/placement/
+- Pennsylvania State University | 2013–2013 (1) | new | http://www.smeal.psu.edu/about/advisory/alumni-society
+- Pennsylvania State University | 2013–2013 (2) | new | http://www.smeal.psu.edu/acctg/alumni/ | 2 pages below it
+- Pennsylvania State University | 2013–2013 (3) | new | http://www.smeal.psu.edu/alumni | 11 pages below it
+- Pennsylvania State University | 2013–2013 (1) | new | http://www.smeal.psu.edu/mando/alumni | 2 pages below it
+- Pennsylvania State University | 2013–2013 (1) | new | http://www.smeal.psu.edu/mktg/alumni
+- Pennsylvania State University | 2013–2013 (1) | new | http://www.smeal.psu.edu/phd/emphasis-in-management-and-organization/current-positions-of-recent-phd-graduates
+- Pennsylvania State University | 2013–2013 (1) | new | http://www.smeal.psu.edu/phd/emphasis-in-scis/recent-academic-ph.d.-placements
+- Pennsylvania State University | 2019–2019 (3) | new | https://www.smeal.psu.edu/phd/job-market-candidates
+- Pennsylvania State University | 2013–2013 (1) | new | http://www.smeal.psu.edu/phd/mktg/phd-student-alumni
+- Pennsylvania State University | 2013–2013 (2) | new | http://www.smeal.psu.edu/rm/alumni/ | 2 pages below it
+- Pennsylvania State University | 2013–2013 (1) | new | http://www.smeal.psu.edu/scis/alumni
+- Pennsylvania State University | 2013–2013 (1) | new | http://www.smeal.psu.edu/smealconnect/alumni-registration | 3 pages below it
+- Purdue University | 2013–2013 (2) | new | http://docs.lib.purdue.edu/dissertations/ | 50 pages below it
+- Purdue University | 2013–2013 (4) | new | http://krannert.purdue.edu/academics/strategy/placements1.asp
+- Purdue University | 2013–2013 (4) | new | http://www.krannert.purdue.edu/programs/phd/achievements/alumni.asp
+- Purdue University | 2019–2019 (1) | new | https://krannert.purdue.edu/programs/phd/achievements/alumni.php
+- Purdue University | 2013–2013 (2) | new | http://krannert.purdue.edu/programs/phd/distinguished-alumni/abel-jeuland.asp
+- Purdue University | 2013–2013 (4) | new | http://www.krannert.purdue.edu/programs/PhD/distinguished-alumni/carolyn-woo.asp
+- Purdue University | 2013–2013 (4) | new | http://krannert.purdue.edu/programs/PhD/distinguished-alumni/chris-muscarella.asp
+- Purdue University | 2013–2013 (4) | new | http://www.krannert.purdue.edu/programs/PhD/distinguished-alumni/cynthia-montgomery.asp
+- Purdue University | 2013–2013 (4) | new | http://www.krannert.purdue.edu/programs/phd/distinguished-alumni/dan-horsky.asp
+- Purdue University | 2013–2013 (3) | new | http://krannert.purdue.edu/programs/phd/distinguished-alumni/david-reibstein.asp
+- Purdue University | 2013–2013 (4) | new | http://krannert.purdue.edu/programs/PhD/distinguished-alumni/dominique-hanssens.asp
+- Purdue University | 2013–2013 (4) | new | http://www.krannert.purdue.edu/programs/phd/distinguished-alumni/donald-lehmann.asp
+- Purdue University | 2013–2013 (4) | new | http://krannert.purdue.edu/programs/PhD/distinguished-alumni/gary-koehler.asp
+- Purdue University | 2013–2013 (4) | new | http://www.krannert.purdue.edu/programs/PhD/distinguished-alumni/henri-servaes.asp
+- Purdue University | 2013–2013 (4) | new | http://www.krannert.purdue.edu/programs/phd/distinguished-alumni/hugo-sonnenschein.asp
+- Purdue University | 2013–2013 (4) | new | http://www.krannert.purdue.edu/programs/PhD/distinguished-alumni/jack-hughes.asp
+- Purdue University | 2013–2013 (4) | new | http://krannert.purdue.edu/programs/PhD/distinguished-alumni/john-boudreau.asp
+- Purdue University | 2013–2013 (4) | new | http://www.krannert.purdue.edu/programs/phd/distinguished-alumni/john-schaubroeck.asp
+- Purdue University | 2013–2013 (5) | new | http://krannert.purdue.edu/programs/PhD/distinguished-alumni/karel-cool.asp
+- Purdue University | 2013–2013 (4) | new | http://www.krannert.purdue.edu/programs/phd/distinguished-alumni/kenneth-dunn.asp
+- Purdue University | 2013–2013 (3) | new | http://www.krannert.purdue.edu/programs/phd/distinguished-alumni/michael-shaw.asp
+- Purdue University | 2013–2013 (3) | new | http://www.krannert.purdue.edu/programs/PhD/distinguished-alumni/narakesari-narayandas.asp
+- Purdue University | 2013–2013 (3) | new | http://www.krannert.purdue.edu/programs/phd/distinguished-alumni/nicholas-petruzzi.asp
+- Purdue University | 2013–2013 (4) | new | http://krannert.purdue.edu/programs/phd/distinguished-alumni/preston-mcafee.asp
+- Purdue University | 2013–2013 (4) | new | http://www.krannert.purdue.edu/programs/phd/distinguished-alumni/robert-carraway.asp
+- Purdue University | 2013–2013 (3) | new | http://www.krannert.purdue.edu/programs/phd/distinguished-alumni/varghese-jacob.asp
+- Purdue University | 2013–2013 (4) | new | http://www.krannert.purdue.edu/programs/phd/distinguished-alumni/vijay-mookerjee.asp
+- Purdue University | 2013–2013 (4) | new | http://www.krannert.purdue.edu/programs/phd/job-market-candidates.asp
+- Purdue University | 2019–2019 (1) | new | https://krannert.purdue.edu/programs/phd/placement.php
+- Queen's University | 2013–2013 (1) | new | http://business.queensu.ca/bcom/career/placement.php
+- Rutgers University at Newark and New Brunswick | 2019–2019 (3) | known program-list | http://www.business.rutgers.edu/phd/alumni
+- Stanford University | 2013–2013 (2) | new | http://www.gsb.stanford.edu/phd/students/job_candidates.html
+- Stanford University | 2019–2019 (3) | new | https://www.gsb.stanford.edu/programs/phd/placement | 2 pages below it
+- Stanford University | 2013–2013 (1) | new | http://www.gsb.stanford.edu/sloan/community/alumni.html
+- Stevens Institute of Technology | 2013–2013 (1) | new | http://www.stevens.edu/howe/academics/doctoral-programs/dissertation-process
+- Stevens Institute of Technology | 2013–2013 (1) | new | http://www.stevens.edu/wireless/phd-dissertation.html
+- Stony Brook University | 2019–2019 (1) | new | https://news.stonybrook.edu/alumni/college-of-engineering-and-applied-sciences-inducts-myung-oh-72-phd-into-alumni-hall-of-fame/
+- Technical University of Darmstadt | 2013–2013 (1) | new | http://www.es.tu-darmstadt.de/de/forschung/dissertation/
+- Technical University of Darmstadt | 2013–2013 (2) | new | http://www.es.tu-darmstadt.de/forschung/dissertation/
+- Technical University of Darmstadt | 2013–2013 (28) | new | http://www.es.tu-darmstadt.de/index.php?id=208&dissertation=107
+- Texas A&M University | 2013–2013 (1) | new | http://mays.tamu.edu/degrees-and-majors/phd/dissertation-grant/
+- Texas A&M University | 2013–2013 (1) | new | http://mays.tamu.edu/degrees-and-majors/phd/phd-student-placement/
+- Texas Tech University | 2013–2013 (1) | new | http://www.depts.ttu.edu/advising/preengineering/placement.php
+- The Ohio State University | 2019–2019 (3) | new | https://fisher.osu.edu/academic-departments/management-sciences/operations-management-phd/phd-alumni
+- The Ohio State University | 2013–2013 (1) | new | http://fisher.osu.edu/annualreport/2009/alumni/
+- The Ohio State University | 2019–2019 (3) | new | https://fisher.osu.edu/graduate/phd-programs/alumni
+- The Ohio State University | 2013–2013 (2) | new | http://fisher.osu.edu/macc/alumni/
+- The Ohio State University | 2013–2013 (3) | new | http://fisher.osu.edu/mble/alumni/
+- The Ohio State University | 2013–2013 (1) | new | http://fisher.osu.edu/mhrm/alumni/
+- The University of Mississippi | 2013–2013 (1) | new | http://news.olemiss.edu/recreation-management-majors-enjoy-thriving-job-market/
+- The University of Texas at Austin | 2013–2013 (1) | new | http://www.mccombs.utexas.edu/404?item=%2f2013%2f02%2fmoney-ethics-and-energy-at-the-alumni-business-conference&user=extranet%5cAnonymous&site=website
+- The University of Texas at Austin | 2013–2013 (7) | new | http://www.mccombs.utexas.edu/Alumni | 16 pages below it
+- The University of Texas at Austin | 2013–2013 (2) | new | http://www.mccombs.utexas.edu/Alumni.aspx
+- The University of Texas at Austin | 2013–2013 (2) | new | http://www.mccombs.utexas.edu/BBA/Advising/New/Freshman/Placement.aspx
+- The University of Texas at Austin | 2013–2013 (1) | new | http://www.mccombs.utexas.edu/bba/ip/alumni
+- The University of Texas at Austin | 2013–2013 (1) | new | http://www.mccombs.utexas.edu/BBA/IP/Alumni.aspx
+- The University of Texas at Austin | 2013–2013 (1) | new | http://www.mccombs.utexas.edu/BHP/Alumni | 5 pages below it
+- The University of Texas at Austin | 2013–2013 (1) | new | http://www.mccombs.utexas.edu/BHP/Alumni.aspx
+- The University of Texas at Austin | 2013–2013 (1) | new | http://www.mccombs.utexas.edu/Centers/Venture-Labs-Investment-Competition/Alumni-Panel.aspx?p=1
+- The University of Texas at Austin | 2013–2013 (1) | new | http://www.mccombs.utexas.edu/Home/Alumni | 7 pages below it
+- The University of Texas at Austin | 2013–2013 (1) | new | http://www.mccombs.utexas.edu/Home/BBA/Advising/New/Freshman/Placement
+- The University of Texas at Austin | 2013–2013 (1) | new | http://www.mccombs.utexas.edu/Home/BHP/Alumni
+- The University of Texas at Austin | 2013–2013 (1) | new | http://www.mccombs.utexas.edu/Home/Invest-In-McCombs/Alumni
+- The University of Texas at Austin | 2013–2013 (2) | new | http://www.mccombs.utexas.edu/Invest-In-McCombs/Alumni.aspx
+- The University of Texas at Austin | 2013–2013 (2) | new | http://www.mccombs.utexas.edu/MSTC/Alumni.aspx
+- The University of Texas at Austin | 2013–2013 (3) | new | http://www.mccombs.utexas.edu/Student-Organizations/BGBA/BGBA-Alumni.aspx
+- The University of Texas at Austin | 2013–2013 (2) | new | http://www.mccombs.utexas.edu/Student-Organizations/Sigma-Fellows/Alumni.aspx
+- The University of Texas at Dallas | 2013–2013 (1) | new | http://jindal.utdallas.edu/academic-programs/phd-programs/international-management-studies/phd-applicants-and-candidates/
+- The University of Texas at Dallas | 2013–2013 (2) | new | http://jindal.utdallas.edu/alumni/ | 3 pages below it
+- The University of Texas at Dallas | 2013–2013 (1) | new | http://jindal.utdallas.edu/som/alumni/alumni-mentor-program/
+- The University of Texas at Dallas | 2013–2013 (1) | new | http://jindal.utdallas.edu/som/alumni/powergrid/
+- The University of Texas at El Paso | 2019–2019 (1) | new | https://www.utep.edu/business/graduate/phd/academic-placements.html
+- Universitat Pompeu Fabra | 2013–2013 (1) | new | http://www.upf.edu/alumni/actualitat/lluisgalter.html
+- Universitat Pompeu Fabra | 2013–2013 (1) | new | http://www.upf.edu/alumni/actualitat/nachosequeira.html
+- Universitat Pompeu Fabra | 2013–2013 (1) | new | http://www.upf.edu/fundacio/en/alumni.html
+- Universitat Pompeu Fabra | 2013–2013 (1) | new | http://www.upf.edu/fundacio/es/alumni.html
+- Universitat Pompeu Fabra | 2013–2013 (1) | new | http://www.upf.edu/upflaix-alumni/num24cast.html
+- University of Bath | 2019–2019 (1) | new | http://www.bath.ac.uk/business/placement-students/
+- University of Bath | 2019–2019 (1) | new | https://www.bath.ac.uk/campaigns/improve-your-employability-with-an-engineering-placement-year/
+- University of Bath | 2019–2019 (1) | new | https://www.bath.ac.uk/campaigns/support-for-distance-learning-students-and-for-those-on-placement-or-fieldwork/
+- University of Bath | 2013–2013 (1) | new | http://www.bath.ac.uk/management/business/placements/
+- University of Bath | 2013–2013 (1) | new | http://www.bath.ac.uk/management/business/placements_projects/
+- University of Bath | 2013–2013 (1) | new | http://www.bath.ac.uk/rdso/business/placements/
+- University of Bergamo | 2019–2019 (1) | new | https://en.unibg.it/engagement/business-services/placement
+- University of Bradford Management Centre | 2019–2019 (1) | new | http://blog.foml.brad.ac.uk/2013/11/the-power-of-placements-why-businesses-must-work-with-universities-to-meet-the-current-skills-shortage/
+- University of Brighton | 2019–2019 (1) | new | https://www.brighton.ac.uk/business-services/work-with-students/placements/index.aspx
+- University of British Columbia | 2013–2013 (2) | new | http://www.sauder.ubc.ca/Alumni | 3 pages below it
+- University of British Columbia | 2013–2019 (8) | new | http://www.scq.ubc.ca/up-or-down-an-efficiency-based-argument-for-optimal-toilet-seat-placement/
+- University of California San Diego | 2013–2013 (2) | new | http://rady.ucsd.edu/alumni-association-blog/
+- University of California San Diego | 2013–2013 (1) | new | http://rady.ucsd.edu/alumni-start-ups/
+- University of California San Diego | 2013–2013 (2) | new | http://www.rady.ucsd.edu/careers/alumni/
+- University of California San Diego | 2013–2013 (2) | new | http://rady.ucsd.edu/careers/alumni-student-connections/
+- University of California San Diego | 2013–2013 (2) | new | http://www.rady.ucsd.edu/phd/dissertation/
+- University of California San Diego | 2019–2019 (3) | new | https://rady.ucsd.edu/programs/phd/alumni/
+- University of California San Diego | 2019–2019 (3) | new | https://rady.ucsd.edu/programs/phd/job-market-candidates/
+- University of California San Diego | 2013–2013 (2) | new | http://rady.ucsd.edu/student-alumni-connections/
+- University of California, Berkeley | 2013–2013 (2) | new | http://haas.berkeley.edu/Phd/academics/bpp/placement.html
+- University of California, Berkeley | 2013–2013 (4) | new | http://www.haas.berkeley.edu/Phd/academics/jobmarket.html
+- University of California, Berkeley | 2013–2013 (2) | new | http://haas.berkeley.edu/Phd/academics/management/placement.html
+- University of California, Berkeley | 2019–2019 (2) | new | https://haas.berkeley.edu/phd/careers/job-market-candidates/
+- University of California, Berkeley | 2019–2019 (1) | new | https://haas.berkeley.edu/phd/careers/job-placements/
+- University of California, Berkeley | 2013–2013 (2) | new | http://www.haas.berkeley.edu/Phd/careers/jobmarket.html
+- University of California, Berkeley | 2013–2013 (2) | new | http://www.haas.berkeley.edu/Phd/community/alumni/ | 17 pages below it
+- University of California, Berkeley | 2019–2019 (2) | new | https://haas.berkeley.edu/phd/community/alumni-network/ | 10 pages below it
+- University of California, Berkeley | 2019–2019 (1) | new | https://mfe.haas.berkeley.edu/careers/mfe-placements
+- University of California, Irvine | 2013–2013 (2) | new | http://merage.uci.edu/Alumni/ | 3 pages below it
+- University of California, Irvine | 2013–2013 (1) | new | http://merage.uci.edu/PhD/Content/Placement/354
+- University of California, Los Angeles | 2013–2013 (1) | new | http://www.anderson.ucla.edu/100-inspirational-alumni | 105 pages below it
+- University of California, Los Angeles | 2013–2013 (3) | new | http://www.anderson.ucla.edu/alumni | 20 pages below it
+- University of California, Los Angeles | 2019–2019 (6) | new | http://www.anderson.ucla.edu/degrees/phd-program/current-job-market-candidates
+- University of California, Los Angeles | 2019–2019 (6) | known program-list | http://www.anderson.ucla.edu/degrees/phd-program/placement
+- University of California, Los Angeles | 2013–2013 (1) | new | http://www.anderson.ucla.edu/degrees/phd/2012-13-job-market-candidates
+- University of California, Los Angeles | 2013–2013 (2) | new | http://www.anderson.ucla.edu/degrees/phd/dissertations
+- University of California, Los Angeles | 2013–2013 (2) | new | http://www.anderson.ucla.edu/degrees/phd/placement
+- University of California, Los Angeles | 2013–2013 (2) | new | http://www.anderson.ucla.edu/donor-honor-roll/alumni-network
+- University of California, Los Angeles | 2013–2013 (2) | new | http://www.anderson.ucla.edu/global-focus/alumni
+- University of California, Los Angeles | 2013–2013 (2) | new | http://www.anderson.ucla.edu/media-relations/2001/ucla-anderson-2001-phd-graduates-receive-academic-appointments
+- University of California, Los Angeles | 2013–2013 (2) | new | http://www.anderson.ucla.edu/media-relations/2002/knapp-venture-competition-holds-alumni-mixer-to-launch-its-annual-contest
+- University of California, Los Angeles | 2013–2013 (2) | new | http://www.anderson.ucla.edu/media-relations/2002/ucla-anderson-appoints-alumna-as-its-new-director-of-alumni-relations
+- University of California, Los Angeles | 2013–2013 (2) | new | http://www.anderson.ucla.edu/media-relations/2003/anderson-alumni-present-gary-hart
+- University of California, Los Angeles | 2013–2019 (5) | new | http://www.anderson.ucla.edu/media-relations/2003/doctoral-graduates
+- University of California, Los Angeles | 2013–2013 (2) | new | http://www.anderson.ucla.edu/media-relations/2004/alumni-weekend-2004
+- University of California, Los Angeles | 2013–2019 (5) | new | http://www.anderson.ucla.edu/media-relations/2005/phd-student-placement
+- University of California, Los Angeles | 2013–2013 (2) | new | http://www.anderson.ucla.edu/media-relations/2011/100-inspirational-alumni
+- University of California, Los Angeles | 2013–2013 (2) | new | http://www.anderson.ucla.edu/programs-and-outreach/management-development-for-entrepreneurs/alumni
+- University of California, Los Angeles | 2013–2013 (2) | new | http://www.anderson.ucla.edu/programs-and-outreach/riordan-programs/alumni
+- University of Cambridge | 2013–2013 (1) | new | http://people.ds.cam.ac.uk/mtb23/NSP/Sheehan%20dissertation.html
+- University of Chicago | 2019–2019 (1) | new | https://gsb.uchicago.edu/programs/phd/job-market-candidates
+- University of Florida | 2013–2013 (1) | new | http://lists.ufl.edu/cgi-bin/wa?P1=ind0810A&P=7041&c=bgreene%40TCFBANK.COM&S=Re%3A+Litigation+Hold+Policy+Placement&L=RECMGMT-L&T=0
+- University of Florida | 2019–2019 (1) | new | https://news.warrington.ufl.edu/alumni-friends/doctor-of-business-administration-class-of-2017-where-are-they-now/
+- University of Florida | 2013–2013 (1) | new | http://warrington.ufl.edu/graduate/academics/phd-isom/placement.asp
+- University of Georgia | 2019–2019 (1) | new | http://grady.uga.edu/research_focus/brand-placement/
+- University of Groningen | 2013–2013 (1) | new | http://dissertations.ub.rug.nl/faculties/management/ | 6 pages below it
+- University of Groningen | 2013–2013 (1) | new | http://dissertations.ub.rug.nl/faculties/science/1993/f.de.haas/?pLanguage=en
+- University of Groningen | 2013–2013 (2) | new | http://dissertations.ub.rug.nl/faculties/science/2007/s.m.mendoza/
+- University of Houston | 2013–2013 (2) | new | http://www.bauer.uh.edu/doctoral/management/dissertation-new.asp
+- University of Iowa | 2013–2013 (1) | new | http://www.grad.uiowa.edu/theses-and-dissertations/for-students-filing-research-theses-or-dissertations
+- University of Iowa | 2013–2013 (1) | new | http://tippie.uiowa.edu/management-organizations/phd/candidates.cfm
+- University of Iowa | 2013–2013 (1) | new | http://tippie.uiowa.edu/management-organizations/phd/placements.cfm
+- University of Iowa | 2013–2013 (2) | new | http://tippie.uiowa.edu/management-sciences/phd/placement.cfm
+- University of Louisville | 2013–2013 (1) | new | http://louisville.edu/speed/industrial/academics/examples-of-completed-dissertations.html
+- University of Louvain | 2013–2013 (1) | new | http://sites.uclouvain.be/alumni-akal/
+- University of Louvain | 2013–2013 (1) | new | http://sites.uclouvain.be/alumni/louvain.html
+- University of Mannheim | 2019–2019 (1) | new | https://gess.uni-mannheim.de/doctoral-programs/business-cdsb/job-market-candidates.html
+- University of Maryland, College Park | 2013–2013 (2) | new | http://www.rhsmith.umd.edu/management/phd/candidates.aspx
+- University of Massachusetts Amherst | 2013–2013 (2) | new | http://scholarworks.umass.edu/management_dissertations/ | 2 pages below it
+- University of Missouri-Columbia | 2013–2013 (1) | new | http://business.missouri.edu/2012/trulaske-college-business-students-report-favorable-job-placement-graduation
+- University of Missouri-Columbia | 2019–2019 (1) | new | https://business.missouri.edu/phd-placements
+- University of Missouri-Columbia | 2019–2019 (1) | new | https://engineering.missouri.edu/2006/10/career-fair-reflects-strong-engineering-job-market/
+- University of North Carolina at Chapel Hill | 2019–2019 (3) | new | https://areas.kenan-flagler.unc.edu/operations/phd-graduates
+- University of North Carolina at Chapel Hill | 2019–2019 (3) | new | https://blog.kenan-flagler.unc.edu/how-ube-opened-the-job-market-for-me/
+- University of North Carolina at Chapel Hill | 2013–2013 (1) | new | http://blogs.kenan-flagler.unc.edu/ube/2010/03/standing-out-in-todays-competitive-job-market/
+- University of North Carolina at Chapel Hill | 2013–2013 (3) | new | http://www.kenan-flagler.unc.edu/about/our-people/meet-our-alumni
+- University of North Carolina at Chapel Hill | 2013–2013 (1) | new | http://www.kenan-flagler.unc.edu/alumni | 6 pages below it
+- University of North Carolina at Chapel Hill | 2013–2013 (1) | new | http://www.kenan-flagler.unc.edu/programs/phd/dissertations
+- University of North Carolina at Chapel Hill | 2013–2013 (1) | new | http://www.kenan-flagler.unc.edu/programs/phd/graduate-placement
+- University of North Carolina at Chapel Hill | 2013–2013 (1) | new | http://www.kenan-flagler.unc.edu/sustainable-enterprise/get-involved/alumni
+- University of Notre Dame | 2019–2019 (1) | new | https://kellogg.nd.edu/kellogg-international-scholars-program-where-are-they-now
+- University of Oregon | 2019–2019 (1) | new | https://business.uoregon.edu/ug/career/job-shadow/students/placement-management
+- University of Pennsylvania | 2019–2019 (2) | new | https://doctoral.wharton.upenn.edu/career-placement/
+- University of Pennsylvania | 2019–2019 (1) | new | https://doctoral.wharton.upenn.edu/students-job-market/
+- University of Pennsylvania | 2013–2013 (1) | new | http://knowledgetoday.wharton.upenn.edu/2011/10/overcoming-the-victim-mentality-staying-afloat-in-a-tough-job-market/
+- University of Pennsylvania | 2019–2019 (1) | new | https://lgst.wharton.upenn.edu/programs/phd/ethics-legal-studies-doctoral-program-career-placement/
+- University of Pennsylvania | 2013–2013 (1) | new | http://www.wharton.upenn.edu/doctoral/placement/job-market.cfm
+- University of Pittsburgh | 2019–2019 (1) | new | http://www.crsp.pitt.edu/multiethnic-placement-act-threat-foster-child-safety-and-well-being
+- University of Salford | 2013–2013 (1) | new | http://www.salford.ac.uk/business-school/business-management-courses/placements
+- University of Salford | 2013–2013 (1) | new | http://www.searchmarketing.salford.ac.uk/student-placement-opportunities-with-salford-business-school/
+- University of Salford | 2013–2013 (1) | new | http://usir.salford.ac.uk/view/user_expertise/_Industrial_Placements_and_collaborations.html
+- University of Southern California | 2013–2013 (1) | new | http://classic.marshall.usc.edu/fbe/phdfbe/candidates.htm
+- University of Southern California | 2013–2013 (1) | new | http://www.marshall.usc.edu/phd/fields/act/placements
+- University of Southern California | 2013–2013 (1) | new | http://www.marshall.usc.edu/phd/fields/fbe/placements
+- University of Southern California | 2013–2013 (1) | new | http://www.marshall.usc.edu/phd/fields/fbe/placements%20
+- University of Southern California | 2013–2013 (1) | new | http://www.marshall.usc.edu/phd/fields/iom/placements
+- University of Southern California | 2013–2013 (1) | new | http://www.marshall.usc.edu/phd/fields/iom/placements%20
+- University of Southern California | 2013–2013 (1) | new | http://www.marshall.usc.edu/phd/fields/mkt/placements
+- University of Southern California | 2013–2013 (1) | new | http://www.marshall.usc.edu/phd/fields/mor/placements
+- University of Southern California | 2013–2013 (2) | new | http://www.marshall.usc.edu/phd/placements | 2 pages below it
+- University of Southern California | 2019–2019 (1) | new | https://www.marshall.usc.edu/programs/phd-program/alumni-achievements
+- University of Tennessee at Knoxville | 2019–2019 (1) | new | https://haslam.utk.edu/management/phd/strategy-entrepreneurship-organizations/student-placement
+- University of Texas at Arlington | 2019–2019 (2) | new | http://wweb.uta.edu/business/gradbiz/newgradbiz/PhD/alumni.html
+- University of Texas at Arlington | 2013–2013 (2) | new | http://wweb.uta.edu/business/gradbiz/newgradbiz/thesis&dissertation.html
+- University of Toledo | 2013–2013 (2) | new | http://www.utoledo.edu/business/PHD/Alumni.html
+- University of Virginia | 2013–2013 (1) | new | http://www.darden.virginia.edu/web/PhD/Current-Candidates/
+- University of Virginia | 2019–2019 (1) | new | https://engineering.virginia.edu/departments/computer-engineering-program/graduate-program/computer-engineering-program-phd-graduates
+- University of Virginia | 2019–2019 (1) | new | https://news.virginia.edu/content/where-are-they-now-catching-uva-engineering-alumnae
+- University of Wales | 2019–2019 (1) | new | https://www.swansea.ac.uk/engineering/year-in-industry/placement-support/
+- University of Washington | 2013–2013 (1) | new | http://complit.washington.edu/dissertation/buffoon-and-magician-poetry-spectacle-and-critical-discourse-works-pier-paolo-pasolini
+- University of Washington | 2019–2019 (1) | new | http://depts.washington.edu/foster/working-abroad-leads-to-freedom-in-the-job-market/
+- University of Washington | 2013–2013 (1) | new | http://scandinavian.washington.edu/dissertation/ploughshares-processors-machines-change-industrialization-literary-ecocriticism-and
+- University of Washington | 2019–2019 (2) | new | https://www.washington.edu/carlson/students-3/browse-service-learning-positions/complete-a-self-placement-form/
+- University of Wisconsin-Milwaukee | 2013–2013 (3) | new | http://www4.uwm.edu/business/programs/phd/graduates.cfm
+- University of Wisconsin-Milwaukee | 2013–2013 (1) | new | http://www4.uwm.edu/business/scmi/placement/
+- University of Wisconsin–Madison | 2019–2019 (1) | new | https://wcwpds.wisc.edu/foster-parent-training/foster-parent-pre-placement/
+- Yale University | 2019–2019 (3) | new | https://som.yale.edu/programs/phd/careers/alumni
+- Yale University | 2019–2019 (3) | new | https://som.yale.edu/programs/phd/job-market-candidates
+- (no institution for host) | 2019–2019 (1) | new | http://baervan.nmt.edu/groups/res-sweep/gel-placement-concepts/wormholing.html
+- (no institution for host) | 2013–2013 (1) | new | http://business.leeds.ac.uk/corporate-relations/advertising-a-placement/
+- (no institution for host) | 2019–2019 (1) | new | http://businessandit.uoit.ca/about/industry-placements-entrepreneurship/incubator-program.php
+- (no institution for host) | 2013–2013 (1) | new | http://www.canterbury.ac.uk/business-services/placements/Home.aspx
+- (no institution for host) | 2013–2013 (1) | new | http://cmbi.bjmu.edu.cn/uptodate/critical%20care/Monitoring/Placement%20and%20management%20of%20arterial%20catheters.htm
+- (no institution for host) | 2019–2019 (1) | new | http://dypagribusiness.ac.in/infrastructure/training-placement
+- (no institution for host) | 2019–2019 (1) | new | http://www.easternwv.edu/get-started/adult-considering-college/self-assessment-course-placement
+- (no institution for host) | 2013–2013 (1) | new | http://www.itmuniversity.ac.in/School-of-Management-and-Commerce/Placements.php
+- (no institution for host) | 2013–2013 (3) | new | http://www.lancs.ac.uk/business/student-placements/
+- (no institution for host) | 2013–2013 (1) | new | http://www.lsbu.ac.uk/business/placements.shtml
+- (no institution for host) | 2019–2019 (2) | new | https://ostm.edu/careers-placement/july-25-2018-professional-massage-spaces-for-rent-in-the-south-wedge/attachment/colin-coffey/
+- (no institution for host) | 2019–2019 (2) | new | https://placement.missouriwestern.edu/
+- (no institution for host) | 2019–2019 (2) | new | https://placement.missouriwestern.edu/webwork2
+- (no institution for host) | 2019–2019 (1) | new | http://tiss.edu/view/6/mumbai-campus/school-of-management-and-labour-studies/placements-6/
+- (no institution for host) | 2019–2019 (1) | new | http://virginiawestern.edu/dualenrollment/placement.php
+- (no institution for host) | 2019–2019 (2) | new | https://www.virginiawestern.edu/learning/testing/placement.php
