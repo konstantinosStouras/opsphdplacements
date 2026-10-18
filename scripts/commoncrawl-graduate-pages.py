@@ -168,16 +168,17 @@ def surt(host):
 
 
 def crawl_list():
-    r = get(DATA + 'crawl-data/index.html')
+    r = get(DATA + 'crawl-data/index.html', tries=10, timeout=60)
+    if r is None:
+        raise SystemExit('the crawl index could not be read; name crawls with --crawl or try later')
     ids = sorted(set(re.findall(r'CC-MAIN-\d{4}-\d{2}', r.text)))
     return [c for c in ids if int(c[8:12]) >= 2013]
 
 
 def choose_crawls(args):
-    ids = crawl_list()
     if '--crawl' in args:
-        want = [a for a in args[args.index('--crawl') + 1:] if a.startswith('CC-MAIN-')]
-        return [c for c in ids if c in want]
+        return [a for a in args[args.index('--crawl') + 1:] if a.startswith('CC-MAIN-')]
+    ids = crawl_list()
     if '--all' in args:
         return ids
     per_year = int(args[args.index('--per-year') + 1]) if '--per-year' in args else 2
