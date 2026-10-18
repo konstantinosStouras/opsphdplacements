@@ -17,8 +17,8 @@ list research/graduate-list-pages.json and the snapshots feed the usual chunk ->
       a reviewer to accept with scope "program-list" (or refuse) in graduate-list-pages.json.
   peek
       Save the text of the latest capture of each new candidate (commoncrawl/peek/) for the reviewers.
-  review-chunks [--size 40]
-      Batch the peeked candidates into commoncrawl/review-chunk-N.json for review agents, who write
+  review-chunks [--size 40] [--start N]
+      Batch the peeked candidates (not yet reviewed) into commoncrawl/review-chunk-N.json, numbered from N for review agents, who write
       commoncrawl/review-N.json {"pages": [{url, institution, scope, reason, reviewedAt}]}.
   accept
       Add the reviewed pages to research/graduate-list-pages.json (scope program-list, single-record or not-a-list).
@@ -66,12 +66,12 @@ URL_LIST = re.compile(r'(?<![a-z])(placements?|job-?placements?|job-?market|jobm
 URL_WEAK = re.compile(r'(?<![a-z])(alumni|alumnae|graduates|candidates|placed|dissertations?|theses)(?![a-z])', re.I)
 URL_DOC = re.compile(r'(?<![a-z])(phd|ph-d|ph\.d|doctoral|doctorate|doctorat|dba|job-?market|jobmarket|dissertations?|theses|promovierte|doktor)', re.I)
 URL_FIELD = re.compile(r'(business|management|mgmt|gsb|sloan|kellogg|wharton|booth|fuqua|tuck|haas|anderson|stern|darden|fisher|smeal|kenan|mccombs|rady|tepper|olin|foster|mendoza|krannert|scheller|goizueta|carlson|marshall|isom|otim|itom|ieor|isye|ieem|ieda|dsme|msom|operations|supply|logistic|industrial|decision|analytics|engineering|stor-i|rutcor|informs|(^|[./-])(or|om|ie|iems|ise|sem|ds)([./-]|$))', re.I)
-URL_NOT = re.compile(r'(work-?placement|clinical|internship|nursing|medicine|medical|health|school-?placement|placement-?(test|exam|credit)|language-?placement|replacement|displacement|/tag/|/category/|\?replytocom|/feed/?$|\.pdf$|/wp-json/|/search\?|/print/|\?page=|undergrad|mba[-_/]|masters?[-_/]|msc[-_/]|executive|/news/|/blog/|/events?/|calendar|bachelors?|prospective|career[-_]?(management|services?|cent(er|re)|development)|alumni[-_]?giving|giving|networking|/connect|reunion|awards?|donat|membership|benefits|/jobs?/|job[-_]search|resume|interview|/resources|/contact|/about[-_]us|spotlight|profile|/people/|/staff|/faculty/|/directory|/apply|admission|tuition|funding|handbook|faq|/login|/user/|/node/|/sites/default/|/print|/share|/tag/|~|/policies|catalog|binding|defen[cs]e|guideline|format|template|submission|/publications?/|testimonial|/kwo/|magazine|newsletter|/give|members|recruit|repub\.eur\.nl/res/aut/|/research/|/projects?/|/seminar|/workshop|/conference|/courses?/|/syllab|/forms?/|/student[-_]?life|/campus|/visit|/map|/sitemap|/rss|/feed|/archive/|/image|/photo|/gallery|/survey|/statistics|/stats|/rankings?|/employ|/recruiters?|/hire|/internship|/competition|/awards?|/scholarship|/fellowship|/visiting|/exchange|/study[-_]abroad|/ranking|/overview|/welcome|/home$|/index\.html?$|/\d{4}/\d{2}/\d{2}/|/press|/stories/|/story/|/articles?/|/podcast|/video)', re.I)
+URL_NOT = re.compile(r'(work-?placement|clinical|internship|nursing|medicine|medical|health|school-?placement|placement-?(test|exam|credit)|language-?placement|replacement|displacement|/tag/|/category/|\?replytocom|/feed/?$|\.pdf$|/wp-json/|/search\?|/print/|\?page=|undergrad|mba[-_/]|masters?[-_/]|msc[-_/]|executive|/news/|/blog/|/events?/|calendar|bachelors?|prospective|career[-_]?(management|services?|cent(er|re)|development)|alumni[-_]?giving|giving|networking|/connect|reunion|awards?|donat|membership|benefits|/jobs?/|job[-_]search|resume|interview|/resources|/contact|/about[-_]us|spotlight|profile|/people/|/staff|/faculty/|/directory|/apply|admission|tuition|funding|handbook|faq|/login|/user/|/node/|/sites/default/|/print|/share|/tag/|~|_theses/|/theses/?$|announcements|simple-search|/browse|/handle/\d+/\d+$|copyright|extinguisher|/safety|/registrar|/advising|/testing|/careers/|news-release|/leadership|pulse|rotc|/greif/|cmpid=|/insights/|/rotator/|/orientation|transcript|/coop|/fellows/|/studyabroad|/global|/parents|/policies|catalog|binding|defen[cs]e|guideline|format|template|submission|/publications?/|testimonial|/kwo/|magazine|newsletter|/give|members|recruit|repub\.eur\.nl/res/aut/|/research/|/projects?/|/seminar|/workshop|/conference|/courses?/|/syllab|/forms?/|/student[-_]?life|/campus|/visit|/map|/sitemap|/rss|/feed|/archive/|/image|/photo|/gallery|/survey|/statistics|/stats|/rankings?|/employ|/recruiters?|/hire|/internship|/competition|/awards?|/scholarship|/fellowship|/visiting|/exchange|/study[-_]abroad|/ranking|/overview|/welcome|/home$|/index\.html?$|/\d{4}/\d{2}/\d{2}/|/press|/stories/|/story/|/articles?/|/podcast|/video)', re.I)
 
 
 # Departments outside operations, management science and industrial engineering: their lists are not in scope and
 # they make up most of the addresses on a university site that mention placements or alumni.
-URL_OTHER = re.compile(r'(?<![a-z])(english|history|political|politics|theology|philosophy|sociology|psychology|linguistics|classics|economics|econ|finance|accounting|accountancy|marketing|law|physics|chemistry|chem|biology|bio\w*|biochem|neuro\w*|math\w*|statistics|stat|religion|anthropology|geography|music|arts?|education|nursing|pharm\w*|social-?work|architecture|communication|journalism|languages?|spanish|french|german|italian|chinese|japanese|asian|humanities|literature|slavic|romance|cs|computer-?science|computing|informatics|ece|eecs|electrical|mechanical|civil|chemical|aerospace|materials|astronomy|earth|environmental|ecology|geology|public-?policy|public-?health|medicine|dental|veterinary|agri\w*|forestry|kinesiology|physiology|genetics|cancer|biomedical|planning|urban|social-?sciences?|gender|womens?|african|american|european|middle-?east|jewish|hispanic|theatre|theater|film|dance|design|fine-?arts|photography|writing|rhetoric|divinity|ministry|anesthesia|surgery|radiology|optometry|audiology|speech|hearing|epidemiology|biostat\w*|immunology|microbiology|pathology|oncology|cardiology|pediatric|psychiatry|clinical|counsel\w*|criminology|criminal|justice|library|information-?science|ischool|cognitive|behavioral|organizational|organisational|ob|hr|hrm|real-?estate|insurance|actuarial|hospitality|tourism|sport|nutrition|food|animal|plant|soil|ocean|marine|atmospheric|meteorology|nuclear|petroleum|mining|textile|polymer|physics)(?![a-z])', re.I)
+URL_OTHER = re.compile(r'(?<![a-z])(english|history|political|politics|theology|philosophy|sociology|psychology|linguistics|classics|economics|econ|finance|accounting|accountancy|marketing|law|physics|chemistry|chem|biology|bio\w*|biochem|neuro\w*|math\w*|statistics|stat|religion|anthropology|geography|music|arts?|education|nursing|pharm\w*|social-?work|architecture|communication|journalism|languages?|spanish|french|german|italian|chinese|japanese|asian|humanities|literature|slavic|romance|cs|computer-?science|computing|informatics|ece|eecs|electrical|mechanical|civil|chemical|aerospace|materials|astronomy|earth|environmental|ecology|geology|public-?policy|public-?health|medicine|dental|veterinary|agri\w*|forestry|kinesiology|physiology|genetics|cancer|biomedical|planning|urban|social-?sciences?|gender|womens?|african|american|european|middle-?east|jewish|hispanic|theatre|theater|film|dance|design|fine-?arts|photography|writing|rhetoric|divinity|ministry|anesthesia|surgery|radiology|optometry|audiology|speech|hearing|epidemiology|biostat\w*|immunology|microbiology|pathology|oncology|cardiology|pediatric|psychiatry|clinical|counsel\w*|criminology|criminal|justice|library|information-?science|ischool|media|cognitive|behavioral|organizational|organisational|ob|hr|hrm|real-?estate|insurance|actuarial|hospitality|tourism|sport|nutrition|food|animal|plant|soil|ocean|marine|atmospheric|meteorology|nuclear|petroleum|mining|textile|polymer|physics)(?![a-z])', re.I)
 # Institutions that are business or technology schools as a whole: every page on their hosts is in a business
 # or engineering setting, so the address need not name the field.
 BUSINESS_INST = re.compile(r'(business|management|insead|indian institute of management|indian school of business|hec|essec|esade|iese|ie university|bocconi|erasmus|tilburg|institute of technology|polytechnic|politecnico|polytechnique|technical university|technische|tsinghua|wharton|kellogg|london school of economics)', re.I)
@@ -89,8 +89,11 @@ def url_wanted(u, special_hosts, business_hosts=frozenset()):
     host = urlsplit(u).netloc.lower()
     if host.startswith('www.'):
         host = host[4:]
-    depth = len([x for x in urlsplit(u).path.split('/') if x])
-    weak = weak_word and (bool(URL_DOC.search(u)) or (host in special_hosts and depth <= 3))
+    path = urlsplit(u).path.lower()
+    segs = [x for x in path.split('/') if x]
+    # a weak word counts on an accepted page's host only inside the same section of the site (a department page)
+    in_section = any(isinstance(k, tuple) and k[0] == host and '/'.join(segs).startswith(k[1]) for k in special_hosts)
+    weak = weak_word and (bool(URL_DOC.search(u)) or in_section)
     if not strong and not weak:
         return False
     in_business = host in special_hosts or any(host == h or host.endswith('.' + h) for h in business_hosts)
@@ -105,8 +108,15 @@ def special_hosts_of(domains, pages):
     """Hosts that already carry a reviewed page, and hosts listed below a university's main domain."""
     hosts = set()
     for p in pages:
-        h = urlsplit(p['url']).netloc.lower()
-        hosts.add(h[4:] if h.startswith('www.') else h)
+        if (p.get('scope') or 'program-list') not in ('program-list', 'single-record'):
+            continue
+        u = urlsplit(p['url'])
+        h = u.netloc.lower()
+        h = h[4:] if h.startswith('www.') else h
+        segs = [x for x in u.path.lower().split('/') if x]
+        # the host, and the section of the site the accepted page sits in (its first two path segments)
+        hosts.add(h)
+        hosts.add((h, '/'.join(segs[:2]) if len(segs) >= 2 else ''))
     for d in domains:
         main = urlsplit(d.get('website') or '').netloc.lower()
         main = main[4:] if main.startswith('www.') else main
@@ -392,6 +402,7 @@ def peek(args):
 def review_chunks(args):
     """Write commoncrawl/review-N.json batches of peeked candidates for the review agents (--size 40)."""
     size = int(args[args.index('--size') + 1]) if '--size' in args else 40
+    start = int(args[args.index('--start') + 1]) if '--start' in args else 1
     cands = read_json(os.path.join(CDIR, 'candidates.json'), [])
     reviewed = set()
     for fn in os.listdir(CDIR):
@@ -405,11 +416,11 @@ def review_chunks(args):
         t = os.path.join(CDIR, 'peek', slug(c['url']) + '.txt')
         if os.path.exists(t):
             todo.append({'url': c['url'], 'institution': c['institution'], 'years': c['years'], 'text': os.path.relpath(t, ROOT), 'pagesBelow': sum(1 for x in cands if x['underParent'] == c['normalized'])})
-    n = 0
+    n = start - 1
     for i in range(0, len(todo), size):
         n += 1
         write_json(os.path.join(CDIR, f'review-chunk-{n}.json'), {'chunk': n, 'pages': todo[i:i + size]})
-    log(f'{len(todo)} candidates in {n} review chunks')
+    log(f'{len(todo)} candidates in review chunks {start} to {n}')
 
 
 def accept(args):
