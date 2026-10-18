@@ -8,7 +8,7 @@ One line per address: institution | years captured | known page? | address. Acce
 - Aalborg University | 2021–2021 (1) | known not-a-list | https://www.cmi.aau.dk/phd/phd-theses/research-on-web-2.0-usage-for-knowledge-management-processes--the-case-of-ghana-cocoa-board--cocobod-.cid330711
 - Aalborg University | 2018–2018 (1) | known single-record | https://www.hcci.aau.dk/phd-theses/show/ph.d.-afhandling-ved-rikke-gaardboe--kritiske-succesfaktorer-for-business-intelligence-.cid361671
 - Aalborg University | 2017–2017 (1) | known not-a-list | http://www.phd.engineering.aau.dk/doctoral-dissertations/
-- Aix Marseille Université | 2024–2024 (1) | new | https://iaam-facdedroit.univ-amu.fr/fr/%3Cnolink%3E/memoires-theses
+- Aix Marseille Université | 2024–2024 (1) | known not-a-list | https://iaam-facdedroit.univ-amu.fr/fr/%3Cnolink%3E/memoires-theses
 - Aristotle University of Thessaloniki | 2020–2021 (4) | known not-a-list | https://meteo.geo.auth.gr/?account-dissertation-key-management
 - Arizona State University | 2023–2023 (1) | known not-a-list | https://bootcamp.cpe.asu.edu/cybersecurity/landing/?s=Google-Brand_RFull&pkw=asu%20cyber%20security%20bootcamp&pcrid=465755523287&pmt=e&utm_source=google&utm_medium=cpc&utm_campaign=GGL%7CARIZONA-STATE-UNIVERSITY%7CSEM%7CCYBER%7C-%7COFL%7C_RFull_%7CALL%7CBRD%7CEXACT%7CCore%7CBootcamp&utm_term=asu%20cyber%20security%20bootcamp&s=google&k=asu%20cyber%20security%20bootcamp&utm_adgroupid=116008426544&utm_locationphysicalms=9030087&utm_matchtype=e&utm_network=g&utm_device=c&utm_content=465755523287&utm_placement=&gclid=CjwKCAjwuYWSBhByEiwAKd_n_tgKg4CZ3G6tzIG6_A7Jlb2csm-_B-d1m9mvUDEDdMBczMhQaHltWxoCyV0QAvD_BwE&gclsrc=aw.ds
 - Arizona State University | 2023–2023 (1) | known not-a-list | https://bootcamp.cpe.asu.edu/fintech/landing/?s=Google-Brand&msg_cv_scta=4&msg_cv_stbn=1&msg_cv_fcta=1&pkw=asu%20fintech%20bootcamp&pcrid=480018138458&pmt=e&utm_source=google&utm_medium=cpc&utm_campaign=GGL%7CARIZONA-STATE-UNIVERSITY%7CSEM%7CFINTECH%7C-%7COFL%7CTIER-1%7CALL%7CBRD%7CEXACT%7CCore%7CBootcamp&utm_term=asu%20fintech%20bootcamp&s=google&k=asu%20fintech%20bootcamp&utm_adgroupid=107801244146&utm_locationphysicalms=9030087&utm_matchtype=e&utm_network=g&utm_device=c&utm_content=480018138458&utm_placement=&gclid=CjwKCAjwuYWSBhByEiwAKd_n_opidf9EqV_xynX2b1trPs7OosTxRj4Wvt1GKbpeSZfGqiDvZ67oghoCVm0QAvD_BwE&gclsrc=aw.ds
@@ -17,7 +17,7 @@ One line per address: institution | years captured | known page? | address. Acce
 - Arizona State University | 2021–2021 (1) | known single-record | https://fengju.engineering.asu.edu/2021/04/feifan-successfully-defended-his-phd-dissertation-congratualtions-dr-wang/
 - Arizona State University | 2023–2023 (7) | known not-a-list | https://keep.lib.asu.edu/?f%5B0%5D=all_subjects%3A1995&f%5B1%5D=all_subjects%3A43387&f%5B2%5D=linked_agents%3AComputer%20Science%20and%20Engineering%20Program&f%5B3%5D=member_of%3ATheses%20and%20Dissertations&f%5B4%5D=resource_type%3AText&page=1
 - Arizona State University | 2025–2025 (1) | new | https://news.asu.edu/20220525-where-are-they-now-triplealumna-carolina-lopez-applies-valuable-lessons-asu-her-work
-- Arizona State University | 2024–2025 (2) | new | https://news.asu.edu/20220908-where-are-they-now-2017-asu-business-graduate-james-d-gish-performing-broadway
+- Arizona State University | 2024–2025 (2) | known not-a-list | https://news.asu.edu/20220908-where-are-they-now-2017-asu-business-graduate-james-d-gish-performing-broadway
 - Arizona State University | 2019–2020 (61) | known not-a-list | https://repository.asu.edu/collections/7?sub=Management&cont=Adame%2C+Elissa&type=Doctoral+Dissertation
 - Arizona State University | 2018–2018 (1) | known not-a-list | http://terrpress.personal.asu.edu/2017/11/learn-what-exactly-gurus-tend-to-be-telling-relating-to-groundwork-essay-or-dissertation/
 - Arizona State University | 2015–2025 (23) | known not-a-list | https://wpcarey.asu.edu/alumni | 35 pages below it
@@ -36,43 +36,63 @@ One line per address: institution | years captured | known page? | address. Acce
 - Aston University | 2017–2017 (1) | known not-a-list | http://www.aston.ac.uk/business/develop-your-business/case-studies/case-studies-archive/placement-scheme/
 - Aston University | 2017–2017 (1) | known not-a-list | http://www.aston.ac.uk/business/links-to-business/previous-news-stories/2015/october/aston-graduates-placement-has-real-impact-on-local-sme/
 - Aston University | 2014–2017 (9) | known not-a-list | http://www.aston.ac.uk/clipp/learning-innovation/project-reports/2009/pebblepad-and-placements-an-aid-to-develop-reflective-practice-or-technological-barrier/
-- Aston University | 2024–2024 (1) | new | https://research-test.aston.ac.uk/en/persons/stephen-anderson/supervised-student-theses/
+- Aston University | 2024–2024 (1) | known not-a-list | https://research-test.aston.ac.uk/en/persons/stephen-anderson/supervised-student-theses/
 - Aston University | 2021–2021 (1) | known not-a-list | https://research.aston.ac.uk/en/persons/caroline-witton/supervised-student-theses/
 - Aston University | 2021–2021 (1) | known not-a-list | https://research.aston.ac.uk/en/persons/petra-van-koningsbruggen/supervised-student-theses/
+- Aston University | 2025–2025 (1) | new | https://research.aston.ac.uk/en/persons/richard-booth/supervised-student-theses/
 - Aston University | 2020–2023 (2) | known not-a-list | https://research.aston.ac.uk/en/persons/stephen-anderson/supervised-student-theses/
 - Aston University | 2013–2013 (2) | known not-a-list | http://www1.aston.ac.uk/business/links-to-business/previous-news-stories/2010/june/engineering-placements/
 - Aston University | 2013–2013 (1) | known not-a-list | http://www1.aston.ac.uk/business/support/case-studies/placement-scheme/
 - Aston University | 2013–2013 (2) | known not-a-list | http://www1.aston.ac.uk/clipp/learning-innovation/project-reports/2009/pebblepad-and-placements-an-aid-to-develop-reflective-practice-or-technological-barrier/
-- Athens University of Business and Economics | 2023–2023 (1) | known not-a-list | https://agora.aueb.gr/en/doctoral-candidates/
+- Athens University of Business and Economics | 2023–2025 (2) | known not-a-list | https://agora.aueb.gr/en/doctoral-candidates/
 - Athens University of Business and Economics | 2022–2023 (4) | known not-a-list | https://aueb.gr/el/lib/content/dokimastiki-prosvasi-stin-proquest-disserations-and-theses
-- Athens University of Business and Economics | 2023–2023 (1) | known not-a-list | https://www.aueb.gr/en/lib/content/dokimastiki-prosvasi-stin-proquest-disserations-and-theses-global
-- Athens University of Business and Economics | 2021–2024 (11) | known not-a-list | https://aueb.gr/en/lib/content/postgraduate-dissertations?qt-libsearch=0
+- Athens University of Business and Economics | 2023–2025 (2) | known not-a-list | https://www.aueb.gr/en/lib/content/dokimastiki-prosvasi-stin-proquest-disserations-and-theses-global
+- Athens University of Business and Economics | 2021–2025 (12) | known not-a-list | https://aueb.gr/en/lib/content/postgraduate-dissertations?qt-libsearch=0
 - Athens University of Business and Economics | 2018–2018 (1) | known not-a-list | http://www.db-net.aueb.gr/michalis/theses.php
 - Athens University of Business and Economics | 2023–2023 (1) | known not-a-list | https://www.de.aueb.gr/el/lib/content/dokimastiki-prosvasi-stin-proquest-disserations-and-theses
-- Athens University of Business and Economics | 2022–2023 (2) | known not-a-list | https://www.de.aueb.gr/en/lib/content/postgraduate-dissertations
+- Athens University of Business and Economics | 2022–2025 (3) | known not-a-list | https://www.de.aueb.gr/en/lib/content/postgraduate-dissertations
 - Athens University of Business and Economics | 2021–2021 (1) | known not-a-list | https://www.dept.aueb.gr/el/intneg/content/dissertation-guide
 - Athens University of Business and Economics | 2021–2021 (1) | known not-a-list | https://www.dept.aueb.gr/el/lawecon/content/dissertation-guide
 - Athens University of Business and Economics | 2019–2023 (3) | known not-a-list | https://www.dept.aueb.gr/en/deos/content/doctoral-graduates
-- Athens University of Business and Economics | 2022–2022 (1) | known not-a-list | https://www.dept.aueb.gr/en/deos/content/phd-candidates
+- Athens University of Business and Economics | 2022–2025 (3) | known not-a-list | https://www.dept.aueb.gr/en/deos/content/phd-candidates
 - Athens University of Business and Economics | 2019–2023 (7) | known not-a-list | https://www.dept.aueb.gr/en/dmst/content/phd-candidates
-- Athens University of Business and Economics | 2024–2024 (1) | new | https://dept.aueb.gr/en/financeandbanking/content/dissertation
+- Athens University of Business and Economics | 2024–2024 (1) | known not-a-list | https://dept.aueb.gr/en/financeandbanking/content/dissertation
 - Athens University of Business and Economics | 2023–2023 (1) | known not-a-list | https://www.dept.aueb.gr/en/HRMlab/content/doctoral-candidates
 - Athens University of Business and Economics | 2022–2022 (1) | known not-a-list | https://www.dept.aueb.gr/en/inteu/content/dissertation
-- Athens University of Business and Economics | 2022–2023 (2) | known not-a-list | https://www.dept.aueb.gr/en/lawecon/content/dissertation
+- Athens University of Business and Economics | 2022–2025 (3) | known not-a-list | https://www.dept.aueb.gr/en/lawecon/content/dissertation
 - Athens University of Business and Economics | 2020–2024 (3) | known program-list | https://www.dept.aueb.gr/en/mbc/content/completed-phd-dissertations
-- Athens University of Business and Economics | 2020–2024 (6) | known not-a-list | https://www.dept.aueb.gr/en/mbc/content/current-phd-dissertations
-- Athens University of Business and Economics | 2023–2023 (1) | known not-a-list | https://www.dept.aueb.gr/en/mbc/content/phd-candidates
+- Athens University of Business and Economics | 2020–2025 (7) | known not-a-list | https://www.dept.aueb.gr/en/mbc/content/current-phd-dissertations
+- Athens University of Business and Economics | 2023–2025 (2) | known not-a-list | https://www.dept.aueb.gr/en/mbc/content/phd-candidates
+- Athens University of Business and Economics | 2025–2025 (1) | new | https://infosec.aueb.gr/index.php/2009-01-18-16-51-33/2009-01-18-17-13-22/62-2009-01-24-17-49-37/354-issmgt-theses-subjects
+- Athens University of Business and Economics | 2025–2025 (1) | new | https://www.infosec.aueb.gr/index.php/2009-01-18-16-51-33/62-2009-01-24-17-49-37/354-issmgt-theses-subjects
+- Athens University of Business and Economics | 2025–2025 (1) | new | https://www.infosec.aueb.gr/index.php/2009-01-24-15-10-51/2009-01-24-15-46-52/62-2009-01-24-17-49-37/354-issmgt-theses-subjects
+- Athens University of Business and Economics | 2025–2025 (1) | new | https://infosec.aueb.gr/index.php/2009-01-24-15-10-51/2009-01-24-15-49-25/62-2009-01-24-17-49-37/354-issmgt-theses-subjects
+- Athens University of Business and Economics | 2025–2025 (1) | new | https://infosec.aueb.gr/index.php/2009-01-25-16-45-17/2009-01-25-17-00-19/62-2009-01-24-17-49-37/354-issmgt-theses-subjects
+- Athens University of Business and Economics | 2025–2025 (1) | new | https://irakleitos.aueb.gr/en/lib/content/postgraduate-dissertations
 - Athens University of Business and Economics | 2017–2018 (2) | known not-a-list | http://prima.aueb.gr/index.php/curriculum/dissertation | 3 pages below it
 - Athens University of Business and Economics | 2023–2024 (2) | known not-a-list | https://www-2.aueb.gr/en/lib/content/postgraduate-dissertations
-- Auburn University | 2024–2025 (2) | new | https://harbert.auburn.edu/degrees-programs/doctoral/phd-business-management/placements.html
+- Auburn University | 2024–2025 (2) | known not-a-list | https://harbert.auburn.edu/degrees-programs/doctoral/phd-business-management/placements.html
 - Auburn University | 2013–2014 (6) | known not-a-list | http://www.vetmed.auburn.edu/home/departments/pathobiology/graduate-program/pathobiology-graduate-program/areas-for-thesis-or-dissertation-research
+- BI Norwegian Business School | 2025–2025 (1) | new | https://www.bi.no/en/programmes-and-individual-courses/phd/placements/andreea/
+- BI Norwegian Business School | 2025–2025 (1) | new | https://www.bi.no/en/programmes-and-individual-courses/phd/placements/mehrad/
 - BI Norwegian Business School | 2019–2023 (3) | known not-a-list | https://www.bi.no/forskning/vitenskapelig-publisering/series-of-dissertations/ | 4 pages below it
 - Ben-Gurion University of the Negev, Israel | 2022–2022 (1) | known not-a-list | https://cris.bgu.ac.il/en/persons/adrian-stern/supervised-student-theses/
+- Ben-Gurion University of the Negev, Israel | 2025–2025 (1) | known not-a-list | https://cris.bgu.ac.il/en/persons/aya-biderman/supervised-student-theses/
+- Ben-Gurion University of the Negev, Israel | 2025–2025 (1) | known not-a-list | https://cris.bgu.ac.il/en/persons/dafna-schwarz/supervised-student-theses/
+- Ben-Gurion University of the Negev, Israel | 2025–2025 (1) | known not-a-list | https://cris.bgu.ac.il/en/persons/eitan-rubin/supervised-student-theses/
+- Ben-Gurion University of the Negev, Israel | 2025–2025 (1) | known not-a-list | https://cris.bgu.ac.il/en/persons/idan-menashe/supervised-student-theses/
 - Ben-Gurion University of the Negev, Israel | 2022–2022 (1) | known not-a-list | https://cris.bgu.ac.il/en/persons/iris-visoly-fisher/supervised-student-theses/
+- Ben-Gurion University of the Negev, Israel | 2025–2025 (1) | known not-a-list | https://cris.bgu.ac.il/en/persons/moshe-sagi/supervised-student-theses/
+- Ben-Gurion University of the Negev, Israel | 2025–2025 (1) | known not-a-list | https://cris.bgu.ac.il/en/persons/nachshon-meiran/supervised-student-theses/
+- Ben-Gurion University of the Negev, Israel | 2025–2025 (1) | known not-a-list | https://cris.bgu.ac.il/en/persons/oded-israeli/supervised-student-theses/
+- Ben-Gurion University of the Negev, Israel | 2025–2025 (1) | known not-a-list | https://cris.bgu.ac.il/en/persons/oded-tammuz/supervised-student-theses/
+- Ben-Gurion University of the Negev, Israel | 2025–2025 (1) | known not-a-list | https://cris.bgu.ac.il/en/persons/paula-graciela-kabalo/supervised-student-theses/
+- Ben-Gurion University of the Negev, Israel | 2025–2025 (1) | known not-a-list | https://cris.bgu.ac.il/en/persons/sarai-batsheva-aharoni/supervised-student-theses/
+- Ben-Gurion University of the Negev, Israel | 2025–2025 (1) | known not-a-list | https://cris.bgu.ac.il/en/persons/tal-svoray/supervised-student-theses/
 - Ben-Gurion University of the Negev, Israel | 2022–2022 (1) | known program-list | https://cris.bgu.ac.il/en/persons/zilla-sinuany-stern/supervised-student-theses/
 - Ben-Gurion University of the Negev, Israel | 2017–2020 (3) | known not-a-list | http://in.bgu.ac.il/en/engn/ise/Pages/Doctoral_graduates.aspx
 - Benedictine University | 2013–2013 (3) | known not-a-list | http://www.ben.edu/academic_programs/business/Doctoral_Programs/PhDinOD/dissertation.cfm
-- Bilkent University | 2024–2024 (1) | new | https://w3.ie.bilkent.edu.tr/en/ph-d-graduates/
+- Bilkent University | 2024–2024 (1) | known program-list | https://w3.ie.bilkent.edu.tr/en/ph-d-graduates/
 - Boston College | 2013–2014 (8) | known not-a-list | http://www.bc.edu/content/bc/schools/cas/pulse/placements/sociedad.html
 - Boston University | 2013–2013 (1) | known not-a-list | http://www.bu.edu/amnesp/phd/recent_dissertations/dissertations1972-79/
 - Boston University | 2025–2025 (1) | new | https://www.bu.edu/cds-faculty/culture-community/phd-candidates/
@@ -282,11 +302,11 @@ One line per address: institution | years captured | known page? | address. Acce
 - California Institute of Technology | 2013–2013 (1) | known not-a-list | http://www.hss.caltech.edu/ss/phds/alumni
 - California Institute of Technology | 2019–2020 (3) | known not-a-list | http://hss.divisions.caltech.edu/academics/graduate-studies/job-market-candidates
 - California Institute of Technology | 2021–2021 (3) | known not-a-list | https://murray.cds.caltech.edu/index.php?title=Special:UserLogin&returnto=Special%3ASearchByProperty%2FSource%2FPhD-20Dissertation%2C-20Caltech%2C-20Jul-201996&returntoquery=limit%3D100%26offset%3D0%26property%3DSource%26value%3DPhD-20Dissertation%252C-20Caltech%252C-20Jul-201996
-- California Institute of Technology | 2024–2024 (1) | new | https://www.photonics.caltech.edu/book_chapters_theses.html
+- California Institute of Technology | 2024–2024 (1) | known not-a-list | https://www.photonics.caltech.edu/book_chapters_theses.html
 - California Institute of Technology | 2018–2018 (1) | known not-a-list | http://vigeland.paradise.caltech.edu/dissertations.html
 - California Institute of Technology | 2013–2013 (1) | known not-a-list | http://www.wordsmatter.caltech.edu/jobmarket
 - Cardiff University | 2023–2023 (1) | known not-a-list | https://www.cardiff.ac.uk/business-school/collaborate/for-business/placements-and-graduate-opportunities
-- Cardiff University | 2024–2024 (1) | new | https://www.cardiff.ac.uk/cy/business-school/collaborate/for-business/placements-and-graduate-opportunities
+- Cardiff University | 2024–2024 (1) | known not-a-list | https://www.cardiff.ac.uk/cy/business-school/collaborate/for-business/placements-and-graduate-opportunities
 - Carnegie Institute of Technology | 2013–2013 (1) | known not-a-list | http://www.cit.cmu.edu/current_students/graduates/phd_policies.html
 - Carnegie Institute of Technology | 2013–2013 (2) | known not-a-list | http://www.cit.cmu.edu/current_students/graduates/thesis_dissertation_policies.html
 - Carnegie Mellon University | 2017–2017 (1) | known not-a-list | https://www.cmu.edu/africa/industry-connections/job-placement/
@@ -327,16 +347,19 @@ One line per address: institution | years captured | known page? | address. Acce
 - City University of Hong Kong | 2023–2023 (1) | known not-a-list | https://scholars.cityu.edu.hk/en/activities/5th-international-symposium-on-educational-technology-iset-2019(870ec0f0-f747-4eae-a06f-28fe3398488c)/theses.html
 - City University of Hong Kong | 2023–2023 (1) | known not-a-list | https://scholars.cityu.edu.hk/en/organisations/college-of-engineering(7a7285c5-c3ae-4678-a3c0-894558b62147)/theses.html
 - City University of Hong Kong | 2023–2023 (1) | known not-a-list | https://scholars.cityu.edu.hk/en/organisations/college-of-science(f1c48739-98d4-4ccf-97bc-47bf79f88eeb)/theses.html
-- City University of Hong Kong | 2024–2024 (1) | new | https://scholars.cityu.edu.hk/en/organisations/department-of-data-science(0be74b91-9733-4e49-bb65-fb5bccde34eb)/theses.html
+- City University of Hong Kong | 2024–2024 (1) | known not-a-list | https://scholars.cityu.edu.hk/en/organisations/department-of-data-science(0be74b91-9733-4e49-bb65-fb5bccde34eb)/theses.html
 - City University of Hong Kong | 2021–2021 (1) | known program-list | https://scholars.cityu.edu.hk/en/organisations/department-of-systems-engineering-and-engineering-management(ca72129c-e0e1-47ac-8b8a-ba68c9131961)/theses.html
 - City University of Hong Kong | 2024–2024 (1) | known not-a-list | https://scholars.cityu.edu.hk/en/persons/abid-ali(f6a5c094-aed1-4eb1-833b-b4cd238a6941)/theses.html?filter=author
 - City University of Hong Kong | 2023–2023 (1) | known not-a-list | https://scholars.cityu.edu.hk/en/persons/adebayo-olatunbosun-sojobi(2654f329-8a00-41ab-8e28-0b5c0422725d)/theses.html
 - City University of Hong Kong | 2023–2023 (1) | known not-a-list | https://scholars.cityu.edu.hk/en/persons/akintayo-temiloluwa-abolude(0664c816-2fdc-44e5-bb17-53c567910ccf)/theses.html
+- City University of Hong Kong | 2025–2025 (1) | known not-a-list | https://scholars.cityu.edu.hk/en/persons/bcexem/supervised-student-theses/
+- City University of Hong Kong | 2025–2025 (1) | known not-a-list | https://scholars.cityu.edu.hk/en/persons/bckclam/supervised-student-theses/
 - City University of Hong Kong | 2023–2023 (1) | known not-a-list | https://scholars.cityu.edu.hk/en/persons/bernice-clara-lee(3fafb3ac-3f59-4176-8749-2013c2043cfa)/theses.html
 - City University of Hong Kong | 2024–2024 (1) | known not-a-list | https://scholars.cityu.edu.hk/en/persons/biao-xu(93951d42-48c7-45a9-9bfc-b32e89114c3f)/theses.html
 - City University of Hong Kong | 2023–2023 (1) | known not-a-list | https://scholars.cityu.edu.hk/en/persons/bin-bao(f65e994b-7e46-450b-ab27-12d00169f2a8)/theses.html
 - City University of Hong Kong | 2024–2024 (1) | known not-a-list | https://scholars.cityu.edu.hk/en/persons/bing-xia(31764d5f-a40f-4980-a27a-0bbc82417a74)/theses.html
 - City University of Hong Kong | 2024–2024 (1) | known not-a-list | https://scholars.cityu.edu.hk/en/persons/binghui-li(81291f40-e065-423a-ae1c-3b93ce82a2e2)/theses.html
+- City University of Hong Kong | 2025–2025 (1) | known not-a-list | https://scholars.cityu.edu.hk/en/persons/blinder/supervised-student-theses/
 - City University of Hong Kong | 2024–2024 (1) | known not-a-list | https://scholars.cityu.edu.hk/en/persons/bo-ouyang(2511377e-87e6-4c18-83b2-04999b12e867)/theses.html
 - City University of Hong Kong | 2024–2024 (1) | known not-a-list | https://scholars.cityu.edu.hk/en/persons/bo-yi(ba321bf6-7509-4601-924c-962d369e8388)/theses.html
 - City University of Hong Kong | 2023–2023 (1) | known not-a-list | https://scholars.cityu.edu.hk/en/persons/brenna-marie-davidson(802245c6-254a-45e0-bc00-a4d8120beb93)/theses.html
@@ -363,13 +386,17 @@ One line per address: institution | years captured | known page? | address. Acce
 - City University of Hong Kong | 2024–2024 (1) | known not-a-list | https://scholars.cityu.edu.hk/en/persons/chui-wan-sat(72ccfaa8-dc3f-4c5c-baa8-8a33889e4095)/theses.html
 - City University of Hong Kong | 2024–2024 (2) | known not-a-list | https://scholars.cityu.edu.hk/en/persons/chung-man-alvin-leung(e425d100-eeec-40d9-8d5a-d522c6d587a8)/theses.html?filter=author
 - City University of Hong Kong | 2024–2024 (1) | known not-a-list | https://scholars.cityu.edu.hk/en/persons/chung-ming-hung(751d32dc-6172-4cbe-91a8-b65d2752b615)/theses.html
+- City University of Hong Kong | 2025–2025 (1) | known not-a-list | https://scholars.cityu.edu.hk/en/persons/cscwngo/supervised-student-theses/
+- City University of Hong Kong | 2025–2025 (1) | known not-a-list | https://scholars.cityu.edu.hk/en/persons/csedchan/supervised-student-theses/
 - City University of Hong Kong | 2023–2024 (3) | known not-a-list | https://scholars.cityu.edu.hk/en/persons/cuiwei-fu(f61ad55a-b80f-4975-923d-9b2453c5ee71)/theses.html?filter=author
+- City University of Hong Kong | 2025–2025 (1) | known not-a-list | https://scholars.cityu.edu.hk/en/persons/cwang232/supervised-student-theses/
 - City University of Hong Kong | 2024–2024 (1) | known not-a-list | https://scholars.cityu.edu.hk/en/persons/dan-song(90874585-7121-4e78-9a77-30dc1ab01455)/theses.html
 - City University of Hong Kong | 2024–2024 (1) | known not-a-list | https://scholars.cityu.edu.hk/en/persons/david-joseph-srolovitz(586b3813-6058-400a-9b87-61e58ba5cea8)/theses.html
 - City University of Hong Kong | 2024–2024 (1) | known not-a-list | https://scholars.cityu.edu.hk/en/persons/david-michael-hull(d0c33678-4ac1-4774-a37d-5c9b74152395)/theses.html
 - City University of Hong Kong | 2023–2023 (1) | known not-a-list | https://scholars.cityu.edu.hk/en/persons/dezhi-xiao(7e606c59-8835-4ec4-b2cc-a3d6e21e796f)/theses.html
 - City University of Hong Kong | 2024–2024 (1) | known not-a-list | https://scholars.cityu.edu.hk/en/persons/dongfang-li(87777d29-520c-4111-9f3b-38affde4c934)/theses.html
 - City University of Hong Kong | 2023–2023 (1) | known not-a-list | https://scholars.cityu.edu.hk/en/persons/edward-chan(c5d9ea8a-978e-4c8a-80c7-e277386375c6)/theses.html?filter=author
+- City University of Hong Kong | 2025–2025 (1) | known not-a-list | https://scholars.cityu.edu.hk/en/persons/efywang/supervised-student-theses/
 - City University of Hong Kong | 2024–2024 (2) | known not-a-list | https://scholars.cityu.edu.hk/en/persons/enyuan-joshua-lee(53cd5eed-f3b3-425b-8f78-f0cf26ae8299)/theses.html?filter=author
 - City University of Hong Kong | 2023–2023 (1) | known not-a-list | https://scholars.cityu.edu.hk/en/persons/fangrong-chang(bb393978-240c-4700-9fe4-91048163ec05)/theses.html
 - City University of Hong Kong | 2024–2024 (1) | known not-a-list | https://scholars.cityu.edu.hk/en/persons/fei-yin-tsang(01558c49-960a-4f6f-950c-9af535cc7eae)/theses.html
@@ -388,6 +415,7 @@ One line per address: institution | years captured | known page? | address. Acce
 - City University of Hong Kong | 2024–2024 (1) | known not-a-list | https://scholars.cityu.edu.hk/en/persons/hao-zhang(c1c457d7-1bfc-42a6-b2b6-52caf2ec0c2b)/theses.html
 - City University of Hong Kong | 2020–2020 (1) | known single-record | https://scholars.cityu.edu.hk/en/persons/haolin-wang(3e7f7ee5-2535-438f-a3d7-39379e5c03c0)/theses.html
 - City University of Hong Kong | 2024–2024 (1) | known not-a-list | https://scholars.cityu.edu.hk/en/persons/haoqi-zhu(b3610cf1-33d8-47e0-98fa-135ef4aa0a92)/theses.html
+- City University of Hong Kong | 2025–2025 (1) | known not-a-list | https://scholars.cityu.edu.hk/en/persons/hingrid/supervised-student-theses/
 - City University of Hong Kong | 2023–2023 (1) | known not-a-list | https://scholars.cityu.edu.hk/en/persons/hongliu-li(b4e05eea-41bd-4097-b27e-88aefd20b900)/theses.html
 - City University of Hong Kong | 2023–2023 (1) | known not-a-list | https://scholars.cityu.edu.hk/en/persons/huilin-chang(15f4a138-89f5-495b-b961-e621fe9e7ce1)/theses.html
 - City University of Hong Kong | 2024–2024 (2) | known not-a-list | https://scholars.cityu.edu.hk/en/persons/huimin-wang(e4a82770-87f4-4539-b7ef-7549e3677a70)/theses.html?filter=author
@@ -400,6 +428,7 @@ One line per address: institution | years captured | known page? | address. Acce
 - City University of Hong Kong | 2024–2024 (1) | known not-a-list | https://scholars.cityu.edu.hk/en/persons/jie-zhang(993fe1f4-bf18-4baa-8f2f-c61b4e17ecb7)/theses.html
 - City University of Hong Kong | 2024–2024 (1) | known not-a-list | https://scholars.cityu.edu.hk/en/persons/jing-fang(6c66a64d-9a70-4905-b642-b0dbbb6cfb92)/theses.html
 - City University of Hong Kong | 2024–2024 (1) | known not-a-list | https://scholars.cityu.edu.hk/en/persons/jing-guo(3db12f1b-5193-4acd-b14d-8cf81177f547)/theses.html
+- City University of Hong Kong | 2025–2025 (1) | known not-a-list | https://scholars.cityu.edu.hk/en/persons/jingwu49/supervised-student-theses/
 - City University of Hong Kong | 2024–2024 (1) | known not-a-list | https://scholars.cityu.edu.hk/en/persons/jingyu-chen(ff25e84b-1f1c-49a0-b3ea-e49c4bffa11e)/theses.html
 - City University of Hong Kong | 2023–2023 (1) | known not-a-list | https://scholars.cityu.edu.hk/en/persons/juan-shi(fbc04ba7-6c7f-4c75-bb8b-9556f7c133ac)/theses.html?filter=supervisor
 - City University of Hong Kong | 2023–2023 (1) | known not-a-list | https://scholars.cityu.edu.hk/en/persons/juan-wei(ff9ce017-8cd2-466a-a9db-bbb3bdd3f377)/theses.html
@@ -408,9 +437,12 @@ One line per address: institution | years captured | known page? | address. Acce
 - City University of Hong Kong | 2023–2023 (1) | known not-a-list | https://scholars.cityu.edu.hk/en/persons/junping-zhuang(b13e561d-cba8-4b24-a867-b321fe6a58f7)/theses.html
 - City University of Hong Kong | 2024–2024 (1) | known not-a-list | https://scholars.cityu.edu.hk/en/persons/junwei-zhang(0afee87e-18c6-4e4e-9dff-bd7386d3b270)/theses.html
 - City University of Hong Kong | 2023–2023 (1) | known not-a-list | https://scholars.cityu.edu.hk/en/persons/junyi-he(471f1009-0cd5-4bc6-83a6-c0a4c896371f)/theses.html
+- City University of Hong Kong | 2025–2025 (1) | known not-a-list | https://scholars.cityu.edu.hk/en/persons/jwang623/supervised-student-theses/
+- City University of Hong Kong | 2025–2025 (1) | known not-a-list | https://scholars.cityu.edu.hk/en/persons/jzhu43/supervised-student-theses/
 - City University of Hong Kong | 2023–2023 (1) | known not-a-list | https://scholars.cityu.edu.hk/en/persons/ka-chun-wong(776a3bce-31af-48bf-8244-de9f356e05d7)/theses.html
 - City University of Hong Kong | 2024–2024 (1) | known not-a-list | https://scholars.cityu.edu.hk/en/persons/ka-yan-lam(1869a9d9-0687-4807-b424-e3acb9604011)/theses.html
 - City University of Hong Kong | 2024–2024 (1) | known not-a-list | https://scholars.cityu.edu.hk/en/persons/kaiyuan-zhu(12ea92d2-6b7c-448e-a0b0-c0b5b20b9c48)/theses.html
+- City University of Hong Kong | 2025–2025 (1) | known not-a-list | https://scholars.cityu.edu.hk/en/persons/kccchan/supervised-student-theses/
 - City University of Hong Kong | 2024–2024 (2) | known not-a-list | https://scholars.cityu.edu.hk/en/persons/ke-zhang(a2c03a16-c66c-477c-8084-7b9781678fc7)/theses.html?filter=author
 - City University of Hong Kong | 2023–2023 (1) | known not-a-list | https://scholars.cityu.edu.hk/en/persons/kening-zhu(5a5d8783-8153-4acb-b3a7-7f1a103d0cfc)/theses.html
 - City University of Hong Kong | 2024–2024 (1) | known not-a-list | https://scholars.cityu.edu.hk/en/persons/keyao-li(2fab250c-e2e0-43c8-a661-d790d93569bf)/theses.html
@@ -426,11 +458,15 @@ One line per address: institution | years captured | known page? | address. Acce
 - City University of Hong Kong | 2023–2023 (1) | known not-a-list | https://scholars.cityu.edu.hk/en/persons/linqi-song(a665d7a3-8847-404d-a56a-2b10b470327c)/theses.html
 - City University of Hong Kong | 2024–2024 (1) | known not-a-list | https://scholars.cityu.edu.hk/en/persons/lishuai-li(b899cf59-8eae-4dec-a0b1-36d7202c94a1)/theses.html
 - City University of Hong Kong | 2023–2023 (1) | known not-a-list | https://scholars.cityu.edu.hk/en/persons/liu-yang(b78c2d9f-8e4b-4847-9228-d32abcc9bffb)/theses.html
+- City University of Hong Kong | 2025–2025 (1) | known not-a-list | https://scholars.cityu.edu.hk/en/persons/lixigen/supervised-student-theses/
 - City University of Hong Kong | 2024–2024 (1) | known not-a-list | https://scholars.cityu.edu.hk/en/persons/lizhai-zhang(fc8360cd-6c69-4409-b766-e85268cf06f3)/theses.html
+- City University of Hong Kong | 2025–2025 (1) | known not-a-list | https://scholars.cityu.edu.hk/en/persons/lweric/supervised-student-theses/
+- City University of Hong Kong | 2025–2025 (1) | known not-a-list | https://scholars.cityu.edu.hk/en/persons/manfrlau/supervised-student-theses/
 - City University of Hong Kong | 2024–2024 (1) | known not-a-list | https://scholars.cityu.edu.hk/en/persons/manli-wu(95eefade-c941-4ea3-a10a-318caac50258)/theses.html
 - City University of Hong Kong | 2023–2023 (1) | known not-a-list | https://scholars.cityu.edu.hk/en/persons/maria-malin(c24cdee3-998d-4b61-a771-64e52464750f)/theses.html
 - City University of Hong Kong | 2024–2024 (1) | known not-a-list | https://scholars.cityu.edu.hk/en/persons/maris-martinsons(e27cadac-4d6b-45fc-8de5-a5bf4b699e98)/theses.html
 - City University of Hong Kong | 2023–2023 (1) | known not-a-list | https://scholars.cityu.edu.hk/en/persons/md-ileas-pramanik(0e963dd8-11bf-4db6-bc7a-590d8f0bb591)/theses.html
+- City University of Hong Kong | 2025–2025 (1) | known not-a-list | https://scholars.cityu.edu.hk/en/persons/mekyli/supervised-student-theses/
 - City University of Hong Kong | 2023–2023 (1) | known not-a-list | https://scholars.cityu.edu.hk/en/persons/meng-liu(6720434c-f60c-48f7-b122-c6222660be47)/theses.html
 - City University of Hong Kong | 2024–2024 (1) | known not-a-list | https://scholars.cityu.edu.hk/en/persons/mengbing-du(548685d8-8cc5-4d73-bd5c-617666a1b284)/theses.html
 - City University of Hong Kong | 2024–2024 (1) | known not-a-list | https://scholars.cityu.edu.hk/en/persons/mengfan-xuan(aa9a04a2-4911-4335-b513-022ad3b8f355)/theses.html
@@ -439,6 +475,9 @@ One line per address: institution | years captured | known page? | address. Acce
 - City University of Hong Kong | 2023–2023 (2) | known not-a-list | https://scholars.cityu.edu.hk/en/persons/mingsheng-hu(57115107-d02d-4142-b387-b23344b0a80c)/theses.html?filter=author
 - City University of Hong Kong | 2023–2023 (1) | known not-a-list | https://scholars.cityu.edu.hk/en/persons/mirna-zordan(d0322428-024d-4e28-b4d8-cea3bec77354)/theses.html
 - City University of Hong Kong | 2024–2024 (1) | known not-a-list | https://scholars.cityu.edu.hk/en/persons/miu-han-iris-yeung(78d13a15-7ab8-44c8-8f30-17fbd88c45a0)/theses.html
+- City University of Hong Kong | 2025–2025 (1) | known not-a-list | https://scholars.cityu.edu.hk/en/persons/mkzhou/supervised-student-theses/
+- City University of Hong Kong | 2025–2025 (1) | known not-a-list | https://scholars.cityu.edu.hk/en/persons/mskyau/supervised-student-theses/
+- City University of Hong Kong | 2025–2025 (1) | known not-a-list | https://scholars.cityu.edu.hk/en/persons/mswchung/supervised-student-theses/
 - City University of Hong Kong | 2024–2024 (1) | known not-a-list | https://scholars.cityu.edu.hk/en/persons/mubarak-ishaq-umar(e7a1485d-a018-47df-8032-c282297899fc)/theses.html
 - City University of Hong Kong | 2024–2024 (1) | known not-a-list | https://scholars.cityu.edu.hk/en/persons/ning-hong(7c94a2cc-a8f0-47fd-a6bb-7276ca341cd9)/theses.html
 - City University of Hong Kong | 2023–2024 (2) | known not-a-list | https://scholars.cityu.edu.hk/en/persons/paul-kim-ho-chu(cb40bd34-a067-44b4-b632-ca25f922f5af)/theses.html?filter=supervisor&page=2
@@ -447,6 +486,8 @@ One line per address: institution | years captured | known page? | address. Acce
 - City University of Hong Kong | 2023–2023 (1) | known not-a-list | https://scholars.cityu.edu.hk/en/persons/peng-liu(bb1a7d8d-53e9-46df-b7ac-766eb37ca86d)/theses.html
 - City University of Hong Kong | 2023–2023 (1) | known not-a-list | https://scholars.cityu.edu.hk/en/persons/peng-shi(0e151646-b642-4a53-98e0-b312de44ae71)/theses.html
 - City University of Hong Kong | 2024–2024 (1) | known not-a-list | https://scholars.cityu.edu.hk/en/persons/peter-andrew-clarke-nelson(251163a1-559f-40c7-ab09-2f758c162295)/theses.html
+- City University of Hong Kong | 2025–2025 (1) | known not-a-list | https://scholars.cityu.edu.hk/en/persons/pghancke/supervised-student-theses/
+- City University of Hong Kong | 2025–2025 (1) | known not-a-list | https://scholars.cityu.edu.hk/en/persons/phiggins/supervised-student-theses/
 - City University of Hong Kong | 2024–2024 (1) | known not-a-list | https://scholars.cityu.edu.hk/en/persons/qi-gao(4ffe104c-3cc4-4ccd-9f1f-354ef49c2ee5)/theses.html
 - City University of Hong Kong | 2023–2024 (3) | known not-a-list | https://scholars.cityu.edu.hk/en/persons/qi-liu(a6babc8b-5652-49c3-8be9-31b13c566eb2)/theses.html?filter=author
 - City University of Hong Kong | 2024–2024 (1) | known not-a-list | https://scholars.cityu.edu.hk/en/persons/qi-lyu(8dc92692-14b9-4160-958b-b69797e8b15e)/theses.html
@@ -486,10 +527,12 @@ One line per address: institution | years captured | known page? | address. Acce
 - City University of Hong Kong | 2024–2024 (1) | known not-a-list | https://scholars.cityu.edu.hk/en/persons/siu-gin-cheung(1b668afc-e175-4ab2-a209-143110080101)/theses.html
 - City University of Hong Kong | 2024–2024 (1) | known not-a-list | https://scholars.cityu.edu.hk/en/persons/siu-ming-chan(e77f9678-076d-44aa-adb3-7d82c3f5a07b)/theses.html
 - City University of Hong Kong | 2023–2023 (1) | known not-a-list | https://scholars.cityu.edu.hk/en/persons/song-li(a4264588-bd9a-4be5-a00a-956150170d11)/theses.html
+- City University of Hong Kong | 2025–2025 (1) | known not-a-list | https://scholars.cityu.edu.hk/en/persons/stephenb/supervised-student-theses/
 - City University of Hong Kong | 2023–2023 (1) | known not-a-list | https://scholars.cityu.edu.hk/en/persons/su-liu(1a6829ee-ff47-42e4-bb36-3bc1f929bc73)/theses.html
 - City University of Hong Kong | 2024–2024 (1) | known not-a-list | https://scholars.cityu.edu.hk/en/persons/syed-hassan-raza(7efd24cb-88a6-44f8-b903-7933724e6cd6)/theses.html
 - City University of Hong Kong | 2023–2023 (1) | known not-a-list | https://scholars.cityu.edu.hk/en/persons/ta-fu-dave-kuo(f3f45067-97ec-4779-9368-79692a27a280)/theses.html
 - City University of Hong Kong | 2024–2024 (1) | known not-a-list | https://scholars.cityu.edu.hk/en/persons/tao-chen(b5af2765-666b-4acc-970b-8d29c0f37994)/theses.html
+- City University of Hong Kong | 2025–2025 (1) | known not-a-list | https://scholars.cityu.edu.hk/en/persons/tfdkuo/supervised-student-theses/
 - City University of Hong Kong | 2023–2023 (1) | known not-a-list | https://scholars.cityu.edu.hk/en/persons/tian-liu(63bce726-0a7f-4d08-9ad4-f002a5d79e6e)/theses.html
 - City University of Hong Kong | 2024–2024 (1) | known not-a-list | https://scholars.cityu.edu.hk/en/persons/tianlin-hui(992eef69-b258-4d97-89ec-14b1590c426f)/theses.html
 - City University of Hong Kong | 2024–2024 (1) | known not-a-list | https://scholars.cityu.edu.hk/en/persons/tianlong-zhang(b82c9aa6-a108-4d89-b47c-969f276628db)/theses.html
@@ -677,26 +720,26 @@ One line per address: institution | years captured | known page? | address. Acce
 - Clemson University | 2023–2023 (1) | known not-a-list | https://www.clemson.edu/graduate/academics/theses-dissertations/defending/sort-by-department.html?dept=Engineering%20%26%20Science%20Educ
 - Clemson University | 2023–2023 (1) | known not-a-list | https://www.clemson.edu/graduate/academics/theses-dissertations/defending/sort-by-department.html?dept=Industrial%20Engineering
 - Clemson University | 2023–2023 (1) | known not-a-list | https://www.clemson.edu/graduate/academics/theses-dissertations/defending/sort-by-department.html?dept=Management
-- Clemson University | 2024–2024 (1) | new | https://open.clemson.edu/all_dissertations/ | 3 pages below it
+- Clemson University | 2024–2024 (1) | known not-a-list | https://open.clemson.edu/all_dissertations/ | 3 pages below it
 - Clemson University | 2025–2025 (1) | new | https://open.clemson.edu/dissertations/
-- Clemson University | 2024–2024 (1) | new | https://open.clemson.edu/dissertations_data_sci/
-- Clemson University | 2024–2024 (1) | new | https://open.clemson.edu/dissertations_intl_family/
-- Clemson University | 2024–2024 (1) | new | https://open.clemson.edu/dissertations_management/
-- Clemson University | 2024–2024 (1) | new | https://open.clemson.edu/dissertations_tsa/
+- Clemson University | 2024–2024 (1) | known not-a-list | https://open.clemson.edu/dissertations_data_sci/
+- Clemson University | 2024–2024 (1) | known not-a-list | https://open.clemson.edu/dissertations_intl_family/
+- Clemson University | 2024–2024 (1) | known program-list | https://open.clemson.edu/dissertations_management/
+- Clemson University | 2024–2024 (1) | known not-a-list | https://open.clemson.edu/dissertations_tsa/
 - Clemson University | 2025–2025 (1) | new | https://open.clemson.edu/dissertations_youth_dev/
 - Clemson University | 2025–2025 (1) | new | https://open.clemson.edu/theses_ag_ed/
-- Clemson University | 2024–2024 (1) | new | https://open.clemson.edu/theses_app_socio/
+- Clemson University | 2024–2024 (1) | known not-a-list | https://open.clemson.edu/theses_app_socio/
 - Clemson University | 2025–2025 (1) | new | https://open.clemson.edu/theses_arch/
-- Clemson University | 2024–2024 (1) | new | https://open.clemson.edu/theses_athl_ldrshp/
-- Clemson University | 2024–2024 (1) | new | https://open.clemson.edu/theses_bdsi/
-- Clemson University | 2024–2024 (1) | new | https://open.clemson.edu/theses_comm_tech/
-- Clemson University | 2024–2024 (1) | new | https://open.clemson.edu/theses_data_sci/
+- Clemson University | 2024–2024 (1) | known not-a-list | https://open.clemson.edu/theses_athl_ldrshp/
+- Clemson University | 2024–2024 (1) | known not-a-list | https://open.clemson.edu/theses_bdsi/
+- Clemson University | 2024–2024 (1) | known not-a-list | https://open.clemson.edu/theses_comm_tech/
+- Clemson University | 2024–2024 (1) | known not-a-list | https://open.clemson.edu/theses_data_sci/
 - Clemson University | 2025–2025 (1) | new | https://open.clemson.edu/theses_elec_comp_eng/
 - Clemson University | 2025–2025 (1) | new | https://open.clemson.edu/theses_microbio/
-- Clemson University | 2024–2024 (1) | new | https://open.clemson.edu/theses_printmaking/
-- Clemson University | 2024–2024 (1) | new | https://open.clemson.edu/theses_school_comp/
-- Clemson University | 2024–2024 (1) | new | https://open.clemson.edu/theses_social_sci/
-- Clemson University | 2024–2024 (1) | new | https://open.clemson.edu/theses_visual_studies/
+- Clemson University | 2024–2024 (1) | known not-a-list | https://open.clemson.edu/theses_printmaking/
+- Clemson University | 2024–2024 (1) | known not-a-list | https://open.clemson.edu/theses_school_comp/
+- Clemson University | 2024–2024 (1) | known not-a-list | https://open.clemson.edu/theses_social_sci/
+- Clemson University | 2024–2024 (1) | known not-a-list | https://open.clemson.edu/theses_visual_studies/
 - Clemson University | 2019–2022 (2) | known not-a-list | https://tigerprints.clemson.edu/all_dissertations/ | 9 pages below it
 - Clemson University | 2018–2019 (3) | known not-a-list | https://tigerprints.clemson.edu/arv_dissertations/
 - Clemson University | 2019–2019 (1) | known not-a-list | https://tigerprints.clemson.edu/dissertations/
@@ -780,7 +823,7 @@ One line per address: institution | years captured | known page? | address. Acce
 - Colorado State University | 2017–2017 (1) | known not-a-list | http://publiclands.colostate.edu/dissertation-project-management-tool-usage
 - Colorado State University | 2017–2017 (1) | known not-a-list | http://publiclands.colostate.edu/dissertation-proposal-on-performance-management
 - Columbia University | 2013–2018 (254) | known not-a-list | http://academiccommons.columbia.edu/?f[department_facet][]=Anthropology&f[genre_facet][]=Dissertations
-- Columbia University | 2024–2024 (1) | new | https://academics.business.columbia.edu/phd/academics/dro/placement
+- Columbia University | 2024–2024 (1) | known program-list | https://academics.business.columbia.edu/phd/academics/dro/placement
 - Columbia University | 2023–2023 (1) | known program-list | https://academics.business.columbia.edu/phd/academics/management/placement
 - Columbia University | 2023–2024 (2) | known program-list | https://academics.business.columbia.edu/phd/job-market-candidates | 2 pages below it
 - Columbia University | 2022–2022 (1) | known program-list | https://academics.gsb.columbia.edu/phd/academics/dro/placement
@@ -831,11 +874,11 @@ One line per address: institution | years captured | known page? | address. Acce
 - Copenhagen Business School | 2021–2021 (1) | known not-a-list | https://www.cbs.dk/en/cbs-news-en/21/faster-entry-into-the-job-market
 - Copenhagen Business School | 2017–2022 (2) | known not-a-list | https://www.cbs.dk/en/where-can-find-other-peoples-theses
 - Copenhagen Business School | 2021–2025 (3) | known not-a-list | https://www.cbs.dk/forskning/phd/phd-placement
-- Copenhagen Business School | 2024–2024 (1) | new | https://research.cbs.dk/da/studentProjects/data-driven-decisions-for-etruck-infrastructure-optimal-placement
+- Copenhagen Business School | 2024–2024 (1) | known not-a-list | https://research.cbs.dk/da/studentProjects/data-driven-decisions-for-etruck-infrastructure-optimal-placement
 - Copenhagen Business School | 2025–2025 (1) | new | https://research.cbs.dk/en/studentProjects/data-driven-decisions-for-etruck-infrastructure-optimal-placement
 - Copenhagen Business School | 2023–2023 (1) | known program-list | https://ribl.cbs.dk/phd-theses/
 - Copenhagen Business School | 2018–2018 (1) | known not-a-list | http://sar.cbs.dk/diploma_programmes/statues_regulations_etc/educational_conditions_merits_graduate_theses_complaints_regarding_lectures_etc
-- Copenhagen Business School | 2024–2024 (1) | new | https://www.shj.cbs.dk/service/committees/phd-theses
+- Copenhagen Business School | 2024–2024 (1) | known not-a-list | https://www.shj.cbs.dk/service/committees/phd-theses
 - Copenhagen Business School | 2018–2018 (1) | known not-a-list | http://uk.sar.cbs.dk/diploma_programmes/statues_regulations_etc/educational_conditions_merits_graduate_theses_complaints_regarding_lectures_etc
 - Cornell University | 2023–2025 (2) | known not-a-list | https://alumni.cornell.edu/cornellians/?cornell_author=jillian-marshall-phd-18
 - Cornell University | 2025–2025 (1) | new | https://www.engineering.cornell.edu/mem/meng/career-placement/
@@ -844,17 +887,18 @@ One line per address: institution | years captured | known page? | address. Acce
 - Cornell University | 2020–2023 (3) | known not-a-list | https://gradschool.cornell.edu/ask-a-dean/are-all-dissertations-published-automatically-with-or-without-embargo/
 - Cornell University | 2020–2020 (1) | known not-a-list | https://neareasternstudies.cornell.edu/placement
 - Coventry University | 2020–2020 (1) | known not-a-list | https://www.coventry.ac.uk/coronavirus-info/our-response-to-covid-19/students-on-placement-or-studying-abroad/
-- Coventry University | 2023–2024 (2) | known not-a-list | https://www.coventry.ac.uk/primary-news/entrepreneurial-business-student-invests-placement-prize-into-own-company/
+- Coventry University | 2023–2025 (3) | known not-a-list | https://www.coventry.ac.uk/primary-news/entrepreneurial-business-student-invests-placement-prize-into-own-company/
 - Delft University of Technology | 2021–2021 (1) | known not-a-list | https://research.tudelft.nl/en/activities/committee-member-phd-dissertation-committee-m-raynaud-external-or
 - Drexel University | 2019–2022 (2) | known not-a-list | https://www.lebow.drexel.edu/faculty-and-research/disciplines/decision-sciences-and-mis/phd-students/job-market-candidates
 - Drexel University | 2019–2020 (3) | known not-a-list | https://www.lebow.drexel.edu/faculty-and-research/disciplines/management/phd-students/job-market-candidates
 - Duke University | 2019–2019 (2) | known program-list | https://areas.fuqua.duke.edu/management/ph-d-program/phd-student-placements/
-- Duke University | 2024–2024 (1) | new | https://areas.fuqua.duke.edu/management/ph-d-program/placement/
+- Duke University | 2024–2024 (1) | known program-list | https://areas.fuqua.duke.edu/management/ph-d-program/placement/
 - Duke University | 2025–2025 (1) | known program-list | https://areas.fuqua.duke.edu/operations-management/ph-d-program/placement/
 - Duke University | 2013–2016 (7) | known not-a-list | http://www.fuqua.duke.edu/mms-foundations-of-business/?placement=US&ad_start=031909
 - Duke University | 2013–2013 (3) | known not-a-list | http://www.fuqua.duke.edu/programs/other_programs/mms_foundations_of_business/?placement=US&ad_start=031909
 - ETH Zurich | 2022–2022 (1) | known not-a-list | https://www.aveth.ethz.ch/grant-open-to-doctoral-candidates-postdocs-or-admin-tech-staff-with-care-responsibilities-deadline-april-15th/
-- Ecole Polytechnique | 2022–2022 (1) | known not-a-list | https://www.polytechnique.edu/actualites/deux-jeunes-docteurs-de-lx-recompenses-pour-leurs-theses
+- Ecole Polytechnique | 2025–2025 (1) | new | https://www.polytechnique.edu/accompagnement-des-theses-integrant-les-objectifs-de-developpement-durable-theses-odd
+- Ecole Polytechnique | 2022–2025 (2) | known not-a-list | https://www.polytechnique.edu/actualites/deux-jeunes-docteurs-de-lx-recompenses-pour-leurs-theses
 - Ecole Polytechnique | 2021–2021 (1) | known not-a-list | https://www.polytechnique.edu/fr/content/deux-jeunes-docteurs-de-lx-recompenses-pour-leurs-theses
 - Ecole Polytechnique | 2021–2023 (2) | known not-a-list | https://portail.polytechnique.edu/chaire-psa/fr/recherche/theses-en-collaboration-avec-le-groupe-psa
 - Ecole Polytechnique | 2019–2019 (1) | known not-a-list | https://portail.polytechnique.edu/economie/fr/job-market-2019-incoming
@@ -870,11 +914,14 @@ One line per address: institution | years captured | known page? | address. Acce
 - Ecole Polytechnique | 2022–2022 (1) | known not-a-list | https://portail.polytechnique.edu/lsi/fr/actualites/theses-en-cours-au-lsi
 - Ecole Polytechnique | 2018–2018 (1) | known not-a-list | https://portail.polytechnique.edu/luli/en/training/studying-luli/theses-defended-luli
 - Ecole Polytechnique | 2021–2021 (1) | known not-a-list | https://portail.polytechnique.edu/luli/fr/fabien-niel-est-selectionne-par-springer-theses-pour-publier-sa-these
-- Ecole Polytechnique | 2024–2024 (1) | new | https://programmes.polytechnique.edu/en/post/msct-alumni-kimang-khun-phd-student-at-the-university-of-grenoble-alpes
+- Ecole Polytechnique | 2024–2024 (1) | known not-a-list | https://programmes.polytechnique.edu/en/post/msct-alumni-kimang-khun-phd-student-at-the-university-of-grenoble-alpes
+- Ecole Polytechnique | 2025–2025 (1) | new | https://programmes.polytechnique.edu/en/post/msct-alumni-maryam-kadkhodaei-phd-student-at-cnrs
 - Ecole Polytechnique | 2023–2023 (1) | known not-a-list | https://programmes.polytechnique.edu/post/msct-alumni-kimang-khun-phd-student-at-the-university-of-grenoble-alpes
 - Ecole Polytechnique | 2023–2023 (1) | known not-a-list | https://programmes.polytechnique.edu/post/msct-alumni-maryam-kadkhodaei-etudiante-en-doctorat-au-cnrs
 - Eindhoven University of Technology | 2017–2017 (1) | known not-a-list | http://opac.ieis.tue.nl/tugce-martagan-received-honorable-mention-in-the-informs-george-b-dantzig-dissertation-prize/
+- Eindhoven University of Technology | 2025–2025 (1) | new | https://research.tue.nl/en/persons/karolin-winter/supervised-student-theses/
 - Eindhoven University of Technology | 2021–2021 (1) | known not-a-list | https://research.tue.nl/en/persons/silvia-musolino/supervised-student-theses/
+- Eindhoven University of Technology | 2025–2025 (1) | new | https://research.tue.nl/nl/persons/karolin-winter/supervised-student-theses/
 - Eindhoven University of Technology | 2021–2021 (2) | known not-a-list | https://research.tue.nl/nl/persons/silvia-musolino/supervised-student-theses/
 - Emory University | 2023–2023 (1) | known not-a-list | https://goizueta-effect.emory.edu/episodes/secrets-to-career-switching-and-success-in-the-job-market
 - Emory University | 2013–2014 (14) | known not-a-list | http://goizueta.emory.edu/alumni/ | 2 pages below it
@@ -898,7 +945,7 @@ One line per address: institution | years captured | known page? | address. Acce
 - Erasmus University Rotterdam | 2023–2023 (1) | known not-a-list | https://www.egsh.eur.nl/news-events/news-detail/3271-next-academic-year-we-will-start-hosting-onboarding-sessions-for-new-phd-candidates/
 - Erasmus University Rotterdam | 2023–2023 (1) | known not-a-list | https://www.egsh.eur.nl/news-events/news-detail/3274-egsh-poll-abolish-or-keep-cum-laude-promotion-of-phd-candidates/
 - Erasmus University Rotterdam | 2019–2023 (4) | known not-a-list | https://www.erim.eur.nl/doctoral-programme/alumni/ | 1 pages below it
-- Erasmus University Rotterdam | 2024–2024 (1) | new | https://www.erim.eur.nl/doctoral-programme/part-time-phd-in-business-and-management/pt-phd-candidates/
+- Erasmus University Rotterdam | 2024–2024 (1) | known not-a-list | https://www.erim.eur.nl/doctoral-programme/part-time-phd-in-business-and-management/pt-phd-candidates/
 - Erasmus University Rotterdam | 2017–2023 (4) | known not-a-list | http://www.erim.eur.nl/doctoral-programme/phd-in-management/for-current-candidates/ | 5 pages below it
 - Erasmus University Rotterdam | 2020–2022 (2) | known not-a-list | https://www.erim.eur.nl/doctoral-programme/phd-in-management/placement/career-prospects/
 - Erasmus University Rotterdam | 2017–2017 (1) | known program-list | http://www.erim.eur.nl/doctoral-programme/phd-in-management/placement/on-the-job-market/
@@ -928,7 +975,7 @@ One line per address: institution | years captured | known page? | address. Acce
 - Geneva School of Economics and Management | 2013–2016 (6) | known not-a-list | http://www.unige.ch/cyberdocuments/theses2004/HeQ/these_body.html
 - George Mason University | 2016–2020 (5) | known not-a-list | http://artsmanagement.gmu.edu/alumni-placement/
 - George Mason University | 2021–2022 (2) | known not-a-list | https://ds.gmu.edu/field-placement/
-- George Mason University | 2021–2021 (1) | known not-a-list | https://smif.business.gmu.edu/placement/
+- George Mason University | 2021–2025 (2) | known not-a-list | https://smif.business.gmu.edu/placement/
 - George Washington University | 2021–2024 (2) | known not-a-list | https://bootcamp.cps.gwu.edu/coding/landing-ftpt/?s=Google-Unbranded_RFull_&msg_cv_scta=4&msg_cv_stbn=1&msg_cv_fcta=1&fqvar1=3&pkw=%2Bcoding&pcrid=453410087756&pmt=b&utm_source=google&utm_medium=cpc&utm_campaign=GGL%7CGEORGE-WASHINGTON%7CSEM%7CCODING%7C-%7COFL%7C_RFull_%7CALL%7CNBD-G%7CBMM%7CCore%7CGeneral&utm_term=%2Bcoding&s=google&k=%2Bcoding&utm_adgroupid=107466145364&utm_locationphysicalms=9008578&utm_matchtype=b&utm_network=g&utm_device=c&utm_content=453410087756&utm_placement=&gclid=CjwKCAiArIH_BRB2EiwALfbH1IYcFuQhyCx8OWvl5FddHvwe9VVtDQ1fceNj9aJjnqZ1Q2GQsKm84hoCV7IQAvD_BwE&gclsrc=aw.ds
 - George Washington University | 2013–2013 (1) | known program-list | http://business.gwu.edu/management/cfee/department-research-dissertations.cfm
 - George Washington University | 2013–2013 (1) | known not-a-list | http://business.gwu.edu/smpp/doctoral-candidates/ | 7 pages below it
@@ -959,7 +1006,7 @@ One line per address: institution | years captured | known page? | address. Acce
 - Georgia Institute of Technology | 2023–2023 (1) | known not-a-list | https://eislab.gatech.edu/pubs/theses/zhou97/
 - Georgia Institute of Technology | 2021–2022 (2) | known not-a-list | https://www.epic.gatech.edu/congratulations-to-dr-inseung-kang-on-successfully-defending-his-dissertation/
 - Georgia Institute of Technology | 2021–2022 (2) | known not-a-list | https://www.epic.gatech.edu/congratulations-to-dr-jonathan-camargo-on-successfully-defending-his-dissertation/
-- Georgia Institute of Technology | 2022–2022 (1) | known not-a-list | https://www.epic.gatech.edu/congratulations-to-dr-krishan-bhakta-on-successfully-defending-his-dissertation/
+- Georgia Institute of Technology | 2022–2025 (2) | known not-a-list | https://www.epic.gatech.edu/congratulations-to-dr-krishan-bhakta-on-successfully-defending-his-dissertation/
 - Georgia Institute of Technology | 2017–2017 (1) | known not-a-list | http://etv.gatech.edu/theses/amrutha-krishnan-newspad/
 - Georgia Institute of Technology | 2017–2017 (1) | known not-a-list | http://etv.gatech.edu/theses/brighton-vino-jegarajan-insync/
 - Georgia Institute of Technology | 2017–2017 (1) | known not-a-list | http://etv.gatech.edu/theses/ibharatha/
@@ -980,9 +1027,9 @@ One line per address: institution | years captured | known page? | address. Acce
 - Georgia Institute of Technology | 2017–2022 (11) | known not-a-list | https://www.isye.gatech.edu/academics/doctoral/phd-operations-research/placement
 - Georgia Institute of Technology | 2019–2019 (1) | known not-a-list | http://www.me.gatech.edu/graduate/phd/dissertation
 - Georgia Institute of Technology | 2019–2019 (1) | known not-a-list | http://www.me.gatech.edu/graduate/theses/archives
-- Georgia Institute of Technology | 2024–2024 (1) | new | https://www.me.gatech.edu/phd-dissertation
+- Georgia Institute of Technology | 2024–2024 (1) | known not-a-list | https://www.me.gatech.edu/phd-dissertation
 - Georgia Institute of Technology | 2021–2024 (6) | known not-a-list | https://mediaspace.gatech.edu/tag?tagid=dissertation
-- Georgia Institute of Technology | 2018–2023 (5) | known not-a-list | http://ml.gatech.edu/content/curriculum-phd-dissertation
+- Georgia Institute of Technology | 2018–2025 (6) | known not-a-list | http://ml.gatech.edu/content/curriculum-phd-dissertation
 - Georgia Institute of Technology | 2022–2022 (1) | known not-a-list | https://netwise.gatech.edu/project-dissertations/
 - Georgia Institute of Technology | 2020–2020 (1) | known not-a-list | https://new.isye.gatech.edu/academics/doctoral/phd-industrial-engineering/placement
 - Georgia Institute of Technology | 2020–2020 (1) | known not-a-list | https://new.isye.gatech.edu/academics/doctoral/phd-operations-research/placement
@@ -1002,13 +1049,13 @@ One line per address: institution | years captured | known page? | address. Acce
 - Georgia Institute of Technology | 2020–2024 (4) | known not-a-list | https://policylibrary.gatech.edu/records-publications/graduate-thesis-and-dissertation-publication
 - Georgia Institute of Technology | 2021–2021 (1) | known not-a-list | https://policylibrary.gatech.edu/student-affairs/publication-theses
 - Georgia Institute of Technology | 2021–2021 (1) | known not-a-list | https://policylibrary.gatech.edu/student-affairs/thesis-and-dissertations
-- Georgia Institute of Technology | 2023–2023 (1) | known not-a-list | https://power.me.gatech.edu/theses-dissertations/
+- Georgia Institute of Technology | 2023–2025 (2) | known not-a-list | https://power.me.gatech.edu/theses-dissertations/
 - Georgia Institute of Technology | 2020–2020 (1) | known not-a-list | https://qbios.gatech.edu/elma-kajtaz-dissertation-proposal
 - Georgia Institute of Technology | 2017–2017 (1) | known not-a-list | http://rearlab.gatech.edu/theses.php
 - Georgia Institute of Technology | 2023–2023 (1) | known not-a-list | https://repository.gatech.edu/entities/orgunit/01ab2ef1-c6da-49c9-be98-fbd1d840d2b1?f.resourcesubtype=Dissertation,equals&spc.page=1
-- Georgia Institute of Technology | 2024–2024 (6) | new | https://repository.gatech.edu/entities/person/d355c865-c3df-4bfe-8328-24541ea04f62?f.resourcesubtype=Dissertation,equals&spc.page=1&view=grid&f.advisor=Komerath,%20Narayanan%20M.,equals
-- Georgia Institute of Technology | 2024–2024 (51) | new | https://repository.gatech.edu/entities/person/e7e5d854-27c3-4006-b55f-4032255cae72?spc.page=1&&f.resourcesubtype=Dissertation,equals&view=list&f.advisor=Wartell,%20Roger%20M.,equals
-- Georgia Institute of Technology | 2024–2024 (1) | new | https://repository.gatech.edu/entities/series/1e9dd6c5-039f-4195-b3b6-bc27d2df5b9f?f.dateIssued.min=1944&f.dateIssued.max=1944&spc.page=1&view=grid&f.resourcesubtype=Dissertation,equals
+- Georgia Institute of Technology | 2024–2024 (6) | known not-a-list | https://repository.gatech.edu/entities/person/d355c865-c3df-4bfe-8328-24541ea04f62?f.resourcesubtype=Dissertation,equals&spc.page=1&view=grid&f.advisor=Komerath,%20Narayanan%20M.,equals
+- Georgia Institute of Technology | 2024–2024 (51) | known not-a-list | https://repository.gatech.edu/entities/person/e7e5d854-27c3-4006-b55f-4032255cae72?spc.page=1&&f.resourcesubtype=Dissertation,equals&view=list&f.advisor=Wartell,%20Roger%20M.,equals
+- Georgia Institute of Technology | 2024–2024 (1) | known not-a-list | https://repository.gatech.edu/entities/series/1e9dd6c5-039f-4195-b3b6-bc27d2df5b9f?f.dateIssued.min=1944&f.dateIssued.max=1944&spc.page=1&view=grid&f.resourcesubtype=Dissertation,equals
 - Georgia Institute of Technology | 2023–2023 (1) | known not-a-list | https://research.gatech.edu/five-phd-candidates-chosen-2023-class-bbiss-graduate-fellows
 - Georgia Institute of Technology | 2023–2023 (1) | known not-a-list | https://s1.policylibrary.gatech.edu/academic-affairs/thesis-and-dissertations
 - Georgia Institute of Technology | 2023–2023 (1) | known not-a-list | https://s1.policylibrary.gatech.edu/records-publications/graduate-thesis-and-dissertation-publication
@@ -1016,7 +1063,7 @@ One line per address: institution | years captured | known page? | address. Acce
 - Georgia Institute of Technology | 2020–2020 (1) | known not-a-list | http://s1.policylibrary.gatech.edu/student-affairs/thesis-and-dissertations
 - Georgia Institute of Technology | 2020–2020 (1) | known not-a-list | https://www.scheller.gatech.edu/news-events/latest-news/2020/the-resilience-of-scheller-graduates-in-a-covid-19-job-market.html
 - Georgia Institute of Technology | 2018–2018 (1) | known not-a-list | https://www.scs.gatech.edu/phd-candidates
-- Georgia Institute of Technology | 2024–2024 (1) | new | https://ssdl.gatech.edu/ph-d-theses/
+- Georgia Institute of Technology | 2024–2024 (1) | known not-a-list | https://ssdl.gatech.edu/ph-d-theses/
 - Georgia Institute of Technology | 2023–2023 (1) | known not-a-list | https://stebnerlabs.me.gatech.edu/alumni-type/post-doctoral-scholars/
 - Georgia Institute of Technology | 2023–2023 (1) | known not-a-list | https://stebnerlabs.me.gatech.edu/alumni/behnam-amin-ahmadi-phd/
 - Georgia Institute of Technology | 2023–2023 (1) | known not-a-list | https://stebnerlabs.me.gatech.edu/alumni/elham-mirkoohi-phd/
@@ -1027,7 +1074,7 @@ One line per address: institution | years captured | known page? | address. Acce
 - Georgia Institute of Technology | 2023–2023 (1) | known not-a-list | https://stebnerlabs.me.gatech.edu/publication-type/beam-team-theses-and-dissertations/
 - Georgia Institute of Technology | 2013–2023 (10) | known not-a-list | http://techstyle.lmc.gatech.edu/digitizing-research-interests-for-the-classroom-and-the-job-market-d-ped-seminar-topic-for-91411/
 - Georgia Institute of Technology | 2021–2023 (2) | known not-a-list | https://temenoff.gatech.edu/trevino-defends-dissertation-and-gets-job-at-fda/
-- Georgia Institute of Technology | 2017–2024 (217) | known not-a-list | http://www2.me.gatech.edu/theses/summary.asp?db=1&LASTNAME=Ameur&FIRSTNAME=Amir
+- Georgia Institute of Technology | 2017–2025 (220) | known not-a-list | http://www2.me.gatech.edu/theses/summary.asp?db=1&LASTNAME=Ameur&FIRSTNAME=Amir
 - Georgia Institute of Technology | 2013–2015 (6) | known not-a-list | http://www2.me.gatech.edu/www/theses/msthesis.asp
 - HEC Montreal | 2018–2019 (2) | known not-a-list | http://chairecontroledegestion.hec.ca/theses-memoires-et-projets-supervises/
 - HEC Montreal | 2023–2023 (1) | known program-list | https://chairelogistique.hec.ca/en/graduates/
@@ -1039,9 +1086,9 @@ One line per address: institution | years captured | known page? | address. Acce
 - HEC Montreal | 2019–2025 (2) | known program-list | https://www.hec.ca/en/iea/students/phd/placement.html
 - HEC Montreal | 2017–2017 (1) | known program-list | http://www.hec.ca/en/it/studying/Ph.D._Graduates.html
 - HEC Montreal | 2023–2023 (1) | known program-list | https://www.hec.ca/iea/etudiants/phd/placement.html
-- HEC Montreal | 2024–2024 (1) | new | https://www.hec.ca/nouvelles/2023/ecole-souligne-excellence-theses-doctorat-soutenues-2022.html
+- HEC Montreal | 2024–2024 (1) | known not-a-list | https://www.hec.ca/nouvelles/2023/ecole-souligne-excellence-theses-doctorat-soutenues-2022.html
 - HEC Montreal | 2018–2018 (1) | known not-a-list | http://www.hec.ca/salle_de_presse/communiques/2015/CP_IdQ_Fonds_placement.html
-- HEC Montreal | 2025–2025 (1) | new | https://www.hec.ca/sct/politiques-et-procedures/placement/sct_politiquesproceduresplacements_g.html
+- HEC Montreal | 2025–2025 (1) | known not-a-list | https://www.hec.ca/sct/politiques-et-procedures/placement/sct_politiquesproceduresplacements_g.html
 - HEC Montreal | 2017–2017 (1) | known not-a-list | http://www.hec.ca/sct/politiques_et_procedures/placement/sct_politiquesproceduresplacements_g.html
 - HEC Montreal | 2022–2022 (1) | known not-a-list | https://institutcoop.hec.ca/recherche/projets-memoires-et-theses-sur-les-cooperatives-a-hec-montreal/
 - HEC Paris | 2019–2024 (7) | known program-list | https://www.hec.edu/en/doctoral-program/job-market-season
@@ -1061,6 +1108,8 @@ One line per address: institution | years captured | known page? | address. Acce
 - HEC Paris | 2021–2022 (2) | known not-a-list | https://learning-center.hec.edu/database/theses-fr/
 - HEC Paris | 2022–2022 (1) | known not-a-list | https://learning-center.hec.edu/en/database/theses-fr-en/
 - HEC Paris | 2022–2022 (1) | known not-a-list | https://learning-center.hec.edu/en/database_category/theses-and-dissertations/
+- HEC Paris | 2025–2025 (1) | new | https://learning-center.hec.edu/en/hec-thesis-dissertations-capstones/
+- HEC Paris | 2025–2025 (1) | new | https://learning-center.hec.edu/nos-theses-memoires-capstones/
 - Harvard University | 2013–2014 (2) | known not-a-list | http://lib.harvard.edu/university-archives/records-management-news/8_dissertations
 - Heriot-Watt University | 2023–2024 (2) | known not-a-list | https://www.hw.ac.uk/ebs/business/offering-a-business-student-placement.htm
 - Heriot-Watt University | 2020–2022 (2) | known not-a-list | https://www.hw.ac.uk/uk/study/postgraduate/international-business-management-industry-placement.htm
@@ -1073,10 +1122,11 @@ One line per address: institution | years captured | known page? | address. Acce
 - Hong Kong Polytechnic University | 2019–2019 (1) | known not-a-list | https://fb.polyu.edu.hk/dba/students-alumni/student-resources/
 - Hong Kong Polytechnic University | 2020–2022 (2) | known not-a-list | https://www.lib.polyu.edu.hk/databases/china-doctor-dissertations-full-text-database-%E4%B8%AD%E5%9C%8B%E5%8D%9A%E5%A3%AB%E5%AD%B8%E4%BD%8D%E8%AB%96%E6%96%87%E5%85%A8%E6%96%87%E6%95%B8%E6%93%9A%E5%BA%AB
 - Hong Kong Polytechnic University | 2023–2023 (1) | known not-a-list | https://www.lib.polyu.edu.hk/databases/digital-dissertation-consortium
-- Hong Kong Polytechnic University | 2023–2023 (1) | known not-a-list | https://www.lib.polyu.edu.hk/databases/dissertations-theses-hong-kong-polytechnic-university
+- Hong Kong Polytechnic University | 2023–2025 (2) | known not-a-list | https://www.lib.polyu.edu.hk/databases/dissertations-theses-hong-kong-polytechnic-university
 - Hong Kong Polytechnic University | 2020–2023 (2) | known not-a-list | https://www.lib.polyu.edu.hk/databases/polyu-electronic-theses
 - Hong Kong Polytechnic University | 2020–2023 (2) | known not-a-list | https://www.lib.polyu.edu.hk/databases/proquest-dissertations-and-theses
-- Hong Kong Polytechnic University | 2020–2022 (3) | known not-a-list | https://www.lib.polyu.edu.hk/databases/type/dissertations-theses
+- Hong Kong Polytechnic University | 2025–2025 (1) | new | https://www.lib.polyu.edu.hk/databases/proquest-dissertations-theses-global-sciences-and-engineering-collection
+- Hong Kong Polytechnic University | 2020–2025 (4) | known not-a-list | https://www.lib.polyu.edu.hk/databases/type/dissertations-theses
 - Hong Kong Polytechnic University | 2013–2013 (1) | known not-a-list | http://www.lib.polyu.edu.hk/researchhelp/tutorials/dissertations
 - Hong Kong Polytechnic University | 2023–2024 (2) | known not-a-list | https://www.polyu.edu.hk/af/study/research-postgraduate-programme/phd-graduate-placements/
 - Hong Kong Polytechnic University | 2018–2018 (1) | known not-a-list | https://www.polyu.edu.hk/caps/wie/?morequest=sso&RelayState=https%3A%2F%2Fwww.polyu.edu.hk%2Fcaps%2Fwie%2Fsponsorships-for-offshore-placements-ows%2Foffshore-wie-sponsorship
@@ -1088,43 +1138,51 @@ One line per address: institution | years captured | known page? | address. Acce
 - Hong Kong Polytechnic University | 2019–2019 (1) | known not-a-list | https://www.polyu.edu.hk/cc/zh_hk/students-teacher-corner/ma-studentscorner-professorspapers/dissertation/tamkingfai
 - Hong Kong Polytechnic University | 2019–2019 (1) | known not-a-list | https://www.polyu.edu.hk/cc/zh_hk/students-teacher-corner/ma-studentscorner-professorspapers/dissertation/tsewaikit
 - Hong Kong Polytechnic University | 2019–2019 (1) | known not-a-list | https://www.polyu.edu.hk/cc/zh_hk/students-teacher-corner/ma-studentscorner-professorspapers/dissertation/tsuikaihin
+- Hong Kong Polytechnic University | 2025–2025 (1) | new | https://www.polyu.edu.hk/eee/experience-and-opportunities/placement-and-job-prospects/
 - Hong Kong Polytechnic University | 2023–2023 (1) | known not-a-list | https://www.polyu.edu.hk/en/sao/careers-and-placement-section/wie-programmes/
+- Hong Kong Polytechnic University | 2025–2025 (1) | new | https://www.polyu.edu.hk/ise/experience-and-opportunities/placement-opportunities/
 - Hong Kong Polytechnic University | 2023–2024 (2) | known program-list | https://www.polyu.edu.hk/lms/study/rpg/phd-graduate-placements/
-- Hong Kong Polytechnic University | 2024–2024 (1) | new | https://www.polyu.edu.hk/mm/experience/phd-graduates-placement/
-- Hong Kong Polytechnic University | 2024–2024 (1) | new | https://www.polyu.edu.hk/notfound.html?item=%2fstudy%2frpg%2fcurrent-graduate-placements-of-research-postgraduate-student%2f&user=extranet%5cAnonymous&site=lms
+- Hong Kong Polytechnic University | 2024–2024 (1) | known program-list | https://www.polyu.edu.hk/mm/experience/phd-graduates-placement/
+- Hong Kong Polytechnic University | 2024–2025 (2) | known not-a-list | https://www.polyu.edu.hk/notfound.html?item=%2fstudy%2frpg%2fcurrent-graduate-placements-of-research-postgraduate-student%2f&user=extranet%5cAnonymous&site=lms
 - Hong Kong Polytechnic University | 2023–2023 (1) | known not-a-list | https://www.polyu.edu.hk/sao/careers-and-placement-section/career-advising-and-training-workshops/
 - Hong Kong Polytechnic University | 2023–2023 (1) | known not-a-list | https://www.polyu.edu.hk/sao/careers-and-placement-section/career-support-for-students-with-sen/ | 4 pages below it
-- Hong Kong Polytechnic University | 2024–2024 (1) | new | https://www.polyu.edu.hk/sao/careers-and-placement-section/job-opportunities/ | 1 pages below it
-- Hong Kong Polytechnic University | 2022–2022 (1) | known not-a-list | https://www.polyu.edu.hk/sao/careers-and-placement-section/plan-for-your-careers/
+- Hong Kong Polytechnic University | 2024–2024 (1) | known not-a-list | https://www.polyu.edu.hk/sao/careers-and-placement-section/job-opportunities/ | 1 pages below it
+- Hong Kong Polytechnic University | 2022–2025 (3) | known not-a-list | https://www.polyu.edu.hk/sao/careers-and-placement-section/plan-for-your-careers/
 - Hong Kong Polytechnic University | 2022–2022 (1) | known not-a-list | https://www.polyu.edu.hk/sao/careers-and-placement-section/wie-programmes/
 - Hong Kong Polytechnic University | 2018–2019 (2) | known not-a-list | http://www.polyu.edu.hk/stars/co-curriculum/careers-and-placements/
 - Hong Kong Polytechnic University | 2021–2021 (1) | known not-a-list | https://research.polyu.edu.hk/en/activities/examination-committee-of-subtends-dissertations-for-a-ma-programm
 - Hong Kong Polytechnic University | 2021–2023 (2) | known not-a-list | https://research.polyu.edu.hk/en/activities/examination-committee-of-subtends-dissertations-for-a-ma-programm-2
 - Hong Kong Polytechnic University | 2021–2021 (1) | known not-a-list | https://research.polyu.edu.hk/en/activities/external-examiner-of-two-phd-theses-research-on-the-new-literacy-
-- Hong Kong Polytechnic University | 2024–2024 (1) | new | https://research.polyu.edu.hk/en/persons/hui-tang/supervised-student-theses/
-- Hong Kong Polytechnic University | 2024–2024 (1) | new | https://research.polyu.edu.hk/en/persons/jenny-chan/supervised-student-theses/
-- Hong Kong Polytechnic University | 2024–2024 (1) | new | https://research.polyu.edu.hk/en/persons/kin-wah-lee/supervised-student-theses/
-- Hong Kong Polytechnic University | 2024–2024 (1) | new | https://research.polyu.edu.hk/en/persons/kwok-wai-mui/supervised-student-theses/
-- Hong Kong Polytechnic University | 2024–2024 (1) | new | https://research.polyu.edu.hk/en/persons/li-cheng/supervised-student-theses/
+- Hong Kong Polytechnic University | 2025–2025 (1) | new | https://research.polyu.edu.hk/en/activities/external-examiner-phd-dissertation-cityu
+- Hong Kong Polytechnic University | 2024–2024 (1) | known not-a-list | https://research.polyu.edu.hk/en/persons/hui-tang/supervised-student-theses/
+- Hong Kong Polytechnic University | 2024–2025 (2) | known not-a-list | https://research.polyu.edu.hk/en/persons/jenny-chan/supervised-student-theses/
+- Hong Kong Polytechnic University | 2024–2024 (1) | known not-a-list | https://research.polyu.edu.hk/en/persons/kin-wah-lee/supervised-student-theses/
+- Hong Kong Polytechnic University | 2024–2024 (1) | known not-a-list | https://research.polyu.edu.hk/en/persons/kwok-wai-mui/supervised-student-theses/
+- Hong Kong Polytechnic University | 2024–2024 (1) | known not-a-list | https://research.polyu.edu.hk/en/persons/li-cheng/supervised-student-theses/
 - Hong Kong Polytechnic University | 2022–2022 (1) | known not-a-list | https://research.polyu.edu.hk/en/persons/tin-cheung-ying/supervised-student-theses/
-- Hong Kong Polytechnic University | 2024–2024 (1) | new | https://research.polyu.edu.hk/en/persons/wai-yeung-wong/supervised-student-theses/
-- Hong Kong Polytechnic University | 2024–2024 (1) | new | https://research.polyu.edu.hk/en/persons/xihui-liu/supervised-student-theses/
-- Hong Kong Polytechnic University | 2024–2024 (1) | new | https://research.polyu.edu.hk/en/persons/yim-wah-mak/supervised-student-theses/
-- Hong Kong Polytechnic University | 2013–2024 (14) | known not-a-list | http://theses.lib.polyu.edu.hk/
+- Hong Kong Polytechnic University | 2024–2024 (1) | known not-a-list | https://research.polyu.edu.hk/en/persons/wai-yeung-wong/supervised-student-theses/
+- Hong Kong Polytechnic University | 2024–2024 (1) | known not-a-list | https://research.polyu.edu.hk/en/persons/xihui-liu/supervised-student-theses/
+- Hong Kong Polytechnic University | 2024–2024 (1) | known not-a-list | https://research.polyu.edu.hk/en/persons/yim-wah-mak/supervised-student-theses/
+- Hong Kong Polytechnic University | 2013–2025 (15) | known not-a-list | http://theses.lib.polyu.edu.hk/
 - Hong Kong Polytechnic University | 2017–2017 (1) | known not-a-list | http://theses.lib.polyu.edu.hk/advanced-search
 - Hong Kong Polytechnic University | 2019–2023 (2) | known not-a-list | https://theses.lib.polyu.edu.hk/forgot
 - Hong Kong Polytechnic University | 2017–2017 (1) | known not-a-list | http://theses.lib.polyu.edu.hk/handle/200/help.htm
-- Hong Kong Polytechnic University | 2019–2024 (5) | known not-a-list | https://theses.lib.polyu.edu.hk/mydspace
+- Hong Kong Polytechnic University | 2019–2025 (6) | known not-a-list | https://theses.lib.polyu.edu.hk/mydspace
+- Hong Kong Polytechnic University | 2025–2025 (1) | new | https://theses.lib.polyu.edu.hk/password-login;jsessionid=13372BB4D946A88A456FBAAA9995595A
 - Hong Kong Polytechnic University | 2023–2023 (1) | known not-a-list | https://theses.lib.polyu.edu.hk/password-login;jsessionid=315C43F29AEE8574AC68260865E58955
+- Hong Kong Polytechnic University | 2025–2025 (1) | new | https://theses.lib.polyu.edu.hk/password-login;jsessionid=4F44754A4AB6D06B6AB0B7BC1C9CBD19
 - Hong Kong Polytechnic University | 2022–2022 (1) | known not-a-list | https://theses.lib.polyu.edu.hk/password-login;jsessionid=516DC9052BDF50B16C826D98803D5D09
 - Hong Kong Polytechnic University | 2023–2023 (1) | known not-a-list | https://theses.lib.polyu.edu.hk/password-login;jsessionid=535C2FA1BC78508ABCB121AEFD3DA0DD
-- Hong Kong Polytechnic University | 2024–2024 (1) | new | https://theses.lib.polyu.edu.hk/password-login;jsessionid=57390CF64594B819F9826B49E2146F81
+- Hong Kong Polytechnic University | 2024–2024 (1) | known not-a-list | https://theses.lib.polyu.edu.hk/password-login;jsessionid=57390CF64594B819F9826B49E2146F81
+- Hong Kong Polytechnic University | 2025–2025 (1) | new | https://theses.lib.polyu.edu.hk/password-login;jsessionid=7EAB2B7B6040168BF72A1CAD79715DA9
 - Hong Kong Polytechnic University | 2022–2022 (1) | known not-a-list | https://theses.lib.polyu.edu.hk/password-login;jsessionid=85BA426BFEEAC69F37ED7449778F07B7
 - Hong Kong Polytechnic University | 2022–2022 (1) | known not-a-list | https://theses.lib.polyu.edu.hk/password-login;jsessionid=87D5ED49C14FED413B5465CFCB2ED69C
 - Hong Kong Polytechnic University | 2023–2023 (1) | known not-a-list | https://theses.lib.polyu.edu.hk/password-login;jsessionid=C811F3AFD4ED5449810E0051F2750956
-- Hong Kong Polytechnic University | 2024–2024 (1) | new | https://theses.lib.polyu.edu.hk/password-login;jsessionid=FDF6941180757B8474AA69DE16C82ED1
-- Hong Kong Polytechnic University | 2019–2024 (6) | known not-a-list | https://theses.lib.polyu.edu.hk/subscribe
+- Hong Kong Polytechnic University | 2025–2025 (1) | new | https://theses.lib.polyu.edu.hk/password-login;jsessionid=E0EBAD663B55EE6D718E264E3C0CB851
+- Hong Kong Polytechnic University | 2024–2024 (1) | known not-a-list | https://theses.lib.polyu.edu.hk/password-login;jsessionid=FDF6941180757B8474AA69DE16C82ED1
+- Hong Kong Polytechnic University | 2019–2025 (7) | known not-a-list | https://theses.lib.polyu.edu.hk/subscribe
 - Hong Kong Polytechnic University | 2017–2017 (1) | known not-a-list | http://www2.ise.polyu.edu.hk/academic_program/mscils/dissertation.asp
+- Hong Kong University of Science and Technology | 2025–2025 (1) | new | https://isom.hkust.edu.hk/student-and-alumni/phd-graduates/om/selected-publication-journals
 - IE University | 2017–2020 (4) | known not-a-list | http://alumninews.blogs.ie.edu/placement-report
 - IE University | 2017–2020 (4) | known not-a-list | http://alumninews.blogs.ie.edu/placement-report-not-seeking
 - IE University | 2017–2020 (4) | known not-a-list | http://alumninews.blogs.ie.edu/placement-report-seeking
@@ -1135,11 +1193,14 @@ One line per address: institution | years captured | known page? | address. Acce
 - IE University | 2020–2022 (2) | known not-a-list | https://drivinginnovation.ie.edu/how-business-administration-laws-combination-need-tomorrows-job-market/?cat=true
 - IE University | 2019–2022 (4) | known not-a-list | https://drivinginnovation.ie.edu/why-ple-and-big-data-are-the-perfect-pair-for-tomorrows-job-market/
 - IE University | 2016–2023 (4) | known not-a-list | http://www.eaa-jobmarket.ie.edu/
+- IE University | 2025–2025 (1) | new | https://eaa-jobmarket.ie.edu/accommodation/
+- IE University | 2025–2025 (1) | new | https://eaa-jobmarket.ie.edu/opening-institutions/
 - IE University | 2019–2020 (2) | known not-a-list | https://eaa-jobmarket.ie.edu/registration-for-candidates/
 - IIM Bangalore | 2018–2018 (1) | known not-a-list | http://iimb.ac.in/community/placement2001
-- IIM Bangalore | 2024–2024 (1) | new | https://www.iimb.ac.in/iimb-pgp-pgpba-placements-2023
+- IIM Bangalore | 2024–2024 (1) | known not-a-list | https://www.iimb.ac.in/iimb-pgp-pgpba-placements-2023
+- IIM Bangalore | 2025–2025 (1) | new | https://www.iimb.ac.in/iimb-placements-2025
 - IIM Bangalore | 2018–2018 (1) | known not-a-list | http://iimb.ac.in/pgp/placement
-- IIM Bangalore | 2023–2023 (1) | known program-list | https://www.iimb.ac.in/programmes/doctoral-programme/alumni
+- IIM Bangalore | 2023–2025 (2) | known program-list | https://www.iimb.ac.in/programmes/doctoral-programme/alumni
 - IIM Bangalore | 2023–2023 (1) | known not-a-list | https://www.iimb.ac.in/programmes/doctoral-programme/phd-alumni-meet-imrdc-conference-2024
 - IIM Bangalore | 2023–2023 (1) | known not-a-list | https://www.iimb.ac.in/programmes/pgpba/pgpba-placements
 - IIM Calcutta | 2013–2013 (2) | known not-a-list | http://www.iimcal.ac.in/iim-calcutta-graduates-get-tips-mumbai-dabbawalas
@@ -1148,9 +1209,12 @@ One line per address: institution | years captured | known page? | address. Acce
 - IIM Calcutta | 2022–2022 (1) | known not-a-list | https://www.iimcal.ac.in/placement-report-3
 - IIM Calcutta | 2022–2022 (1) | known not-a-list | https://www.iimcal.ac.in/placement-report-4
 - IIM Calcutta | 2021–2021 (1) | known not-a-list | https://www.iimcal.ac.in/placements
+- IIM Calcutta | 2025–2025 (1) | known program-list | https://www.iimcal.ac.in/programs/doctoral/doctoral-dissertations
 - IIM Calcutta | 2022–2022 (1) | known not-a-list | https://www.iimcal.ac.in/programs/doctoral/selected-publications-of-recent-doctoral-programme-graduates-and-current-students
+- IIM Calcutta | 2025–2025 (1) | new | https://www.iimcal.ac.in/programs/pgdba/placement/brochure
+- IIM Calcutta | 2025–2025 (1) | new | https://www.iimcal.ac.in/programs/pgdba/placement/summer-placements/placement-report
 - IIM Calcutta | 2022–2024 (2) | known not-a-list | https://www.iimcal.ac.in/programs/pgpex/students/please-click-link-below-download-placement-brochure-for-pgpex-class-of-2021
-- IIT-Bombay | 2024–2024 (1) | new | https://www.ieor.iitb.ac.in/opportunities/placement2021-22
+- IIT-Bombay | 2024–2024 (1) | known not-a-list | https://www.ieor.iitb.ac.in/opportunities/placement2021-22
 - IIT-Bombay | 2019–2023 (3) | known not-a-list | http://www.ieor.iitb.ac.in/opportunities/placements
 - IIT-Bombay | 2013–2013 (1) | known not-a-list | http://www.som.iitb.ac.in/placements/advantage_SJMSOM/
 - INSEAD | 2023–2023 (1) | known not-a-list | https://blogs.insead.edu/embeds/icgc-report-job-market-2019/
@@ -1160,13 +1224,15 @@ One line per address: institution | years captured | known page? | address. Acce
 - INSEAD | 2013–2013 (1) | known program-list | http://phd.insead.edu/alumni_and_placements/
 - Imperial College London | 2023–2023 (1) | known not-a-list | https://www.imperial.ac.uk/about/governance/academic-governance/academic-policy/placement-learning/
 - Imperial College London | 2020–2020 (1) | known program-list | https://www.imperial.ac.uk/business-school/programmes/doctoral-degree/career-impact/graduate-placements/
-- Imperial College London | 2023–2023 (1) | known not-a-list | https://www.imperial.ac.uk/placements/
+- Imperial College London | 2023–2025 (2) | known not-a-list | https://www.imperial.ac.uk/placements/ | 1 pages below it
 - Indian Institute of Management Ahmedabad | 2023–2023 (1) | known program-list | https://preview.iima.ac.in/academics/phd/career-and-placement
 - Indian Institute of Management Ahmedabad | 2018–2023 (11376) | known program-list | http://vslopac.iima.ac.in/cgi-bin/koha/opac-search.pl?q=ccl=location%3DAV&sort_by=title_az&limit=itype:THESES
+- Indian Institute of Management Ahmedabad | 2025–2025 (1) | new | https://wimwian.iima.ac.in/the-making-of-a-dissertation/
 - Indian Institute of Management Ahmedabad | 2023–2023 (1) | known not-a-list | https://www01.iima.ac.in/iprs/placement-reports/symbiosis-centre-for-management-and-human-resource-development
 - Indian Institute of Management Ahmedabad | 2023–2023 (1) | known not-a-list | https://www01.iima.ac.in/iprs/placement-reports/symbiosis-institute-of-business-management-pune
 - Indian Institute of Management Ahmedabad | 2023–2023 (1) | known not-a-list | https://www01.iima.ac.in/iprs/placement-reports/t-a-pai-management-institute-manipal
 - Indian Institute of Management Ahmedabad | 2023–2023 (1) | known not-a-list | https://www01.iima.ac.in/iprs/placement-reports/xavier-institute-of-management-bhubaneswar
+- Indian Institute of Management, Kozhikode | 2025–2025 (1) | new | https://iimk.ac.in/academic-programmes/Fellow-Programme-in-Management/fpm-placements
 - Indian Institute of Management, Kozhikode | 2023–2023 (1) | known not-a-list | https://iimk.ac.in/academic-programmes/Post-Graduate-Programme-in-Business-Leadership-/placement-committee
 - Indian Institute of Science (IISc), Bengaluru | 2022–2023 (2) | known not-a-list | https://mgmt.iisc.ac.in/thesis-or-dissertations/
 - Indian Institute of Technology Delhi | 2017–2017 (1) | known not-a-list | http://crdt.iitd.ac.in/alumni/phd
@@ -1215,7 +1281,8 @@ One line per address: institution | years captured | known page? | address. Acce
 - Indian School of Business | 2013–2013 (1) | known not-a-list | http://www.isb.edu/PGP/alumni-media.shtml
 - Indian School of Business | 2019–2019 (2) | known not-a-list | https://www.isb.edu/pgp/careers/placement-trends
 - Indian School of Business | 2013–2013 (2) | known not-a-list | http://www.isb.edu/pgp/Placement_Highlights.Shtml
-- Indian School of Business | 2024–2024 (1) | new | https://online-er.isb.edu/product-management/index.php?advocate_email=p7%2FVD8muj0oOBBMbt9UbTazjUNiqMbNDr6OemuqFlChtzxgeY%2FJ%2FEKmklBgJd78BD5sMSqfTlc8ib7jLV6dlAAry4F%2BzqHmz7JmwJwLaRKuSrEfiqQBgTN50JW3f6LHOOvhEJQFiEcNdzNbQThAV--JCnBVYlQp53w8l5r--89UCPyKspbTdogeXCQOHwQ%3D%3D&advocate_program=01tAy000000EsplIAC&advocate_source=emailer&utm_campaign=incentivized_referrals&utm_content=CERT-ISB+PM+Async+India&utm_medium=personal_url&utm_placement=emailer&utm_source=referral&utm_term=Vc7N%2F97fLWGIj8ZS8kgsYL%2BXzYQC1Gq7Yfh66sCtIvDyQblg5x6Sla4aokhHKfwMesFrOtom1j%2FyRQd5lVUBV6wKdJ9l8AP2zZsRWZG%2FL5uY0NV5HNfr9NyqBcNCH%2BU2HWFUVrFD%2B9%2FNkg%3D%3D--ogyvrSomvV3dTdlD--FH9vfdRsxTp68UYoHEoRYw%3D%3D
+- Indian School of Business | 2025–2025 (1) | known program-list | https://www.isb.edu/programmes/fellow-programmes/fpm/placements
+- Indian School of Business | 2024–2024 (1) | known not-a-list | https://online-er.isb.edu/product-management/index.php?advocate_email=p7%2FVD8muj0oOBBMbt9UbTazjUNiqMbNDr6OemuqFlChtzxgeY%2FJ%2FEKmklBgJd78BD5sMSqfTlc8ib7jLV6dlAAry4F%2BzqHmz7JmwJwLaRKuSrEfiqQBgTN50JW3f6LHOOvhEJQFiEcNdzNbQThAV--JCnBVYlQp53w8l5r--89UCPyKspbTdogeXCQOHwQ%3D%3D&advocate_program=01tAy000000EsplIAC&advocate_source=emailer&utm_campaign=incentivized_referrals&utm_content=CERT-ISB+PM+Async+India&utm_medium=personal_url&utm_placement=emailer&utm_source=referral&utm_term=Vc7N%2F97fLWGIj8ZS8kgsYL%2BXzYQC1Gq7Yfh66sCtIvDyQblg5x6Sla4aokhHKfwMesFrOtom1j%2FyRQd5lVUBV6wKdJ9l8AP2zZsRWZG%2FL5uY0NV5HNfr9NyqBcNCH%2BU2HWFUVrFD%2B9%2FNkg%3D%3D--ogyvrSomvV3dTdlD--FH9vfdRsxTp68UYoHEoRYw%3D%3D
 - Indiana University Bloomington | 2013–2014 (43) | known not-a-list | http://www.kelley.iu.edu/alumni/ | 2 pages below it
 - Indiana University Bloomington | 2013–2014 (9) | known not-a-list | http://www.kelley.iu.edu/CBL/alumni/page15101.html
 - Indiana University Bloomington | 2013–2015 (12) | known program-list | http://kelley.iu.edu/Doctoral/Careers/PhD%20Placements/page13961.html
@@ -1232,15 +1299,15 @@ One line per address: institution | years captured | known page? | address. Acce
 - Iowa State University | 2013–2013 (1) | known not-a-list | http://www.business.iastate.edu/phd/candidates
 - Iowa State University | 2018–2018 (1) | known program-list | https://www.business.iastate.edu/phd/job-placements/
 - Iowa State University | 2018–2018 (1) | known program-list | https://www.business.iastate.edu/phd/market-candidates/
-- Iowa State University | 2024–2024 (1) | new | https://www.ivybusiness.iastate.edu/academics/phd-program/phd-job-placement/phd-job-market-candidates/
+- Iowa State University | 2025–2025 (1) | new | https://www.ivybusiness.iastate.edu/academics/phd-program/phd-job-placement/ | 1 pages below it
 - Iowa State University | 2019–2019 (1) | known program-list | https://www.ivybusiness.iastate.edu/phd/job-placements/
 - Istanbul Technical University | 2023–2023 (1) | known not-a-list | https://darch.itu.edu.tr/cky-publications-and-theses/?lang=en
-- Istanbul Technical University | 2023–2023 (1) | known not-a-list | https://islmuh.itu.edu.tr/en/alumni | 2 pages below it
+- Istanbul Technical University | 2023–2023 (1) | known not-a-list | https://islmuh.itu.edu.tr/en/alumni | 3 pages below it
 - Istanbul Technical University | 2022–2022 (1) | known not-a-list | https://lee.itu.edu.tr/en/students/phd-degree/phd-theses-in-open-examination
-- Istanbul Technical University | 2024–2024 (1) | new | https://mbl.itu.edu.tr/doctoral-theses/
+- Istanbul Technical University | 2024–2024 (1) | known not-a-list | https://mbl.itu.edu.tr/doctoral-theses/
 - Istanbul Technical University | 2024–2024 (1) | known not-a-list | https://research.itu.edu.tr/en/persons/%C3%A7i%C4%9Fdem-kaya/supervised-student-theses/
 - Istanbul Technical University | 2024–2024 (1) | known not-a-list | https://research.itu.edu.tr/en/persons/%C3%B6mer-berk-berkalp/supervised-student-theses/
-- Istanbul Technical University | 2024–2024 (1) | known not-a-list | https://research.itu.edu.tr/en/persons/%C3%B6mer-dabanl%C4%B1/supervised-student-theses/
+- Istanbul Technical University | 2024–2025 (2) | known not-a-list | https://research.itu.edu.tr/en/persons/%C3%B6mer-dabanl%C4%B1/supervised-student-theses/
 - Istanbul Technical University | 2024–2024 (1) | known not-a-list | https://research.itu.edu.tr/en/persons/%C3%B6mer-faruk-day%C4%B1/supervised-student-theses/
 - Istanbul Technical University | 2024–2024 (1) | known not-a-list | https://research.itu.edu.tr/en/persons/%C3%B6mer-l%C3%BCtfi-%C5%9Fen/supervised-student-theses/
 - Istanbul Technical University | 2024–2024 (1) | known not-a-list | https://research.itu.edu.tr/en/persons/%C3%B6mer-usta/supervised-student-theses/
@@ -1257,10 +1324,11 @@ One line per address: institution | years captured | known page? | address. Acce
 - Istanbul Technical University | 2024–2024 (1) | known not-a-list | https://research.itu.edu.tr/en/persons/ahmet-levent-suba%C5%9F%C4%B1/supervised-student-theses/
 - Istanbul Technical University | 2024–2024 (1) | known not-a-list | https://research.itu.edu.tr/en/persons/akcaykavakoglu/supervised-student-theses/
 - Istanbul Technical University | 2024–2024 (1) | known not-a-list | https://research.itu.edu.tr/en/persons/akleman/supervised-student-theses/
+- Istanbul Technical University | 2025–2025 (1) | known not-a-list | https://research.itu.edu.tr/en/persons/aksoymelt/supervised-student-theses/
 - Istanbul Technical University | 2024–2024 (1) | known not-a-list | https://research.itu.edu.tr/en/persons/alim-r%C3%BCstem-aslan/supervised-student-theses/
 - Istanbul Technical University | 2024–2024 (1) | known not-a-list | https://research.itu.edu.tr/en/persons/alper-tolga-%C3%A7al%C4%B1k/supervised-student-theses/
 - Istanbul Technical University | 2024–2024 (1) | known not-a-list | https://research.itu.edu.tr/en/persons/arslanh/supervised-student-theses/
-- Istanbul Technical University | 2024–2024 (1) | known not-a-list | https://research.itu.edu.tr/en/persons/asl%C4%B1-baysal/supervised-student-theses/
+- Istanbul Technical University | 2024–2025 (2) | known not-a-list | https://research.itu.edu.tr/en/persons/asl%C4%B1-baysal/supervised-student-theses/
 - Istanbul Technical University | 2024–2024 (1) | known not-a-list | https://research.itu.edu.tr/en/persons/asl%C4%B1-erbil/supervised-student-theses/
 - Istanbul Technical University | 2024–2024 (1) | known not-a-list | https://research.itu.edu.tr/en/persons/atilla-damc%C4%B1/supervised-student-theses/
 - Istanbul Technical University | 2024–2024 (1) | known not-a-list | https://research.itu.edu.tr/en/persons/ay%C5%9Fe-%C3%B6zdemir/supervised-student-theses/
@@ -1273,7 +1341,7 @@ One line per address: institution | years captured | known page? | address. Acce
 - Istanbul Technical University | 2024–2024 (1) | known not-a-list | https://research.itu.edu.tr/en/persons/ayta%C3%A7-ar%C4%B1ko%C4%9Flu/supervised-student-theses/
 - Istanbul Technical University | 2024–2024 (1) | known not-a-list | https://research.itu.edu.tr/en/persons/ayten-karata%C5%9F/supervised-student-theses/
 - Istanbul Technical University | 2024–2024 (1) | known not-a-list | https://research.itu.edu.tr/en/persons/bahad%C4%B1r-u%C4%9Furlu/supervised-student-theses/
-- Istanbul Technical University | 2024–2024 (1) | known not-a-list | https://research.itu.edu.tr/en/persons/baskakm/supervised-student-theses/
+- Istanbul Technical University | 2024–2025 (2) | known not-a-list | https://research.itu.edu.tr/en/persons/baskakm/supervised-student-theses/
 - Istanbul Technical University | 2024–2024 (1) | known not-a-list | https://research.itu.edu.tr/en/persons/baykaracem/supervised-student-theses/
 - Istanbul Technical University | 2024–2024 (1) | known not-a-list | https://research.itu.edu.tr/en/persons/becerik/supervised-student-theses/
 - Istanbul Technical University | 2024–2024 (1) | known not-a-list | https://research.itu.edu.tr/en/persons/beh%C3%A7et-u%C4%9Fur-t%C3%B6reyin/supervised-student-theses/
@@ -1296,11 +1364,11 @@ One line per address: institution | years captured | known page? | address. Acce
 - Istanbul Technical University | 2024–2024 (2) | known not-a-list | https://research.itu.edu.tr/en/persons/ergin/supervised-student-theses/
 - Istanbul Technical University | 2024–2024 (1) | known not-a-list | https://research.itu.edu.tr/en/persons/erolha/supervised-student-theses/
 - Istanbul Technical University | 2024–2024 (1) | known not-a-list | https://research.itu.edu.tr/en/persons/ersin.sayar/supervised-student-theses/
-- Istanbul Technical University | 2024–2024 (1) | known not-a-list | https://research.itu.edu.tr/en/persons/ertemelav/supervised-student-theses/
+- Istanbul Technical University | 2024–2025 (2) | known not-a-list | https://research.itu.edu.tr/en/persons/ertemelav/supervised-student-theses/
 - Istanbul Technical University | 2024–2024 (1) | known not-a-list | https://research.itu.edu.tr/en/persons/ertogan/supervised-student-theses/
 - Istanbul Technical University | 2024–2024 (1) | known not-a-list | https://research.itu.edu.tr/en/persons/f%C4%B1rat-bolat/supervised-student-theses/
 - Istanbul Technical University | 2024–2024 (1) | known not-a-list | https://research.itu.edu.tr/en/persons/fatma-erk%C3%B6k/supervised-student-theses/
-- Istanbul Technical University | 2024–2024 (2) | known not-a-list | https://research.itu.edu.tr/en/persons/fatma-kalao%C4%9Flu/supervised-student-theses/
+- Istanbul Technical University | 2024–2025 (3) | known not-a-list | https://research.itu.edu.tr/en/persons/fatma-kalao%C4%9Flu/supervised-student-theses/
 - Istanbul Technical University | 2024–2024 (1) | known not-a-list | https://research.itu.edu.tr/en/persons/fatma-seniha-g%C3%BCner/supervised-student-theses/?relations=studentthesis&page=1
 - Istanbul Technical University | 2024–2024 (1) | known not-a-list | https://research.itu.edu.tr/en/persons/ferhan-%C3%A7ebi/supervised-student-theses/
 - Istanbul Technical University | 2024–2024 (1) | known not-a-list | https://research.itu.edu.tr/en/persons/g%C3%BCl%C5%9Fen-eryi%C4%9Fit/supervised-student-theses/
@@ -1319,7 +1387,7 @@ One line per address: institution | years captured | known page? | address. Acce
 - Istanbul Technical University | 2024–2024 (1) | known not-a-list | https://research.itu.edu.tr/en/persons/hakan-tun%C3%A7demir/supervised-student-theses/
 - Istanbul Technical University | 2024–2024 (1) | known not-a-list | https://research.itu.edu.tr/en/persons/hasan-g%C3%BCne%C5%9F/supervised-student-theses/
 - Istanbul Technical University | 2024–2024 (2) | known not-a-list | https://research.itu.edu.tr/en/persons/hatice-k%C3%B6se/supervised-student-theses/
-- Istanbul Technical University | 2024–2024 (1) | known not-a-list | https://research.itu.edu.tr/en/persons/hayrettin-g%C3%BC%C3%A7l%C3%BC-insel/supervised-student-theses/
+- Istanbul Technical University | 2024–2025 (2) | known not-a-list | https://research.itu.edu.tr/en/persons/hayrettin-g%C3%BC%C3%A7l%C3%BC-insel/supervised-student-theses/
 - Istanbul Technical University | 2024–2024 (1) | known not-a-list | https://research.itu.edu.tr/en/persons/hikmet-kocaba%C5%9F/supervised-student-theses/
 - Istanbul Technical University | 2024–2024 (1) | known not-a-list | https://research.itu.edu.tr/en/persons/i%C5%9F%C4%B1n-erer/supervised-student-theses/
 - Istanbul Technical University | 2024–2024 (1) | known not-a-list | https://research.itu.edu.tr/en/persons/ibrahim-k%C4%B1rat/supervised-student-theses/
@@ -1332,7 +1400,7 @@ One line per address: institution | years captured | known page? | address. Acce
 - Istanbul Technical University | 2024–2024 (2) | known not-a-list | https://research.itu.edu.tr/en/persons/kadir-g%C3%BCler/supervised-student-theses/
 - Istanbul Technical University | 2024–2024 (1) | known not-a-list | https://research.itu.edu.tr/en/persons/kahramanmm/supervised-student-theses/
 - Istanbul Technical University | 2024–2024 (2) | known not-a-list | https://research.itu.edu.tr/en/persons/kartalme/supervised-student-theses/
-- Istanbul Technical University | 2024–2024 (1) | known not-a-list | https://research.itu.edu.tr/en/persons/kayam/supervised-student-theses/
+- Istanbul Technical University | 2024–2025 (2) | known not-a-list | https://research.itu.edu.tr/en/persons/kayam/supervised-student-theses/
 - Istanbul Technical University | 2024–2024 (1) | known not-a-list | https://research.itu.edu.tr/en/persons/kececidem/supervised-student-theses/
 - Istanbul Technical University | 2024–2024 (1) | known not-a-list | https://research.itu.edu.tr/en/persons/kizilr/supervised-student-theses/
 - Istanbul Technical University | 2024–2024 (1) | known not-a-list | https://research.itu.edu.tr/en/persons/koramaz/supervised-student-theses/
@@ -1367,10 +1435,10 @@ One line per address: institution | years captured | known page? | address. Acce
 - Istanbul Technical University | 2024–2024 (1) | known not-a-list | https://research.itu.edu.tr/en/persons/serhat-ikizo%C4%9Flu/supervised-student-theses/
 - Istanbul Technical University | 2024–2024 (1) | known not-a-list | https://research.itu.edu.tr/en/persons/sertele/supervised-student-theses/
 - Istanbul Technical University | 2024–2024 (1) | known not-a-list | https://research.itu.edu.tr/en/persons/sevin%C3%A7-asilhan/supervised-student-theses/
-- Istanbul Technical University | 2024–2024 (1) | known not-a-list | https://research.itu.edu.tr/en/persons/solaknu/supervised-student-theses/
+- Istanbul Technical University | 2024–2025 (2) | known not-a-list | https://research.itu.edu.tr/en/persons/solaknu/supervised-student-theses/
 - Istanbul Technical University | 2024–2024 (1) | known not-a-list | https://research.itu.edu.tr/en/persons/tanzer-sat%C4%B1r/supervised-student-theses/
 - Istanbul Technical University | 2024–2024 (1) | known not-a-list | https://research.itu.edu.tr/en/persons/tuba-y%C4%B1lmaz-abdolsaheb/supervised-student-theses/
-- Istanbul Technical University | 2024–2024 (1) | known not-a-list | https://research.itu.edu.tr/en/persons/turgay-i%C5%9Fseven/supervised-student-theses/
+- Istanbul Technical University | 2024–2025 (2) | known not-a-list | https://research.itu.edu.tr/en/persons/turgay-i%C5%9Fseven/supervised-student-theses/
 - Istanbul Technical University | 2024–2024 (1) | known not-a-list | https://research.itu.edu.tr/en/persons/turgut-y%C4%B1lmaz/supervised-student-theses/
 - Istanbul Technical University | 2024–2024 (1) | known not-a-list | https://research.itu.edu.tr/en/persons/u%C4%9Fur-alganc%C4%B1/supervised-student-theses/
 - Istanbul Technical University | 2024–2024 (1) | known not-a-list | https://research.itu.edu.tr/en/persons/umut-alma%C3%A7/supervised-student-theses/
@@ -1389,46 +1457,51 @@ One line per address: institution | years captured | known page? | address. Acce
 - Istanbul Technical University | 2024–2024 (1) | known not-a-list | https://research.itu.edu.tr/tr/persons/%C3%B6zg%C3%BCr-kabak/supervised-student-theses/
 - Istanbul Technical University | 2024–2024 (1) | known not-a-list | https://research.itu.edu.tr/tr/persons/%C3%B6zge-%C3%A7eliko%C4%9Flu/supervised-student-theses/
 - Istanbul Technical University | 2024–2024 (1) | known not-a-list | https://research.itu.edu.tr/tr/persons/%C3%B6zge-%C3%B6zdemir/supervised-student-theses/
-- Istanbul Technical University | 2024–2024 (1) | known not-a-list | https://research.itu.edu.tr/tr/persons/%C5%9F%C3%BCkr%C3%BCye-iyinam/supervised-student-theses/
+- Istanbul Technical University | 2024–2025 (2) | known not-a-list | https://research.itu.edu.tr/tr/persons/%C5%9F%C3%BCkr%C3%BCye-iyinam/supervised-student-theses/
 - Istanbul Technical University | 2024–2024 (1) | known not-a-list | https://research.itu.edu.tr/tr/persons/%C5%9Firin-karadeniz/supervised-student-theses/
 - Istanbul Technical University | 2024–2024 (1) | known not-a-list | https://research.itu.edu.tr/tr/persons/abdullah-aydo%C4%9Fan/supervised-student-theses/
 - Istanbul Technical University | 2024–2024 (1) | known not-a-list | https://research.itu.edu.tr/tr/persons/ahmet-levent-suba%C5%9F%C4%B1/supervised-student-theses/
 - Istanbul Technical University | 2024–2024 (1) | known not-a-list | https://research.itu.edu.tr/tr/persons/ali-can-takinac%C4%B1/supervised-student-theses/
 - Istanbul Technical University | 2024–2024 (1) | known not-a-list | https://research.itu.edu.tr/tr/persons/alper-tolga-%C3%A7al%C4%B1k/supervised-student-theses/
 - Istanbul Technical University | 2024–2024 (1) | known not-a-list | https://research.itu.edu.tr/tr/persons/altays/supervised-student-theses/
+- Istanbul Technical University | 2025–2025 (1) | known not-a-list | https://research.itu.edu.tr/tr/persons/atilla-co%C5%9Fkun-toksoy/supervised-student-theses/
 - Istanbul Technical University | 2024–2024 (1) | known not-a-list | https://research.itu.edu.tr/tr/persons/atilla-damc%C4%B1/supervised-student-theses/
 - Istanbul Technical University | 2024–2024 (1) | known not-a-list | https://research.itu.edu.tr/tr/persons/ay%C5%9Fe-g%C3%BCl-tan%C4%B1k/supervised-student-theses/
 - Istanbul Technical University | 2024–2024 (1) | known not-a-list | https://research.itu.edu.tr/tr/persons/ayta%C3%A7-ar%C4%B1ko%C4%9Flu/supervised-student-theses/
 - Istanbul Technical University | 2024–2024 (2) | known not-a-list | https://research.itu.edu.tr/tr/persons/ayten-karata%C5%9F/supervised-student-theses/
+- Istanbul Technical University | 2025–2025 (1) | known not-a-list | https://research.itu.edu.tr/tr/persons/baskakm/supervised-student-theses/?relations=studentthesis&page=2
+- Istanbul Technical University | 2025–2025 (1) | known not-a-list | https://research.itu.edu.tr/tr/persons/bayraktard/supervised-student-theses/
 - Istanbul Technical University | 2024–2024 (1) | known not-a-list | https://research.itu.edu.tr/tr/persons/becerik/supervised-student-theses/
 - Istanbul Technical University | 2024–2024 (2) | known not-a-list | https://research.itu.edu.tr/tr/persons/beyza-ta%C5%9Fk%C4%B1n/supervised-student-theses/
 - Istanbul Technical University | 2024–2024 (1) | known not-a-list | https://research.itu.edu.tr/tr/persons/birg%C3%BCl-benli/supervised-student-theses/
 - Istanbul Technical University | 2024–2024 (1) | known not-a-list | https://research.itu.edu.tr/tr/persons/burak-barut%C3%A7u/supervised-student-theses/
 - Istanbul Technical University | 2024–2024 (1) | known not-a-list | https://research.itu.edu.tr/tr/persons/bustundag/supervised-student-theses/
+- Istanbul Technical University | 2025–2025 (1) | known not-a-list | https://research.itu.edu.tr/tr/persons/buzluca/supervised-student-theses/
 - Istanbul Technical University | 2024–2024 (1) | known not-a-list | https://research.itu.edu.tr/tr/persons/calppay/supervised-student-theses/
 - Istanbul Technical University | 2024–2024 (1) | known not-a-list | https://research.itu.edu.tr/tr/persons/can-karado%C4%9Fan/supervised-student-theses/
 - Istanbul Technical University | 2024–2024 (1) | known not-a-list | https://research.itu.edu.tr/tr/persons/cihan-bay%C4%B1nd%C4%B1r/supervised-student-theses/
 - Istanbul Technical University | 2024–2024 (1) | known not-a-list | https://research.itu.edu.tr/tr/persons/ckahya/supervised-student-theses/
 - Istanbul Technical University | 2024–2024 (1) | known not-a-list | https://research.itu.edu.tr/tr/persons/demirhand/supervised-student-theses/
 - Istanbul Technical University | 2024–2024 (1) | known not-a-list | https://research.itu.edu.tr/tr/persons/devrim-b%C3%BClent-dan%C4%B1%C5%9Fman/supervised-student-theses/
-- Istanbul Technical University | 2024–2024 (2) | known not-a-list | https://research.itu.edu.tr/tr/persons/ergin/supervised-student-theses/
+- Istanbul Technical University | 2024–2025 (3) | known not-a-list | https://research.itu.edu.tr/tr/persons/ergin/supervised-student-theses/
 - Istanbul Technical University | 2024–2024 (1) | known not-a-list | https://research.itu.edu.tr/tr/persons/ersin.sayar/supervised-student-theses/
 - Istanbul Technical University | 2024–2024 (2) | known not-a-list | https://research.itu.edu.tr/tr/persons/ertemelav/supervised-student-theses/
 - Istanbul Technical University | 2024–2024 (1) | known not-a-list | https://research.itu.edu.tr/tr/persons/fatih-s%C3%BCtc%C3%BC/supervised-student-theses/
 - Istanbul Technical University | 2024–2024 (1) | known not-a-list | https://research.itu.edu.tr/tr/persons/fatma-kalao%C4%9Flu/supervised-student-theses/
-- Istanbul Technical University | 2024–2024 (2) | known not-a-list | https://research.itu.edu.tr/tr/persons/ferhan-%C3%A7ebi/supervised-student-theses/
+- Istanbul Technical University | 2024–2025 (4) | known not-a-list | https://research.itu.edu.tr/tr/persons/ferhan-%C3%A7ebi/supervised-student-theses/
 - Istanbul Technical University | 2024–2024 (1) | known not-a-list | https://research.itu.edu.tr/tr/persons/g%C3%BCl%C3%A7in-mihriye-muslu/supervised-student-theses/
 - Istanbul Technical University | 2024–2024 (1) | known not-a-list | https://research.itu.edu.tr/tr/persons/g%C3%BCler-arsan/supervised-student-theses/
 - Istanbul Technical University | 2024–2024 (1) | known not-a-list | https://research.itu.edu.tr/tr/persons/g%C3%BCrkan-emre-g%C3%BCrcanl%C4%B1/supervised-student-theses/
 - Istanbul Technical University | 2024–2024 (1) | known not-a-list | https://research.itu.edu.tr/tr/persons/g%C3%BCrkan-h%C4%B1zal/supervised-student-theses/
 - Istanbul Technical University | 2024–2024 (1) | known not-a-list | https://research.itu.edu.tr/tr/persons/gedikliab/supervised-student-theses/
 - Istanbul Technical University | 2024–2024 (1) | known not-a-list | https://research.itu.edu.tr/tr/persons/h%C3%BClya-cebeci/supervised-student-theses/
+- Istanbul Technical University | 2025–2025 (1) | known not-a-list | https://research.itu.edu.tr/tr/persons/h%C3%BClya-ku%C5%9F/supervised-student-theses/
 - Istanbul Technical University | 2024–2024 (1) | known not-a-list | https://research.itu.edu.tr/tr/persons/h%C3%BCseyin-k%C4%B1z%C4%B1l/supervised-student-theses/
 - Istanbul Technical University | 2024–2024 (1) | known not-a-list | https://research.itu.edu.tr/tr/persons/hac%C4%B1-ali-mantar/supervised-student-theses/
 - Istanbul Technical University | 2024–2024 (1) | known not-a-list | https://research.itu.edu.tr/tr/persons/hakan-tun%C3%A7demir/supervised-student-theses/
 - Istanbul Technical University | 2024–2024 (2) | known not-a-list | https://research.itu.edu.tr/tr/persons/hasan-g%C3%BCne%C5%9F/supervised-student-theses/
 - Istanbul Technical University | 2024–2024 (1) | known not-a-list | https://research.itu.edu.tr/tr/persons/hasan-y%C4%B1ld%C4%B1r%C4%B1m/supervised-student-theses/
-- Istanbul Technical University | 2024–2024 (1) | known not-a-list | https://research.itu.edu.tr/tr/persons/hatice-k%C3%B6se/supervised-student-theses/
+- Istanbul Technical University | 2024–2025 (2) | known not-a-list | https://research.itu.edu.tr/tr/persons/hatice-k%C3%B6se/supervised-student-theses/
 - Istanbul Technical University | 2024–2024 (1) | known not-a-list | https://research.itu.edu.tr/tr/persons/ibrahim-metin-m%C4%B1h%C3%A7akan/supervised-student-theses/
 - Istanbul Technical University | 2024–2024 (1) | known not-a-list | https://research.itu.edu.tr/tr/persons/ibrahim-volkan-kumbarac%C4%B1/supervised-student-theses/
 - Istanbul Technical University | 2024–2024 (1) | known not-a-list | https://research.itu.edu.tr/tr/persons/ilkay-bak%C4%B1rta%C5%9F-akar/supervised-student-theses/
@@ -1438,7 +1511,7 @@ One line per address: institution | years captured | known page? | address. Acce
 - Istanbul Technical University | 2024–2024 (2) | known not-a-list | https://research.itu.edu.tr/tr/persons/iyisan/supervised-student-theses/
 - Istanbul Technical University | 2024–2024 (1) | known not-a-list | https://research.itu.edu.tr/tr/persons/kaan-y%C4%B1ld%C4%B1z/supervised-student-theses/
 - Istanbul Technical University | 2024–2024 (1) | known not-a-list | https://research.itu.edu.tr/tr/persons/kadir-g%C3%BCler/supervised-student-theses/
-- Istanbul Technical University | 2024–2024 (1) | known not-a-list | https://research.itu.edu.tr/tr/persons/kartalme/supervised-student-theses/
+- Istanbul Technical University | 2024–2025 (2) | known not-a-list | https://research.itu.edu.tr/tr/persons/kartalme/supervised-student-theses/
 - Istanbul Technical University | 2024–2024 (1) | known not-a-list | https://research.itu.edu.tr/tr/persons/keskinoz/supervised-student-theses/
 - Istanbul Technical University | 2024–2024 (1) | known not-a-list | https://research.itu.edu.tr/tr/persons/kocaarslani/supervised-student-theses/
 - Istanbul Technical University | 2024–2024 (1) | known not-a-list | https://research.itu.edu.tr/tr/persons/korkutem/supervised-student-theses/
@@ -1465,35 +1538,40 @@ One line per address: institution | years captured | known page? | address. Acce
 - Istanbul Technical University | 2024–2024 (1) | known not-a-list | https://research.itu.edu.tr/tr/persons/sema-ala%C3%A7am/supervised-student-theses/
 - Istanbul Technical University | 2024–2024 (1) | known not-a-list | https://research.itu.edu.tr/tr/persons/senem-bilir-mah%C3%A7i%C3%A7ek/supervised-student-theses/
 - Istanbul Technical University | 2024–2024 (1) | known not-a-list | https://research.itu.edu.tr/tr/persons/ufukyazgan/supervised-student-theses/
+- Istanbul Technical University | 2025–2025 (1) | known not-a-list | https://research.itu.edu.tr/tr/persons/yal%C3%A7%C4%B1n-%C3%A7etinkaya/supervised-student-theses/
 - Istanbul Technical University | 2024–2024 (1) | known not-a-list | https://research.itu.edu.tr/tr/persons/yal%C3%A7%C4%B1n-durmu%C5%9Fo%C4%9Flu/supervised-student-theses/
 - Istanbul Technical University | 2024–2024 (1) | known not-a-list | https://research.itu.edu.tr/tr/persons/yanalak/supervised-student-theses/
 - Istanbul Technical University | 2024–2024 (1) | known not-a-list | https://research.itu.edu.tr/tr/persons/ye%C5%9Fim-beceren/supervised-student-theses/
 - Istanbul Technical University | 2024–2024 (1) | known not-a-list | https://research.itu.edu.tr/tr/persons/z%C3%BCmray-%C3%B6lmez/supervised-student-theses/
 - Istanbul Technical University | 2024–2024 (1) | known not-a-list | https://research.itu.edu.tr/tr/persons/zerrin-%C5%9Fent%C3%BCrk/supervised-student-theses/
+- Istanbul Technical University | 2025–2025 (1) | known not-a-list | https://research.itu.edu.tr/tr/persons/zorlu/supervised-student-theses/
+- Istanbul University | 2025–2025 (1) | new | https://avesis.istanbul.edu.tr/yayin/6efb7b89-2162-498e-b22e-d0df1a5a67bd/understanding-the-gap-between-university-revenue-management-courses-and-the-job-market
 - J.C. Bose University of Science and Technology | 2018–2018 (1) | known not-a-list | http://ymcaust.ac.in/index.php/current-news/701-final-list-of-candidates-for-entrance-of-ph-d-even-sem-2017
-- Johns Hopkins University | 2021–2023 (2) | known program-list | https://engineering.jhu.edu/ams/academics/graduate-studies/doctoral-program/dissertations/
+- Johns Hopkins University | 2021–2025 (3) | known program-list | https://engineering.jhu.edu/ams/academics/graduate-studies/doctoral-program/dissertations/
 - Johns Hopkins University | 2021–2022 (2) | known not-a-list | https://engineering.jhu.edu/case/alumni/where-are-they-now/
 - KTH Royal Institute of Technology | 2019–2019 (1) | known not-a-list | https://www.aphys.kth.se/se/previous-dissertatio/dissertations-1.33870
 - KTH Royal Institute of Technology | 2013–2013 (1) | known not-a-list | http://www.brinell.kth.se/Dissertations.htm
-- KTH Royal Institute of Technology | 2024–2024 (1) | new | https://www.csc.kth.se/forskning/cb/cbp/theses.php
+- KTH Royal Institute of Technology | 2024–2024 (1) | known not-a-list | https://www.csc.kth.se/forskning/cb/cbp/theses.php
 - KTH Royal Institute of Technology | 2017–2017 (1) | known not-a-list | http://www.csc.kth.se/tcs/dissertations/
 - KTH Royal Institute of Technology | 2013–2013 (2) | known not-a-list | http://www.designfakulteten.kth.se/doktorander/alumni
 - KTH Royal Institute of Technology | 2018–2018 (1) | known not-a-list | https://www.eco2vehicledesign.kth.se/docs/dissertations-1.302089
-- KTH Royal Institute of Technology | 2024–2024 (1) | new | https://www.homtech.aphys.kth.se/doctoral-candidates/doctoral-candidate-divya-ann-shaji-1.1253295
-- KTH Royal Institute of Technology | 2024–2024 (1) | new | https://www.homtech.aphys.kth.se/doctoral-candidates/doctoral-candidate-i-aki-beraza-1.1275261
-- KTH Royal Institute of Technology | 2024–2024 (1) | new | https://www.homtech.aphys.kth.se/doctoral-candidates/doctoral-candidate-kaifa-xin-1.1253301
-- KTH Royal Institute of Technology | 2024–2024 (1) | new | https://www.homtech.aphys.kth.se/doctoral-candidates/doctoral-candidate-loreto-valentina-romero-ponce-1.1314303
-- KTH Royal Institute of Technology | 2024–2024 (1) | new | https://www.homtech.aphys.kth.se/doctoral-candidates/doctoral-candidate-manish-raj-1.1253147
-- KTH Royal Institute of Technology | 2020–2024 (9) | known not-a-list | https://intra.kth.se/en/aktuellt/kalender/dissertation-cosmic-clues-from-astrophysical-particles-1.990311?date=2020-06-12&orgdate=2020-04-10&length=1&orglength=266
+- KTH Royal Institute of Technology | 2024–2024 (1) | known not-a-list | https://www.homtech.aphys.kth.se/doctoral-candidates/doctoral-candidate-divya-ann-shaji-1.1253295
+- KTH Royal Institute of Technology | 2024–2024 (1) | known not-a-list | https://www.homtech.aphys.kth.se/doctoral-candidates/doctoral-candidate-i-aki-beraza-1.1275261
+- KTH Royal Institute of Technology | 2024–2024 (1) | known not-a-list | https://www.homtech.aphys.kth.se/doctoral-candidates/doctoral-candidate-kaifa-xin-1.1253301
+- KTH Royal Institute of Technology | 2024–2024 (1) | known not-a-list | https://www.homtech.aphys.kth.se/doctoral-candidates/doctoral-candidate-loreto-valentina-romero-ponce-1.1314303
+- KTH Royal Institute of Technology | 2024–2024 (1) | known not-a-list | https://www.homtech.aphys.kth.se/doctoral-candidates/doctoral-candidate-manish-raj-1.1253147
+- KTH Royal Institute of Technology | 2020–2025 (12) | known not-a-list | https://intra.kth.se/en/aktuellt/kalender/dissertation-cosmic-clues-from-astrophysical-particles-1.990311?date=2020-06-12&orgdate=2020-04-10&length=1&orglength=266
 - KTH Royal Institute of Technology | 2023–2023 (1) | known not-a-list | https://www.kth.se/blogs/studentblog/2023/05/the-swedish-job-market-playground/
 - KTH Royal Institute of Technology | 2018–2018 (1) | known not-a-list | https://www.kth.se/en/aktuellt/nyheter/kth-degrees-rank-high-on-job-market-1.752946
 - KTH Royal Institute of Technology | 2017–2019 (3) | known not-a-list | https://www.kth.se/en/aktuellt/nyheter/kth-to-help-new-arrivals-get-foot-in-it-job-market-1.655940
 - KTH Royal Institute of Technology | 2022–2024 (2) | known not-a-list | https://www.kth.se/en/om/nyheter/centrala-nyheter/kth-to-help-new-arrivals-get-foot-in-it-job-market-1.655940
+- KTH Royal Institute of Technology | 2025–2025 (1) | new | https://www.kth.se/en/om/upptack/kalender/disputationer/enumerative-and-matroidal-aspects-of-rook-placements-1.1405603
 - KTH Royal Institute of Technology | 2023–2023 (1) | known not-a-list | https://www.kth.se/en/student/stod/jobb-och-framtid/karriar/kalender/karriarseminarier/the-swedish-job-market-1.1232824
 - KTH Royal Institute of Technology | 2023–2023 (4) | known not-a-list | https://www.kth.se/om/mot/kalender/ovrigt/dissertation-cosmic-clues-from-astrophysical-particles-1.990311?date=2020-06-12&orgdate=2020-02-05&length=1&orglength=331
-- KTH Royal Institute of Technology | 2024–2024 (3) | new | https://www.kth.se/om/upptack/kalender/ovrigt/dissertation-cosmic-clues-from-astrophysical-particles-1.990311?date=2020-06-12&orgdate=2020-01-22&length=1&orglength=345
-- KTH Royal Institute of Technology | 2024–2024 (1) | new | https://www.kth.se/pro/affinity-proteomics/dissertations-1.1333337
+- KTH Royal Institute of Technology | 2024–2024 (3) | known not-a-list | https://www.kth.se/om/upptack/kalender/ovrigt/dissertation-cosmic-clues-from-astrophysical-particles-1.990311?date=2020-06-12&orgdate=2020-01-22&length=1&orglength=345
+- KTH Royal Institute of Technology | 2024–2025 (2) | known not-a-list | https://www.kth.se/pro/affinity-proteomics/dissertations-1.1333337
 - KTH Royal Institute of Technology | 2023–2023 (1) | known not-a-list | https://www.kth.se/student/stod/jobb-och-framtid/karriar/kalender/karriarseminarier/the-swedish-job-market-1.1232824
+- KTH Royal Institute of Technology | 2025–2025 (1) | new | https://www.particle.kth.se/theses-1.1345787
 - Karlsruhe Institute of Technology | 2013–2022 (40) | known not-a-list | http://algo2.iti.kit.edu/theses.php
 - Karlsruhe Institute of Technology | 2015–2019 (4) | known not-a-list | https://crypto.iti.kit.edu/index.php?id=theses
 - Karlsruhe Institute of Technology | 2015–2019 (4) | known not-a-list | https://crypto.iti.kit.edu/index.php?id=theses&L=2
@@ -1517,18 +1595,21 @@ One line per address: institution | years captured | known page? | address. Acce
 - Kent State University | 2021–2022 (2) | known program-list | https://www.kent.edu/business/job-market-candidates-2019-2020-0
 - Kent State University | 2021–2021 (1) | known not-a-list | https://www.kent.edu/business/placement
 - Kent State University | 2013–2013 (2) | known not-a-list | http://www.kent.edu/cacm/camtrack/faculty-thesis-dissertation-list.cfm
-- Kent State University | 2020–2023 (3) | known not-a-list | https://www.kent.edu/cas/esl-center/online-placement-tool
+- Kent State University | 2020–2025 (4) | known not-a-list | https://www.kent.edu/cas/esl-center/online-placement-tool
+- Kent State University | 2025–2025 (1) | new | https://www.kent.edu/cas/placement-and-testing
 - Kent State University | 2021–2021 (1) | known not-a-list | https://www.kent.edu/cde/learning-placements
 - Kent State University | 2020–2023 (3) | known not-a-list | https://www.kent.edu/credittransfer/advanced-placement
-- Kent State University | 2020–2022 (2) | known not-a-list | https://www.kent.edu/ehhs/fla/cult/recent-dissertations-cultural-foundations
+- Kent State University | 2020–2025 (3) | known not-a-list | https://www.kent.edu/ehhs/fla/cult/recent-dissertations-cultural-foundations
 - Kent State University | 2021–2021 (1) | known not-a-list | https://www.kent.edu/ehhs/fla/hied/dissertation
 - Kent State University | 2016–2023 (5) | known not-a-list | http://www.kent.edu/ehhs/hs/spa/phd-alumni
 - Kent State University | 2013–2013 (3) | known not-a-list | http://www.kent.edu/ehhs/oaa/dissertations/index.cfm
 - Kent State University | 2018–2018 (1) | known not-a-list | https://www.kent.edu/ehhs/offices/oaa/dissertations
 - Kent State University | 2018–2018 (1) | known not-a-list | https://www.kent.edu/ehhs/offices/oaa/electronic-theses-dissertations
 - Kent State University | 2022–2022 (1) | known not-a-list | https://www.kent.edu/ehhs/ogs/dissertations
+- Kent State University | 2025–2025 (1) | new | https://www.kent.edu/ehhs/voss/application-and-student-teaching-placement
 - Kent State University | 2018–2021 (2) | known not-a-list | https://www.kent.edu/ehhs/voss/how-does-one-apply-field-experience-placements
 - Kent State University | 2018–2021 (2) | known not-a-list | https://www.kent.edu/ehhs/voss/when-will-placements-be-confirmed
+- Kent State University | 2025–2025 (1) | new | https://www.kent.edu/graduatecollege/dissertation-resource-center
 - Kent State University | 2023–2023 (1) | known not-a-list | https://www.kent.edu/graduatecollege/thesis-and-dissertation
 - Kent State University | 2013–2013 (10) | known not-a-list | http://www.kent.edu/graduatestudies/current-students/dissertations-and-theses.cfm
 - Kent State University | 2018–2021 (4) | known not-a-list | https://www.kent.edu/graduatestudies/dissertation-boot-camp
@@ -1551,12 +1632,14 @@ One line per address: institution | years captured | known page? | address. Acce
 - Kent State University | 2021–2022 (2) | known not-a-list | https://www.kent.edu/polisci/graduate-student-placements
 - Kent State University | 2013–2013 (1) | known not-a-list | http://www.kent.edu/polisci/graduate/previous-doctoral-dissertations.cfm
 - Kent State University | 2019–2022 (3) | known not-a-list | https://www.kent.edu/polisci/successful-doctoral-dissertations
-- Kent State University | 2019–2023 (4) | known not-a-list | https://www.kent.edu/spcs/spcs-faculty-thesis-dissertation-list
+- Kent State University | 2019–2025 (5) | known not-a-list | https://www.kent.edu/spcs/spcs-faculty-thesis-dissertation-list
 - Kent State University | 2021–2021 (1) | known not-a-list | https://www.kent.edu/stark/first-step-placement-assessment-instructions
+- Kent State University | 2025–2025 (1) | new | https://www.kent.edu/studentaffairs/flashbooks/dissertation-prep-seminar-hied-80080-spr
 - Kent State University | 2014–2015 (2) | known not-a-list | http://www.kent.edu/success/placement
 - Kent State University | 2021–2021 (1) | known not-a-list | https://www.kent.edu/success/placement-assessment-2
-- Kent State University | 2018–2021 (3) | known not-a-list | https://www.kent.edu/success/placement-assessment-spring
+- Kent State University | 2018–2025 (4) | known not-a-list | https://www.kent.edu/success/placement-assessment-spring
 - Kent State University | 2013–2013 (9) | known not-a-list | http://www.kent.edu/transfercenter/advanced-placement.cfm
+- Kent State University | 2025–2025 (1) | new | https://www.kent.edu/university-advising/taking-aleks-placement-reassessment-respondus-lockdown-browser-monitor-how-it
 - Kent State University | 2014–2015 (19) | known program-list | http://www2.kent.edu/business/Alumni/phd.cfm
 - Kent State University | 2015–2015 (5) | known not-a-list | http://www2.kent.edu/comm/comm-programs/graduate/theses.cfm
 - Kent State University | 2015–2015 (1) | known not-a-list | http://www2.kent.edu/ehhs/oaa/dissertations/index.cfm?mobile=yes
@@ -1578,15 +1661,16 @@ One line per address: institution | years captured | known page? | address. Acce
 - Kühne Logistics University | 2023–2023 (2) | known program-list | https://www.klu.org/faculty-research/faculty/phd-graduates
 - Lancaster University | 2017–2018 (2) | known not-a-list | http://www.lancaster.ac.uk/business/graduate-and-student-placements/
 - Lancaster University | 2020–2020 (1) | known not-a-list | https://www.lancaster.ac.uk/digital-ambassadors/my-placement/
-- Lancaster University | 2023–2023 (1) | known not-a-list | https://www.lancaster.ac.uk/digital-ambassadors/what-is-a-placement-year/
+- Lancaster University | 2023–2025 (2) | known not-a-list | https://www.lancaster.ac.uk/digital-ambassadors/what-is-a-placement-year/
 - Lancaster University | 2019–2019 (1) | known not-a-list | https://www.lancaster.ac.uk/dsi/business/placement-hosts/
 - Lancaster University | 2023–2023 (1) | known not-a-list | https://www.lancaster.ac.uk/dsi/business/student-placements/
 - Lancaster University | 2017–2017 (1) | known not-a-list | http://www.lancaster.ac.uk/educational-research/phd/postgraduate-theses/
 - Lancaster University | 2023–2023 (1) | known not-a-list | https://www.lancaster.ac.uk/educational-research/study/phd/phd-in-e-research-and-technology-enhanced-learning/phd-theses/
-- Lancaster University | 2024–2024 (1) | new | https://www.lancaster.ac.uk/educational-research/study/phd/what-our-phd-graduates-say/
+- Lancaster University | 2024–2024 (1) | known not-a-list | https://www.lancaster.ac.uk/educational-research/study/phd/what-our-phd-graduates-say/
 - Lancaster University | 2019–2019 (1) | known not-a-list | https://www.lancaster.ac.uk/fass-placements/course-specific-modules/
 - Lancaster University | 2013–2015 (4) | known not-a-list | http://www.lancaster.ac.uk/fass/ppr/postgraduate/phd/religstud/theses.htm
 - Lancaster University | 2017–2017 (1) | known not-a-list | http://www.lancaster.ac.uk/lec/graduate-school/phd/alumni/ | 7 pages below it
+- Lancaster University | 2025–2025 (2) | new | https://www.lancaster.ac.uk/lums/blogs/2025-summer-from-dissertation-to-real-world-impact
 - Lancaster University | 2023–2024 (2) | known program-list | https://www.lancaster.ac.uk/lums/phd/phd-job-market-candidates/
 - Lancaster University | 2019–2019 (1) | known program-list | https://www.lancaster.ac.uk/lums/postgraduate/phd-job-market-candidates/
 - Lancaster University | 2017–2017 (1) | known program-list | http://www.lancaster.ac.uk/lums/study/phd/job-market-candidates/
@@ -1599,11 +1683,13 @@ One line per address: institution | years captured | known page? | address. Acce
 - Lancaster University | 2013–2014 (5) | known not-a-list | http://www.lancaster.ac.uk/shm/study/doctoral_study/dclinpsy/new/Trainees/Placements/
 - Lancaster University | 2015–2017 (5) | known not-a-list | http://www.lancaster.ac.uk/shm/study/doctoral_study/dclinpsy/public_involvement/placements/
 - Lancaster University | 2015–2016 (3) | known not-a-list | http://www.lancaster.ac.uk/shm/study/doctoral_study/dclinpsy/trainees/placements/
+- Lancaster University | 2025–2025 (1) | known program-list | https://www.lancaster.ac.uk/stor-i/about-us/stor-i-alumni/
 - Lancaster University | 2013–2013 (2) | known not-a-list | http://www.lancaster.ac.uk/study/postgraduate/postgraduate-courses/environment-and-development-overseas-placement-mres/
 - Liverpool John Moores University | 2017–2017 (1) | known not-a-list | https://excasowa.ljmu.ac.uk/owa/auth/logon.aspx?url=http://excasowa.ljmu.ac.uk/owa/redir.aspx%3FC=50URTSy0JOigHwxflHI6sjU8zzSUQDfycFpCjll6tDP4OAXsHEbUCA..%26URL=https%253A%252F%252Fwww.facebook.com%252Fads%252Fmanager%252Fcreation%252Fcreation%252F%253Fact%253D126372814172395%2526url%253Dhttps%25253A%25252F%25252Fwww.facebook.com%25252Fads%25252Fcreate%25252F%2526campaign_id%253D163681540489385%2526placement%253D%25252Fbusiness%25252Fproducts%25252Fads%2526creative%253Dcta_button&reason=0
-- London Business School | 2024–2024 (1) | new | https://lbsresearch.london.edu/view/theses/archive.html
+- London Business School | 2024–2024 (1) | known program-list | https://lbsresearch.london.edu/view/theses/archive.html
 - London Business School | 2018–2019 (3) | known program-list | https://www.london.edu/faculty-and-research/subject-areas/management-science-and-operations/phd-programme/recent-mso-phd-graduates
 - London School of Economics | 2019–2019 (1) | known not-a-list | https://blogs.lse.ac.uk/theforum/marx-theses-on-feuerbach/
+- London School of Economics | 2025–2025 (1) | new | https://cep.lse.ac.uk/_new/about/job-market/ | 1 pages below it
 - London School of Economics | 2013–2014 (8) | known not-a-list | http://www.lse.ac.uk/alumni/LSEConnect/Home.aspx
 - London School of Economics | 2016–2016 (1) | known not-a-list | http://www.lse.ac.uk/DPBS/news_and_events/2012/graduation-Summer-2012/PhD-graduates-2012.aspx
 - London School of Economics | 2013–2013 (3) | known not-a-list | http://www.lse.ac.uk/economicHistory/Alumni/Alumni.aspx
@@ -1612,7 +1698,7 @@ One line per address: institution | years captured | known page? | address. Acce
 - London School of Economics | 2017–2017 (1) | known not-a-list | http://www.lse.ac.uk/government/website-archive/JobMarketCandidates/Candidates.aspx
 - London School of Economics | 2017–2024 (3) | known not-a-list | http://www.lse.ac.uk/international-development/study/dissertations
 - London School of Economics | 2020–2020 (1) | known not-a-list | https://www.lse.ac.uk/international-development/study/previous-phd-placements
-- London School of Economics | 2019–2023 (3) | known not-a-list | http://www.lse.ac.uk/international-relations/phd-job-market | 7 pages below it
+- London School of Economics | 2019–2025 (4) | known not-a-list | http://www.lse.ac.uk/international-relations/phd-job-market | 7 pages below it
 - London School of Economics | 2022–2022 (1) | known not-a-list | https://www.lse.ac.uk/management/study/PhD/Placement-Page
 - London School of Economics | 2023–2023 (2) | known not-a-list | https://www.lse.ac.uk/seac/Support-for-Students/Postgraduate-Dissertation-Prize
 - London School of Economics | 2017–2017 (1) | known not-a-list | http://www.lse.ac.uk/social-policy/student-hub/The-Dissertation
@@ -1621,19 +1707,21 @@ One line per address: institution | years captured | known page? | address. Acce
 - London School of Economics | 2023–2023 (1) | known not-a-list | https://www2.lse.ac.uk/international-relations/phd-job-market
 - London School of Economics | 2023–2023 (1) | known not-a-list | https://www2.lse.ac.uk/management/study/PhD/Placement-Page
 - Loughborough University | 2023–2023 (1) | known not-a-list | https://blog.lboro.ac.uk/students/placements/placement-work-or-life-or-both/
+- Loughborough University | 2025–2025 (1) | new | https://www.lboro.ac.uk/services/student-services/topics/academic-changes-intl-add-or-drop-placement-year/
 - Loughborough University | 2023–2023 (1) | known not-a-list | https://www.lboro.ac.uk/services/student-services/topics/ug-add-or-remove-placement-or-study-abroad-ug/
 - Loughborough University | 2022–2022 (1) | known not-a-list | https://repository.lboro.ac.uk/Aeronautical_and_Automotive_Engineering_Theses_
-- Loughborough University | 2024–2024 (1) | new | https://repository.lboro.ac.uk/Business_School_Theses
+- Loughborough University | 2024–2024 (1) | known not-a-list | https://repository.lboro.ac.uk/Business_School_Theses
 - Loughborough University | 2019–2022 (2) | known program-list | https://repository.lboro.ac.uk/Business_Theses
-- Loughborough University | 2024–2024 (1) | new | https://repository.lboro.ac.uk/Loughborough_University_London_Theses
-- Louisiana State University | 2023–2023 (3) | known not-a-list | https://repository.lsu.edu/gradschool_dissertations/ | 4 pages below it
+- Loughborough University | 2024–2024 (1) | known not-a-list | https://repository.lboro.ac.uk/Loughborough_University_London_Theses
+- Louisiana State University | 2023–2025 (4) | known not-a-list | https://repository.lsu.edu/gradschool_dissertations/ | 4 pages below it
 - Luxembourg Centre for Logistics and Supply Chain Management | 2021–2021 (1) | known not-a-list | https://www.c2dh.uni.lu/report/2020/research-report/phd-theses
-- Luxembourg Centre for Logistics and Supply Chain Management | 2024–2024 (1) | new | https://www.c2dh.uni.lu/report/2022/research-report/phd-theses
-- Luxembourg Centre for Logistics and Supply Chain Management | 2021–2024 (2) | known not-a-list | https://cls.uni.lu/doctoral-candidates/ | 6 pages below it
+- Luxembourg Centre for Logistics and Supply Chain Management | 2025–2025 (1) | new | https://www.c2dh.uni.lu/report/2023/research-report/phd-theses
+- Luxembourg Centre for Logistics and Supply Chain Management | 2021–2024 (2) | known not-a-list | https://cls.uni.lu/doctoral-candidates/ | 12 pages below it
 - Luxembourg Centre for Logistics and Supply Chain Management | 2019–2022 (2) | known not-a-list | https://dhh.uni.lu/team/phd-candidates/
 - Luxembourg Centre for Logistics and Supply Chain Management | 2017–2018 (2) | known not-a-list | http://mis.uni.lu/en/dissertations/
 - Luxembourg Centre for Logistics and Supply Chain Management | 2022–2024 (2) | known not-a-list | https://partizip.uni.lu/phd-theses/
 - Luxembourg Centre for Logistics and Supply Chain Management | 2017–2022 (6) | known not-a-list | https://secan-lab.uni.lu/teaching/student-theses
+- Luxembourg Centre for Logistics and Supply Chain Management | 2025–2025 (1) | new | https://www.uni.lu/research-de/doktorandenausbildung/organisation-des-doktorandenstudiums/dissertation-und-verteidigung/
 - Luxembourg Centre for Logistics and Supply Chain Management | 2013–2013 (1) | known not-a-list | http://wiki.uni.lu/mine/Open+Theses.html
 - Luxembourg Centre for Logistics and Supply Chain Management | 2022–2022 (1) | known not-a-list | https://wwwde.uni.lu/fhse/doctoral_school/what_do_our_phd_candidates_say
 - Luxembourg Centre for Logistics and Supply Chain Management | 2019–2019 (1) | known not-a-list | https://wwwde.uni.lu/flshase/doctoral_school/what_do_our_phd_candidates_say
@@ -1663,10 +1751,10 @@ One line per address: institution | years captured | known page? | address. Acce
 - Massachusetts Institute of Technology | 2022–2022 (1) | known not-a-list | https://direct.mit.edu/books/book/4644/chapter-abstract/212732/Ten-Theses-on-Digital-Capitalism?redirectedFrom=fulltext
 - Massachusetts Institute of Technology | 2022–2022 (1) | known not-a-list | https://direct.mit.edu/dram/article-abstract/48/1%20(181)/124/42475/Ten-Theses-on-Monsters-and-Monstrosity?redirectedFrom=fulltext
 - Massachusetts Institute of Technology | 2022–2022 (1) | known not-a-list | https://direct.mit.edu/edfp/article-abstract/2/1/100/10050/PhD-Attainment-of-Graduates-of-Selective-Private?redirectedFrom=fulltext
-- Massachusetts Institute of Technology | 2024–2024 (1) | new | https://direct.mit.edu/edfp/article-abstract/4/3/263/10101/Should-a-High-School-Adopt-Advanced-Placement-or-a?redirectedFrom=fulltext
-- Massachusetts Institute of Technology | 2024–2024 (1) | new | https://direct.mit.edu/institutional-login?returnUrl=https%3A%2F%2Fdirect.mit.edu%2Fdram%2Farticle-abstract%2F48%2F1%2520(181)%2F124%2F42475%2FTen-Theses-on-Monsters-and-Monstrosity%3FredirectedFrom%3DPDF
-- Massachusetts Institute of Technology | 2024–2024 (2) | new | https://direct.mit.edu/my-account/register?siteId=1000075&returnUrl=%2Fpajj%2Farticle-abstract%2F35%2F1%2520(103)%2F43%2F55479%2FResearch-or-Craft-Nine-Theses-on-Educating-Future%3FredirectedFrom%3Dfulltext
-- Massachusetts Institute of Technology | 2024–2024 (2) | new | https://direct.mit.edu/thld/article-abstract/doi/10.1162/thld_a_00689/56796/Atlas-Unshrugged-Fifteen-Theses-on-the-Open?redirectedFrom=fulltext
+- Massachusetts Institute of Technology | 2024–2024 (1) | known not-a-list | https://direct.mit.edu/edfp/article-abstract/4/3/263/10101/Should-a-High-School-Adopt-Advanced-Placement-or-a?redirectedFrom=fulltext
+- Massachusetts Institute of Technology | 2024–2024 (1) | known not-a-list | https://direct.mit.edu/institutional-login?returnUrl=https%3A%2F%2Fdirect.mit.edu%2Fdram%2Farticle-abstract%2F48%2F1%2520(181)%2F124%2F42475%2FTen-Theses-on-Monsters-and-Monstrosity%3FredirectedFrom%3DPDF
+- Massachusetts Institute of Technology | 2024–2024 (2) | known not-a-list | https://direct.mit.edu/my-account/register?siteId=1000075&returnUrl=%2Fpajj%2Farticle-abstract%2F35%2F1%2520(103)%2F43%2F55479%2FResearch-or-Craft-Nine-Theses-on-Educating-Future%3FredirectedFrom%3Dfulltext
+- Massachusetts Institute of Technology | 2024–2024 (2) | known not-a-list | https://direct.mit.edu/thld/article-abstract/doi/10.1162/thld_a_00689/56796/Atlas-Unshrugged-Fifteen-Theses-on-the-Open?redirectedFrom=fulltext
 - Massachusetts Institute of Technology | 2021–2024 (6) | known not-a-list | https://dsl.mit.edu/inventory-placement-acyclic-supply-chain-networks
 - Massachusetts Institute of Technology | 2020–2022 (4) | known not-a-list | https://dspace.mit.edu/handle/1721.1/4058/discover?rpp=10&filtertype_0=subject&filtertype_1=author&filter_relational_operator_1=authority&filter_relational_operator_0=equals&filter_1=6095ac6ffc2e7a88c6f7fcc9761fc417&filter_0=Meeting+Papers&filtertype=subject&filter_relational_operator=equals&filter=RLE+Theses
 - Massachusetts Institute of Technology | 2020–2020 (1) | known not-a-list | https://dspace.mit.edu/handle/1721.1/56644/discover?filtertype_0=subject&filter_relational_operator_0=equals&filter_0=Abstracts+of+Doctoral+Dissertations&filtertype=author&filter_relational_operator=authority&filter=fad7fccce9fc993b311c4684c0e97ef6
@@ -1679,6 +1767,14 @@ One line per address: institution | years captured | known page? | address. Acce
 - Massachusetts Institute of Technology | 2019–2020 (129) | known not-a-list | https://groups.csail.mit.edu/cb/paircoil2/?pdf=apa-citation-and-dissertation
 - Massachusetts Institute of Technology | 2018–2018 (1) | known not-a-list | https://groups.csail.mit.edu/graphics/ProjectTimeLapse/?june=dissertation-gantt-chart-example
 - Massachusetts Institute of Technology | 2017–2017 (184) | known not-a-list | http://groups.csail.mit.edu/mers/wp-content/uploads/?test=bibtex-dissertation-statt-phd-thesis&mn=2
+- Massachusetts Institute of Technology | 2025–2025 (1) | new | https://hasts.mit.edu/alumni/alex-reiss-sorokin-phd24/
+- Massachusetts Institute of Technology | 2025–2025 (1) | new | https://hasts.mit.edu/alumni/boyd-ruamcharoen-phd25/
+- Massachusetts Institute of Technology | 2025–2025 (1) | new | https://hasts.mit.edu/alumni/jamie-wong-phd-23/
+- Massachusetts Institute of Technology | 2025–2025 (1) | new | https://hasts.mit.edu/alumni/julia-menzel-phd25/
+- Massachusetts Institute of Technology | 2025–2025 (1) | new | https://hasts.mit.edu/alumni/steven-gonzalez-phd-23/
+- Massachusetts Institute of Technology | 2025–2025 (1) | new | https://hasts.mit.edu/alumni/timothy-y-loh-phd-24/
+- Massachusetts Institute of Technology | 2025–2025 (1) | new | https://hasts.mit.edu/hasts-dissertation-presentation-alexander-nicholas-rewegan/
+- Massachusetts Institute of Technology | 2025–2025 (1) | new | https://hasts.mit.edu/hasts-dissertation-presentation-boyd-ruamcharoen/
 - Massachusetts Institute of Technology | 2019–2019 (1) | known not-a-list | http://lnsp.mit.edu/phd-alumni/
 - Massachusetts Institute of Technology | 2022–2024 (2) | known not-a-list | http://mirrors.mit.edu/CTAN/macros/xetex/latex/simple-thesis-dissertation/
 - Massachusetts Institute of Technology | 2013–2013 (1) | known not-a-list | http://www.mit.edu/newsoffice/2011/esd-doctoral-alumni-celebration.html
@@ -1691,6 +1787,7 @@ One line per address: institution | years captured | known page? | address. Acce
 - Massachusetts Institute of Technology | 2023–2023 (1) | known not-a-list | https://mitpress.mit.edu/search-result/?series=acm-distinguished-dissertation
 - Massachusetts Institute of Technology | 2022–2023 (3) | known not-a-list | https://mitpress.mit.edu/search-result-list/?series=acm-distinguished-dissertation
 - Massachusetts Institute of Technology | 2021–2023 (2) | known not-a-list | https://mitsloan.mit.edu/alumni/babak-movassaghi-sf-14-christopher-lee-phd-18
+- Massachusetts Institute of Technology | 2025–2025 (1) | new | https://mitsloan.mit.edu/alumni/babak-movassaghi-sf-14-christopher-lee-phd-18-0
 - Massachusetts Institute of Technology | 2021–2021 (1) | known single-record | https://mitsloan.mit.edu/alumni/professor-ed-roberts-57-sm-58-sm-60-phd-62
 - Massachusetts Institute of Technology | 2023–2023 (1) | known not-a-list | https://mitsloan.mit.edu/alumni/professor-ed-roberts-57-sm-58-sm-60-phd-62-0
 - Massachusetts Institute of Technology | 2019–2023 (3) | known not-a-list | https://mitsloan.mit.edu/ideas-made-to-matter/where-are-they-now-catch-19-mits-smartest-startups
@@ -1701,7 +1798,7 @@ One line per address: institution | years captured | known page? | address. Acce
 - Massachusetts Institute of Technology | 2017–2018 (2) | known program-list | http://mitsloan.mit.edu/phd/students/graduates/
 - Massachusetts Institute of Technology | 2016–2024 (9) | known program-list | http://mitsloan.mit.edu/phd/students/on-the-job-market/
 - Massachusetts Institute of Technology | 2021–2024 (3) | known not-a-list | https://mitsloan.mit.edu/programs/phd/sample-dissertation-abstracts
-- Massachusetts Institute of Technology | 2024–2024 (1) | new | http://msl.mit.edu/student-theses
+- Massachusetts Institute of Technology | 2024–2024 (1) | known not-a-list | http://msl.mit.edu/student-theses
 - Massachusetts Institute of Technology | 2021–2021 (1) | known not-a-list | https://murmur.csail.mit.edu/thread?group_name=Dissertation&tid=21206&post_id=24088
 - Massachusetts Institute of Technology | 2023–2023 (1) | known not-a-list | https://ncrcg.mit.edu/theses-supervised/
 - Massachusetts Institute of Technology | 2015–2021 (9) | known not-a-list | http://news.mit.edu/2011/esd-doctoral-alumni-celebration
@@ -1730,7 +1827,8 @@ One line per address: institution | years captured | known page? | address. Acce
 - Massachusetts Institute of Technology | 2017–2017 (1) | known not-a-list | http://www.rle.mit.edu/stir/theses.htm
 - Massachusetts Institute of Technology | 2017–2017 (1) | known not-a-list | http://rwf.mit.edu/group/theses.html
 - Massachusetts Institute of Technology | 2017–2017 (1) | known not-a-list | https://scienceimpact.mit.edu/theses-and-dissertations
-- Massachusetts Institute of Technology | 2024–2024 (1) | new | https://shass.mit.edu/external-links/mit-students-named-peace-scholar-dissertation-fellows/
+- Massachusetts Institute of Technology | 2024–2024 (1) | known not-a-list | https://shass.mit.edu/external-links/mit-students-named-peace-scholar-dissertation-fellows/
+- Massachusetts Institute of Technology | 2025–2025 (1) | new | https://sia.mit.edu/publications-category/doctoral-theses/
 - Massachusetts Institute of Technology | 2021–2021 (1) | known not-a-list | https://sicm.mitpress.mit.edu/books/series/acm-distinguished-dissertation
 - Massachusetts Institute of Technology | 2017–2018 (2) | known not-a-list | https://tatacenter.mit.edu/theses-publications/
 - Massachusetts Institute of Technology | 2014–2017 (6) | known not-a-list | http://tll.mit.edu/talking-grad-students-about-soft-skills-academic-job-market
@@ -1760,17 +1858,18 @@ One line per address: institution | years captured | known page? | address. Acce
 - Massachusetts Institute of Technology | 2013–2013 (2) | known not-a-list | http://web.mit.edu/philos/www/placement.html
 - Massachusetts Institute of Technology | 2013–2014 (3) | known not-a-list | http://web.mit.edu/polisci/graduate/jobplacement/locations.html
 - Massachusetts Institute of Technology | 2013–2014 (3) | known not-a-list | http://web.mit.edu/polisci/graduate/jobplacement/market.html
-- Massachusetts Institute of Technology | 2024–2024 (1) | new | http://web.mit.edu/rprinn/www/theses/Sprengnether-MIT-PhD-abstract.html
+- Massachusetts Institute of Technology | 2024–2024 (1) | known not-a-list | http://web.mit.edu/rprinn/www/theses/Sprengnether-MIT-PhD-abstract.html
 - Massachusetts Institute of Technology | 2023–2023 (1) | known not-a-list | http://web.mit.edu/Saltzer/www/theses.html
 - Massachusetts Institute of Technology | 2013–2016 (13) | known not-a-list | http://web.mit.edu/sts/academic/theses.html
 - Massachusetts Institute of Technology | 2013–2017 (8) | known not-a-list | http://www-mtl.mit.edu/researchgroups/icsystems/theses.html
 - Massachusetts Institute of Technology | 2017–2023 (7) | known not-a-list | http://yoric.mit.edu/theses-and-reports
 - McMaster University | 2022–2023 (2) | known not-a-list | https://continuing.mcmaster.ca/the-canadian-job-market-is-hot-nows-the-time-to-go-for-the-business-career-you-want/
 - Michigan State University | 2013–2014 (9) | known not-a-list | http://broad.msu.edu/alumni/
-- Michigan State University | 2019–2022 (3) | known program-list | https://broad.msu.edu/phd/logistics/students-placements/
+- Michigan State University | 2019–2025 (4) | known program-list | https://broad.msu.edu/phd/logistics/students-placements/
 - Michigan State University | 2019–2023 (4) | known program-list | https://broad.msu.edu/phd/management/students-placements/
 - Michigan State University | 2019–2026 (28) | known program-list | https://broad.msu.edu/phd/operations-sourcing-management/students-placements/
-- Mississippi State University | 2024–2024 (1) | new | https://www.career.msstate.edu/classes/job-market-basics-for-business-leaders/
+- Mississippi State University | 2024–2024 (1) | known not-a-list | https://www.career.msstate.edu/classes/job-market-basics-for-business-leaders/
+- Missouri University of Science and Technology | 2025–2025 (1) | new | https://news.mst.edu/2024/12/garner-shares-key-professional-decisions-with-st-ph-d-graduates/
 - Monash University | 2023–2023 (1) | known not-a-list | https://www.monash.edu/business/current-students/ie/monash-sourced-placements
 - Monash University | 2023–2023 (1) | known not-a-list | https://www.monash.edu/business/current-students/ie/student-sourced-placements
 - Monash University | 2022–2022 (1) | known not-a-list | https://www.monash.edu/business/current-students/wil/monash-sourced-placements
@@ -1797,9 +1896,11 @@ One line per address: institution | years captured | known page? | address. Acce
 - New Mexico State University | 2019–2019 (1) | known not-a-list | https://business.nmsu.edu/lcsn-nmsu-grads-told-to-adapt-in-tough-job-market/
 - New Mexico State University | 2023–2023 (1) | known program-list | https://business.nmsu.edu/phd-management/phd-mgt-alumni.html
 - New Mexico State University | 2013–2013 (4) | known not-a-list | http://business.nmsu.edu/wordpress/wp-login.php?redirect_to=/academics/management-gb/management-programs/phd/alumni/
+- New York University | 2025–2025 (1) | new | https://c2smart.engineering.nyu.edu/c2smarter-alumni-where-are-they-now/
 - New York University | 2022–2022 (1) | known not-a-list | https://engineering.nyu.edu/life-tandon/tandon-career-hub/placement-outcomes
 - New York University | 2023–2023 (1) | known not-a-list | https://ifp.nyu.edu/2012/journal-article-abstracts/foster-care-residential-care-and-public-care-placement-patterns-are-associated-with-adult-life-trajectories-population-based-cohort-study/
 - New York University | 2013–2013 (2) | known not-a-list | http://ifp.nyu.edu/2012/journal-article-abstracts/towards-a-second-order-view-of-child-protection-placement-related-decision-making/
+- New York University | 2025–2025 (1) | new | https://ifp.nyu.edu/2013/journal-article-abstracts/developing-a-conceptual-framework-of-foster-family-placement/
 - New York University | 2020–2020 (1) | known not-a-list | https://nyusternldp.blogs.stern.nyu.edu/academon-vendre-ses-dissertations/
 - New York University | 2020–2020 (1) | known not-a-list | https://nyusternldp.blogs.stern.nyu.edu/best-dissertation-chapter-ghostwriters-website-for-phd/
 - New York University | 2020–2020 (1) | known not-a-list | https://nyusternldp.blogs.stern.nyu.edu/dissertation-consulting-fees/
@@ -1807,12 +1908,13 @@ One line per address: institution | years captured | known page? | address. Acce
 - New York University | 2020–2020 (1) | known not-a-list | https://nyusternldp.blogs.stern.nyu.edu/professional-dissertation-conclusion-ghostwriters-website-for-college/
 - New York University | 2019–2019 (1) | known not-a-list | http://people.stern.nyu.edu/panos/phd-appl/alumni.html
 - New York University | 2018–2019 (3) | known program-list | http://www.stern.nyu.edu/experience-stern/about/departments-centers-initiatives/academic-departments/management-and-organizations/academic-programs/phd-overview/phd-placements
-- New York University | 2022–2022 (1) | known program-list | https://www.stern.nyu.edu/experience-stern/about/departments-centers-initiatives/academic-departments/management-and-organizations/academics/programs/doctoral-programs/our-alumni
-- New York University | 2021–2023 (2) | known not-a-list | https://www.stern.nyu.edu/experience-stern/about/departments-centers-initiatives/centers-of-research/center-sustainable-business/join-us/alumni-engagement
+- New York University | 2022–2025 (2) | known program-list | https://www.stern.nyu.edu/experience-stern/about/departments-centers-initiatives/academic-departments/management-and-organizations/academics/programs/doctoral-programs/our-alumni
+- New York University | 2021–2025 (3) | known not-a-list | https://www.stern.nyu.edu/experience-stern/about/departments-centers-initiatives/centers-of-research/center-sustainable-business/join-us/alumni-engagement
 - New York University | 2013–2017 (9) | known not-a-list | http://www.stern.nyu.edu/experience-stern/news-events/bbc-winer-tv-placement
 - New York University | 2018–2018 (1) | known not-a-list | http://www.stern.nyu.edu/experience-stern/news-events/op-ed-professor-amy-webb-argues-artificial-intelligence-will-have-significant-impact-job-market
 - New York University | 2017–2018 (2) | known not-a-list | http://www.stern.nyu.edu/experience-stern/news-events/professor-lawrence-white-offers-insights-state-job-market-and-mystery-low-inflation-us
 - New York University | 2014–2019 (8) | known not-a-list | http://www.stern.nyu.edu/experience-stern/news-events/wsj-tambe-digital-job-market
+- Newcastle University | 2025–2025 (1) | new | https://www.ncl.ac.uk/business/study/student-experience/placements-and-study-abroad/
 - North Carolina State University | 2013–2015 (7) | known not-a-list | http://www.cals.ncsu.edu/agcomm/news-center/economic-perspective/news-on-north-carolina%E2%80%99s-job-market/
 - North Carolina State University | 2013–2014 (5) | known not-a-list | http://www.cals.ncsu.edu/agcomm/news-center/perspectives/career-expo-2012-gives-students-a-head-start-in-job-market-connections/attachment/resizedcropped-prestage-boothcareer-expo-9-27-12-024/
 - North Carolina State University | 2013–2015 (8) | known not-a-list | http://www.cals.ncsu.edu/agcomm/news-center/perspectives/career-expo-2012-gives-students-a-head-start-in-job-market-connections/attachment/resizedcropped-technekes-boothcareer-expo-9-27-12-076/
@@ -1828,27 +1930,32 @@ One line per address: institution | years captured | known page? | address. Acce
 - North Dakota State University | 2013–2015 (8) | known not-a-list | http://www.ndsu.edu/hde/graduate/dissertations/phdabstract_v_anderson/
 - Northeastern University | 2022–2023 (2) | known not-a-list | https://alert.northeastern.edu/news-article/from-phd-candidates-to-professionals-alert-trio-continues-to-collaborate/
 - Northeastern University | 2019–2023 (4) | known not-a-list | https://bouve.northeastern.edu/csd/external-placement/ | 1 pages below it
-- Northeastern University | 2020–2024 (3) | known not-a-list | https://coe.northeastern.edu/academics-experiential-learning/graduate-school-of-engineering/graduate-student-services/dissertation-thesis-instructions/
+- Northeastern University | 2020–2025 (4) | known not-a-list | https://coe.northeastern.edu/academics-experiential-learning/graduate-school-of-engineering/graduate-student-services/dissertation-thesis-instructions/
 - Northeastern University | 2023–2023 (1) | known not-a-list | https://cssh.northeastern.edu/a-strong-summer-job-market-for-teenagers/
-- Northeastern University | 2023–2024 (2) | known not-a-list | https://cssh.northeastern.edu/dukakiscenter/teens-and-the-recovering-job-market/
+- Northeastern University | 2023–2025 (3) | known not-a-list | https://cssh.northeastern.edu/dukakiscenter/teens-and-the-recovering-job-market/
 - Northeastern University | 2023–2023 (1) | known not-a-list | https://cssh.northeastern.edu/humanservices/where-are-they-now-jennifer-ryan/
 - Northeastern University | 2023–2023 (1) | known not-a-list | https://cssh.northeastern.edu/humanservices/where-are-they-now-jessica-thompson/
 - Northeastern University | 2023–2023 (1) | known not-a-list | https://cssh.northeastern.edu/humanservices/where-are-they-now-reflections-from-former-center-of-community-service-co-ops/
-- Northeastern University | 2022–2022 (1) | known not-a-list | https://cssh.northeastern.edu/humanservices/where-are-they-now-tamara-yaqub/
-- Northeastern University | 2023–2023 (1) | known not-a-list | https://cssh.northeastern.edu/humanservices/where-are-they-now-tanya-simon/
+- Northeastern University | 2022–2025 (2) | known not-a-list | https://cssh.northeastern.edu/humanservices/where-are-they-now-tamara-yaqub/
+- Northeastern University | 2023–2025 (2) | known not-a-list | https://cssh.northeastern.edu/humanservices/where-are-they-now-tanya-simon/
 - Northeastern University | 2023–2023 (1) | known not-a-list | https://cssh.northeastern.edu/humanservices/where-are-they-now-tracy-walters/
 - Northeastern University | 2023–2023 (1) | known not-a-list | https://cssh.northeastern.edu/last-to-be-hired-first-to-be-fired-summer-job-market-has-been-scorching-hot-for-teens-heres-why-they-might-want-to-hold-on-tight-come-fall/
 - Northeastern University | 2023–2023 (1) | known not-a-list | https://cssh.northeastern.edu/more-black-workers-are-entering-the-job-market-many-are-getting-jobs/
 - Northeastern University | 2023–2023 (1) | known not-a-list | https://cssh.northeastern.edu/policyschool/a-strong-summer-job-market-for-teenagers/
-- Northeastern University | 2024–2024 (1) | new | https://cssh.northeastern.edu/policyschool/its-a-bit-like-musical-chairs-right-now-big-employers-like-google-ibm-no-longer-require-college-degrees-in-a-tight-job-market-but-experts-warn-that-may-not-last/
+- Northeastern University | 2024–2024 (1) | known not-a-list | https://cssh.northeastern.edu/policyschool/its-a-bit-like-musical-chairs-right-now-big-employers-like-google-ibm-no-longer-require-college-degrees-in-a-tight-job-market-but-experts-warn-that-may-not-last/
 - Northeastern University | 2023–2023 (1) | known not-a-list | https://cssh.northeastern.edu/policyschool/last-to-be-hired-first-to-be-fired-summer-job-market-has-been-scorching-hot-for-teens-heres-why-they-might-want-to-hold-on-tight-come-fall/
-- Northeastern University | 2023–2023 (1) | known not-a-list | https://cssh.northeastern.edu/policyschool/mass-economy-at-a-crawl-in-first-quarter-but-job-market-remains-bright/
+- Northeastern University | 2023–2025 (2) | known not-a-list | https://cssh.northeastern.edu/policyschool/mass-economy-at-a-crawl-in-first-quarter-but-job-market-remains-bright/
 - Northeastern University | 2023–2023 (1) | known not-a-list | https://cssh.northeastern.edu/policyschool/phd-dissertation-scheduler/
 - Northeastern University | 2023–2023 (1) | known not-a-list | https://cssh.northeastern.edu/policyschool/teenagers-can-expect-a-strong-summer-job-market/
+- Northeastern University | 2025–2025 (1) | new | https://cssh.northeastern.edu/policyschool/the-job-market-is-showing-signs-of-trouble-these-workers-are-already-feeling-it/
 - Northeastern University | 2023–2023 (1) | known not-a-list | https://cssh.northeastern.edu/policyschool/this-summer-teens-have-the-upper-hand-in-the-job-market/
 - Northeastern University | 2023–2023 (1) | known not-a-list | https://cssh.northeastern.edu/this-summer-teens-have-the-upper-hand-in-the-job-market/
-- Northeastern University | 2024–2024 (1) | new | https://www.khoury.northeastern.edu/home/lieber/theses/abdelmeged/scg/ahmed-thesis.html
+- Northeastern University | 2025–2025 (1) | new | https://cssh.northeastern.edu/wgss/february-27-from-dissertation-to-book/
+- Northeastern University | 2025–2025 (1) | new | http://graduate.northeastern.edu/knowledge-hub/silicon-valley-job-market/
+- Northeastern University | 2025–2025 (1) | new | http://graduate.northeastern.edu/knowledge-hub/toronto-job-market/
+- Northeastern University | 2024–2024 (1) | known not-a-list | https://www.khoury.northeastern.edu/home/lieber/theses/abdelmeged/scg/ahmed-thesis.html
 - Northeastern University | 2018–2018 (1) | known not-a-list | https://librarydev.northeastern.edu/get-help/theses-dissertations | 1 pages below it
+- Northeastern University | 2025–2025 (1) | new | https://librarynews.northeastern.edu/?tag=dissertation
 - Northeastern University | 2014–2016 (8) | known not-a-list | http://www.northeastern.edu/bouve/csd/external-placement/
 - Northeastern University | 2013–2013 (2) | known not-a-list | http://www.northeastern.edu/che/co-op/student-co-op-placements/
 - Northeastern University | 2015–2016 (2) | known not-a-list | http://www.northeastern.edu/cssh/sccj/2012/10/doctoral-student-travels-to-rwanda-for-dissertation-research/
@@ -1881,17 +1988,17 @@ One line per address: institution | years captured | known page? | address. Acce
 - Northeastern University | 2020–2020 (1) | known not-a-list | https://web.northeastern.edu/nanomagnetism/achievements/ian-j-mcdonald-successfully-defends-his-phd-dissertation/
 - Northeastern University | 2019–2019 (1) | known not-a-list | https://web.northeastern.edu/nulab/fall2016-nulab-infosession-dhcss-jobmarket/
 - Northwestern University | 2017–2020 (3) | known not-a-list | http://www.afam.northwestern.edu/graduate/career-opportunities-placements.html
-- Northwestern University | 2023–2024 (2) | known not-a-list | https://atlas.northwestern.edu/atlas-alumni/ilya-gokhman-dissertation/
+- Northwestern University | 2023–2025 (3) | known not-a-list | https://atlas.northwestern.edu/atlas-alumni/ilya-gokhman-dissertation/
 - Northwestern University | 2023–2024 (2) | known not-a-list | https://atlas.northwestern.edu/atlas-alumni/niler-dissertation/
-- Northwestern University | 2024–2024 (1) | new | https://blackstudies.northwestern.edu/graduate/career-opportunities-placements.html
+- Northwestern University | 2024–2025 (2) | known not-a-list | https://blackstudies.northwestern.edu/graduate/career-opportunities-placements.html
 - Northwestern University | 2023–2023 (1) | known not-a-list | https://brainvolts.northwestern.edu/dissertations/
 - Northwestern University | 2018–2024 (4) | known not-a-list | https://www.complit.northwestern.edu/graduate/job-placements.html
-- Northwestern University | 2024–2024 (1) | new | https://creative.northwestern.edu/where-are-they-now-5-questions-with-mslce-alum-adrian-alea/
-- Northwestern University | 2024–2024 (1) | new | https://creative.northwestern.edu/where-are-they-now-5-questions-with-mslce-alum-aleksa-narbutaitis/
+- Northwestern University | 2024–2024 (1) | known not-a-list | https://creative.northwestern.edu/where-are-they-now-5-questions-with-mslce-alum-adrian-alea/
+- Northwestern University | 2024–2024 (1) | known not-a-list | https://creative.northwestern.edu/where-are-they-now-5-questions-with-mslce-alum-aleksa-narbutaitis/
 - Northwestern University | 2017–2023 (2) | known not-a-list | http://www.criticaltheory.northwestern.edu/graduate/academic-placements.html
-- Northwestern University | 2024–2024 (1) | new | https://www.ctd.northwestern.edu/online-advanced-placement-apr
+- Northwestern University | 2024–2024 (1) | known not-a-list | https://www.ctd.northwestern.edu/online-advanced-placement-apr
 - Northwestern University | 2020–2020 (1) | known not-a-list | https://www.ctd.northwestern.edu/program/advanced-placement-ap
-- Northwestern University | 2021–2021 (1) | known not-a-list | https://www.ctd.northwestern.edu/request-accelerated-placement
+- Northwestern University | 2021–2025 (2) | known not-a-list | https://www.ctd.northwestern.edu/request-accelerated-placement
 - Northwestern University | 2019–2020 (2) | known not-a-list | https://www.ctd.northwestern.edu/requesting-accelerated-placement-ctd
 - Northwestern University | 2013–2016 (7) | known not-a-list | http://florencekelley.northwestern.edu/archives/dissertation/
 - Northwestern University | 2014–2015 (2) | known not-a-list | http://www.frenchanditalian.northwestern.edu/placement/
@@ -1922,14 +2029,14 @@ One line per address: institution | years captured | known page? | address. Acce
 - Ohio University | 2017–2017 (2) | known not-a-list | https://business.ohio.edu/academics/selective-programs/fixed-income-management/placement/
 - Osnabrück University | 2019–2025 (3) | known not-a-list | https://www.inf.uni-osnabrueck.de/arbeitsgruppen/software_engineering/theses.html
 - Osnabrück University | 2022–2022 (1) | known not-a-list | https://www.inf.uni-osnabrueck.de/en/arbeitsgruppen/software_engineering/theses.html
-- Osnabrück University | 2024–2024 (1) | new | https://www.inf.uni-osnabrueck.de/en/research_groups/computer_engineering/theses.html
+- Osnabrück University | 2024–2024 (1) | known not-a-list | https://www.inf.uni-osnabrueck.de/en/research_groups/computer_engineering/theses.html
 - Paris 1 Panthéon-Sorbonne University | 2022–2022 (1) | known not-a-list | https://centrehistoire19esiecle.pantheonsorbonne.fr/en/research-activities/theses-defended-or-progress
 - Paris 1 Panthéon-Sorbonne University | 2021–2021 (1) | known program-list | https://ed-management.pantheonsorbonne.fr/liste-theses-0
-- Pennsylvania State University | 2024–2024 (1) | new | https://citeseerx.ist.psu.edu/search_result?query=Impact+of+management+data+placement+in+NFV+service+coordinated+across+multiple+datacenters+and+WANs.
+- Pennsylvania State University | 2024–2025 (2) | known not-a-list | https://citeseerx.ist.psu.edu/search_result?query=Impact+of+management+data+placement+in+NFV+service+coordinated+across+multiple+datacenters+and+WANs.
 - Pennsylvania State University | 2020–2020 (1) | known not-a-list | https://ed.psu.edu/eps/edldr/graduate-degrees/ph-d-or-d-ed/d-ed-dissertation-proposal-examination
 - Pennsylvania State University | 2022–2022 (1) | known not-a-list | https://old.ed.psu.edu/eps/edldr/graduate-degrees/ph-d-or-d-ed/d-ed-dissertation-proposal-examination
 - Pennsylvania State University | 2023–2023 (1) | known not-a-list | https://phdstudents.smeal.psu.edu/documents/form-j-dissertation-proposal-completion-report-pdf/accessibility-info
-- Pennsylvania State University | 2024–2024 (1) | new | https://phdstudents.smeal.psu.edu/documents/form-j-dissertation-proposal-completion-report-pdf/view
+- Pennsylvania State University | 2024–2024 (1) | known not-a-list | https://phdstudents.smeal.psu.edu/documents/form-j-dissertation-proposal-completion-report-pdf/view
 - Pennsylvania State University | 2013–2014 (4) | known not-a-list | http://www.smeal.psu.edu/about/advisory/alumni-society
 - Pennsylvania State University | 2013–2014 (8) | known not-a-list | http://www.smeal.psu.edu/acctg/alumni/
 - Pennsylvania State University | 2013–2014 (13) | known not-a-list | http://www.smeal.psu.edu/alumni | 2 pages below it
@@ -1941,30 +2048,34 @@ One line per address: institution | years captured | known page? | address. Acce
 - Pennsylvania State University | 2019–2019 (3) | known program-list | https://www.smeal.psu.edu/phd/job-market-candidates
 - Pennsylvania State University | 2014–2018 (6) | known program-list | http://www.smeal.psu.edu/phd/management/placements | 1 pages below it
 - Pennsylvania State University | 2013–2014 (6) | known program-list | http://www.smeal.psu.edu/phd/mktg/phd-student-alumni | 1 pages below it
-- Pennsylvania State University | 2014–2023 (9) | known program-list | http://www.smeal.psu.edu/phd/scis/placements | 1 pages below it
-- Pennsylvania State University | 2018–2024 (2) | known program-list | https://www.smeal.psu.edu/phd/top-smeal-ph-d-placements
+- Pennsylvania State University | 2014–2025 (10) | known program-list | http://www.smeal.psu.edu/phd/scis/placements | 1 pages below it
+- Pennsylvania State University | 2018–2025 (3) | known program-list | https://www.smeal.psu.edu/phd/top-smeal-ph-d-placements
 - Pennsylvania State University | 2013–2014 (8) | known not-a-list | http://www.smeal.psu.edu/rm/alumni/
 - Pennsylvania State University | 2013–2014 (9) | known not-a-list | http://www.smeal.psu.edu/scis/alumni
 - Pennsylvania State University | 2013–2014 (4) | known not-a-list | http://www.smeal.psu.edu/smealconnect/alumni-registration
 - Politecnico di Milano | 2019–2023 (125) | known not-a-list | http://airwiki.elet.polimi.it/index.php?title=Special:WhatLinksHere&amp;target=First+Level+Theses | 3 pages below it
-- Politecnico di Milano | 2022–2024 (2) | known not-a-list | https://alumni.polimi.it/ctp_facolta/ph-d-arch/
+- Politecnico di Milano | 2022–2025 (3) | known not-a-list | https://alumni.polimi.it/ctp_facolta/ph-d-arch/
 - Politecnico di Milano | 2022–2022 (1) | known not-a-list | https://alumni.polimi.it/ctp_facolta/ph-d-ingegneria/
-- Politecnico di Milano | 2024–2024 (1) | new | https://alumni.polimi.it/en/ctp_facolta/ph-d-ingegneria/
+- Politecnico di Milano | 2024–2024 (1) | known not-a-list | https://alumni.polimi.it/en/ctp_facolta/ph-d-ingegneria/
+- Politecnico di Milano | 2025–2025 (1) | new | https://cartcas.polimi.it/theses/phd-theses/
 - Politecnico di Milano | 2018–2019 (2) | known not-a-list | http://www.ccsmecc.polimi.it/en/enrolled-students/theses-and-graduation-essays/
 - Politecnico di Milano | 2017–2019 (2) | known not-a-list | http://cm.alumni.polimi.it/en/group-phd/
 - Politecnico di Milano | 2019–2019 (1) | known not-a-list | https://cm.alumni.polimi.it/it/group-phd/
 - Politecnico di Milano | 2019–2022 (2) | known not-a-list | https://www.deib.polimi.it/eng/phd-alumni
 - Politecnico di Milano | 2019–2022 (2) | known not-a-list | https://www.deib.polimi.it/ita/phd-alumni
-- Politecnico di Milano | 2022–2022 (1) | known not-a-list | https://www.dottorato.polimi.it/en/current-phd-candidates | 5 pages below it
+- Politecnico di Milano | 2022–2025 (2) | known not-a-list | https://www.dottorato.polimi.it/en/current-phd-candidates | 5 pages below it
 - Politecnico di Milano | 2019–2019 (1) | known not-a-list | http://www.dottorato.polimi.it/en/during-your-phd/enrolment/for-foreign-candidates/
 - Politecnico di Milano | 2019–2020 (2) | known not-a-list | http://www.dottorato.polimi.it/en/phd-and-employment/after-the-phd/alumni-association/
-- Politecnico di Milano | 2024–2024 (1) | new | https://www.dottorato.polimi.it/futuri-dottorandi/askastudent-phd-candidates
+- Politecnico di Milano | 2024–2024 (1) | known not-a-list | https://www.dottorato.polimi.it/futuri-dottorandi/askastudent-phd-candidates
 - Politecnico di Milano | 2019–2020 (2) | known not-a-list | http://www.dottorato.polimi.it/it/phd-e-lavoro/dopo-il-dottorato/alumni-association/
+- Politecnico di Milano | 2025–2025 (1) | new | https://www.efi.polimi.it/theses/new-thesis-available/
+- Politecnico di Milano | 2025–2025 (1) | new | https://www.efi.polimi.it/theses/new-thesis-opportunities-available/
 - Politecnico di Milano | 2022–2024 (2) | known not-a-list | http://ispl.deib.polimi.it/mirco-pezzoli-phd-dissertation-space-time-parametric-approach-to-extended-audio-reality/
+- Politecnico di Milano | 2025–2025 (1) | new | https://v3.alumni.test.polimi.it/ctp_facolta/ph-d-arch/
 - Polytechnique Montréal | 2022–2025 (2) | known not-a-list | https://etudiant.polymtl.ca/etudes/en/graduate-studies/thesis-and-dissertation
-- Polytechnique Montréal | 2025–2025 (1) | new | https://etudiant.polymtl.ca/etudes/particularites-des-etudes-superieures/memoires-et-theses
-- Polytechnique Montréal | 2025–2025 (1) | new | https://etudiant.polymtl.ca/etudes/programmes/etudes-superieures/programmes-etudes/memoires-et-theses
-- Polytechnique Montréal | 2025–2025 (1) | new | https://etudiant.polymtl.ca/etudes/programmes/particularites-des-etudes-superieures/memoires-et-theses
+- Polytechnique Montréal | 2025–2025 (1) | known not-a-list | https://etudiant.polymtl.ca/etudes/particularites-des-etudes-superieures/memoires-et-theses
+- Polytechnique Montréal | 2025–2025 (1) | known not-a-list | https://etudiant.polymtl.ca/etudes/programmes/etudes-superieures/programmes-etudes/memoires-et-theses
+- Polytechnique Montréal | 2025–2025 (1) | known not-a-list | https://etudiant.polymtl.ca/etudes/programmes/particularites-des-etudes-superieures/memoires-et-theses
 - Polytechnique Montréal | 2017–2017 (1) | known not-a-list | http://geo.polymtl.ca/theses.html
 - Polytechnique Montréal | 2017–2020 (3) | known not-a-list | http://pearl.polymtl.ca/alumni/phds/
 - Polytechnique Montréal | 2023–2023 (1) | known not-a-list | https://www.polymtl.ca/carrefour-actualite/nouvelles/polytechnique-montreal-recompense-des-memoires-et-des-theses-remarquables-en-2022
@@ -1973,10 +2084,11 @@ One line per address: institution | years captured | known page? | address. Acce
 - Polytechnique Montréal | 2017–2017 (1) | known not-a-list | http://www.polymtl.ca/etudes-superieures/en/thesis-and-dissertation
 - Polytechnique Montréal | 2018–2023 (3) | known not-a-list | https://publications.polymtl.ca/theses.html
 - Princeton University | 2013–2014 (3) | known not-a-list | http://www.princeton.edu/EngineeringPhysics/theses.html
+- Purdue University | 2025–2025 (1) | new | https://business.purdue.edu/academics/mis/job-market-candidates.php
 - Purdue University | 2023–2023 (1) | known program-list | https://business.purdue.edu/academics/Strategy/phd/alumni.php
 - Purdue University | 2013–2024 (13) | known not-a-list | http://docs.lib.purdue.edu/dissertations/
 - Purdue University | 2017–2023 (2) | known not-a-list | http://docs.lib.purdue.edu/open_access_dissertations/
-- Purdue University | 2015–2023 (4) | known not-a-list | https://engineering.purdue.edu/AAC/dissertations/
+- Purdue University | 2015–2025 (5) | known not-a-list | https://engineering.purdue.edu/AAC/dissertations/
 - Purdue University | 2015–2016 (3) | known not-a-list | https://engineering.purdue.edu/AAC/ph-d-candidates/ | 1 pages below it
 - Purdue University | 2022–2022 (1) | known not-a-list | https://engineering.purdue.edu/cdesign/wp/terrell-glenn-earns-first-place-price-for-the-presentation-of-his-dissertation-at-the-national-gem-consortiums-45th-annual-board-meeting-and-conference/
 - Purdue University | 2022–2024 (2) | known not-a-list | https://engineering.purdue.edu/dcsl/publications-by-year/phd-theses/
@@ -2052,7 +2164,7 @@ One line per address: institution | years captured | known page? | address. Acce
 - Rensselaer Polytechnic Institute | 2018–2018 (1) | known not-a-list | https://www.ecse.rpi.edu/frisc/theses/MaierThesis/Chapter3.html
 - Rensselaer Polytechnic Institute | 2018–2018 (1) | known not-a-list | https://www.ecse.rpi.edu/frisc/theses/MaierThesis/Chapter4.html
 - Rensselaer Polytechnic Institute | 2018–2018 (1) | known not-a-list | https://www.ecse.rpi.edu/frisc/theses/MaierThesis/Chapter5.html
-- Rensselaer Polytechnic Institute | 2023–2024 (2) | known not-a-list | https://graduate.rpi.edu/academic-progress/submit-your-thesis-dissertation
+- Rensselaer Polytechnic Institute | 2023–2025 (3) | known not-a-list | https://graduate.rpi.edu/academic-progress/submit-your-thesis-dissertation
 - Rensselaer Polytechnic Institute | 2019–2019 (1) | known not-a-list | http://link.lib.rpi.edu/portal/A-critical-dissertation-on-the-nature-measure/gIrmn31LJa0/
 - Rensselaer Polytechnic Institute | 2018–2018 (1) | known not-a-list | http://link.lib.rpi.edu/portal/Dissertations-and-theses-from-start-to-finish-/_cGKXi4I9Vg/?view=borrow
 - Rensselaer Polytechnic Institute | 2019–2019 (2) | known not-a-list | http://link.lib.rpi.edu/portal/Theses-presentees-a-la-Faculte-des-sciences-de/xUyonoUV6Aw/
@@ -2060,11 +2172,11 @@ One line per address: institution | years captured | known page? | address. Acce
 - Rice University | 2023–2023 (1) | known not-a-list | https://ccl.rice.edu/loewenstern-2022-2023-placements
 - Rutgers University at Newark and New Brunswick | 2021–2021 (1) | known not-a-list | https://bootcamp.rutgers.edu/data/landing/?s=Google-Brand_RFull_&msg_cv_scta=4&msg_cv_stbn=1&msg_cv_fcta=1&fqvar1=3&pkw=rutgers%20data%20science%20bootcamp&pcrid=461829201509&pmt=e&utm_source=google&utm_medium=cpc&utm_campaign=GGL%7CRUTGERS-UNIVERSITY%7CSEM%7CDATA%7C-%7COFL%7C_RFull_%7CALL%7CBRD%7CEXACT%7CCore%7CBootcamp&utm_term=rutgers%20data%20science%20bootcamp&s=google&k=rutgers%20data%20science%20bootcamp&utm_adgroupid=106560931405&utm_locationphysicalms=9003773&utm_matchtype=e&utm_network=g&utm_device=c&utm_content=461829201509&utm_placement=&gclid=Cj0KCQiAnb79BRDgARIsAOVbhRq-zRZA4nmchV5UUTiefWn6i4ktEJdEj6x33LCPHtprqxDxnxGKVAMaAuDmEALw_wcB&gclsrc=aw.ds
 - Rutgers University at Newark and New Brunswick | 2023–2023 (1) | known program-list | https://www.business.rutgers.edu/doctor-business-administration/alumni-dissertation-titles
-- Rutgers University at Newark and New Brunswick | 2018–2022 (7) | known program-list | http://www.business.rutgers.edu/phd/alumni
+- Rutgers University at Newark and New Brunswick | 2018–2025 (8) | known program-list | http://www.business.rutgers.edu/phd/alumni
 - Rutgers University at Newark and New Brunswick | 2023–2023 (1) | known not-a-list | https://myrbs.business.rutgers.edu/phd-faculty/study-dissertation
 - Rutgers University at Newark and New Brunswick | 2022–2023 (2) | known not-a-list | https://myrbs.business.rutgers.edu/phd/dissertation
 - Rutgers University at Newark and New Brunswick | 2017–2017 (1) | known program-list | http://rutcor.rutgers.edu/alumni.html
-- Saarland University / Max Planck Institute for Informatics | 2024–2024 (1) | new | https://www.nt.uni-saarland.de/theses/sebastianmorgenstern2020/
+- Saarland University / Max Planck Institute for Informatics | 2024–2024 (1) | known not-a-list | https://www.nt.uni-saarland.de/theses/sebastianmorgenstern2020/
 - Sapienza Università di Roma | 2019–2019 (1) | known not-a-list | http://www.dolinfige.uniroma1.it/placement
 - Singapore Management University | 2022–2022 (1) | known program-list | https://blog.smu.edu.sg/doctoral/how-recent-phd-business-graduates-found-good-academic-placements/
 - Singapore Management University | 2023–2023 (1) | known program-list | https://blog.smu.edu.sg/doctoral/job-market-experience-shared-smu-phd-business-candidates/
@@ -2075,12 +2187,12 @@ One line per address: institution | years captured | known page? | address. Acce
 - Stanford University | 2013–2013 (1) | known not-a-list | http://www.gsb.stanford.edu/sloan/community/alumni.html
 - State University of New York at Albany | 2017–2017 (1) | known not-a-list | http://www.albany.edu/business/alumni-facilitate-placement.php
 - State University of New York at Albany | 2017–2017 (1) | known not-a-list | http://www.albany.edu/business/number-1-in-job-placement.php
-- Stevens Institute of Technology | 2024–2024 (1) | new | https://fsc.stevens.edu/phd-dissertations/
+- Stevens Institute of Technology | 2024–2025 (2) | known not-a-list | https://fsc.stevens.edu/phd-dissertations/
 - Stevens Institute of Technology | 2015–2015 (3) | known not-a-list | http://www.stevens.edu/business/academics/doctoral-programs/dissertation-process
 - Stevens Institute of Technology | 2013–2015 (7) | known not-a-list | http://www.stevens.edu/howe/academics/doctoral-programs/dissertation-process
 - Stevens Institute of Technology | 2023–2023 (1) | known not-a-list | https://www.stevens.edu/interlibrary-loan-and-document-delivery-services/non-stevens-thesis-dissertations-request
-- Stevens Institute of Technology | 2024–2024 (1) | new | https://www.stevens.edu/page-basic/upcoming-doctoral-dissertations
-- Stevens Institute of Technology | 2024–2024 (1) | new | https://www.stevens.edu/school-engineering-science/graduate-studies/dissertations
+- Stevens Institute of Technology | 2024–2024 (1) | known not-a-list | https://www.stevens.edu/page-basic/upcoming-doctoral-dissertations
+- Stevens Institute of Technology | 2024–2025 (2) | known not-a-list | https://www.stevens.edu/school-engineering-science/graduate-studies/dissertations
 - Stevens Institute of Technology | 2014–2015 (3) | known not-a-list | http://www.stevens.edu/ses/nanomechanics-nanomaterials-lab/phd-dissertation-checklist
 - Stevens Institute of Technology | 2013–2015 (5) | known not-a-list | http://www.stevens.edu/sse/academics/doctoral-studies/dissertation
 - Stevens Institute of Technology | 2013–2013 (2) | known not-a-list | http://www.stevens.edu/wireless/phd-dissertation.html
@@ -2120,13 +2232,13 @@ One line per address: institution | years captured | known page? | address. Acce
 - Technical University of Clausthal | 2022–2022 (1) | known not-a-list | https://www.czm.tu-clausthal.de/wissens-und-technologietransfer/czm-schriftenreihe/band-9-dissertation-lisa-wurlitzer
 - Technical University of Clausthal | 2025–2025 (1) | new | https://www.dsc.tu-clausthal.de/en/ueber-uns/jobs-and-theses
 - Technical University of Clausthal | 2025–2025 (1) | new | https://www.dsc.tu-clausthal.de/ueber-uns/aktuelles/nachrichtendetails/dissertation-von-khizar-shahid
-- Technical University of Clausthal | 2024–2025 (2) | new | https://www.icvt.tu-clausthal.de/en/lehre/final-theses/investigation-of-measures-to-avoid-stray-currents-in-alkaline-water-electrolysis
+- Technical University of Clausthal | 2024–2025 (2) | known not-a-list | https://www.icvt.tu-clausthal.de/en/lehre/final-theses/investigation-of-measures-to-avoid-stray-currents-in-alkaline-water-electrolysis
 - Technical University of Clausthal | 2023–2023 (1) | known not-a-list | https://www.icvt.tu-clausthal.de/en/teaching/theses/chemische-reaktionstechnik-copy-1/simulation-zur-generierung-industriell-eingesetzter-katalysatorbetten
 - Technical University of Clausthal | 2019–2019 (1) | known not-a-list | https://www.ievb.tu-clausthal.de/en/teaching/final-theses/
 - Technical University of Clausthal | 2019–2019 (2) | known not-a-list | https://www.ievb.tu-clausthal.de/en/teaching/group-theses/
-- Technical University of Clausthal | 2024–2024 (1) | new | https://www.ifad.tu-clausthal.de/en/department-of-mineral-and-waste-processing/study/colloquia-for-theses
-- Technical University of Clausthal | 2024–2024 (1) | new | https://www.isse.tu-clausthal.de/en/get-in-touch/team-1/scientific-staff-and-doctoral-candidates | 20 pages below it
-- Technical University of Clausthal | 2024–2024 (1) | new | http://www.itv.tu-clausthal.de/en/student-research-projects-and-diploma-theses/
+- Technical University of Clausthal | 2024–2024 (1) | known not-a-list | https://www.ifad.tu-clausthal.de/en/department-of-mineral-and-waste-processing/study/colloquia-for-theses
+- Technical University of Clausthal | 2024–2024 (1) | known not-a-list | https://www.isse.tu-clausthal.de/en/get-in-touch/team-1/scientific-staff-and-doctoral-candidates | 20 pages below it
+- Technical University of Clausthal | 2024–2024 (1) | known not-a-list | http://www.itv.tu-clausthal.de/en/student-research-projects-and-diploma-theses/
 - Technical University of Clausthal | 2022–2023 (2) | known not-a-list | https://www.puk.tu-clausthal.de/en/studies-teaching/finished-theses | 1 pages below it
 - Technical University of Clausthal | 2023–2023 (1) | known not-a-list | https://www.tu-clausthal.de/en/current-students/industrial-placement | 2 pages below it
 - Technical University of Clausthal | 2018–2020 (3) | known not-a-list | https://www.ub.tu-clausthal.de/angebote-fuer-wissenschaftlerinnen/dissertation-u-a-qualifikationsarbeiten/
@@ -2158,7 +2270,7 @@ One line per address: institution | years captured | known page? | address. Acce
 - Technical University of Darmstadt | 2023–2023 (1) | known not-a-list | https://www.etit.tu-darmstadt.de/kismed/teaching_kismed/theses_topics_kismed/index.de.jsp
 - Technical University of Darmstadt | 2022–2025 (2) | known not-a-list | https://www.etit.tu-darmstadt.de/must/teaching_must/theses_must/index.de.jsp
 - Technical University of Darmstadt | 2017–2018 (2) | known not-a-list | http://www.ew.tu-darmstadt.de/institut/dissertation_grimm.de.jsp
-- Technical University of Darmstadt | 2024–2024 (1) | new | https://www.fzd.tu-darmstadt.de/forschung/publications_fzd/dissertation_archive.en.jsp
+- Technical University of Darmstadt | 2024–2024 (1) | known not-a-list | https://www.fzd.tu-darmstadt.de/forschung/publications_fzd/dissertation_archive.en.jsp
 - Technical University of Darmstadt | 2023–2023 (1) | known not-a-list | https://www.fzd.tu-darmstadt.de/forschung/publications_fzd/dissertations/dissertations_fzd.en.jsp
 - Technical University of Darmstadt | 2018–2018 (1) | known not-a-list | https://www.gcc.tu-darmstadt.de/home/pub/dissertations/ | 1 pages below it
 - Technical University of Darmstadt | 2022–2022 (1) | known not-a-list | https://www.hst.tu-darmstadt.de/lehre_hst/student_theses_hst/abgeschlossen_hst/archiv_theses_hst/index.en.jsp
@@ -2180,26 +2292,26 @@ One line per address: institution | years captured | known page? | address. Acce
 - Technical University of Darmstadt | 2021–2025 (2) | known not-a-list | https://www.hst.tu-darmstadt.de/lehre_hst/student_theses_hst/abschlussarbeiten_hst_details_11840.de.jsp
 - Technical University of Darmstadt | 2023–2023 (1) | known not-a-list | https://www.hst.tu-darmstadt.de/lehre_hst/student_theses_hst/abschlussarbeiten_hst_details_15488.de.jsp
 - Technical University of Darmstadt | 2023–2023 (1) | known not-a-list | https://www.hst.tu-darmstadt.de/lehre_hst/student_theses_hst/abschlussarbeiten_hst_details_15616.de.jsp
-- Technical University of Darmstadt | 2024–2024 (1) | new | https://www.hst.tu-darmstadt.de/lehre_hst/student_theses_hst/abschlussarbeiten_hst_details_15808.de.jsp
+- Technical University of Darmstadt | 2024–2024 (1) | known not-a-list | https://www.hst.tu-darmstadt.de/lehre_hst/student_theses_hst/abschlussarbeiten_hst_details_15808.de.jsp
 - Technical University of Darmstadt | 2023–2025 (2) | known not-a-list | https://www.hst.tu-darmstadt.de/lehre_hst/student_theses_hst/abschlussarbeiten_hst_details_15936.de.jsp
 - Technical University of Darmstadt | 2023–2023 (1) | known not-a-list | https://www.hst.tu-darmstadt.de/lehre_hst/student_theses_hst/abschlussarbeiten_hst_details_16000.de.jsp
 - Technical University of Darmstadt | 2023–2023 (1) | known not-a-list | https://www.hst.tu-darmstadt.de/lehre_hst/student_theses_hst/abschlussarbeiten_hst_details_16064.de.jsp
-- Technical University of Darmstadt | 2024–2024 (1) | new | https://www.hst.tu-darmstadt.de/lehre_hst/student_theses_hst/abschlussarbeiten_hst_details_16128.de.jsp
+- Technical University of Darmstadt | 2024–2024 (1) | known not-a-list | https://www.hst.tu-darmstadt.de/lehre_hst/student_theses_hst/abschlussarbeiten_hst_details_16128.de.jsp
 - Technical University of Darmstadt | 2022–2022 (1) | known not-a-list | https://www.hst.tu-darmstadt.de/lehre_hst/student_theses_hst/abschlussarbeiten_hst_details_17920.de.jsp
 - Technical University of Darmstadt | 2022–2022 (1) | known not-a-list | https://www.hst.tu-darmstadt.de/lehre_hst/student_theses_hst/abschlussarbeiten_hst_details_18560.de.jsp
 - Technical University of Darmstadt | 2022–2022 (1) | known not-a-list | https://www.hst.tu-darmstadt.de/lehre_hst/student_theses_hst/abschlussarbeiten_hst_details_18624.de.jsp
 - Technical University of Darmstadt | 2022–2022 (1) | known not-a-list | https://www.hst.tu-darmstadt.de/lehre_hst/student_theses_hst/abschlussarbeiten_hst_details_20352.de.jsp
 - Technical University of Darmstadt | 2022–2025 (3) | known not-a-list | https://www.hst.tu-darmstadt.de/lehre_hst/student_theses_hst/abschlussarbeiten_hst_details_20544.de.jsp
-- Technical University of Darmstadt | 2024–2024 (1) | new | https://www.hst.tu-darmstadt.de/lehre_hst/student_theses_hst/abschlussarbeiten_hst_details_23360.de.jsp
+- Technical University of Darmstadt | 2024–2024 (1) | known not-a-list | https://www.hst.tu-darmstadt.de/lehre_hst/student_theses_hst/abschlussarbeiten_hst_details_23360.de.jsp
 - Technical University of Darmstadt | 2025–2025 (1) | new | https://www.hst.tu-darmstadt.de/lehre_hst/student_theses_hst/abschlussarbeiten_hst_details_35904.de.jsp
 - Technical University of Darmstadt | 2025–2025 (1) | new | https://www.hst.tu-darmstadt.de/lehre_hst/student_theses_hst/abschlussarbeiten_hst_details_38464.de.jsp
 - Technical University of Darmstadt | 2025–2025 (1) | new | https://www.hst.tu-darmstadt.de/lehre_hst/student_theses_hst/abschlussarbeiten_hst_details_39232.de.jsp
 - Technical University of Darmstadt | 2021–2025 (2) | known not-a-list | https://www.hst.tu-darmstadt.de/lehre_hst/student_theses_hst/index.de.jsp
-- Technical University of Darmstadt | 2024–2024 (1) | new | https://www.iib.tu-darmstadt.de/studium_und_lehre_iib/abschlussarbeiten/theses_completed_iib/abgeschlossene_abschlussarbeiten_iib.de.jsp
+- Technical University of Darmstadt | 2024–2024 (1) | known not-a-list | https://www.iib.tu-darmstadt.de/studium_und_lehre_iib/abschlussarbeiten/theses_completed_iib/abgeschlossene_abschlussarbeiten_iib.de.jsp
 - Technical University of Darmstadt | 2023–2023 (1) | known not-a-list | https://www.iib.tu-darmstadt.de/studium_und_lehre_iib/abschlussarbeiten/theses_completed_iib/abgeschlossene_abschlussarbeiten_iib.en.jsp
 - Technical University of Darmstadt | 2023–2023 (1) | known not-a-list | https://www.iib.tu-darmstadt.de/studium_und_lehre_iib/abschlussarbeiten/theses_open_iib/abschlussarbeiten_details_iib_27456.de.jsp
 - Technical University of Darmstadt | 2023–2025 (2) | known not-a-list | https://www.iib.tu-darmstadt.de/studium_und_lehre_iib/abschlussarbeiten/theses_open_iib/ausgeschriebene_abschlussarbeiten_iib.de.jsp
-- Technical University of Darmstadt | 2024–2024 (1) | new | https://www.iib.tu-darmstadt.de/studium_und_lehre_iib/abschlussarbeiten/theses_open_iib/ausgeschriebene_abschlussarbeiten_iib.en.jsp
+- Technical University of Darmstadt | 2024–2024 (1) | known not-a-list | https://www.iib.tu-darmstadt.de/studium_und_lehre_iib/abschlussarbeiten/theses_open_iib/ausgeschriebene_abschlussarbeiten_iib.en.jsp
 - Technical University of Darmstadt | 2018–2018 (1) | known not-a-list | https://www.ikp.tu-darmstadt.de/gruppen_ikp/achimrichter/quantumchaos/theses/theses.en.jsp
 - Technical University of Darmstadt | 2018–2018 (1) | known not-a-list | https://www.ikp.tu-darmstadt.de/gruppen_ikp/ag_noertershaeuser/publications_wn/finished_theses_wn/index.de.jsp
 - Technical University of Darmstadt | 2019–2019 (1) | known not-a-list | https://www.iwar.tu-darmstadt.de/abwasser/fgat/forschung_at/dissertation_at/dissertation_1.de.jsp
@@ -2222,14 +2334,14 @@ One line per address: institution | years captured | known page? | address. Acce
 - Technical University of Darmstadt | 2017–2017 (1) | known not-a-list | http://www.kunstgeschichte.architektur.tu-darmstadt.de/ku_ge/forsch_diss_kuge/koeberer_dissertation.de.jsp
 - Technical University of Darmstadt | 2018–2018 (1) | known not-a-list | https://www.kunstgeschichte.architektur.tu-darmstadt.de/ku_ge/forsch_diss_kuge/rohrdrommel_dissertation.de.jsp
 - Technical University of Darmstadt | 2018–2018 (1) | known not-a-list | https://www.kunstgeschichte.architektur.tu-darmstadt.de/ku_ge/forsch_diss_kuge/scheppat_dissertation.de.jsp
-- Technical University of Darmstadt | 2024–2024 (1) | new | https://www.maschinenbau.tu-darmstadt.de/cps/cps_teaching/theses_details_cps_290048.en.jsp
+- Technical University of Darmstadt | 2024–2024 (1) | known not-a-list | https://www.maschinenbau.tu-darmstadt.de/cps/cps_teaching/theses_details_cps_290048.en.jsp
 - Technical University of Darmstadt | 2025–2025 (1) | new | https://www.maschinenbau.tu-darmstadt.de/cps/cps_teaching/theses_details_cps_290176.en.jsp
 - Technical University of Darmstadt | 2022–2022 (1) | known not-a-list | https://www.maschinenbau.tu-darmstadt.de/cps/cps_teaching/theses_details_cps_294848.de.jsp
-- Technical University of Darmstadt | 2024–2024 (1) | new | https://www.maschinenbau.tu-darmstadt.de/fnb/fnb_research/fnb_dissertations/index.en.jsp
-- Technical University of Darmstadt | 2024–2024 (1) | new | https://www.maschinenbau.tu-darmstadt.de/stfs/teaching_stfs/theses_stfs/index.en.jsp
-- Technical University of Darmstadt | 2024–2024 (1) | new | https://www.maschinenbau.tu-darmstadt.de/utc-combustor-turbine/project_utc/jobs_theses_utc/index.en.jsp
-- Technical University of Darmstadt | 2024–2024 (1) | new | https://www.mawi.tu-darmstadt.de/ds/veroeffentlichungen_ds/dissertation_mit_fotos/promotionen_mit_bild.en.jsp
-- Technical University of Darmstadt | 2024–2024 (1) | new | https://www.rs.tu-darmstadt.de/en/teaching/finished-theses | 2 pages below it
+- Technical University of Darmstadt | 2024–2024 (1) | known not-a-list | https://www.maschinenbau.tu-darmstadt.de/fnb/fnb_research/fnb_dissertations/index.en.jsp
+- Technical University of Darmstadt | 2024–2024 (1) | known not-a-list | https://www.maschinenbau.tu-darmstadt.de/stfs/teaching_stfs/theses_stfs/index.en.jsp
+- Technical University of Darmstadt | 2024–2024 (1) | known not-a-list | https://www.maschinenbau.tu-darmstadt.de/utc-combustor-turbine/project_utc/jobs_theses_utc/index.en.jsp
+- Technical University of Darmstadt | 2024–2024 (1) | known not-a-list | https://www.mawi.tu-darmstadt.de/ds/veroeffentlichungen_ds/dissertation_mit_fotos/promotionen_mit_bild.en.jsp
+- Technical University of Darmstadt | 2024–2024 (1) | known not-a-list | https://www.rs.tu-darmstadt.de/en/teaching/finished-theses | 2 pages below it
 - Technical University of Darmstadt | 2025–2025 (1) | new | https://www.rs.tu-darmstadt.de/en/teaching/running-theses
 - Technical University of Darmstadt | 2021–2024 (3) | known not-a-list | https://www.rsm.tu-darmstadt.de/teaching_rsm/theses_rsm/index.de.jsp
 - Technical University of Darmstadt | 2023–2023 (1) | known not-a-list | https://www.rsm.tu-darmstadt.de/teaching_rsm/theses_rsm/index.en.jsp
@@ -2244,22 +2356,22 @@ One line per address: institution | years captured | known page? | address. Acce
 - Technical University of Darmstadt | 2022–2022 (1) | known not-a-list | https://www.rsm.tu-darmstadt.de/teaching_rsm/theses_rsm/studentische_arbeiten_details_289984.en.jsp
 - Technical University of Darmstadt | 2022–2022 (1) | known not-a-list | https://www.rsm.tu-darmstadt.de/teaching_rsm/theses_rsm/studentische_arbeiten_details_310784.en.jsp
 - Technical University of Darmstadt | 2022–2022 (1) | known not-a-list | https://www.rsm.tu-darmstadt.de/teaching_rsm/theses_rsm/studentische_arbeiten_details_313344.en.jsp
-- Technical University of Darmstadt | 2024–2024 (1) | new | https://www.rsm.tu-darmstadt.de/teaching_rsm/theses_rsm/studentische_arbeiten_details_326336.en.jsp
+- Technical University of Darmstadt | 2024–2024 (1) | known not-a-list | https://www.rsm.tu-darmstadt.de/teaching_rsm/theses_rsm/studentische_arbeiten_details_326336.en.jsp
 - Technical University of Darmstadt | 2025–2025 (1) | new | https://www.seemoo.tu-darmstadt.de/theses/Analyzing-the-macOS-Bluetooth-Stack/
 - Technical University of Darmstadt | 2025–2025 (1) | new | https://www.seemoo.tu-darmstadt.de/theses/AnyConnect-and-VPN-Security-on-iOS/
-- Technical University of Darmstadt | 2024–2024 (1) | new | https://www.seemoo.tu-darmstadt.de/theses/Bluetooth-Entropy/
-- Technical University of Darmstadt | 2024–2024 (1) | new | https://www.seemoo.tu-darmstadt.de/theses/bluetooth-security-analysis-on-windows/
+- Technical University of Darmstadt | 2024–2024 (1) | known not-a-list | https://www.seemoo.tu-darmstadt.de/theses/Bluetooth-Entropy/
+- Technical University of Darmstadt | 2024–2024 (1) | known not-a-list | https://www.seemoo.tu-darmstadt.de/theses/bluetooth-security-analysis-on-windows/
 - Technical University of Darmstadt | 2018–2018 (2) | known not-a-list | https://www.seemoo.tu-darmstadt.de/theses/details/?C=D;O=A
 - Technical University of Darmstadt | 2025–2025 (1) | new | https://www.seemoo.tu-darmstadt.de/theses/evaluation-of-uwb/
-- Technical University of Darmstadt | 2024–2024 (1) | new | https://www.seemoo.tu-darmstadt.de/theses/FIDO2-Platform-Authenticators/
+- Technical University of Darmstadt | 2024–2024 (1) | known not-a-list | https://www.seemoo.tu-darmstadt.de/theses/FIDO2-Platform-Authenticators/
 - Technical University of Darmstadt | 2025–2025 (1) | new | https://www.seemoo.tu-darmstadt.de/theses/o-ran-central-unit-resilience/
-- Technical University of Darmstadt | 2024–2024 (1) | new | https://www.seemoo.tu-darmstadt.de/theses/Responsible-Disclosure-im-IoT-Sektor/
-- Technical University of Darmstadt | 2024–2024 (1) | new | https://www.seemoo.tu-darmstadt.de/theses/routing-among-isolated-base-stations/
+- Technical University of Darmstadt | 2024–2024 (1) | known not-a-list | https://www.seemoo.tu-darmstadt.de/theses/Responsible-Disclosure-im-IoT-Sektor/
+- Technical University of Darmstadt | 2024–2024 (1) | known not-a-list | https://www.seemoo.tu-darmstadt.de/theses/routing-among-isolated-base-stations/
 - Technical University of Darmstadt | 2025–2025 (1) | new | https://www.seemoo.tu-darmstadt.de/theses/Secure-Transitions/
-- Technical University of Darmstadt | 2024–2024 (1) | new | https://www.seemoo.tu-darmstadt.de/theses/smartphone-pairing-schemes/
-- Technical University of Darmstadt | 2024–2024 (1) | new | https://www.seemoo.tu-darmstadt.de/theses/software-defined-wireless-networks/
+- Technical University of Darmstadt | 2024–2024 (1) | known not-a-list | https://www.seemoo.tu-darmstadt.de/theses/smartphone-pairing-schemes/
+- Technical University of Darmstadt | 2024–2024 (1) | known not-a-list | https://www.seemoo.tu-darmstadt.de/theses/software-defined-wireless-networks/
 - Technical University of Darmstadt | 2025–2025 (1) | new | https://www.seemoo.tu-darmstadt.de/theses/Statistically-analysing-the-Impact-of/
-- Technical University of Darmstadt | 2024–2025 (2) | new | https://www.seemoo.tu-darmstadt.de/theses/wireless-pbft-based-consensus-protocols/
+- Technical University of Darmstadt | 2024–2025 (2) | known not-a-list | https://www.seemoo.tu-darmstadt.de/theses/wireless-pbft-based-consensus-protocols/
 - Technical University of Darmstadt | 2025–2025 (1) | new | https://www.sla.tu-darmstadt.de/studium_sla/abschlussarbeiten_adps_sla/theses_sla_details_345664.en.jsp
 - Technical University of Darmstadt | 2017–2017 (1) | known not-a-list | http://www.stg.tu-darmstadt.de/teaching/theses/details_1536.en.jsp
 - Technical University of Darmstadt | 2017–2017 (1) | known not-a-list | http://www.stg.tu-darmstadt.de/teaching/theses/details_1600.en.jsp
@@ -2285,7 +2397,7 @@ One line per address: institution | years captured | known page? | address. Acce
 - Technical University of Darmstadt | 2023–2023 (1) | known not-a-list | https://www.stg.tu-darmstadt.de/teaching_stg/theses_stg/theses_stg_details_16512.en.jsp
 - Technical University of Darmstadt | 2023–2024 (2) | known not-a-list | https://www.stg.tu-darmstadt.de/teaching_stg/theses_stg/theses_stg_details_37824.en.jsp
 - Technical University of Darmstadt | 2023–2023 (1) | known not-a-list | https://www.stg.tu-darmstadt.de/teaching_stg/theses_stg/theses_stg_details_38528.en.jsp
-- Technical University of Darmstadt | 2024–2024 (1) | new | https://www.stg.tu-darmstadt.de/teaching_stg/theses_stg/theses_stg_details_39680.en.jsp
+- Technical University of Darmstadt | 2024–2024 (1) | known not-a-list | https://www.stg.tu-darmstadt.de/teaching_stg/theses_stg/theses_stg_details_39680.en.jsp
 - Technical University of Darmstadt | 2023–2023 (1) | known not-a-list | https://www.stg.tu-darmstadt.de/teaching_stg/theses_stg/theses_stg_details_43072.en.jsp
 - Technical University of Darmstadt | 2023–2023 (1) | known not-a-list | https://www.stg.tu-darmstadt.de/teaching_stg/theses_stg/theses_stg_details_43136.en.jsp
 - Technical University of Darmstadt | 2021–2021 (1) | known not-a-list | https://theorie.ikp.physik.tu-darmstadt.de/tnp/?doc=theses | 1 pages below it
@@ -2321,13 +2433,13 @@ One line per address: institution | years captured | known page? | address. Acce
 - Technical University of Denmark | 2019–2019 (1) | known not-a-list | https://www.alumni.dtu.dk/nyhed/nyhed?id=D9736F0D-21D4-4582-86FD-729ABD2DBE8C&utm_device=web&utm_source=RelatedNews&utm_campaign=Ph-d-Winter-School-2019
 - Technical University of Denmark | 2019–2019 (1) | known not-a-list | https://www.alumni.dtu.dk/nyhed/nyhed?id=F645C84C-D1D2-46AA-8D1B-B6029F87E91A&utm_device=web&utm_source=RelatedNews&utm_campaign=Phd-forsvar-Sebastian-Politis
 - Technical University of Denmark | 2019–2019 (1) | known not-a-list | https://www.alumni.dtu.dk/nyhed/nyhed?id=FCE375BB-10C5-47D3-A836-10C55F172E92&utm_device=web&utm_source=RelatedNews&utm_campaign=Phd-forsvar-Sebastian-Politis
-- Technical University of Denmark | 2024–2025 (2) | new | https://magic-molfun.dtu.dk/doctoral-candidates
+- Technical University of Denmark | 2024–2025 (2) | known not-a-list | https://magic-molfun.dtu.dk/doctoral-candidates
 - Technical University of Denmark | 2023–2023 (1) | known not-a-list | http://people.compute.dtu.dk/jbjo/theses.html
 - Technical University of Denmark | 2025–2025 (1) | new | https://sustain.dtu.dk/en/undervisning/phd-theses-2023
 - Technical University of Denmark | 2025–2025 (1) | new | https://sustain.dtu.dk/undervisning/phd-theses-2023
 - Technical University of Denmark | 2022–2022 (1) | known not-a-list | https://wiki.fysik.dtu.dk/gpaw/documentation/reports_presentations_and_theses.html
-- Technical University of Dortmund | 2024–2024 (1) | new | https://ad.bci.tu-dortmund.de/teaching/scientific-theses/
-- Technical University of Dortmund | 2024–2024 (1) | new | https://ait.reha.tu-dortmund.de/en/study/final-theses/
+- Technical University of Dortmund | 2024–2024 (1) | known not-a-list | https://ad.bci.tu-dortmund.de/teaching/scientific-theses/
+- Technical University of Dortmund | 2024–2024 (1) | known not-a-list | https://ait.reha.tu-dortmund.de/en/study/final-theses/
 - Technical University of Dortmund | 2025–2025 (1) | new | https://app.physik.tu-dortmund.de/arbeitsgruppe/aktuelles/details/dr-rune-dominik-verteidigt-erfolgreich-seine-dissertation-47780/
 - Technical University of Dortmund | 2022–2025 (3) | known not-a-list | https://app.physik.tu-dortmund.de/en/teaching/dissertations/
 - Technical University of Dortmund | 2025–2025 (1) | new | https://apt.bci.tu-dortmund.de/professorship/team/phd-candidates/felix-buthmann/
@@ -2338,9 +2450,9 @@ One line per address: institution | years captured | known page? | address. Acce
 - Technical University of Dortmund | 2025–2025 (1) | new | https://apt.bci.tu-dortmund.de/professorship/team/phd-candidates/ronja-heming/
 - Technical University of Dortmund | 2025–2025 (1) | new | https://apt.bci.tu-dortmund.de/professorship/team/phd-candidates/sophia-volpert/
 - Technical University of Dortmund | 2023–2025 (2) | known not-a-list | https://apt.bci.tu-dortmund.de/teaching/final-theses/
-- Technical University of Dortmund | 2024–2024 (1) | new | https://bise.wiwi.tu-dortmund.de/en/teaching/theses/?tabindex=1&cHash=d9b0343125446c56885600f25a096039
+- Technical University of Dortmund | 2024–2024 (1) | known not-a-list | https://bise.wiwi.tu-dortmund.de/en/teaching/theses/?tabindex=1&cHash=d9b0343125446c56885600f25a096039
 - Technical University of Dortmund | 2025–2025 (1) | new | https://bmsd.ab.tu-dortmund.de/aktuelles/meldungen-2024/dissertation-fabian-guhr-42828/
-- Technical University of Dortmund | 2024–2024 (1) | new | https://bmsd.ab.tu-dortmund.de/details/dissertation-fabian-guhr-42828/
+- Technical University of Dortmund | 2024–2024 (1) | known not-a-list | https://bmsd.ab.tu-dortmund.de/details/dissertation-fabian-guhr-42828/
 - Technical University of Dortmund | 2020–2020 (1) | known not-a-list | https://brost.ifj.tu-dortmund.de/startseite/aktuelles/siic-fellow-michael-serwornoo-hat-dissertation-erfolgreich-verteidigt/
 - Technical University of Dortmund | 2022–2024 (3) | known not-a-list | https://cmt.physik.tu-dortmund.de/anders-group/teaching/theses/doctoral-theses/
 - Technical University of Dortmund | 2025–2025 (1) | new | https://cmt.physik.tu-dortmund.de/anders-group/teaching/theses/topics-offered/
@@ -2358,12 +2470,12 @@ One line per address: institution | years captured | known page? | address. Acce
 - Technical University of Dortmund | 2025–2025 (1) | new | https://div.kuwi.tu-dortmund.de/en/institut-fuer-diversitaetsstudien-teams/team-prof-dr-sigrid-nieberle/supervised-theses/
 - Technical University of Dortmund | 2023–2023 (1) | known not-a-list | https://e5.physik.tu-dortmund.de/en/teaching/theses/?tabindex=1&cHash=3b8ca6c90d1306ae435e6d8d47f03e90
 - Technical University of Dortmund | 2023–2023 (1) | known not-a-list | https://ed.wiwi.tu-dortmund.de/en/teaching/theses/current-topic-suggestions/
-- Technical University of Dortmund | 2024–2024 (1) | new | https://ep.tu-dortmund.de/meldung/jennifer-igler-verteidigt-dissertation-erfolgreich-45514/
+- Technical University of Dortmund | 2024–2024 (1) | known not-a-list | https://ep.tu-dortmund.de/meldung/jennifer-igler-verteidigt-dissertation-erfolgreich-45514/
 - Technical University of Dortmund | 2023–2023 (1) | known not-a-list | https://epc.raumplanung.tu-dortmund.de/en/teaching/theses/mastertheses/
 - Technical University of Dortmund | 2019–2021 (2) | known not-a-list | http://epc.tu-dortmund.de/wordpress/de/teaching/topics-for-theses/
 - Technical University of Dortmund | 2020–2020 (1) | known not-a-list | http://epc.tu-dortmund.de/wordpress/en/teaching/topics-for-theses/
 - Technical University of Dortmund | 2025–2025 (1) | new | https://es.wiwi.tu-dortmund.de/en/teaching/theses/thesis-form/
-- Technical University of Dortmund | 2024–2024 (1) | new | https://ewf.wiwi.tu-dortmund.de/en/teaching/theses/previous-theses/
+- Technical University of Dortmund | 2024–2024 (1) | known not-a-list | https://ewf.wiwi.tu-dortmund.de/en/teaching/theses/previous-theses/
 - Technical University of Dortmund | 2023–2024 (2) | known not-a-list | https://flw.mb.tu-dortmund.de/moritz-roidl-verteidigt-erfolgreich-seine-dissertation/
 - Technical University of Dortmund | 2025–2025 (1) | new | https://flw.mb.tu-dortmund.de/teaching/theses/theses-list/
 - Technical University of Dortmund | 2025–2025 (1) | new | https://flw.mb.tu-dortmund.de/teaching/theses/thesis-documents/
@@ -2376,7 +2488,7 @@ One line per address: institution | years captured | known page? | address. Acce
 - Technical University of Dortmund | 2025–2025 (1) | new | https://graduiertenzentrum.tu-dortmund.de/veranstaltungsdetail/time-and-selfmanagement-for-doctoral-candidates-50397/
 - Technical University of Dortmund | 2025–2025 (1) | new | https://gsoflog.lfo.tu-dortmund.de/news-und-events/phd-wissen-kumulative-dissertation/
 - Technical University of Dortmund | 2023–2023 (1) | known not-a-list | https://hdhf.zhb.tu-dortmund.de/en/professorship/doctoral-graduates/
-- Technical University of Dortmund | 2024–2024 (1) | new | https://ifs.ep.tu-dortmund.de/details/jennifer-igler-verteidigt-dissertation-erfolgreich-45514/
+- Technical University of Dortmund | 2024–2024 (1) | known not-a-list | https://ifs.ep.tu-dortmund.de/details/jennifer-igler-verteidigt-dissertation-erfolgreich-45514/
 - Technical University of Dortmund | 2023–2023 (1) | known not-a-list | https://ifs.ep.tu-dortmund.de/details/sabrina-koenig-dissertation-verteidigt-28862/?tabindex=1&cHash=38ddb47d532e4b06ff11a3c628e7dc58
 - Technical University of Dortmund | 2023–2023 (1) | known not-a-list | https://ifs.ep.tu-dortmund.de/details/thomas-brueggemann-verteidigt-dissertation-erfolgreich-31820/
 - Technical University of Dortmund | 2023–2023 (1) | known not-a-list | https://ifs.ep.tu-dortmund.de/en/details/thomas-brueggemann-successfully-defends-dissertation-31837/
@@ -2385,7 +2497,7 @@ One line per address: institution | years captured | known page? | address. Acce
 - Technical University of Dortmund | 2023–2023 (1) | known not-a-list | https://ifs.ep.tu-dortmund.de/institut/aktuelles/details/inga-ten-hagen-ehemalige-ifs-mitarbeiterin-verteidigt-dissertation-erfolgreich-29121/?tabindex=1&cHash=fe020e2fa150d64557450e98322d4e65
 - Technical University of Dortmund | 2023–2023 (1) | known not-a-list | https://ifs.ep.tu-dortmund.de/institut/aktuelles/details/sabrina-koenig-dissertation-verteidigt-28862/?tabindex=1&cHash=fe020e2fa150d64557450e98322d4e65
 - Technical University of Dortmund | 2025–2025 (1) | new | https://ifs.ep.tu-dortmund.de/nachrichtendetail/katharina-molitor-verteidigt-dissertation-erfolgreich-52310/
-- Technical University of Dortmund | 2024–2024 (1) | new | https://im.mb.tu-dortmund.de/en/study/theses/open-theses/?tabindex=1&cHash=176e36d6751d9de5f07de09b995cd6c1
+- Technical University of Dortmund | 2024–2024 (1) | known not-a-list | https://im.mb.tu-dortmund.de/en/study/theses/open-theses/?tabindex=1&cHash=176e36d6751d9de5f07de09b995cd6c1
 - Technical University of Dortmund | 2025–2025 (1) | new | https://im.mb.tu-dortmund.de/en/study/theses/theses-in-progress/
 - Technical University of Dortmund | 2023–2023 (1) | known not-a-list | https://im.mb.tu-dortmund.de/studium/abschlussarbeiten/open-theses/
 - Technical University of Dortmund | 2023–2023 (1) | known not-a-list | https://im.mb.tu-dortmund.de/studium/abschlussarbeiten/theses-in-progress/
@@ -2399,10 +2511,10 @@ One line per address: institution | years captured | known page? | address. Acce
 - Technical University of Dortmund | 2025–2025 (1) | new | https://leo.wiwi.tu-dortmund.de/en/teaching/theses/betreute-abschlussarbeiten/
 - Technical University of Dortmund | 2025–2025 (1) | new | https://leo.wiwi.tu-dortmund.de/en/teaching/theses/bewerbungsbogen/
 - Technical University of Dortmund | 2025–2025 (1) | new | https://leo.wiwi.tu-dortmund.de/en/teaching/theses/richtlinien/anforderungen/
-- Technical University of Dortmund | 2024–2024 (1) | new | https://leo.wiwi.tu-dortmund.de/en/teaching/theses/themenschwerpunkte/
-- Technical University of Dortmund | 2024–2024 (1) | new | https://llp.raumplanung.tu-dortmund.de/en/teaching/suggested-topics-for-theses/
+- Technical University of Dortmund | 2024–2024 (1) | known not-a-list | https://leo.wiwi.tu-dortmund.de/en/teaching/theses/themenschwerpunkte/
+- Technical University of Dortmund | 2024–2024 (1) | known not-a-list | https://llp.raumplanung.tu-dortmund.de/en/teaching/suggested-topics-for-theses/
 - Technical University of Dortmund | 2022–2025 (3) | known not-a-list | https://lwus.statistik.tu-dortmund.de/en/teaching/open-theses/
-- Technical University of Dortmund | 2024–2024 (1) | new | https://of.wiwi.tu-dortmund.de/en/teaching/theses/?tabindex=1&cHash=e6708ee7231683956eee1256d950cdff
+- Technical University of Dortmund | 2024–2024 (1) | known not-a-list | https://of.wiwi.tu-dortmund.de/en/teaching/theses/?tabindex=1&cHash=e6708ee7231683956eee1256d950cdff
 - Technical University of Dortmund | 2023–2024 (3) | known not-a-list | https://ow.zhb.tu-dortmund.de/en/teaching/final-theses-ba/ma/
 - Technical University of Dortmund | 2023–2024 (2) | known not-a-list | https://ow.zhb.tu-dortmund.de/en/teaching/phd/completed-dissertations/?tabindex=1&cHash=62c76384c15ced25001511f653694355
 - Technical University of Dortmund | 2023–2023 (1) | known not-a-list | https://ow.zhb.tu-dortmund.de/en/teaching/phd/ongoing-dissertations/
@@ -2410,9 +2522,9 @@ One line per address: institution | years captured | known page? | address. Acce
 - Technical University of Dortmund | 2018–2022 (4) | known not-a-list | http://www.perfect.lfo.tu-dortmund.de/dissertation-projects/
 - Technical University of Dortmund | 2021–2025 (3) | known not-a-list | https://physik.tu-dortmund.de/en/study/courses-and-qualification/doctoral-program/completed-dissertations/
 - Technical University of Dortmund | 2025–2025 (1) | new | https://pl.wiwi.tu-dortmund.de/en/teaching/theses/application/
-- Technical University of Dortmund | 2024–2025 (2) | new | https://rer.raumplanung.tu-dortmund.de/en/teaching/student-theses/
+- Technical University of Dortmund | 2024–2025 (2) | known not-a-list | https://rer.raumplanung.tu-dortmund.de/en/teaching/student-theses/
 - Technical University of Dortmund | 2022–2024 (4) | known not-a-list | https://res.raumplanung.tu-dortmund.de/en/teaching/final-theses/
-- Technical University of Dortmund | 2024–2024 (1) | new | https://res.raumplanung.tu-dortmund.de/en/team/doctoral-candidates/ | 3 pages below it
+- Technical University of Dortmund | 2024–2024 (1) | known not-a-list | https://res.raumplanung.tu-dortmund.de/en/team/doctoral-candidates/ | 3 pages below it
 - Technical University of Dortmund | 2025–2025 (1) | new | https://rim.raumplanung.tu-dortmund.de/en/teaching/student-theses/
 - Technical University of Dortmund | 2022–2022 (1) | known not-a-list | https://sgl.sowi.tu-dortmund.de/aktuelles/details/veroeffentlichung-der-dissertation-von-barabara-ocklenburg-15698/
 - Technical University of Dortmund | 2022–2023 (2) | known not-a-list | https://sgl.sowi.tu-dortmund.de/aktuelles/details/veroeffentlichung-der-dissertation-von-kim-marei-kusserow-22028/
@@ -2428,10 +2540,10 @@ One line per address: institution | years captured | known page? | address. Acce
 - Technical University of Dortmund | 2023–2023 (1) | known not-a-list | https://tb.bci.tu-dortmund.de/en/professorship/newsfeed/details/dissertation-thanet-pitakbut-25329/
 - Technical University of Dortmund | 2025–2025 (1) | new | https://tb.bci.tu-dortmund.de/nachrichtenarchiv/dissertation-thanet-pitakbut-25329/
 - Technical University of Dortmund | 2023–2023 (2) | known not-a-list | https://tb.bci.tu-dortmund.de/professur/aktuelles/details/dissertation-thanet-pitakbut-25329/
-- Technical University of Dortmund | 2024–2024 (1) | new | https://th.bci.tu-dortmund.de/team/phd-candidates/m-sc-espen-fritschka/
-- Technical University of Dortmund | 2024–2024 (1) | new | https://th.bci.tu-dortmund.de/team/phd-candidates/m-sc-kai-grenningloh/
-- Technical University of Dortmund | 2024–2024 (1) | new | https://th.bci.tu-dortmund.de/team/phd-candidates/m-sc-max-mustermann-vorlage-1/
-- Technical University of Dortmund | 2024–2025 (2) | new | https://th.bci.tu-dortmund.de/team/phd-candidates/m-sc-sebastian-peveling/
+- Technical University of Dortmund | 2024–2024 (1) | known not-a-list | https://th.bci.tu-dortmund.de/team/phd-candidates/m-sc-espen-fritschka/
+- Technical University of Dortmund | 2024–2024 (1) | known not-a-list | https://th.bci.tu-dortmund.de/team/phd-candidates/m-sc-kai-grenningloh/
+- Technical University of Dortmund | 2024–2024 (1) | known not-a-list | https://th.bci.tu-dortmund.de/team/phd-candidates/m-sc-max-mustermann-vorlage-1/
+- Technical University of Dortmund | 2024–2025 (2) | known not-a-list | https://th.bci.tu-dortmund.de/team/phd-candidates/m-sc-sebastian-peveling/
 - Technical University of Dortmund | 2025–2025 (1) | new | https://tie.wiwi.tu-dortmund.de/en/newsdetail/extension-of-the-application-deadline-for-theses-39460/
 - Technical University of Dortmund | 2023–2023 (1) | known not-a-list | https://tie.wiwi.tu-dortmund.de/en/teaching/theses/project-seminar/
 - Technical University of Dortmund | 2023–2025 (4) | known not-a-list | https://tie.wiwi.tu-dortmund.de/en/teaching/theses/scientific-working/
@@ -2444,7 +2556,7 @@ One line per address: institution | years captured | known page? | address. Acce
 - Technical University of Dortmund | 2025–2025 (1) | new | https://wiwi.tu-dortmund.de/en/eventdetail/dissertation-thesis-svenja-marie-huelter-55898/
 - Technical University of Dortmund | 2025–2025 (1) | new | https://wiwi.tu-dortmund.de/en/eventdetail/dissertation-thesis-svenja-marie-huelter-55899/
 - Technical University of Dortmund | 2022–2022 (1) | known not-a-list | https://wiwi.tu-dortmund.de/veranstaltungsdetail/dissertation-eisenmann-23938/
-- Technical University of Dortmund | 2024–2024 (1) | new | https://wkf-sb.tu-dortmund.de/details/sabrina-koenig-dissertation-verteidigt-1-31084/
+- Technical University of Dortmund | 2024–2024 (1) | known not-a-list | https://wkf-sb.tu-dortmund.de/details/sabrina-koenig-dissertation-verteidigt-1-31084/
 - Technical University of Dortmund | 2018–2018 (1) | known not-a-list | http://www.zhb.tu-dortmund.de/zhb/hdhf/en/teaching/graduation-theses/
 - Technical University of Munich | 2016–2017 (2) | known not-a-list | http://www.gs.tum.de/en/doctoral-candidates/administrative-matters/
 - Technical University of Munich | 2016–2018 (2) | known not-a-list | http://www.gs.tum.de/en/doctoral-candidates/qualification/transferable-skills-training/
@@ -2452,8 +2564,8 @@ One line per address: institution | years captured | known page? | address. Acce
 - Technical University of Munich | 2013–2013 (1) | known not-a-list | http://www.lsr.ei.tum.de/archiv/student-theses-archive/
 - Technical University of Munich | 2013–2013 (1) | known not-a-list | http://www.lsr.ei.tum.de/teaching/current-theses/
 - Technion – Israel Institute of Technology | 2021–2021 (1) | known not-a-list | https://alterman.net.technion.ac.il/student-theses/
-- Technion – Israel Institute of Technology | 2024–2024 (1) | new | https://alterman.technion.ac.il/student-theses/
-- Technion – Israel Institute of Technology | 2023–2023 (1) | known not-a-list | https://amouyal.net.technion.ac.il/group-theses/
+- Technion – Israel Institute of Technology | 2024–2025 (2) | known not-a-list | https://alterman.technion.ac.il/student-theses/
+- Technion – Israel Institute of Technology | 2023–2025 (2) | known not-a-list | https://amouyal.net.technion.ac.il/group-theses/
 - Technion – Israel Institute of Technology | 2023–2023 (1) | known not-a-list | https://designtech.net.technion.ac.il/phd-alumni/noam-attias/
 - Technion – Israel Institute of Technology | 2023–2023 (1) | known not-a-list | https://designtech.net.technion.ac.il/phd-alumni/rachel-getz-solomon/
 - Technion – Israel Institute of Technology | 2013–2016 (7) | known not-a-list | http://grad.technion.ac.il/Theses/FacultyAdvisors.asp?fac=1
@@ -2489,7 +2601,8 @@ One line per address: institution | years captured | known page? | address. Acce
 - Texas Tech University | 2013–2014 (4) | known not-a-list | http://www.depts.ttu.edu/classic_modern/langlab/placement-cbe.php
 - Texas Tech University | 2013–2014 (4) | known not-a-list | http://www.depts.ttu.edu/hs/nhr/rhim/doctoral_alumni.php
 - Texas Tech University | 2014–2014 (3) | known not-a-list | http://www.depts.ttu.edu/politicalscience/Degree%20Programs/JobPlacement.php
-- Texas Tech University | 2022–2023 (2) | known not-a-list | https://www.depts.ttu.edu/rawlsbusiness/about/cmc/placement/
+- Texas Tech University | 2025–2025 (1) | new | https://www.depts.ttu.edu/politicalscience/DegreePrograms/JobPlacement.php
+- Texas Tech University | 2022–2025 (3) | known not-a-list | https://www.depts.ttu.edu/rawlsbusiness/about/cmc/placement/
 - Texas Tech University | 2017–2021 (3) | known not-a-list | http://www.depts.ttu.edu/rawlsbusiness/about/cmc/placement.php
 - Texas Tech University | 2022–2023 (2) | known not-a-list | https://www.depts.ttu.edu/rawlsbusiness/graduate/phd/placements/ | 3 pages below it
 - Texas Tech University | 2013–2023 (6) | known not-a-list | http://www.depts.ttu.edu/scc/Practicum/Prac_Placement.php
@@ -2510,7 +2623,7 @@ One line per address: institution | years captured | known page? | address. Acce
 - The University of Mississippi | 2019–2019 (1) | known not-a-list | https://gradschool.olemiss.edu/tdm-parts-of-a-thesis-or-dissertation/
 - The University of Mississippi | 2022–2022 (1) | known not-a-list | https://news.olemiss.edu/new-initiatives-help-prepare-business-students-for-job-market/
 - The University of Mississippi | 2013–2016 (8) | known not-a-list | http://news.olemiss.edu/recreation-management-majors-enjoy-thriving-job-market/
-- The University of Texas at Austin | 2024–2024 (1) | new | https://go.mccombs.utexas.edu/MSF-7793_RFI-LP.html?utm_source=google&utm_medium=cpc&utm_campaign=MSF_2023_Search_Conversion&utm_content=Brand_MSF_Keywords&utm_term=ut%20msf&matchtype=b&adid=665641718346&targetid=kwd-296127212046&network=g&device=c&devicemodel=&gclid=Cj0KCQiA67CrBhC1ARIsACKAa8TCwaGAIPPhU3pnomiYt2Y5WPkveTOQuXdrOCQCeRELia0clEAyRccaAh4LEALw_wcB&extensionid=&placement=&adposition=&locationinterest=&locationphysical=9002065&campaigncode=5585&gad_source=1
+- The University of Texas at Austin | 2024–2024 (1) | known not-a-list | https://go.mccombs.utexas.edu/MSF-7793_RFI-LP.html?utm_source=google&utm_medium=cpc&utm_campaign=MSF_2023_Search_Conversion&utm_content=Brand_MSF_Keywords&utm_term=ut%20msf&matchtype=b&adid=665641718346&targetid=kwd-296127212046&network=g&device=c&devicemodel=&gclid=Cj0KCQiA67CrBhC1ARIsACKAa8TCwaGAIPPhU3pnomiYt2Y5WPkveTOQuXdrOCQCeRELia0clEAyRccaAh4LEALw_wcB&extensionid=&placement=&adposition=&locationinterest=&locationphysical=9002065&campaigncode=5585&gad_source=1
 - The University of Texas at Austin | 2023–2023 (1) | known not-a-list | https://la.utexas.edu/greatlearning/uta-data-science-business-analytics-program.html?&utm_source=Google&utm_medium=search&utm_campaign=BA_Int_Search_Major_Broad_US&adgroup_id=120831931138&campaign_id=12571339610&Keyword=data%20science%20degree&placement=&gclid=Cj0KCQjwqp-LBhDQARIsAO0a6aIicDeb3PCrHfLWcLp71-P-DrbxTO9rEY7PY3BARNQtAWNjqqrB_HQaAiOMEALw_wcB
 - The University of Texas at Austin | 2013–2017 (35) | known not-a-list | http://www.mccombs.utexas.edu/404?item=%2f2013%2f02%2fmoney-ethics-and-energy-at-the-alumni-business-conference&user=extranet%5cAnonymous&site=website
 - The University of Texas at Austin | 2013–2022 (67) | known not-a-list | http://www.mccombs.utexas.edu/Alumni | 25 pages below it
@@ -2525,6 +2638,7 @@ One line per address: institution | years captured | known page? | address. Acce
 - The University of Texas at Austin | 2022–2022 (1) | known not-a-list | http://mccombs.utexas.edu/centers-and-initiatives/center-for-global-business/alumni/
 - The University of Texas at Austin | 2023–2023 (1) | known not-a-list | https://www.mccombs.utexas.edu/centers-and-initiatives/harkey-institute-for-entrepreneurial-studies/entrepreneurship-minor/alumni/
 - The University of Texas at Austin | 2022–2022 (1) | known not-a-list | https://www.mccombs.utexas.edu/centers-and-initiatives/jon-brumley-texas-venture-labs/alumni/
+- The University of Texas at Austin | 2025–2025 (1) | new | https://www.mccombs.utexas.edu/centers-initiatives/harkey-institute-for-entrepreneurial-studies/entrepreneurship-minor/alumni/
 - The University of Texas at Austin | 2021–2021 (1) | known not-a-list | https://www.mccombs.utexas.edu/Centers/GSLI/Alumni
 - The University of Texas at Austin | 2020–2020 (1) | known not-a-list | https://www.mccombs.utexas.edu/Centers/Social-Innovation-Initiative/Alumni
 - The University of Texas at Austin | 2018–2020 (3) | known not-a-list | https://www.mccombs.utexas.edu/Centers/Texas-Venture-Labs/Alumni
@@ -2546,11 +2660,13 @@ One line per address: institution | years captured | known page? | address. Acce
 - The University of Texas at Austin | 2014–2015 (12) | known not-a-list | http://www.mccombs.utexas.edu/MPA/Alumni.aspx
 - The University of Texas at Austin | 2013–2014 (4) | known not-a-list | http://www.mccombs.utexas.edu/MSTC/Alumni
 - The University of Texas at Austin | 2013–2014 (7) | known not-a-list | http://www.mccombs.utexas.edu/MSTC/Alumni.aspx
-- The University of Texas at Austin | 2024–2024 (1) | new | https://www.mccombs.utexas.edu/news-and-events/news-search/?newsCategory=Alumni%20News
+- The University of Texas at Austin | 2024–2024 (1) | known not-a-list | https://www.mccombs.utexas.edu/news-and-events/news-search/?newsCategory=Alumni%20News
+- The University of Texas at Austin | 2025–2025 (1) | known program-list | https://www.mccombs.utexas.edu/placement/
 - The University of Texas at Austin | 2013–2015 (8) | known not-a-list | http://www.mccombs.utexas.edu/Student-Organizations/BGBA/BGBA-Alumni
 - The University of Texas at Austin | 2013–2015 (15) | known not-a-list | http://www.mccombs.utexas.edu/Student-Organizations/BGBA/BGBA-Alumni.aspx
 - The University of Texas at Austin | 2013–2015 (13) | known not-a-list | http://www.mccombs.utexas.edu/Student-Organizations/Sigma-Fellows/Alumni
 - The University of Texas at Austin | 2013–2015 (11) | known not-a-list | http://www.mccombs.utexas.edu/Student-Organizations/Sigma-Fellows/Alumni.aspx
+- The University of Texas at Austin | 2025–2025 (1) | new | https://onlineexeced.mccombs.utexas.edu/uta-data-science-business-analytics-program?&utm_source=Google&utm_medium=search&utm_campaign=BA_Int_Search_Program_Exact_Mexico&adgroup_id=128755045660&campaign_id=14864273453&Keyword=data%20analysis%20program&placement=&gclid=CjwKCAjwiuuRBhBvEiwAFXKaNLZu5zm8qqXjFLuJNVZsa0WhSZMakEEhq5csz6tPtUO1Yr195Tm5uxoCCzgQAvD_BwE
 - The University of Texas at Dallas | 2013–2014 (5) | known not-a-list | http://jindal.utdallas.edu/academic-programs/phd-programs/international-management-studies/phd-applicants-and-candidates/
 - The University of Texas at Dallas | 2013–2014 (6) | known not-a-list | http://jindal.utdallas.edu/alumni/
 - The University of Texas at Dallas | 2015–2015 (4) | known not-a-list | http://jindal.utdallas.edu/phd-programs/international-management-studies/phd-applicants-and-candidates/
@@ -2560,33 +2676,38 @@ One line per address: institution | years captured | known page? | address. Acce
 - The University of Texas at El Paso | 2016–2016 (27) | known not-a-list | http://coe.utep.edu/atcp/?pdf=classroom-management-dissertations
 - The University of Texas at El Paso | 2016–2016 (1) | known not-a-list | http://keck.utep.edu/?uni=business-dissertation-topics
 - The University of Texas at El Paso | 2018–2019 (2) | known not-a-list | https://www.utep.edu/business/graduate/phd/academic-placements.html
+- Tilburg University | 2025–2025 (1) | known not-a-list | https://research.tilburguniversity.edu/en/activities/alumni-day
 - Tilburg University | 2023–2023 (1) | known not-a-list | https://research.tilburguniversity.edu/en/activities/annual-conference-vrg-alumni
 - Tilburg University | 2019–2019 (1) | known not-a-list | https://research.tilburguniversity.edu/en/activities/dissertation-supervised-ben-jacobsen
 - Tilburg University | 2019–2019 (1) | known single-record | https://research.tilburguniversity.edu/en/activities/dissertation-supervised-rmh-deitz
+- Tilburg University | 2025–2025 (1) | known not-a-list | https://research.tilburguniversity.edu/en/activities/dissertation-supervised-wf-de-koning
 - Tilburg University | 2019–2019 (1) | known single-record | https://research.tilburguniversity.edu/en/activities/dissertation-supervised-zhang-xiliang
 - Tilburg University | 2019–2019 (1) | known not-a-list | https://research.tilburguniversity.edu/en/activities/external-examiner-of-dissertation-mr-m-wilkinson
 - Tilburg University | 2022–2022 (1) | known not-a-list | https://research.tilburguniversity.edu/en/activities/five-theses-on-the-catholic-church-in-our-time
 - Tilburg University | 2022–2024 (3) | known not-a-list | https://research.tilburguniversity.edu/en/activities/five-theses-on-the-catholic-church-in-our-time-2
 - Tilburg University | 2021–2021 (1) | known not-a-list | https://research.tilburguniversity.edu/en/activities/member-dissertation-committee-student-a-perea-y-monsuw%C3%A9
 - Tilburg University | 2019–2019 (1) | known single-record | https://research.tilburguniversity.edu/en/activities/member-dissertation-committee-student-np-fumero
-- Tilburg University | 2023–2023 (1) | known not-a-list | https://research.tilburguniversity.edu/en/activities/member-dissertation-committee-student-p-smit
+- Tilburg University | 2023–2025 (2) | known not-a-list | https://research.tilburguniversity.edu/en/activities/member-dissertation-committee-student-p-smit
 - Tilburg University | 2020–2020 (1) | known not-a-list | https://research.tilburguniversity.edu/en/activities/phd-dissertation-jacob-hartvig-sandager-hansen-i-am-the-bubble-ma
+- Tilburg University | 2025–2025 (1) | known not-a-list | https://research.tilburguniversity.edu/en/activities/phd-dissertation-matthias-pohlig-why-do-working-lives-become-uneq
+- Tilburg University | 2025–2025 (1) | new | https://research.tilburguniversity.edu/en/clippings/coverage-of-dissertation
+- Tilburg University | 2025–2025 (1) | new | https://research.tilburguniversity.edu/en/datasets/dissertation-the-role-of-tradeoffs-and-moralization-in-the-adopti-3
 - Tilburg University | 2023–2023 (1) | known not-a-list | https://www.tilburguniversity.edu/about/schools/tshd/departments/dcu/dissertations-culture-studies
 - Tilburg University | 2022–2022 (1) | known not-a-list | https://www.tilburguniversity.edu/intranet/more-news/online-talk-series-phd-candidates-artificial-intelligence-it-a-human-issue
 - Tilburg University | 2021–2023 (3) | known not-a-list | https://www.tilburguniversity.edu/nl/onderwijs/talen/phd-candidates
 - Tsinghua University | 2021–2021 (4) | known not-a-list | https://cslt.riit.tsinghua.edu.cn/mediawiki/index.php?title=Pre-dissertation_of_Miao_Fan&action=edit | 2 pages below it
 - Universidad Politécnica de Madrid | 2023–2023 (1) | known not-a-list | https://minasyenergia.upm.es/business-placements.html
-- Universitat Autònoma de Barcelona | 2025–2025 (1) | new | https://portalrecerca.uab.cat/ca/persons/carme-molinero-ruiz-8/supervised-student-theses/
-- Universitat Autònoma de Barcelona | 2025–2025 (1) | new | https://portalrecerca.uab.cat/ca/persons/david-molina-gallart-7/supervised-student-theses/
-- Universitat Autònoma de Barcelona | 2024–2024 (1) | new | https://portalrecerca.uab.cat/ca/persons/joaquin-beltran-antolin-3/supervised-student-theses/
-- Universitat Autònoma de Barcelona | 2024–2024 (1) | new | https://portalrecerca.uab.cat/ca/persons/lucia-molina-martinez-3/supervised-student-theses/?relations=studentthesis
-- Universitat Autònoma de Barcelona | 2024–2024 (2) | new | https://portalrecerca.uab.cat/en/persons/lucia-molina-martinez-3/supervised-student-theses/
-- Universitat Autònoma de Barcelona | 2024–2024 (1) | new | https://portalrecerca.uab.cat/en/persons/rosella-nicolini-8/supervised-student-theses/
-- Universitat Autònoma de Barcelona | 2024–2024 (1) | new | https://portalrecerca.uab.cat/es/persons/alfredo-jes%C3%A3%C5%A1s-mi%C3%A3ano-molina/supervised-student-theses/
-- Universitat Autònoma de Barcelona | 2024–2024 (1) | new | https://portalrecerca.uab.cat/es/persons/carlos-alberto-saura-antolin-3/supervised-student-theses/
-- Universitat Autònoma de Barcelona | 2024–2025 (2) | new | https://portalrecerca.uab.cat/es/persons/carolina-gala-duran-3/supervised-student-theses/
-- Universitat Autònoma de Barcelona | 2024–2025 (8) | new | https://portalrecerca.uab.cat/es/persons/joaquin-beltran-antolin-3/supervised-student-theses/
-- Universitat Autònoma de Barcelona | 2024–2024 (2) | new | https://portalrecerca.uab.cat/es/persons/lucia-molina-martinez-3/supervised-student-theses/
+- Universitat Autònoma de Barcelona | 2025–2025 (1) | known not-a-list | https://portalrecerca.uab.cat/ca/persons/carme-molinero-ruiz-8/supervised-student-theses/
+- Universitat Autònoma de Barcelona | 2025–2025 (1) | known not-a-list | https://portalrecerca.uab.cat/ca/persons/david-molina-gallart-7/supervised-student-theses/
+- Universitat Autònoma de Barcelona | 2024–2024 (1) | known not-a-list | https://portalrecerca.uab.cat/ca/persons/joaquin-beltran-antolin-3/supervised-student-theses/
+- Universitat Autònoma de Barcelona | 2024–2024 (1) | known not-a-list | https://portalrecerca.uab.cat/ca/persons/lucia-molina-martinez-3/supervised-student-theses/?relations=studentthesis
+- Universitat Autònoma de Barcelona | 2024–2024 (2) | known not-a-list | https://portalrecerca.uab.cat/en/persons/lucia-molina-martinez-3/supervised-student-theses/
+- Universitat Autònoma de Barcelona | 2024–2024 (1) | known not-a-list | https://portalrecerca.uab.cat/en/persons/rosella-nicolini-8/supervised-student-theses/
+- Universitat Autònoma de Barcelona | 2024–2024 (1) | known not-a-list | https://portalrecerca.uab.cat/es/persons/alfredo-jes%C3%A3%C5%A1s-mi%C3%A3ano-molina/supervised-student-theses/
+- Universitat Autònoma de Barcelona | 2024–2024 (1) | known not-a-list | https://portalrecerca.uab.cat/es/persons/carlos-alberto-saura-antolin-3/supervised-student-theses/
+- Universitat Autònoma de Barcelona | 2024–2025 (2) | known not-a-list | https://portalrecerca.uab.cat/es/persons/carolina-gala-duran-3/supervised-student-theses/
+- Universitat Autònoma de Barcelona | 2024–2025 (8) | known not-a-list | https://portalrecerca.uab.cat/es/persons/joaquin-beltran-antolin-3/supervised-student-theses/
+- Universitat Autònoma de Barcelona | 2024–2024 (2) | known not-a-list | https://portalrecerca.uab.cat/es/persons/lucia-molina-martinez-3/supervised-student-theses/
 - Universitat Politècnica de Catalunya | 2023–2023 (2) | known not-a-list | https://entel.phd.upc.edu/popup_login_form?came_from=https://entel.phd.upc.edu/en/phd-programme-in-telematics-engineering/theses-completed-1
 - Universitat Politècnica de Catalunya | 2021–2021 (1) | known not-a-list | https://entel.upc.edu/en/phd-programme-in-telematics-engineering-1/theses-completed-1
 - Universitat Politècnica de Catalunya | 2021–2021 (1) | known not-a-list | https://entel.upc.edu/en/phd-programme-in-telematics-engineering-1/theses-in-progress
@@ -2596,18 +2717,18 @@ One line per address: institution | years captured | known page? | address. Acce
 - Universitat Pompeu Fabra | 2016–2016 (20) | known not-a-list | http://complex.upf.edu/?ma=business-dissertation-topics
 - Universitat Pompeu Fabra | 2013–2014 (4) | known not-a-list | http://www.upf.edu/alumni/actualitat/lluisgalter.html
 - Universitat Pompeu Fabra | 2013–2014 (4) | known not-a-list | http://www.upf.edu/alumni/actualitat/nachosequeira.html
-- Universitat Pompeu Fabra | 2024–2024 (1) | new | https://www.upf.edu/ca/web/etic/doctoral-theses
+- Universitat Pompeu Fabra | 2024–2024 (1) | known not-a-list | https://www.upf.edu/ca/web/etic/doctoral-theses
 - Universitat Pompeu Fabra | 2019–2021 (2) | known not-a-list | https://www.upf.edu/ca/web/thinkclima/phd-dissertations
 - Universitat Pompeu Fabra | 2018–2021 (3) | known not-a-list | https://www.upf.edu/en/web/etic/doctoral-theses
 - Universitat Pompeu Fabra | 2022–2024 (3) | known not-a-list | https://www.upf.edu/en/web/gianni-vattimo/phd-candidates
 - Universitat Pompeu Fabra | 2023–2023 (1) | known not-a-list | https://www.upf.edu/en/web/mdm-dtic/publications-2016/-/asset_publisher/19jPCC3kyvCC/content/rullo-a-serra-e-bertino-e-lobo-j-shortfall-based-optimal-placement-of-security-resources-for-mobile-iot-scenarios-computer-security-esorics-2017-lectu?_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_19jPCC3kyvCC_assetEntryId=76310464&_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_19jPCC3kyvCC_redirect=https%3A%2F%2Fwww.upf.edu%3A443%2Fen%2Fweb%2Fmdm-dtic%2Fpublications-2016%3Fp_p_id%3Dcom_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_19jPCC3kyvCC%26p_p_lifecycle%3D0%26p_p_state%3Dnormal%26p_p_mode%3Dview%26_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_19jPCC3kyvCC_cur%3D8%26_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_19jPCC3kyvCC_delta%3D20%26p_r_p_resetCur%3Dfalse%26_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_19jPCC3kyvCC_assetEntryId%3D76310464
-- Universitat Pompeu Fabra | 2024–2024 (1) | new | https://www.upf.edu/es/web/ecerm/ph.d.-candidates
+- Universitat Pompeu Fabra | 2024–2024 (1) | known not-a-list | https://www.upf.edu/es/web/ecerm/ph.d.-candidates
 - Universitat Pompeu Fabra | 2020–2024 (2) | known not-a-list | https://www.upf.edu/es/web/etic/doctoral-theses
 - Universitat Pompeu Fabra | 2013–2014 (5) | known not-a-list | http://www.upf.edu/fundacio/en/alumni.html
 - Universitat Pompeu Fabra | 2013–2014 (5) | known not-a-list | http://www.upf.edu/fundacio/es/alumni.html
 - Universitat Pompeu Fabra | 2013–2014 (6) | known not-a-list | http://www.upf.edu/upflaix-alumni/num24cast.html
-- Universitat Pompeu Fabra | 2024–2024 (1) | new | https://www.upf.edu/web/alumni/ambullsupf-blog/-/asset_publisher/ZvzlTdJVZvyF/content/doctorats-industrials-transferencia-coneixement-alumni/maximized
-- Universitat Pompeu Fabra | 2024–2024 (1) | new | https://www.upf.edu/web/alumni/noticies/-/asset_publisher/s4auSRSX2iFp/content/doctorats-industrials-transferencia-coneixement-alumni/maximized
+- Universitat Pompeu Fabra | 2024–2025 (2) | known not-a-list | https://www.upf.edu/web/alumni/ambullsupf-blog/-/asset_publisher/ZvzlTdJVZvyF/content/doctorats-industrials-transferencia-coneixement-alumni/maximized
+- Universitat Pompeu Fabra | 2024–2024 (1) | known not-a-list | https://www.upf.edu/web/alumni/noticies/-/asset_publisher/s4auSRSX2iFp/content/doctorats-industrials-transferencia-coneixement-alumni/maximized
 - Universitat Pompeu Fabra | 2017–2017 (1) | known not-a-list | https://www.upf.edu/web/cbem/theses-proposals
 - Universitat Pompeu Fabra | 2020–2020 (1) | known not-a-list | https://www.upf.edu/web/diaz-noci/dissertations
 - Universitat Pompeu Fabra | 2019–2023 (4) | known not-a-list | https://www.upf.edu/web/ecerm/ph.d.-candidates
@@ -2616,10 +2737,10 @@ One line per address: institution | years captured | known page? | address. Acce
 - Universitat Pompeu Fabra | 2023–2023 (1) | known not-a-list | https://www.upf.edu/web/fubintlab/phd-theses | 8 pages below it
 - Universitat Pompeu Fabra | 2018–2021 (3) | known not-a-list | https://www.upf.edu/web/gritim/gritim-upf-phd-candidates
 - Universitat Pompeu Fabra | 2019–2024 (3) | known not-a-list | https://www.upf.edu/web/grtp/phd-candidates
-- Universitat Pompeu Fabra | 2024–2024 (1) | new | https://www.upf.edu/web/mdm-dtic/publications-2016/-/asset_publisher/19jPCC3kyvCC/content/rullo-a-serra-e-bertino-e-lobo-j-shortfall-based-optimal-placement-of-security-resources-for-mobile-iot-scenarios-computer-security-esorics-2017-lectu?_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_19jPCC3kyvCC_assetEntryId=76310464&_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_19jPCC3kyvCC_showRelatedAssets=true
+- Universitat Pompeu Fabra | 2024–2024 (1) | known not-a-list | https://www.upf.edu/web/mdm-dtic/publications-2016/-/asset_publisher/19jPCC3kyvCC/content/rullo-a-serra-e-bertino-e-lobo-j-shortfall-based-optimal-placement-of-security-resources-for-mobile-iot-scenarios-computer-security-esorics-2017-lectu?_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_19jPCC3kyvCC_assetEntryId=76310464&_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_19jPCC3kyvCC_showRelatedAssets=true
 - Universitat Pompeu Fabra | 2023–2023 (2) | known not-a-list | https://www.upf.edu/web/nets/doctoral-theses
 - Universitat Pompeu Fabra | 2023–2023 (1) | known not-a-list | https://www.upf.edu/web/phd-school/doctoral-theses
-- Universitat Pompeu Fabra | 2024–2024 (1) | new | https://www.upf.edu/web/phd-school/doctoral-theses-chart-year
+- Universitat Pompeu Fabra | 2024–2024 (1) | known not-a-list | https://www.upf.edu/web/phd-school/doctoral-theses-chart-year
 - Universitat Pompeu Fabra | 2022–2022 (1) | known not-a-list | https://www.upf.edu/web/taln/theses/-/ppc/vistaAmpliada/TES7920/CAT/im9ssRtfdSmj?p_auth=rJzytg8x
 - Universitat Pompeu Fabra | 2022–2022 (1) | known not-a-list | https://www.upf.edu/web/taln/theses/-/ppc/vistaAmpliada/TES8167/CAT/im9ssRtfdSmj?p_auth=rJzytg8x
 - Universitat Pompeu Fabra | 2022–2022 (1) | known not-a-list | https://www.upf.edu/web/taln/theses/-/ppc/vistaAmpliada/TES8176/CAT/im9ssRtfdSmj?p_auth=rJzytg8x
@@ -2642,7 +2763,7 @@ One line per address: institution | years captured | known page? | address. Acce
 - University at Buffalo, The State University of New York | 2022–2022 (1) | known not-a-list | https://management.buffalo.edu/career-resource-center/students/preparation/job-market-research-tools.html
 - University at Buffalo, The State University of New York | 2023–2024 (2) | known not-a-list | https://management.buffalo.edu/career-resource-center/students/preparation/job-market-research-tools/business-company.html
 - University at Buffalo, The State University of New York | 2022–2025 (2) | known not-a-list | https://management.buffalo.edu/career-resource-center/students/preparation/job-market-research-tools/business-company/functional-area-resources.html
-- University at Buffalo, The State University of New York | 2024–2024 (1) | new | https://management.buffalo.edu/career-resource-center/students/preparation/job-market-research-tools/business-company/functional-area-resources/consulting.html
+- University at Buffalo, The State University of New York | 2024–2024 (1) | known not-a-list | https://management.buffalo.edu/career-resource-center/students/preparation/job-market-research-tools/business-company/functional-area-resources/consulting.html
 - University at Buffalo, The State University of New York | 2023–2023 (1) | known not-a-list | https://management.buffalo.edu/career-resource-center/students/preparation/job-market-research-tools/business-company/functional-area-resources/consulting/career-overview.html
 - University at Buffalo, The State University of New York | 2023–2024 (2) | known not-a-list | https://management.buffalo.edu/career-resource-center/students/preparation/job-market-research-tools/business-company/functional-area-resources/consulting/industry-overview.html
 - University at Buffalo, The State University of New York | 2023–2023 (2) | known not-a-list | https://management.buffalo.edu/career-resource-center/students/preparation/job-market-research-tools/business-company/functional-area-resources/supply-chains-operations-management.html
@@ -2658,12 +2779,12 @@ One line per address: institution | years captured | known page? | address. Acce
 - University of Alberta | 2019–2019 (1) | known program-list | https://www.ualberta.ca/business/programs/phd/our-students/job-market
 - University of Alberta | 2019–2019 (1) | known program-list | https://www.ualberta.ca/business/programs/phd/our-students/list-of-graduates
 - University of Alberta | 2023–2023 (1) | known not-a-list | https://www.ualberta.ca/cellbiology/graduate-program/preparation-of-theses.html
-- University of Alberta | 2025–2025 (1) | new | https://www.ualberta.ca/en/business/programs/phd/graduates.html
-- University of Alberta | 2024–2025 (2) | new | https://www.ualberta.ca/en/steadward-centre/get-involved/student-placements.html
+- University of Alberta | 2025–2025 (1) | known program-list | https://www.ualberta.ca/en/business/programs/phd/graduates.html
+- University of Alberta | 2024–2025 (2) | known not-a-list | https://www.ualberta.ca/en/steadward-centre/get-involved/student-placements.html
 - University of Alberta | 2019–2019 (1) | known not-a-list | https://www.ualberta.ca/human-resource-services/hiring/summer-temporary-employment-programs/metis-youth-summer-placement-program
 - University of Alberta | 2023–2023 (1) | known not-a-list | https://www.ualberta.ca/steadward-centre/get-involved/student-placements.html
 - University of Alberta | 2019–2019 (2) | known not-a-list | https://www.ualberta.ca/toolkit/visual-identity/our-logo/logo-placement-multiple-logos
-- University of Amsterdam | 2024–2024 (1) | new | https://aihr.uva.nl/about-aihr/research-data-management/research-data-management-for-students-and-phd-candidates.html
+- University of Amsterdam | 2024–2024 (1) | known not-a-list | https://aihr.uva.nl/about-aihr/research-data-management/research-data-management-for-students-and-phd-candidates.html
 - University of Arizona | 2020–2020 (1) | known not-a-list | https://ais.arizona.edu/dissertation/force-or-choice-exploring-contemporary-sex-trafficking-native-peoples
 - University of Arizona | 2017–2022 (2) | known not-a-list | http://gwr.arizona.edu/content/designing-workable-plan-your-thesis-or-dissertation
 - University of Arizona | 2016–2016 (1) | known not-a-list | https://www.lpl.arizona.edu/graduate/financial/marshall-foundation-dissertation-fellowship
@@ -2674,11 +2795,11 @@ One line per address: institution | years captured | known page? | address. Acce
 - University of Bath | 2018–2019 (2) | known not-a-list | http://www.bath.ac.uk/business/placement-students/
 - University of Bath | 2020–2021 (2) | known not-a-list | https://www.bath.ac.uk/campaigns/improve-your-employability-with-a-school-of-management-professional-placement/
 - University of Bath | 2017–2023 (6) | known not-a-list | http://www.bath.ac.uk/campaigns/improve-your-employability-with-an-engineering-placement-year/
-- University of Bath | 2022–2023 (2) | known not-a-list | https://www.bath.ac.uk/campaigns/school-of-management-placement-students-make-sense-for-your-business/
-- University of Bath | 2019–2019 (1) | known not-a-list | https://www.bath.ac.uk/campaigns/support-for-distance-learning-students-and-for-those-on-placement-or-fieldwork/
-- University of Bath | 2020–2023 (2) | known not-a-list | https://www.bath.ac.uk/case-studies/kate-chose-a-placement-to-help-her-make-decisions-about-her-future/
-- University of Bath | 2023–2023 (1) | known not-a-list | https://www.bath.ac.uk/case-studies/on-placement-working-in-project-management-at-edf/
-- University of Bath | 2024–2024 (1) | new | https://www.bath.ac.uk/case-studies/using-my-placement-to-change-from-software-engineering-to-product-management/
+- University of Bath | 2022–2025 (3) | known not-a-list | https://www.bath.ac.uk/campaigns/school-of-management-placement-students-make-sense-for-your-business/
+- University of Bath | 2019–2025 (2) | known not-a-list | https://www.bath.ac.uk/campaigns/support-for-distance-learning-students-and-for-those-on-placement-or-fieldwork/
+- University of Bath | 2020–2025 (3) | known not-a-list | https://www.bath.ac.uk/case-studies/kate-chose-a-placement-to-help-her-make-decisions-about-her-future/
+- University of Bath | 2023–2025 (2) | known not-a-list | https://www.bath.ac.uk/case-studies/on-placement-working-in-project-management-at-edf/
+- University of Bath | 2024–2025 (2) | known not-a-list | https://www.bath.ac.uk/case-studies/using-my-placement-to-change-from-software-engineering-to-product-management/
 - University of Bath | 2020–2020 (1) | known not-a-list | https://www.bath.ac.uk/guides/advice-for-eu-eea-or-swiss-students-currently-on-a-placement-erasmus-or-exchange-scheme/
 - University of Bath | 2019–2020 (2) | known not-a-list | https://www.bath.ac.uk/guides/advice-for-uk-students-currently-on-a-placement-erasmus-or-exchange-scheme-in-the-eu-eea/
 - University of Bath | 2021–2024 (5) | known not-a-list | https://www.bath.ac.uk/guides/guide-to-undertaking-a-placement-or-other-work-experience-activity-during-your-doctorate/
@@ -2689,6 +2810,7 @@ One line per address: institution | years captured | known page? | address. Acce
 - University of Bath | 2013–2013 (1) | known not-a-list | http://www.bath.ac.uk/rdso/business/placements/
 - University of Bath | 2021–2024 (2) | known not-a-list | https://www.bath.ac.uk/teams/school-of-management-placements-projects-and-international-studies-team/
 - University of Bath | 2017–2017 (1) | known not-a-list | http://blogs.bath.ac.uk/csct/2016/three-month-placement-at-northwestern-university-and-pacifichem-in-hawaii/
+- University of Bath | 2025–2025 (1) | new | https://researchportal.bath.ac.uk/en/persons/carolin-villforth/supervised-student-theses/
 - University of Bath | 2020–2020 (1) | known not-a-list | https://researchportal.bath.ac.uk/en/persons/karoline-von-oppen/supervised-student-theses/
 - University of Bergamo | 2019–2023 (4) | known not-a-list | https://en.unibg.it/engagement/business-services/placement
 - University of Bologna | 2022–2022 (1) | known not-a-list | https://apice.unibo.it/xwiki/bin/latexexport/Theses/CeccoliniXamarin16
@@ -2705,7 +2827,7 @@ One line per address: institution | years captured | known page? | address. Acce
 - University of Bologna | 2021–2022 (5) | known not-a-list | https://apice.unibo.it/xwiki/bin/view/Theses/TuCSoNTooling2016
 - University of Bologna | 2019–2019 (1) | known not-a-list | https://corsi.unibo.it/2cycle/AerospaceEngineering/study-grant-for-dissertations-abroad
 - University of Bologna | 2019–2019 (1) | known not-a-list | https://corsi.unibo.it/2cycle/ChemicalProcessEngineering-STEM/study-grant-for-dissertations-abroad
-- University of Bologna | 2024–2024 (1) | new | https://corsi.unibo.it/2cycle/CivilEngineering/study-grant-for-dissertations-abroad
+- University of Bologna | 2024–2024 (1) | known not-a-list | https://corsi.unibo.it/2cycle/CivilEngineering/study-grant-for-dissertations-abroad
 - University of Bologna | 2022–2022 (1) | known not-a-list | https://corsi.unibo.it/2cycle/ElectronicEngineering/study-grant-for-dissertations-abroad
 - University of Bologna | 2023–2023 (1) | known not-a-list | https://jobplacement.unibo.it/it/agenda/ferrari-f1-engineering-academy
 - University of Bologna | 2017–2017 (1) | known not-a-list | http://middleware.unibo.it/theses/industrial | 10 pages below it
@@ -2725,16 +2847,18 @@ One line per address: institution | years captured | known page? | address. Acce
 - University of Brighton | 2019–2020 (2) | known not-a-list | https://blogs.brighton.ac.uk/asksportservicemanagement/wp-login.php?redirect_to=https%3A%2F%2Fblogs.brighton.ac.uk%2Fasksportservicemanagement%2Freading-research-dissertations%2Fdissertations%2Fworking-with-your-supervisor
 - University of Brighton | 2023–2023 (3) | known not-a-list | https://blogs.brighton.ac.uk/business/wp-login.php?redirect_to=https%3A%2F%2Fblogs.brighton.ac.uk%2Fbusiness%2F2021%2F02%2F17%2Feschmann-takes-on-placement-students
 - University of Brighton | 2018–2019 (6) | known not-a-list | https://blogs.brighton.ac.uk/sciengplacements/wp-login.php?privacy=1&redirect_to=https%3A%2F%2Fblogs.brighton.ac.uk%2Fsciengplacements%2F2018%2F09%2F13%2Fmicrobiology-industrial-placement-johnson-johnson-blackpool%2F%2F
-- University of Brighton | 2024–2024 (1) | new | https://www.brighton.ac.uk/business-services/work-with-students/placements/form-science-and-engineering-placements.aspx
+- University of Brighton | 2024–2024 (1) | known not-a-list | https://www.brighton.ac.uk/business-services/work-with-students/placements/form-science-and-engineering-placements.aspx
 - University of Brighton | 2017–2023 (6) | known not-a-list | https://www.brighton.ac.uk/business-services/work-with-students/placements/index.aspx
-- University of Brighton | 2018–2023 (2) | known not-a-list | https://www.brighton.ac.uk/business-services/work-with-students/placements/placement-enquiry.aspx
+- University of Brighton | 2018–2025 (3) | known not-a-list | https://www.brighton.ac.uk/business-services/work-with-students/placements/placement-enquiry.aspx
 - University of Brighton | 2022–2022 (1) | known not-a-list | https://research.brighton.ac.uk/en/persons/kyla-ellis-sloan/supervised-student-theses/
 - University of Bristol | 2017–2020 (2) | known not-a-list | http://www.bristol.ac.uk/academic-quality/assessment/regulations-and-code-of-practice-for-taught-programmes/industrial-placements/
-- University of Bristol | 2024–2024 (1) | new | https://bristol.ac.uk/alumni/causes/phd-research/
+- University of Bristol | 2025–2025 (1) | new | https://www.bristol.ac.uk/academic-quality/pg/pgr-examiners-guidance/dissertation-prize/
+- University of Bristol | 2024–2024 (1) | known not-a-list | https://bristol.ac.uk/alumni/causes/phd-research/
 - University of Bristol | 2019–2019 (1) | known not-a-list | http://www.bristol.ac.uk/brissynbio/innovation/innovation-training-and-events/innovation-placements/
 - University of Bristol | 2019–2019 (1) | known not-a-list | http://www.bristol.ac.uk/doctoral-college/current-research-students/pgr-funds/industrial-phd-placement-fund/
 - University of Bristol | 2021–2021 (1) | known program-list | https://www.bristol.ac.uk/management/study/postgraduate-research/phd-job-market/
-- University of Bristol | 2023–2024 (2) | known not-a-list | https://www.bristol.ac.uk/study/placements/
+- University of Bristol | 2025–2025 (1) | new | https://www.bristol.ac.uk/students/your-studies/postgraduate-research/assessments/submit-dissertation/
+- University of Bristol | 2023–2025 (3) | known not-a-list | https://www.bristol.ac.uk/study/placements/
 - University of British Columbia | 2013–2013 (1) | known not-a-list | http://engineering.ubc.ca/eng/students/1st-year/second-year-placement
 - University of British Columbia | 2021–2021 (2) | known not-a-list | https://www.grad.ubc.ca/current-students/dissertation-thesis-preparation/including-published-co-authored-or-collaborative
 - University of British Columbia | 2018–2018 (1) | known not-a-list | https://www.grad.ubc.ca/current-students/dissertation-thesis-preparation/including-published-material-thesis-or-dissertation
@@ -2821,7 +2945,7 @@ One line per address: institution | years captured | known page? | address. Acce
 - University of California, Berkeley | 2013–2016 (17) | known program-list | http://www.haas.berkeley.edu/Phd/community/alumni/ | 19 pages below it
 - University of California, Berkeley | 2018–2021 (6) | known program-list | https://haas.berkeley.edu/phd/community/alumni-network/ | 10 pages below it
 - University of California, Berkeley | 2023–2023 (1) | known not-a-list | https://idealabs-qa.berkeley.edu/another-year-of-outstanding-development-engineering-and-infews-doctoral-graduates/
-- University of California, Berkeley | 2024–2024 (1) | new | https://idealabs.berkeley.edu/another-year-of-outstanding-development-engineering-and-infews-doctoral-graduates/
+- University of California, Berkeley | 2024–2024 (1) | known not-a-list | https://idealabs.berkeley.edu/another-year-of-outstanding-development-engineering-and-infews-doctoral-graduates/
 - University of California, Berkeley | 2023–2023 (1) | known program-list | https://ieor.berkeley.edu/2022-job-market-phd-students/
 - University of California, Berkeley | 2021–2024 (3) | known not-a-list | https://ieor.berkeley.edu/about/where-alumni-work/
 - University of California, Berkeley | 2021–2025 (3) | known not-a-list | https://ieor.berkeley.edu/academics/phd/recent-phd-placements/
@@ -2833,7 +2957,7 @@ One line per address: institution | years captured | known page? | address. Acce
 - University of California, Berkeley | 2023–2023 (1) | known not-a-list | https://ieor.berkeley.edu/dissertation_types/sample-dissertation/
 - University of California, Berkeley | 2025–2025 (1) | known program-list | https://ieor.berkeley.edu/ieorphd2024jobplacements/
 - University of California, Berkeley | 2019–2023 (3) | known not-a-list | https://ieor.berkeley.edu/meng-alumni-are-finalists-in-ibm-call-for-code-2019-global-prize/
-- University of California, Berkeley | 2024–2024 (1) | new | https://ieor.berkeley.edu/new-report-ieor-graduates-primed-for-high-paying-rewarding-careers/
+- University of California, Berkeley | 2024–2024 (1) | known not-a-list | https://ieor.berkeley.edu/new-report-ieor-graduates-primed-for-high-paying-rewarding-careers/
 - University of California, Berkeley | 2023–2025 (2) | known not-a-list | https://ieor.berkeley.edu/ph-d-dissertations/ | 31 pages below it
 - University of California, Berkeley | 2019–2021 (2) | known not-a-list | https://ieor.berkeley.edu/uc-researchers-show-how-better-placement-of-defibrillators-can-save-lives/
 - University of California, Berkeley | 2019–2019 (1) | known not-a-list | https://mfe.haas.berkeley.edu/careers/mfe-placements
@@ -2843,19 +2967,28 @@ One line per address: institution | years captured | known page? | address. Acce
 - University of California, Davis | 2023–2023 (1) | known not-a-list | https://grad.sf.ucdavis.edu/preparing-filing-your-thesis-or-dissertation
 - University of California, Davis | 2020–2020 (2) | known not-a-list | https://grad.ucdavis.edu/academics/finishing-your-degree/filing-thesis-or-dissertation
 - University of California, Davis | 2021–2022 (3) | known not-a-list | https://grad.ucdavis.edu/preparing-filing-your-thesis-or-dissertation
-- University of California, Davis | 2021–2023 (2) | known not-a-list | https://gradstudies.ucdavis.edu/preparing-filing-your-thesis-or-dissertation
+- University of California, Davis | 2021–2025 (3) | known not-a-list | https://gradstudies.ucdavis.edu/preparing-filing-your-thesis-or-dissertation
 - University of California, Irvine | 2021–2021 (1) | known not-a-list | https://bootcamp.ce.uci.edu/ux-ui/landing/?s=Google-Brand_RFull_&msg_cv_scta=4&msg_cv_stbn=1&msg_cv_fcta=1&pkw=%2Buci%20%2Bui%20%2Bbootcamp&pcrid=467851643942&pmt=b&utm_source=google&utm_medium=cpc&utm_campaign=GGL%7CUC-IRVINE%7CSEM%7CUX-UI%7C-%7COFL%7C_RFull_%7CALL%7CBRD%7CBMM%7CTertiary%7CBootcamp&utm_term=%2Buci%20%2Bui%20%2Bbootcamp&s=google&k=%2Buci%20%2Bui%20%2Bbootcamp&utm_adgroupid=108533756623&utm_locationphysicalms=9061104&utm_matchtype=b&utm_network=g&utm_device=c&utm_content=467851643942&utm_placement=&gclid=Cj0KCQjwiqWHBhD2ARIsAPCDzameSbISHkgb1m2Ma8H3RQls9-HdqsPoQQ0RU2QC_cC2rgbWBXpL8FEaAjKPEALw_wcB&gclsrc=aw.ds
-- University of California, Irvine | 2022–2022 (1) | known not-a-list | https://engineering.uci.edu/dept/mse/graduate/alumni/phd-alumni
+- University of California, Irvine | 2022–2025 (2) | known not-a-list | https://engineering.uci.edu/dept/mse/graduate/alumni/phd-alumni
+- University of California, Irvine | 2025–2025 (1) | new | https://its.uci.edu/research_products/phd-dissertation-agglomeration-production-externalities-and-the-firm-location-decision/
+- University of California, Irvine | 2025–2025 (1) | new | https://its.uci.edu/research_products/phd-dissertation-beneficial-or-disruptive-change-perspectives-of-neighborhood-change-in-santa-ana-ca/
+- University of California, Irvine | 2025–2025 (1) | new | https://its.uci.edu/research_products/phd-dissertation-decision-theory-for-performance-evaluation-of-new-technologies-incorporating-institutional-issues-application-to-traffic-control-implementation/
+- University of California, Irvine | 2025–2025 (1) | new | https://its.uci.edu/research_products/phd-dissertation-diffusion-and-management-of-disruptive-technology-in-cities-the-case-of-drones/
+- University of California, Irvine | 2025–2025 (1) | new | https://its.uci.edu/research_products/phd-dissertation-dynamic-route-guidance-and-network-traffic-management-theoretical-evaluation-and-practical-application-issues/
+- University of California, Irvine | 2025–2025 (1) | new | https://its.uci.edu/research_products/phd-dissertation-integration-of-locational-decisions-with-the-household-activity-pattern-problem-and-its-applications-in-transportation-sustainability/
+- University of California, Irvine | 2025–2025 (1) | new | https://its.uci.edu/research_products/phd-dissertation-land-use-regulations-and-housing-supply-impacts-on-local-state-and-u-s-markets/
+- University of California, Irvine | 2025–2025 (1) | new | https://its.uci.edu/research_products/phd-dissertation-peer-to-peer-and-collaborative-consumption-of-supply-in-transportation-systems/
 - University of California, Irvine | 2013–2014 (9) | known not-a-list | http://merage.uci.edu/Alumni/ | 5 pages below it
 - University of California, Irvine | 2013–2016 (7) | known program-list | http://merage.uci.edu/PhD/Content/Dissertation-Titles-of-PhD-Grads/353
 - University of California, Irvine | 2014–2016 (5) | known not-a-list | http://merage.uci.edu/PhD/Content/Dissertations/353
 - University of California, Irvine | 2013–2016 (7) | known not-a-list | http://merage.uci.edu/PhD/Content/Placement/354
 - University of California, Irvine | 2018–2024 (2) | known program-list | https://merage.uci.edu/programs/phd/dissertations.html
-- University of California, Irvine | 2024–2024 (1) | new | https://merage.uci.edu/programs/phd/job-market-candidates.html
+- University of California, Irvine | 2024–2024 (1) | known program-list | https://merage.uci.edu/programs/phd/job-market-candidates.html
 - University of California, Irvine | 2021–2021 (1) | known not-a-list | https://merage.uci.edu/research-faculty/programs/programs/programs/phd/dissertations.html
 - University of California, Irvine | 2019–2019 (1) | known not-a-list | https://merage.uci.edu/research-faculty/programs/programs/programs/research-faculty/centers/programs/phd/dissertations.html
 - University of California, Irvine | 2021–2021 (1) | known not-a-list | https://merage.uci.edu/research-faculty/research-faculty/programs/programs/phd/dissertations.html
 - University of California, Irvine | 2021–2021 (1) | known not-a-list | https://merage.uci.edu/research-faculty/research-faculty/research-faculty/programs/phd/dissertations.html
+- University of California, Los Angeles | 2025–2025 (1) | new | https://anderson-review.ucla.edu/website-search-data-suggests-profitably-reconfiguring-in-store-product-placement/
 - University of California, Los Angeles | 2013–2014 (15) | known not-a-list | http://www.anderson.ucla.edu/100-inspirational-alumni
 - University of California, Los Angeles | 2013–2014 (57) | known not-a-list | http://www.anderson.ucla.edu/alumni
 - University of California, Los Angeles | 2018–2022 (13) | known program-list | https://www.anderson.ucla.edu/degrees/phd-program/current-job-market-candidates
@@ -2880,8 +3013,9 @@ One line per address: institution | years captured | known page? | address. Acce
 - University of California, Los Angeles | 2013–2014 (14) | known not-a-list | http://www.anderson.ucla.edu/media-relations/2011/100-inspirational-alumni
 - University of California, Los Angeles | 2013–2014 (12) | known not-a-list | http://www.anderson.ucla.edu/programs-and-outreach/management-development-for-entrepreneurs/alumni
 - University of California, Los Angeles | 2013–2014 (13) | known not-a-list | http://www.anderson.ucla.edu/programs-and-outreach/riordan-programs/alumni
+- University of California, Santa Barbara | 2025–2025 (1) | new | https://ext-prod.graddiv.ucsb.edu/filing/filing-your-thesis-dissertation-or-dma-supporting-document
 - University of California, Santa Barbara | 2023–2023 (1) | known not-a-list | https://www.graddiv.ucsb.edu/filing/filing-your-thesis-dissertation-or-dma-supporting-document
-- University of California, Santa Barbara | 2024–2024 (1) | new | https://www.graddiv.ucsb.edu/our-services/academic-services/filing/filing-your-thesis-dissertation-or-dma-supporting-document-0
+- University of California, Santa Barbara | 2024–2024 (1) | known not-a-list | https://www.graddiv.ucsb.edu/our-services/academic-services/filing/filing-your-thesis-dissertation-or-dma-supporting-document-0
 - University of California, Santa Barbara | 2022–2023 (2) | known not-a-list | https://tmp.ucsb.edu/news-and-events/technology-management-announces-first-doctoral-placement-univ-cambridge
 - University of Cambridge | 2018–2023 (4) | known not-a-list | https://www.ch.cam.ac.uk/group/vignolini/phd-theses
 - University of Cambridge | 2017–2017 (2) | known not-a-list | https://www.construction.cam.ac.uk/cem-programme/dissertation-folder-test/can-bim-level-3-operate-within-multiple-bipartite-contracts-or-is-a-move-to-multiparty-contracting-essential/view
@@ -2894,7 +3028,9 @@ One line per address: institution | years captured | known page? | address. Acce
 - University of Cambridge | 2013–2017 (8) | known not-a-list | http://people.ds.cam.ac.uk/mtb23/NSP/Sheehan%20dissertation.html
 - University of Cambridge | 2020–2023 (2) | known not-a-list | https://www-esdmphil.eng.cam.ac.uk/about-the-programme/dissertations/2017-18/Caroline-Still
 - University of Cambridge | 2020–2023 (2) | known not-a-list | https://www-esdmphil.eng.cam.ac.uk/about-the-programme/dissertations/2017-18/Yau-Ben-Or
-- University of Cambridge | 2023–2023 (1) | known not-a-list | https://www-esdmphil.eng.cam.ac.uk/about-the-programme/dissertations/2019-20/lonwabothabisomgoduso
+- University of Cambridge | 2023–2025 (2) | known not-a-list | https://www-esdmphil.eng.cam.ac.uk/about-the-programme/dissertations/2019-20/lonwabothabisomgoduso
+- University of Cambridge | 2025–2025 (1) | new | https://www-esdmphil.eng.cam.ac.uk/about-the-programme/dissertations/dissertation-abstracts-2021-22/colin-whitfield
+- University of Cambridge | 2025–2025 (1) | new | https://www-esdmphil.eng.cam.ac.uk/about-the-programme/dissertations/dissertation-research-2022-23/caroline-hope
 - University of Cambridge | 2017–2017 (1) | known not-a-list | https://www-esdmphil.eng.cam.ac.uk/about-the-programme/dissertations/students/Caroline%20Roques%20%28nee%20Bicocchi%29
 - University of Cambridge | 2017–2017 (1) | known not-a-list | https://www-esdmphil.eng.cam.ac.uk/about-the-programme/dissertations/students/Caroline%20Roques%20(nee%20Bicocchi)
 - University of Cambridge | 2017–2020 (3) | known not-a-list | https://www-esdmphil.eng.cam.ac.uk/about-the-programme/dissertations/students/foster2009
@@ -2914,51 +3050,72 @@ One line per address: institution | years captured | known page? | address. Acce
 - University of Cincinnati | 2022–2022 (1) | known not-a-list | https://business.uc.edu/alumni/portfolio/doctoral-notes.html
 - University of Cincinnati | 2023–2023 (1) | known program-list | https://business.uc.edu/alumni/portfolio/doctoral-notes0.html
 - University of Cincinnati | 2022–2023 (2) | known not-a-list | https://business.uc.edu/alumni/portfolio/doctoral-research-in-motion.html
-- University of Cincinnati | 2024–2024 (1) | new | https://business.uc.edu/career-ready/report-coop-placement.html
+- University of Cincinnati | 2024–2025 (2) | known not-a-list | https://business.uc.edu/career-ready/report-coop-placement.html
 - University of Cologne | 2020–2020 (1) | known not-a-list | https://iis.uni-koeln.de/de/teaching/theses/project-management
-- University of Colorado Boulder | 2024–2024 (1) | new | https://www.colorado.edu/amath/academics/doctoral-program/past-phd-dissertations
+- University of Colorado Boulder | 2024–2024 (1) | known not-a-list | https://www.colorado.edu/amath/academics/doctoral-program/past-phd-dissertations
 - University of Colorado Boulder | 2023–2023 (1) | known not-a-list | https://www.colorado.edu/aps/graduate-studies/current-students/deadlines-doctoral-degree-candidates-2023-2024
 - University of Colorado Boulder | 2023–2024 (2) | known not-a-list | https://www.colorado.edu/aps/graduate-studies/current-students/dissertation-credits-signing-classes-and-other-issues
-- University of Colorado Boulder | 2024–2024 (1) | new | https://www.colorado.edu/atlas/academics/grad/ctd-phd/dissertations
+- University of Colorado Boulder | 2024–2024 (1) | known not-a-list | https://www.colorado.edu/atlas/academics/grad/ctd-phd/dissertations
 - University of Colorado Boulder | 2019–2022 (3) | known program-list | https://www.colorado.edu/business/phd/phd-placements
-- University of Colorado Boulder | 2024–2024 (1) | new | https://www.colorado.edu/cadswes/ms-theses-and-phd-dissertations
+- University of Colorado Boulder | 2024–2024 (1) | known not-a-list | https://www.colorado.edu/cadswes/ms-theses-and-phd-dissertations
 - University of Colorado Boulder | 2023–2023 (1) | known not-a-list | https://www.colorado.edu/center/mortenson/current-students/practicum-placements
-- University of Colorado Boulder | 2024–2024 (1) | new | https://www.colorado.edu/cinemastudies/where-are-they-now
+- University of Colorado Boulder | 2024–2024 (1) | known not-a-list | https://www.colorado.edu/cinemastudies/where-are-they-now
 - University of Colorado Boulder | 2023–2023 (1) | known not-a-list | https://www.colorado.edu/cumuseum/graduate-program/about-program/theses-and-projects
-- University of Colorado Boulder | 2024–2024 (1) | new | https://www.colorado.edu/cumuseum/graduate-program/museum-careers/alumni-placements
+- University of Colorado Boulder | 2024–2024 (1) | known not-a-list | https://www.colorado.edu/cumuseum/graduate-program/museum-careers/alumni-placements
 - University of Colorado Boulder | 2023–2023 (1) | known not-a-list | https://www.colorado.edu/iphy/graduate/placement-recent-phd-and-ms-graduates
-- University of Colorado Boulder | 2024–2025 (2) | new | https://www.colorado.edu/mse/current-students/dissertation-hours
+- University of Colorado Boulder | 2024–2025 (2) | known not-a-list | https://www.colorado.edu/mse/current-students/dissertation-hours
 - University of Colorado Boulder | 2023–2024 (2) | known not-a-list | https://www.colorado.edu/per/dissertation
-- University of Colorado Boulder | 2024–2024 (1) | new | https://www.colorado.edu/per/phd-dissertation
-- University of Colorado Boulder | 2024–2024 (1) | new | https://www.colorado.edu/volunteer/volunteer-placement-program
+- University of Colorado Boulder | 2024–2024 (1) | known not-a-list | https://www.colorado.edu/per/phd-dissertation
+- University of Colorado Boulder | 2024–2024 (1) | known not-a-list | https://www.colorado.edu/volunteer/volunteer-placement-program
 - University of Connecticut | 2023–2023 (1) | known not-a-list | https://alumni.business.uconn.edu/
+- University of Connecticut | 2025–2025 (1) | new | https://alumni.business.uconn.edu/a-z-index/
 - University of Connecticut | 2023–2023 (1) | known not-a-list | https://alumni.business.uconn.edu/about/
-- University of Connecticut | 2023–2023 (1) | known not-a-list | https://alumni.business.uconn.edu/author/ams05017/ | 1 pages below it
+- University of Connecticut | 2023–2025 (2) | known not-a-list | https://alumni.business.uconn.edu/author/ams05017/ | 1 pages below it
 - University of Connecticut | 2023–2023 (1) | known not-a-list | https://alumni.business.uconn.edu/author/bak11004/
+- University of Connecticut | 2025–2025 (1) | new | https://alumni.business.uconn.edu/author/sss98002/
 - University of Connecticut | 2017–2017 (1) | known single-record | http://alumni.business.uconn.edu/brian-fox-17-ph-d/
-- University of Connecticut | 2024–2024 (1) | new | https://alumni.business.uconn.edu/hof/inductees/
-- University of Connecticut | 2023–2023 (1) | known not-a-list | https://alumni.business.uconn.edu/hof/nominate/
+- University of Connecticut | 2025–2025 (1) | new | https://alumni.business.uconn.edu/capri-frank-08-2/
+- University of Connecticut | 2025–2025 (1) | new | https://alumni.business.uconn.edu/damian-sassower/
+- University of Connecticut | 2025–2025 (1) | new | https://alumni.business.uconn.edu/danielle-green-13-phd/
+- University of Connecticut | 2025–2025 (1) | new | https://alumni.business.uconn.edu/engage-with-us/
+- University of Connecticut | 2025–2025 (1) | new | https://alumni.business.uconn.edu/hartford-mentor-rsvp-10-6-2022/
+- University of Connecticut | 2024–2024 (1) | known not-a-list | https://alumni.business.uconn.edu/hof/inductees/
+- University of Connecticut | 2023–2025 (2) | known not-a-list | https://alumni.business.uconn.edu/hof/nominate/
 - University of Connecticut | 2023–2023 (1) | known not-a-list | https://alumni.business.uconn.edu/hof/past-inductees/
-- University of Connecticut | 2023–2023 (1) | known not-a-list | https://alumni.business.uconn.edu/involvement/ | 4 pages below it
-- University of Connecticut | 2023–2023 (1) | known not-a-list | https://alumni.business.uconn.edu/job-postings/
+- University of Connecticut | 2023–2025 (2) | known not-a-list | https://alumni.business.uconn.edu/involvement/ | 4 pages below it
+- University of Connecticut | 2023–2025 (2) | known not-a-list | https://alumni.business.uconn.edu/job-postings/
+- University of Connecticut | 2025–2025 (1) | new | https://alumni.business.uconn.edu/manager-of-analysis-and-reporting-position-july-2019/
+- University of Connecticut | 2025–2025 (1) | new | https://alumni.business.uconn.edu/nyc-mentor-dinner-rsvp-10-13-student/
 - University of Connecticut | 2023–2023 (1) | known not-a-list | https://alumni.business.uconn.edu/past-mentors/
 - University of Connecticut | 2023–2023 (1) | known not-a-list | https://alumni.business.uconn.edu/person/bob-chauvin-78/
-- University of Connecticut | 2024–2024 (1) | new | https://alumni.business.uconn.edu/person/daniel-beardsley-13/
-- University of Connecticut | 2024–2024 (1) | new | https://alumni.business.uconn.edu/previously-recorded-webinars/
-- University of Connecticut | 2024–2024 (1) | new | https://alumni.business.uconn.edu/rosenberg-mcvay-business-leadership-series/
+- University of Connecticut | 2025–2025 (1) | new | https://alumni.business.uconn.edu/person/dan-bartilotti-08/
+- University of Connecticut | 2024–2024 (1) | known not-a-list | https://alumni.business.uconn.edu/person/daniel-beardsley-13/
+- University of Connecticut | 2025–2025 (1) | new | https://alumni.business.uconn.edu/person/kinsley-street-north-garage-entrance/
+- University of Connecticut | 2025–2025 (1) | new | https://alumni.business.uconn.edu/person/laura-carpenter-06/
+- University of Connecticut | 2025–2025 (1) | new | https://alumni.business.uconn.edu/person/lobby-entrance/
+- University of Connecticut | 2025–2025 (1) | new | https://alumni.business.uconn.edu/person/rodrigo-toledo-13-msfrm/
+- University of Connecticut | 2025–2025 (1) | new | https://alumni.business.uconn.edu/person/stairs-from-parking-garage/
+- University of Connecticut | 2025–2025 (1) | new | https://alumni.business.uconn.edu/person/stamford-parking-campus-entrance/
+- University of Connecticut | 2025–2025 (1) | new | https://alumni.business.uconn.edu/person/susan-connors-88/
+- University of Connecticut | 2024–2025 (2) | known not-a-list | https://alumni.business.uconn.edu/previously-recorded-webinars/
+- University of Connecticut | 2024–2024 (1) | known not-a-list | https://alumni.business.uconn.edu/rosenberg-mcvay-business-leadership-series/
 - University of Connecticut | 2023–2023 (1) | known not-a-list | https://alumni.business.uconn.edu/search-for-fellow-alumni/
-- University of Connecticut | 2024–2024 (1) | new | https://alumni.business.uconn.edu/submit-your-news/
-- University of Connecticut | 2020–2023 (2) | known program-list | https://management.business.uconn.edu/ph-d-in-management/alumni/
+- University of Connecticut | 2025–2025 (1) | new | https://alumni.business.uconn.edu/stamford-mentor-dinner-rsvp/
+- University of Connecticut | 2025–2025 (1) | new | https://alumni.business.uconn.edu/stephen-fitzgerald-14/
+- University of Connecticut | 2024–2024 (1) | known not-a-list | https://alumni.business.uconn.edu/submit-your-news/
+- University of Connecticut | 2025–2025 (1) | new | https://alumni.business.uconn.edu/tony-scott/
+- University of Connecticut | 2020–2025 (3) | known program-list | https://management.business.uconn.edu/ph-d-in-management/alumni/
 - University of Connecticut | 2017–2017 (1) | known not-a-list | http://management.business.uconn.edu/ph-d-in-management/dissertation-proposal/
 - University of Connecticut | 2020–2023 (2) | known program-list | https://opim.business.uconn.edu/ph-d-opim/alumni/
 - University of Connecticut | 2019–2022 (2) | known not-a-list | https://phd.business.uconn.edu/about/placement/
 - University of Connecticut | 2019–2023 (2) | known not-a-list | https://phd.business.uconn.edu/program/dissertation/
-- University of Connecticut | 2022–2023 (2) | known not-a-list | https://phd.business.uconn.edu/program/dissertation-proposal/
+- University of Connecticut | 2022–2025 (3) | known not-a-list | https://phd.business.uconn.edu/program/dissertation-proposal/
 - University of Connecticut | 2019–2019 (1) | known not-a-list | https://polisci.uconn.edu/graduate/graduate-achievements/dissertation/social-movements-and-framing-decisions-ecuadors-campaign-for-the-rights-of-nature/
 - University of Delhi | 2023–2024 (3) | known not-a-list | https://placements.sscbs.du.ac.in/department/business-adminstration/
 - University of Edinburgh | 2017–2017 (1) | known not-a-list | http://www.anc.ed.ac.uk/dtc/?alumni=colin-buchanan-phd
 - University of Edinburgh | 2018–2019 (2) | known not-a-list | https://blog.sustainability.ed.ac.uk/2015/work-based-placement-garment-supply-chains/
 - University of Edinburgh | 2020–2020 (1) | known not-a-list | https://blogs.ed.ac.uk/sustainability/2015/work-based-placement-garment-supply-chains/
+- University of Edinburgh | 2025–2025 (1) | new | https://www.business-school.ed.ac.uk/collaborate/student-projects/sourced-dissertations/fintech
 - University of Edinburgh | 2021–2024 (2) | known not-a-list | https://www.business-school.ed.ac.uk/collaborate/student-projects/sponsored-dissertations
 - University of Edinburgh | 2019–2020 (2) | known not-a-list | https://www.business-school.ed.ac.uk/index.php/collaborate/student-projects/sponsored-dissertations
 - University of Edinburgh | 2023–2023 (1) | known not-a-list | https://digitalskillsfestival.ed.ac.uk/producing-a-thesis-or-dissertation-using-microsoft-word/
@@ -2975,14 +3132,15 @@ One line per address: institution | years captured | known page? | address. Acce
 - University of Florida | 2020–2022 (2) | known not-a-list | https://news.warrington.ufl.edu/alumni-friends/management-phd-alumna-honored-with-rising-star-designation/
 - University of Florida | 2022–2022 (1) | known not-a-list | https://news.warrington.ufl.edu/alumni-friends/ph-d-alum-recognized-at-global-is-conference/
 - University of Florida | 2022–2022 (1) | known not-a-list | https://news.warrington.ufl.edu/alumni-friends/warrington-ph-d-student-graduates-from-uf-with-tenure-track-position-and-best-paper/
-- University of Florida | 2024–2024 (1) | new | https://news.warrington.ufl.edu/students/university-of-florida-class-of-2022-2023-business-student-outcomes-include-excellent-job-placements-higher-than-average-starting-salaries/
-- University of Florida | 2013–2014 (4) | new | http://warrington.ufl.edu/departments/fire/phd/alumni.asp
-- University of Florida | 2014–2014 (3) | new | http://warrington.ufl.edu/departments/mgt/phd/alumni.asp
-- University of Florida | 2013–2014 (4) | new | http://warrington.ufl.edu/departments/mkt/graduate/placements.asp
-- University of Florida | 2013–2013 (1) | new | http://warrington.ufl.edu/graduate/academics/msf/placement.asp
-- University of Florida | 2013–2014 (3) | new | http://warrington.ufl.edu/graduate/academics/pdb/placement.asp
+- University of Florida | 2024–2024 (1) | known not-a-list | https://news.warrington.ufl.edu/students/university-of-florida-class-of-2022-2023-business-student-outcomes-include-excellent-job-placements-higher-than-average-starting-salaries/
+- University of Florida | 2013–2014 (4) | known program-list | http://warrington.ufl.edu/departments/fire/phd/alumni.asp
+- University of Florida | 2014–2014 (3) | known program-list | http://warrington.ufl.edu/departments/mgt/phd/alumni.asp
+- University of Florida | 2013–2014 (4) | known program-list | http://warrington.ufl.edu/departments/mkt/graduate/placements.asp
+- University of Florida | 2013–2013 (1) | known not-a-list | http://warrington.ufl.edu/graduate/academics/msf/placement.asp
+- University of Florida | 2013–2014 (3) | known not-a-list | http://warrington.ufl.edu/graduate/academics/pdb/placement.asp
 - University of Florida | 2013–2016 (9) | known not-a-list | http://warrington.ufl.edu/graduate/academics/phd-isom/placement.asp
 - University of Florida | 2023–2024 (2) | known program-list | https://warrington.ufl.edu/phd-in-business-administration-management/alumni/
+- University of Georgia | 2025–2025 (1) | new | https://grad.uga.edu/development/academic/theses-dissertations-overview/creating-single-or-multiple-files/combine-files/
 - University of Georgia | 2023–2023 (1) | known not-a-list | https://grad.uga.edu/graduate-bulletin/theses-dissertations-overview/creating-single-or-multiple-files/
 - University of Georgia | 2019–2021 (3) | known not-a-list | http://grady.uga.edu/research_focus/brand-placement/
 - University of Georgia | 2023–2023 (1) | known not-a-list | https://gradynewsource.uga.edu/job-market-looks-positive-for-2015-graduates/
@@ -2994,33 +3152,33 @@ One line per address: institution | years captured | known page? | address. Acce
 - University of Glasgow | 2018–2024 (4) | known not-a-list | http://theses.gla.ac.uk/view/funder/Engineering_=26_Physical_Sciences_Research_Council_=28EPSRC=29.html
 - University of Glasgow | 2020–2023 (2) | known not-a-list | http://theses.gla.ac.uk/view/funder/Engineering_and_Physical_Sciences_Research_Council.html
 - University of Glasgow | 2018–2023 (5) | known not-a-list | http://theses.gla.ac.uk/view/funder/Engineering_and_Physical_Sciences_Research_Council_=28EPSRC=29.html
-- University of Glasgow | 2024–2024 (1) | new | https://theses.gla.ac.uk/view/funder/Fisheries_Society_of_the_British_Isles_=28FISHSOCB=29.html
+- University of Glasgow | 2024–2025 (2) | known not-a-list | https://theses.gla.ac.uk/view/funder/Fisheries_Society_of_the_British_Isles_=28FISHSOCB=29.html
 - University of Glasgow | 2023–2024 (2) | known not-a-list | https://theses.gla.ac.uk/view/funder/Royal_Academy_of_Engineering.html
 - University of Glasgow | 2013–2023 (10) | known not-a-list | http://theses.gla.ac.uk/view/subjects/DS.html
 - University of Groningen | 2013–2013 (1) | known not-a-list | http://dissertations.ub.rug.nl/faculties/management/ | 8 pages below it
 - University of Groningen | 2013–2013 (1) | known not-a-list | http://dissertations.ub.rug.nl/faculties/science/1993/f.de.haas/?pLanguage=en
 - University of Groningen | 2013–2013 (2) | known not-a-list | http://dissertations.ub.rug.nl/faculties/science/2007/s.m.mendoza/
 - University of Hamburg | 2019–2019 (1) | known not-a-list | https://www.bbf.uni-hamburg.de/teaching/theses/business-engineering.html
-- University of Hamburg | 2024–2025 (2) | new | https://www.sicss.uni-hamburg.de/phd-program/doctoral-candidates/miron-caroline.html
+- University of Hamburg | 2024–2025 (2) | known not-a-list | https://www.sicss.uni-hamburg.de/phd-program/doctoral-candidates/miron-caroline.html
 - University of Helsinki | 2023–2023 (1) | known not-a-list | https://helda.helsinki.fi/tds-www/risExport.php?source=%20%7C%7C%7CValues+and+Freedom%3A+An+inquiry+into+the+rise+and+fall+of+billionaire+wealth%20%7C%7C%7C978-952-232-169-5%20/%20%20%7C%7C%7Chttp://hdl.handle.net/10138/34157%20%7C%7C%7CEconomics+and+Society+%E2%80%93+244%20%7C%7C%7CWartiovaara%2C+Markus%20%7C%7C%7C%20%7C%7C%7CSvenska+handelsh%C3%B6gskolan%20%7C%7C%7C2012%20%7C%7C%7Ceng%20%7C%7C%7COver+the+last+decades+the+amount+of+billionaires+has+grown+significantly.+This+dissertation+provides+a+pioneering+study+into+this+extreme+form+of+entrepreneurship+by+studying+the+phenomena+on+three+levels+of+analysis%3A+a+societal%2C+individual+and+decision-based.+It+studies+the+effects+of+economic+freedom%2C+stakeholders+and+individual+decisions+on+the+wealth+of+billionaires.+The+quantitative+panel+data+study+includes+15+years+of+data+from+50+different+countries+for+the+analysis+of+the+effects+of+amo...%20%7C%7C%7C%20%7C%7C%7C%20%7C%7C%7C%20%7C%7C%7C%20%7C%7C%7Cvalues;%20freedom;%20axiology;%20billionaires;%20wealth;%20Management+and+Organisation%20%7C%7C%7C%20%20%7C%7C%7C%20%7C%7C%7C&vendor=University%20of%20Helsinki&encoding=65001
 - University of Helsinki | 2019–2019 (1) | known not-a-list | https://researchportal.helsinki.fi/en/activities/supervisor-of-doctoral-dissertation-l%C3%B6nnroth-olin
 - University of Houston | 2013–2013 (2) | known not-a-list | http://www.bauer.uh.edu/doctoral/management/dissertation-new.asp
 - University of Houston | 2013–2024 (25) | known not-a-list | http://bauer.uh.edu/doctoral/management/dissertation-new.php
-- University of Houston | 2021–2024 (4) | known program-list | https://bauer.uh.edu/doctoral/management/placements.php
+- University of Houston | 2021–2025 (5) | known program-list | https://bauer.uh.edu/doctoral/management/placements.php
 - University of Houston | 2023–2023 (2) | known not-a-list | https://bauer.uh.edu/doctoral/mis/placement.php
 - University of Houston | 2023–2024 (3) | known not-a-list | https://www.bauer.uh.edu/doctoral/mis/three-article-dissertation.php
-- University of Houston | 2023–2023 (1) | known program-list | https://bauer.uh.edu/doctoral/placement.php
-- University of Houston | 2023–2023 (2) | known not-a-list | https://www.bauer.uh.edu/doctoral/program/alumni-voices.php
+- University of Houston | 2023–2025 (2) | known program-list | https://bauer.uh.edu/doctoral/placement.php
+- University of Houston | 2023–2025 (3) | known not-a-list | https://www.bauer.uh.edu/doctoral/program/alumni-voices.php
 - University of Houston | 2023–2024 (3) | known not-a-list | https://bauer.uh.edu/doctoral/scm/placement.php
 - University of Houston | 2021–2021 (1) | known not-a-list | https://www.cba.uh.edu/doctoral/management/dissertation-new.php
 - University of Houston | 2021–2021 (1) | known not-a-list | https://www.cba.uh.edu/doctoral/management/placements.php
-- University of Houston | 2024–2024 (1) | new | https://xiang.ie.uh.edu/yue-shi-successfully-defended-her-dissertation/
-- University of Houston | 2024–2024 (1) | new | https://xiang.ie.uh.edu/zhicheng-zhu-successfully-defended-his-dissertation/
+- University of Houston | 2024–2024 (1) | known single-record | https://xiang.ie.uh.edu/yue-shi-successfully-defended-her-dissertation/
+- University of Houston | 2024–2024 (1) | known single-record | https://xiang.ie.uh.edu/zhicheng-zhu-successfully-defended-his-dissertation/
 - University of Illinois Chicago | 2022–2023 (2) | known not-a-list | https://engineering.uic.edu/news-stories/three-phd-candidates-standout-at-annual-poster-competition/
 - University of Illinois Urbana-Champaign | 2023–2023 (1) | known not-a-list | https://giesbusiness.illinois.edu/graduate-hub/doctoral/business-administration/placement
 - University of Illinois Urbana-Champaign | 2019–2019 (1) | known program-list | https://ise.illinois.edu/graduate/dissertations.html
 - University of Illinois Urbana-Champaign | 2021–2024 (2) | known not-a-list | https://publish.illinois.edu/hergenrother-lab/group-business/dissertations/
-- University of Illinois Urbana-Champaign | 2023–2023 (1) | known not-a-list | https://www.uiucpurchasing.illinois.edu/commodity-codes/561311-employment-placement-agencies-or-services/
+- University of Illinois Urbana-Champaign | 2023–2025 (2) | known not-a-list | https://www.uiucpurchasing.illinois.edu/commodity-codes/561311-employment-placement-agencies-or-services/
 - University of Illinois Urbana-Champaign | 2023–2023 (1) | known not-a-list | https://www.uiucpurchasing.illinois.edu/commodity-codes/561311-placement-agencies-or-services-employment/
 - University of Iowa | 2014–2014 (1) | known not-a-list | http://www.engineering.uiowa.edu/ess/fun-facts/placement-rate
 - University of Iowa | 2014–2014 (3) | known not-a-list | http://www.engineering.uiowa.edu/ess/what-are-first-destination-placement-rates-starting-salaries-engineering-iowa-graduates
@@ -3034,6 +3192,7 @@ One line per address: institution | years captured | known page? | address. Acce
 - University of Iowa | 2020–2023 (3) | known not-a-list | https://grantbulletin.research.uiowa.edu/keywords/graduate-dissertation-nancy-foster-oceanography
 - University of Iowa | 2023–2023 (1) | known not-a-list | https://grantbulletin.research.uiowa.edu/keywords/nancy-foster-doctoral-graduate-dissertation-oceanography-engineering
 - University of Iowa | 2018–2018 (1) | known not-a-list | https://grantbulletin.research.uiowa.edu/keywords/nancy-foster-master%E2%80%99s-and-doctoral-graduate-dissertation-oceanography-engineering
+- University of Iowa | 2025–2025 (1) | new | https://iro.uiowa.edu/esploro/outputs/journalArticle/Risk-Factors-for-Foster-Care-Placement/9984961047302771
 - University of Iowa | 2020–2022 (3) | known not-a-list | https://ise.engineering.uiowa.edu/graduate/program-overview/titles-recent-industrial-engineering-theses-and-dissertations
 - University of Iowa | 2019–2019 (1) | known program-list | https://tippie.uiowa.edu/about-tippie/academic-departments/business-analytics/phd-job-market-candidates
 - University of Iowa | 2019–2020 (2) | known not-a-list | https://tippie.uiowa.edu/about-tippie/academic-departments/management-and-entrepreneurship/phd-job-market-candidates
@@ -3222,6 +3381,7 @@ One line per address: institution | years captured | known page? | address. Acce
 - University of Leicester | 2021–2021 (1) | known not-a-list | https://www2.le.ac.uk/offices/careers-new/postgraduate-students/industrial-placements-for-postgraduate-students
 - University of Leicester | 2021–2021 (1) | known not-a-list | https://www2.le.ac.uk/offices/lli/case-studies-and-resources/repository/case-studies/learning-and-teaching-conference-2015/Using-interactions-within-HE-as-alternative-to-industrial%20placements-to-enhance-employability
 - University of Leiden | 2021–2022 (3) | known not-a-list | https://www.student.universiteitleiden.nl/en/study--studying/exceptional-circumstances/studying-with-a-disability/job-market?cd=ict-in-business-and-the-public-sector-msc&cf=science
+- University of London | 2025–2025 (1) | new | https://www.london.ac.uk/news-events/student-insider/learning-culture-friendship-vietnam-business-placement-experience
 - University of London | 2019–2019 (1) | known not-a-list | https://london.ac.uk/news-opinion/london-connection/feature/business-placement-scheme-reaches-new-heights
 - University of London | 2019–2021 (2) | known not-a-list | https://london.ac.uk/news-opinion/london-connection/feature/emfss-students-reveal-their-business-placement-experiences
 - University of Louisville | 2017–2017 (1) | known not-a-list | https://louisville.edu/dehs/emergency/doc/cepdoc/suppdoc/advanced-placement-summer-institute/emergency-procedures-weather-ap-institute-pdf/view
@@ -3230,7 +3390,7 @@ One line per address: institution | years captured | known page? | address. Acce
 - University of Louisville | 2020–2023 (2) | known not-a-list | https://louisville.edu/graduate/current-students/electronic-thesis-dissertation-signature-pages-1
 - University of Louisville | 2013–2013 (2) | known not-a-list | http://louisville.edu/graduate/news-1/deadlines-for-submitting-thesis-dissertation-2013-2014
 - University of Louisville | 2014–2014 (1) | known not-a-list | http://louisville.edu/graduate/news-1/deadlines-for-submitting-thesis-dissertation-2014-2015
-- University of Louisville | 2024–2024 (2) | new | https://louisville.edu/honors/acl_users/credentials_cookie_auth/require_login?came_from=https%3A//louisville.edu/honors/senior-honors-theses/assessing-your-qualifications
+- University of Louisville | 2024–2024 (2) | known not-a-list | https://louisville.edu/honors/acl_users/credentials_cookie_auth/require_login?came_from=https%3A//louisville.edu/honors/senior-honors-theses/assessing-your-qualifications
 - University of Louisville | 2013–2016 (3) | known not-a-list | http://louisville.edu/honors/Enrichment-opportunities/senior-honors-theses | 2 pages below it
 - University of Louisville | 2014–2023 (9) | known not-a-list | http://louisville.edu/honors/senior-honors-theses | 10 pages below it
 - University of Louisville | 2017–2024 (5) | known not-a-list | https://louisville.edu/oapa/ie/job-placement-data
@@ -3250,11 +3410,13 @@ One line per address: institution | years captured | known page? | address. Acce
 - University of Louvain | 2013–2013 (1) | known not-a-list | http://sites.uclouvain.be/alumni-akal/
 - University of Louvain | 2013–2013 (1) | known not-a-list | http://sites.uclouvain.be/alumni/louvain.html
 - University of Louvain | 2021–2021 (1) | known not-a-list | https://sites.uclouvain.be/reso/opac_css/index.php?lvl=more_results&mode=keyword&user_query=ALTERNATIVE+AU+PLACEMENT&tags=ok
+- University of Luxembourg | 2024–2024 (1) | known not-a-list | https://www.c2dh.uni.lu/report/2022/research-report/phd-theses
 - University of Manchester | 2021–2022 (2) | known not-a-list | https://www.alliancembs.manchester.ac.uk/blogs/business-analytics-dissertation-what-to-expect-and-how-to-make-the-most-of-it/
 - University of Manchester | 2022–2022 (1) | known not-a-list | https://www.alliancembs.manchester.ac.uk/blogs/to-undertake-placement-or-not/
 - University of Manchester | 2023–2023 (1) | known not-a-list | https://www.gdi.manchester.ac.uk/study/phd-opportunities/alumni/chris-foster/
 - University of Manchester | 2021–2023 (3) | known not-a-list | https://www.mub.eps.manchester.ac.uk/uommaterialsblog/my-industrial-placement-experience-amy-hardy-at-boohoo-com/
 - University of Manchester | 2023–2023 (1) | known not-a-list | https://research.manchester.ac.uk/en/persons/caroline.bithell/supervised-student-theses/
+- University of Manchester | 2025–2025 (1) | new | https://research.manchester.ac.uk/en/persons/caroline.bond/supervised-student-theses/
 - University of Manchester | 2023–2023 (1) | known not-a-list | https://research.manchester.ac.uk/en/persons/caroline.miles/supervised-student-theses/
 - University of Manchester | 2022–2022 (1) | known not-a-list | https://www.research.manchester.ac.uk/portal/en/researchers/andrea-bottacin-busolin(769456c3-1a3a-468e-b53c-82897904d05f)/theses.html
 - University of Manchester | 2019–2019 (1) | known not-a-list | https://www.research.manchester.ac.uk/portal/en/researchers/caroline-jay(734c8dde-9334-4cb6-a4f6-373e08044413)/theses.html
@@ -3278,7 +3440,7 @@ One line per address: institution | years captured | known page? | address. Acce
 - University of Maryland, College Park | 2014–2015 (10) | known not-a-list | http://www.rhsmith.umd.edu/tags/dissertation
 - University of Massachusetts Amherst | 2018–2018 (1) | known not-a-list | https://www.cics.umass.edu/industrial-affiliates/job-placement
 - University of Massachusetts Amherst | 2013–2017 (9) | known not-a-list | http://scholarworks.umass.edu/dissertations/
-- University of Massachusetts Amherst | 2020–2023 (2) | known not-a-list | https://scholarworks.umass.edu/dissertations_1/ | 1 pages below it
+- University of Massachusetts Amherst | 2020–2025 (3) | known not-a-list | https://scholarworks.umass.edu/dissertations_1/ | 1 pages below it
 - University of Massachusetts Amherst | 2014–2022 (7) | known not-a-list | http://scholarworks.umass.edu/dissertations_2/ | 7 pages below it
 - University of Massachusetts Amherst | 2013–2023 (12) | known program-list | http://scholarworks.umass.edu/management_dissertations/ | 1 pages below it
 - University of Massachusetts Amherst | 2013–2022 (11) | known not-a-list | http://scholarworks.umass.edu/open_access_dissertations/ | 8 pages below it
@@ -3415,7 +3577,8 @@ One line per address: institution | years captured | known page? | address. Acce
 - University of Massachusetts Amherst | 2013–2016 (7) | known not-a-list | http://scholarworks.umass.edu/theses/index.4.html
 - University of Michigan at Ann Arbor | 2019–2021 (3) | known not-a-list | https://businessimpact.umich.edu/21-impact-interns-where-are-they-now/
 - University of Michigan at Ann Arbor | 2022–2022 (1) | known not-a-list | https://career.engin.umich.edu/career-pathways-for-engineering-phd-candidates/
-- University of Michigan at Ann Arbor | 2024–2024 (1) | new | https://detroitsmallbusiness.umich.edu/programs/dnep-class-placements/
+- University of Michigan at Ann Arbor | 2024–2025 (2) | known not-a-list | https://detroitsmallbusiness.umich.edu/programs/dnep-class-placements/ | 2 pages below it
+- University of Michigan at Ann Arbor | 2025–2025 (1) | new | https://icos.umich.edu/lecture/likert-dissertation-prize-winner-madeline-ong-singapore-management-university/
 - University of Missouri-Columbia | 2013–2017 (9) | known not-a-list | http://business.missouri.edu/2012/trulaske-college-business-students-report-favorable-job-placement-graduation
 - University of Missouri-Columbia | 2017–2019 (3) | known not-a-list | https://business.missouri.edu/phd-placements
 - University of Missouri-Columbia | 2019–2019 (1) | known not-a-list | https://engineering.missouri.edu/2006/10/career-fair-reflects-strong-engineering-job-market/
@@ -3435,16 +3598,18 @@ One line per address: institution | years captured | known page? | address. Acce
 - University of North Carolina at Chapel Hill | 2013–2016 (11) | known program-list | http://www.kenan-flagler.unc.edu/programs/phd/graduate-placement
 - University of North Carolina at Chapel Hill | 2019–2023 (5) | known program-list | https://www.kenan-flagler.unc.edu/programs/phd/job-market-candidates-placements/
 - University of North Carolina at Chapel Hill | 2013–2014 (6) | known not-a-list | http://www.kenan-flagler.unc.edu/sustainable-enterprise/get-involved/alumni
-- University of Notre Dame | 2024–2024 (1) | new | https://kellogg.nd.edu/dissertation-year-fellow-0
-- University of Notre Dame | 2024–2024 (1) | new | https://kellogg.nd.edu/dissertation-year-fellow-1
+- University of North Texas | 2025–2025 (1) | new | https://engineering.unt.edu/mse/students/alumni/arun-devaraj-phd-2011.html
+- University of Notre Dame | 2024–2024 (1) | known not-a-list | https://kellogg.nd.edu/dissertation-year-fellow-0
+- University of Notre Dame | 2024–2024 (1) | known not-a-list | https://kellogg.nd.edu/dissertation-year-fellow-1
 - University of Notre Dame | 2019–2019 (2) | known not-a-list | https://kellogg.nd.edu/kellogg-international-scholars-program-where-are-they-now
 - University of Nottingham | 2021–2021 (1) | known not-a-list | https://mediaspace.nottingham.ac.uk/tag?tagid=industrial%20placement
+- University of Nottingham | 2025–2025 (1) | new | https://www.nottingham.ac.uk/business/collaborate/company-placements.aspx
 - University of Nottingham | 2022–2022 (1) | known not-a-list | https://www.nottingham.ac.uk/business/study-with-us/ug/placements.aspx
 - University of Nottingham | 2017–2018 (2) | known not-a-list | http://www.nottingham.ac.uk/engineering/industrial-placements/index.aspx
 - University of Nottingham | 2023–2023 (1) | known not-a-list | https://www.nottingham.ac.uk/engineering/industry/industrial-placements/ | 3 pages below it
 - University of Nottingham | 2023–2023 (1) | known not-a-list | https://www.nottingham.ac.uk/engineering/studentexperience/industrial-placements/ | 1 pages below it
 - University of Nottingham | 2017–2017 (1) | known not-a-list | http://www.nottingham.ac.uk/graduateschool/graduatecentres/engineeringandscience/placements.aspx
-- University of Nottingham | 2019–2024 (4) | known not-a-list | https://www.nottingham.ac.uk/workingwithbusiness/services/postgraduate-placements-nottingham.aspx
+- University of Nottingham | 2019–2025 (5) | known not-a-list | https://www.nottingham.ac.uk/workingwithbusiness/services/postgraduate-placements-nottingham.aspx
 - University of Oklahoma | 2019–2019 (2) | known not-a-list | http://link.libraries.ou.edu/portal/Beyond-placement--mothers-view-foster-care/P-W3ERKubIs/
 - University of Oregon | 2019–2020 (2) | known not-a-list | https://business.uoregon.edu/phd/alumni-cv-upload
 - University of Oregon | 2023–2023 (1) | known not-a-list | https://business.uoregon.edu/programs/phd/placement
@@ -3452,27 +3617,28 @@ One line per address: institution | years captured | known page? | address. Acce
 - University of Oregon | 2023–2024 (2) | known not-a-list | https://csws.uoregon.edu/mandolin-r-brassaw-2006-csws-jane-grant-dissertation-fellow
 - University of Oxford | 2019–2021 (2) | known not-a-list | https://www.compas.ox.ac.uk/2018/split-families-and-the-future-of-children-immigration-enforcement-and-foster-care-placements/
 - University of Oxford | 2020–2022 (2) | known program-list | https://www.sbs.ox.ac.uk/programmes/degrees/dphil-management/job-market-candidates-and-placements
-- University of Padua | 2023–2024 (2) | known not-a-list | https://www.economia.unipd.it/en/phd/Job%20Market%20Candidates
+- University of Padua | 2023–2025 (4) | known not-a-list | https://www.economia.unipd.it/en/phd/Job%20Market%20Candidates
 - University of Padua | 2020–2023 (5) | known program-list | https://www.economia.unipd.it/en/phd/job-market-candidates/management-students
-- University of Padua | 2024–2024 (1) | new | https://www.economia.unipd.it/en/services/home-student-services/stage-placement/companies
-- University of Padua | 2024–2024 (1) | new | https://www.economia.unipd.it/en/services/home-student-services/stage-placement/students-and-graduates
-- University of Padua | 2024–2024 (1) | new | https://www.economia.unipd.it/en/services/stage-placement
+- University of Padua | 2025–2025 (1) | new | https://economia.unipd.it/en/phd/phd-alumni
+- University of Padua | 2024–2025 (2) | known not-a-list | https://www.economia.unipd.it/en/services/home-student-services/stage-placement/companies
+- University of Padua | 2024–2024 (1) | known not-a-list | https://www.economia.unipd.it/en/services/home-student-services/stage-placement/students-and-graduates
+- University of Padua | 2024–2025 (2) | known not-a-list | https://www.economia.unipd.it/en/services/stage-placement
 - University of Padua | 2023–2023 (1) | known not-a-list | https://economia.unipd.it/SERVIZI-PER-GLI-STUDENTI/home-servizi-per-gli-studenti/stage-%25252526-placement/aziende/attivare-uno-stage-italia/attivare-uno-stage-con-neolaureati
 - University of Padua | 2023–2023 (1) | known not-a-list | https://economia.unipd.it/SERVIZI-PER-GLI-STUDENTI/home-servizi-per-gli-studenti/stage-%25252526-placement/aziende/attivare-uno-stage-italia/attivare-uno-stage-con-studenti
 - University of Padua | 2023–2024 (2) | known not-a-list | https://economia.unipd.it/SERVIZI-PER-GLI-STUDENTI/home-servizi-per-gli-studenti/stage-%252526-placement%20servizi/stage-placement/esenzioni-e-sostituzioni
 - University of Padua | 2023–2023 (1) | known not-a-list | https://economia.unipd.it/SERVIZI-PER-GLI-STUDENTI/home-servizi-per-gli-studenti/stage-%252526-placement%20servizi/stage-placement/studenti-e-laureati/la-normativa
 - University of Padua | 2023–2023 (1) | known not-a-list | https://economia.unipd.it/SERVIZI-PER-GLI-STUDENTI/home-servizi-per-gli-studenti/stage-%252526-placement/aziende/attivare-uno-stage-italia
 - University of Padua | 2023–2023 (1) | known not-a-list | https://economia.unipd.it/SERVIZI-PER-GLI-STUDENTI/home-servizi-per-gli-studenti/stage-%252526-placement/stage-allestero/%20stage-allestero-studenti-magistrali
-- University of Padua | 2024–2024 (1) | new | https://economia.unipd.it/SERVIZI-PER-GLI-STUDENTI/home-servizi-per-gli-studenti/stage-%2526-placement/lo-stage-gli-studenti-magistrali
+- University of Padua | 2024–2024 (1) | known not-a-list | https://economia.unipd.it/SERVIZI-PER-GLI-STUDENTI/home-servizi-per-gli-studenti/stage-%2526-placement/lo-stage-gli-studenti-magistrali
 - University of Padua | 2023–2023 (1) | known not-a-list | https://economia.unipd.it/SERVIZI-PER-GLI-STUDENTI/home-servizi-per-gli-studenti/stage-%2526-placement/lo-stage-gli-studenti-triennali
 - University of Padua | 2023–2023 (1) | known not-a-list | https://economia.unipd.it/SERVIZI-PER-GLI-STUDENTI/home-servizi-per-gli-studenti/stage-%2526-placement/stage-allestero
 - University of Padua | 2023–2023 (1) | known not-a-list | https://economia.unipd.it/SERVIZI-PER-GLI-STUDENTI/home-servizi-per-gli-studenti/stage-%2526-placement/stage-corsi-di-laurea-disattivati
-- University of Padua | 2024–2024 (1) | new | https://www.economia.unipd.it/SERVIZI-PER-GLI-STUDENTI/home-servizi-per-gli-studenti/stage-%2526-placement/stage-di-inserimento-o-reinserimento
+- University of Padua | 2024–2024 (1) | known not-a-list | https://www.economia.unipd.it/SERVIZI-PER-GLI-STUDENTI/home-servizi-per-gli-studenti/stage-%2526-placement/stage-di-inserimento-o-reinserimento
 - University of Padua | 2023–2024 (2) | known not-a-list | https://economia.unipd.it/SERVIZI-PER-GLI-STUDENTI/home-servizi-per-gli-studenti/stage-%2526-placement/stage-neolaureati
 - University of Padua | 2023–2023 (1) | known not-a-list | https://economia.unipd.it/SERVIZI-PER-GLI-STUDENTI/home-servizi-per-gli-studenti/stage-%2526-placement/studenti-e-laureati
 - University of Padua | 2023–2023 (1) | known not-a-list | https://www.economia.unipd.it/SERVIZI-PER-GLI-STUDENTI/home-servizi-per-gli-studenti/stage-%26-placement
 - University of Padua | 2019–2019 (2) | known not-a-list | https://www.economia.unipd.it/servizi/stage-placement | 2 pages below it
-- University of Padua | 2024–2024 (1) | new | https://economia.unipd.it/Stage-%26-Placement/home-stage-%26-placement | 3 pages below it
+- University of Padua | 2024–2025 (2) | known not-a-list | https://economia.unipd.it/Stage-%26-Placement/home-stage-%26-placement | 3 pages below it
 - University of Pennsylvania | 2022–2022 (1) | known not-a-list | https://aisp.upenn.edu/family-group-decision-making-a-quantitative-analysis-of-the-impact-on-out-of-home-placement/
 - University of Pennsylvania | 2022–2022 (1) | known not-a-list | https://doctoral.wharton.upenn.edu/2022-doctoral-graduation-student-and-alumni-rsvp/
 - University of Pennsylvania | 2018–2019 (4) | known not-a-list | https://doctoral.wharton.upenn.edu/career-placement/
@@ -3489,14 +3655,15 @@ One line per address: institution | years captured | known page? | address. Acce
 - University of Pennsylvania | 2017–2021 (2) | known not-a-list | http://kwhs.wharton.upenn.edu/lesson_plans/jobs-and-money-soft-skills-and-the-job-market-lesson-4/
 - University of Pennsylvania | 2017–2021 (2) | known not-a-list | http://kwhs.wharton.upenn.edu/lesson_plans/jobs-and-money-the-new-job-market/
 - University of Pennsylvania | 2018–2021 (3) | known not-a-list | http://kwhs.wharton.upenn.edu/term/dissertation/
-- University of Pennsylvania | 2020–2022 (3) | known not-a-list | https://lauder.wharton.upenn.edu/knowledge-at-wharton/the-episodic-career-navigating-todays-job-market/
+- University of Pennsylvania | 2020–2025 (4) | known not-a-list | https://lauder.wharton.upenn.edu/knowledge-at-wharton/the-episodic-career-navigating-todays-job-market/
 - University of Pennsylvania | 2019–2023 (5) | known program-list | https://lgst.wharton.upenn.edu/programs/phd/ethics-legal-studies-doctoral-program-career-placement/
 - University of Pennsylvania | 2020–2022 (2) | known program-list | https://lgst.wharton.upenn.edu/programs/phd/phd-alumni/
+- University of Pennsylvania | 2025–2025 (1) | new | https://mackinstitute.wharton.upenn.edu/2022/who-is-a-dissertation-for/
 - University of Pennsylvania | 2023–2023 (1) | known not-a-list | https://mackinstitute.wharton.upenn.edu/2023/dissertation-canvas/
 - University of Pennsylvania | 2013–2013 (2) | known not-a-list | http://www.pop.upenn.edu/biblio/foster-care-placement-among-children-who-received-inpatient-psychiatric-care
 - University of Pennsylvania | 2023–2023 (1) | known not-a-list | https://repository.upenn.edu/exhibits/orgunit/wharton?f.itemtype=Dissertation%2FThesis,equals&spc.page=1
 - University of Pennsylvania | 2013–2014 (6) | known program-list | http://www.wharton.upenn.edu/doctoral/placement/job-market.cfm
-- University of Piraeus | 2018–2021 (2) | known not-a-list | http://cbml.ds.unipi.gr/en/phd-candidates-postdoctoral-positions/
+- University of Piraeus | 2018–2025 (3) | known not-a-list | http://cbml.ds.unipi.gr/en/phd-candidates-postdoctoral-positions/
 - University of Piraeus | 2019–2023 (2) | known not-a-list | http://tsl.ds.unipi.gr/concluded-ph-d-theses/
 - University of Pittsburgh | 2022–2023 (2) | known not-a-list | https://www.aseees.pitt.edu/news-events/aseees-news-feed/2018-cohen-tucker-dissertation-research-fellows-announced
 - University of Pittsburgh | 2023–2023 (1) | known not-a-list | https://www.aseees.pitt.edu/programs/aseees-prizes/robert-c-tuckerstephen-f-cohen-dissertation-prize/past-winners
@@ -3505,6 +3672,7 @@ One line per address: institution | years captured | known page? | address. Acce
 - University of Pittsburgh | 2022–2022 (1) | known not-a-list | https://business.pitt.edu/phd/phd-student-job-placements/
 - University of Pittsburgh | 2022–2022 (1) | known not-a-list | https://cba.pitt.edu/pitt-business-maintains-top-level-placement-rate-despite-challenging-fall-term/
 - University of Pittsburgh | 2019–2019 (1) | known not-a-list | http://www.crsp.pitt.edu/multiethnic-placement-act-threat-foster-child-safety-and-well-being
+- University of Pittsburgh | 2025–2025 (2) | new | https://engineering.pitt.edu/departments/industrial/about/job-placement/
 - University of Pittsburgh | 2014–2016 (16) | known not-a-list | http://www.engineering.pitt.edu/MEMS/Graduate/Dissertation/
 - University of Pittsburgh | 2022–2022 (1) | known not-a-list | https://www.engineering.pitt.edu/subsites/centers/cmi/students/student-success-stories/job-placements/
 - University of Pittsburgh | 2023–2023 (1) | known not-a-list | https://www.engineering.pitt.edu/subsites/centers/cmi/students/students-and-alumni/2012/saik-kia-goh-phd/
@@ -3522,7 +3690,7 @@ One line per address: institution | years captured | known page? | address. Acce
 - University of Salford | 2013–2013 (1) | known not-a-list | http://www.salford.ac.uk/business-school/business-management-courses/placements
 - University of Salford | 2016–2016 (1) | known not-a-list | http://www.salford.ac.uk/business-school/business-services/student-placements
 - University of Salford | 2019–2019 (1) | known not-a-list | https://www.salford.ac.uk/business-school/placements
-- University of Salford | 2024–2024 (1) | new | https://www.salford.ac.uk/international/paid-placements-at-salford-business-school
+- University of Salford | 2024–2024 (1) | known not-a-list | https://www.salford.ac.uk/international/paid-placements-at-salford-business-school
 - University of Salford | 2022–2022 (1) | known not-a-list | https://www.salford.ac.uk/international/paid-placements-salford-business-school
 - University of Salford | 2021–2024 (4) | known not-a-list | https://www.salford.ac.uk/salford-business-school/postgraduate-industry-placements
 - University of Salford | 2023–2023 (1) | known not-a-list | https://www.salford.ac.uk/salford-business-school/where-are-they-now-graduate-stories-kareem-harb
@@ -3532,12 +3700,17 @@ One line per address: institution | years captured | known page? | address. Acce
 - University of Salford | 2023–2023 (1) | known not-a-list | https://www.salford.ac.uk/school-of-science-engineering-and-environment/suzan-and-zoya-our-research-placement-experience-at
 - University of Salford | 2013–2013 (1) | known not-a-list | http://www.searchmarketing.salford.ac.uk/student-placement-opportunities-with-salford-business-school/
 - University of Salford | 2013–2014 (5) | known not-a-list | http://usir.salford.ac.uk/view/user_expertise/_Industrial_Placements_and_collaborations.html
-- University of Sheffield | 2024–2024 (1) | new | https://digitalmedia.sheffield.ac.uk/tag?tagid=industrial%20placement%20year
-- University of Sheffield | 2024–2024 (1) | new | https://www.sheffield.ac.uk/engineering/study/industrial-placement-year
+- University of Sheffield | 2024–2024 (1) | known not-a-list | https://digitalmedia.sheffield.ac.uk/tag?tagid=industrial%20placement%20year
+- University of Sheffield | 2025–2025 (1) | new | https://sheffield.ac.uk/engineering/about/partnerships/placements
+- University of Sheffield | 2024–2024 (1) | known not-a-list | https://www.sheffield.ac.uk/engineering/study/industrial-placement-year
+- University of Sheffield | 2025–2025 (1) | new | https://sheffield.ac.uk/management/partnerships/provide-student-placement
 - University of South Carolina | 2023–2023 (1) | known not-a-list | https://carolinanewsandreporter.cic.sc.edu/comet-plans-to-add-electric-buses-where-are-they-today/
 - University of South Florida | 2017–2017 (1) | known not-a-list | http://www.usf.edu/business/departments/isds/placement/
 - University of South Florida | 2022–2022 (1) | known program-list | https://www.usf.edu/business/graduate/doctoral/isds/alumni.aspx
-- University of South Florida | 2021–2022 (2) | known not-a-list | https://www.usf.edu/engineering/graduate/thesis-dissertation-info.aspx
+- University of South Florida | 2021–2025 (3) | known not-a-list | https://www.usf.edu/engineering/graduate/thesis-dissertation-info.aspx
+- University of South Florida | 2025–2025 (1) | new | https://www.usf.edu/graduate-studies/students/electronic-thesis-dissertation/current-etd-deadlines.aspx
+- University of South Florida | 2025–2025 (1) | new | https://www.usf.edu/graduate-studies/students/electronic-thesis-dissertation/etd-quick-links.aspx
+- University of South Florida | 2025–2025 (1) | new | https://www.usf.edu/graduate-studies/students/electronic-thesis-dissertation/help-sessions.aspx
 - University of South Florida | 2023–2023 (1) | known not-a-list | https://wusfnews.wusf.usf.edu/2023-04-07/the-job-market-is-cooling-as-higher-interest-rates-and-a-slowing-economy-take-a-toll
 - University of South Florida | 2023–2023 (1) | known not-a-list | https://wusfnews.wusf.usf.edu/2023-07-07/the-job-market-is-cooling-but-still-surprisingly-strong-is-that-a-good-thing
 - University of South Florida | 2021–2021 (1) | known not-a-list | https://wusfnews.wusf.usf.edu/business/2012-05-15/2012-college-graduates-have-an-improved-job-market
@@ -3557,7 +3730,7 @@ One line per address: institution | years captured | known page? | address. Acce
 - University of Southern California | 2017–2017 (1) | known not-a-list | http://news.usc.edu/54834/research-confronts-efficacy-of-foster-care-placement-in-reducing-obesity/
 - University of Southern Denmark | 2025–2025 (1) | new | https://portal.findresearcher.sdu.dk/da/activities/depraved-mothers-foster-care-placements-in-denmark-in-the-beginni
 - University of Southern Queensland | 2023–2023 (1) | known not-a-list | https://research.usq.edu.au/item/q1158/intervening-to-improve-the-dissertation-of-final-year-engineering-research-projects
-- University of Southern Queensland | 2024–2024 (1) | new | https://research.usq.edu.au/item/xx111/work-in-progress-intervening-to-improve-the-dissertation-of-final-year-engineering-research-projects
+- University of Southern Queensland | 2024–2024 (1) | known not-a-list | https://research.usq.edu.au/item/xx111/work-in-progress-intervening-to-improve-the-dissertation-of-final-year-engineering-research-projects
 - University of St. Gallen | 2019–2019 (1) | known not-a-list | https://energymanagement.unisg.ch/en/forschung/doktorat/economicsandfinance/job-market-candidates
 - University of St. Gallen | 2021–2021 (1) | known not-a-list | https://energymanagement.unisg.ch/en/forschung/doktorat/graduateprogrammeeconomicsandandfinance/placements
 - University of St. Gallen | 2022–2023 (2) | known not-a-list | https://energymanagement.unisg.ch/en/forschung/doktorat/graduateprogrammeeconomicsandandfinance/placements-recent
@@ -3574,13 +3747,34 @@ One line per address: institution | years captured | known page? | address. Acce
 - University of Sterling | 2017–2017 (2) | known not-a-list | http://www.stir.ac.uk/management/modules/postgraduate/international-business-2015-16/international-business-dissertation/
 - University of Sterling | 2017–2017 (1) | known not-a-list | http://www.stir.ac.uk/management/modules/postgraduate/international-business-and-socio-economic-development/dissertation-in-socio-economic-development/
 - University of Strathclyde | 2017–2017 (2) | known not-a-list | http://atom.lib.strath.ac.uk/unpublished-papers-theses-and-lectures-by-or-relating-to-patrick-geddes;isad?sf_culture=es
+- University of Strathclyde | 2025–2025 (1) | known not-a-list | https://pureportal.strath.ac.uk/en/activities/evaluation-of-phd-dissertation
+- University of Strathclyde | 2025–2025 (1) | known not-a-list | https://pureportal.strath.ac.uk/en/activities/external-examiner-of-phd-dissertation-at-%C3%A9cole-polytechnique-f%C3%A9d%C3%A9
+- University of Strathclyde | 2025–2025 (1) | known not-a-list | https://pureportal.strath.ac.uk/en/activities/external-examiner-of-phd-dissertation-at-politecnico-di-milano
+- University of Strathclyde | 2025–2025 (1) | known not-a-list | https://pureportal.strath.ac.uk/en/activities/external-examiner-of-phd-dissertation-at-the-university-of-durham
+- University of Strathclyde | 2025–2025 (1) | known not-a-list | https://pureportal.strath.ac.uk/en/activities/external-examiner-of-phd-dissertation-at-the-university-of-durham-2
+- University of Strathclyde | 2025–2025 (1) | known not-a-list | https://pureportal.strath.ac.uk/en/persons/alison-ramage/supervised-student-theses/
+- University of Strathclyde | 2025–2025 (1) | known not-a-list | https://pureportal.strath.ac.uk/en/persons/andy-kerr/supervised-student-theses/
+- University of Strathclyde | 2025–2025 (1) | known not-a-list | https://pureportal.strath.ac.uk/en/persons/angela-turner/supervised-student-theses/
+- University of Strathclyde | 2025–2025 (1) | known not-a-list | https://pureportal.strath.ac.uk/en/persons/bin-liu/supervised-student-theses/
 - University of Strathclyde | 2021–2021 (1) | known not-a-list | https://pureportal.strath.ac.uk/en/persons/campbell-booth/supervised-student-theses/
+- University of Strathclyde | 2025–2025 (1) | known not-a-list | https://pureportal.strath.ac.uk/en/persons/chris-deeming/supervised-student-theses/
+- University of Strathclyde | 2025–2025 (1) | known not-a-list | https://pureportal.strath.ac.uk/en/persons/cristina-gonzalez-longo/supervised-student-theses/
+- University of Strathclyde | 2025–2025 (1) | known not-a-list | https://pureportal.strath.ac.uk/en/persons/david-lewin/supervised-student-theses/
+- University of Strathclyde | 2025–2025 (1) | known not-a-list | https://pureportal.strath.ac.uk/en/persons/inge-birnie/supervised-student-theses/
+- University of Strathclyde | 2025–2025 (1) | known not-a-list | https://pureportal.strath.ac.uk/en/persons/james-bowden/supervised-student-theses/
+- University of Strathclyde | 2025–2025 (1) | known not-a-list | https://pureportal.strath.ac.uk/en/persons/jim-mills/supervised-student-theses/
+- University of Strathclyde | 2025–2025 (1) | known not-a-list | https://pureportal.strath.ac.uk/en/persons/julia-smith/supervised-student-theses/
+- University of Strathclyde | 2025–2025 (1) | known not-a-list | https://pureportal.strath.ac.uk/en/persons/kerem-akartunali/supervised-student-theses/
+- University of Strathclyde | 2025–2025 (1) | known not-a-list | https://pureportal.strath.ac.uk/en/persons/livia-pancotto/supervised-student-theses/
+- University of Strathclyde | 2025–2025 (1) | known not-a-list | https://pureportal.strath.ac.uk/en/persons/paul-coats/supervised-student-theses/
 - University of Strathclyde | 2023–2023 (1) | known program-list | https://pureportal.strath.ac.uk/en/persons/pauline-anderson/supervised-student-theses/
+- University of Strathclyde | 2025–2025 (1) | known not-a-list | https://pureportal.strath.ac.uk/en/persons/richard-finlay/supervised-student-theses/
+- University of Strathclyde | 2025–2025 (1) | known not-a-list | https://pureportal.strath.ac.uk/en/persons/robert-mulvey/supervised-student-theses/
 - University of Strathclyde | 2023–2023 (1) | known not-a-list | https://spelt.strath.ac.uk/display/SPELT/Industrial+Placement+Big+Buddies-Little+Buddies+Programme
 - University of Stuttgart | 2021–2021 (1) | known not-a-list | https://www.gradus.uni-stuttgart.de/aktuelles/veranstaltung/Self-management-for-Ph.D.-Candidates-digital-seminar/
 - University of Tennessee at Knoxville | 2019–2019 (1) | known program-list | https://haslam.utk.edu/management/phd/strategy-entrepreneurship-organizations/student-placement
 - University of Texas at Arlington | 2024–2024 (1) | known single-record | https://mavmatrix.uta.edu/industrialmanusys_dissertations/139/
-- University of Texas at Arlington | 2024–2024 (1) | new | https://mavmatrix.uta.edu/publicaffairs_dissertations/
+- University of Texas at Arlington | 2024–2024 (1) | known not-a-list | https://mavmatrix.uta.edu/publicaffairs_dissertations/
 - University of Texas at Arlington | 2019–2019 (2) | known not-a-list | http://wweb.uta.edu/business/gradbiz/newgradbiz/PhD/alumni.html
 - University of Texas at Arlington | 2013–2013 (2) | known not-a-list | http://wweb.uta.edu/business/gradbiz/newgradbiz/thesis&dissertation.html
 - University of Toledo | 2020–2020 (1) | known not-a-list | https://news.utoledo.edu/index.php/09_23_2019/utoledo-engineering-career-fair-drives-job-placements-at-major-companies
@@ -3588,27 +3782,31 @@ One line per address: institution | years captured | known page? | address. Acce
 - University of Toledo | 2023–2023 (1) | known not-a-list | https://utdr.utoledo.edu/islandora/object/utoledo:alumni-development
 - University of Toledo | 2023–2023 (1) | known not-a-list | https://utdr.utoledo.edu/islandora/object/utoledo:alumni-relations
 - University of Toledo | 2013–2023 (17) | known program-list | http://www.utoledo.edu/business/PHD/Alumni.html
-- University of Toledo | 2013–2022 (12) | known not-a-list | http://www.utoledo.edu/graduate/currentstudents/thesis_dissertation/
+- University of Toledo | 2013–2025 (13) | known not-a-list | http://www.utoledo.edu/graduate/currentstudents/thesis_dissertation/
 - University of Toledo | 2019–2020 (2) | known not-a-list | http://www.utoledo.edu/hhs/student-services/placement.html
 - University of Toledo | 2013–2016 (10) | known not-a-list | http://www.utoledo.edu/honors/Theses.html
 - University of Toledo | 2013–2020 (19) | known not-a-list | http://www.utoledo.edu/nsm/envsciences/grad/dissertation.html
 - University of Toledo | 2013–2016 (6) | known not-a-list | http://www.utoledo.edu/nsm/envsciences/students/eees_theses.html
 - University of Toledo | 2013–2016 (6) | known not-a-list | http://www.utoledo.edu/nsm/envsciences/students/ms_theses_geol.html
 - University of Toledo | 2019–2024 (2) | known not-a-list | https://www.utoledo.edu/offices/provost/thesis-dissertation-independent-study-resource.html
-- University of Toronto | 2025–2025 (1) | new | https://www.mie.utoronto.ca/mie-phd-candidates-yasamin-kazemi-and-peter-serles-teach-engineering-concepts-to-kids-at-u-of-ts-stem-day/
+- University of Toronto | 2025–2025 (1) | known not-a-list | https://www.mie.utoronto.ca/mie-phd-candidates-yasamin-kazemi-and-peter-serles-teach-engineering-concepts-to-kids-at-u-of-ts-stem-day/
 - University of Toronto | 2023–2023 (1) | known not-a-list | https://www.rotman.utoronto.ca/Degrees/MastersPrograms/SpecializedProgramsBlog/MFRM/Are-You-Job-Market-Ready-Become-an-Expert-in-Financial-Risk-Management
 - University of Toronto | 2016–2016 (6) | known not-a-list | http://www.sgc.utoronto.ca/index2.php?business-research-dissertation
 - University of Trento | 2019–2019 (1) | known not-a-list | https://infostudenti.unitn.it/en/registration-dissertation-or-final-exam-0
-- University of Utah | 2024–2024 (1) | new | https://collections.lib.utah.edu/details?id=193841&facet_setname_s=%22ir_etd%22&facet_publication_type_t=%22dissertation%22&facet_department_t=%22Entrepreneurship+%26+Strategy%22&facet_school_or_college_t=%22David+Eccles+School+of+Business%22&facet_subject_t=%22Strategy%22
-- University of Utah | 2024–2024 (1) | new | https://collections.lib.utah.edu/details?id=193841&facet_subject_t=%22Strategy%22&facet_setname_s=%22ir_etd%22&facet_type_t=%22Text%22&facet_publication_type_t=%22dissertation%22&facet_school_or_college_t=%22David+Eccles+School+of+Business%22
+- University of Utah | 2025–2025 (1) | new | https://collections.lib.utah.edu/details?id=193841&facet_department_t=%22Entrepreneurship+%26+Strategy%22&facet_school_or_college_t=%22David+Eccles+School+of+Business%22&facet_subject_t=%22Performance%22&facet_publication_type_t=%22dissertation%22
+- University of Utah | 2024–2024 (1) | known not-a-list | https://collections.lib.utah.edu/details?id=193841&facet_setname_s=%22ir_etd%22&facet_publication_type_t=%22dissertation%22&facet_department_t=%22Entrepreneurship+%26+Strategy%22&facet_school_or_college_t=%22David+Eccles+School+of+Business%22&facet_subject_t=%22Strategy%22
+- University of Utah | 2025–2025 (1) | new | https://collections.lib.utah.edu/details?id=193841&facet_subject_t=%22Alliances%22&facet_department_t=%22Entrepreneurship+%26+Strategy%22&facet_school_or_college_t=%22David+Eccles+School+of+Business%22&facet_publication_type_t=%22dissertation%22&facet_setname_s=%22ir_etd%22
+- University of Utah | 2025–2025 (1) | new | https://collections.lib.utah.edu/details?id=193841&facet_subject_t=%22Corporate+profits%22&facet_department_t=%22Entrepreneurship+%26+Strategy%22&facet_school_or_college_t=%22David+Eccles+School+of+Business%22&facet_publication_type_t=%22dissertation%22&facet_setname_s=%22ir_etd%22
+- University of Utah | 2025–2025 (1) | new | https://collections.lib.utah.edu/details?id=193841&facet_subject_t=%22Performance%22&facet_publication_type_t=%22dissertation%22&facet_school_or_college_t=%22David+Eccles+School+of+Business%22&facet_setname_s=%22ir_etd%22
+- University of Utah | 2024–2024 (1) | known not-a-list | https://collections.lib.utah.edu/details?id=193841&facet_subject_t=%22Strategy%22&facet_setname_s=%22ir_etd%22&facet_type_t=%22Text%22&facet_publication_type_t=%22dissertation%22&facet_school_or_college_t=%22David+Eccles+School+of+Business%22
 - University of Utah | 2021–2021 (1) | known program-list | https://eccles.utah.edu/programs/phd-in-business-administration/job-market-candidates/
 - University of Utah | 2021–2021 (1) | known program-list | https://eccles.utah.edu/programs/phd-in-business-administration/job-placements/
-- University of Utah | 2021–2024 (6) | known not-a-list | https://forms.lib.utah.edu/dlm-requests/?title=Ecosystem+Responses+to+seasonal+snowpack+variation+in+the+Western+United+States&coll=Theses+%26+Dissertations&ark=ark%3A%2F87278%2Fs6qr85b6&url=https%3A%2F%2Fcollections.lib.utah.edu%2Fdetails%3Fid%3D196470
+- University of Utah | 2021–2025 (19) | known not-a-list | https://forms.lib.utah.edu/dlm-requests/?title=Ecosystem+Responses+to+seasonal+snowpack+variation+in+the+Western+United+States&coll=Theses+%26+Dissertations&ark=ark%3A%2F87278%2Fs6qr85b6&url=https%3A%2F%2Fcollections.lib.utah.edu%2Fdetails%3Fid%3D196470
 - University of Vienna | 2023–2023 (1) | known not-a-list | https://dshcs.univie.ac.at/en/activities-events/past-activities-events/winter-semester-202122/roadmapping-project-management-for-phd-candidates/
 - University of Vienna | 2017–2017 (1) | known not-a-list | https://lists.univie.ac.at/mailman/listinfo/phdmanagement-candidates
-- University of Vienna | 2025–2025 (1) | new | https://phd-management.univie.ac.at/job-market-prior-placements/current-candidates-for-the-job-market/
-- University of Vienna | 2025–2025 (1) | new | https://se-ktf.univie.ac.at/en/research-cooperations/dissertations/
-- University of Vienna | 2024–2024 (1) | new | https://ssc-histkultur.univie.ac.at/en/studies/ihr-weg-durchs-studium/doctoral-programm/how-to-change-my-dissertation-topic-or-supervisor/
+- University of Vienna | 2025–2025 (1) | known not-a-list | https://phd-management.univie.ac.at/job-market-prior-placements/current-candidates-for-the-job-market/
+- University of Vienna | 2025–2025 (1) | known not-a-list | https://se-ktf.univie.ac.at/en/research-cooperations/dissertations/
+- University of Vienna | 2024–2024 (1) | known not-a-list | https://ssc-histkultur.univie.ac.at/en/studies/ihr-weg-durchs-studium/doctoral-programm/how-to-change-my-dissertation-topic-or-supervisor/
 - University of Virginia | 2021–2022 (2) | known not-a-list | https://crisp.engineering.virginia.edu/dissertations-and-theses
 - University of Virginia | 2013–2014 (5) | known not-a-list | http://www.darden.virginia.edu/web/PhD/Current-Candidates/
 - University of Virginia | 2014–2014 (3) | known not-a-list | http://www.darden.virginia.edu/web/PhD/International-Candidates/
@@ -3631,7 +3829,7 @@ One line per address: institution | years captured | known page? | address. Acce
 - University of Washington | 2023–2023 (1) | known not-a-list | https://blog.foster.uw.edu/foster-1-job-placement-top-30-schools-u-s-news-ranking/us-news-rankings-criteria/
 - University of Washington | 2022–2022 (1) | known not-a-list | https://blog.foster.uw.edu/working-abroad-leads-to-freedom-in-the-job-market/nathan-bright-university-of-manizales/
 - University of Washington | 2013–2013 (1) | known not-a-list | http://complit.washington.edu/dissertation/buffoon-and-magician-poetry-spectacle-and-critical-discourse-works-pier-paolo-pasolini
-- University of Washington | 2022–2022 (1) | known not-a-list | https://csde.washington.edu/news-events/brad-foster-successfully-defends-dissertation/
+- University of Washington | 2022–2025 (2) | known not-a-list | https://csde.washington.edu/news-events/brad-foster-successfully-defends-dissertation/
 - University of Washington | 2018–2018 (1) | known not-a-list | http://depts.washington.edu/foster/2018-management-organization-dissertations/
 - University of Washington | 2017–2017 (1) | known not-a-list | http://depts.washington.edu/foster/foster-1-job-placement-top-30-schools-u-s-news-ranking/
 - University of Washington | 2019–2019 (1) | known not-a-list | http://depts.washington.edu/foster/working-abroad-leads-to-freedom-in-the-job-market/
@@ -3648,9 +3846,9 @@ One line per address: institution | years captured | known page? | address. Acce
 - University of Waterloo | 2019–2022 (2) | known not-a-list | https://uwaterloo.ca/engineering/approved-doctoral-dissertation-supervisor-status
 - University of Westminster | 2020–2020 (1) | known not-a-list | https://www.westminster.ac.uk/business-services/student-and-graduate-talent/teaching-placements
 - University of Windsor | 2023–2023 (1) | known not-a-list | https://www.uwindsor.ca/dailynews/business/2016-04-18/posters-present-experience-practicum-placements
-- University of Windsor | 2024–2024 (1) | new | https://www.uwindsor.ca/dailynews/business/2017-10-25/presentations-reflect-co-op-placement-experiences
+- University of Windsor | 2024–2024 (1) | known not-a-list | https://www.uwindsor.ca/dailynews/business/2017-10-25/presentations-reflect-co-op-placement-experiences
 - University of Windsor | 2023–2024 (2) | known not-a-list | https://www.uwindsor.ca/dailynews/business/2018-04-17/poster-presentations-allow-psych-students-discuss-community-placements
-- University of Windsor | 2025–2025 (1) | new | https://www.uwindsor.ca/engineering/2020-12-18/overseas-co-op-placement-provides-life-changing-experience
+- University of Windsor | 2025–2025 (1) | known not-a-list | https://www.uwindsor.ca/engineering/2020-12-18/overseas-co-op-placement-provides-life-changing-experience
 - University of Wisconsin-Milwaukee | 2013–2014 (2) | known program-list | http://www3.uwm.edu/business/programs/phd/graduates.cfm
 - University of Wisconsin-Milwaukee | 2015–2015 (1) | known not-a-list | http://www3.uwm.edu/chs/alumni_and_friends/alumni_placement.cfm
 - University of Wisconsin-Milwaukee | 2013–2014 (6) | known program-list | http://www4.uwm.edu/business/programs/phd/graduates.cfm
@@ -3673,15 +3871,17 @@ One line per address: institution | years captured | known page? | address. Acce
 - University of the West of England, Bristol (Bristol Business School, UWE) | 2023–2023 (1) | known not-a-list | https://courses.uwe.ac.uk/USSKBC303/research-dissertation-project
 - University of the West of England, Bristol (Bristol Business School, UWE) | 2018–2020 (2) | known not-a-list | https://courses.uwe.ac.uk/UZWRG9403/dissertation-pqf
 - University of the West of England, Bristol (Bristol Business School, UWE) | 2017–2020 (3) | known not-a-list | http://courses.uwe.ac.uk/UZWS4V40M/dissertation
-- University of the West of England, Bristol (Bristol Business School, UWE) | 2019–2024 (4) | known not-a-list | https://people.uwe.ac.uk/SearchResults?query=%20Dissertation%20Supervision
-- University of the West of England, Bristol (Bristol Business School, UWE) | 2024–2024 (1) | new | https://www.uwe.ac.uk/study/work-experience-jobs-and-placements/business
-- University of the West of England, Bristol (Bristol Business School, UWE) | 2024–2024 (1) | new | https://www.uwe.ac.uk/study/work-experience-jobs-and-placements/engineering
+- University of the West of England, Bristol (Bristol Business School, UWE) | 2025–2025 (1) | new | https://info.uwe.ac.uk/modules/specification.asp?urn=5352&file=UACPCU-30-3_dissertation_Sept_2009
+- University of the West of England, Bristol (Bristol Business School, UWE) | 2019–2025 (8) | known not-a-list | https://people.uwe.ac.uk/SearchResults?query=%20Dissertation%20Supervision
+- University of the West of England, Bristol (Bristol Business School, UWE) | 2024–2024 (1) | known not-a-list | https://www.uwe.ac.uk/study/work-experience-jobs-and-placements/business
+- University of the West of England, Bristol (Bristol Business School, UWE) | 2024–2025 (2) | known not-a-list | https://www.uwe.ac.uk/study/work-experience-jobs-and-placements/engineering
 - Université Grenoble Alpes | 2022–2022 (1) | known not-a-list | https://cybersecurity.univ-grenoble-alpes.fr/fostering-the-ecosystem/build-scientific-and-industrial-collaborations/theses/theses-867872.kjsp
 - Université Grenoble Alpes | 2019–2019 (1) | known not-a-list | https://phd-alumni.univ-grenoble-alpes.fr/page/help/a-quoi-sert-l-annuaire-des-entreprises-what-is-the-purpose-of-the-business-directory/36
 - Université Grenoble Alpes | 2019–2019 (1) | known not-a-list | https://phd-alumni.univ-grenoble-alpes.fr/page/help/comment-changer-l-adresse-email-ou-le-mot-de-passe-avec-lequel-je-me-suis-inscrit-how-do-i-change-the-email-address-or-password-i-registered-with/21
 - Université Laval | 2021–2021 (2) | known not-a-list | https://lta.fsaa.ulaval.ca/?dissertation-topics-in-supply-chain-management=&chash=b64899c0d96af59542201cfc8dec3ef9&cHash=713f3f49ee751831aebc6e1ac5344a80
 - Université Laval | 2021–2021 (2) | known not-a-list | https://lta.fsaa.ulaval.ca/en/?dissertation-topics-in-supply-chain-management=&chash=b64899c0d96af59542201cfc8dec3ef9&cHash=713f3f49ee751831aebc6e1ac5344a80
-- Université de Nantes | 2024–2024 (1) | new | https://theses.univ-nantes.fr/vufind/Author/Home?author=Eliacheff+Caroline
+- Université Toulouse 1 Capitole | 2025–2025 (1) | new | https://cda.ut-capitole.fr/accueil/recherche/theses/theses-soutenues/these-soutenue-par-monsieur-costa-cunha-diogo-valorisation-de-linnovation-en-sante-proposition-pour-une-refonte-juridique-dirigee-par-madame-madame-alexandra-mendoza-caminade
+- Université de Nantes | 2024–2024 (1) | known not-a-list | https://theses.univ-nantes.fr/vufind/Author/Home?author=Eliacheff+Caroline
 - Vanderbilt University | 2023–2023 (1) | known not-a-list | https://engineering.vanderbilt.edu/academic-services/first-year-info/SOE_Calculus_Placement.php
 - Virginia Tech | 2023–2024 (2) | known program-list | https://management.pamplin.vt.edu/Academics/phd/alumni-network.html
 - WHU – Otto Beisheim School of Management | 2017–2017 (1) | known not-a-list | https://www.whu.edu/alumni/kooperationsmoeglichkeiten/post-placement/
@@ -3690,7 +3890,7 @@ One line per address: institution | years captured | known page? | address. Acce
 - WHU – Otto Beisheim School of Management | 2023–2023 (1) | known not-a-list | https://www.whu.edu/de/magazin/magazin-overall/frau-devadrita-nair-verteidigt-erfolgreich-ihre-dissertation/
 - WHU – Otto Beisheim School of Management | 2023–2023 (1) | known single-record | https://www.whu.edu/de/magazin/magazin-overall/sebastian-doetsch-verteidigt-erfolgreich-seine-dissertation/
 - WHU – Otto Beisheim School of Management | 2023–2023 (1) | known not-a-list | https://www.whu.edu/de/magazin/promotionsprogramm-1/ole-frauen-verteidigt-erfolgreich-seine-dissertation/
-- WHU – Otto Beisheim School of Management | 2024–2024 (1) | new | https://www.whu.edu/de/news-insights/whu-magazin/artikel/informs-dissertation-prize-geht-an-whu-doktorand/
+- WHU – Otto Beisheim School of Management | 2024–2024 (1) | known not-a-list | https://www.whu.edu/de/news-insights/whu-magazin/artikel/informs-dissertation-prize-geht-an-whu-doktorand/
 - WHU – Otto Beisheim School of Management | 2016–2016 (1) | known not-a-list | https://www.whu.edu/en/career/doctoral-candidates-in-scm/
 - WHU – Otto Beisheim School of Management | 2020–2020 (1) | known not-a-list | https://www.whu.edu/en/faculty-research/supply-chain-management-group/production-management/dissertation-in-production-management/
 - WHU – Otto Beisheim School of Management | 2023–2023 (1) | known single-record | https://www.whu.edu/en/magazin/doctoral-program/jan-rasmus-kuennen-successfully-defends-his-dissertation/
@@ -3701,26 +3901,28 @@ One line per address: institution | years captured | known page? | address. Acce
 - WHU – Otto Beisheim School of Management | 2013–2015 (4) | known not-a-list | http://www.whu.edu/ueber-die-whu/karriere/doctoral-candidates-in-scm/
 - Warsaw University of Technology | 2016–2017 (10) | known not-a-list | http://www.arch.pw.edu.pl/?business-dissertation-management-skill-student
 - Warsaw University of Technology | 2022–2022 (1) | known not-a-list | https://www.ca.pw.edu.pl/Biuro-ds.-Spolecznej-Odpowiedzialnosci-Uczelni/Sekcja-Ds.-Osob-z-Niepelnosprawnosciami/Dla-studentow-i-doktorantow-For-students-and-doctoral-candidates
-- Warsaw University of Technology | 2024–2024 (1) | new | http://www.eng.itc.pw.edu.pl/About/Divisions/Division-of-Power-Engineering/Topics-of-intermediate-and-diploma-theses
+- Warsaw University of Technology | 2024–2024 (1) | known not-a-list | http://www.eng.itc.pw.edu.pl/About/Divisions/Division-of-Power-Engineering/Topics-of-intermediate-and-diploma-theses
+- Warsaw University of Technology | 2025–2025 (1) | new | https://www.eng.itc.pw.edu.pl/About/Divisions/Zaklad-Sztucznej-Inteligencji-i-Technik-Wodorowych-w-Energetyce/Division-of-Power-Engineering/Topics-of-intermediate-and-diploma-theses
 - Washington State University | 2022–2024 (3) | known not-a-list | https://business.wsu.edu/news-events/dividend/dividend-fall-2016/beta-alpha-psi-boosts-job-preparedness-placement/
 - Washington State University | 2022–2022 (1) | known program-list | https://business.wsu.edu/news-events/dividend/fall-2018/2018-phd-graduates/
 - Washington State University | 2022–2022 (1) | known program-list | https://business.wsu.edu/news-events/dividend/fall-2019/2019-ph-d-graduates/
 - Washington State University | 2022–2022 (1) | known program-list | https://business.wsu.edu/news-events/dividend/fall-2020/2020-phd-graduates/
 - Washington State University | 2022–2022 (1) | known program-list | https://business.wsu.edu/news-events/dividend/fall-2021/2021-phd-graduates/
 - Washington State University | 2023–2023 (1) | known program-list | https://business.wsu.edu/news-events/dividend/fall-2022/2022-phd-graduates/
-- Western University (Canada) /  University of Western at London, Ontario | 2025–2025 (1) | new | https://www.ivey.uwo.ca/alumni/intouch/2016/3/duet-yasser-rahrovani-derrick-neufeld-phd-97/
+- Western University (Canada) /  University of Western at London, Ontario | 2025–2025 (1) | known single-record | https://www.ivey.uwo.ca/alumni/intouch/2016/3/duet-yasser-rahrovani-derrick-neufeld-phd-97/
 - Western University (Canada) /  University of Western at London, Ontario | 2021–2025 (4) | known program-list | https://www.ivey.uwo.ca/internationalbusiness/students/ivey-ib-phd-graduates/
 - Western University (Canada) /  University of Western at London, Ontario | 2019–2019 (1) | known not-a-list | https://www.ivey.uwo.ca/phd/placement/ | 2 pages below it
-- Western University (Canada) /  University of Western at London, Ontario | 2025–2025 (1) | new | https://www.ivey.uwo.ca/sustainability/students-alumni/phd-academy/2025/
-- Western University (Canada) /  University of Western at London, Ontario | 2025–2025 (1) | new | https://www.ivey.uwo.ca/sustainability/students-alumni/phd-academy/past-academies/2017/2017-participants/kate-odziemkowska/
-- Western University (Canada) /  University of Western at London, Ontario | 2025–2025 (1) | new | https://www.ivey.uwo.ca/sustainability/students-alumni/phd-and-postdoc-students/
-- World Maritime University | 2017–2023 (2) | known not-a-list | http://commons.wmu.se/all_dissertations/ | 1 pages below it
+- Western University (Canada) /  University of Western at London, Ontario | 2025–2025 (1) | known not-a-list | https://www.ivey.uwo.ca/sustainability/students-alumni/phd-academy/2025/
+- Western University (Canada) /  University of Western at London, Ontario | 2025–2025 (1) | known not-a-list | https://www.ivey.uwo.ca/sustainability/students-alumni/phd-academy/past-academies/2017/2017-participants/kate-odziemkowska/
+- Western University (Canada) /  University of Western at London, Ontario | 2025–2025 (1) | known not-a-list | https://www.ivey.uwo.ca/sustainability/students-alumni/phd-and-postdoc-students/
+- World Maritime University | 2017–2025 (3) | known not-a-list | http://commons.wmu.se/all_dissertations/ | 1 pages below it
 - World Maritime University | 2017–2017 (1) | known not-a-list | http://commons.wmu.se/gmaep_dissertations/
 - World Maritime University | 2017–2017 (1) | known not-a-list | http://commons.wmu.se/itl_dissertations/
 - World Maritime University | 2017–2024 (3) | known not-a-list | http://commons.wmu.se/ma_dissertations/
 - World Maritime University | 2017–2017 (1) | known not-a-list | http://commons.wmu.se/meom_dissertations/
 - World Maritime University | 2017–2017 (1) | known not-a-list | http://commons.wmu.se/met_dissertations/
 - World Maritime University | 2017–2017 (1) | known not-a-list | http://commons.wmu.se/msa_dissertations/
+- World Maritime University | 2025–2025 (1) | new | https://commons.wmu.se/msea_dissertations/
 - World Maritime University | 2017–2021 (2) | known not-a-list | http://commons.wmu.se/msem_dissertations/
 - World Maritime University | 2017–2017 (1) | known not-a-list | http://commons.wmu.se/msep_dissertations/
 - World Maritime University | 2022–2022 (1) | known program-list | https://commons.wmu.se/phd_dissertations/ | 1 pages below it
@@ -3728,13 +3930,14 @@ One line per address: institution | years captured | known page? | address. Acce
 - World Maritime University | 2017–2017 (1) | known not-a-list | http://commons.wmu.se/psa_dissertations/
 - World Maritime University | 2017–2017 (1) | known not-a-list | http://commons.wmu.se/sml_dissertations/
 - World Maritime University | 2017–2024 (2) | known not-a-list | http://commons.wmu.se/spm_dissertations/
+- World Maritime University | 2025–2025 (1) | new | https://commons.wmu.se/tms_dissertations/
 - Wright State University | 2014–2014 (4) | known program-list | http://cecs.wright.edu/programs/doctoral/engineering/alumni
 - Wright State University | 2023–2023 (1) | known not-a-list | https://corescholar.libraries.wright.edu/phd_engineering_dissertations/
 - Yale University | 2020–2021 (2) | known not-a-list | https://som.yale.edu/isms-2014-doctoral-dissertation-proposal-competition
 - Yale University | 2014–2014 (2) | known program-list | http://som.yale.edu/our-programs/phd/job-market-candidates
-- Yale University | 2016–2022 (8) | known program-list | http://som.yale.edu/programs/phd/careers/alumni
+- Yale University | 2016–2025 (9) | known program-list | http://som.yale.edu/programs/phd/careers/alumni
 - Yale University | 2017–2022 (6) | known program-list | http://som.yale.edu/programs/phd/job-market-candidates
-- Yale University | 2019–2023 (4) | known program-list | https://som.yale.edu/programs/phd/overview/operations/recent-graduates-and-current-students
+- Yale University | 2019–2025 (5) | known program-list | https://som.yale.edu/programs/phd/overview/operations/recent-graduates-and-current-students
 - (no institution for host) | 2020–2023 (2) | new | https://www.adcet.edu.au/resource/10224/access-quality-and-wellbeing-in-engineering-wil-placements-implications-for-equity-and-diversity/
 - (no institution for host) | 2024–2024 (1) | new | https://alumni.knoxvillecollege.edu/post/orise-s-rachel-hill-ph-d-transitions-from-stem-research-to-program-management
 - (no institution for host) | 2013–2016 (4) | new | http://apps.northeaststate.edu/ie/jobplacement/
@@ -3752,6 +3955,7 @@ One line per address: institution | years captured | known page? | address. Acce
 - (no institution for host) | 2013–2014 (6) | new | http://www.canterbury.ac.uk/business-services/placements/Home.aspx
 - (no institution for host) | 2023–2023 (1) | new | https://www.cleveland.ac.uk/for-business/industry-placements-for-employers
 - (no institution for host) | 2013–2013 (1) | new | http://cmbi.bjmu.edu.cn/uptodate/critical%20care/Monitoring/Placement%20and%20management%20of%20arterial%20catheters.htm
+- (no institution for host) | 2025–2025 (1) | new | https://www.coventrycollege.ac.uk/coventry-student-unearths-new-career-thanks-to-ground-engineering-placement/
 - (no institution for host) | 2022–2025 (104) | new | http://dspace.aubg.edu/xmlui/handle/nls/30552/discover?filtertype=subject&filter_relational_operator=equals&filter=Banking+business+Bulgaria+Bocconi+Masters+theses.
 - (no institution for host) | 2025–2025 (1) | new | http://dspace.aubg.edu/xmlui/handle/nls/30552/search-filter?filtertype_0=author&filtertype_1=author&filtertype_2=subject&filter_relational_operator_1=equals&filtertype_3=subject&filter_relational_operator_0=equals&filtertype_4=author&filter_2=Business+plan+Bocconi+Masters+theses.&filter_relational_operator_3=equals&filter_1=Bujupi%2C+Esida.&filter_relational_operator_2=equals&filter_0=Krastev%2C+Kamen.&filter_relational_operator_4=equals&filter_4=Banov%2C+Dimitar.&filter_3=LF5095.B583+A14+2018emt&field=subject&order=COUNT
 - (no institution for host) | 2025–2025 (1) | new | http://dspace.aubg.edu/xmlui/handle/nls/30552/search-filter?filtertype_0=author&filtertype_1=subject&filtertype_2=author&filter_relational_operator_1=equals&filtertype_3=subject&filter_relational_operator_0=equals&filtertype_4=author&filter_2=Stoichkov%2C+Nikolay.&filter_relational_operator_3=equals&filtertype_5=dateIssued&filter_1=Financial+analysis+Bocconi+Masters+theses.&filter_relational_operator_2=equals&filtertype_6=author&filter_0=Krastev%2C+Kamen.&filter_relational_operator_5=equals&filter_relational_operator_4=equals&filter_6=Banov%2C+Dimitar.&filter_5=2018&filter_relational_operator_6=equals&filter_4=Simeonov%2C+Emil.&filter_3=Business+plan+Bocconi+Masters+theses.&field=subject&order=COUNT
@@ -3821,6 +4025,7 @@ One line per address: institution | years captured | known page? | address. Acce
 - (no institution for host) | 2015–2017 (2) | new | https://www.missouriwestern.edu/eml/placement-exit-exams/
 - (no institution for host) | 2019–2019 (1) | new | https://www.missouriwestern.edu/registration/placement/
 - (no institution for host) | 2021–2023 (2) | new | https://mist.ac.uk/students-corner/213-industrial-placements-and-snowflake-software
+- (no institution for host) | 2025–2025 (1) | new | https://www.mondragon.edu/en/phd/defended-theses/-/ptesis/operations-management%C2%A0and-technological-innovation
 - (no institution for host) | 2019–2019 (1) | new | https://www.ncuindia.edu/Placement-Highlights/groz-engineering-tools/
 - (no institution for host) | 2021–2021 (1) | new | https://www.ncuindia.edu/placements-school-of-management/
 - (no institution for host) | 2019–2019 (1) | new | https://nmat.nmims.edu/?utm_source=Analyticsindia&utm_medium=PGDM-BA-Analyticsindia&utm_placement=placement&utm_campaign=PGDM-BA-Analyticsindia
@@ -3828,6 +4033,8 @@ One line per address: institution | years captured | known page? | address. Acce
 - (no institution for host) | 2020–2020 (1) | new | https://ostm.edu/careers-placement/august-2020-hiring-lmt-full-or-part-time-in-churchville/ | 1 pages below it
 - (no institution for host) | 2018–2020 (5) | new | https://ostm.edu/careers-placement/july-25-2018-professional-massage-spaces-for-rent-in-the-south-wedge/attachment/colin-coffey/
 - (no institution for host) | 2020–2021 (2) | new | https://ostm.edu/careers-placement/massage-business-for-salenovember-5th-2019/
+- (no institution for host) | 2025–2025 (1) | new | https://placement.ittanakpur.ac.in/industrial-visit/
+- (no institution for host) | 2025–2025 (1) | new | https://placement.ittanakpur.ac.in/science-vibration-2024-organized-at-dr-apj-abdul-kalam-engineering-college/
 - (no institution for host) | 2018–2019 (4) | new | https://placement.missouriwestern.edu/
 - (no institution for host) | 2022–2022 (1) | new | https://placement.missouriwestern.edu/Sampleexam.html
 - (no institution for host) | 2020–2020 (1) | new | https://www.reaseheath.ac.uk/aspiring-businesswoman-hannah-puts-dissertation-research-action/
@@ -3836,6 +4043,7 @@ One line per address: institution | years captured | known page? | address. Acce
 - (no institution for host) | 2013–2015 (6) | new | http://www.rgu.ac.uk/business-services/student-placements
 - (no institution for host) | 2014–2016 (5) | new | http://www.sctcc.edu/land-surveyingcivil-engineering-placement
 - (no institution for host) | 2015–2015 (1) | new | http://scuoledidottorato.unicatt.it/economia-management-mercati-ed-intermediari-finanziari-meif-placement
+- (no institution for host) | 2025–2025 (1) | new | https://www.sorbonnemanagement.fr/retour-sur-theses
 - (no institution for host) | 2018–2018 (1) | new | https://www.south-lanarkshire-college.ac.uk/commercial/training-courses-for-business/placements/
 - (no institution for host) | 2022–2023 (2) | new | https://www.staffs.ac.uk/business-services/unitemps/placements
 - (no institution for host) | 2023–2024 (3) | new | https://teco.edu/tweets/great-experience-from-hepta-phd-candidates-visit-to-augsburg-special-thanks-to-igua-for-showing-us-smartaqnet-li-https-twitter-com-i-web-status-1600509015045316610/
@@ -3844,7 +4052,9 @@ One line per address: institution | years captured | known page? | address. Acce
 - (no institution for host) | 2019–2019 (1) | new | https://www.ucb.ac.uk/business-services/offering-work-experience-placements-to-ucb-students.aspx
 - (no institution for host) | 2021–2021 (1) | new | https://www.ucb.ac.uk/for-businesses/work-experience-placements/
 - (no institution for host) | 2020–2021 (2) | new | https://www.umassd.edu/engineering/bng/graduate/list-of-doctoral-dissertations/
+- (no institution for host) | 2025–2025 (1) | new | https://www.umassd.edu/engineering/cis/graduate/list-of-phd-theses/
 - (no institution for host) | 2020–2020 (1) | new | https://www.umassd.edu/engineering/mne/graduate/list-of-ms-theses/
+- (no institution for host) | 2025–2025 (1) | new | https://www.unibocconi.it/en/programs/phd/phd-business-administration-and-management/job-market-candidates
 - (no institution for host) | 2024–2024 (1) | new | https://www.unibocconi.it/en/programs/phd/phd-business-administration-and-management/placement
 - (no institution for host) | 2024–2024 (1) | new | https://www.unibocconi.it/it/studenti-iscritti/corsi-di-lauree-magistrali/management/placement-e-performance-del-corso
 - (no institution for host) | 2025–2025 (1) | new | https://www.uow.edu.au/alumni/honorary-alumni/honorary-doctorates/professor-joe-chicharo-om/
@@ -3854,25 +4064,25 @@ One line per address: institution | years captured | known page? | address. Acce
 - (no institution for host) | 2019–2019 (1) | new | https://vvpedulink.ac.in/departments/computer-engineering/placement/
 - (no institution for host) | 2019–2019 (1) | new | https://vvpedulink.ac.in/departments/elec-comm-engineering/placement/
 - (no institution for host) | 2021–2021 (1) | new | https://www2.novasbe.unl.pt/en/programs/phds/phd-in-management/placement
-- ÉTS, Montreal (Ph.D, Electrical Engineering) and UQAM, Montreal (Ph.D, Computer Science) | 2025–2025 (4) | new | https://www.etsmtl.ca/en/study-at-ets/graduate-studies-hub/confidentiality-of-dissertation-or-thesis
+- ÉTS, Montreal (Ph.D, Electrical Engineering) and UQAM, Montreal (Ph.D, Computer Science) | 2025–2025 (4) | known not-a-list | https://www.etsmtl.ca/en/study-at-ets/graduate-studies-hub/confidentiality-of-dissertation-or-thesis
 - École polytechnique fédérale de Lausanne | 2017–2023 (111) | known not-a-list | http://algo.epfl.ch/en/output/phd_theses
 - École polytechnique fédérale de Lausanne | 2025–2025 (1) | new | https://asl.epfl.ch/asl-these/decentralized-bilevel-optimization-and-stackelberg-games-m-s-dissertation/
-- École polytechnique fédérale de Lausanne | 2025–2025 (1) | new | https://www.epfl.ch/about/vice-presidencies/fr/vice-presidence-pour-les-finances-vpf/planification-tresorerie/charte-de-placement-responsable-de-lepfl/
-- École polytechnique fédérale de Lausanne | 2025–2025 (1) | new | https://www.epfl.ch/labs/lasur/en-productions/en-productions-theses/
-- École polytechnique fédérale de Lausanne | 2024–2024 (1) | new | https://www.epfl.ch/labs/lasur/published-theses/
+- École polytechnique fédérale de Lausanne | 2025–2025 (1) | known not-a-list | https://www.epfl.ch/about/vice-presidencies/fr/vice-presidence-pour-les-finances-vpf/planification-tresorerie/charte-de-placement-responsable-de-lepfl/
+- École polytechnique fédérale de Lausanne | 2025–2025 (1) | known not-a-list | https://www.epfl.ch/labs/lasur/en-productions/en-productions-theses/
+- École polytechnique fédérale de Lausanne | 2024–2024 (1) | known not-a-list | https://www.epfl.ch/labs/lasur/published-theses/
 - École polytechnique fédérale de Lausanne | 2023–2025 (3) | known not-a-list | https://www.epfl.ch/labs/lbs/ph-d-theses/
-- École polytechnique fédérale de Lausanne | 2025–2025 (1) | new | https://www.epfl.ch/labs/lions/alumni-interns/yi-feng-visiting-phd-student/
-- École polytechnique fédérale de Lausanne | 2025–2025 (1) | new | https://www.epfl.ch/labs/lions/alumni-phd-students/afsaneh-asaei-1/
-- École polytechnique fédérale de Lausanne | 2024–2025 (2) | new | https://www.epfl.ch/labs/lions/alumni-phd-students/anastasios-kyrillidis-1/
-- École polytechnique fédérale de Lausanne | 2025–2025 (1) | new | https://www.epfl.ch/labs/lions/alumni-phd-students/baran-gozcu-1/
+- École polytechnique fédérale de Lausanne | 2025–2025 (1) | known not-a-list | https://www.epfl.ch/labs/lions/alumni-interns/yi-feng-visiting-phd-student/
+- École polytechnique fédérale de Lausanne | 2025–2025 (1) | known not-a-list | https://www.epfl.ch/labs/lions/alumni-phd-students/afsaneh-asaei-1/
+- École polytechnique fédérale de Lausanne | 2024–2025 (2) | known not-a-list | https://www.epfl.ch/labs/lions/alumni-phd-students/anastasios-kyrillidis-1/
+- École polytechnique fédérale de Lausanne | 2025–2025 (1) | known not-a-list | https://www.epfl.ch/labs/lions/alumni-phd-students/baran-gozcu-1/
 - École polytechnique fédérale de Lausanne | 2021–2024 (3) | known not-a-list | https://www.epfl.ch/labs/lions/alumni-phd-students/ilija-bogunovic-1/
-- École polytechnique fédérale de Lausanne | 2025–2025 (1) | new | https://www.epfl.ch/labs/lions/alumni-phd-students/paul-rolland-1/
-- École polytechnique fédérale de Lausanne | 2024–2024 (1) | new | https://www.epfl.ch/labs/lions/alumni-phd-students/thomas-sanchez/
-- École polytechnique fédérale de Lausanne | 2025–2025 (1) | new | https://www.epfl.ch/labs/lions/alumni-phd-students/yen-huan-li-1-2/
+- École polytechnique fédérale de Lausanne | 2025–2025 (1) | known not-a-list | https://www.epfl.ch/labs/lions/alumni-phd-students/paul-rolland-1/
+- École polytechnique fédérale de Lausanne | 2024–2024 (1) | known not-a-list | https://www.epfl.ch/labs/lions/alumni-phd-students/thomas-sanchez/
+- École polytechnique fédérale de Lausanne | 2025–2025 (1) | known not-a-list | https://www.epfl.ch/labs/lions/alumni-phd-students/yen-huan-li-1-2/
 - École polytechnique fédérale de Lausanne | 2025–2025 (1) | new | https://www.epfl.ch/labs/lms/fr/phd-theses/
 - École polytechnique fédérale de Lausanne | 2019–2025 (2) | known not-a-list | https://www.epfl.ch/labs/lms/research-current-phd-theses/
-- École polytechnique fédérale de Lausanne | 2024–2024 (1) | new | https://www.epfl.ch/labs/lphe/en/placement/
-- École polytechnique fédérale de Lausanne | 2024–2024 (1) | new | https://www.epfl.ch/labs/nanolab/nanolab-publications/publications-theses/
+- École polytechnique fédérale de Lausanne | 2024–2024 (1) | known not-a-list | https://www.epfl.ch/labs/lphe/en/placement/
+- École polytechnique fédérale de Lausanne | 2024–2024 (1) | known not-a-list | https://www.epfl.ch/labs/nanolab/nanolab-publications/publications-theses/
 - École polytechnique fédérale de Lausanne | 2019–2019 (1) | known program-list | https://www.epfl.ch/labs/transp-or/phd-graduates/
 - École polytechnique fédérale de Lausanne | 2019–2023 (3) | known not-a-list | https://www.epfl.ch/labs/transp-or/phd-theses/
 - École polytechnique fédérale de Lausanne | 2023–2023 (1) | known not-a-list | https://www.epfl.ch/schools/cdh/fr/temporary-placements-for-ukrainian-researchers/
