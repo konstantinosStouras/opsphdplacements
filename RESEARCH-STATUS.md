@@ -14,10 +14,10 @@ Generated from committed-format public datasets by `node scripts/update-research
 | Pending individual review | 0 |
 | Initial program-register records | 13 |
 | Institutions in the initial register | 10 |
-| Names on program graduate and placement pages (person-years) | 10703 |
-| of which listed under an operations area | 1737 |
-| Institutions with such a page read | 83 |
-| Listed names already in the people database | 311 |
+| Names on program graduate and placement pages (person-years) | 11267 |
+| of which listed under an operations area | 1790 |
+| Institutions with such a page read | 90 |
+| Listed names already in the people database | 319 |
 
 The program register is partial. It includes historical/predecessor records; its total is not the number of active programs worldwide. The graduate lists are what the programs' own pages list (live and archived copies), with the year's meaning as each page gives it; they are partial rosters, not a census. No complete graduate census, comprehensive employment-history panel, advisor dataset or publication-at-graduation dataset has been collected yet. Their schema and research rules are prepared.
 
