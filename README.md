@@ -48,6 +48,8 @@ The top menu sits on one line next to the title on screens wider than 950 px (it
 
 Source directory: https://omlist.edutool.org/faculty
 
+The Graduates section lists the names the programs' own placement, alumni and graduate pages show by institution and listed year (`data/graduate-lists.json`), read live and from archived copies (Internet Archive snapshots and Common Crawl captures, each sighting dated and linked); a listing is not a verified degree or first job, and no program-year is claimed complete.
+
 Social sharing uses static Open Graph and Twitter/X metadata with a 1200 × 630 preview image. SVG/PNG/ICO favicons and Apple/mobile icons provide matching saved-link branding. See [SHARING.md](SHARING.md) for regeneration, validation and preview-cache limitations.
 
 ## Graduate census and career histories

@@ -32,8 +32,12 @@ for (const p of people) { const k = fold(p.name); if (!byName.has(k)) byName.set
 // Pages reviewed as not a graduate list (a single profile, a search page, a department outside operations) are
 // skipped; research/graduate-list-pages.json carries the scope and the reason.
 const pageScope = new Map(read('research/graduate-list-pages.json').map(p => [p.url, p.scope || 'program-list']));
+// Where a copy came from: the live page, an Internet Archive snapshot, or a Common Crawl capture (whose source URL
+// is the public index lookup naming the WARC record, since the capture itself is not served to a browser).
+const archiveOf = url => /web\.archive\.org\//.test(url) ? 'internet-archive' : /index\.commoncrawl\.org\//.test(url) ? 'commoncrawl' : 'live';
 const existing = fs.existsSync(outPath) ? read('data/graduate-lists.json') : { version: 1, metadata: {}, records: [] };
 const records = new Map(existing.records.map(r => [r.id, r]));
+for (const r of records.values()) for (const s of r.sightings) s.archive ??= archiveOf(s.sourceUrl);
 const done = new Set(fs.existsSync(donePath) ? read('research/graduates/extracted.json') : []);
 const files = process.argv.slice(2);
 if (!files.length) { console.log('Give proposal files to merge.'); process.exit(0); }
@@ -59,7 +63,9 @@ for (const file of files) {
     const page = pageByKey.get(r.pageKey); if (!page) throw Error(`Unknown page ${r.pageKey} in ${file}`);
     if (page.institution !== r.institution) throw Error(`Institution mismatch in ${file}: ${r.institution} vs ${page.institution}`);
     const id = `grad:${canon(r.institution).replace(/ /g, '-')}:${fold(r.name).replace(/ /g, '-')}:${r.listedYear ?? 'unknown'}`;
-    const sighting = { sourceUrl: r.sourceUrl, sourceDate: r.sourceDate, pageUrl: page.url, name: r.name, yearMeaning: r.yearMeaning || 'unstated', program: r.program || null, destination: r.destination || null, position: r.position || null, degree: r.degree || null, note: r.note || null, extractedAt: prop.extractedAt };
+    // Where the copy came from: the live page, an Internet Archive snapshot, or a Common Crawl capture (whose
+    // source URL is the public index lookup naming the WARC record; the page itself is not served by a browser).
+    const sighting = { sourceUrl: r.sourceUrl, sourceDate: r.sourceDate, archive: archiveOf(r.sourceUrl), pageUrl: page.url, name: r.name, yearMeaning: r.yearMeaning || 'unstated', program: r.program || null, destination: r.destination || null, position: r.position || null, degree: r.degree || null, note: r.note || null, extractedAt: prop.extractedAt };
     let rec = records.get(id);
     if (!rec) {
       // Link to the people database only when the name and the PhD institution both match; a name match at
@@ -88,8 +94,9 @@ const out = {
   version: 1,
   metadata: {
     updatedAt: new Date().toISOString().slice(0, 10),
-    note: 'Names listed by the programs\' own placement, alumni and graduate pages, read live and from archived snapshots (Internet Archive). A listing shows only that the page named the person under that year on that date: it is not a verified degree or first job. Rosters are partial; no program-year is claimed complete.',
+    note: 'Names listed by the programs\' own placement, alumni and graduate pages, read live and from archived copies (Internet Archive snapshots and Common Crawl captures). A listing shows only that the page named the person under that year on that date: it is not a verified degree or first job. Rosters are partial; no program-year is claimed complete.',
     records: all.length, sightings: all.reduce((n, r) => n + r.sightings.length, 0), linkedToPeople: all.filter(r => r.facultyId).length, institutions: new Set(all.map(r => r.institution)).size,
+    byArchive: { live: all.reduce((n, r) => n + r.sightings.filter(s => (s.archive || 'live') === 'live').length, 0), 'internet-archive': all.reduce((n, r) => n + r.sightings.filter(s => s.archive === 'internet-archive').length, 0), commoncrawl: all.reduce((n, r) => n + r.sightings.filter(s => s.archive === 'commoncrawl').length, 0) },
     byField: { operations: all.filter(r => r.field === 'operations').length, 'other-field': all.filter(r => r.field === 'other-field').length, unstated: all.filter(r => r.field === 'unstated').length },
     coverage: Object.values(coverage).map(c => ({ ...c, pages: [...c.pages], rosterStatus: 'partial' })),
   },

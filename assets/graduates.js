@@ -1,5 +1,5 @@
 // Graduate lists by program and year (data/graduate-lists.json): the names the programs' own placement,
-// alumni and graduate pages list, read live and from archived snapshots. A listing shows only that the page
+// alumni and graduate pages list, read live and from archived copies (Internet Archive, Common Crawl). A listing shows only that the page
 // named the person under that year on that date; it is not a verified degree or first job, and no
 // program-year is complete. Nothing here is inferred from where people work now.
 import { tiles, fmt, html } from './charts.js';
@@ -59,7 +59,7 @@ export async function renderGraduates(section) {
       const instCell = html('td'); instCell.append(r.institution, html('small', undefined, [last.program, FIELD[r.field]].filter(Boolean).join(' · ')));
       const destCell = html('td', undefined, [last.position, last.destination].filter(Boolean).join(', ') || '—'); if (last.degree) destCell.append(html('small', undefined, last.degree));
       const srcCell = html('td');
-      for (const s of r.sightings) { srcCell.append(link(`${s.sourceDate}${s.sourceUrl.includes('web.archive.org') ? ' (archived)' : ''}`, s.sourceUrl), ' '); }
+      for (const s of r.sightings) { const tag = s.archive === 'internet-archive' || s.sourceUrl.includes('web.archive.org') ? ' (Internet Archive)' : s.archive === 'commoncrawl' ? ' (Common Crawl)' : ''; srcCell.append(link(`${s.sourceDate}${tag}`, s.sourceUrl), ' '); }
       tr.append(yearCell, nameCell, instCell, destCell, srcCell); tbody.append(tr);
     } shown = Math.min(rows.length, shown + PAGE); more.hidden = shown >= rows.length; more.textContent = `Show more (${fmt(rows.length - shown)} left)`; };
     t.append(tbody);
