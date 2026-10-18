@@ -36,7 +36,7 @@ Preview with a static server, inspect changes and commit the reviewed data. A pu
 
 ## Data contracts
 
-Faculty records require a unique stable `id`, `name`, `sourceUrl`, and `retrievedAt`. Unknown degree facts are null; a future doctorate year is flagged. Retain original source labels and source URLs. Faculty affiliation is not a placement outcome.
+Every record in every database carries `addedAt` (when it first appeared) and `updatedAt` (its last change), UTC date-times kept by `scripts/record-dates.mjs` from the ledger `data/record-dates.json`; the explorer's CSV download includes both. Faculty records require a unique stable `id`, `name`, `sourceUrl`, and `retrievedAt`. Unknown degree facts are null; a future doctorate year is flagged. Retain original source labels and source URLs. Faculty affiliation is not a placement outcome.
 
 First-placement records additionally require `verificationStatus: "verified-first-placement"`, `evidenceUrl`, `reviewedAt`, and an explicitly known `placementYear` or null. Review the explicit first-job evidence before adding any record. Imported degree fields remain source-reported unless the corresponding field verification status says otherwise; verifying a job does not verify every directory fact.
 
