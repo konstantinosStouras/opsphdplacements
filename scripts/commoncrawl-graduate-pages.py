@@ -514,6 +514,9 @@ def fetch(args):
             if y not in by_year or cap['ts'] > by_year[y]['ts']:
                 by_year[y] = cap
         seen_digest = set()
+        # a readOnce page that already has a saved copy is not read again, whatever newer captures exist
+        if (p.get('readOnce') or p.get('scope') == 'single-record') and any(f.endswith('.txt') for f in os.listdir(d)):
+            continue
         entry = plan['pages'].setdefault(key, {'institution': p['institution'], 'url': p['url'], 'listedVia': 'commoncrawl', 'listedAt': today, 'error': None, 'snapshots': []})
         entry.setdefault('commoncrawl', [])
         for y, cap in sorted(by_year.items()):
