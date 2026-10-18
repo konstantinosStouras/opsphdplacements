@@ -31,6 +31,8 @@ function bars(target,groups,{limit=15,chronological=false,total=null}={}){
 function selectPhdInstitution(name,year){setMode('faculty');pick($('#phd'),name);$('#year-from').value=year||'';$('#year-to').value=year||'';state.page=0;renderTable();location.hash='explorer';$('#explorer').scrollIntoView();}
 function renderLede(){getIndex(state).then(idx=>{$('#coverage-lede').textContent=coverageLede(idx);renderAvailability($('#availability-counts'),idx);});}
 document.addEventListener('countries-loaded',renderLede);
+// A profile opened from the page link draws before the location files arrive; redraw it once they have.
+document.addEventListener('countries-loaded',()=>{if(INSIGHT_PROFILES.has(state.profile))setProfile(state.profile);});
 function renderCoverage(){const token=++state.coverageToken,isCurrent=()=>token===state.coverageToken;if(state.coverage==='map'){getIndex(state).then(idx=>{if(isCurrent())renderMap($('#coverage-content'),{faculty:idx.people,placements:state.placements},{onSelect:selectPhdInstitution,openProfile:openInstitution,isCurrent});});return;}if(state.coverage==='years'){getIndex(state).then(idx=>{if(isCurrent())renderCoverageYears($('#coverage-content'),idx,{onSelect:selectPhdInstitution});});return;}const key={institutions:'institution',discipline:'discipline',year:'phdYear'}[state.coverage];bars($('#coverage-content'),groupCounts(state.faculty,key),{limit:state.coverage==='year'?0:15,chronological:state.coverage==='year',total:state.faculty.length});}
 const INSIGHT_PROFILES=new Set(['phd','compare','employer']);
 // Shareable state in the query string: q, mode, phd, employer, compare, coverage, trend.

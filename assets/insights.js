@@ -292,6 +292,9 @@ function renderInstitutionProfile({ controls, content }, idx, actions) {
     const [p5, b5] = panel('Countries of first employers');
     if (m.countries.length) rankedRows(b5, { items: m.countries.map(([c, n]) => ({ label: c, value: n })), total: m.verifiedCount });
     else b5.append(html('p', 'chart-empty', idx.employerCountry.size ? 'No employer country known for these first jobs.' : 'Employer countries are not available yet.'));
+    // Countries come from the employer's Wikidata item; employers without one are left out, and the panel says how many.
+    const withCountry = m.countries.reduce((n, [, c]) => n + c, 0);
+    if (m.verifiedCount > withCountry) b5.append(html('p', 'map-note', `Not counted here: ${m.verifiedCount - withCountry} of ${m.verifiedCount} verified first jobs, whose employer has no known country.`));
     const [p6, b6] = panel('First job titles');
     rankedRows(b6, { items: m.positions.slice(0, 8).map(([t, n]) => ({ label: t, value: n })), total: m.verifiedCount, emptyText: 'No verified first jobs in this period.' });
     grid.append(p5, p6);

@@ -92,8 +92,8 @@ for (const name of names) {
   const fix = review[name];
   if (!fix?.qid || cache[name]?.qid === fix.qid) continue;
   const ents = await api({ action: 'wbgetentities', ids: fix.qid, props: 'claims|labels|descriptions', languages: 'en' });
-  const e = ents.entities?.[fix.qid], c = e?.claims?.P625?.[0]?.mainsnak?.datavalue?.value;
-  cache[name] = { qid: fix.qid, label: e?.labels?.en?.value, description: e?.descriptions?.en?.value, lat: c ? +c.latitude.toFixed(3) : null, lon: c ? +c.longitude.toFixed(3) : null };
+  const e = ents.entities?.[fix.qid], place = await placeOf(e);
+  cache[name] = { qid: fix.qid, label: e?.labels?.en?.value, description: e?.descriptions?.en?.value, lat: null, lon: null, ...(place || {}) };
   save();
   await sleep(900);
 }
