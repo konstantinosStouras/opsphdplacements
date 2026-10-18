@@ -13,7 +13,9 @@ import path from 'node:path';
 const root = path.resolve(import.meta.dirname, '..');
 const SOURCE = 'https://www.operationsacademia.org/data/directory.json';
 const args = process.argv.slice(2), inputFlag = args.indexOf('--input');
-const retrievedAt = new Date().toISOString().slice(0, 10);
+// A saved snapshot keeps its own retrieval date (from its file name) rather than today's.
+const snapshotDate = process.argv.includes('--input') ? (process.argv[process.argv.indexOf('--input') + 1].match(/(\d{4}-\d{2}-\d{2})\.json$/) || [])[1] : null;
+const retrievedAt = snapshotDate || new Date().toISOString().slice(0, 10);
 
 let rows;
 if (inputFlag >= 0) rows = JSON.parse(fs.readFileSync(path.resolve(args[inputFlag + 1]), 'utf8'));

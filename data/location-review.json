@@ -1,166 +1,394 @@
 {
-  "version": 1,
-  "note": "Reviewed corrections to the name-based Wikidata matches used for map locations, countries and the links between the two databases. scripts/geocode-institutions.mjs applies them on top of its search results for any name in any of the three location files. A null qid means the name does not identify one organisation well enough to match it; a qid replaces a wrong search result. Every other match remains a name-based, unreviewed search result.",
-  "corrections": {
-    "University of Navarra": {
-      "qid": "Q926068",
-      "reason": "The search returned IESE Business School (Q705316), the university's business school; the university itself is Q926068.",
-      "reviewedAt": "2026-10-16"
-    },
-    "York University": {
-      "qid": "Q849751",
-      "reason": "The search returned the University of York in England (Q967165); York University is the public research university in Toronto.",
-      "reviewedAt": "2026-10-16"
-    },
-    "University of Houston - Downtown": {
-      "qid": "Q7895509",
-      "reason": "The search returned the University of Houston (Q1472358); the Downtown campus is a separate university of the same system.",
-      "reviewedAt": "2026-10-16"
-    },
-    "Nevada State University": {
-      "qid": "Q1658675",
-      "reason": "The search returned the University of Nevada, Reno (Q1185955); Nevada State University in Henderson is the former Nevada State College, Q1658675.",
-      "reviewedAt": "2026-10-16"
-    },
-    "Minnesota State University": {
-      "qid": null,
-      "reason": "The search returned the University of Minnesota (Q238101), a different institution; the name alone does not say whether Mankato (Q1937387) or Moorhead is meant.",
-      "reviewedAt": "2026-10-16"
-    },
-    "HKUST(GZ)": {
-      "qid": null,
-      "reason": "The Guangzhou campus opened in 2022 as a separate institution; the search returned the Hong Kong item (Q1333303) and no item for the Guangzhou institution was found.",
-      "reviewedAt": "2026-10-16"
-    },
-    "Hong Kong University of Science and Technology (Guangzhou)": {
-      "qid": null,
-      "reason": "Separate institution in Guangzhou; the search returned the Hong Kong item (Q1333303) and no item for the Guangzhou institution was found.",
-      "reviewedAt": "2026-10-16"
-    },
-    "The Hong Kong University of Science and Technology (Guangzhou)": {
-      "qid": null,
-      "reason": "Separate institution in Guangzhou; the search returned the Hong Kong item (Q1333303) and no item for the Guangzhou institution was found.",
-      "reviewedAt": "2026-10-16"
-    },
-    "Indian Institute of Management": {
-      "qid": null,
-      "reason": "The search returned IIM Ahmedabad (Q46027); there are more than twenty Indian Institutes of Management and the placement record does not say which one.",
-      "reviewedAt": "2026-10-16"
-    },
-    "Indiana University": {
-      "qid": null,
-      "reason": "The matched item is the multi-campus Indiana University system, and the name alone does not say whether the doctorate came from Bloomington or another IU campus. Second reviewer: Q6608367 is the multi-campus IU system, and 'Indiana University' is its official name. The flagship's official name is 'Indiana University Bloomington' (Q1079140). Other campuses such as Indianapolis also award doctorates, so the bare name does not single out Bloomington. Leaving it ambiguous, with no item and no sameAs, is the conservative choice.",
-      "reviewedAt": "2026-10-17"
-    },
-    "ISyE": {
-      "qid": null,
-      "reason": "The match is an unrelated Paris research facility, and 'ISyE' alone could be industrial and systems engineering at Georgia Tech or at another university such as Wisconsin-Madison. Second reviewer: Q30262364 is a Paris biodiversity institute (ISYEB) and plainly wrong. 'ISyE' is used by Georgia Tech, Wisconsin-Madison and Minnesota, among others. The page context must not be used to pick one, so no item and no sameAs is right.",
-      "reviewedAt": "2026-10-17"
-    },
-    "Institute of Control Sciences, USSR Academy of Science": {
-      "qid": "Q16690205",
-      "reason": "This is the V.A. Trapeznikov Institute of Control Sciences in Moscow, now part of the Russian Academy of Sciences, and it has no entry in the existing list. Second reviewer: Wikidata confirms Q16690205 is the V.A. Trapeznikov Institute of Control Sciences in Moscow (ipu.ru), part of the Russian Academy of Sciences. It is the institute that was attached to the USSR Academy in 1989. No existing entry denotes it, so sameAs null is right.",
-      "reviewedAt": "2026-10-17"
-    },
-    "State University of New York": {
-      "qid": null,
-      "reason": "SUNY is a multi-campus system, and the name does not say which campus awarded the doctorate. Second reviewer: The matched item Q1140241 is the SUNY system, and the name does not say which of its doctorate-granting campuses is meant. Leaving it ambiguous, with no item and no sameAs, is right even though the existing list includes Buffalo.",
-      "reviewedAt": "2026-10-17"
-    },
-    "École Centrale de Lille, France": {
-      "qid": "Q273461",
-      "reason": "Wikidata Q273461 is École Centrale de Lille, which is not the existing Paris Centrale or CentraleSupélec entries. Second reviewer: Q273461 is École Centrale de Lille (Villeneuve d'Ascq), and it has no dissolution or successor statements. theses.fr 2014ECLI0011 shows Lahyani defended at Ecole centrale de Lille in 2014. No existing entry denotes it: Université de Lille Q3551621 is a different institution.",
-      "reviewedAt": "2026-10-17"
-    },
-    "Ben-Gurion University of the Negev, Israel": {
-      "qid": "Q737332",
-      "reason": "Q737332 is Ben-Gurion University of the Negev in Beersheba, and no existing entry denotes it. Second reviewer: Q737332 is Ben-Gurion University of the Negev in Beersheba. No existing entry matches Ben-Gurion or Negev, so sameAs null is right.",
-      "reviewedAt": "2026-10-17"
-    },
-    "Montpellier University": {
-      "qid": "Q902688",
-      "reason": "The matched item is a hospital; for a 2001 doctorate the awarding body could be Montpellier 1, 2 or 3 rather than today's University of Montpellier, so no item can be chosen with certainty. Second reviewer: The verdict 'wrong' stands: Q19859682 is Montpellier University Hospital. The awarding body can be identified, though. theses.fr record 2001MON20178 (Bénaben, Frédérick; 'La méthode MoFoV', 2001) lists Montpellier 2 as the defending institution. Q902688 is Montpellier 2 University (1969-2015, merged into the University of Montpellier). No existing Montpellier entry exists, so sameAs stays null. This is based on the one person carrying this written name.",
-      "reviewedAt": "2026-10-17"
-    },
-    "ICADE, Universidad Pontificia de Comillas": {
-      "qid": "Q1687025",
-      "reason": "ICADE is part of Comillas Pontifical University (Q1687025, which awards the degree), but Wikidata has no clear item for the ICADE faculty itself, and no existing entry denotes Comillas. Second reviewer: Verdict 'unmatched' and sameAs null are right: no existing entry denotes Comillas. A null QID is not justified, because the written name explicitly and unambiguously names Comillas Pontifical University (Q1687025, Madrid), which awards the degree. Wikidata does have ICADE faculty items, but 'ICADE' alone could mean either Q16566006 (Facultad de Ciencias Económicas y Empresariales (ICADE)) or Q16566021 (Faculty of Law (ICADE)). Both are P361 Q1687025, so the university item is the safe name-level match. The IESE page states Gallego's PhD is in Economics and Business, which would fit Q16566006.",
-      "reviewedAt": "2026-10-17"
-    },
-    "Indian Institute of Science (IISc), Bengaluru": {
-      "qid": "Q948720",
-      "reason": "Q948720 is the Indian Institute of Science in Bengaluru, and no existing entry denotes it. Second reviewer: Q948720 is the Indian Institute of Science, Bengaluru. The existing list has only IIM Bangalore and IITs, none of which is IISc, so sameAs null is right.",
-      "reviewedAt": "2026-10-17"
-    },
-    "University of the West of England, Bristol (Bristol Business School, UWE)": {
-      "qid": "Q2002520",
-      "reason": "This is the University of the West of England (UWE Bristol, Q2002520), which is a different university from the University of Bristol and has no existing entry. Second reviewer: Q2002520 is the University of the West of England (aliases 'UWE Bristol', 'UWE'), a separate institution from the University of Bristol (Q459506). The existing list has no UWE entry, so sameAs null is correct.",
-      "reviewedAt": "2026-10-17"
-    },
-    "ÉTS, Montreal (Ph.D, Electrical Engineering) and UQAM, Montreal (Ph.D, Computer Science)": {
-      "qid": null,
-      "reason": "The text names two doctorates from two different institutions (ÉTS and UQAM), so it does not identify one organisation. Second reviewer: The text names two separate doctorates from two different institutions, and neither is designated as the relevant one. No single organisation is identified, so ambiguous with null QID and sameAs is the correct conservative outcome.",
-      "reviewedAt": "2026-10-17"
-    },
-    "Massachusetts Institute of Technology (Doctor in Operations Research); also Sc.D. Harvard/MIT Division of Health Sciences and Technology and Doctor of Industrial Engineering, Universitat Politècnica de Catalunya": {
-      "qid": null,
-      "reason": "The text lists three doctorates (MIT, Harvard/MIT HST and Universitat Politècnica de Catalunya), so it does not identify one organisation. Second reviewer: The text lists three doctorates from three different awarding bodies (MIT, the Harvard/MIT HST joint programme, and UPC). Choosing one would be an inference, so ambiguous with null is the correct conservative outcome.",
-      "reviewedAt": "2026-10-17"
-    },
-    "Universidade Positivo (Brazil)": {
-      "qid": "Q7894392",
-      "reason": "This is Universidade Positivo, a private university in Curitiba (Q7894392), and no existing entry names it. Second reviewer: Q7894392's description oddly reads 'academic publisher'. Its claims identify the university: P31 includes university (Q3918), the website is up.edu.br, the country is Brazil and inception is 1988. Wikidata's other 'Universidade Positivo' items are campus records only. No existing entry names it, so sameAs null is correct.",
-      "reviewedAt": "2026-10-17"
-    },
-    "Case Institute of Technology": {
-      "qid": "Q134605089",
-      "reason": "Case Institute of Technology was a separate institution (1880-1967, Wikidata Q134605089) that later merged into Case Western Reserve University, so the successor university is a different organisation from the one that awarded these 1965 and 1967 doctorates. Second reviewer: Q134605089 is 'Case Institute of Technology', a higher education institution (1880 to 1967-06-30) that merged into CWRU. Q1047060 (CWRU) was founded in 1967 and is a different organisation, so the match is wrong. The 1965 and 1967 doctorates belong to the predecessor, and no existing entry denotes it, so sameAs null is right.",
-      "reviewedAt": "2026-10-17"
-    },
-    "CQ University in Queensland, Australia": {
-      "qid": "Q1053985",
-      "reason": "CQ University is Central Queensland University (Q1053985), which is not in the existing list. Second reviewer: Q1053985 is Central Queensland University, whose enwiki title is 'CQUniversity Australia'. No existing entry names it.",
-      "reviewedAt": "2026-10-17"
-    },
-    "University of California at Riverside": {
-      "qid": "Q1075148",
-      "reason": "This is the University of California, Riverside (Q1075148), a campus that is not in the existing list. Second reviewer: Q1075148 is UC Riverside, and no existing entry denotes it.",
-      "reviewedAt": "2026-10-17"
-    },
-    "Sakarya University": {
-      "qid": "Q1718685",
-      "reason": "The match is Sakarya University of Applied Sciences, a different institution founded in 2018, after this 2016 doctorate; Sakarya University itself is Q1718685. Second reviewer: Q52236336 (Sakarya University of Applied Sciences) has inception 2018, after the 2016 doctorate, and is a separate institution. Q1718685 is Sakarya University (est. 1970, sakarya.edu.tr). No existing entry denotes it.",
-      "reviewedAt": "2026-10-17"
-    },
-    "Saarland University / Max Planck Institute for Informatics": {
-      "qid": "Q700758",
-      "reason": "Max Planck institutes cannot award doctorates, so the awarding institution is Saarland University (Q700758), which is not in the existing list. Second reviewer: Max Planck institutes cannot award doctorates; MPI-INF doctorates are conferred by Saarland University (Q700758). No existing entry denotes Saarland.",
-      "reviewedAt": "2026-10-17"
-    },
-    "University of Massachusetts": {
-      "qid": null,
-      "reason": "University of Massachusetts without a campus could mean Amherst, Boston, Lowell or another campus, so it does not identify one university. Second reviewer: The name is also the system's name and does not identify a campus. Q15142 is Amherst specifically, and Boston and Worcester campuses already existed by 1990. Leaving it ambiguous with a null QID is the conservative choice; Amherst would only follow from outside knowledge of the field.",
-      "reviewedAt": "2026-10-17"
-    },
-    "Örebro University, Sweden": {
-      "qid": "Q2002420",
-      "reason": "Wikidata Q2002420 is Örebro University, the state university in Örebro, Sweden, which has no existing database name. Second reviewer: Q2002420 is Örebro University, the state university in Örebro, Sweden (oru.se). The 'Sweden' qualifier rules out any other reading, and no existing name mentions Örebro.",
-      "reviewedAt": "2026-10-17"
-    },
-    "Rutgers - The State University of New Jersey": {
-      "qid": "Q499451",
-      "reason": "This is the official name of Rutgers University (Q499451), the same item the existing Rutgers entry uses. Second reviewer: Q499451 (all of Rutgers) is right. But the written name is the whole multi-campus university, including Camden, while the existing entry is limited to Newark and New Brunswick. The earlier review left 'Rutgers, the State University of New Jersey' unmapped (sameAs null) for this reason, so this spelling should be treated the same way.",
-      "reviewedAt": "2026-10-17"
-    },
-    "London School of Hygiene and Tropical Medicine, University of London": {
-      "qid": "Q1126189",
-      "reason": "Wikidata Q1126189 is LSHTM, a constituent college of the University of London; the database lists colleges such as LSE and UCL separately, so it is not merged into 'University of London'. Second reviewer: Q1126189 is LSHTM (P749 University of London, Q170027). The IESE page names LSHTM first, and the database already keeps colleges such as the London School of Economics and University College London apart from 'University of London', so sameAs null is consistent.",
-      "reviewedAt": "2026-10-17"
-    },
-    "St Andrew's University, Scotland (as written on the page; University of St Andrews)": {
-      "qid": "Q216273",
-      "reason": "This misspelling denotes the University of St Andrews in Fife, Scotland (Q216273), which has no existing database name. Second reviewer: The Rice page says 'Ph.D. ... from Scotland's St Andrew's University'. 'Scotland' rules out other St Andrew's institutions, so this is the University of St Andrews (Q216273). No existing name mentions St Andrews.",
-      "reviewedAt": "2026-10-17"
-    }
+ "version": 1,
+ "note": "Reviewed corrections to the name-based Wikidata matches used for map locations, countries and the links between the two databases. scripts/geocode-institutions.mjs applies them on top of its search results for any name in any of the three location files. A null qid means the name does not identify one organisation well enough to match it; a qid replaces a wrong search result. Every other match remains a name-based, unreviewed search result.",
+ "corrections": {
+  "University of Navarra": {
+   "qid": "Q926068",
+   "reason": "The search returned IESE Business School (Q705316), the university's business school; the university itself is Q926068.",
+   "reviewedAt": "2026-10-16"
+  },
+  "York University": {
+   "qid": "Q849751",
+   "reason": "The search returned the University of York in England (Q967165); York University is the public research university in Toronto.",
+   "reviewedAt": "2026-10-16"
+  },
+  "University of Houston - Downtown": {
+   "qid": "Q7895509",
+   "reason": "The search returned the University of Houston (Q1472358); the Downtown campus is a separate university of the same system.",
+   "reviewedAt": "2026-10-16"
+  },
+  "Nevada State University": {
+   "qid": "Q1658675",
+   "reason": "The search returned the University of Nevada, Reno (Q1185955); Nevada State University in Henderson is the former Nevada State College, Q1658675.",
+   "reviewedAt": "2026-10-16"
+  },
+  "Minnesota State University": {
+   "qid": null,
+   "reason": "The search returned the University of Minnesota (Q238101), a different institution; the name alone does not say whether Mankato (Q1937387) or Moorhead is meant.",
+   "reviewedAt": "2026-10-16"
+  },
+  "HKUST(GZ)": {
+   "qid": null,
+   "reason": "The Guangzhou campus opened in 2022 as a separate institution; the search returned the Hong Kong item (Q1333303) and no item for the Guangzhou institution was found.",
+   "reviewedAt": "2026-10-16"
+  },
+  "Hong Kong University of Science and Technology (Guangzhou)": {
+   "qid": null,
+   "reason": "Separate institution in Guangzhou; the search returned the Hong Kong item (Q1333303) and no item for the Guangzhou institution was found.",
+   "reviewedAt": "2026-10-16"
+  },
+  "The Hong Kong University of Science and Technology (Guangzhou)": {
+   "qid": null,
+   "reason": "Separate institution in Guangzhou; the search returned the Hong Kong item (Q1333303) and no item for the Guangzhou institution was found.",
+   "reviewedAt": "2026-10-16"
+  },
+  "Indian Institute of Management": {
+   "qid": null,
+   "reason": "The search returned IIM Ahmedabad (Q46027); there are more than twenty Indian Institutes of Management and the placement record does not say which one.",
+   "reviewedAt": "2026-10-16"
+  },
+  "Indiana University": {
+   "qid": "Q1079140",
+   "reason": "The bare name is the university system; the business doctorates recorded under it (Kelley School) are awarded at the Bloomington campus, Q1079140, the item already used for 'Indiana University Bloomington', so both spellings are one circle. The degrees of four of the six people are still unverified.",
+   "reviewedAt": "2026-10-18"
+  },
+  "ISyE": {
+   "qid": null,
+   "reason": "The match is an unrelated Paris research facility, and 'ISyE' alone could be industrial and systems engineering at Georgia Tech or at another university such as Wisconsin-Madison. Second reviewer: Q30262364 is a Paris biodiversity institute (ISYEB) and plainly wrong. 'ISyE' is used by Georgia Tech, Wisconsin-Madison and Minnesota, among others. The page context must not be used to pick one, so no item and no sameAs is right.",
+   "reviewedAt": "2026-10-17"
+  },
+  "Institute of Control Sciences, USSR Academy of Science": {
+   "qid": "Q16690205",
+   "reason": "This is the V.A. Trapeznikov Institute of Control Sciences in Moscow, now part of the Russian Academy of Sciences, and it has no entry in the existing list. Second reviewer: Wikidata confirms Q16690205 is the V.A. Trapeznikov Institute of Control Sciences in Moscow (ipu.ru), part of the Russian Academy of Sciences. It is the institute that was attached to the USSR Academy in 1989. No existing entry denotes it, so sameAs null is right.",
+   "reviewedAt": "2026-10-17"
+  },
+  "State University of New York": {
+   "qid": null,
+   "reason": "The campus is not named (the Virginia Tech profile of the one person, Brian M. Kleiner, says only \"SUNY\"), so no single place.",
+   "reviewedAt": "2026-10-18"
+  },
+  "École Centrale de Lille, France": {
+   "qid": "Q273461",
+   "reason": "Right item, no coordinates on Wikidata. Coordinates from OpenStreetMap: École Centrale de Lille, Avenue Paul Langevin, Cité Scientifique, Villeneuve-d'Ascq.",
+   "reviewedAt": "2026-10-18",
+   "lat": 50.607,
+   "lon": 3.136,
+   "coordinateSource": "https://nominatim.openstreetmap.org/ (OpenStreetMap search, read 2026-10-18)"
+  },
+  "Ben-Gurion University of the Negev, Israel": {
+   "qid": "Q737332",
+   "reason": "Q737332 is Ben-Gurion University of the Negev in Beersheba, and no existing entry denotes it. Second reviewer: Q737332 is Ben-Gurion University of the Negev in Beersheba. No existing entry matches Ben-Gurion or Negev, so sameAs null is right.",
+   "reviewedAt": "2026-10-17"
+  },
+  "Montpellier University": {
+   "qid": "Q902688",
+   "reason": "The matched item is a hospital; for a 2001 doctorate the awarding body could be Montpellier 1, 2 or 3 rather than today's University of Montpellier, so no item can be chosen with certainty. Second reviewer: The verdict 'wrong' stands: Q19859682 is Montpellier University Hospital. The awarding body can be identified, though. theses.fr record 2001MON20178 (Bénaben, Frédérick; 'La méthode MoFoV', 2001) lists Montpellier 2 as the defending institution. Q902688 is Montpellier 2 University (1969-2015, merged into the University of Montpellier). No existing Montpellier entry exists, so sameAs stays null. This is based on the one person carrying this written name.",
+   "reviewedAt": "2026-10-17"
+  },
+  "ICADE, Universidad Pontificia de Comillas": {
+   "qid": "Q1687025",
+   "reason": "ICADE is part of Comillas Pontifical University (Q1687025, which awards the degree), but Wikidata has no clear item for the ICADE faculty itself, and no existing entry denotes Comillas. Second reviewer: Verdict 'unmatched' and sameAs null are right: no existing entry denotes Comillas. A null QID is not justified, because the written name explicitly and unambiguously names Comillas Pontifical University (Q1687025, Madrid), which awards the degree. Wikidata does have ICADE faculty items, but 'ICADE' alone could mean either Q16566006 (Facultad de Ciencias Económicas y Empresariales (ICADE)) or Q16566021 (Faculty of Law (ICADE)). Both are P361 Q1687025, so the university item is the safe name-level match. The IESE page states Gallego's PhD is in Economics and Business, which would fit Q16566006.",
+   "reviewedAt": "2026-10-17"
+  },
+  "Indian Institute of Science (IISc), Bengaluru": {
+   "qid": "Q948720",
+   "reason": "Q948720 is the Indian Institute of Science in Bengaluru, and no existing entry denotes it. Second reviewer: Q948720 is the Indian Institute of Science, Bengaluru. The existing list has only IIM Bangalore and IITs, none of which is IISc, so sameAs null is right.",
+   "reviewedAt": "2026-10-17"
+  },
+  "University of the West of England, Bristol (Bristol Business School, UWE)": {
+   "qid": "Q2002520",
+   "reason": "This is the University of the West of England (UWE Bristol, Q2002520), which is a different university from the University of Bristol and has no existing entry. Second reviewer: Q2002520 is the University of the West of England (aliases 'UWE Bristol', 'UWE'), a separate institution from the University of Bristol (Q459506). The existing list has no UWE entry, so sameAs null is correct.",
+   "reviewedAt": "2026-10-17"
+  },
+  "ÉTS, Montreal (Ph.D, Electrical Engineering) and UQAM, Montreal (Ph.D, Computer Science)": {
+   "qid": "Q3577916",
+   "reason": "Two doctorates as the faculty page states them; the map shows the first-named, the École de technologie supérieure in Montreal (Q3577916). UQAM is not drawn.",
+   "reviewedAt": "2026-10-18"
+  },
+  "Massachusetts Institute of Technology (Doctor in Operations Research); also Sc.D. Harvard/MIT Division of Health Sciences and Technology and Doctor of Industrial Engineering, Universitat Politècnica de Catalunya": {
+   "qid": "Q49108",
+   "reason": "Several doctorates as the faculty page states them; the map shows the first-named, MIT (Q49108).",
+   "reviewedAt": "2026-10-18"
+  },
+  "Universidade Positivo (Brazil)": {
+   "qid": "Q7894392",
+   "reason": "This is Universidade Positivo, a private university in Curitiba (Q7894392), and no existing entry names it. Second reviewer: Q7894392's description oddly reads 'academic publisher'. Its claims identify the university: P31 includes university (Q3918), the website is up.edu.br, the country is Brazil and inception is 1988. Wikidata's other 'Universidade Positivo' items are campus records only. No existing entry names it, so sameAs null is correct.",
+   "reviewedAt": "2026-10-17"
+  },
+  "Case Institute of Technology": {
+   "qid": "Q134605089",
+   "reason": "Right item (the historical institute, merged into Case Western Reserve University in 1967) but no coordinates on Wikidata; the successor's Wikidata coordinates (Q1047060, P625) mark the same Cleveland campus.",
+   "reviewedAt": "2026-10-18",
+   "lat": 41.504,
+   "lon": -81.608,
+   "coordinateSource": "https://www.wikidata.org/wiki/Q1047060 (P625, read 2026-10-18)"
+  },
+  "CQ University in Queensland, Australia": {
+   "qid": "Q1053985",
+   "reason": "CQ University is Central Queensland University (Q1053985), which is not in the existing list. Second reviewer: Q1053985 is Central Queensland University, whose enwiki title is 'CQUniversity Australia'. No existing entry names it.",
+   "reviewedAt": "2026-10-17"
+  },
+  "University of California at Riverside": {
+   "qid": "Q1075148",
+   "reason": "This is the University of California, Riverside (Q1075148), a campus that is not in the existing list. Second reviewer: Q1075148 is UC Riverside, and no existing entry denotes it.",
+   "reviewedAt": "2026-10-17"
+  },
+  "Sakarya University": {
+   "qid": "Q1718685",
+   "reason": "Right item, no coordinates on Wikidata. Coordinates from OpenStreetMap: Sakarya Üniversitesi, Esentepe campus, Serdivan.",
+   "reviewedAt": "2026-10-18",
+   "lat": 40.742,
+   "lon": 30.331,
+   "coordinateSource": "https://nominatim.openstreetmap.org/ (OpenStreetMap search, read 2026-10-18)"
+  },
+  "Saarland University / Max Planck Institute for Informatics": {
+   "qid": "Q700758",
+   "reason": "Max Planck institutes cannot award doctorates, so the awarding institution is Saarland University (Q700758), which is not in the existing list. Second reviewer: Max Planck institutes cannot award doctorates; MPI-INF doctorates are conferred by Saarland University (Q700758). No existing entry denotes Saarland.",
+   "reviewedAt": "2026-10-17"
+  },
+  "University of Massachusetts": {
+   "qid": null,
+   "reason": "The campus is not named for the one person, G. Don Taylor, so no single place.",
+   "reviewedAt": "2026-10-18"
+  },
+  "Örebro University, Sweden": {
+   "qid": "Q2002420",
+   "reason": "Wikidata Q2002420 is Örebro University, the state university in Örebro, Sweden, which has no existing database name. Second reviewer: Q2002420 is Örebro University, the state university in Örebro, Sweden (oru.se). The 'Sweden' qualifier rules out any other reading, and no existing name mentions Örebro.",
+   "reviewedAt": "2026-10-17"
+  },
+  "Rutgers - The State University of New Jersey": {
+   "qid": "Q499451",
+   "reason": "This is the official name of Rutgers University (Q499451), the same item the existing Rutgers entry uses. Second reviewer: Q499451 (all of Rutgers) is right. But the written name is the whole multi-campus university, including Camden, while the existing entry is limited to Newark and New Brunswick. The earlier review left 'Rutgers, the State University of New Jersey' unmapped (sameAs null) for this reason, so this spelling should be treated the same way.",
+   "reviewedAt": "2026-10-17"
+  },
+  "London School of Hygiene and Tropical Medicine, University of London": {
+   "qid": "Q1126189",
+   "reason": "Wikidata Q1126189 is LSHTM, a constituent college of the University of London; the database lists colleges such as LSE and UCL separately, so it is not merged into 'University of London'. Second reviewer: Q1126189 is LSHTM (P749 University of London, Q170027). The IESE page names LSHTM first, and the database already keeps colleges such as the London School of Economics and University College London apart from 'University of London', so sameAs null is consistent.",
+   "reviewedAt": "2026-10-17"
+  },
+  "St Andrew's University, Scotland (as written on the page; University of St Andrews)": {
+   "qid": "Q216273",
+   "reason": "This misspelling denotes the University of St Andrews in Fife, Scotland (Q216273), which has no existing database name. Second reviewer: The Rice page says 'Ph.D. ... from Scotland's St Andrew's University'. 'Scotland' rules out other St Andrew's institutions, so this is the University of St Andrews (Q216273). No existing name mentions St Andrews.",
+   "reviewedAt": "2026-10-17"
+  },
+  "Management Development Institute, Gurgaon": {
+   "qid": "Q6746665",
+   "reason": "The search found no item; Q6746665 (Management Development Institute, Gurgaon) is the institute. Coordinates from OpenStreetMap: Management Development Institute, Sector 17, Gurugram.",
+   "reviewedAt": "2026-10-18",
+   "lat": 28.472,
+   "lon": 77.059,
+   "coordinateSource": "https://nominatim.openstreetmap.org/ (OpenStreetMap search, read 2026-10-18)"
+  },
+  "Technical University of Clausthal": {
+   "qid": "Q447354",
+   "reason": "The search found no item; Q447354 is Clausthal University of Technology.",
+   "reviewedAt": "2026-10-18"
+  },
+  "Mazandaran University of Science and Technology": {
+   "qid": "Q5935959",
+   "reason": "The search found no item; Q5935959 is the university (its Wikidata description, \"building in Iran\", is wrong) and it has no coordinates on Wikidata. Coordinates from OpenStreetMap: the campus in Babol.",
+   "reviewedAt": "2026-10-18",
+   "lat": 36.537,
+   "lon": 52.686,
+   "coordinateSource": "https://nominatim.openstreetmap.org/ (OpenStreetMap search, read 2026-10-18)"
+  },
+  "Mohammadia School of Engineers": {
+   "qid": "Q140915110",
+   "reason": "The search found no item; Q140915110 is the school (Rabat), without coordinates on Wikidata. Coordinates from OpenStreetMap: Avenue Ibn Sina, Agdal, Rabat.",
+   "reviewedAt": "2026-10-18",
+   "lat": 33.999,
+   "lon": -6.853,
+   "coordinateSource": "https://nominatim.openstreetmap.org/ (OpenStreetMap search, read 2026-10-18)"
+  },
+  "Friedrich Schiller University of Jena": {
+   "qid": "Q154561",
+   "reason": "The search found no item; Q154561 is the University of Jena (Friedrich Schiller University).",
+   "reviewedAt": "2026-10-18"
+  },
+  "National Polytechnic Institute of Grenoble": {
+   "qid": "Q1665121",
+   "reason": "The search found no item; Q1665121 is the Grenoble Institute of Technology (Grenoble INP), the English name of the Institut national polytechnique de Grenoble.",
+   "reviewedAt": "2026-10-18"
+  },
+  "French National Institute for Computer Science and Control": {
+   "qid": "Q1146208",
+   "reason": "Inria (Q1146208), which has no coordinates on Wikidata. Coordinates from OpenStreetMap: INRIA Rocquencourt, Le Chesnay-Rocquencourt, the institute's historic seat.",
+   "reviewedAt": "2026-10-18",
+   "lat": 48.837,
+   "lon": 2.101,
+   "coordinateSource": "https://nominatim.openstreetmap.org/ (OpenStreetMap search, read 2026-10-18)"
+  },
+  "INRIA (France) (Ph.D. in Computer Sciences); also Ph.D. in Information Systems, UdelaR (Uruguay)": {
+   "qid": "Q1146208",
+   "reason": "Two doctorates as the faculty page states them; the map shows the first-named, Inria (Q1146208), at its historic Rocquencourt seat (coordinates from OpenStreetMap). UdelaR is not drawn.",
+   "reviewedAt": "2026-10-18",
+   "lat": 48.837,
+   "lon": 2.101,
+   "coordinateSource": "https://nominatim.openstreetmap.org/ (OpenStreetMap search, read 2026-10-18)"
+  },
+  "University of Leipzig": {
+   "qid": "Q154804",
+   "reason": "The search returned Q118252144, an institute page of the university's Faculty of Physics and Earth Sciences; the university is Q154804, which has no coordinates on Wikidata. Coordinates from OpenStreetMap: Universität Leipzig, Ritterstraße, Leipzig.",
+   "reviewedAt": "2026-10-18",
+   "lat": 51.338,
+   "lon": 12.379,
+   "coordinateSource": "https://nominatim.openstreetmap.org/ (OpenStreetMap search, read 2026-10-18)"
+  },
+  "University of Sterling": {
+   "qid": "Q963530",
+   "reason": "A misspelling of the University of Stirling (Q963530): the one person recorded under it, Martin Spring, is given a Stirling doctorate by his Lancaster profile, read in the first-job review.",
+   "reviewedAt": "2026-10-18"
+  },
+  "University of Wales College of Cardiff": {
+   "qid": "Q1035745",
+   "reason": "The name of Cardiff University (Q1035745) from 1988 to 1999.",
+   "reviewedAt": "2026-10-18"
+  },
+  "University of Bradford Management Centre": {
+   "qid": "Q954035",
+   "reason": "The business school of the University of Bradford (Q954035).",
+   "reviewedAt": "2026-10-18"
+  },
+  "Indian Institute of Management, Kozhikode": {
+   "qid": "Q6020637",
+   "reason": "Spelling of IIM Kozhikode (Q6020637), already mapped under that name.",
+   "reviewedAt": "2026-10-18"
+  },
+  "University of Minnesota - Twin Cities (Carlson School of Management)": {
+   "qid": "Q238101",
+   "reason": "The University of Minnesota (Q238101), Twin Cities campus, as already mapped under the plain name.",
+   "reviewedAt": "2026-10-18"
+  },
+  "George Mason University (Ph.D., Education); University of Wisconsin-Milwaukee (Ph.D., Economics)": {
+   "qid": "Q1411222",
+   "reason": "Two doctorates as the faculty page states them; the map shows the first-named, George Mason University (Q1411222). Wisconsin-Milwaukee is not drawn.",
+   "reviewedAt": "2026-10-18"
+  },
+  "University of Florida (Doctor of Philosophy, Industrial and Systems Engineering); also Doctor of Industrial Engineering, Universitat Politècnica de Catalunya": {
+   "qid": "Q501758",
+   "reason": "Two doctorates as the faculty page states them; the map shows the first-named, the University of Florida (Q501758).",
+   "reviewedAt": "2026-10-18"
+  },
+  "Massachusetts Institute of Technology (Doctor of Philosophy, Management); also Ph.D. in Industrial Engineering, Universitat Politècnica de Catalunya": {
+   "qid": "Q49108",
+   "reason": "Two doctorates as the faculty page states them; the map shows the first-named, MIT (Q49108).",
+   "reviewedAt": "2026-10-18"
+  },
+  "Carnegie Mellon University (Engineering and Public Policy) and University of Porto, Faculty of Engineering (dual doctoral degrees, as stated in the biography)": {
+   "qid": "Q190080",
+   "reason": "A dual doctorate as the biography states it; the map shows the first-named, Carnegie Mellon University (Q190080). Porto is not drawn.",
+   "reviewedAt": "2026-10-18"
+  },
+  "École Nationale Supérieure d'Arts et Métiers": {
+   "qid": "Q2570220",
+   "reason": "The search returned Q19406920, whose coordinates are the Châlons-en-Champagne campus (the school's first site); the school is Arts et Métiers ParisTech (Q2570220), seated in Paris, which has no coordinates on Wikidata. Coordinates from OpenStreetMap: École Nationale Supérieure des Arts et Métiers, boulevard de l'Hôpital, Paris.",
+   "reviewedAt": "2026-10-18",
+   "lat": 48.833,
+   "lon": 2.358,
+   "coordinateSource": "https://nominatim.openstreetmap.org/ (OpenStreetMap search, read 2026-10-18)"
+  },
+  "Ecole Nationale Superieure d’Arts et Metiers": {
+   "qid": "Q2570220",
+   "reason": "The search returned Q19406920, whose coordinates are the Châlons-en-Champagne campus (the school's first site); the school is Arts et Métiers ParisTech (Q2570220), seated in Paris, which has no coordinates on Wikidata. Coordinates from OpenStreetMap: École Nationale Supérieure des Arts et Métiers, boulevard de l'Hôpital, Paris.",
+   "reviewedAt": "2026-10-18",
+   "lat": 48.833,
+   "lon": 2.358,
+   "coordinateSource": "https://nominatim.openstreetmap.org/ (OpenStreetMap search, read 2026-10-18)"
+  },
+  "Ecole Polytechnique": {
+   "qid": "Q273626",
+   "reason": "Montréal or Palaiseau was undecided; the one person recorded under it, Gerald Lang, has his thesis in SUDOC, the French university catalogue, so it is the École polytechnique in Palaiseau (Q273626).",
+   "reviewedAt": "2026-10-18"
+  },
+  "Tilburg University / Kühne Logistics University": {
+   "qid": null,
+   "reason": "A joint doctorate of two institutions in two cities; not drawn as one place.",
+   "reviewedAt": "2026-10-18"
+  },
+  "University of Cambridge": {
+   "qid": "Q35794",
+   "reason": "Confirmed: the coordinate is in Cambridge; the OpenStreetMap search hit was an office in Maidenhead.",
+   "reviewedAt": "2026-10-18"
+  },
+  "University of Reading": {
+   "qid": "Q1432632",
+   "reason": "Confirmed: the coordinate is on the Whiteknights campus (Wokingham borough); the search hit was a reading room elsewhere.",
+   "reviewedAt": "2026-10-18"
+  },
+  "University of Southampton": {
+   "qid": "Q76473",
+   "reason": "Confirmed: the coordinate is in Southampton; the search hit was the Malaysia campus.",
+   "reviewedAt": "2026-10-18"
+  },
+  "Universidad de Valladolid": {
+   "qid": "Q768224",
+   "reason": "Confirmed: the coordinate is in Valladolid, Spain; the search hit was a namesake in the Philippines.",
+   "reviewedAt": "2026-10-18"
+  },
+  "University of Hong Kong": {
+   "qid": "Q15568",
+   "reason": "Confirmed: the coordinate is in Hong Kong; the search hit was a street in Germany.",
+   "reviewedAt": "2026-10-18"
+  },
+  "University of Glasgow": {
+   "qid": "Q192775",
+   "reason": "Confirmed: the coordinate is in Glasgow; the search hit was the Singapore campus.",
+   "reviewedAt": "2026-10-18"
+  },
+  "University of Athens": {
+   "qid": "Q547867",
+   "reason": "Confirmed: the coordinate is the Zografou campus of the National and Kapodistrian University of Athens; the search hit was the University of Georgia in Athens, Georgia.",
+   "reviewedAt": "2026-10-18"
+  },
+  "University of London": {
+   "qid": "Q170027",
+   "reason": "Confirmed: the coordinate is in London; the search hit was the University of London Institute in Paris.",
+   "reviewedAt": "2026-10-18"
+  },
+  "Politecnico di Milano": {
+   "qid": "Q392904",
+   "reason": "Confirmed: the coordinate is the Milan campus; the search hit was another campus.",
+   "reviewedAt": "2026-10-18"
+  },
+  "Beijing Jiaotong University": {
+   "qid": "Q4587760",
+   "reason": "Confirmed: the coordinate is the Haidian campus in Beijing; the search hit was the Xiong'an campus.",
+   "reviewedAt": "2026-10-18"
+  },
+  "University of Trento": {
+   "qid": "Q930528",
+   "reason": "Confirmed: the coordinate is in Trento; the search hit was the University of Bolzano.",
+   "reviewedAt": "2026-10-18"
+  },
+  "Federal University of Rio Grande do Sul": {
+   "qid": "Q766447",
+   "reason": "Confirmed: the coordinate is in Porto Alegre; the search hit was the Federal University of Pelotas.",
+   "reviewedAt": "2026-10-18"
+  },
+  "SKEMA Business School": {
+   "qid": "Q3486229",
+   "reason": "Confirmed: the coordinate (Suresnes) is at the Paris La Défense campus; the school also has Lille and Sophia Antipolis campuses, and the search hit was the Lille one.",
+   "reviewedAt": "2026-10-18"
+  },
+  "IMT Atlantique": {
+   "qid": "Q27962533",
+   "reason": "Confirmed: the coordinate is the Nantes campus, the school's seat; the search hit was the Brest campus.",
+   "reviewedAt": "2026-10-18"
+  },
+  "Abdelmalek Essaâdi University": {
+   "qid": "Q3551367",
+   "reason": "Confirmed: the coordinate is in Tétouan, the university's seat; the search hit was another of its campuses.",
+   "reviewedAt": "2026-10-18"
+  },
+  "Indian Institute of Management Rohtak": {
+   "qid": "Q6020638",
+   "reason": "Confirmed: the Wikidata coordinate (28.853, 76.542) is the Sunaria campus south-west of Rohtak.",
+   "reviewedAt": "2026-10-18"
+  },
+  "Indiana University (Kelley)": {
+   "qid": "Q1079140",
+   "reason": "The search returned the Indiana University system (Q6608367); the Kelley School's doctoral program and the directory row's coordinates are at the Bloomington campus (Q1079140), the item used for Indiana University in the people database.",
+   "reviewedAt": "2026-10-18"
   }
+ }
 }

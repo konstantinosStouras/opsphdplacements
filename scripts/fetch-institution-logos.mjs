@@ -203,6 +203,8 @@ function choose() {
       // A whole-square picture is accepted only from the site's own icons (elsewhere it was a photograph).
       if (r.mode === 'cover' && !/^(site-apple|site-icon|ddg|google|review)$/.test(e.kind)) { tried.push({ k: e.k, kind: e.kind, failed: 'picture, not a logo' }); continue; }
       if (e.kind === 'site-logo' && !(fix.pick && e.url.includes(fix.pick))) continue;
+      // A Wikipedia lead image on a plain grey background is a photograph (a building against the sky), not a logo.
+      if (e.kind === 'wikipedia-image' && r.mode === 'tile' && r.bg && Math.max(...r.bg) - Math.min(...r.bg) < 25 && Math.max(...r.bg) > 60 && Math.max(...r.bg) < 225 && !(fix.pick && e.url.includes(fix.pick))) { tried.push({ k: e.k, kind: e.kind, failed: 'photograph' }); continue; }
       // A Commons title search also finds the marks of bodies attached to the university (a law review, a press,
       // a sports or student club, a hospital): never chosen automatically.
       if (e.kind === 'commons-search' && NOT_UNIVERSITY.test(decodeURIComponent(e.url.split('/file/')[1] || '')) && !(fix.pick && e.url.includes(fix.pick))) continue;
