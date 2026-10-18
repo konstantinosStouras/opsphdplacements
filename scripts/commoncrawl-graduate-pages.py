@@ -267,7 +267,7 @@ def scan(args):
                     res.append({'crawl': crawl, 'key': key, 'ts': ts, 'url': u, 'digest': j.get('digest'), 'filename': j.get('filename'), 'offset': int(j.get('offset', 0)), 'length': int(j.get('length', 0))})
             return res
 
-        with ThreadPoolExecutor(6) as ex:
+        with ThreadPoolExecutor(3) as ex:  # six parallel readers made the data server refuse most chunks
             for c, res in zip(chunks, ex.map(work, chunks)):
                 done += 1
                 if res is None:
