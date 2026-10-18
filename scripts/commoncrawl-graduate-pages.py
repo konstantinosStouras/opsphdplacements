@@ -60,13 +60,13 @@ S.headers['User-Agent'] = 'opsphdplacements-research (graduate lists; contact vi
 # dissertation page and either says doctoral (phd, doctoral, dba, job market, dissertation), or sits on a business,
 # operations or engineering host or path, or sits on a host that already carries a reviewed page. "placement" must
 # not be the tail of replacement/displacement; work, clinical and language placements are not doctoral placements.
-URL_LIST = re.compile(r'(?<![a-z])(placements?|job-?placements?|job-?market|jobmarket|dissertations?|where-?are-?they)(?![a-z])', re.I)
-# Weaker words: an alumni, graduates or candidates page is worth a look only when the address also says doctoral,
-# or the host already carries a reviewed page.
-URL_WEAK = re.compile(r'(?<![a-z])(alumni|alumnae|graduates|candidates|placed)(?![a-z])', re.I)
+URL_LIST = re.compile(r'(?<![a-z])(placements?|job-?placements?|job-?market|jobmarket|where-?are-?they)(?![a-z])', re.I)
+# Weaker words: an alumni, graduates, candidates or dissertations page is worth a look only when the address also
+# says doctoral, or it is a short address on a host that already carries a reviewed page (a department site).
+URL_WEAK = re.compile(r'(?<![a-z])(alumni|alumnae|graduates|candidates|placed|dissertations?|theses)(?![a-z])', re.I)
 URL_DOC = re.compile(r'(?<![a-z])(phd|ph-d|ph\.d|doctoral|doctorate|doctorat|dba|job-?market|jobmarket|dissertations?|theses|promovierte|doktor)', re.I)
 URL_FIELD = re.compile(r'(business|management|mgmt|gsb|sloan|kellogg|wharton|booth|fuqua|tuck|haas|anderson|stern|darden|fisher|smeal|kenan|mccombs|rady|tepper|olin|foster|mendoza|krannert|scheller|goizueta|carlson|marshall|isom|otim|itom|ieor|isye|ieem|ieda|dsme|msom|operations|supply|logistic|industrial|decision|analytics|engineering|stor-i|rutcor|informs|(^|[./-])(or|om|ie|iems|ise|sem|ds)([./-]|$))', re.I)
-URL_NOT = re.compile(r'(work-?placement|clinical|internship|nursing|medicine|medical|health|school-?placement|placement-?(test|exam|credit)|language-?placement|replacement|displacement|/tag/|/category/|\?replytocom|/feed/?$|\.pdf$|/wp-json/|/search\?|/print/|\?page=|undergrad|mba[-_/]|masters?[-_/]|msc[-_/]|executive|/news/|/blog/|/events?/|calendar|bachelors?|prospective|career[-_]?(management|services?|cent(er|re)|development)|alumni[-_]?giving|giving|networking|/connect|reunion|awards?|donat|membership|benefits|/jobs?/|job[-_]search|resume|interview|/resources|/contact|/about[-_]us|spotlight|profile|/people/|/staff|/faculty/|/directory|/apply|admission|tuition|funding|handbook|faq|/login|/user/|/node/|/sites/default/|/print|/share|/tag/|/\d{4}/\d{2}/\d{2}/|/press|/stories/|/story/|/articles?/|/podcast|/video)', re.I)
+URL_NOT = re.compile(r'(work-?placement|clinical|internship|nursing|medicine|medical|health|school-?placement|placement-?(test|exam|credit)|language-?placement|replacement|displacement|/tag/|/category/|\?replytocom|/feed/?$|\.pdf$|/wp-json/|/search\?|/print/|\?page=|undergrad|mba[-_/]|masters?[-_/]|msc[-_/]|executive|/news/|/blog/|/events?/|calendar|bachelors?|prospective|career[-_]?(management|services?|cent(er|re)|development)|alumni[-_]?giving|giving|networking|/connect|reunion|awards?|donat|membership|benefits|/jobs?/|job[-_]search|resume|interview|/resources|/contact|/about[-_]us|spotlight|profile|/people/|/staff|/faculty/|/directory|/apply|admission|tuition|funding|handbook|faq|/login|/user/|/node/|/sites/default/|/print|/share|/tag/|~|/policies|catalog|binding|defen[cs]e|guideline|format|template|submission|/publications?/|testimonial|/kwo/|magazine|newsletter|/give|members|recruit|repub\.eur\.nl/res/aut/|/research/|/projects?/|/seminar|/workshop|/conference|/courses?/|/syllab|/forms?/|/student[-_]?life|/campus|/visit|/map|/sitemap|/rss|/feed|/archive/|/image|/photo|/gallery|/survey|/statistics|/stats|/rankings?|/employ|/recruiters?|/hire|/internship|/competition|/awards?|/scholarship|/fellowship|/visiting|/exchange|/study[-_]abroad|/ranking|/overview|/welcome|/home$|/index\.html?$|/\d{4}/\d{2}/\d{2}/|/press|/stories/|/story/|/articles?/|/podcast|/video)', re.I)
 
 
 # Departments outside operations, management science and industrial engineering: their lists are not in scope and
@@ -84,7 +84,8 @@ def url_wanted(u, special_hosts, business_hosts=frozenset()):
     if host.startswith('www.'):
         host = host[4:]
     strong = bool(URL_LIST.search(u))
-    weak = bool(URL_WEAK.search(u)) and (bool(URL_DOC.search(u)) or host in special_hosts)
+    depth = len([x for x in urlsplit(u).path.split('/') if x])
+    weak = bool(URL_WEAK.search(u)) and (bool(URL_DOC.search(u)) or (host in special_hosts and depth <= 3))
     if not strong and not weak:
         return False
     in_business = host in special_hosts or any(host == h or host.endswith('.' + h) for h in business_hosts)
@@ -291,7 +292,7 @@ def norm_url(u):
     host = s.netloc.lower()
     if host.startswith('www.'):
         host = host[4:]
-    path = re.sub(r'/+$', '', s.path) or '/'
+    path = (re.sub(r'/+$', '', s.path) or '/').lower()
     return host + path
 
 
@@ -332,8 +333,13 @@ def candidates(args):
     # sheet shows the list page once with the count of pages under it.
     norms = {c['normalized'] for c in out}
     for c in out:
-        parent = c['normalized'].rsplit('/', 1)[0]
-        c['underParent'] = parent if '/' in c['normalized'] and parent in norms else None
+        c['underParent'] = None
+        parts = c['normalized'].split('/')
+        for i in range(len(parts) - 1, 1, -1):
+            anc = '/'.join(parts[:i])
+            if anc in norms:
+                c['underParent'] = anc
+                break
     out.sort(key=lambda c: ((c['institution'] or '~'), c['normalized']))
     write_json(os.path.join(CDIR, 'candidates.json'), out)
     with open(os.path.join(CDIR, 'candidates.md'), 'w', encoding='utf-8') as f:
@@ -367,10 +373,10 @@ def peek(args):
         if body is None:
             open(base + '.failed', 'w').write('')
             return 'failed'
-        open(base + '.txt', 'w', encoding='utf-8').write(to_text(body)[:60000] + f"\n\n[page {cap['url']}; capture {cap['ts']} in {cap['crawl']}; institution by host: {c['institution']}]\n")
+        open(base + '.txt', 'w', encoding='utf-8').write(to_text(body)[:30000] + f"\n\n[page {cap['url']}; capture {cap['ts']} in {cap['crawl']}; institution by host: {c['institution']}]\n")
         return 'saved'
     counts = {}
-    with ThreadPoolExecutor(8) as ex:
+    with ThreadPoolExecutor(3) as ex:  # the data server refuses bursts; a scan may be running too
         for i, r in enumerate(ex.map(work, todo), 1):
             counts[r] = counts.get(r, 0) + 1
             if i % 200 == 0:
