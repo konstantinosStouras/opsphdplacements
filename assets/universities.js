@@ -96,6 +96,7 @@ export async function renderUniversities(section, { openInstitution } = {}) {
       sources.append(link('Operations Academia directory ↗', 'https://www.operationsacademia.org/universities'), html('small', undefined, `${r.departmentCount} directory ${r.departmentCount === 1 ? 'row' : 'rows'} · tags: ${r.directorySources.join(', ') || 'none'}`));
       for (const f of faculty) sources.append(link('Faculty page ↗', f.url), html('br'));
       if (r.wikidata) sources.append(link(`Wikidata ${r.wikidata} ↗`, `https://www.wikidata.org/wiki/${r.wikidata}`));
+      if (r.addedAt) sources.append(html('small', undefined, `Added ${r.addedAt.slice(0, 16).replace('T', ' ')} UTC` + (r.updatedAt && r.updatedAt !== r.addedAt ? ` · updated ${r.updatedAt.slice(0, 16).replace('T', ' ')} UTC` : '')));
       tr.append(uni, depts, people, sources); body.append(tr);
     }
     shown += slice.length;
