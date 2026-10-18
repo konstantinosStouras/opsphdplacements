@@ -19,9 +19,16 @@ const YEAR_MEANINGS = new Set(['graduation', 'placement', 'job-market', 'class-o
 // page itself) decides whether the listing is an operations one: operations, supply chain, logistics, industrial
 // and systems engineering, operations research, management science, decision sciences and analytics count;
 // a page or area naming another field does not; the rest is "unstated".
-const OPS = /operation|supply|logistic|industrial|systems eng|management science|decision sci|analytics|production|transport|OR|OM|ISOM|ITOM|IEOR|ISyE|ISE|SCM|OTIM|OIDM|OBA|TOM/i;
-const OTHER = /account|financ|marketing|organi[sz]ational behavio|OB|strateg|economics|entrepreneur|real estate|insurance|human resource|sociolog|psycholog|law|statistic|mathematic|computer science|political/i;
-const fieldOf = (program, pageUrl) => { const t = program || ''; if (OPS.test(t)) return 'operations'; if (OTHER.test(t)) return 'other-field'; if (OPS.test(pageUrl)) return 'operations'; if (OTHER.test(pageUrl)) return 'other-field'; return 'unstated'; };
+// Words match in any case; short codes (OR, OM, SCM, ...) only as whole upper-case words, so "or" in "doctoral"
+// or "om" in "Economics" does not count. "Industrial" counts only as industrial engineering, not "Industrial
+// Relations" or a school called "Industrial and Business Studies" or "Industrial Administration".
+const OPS_WORDS = /operation|supply|logistic|industrial (and |& )?(enterprise )?(systems )?eng|industriale|systems eng|management science|decision sci|analytics|production|transport/i;
+const OPS_CODES = /\b(OR|OM|POM|QMOM|ISOM|ITOM|IEOR|ISyE|ISE|SCM|OTIM|OIDM|OBA|TOM|DRO|OPIM|OSM)\b/;
+const OTHER_WORDS = /account|financ|marketing|organi[sz]ational behavio|strateg|economics|entrepreneur|real estate|insurance|human resource|sociolog|psycholog|\blaw\b|statistic|mathematic|computer science|political/i;
+const OTHER_CODES = /\b(OB|OBHR|FIN|MKTG|STRAT)\b/;
+const isOps = t => OPS_WORDS.test(t) || OPS_CODES.test(t);
+const isOther = t => OTHER_WORDS.test(t) || OTHER_CODES.test(t);
+const fieldOf = (program, pageUrl) => { const t = program || ''; if (isOps(t)) return 'operations'; if (isOther(t)) return 'other-field'; if (isOps(pageUrl)) return 'operations'; if (isOther(pageUrl)) return 'other-field'; return 'unstated'; };
 
 const people = [...read('data/faculty.json').records, ...(fs.existsSync(path.join(root, 'data/faculty-roster-people.json')) ? read('data/faculty-roster-people.json').records : [])];
 const placements = new Map(read('data/placements.json').records.map(r => [r.facultyId, r]));
@@ -39,8 +46,8 @@ const existing = fs.existsSync(outPath) ? read('data/graduate-lists.json') : { v
 const records = new Map(existing.records.map(r => [r.id, r]));
 for (const r of records.values()) for (const s of r.sightings) s.archive ??= archiveOf(s.sourceUrl);
 const done = new Set(fs.existsSync(donePath) ? read('research/graduates/extracted.json') : []);
-const files = process.argv.slice(2);
-if (!files.length) { console.log('Give proposal files to merge.'); process.exit(0); }
+const files = process.argv.slice(2).filter(a => a !== '--refield');
+if (!files.length && !process.argv.includes('--refield')) { console.log('Give proposal files to merge (or --refield to recompute the fields only).'); process.exit(0); }
 let added = 0, sightings = 0;
 for (const file of files) {
   const prop = JSON.parse(fs.readFileSync(path.resolve(root, file), 'utf8'));
@@ -86,6 +93,12 @@ for (const file of files) {
   if (heldOut) console.log(`${file}: ${heldOut} records held out (page reviewed as not a graduate list of a program in scope)`);
   for (const p of chunk.pages) for (const t of p.texts) done.add(`${p.key}/${path.basename(t)}`);
   for (const u of prop.unreadable || []) done.add(`${u.pageKey}/${u.sourceDate}`);
+}
+// The field is derived from the sightings alone, so it is recomputed for every record on each merge (a change
+// to the rule above then reaches records no new proposal touches).
+for (const rec of records.values()) {
+  const fields = rec.sightings.map(s => fieldOf(s.program, s.pageUrl));
+  rec.field = fields.includes('operations') ? 'operations' : fields.includes('other-field') ? 'other-field' : 'unstated';
 }
 const all = [...records.values()].sort((a, b) => a.institution.localeCompare(b.institution) || (a.listedYear ?? 9999) - (b.listedYear ?? 9999) || a.name.localeCompare(b.name));
 // Coverage per institution and listed year: names listed, with the years and pages behind them. Never "complete":
