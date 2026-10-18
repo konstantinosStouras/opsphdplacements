@@ -78,14 +78,19 @@ BUSINESS_INST = re.compile(r'(business|management|insead|indian institute of man
 
 
 def url_wanted(u, special_hosts, business_hosts=frozenset()):
+    # The cheap list-word test runs first: almost every indexed address fails it, and the long exclusion patterns
+    # are slow enough to make a scan CPU-bound when run on every address.
+    strong = bool(URL_LIST.search(u))
+    weak_word = bool(URL_WEAK.search(u))
+    if not strong and not weak_word:
+        return False
     if URL_NOT.search(u) or URL_OTHER.search(u):
         return False
     host = urlsplit(u).netloc.lower()
     if host.startswith('www.'):
         host = host[4:]
-    strong = bool(URL_LIST.search(u))
     depth = len([x for x in urlsplit(u).path.split('/') if x])
-    weak = bool(URL_WEAK.search(u)) and (bool(URL_DOC.search(u)) or (host in special_hosts and depth <= 3))
+    weak = weak_word and (bool(URL_DOC.search(u)) or (host in special_hosts and depth <= 3))
     if not strong and not weak:
         return False
     in_business = host in special_hosts or any(host == h or host.endswith('.' + h) for h in business_hosts)
