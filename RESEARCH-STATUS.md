@@ -14,8 +14,8 @@ Generated from committed-format public datasets by `node scripts/update-research
 | Pending individual review | 0 |
 | Initial program-register records | 13 |
 | Institutions in the initial register | 10 |
-| Names on program graduate and placement pages (person-years) | 13676 |
-| of which listed under an operations area | 2030 |
+| Names on program graduate and placement pages (person-years) | 13720 |
+| of which listed under an operations area | 2033 |
 | Institutions with such a page read | 112 |
 | Listed names already in the people database | 402 |
 
