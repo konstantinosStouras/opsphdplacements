@@ -1,6 +1,7 @@
 import {normalize,filterRecords,groupCounts,csv,validateDataset,isSourceUrl,fold} from './model.js';
 import {renderMap} from './map.js';
 import {renderUniversities} from './universities.js';
+import {renderGraduates} from './graduates.js';
 import {getIndex,coverageLede,renderCoverageYears,renderTrends as renderInsightTrends,renderProfile as renderInsightProfile,presetProfile,renderAvailability} from './insights.js';
 const $=s=>document.querySelector(s), fmt=n=>n.toLocaleString('en-GB');
 const el=(tag,text,cls)=>{const e=document.createElement(tag);if(text!==undefined)e.textContent=text;if(cls)e.className=cls;return e;};
@@ -98,6 +99,7 @@ updateCitation();
 init();
 loadPrograms();
 renderUniversities(document.querySelector('#universities'),{openInstitution:name=>openInstitution(name)});
+renderGraduates(document.querySelector('#graduates'));
 
 // Reading progress: the thin line at the very top shows how far down the page the reader is, and the
 // menu link of the section in view turns blue.
@@ -127,11 +129,13 @@ updateProgress();
 const siteHeader=document.querySelector('header');
 function fitHeader(){
   if(!siteHeader||matchMedia('(max-width:950px)').matches){siteHeader?.classList.remove('stacked','wrap');return;}
-  const over=()=>siteHeader.scrollWidth>siteHeader.clientWidth+1;
+  const nav=siteHeader.querySelector('nav');
+  const over=()=>siteHeader.scrollWidth>siteHeader.clientWidth+1||(nav&&nav.scrollWidth>nav.clientWidth+1);
   siteHeader.classList.remove('stacked','wrap');
   if(over())siteHeader.classList.add('stacked');
   if(over())siteHeader.classList.add('wrap');
 }
 addEventListener('resize',fitHeader);
 document.fonts?.ready.then(fitHeader);
+document.fonts?.addEventListener('loadingdone',fitHeader);
 fitHeader();

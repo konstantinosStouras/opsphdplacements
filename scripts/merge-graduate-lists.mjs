@@ -29,6 +29,9 @@ const placements = new Map(read('data/placements.json').records.map(r => [r.facu
 const byName = new Map();
 for (const p of people) { const k = fold(p.name); if (!byName.has(k)) byName.set(k, []); byName.get(k).push({ id: p.id, name: p.name, institution: placements.get(p.id)?.phdInstitution || p.phdInstitution, phdYear: placements.get(p.id)?.phdYear ?? p.phdYear }); }
 
+// Pages reviewed as not a graduate list (a single profile, a search page, a department outside operations) are
+// skipped; research/graduate-list-pages.json carries the scope and the reason.
+const pageScope = new Map(read('research/graduate-list-pages.json').map(p => [p.url, p.scope || 'program-list']));
 const existing = fs.existsSync(outPath) ? read('data/graduate-lists.json') : { version: 1, metadata: {}, records: [] };
 const records = new Map(existing.records.map(r => [r.id, r]));
 const done = new Set(fs.existsSync(donePath) ? read('research/graduates/extracted.json') : []);
@@ -45,6 +48,9 @@ for (const file of files) {
   let heldOut = 0;
   for (const r of prop.records) {
     if (r.institution === '(unknown)') { heldOut++; continue; }
+    const pg = pageByKey.get(r.pageKey); if (pg && pageScope.get(pg.url) === 'not-a-list') { heldOut++; continue; }
+    // A page that mixes master's graduates into its list: rows whose degree the page gives as a master's are left out.
+    if (/^(MRes|M\.?Sc\.?|MBA|M\.?A\.?|Master)/i.test(r.degree || '')) { heldOut++; continue; }
     for (const k of ['institution', 'pageKey', 'sourceUrl', 'sourceDate', 'name']) if (!r[k] || typeof r[k] !== 'string') throw Error(`Missing ${k} in ${file}: ${JSON.stringify(r).slice(0, 120)}`);
     if (!/^https?:\/\//.test(r.sourceUrl)) throw Error(`Bad URL in ${file}: ${r.sourceUrl}`);
     if (!/^\d{4}-\d{2}-\d{2}$/.test(r.sourceDate)) throw Error(`Bad date in ${file}: ${r.sourceDate}`);
@@ -69,7 +75,7 @@ for (const file of files) {
     const fields = rec.sightings.map(s => fieldOf(s.program, s.pageUrl));
     rec.field = fields.includes('operations') ? 'operations' : fields.includes('other-field') ? 'other-field' : 'unstated';
   }
-  if (heldOut) console.log(`${file}: ${heldOut} records held out (page not assigned to a program in scope)`);
+  if (heldOut) console.log(`${file}: ${heldOut} records held out (page reviewed as not a graduate list of a program in scope)`);
   for (const p of chunk.pages) for (const t of p.texts) done.add(`${p.key}/${path.basename(t)}`);
   for (const u of prop.unreadable || []) done.add(`${u.pageKey}/${u.sourceDate}`);
 }

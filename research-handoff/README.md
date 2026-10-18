@@ -46,3 +46,7 @@ This is a dated snapshot. Preserve it and use separate proposals for subsequent 
 ## Third pass on unresolved first jobs (17 October 2026)
 
 [third-pass/](third-pass/) holds the verified proposals of the third pass, which opened the ORCID, school-profile, website and CV links on each unresolved person's OM List page that earlier reviews had not cited. Every file here is merged into the public datasets; do not add them again. Progress and open chunks are in TODO.md.
+
+## Graduate lists from program pages (18 October 2026)
+
+[graduates/](graduates/) holds the extraction proposals (`proposal-N.json`, one per chunk of program pages, read from the live pages on 18 October 2026) and the reviewed page list (`graduate-list-pages.json`, with each page's scope). All of them are merged into `data/graduate-lists.json`; do not merge them again. The snapshot texts themselves stay in the ignored `research/graduates/snapshots/`; each record carries the page URL and date to re-read.
