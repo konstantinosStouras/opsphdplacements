@@ -180,6 +180,7 @@ async function renderSvgs() {
   await browser.close();
 }
 
+const NOT_UNIVERSITY = /(review|journal|press|club|society|union|hockey|football|athletic|rowing|alumni|library|hospital|museum|band|student|foundation|fondation|norc|incubat|media|sciences_po|faculty_of|college_of|school_of)/i;
 const KIND_RANK = { review: 1.2, 'site-apple': 1, 'site-icon': 1, 'site-logo': 1, 'commons-icon': 1, 'commons-small-logo': 1, 'commons-seal': 1, 'commons-arms': 1, 'commons-logo': 1, 'commons-search': 0.9, 'wikipedia-infobox': 0.95, 'wikipedia-image': 0.8, ddg: 0.4, google: 0.4 };
 function choose() {
   fs.mkdirSync(outDir, { recursive: true });
@@ -202,7 +203,11 @@ function choose() {
       // A whole-square picture is accepted only from the site's own icons (elsewhere it was a photograph).
       if (r.mode === 'cover' && !/^(site-apple|site-icon|ddg|google|review)$/.test(e.kind)) { tried.push({ k: e.k, kind: e.kind, failed: 'picture, not a logo' }); continue; }
       if (e.kind === 'site-logo' && !(fix.pick && e.url.includes(fix.pick))) continue;
-      const score = 3 * Math.min(r.fill / 0.85, 1) + 2 * Math.min(r.native / 150, 1) - (r.native < 96 ? 1.5 : 0) - (r.mode === 'cover' ? 0.5 : 0) + (KIND_RANK[e.kind] ?? 0.5) + (fix.pick && e.url.includes(fix.pick) ? 100 : 0);
+      // A Commons title search also finds the marks of bodies attached to the university (a law review, a press,
+      // a sports or student club, a hospital): never chosen automatically.
+      if (e.kind === 'commons-search' && NOT_UNIVERSITY.test(decodeURIComponent(e.url)) && !(fix.pick && e.url.includes(fix.pick))) continue;
+      // ...and bold, coloured marks before thin line drawings, which turn grey on small circles.
+      const score = 3 * Math.min(r.fill / 0.85, 1) + 2 * Math.min(r.native / 150, 1) + 1.5 * Math.min((r.ink ?? 0.35) / 0.35, 1) - ((r.ink ?? 1) < 0.12 ? 2 : 0) - (r.native < 96 ? 1.5 : 0) - (r.mode === 'cover' ? 0.5 : 0) + (KIND_RANK[e.kind] ?? 0.5) + (fix.pick && e.url.includes(fix.pick) ? 100 : 0);
       tried.push({ k: e.k, kind: e.kind, ...r, score: +score.toFixed(2) });
       if (!best || score > best.score) { best = { score, e, r }; fs.copyFileSync(tmp, target + '.tmp'); }
     }

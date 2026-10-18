@@ -2,7 +2,8 @@
 
 Usage: python3 -I scripts/logo-layout.py SOURCE TARGET SIZE
 Writes a SIZE x SIZE PNG and prints one line of JSON describing the result (mode, the logo's own
-resolution in pixels, its width-to-height ratio and how much of the circle it fills), or exits non-zero
+resolution in pixels, its width-to-height ratio, how much of the circle its box fills and how much of the
+circle it colours in), or exits non-zero
 with a reason when the image is unusable (too small, blank, too pale to show on the white disc, or a plain
 picture with almost no shapes, such as a favicon made of two colour blocks).
 
@@ -109,7 +110,8 @@ else:
     sub = mask[y0:y1, x0:x1]
     content = rgb[y0:y1, x0:x1][sub]
     # A logo that would vanish on the white disc: almost nothing darker than pale grey.
-    if (bg is None or lum(bg) > 235) and (lum(content) < 170).mean() < 0.03:
+    # (a strong colour such as yellow counts as visible even when it is light)
+    if (bg is None or lum(bg) > 235) and ((lum(content) < 170) | (content.min(-1) < 120)).mean() < 0.03:
         raise SystemExit('too pale')
     if bg is not None and lum(bg) <= 235 and np.abs(content - bg).max(-1).mean() < 60:
         raise SystemExit('faint')
@@ -144,6 +146,9 @@ yy, xx = np.mgrid[0:SIZE - 1, 0:SIZE - 1]
 inside = np.hypot(xx + 1 - SIZE / 2, yy + 1 - SIZE / 2) < SIZE / 2 - 2
 if (edge & inside).sum() < 0.01 * inside.sum():
     raise SystemExit('no detail')
+# Ink: share of the circle that is coloured in (not white); thin line art scores low and reads as grey at small sizes.
+insideFull = np.hypot(np.mgrid[0:SIZE, 0:SIZE][1] + 0.5 - SIZE / 2, np.mgrid[0:SIZE, 0:SIZE][0] + 0.5 - SIZE / 2) < SIZE / 2
+ink = float((g[..., :3].min(-1)[insideFull] < 200).mean())
 out.quantize(colors=256, method=Image.Quantize.FASTOCTREE, dither=Image.Dither.NONE).save(target, optimize=True)
-print(json.dumps({'mode': mode, 'native': int(native), 'aspect': round(float(aspect), 2), 'fill': round(fill, 2),
+print(json.dumps({'mode': mode, 'native': int(native), 'aspect': round(float(aspect), 2), 'fill': round(fill, 2), 'ink': round(ink, 2),
                   'bg': None if bg is None else [int(v) for v in bg]}))
