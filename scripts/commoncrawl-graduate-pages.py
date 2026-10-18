@@ -509,7 +509,8 @@ def fetch(args):
         # one capture per calendar year: the last of the year; the same content digest is not read twice
         by_year = {}
         for cap in c['captures']:
-            y = cap['ts'][:4]
+            # a page marked readOnce (an undated catalogue, a single profile) is read in its latest capture only
+            y = 'latest' if p.get('readOnce') or p.get('scope') == 'single-record' else cap['ts'][:4]
             if y not in by_year or cap['ts'] > by_year[y]['ts']:
                 by_year[y] = cap
         seen_digest = set()
