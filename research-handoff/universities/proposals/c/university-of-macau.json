@@ -1,0 +1,101 @@
+{
+  "decisions": [
+    {
+      "disposition": "replaced",
+      "sourceDepartmentId": "university-of-macau__faculty-of-business-administration__accounting-and-information-management",
+      "reason": "Verified full department name with specific operations faculty evidence.",
+      "unitIds": [
+        "university-of-macau--accounting-information-management"
+      ]
+    },
+    {
+      "disposition": "not-a-unit",
+      "sourceDepartmentId": "university-of-macau__institute-of-artificial-intelligence-and-brain-sciences__data-science",
+      "reason": "Official institute page establishes Data Science as a cross-unit MSc program, not an operations department.",
+      "unitIds": []
+    }
+  ],
+  "duplicateOf": null,
+  "universitySourceUrl": "https://fba.um.edu.mo/aim/",
+  "units": [
+    {
+      "type": "department",
+      "sourceUrl": "https://fba.um.edu.mo/aim/",
+      "evidence": "Official department and staff list locate Zhaotong Lian here; his official profile explicitly researches service/operations management, stochastic models, supply chains and optimization and teaches logistics.",
+      "id": "university-of-macau--accounting-information-management",
+      "name": "Department of Accounting and Information Management",
+      "school": "Faculty of Business Administration",
+      "fields": [
+        "operations-management",
+        "operations-research",
+        "supply-chain",
+        "logistics"
+      ],
+      "checkedAt": "2026-10-20"
+    },
+    {
+      "type": "department",
+      "sourceUrl": "https://feg.um.edu.mo/eme/academic-staff/",
+      "evidence": "Official department staff lists Industrial Engineering Laboratory lead Seng Fat Wong with ERP, ergonomics, engineering management and manufacturing expertise; laboratory page explicitly researches industrial engineering, inventory and facility management.",
+      "id": "university-of-macau--electromechanical-engineering",
+      "name": "Department of Electromechanical Engineering",
+      "school": "Faculty of Engineering",
+      "fields": [
+        "industrial-engineering"
+      ],
+      "checkedAt": "2026-10-20"
+    }
+  ],
+  "sources": [
+    {
+      "outcome": "read",
+      "checkedAt": "2026-10-20",
+      "note": "Full business department and parent identity.",
+      "url": "https://fba.um.edu.mo/aim/"
+    },
+    {
+      "outcome": "read",
+      "checkedAt": "2026-10-20",
+      "note": "Department lists Zhaotong Lian among staff.",
+      "url": "https://fba.um.edu.mo/aim/staff/"
+    },
+    {
+      "outcome": "read",
+      "checkedAt": "2026-10-20",
+      "note": "Explicit operations, supply-chain, logistics and optimization research/teaching.",
+      "url": "https://fba.um.edu.mo/faculty/zhaotonglian/"
+    },
+    {
+      "outcome": "read",
+      "checkedAt": "2026-10-20",
+      "note": "Industrial Engineering Laboratory research remit and academic lead.",
+      "url": "https://feg.um.edu.mo/research/laboratories/industrial-engineering-laboratory/"
+    },
+    {
+      "outcome": "read",
+      "checkedAt": "2026-10-20",
+      "note": "Full electromechanical engineering department identity.",
+      "url": "https://feg.um.edu.mo/eme/"
+    },
+    {
+      "outcome": "read",
+      "checkedAt": "2026-10-20",
+      "note": "Lab academic lead in host department; industrial-management remit.",
+      "url": "https://feg.um.edu.mo/eme/academic-staff/"
+    },
+    {
+      "outcome": "read",
+      "checkedAt": "2026-10-20",
+      "note": "Data Science is explicitly a cross-unit MSc program, not a department.",
+      "url": "https://iaibs.um.edu.mo/cds-master-programme/"
+    }
+  ],
+  "canonicalName": "University of Macau",
+  "id": "university-of-macau",
+  "status": "reviewed",
+  "reviewer": "Codex in Chrome",
+  "checkedAt": "2026-10-20",
+  "limitations": [
+    "Industrial Engineering Laboratory supports the remit of its academic host; not duplicated as a department. The broader Accounting and Information Management department is retained because its listed faculty explicitly conduct operations/supply-chain research, not because information management alone qualifies."
+  ]
+}

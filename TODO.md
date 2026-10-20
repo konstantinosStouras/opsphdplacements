@@ -202,8 +202,8 @@ The Anuj Mehrotra OM List row also links to the same opened official Scheller pr
 - Obtain full current chronologies for the partial cases; do not equate a current-title biography with a complete history. Ghadge’s 13 accessible LinkedIn Experience entries are captured, without claiming a complete real-world career.
 - Preserve disagreements in older CVs (Krieger 2020, Seidmann 2024, Keramati 2022), Wooldridge’s conflicting current rank/list title, and Oke’s conflicting Shell/administrative dates. Search-result CV identity must be checked: the KNUST PDF returned for Muntaka belonged to someone else and was excluded.
 
-- [x] University cleanup, 20 October: integrated 182 source records (166 reviewed, 16 partial), preserving full official unit names and source-supported trailing acronyms. Validated alias consolidation, evidence links and dates in Chrome. The 135-record release is confirmed live.
-- [ ] Continue the remaining 463 source records and resolve 16 partial reviews; these current counts supersede the earlier university checkpoints above. Zhejiang current unit names remain inaccessible; Ajman lower-level engineering organization and Aschaffenburg imported specialty remain unresolved.
+- [x] University cleanup, 20 October: integrated 250 source records (229 reviewed, 20 partial, 1 blocked), preserving full official unit names and source-supported trailing acronyms. Validated alias consolidation, evidence links and dates in Chrome. The 182-record release is confirmed live; the 250-record snapshot is prepared for publication.
+- [ ] Continue the remaining 395 source records and resolve 20 partial reviews and 1 blocked review; these current counts supersede the earlier university checkpoints above. Zhejiang current unit names remain inaccessible; Ajman lower-level engineering organization and Aschaffenburg imported specialty remain unresolved.
 
 
 - [x] Resume remaining 24 people of the 11:17 career batch after the owner clarified individual source blockers; save partial source observations and daily attempts (57), research branch only.

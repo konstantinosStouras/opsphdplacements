@@ -1,0 +1,80 @@
+{
+  "sources": [
+    {
+      "outcome": "read",
+      "url": "https://www.bwl.uni-mannheim.de/operations/",
+      "checkedAt": "2026-10-20",
+      "note": "Official area identity, faculty parent and named production/service/supply-chain chairs."
+    },
+    {
+      "outcome": "read",
+      "url": "https://www.bwl.uni-mannheim.de/stolletz/",
+      "checkedAt": "2026-10-20",
+      "note": "Imported chair URL redirects to current production chair page, with quantitative operations research scope."
+    },
+    {
+      "outcome": "read",
+      "url": "https://www.uni-mannheim.de/en/about/institutions-and-schools/",
+      "checkedAt": "2026-10-20",
+      "note": "University identity and school directory examined; no engineering school listed."
+    }
+  ],
+  "units": [
+    {
+      "sourceUrl": "https://www.bwl.uni-mannheim.de/operations/",
+      "fields": [
+        "operations-management",
+        "operations-research",
+        "supply-chain"
+      ],
+      "evidence": "Official area page explicitly identifies its faculty parent and constituent chairs including Supply Chain Management, Production Management and Service Operations Management. Production chair describes quantitative decision support for deterministic and stochastic operations systems.",
+      "checkedAt": "2026-10-20",
+      "name": "Area Operations Management",
+      "school": "Fakultät für Betriebswirtschaftslehre",
+      "id": "university-of-mannheim--operations-management",
+      "type": "area"
+    }
+  ],
+  "duplicateOf": null,
+  "canonicalName": "University of Mannheim",
+  "checkedAt": "2026-10-20",
+  "decisions": [
+    {
+      "disposition": "not-a-unit",
+      "unitIds": [],
+      "reason": "University-only placeholder names no academic unit.",
+      "sourceDepartmentId": "university-of-mannheim"
+    },
+    {
+      "disposition": "duplicate",
+      "unitIds": [
+        "university-of-mannheim--operations-management"
+      ],
+      "reason": "Official area directory explicitly places this subject/chair within Operations Management; consolidate under the umbrella area.",
+      "sourceDepartmentId": "university-of-mannheim__business-school__chair-of-production-management"
+    },
+    {
+      "disposition": "replaced",
+      "unitIds": [
+        "university-of-mannheim--operations-management"
+      ],
+      "reason": "Use full current official area name.",
+      "sourceDepartmentId": "university-of-mannheim__business-school__operations-management"
+    },
+    {
+      "disposition": "duplicate",
+      "unitIds": [
+        "university-of-mannheim--operations-management"
+      ],
+      "reason": "Official area directory explicitly places this subject/chair within Operations Management; consolidate under the umbrella area.",
+      "sourceDepartmentId": "university-of-mannheim__business-school__supply-chain-management"
+    }
+  ],
+  "id": "university-of-mannheim",
+  "limitations": [
+    "Production and Supply Chain chairs are represented by their officially named Operations Management umbrella area rather than expanded into a long list of chair duplicates."
+  ],
+  "universitySourceUrl": "https://www.uni-mannheim.de/en/about/institutions-and-schools/",
+  "reviewer": "Codex in Chrome",
+  "status": "reviewed"
+}

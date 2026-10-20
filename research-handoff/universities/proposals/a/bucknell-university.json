@@ -1,0 +1,94 @@
+{
+  "id": "bucknell-university",
+  "status": "reviewed",
+  "canonicalName": "Bucknell University",
+  "universitySourceUrl": "https://www.bucknell.edu/academics/freeman-college-management/majors-departments",
+  "checkedAt": "2026-10-20",
+  "reviewer": "Codex in Chrome",
+  "units": [
+    {
+      "id": "bucknell-university--analytics-operations-management",
+      "name": "Department of Analytics & Operations Management",
+      "school": "Freeman College of Management",
+      "type": "department",
+      "fields": [
+        "operations-management"
+      ],
+      "sourceUrl": "https://www.bucknell.edu/academics/freeman-college-management/majors-departments",
+      "checkedAt": "2026-10-20",
+      "evidence": "Official college department directory explicitly names this department and identifies Business Analytics as its major, distinct from Accounting & Financial Management and Markets, Innovation & Design."
+    }
+  ],
+  "decisions": [
+    {
+      "sourceDepartmentId": "bucknell-university____management-markets-innovation-and-design",
+      "disposition": "out-of-scope",
+      "unitIds": [],
+      "reason": "Official college directory defines Markets, Innovation & Design around marketing, branding and product design rather than operations/supply-chain."
+    },
+    {
+      "sourceDepartmentId": "bucknell-university__freeman-college-of-management",
+      "disposition": "not-a-unit",
+      "unitIds": [],
+      "reason": "Broad school-only import is not an additional operations department."
+    },
+    {
+      "sourceDepartmentId": "bucknell-university__freeman-college-of-management__accounting-and-financial-management-area-business-analytics",
+      "disposition": "replaced",
+      "unitIds": [
+        "bucknell-university--analytics-operations-management"
+      ],
+      "reason": "Composite imported Accounting/Business Analytics label conflates units; current Business Analytics major belongs to Department of Analytics & Operations Management, while Accounting & Financial Management is separate."
+    },
+    {
+      "sourceDepartmentId": "bucknell-university__freeman-college-of-management__analytics-and-operations-management",
+      "disposition": "replaced",
+      "unitIds": [
+        "bucknell-university--analytics-operations-management"
+      ],
+      "reason": "Use current full Department of Analytics & Operations Management name; Business Analytics is its degree, not another department."
+    },
+    {
+      "sourceDepartmentId": "bucknell-university__freeman-college-of-management__business-analytics",
+      "disposition": "duplicate",
+      "unitIds": [
+        "bucknell-university--analytics-operations-management"
+      ],
+      "reason": "Use current full Department of Analytics & Operations Management name; Business Analytics is its degree, not another department."
+    },
+    {
+      "sourceDepartmentId": "bucknell-university__freeman-college-of-management__markets-innovation-and-design-mide",
+      "disposition": "out-of-scope",
+      "unitIds": [],
+      "reason": "Official college directory defines Markets, Innovation & Design around marketing, branding and product design rather than operations/supply-chain."
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.bucknell.edu/academics/freeman-college-management/majors-departments",
+      "note": "University identity, full department name and distinctions between academic departments and majors.",
+      "outcome": "read",
+      "checkedAt": "2026-10-20"
+    },
+    {
+      "url": "https://www.bucknell.edu/academics",
+      "note": "Three college structure.",
+      "outcome": "read",
+      "checkedAt": "2026-10-20"
+    },
+    {
+      "url": "https://www.bucknell.edu/academics/college-engineering",
+      "note": "Six engineering departments.",
+      "outcome": "read",
+      "checkedAt": "2026-10-20"
+    },
+    {
+      "url": "https://www.bucknell.edu/academics/college-engineering/majors-departments",
+      "note": "Engineering departments are biomedical, chemical, civil/environmental, computer science, electrical/computer and mechanical; no separate IE/operations unit identified.",
+      "outcome": "read",
+      "checkedAt": "2026-10-20"
+    }
+  ],
+  "limitations": [],
+  "duplicateOf": null
+}

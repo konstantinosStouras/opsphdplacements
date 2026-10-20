@@ -1,0 +1,63 @@
+{
+  "id": "california-state-university-east-bay",
+  "status": "reviewed",
+  "canonicalName": "California State University, East Bay",
+  "universitySourceUrl": "https://www.csueastbay.edu/cbe/departments.html",
+  "checkedAt": "2026-10-20",
+  "reviewer": "Codex in Chrome",
+  "units": [
+    {
+      "id": "california-state-university-east-bay--management",
+      "name": "Department of Management",
+      "school": "College of Business and Economics",
+      "type": "department",
+      "fields": [
+        "operations-management",
+        "supply-chain"
+      ],
+      "sourceUrl": "https://www.csueastbay.edu/cbe/departments.html",
+      "checkedAt": "2026-10-20",
+      "evidence": "College department directory explicitly identifies operations and supply chain management among the Department of Management areas."
+    },
+    {
+      "id": "california-state-university-east-bay--engineering",
+      "name": "School of Engineering",
+      "school": null,
+      "type": "school",
+      "fields": [
+        "industrial-engineering"
+      ],
+      "sourceUrl": "https://www.csueastbay.edu/engineering/message-from-the-chair.html",
+      "checkedAt": "2026-10-20",
+      "evidence": "Official School of Engineering chair message identifies its industrial engineering undergraduate program alongside computer/civil engineering and construction management."
+    }
+  ],
+  "decisions": [
+    {
+      "sourceDepartmentId": "california-state-university-east-bay__college-of-business-and-economics__management",
+      "disposition": "replaced",
+      "unitIds": [
+        "california-state-university-east-bay--management"
+      ],
+      "reason": "Verified full department name and explicit operations/supply-chain remit; separately add the actual industrial-engineering school host."
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.csueastbay.edu/cbe/departments.html",
+      "note": "Full university, college and department names; explicit operations/supply-chain remit.",
+      "checkedAt": "2026-10-20",
+      "outcome": "read"
+    },
+    {
+      "url": "https://www.csueastbay.edu/engineering/message-from-the-chair.html",
+      "note": "School of Engineering identity and industrial engineering degree host.",
+      "checkedAt": "2026-10-20",
+      "outcome": "read"
+    }
+  ],
+  "limitations": [
+    "Industrial Engineering is a program within the verified School of Engineering, not presented as an independent department."
+  ],
+  "duplicateOf": null
+}

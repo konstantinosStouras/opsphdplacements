@@ -1,0 +1,97 @@
+{
+  "reviewer": "Codex in Chrome",
+  "universitySourceUrl": "https://www.london.ac.uk/federation/london-business-school",
+  "sources": [
+    {
+      "note": "Bayes operations/supply-chain research grouping.",
+      "url": "https://www.bayes.citystgeorges.ac.uk/faculties-and-research/management/people#accordion-927190-header-2",
+      "outcome": "read",
+      "checkedAt": "2026-10-20"
+    },
+    {
+      "note": "LBS Management Science and Operations faculty area.",
+      "url": "https://www.london.edu/faculty-and-research/management-science-and-operations/faculty-profiles",
+      "outcome": "read",
+      "checkedAt": "2026-10-20"
+    },
+    {
+      "note": "City St George's is a federation member, created by City/St George's merger in August 2024.",
+      "url": "https://www.london.ac.uk/federation/city-st-georges-university-london",
+      "outcome": "read",
+      "checkedAt": "2026-10-20"
+    },
+    {
+      "note": "LBS is a distinct federation member with Management Science and Operations among its subject areas.",
+      "url": "https://www.london.ac.uk/federation/london-business-school",
+      "outcome": "read",
+      "checkedAt": "2026-10-20"
+    }
+  ],
+  "duplicateOf": null,
+  "checkedAt": "2026-10-20",
+  "id": "university-of-london",
+  "limitations": [
+    "This imported row combines two distinct federation members: Bayes at City St George's and London Business School. It cannot be safely collapsed into one university alias. Integrator should reconcile unit ownership with separately reviewed member records.",
+    "A federation-wide engineering census was not performed because that would duplicate separate member-university reviews; this umbrella record remains partial."
+  ],
+  "canonicalName": "University of London",
+  "units": [
+    {
+      "evidence": "Official Bayes Faculty of Management people page explicitly labels academic staff research groupings and lists Operations and Supply Chain Management among them.",
+      "checkedAt": "2026-10-20",
+      "school": "Bayes Business School, City St George's, University of London",
+      "id": "university-of-london--bayes-operations-supply-chain",
+      "type": "group",
+      "name": "Operations and Supply Chain Management",
+      "fields": [
+        "operations-management",
+        "supply-chain"
+      ],
+      "sourceUrl": "https://www.bayes.citystgeorges.ac.uk/faculties-and-research/management/people#accordion-927190-header-2"
+    },
+    {
+      "evidence": "Official LBS faculty page names Management Science and Operations faculty; University of London member page separately identifies this as one of LBS subject areas.",
+      "checkedAt": "2026-10-20",
+      "school": "London Business School",
+      "id": "university-of-london--lbs-management-science-operations",
+      "type": "area",
+      "name": "Management Science and Operations",
+      "fields": [
+        "operations-management",
+        "operations-research"
+      ],
+      "sourceUrl": "https://www.london.edu/faculty-and-research/management-science-and-operations/faculty-profiles"
+    }
+  ],
+  "status": "partial",
+  "decisions": [
+    {
+      "sourceDepartmentId": "university-of-london",
+      "reason": "University-only placeholder names no department.",
+      "unitIds": [],
+      "disposition": "not-a-unit"
+    },
+    {
+      "sourceDepartmentId": "university-of-london__bayes-business-school",
+      "reason": "School-only placeholder; Bayes is a school within a distinct federation member.",
+      "unitIds": [],
+      "disposition": "not-a-unit"
+    },
+    {
+      "sourceDepartmentId": "university-of-london__bayes-business-school__operations-and-supply-chain-management",
+      "reason": "Verified research grouping retained with specific Bayes/City St George's parent, pending cross-record ownership consolidation.",
+      "unitIds": [
+        "university-of-london--bayes-operations-supply-chain"
+      ],
+      "disposition": "replaced"
+    },
+    {
+      "sourceDepartmentId": "university-of-london__london-business-school__management-science-and-operations",
+      "reason": "Verified LBS subject area retained with its own federation-member parent.",
+      "unitIds": [
+        "university-of-london--lbs-management-science-operations"
+      ],
+      "disposition": "replaced"
+    }
+  ]
+}

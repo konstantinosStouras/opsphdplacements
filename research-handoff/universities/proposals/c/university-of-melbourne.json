@@ -1,0 +1,150 @@
+{
+  "id": "university-of-melbourne",
+  "status": "partial",
+  "canonicalName": "The University of Melbourne",
+  "universitySourceUrl": "https://fbe.unimelb.edu.au/managementmarketing/research",
+  "duplicateOf": null,
+  "limitations": [
+    "Chrome reconnected and engineering directory was reviewed. Industrial Engineering master appears on a legacy 2021 page, but its current departmental host and availability remain unverified; current Mechanical Engineering study page does not list it. No degree has been mislabelled a department.",
+    "OPTIMA is a joint Melbourne/Monash centre; no exclusive Melbourne departmental parent is asserted."
+  ],
+  "decisions": [
+    {
+      "disposition": "replaced",
+      "sourceDepartmentId": "university-of-melbourne____scm-management",
+      "reason": "Replace shorthand with the full current named research discipline in Management and Marketing.",
+      "unitIds": [
+        "university-of-melbourne--operations-supply-chain-management"
+      ]
+    },
+    {
+      "disposition": "not-a-unit",
+      "sourceDepartmentId": "university-of-melbourne__melbourne-business-school__faculty-of-business-and-economics",
+      "reason": "This is a parent faculty label incorrectly nested under a business school, rather than a specific operations unit; current official area and hierarchy separately verified.",
+      "unitIds": []
+    },
+    {
+      "disposition": "replaced",
+      "sourceDepartmentId": "university-of-melbourne__melbourne-business-school__operations",
+      "reason": "Official directory verifies Operations as a faculty specialization, retained as area rather than invented department.",
+      "unitIds": [
+        "university-of-melbourne--operations"
+      ]
+    }
+  ],
+  "checkedAt": "2026-10-20",
+  "units": [
+    {
+      "school": "Department of Management and Marketing, Faculty of Business and Economics",
+      "fields": [
+        "operations-management",
+        "supply-chain"
+      ],
+      "type": "area",
+      "checkedAt": "2026-10-20",
+      "sourceUrl": "https://fbe.unimelb.edu.au/managementmarketing/research",
+      "id": "university-of-melbourne--operations-supply-chain-management",
+      "name": "Operations and Supply Chain Management",
+      "evidence": "Official department research page names Operations and Supply Chain Management among its research disciplines, alongside a blood-inventory management research example."
+    },
+    {
+      "school": "Melbourne Business School",
+      "fields": [
+        "operations-management",
+        "operations-research",
+        "supply-chain",
+        "logistics"
+      ],
+      "type": "area",
+      "checkedAt": "2026-10-20",
+      "sourceUrl": "https://mbs.edu/faculty-and-research/faculty?facultyType=Operations",
+      "id": "university-of-melbourne--operations",
+      "name": "Operations",
+      "evidence": "Official filtered faculty directory identifies Operations as a specialization and lists professors researching supply chains, transport optimization, operations research, inventory and revenue management. Footer identifies the school with The University of Melbourne."
+    },
+    {
+      "school": "School of Mathematics and Statistics",
+      "fields": [
+        "operations-research",
+        "logistics"
+      ],
+      "type": "area",
+      "checkedAt": "2026-10-20",
+      "sourceUrl": "https://ms.unimelb.edu.au/research/operations-research",
+      "id": "university-of-melbourne--operations-research",
+      "name": "Operations Research",
+      "evidence": "Official school research area page describes operations research, mathematical programming, dynamic programming, network optimization and stochastic modelling, with dedicated People and Seminars pages."
+    },
+    {
+      "sourceUrl": "https://optima.org.au/",
+      "checkedAt": "2026-10-20",
+      "fields": [
+        "operations-research",
+        "supply-chain",
+        "logistics"
+      ],
+      "type": "center",
+      "school": null,
+      "evidence": "Centre homepage expands the full name in its footer, identifies a joint University of Melbourne and Monash University base, and explicitly describes supply chain planning, manufacturing, inventory, rostering, healthcare and transport optimization.",
+      "name": "ARC Industrial Transformation Training Centre in Optimisation Technologies, Integrated Methodologies and Applications (OPTIMA)",
+      "id": "university-of-melbourne--optima"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://fbe.unimelb.edu.au/managementmarketing/research",
+      "checkedAt": "2026-10-20",
+      "note": "Named operations/supply-chain research discipline and department parent.",
+      "outcome": "read"
+    },
+    {
+      "url": "https://fbe.unimelb.edu.au/managementmarketing",
+      "checkedAt": "2026-10-20",
+      "note": "Full department and Faculty of Business and Economics names; explicit operations management remit.",
+      "outcome": "read"
+    },
+    {
+      "url": "https://mbs.edu/faculty-and-research/faculty?facultyType=Operations",
+      "checkedAt": "2026-10-20",
+      "note": "Filtered Operations faculty successfully read after initial navigation timeout.",
+      "outcome": "read"
+    },
+    {
+      "url": "https://ms.unimelb.edu.au/research/operations-research",
+      "checkedAt": "2026-10-20",
+      "note": "School of Mathematics and Statistics OR area; also links ARC Training Centre in Optimisation Technologies, Integrated Methodologies and Applications (OPTIMA).",
+      "outcome": "read"
+    },
+    {
+      "url": "https://eng.unimelb.edu.au/study/master-of-industrial-engineering",
+      "checkedAt": "2026-10-20",
+      "note": "Industrial Engineering master program with explicit systems, operations and optimization remit; page still describes 2021 launch and anticipated 2023/24 accreditation, so current department host not yet verified.",
+      "outcome": "read"
+    },
+    {
+      "url": "https://fbe.unimelb.edu.au/managementmarketing/staff/academic-staff",
+      "checkedAt": "2026-10-20",
+      "note": "Imported faculty URL serves unavailable-page content; replaced with current department research pages.",
+      "outcome": "blocked"
+    },
+    {
+      "checkedAt": "2026-10-20",
+      "note": "Current joint centre identity, full name and explicit operations remit.",
+      "outcome": "read",
+      "url": "https://optima.org.au/"
+    },
+    {
+      "checkedAt": "2026-10-20",
+      "note": "Engineering directory lists Mechanical Engineering and OPTIMA but no standalone industrial engineering department.",
+      "outcome": "read",
+      "url": "https://eng.unimelb.edu.au/about/departments"
+    },
+    {
+      "checkedAt": "2026-10-20",
+      "note": "Current mechanical engineering study page presents Mechanical Engineering and manufacturing specialization, not the earlier Industrial Engineering master.",
+      "outcome": "read",
+      "url": "https://mechanical.eng.unimelb.edu.au/study"
+    }
+  ],
+  "reviewer": "Codex in Chrome"
+}
