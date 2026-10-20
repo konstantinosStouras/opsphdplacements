@@ -299,7 +299,7 @@ function renderInstitutionProfile({ controls, content }, idx, actions) {
     rankedRows(b6, { items: m.positions.slice(0, 8).map(([t, n]) => ({ label: t, value: n })), total: m.verifiedCount, emptyText: 'No verified first jobs in this period.' });
     grid.append(p5, p6);
     entityPanelFor(grid, m.name, 'phd', actions);
-    content.append(grid, html('p', 'source-stamp', 'People come from the OM List directory, so this is not every graduate of the program. First jobs are only those verified from a CV, placement report or appointment record; each one is linked from the explorer. Shares of job types are shares of verified first jobs.'));
+    content.append(grid, html('p', 'source-stamp', 'The database includes profiles collected and reviewed from public websites, with directory cross-checks; it does not include every graduate of the program. First jobs are only those verified from a CV, placement report or appointment record; each one is linked from the explorer. Shares of job types are shares of verified first jobs.'));
   };
   draw();
 }
@@ -340,7 +340,7 @@ function renderEmployerProfile({ controls, content }, idx, actions) {
     if (!m.recent.length) b4.append(html('p', 'chart-empty', 'No verified first jobs in this period.'));
     grid.append(p3, p4);
     entityPanelFor(grid, m.name, 'employer', actions);
-    content.append(grid, html('p', 'source-stamp', 'Counts are verified first jobs after the PhD among people in the OM List directory. They are not the employer\'s total hiring, and they exclude people whose first job is still unresolved or unreviewed. Names link to the evidence used.'));
+    content.append(grid, html('p', 'source-stamp', 'Counts are verified first jobs after the PhD among people in this database. They are not the employer\'s total hiring, and they exclude people whose first job is still unresolved or unreviewed. Names link to the evidence used.'));
   };
   draw();
 }
