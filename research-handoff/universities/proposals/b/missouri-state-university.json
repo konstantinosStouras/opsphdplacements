@@ -1,0 +1,64 @@
+{
+  "id": "missouri-state-university",
+  "status": "reviewed",
+  "canonicalName": "Missouri State University",
+  "universitySourceUrl": "https://www.missouristate.edu/MKT/default.htm",
+  "checkedAt": "2026-10-20",
+  "reviewer": "Codex in Chrome",
+  "units": [
+    {
+      "id": "missouri-state-university--marketing",
+      "checkedAt": "2026-10-20",
+      "fields": [
+        "operations-management",
+        "supply-chain",
+        "logistics"
+      ],
+      "name": "Marketing Department",
+      "sourceUrl": "https://www.missouristate.edu/MKT/default.htm",
+      "type": "department",
+      "evidence": "Official department explicitly houses Supply Chain, Logistics and Operations Management program and supply-chain advisory board; program page confirms parent College of Business.",
+      "school": "College of Business"
+    }
+  ],
+  "decisions": [
+    {
+      "sourceDepartmentId": "missouri-state-university____supply-chain-management",
+      "disposition": "replaced",
+      "reason": "Imported subject is a program within the verified Marketing Department, not a separate department.",
+      "unitIds": [
+        "missouri-state-university--marketing"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.missouristate.edu/MKT/default.htm",
+      "checkedAt": "2026-10-20",
+      "outcome": "read",
+      "note": "Current official department name and supply-chain/operations remit."
+    },
+    {
+      "url": "https://www.missouristate.edu/MKT/Logistics/default.htm",
+      "checkedAt": "2026-10-20",
+      "outcome": "read",
+      "note": "Program hierarchy and College of Business parent."
+    },
+    {
+      "url": "https://www.missouristate.edu/EGR/default.htm",
+      "checkedAt": "2026-10-20",
+      "outcome": "read",
+      "note": "Cooperative engineering offers civil/electrical/mechanical degrees granted by Missouri S&T, not IE departments at Missouri State."
+    },
+    {
+      "url": "https://build.missouristate.edu/MET/default.htm",
+      "checkedAt": "2026-10-20",
+      "outcome": "read",
+      "note": "Mechanical Engineering Technology program under Construction, Design and Project Management school; admission paused; no explicit separate operations unit."
+    }
+  ],
+  "limitations": [
+    "Cooperative engineering partner not merged into Missouri State. Mechanical engineering technology degree not converted to an operations department."
+  ],
+  "duplicateOf": null
+}

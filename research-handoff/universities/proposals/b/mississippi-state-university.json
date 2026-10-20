@@ -1,0 +1,77 @@
+{
+  "id": "mississippi-state-university",
+  "status": "reviewed",
+  "canonicalName": "Mississippi State University",
+  "universitySourceUrl": "https://www.ise.msstate.edu/",
+  "checkedAt": "2026-10-20",
+  "reviewer": "Codex in Chrome",
+  "units": [
+    {
+      "sourceUrl": "https://www.ise.msstate.edu/",
+      "school": null,
+      "type": "department",
+      "id": "mississippi-state-university--industrial-systems-engineering",
+      "fields": [
+        "industrial-engineering",
+        "operations-research"
+      ],
+      "checkedAt": "2026-10-20",
+      "name": "Industrial & Systems Engineering Department",
+      "evidence": "Official welcome explicitly names department and university, industrial engineering degrees and manufacturing/service-system remit."
+    },
+    {
+      "sourceUrl": "https://www.business.msstate.edu/academics/academic-areas/department-marketing-quantitative-analysis-supply-chain-logistics",
+      "school": "College of Business",
+      "type": "department",
+      "id": "mississippi-state-university--marketing-quantitative-analysis-supply-chain",
+      "fields": [
+        "supply-chain",
+        "logistics",
+        "operations-management"
+      ],
+      "checkedAt": "2026-10-20",
+      "name": "Department of Marketing, Quantitative Analysis, and Supply Chain Logistics",
+      "evidence": "Official current department page supplies full name and combined remit in data-driven decision making and supply-chain systems."
+    }
+  ],
+  "decisions": [
+    {
+      "sourceDepartmentId": "mississippi-state-university__james-worth-bagley-college-of-engineering__industrial-and-systems-engineering",
+      "disposition": "replaced",
+      "reason": "Verified full official department name; current relevant business department also added from direct review.",
+      "unitIds": [
+        "mississippi-state-university--industrial-systems-engineering"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "checkedAt": "2026-10-20",
+      "url": "https://www.ise.msstate.edu/",
+      "outcome": "read",
+      "note": "Industrial and systems engineering department full name and scope."
+    },
+    {
+      "checkedAt": "2026-10-20",
+      "url": "https://www.business.msstate.edu/academics/academic-areas/department-marketing-quantitative-analysis-supply-chain-logistics",
+      "outcome": "read",
+      "note": "Business department full name and scope."
+    },
+    {
+      "checkedAt": "2026-10-20",
+      "url": "https://www.business.msstate.edu/academics",
+      "outcome": "read",
+      "note": "Business programs checked; followed supply-chain logistics program to its department."
+    },
+    {
+      "checkedAt": "2026-10-20",
+      "url": "http://www.ise.msstate.edu/people/faculty/",
+      "outcome": "blocked",
+      "note": "Imported HTTP faculty URL blocked by browser; official HTTPS department home accessible."
+    }
+  ],
+  "limitations": [
+    "Imported extended engineering college name not independently expanded; engineering unit parent left null."
+  ],
+  "duplicateOf": null
+}

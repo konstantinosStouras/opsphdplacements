@@ -1,0 +1,91 @@
+{
+  "id": "university-of-california-davis",
+  "status": "reviewed",
+  "canonicalName": "University of California, Davis",
+  "universitySourceUrl": "https://gsm.ucdavis.edu/faculty/rachel-chen",
+  "checkedAt": "2026-10-20",
+  "reviewer": "Codex in Chrome",
+  "units": [
+    {
+      "id": "university-of-california-davis--operations-management",
+      "name": "Operations Management",
+      "school": "Graduate School of Management",
+      "type": "area",
+      "fields": [
+        "operations-management",
+        "operations-research"
+      ],
+      "sourceUrl": "https://gsm.ucdavis.edu/faculty-and-research/faculty-directory",
+      "checkedAt": "2026-10-20",
+      "evidence": "Official faculty directory includes Operations Management as a group filter. Rachel Chen profile independently identifies pricing, distribution channels, healthcare and service scheduling research and Graduate School of Management university identity."
+    },
+    {
+      "checkedAt": "2026-10-20",
+      "fields": [
+        "operations-research",
+        "operations-management",
+        "logistics"
+      ],
+      "type": "area",
+      "school": "Graduate School of Management",
+      "id": "university-of-california-davis--business-analytics",
+      "sourceUrl": "https://gsm.ucdavis.edu/faculty-and-research/faculty-directory",
+      "evidence": "Selected Business Analytics by label and verified selected filter in official directory; listed David Woodruff. His official profile explicitly identifies business analytics, operations and management science, planning/scheduling under uncertainty, optimization and logistics applications.",
+      "name": "Business Analytics"
+    }
+  ],
+  "decisions": [
+    {
+      "sourceDepartmentId": "university-of-california-davis__graduate-school-of-management__business-analytics",
+      "disposition": "replaced",
+      "unitIds": [
+        "university-of-california-davis--business-analytics"
+      ],
+      "reason": "Separate official faculty area with verified operations-research remit; retained as an area, not falsely merged with Operations Management."
+    },
+    {
+      "sourceDepartmentId": "university-of-california-davis__graduate-school-of-management__operations-management",
+      "disposition": "replaced",
+      "unitIds": [
+        "university-of-california-davis--operations-management"
+      ],
+      "reason": "Operations Management is a faculty/academic area, not a standalone department."
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://gsm.ucdavis.edu/faculty-and-research/faculty-directory",
+      "checkedAt": "2026-10-20",
+      "outcome": "read",
+      "note": "Faculty directory and group filter options read; original query parameters did not reliably persist."
+    },
+    {
+      "url": "https://gsm.ucdavis.edu/faculty/rachel-chen",
+      "checkedAt": "2026-10-20",
+      "outcome": "read",
+      "note": "University affiliation and operations research/teaching discipline corroboration."
+    },
+    {
+      "url": "https://gsm.ucdavis.edu/center-analytics-and-technology-society",
+      "checkedAt": "2026-10-20",
+      "outcome": "read",
+      "note": "Center page describes broad technology transformations; not added without explicit operations-unit remit."
+    },
+    {
+      "url": "https://engineering.ucdavis.edu/about/departments",
+      "checkedAt": "2026-10-20",
+      "outcome": "read",
+      "note": "Eight department directory checked; no industrial engineering department listed."
+    },
+    {
+      "url": "https://gsm.ucdavis.edu/faculty/david-woodruff",
+      "checkedAt": "2026-10-20",
+      "note": "Reached from verified Business Analytics filter; explicit operations research/optimization/logistics remit.",
+      "outcome": "read"
+    }
+  ],
+  "limitations": [
+    "Business Analytics and Operations Management are separate official faculty areas and may share people; not treated as duplicate departments."
+  ],
+  "duplicateOf": null
+}
