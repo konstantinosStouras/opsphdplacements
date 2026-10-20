@@ -135,3 +135,6 @@ Record: scope and assigned IDs/programs; files changed; sources opened; verified
 
 - [x] Full-history pilot and public check log (20 October 2026): Kristie Rogers (four Experience roles) and Debora/ Debbie Gilliard (three Experience roles), plus undated mentions, profile links, check dates and record update times. Preserve Rogers’s overlapping Present titles and Gilliard’s title-span/chair-date limitations.
 - [ ] Continue identity reconciliation; add further histories only after actual full-section reading. Pilot publication does not complete the global identity gate or graduate census.
+
+- [x] Scheduled identity-audit evidence batch (20 October): confirm names and reported doctorate years for 15 ASU management alumni against the opened current official table; saved unmerged under `research-handoff/linkedin/identity-reviews/2026-10-20-asu-01.json`.
+- [ ] Reopen their historical candidate/undated sightings before accepting identity links; no IDs or unknown years have been merged or filled. These checks add zero completed LinkedIn histories; the global identity gate remains incomplete.
