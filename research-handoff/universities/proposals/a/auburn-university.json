@@ -1,0 +1,103 @@
+{
+  "id": "auburn-university",
+  "status": "reviewed",
+  "canonicalName": "Auburn University",
+  "universitySourceUrl": "https://harbert.auburn.edu/about/academic-departments/supply-chain-management.html",
+  "checkedAt": "2026-10-20",
+  "reviewer": "Codex in Chrome",
+  "units": [
+    {
+      "id": "auburn-university--supply-chain-management",
+      "name": "Department of Supply Chain Management",
+      "school": "Harbert College of Business",
+      "type": "department",
+      "fields": [
+        "supply-chain",
+        "logistics",
+        "operations-management"
+      ],
+      "sourceUrl": "https://harbert.auburn.edu/about/academic-departments/supply-chain-management.html",
+      "checkedAt": "2026-10-20",
+      "evidence": "Official department page describes logistics/operations training, procurement, production, inventory and supply chain planning. Footer establishes Harbert College and Auburn University."
+    },
+    {
+      "id": "auburn-university--industrial-systems-engineering",
+      "name": "Department of Industrial & Systems Engineering",
+      "school": null,
+      "type": "department",
+      "fields": [
+        "industrial-engineering",
+        "operations-management"
+      ],
+      "sourceUrl": "https://eng.auburn.edu/insy/",
+      "checkedAt": "2026-10-20",
+      "evidence": "Official department heading and introduction describe manufacturing/service process design and improvement, distribution, efficiency and assembly-line optimization research."
+    }
+  ],
+  "decisions": [
+    {
+      "sourceDepartmentId": "auburn-university",
+      "disposition": "not-a-unit",
+      "unitIds": [],
+      "reason": "University-only placeholder."
+    },
+    {
+      "sourceDepartmentId": "auburn-university____ba",
+      "disposition": "unresolved",
+      "unitIds": [],
+      "reason": "Acronym alone cannot establish its exact expansion or a qualifying unit."
+    },
+    {
+      "sourceDepartmentId": "auburn-university____ba-is",
+      "disposition": "out-of-scope",
+      "unitIds": [],
+      "reason": "Pure analytics/information-systems source label is excluded; official department menu lists Business Analytics & Information Systems separately from Supply Chain Management."
+    },
+    {
+      "sourceDepartmentId": "auburn-university____is-ba",
+      "disposition": "out-of-scope",
+      "unitIds": [],
+      "reason": "Pure analytics/information-systems source label is excluded; official department menu lists Business Analytics & Information Systems separately from Supply Chain Management."
+    },
+    {
+      "sourceDepartmentId": "auburn-university__harbert-college-of-business__business-analytics-and-information-systems",
+      "disposition": "out-of-scope",
+      "unitIds": [],
+      "reason": "Pure analytics/information-systems source label is excluded; official department menu lists Business Analytics & Information Systems separately from Supply Chain Management."
+    },
+    {
+      "sourceDepartmentId": "auburn-university__harbert-college-of-business__supply-chain-management",
+      "disposition": "replaced",
+      "unitIds": [
+        "auburn-university--supply-chain-management"
+      ],
+      "reason": "Official page confirms full department name."
+    },
+    {
+      "sourceDepartmentId": "auburn-university__samuel-ginn-college-of-engineering__industrial-and-systems-engineering",
+      "disposition": "replaced",
+      "unitIds": [
+        "auburn-university--industrial-systems-engineering"
+      ],
+      "reason": "Official page confirms full department name."
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://harbert.auburn.edu/about/academic-departments/supply-chain-management.html",
+      "checkedAt": "2026-10-20",
+      "outcome": "read",
+      "note": "Department name and operations scope; expanded About menu separates analytics/information systems department."
+    },
+    {
+      "url": "https://eng.auburn.edu/insy/",
+      "checkedAt": "2026-10-20",
+      "outcome": "read",
+      "note": "Full engineering department name, research remit and complete engineering department menu."
+    }
+  ],
+  "limitations": [
+    "Imported BA acronym remains unresolved rather than being expanded from assumptions."
+  ],
+  "duplicateOf": null
+}

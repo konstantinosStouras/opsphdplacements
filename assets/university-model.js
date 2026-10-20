@@ -17,6 +17,7 @@ export function universityRows(imported, observations = []) {
   const groups = new Map();
   for (const source of imported) {
     const target = targetFor(source.id);
+    if (reviews.get(source.id)?.directoryExclusion || reviews.get(target)?.directoryExclusion) continue;
     if (!groups.has(target)) groups.set(target, []);
     groups.get(target).push(source);
   }

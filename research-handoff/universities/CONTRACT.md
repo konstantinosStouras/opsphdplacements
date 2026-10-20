@@ -47,3 +47,5 @@ Do not copy contact details, large source extracts or full documents. Do not set
 Verified research centres and institutes with an explicit in-scope remit may be included under their actual type, full official name and institutional parent. They must not be relabeled as departments.
 
 An explicit assignments.overrides entry can transfer an individual record to the integrator after coordination. The frozen alphabetical population stays intact; progress follows that owner's proposal path. Houston was transferred this way on 20 October.
+
+Reviewed non-university entries may carry `directoryExclusion: { reason, sourceUrl, checkedAt }`. The source must have been opened in Chrome and establish the non-university identity; reviewed status, zero university units and no duplicate target are required. Exclude only university presentation, preserving the imported record, audit and placement-employer history. Missing operations evidence at a real university is not grounds for this exclusion.

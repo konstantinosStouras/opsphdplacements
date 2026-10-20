@@ -187,3 +187,6 @@ The Anuj Mehrotra OM List row also links to the same opened official Scheller pr
 - [ ] Continue the remaining 560 university records and resolve 17 partial reviews; old KIMEP learning-platform structure needs current organization evidence. See university progress and proposals for newer unmerged work.
 
 - [x] Reschedule the existing career-profile tracker from 20 October to four upcoming daily runs at 11:17, 14:17, 17:17 and 20:17 London time (up to25 each;100 unique-profile daily target). Daily checkpoints separate full source captures, partial, blocked and unmatched; initial 20 October checkpoint includes seven earlier profiles, leaving93.
+
+- [x] Further university integration: 109 source records attempted, 94 reviewed and 15 partial, with 536 pending. Resolved Louisiana Tech, Lincoln Memorial and Lenoir-Rhyne follow-ups; retained concrete UBC access limitations. Microsoft confirmed as a company and excluded only from university presentation with dated evidence.
+- [ ] Continue all remaining university source records and revisit partial cases; missing operations evidence at a real university does not justify excluding that institution.

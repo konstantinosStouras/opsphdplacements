@@ -25,6 +25,11 @@ export function validateUniversityReviews(records, originals) {
     else assert(r.universitySourceUrl === null, fail('unverified name cannot have verification URL'));
     assert(Array.isArray(r.units) && Array.isArray(r.decisions) && Array.isArray(r.limitations), fail('units, decisions and limitations required'));
     assert(r.limitations.every(text), fail('empty limitation'));
+    if (r.directoryExclusion !== undefined) {
+      const e = r.directoryExclusion;
+      assert(e && text(e.reason) && date(e.checkedAt) && supported(e.sourceUrl, e.checkedAt), fail('directory exclusion requires opened evidence and reason'));
+      assert(r.status === 'reviewed' && r.canonicalName && r.units.length === 0 && r.duplicateOf === null, fail('directory exclusion requires reviewed identity, no university units and no alias target'));
+    }
     const unitIds = new Set(), unitNames = new Set();
     for (const u of r.units) {
       assert(text(u.id) && !unitIds.has(u.id), fail('duplicate unit ID')); unitIds.add(u.id);

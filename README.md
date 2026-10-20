@@ -93,3 +93,5 @@ The website describes the owner-reported collection over time through public web
 The Sources of information section leads with Operations Academia as the starting directory reference. Visitor-facing raw dataset links and filenames are omitted throughout the website; the corrections email remains. The static application still fetches public data, and the public repository still exposes records. The visitor CSV download button and handler have also been removed. This presentation change is not access control.
 
 The website does not link to the project GitHub repository, technical guides or issue tracker. Corrections and removal requests use the published contact email. This reduces direct discovery; the repository and static data remain public.
+
+Confirmed non-university imports can be excluded from the university presentation with reviewed source evidence; their original records and employer histories remain intact.

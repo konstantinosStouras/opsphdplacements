@@ -35,3 +35,6 @@ The owner subsequently authorized per-person identity checks before each alphabe
 ## University cleanup — 20 October 2026
 
 The owner authorized three Chrome research agents for all 645 source university records. Read `research-handoff/universities/CONTRACT.md` and the frozen assignments before researching. Each agent owns only its shard proposal files; one integrator maintains the public review overlay and website. Preserve imported university data. Reconcile every imported label, check business and engineering branches, and publish only actually read official evidence with check dates and explicit incomplete states. Do not claim that a partial batch completes all universities. The full review is authorized; no additional scheduling or outreach is authorized by this instruction.
+
+Browser tab cleanup (owner instruction, 20 October 2026): reuse a source tab where practical and close agent-created source/search/preview tabs immediately after their work is complete. Keep only active work or a genuine pending user challenge/handoff; close it after resolution. Do not close unrelated user tabs. Include this instruction in delegated browser tasks.
+

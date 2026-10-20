@@ -55,3 +55,21 @@ test('partial evidence cannot become a completed review through display grouping
   assert.equal(row.units.length, 1);
   assert.equal(row.nameCheckedAt, '2026-10-20');
 });
+test('evidenced non-university exclusion hides only directory presentation and preserves imports', () => {
+  const r = review();
+  r.canonicalName = 'Example Company';
+  r.units = [];
+  r.decisions = [{ sourceDepartmentId: 'z-om', disposition: 'out-of-scope', unitIds: [], reason: 'Corporate research field, not a university department.' }];
+  r.directoryExclusion = { reason: 'Official source identifies a company, not a university.', sourceUrl: r.universitySourceUrl, checkedAt: r.checkedAt };
+  assert.doesNotThrow(() => validateUniversityReviews([r], original));
+  assert.deepEqual(universityRows(original, [r]).map(x => x.id), ['a', 'z-school']);
+  assert.equal(original.length, 3);
+  for (const mutate of [
+    x => x.directoryExclusion.sourceUrl = 'https://unread.example/',
+    x => { x.status = 'partial'; x.limitations = ['Uncertain identity']; },
+    x => x.units = review().units
+  ]) {
+    const invalid = structuredClone(r); mutate(invalid);
+    assert.throws(() => validateUniversityReviews([invalid], original));
+  }
+});

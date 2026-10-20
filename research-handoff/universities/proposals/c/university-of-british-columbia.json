@@ -1,0 +1,112 @@
+{
+  "id": "university-of-british-columbia",
+  "status": "partial",
+  "canonicalName": "The University of British Columbia",
+  "universitySourceUrl": "https://www.sauder.ubc.ca/thought-leadership/divisions/operations-and-logistics",
+  "checkedAt": "2026-10-20",
+  "reviewer": "Codex in Chrome",
+  "units": [
+    {
+      "id": "ubc-sauder-school-of-business--operations-logistics",
+      "name": "Operations & Logistics Division",
+      "school": "UBC Sauder School of Business",
+      "type": "division",
+      "fields": [
+        "operations-management",
+        "operations-research",
+        "supply-chain",
+        "logistics"
+      ],
+      "sourceUrl": "https://www.sauder.ubc.ca/thought-leadership/divisions/operations-and-logistics",
+      "checkedAt": "2026-10-20",
+      "evidence": "Official division overview explicitly names Operations & Logistics Division at UBC Sauder and describes operations management, distribution planning, supply-chain management and operations research; footer identifies The University of British Columbia."
+    },
+    {
+      "sourceUrl": "https://management.ok.ubc.ca/about/contact/amin-ahmadi-digehsara/",
+      "evidence": "Official Faculty of Management member profile identifies supply-chain network design, transportation and mobility planning, decision-making under uncertainty, operations research and analytics. Faculty research overview locates this unit at Okanagan.",
+      "type": "school",
+      "id": "university-of-british-columbia--okanagan-management",
+      "checkedAt": "2026-10-20",
+      "fields": [
+        "supply-chain",
+        "logistics",
+        "operations-research"
+      ],
+      "name": "Faculty of Management",
+      "school": null
+    }
+  ],
+  "decisions": [
+    {
+      "sourceDepartmentId": "university-of-british-columbia__faculty-of-management__operations-and-supply-chain-management",
+      "reason": "Faculty and operations researcher verified, but imported specialty is not established as a separate formal department; record verified Faculty of Management instead.",
+      "disposition": "not-a-unit",
+      "unitIds": []
+    },
+    {
+      "sourceDepartmentId": "university-of-british-columbia__sauder-school-of-business__operations-and-logistics",
+      "reason": "Official full division name confirmed.",
+      "disposition": "replaced",
+      "unitIds": [
+        "ubc-sauder-school-of-business--operations-logistics"
+      ]
+    },
+    {
+      "sourceDepartmentId": "university-of-british-columbia__sauder-school-of-business__transportation-operations",
+      "reason": "Transportation operations is covered within verified Operations & Logistics Division, not a separately established department.",
+      "disposition": "duplicate",
+      "unitIds": [
+        "ubc-sauder-school-of-business--operations-logistics"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.sauder.ubc.ca/thought-leadership/divisions/operations-and-logistics",
+      "checkedAt": "2026-10-20",
+      "outcome": "read",
+      "note": "Division identity, school and university hierarchy, explicit operations and logistics scope."
+    },
+    {
+      "outcome": "read",
+      "note": "Faculty of Management research overview and Okanagan identity.",
+      "url": "https://management.ok.ubc.ca/research/",
+      "checkedAt": "2026-10-20"
+    },
+    {
+      "outcome": "read",
+      "note": "Faculty membership and explicit supply-chain/OR/logistics research.",
+      "url": "https://management.ok.ubc.ca/about/contact/amin-ahmadi-digehsara/",
+      "checkedAt": "2026-10-20"
+    },
+    {
+      "outcome": "blocked",
+      "note": "UBC browser verification; not bypassed.",
+      "url": "https://operationsmanagement.ok.ubc.ca/",
+      "checkedAt": "2026-10-20"
+    },
+    {
+      "outcome": "blocked",
+      "note": "Industrial Engineering Research Group site reached browser verification; no page contents treated as read.",
+      "url": "https://ierg.forestry.ubc.ca/",
+      "checkedAt": "2026-10-20"
+    },
+    {
+      "outcome": "blocked",
+      "note": "Official alternate people page also browser verification.",
+      "url": "https://ierg.sites.olt.ubc.ca/people/",
+      "checkedAt": "2026-10-20"
+    },
+    {
+      "outcome": "read",
+      "note": "University research taxonomy loaded but academic-unit list content did not; not taken as unit evidence.",
+      "url": "https://www.grad.ubc.ca/research/industrial-systems-processes-engineering-rdf202",
+      "checkedAt": "2026-10-20"
+    }
+  ],
+  "limitations": [
+    "Industrial Engineering Research Group remains unverified because both official sites require browser verification; no access-control bypass performed.",
+    "Okanagan operations site also requires browser verification. Faculty of Management scope verified through accessible official research and faculty pages, but no separate operations department asserted."
+  ],
+  "duplicateOf": null
+}

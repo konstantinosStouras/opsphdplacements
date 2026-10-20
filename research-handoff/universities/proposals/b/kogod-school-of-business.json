@@ -1,6 +1,6 @@
 {
   "id": "kogod-school-of-business",
-  "status": "partial",
+  "status": "reviewed",
   "canonicalName": "American University",
   "universitySourceUrl": "https://www.american.edu/kogod/faculty/index.cfm",
   "checkedAt": "2026-10-20",
@@ -9,8 +9,8 @@
   "decisions": [
     {
       "sourceDepartmentId": "kogod-school-of-business",
-      "disposition": "unresolved",
-      "reason": "School identity verified, but official IT/Analytics department page names operations teaching without establishing a separately named operations group; excluded from verified units pending remit review.",
+      "disposition": "not-a-unit",
+      "reason": "Imported school-only alias consolidated under American University. IT/Analytics excluded under owner boundary; no separately named operations group established.",
       "unitIds": []
     }
   ],
@@ -26,10 +26,17 @@
       "checkedAt": "2026-10-20",
       "outcome": "read",
       "note": "Department name and explicit operations management teaching scope."
+    },
+    {
+      "checkedAt": "2026-10-20",
+      "note": "Individually read joint-degree page: IE and OR engineering majors are Columbia University programs, not AU departments.",
+      "url": "https://www.american.edu/cas/engineering/index.cfm",
+      "outcome": "read"
     }
   ],
   "limitations": [
-    "Official IT/Analytics page lists operations teaching but not a separately named operations unit. Parent integrator requests stronger research-remit evidence before eligibility. Broader American University review is owned by shard A."
+    "Official IT/Analytics page lists operations teaching but not a separately named operations unit; excluded under owner naming boundary.",
+    "Engineering joint program places engineering degree and IE/OR majors at Columbia."
   ],
   "duplicateOf": "american-university-kogod-school-of-business"
 }

@@ -1,0 +1,87 @@
+{
+  "id": "mcgill-university",
+  "status": "reviewed",
+  "canonicalName": "McGill University",
+  "universitySourceUrl": "https://www.mcgill.ca/desautels/research/specializations/operations-management/research",
+  "checkedAt": "2026-10-20",
+  "reviewer": "Codex in Chrome",
+  "units": [
+    {
+      "sourceUrl": "https://www.mcgill.ca/desautels/research/specializations/operations-management/research",
+      "id": "mcgill-university--operations-management",
+      "fields": [
+        "operations-management",
+        "supply-chain",
+        "logistics"
+      ],
+      "type": "area",
+      "checkedAt": "2026-10-20",
+      "evidence": "Official areas-of-specialization hierarchy separates Operations Management from IS and describes operations, supply chains and logistics research.",
+      "name": "Operations Management",
+      "school": "Desautels Faculty of Management"
+    },
+    {
+      "sourceUrl": "https://www.mcgill.ca/desautels/research/centres/msrc",
+      "id": "mcgill-university--management-science",
+      "fields": [
+        "operations-research",
+        "operations-management",
+        "supply-chain"
+      ],
+      "type": "center",
+      "checkedAt": "2026-10-20",
+      "evidence": "Official page expands MSRC and identifies parent faculty; research remit includes inventory, supply chains, pricing and behavioral operations.",
+      "name": "Management Science Research Centre (MSRC)",
+      "school": "Desautels Faculty of Management"
+    }
+  ],
+  "decisions": [
+    {
+      "sourceDepartmentId": "mcgill-university__desautels-faculty-of-management",
+      "disposition": "not-a-unit",
+      "reason": "Parent faculty retained as hierarchy; no duplicate faculty-only department row.",
+      "unitIds": [
+        "mcgill-university--operations-management",
+        "mcgill-university--management-science"
+      ]
+    },
+    {
+      "sourceDepartmentId": "mcgill-university__desautels-faculty-of-management__operations-management",
+      "disposition": "replaced",
+      "reason": "Verified official area rather than assuming a department.",
+      "unitIds": [
+        "mcgill-university--operations-management"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.mcgill.ca/desautels/research/specializations/operations-management/research",
+      "outcome": "read",
+      "note": "Identity, area and research remit.",
+      "checkedAt": "2026-10-20"
+    },
+    {
+      "url": "https://www.mcgill.ca/desautels/research/centres/msrc",
+      "outcome": "read",
+      "note": "Full center name, organization and research remit.",
+      "checkedAt": "2026-10-20"
+    },
+    {
+      "url": "https://www.mcgill.ca/engineering/departments-schools-institutes",
+      "outcome": "read",
+      "note": "Engineering departments, schools and institutes checked; no standalone industrial engineering unit listed.",
+      "checkedAt": "2026-10-20"
+    },
+    {
+      "url": "https://www.mcgill.ca/desautels/people/field_mprofile_areas/Operations%20Management/field_mprofile_group/Faculty",
+      "outcome": "blocked",
+      "note": "Imported faculty filter returned error token; current area and center pages were accessible.",
+      "checkedAt": "2026-10-20"
+    }
+  ],
+  "limitations": [
+    "Operations research by individual engineering researchers does not establish a separate operations department."
+  ],
+  "duplicateOf": null
+}
