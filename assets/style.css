@@ -63,3 +63,17 @@ header.stacked{flex-direction:column;gap:6px;padding-top:14px;padding-bottom:12p
 #explorer table{min-width:1450px}#explorer .col-filters input+input{margin-top:.5rem}#explorer td:nth-child(4){min-width:210px}#explorer td:nth-child(5){min-width:240px;max-width:360px}#explorer td:nth-child(6){min-width:210px}#explorer td:nth-child(7){min-width:155px}
 
 #explorer td:first-child{min-width:140px}#explorer td:nth-child(2){min-width:85px}#explorer td:nth-child(3){min-width:160px}#explorer td:last-child{min-width:230px}
+
+/* Apply the same justified prose treatment to static and dynamically rendered sections. */
+main p, main li, main td, .tile span, .tile small,
+.map-note, .statline, .source-stamp, .roster-line {
+  text-align:justify;
+  text-align-last:start;
+  text-justify:inter-word;
+  hyphens:auto;
+  overflow-wrap:break-word;
+}
+.tile{min-width:0}
+.tiles{column-gap:24px;row-gap:20px}
+/* Short title lines and interface controls retain their deliberate alignment. */
+.hero>.subtitle,.hero>.byline,.hero>.source-links{ text-align:center }

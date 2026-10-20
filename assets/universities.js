@@ -76,7 +76,7 @@ export async function renderUniversities(section, { openInstitution } = {}) {
       if (!words.length) return true;
       const hay = [r.name, countryOf(r), ...r.departments.flatMap(d => [d.school, d.department, d.type])].join(' ').toLocaleLowerCase();
       return words.every(w => hay.includes(w));
-    });
+    }).sort((a, b) => a.name.localeCompare(b.name, 'en', { sensitivity: 'base' }) || a.id.localeCompare(b.id));
     shown = 0; body.replaceChildren(); draw();
   };
   const draw = () => {
