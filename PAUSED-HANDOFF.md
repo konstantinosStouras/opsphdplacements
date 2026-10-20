@@ -6,6 +6,8 @@ The user explicitly resumed this desktop thread and asked it to review Claude's 
 
 Completed maintenance: repaired the graduate pipeline's dependency on ignored page/chunk metadata, added a non-writing proposal preview and regression checks, and fixed Windows filesystem paths in continuation helpers and preserved CRLF JSON formatting during record stamping. `research-handoff/graduates/README.md` documents fresh-clone commands and limitations. No new research findings or degree/employment claims were added. Unknown page keys, mismatched institutions and conflicting catalogue entries require review, rather than an inferred link. One existing Rutgers catalogue conflict remains recorded in TODO.md.
 
+Validation and publication: code commit `34b2b3e` passed 15 automated tests, public-data and record-date checks, four schema tests, the SQLite export, site build and sharing checks. GitHub Pages run [39387949469](https://github.com/konstantinosStouras/opsphdplacements/actions/runs/39387949469) succeeded. The live homepage and both placements/graduate-list JSON endpoints returned HTTP 200; their counts remained 2,087 and 14,451. This final verification note is published separately with deployment skipped.
+
 Next research priorities remain the graduate year-convention reconciliation, historical program coverage, graduate identity/degree verification and full career histories. The 14,451 listings are partial source observations, not 14,451 verified graduates. No agents or scheduled research jobs were started by this maintenance pass.
 
 
