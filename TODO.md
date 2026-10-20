@@ -170,3 +170,6 @@ The Anuj Mehrotra OM List row also links to the same opened official Scheller pr
 
 - [x] Revise public narrative to describe website collection over time, OM List cross-checks and individual LinkedIn reviews; retain evidence links and technical provenance.
 - [ ] Continue per-person OM List alignment checks, recording identity, fields compared, discrepancies and check dates. This copy update performs no new profile checks and does not establish universal alignment.
+
+
+- [x] 20 October 2026: lead source references with Operations Academia, remove the Audit and corrections panel and all visitor-facing raw dataset links/filenames, and retain the corrections email. Static data, the public repository and CSV exports remain accessible; actual access restriction would require a separate hosting/data-delivery change.
