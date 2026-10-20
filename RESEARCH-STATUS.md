@@ -18,8 +18,8 @@ Generated from committed-format public datasets by `node scripts/update-research
 | of which listed under an operations area | 2161 |
 | Institutions with such a page read | 117 |
 | Listed names already in the people database | 406 |
-| LinkedIn profiles with published history observations | 4 |
-| of which all accessible Experience entries read | 4 |
+| LinkedIn profiles with published history observations | 5 |
+| of which all accessible Experience entries read | 5 |
 
 The program register is partial. It includes historical/predecessor records; its total is not the number of active programs worldwide. The graduate lists are what the programs' own pages list (live and archived copies), with the year's meaning as each page gives it; they are partial rosters, not a census. No complete graduate census, comprehensive employment-history panel, advisor dataset or publication-at-graduation dataset has been collected yet. Their schema and research rules are prepared.
 

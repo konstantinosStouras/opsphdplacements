@@ -154,3 +154,11 @@ Record: scope and assigned IDs/programs; files changed; sources opened; verified
 - [x] Owner-authorized coordinated integration of Brooke Buckman and Han Jiang (20 October): 15 additional LinkedIn Experience entries in public JSON; unknown-year identities remain unlinked. Combined validation/deployment belongs to the employment-presentation chat. Earlier blocked notes are historical for this batch; the wider identity audit remains unresolved.
 
 - [x] Set up the alphabetical full-history queue (127 batches of up to 25) and coordinate with the existing daily workflow. Partial/blocked outcomes are preserved separately; the cohort identity audit is not marked complete.
+
+## Alphabetical batch 1 started — 20 October 2026
+
+The first three queue positions now have partial career reviews: A. Mehrotra (identity confirmed as Anuj; all 12 LinkedIn Experience roles captured), A. Michael Knemeyer (nine CV roles), and Aadhaar Chaturvedi (eight main CV jobs, six concurrent university administrative roles and five industry/public-sector projects). These are integrated source observations, not completed real-world careers. Anuj has a supported approximate academia interval from 1993 through the profile check; the 1992 degree/job order and undated IBM visit still block an unrestricted first-job conclusion. Aadhaar retains overlapping Present appointments and an unresolved degree-conferral boundary. No first-placement conclusions or population counts changed.
+
+Next unattempted: Aaron Anvuur (omlist-8190a06eee7eb70d), then Aaron Tenenbein. The rest of batch 1 is pending. Follow up the three partial cases separately without treating them as complete. Seven public history records now exist across the two history stores; five are LinkedIn observations and two are CV/official-page observations.
+
+The Anuj Mehrotra OM List row also links to the same opened official Scheller profile, named chair and doctorate. Both stable IDs now share one reviewed history; imported rows/counts remain intact. Four queue records (three distinct people) are partial, and the later Anuj entry must not be researched as a different person.

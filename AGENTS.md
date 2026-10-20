@@ -29,3 +29,5 @@ The owner authorized a full-history pilot and publication of LinkedIn links, che
 ## Career presentation update — 20 October 2026
 
 Read research-handoff/careers/README.md for multi-source histories and reviewed post-PhD sector intervals. Teaching track follows explicit teaching/adjunct/practice/instruction wording, without claiming research cessation. Preserve source-check dates during category-only migrations and keep namesake identities separate. Do not calculate continuous sector tenure from first and current jobs alone.
+
+The owner subsequently authorized per-person identity checks before each alphabetical history, coordinated across the two active project chats. The graduate duplicate audit remains unresolved separately. See the latest careers handoff; future unattended research saves proposals on the research branch, while reviewed publication is handled by one integrator.
