@@ -180,3 +180,7 @@ At the user's request, every record in every database carries the date and time 
 ## LinkedIn browser evidence — user decision, 20 October 2026
 
 The owner authorizes a Codex agent to read individual LinkedIn profiles in Chrome and accepts their identity-matched employment chronology as self-reported evidence, without mandatory corroboration. This supersedes the earlier human-only reading restriction above; historical human reviews retain their original provenance. Confirm identity from doctorate, institutions and chronology, never name alone. Record agent/browser, URL, check date, supported facts and unknowns. Education ranges remain study periods, not conferral dates; missing chronology does not establish a first job. No outreach, bulk scraping or access-control bypass is authorized. Resolve name/university issues before the employment pass.
+
+## Entire LinkedIn job histories — 20 October 2026
+
+The owner requires all employment entries mentioned on each accessed LinkedIn profile, including pre-degree work, promotions and concurrent roles. Store the observed self-reported history with per-role source/check date and original date precision, separately from first-job conclusions. Profile-history completion means all accessible displayed entries were read on the check date, not that the real-world career is complete. See `research-handoff/linkedin/history-contract.md`.

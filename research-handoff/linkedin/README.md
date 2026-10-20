@@ -17,3 +17,7 @@ Save reviewed continuation work on GitHub branch `codex/linkedin-review-workflow
 ## Supervised pilot and revised target — 20 October 2026
 
 Two identity checks are saved in `reviews/debora-gilliard.json` and `reviews/kristie-rogers.json`. Both profile pages opened without a challenge; neither is a completed employment review. The global identity gate remains incomplete. The target of 100 checks/day is a target, not guaranteed throughput. Runs use fixed distributed times, not randomized behavior. Human-verification challenges must be completed by the owner; the agent stops and leaves the page for handoff rather than claiming to be human or bypassing restrictions.
+
+## Entire profile job histories — owner instruction, 20 October 2026
+
+For every person accessed, capture all employment entries mentioned on LinkedIn, including prior jobs, grouped promotions, concurrent appointments and later transitions. Follow [history-contract.md](history-contract.md) and save separate history files. Expand the accessible Experience section and employer groups. Missing dates stay unknown; absent/inaccessible sections are not proof of no jobs. Both pilot profiles remain queued for full-history follow-up. The automation now requires this; quality takes precedence over the 100/day target.

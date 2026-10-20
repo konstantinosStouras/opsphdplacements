@@ -21,3 +21,5 @@ The user requires these Markdown guides to stay current as new information becom
 ## LinkedIn continuation authorized 20 October 2026
 
 The owner accepts identity-matched LinkedIn employment information read individually by Codex in Chrome as self-reported evidence. Follow the updated RESEARCH-DESIGN.md and `research-handoff/linkedin/README.md`. Identity/name/university cleanup precedes employment checks. A daily local thread automation is configured; availability depends on the app, computer and Chrome connection. Historical statements that no runner exists describe the earlier state. No outreach or access-control bypass is authorized.
+
+For each accessed LinkedIn person, record their entire mentioned job history under `research-handoff/linkedin/history-contract.md`; first-job conclusions remain separate. Do not skip entries to meet a quota or describe a partial profile read as complete.

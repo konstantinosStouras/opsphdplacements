@@ -104,3 +104,7 @@ Only edit files affected by new information. Future agents should follow this ma
 The local thread automation `review-placement-identities-then-linkedin-careers` is active daily at 09:00 Europe/London. It first resolves the tracked name/university audit; employment checks are gated until cleanup is explicitly complete. Then review up to ten unchecked people per run in Chrome. See `research-handoff/linkedin/README.md`; use separate per-person files, source/check dates and explicit blocked states. Preserve unrelated edits; save reviewed proposals on `codex/linkedin-review-workflow` on GitHub, without deploying main. This replaces earlier no-schedule statements for this workflow only.
 
 The user increased the target to 100 unique checks/day on 20 October 2026: four runs of up to 25 at 09:17, 12:17, 16:17 and 20:17 Europe/London, replacing the earlier single daily run. The identity gate still applies. Stop and hand human-verification challenges to the owner; do not impersonate a human or evade restrictions.
+
+## Full-history capture for every LinkedIn profile
+
+Follow `research-handoff/linkedin/history-contract.md`: read all accessible Experience entries and expand employer role groups, record each role separately with dates as written, explicit unknowns and per-role provenance. Save under `research-handoff/linkedin/histories/`. Record About-only employment mentions separately. Both pilot profiles need full-history follow-up. Do not truncate histories to meet the daily target; no public whole-history importer exists yet.

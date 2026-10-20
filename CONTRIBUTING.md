@@ -46,3 +46,5 @@ Keep the Markdown guides current with your contribution, as required by the user
 ## Agent browser reviews (20 October 2026)
 
 The owner now authorizes individual LinkedIn reviews by Codex in Chrome, superseding the human-only restriction above. Accept identity-matched self-reported chronology under RESEARCH-DESIGN.md. Save separate stable-ID proposals and progress under `research-handoff/linkedin/`; retain historical human-review attribution. See that directory’s README for the identity cleanup gate, queue and schedule.
+
+LinkedIn reviewers must capture every accessible employment entry for each person, under `research-handoff/linkedin/history-contract.md`, preserving original labels/date precision, overlapping roles, source URLs and check dates. Identity-only visits and unavailable Experience sections are not completed employment histories.

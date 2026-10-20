@@ -66,3 +66,5 @@ Serve the repository with any static HTTP server, for example `python -m http.se
 The owner authorized individual Codex reviews in Chrome on 20 October 2026, accepting identity-matched profile chronology as self-reported evidence. The [queue and identity audit](research-handoff/linkedin/README.md) document the prerequisite cleanup and daily 09:00 Europe/London local automation. No employment review is complete merely because it is queued.
 
 The daily continuation target is now 100 checks across four runs at 09:17, 12:17, 16:17 and 20:17 Europe/London (20 October update). Two live profiles opened in a supervised pilot; employment histories remain uncompleted.
+
+LinkedIn continuation now captures the entire employment history mentioned on each accessed profile, with separate roles, dates, provenance and explicit gaps; see [capture contract](research-handoff/linkedin/history-contract.md). Full histories are research proposals until reviewed and integrated.

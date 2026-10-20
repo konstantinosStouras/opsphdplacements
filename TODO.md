@@ -130,3 +130,5 @@ Record: scope and assigned IDs/programs; files changed; sources opened; verified
 - [ ] Complete the identity cleanup gate, then check each queued person individually on LinkedIn in Chrome. Daily 09:00 Europe/London continuation is configured (ten people per employment batch after cleanup); this supersedes earlier no-runner and human-only LinkedIn notes.
 
 - [x] Supervised Chrome pilot (20 October): two profiles opened with no challenge; identity proposals saved, zero complete employment reviews. Schedule increased to four daily runs of 25 (100/day target), subject to identity cleanup and access.
+
+- [ ] Capture every mentioned employment entry for each LinkedIn person, following `research-handoff/linkedin/history-contract.md`; revisit both pilot profiles for full Experience histories. Preserve partial/unavailable status; review public history integration separately.
