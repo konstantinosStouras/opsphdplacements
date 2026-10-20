@@ -185,3 +185,5 @@ The Anuj Mehrotra OM List row also links to the same opened official Scheller pr
 
 - [x] University cleanup continuation, 20 October: integrated 85 Chrome observations (68 reviewed, 17 partial); full official names, explicit MIT aliases and dated KIMEP access limitations preserved. The 68-record release at ef3a32c deployed successfully.
 - [ ] Continue the remaining 560 university records and resolve 17 partial reviews; old KIMEP learning-platform structure needs current organization evidence. See university progress and proposals for newer unmerged work.
+
+- [x] 20 October 2026: repeat visitor-facing download/link audit across live page, all coverage/trend/profile tabs and both explorer modes. Remove the internal filename from Hendershott's displayed evidence note while preserving the research record. Raw loading URLs remain part of the static application, not visitor controls.
