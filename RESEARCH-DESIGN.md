@@ -200,3 +200,13 @@ Post-PhD summaries use separately reviewed primary-sector intervals (postPhdPeri
 ## Public wording and alignment checks — 20 October 2026
 
 Describe ongoing public website collection and review, OM List profile cross-checking, and identity-matched LinkedIn observations. Do not claim that every profile or field has been verified against both references. The owner supplied the collection-over-time description; historical import records remain technical provenance. Record new alignment checks per person and fact with source URLs, check dates and unresolved discrepancies before claiming completion.
+
+## University and department cleanup — 20 October 2026
+
+The owner requests individual Chrome verification of all 645 imported university records. Preserve `data/universities.json`; `data/university-reviews.json` overlays official names and units with per-fact sources/check dates and ledger-managed integration dates. The original recruiting labels frequently name subjects, degrees, parent schools, duplicates or unrelated fields rather than departments. Every completed review reconciles each original label and checks relevant business and engineering structures. A completed review describes that documented scope, not an exhaustive current/historical census.
+
+Include Operations Management, Operations Research, Industrial Engineering, supply chain and logistics. Exclude standalone Information Systems and unrelated analytics/AI labels; retain combined Operations/Information Systems units. A broad management or decision-sciences unit requires explicit operations remit. A single course in an otherwise unrelated unit does not by itself establish an operations department. Preserve actual institutional types (department, school, division, group, area, center, institute); do not promote a program or subject to a department, or invent a lower-level department where only the host school is established.
+
+Canonical university aliases need explicit official identity/hierarchy evidence and a stable duplicate target. Never merge campuses by abbreviated names alone. Original source IDs survive consolidated display. Failed access never refreshes a verified check date; partial official observations remain partial with limitations. No verified unit found is not proof that none exists. Official pages retaining older organizational names need a currentness limitation or further review.
+
+The owner further requires full official department names. A well-established abbreviation may appear at the end in parentheses only if the official department website mentions it. An acronym on an official page without an opened official expansion remains unresolved for canonical naming; do not fill the expansion from memory or the imported label.

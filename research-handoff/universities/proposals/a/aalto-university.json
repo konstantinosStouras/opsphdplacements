@@ -1,0 +1,79 @@
+{
+  "id": "aalto-university",
+  "status": "reviewed",
+  "canonicalName": "Aalto University",
+  "universitySourceUrl": "https://www.aalto.fi/en/department-of-information-and-service-management",
+  "checkedAt": "2026-10-20",
+  "reviewer": "Codex in Chrome",
+  "units": [
+    {
+      "id": "aalto-university--information-and-service-management",
+      "name": "Department of Information and Service Management",
+      "school": "School of Business",
+      "type": "department",
+      "fields": [
+        "operations-management",
+        "supply-chain",
+        "logistics"
+      ],
+      "sourceUrl": "https://www.aalto.fi/en/department-of-information-and-service-management",
+      "checkedAt": "2026-10-20",
+      "evidence": "Official page identifies School of Business and describes logistics as one of three research disciplines, explicitly focused on operations and supply chain management."
+    },
+    {
+      "id": "aalto-university--industrial-engineering-and-management",
+      "name": "Department of Industrial Engineering and Management",
+      "school": null,
+      "type": "department",
+      "fields": [
+        "industrial-engineering",
+        "operations-management"
+      ],
+      "sourceUrl": "https://www.aalto.fi/en/department-of-industrial-engineering-and-management",
+      "checkedAt": "2026-10-20",
+      "evidence": "Official department page explicitly describes industrial engineering and names operations and service management as a doctoral research focus."
+    }
+  ],
+  "decisions": [
+    {
+      "sourceDepartmentId": "aalto-university____production-om",
+      "disposition": "not-a-unit",
+      "unitIds": [],
+      "reason": "Generic subject abbreviation does not identify a unique department; official business and industrial-engineering operations departments are recorded separately."
+    },
+    {
+      "sourceDepartmentId": "aalto-university____supply-chain-management",
+      "disposition": "replaced",
+      "unitIds": [
+        "aalto-university--information-and-service-management"
+      ],
+      "reason": "Replaced source subject/older wording with current official department name that explicitly houses logistics and operations."
+    },
+    {
+      "sourceDepartmentId": "aalto-university__school-of-business__information-and-service-economy",
+      "disposition": "replaced",
+      "unitIds": [
+        "aalto-university--information-and-service-management"
+      ],
+      "reason": "Replaced source subject/older wording with current official department name that explicitly houses logistics and operations."
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.aalto.fi/en/department-of-information-and-service-management",
+      "checkedAt": "2026-10-20",
+      "outcome": "read",
+      "note": "Read official business department page in Chrome."
+    },
+    {
+      "url": "https://www.aalto.fi/en/department-of-industrial-engineering-and-management",
+      "checkedAt": "2026-10-20",
+      "outcome": "read",
+      "note": "Read official industrial engineering department page in Chrome."
+    }
+  ],
+  "limitations": [
+    "No historical equivalence or specific hiring unit inferred from generic Production/OM label. Engineering parent school omitted because not stated on the opened department page."
+  ],
+  "duplicateOf": null
+}

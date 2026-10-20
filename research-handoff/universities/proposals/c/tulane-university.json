@@ -1,0 +1,77 @@
+{
+  "id": "tulane-university",
+  "status": "reviewed",
+  "canonicalName": "Tulane University",
+  "universitySourceUrl": "https://freeman.tulane.edu/faculty-research/management-science",
+  "checkedAt": "2026-10-20",
+  "reviewer": "Codex in Chrome",
+  "units": [
+    {
+      "id": "tulane-university--management-science",
+      "name": "Management Science",
+      "school": "Freeman School of Business",
+      "type": "area",
+      "fields": [
+        "operations-management",
+        "supply-chain"
+      ],
+      "sourceUrl": "https://freeman.tulane.edu/faculty-research/management-science",
+      "checkedAt": "2026-10-20",
+      "evidence": "Official Management Science faculty listing; linked Claire Senot profile calls her Area Coordinator, Management Science and explicitly describes operations research and operations/supply-chain teaching."
+    }
+  ],
+  "decisions": [
+    {
+      "sourceDepartmentId": "tulane-university",
+      "disposition": "not-a-unit",
+      "unitIds": [],
+      "reason": "University-only placeholder does not name a department."
+    },
+    {
+      "sourceDepartmentId": "tulane-university__a-b-freeman-school-of-business",
+      "disposition": "not-a-unit",
+      "unitIds": [
+        "tulane-university--management-science"
+      ],
+      "reason": "School-only label is represented as parent of the verified academic area."
+    },
+    {
+      "sourceDepartmentId": "tulane-university__a-b-freeman-school-of-business__information-systems",
+      "disposition": "out-of-scope",
+      "unitIds": [],
+      "reason": "Standalone Information Systems label has no operations component; not retained as an operations unit."
+    },
+    {
+      "sourceDepartmentId": "tulane-university__a-b-freeman-school-of-business__management-science",
+      "disposition": "replaced",
+      "unitIds": [
+        "tulane-university--management-science"
+      ],
+      "reason": "Official page confirms Management Science; area coordinator wording supports area rather than assuming department."
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://freeman.tulane.edu/faculty-research/management-science",
+      "checkedAt": "2026-10-20",
+      "outcome": "read",
+      "note": "University, school and Management Science faculty listing."
+    },
+    {
+      "url": "https://freeman.tulane.edu/faculty-research/management-science/claire-senot",
+      "checkedAt": "2026-10-20",
+      "outcome": "read",
+      "note": "Management Science area coordinator and operations/supply-chain scope."
+    },
+    {
+      "url": "https://sse.tulane.edu/departments-programs",
+      "checkedAt": "2026-10-20",
+      "outcome": "read",
+      "note": "Official Science and Engineering department/program directory examined; no Industrial Engineering or named operations department listed."
+    }
+  ],
+  "limitations": [
+    "Engineering directory check does not establish absence of operations research by individual faculty."
+  ],
+  "duplicateOf": null
+}

@@ -126,4 +126,10 @@ The coordinating LinkedIn chat confirmed the owner's authorization for this five
 
 Website source presentation: list Operations Academia first and retain the corrections email. Do not add visitor-facing raw dataset links or filenames, including generated summaries, errors and fallback text. Internal data loading remains required. Removing links does not restrict access to static data, public Git history or CSV exports.
 
+## University verification overlay — 20 October 2026
+
+Read `research-handoff/universities/CONTRACT.md` and frozen `assignments.json`. Three owner-authorized researchers save disjoint per-university proposals; one integrator reads them and reconciles conflicts. Imported `data/universities.json` remains unchanged. Preview named reviewed proposals with `node scripts/merge-university-reviews.mjs <proposal paths> --dry-run`; remove `--dry-run` to update `data/university-reviews.json`. The merger validates IDs, every completed label decision, named-unit scope, source/check-date references and duplicate cycles before writing. It does not perform source verification itself.
+
+Run `node scripts/update-research-status.mjs` after each integration to regenerate published review counts and record dates, then `npm run check`, both relational checks and `node scripts/build.mjs`. Check the university filter, A–Z order, pagination, evidence links, source dates, updated timestamps, partial/blocked labels and collapsed originals in Chrome. Check organisation profiles use the same reviewed units. Canonical aliases consolidate only if their target has a verified name; raw entity matching stays separate. Record merged IDs/revision in the universities handoff and publish only named reviewed files. Do not stage a researcher's still-changing proposal directory wholesale.
+
 When publishing new data, recompute the abstract counts from placement categories and the combined people inputs; percentages use every verified placement, including unknown categories. Retain faculty-selection and incomplete-coverage caveats. Describe regressions only after they have been run and reviewed.

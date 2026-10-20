@@ -21,6 +21,7 @@ const FILES = {
   'placements.json': 'id',
   'research-status.json': 'facultyId',
   'universities.json': 'id',
+  'university-reviews.json': 'id',
   'institutions.json': 'id',
   'entities.json': 'id',
   'employers.json': 'id',

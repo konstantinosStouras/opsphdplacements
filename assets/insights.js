@@ -4,6 +4,8 @@
 import { bubbleGrid, columns, hbars, lines, rankedRows, tiles, fmt, pct, html } from './charts.js';
 import { CATEGORIES, CAT, STATUSES, STATUS, buildIndex, loadCountries, loadJson, institutionMetrics, employerMetrics, inPeriod, periodLabel, fillPeriodSelect } from './analytics.js';
 import { fold } from './model.js';
+import { universityRows } from './university-model.js';
+import { renderUniversityUnits } from './university-view.js';
 
 let index = null;
 export async function getIndex(state) {
@@ -196,6 +198,12 @@ const link = (text, href) => { const a = html('a', undefined, text); a.href = hr
 // people with their PhD institutions and first employers) and the program register joined into one
 // record per organisation in data/entities.json, looked up here by any of its names.
 let entitiesPromise = null;
+let universityReviewPromise = null;
+function loadUniversityReviewRows() {
+  return universityReviewPromise ||= Promise.all([loadJson('data/universities.json'), loadJson('data/university-reviews.json')])
+    .then(([source, reviews]) => universityRows(source.records, reviews.records))
+    .catch(error => { universityReviewPromise = null; throw error; });
+}
 function loadEntities() {
   if (!entitiesPromise) entitiesPromise = loadJson('data/entities.json').then(d => { const byName = new Map(); for (const e of d.records) for (const a of e.aliases) if (!byName.has(fold(a))) byName.set(fold(a), e); return { byName, counts: d.metadata.counts }; }).catch(e => { entitiesPromise = null; throw e; });
   return entitiesPromise;
@@ -227,9 +235,14 @@ async function entityPanel(body, name, context, actions) {
   if (e.directory) {
     const how = e.directory.universities.map(u => `${u.name} (${u.match === 'new' ? 'directory only' : 'matched by ' + u.match.replace('-', ' ')})`).join('; ');
     body.append(html('p', 'entity-sub', `In the Operations Academia directory as ${how}:`));
-    const list = html('ul', 'dept-list');
-    for (const d of e.directory.departments) { const li = html('li'); li.append(html('span', undefined, [d.school, d.department].filter(Boolean).join(' · ') || 'Department not named')); if (d.type) li.append(html('small', undefined, d.type)); if (d.facultyUrl) { li.append(' '); li.append(link('faculty page ↗', d.facultyUrl)); } list.append(li); }
-    body.append(list);
+    try {
+      const ids = new Set(e.directory.universities.map(u => u.id));
+      const rows = (await loadUniversityReviewRows()).filter(r => r.originals.some(o => ids.has(o.id)));
+      for (const row of rows) {
+        const units = html('div', 'profile-units'); units.append(html('h4', undefined, row.name));
+        renderUniversityUnits(units, row); body.append(units);
+      }
+    } catch { body.append(html('p', 'entity-sub', 'Department reviews could not be loaded.')); }
   } else body.append(html('p', 'entity-sub', 'No listing in the universities directory matched any of its names.'));
   // The program register.
   if (e.programs.length) {

@@ -1,0 +1,102 @@
+{
+  "id": "koc-university",
+  "status": "reviewed",
+  "canonicalName": "Koç University",
+  "universitySourceUrl": "https://case.ku.edu.tr/en/people/faculty/",
+  "checkedAt": "2026-10-20",
+  "reviewer": "Codex in Chrome",
+  "units": [
+    {
+      "name": "Operations Management and Information Systems",
+      "fields": [
+        "operations-management",
+        "supply-chain"
+      ],
+      "evidence": "CASE faculty explicitly use Business Administration - Operations Management and Information Systems. GSSE describes the Operations and Information Systems group within CASE; GSB lists the same named field among departments.",
+      "sourceUrl": "https://case.ku.edu.tr/en/people/faculty/",
+      "type": "group",
+      "id": "koc-university--operations-management-information-systems",
+      "school": "College of Administrative Sciences and Economics",
+      "checkedAt": "2026-10-20"
+    },
+    {
+      "name": "Industrial Engineering",
+      "fields": [
+        "industrial-engineering",
+        "operations-research",
+        "logistics",
+        "supply-chain"
+      ],
+      "evidence": "GSSE explicitly names Industrial Engineering department of College of Engineering, alongside the CASE operations group; joint program research includes logistics, supply chain, production and OR methods.",
+      "sourceUrl": "https://gsse.ku.edu.tr/en/programs/industrial-engineering-and-operations-management/",
+      "type": "department",
+      "id": "koc-university--industrial-engineering",
+      "school": "College of Engineering",
+      "checkedAt": "2026-10-20"
+    }
+  ],
+  "decisions": [
+    {
+      "sourceDepartmentId": "koc-university____om-is",
+      "reason": "Consolidated the abbreviation and overlapping CASE/GSB faculty listings into the operations group explicitly situated in CASE by the joint graduate program page. College-only row is a parent, not an additional department.",
+      "disposition": "replaced",
+      "unitIds": [
+        "koc-university--operations-management-information-systems"
+      ]
+    },
+    {
+      "sourceDepartmentId": "koc-university__college-of-administrative-sciences-and-economics-case",
+      "reason": "Consolidated the abbreviation and overlapping CASE/GSB faculty listings into the operations group explicitly situated in CASE by the joint graduate program page. College-only row is a parent, not an additional department.",
+      "disposition": "not-a-unit",
+      "unitIds": [
+        "koc-university--operations-management-information-systems"
+      ]
+    },
+    {
+      "sourceDepartmentId": "koc-university__college-of-administrative-sciences-and-economics-case__operations-management-and-information-systems",
+      "reason": "Consolidated the abbreviation and overlapping CASE/GSB faculty listings into the operations group explicitly situated in CASE by the joint graduate program page. College-only row is a parent, not an additional department.",
+      "disposition": "duplicate",
+      "unitIds": [
+        "koc-university--operations-management-information-systems"
+      ]
+    },
+    {
+      "sourceDepartmentId": "koc-university__graduate-school-of-business__operations-management-and-information-systems",
+      "reason": "Consolidated the abbreviation and overlapping CASE/GSB faculty listings into the operations group explicitly situated in CASE by the joint graduate program page. College-only row is a parent, not an additional department.",
+      "disposition": "duplicate",
+      "unitIds": [
+        "koc-university--operations-management-information-systems"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "note": "University, college and OMIS faculty field.",
+      "outcome": "read",
+      "checkedAt": "2026-10-20",
+      "url": "https://case.ku.edu.tr/en/people/faculty/"
+    },
+    {
+      "note": "GSB lists Operations Management and Information Systems.",
+      "outcome": "read",
+      "checkedAt": "2026-10-20",
+      "url": "https://gsb.ku.edu.tr/about-gsb/full-time/?dp=16"
+    },
+    {
+      "note": "Engineering unit and industrial engineering scope.",
+      "outcome": "read",
+      "checkedAt": "2026-10-20",
+      "url": "https://eng.ku.edu.tr/en/industrial-engineering/"
+    },
+    {
+      "note": "Explicit engineering department/college and CASE operations group hierarchy.",
+      "outcome": "read",
+      "checkedAt": "2026-10-20",
+      "url": "https://gsse.ku.edu.tr/en/programs/industrial-engineering-and-operations-management/"
+    }
+  ],
+  "limitations": [
+    "GSB calls faculty categories departments while GSSE calls the CASE unit a group; displayed as group to avoid asserting a separate GSB administrative department."
+  ],
+  "duplicateOf": null
+}

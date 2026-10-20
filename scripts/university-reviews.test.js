@@ -1,0 +1,57 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import { universityRows } from '../assets/university-model.js';
+import { validateUniversityReviews } from './university-review-schema.mjs';
+
+const original = [
+  { id: 'z', name: 'Z University', departments: [{ id: 'z-om', department: 'OM' }] },
+  { id: 'a', name: 'A University', departments: [{ id: 'a-is', department: 'IS' }] },
+  { id: 'z-school', name: 'Z University Business School', departments: [{ id: 'zs-om', department: 'Operations' }] }
+];
+const review = () => ({
+  id: 'z', status: 'reviewed', canonicalName: 'Z University',
+  universitySourceUrl: 'https://example.edu/operations', checkedAt: '2026-10-20', reviewer: 'Codex in Chrome',
+  units: [{ id: 'z--operations', name: 'Operations', school: null, type: 'department', fields: ['operations-management'],
+    sourceUrl: 'https://example.edu/operations', checkedAt: '2026-10-20', evidence: 'Official department identifies operations management research.' }],
+  decisions: [{ sourceDepartmentId: 'z-om', disposition: 'replaced', unitIds: ['z--operations'], reason: 'Official full name.' }],
+  sources: [{ url: 'https://example.edu/operations', checkedAt: '2026-10-20', outcome: 'read', note: 'Department and university identified.' }],
+  limitations: [], duplicateOf: null
+});
+test('unreviewed names remain separate and have no verified units or fabricated dates', () => {
+  const rows = universityRows(original);
+  assert.deepEqual(rows.map(r => r.id), ['a', 'z', 'z-school']);
+  assert(rows.every(r => r.reviewStatus === 'pending' && r.units.length === 0 && r.nameCheckedAt === null));
+  assert.equal(rows[1].originals[0].departments[0].department, 'OM');
+});
+test('reviewed aliases merge only with a reviewed target; evidence and original IDs survive', () => {
+  const r = review();
+  const alias = { ...structuredClone(r), id: 'z-school', duplicateOf: 'z',
+    decisions: [{ sourceDepartmentId: 'zs-om', disposition: 'duplicate', unitIds: ['z--operations'], reason: 'School of same university.' }] };
+  assert.equal(universityRows(original, [alias]).length, 3);
+  const rows = universityRows(original, [r, alias]);
+  assert.equal(rows.length, 2);
+  assert.equal(rows[1].units.length, 1);
+  assert.deepEqual(rows[1].originals.map(o => o.id), ['z', 'z-school']);
+  assert.equal(rows[1].reviewStatus, 'reviewed');
+});
+test('validation rejects unvisited evidence, unsupported fields and omitted imported labels', () => {
+  assert.doesNotThrow(() => validateUniversityReviews([review()], original));
+  for (const mutate of [
+    r => r.sources[0].outcome = 'blocked',
+    r => r.units[0].fields = ['information-systems'],
+    r => r.units[0].name = 'LSOM',
+    r => r.decisions = [],
+    r => r.units[0].sourceUrl = 'javascript:alert(1)',
+    r => r.checkedAt = '2026-02-30'
+  ]) {
+    const r = review(); mutate(r);
+    assert.throws(() => validateUniversityReviews([r], original));
+  }
+});
+test('partial evidence cannot become a completed review through display grouping', () => {
+  const r = review(); r.status = 'partial'; r.limitations = ['Engineering school remains to check.'];
+  const row = universityRows(original, [r]).find(r => r.id === 'z');
+  assert.equal(row.reviewStatus, 'partial');
+  assert.equal(row.units.length, 1);
+  assert.equal(row.nameCheckedAt, '2026-10-20');
+});

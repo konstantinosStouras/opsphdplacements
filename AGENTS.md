@@ -31,3 +31,7 @@ The owner authorized a full-history pilot and publication of LinkedIn links, che
 Read research-handoff/careers/README.md for multi-source histories and reviewed post-PhD sector intervals. Teaching track follows explicit teaching/adjunct/practice/instruction wording, without claiming research cessation. Preserve source-check dates during category-only migrations and keep namesake identities separate. Do not calculate continuous sector tenure from first and current jobs alone.
 
 The owner subsequently authorized per-person identity checks before each alphabetical history, coordinated across the two active project chats. The graduate duplicate audit remains unresolved separately. See the latest careers handoff; future unattended research saves proposals on the research branch, while reviewed publication is handled by one integrator.
+
+## University cleanup — 20 October 2026
+
+The owner authorized three Chrome research agents for all 645 source university records. Read `research-handoff/universities/CONTRACT.md` and the frozen assignments before researching. Each agent owns only its shard proposal files; one integrator maintains the public review overlay and website. Preserve imported university data. Reconcile every imported label, check business and engineering branches, and publish only actually read official evidence with check dates and explicit incomplete states. Do not claim that a partial batch completes all universities. The full review is authorized; no additional scheduling or outreach is authorized by this instruction.

@@ -1,0 +1,83 @@
+{
+  "id": "air-force-institute-of-technology",
+  "status": "reviewed",
+  "canonicalName": "Air Force Institute of Technology",
+  "universitySourceUrl": "https://www.afit.edu/ENS/",
+  "checkedAt": "2026-10-20",
+  "reviewer": "Codex in Chrome",
+  "units": [
+    {
+      "id": "air-force-institute-of-technology--operational-sciences",
+      "name": "Department of Operational Sciences",
+      "school": "Graduate School of Engineering & Management",
+      "type": "department",
+      "fields": [
+        "operations-research",
+        "supply-chain",
+        "logistics"
+      ],
+      "sourceUrl": "https://www.afit.edu/ENS/",
+      "checkedAt": "2026-10-20",
+      "evidence": "Official department introduction explicitly describes operations research and logistics/supply chain management degrees and research. Graduate school page lists Operational Sciences among its departments."
+    },
+    {
+      "id": "air-force-institute-of-technology--systems-logistics",
+      "name": "School of Systems & Logistics",
+      "school": null,
+      "type": "school",
+      "fields": [
+        "supply-chain",
+        "logistics"
+      ],
+      "sourceUrl": "https://www.afit.edu/LS/",
+      "checkedAt": "2026-10-20",
+      "evidence": "Official school page offers supply-chain management and operational-logistics education and consulting; explicitly labelled continuing education rather than an additional graduate department."
+    }
+  ],
+  "decisions": [
+    {
+      "sourceDepartmentId": "air-force-institute-of-technology____scm-and-logistics",
+      "disposition": "not-a-unit",
+      "unitIds": [],
+      "reason": "Generic subject abbreviation cannot uniquely identify a department; verified graduate department and continuing-education school are recorded separately."
+    },
+    {
+      "sourceDepartmentId": "air-force-institute-of-technology__graduate-school-of-engineering-and-management__air-force-headquarters",
+      "disposition": "not-a-unit",
+      "unitIds": [],
+      "reason": "Air Force Headquarters is not an academic department in the graduate-school department list."
+    },
+    {
+      "sourceDepartmentId": "air-force-institute-of-technology__graduate-school-of-engineering-and-management__operational-sciences",
+      "disposition": "replaced",
+      "unitIds": [
+        "air-force-institute-of-technology--operational-sciences"
+      ],
+      "reason": "Full official Department of Operational Sciences name verified."
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.afit.edu/ENS/",
+      "checkedAt": "2026-10-20",
+      "outcome": "read",
+      "note": "Read official page in Chrome; checked engineering/management graduate departments and separate logistics continuing-education school."
+    },
+    {
+      "url": "https://www.afit.edu/LS/",
+      "checkedAt": "2026-10-20",
+      "outcome": "read",
+      "note": "Read official page in Chrome; checked engineering/management graduate departments and separate logistics continuing-education school."
+    },
+    {
+      "url": "https://www.afit.edu/EN/",
+      "checkedAt": "2026-10-20",
+      "outcome": "read",
+      "note": "Read official page in Chrome; checked engineering/management graduate departments and separate logistics continuing-education school."
+    }
+  ],
+  "limitations": [
+    "School of Systems & Logistics is a continuing-education school, not evidence of a doctorate programme. No specific unit inferred from generic SCM and Logistics import."
+  ],
+  "duplicateOf": null
+}

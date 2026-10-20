@@ -77,3 +77,12 @@ main p, main li, main td, .tile span, .tile small,
 .tiles{column-gap:24px;row-gap:20px}
 /* Short title lines and interface controls retain their deliberate alignment. */
 .hero>.subtitle,.hero>.byline,.hero>.source-links{ text-align:center }
+
+.verified-units>li{padding:10px 0}
+.dept-list small.unit-parent,.dept-list small.unit-check{display:block;margin-left:0}
+.unit-evidence,.original-units{font-size:12px;padding:8px 0;margin-top:6px}
+.unit-evidence p,.original-units p{font-size:12px;margin:6px 0}
+.unit-empty{font-size:13px;color:var(--muted)}
+.university-filters{grid-template-columns:2fr 1fr 1fr 1fr}
+@media(max-width:950px){.university-filters{grid-template-columns:1fr 1fr}}
+@media(max-width:600px){.university-filters{grid-template-columns:1fr}}

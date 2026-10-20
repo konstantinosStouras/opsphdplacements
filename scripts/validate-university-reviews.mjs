@@ -1,0 +1,11 @@
+import fs from 'node:fs';
+import assert from 'node:assert/strict';
+import { validateUniversityReviews } from './university-review-schema.mjs';
+const data = JSON.parse(fs.readFileSync('data/university-reviews.json', 'utf8'));
+const source = JSON.parse(fs.readFileSync('data/universities.json', 'utf8'));
+validateUniversityReviews(data.records, source.records);
+assert.equal(data.metadata.sourceRecords, source.records.length);
+assert.equal(data.metadata.attempted, data.records.length);
+assert.equal(data.metadata.pending, source.records.length - data.records.length);
+for (const status of ['reviewed', 'partial', 'blocked']) assert.equal(data.metadata[status], data.records.filter(r => r.status === status).length);
+console.log(`University reviews: ${data.metadata.reviewed} reviewed, ${data.metadata.partial} partial, ${data.metadata.blocked} blocked, ${data.metadata.pending} pending.`);

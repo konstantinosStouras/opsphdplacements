@@ -1,0 +1,66 @@
+{
+  "id": "kimep-university",
+  "status": "partial",
+  "canonicalName": "KIMEP University",
+  "universitySourceUrl": "https://hr.kimep.kz/ru/Home/Vacancy/791",
+  "checkedAt": "2026-10-20",
+  "reviewer": "Codex in Chrome",
+  "units": [
+    {
+      "name": "Department of Operations Management and Information Systems",
+      "type": "department",
+      "school": "Bang College of Business",
+      "sourceUrl": "https://el2019.kimep.kz/course/index.php?categoryid=12",
+      "evidence": "Official public course hierarchy names this department within Bang College of Business, listing operations management and logistics/supply-chain courses. Current faculty vacancy corroborates operations teaching in the college, but does not name a lower-level department.",
+      "id": "kimep-university--operations-management-information-systems",
+      "fields": [
+        "operations-management",
+        "supply-chain",
+        "logistics"
+      ],
+      "checkedAt": "2026-10-20"
+    }
+  ],
+  "decisions": [
+    {
+      "reason": "OM is a subject abbreviation; official learning platform supplies a named combined department.",
+      "disposition": "replaced",
+      "sourceDepartmentId": "kimep-university____om",
+      "unitIds": [
+        "kimep-university--operations-management-information-systems"
+      ]
+    },
+    {
+      "reason": "Official vacancy uses Operations Management/Business Analytics as faculty position field and identifies Bang College of Business as department; it does not establish a department of that name.",
+      "disposition": "not-a-unit",
+      "sourceDepartmentId": "kimep-university__bang-college-of-business__operations-management-and-business-analytics",
+      "unitIds": [
+        "kimep-university--operations-management-information-systems"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "checkedAt": "2026-10-20",
+      "url": "https://hr.kimep.kz/ru/Home/Vacancy/791",
+      "note": "University and college identity; operations faculty vacancy.",
+      "outcome": "read"
+    },
+    {
+      "checkedAt": "2026-10-20",
+      "url": "https://el2019.kimep.kz/course/index.php?categoryid=12",
+      "note": "Named departmental hierarchy and operations courses; platform footer dates 2019.",
+      "outcome": "read"
+    },
+    {
+      "checkedAt": "2026-10-20",
+      "url": "https://kimep.kz/",
+      "note": "Main site loaded in Kazakh; English college structure not yet examined.",
+      "outcome": "read"
+    }
+  ],
+  "limitations": [
+    "Current independent departmental organization chart and engineering branch not yet examined. Learning-platform department name may be retained from earlier structure; current vacancy only corroborates college operations scope."
+  ],
+  "duplicateOf": null
+}
