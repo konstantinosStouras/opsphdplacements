@@ -12,7 +12,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 
-const root = path.resolve(path.dirname(new URL(import.meta.url).pathname), '..');
+const root = path.resolve(import.meta.dirname, '..');
 const read = f => JSON.parse(fs.readFileSync(path.join(root, f), 'utf8'));
 const roster = read('data/faculty-rosters.json');
 // Reviewed aliases (data/institution-aliases.json): a PhD institution written as an abbreviation, short form, spelling

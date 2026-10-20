@@ -1,5 +1,14 @@
 # Paused handoff — 16 October 2026 (historical record; work resumed, see the resume log at the end)
 
+## Current continuation — 20 October 2026
+
+The user explicitly resumed this desktop thread and asked it to review Claude's changes and address outstanding issues. Synced through `2b95149`; all 3,161 people have a first-job review (2,087 verified, 1,070 unresolved, 4 without a completed doctorate), and graduate lists contain 14,451 person-years from 117 institutions. Earlier pause notices and in-progress notes below are historical.
+
+Completed maintenance: repaired the graduate pipeline's dependency on ignored page/chunk metadata, added a non-writing proposal preview and regression checks, and fixed Windows filesystem paths in continuation helpers and preserved CRLF JSON formatting during record stamping. `research-handoff/graduates/README.md` documents fresh-clone commands and limitations. No new research findings or degree/employment claims were added. Unknown page keys, mismatched institutions and conflicting catalogue entries require review, rather than an inferred link. One existing Rutgers catalogue conflict remains recorded in TODO.md.
+
+Next research priorities remain the graduate year-convention reconciliation, historical program coverage, graduate identity/degree verification and full career histories. The 14,451 listings are partial source observations, not 14,451 verified graduates. No agents or scheduled research jobs were started by this maintenance pass.
+
+
 The user explicitly paused all work in this thread because credits are low. All three research agents were interrupted. Do not resume research, reviews, merges or deployment until the user requests resumption. No automatic research schedule is configured.
 
 The user's standing requirement remains: update affected Markdown guides as new information becomes available during future authorized work. See AGENTS.md and WORKFLOW.md.

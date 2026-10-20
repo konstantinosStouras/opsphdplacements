@@ -1,6 +1,9 @@
 # Remaining work and handoff priorities
 
-**Resumed on 16 October 2026 at the user's explicit request after a low-credit pause.** The three saved agent result files were recovered from the user's Dropbox copy of the checkout, merged and published (see [PAUSED-HANDOFF.md](PAUSED-HANDOFF.md) for the historical pause record and the resume log). No scheduled research runner exists. The originating desktop thread remains paused; its current authorization covers publishing the portable archive and guides only. [research-handoff/README.md](research-handoff/README.md) now provides the saved work on GitHub. This archive upload does not resume research or trigger deployment.
+**Resumed on 20 October 2026 at the user's request after reviewing Claude's updates through `2b95149`.** The earlier pause and subsequent research are recorded in [PAUSED-HANDOFF.md](PAUSED-HANDOFF.md). Current research totals appear below and in RESEARCH-STATUS.md. No scheduled runner exists.
+
+- [x] Repair continuation from a fresh clone (20 October 2026): graduate collection and merging use the tracked page catalogue when the ignored working copy is absent; proposal page keys resolve without downloaded chunk files; `--refield` requires no catalogue; `--dry-run` checks proposals without writing. Referenced catalogue conflicts and unknown keys stop the merge. Windows paths in the status, roster and placement-queue helpers now use native filesystem paths; record stamping preserves CRLF formatting instead of minifying every JSON file. See `research-handoff/graduates/README.md`.
+- [ ] Reconcile the duplicate Rutgers alumni-page entries in the graduate catalogue before replaying its older proposals: the same URL is assigned both `Rutgers University` and `Rutgers University at Newark and New Brunswick`. Preserve the evidence and review the institutional scope; do not silently pick the last entry. Other pages can still be processed.
 
 See [RESEARCH-STATUS.md](RESEARCH-STATUS.md) for generated counts. This checklist describes unfinished deliverables, not a claim that work is already complete.
 

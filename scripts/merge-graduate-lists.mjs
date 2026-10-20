@@ -7,6 +7,13 @@
 // the proposals already recorded in research/graduates/extracted.json is not possible; the public file is the record)
 import fs from 'node:fs';
 import path from 'node:path';
+import { readGraduatePages, resolveGraduateChunk } from './graduate-inputs.mjs';
+import { isSourceUrl } from '../assets/model.js';
+const args = process.argv.slice(2);
+const dryRun = args.includes('--dry-run');
+for (const arg of args) if (arg.startsWith('--') && !['--refield', '--dry-run'].includes(arg)) throw Error(`Unknown option ${arg}`);
+const files = args.filter(a => !a.startsWith('--'));
+if (!files.length && !args.includes('--refield')) { console.log('Give proposal files to merge (or --refield to recompute fields). Add --dry-run to validate without writing.'); process.exit(0); }
 const root = path.resolve(import.meta.dirname, '..');
 const outPath = path.join(root, 'data/graduate-lists.json');
 const donePath = path.join(root, 'research/graduates/extracted.json');
@@ -38,7 +45,8 @@ for (const p of people) { const k = fold(p.name); if (!byName.has(k)) byName.set
 
 // Pages reviewed as not a graduate list (a single profile, a search page, a department outside operations) are
 // skipped; research/graduate-list-pages.json carries the scope and the reason.
-const pageScope = new Map(read('research/graduate-list-pages.json').map(p => [p.url, p.scope || 'program-list']));
+const catalogue = files.length ? readGraduatePages(root) : [];
+const pageScope = new Map(catalogue.map(p => [p.url, p.scope || 'program-list']));
 // Where a copy came from: the live page, an Internet Archive snapshot, or a Common Crawl capture (whose source URL
 // is the public index lookup naming the WARC record, since the capture itself is not served to a browser).
 const archiveOf = url => /web\.archive\.org\//.test(url) ? 'internet-archive' : /index\.commoncrawl\.org\//.test(url) ? 'commoncrawl' : 'live';
@@ -46,13 +54,11 @@ const existing = fs.existsSync(outPath) ? read('data/graduate-lists.json') : { v
 const records = new Map(existing.records.map(r => [r.id, r]));
 for (const r of records.values()) for (const s of r.sightings) s.archive ??= archiveOf(s.sourceUrl);
 const done = new Set(fs.existsSync(donePath) ? read('research/graduates/extracted.json') : []);
-const files = process.argv.slice(2).filter(a => a !== '--refield');
-if (!files.length && !process.argv.includes('--refield')) { console.log('Give proposal files to merge (or --refield to recompute the fields only).'); process.exit(0); }
 let added = 0, sightings = 0;
 for (const file of files) {
   const prop = JSON.parse(fs.readFileSync(path.resolve(root, file), 'utf8'));
   if (!Array.isArray(prop.records)) throw Error(`No records in ${file}`);
-  const chunk = read(`research/graduates/chunk-${prop.chunk}.json`);
+  const chunk = resolveGraduateChunk(root, prop, catalogue);
   const pageByKey = new Map(chunk.pages.map(p => [p.key, p]));
   // A page cited for one person but belonging to no program in the data (institution "(unknown)" in the chunk) is
   // held out: its names are not operations graduates until a reviewer assigns the page to a program in scope.
@@ -65,7 +71,7 @@ for (const file of files) {
     // A surname alone (a page that prints "examples of completed dissertations" by surname) cannot be matched or shown as a person.
     if (!/\s/.test(String(r.name).trim())) { heldOut++; continue; }
     for (const k of ['institution', 'pageKey', 'sourceUrl', 'sourceDate', 'name']) if (!r[k] || typeof r[k] !== 'string') throw Error(`Missing ${k} in ${file}: ${JSON.stringify(r).slice(0, 120)}`);
-    if (!/^https?:\/\//.test(r.sourceUrl)) throw Error(`Bad URL in ${file}: ${r.sourceUrl}`);
+    if (!isSourceUrl(r.sourceUrl)) throw Error(`Bad URL in ${file}: ${r.sourceUrl}`);
     if (!/^\d{4}-\d{2}-\d{2}$/.test(r.sourceDate)) throw Error(`Bad date in ${file}: ${r.sourceDate}`);
     if (r.listedYear != null && !(Number.isInteger(r.listedYear) && r.listedYear > 1900 && r.listedYear < 2100)) throw Error(`Bad year in ${file}: ${r.name} ${r.listedYear}`);
     if (!YEAR_MEANINGS.has(r.yearMeaning || 'unstated')) throw Error(`Bad yearMeaning in ${file}: ${r.yearMeaning}`);
@@ -117,7 +123,12 @@ const out = {
   },
   records: all,
 };
-fs.writeFileSync(outPath, JSON.stringify(out, null, 1) + '\n');
-fs.mkdirSync(path.dirname(donePath), { recursive: true });
-fs.writeFileSync(donePath, JSON.stringify([...done].sort(), null, 0));
+if (!dryRun) {
+  fs.writeFileSync(outPath, JSON.stringify(out, null, 1) + '\n');
+  if (files.length) {
+    fs.mkdirSync(path.dirname(donePath), { recursive: true });
+    fs.writeFileSync(donePath, JSON.stringify([...done].sort(), null, 0));
+  }
+}
+if (dryRun) console.log('Dry run: no public data or local extraction state written.');
 console.log(`graduate lists: ${all.length} person-years (${added} new, ${sightings} new sightings; ${out.metadata.byField.operations} operations, ${out.metadata.byField['other-field']} other fields, ${out.metadata.byField.unstated} unstated), ${out.metadata.linkedToPeople} linked to people, ${out.metadata.institutions} institutions`);

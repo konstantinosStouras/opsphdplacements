@@ -11,7 +11,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 
-const root = path.resolve(path.dirname(new URL(import.meta.url).pathname), '..');
+const root = path.resolve(import.meta.dirname, '..');
 const args = process.argv.slice(2);
 const opt = (name, fallback) => { const i = args.indexOf(name); return i >= 0 ? args[i + 1] : fallback; };
 const source = opt('--source', 'faculty-page'), size = Number(opt('--size', 40)), start = Number(opt('--start', 1));

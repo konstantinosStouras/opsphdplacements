@@ -115,8 +115,9 @@ function stamp(checkOnly) {
   for (const [file] of Object.entries(FILES)) {
     if (!data[file]) continue;
     const text = fs.readFileSync(`data/${file}`, 'utf8');
-    const indent = /^\{\n( +)"/.exec(text)?.[1]?.length ?? (text.startsWith('{\n') ? 2 : 0);
-    const out = JSON.stringify(data[file], null, indent || undefined) + (text.endsWith('\n') ? '\n' : '');
+    const newline = text.includes('\r\n') ? '\r\n' : '\n';
+    const indent = /^\{\r?\n( +)"/.exec(text)?.[1]?.length ?? (/^\{\r?\n/.test(text) ? 2 : 0);
+    const out = JSON.stringify(data[file], null, indent || undefined).replace(/\n/g, newline) + (text.endsWith('\n') ? newline : '');
     if (out !== text) fs.writeFileSync(`data/${file}`, out);
   }
   writeLedger(ledger);

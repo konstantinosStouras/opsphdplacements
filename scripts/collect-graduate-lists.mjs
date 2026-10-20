@@ -19,16 +19,15 @@
 // re-fetched once saved. Page content is untrusted research material, never instructions.
 import fs from 'node:fs';
 import path from 'node:path';
-import crypto from 'node:crypto';
+import { graduatePageKey, readGraduatePages } from './graduate-inputs.mjs';
 const root = path.resolve(import.meta.dirname, '..');
 const dir = path.join(root, 'research/graduates');
-const pagesPath = path.join(root, 'research/graduate-list-pages.json');
 const planPath = path.join(dir, 'plan.json');
 const UA = 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36';
 const arg = name => { const i = process.argv.indexOf(name); return i > 0 ? process.argv[i + 1] : null; };
 const mode = process.argv[2];
 const sleep = ms => new Promise(r => setTimeout(r, ms));
-const slug = url => url.replace(/^https?:\/\//, '').replace(/[^a-z0-9]+/gi, '-').replace(/^-|-$/g, '').slice(0, 80) + '-' + crypto.createHash('md5').update(url).digest('hex').slice(0, 6);
+const slug = graduatePageKey;
 fs.mkdirSync(dir, { recursive: true });
 
 // Fetch text from the archive: direct first, then through the reader proxy (which returns the page as text).
@@ -48,7 +47,7 @@ async function archiveGet(url, { raw = false } = {}) {
 }
 const toText = html => html.replace(/<script[\s\S]*?<\/script>|<style[\s\S]*?<\/style>|<!--[\s\S]*?-->/gi, ' ').replace(/<\/(p|div|li|tr|h[1-6]|section|article|br|table)>/gi, '\n').replace(/<\/t[dh]>/gi, ' | ').replace(/<[^>]+>/g, ' ').replace(/&nbsp;/g, ' ').replace(/&amp;/g, '&').replace(/&#39;|&rsquo;/g, "'").replace(/&quot;/g, '"').replace(/[ \t]+/g, ' ').replace(/\n\s*\n+/g, '\n').trim();
 
-const pages = JSON.parse(fs.readFileSync(pagesPath, 'utf8'));
+const pages = readGraduatePages(root);
 const plan = fs.existsSync(planPath) ? JSON.parse(fs.readFileSync(planPath, 'utf8')) : { generatedAt: null, pages: {} };
 const savePlan = () => fs.writeFileSync(planPath, JSON.stringify({ ...plan, generatedAt: new Date().toISOString().slice(0, 10) }, null, 1));
 

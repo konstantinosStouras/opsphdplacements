@@ -7,7 +7,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 
-const root = path.resolve(path.dirname(new URL(import.meta.url).pathname), '..');
+const root = path.resolve(import.meta.dirname, '..');
 const readJson = f => JSON.parse(fs.readFileSync(path.join(root, f), 'utf8'));
 const fmt = n => Number(n || 0).toLocaleString('en-US');
 
