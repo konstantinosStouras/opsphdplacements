@@ -206,7 +206,7 @@ export async function entityCounts() { return (await loadEntities()).counts; }
 /** The panel under a profile: what the other database and the register hold for this organisation. */
 async function entityPanel(body, name, context, actions) {
   let e = null, counts = null;
-  try { ({ counts } = await loadEntities()); e = await entityFor(name); } catch { body.replaceChildren(html('p', 'chart-empty', 'The merged organisation database (data/entities.json) could not be loaded.')); return; }
+  try { ({ counts } = await loadEntities()); e = await entityFor(name); } catch { body.replaceChildren(html('p', 'chart-empty', 'The organisation records could not be loaded.')); return; }
   body.replaceChildren();
   if (!e) { body.append(html('p', 'chart-empty', 'No merged organisation record carries this name yet.')); return; }
   const head = html('p', 'entity-head'); head.append(html('strong', undefined, e.name));
@@ -241,7 +241,7 @@ async function entityPanel(body, name, context, actions) {
   const others = e.aliases.filter(a => a !== e.name);
   if (others.length) body.append(html('p', 'entity-sub', `Also written as: ${others.join('; ')}.`));
   const foot = html('p', 'source-stamp');
-  foot.append(`Record ${e.id} in `, link('entities.json', 'data/entities.json'), counts ? ` (${fmt(counts.entities)} organisations, ${fmt(counts.inBothDatabases)} in both databases). ` : '. ', 'One record per organisation, keyed by Wikidata item where known; a part that a source does not supply is simply absent, never inferred.');
+  foot.append(`Record ${e.id} in the organisation database`, counts ? ` (${fmt(counts.entities)} organisations, ${fmt(counts.inBothDatabases)} in both databases). ` : '. ', 'One record per organisation, keyed by Wikidata item where known; a part that a source does not supply is simply absent, never inferred.');
   body.append(foot);
 }
 const entityPanelFor = (grid, name, context, actions) => { const [p, b] = panel('The same organisation across both databases', 'entity-panel'); b.append(html('p', 'chart-empty', 'Loading the merged record…')); grid.append(p); entityPanel(b, name, context, actions); };

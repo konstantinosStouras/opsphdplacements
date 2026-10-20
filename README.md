@@ -84,3 +84,6 @@ The alphabetical pass has started with three partial career reviews; the first l
 ## Public collection description — 20 October 2026
 
 The website describes the owner-reported collection over time through public website crawling and individual source review, with OM List used for profile cross-checks and individually reviewed LinkedIn profiles for self-reported histories. A match does not independently verify every fact. Historical technical provenance remains intact; this wording update is not a new verification pass.
+
+
+The Sources of information section leads with Operations Academia as the starting directory reference. Visitor-facing raw dataset links and filenames are omitted throughout the website; the corrections email remains. The static application still fetches public data, and the public repository and CSV export still expose records. This presentation change is not access control.

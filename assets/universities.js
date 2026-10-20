@@ -14,7 +14,7 @@ export async function renderUniversities(section, { openInstitution } = {}) {
   const body = section.querySelector('#university-records'), count = section.querySelector('#university-results'), more = section.querySelector('#university-more'), note = section.querySelector('#university-note');
   let data;
   try { data = await loadJson('data/universities.json'); }
-  catch { note.textContent = 'The universities database could not be loaded. Please reload or download data/universities.json from the repository.'; return; }
+  catch { note.textContent = 'The universities database could not be loaded. Please reload and try again.'; return; }
   const { metadata: m, records } = data;
   const countryOf = r => (Array.isArray(r.country) ? r.country.join(', ') : r.country || '');
   const countries = [...new Set(records.flatMap(r => (Array.isArray(r.country) ? r.country : r.country ? [r.country] : [])))].sort((a, b) => a.localeCompare(b));
@@ -34,8 +34,8 @@ export async function renderUniversities(section, { openInstitution } = {}) {
   // The merged organisation database (data/entities.json) is larger, so its counts arrive after the table.
   entityCounts().then(c => {
     tiles(tileBox, [...tileRows, { value: fmt(c.entities), label: 'Organisations in the merged database', note: `${fmt(c.withWikidata)} keyed by a Wikidata item` }, { value: fmt(c.inBothDatabases), label: 'In both databases', note: `${fmt(c.conflicts)} ${c.conflicts === 1 ? 'conflict' : 'conflicts'} to review` }]);
-    const p = html('p', 'map-note'); const a = html('a', undefined, 'entities.json'); a.href = 'data/entities.json';
-    p.append(`Both databases and the program register are merged into one record per organisation in `, a, `: ${fmt(c.entities)} organisations (${fmt(c.phdInstitutions)} PhD institutions, ${fmt(c.directoryUniversities)} directory universities, ${fmt(c.firstEmployers)} first employers), keyed by Wikidata item where known, with every name from either source kept as an alias. Each PhD institution and first-employer profile shows what the other database holds for the same organisation.`);
+    const p = html('p', 'map-note');
+    p.append(`Both databases and the program register are merged into one record per organisation: ${fmt(c.entities)} organisations (${fmt(c.phdInstitutions)} PhD institutions, ${fmt(c.directoryUniversities)} directory universities, ${fmt(c.firstEmployers)} first employers), keyed by Wikidata item where known, with every name from either source kept as an alias. Each PhD institution and first-employer profile shows what the other database holds for the same organisation.`);
     summary.append(p);
   }).catch(() => {});
 
@@ -63,8 +63,8 @@ export async function renderUniversities(section, { openInstitution } = {}) {
       { value: fmt(c.reviewed), label: `Reviewed one by one: ${fmt(o['confirmed-faculty'] || 0)} confirmed faculty, ${fmt(o['not-listed'] || 0)} students, staff or former members, ${fmt(o['extraction-noise'] || 0)} extraction noise, ${fmt(o.unresolved || 0)} unresolved`, note: `${fmt(c.people - c.reviewed)} not reviewed: OM List matches, or listed as students, staff or postdocs` }
     ]);
     for (const tr of body.querySelectorAll('tr[data-uid]')) rosterLine(tr.children[2], tr.dataset.uid);
-    const p = html('p', 'map-note'); const a = html('a', undefined, 'faculty-rosters.json'); a.href = 'data/faculty-rosters.json';
-    p.append(`The faculty pages that the directory links were read on ${roster.metadata.generatedAt}: ${fmt(pg.fetched)} of ${fmt(pg.total)} pages answered and ${fmt(pg.withPeople)} listed people that could be extracted (the rest are dead links, pages that refuse automated readers or lists drawn by scripts). A listing establishes only that the page shows the name under that title. OM List matches provide a cross-check of names and universities, not independent verification of every fact; other listed people were reviewed one by one: a reviewer opened each person's own page and recorded the outcome, the title and area shown and, only when a page states it, the doctorate with that page's URL; no first job is assumed or recorded for them yet. Download `, a, '.');
+    const p = html('p', 'map-note');
+    p.append(`The faculty pages that the directory links were read on ${roster.metadata.generatedAt}: ${fmt(pg.fetched)} of ${fmt(pg.total)} pages answered and ${fmt(pg.withPeople)} listed people that could be extracted (the rest are dead links, pages that refuse automated readers or lists drawn by scripts). A listing establishes only that the page shows the name under that title. OM List matches provide a cross-check of names and universities, not independent verification of every fact; other listed people were reviewed one by one: a reviewer opened each person's own page and recorded the outcome, the title and area shown and, only when a page states it, the doctorate with that page's URL; no first job is assumed or recorded for them yet.`);
     summary.append(p);
   }).catch(() => {});
   let shown = 0, rows = [];
