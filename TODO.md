@@ -213,3 +213,6 @@ The Anuj Mehrotra OM List row also links to the same opened official Scheller pr
 - Integrated 25 partial histories (143 role entries) from Alan Scheller-Wolf through Alexander Shapiro, separate from the other workflow's unpublished 29–53 proposals. Seven bounded academic summaries preserve source-age limits.
 - Follow up missing/old chronologies, especially Alan Scheller-Wolf's dead CV, Aleda Roth's 2014 CV, Alena Otto's Passau/TUM transition, Alexander Estes's conflicting postdoc entry, and profiles without doctorate evidence. No first-placement or imported-person data changed.
 - Next unassigned career queue position is 79; consult the regenerated queue and active assignments before claiming it. Partial cases remain unfinished even though the alphabetical pass moves on.
+
+- [x] Owner-authorized review/publication of the 24 saved positions30–53 histories:126 roles plus70 other mentions, all partial. Five ambiguous/overlapping entries moved out of distinct-job counts without losing evidence.
+- [ ] Follow up missing chronology, Choo/Hofer doctorate reconfirmation, Ola degree institution, Aggon PhD-census scope, Bensoussan pagination, McKinnon2011/2012 discrepancy and Mackelprang current affiliation. Jain remains outside this24-record publication.

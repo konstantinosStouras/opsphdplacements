@@ -48,3 +48,7 @@ The resumed 11:17 run saved 24 additional partial histories (131 roles, 65 other
 ## Coordinated positions 54–78 — 20 October 2026
 
 Alan Scheller-Wolf through Alexander Shapiro: 25 partial histories and 143 role entries integrated into the public career store, with seven bounded academic summaries and a visible Partial history label. See batches/2026-10-20-54-78-report.md and its exact-ID assignment. The other workflow's positions 29–53 remain research-only proposals; they are not implicitly published by this integration. Daily unique attempts are 82, with 18 remaining to target; all 25 histories in this batch retain gaps. Next unassigned order is 79, subject to current assignment checks.
+
+## Positions 30–53 reviewed for publication — 20 October 2026
+
+The owner subsequently explicitly authorized review and publication of the24 saved continuation histories. The reviewed output has126 role entries and70 other mentions after moving five ambiguous/overlapping entries out of job counts, without dropping their evidence. All24 remain partial. See `batches/2026-10-20-30-53-publication.md` and `batches/2026-10-20-30-53-reviewed.json`. This supersedes research-only statements for these24 records only; Jain remains unpublished and future unattended publication is not authorized. No new daily unique attempts are added by publication/review.

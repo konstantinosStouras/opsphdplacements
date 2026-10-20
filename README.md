@@ -99,3 +99,5 @@ The Sources of information section leads with Operations Academia as the startin
 The website does not link to the project GitHub repository, technical guides or issue tracker. Corrections and removal requests use the published contact email. This reduces direct discovery; the repository and static data remain public.
 
 Confirmed non-university imports can be excluded from the university presentation with reviewed source evidence; their original records and employer histories remain intact.
+
+The reviewed alphabetical positions 30–53 add 24 explicitly partial career histories (126 role entries and 70 other mentions), retaining unknown dates, source-age and identity limitations. Expanded histories show their own record publication/update timestamps alongside source links and check dates. This does not change first-placement or doctorate evidence.
