@@ -21,3 +21,7 @@ Two identity checks are saved in `reviews/debora-gilliard.json` and `reviews/kri
 ## Entire profile job histories — owner instruction, 20 October 2026
 
 For every person accessed, capture all employment entries mentioned on LinkedIn, including prior jobs, grouped promotions, concurrent appointments and later transitions. Follow [history-contract.md](history-contract.md) and save separate history files. Expand the accessible Experience section and employer groups. Missing dates stay unknown; absent/inaccessible sections are not proof of no jobs. Both pilot profiles remain queued for full-history follow-up. The automation now requires this; quality takes precedence over the 100/day target.
+
+## Full-history pilot published — 20 October 2026
+
+At the owner’s explicit request, the two pilot profiles were revisited for full Experience histories. `histories/kristie-rogers.json` records four Experience roles plus About mentions; `histories/debora-gilliard.json` records three Experience roles plus undated industry mentions. They are integrated into `data/linkedin-histories.json`, displayed at #linkedin-histories with checkedAt and ledger-managed updatedAt and direct profile links. Historical identity-only files remain historical. No first-placement/degree records were changed. Both accessible Experience sections were fully read; the broader identity gate remains incomplete. Reviewed publication is now authorized after checks, replacing the earlier blanket no-main-publication restriction for this requested website feature.

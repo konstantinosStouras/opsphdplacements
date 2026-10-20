@@ -15,3 +15,7 @@ Save one JSON file per person under `histories/<stable-id-safe-filename>.json`:
 Include pre-PhD jobs, postdocs, internships, promotions, part-time roles, simultaneous appointments and later sector transitions. Preserve overlapping dates. An employer-wide date span does not establish each title's dates. Record the displayed order if useful, but never infer chronological priority from it. Missing Experience means unavailable, not an empty career. Education ranges remain separate from degree conferral dates.
 
 Capture concise professional facts and evidence paraphrases; do not copy full profile descriptions or personal contact details. Stop and hand challenges to the owner. The daily target cannot justify skipping roles or calling a partial capture complete. Both pilot profiles need full-history follow-up. This contract is a proposal storage format; no public whole-history importer has been implemented.
+
+## Public integration
+
+Reviewed observations now populate `data/linkedin-histories.json` using `id` (existing person/graduate ID) and `recordIds`; addedAt/updatedAt are assigned by the record ledger. Public cards show checkedAt separately. The two-person pilot has been integrated; historical statements above about no public importer refer to the lack of an automated merger, not a prohibition on reviewed public integration.

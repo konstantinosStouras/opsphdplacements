@@ -184,3 +184,7 @@ The owner authorizes a Codex agent to read individual LinkedIn profiles in Chrom
 ## Entire LinkedIn job histories — 20 October 2026
 
 The owner requires all employment entries mentioned on each accessed LinkedIn profile, including pre-degree work, promotions and concurrent roles. Store the observed self-reported history with per-role source/check date and original date precision, separately from first-job conclusions. Profile-history completion means all accessible displayed entries were read on the check date, not that the real-world career is complete. See `research-handoff/linkedin/history-contract.md`.
+
+## Published LinkedIn observations — 20 October 2026
+
+The public history log separates source check date from record integration/update time. Read all accessible Experience entries by scrolling until the section loads; an early profile snapshot may show only About/Activity. Preserve promotions and concurrent Present titles as written, unknown rank changes and conflicting source dates. About/description-only jobs and editorial service stay separately labeled, without assuming contract type or pay. The pilot publishes seven Experience roles and other undated mentions for two graduate identities, without changing first-job or graduate counts.

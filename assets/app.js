@@ -2,6 +2,7 @@ import {normalize,filterRecords,groupCounts,csv,validateDataset,isSourceUrl,fold
 import {renderMap} from './map.js';
 import {renderUniversities} from './universities.js';
 import {renderGraduates} from './graduates.js';
+import {renderLinkedInHistories} from './linkedin-histories.js';
 import {getIndex,coverageLede,renderCoverageYears,renderTrends as renderInsightTrends,renderProfile as renderInsightProfile,presetProfile,renderAvailability} from './insights.js';
 const $=s=>document.querySelector(s), fmt=n=>n.toLocaleString('en-GB');
 const el=(tag,text,cls)=>{const e=document.createElement(tag);if(text!==undefined)e.textContent=text;if(cls)e.className=cls;return e;};
@@ -139,3 +140,5 @@ addEventListener('resize',fitHeader);
 document.fonts?.ready.then(fitHeader);
 document.fonts?.addEventListener('loadingdone',fitHeader);
 fitHeader();
+
+renderLinkedInHistories(document.querySelector('#linkedin-histories'));

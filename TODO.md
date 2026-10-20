@@ -132,3 +132,6 @@ Record: scope and assigned IDs/programs; files changed; sources opened; verified
 - [x] Supervised Chrome pilot (20 October): two profiles opened with no challenge; identity proposals saved, zero complete employment reviews. Schedule increased to four daily runs of 25 (100/day target), subject to identity cleanup and access.
 
 - [ ] Capture every mentioned employment entry for each LinkedIn person, following `research-handoff/linkedin/history-contract.md`; revisit both pilot profiles for full Experience histories. Preserve partial/unavailable status; review public history integration separately.
+
+- [x] Full-history pilot and public check log (20 October 2026): Kristie Rogers (four Experience roles) and Debora/ Debbie Gilliard (three Experience roles), plus undated mentions, profile links, check dates and record update times. Preserve Rogers’s overlapping Present titles and Gilliard’s title-span/chair-date limitations.
+- [ ] Continue identity reconciliation; add further histories only after actual full-section reading. Pilot publication does not complete the global identity gate or graduate census.

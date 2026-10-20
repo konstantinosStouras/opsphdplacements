@@ -108,3 +108,7 @@ The user increased the target to 100 unique checks/day on 20 October 2026: four 
 ## Full-history capture for every LinkedIn profile
 
 Follow `research-handoff/linkedin/history-contract.md`: read all accessible Experience entries and expand employer role groups, record each role separately with dates as written, explicit unknowns and per-role provenance. Save under `research-handoff/linkedin/histories/`. Record About-only employment mentions separately. Both pilot profiles need full-history follow-up. Do not truncate histories to meet the daily target; no public whole-history importer exists yet.
+
+## Publishing LinkedIn history checks
+
+The owner authorized website publication on 20 October 2026. Reviewed histories go in `data/linkedin-histories.json` with existing stable `id` and `recordIds`, and portable observations in `research-handoff/linkedin/histories/`. The public #linkedin-histories section shows profile URL, checkedAt, ledger-managed addedAt/updatedAt, roles, other mentions and limitations. Keep source observations separate from first-placement data; do not infer placements from chronological sorting. `scripts/record-dates.mjs` now stamps this dataset too. Run status updater after data edits, full checks, relational checks and build; inspect the rendered section before publishing main and verify the Pages deployment/live data. The user-authorized two-person pilot is an exception to the pending global identity cleanup gate; it does not mark that gate complete.

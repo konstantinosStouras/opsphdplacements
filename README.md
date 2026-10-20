@@ -68,3 +68,7 @@ The owner authorized individual Codex reviews in Chrome on 20 October 2026, acce
 The daily continuation target is now 100 checks across four runs at 09:17, 12:17, 16:17 and 20:17 Europe/London (20 October update). Two live profiles opened in a supervised pilot; employment histories remain uncompleted.
 
 LinkedIn continuation now captures the entire employment history mentioned on each accessed profile, with separate roles, dates, provenance and explicit gaps; see [capture contract](research-handoff/linkedin/history-contract.md). Full histories are research proposals until reviewed and integrated.
+
+## Public LinkedIn history checks
+
+The [LinkedIn histories section](https://www.stouras.com/opsphdplacements/#linkedin-histories) shows each checked person, their profile link, source check date, record update time, captured roles, other employment mentions and gaps. `data/linkedin-histories.json` stores these reviewed self-reported observations separately from verified first placements. The initial full-history pilot covers Kristie Rogers and Debora (Debbie) Gilliard; all accessible Experience entries were read on 20 October 2026, without a CAPTCHA. Complete refers to the accessible profile, not a guaranteed complete career.
