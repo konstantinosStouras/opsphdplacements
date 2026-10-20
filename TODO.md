@@ -179,3 +179,5 @@ The Anuj Mehrotra OM List row also links to the same opened official Scheller pr
 - [x] 20 October 2026: remove the visitor CSV download button, its export handler and download prompts. Internal CSV utilities/tests remain available for research; the static site still serves public data.
 
 - [x] Link OperationsAcademia.org and OM List directly from the abstract so readers can identify both references.
+
+- [x] 20 October 2026: remove project GitHub links from the footer and methodology, replace issue feedback with the corrections email, and remove empty parentheses left by an earlier dataset-link removal. The repository itself remains public.

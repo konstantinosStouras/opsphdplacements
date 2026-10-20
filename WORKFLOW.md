@@ -127,3 +127,5 @@ The coordinating LinkedIn chat confirmed the owner's authorization for this five
 Website source presentation: list Operations Academia first and retain the corrections email. Do not add visitor-facing raw dataset links or filenames, including generated summaries, errors and fallback text. Internal data loading remains required. Removing links does not restrict access to static data or public Git history. The website has no visitor CSV export control or handler.
 
 When publishing new data, recompute the abstract counts from placement categories and the combined people inputs; percentages use every verified placement, including unknown categories. Retain faculty-selection and incomplete-coverage caveats. Describe regressions only after they have been run and reviewed.
+
+Keep project GitHub repository, technical-guide and issue-tracker links out of visitor-facing pages. Use the corrections email for feedback and retain original research evidence links. Repository access and technical contributor documentation remain unchanged.
