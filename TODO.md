@@ -204,3 +204,7 @@ The Anuj Mehrotra OM List row also links to the same opened official Scheller pr
 
 - [x] University cleanup, 20 October: integrated 182 source records (166 reviewed, 16 partial), preserving full official unit names and source-supported trailing acronyms. Validated alias consolidation, evidence links and dates in Chrome. The 135-record release is confirmed live.
 - [ ] Continue the remaining 463 source records and resolve 16 partial reviews; these current counts supersede the earlier university checkpoints above. Zhejiang current unit names remain inaccessible; Ajman lower-level engineering organization and Aschaffenburg imported specialty remain unresolved.
+
+
+- [x] Resume remaining 24 people of the 11:17 career batch after the owner clarified individual source blockers; save partial source observations and daily attempts (57), research branch only.
+- [ ] Review 24 unpublished career proposals before integration; resolve missing dates, old CV Present claims, Bensoussan pagination, Aggon population scope and limited doctorate identity checks. Jain’s blocked CV remains a separate follow-up. No complete real-world career claim.

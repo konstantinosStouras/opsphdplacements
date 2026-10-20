@@ -37,3 +37,10 @@ The batch from Aaron Anvuur through Adem Orsdemir adds 24 partial career observa
 The owner explicitly requested database and website publication of this manual batch. Future unattended publication remains restricted to the research branch. The transcription script is a historical construction record and intentionally refuses to add an already-present history; do not rerun it as a refresh.
 
 The 11:17 London scheduled run subsequently stopped after one partial Aditya Jain check when the linked CV destination was blocked by the browser URL policy. See `batches/2026-10-20-1117-checkpoint.md`. Jain's official identity/current-role observation is an unpublished proposal; the remaining 24 selected people were not attempted. Daily unique attempts are 33, not completed histories. Next unattempted is Aditya Vedantam; no automatic main publication occurred.
+
+
+## Individual source blockers — 20 October 2026
+
+The owner clarified that an unavailable individual CV/profile must be recorded as a per-person limitation while the remaining alphabetical batch continues. Do not work around a blocked destination. Live CAPTCHA/human-verification/login challenges, platform-wide restrictions and disconnected Chrome still require a user handoff; never claim to be human or bypass checks. The scheduled tracker prompt now follows this distinction.
+
+The resumed 11:17 run saved 24 additional partial histories (131 roles, 65 other mentions), completing attempts for its 25 allocated people including Jain. See `batches/2026-10-20-1117-continuation.md`. Daily attempts are 57; public histories remain unchanged by this continuation. The earlier stop paragraph is a historical checkpoint, superseded by the owner’s explicit resume instruction. Positions 54–78 belong to the coordinating presentation chat.

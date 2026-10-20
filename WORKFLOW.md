@@ -154,3 +154,8 @@ This is a standing release requirement unless the owner explicitly changes it:
 4. Retain Operations Academia and OM List references, original external evidence links and the corrections email. Run normal validation/build checks, then verify the deployed page. Report any view that could not be checked.
 
 Technical guides and underlying data can retain filenames and repository references. The public repository and static data remain accessible; removal of interface links must never be described as access protection. Audit precedent: research-handoff/website-audit-2026-10-20.md.
+
+
+## Individual source blockers — 20 October 2026
+
+The owner clarified that an unavailable individual CV/profile must be recorded as a per-person limitation while the remaining alphabetical batch continues. Do not work around a blocked destination. Live CAPTCHA/human-verification/login challenges, platform-wide restrictions and disconnected Chrome still require a user handoff; never claim to be human or bypass checks. The scheduled tracker prompt now follows this distinction.
