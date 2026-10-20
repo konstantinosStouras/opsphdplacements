@@ -128,3 +128,5 @@ Record: scope and assigned IDs/programs; files changed; sources opened; verified
 - [x] Repair duplicate Rutgers alumni-page catalogue assignment after opening the official page; preserve original labels in `research-handoff/linkedin/rutgers-catalogue-review.json`. Public Rutgers graduate sightings still need reconciliation.
 - [ ] Review 732 normalized-name/institution graduate groups with multiple person-year records; distinguish repeated sightings, namesakes, and contradictory dates before merging any IDs. See `research-handoff/linkedin/identity-audit.json`.
 - [ ] Complete the identity cleanup gate, then check each queued person individually on LinkedIn in Chrome. Daily 09:00 Europe/London continuation is configured (ten people per employment batch after cleanup); this supersedes earlier no-runner and human-only LinkedIn notes.
+
+- [x] Supervised Chrome pilot (20 October): two profiles opened with no challenge; identity proposals saved, zero complete employment reviews. Schedule increased to four daily runs of 25 (100/day target), subject to identity cleanup and access.
