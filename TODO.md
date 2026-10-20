@@ -173,6 +173,12 @@ The Anuj Mehrotra OM List row also links to the same opened official Scheller pr
 - [ ] Continue per-person OM List alignment checks, recording identity, fields compared, discrepancies and check dates. This copy update performs no new profile checks and does not establish universal alignment.
 
 
-- [x] 20 October 2026: lead source references with Operations Academia, remove the Audit and corrections panel and all visitor-facing raw dataset links/filenames, and retain the corrections email. Static data, the public repository and CSV exports remain accessible; actual access restriction would require a separate hosting/data-delivery change.
+- [x] 20 October 2026: lead source references with Operations Academia, remove the Audit and corrections panel and all visitor-facing raw dataset links/filenames, and retain the corrections email. Static data and the public repository remain accessible; actual access restriction would require a separate hosting/data-delivery change.
 
 - [x] 20 October 2026: replace the collection-only abstract with descriptive findings from the current placements: 432/2,087 postdocs (20.7%), 1,013/2,087 tenure-track (48.5%), 94 industry/government/nonprofit first jobs and 385/2,087 unknown types (18.4%). Denominators and faculty-sample selection are explicit; no regression has been run. Refresh the abstract after data releases and later reviewed regression analyses.
+
+- [x] 20 October 2026: remove the visitor CSV download button, its export handler and download prompts. Internal CSV utilities/tests remain available for research; the static site still serves public data.
+
+- [x] Link OperationsAcademia.org and OM List directly from the abstract so readers can identify both references.
+
+- [x] 20 October 2026: remove project GitHub links from the footer and methodology, replace issue feedback with the corrections email, and remove empty parentheses left by an earlier dataset-link removal. The repository itself remains public.
