@@ -7,6 +7,7 @@ import { fold } from './model.js';
 export const CATEGORIES = [
   { id: 'tenure-track', label: 'Tenure track', color: '#1f8a5a' },
   { id: 'postdoc', label: 'Postdoc', color: '#2a78d6' },
+  { id: 'teaching-track', label: 'Teaching track', color: '#159b9b' },
   { id: 'other-academic', label: 'Other academic', color: '#eb6834' },
   { id: 'industry', label: 'Industry', color: '#6250d6' },
   { id: 'government', label: 'Government', color: '#eda100' },
@@ -21,7 +22,7 @@ export const STATUSES = [
   { id: 'pending', label: 'Not yet reviewed', color: '#c3c8bf' }
 ];
 export const STATUS = Object.fromEntries(STATUSES.map(s => [s.id, s]));
-export const ACADEMIC = new Set(['tenure-track', 'postdoc', 'other-academic']);
+export const ACADEMIC = new Set(['tenure-track', 'postdoc', 'teaching-track', 'other-academic']);
 const THIS_YEAR = new Date().getFullYear();
 
 /** Names that differ only in accents, punctuation, spacing or case are one organisation; the most used

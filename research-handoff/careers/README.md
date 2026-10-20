@@ -1,0 +1,19 @@
+# Multi-source career histories — 20 October 2026
+
+Owner: current Codex chat, sole integrator for the presentation update. No parallel research assignments. This batch implements the interface and one CV sample, not a complete population history pass.
+
+Public CV/official-page records live in data/employment-histories.json. Knemeyer's dated observation file here is integrated in that dataset. The category audit is integrated into placements and the research ledger; original source review dates remain unchanged. Existing LinkedIn observations stay in data/linkedin-histories.json and follow their own capture contract. Do not duplicate a person across stores: consolidate reviewed evidence in one record before adding an overlapping stable ID.
+
+Each history has id, name, recordIds (only reviewed identities), identityBasis, reviewer, checkedAt, coverageNote, jobs, otherEmploymentMentions, remainingUnknowns and accessLimitations. Each job has employerAsWritten, titleAsWritten, start/end objects (asWritten, year, month, precision), isCurrent, sourceType, sourceUrl, checkedAt and evidenceNote. Follow the LinkedIn contract's date precision and exhaustive section-capture rules. Capture all accessible employment entries, not just first/current jobs. An old source's Present stays tied to that source's age. Never publish source documents or contact details.
+
+Optional postPhdPeriods require verifiedPhdYear with degreeSourceUrl, and chronological non-overlapping primary-sector intervals: startYear, endYear (or currentThroughCheck true), sector, checkedAt, sourceUrls and evidenceNote. Supply summaryLimitations for missing coverage. Approximate year differences are a presentation convention, not fabricated exact dates. Coarse same-year transitions can touch; simultaneous employment remains in jobs and must be adjudicated before primary-sector intervals are used. Unknown chronology gets no manufactured interval.
+
+Validation: npm run check; python scripts/test-research-schema.py; python scripts/build-research-database.py; node scripts/build.mjs. Record dates are assigned by the ledger. The SQLite snapshot still imports first-job events only; the history JSON is the public source of truth for these new observations.
+
+Next: review mixed teaching/research classification cases, then collect additional disambiguated full histories and supported sector periods. Knemeyer needs a newer dated chronology before a continuous duration through the current check can be claimed. The existing global LinkedIn identity gate remains incomplete. No new automation is configured by this change.
+
+## Current coordinated continuation — 20 October 2026
+
+The owner requested the columns be finished first, then all main people researched in alphabetical batches. Generate research-handoff/careers/alphabetical-queue.json with node scripts/build-career-queue.mjs: 3,161 people, 25 per batch, displayed-name English collation and stable-ID tie-break. Save explicit outcomes under research-handoff/careers/reviews/ (pending, partial, blocked, completed are distinct); fully captured older sources can remain partial. Next unattempted person is A. Mehrotra, followed by the existing partial Knemeyer review and Aadhaar Chaturvedi.
+
+The coordinating LinkedIn chat confirmed the owner's authorization for this five-history release (four LinkedIn histories plus one CV history) and changed the existing four-times-daily automation to alphabetical histories, with per-person identity checks before employment checks. The global graduate duplicate audit remains unresolved separately; unknown-year graduate sightings stay unlinked. This supersedes earlier global-gate and pilot-only restrictions for current individually identity-matched reviews. Future unattended batches still save reviewed proposals to the research branch, without automatic main deployment. Runtime availability remains dependent on the app, computer and Chrome connection.

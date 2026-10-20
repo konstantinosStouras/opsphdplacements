@@ -25,3 +25,7 @@ The owner accepts identity-matched LinkedIn employment information read individu
 For each accessed LinkedIn person, record their entire mentioned job history under `research-handoff/linkedin/history-contract.md`; first-job conclusions remain separate. Do not skip entries to meet a quota or describe a partial profile read as complete.
 
 The owner authorized a full-history pilot and publication of LinkedIn links, checked dates and record update times on the website on 20 October 2026. `data/linkedin-histories.json` is the reviewed observation log, stamped by record-dates; preserve separate first-placement/degree evidence. Read the entire loaded Experience section, not just the initial snapshot. The two-person pilot does not complete the global identity cleanup gate.
+
+## Career presentation update — 20 October 2026
+
+Read research-handoff/careers/README.md for multi-source histories and reviewed post-PhD sector intervals. Teaching track follows explicit teaching/adjunct/practice/instruction wording, without claiming research cessation. Preserve source-check dates during category-only migrations and keep namesake identities separate. Do not calculate continuous sector tenure from first and current jobs alone.

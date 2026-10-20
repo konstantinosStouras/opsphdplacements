@@ -20,7 +20,7 @@ const read = f => (fs.existsSync(path.join(root, f)) ? JSON.parse(fs.readFileSyn
 const institutions = read('data/institutions.json').records, universities = read('data/universities.json').records, employers = read('data/employers.json').records, programs = read('data/doctoral-programs.json').records;
 const locationFiles = { institution: read('data/institution-locations.json'), university: read('data/university-locations.json'), employer: read('data/employer-locations.json') };
 const locByName = {}; for (const [kind, data] of Object.entries(locationFiles)) { locByName[kind] = new Map(); for (const r of data?.records || []) locByName[kind].set(r[kind], r); }
-const CATEGORIES = ['tenure-track', 'postdoc', 'other-academic', 'industry', 'government', 'nonprofit', 'unknown'];
+const CATEGORIES = ['tenure-track', 'postdoc', 'teaching-track', 'other-academic', 'industry', 'government', 'nonprofit', 'unknown'];
 
 const slug = s => s.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
 // Names are compared without accents, punctuation, small words or a trailing all-caps abbreviation such as

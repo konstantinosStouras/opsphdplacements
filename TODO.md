@@ -140,3 +140,17 @@ Record: scope and assigned IDs/programs; files changed; sources opened; verified
 - [ ] Reopen their historical candidate/undated sightings before accepting identity links; no IDs or unknown years have been merged or filled. These checks add zero completed LinkedIn histories; the global identity gate remains incomplete.
 
 - [ ] Resolve the global-identity-gate scope with the owner: automatic approval review blocked integration of the two additional LinkedIn histories (20 October). Brooke Buckman (six Experience entries) and Han Jiang (nine, including expanded earlier roles) are saved as unmerged proposals only. Do not count these as public histories or merge unknown-year sightings.
+
+## Career presentation — 20 October 2026
+
+- [x] Combine employer and position while retaining both independent filters; add history, post-PhD summary and source-check-date columns and CSV fields.
+- [x] Split 14 explicit teaching/adjunct/practice/instruction first-role titles into teaching-track; include it in academic analytics. Mixed research/teaching, clinical and ambiguous lecturer roles remain to review.
+- [x] Add CV/official-page history storage, stable-ID joins, validation and conservative primary-sector summary support. Capture all nine Professional Experience roles in A. Michael Knemeyer's official CV, plus undated research affiliations and a current faculty-page observation.
+- [ ] Research full careers for the remaining people; the interface update does not complete this work. The two existing LinkedIn histories are graduate-list-only identities. Complete the existing identity gate before broader LinkedIn employment reviews.
+- [ ] Establish dated post-PhD primary-sector continuity, gaps and transitions before publishing duration summaries. Knemeyer's older CV plus current profile does not by itself establish uninterrupted service through 2026.
+- [ ] Review mixed adjunct/research titles individually. Do not infer no research activity from teaching-track classification.
+
+
+- [x] Owner-authorized coordinated integration of Brooke Buckman and Han Jiang (20 October): 15 additional LinkedIn Experience entries in public JSON; unknown-year identities remain unlinked. Combined validation/deployment belongs to the employment-presentation chat. Earlier blocked notes are historical for this batch; the wider identity audit remains unresolved.
+
+- [x] Set up the alphabetical full-history queue (127 batches of up to 25) and coordinate with the existing daily workflow. Partial/blocked outcomes are preserved separately; the cohort identity audit is not marked complete.

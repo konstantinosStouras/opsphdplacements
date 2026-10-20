@@ -72,3 +72,7 @@ LinkedIn continuation now captures the entire employment history mentioned on ea
 ## Public LinkedIn history checks
 
 The [LinkedIn histories section](https://www.stouras.com/opsphdplacements/#linkedin-histories) shows each checked person, their profile link, source check date, record update time, captured roles, other employment mentions and gaps. `data/linkedin-histories.json` stores these reviewed self-reported observations separately from verified first placements. The initial full-history pilot covers Kristie Rogers and Debora (Debbie) Gilliard; all accessible Experience entries were read on 20 October 2026, without a CAPTCHA. Complete refers to the accessible profile, not a guaranteed complete career.
+
+## Career columns (20 October 2026)
+
+The explorer combines affiliation/first employer and position while retaining independent employer and title filters. It adds searchable Employment history, Post-PhD employment history and Date checked columns; the CSV includes the history text, summary and history check date. Teaching track is distinct from other academic in filters and analytics. Full histories join only through reviewed stable IDs from data/employment-histories.json (CVs and official pages) and data/linkedin-histories.json. Missing histories say Not yet researched. Initial CV sample: A. Michael Knemeyer; the two existing LinkedIn pilot histories remain graduate-list-only and are not joined by name. Most full careers remain unresearched.

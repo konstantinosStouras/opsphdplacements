@@ -50,3 +50,7 @@ The owner now authorizes individual LinkedIn reviews by Codex in Chrome, superse
 LinkedIn reviewers must capture every accessible employment entry for each person, under `research-handoff/linkedin/history-contract.md`, preserving original labels/date precision, overlapping roles, source URLs and check dates. Identity-only visits and unavailable Experience sections are not completed employment histories.
 
 Reviewed history observations may now be published in `data/linkedin-histories.json`, with a copy under `research-handoff/linkedin/histories/`, using the public history contract and date ledger. A successful profile visit alone does not qualify: scroll to load Experience, inspect every accessible role/group and record limitations. Public history entries are not verified-first-placement records.
+
+## Multi-source career reviews (20 October 2026)
+
+Use the contract in [research-handoff/careers/README.md](research-handoff/careers/README.md) for CV and official-page histories. Retain LinkedIn observations in their existing dataset. Never join a graduate history to a faculty record by name alone. Record every mentioned employment entry and explicit limitations. Summaries require separately reviewed primary-sector periods and a sourced degree boundary. Classification-only changes preserve original source-check dates and carry categoryReview metadata.

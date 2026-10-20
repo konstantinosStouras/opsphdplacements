@@ -13,7 +13,7 @@ const employerLocations = fs.existsSync(path.join(root, 'data/employer-locations
 const locByName = new Map(locations.map(r => [r.institution, r])), empLocByName = new Map(employerLocations.map(r => [r.employer, r]));
 const statusById = new Map(status.records.map(r => [r.facultyId, r.status])), placementById = new Map(placements.records.map(p => [p.facultyId, p]));
 const slug = name => name.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
-const CATEGORIES = ['tenure-track', 'postdoc', 'other-academic', 'industry', 'government', 'nonprofit', 'unknown'];
+const CATEGORIES = ['tenure-track', 'postdoc', 'teaching-track', 'other-academic', 'industry', 'government', 'nonprofit', 'unknown'];
 const generatedAt = new Date().toISOString().slice(0, 10);
 
 // Names that differ only in accents, punctuation, spacing or case ("Koç University" and "Koc University",

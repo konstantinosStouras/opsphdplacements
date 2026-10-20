@@ -27,6 +27,7 @@ const FILES = {
   'doctoral-programs.json': 'id',
   'graduate-lists.json': 'id',
   'linkedin-histories.json': 'id',
+  'employment-histories.json': 'id',
   'university-locations.json': 'university',
   'institution-locations.json': 'institution',
   'employer-locations.json': 'employer',
