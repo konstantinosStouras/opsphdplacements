@@ -165,3 +165,8 @@ The first three queue positions now have partial career reviews: A. Mehrotra (id
 Next unattempted: Aaron Anvuur (omlist-8190a06eee7eb70d), then Aaron Tenenbein. The rest of batch 1 is pending. Follow up the three partial cases separately without treating them as complete. Seven public history records now exist across the two history stores; five are LinkedIn observations and two are CV/official-page observations.
 
 The Anuj Mehrotra OM List row also links to the same opened official Scheller profile, named chair and doctorate. Both stable IDs now share one reviewed history; imported rows/counts remain intact. Four queue records (three distinct people) are partial, and the later Anuj entry must not be researched as a different person.
+
+## OM List alignment wording — 20 October 2026
+
+- [x] Revise public narrative to describe website collection over time, OM List cross-checks and individual LinkedIn reviews; retain evidence links and technical provenance.
+- [ ] Continue per-person OM List alignment checks, recording identity, fields compared, discrepancies and check dates. This copy update performs no new profile checks and does not establish universal alignment.
