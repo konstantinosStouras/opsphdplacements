@@ -138,3 +138,5 @@ Record: scope and assigned IDs/programs; files changed; sources opened; verified
 
 - [x] Scheduled identity-audit evidence batch (20 October): confirm names and reported doctorate years for 15 ASU management alumni against the opened current official table; saved unmerged under `research-handoff/linkedin/identity-reviews/2026-10-20-asu-01.json`.
 - [ ] Reopen their historical candidate/undated sightings before accepting identity links; no IDs or unknown years have been merged or filled. These checks add zero completed LinkedIn histories; the global identity gate remains incomplete.
+
+- [ ] Resolve the global-identity-gate scope with the owner: automatic approval review blocked integration of the two additional LinkedIn histories (20 October). Brooke Buckman (six Experience entries) and Han Jiang (nine, including expanded earlier roles) are saved as unmerged proposals only. Do not count these as public histories or merge unknown-year sightings.

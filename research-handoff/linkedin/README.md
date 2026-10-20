@@ -29,3 +29,7 @@ At the owner’s explicit request, the two pilot profiles were revisited for ful
 ## Scheduled identity-audit batch — 20 October 2026
 
 `identity-reviews/2026-10-20-asu-01.json` records 15 current official ASU alumni name/year confirmations (Yiwen Zhang through Eunyoung Park in the audit order), after opening the current university table. These are unmerged audit findings, not LinkedIn history reviews. Unknown-year historical sightings remain intact; their identity links are provisional because those source captures were not reopened. Global cleanup is incomplete. Next: inspect the historical sightings/person-specific primary evidence before merging identities. Future automated batches remain on the research branch; only the supervised pilot was approved for live publication.
+
+## Additional observed profiles — 20 October 2026
+
+The owner requested more LinkedIn checks now. Brooke Buckman’s six Experience entries and Han Jiang’s nine were read in Chrome (Han’s Show all list included earlier jobs); no challenge appeared. Proposals are `histories/brooke-buckman.json` and `histories/han-jiang.json`. They are NOT integrated into public data: automatic approval review rejected public integration while the explicit global identity gate remains incomplete. Ask the owner to lift that prerequisite before further dependent employment work/integration. Paid employment is not inferred from student/candidate entries. The unknown-year graduate sightings remain unlinked. A Yiwen Zhang search was initiated but no profile was opened or reviewed.
