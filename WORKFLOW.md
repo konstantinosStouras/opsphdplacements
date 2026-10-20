@@ -98,3 +98,7 @@ Documentation maintenance is a standing user requirement. Before completing a ba
 - Check that remaining-work descriptions and completion claims agree across the affected documents. Preserve unresolved questions and useful decision history. Commit documentation alongside the relevant data/code changes.
 
 Only edit files affected by new information. Future agents should follow this maintenance step without needing a separate reminder. It does not imply an automatic scheduled update service.
+
+## Daily Chrome continuation (20 October 2026)
+
+The local thread automation `review-placement-identities-then-linkedin-careers` is active daily at 09:00 Europe/London. It first resolves the tracked name/university audit; employment checks are gated until cleanup is explicitly complete. Then review up to ten unchecked people per run in Chrome. See `research-handoff/linkedin/README.md`; use separate per-person files, source/check dates and explicit blocked states. Preserve unrelated edits; save reviewed proposals on `codex/linkedin-review-workflow` on GitHub, without deploying main. This replaces earlier no-schedule statements for this workflow only.

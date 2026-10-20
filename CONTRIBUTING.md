@@ -42,3 +42,7 @@ Research agents should not publish directly or edit the shared public JSON concu
 Include the research scope/IDs, proposed facts, primary sources, check dates, unresolved gaps, changes to previously published facts and validation results. For code changes, explain the user-visible behavior and test the relevant interaction. Record the next unfinished item in your handoff. Link any new schema or methodology decisions in the documentation.
 
 Keep the Markdown guides current with your contribution, as required by the user. Follow the documentation-maintenance step in `WORKFLOW.md`: revise affected instructions and remaining tasks, preserve important decisions, and regenerate the status summary after integrating public data. Distinguish unmerged research from the published dataset. Documentation updates belong with the change they explain, not in an unspecified future cleanup.
+
+## Agent browser reviews (20 October 2026)
+
+The owner now authorizes individual LinkedIn reviews by Codex in Chrome, superseding the human-only restriction above. Accept identity-matched self-reported chronology under RESEARCH-DESIGN.md. Save separate stable-ID proposals and progress under `research-handoff/linkedin/`; retain historical human-review attribution. See that directory’s README for the identity cleanup gate, queue and schedule.

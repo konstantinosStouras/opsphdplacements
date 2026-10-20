@@ -60,3 +60,7 @@ Social sharing uses static Open Graph and Twitter/X metadata with a 1200 × 630 
 ## Local preview
 
 Serve the repository with any static HTTP server, for example `python -m http.server 8765`, then visit http://localhost:8765.
+
+## LinkedIn continuation
+
+The owner authorized individual Codex reviews in Chrome on 20 October 2026, accepting identity-matched profile chronology as self-reported evidence. The [queue and identity audit](research-handoff/linkedin/README.md) document the prerequisite cleanup and daily 09:00 Europe/London local automation. No employment review is complete merely because it is queued.

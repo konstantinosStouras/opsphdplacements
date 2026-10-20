@@ -121,3 +121,10 @@ Why the current list cannot answer this on its own: everyone in the database tod
 ## Handoff template
 
 Record: scope and assigned IDs/programs; files changed; sources opened; verified findings; unresolved gaps; checks run; published revision or unpublished state; active collaborators; and the next specific item. Update the generated status file before each data release. Do not write a generic “continue research” handoff without the IDs and outstanding evidence needs.
+
+## Identity cleanup before LinkedIn — 20 October 2026
+
+- [x] Metadata screening of 3,161 people and the university/graduate tables: no malformed names or same-normalized-name/current-university duplicates across the people inputs. This is not an evidence audit of every person.
+- [x] Repair duplicate Rutgers alumni-page catalogue assignment after opening the official page; preserve original labels in `research-handoff/linkedin/rutgers-catalogue-review.json`. Public Rutgers graduate sightings still need reconciliation.
+- [ ] Review 732 normalized-name/institution graduate groups with multiple person-year records; distinguish repeated sightings, namesakes, and contradictory dates before merging any IDs. See `research-handoff/linkedin/identity-audit.json`.
+- [ ] Complete the identity cleanup gate, then check each queued person individually on LinkedIn in Chrome. Daily 09:00 Europe/London continuation is configured (ten people per employment batch after cleanup); this supersedes earlier no-runner and human-only LinkedIn notes.
