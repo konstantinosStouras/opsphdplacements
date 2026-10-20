@@ -38,3 +38,11 @@ The owner authorized three Chrome research agents for all 645 source university 
 
 Browser tab cleanup (owner instruction, 20 October 2026): reuse a source tab where practical and close agent-created source/search/preview tabs immediately after their work is complete. Keep only active work or a genuine pending user challenge/handoff; close it after resolution. Do not close unrelated user tabs. Include this instruction in delegated browser tasks.
 
+
+## Standing public website presentation rule — 20 October 2026
+
+Unless the owner explicitly changes this policy, future website changes must not reintroduce dataset download/export buttons or links (including CSV), visible `.json` filenames or references, or links to this project's GitHub repository. This includes repository files, technical guides, raw-content URLs and the issue tracker. Apply the rule to static pages and generated content: tables, profiles, maps, tooltips, expanded evidence notes, mobile views, errors and no-JavaScript fallbacks.
+
+Keep Operations Academia and OM List attribution, original external evidence links, and the corrections contact `kostas.stouras@ucd.ie`. Preserve stored research provenance and required internal data-fetch paths; translate internal filenames into plain-language descriptions only in the visitor-facing display. Technical contributor documentation may continue to name files and link to GitHub. This is a presentation rule, not access control; do not claim that the public repository or static datasets are private.
+
+Before publishing a website change, follow the visitor-interface audit in WORKFLOW.md. Inspect both source templates and rendered dynamic/expanded content; an initial-page check alone is insufficient. See research-handoff/website-audit-2026-10-20.md for the evidence-note regression found during the audit.
