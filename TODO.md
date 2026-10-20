@@ -190,3 +190,4 @@ The Anuj Mehrotra OM List row also links to the same opened official Scheller pr
 
 - [x] Further university integration: 109 source records attempted, 94 reviewed and 15 partial, with 536 pending. Resolved Louisiana Tech, Lincoln Memorial and Lenoir-Rhyne follow-ups; retained concrete UBC access limitations. Microsoft confirmed as a company and excluded only from university presentation with dated evidence.
 - [ ] Continue all remaining university source records and revisit partial cases; missing operations evidence at a real university does not justify excluding that institution.
+- [x] 20 October 2026: repeat visitor-facing download/link audit across live page, all coverage/trend/profile tabs and both explorer modes. Remove the internal filename from Hendershott's displayed evidence note while preserving the research record. Raw loading URLs remain part of the static application, not visitor controls.
