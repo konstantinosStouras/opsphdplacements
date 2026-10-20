@@ -18,8 +18,8 @@ Generated from committed-format public datasets by `node scripts/update-research
 | of which listed under an operations area | 2161 |
 | Institutions with such a page read | 117 |
 | Listed names already in the people database | 406 |
-| LinkedIn profiles with published history observations | 5 |
-| of which all accessible Experience entries read | 5 |
+| LinkedIn profiles with published history observations | 6 |
+| of which all accessible Experience entries read | 6 |
 | University directory records with completed official-source reviews | 120 |
 | University directory records partially reviewed | 15 |
 | University directory records blocked by source access | 0 |

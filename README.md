@@ -59,6 +59,8 @@ Social sharing uses static Open Graph and Twitter/X metadata with a 1200 × 630 
 
 ## Graduate census and career histories
 
+The 20 October alphabetical continuation adds 24 source-limited career histories containing 154 role entries, checked dates and external source links, from 25 attempted people. One official profile is missing. All 13 accessible LinkedIn Experience entries for Abhijeet Ghadge were read; short biographies and older CVs remain labeled partial and do not establish complete careers. The explorer displays these observations alongside the earlier seven histories.
+
 [RESEARCH-DESIGN.md](RESEARCH-DESIGN.md) specifies the subsequent expansion to all documented graduates of in-scope programs, including industry careers and sector transitions. [database/schema.sql](database/schema.sql) defines the relational schema. Run `python scripts/build-research-database.py` to produce the disposable local snapshot `research/operations-careers.sqlite` from the public JSON, including people, source-reported doctorates, reviewed first-job events and evidence. JSON remains the source of truth during current collection; the generated database does not yet serve the website. Rebuilding replaces that derived snapshot, so do not edit it directly. No later appointments or degree programs are inferred. A historical program register, including closed and renamed programs, starts the graduate census; existing first-placement verification continues in parallel. The schema also supports advisor relationships, publication/authorship records, PhD-year publication assessments and per-fact check histories. These tables are infrastructure, not claims that all graduates or career histories have already been collected.
 
 ## Local preview

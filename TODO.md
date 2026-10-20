@@ -194,3 +194,8 @@ The Anuj Mehrotra OM List row also links to the same opened official Scheller pr
 - [x] 20 October 2026: repeat visitor-facing download/link audit across live page, all coverage/trend/profile tabs and both explorer modes. Remove the internal filename from Hendershott's displayed evidence note while preserving the research record. Raw loading URLs remain part of the static application, not visitor controls.
 
 - [x] 20 October 2026: promote the no-download/no-visible-JSON/no-project-GitHub-link policy to a standing AGENTS.md and CONTRIBUTING.md instruction, with a required dynamic-interface publication audit in WORKFLOW.md. Preserve source provenance, internal loading paths and corrections/reference links.
+# Career batch update — 20 October 2026
+
+- Added 24 source-limited career histories and 154 role entries from the next 25 alphabetical checks, with checked dates, direct sources and per-person follow-ups. One missing official profile (Adams B. Steven) remains blocked.
+- Obtain full current chronologies for the partial cases; do not equate a current-title biography with a complete history. Ghadge’s 13 accessible LinkedIn Experience entries are captured, without claiming a complete real-world career.
+- Preserve disagreements in older CVs (Krieger 2020, Seidmann 2024, Keramati 2022), Wooldridge’s conflicting current rank/list title, and Oke’s conflicting Shell/administrative dates. Search-result CV identity must be checked: the KNUST PDF returned for Muntaka belonged to someone else and was excluded.
