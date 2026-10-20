@@ -1,0 +1,109 @@
+{
+  "id": "boston-university",
+  "status": "reviewed",
+  "canonicalName": "Boston University",
+  "universitySourceUrl": "https://www.bu.edu/eng/",
+  "checkedAt": "2026-10-20",
+  "reviewer": "Codex in Chrome",
+  "units": [
+    {
+      "id": "boston-university--operations-technology-management",
+      "name": "Operations & Technology Management",
+      "school": "Questrom School of Business",
+      "type": "department",
+      "fields": [
+        "operations-management",
+        "supply-chain"
+      ],
+      "sourceUrl": "https://www.bu.edu/questrom/faculty/academic-departments/operations-technology-management/",
+      "checkedAt": "2026-10-20",
+      "evidence": "Official department page names its chair and faculty; mission and research cover process management, supply chains, healthcare delivery and technology innovation."
+    },
+    {
+      "id": "boston-university--systems-engineering",
+      "name": "Division of Systems Engineering",
+      "school": "College of Engineering",
+      "type": "division",
+      "fields": [
+        "operations-research",
+        "supply-chain",
+        "logistics"
+      ],
+      "sourceUrl": "https://www.bu.edu/eng/academics/departments-and-divisions/systems-engineering/",
+      "checkedAt": "2026-10-20",
+      "evidence": "Official division page identifies its academic status and complex-system optimization remit. Its Decision Systems and Operations research area explicitly includes operations research, optimization, queueing, logistics, manufacturing and supply chains."
+    }
+  ],
+  "decisions": [
+    {
+      "sourceDepartmentId": "boston-university__college-of-engineering__systems-engineering",
+      "disposition": "replaced",
+      "unitIds": [
+        "boston-university--systems-engineering"
+      ],
+      "reason": "Use full official Division of Systems Engineering name and correct unit type."
+    },
+    {
+      "sourceDepartmentId": "boston-university__questrom-school-of-business__information-systems",
+      "disposition": "out-of-scope",
+      "unitIds": [],
+      "reason": "Pure Information Systems is excluded by the requested scope."
+    },
+    {
+      "sourceDepartmentId": "boston-university__questrom-school-of-business__operations-and-technology-management",
+      "disposition": "replaced",
+      "unitIds": [
+        "boston-university--operations-technology-management"
+      ],
+      "reason": "Normalize to official department name."
+    },
+    {
+      "sourceDepartmentId": "boston-university__school-of-management__operations-and-technology-management",
+      "disposition": "duplicate",
+      "unitIds": [
+        "boston-university--operations-technology-management"
+      ],
+      "reason": "Same department under older generic School of Management label; current school is Questrom."
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.bu.edu/questrom/faculty/academic-departments/operations-technology-management/",
+      "note": "Current operations department identity, research remit and Questrom parent.",
+      "outcome": "read",
+      "checkedAt": "2026-10-20"
+    },
+    {
+      "url": "https://www.bu.edu/eng/",
+      "note": "Boston University College of Engineering identity.",
+      "outcome": "read",
+      "checkedAt": "2026-10-20"
+    },
+    {
+      "url": "https://www.bu.edu/eng/academics/departments-and-divisions/",
+      "note": "College has three departments and two divisions.",
+      "outcome": "read",
+      "checkedAt": "2026-10-20"
+    },
+    {
+      "url": "https://www.bu.edu/eng/academics/departments-and-divisions/systems-engineering/",
+      "note": "Division of Systems Engineering identity, logistics processes and optimization.",
+      "outcome": "read",
+      "checkedAt": "2026-10-20"
+    },
+    {
+      "url": "https://www.bu.edu/eng/academics/departments-and-divisions/systems-engineering/se-research/",
+      "note": "Current research areas include Decision Systems and Operations.",
+      "outcome": "read",
+      "checkedAt": "2026-10-20"
+    },
+    {
+      "url": "https://www.bu.edu/eng/academics/departments-and-divisions/systems-engineering/se-research/decision-systems-and-operations-2/",
+      "note": "Operations research, mathematical optimization, queueing, simulation, supply chains, logistics and manufacturing explicitly stated.",
+      "outcome": "read",
+      "checkedAt": "2026-10-20"
+    }
+  ],
+  "limitations": [],
+  "duplicateOf": null
+}

@@ -1,0 +1,110 @@
+{
+  "id": "binghamton-university",
+  "status": "reviewed",
+  "canonicalName": "Binghamton University",
+  "universitySourceUrl": "https://www.binghamton.edu/ssie/about/index.html",
+  "checkedAt": "2026-10-20",
+  "reviewer": "Codex in Chrome",
+  "units": [
+    {
+      "id": "binghamton-university--operations-supply-chain-management",
+      "name": "Operations/Supply Chain Management",
+      "school": "School of Management",
+      "type": "area",
+      "fields": [
+        "operations-management",
+        "supply-chain"
+      ],
+      "sourceUrl": "https://www.binghamton.edu/som/research/",
+      "checkedAt": "2026-10-20",
+      "evidence": "Current official School of Management research page names Operations/Supply Chain Management as a faculty research area, separately from Management Information Systems and Management Analytics."
+    },
+    {
+      "id": "binghamton-university--systems-science-industrial-engineering",
+      "name": "School of Systems Science and Industrial Engineering",
+      "school": null,
+      "type": "school",
+      "fields": [
+        "industrial-engineering",
+        "operations-research",
+        "supply-chain"
+      ],
+      "sourceUrl": "https://www.binghamton.edu/ssie/about/index.html",
+      "checkedAt": "2026-10-20",
+      "evidence": "School director message explicitly names the School, describes industrial and systems engineering education and manufacturing/service process improvement. Graduate page verifies system optimization and supply-chain modeling research."
+    },
+    {
+      "id": "binghamton-university--watson-institute-systems-excellence",
+      "name": "Watson Institute for Systems Excellence",
+      "school": null,
+      "type": "institute",
+      "fields": [
+        "industrial-engineering",
+        "operations-management",
+        "supply-chain",
+        "logistics"
+      ],
+      "sourceUrl": "https://www.binghamton.edu/ssie/research/wise/",
+      "checkedAt": "2026-10-20",
+      "evidence": "Official institute page establishes an applied research institute using industrial/systems engineering tools, with warehouse operations, fleet/truck scheduling optimization, lean manufacturing and facility/staffing simulation."
+    }
+  ],
+  "decisions": [
+    {
+      "sourceDepartmentId": "binghamton-university____mis",
+      "disposition": "out-of-scope",
+      "unitIds": [],
+      "reason": "Current official research page lists Management Information Systems as a separate pure IS area; excluded per owner boundary."
+    },
+    {
+      "sourceDepartmentId": "binghamton-university__school-of-management__business-analytics-and-operations",
+      "disposition": "replaced",
+      "unitIds": [
+        "binghamton-university--operations-supply-chain-management"
+      ],
+      "reason": "Imported name replaced by current explicit Operations/Supply Chain Management area on live faculty research page. Search-index snippets retained older BAO wording, but current page was read directly."
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.binghamton.edu/som/faculty-research/index.html",
+      "checkedAt": "2026-10-20",
+      "outcome": "blocked",
+      "note": "Imported faculty URL returns official 404 page; current research directory found independently."
+    },
+    {
+      "url": "https://www.binghamton.edu/som/about/contact/faculty.html",
+      "checkedAt": "2026-10-20",
+      "outcome": "read",
+      "note": "Full current faculty directory read; School of Management identity and separate MIS faculty verified."
+    },
+    {
+      "url": "https://www.binghamton.edu/som/research/",
+      "checkedAt": "2026-10-20",
+      "outcome": "read",
+      "note": "Current faculty areas read, explicitly Operations/Supply Chain Management distinct from MIS and Management Analytics."
+    },
+    {
+      "url": "https://www.binghamton.edu/ssie/about/index.html",
+      "checkedAt": "2026-10-20",
+      "outcome": "read",
+      "note": "School director names current School of Systems Science and Industrial Engineering; university identity and engineering remit verified."
+    },
+    {
+      "url": "https://www.binghamton.edu/ssie/graduate/industrial-systems-engineering.html",
+      "checkedAt": "2026-10-20",
+      "outcome": "read",
+      "note": "IE graduate programmes and optimization, supply-chain modeling and manufacturing-system research verified."
+    },
+    {
+      "url": "https://www.binghamton.edu/ssie/research/wise/",
+      "checkedAt": "2026-10-20",
+      "outcome": "read",
+      "note": "Full institute name and substantive IE, logistics and operations research remit read."
+    }
+  ],
+  "limitations": [
+    "Published current school/research-area names rather than older department/Business Analytics and Operations wording in imported links and search snippets."
+  ],
+  "duplicateOf": null
+}

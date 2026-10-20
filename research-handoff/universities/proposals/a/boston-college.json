@@ -1,0 +1,88 @@
+{
+  "id": "boston-college",
+  "status": "reviewed",
+  "canonicalName": "Boston College",
+  "universitySourceUrl": "https://www.bc.edu/bc-web/schools/carroll-school/academic-departments/operations-management.html",
+  "checkedAt": "2026-10-20",
+  "reviewer": "Codex in Chrome",
+  "units": [
+    {
+      "id": "boston-college--operations-management",
+      "name": "Operations Management",
+      "school": "Wallace E. Carroll School of Management",
+      "type": "area",
+      "fields": [
+        "operations-management"
+      ],
+      "sourceUrl": "https://www.bc.edu/bc-web/schools/carroll-school/academic-departments/operations-management.html",
+      "checkedAt": "2026-10-20",
+      "evidence": "Official Business Analytics department page explicitly lists Operations Management as one of its three disciplines, with a distinct description and concentration; retained as an area, not a standalone department."
+    }
+  ],
+  "decisions": [
+    {
+      "sourceDepartmentId": "boston-college____business",
+      "disposition": "not-a-unit",
+      "unitIds": [],
+      "reason": "Generic Business label is not an official departmental name."
+    },
+    {
+      "sourceDepartmentId": "boston-college__carroll-school-of-management__business-analytics",
+      "disposition": "replaced",
+      "unitIds": [
+        "boston-college--operations-management"
+      ],
+      "reason": "The current Business Analytics department combines three disciplines; retain its explicitly named Operations Management area and omit Information Systems."
+    },
+    {
+      "sourceDepartmentId": "boston-college__carroll-school-of-management__operations-management",
+      "disposition": "duplicate",
+      "unitIds": [
+        "boston-college--operations-management"
+      ],
+      "reason": "Same Operations Management area; current parent is Business Analytics, not a separate Operations Management department."
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.bc.edu/bc-web/schools/carroll-school/academic-departments/operations-management.html",
+      "note": "Official Boston College and Carroll branding; current department has Business Analytics, Information Systems and Operations Management disciplines.",
+      "checkedAt": "2026-10-20",
+      "outcome": "read"
+    },
+    {
+      "url": "https://www.bc.edu/content/bc-web.html",
+      "note": "Boston College university homepage.",
+      "checkedAt": "2026-10-20",
+      "outcome": "read"
+    },
+    {
+      "url": "https://www.bc.edu/content/bc-web/academics.html",
+      "note": "Full Wallace E. Carroll School of Management name and school structure.",
+      "checkedAt": "2026-10-20",
+      "outcome": "read"
+    },
+    {
+      "url": "https://www.bc.edu/content/bc-web/academics/schools-fields-of-study.html",
+      "note": "Current school listing.",
+      "checkedAt": "2026-10-20",
+      "outcome": "read"
+    },
+    {
+      "url": "https://www.bc.edu/content/bc-web/admission/majors-minors.html",
+      "note": "Morrissey engineering offering is Human-Centered Engineering.",
+      "checkedAt": "2026-10-20",
+      "outcome": "read"
+    },
+    {
+      "url": "https://www.bc.edu/engineering",
+      "note": "Engineering Department describes general human-centered engineering and service-focused technology; no industrial engineering or operations-specific unit established.",
+      "checkedAt": "2026-10-20",
+      "outcome": "read"
+    }
+  ],
+  "limitations": [
+    "Operations Management is a named discipline within Business Analytics; its area label is retained rather than misrepresenting it as a separate department. General Human-Centered Engineering is not included without an established operations/industrial-engineering remit."
+  ],
+  "duplicateOf": null
+}

@@ -1,0 +1,108 @@
+{
+  "units": [
+    {
+      "type": "area",
+      "checkedAt": "2026-10-20",
+      "evidence": "Official Business Administration area page explicitly identifies IOSA, operations/supply-chain research and management of value-added goods/services processes.",
+      "school": "Gies College of Business",
+      "name": "Information Systems, Operations, Supply Chain, and Analytics (IOSA)",
+      "sourceUrl": "https://giesbusiness.illinois.edu/business-administration/badm-areas-iosa",
+      "fields": [
+        "operations-management",
+        "supply-chain"
+      ],
+      "id": "university-of-illinois-at-urbana-champaign--iosa"
+    },
+    {
+      "type": "department",
+      "checkedAt": "2026-10-20",
+      "evidence": "Official engineering site names the department and college; linked Operations Research page describes optimization, queues, simulation and supply-chain/logistics applications.",
+      "school": "The Grainger College of Engineering",
+      "name": "Industrial & Enterprise Systems Engineering",
+      "sourceUrl": "https://ise.illinois.edu/",
+      "fields": [
+        "industrial-engineering",
+        "operations-research",
+        "supply-chain",
+        "logistics"
+      ],
+      "id": "university-of-illinois-at-urbana-champaign--industrial-enterprise-systems-engineering"
+    }
+  ],
+  "limitations": [
+    "Engineering site uses University of Illinois Urbana-Champaign, while Gies footer retains University of Illinois at Urbana-Champaign; treated as the same university, using current engineering header spelling."
+  ],
+  "sources": [
+    {
+      "outcome": "read",
+      "url": "https://giesbusiness.illinois.edu/business-administration/badm-areas-iosa",
+      "checkedAt": "2026-10-20",
+      "note": "Full official business area name, scope and university footer identity."
+    },
+    {
+      "outcome": "read",
+      "url": "https://ise.illinois.edu/",
+      "checkedAt": "2026-10-20",
+      "note": "Engineering department name, Grainger parent and university identity."
+    },
+    {
+      "outcome": "read",
+      "url": "https://ise.illinois.edu/research/foundations/operations-research",
+      "checkedAt": "2026-10-20",
+      "note": "Operations research and supply-chain/logistics scope."
+    }
+  ],
+  "id": "university-of-illinois-at-urbana-champaign",
+  "reviewer": "Codex in Chrome",
+  "universitySourceUrl": "https://ise.illinois.edu/",
+  "status": "reviewed",
+  "checkedAt": "2026-10-20",
+  "duplicateOf": null,
+  "decisions": [
+    {
+      "disposition": "not-a-unit",
+      "reason": "University-only placeholder names no department.",
+      "sourceDepartmentId": "university-of-illinois-at-urbana-champaign",
+      "unitIds": []
+    },
+    {
+      "disposition": "replaced",
+      "reason": "Full official engineering unit name retained.",
+      "sourceDepartmentId": "university-of-illinois-at-urbana-champaign____industrial-and-enterprise-systems-engineering",
+      "unitIds": [
+        "university-of-illinois-at-urbana-champaign--industrial-enterprise-systems-engineering"
+      ]
+    },
+    {
+      "disposition": "duplicate",
+      "reason": "Consolidate business-administration parent and abbreviated operations labels under the explicitly named IOSA area.",
+      "sourceDepartmentId": "university-of-illinois-at-urbana-champaign____is-om-scm-ba",
+      "unitIds": [
+        "university-of-illinois-at-urbana-champaign--iosa"
+      ]
+    },
+    {
+      "disposition": "duplicate",
+      "reason": "Consolidate business-administration parent and abbreviated operations labels under the explicitly named IOSA area.",
+      "sourceDepartmentId": "university-of-illinois-at-urbana-champaign__gies-college-of-business__business-administration",
+      "unitIds": [
+        "university-of-illinois-at-urbana-champaign--iosa"
+      ]
+    },
+    {
+      "disposition": "replaced",
+      "reason": "Full official IOSA area name retained with officially stated abbreviation.",
+      "sourceDepartmentId": "university-of-illinois-at-urbana-champaign__gies-college-of-business__information-systems-operations-supply-chain-and-analytics",
+      "unitIds": [
+        "university-of-illinois-at-urbana-champaign--iosa"
+      ]
+    },
+    {
+      "disposition": "out-of-scope",
+      "reason": "Human resources/technology specialty is outside operations, industrial engineering, logistics and supply chain.",
+      "sourceDepartmentId": "university-of-illinois-at-urbana-champaign__school-of-labor-and-employment-relations__human-resources-and-technology",
+      "unitIds": []
+    }
+  ],
+  "canonicalName": "University of Illinois Urbana-Champaign"
+}

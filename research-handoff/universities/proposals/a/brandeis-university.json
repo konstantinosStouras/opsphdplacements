@@ -1,0 +1,99 @@
+{
+  "id": "brandeis-university",
+  "status": "reviewed",
+  "canonicalName": "Brandeis University",
+  "universitySourceUrl": "https://www.brandeis.edu/business/faculty-leadership/faculty.html",
+  "checkedAt": "2026-10-20",
+  "reviewer": "Codex in Chrome",
+  "units": [
+    {
+      "id": "brandeis-university--business-economics",
+      "name": "School of Business and Economics",
+      "school": null,
+      "type": "school",
+      "fields": [
+        "operations-research",
+        "operations-management"
+      ],
+      "sourceUrl": "https://www.brandeis.edu/business/faculty-leadership/faculty.html",
+      "checkedAt": "2026-10-20",
+      "evidence": "Current official faculty directory identifies the school as host for Gizem Nemutlu (healthcare stochastic modeling and optimization) and Brad Morrison; Heller teaching roster explicitly identifies Morrison operations-management expertise."
+    },
+    {
+      "id": "brandeis-university--heller",
+      "name": "The Heller School for Social Policy and Management",
+      "school": null,
+      "type": "school",
+      "fields": [
+        "operations-management"
+      ],
+      "sourceUrl": "https://heller.brandeis.edu/physicians-emba/faculty/index.html",
+      "checkedAt": "2026-10-20",
+      "evidence": "Official Heller Executive MBA faculty roster lists Brad Morrison teaching with operations management, process improvement and healthcare simulation expertise; programme explicitly builds operations skills."
+    }
+  ],
+  "decisions": [
+    {
+      "sourceDepartmentId": "brandeis-university__heller-school-for-social-policy-and-management",
+      "disposition": "replaced",
+      "unitIds": [
+        "brandeis-university--heller"
+      ],
+      "reason": "Keep verified school-level host with full official name; no separate operations department invented."
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.brandeis.edu/business/faculty-leadership/faculty.html",
+      "note": "Current university identity and School of Business and Economics faculty and optimization expertise.",
+      "outcome": "read",
+      "checkedAt": "2026-10-20"
+    },
+    {
+      "url": "https://scholarworks.brandeis.edu/esploro/profile/gizem_nemutlu/overview",
+      "note": "Biography names School of Business and Economics and healthcare stochastic modeling/optimization; profile heading still uses older International Business School.",
+      "outcome": "read",
+      "checkedAt": "2026-10-20"
+    },
+    {
+      "url": "https://heller.brandeis.edu/",
+      "note": "Full Heller school name and current programmes.",
+      "outcome": "read",
+      "checkedAt": "2026-10-20"
+    },
+    {
+      "url": "https://heller.brandeis.edu/physicians-emba/index.html",
+      "note": "Executive MBA explicitly includes operations skills.",
+      "outcome": "read",
+      "checkedAt": "2026-10-20"
+    },
+    {
+      "url": "https://heller.brandeis.edu/physicians-emba/faculty/index.html",
+      "note": "Full faculty roster explicitly lists Morrison operations-management/process improvement expertise.",
+      "outcome": "read",
+      "checkedAt": "2026-10-20"
+    },
+    {
+      "url": "https://www.brandeis.edu/science/org-chart/index.html",
+      "note": "Current science school directory identifies engineering as a programme, not industrial engineering department.",
+      "outcome": "read",
+      "checkedAt": "2026-10-20"
+    },
+    {
+      "url": "https://www.brandeis.edu/engineering/",
+      "note": "New interdepartmental Engineering Science programme focused on life/materials science and interdisciplinary design; no IE or logistics unit established.",
+      "outcome": "read",
+      "checkedAt": "2026-10-20"
+    },
+    {
+      "url": "http://www.brandeis.edu/facultyguide/school.html?school=HS",
+      "note": "Imported facultyguide route blocked by browser; current Heller sources used instead.",
+      "outcome": "blocked",
+      "checkedAt": "2026-10-20"
+    }
+  ],
+  "limitations": [
+    "School-level hosts retained; neither source establishes a standalone Operations Management department. Older International Business School heading persists on profile, while current directory and biography use School of Business and Economics. Heller listing supports teaching affiliation rather than separate primary faculty appointment."
+  ],
+  "duplicateOf": null
+}

@@ -1,0 +1,104 @@
+{
+  "id": "bowling-green-state-university",
+  "status": "reviewed",
+  "canonicalName": "Bowling Green State University",
+  "universitySourceUrl": "https://www.bgsu.edu/business/departments-and-programs/management.html",
+  "checkedAt": "2026-10-20",
+  "reviewer": "Codex in Chrome",
+  "units": [
+    {
+      "id": "bowling-green-state-university--management",
+      "name": "Department of Management",
+      "school": "Allen W. and Carol M. Schmidthorst College of Business",
+      "type": "department",
+      "fields": [
+        "supply-chain"
+      ],
+      "sourceUrl": "https://www.bgsu.edu/business/departments-and-programs/management.html",
+      "evidence": "Official department explicitly hosts undergraduate, certificate and MBA supply chain management programs.",
+      "checkedAt": "2026-10-20"
+    },
+    {
+      "id": "bowling-green-state-university--supply-chain-institute",
+      "name": "Supply Chain Management Institute",
+      "school": "Allen W. and Carol M. Schmidthorst College of Business",
+      "type": "institute",
+      "fields": [
+        "supply-chain"
+      ],
+      "sourceUrl": "https://www.bgsu.edu/business/departments-and-programs/management/scmi.html",
+      "evidence": "Official academic-industry institute supports supply chain research and experiential education, directed by Amelia Carr.",
+      "checkedAt": "2026-10-20"
+    },
+    {
+      "id": "bowling-green-state-university--engineering",
+      "name": "School of Engineering",
+      "school": "College of Engineering and Innovation",
+      "type": "school",
+      "fields": [
+        "logistics"
+      ],
+      "sourceUrl": "https://www.bgsu.edu/engineering-and-innovation/schools-and-departments/school-of-engineering",
+      "evidence": "Current school explicitly hosts Logistics Systems Engineering masters; retain verified academic host rather than representing the degree as a separate department.",
+      "checkedAt": "2026-10-20"
+    }
+  ],
+  "decisions": [
+    {
+      "sourceDepartmentId": "bowling-green-state-university____supply-chain-management",
+      "disposition": "replaced",
+      "unitIds": [
+        "bowling-green-state-university--management"
+      ],
+      "reason": "Supply Chain Management is hosted in the official Department of Management, not a separately verified department."
+    },
+    {
+      "sourceDepartmentId": "bowling-green-state-university__allen-w-and-carol-m-schmidthorst-college-of-business__business-analytics-economics-and-information-systems",
+      "disposition": "out-of-scope",
+      "unitIds": [],
+      "reason": "Imported analytics/economics/Information Systems unit has no Operations in its name; keep the explicitly verified supply-chain host instead."
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.bgsu.edu/business/departments-and-programs/management.html",
+      "note": "University identity, full business school and Department of Management; supply chain programs.",
+      "outcome": "read",
+      "checkedAt": "2026-10-20"
+    },
+    {
+      "url": "https://www.bgsu.edu/business/departments-and-programs/management/scmi.html",
+      "note": "Supply Chain Management Institute current mission and director.",
+      "outcome": "read",
+      "checkedAt": "2026-10-20"
+    },
+    {
+      "url": "https://www.bgsu.edu/academics",
+      "note": "Program directory read; search filter did not update results and was not used to infer absence.",
+      "outcome": "read",
+      "checkedAt": "2026-10-20"
+    },
+    {
+      "url": "https://www.bgsu.edu/a-z-links.html#A-Z",
+      "note": "Directory links current College of Engineering and Innovation.",
+      "outcome": "read",
+      "checkedAt": "2026-10-20"
+    },
+    {
+      "url": "https://www.bgsu.edu/engineering-and-innovation.html",
+      "note": "Current college structure and Logistics Systems Engineering degree.",
+      "outcome": "read",
+      "checkedAt": "2026-10-20"
+    },
+    {
+      "url": "https://www.bgsu.edu/engineering-and-innovation/schools-and-departments/school-of-engineering",
+      "note": "Current School of Engineering academic programs include Logistics Systems Engineering.",
+      "outcome": "read",
+      "checkedAt": "2026-10-20"
+    }
+  ],
+  "limitations": [
+    "Engineering is included at the verified school level; degree titles are not promoted to departments."
+  ],
+  "duplicateOf": null
+}

@@ -1,0 +1,67 @@
+{
+  "id": "bilkent-university",
+  "status": "reviewed",
+  "canonicalName": "Bilkent University",
+  "universitySourceUrl": "https://w3.bilkent.edu.tr/bilkent/faculties-and-departments/",
+  "checkedAt": "2026-10-20",
+  "reviewer": "Codex in Chrome",
+  "units": [
+    {
+      "id": "bilkent-university--operations-management",
+      "name": "Operations Management",
+      "school": "Faculty of Business Administration",
+      "type": "area",
+      "fields": [
+        "operations-management"
+      ],
+      "sourceUrl": "https://fba.bilkent.edu.tr/operations-management/",
+      "checkedAt": "2026-10-20",
+      "evidence": "Official faculty area page identifies Operations Management and its five faculty; university organization lists the broader Department of Management, so the narrower named area is retained."
+    },
+    {
+      "id": "bilkent-university--industrial-engineering",
+      "name": "Department of Industrial Engineering",
+      "school": "Faculty of Engineering",
+      "type": "department",
+      "fields": [
+        "industrial-engineering",
+        "operations-research"
+      ],
+      "sourceUrl": "https://catalog.bilkent.edu.tr/dep/d13.html",
+      "checkedAt": "2026-10-20",
+      "evidence": "Current official catalog explicitly names department and BS/MS/PhD programs, systems optimization and manufacturing/service-system design, with operations-research mathematics and mathematical-programming graduate core."
+    }
+  ],
+  "decisions": [
+    {
+      "sourceDepartmentId": "bilkent-university__faculty-of-business-administration__operations-management",
+      "disposition": "replaced",
+      "unitIds": [
+        "bilkent-university--operations-management"
+      ],
+      "reason": "Confirmed official full area name; represented as area rather than a separate department."
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://w3.bilkent.edu.tr/bilkent/faculties-and-departments/",
+      "checkedAt": "2026-10-20",
+      "outcome": "read",
+      "note": "University identity, Faculty of Business Administration/Management and Faculty of Engineering/Industrial Engineering hierarchy read."
+    },
+    {
+      "url": "https://fba.bilkent.edu.tr/operations-management/",
+      "checkedAt": "2026-10-20",
+      "outcome": "read",
+      "note": "Official named Operations Management faculty area and five faculty verified."
+    },
+    {
+      "url": "https://catalog.bilkent.edu.tr/dep/d13.html",
+      "checkedAt": "2026-10-20",
+      "outcome": "read",
+      "note": "Full department name, current chair, substantive IE/optimization scope and OR graduate core read."
+    }
+  ],
+  "limitations": [],
+  "duplicateOf": null
+}

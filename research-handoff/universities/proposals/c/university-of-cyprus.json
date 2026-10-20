@@ -1,0 +1,63 @@
+{
+  "id": "university-of-cyprus",
+  "limitations": [
+    "Parent school name not independently established on the accessed business faculty page, so left null. Mechanical/manufacturing laboratory directory covers materials, robotics and physical systems; manufacturing wording alone was not treated as industrial engineering."
+  ],
+  "reviewer": "Codex in Chrome",
+  "units": [
+    {
+      "type": "department",
+      "fields": [
+        "operations-management",
+        "operations-research"
+      ],
+      "checkedAt": "2026-10-20",
+      "sourceUrl": "https://www.ucy.ac.cy/bpa/people/academic-staff/?lang=en",
+      "evidence": "Official department faculty page names the university and department and lists multiple Operations Management professors, including vice-chair, alongside Management Science faculty.",
+      "name": "Department of Business and Public Administration",
+      "id": "university-of-cyprus--business-public-administration",
+      "school": null
+    }
+  ],
+  "checkedAt": "2026-10-20",
+  "sources": [
+    {
+      "outcome": "read",
+      "url": "https://www.ucy.ac.cy/bpa/people/academic-staff/?lang=en",
+      "note": "Full business department name and multiple operations faculty; page last updated June 25, 2026.",
+      "checkedAt": "2026-10-20"
+    },
+    {
+      "outcome": "read",
+      "url": "https://www.ucy.ac.cy/mme/research/",
+      "note": "Engineering department name verified, research overview had no detailed body.",
+      "checkedAt": "2026-10-20"
+    },
+    {
+      "outcome": "read",
+      "url": "https://www.ucy.ac.cy/mme/research/research-labs/",
+      "note": "Laboratory directory reviewed: physical/materials/manufacturing/robotics labs rather than separately established operations or industrial engineering unit.",
+      "checkedAt": "2026-10-20"
+    }
+  ],
+  "canonicalName": "University of Cyprus",
+  "status": "reviewed",
+  "decisions": [
+    {
+      "unitIds": [],
+      "reason": "University-only placeholder names no department.",
+      "disposition": "not-a-unit",
+      "sourceDepartmentId": "university-of-cyprus"
+    },
+    {
+      "unitIds": [
+        "university-of-cyprus--business-public-administration"
+      ],
+      "reason": "Verified full department name retained with explicit Operations Management faculty remit.",
+      "disposition": "replaced",
+      "sourceDepartmentId": "university-of-cyprus__school-economics-and-management__business-and-public-administration"
+    }
+  ],
+  "universitySourceUrl": "https://www.ucy.ac.cy/bpa/people/academic-staff/?lang=en",
+  "duplicateOf": null
+}
