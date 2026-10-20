@@ -1,0 +1,60 @@
+{
+  "id": "macewan-university",
+  "status": "reviewed",
+  "canonicalName": "MacEwan University",
+  "universitySourceUrl": "https://www.macewan.ca/academics/academic-departments/",
+  "checkedAt": "2026-10-20",
+  "reviewer": "Codex in Chrome",
+  "units": [
+    {
+      "school": "Triffo School of Business",
+      "name": "Department of Decision Sciences",
+      "id": "macewan-university--decision-sciences",
+      "evidence": "Official heading names department and parent Triffo School of Business; description explicitly covers systems thinking in supply chain, procurement, logistics and transportation.",
+      "checkedAt": "2026-10-20",
+      "sourceUrl": "https://www.macewan.ca/academics/academic-departments/decision-sciences/",
+      "fields": [
+        "supply-chain",
+        "logistics",
+        "operations-management"
+      ],
+      "type": "department"
+    }
+  ],
+  "decisions": [
+    {
+      "reason": "Official decision sciences unit supplies full current name for imported management-science subject label.",
+      "sourceDepartmentId": "macewan-university____management-science",
+      "disposition": "replaced",
+      "unitIds": [
+        "macewan-university--decision-sciences"
+      ]
+    },
+    {
+      "reason": "Supply chain/logistics subjects are explicitly taught within Decision Sciences; not additional departments.",
+      "sourceDepartmentId": "macewan-university____scm-logistics",
+      "disposition": "duplicate",
+      "unitIds": [
+        "macewan-university--decision-sciences"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "note": "Department, parent school and operations remit.",
+      "outcome": "read",
+      "url": "https://www.macewan.ca/academics/academic-departments/decision-sciences/",
+      "checkedAt": "2026-10-20"
+    },
+    {
+      "note": "Full official department index checked; no industrial engineering department listed.",
+      "outcome": "read",
+      "url": "https://www.macewan.ca/academics/academic-departments/",
+      "checkedAt": "2026-10-20"
+    }
+  ],
+  "limitations": [
+    "Subject-label mapping represents current relevant unit, not evidence of historical administrative rename."
+  ],
+  "duplicateOf": null
+}

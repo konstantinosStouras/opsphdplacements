@@ -14,3 +14,5 @@ Initial overlay release prepared on 20 October: 49 imported records attempted, 3
 
 
 The first overlay release was deployed successfully at 6dd3f5e (Pages run 39401134226); live Chrome confirmed 31 reviewed, 18 partial and 596 pending source records, plus full LSOM output and source/check dates. The next integrated snapshot contains 68 attempted records (52 reviewed, 16 partial, 577 pending), including Houston, the screenshot examples, and UCL alias consolidation; this paragraph does not itself confirm its deployment. Existing first-job statistics are unchanged.
+
+The 68-record snapshot was published at ef3a32c; Pages run 39401960592 succeeded and Chrome confirmed the cleaned Kurdistan entry and dated official evidence. The next integration contains 85 attempted records: 68 reviewed, 17 partial and 560 pending. KIMEP is now assigned to the integrator; current English HR evidence corroborates college operations scope, while English-site timeouts leave the lower-level organization partial. MIT aliases consolidate explicitly. No first-placement conclusions changed.

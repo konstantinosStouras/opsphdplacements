@@ -1,0 +1,115 @@
+{
+  "id": "arizona-state-university",
+  "status": "reviewed",
+  "canonicalName": "Arizona State University",
+  "universitySourceUrl": "https://wpcarey.asu.edu/people/departments/supply-chain-management",
+  "checkedAt": "2026-10-20",
+  "reviewer": "Codex in Chrome",
+  "units": [
+    {
+      "id": "arizona-state-university--supply-chain-management",
+      "name": "NASPO Department of Supply Chain Management",
+      "school": "W. P. Carey School of Business",
+      "type": "department",
+      "fields": [
+        "supply-chain"
+      ],
+      "sourceUrl": "https://wpcarey.asu.edu/people/departments/supply-chain-management",
+      "checkedAt": "2026-10-20",
+      "evidence": "Official heading uses the full NASPO Department name and describes supply chain education, research and industry collaboration within W. P. Carey."
+    },
+    {
+      "id": "arizona-state-university--computing-augmented-intelligence",
+      "name": "School of Computing and Augmented Intelligence",
+      "school": "Ira A. Fulton Schools of Engineering",
+      "type": "school",
+      "fields": [
+        "industrial-engineering",
+        "operations-research"
+      ],
+      "sourceUrl": "https://scai.engineering.asu.edu/",
+      "checkedAt": "2026-10-20",
+      "evidence": "Official school page houses industrial engineering and describes design, operation and improvement of manufacturing/service systems integrating people, equipment and information. This is an engineering school with an industrial engineering programme, not a pure Information Systems department."
+    }
+  ],
+  "decisions": [
+    {
+      "sourceDepartmentId": "arizona-state-university",
+      "disposition": "not-a-unit",
+      "unitIds": [],
+      "reason": "University-only placeholder is not a department."
+    },
+    {
+      "sourceDepartmentId": "arizona-state-university____learning-optimization-and-decision-analytics",
+      "disposition": "unresolved",
+      "unitIds": [],
+      "reason": "Exact imported phrase not established as a current named unit in opened official school/research listings; no guessed equivalence."
+    },
+    {
+      "sourceDepartmentId": "arizona-state-university__ira-a-fulton-schools-of-engineering",
+      "disposition": "replaced",
+      "unitIds": [
+        "arizona-state-university--computing-augmented-intelligence"
+      ],
+      "reason": "Broad engineering umbrella replaced with the verified school housing industrial engineering."
+    },
+    {
+      "sourceDepartmentId": "arizona-state-university__ira-a-fulton-schools-of-engineering__computing-and-augmented-intelligence",
+      "disposition": "replaced",
+      "unitIds": [
+        "arizona-state-university--computing-augmented-intelligence"
+      ],
+      "reason": "Official page establishes current full unit name and scope."
+    },
+    {
+      "sourceDepartmentId": "arizona-state-university__w-p-carey-school-of-business__information-systems",
+      "disposition": "out-of-scope",
+      "unitIds": [],
+      "reason": "Pure Information Systems is separately listed from SCM and excluded by owner scope."
+    },
+    {
+      "sourceDepartmentId": "arizona-state-university__w-p-carey-school-of-business__supply-chain-management",
+      "disposition": "replaced",
+      "unitIds": [
+        "arizona-state-university--supply-chain-management"
+      ],
+      "reason": "Official page establishes current full unit name and scope."
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://wpcarey.asu.edu/people/departments/supply-chain-management",
+      "note": "Current department name, parent business school and separate IS department.",
+      "checkedAt": "2026-10-20",
+      "outcome": "read"
+    },
+    {
+      "url": "https://engineering.asu.edu/faculty/",
+      "note": "Fulton umbrella and component schools.",
+      "checkedAt": "2026-10-20",
+      "outcome": "read"
+    },
+    {
+      "url": "https://scai.engineering.asu.edu/",
+      "note": "School identity, engineering hierarchy and industrial engineering scope.",
+      "checkedAt": "2026-10-20",
+      "outcome": "read"
+    },
+    {
+      "url": "https://scai.engineering.asu.edu/research-labs/",
+      "note": "Research laboratory listing read; no exact Learning, Optimization, and Decision Analytics unit verified.",
+      "checkedAt": "2026-10-20",
+      "outcome": "read"
+    },
+    {
+      "url": "https://msn.engineering.asu.edu",
+      "note": "Manufacturing systems school checked: advanced manufacturing, robotics and systems engineering. No additional operations department established.",
+      "checkedAt": "2026-10-20",
+      "outcome": "read"
+    }
+  ],
+  "limitations": [
+    "Imported Learning, Optimization, and Decision Analytics remains unresolved as an organization; it is not published as a department. Industrial engineering is represented by its verified school host rather than inventing a standalone department."
+  ],
+  "duplicateOf": null
+}

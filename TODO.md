@@ -182,3 +182,6 @@ The Anuj Mehrotra OM List row also links to the same opened official Scheller pr
 - [x] Link OperationsAcademia.org and OM List directly from the abstract so readers can identify both references.
 
 - [x] 20 October 2026: remove project GitHub links from the footer and methodology, replace issue feedback with the corrections email, and remove empty parentheses left by an earlier dataset-link removal. The repository itself remains public.
+
+- [x] University cleanup continuation, 20 October: integrated 85 Chrome observations (68 reviewed, 17 partial); full official names, explicit MIT aliases and dated KIMEP access limitations preserved. The 68-record release at ef3a32c deployed successfully.
+- [ ] Continue the remaining 560 university records and resolve 17 partial reviews; old KIMEP learning-platform structure needs current organization evidence. See university progress and proposals for newer unmerged work.
