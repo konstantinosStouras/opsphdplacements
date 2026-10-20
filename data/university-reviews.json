@@ -3,11 +3,11 @@
   "metadata": {
     "definition": "Individual Chrome reviews of official university names and operations units. The original directory remains in universities.json. Reviewed describes the stated source scope, not an exhaustive current or historical census.",
     "sourceRecords": 645,
-    "attempted": 49,
-    "reviewed": 31,
-    "partial": 18,
+    "attempted": 68,
+    "reviewed": 52,
+    "partial": 16,
     "blocked": 0,
-    "pending": 596
+    "pending": 577
   },
   "records": [
     {
@@ -973,6 +973,420 @@
       "updatedAt": "2026-10-20T09:25:45Z"
     },
     {
+      "id": "american-university-kogod-school-of-business",
+      "status": "reviewed",
+      "canonicalName": "American University",
+      "universitySourceUrl": "https://www.american.edu/kogod/directory/information_technology.cfm",
+      "checkedAt": "2026-10-20",
+      "reviewer": "Codex in Chrome",
+      "units": [],
+      "decisions": [
+        {
+          "sourceDepartmentId": "american-university-kogod-school-of-business____information-technology-business-analytics-ai",
+          "disposition": "out-of-scope",
+          "unitIds": [],
+          "reason": "Current official name is Department of Information Technology & Analytics. Owner/integrator applies pure IT/analytics naming exclusion; no independently named operations or supply-chain group verified. Explicit departmental operations teaching and faculty supply-chain research are preserved in sources and limitation."
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.american.edu/kogod/directory/information_technology.cfm",
+          "checkedAt": "2026-10-20",
+          "outcome": "read",
+          "note": "American University parent identity and Kogod School of Business hierarchy; official Information Technology and Analytics Department teaches production/operations management but has no operations in unit name."
+        },
+        {
+          "url": "https://www.american.edu/kogod/faculty/omar.cfm",
+          "checkedAt": "2026-10-20",
+          "outcome": "read",
+          "note": "Official profile names professor in Department of Information Technology & Analytics and explicit global supply-chain research in integration/responsiveness and sustainability; not a named separate unit."
+        },
+        {
+          "url": "https://www.american.edu/kogod/faculty/karaesme.cfm",
+          "checkedAt": "2026-10-20",
+          "outcome": "read",
+          "note": "Department faculty member teaches multiple sections of Intro to Operations Management in 2026; not a separate named unit."
+        },
+        {
+          "url": "https://www.american.edu/",
+          "checkedAt": "2026-10-20",
+          "outcome": "read",
+          "note": "University identity and academic schools inventory."
+        },
+        {
+          "url": "https://www.american.edu/cas",
+          "checkedAt": "2026-10-20",
+          "outcome": "read",
+          "note": "Expanded complete Arts and Sciences programme list identifies engineering joint degree."
+        },
+        {
+          "url": "https://www.american.edu/cas/engineering/index.cfm",
+          "checkedAt": "2026-10-20",
+          "outcome": "read",
+          "note": "Engineering joint programme explicitly places industrial engineering and operations research degrees at Columbia University, not American University departments."
+        }
+      ],
+      "limitations": [
+        "Operations teaching and supply-chain research exist within Information Technology & Analytics, but no named operations/supply-chain group was verified; department excluded under owner naming boundary.",
+        "Joint-degree engineering majors at Columbia are not local American University departments."
+      ],
+      "duplicateOf": null,
+      "addedAt": "2026-10-20T09:30:49Z",
+      "updatedAt": "2026-10-20T09:30:49Z"
+    },
+    {
+      "id": "american-university-of-beirut",
+      "status": "reviewed",
+      "canonicalName": "American University of Beirut",
+      "universitySourceUrl": "https://www.aub.edu.lb/osb/Pages/Faculty.aspx",
+      "checkedAt": "2026-10-20",
+      "reviewer": "Codex in Chrome",
+      "units": [
+        {
+          "id": "american-university-of-beirut--industrial-engineering-management",
+          "name": "Industrial Engineering and Management",
+          "school": "Maroun Semaan Faculty of Engineering and Architecture",
+          "type": "department",
+          "fields": [
+            "industrial-engineering",
+            "operations-management"
+          ],
+          "sourceUrl": "https://www.aub.edu.lb/msfea/iem/Pages/default.aspx",
+          "checkedAt": "2026-10-20",
+          "evidence": "Official full department breadcrumb and description identify the industrial engineering department; linked final-year projects apply industrial engineering methods to operational efficiency and inventory optimization."
+        },
+        {
+          "id": "american-university-of-beirut--business-information-decision-systems",
+          "name": "Business Information & Decision Systems",
+          "school": "Suliman S. Olayan School of Business",
+          "type": "area",
+          "fields": [
+            "operations-management",
+            "operations-research",
+            "supply-chain"
+          ],
+          "sourceUrl": "https://www.aub.edu.lb/osb/Pages/Faculty.aspx",
+          "checkedAt": "2026-10-20",
+          "evidence": "Official faculty page calls this an academic track with a convener; lists operations research, operations management, inventory and supply-chain management research for several members. Recorded as an academic area rather than a department."
+        }
+      ],
+      "decisions": [
+        {
+          "sourceDepartmentId": "american-university-of-beirut",
+          "disposition": "not-a-unit",
+          "unitIds": [],
+          "reason": "Unnamed source row is not a department."
+        },
+        {
+          "sourceDepartmentId": "american-university-of-beirut____ie-or-data-science",
+          "disposition": "replaced",
+          "unitIds": [
+            "american-university-of-beirut--industrial-engineering-management"
+          ],
+          "reason": "Mixed disciplinary shorthand replaced with verified full industrial engineering department; no independent Data Science unit added."
+        },
+        {
+          "sourceDepartmentId": "american-university-of-beirut__suliman-s-olayan-school-of-business__business-information-and-decision-systems",
+          "disposition": "replaced",
+          "unitIds": [
+            "american-university-of-beirut--business-information-decision-systems"
+          ],
+          "reason": "Current official academic track wording and type; substantive decision-systems operations remit verified."
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.aub.edu.lb/msfea/iem/Pages/default.aspx",
+          "checkedAt": "2026-10-20",
+          "outcome": "read",
+          "note": "Full engineering unit and parent faculty; explicitly described as a department."
+        },
+        {
+          "url": "https://www.aub.edu.lb/msfea/iem/Pages/fyp.aspx",
+          "checkedAt": "2026-10-20",
+          "outcome": "read",
+          "note": "Department projects in process optimization, inventory management, service operations and industrial engineering methods."
+        },
+        {
+          "url": "http://www.aub.edu.lb/OSB/OSB_HOME/FACULTY/Pages/bidslist.aspx",
+          "checkedAt": "2026-10-20",
+          "outcome": "blocked",
+          "note": "Imported business faculty link returns Page Not Found; current faculty page located from school home."
+        },
+        {
+          "url": "https://www.aub.edu.lb/academics/Pages/faculties.aspx",
+          "checkedAt": "2026-10-20",
+          "outcome": "read",
+          "note": "Official faculties directory establishes full business school and engineering faculty names."
+        },
+        {
+          "url": "https://www.aub.edu.lb/osb/",
+          "checkedAt": "2026-10-20",
+          "outcome": "read",
+          "note": "Suliman S. Olayan School of Business within American University of Beirut, establishing school alias."
+        },
+        {
+          "url": "https://www.aub.edu.lb/osb/Pages/Faculty.aspx",
+          "checkedAt": "2026-10-20",
+          "outcome": "read",
+          "note": "Expanded Business Information & Decision Systems track lists convener and substantive operations/OR/supply-chain researchers."
+        }
+      ],
+      "limitations": [],
+      "duplicateOf": null,
+      "addedAt": "2026-10-20T09:30:49Z",
+      "updatedAt": "2026-10-20T09:30:49Z"
+    },
+    {
+      "id": "american-university-of-beirut-school-of-business",
+      "status": "reviewed",
+      "canonicalName": "American University of Beirut",
+      "universitySourceUrl": "https://www.aub.edu.lb/osb/Pages/Faculty.aspx",
+      "checkedAt": "2026-10-20",
+      "reviewer": "Codex in Chrome",
+      "units": [
+        {
+          "id": "american-university-of-beirut-school-of-business--business-information-decision-systems",
+          "name": "Business Information & Decision Systems",
+          "school": "Suliman S. Olayan School of Business",
+          "type": "area",
+          "fields": [
+            "operations-management",
+            "operations-research",
+            "supply-chain"
+          ],
+          "sourceUrl": "https://www.aub.edu.lb/osb/Pages/Faculty.aspx",
+          "checkedAt": "2026-10-20",
+          "evidence": "Official faculty page calls this an academic track with a convener; lists operations research, operations management, inventory and supply-chain management research for several members. Recorded as an academic area rather than a department."
+        }
+      ],
+      "decisions": [
+        {
+          "sourceDepartmentId": "american-university-of-beirut-school-of-business____om-analytics-statistics",
+          "disposition": "replaced",
+          "unitIds": [
+            "american-university-of-beirut-school-of-business--business-information-decision-systems"
+          ],
+          "reason": "Mixed subject shorthand replaced by current official business academic track with verified OR/OM research."
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.aub.edu.lb/msfea/iem/Pages/default.aspx",
+          "checkedAt": "2026-10-20",
+          "outcome": "read",
+          "note": "Full engineering unit and parent faculty; explicitly described as a department."
+        },
+        {
+          "url": "https://www.aub.edu.lb/msfea/iem/Pages/fyp.aspx",
+          "checkedAt": "2026-10-20",
+          "outcome": "read",
+          "note": "Department projects in process optimization, inventory management, service operations and industrial engineering methods."
+        },
+        {
+          "url": "http://www.aub.edu.lb/OSB/OSB_HOME/FACULTY/Pages/bidslist.aspx",
+          "checkedAt": "2026-10-20",
+          "outcome": "blocked",
+          "note": "Imported business faculty link returns Page Not Found; current faculty page located from school home."
+        },
+        {
+          "url": "https://www.aub.edu.lb/academics/Pages/faculties.aspx",
+          "checkedAt": "2026-10-20",
+          "outcome": "read",
+          "note": "Official faculties directory establishes full business school and engineering faculty names."
+        },
+        {
+          "url": "https://www.aub.edu.lb/osb/",
+          "checkedAt": "2026-10-20",
+          "outcome": "read",
+          "note": "Suliman S. Olayan School of Business within American University of Beirut, establishing school alias."
+        },
+        {
+          "url": "https://www.aub.edu.lb/osb/Pages/Faculty.aspx",
+          "checkedAt": "2026-10-20",
+          "outcome": "read",
+          "note": "Expanded Business Information & Decision Systems track lists convener and substantive operations/OR/supply-chain researchers."
+        }
+      ],
+      "limitations": [],
+      "duplicateOf": "american-university-of-beirut",
+      "addedAt": "2026-10-20T09:30:49Z",
+      "updatedAt": "2026-10-20T09:30:49Z"
+    },
+    {
+      "id": "american-university-of-kurdistan",
+      "status": "reviewed",
+      "canonicalName": "The American University of Kurdistan",
+      "universitySourceUrl": "http://auk.edu.krd/academics/colleges/college-of-business",
+      "checkedAt": "2026-10-20",
+      "reviewer": "Codex in Chrome",
+      "units": [],
+      "decisions": [
+        {
+          "sourceDepartmentId": "american-university-of-kurdistan____ba-mis",
+          "disposition": "unresolved",
+          "unitIds": [],
+          "reason": "Imported BA/MIS shorthand cannot be confidently expanded to a current named unit. Business college exists but no named operations, logistics or industrial engineering unit was established."
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://auk.edu.krd/academics/colleges",
+          "checkedAt": "2026-10-20",
+          "outcome": "read",
+          "note": "College inventory names business, engineering, arts/sciences and nursing; business offers management, oil/gas management and accounting/finance."
+        },
+        {
+          "url": "http://auk.edu.krd/academics/colleges/college-of-business",
+          "checkedAt": "2026-10-20",
+          "outcome": "read",
+          "note": "Official full university name and broad business administration curriculum; no named operations unit."
+        },
+        {
+          "url": "https://auk.edu.krd/academics/colleges/college-of-business/faculty-2",
+          "checkedAt": "2026-10-20",
+          "outcome": "read",
+          "note": "Faculty roster lists business, economics/finance and management/HR; no explicit operations unit."
+        },
+        {
+          "url": "https://auk.edu.krd/academics/colleges/college-of-business/learning-outcomes",
+          "checkedAt": "2026-10-20",
+          "outcome": "read",
+          "note": "Broad business learning outcomes, insufficient to establish named operations unit."
+        },
+        {
+          "url": "http://auk.edu.krd/academics/colleges/college-of-engineering",
+          "checkedAt": "2026-10-20",
+          "outcome": "read",
+          "note": "Engineering college explicitly offers architectural, petroleum and electronics/telecommunication engineering; no relevant industrial engineering unit verified."
+        }
+      ],
+      "limitations": [
+        "BA/MIS import remains unresolved; acronym not expanded from assumption.",
+        "No qualifying unit verified after business and engineering review; not a claim that all operations teaching is absent."
+      ],
+      "duplicateOf": null,
+      "addedAt": "2026-10-20T09:30:49Z",
+      "updatedAt": "2026-10-20T09:30:49Z"
+    },
+    {
+      "id": "american-university-of-phnom-penh",
+      "status": "reviewed",
+      "canonicalName": "American University of Phnom Penh",
+      "universitySourceUrl": "https://www.aupp.edu.kh/faculty-of-business-and-management/",
+      "checkedAt": "2026-10-20",
+      "reviewer": "Codex in Chrome",
+      "units": [],
+      "decisions": [
+        {
+          "sourceDepartmentId": "american-university-of-phnom-penh____mis",
+          "disposition": "out-of-scope",
+          "unitIds": [],
+          "reason": "IS-only imported shorthand excluded under scope; no verified named operations unit found in business or digital technologies faculty overviews."
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.aupp.edu.kh/faculty-of-business-and-management/",
+          "checkedAt": "2026-10-20",
+          "outcome": "read",
+          "note": "Official university identity; business faculty programmes and concentrations described in business administration, digital marketing, AI/business analytics and fintech/banking."
+        },
+        {
+          "url": "https://www.aupp.edu.kh/faculty-of-digital-technologies/",
+          "checkedAt": "2026-10-20",
+          "outcome": "read",
+          "note": "Technology faculty focuses on digital infrastructure, software, cybersecurity, data science and AI; no named industrial engineering or operations unit verified."
+        },
+        {
+          "url": "https://www.aupp.edu.kh/faculty-of-business-and-management/faculty-of-business-and-management-faculty-and-staff/",
+          "checkedAt": "2026-10-20",
+          "outcome": "blocked",
+          "note": "Page loads heading but no visible faculty roster content."
+        }
+      ],
+      "limitations": [
+        "Business faculty roster content did not render. No qualifying unit verified from school overviews; not proof of absence of operations teaching."
+      ],
+      "duplicateOf": null,
+      "addedAt": "2026-10-20T09:30:49Z",
+      "updatedAt": "2026-10-20T09:30:49Z"
+    },
+    {
+      "id": "american-university-of-sharjah",
+      "status": "reviewed",
+      "canonicalName": "American University of Sharjah",
+      "universitySourceUrl": "https://www.aus.edu/cen/department-of-industrial-engineering",
+      "checkedAt": "2026-10-20",
+      "reviewer": "Codex in Chrome",
+      "units": [
+        {
+          "id": "american-university-of-sharjah--industrial-engineering",
+          "name": "Department of Industrial Engineering",
+          "school": "College of Engineering",
+          "type": "department",
+          "fields": [
+            "industrial-engineering",
+            "supply-chain",
+            "logistics"
+          ],
+          "sourceUrl": "https://www.aus.edu/cen/department-of-industrial-engineering",
+          "checkedAt": "2026-10-20",
+          "evidence": "Official department name and College of Engineering link; industrial engineering degree, engineering systems management programmes and named Logistics and Supply Chain Management research."
+        },
+        {
+          "id": "american-university-of-sharjah--marketing-supply-chain-management",
+          "name": "Department of Marketing and Supply Chain Management",
+          "school": "School of Business Administration",
+          "type": "department",
+          "fields": [
+            "supply-chain"
+          ],
+          "sourceUrl": "https://www.aus.edu/sba/department-of-marketing-and-information-systems",
+          "checkedAt": "2026-10-20",
+          "evidence": "Current official department title and contact hierarchy name Marketing and Supply Chain Management despite legacy information-systems URL; department offers supply-chain major and minor."
+        }
+      ],
+      "decisions": [
+        {
+          "sourceDepartmentId": "american-university-of-sharjah____information-systems-and-business-analytics",
+          "disposition": "out-of-scope",
+          "unitIds": [],
+          "reason": "Officially an IS/analytics programme within Department of Accounting and Information Systems; excluded. Separate current Marketing and Supply Chain Management and Industrial Engineering departments verified and retained."
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.aus.edu/cen/department-of-industrial-engineering",
+          "checkedAt": "2026-10-20",
+          "outcome": "read",
+          "note": "Industrial engineering name, scope, hierarchy and university identity."
+        },
+        {
+          "url": "https://www.aus.edu/sba/department-of-accounting",
+          "checkedAt": "2026-10-20",
+          "outcome": "read",
+          "note": "Current Accounting and Information Systems department hosts imported IS/Business Analytics major; out of scope."
+        },
+        {
+          "url": "https://www.aus.edu/sba",
+          "checkedAt": "2026-10-20",
+          "outcome": "read",
+          "note": "Expanded departments menu identifies current Marketing and Supply Chain Management department."
+        },
+        {
+          "url": "https://www.aus.edu/sba/department-of-marketing-and-information-systems",
+          "checkedAt": "2026-10-20",
+          "outcome": "read",
+          "note": "Full current marketing/supply-chain department title and School of Business Administration parent, with explicit supply-chain degree and minor."
+        }
+      ],
+      "limitations": [],
+      "duplicateOf": null,
+      "addedAt": "2026-10-20T09:34:49Z",
+      "updatedAt": "2026-10-20T09:34:49Z"
+    },
+    {
       "id": "kennesaw-state-university",
       "status": "reviewed",
       "canonicalName": "Kennesaw State University",
@@ -1523,7 +1937,7 @@
     },
     {
       "id": "la-salle-university",
-      "status": "partial",
+      "status": "reviewed",
       "canonicalName": "La Salle University",
       "universitySourceUrl": "https://catalog.lasalle.edu/undergraduate/business/",
       "checkedAt": "2026-10-20",
@@ -1543,18 +1957,36 @@
           "url": "https://catalog.lasalle.edu/undergraduate/business/",
           "note": "University identity and School of Business overview plus Departments/Programs tab; university lists Arts and Sciences, Business, Nursing and Health Sciences schools.",
           "outcome": "read"
+        },
+        {
+          "checkedAt": "2026-10-20",
+          "outcome": "read",
+          "note": "Finance and Analytics overview and faculty tab checked; no separately named operations group.",
+          "url": "https://catalog.lasalle.edu/undergraduate/business/finance-analytics/"
+        },
+        {
+          "checkedAt": "2026-10-20",
+          "outcome": "read",
+          "note": "Management department goals concern leadership, supervision, international business and marketing; no named operations unit.",
+          "url": "https://catalog.lasalle.edu/undergraduate/business/mangement-marketing-leadership/"
+        },
+        {
+          "checkedAt": "2026-10-20",
+          "outcome": "read",
+          "note": "Nonbusiness school and department inventory reviewed; no industrial engineering department listed.",
+          "url": "https://catalog.lasalle.edu/undergraduate/arts-sciences/"
         }
       ],
       "limitations": [
-        "Detailed faculty/research remit within Finance and Analytics and Management remains unexamined; no relevant unit verified, not evidence none exists."
+        "BA shorthand remains unresolved between business administration and business analytics; examined official school/department structure supports neither as a named operations unit. No claim that operations coursework or individual researchers are absent."
       ],
       "duplicateOf": null,
       "addedAt": "2026-10-20T09:19:47Z",
-      "updatedAt": "2026-10-20T09:19:47Z"
+      "updatedAt": "2026-10-20T09:30:49Z"
     },
     {
       "id": "lake-erie-college",
-      "status": "partial",
+      "status": "reviewed",
       "canonicalName": "Lake Erie College",
       "universitySourceUrl": "https://www.lec.edu/undergraduate-degrees",
       "checkedAt": "2026-10-20",
@@ -1574,14 +2006,26 @@
           "url": "https://www.lec.edu/undergraduate-degrees",
           "checkedAt": "2026-10-20",
           "outcome": "read"
+        },
+        {
+          "outcome": "blocked",
+          "note": "Page loaded headings only; no faculty entries rendered.",
+          "checkedAt": "2026-10-20",
+          "url": "https://www.lec.edu/faculty-directory"
+        },
+        {
+          "outcome": "read",
+          "note": "2026-27 full faculty and academic dean list read; quantitative methods for business faculty present but no named operations/IE department. No IE faculty/department in listed academic structure.",
+          "checkedAt": "2026-10-20",
+          "url": "https://catalog.lec.edu/content.php?catoid=7&navoid=199"
         }
       ],
       "limitations": [
-        "No relevant named operations unit verified. Faculty/research and graduate organization need further review before asserting complete scope coverage."
+        "No named operations unit verified from academic school inventory and current faculty catalog; quantitative methods faculty and individual operations courses do not establish an operations department. Not proof that no operations activity exists."
       ],
       "duplicateOf": null,
       "addedAt": "2026-10-20T09:25:45Z",
-      "updatedAt": "2026-10-20T09:25:45Z"
+      "updatedAt": "2026-10-20T09:30:49Z"
     },
     {
       "id": "lancaster-university",
@@ -1689,7 +2133,7 @@
     },
     {
       "id": "le-moyne-college",
-      "status": "partial",
+      "status": "reviewed",
       "canonicalName": "Le Moyne College",
       "universitySourceUrl": "https://www.lemoyne.edu/academics/colleges-schools/madden-college-of-business-economics/",
       "checkedAt": "2026-10-20",
@@ -1709,14 +2153,20 @@
           "outcome": "read",
           "checkedAt": "2026-10-20",
           "url": "https://www.lemoyne.edu/academics/colleges-schools/madden-college-of-business-economics/"
+        },
+        {
+          "checkedAt": "2026-10-20",
+          "url": "https://www.lemoyne.edu/academics/faculty/",
+          "note": "Full department filter inventory plus Information Systems and Business Analytics filtered faculty examined. IS has explicitly named chair, separate from analytics; no Operations or Industrial Engineering department in inventory.",
+          "outcome": "read"
         }
       ],
       "limitations": [
-        "Detailed faculty remit and nonbusiness/engineering structure still need review; no operations unit verified yet."
+        "No named operations unit found in school and faculty-department structure; standalone IS and Business Analytics not promoted to operations units. This does not deny individual operations research or coursework."
       ],
       "duplicateOf": null,
       "addedAt": "2026-10-20T09:25:45Z",
-      "updatedAt": "2026-10-20T09:25:45Z"
+      "updatedAt": "2026-10-20T09:30:49Z"
     },
     {
       "id": "lees-mcrae-college",
@@ -2081,6 +2531,242 @@
       "updatedAt": "2026-10-20T09:26:38Z"
     },
     {
+      "id": "lone-star-college-system",
+      "status": "partial",
+      "canonicalName": "Lone Star College System",
+      "universitySourceUrl": "https://www.lonestar.edu/logistics-management-dept-cyfair.htm",
+      "checkedAt": "2026-10-20",
+      "reviewer": "Codex in Chrome",
+      "units": [
+        {
+          "school": "LSC-CyFair",
+          "id": "lone-star-college-system--cyfair-logistics",
+          "evidence": "Official campus department page names Department of Logistics Management and department chair; describes transportation, inventory, warehouse and distribution planning.",
+          "name": "Department of Logistics Management",
+          "fields": [
+            "logistics",
+            "supply-chain"
+          ],
+          "type": "department",
+          "sourceUrl": "https://www.lonestar.edu/logistics-management-dept-cyfair.htm",
+          "checkedAt": "2026-10-20"
+        },
+        {
+          "school": "LSC-North Harris",
+          "id": "lone-star-college-system--north-harris-logistics",
+          "evidence": "Official North Harris page names Logistics Management Department, department chair, and logistics planning/inventory scope.",
+          "name": "Logistics Management Department",
+          "fields": [
+            "logistics",
+            "supply-chain"
+          ],
+          "type": "department",
+          "sourceUrl": "https://www.lonestar.edu/48900.htm",
+          "checkedAt": "2026-10-20"
+        }
+      ],
+      "decisions": [
+        {
+          "disposition": "not-a-unit",
+          "unitIds": [],
+          "sourceDepartmentId": "lone-star-college-system____business",
+          "reason": "Generic Business import does not identify campus or department. Named logistics departments verified separately at two campuses, without inferring equivalence."
+        }
+      ],
+      "sources": [
+        {
+          "outcome": "read",
+          "checkedAt": "2026-10-20",
+          "note": "System identity and CyFair logistics unit.",
+          "url": "https://www.lonestar.edu/logistics-management-dept-cyfair.htm"
+        },
+        {
+          "outcome": "read",
+          "checkedAt": "2026-10-20",
+          "note": "North Harris logistics unit.",
+          "url": "https://www.lonestar.edu/48900.htm"
+        }
+      ],
+      "limitations": [
+        "Other campuses and engineering-related divisions not fully reviewed; retain separate campus units, no campus merge. Parent campus names reproduced as official abbreviated forms; expanded names need verification."
+      ],
+      "duplicateOf": null,
+      "addedAt": "2026-10-20T09:30:49Z",
+      "updatedAt": "2026-10-20T09:30:49Z"
+    },
+    {
+      "id": "longwood-university",
+      "status": "reviewed",
+      "canonicalName": "Longwood University",
+      "universitySourceUrl": "https://www.longwood.edu/business/about/faculty-staff/",
+      "checkedAt": "2026-10-20",
+      "reviewer": "Codex in Chrome",
+      "units": [
+        {
+          "type": "department",
+          "name": "Department of Management and Marketing",
+          "id": "longwood-university--management-marketing",
+          "evidence": "Official faculty page identifies department chair and Supply Chain Management professor/Longwood Logistics Center director. Official management page houses supply chain minor covering production, inventory, logistics and operations management.",
+          "sourceUrl": "https://www.longwood.edu/business/about/faculty-staff/",
+          "fields": [
+            "operations-management",
+            "supply-chain",
+            "logistics"
+          ],
+          "checkedAt": "2026-10-20",
+          "school": "College of Business and Economics"
+        }
+      ],
+      "decisions": [
+        {
+          "reason": "Official faculty page verifies this separate accounting/economics/finance/IS department. Operations and supply-chain curriculum appears on Management page; imported IS-bearing department not retained as operations unit.",
+          "disposition": "out-of-scope",
+          "sourceDepartmentId": "longwood-university__college-of-business-and-economics__accounting-economics-finance-and-information-systems",
+          "unitIds": []
+        }
+      ],
+      "sources": [
+        {
+          "outcome": "read",
+          "url": "https://www.longwood.edu/business/about/faculty-staff/",
+          "note": "Two department chairs and SCM/logistics faculty.",
+          "checkedAt": "2026-10-20"
+        },
+        {
+          "outcome": "read",
+          "url": "https://www.longwood.edu/business/management/",
+          "note": "Management curricular unit explicitly includes supply chain minor and operations scope.",
+          "checkedAt": "2026-10-20"
+        },
+        {
+          "outcome": "read",
+          "url": "https://www.longwood.edu/business/",
+          "note": "College identity and academic scope.",
+          "checkedAt": "2026-10-20"
+        },
+        {
+          "outcome": "read",
+          "url": "http://www.longwood.edu/a-z-index/?filter=academic-departments",
+          "note": "University academic index reviewed, no named industrial engineering department; computer engineering services is administrative.",
+          "checkedAt": "2026-10-20"
+        }
+      ],
+      "limitations": [
+        "Department remit supported by management curriculum and college faculty listing; no standalone Operations department asserted."
+      ],
+      "duplicateOf": null,
+      "addedAt": "2026-10-20T09:30:49Z",
+      "updatedAt": "2026-10-20T09:30:49Z"
+    },
+    {
+      "id": "lousiana-tech-univ",
+      "status": "partial",
+      "canonicalName": "Louisiana Tech University",
+      "universitySourceUrl": "https://www.latech.edu/academics/degrees-programs/business/sustainable-supply-chain-management-bs.php",
+      "checkedAt": "2026-10-20",
+      "reviewer": "Codex in Chrome",
+      "units": [],
+      "decisions": [
+        {
+          "unitIds": [],
+          "disposition": "not-a-unit",
+          "sourceDepartmentId": "lousiana-tech-univ____supply-chain-management",
+          "reason": "Official current page identifies Sustainable Supply Chain Management as a major housed in College of Business, not a standalone department."
+        }
+      ],
+      "sources": [
+        {
+          "outcome": "read",
+          "note": "Correct institution spelling, business major and parent college verified.",
+          "checkedAt": "2026-10-20",
+          "url": "https://www.latech.edu/academics/degrees-programs/business/sustainable-supply-chain-management-bs.php"
+        },
+        {
+          "outcome": "read",
+          "note": "IE program and College of Engineering and Science verified, not standalone department.",
+          "checkedAt": "2026-10-20",
+          "url": "https://www.latech.edu/academics/degrees-programs/engineering-science/industrial-engineering-bsie.php"
+        },
+        {
+          "outcome": "read",
+          "note": "Linked IE faculty filter identifies program chair and academic director, but parent academic unit name not stated.",
+          "checkedAt": "2026-10-20",
+          "url": "https://www.latech.edu/directory/index.php#industrial-engineering"
+        }
+      ],
+      "limitations": [
+        "Academic administrative grouping for both operations branches remains unverified; degrees/faculty filters not converted to departments."
+      ],
+      "duplicateOf": null,
+      "addedAt": "2026-10-20T09:34:49Z",
+      "updatedAt": "2026-10-20T09:34:49Z"
+    },
+    {
+      "id": "loyola-university-chicago",
+      "status": "reviewed",
+      "canonicalName": "Loyola University Chicago",
+      "universitySourceUrl": "https://www.luc.edu/engineering/",
+      "checkedAt": "2026-10-20",
+      "reviewer": "Codex in Chrome",
+      "units": [
+        {
+          "sourceUrl": "http://www.luc.edu/quinlan/faculty/",
+          "fields": [
+            "operations-management",
+            "supply-chain"
+          ],
+          "id": "loyola-university-chicago--information-systems-supply-chain-management",
+          "type": "department",
+          "evidence": "Official faculty directory academic department filter uses full combined IS/SCM name and lists its department chair alongside numerous supply chain faculty.",
+          "name": "Information Systems and Supply Chain Management",
+          "school": "Quinlan School of Business",
+          "checkedAt": "2026-10-20"
+        }
+      ],
+      "decisions": [
+        {
+          "unitIds": [],
+          "sourceDepartmentId": "loyola-university-chicago__quinlan-school-of-business",
+          "disposition": "not-a-unit",
+          "reason": "School-only parent row is not an additional department."
+        },
+        {
+          "unitIds": [
+            "loyola-university-chicago--information-systems-supply-chain-management"
+          ],
+          "sourceDepartmentId": "loyola-university-chicago__quinlan-school-of-business__information-systems-and-operations-management",
+          "disposition": "replaced",
+          "reason": "Current official faculty directory names the combined Information Systems and Supply Chain Management department instead of imported operations wording."
+        }
+      ],
+      "sources": [
+        {
+          "url": "http://www.luc.edu/quinlan/faculty/",
+          "outcome": "read",
+          "checkedAt": "2026-10-20",
+          "note": "Redirected faculty page read; current combined department and chair verified."
+        },
+        {
+          "url": "https://www.luc.edu/engineering/",
+          "outcome": "read",
+          "checkedAt": "2026-10-20",
+          "note": "Engineering branch within College of Arts and Sciences."
+        },
+        {
+          "url": "https://www.luc.edu/engineering/curriculum/specializations/",
+          "outcome": "read",
+          "checkedAt": "2026-10-20",
+          "note": "Engineering specializations biomedical, computer, environmental; no industrial engineering specialization or department identified."
+        }
+      ],
+      "limitations": [
+        "No date or formal administrative rename inferred from older imported department wording."
+      ],
+      "duplicateOf": null,
+      "addedAt": "2026-10-20T09:34:49Z",
+      "updatedAt": "2026-10-20T09:34:49Z"
+    },
+    {
       "id": "tsinghua-university",
       "status": "reviewed",
       "canonicalName": "Tsinghua University",
@@ -2393,7 +3079,7 @@
     },
     {
       "id": "ucl-gbsh",
-      "status": "partial",
+      "status": "reviewed",
       "canonicalName": "University College London",
       "universitySourceUrl": "https://www.ucl.ac.uk/population-health-sciences/global-business-school-health/research/research-clusters/health-economics-finance-operations",
       "checkedAt": "2026-10-20",
@@ -2412,6 +3098,30 @@
             "logistics"
           ],
           "name": "Health Economics, Finance and Operations"
+        },
+        {
+          "id": "ucl-school-of-management--operations-technology",
+          "name": "Operations and Technology",
+          "school": "UCL School of Management",
+          "type": "group",
+          "fields": [
+            "operations-management"
+          ],
+          "sourceUrl": "https://www.ucl.ac.uk/management/research-and-insights",
+          "checkedAt": "2026-10-20",
+          "evidence": "Official research directory lists five research groups including Operations and Technology; expanded description studies efficiency in hospitals, platforms, retailers and manufacturing systems. Footer gives University College London."
+        },
+        {
+          "school": "UCL Department of Mathematics",
+          "id": "university-college-london--clinical-operational-research",
+          "name": "Clinical Operational Research Unit (CORU)",
+          "sourceUrl": "https://www.ucl.ac.uk/clinical-operational-research-unit/",
+          "evidence": "Official home describes research team applying operational research, data analysis and mathematical modelling to health care; states it sits within UCL Department of Mathematics.",
+          "checkedAt": "2026-10-20",
+          "type": "group",
+          "fields": [
+            "operations-research"
+          ]
         }
       ],
       "decisions": [
@@ -2428,25 +3138,55 @@
           "url": "https://www.ucl.ac.uk/population-health-sciences/global-business-school-health/research/research-clusters/health-economics-finance-operations",
           "checkedAt": "2026-10-20",
           "outcome": "read"
+        },
+        {
+          "url": "https://www.ucl.ac.uk/management/research-and-insights",
+          "checkedAt": "2026-10-20",
+          "outcome": "read",
+          "note": "Read research-group directory and expanded Operations and Technology description."
+        },
+        {
+          "url": "https://www.ucl.ac.uk/clinical-operational-research-unit/",
+          "checkedAt": "2026-10-20",
+          "note": "Read home page: operational research, data analysis and mathematical modelling in health care; sits within UCL Department of Mathematics.",
+          "outcome": "read"
+        },
+        {
+          "url": "https://www.ucl.ac.uk/clinical-operational-research-unit/team",
+          "checkedAt": "2026-10-20",
+          "note": "Read faculty team and operational-research methods and service-delivery remit.",
+          "outcome": "read"
+        },
+        {
+          "url": "https://www.ucl.ac.uk/engineering/departments",
+          "checkedAt": "2026-10-20",
+          "note": "Read full engineering department directory; School of Management is listed; no separate industrial-engineering department listed.",
+          "outcome": "read"
+        },
+        {
+          "url": "https://www.ucl.ac.uk/management/news/2015/aug/launch-ucl-school-management",
+          "checkedAt": "2026-10-20",
+          "note": "Official history explicitly says School of Management replaced Department of Management Science and Innovation on 1 August 2015.",
+          "outcome": "read"
         }
       ],
       "limitations": [
-        "School alias and research cluster verified; other UCL business and engineering units await main university review."
+        "School alias consolidated with University College London after this reviewer also checked the main engineering directory and Clinical Operational Research Unit."
       ],
-      "duplicateOf": "university-college-london-ucl",
+      "duplicateOf": "university-college-london",
       "addedAt": "2026-10-20T09:19:47Z",
-      "updatedAt": "2026-10-20T09:19:47Z"
+      "updatedAt": "2026-10-20T09:34:49Z"
     },
     {
       "id": "ucl-global-business-school-for-health",
-      "status": "partial",
+      "status": "reviewed",
       "canonicalName": "University College London",
       "universitySourceUrl": "https://www.ucl.ac.uk/population-health-sciences/global-business-school-health/research/research-clusters/health-economics-finance-operations",
       "checkedAt": "2026-10-20",
       "reviewer": "Codex in Chrome",
       "units": [
         {
-          "id": "ucl-global-business-school-for-health--health-economics-finance-operations",
+          "id": "ucl-gbsh--health-economics-finance-operations",
           "type": "group",
           "sourceUrl": "https://www.ucl.ac.uk/population-health-sciences/global-business-school-health/research/research-clusters/health-economics-finance-operations",
           "evidence": "Official research-cluster page identifies HEFO and its operational-design focus; core faculty include operations/supply management, technology and operations, sustainable supply chain, and reverse-logistics researchers. University College London appears in footer.",
@@ -2458,6 +3198,30 @@
             "logistics"
           ],
           "name": "Health Economics, Finance and Operations"
+        },
+        {
+          "id": "ucl-school-of-management--operations-technology",
+          "name": "Operations and Technology",
+          "school": "UCL School of Management",
+          "type": "group",
+          "fields": [
+            "operations-management"
+          ],
+          "sourceUrl": "https://www.ucl.ac.uk/management/research-and-insights",
+          "checkedAt": "2026-10-20",
+          "evidence": "Official research directory lists five research groups including Operations and Technology; expanded description studies efficiency in hospitals, platforms, retailers and manufacturing systems. Footer gives University College London."
+        },
+        {
+          "school": "UCL Department of Mathematics",
+          "id": "university-college-london--clinical-operational-research",
+          "name": "Clinical Operational Research Unit (CORU)",
+          "sourceUrl": "https://www.ucl.ac.uk/clinical-operational-research-unit/",
+          "evidence": "Official home describes research team applying operational research, data analysis and mathematical modelling to health care; states it sits within UCL Department of Mathematics.",
+          "checkedAt": "2026-10-20",
+          "type": "group",
+          "fields": [
+            "operations-research"
+          ]
         }
       ],
       "decisions": [
@@ -2486,23 +3250,67 @@
           "url": "https://www.ucl.ac.uk/population-health-sciences/global-business-school-health/research/research-clusters/health-economics-finance-operations",
           "checkedAt": "2026-10-20",
           "outcome": "read"
+        },
+        {
+          "url": "https://www.ucl.ac.uk/management/research-and-insights",
+          "checkedAt": "2026-10-20",
+          "outcome": "read",
+          "note": "Read research-group directory and expanded Operations and Technology description."
+        },
+        {
+          "url": "https://www.ucl.ac.uk/clinical-operational-research-unit/",
+          "checkedAt": "2026-10-20",
+          "note": "Read home page: operational research, data analysis and mathematical modelling in health care; sits within UCL Department of Mathematics.",
+          "outcome": "read"
+        },
+        {
+          "url": "https://www.ucl.ac.uk/clinical-operational-research-unit/team",
+          "checkedAt": "2026-10-20",
+          "note": "Read faculty team and operational-research methods and service-delivery remit.",
+          "outcome": "read"
+        },
+        {
+          "url": "https://www.ucl.ac.uk/engineering/departments",
+          "checkedAt": "2026-10-20",
+          "note": "Read full engineering department directory; School of Management is listed; no separate industrial-engineering department listed.",
+          "outcome": "read"
+        },
+        {
+          "url": "https://www.ucl.ac.uk/management/news/2015/aug/launch-ucl-school-management",
+          "checkedAt": "2026-10-20",
+          "note": "Official history explicitly says School of Management replaced Department of Management Science and Innovation on 1 August 2015.",
+          "outcome": "read"
         }
       ],
       "limitations": [
-        "School alias and research cluster verified; other UCL business and engineering units await main university review."
+        "School alias consolidated with University College London after this reviewer also checked the main engineering directory and Clinical Operational Research Unit."
       ],
-      "duplicateOf": "university-college-london-ucl",
+      "duplicateOf": "university-college-london",
       "addedAt": "2026-10-20T09:19:47Z",
-      "updatedAt": "2026-10-20T09:19:47Z"
+      "updatedAt": "2026-10-20T09:34:49Z"
     },
     {
       "id": "ucl-school-of-management",
-      "status": "partial",
+      "status": "reviewed",
       "canonicalName": "University College London",
       "universitySourceUrl": "https://www.ucl.ac.uk/management/research-and-insights",
       "checkedAt": "2026-10-20",
       "reviewer": "Codex in Chrome",
       "units": [
+        {
+          "id": "ucl-gbsh--health-economics-finance-operations",
+          "type": "group",
+          "sourceUrl": "https://www.ucl.ac.uk/population-health-sciences/global-business-school-health/research/research-clusters/health-economics-finance-operations",
+          "evidence": "Official research-cluster page identifies HEFO and its operational-design focus; core faculty include operations/supply management, technology and operations, sustainable supply chain, and reverse-logistics researchers. University College London appears in footer.",
+          "checkedAt": "2026-10-20",
+          "school": "UCL Global Business School for Health",
+          "fields": [
+            "operations-management",
+            "supply-chain",
+            "logistics"
+          ],
+          "name": "Health Economics, Finance and Operations"
+        },
         {
           "id": "ucl-school-of-management--operations-technology",
           "name": "Operations and Technology",
@@ -2514,6 +3322,18 @@
           "sourceUrl": "https://www.ucl.ac.uk/management/research-and-insights",
           "checkedAt": "2026-10-20",
           "evidence": "Official research directory lists five research groups including Operations and Technology; expanded description studies efficiency in hospitals, platforms, retailers and manufacturing systems. Footer gives University College London."
+        },
+        {
+          "school": "UCL Department of Mathematics",
+          "id": "university-college-london--clinical-operational-research",
+          "name": "Clinical Operational Research Unit (CORU)",
+          "sourceUrl": "https://www.ucl.ac.uk/clinical-operational-research-unit/",
+          "evidence": "Official home describes research team applying operational research, data analysis and mathematical modelling to health care; states it sits within UCL Department of Mathematics.",
+          "checkedAt": "2026-10-20",
+          "type": "group",
+          "fields": [
+            "operations-research"
+          ]
         }
       ],
       "decisions": [
@@ -2528,18 +3348,48 @@
       ],
       "sources": [
         {
+          "note": "Official HEFO cluster, Global Business School for Health membership and university identity.",
+          "url": "https://www.ucl.ac.uk/population-health-sciences/global-business-school-health/research/research-clusters/health-economics-finance-operations",
+          "checkedAt": "2026-10-20",
+          "outcome": "read"
+        },
+        {
           "url": "https://www.ucl.ac.uk/management/research-and-insights",
           "checkedAt": "2026-10-20",
           "outcome": "read",
           "note": "Read research-group directory and expanded Operations and Technology description."
+        },
+        {
+          "url": "https://www.ucl.ac.uk/clinical-operational-research-unit/",
+          "checkedAt": "2026-10-20",
+          "note": "Read home page: operational research, data analysis and mathematical modelling in health care; sits within UCL Department of Mathematics.",
+          "outcome": "read"
+        },
+        {
+          "url": "https://www.ucl.ac.uk/clinical-operational-research-unit/team",
+          "checkedAt": "2026-10-20",
+          "note": "Read faculty team and operational-research methods and service-delivery remit.",
+          "outcome": "read"
+        },
+        {
+          "url": "https://www.ucl.ac.uk/engineering/departments",
+          "checkedAt": "2026-10-20",
+          "note": "Read full engineering department directory; School of Management is listed; no separate industrial-engineering department listed.",
+          "outcome": "read"
+        },
+        {
+          "url": "https://www.ucl.ac.uk/management/news/2015/aug/launch-ucl-school-management",
+          "checkedAt": "2026-10-20",
+          "note": "Official history explicitly says School of Management replaced Department of Management Science and Innovation on 1 August 2015.",
+          "outcome": "read"
         }
       ],
       "limitations": [
-        "School alias reviewed; engineering branch and wider UCL coverage await main university review."
+        "School alias consolidated with University College London after this reviewer also checked the main engineering directory and Clinical Operational Research Unit."
       ],
-      "duplicateOf": "university-college-london-ucl",
+      "duplicateOf": "university-college-london",
       "addedAt": "2026-10-20T09:19:47Z",
-      "updatedAt": "2026-10-20T09:19:47Z"
+      "updatedAt": "2026-10-20T09:34:49Z"
     },
     {
       "id": "uni-of-illinois-at-urbana-champaign-gies",
@@ -3007,6 +3857,61 @@
       "updatedAt": "2026-10-20T09:25:45Z"
     },
     {
+      "id": "universitat-pompeu-fabra",
+      "status": "partial",
+      "canonicalName": "Universitat Pompeu Fabra",
+      "universitySourceUrl": "https://www.upf.edu/web/econ/operations_analytics_technology",
+      "checkedAt": "2026-10-20",
+      "reviewer": "Codex in Chrome",
+      "units": [
+        {
+          "id": "universitat-pompeu-fabra--operations-analytics-technology",
+          "name": "Operations, Analytics and Technology",
+          "school": null,
+          "type": "group",
+          "fields": [
+            "operations-management",
+            "operations-research",
+            "logistics"
+          ],
+          "sourceUrl": "https://www.upf.edu/web/econ/operations_analytics_technology",
+          "checkedAt": "2026-10-20",
+          "evidence": "Official named research group develops optimization models and algorithms using Operations Research and Management Science; applications include logistics, production, operations management and distribution. Page header gives economics/business faculty context."
+        }
+      ],
+      "decisions": [
+        {
+          "sourceDepartmentId": "universitat-pompeu-fabra____om-or",
+          "disposition": "replaced",
+          "unitIds": [
+            "universitat-pompeu-fabra--operations-analytics-technology"
+          ],
+          "reason": "Replace broad recruiting shorthand with officially named relevant research group."
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.upf.edu/web/econ/operations_analytics_technology",
+          "checkedAt": "2026-10-20",
+          "outcome": "read",
+          "note": "University identity, group name and explicit operations scope."
+        },
+        {
+          "url": "https://www.upf.edu/en/web/enginyeria/%C3%A0rees-de-coneixement",
+          "checkedAt": "2026-10-20",
+          "outcome": "blocked",
+          "note": "Engineering Areas of Expertise page displayed security-verification interstitial; no bypass attempted."
+        }
+      ],
+      "limitations": [
+        "Engineering research-area directory unavailable behind security verification; business branch verified.",
+        "Page header combines department and faculty navigation; exact formal parent unit name not independently established."
+      ],
+      "duplicateOf": null,
+      "addedAt": "2026-10-20T09:30:49Z",
+      "updatedAt": "2026-10-20T09:30:49Z"
+    },
+    {
       "id": "universite-catholique-de-louvain",
       "status": "reviewed",
       "canonicalName": "Université catholique de Louvain",
@@ -3068,6 +3973,765 @@
       "duplicateOf": null,
       "addedAt": "2026-10-20T09:25:45Z",
       "updatedAt": "2026-10-20T09:25:45Z"
+    },
+    {
+      "id": "universite-laval",
+      "status": "reviewed",
+      "canonicalName": "Université Laval",
+      "universitySourceUrl": "https://www.fsa.ulaval.ca/faculte/departements-ecole/osd/",
+      "checkedAt": "2026-10-20",
+      "reviewer": "Codex in Chrome",
+      "units": [
+        {
+          "id": "universite-laval--operations-systemes-decision",
+          "name": "Département d’opérations et systèmes de décision",
+          "school": "Faculté des sciences de l’administration",
+          "type": "department",
+          "fields": [
+            "operations-management",
+            "operations-research",
+            "logistics"
+          ],
+          "sourceUrl": "https://www.fsa.ulaval.ca/faculte/departements-ecole/osd/",
+          "checkedAt": "2026-10-20",
+          "evidence": "Official department title, parent faculty and university; describes programs recognized by Canadian Operational Research Society and logistics research units, with procurement/logistics careers."
+        },
+        {
+          "id": "universite-laval--genie-mecanique-industriel",
+          "name": "Département de génie mécanique et de génie industriel",
+          "school": "Faculté des sciences et de génie",
+          "type": "department",
+          "fields": [
+            "industrial-engineering"
+          ],
+          "sourceUrl": "https://www.fsg.ulaval.ca/departements/departement-de-genie-mecanique-et-de-genie-industriel",
+          "checkedAt": "2026-10-20",
+          "evidence": "Official combined mechanical and industrial engineering department explicitly describes optimization of industrial and service systems, productivity and resource allocation."
+        }
+      ],
+      "decisions": [
+        {
+          "sourceDepartmentId": "universite-laval__faculty-of-business-administration__operations-and-decision-systems",
+          "disposition": "replaced",
+          "unitIds": [
+            "universite-laval--operations-systemes-decision"
+          ],
+          "reason": "Full official French department and faculty names replace translated shorthand."
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.fsa.ulaval.ca/faculte/departements-ecole/osd/",
+          "checkedAt": "2026-10-20",
+          "outcome": "read",
+          "note": "Operations department, hierarchy and remit."
+        },
+        {
+          "url": "https://www.fsg.ulaval.ca/departements/departement-de-genie-mecanique-et-de-genie-industriel",
+          "checkedAt": "2026-10-20",
+          "outcome": "read",
+          "note": "Combined mechanical/industrial engineering department and scope."
+        }
+      ],
+      "limitations": [],
+      "duplicateOf": null,
+      "addedAt": "2026-10-20T09:30:49Z",
+      "updatedAt": "2026-10-20T09:30:49Z"
+    },
+    {
+      "id": "universite-libre-de-bruxelles",
+      "status": "partial",
+      "canonicalName": "Université Libre de Bruxelles",
+      "universitySourceUrl": "https://sbsem.ulb.be/research/research-centres",
+      "checkedAt": "2026-10-20",
+      "reviewer": "Codex in Chrome",
+      "units": [],
+      "decisions": [
+        {
+          "sourceDepartmentId": "universite-libre-de-bruxelles__solvay-brussels-school-of-economics-and-management",
+          "disposition": "unresolved",
+          "unitIds": [],
+          "reason": "School name verified, but opened research-centre directory does not establish a specifically named operations unit; operations course and IRIDIA leads timed out before readable evidence."
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://sbsem.ulb.be/research/research-centres",
+          "checkedAt": "2026-10-20",
+          "outcome": "read",
+          "note": "University and Solvay school identity verified; four research centres listed but explicit operations unit not established."
+        },
+        {
+          "url": "https://saas.polytech.ulb.be/",
+          "checkedAt": "2026-10-20",
+          "outcome": "read",
+          "note": "Department of Control Engineering and System Analysis focuses control, fault diagnosis and robotics; not treated as operations research absent evidence."
+        },
+        {
+          "url": "https://iridia.ulb.ac.be/",
+          "checkedAt": "2026-10-20",
+          "outcome": "blocked",
+          "note": "Chrome navigation timeout; no content read."
+        },
+        {
+          "url": "https://www.ulb.be/en/programme/gest-s407",
+          "checkedAt": "2026-10-20",
+          "outcome": "blocked",
+          "note": "Browser focus command timeout; course content not read."
+        }
+      ],
+      "limitations": [
+        "Operations-relevant academic unit remains unverified; research-lab and teaching-source browser attempts timed out. Do not treat as proof operations absent."
+      ],
+      "duplicateOf": null,
+      "addedAt": "2026-10-20T09:30:49Z",
+      "updatedAt": "2026-10-20T09:30:49Z"
+    },
+    {
+      "id": "university-at-buffalo",
+      "status": "reviewed",
+      "canonicalName": "University at Buffalo",
+      "universitySourceUrl": "https://engineering.buffalo.edu/industrial-systems.html",
+      "checkedAt": "2026-10-20",
+      "reviewer": "Codex in Chrome",
+      "units": [
+        {
+          "id": "university-at-buffalo--industrial-systems-engineering",
+          "name": "Department of Industrial and Systems Engineering",
+          "school": "School of Engineering and Applied Sciences",
+          "type": "department",
+          "fields": [
+            "industrial-engineering",
+            "logistics",
+            "operations-research"
+          ],
+          "sourceUrl": "https://engineering.buffalo.edu/industrial-systems.html",
+          "checkedAt": "2026-10-20",
+          "evidence": "Official department page names department and engineering school and explicitly describes optimization, simulation and logistics within industrial/systems engineering."
+        },
+        {
+          "id": "university-at-buffalo--operations-management-strategy",
+          "name": "Operations Management and Strategy Department",
+          "school": "School of Management",
+          "type": "department",
+          "fields": [
+            "operations-management",
+            "supply-chain"
+          ],
+          "sourceUrl": "https://management.buffalo.edu/faculty/academic-departments/operations-management-strategy/faculty.html",
+          "checkedAt": "2026-10-20",
+          "evidence": "Official faculty page contact block gives full department name and School of Management; faculty are organized in Operations Management and Strategy/Entrepreneurship groups, and linked programs explicitly cover supply chains."
+        }
+      ],
+      "decisions": [
+        {
+          "sourceDepartmentId": "university-at-buffalo____industrial-and-systems-engineering",
+          "disposition": "replaced",
+          "unitIds": [
+            "university-at-buffalo--industrial-systems-engineering"
+          ],
+          "reason": "Full official department and parent school verified."
+        },
+        {
+          "sourceDepartmentId": "university-at-buffalo____scm-and-om",
+          "disposition": "not-a-unit",
+          "unitIds": [],
+          "reason": "Recruiting-field abbreviation is not an official department name; relevant official department recorded separately."
+        },
+        {
+          "sourceDepartmentId": "university-at-buffalo__school-of-management__operations-management",
+          "disposition": "replaced",
+          "unitIds": [
+            "university-at-buffalo--operations-management-strategy"
+          ],
+          "reason": "Imported shortened label sits within officially named Operations Management and Strategy Department."
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://engineering.buffalo.edu/industrial-systems.html",
+          "checkedAt": "2026-10-20",
+          "outcome": "read",
+          "note": "Engineering department name, university identity, hierarchy and scope."
+        },
+        {
+          "url": "https://management.buffalo.edu/faculty/academic-departments/operations-management-strategy/faculty.html",
+          "checkedAt": "2026-10-20",
+          "outcome": "read",
+          "note": "Business department full name, parent school and operations faculty/programs."
+        }
+      ],
+      "limitations": [],
+      "duplicateOf": null,
+      "addedAt": "2026-10-20T09:30:49Z",
+      "updatedAt": "2026-10-20T09:30:49Z"
+    },
+    {
+      "id": "university-college-dublin",
+      "status": "reviewed",
+      "canonicalName": "University College Dublin",
+      "universitySourceUrl": "https://www.ucd.ie/mecheng/",
+      "checkedAt": "2026-10-20",
+      "reviewer": "Codex in Chrome",
+      "units": [
+        {
+          "type": "area",
+          "evidence": "Official Management subject-area page identifies UCD College of Business and explicitly includes supply chain management among core specialties.",
+          "id": "university-college-dublin--management",
+          "school": "UCD College of Business",
+          "name": "Management",
+          "sourceUrl": "https://www.smurfitschool.ie/facultyresearch/subjectareas/management/",
+          "checkedAt": "2026-10-20",
+          "fields": [
+            "supply-chain"
+          ]
+        },
+        {
+          "type": "school",
+          "evidence": "Official school-head profile identifies the school at University College Dublin and explicitly lists supply-chain design/optimization, simulation, supply-chain risk/resilience and manufacturing operations research. School homepage separately confirms full name.",
+          "id": "university-college-dublin--mechanical-materials-engineering",
+          "school": null,
+          "name": "UCD School of Mechanical and Materials Engineering",
+          "sourceUrl": "https://www.ucd.ie/limar/people/vincenthargaden/",
+          "checkedAt": "2026-10-20",
+          "fields": [
+            "supply-chain",
+            "operations-management"
+          ]
+        }
+      ],
+      "decisions": [
+        {
+          "disposition": "not-a-unit",
+          "reason": "University or parent school placeholder, rather than a separate department.",
+          "unitIds": [],
+          "sourceDepartmentId": "university-college-dublin"
+        },
+        {
+          "disposition": "out-of-scope",
+          "reason": "Standalone management information systems recruiting label has no operations component.",
+          "unitIds": [],
+          "sourceDepartmentId": "university-college-dublin____mis"
+        },
+        {
+          "disposition": "not-a-unit",
+          "reason": "Supply-chain recruiting specialty is not independently named department; verified Management subject area contains it.",
+          "unitIds": [],
+          "sourceDepartmentId": "university-college-dublin____supply-chain-management"
+        },
+        {
+          "disposition": "not-a-unit",
+          "reason": "University or parent school placeholder, rather than a separate department.",
+          "unitIds": [],
+          "sourceDepartmentId": "university-college-dublin__school-of-business"
+        }
+      ],
+      "sources": [
+        {
+          "note": "Business Management subject area and supply-chain scope.",
+          "outcome": "read",
+          "checkedAt": "2026-10-20",
+          "url": "https://www.smurfitschool.ie/facultyresearch/subjectareas/management/"
+        },
+        {
+          "note": "School head identifies university/school and current supply-chain/operations research.",
+          "outcome": "read",
+          "checkedAt": "2026-10-20",
+          "url": "https://www.ucd.ie/limar/people/vincenthargaden/"
+        },
+        {
+          "note": "Official full engineering-school name and university footer.",
+          "outcome": "read",
+          "checkedAt": "2026-10-20",
+          "url": "https://www.ucd.ie/mecheng/"
+        }
+      ],
+      "limitations": [
+        "Supply Chain Management is explicitly present in Management area; no separately named current supply-chain department inferred from historic faculty affiliations."
+      ],
+      "duplicateOf": null,
+      "addedAt": "2026-10-20T09:30:49Z",
+      "updatedAt": "2026-10-20T09:30:49Z"
+    },
+    {
+      "id": "university-college-dublin-ucd",
+      "status": "reviewed",
+      "canonicalName": "University College Dublin",
+      "universitySourceUrl": "https://www.ucd.ie/mecheng/",
+      "checkedAt": "2026-10-20",
+      "reviewer": "Codex in Chrome",
+      "units": [
+        {
+          "type": "area",
+          "evidence": "Official Management subject-area page identifies UCD College of Business and explicitly includes supply chain management among core specialties.",
+          "id": "university-college-dublin--management",
+          "school": "UCD College of Business",
+          "name": "Management",
+          "sourceUrl": "https://www.smurfitschool.ie/facultyresearch/subjectareas/management/",
+          "checkedAt": "2026-10-20",
+          "fields": [
+            "supply-chain"
+          ]
+        },
+        {
+          "type": "school",
+          "evidence": "Official school-head profile identifies the school at University College Dublin and explicitly lists supply-chain design/optimization, simulation, supply-chain risk/resilience and manufacturing operations research. School homepage separately confirms full name.",
+          "id": "university-college-dublin--mechanical-materials-engineering",
+          "school": null,
+          "name": "UCD School of Mechanical and Materials Engineering",
+          "sourceUrl": "https://www.ucd.ie/limar/people/vincenthargaden/",
+          "checkedAt": "2026-10-20",
+          "fields": [
+            "supply-chain",
+            "operations-management"
+          ]
+        }
+      ],
+      "decisions": [
+        {
+          "disposition": "replaced",
+          "reason": "Official Management subject area explicitly includes supply chains.",
+          "unitIds": [
+            "university-college-dublin--management"
+          ],
+          "sourceDepartmentId": "university-college-dublin__michael-smurfit-graduate-business-school__management-area"
+        },
+        {
+          "disposition": "replaced",
+          "reason": "Official school and operations-related scope verified; retained as school.",
+          "unitIds": [
+            "university-college-dublin--mechanical-materials-engineering"
+          ],
+          "sourceDepartmentId": "university-college-dublin__school-of-mechanical-and-materials-engineering"
+        }
+      ],
+      "sources": [
+        {
+          "note": "Business Management subject area and supply-chain scope.",
+          "outcome": "read",
+          "checkedAt": "2026-10-20",
+          "url": "https://www.smurfitschool.ie/facultyresearch/subjectareas/management/"
+        },
+        {
+          "note": "School head identifies university/school and current supply-chain/operations research.",
+          "outcome": "read",
+          "checkedAt": "2026-10-20",
+          "url": "https://www.ucd.ie/limar/people/vincenthargaden/"
+        },
+        {
+          "note": "Official full engineering-school name and university footer.",
+          "outcome": "read",
+          "checkedAt": "2026-10-20",
+          "url": "https://www.ucd.ie/mecheng/"
+        }
+      ],
+      "limitations": [
+        "Supply Chain Management is explicitly present in Management area; no separately named current supply-chain department inferred from historic faculty affiliations."
+      ],
+      "duplicateOf": "university-college-dublin",
+      "addedAt": "2026-10-20T09:30:49Z",
+      "updatedAt": "2026-10-20T09:30:49Z"
+    },
+    {
+      "reviewer": "Codex in Chrome",
+      "sources": [
+        {
+          "note": "Official HEFO cluster, Global Business School for Health membership and university identity.",
+          "url": "https://www.ucl.ac.uk/population-health-sciences/global-business-school-health/research/research-clusters/health-economics-finance-operations",
+          "checkedAt": "2026-10-20",
+          "outcome": "read"
+        },
+        {
+          "url": "https://www.ucl.ac.uk/management/research-and-insights",
+          "checkedAt": "2026-10-20",
+          "outcome": "read",
+          "note": "Read research-group directory and expanded Operations and Technology description."
+        },
+        {
+          "url": "https://www.ucl.ac.uk/clinical-operational-research-unit/",
+          "checkedAt": "2026-10-20",
+          "note": "Read home page: operational research, data analysis and mathematical modelling in health care; sits within UCL Department of Mathematics.",
+          "outcome": "read"
+        },
+        {
+          "url": "https://www.ucl.ac.uk/clinical-operational-research-unit/team",
+          "checkedAt": "2026-10-20",
+          "note": "Read faculty team and operational-research methods and service-delivery remit.",
+          "outcome": "read"
+        },
+        {
+          "url": "https://www.ucl.ac.uk/engineering/departments",
+          "checkedAt": "2026-10-20",
+          "note": "Read full engineering department directory; School of Management is listed; no separate industrial-engineering department listed.",
+          "outcome": "read"
+        },
+        {
+          "url": "https://www.ucl.ac.uk/management/news/2015/aug/launch-ucl-school-management",
+          "checkedAt": "2026-10-20",
+          "note": "Official history explicitly says School of Management replaced Department of Management Science and Innovation on 1 August 2015.",
+          "outcome": "read"
+        }
+      ],
+      "decisions": [
+        {
+          "reason": "University, school or faculty-level imported parent label is not a separate operations unit; relevant named research groups recorded separately.",
+          "sourceDepartmentId": "university-college-london",
+          "unitIds": [],
+          "disposition": "not-a-unit"
+        },
+        {
+          "reason": "University, school or faculty-level imported parent label is not a separate operations unit; relevant named research groups recorded separately.",
+          "sourceDepartmentId": "university-college-london__ucl-global-business-school-for-health",
+          "unitIds": [],
+          "disposition": "not-a-unit"
+        },
+        {
+          "reason": "University, school or faculty-level imported parent label is not a separate operations unit; relevant named research groups recorded separately.",
+          "sourceDepartmentId": "university-college-london__ucl-global-business-school-for-health__population-health-sciences",
+          "unitIds": [],
+          "disposition": "not-a-unit"
+        },
+        {
+          "reason": "University, school or faculty-level imported parent label is not a separate operations unit; relevant named research groups recorded separately.",
+          "sourceDepartmentId": "university-college-london__ucl-school-of-management",
+          "unitIds": [],
+          "disposition": "not-a-unit"
+        },
+        {
+          "reason": "Exact current operations research group confirmed in official research directory.",
+          "sourceDepartmentId": "university-college-london__ucl-school-of-management__operations-and-technology",
+          "unitIds": [
+            "ucl-school-of-management--operations-technology"
+          ],
+          "disposition": "replaced"
+        }
+      ],
+      "universitySourceUrl": "https://www.ucl.ac.uk/engineering/departments",
+      "checkedAt": "2026-10-20",
+      "units": [
+        {
+          "id": "ucl-gbsh--health-economics-finance-operations",
+          "type": "group",
+          "sourceUrl": "https://www.ucl.ac.uk/population-health-sciences/global-business-school-health/research/research-clusters/health-economics-finance-operations",
+          "evidence": "Official research-cluster page identifies HEFO and its operational-design focus; core faculty include operations/supply management, technology and operations, sustainable supply chain, and reverse-logistics researchers. University College London appears in footer.",
+          "checkedAt": "2026-10-20",
+          "school": "UCL Global Business School for Health",
+          "fields": [
+            "operations-management",
+            "supply-chain",
+            "logistics"
+          ],
+          "name": "Health Economics, Finance and Operations"
+        },
+        {
+          "id": "ucl-school-of-management--operations-technology",
+          "name": "Operations and Technology",
+          "school": "UCL School of Management",
+          "type": "group",
+          "fields": [
+            "operations-management"
+          ],
+          "sourceUrl": "https://www.ucl.ac.uk/management/research-and-insights",
+          "checkedAt": "2026-10-20",
+          "evidence": "Official research directory lists five research groups including Operations and Technology; expanded description studies efficiency in hospitals, platforms, retailers and manufacturing systems. Footer gives University College London."
+        },
+        {
+          "school": "UCL Department of Mathematics",
+          "id": "university-college-london--clinical-operational-research",
+          "name": "Clinical Operational Research Unit (CORU)",
+          "sourceUrl": "https://www.ucl.ac.uk/clinical-operational-research-unit/",
+          "evidence": "Official home describes research team applying operational research, data analysis and mathematical modelling to health care; states it sits within UCL Department of Mathematics.",
+          "checkedAt": "2026-10-20",
+          "type": "group",
+          "fields": [
+            "operations-research"
+          ]
+        }
+      ],
+      "id": "university-college-london",
+      "limitations": [
+        "Clinical Operational Research Unit is recorded as a research group rather than a department. Engineering directory and the two business-school research structures were checked."
+      ],
+      "status": "reviewed",
+      "canonicalName": "University College London",
+      "duplicateOf": null,
+      "addedAt": "2026-10-20T09:34:49Z",
+      "updatedAt": "2026-10-20T09:34:49Z"
+    },
+    {
+      "reviewer": "Codex in Chrome",
+      "sources": [
+        {
+          "note": "Official HEFO cluster, Global Business School for Health membership and university identity.",
+          "url": "https://www.ucl.ac.uk/population-health-sciences/global-business-school-health/research/research-clusters/health-economics-finance-operations",
+          "checkedAt": "2026-10-20",
+          "outcome": "read"
+        },
+        {
+          "url": "https://www.ucl.ac.uk/management/research-and-insights",
+          "checkedAt": "2026-10-20",
+          "outcome": "read",
+          "note": "Read research-group directory and expanded Operations and Technology description."
+        },
+        {
+          "url": "https://www.ucl.ac.uk/clinical-operational-research-unit/",
+          "checkedAt": "2026-10-20",
+          "note": "Read home page: operational research, data analysis and mathematical modelling in health care; sits within UCL Department of Mathematics.",
+          "outcome": "read"
+        },
+        {
+          "url": "https://www.ucl.ac.uk/clinical-operational-research-unit/team",
+          "checkedAt": "2026-10-20",
+          "note": "Read faculty team and operational-research methods and service-delivery remit.",
+          "outcome": "read"
+        },
+        {
+          "url": "https://www.ucl.ac.uk/engineering/departments",
+          "checkedAt": "2026-10-20",
+          "note": "Read full engineering department directory; School of Management is listed; no separate industrial-engineering department listed.",
+          "outcome": "read"
+        },
+        {
+          "url": "https://www.ucl.ac.uk/management/news/2015/aug/launch-ucl-school-management",
+          "checkedAt": "2026-10-20",
+          "note": "Official history explicitly says School of Management replaced Department of Management Science and Innovation on 1 August 2015.",
+          "outcome": "read"
+        }
+      ],
+      "decisions": [
+        {
+          "reason": "Historical department replaced by School of Management in 2015, as explicitly documented by UCL; current Operations and Technology group is the relevant operations unit within that successor school.",
+          "sourceDepartmentId": "university-college-london____management-science-and-innovation",
+          "unitIds": [
+            "ucl-school-of-management--operations-technology"
+          ],
+          "disposition": "replaced"
+        }
+      ],
+      "universitySourceUrl": "https://www.ucl.ac.uk/engineering/departments",
+      "checkedAt": "2026-10-20",
+      "units": [
+        {
+          "id": "ucl-gbsh--health-economics-finance-operations",
+          "type": "group",
+          "sourceUrl": "https://www.ucl.ac.uk/population-health-sciences/global-business-school-health/research/research-clusters/health-economics-finance-operations",
+          "evidence": "Official research-cluster page identifies HEFO and its operational-design focus; core faculty include operations/supply management, technology and operations, sustainable supply chain, and reverse-logistics researchers. University College London appears in footer.",
+          "checkedAt": "2026-10-20",
+          "school": "UCL Global Business School for Health",
+          "fields": [
+            "operations-management",
+            "supply-chain",
+            "logistics"
+          ],
+          "name": "Health Economics, Finance and Operations"
+        },
+        {
+          "id": "ucl-school-of-management--operations-technology",
+          "name": "Operations and Technology",
+          "school": "UCL School of Management",
+          "type": "group",
+          "fields": [
+            "operations-management"
+          ],
+          "sourceUrl": "https://www.ucl.ac.uk/management/research-and-insights",
+          "checkedAt": "2026-10-20",
+          "evidence": "Official research directory lists five research groups including Operations and Technology; expanded description studies efficiency in hospitals, platforms, retailers and manufacturing systems. Footer gives University College London."
+        },
+        {
+          "school": "UCL Department of Mathematics",
+          "id": "university-college-london--clinical-operational-research",
+          "name": "Clinical Operational Research Unit (CORU)",
+          "sourceUrl": "https://www.ucl.ac.uk/clinical-operational-research-unit/",
+          "evidence": "Official home describes research team applying operational research, data analysis and mathematical modelling to health care; states it sits within UCL Department of Mathematics.",
+          "checkedAt": "2026-10-20",
+          "type": "group",
+          "fields": [
+            "operations-research"
+          ]
+        }
+      ],
+      "id": "university-college-london-ucl",
+      "limitations": [
+        "Clinical Operational Research Unit is recorded as a research group rather than a department. Engineering directory and the two business-school research structures were checked."
+      ],
+      "status": "reviewed",
+      "canonicalName": "University College London",
+      "duplicateOf": "university-college-london",
+      "addedAt": "2026-10-20T09:34:49Z",
+      "updatedAt": "2026-10-20T09:34:49Z"
+    },
+    {
+      "id": "university-of-houston",
+      "status": "reviewed",
+      "canonicalName": "University of Houston",
+      "universitySourceUrl": "https://www.bauer.uh.edu/departments/disc/",
+      "checkedAt": "2026-10-20",
+      "reviewer": "Codex integrator in Chrome",
+      "units": [
+        {
+          "id": "university-of-houston--decision-information-sciences",
+          "name": "Department of Decision & Information Sciences (DISC)",
+          "school": "C. T. Bauer College of Business",
+          "type": "department",
+          "fields": [
+            "operations-management",
+            "supply-chain"
+          ],
+          "sourceUrl": "https://www.bauer.uh.edu/departments/disc/",
+          "checkedAt": "2026-10-20",
+          "evidence": "Official department page names three concentrations, including Supply Chain Management, and explicitly describes combined information-systems and operations research performance. Research overview uses DISC alongside full departmental name."
+        },
+        {
+          "id": "university-of-houston--industrial-systems-engineering",
+          "name": "Department of Industrial and Systems Engineering",
+          "school": "Cullen College of Engineering",
+          "type": "department",
+          "fields": [
+            "industrial-engineering",
+            "supply-chain",
+            "logistics"
+          ],
+          "sourceUrl": "https://www.ie.uh.edu/about/chairs-message",
+          "checkedAt": "2026-10-20",
+          "evidence": "Official chair page explicitly gives full department and college names and manufacturing/supply-chain research. Logistics programme page independently identifies this department as its host, not another department."
+        }
+      ],
+      "decisions": [
+        {
+          "sourceDepartmentId": "university-of-houston",
+          "disposition": "not-a-unit",
+          "unitIds": [],
+          "reason": "Unnamed university or parent college row is not an additional department."
+        },
+        {
+          "sourceDepartmentId": "university-of-houston____decision-and-iis",
+          "disposition": "unresolved",
+          "unitIds": [],
+          "reason": "Imported IIS spelling has no verified exact expansion; not treated as a separate department or silently equated to DISC."
+        },
+        {
+          "sourceDepartmentId": "university-of-houston____ise-supply-chain-and-logistics-tech",
+          "disposition": "duplicate",
+          "unitIds": [
+            "university-of-houston--industrial-systems-engineering"
+          ],
+          "reason": "Official logistics programme is housed by Industrial and Systems Engineering; no separate department created from degree title."
+        },
+        {
+          "sourceDepartmentId": "university-of-houston____om-is",
+          "disposition": "not-a-unit",
+          "unitIds": [],
+          "reason": "Recruiting subject label is not an official department name. Verified business and engineering host departments are listed once each."
+        },
+        {
+          "sourceDepartmentId": "university-of-houston____om-scm",
+          "disposition": "not-a-unit",
+          "unitIds": [],
+          "reason": "Recruiting subject label is not an official department name. Verified business and engineering host departments are listed once each."
+        },
+        {
+          "sourceDepartmentId": "university-of-houston____operations-management",
+          "disposition": "not-a-unit",
+          "unitIds": [],
+          "reason": "Recruiting subject label is not an official department name. Verified business and engineering host departments are listed once each."
+        },
+        {
+          "sourceDepartmentId": "university-of-houston____scm-om",
+          "disposition": "not-a-unit",
+          "unitIds": [],
+          "reason": "Recruiting subject label is not an official department name. Verified business and engineering host departments are listed once each."
+        },
+        {
+          "sourceDepartmentId": "university-of-houston__c-t-bauer-college-of-business",
+          "disposition": "not-a-unit",
+          "unitIds": [],
+          "reason": "Unnamed university or parent college row is not an additional department."
+        },
+        {
+          "sourceDepartmentId": "university-of-houston__c-t-bauer-college-of-business__business-analytics",
+          "disposition": "out-of-scope",
+          "unitIds": [],
+          "reason": "Official DISC page identifies Business Analytics as a concentration, not a separate operations department."
+        },
+        {
+          "sourceDepartmentId": "university-of-houston__c-t-bauer-college-of-business__department-of-decision-and-information-sciences",
+          "disposition": "replaced",
+          "unitIds": [
+            "university-of-houston--decision-information-sciences"
+          ],
+          "reason": "Official full name and abbreviation verified; combined decision-sciences department explicitly houses supply-chain research and teaching."
+        },
+        {
+          "sourceDepartmentId": "university-of-houston__c-t-bauer-college-of-business__the-bauer-human-centered-artificial-intelligence-institute",
+          "disposition": "out-of-scope",
+          "unitIds": [],
+          "reason": "Official institute mission is general AI, analytics and digital technology. Some operations publications are listed, but no named operations department or group is established; excluded from the operations-unit list."
+        },
+        {
+          "sourceDepartmentId": "university-of-houston__cullen-college-of-engineering__industrial-and-systems-engineering",
+          "disposition": "replaced",
+          "unitIds": [
+            "university-of-houston--industrial-systems-engineering"
+          ],
+          "reason": "Full official engineering department name and parent verified."
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.bauer.uh.edu/search/directory/index2.asp?dept=DISC",
+          "checkedAt": "2026-10-20",
+          "outcome": "read",
+          "note": "Official department roster and university/college identity."
+        },
+        {
+          "url": "https://www.bauer.uh.edu/research/",
+          "checkedAt": "2026-10-20",
+          "outcome": "read",
+          "note": "Bauer department inventory; full Decision & Information Sciences name and DISC acronym."
+        },
+        {
+          "url": "https://www.bauer.uh.edu/departments/disc/publications/",
+          "checkedAt": "2026-10-20",
+          "outcome": "read",
+          "note": "Department name, university/college hierarchy and supply-chain degree inventory."
+        },
+        {
+          "url": "https://www.bauer.uh.edu/departments/disc/",
+          "checkedAt": "2026-10-20",
+          "outcome": "read",
+          "note": "Department explicitly houses MIS, Business Analytics and Supply Chain Management concentrations; substantive combined IS/operations research remit."
+        },
+        {
+          "url": "https://www.bauer.uh.edu/centers/",
+          "checkedAt": "2026-10-20",
+          "outcome": "read",
+          "note": "Institute inventory; AI institute is a separate unit, not a department alias."
+        },
+        {
+          "url": "https://www.bauer.uh.edu/ai/",
+          "checkedAt": "2026-10-20",
+          "outcome": "read",
+          "note": "AI institute mission concerns analytics, digital technology and AI; selected operations-related publications do not make it a named operations department."
+        },
+        {
+          "url": "https://www.ie.uh.edu/undergraduate/supply-chain-and-logistics-technology",
+          "checkedAt": "2026-10-20",
+          "outcome": "read",
+          "note": "Full engineering department and college name; logistics is a degree programme hosted by this department."
+        },
+        {
+          "url": "https://www.ie.uh.edu/about/chairs-message",
+          "checkedAt": "2026-10-20",
+          "outcome": "read",
+          "note": "Department chair explicitly confirms full department/university/college names and manufacturing/supply-chain research."
+        }
+      ],
+      "limitations": [
+        "Decision and IIS remains an unresolved imported spelling; no invented expansion. Review covers the imported labels and relevant business/industrial engineering structures, not an exhaustive census of every campus research collaboration."
+      ],
+      "duplicateOf": null,
+      "addedAt": "2026-10-20T09:34:49Z",
+      "updatedAt": "2026-10-20T09:34:49Z"
     }
   ]
 }

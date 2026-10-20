@@ -10,7 +10,8 @@ const shards = {};
 for (const [shard, rows] of Object.entries(assignments.shards)) {
   const proposed = [], unattempted = [], unmerged = [], incomplete = [];
   for (const row of rows) {
-    const path = `${root}/proposals/${shard}/${row.id}.json`;
+    const owner = assignments.overrides?.[row.id] || shard;
+    const path = `${root}/proposals/${owner}/${row.id}.json`;
     if (!fs.existsSync(path)) { unattempted.push(row); continue; }
     const proposal = JSON.parse(fs.readFileSync(path, 'utf8'));
     proposed.push({ ...row, status: proposal.status });

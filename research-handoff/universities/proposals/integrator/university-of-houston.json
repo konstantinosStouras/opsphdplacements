@@ -1,0 +1,171 @@
+{
+  "id": "university-of-houston",
+  "status": "reviewed",
+  "canonicalName": "University of Houston",
+  "universitySourceUrl": "https://www.bauer.uh.edu/departments/disc/",
+  "checkedAt": "2026-10-20",
+  "reviewer": "Codex integrator in Chrome",
+  "units": [
+    {
+      "id": "university-of-houston--decision-information-sciences",
+      "name": "Department of Decision & Information Sciences (DISC)",
+      "school": "C. T. Bauer College of Business",
+      "type": "department",
+      "fields": [
+        "operations-management",
+        "supply-chain"
+      ],
+      "sourceUrl": "https://www.bauer.uh.edu/departments/disc/",
+      "checkedAt": "2026-10-20",
+      "evidence": "Official department page names three concentrations, including Supply Chain Management, and explicitly describes combined information-systems and operations research performance. Research overview uses DISC alongside full departmental name."
+    },
+    {
+      "id": "university-of-houston--industrial-systems-engineering",
+      "name": "Department of Industrial and Systems Engineering",
+      "school": "Cullen College of Engineering",
+      "type": "department",
+      "fields": [
+        "industrial-engineering",
+        "supply-chain",
+        "logistics"
+      ],
+      "sourceUrl": "https://www.ie.uh.edu/about/chairs-message",
+      "checkedAt": "2026-10-20",
+      "evidence": "Official chair page explicitly gives full department and college names and manufacturing/supply-chain research. Logistics programme page independently identifies this department as its host, not another department."
+    }
+  ],
+  "decisions": [
+    {
+      "sourceDepartmentId": "university-of-houston",
+      "disposition": "not-a-unit",
+      "unitIds": [],
+      "reason": "Unnamed university or parent college row is not an additional department."
+    },
+    {
+      "sourceDepartmentId": "university-of-houston____decision-and-iis",
+      "disposition": "unresolved",
+      "unitIds": [],
+      "reason": "Imported IIS spelling has no verified exact expansion; not treated as a separate department or silently equated to DISC."
+    },
+    {
+      "sourceDepartmentId": "university-of-houston____ise-supply-chain-and-logistics-tech",
+      "disposition": "duplicate",
+      "unitIds": [
+        "university-of-houston--industrial-systems-engineering"
+      ],
+      "reason": "Official logistics programme is housed by Industrial and Systems Engineering; no separate department created from degree title."
+    },
+    {
+      "sourceDepartmentId": "university-of-houston____om-is",
+      "disposition": "not-a-unit",
+      "unitIds": [],
+      "reason": "Recruiting subject label is not an official department name. Verified business and engineering host departments are listed once each."
+    },
+    {
+      "sourceDepartmentId": "university-of-houston____om-scm",
+      "disposition": "not-a-unit",
+      "unitIds": [],
+      "reason": "Recruiting subject label is not an official department name. Verified business and engineering host departments are listed once each."
+    },
+    {
+      "sourceDepartmentId": "university-of-houston____operations-management",
+      "disposition": "not-a-unit",
+      "unitIds": [],
+      "reason": "Recruiting subject label is not an official department name. Verified business and engineering host departments are listed once each."
+    },
+    {
+      "sourceDepartmentId": "university-of-houston____scm-om",
+      "disposition": "not-a-unit",
+      "unitIds": [],
+      "reason": "Recruiting subject label is not an official department name. Verified business and engineering host departments are listed once each."
+    },
+    {
+      "sourceDepartmentId": "university-of-houston__c-t-bauer-college-of-business",
+      "disposition": "not-a-unit",
+      "unitIds": [],
+      "reason": "Unnamed university or parent college row is not an additional department."
+    },
+    {
+      "sourceDepartmentId": "university-of-houston__c-t-bauer-college-of-business__business-analytics",
+      "disposition": "out-of-scope",
+      "unitIds": [],
+      "reason": "Official DISC page identifies Business Analytics as a concentration, not a separate operations department."
+    },
+    {
+      "sourceDepartmentId": "university-of-houston__c-t-bauer-college-of-business__department-of-decision-and-information-sciences",
+      "disposition": "replaced",
+      "unitIds": [
+        "university-of-houston--decision-information-sciences"
+      ],
+      "reason": "Official full name and abbreviation verified; combined decision-sciences department explicitly houses supply-chain research and teaching."
+    },
+    {
+      "sourceDepartmentId": "university-of-houston__c-t-bauer-college-of-business__the-bauer-human-centered-artificial-intelligence-institute",
+      "disposition": "out-of-scope",
+      "unitIds": [],
+      "reason": "Official institute mission is general AI, analytics and digital technology. Some operations publications are listed, but no named operations department or group is established; excluded from the operations-unit list."
+    },
+    {
+      "sourceDepartmentId": "university-of-houston__cullen-college-of-engineering__industrial-and-systems-engineering",
+      "disposition": "replaced",
+      "unitIds": [
+        "university-of-houston--industrial-systems-engineering"
+      ],
+      "reason": "Full official engineering department name and parent verified."
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.bauer.uh.edu/search/directory/index2.asp?dept=DISC",
+      "checkedAt": "2026-10-20",
+      "outcome": "read",
+      "note": "Official department roster and university/college identity."
+    },
+    {
+      "url": "https://www.bauer.uh.edu/research/",
+      "checkedAt": "2026-10-20",
+      "outcome": "read",
+      "note": "Bauer department inventory; full Decision & Information Sciences name and DISC acronym."
+    },
+    {
+      "url": "https://www.bauer.uh.edu/departments/disc/publications/",
+      "checkedAt": "2026-10-20",
+      "outcome": "read",
+      "note": "Department name, university/college hierarchy and supply-chain degree inventory."
+    },
+    {
+      "url": "https://www.bauer.uh.edu/departments/disc/",
+      "checkedAt": "2026-10-20",
+      "outcome": "read",
+      "note": "Department explicitly houses MIS, Business Analytics and Supply Chain Management concentrations; substantive combined IS/operations research remit."
+    },
+    {
+      "url": "https://www.bauer.uh.edu/centers/",
+      "checkedAt": "2026-10-20",
+      "outcome": "read",
+      "note": "Institute inventory; AI institute is a separate unit, not a department alias."
+    },
+    {
+      "url": "https://www.bauer.uh.edu/ai/",
+      "checkedAt": "2026-10-20",
+      "outcome": "read",
+      "note": "AI institute mission concerns analytics, digital technology and AI; selected operations-related publications do not make it a named operations department."
+    },
+    {
+      "url": "https://www.ie.uh.edu/undergraduate/supply-chain-and-logistics-technology",
+      "checkedAt": "2026-10-20",
+      "outcome": "read",
+      "note": "Full engineering department and college name; logistics is a degree programme hosted by this department."
+    },
+    {
+      "url": "https://www.ie.uh.edu/about/chairs-message",
+      "checkedAt": "2026-10-20",
+      "outcome": "read",
+      "note": "Department chair explicitly confirms full department/university/college names and manufacturing/supply-chain research."
+    }
+  ],
+  "limitations": [
+    "Decision and IIS remains an unresolved imported spelling; no invented expansion. Review covers the imported labels and relevant business/industrial engineering structures, not an exhaustive census of every campus research collaboration."
+  ],
+  "duplicateOf": null
+}

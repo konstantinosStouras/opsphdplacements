@@ -1,0 +1,63 @@
+{
+  "id": "loyola-university-chicago",
+  "status": "reviewed",
+  "canonicalName": "Loyola University Chicago",
+  "universitySourceUrl": "https://www.luc.edu/engineering/",
+  "checkedAt": "2026-10-20",
+  "reviewer": "Codex in Chrome",
+  "units": [
+    {
+      "sourceUrl": "http://www.luc.edu/quinlan/faculty/",
+      "fields": [
+        "operations-management",
+        "supply-chain"
+      ],
+      "id": "loyola-university-chicago--information-systems-supply-chain-management",
+      "type": "department",
+      "evidence": "Official faculty directory academic department filter uses full combined IS/SCM name and lists its department chair alongside numerous supply chain faculty.",
+      "name": "Information Systems and Supply Chain Management",
+      "school": "Quinlan School of Business",
+      "checkedAt": "2026-10-20"
+    }
+  ],
+  "decisions": [
+    {
+      "unitIds": [],
+      "sourceDepartmentId": "loyola-university-chicago__quinlan-school-of-business",
+      "disposition": "not-a-unit",
+      "reason": "School-only parent row is not an additional department."
+    },
+    {
+      "unitIds": [
+        "loyola-university-chicago--information-systems-supply-chain-management"
+      ],
+      "sourceDepartmentId": "loyola-university-chicago__quinlan-school-of-business__information-systems-and-operations-management",
+      "disposition": "replaced",
+      "reason": "Current official faculty directory names the combined Information Systems and Supply Chain Management department instead of imported operations wording."
+    }
+  ],
+  "sources": [
+    {
+      "url": "http://www.luc.edu/quinlan/faculty/",
+      "outcome": "read",
+      "checkedAt": "2026-10-20",
+      "note": "Redirected faculty page read; current combined department and chair verified."
+    },
+    {
+      "url": "https://www.luc.edu/engineering/",
+      "outcome": "read",
+      "checkedAt": "2026-10-20",
+      "note": "Engineering branch within College of Arts and Sciences."
+    },
+    {
+      "url": "https://www.luc.edu/engineering/curriculum/specializations/",
+      "outcome": "read",
+      "checkedAt": "2026-10-20",
+      "note": "Engineering specializations biomedical, computer, environmental; no industrial engineering specialization or department identified."
+    }
+  ],
+  "limitations": [
+    "No date or formal administrative rename inferred from older imported department wording."
+  ],
+  "duplicateOf": null
+}

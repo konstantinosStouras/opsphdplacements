@@ -1,0 +1,77 @@
+{
+  "id": "university-college-dublin-ucd",
+  "status": "reviewed",
+  "canonicalName": "University College Dublin",
+  "universitySourceUrl": "https://www.ucd.ie/mecheng/",
+  "checkedAt": "2026-10-20",
+  "reviewer": "Codex in Chrome",
+  "units": [
+    {
+      "type": "area",
+      "evidence": "Official Management subject-area page identifies UCD College of Business and explicitly includes supply chain management among core specialties.",
+      "id": "university-college-dublin--management",
+      "school": "UCD College of Business",
+      "name": "Management",
+      "sourceUrl": "https://www.smurfitschool.ie/facultyresearch/subjectareas/management/",
+      "checkedAt": "2026-10-20",
+      "fields": [
+        "supply-chain"
+      ]
+    },
+    {
+      "type": "school",
+      "evidence": "Official school-head profile identifies the school at University College Dublin and explicitly lists supply-chain design/optimization, simulation, supply-chain risk/resilience and manufacturing operations research. School homepage separately confirms full name.",
+      "id": "university-college-dublin--mechanical-materials-engineering",
+      "school": null,
+      "name": "UCD School of Mechanical and Materials Engineering",
+      "sourceUrl": "https://www.ucd.ie/limar/people/vincenthargaden/",
+      "checkedAt": "2026-10-20",
+      "fields": [
+        "supply-chain",
+        "operations-management"
+      ]
+    }
+  ],
+  "decisions": [
+    {
+      "disposition": "replaced",
+      "reason": "Official Management subject area explicitly includes supply chains.",
+      "unitIds": [
+        "university-college-dublin--management"
+      ],
+      "sourceDepartmentId": "university-college-dublin__michael-smurfit-graduate-business-school__management-area"
+    },
+    {
+      "disposition": "replaced",
+      "reason": "Official school and operations-related scope verified; retained as school.",
+      "unitIds": [
+        "university-college-dublin--mechanical-materials-engineering"
+      ],
+      "sourceDepartmentId": "university-college-dublin__school-of-mechanical-and-materials-engineering"
+    }
+  ],
+  "sources": [
+    {
+      "note": "Business Management subject area and supply-chain scope.",
+      "outcome": "read",
+      "checkedAt": "2026-10-20",
+      "url": "https://www.smurfitschool.ie/facultyresearch/subjectareas/management/"
+    },
+    {
+      "note": "School head identifies university/school and current supply-chain/operations research.",
+      "outcome": "read",
+      "checkedAt": "2026-10-20",
+      "url": "https://www.ucd.ie/limar/people/vincenthargaden/"
+    },
+    {
+      "note": "Official full engineering-school name and university footer.",
+      "outcome": "read",
+      "checkedAt": "2026-10-20",
+      "url": "https://www.ucd.ie/mecheng/"
+    }
+  ],
+  "limitations": [
+    "Supply Chain Management is explicitly present in Management area; no separately named current supply-chain department inferred from historic faculty affiliations."
+  ],
+  "duplicateOf": "university-college-dublin"
+}
