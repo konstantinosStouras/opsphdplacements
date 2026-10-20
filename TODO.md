@@ -185,3 +185,5 @@ The Anuj Mehrotra OM List row also links to the same opened official Scheller pr
 
 - [x] University cleanup continuation, 20 October: integrated 85 Chrome observations (68 reviewed, 17 partial); full official names, explicit MIT aliases and dated KIMEP access limitations preserved. The 68-record release at ef3a32c deployed successfully.
 - [ ] Continue the remaining 560 university records and resolve 17 partial reviews; old KIMEP learning-platform structure needs current organization evidence. See university progress and proposals for newer unmerged work.
+
+- [x] Reschedule the existing career-profile tracker from 20 October to four upcoming daily runs at 11:17, 14:17, 17:17 and 20:17 London time (up to25 each;100 unique-profile daily target). Daily checkpoints separate full source captures, partial, blocked and unmatched; initial 20 October checkpoint includes seven earlier profiles, leaving93.
