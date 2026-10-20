@@ -125,3 +125,5 @@ The coordinating LinkedIn chat confirmed the owner's authorization for this five
 
 
 Website source presentation: list Operations Academia first and retain the corrections email. Do not add visitor-facing raw dataset links or filenames, including generated summaries, errors and fallback text. Internal data loading remains required. Removing links does not restrict access to static data, public Git history or CSV exports.
+
+When publishing new data, recompute the abstract counts from placement categories and the combined people inputs; percentages use every verified placement, including unknown categories. Retain faculty-selection and incomplete-coverage caveats. Describe regressions only after they have been run and reviewed.

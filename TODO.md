@@ -173,3 +173,5 @@ The Anuj Mehrotra OM List row also links to the same opened official Scheller pr
 
 
 - [x] 20 October 2026: lead source references with Operations Academia, remove the Audit and corrections panel and all visitor-facing raw dataset links/filenames, and retain the corrections email. Static data, the public repository and CSV exports remain accessible; actual access restriction would require a separate hosting/data-delivery change.
+
+- [x] 20 October 2026: replace the collection-only abstract with descriptive findings from the current placements: 432/2,087 postdocs (20.7%), 1,013/2,087 tenure-track (48.5%), 94 industry/government/nonprofit first jobs and 385/2,087 unknown types (18.4%). Denominators and faculty-sample selection are explicit; no regression has been run. Refresh the abstract after data releases and later reviewed regression analyses.
