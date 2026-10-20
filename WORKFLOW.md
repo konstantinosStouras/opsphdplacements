@@ -159,3 +159,8 @@ Technical guides and underlying data can retain filenames and repository referen
 ## Individual source blockers — 20 October 2026
 
 The owner clarified that an unavailable individual CV/profile must be recorded as a per-person limitation while the remaining alphabetical batch continues. Do not work around a blocked destination. Live CAPTCHA/human-verification/login challenges, platform-wide restrictions and disconnected Chrome still require a user handoff; never claim to be human or bypass checks. The scheduled tracker prompt now follows this distinction.
+# Career batch 54–78 publication contract — 20 October 2026
+
+The dated transcription script `research-handoff/careers/batches/build-2026-10-20-54-78.mjs` converts manually reviewed observations to portable per-person histories and outcomes. Its `--integrate` option appends missing IDs and refuses duplicate public identities; it is a historical construction step, not an update command. Do not rerun it over newer outcomes. New records carry `reviewStatus: "partial"` so the collapsed explorer summary exposes incompleteness. Original date labels remain intact; the normalized date fields use year/month precision, preserving any original day wording without inventing finer computational precision.
+
+Serialize shared public-history, record-date and status updates with university and career integrators. Keep unpublished proposals separate from public JSON; a research-branch commit does not itself authorize their integration. Queue/daily counts measure attempts, not completed careers.

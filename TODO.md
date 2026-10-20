@@ -208,3 +208,8 @@ The Anuj Mehrotra OM List row also links to the same opened official Scheller pr
 
 - [x] Resume remaining 24 people of the 11:17 career batch after the owner clarified individual source blockers; save partial source observations and daily attempts (57), research branch only.
 - [ ] Review 24 unpublished career proposals before integration; resolve missing dates, old CV Present claims, Bensoussan pagination, Aggon population scope and limited doctorate identity checks. Jain’s blocked CV remains a separate follow-up. No complete real-world career claim.
+# Career batch 54–78 — 20 October 2026
+
+- Integrated 25 partial histories (143 role entries) from Alan Scheller-Wolf through Alexander Shapiro, separate from the other workflow's unpublished 29–53 proposals. Seven bounded academic summaries preserve source-age limits.
+- Follow up missing/old chronologies, especially Alan Scheller-Wolf's dead CV, Aleda Roth's 2014 CV, Alena Otto's Passau/TUM transition, Alexander Estes's conflicting postdoc entry, and profiles without doctorate evidence. No first-placement or imported-person data changed.
+- Next unassigned career queue position is 79; consult the regenerated queue and active assignments before claiming it. Partial cases remain unfinished even though the alphabetical pass moves on.
