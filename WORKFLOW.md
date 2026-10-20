@@ -143,3 +143,14 @@ The owner requests 100 unique profiles searched/researched per London calendar d
 Browser tab cleanup (owner instruction, 20 October 2026): reuse a source tab where practical and close agent-created source/search/preview tabs immediately after their work is complete. Keep only active work or a genuine pending user challenge/handoff; close it after resolution. Do not close unrelated user tabs. Include this instruction in delegated browser tasks.
 
 University review validation also accepts evidenced directoryExclusion objects for confirmed non-university imports. The display omits those records without modifying the import or employers. Test exclusions separately from aliases and unresolved academic scope.
+
+## Visitor-interface audit before website publication
+
+This is a standing release requirement unless the owner explicitly changes it:
+
+1. Inspect changed HTML and rendering code for dataset download/export controls and links (CSV included), visitor-visible `.json` references, and links to the project GitHub repository, raw content, technical guides or issue tracker. Internal fetch paths are necessary and are not visitor links.
+2. Review data fields rendered as text or links, especially evidence notes and source labels. Preserve research records; replace internal filenames with meaningful descriptions in the presentation layer.
+3. Check the rendered page, both explorer modes, coverage/trend/profile tabs, selected profiles, expanded evidence/history details, mobile presentation and relevant fallback/error messages. Ensure no forbidden controls, visible text or links appear. Do not treat a scan of the initial HTML as a complete dynamic-interface audit.
+4. Retain Operations Academia and OM List references, original external evidence links and the corrections email. Run normal validation/build checks, then verify the deployed page. Report any view that could not be checked.
+
+Technical guides and underlying data can retain filenames and repository references. The public repository and static data remain accessible; removal of interface links must never be described as access protection. Audit precedent: research-handoff/website-audit-2026-10-20.md.

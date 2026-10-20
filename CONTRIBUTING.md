@@ -58,3 +58,7 @@ University reviews use a separate [contract and shard ownership](research-handof
 Use the contract in [research-handoff/careers/README.md](research-handoff/careers/README.md) for CV and official-page histories. Retain LinkedIn observations in their existing dataset. Never join a graduate history to a faculty record by name alone. Record every mentioned employment entry and explicit limitations. Summaries require separately reviewed primary-sector periods and a sourced degree boundary. Classification-only changes preserve original source-check dates and carry categoryReview metadata.
 
 Chrome research lanes should reuse one tab where practical and close completed source/preview tabs. Keep only active work or genuine pending handoffs; never close unrelated user tabs.
+
+## Required visitor-interface policy
+
+Follow the standing public website presentation rule in AGENTS.md. Do not add dataset download/export controls or links, visible `.json` references, or links to this project's GitHub repository, raw files, guides or issue tracker. Check generated and expanded content as well as static markup. Keep original evidence and reference-site attribution, and direct corrections to `kostas.stouras@ucd.ie`. Preserve provenance in stored records; use plain-language labels in the interface. Internal loading paths and technical contributor documentation are outside this display restriction. Run the WORKFLOW.md visitor-interface audit before publication.
