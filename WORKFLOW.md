@@ -183,3 +183,13 @@ The dated `build-2026-10-21-129-153-observations.mjs` transcribes opened evidenc
 ## Career positions 154–178 — 21 October 2026
 
 The dated observation/builder/finish scripts follow the prior batch contract: manually read source transcription, exact-ID append-once integration, then deduplicated daily attempts. Do not rerun --integrate to refresh records. Preserve identityFollowUp duplicate candidates and original source date wording. Owner requested pause after publication of collected evidence; daily automation is paused and no next batch is assigned. Read the dated154–178 report and latest university handoff before resuming shared integration.
+
+## Consolidated visitor interface — 21 October 2026
+
+`node scripts/build.mjs` now runs `scripts/update-website-copy.mjs` before copying the public site. It refreshes the crawlable subtitle, sample size and abstract category counts from public inputs; review the resulting index change before committing. Run the copy updater explicitly before the final diff, then run normal checks/build. The people view joins first jobs and histories by stable ID; the organisation view joins entity aliases and reviewed university targets, preserving source-level provenance. Unmatched graduate observations remain separately labeled source material within People.
+
+Before release test: exact/partial/no-match profile typing and Enter/selection; independent and combined person employer/title/history filters; organisation search/connection/country/reset/pagination, companies and government employers, departments and program sources; graduate area/institution/search controls; all four distinct trend views, chart/table modes, coverage map/cohort grid, institution/employer/comparison/affiliation profiles, expanded evidence, legacy anchors, small-screen horizontal scrolling and source-load errors. Audit visible text and links for the standing presentation restrictions. Research remains paused unless separately resumed by the owner; this interface release does not resume collection.
+
+The hero animation uses the same corrected cohort/first-job index as the analytic views. Test automatic year advancement, pause, year/slider/previous/next controls, no-outcome cohorts, hidden-tab/viewport suspension, reduced-motion styling and the cohort-to-explorer link. Its model test checks unknown-category inclusion, unresolved exclusion from shares and empty-year handling.
+
+Playback controls are separate Play (one pass), Pause and Auto-play (loop) buttons below the year slider; Auto-play is the default except when reduced motion is requested. Manual year/slider/previous/next changes pause playback.

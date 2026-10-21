@@ -1,7 +1,22 @@
 import {test} from 'node:test';import assert from 'node:assert/strict';import {normalize,filterRecords,groupCounts,csv,validateDataset,isSourceUrl} from '../assets/model.js';
+import {cohortStats} from '../assets/cohort-stats.js';
+test('cohort distributions retain unknown job types and exclude unresolved outcomes from shares',()=>{
+ const people=[{phdYear:2020,placement:{category:'postdoc'}},{phdYear:2020,placement:{category:'unknown'}},{phdYear:2020,status:'unresolved'},{phdYear:null,placement:{category:'industry'}},{phdYear:2021,placement:{category:'tenure-track'}}];
+ const stats=cohortStats(people,2020);assert.equal(stats.people,3);assert.equal(stats.verified,2);assert.equal(stats.unresolved,1);
+ assert.equal(stats.categories.find(c=>c.id==='postdoc').share,0.5);assert.equal(stats.categories.find(c=>c.id==='unknown').share,0.5);
+ assert.equal(stats.categories.reduce((s,c)=>s+c.count,0),2);assert.ok(cohortStats(people,2019).categories.every(c=>c.share===null));
+});
 const rows=[normalize({id:'a',name:'Test A',discipline:'Operations',currentInstitution:'Institution A',phdInstitution:'Program X',phdYear:2020,facultyStatus:'active'}),normalize({id:'b',name:'Test B',discipline:'Operations',currentInstitution:'Institution B',phdYear:null,facultyStatus:'retired'}),normalize({id:'c',name:'Test C',discipline:'Supply Chain Management',currentInstitution:'Institution A',phdInstitution:'Program Y',phdYear:2022,facultyStatus:'active'})];
 test('filters combine search, status, institution and year; unknown year is excluded from ranges',()=>{assert.equal(filterRecords(rows,{status:'active'}).length,2);assert.equal(filterRecords(rows,{query:'TEST institution',from:2021}).length,1);assert.equal(filterRecords(rows,{phd:'Program X',to:2019}).length,0);assert.equal(filterRecords(rows,{institution:'Institution A'}).length,2);});
 test('current affiliation never becomes first placement',()=>assert.equal(rows[0].firstPlacement,undefined));
+test('one person can be found by their independently evidenced first employer and role',()=>{
+ const person={...rows[0],firstPlacement:{employer:'INSEAD',position:'Assistant Professor',placementYear:2021,category:'tenure-track'}};
+ assert.equal(filterRecords([person],{query:'INSEAD Assistant'}).length,1);
+ assert.equal(filterRecords([person],{cols:{institution:'INSEAD',position:'Assistant'}}).length,1);
+ assert.equal(filterRecords([person],{cols:{institution:'INSEAD',position:'Postdoc'}}).length,0);
+ assert.equal(person.institution,'Institution A');
+ assert.equal(filterRecords(rows,{query:'INSEAD'}).length,0);
+});
 test('verified placements render first employer and role instead of later affiliation/title',()=>{const r=normalize({verificationStatus:'verified-first-placement',employer:'First University',position:'Postdoctoral fellow',currentInstitution:'Later University',title:'Professor'});assert.equal(r.institution,'First University');assert.equal(r.position,'Postdoctoral fellow');});
 test('grouping retains unknown values',()=>{assert.deepEqual(groupCounts(rows,'institution'),[['Institution A',2],['Institution B',1]]);assert.ok(groupCounts(rows,'phdYear').some(([k])=>k==='Unknown'));});
 test('CSV handles quotes, newlines and spreadsheet formulas',()=>{const out=csv([{name:'=1+1',position:'a,"b"\nc'}]);assert.ok(out.includes('"\'=1+1"'));assert.ok(out.includes('"a,""b""\nc"'));});

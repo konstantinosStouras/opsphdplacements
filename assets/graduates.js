@@ -1,3 +1,4 @@
+import {fold} from './model.js';
 // Graduate lists by program and year (data/graduate-lists.json): the names the programs' own placement,
 // alumni and graduate pages list, read live and from archived copies (Internet Archive, Common Crawl). A listing shows only that the page
 // named the person under that year on that date; it is not a verified degree or first job, and no
@@ -40,8 +41,8 @@ export async function renderGraduates(section) {
   controls.append(instLabel, fieldLabel, search);
 
   const draw = () => {
-    const words = q.value.toLocaleLowerCase().trim().split(/\s+/).filter(Boolean);
-    const rows = records.filter(r => (!instSelect.value || r.institution === instSelect.value) && (fieldSelect.value === '' || (fieldSelect.value === 'operations' ? r.field === 'operations' : r.field !== 'other-field')) && words.every(w => [r.name, r.institution, ...r.sightings.flatMap(s => [s.program, s.destination, s.position])].join(' ').toLocaleLowerCase().includes(w)));
+    const words = fold(q.value).split(/\s+/).filter(Boolean);
+    const rows = records.filter(r => (!instSelect.value || r.institution === instSelect.value) && (fieldSelect.value === '' || (fieldSelect.value === 'operations' ? r.field === 'operations' : r.field !== 'other-field')) && words.every(w => fold([r.name, r.institution, r.listedYear, FIELD[r.field], ...r.sightings.flatMap(s => [s.program, s.destination, s.position])].join(' ')).includes(w)));
     rows.sort((a, b) => (b.listedYear ?? 0) - (a.listedYear ?? 0) || a.institution.localeCompare(b.institution) || a.name.localeCompare(b.name));
     table.replaceChildren();
     const status = html('p', 'map-note', `${fmt(rows.length)} names${instSelect.value ? '' : ' across ' + fmt(new Set(rows.map(r => r.institution)).size) + ' institutions'}; years as the pages give them.`);

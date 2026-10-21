@@ -120,3 +120,9 @@ Amrita Kundu through Andrea Patrucco: 25 individually checked partial histories,
 ## Career batch 154–178 and pause — 21 October 2026
 
 Integrated 25 partial histories (103 roles, 20 other mentions, two bounded summaries); retained source ages, unknown dates and the unmerged Andy Lin duplicate candidate. See [the dated handoff](research-handoff/careers/batches/2026-10-21-154-178-report.md). Research is paused at the owner’s request; next candidate179 requires a fresh queue/ownership check. The career automation is paused; daily attempts total75. University publication has separate ownership.
+
+## Website organisation — 21 October 2026
+
+The public interface has two main directories: People joins profile, reviewed first-job and career-history evidence by stable person ID; Organisations joins the entity register, official university/unit reviews, doctoral programs, source affiliations and observed career employers. Graduate source sightings remain a clearly labeled supporting list until identities and degrees are reconciled. Source-specific research files remain separate internally to preserve provenance. Profiles answer distinct doctoral-outcome, first-hire and directory-affiliation questions; trends contain four outcome views, while coverage holds the map and cohort review grid. The subtitle and abstract counts are refreshed during the static build.
+
+Below the search bar, an animated summary table shows first-job categories one PhD cohort at a time. It starts automatically when visible, offers pause/year/previous/next/slider controls, uses a fixed percentage scale and reports unresolved coverage separately. Reduced-motion visitors start paused.

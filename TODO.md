@@ -239,3 +239,11 @@ Follow up unavailable Alptekinoglu/Sapra/Chandra evidence, the unlinked Aman Gup
 ## Career batch 154–178 and pause — 21 October 2026
 
 Integrated 25 partial histories (103 roles, 20 other mentions, two bounded summaries); retained source ages, unknown dates and the unmerged Andy Lin duplicate candidate. See [the dated handoff](research-handoff/careers/batches/2026-10-21-154-178-report.md). Research is paused at the owner’s request; next candidate179 requires a fresh queue/ownership check. The career automation is paused; daily attempts total75. University publication has separate ownership.
+
+## Website clarity update — 21 October 2026
+
+- [x] Consolidate visitor navigation into People and Organisations; join career evidence to matched people and university/program/employer evidence to organisations. Keep unmatched graduate sightings explicitly unverified, with no speculative identity merges.
+- [x] Typed profile searches expose clickable results and open exact matches; add the same search to affiliation profiles. Separate outcome trends from sample coverage and enlarge sequential section numbers. Centre the subtitle/author details and use Konstantinos I. Stouras.
+- [ ] Finish underlying graduate/person duplicate reconciliation and organisation identity/location reviews. Consolidated display does not establish complete identity resolution, current affiliations, historical program coverage or complete careers.
+
+- [x] Add an autoplaying first-job distribution below the hero search, with year navigation, explicit verified denominators, missingness, fixed bar scale and reduced-motion handling.

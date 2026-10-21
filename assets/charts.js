@@ -1,3 +1,4 @@
+import {displayText} from './model.js';
 // Small interactive SVG chart primitives: horizontal bars, stacked columns, lines and a bubble grid.
 // No charting library. Each chart redraws on container resize, has a hover/focus tooltip and a
 // table view of the same numbers (the yellow and magenta series sit below 3:1 contrast on paper,
@@ -11,10 +12,10 @@ const INK = '#252b2a', MUTED = '#66716d', RULE = '#d6dad3', GRID = '#e8ebe5';
 const svgEl = (name, attrs = {}, text) => {
   const e = document.createElementNS(NS, name);
   for (const [k, v] of Object.entries(attrs)) if (v !== undefined && v !== null) e.setAttribute(k, v);
-  if (text !== undefined) e.textContent = text;
+  if (text !== undefined) e.textContent = displayText(text);
   return e;
 };
-export const html = (tag, cls, text) => { const e = document.createElement(tag); if (cls) e.className = cls; if (text !== undefined) e.textContent = text; return e; };
+export const html = (tag, cls, text) => { const e = document.createElement(tag); if (cls) e.className = cls; if (text !== undefined) e.textContent = displayText(text); return e; };
 const charW = (size = 13) => size * 0.53;
 const truncate = (text, width, size = 13) => { const max = Math.floor(width / charW(size)); return text.length <= max ? text : text.slice(0, Math.max(1, max - 1)) + '…'; };
 const nice = max => { if (max <= 0) return 1; const p = Math.pow(10, Math.floor(Math.log10(max))), f = max / p; return (f <= 1 ? 1 : f <= 2 ? 2 : f <= 2.5 ? 2.5 : f <= 5 ? 5 : 10) * p; };

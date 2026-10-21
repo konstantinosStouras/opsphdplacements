@@ -1,5 +1,6 @@
 import fs from 'node:fs';
 import crypto from 'node:crypto';
+import './update-website-copy.mjs';
 fs.mkdirSync('_site',{recursive:true});
 for(const file of ['index.html','.nojekyll','robots.txt','sitemap.xml','favicon.ico','site.webmanifest'])fs.copyFileSync(file,`_site/${file}`);
 for(const dir of ['assets','data'])fs.cpSync(dir,`_site/${dir}`,{recursive:true});

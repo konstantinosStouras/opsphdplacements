@@ -1,3 +1,4 @@
+import {searchablePicker as pickList} from './picker.js';
 // Coverage grid, trends and profiles built from the public datasets. See analytics.js for the
 // numbers and charts.js for the drawing. Nothing here infers a job: every chart counts verified
 // first jobs and shows the unresolved and not-yet-reviewed people beside them.
@@ -19,9 +20,10 @@ export function coverageLede(idx) {
   const countries = new Set([...inst].map(i => idx.institutionCountry.get(i)).filter(Boolean));
   const years = idx.people.map(p => p.phdYear).filter(Boolean);
   const verified = idx.people.filter(p => p.placement).length, unresolved = idx.people.filter(p => p.status === 'unresolved').length;
-  const pending = idx.people.length - verified - unresolved;
-  const fromPages = idx.people.filter(p => p.source === 'faculty-page').length;
-  return `${fmt(inst.size)} PhD-granting institutions${countries.size ? ` in ${countries.size} countries` : ''} appear in the dataset: ${fmt(idx.people.length)} people, ${fmt(idx.people.length - fromPages)} listed in the OM List faculty directory and ${fmt(fromPages)} found on the faculty pages linked from the universities database, from the class of ${Math.min(...years)} to the class of ${Math.max(...years)}. ${fmt(verified)} of them have a verified first job after the PhD; ${fmt(unresolved)} were researched without a firm answer, and ${fmt(pending)} have not been reviewed yet or have not completed the doctorate. These are directory members, not every graduate of each program.`;
+  const unconfirmed=idx.people.filter(p=>p.status==='not-yet-completed-phd').length;
+  const pending=idx.people.length-verified-unresolved-unconfirmed;
+  const future=years.filter(y=>y>new Date().getFullYear()).length;
+  return `${fmt(idx.people.length)} people are represented, with reported doctoral institutions spanning ${fmt(inst.size)} institution names${countries.size ? ` in ${countries.size} countries` : ''}. Reported PhD years run from ${Math.min(...years)} to ${Math.max(...years)}${future ? `, including ${fmt(future)} future-year source ${future===1?'entry':'entries'}` : ''}. We have verified ${fmt(verified)} first jobs; ${fmt(unresolved)} remain unresolved, ${fmt(unconfirmed)} have unconfirmed doctorate completion, and ${fmt(pending)} await first-job review. This faculty-based sample does not include every graduate. The headline dates refer only to cohorts with verified first jobs.`;
 }
 
 /** Coverage by year: one row per PhD institution, one circle per graduating class. */
@@ -83,7 +85,7 @@ function renderEvolution({ controls, content, note }, idx, actions) {
   const inst = document.createElement('select'); inst.setAttribute('aria-label', 'PhD institution');
   option(inst, [['all', 'All PhD institutions'], ...institutionsWithAtLeast(idx, 10)], trend.evoInst);
   inst.addEventListener('change', () => { trend.evoInst = inst.value; draw(); });
-  controls.append(labelled('PhD institution', inst), toggle([['count', 'Count'], ['share', 'Share']], trend.evoMode, v => { trend.evoMode = v; draw(); }), toggle([['jobs', 'Verified first jobs by type'], ['coverage', 'Research coverage']], trend.evoLayer, v => { trend.evoLayer = v; draw(); }));
+  controls.append(labelled('PhD institution', inst), toggle([['count', 'Count'], ['share', 'Share']], trend.evoMode, v => { trend.evoMode = v; draw(); }));
   const draw = () => {
     const all = trend.evoInst === 'all', rows = idx.people.filter(p => p.phdYear && p.phdYear <= idx.latest && (all || p.phdInstitution === trend.evoInst));
     const from = all ? Math.max(1980, Math.min(...rows.map(p => p.phdYear))) : Math.min(...rows.map(p => p.phdYear));
@@ -96,7 +98,7 @@ function renderEvolution({ controls, content, note }, idx, actions) {
       const totals = years.map(y => Object.values(counts[y] || {}).reduce((a, b) => a + b, 0));
       tip = (i, active) => [{ text: `Class of ${years[i]}`, strong: true }, `${fmt(totals[i])} verified first jobs`, ...active.filter(s => s.data[i]).map(s => ({ text: `${s.name}: ${fmt(s.data[i])}${percent ? ` (${pct(s.data[i], totals[i])})` : ''}`, color: s.color }))];
       head = ['Class', 'Verified first jobs', ...CATEGORIES.map(c => c.label)]; tableRows = years.map((y, i) => [y, totals[i], ...series.map(s => s.data[i])]);
-      note.textContent = `${all ? `Classes of ${from} onwards, all PhD institutions` : trend.evoInst}: verified first jobs by type of job, by PhD cohort. ${percent ? 'Shares are shares of verified first jobs in that cohort, not of all graduates.' : ''} Switch to "Research coverage" to see how many people in each cohort are still unresolved or unreviewed. Click a legend entry to hide a type.`;
+      note.textContent = `${all ? `Classes of ${from} onwards, all PhD institutions` : trend.evoInst}: verified first jobs by type of job, by PhD cohort. ${percent ? 'Shares are shares of verified first jobs in that cohort, not of all graduates.' : ''} See Coverage → Review by cohort for unresolved people and review progress. Click a legend entry to hide a type.`;
     } else {
       const counts = {}; for (const p of rows) { if (p.phdYear < from) continue; const c = (counts[p.phdYear] ||= { verified: 0, unresolved: 0, 'not-yet-completed-phd': 0, pending: 0 }); c[p.placement ? 'verified' : p.status === 'unresolved' ? 'unresolved' : p.status === 'not-yet-completed-phd' ? 'not-yet-completed-phd' : 'pending']++; }
       series = STATUSES.map(s => ({ id: s.id, name: s.label, color: s.color, data: years.map(y => counts[y]?.[s.id] || 0) }));
@@ -170,22 +172,6 @@ const COMPARE_COLORS = ['#2a78d6', '#eb6834', '#1f8a5a', '#6250d6'];
 export function presetProfile(type, value) { if (type === 'phd') profile.phd = value; if (type === 'employer') profile.employer = value; if (type === 'compare') profile.compare = [...value, '', '', ''].slice(0, 4); }
 export function profileSelection(type) { return type === 'phd' ? profile.phd : type === 'employer' ? profile.employer : profile.compare.filter(Boolean); }
 
-/** A select with a text box that narrows its options. */
-function pickList(labelText, values, current, onChange, placeholder = 'Type to narrow the list') {
-  const box = html('label', 'pick-list'); box.append(html('span', undefined, labelText));
-  const search = document.createElement('input'); search.type = 'search'; search.placeholder = placeholder; search.setAttribute('aria-label', `${labelText}: filter the list`);
-  const select = document.createElement('select'); select.setAttribute('aria-label', labelText);
-  const fill = () => {
-    const words = search.value.toLocaleLowerCase().trim().split(/\s+/).filter(Boolean);
-    const shown = values.filter(([v, t]) => !v || words.every(w => t.toLocaleLowerCase().includes(w)));
-    select.replaceChildren(...shown.map(([v, t]) => new Option(t, v)));
-    select.value = shown.some(([v]) => v === current()) ? current() : (shown[0]?.[0] ?? '');
-  };
-  search.addEventListener('input', fill);
-  select.addEventListener('change', () => onChange(select.value));
-  fill(); box.append(search, select);
-  return box;
-}
 const periodSelect = (idx, current, onChange) => { const s = document.createElement('select'); s.setAttribute('aria-label', 'Cohorts'); fillPeriodSelect(s, idx); s.value = current; s.addEventListener('change', () => onChange(s.value)); return labelled('Cohorts', s); };
 const phdInstitutionValues = idx => [['', 'Choose a PhD institution'], ...institutionsWithAtLeast(idx, 1)];
 const employerValues = idx => { const c = {}; for (const p of idx.people) if (p.placement) c[p.placement.employer] = (c[p.placement.employer] || 0) + 1; return [['', 'Choose an employer'], ...Object.entries(c).sort((a, b) => a[0].localeCompare(b[0])).map(([n, k]) => [n, `${n} (${k})`])]; };
@@ -254,10 +240,10 @@ async function entityPanel(body, name, context, actions) {
   const others = e.aliases.filter(a => a !== e.name);
   if (others.length) body.append(html('p', 'entity-sub', `Also written as: ${others.join('; ')}.`));
   const foot = html('p', 'source-stamp');
-  foot.append(`Record ${e.id} in the organisation database`, counts ? ` (${fmt(counts.entities)} organisations, ${fmt(counts.inBothDatabases)} in both databases). ` : '. ', 'One record per organisation, keyed by Wikidata item where known; a part that a source does not supply is simply absent, never inferred.');
+  foot.append(`Record ${e.id} in the organisation database`, counts ? ` (${fmt(counts.entities)} organisations, ${fmt(counts.inBothDatabases)} in both databases). ` : '. ', 'One organisation, with its source names retained. Missing facts remain unknown.');
   body.append(foot);
 }
-const entityPanelFor = (grid, name, context, actions) => { const [p, b] = panel('The same organisation across both databases', 'entity-panel'); b.append(html('p', 'chart-empty', 'Loading the merged record…')); grid.append(p); entityPanel(b, name, context, actions); };
+const entityPanelFor = (grid, name, context, actions) => { const [p, b] = panel('Organisation details and sources', 'entity-panel'); b.append(html('p', 'chart-empty', 'Loading the merged record…')); grid.append(p); entityPanel(b, name, context, actions); };
 
 export function renderProfile(type, hosts, idx, actions) {
   const { controls, content } = hosts;
