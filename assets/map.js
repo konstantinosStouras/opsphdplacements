@@ -1,3 +1,4 @@
+import {dataUrl} from './data-url.js';
 import {distinctNames} from './organisation-model.js';
 // Interactive world map of PhD-granting institutions. Hand-built SVG, no map library.
 // Land shapes: world-atlas countries-110m (Natural Earth, ISC licence; see assets/vendor/world/LICENSE.txt).
@@ -71,7 +72,7 @@ function countryRings(topo) {
 let worldPromise = null;
 const loadWorld = () => (worldPromise ||= fetch('assets/vendor/world/countries-110m.json').then(r => r.json()).then(countryRings).catch(e => { worldPromise = null; throw e; }));
 let locationsPromise = null;
-const loadLocations = () => (locationsPromise ||= fetch('data/institution-locations.json').then(r => r.json()).catch(e => { locationsPromise = null; throw e; }));
+const loadLocations = () => (locationsPromise ||= fetch(dataUrl('data/institution-locations.json')).then(r => r.json()).catch(e => { locationsPromise = null; throw e; }));
 
 export async function renderMap(target, state, { onSelect, openProfile, isCurrent = () => true } = {}) {
   target.classList.remove('empty');

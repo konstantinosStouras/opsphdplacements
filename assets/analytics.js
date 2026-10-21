@@ -1,3 +1,4 @@
+import {dataUrl} from './data-url.js';
 // Metrics shared by the coverage grid, trends and profiles. Everything is computed from the public
 // datasets: faculty.json (people), placements.json (verified first jobs) and research-status.json
 // (one research disposition per person). Shares of first-job types are always shares of *verified*
@@ -133,7 +134,7 @@ export function employerMetrics(index, name, period = 'all') {
 /** Load a JSON file once and remember it. */
 const memo = new Map();
 export function loadJson(url) {
-  if (!memo.has(url)) memo.set(url, fetch(url).then(r => { if (!r.ok) throw Error(`Could not load ${url}`); return r.json(); }).catch(e => { memo.delete(url); throw e; }));
+  if (!memo.has(url)) memo.set(url, fetch(dataUrl(url)).then(r => { if (!r.ok) throw Error(`Could not load ${url}`); return r.json(); }).catch(e => { memo.delete(url); throw e; }));
   return memo.get(url);
 }
 /** Fill the country maps from the published location files, when they exist. */

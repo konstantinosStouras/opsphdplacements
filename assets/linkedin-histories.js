@@ -1,3 +1,4 @@
+import {dataUrl} from './data-url.js';
 import {isSourceUrl, fold} from './model.js';
 
 export function isLinkedInProfileUrl(value) {
@@ -33,7 +34,7 @@ export async function renderLinkedInHistories(section) {
   const note = section.querySelector('[data-history-note]'), results = section.querySelector('[data-history-results]'), query = section.querySelector('input');
   let records;
   try {
-    const response = await fetch('data/linkedin-histories.json', {cache:'no-cache'});
+    const response = await fetch(dataUrl('data/linkedin-histories.json'), {cache:'no-cache'});
     if (!response.ok) throw Error('Unavailable');
     records = validateHistories(await response.json()).records;
   } catch { note.textContent = 'LinkedIn histories are currently unavailable. A profile opening alone does not establish a completed history review.'; return; }

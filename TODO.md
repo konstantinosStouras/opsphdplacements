@@ -273,3 +273,5 @@ Owner optimization, 21 October 2026: first verify PhD institutions reported for 
 Stage 1 checkpoint: 132 verified routes at 81 institutions in the public-format datasets; 427 completed identity/unit source reviews out of 665 candidates. Doctoral branch checks and the remaining candidates are unfinished. See research-handoff/universities/CHECKPOINT-2026-10-21.md; later saved proposals remain unmerged until reviewed.
 
 Follow-up integrated checkpoint supersedes the counts above: 184 verified routes at 109 institutions; 432 completed identity/unit reviews, 74 partial, 3 blocked, 156 pending. Stage 1 remains incomplete; Stage 2 held.
+
+Fixed stale website totals after data-only releases: all local data loaders now use a build content revision, and module versions change with data. Confirm live institution counts after publishing.
