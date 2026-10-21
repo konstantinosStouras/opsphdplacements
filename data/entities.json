@@ -18,7 +18,7 @@
    "phdInstitutions": 434,
    "directoryUniversities": 607,
    "firstEmployers": 493,
-   "withPrograms": 162,
+   "withPrograms": 167,
    "inBothDatabases": 210,
    "directoryOnly": 326,
    "peopleOnly": 224,
@@ -15771,7 +15771,8 @@
    "roles": [
     "phd-institution",
     "directory-university",
-    "first-employer"
+    "first-employer",
+    "program-register"
    ],
    "people": {
     "institutions": [
@@ -15915,7 +15916,30 @@
      }
     ]
    },
-   "programs": [],
+   "programs": [
+    {
+     "id": "university-of-science-and-technology-of-china--mathematics-operations-research-cybernetics-phd",
+     "programName": "Mathematics",
+     "specialization": "Operational Research and Cybernetics",
+     "universityId": "university-of-science-and-technology-of-china",
+     "school": "School of Mathematical Sciences",
+     "degree": "PhD",
+     "field": "Operations Research",
+     "status": "unknown",
+     "statusAsOf": "2026-10-21"
+    },
+    {
+     "id": "university-of-science-and-technology-of-china--business-administration-operation-management-phd",
+     "programName": "Business Administration",
+     "specialization": "Operation Management",
+     "universityId": "university-of-science-and-technology-of-china",
+     "school": "School of Management",
+     "degree": "PhD",
+     "field": "Operations Management",
+     "status": "unknown",
+     "statusAsOf": "2026-10-21"
+    }
+   ],
    "sources": [
     {
      "url": "https://omlist.edutool.org/phd/by-year.html",
@@ -15932,6 +15956,10 @@
     {
      "url": "data/placements.json",
      "title": "Verified first-job records (people database)"
+    },
+    {
+     "url": "data/doctoral-programs.json",
+     "title": "Historical doctoral program register"
     }
    ],
    "review": {
@@ -15950,12 +15978,22 @@
       "source": "employers",
       "employer": "University of Science and Technology of China (School of Management)",
       "match": "wikidata"
+     },
+     {
+      "source": "programs",
+      "program": "university-of-science-and-technology-of-china--mathematics-operations-research-cybernetics-phd",
+      "match": "exact"
+     },
+     {
+      "source": "programs",
+      "program": "university-of-science-and-technology-of-china--business-administration-operation-management-phd",
+      "match": "exact"
      }
     ],
     "conflicts": []
    },
    "addedAt": "2026-10-16T13:49:36Z",
-   "updatedAt": "2026-10-20T08:28:39Z"
+   "updatedAt": "2026-10-21T21:55:18Z"
   },
   {
    "id": "wd:Q777403",
@@ -20387,6 +20425,17 @@
      "field": "Operations Management; Sustainable Operations",
      "status": "active",
      "statusAsOf": "2026-10-21"
+    },
+    {
+     "id": "fgv-eaesp--matematica-aplicada-ciencia-dados-doutorado-or",
+     "programName": "Doutorado em Matemática Aplicada e Ciência de Dados",
+     "specialization": "Controle e Otimização (Otimização Estocástica e Pesquisa Operacional)",
+     "universityId": "fgv-eaesp",
+     "school": "Escola de Matemática Aplicada",
+     "degree": "Doutor em Matemática Aplicada e Ciência de Dados",
+     "field": "Operations Research; Logistics",
+     "status": "active",
+     "statusAsOf": "2026-10-21"
     }
    ],
    "sources": [
@@ -20432,12 +20481,17 @@
       "source": "programs",
       "program": "fgv-eaesp--doutorado-academico-administracao-operacoes-sustentabilidade",
       "match": "exact"
+     },
+     {
+      "source": "programs",
+      "program": "fgv-eaesp--matematica-aplicada-ciencia-dados-doutorado-or",
+      "match": "exact"
      }
     ],
     "conflicts": []
    },
    "addedAt": "2026-10-16T13:49:36Z",
-   "updatedAt": "2026-10-21T11:14:34Z"
+   "updatedAt": "2026-10-21T21:55:18Z"
   },
   {
    "id": "wd:Q1049470",
@@ -37917,23 +37971,34 @@
    "programs": [
     {
      "id": "shanghai-jiao-tong-university--doctorate-management-science-engineering-operations",
-     "programName": "Management Science & Engineering",
+     "programName": "Management Science and Engineering Ph.D. programme",
      "specialization": "Optimization & Operation Management",
      "universityId": "shanghai-jiao-tong-university",
      "school": "Antai College of Economics and Management",
-     "degree": "Doctoral degree",
+     "degree": "PhD",
      "field": "Operations Management; Operations Research; Supply Chain Management",
      "status": "active",
      "statusAsOf": "2026-10-21"
     },
     {
      "id": "shanghai-jiao-tong-university--doctorate-industrial-engineering",
-     "programName": "Doctoral program",
+     "programName": "Industrial Engineering Ph.D. programme",
      "specialization": "Industrial Engineering",
      "universityId": "shanghai-jiao-tong-university",
-     "school": null,
-     "degree": "Doctoral degree",
+     "school": "School of Mechanical Engineering",
+     "degree": "PhD",
      "field": "Industrial Engineering",
+     "status": "active",
+     "statusAsOf": "2026-10-21"
+    },
+    {
+     "id": "shanghai-jiao-tong-university--doctorate-business-administration-operations-supply-chain",
+     "programName": "Business Administration Ph.D. programme",
+     "specialization": "Operation and supply chain management",
+     "universityId": "shanghai-jiao-tong-university",
+     "school": "Antai College of Economics and Management",
+     "degree": "PhD",
+     "field": "Operations Management; Supply Chain Management",
      "status": "active",
      "statusAsOf": "2026-10-21"
     }
@@ -37981,12 +38046,17 @@
       "source": "programs",
       "program": "shanghai-jiao-tong-university--doctorate-industrial-engineering",
       "match": "exact"
+     },
+     {
+      "source": "programs",
+      "program": "shanghai-jiao-tong-university--doctorate-business-administration-operations-supply-chain",
+      "match": "exact"
      }
     ],
     "conflicts": []
    },
    "addedAt": "2026-10-16T13:49:36Z",
-   "updatedAt": "2026-10-21T11:02:27Z"
+   "updatedAt": "2026-10-21T21:55:18Z"
   },
   {
    "id": "wd:Q1420239",
@@ -44031,7 +44101,8 @@
    "roles": [
     "phd-institution",
     "directory-university",
-    "first-employer"
+    "first-employer",
+    "program-register"
    ],
    "people": {
     "institutions": [
@@ -44154,7 +44225,19 @@
      }
     ]
    },
-   "programs": [],
+   "programs": [
+    {
+     "id": "university-of-missouri--industrial-engineering-phd",
+     "programName": "PhD in Industrial Engineering",
+     "specialization": null,
+     "universityId": "university-of-missouri",
+     "school": "College of Engineering",
+     "degree": "PhD",
+     "field": "Industrial Engineering; Operations Research; Supply Chain Management",
+     "status": "active",
+     "statusAsOf": "2026-10-21"
+    }
+   ],
    "sources": [
     {
      "url": "https://omlist.edutool.org/phd/by-year.html",
@@ -44171,6 +44254,10 @@
     {
      "url": "data/placements.json",
      "title": "Verified first-job records (people database)"
+    },
+    {
+     "url": "data/doctoral-programs.json",
+     "title": "Historical doctoral program register"
     }
    ],
    "review": {
@@ -44189,12 +44276,17 @@
       "source": "employers",
       "employer": "University of Missouri-Columbia",
       "match": "wikidata"
+     },
+     {
+      "source": "programs",
+      "program": "university-of-missouri--industrial-engineering-phd",
+      "match": "exact"
      }
     ],
     "conflicts": []
    },
    "addedAt": "2026-10-16T13:49:36Z",
-   "updatedAt": "2026-10-20T08:28:39Z"
+   "updatedAt": "2026-10-21T21:55:18Z"
   },
   {
    "id": "wd:Q262760",
@@ -52758,7 +52850,8 @@
    "roles": [
     "phd-institution",
     "directory-university",
-    "first-employer"
+    "first-employer",
+    "program-register"
    ],
    "people": {
     "institutions": [
@@ -52917,7 +53010,30 @@
      }
     ]
    },
-   "programs": [],
+   "programs": [
+    {
+     "id": "university-of-miami--business-operations-management-phd",
+     "programName": "PhD in Business",
+     "specialization": "Operations Management",
+     "universityId": "university-of-miami",
+     "school": "University of Miami Business School",
+     "degree": "PhD",
+     "field": "Operations Management; Supply Chain Management; Logistics",
+     "status": "active",
+     "statusAsOf": "2026-10-21"
+    },
+    {
+     "id": "university-of-miami--industrial-engineering-phd",
+     "programName": "PhD in Industrial Engineering",
+     "specialization": null,
+     "universityId": "university-of-miami",
+     "school": "College of Engineering",
+     "degree": "PhD",
+     "field": "Industrial Engineering",
+     "status": "active",
+     "statusAsOf": "2026-10-21"
+    }
+   ],
    "sources": [
     {
      "url": "https://omlist.edutool.org/phd/by-year.html",
@@ -52938,6 +53054,10 @@
     {
      "url": "data/placements.json",
      "title": "Verified first-job records (people database)"
+    },
+    {
+     "url": "data/doctoral-programs.json",
+     "title": "Historical doctoral program register"
     }
    ],
    "review": {
@@ -52951,12 +53071,22 @@
       "source": "employers",
       "employer": "University of Miami",
       "match": "wikidata"
+     },
+     {
+      "source": "programs",
+      "program": "university-of-miami--business-operations-management-phd",
+      "match": "exact"
+     },
+     {
+      "source": "programs",
+      "program": "university-of-miami--industrial-engineering-phd",
+      "match": "exact"
      }
     ],
     "conflicts": []
    },
    "addedAt": "2026-10-16T13:49:36Z",
-   "updatedAt": "2026-10-20T08:28:39Z"
+   "updatedAt": "2026-10-21T21:55:18Z"
   },
   {
    "id": "wd:Q49118",
@@ -55903,6 +56033,28 @@
      "field": "Operations Management",
      "status": "active",
      "statusAsOf": "2026-10-21"
+    },
+    {
+     "id": "singapore-management-university-smu--phd-computer-science-urban-logistics",
+     "programName": "PhD in Computer Science",
+     "specialization": "Urban Logistics & Sustainability (integrative doctoral research area)",
+     "universityId": "singapore-management-university-smu",
+     "school": "School of Computing and Information Systems",
+     "degree": "PhD",
+     "field": "Logistics",
+     "status": "active",
+     "statusAsOf": "2026-10-21"
+    },
+    {
+     "id": "singapore-management-university-smu--phd-information-systems-urban-logistics",
+     "programName": "PhD in Information Systems",
+     "specialization": "Urban Logistics & Sustainability (integrative doctoral research area)",
+     "universityId": "singapore-management-university-smu",
+     "school": "School of Computing and Information Systems",
+     "degree": "PhD",
+     "field": "Logistics",
+     "status": "active",
+     "statusAsOf": "2026-10-21"
     }
    ],
    "sources": [
@@ -55956,12 +56108,22 @@
       "source": "programs",
       "program": "singapore-management-university-smu--phd-business-operations-management",
       "match": "exact"
+     },
+     {
+      "source": "programs",
+      "program": "singapore-management-university-smu--phd-computer-science-urban-logistics",
+      "match": "exact"
+     },
+     {
+      "source": "programs",
+      "program": "singapore-management-university-smu--phd-information-systems-urban-logistics",
+      "match": "exact"
      }
     ],
     "conflicts": []
    },
    "addedAt": "2026-10-16T13:49:36Z",
-   "updatedAt": "2026-10-21T11:02:27Z"
+   "updatedAt": "2026-10-21T21:55:18Z"
   },
   {
    "id": "wd:Q11081251",
@@ -58620,7 +58782,8 @@
    "logo": "assets/logos/Q192775.png",
    "roles": [
     "phd-institution",
-    "directory-university"
+    "directory-university",
+    "program-register"
    ],
    "people": {
     "institutions": [
@@ -58679,7 +58842,19 @@
     ]
    },
    "employer": null,
-   "programs": [],
+   "programs": [
+    {
+     "id": "university-of-glasgow--management-operations-phd",
+     "programName": "Management",
+     "specialization": "Operations Management",
+     "universityId": "university-of-glasgow",
+     "school": "Adam Smith Business School",
+     "degree": "PhD",
+     "field": "Operations Management",
+     "status": "active",
+     "statusAsOf": "2026-10-21"
+    }
+   ],
    "sources": [
     {
      "url": "https://omlist.edutool.org/phd/by-year.html",
@@ -58696,6 +58871,10 @@
     {
      "url": "http://www.gla.ac.uk/schools/computing/staff/",
      "title": "Faculty page listed in the directory"
+    },
+    {
+     "url": "data/doctoral-programs.json",
+     "title": "Historical doctoral program register"
     }
    ],
    "review": {
@@ -58704,12 +58883,17 @@
       "source": "directory",
       "university": "University of Glasgow",
       "match": "exact"
+     },
+     {
+      "source": "programs",
+      "program": "university-of-glasgow--management-operations-phd",
+      "match": "exact"
      }
     ],
     "conflicts": []
    },
    "addedAt": "2026-10-16T13:49:36Z",
-   "updatedAt": "2026-10-20T08:28:39Z"
+   "updatedAt": "2026-10-21T21:55:18Z"
   },
   {
    "id": "wd:Q15144",
@@ -75782,7 +75966,8 @@
    ],
    "logo": null,
    "roles": [
-    "directory-university"
+    "directory-university",
+    "program-register"
    ],
    "people": null,
    "directory": {
@@ -75830,7 +76015,19 @@
     ]
    },
    "employer": null,
-   "programs": [],
+   "programs": [
+    {
+     "id": "bayes-business-school--management-operations-phd",
+     "programName": "PhD in Management",
+     "specialization": "Operations Management",
+     "universityId": "bayes-business-school",
+     "school": "Bayes Business School",
+     "degree": "PhD",
+     "field": "Operations Management; Supply Chain Management",
+     "status": "active",
+     "statusAsOf": "2026-10-21"
+    }
+   ],
    "sources": [
     {
      "url": "https://www.operationsacademia.org/universities",
@@ -75839,6 +76036,10 @@
     {
      "url": "https://www.cass.city.ac.uk/faculties-and-research/management/people",
      "title": "Faculty page listed in the directory"
+    },
+    {
+     "url": "data/doctoral-programs.json",
+     "title": "Historical doctoral program register"
     }
    ],
    "review": {
@@ -75847,12 +76048,17 @@
       "source": "directory",
       "university": "Cass Business School",
       "match": "wikidata"
+     },
+     {
+      "source": "programs",
+      "program": "bayes-business-school--management-operations-phd",
+      "match": "exact"
      }
     ],
     "conflicts": []
    },
    "addedAt": "2026-10-16T13:49:36Z",
-   "updatedAt": "2026-10-16T13:49:36Z"
+   "updatedAt": "2026-10-21T21:55:18Z"
   },
   {
    "id": "wd:Q3298359",
@@ -86303,6 +86509,17 @@
      "field": "Industrial Engineering; Operations Research; Operations Management",
      "status": "active",
      "statusAsOf": "2026-10-21"
+    },
+    {
+     "id": "eindhoven-university-of-technology-tu-e--phd-stochastic-operations-research",
+     "programName": "PhD",
+     "specialization": "Stochastic Operations Research",
+     "universityId": "eindhoven-university-of-technology-tu-e",
+     "school": null,
+     "degree": "PhD",
+     "field": "Operations Research; Logistics; Operations Management",
+     "status": "active",
+     "statusAsOf": "2026-10-21"
     }
    ],
    "sources": [
@@ -86325,12 +86542,17 @@
       "source": "programs",
       "program": "eindhoven-university-of-technology-tu-e--industrial-engineering-phd",
       "match": "exact"
+     },
+     {
+      "source": "programs",
+      "program": "eindhoven-university-of-technology-tu-e--phd-stochastic-operations-research",
+      "match": "exact"
      }
     ],
     "conflicts": []
    },
    "addedAt": "2026-10-16T13:49:36Z",
-   "updatedAt": "2026-10-21T11:02:27Z"
+   "updatedAt": "2026-10-21T21:55:18Z"
   },
   {
    "id": "name:emlv-ecole-de-commerce-et-de-management",

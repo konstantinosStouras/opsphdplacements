@@ -1,6 +1,8 @@
 import assert from 'node:assert/strict';
 import {isSourceUrl} from '../assets/model.js';
-export {isPhdDegree} from '../assets/program-model.js';
+import {isPhdDegree} from '../assets/program-model.js';
+export {isPhdDegree};
+export const canResolveCredential=(existing,p)=>existing?.phdEligibility==='credential-unresolved'&&['doctoral degree','doctorate','doctoral programme','doctoral program','academic doctoral degree'].includes(existing.degree.toLowerCase())&&isPhdDegree(p.degree)&&!!p.credentialResolutionEvidence;
 const text=v=>typeof v==='string'&&v.trim().length>0;
 const date=v=>typeof v==='string'&&/^\d{4}-\d{2}-\d{2}$/.test(v)&&!Number.isNaN(Date.parse(v))&&new Date(v).toISOString().slice(0,10)===v;
 export function validateDoctoralProposal(p,universities,reviews){
@@ -24,6 +26,7 @@ export function validateDoctoralProposal(p,universities,reviews){
   assert(['active','closed','renamed','transitioned','unknown','admissions-suspended','admissions-ended'].includes(q.status),'Invalid doctoral programme status');
   assert(date(q.checkedAt)&&supported(q.sourceUrl,q.checkedAt)&&text(q.evidence),'Programme needs individually read dated source');
   if(q.researchDoctorateEvidence){const e=q.researchDoctorateEvidence;assert(supported(e.sourceUrl,e.checkedAt)&&text(e.evidence),'Research-doctorate eligibility needs read qualification evidence');assert(!/\bdba\b|doctor of business administration/i.test(q.degree),'DBA scope requires a separate explicit decision');}
+  if(q.credentialResolutionEvidence){const e=q.credentialResolutionEvidence;assert(text(q.existingProgramId)&&supported(e.sourceUrl,e.checkedAt)&&text(e.evidence),'Credential resolution needs an explicit existing route and opened dated qualification evidence');}
   if(q.programmeType){assert(['primary','specialization','dual-title','research-training'].includes(q.programmeType),'Invalid doctoral route type');if(['dual-title','research-training'].includes(q.programmeType))assert(text(q.overlapNote),'Overlapping doctoral route needs explicit no-double-counting explanation');}
   if(q.primaryProgrammeIds!==undefined)assert(Array.isArray(q.primaryProgrammeIds)&&q.primaryProgrammeIds.every(text)&&new Set(q.primaryProgrammeIds).size===q.primaryProgrammeIds.length&&!q.primaryProgrammeIds.includes(q.id),'Invalid primary doctoral route links');
   for(const k of ['school','department','specialization'])assert(q[k]===null||text(q[k]),'Programme host/specialization must be explicit text or null');

@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {validateDoctoralProposal,isPhdDegree} from './doctoral-proposal-schema.mjs';
+import {validateDoctoralProposal,isPhdDegree,canResolveCredential} from './doctoral-proposal-schema.mjs';
 import {isCurrentPhdProgramme} from '../assets/program-model.js';
 import {organisationRows} from '../assets/organisation-model.js';
 const universities=[{id:'u'},{id:'other'}],reviews=[{id:'u',duplicateOf:null,units:[{id:'u--operations'}]},{id:'other',duplicateOf:null,units:[{id:'other--ie'}]}];
@@ -20,6 +20,16 @@ test('current provider eligibility excludes training routes and unresolved or hi
  assert(isCurrentPhdProgramme({status:'admissions-suspended',degree:'PhD'}));
  assert(isCurrentPhdProgramme({status:'active',degree:'Dr. sc.',phdEligibility:'verified-research-doctorate',researchDoctorateEvidence:{evidence:'Research doctorate'}}));
  for(const p of [{status:'closed',degree:'PhD'},{status:'active',degree:'PhD',programmeType:'research-training'},{status:'active',degree:'Doctoral degree',phdEligibility:'credential-unresolved'},{status:'active',degree:'DBA'}])assert(!isCurrentPhdProgramme(p));
+});
+test('explicit qualification evidence can resolve a generic placeholder but cannot convert an actual non-PhD award',()=>{
+ const p={degree:'PhD',credentialResolutionEvidence:{sourceUrl:'https://example.edu/phd',checkedAt:'2026-10-21',evidence:'Official programme expressly identifies PhD qualification.'}};
+ assert(canResolveCredential({degree:'Doctoral degree',phdEligibility:'credential-unresolved'},p));
+ for(const degree of ['DBA','Doctor of Business Administration','Dr. rer. pol.','ScD'])assert(!canResolveCredential({degree,phdEligibility:'credential-unresolved'},p));
+ assert(!canResolveCredential({degree:'Doctoral degree',phdEligibility:'credential-unresolved'},{degree:'PhD'}));
+ const q=proposal();q.programmes[0].credentialResolutionEvidence=p.credentialResolutionEvidence;
+ assert.throws(()=>validateDoctoralProposal(q,universities,reviews));
+ q.programmes[0].existingProgramId='u--phd-om';assert.doesNotThrow(()=>validateDoctoralProposal(q,universities,reviews));
+ q.programmes[0].credentialResolutionEvidence.sourceUrl='https://example.edu/unread';assert.throws(()=>validateDoctoralProposal(q,universities,reviews));
 });
 test('doctoral routes follow stable university IDs across official-name and alias changes',()=>{
  const u={id:'u',name:'Old English University',country:'Country',departments:[]};

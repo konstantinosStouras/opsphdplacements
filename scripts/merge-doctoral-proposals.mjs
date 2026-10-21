@@ -7,7 +7,7 @@ import crypto from 'node:crypto';
 import assert from 'node:assert/strict';
 import {fold} from '../assets/model.js';
 import {validatePrograms} from './validate-programs.mjs';
-import {validateDoctoralProposal,isPhdDegree} from './doctoral-proposal-schema.mjs';
+import {validateDoctoralProposal,isPhdDegree,canResolveCredential} from './doctoral-proposal-schema.mjs';
 const root=path.resolve(import.meta.dirname,'..');
 const read=file=>JSON.parse(fs.readFileSync(path.resolve(root,file),'utf8'));
 const args=process.argv.slice(2),files=args.filter(s=>!s.startsWith('--'));
@@ -44,12 +44,18 @@ for(const file of files){
   if(p.existingProgramId){
    assert(existing,'Explicit existing programme ID not found: '+p.existingProgramId);
    assert(fold(existing.university)===fold(review.canonicalName),'Existing programme belongs to another university');
-   assert(isPhdDegree(existing.degree)===isPhdDegree(p.degree),'Do not convert an existing degree credential during programme enrichment');
+   const credentialResolved=canResolveCredential(existing,p);
+   assert(isPhdDegree(existing.degree)===isPhdDegree(p.degree)||credentialResolved,'Do not convert an existing degree credential without explicit unresolved-placeholder qualification evidence');
    // Retain formal programme identity, earlier fact checks and every historical
    // decision. Add the explicitly reviewed current host/track and status evidence.
    record={...existing,universityId:id,unitIds:[...new Set([...(existing.unitIds||[]),...p.unitIds])],lastCheckedAt:p.checkedAt,checkedAt:p.checkedAt,status:p.status,statusAsOf:p.checkedAt,phdEligibility:record.phdEligibility,limitations:[...new Set([...(existing.limitations||[]),...p.limitations])],sources:[...new Map([...existing.sources,...record.sources].map(s=>[s.id,s])).values()],facts:[...existing.facts]};
    record.priorFactChecks=[...(existing.priorFactChecks||[])];
    const updates={status:p.status,school:p.school,department:p.department,specialization:p.specialization};
+   if(credentialResolved){
+    record.priorReviewNotes=[...(existing.priorReviewNotes||[]),{checkedAt:existing.lastCheckedAt,evidenceNote:existing.evidenceNote,limitations:existing.limitations,phdEligibility:existing.phdEligibility}];
+    updates.degree=p.degree;updates.programName=p.programName;updates.eligibilityScope=p.evidence;
+    record.scopeRationale=p.evidence;record.evidenceNote=p.evidence;record.limitations=p.limitations;
+   }
    // Explicitly reviewed training/award relationships enrich the existing route;
    // its original credential and historical facts remain intact.
    for(const field of ['programmeType','primaryProgrammeIds','overlapNote'])if(p[field]!==undefined)updates[field]=p[field];
