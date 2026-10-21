@@ -73,3 +73,7 @@ Amrita Kundu through Andrea Patrucco: 25 partial histories, 121 roles, 35 other 
 ## Career batch 154–178 and pause — 21 October 2026
 
 Integrated 25 partial histories (103 roles, 20 other mentions, two bounded summaries); retained source ages, unknown dates and the unmerged Andy Lin duplicate candidate. See [the dated handoff](batches/2026-10-21-154-178-report.md). Research is paused at the owner’s request; next candidate179 requires a fresh queue/ownership check. The career automation is paused; daily attempts total75. University publication has separate ownership.
+
+## Revised priority gate — 21 October 2026
+
+The owner now requires completion of the university/unit source frame first, followed by linked-source doctorate/first-job/full-history verification for the 2,149 OM List faculty. Use ../priorities/stage-2-omlist-queue.json after Stage 1. The earlier mixed-source position-179 continuation remains historical, not the current next action. Faculty-page-only and graduate-only research is held; the automation remains paused. Existing observations and proposals must be preserved.

@@ -195,3 +195,7 @@ The hero animation uses the same corrected cohort/first-job index as the analyti
 Playback controls are separate Play (one pass), Pause and Auto-play (loop) buttons below the year slider; Auto-play is the default except when reduced motion is requested. Manual year/slider/previous/next changes pause playback.
 
 The pure `assets/organisation-model.js` builds the joined organisation rows used by the website and full-list audit. Its regression test checks duplicate display labels, entity uniqueness, preserved doctorate/first-job totals and distinct CUHK/Shenzhen campuses. Run it against all public inputs after identity-display changes; retain source/check dates. People-table alignment overrides include nested details and do not change other tables.
+
+## Sequential research queues — 21 October 2026
+
+Run `node scripts/build-priority-queues.mjs` to rebuild the held OM List queue and Stage 1 source-reconciliation queue from public data and the portable catalogue. `--refresh-source-catalogue` intentionally reads compact metadata from the adjacent OperationsAcademia.github.io checkout; it is not a fresh live/community-overlay export. No public datasets are written. Read research-handoff/priorities/README.md for phase gates. Stage 1/manual source reconciliation is active; Stage 2 waits; graduate/Wayback collection stays deferred and automation stays paused. Verify live source overlays/pagination before claiming the expanded frame is complete.

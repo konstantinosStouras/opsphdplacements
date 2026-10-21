@@ -51,3 +51,7 @@ Before publishing a website change, follow the visitor-interface audit in WORKFL
 ## Individual source blockers — 20 October 2026
 
 The owner clarified that an unavailable individual CV/profile must be recorded as a per-person limitation while the remaining alphabetical batch continues. Do not work around a blocked destination. Live CAPTCHA/human-verification/login challenges, platform-wide restrictions and disconnected Chrome still require a user handoff; never claim to be human or bypass checks. The scheduled tracker prompt now follows this distinction.
+
+## Active research order — owner instruction, 21 October 2026
+
+Read research-handoff/priorities/README.md first when choosing research. Stage 1 is the complete source-bounded university/unit register from OM List schools and Operations Academia universities and job postings, reconciled to official names and identities. Manual Stage 1/source reconciliation is resumed; no former agent is implicitly running and the automation stays paused. Stage 2 waits: the 2,149 OM List faculty, linked-source doctorate/first-job/full-history verification. Stage 3 (historical graduate enumeration, archives/Wayback and graduate career searches) is deferred until both earlier gates are met. Preserve older mixed-source queues and proposals as history; they do not override this order. Source downloads and exact-name matches are discovery only, never verification.

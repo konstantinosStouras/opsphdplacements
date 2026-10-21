@@ -62,3 +62,7 @@ Chrome research lanes should reuse one tab where practical and close completed s
 ## Required visitor-interface policy
 
 Follow the standing public website presentation rule in AGENTS.md. Do not add dataset download/export controls or links, visible `.json` references, or links to this project's GitHub repository, raw files, guides or issue tracker. Check generated and expanded content as well as static markup. Keep original evidence and reference-site attribution, and direct corrections to `kostas.stouras@ucd.ie`. Preserve provenance in stored records; use plain-language labels in the interface. Internal loading paths and technical contributor documentation are outside this display restriction. Run the WORKFLOW.md visitor-interface audit before publication.
+
+## Current research ownership and gates — 21 October 2026
+
+Use research-handoff/priorities/README.md before choosing a task. One integrator currently owns Stage 1 source reconciliation; no prior shard researcher is automatically resumed. Reconcile source aliases and official university/unit identities first. OM List faculty linked-source work is Stage 2, held until Stage 1; new graduate/Wayback collection is Stage 3 and deferred. Preserve all historical assignments and proposals. New names from discovery sources are candidates, not additions to the verified register.

@@ -1,5 +1,14 @@
 # Remaining work and handoff priorities
 
+## Active priority order — 21 October 2026
+
+1. **First:** reconcile OM List schools + Operations Academia universities and job postings; finish official university/OM/OR/IE-unit verification and duplicate decisions. Old import: 360/645 reviewed, 285 still need completion. The expanded/live source frame is not yet frozen.
+2. **Then:** only the 2,149 OM List faculty, using their linked sources for separately verified doctorate facts, first jobs and full employment histories. 1,524 verified first jobs; full histories remain incomplete.
+3. **Later:** doctoral-program graduate census, archives/Wayback and graduate-by-graduate LinkedIn/career research. Held until 1 and 2 meet their gates.
+
+See [current priority contract and queues](research-handoff/priorities/README.md). Manual Stage 1 source reconciliation is resumed by the owner; the automation remains paused. The older mixed-source alphabetical queue and pause notes below are historical checkpoints, not the current next action.
+
+
 **Resumed on 20 October 2026 at the user's request after reviewing Claude's updates through `2b95149`.** The earlier pause and subsequent research are recorded in [PAUSED-HANDOFF.md](PAUSED-HANDOFF.md). Current research totals appear below and in RESEARCH-STATUS.md. No scheduled runner exists.
 
 - [x] Repair continuation from a fresh clone (20 October 2026): graduate collection and merging use the tracked page catalogue when the ignored working copy is absent; proposal page keys resolve without downloaded chunk files; `--refield` requires no catalogue; `--dry-run` checks proposals without writing. Referenced catalogue conflicts and unknown keys stop the merge. Windows paths in the status, roster and placement-queue helpers now use native filesystem paths; record stamping preserves CRLF formatting instead of minifying every JSON file. See `research-handoff/graduates/README.md`.

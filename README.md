@@ -130,3 +130,7 @@ Below the search bar, an animated summary table shows first-job categories one P
 People-table cells and expanded details use left alignment with natural word spacing, overriding the shared prose justification.
 
 Organisation names are deduplicated for display across all rows and source-name disclosures. Formatting variants remain searchable; existing official identity reviews connect the directory, employer and doctoral records without changing the imported research files.
+
+## Current research order — 21 October 2026
+
+The owner now prioritizes (1) a source-reconciled, officially verified university and operations-unit list from OM List schools and Operations Academia universities/job postings; (2) verification of doctorate facts, first jobs and full careers for the 2,149 OM List faculty using their linked sources; (3) only then the historical PhD-graduate census and archive/LinkedIn work. See [the priority contract, source audit and queues](research-handoff/priorities/README.md). Manual source reconciliation has resumed; the earlier research automation remains paused.
