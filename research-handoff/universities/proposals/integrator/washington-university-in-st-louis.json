@@ -1,0 +1,29 @@
+{
+  "id": "washington-university-in-st-louis",
+  "status": "reviewed",
+  "canonicalName": "Washington University in St. Louis",
+  "universitySourceUrl": "https://washu.edu/academics/schools-and-departments/",
+  "checkedAt": "2026-10-21",
+  "reviewer": "Codex in Chrome",
+  "units": [
+    {"id": "washington-university-in-st-louis--supply-chain-operations-technology", "name": "Supply Chain, Operations and Technology (SCOT)", "school": "Olin Business School", "type": "area", "fields": ["operations-management", "operations-research", "supply-chain"], "sourceUrl": "https://olin.washu.edu/programs/doctoral/phd/phd-in-supply-chain-operations-technology.php", "checkedAt": "2026-10-21", "evidence": "Official page explicitly identifies the SCOT faculty area and research in supply-chain design, inventory, pricing, revenue management and queuing systems. Full name and acronym appear together; PhD program is not relabeled as a department."},
+    {"id": "washington-university-in-st-louis--boeing-supply-chain-innovation", "name": "Boeing Center for Supply Chain Innovation (BCSCI)", "school": "Olin Business School", "type": "center", "fields": ["supply-chain", "operations-management", "logistics"], "sourceUrl": "https://olin.washu.edu/faculty-and-research/research-centers/boeing-center/index.php", "checkedAt": "2026-10-21", "evidence": "Official center page spells full name and BCSCI acronym and explicitly describes research in supply-chain management, operational excellence, sourcing, production, logistics and distribution."}
+  ],
+  "decisions": [
+    {"sourceDepartmentId": "washington-university-in-st-louis____scm-om", "disposition": "duplicate", "unitIds": ["washington-university-in-st-louis--supply-chain-operations-technology"], "reason": "Recruiting operations/supply-chain shorthand consolidated into verified current faculty area."},
+    {"sourceDepartmentId": "washington-university-in-st-louis__olin-business-school", "disposition": "duplicate", "unitIds": ["washington-university-in-st-louis--supply-chain-operations-technology"], "reason": "Broad school preserved as parent rather than another operations unit."},
+    {"sourceDepartmentId": "washington-university-in-st-louis__olin-business-school__boeing-center-for-supply-chain-innovation", "disposition": "replaced", "unitIds": ["washington-university-in-st-louis--boeing-supply-chain-innovation"], "reason": "Full center name, official acronym and actual research-center type verified."},
+    {"sourceDepartmentId": "washington-university-in-st-louis__olin-business-school__operations-and-manufacturing-management", "disposition": "unresolved", "unitIds": [], "reason": "Historical recruiting label not verified as current unit or exact historical rename. Current SCOT area independently established; old label not displayed as another department."},
+    {"sourceDepartmentId": "washington-university-in-st-louis__olin-business-school__supply-chain-operations-and-technology", "disposition": "replaced", "unitIds": ["washington-university-in-st-louis--supply-chain-operations-technology"], "reason": "Full current faculty area name and official SCOT acronym verified."}
+  ],
+  "sources": [
+    {"url": "https://olin.washu.edu/programs/doctoral/phd/phd-in-supply-chain-operations-technology.php", "checkedAt": "2026-10-21", "outcome": "read", "note": "Full SCOT faculty area name, acronym and explicit research scope."},
+    {"url": "https://olin.washu.edu/faculty-and-research/research-centers/boeing-center/index.php", "checkedAt": "2026-10-21", "outcome": "read", "note": "Full research-center name, acronym, Olin parent and operations/supply-chain remit."},
+    {"url": "https://washu.edu/", "checkedAt": "2026-10-21", "outcome": "read", "note": "Full university identity and academic inventory link."},
+    {"url": "https://washu.edu/academics/schools-and-departments/", "checkedAt": "2026-10-21", "outcome": "read", "note": "Full university, Olin and McKelvey school names; complete school/department inventory."},
+    {"url": "https://ese.wustl.edu/index.html", "checkedAt": "2026-10-21", "outcome": "read", "note": "Preston M. Green Department of Electrical & Systems Engineering and research areas."},
+    {"url": "https://ese.washu.edu/faculty-research/research-areas/Systems-Science.html", "checkedAt": "2026-10-21", "outcome": "read", "note": "Systems science research concerns controls, physical/biological systems and networks. Generic optimization and transportation examples alone not treated as a separately verified industrial-engineering or operations-research unit."}
+  ],
+  "limitations": ["Historical Operations and Manufacturing Management label not independently reconciled to a dated rename. Engineering systems/control research was checked but no additional in-scope organizational unit verified."],
+  "duplicateOf": null
+}

@@ -1,0 +1,107 @@
+{
+  "id": "clemson-university",
+  "status": "reviewed",
+  "canonicalName": "Clemson University",
+  "universitySourceUrl": "https://www.clemson.edu/cecas/departments/ie/",
+  "checkedAt": "2026-10-21",
+  "reviewer": "Codex in Chrome",
+  "units": [
+    {
+      "id": "clemson-university--industrial-engineering",
+      "name": "Department of Industrial Engineering (IE)",
+      "school": "College of Engineering, Computing and Applied Sciences",
+      "type": "department",
+      "fields": [
+        "industrial-engineering",
+        "operations-research",
+        "operations-management",
+        "supply-chain"
+      ],
+      "sourceUrl": "https://www.clemson.edu/cecas/departments/ie/",
+      "checkedAt": "2026-10-21",
+      "evidence": "Official department full name and IE acronym, parent college, integrated-systems design remit, OR/simulation/production experts and supply-chain scope."
+    },
+    {
+      "id": "clemson-university--management",
+      "name": "Department of Management",
+      "school": "Wilbur O. and Ann Powers College of Business",
+      "type": "department",
+      "fields": [
+        "operations-management",
+        "supply-chain",
+        "logistics"
+      ],
+      "sourceUrl": "https://www.clemson.edu/business/academics/management/faculty-staff.html",
+      "checkedAt": "2026-10-21",
+      "evidence": "Official department roster and current parent college verified. Linked faculty profile of M. Serkan Akturk explicitly establishes operations teaching and retail/sustainable operations, supply-chain and logistics research."
+    }
+  ],
+  "decisions": [
+    {
+      "sourceDepartmentId": "clemson-university____ds-and-analytics-mis",
+      "disposition": "unresolved",
+      "unitIds": [],
+      "reason": "Recruiting shorthand does not establish a named department. Current management roster lists Business Analytics and Information Systems as an area; no exact expansion/equivalence for DS inferred."
+    },
+    {
+      "sourceDepartmentId": "clemson-university__college-of-business-and-behavioral-science__management",
+      "disposition": "duplicate",
+      "unitIds": [
+        "clemson-university--management"
+      ],
+      "reason": "Same Management department represented once under its verified current parent college; operations remit independently confirmed."
+    },
+    {
+      "sourceDepartmentId": "clemson-university__college-of-engineering-computing-and-applied-sciences__industrial-engineering",
+      "disposition": "replaced",
+      "unitIds": [
+        "clemson-university--industrial-engineering"
+      ],
+      "reason": "Official department full name verified."
+    },
+    {
+      "sourceDepartmentId": "clemson-university__school-of-mathematical-and-statistical-sciences__data-science-and-decision-intelligence",
+      "disposition": "not-a-unit",
+      "unitIds": [],
+      "reason": "Official university news identifies this phrase as an endowed professorship, not a department. No operations unit inferred from data science wording."
+    },
+    {
+      "sourceDepartmentId": "clemson-university__wilbur-o-and-ann-powers-college-of-business__management",
+      "disposition": "replaced",
+      "unitIds": [
+        "clemson-university--management"
+      ],
+      "reason": "Same Management department represented once under its verified current parent college; operations remit independently confirmed."
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.clemson.edu/cecas/departments/ie/",
+      "checkedAt": "2026-10-21",
+      "outcome": "read",
+      "note": "Department/parent, acronym and engineering operations remit."
+    },
+    {
+      "url": "https://www.clemson.edu/business/academics/management/faculty-staff.html",
+      "checkedAt": "2026-10-21",
+      "outcome": "read",
+      "note": "Current full department and college names, area coordinators and linked operations faculty."
+    },
+    {
+      "url": "https://www.clemson.edu/business/about/profiles/makturk",
+      "checkedAt": "2026-10-21",
+      "outcome": "read",
+      "note": "Substantive management operations, supply-chain and logistics research and courses."
+    },
+    {
+      "url": "https://news.clemson.edu/camms-latest-gift-to-clemson-school-of-mathematical-and-statistical-sciences-recognizes-the-importance-of-faculty-excellence/",
+      "checkedAt": "2026-10-21",
+      "outcome": "read",
+      "note": "Data Science and Decision Intelligence is a named professorship, not a department; historical management science program said to no longer exist."
+    }
+  ],
+  "limitations": [
+    "DS and Analytics/MIS shorthand unresolved; not published as a separate department. Historical management science program closure noted by official news without inferring a closure year."
+  ],
+  "duplicateOf": null
+}

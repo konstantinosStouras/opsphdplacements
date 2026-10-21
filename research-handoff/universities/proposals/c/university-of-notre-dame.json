@@ -1,0 +1,84 @@
+{
+  "id": "university-of-notre-dame",
+  "status": "reviewed",
+  "canonicalName": "University of Notre Dame",
+  "duplicateOf": null,
+  "universitySourceUrl": "https://mendoza.nd.edu/mendoza-directory/profile/eojin-han",
+  "checkedAt": "2026-10-21",
+  "reviewer": "Codex in Chrome",
+  "units": [
+    {
+      "id": "university-of-notre-dame--information-technology-analytics-operations",
+      "name": "Information Technology, Analytics, and Operations",
+      "school": "Mendoza College of Business",
+      "type": "department",
+      "fields": [
+        "operations-management",
+        "operations-research"
+      ],
+      "sourceUrl": "https://mendoza.nd.edu/mendoza-directory/?department=Information%20Technology,%20Analytics,%20and%20Operations",
+      "checkedAt": "2026-10-21",
+      "evidence": "Official directory spells the full department name and names a department chair. Eojin Han is listed in the unit; his official profile describes operations research addressing operational challenges, simulation and optimization."
+    }
+  ],
+  "decisions": [
+    {
+      "sourceDepartmentId": "university-of-notre-dame",
+      "disposition": "not-a-unit",
+      "unitIds": [],
+      "reason": "University-only placeholder is not a department."
+    },
+    {
+      "sourceDepartmentId": "university-of-notre-dame__mendoza-college-of-business__information-technology-analytics-and-operations",
+      "disposition": "replaced",
+      "unitIds": [
+        "university-of-notre-dame--information-technology-analytics-operations"
+      ],
+      "reason": "Full official combined department name verified with explicit operations research scope."
+    },
+    {
+      "sourceDepartmentId": "university-of-notre-dame__mendoza-college-of-business__it-analytics-and-operations",
+      "disposition": "duplicate",
+      "unitIds": [
+        "university-of-notre-dame--information-technology-analytics-operations"
+      ],
+      "reason": "Short IT variant duplicates the verified full official combined department name."
+    },
+    {
+      "sourceDepartmentId": "university-of-notre-dame__mendoza-college-of-business__management",
+      "disposition": "out-of-scope",
+      "unitIds": [],
+      "reason": "Current Management & Organization page provides strategy/ethics/organizational teaching; no operations scope verified and no historical alias inferred."
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://mendoza.nd.edu/mendoza-directory/?department=Information%20Technology,%20Analytics,%20and%20Operations",
+      "checkedAt": "2026-10-21",
+      "outcome": "read",
+      "note": "Imported unit URL redirected to directory; full filter name and chair establish unit identity."
+    },
+    {
+      "url": "https://mendoza.nd.edu/mendoza-directory/profile/eojin-han",
+      "checkedAt": "2026-10-21",
+      "outcome": "read",
+      "note": "Operations research and optimization scope; college and university full names."
+    },
+    {
+      "url": "https://mendoza.nd.edu/research-faculty/academic-departments/management-organization/",
+      "checkedAt": "2026-10-21",
+      "outcome": "read",
+      "note": "Separate Management & Organization department emphasizes strategy, ethics, organization and entrepreneurship, not operations."
+    },
+    {
+      "url": "https://catalog.nd.edu/undergraduate/engineering/",
+      "checkedAt": "2026-10-21",
+      "outcome": "read",
+      "note": "2026-2027 engineering catalog lists five departments and research scope; no distinct in-scope engineering unit established."
+    }
+  ],
+  "limitations": [
+    "The original Management posting dates to 2014; no historical equivalence to the current operations department was inferred.",
+    "Imported research-unit URL redirects to the faculty directory; department type is supported by its chair listing."
+  ]
+}

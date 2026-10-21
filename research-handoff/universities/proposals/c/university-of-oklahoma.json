@@ -1,0 +1,105 @@
+{
+  "id": "university-of-oklahoma",
+  "status": "reviewed",
+  "canonicalName": "The University of Oklahoma",
+  "duplicateOf": null,
+  "universitySourceUrl": "https://ou-public.courseleaf.com/price-business/marketing-supply-chain-management/",
+  "checkedAt": "2026-10-21",
+  "reviewer": "Codex in Chrome",
+  "units": [
+    {
+      "id": "university-of-oklahoma--marketing-supply-chain",
+      "name": "Division of Marketing and Supply Chain Management",
+      "type": "division",
+      "school": "Michael F. Price College of Business",
+      "sourceUrl": "https://ou-public.courseleaf.com/price-business/marketing-supply-chain-management/",
+      "fields": [
+        "operations-management",
+        "supply-chain",
+        "logistics"
+      ],
+      "evidence": "Current official 2026-2027 catalog spells division and college names; explicitly covers production/operations, logistics, sourcing, lean Six Sigma and healthcare supply chains.",
+      "checkedAt": "2026-10-21"
+    },
+    {
+      "id": "university-of-oklahoma--industrial-systems-engineering",
+      "name": "School of Industrial and Systems Engineering",
+      "type": "school",
+      "school": "Gallogly College of Engineering",
+      "sourceUrl": "https://ou-public.courseleaf.com/gallogly-engineering/industrial-systems-engineering/",
+      "fields": [
+        "industrial-engineering",
+        "operations-research",
+        "supply-chain",
+        "logistics"
+      ],
+      "evidence": "Official current catalog gives school, parent college and mission optimizing integrated processes, resources and information; manufacturing, transportation, healthcare and supply-chain research.",
+      "checkedAt": "2026-10-21"
+    }
+  ],
+  "decisions": [
+    {
+      "sourceDepartmentId": "university-of-oklahoma__michael-f-price-college-of-business__management-information-systems",
+      "disposition": "out-of-scope",
+      "unitIds": [],
+      "reason": "Standalone Management Information Systems excluded under the requested scope; current inventory distinguishes it from the operations division."
+    },
+    {
+      "sourceDepartmentId": "university-of-oklahoma__michael-f-price-college-of-business__marketing-supply-chain-management-and-healthcare",
+      "disposition": "replaced",
+      "unitIds": [
+        "university-of-oklahoma--marketing-supply-chain"
+      ],
+      "reason": "Current catalog names Division of Marketing and Supply Chain Management; healthcare remains explicit curriculum within that division, not an extra duplicate unit."
+    },
+    {
+      "sourceDepartmentId": "university-of-oklahoma__michael-f-price-college-of-business__supply-chain-management",
+      "disposition": "replaced",
+      "unitIds": [
+        "university-of-oklahoma--marketing-supply-chain"
+      ],
+      "reason": "Current catalog names Division of Marketing and Supply Chain Management; healthcare remains explicit curriculum within that division, not an extra duplicate unit."
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://ou-public.courseleaf.com/price-business/marketing-supply-chain-management/",
+      "checkedAt": "2026-10-21",
+      "outcome": "read",
+      "note": "Current official 2026-2027 catalog spells division and college names; explicitly covers production/operations, logistics, sourcing, lean Six Sigma and healthcare supply chains."
+    },
+    {
+      "url": "https://ou-public.courseleaf.com/gallogly-engineering/industrial-systems-engineering/",
+      "checkedAt": "2026-10-21",
+      "outcome": "read",
+      "note": "Official current catalog gives school, parent college and mission optimizing integrated processes, resources and information; manufacturing, transportation, healthcare and supply-chain research."
+    },
+    {
+      "url": "https://ou-public.courseleaf.com/price-business/",
+      "checkedAt": "2026-10-21",
+      "outcome": "read",
+      "note": "Business division inventory confirms separate Management Information Systems and marketing/supply-chain units."
+    },
+    {
+      "url": "https://online.ou.edu/program/ms-in-supply-chain-management/",
+      "checkedAt": "2026-10-21",
+      "outcome": "read",
+      "note": "Official program links division and college; faculty biography corroborates named marketing/supply-chain division."
+    },
+    {
+      "url": "https://online.ou.edu/program/ms-in-industrial-and-systems-engineering/",
+      "checkedAt": "2026-10-21",
+      "outcome": "read",
+      "note": "Official engineering program links university-authorized Courseleaf catalog and documents engineering optimization scope."
+    },
+    {
+      "url": "http://www.ou.edu/price/phd/supply-chain-management.html",
+      "checkedAt": "2026-10-21",
+      "outcome": "blocked",
+      "note": "Search-linked HTTP page was blocked by browser; no content verification claimed. Independently available official online-program and catalog sources were read."
+    }
+  ],
+  "limitations": [
+    "Blocked original PhD page was not used as evidence; current official catalog and online-program pages establish both branches."
+  ]
+}

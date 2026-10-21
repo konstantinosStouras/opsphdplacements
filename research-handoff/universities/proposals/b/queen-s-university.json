@@ -1,0 +1,91 @@
+{
+  "id": "queen-s-university",
+  "status": "reviewed",
+  "canonicalName": "Queen's University",
+  "universitySourceUrl": "https://www.queensu.ca/",
+  "checkedAt": "2026-10-21",
+  "reviewer": "Codex in Chrome",
+  "units": [
+    {
+      "id": "queen-s-university--management-analytics",
+      "name": "Management Analytics",
+      "school": "Smith School of Business",
+      "type": "area",
+      "fields": [
+        "operations-management",
+        "operations-research",
+        "supply-chain",
+        "logistics"
+      ],
+      "sourceUrl": "https://smith.queensu.ca/faculty_and_research/faculty.php",
+      "checkedAt": "2026-10-21",
+      "evidence": "The current Academic Area filter lists Management Analytics and groups its faculty, including an Operations Strategy fellow. Vedat Verter is explicitly assigned to this area and his official profile describes operations research, socially responsible supply chains, service-chain design and hazardous-materials logistics."
+    }
+  ],
+  "decisions": [
+    {
+      "sourceDepartmentId": "queen-s-university__queen-s-school-of-business__management-science-and-operations-management",
+      "disposition": "replaced",
+      "unitIds": [
+        "queen-s-university--management-analytics"
+      ],
+      "reason": "Consolidate repeated imported school-name variants. Current faculty organization uses Management Analytics as an academic area; retain the actual present label without asserting a historical rename or a standalone department."
+    },
+    {
+      "sourceDepartmentId": "queen-s-university__smith-school-of-business__management-science-and-operations-management",
+      "disposition": "duplicate",
+      "unitIds": [
+        "queen-s-university--management-analytics"
+      ],
+      "reason": "Consolidate repeated imported school-name variants. Current faculty organization uses Management Analytics as an academic area; retain the actual present label without asserting a historical rename or a standalone department."
+    }
+  ],
+  "sources": [
+    {
+      "url": "http://business.queensu.ca/faculty_and_research/faculty.php",
+      "checkedAt": "2026-10-21",
+      "outcome": "blocked",
+      "note": "Legacy imported URL returned browser client block; no bypass or retry."
+    },
+    {
+      "url": "https://www.queensu.ca/",
+      "checkedAt": "2026-10-21",
+      "outcome": "read",
+      "note": "Official university name."
+    },
+    {
+      "url": "https://www.queensu.ca/academics",
+      "checkedAt": "2026-10-21",
+      "outcome": "read",
+      "note": "Official links to current Smith Business and Smith Engineering sites."
+    },
+    {
+      "url": "https://smithengineering.queensu.ca/",
+      "checkedAt": "2026-10-21",
+      "outcome": "read",
+      "note": "Expanded Departments menu lists nine engineering departments; no standalone industrial engineering or operations unit identified."
+    },
+    {
+      "url": "https://smith.queensu.ca/index.php",
+      "checkedAt": "2026-10-21",
+      "outcome": "read",
+      "note": "Current Smith School of Business identity and faculty-directory link."
+    },
+    {
+      "url": "https://smith.queensu.ca/faculty_and_research/faculty.php",
+      "checkedAt": "2026-10-21",
+      "outcome": "read",
+      "note": "Expanded Academic Area filter and selected Management Analytics; actual current faculty grouping."
+    },
+    {
+      "url": "https://smith.queensu.ca/faculty_and_research/faculty_list/verter-vedat.php",
+      "checkedAt": "2026-10-21",
+      "outcome": "read",
+      "note": "Academic-area affiliation plus explicit operations research, supply chain and logistics remit."
+    }
+  ],
+  "limitations": [
+    "Historical Management Science and Operations Management wording is not present in the current academic-area filter; no formal rename history verified. No separate engineering operations unit verified from the official department listing."
+  ],
+  "duplicateOf": null
+}

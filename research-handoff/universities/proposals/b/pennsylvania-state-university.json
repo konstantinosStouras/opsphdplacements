@@ -1,0 +1,96 @@
+{
+  "id": "pennsylvania-state-university",
+  "status": "partial",
+  "canonicalName": "The Pennsylvania State University",
+  "universitySourceUrl": "https://smeal.psu.edu/",
+  "checkedAt": "2026-10-21",
+  "reviewer": "Codex in Chrome",
+  "units": [
+    {
+      "id": "pennsylvania-state-university--supply-chain-information-systems",
+      "name": "Supply Chain & Information Systems",
+      "school": "Smeal College of Business",
+      "type": "department",
+      "fields": [
+        "operations-management",
+        "supply-chain",
+        "logistics"
+      ],
+      "sourceUrl": "https://smeal.psu.edu/dept/scis",
+      "checkedAt": "2026-10-21",
+      "evidence": "Page labels unit Academic Department and explicitly covers supply-chain strategy, logistics/distribution, operations management and process improvement."
+    },
+    {
+      "id": "pennsylvania-state-university--supply-chain-research",
+      "name": "Center for Supply Chain Research (CSCR)",
+      "school": "Smeal College of Business",
+      "type": "center",
+      "fields": [
+        "supply-chain"
+      ],
+      "sourceUrl": "https://smeal.psu.edu/dept/scis",
+      "checkedAt": "2026-10-21",
+      "evidence": "Department page names center and acronym, research and university-industry collaborations on supply-chain business challenges."
+    }
+  ],
+  "decisions": [
+    {
+      "sourceDepartmentId": "pennsylvania-state-university____scm-sourcing-focus",
+      "disposition": "replaced",
+      "unitIds": [
+        "pennsylvania-state-university--supply-chain-information-systems"
+      ],
+      "reason": "Recruiting sourcing/technology focuses consolidated into full official combined supply-chain/information-systems department."
+    },
+    {
+      "sourceDepartmentId": "pennsylvania-state-university____scm-tech-focus",
+      "disposition": "duplicate",
+      "unitIds": [
+        "pennsylvania-state-university--supply-chain-information-systems"
+      ],
+      "reason": "Recruiting sourcing/technology focuses consolidated into full official combined supply-chain/information-systems department."
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://smeal.psu.edu/",
+      "checkedAt": "2026-10-21",
+      "outcome": "read",
+      "note": "Full university name The Pennsylvania State University in footer and Smeal parent."
+    },
+    {
+      "url": "https://smeal.psu.edu/research",
+      "checkedAt": "2026-10-21",
+      "outcome": "read",
+      "note": "Six academic departments and research-center structure."
+    },
+    {
+      "url": "https://smeal.psu.edu/dept",
+      "checkedAt": "2026-10-21",
+      "outcome": "read",
+      "note": "Six full department names including combined Supply Chain & Information Systems."
+    },
+    {
+      "url": "https://smeal.psu.edu/dept/scis",
+      "checkedAt": "2026-10-21",
+      "outcome": "read",
+      "note": "Full department name, operations/supply-chain/logistics remit, and named CSCR center."
+    },
+    {
+      "url": "https://www.engr.psu.edu/",
+      "checkedAt": "2026-10-21",
+      "outcome": "read",
+      "note": "Engineering college and undergraduate/graduate research scope; page read but industrial-engineering department not verified."
+    },
+    {
+      "url": "https://www.ie.psu.edu/",
+      "checkedAt": "2026-10-21",
+      "outcome": "blocked",
+      "note": "Browser reported certificate common-name invalid; no bypass or workaround used."
+    }
+  ],
+  "limitations": [
+    "Industrial-engineering department page blocked by browser certificate error; engineering department name and broader branch remain unverified."
+  ],
+  "duplicateOf": null
+}

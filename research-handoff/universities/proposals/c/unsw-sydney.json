@@ -1,0 +1,122 @@
+{
+  "id": "unsw-sydney",
+  "status": "reviewed",
+  "canonicalName": "University of New South Wales",
+  "universitySourceUrl": "https://www.unsw.edu.au/copyright-disclaimer",
+  "checkedAt": "2026-10-21",
+  "reviewer": "Codex in Chrome",
+  "duplicateOf": "university-of-new-south-wales",
+  "units": [
+    {
+      "id": "university-of-new-south-wales--operations-management",
+      "name": "Operations Management",
+      "school": "School of Information Systems & Technology Management",
+      "type": "area",
+      "fields": [
+        "operations-management"
+      ],
+      "sourceUrl": "https://www.unsw.edu.au/business/our-schools/information-systems-technology-management/our-research",
+      "checkedAt": "2026-10-21",
+      "evidence": "Official school research page explicitly lists this named research area. This records an area within the school, not a standalone department or the whole information-systems school."
+    },
+    {
+      "id": "university-of-new-south-wales--global-supply-chain-management",
+      "name": "Global Supply Chain Management",
+      "school": "School of Information Systems & Technology Management",
+      "type": "area",
+      "fields": [
+        "supply-chain"
+      ],
+      "sourceUrl": "https://www.unsw.edu.au/business/our-schools/information-systems-technology-management/our-research",
+      "checkedAt": "2026-10-21",
+      "evidence": "Official school research page explicitly lists this named research area. This records an area within the school, not a standalone department or the whole information-systems school."
+    },
+    {
+      "id": "university-of-new-south-wales--mechanical-manufacturing-engineering",
+      "name": "School of Mechanical and Manufacturing Engineering",
+      "school": "UNSW Engineering",
+      "type": "school",
+      "fields": [
+        "industrial-engineering",
+        "operations-management"
+      ],
+      "sourceUrl": "https://www.unsw.edu.au/engineering/our-schools/mechanical-and-manufacturing-engineering",
+      "checkedAt": "2026-10-21",
+      "evidence": "Official school identity and linked study-area page establish industrial/manufacturing systems analysis and improvement, including cost-effective facility-layout design; not inferred solely from mechanical fabrication."
+    }
+  ],
+  "decisions": [
+    {
+      "sourceDepartmentId": "unsw-sydney",
+      "disposition": "not-a-unit",
+      "unitIds": [],
+      "reason": "Institution-only placeholder, not a department."
+    },
+    {
+      "sourceDepartmentId": "unsw-sydney__unsw-business-school__information-systems-and-technology-management",
+      "disposition": "replaced",
+      "unitIds": [
+        "university-of-new-south-wales--operations-management",
+        "university-of-new-south-wales--global-supply-chain-management"
+      ],
+      "reason": "Only the expressly named operations/supply-chain research areas retained; whole information-systems school excluded as a unit."
+    },
+    {
+      "sourceDepartmentId": "unsw-sydney__unsw-business-school-school-of-information-systems-and-techn",
+      "disposition": "duplicate",
+      "unitIds": [
+        "university-of-new-south-wales--operations-management",
+        "university-of-new-south-wales--global-supply-chain-management"
+      ],
+      "reason": "Same school written in school field; consolidate to its verified in-scope areas."
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.unsw.edu.au/business/our-schools/information-systems-technology-management/our-research",
+      "checkedAt": "2026-10-21",
+      "outcome": "read",
+      "note": "Explicit named research areas including Operations management and Global supply chain management."
+    },
+    {
+      "url": "https://www.unsw.edu.au/engineering/our-schools/mechanical-and-manufacturing-engineering",
+      "checkedAt": "2026-10-21",
+      "outcome": "read",
+      "note": "Engineering school full name and parent."
+    },
+    {
+      "url": "https://www.unsw.edu.au/engineering/study-with-us/study-areas/mechanical-and-advanced-manufacturing-engineering",
+      "checkedAt": "2026-10-21",
+      "outcome": "read",
+      "note": "Industrial systems improvement and facility-layout design scope."
+    },
+    {
+      "url": "https://www.unsw.edu.au/copyright-disclaimer",
+      "checkedAt": "2026-10-21",
+      "outcome": "read",
+      "note": "University of New South Wales copyright identity on UNSW website."
+    },
+    {
+      "url": "https://www.unsw.edu.au/business/our-schools",
+      "checkedAt": "2026-10-21",
+      "outcome": "read",
+      "note": "Business school inventory."
+    },
+    {
+      "url": "https://www.unsw.edu.au/business/our-schools/management-governance/our-research",
+      "checkedAt": "2026-10-21",
+      "outcome": "read",
+      "note": "Management/Governance research clusters examined; no Operations cluster."
+    },
+    {
+      "url": "https://www.business.unsw.edu.au/about/schools/information-systems/faculty-people#1478185290487",
+      "checkedAt": "2026-10-21",
+      "outcome": "blocked",
+      "note": "Imported faculty URL resolves to official404; current school research page used instead."
+    }
+  ],
+  "limitations": [
+    "Operations and supply-chain entries are explicitly research areas, not verified departments or standalone faculty groups.",
+    "Canberra research search leads were not transferred to these Sydney source records."
+  ]
+}

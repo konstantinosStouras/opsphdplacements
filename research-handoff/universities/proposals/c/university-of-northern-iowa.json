@@ -1,0 +1,77 @@
+{
+  "id": "university-of-northern-iowa",
+  "status": "reviewed",
+  "canonicalName": "University of Northern Iowa",
+  "duplicateOf": null,
+  "universitySourceUrl": "https://chas.uni.edu/applied-engineering/majors/industrial-management",
+  "checkedAt": "2026-10-21",
+  "reviewer": "Codex in Chrome",
+  "units": [
+    {
+      "id": "university-of-northern-iowa--management",
+      "name": "Management Department",
+      "school": "David W. Wilson College of Business",
+      "type": "department",
+      "fields": [
+        "operations-management",
+        "supply-chain",
+        "logistics"
+      ],
+      "sourceUrl": "https://business.uni.edu/management",
+      "checkedAt": "2026-10-21",
+      "evidence": "Department overview explicitly names Management Department; its supply-chain major page establishes operations, logistics, lean and supply-chain teaching within this department."
+    },
+    {
+      "id": "university-of-northern-iowa--applied-engineering",
+      "name": "Department of Applied Engineering",
+      "school": "College of Humanities, Arts & Sciences",
+      "type": "department",
+      "fields": [
+        "operations-management",
+        "industrial-engineering"
+      ],
+      "sourceUrl": "https://chas.uni.edu/applied-engineering/majors/industrial-management",
+      "checkedAt": "2026-10-21",
+      "evidence": "Industrial Management page explicitly identifies hosting Department of Applied Engineering and college parent; program combines manufacturing/transportation management, lean operations and statistical quality control."
+    }
+  ],
+  "decisions": [
+    {
+      "sourceDepartmentId": "university-of-northern-iowa____ba",
+      "disposition": "unresolved",
+      "unitIds": [],
+      "reason": "BA acronym not established as an organizational unit; visible Business Analytics majors do not establish this imported abbreviation or an independent department."
+    },
+    {
+      "sourceDepartmentId": "university-of-northern-iowa__david-w-wilson-college-of-business__management",
+      "disposition": "replaced",
+      "unitIds": [
+        "university-of-northern-iowa--management"
+      ],
+      "reason": "Official full department name and operations scope verified."
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://business.uni.edu/management",
+      "checkedAt": "2026-10-21",
+      "outcome": "read",
+      "note": "Official department organizational name and college."
+    },
+    {
+      "url": "https://business.uni.edu/management/majors-minors-programs/supply-chain-management-major",
+      "checkedAt": "2026-10-21",
+      "outcome": "read",
+      "note": "Supply-chain, operations and logistics curriculum; Business Analytics majors are separate program labels, not independent departments."
+    },
+    {
+      "url": "https://chas.uni.edu/applied-engineering/majors/industrial-management",
+      "checkedAt": "2026-10-21",
+      "outcome": "read",
+      "note": "Engineering department, industrial operations scope, college parent and university full name."
+    }
+  ],
+  "limitations": [
+    "Imported BA remains unresolved and is not displayed as an acronym-only unit. Industrial Management is a degree program; its verified parent department is retained instead."
+  ]
+}

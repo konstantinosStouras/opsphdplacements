@@ -1,0 +1,97 @@
+{
+  "id": "university-of-north-texas",
+  "status": "reviewed",
+  "canonicalName": "University of North Texas",
+  "duplicateOf": null,
+  "universitySourceUrl": "https://cob.unt.edu/scm/index.html",
+  "checkedAt": "2026-10-21",
+  "reviewer": "Codex in Chrome",
+  "units": [
+    {
+      "id": "university-of-north-texas--supply-chain-management",
+      "name": "Department of Supply Chain Management",
+      "type": "department",
+      "school": "G. Brint Ryan College of Business",
+      "fields": [
+        "operations-management",
+        "supply-chain",
+        "logistics"
+      ],
+      "sourceUrl": "https://cob.unt.edu/scm/index.html",
+      "checkedAt": "2026-10-21",
+      "evidence": "Current department page explicitly spells full department and university names; offers supply-chain concentrations in operations and logistics."
+    },
+    {
+      "id": "university-of-north-texas--logistics-center",
+      "name": "Center for Logistics & Supply Chain Management",
+      "type": "center",
+      "school": "G. Brint Ryan College of Business",
+      "fields": [
+        "supply-chain",
+        "logistics"
+      ],
+      "sourceUrl": "https://cob.unt.edu/logistics-center/index.html",
+      "checkedAt": "2026-10-21",
+      "evidence": "Official center page names the center, director, college parent and logistics teaching and research remit."
+    },
+    {
+      "id": "university-of-north-texas--complex-logistics-systems",
+      "name": "Complex Logistics Systems Research Cluster",
+      "type": "group",
+      "school": "G. Brint Ryan College of Business",
+      "fields": [
+        "supply-chain",
+        "logistics"
+      ],
+      "sourceUrl": "https://cob.unt.edu/logistics-center/index.html",
+      "checkedAt": "2026-10-21",
+      "evidence": "Official center page explicitly identifies the named research cluster as one of four components of UNT logistics programs."
+    }
+  ],
+  "decisions": [
+    {
+      "sourceDepartmentId": "university-of-north-texas____ba",
+      "disposition": "unresolved",
+      "unitIds": [],
+      "reason": "Acronym-only BA has no verified organizational expansion or in-scope equivalence; excluded from canonical units."
+    },
+    {
+      "sourceDepartmentId": "university-of-north-texas__g-brint-ryan-college-of-business__supply-chain-management",
+      "disposition": "replaced",
+      "unitIds": [
+        "university-of-north-texas--supply-chain-management"
+      ],
+      "reason": "Current official department title verified."
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://cob.unt.edu/scm/index.html",
+      "checkedAt": "2026-10-21",
+      "outcome": "read",
+      "note": "Current department name and university identity; operations and supply-chain curriculum."
+    },
+    {
+      "url": "https://cob.unt.edu/logistics-center/index.html",
+      "checkedAt": "2026-10-21",
+      "outcome": "read",
+      "note": "Center and named logistics research cluster."
+    },
+    {
+      "url": "https://engineering.unt.edu/academics/degrees.html",
+      "checkedAt": "2026-10-21",
+      "outcome": "read",
+      "note": "Engineering degree inventory checked."
+    },
+    {
+      "url": "https://engineering.unt.edu/academics/departments.html",
+      "checkedAt": "2026-10-21",
+      "outcome": "read",
+      "note": "Five departments: biomedical, computer science, electrical, materials science and mechanical; no standalone industrial engineering unit established."
+    }
+  ],
+  "limitations": [
+    "Imported BA remains unresolved; not silently expanded or mapped to the supply-chain department.",
+    "The center page names the logistics research cluster but does not provide a separate cluster page; retained as a named research group, not a department."
+  ]
+}

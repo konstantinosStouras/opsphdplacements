@@ -1,0 +1,64 @@
+{
+  "id": "university-of-nevada-las-vegas",
+  "status": "reviewed",
+  "canonicalName": "University of Nevada, Las Vegas",
+  "universitySourceUrl": "https://www.unlv.edu/mib/about",
+  "checkedAt": "2026-10-21",
+  "reviewer": "Codex in Chrome",
+  "duplicateOf": null,
+  "units": [
+    {
+      "id": "university-of-nevada-las-vegas--marketing-international-business",
+      "name": "Department of Marketing and International Business (MIB)",
+      "school": "Lee Business School",
+      "type": "department",
+      "fields": [
+        "supply-chain"
+      ],
+      "sourceUrl": "https://www.unlv.edu/mib/about",
+      "checkedAt": "2026-10-21",
+      "evidence": "Official About page gives full department name and acronym, and its mission explicitly includes supply chain management. Department homepage confirms Lee Business School parent."
+    }
+  ],
+  "decisions": [
+    {
+      "sourceDepartmentId": "university-of-nevada-las-vegas____supply-chain-management",
+      "disposition": "replaced",
+      "unitIds": [
+        "university-of-nevada-las-vegas--marketing-international-business"
+      ],
+      "reason": "Supply chain subject is verified within the actual combined department."
+    },
+    {
+      "sourceDepartmentId": "university-of-nevada-las-vegas__lee-business-school",
+      "disposition": "duplicate",
+      "unitIds": [
+        "university-of-nevada-las-vegas--marketing-international-business"
+      ],
+      "reason": "Broad parent-school listing consolidated into its verified relevant department."
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.unlv.edu/mib/about",
+      "checkedAt": "2026-10-21",
+      "outcome": "read",
+      "note": "University name, department full name/acronym and explicit supply-chain mission."
+    },
+    {
+      "url": "https://www.unlv.edu/mib",
+      "checkedAt": "2026-10-21",
+      "outcome": "read",
+      "note": "Department homepage names Lee Business School as parent."
+    },
+    {
+      "url": "https://www.unlv.edu/engineering",
+      "checkedAt": "2026-10-21",
+      "outcome": "read",
+      "note": "Engineering school departments and interdisciplinary programs reviewed; no separate industrial engineering unit verified."
+    }
+  ],
+  "limitations": [
+    "Engineering inventory contains inconsistent four/five department counts, but listed fields do not establish an additional industrial engineering unit. No independent supply-chain department inferred."
+  ]
+}

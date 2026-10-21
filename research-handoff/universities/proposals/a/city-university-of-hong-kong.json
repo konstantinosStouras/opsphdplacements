@@ -1,0 +1,125 @@
+{
+  "id": "city-university-of-hong-kong",
+  "status": "reviewed",
+  "canonicalName": "City University of Hong Kong",
+  "universitySourceUrl": "https://www.cb.cityu.edu.hk/",
+  "checkedAt": "2026-10-21",
+  "reviewer": "Codex in Chrome",
+  "units": [
+    {
+      "id": "city-university-of-hong-kong--decision-analytics-operations",
+      "name": "Department of Decision Analytics and Operations",
+      "school": "College of Business",
+      "type": "department",
+      "fields": [
+        "operations-management",
+        "operations-research",
+        "supply-chain"
+      ],
+      "sourceUrl": "https://www.cb.cityu.edu.hk/en/dao/about-us/heads-message",
+      "checkedAt": "2026-10-21",
+      "evidence": "Official head statement gives full department name and two disciplines: Business Statistics and Operations Management/Operations Research. Research includes inventory, pricing, revenue management, service operations and supply chains."
+    },
+    {
+      "id": "city-university-of-hong-kong--systems-engineering",
+      "name": "Department of Systems Engineering (SYE)",
+      "school": "College of Engineering",
+      "type": "department",
+      "fields": [
+        "industrial-engineering",
+        "operations-management",
+        "supply-chain",
+        "logistics"
+      ],
+      "sourceUrl": "https://www.cityu.edu.hk/sye/phdmphil.htm",
+      "checkedAt": "2026-10-21",
+      "evidence": "Department homepage gives full name and SYE acronym. Research page explicitly lists manufacturing systems, operations management, industrial statistics, logistics/supply chains, human factors and quality management, with Industrial Engineering chair as research-degree coordinator."
+    }
+  ],
+  "decisions": [
+    {
+      "sourceDepartmentId": "city-university-of-hong-kong",
+      "disposition": "not-a-unit",
+      "unitIds": [],
+      "reason": "University-only placeholder does not name a department."
+    },
+    {
+      "sourceDepartmentId": "city-university-of-hong-kong____om-statistics",
+      "disposition": "duplicate",
+      "unitIds": [
+        "city-university-of-hong-kong--decision-analytics-operations"
+      ],
+      "reason": "Official department explicitly contains the imported operations/statistics research disciplines; not separate departments."
+    },
+    {
+      "sourceDepartmentId": "city-university-of-hong-kong__college-of-business__decision-analytics-and-operations",
+      "disposition": "replaced",
+      "unitIds": [
+        "city-university-of-hong-kong--decision-analytics-operations"
+      ],
+      "reason": "Current official full department name verified."
+    },
+    {
+      "sourceDepartmentId": "city-university-of-hong-kong__college-of-business__management-science",
+      "disposition": "unresolved",
+      "unitIds": [],
+      "reason": "Legacy faculty URL returns Bad Request. Current business inventory instead lists Decision Analytics and Operations, but an explicit historical rename statement was not read; no second department is published from this old label."
+    },
+    {
+      "sourceDepartmentId": "city-university-of-hong-kong__college-of-business__operations-research-and-operations-management",
+      "disposition": "duplicate",
+      "unitIds": [
+        "city-university-of-hong-kong--decision-analytics-operations"
+      ],
+      "reason": "Official department explicitly contains the imported operations/statistics research disciplines; not separate departments."
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.cityu.edu.hk/sye",
+      "checkedAt": "2026-10-21",
+      "outcome": "read",
+      "note": "Full engineering department name, acronym, college and university identity."
+    },
+    {
+      "url": "https://www.cityu.edu.hk/sye/phdmphil.htm",
+      "checkedAt": "2026-10-21",
+      "outcome": "read",
+      "note": "Explicit operations, industrial engineering and supply-chain research scope."
+    },
+    {
+      "url": "https://www.cb.cityu.edu.hk/",
+      "checkedAt": "2026-10-21",
+      "outcome": "read",
+      "note": "Full university/college identity and current six-department inventory."
+    },
+    {
+      "url": "https://www.cb.cityu.edu.hk/dao/",
+      "checkedAt": "2026-10-21",
+      "outcome": "read",
+      "note": "Department home, operations and supply-chain programs."
+    },
+    {
+      "url": "https://www.cb.cityu.edu.hk/en/dao/about-us/heads-message",
+      "checkedAt": "2026-10-21",
+      "outcome": "read",
+      "note": "Exact current department name and research disciplines."
+    },
+    {
+      "url": "https://www.cb.cityu.edu.hk/people-and-research/people?dept_code=DAOS",
+      "checkedAt": "2026-10-21",
+      "outcome": "blocked",
+      "note": "Imported faculty link returned 400 Bad Request."
+    },
+    {
+      "url": "http://www.cb.cityu.edu.hk/ms/people/academic/",
+      "checkedAt": "2026-10-21",
+      "outcome": "blocked",
+      "note": "Legacy Management Science faculty link returned 400 Bad Request."
+    }
+  ],
+  "limitations": [
+    "Historical Management Science rename chronology unresolved; current department inventory and operations scope verified independently."
+  ],
+  "duplicateOf": null
+}

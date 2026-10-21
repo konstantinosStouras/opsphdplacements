@@ -1,0 +1,168 @@
+{
+  "id": "purdue-university",
+  "status": "reviewed",
+  "canonicalName": "Purdue University",
+  "universitySourceUrl": "https://engineering.purdue.edu/Engr",
+  "checkedAt": "2026-10-21",
+  "reviewer": "Codex in Chrome",
+  "units": [
+    {
+      "id": "purdue-university--supply-chain-operations-management",
+      "name": "Supply Chain and Operations Management",
+      "school": "Mitch Daniels School of Business",
+      "type": "department",
+      "fields": [
+        "operations-management",
+        "supply-chain",
+        "logistics"
+      ],
+      "sourceUrl": "https://business.purdue.edu/academics/scom/home.php",
+      "checkedAt": "2026-10-21",
+      "evidence": "Official page explicitly calls this a department, identifies its department head, and describes logistics, sourcing, procurement and supply-chain research."
+    },
+    {
+      "id": "purdue-university--quantitative-methods",
+      "name": "Quantitative Methods",
+      "school": "Mitch Daniels School of Business",
+      "type": "department",
+      "fields": [
+        "operations-research"
+      ],
+      "sourceUrl": "https://business.purdue.edu/academics/Quantitative-Methods/home.php",
+      "checkedAt": "2026-10-21",
+      "evidence": "Explicit Quantitative Methods Department studies management science, optimization, statistical quality control and integer programming; listed current research includes inventory management in supply-chain networks."
+    },
+    {
+      "id": "purdue-university--industrial-engineering",
+      "name": "Edwardson School of Industrial Engineering",
+      "school": "College of Engineering",
+      "type": "school",
+      "fields": [
+        "industrial-engineering",
+        "operations-research"
+      ],
+      "sourceUrl": "https://engineering.purdue.edu/IE",
+      "checkedAt": "2026-10-21",
+      "evidence": "School homepage verifies full Edwardson name; official engineering academic-unit directory describes production, operations research, resource allocation and system efficiency as its remit."
+    },
+    {
+      "id": "purdue-university--dauch-manufacturing-center",
+      "name": "Dauch Center for the Management of Manufacturing Enterprises (DCMME)",
+      "school": "Mitch Daniels School of Business",
+      "type": "center",
+      "fields": [
+        "operations-management",
+        "supply-chain"
+      ],
+      "sourceUrl": "https://business.purdue.edu/centers/dcmme/home.php",
+      "checkedAt": "2026-10-21",
+      "evidence": "Center homepage gives the full name and DCMME abbreviation and explicitly promotes operations/manufacturing management education, research and industrial engagement."
+    }
+  ],
+  "decisions": [
+    {
+      "sourceDepartmentId": "purdue-university____heathcare-om-included",
+      "disposition": "unresolved",
+      "unitIds": [],
+      "reason": "Healthcare recruiting shorthand does not establish a named department, and no exact parent unit was verified in this review."
+    },
+    {
+      "sourceDepartmentId": "purdue-university__college-of-engineering",
+      "disposition": "replaced",
+      "unitIds": [
+        "purdue-university--industrial-engineering"
+      ],
+      "reason": "Replace the broad college placeholder with its verified relevant industrial engineering school."
+    },
+    {
+      "sourceDepartmentId": "purdue-university__college-of-engineering__lillian-gilbreth-postdoctoral-fellowships",
+      "disposition": "not-a-unit",
+      "unitIds": [],
+      "reason": "The imported label names postdoctoral fellowships rather than an academic department; no equivalence to a specific department is asserted."
+    },
+    {
+      "sourceDepartmentId": "purdue-university__college-of-engineering__one-health-intelligent-medicines",
+      "disposition": "not-a-unit",
+      "unitIds": [],
+      "reason": "The imported recruiting label names a health/intelligent-medicines theme rather than one of the official engineering academic units. No operations department equivalence established."
+    },
+    {
+      "sourceDepartmentId": "purdue-university__mitch-daniels-school-of-business__management-information-systems",
+      "disposition": "out-of-scope",
+      "unitIds": [],
+      "reason": "Standalone Management Information Systems is separately listed from the operations and quantitative-methods departments; it is outside the requested scope."
+    },
+    {
+      "sourceDepartmentId": "purdue-university__mitch-daniels-school-of-business__quantitative-methods",
+      "disposition": "replaced",
+      "unitIds": [
+        "purdue-university--quantitative-methods"
+      ],
+      "reason": "Consolidate repeated school-name variants into the officially verified Quantitative Methods Department."
+    },
+    {
+      "sourceDepartmentId": "purdue-university__mitchell-e-daniels-jr-school-of-business__quantitative-methods",
+      "disposition": "duplicate",
+      "unitIds": [
+        "purdue-university--quantitative-methods"
+      ],
+      "reason": "Consolidate repeated school-name variants into the officially verified Quantitative Methods Department."
+    },
+    {
+      "sourceDepartmentId": "purdue-university__mitchell-e-daniels-jr-school-of-business__supply-chain-and-operations-management-faculty",
+      "disposition": "replaced",
+      "unitIds": [
+        "purdue-university--supply-chain-operations-management"
+      ],
+      "reason": "Use the official full department name, without the redundant Faculty suffix."
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://business.purdue.edu/directory/view.php?search=FacArea&FacAreaList=58",
+      "checkedAt": "2026-10-21",
+      "outcome": "read",
+      "note": "Supply Chain and Operations Management faculty and explicit department head; academic department navigation."
+    },
+    {
+      "url": "https://business.purdue.edu/academics/Quantitative-Methods/home.php",
+      "checkedAt": "2026-10-21",
+      "outcome": "read",
+      "note": "Full department identity and operations-research remit."
+    },
+    {
+      "url": "https://business.purdue.edu/academics/scom/home.php",
+      "checkedAt": "2026-10-21",
+      "outcome": "read",
+      "note": "Full department name, research and research-center links."
+    },
+    {
+      "url": "https://business.purdue.edu/centers/dcmme/home.php",
+      "checkedAt": "2026-10-21",
+      "outcome": "read",
+      "note": "Full manufacturing-center name, acronym, parent and remit."
+    },
+    {
+      "url": "https://engineering.purdue.edu/Engr",
+      "checkedAt": "2026-10-21",
+      "outcome": "read",
+      "note": "College and university identity."
+    },
+    {
+      "url": "https://engineering.purdue.edu/Engr/Academics/Schools",
+      "checkedAt": "2026-10-21",
+      "outcome": "read",
+      "note": "All engineering academic units, full Edwardson school name and industrial-engineering/OR scope."
+    },
+    {
+      "url": "https://engineering.purdue.edu/IE",
+      "checkedAt": "2026-10-21",
+      "outcome": "read",
+      "note": "Full school name and current school leadership."
+    }
+  ],
+  "limitations": [
+    "The imported Healthcare (OM included) recruiting shorthand remains unresolved; no exact named health-related department verified. Fellowship and One Health recruiting themes are not represented as departments."
+  ],
+  "duplicateOf": null
+}
