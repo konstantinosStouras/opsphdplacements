@@ -24,4 +24,6 @@ README.md, TODO.md, RESEARCH-DESIGN.md, WORKFLOW.md; assets/style.css, assets/or
 
 ## Publication
 
-Pending final browser audit and live deployment.
+Published at b2de3fc25cb19ec8811627128dd3264bcf2ae793 on main and the research branch. GitHub Pages run 39575225169 succeeded. Live browser verification confirmed one A’Sharqiyah result with no redundant source-name disclosure and left alignment across every checked Knemeyer table-cell text element. The preview also confirmed one TUM row with combined doctoral/hiring/unit evidence; no forbidden visible filenames or project-repository links appeared in expanded evidence, and no browser errors were logged. Original public data files remain unchanged.
+
+Proof screenshots are ignored local files under research/website-clarity/people-left-aligned.png and organisation-name-cleaned.png. The temporary browser tab was closed. Future work remains broader identity reconciliation, not completed by this display audit.
