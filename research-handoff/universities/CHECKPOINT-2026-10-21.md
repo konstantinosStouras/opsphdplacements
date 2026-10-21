@@ -22,3 +22,11 @@ Windows transient file locks were resolved by replacing complete timestamp files
 ## Remaining Stage 1 work
 
 Finish remaining official identity/unit reviews, reconcile unresolved OM faculty PhD-origin labels, check both business and engineering doctoral inventories and expand other sources. Preserve source blockers and unknown historical/credential facts. Do not claim Stage 1 complete from this partial checkpoint. No automatic future work is promised.
+
+## Follow-up integration before final publication
+
+The completed follow-up batch adds 52 register records to the first checkpoint: 192 total records, including 184 verified relevant routes at 109 institutions. Current reviews: 432 completed identity/unit records, 74 partial, 3 blocked and 156 pending; 193 source records have doctoral observations and 120 explicitly complete current branch scope. These are still partial and include source aliases. The unit-batch6 and doctoral-batch5 manifests identify integrated input versions. UT Dallas source aliases now explicitly join the same canonical university, resolving its OM List priority ambiguity. HEC Montreal and Navarra business/engineering findings are integrated. Current complete checks (38 tests plus validators), four research schema tests, database rebuild and sharing checks passed. Person/career/graduate data remain unchanged.
+
+The first checkpoint 91c5ed0 deployed successfully in Pages39594722758 and Chrome confirmed its live 81-institution provision counter. Follow-up deployment confirmation will be recorded separately.
+
+Technion current faculty doctoral route and independently sourced 2023 faculty rename are also integrated; exact diploma subject wording remains unknown. Research agents finished current institutions and closed completed research tabs for this publication checkpoint. No unattended continuation is promised.
