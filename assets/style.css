@@ -114,3 +114,11 @@ main p, main li, main td, .tile span, .tile small,
 
 /* People records use natural word spacing, including expanded evidence. */
 #explorer > .table-wrap :is(th,td),#explorer > .table-wrap :is(th,td) *{text-align:left;text-align-last:auto;text-justify:auto}
+
+/* Centre every line of the introduction, overriding prose's last-line alignment. */
+.hero>.subtitle,.hero>.hero-scope,.hero .author-block,.hero .author-block p,.hero .author-block a{text-align:center;text-align-last:center;text-justify:auto;hyphens:none}
+.hero>.subtitle,.hero>.hero-scope{text-wrap:balance}
+.hero>.hero-scope{max-width:620px;margin:14px auto 26px}
+.hero .author-block{display:grid;justify-items:center;gap:8px;max-width:650px;margin:26px auto 32px}
+.hero .author-block .byline,.hero .author-block .affiliation{margin:0}
+.hero .author-block>a{display:block;margin-top:2px}

@@ -251,3 +251,5 @@ Integrated 25 partial histories (103 roles, 20 other mentions, two bounded summa
 - [x] Left-align the People table, including names, institutions, summaries and expanded evidence, instead of justified spacing (21 October 2026).
 
 - [x] Audit every organisation row for repeated display names and aliases. Remove punctuation/case/accent-only repetitions, connect already reviewed official identities across entity views, and preserve separate campuses and all original evidence (21 October 2026). Broader unresolved identity reconciliation remains research work.
+
+- [x] Correct introductory text alignment: override inherited `text-align-last:start` as well as paragraph alignment; centre every subtitle, coverage-note and author line, balance wrapping and use consistent spacing (21 October 2026).
