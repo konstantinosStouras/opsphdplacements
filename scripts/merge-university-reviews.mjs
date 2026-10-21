@@ -1,4 +1,5 @@
 import fs from 'node:fs';
+import {writeComplete} from './write-complete.mjs';
 import { validateUniversityReviews } from './university-review-schema.mjs';
 const path = 'data/university-reviews.json';
 const original = JSON.parse(fs.readFileSync('data/universities.json', 'utf8'));
@@ -28,5 +29,5 @@ data.metadata = {
   blocked: data.records.filter(r => r.status === 'blocked').length,
   pending: original.records.length - data.records.length
 };
-if (!process.argv.includes('--dry-run')) fs.writeFileSync(path, JSON.stringify(data, null, 2) + '\n');
+if (!process.argv.includes('--dry-run')) writeComplete(path, JSON.stringify(data, null, 2) + '\n');
 console.log(`${process.argv.includes('--dry-run') ? 'Preview' : 'Merged'}: ${JSON.stringify(data.metadata)}`);

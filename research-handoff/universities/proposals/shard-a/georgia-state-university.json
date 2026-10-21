@@ -1,0 +1,101 @@
+{
+  "id": "georgia-state-university",
+  "status": "partial",
+  "canonicalName": "Georgia State University",
+  "universitySourceUrl": "https://robinson.gsu.edu/academic-departments/management/",
+  "checkedAt": "2026-10-21",
+  "reviewer": "Codex in Chrome",
+  "units": [
+    {
+      "id": "georgia-state-university--management",
+      "name": "Department of Management",
+      "school": "J. Mack Robinson College of Business",
+      "type": "department",
+      "fields": [
+        "operations-management",
+        "supply-chain",
+        "logistics"
+      ],
+      "sourceUrl": "https://robinson.gsu.edu/academic-departments/management/",
+      "checkedAt": "2026-10-21",
+      "evidence": "Current official full Department of Management name and Robinson/Georgia State parent verified. Academic concentrations explicitly include Operations and Supply Chain Management and business analysis; research includes supply-chain analytics, and department hosts global logistics roundtable and SCM masters."
+    }
+  ],
+  "decisions": [
+    {
+      "sourceDepartmentId": "georgia-state-university",
+      "disposition": "not-a-unit",
+      "unitIds": [],
+      "reason": "Institution-only seed is not a separate administrative unit."
+    },
+    {
+      "sourceDepartmentId": "georgia-state-university____operations-and-supply-chain-management",
+      "disposition": "not-a-unit",
+      "unitIds": [],
+      "reason": "Current official Management department page describes Ops and SCM as academic concentration; no separate named department established from advertisement topic."
+    },
+    {
+      "sourceDepartmentId": "georgia-state-university__j-mack-robinson-college-of-business__computer-information-systems",
+      "disposition": "out-of-scope",
+      "unitIds": [],
+      "reason": "Current CIS doctoral degree host read; pure CIS without explicit Operations/OR doctoral scope not treated as a relevant Operations unit."
+    },
+    {
+      "sourceDepartmentId": "georgia-state-university__j-mack-robinson-college-of-business__management",
+      "disposition": "replaced",
+      "unitIds": [
+        "georgia-state-university--management"
+      ],
+      "reason": "Full current Department of Management and explicit operations/SCM academic scope verified."
+    },
+    {
+      "sourceDepartmentId": "georgia-state-university__j-mack-robinson-college-of-business__managerial-sciences",
+      "disposition": "unresolved",
+      "unitIds": [],
+      "reason": "Imported official Managerial Sciences source404; no current-page evidence establishes historical rename/merger into Management."
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://robinson.gsu.edu/department/managerial-sciences/",
+      "checkedAt": "2026-10-21",
+      "outcome": "blocked",
+      "note": "Imported Managerial Sciences page opened and returned official404; current site navigation discovered but does not establish old-unit succession."
+    },
+    {
+      "url": "https://robinson.gsu.edu/academic-departments/management/",
+      "checkedAt": "2026-10-21",
+      "outcome": "read",
+      "note": "Read full current Management department, explicit academic concentrations Ops/SCM/business analysis and current SCM masters."
+    },
+    {
+      "url": "https://robinson.gsu.edu/phd/phd-areas-of-study/",
+      "checkedAt": "2026-10-21",
+      "outcome": "read",
+      "note": "Read complete nine-entry Robinson PhD concentration inventory."
+    },
+    {
+      "url": "https://robinson.gsu.edu/program/management-phd/",
+      "checkedAt": "2026-10-21",
+      "outcome": "read",
+      "note": "Read full Management PhD; only OB/HR and Strategy specializations, Strategy not admitting Fall2027; no Operations doctoral specialization."
+    },
+    {
+      "url": "https://robinson.gsu.edu/program/information-systems-phd/",
+      "checkedAt": "2026-10-21",
+      "outcome": "read",
+      "note": "Read full CIS PhD overview and curriculum summary; no explicit Operations/OR field established."
+    },
+    {
+      "url": "https://robinson.gsu.edu/program/digital-innovation-phd/",
+      "checkedAt": "2026-10-21",
+      "outcome": "read",
+      "note": "Read full Digital Innovation doctoral description, DS/Analytics and Health Analytics specializations; broad machine-learning/data-science methods not classified Ops/OR."
+    }
+  ],
+  "limitations": [
+    "Historical Managerial Sciences succession unresolved.",
+    "No current relevant doctoral programme verified from business sources despite relevant taught-degree/research unit; engineering/university technical doctoral scope remains unchecked."
+  ],
+  "duplicateOf": null
+}

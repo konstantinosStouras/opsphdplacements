@@ -12,7 +12,7 @@ test('doctoral evidence cannot be replaced by an unavailable source or a differe
  }
 });
 test('research PhD credentials remain distinct from DBA, generic doctoral wording and masters',()=>{
- for(const degree of ['PhD','Ph.D.','Doctor of Philosophy','DPhil','Doctor of Philosophy (PhD)','Doctor of Philosophy (Ph.D.)','PhD (Doctor of Philosophy)','Doctor of Philosophy in Engineering','PhD in Engineering Systems'])assert(isPhdDegree(degree));
+ for(const degree of ['PhD','Ph.D.','Doctor of Philosophy','DPhil','Doctor of Philosophy (PhD)','Doctor of Philosophy (Ph.D.)','PhD (Doctor of Philosophy)','Doctor of Philosophy in Engineering','PhD in Engineering Systems','Philosophiæ doctor (Ph. D.)','Philosophiae doctor (PhD)','PhD or ScD'])assert(isPhdDegree(degree));
  for(const degree of ['DBA','Doctoral Program','Doctorate','Master of Science'])assert(!isPhdDegree(degree));
 });
 test('current provider eligibility excludes training routes and unresolved or historical credentials',()=>{

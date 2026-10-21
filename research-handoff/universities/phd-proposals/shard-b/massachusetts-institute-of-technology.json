@@ -2,7 +2,7 @@
   "universityId": "massachusetts-institute-of-technology",
   "checkedAt": "2026-10-21",
   "status": "verified",
-  "coverageComplete": false,
+  "coverageComplete": true,
   "programmes": [
     {
       "id": "mit-operations-research-phd",
@@ -26,6 +26,74 @@
       "limitations": [
         "No founding date or uninterrupted historical offering inferred."
       ]
+    },
+    {
+      "id": "massachusetts-institute-of-technology--transportation-phd-scd",
+      "programName": "Doctor of Philosophy or Doctor of Science in Transportation",
+      "degree": "PhD or ScD",
+      "specialization": "Logistics focus; CTL logistics and supply chain research",
+      "school": null,
+      "department": "Department of Civil and Environmental Engineering or Department of Urban Studies and Planning (registration)",
+      "unitIds": [
+        "massachusetts-institute-of-technology--transportation-logistics",
+        "massachusetts-institute-of-technology--civil-environmental-engineering"
+      ],
+      "fields": [
+        "Logistics",
+        "Supply Chain Management"
+      ],
+      "status": "active",
+      "sourceUrl": "https://catalog.mit.edu/interdisciplinary/graduate-programs/transportation/",
+      "checkedAt": "2026-10-21",
+      "evidence": "Official doctoral section explicitly awards PhD or ScD in Transportation, requires Logistics among five possible doctoral focus areas, dissertation and defense, and identifies CEE/DUSP registration and Transportation Education Committee administration. CTL confirms doctorate logistics/SCM research pathway.",
+      "limitations": [
+        "PhD and ScD are alternative awards within the same programme, not two degrees. PDF requirements remain unread; opened official catalogue HTML independently establishes exact doctoral requirements and field."
+      ]
+    },
+    {
+      "id": "massachusetts-institute-of-technology--civil-environmental-engineering-phd-logistics",
+      "programName": "Doctor of Philosophy (Department of Civil and Environmental Engineering)",
+      "degree": "PhD",
+      "specialization": "Logistics and Supply Chain research",
+      "school": "MIT School of Engineering",
+      "department": "Department of Civil and Environmental Engineering",
+      "unitIds": [
+        "massachusetts-institute-of-technology--civil-environmental-engineering"
+      ],
+      "fields": [
+        "Logistics",
+        "Supply Chain Management"
+      ],
+      "status": "active",
+      "sourceUrl": "https://cee.mit.edu/education/graduate/",
+      "checkedAt": "2026-10-21",
+      "evidence": "CEE current degree inventory explicitly lists departmental PhD separately from Interdepartmental Transportation. CTL and MIT SCM official doctoral guidance explicitly permit logistics/supply-chain PhD research through CEE with departmental committee and interdisciplinary degree proposal approval.",
+      "limitations": [
+        "Full diploma field wording and particular interdisciplinary designation depend on approved proposal; no separate named PhD in Supply Chain award invented.",
+        "Distinct CEE departmental PhD research route, not second count of Transportation programme registration."
+      ]
+    },
+    {
+      "id": "massachusetts-institute-of-technology--social-engineering-systems-phd-logistics",
+      "programName": "PhD in Social and Engineering Systems",
+      "degree": "PhD",
+      "specialization": "Logistics and Supply Chain research",
+      "school": null,
+      "department": "Institute for Data, Systems, and Society",
+      "unitIds": [
+        "massachusetts-institute-of-technology--data-systems-society"
+      ],
+      "fields": [
+        "Logistics",
+        "Supply Chain Management"
+      ],
+      "status": "active",
+      "sourceUrl": "https://idss.mit.edu/academics/ses/",
+      "checkedAt": "2026-10-21",
+      "evidence": "Current IDSS academic inventory identifies exact SES PhD research degree. CTL and MIT SCM official doctoral guidance explicitly identify IDSS PhD logistics/supply-chain research route with committee and interdisciplinary proposal approval. Added on explicit doctoral research evidence, not optimization coursework alone.",
+      "limitations": [
+        "Broad SES research doctorate with possible logistics/SCM research, not all SES candidates or a separately named SCM qualification."
+      ]
     }
   ],
   "branches": [
@@ -39,8 +107,8 @@
     },
     {
       "branch": "engineering",
-      "reviewState": "partial",
-      "conclusion": "ORC current OR PhD verified. Entire MIT graduate inventory read; Transportation, IDSS and other engineering routes require scope checks before institutional coverage is complete. Transportation current PhD and interdisciplinary administrative committee verified, but doctoral-specific OR/logistics field linkage remains unresolved. SES current PhD and optimization coursework verified; no invented OR specialization from courses alone.",
+      "reviewState": "checked",
+      "conclusion": "Complete graduate inventory and current relevant ORC, Transportation, CEE, IDSS, CTL and SCM guidance checked. Transportation exact doctorate Logistics focus established in official catalogue HTML; CEE and IDSS explicitly permit doctoral logistics/SCM research. SCM guidance separates MIT research routes from Zaragoza award.",
       "sourceUrls": [
         "https://orc.mit.edu/academics/phd-operations-research/",
         "https://orc.mit.edu/about/",
@@ -50,7 +118,12 @@
         "https://www.mmi.mit.edu/education",
         "https://oge.mit.edu/programs/institute-for-data-systems-and-society/",
         "https://idss.mit.edu/academics/ses_doc/",
-        "https://idss.mit.edu/academics/ses/ses-program-and-resources/"
+        "https://idss.mit.edu/academics/ses/ses-program-and-resources/",
+        "https://catalog.mit.edu/interdisciplinary/graduate-programs/transportation/",
+        "https://ctl.mit.edu/doctoral-and-research-degree-programs",
+        "https://cee.mit.edu/education/graduate/",
+        "https://idss.mit.edu/academics/ses/",
+        "https://scm.mit.edu/mit-phd-opportunities-in-logistics-and-supply-chain/"
       ]
     }
   ],
@@ -132,12 +205,47 @@
       "checkedAt": "2026-10-21",
       "outcome": "blocked",
       "note": "Official Transportation doctoral requirements linked from current education page. Opened in own Chrome tab; navigation timed out and subsequent tab inspection reported automation blocked by another extension UI requiring completion/dismissal in Chrome. PDF contents not read; no blocker interaction/bypass."
+    },
+    {
+      "url": "https://catalog.mit.edu/interdisciplinary/graduate-programs/transportation/",
+      "checkedAt": "2026-10-21",
+      "outcome": "read",
+      "note": "Complete official Transportation graduate description: doctoral Logistics focus; PhD or ScD in Transportation; administered Transportation Education Committee, registered CEE or DUSP. Logistics focus explicitly doctoral, not inferred from MST."
+    },
+    {
+      "url": "https://ctl.mit.edu/doctoral-and-research-degree-programs",
+      "checkedAt": "2026-10-21",
+      "outcome": "read",
+      "note": "Official CTL doctoral research guidance: Transportation primary PhD route, explicit logistics/SCM doctoral research opportunities through CEE and IDSS."
+    },
+    {
+      "url": "https://cee.mit.edu/education/graduate/",
+      "checkedAt": "2026-10-21",
+      "outcome": "read",
+      "note": "Current CEE graduate degrees explicit PhD, distinct from interdisciplinary Transportation; department title and programme scope."
+    },
+    {
+      "url": "https://idss.mit.edu/academics/ses/",
+      "checkedAt": "2026-10-21",
+      "outcome": "read",
+      "note": "Exact current PhD in Social and Engineering Systems, IDSS host, research degree character."
+    },
+    {
+      "url": "https://scm.mit.edu/mit-phd-opportunities-in-logistics-and-supply-chain/",
+      "checkedAt": "2026-10-21",
+      "outcome": "read",
+      "note": "Official SCM guidance explicitly distinguishes MIT Transportation/CEE/IDSS doctoral logistics/SCM routes from University of Zaragoza PhD and MIT-Zaragoza certificate. No independent MIT SCM degree inferred."
+    },
+    {
+      "url": "https://mitsloan.mit.edu/phd/program-overview/system-dynamics",
+      "checkedAt": "2026-10-21",
+      "outcome": "read",
+      "note": "Current Sloan System Dynamics concentration describes industrial dynamics and policy; not relabeled OM merely from broad methods."
     }
   ],
   "limitations": [
-    "Institutional doctoral inventory remains partial pending other engineering programmes.",
-    "Transportation requirements PDF not read; its departmental host and scope need further verification before eligible doctoral route addition. SES degree not added solely on optimization coursework.",
-    "Official OGE SCM Residential degree list mixes Doctoral (PhD or ScD) and overseas SCALE awards, while linked MIT SCM site presents masters pathways; discrepancy unresolved, no MIT supply-chain doctorate inferred.",
-    "Official Transportation doctoral requirements PDF currently unread due Chrome extension-UI automation block, escalated to integrator for owner handoff."
+    "Official Transportation requirements PDF remains unread because prior Chrome extension-UI blocker; no retry or bypass. Current official catalogue HTML independently establishes credential, doctoral Logistics focus, registration hosts and dissertation requirements.",
+    "OGE SCM Residential list mixes international SCALE credentials. Official MIT SCM doctoral guidance resolves MIT pathways as Transportation, CEE and IDSS and separately identifies University of Zaragoza PhD; no independent MIT SCM doctorate fabricated.",
+    "Current full diploma designation of individually approved CEE interdisciplinary logistics/SCM proposals not established; exact PhD credential and departmental research route are explicit."
   ]
 }

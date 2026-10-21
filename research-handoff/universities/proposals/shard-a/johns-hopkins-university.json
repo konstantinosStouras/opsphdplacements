@@ -1,0 +1,74 @@
+{
+  "id": "johns-hopkins-university",
+  "status": "reviewed",
+  "canonicalName": "Johns Hopkins University",
+  "universitySourceUrl": "https://engineering.jhu.edu/ams/",
+  "checkedAt": "2026-10-21",
+  "reviewer": "Codex in Chrome",
+  "units": [
+    {
+      "id": "johns-hopkins-university--operations-management-business-analytics",
+      "name": "Operations Management & Business Analytics",
+      "school": "Carey Business School",
+      "type": "area",
+      "fields": [
+        "operations-management"
+      ],
+      "sourceUrl": "https://carey.jhu.edu/faculty/faculty-directory",
+      "checkedAt": "2026-10-21",
+      "evidence": "Current official Carey faculty directory explicitly labels this an Academic Area. Exact ampersand name retained; not claimed as a department."
+    },
+    {
+      "id": "johns-hopkins-university--applied-mathematics-statistics",
+      "name": "Department of Applied Mathematics and Statistics",
+      "school": "Whiting School of Engineering",
+      "type": "department",
+      "fields": [
+        "operations-research"
+      ],
+      "sourceUrl": "https://engineering.jhu.edu/ams/",
+      "checkedAt": "2026-10-21",
+      "evidence": "Current official department homepage establishes full title and Whiting School of Engineering parent. Its current doctoral programme explicitly includes optimization/operations research concentration."
+    }
+  ],
+  "decisions": [
+    {
+      "sourceDepartmentId": "johns-hopkins-university__carey-business-school__operations-management-and-business-analytics",
+      "disposition": "replaced",
+      "unitIds": [
+        "johns-hopkins-university--operations-management-business-analytics"
+      ],
+      "reason": "Correct imported department wording to exact official Academic Area identity and ampersand name."
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://carey.jhu.edu/faculty/faculty-directory",
+      "checkedAt": "2026-10-21",
+      "outcome": "read",
+      "note": "Read current faculty-directory Academic Area filters and exact Operations Management & Business Analytics label. No individual career data extracted."
+    },
+    {
+      "url": "https://carey.jhu.edu/programs",
+      "checkedAt": "2026-10-21",
+      "outcome": "read",
+      "note": "Read official current programme introduction and all programme-type filter categories; MBA, specialized masters, certificates and executive education, no doctoral category displayed. Pagination not exhaustively read."
+    },
+    {
+      "url": "https://engineering.jhu.edu/ams/",
+      "checkedAt": "2026-10-21",
+      "outcome": "read",
+      "note": "Read full official Department of Applied Mathematics and Statistics homepage and Whiting School of Engineering parent."
+    },
+    {
+      "url": "https://engineering.jhu.edu/ams/academics/graduate-studies/doctoral-program/",
+      "checkedAt": "2026-10-21",
+      "outcome": "read",
+      "note": "Read full current Applied Mathematics and Statistics PhD description with explicit optimization/operations research concentration."
+    }
+  ],
+  "limitations": [
+    "Additional engineering doctoral areas are not yet exhausted; imported Carey academic-area identity is reconciled independently of full doctoral-scope completion."
+  ],
+  "duplicateOf": null
+}

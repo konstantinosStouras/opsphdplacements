@@ -1,6 +1,7 @@
 // Integrator-only: reviewed proposals join the existing programme register.
 // The default previews changes. --apply writes; no downloaded source is a review.
 import fs from 'node:fs';
+import {writeComplete} from './write-complete.mjs';
 import path from 'node:path';
 import crypto from 'node:crypto';
 import assert from 'node:assert/strict';
@@ -76,7 +77,7 @@ for(const file of files){
 programs.records=[...byId.values()];programs.metadata.recordCount=programs.records.length;programs.metadata.coverage='partial';programs.metadata.scope='Official-source doctoral programme register; Stage 1 doctoral eligibility and branch reconciliation remain incomplete.';
 validatePrograms(programs);
 if(args.includes('--apply')){
- fs.writeFileSync(path.join(root,'data/doctoral-programs.json'),JSON.stringify(programs,null,2)+'\n');
- fs.writeFileSync(path.join(root,'data/university-reviews.json'),JSON.stringify(reviews,null,2)+'\n');
+ writeComplete(path.join(root,'data/doctoral-programs.json'),JSON.stringify(programs,null,2)+'\n');
+ writeComplete(path.join(root,'data/university-reviews.json'),JSON.stringify(reviews,null,2)+'\n');
 }
 console.log({apply:args.includes('--apply'),addedProgrammeIds:newIds,updatedProgrammeIds:[...updatedIds],doctoralUniversityObservations:changedUniversities.size,historicalProgrammeDetailsPreserved:programs.records.slice(0,JSON.parse(originalProgrammes).length).every((r,i)=>['establishedYear','admissionsEndedAt','lastDegreeAwardedAt','closureDate','renamedTo','history'].every(field=>JSON.stringify(r[field])===JSON.stringify(JSON.parse(originalProgrammes)[i][field])))});

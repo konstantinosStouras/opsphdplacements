@@ -1,0 +1,44 @@
+{
+  "universityId": "copenhagen-business-school",
+  "checkedAt": "2026-10-21",
+  "status": "partial",
+  "coverageComplete": false,
+  "programmes": [],
+  "branches": [
+    {
+      "branch": "business",
+      "reviewState": "partial",
+      "conclusion": "Official department and central PhD pages both returned HTTP503 Backend fetch failed in Chrome. Search results identify current official PhD material but snippets are discovery only; exact award and relevant doctoral programme not verified.",
+      "sourceUrls": [
+        "https://www.cbs.dk/en/research/departments/department-operations-management",
+        "https://www.cbs.dk/en/research/phd-cbs"
+      ]
+    },
+    {
+      "branch": "engineering",
+      "reviewState": "partial",
+      "conclusion": "Earlier official unit inventory described CBS business-school departments without engineering, but current doctoral inventory could not be read. Current doctoral scope remains unknown.",
+      "sourceUrls": [
+        "https://www.cbs.dk/en/research/phd-cbs"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.cbs.dk/en/research/departments/department-operations-management",
+      "checkedAt": "2026-10-21",
+      "outcome": "blocked",
+      "note": "Official page opened in Chrome and returned Error503 Backend fetch failed / Varnish cache server. No programme facts taken from search snippets."
+    },
+    {
+      "url": "https://www.cbs.dk/en/research/phd-cbs",
+      "checkedAt": "2026-10-21",
+      "outcome": "blocked",
+      "note": "Official page opened in Chrome and returned Error503 Backend fetch failed / Varnish cache server. No programme facts taken from search snippets."
+    }
+  ],
+  "limitations": [
+    "Current official programme access unavailable. Existing unit verification is preserved separately and is not converted into doctoral completion.",
+    "No bypass or repeated outage retries attempted; revisit after site recovery."
+  ]
+}

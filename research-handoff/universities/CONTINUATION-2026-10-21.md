@@ -1,0 +1,19 @@
+# Stage 1 continuation — 21 October 2026
+
+Current integrated cut: 237 programme records, including 229 verified relevant doctoral routes at 137 institutions. Adds 45 routes and 28 provider institutions from f131b77. Tracks are not independent degrees; credential uncertainty, current intake limits and branch gaps remain explicit.
+
+Official unit/identity reviews: 435 reviewed, 81 partial, 3 blocked, 146 pending of 665 source records. Current doctoral observations cover 229 source records (aliases included); 137 have complete stated current branch scope. The doctoral gate remains incomplete.
+
+Warwick parent institutional review now anchors its business-school alias; two current doctoral routes added with broader scope incomplete. WHU and Cologne retain academic Dr.rer.pol. evidence. Yale, Houston, Wageningen, Boston, Cranfield, IE, TelAviv, NorthTexas, Washington, JohnsHopkins, Newcastle, Bilkent, NDSU, Laval, Buffalo, GeorgeWashington, HECParis, SMU and Nebraska have programme observations. CUHK aliases share canonical programme IDs; Shenzhen stays separate. Copenhagen, Vienna, Oklahoma and UMass source problems remain partial, with no fabricated programmes.
+
+The exact integrated proposal files and hashes appear in release-2026-10-21-continuation-1.json. Saved later work is distinguished in snapshot-2026-10-21-continuation-1.json. PhD credential parser now recognizes the official Latin title only when accompanied by an explicit PhD/Ph.D. designation; no professional doctorate conversion. No Stage2, career or graduate datasets changed.
+
+Validation: all 38 tests and all public validators, including record dates, passed. Four research-schema tests and SQLite rebuild passed; static website built. Full organisation regression covers duplicate labels/entity/first-job and PhD count preservation. Visitor-interface audit and final deployment confirmation are required before reporting the release live. Rollback baseline:f131b77.
+
+Root is sole public integrator; all three researcher lanes finished current cases and held browsing for this publication cut under frozen ownership. Warwick parent transferred to root with coordination. Next work: remaining origin-priority institutions, incomplete branch checks, unresolved official aliases; graduate/career research remains held. No automatic or scheduled continuation is promised.
+
+Additional integrated findings: MIT Transportation (PhD or ScD alternatives in one programme), CEE and SES doctoral research routes; Koç, Chalmers, Imperial, Bristol, Melbourne and Lehigh. Georgia State remains a scoped no-qualifying-programme-verified observation with incomplete technical scope. MIT PDF remains unread; accessible official catalogue HTML independently supports Transportation facts.
+
+The credential helper recognizes an explicitly offered PhD-or-ScD alternative as one PhD-available route, retaining the exact credential text. No ScD-only or professional doctorate is inferred to be a PhD. Unit and doctoral integration write complete replacement files to tolerate transient Windows locks; normal filesystem access was required for a blocked replacement, with all final validators rerun.
+
+Visitor audit: full joined-data scan covered 1,282 organisation rows with no internal data filenames or project repository text in visitor programme/unit payloads. Chrome preview showed137 provider institutions, MIT four distinct routes, exact alternative Transportation credential and preserved source dates. Expanded all four programme evidence/history sections and branch coverage; visible-page text and links passed presentation restrictions. Requested390px viewport was not actually applied by Chrome (reported749px layout/780px inner viewport); no390px mobile pass is claimed. Final live checks follow deployment.

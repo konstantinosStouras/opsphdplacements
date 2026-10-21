@@ -275,3 +275,5 @@ Stage 1 checkpoint: 132 verified routes at 81 institutions in the public-format 
 Follow-up integrated checkpoint supersedes the counts above: 184 verified routes at 109 institutions; 432 completed identity/unit reviews, 74 partial, 3 blocked, 156 pending. Stage 1 remains incomplete; Stage 2 held.
 
 Fixed stale website totals after data-only releases: all local data loaders now use a build content revision, and module versions change with data. Confirm live institution counts after publishing.
+
+Stage 1 continuation (21 October): 229 verified routes at 137 institutions in 237 programme records; 435 completed identity/unit reviews, 81 partial, 3 blocked, 146 pending. See research-handoff/universities/CONTINUATION-2026-10-21.md and exact integration manifest. Doctoral coverage remains incomplete; Stage2 held.

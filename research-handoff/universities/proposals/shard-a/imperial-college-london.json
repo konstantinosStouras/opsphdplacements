@@ -1,0 +1,92 @@
+{
+  "id": "imperial-college-london",
+  "status": "partial",
+  "canonicalName": "Imperial College London",
+  "universitySourceUrl": "https://www.imperial.ac.uk/business-school/phd/",
+  "checkedAt": "2026-10-21",
+  "reviewer": "Codex in Chrome",
+  "units": [
+    {
+      "id": "imperial-college-london--analytics-operations",
+      "name": "Analytics & Operations",
+      "school": "Imperial Business School",
+      "type": "area",
+      "fields": [
+        "operations-management",
+        "operations-research",
+        "supply-chain",
+        "logistics"
+      ],
+      "sourceUrl": "https://www.imperial.ac.uk/business-school/faculty-research/academic-areas/analytics-operations/",
+      "checkedAt": "2026-10-21",
+      "evidence": "Official current academic-area page explicitly names Analytics & Operations and describes manufacturing/service process management, transportation, supply chains and analytics."
+    },
+    {
+      "id": "imperial-college-london--analytics-marketing-operations",
+      "name": "Department of Analytics, Marketing & Operations",
+      "school": "Imperial Business School",
+      "type": "department",
+      "fields": [
+        "operations-management",
+        "operations-research",
+        "supply-chain"
+      ],
+      "sourceUrl": "https://www.imperial.ac.uk/business-school/faculty-research/academic-areas/analytics-operations/",
+      "checkedAt": "2026-10-21",
+      "evidence": "Official academic-area Key information explicitly states that analytics and operations work is led by the Department of Analytics, Marketing & Operations."
+    }
+  ],
+  "decisions": [
+    {
+      "sourceDepartmentId": "imperial-college-london",
+      "disposition": "not-a-unit",
+      "unitIds": [],
+      "reason": "Institution-only seed is not a separate administrative Operations unit."
+    },
+    {
+      "sourceDepartmentId": "imperial-college-london__imperial-college-business-school__analytics-and-operations",
+      "disposition": "replaced",
+      "unitIds": [
+        "imperial-college-london--analytics-operations"
+      ],
+      "reason": "Exact current Analytics & Operations academic area and Imperial Business School parent verified; actual broader department recorded separately."
+    },
+    {
+      "sourceDepartmentId": "imperial-college-london__imperial-college-business-school__operations-management",
+      "disposition": "unresolved",
+      "unitIds": [],
+      "reason": "Doctoral page uses Operations Management Department wording but current academic-area page names Department of Analytics, Marketing & Operations. No dated organizational succession established."
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.imperial.ac.uk/business-school/phd/",
+      "checkedAt": "2026-10-21",
+      "outcome": "read",
+      "note": "Read complete current Business School doctoral overview and all five doctoral research areas, September2027 entry."
+    },
+    {
+      "url": "https://www.imperial.ac.uk/business-school/phd/analytics/",
+      "checkedAt": "2026-10-21",
+      "outcome": "read",
+      "note": "Read full Analytics & Operations doctoral research page and explicit manufacturing/service operations, SCM, robust/stochastic optimization scope. No listed graduate career data collected."
+    },
+    {
+      "url": "https://www.imperial.ac.uk/business-school/faculty-research/academic-areas/analytics-operations/",
+      "checkedAt": "2026-10-21",
+      "outcome": "read",
+      "note": "Read full current academic-area page, explicit Analytics & Operations name and statement that work is led by Department of Analytics, Marketing & Operations."
+    },
+    {
+      "url": "https://www.imperial.ac.uk/a-z-research/process-systems-engineering/research/competence-areas/operations-and-control/",
+      "checkedAt": "2026-10-21",
+      "outcome": "read",
+      "note": "Read official Sargent Centre Operations and Control research page with explicit SCM, scheduling and optimization; largely dated project narrative, not accepted as current doctoral programme evidence."
+    }
+  ],
+  "limitations": [
+    "Operations Management department wording vs current AMO department identity discrepancy retained explicitly.",
+    "Technical centre research scope does not yet establish exact current engineering doctoral award/host; no extra technical doctorate inferred."
+  ],
+  "duplicateOf": null
+}

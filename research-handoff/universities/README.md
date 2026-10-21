@@ -60,3 +60,5 @@ The owner explicitly requested completion and publication of Stage 1. The coordi
 Current Stage 1 checkpoint: see [CHECKPOINT-2026-10-21.md](CHECKPOINT-2026-10-21.md) and its snapshot inventory for integrated counts, pending proposals, validation and publication state. The older pause paragraphs are historical; manual Stage 1 is active and Stage 2 remains held.
 
 Follow-up checkpoint integrates the completed research through Technion: 184 verified routes at 109 institutions, 192 total register records. The new unit-batch6 and doctoral-batch5 manifests distinguish integrated versions. All agents finished current institutions and paused new browsing for publication; Stage 1 is incomplete and no automated continuation is promised.
+
+Owner-requested continuation after f131b77 is recorded in CONTINUATION-2026-10-21.md and release-2026-10-21-continuation-1.json; saved later proposals remain distinct from integrated public facts. Stage1 remains active and Stage2 held.

@@ -142,3 +142,5 @@ Stage 1 now targets universities with officially verified relevant PhD programme
 Institutional research now starts with the PhD institutions reported for OM List faculty, ranked by their faculty representation, before expansion to other discovery sources. The reported degree institution is a lead; current relevant doctoral provision still requires official verification. See the generated doctoral priority queue in the priorities handoff.
 
 Stage 1 doctoral publication checkpoint (21 October): 184 verified relevant doctoral routes at 109 institutions, within a 192-record partial historical/current register. Current official identity/unit reviews: 432 complete for their stated source scope, 74 partial, 3 blocked and 156 pending of 665 candidates. See the dated university checkpoint for methods and unresolved coverage; Stage 2 remains held.
+
+Stage 1 continuation (21 October): 229 verified routes at 137 institutions in 237 programme records; 435 completed identity/unit reviews, 81 partial, 3 blocked, 146 pending. See research-handoff/universities/CONTINUATION-2026-10-21.md and exact integration manifest. Doctoral coverage remains incomplete; Stage2 held.

@@ -212,3 +212,7 @@ Doctoral integration: `node scripts/merge-doctoral-proposals.mjs <proposal files
 Timestamp writes use complete temporary sibling files and rename into place to tolerate Windows file locks; the record-date tests verify formatting and idempotency. Restricted Windows test filesystems may reject replacement renames; run the same checks with authorized normal filesystem access before publication.
 
 Published data caching: the static build hashes all public data and includes that revision in module versions and every local data request through assets/data-url.js. Data-only releases therefore bypass older CDN responses across organisation, analytics, career and map loaders. Vendor map geometry is unchanged. Verify latest counts in Chrome after deployment.
+
+Literal Latin doctoral wording with an explicit PhD abbreviation (Philosophiæ doctor (Ph.D.)) is recognized by the shared credential helper; other academic doctorate eligibility still requires recorded researchDoctorateEvidence. Preserve the exact original award text.
+
+Unit/doctoral mergers use scripts/write-complete.mjs for complete-file replacement. A replacement error stops integration; inspect state and repeat with authorized normal filesystem access when sandbox/Windows locks prevent replacement, then rebuild entities/status and validate. The public release is withheld until all datasets agree. Explicit PhD-or-ScD alternatives count as one PhD-available route while preserving the original credential text.
