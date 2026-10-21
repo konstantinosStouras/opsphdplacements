@@ -14,6 +14,7 @@ export const jobText = j => `${j.start?.asWritten || 'Unknown start'} – ${j.en
 // Only reviewed primary-career intervals qualify. Never derive continuity from first/current jobs.
 export function careerSummary(history) {
   if (!history) return 'Not yet researched';
+  if (history.reviewStatus === 'blocked') return 'Source unavailable; employment history not verified';
   const periods = history.postPhdPeriods || [];
   if (!periods.length) return 'Insufficient dated evidence to calculate';
   return periods.map(p => {

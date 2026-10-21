@@ -58,3 +58,9 @@ The owner subsequently explicitly authorized review and publication of the24 sav
 The owner authorized the next unassigned batch beginning Alexander Stolyar. Coordination confirmed these 25 positions free through Allyson Joy Heumann. The batch adds 124 role observations and 27 mentions, all 25 histories partial, with four bounded summaries. See `batches/2026-10-20-79-103-report.md` for sources, limitations and publication checks. Public stores now contain 105 histories; daily unique source-check attempts total 107, not complete careers. No new LinkedIn profile was accessed. Next unassigned is 104, Alok Baveja, after checking live assignments. Earlier partial cases and the unpublished Jain proposal still require follow-up.
 
 Publication of positions79–103 was explicitly requested on21 October2026; their evidence-check dates remain20 October2026. All25 remain partial.
+
+## Career positions 104–128 — 21 October 2026
+
+Attempted Alok Baveja through Amrik Sohal: 21 partial histories with 109 roles and 20 mentions, plus four explicit source blockers without job claims. [Batch report](batches/2026-10-21-104-128-report.md) preserves source/identity/date limitations. Public observation count is 130, including four blocked records; this is not 130 complete careers. Positions129–153 belong to the companion careers workflow.
+
+Follow up unavailable Alptekinoglu/Sapra/Chandra evidence, the unlinked Aman Gupta CV, and thin/old chronologies. No source restriction was bypassed and no first-placement/degree evidence was changed.

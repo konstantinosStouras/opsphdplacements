@@ -21,6 +21,7 @@ test('history matching uses reviewed IDs and rejects conflicting histories',()=>
 });
 test('sector summary uses the check date, distinguishes transitions and never fills gaps',()=>{
   assert.equal(careerSummary(), 'Not yet researched');
+  assert.equal(careerSummary({reviewStatus:'blocked',jobs:[]}), 'Source unavailable; employment history not verified');
   assert.match(careerSummary({jobs:[{isCurrent:true}]}),/Insufficient/);
   const h={postPhdPeriods:[{startYear:2010,endYear:2016,sector:'academia'},{startYear:2016,sector:'industry',currentThroughCheck:true,checkedAt:'2026-10-20'}]};
   assert.equal(careerSummary(h),'Approximately 6 years in academia till 2016 (2010–2016); Approximately 10 years in industry till 2026-10-20 (2016–2026)');

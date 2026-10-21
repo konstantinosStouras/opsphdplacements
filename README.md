@@ -105,3 +105,9 @@ The reviewed alphabetical positions 30–53 add 24 explicitly partial career his
 The subsequent [positions 79–103 career batch](research-handoff/careers/batches/2026-10-20-79-103-report.md), Alexander Stolyar through Allyson Joy Heumann, adds 25 partial histories, 124 role observations and four bounded duration summaries. The public stores now contain 105 history records; missing dates and conflicting titles remain explicit. Next unassigned alphabetical position is 104, Alok Baveja, subject to active assignments. These current figures supersede earlier career-pass checkpoints above.
 
 Publication of positions79–103 was explicitly requested on21 October2026; their evidence-check dates remain20 October2026. All25 remain partial.
+
+## Career positions 104–128 — 21 October 2026
+
+Attempted Alok Baveja through Amrik Sohal: 21 partial histories with 109 roles and 20 mentions, plus four explicit source blockers without job claims. [Batch report](research-handoff/careers/batches/2026-10-21-104-128-report.md) preserves source/identity/date limitations. Public observation count is 130, including four blocked records; this is not 130 complete careers. Positions129–153 belong to the companion careers workflow.
+
+Follow up unavailable Alptekinoglu/Sapra/Chandra evidence, the unlinked Aman Gupta CV, and thin/old chronologies. No source restriction was bypassed and no first-placement/degree evidence was changed.

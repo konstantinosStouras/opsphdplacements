@@ -222,3 +222,9 @@ The Anuj Mehrotra OM List row also links to the same opened official Scheller pr
 - [x] Individually check Alexander Stolyar through Allyson Joy Heumann: 25 partial histories, 124 role observations, 27 mentions and four bounded summaries. Preserve source-age, unknown dates and title conflicts.
 - [ ] Resolve Belloni's later transition dates, Jacquillat/Aouad/Fattahi promotion dates, Pedraza-Martinez's move, Taghizadegan's unstated title, Tuna's unavailable CV, Yazdani's overlapping/stale affiliations and Brandon-Jones's headship discrepancy. Do not manufacture doctorate evidence for Mnookin/Heumann.
 - Next unassigned position is 104, Alok Baveja, subject to live assignments; partial follow-ups remain unfinished. Daily attempts total 107, not completed careers. This supersedes the earlier next-position checkpoints above.
+
+## Career positions 104–128 — 21 October 2026
+
+- [x] Attempted Alok Baveja through Amrik Sohal: 21 partial histories with 109 roles and 20 mentions, plus four explicit source blockers without job claims. [Batch report](research-handoff/careers/batches/2026-10-21-104-128-report.md) preserves source/identity/date limitations. Public observation count is 130, including four blocked records; this is not 130 complete careers. Positions129–153 belong to the companion careers workflow.
+
+Follow up unavailable Alptekinoglu/Sapra/Chandra evidence, the unlinked Aman Gupta CV, and thin/old chronologies. No source restriction was bypassed and no first-placement/degree evidence was changed.
