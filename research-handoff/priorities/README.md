@@ -26,9 +26,17 @@ Baseline: all 2,149 had an initial first-job review; 1,524 have verified first j
 
 Use stage-2-omlist-queue.json after Stage 1. Do not restart the old all-person alphabetical sequence at position 179 as the default next action. Preserve it as historical progress. Measure link/source review, degree verification, first-job verification and full-history completeness separately. Do not mark the phase complete merely because every profile was attempted; preserve material exceptions for explicit owner acceptance before Stage 3.
 
-## 3. All PhD graduates and historical careers — deferred
+## 3. Expand the faculty register — after Stages 1 and 2
 
-After both earlier stages meet their gates, use the Stage 1 verified doctoral register to enumerate historical graduates by program/cohort using official alumni/dissertation/placement/commencement records, Wayback Machine or comparable archives. Identity-match each named graduate before career/LinkedIn searches, including people who never entered or later left academia. Reconcile repeated listings and program-year totals. Preserve existing graduate observations but do not start new archive/graduate collection now.
+Owner addition, 21 October 2026: review all faculty listed in every relevant department established in Stage 1. Also follow institutions named in the verified faculty's doctorate and employment histories, assess their relevant faculty pages, and check each listed person against the existing register. Identity-match before adding anyone. Add missing relevant Ops/IE faculty to the same people register and verify their degree facts, first post-PhD employment and accessible full histories using the Stage 2 evidence rules. Retain the OM List origin flag and the fixed 2,149-person Stage 2 denominator; the expanded population has separate source/coverage measures.
+
+Repeat the institution-to-department-to-faculty discovery process for institutions found in newly added faculty histories. Record the institution/person that led to each page, dated roster scope, original names, stable IDs, match decisions, new candidates, inaccessible pages and the unreviewed frontier. Employers without relevant faculty pages do not create fictional departments. A faculty page is roster/identity evidence, not a verified first job or full career. Duplicate/name matches alone never authorize a merge. Add officially verified new institutional/doctoral findings to the existing organisation/programme register under Stage 1 rules; discovery through a career does not establish PhD provision.
+
+Completion is measured against the dated, recorded discovery frontier: every reached relevant department roster and eligible person accounted for, with material identity/source/career exceptions explicit. Do not claim a worldwide faculty census merely because a batch or currently known frontier is exhausted. Stage 3 remains deferred until Stages 1 and 2 meet their gates; no faculty expansion starts during the present Stage 1 work.
+
+## 4. All PhD graduates and historical careers — deferred
+
+After the three earlier stages meet their gates, use the Stage 1 verified doctoral register to enumerate historical graduates by program/cohort using official alumni/dissertation/placement/commencement records, Wayback Machine or comparable archives. Identity-match each named graduate before career/LinkedIn searches, including people who never entered or later left academia. Reconcile repeated listings and program-year totals. Preserve existing graduate observations but do not start new archive/graduate collection now. Historical three-stage handoffs predate the owner's added faculty-expansion stage; their old Stage 3 now means Stage 4.
 
 ## Portable files and regeneration
 

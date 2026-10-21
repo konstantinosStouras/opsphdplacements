@@ -133,7 +133,7 @@ Organisation names are deduplicated for display across all rows and source-name 
 
 ## Current research order — 21 October 2026
 
-The owner now prioritizes (1) a source-reconciled, officially verified university and operations-unit list from OM List schools and Operations Academia universities/job postings; (2) verification of doctorate facts, first jobs and full careers for the 2,149 OM List faculty using their linked sources; (3) only then the historical PhD-graduate census and archive/LinkedIn work. See [the priority contract, source audit and queues](research-handoff/priorities/README.md). Manual source reconciliation has resumed; the earlier research automation remains paused.
+The owner now prioritizes (1) a source-reconciled university, relevant unit and doctoral-programme register; (2) verification of doctorate facts, first jobs and full careers for the 2,149 OM List faculty; (3) expansion to all relevant department faculty, including institutions discovered through faculty PhD and employment histories, with identity checks and the same career evidence; (4) the historical PhD-graduate census and archive/LinkedIn work. Stage 3 iterates through newly discovered institutions and faculty while recording its dated scope and unreviewed frontier. See [the priority contract, source audit and queues](research-handoff/priorities/README.md). Stage 1 is active; later stages and the earlier research automation remain held.
 
 ## Stage 1 doctoral register — 21 October 2026
 
@@ -144,3 +144,5 @@ Institutional research now starts with the PhD institutions reported for OM List
 Stage 1 doctoral publication checkpoint (21 October): 184 verified relevant doctoral routes at 109 institutions, within a 192-record partial historical/current register. Current official identity/unit reviews: 432 complete for their stated source scope, 74 partial, 3 blocked and 156 pending of 665 candidates. See the dated university checkpoint for methods and unresolved coverage; Stage 2 remains held.
 
 Stage 1 continuation (21 October): 229 verified routes at 137 institutions in 237 programme records; 435 completed identity/unit reviews, 81 partial, 3 blocked, 146 pending. See research-handoff/universities/CONTINUATION-2026-10-21.md and exact integration manifest. Doctoral coverage remains incomplete; Stage2 held.
+
+Stage 1 continuation 2 (21 October): 263 verified relevant doctoral routes at 161 institutions in 271 register records, adding 34 routes and 24 providers. Official identity/unit reviews: 438 complete for stated scope, 84 partial, 5 blocked, 138 pending of 665 candidates. See research-handoff/universities/CONTINUATION-2-2026-10-21.md and its exact integration manifest. Stage 1 remains incomplete; Stages 2–4 remain held.

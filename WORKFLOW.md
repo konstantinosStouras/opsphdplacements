@@ -1,5 +1,7 @@
 # Research, review and publication workflow
 
+Current execution order (owner update, 21 October): Stage 1 university/unit/doctoral register; Stage 2 original OM List faculty verification; Stage 3 department-roster and career-linked institutional faculty expansion; Stage 4 historical graduates. The numbered methods below describe research procedures, not the active stage order. Later stages remain held during Stage 1.
+
 ## 1. Establish the program population
 
 Build a register of historical OR/OM/IE doctoral programs. Operations Academia is a discovery source, not proof of degree provision or a complete historical frame. Add official catalogs and archives, dissertation repositories, predecessor departments and closed programs. Distinguish university, school, department, program, specialization and campus. A department merger does not establish a degree's closure date.
@@ -216,3 +218,9 @@ Published data caching: the static build hashes all public data and includes tha
 Literal Latin doctoral wording with an explicit PhD abbreviation (Philosophiæ doctor (Ph.D.)) is recognized by the shared credential helper; other academic doctorate eligibility still requires recorded researchDoctorateEvidence. Preserve the exact original award text.
 
 Unit/doctoral mergers use scripts/write-complete.mjs for complete-file replacement. A replacement error stops integration; inspect state and repeat with authorized normal filesystem access when sandbox/Windows locks prevent replacement, then rebuild entities/status and validate. The public release is withheld until all datasets agree. Explicit PhD-or-ScD alternatives count as one PhD-available route while preserving the original credential text.
+
+## Stage 1 continuation 2 and later faculty expansion — 21 October 2026
+
+The dated research-handoff/universities/integrate-continuation-2.mjs uses frozen proposal hashes, previews unit changes, and separately integrates unchanged programme scope and new doctoral facts. Do not rerun dated construction scripts as refreshes. Existing training routes may receive explicitly reviewed primaryProgrammeIds/overlapNote relationships while preserving prior fact checks and historical credentials. A blocked empty doctoral observation may attach to an existing discovery review without a verified canonical name; adding a programme still requires verified official identity. The merger snapshots programme history once for its preservation check.
+
+Future Stage 3: seed relevant faculty-page reviews from Stage 1 units, then institutions in verified faculty doctorate/employment histories; record dated pages, institution/person discovery links, identity-match decisions, new people, reviewed histories and next unreviewed frontier. Use existing roster/people/history proposal contracts and one integrator. Preserve the original OM List source flag and Stage 2 denominator. Newly found institutional/doctoral facts require normal official verification. No Stage 3 collection or graduate collection starts now.

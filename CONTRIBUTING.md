@@ -65,7 +65,7 @@ Follow the standing public website presentation rule in AGENTS.md. Do not add da
 
 ## Current research ownership and gates — 21 October 2026
 
-Use research-handoff/priorities/README.md before choosing a task. One integrator currently owns Stage 1 source reconciliation; no prior shard researcher is automatically resumed. Reconcile source aliases and official university/unit identities first. OM List faculty linked-source work is Stage 2, held until Stage 1; new graduate/Wayback collection is Stage 3 and deferred. Preserve all historical assignments and proposals. New names from discovery sources are candidates, not additions to the verified register.
+Use research-handoff/priorities/README.md before choosing a task. One integrator currently owns Stage 1 source reconciliation; no prior shard researcher is automatically resumed. Reconcile source aliases and official university/unit identities first. OM List faculty linked-source work is Stage 2, held until Stage 1. Stage 3 expands the same people register from verified department rosters and institutions reached through faculty doctorate/employment histories, with per-person identity checks and sourced careers. Track each discovery edge, roster date, matched/new people and remaining frontier separately from the original OM List population. New graduate/Wayback collection is Stage 4 and deferred until the earlier gates. Preserve historical assignments/proposals and their former numbering; new names from discovery sources are candidates, not additions to the verified register.
 
 ## Stage 1 doctoral register — 21 October 2026
 

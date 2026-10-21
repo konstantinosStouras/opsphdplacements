@@ -277,3 +277,11 @@ Follow-up integrated checkpoint supersedes the counts above: 184 verified routes
 Fixed stale website totals after data-only releases: all local data loaders now use a build content revision, and module versions change with data. Confirm live institution counts after publishing.
 
 Stage 1 continuation (21 October): 229 verified routes at 137 institutions in 237 programme records; 435 completed identity/unit reviews, 81 partial, 3 blocked, 146 pending. See research-handoff/universities/CONTINUATION-2026-10-21.md and exact integration manifest. Doctoral coverage remains incomplete; Stage2 held.
+
+## Current release and revised four-stage order — 21 October 2026
+
+- [x] Integrate 34 additional verified relevant doctoral routes at 24 additional institutions: 263 routes at 161 providers in 271 register records. Resolve Lancaster primary STOR-i route without double-counting training; finish current CMU/Fudan branch inventories.
+- [ ] Finish Stage 1: 138 untouched identity/unit records, 84 partial and 5 blocked; doctoral branch reconciliation and every additional source unit assertion remain separate unfinished gates. Prioritize Penn, Maryland, Erasmus, UBC and unresolved reported-degree institution labels. Current unit completion is 438/665 (65.9%); this is not overall doctoral-stage completion.
+- [ ] Stage 2, held: verify the 2,149 original OM List faculty degrees, first jobs and full accessible careers.
+- [ ] Stage 3, newly added and held: expand the same people register through every relevant Stage 1 department roster and institutions found in faculty PhD/employment histories; identity-match, add missing relevant faculty and verify careers; iterate with a dated discovery frontier. Preserve the separate original OM List denominator.
+- [ ] Stage 4, held: historical graduate enumeration/archives and graduate careers after the three earlier gates. Old Stage 3 references in historical handoffs mean Stage 4 under the revised order.

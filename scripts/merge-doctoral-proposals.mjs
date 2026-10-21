@@ -14,13 +14,13 @@ const args=process.argv.slice(2),files=args.filter(s=>!s.startsWith('--'));
 assert(files.length,'Pass individually reviewed doctoral proposal files; use --apply after preview.');
 const universities=read('data/universities.json'),reviews=read('data/university-reviews.json'),programs=read('data/doctoral-programs.json');
 const reviewById=new Map(reviews.records.map(r=>[r.id,r])),byId=new Map(programs.records.map(p=>[p.id,p]));
-const originalProgrammes=JSON.stringify(programs.records);
+const originalProgrammes=structuredClone(programs.records);
 const changedUniversities=new Set(),newIds=[],updatedIds=new Set();
 function canonical(id){const seen=new Set();while(reviewById.get(id)?.duplicateOf){assert(!seen.has(id),'University alias cycle');seen.add(id);id=reviewById.get(id).duplicateOf;}return id;}
 function identity(p){return [fold(p.university),fold(p.programName),fold(p.specialization||''),fold(p.degree)].join('|');}
 for(const file of files){
  const proposal=validateDoctoralProposal(read(file),universities.records,reviews.records),id=canonical(proposal.universityId),review=reviewById.get(id);
- assert(review?.canonicalName,'Official university identity must be integrated first: '+id);
+ assert(review&&(!proposal.programmes.length||review.canonicalName),'Official university identity must be integrated before adding programmes: '+id);
  const programmeIds=[];
  for(const p of proposal.programmes){
   if(args.includes('--scope-only')){
@@ -50,6 +50,16 @@ for(const file of files){
    record={...existing,universityId:id,unitIds:[...new Set([...(existing.unitIds||[]),...p.unitIds])],lastCheckedAt:p.checkedAt,checkedAt:p.checkedAt,status:p.status,statusAsOf:p.checkedAt,phdEligibility:record.phdEligibility,limitations:[...new Set([...(existing.limitations||[]),...p.limitations])],sources:[...new Map([...existing.sources,...record.sources].map(s=>[s.id,s])).values()],facts:[...existing.facts]};
    record.priorFactChecks=[...(existing.priorFactChecks||[])];
    const updates={status:p.status,school:p.school,department:p.department,specialization:p.specialization};
+   // Explicitly reviewed training/award relationships enrich the existing route;
+   // its original credential and historical facts remain intact.
+   for(const field of ['programmeType','primaryProgrammeIds','overlapNote'])if(p[field]!==undefined)updates[field]=p[field];
+   if(p.programmeType==='research-training'&&p.primaryProgrammeIds?.length){
+    // A resolved primary-award link replaces the old mapping limitation, while
+    // preserving the earlier assessment and credential fact for inspection.
+    if(existing.phdEligibility!=='not-an-independent-award'||existing.degree!==p.degree||existing.evidenceNote!==p.evidence||JSON.stringify(existing.limitations)!==JSON.stringify(p.limitations))record.priorReviewNotes=[...(existing.priorReviewNotes||[]),{checkedAt:existing.lastCheckedAt,evidenceNote:existing.evidenceNote,limitations:existing.limitations,phdEligibility:existing.phdEligibility}];
+    updates.degree=p.degree;updates.eligibilityScope=p.evidence;
+    record.phdEligibility='not-an-independent-award';record.scopeRationale=p.evidence;record.evidenceNote=p.evidence;record.limitations=p.limitations;
+   }
    for(const [field,value]of Object.entries(updates))if(value!==null){
     const fresh=facts.find(f=>f.field===field),old=record.facts.find(f=>f.field===field);
     if(old&&JSON.stringify(old)!==JSON.stringify(fresh)&&!record.priorFactChecks.some(f=>JSON.stringify(f)===JSON.stringify(old)))record.priorFactChecks.push(old);
@@ -80,4 +90,4 @@ if(args.includes('--apply')){
  writeComplete(path.join(root,'data/doctoral-programs.json'),JSON.stringify(programs,null,2)+'\n');
  writeComplete(path.join(root,'data/university-reviews.json'),JSON.stringify(reviews,null,2)+'\n');
 }
-console.log({apply:args.includes('--apply'),addedProgrammeIds:newIds,updatedProgrammeIds:[...updatedIds],doctoralUniversityObservations:changedUniversities.size,historicalProgrammeDetailsPreserved:programs.records.slice(0,JSON.parse(originalProgrammes).length).every((r,i)=>['establishedYear','admissionsEndedAt','lastDegreeAwardedAt','closureDate','renamedTo','history'].every(field=>JSON.stringify(r[field])===JSON.stringify(JSON.parse(originalProgrammes)[i][field])))});
+console.log({apply:args.includes('--apply'),addedProgrammeIds:newIds,updatedProgrammeIds:[...updatedIds],doctoralUniversityObservations:changedUniversities.size,historicalProgrammeDetailsPreserved:programs.records.slice(0,originalProgrammes.length).every((r,i)=>['establishedYear','admissionsEndedAt','lastDegreeAwardedAt','closureDate','renamedTo','history'].every(field=>JSON.stringify(r[field])===JSON.stringify(originalProgrammes[i][field])))});

@@ -1,0 +1,128 @@
+{
+  "id": "maastricht-university",
+  "status": "reviewed",
+  "canonicalName": "Maastricht University",
+  "universitySourceUrl": "https://www.maastrichtuniversity.nl/about-um/faculties/school-business-and-economics/research/phd",
+  "checkedAt": "2026-10-21",
+  "reviewer": "Codex in Chrome",
+  "units": [
+    {
+      "id": "maastricht-university--marketing-supply-chain-management",
+      "fields": [
+        "supply-chain"
+      ],
+      "sourceUrl": "https://www.maastrichtuniversity.nl/research/mscm/faculty-and-staff",
+      "evidence": "Official faculty page explicitly identifies Head of Department under Marketing & Supply Chain Management, followed by academic staff and doctoral candidates.",
+      "type": "department",
+      "checkedAt": "2026-10-20",
+      "name": "Marketing & Supply Chain Management",
+      "school": null
+    },
+    {
+      "id": "maastricht-university--quantitative-economics",
+      "fields": [
+        "operations-research"
+      ],
+      "sourceUrl": "https://www.maastrichtuniversity.nl/taj-demeulemeester",
+      "evidence": "Official profile explicitly places Assistant Professor in Operations Research in this department and school, with affiliation QE Operations research and mathematical programming research.",
+      "type": "department",
+      "checkedAt": "2026-10-20",
+      "name": "Department of Quantitative Economics",
+      "school": "School of Business and Economics"
+    },
+    {
+      "id": "maastricht-university--advanced-computing-sciences",
+      "name": "Department of Advanced Computing Sciences",
+      "type": "department",
+      "school": "Faculty of Science and Engineering",
+      "fields": [
+        "operations-research"
+      ],
+      "sourceUrl": "https://www.maastrichtuniversity.nl/about-um/faculties/science-and-engineering/research/research-departments",
+      "checkedAt": "2026-10-21",
+      "evidence": "Official complete FSE research department inventory establishes exactDACS parent and full name; individually opened DACSORtheme substantiates optimization/OR industrialdecision research scope."
+    }
+  ],
+  "decisions": [
+    {
+      "unitIds": [
+        "maastricht-university--marketing-supply-chain-management"
+      ],
+      "reason": "Official faculty page verifies full department name and head; imported parent school not independently stated there and therefore left null.",
+      "disposition": "replaced",
+      "sourceDepartmentId": "maastricht-university__school-of-business-and-economics__marketing-and-supply-chain-management"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.maastrichtuniversity.nl/research/mscm/faculty-and-staff",
+      "checkedAt": "2026-10-20",
+      "outcome": "read",
+      "note": "SCM departmental staff and name."
+    },
+    {
+      "url": "https://www.maastrichtuniversity.nl/taj-demeulemeester",
+      "checkedAt": "2026-10-20",
+      "outcome": "read",
+      "note": "University identity and quantitative economics OR remit."
+    },
+    {
+      "url": "https://www.maastrichtuniversity.nl/department-advanced-computing-sciences/research/applied_mathematics",
+      "checkedAt": "2026-10-20",
+      "outcome": "read",
+      "note": "Engineering-side applied mathematics page lists Operations Research theme but remains placeholder introduction and empty researchers table."
+    },
+    {
+      "url": "https://www.maastrichtuniversity.nl/research/mscm",
+      "checkedAt": "2026-10-20",
+      "outcome": "blocked",
+      "note": "Overview path 404; faculty subpage works."
+    },
+    {
+      "url": "https://www.maastrichtuniversity.nl/about-um/faculties/school-business-and-economics/research/phd",
+      "checkedAt": "2026-10-21",
+      "outcome": "read",
+      "note": "All4SBE doctoral programmes inventoried; exact Economics and Business PhD research focus includes MarketingSCM and QuantitativeEconomics; broad training employment/scholarship/external routes."
+    },
+    {
+      "url": "https://www.maastrichtuniversity.nl/department-advanced-computing-sciences/research/applied_mathematics/operations_research",
+      "checkedAt": "2026-10-21",
+      "outcome": "read",
+      "note": "Actual DACS OperationsResearch theme exact scope optimization industrialdecisionmaking algorithms/game theory in manufacturing/government/energy/health."
+    },
+    {
+      "url": "https://www.maastrichtuniversity.nl/about-um/faculties/science-and-engineering/research/research-departments",
+      "checkedAt": "2026-10-21",
+      "outcome": "read",
+      "note": "Complete FSE department/institute inventory; exactDepartmentAdvancedComputingSciences identified."
+    },
+    {
+      "url": "https://www.maastrichtuniversity.nl/about-um/faculties/science-and-engineering/research/fse-stem-graduate-school",
+      "checkedAt": "2026-10-21",
+      "outcome": "read",
+      "note": "FSESTEMgraduateSchool supports allFSE PhD candidates, research/course requirements; no distinct exact ORprogramme title or registrationmapping established."
+    },
+    {
+      "url": "https://www.maastrichtuniversity.nl/research/phd",
+      "checkedAt": "2026-10-21",
+      "outcome": "read",
+      "note": "Current UM PhD research/dissertation framework."
+    },
+    {
+      "url": "https://www.maastrichtuniversity.nl/research/phd/phd-training-programmes",
+      "checkedAt": "2026-10-21",
+      "outcome": "read",
+      "note": "Complete central PhDtraining overview explicitly says list not allpaid/externalPhDs; not treated as exhaustiveawardlist."
+    },
+    {
+      "url": "https://www.maastrichtuniversity.nl/department-advanced-computing-sciences/research/applied_mathematics",
+      "checkedAt": "2026-10-21",
+      "outcome": "read",
+      "note": "AppliedMath thematic page remains placeholder and emptyresearchtable; researchthemesOR verified but not doctoralcredentialmapping."
+    }
+  ],
+  "limitations": [
+    "Current SBEdoctoraloverview explicitly includes MarketingSupplyChainManagement research; existing department name observation retained at its original date/parent state. DACSactualdepartment and ORtheme nowverified, but exactdoctoralORaward/hostmapping within FSESTEM remains unresolved."
+  ],
+  "duplicateOf": null
+}

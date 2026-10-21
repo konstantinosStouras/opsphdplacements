@@ -2,7 +2,7 @@
   "universityId": "lancaster-university",
   "checkedAt": "2026-10-21",
   "status": "verified",
-  "coverageComplete": false,
+  "coverageComplete": true,
   "programmes": [
     {
       "id": "lancaster-university--phd-management-science",
@@ -53,7 +53,7 @@
     {
       "id": "lancaster-university--stor-i-doctoral-training",
       "programName": "STOR-i doctoral training programme",
-      "degree": "MRes followed by PhD (underlying award programme mapping unresolved)",
+      "degree": "MRes followed by PhD",
       "specialization": "Statistics and Operational Research",
       "school": "School of Mathematical Sciences; Lancaster University Management School",
       "department": "Department of Management Science",
@@ -65,14 +65,38 @@
         "Operations Research"
       ],
       "programmeType": "research-training",
-      "primaryProgrammeIds": [],
-      "overlapNote": "Four-year MRes+PhD training spans MathematicalSciences and ManagementScience. Exact underlying PhD award/registration mapping not established; retained as overlapping training route and excluded additional independent-award count.",
+      "primaryProgrammeIds": [
+        "lancaster-university--statistics-operational-research-stori-phd"
+      ],
+      "overlapNote": "STOR-i doctoral training delivers the same Statistics and Operational Research(STOR-i) PhD now explicitly established by current2027 course catalogue under School of Mathematical Sciences; do not count training record as an additional doctorate.",
       "status": "active",
       "sourceUrl": "https://www.lancaster.ac.uk/stor-i/stor-i-programme/",
       "checkedAt": "2026-10-21",
-      "evidence": "Official centre gives joint hosts, MRes foundation and PhD project in Statistics/OR. Current admissions page confirms2027applications and both qualifications, but no exact underlying doctoral programme allocation.",
+      "evidence": "Official centre gives joint hosts, MRes foundation and PhD project in Statistics/OR. Current admissions page confirms2027applications and both qualifications, but no exact underlying doctoral programme allocation. Current2027 exactcourse catalogue resolves primaryPhD and SchoolMathematicalSciences registration host.",
       "limitations": [
-        "Do not treat training centre as additional independent PhD award absent exact programme mapping."
+        "Training route overlaps linked primaryPhD; not independent award."
+      ]
+    },
+    {
+      "id": "lancaster-university--statistics-operational-research-stori-phd",
+      "programName": "Statistics and Operational Research (STOR-i) PhD",
+      "degree": "PhD",
+      "specialization": null,
+      "school": "School of Mathematical Sciences, Faculty of Science and Technology",
+      "department": null,
+      "unitIds": [
+        "lancaster-university--mathematical-sciences",
+        "lancaster-university--stor-i-doctoral-training"
+      ],
+      "fields": [
+        "Operations Research"
+      ],
+      "status": "active",
+      "sourceUrl": "https://www.lancaster.ac.uk/study/postgraduate/postgraduate-courses/statistics-and-operational-research-stori-phd/2027/",
+      "checkedAt": "2026-10-21",
+      "evidence": "Exact2027course catalogue explicitly Statistics and Operational Research(STOR-i) PhD, department School MathematicalSciences, commencingMRes followed three-year PhD research. Current CDT programme independently confirms joint MathSciences and ManagementScience delivery.",
+      "limitations": [
+        "Integrated MRes is preparatory masters, not a second doctorate. STOR-i research-training record links this same primary award and is excluded extra award count."
       ]
     }
   ],
@@ -99,12 +123,13 @@
     },
     {
       "branch": "mathematics",
-      "reviewState": "partial",
-      "conclusion": "STOR-i currentORdoctoraltraining and joint MathematicalSciences host verified. Exact underlying PhD programme award/registration mapping remains unresolved. Complete MathematicalSciences doctoral inventory read; STOR-i separately linked but underlying award allocation still not explicit.",
+      "reviewState": "checked",
+      "conclusion": "Current exact2027 STOR-i PhD catalogue establishes SchoolMathematicalSciences host and StatisticsOperationalResearch award; training overlaps the linked primary degree.",
       "sourceUrls": [
         "https://www.lancaster.ac.uk/stor-i/stor-i-programme/",
         "https://www.lancaster.ac.uk/stor-i/apply/",
-        "https://www.lancaster.ac.uk/maths/study/phd/"
+        "https://www.lancaster.ac.uk/maths/study/phd/",
+        "https://www.lancaster.ac.uk/study/postgraduate/postgraduate-courses/statistics-and-operational-research-stori-phd/2027/"
       ]
     }
   ],
@@ -162,9 +187,21 @@
       "checkedAt": "2026-10-21",
       "outcome": "read",
       "note": "Read complete MathematicalSciences doctoral inventory: AppliedMathematics,Mathematics,MathematicalAI,Statistics(includingintegrated),SocialStatistics; STOR-i linked separately as centre/training. No explicit underlying STOR-i registration/award allocation established."
+    },
+    {
+      "url": "https://www.lancaster.ac.uk/study/postgraduate/postgraduate-courses/statistics-and-operational-research-stori-phd/2027/",
+      "checkedAt": "2026-10-21",
+      "outcome": "read",
+      "note": "Exact2027 Statistics and Operational Research(STOR-i) PhD course catalogue; SchoolMathematicalSciences department, FacultyScienceTechnology, MRes followed doctoral project; resolves underlying award/host mapping."
+    },
+    {
+      "url": "https://www.lancaster.ac.uk/stor-i/stor-i-programme/phd/",
+      "checkedAt": "2026-10-21",
+      "outcome": "read",
+      "note": "Complete STOR-i doctoral research project selection, supervisory constituencies and training; training is not an extra degree."
     }
   ],
   "limitations": [
-    "Coverage remains incomplete because STOR-i underlying programme mapping in MathematicalSciences is unresolved; no graduate enumeration."
+    "Current exact2027 STOR-i qualification now mapped to School of Mathematical Sciences; earlier unresolved mapping retained in source observation history, not current conclusion. No graduate enumeration."
   ]
 }

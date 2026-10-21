@@ -1,0 +1,236 @@
+{
+  "id": "carnegie-mellon-university",
+  "status": "reviewed",
+  "canonicalName": "Carnegie Mellon University",
+  "universitySourceUrl": "https://www.cheme.engineering.cmu.edu/education/graduate-programs/phd/index.html",
+  "checkedAt": "2026-10-21",
+  "reviewer": "Codex in Chrome",
+  "units": [
+    {
+      "id": "carnegie-mellon-university--tepper-operations-management",
+      "name": "Operations Management",
+      "school": "Tepper School of Business",
+      "type": "area",
+      "fields": [
+        "operations-management",
+        "supply-chain"
+      ],
+      "sourceUrl": "https://www.cmu.edu/tepper/faculty-and-research/academic-areas/operations-management",
+      "checkedAt": "2026-10-20",
+      "evidence": "Official academic area defines planning, process optimization, supply chains, revenue management, sustainability and operations strategy."
+    },
+    {
+      "id": "carnegie-mellon-university--tepper-operations-research",
+      "name": "Operations Research",
+      "school": "Tepper School of Business",
+      "type": "area",
+      "fields": [
+        "operations-research"
+      ],
+      "sourceUrl": "https://www.cmu.edu/tepper/faculty-and-research/academic-areas/operations-research",
+      "checkedAt": "2026-10-20",
+      "evidence": "Official academic area/group develops mathematical models, optimization algorithms and the data-to-decisions pipeline."
+    },
+    {
+      "id": "carnegie-mellon-university--heinz-operations-research",
+      "name": "Operations Research",
+      "school": "Heinz College of Information Systems and Public Policy",
+      "type": "area",
+      "fields": [
+        "operations-research"
+      ],
+      "sourceUrl": "https://www.heinz.cmu.edu/heinz-shared/_files/php/views/facultyresults-full.php?discipline%5B%5D=Operations+Research",
+      "checkedAt": "2026-10-20",
+      "evidence": "Official Operations Research-filtered faculty directory identifies six faculty, including professorships expressly in Operations Research and Public Policy. This is a discipline area, not a separate department."
+    },
+    {
+      "id": "carnegie-mellon-university--manufacturing-futures",
+      "name": "Manufacturing Futures Institute (MFI)",
+      "school": null,
+      "type": "institute",
+      "fields": [
+        "operations-management",
+        "supply-chain"
+      ],
+      "sourceUrl": "https://engineering.cmu.edu/mfi/index.html",
+      "checkedAt": "2026-10-20",
+      "evidence": "Official institute homepage gives expanded name and MFI abbreviation; its digital-twins research page explicitly covers supply-chain design, production scheduling, routing, process optimization and asset operation."
+    },
+    {
+      "id": "carnegie-mellon-university--chemical-engineering",
+      "name": "Department of Chemical Engineering",
+      "school": "College of Engineering",
+      "type": "department",
+      "fields": [
+        "operations-research",
+        "operations-management",
+        "supply-chain"
+      ],
+      "sourceUrl": "https://www.cheme.engineering.cmu.edu/education/graduate-programs/phd/index.html",
+      "checkedAt": "2026-10-21",
+      "evidence": "Current official full department identity and College of Engineering parent read; Chemical Engineering PhD explicitly offers Process Systems Engineering research, whose official area page covers large-scale/discrete/robust/stochastic optimization, supply chains, scheduling and enterprise-wide operations."
+    },
+    {
+      "id": "carnegie-mellon-university--civil-environmental-engineering",
+      "name": "Department of Civil and Environmental Engineering",
+      "school": "College of Engineering",
+      "type": "department",
+      "fields": [
+        "operations-research",
+        "logistics"
+      ],
+      "sourceUrl": "https://engineering.cmu.edu/education/graduate-studies/programs/cee.html",
+      "checkedAt": "2026-10-21",
+      "evidence": "Official graduate programme page gives full CEE department title and College of Engineering parent; explicitly presents CEE PhD and SETS among its graduate research areas. Linked area research covers OR, vehicle fleet operation, delivery logistics, allocation and transportation-network optimization."
+    }
+  ],
+  "decisions": [
+    {
+      "sourceDepartmentId": "carnegie-mellon-university",
+      "disposition": "not-a-unit",
+      "unitIds": [],
+      "reason": "Blank imported department placeholder."
+    },
+    {
+      "sourceDepartmentId": "carnegie-mellon-university____contextualized-evaluation-of-ai-for-healthcare",
+      "disposition": "not-a-unit",
+      "unitIds": [],
+      "reason": "Research/project topic, not a named department or organizational unit."
+    },
+    {
+      "sourceDepartmentId": "carnegie-mellon-university__heinz-college-of-information-systems-and-public-policy",
+      "disposition": "replaced",
+      "unitIds": [
+        "carnegie-mellon-university--heinz-operations-research"
+      ],
+      "reason": "Replace broad college listing with explicit Operations Research area."
+    },
+    {
+      "sourceDepartmentId": "carnegie-mellon-university__tepper-school-of-business",
+      "disposition": "replaced",
+      "unitIds": [
+        "carnegie-mellon-university--tepper-operations-management",
+        "carnegie-mellon-university--tepper-operations-research"
+      ],
+      "reason": "Broad school listing replaced with verified distinct operations academic areas."
+    },
+    {
+      "sourceDepartmentId": "carnegie-mellon-university__tepper-school-of-business__business-technologies",
+      "disposition": "out-of-scope",
+      "unitIds": [],
+      "reason": "Official group self-identifies with Information Systems discipline and technological/economic questions, separately from OM and OR."
+    },
+    {
+      "sourceDepartmentId": "carnegie-mellon-university__tepper-school-of-business__heinz-college",
+      "disposition": "duplicate",
+      "unitIds": [
+        "carnegie-mellon-university--heinz-operations-research"
+      ],
+      "reason": "Heinz is a separate CMU college, not a Tepper department. Consolidate duplicate Heinz entry under its actual parent."
+    },
+    {
+      "sourceDepartmentId": "carnegie-mellon-university__tepper-school-of-business__operations-management",
+      "disposition": "duplicate",
+      "unitIds": [
+        "carnegie-mellon-university--tepper-operations-management"
+      ],
+      "reason": "Same verified operations management academic area."
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.cmu.edu/tepper/faculty-and-research/academic-areas/operations-management",
+      "note": "University identity, full area and parent names, substantive OM/SCM remit.",
+      "checkedAt": "2026-10-20",
+      "outcome": "read"
+    },
+    {
+      "url": "https://www.cmu.edu/tepper/faculty-and-research/academic-areas/operations-research",
+      "note": "Distinct OR academic area/group and remit.",
+      "checkedAt": "2026-10-20",
+      "outcome": "read"
+    },
+    {
+      "url": "https://www.cmu.edu/tepper/faculty-and-research/academic-areas/business-technologies",
+      "note": "Explicit separate IS discipline, excluded.",
+      "checkedAt": "2026-10-20",
+      "outcome": "read"
+    },
+    {
+      "url": "https://www.heinz.cmu.edu/heinz-shared/_files/php/views/facultyresults-full.php?discipline%5B%5D=Operations+Research",
+      "note": "Read exact imported official directory; six OR-discipline faculty and substantive OR/public-policy titles.",
+      "checkedAt": "2026-10-20",
+      "outcome": "read"
+    },
+    {
+      "url": "https://www.cmu.edu/academics",
+      "note": "Confirms Heinz college independent of Tepper and engineering school link.",
+      "checkedAt": "2026-10-20",
+      "outcome": "read"
+    },
+    {
+      "url": "https://engineering.cmu.edu/",
+      "note": "Engineering program inventory inspected; no independent industrial-engineering department listed; manufacturing institute linked.",
+      "checkedAt": "2026-10-20",
+      "outcome": "read"
+    },
+    {
+      "url": "https://engineering.cmu.edu/mfi.html",
+      "note": "Redirect to current institute homepage.",
+      "checkedAt": "2026-10-20",
+      "outcome": "read"
+    },
+    {
+      "url": "https://engineering.cmu.edu/mfi/index.html",
+      "note": "Institute full name, abbreviation, CMU identity.",
+      "checkedAt": "2026-10-20",
+      "outcome": "read"
+    },
+    {
+      "url": "https://engineering.cmu.edu/mfi/research/index.html",
+      "note": "Institute research organization.",
+      "checkedAt": "2026-10-20",
+      "outcome": "read"
+    },
+    {
+      "url": "https://engineering.cmu.edu/mfi/research/digital-twins.html",
+      "note": "Specific supply-chain, scheduling, routing and process optimization remit.",
+      "checkedAt": "2026-10-20",
+      "outcome": "read"
+    },
+    {
+      "url": "https://www.cheme.engineering.cmu.edu/education/graduate-programs/phd/index.html",
+      "checkedAt": "2026-10-21",
+      "outcome": "read",
+      "note": "Read full current Chemical Engineering PhD, exact doctorate, department host, original-research thesis/defense and explicit PSE doctoral research area."
+    },
+    {
+      "url": "https://www.cheme.engineering.cmu.edu/research/process-systems.html",
+      "checkedAt": "2026-10-21",
+      "outcome": "read",
+      "note": "Read full current PSE area defining optimization under uncertainty, mathematical programming, supply chains, scheduling, planning and enterprise-wide operations optimization; no individual researcher histories collected."
+    },
+    {
+      "url": "https://engineering.cmu.edu/education/graduate-studies/programs/cheme.html",
+      "checkedAt": "2026-10-21",
+      "outcome": "read",
+      "note": "Read current ChemE graduate degree and research-area inventory."
+    },
+    {
+      "url": "https://engineering.cmu.edu/education/graduate-studies/programs/cee.html",
+      "checkedAt": "2026-10-21",
+      "outcome": "read",
+      "note": "Read complete CEE graduate degree page: explicitly names PhD in Civil and Environmental Engineering and presents four Research areas within the graduate-program scope, including Sustainable energy and transportation systems."
+    },
+    {
+      "url": "https://www.cee.engineering.cmu.edu/research/sets/index.html",
+      "checkedAt": "2026-10-21",
+      "outcome": "read",
+      "note": "Read full named graduate-research area, explicit OR, optimization, logistics/delivery, fleet operations and transportation networks."
+    }
+  ],
+  "limitations": [
+    "Current doctoral branch inventory now checked separately in doctoral proposal; prior unit observations/check dates retained, with newly evidenced Chemical and Civil/Environmental Engineering units added."
+  ],
+  "duplicateOf": null
+}
