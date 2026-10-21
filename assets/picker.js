@@ -21,6 +21,7 @@ export function searchablePicker(labelText, values, current, onChange, placehold
       const b=document.createElement('button');b.type='button';b.textContent=t;b.className='text-button';b.addEventListener('click',()=>choose(v));matches.append(b);
     }
     if(words.length&&!found.length)status.textContent='No matches. Try another name or spelling.';
+    if(typed&&current()&&!shown.some(([v])=>v===current()))choose('');
     const exact=found.find(([v])=>fold(v)===fold(search.value));
     if(typed&&exact&&exact[0]!==current())choose(exact[0]);
     return found;
