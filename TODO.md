@@ -228,3 +228,9 @@ The Anuj Mehrotra OM List row also links to the same opened official Scheller pr
 - [x] Attempted Alok Baveja through Amrik Sohal: 21 partial histories with 109 roles and 20 mentions, plus four explicit source blockers without job claims. [Batch report](research-handoff/careers/batches/2026-10-21-104-128-report.md) preserves source/identity/date limitations. Public observation count is 130, including four blocked records; this is not 130 complete careers. Positions129–153 belong to the companion careers workflow.
 
 Follow up unavailable Alptekinoglu/Sapra/Chandra evidence, the unlinked Aman Gupta CV, and thin/old chronologies. No source restriction was bypassed and no first-placement/degree evidence was changed.
+
+## Career positions 129–153 — 21 October 2026
+
+- [x] Individually check Amrita Kundu through Andrea Patrucco: 25 partial histories, 121 role observations and 35 mentions; only one bounded sector summary.
+- [ ] Resolve Kundu's imported doctorate-year discrepancy, Awaysheh's campus/rank mismatch, Ward/Iyer/Mishra stale Present labels, Nair's conflicting Aalto dates, L'Afflitto's reversed DLR dates and missing university chronology, and incomplete promotion/transition dates throughout the batch.
+- Next unassigned order is 154 after checking current ownership. Preserve all older partial/blocked cases and the global duplicate audit. Today's 50 attempts are not completed careers. See the dated batch report.

@@ -64,3 +64,7 @@ Publication of positions79–103 was explicitly requested on21 October2026; thei
 Attempted Alok Baveja through Amrik Sohal: 21 partial histories with 109 roles and 20 mentions, plus four explicit source blockers without job claims. [Batch report](batches/2026-10-21-104-128-report.md) preserves source/identity/date limitations. Public observation count is 130, including four blocked records; this is not 130 complete careers. Positions129–153 belong to the companion careers workflow.
 
 Follow up unavailable Alptekinoglu/Sapra/Chandra evidence, the unlinked Aman Gupta CV, and thin/old chronologies. No source restriction was bypassed and no first-placement/degree evidence was changed.
+
+## Career positions 129–153 — 21 October 2026
+
+Amrita Kundu through Andrea Patrucco: 25 partial histories, 121 roles, 35 other mentions and one bounded summary integrated after the coordinated104–128 release. See [batch report](batches/2026-10-21-129-153-report.md). Public stores now hold155 review records (four blocked); today's50 unique checks count attempts, not complete careers. Next unassigned order154 requires a fresh assignment check. No LinkedIn Experience was read; older CV Present claims, missing dates and conflicting chronology remain explicit. First-placement and imported degree evidence is unchanged. Publication checks are recorded in the batch report.
