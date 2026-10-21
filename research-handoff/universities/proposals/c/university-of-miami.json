@@ -1,0 +1,108 @@
+{
+  "canonicalName": "University of Miami",
+  "decisions": [
+    {
+      "disposition": "not-a-unit",
+      "unitIds": [],
+      "sourceDepartmentId": "university-of-miami",
+      "reason": "University-only placeholder."
+    },
+    {
+      "disposition": "not-a-unit",
+      "unitIds": [],
+      "sourceDepartmentId": "university-of-miami__miami-herbert-business-school__ba-fintech-ai-healthcare",
+      "reason": "Recruiting subject list rather than a named academic unit; current Management Science department separately verified."
+    },
+    {
+      "disposition": "replaced",
+      "unitIds": [
+        "university-of-miami--management"
+      ],
+      "sourceDepartmentId": "university-of-miami__miami-herbert-business-school__management-area",
+      "reason": "Official current unit is Department of Management, with explicit operations remit."
+    },
+    {
+      "disposition": "duplicate",
+      "unitIds": [
+        "university-of-miami--management"
+      ],
+      "sourceDepartmentId": "university-of-miami__miami-herbert-business-school__operations-management",
+      "reason": "Operations management is explicitly an area within the retained Management department; avoid duplicating the parent unit."
+    }
+  ],
+  "duplicateOf": null,
+  "units": [
+    {
+      "name": "Department of Management",
+      "checkedAt": "2026-10-20",
+      "type": "department",
+      "sourceUrl": "https://www.mbs.miami.edu/faculty-research/academic-departments/management/index.html",
+      "school": "University of Miami Business School",
+      "id": "university-of-miami--management",
+      "fields": [
+        "operations-management"
+      ],
+      "evidence": "Current official page names Department of Management and explicitly lists operations management among its major areas of focus."
+    },
+    {
+      "name": "Department of Management Science",
+      "checkedAt": "2026-10-20",
+      "type": "department",
+      "sourceUrl": "https://www.mbs.miami.edu/faculty-research/academic-departments/management-science/index.html",
+      "school": "University of Miami Business School",
+      "id": "university-of-miami--management-science",
+      "fields": [
+        "operations-management"
+      ],
+      "evidence": "Official department page identifies its chair and explicitly includes analytical decision-making across operations among its applied business analytics remit."
+    },
+    {
+      "name": "Industrial and Systems Engineering Department (ISE)",
+      "checkedAt": "2026-10-20",
+      "type": "department",
+      "sourceUrl": "https://ise.coe.miami.edu/",
+      "school": "College of Engineering",
+      "id": "university-of-miami--industrial-systems-engineering",
+      "fields": [
+        "industrial-engineering",
+        "operations-management",
+        "logistics"
+      ],
+      "evidence": "Official home page expands department name and explains production/operational system design, transport/logistics, healthcare and service systems; College of Engineering affiliation is shown."
+    }
+  ],
+  "checkedAt": "2026-10-20",
+  "sources": [
+    {
+      "checkedAt": "2026-10-20",
+      "url": "https://www.mbs.miami.edu/faculty-research/academic-departments/management/index.html",
+      "note": "Department name and explicit operations-management area; current school is styled University of Miami Business School.",
+      "outcome": "read"
+    },
+    {
+      "checkedAt": "2026-10-20",
+      "url": "https://www.mbs.miami.edu/faculty-research/academic-departments/management-science/index.html",
+      "note": "Full department name, chair and operations analytics remit.",
+      "outcome": "read"
+    },
+    {
+      "checkedAt": "2026-10-20",
+      "url": "https://ise.coe.miami.edu/",
+      "note": "Engineering full name, official abbreviation and production/logistics scope.",
+      "outcome": "read"
+    },
+    {
+      "checkedAt": "2026-10-20",
+      "url": "https://www.mbs.miami.edu/faculty-research/directory/index.html",
+      "note": "Imported Herbert hostname redirects to current Business School directory.",
+      "outcome": "read"
+    }
+  ],
+  "reviewer": "Codex in Chrome",
+  "status": "reviewed",
+  "id": "university-of-miami",
+  "limitations": [
+    "Use the current University of Miami Business School branding displayed on official department pages; imported Miami Herbert Business School labels remain preserved in the source audit."
+  ],
+  "universitySourceUrl": "https://www.mbs.miami.edu/faculty-research/academic-departments/management/index.html"
+}

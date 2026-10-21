@@ -1,0 +1,121 @@
+{
+  "id": "oklahoma-state-university",
+  "status": "reviewed",
+  "canonicalName": "Oklahoma State University",
+  "universitySourceUrl": "https://ceat.okstate.edu/iem",
+  "checkedAt": "2026-10-20",
+  "reviewer": "Codex in Chrome",
+  "units": [
+    {
+      "checkedAt": "2026-10-20",
+      "sourceUrl": "https://ceat.okstate.edu/iem",
+      "fields": [
+        "industrial-engineering",
+        "operations-research",
+        "supply-chain",
+        "logistics"
+      ],
+      "name": "School of Industrial Engineering and Management",
+      "school": "College of Engineering, Architecture and Technology",
+      "evidence": "Official school welcome gives full name and production-systems remit; current catalog explicitly lists OR, supply-chain curriculum and logistics certificate.",
+      "id": "oklahoma-state-university--industrial-engineering-management",
+      "type": "school"
+    },
+    {
+      "checkedAt": "2026-10-20",
+      "sourceUrl": "https://business.okstate.edu/departments_programs",
+      "fields": [
+        "supply-chain"
+      ],
+      "name": "School of Marketing and International Business",
+      "school": "Spears School of Business",
+      "evidence": "Current academic department/program inventory explicitly places Supply Chain Management under this named school.",
+      "id": "oklahoma-state-university--marketing-international-business",
+      "type": "school"
+    },
+    {
+      "checkedAt": "2026-10-20",
+      "sourceUrl": "https://business.okstate.edu/CHSI/programs",
+      "fields": [
+        "operations-management"
+      ],
+      "name": "Center for Health Systems Innovation",
+      "school": "Spears School of Business; Center for Health Sciences",
+      "evidence": "Programs page includes rural clinic workflow efficiency, care-delivery models under resource/workforce constraints, and measuring operational impact. Overview establishes joint business/health-sciences position.",
+      "id": "oklahoma-state-university--health-systems-innovation",
+      "type": "center"
+    }
+  ],
+  "decisions": [
+    {
+      "unitIds": [],
+      "sourceDepartmentId": "oklahoma-state-university____mis",
+      "reason": "Standalone MIS is outside requested operations boundary.",
+      "disposition": "out-of-scope"
+    },
+    {
+      "unitIds": [
+        "oklahoma-state-university--industrial-engineering-management"
+      ],
+      "sourceDepartmentId": "oklahoma-state-university__school-of-industrial-engineering-and-management",
+      "reason": "Retained full verified school name and college parent.",
+      "disposition": "replaced"
+    },
+    {
+      "unitIds": [
+        "oklahoma-state-university--health-systems-innovation"
+      ],
+      "sourceDepartmentId": "oklahoma-state-university__spears-school-of-business__management-science-and-information-systems-center-for-health",
+      "reason": "Split conflated label: retained independently verified health-systems center with workflow/operations remit; MSIS department current description focuses information systems/analytics and is excluded.",
+      "disposition": "replaced"
+    }
+  ],
+  "sources": [
+    {
+      "outcome": "read",
+      "url": "https://ceat.okstate.edu/iem",
+      "checkedAt": "2026-10-20",
+      "note": "Full school name and parent; opened via iem.okstate.edu redirect."
+    },
+    {
+      "outcome": "read",
+      "url": "https://catalog.okstate.edu/engineering-architecture-technology/industrial-engineering-management/",
+      "checkedAt": "2026-10-20",
+      "note": "2026-27 catalog establishes industrial engineering, OR, SCM and logistics scope."
+    },
+    {
+      "outcome": "read",
+      "url": "https://business.okstate.edu/departments_programs/msis",
+      "checkedAt": "2026-10-20",
+      "note": "Full MSIS department name checked; information-systems and analytics remit not relabeled operations."
+    },
+    {
+      "outcome": "read",
+      "url": "https://business.okstate.edu/departments_programs",
+      "checkedAt": "2026-10-20",
+      "note": "All eight academic units and program inventory; explicit SCM home in marketing/international-business school."
+    },
+    {
+      "outcome": "read",
+      "url": "https://business.okstate.edu/chsi",
+      "checkedAt": "2026-10-20",
+      "note": "Health-systems center name confirmed."
+    },
+    {
+      "outcome": "read",
+      "url": "https://business.okstate.edu/CHSI/overview",
+      "checkedAt": "2026-10-20",
+      "note": "Joint business/health-sciences affiliation and care-delivery innovation."
+    },
+    {
+      "outcome": "read",
+      "url": "https://business.okstate.edu/CHSI/programs",
+      "checkedAt": "2026-10-20",
+      "note": "Explicit clinical workflow efficiency, operational impact and constrained care delivery establish operations remit."
+    }
+  ],
+  "limitations": [
+    "Center and school types preserved; no standalone supply-chain department invented. Only workflow/care-delivery operations justify health center inclusion, not predictive clinical analytics alone."
+  ],
+  "duplicateOf": null
+}

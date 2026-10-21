@@ -1,0 +1,84 @@
+{
+  "id": "peking-university",
+  "status": "partial",
+  "canonicalName": "Peking University",
+  "universitySourceUrl": "https://english.pku.edu.cn/",
+  "checkedAt": "2026-10-21",
+  "reviewer": "Codex in Chrome",
+  "units": [
+    {
+      "id": "peking-university--management-science-information-systems",
+      "name": "Department of Management Science and Information Systems",
+      "school": "Guanghua School of Management",
+      "type": "department",
+      "fields": [
+        "operations-management",
+        "supply-chain"
+      ],
+      "sourceUrl": "https://en.gsm.pku.edu.cn/mis/Introduction.htm",
+      "checkedAt": "2026-10-21",
+      "evidence": "Department introduction explicitly gives full name, three teaching/research areas including supply chain management, and production/operations publications."
+    },
+    {
+      "id": "peking-university--lian-thai-supply-chain-system",
+      "name": "PKU-Lian Thai Center for Supply Chain System Research and Development",
+      "school": "Guanghua School of Management",
+      "type": "center",
+      "fields": [
+        "supply-chain"
+      ],
+      "sourceUrl": "https://en.gsm.pku.edu.cn/mis/Introduction.htm",
+      "checkedAt": "2026-10-21",
+      "evidence": "Department introduction names this joint supply-chain research and development center among industry research collaborations."
+    }
+  ],
+  "decisions": [
+    {
+      "sourceDepartmentId": "peking-university____om-and-is",
+      "disposition": "replaced",
+      "unitIds": [
+        "peking-university--management-science-information-systems"
+      ],
+      "reason": "Full official combined management-science/information-systems department name replaces shorthand and singular imported wording; explicit supply-chain remit qualifies."
+    },
+    {
+      "sourceDepartmentId": "peking-university__guanghua-school-of-management__management-science-and-information-system",
+      "disposition": "duplicate",
+      "unitIds": [
+        "peking-university--management-science-information-systems"
+      ],
+      "reason": "Full official combined management-science/information-systems department name replaces shorthand and singular imported wording; explicit supply-chain remit qualifies."
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://en.gsm.pku.edu.cn/mis/Introduction.htm",
+      "checkedAt": "2026-10-21",
+      "outcome": "read",
+      "note": "Full combined department name, Guanghua parent, supply-chain remit and joint center."
+    },
+    {
+      "url": "https://english.pku.edu.cn/",
+      "checkedAt": "2026-10-21",
+      "outcome": "read",
+      "note": "University identity and faculty directory link."
+    },
+    {
+      "url": "https://english.pku.edu.cn/about.html#ab6",
+      "checkedAt": "2026-10-21",
+      "outcome": "read",
+      "note": "Expanded Engineering faculty lists four engineering schools including College of Engineering."
+    },
+    {
+      "url": "https://en.coe.pku.edu.cn/",
+      "checkedAt": "2026-10-21",
+      "outcome": "blocked",
+      "note": "Browser certificate common-name error; did not bypass warning or access through workaround."
+    }
+  ],
+  "limitations": [
+    "College of Engineering source blocked by certificate error, so engineering operations/industrial-engineering coverage remains unverified.",
+    "Joint center is named by official department introduction; independent current center activity not checked."
+  ],
+  "duplicateOf": null
+}

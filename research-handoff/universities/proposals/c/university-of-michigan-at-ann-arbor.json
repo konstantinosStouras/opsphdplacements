@@ -1,0 +1,69 @@
+{
+  "sources": [
+    {
+      "url": "https://ioe.engin.umich.edu/",
+      "checkedAt": "2026-10-20",
+      "note": "Engineering full name and Ann Arbor campus identity.",
+      "outcome": "read"
+    },
+    {
+      "url": "https://michiganross.umich.edu/faculty-research/directory?status=All&department=39&name=&last=&sort_by=field_sort_name_value",
+      "checkedAt": "2026-10-20",
+      "note": "Current academic department name and faculty.",
+      "outcome": "read"
+    },
+    {
+      "url": "https://www.si.umich.edu/research/research-areas",
+      "checkedAt": "2026-10-20",
+      "note": "School of Information research-area directory; imported directory URL returned Page Not Found.",
+      "outcome": "read"
+    }
+  ],
+  "reviewer": "Codex in Chrome",
+  "checkedAt": "2026-10-20",
+  "canonicalName": "University of Michigan",
+  "units": [
+    {
+      "checkedAt": "2026-10-20",
+      "name": "Industrial and Operations Engineering",
+      "id": "university-of-michigan--industrial-operations-engineering",
+      "fields": [
+        "industrial-engineering",
+        "operations-research"
+      ],
+      "type": "department",
+      "school": "College of Engineering",
+      "evidence": "Official engineering home page names Industrial and Operations Engineering, College of Engineering, and University of Michigan Ann Arbor; describes optimization, data analytics and human-centered systems.",
+      "sourceUrl": "https://ioe.engin.umich.edu/"
+    },
+    {
+      "checkedAt": "2026-10-20",
+      "name": "Technology and Operations",
+      "id": "university-of-michigan--technology-operations",
+      "fields": [
+        "operations-management"
+      ],
+      "type": "department",
+      "school": "Stephen M. Ross School of Business",
+      "evidence": "Official Ross faculty directory explicitly labels Technology and Operations as the selected Academic Department and lists its professors.",
+      "sourceUrl": "https://michiganross.umich.edu/faculty-research/directory?status=All&department=39&name=&last=&sort_by=field_sort_name_value"
+    }
+  ],
+  "status": "reviewed",
+  "universitySourceUrl": "https://ioe.engin.umich.edu/",
+  "duplicateOf": "university-of-michigan",
+  "id": "university-of-michigan-at-ann-arbor",
+  "limitations": [
+    "Alias of University of Michigan Ann Arbor, as verified by official engineering footer and Ross faculty source. Reuses those individually read official sources; does not merge Flint or Dearborn campuses."
+  ],
+  "decisions": [
+    {
+      "reason": "Same Ross Ann Arbor institution and academic department; use verified current Technology and Operations name.",
+      "sourceDepartmentId": "university-of-michigan-at-ann-arbor__stephen-m-ross-school-of-business__technology-and-operations-management",
+      "disposition": "replaced",
+      "unitIds": [
+        "university-of-michigan--technology-operations"
+      ]
+    }
+  ]
+}

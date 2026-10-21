@@ -1,0 +1,75 @@
+{
+  "id": "nyu-shanghai",
+  "status": "reviewed",
+  "canonicalName": "New York University Shanghai",
+  "universitySourceUrl": "https://shanghai.nyu.edu/academics/faculty-directory",
+  "checkedAt": "2026-10-20",
+  "reviewer": "Codex in Chrome",
+  "units": [
+    {
+      "school": null,
+      "type": "area",
+      "fields": [
+        "operations-management",
+        "operations-research"
+      ],
+      "checkedAt": "2026-10-20",
+      "evidence": "Official faculty directory explicitly classifies Business as academic area, with Dean of Business and Chen Chen, Assistant Professor of Operations and Business Analytics. His official profile confirms marketplace/service-system optimization research.",
+      "id": "new-york-university-shanghai--business",
+      "name": "Business",
+      "sourceUrl": "https://shanghai.nyu.edu/academics/faculty-directory"
+    }
+  ],
+  "decisions": [
+    {
+      "sourceDepartmentId": "nyu-shanghai____business-information-systems-technology",
+      "disposition": "out-of-scope",
+      "reason": "Standalone information systems/technology component is outside operations boundary.",
+      "unitIds": []
+    },
+    {
+      "sourceDepartmentId": "nyu-shanghai____business-operations-and-business-analytics",
+      "disposition": "replaced",
+      "reason": "Operations and Business Analytics appointment verified in broader Business academic area; not asserted to be a separate department.",
+      "unitIds": [
+        "new-york-university-shanghai--business"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "note": "Campus identity, academic-area filter, business leadership and local operations faculty.",
+      "checkedAt": "2026-10-20",
+      "url": "https://shanghai.nyu.edu/academics/faculty-directory",
+      "outcome": "read"
+    },
+    {
+      "note": "Local operations and business analytics appointment and optimization/operations research.",
+      "checkedAt": "2026-10-20",
+      "url": "https://shanghai.nyu.edu/academics/faculty/directory/chen-chen",
+      "outcome": "read"
+    },
+    {
+      "note": "Business minor includes Operations Management, not a separate department.",
+      "checkedAt": "2026-10-20",
+      "url": "https://shanghai.nyu.edu/page/business",
+      "outcome": "read"
+    },
+    {
+      "note": "Academic areas list includes business finance/marketing and computing/data/engineering branch.",
+      "checkedAt": "2026-10-20",
+      "url": "https://shanghai.nyu.edu/page/academic-programs",
+      "outcome": "read"
+    },
+    {
+      "note": "Current Computer Science, Data Science, and Engineering division focuses computing/data; no named industrial engineering unit established.",
+      "checkedAt": "2026-10-20",
+      "url": "https://cs.shanghai.nyu.edu/",
+      "outcome": "read"
+    }
+  ],
+  "limitations": [
+    "Business is an official academic area; Operations and Business Analytics is verified faculty specialty, not a separately named department."
+  ],
+  "duplicateOf": "new-york-university-shanghai"
+}

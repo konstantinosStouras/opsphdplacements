@@ -1,0 +1,43 @@
+{
+  "id": "western-illinois-university",
+  "status": "reviewed",
+  "canonicalName": "Western Illinois University",
+  "universitySourceUrl": "https://www.wiu.edu/rebuild",
+  "checkedAt": "2026-10-21",
+  "reviewer": "Codex in Chrome",
+  "units": [
+    {
+      "id": "western-illinois-university--accounting-business-administration",
+      "name": "School of Accounting & Business Administration",
+      "school": "College of Business, Health, and Community Programs",
+      "type": "school",
+      "fields": ["supply-chain", "operations-management"],
+      "sourceUrl": "https://www.wiu.edu/rebuild",
+      "checkedAt": "2026-10-21",
+      "evidence": "Expanded current college inventory places this school under the new college and explicitly lists Supply Chain Management certificate/minor and Operational Management minor. Restructuring is effective July 1, 2026."
+    },
+    {
+      "id": "western-illinois-university--engineering-technology",
+      "name": "School of Engineering and Technology",
+      "school": "College of Business, Health, and Community Programs",
+      "type": "school",
+      "fields": ["operations-management"],
+      "sourceUrl": "https://www.wiu.edu/cbt/set/ms-et.php",
+      "checkedAt": "2026-10-21",
+      "evidence": "Named school teaches production/process planning, lean thinking, continuous improvement, quality and operations management in its engineering technology master's. New parent confirmed in expanded restructuring inventory."
+    }
+  ],
+  "decisions": [{
+    "sourceDepartmentId": "western-illinois-university____supply-chain-management-and-analytics",
+    "disposition": "replaced",
+    "unitIds": ["western-illinois-university--accounting-business-administration"],
+    "reason": "Imported subject label is not evidenced as a standalone department; use the current named host school in the July 2026 structure."
+  }],
+  "sources": [
+    {"url": "https://www.wiu.edu/cbt/management_and_marketing/", "checkedAt": "2026-10-21", "outcome": "read", "note": "Legacy School of Management and Marketing page has explicit warning that college/department names may be outdated; followed the authoritative restructuring link."},
+    {"url": "https://www.wiu.edu/rebuild", "checkedAt": "2026-10-21", "outcome": "read", "note": "Full university name, July 1 2026 restructure and all three expanded inventories read: business/community college, humanities/sciences college and provost programs. Current business and engineering schools/parents verified."},
+    {"url": "https://www.wiu.edu/cbt/set/ms-et.php", "checkedAt": "2026-10-21", "outcome": "read", "note": "School identity and substantive production/process operations remit; legacy college footer superseded by restructuring notice."}
+  ],
+  "limitations": ["University warns that legacy pages may show obsolete names during its website transition. Current hierarchy follows the July 2026 restructuring inventory; degrees and minors are not presented as departments."],
+  "duplicateOf": null
+}

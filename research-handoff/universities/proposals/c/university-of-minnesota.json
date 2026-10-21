@@ -1,0 +1,102 @@
+{
+  "canonicalName": "University of Minnesota",
+  "decisions": [
+    {
+      "disposition": "not-a-unit",
+      "sourceDepartmentId": "university-of-minnesota",
+      "unitIds": [],
+      "reason": "University-only placeholder."
+    },
+    {
+      "disposition": "duplicate",
+      "sourceDepartmentId": "university-of-minnesota____om-scm",
+      "unitIds": [
+        "university-of-minnesota--supply-chain-operations"
+      ],
+      "reason": "Shorthand for retained combined Supply Chain & Operations department."
+    },
+    {
+      "disposition": "out-of-scope",
+      "sourceDepartmentId": "university-of-minnesota__curtis-l-carlson-school-of-management__information-and-decision-sciences",
+      "unitIds": [],
+      "reason": "Official Information & Decision Sciences page describes MIS and business analytics, separate from Supply Chain & Operations; information-only scope excluded."
+    },
+    {
+      "disposition": "out-of-scope",
+      "sourceDepartmentId": "university-of-minnesota__curtis-l-carlson-school-of-management__information-systems",
+      "unitIds": [],
+      "reason": "Official Information & Decision Sciences page describes MIS and business analytics, separate from Supply Chain & Operations; information-only scope excluded."
+    },
+    {
+      "disposition": "replaced",
+      "sourceDepartmentId": "university-of-minnesota__curtis-l-carlson-school-of-management__supply-chain-and-operations",
+      "unitIds": [
+        "university-of-minnesota--supply-chain-operations"
+      ],
+      "reason": "Use official full combined department label."
+    },
+    {
+      "disposition": "replaced",
+      "sourceDepartmentId": "university-of-minnesota__school-of-science-and-engineering__industrial-and-systems-engineering-isye",
+      "unitIds": [
+        "university-of-minnesota--industrial-systems-engineering"
+      ],
+      "reason": "Current department verified and parent corrected from School to College of Science and Engineering."
+    }
+  ],
+  "limitations": [],
+  "duplicateOf": null,
+  "checkedAt": "2026-10-20",
+  "status": "reviewed",
+  "id": "university-of-minnesota",
+  "sources": [
+    {
+      "url": "https://carlsonschool.umn.edu/departments/supply-chain-operations/faculty",
+      "checkedAt": "2026-10-20",
+      "note": "Full combined department label and parent school.",
+      "outcome": "read"
+    },
+    {
+      "url": "https://cse.umn.edu/isye/faculty",
+      "checkedAt": "2026-10-20",
+      "note": "Legacy ISyE faculty URL redirects here; full department and college names.",
+      "outcome": "read"
+    },
+    {
+      "url": "https://carlsonschool.umn.edu/departments/information-decision-sciences",
+      "checkedAt": "2026-10-20",
+      "note": "Remit explicitly management information systems and business analytics; separate from operations department.",
+      "outcome": "read"
+    }
+  ],
+  "universitySourceUrl": "https://carlsonschool.umn.edu/departments/supply-chain-operations/faculty",
+  "reviewer": "Codex in Chrome",
+  "units": [
+    {
+      "id": "university-of-minnesota--supply-chain-operations",
+      "type": "department",
+      "school": "Carlson School of Management",
+      "sourceUrl": "https://carlsonschool.umn.edu/departments/supply-chain-operations/faculty",
+      "fields": [
+        "operations-management",
+        "supply-chain"
+      ],
+      "evidence": "Official faculty page names department and school, identifies department chair and operations-management and sustainable supply-chain faculty.",
+      "checkedAt": "2026-10-20",
+      "name": "Supply Chain & Operations Department"
+    },
+    {
+      "id": "university-of-minnesota--industrial-systems-engineering",
+      "type": "department",
+      "school": "College of Science and Engineering",
+      "sourceUrl": "https://cse.umn.edu/isye/faculty",
+      "fields": [
+        "industrial-engineering",
+        "operations-research"
+      ],
+      "evidence": "Official faculty page names full department, College of Science and Engineering parent and department head.",
+      "checkedAt": "2026-10-20",
+      "name": "Department of Industrial and Systems Engineering"
+    }
+  ]
+}

@@ -1,0 +1,93 @@
+{
+  "id": "oregon-state-university",
+  "status": "reviewed",
+  "canonicalName": "Oregon State University",
+  "universitySourceUrl": "https://business.oregonstate.edu/",
+  "checkedAt": "2026-10-21",
+  "reviewer": "Codex in Chrome",
+  "units": [
+    {
+      "id": "oregon-state-university--supply-chain-logistics-management",
+      "name": "Supply Chain and Logistics Management",
+      "school": "College of Business",
+      "type": "area",
+      "fields": [
+        "supply-chain",
+        "logistics"
+      ],
+      "sourceUrl": "https://business.oregonstate.edu/faculty/supply-chain-and-logistics-management",
+      "checkedAt": "2026-10-21",
+      "evidence": "Dedicated named faculty page and directory filter establish this faculty area, distinct from Business Analytics and Business Information Systems."
+    },
+    {
+      "id": "oregon-state-university--mechanical-industrial-manufacturing-engineering",
+      "name": "Mechanical, Industrial, and Manufacturing Engineering (MIME)",
+      "school": "College of Engineering",
+      "type": "school",
+      "fields": [
+        "industrial-engineering"
+      ],
+      "sourceUrl": "https://engineering.oregonstate.edu/MIME",
+      "checkedAt": "2026-10-21",
+      "evidence": "Engineering organizational inventory identifies this named unit as a school; school page and footer establish full name and MIME abbreviation."
+    }
+  ],
+  "decisions": [
+    {
+      "sourceDepartmentId": "oregon-state-university____business-analytics",
+      "disposition": "out-of-scope",
+      "unitIds": [],
+      "reason": "Separate analytics/information-systems label is outside the requested scope; dedicated supply-chain faculty area retained instead."
+    },
+    {
+      "sourceDepartmentId": "oregon-state-university____business-is",
+      "disposition": "out-of-scope",
+      "unitIds": [],
+      "reason": "Separate analytics/information-systems label is outside the requested scope; dedicated supply-chain faculty area retained instead."
+    },
+    {
+      "sourceDepartmentId": "oregon-state-university__college-of-business__supply-chain-and-logistics-management",
+      "disposition": "replaced",
+      "unitIds": [
+        "oregon-state-university--supply-chain-logistics-management"
+      ],
+      "reason": "Full named faculty area confirmed; directory category is not promoted to a standalone department."
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://business.oregonstate.edu/",
+      "checkedAt": "2026-10-21",
+      "outcome": "read",
+      "note": "University identity and College of Business."
+    },
+    {
+      "url": "https://business.oregonstate.edu/faculty-and-research/faculty",
+      "checkedAt": "2026-10-21",
+      "outcome": "read",
+      "note": "Expanded full department filter; supply-chain filter lists ten faculty. Business Analytics and Business Information Systems are separate categories."
+    },
+    {
+      "url": "https://business.oregonstate.edu/faculty/supply-chain-and-logistics-management",
+      "checkedAt": "2026-10-21",
+      "outcome": "read",
+      "note": "Full Supply Chain and Logistics Management faculty heading and ten faculty."
+    },
+    {
+      "url": "https://engineering.oregonstate.edu/about/schools-departments",
+      "checkedAt": "2026-10-21",
+      "outcome": "read",
+      "note": "Full six-unit engineering inventory identifies Mechanical, Industrial, and Manufacturing Engineering as a school."
+    },
+    {
+      "url": "https://engineering.oregonstate.edu/MIME",
+      "checkedAt": "2026-10-21",
+      "outcome": "read",
+      "note": "School identity and College of Engineering parent; footer uses MIME acronym."
+    }
+  ],
+  "limitations": [
+    "Business faculty directory uses Department as a broad filter including staff offices; dedicated subject faculty page is conservatively represented as an area rather than an administratively independent department."
+  ],
+  "duplicateOf": null
+}
