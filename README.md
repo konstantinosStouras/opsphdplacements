@@ -115,3 +115,8 @@ Follow up unavailable Alptekinoglu/Sapra/Chandra evidence, the unlinked Aman Gup
 ## Career positions 129–153 — 21 October 2026
 
 Amrita Kundu through Andrea Patrucco: 25 individually checked partial histories, 121 role observations, 35 other mentions and one bounded sector summary. See [the batch report](research-handoff/careers/batches/2026-10-21-129-153-report.md) for sources and unresolved chronology. The combined public stores now contain 155 review records, including four blocked observations; none of these counts denotes complete real-world careers. Today's unique attempts total 50 across the two coordinated batches. Next unassigned is order 154, subject to a fresh ownership check.
+
+
+## Career batch 154–178 and pause — 21 October 2026
+
+Integrated 25 partial histories (103 roles, 20 other mentions, two bounded summaries); retained source ages, unknown dates and the unmerged Andy Lin duplicate candidate. See [the dated handoff](research-handoff/careers/batches/2026-10-21-154-178-report.md). Research is paused at the owner’s request; next candidate179 requires a fresh queue/ownership check. The career automation is paused; daily attempts total75. University publication has separate ownership.

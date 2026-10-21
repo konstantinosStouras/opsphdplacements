@@ -234,3 +234,8 @@ Follow up unavailable Alptekinoglu/Sapra/Chandra evidence, the unlinked Aman Gup
 - [x] Individually check Amrita Kundu through Andrea Patrucco: 25 partial histories, 121 role observations and 35 mentions; only one bounded sector summary.
 - [ ] Resolve Kundu's imported doctorate-year discrepancy, Awaysheh's campus/rank mismatch, Ward/Iyer/Mishra stale Present labels, Nair's conflicting Aalto dates, L'Afflitto's reversed DLR dates and missing university chronology, and incomplete promotion/transition dates throughout the batch.
 - Next unassigned order is 154 after checking current ownership. Preserve all older partial/blocked cases and the global duplicate audit. Today's 50 attempts are not completed careers. See the dated batch report.
+
+
+## Career batch 154–178 and pause — 21 October 2026
+
+Integrated 25 partial histories (103 roles, 20 other mentions, two bounded summaries); retained source ages, unknown dates and the unmerged Andy Lin duplicate candidate. See [the dated handoff](research-handoff/careers/batches/2026-10-21-154-178-report.md). Research is paused at the owner’s request; next candidate179 requires a fresh queue/ownership check. The career automation is paused; daily attempts total75. University publication has separate ownership.

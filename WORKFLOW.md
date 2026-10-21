@@ -178,3 +178,8 @@ The companion `build-2026-10-20-79-103-observations.mjs` transcribes reviewed ev
 ## Career positions 129–153 — 21 October 2026
 
 The dated `build-2026-10-21-129-153-observations.mjs` transcribes opened evidence without fetching or changing public data. Its companion builder writes 25 exact-ID proposals; `--integrate` appends once and refuses identities already in either public history store. It preserves Current, actualidad and to date wording as open-ended source claims, as well as partial dates and source-specific mentions. `finish-2026-10-21-129-153.mjs` merges actual attempts uniquely into the latest daily tracker. Do not use these historical builders to refresh newer records. Regenerate queue/status and ledger, validate, build, audit expanded UI and verify live publication. Shared ownership was transferred after release749b69f and handofff827c6b; university350 follows this batch.
+
+
+## Career positions 154–178 — 21 October 2026
+
+The dated observation/builder/finish scripts follow the prior batch contract: manually read source transcription, exact-ID append-once integration, then deduplicated daily attempts. Do not rerun --integrate to refresh records. Preserve identityFollowUp duplicate candidates and original source date wording. Owner requested pause after publication of collected evidence; daily automation is paused and no next batch is assigned. Read the dated154–178 report and latest university handoff before resuming shared integration.
