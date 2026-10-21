@@ -1,0 +1,75 @@
+{
+  "id": "quincy-university",
+  "status": "reviewed",
+  "canonicalName": "Quincy University",
+  "universitySourceUrl": "https://www.quincy.edu/",
+  "checkedAt": "2026-10-21",
+  "reviewer": "Codex in Chrome",
+  "units": [
+    {
+      "id": "quincy-university--oakley-business",
+      "name": "Oakley School of Business",
+      "school": null,
+      "type": "school",
+      "fields": [
+        "operations-management",
+        "supply-chain"
+      ],
+      "sourceUrl": "https://catalog.quincy.edu/preview_program.php?catoid=8&poid=1045&returnto=376",
+      "checkedAt": "2026-10-21",
+      "evidence": "The current official catalog identifies Oakley School of Business as the parent of Business Analytics, requires Operations Management, and its expanded Modeling Methods description explicitly includes operations and supply-chain business problems. The actual school is retained, not the degree or a course relabeled as a department."
+    }
+  ],
+  "decisions": [
+    {
+      "sourceDepartmentId": "quincy-university__oakley-school-of-business__business-analytics",
+      "disposition": "replaced",
+      "unitIds": [
+        "quincy-university--oakley-business"
+      ],
+      "reason": "The current catalog presents Business Analytics as a degree/major specialization. Retain the verified parent school with its explicit operations/supply-chain teaching remit; no standalone analytics department claimed."
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.quincy.edu/",
+      "checkedAt": "2026-10-21",
+      "outcome": "blocked",
+      "note": "Cloudflare Performing security verification; page says it verifies you are not a bot. No challenge action or bypass performed; user handoff requested."
+    },
+    {
+      "url": "https://www.quincy.edu/",
+      "checkedAt": "2026-10-21",
+      "outcome": "read",
+      "note": "Homepage read normally after original security verification cleared; no bypass."
+    },
+    {
+      "url": "https://www.quincy.edu/academics/degree-programs/",
+      "checkedAt": "2026-10-21",
+      "outcome": "read",
+      "note": "Program search shell; no degree results rendered."
+    },
+    {
+      "url": "https://catalog.quincy.edu/",
+      "checkedAt": "2026-10-21",
+      "outcome": "read",
+      "note": "Current2026-27 official catalog identity."
+    },
+    {
+      "url": "https://catalog.quincy.edu/content.php?catoid=8&navoid=376",
+      "checkedAt": "2026-10-21",
+      "outcome": "read",
+      "note": "Full academic schools/departments and programs directory; engineering includes electrical/mechanical only."
+    },
+    {
+      "url": "https://catalog.quincy.edu/preview_program.php?catoid=8&poid=1045&returnto=376",
+      "checkedAt": "2026-10-21",
+      "outcome": "read",
+      "note": "Business school identity and curriculum; expanded BUA302 Modeling Methods description explicitly covers operations and supply chain."
+    }
+  ],
+  "limitations": [
+    "Business scope is established by the official school curriculum rather than a verified standalone operations department or research group. Current engineering list contains Electrical and Mechanical Engineering; no Industrial Engineering unit verified."
+  ],
+  "duplicateOf": null
+}

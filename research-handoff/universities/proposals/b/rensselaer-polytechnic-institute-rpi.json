@@ -1,0 +1,111 @@
+{
+  "id": "rensselaer-polytechnic-institute-rpi",
+  "status": "reviewed",
+  "canonicalName": "Rensselaer Polytechnic Institute",
+  "universitySourceUrl": "https://lally.rpi.edu/faculty-staff-directory",
+  "checkedAt": "2026-10-21",
+  "reviewer": "Codex in Chrome",
+  "units": [
+    {
+      "id": "rensselaer-polytechnic-institute-rpi--lally-management",
+      "name": "Lally School of Management",
+      "school": null,
+      "type": "school",
+      "fields": [
+        "operations-management",
+        "supply-chain"
+      ],
+      "sourceUrl": "https://lally.rpi.edu/faculty-staff-directory",
+      "checkedAt": "2026-10-21",
+      "evidence": "Official faculty directory identifies multiple Supply Chain and Analytics/Supply Chain Management professors and a Professor of Operations Management. No standalone department matching the imported recruiting label verified; retain the actual school."
+    },
+    {
+      "id": "rensselaer-polytechnic-institute-rpi--industrial-systems-engineering",
+      "name": "Industrial and Systems Engineering Department",
+      "school": "School of Engineering",
+      "type": "department",
+      "fields": [
+        "industrial-engineering",
+        "operations-research",
+        "supply-chain",
+        "logistics"
+      ],
+      "sourceUrl": "https://ise.rpi.edu/people",
+      "checkedAt": "2026-10-21",
+      "evidence": "Official People page explicitly names Industrial and Systems Engineering Department and department head; faculty research includes discrete optimization, logistics and supply-chain decision models."
+    },
+    {
+      "id": "rensselaer-polytechnic-institute-rpi--supply-networks-analytics-center",
+      "name": "Center for Supply Networks and Analytics",
+      "school": "Lally School of Management",
+      "type": "center",
+      "fields": [
+        "operations-management",
+        "supply-chain"
+      ],
+      "sourceUrl": "https://lally.rpi.edu/thought-leadership/research-and-centers/center-supply-networks-and-analytics",
+      "checkedAt": "2026-10-21",
+      "evidence": "Current school navigation links this full-name center, whose page states supply-chain research and education mission, operations/supply-chain strategy, global sourcing and network resilience."
+    }
+  ],
+  "decisions": [
+    {
+      "sourceDepartmentId": "rensselaer-polytechnic-institute__lally-school-of-management__supply-chain-management-and-analytics",
+      "disposition": "replaced",
+      "unitIds": [
+        "rensselaer-polytechnic-institute-rpi--lally-management"
+      ],
+      "reason": "Relevant faculty verified within Lally; imported subject label not verified as standalone department. Independently verified named supply-network center also retained."
+    },
+    {
+      "sourceDepartmentId": "rensselaer-polytechnic-institute__school-of-engineering__industrial-and-systems-engineering",
+      "disposition": "replaced",
+      "unitIds": [
+        "rensselaer-polytechnic-institute-rpi--industrial-systems-engineering"
+      ],
+      "reason": "Official current department full name and remit verified."
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://lallyschool.rpi.edu/faculty",
+      "checkedAt": "2026-10-21",
+      "outcome": "blocked",
+      "note": "Imported faculty URL serves page-not-found; current navigation provided faculty directory."
+    },
+    {
+      "url": "https://lally.rpi.edu/faculty-staff-directory",
+      "checkedAt": "2026-10-21",
+      "outcome": "read",
+      "note": "Current faculty and institutional names."
+    },
+    {
+      "url": "https://lally.rpi.edu/thought-leadership",
+      "checkedAt": "2026-10-21",
+      "outcome": "read",
+      "note": "Current research-center navigation."
+    },
+    {
+      "url": "https://lally.rpi.edu/thought-leadership/research-and-centers/research-areas",
+      "checkedAt": "2026-10-21",
+      "outcome": "read",
+      "note": "Four thematic research areas; no standalone Supply Chain Management and Analytics department listed."
+    },
+    {
+      "url": "https://lally.rpi.edu/thought-leadership/research-and-centers/center-supply-networks-and-analytics",
+      "checkedAt": "2026-10-21",
+      "outcome": "read",
+      "note": "Center identity, mission and operations/supply-chain remit."
+    },
+    {
+      "url": "https://ise.rpi.edu/people",
+      "checkedAt": "2026-10-21",
+      "outcome": "read",
+      "note": "Department identity, hierarchy, faculty and research fields."
+    }
+  ],
+  "limitations": [
+    "Supply-chain center remains linked from current school navigation, but its displayed seminars and some faculty titles are historical; no claim of recent center activity. Imported business subject label not verified as a standalone department."
+  ],
+  "duplicateOf": null
+}

@@ -1,0 +1,123 @@
+{
+  "id": "rollins-college",
+  "status": "reviewed",
+  "canonicalName": "Rollins College",
+  "universitySourceUrl": "https://www.rollins.edu/",
+  "checkedAt": "2026-10-21",
+  "reviewer": "Codex in Chrome",
+  "units": [
+    {
+      "id": "rollins-college--operations-management",
+      "name": "Operations Management",
+      "school": "Crummer Graduate School of Business",
+      "type": "area",
+      "fields": [
+        "operations-management",
+        "supply-chain",
+        "logistics"
+      ],
+      "sourceUrl": "https://crummer.rollins.edu/explore-crummer/faculty/",
+      "checkedAt": "2026-10-21",
+      "evidence": "Current faculty directory explicitly groups faculty under the Operations Management academic area. Yoho is Professor of Operations Management with supply chain and logistics expertise."
+    },
+    {
+      "id": "rollins-college--department-of-business",
+      "name": "Department of Business",
+      "school": null,
+      "type": "department",
+      "fields": [
+        "supply-chain",
+        "operations-management"
+      ],
+      "sourceUrl": "https://www.rollins.edu/business-management/",
+      "checkedAt": "2026-10-21",
+      "evidence": "Official undergraduate page explicitly identifies the Department of Business and its faculty. Its teaching includes Supply Chain Management, covering strategy, planning and operation, with business forum coverage of operations and supply chain management."
+    }
+  ],
+  "decisions": [
+    {
+      "sourceDepartmentId": "rollins-college____supply-chain-management",
+      "disposition": "replaced",
+      "unitIds": [
+        "rollins-college--operations-management",
+        "rollins-college--department-of-business"
+      ],
+      "reason": "Supply Chain Management is not verified as a separate department; relevant work is covered by the verified Crummer Operations Management area and undergraduate Department of Business."
+    },
+    {
+      "sourceDepartmentId": "rollins-college__crummer-graduate-school-of-business__business-analytics",
+      "disposition": "out-of-scope",
+      "unitIds": [],
+      "reason": "Standalone Business Analytics is not retained as an operations department; the current school advertises an analytics certificate, while the verified operations faculty grouping has a separate full name."
+    },
+    {
+      "sourceDepartmentId": "rollins-college__crummer-graduate-school-of-business__operations-and-supply-chain-management",
+      "disposition": "replaced",
+      "unitIds": [
+        "rollins-college--operations-management"
+      ],
+      "reason": "Normalize to the current official academic-area name Operations Management; supply chain is supported remit, not an invented extension to the unit name."
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.rollins.edu/",
+      "checkedAt": "2026-10-21",
+      "outcome": "read",
+      "note": "Official Rollins College identity and Crummer relationship read."
+    },
+    {
+      "url": "https://crummer.rollins.edu/",
+      "checkedAt": "2026-10-21",
+      "outcome": "read",
+      "note": "Official Crummer Graduate School of Business identity read."
+    },
+    {
+      "url": "https://crummer.rollins.edu/explore-crummer/faculty/",
+      "checkedAt": "2026-10-21",
+      "outcome": "read",
+      "note": "Academic Area filter explicitly lists Operations Management; selected results include Yoho, Rappold, Lomas and emeritus Correa. Quantitative Business Analysis selection returned no faculty."
+    },
+    {
+      "url": "https://crummer.rollins.edu/explore-crummer/faculty/keenan-d-yoho-ph-d/",
+      "checkedAt": "2026-10-21",
+      "outcome": "read",
+      "note": "Operations Management professor lists supply chain management, logistics strategy and global operations expertise."
+    },
+    {
+      "url": "https://www.rollins.edu/college-of-liberal-arts/",
+      "checkedAt": "2026-10-21",
+      "outcome": "read",
+      "note": "Undergraduate branch checked."
+    },
+    {
+      "url": "https://www.rollins.edu/academics/",
+      "checkedAt": "2026-10-21",
+      "outcome": "read",
+      "note": "Academic overview checked."
+    },
+    {
+      "url": "https://www.rollins.edu/academics/majors-minors/",
+      "checkedAt": "2026-10-21",
+      "outcome": "read",
+      "note": "Full program list checked including engineering, mathematics and business."
+    },
+    {
+      "url": "https://www.rollins.edu/engineering-studies/",
+      "checkedAt": "2026-10-21",
+      "outcome": "read",
+      "note": "Engineering Studies is a cooperative dual-degree program with Case Western Reserve and Washington University; no Rollins industrial engineering department verified."
+    },
+    {
+      "url": "https://www.rollins.edu/business-management/",
+      "checkedAt": "2026-10-21",
+      "outcome": "read",
+      "note": "Department of Business explicitly named with faculty; its teaching includes Supply Chain Management and business forum coverage of operations and supply chain management."
+    }
+  ],
+  "limitations": [
+    "Department of Business is a broad undergraduate department included on explicit supply chain teaching and operations forum evidence; no separate undergraduate operations department is asserted.",
+    "Crummer Operations Management is an academic area, not a formally named department."
+  ],
+  "duplicateOf": null
+}

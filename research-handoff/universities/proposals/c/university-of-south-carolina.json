@@ -1,0 +1,116 @@
+{
+  "id": "university-of-south-carolina",
+  "status": "reviewed",
+  "canonicalName": "University of South Carolina",
+  "duplicateOf": null,
+  "universitySourceUrl": "https://sc.edu/study/colleges_schools/moore/study/management_science/index.php",
+  "checkedAt": "2026-10-21",
+  "reviewer": "Codex in Chrome",
+  "units": [
+    {
+      "id": "university-of-south-carolina--management-science",
+      "name": "Management Science Department",
+      "type": "department",
+      "school": "Darla Moore School of Business",
+      "sourceUrl": "https://sc.edu/study/colleges_schools/moore/study/management_science/index.php",
+      "fields": [
+        "operations-management",
+        "supply-chain"
+      ],
+      "evidence": "Official page explicitly calls unit Management Science Department and says it houses operations/supply-chain and business analytics programs and PhD in operations management.",
+      "checkedAt": "2026-10-21"
+    },
+    {
+      "id": "university-of-south-carolina--operations-supply-chain-center",
+      "name": "Operations and Supply Chain Center",
+      "type": "center",
+      "school": "Darla Moore School of Business",
+      "sourceUrl": "https://sc.edu/study/colleges_schools/moore/study/management_science/index.php",
+      "fields": [
+        "operations-management",
+        "supply-chain"
+      ],
+      "evidence": "Department page explicitly names center and describes industry-facing Lean Six Sigma and experiential supply-chain education.",
+      "checkedAt": "2026-10-21"
+    },
+    {
+      "id": "university-of-south-carolina--engineering-computing",
+      "name": "Molinaroli College of Engineering and Computing",
+      "type": "school",
+      "school": null,
+      "sourceUrl": "https://www.sc.edu/study/colleges_schools/engineering_and_computing/departments/interprofessional_programs/index.php",
+      "fields": [
+        "industrial-engineering"
+      ],
+      "evidence": "Official interprofessional programs page names college and its Industrial Engineering BS, emphasizing system optimization, manufacturing, healthcare and transportation. Department inventory does not list a separate IE department.",
+      "checkedAt": "2026-10-21"
+    }
+  ],
+  "decisions": [
+    {
+      "sourceDepartmentId": "university-of-south-carolina",
+      "disposition": "not-a-unit",
+      "unitIds": [],
+      "reason": "University-only placeholder is not a department."
+    },
+    {
+      "sourceDepartmentId": "university-of-south-carolina____it",
+      "disposition": "out-of-scope",
+      "unitIds": [],
+      "reason": "Standalone IT label is outside operations scope; no operations component established for that label."
+    },
+    {
+      "sourceDepartmentId": "university-of-south-carolina__darla-moore-school-of-business__management-science",
+      "disposition": "replaced",
+      "unitIds": [
+        "university-of-south-carolina--management-science"
+      ],
+      "reason": "Full official Management Science Department consolidates operations hiring shorthand; healthcare focus is not a separate unit."
+    },
+    {
+      "sourceDepartmentId": "university-of-south-carolina__darla-moore-school-of-business__om-scm",
+      "disposition": "replaced",
+      "unitIds": [
+        "university-of-south-carolina--management-science"
+      ],
+      "reason": "Full official Management Science Department consolidates operations hiring shorthand; healthcare focus is not a separate unit."
+    },
+    {
+      "sourceDepartmentId": "university-of-south-carolina__darla-moore-school-of-business__osc-empirical-healthcare-focus",
+      "disposition": "replaced",
+      "unitIds": [
+        "university-of-south-carolina--management-science"
+      ],
+      "reason": "Full official Management Science Department consolidates operations hiring shorthand; healthcare focus is not a separate unit."
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://sc.edu/study/colleges_schools/moore/study/management_science/index.php",
+      "checkedAt": "2026-10-21",
+      "outcome": "read",
+      "note": "Official page explicitly calls unit Management Science Department and says it houses operations/supply-chain and business analytics programs and PhD in operations management. Department page explicitly names center and describes industry-facing Lean Six Sigma and experiential supply-chain education."
+    },
+    {
+      "url": "https://sc.edu/study/colleges_schools/moore/study/management_science/our_people/index.php",
+      "checkedAt": "2026-10-21",
+      "outcome": "read",
+      "note": "Current faculty and department chair read; operations and supply-chain center leadership listed."
+    },
+    {
+      "url": "https://www.sc.edu/study/colleges_schools/engineering_and_computing/departments/index.php",
+      "checkedAt": "2026-10-21",
+      "outcome": "read",
+      "note": "Full engineering department inventory read, including Integrated Information Technology and Interprofessional Programs; no IE department listed."
+    },
+    {
+      "url": "https://www.sc.edu/study/colleges_schools/engineering_and_computing/departments/interprofessional_programs/index.php",
+      "checkedAt": "2026-10-21",
+      "outcome": "read",
+      "note": "Official interprofessional programs page names college and its Industrial Engineering BS, emphasizing system optimization, manufacturing, healthcare and transportation. Department inventory does not list a separate IE department."
+    }
+  ],
+  "limitations": [
+    "Industrial Engineering is an interprofessional degree program, not a separately named department in the official department inventory; retained its explicitly named college home using school type. No separate department invented."
+  ]
+}
