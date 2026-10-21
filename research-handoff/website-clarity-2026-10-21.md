@@ -27,4 +27,8 @@ README.md; RESEARCH-DESIGN.md; TODO.md; WORKFLOW.md; index.html; assets/app.js; 
 
 ## Publication
 
-Pending deployment and live checks.
+Published interface release `8a8f55289d4b742d3ed4c2c39222635501e586ae`; Pages run 39571523528 succeeded. Final search-state fix `1c67ac2db047f9d313b614177ab9ff09f7734a2d` also published; Pages run 39571808836 succeeded. Both main and the research branch contain the changes.
+
+Live browser verification confirmed the updated subtitle/name/counts, default Auto-play selected, all three controls, 1,291 observed organisation rows, INSEAD’s 19 first hires and clearing a selected profile on a no-match search. The final live mobile chart is 335px wide with 335px scroll width, so the year selector no longer overflows. The live 2020 screenshot is saved locally at `research/website-clarity/live-cohort-2020.png` (ignored, not a source document). Temporary viewport overrides were reset and the successful preview tab was closed. The live chart’s 87 verified /107 sample /20 unresolved denominator was rechecked. No data files changed.
+
+Next concrete work: owner review of the clearer layout and any further requested interface improvements. Research collection remains paused; identity reconciliation and incomplete graduate/program/career coverage are unchanged.
