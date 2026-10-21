@@ -52,3 +52,9 @@ Alan Scheller-Wolf through Alexander Shapiro: 25 partial histories and 143 role 
 ## Positions 30–53 reviewed for publication — 20 October 2026
 
 The owner subsequently explicitly authorized review and publication of the24 saved continuation histories. The reviewed output has126 role entries and70 other mentions after moving five ambiguous/overlapping entries out of job counts, without dropping their evidence. All24 remain partial. See `batches/2026-10-20-30-53-publication.md` and `batches/2026-10-20-30-53-reviewed.json`. This supersedes research-only statements for these24 records only; Jain remains unpublished and future unattended publication is not authorized. No new daily unique attempts are added by publication/review.
+
+## Positions 79–103 — 20 October 2026
+
+The owner authorized the next unassigned batch beginning Alexander Stolyar. Coordination confirmed these 25 positions free through Allyson Joy Heumann. The batch adds 124 role observations and 27 mentions, all 25 histories partial, with four bounded summaries. See `batches/2026-10-20-79-103-report.md` for sources, limitations and publication checks. Public stores now contain 105 histories; daily unique source-check attempts total 107, not complete careers. No new LinkedIn profile was accessed. Next unassigned is 104, Alok Baveja, after checking live assignments. Earlier partial cases and the unpublished Jain proposal still require follow-up.
+
+Publication of positions79–103 was explicitly requested on21 October2026; their evidence-check dates remain20 October2026. All25 remain partial.

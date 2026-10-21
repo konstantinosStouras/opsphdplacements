@@ -101,3 +101,7 @@ The website does not link to the project GitHub repository, technical guides or 
 Confirmed non-university imports can be excluded from the university presentation with reviewed source evidence; their original records and employer histories remain intact.
 
 The reviewed alphabetical positions 30–53 add 24 explicitly partial career histories (126 role entries and 70 other mentions), retaining unknown dates, source-age and identity limitations. Expanded histories show their own record publication/update timestamps alongside source links and check dates. This does not change first-placement or doctorate evidence.
+
+The subsequent [positions 79–103 career batch](research-handoff/careers/batches/2026-10-20-79-103-report.md), Alexander Stolyar through Allyson Joy Heumann, adds 25 partial histories, 124 role observations and four bounded duration summaries. The public stores now contain 105 history records; missing dates and conflicting titles remain explicit. Next unassigned alphabetical position is 104, Alok Baveja, subject to active assignments. These current figures supersede earlier career-pass checkpoints above.
+
+Publication of positions79–103 was explicitly requested on21 October2026; their evidence-check dates remain20 October2026. All25 remain partial.
