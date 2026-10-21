@@ -1,3 +1,4 @@
+import {distinctNames} from './organisation-model.js';
 import {searchablePicker as pickList} from './picker.js';
 // Coverage grid, trends and profiles built from the public datasets. See analytics.js for the
 // numbers and charts.js for the drawing. Nothing here infers a job: every chart counts verified
@@ -237,7 +238,7 @@ async function entityPanel(body, name, context, actions) {
     for (const p of e.programs) { const li = html('li'); li.append(html('span', undefined, [p.programName, p.school, p.degree, p.field].filter(Boolean).join(' · '))); li.append(html('small', undefined, `${p.status}${p.statusAsOf ? ', as of ' + p.statusAsOf : ''}`)); list.append(li); }
     body.append(list);
   }
-  const others = e.aliases.filter(a => a !== e.name);
+  const others = distinctNames(e.aliases,e.name);
   if (others.length) body.append(html('p', 'entity-sub', `Also written as: ${others.join('; ')}.`));
   const foot = html('p', 'source-stamp');
   foot.append(`Record ${e.id} in the organisation database`, counts ? ` (${fmt(counts.entities)} organisations, ${fmt(counts.inBothDatabases)} in both databases). ` : '. ', 'One organisation, with its source names retained. Missing facts remain unknown.');

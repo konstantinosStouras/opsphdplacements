@@ -193,3 +193,5 @@ Before release test: exact/partial/no-match profile typing and Enter/selection; 
 The hero animation uses the same corrected cohort/first-job index as the analytic views. Test automatic year advancement, pause, year/slider/previous/next controls, no-outcome cohorts, hidden-tab/viewport suspension, reduced-motion styling and the cohort-to-explorer link. Its model test checks unknown-category inclusion, unresolved exclusion from shares and empty-year handling.
 
 Playback controls are separate Play (one pass), Pause and Auto-play (loop) buttons below the year slider; Auto-play is the default except when reduced motion is requested. Manual year/slider/previous/next changes pause playback.
+
+The pure `assets/organisation-model.js` builds the joined organisation rows used by the website and full-list audit. Its regression test checks duplicate display labels, entity uniqueness, preserved doctorate/first-job totals and distinct CUHK/Shenzhen campuses. Run it against all public inputs after identity-display changes; retain source/check dates. People-table alignment overrides include nested details and do not change other tables.

@@ -1,3 +1,5 @@
+import fs from 'node:fs';
+import {organisationRows,distinctNames} from '../assets/organisation-model.js';
 import {test} from 'node:test';import assert from 'node:assert/strict';import {normalize,filterRecords,groupCounts,csv,validateDataset,isSourceUrl} from '../assets/model.js';
 import {cohortStats} from '../assets/cohort-stats.js';
 test('cohort distributions retain unknown job types and exclude unresolved outcomes from shares',()=>{
@@ -23,3 +25,27 @@ test('CSV handles quotes, newlines and spreadsheet formulas',()=>{const out=csv(
 test('reject duplicate IDs and unsafe links',()=>{const r={id:'1',name:'Test',sourceUrl:'https://example.com',retrievedAt:'2026-10-16',phdYear:null};assert.throws(()=>validateDataset({records:[r,r]}));assert.throws(()=>validateDataset({records:[{...r,sourceProfileUrl:'javascript:alert(1)'}]}));assert.doesNotThrow(()=>validateDataset({records:[r]}));});
 test('public CV sources may use HTTP or HTTPS but never executable URLs or credentials',()=>{for(const url of ['https://example.edu/cv.pdf','http://example.edu/cv.pdf'])assert.equal(isSourceUrl(url),true);for(const url of ['javascript:alert(1)','data:text/html,test','https://','https://name:password@example.edu/cv.pdf',null])assert.equal(isSourceUrl(url),false);});
 test('name filters ignore accents, punctuation and case so every spelling of one organisation matches',()=>{const r=[normalize({id:'k1',name:'K One',phdInstitution:'Koç University',currentInstitution:'University of California, Berkeley',phdYear:2010,facultyStatus:'active'}),normalize({id:'k2',name:'K Two',phdInstitution:'Koc University',currentInstitution:'University of California Berkeley',phdYear:2011,facultyStatus:'active'})];assert.equal(filterRecords(r,{phd:'Koc University'}).length,2);assert.equal(filterRecords(r,{institution:'University of California, Berkeley'}).length,2);assert.equal(filterRecords(r,{cols:{phd:'koç'}}).length,2);assert.equal(filterRecords(r,{query:'berkeley california'}).length,2);});
+
+test('organisation labels omit formatting-only aliases and the displayed primary name',()=>{
+ assert.deepEqual(distinctNames(["A’Sharqiyah University","A'Sharqiyah University","A’Sharqiyah University"],"A’Sharqiyah University"),[]);
+ assert.deepEqual(distinctNames(['MIT','mit','Massachusetts Institute of Technology'],'Massachusetts Institute of Technology'),['MIT']);
+});
+test('the complete organisation view has no repeated labels and preserves source entities and counts',()=>{
+ const names=['entities','universities','university-reviews','doctoral-programs','faculty','faculty-roster-people','employment-histories','linkedin-histories'];
+ const inputs=names.map(n=>JSON.parse(fs.readFileSync(new URL('../data/'+n+'.json',import.meta.url),'utf8')));
+ const rows=organisationRows(...inputs),entities=rows.flatMap(r=>r.entities),keys=rows.map(r=>r.name.toLocaleLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/[^\p{L}\p{N}]+/gu,' ').trim());
+ assert.equal(new Set(keys).size,keys.length);assert.equal(new Set(entities.map(e=>e.id)).size,entities.length);
+ for(const e of inputs[0].records)if(e.people||e.employer||e.programs.length)assert.ok(entities.some(x=>x.id===e.id),'Missing '+e.id);
+ assert.equal(rows.flatMap(r=>r.phd).reduce((n,p)=>n+p.people,0),inputs[0].records.reduce((n,e)=>n+(e.people?.institutions||[]).reduce((s,p)=>s+p.people,0),0));
+ assert.equal(rows.flatMap(r=>r.employers).reduce((n,p)=>n+p.verifiedFirstJobs,0),inputs[0].records.reduce((n,e)=>n+(e.employer?.employers||[]).reduce((s,p)=>s+p.verifiedFirstJobs,0),0));
+ const cuhk=rows.find(r=>r.name==='The Chinese University of Hong Kong'),shenzhen=rows.find(r=>r.name==='The Chinese University of Hong Kong, Shenzhen');assert.ok(cuhk&&shenzhen);assert.notEqual(cuhk.id,shenzhen.id);
+ for(const r of rows){const aliases=distinctNames(r.names,r.name);assert.equal(aliases.length,new Set(aliases.map(n=>n.toLocaleLowerCase())).size);}
+});
+
+test('an official name review does not merge a namesake in a conflicting country',()=>{
+ const entity=(id,country)=>({id,name:'Same University',aliases:['Same University'],country,programs:[]});
+ const source={id:'source-a',name:'Same University',country:'Country A',departments:[]};
+ const review={id:'source-a',canonicalName:'Same University',universitySourceUrl:'https://example.edu/',checkedAt:'2026-10-21',status:'reviewed',units:[],limitations:[],decisions:[]};
+ const rows=organisationRows({records:[entity('a','Country A'),entity('b','Country B')]},{records:[source]},{records:[review]},...Array.from({length:5},()=>({records:[]})));
+ assert.equal(rows.length,2);assert.ok(rows.find(r=>r.entities.some(e=>e.id==='a')).reviews.length);assert.equal(rows.find(r=>r.entities.some(e=>e.id==='b')).reviews.length,0);
+});

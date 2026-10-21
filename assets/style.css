@@ -111,3 +111,6 @@ main p, main li, main td, .tile span, .tile small,
 
 .cohort-timeline{display:flex;align-items:center;gap:12px;font-size:12px;color:var(--muted);margin:18px 0 8px;font-variant-numeric:tabular-nums}.cohort-timeline input{flex:1;min-width:0;padding:0}.cohort-playback button.active{background:var(--accent);color:white;border-color:var(--accent)}.cohort-story>label{display:block;font-size:13px;margin:10px 0}.cohort-story>label select{margin-left:8px;padding:5px 12px}.cohort-playback{justify-content:center}
 .cohort-story>label{display:flex;align-items:center;gap:8px}.cohort-story>label select{width:auto;max-width:100%;margin-left:0}
+
+/* People records use natural word spacing, including expanded evidence. */
+#explorer > .table-wrap :is(th,td),#explorer > .table-wrap :is(th,td) *{text-align:left;text-align-last:auto;text-justify:auto}

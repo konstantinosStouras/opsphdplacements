@@ -126,3 +126,7 @@ Integrated 25 partial histories (103 roles, 20 other mentions, two bounded summa
 The public interface has two main directories: People joins profile, reviewed first-job and career-history evidence by stable person ID; Organisations joins the entity register, official university/unit reviews, doctoral programs, source affiliations and observed career employers. Graduate source sightings remain a clearly labeled supporting list until identities and degrees are reconciled. Source-specific research files remain separate internally to preserve provenance. Profiles answer distinct doctoral-outcome, first-hire and directory-affiliation questions; trends contain four outcome views, while coverage holds the map and cohort review grid. The subtitle and abstract counts are refreshed during the static build.
 
 Below the search bar, an animated summary table shows first-job categories one PhD cohort at a time. It starts automatically when visible, offers pause/year/previous/next/slider controls, uses a fixed percentage scale and reports unresolved coverage separately. Reduced-motion visitors start paused.
+
+People-table cells and expanded details use left alignment with natural word spacing, overriding the shared prose justification.
+
+Organisation names are deduplicated for display across all rows and source-name disclosures. Formatting variants remain searchable; existing official identity reviews connect the directory, employer and doctoral records without changing the imported research files.

@@ -1,3 +1,4 @@
+import {distinctNames} from './organisation-model.js';
 // Interactive world map of PhD-granting institutions. Hand-built SVG, no map library.
 // Land shapes: world-atlas countries-110m (Natural Earth, ISC licence; see assets/vendor/world/LICENSE.txt).
 // Projection: Equal Earth (Savric, Patterson & Jenny 2018). Locations: data/institution-locations.json.
@@ -357,7 +358,7 @@ export async function renderMap(target, state, { onSelect, openProfile, isCurren
       card.append(html('p', 'map-card-name', n.name));
       const meta = [n.country, Number.isFinite(n.first) ? (n.first === n.last ? `class of ${n.first}` : `classes of ${n.first}–${n.last}`) : null].filter(Boolean).join(' · ');
       if (meta) card.append(html('p', 'map-card-meta', meta));
-      if (n.names.length > 1) card.append(html('p', 'map-card-meta', `Counts include the spellings ${n.names.filter(x => x !== n.name).join('; ')}`));
+      const otherNames=distinctNames(n.names,n.name);if (otherNames.length) card.append(html('p', 'map-card-meta', `Counts include the names ${otherNames.join('; ')}`));
       const dl = html('dl');
       for (const [k, v] of [['People in the dataset', fmt(n.people)], ['Verified first jobs', `${fmt(n.verified)} (${pct(n.verified, n.people)})`], ['Tenure track, of verified', n.verified ? pct(n.tt, n.verified) : '—'], ['Researched, unresolved', fmt(n.unresolved)], ['Not yet reviewed', fmt(n.people - n.verified - n.unresolved)]]) { const row = html('div'); row.append(html('dt', undefined, k), html('dd', undefined, v)); dl.append(row); }
       card.append(dl);

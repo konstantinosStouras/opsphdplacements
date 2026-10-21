@@ -247,3 +247,7 @@ Integrated 25 partial histories (103 roles, 20 other mentions, two bounded summa
 - [ ] Finish underlying graduate/person duplicate reconciliation and organisation identity/location reviews. Consolidated display does not establish complete identity resolution, current affiliations, historical program coverage or complete careers.
 
 - [x] Add an autoplaying first-job distribution below the hero search, with year navigation, explicit verified denominators, missingness, fixed bar scale and reduced-motion handling.
+
+- [x] Left-align the People table, including names, institutions, summaries and expanded evidence, instead of justified spacing (21 October 2026).
+
+- [x] Audit every organisation row for repeated display names and aliases. Remove punctuation/case/accent-only repetitions, connect already reviewed official identities across entity views, and preserve separate campuses and all original evidence (21 October 2026). Broader unresolved identity reconciliation remains research work.

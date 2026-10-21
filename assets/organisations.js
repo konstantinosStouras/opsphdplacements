@@ -1,6 +1,6 @@
 import {loadJson} from './analytics.js';
 import {fold,displayText} from './model.js';
-import {universityRows} from './university-model.js';
+import {organisationRows,distinctNames} from './organisation-model.js';
 import {renderUniversityUnits} from './university-view.js';
 
 const node=(tag,text)=>{const n=document.createElement(tag);if(text!=null)n.textContent=displayText(text);return n;};
@@ -10,33 +10,7 @@ export async function renderOrganisations(section,actions){
  const count=section.querySelector('#organisation-count');
  try{
   const [entities,universities,reviews,programs,faculty,roster,histories,linkedin]=await Promise.all(['entities','universities','university-reviews','doctoral-programs','faculty','faculty-roster-people','employment-histories','linkedin-histories'].map(n=>loadJson('data/'+n+'.json')));
-  const units=universityRows(universities.records,reviews.records);
-  // Reviewed aliases may join imported entity records; never merge by name similarity.
-  const sourceToReview=new Map();for(const r of units)for(const o of r.originals)sourceToReview.set(o.id,r);
-  const reviewedEntity=new Map();
-  for(const e of entities.records)for(const u of e.directory?.universities||[]){const r=sourceToReview.get(u.id);if(r&&!reviewedEntity.has(r.id))reviewedEntity.set(r.id,e.id);}
-  const grouped=new Map();
-  for(const e of entities.records){
-   const rs=[...new Set((e.directory?.universities||[]).map(u=>sourceToReview.get(u.id)).filter(Boolean))];
-   if(e.directory&&!rs.length&&!e.people&&!e.employer&&!e.programs.length)continue;
-   const key=rs.length===1?reviewedEntity.get(rs[0].id):e.id;
-   const g=grouped.get(key)||{id:key,name:rs[0]?.name||e.name,entities:[],reviews:[],programs:[]};
-   g.entities.push(e);for(const r of rs)if(!g.reviews.includes(r))g.reviews.push(r);grouped.set(key,g);
-  }
-  const names=new Map();for(const g of grouped.values())for(const e of g.entities)for(const n of e.aliases)if(!names.has(fold(n)))names.set(fold(n),g);
-  const observed=(name)=>{if(!name)return null;let g=names.get(fold(name));if(!g){g={id:'observed:'+fold(name),name,entities:[],reviews:[],programs:[]};grouped.set(g.id,g);names.set(fold(name),g);}return g;};
-  for(const p of [...faculty.records,...roster.records]){const g=observed(p.currentInstitution||p.institution);if(g){g.affiliations||=new Set();g.affiliations.add(p.id);}}
-  for(const h of [...histories.records,...linkedin.records])for(const j of h.jobs){const g=observed(j.employerAsWritten);if(g){g.careers||=new Set();g.careers.add(h.id);}}
-  const rows=[...grouped.values()];
-  for(const r of rows){
-   r.names=[...new Set([r.name,...r.entities.flatMap(e=>e.aliases)])];
-   r.countries=[...new Set(r.entities.map(e=>e.country).filter(Boolean))];
-   r.programs=programs.records.filter(p=>r.names.some(n=>fold(n)===fold(p.university)));
-   r.phd=r.entities.flatMap(e=>e.people?.institutions||[]);
-   r.employers=r.entities.flatMap(e=>e.employer?.employers||[]);
-   r.search=fold([r.name,...r.names,...r.countries,...r.reviews.map(u=>u.searchText),...r.programs.map(p=>p.programName)].join(' '));
-  }
-  rows.sort((a,b)=>a.name.localeCompare(b.name,'en',{sensitivity:'base'}));
+  const rows=organisationRows(entities,universities,reviews,programs,faculty,roster,histories,linkedin);
   const controls=section.querySelector('#organisation-controls'),body=section.querySelector('#organisation-records'),more=section.querySelector('#organisation-more');
   const label=node('label','Search organisations');label.className='search-label';const q=node('input');q.type='search';q.placeholder='Name, alias, country or department';q.setAttribute('aria-label','Search organisations');label.append(q);
   const roleLabel=node('label','Connection');const role=node('select');role.setAttribute('aria-label','Organisation connection');
@@ -51,11 +25,11 @@ export async function renderOrganisations(section,actions){
    for(const r of selected.slice(shown,shown+40)){
     const tr=node('tr'),identity=node('td'),people=node('td'),evidence=node('td');
     identity.append(node('strong',r.name),node('small',r.countries.join(' · ')||'Country not established'));
-    if(r.names.some(n=>n!==r.name)){const d=node('details');d.append(node('summary','Names in sources'),node('p',r.names.join('; ')));identity.append(d);}
+    const aliases=distinctNames(r.names,r.name);if(aliases.length){const d=node('details');d.append(node('summary','Other names in sources'),node('p',aliases.join('; ')));identity.append(d);}
     if(r.phd.length){people.append(node('p',r.phd.reduce((s,p)=>s+p.people,0).toLocaleString('en-GB')+' people earned doctorates here'));for(const p of r.phd)people.append(button('Doctoral outcomes: '+p.name,()=>actions.openInstitution(p.name)));}
     if(r.employers.length){people.append(node('p',r.employers.reduce((s,p)=>s+p.verifiedFirstJobs,0).toLocaleString('en-GB')+' verified first jobs started here'));for(const e of r.employers)people.append(button('First hires: '+e.name,()=>actions.openEmployer(e.name)));}
     // Directory affiliations remain observations, never promoted into current jobs.
-    for(const name of r.names.filter(n=>actions.hasAffiliation(n)))people.append(button('People listed at '+name,()=>actions.openAffiliation(name)));
+    for(const name of distinctNames(r.names).filter(n=>actions.hasAffiliation(n)))people.append(button('People listed at '+name,()=>actions.openAffiliation(name)));
     if(r.careers?.size)people.append(button(r.careers.size+' people with observed roles here',()=>actions.openCareers(r.name)));if(!people.childNodes.length)people.textContent='No matched people or first hires yet';
     const detail=node('details');detail.append(node('summary','Organisation evidence and departments'));
     for(const u of r.reviews){renderUniversityUnits(detail,u);for(const review of u.reviews)for(const s of review.sources){const a=node('a','Official evidence ↗');a.href=s.url;a.target='_blank';a.rel='noopener noreferrer';detail.append(a,node('small',(s.outcome==='read'?'Checked ':'Attempted ')+s.checkedAt),node('p',s.note));}}
