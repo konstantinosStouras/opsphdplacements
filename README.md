@@ -134,3 +134,9 @@ Organisation names are deduplicated for display across all rows and source-name 
 ## Current research order — 21 October 2026
 
 The owner now prioritizes (1) a source-reconciled, officially verified university and operations-unit list from OM List schools and Operations Academia universities/job postings; (2) verification of doctorate facts, first jobs and full careers for the 2,149 OM List faculty using their linked sources; (3) only then the historical PhD-graduate census and archive/LinkedIn work. See [the priority contract, source audit and queues](research-handoff/priorities/README.md). Manual source reconciliation has resumed; the earlier research automation remains paused.
+
+## Stage 1 doctoral register — 21 October 2026
+
+Stage 1 now targets universities with officially verified relevant PhD programmes, including distinct business and engineering programmes under one university. The broader university/job directories are discovery sources. Unit-review progress is not doctoral-provider completion; Stage 2 remains held. See research-handoff/universities/DOCTORAL-CONTRACT.md for the programme evidence gate.
+
+Institutional research now starts with the PhD institutions reported for OM List faculty, ranked by their faculty representation, before expansion to other discovery sources. The reported degree institution is a lead; current relevant doctoral provision still requires official verification. See the generated doctoral priority queue in the priorities handoff.

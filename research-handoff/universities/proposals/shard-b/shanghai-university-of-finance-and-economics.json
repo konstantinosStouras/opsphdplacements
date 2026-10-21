@@ -1,0 +1,101 @@
+{
+  "id": "shanghai-university-of-finance-and-economics",
+  "status": "reviewed",
+  "canonicalName": "Shanghai University of Finance and Economics",
+  "universitySourceUrl": "https://english.sufe.edu.cn/",
+  "checkedAt": "2026-10-21",
+  "reviewer": "Codex in Chrome",
+  "units": [
+    {
+      "id": "shanghai-university-of-finance-and-economics--operations-management",
+      "name": "Operations Management",
+      "school": "College of Business",
+      "type": "area",
+      "fields": [
+        "operations-management",
+        "operations-research",
+        "supply-chain"
+      ],
+      "sourceUrl": "https://cob.sufe.edu.cn/en",
+      "checkedAt": "2026-10-21",
+      "evidence": "College of Business official homepage lists Operations Management among its faculty subject groupings. Official faculty context explicitly describes sustainable operations, operations research and operations/supply-chain teaching. Grouping retained as area because formal department title not established."
+    },
+    {
+      "id": "shanghai-university-of-finance-and-economics--information-management-engineering",
+      "name": "School of Information Management and Engineering",
+      "school": null,
+      "type": "school",
+      "fields": [
+        "operations-research",
+        "supply-chain"
+      ],
+      "sourceUrl": "https://english.sufe.edu.cn/13662/list.htm",
+      "checkedAt": "2026-10-21",
+      "evidence": "University English inventory gives full school name. School Chinese introduction explicitly describes operations-research optimization, digital supply-chain management and warehouse-scheduling research. School retained as school; source concatenation is not made into one department."
+    }
+  ],
+  "decisions": [
+    {
+      "sourceDepartmentId": "shanghai-university-of-finance-and-economics",
+      "disposition": "not-a-unit",
+      "unitIds": [],
+      "reason": "University-only seed contains no department assertion."
+    },
+    {
+      "sourceDepartmentId": "shanghai-university-of-finance-and-economics__college-of-business",
+      "disposition": "replaced",
+      "unitIds": [
+        "shanghai-university-of-finance-and-economics--operations-management"
+      ],
+      "reason": "College identity verified and its relevant Operations Management faculty area recorded at actual type, avoiding overlapping generic school and area entries."
+    },
+    {
+      "sourceDepartmentId": "shanghai-university-of-finance-and-economics__college-of-business__operations-management",
+      "disposition": "replaced",
+      "unitIds": [
+        "shanghai-university-of-finance-and-economics--operations-management"
+      ],
+      "reason": "Official Operations Management faculty grouping verified as area, not assumed standalone department."
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://cob.sufe.edu.cn/en",
+      "checkedAt": "2026-10-21",
+      "outcome": "read",
+      "note": "College of Business names Shanghai University of Finance and Economics (SUFE), includes Operations Management faculty grouping and lists former business-school names in alumni history."
+    },
+    {
+      "url": "https://cob.sufe.edu.cn/en/Faculty/Resume/121",
+      "checkedAt": "2026-10-21",
+      "outcome": "read",
+      "note": "Business-school faculty context explicitly describes sustainable operations, operations research, and operations/supply-chain teaching. Career facts not extracted."
+    },
+    {
+      "url": "https://english.sufe.edu.cn/",
+      "checkedAt": "2026-10-21",
+      "outcome": "read",
+      "note": "Official university full name and SUFE acronym."
+    },
+    {
+      "url": "https://english.sufe.edu.cn/13662/list.htm",
+      "checkedAt": "2026-10-21",
+      "outcome": "read",
+      "note": "Official English schools inventory names College of Business and School of Information Management and Engineering."
+    },
+    {
+      "url": "https://sime.sufe.edu.cn/",
+      "checkedAt": "2026-10-21",
+      "outcome": "read",
+      "note": "Current information-management and engineering school homepage (official shufe host redirects to sufe)."
+    },
+    {
+      "url": "https://sime.sufe.edu.cn/xxjj/list.htm",
+      "checkedAt": "2026-10-21",
+      "outcome": "read",
+      "note": "Chinese school introduction explicitly discusses operations-research optimization, digital supply-chain management and warehouse scheduling; states Computer Science and Technology department became separate computing/AI school in2025."
+    }
+  ],
+  "limitations": [],
+  "duplicateOf": null
+}

@@ -98,6 +98,8 @@ test('status updater executes record stamping from a path containing spaces', t 
   const root = path.join(f.root, 'checkout with spaces');
   fs.mkdirSync(path.join(root, 'scripts'), { recursive: true });
   fs.mkdirSync(path.join(root, 'data'), { recursive: true });
+  fs.mkdirSync(path.join(root, 'assets'), { recursive: true });
+  for(const name of ['program-model.js','model.js'])fs.copyFileSync(path.join(repo,'assets',name),path.join(root,'assets',name));
   fs.copyFileSync(path.join(repo, 'scripts/update-research-status.mjs'), path.join(root, 'scripts/update-research-status.mjs'));
   fs.writeFileSync(path.join(root, 'scripts/record-dates.mjs'), "import fs from 'node:fs'; fs.writeFileSync('stamp-ran', 'yes');");
   for (const name of ['research-status', 'placements', 'doctoral-programs']) {

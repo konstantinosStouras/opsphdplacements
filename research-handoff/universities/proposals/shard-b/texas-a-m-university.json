@@ -1,0 +1,91 @@
+{
+  "id": "texas-a-m-university",
+  "status": "reviewed",
+  "canonicalName": "Texas A&M University",
+  "universitySourceUrl": "https://mays.tamu.edu/graduate/phd/information-and-operations-management/",
+  "checkedAt": "2026-10-21",
+  "reviewer": "Codex in Chrome",
+  "units": [
+    {
+      "id": "texas-a-m-university--information-operations-management",
+      "name": "Department of Information and Operations Management",
+      "school": "Mays Business School",
+      "type": "department",
+      "fields": [
+        "operations-management",
+        "operations-research",
+        "supply-chain",
+        "logistics"
+      ],
+      "sourceUrl": "https://mays.tamu.edu/graduate/phd/information-and-operations-management/",
+      "checkedAt": "2026-10-21",
+      "evidence": "Official doctoral page explicitly names Department of Information and Operations Management, oversees MISY and SCMT, and details operations, supply chains, logistics, optimization and healthcare operations doctoral research."
+    },
+    {
+      "id": "texas-a-m-university--industrial-systems-engineering",
+      "name": "Wm Michael Barnes ’64 Department of Industrial and Systems Engineering",
+      "school": "College of Engineering",
+      "type": "department",
+      "fields": [
+        "industrial-engineering",
+        "operations-research",
+        "supply-chain"
+      ],
+      "sourceUrl": "https://engineering.tamu.edu/industrial/academics/degrees/graduate/phd.html",
+      "checkedAt": "2026-10-21",
+      "evidence": "Official department doctoral page gives full endowed name in footer, college/university parent and PhD Industrial Engineering with Operations Research among four research areas."
+    }
+  ],
+  "decisions": [
+    {
+      "sourceDepartmentId": "texas-a-m-university____is",
+      "disposition": "not-a-unit",
+      "unitIds": [],
+      "reason": "Generic IS posting field not a verified separate administrative unit; combined official Information and Operations Management department recorded."
+    },
+    {
+      "sourceDepartmentId": "texas-a-m-university__college-of-engineering__wm-michael-barnes-64-department-of-industrial-and-systems-en",
+      "disposition": "replaced",
+      "unitIds": [
+        "texas-a-m-university--industrial-systems-engineering"
+      ],
+      "reason": "Full official endowed department name and engineering parent verified."
+    },
+    {
+      "sourceDepartmentId": "texas-a-m-university__mays-business-school",
+      "disposition": "not-a-unit",
+      "unitIds": [],
+      "reason": "Parent business-school assertion verified through named department, not counted as overlapping separate operations department."
+    },
+    {
+      "sourceDepartmentId": "texas-a-m-university__mays-business-school__information-and-operations-management",
+      "disposition": "replaced",
+      "unitIds": [
+        "texas-a-m-university--information-operations-management"
+      ],
+      "reason": "Full official combined department name verified."
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://mays.tamu.edu/graduate/phd/information-and-operations-management/",
+      "checkedAt": "2026-10-21",
+      "outcome": "read",
+      "note": "University identity, Mays/department host, exact PhD in Business Administration–Information and Operations Management, explicit concentration in Operations and Supply Chain Management and current admissions."
+    },
+    {
+      "url": "https://engineering.tamu.edu/industrial/academics/degrees/graduate/phd.html",
+      "checkedAt": "2026-10-21",
+      "outcome": "read",
+      "note": "Exact endowed department title, College of Engineering parent and Doctor of Philosophy in Industrial Engineering including OR research area."
+    },
+    {
+      "url": "https://grad.tamu.edu/programs/industrial-engineering-phd.html",
+      "checkedAt": "2026-10-21",
+      "outcome": "read",
+      "note": "Graduate school confirms Industrial Engineering PhD, host department/college and College Station campus; supply-chain and systems-optimization research."
+    }
+  ],
+  "limitations": [],
+  "duplicateOf": null
+}

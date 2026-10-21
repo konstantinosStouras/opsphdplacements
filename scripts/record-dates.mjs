@@ -46,13 +46,26 @@ const utc = t => new Date(t).toISOString().replace(/\.\d{3}Z$/, 'Z');
 const recordsOf = d => Array.isArray(d) ? d : Array.isArray(d?.records) ? d.records : [];
 const keyOf = (r, k) => r && r[k] != null ? String(r[k]) : null;
 
+// Replace complete files rather than truncate them in place. Windows sync/index
+// services can temporarily hold the destination open during a data release.
+function writeComplete(file,content){
+  const temporary=file+'.record-dates-'+process.pid+'.tmp';
+  fs.writeFileSync(temporary,content);
+  try{
+    for(let attempt=0;;attempt++){
+      try{fs.renameSync(temporary,file);break;}
+      catch(error){if(attempt>=4||!['UNKNOWN','EBUSY','EPERM','EACCES'].includes(error.code))throw error;Atomics.wait(new Int32Array(new SharedArrayBuffer(4)),0,0,150);}
+    }
+  }finally{if(fs.existsSync(temporary))fs.unlinkSync(temporary);}
+}
+
 function readLedger() {
   if (!fs.existsSync(LEDGER)) return { version: 1, note: '', files: {} };
   return JSON.parse(fs.readFileSync(LEDGER, 'utf8'));
 }
 function writeLedger(l) {
   l.note = 'Per-record dates for every database: addedAt (first published) and updatedAt (last content change), UTC. Past dates come from the Git history of each data file (committer time); later ones from the integration that changed the record. Each entry is [addedAt, updatedAt, content hash without the stamps]; removed records keep their dates with removedAt. Rebuilt by scripts/record-dates.mjs.';
-  fs.writeFileSync(LEDGER, JSON.stringify(l, null, 0).replace(/\],"/g, '],\n"') + '\n');
+  writeComplete(LEDGER, JSON.stringify(l, null, 0).replace(/\],"/g, '],\n"') + '\n');
 }
 
 function backfill() {
@@ -121,7 +134,7 @@ function stamp(checkOnly) {
     const newline = text.includes('\r\n') ? '\r\n' : '\n';
     const indent = /^\{\r?\n( +)"/.exec(text)?.[1]?.length ?? (/^\{\r?\n/.test(text) ? 2 : 0);
     const out = JSON.stringify(data[file], null, indent || undefined).replace(/\n/g, newline) + (text.endsWith('\n') ? newline : '');
-    if (out !== text) fs.writeFileSync(`data/${file}`, out);
+    if (out !== text) writeComplete(`data/${file}`, out);
   }
   writeLedger(ledger);
   const n = Object.values(ledger.files).reduce((a, f) => a + Object.keys(f).length, 0);

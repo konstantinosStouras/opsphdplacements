@@ -199,3 +199,14 @@ The pure `assets/organisation-model.js` builds the joined organisation rows used
 ## Sequential research queues — 21 October 2026
 
 Run `node scripts/build-priority-queues.mjs` to rebuild the held OM List queue and Stage 1 source-reconciliation queue from public data and the portable catalogue. `--refresh-source-catalogue` intentionally reads compact metadata from the adjacent OperationsAcademia.github.io checkout; it is not a fresh live/community-overlay export. No public datasets are written. Read research-handoff/priorities/README.md for phase gates. Stage 1/manual source reconciliation is active; Stage 2 waits; graduate/Wayback collection stays deferred and automation stays paused. Verify live source overlays/pagination before claiming the expanded frame is complete.
+
+## Stage 1 doctoral register — 21 October 2026
+
+Stage 1 doctoral gate (21 October): capture fresh public discovery sources with node scripts/capture-university-sources.mjs; the unauthenticated public correction read is field-masked to exclude editor identities and contacts. Source assertions are not verification. Explicit additional discovery records use scripts/merge-university-source-additions.mjs with a reviewed selection and --dry-run first; original imported rows must remain intact. Apply DOCTORAL-CONTRACT.md before final inclusion; programme facts belong in the existing doctoral register, with stable university/unit links. Do not re-run the old source importer over the frozen import and discard source additions. Unit-review counts are distinct from PhD-provider coverage.
+
+
+After rebuilding entities and integrating reviewed doctoral facts, regenerate the owner-prioritized institutional queue with `node scripts/build-doctoral-priority-queue.mjs`, followed by `node scripts/build-priority-queues.mjs`. The former uses only OM List faculty reported PhD institutions; it does not verify person-level degree or employment facts. Alias candidates remain unresolved unless already accepted.
+
+Doctoral integration: `node scripts/merge-doctoral-proposals.mjs <proposal files>` previews; add `--apply` after reviewing. For a branch-coverage refresh with unchanged already-integrated programme facts, use `--scope-only` (and then `--apply`): it refuses new routes or changed non-null programme/host/credential facts and preserves existing per-fact dates. The university/unit merger always preserves the current doctoral overlay, even when a unit proposal contains a stale copied observation. `node scripts/validate-university-reviews.mjs` checks route/university/unit links and primary-route references.
+
+Timestamp writes use complete temporary sibling files and rename into place to tolerate Windows file locks; the record-date tests verify formatting and idempotency. Restricted Windows test filesystems may reject replacement renames; run the same checks with authorized normal filesystem access before publication.

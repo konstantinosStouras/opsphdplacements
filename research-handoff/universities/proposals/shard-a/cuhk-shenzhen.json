@@ -1,0 +1,89 @@
+{
+  "id": "cuhk-shenzhen",
+  "status": "reviewed",
+  "canonicalName": "The Chinese University of Hong Kong, Shenzhen",
+  "universitySourceUrl": "https://sme.cuhk.edu.cn/en/node/553",
+  "checkedAt": "2026-10-21",
+  "reviewer": "Codex in Chrome",
+  "units": [
+    {
+      "id": "cuhk-shenzhen--information-systems-operations-management",
+      "name": "Information Systems & Operations Management",
+      "school": "School of Management and Economics",
+      "type": "area",
+      "fields": [
+        "operations-management"
+      ],
+      "sourceUrl": "https://sme.cuhk.edu.cn/en/teacher-search",
+      "checkedAt": "2026-10-21",
+      "evidence": "Official faculty directory explicitly lists this academic field and academic area; retained as an area, not a department."
+    },
+    {
+      "id": "cuhk-shenzhen--school-of-data-science",
+      "name": "School of Data Science",
+      "school": null,
+      "type": "school",
+      "fields": [
+        "operations-research",
+        "operations-management"
+      ],
+      "sourceUrl": "https://sds.cuhk.edu.cn/en",
+      "checkedAt": "2026-10-21",
+      "evidence": "Official school introduction explicitly names operations research and operations management among its theoretical and application fields."
+    }
+  ],
+  "decisions": [
+    {
+      "sourceDepartmentId": "cuhk-shenzhen____or-om-cs-ds-ml-ai",
+      "disposition": "replaced",
+      "unitIds": [
+        "cuhk-shenzhen--information-systems-operations-management",
+        "cuhk-shenzhen--school-of-data-science"
+      ],
+      "reason": "Mixed recruiting fields reconciled to the verified SME operations academic area and School of Data Science, without inventing computing departments."
+    },
+    {
+      "sourceDepartmentId": "cuhk-shenzhen____platform-operations-and-data-driven-market-design",
+      "disposition": "not-a-unit",
+      "unitIds": [],
+      "reason": "Imported wording describes research topics rather than a separately named organizational unit in the checked school structures."
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://sme.cuhk.edu.cn/en/node/553",
+      "checkedAt": "2026-10-21",
+      "outcome": "read",
+      "note": "Official faculty overview establishes The Chinese University of Hong Kong, Shenzhen identity and School of Management and Economics faculty context; no Operations unit verified from this overview."
+    },
+    {
+      "url": "https://sme.cuhk.edu.cn/en/teacher-search",
+      "note": "Official academic-field and academic-area structure includes Information Systems & Operations Management.",
+      "checkedAt": "2026-10-21",
+      "outcome": "read"
+    },
+    {
+      "url": "https://www.cuhk.edu.cn/en",
+      "note": "Read school inventory confirming Data Science, Science and Engineering, and Management and Economics schools and Shenzhen identity.",
+      "checkedAt": "2026-10-21",
+      "outcome": "read"
+    },
+    {
+      "url": "https://sds.cuhk.edu.cn/en",
+      "note": "School introduction explicitly includes operations research and operations management.",
+      "checkedAt": "2026-10-21",
+      "outcome": "read"
+    },
+    {
+      "url": "https://sse.cuhk.edu.cn/en",
+      "note": "Read engineering school navigation, programs and research overview; supply-chain/logistics master remains a program, not a department.",
+      "checkedAt": "2026-10-21",
+      "outcome": "read"
+    }
+  ],
+  "limitations": [
+    "Actual school and academic-area types retained; no separate Operations department established.",
+    "Shenzhen retained separately from the Hong Kong campus."
+  ],
+  "duplicateOf": null
+}

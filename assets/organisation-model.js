@@ -37,10 +37,11 @@ export function organisationRows(entities,universities,reviews,programs,faculty,
   for(const r of rows){
    r.names=[...new Set([r.name,...r.entities.flatMap(e=>e.aliases)])];
    r.countries=[...new Set(r.entities.map(e=>e.country).filter(Boolean))];
-   r.programs=programs.records.filter(p=>r.names.some(n=>fold(n)===fold(p.university)));
+   const universityIds=new Set(r.reviews.flatMap(u=>u.originals.map(o=>o.id)));
+   r.programs=programs.records.filter(p=>p.universityId?universityIds.has(p.universityId):r.names.some(n=>fold(n)===fold(p.university)));
    r.phd=r.entities.flatMap(e=>e.people?.institutions||[]);
    r.employers=r.entities.flatMap(e=>e.employer?.employers||[]);
-   r.search=fold([r.name,...r.names,...r.countries,...r.reviews.map(u=>u.searchText),...r.programs.map(p=>p.programName)].join(' '));
+   r.search=fold([r.name,...r.names,...r.countries,...r.reviews.map(u=>u.searchText),...r.programs.flatMap(p=>[p.programName,p.specialization,...(p.fields||[])])].join(' '));
   }
   rows.sort((a,b)=>a.name.localeCompare(b.name,'en',{sensitivity:'base'}));
 

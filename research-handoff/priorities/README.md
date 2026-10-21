@@ -1,10 +1,10 @@
 # Current research priorities — owner instruction, 21 October 2026
 
-This supersedes the earlier collection order and blanket pause for manual Stage 1 work. It does not resume the paused automation, authorize outreach, or start graduate research. The current chat is the sole integrator; earlier university researchers and companion career chats are stopped. Frozen shard assignments remain historical ownership records, not active work.
+This supersedes the earlier collection order and blanket pause for manual Stage 1 work. It does not resume the paused automation, authorize outreach, or start graduate research. The current chat is the sole integrator. Three authorized university research lanes resumed under their frozen shards; companion career work and automation remain held.
 
-## 1. University and operations-unit register — first
+## 1. Universities with relevant PhD programmes — first
 
-Reconcile OM List's school directory with Operations Academia's Universities directory and job postings, including relevant archived postings. Freeze dated source versions and their scope. Use those lists for discovery; official university pages verify each university's official name, campus/parent identity and actual OM/OR/IE/logistics/supply-chain units. Check business and engineering branches; retain department/school/group/area/centre types exactly. A faculty listing, ad subject or degree name does not establish a department. Verify doctorate provision separately where encountered, without beginning graduate enumeration.
+Reconcile OM List's school directory with Operations Academia's Universities directory and job postings, including relevant archived postings. Freeze dated source versions and their scope. Use those lists for discovery; official university pages verify each university's official name, campus/parent identity and actual OM/OR/IE/logistics/supply-chain units. Check business and engineering branches; retain department/school/group/area/centre types exactly. A faculty listing, ad subject or degree name does not establish a department. Official doctoral provision is mandatory for final Stage 1 inclusion: verify each relevant programme/specialization and its business or engineering host. See ../universities/DOCTORAL-CONTRACT.md. Unit reviews alone do not satisfy this gate; do not begin graduate enumeration.
 
 One university identity with sourced aliases and subordinate units; no duplicate rows. Retain distinct campuses where identities differ, historical names and all original source IDs. Resolve non-university and out-of-scope candidates explicitly. Do not fuzzy-merge names or treat the website's duplicate-label audit as a completed institutional identity census.
 
@@ -28,7 +28,7 @@ Use stage-2-omlist-queue.json after Stage 1. Do not restart the old all-person a
 
 ## 3. All PhD graduates and historical careers — deferred
 
-After both earlier stages meet their gates, establish which institutions actually award in-scope doctorates, then enumerate historical graduates by program/cohort using official alumni/dissertation/placement/commencement records, Wayback Machine or comparable archives. Identity-match each named graduate before career/LinkedIn searches, including people who never entered or later left academia. Reconcile repeated listings and program-year totals. Preserve existing graduate observations but do not start new archive/graduate collection now.
+After both earlier stages meet their gates, use the Stage 1 verified doctoral register to enumerate historical graduates by program/cohort using official alumni/dissertation/placement/commencement records, Wayback Machine or comparable archives. Identity-match each named graduate before career/LinkedIn searches, including people who never entered or later left academia. Reconcile repeated listings and program-year totals. Preserve existing graduate observations but do not start new archive/graduate collection now.
 
 ## Portable files and regeneration
 
@@ -39,3 +39,12 @@ After both earlier stages meet their gates, establish which institutions actuall
 - stage-2-omlist-queue.json: every OM List stable ID exactly once, with separate existing job/year/history states; held for Stage 1.
 
 Run `node scripts/build-priority-queues.mjs` from a fresh clone using the portable catalogue. Use `--refresh-source-catalogue` only to intentionally re-read the adjacent OperationsAcademia.github.io source checkout; record that this is not a live-overlay export. These commands write research handoffs only and never integrate public facts. Public counts remain those in the public datasets and generated RESEARCH-STATUS.md. No automation was enabled or changed.
+
+## Live-source reconciliation and doctoral clarification — 21 October 2026
+
+Fresh public source files contain 1,162 directory rows, 254 curated university rows, 871 current/recent job rows and 159 archive rows. The public directory correction feed contains 174 documents; archive row overrides returned zero documents. All 202 OM List school rows were captured in Chrome. source-catalogue-live-2026-10-21.json preserves compact assertions and retrieval hashes, excluding editor identities/contact details. The earlier local snapshot is retained for historical reconciliation. The partial paginated Chrome capture is only a cross-check, not a complete export.
+
+The discovery import has 20 explicit source additions (665 candidate records total); all original 645 records are preserved structurally. These additions are not verified universities or PhD providers merely because they were imported. Before publication, review names/units, evidence-backed aliases and doctoral eligibility. Completion percentages for old unit reviews must never be presented as PhD-university completion.
+
+
+Owner optimization, 21 October 2026: first verify PhD institutions reported for OM List faculty, ranked by reported faculty count, then expand to other Ops/IE university and job-source candidates. Use `research-handoff/priorities/stage-1-doctoral-priority-queue.json`, regenerated by `node scripts/build-doctoral-priority-queue.mjs`. Preserve frozen ownership and unresolved source labels. Reported degree institutions are discovery leads, not proof of relevant current doctoral provision; historical or other-field degrees need separate scope decisions. This remains Stage 1 institutional research; Stage 2 stays held.

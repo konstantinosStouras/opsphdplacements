@@ -1,0 +1,94 @@
+{
+  "id": "university-of-toronto",
+  "status": "partial",
+  "canonicalName": "University of Toronto",
+  "universitySourceUrl": "https://www.mie.utoronto.ca/",
+  "checkedAt": "2026-10-21",
+  "reviewer": "Codex in Chrome",
+  "units": [
+    {
+      "id": "university-of-toronto--mechanical-industrial-engineering",
+      "name": "Mechanical & Industrial Engineering",
+      "school": "Faculty of Applied Science and Engineering",
+      "type": "department",
+      "fields": [
+        "industrial-engineering"
+      ],
+      "sourceUrl": "https://www.mie.utoronto.ca/",
+      "checkedAt": "2026-10-21",
+      "evidence": "Official department footer gives full name, University of Toronto and Engineering faculty; homepage describes industrial engineering research."
+    },
+    {
+      "id": "university-of-toronto--operations-management-statistics",
+      "name": "Operations Management and Statistics",
+      "school": "Rotman School of Management",
+      "type": "area",
+      "fields": [
+        "operations-management"
+      ],
+      "sourceUrl": "https://www.rotman.utoronto.ca/the-rotman-experience/our-community/faculty/?department=Operations%20Management%20and%20Statistics",
+      "checkedAt": "2026-10-21",
+      "evidence": "Official area-filtered faculty page explicitly labels the Operations Management and Statistics Area and its area coordinator."
+    }
+  ],
+  "decisions": [
+    {
+      "sourceDepartmentId": "university-of-toronto____mechanical-and-industrial-engineering",
+      "disposition": "replaced",
+      "unitIds": [
+        "university-of-toronto--mechanical-industrial-engineering"
+      ],
+      "reason": "Official engineering department/Rotman area verifies unit name and type."
+    },
+    {
+      "sourceDepartmentId": "university-of-toronto__faculty-of-arts-and-science__statistical-sciences",
+      "disposition": "unresolved",
+      "unitIds": [],
+      "reason": "Official statistics site requires human verification; no access-control bypass."
+    },
+    {
+      "sourceDepartmentId": "university-of-toronto__joseph-l-rotman-school-of-management__operations-management-and-statistics",
+      "disposition": "replaced",
+      "unitIds": [
+        "university-of-toronto--operations-management-statistics"
+      ],
+      "reason": "Official engineering department/Rotman area verifies unit name and type."
+    },
+    {
+      "sourceDepartmentId": "university-of-toronto__scarborough-and-rotman-school-of-management__management",
+      "disposition": "out-of-scope",
+      "unitIds": [],
+      "reason": "Official UTSC Management is a separate campus unit, retained under dedicated Scarborough source record rather than duplicating its unit in St. George listing."
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.mie.utoronto.ca/",
+      "checkedAt": "2026-10-21",
+      "outcome": "read",
+      "note": "Mechanical & Industrial Engineering department/faculty identity and scope."
+    },
+    {
+      "url": "https://www.rotman.utoronto.ca/the-rotman-experience/our-community/faculty/?department=Operations%20Management%20and%20Statistics",
+      "checkedAt": "2026-10-21",
+      "outcome": "read",
+      "note": "Operations Management and Statistics Area and UTSC-affiliated faculty."
+    },
+    {
+      "url": "https://www.utsc.utoronto.ca/mgmt/",
+      "checkedAt": "2026-10-21",
+      "outcome": "read",
+      "note": "UTSC department identity and separate Scarborough campus."
+    },
+    {
+      "url": "https://www.statistics.utoronto.ca/",
+      "checkedAt": "2026-10-21",
+      "outcome": "blocked",
+      "note": "Human verification challenge; did not interact or bypass."
+    }
+  ],
+  "limitations": [
+    "Statistical Sciences imported unit scope not reviewed because official site presented human verification challenge."
+  ],
+  "duplicateOf": null
+}

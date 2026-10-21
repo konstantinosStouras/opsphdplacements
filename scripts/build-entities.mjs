@@ -110,10 +110,10 @@ for (const em of employers) {
 }
 // The program register: doctoral programs, attached by university name.
 for (const p of programs) {
-  let e = find(p.university, null);
+  let e = (p.universityId&&entities.find(e=>e.directory?.universities.some(u=>u.id===p.universityId)))||find(p.university, null);
   if (!e) e = newEntity(p.university, null); else e.review.matches.push({ source: 'programs', program: p.id, match: 'exact' });
   addRole(e, 'program-register');
-  e.programs.push({ id: p.id, programName: p.programName, school: p.school || null, degree: p.degree || null, field: p.field || null, status: p.status, statusAsOf: p.statusAsOf || null });
+  e.programs.push({ id: p.id, programName: p.programName, specialization:p.specialization||null, universityId:p.universityId||null, school: p.school || null, degree: p.degree || null, field: p.field || null, status: p.status, statusAsOf: p.statusAsOf || null });
   addSource(e, 'data/doctoral-programs.json', 'Historical doctoral program register');
 }
 

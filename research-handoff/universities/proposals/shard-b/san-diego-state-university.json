@@ -1,0 +1,54 @@
+{
+  "id": "san-diego-state-university",
+  "status": "reviewed",
+  "canonicalName": "San Diego State University",
+  "universitySourceUrl": "https://business.sdsu.edu/departments/mis",
+  "checkedAt": "2026-10-21",
+  "reviewer": "Codex in Chrome",
+  "units": [
+    {
+      "id": "san-diego-state-university--management-information-systems",
+      "name": "Management Information Systems Department",
+      "school": "Fowler College of Business",
+      "type": "department",
+      "fields": [
+        "supply-chain"
+      ],
+      "sourceUrl": "https://business.sdsu.edu/departments/mis",
+      "checkedAt": "2026-10-21",
+      "evidence": "Official department page identifies its parent Fowler College of Business and includes Master of Science in Supply Chain Innovation among departmental programs. Generic information-systems research alone is not used as operations evidence."
+    }
+  ],
+  "decisions": [
+    {
+      "sourceDepartmentId": "san-diego-state-university____ai",
+      "disposition": "not-a-unit",
+      "unitIds": [],
+      "reason": "AI is a posting topic rather than the name of a verified standalone operations department. The official MIS page discusses AI research and separately names AI labs/center, without establishing their operations remit."
+    },
+    {
+      "sourceDepartmentId": "san-diego-state-university__fowler-college-of-business__management-information-systems",
+      "disposition": "replaced",
+      "unitIds": [
+        "san-diego-state-university--management-information-systems"
+      ],
+      "reason": "Full official department title and supply-chain program scope verified."
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://business.sdsu.edu/departments/mis",
+      "checkedAt": "2026-10-21",
+      "outcome": "read",
+      "note": "University identity, department and parent college, supply-chain degree provision and separately typed AI initiatives."
+    },
+    {
+      "url": "https://www.engineering.sdsu.edu/",
+      "checkedAt": "2026-10-21",
+      "outcome": "read",
+      "note": "Engineering branch program inventory: Aerospace; Civil, Construction, Environmental; Electrical and Computer; Mechanical. No additional named OM/OR/IE unit verified from that inventory."
+    }
+  ],
+  "limitations": [],
+  "duplicateOf": null
+}

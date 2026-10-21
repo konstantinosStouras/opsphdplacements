@@ -27,7 +27,8 @@ if(process.argv.includes('--refresh-source-catalogue')){
  for(const r of schools.records)observations.push({source:'omlist-schools',sourceRecordId:r.sourceId,name:r.name,department:r.departmentAsListed,countryAsListed:r.countryAsListed,sourceUrl:r.sourceUrl});
  save('source-catalogue-2026-10-21.json',{asOf:'2026-10-21',state:'discovery-only',sources,observations,limitation:'Source reconciliation and live-overlay coverage are incomplete. No observation verifies a university name or operations unit.'});
 }
-const catalogue=read('research-handoff/priorities/source-catalogue-2026-10-21.json');
+const catalogueFiles=['source-catalogue-2026-10-21.json','source-catalogue-live-2026-10-21.json'].filter(file=>fs.existsSync(path.join(dir,file)));
+const catalogue={observations:catalogueFiles.flatMap(file=>read('research-handoff/priorities/'+file).observations)};
 const universities=read('data/universities.json'),reviews=read('data/university-reviews.json');
 const grouped=universityRows(universities.records,reviews.records),byName=new Map();
 for(const r of grouped)for(const name of [r.name,...r.originals.flatMap(o=>[o.name,...(o.spellings||[])])]){
@@ -54,9 +55,10 @@ const sourceChecks=new Map();
 for(const m of matched){const id=m.matchedOrganisationId||m.matchedGroupId;const check=sourceChecks.get(id)||{id,officialUnitComparison:'pending-source-reconciliation',sourceAssertions:[]};check.sourceAssertions.push({source:m.source,sourceRecordId:m.sourceRecordId,schoolAsListed:m.school||null,departmentAsListed:m.department||null});sourceChecks.set(id,check);}
 save('stage-1-university-queue.json',{
  asOf:'2026-10-21',phase:'active-source-reconciliation',publishedSourceRecords:universities.records.length,publishedReviewCounts:reviews.metadata,
- completionGate:'Freeze and reconcile the requested sources, adjudicate every candidate, officially verify eligible university identities/units, and resolve aliases. Exceptions remain explicit; no complete verified-list claim while material source coverage or identity/scope decisions remain open.',
- sourceCoverageGate:'INCOMPLETE: live Operations Academia cards/community overlays and current/archived postings must be reconciled with this compact source-checkout catalogue. Candidate labels are not additional verified universities.',
- sourceCatalogue:'source-catalogue-2026-10-21.json',matchedInstitutionSourceChecks:[...sourceChecks.values()],matchedObservations:matched.length,excludedObservations:excluded.length,exclusions:excluded,
+ completionGate:'First verify PhD institutions reported by OM List faculty, then expand to other university/job-source candidates. Verify current relevant doctoral programmes across business and engineering, official university/unit identities and aliases. Unit reviews alone do not establish doctoral eligibility or Stage 1 completion.',
+ doctoralPriorityQueue:'stage-1-doctoral-priority-queue.json',
+ sourceCoverageGate:'Public compiled Operations Academia university/current-and-archived job files, public directory/archive corrections and all 202 OM List school rows frozen. Institutional identities and every additional unit assertion still require adjudication; candidate labels are not additional verified universities. No private/held submissions were accessed.',
+ sourceCatalogues:catalogueFiles,matchedInstitutionSourceChecks:[...sourceChecks.values()],matchedObservations:matched.length,excludedObservations:excluded.length,exclusions:excluded,
  existingFollowUps:universities.records.filter(u=>!reviews.records.some(r=>r.id===u.id&&r.status==='reviewed')).map(u=>({id:u.id,name:u.name,status:reviews.records.find(r=>r.id===u.id)?.status||'pending'})),
  candidates:[...candidates.values()].sort((a,b)=>a.nameAsListed.localeCompare(b.nameAsListed))
 });

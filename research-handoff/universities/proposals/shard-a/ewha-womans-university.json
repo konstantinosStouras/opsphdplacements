@@ -1,0 +1,121 @@
+{
+  "id": "ewha-womans-university",
+  "status": "partial",
+  "canonicalName": "Ewha Womans University",
+  "universitySourceUrl": "https://www.ewha.ac.kr/ewhaen/index.do",
+  "checkedAt": "2026-10-21",
+  "reviewer": "Codex in Chrome",
+  "units": [
+    {
+      "id": "ewha-womans-university--business-administration",
+      "name": "Division of Business Administration",
+      "school": "College of Business Administration",
+      "type": "division",
+      "fields": [
+        "operations-management",
+        "operations-research",
+        "supply-chain"
+      ],
+      "sourceUrl": "https://www.ewha.ac.kr/ewhaen/academics/business-administration.do",
+      "checkedAt": "2026-10-21",
+      "evidence": "University official page verifies exact division and college hierarchy; linked current business-school graduate overview and Management Science concentration establish Operations/OR/SCM remit."
+    },
+    {
+      "id": "ewha-womans-university--management-science",
+      "name": "Management Science",
+      "school": "Division of Business Administration, College of Business Administration",
+      "type": "area",
+      "fields": [
+        "operations-management",
+        "operations-research",
+        "supply-chain"
+      ],
+      "sourceUrl": "https://biz.ewha.ac.kr/bizeng/biz/management-science.do",
+      "checkedAt": "2026-10-21",
+      "evidence": "Official Areas of Concentration page names Management Science, production/inventory/quality/SCM/service Operations teaching. Academic area, not invented department."
+    }
+  ],
+  "decisions": [
+    {
+      "sourceDepartmentId": "ewha-womans-university__college-of-business-administration__business-administration",
+      "disposition": "replaced",
+      "unitIds": [
+        "ewha-womans-university--business-administration",
+        "ewha-womans-university--management-science"
+      ],
+      "reason": "University official hierarchy identifies Division of Business Administration under College of Business Administration; linked school site calls same host Ewha School of Business. Relevant Management Science retained as academic area, not department."
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.ewha.ac.kr/ewhaen/index.do",
+      "note": "Official Ewha Womans University identity.",
+      "checkedAt": "2026-10-21",
+      "outcome": "read"
+    },
+    {
+      "url": "https://www.ewha.ac.kr/ewhaen/academics/humanities.do",
+      "note": "Graduate school programme inventory includes Business Administration and engineering programmes. Overview numerical counts explicitly date April 2013, not used as current counts.",
+      "checkedAt": "2026-10-21",
+      "outcome": "read"
+    },
+    {
+      "url": "https://www.ewha.ac.kr/ewhaen/academics/college.do",
+      "note": "Current university college frame and College of Business Administration link.",
+      "checkedAt": "2026-10-21",
+      "outcome": "read"
+    },
+    {
+      "url": "https://www.ewha.ac.kr/ewhaen/academics/business-administration.do",
+      "note": "Official College of Business Administration and Division of Business Administration hierarchy; current homepage explicitly biz.ewha.ac.kr/bizeng.",
+      "checkedAt": "2026-10-21",
+      "outcome": "read"
+    },
+    {
+      "url": "https://biz.ewha.ac.kr/bizeng",
+      "note": "Ewha School of Business identity and Ewha Womans University footer establish school alias at same university.",
+      "checkedAt": "2026-10-21",
+      "outcome": "read"
+    },
+    {
+      "url": "https://biz.ewha.ac.kr/bizeng/biz/biz-introduction.do",
+      "note": "Graduate Business Administration programme explicitly includes Production Management/Operations Research and masters, doctorate and combined admissions twice yearly.",
+      "checkedAt": "2026-10-21",
+      "outcome": "read"
+    },
+    {
+      "url": "https://biz.ewha.ac.kr/bizeng/biz/curriculum-accounting.do",
+      "note": "MA/Ph.D courses organized into subject fields, including Management Decision Science.",
+      "checkedAt": "2026-10-21",
+      "outcome": "read"
+    },
+    {
+      "url": "https://biz.ewha.ac.kr/bizeng/biz/curriculum-business-science.do",
+      "note": "MA/Ph.D Management Decision Science curriculum explicitly Production Models, Mathematical Programming, Simulation, Production-Inventory System and Optimization Theory.",
+      "checkedAt": "2026-10-21",
+      "outcome": "read"
+    },
+    {
+      "url": "https://biz.ewha.ac.kr/bizeng/biz/management-science.do",
+      "note": "Actual Management Science academic area/concentration with production, inventory, quality, SCM and service Operations remit; not a department.",
+      "checkedAt": "2026-10-21",
+      "outcome": "read"
+    },
+    {
+      "url": "https://www.ewha.ac.kr/ewhaen/academics/engineering.do",
+      "note": "Complete current engineering unit and degree-level table includes doctoral programmes across engineering departments; no IE title. Explicit 2024 removal of ELTEC from college title. Individual departments Operations research scope not fully checked.",
+      "checkedAt": "2026-10-21",
+      "outcome": "read"
+    },
+    {
+      "url": "https://biz.ewha.ac.kr/eng/index.do",
+      "note": "Legacy business /eng link rendered engineering college content despite business hostname; not treated as business-programme evidence.",
+      "checkedAt": "2026-10-21",
+      "outcome": "read"
+    }
+  ],
+  "limitations": [
+    "Individual engineering department Operations/OR scope remains unresolved despite full unit inventory and doctoral degree table read."
+  ],
+  "duplicateOf": null
+}

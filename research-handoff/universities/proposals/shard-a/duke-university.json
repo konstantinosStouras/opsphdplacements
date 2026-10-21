@@ -1,0 +1,96 @@
+{
+  "id": "duke-university",
+  "status": "reviewed",
+  "canonicalName": "Duke University",
+  "universitySourceUrl": "https://areas.fuqua.duke.edu/operations-management/",
+  "checkedAt": "2026-10-21",
+  "reviewer": "Codex in Chrome",
+  "units": [
+    {
+      "id": "duke-university--operations-management",
+      "name": "Operations Management",
+      "school": "Fuqua School of Business",
+      "type": "group",
+      "fields": [
+        "operations-management",
+        "supply-chain"
+      ],
+      "sourceUrl": "https://areas.fuqua.duke.edu/operations-management/",
+      "checkedAt": "2026-10-21",
+      "evidence": "Official page explicitly names Operations Management group and its knowledge remit in global production and distribution of goods and services."
+    },
+    {
+      "id": "duke-university--decision-sciences",
+      "name": "Decision Sciences",
+      "school": "Fuqua School of Business",
+      "type": "area",
+      "fields": [
+        "operations-research",
+        "operations-management"
+      ],
+      "sourceUrl": "https://areas.fuqua.duke.edu/decision-sciences/research/",
+      "checkedAt": "2026-10-21",
+      "evidence": "Official area overview and research page explicitly identify OR contributions, stochastic systems/queuing, optimization and dynamic programming, mechanism design intersecting OM and OR."
+    }
+  ],
+  "decisions": [
+    {
+      "sourceDepartmentId": "duke-university__fuqua-school-of-business",
+      "disposition": "not-a-unit",
+      "unitIds": [],
+      "reason": "Parent business school label only; actual operations group and Decision Sciences area listed separately."
+    },
+    {
+      "sourceDepartmentId": "duke-university__fuqua-school-of-business__decision-sciences",
+      "disposition": "replaced",
+      "unitIds": [
+        "duke-university--decision-sciences"
+      ],
+      "reason": "Official full area/group name and in-scope research verified; actual organizational type retained."
+    },
+    {
+      "sourceDepartmentId": "duke-university__fuqua-school-of-business__operations-management",
+      "disposition": "replaced",
+      "unitIds": [
+        "duke-university--operations-management"
+      ],
+      "reason": "Official full area/group name and in-scope research verified; actual organizational type retained."
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://areas.fuqua.duke.edu/operations-management/",
+      "checkedAt": "2026-10-21",
+      "outcome": "read",
+      "note": "Read explicit operations group, remit and Duke University Fuqua School identity."
+    },
+    {
+      "url": "https://areas.fuqua.duke.edu/decision-sciences/",
+      "checkedAt": "2026-10-21",
+      "outcome": "read",
+      "note": "Read Decision Sciences academic-area identity."
+    },
+    {
+      "url": "https://areas.fuqua.duke.edu/decision-sciences/research/",
+      "checkedAt": "2026-10-21",
+      "outcome": "read",
+      "note": "Read full research streams explicitly naming OR/OM, optimization, queuing and dynamic programming."
+    },
+    {
+      "url": "https://pratt.duke.edu/",
+      "checkedAt": "2026-10-21",
+      "outcome": "read",
+      "note": "Read expanded Academics > Departments inventory: Biomedical, Civil/Environmental, Electrical/Computer, Mechanical/Materials, Institute for Enterprise Engineering."
+    },
+    {
+      "url": "https://pratt.duke.edu/academics/departments/iene/",
+      "checkedAt": "2026-10-21",
+      "outcome": "read",
+      "note": "Read enterprise institute structure and program inventory; generic engineering-management/systems degree titles do not independently verify an additional operations department."
+    }
+  ],
+  "limitations": [
+    "Business group and area retained under actual types. No additional eligible engineering unit established in checked Pratt department/institute inventories; no standalone Industrial Engineering department inferred."
+  ],
+  "duplicateOf": null
+}

@@ -1,0 +1,120 @@
+{
+  "id": "san-jose-state-university",
+  "status": "partial",
+  "canonicalName": "San José State University",
+  "universitySourceUrl": "https://www.sjsu.edu/mktba/",
+  "checkedAt": "2026-10-21",
+  "reviewer": "Codex in Chrome",
+  "units": [
+    {
+      "id": "san-jose-state-university--marketing-business-analytics",
+      "name": "Department of Marketing and Business Analytics",
+      "school": "Lucas College and Graduate School of Business",
+      "type": "department",
+      "fields": [
+        "operations-research"
+      ],
+      "sourceUrl": "https://www.sjsu.edu/mktba/",
+      "checkedAt": "2026-10-21",
+      "evidence": "Official department homepage names its parent college and explicitly describes mathematical optimization and simulation analyses applied to business decisions."
+    },
+    {
+      "id": "san-jose-state-university--industrial-systems-engineering",
+      "name": "Industrial and Systems Engineering",
+      "school": "Charles W. Davidson College of Engineering",
+      "type": "department",
+      "fields": [
+        "industrial-engineering",
+        "operations-research",
+        "supply-chain"
+      ],
+      "sourceUrl": "https://www.sjsu.edu/ise/",
+      "checkedAt": "2026-10-21",
+      "evidence": "Official engineering department homepage names Industrial and Systems Engineering in its header and explicitly calls it a department; its remit includes operations research, supply-chain engineering and statistical modeling."
+    }
+  ],
+  "decisions": [
+    {
+      "sourceDepartmentId": "san-jose-state-university____ba-and-marketing",
+      "disposition": "replaced",
+      "unitIds": [
+        "san-jose-state-university--marketing-business-analytics"
+      ],
+      "reason": "Current official full department name replaces acronym/reversed posting wording."
+    },
+    {
+      "sourceDepartmentId": "san-jose-state-university__lucas-college-and-graduate-school-of-business__marketing-and-business-analytics",
+      "disposition": "duplicate",
+      "unitIds": [
+        "san-jose-state-university--marketing-business-analytics"
+      ],
+      "reason": "Same officially named department as other analytics/marketing posting row."
+    },
+    {
+      "sourceDepartmentId": "san-jose-state-university__lucas-college-and-graduate-school-of-business__information-systems-and-technology",
+      "disposition": "out-of-scope",
+      "unitIds": [],
+      "reason": "Official School of Information Systems and Technology scope page identifies MIS technical specialization and project curriculum, without explicit in-scope operations unit evidence. Preserve source, do not treat generic IS as OM."
+    },
+    {
+      "sourceDepartmentId": "san-jose-state-university__lucas-college-and-graduate-school-of-business__marketing-and-decision-sciences",
+      "disposition": "unresolved",
+      "unitIds": [],
+      "reason": "Old linked faculty page returns not found. Current Marketing and Business Analytics department verified separately, but historical successor/rename relationship is not established."
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.sjsu.edu/mktba/",
+      "checkedAt": "2026-10-21",
+      "outcome": "read",
+      "note": "University, college, current department name and optimization/simulation scope."
+    },
+    {
+      "url": "https://www.sjsu.edu/mktba/about-us/index.php",
+      "checkedAt": "2026-10-21",
+      "outcome": "read",
+      "note": "Current department and concentration remit; no historical rename statement found."
+    },
+    {
+      "url": "https://www.sjsu.edu/mktds/faculty/",
+      "checkedAt": "2026-10-21",
+      "outcome": "blocked",
+      "note": "Official not-found page, historical faculty link unavailable."
+    },
+    {
+      "url": "https://www.sjsu.edu/isystems/about-us/index.php",
+      "checkedAt": "2026-10-21",
+      "outcome": "read",
+      "note": "School of Information Systems and Technology identity and MIS technical curriculum; no operations remit verified."
+    },
+    {
+      "url": "https://www.sjsu.edu/engineering/",
+      "checkedAt": "2026-10-21",
+      "outcome": "read",
+      "note": "Engineering-college identity."
+    },
+    {
+      "url": "https://www.sjsu.edu/engineering/programs/undergrad.php",
+      "checkedAt": "2026-10-21",
+      "outcome": "read",
+      "note": "Engineering inventory links Industrial and Systems Engineering."
+    },
+    {
+      "url": "https://www.sjsu.edu/ise/programs/bs-ise/index.php",
+      "checkedAt": "2026-10-21",
+      "outcome": "read",
+      "note": "Industrial and Systems Engineering within engineering-college hierarchy, department wording and degree programs."
+    },
+    {
+      "url": "https://www.sjsu.edu/ise/",
+      "checkedAt": "2026-10-21",
+      "outcome": "read",
+      "note": "Department status and explicit OR/supply-chain engineering remit."
+    }
+  ],
+  "limitations": [
+    "Historical Marketing and Decision Sciences label remains unresolved; do not assert a rename date or relationship from current name alone."
+  ],
+  "duplicateOf": null
+}

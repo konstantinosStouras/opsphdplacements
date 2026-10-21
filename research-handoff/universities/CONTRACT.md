@@ -49,3 +49,7 @@ Verified research centres and institutes with an explicit in-scope remit may be 
 An explicit assignments.overrides entry can transfer an individual record to the integrator after coordination. The frozen alphabetical population stays intact; progress follows that owner's proposal path. Houston was transferred this way on 20 October.
 
 Reviewed non-university entries may carry `directoryExclusion: { reason, sourceUrl, checkedAt }`. The source must have been opened in Chrome and establish the non-university identity; reviewed status, zero university units and no duplicate target are required. Exclude only university presentation, preserving the imported record, audit and placement-employer history. Missing operations evidence at a real university is not grounds for this exclusion.
+
+Actual unit types may also be pillar or cluster where the official institution uses those forms; preserve the full official name and parent. This does not establish doctoral eligibility. Follow DOCTORAL-CONTRACT.md for the Stage 1 PhD gate.
+
+Chair and laboratory are also accepted actual unit types where officially established; never substitute a convenient department/group label.

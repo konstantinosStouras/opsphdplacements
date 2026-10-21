@@ -1,0 +1,61 @@
+# Stage 1 doctoral eligibility — owner clarification, 21 October 2026
+
+The final university register is a register of institutions with verified relevant PhD programmes, not every institution advertising an Operations job. One university may have multiple eligible programmes and departments in business and engineering. The imported/source-added directory remains a discovery frame. An official unit review alone does not complete Stage 1 or establish doctoral eligibility.
+
+Use the existing public `data/doctoral-programs.json` as the single programme register. Do not create a competing public programme database. Researchers save separate proposals under `phd-proposals/<shard>/<university-id>.json`; the sole integrator converts reviewed programme facts into the existing register and links stable university/unit IDs. Save only observed facts and short evidence paraphrases, not source documents or contact details.
+
+Proposal shape:
+
+```json
+{
+  "universityId": "existing-discovery-university-id",
+  "checkedAt": "2026-10-21",
+  "status": "verified",
+  "programmes": [{
+    "id": "canonical-university-id--distinct-programme-or-track",
+    "programName": "Exact official programme name",
+    "degree": "PhD",
+    "specialization": null,
+    "school": null,
+    "department": null,
+    "unitIds": [],
+    "fields": ["Operations Management"],
+    "status": "active",
+    "sourceUrl": "https://official.example/doctoral-programme",
+    "checkedAt": "2026-10-21",
+    "evidence": "Paraphrase establishing doctorate, relevant field and stated administrative host.",
+    "limitations": []
+  }],
+  "branches": [{
+    "branch": "business",
+    "conclusion": "What the official doctoral inventory establishes; remaining gaps explicit.",
+    "sourceUrls": ["https://official.example/doctoral-programme"]
+  }],
+  "sources": [{
+    "url": "https://official.example/doctoral-programme",
+    "checkedAt": "2026-10-21",
+    "outcome": "read",
+    "note": "Exact facts supported by the opened official evidence."
+  }],
+  "limitations": []
+}
+```
+
+`status` is `verified`, `partial`, or `no-qualifying-programme-verified`. Verified means the listed doctoral facts are verified; it does not assert all branches/programmes have been exhausted. Record business AND engineering branch checks, including an explicitly supported absence of a branch, before declaring institutional coverage complete. Missing/inaccessible evidence stays partial. A negative search is not proof of no doctorate; no-qualifying-programme-verified describes the reviewed scope, not an eternal absence.
+
+Use exact named doctorates, or broad PhDs with an explicitly supported Operations/OR/IE/supply-chain/logistics specialization or doctoral research area. Faculty interests, a master's, a bachelor's, professional training, an advertisement, and an institution-level statement that PhDs exist do not establish an eligible Operations doctorate. Distinguish programme/track, degree and administrative unit. DBA or another credential is not silently converted into a PhD.
+
+Current official offering supports active status as of the check; it does not establish uninterrupted admissions, founding/closure dates, or first/last graduates. Preserve known historical programmes separately with their actual status and dates; do not present them as active. Keep historical uncertainty from the existing programme pilot. No graduate enumeration or employment research is authorized during Stage 1.
+
+Every non-null programme/degree/field/host/status fact needs opened official evidence and its actual check date. Reuse earlier source checks only for the facts actually recorded there, retaining original dates. Alias universities must share one canonical university identity and programme ID only where evidence establishes the relationship; distinct campuses/programmes stay separate.
+
+Browser rules from CONTRACT.md apply: read official evidence in Chrome, never bypass access challenges, reuse source tabs and close only agent-created completed tabs. Individual source blocks are recorded while other candidates continue.
+
+Relevant academic research doctorates with other official titles (for example Dr. rer. pol. or Dr.-Ing.) may qualify when opened official programme/qualification evidence establishes academic research-doctorate status and the relevant field. Retain the exact credential. Proposals require researchDoctorateEvidence with sourceUrl, checkedAt and a substantive evidence paraphrase; generic doctoral wording alone stays unresolved. This does not decide the separate legacy/professional DBA scope question. Literal PhD credential and evidenced research-doctorate eligibility are separate fields.
+
+
+Owner optimization, 21 October 2026: first verify PhD institutions reported for OM List faculty, ranked by reported faculty count, then expand to other Ops/IE university and job-source candidates. Use `research-handoff/priorities/stage-1-doctoral-priority-queue.json`, regenerated by `node scripts/build-doctoral-priority-queue.mjs`. Preserve frozen ownership and unresolved source labels. Reported degree institutions are discovery leads, not proof of relevant current doctoral provision; historical or other-field degrees need separate scope decisions. This remains Stage 1 institutional research; Stage 2 stays held.
+
+Shared research training (such as AdONE) is recorded as `programmeType: research-training`, with underlying route links and an overlap explanation. It is excluded from verified award/provider route counts. Dual-title options retain primary route links and are not an additional degree per graduate. One-cycle intake closure is an admissions limitation, not inferred permanent programme suspension.
+
+An extant officially documented programme with explicitly suspended admissions remains in the verified doctoral-provision view, labelled with its admissions status. This does not assert an open intake or active student cohort. Closed, transitioned and credential-unresolved records do not enter that view; one-cycle intake limits remain separate notes.

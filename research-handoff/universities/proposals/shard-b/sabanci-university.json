@@ -1,0 +1,86 @@
+{
+  "id": "sabanci-university",
+  "status": "reviewed",
+  "canonicalName": "Sabancı University",
+  "universitySourceUrl": "https://fens.sabanciuniv.edu/en",
+  "checkedAt": "2026-10-21",
+  "reviewer": "Codex in Chrome",
+  "units": [
+    {
+      "id": "sabanci-university--engineering-natural-sciences",
+      "name": "Faculty of Engineering and Natural Sciences",
+      "school": null,
+      "type": "school",
+      "fields": [
+        "industrial-engineering",
+        "operations-research",
+        "logistics",
+        "supply-chain"
+      ],
+      "sourceUrl": "https://fens.sabanciuniv.edu/en",
+      "checkedAt": "2026-10-21",
+      "evidence": "Official faculty homepage names this faculty and links Industrial Engineering undergraduate and graduate programs. Linked Industrial Engineering homepage describes production-system design and operation, optimization, transportation, logistics and supply-chain planning. The faculty is recorded as a school, not a standalone Industrial Engineering department."
+    },
+    {
+      "id": "sabanci-university--operations-management-information-systems",
+      "name": "Operations Management and Information Systems",
+      "school": "Sabancı Business School",
+      "type": "area",
+      "fields": [
+        "operations-management",
+        "operations-research",
+        "supply-chain",
+        "logistics"
+      ],
+      "sourceUrl": "https://sbs.sabanciuniv.edu/en/faculty-members-research-area",
+      "checkedAt": "2026-10-21",
+      "evidence": "Business-school faculty page names this faculty grouping and reports operations, logistics, supply-chain and optimization research. It is not labeled a department."
+    }
+  ],
+  "decisions": [
+    {
+      "sourceDepartmentId": "sabanci-university__faculty-of-engineering-and-natural-sciences-fens",
+      "disposition": "replaced",
+      "unitIds": [
+        "sabanci-university--engineering-natural-sciences"
+      ],
+      "reason": "Full official faculty name and engineering scope verified. Industrial Engineering is presented as a program, not promoted to a department."
+    },
+    {
+      "sourceDepartmentId": "sabanci-university__sabanci-business-school__business-analytics-and-information-systems",
+      "disposition": "replaced",
+      "unitIds": [
+        "sabanci-university--operations-management-information-systems"
+      ],
+      "reason": "Current official grouping is Operations Management and Information Systems. Imported wording remains a source assertion; no historical rename date is inferred."
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://fens.sabanciuniv.edu/en",
+      "checkedAt": "2026-10-21",
+      "outcome": "read",
+      "note": "University identity, faculty name and engineering program inventory."
+    },
+    {
+      "url": "https://ie.sabanciuniv.edu/en",
+      "checkedAt": "2026-10-21",
+      "outcome": "read",
+      "note": "Industrial Engineering program remit and research fields; not called a standalone department."
+    },
+    {
+      "url": "https://sbs.sabanciuniv.edu/en",
+      "checkedAt": "2026-10-21",
+      "outcome": "read",
+      "note": "Business-school identity and academic overview."
+    },
+    {
+      "url": "https://sbs.sabanciuniv.edu/en/faculty-members-research-area",
+      "checkedAt": "2026-10-21",
+      "outcome": "read",
+      "note": "Current named faculty grouping and operations research scope."
+    }
+  ],
+  "limitations": [],
+  "duplicateOf": null
+}

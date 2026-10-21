@@ -6,7 +6,7 @@ const url = v => {
   try { const u = new URL(v); return ['https:', 'http:'].includes(u.protocol) && !u.username && !u.password; } catch { return false; }
 };
 const fields = new Set(['operations-management', 'operations-research', 'industrial-engineering', 'supply-chain', 'logistics']);
-const types = new Set(['department', 'school', 'division', 'group', 'area', 'center', 'institute']);
+const types = new Set(['department', 'school', 'division', 'group', 'area', 'center', 'institute', 'pillar', 'cluster', 'chair', 'laboratory']);
 const dispositions = new Set(['replaced', 'duplicate', 'out-of-scope', 'not-a-unit', 'unresolved']);
 
 export function validateUniversityReviews(records, originals) {
@@ -25,6 +25,16 @@ export function validateUniversityReviews(records, originals) {
     else assert(r.universitySourceUrl === null, fail('unverified name cannot have verification URL'));
     assert(Array.isArray(r.units) && Array.isArray(r.decisions) && Array.isArray(r.limitations), fail('units, decisions and limitations required'));
     assert(r.limitations.every(text), fail('empty limitation'));
+    if(r.doctoralReview){
+      const d=r.doctoralReview;
+      assert(['verified','partial','no-qualifying-programme-verified'].includes(d.status)&&date(d.checkedAt),fail('invalid doctoral review status/date'));
+      assert(Array.isArray(d.programmeIds)&&d.programmeIds.every(text)&&new Set(d.programmeIds).size===d.programmeIds.length,fail('invalid doctoral programme links'));
+      assert(Array.isArray(d.sources)&&d.sources.length&&d.sources.every(s=>url(s.url)&&date(s.checkedAt)&&['read','blocked'].includes(s.outcome)&&text(s.note)),fail('doctoral review requires dated source observations'));
+      assert(Array.isArray(d.branches)&&d.branches.every(b=>['business','engineering','mathematics','other'].includes(b.branch)&&text(b.conclusion)&&Array.isArray(b.sourceUrls)&&b.sourceUrls.every(u=>d.sources.some(s=>s.url===u))),fail('invalid doctoral branch scope'));
+      assert(Array.isArray(d.limitations)&&d.limitations.every(text)&&typeof d.coverageComplete==='boolean',fail('doctoral limitations/coverage state required'));
+      if(d.status==='verified')assert(d.programmeIds.length,fail('doctoral verification needs programme evidence'));
+      if(d.coverageComplete)assert(['business','engineering'].every(branch=>d.branches.some(b=>b.branch===branch&&['checked','not-present'].includes(b.reviewState))),fail('complete doctoral coverage needs both branch inventories'));
+    }
     if (r.directoryExclusion !== undefined) {
       const e = r.directoryExclusion;
       assert(e && text(e.reason) && date(e.checkedAt) && supported(e.sourceUrl, e.checkedAt), fail('directory exclusion requires opened evidence and reason'));

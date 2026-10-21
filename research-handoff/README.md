@@ -1,6 +1,6 @@
 # Portable research handoff — paused snapshot, 16 October 2026
 
-This directory publishes the saved research needed to continue on another computer. **The originating desktop thread remains paused.** Uploading this snapshot does not approve further research, data integration or website deployment.
+This directory publishes the saved research needed to continue on another computer. This opening section describes the historical 16 October snapshot. The owner subsequently resumed work; current Stage 1 institutional research is active and Stage 2 is held. Read the latest universities and priorities handoffs before choosing work. Historical upload alone did not authorize continuation.
 
 ## Start with the saved results
 

@@ -1,0 +1,70 @@
+{
+  "id": "university-of-vienna",
+  "status": "partial",
+  "canonicalName": "University of Vienna",
+  "universitySourceUrl": "https://bda.univie.ac.at/",
+  "checkedAt": "2026-10-21",
+  "reviewer": "Codex in Chrome",
+  "units": [
+    {
+      "id": "university-of-vienna--business-decisions-analytics",
+      "name": "Business Decisions and Analytics",
+      "school": "Faculty of Business, Economics and Statistics",
+      "type": "department",
+      "fields": [
+        "operations-research",
+        "logistics"
+      ],
+      "sourceUrl": "https://bda.univie.ac.at/",
+      "checkedAt": "2026-10-21",
+      "evidence": "Official masthead/footer repeatedly names Department of Business Decisions and Analytics and faculty parent; describes optimization-oriented decision support and current OR/logistics research. One welcome heading reverses name order; repeated masthead retained."
+    },
+    {
+      "id": "university-of-vienna--statistics-operations-research",
+      "name": "Statistics and Operations Research",
+      "school": "Faculty of Business, Economics and Statistics",
+      "type": "department",
+      "fields": [
+        "operations-research"
+      ],
+      "sourceUrl": "https://wirtschaftswissenschaften.univie.ac.at/en/quicklinks/en/information-about/departments-and-centers/",
+      "checkedAt": "2026-10-21",
+      "evidence": "Official faculty organizational inventory explicitly lists Statistics and Operations Research among key departments/centers."
+    }
+  ],
+  "decisions": [
+    {
+      "sourceDepartmentId": "university-of-vienna____or",
+      "disposition": "replaced",
+      "unitIds": [
+        "university-of-vienna--business-decisions-analytics",
+        "university-of-vienna--statistics-operations-research"
+      ],
+      "reason": "Official faculty inventory and Business Decisions and Analytics page establish full OR-relevant department names rather than imported OR subject shorthand."
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://bda.univie.ac.at/",
+      "checkedAt": "2026-10-21",
+      "outcome": "read",
+      "note": "Department full name, faculty parent and optimization/OR/logistics remit."
+    },
+    {
+      "url": "https://wirtschaftswissenschaften.univie.ac.at/en/quicklinks/en/information-about/departments-and-centers/",
+      "checkedAt": "2026-10-21",
+      "outcome": "read",
+      "note": "Faculty departments/centers inventory lists Statistics and Operations Research."
+    },
+    {
+      "url": "https://www.univie.ac.at/en/about-us/organisation-and-structure",
+      "checkedAt": "2026-10-21",
+      "outcome": "blocked",
+      "note": "Official site displays preventative shutdown of central IT services due to critical PHP vulnerabilities; organizational inventory unavailable."
+    }
+  ],
+  "limitations": [
+    "University-wide engineering/technical branch inventory could not be checked: official university page announces preventative central IT shutdown. No workaround or engineering absence inferred."
+  ],
+  "duplicateOf": null
+}

@@ -1,0 +1,103 @@
+{
+  "id": "university-of-utah",
+  "status": "reviewed",
+  "canonicalName": "The University of Utah",
+  "universitySourceUrl": "https://eccles.utah.edu/faculty/department-operations-management-information-systems/",
+  "checkedAt": "2026-10-21",
+  "reviewer": "Codex in Chrome",
+  "units": [
+    {
+      "id": "university-of-utah--operations-information-systems",
+      "name": "Operations and Information Systems",
+      "school": "David Eccles School of Business",
+      "type": "department",
+      "fields": [
+        "operations-management",
+        "supply-chain"
+      ],
+      "sourceUrl": "https://eccles.utah.edu/faculty/department-operations-management-information-systems/",
+      "checkedAt": "2026-10-21",
+      "evidence": "Official heading and text explicitly name Department of Operations and Information Systems and house Operations & Supply Chain as field of study."
+    },
+    {
+      "id": "university-of-utah--mechanical-engineering",
+      "name": "Mechanical Engineering",
+      "school": "John and Marcia Price College of Engineering",
+      "type": "department",
+      "fields": [
+        "industrial-engineering"
+      ],
+      "sourceUrl": "https://systems.utah.edu/industrial/",
+      "checkedAt": "2026-10-21",
+      "evidence": "Official industrial engineering opportunities page identifies Department of Mechanical Engineering and Industrial Engineering emphasis for its BS students; no separate IE department or degree inferred."
+    }
+  ],
+  "decisions": [
+    {
+      "sourceDepartmentId": "university-of-utah",
+      "disposition": "not-a-unit",
+      "unitIds": [],
+      "reason": "Blank seed asserts no department."
+    },
+    {
+      "sourceDepartmentId": "university-of-utah____om-scm",
+      "disposition": "replaced",
+      "unitIds": [
+        "university-of-utah--operations-information-systems"
+      ],
+      "reason": "Official department page explicitly houses Operations & Supply Chain study under Operations and Information Systems; imported variants consolidated to that actual department."
+    },
+    {
+      "sourceDepartmentId": "university-of-utah____operations-and-is",
+      "disposition": "replaced",
+      "unitIds": [
+        "university-of-utah--operations-information-systems"
+      ],
+      "reason": "Official department page explicitly houses Operations & Supply Chain study under Operations and Information Systems; imported variants consolidated to that actual department."
+    },
+    {
+      "sourceDepartmentId": "university-of-utah____operations-and-supply-chain-management",
+      "disposition": "replaced",
+      "unitIds": [
+        "university-of-utah--operations-information-systems"
+      ],
+      "reason": "Official department page explicitly houses Operations & Supply Chain study under Operations and Information Systems; imported variants consolidated to that actual department."
+    },
+    {
+      "sourceDepartmentId": "university-of-utah__david-eccles-school-of-business__operations-and-information-systems",
+      "disposition": "replaced",
+      "unitIds": [
+        "university-of-utah--operations-information-systems"
+      ],
+      "reason": "Official department page explicitly houses Operations & Supply Chain study under Operations and Information Systems; imported variants consolidated to that actual department."
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://eccles.utah.edu/faculty/department-operations-management-information-systems/",
+      "checkedAt": "2026-10-21",
+      "outcome": "read",
+      "note": "Official business department name and separation of department from Operations/Supply Chain field of study."
+    },
+    {
+      "url": "https://www.price.utah.edu/",
+      "checkedAt": "2026-10-21",
+      "outcome": "read",
+      "note": "Engineering department inventory and Price College name."
+    },
+    {
+      "url": "https://systems.utah.edu/",
+      "checkedAt": "2026-10-21",
+      "outcome": "read",
+      "note": "SIME official overview describes educational programs rather than separate department; research belongs to partner departments."
+    },
+    {
+      "url": "https://systems.utah.edu/industrial/",
+      "checkedAt": "2026-10-21",
+      "outcome": "read",
+      "note": "Industrial Engineering emphasis and related departmental hosts verified; no standalone IE degree asserted."
+    }
+  ],
+  "limitations": [],
+  "duplicateOf": null
+}

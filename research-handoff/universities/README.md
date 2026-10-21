@@ -52,3 +52,9 @@ Final owner-requested pause snapshot: 47 more collected proposals integrated, gi
 ## Owner-authorized Stage 1 restart — 21 October 2026
 
 Manual source reconciliation is now active in the coordinating chat under ../priorities/README.md. Extend source coverage to OM List schools and Operations Academia university/job-posting lists before claiming frame completeness. Existing official reviews remain usable; 285 imported records need completion, and 14 compact-catalogue labels need reconciliation. Live-overlay coverage remains incomplete. Frozen shard ownership is historical; no research agents were restarted.
+
+## Stage 1 execution resumed — 21 October 2026
+
+The owner explicitly requested completion and publication of Stage 1. The coordinating chat is sole public-data integrator. Three research agents restarted under the existing CONTRACT authorization: university_a owns non-reviewed shard-a IDs, university_b shard-b, university_c shard-c, all excluding integrator overrides. Existing source records and newer corrections remain intact. The integrator owns live-source reconciliation and all overrides. Stage 2 and Stage 3 remain held; the older paused status above is historical. No background scheduling is implied.
+
+Current Stage 1 checkpoint: see [CHECKPOINT-2026-10-21.md](CHECKPOINT-2026-10-21.md) and its snapshot inventory for integrated counts, pending proposals, validation and publication state. The older pause paragraphs are historical; manual Stage 1 is active and Stage 2 remains held.

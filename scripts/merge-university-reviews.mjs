@@ -9,6 +9,10 @@ for (const input of inputs) {
   const proposal = JSON.parse(fs.readFileSync(input, 'utf8'));
   for (const r of Array.isArray(proposal) ? proposal : proposal.records || [proposal]) {
     const clean = structuredClone(r); delete clean.addedAt; delete clean.updatedAt;
+    // Unit proposals never replace the separately integrated doctoral overlay,
+    // including when a contributor copied an older public row into a proposal.
+    delete clean.doctoralReview;
+    if (records.get(clean.id)?.doctoralReview) clean.doctoralReview = records.get(clean.id).doctoralReview;
     // Preserve stamps for unchanged records; record-dates decides actual content changes.
     records.set(clean.id, { ...clean, ...(records.get(clean.id)?.addedAt ? { addedAt: records.get(clean.id).addedAt, updatedAt: records.get(clean.id).updatedAt } : {}) });
   }

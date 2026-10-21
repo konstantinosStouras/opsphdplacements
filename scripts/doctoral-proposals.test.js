@@ -1,0 +1,32 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {validateDoctoralProposal,isPhdDegree} from './doctoral-proposal-schema.mjs';
+import {isCurrentPhdProgramme} from '../assets/program-model.js';
+import {organisationRows} from '../assets/organisation-model.js';
+const universities=[{id:'u'},{id:'other'}],reviews=[{id:'u',duplicateOf:null,units:[{id:'u--operations'}]},{id:'other',duplicateOf:null,units:[{id:'other--ie'}]}];
+const proposal=()=>({universityId:'u',checkedAt:'2026-10-21',status:'verified',programmes:[{id:'u--phd-om',programName:'Business Administration',degree:'PhD',specialization:'Operations Management',school:'Business School',department:null,unitIds:['u--operations'],fields:['Operations Management'],status:'active',sourceUrl:'https://example.edu/phd',checkedAt:'2026-10-21',evidence:'Official doctoral curriculum explicitly offers Operations Management specialization.',limitations:[]}],branches:[{branch:'business',conclusion:'Named doctoral track verified; engineering not yet checked.',sourceUrls:['https://example.edu/phd']}],sources:[{url:'https://example.edu/phd',checkedAt:'2026-10-21',outcome:'read',note:'Doctoral curriculum and exact specialization read.'}],limitations:['Engineering inventory remains to be checked.']});
+test('doctoral evidence cannot be replaced by an unavailable source or a different university unit',()=>{
+ assert.doesNotThrow(()=>validateDoctoralProposal(proposal(),universities,reviews));
+ for(const change of [p=>p.sources[0].outcome='blocked',p=>p.programmes[0].checkedAt='2026-10-22',p=>p.programmes[0].unitIds=['other--ie'],p=>p.programmes=[],p=>p.programmes[0].school=undefined,p=>p.coverageComplete=true]){
+  const p=proposal();change(p);assert.throws(()=>validateDoctoralProposal(p,universities,reviews));
+ }
+});
+test('research PhD credentials remain distinct from DBA, generic doctoral wording and masters',()=>{
+ for(const degree of ['PhD','Ph.D.','Doctor of Philosophy','DPhil','Doctor of Philosophy (PhD)','Doctor of Philosophy (Ph.D.)','PhD (Doctor of Philosophy)','Doctor of Philosophy in Engineering','PhD in Engineering Systems'])assert(isPhdDegree(degree));
+ for(const degree of ['DBA','Doctoral Program','Doctorate','Master of Science'])assert(!isPhdDegree(degree));
+});
+test('current provider eligibility excludes training routes and unresolved or historical credentials',()=>{
+ assert(isCurrentPhdProgramme({status:'active',degree:'PhD'}));
+ assert(isCurrentPhdProgramme({status:'admissions-suspended',degree:'PhD'}));
+ assert(isCurrentPhdProgramme({status:'active',degree:'Dr. sc.',phdEligibility:'verified-research-doctorate',researchDoctorateEvidence:{evidence:'Research doctorate'}}));
+ for(const p of [{status:'closed',degree:'PhD'},{status:'active',degree:'PhD',programmeType:'research-training'},{status:'active',degree:'Doctoral degree',phdEligibility:'credential-unresolved'},{status:'active',degree:'DBA'}])assert(!isCurrentPhdProgramme(p));
+});
+test('doctoral routes follow stable university IDs across official-name and alias changes',()=>{
+ const u={id:'u',name:'Old English University',country:'Country',departments:[]};
+ const alias={...u,id:'alias',name:'Business School Alias'};
+ const r={id:'u',canonicalName:'Official Local Name',universitySourceUrl:'https://example.edu',checkedAt:'2026-10-21',status:'reviewed',units:[],limitations:[],decisions:[],duplicateOf:null};
+ const entity={id:'entity',name:u.name,aliases:[u.name],country:'Country',directory:{universities:[{id:'alias'}]},programs:[]};
+ const programme={id:'programme',universityId:'u',university:'A former programme label',programName:'Industrial Engineering',degree:'PhD',fields:[]};
+ const rows=organisationRows({records:[entity]},{records:[u,alias]},{records:[r,{...r,id:'alias',duplicateOf:'u'}]},{records:[programme]},...Array.from({length:4},()=>({records:[]})));
+ assert.equal(rows.length,1);assert.deepEqual(rows[0].programs.map(p=>p.id),['programme']);
+});
