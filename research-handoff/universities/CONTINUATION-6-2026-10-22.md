@@ -13,3 +13,7 @@ Coverage: 290 university-source entries have doctoral observations; 174 have com
 Validation: 39 tests and all public validators passed; four relational schema tests and SQLite rebuild passed. Deep comparison against edc94f8 confirms all 301 previous programme records unchanged. The first comparison exceeded the default output buffer; rerunning with adequate capacity passed. Imported universities, person, first-job and career datasets are unchanged. Updated static abstract unit-review count comes from the copy updater.
 
 Frozen proposals and hashes are in release-2026-10-22-continuation-6.json. The integration recipe is dated, not a refresh command. Korea's additive observation composes earlier sources; Lingnan and Emory use scope-only integration. Next work: remaining 136 pending identity/unit reviews, 85 partial and 5 blocked reviews, doctoral branch/credential gaps and five unresolved source labels. No automatic continuation was enabled.
+
+## Publication confirmed
+
+Commit 7f9086c00cd47dad358d8ba54dbe50e6580f72ff published to main and the research branch. Pages run 39744695196 succeeded with clean build and deployment. Live page verified at 295 routes and 180 providers; IIM Ahmedabad exact name and programme visible, expanded visitor text/link audit passed. Local UCF and unresolved Korea records also checked. All source tabs and local preview closed; live deliverable remains open. Exact 23 changed release files are listed in the manifest.
