@@ -1,0 +1,11 @@
+# Stage 1 continuation25 — 22 October 2026
+
+28 frozen public proposals plus5 ancillary relationship/history/ownership files. Seven new routes: KAIST Management Engineering Operations/MS and ISE; Tongji Management Science and Engineering (exact Doctor of Management Science academic PhD evidence retained); Morgan State IE, Business Administration SCM/Logistics, Transportation and Urban Infrastructure Systems, and Industrial/Computational Mathematics with explicit OR research. Broad routes not multiplied by coursework/fields.
+
+370 verified routes at230 providers in379 records. University frame666:506 reviewed,121 partial,5 blocked,34 pending. Doctoral observations519,324 current scopes complete. Nine untouched identities examined, nine unit reviews completed. All372 prior programme records preserved exactly. OM priority now162 matched leads with routes,120 complete;183 unresolved institution leads remain.
+
+Toronto Mississauga/Scarborough official shared University of Toronto awarding and tri-campus supervision relationship retained; no new campus award/provider without explicit local doctoral field mapping. Their unit reviews and Milwaukee combined supply-chain/operations/statistics area completed. Negative current doctoral scopes include Trinity, TCU, Morningside, Murray State, Henderson, High Point, Hofstra, Hood and Houston Christian; historical/permanent absence not asserted.
+
+Kazakh-American Free has actual Management PhD, but generic usually-includes-Operations description insufficient to verify local doctoral field; partial retained. KAIST wider BTM/technical fields and original combined recruitment assertion remain incomplete. Morgan exact professional D.Eng reviewed separately, original dissertation does not silently convert it into PhD; broader engineering fields still incomplete. Previous INSS unit exclusion preserved alongside independently verified SCM doctoral concentration. Original source imports/person histories untouched.
+
+48 tests, public validators and static build passed. Visitor audit and publication recorded in manifest. Intermediate Morgan26 files are superseded history only;27 pair integrated. Any later unselected proposals remain unpublished. Stages2–4 and automation held. Continue remaining Stage1 work without a batch-end stop.

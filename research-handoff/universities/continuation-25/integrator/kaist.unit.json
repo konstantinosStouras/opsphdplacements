@@ -1,0 +1,128 @@
+{
+  "id": "kaist",
+  "status": "partial",
+  "canonicalName": "Korea Advanced Institute of Science and Technology",
+  "universitySourceUrl": "https://www.kaist.ac.kr/en/",
+  "checkedAt": "2026-10-22",
+  "reviewer": "Codex in Chrome",
+  "duplicateOf": null,
+  "units": [
+    {
+      "id": "kaist--operations-strategy-management-science",
+      "name": "Operations Strategy & Management Science",
+      "school": "College of Business",
+      "type": "area",
+      "fields": [
+        "operations-management",
+        "operations-research",
+        "supply-chain"
+      ],
+      "sourceUrl": "https://www.business.kaist.edu/_prog/prof/?site_dvs_cd=en&menu_dvs_cd=050106&div_cd=C02009",
+      "checkedAt": "2026-10-22",
+      "evidence": "Current official faculty directory names the full area with a coordinator and substantive Management Science, empirical Operations and supply-chain research."
+    },
+    {
+      "id": "kaist--industrial-systems-engineering",
+      "name": "Department of Industrial & Systems Engineering",
+      "school": null,
+      "type": "department",
+      "fields": [
+        "industrial-engineering",
+        "operations-research",
+        "operations-management",
+        "supply-chain",
+        "logistics"
+      ],
+      "sourceUrl": "https://ise.kaist.ac.kr/research-areas",
+      "checkedAt": "2026-10-22",
+      "evidence": "Official department footer and full research model explicitly identify production, service operations, logistics, optimization and stochastic modelling. Actual department, distinct from its associated graduate Data Science programme."
+    }
+  ],
+  "decisions": [
+    {
+      "sourceDepartmentId": "kaist",
+      "disposition": "not-a-unit",
+      "unitIds": [],
+      "reason": "Imported placeholder is university identity, not a department."
+    },
+    {
+      "sourceDepartmentId": "kaist____organization-man-sci",
+      "disposition": "unresolved",
+      "unitIds": [],
+      "reason": "Original recruitment assertion not yet opened; cannot silently map combined Organization/Management Science wording to current Operations faculty area."
+    },
+    {
+      "sourceDepartmentId": "kaist__college-of-business__operations-strategy-and-management-science",
+      "disposition": "replaced",
+      "unitIds": [
+        "kaist--operations-strategy-management-science"
+      ],
+      "reason": "Exact imported official faculty-area page read and current area/coordinator verified; not promoted to department."
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.kaist.ac.kr/en/",
+      "checkedAt": "2026-10-22",
+      "outcome": "read",
+      "note": "Entire official university home read, exact full footer name Korea Advanced Institute of Science and Technology alongside KAIST brand and Daejeon address. Department Website menu explicitly links Industrial and Systems Engineering."
+    },
+    {
+      "url": "https://www.business.kaist.edu/_prog/prof/?site_dvs_cd=en&menu_dvs_cd=050106&div_cd=C02009",
+      "checkedAt": "2026-10-22",
+      "outcome": "read",
+      "note": "Entire imported Operations Strategy & Management Science faculty-area page read, four current listed faculty and coordinator, explicit Management Science/SCM/empirical Operations research descriptions. Retained academic area, not invented department. No person histories collected."
+    },
+    {
+      "url": "https://www.business.kaist.edu/programs/02020106",
+      "checkedAt": "2026-10-22",
+      "outcome": "read",
+      "note": "Entire Management Engineering MS/PhD overview read. Explicit seven research areas include Operations Strategy and Management Science; academic research programme. Aggregate graduate employment claims not used as person-level evidence."
+    },
+    {
+      "url": "https://www.business.kaist.edu/programs/02020107",
+      "checkedAt": "2026-10-22",
+      "outcome": "read",
+      "note": "Entire current Management Engineering curriculum page read: named Management Engineering, seven study fields, doctoral minimum66 credits with30research; scientific methods/theoretical research and explicit SCM. Detailed course PDFs not opened. Header says School of ME, body Department of ME; no administrative equivalence inferred."
+    },
+    {
+      "url": "https://ie.kaist.ac.kr/",
+      "checkedAt": "2026-10-22",
+      "outcome": "read",
+      "note": "Full rendered ISE homepage read, explicit Department of Industrial & Systems Engineering footer and Education links. Current news not used as career evidence."
+    },
+    {
+      "url": "https://ise.kaist.ac.kr/educational-programs",
+      "checkedAt": "2026-10-22",
+      "outcome": "read",
+      "note": "Full official educational-programmes page read: one undergraduate and two graduate programmes (Industrial & Systems Engineering and Data Science), explicitly MS versus PhD, PhD creative/interdisciplinary research. Graduate School Data Science launched2022; specific DS doctoral field scope not inferred solely from shared department."
+    },
+    {
+      "url": "https://ise.kaist.ac.kr/ise-course-summary",
+      "checkedAt": "2026-10-22",
+      "outcome": "read",
+      "note": "Current ISE graduate course-summary page read, links Academic Requirements, no course details itself."
+    },
+    {
+      "url": "https://ise.kaist.ac.kr/ise-masters",
+      "checkedAt": "2026-10-22",
+      "outcome": "read",
+      "note": "Actual ISE masters requirements read, explicitly master thesis and33credits; not applied to doctoral programme. Doctoral tab followed."
+    },
+    {
+      "url": "https://ise.kaist.ac.kr/0409040301",
+      "checkedAt": "2026-10-22",
+      "outcome": "read",
+      "note": "Actual Doctoral tab destination read, erroneous undergraduate breadcrumb and preparing/under-construction placeholder. No doctoral thesis-credit requirements inferred from blank body."
+    },
+    {
+      "url": "https://ise.kaist.ac.kr/research-areas",
+      "checkedAt": "2026-10-22",
+      "outcome": "read",
+      "note": "Full current ISE research-areas page read: manufacturing/production/quality/procurement/logistics, service operations/healthcare, mathematical programming/optimization/stochastic modelling and industrial AI. Substantive IE/OR scope directly stated."
+    }
+  ],
+  "limitations": [
+    "Original Organization/Management Science job assertion and wider BTM/technical academic units remain incomplete. Management Engineering school/department naming discrepancy not collapsed."
+  ]
+}

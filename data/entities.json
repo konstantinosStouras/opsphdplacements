@@ -18,7 +18,7 @@
    "phdInstitutions": 434,
    "directoryUniversities": 608,
    "firstEmployers": 493,
-   "withPrograms": 228,
+   "withPrograms": 231,
    "inBothDatabases": 210,
    "directoryOnly": 328,
    "peopleOnly": 224,
@@ -37839,7 +37839,8 @@
    "roles": [
     "phd-institution",
     "directory-university",
-    "first-employer"
+    "first-employer",
+    "program-register"
    ],
    "people": {
     "institutions": [
@@ -38005,7 +38006,30 @@
      }
     ]
    },
-   "programs": [],
+   "programs": [
+    {
+     "id": "kaist--management-engineering-phd-operations",
+     "programName": "Management Engineering",
+     "specialization": "Operations Strategy and Management Science",
+     "universityId": "kaist",
+     "school": "College of Business",
+     "degree": "PhD",
+     "field": "Operations Management; Operations Research; Supply Chain Management",
+     "status": "active",
+     "statusAsOf": "2026-10-22"
+    },
+    {
+     "id": "kaist--industrial-systems-engineering-phd",
+     "programName": "Industrial & Systems Engineering",
+     "specialization": null,
+     "universityId": "kaist",
+     "school": null,
+     "degree": "PhD",
+     "field": "Industrial Engineering; Operations Research; Supply Chain Management; Logistics",
+     "status": "active",
+     "statusAsOf": "2026-10-22"
+    }
+   ],
    "sources": [
     {
      "url": "https://omlist.edutool.org/phd/by-year.html",
@@ -38026,6 +38050,10 @@
     {
      "url": "data/placements.json",
      "title": "Verified first-job records (people database)"
+    },
+    {
+     "url": "data/doctoral-programs.json",
+     "title": "Historical doctoral program register"
     }
    ],
    "review": {
@@ -38054,12 +38082,22 @@
       "source": "employers",
       "employer": "Korea Advanced Institute of Science and Technology (KAIST Business School)",
       "match": "wikidata"
+     },
+     {
+      "source": "programs",
+      "program": "kaist--management-engineering-phd-operations",
+      "match": "exact"
+     },
+     {
+      "source": "programs",
+      "program": "kaist--industrial-systems-engineering-phd",
+      "match": "exact"
      }
     ],
     "conflicts": []
    },
    "addedAt": "2026-10-16T13:49:36Z",
-   "updatedAt": "2026-10-20T08:28:39Z"
+   "updatedAt": "2026-10-22T17:22:29Z"
   },
   {
    "id": "wd:Q525169",
@@ -73395,7 +73433,8 @@
    ],
    "logo": null,
    "roles": [
-    "directory-university"
+    "directory-university",
+    "program-register"
    ],
    "people": null,
    "directory": {
@@ -73451,19 +73490,89 @@
     ]
    },
    "employer": null,
-   "programs": [],
+   "programs": [
+    {
+     "id": "morgan-state-university--industrial-engineering-phd",
+     "programName": "Industrial Engineering",
+     "specialization": null,
+     "universityId": "morgan-state-university",
+     "school": "Clarence M. Mitchell, Jr. School of Engineering",
+     "degree": "PhD",
+     "field": "Industrial Engineering; Operations Management",
+     "status": "active",
+     "statusAsOf": "2026-10-22"
+    },
+    {
+     "id": "morgan-state-university--business-administration-phd-supply-chain-logistics",
+     "programName": "Business Administration",
+     "specialization": "Supply Chain & Logistics Management",
+     "universityId": "morgan-state-university",
+     "school": "Earl G. Graves School of Business and Management",
+     "degree": "PhD",
+     "field": "Supply Chain Management; Logistics; Operations Management",
+     "status": "active",
+     "statusAsOf": "2026-10-22"
+    },
+    {
+     "id": "morgan-state-university--transportation-urban-infrastructure-systems-phd",
+     "programName": "Transportation and Urban Infrastructure Systems",
+     "specialization": null,
+     "universityId": "morgan-state-university",
+     "school": "Clarence M. Mitchell, Jr. School of Engineering",
+     "degree": "PhD",
+     "field": "Logistics; Supply Chain Management; Operations Research",
+     "status": "active",
+     "statusAsOf": "2026-10-22"
+    },
+    {
+     "id": "morgan-state-university--industrial-computational-mathematics-phd",
+     "programName": "Industrial and Computational Mathematics",
+     "specialization": null,
+     "universityId": "morgan-state-university",
+     "school": "School of Computer, Mathematical, and Natural Sciences",
+     "degree": "PhD",
+     "field": "Operations Research",
+     "status": "active",
+     "statusAsOf": "2026-10-22"
+    }
+   ],
    "sources": [
     {
      "url": "https://www.operationsacademia.org/universities",
      "title": "Operations Academia universities directory (universities database)"
+    },
+    {
+     "url": "data/doctoral-programs.json",
+     "title": "Historical doctoral program register"
     }
    ],
    "review": {
-    "matches": [],
+    "matches": [
+     {
+      "source": "programs",
+      "program": "morgan-state-university--industrial-engineering-phd",
+      "match": "exact"
+     },
+     {
+      "source": "programs",
+      "program": "morgan-state-university--business-administration-phd-supply-chain-logistics",
+      "match": "exact"
+     },
+     {
+      "source": "programs",
+      "program": "morgan-state-university--transportation-urban-infrastructure-systems-phd",
+      "match": "exact"
+     },
+     {
+      "source": "programs",
+      "program": "morgan-state-university--industrial-computational-mathematics-phd",
+      "match": "exact"
+     }
+    ],
     "conflicts": []
    },
    "addedAt": "2026-10-16T13:49:36Z",
-   "updatedAt": "2026-10-16T13:49:36Z"
+   "updatedAt": "2026-10-22T17:22:29Z"
   },
   {
    "id": "wd:Q392754",
@@ -96220,7 +96329,8 @@
    ],
    "logo": null,
    "roles": [
-    "directory-university"
+    "directory-university",
+    "program-register"
    ],
    "people": null,
    "directory": {
@@ -96249,19 +96359,41 @@
     ]
    },
    "employer": null,
-   "programs": [],
+   "programs": [
+    {
+     "id": "tongji-university--management-science-engineering-doctorate",
+     "programName": "Management Science and Engineering",
+     "specialization": null,
+     "universityId": "tongji-university",
+     "school": "School of Economics and Management",
+     "degree": "Doctor of Management Science",
+     "field": "Operations Management; Industrial Engineering; Supply Chain Management",
+     "status": "active",
+     "statusAsOf": "2026-10-22"
+    }
+   ],
    "sources": [
     {
      "url": "https://www.operationsacademia.org/universities",
      "title": "Operations Academia universities directory (universities database)"
+    },
+    {
+     "url": "data/doctoral-programs.json",
+     "title": "Historical doctoral program register"
     }
    ],
    "review": {
-    "matches": [],
+    "matches": [
+     {
+      "source": "programs",
+      "program": "tongji-university--management-science-engineering-doctorate",
+      "match": "exact"
+     }
+    ],
     "conflicts": []
    },
    "addedAt": "2026-10-16T13:49:36Z",
-   "updatedAt": "2026-10-16T13:49:36Z"
+   "updatedAt": "2026-10-22T17:22:29Z"
   },
   {
    "id": "wd:Q1333933",
