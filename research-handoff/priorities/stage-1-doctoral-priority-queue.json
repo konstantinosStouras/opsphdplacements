@@ -6,9 +6,9 @@
   "facultyWithoutNamedPhdInstitution": 24,
   "distinctReportedInstitutionLabels": 369,
   "rankedInstitutionLeads": 366,
-  "matchedLeads": 183,
-  "unresolvedLeads": 183,
-  "withVerifiedCurrentRoutes": 162,
+  "matchedLeads": 184,
+  "unresolvedLeads": 182,
+  "withVerifiedCurrentRoutes": 163,
   "withCompletedCurrentBranchScope": 120,
   "records": [
     {
@@ -20494,11 +20494,15 @@
       "nextStep": "Resolve official identity and add/associate discovery record without speculative merge"
     },
     {
-      "id": "unresolved:university of hull",
+      "id": "hull-university-business-school",
       "name": "University of Hull",
-      "sourceUniversityIds": [],
-      "candidateUniversityIds": [],
-      "identityMatch": "unresolved discovery label",
+      "sourceUniversityIds": [
+        "hull-university-business-school"
+      ],
+      "candidateUniversityIds": [
+        "hull-university-business-school"
+      ],
+      "identityMatch": "accepted university/entity name",
       "reportedFacultyCount": 2,
       "reportedNames": [
         "University of Hull"
@@ -20508,11 +20512,96 @@
         "omlist-bbc61b228bdd656e"
       ],
       "sourceUrls": [],
-      "owners": [],
-      "doctoralObservations": [],
-      "verifiedCurrentProgrammeIds": [],
+      "owners": [
+        "shard-a"
+      ],
+      "doctoralObservations": [
+        {
+          "status": "verified",
+          "checkedAt": "2026-10-22",
+          "programmeIds": [
+            "hull-university-business-school--business-management-logistics-phd"
+          ],
+          "branches": [
+            {
+              "branch": "business",
+              "reviewState": "checked",
+              "conclusion": "Full current business research-degree page, actual six award options, logistics doctoral topic and systems-studies topic read. Explicit logistics/supply-chain PhD supervision verified as one route; broad systems-studies prose not promoted as a second Ops route without substantive specific evidence.",
+              "sourceUrls": [
+                "https://www.hull.ac.uk/study/postgraduate-research/courses/business-and-management-research-degrees",
+                "https://www.hull.ac.uk/about/faculties/hull-university-business-school",
+                "https://www.hull.ac.uk/research/centres/logistics-institute"
+              ]
+            },
+            {
+              "branch": "engineering",
+              "reviewState": "partial",
+              "conclusion": "Complete institutional PGR area index and engineering school/faculty structures read, plus broad engineering degree page and expanded sustainable topic. Computing, Data Science, Mathematics and remaining engineering research panels await scope review; physical manufacturing/control optimisation alone does not establish an additional IE/Ops doctorate.",
+              "sourceUrls": [
+                "https://www.hull.ac.uk/study/postgraduate-research/courses",
+                "https://www.hull.ac.uk/about/faculties/faculty-of-science-and-engineering",
+                "https://www.hull.ac.uk/about/faculties/faculty-of-science-and-engineering/school-of-engineering-and-technology",
+                "https://www.hull.ac.uk/study/postgraduate-research/courses/engineering-research-degrees"
+              ]
+            }
+          ],
+          "sources": [
+            {
+              "url": "https://www.hull.ac.uk/about/faculties/hull-university-business-school",
+              "checkedAt": "2026-10-22",
+              "outcome": "read",
+              "note": "Read complete current Hull University Business School page, explicit university identity, school research priorities and Logistics Institute host. Dynamic staff/course lists displayed filters but no entries."
+            },
+            {
+              "url": "https://www.hull.ac.uk/study/postgraduate-research/courses/business-and-management-research-degrees",
+              "checkedAt": "2026-10-22",
+              "outcome": "read",
+              "note": "Read full current research-degree overview and expanded All Business and Management research programmes, Logistics and Supply Chain Management, and Centre for Systems Studies. Explicit PhD original research and logistics supervision; logistics research covers port logistics, manufacturing/service supply chains, digital/sustainable/circular supply chains. Actual six degree options read. Management selected and verified current URL option=phd-management and corresponding application course RPMANAX; no application submitted. Overview calls PhD Logistics but selectable awards have no Logistics title; do not invent separate degree."
+            },
+            {
+              "url": "https://www.hull.ac.uk/research/centres/logistics-institute",
+              "checkedAt": "2026-10-22",
+              "outcome": "read",
+              "note": "Read entire Logistics Institute page: current school-hosted research centre for supply chains, end-to-end global optimisation, logistics hubs/corridors, freight decarbonisation, digital supply chains and business process improvement. Not independently assumed degree-awarding unit."
+            },
+            {
+              "url": "https://www.hull.ac.uk/study/postgraduate-research/courses",
+              "checkedAt": "2026-10-22",
+              "outcome": "read",
+              "note": "Read complete institutional postgraduate research areas A–Z. Relevant further technical candidates Computer Science, Data Science, Mathematics and Engineering; not all detailed pages inspected yet."
+            },
+            {
+              "url": "https://www.hull.ac.uk/about/faculties/faculty-of-science-and-engineering",
+              "checkedAt": "2026-10-22",
+              "outcome": "read",
+              "note": "Read full Science and Engineering faculty structure: Engineering and Technology, Digital and Physical Sciences, Environmental and Life Sciences, and EEI."
+            },
+            {
+              "url": "https://www.hull.ac.uk/about/faculties/faculty-of-science-and-engineering/school-of-engineering-and-technology",
+              "checkedAt": "2026-10-22",
+              "outcome": "read",
+              "note": "Read full current Engineering and Technology school overview, four research priority headings. Dynamic course list displayed filters without entries; not counted as an enumerated degree inventory."
+            },
+            {
+              "url": "https://www.hull.ac.uk/study/postgraduate-research/courses/engineering-research-degrees",
+              "checkedAt": "2026-10-22",
+              "outcome": "read",
+              "note": "Read full Engineering research-degree overview and expanded Sustainable Engineering topic. Broad PhD and MSc by Thesis provision; detailed sustainable research materials/manufacturing technologies, device/control/chemical-energy processes. No industrial-system route inferred from physical process optimisation alone. Other topic panels, actual all-programmes accordion and computing/data/mathematics candidates remain unread."
+            }
+          ],
+          "limitations": [
+            "Business school source identity and relevant current units verified. Current Engineering and Technology school observed, but its wider doctoral scope remains incomplete separately.",
+            "PhD overview says Logistics while selector offers Management and five other titles. Logistics doctoral provision is explicit, but exact formal registration title for a logistics student is not established.",
+            "Current technical branch coverage remains incomplete; no exhaustive doctoral census or additional engineering absence claimed."
+          ],
+          "coverageComplete": false
+        }
+      ],
+      "verifiedCurrentProgrammeIds": [
+        "hull-university-business-school--business-management-logistics-phd"
+      ],
       "branchCoverageComplete": false,
-      "nextStep": "Resolve official identity and add/associate discovery record without speculative merge"
+      "nextStep": "Verify official current relevant doctoral routes across business and engineering; record branch gaps"
     },
     {
       "id": "university-of-illinois-at-chicago",
@@ -23026,11 +23115,17 @@
             {
               "branch": "business",
               "reviewState": "partial",
-              "conclusion": "Seoul Management Engineering Ops/MS PhD verified; Daejeon Business and Technology Management wider research inventory not yet read.",
+              "conclusion": "Seoul Management Engineering Ops/MS PhD verified. Daejeon BTM graduate admissions, complete requirement tables and displayed research-area inventory now read; no explicit qualifying field on those pages. Other affiliated innovation/Bio/Global Digital graduate schools still require field checks.",
               "sourceUrls": [
                 "https://www.business.kaist.edu/programs/02020106",
                 "https://www.business.kaist.edu/programs/02020107",
-                "https://www.business.kaist.edu/_prog/prof/?site_dvs_cd=en&menu_dvs_cd=050106&div_cd=C02009"
+                "https://www.business.kaist.edu/_prog/prof/?site_dvs_cd=en&menu_dvs_cd=050106&div_cd=C02009",
+                "https://www.business.kaist.edu/programs/020601",
+                "https://btm.kaist.ac.kr/en/index.do",
+                "https://btm.kaist.ac.kr/index.do?menuSeq=3448",
+                "https://btm.kaist.ac.kr/index.do?menuSeq=3469",
+                "https://btm.kaist.ac.kr/index.do?menuSeq=3479",
+                "https://btm.kaist.ac.kr/index.do?menuSeq=3499"
               ]
             },
             {
@@ -23103,10 +23198,47 @@
               "checkedAt": "2026-10-22",
               "outcome": "read",
               "note": "Full current ISE research-areas page read: manufacturing/production/quality/procurement/logistics, service operations/healthcare, mathematical programming/optimization/stochastic modelling and industrial AI. Substantive IE/OR scope directly stated."
+            },
+            {
+              "url": "https://www.business.kaist.edu/programs/020601",
+              "note": "Full BTM programme overview read. Explicit School of Business and Technology Management BS/MS/PhD, and separate Innovation/Technology, Global Digital Innovation, Bio Innovation and K-School links. Historical2009ManagementScience/2013BTMnames stated but no imported recruitment equivalence inferred.",
+              "checkedAt": "2026-10-22",
+              "outcome": "read"
+            },
+            {
+              "url": "https://btm.kaist.ac.kr/en/index.do",
+              "note": "Official BTM homepage eventually loaded after navigation timeout; actual school name read. Timeout alone not recorded as unavailable.",
+              "checkedAt": "2026-10-22",
+              "outcome": "read"
+            },
+            {
+              "url": "https://btm.kaist.ac.kr/index.do?menuSeq=3448",
+              "note": "Actual Programs page defaults undergraduate curriculum heading with no rendered curriculum body; no graduate inference made.",
+              "checkedAt": "2026-10-22",
+              "outcome": "read"
+            },
+            {
+              "url": "https://btm.kaist.ac.kr/index.do?menuSeq=3469",
+              "note": "Full current graduate admissions page read after delayed load. Explicit Masters/PhD research plan, proposed supervisor and research-lab alignment; no contacts sent.",
+              "checkedAt": "2026-10-22",
+              "outcome": "read"
+            },
+            {
+              "url": "https://btm.kaist.ac.kr/index.do?menuSeq=3479",
+              "note": "Full current/historical graduate requirement tables read through footer. Doctoral66credits including30research, methodologies/statistics/econometrics, distinguished from master33credits. Generic quantitative methods not Operations research field.",
+              "checkedAt": "2026-10-22",
+              "outcome": "read"
+            },
+            {
+              "url": "https://btm.kaist.ac.kr/index.do?menuSeq=3499",
+              "note": "Full research-area inventory read: innovation systems, enterprise/industry convergence, digital media, IT, sustainability/social management and innovation/commercialization. No explicit substantive Ops/OR/IE field on this inventory; BTM PhD not counted from generic system/technology wording.",
+              "checkedAt": "2026-10-22",
+              "outcome": "read"
             }
           ],
           "limitations": [
-            "Current two independently verified relevant routes, not complete university doctoral inventory. No dates, historical awards or standalone subfield degrees inferred."
+            "Current two independently verified relevant routes, not complete university doctoral inventory. No dates, historical awards or standalone subfield degrees inferred.",
+            "BTM additional official sources read22October; no third eligible route inferred. Initial navigation timeouts recovered into actual rendered pages. Other affiliated graduate schools and wider technical scopes remain incomplete."
           ],
           "coverageComplete": false
         }

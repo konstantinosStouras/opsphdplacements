@@ -9,3 +9,5 @@ Toronto Mississauga/Scarborough official shared University of Toronto awarding a
 Kazakh-American Free has actual Management PhD, but generic usually-includes-Operations description insufficient to verify local doctoral field; partial retained. KAIST wider BTM/technical fields and original combined recruitment assertion remain incomplete. Morgan exact professional D.Eng reviewed separately, original dissertation does not silently convert it into PhD; broader engineering fields still incomplete. Previous INSS unit exclusion preserved alongside independently verified SCM doctoral concentration. Original source imports/person histories untouched.
 
 48 tests, public validators and static build passed. Visitor audit and publication recorded in manifest. Intermediate Morgan26 files are superseded history only;27 pair integrated. Any later unselected proposals remain unpublished. Stages2–4 and automation held. Continue remaining Stage1 work without a batch-end stop.
+
+Published ae7053f, Pages39822484706 succeeded. Live KAIST2route row checked; screenshot capture initially timed out, recovered after independent work and stage1-release25-live.png saved/shown.
