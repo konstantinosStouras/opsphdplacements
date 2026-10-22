@@ -9,3 +9,5 @@ KEDGE existing MOSI/CESIT stable IDs and original21October unit facts preserved;
 Notre Dame central Analytics doctorate exists but detailed field page under security maintenance, so no qualifying route inferred. Memphis structural department naming discrepancy and wider technical fields remain partial. Oxford technical doctoral fields incomplete. Guangzhou data-science research scope/award relationship remain unresolved. All individual blockers retained while other research continues.
 
 Validation:48 tests, public validators and static build passed. Expanded KEDGE evidence visitor audit passed, no visible internal filenames or project repository links. Publication confirmation follows. Other continuation24 and continuation25 onward files remain unpublished; only manifest-selected files included. Stages2-4 and automation held. Continue remaining Stage1 identities, doctoral scopes and source reconciliation.
+
+Published f56c5cc; Pages run39779221163 succeeded. Live KEDGE record confirmed22October; screenshot stage1-release23-live.png saved and shown.

@@ -1,0 +1,65 @@
+{
+  "universityId": "harris-stowe-state-university",
+  "checkedAt": "2026-10-22",
+  "status": "partial",
+  "coverageComplete": false,
+  "programmes": [],
+  "branches": [
+    {
+      "branch": "business",
+      "reviewState": "partial",
+      "conclusion": "Full business department/programme overviews and institutional degree list read, but MBA navigation conflicts with otherwise baccalaureate inventory and the MBA destination fails with redirect loop. No business/Operations research doctorate verified; current complete graduate scope unresolved.",
+      "sourceUrls": [
+        "https://www.hssu.edu/rsp_content.html?wid=36&pid=236",
+        "https://www.hssu.edu/MBA",
+        "https://go.hssu.edu/rsp_content.html?wid=50&pid=476",
+        "https://go.hssu.edu/rsp_content.html?wid=50&pid=473"
+      ]
+    },
+    {
+      "branch": "engineering",
+      "reviewState": "checked",
+      "conclusion": "Complete displayed institutional academic programme list and mission read: bachelor’s/BSED and undergraduate certificate, with maths/ISCT but no engineering/IE/OR doctorate. No graduate engineering provision inferred from broad STEM mission or MIS techniques.",
+      "sourceUrls": [
+        "https://go.hssu.edu/rsp_content.html?wid=50&pid=476",
+        "https://go.hssu.edu/rsp_content.html?wid=50&pid=473"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.hssu.edu/rsp_content.html?wid=36&pid=236",
+      "note": "Waited for dynamic content then read entire official Anheuser-Busch School of Business programme page. Explicit Department of Information Science and Computer Technology, with Management Information Systems an undergraduate BS emphasis, including cyber/data/computer tracks. MIS description concerns information systems, software/database and management tools, not a separately constituted Operations department. All six department headings and curriculum overviews read; linked PDFs not opened.",
+      "outcome": "read",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "url": "https://www.hssu.edu/MBA",
+      "note": "Followed official school navigation MBA Program link. Chrome returned too many redirects; MBA content and current complete graduate provision unreviewed. No workaround.",
+      "outcome": "blocked",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "url": "https://www.hssu.edu/",
+      "note": "Read complete current university homepage, academic offices and identity. Current graduate award detail not present; descriptive counts not imported.",
+      "outcome": "read",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "url": "https://go.hssu.edu/rsp_content.html?wid=50&pid=476",
+      "note": "Official mission link redirected here; read full mission. Explicit baccalaureate mission in business, education, arts/sciences and STEM. This may predate new MBA navigation and is not alone proof of no graduate provision.",
+      "outcome": "read",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "url": "https://go.hssu.edu/rsp_content.html?wid=50&pid=473",
+      "note": "Waited for dynamic academic content then read entire institutional Academic Programs list and every degree/option. Listed direct degrees Bachelor of Science/BSED plus undergraduate certificate, no engineering research doctorate. Missing MBA despite school navigation, so current full graduate scope remains unresolved.",
+      "outcome": "read",
+      "checkedAt": "2026-10-22"
+    }
+  ],
+  "limitations": [
+    "Current business graduate coverage remains incomplete because official MBA destination is unavailable and institutional inventory omits that linked programme. No doctoral absence or completion inferred from potentially older undergraduate list.",
+    "No linked curriculum PDFs downloaded/read; programme/department identity uses fully rendered official HTML."
+  ]
+}
