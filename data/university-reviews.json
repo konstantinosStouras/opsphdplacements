@@ -3,11 +3,11 @@
   "metadata": {
     "definition": "Individual Chrome reviews of official university names and operations units. The original directory remains in universities.json. Reviewed describes the stated source scope, not an exhaustive current or historical census.",
     "sourceRecords": 666,
-    "attempted": 577,
-    "reviewed": 468,
-    "partial": 104,
+    "attempted": 587,
+    "reviewed": 474,
+    "partial": 108,
     "blocked": 5,
-    "pending": 89
+    "pending": 79
   },
   "records": [
     {
@@ -20324,6 +20324,296 @@
       },
       "addedAt": "2026-10-22T11:55:34Z",
       "updatedAt": "2026-10-22T11:55:34Z"
+    },
+    {
+      "id": "florida-state-university",
+      "status": "partial",
+      "canonicalName": "Florida State University",
+      "universitySourceUrl": "https://wertheim.fsu.edu/phd",
+      "checkedAt": "2026-10-22",
+      "reviewer": "Codex in Chrome",
+      "units": [
+        {
+          "id": "florida-state-university--business-analytics-information-systems-supply-chain",
+          "name": "Department of Business Analytics, Information Systems and Supply Chain",
+          "school": "Herbert Wertheim College of Business",
+          "type": "department",
+          "fields": [
+            "operations-management",
+            "supply-chain"
+          ],
+          "sourceUrl": "https://wertheim.fsu.edu/departments/baissc",
+          "checkedAt": "2026-10-22",
+          "evidence": "The official department gives its exact expanded name, SCM coordination and optimization scope and MIS doctoral programme coordinator. Its MIS PhD page explicitly includes service and retail operations research with operations management, management science and supply chain expertise."
+        },
+        {
+          "id": "florida-state-university--industrial-manufacturing-engineering",
+          "name": "Department of Industrial and Manufacturing Engineering",
+          "school": "FAMU-FSU College of Engineering",
+          "type": "department",
+          "fields": [
+            "industrial-engineering",
+            "operations-management"
+          ],
+          "sourceUrl": "https://eng.famu.fsu.edu/ime",
+          "checkedAt": "2026-10-22",
+          "evidence": "The joint official department states design, improvement and installation of integrated systems of people, materials, information, equipment and energy. Its degree matrix explicitly provides Industrial Engineering PhD, linked from the FSU doctoral inventory."
+        },
+        {
+          "id": "florida-state-university--joint-civil-environmental-engineering",
+          "name": "Department of Civil and Environmental Engineering",
+          "school": "FAMU-FSU College of Engineering",
+          "type": "department",
+          "fields": [
+            "operations-research",
+            "logistics",
+            "operations-management"
+          ],
+          "sourceUrl": "https://eng.famu.fsu.edu/cee/research/intelligent-mobility-and-community-resilience",
+          "checkedAt": "2026-10-22",
+          "evidence": "The official graduate programme links this department research field. Intelligent Mobility and Logistics explicitly concerns smart logistics and optimization, freight logistics and traffic operations, using simulation and optimization to allocate infrastructure/resources and emergency shelter capacity."
+        }
+      ],
+      "decisions": [
+        {
+          "sourceDepartmentId": "florida-state-university____is-analytics",
+          "disposition": "replaced",
+          "unitIds": [
+            "florida-state-university--business-analytics-information-systems-supply-chain"
+          ],
+          "reason": "The current expanded IS/Analytics host is Department of Business Analytics, Information Systems and Supply Chain, independently verified with exact current name and doctoral provision."
+        },
+        {
+          "sourceDepartmentId": "florida-state-university__college-of-business__marketing",
+          "disposition": "unresolved",
+          "unitIds": [],
+          "reason": "Current FSU business structure explicitly names Dr. Persis E. Rockwood School of Marketing, whose stated scope is marketing/sales/consumer research. The imported Marketing row has a Tampa/USF address inconsistent with official Tallahassee FSU; historical source identity and organizational succession remain unresolved."
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://gradschool.fsu.edu/degrees-and-programs/degree-programs/doctoral-degree-programs",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Read full unfiltered doctoral programme inventory, including business seven majors and engineering Industrial Engineering entry linking joint FAMU-FSU department. Full programme titles read; personal contact details not extracted."
+        },
+        {
+          "url": "https://gradschool.fsu.edu/program/industrial-engineering",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Read full Industrial Engineering representative page; explicitly marked Masters with Engineering Management/Systems links. This particular page does not prove PhD, which is separately established in doctoral inventory and joint departmental programme."
+        },
+        {
+          "url": "https://eng.famu.fsu.edu/ime/graduate/phd",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Read complete current IME PhD overview, department breadcrumb and joint Florida A&M/Florida State College of Engineering footer."
+        },
+        {
+          "url": "https://eng.famu.fsu.edu/ime/graduate/phdrequirements",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Read complete visible doctoral requirements and expanded default BS-PhD panel, exact Industrial/Manufacturing degree wording, IE core, applied optimization, literature review, research topic and 24 dissertation hours. MS-PhD and preliminary-exam panels not expanded; PDF handbook not read."
+        },
+        {
+          "url": "https://eng.famu.fsu.edu/ime",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Read full official department overview, exact Department of Industrial and Manufacturing Engineering, integrated people/material/information/equipment systems scope and degree matrix explicitly Industrial Engineering PhD. Systems Engineering is masters only in this matrix."
+        },
+        {
+          "url": "https://wertheim.fsu.edu/phd",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "business.fsu.edu/phd redirects to wertheim.fsu.edu/phd. Read full current Business Administration PhD overview and all seven majors; exact Herbert Wertheim College of Business and Tallahassee address."
+        },
+        {
+          "url": "https://wertheim.fsu.edu/academics",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "wertheim.fsu.edu/departments redirects to /academics. Read complete business academic unit/programme list; exact Business Analytics/Information Systems/Supply Chain department, MIS PhD host and Rockwood Marketing school."
+        },
+        {
+          "url": "https://wertheim.fsu.edu/phd-mis",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Read complete visible MIS PhD overview; actual Business Administration PhD major MIS. Programme explicitly includes service and retail operations research, cross-field operations management, management science and supply chain expertise. Collapsed requirements panels not read."
+        },
+        {
+          "url": "https://wertheim.fsu.edu/departments/baissc",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Read complete BAISSC department page, exact expanded name and parent college, SCM flow/coordination/optimization scope, degree options and MIS PhD coordinator."
+        },
+        {
+          "url": "https://wertheim.fsu.edu/departments/marketing",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Read complete current Rockwood School of Marketing page; explicit marketing strategy, sales, consumer research and multinational business, not independently an Operations unit. Current Tallahassee address conflicts with imported Tampa/USF source address."
+        },
+        {
+          "url": "https://eng.famu.fsu.edu/academics",
+          "checkedAt": "2026-10-22",
+          "outcome": "blocked",
+          "note": "Opened official All Degree Programs navigation destination and received You are not authorized to access this page. No login, workaround or bypass attempted. Independently linked departmental pages remain readable."
+        },
+        {
+          "url": "https://eng.famu.fsu.edu/cee",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Read full CEE overview, exact Department of Civil and Environmental Engineering, degree matrix Civil Engineering PhD and research fields. No individual graduate enumeration."
+        },
+        {
+          "url": "https://eng.famu.fsu.edu/cee/graduate/programs",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Read full visible graduate overview and expanded MS-to-PhD panel. Explicit Civil Engineering PhD research degree requiring original independent scholarly work and dissertation. Admission through either FAMU or FSU explicitly stated. Separate BS entry panel not expanded."
+        },
+        {
+          "url": "https://eng.famu.fsu.edu/cee/research/intelligent-mobility-and-community-resilience",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Read complete current research field, all two focus areas, three laboratory/centre descriptions and example projects. Explicit Smart logistics and optimization, traffic operations, freight logistics, evacuation modelling and shelter capacity/access optimization. Research page linked directly from graduate programme structure."
+        }
+      ],
+      "limitations": [
+        "The imported Marketing row’s Tampa/USF address is not silently transferred to Florida State or merged with University of South Florida. Current FSU school identity is observed separately.",
+        "Joint FAMU-FSU engineering provision is retained as a shared college relationship. No duplicate second programme under Florida A&M is created; separate degree-awarding/registration mechanics are not inferred.",
+        "The broader technical and mathematical doctoral research inventories remain to be checked beyond the verified Industrial Engineering, Civil mobility/logistics and business MIS routes."
+      ],
+      "duplicateOf": null,
+      "doctoralReview": {
+        "status": "verified",
+        "checkedAt": "2026-10-22",
+        "programmeIds": [
+          "florida-state-university--business-mis-service-retail-operations-phd",
+          "florida-state-university--joint-famu-fsu-civil-mobility-logistics-phd",
+          "florida-state-university--joint-famu-fsu-industrial-engineering-phd"
+        ],
+        "branches": [
+          {
+            "branch": "business",
+            "reviewState": "checked",
+            "conclusion": "Read full seven-major Business Administration doctoral inventory, current business structure, full relevant BAISSC unit and MIS doctoral research overview. MIS explicitly includes service/retail operations. Other named business majors are accounting, finance, marketing, OB/HR, risk/insurance and strategy; no separate Operations degree is claimed.",
+            "sourceUrls": [
+              "https://wertheim.fsu.edu/phd",
+              "https://wertheim.fsu.edu/academics",
+              "https://wertheim.fsu.edu/phd-mis",
+              "https://wertheim.fsu.edu/departments/baissc",
+              "https://wertheim.fsu.edu/departments/marketing"
+            ]
+          },
+          {
+            "branch": "engineering",
+            "reviewState": "partial",
+            "conclusion": "Full central doctoral inventory read; Industrial Engineering and Civil mobility/logistics routes verified in the joint FAMU-FSU college, with explicit Civil admission via either institution. All Degree Programs page is access denied. Wider technical/mathematical doctoral fields remain unexhausted; institutional coverage remains incomplete.",
+            "sourceUrls": [
+              "https://gradschool.fsu.edu/degrees-and-programs/degree-programs/doctoral-degree-programs",
+              "https://eng.famu.fsu.edu/ime",
+              "https://eng.famu.fsu.edu/ime/graduate/phd",
+              "https://eng.famu.fsu.edu/ime/graduate/phdrequirements",
+              "https://eng.famu.fsu.edu/academics",
+              "https://eng.famu.fsu.edu/cee",
+              "https://eng.famu.fsu.edu/cee/graduate/programs",
+              "https://eng.famu.fsu.edu/cee/research/intelligent-mobility-and-community-resilience"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://gradschool.fsu.edu/degrees-and-programs/degree-programs/doctoral-degree-programs",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Read full unfiltered doctoral programme inventory, including business seven majors and engineering Industrial Engineering entry linking joint FAMU-FSU department. Full programme titles read; personal contact details not extracted."
+          },
+          {
+            "url": "https://gradschool.fsu.edu/program/industrial-engineering",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Read full Industrial Engineering representative page; explicitly marked Masters with Engineering Management/Systems links. This particular page does not prove PhD, which is separately established in doctoral inventory and joint departmental programme."
+          },
+          {
+            "url": "https://eng.famu.fsu.edu/ime/graduate/phd",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Read complete current IME PhD overview, department breadcrumb and joint Florida A&M/Florida State College of Engineering footer."
+          },
+          {
+            "url": "https://eng.famu.fsu.edu/ime/graduate/phdrequirements",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Read complete visible doctoral requirements and expanded default BS-PhD panel, exact Industrial/Manufacturing degree wording, IE core, applied optimization, literature review, research topic and 24 dissertation hours. MS-PhD and preliminary-exam panels not expanded; PDF handbook not read."
+          },
+          {
+            "url": "https://eng.famu.fsu.edu/ime",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Read full official department overview, exact Department of Industrial and Manufacturing Engineering, integrated people/material/information/equipment systems scope and degree matrix explicitly Industrial Engineering PhD. Systems Engineering is masters only in this matrix."
+          },
+          {
+            "url": "https://wertheim.fsu.edu/phd",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "business.fsu.edu/phd redirects to wertheim.fsu.edu/phd. Read full current Business Administration PhD overview and all seven majors; exact Herbert Wertheim College of Business and Tallahassee address."
+          },
+          {
+            "url": "https://wertheim.fsu.edu/academics",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "wertheim.fsu.edu/departments redirects to /academics. Read complete business academic unit/programme list; exact Business Analytics/Information Systems/Supply Chain department, MIS PhD host and Rockwood Marketing school."
+          },
+          {
+            "url": "https://wertheim.fsu.edu/phd-mis",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Read complete visible MIS PhD overview; actual Business Administration PhD major MIS. Programme explicitly includes service and retail operations research, cross-field operations management, management science and supply chain expertise. Collapsed requirements panels not read."
+          },
+          {
+            "url": "https://wertheim.fsu.edu/departments/baissc",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Read complete BAISSC department page, exact expanded name and parent college, SCM flow/coordination/optimization scope, degree options and MIS PhD coordinator."
+          },
+          {
+            "url": "https://wertheim.fsu.edu/departments/marketing",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Read complete current Rockwood School of Marketing page; explicit marketing strategy, sales, consumer research and multinational business, not independently an Operations unit. Current Tallahassee address conflicts with imported Tampa/USF source address."
+          },
+          {
+            "url": "https://eng.famu.fsu.edu/academics",
+            "checkedAt": "2026-10-22",
+            "outcome": "blocked",
+            "note": "Opened official All Degree Programs navigation destination and received You are not authorized to access this page. No login, workaround or bypass attempted. Independently linked departmental pages remain readable."
+          },
+          {
+            "url": "https://eng.famu.fsu.edu/cee",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Read full CEE overview, exact Department of Civil and Environmental Engineering, degree matrix Civil Engineering PhD and research fields. No individual graduate enumeration."
+          },
+          {
+            "url": "https://eng.famu.fsu.edu/cee/graduate/programs",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Read full visible graduate overview and expanded MS-to-PhD panel. Explicit Civil Engineering PhD research degree requiring original independent scholarly work and dissertation. Admission through either FAMU or FSU explicitly stated. Separate BS entry panel not expanded."
+          },
+          {
+            "url": "https://eng.famu.fsu.edu/cee/research/intelligent-mobility-and-community-resilience",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Read complete current research field, all two focus areas, three laboratory/centre descriptions and example projects. Explicit Smart logistics and optimization, traffic operations, freight logistics, evacuation modelling and shelter capacity/access optimization. Research page linked directly from graduate programme structure."
+          }
+        ],
+        "limitations": [
+          "Current Industrial Engineering, Civil mobility/logistics and MIS doctoral facts are verified; broader technical and mathematical branch coverage remains incomplete.",
+          "Joint programme/provider overlap and degree-title variation are preserved explicitly; no duplicate FAMU programme is assumed.",
+          "Historical Marketing address/source identity issue remains separate from current doctoral inclusion."
+        ],
+        "coverageComplete": false
+      },
+      "addedAt": "2026-10-22T12:08:40Z",
+      "updatedAt": "2026-10-22T12:08:40Z"
     },
     {
       "id": "frankfurt-school-of-finance-and-management",
@@ -49275,6 +49565,392 @@
       "updatedAt": "2026-10-22T11:55:34Z"
     },
     {
+      "id": "tennessee-tech-university",
+      "status": "partial",
+      "canonicalName": "Tennessee Tech University",
+      "universitySourceUrl": "https://www.tntech.edu/engineering/mise/about.php",
+      "checkedAt": "2026-10-22",
+      "reviewer": "Codex in Chrome",
+      "duplicateOf": null,
+      "units": [
+        {
+          "id": "tennessee-tech-university--decision-sciences-management",
+          "name": "Department of Decision Sciences and Management",
+          "type": "department",
+          "school": "College of Business",
+          "fields": [
+            "operations-management",
+            "supply-chain",
+            "logistics"
+          ],
+          "sourceUrl": "https://www.tntech.edu/majors/business-management_production-operations-management.php",
+          "checkedAt": "2026-10-22",
+          "evidence": "Formal Operations Logistics and Supply Chain Management concentration page directly identifies actual departmental host and substantive production/process/quality/productivity curriculum."
+        },
+        {
+          "id": "tennessee-tech-university--manufacturing-industrial-systems-engineering",
+          "name": "Department of Manufacturing and Industrial Systems Engineering",
+          "type": "department",
+          "school": "College of Engineering",
+          "fields": [
+            "industrial-engineering",
+            "operations-management"
+          ],
+          "sourceUrl": "https://www.tntech.edu/engineering/mise/about.php",
+          "checkedAt": "2026-10-22",
+          "evidence": "Official department introduction establishes actual MISE and substantive industrial/systems engineering, quality/process improvement and engineering management remit, with bachelor/master/minor programmes."
+        }
+      ],
+      "decisions": [
+        {
+          "sourceDepartmentId": "tennessee-tech-university____decision-sciences",
+          "disposition": "replaced",
+          "unitIds": [
+            "tennessee-tech-university--decision-sciences-management"
+          ],
+          "reason": "Current exact Decision Sciences and Management department directly observed as Ops/Logistics/SCM academic concentration host; short imported subject label replaced by full official unit."
+        },
+        {
+          "sourceDepartmentId": "tennessee-tech-university____is",
+          "disposition": "unresolved",
+          "unitIds": [],
+          "reason": "Current Business and Information Technology concentration has same Decision Sciences and Management host, but imported IS acronym and historical source equivalence remain unverified. No expansion from memory."
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.tntech.edu/engineering/mise/about.php",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Entire official Department of Manufacturing and Industrial Systems Engineering About page read. Actual MISE department, substantive industrial/systems engineering, production process/quality improvement, engineering management and technical fields. Bachelor/master/minor delivery explicitly; no PhD attached to this department by this source."
+        },
+        {
+          "url": "https://www.tntech.edu/engineering/graduate/doctoral-degree.php",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Entire rendered College of Engineering Doctoral Programs overview read. Actual Engineering PhD concentrations Chemical, Civil, Electrical/Computer and Mechanical; separate Computer Science PhD began August 2025 replacing prior Engineering concentration. Detailed Mechanical manufacturing/industrial research scope not examined. Collapsed requirements sections not described as read."
+        },
+        {
+          "url": "https://www.tntech.edu/majors/business-management_production-operations-management.php",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Entire formal Operations Logistics and Supply Chain Management BSBA concentration page read. Exact Department of Decision Sciences and Management identified in Department Information. Programme describes production systems, process/quality/productivity improvement and analytical decisions, not merely one Operations course."
+        },
+        {
+          "url": "https://www.tntech.edu/business/index.php",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Entire current College of Business overview read. Actual graduate provision MBA and Master of Accountancy, undergraduate programmes; no business PhD listed."
+        },
+        {
+          "url": "https://www.tntech.edu/majors/business-management_business-information-technology.php",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Entire Business and Information Technology BSBA concentration page read. Same exact Department of Decision Sciences and Management named. Does not establish imported IS historical acronym expansion/equivalence; no unsupported rename inferred."
+        },
+        {
+          "url": "https://www.tntech.edu/majors#doctoral",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Current majors directory shell rendered with search but no programme list in visible body; observed direct programme links followed and individually read. Shell not treated full all-programme inventory."
+        }
+      ],
+      "limitations": [
+        "Imported IS acronym historical source and exact expansion remain unresolved; current Business and Information Technology concentration not automatically same imported department.",
+        "MISE current bachelor/master/minor scope does not exclude relevant research within actual Mechanical Engineering PhD; detailed doctoral field mapping remains incomplete."
+      ],
+      "doctoralReview": {
+        "status": "partial",
+        "checkedAt": "2026-10-22",
+        "programmeIds": [],
+        "branches": [
+          {
+            "branch": "business",
+            "reviewState": "checked",
+            "sourceUrls": [
+              "https://www.tntech.edu/business/index.php",
+              "https://www.tntech.edu/majors/business-management_production-operations-management.php",
+              "https://www.tntech.edu/majors/business-management_business-information-technology.php"
+            ],
+            "conclusion": "Current college graduate provision MBA and MAcc; formal Ops/SCM concentration is undergraduate BSBA, not PhD."
+          },
+          {
+            "branch": "engineering",
+            "reviewState": "partial",
+            "sourceUrls": [
+              "https://www.tntech.edu/engineering/mise/about.php",
+              "https://www.tntech.edu/engineering/graduate/doctoral-degree.php"
+            ],
+            "conclusion": "MISE current bachelor/master/minor unit verified. Engineering PhD four concentrations and separate Computer Science PhD actual; detailed relevant Mechanical/other research fields not examined. No fabricated standalone IE PhD."
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://www.tntech.edu/engineering/mise/about.php",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Entire official Department of Manufacturing and Industrial Systems Engineering About page read. Actual MISE department, substantive industrial/systems engineering, production process/quality improvement, engineering management and technical fields. Bachelor/master/minor delivery explicitly; no PhD attached to this department by this source."
+          },
+          {
+            "url": "https://www.tntech.edu/engineering/graduate/doctoral-degree.php",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Entire rendered College of Engineering Doctoral Programs overview read. Actual Engineering PhD concentrations Chemical, Civil, Electrical/Computer and Mechanical; separate Computer Science PhD began August 2025 replacing prior Engineering concentration. Detailed Mechanical manufacturing/industrial research scope not examined. Collapsed requirements sections not described as read."
+          },
+          {
+            "url": "https://www.tntech.edu/majors/business-management_production-operations-management.php",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Entire formal Operations Logistics and Supply Chain Management BSBA concentration page read. Exact Department of Decision Sciences and Management identified in Department Information. Programme describes production systems, process/quality/productivity improvement and analytical decisions, not merely one Operations course."
+          },
+          {
+            "url": "https://www.tntech.edu/business/index.php",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Entire current College of Business overview read. Actual graduate provision MBA and Master of Accountancy, undergraduate programmes; no business PhD listed."
+          },
+          {
+            "url": "https://www.tntech.edu/majors/business-management_business-information-technology.php",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Entire Business and Information Technology BSBA concentration page read. Same exact Department of Decision Sciences and Management named. Does not establish imported IS historical acronym expansion/equivalence; no unsupported rename inferred."
+          },
+          {
+            "url": "https://www.tntech.edu/majors#doctoral",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Current majors directory shell rendered with search but no programme list in visible body; observed direct programme links followed and individually read. Shell not treated full all-programme inventory."
+          }
+        ],
+        "limitations": [
+          "Imported IS acronym historical source and exact expansion remain unresolved; current Business and Information Technology concentration not automatically same imported department.",
+          "MISE current bachelor/master/minor scope does not exclude relevant research within actual Mechanical Engineering PhD; detailed doctoral field mapping remains incomplete."
+        ],
+        "coverageComplete": false
+      },
+      "addedAt": "2026-10-22T12:08:40Z",
+      "updatedAt": "2026-10-22T12:08:40Z"
+    },
+    {
+      "id": "tennessee-wesleyan-university",
+      "status": "partial",
+      "canonicalName": "Tennessee Wesleyan University",
+      "universitySourceUrl": "https://www.tnwesleyan.edu/academics/mba/",
+      "checkedAt": "2026-10-22",
+      "reviewer": "Codex in Chrome",
+      "duplicateOf": null,
+      "units": [],
+      "decisions": [
+        {
+          "sourceDepartmentId": "tennessee-wesleyan-university__goodfriend-college-of-business-and-professional-studies__business-administration",
+          "disposition": "unresolved",
+          "unitIds": [],
+          "reason": "Current MBA School of Business wording does not verify exact imported Goodfriend College/Business Administration host or substantive Ops field. No qualifying unit inferred from generic business programme."
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.tnwesleyan.edu/academics/mba/",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Entire rendered MBA programme page read. Actual Tennessee Wesleyan University Athens Tennessee identity; 30-credit MBA with eight concentrations Accounting, Finance, Healthcare Management, IT, Management, Marketing, Social Entrepreneurship, General. School of Business named for MBA guide. No exact Goodfriend College/Business Administration department identity established. Collapsed detailed course accordions not read, no qualifying Operations remit inferred."
+        },
+        {
+          "url": "https://www.tnwesleyan.edu/admissions/graduate-admissions/",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Graduate Programs landing renders only heading and footer; no full programme cards/list visible. Not treated as complete graduate or doctoral inventory."
+        },
+        {
+          "url": "https://www.tnwesleyan.edu/academics/",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Academics landing renders heading/intro/footer only; no full programme or unit inventory visible. Current departmental and engineering scope incomplete."
+        }
+      ],
+      "limitations": [
+        "Current official MBA is verified master programme, not qualifying doctorate.",
+        "Graduate and academic landing pages rendered no detailed inventories, so no global doctoral or engineering absence claim.",
+        "Imported Goodfriend College of Business and Professional Studies / Business Administration host not established from sparse current pages; School of Business wording in MBA page not assumed historical rename."
+      ],
+      "doctoralReview": {
+        "status": "partial",
+        "checkedAt": "2026-10-22",
+        "programmeIds": [],
+        "branches": [
+          {
+            "branch": "business",
+            "reviewState": "partial",
+            "sourceUrls": [
+              "https://www.tnwesleyan.edu/academics/mba/",
+              "https://www.tnwesleyan.edu/admissions/graduate-admissions/"
+            ],
+            "conclusion": "Actual 30-credit MBA and eight concentrations read; graduate inventory renders blank beyond heading, no doctoral absence inferred."
+          },
+          {
+            "branch": "engineering",
+            "reviewState": "partial",
+            "sourceUrls": [
+              "https://www.tnwesleyan.edu/academics/",
+              "https://www.tnwesleyan.edu/admissions/graduate-admissions/"
+            ],
+            "conclusion": "Academic/graduate inventories do not render detailed programmes. Engineering doctoral provision not yet examined."
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://www.tnwesleyan.edu/academics/mba/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Entire rendered MBA programme page read. Actual Tennessee Wesleyan University Athens Tennessee identity; 30-credit MBA with eight concentrations Accounting, Finance, Healthcare Management, IT, Management, Marketing, Social Entrepreneurship, General. School of Business named for MBA guide. No exact Goodfriend College/Business Administration department identity established. Collapsed detailed course accordions not read, no qualifying Operations remit inferred."
+          },
+          {
+            "url": "https://www.tnwesleyan.edu/admissions/graduate-admissions/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Graduate Programs landing renders only heading and footer; no full programme cards/list visible. Not treated as complete graduate or doctoral inventory."
+          },
+          {
+            "url": "https://www.tnwesleyan.edu/academics/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Academics landing renders heading/intro/footer only; no full programme or unit inventory visible. Current departmental and engineering scope incomplete."
+          }
+        ],
+        "limitations": [
+          "Current official MBA is verified master programme, not qualifying doctorate.",
+          "Graduate and academic landing pages rendered no detailed inventories, so no global doctoral or engineering absence claim.",
+          "Imported Goodfriend College of Business and Professional Studies / Business Administration host not established from sparse current pages; School of Business wording in MBA page not assumed historical rename."
+        ],
+        "coverageComplete": false
+      },
+      "addedAt": "2026-10-22T12:08:40Z",
+      "updatedAt": "2026-10-22T12:08:40Z"
+    },
+    {
+      "id": "texas-a-m-international-university",
+      "status": "reviewed",
+      "canonicalName": "Texas A&M International University",
+      "universitySourceUrl": "https://www.tamiu.edu/arssb/phd.shtml",
+      "checkedAt": "2026-10-22",
+      "reviewer": "Codex in Chrome",
+      "duplicateOf": null,
+      "units": [
+        {
+          "id": "texas-a-m-international-university--international-business-technology-studies",
+          "name": "Division of International Business and Technology Studies",
+          "type": "division",
+          "school": "A.R. Sanchez, Jr. School of Business",
+          "fields": [
+            "logistics"
+          ],
+          "sourceUrl": "https://www.tamiu.edu/arssb/ibts.shtml",
+          "checkedAt": "2026-10-22",
+          "evidence": "Official division explicitly hosts formal Transportation and International Logistics BBA and related graduate business programmes; substantive academic logistics provision, not separate department named Transportation/Logistics."
+        }
+      ],
+      "decisions": [
+        {
+          "sourceDepartmentId": "texas-a-m-international-university____transportation-logistics",
+          "disposition": "replaced",
+          "unitIds": [
+            "texas-a-m-international-university--international-business-technology-studies"
+          ],
+          "reason": "Current official division page directly maps Transportation and International Logistics academic major to International Business and Technology Studies division. Full administrative name replaces subject label."
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.tamiu.edu/arssb/phd.shtml",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Entire actual International Business Administration PhD page read. Bi-pillar research degree, functional fields Accounting, Economics, Finance, Management and Strategy, Management Information Systems, Marketing. No explicit Ops/OR/IE doctoral concentration established. General management/MIS field not automatically Operations."
+        },
+        {
+          "url": "https://www.tamiu.edu/arssb/ibts.shtml",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Entire current International Business and Technology Studies division page read for unit scope. Actual division within A.R. Sanchez Jr School of Business, BBA Transportation and International Logistics and MBA/MSIS. PhD roles Management and MIS/Data Analytics stated. Degree/faculty directory not used to infer first jobs or graduate careers."
+        },
+        {
+          "url": "https://www.tamiu.edu/academics.shtml",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Entire undergraduate academic tab read, then Graduate tab activated and full expanded accessibility inventory read. Graduate Business: MBA seven concentrations incl International Trade and Logistics, MPAcc, MS Information Science, IBA PhD. Arts/Sciences: master degrees and Criminal Justice PhD; Education/nursing master/certificates. No engineering doctorate listed; undergraduate Computer/Petroleum/Systems engineering separate."
+        },
+        {
+          "url": "https://www.tamiu.edu/gradschool/",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Graduate School landing rendered headings and general content but Our Programs list absent. Not treated as full inventory; authoritative expanded Graduate tab at institutional Academics used instead."
+        }
+      ],
+      "limitations": [
+        "International Business Administration PhD is an actual research degree, but generic Management/MIS/Data Analytics fields and separate logistics BBA/MBA do not establish a relevant doctoral Operations field.",
+        "Current source-bounded academic inventory only; historical absence not claimed.",
+        "TAMIU Laredo is a distinct institution from Texas A&M College Station and other system campuses."
+      ],
+      "doctoralReview": {
+        "status": "no-qualifying-programme-verified",
+        "checkedAt": "2026-10-22",
+        "programmeIds": [],
+        "branches": [
+          {
+            "branch": "business",
+            "reviewState": "checked",
+            "sourceUrls": [
+              "https://www.tamiu.edu/arssb/phd.shtml",
+              "https://www.tamiu.edu/arssb/ibts.shtml",
+              "https://www.tamiu.edu/academics.shtml"
+            ],
+            "conclusion": "Current exact IBA PhD fields and complete graduate list read. Logistics is BBA/MBA provision; no explicit Operations/OR/IE doctoral field established in broad Management/MIS routes."
+          },
+          {
+            "branch": "engineering",
+            "reviewState": "checked",
+            "sourceUrls": [
+              "https://www.tamiu.edu/academics.shtml"
+            ],
+            "conclusion": "Complete current institutional graduate tab has no engineering doctorate. Systems/Petroleum/Computer Engineering are undergraduate, not partner-campus PhDs."
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://www.tamiu.edu/arssb/phd.shtml",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Entire actual International Business Administration PhD page read. Bi-pillar research degree, functional fields Accounting, Economics, Finance, Management and Strategy, Management Information Systems, Marketing. No explicit Ops/OR/IE doctoral concentration established. General management/MIS field not automatically Operations."
+          },
+          {
+            "url": "https://www.tamiu.edu/arssb/ibts.shtml",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Entire current International Business and Technology Studies division page read for unit scope. Actual division within A.R. Sanchez Jr School of Business, BBA Transportation and International Logistics and MBA/MSIS. PhD roles Management and MIS/Data Analytics stated. Degree/faculty directory not used to infer first jobs or graduate careers."
+          },
+          {
+            "url": "https://www.tamiu.edu/academics.shtml",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Entire undergraduate academic tab read, then Graduate tab activated and full expanded accessibility inventory read. Graduate Business: MBA seven concentrations incl International Trade and Logistics, MPAcc, MS Information Science, IBA PhD. Arts/Sciences: master degrees and Criminal Justice PhD; Education/nursing master/certificates. No engineering doctorate listed; undergraduate Computer/Petroleum/Systems engineering separate."
+          },
+          {
+            "url": "https://www.tamiu.edu/gradschool/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Graduate School landing rendered headings and general content but Our Programs list absent. Not treated as full inventory; authoritative expanded Graduate tab at institutional Academics used instead."
+          }
+        ],
+        "limitations": [
+          "International Business Administration PhD is an actual research degree, but generic Management/MIS/Data Analytics fields and separate logistics BBA/MBA do not establish a relevant doctoral Operations field.",
+          "Current source-bounded academic inventory only; historical absence not claimed.",
+          "TAMIU Laredo is a distinct institution from Texas A&M College Station and other system campuses."
+        ],
+        "coverageComplete": true
+      },
+      "addedAt": "2026-10-22T12:08:40Z",
+      "updatedAt": "2026-10-22T12:08:40Z"
+    },
+    {
       "id": "texas-a-m-university",
       "status": "reviewed",
       "canonicalName": "Texas A&M University",
@@ -49419,6 +50095,118 @@
       "updatedAt": "2026-10-21T11:02:27Z"
     },
     {
+      "id": "texas-a-m-university-central-texas",
+      "status": "reviewed",
+      "canonicalName": "Texas A&M University–Central Texas",
+      "universitySourceUrl": "https://www.tamuct.edu/academics/graduate-degrees-certificates/",
+      "checkedAt": "2026-10-22",
+      "reviewer": "Codex in Chrome",
+      "duplicateOf": null,
+      "units": [
+        {
+          "id": "texas-a-m-university-central-texas--management-marketing",
+          "name": "Department of Management and Marketing",
+          "type": "department",
+          "school": "College of Business Administration",
+          "fields": [
+            "logistics",
+            "supply-chain"
+          ],
+          "sourceUrl": "https://www.tamuct.edu/academics/college-of-business-administration/management-and-marketing/",
+          "checkedAt": "2026-10-22",
+          "evidence": "Official current department houses formal Associate Lecturer of Logistics and Supply Chain Management; college independently lists substantive Supply Chain Management microcredential. Actual combined host preserved, no invented standalone logistics department."
+        }
+      ],
+      "decisions": [
+        {
+          "sourceDepartmentId": "texas-a-m-university-central-texas__college-of-business-administration__logistics-and-supply-chain-management",
+          "disposition": "replaced",
+          "unitIds": [
+            "texas-a-m-university-central-texas--management-marketing"
+          ],
+          "reason": "Current exact Management and Marketing department in College of Business Administration explicitly hosts Logistics and Supply Chain Management faculty role; subject is not separate department."
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.tamuct.edu/academics/graduate-degrees-certificates/",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Entire current official Graduate Degrees and Certificates page read through Chrome accessibility tree after navigation timeout. Explicit Accredited Master’s Degrees, full lists for Arts/Sciences, Business, Education/Human Development; master degrees, SSP School Psychology, certificates and microcredentials. No doctoral award listed. Engineering/IE doctorate not inferred from Texas A&M system name."
+        },
+        {
+          "url": "https://www.tamuct.edu/academics/college-of-business-administration/",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Entire College of Business Administration overview read. Three actual departments Accounting/Finance, Subhani Computer Information Systems, Management/Marketing. Full undergraduate and graduate provision; undergraduate Supply Chain Management microcredential explicitly not a degree. Graduate only Accounting MS, MBA, IS MS, Leadership MS."
+        },
+        {
+          "url": "https://www.tamuct.edu/academics/college-of-business-administration/management-and-marketing/",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Entire actual Department of Management and Marketing page read for unit scope. Explicit College of Business Administration parent, bachelor programmes and MBA/MS Leadership; faculty includes formal Associate Lecturer of Logistics and Supply Chain Management. No career histories collected. Combined current department houses subject; not a separate SCM department."
+        }
+      ],
+      "limitations": [
+        "Supply Chain Management microcredential explicitly not an academic degree; not doctoral proof.",
+        "Current source-bounded graduate inventory only, not historical absence claim.",
+        "Central Texas Killeen institution distinct from Texas A&M College Station, International and other system universities."
+      ],
+      "doctoralReview": {
+        "status": "no-qualifying-programme-verified",
+        "checkedAt": "2026-10-22",
+        "programmeIds": [],
+        "branches": [
+          {
+            "branch": "business",
+            "reviewState": "checked",
+            "sourceUrls": [
+              "https://www.tamuct.edu/academics/graduate-degrees-certificates/",
+              "https://www.tamuct.edu/academics/college-of-business-administration/",
+              "https://www.tamuct.edu/academics/college-of-business-administration/management-and-marketing/"
+            ],
+            "conclusion": "Full current university graduate and college inventories list master programmes and certificates/microcredentials only, no business doctorate."
+          },
+          {
+            "branch": "engineering",
+            "reviewState": "checked",
+            "sourceUrls": [
+              "https://www.tamuct.edu/academics/graduate-degrees-certificates/"
+            ],
+            "conclusion": "Full three-college current graduate inventory has no engineering or relevant Ops/IE doctorate; SSP School Psychology is not PhD."
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://www.tamuct.edu/academics/graduate-degrees-certificates/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Entire current official Graduate Degrees and Certificates page read through Chrome accessibility tree after navigation timeout. Explicit Accredited Master’s Degrees, full lists for Arts/Sciences, Business, Education/Human Development; master degrees, SSP School Psychology, certificates and microcredentials. No doctoral award listed. Engineering/IE doctorate not inferred from Texas A&M system name."
+          },
+          {
+            "url": "https://www.tamuct.edu/academics/college-of-business-administration/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Entire College of Business Administration overview read. Three actual departments Accounting/Finance, Subhani Computer Information Systems, Management/Marketing. Full undergraduate and graduate provision; undergraduate Supply Chain Management microcredential explicitly not a degree. Graduate only Accounting MS, MBA, IS MS, Leadership MS."
+          },
+          {
+            "url": "https://www.tamuct.edu/academics/college-of-business-administration/management-and-marketing/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Entire actual Department of Management and Marketing page read for unit scope. Explicit College of Business Administration parent, bachelor programmes and MBA/MS Leadership; faculty includes formal Associate Lecturer of Logistics and Supply Chain Management. No career histories collected. Combined current department houses subject; not a separate SCM department."
+          }
+        ],
+        "limitations": [
+          "Supply Chain Management microcredential explicitly not an academic degree; not doctoral proof.",
+          "Current source-bounded graduate inventory only, not historical absence claim.",
+          "Central Texas Killeen institution distinct from Texas A&M College Station, International and other system universities."
+        ],
+        "coverageComplete": true
+      },
+      "addedAt": "2026-10-22T12:08:40Z",
+      "updatedAt": "2026-10-22T12:08:40Z"
+    },
+    {
       "id": "texas-christian-university",
       "status": "reviewed",
       "canonicalName": "Texas Christian University",
@@ -49508,6 +50296,119 @@
       "duplicateOf": null,
       "addedAt": "2026-10-20T11:00:16Z",
       "updatedAt": "2026-10-20T11:00:16Z"
+    },
+    {
+      "id": "texas-southern-university",
+      "status": "partial",
+      "canonicalName": "Texas Southern University",
+      "universitySourceUrl": "https://tsu.edu/academics/colleges-and-schools/jhj-school-of-business/index.php",
+      "checkedAt": "2026-10-22",
+      "reviewer": "Codex in Chrome",
+      "duplicateOf": null,
+      "units": [],
+      "decisions": [
+        {
+          "sourceDepartmentId": "texas-southern-university____mis",
+          "disposition": "unresolved",
+          "unitIds": [],
+          "reason": "Current undergraduate source explicitly expands MIS to Management Information Systems programme, but actual department and relevant Ops scope not established. Programme not invented as department."
+        },
+        {
+          "sourceDepartmentId": "texas-southern-university____operations-and-logistics-management",
+          "disposition": "unresolved",
+          "unitIds": [],
+          "reason": "Deleted original Assistant Professor of Management ad requires reCaptcha for full content. Historical Ops/Logistics host unverified; generic current Management degree not enough."
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://tsu.edu/academics/colleges-and-schools/graduate-school/doctorate-degree-programs.php",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "All five Doctorate Degree Programs accordions individually expanded and complete resulting list read. EdD Counselor Education, Curriculum and Instruction, Educational Administration; PharmD and Pharmaceutical Science PhD; Urban Planning and Environmental Policy PhD, Administration of Justice PhD; Environmental Toxicology PhD; JD/LLM. No business or engineering doctorate listed. LLM not PhD."
+        },
+        {
+          "url": "https://tsu.edu/academics/colleges-and-schools/jhj-school-of-business/index.php",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Entire current Jesse H Jones School of Business overview read. Actual Houston Texas Southern identity, undergraduate and graduate business provision; generic page does not establish Ops research field or standalone department names."
+        },
+        {
+          "url": "https://tsu.edu/academics/colleges-and-schools/jhj-school-of-business/undergraduate-programs/index.php",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Entire undergraduate programme list read. Accounting, Finance, Management, Marketing, Management Information Systems; MIS expansion explicitly given. Degree programmes are not proof of separate administrative departments. No Ops unit inferred from generic major or a single general course."
+        },
+        {
+          "url": "https://www.higheredjobs.com/faculty/details.cfm?JobCode=179362372&Title=Assistant%20Professor%20of%20Management",
+          "checkedAt": "2026-10-22",
+          "outcome": "blocked",
+          "note": "Original employer ad visible title Assistant Professor of Management, deleted 3 March 2026. Full deleted text requires reCaptcha. No challenge interaction or workaround. Imported Operations and Logistics Management full historical host remains unverified."
+        }
+      ],
+      "limitations": [
+        "Original Operations/Logistics job body blocked by deleted-position reCaptcha; individual limitation, no bypass.",
+        "Current MIS expansion Management Information Systems is verified as programme label, but exact department and qualifying Ops research remit remain unverified.",
+        "Current published doctoral inventory is source-bounded, not historical census or research-field equivalence claim."
+      ],
+      "doctoralReview": {
+        "status": "no-qualifying-programme-verified",
+        "checkedAt": "2026-10-22",
+        "programmeIds": [],
+        "branches": [
+          {
+            "branch": "business",
+            "reviewState": "checked",
+            "sourceUrls": [
+              "https://tsu.edu/academics/colleges-and-schools/graduate-school/doctorate-degree-programs.php",
+              "https://tsu.edu/academics/colleges-and-schools/jhj-school-of-business/index.php"
+            ],
+            "conclusion": "Full current institutional doctorate inventory expanded/read; no business doctoral programme listed. Current school identity verified."
+          },
+          {
+            "branch": "engineering",
+            "reviewState": "checked",
+            "sourceUrls": [
+              "https://tsu.edu/academics/colleges-and-schools/graduate-school/doctorate-degree-programs.php"
+            ],
+            "conclusion": "Full current five-category doctoral inventory read; science technical doctorate Environmental Toxicology, no Engineering/Ops/IE doctorate listed."
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://tsu.edu/academics/colleges-and-schools/graduate-school/doctorate-degree-programs.php",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "All five Doctorate Degree Programs accordions individually expanded and complete resulting list read. EdD Counselor Education, Curriculum and Instruction, Educational Administration; PharmD and Pharmaceutical Science PhD; Urban Planning and Environmental Policy PhD, Administration of Justice PhD; Environmental Toxicology PhD; JD/LLM. No business or engineering doctorate listed. LLM not PhD."
+          },
+          {
+            "url": "https://tsu.edu/academics/colleges-and-schools/jhj-school-of-business/index.php",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Entire current Jesse H Jones School of Business overview read. Actual Houston Texas Southern identity, undergraduate and graduate business provision; generic page does not establish Ops research field or standalone department names."
+          },
+          {
+            "url": "https://tsu.edu/academics/colleges-and-schools/jhj-school-of-business/undergraduate-programs/index.php",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Entire undergraduate programme list read. Accounting, Finance, Management, Marketing, Management Information Systems; MIS expansion explicitly given. Degree programmes are not proof of separate administrative departments. No Ops unit inferred from generic major or a single general course."
+          },
+          {
+            "url": "https://www.higheredjobs.com/faculty/details.cfm?JobCode=179362372&Title=Assistant%20Professor%20of%20Management",
+            "checkedAt": "2026-10-22",
+            "outcome": "blocked",
+            "note": "Original employer ad visible title Assistant Professor of Management, deleted 3 March 2026. Full deleted text requires reCaptcha. No challenge interaction or workaround. Imported Operations and Logistics Management full historical host remains unverified."
+          }
+        ],
+        "limitations": [
+          "Original Operations/Logistics job body blocked by deleted-position reCaptcha; individual limitation, no bypass.",
+          "Current MIS expansion Management Information Systems is verified as programme label, but exact department and qualifying Ops research remit remain unverified.",
+          "Current published doctoral inventory is source-bounded, not historical census or research-field equivalence claim."
+        ],
+        "coverageComplete": true
+      },
+      "addedAt": "2026-10-22T12:08:40Z",
+      "updatedAt": "2026-10-22T12:08:40Z"
     },
     {
       "id": "texas-tech-university",
@@ -74430,6 +75331,754 @@
       ],
       "addedAt": "2026-10-22T11:55:34Z",
       "updatedAt": "2026-10-22T11:55:34Z"
+    },
+    {
+      "id": "ut-san-antonio",
+      "status": "reviewed",
+      "canonicalName": "The University of Texas at San Antonio",
+      "universitySourceUrl": "https://www.utsa.edu/about/university-organization",
+      "checkedAt": "2026-10-22",
+      "reviewer": "Codex in Chrome",
+      "duplicateOf": null,
+      "units": [
+        {
+          "id": "ut-san-antonio--operations-analytics",
+          "name": "Department of Operations and Analytics",
+          "school": "Carlos Alvarez College of Business",
+          "type": "department",
+          "fields": [
+            "operations-management",
+            "supply-chain"
+          ],
+          "sourceUrl": "https://business.utsa.edu/operations-analytics/index.html",
+          "checkedAt": "2026-10-22",
+          "evidence": "Full official department page gives exact name and college parent, operations/supply-chain degree and certificate education and research seminar remit."
+        },
+        {
+          "id": "ut-san-antonio--mechanical-aerospace-industrial-engineering",
+          "name": "Department of Mechanical, Aerospace, and Industrial Engineering",
+          "school": "Margie and Bill Klesse College of Engineering and Integrated Design",
+          "type": "department",
+          "fields": [
+            "industrial-engineering",
+            "operations-management",
+            "supply-chain"
+          ],
+          "sourceUrl": "https://klesse.utsa.edu/mechanical/index.html",
+          "checkedAt": "2026-10-22",
+          "evidence": "Actual current department page and graduate catalogue explicitly name MAIE department, ISE undergraduate programme and Mechanical PhD Design and Manufacturing Systems concentration addressing production, operations and supply chains."
+        }
+      ],
+      "decisions": [
+        {
+          "sourceDepartmentId": "ut-san-antonio__carlos-alvarez-college-of-business__operations-and-analytics-department",
+          "disposition": "replaced",
+          "unitIds": [
+            "ut-san-antonio--operations-analytics"
+          ],
+          "reason": "Imported business department label reconciled to exact official Department of Operations and Analytics and actual college parent."
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://business.utsa.edu/operations-analytics/faculty/",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Full imported official faculty page read, department chair and school/university identity. No person employment research performed."
+        },
+        {
+          "url": "https://business.utsa.edu/operations-analytics/index.html",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Full formal department page read, Carlos Alvarez College of Business parent, operations/supply-chain BBA and graduate certificate, business analytics MS."
+        },
+        {
+          "url": "https://business.utsa.edu/programs/index.html#Doctoral-Programs",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Complete business degree inventory read; doctoral studies and DBA listed separately."
+        },
+        {
+          "url": "https://business.utsa.edu/students/academics/doctoral-studies/",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Full current PhD inventory read: Accounting, Finance, Management and Organization Studies, Marketing. No current operations concentration listed."
+        },
+        {
+          "url": "https://www.utsa.edu/about/university-organization",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Full university organization page read; current integrated university brand UT San Antonio and footer exact The University of Texas at San Antonio. No historical merger date inferred."
+        },
+        {
+          "url": "https://www.utsa.edu/academics/",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Complete academic college and health-school inventory read, actual business and Klesse engineering college names."
+        },
+        {
+          "url": "https://klesse.utsa.edu/",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Full engineering college homepage and actual discipline navigation read, MAIE department link."
+        },
+        {
+          "url": "https://klesse.utsa.edu/mechanical/index.html",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Full MAIE department page read: exact name, school parent, ISE bachelor and advanced manufacturing masters, Mechanical PhD joint with Southwest Research Institute."
+        },
+        {
+          "url": "https://klesse.utsa.edu/programs/index.html#Doctoral-Programs",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Complete current engineering programme inventory read. Seven named PhD links shown although page statistic says six; no degree count inferred from inconsistent badge."
+        },
+        {
+          "url": "https://future.utsa.edu/programs/doctoral/mechanical-engineering/",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Full exact Mechanical PhD admissions/research page read: Manufacturing & Systems Engineering research and lean/manufacturing-systems labs, current 2026-27 and 2027-28 applications."
+        },
+        {
+          "url": "https://catalog.utsa.edu/graduate/engineeringintegrateddesign/mechanicalengineering/#degreestext",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Current 2025-27 catalogue Degrees section read through Mechanical PhD dissertation/defense requirements, exact four concentrations and Design and Manufacturing Systems production/operations/supply-chain remit. Masters content kept distinct from PhD."
+        }
+      ],
+      "limitations": [
+        "Current university branding UT San Antonio and full official footer name retained; no historical institutional merger effective date inferred.",
+        "Engineering page contains seven doctoral links but six-degree badge; actual named routes used, badge inconsistency preserved. Wider doctoral scope remains separate from completed imported-label/unit identity review."
+      ],
+      "doctoralReview": {
+        "status": "verified",
+        "checkedAt": "2026-10-22",
+        "programmeIds": [
+          "ut-san-antonio--mechanical-engineering-phd-design-manufacturing-systems"
+        ],
+        "branches": [
+          {
+            "branch": "business",
+            "reviewState": "partial",
+            "conclusion": "Complete business degree inventory and current four-area PhD list read; no operations PhD listed. DBA and detailed Management/Organization Studies research fields not yet fully reviewed, so no claimed closure of broader relevant doctoral possibilities.",
+            "sourceUrls": [
+              "https://business.utsa.edu/operations-analytics/index.html",
+              "https://business.utsa.edu/students/academics/doctoral-studies/",
+              "https://business.utsa.edu/programs/index.html#Doctoral-Programs"
+            ]
+          },
+          {
+            "branch": "engineering",
+            "reviewState": "partial",
+            "conclusion": "Complete engineering programme inventory and full relevant MAIE/Mechanical PhD requirements read. Named Design and Manufacturing Systems doctoral concentration verified; other potentially relevant Civil/Environmental and university mathematics/informatics field detail remains unreviewed.",
+            "sourceUrls": [
+              "https://klesse.utsa.edu/mechanical/index.html",
+              "https://klesse.utsa.edu/programs/index.html#Doctoral-Programs",
+              "https://future.utsa.edu/programs/doctoral/mechanical-engineering/",
+              "https://catalog.utsa.edu/graduate/engineeringintegrateddesign/mechanicalengineering/#degreestext"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://business.utsa.edu/operations-analytics/faculty/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full imported official faculty page read, department chair and school/university identity. No person employment research performed."
+          },
+          {
+            "url": "https://business.utsa.edu/operations-analytics/index.html",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full formal department page read, Carlos Alvarez College of Business parent, operations/supply-chain BBA and graduate certificate, business analytics MS."
+          },
+          {
+            "url": "https://business.utsa.edu/programs/index.html#Doctoral-Programs",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Complete business degree inventory read; doctoral studies and DBA listed separately."
+          },
+          {
+            "url": "https://business.utsa.edu/students/academics/doctoral-studies/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full current PhD inventory read: Accounting, Finance, Management and Organization Studies, Marketing. No current operations concentration listed."
+          },
+          {
+            "url": "https://www.utsa.edu/about/university-organization",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full university organization page read; current integrated university brand UT San Antonio and footer exact The University of Texas at San Antonio. No historical merger date inferred."
+          },
+          {
+            "url": "https://www.utsa.edu/academics/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Complete academic college and health-school inventory read, actual business and Klesse engineering college names."
+          },
+          {
+            "url": "https://klesse.utsa.edu/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full engineering college homepage and actual discipline navigation read, MAIE department link."
+          },
+          {
+            "url": "https://klesse.utsa.edu/mechanical/index.html",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full MAIE department page read: exact name, school parent, ISE bachelor and advanced manufacturing masters, Mechanical PhD joint with Southwest Research Institute."
+          },
+          {
+            "url": "https://klesse.utsa.edu/programs/index.html#Doctoral-Programs",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Complete current engineering programme inventory read. Seven named PhD links shown although page statistic says six; no degree count inferred from inconsistent badge."
+          },
+          {
+            "url": "https://future.utsa.edu/programs/doctoral/mechanical-engineering/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full exact Mechanical PhD admissions/research page read: Manufacturing & Systems Engineering research and lean/manufacturing-systems labs, current 2026-27 and 2027-28 applications."
+          },
+          {
+            "url": "https://catalog.utsa.edu/graduate/engineeringintegrateddesign/mechanicalengineering/#degreestext",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Current 2025-27 catalogue Degrees section read through Mechanical PhD dissertation/defense requirements, exact four concentrations and Design and Manufacturing Systems production/operations/supply-chain remit. Masters content kept distinct from PhD."
+          }
+        ],
+        "limitations": [
+          "Verified named concentration is independent of remaining all-branches completeness. No generic optimization-course-only inference.",
+          "Other engineering doctoral research fields, DBA and relevant science/computing scopes require further source-bounded checks."
+        ],
+        "coverageComplete": false
+      },
+      "addedAt": "2026-10-22T12:08:40Z",
+      "updatedAt": "2026-10-22T12:08:40Z"
+    },
+    {
+      "id": "utah-tech-university",
+      "status": "reviewed",
+      "canonicalName": "Utah Tech University",
+      "universitySourceUrl": "https://catalog.utahtech.edu/programs/management-marketing/",
+      "checkedAt": "2026-10-22",
+      "reviewer": "Codex in Chrome",
+      "duplicateOf": null,
+      "units": [
+        {
+          "id": "utah-tech-university--management-marketing",
+          "name": "Management & Marketing Department",
+          "school": null,
+          "type": "department",
+          "fields": [
+            "operations-management",
+            "supply-chain"
+          ],
+          "sourceUrl": "https://catalog.utahtech.edu/programs/management-marketing/",
+          "checkedAt": "2026-10-22",
+          "evidence": "Official catalogue explicitly names Management & Marketing Department and hosts Supply Chain Management certificate requiring Operations and Supply Chain Management, Intermediate SCM and Quantitative Decision Analysis. Relevant actual department retained rather than treating certificate as unit."
+        }
+      ],
+      "decisions": [
+        {
+          "sourceDepartmentId": "utah-tech-university____ba-is-ds",
+          "disposition": "not-a-unit",
+          "unitIds": [],
+          "reason": "Original job source establishes IS/Analytics hiring subject within Accounting, Finance, and Analytics Department, not a BA/IS/DS organizational unit. Generic analytics/data science and optimization teaching alone does not establish in-scope OR/IE remit. Independently verified Management & Marketing SCM host retained separately."
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://catalog.utahtech.edu/programs/management-marketing/supply-chain-management-certificate/",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Full official SCM certificate overview read: Operations and SCM, intermediate SCM, quantitative decision analysis under Management & Marketing."
+        },
+        {
+          "url": "https://catalog.utahtech.edu/programs/management-marketing/",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Full exact Management & Marketing Department degree/minor/certificate inventory read."
+        },
+        {
+          "url": "https://catalog.utahtech.edu/programs/engineering/",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Full Engineering Department programme inventory read: computer/electrical/mechanical/mechatronics bachelors, pre-engineering associate, certificates; no doctoral route."
+        },
+        {
+          "url": "https://catalog.utahtech.edu/programs/",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "University programme catalogue read, actual Graduate Degrees tab clicked and complete list read. Only doctoral listing Occupational Therapy OTD; advanced business/technical entries masters, not PhDs."
+        },
+        {
+          "url": "https://catalog.utahtech.edu/programs/accounting-finance-analytics/",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Full Accounting, Finance, & Analytics Department inventory read; Information Systems and Analytics is bachelors, no Ops/OR/IE department established."
+        },
+        {
+          "url": "https://www.schooljobs.com/careers/utahtech/jobs/5144746/assistant-professor-of-information-systems-and-analytics",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Full institution-authored original job advertisement read: actual College of Business/Accounting Finance Analytics host, IS/Analytics subject, methods teaching including optimization; no doctoral programme inferred."
+        },
+        {
+          "url": "https://business.utahtech.edu/",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Catalogue-linked business site resolves to generic Utah Tech homepage; no management-specific college parent established from this destination."
+        }
+      ],
+      "limitations": [
+        "Exact acronym expansion not inferred from imported BA/IS/DS; actual advertisement states Information Systems and Analytics.",
+        "Management department parent school left unknown: catalogue-linked business URL resolves to generic homepage; no false parent hierarchy invented.",
+        "Current programme register source-bounded; doctoral eligibility separate from current undergraduate SCM provision."
+      ],
+      "doctoralReview": {
+        "status": "no-qualifying-programme-verified",
+        "checkedAt": "2026-10-22",
+        "programmeIds": [],
+        "branches": [
+          {
+            "branch": "business",
+            "reviewState": "checked",
+            "conclusion": "Complete university Graduate Degrees tab and both current business department inventories read. Business advanced degree Accountancy MAcc; SCM certificate undergraduate, no business PhD listed.",
+            "sourceUrls": [
+              "https://catalog.utahtech.edu/programs/",
+              "https://catalog.utahtech.edu/programs/management-marketing/",
+              "https://catalog.utahtech.edu/programs/accounting-finance-analytics/",
+              "https://catalog.utahtech.edu/programs/management-marketing/supply-chain-management-certificate/"
+            ]
+          },
+          {
+            "branch": "engineering",
+            "reviewState": "checked",
+            "conclusion": "Complete current Engineering Department inventory and full university Graduate Degrees tab read. Engineering bachelors/associate/certificates, AI/software advanced masters, no IE/OR doctorate. Only listed doctorate Occupational Therapy OTD, unrelated to scope.",
+            "sourceUrls": [
+              "https://catalog.utahtech.edu/programs/",
+              "https://catalog.utahtech.edu/programs/engineering/"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://catalog.utahtech.edu/programs/management-marketing/supply-chain-management-certificate/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full official SCM certificate overview read: Operations and SCM, intermediate SCM, quantitative decision analysis under Management & Marketing."
+          },
+          {
+            "url": "https://catalog.utahtech.edu/programs/management-marketing/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full exact Management & Marketing Department degree/minor/certificate inventory read."
+          },
+          {
+            "url": "https://catalog.utahtech.edu/programs/engineering/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full Engineering Department programme inventory read: computer/electrical/mechanical/mechatronics bachelors, pre-engineering associate, certificates; no doctoral route."
+          },
+          {
+            "url": "https://catalog.utahtech.edu/programs/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "University programme catalogue read, actual Graduate Degrees tab clicked and complete list read. Only doctoral listing Occupational Therapy OTD; advanced business/technical entries masters, not PhDs."
+          },
+          {
+            "url": "https://catalog.utahtech.edu/programs/accounting-finance-analytics/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full Accounting, Finance, & Analytics Department inventory read; Information Systems and Analytics is bachelors, no Ops/OR/IE department established."
+          },
+          {
+            "url": "https://www.schooljobs.com/careers/utahtech/jobs/5144746/assistant-professor-of-information-systems-and-analytics",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full institution-authored original job advertisement read: actual College of Business/Accounting Finance Analytics host, IS/Analytics subject, methods teaching including optimization; no doctoral programme inferred."
+          },
+          {
+            "url": "https://business.utahtech.edu/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Catalogue-linked business site resolves to generic Utah Tech homepage; no management-specific college parent established from this destination."
+          }
+        ],
+        "limitations": [
+          "Original job advertisement broad statement that institution has doctoral degrees does not establish business or engineering PhD. Actual current graduate inventory identifies OTD separately.",
+          "No generic optimization/analytics-course inference; current offering check not historical census."
+        ],
+        "coverageComplete": true
+      },
+      "addedAt": "2026-10-22T12:08:40Z",
+      "updatedAt": "2026-10-22T12:08:40Z"
+    },
+    {
+      "id": "utah-valley-university",
+      "status": "reviewed",
+      "canonicalName": "Utah Valley University",
+      "universitySourceUrl": "https://www.uvu.edu/woodbury/strategic-management/",
+      "checkedAt": "2026-10-22",
+      "reviewer": "Codex in Chrome",
+      "duplicateOf": null,
+      "units": [
+        {
+          "id": "utah-valley-university--strategic-management-operations",
+          "name": "Strategic Management & Operations Department",
+          "school": "Woodbury School of Business",
+          "type": "department",
+          "fields": [
+            "operations-management",
+            "supply-chain"
+          ],
+          "sourceUrl": "https://www.uvu.edu/woodbury/strategic-management/",
+          "checkedAt": "2026-10-22",
+          "evidence": "Actual current department website headings explicitly name department and Woodbury School parent. Official catalogue hosts Operations and Supply Chain Management BS, with optimization, simulation and quality-management remit."
+        },
+        {
+          "id": "utah-valley-university--technology-management-mechatronics",
+          "name": "Technology Management and Mechatronics Department",
+          "school": "Smith College of Engineering and Technology",
+          "type": "department",
+          "fields": [
+            "operations-management"
+          ],
+          "sourceUrl": "https://catalog.uvu.edu/engineering-technology/technology-management/",
+          "checkedAt": "2026-10-22",
+          "evidence": "Official catalogue names actual department and college breadcrumb. Its Engineering and Technology Management MS explicitly teaches process/product/project-oriented operational decisions and management of operations, quality and safety; masters provision not doctoral programme."
+        }
+      ],
+      "decisions": [
+        {
+          "sourceDepartmentId": "utah-valley-university____operations-and-supply-chain-management",
+          "disposition": "duplicate",
+          "unitIds": [
+            "utah-valley-university--strategic-management-operations"
+          ],
+          "reason": "Imported SCM subject/programme is undergraduate degree under Strategic Management & Operations Department, not separate departmental entity; same actual host as other imported row."
+        },
+        {
+          "sourceDepartmentId": "utah-valley-university__woodbury-school-of-business__strategic-management-and-operations",
+          "disposition": "replaced",
+          "unitIds": [
+            "utah-valley-university--strategic-management-operations"
+          ],
+          "reason": "Exact current department name/type and Woodbury School parent verified, department once only."
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://catalog.uvu.edu/business/strategic-management-operations/",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Full 2026-27 catalogue department page read; exact Woodbury School of Business parent and programme inventory."
+        },
+        {
+          "url": "https://www.uvu.edu/woodbury/strategic-management/",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Full current department website read; headings explicitly Strategic Management & Operations Department, majors/minors/certificates."
+        },
+        {
+          "url": "https://catalog.uvu.edu/business/strategic-management-operations/operations-supply-chain-management-bs/",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Full programme overview read: named bachelor degree, actual department host, business optimization, supply chains, simulation, Lean/Six Sigma/constraints quality education."
+        },
+        {
+          "url": "https://www.uvu.edu/graduatestudies/",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Full current graduate school landing page read and actual all-programmes link followed."
+        },
+        {
+          "url": "https://www.uvu.edu/graduate-studies/programs/index.html",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Complete all-graduate-programmes-and-certificates list read, masters/certificates only, including engineering/technology management MS and applied AI MS; no doctoral listing."
+        },
+        {
+          "url": "https://catalog.uvu.edu/engineering-technology/",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Complete current engineering college department inventory read."
+        },
+        {
+          "url": "https://catalog.uvu.edu/engineering-technology/technology-management/",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Full formal Technology Management and Mechatronics department page read, technical masters and Six Sigma certificate; parent wording discrepancy noted."
+        },
+        {
+          "url": "https://catalog.uvu.edu/engineering-technology/technology-management/engineering-technology-management-ms/",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Full Engineering and Technology Management MS programme overview read: explicit operational decisions, managing operations, process/product/project management and quality/safety scope; not doctoral degree."
+        }
+      ],
+      "limitations": [
+        "Technology Management catalogue breadcrumb gives Smith College of Engineering and Technology, prose says Scott M. Smith College of Engineering. Breadcrumb parent retained; no legal rename date inferred.",
+        "No independent OR/IE department invented from business optimization courses. Technical department classified only explicit operations-management remit."
+      ],
+      "doctoralReview": {
+        "status": "no-qualifying-programme-verified",
+        "checkedAt": "2026-10-22",
+        "programmeIds": [],
+        "branches": [
+          {
+            "branch": "business",
+            "reviewState": "checked",
+            "conclusion": "Complete current university graduate programme/certificate list and relevant Woodbury department inventory read. Business advanced degrees masters/certificates; SCM degree bachelor, no business doctorate listed.",
+            "sourceUrls": [
+              "https://catalog.uvu.edu/business/strategic-management-operations/",
+              "https://catalog.uvu.edu/business/strategic-management-operations/operations-supply-chain-management-bs/",
+              "https://www.uvu.edu/graduate-studies/programs/index.html"
+            ]
+          },
+          {
+            "branch": "engineering",
+            "reviewState": "checked",
+            "conclusion": "Complete engineering department inventory and university graduate list read; plausible operations-related Technology Management/Mechatronics host and exact ETM MS checked. Engineering/technology and applied AI advanced provision masters, no doctoral route listed.",
+            "sourceUrls": [
+              "https://catalog.uvu.edu/engineering-technology/",
+              "https://catalog.uvu.edu/engineering-technology/technology-management/",
+              "https://catalog.uvu.edu/engineering-technology/technology-management/engineering-technology-management-ms/",
+              "https://www.uvu.edu/graduate-studies/programs/index.html"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://catalog.uvu.edu/business/strategic-management-operations/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full 2026-27 catalogue department page read; exact Woodbury School of Business parent and programme inventory."
+          },
+          {
+            "url": "https://www.uvu.edu/woodbury/strategic-management/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full current department website read; headings explicitly Strategic Management & Operations Department, majors/minors/certificates."
+          },
+          {
+            "url": "https://catalog.uvu.edu/business/strategic-management-operations/operations-supply-chain-management-bs/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full programme overview read: named bachelor degree, actual department host, business optimization, supply chains, simulation, Lean/Six Sigma/constraints quality education."
+          },
+          {
+            "url": "https://www.uvu.edu/graduatestudies/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full current graduate school landing page read and actual all-programmes link followed."
+          },
+          {
+            "url": "https://www.uvu.edu/graduate-studies/programs/index.html",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Complete all-graduate-programmes-and-certificates list read, masters/certificates only, including engineering/technology management MS and applied AI MS; no doctoral listing."
+          },
+          {
+            "url": "https://catalog.uvu.edu/engineering-technology/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Complete current engineering college department inventory read."
+          },
+          {
+            "url": "https://catalog.uvu.edu/engineering-technology/technology-management/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full formal Technology Management and Mechatronics department page read, technical masters and Six Sigma certificate; parent wording discrepancy noted."
+          },
+          {
+            "url": "https://catalog.uvu.edu/engineering-technology/technology-management/engineering-technology-management-ms/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full Engineering and Technology Management MS programme overview read: explicit operational decisions, managing operations, process/product/project management and quality/safety scope; not doctoral degree."
+          }
+        ],
+        "limitations": [
+          "Current source-bounded programme register only; no claim about uninterrupted historical availability. Operations/technical management masters not PhD."
+        ],
+        "coverageComplete": true
+      },
+      "addedAt": "2026-10-22T12:08:40Z",
+      "updatedAt": "2026-10-22T12:08:40Z"
+    },
+    {
+      "id": "valdosta-state-university",
+      "status": "reviewed",
+      "canonicalName": "Valdosta State University",
+      "universitySourceUrl": "https://www.valdosta.edu/colleges/business/management-marketing/welcome.php",
+      "checkedAt": "2026-10-22",
+      "reviewer": "Codex in Chrome",
+      "duplicateOf": null,
+      "units": [
+        {
+          "id": "valdosta-state-university--management-marketing",
+          "name": "Department of Management and Marketing",
+          "school": "Harley Langdale Jr. College of Business Administration",
+          "type": "department",
+          "fields": [
+            "operations-management",
+            "supply-chain"
+          ],
+          "sourceUrl": "https://www.valdosta.edu/colleges/business/management-marketing/welcome.php",
+          "checkedAt": "2026-10-22",
+          "evidence": "Official department and exact college heading verified. Department-hosted Operations Management minor explicitly teaches production/operations, supply-chain and project management with operational efficiency/decision remit. Original Business Analytics hiring ad identifies same actual department, not standalone BA unit."
+        }
+      ],
+      "decisions": [
+        {
+          "sourceDepartmentId": "valdosta-state-university____ba",
+          "disposition": "replaced",
+          "unitIds": [
+            "valdosta-state-university--management-marketing"
+          ],
+          "reason": "Original institutional Business Analytics job text and official department scope establish Management and Marketing host. BA is hiring subject, not formal department name; one actual department retained."
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://careers.insidehighered.com/job/3418967/assistant-professor-business-analytics/",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Full expired institution-authored job text read: Assistant Professor Business Analytics, host Department Management and Marketing/Harley Langdale Jr College Business Administration, August 2026 start. Ad internal November 2025 review deadline retained; no publication date inferred from imported March 2026 row."
+        },
+        {
+          "url": "https://www.valdosta.edu/colleges/business/management-marketing/welcome.php",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Full official department page read; actual name, business degree inventory and college parent."
+        },
+        {
+          "url": "https://www.valdosta.edu/colleges/business/management-marketing/management.php",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Full department Management programme page read, bachelors and business masters scope."
+        },
+        {
+          "url": "https://www.valdosta.edu/colleges/business/welcome.php",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Full official college page read, exact Harley Langdale Jr. College of Business Administration heading and undergraduate/MAcc/MBA scope."
+        },
+        {
+          "url": "https://www.valdosta.edu/programs/minor-operations-management/",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Full exact Operations Management minor page read: Management and Marketing host, explicit production/operations, SCM, project management efficiency/decision education."
+        },
+        {
+          "url": "https://www.valdosta.edu/academics/graduate-school/our-programs/",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "All six college graduate panels actually opened and read separately: Arts; Business; Education/Human Services; Humanities/Social Sciences; Nursing/Health; Science/Mathematics. Doctoral entries EdD, DPA, DNP; business MBA/MAcc, science Biology MS."
+        },
+        {
+          "url": "https://www.valdosta.edu/colleges/",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Full college inventory and actual Departments tab read. Engineering Studies identified and individually followed."
+        },
+        {
+          "url": "https://www.valdosta.edu/es/welcome.php",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Full actual Engineering Studies page read: two-year undergraduate transfer programme to engineering-degree partners, not independently hosted IE doctorate. Current host Computer Science and Engineering Technology stated."
+        }
+      ],
+      "limitations": [
+        "Institution-authored expired job copy corroborated by official department/college pages. Generic second USG job portal link not individually resolved; imported dates and source rows preserved.",
+        "Current engineering landing page host differs from older broad department directory wording. Undergraduate transfer provision observed without inventing an independent IE unit or partner doctorate."
+      ],
+      "doctoralReview": {
+        "status": "no-qualifying-programme-verified",
+        "checkedAt": "2026-10-22",
+        "programmeIds": [],
+        "branches": [
+          {
+            "branch": "business",
+            "reviewState": "checked",
+            "conclusion": "Full college and all graduate programme panels read. Business provision undergraduate/MAcc/MBA and healthcare certificate; no business doctorate listed. Business Analytics faculty credential requirement is not university doctoral provision.",
+            "sourceUrls": [
+              "https://www.valdosta.edu/colleges/business/welcome.php",
+              "https://www.valdosta.edu/colleges/business/management-marketing/welcome.php",
+              "https://www.valdosta.edu/academics/graduate-school/our-programs/"
+            ]
+          },
+          {
+            "branch": "engineering",
+            "reviewState": "checked",
+            "conclusion": "Complete college/department inventory and all graduate panels read. Engineering Studies is explicit two-year transfer pathway toward partner engineering bachelor degree; science graduate programme Biology MS only, no IE/OR PhD. EdD/DPA/DNP listings outside relevant scope.",
+            "sourceUrls": [
+              "https://www.valdosta.edu/colleges/",
+              "https://www.valdosta.edu/es/welcome.php",
+              "https://www.valdosta.edu/academics/graduate-school/our-programs/"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://careers.insidehighered.com/job/3418967/assistant-professor-business-analytics/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full expired institution-authored job text read: Assistant Professor Business Analytics, host Department Management and Marketing/Harley Langdale Jr College Business Administration, August 2026 start. Ad internal November 2025 review deadline retained; no publication date inferred from imported March 2026 row."
+          },
+          {
+            "url": "https://www.valdosta.edu/colleges/business/management-marketing/welcome.php",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full official department page read; actual name, business degree inventory and college parent."
+          },
+          {
+            "url": "https://www.valdosta.edu/colleges/business/management-marketing/management.php",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full department Management programme page read, bachelors and business masters scope."
+          },
+          {
+            "url": "https://www.valdosta.edu/colleges/business/welcome.php",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full official college page read, exact Harley Langdale Jr. College of Business Administration heading and undergraduate/MAcc/MBA scope."
+          },
+          {
+            "url": "https://www.valdosta.edu/programs/minor-operations-management/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full exact Operations Management minor page read: Management and Marketing host, explicit production/operations, SCM, project management efficiency/decision education."
+          },
+          {
+            "url": "https://www.valdosta.edu/academics/graduate-school/our-programs/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "All six college graduate panels actually opened and read separately: Arts; Business; Education/Human Services; Humanities/Social Sciences; Nursing/Health; Science/Mathematics. Doctoral entries EdD, DPA, DNP; business MBA/MAcc, science Biology MS."
+          },
+          {
+            "url": "https://www.valdosta.edu/colleges/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full college inventory and actual Departments tab read. Engineering Studies identified and individually followed."
+          },
+          {
+            "url": "https://www.valdosta.edu/es/welcome.php",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full actual Engineering Studies page read: two-year undergraduate transfer programme to engineering-degree partners, not independently hosted IE doctorate. Current host Computer Science and Engineering Technology stated."
+          }
+        ],
+        "limitations": [
+          "Source-bounded current graduate inventory complete across six actually expanded panels; no claim about historical doctoral provision.",
+          "Partner university degrees not assigned to Valdosta."
+        ],
+        "coverageComplete": true
+      },
+      "addedAt": "2026-10-22T12:08:40Z",
+      "updatedAt": "2026-10-22T12:08:40Z"
     },
     {
       "id": "vanderbilt-university",

@@ -9,3 +9,5 @@ UT Austin McCombs alias reconciled to existing UT Austin/IROM using the original
 Validation: 48 tests, public validators and static build passed. Expanded Monterrey programme evidence passed visitor audit: accents and exact credential intact; no internal filenames or project repository links. Publication confirmation follows. Continuations 20/21 are separate unpublished proposals. Stages 2-4 and automation held. Continue remaining Stage 1 identities, source assertions and doctoral scopes.
 
 Visitor audit also observed career-only raw label Tek de Monterrey, Moterrey as a separate unresolved organisation. Add it to the explicit organisation-identity reconciliation queue alongside Rice Jones and Baruch Zicklin; no fuzzy merge performed.
+
+Publication confirmed: `d7916b8`, Pages run `39774856892` success; live Stockholm route checked, screenshot stage1-release19.png.
