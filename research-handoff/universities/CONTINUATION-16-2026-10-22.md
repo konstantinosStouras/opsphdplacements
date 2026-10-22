@@ -9,3 +9,5 @@ Ball State current inventory, BNBU Business field, New Mexico inaccessible inven
 Validation: 48 tests and all public validators passed, static build completed. Initial sandbox run failed its existing temporary-file rename test (EPERM); identical suite passed outside the restricted sandbox without code changes. Visitor audit and publication confirmation recorded below. Stages 2–4 and automation remain held; continuation 17 contains further proposals pending review.
 
 Built-site Rice row and both expanded programme histories inspected: two routes; no visitor-facing internal filenames or project repository links. Rice career-observation-only school alias remains a separately surfaced legacy identity follow-up; no employment facts changed.
+
+Publication confirmed: `6934015`, Pages run `39770396922` success. Live Baruch route verified; screenshot stage1-release16.png. Legacy career-only school aliases (Rice Jones and Baruch Zicklin) remain separate identity-cleanup follow-ups, not additional doctoral providers.

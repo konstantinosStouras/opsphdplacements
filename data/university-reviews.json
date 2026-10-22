@@ -3,11 +3,11 @@
   "metadata": {
     "definition": "Individual Chrome reviews of official university names and operations units. The original directory remains in universities.json. Reviewed describes the stated source scope, not an exhaustive current or historical census.",
     "sourceRecords": 666,
-    "attempted": 545,
-    "reviewed": 448,
-    "partial": 92,
+    "attempted": 552,
+    "reviewed": 453,
+    "partial": 94,
     "blocked": 5,
-    "pending": 121
+    "pending": 114
   },
   "records": [
     {
@@ -1555,6 +1555,18 @@
           "sourceUrl": "https://www.ajman.ac.ae/en/engineering",
           "checkedAt": "2026-10-20",
           "evidence": "Official college page supplies full name and acronym and explicitly lists Bachelor of Science in Industrial and Systems Engineering among its programs. Opened program page specifies optimization, operations research, production planning and supply-chain systems. This establishes the college host, not a separate industrial-engineering department."
+        },
+        {
+          "id": "ajman-university--mechanical-engineering-and-industrial-engineering",
+          "name": "Department of Mechanical Engineering and Industrial Engineering",
+          "school": "College of Engineering and Information Technology (CEIT)",
+          "type": "department",
+          "fields": [
+            "industrial-engineering"
+          ],
+          "sourceUrl": "https://www.ajman.ac.ae/en/engineering/departments/department-of-mechanical-engineering-and-industrial-engineering",
+          "checkedAt": "2026-10-22",
+          "evidence": "The current official engineering department directory and the department page heading explicitly name Department of Mechanical Engineering and Industrial Engineering. This establishes the lower-level Industrial Engineering host in addition to the previously verified college. The department mission describes bridging conventional engineering and industry; older sidebar text still says Mechanical Engineering."
         }
       ],
       "decisions": [
@@ -1607,15 +1619,76 @@
           "checkedAt": "2026-10-20",
           "outcome": "read",
           "note": "Coordinator profile names Dean only; no lower-level departmental affiliation."
+        },
+        {
+          "url": "https://www.ajman.ac.ae/en/engineering/departments",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Read the full current five-department directory. The final department card now explicitly names Mechanical Engineering and Industrial Engineering and links the combined department page."
+        },
+        {
+          "url": "https://www.ajman.ac.ae/en/engineering/departments/department-of-mechanical-engineering-and-industrial-engineering",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Read the combined department title, breadcrumb and mission. A legacy sidebar retains Mechanical Engineering wording. Selecting Programs did not reveal programme content; no new programme list is claimed."
+        },
+        {
+          "url": "https://www.ajman.ac.ae/en/cba/departments/department-of-management-and-marketing",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Read the current full Management and Marketing department overview. It describes Management and Marketing undergraduate programmes and Business Analytics/Human Resource Management minors; it does not corroborate a separate Operations and Supply Chain Management department. Earlier faculty-profile observation is retained separately."
         }
       ],
       "limitations": [
-        "Industrial and Systems Engineering college host is verified and accurately typed as a school; current lower-level departmental host remains unresolved, so review stays partial.",
-        "Business operations department name was re-read in official faculty Experience; dedicated organizational page was not verified."
+        "The lower-level engineering host is now explicitly verified from the current directory and combined department heading. Older sidebar and source observations retain Mechanical Engineering wording; no date of renaming is inferred.",
+        "Business operations department name was previously read in official faculty Experience; a dedicated organizational page remains unverified."
       ],
       "duplicateOf": null,
       "addedAt": "2026-10-20T09:25:45Z",
-      "updatedAt": "2026-10-20T10:24:43Z"
+      "updatedAt": "2026-10-22T11:27:19Z",
+      "doctoralReview": {
+        "status": "partial",
+        "checkedAt": "2026-10-22",
+        "programmeIds": [],
+        "branches": [
+          {
+            "branch": "business",
+            "reviewState": "checked",
+            "conclusion": "The complete current doctoral filter has four entries. The sole business doctoral entry is Doctor of Business Administration, retained separately under the current scope rule.",
+            "sourceUrls": [
+              "https://www.ajman.ac.ae/en/academics/academic-programs-majors"
+            ]
+          },
+          {
+            "branch": "engineering",
+            "reviewState": "partial",
+            "conclusion": "The full AI doctorate page establishes a research-intensive PhD and Optimization & Intelligent Systems as a main research track. The elective DAI715 mentions supply chain optimization applications. The track itself has no explicit supply-chain, production or service-system research remit in the page read; methods research plus an elective application does not yet establish a qualifying Operations doctoral route.",
+            "sourceUrls": [
+              "https://www.ajman.ac.ae/en/academics/academic-programs-majors",
+              "https://www.ajman.ac.ae/en/academics/academic-programs-majors/programs/doctor-of-philosophy-in-artificial-intelligence-phd-in-ai"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://www.ajman.ac.ae/en/academics/academic-programs-majors",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Selected Doctoral programs and read all four rows: PhD in Law, Doctorate of Clinical Dentistry in Prosthodontics, DBA, and PhD in Artificial Intelligence. The introductory text still says two doctoral programmes, in conflict with the four displayed rows; the discrepancy is retained."
+          },
+          {
+            "url": "https://www.ajman.ac.ae/en/academics/academic-programs-majors/programs/doctor-of-philosophy-in-artificial-intelligence-phd-in-ai",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Read the complete AI PhD page: overview, all nine main research tracks, curriculum, full course descriptions, study plan, thesis stages, and FAQs. Exact research track Optimization & Intelligent Systems is explicit. DAI715 includes supply chain optimization among applications, but no substantive Operations field is established by this elective alone."
+          }
+        ],
+        "limitations": [
+          "The AI doctorate is an examined candidate whose substantive Operations research-field mapping remains unresolved. No eligible route is added from optimization methods alone.",
+          "The central introductory programme count conflicts with its complete current doctoral filter; no historical opening or closure dates are inferred."
+        ],
+        "coverageComplete": false
+      }
     },
     {
       "id": "alabama-a-m-university",
@@ -3310,7 +3383,7 @@
     },
     {
       "id": "aschaffenburg-university-of-applied-sciences",
-      "status": "partial",
+      "status": "reviewed",
       "canonicalName": "Technische Hochschule Aschaffenburg",
       "universitySourceUrl": "https://www.th-ab.de/hochschule/ueber-die-th-ab/",
       "checkedAt": "2026-10-20",
@@ -3348,9 +3421,9 @@
       "decisions": [
         {
           "sourceDepartmentId": "aschaffenburg-university-of-applied-sciences__faculty-of-engineering-and-computer-science__digital-production-technologies",
-          "disposition": "unresolved",
+          "disposition": "not-a-unit",
           "unitIds": [],
-          "reason": "Engineering faculty confirmed, but Digital Production Technologies not verified as named department or organizational area; no equivalence asserted."
+          "reason": "The current official appointment monitor identifies Digital Production Technologies as a W2 professorship, reference iwin-w-8, in the IWIN faculty category. It is a position or teaching/research remit, not a separately named department. The engineering faculty remains independently verified; no separate unit or equivalence with DiProLeA is created."
         }
       ],
       "sources": [
@@ -3401,15 +3474,77 @@
           "note": "Digital-production search lead is a dated 2021–2024 research project, not an organizational department. It supports engineering-faculty assembly-process research; not equated with imported Digital Production Technologies.",
           "outcome": "read",
           "checkedAt": "2026-10-20"
+        },
+        {
+          "url": "https://www.th-ab.de/hochschule/ueber-die-th-ab/",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Read the original German institutional identity, all three faculty names and statement of the doctoral centre for Sustainable Intelligent Systems. Original German names are retained, not machine-translated organizational names."
+        },
+        {
+          "url": "https://www.th-ab.de/hochschule/die-th-aschaffenburg/karriere-an-der-th-ab/",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Read official careers navigation to current professorship advertisements."
+        },
+        {
+          "url": "https://www.th-ab.de/hochschule/die-th-aschaffenburg/karriere-an-der-th-ab/professuren/",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Loaded the official BITE embedded vacancy and appointment monitor and read all four monitor rows. The monitor identifies W2 Professorship – Digital Production Technologies, reference iwin-w-8, faculty category IWIN, at preselection. Display was partly translated into English; the source title is reconciled as a professorship, not a department. No appointment or closure date is inferred."
         }
       ],
       "limitations": [
-        "Exact imported Digital Production Technologies organization remains unverified; the similarly themed DiProLeA project is not treated as a department or an alias.",
-        "Both engineering and business faculty hosts are verified using full official German names; no unverified English translations or lower-level operations departments added."
+        "The imported Digital Production Technologies wording is reconciled to an official W2 professorship, not a separate organizational unit. Its appointment status is a dated observation and does not establish an incumbent or historical establishment date.",
+        "Both business and engineering faculty hosts remain recorded using their previously verified full German names. No equivalence with the earlier DiProLeA project is asserted."
       ],
       "duplicateOf": null,
       "addedAt": "2026-10-20T09:53:00Z",
-      "updatedAt": "2026-10-20T10:24:43Z"
+      "updatedAt": "2026-10-22T11:27:19Z",
+      "doctoralReview": {
+        "status": "partial",
+        "checkedAt": "2026-10-22",
+        "programmeIds": [],
+        "branches": [
+          {
+            "branch": "business",
+            "reviewState": "partial",
+            "conclusion": "The central doctoral overview distinguishes NISys provision from cooperative doctorates with partner universities. A separate business doctoral route and its exact award or Operations field mapping have not been established.",
+            "sourceUrls": [
+              "https://www.th-ab.de/forschung/karriere/promotion/",
+              "https://www.th-ab.de/forschung/karriere/promotion/promotionszentrum-nachhaltige-intelligente-systeme/"
+            ]
+          },
+          {
+            "branch": "engineering",
+            "reviewState": "partial",
+            "conclusion": "NISys provides an academic Dr.-Ing. route with TH Würzburg-Schweinfurt as the title-awarding partner and primary supervision normally by TH Aschaffenburg. The expanded Production and Materials area concerns resource-efficient production processes, lasers/additive manufacturing, automation, functional materials, microsystems and recycling; the Mobility area lists transport technologies and concepts. Those descriptions do not yet establish a substantive Operations or Industrial Engineering doctoral research field. Wider cooperative doctoral field mapping remains unexamined.",
+            "sourceUrls": [
+              "https://www.th-ab.de/forschung/karriere/promotion/",
+              "https://www.th-ab.de/forschung/karriere/promotion/promotionszentrum-nachhaltige-intelligente-systeme/"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://www.th-ab.de/forschung/karriere/promotion/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Read the complete central doctoral overview, NISys versus cooperative routes, doctoral thesis publication and research support. The support college iDok is not treated as a separate degree."
+          },
+          {
+            "url": "https://www.th-ab.de/forschung/karriere/promotion/promotionszentrum-nachhaltige-intelligente-systeme/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Read the complete NISys page, professor research-topic list, expanded Production and Materials and Mobility areas, and exact doctoral title/awarder FAQ. Dr.-Ing. is explicit; TH Würzburg-Schweinfurt is explicitly title-awarding, with TH AB supervisors. Original German title is preserved. Some display text was subsequently translated into English."
+          }
+        ],
+        "limitations": [
+          "No qualifying route is added from physical manufacturing, automation or a supervisor’s Industrial Engineering label alone. Exact substantive Operations doctoral field mapping remains unresolved.",
+          "Cooperative doctorate possibilities and the partner-led NISys award are distinct from a standalone TH Aschaffenburg PhD. Partner universities are not merged."
+        ],
+        "coverageComplete": false
+      }
     },
     {
       "id": "auburn-university",
@@ -5355,7 +5490,56 @@
       ],
       "duplicateOf": null,
       "addedAt": "2026-10-20T10:24:43Z",
-      "updatedAt": "2026-10-20T10:24:43Z"
+      "updatedAt": "2026-10-22T11:27:19Z",
+      "doctoralReview": {
+        "status": "partial",
+        "checkedAt": "2026-10-22",
+        "programmeIds": [],
+        "branches": [
+          {
+            "branch": "business",
+            "reviewState": "partial",
+            "conclusion": "BiGSEM explicitly offers the structured doctoral programme Economics and Management with Economics, Finance, Management and Data Science profiles. The Management profile establishes doctoral thesis supervision and research activities, but the pages read do not establish an exact academic doctoral award or an explicit Operations research-field mapping.",
+            "sourceUrls": [
+              "https://www.uni-bielefeld.de/fakultaeten/wirtschaftswissenschaften/einrichtungen/bigsem/",
+              "https://www.uni-bielefeld.de/fakultaeten/wirtschaftswissenschaften/einrichtungen/bigsem/profiles/management/information/index.xml",
+              "https://www.uni-bielefeld.de/fakultaeten/wirtschaftswissenschaften/einrichtungen/bigsem/profiles/management/curriculum/"
+            ]
+          },
+          {
+            "branch": "engineering",
+            "reviewState": "partial",
+            "conclusion": "The official faculty directory includes Mathematics and Technology. Their doctoral inventories and relevant research-field mappings remain unexamined; no absence of relevant provision is inferred.",
+            "sourceUrls": [
+              "https://www.uni-bielefeld.de/fakultaeten/wirtschaftswissenschaften/einrichtungen/bigsem/"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://www.uni-bielefeld.de/fakultaeten/wirtschaftswissenschaften/einrichtungen/bigsem/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Read the complete BiGSEM overview, four doctoral profiles, faculty and mathematical economics integration, and full university faculty directory."
+          },
+          {
+            "url": "https://www.uni-bielefeld.de/fakultaeten/wirtschaftswissenschaften/einrichtungen/bigsem/profiles/management/information/index.xml",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Read Management doctoral profile prerequisites, research seminars, individual research presentations, thesis and supervision agreement requirements."
+          },
+          {
+            "url": "https://www.uni-bielefeld.de/fakultaeten/wirtschaftswissenschaften/einrichtungen/bigsem/profiles/management/curriculum/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Read the Management doctoral curriculum overview and displayed credit/activity list. The linked PDF was not opened, and the elective accordion did not expose a qualifying field list."
+          }
+        ],
+        "limitations": [
+          "Exact doctoral award and an explicit Operations field mapping remain unresolved. The broad Economics and Management doctoral programme is not treated as automatically qualifying. Mathematics and Technology branch inventories remain to be checked."
+        ],
+        "coverageComplete": false
+      }
     },
     {
       "id": "bilkent-university",
@@ -8277,14 +8461,68 @@
           "note": "Exact industrial-engineering program organizational host and full engineering school title; substantial OR/IE/logistics curriculum.",
           "checkedAt": "2026-10-20",
           "outcome": "read"
+        },
+        {
+          "url": "https://www.cud.ac.ae/about/academic-staff/faculties-and-departments/management",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Read the current complete Management academic staff page. School title and explicit Operations Research/supply-chain research remain corroborated; no separate BA/DS organizational expansion is stated."
+        },
+        {
+          "url": "https://www.cud.ac.ae/faculties-and-departments/management",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Read full current School of Management organizational overview. It publishes school identity and undergraduate/graduate links but no expansion of the imported BA/DS shorthand."
         }
       ],
       "limitations": [
-        "BA/DS imported shorthand remains unresolved and is not published as a department."
+        "BA/DS imported shorthand remains unresolved after current official school overview and staff-directory checks. A degree or research specialty is not guessed to be a department."
       ],
       "duplicateOf": null,
       "addedAt": "2026-10-21T06:57:04Z",
-      "updatedAt": "2026-10-21T06:57:04Z"
+      "updatedAt": "2026-10-22T11:27:19Z",
+      "doctoralReview": {
+        "status": "no-qualifying-programme-verified",
+        "checkedAt": "2026-10-22",
+        "programmeIds": [],
+        "branches": [
+          {
+            "branch": "business",
+            "reviewState": "checked",
+            "conclusion": "Read the complete unfiltered university programme inventory and its three level categories: Undergraduate, Masters and DBA. The sole doctorate is Doctor of Business Administration, retained separately under the current scope rule. Business Analytics and Project Management are master’s provision.",
+            "sourceUrls": [
+              "https://www.cud.ac.ae/programs",
+              "https://www.cud.ac.ae/faculties-and-departments/management"
+            ]
+          },
+          {
+            "branch": "engineering",
+            "reviewState": "checked",
+            "conclusion": "The full university inventory lists Industrial and Engineering Management at bachelor’s level and Artificial Intelligence at master’s level. No engineering research doctorate is listed.",
+            "sourceUrls": [
+              "https://www.cud.ac.ae/programs"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://www.cud.ac.ae/programs",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Read all displayed unfiltered programme titles and level tags, from undergraduate Architecture through the final DBA. All postgraduate titles were read; the programme-level filter offers only Undergraduate, Masters and DBA."
+          },
+          {
+            "url": "https://www.cud.ac.ae/faculties-and-departments/management",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Read the full School of Management overview, organizational title, dean message and links to graduate and undergraduate provision."
+          }
+        ],
+        "limitations": [
+          "This bounded current programme inventory check does not resolve the imported BA/DS organizational shorthand. The separate university-unit review retains that identity gap."
+        ],
+        "coverageComplete": true
+      }
     },
     {
       "id": "cardiff-university",
@@ -9537,7 +9775,7 @@
     },
     {
       "id": "ceibs",
-      "status": "partial",
+      "status": "reviewed",
       "canonicalName": "China Europe International Business School",
       "universitySourceUrl": "https://www.ceibs.edu/liuyixuan",
       "checkedAt": "2026-10-20",
@@ -9580,6 +9818,19 @@
           "sourceUrl": "https://www.ceibs.edu/zhao-xiande",
           "checkedAt": "2026-10-20",
           "evidence": "Current official director role and biography explicitly establish this named centre and supply-chain/service innovation work."
+        },
+        {
+          "id": "ceibs--decision-sciences-management-information-systems",
+          "name": "Decision Sciences and Management Information Systems",
+          "school": null,
+          "type": "area",
+          "fields": [
+            "operations-management",
+            "supply-chain"
+          ],
+          "sourceUrl": "https://www.ceibs.edu/teacher/25029",
+          "checkedAt": "2026-10-22",
+          "evidence": "The current official department directory places Tan Yinliang (Ricky) in Decision Sciences and Management Information Systems. His complete official publication list explicitly names 2025 research on quality management in supply chains and brand spillover in a co-opetitive supply chain, as well as online service operations platforms, food-delivery service innovation, supplier sourcing, retailer capacity and inventory planning. These substantive research topics establish Operations Management and Supply Chain scope independently of journal names, rankings or degree credentials."
         }
       ],
       "decisions": [
@@ -9593,9 +9844,11 @@
         },
         {
           "sourceDepartmentId": "ceibs____decision-sciences-and-management-information-systems",
-          "disposition": "unresolved",
-          "unitIds": [],
-          "reason": "Named combined area exists, but current two faculty profiles predominantly emphasize IS/AI/digital economy. Liu lists an OM course and Tan OM/SCM publication ranking; substantive operations remit beyond these signals remains unconfirmed."
+          "disposition": "replaced",
+          "unitIds": [
+            "ceibs--decision-sciences-management-information-systems"
+          ],
+          "reason": "Exact current area now has substantive supply-chain and service-operations research evidence in its assigned faculty member’s official publication titles. This resolves the earlier limitation based only on journal names, rankings and teaching signals."
         }
       ],
       "sources": [
@@ -9628,15 +9881,97 @@
           "checkedAt": "2026-10-20",
           "outcome": "blocked",
           "note": "Page opened but repeated Chrome text-read timeouts prevented reading introduction; screenshot only showed header. Institution name is independently verified in readable faculty pages."
+        },
+        {
+          "url": "https://www.ceibs.edu/faculty-profiles/by-department",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Read complete by-department directory, including separate Operations Management and Decision Sciences and Management Information Systems subareas under Economics/Decision Sciences."
+        },
+        {
+          "url": "https://www.ceibs.edu/teacher/25029",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Read complete current biography, Research Interests tab and full Publications tab. Concrete 2025 supply-chain quality/brand-spillover topics and service operations, inventory, capacity and sourcing titles support the area’s operations remit. Linked papers were not opened; titles are not represented as full-paper reviews."
         }
       ],
       "limitations": [
-        "Combined Decision Sciences and Management Information Systems scope unresolved; not published as eligible solely on journal rankings, qualifications or one course.",
-        "Institute title follows the plural Innovations in the current director heading; later biography also uses singular Innovation."
+        "Decision Sciences and Management Information Systems scope is supported by substantive official publication topics, while its stated current Research Interests remain Artificial Intelligence, Digital Economy and Digital Transformation. The combined area is not relabelled as a pure Operations department.",
+        "Institute title follows the previously checked plural Innovations in the director heading; the earlier biography also uses singular Innovation. No new institute-title check date is asserted."
       ],
       "duplicateOf": null,
       "addedAt": "2026-10-21T06:57:04Z",
-      "updatedAt": "2026-10-21T06:57:04Z"
+      "updatedAt": "2026-10-22T11:27:19Z",
+      "doctoralReview": {
+        "status": "partial",
+        "checkedAt": "2026-10-22",
+        "programmeIds": [],
+        "branches": [
+          {
+            "branch": "business",
+            "reviewState": "partial",
+            "conclusion": "The current programme inventory lists separate DBA and full-time PhD provision. The PhD introduction establishes an academic research programme supported by Shanghai Jiao Tong University. The current 2026 supervisors list explicitly includes Decision Sciences and Management Information Systems professor Tan under Business Administration; his official publication titles establish substantive supply-chain and service-operations topics. Exact academic award and provider/awarder overlap with Shanghai Jiao Tong University remain unresolved, so no duplicate or assumed standalone CEIBS degree is added.",
+            "sourceUrls": [
+              "https://www.ceibs.edu/programmes",
+              "https://www.ceibs.edu/phd",
+              "https://www.ceibs.edu/phd/faculty",
+              "https://cn.ceibs.edu/phd/application",
+              "https://www.ceibs.edu/teacher/25029"
+            ]
+          },
+          {
+            "branch": "engineering",
+            "reviewState": "not-present",
+            "conclusion": "The full school programme inventory contains management master’s, executive education, DBA and PhD provision; the PhD supervisors page divides provision into Business Administration and Applied Economics. No separate engineering doctoral branch is listed for CEIBS.",
+            "sourceUrls": [
+              "https://www.ceibs.edu/programmes",
+              "https://www.ceibs.edu/phd/faculty"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://www.ceibs.edu/programmes",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Read the complete Programme Overview table, including separate DBA and PhD entries, modes, duration and degree categories."
+          },
+          {
+            "url": "https://www.ceibs.edu/phd",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Read the complete PhD introduction: four-year full-time academic research programme launched in 2014 with Shanghai Jiao Tong University support."
+          },
+          {
+            "url": "https://www.ceibs.edu/phd/faculty",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Read the complete current supervisor list under Business Administration and Applied Economics. Tan Yinliang (Ricky) explicitly appears under Business Administration."
+          },
+          {
+            "url": "https://www.ceibs.edu/phd/application",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Read English admissions page, which directs requirements to the Chinese official admissions brochure."
+          },
+          {
+            "url": "https://cn.ceibs.edu/phd/application",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Read full 2026 doctoral admissions brochure through browser-rendered English translation. It establishes Business Administration and Applied Economics disciplines and ties registration, review, admitted-student publication and scholarships to Shanghai Jiao Tong University. Exact award/diploma title and separate provider counting remain unresolved."
+          },
+          {
+            "url": "https://www.ceibs.edu/teacher/25029",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Read complete biography, Research Interests and Publications tabs. Explicit supply-chain quality and brand-spillover, service operations, supplier sourcing, retailer capacity and inventory topics support substantive Ops research scope; linked papers were not read."
+          }
+        ],
+        "limitations": [
+          "Exact doctoral credential and CEIBS/SJTU awarder relationship require clarification before route publication. No separate degree is inferred from the English PhD label, and no university identity merger is made."
+        ],
+        "coverageComplete": false
+      }
     },
     {
       "id": "central-washington-university",
@@ -10217,7 +10552,7 @@
     },
     {
       "id": "china-europe-international-business-school",
-      "status": "partial",
+      "status": "reviewed",
       "canonicalName": "China Europe International Business School",
       "universitySourceUrl": "https://www.ceibs.edu/introduction-ceibs",
       "checkedAt": "2026-10-21",
@@ -10260,6 +10595,19 @@
           "sourceUrl": "https://www.ceibs.edu/zhao-xiande",
           "checkedAt": "2026-10-21",
           "evidence": "Current official director role and biography explicitly establish this named centre and supply-chain/service innovation work."
+        },
+        {
+          "id": "ceibs--decision-sciences-management-information-systems",
+          "name": "Decision Sciences and Management Information Systems",
+          "school": null,
+          "type": "area",
+          "fields": [
+            "operations-management",
+            "supply-chain"
+          ],
+          "sourceUrl": "https://www.ceibs.edu/teacher/25029",
+          "checkedAt": "2026-10-22",
+          "evidence": "The current official department directory places Tan Yinliang (Ricky) in Decision Sciences and Management Information Systems. His complete official publication list explicitly names 2025 research on quality management in supply chains and brand spillover in a co-opetitive supply chain, as well as online service operations platforms, food-delivery service innovation, supplier sourcing, retailer capacity and inventory planning. These substantive research topics establish Operations Management and Supply Chain scope independently of journal names, rankings or degree credentials."
         }
       ],
       "decisions": [
@@ -10290,15 +10638,97 @@
           "checkedAt": "2026-10-21",
           "outcome": "read",
           "note": "Current director titles establish both full supply-chain institute/centre names and operations/supply-chain remit."
+        },
+        {
+          "url": "https://www.ceibs.edu/faculty-profiles/by-department",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Read complete by-department directory, including separate Operations Management and Decision Sciences and Management Information Systems subareas under Economics/Decision Sciences."
+        },
+        {
+          "url": "https://www.ceibs.edu/teacher/25029",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Read complete current biography, Research Interests tab and full Publications tab. Concrete 2025 supply-chain quality/brand-spillover topics and service operations, inventory, capacity and sourcing titles support the area’s operations remit. Linked papers were not opened; titles are not represented as full-paper reviews."
         }
       ],
       "limitations": [
-        "Scope of the separate Decision Sciences and Management Information Systems area remains unresolved from the prior CEIBS review; alias is not used to upgrade the combined institution to complete.",
-        "Institute name follows plural Innovations in current director heading; biography also uses singular Innovation."
+        "Decision Sciences and Management Information Systems scope is supported by substantive official publication topics, while its stated current Research Interests remain Artificial Intelligence, Digital Economy and Digital Transformation. The combined area is not relabelled as a pure Operations department.",
+        "Institute title follows the previously checked plural Innovations in the director heading; the earlier biography also uses singular Innovation. No new institute-title check date is asserted."
       ],
       "duplicateOf": "ceibs",
       "addedAt": "2026-10-21T07:40:08Z",
-      "updatedAt": "2026-10-21T07:40:08Z"
+      "updatedAt": "2026-10-22T11:27:19Z",
+      "doctoralReview": {
+        "status": "partial",
+        "checkedAt": "2026-10-22",
+        "programmeIds": [],
+        "branches": [
+          {
+            "branch": "business",
+            "reviewState": "partial",
+            "conclusion": "The current programme inventory lists separate DBA and full-time PhD provision. The PhD introduction establishes an academic research programme supported by Shanghai Jiao Tong University. The current 2026 supervisors list explicitly includes Decision Sciences and Management Information Systems professor Tan under Business Administration; his official publication titles establish substantive supply-chain and service-operations topics. Exact academic award and provider/awarder overlap with Shanghai Jiao Tong University remain unresolved, so no duplicate or assumed standalone CEIBS degree is added.",
+            "sourceUrls": [
+              "https://www.ceibs.edu/programmes",
+              "https://www.ceibs.edu/phd",
+              "https://www.ceibs.edu/phd/faculty",
+              "https://cn.ceibs.edu/phd/application",
+              "https://www.ceibs.edu/teacher/25029"
+            ]
+          },
+          {
+            "branch": "engineering",
+            "reviewState": "not-present",
+            "conclusion": "The full school programme inventory contains management master’s, executive education, DBA and PhD provision; the PhD supervisors page divides provision into Business Administration and Applied Economics. No separate engineering doctoral branch is listed for CEIBS.",
+            "sourceUrls": [
+              "https://www.ceibs.edu/programmes",
+              "https://www.ceibs.edu/phd/faculty"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://www.ceibs.edu/programmes",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Read the complete Programme Overview table, including separate DBA and PhD entries, modes, duration and degree categories."
+          },
+          {
+            "url": "https://www.ceibs.edu/phd",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Read the complete PhD introduction: four-year full-time academic research programme launched in 2014 with Shanghai Jiao Tong University support."
+          },
+          {
+            "url": "https://www.ceibs.edu/phd/faculty",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Read the complete current supervisor list under Business Administration and Applied Economics. Tan Yinliang (Ricky) explicitly appears under Business Administration."
+          },
+          {
+            "url": "https://www.ceibs.edu/phd/application",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Read English admissions page, which directs requirements to the Chinese official admissions brochure."
+          },
+          {
+            "url": "https://cn.ceibs.edu/phd/application",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Read full 2026 doctoral admissions brochure through browser-rendered English translation. It establishes Business Administration and Applied Economics disciplines and ties registration, review, admitted-student publication and scholarships to Shanghai Jiao Tong University. Exact award/diploma title and separate provider counting remain unresolved."
+          },
+          {
+            "url": "https://www.ceibs.edu/teacher/25029",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Read complete biography, Research Interests and Publications tabs. Explicit supply-chain quality and brand-spillover, service operations, supplier sourcing, retailer capacity and inventory topics support substantive Ops research scope; linked papers were not read."
+          }
+        ],
+        "limitations": [
+          "Exact doctoral credential and CEIBS/SJTU awarder relationship require clarification before route publication. No separate degree is inferred from the English PhD label, and no university identity merger is made."
+        ],
+        "coverageComplete": false
+      }
     },
     {
       "id": "chinese-university-of-hong-kong",
@@ -35243,7 +35673,73 @@
       ],
       "duplicateOf": null,
       "addedAt": "2026-10-21T06:57:04Z",
-      "updatedAt": "2026-10-21T06:57:04Z"
+      "updatedAt": "2026-10-22T11:27:19Z",
+      "doctoralReview": {
+        "status": "verified",
+        "checkedAt": "2026-10-22",
+        "programmeIds": [
+          "ozyegin-university--business-administration-phd-operations-management",
+          "ozyegin-university--industrial-engineering-phd"
+        ],
+        "branches": [
+          {
+            "branch": "business",
+            "reviewState": "checked",
+            "sourceUrls": [
+              "https://www.ozyegin.edu.tr/en/phd-business/phd-business-program-overview",
+              "https://www.ozyegin.edu.tr/en/phd-business/areas-study/operations-management",
+              "https://www.ozyegin.edu.tr/en/phd-business/academic-program"
+            ],
+            "conclusion": "Actual Business PhD complete study-area navigation and academic structure read, OM concentration explicitly verified with doctoral thesis and graduate-school host."
+          },
+          {
+            "branch": "engineering",
+            "reviewState": "partial",
+            "sourceUrls": [
+              "https://www.ozyegin.edu.tr/en/graduate-schools/industrial-engineering/graduate-programs/phd-industrial-engineering",
+              "https://www.ozyegin.edu.tr/en/graduate-school-engineering-and-science"
+            ],
+            "conclusion": "Actual IE PhD graduation requirements and graduate school programme navigation checked. Other engineering/math/data/AI programme doctoral levels and detailed field inventories remain incomplete."
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://www.ozyegin.edu.tr/en/graduate-schools/industrial-engineering/graduate-programs/phd-industrial-engineering",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Entire Industrial Engineering PhD graduation page read. Separate before 2025 and 2025 onward rules, 240 ECTS after master’s / 300 ECTS after bachelor’s, thesis proposal/study and English research publication requirements. Academic practice course added in later cohort; source labels one final row qualification exam, not silently corrected."
+          },
+          {
+            "url": "https://www.ozyegin.edu.tr/en/phd-business/areas-study/operations-management",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Entire Business PhD Operations Management field description read. Formal concentration production/logistics, capacity/facility, supplier/SCM design, inventory/scheduling, quality and mathematical/empirical research. Joint with Industrial Engineering in offered courses/faculty only; no inference that awards identical."
+          },
+          {
+            "url": "https://www.ozyegin.edu.tr/en/phd-business/phd-business-program-overview",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Entire Business PhD overview read. Exact text PhD Business Administration, Graduate School of Business host and doctoral thesis following initial coursework; Finance/Marketing/Management/Operations field inventory."
+          },
+          {
+            "url": "https://www.ozyegin.edu.tr/en/phd-business/academic-program",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full Business PhD academic structure read: two years coursework followed generally by two-year doctoral thesis in chosen field, separate entry-duration limits."
+          },
+          {
+            "url": "https://www.ozyegin.edu.tr/en/graduate-school-engineering-and-science",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full graduate Engineering/Science school page/navigation read with engineering, physics/math, architecture, data/AI programmes. Heading Graduate School of Science and Engineering versus footer Engineering and Science naming variant retained; detailed doctoral field/degree inventory of other programmes not fully checked."
+          }
+        ],
+        "limitations": [
+          "Two actual doctoral routes verified; wider engineering branch scope remains partial, coverage false.",
+          "Imported and prior unit facts/check dates preserved; no new unit names invented from concentration titles."
+        ],
+        "coverageComplete": false
+      }
     },
     {
       "id": "palm-beach-atlantic-university",
@@ -36904,10 +37400,10 @@
       ],
       "duplicateOf": null,
       "addedAt": "2026-10-21T07:40:08Z",
-      "updatedAt": "2026-10-21T21:30:10Z",
+      "updatedAt": "2026-10-22T11:27:19Z",
       "doctoralReview": {
         "status": "verified",
-        "checkedAt": "2026-10-21",
+        "checkedAt": "2026-10-22",
         "programmeIds": [
           "queen-s-university--management-phd-analytics"
         ],
@@ -36920,7 +37416,7 @@
               "https://smith.queensu.ca/grad_studies/PHD/program-details/areas-of-specialization/analytics.php",
               "https://www.queensu.ca/grad-postdoc/grad-studies/programs-degrees"
             ],
-            "conclusion": "Full nine-specialization ManagementPhD inventory and complete university business graduate degree list checked; Analytics has explicit relevant research scope."
+            "conclusion": "Full nine-specialization Management PhD inventory and complete university business graduate degree list checked; Analytics has explicit relevant research scope."
           },
           {
             "branch": "engineering",
@@ -36929,7 +37425,7 @@
               "https://www.queensu.ca/grad-postdoc/grad-studies/programs-degrees",
               "https://www.queensu.ca/mathstat/graduate/prospective-graduate"
             ],
-            "conclusion": "Expanded complete university degree inventory includes all SmithEngineering research doctorates. Potential MathEngineering route shares MathStats host; current graduate research strengths control/information/communication not automatically OR. No additional explicit scoped engineering doctorate established."
+            "conclusion": "Expanded complete university degree inventory includes all Smith Engineering research doctorates. Potential Mathematical Engineering route shares Mathematics and Statistics host; current graduate research strengths control/information/communication not automatically OR. No additional explicit scoped engineering doctorate established."
           }
         ],
         "sources": [
@@ -36956,10 +37452,23 @@
             "checkedAt": "2026-10-21",
             "outcome": "read",
             "note": "Current MathStats graduate research strengths and MathematicalEngineering host; control/information/communication not relabeled OR without explicit evidence."
+          },
+          {
+            "url": "https://smith.queensu.ca/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full official school home read. Explicit Smith School of Business at Queen’s University, Goodes Hall Kingston Ontario Canada, distinct from other Smith business-school namesakes. School subordinate to Queen’s, not an independent university."
+          },
+          {
+            "url": "https://smith.queensu.ca/grad_studies/PHD/index.php",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full current PhD Management overview read. Explicit Smith Queen’s Kingston identity, nine doctoral specializations including Analytics and Management Information Systems. Does not list Digital Technology under that exact title; no unsupported rename into MIS inferred."
           }
         ],
         "limitations": [
-          "Current doctoral provision rather than historical graduates. Engineering systems/control methods not alone a qualifying IE/OR programme."
+          "Current doctoral provision rather than historical graduates. Engineering systems/control methods not alone a qualifying IE/OR programme.",
+          "Smith source identity confirmed as Queen’s subordinate school on 22 October. Canonical programme/field facts and engineering scope retained from 21 October review, not newly reverified; same existing programme ID avoids duplicate degree."
         ],
         "coverageComplete": true
       }
@@ -42197,6 +42706,173 @@
       "updatedAt": "2026-10-21T21:30:10Z"
     },
     {
+      "id": "smith-school-of-business",
+      "status": "partial",
+      "canonicalName": "Queen's University",
+      "universitySourceUrl": "https://smith.queensu.ca/",
+      "checkedAt": "2026-10-22",
+      "reviewer": "Codex in Chrome",
+      "duplicateOf": "queen-s-university",
+      "units": [
+        {
+          "id": "queen-s-university--management-analytics",
+          "name": "Management Analytics",
+          "school": "Smith School of Business",
+          "type": "area",
+          "fields": [
+            "operations-management",
+            "operations-research",
+            "supply-chain",
+            "logistics"
+          ],
+          "sourceUrl": "https://smith.queensu.ca/faculty_and_research/faculty.php",
+          "checkedAt": "2026-10-21",
+          "evidence": "The current Academic Area filter lists Management Analytics and groups its faculty, including an Operations Strategy fellow. Vedat Verter is explicitly assigned to this area and his official profile describes operations research, socially responsible supply chains, service-chain design and hazardous-materials logistics."
+        }
+      ],
+      "decisions": [
+        {
+          "sourceDepartmentId": "smith-school-of-business____digital-technology",
+          "disposition": "unresolved",
+          "unitIds": [],
+          "reason": "School label is an officially verified subordinate unit of Queen’s University in Kingston Canada, hence canonical parent alias. Imported Digital Technology exact academic-unit/field identity not established by opened current nine-specialization list; no silent conversion into MIS or Operations."
+        }
+      ],
+      "sources": [
+        {
+          "url": "http://business.queensu.ca/faculty_and_research/faculty.php",
+          "checkedAt": "2026-10-21",
+          "outcome": "blocked",
+          "note": "Legacy imported URL returned browser client block; no bypass or retry."
+        },
+        {
+          "url": "https://www.queensu.ca/",
+          "checkedAt": "2026-10-21",
+          "outcome": "read",
+          "note": "Official university name."
+        },
+        {
+          "url": "https://www.queensu.ca/academics",
+          "checkedAt": "2026-10-21",
+          "outcome": "read",
+          "note": "Official links to current Smith Business and Smith Engineering sites."
+        },
+        {
+          "url": "https://smithengineering.queensu.ca/",
+          "checkedAt": "2026-10-21",
+          "outcome": "read",
+          "note": "Expanded Departments menu lists nine engineering departments; no standalone industrial engineering or operations unit identified."
+        },
+        {
+          "url": "https://smith.queensu.ca/index.php",
+          "checkedAt": "2026-10-21",
+          "outcome": "read",
+          "note": "Current Smith School of Business identity and faculty-directory link."
+        },
+        {
+          "url": "https://smith.queensu.ca/faculty_and_research/faculty.php",
+          "checkedAt": "2026-10-21",
+          "outcome": "read",
+          "note": "Expanded Academic Area filter and selected Management Analytics; actual current faculty grouping."
+        },
+        {
+          "url": "https://smith.queensu.ca/faculty_and_research/faculty_list/verter-vedat.php",
+          "checkedAt": "2026-10-21",
+          "outcome": "read",
+          "note": "Academic-area affiliation plus explicit operations research, supply chain and logistics remit."
+        },
+        {
+          "url": "https://smith.queensu.ca/",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Full official school home read. Explicit Smith School of Business at Queen’s University, Goodes Hall Kingston Ontario Canada, distinct from other Smith business-school namesakes. School subordinate to Queen’s, not an independent university."
+        },
+        {
+          "url": "https://smith.queensu.ca/grad_studies/PHD/index.php",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Full current PhD Management overview read. Explicit Smith Queen’s Kingston identity, nine doctoral specializations including Analytics and Management Information Systems. Does not list Digital Technology under that exact title; no unsupported rename into MIS inferred."
+        }
+      ],
+      "limitations": [
+        "Institutional alias to Queen’s confirmed; imported Digital Technology exact academic-unit scope remains unresolved.",
+        "Prior Queen’s Management Analytics unit and evidence dates carried from integrated reviewed parent unchanged, not represented as newly read today."
+      ],
+      "doctoralReview": {
+        "status": "verified",
+        "checkedAt": "2026-10-22",
+        "programmeIds": [
+          "queen-s-university--management-phd-analytics"
+        ],
+        "branches": [
+          {
+            "branch": "business",
+            "reviewState": "checked",
+            "sourceUrls": [
+              "https://smith.queensu.ca/grad_studies/PHD/index.php",
+              "https://smith.queensu.ca/grad_studies/PHD/program-details/areas-of-specialization/analytics.php",
+              "https://www.queensu.ca/grad-postdoc/grad-studies/programs-degrees"
+            ],
+            "conclusion": "Full nine-specialization Management PhD inventory and complete university business graduate degree list checked; Analytics has explicit relevant research scope."
+          },
+          {
+            "branch": "engineering",
+            "reviewState": "checked",
+            "sourceUrls": [
+              "https://www.queensu.ca/grad-postdoc/grad-studies/programs-degrees",
+              "https://www.queensu.ca/mathstat/graduate/prospective-graduate"
+            ],
+            "conclusion": "Expanded complete university degree inventory includes all Smith Engineering research doctorates. Potential Mathematical Engineering route shares Mathematics and Statistics host; current graduate research strengths control/information/communication not automatically OR. No additional explicit scoped engineering doctorate established."
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://smith.queensu.ca/grad_studies/PHD/program-details/areas-of-specialization/analytics.php",
+            "checkedAt": "2026-10-21",
+            "outcome": "read",
+            "note": "Exact Analytics specialization, explicit OR/OM research training, research/thesis requirements and sample SCM curriculum."
+          },
+          {
+            "url": "https://smith.queensu.ca/grad_studies/PHD/index.php",
+            "checkedAt": "2026-10-21",
+            "outcome": "read",
+            "note": "Exact PhDManagement and complete9specialization inventory."
+          },
+          {
+            "url": "https://www.queensu.ca/grad-postdoc/grad-studies/programs-degrees",
+            "checkedAt": "2026-10-21",
+            "outcome": "read",
+            "note": "ExpandAll complete university programme/credential inventory incl engineering/business/math; ManagementPhD only business doctorate."
+          },
+          {
+            "url": "https://www.queensu.ca/mathstat/graduate/prospective-graduate",
+            "checkedAt": "2026-10-21",
+            "outcome": "read",
+            "note": "Current MathStats graduate research strengths and MathematicalEngineering host; control/information/communication not relabeled OR without explicit evidence."
+          },
+          {
+            "url": "https://smith.queensu.ca/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full official school home read. Explicit Smith School of Business at Queen’s University, Goodes Hall Kingston Ontario Canada, distinct from other Smith business-school namesakes. School subordinate to Queen’s, not an independent university."
+          },
+          {
+            "url": "https://smith.queensu.ca/grad_studies/PHD/index.php",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full current PhD Management overview read. Explicit Smith Queen’s Kingston identity, nine doctoral specializations including Analytics and Management Information Systems. Does not list Digital Technology under that exact title; no unsupported rename into MIS inferred."
+          }
+        ],
+        "limitations": [
+          "Current doctoral provision rather than historical graduates. Engineering systems/control methods not alone a qualifying IE/OR programme.",
+          "Smith source identity confirmed as Queen’s subordinate school on 22 October. Canonical programme/field facts and engineering scope retained from 21 October review, not newly reverified; same existing programme ID avoids duplicate degree."
+        ],
+        "coverageComplete": true
+      },
+      "addedAt": "2026-10-22T11:27:19Z",
+      "updatedAt": "2026-10-22T11:27:19Z"
+    },
+    {
       "id": "sogang-university",
       "status": "partial",
       "canonicalName": "Sogang University",
@@ -42605,6 +43281,218 @@
       },
       "addedAt": "2026-10-22T10:18:05Z",
       "updatedAt": "2026-10-22T10:18:05Z"
+    },
+    {
+      "id": "southern-illinois-university",
+      "status": "reviewed",
+      "canonicalName": "Southern Illinois University Carbondale",
+      "universitySourceUrl": "https://academics.siu.edu/engineering/engineering-science/",
+      "checkedAt": "2026-10-22",
+      "reviewer": "Codex in Chrome",
+      "duplicateOf": null,
+      "units": [
+        {
+          "id": "southern-illinois-university--management-marketing",
+          "name": "School of Management and Marketing",
+          "type": "school",
+          "school": "College of Business and Analytics",
+          "fields": [
+            "supply-chain",
+            "operations-management"
+          ],
+          "sourceUrl": "https://mgmk.siu.edu/mgmt/index.php",
+          "checkedAt": "2026-10-22",
+          "evidence": "Actual School of Management and Marketing programme page explicitly offers a formal BS Management specialization in Supply Chain Management; substantive unit remit, not a generic single required core course."
+        },
+        {
+          "id": "southern-illinois-university--applied-engineering-technology",
+          "name": "School of Applied Engineering and Technology",
+          "type": "school",
+          "school": "College of Engineering, Computing, Technology, and Mathematics",
+          "fields": [
+            "industrial-engineering"
+          ],
+          "sourceUrl": "https://saet.siu.edu/",
+          "checkedAt": "2026-10-22",
+          "evidence": "Official school home names exact school and college and explicitly offers Engineering Science PhD concentration in Industrial and Quality Engineering; original programme page corroborates field, dissertation and defence."
+        }
+      ],
+      "decisions": [
+        {
+          "sourceDepartmentId": "southern-illinois-university____business-analytics",
+          "disposition": "not-a-unit",
+          "unitIds": [],
+          "reason": "Original exact source posting identifies Business Analytics as hiring subject and actual host School of Analytics, Finance and Economics-SIUC. It is not a standalone Business Analytics department. Separate relevant Management/Marketing and Applied Engineering schools officially verified."
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.higheredjobs.com/faculty/details.cfm?JobCode=179589039&Title=Assistant%20Professor%20%2D%20Business%20Analytics",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Original active employer-authored posting fully read. Explicit Southern Illinois University Carbondale, School of Analytics Finance and Economics-SIUC, Job 2600402, Assistant Professor Business Analytics. Original source identifies campus, not inferred from broad SIU label. Closing 1 December 2026 but description review begins 1 December 2027; inconsistency retained, dates not repaired."
+        },
+        {
+          "url": "https://business.siu.edu/",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Official College of Business and Analytics and Carbondale campus identity read; three actual schools Accountancy, Analytics, Finance and Economics, Management and Marketing."
+        },
+        {
+          "url": "https://afe.siu.edu/",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Actual School of Analytics Finance and Economics full programme inventory read. BA BS/MS, Economics and Finance, Business PhD Finance; no qualifying Ops scope inferred from generic analytics."
+        },
+        {
+          "url": "https://mgmk.siu.edu/",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Full School of Management and Marketing page read. School explicitly prepares SCM careers, formal Management degree, Business PhD and separately labels a Proposed Center for Supply Chain Management and Logistics; proposed centre not added as established unit."
+        },
+        {
+          "url": "https://mgmk.siu.edu/mgmt/index.php",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Full current Management programme read. BS five formal specializations including Supply Chain Management, substantive host remit. Management PhD core OB/strategy with possible exposure to Operations Management among other topics; not a named guaranteed OM doctoral concentration."
+        },
+        {
+          "url": "https://academics.siu.edu/business/mba/doctoral/",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Complete actual Business Administration PhD page read. Four concentrations AccountingFinanceManagement and Marketing,60minimum credits including 24 dissertation, original research and thesis. Management research core HR/OB/entrepreneurship/strategy; possible exposure Operations Management only, not qualifying standalone OM doctoral specialization."
+        },
+        {
+          "url": "https://engineering.siu.edu/",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Entire engineering college home read, exact College of Engineering, Computing, Technology, and Mathematics, six schools and Carbondale address."
+        },
+        {
+          "url": "https://engineering.siu.edu/academics/index.php",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Academics page read with Doctoral Programs expanded: Biomedical, Civil and Environmental (four fields), CS, Electrical and Computer, Engineering Science (four concentrations including Industrial and Quality), Mathematics, Mechanical (six fields). No additional qualifying Ops field inferred from methods."
+        },
+        {
+          "url": "https://saet.siu.edu/",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Full School of Applied Engineering and Technology current page read. Actual School under engineering college explicitly offers Engineering Science PhD concentration Industrial and Quality Engineering, alongside professional Quality Engineering and Management MS and undergraduate industrial/applied engineering."
+        },
+        {
+          "url": "https://academics.siu.edu/engineering/engineering-science/",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Entire Engineering Science PhD page read. Exact Industrial and Quality Engineering concentration covers quality assurance, projects, safety/resource management; original dissertation and oral defence required. Cooperative SIU Carbondale / SIU Edwardsville programme allows both-campus work and shared committee, not same-institution identity. Intro credit wording internally inconsistent, no total credits fact adopted."
+        }
+      ],
+      "limitations": [
+        "Exact current source campus is Carbondale; Edwardsville remains distinct despite cooperative Engineering Science PhD.",
+        "Proposed SCM/logistics centre not treated as an operating unit.",
+        "Business Analytics original ad contains closing/review-year mismatch; no chronology repaired or inferred."
+      ],
+      "doctoralReview": {
+        "status": "verified",
+        "checkedAt": "2026-10-22",
+        "programmeIds": [
+          "southern-illinois-university--engineering-science-phd-industrial-quality-engineering"
+        ],
+        "branches": [
+          {
+            "branch": "business",
+            "reviewState": "checked",
+            "sourceUrls": [
+              "https://business.siu.edu/",
+              "https://afe.siu.edu/",
+              "https://mgmk.siu.edu/",
+              "https://mgmk.siu.edu/mgmt/index.php",
+              "https://academics.siu.edu/business/mba/doctoral/"
+            ],
+            "conclusion": "Actual three-school business organization and Business Administration PhD full four-concentration inventory read. Management may expose students to Operations Management, but this is not an explicit OM specialization/research route; formal SCM BS establishes unit scope, not PhD eligibility."
+          },
+          {
+            "branch": "engineering",
+            "reviewState": "checked",
+            "sourceUrls": [
+              "https://engineering.siu.edu/",
+              "https://engineering.siu.edu/academics/index.php",
+              "https://saet.siu.edu/",
+              "https://academics.siu.edu/engineering/engineering-science/"
+            ],
+            "conclusion": "Six-school college inventory and full expanded doctorate list read, followed actual Industrial and Quality concentration in Engineering Science and its school host. Other generic engineering fields not classified as Ops solely from methods."
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://www.higheredjobs.com/faculty/details.cfm?JobCode=179589039&Title=Assistant%20Professor%20%2D%20Business%20Analytics",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Original active employer-authored posting fully read. Explicit Southern Illinois University Carbondale, School of Analytics Finance and Economics-SIUC, Job 2600402, Assistant Professor Business Analytics. Original source identifies campus, not inferred from broad SIU label. Closing 1 December 2026 but description review begins 1 December 2027; inconsistency retained, dates not repaired."
+          },
+          {
+            "url": "https://business.siu.edu/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Official College of Business and Analytics and Carbondale campus identity read; three actual schools Accountancy, Analytics, Finance and Economics, Management and Marketing."
+          },
+          {
+            "url": "https://afe.siu.edu/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Actual School of Analytics Finance and Economics full programme inventory read. BA BS/MS, Economics and Finance, Business PhD Finance; no qualifying Ops scope inferred from generic analytics."
+          },
+          {
+            "url": "https://mgmk.siu.edu/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full School of Management and Marketing page read. School explicitly prepares SCM careers, formal Management degree, Business PhD and separately labels a Proposed Center for Supply Chain Management and Logistics; proposed centre not added as established unit."
+          },
+          {
+            "url": "https://mgmk.siu.edu/mgmt/index.php",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full current Management programme read. BS five formal specializations including Supply Chain Management, substantive host remit. Management PhD core OB/strategy with possible exposure to Operations Management among other topics; not a named guaranteed OM doctoral concentration."
+          },
+          {
+            "url": "https://academics.siu.edu/business/mba/doctoral/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Complete actual Business Administration PhD page read. Four concentrations AccountingFinanceManagement and Marketing,60minimum credits including 24 dissertation, original research and thesis. Management research core HR/OB/entrepreneurship/strategy; possible exposure Operations Management only, not qualifying standalone OM doctoral specialization."
+          },
+          {
+            "url": "https://engineering.siu.edu/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Entire engineering college home read, exact College of Engineering, Computing, Technology, and Mathematics, six schools and Carbondale address."
+          },
+          {
+            "url": "https://engineering.siu.edu/academics/index.php",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Academics page read with Doctoral Programs expanded: Biomedical, Civil and Environmental (four fields), CS, Electrical and Computer, Engineering Science (four concentrations including Industrial and Quality), Mathematics, Mechanical (six fields). No additional qualifying Ops field inferred from methods."
+          },
+          {
+            "url": "https://saet.siu.edu/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full School of Applied Engineering and Technology current page read. Actual School under engineering college explicitly offers Engineering Science PhD concentration Industrial and Quality Engineering, alongside professional Quality Engineering and Management MS and undergraduate industrial/applied engineering."
+          },
+          {
+            "url": "https://academics.siu.edu/engineering/engineering-science/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Entire Engineering Science PhD page read. Exact Industrial and Quality Engineering concentration covers quality assurance, projects, safety/resource management; original dissertation and oral defence required. Cooperative SIU Carbondale / SIU Edwardsville programme allows both-campus work and shared committee, not same-institution identity. Intro credit wording internally inconsistent, no total credits fact adopted."
+          }
+        ],
+        "limitations": [
+          "Current source-bounded programme/unit scope, not historical census.",
+          "Management doctorate optional exposure to OM does not establish a separate eligible Operations doctoral concentration."
+        ],
+        "coverageComplete": true
+      },
+      "addedAt": "2026-10-22T11:27:19Z",
+      "updatedAt": "2026-10-22T11:27:19Z"
     },
     {
       "id": "southern-methodist-university",
@@ -43873,6 +44761,126 @@
       },
       "addedAt": "2026-10-21T11:02:27Z",
       "updatedAt": "2026-10-21T11:02:27Z"
+    },
+    {
+      "id": "state-university-of-new-york-at-geneseo",
+      "status": "partial",
+      "canonicalName": "SUNY Geneseo",
+      "universitySourceUrl": "https://www.geneseo.edu/about/",
+      "checkedAt": "2026-10-22",
+      "reviewer": "Codex in Chrome",
+      "duplicateOf": null,
+      "units": [],
+      "decisions": [
+        {
+          "sourceDepartmentId": "state-university-of-new-york-at-geneseo____ba",
+          "disposition": "unresolved",
+          "unitIds": [],
+          "reason": "Imported BA abbreviation is not expanded into an invented department. Official current School of Business and undergraduate Data Analytics programme verified; original Data Analytics posting body inaccessible behind deleted-position reCaptcha. Full historical source unit/qualifying Ops remit remains unresolved."
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.geneseo.edu/about/",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Official About SUNY Geneseo page read. Public Honors College, Geneseo New York campus, current degrees include accounting/education/history graduate programmes. Canonical current official display name SUNY Geneseo, distinct from other SUNY campuses."
+        },
+        {
+          "url": "https://www.geneseo.edu/business/",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Full actual School of Business overview read. Seven current majors including Applied AI, Data Analytics and Business Administration; own Accounting master’s and affiliated 4+1 partner MBA/MS. School identity established, no substantive Ops specialization/research remit from generic analytics alone."
+        },
+        {
+          "url": "https://www.geneseo.edu/business/programsandminors/",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Full School of Business Academic Programs page read: six major list (differs from main page newly showing Applied AI), accounting graduate programmes, full minors including generic data analytics/statistical modelling. No actual named Ops/IE unit or qualifying field established from this source."
+        },
+        {
+          "url": "https://www.geneseo.edu/graduate-admissions/graduate-programs/",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Complete official graduate inventory overview read: master’s programmes only accounting, education and history. No engineering or relevant Ops/IE doctorate; affiliated partner MBA/MS not Geneseo doctorate."
+        },
+        {
+          "url": "https://www.higheredjobs.com/faculty/details.cfm?JobCode=179375952&Title=Assistant%20Professor%20of%20Data%20Analytics",
+          "checkedAt": "2026-10-22",
+          "outcome": "blocked",
+          "note": "Visible original ad title Assistant Professor of Data Analytics, deleted 1 June 2026. Full deleted-position description requires reCaptcha. No challenge interaction, login or workaround; visible title/search category does not verify full historical department."
+        }
+      ],
+      "limitations": [
+        "Original deleted employer posting has live reCaptcha gate; no challenge interaction. Current official institutional/school identity verified independently.",
+        "Generic data analytics and AI alone do not establish a qualifying Ops/IE unit; exact BA expansion and historical host not silently inferred.",
+        "School main page lists seven majors including Applied AI while academic programme overview lists six; present source discrepancy retained, no invented chronology."
+      ],
+      "doctoralReview": {
+        "status": "no-qualifying-programme-verified",
+        "checkedAt": "2026-10-22",
+        "programmeIds": [],
+        "branches": [
+          {
+            "branch": "business",
+            "reviewState": "checked",
+            "sourceUrls": [
+              "https://www.geneseo.edu/business/",
+              "https://www.geneseo.edu/business/programsandminors/",
+              "https://www.geneseo.edu/graduate-admissions/graduate-programs/"
+            ],
+            "conclusion": "Current university graduate inventory offers accounting, education and history master’s only. School business own graduate degree Accounting; affiliated 4+1 MBA/MS are partner routes, not PhDs."
+          },
+          {
+            "branch": "engineering",
+            "reviewState": "checked",
+            "sourceUrls": [
+              "https://www.geneseo.edu/about/",
+              "https://www.geneseo.edu/graduate-admissions/graduate-programs/"
+            ],
+            "conclusion": "Full institution/graduate scope checked: graduate programmes accounting, education and history, no engineering/Ops/IE doctorate."
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://www.geneseo.edu/about/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Official About SUNY Geneseo page read. Public Honors College, Geneseo New York campus, current degrees include accounting/education/history graduate programmes. Canonical current official display name SUNY Geneseo, distinct from other SUNY campuses."
+          },
+          {
+            "url": "https://www.geneseo.edu/business/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full actual School of Business overview read. Seven current majors including Applied AI, Data Analytics and Business Administration; own Accounting master’s and affiliated 4+1 partner MBA/MS. School identity established, no substantive Ops specialization/research remit from generic analytics alone."
+          },
+          {
+            "url": "https://www.geneseo.edu/business/programsandminors/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full School of Business Academic Programs page read: six major list (differs from main page newly showing Applied AI), accounting graduate programmes, full minors including generic data analytics/statistical modelling. No actual named Ops/IE unit or qualifying field established from this source."
+          },
+          {
+            "url": "https://www.geneseo.edu/graduate-admissions/graduate-programs/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Complete official graduate inventory overview read: master’s programmes only accounting, education and history. No engineering or relevant Ops/IE doctorate; affiliated partner MBA/MS not Geneseo doctorate."
+          },
+          {
+            "url": "https://www.higheredjobs.com/faculty/details.cfm?JobCode=179375952&Title=Assistant%20Professor%20of%20Data%20Analytics",
+            "checkedAt": "2026-10-22",
+            "outcome": "blocked",
+            "note": "Visible original ad title Assistant Professor of Data Analytics, deleted 1 June 2026. Full deleted-position description requires reCaptcha. No challenge interaction, login or workaround; visible title/search category does not verify full historical department."
+          }
+        ],
+        "limitations": [
+          "Current graduate inventory scope only; historical absence not claimed.",
+          "Historical BA source-unit label remains unresolved separately from doctoral coverage."
+        ],
+        "coverageComplete": true
+      },
+      "addedAt": "2026-10-22T11:27:19Z",
+      "updatedAt": "2026-10-22T11:27:19Z"
     },
     {
       "id": "stetson-university",
@@ -63646,7 +64654,43 @@
         "Imported BA remains unresolved and is not displayed as an acronym-only unit. Industrial Management is a degree program; its verified parent department is retained instead."
       ],
       "addedAt": "2026-10-21T07:40:08Z",
-      "updatedAt": "2026-10-21T07:40:08Z"
+      "updatedAt": "2026-10-22T11:27:19Z",
+      "doctoralReview": {
+        "status": "partial",
+        "checkedAt": "2026-10-22",
+        "programmeIds": [],
+        "branches": [
+          {
+            "branch": "business",
+            "reviewState": "partial",
+            "conclusion": "Current graduate doctorate inventory unavailable in this attempt; actual university-wide Majors, Minors and Degrees link opened from graduate navigation but timed out. Existing relevant business unit does not prove doctorate.",
+            "sourceUrls": [
+              "https://majors.uni.edu/"
+            ]
+          },
+          {
+            "branch": "engineering",
+            "reviewState": "partial",
+            "conclusion": "Current university degree inventory not read because actual linked directory navigation/read timed out. No qualifying doctorate or negative absence inferred.",
+            "sourceUrls": [
+              "https://majors.uni.edu/"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://majors.uni.edu/",
+            "checkedAt": "2026-10-22",
+            "outcome": "blocked",
+            "note": "Actual official Majors, Minors and Degrees link opened; navigation/read timed out. Subsequent Chrome inventory identified own tab as Privacy error at this destination. No security warning bypassed and no degree inventory read."
+          }
+        ],
+        "limitations": [
+          "Individual directory timeout recorded; no qualifying route or complete negative scope claimed. Existing unit/identity review and source-check dates preserved.",
+          "Privacy-error page confirmed by later browser tab inventory; substantive page unread. Chrome connection changed from 2 to 4, fresh official research works elsewhere."
+        ],
+        "coverageComplete": false
+      }
     },
     {
       "id": "university-of-notre-dame",
@@ -67958,6 +69002,118 @@
       }
     },
     {
+      "id": "university-of-virgin-islands",
+      "status": "partial",
+      "canonicalName": "University of the Virgin Islands",
+      "universitySourceUrl": "https://www.uvi.edu/",
+      "checkedAt": "2026-10-22",
+      "reviewer": "Codex in Chrome",
+      "duplicateOf": null,
+      "units": [],
+      "decisions": [
+        {
+          "sourceDepartmentId": "university-of-virgin-islands____decision-sciences",
+          "disposition": "unresolved",
+          "unitIds": [],
+          "reason": "Current official business department inventory lists Accounting/Finance, Hospitality/Tourism, IS/Technology, Management/Marketing/Construction Management and Entrepreneurship; no Decision Sciences department established. Could be course subject/historical label, but official schedule source unread, so no inferred replacement."
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.uvi.edu/",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Official University of the Virgin Islands full name and institutional navigation read."
+        },
+        {
+          "url": "https://www.uvi.edu/academics/school-business/",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Full current School of Business department inventory read, Management/Marketing/Construction Management panel actually expanded."
+        },
+        {
+          "url": "https://www.uvi.edu/academics/science-math/",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Full current Science and Mathematics unit inventory read; engineering degree opportunities explicitly at affiliated universities."
+        },
+        {
+          "url": "https://www.uvi.edu/graduate/index.html",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Full graduate overview and all programme panels actually expanded/read; one CLIC PhD with three tracks, other programmes masters/certificates."
+        },
+        {
+          "url": "https://schedclass.uvi.edu/stxschedule.aspx?term=202405",
+          "checkedAt": "2026-10-22",
+          "outcome": "blocked",
+          "note": "Official historical schedule lead opened but navigation timed out; subject classification not verified from search snippet."
+        }
+      ],
+      "limitations": [
+        "Official full university name includes the; imported name preserved separately. Business and science/engineering branches examined, but imported Decision Sciences identity remains unresolved.",
+        "No relevant formal unit verified from combined management programmes alone. Engineering opportunities at affiliated universities not relabelled as UVI engineering department."
+      ],
+      "doctoralReview": {
+        "status": "no-qualifying-programme-verified",
+        "checkedAt": "2026-10-22",
+        "programmeIds": [],
+        "branches": [
+          {
+            "branch": "business",
+            "reviewState": "checked",
+            "conclusion": "Full current graduate inventory actually expanded. School of Business offers EMBA/MACC/MBA, no business doctorate. Sole listed PhD Creative Leadership for Innovation and Change has Creativity/Leadership, Educational/Academic Leadership and Organizational Development/Leadership tracks; no substantive Operations/OR/IE field established.",
+            "sourceUrls": [
+              "https://www.uvi.edu/academics/school-business/",
+              "https://www.uvi.edu/graduate/index.html"
+            ]
+          },
+          {
+            "branch": "engineering",
+            "reviewState": "checked",
+            "conclusion": "Full current science and graduate inventories read. Science graduate programmes Mathematics for Secondary Teachers MA and Marine/Environmental Science; engineering degrees explicitly at affiliated universities. No UVI relevant engineering/OR doctorate verified.",
+            "sourceUrls": [
+              "https://www.uvi.edu/academics/science-math/",
+              "https://www.uvi.edu/graduate/index.html"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://www.uvi.edu/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Official University of the Virgin Islands full name and institutional navigation read."
+          },
+          {
+            "url": "https://www.uvi.edu/academics/school-business/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full current School of Business department inventory read, Management/Marketing/Construction Management panel actually expanded."
+          },
+          {
+            "url": "https://www.uvi.edu/academics/science-math/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full current Science and Mathematics unit inventory read; engineering degree opportunities explicitly at affiliated universities."
+          },
+          {
+            "url": "https://www.uvi.edu/graduate/index.html",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full graduate overview and all programme panels actually expanded/read; one CLIC PhD with three tracks, other programmes masters/certificates."
+          }
+        ],
+        "limitations": [
+          "Source-bounded current graduate inventory and all expanded doctoral track groups complete. Separate imported Decision Sciences unit mapping remains unresolved; negative doctoral scope does not complete that identity audit.",
+          "Leadership PhD tracks are one award, not three; no Ops field inferred from organizational leadership alone."
+        ],
+        "coverageComplete": true
+      },
+      "addedAt": "2026-10-22T11:27:19Z",
+      "updatedAt": "2026-10-22T11:27:19Z"
+    },
+    {
       "id": "university-of-virginia",
       "status": "partial",
       "canonicalName": "University of Virginia",
@@ -68116,6 +69272,121 @@
       },
       "addedAt": "2026-10-21T11:02:27Z",
       "updatedAt": "2026-10-21T11:02:27Z"
+    },
+    {
+      "id": "university-of-waikato",
+      "status": "partial",
+      "canonicalName": "University of Waikato",
+      "universitySourceUrl": "https://www.waikato.ac.nz/about/global-partnerships/global-programmes/",
+      "checkedAt": "2026-10-22",
+      "reviewer": "Codex in Chrome",
+      "duplicateOf": null,
+      "units": [
+        {
+          "id": "university-of-waikato--sdu-uow-international-business-school",
+          "name": "SDU-UoW International Business School (SDU-UoW IBS)",
+          "school": null,
+          "type": "school",
+          "fields": [
+            "supply-chain"
+          ],
+          "sourceUrl": "https://www.waikato.ac.nz/about/global-partnerships/global-programmes/",
+          "checkedAt": "2026-10-22",
+          "evidence": "Official University of Waikato global programme page explicitly names joint institute/school with Shandong University at Weihai China and undergraduate/doctoral Supply Chain Management provision. Joint host identity preserved; single Waikato doctoral award, not Shandong dual doctoral award."
+        }
+      ],
+      "decisions": [
+        {
+          "sourceDepartmentId": "university-of-waikato__business-school__supply-chain-management",
+          "disposition": "unresolved",
+          "unitIds": [],
+          "reason": "Imported China/Business School/SCM may refer to offshore offering, not necessarily NZ main campus. Official Waikato current China SCM doctoral provision at SDU-UoW IBS independently verified, but exact archived job body gated by reCAPTCHA, so no guessed source-label-to-school equivalence."
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.waikato.ac.nz/about/global-partnerships/global-programmes/",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Full official global-programme inventory read, actual joint institutions/locations and degree relationships. SDU-UoW IBS at Weihai delivers doctoral Economics/SCM/Tourism entirely in China, single University of Waikato doctoral award; undergraduate dual degrees distinguished."
+        },
+        {
+          "url": "https://www.waikato.ac.nz/study/subject-regulations/supply-chain-management/2026/",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Current 2026 selected via Change year and actually expanded PhD prescription read: Doctor of Philosophy, supervised original thesis/publishable contribution. Header 2026 while footer template says 2027 current-as-of date; discrepancy retained."
+        },
+        {
+          "url": "https://www.waikato.ac.nz/study/subject-regulations/supply-chain-management/2027/",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Full 2027 subject overview and actually expanded PhD research prescription read, not relabelled as 2026."
+        },
+        {
+          "url": "https://www.higheredjobs.com/faculty/details.cfm?JobCode=179521547&Title=Senior%20Lecturer%2C%20Associate%20Professor%20or%20Professor%20in%20Supply%20Chain%20Management",
+          "checkedAt": "2026-10-22",
+          "outcome": "blocked",
+          "note": "Exact imported job source opened, position deleted 9/01/2026. reCAPTCHA required to read deleted description; challenge not solved, body/campus unverified."
+        }
+      ],
+      "limitations": [
+        "Canonical university name established, but original posting campus identity unresolved; do not relabel all China observations as New Zealand or Hangzhou.",
+        "Official global programme page establishes China engineering partnership at HEBUST as undergraduate; broader main-campus business/engineering unit inventories unreviewed.",
+        "Joint institute school type used because official exact title says International Business School; retained description as joint institute, not stand-alone degree-awarding university."
+      ],
+      "doctoralReview": {
+        "status": "verified",
+        "checkedAt": "2026-10-22",
+        "programmeIds": [
+          "university-of-waikato--phd-supply-chain-management"
+        ],
+        "branches": [
+          {
+            "branch": "business",
+            "reviewState": "partial",
+            "conclusion": "Official current global programmes and 2026 SCM PhD subject prescription establish current China-based SCM route. Broader university business doctoral inventory and NZ main-campus additional routes remain unreviewed.",
+            "sourceUrls": [
+              "https://www.waikato.ac.nz/about/global-partnerships/global-programmes/",
+              "https://www.waikato.ac.nz/study/subject-regulations/supply-chain-management/2026/"
+            ]
+          },
+          {
+            "branch": "engineering",
+            "reviewState": "partial",
+            "conclusion": "Official offshore inventory describes HEBUST engineering partnership as undergraduate, no offshore IE doctorate established. Broader main-campus engineering doctoral inventory unreviewed.",
+            "sourceUrls": [
+              "https://www.waikato.ac.nz/about/global-partnerships/global-programmes/"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://www.waikato.ac.nz/about/global-partnerships/global-programmes/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full official global-programme inventory read, actual joint institutions/locations and degree relationships. SDU-UoW IBS at Weihai delivers doctoral Economics/SCM/Tourism entirely in China, single University of Waikato doctoral award; undergraduate dual degrees distinguished."
+          },
+          {
+            "url": "https://www.waikato.ac.nz/study/subject-regulations/supply-chain-management/2026/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Current 2026 selected via Change year and actually expanded PhD prescription read: Doctor of Philosophy, supervised original thesis/publishable contribution. Header 2026 while footer template says 2027 current-as-of date; discrepancy retained."
+          },
+          {
+            "url": "https://www.waikato.ac.nz/study/subject-regulations/supply-chain-management/2027/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full 2027 subject overview and actually expanded PhD research prescription read, not relabelled as 2026."
+          }
+        ],
+        "limitations": [
+          "Current exact SCM doctoral field and research credential verified; full university scope incomplete.",
+          "Original China source campus mapping remains separate unit/source audit. Preserve raw China assertion and official dual-undergraduate/single-doctoral distinction."
+        ],
+        "coverageComplete": false
+      },
+      "addedAt": "2026-10-22T11:27:19Z",
+      "updatedAt": "2026-10-22T11:27:19Z"
     },
     {
       "id": "university-of-warwick",
@@ -68537,6 +69808,296 @@
       },
       "addedAt": "2026-10-21T20:23:18Z",
       "updatedAt": "2026-10-21T20:23:18Z"
+    },
+    {
+      "id": "university-of-washington-bothell",
+      "status": "reviewed",
+      "canonicalName": "University of Washington Bothell",
+      "universitySourceUrl": "https://www.uwb.edu/business/",
+      "checkedAt": "2026-10-22",
+      "reviewer": "Codex in Chrome",
+      "duplicateOf": null,
+      "units": [
+        {
+          "id": "university-of-washington-bothell--school-of-business",
+          "name": "School of Business",
+          "school": null,
+          "type": "school",
+          "fields": [
+            "supply-chain",
+            "operations-management"
+          ],
+          "sourceUrl": "https://www.uwb.edu/business/undergraduate/business-administration/supply-chain",
+          "checkedAt": "2026-10-22",
+          "evidence": "Official school programme inventory and exact SCM Option page establish actual School of Business with substantive supply-chain/operations education, sourcing/resource planning/process improvement. SCM is a BBA option, not a separately verified department."
+        }
+      ],
+      "decisions": [
+        {
+          "sourceDepartmentId": "university-of-washington-bothell__school-of-business__supply-chain-management-and-operations",
+          "disposition": "replaced",
+          "unitIds": [
+            "university-of-washington-bothell--school-of-business"
+          ],
+          "reason": "Source subject label represented under actual official School of Business; no standalone SCM and Operations department claimed. Programme and school education remit verified."
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.uwb.edu/business/",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Full current official school/campus inventory read, explicit Bothell identity distinct from Seattle and Tacoma."
+        },
+        {
+          "url": "https://www.uwb.edu/business/undergraduate/business-administration/supply-chain",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Full official SCM option and operations/project management, procurement, sourcing, resource planning and process-improvement curriculum read; programme not department."
+        },
+        {
+          "url": "https://www.uwb.edu/schools-academics",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Full current official school/campus inventory read, explicit Bothell identity distinct from Seattle and Tacoma."
+        },
+        {
+          "url": "https://www.uwb.edu/stem",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Full current school inventory and four actual departments/programmes read."
+        },
+        {
+          "url": "https://www.uwb.edu/graduate",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Full campus graduate degree and certificate inventory read, all masters/certificates."
+        }
+      ],
+      "limitations": [
+        "Relevant combined school retained at actual school level; no narrower formal department verified from teaching concentration alone.",
+        "STEM inventory has four departments but no additional relevant IE/OR unit verified. Bothell retained as campus provider, not merged with Seattle/Tacoma by shared University of Washington parent."
+      ],
+      "doctoralReview": {
+        "status": "no-qualifying-programme-verified",
+        "checkedAt": "2026-10-22",
+        "programmeIds": [],
+        "branches": [
+          {
+            "branch": "business",
+            "reviewState": "checked",
+            "conclusion": "Full current School of Business and campus graduate inventories read: MBA variants, MSA and professional education, no relevant research doctorate. PharmD/MBA combined title not inferred as Ops PhD.",
+            "sourceUrls": [
+              "https://www.uwb.edu/business/",
+              "https://www.uwb.edu/graduate"
+            ]
+          },
+          {
+            "branch": "engineering",
+            "reviewState": "checked",
+            "conclusion": "Full STEM department/programme inventory and complete campus graduate list read; advanced engineering/computing degrees are masters/certificates. No Bothell IE/OR doctorate, no transfer of Seattle-campus doctoral degree merely shared UW graduate administration.",
+            "sourceUrls": [
+              "https://www.uwb.edu/stem",
+              "https://www.uwb.edu/graduate"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://www.uwb.edu/business/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full current official school/campus inventory read, explicit Bothell identity distinct from Seattle and Tacoma."
+          },
+          {
+            "url": "https://www.uwb.edu/business/undergraduate/business-administration/supply-chain",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full official SCM option and operations/project management, procurement, sourcing, resource planning and process-improvement curriculum read; programme not department."
+          },
+          {
+            "url": "https://www.uwb.edu/schools-academics",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full current official school/campus inventory read, explicit Bothell identity distinct from Seattle and Tacoma."
+          },
+          {
+            "url": "https://www.uwb.edu/stem",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full current school inventory and four actual departments/programmes read."
+          },
+          {
+            "url": "https://www.uwb.edu/graduate",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full campus graduate degree and certificate inventory read, all masters/certificates."
+          }
+        ],
+        "limitations": [
+          "Source-bounded current campus graduate inventory checked, not historical absence or all individual faculty research. Shared UW parent/graduate administration kept separate from campus-specific degree provision."
+        ],
+        "coverageComplete": true
+      },
+      "addedAt": "2026-10-22T11:27:19Z",
+      "updatedAt": "2026-10-22T11:27:19Z"
+    },
+    {
+      "id": "university-of-washington-tacoma-milgard-school-of-business",
+      "status": "partial",
+      "canonicalName": "University of Washington Tacoma",
+      "universitySourceUrl": "https://www.tacoma.uw.edu/academic-affairs/schools-and-programs",
+      "checkedAt": "2026-10-22",
+      "reviewer": "Codex in Chrome",
+      "duplicateOf": null,
+      "units": [
+        {
+          "id": "university-of-washington-tacoma-milgard-school-of-business--business-analytics-operations",
+          "name": "Business Analytics & Operations",
+          "school": "Milgard School of Business",
+          "type": "area",
+          "fields": [
+            "operations-management"
+          ],
+          "sourceUrl": "https://www.tacoma.uw.edu/business/cba",
+          "checkedAt": "2026-10-22",
+          "evidence": "Official Center for Business Analytics page lists Business Analytics & Operations as one of Milgard faculty expertise areas, alongside Accounting/Economics/Finance/Management/Marketing. Current research roster explicitly includes IS/operations-management interface. Retained as actual faculty area, not a formal standalone department."
+        }
+      ],
+      "decisions": [
+        {
+          "sourceDepartmentId": "university-of-washington-tacoma-milgard-school-of-business____scm-ba",
+          "disposition": "unresolved",
+          "unitIds": [],
+          "reason": "Current official Milgard faculty area Business Analytics & Operations verified independently, but raw SCM/BA posting acronym and supply-chain component not conclusively mapped. No forced expansion of source BA or invented SCM department."
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.tacoma.uw.edu/academic-affairs/schools-and-programs",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Full campus school list and Graduate Programs filter actually selected/read; exact Tacoma campus identity."
+        },
+        {
+          "url": "https://www.tacoma.uw.edu/business",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Full current official school/graduate inventory read."
+        },
+        {
+          "url": "https://www.tacoma.uw.edu/business/faculty-research",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Full current faculty research page, Business Analytics Faculty panel actually expanded/read; Operations Management interface research explicitly present, no individual career investigation."
+        },
+        {
+          "url": "https://www.tacoma.uw.edu/business/cba",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Full actual centre page names Business Analytics & Operations among Milgard faculty expertise areas; centre analytics remit not automatically an independent OR unit."
+        },
+        {
+          "url": "https://www.tacoma.uw.edu/set",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Full current official school/graduate inventory read."
+        },
+        {
+          "url": "https://www.tacoma.uw.edu/set/programs/graduate",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Full current official school/graduate inventory read."
+        },
+        {
+          "url": "https://www.tacoma.uw.edu/set/programs/graduate/phdcss",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Full current CSS PhD overview and actual Degree Requirements panel read: algorithms/distributed computing, ML/cryptography/cloud/bioinformatics, 30 dissertation credits."
+        }
+      ],
+      "limitations": [
+        "Tacoma campus identity established; Milgard is actual business school, not separate university or Seattle campus alias. Shared UW parent does not move degrees across campuses.",
+        "Imported SCM/BA source-label mapping remains partial. Current named area spelling differs from research-page Business Analytics Faculty header; no inferred rename date.",
+        "Center analytics mission alone not asserted as separate IE/OR centre; named faculty area with explicit Operations retained."
+      ],
+      "doctoralReview": {
+        "status": "no-qualifying-programme-verified",
+        "checkedAt": "2026-10-22",
+        "programmeIds": [],
+        "branches": [
+          {
+            "branch": "business",
+            "reviewState": "checked",
+            "conclusion": "Complete campus graduate filter and Milgard current bachelor/masters inventories read, no business doctorate. Actual faculty Operations area does not establish PhD.",
+            "sourceUrls": [
+              "https://www.tacoma.uw.edu/academic-affairs/schools-and-programs",
+              "https://www.tacoma.uw.edu/business"
+            ]
+          },
+          {
+            "branch": "engineering",
+            "reviewState": "checked",
+            "conclusion": "Complete campus graduate filter and engineering graduate inventory read; only technical doctorate CSS PhD. Full exact programme and Degree Requirements panel show computing research fields algorithms, distributed computing, ML, cryptography, cloud and bioinformatics, no explicit Ops/OR/IE doctoral field. Other campus doctorate Educational Leadership is unrelated.",
+            "sourceUrls": [
+              "https://www.tacoma.uw.edu/academic-affairs/schools-and-programs",
+              "https://www.tacoma.uw.edu/set",
+              "https://www.tacoma.uw.edu/set/programs/graduate",
+              "https://www.tacoma.uw.edu/set/programs/graduate/phdcss"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://www.tacoma.uw.edu/academic-affairs/schools-and-programs",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full campus school list and Graduate Programs filter actually selected/read; exact Tacoma campus identity."
+          },
+          {
+            "url": "https://www.tacoma.uw.edu/business",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full current official school/graduate inventory read."
+          },
+          {
+            "url": "https://www.tacoma.uw.edu/business/faculty-research",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full current faculty research page, Business Analytics Faculty panel actually expanded/read; Operations Management interface research explicitly present, no individual career investigation."
+          },
+          {
+            "url": "https://www.tacoma.uw.edu/business/cba",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full actual centre page names Business Analytics & Operations among Milgard faculty expertise areas; centre analytics remit not automatically an independent OR unit."
+          },
+          {
+            "url": "https://www.tacoma.uw.edu/set",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full current official school/graduate inventory read."
+          },
+          {
+            "url": "https://www.tacoma.uw.edu/set/programs/graduate",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full current official school/graduate inventory read."
+          },
+          {
+            "url": "https://www.tacoma.uw.edu/set/programs/graduate/phdcss",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full current CSS PhD overview and actual Degree Requirements panel read: algorithms/distributed computing, ML/cryptography/cloud/bioinformatics, 30 dissertation credits."
+          }
+        ],
+        "limitations": [
+          "Source-bounded current campus doctoral inventory and plausibly relevant CSS programme research scope checked, not historical absence or every faculty project. Original SCM/BA unit/source assertion remains separate incomplete audit."
+        ],
+        "coverageComplete": true
+      },
+      "addedAt": "2026-10-22T11:27:19Z",
+      "updatedAt": "2026-10-22T11:27:19Z"
     },
     {
       "id": "university-of-waterloo",

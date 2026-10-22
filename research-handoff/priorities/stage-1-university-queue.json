@@ -5,11 +5,11 @@
   "publishedReviewCounts": {
     "definition": "Individual Chrome reviews of official university names and operations units. The original directory remains in universities.json. Reviewed describes the stated source scope, not an exhaustive current or historical census.",
     "sourceRecords": 666,
-    "attempted": 545,
-    "reviewed": 448,
-    "partial": 92,
+    "attempted": 552,
+    "reviewed": 453,
+    "partial": 94,
     "blocked": 5,
-    "pending": 121
+    "pending": 114
   },
   "completionGate": "First verify PhD institutions reported by OM List faculty, then expand to other university/job-source candidates. Verify current relevant doctoral programmes across business and engineering, official university/unit identities and aliases. Unit reviews alone do not establish doctoral eligibility or Stage 1 completion.",
   "doctoralPriorityQueue": "stage-1-doctoral-priority-queue.json",
@@ -20,9 +20,9 @@
     "source-catalogue-official-expansion-2026-10-22.json"
   ],
   "unitAssertionStates": {
-    "accounted-for-by-existing-decision": 2680,
-    "pending-source-reconciliation": 2177,
-    "unresolved-existing-decision": 329,
+    "accounted-for-by-existing-decision": 2690,
+    "pending-source-reconciliation": 2153,
+    "unresolved-existing-decision": 343,
     "accounted-for-by-individual-decision": 5,
     "no-unit-assertion": 201,
     "conflicting-existing-decisions": 4
@@ -4064,14 +4064,15 @@
           "schoolAsListed": "Faculty of Engineering and Computer Science",
           "departmentAsListed": "Digital Production Technologies",
           "reconciliation": {
-            "state": "unresolved-existing-decision",
+            "state": "accounted-for-by-existing-decision",
+            "note": "Exact source school/department assertion already adjudicated; preserves prior evidence dates and does not reverify current provision.",
             "priorDecisions": [
               {
                 "universityId": "aschaffenburg-university-of-applied-sciences",
                 "sourceDepartmentId": "aschaffenburg-university-of-applied-sciences__faculty-of-engineering-and-computer-science__digital-production-technologies",
-                "disposition": "unresolved",
+                "disposition": "not-a-unit",
                 "unitIds": [],
-                "reason": "Engineering faculty confirmed, but Digital Production Technologies not verified as named department or organizational area; no equivalence asserted.",
+                "reason": "The current official appointment monitor identifies Digital Production Technologies as a W2 professorship, reference iwin-w-8, in the IWIN faculty category. It is a position or teaching/research remit, not a separately named department. The engineering faculty remains independently verified; no separate unit or equivalence with DiProLeA is created.",
                 "reviewCheckedAt": "2026-10-20",
                 "unitEvidence": [],
                 "evidenced": true
@@ -4095,14 +4096,15 @@
           "schoolAsListed": "Faculty of Engineering and Computer Science",
           "departmentAsListed": "Digital Production Technologies",
           "reconciliation": {
-            "state": "unresolved-existing-decision",
+            "state": "accounted-for-by-existing-decision",
+            "note": "Exact source school/department assertion already adjudicated; preserves prior evidence dates and does not reverify current provision.",
             "priorDecisions": [
               {
                 "universityId": "aschaffenburg-university-of-applied-sciences",
                 "sourceDepartmentId": "aschaffenburg-university-of-applied-sciences__faculty-of-engineering-and-computer-science__digital-production-technologies",
-                "disposition": "unresolved",
+                "disposition": "not-a-unit",
                 "unitIds": [],
-                "reason": "Engineering faculty confirmed, but Digital Production Technologies not verified as named department or organizational area; no equivalence asserted.",
+                "reason": "The current official appointment monitor identifies Digital Production Technologies as a W2 professorship, reference iwin-w-8, in the IWIN faculty category. It is a position or teaching/research remit, not a separately named department. The engineering faculty remains independently verified; no separate unit or equivalence with DiProLeA is created.",
                 "reviewCheckedAt": "2026-10-20",
                 "unitEvidence": [],
                 "evidenced": true
@@ -12910,16 +12912,25 @@
           "schoolAsListed": null,
           "departmentAsListed": "Decision Sciences and Management Information Systems",
           "reconciliation": {
-            "state": "unresolved-existing-decision",
+            "state": "accounted-for-by-existing-decision",
+            "note": "Exact source school/department assertion already adjudicated; preserves prior evidence dates and does not reverify current provision.",
             "priorDecisions": [
               {
                 "universityId": "ceibs",
                 "sourceDepartmentId": "ceibs____decision-sciences-and-management-information-systems",
-                "disposition": "unresolved",
-                "unitIds": [],
-                "reason": "Named combined area exists, but current two faculty profiles predominantly emphasize IS/AI/digital economy. Liu lists an OM course and Tan OM/SCM publication ranking; substantive operations remit beyond these signals remains unconfirmed.",
+                "disposition": "replaced",
+                "unitIds": [
+                  "ceibs--decision-sciences-management-information-systems"
+                ],
+                "reason": "Exact current area now has substantive supply-chain and service-operations research evidence in its assigned faculty member’s official publication titles. This resolves the earlier limitation based only on journal names, rankings and teaching signals.",
                 "reviewCheckedAt": "2026-10-20",
-                "unitEvidence": [],
+                "unitEvidence": [
+                  {
+                    "id": "ceibs--decision-sciences-management-information-systems",
+                    "sourceUrl": "https://www.ceibs.edu/teacher/25029",
+                    "checkedAt": "2026-10-22"
+                  }
+                ],
                 "evidenced": true
               }
             ]
@@ -13031,16 +13042,25 @@
           "schoolAsListed": null,
           "departmentAsListed": "Decision Sciences and Management Information Systems",
           "reconciliation": {
-            "state": "unresolved-existing-decision",
+            "state": "accounted-for-by-existing-decision",
+            "note": "Exact source school/department assertion already adjudicated; preserves prior evidence dates and does not reverify current provision.",
             "priorDecisions": [
               {
                 "universityId": "ceibs",
                 "sourceDepartmentId": "ceibs____decision-sciences-and-management-information-systems",
-                "disposition": "unresolved",
-                "unitIds": [],
-                "reason": "Named combined area exists, but current two faculty profiles predominantly emphasize IS/AI/digital economy. Liu lists an OM course and Tan OM/SCM publication ranking; substantive operations remit beyond these signals remains unconfirmed.",
+                "disposition": "replaced",
+                "unitIds": [
+                  "ceibs--decision-sciences-management-information-systems"
+                ],
+                "reason": "Exact current area now has substantive supply-chain and service-operations research evidence in its assigned faculty member’s official publication titles. This resolves the earlier limitation based only on journal names, rankings and teaching signals.",
                 "reviewCheckedAt": "2026-10-20",
-                "unitEvidence": [],
+                "unitEvidence": [
+                  {
+                    "id": "ceibs--decision-sciences-management-information-systems",
+                    "sourceUrl": "https://www.ceibs.edu/teacher/25029",
+                    "checkedAt": "2026-10-22"
+                  }
+                ],
                 "evidenced": true
               }
             ]
@@ -56273,6 +56293,27 @@
           }
         },
         {
+          "source": "oa-directory",
+          "sourceRecordId": "smith-school-of-business____digital-technology",
+          "schoolAsListed": null,
+          "departmentAsListed": "Digital Technology",
+          "reconciliation": {
+            "state": "unresolved-existing-decision",
+            "priorDecisions": [
+              {
+                "universityId": "smith-school-of-business",
+                "sourceDepartmentId": "smith-school-of-business____digital-technology",
+                "disposition": "unresolved",
+                "unitIds": [],
+                "reason": "School label is an officially verified subordinate unit of Queen’s University in Kingston Canada, hence canonical parent alias. Imported Digital Technology exact academic-unit/field identity not established by opened current nine-specialization list; no silent conversion into MIS or Operations.",
+                "reviewCheckedAt": "2026-10-22",
+                "unitEvidence": [],
+                "evidenced": true
+              }
+            ]
+          }
+        },
+        {
           "source": "oa-universities",
           "sourceRecordId": "queen-s-university-smith-school-of-business",
           "schoolAsListed": "Smith School of Business",
@@ -56297,6 +56338,27 @@
                     "checkedAt": "2026-10-21"
                   }
                 ],
+                "evidenced": true
+              }
+            ]
+          }
+        },
+        {
+          "source": "oa-jobs",
+          "sourceRecordId": "2026-smith-school-of-business-20251003",
+          "schoolAsListed": null,
+          "departmentAsListed": "Digital Technology",
+          "reconciliation": {
+            "state": "unresolved-existing-decision",
+            "priorDecisions": [
+              {
+                "universityId": "smith-school-of-business",
+                "sourceDepartmentId": "smith-school-of-business____digital-technology",
+                "disposition": "unresolved",
+                "unitIds": [],
+                "reason": "School label is an officially verified subordinate unit of Queen’s University in Kingston Canada, hence canonical parent alias. Imported Digital Technology exact academic-unit/field identity not established by opened current nine-specialization list; no silent conversion into MIS or Operations.",
+                "reviewCheckedAt": "2026-10-22",
+                "unitEvidence": [],
                 "evidenced": true
               }
             ]
@@ -56373,6 +56435,27 @@
           }
         },
         {
+          "source": "oa-live-directory",
+          "sourceRecordId": "smith-school-of-business____digital-technology",
+          "schoolAsListed": null,
+          "departmentAsListed": "Digital Technology",
+          "reconciliation": {
+            "state": "unresolved-existing-decision",
+            "priorDecisions": [
+              {
+                "universityId": "smith-school-of-business",
+                "sourceDepartmentId": "smith-school-of-business____digital-technology",
+                "disposition": "unresolved",
+                "unitIds": [],
+                "reason": "School label is an officially verified subordinate unit of Queen’s University in Kingston Canada, hence canonical parent alias. Imported Digital Technology exact academic-unit/field identity not established by opened current nine-specialization list; no silent conversion into MIS or Operations.",
+                "reviewCheckedAt": "2026-10-22",
+                "unitEvidence": [],
+                "evidenced": true
+              }
+            ]
+          }
+        },
+        {
           "source": "oa-live-universities",
           "sourceRecordId": "queen-s-university-smith-school-of-business",
           "schoolAsListed": "Smith School of Business",
@@ -56397,6 +56480,27 @@
                     "checkedAt": "2026-10-21"
                   }
                 ],
+                "evidenced": true
+              }
+            ]
+          }
+        },
+        {
+          "source": "oa-live-jobs",
+          "sourceRecordId": "2026-smith-school-of-business-20251003",
+          "schoolAsListed": null,
+          "departmentAsListed": "Digital Technology",
+          "reconciliation": {
+            "state": "unresolved-existing-decision",
+            "priorDecisions": [
+              {
+                "universityId": "smith-school-of-business",
+                "sourceDepartmentId": "smith-school-of-business____digital-technology",
+                "disposition": "unresolved",
+                "unitIds": [],
+                "reason": "School label is an officially verified subordinate unit of Queen’s University in Kingston Canada, hence canonical parent alias. Imported Digital Technology exact academic-unit/field identity not established by opened current nine-specialization list; no silent conversion into MIS or Operations.",
+                "reviewCheckedAt": "2026-10-22",
+                "unitEvidence": [],
                 "evidenced": true
               }
             ]
@@ -62890,52 +62994,6 @@
       ]
     },
     {
-      "id": "reviewed:smith-school-of-business",
-      "officialUnitComparison": "pending-source-reconciliation",
-      "sourceAssertions": [
-        {
-          "source": "oa-directory",
-          "sourceRecordId": "smith-school-of-business____digital-technology",
-          "schoolAsListed": null,
-          "departmentAsListed": "Digital Technology",
-          "reconciliation": {
-            "state": "pending-source-reconciliation",
-            "note": "No exact school/department assertion with an existing official review decision."
-          }
-        },
-        {
-          "source": "oa-jobs",
-          "sourceRecordId": "2026-smith-school-of-business-20251003",
-          "schoolAsListed": null,
-          "departmentAsListed": "Digital Technology",
-          "reconciliation": {
-            "state": "pending-source-reconciliation",
-            "note": "No exact school/department assertion with an existing official review decision."
-          }
-        },
-        {
-          "source": "oa-live-directory",
-          "sourceRecordId": "smith-school-of-business____digital-technology",
-          "schoolAsListed": null,
-          "departmentAsListed": "Digital Technology",
-          "reconciliation": {
-            "state": "pending-source-reconciliation",
-            "note": "No exact school/department assertion with an existing official review decision."
-          }
-        },
-        {
-          "source": "oa-live-jobs",
-          "sourceRecordId": "2026-smith-school-of-business-20251003",
-          "schoolAsListed": null,
-          "departmentAsListed": "Digital Technology",
-          "reconciliation": {
-            "state": "pending-source-reconciliation",
-            "note": "No exact school/department assertion with an existing official review decision."
-          }
-        }
-      ]
-    },
-    {
       "id": "official:sogang university|south korea",
       "officialUnitComparison": "all-source-unit-assertions-accounted-for",
       "sourceAssertions": [
@@ -63230,8 +63288,8 @@
       ]
     },
     {
-      "id": "reviewed:southern-illinois-university",
-      "officialUnitComparison": "pending-source-reconciliation",
+      "id": "official:southern illinois university carbondale|united states",
+      "officialUnitComparison": "all-source-unit-assertions-accounted-for",
       "sourceAssertions": [
         {
           "source": "oa-directory",
@@ -63239,8 +63297,20 @@
           "schoolAsListed": null,
           "departmentAsListed": "Business Analytics",
           "reconciliation": {
-            "state": "pending-source-reconciliation",
-            "note": "No exact school/department assertion with an existing official review decision."
+            "state": "accounted-for-by-existing-decision",
+            "note": "Exact source school/department assertion already adjudicated; preserves prior evidence dates and does not reverify current provision.",
+            "priorDecisions": [
+              {
+                "universityId": "southern-illinois-university",
+                "sourceDepartmentId": "southern-illinois-university____business-analytics",
+                "disposition": "not-a-unit",
+                "unitIds": [],
+                "reason": "Original exact source posting identifies Business Analytics as hiring subject and actual host School of Analytics, Finance and Economics-SIUC. It is not a standalone Business Analytics department. Separate relevant Management/Marketing and Applied Engineering schools officially verified.",
+                "reviewCheckedAt": "2026-10-22",
+                "unitEvidence": [],
+                "evidenced": true
+              }
+            ]
           }
         },
         {
@@ -63249,8 +63319,20 @@
           "schoolAsListed": null,
           "departmentAsListed": "Business Analytics",
           "reconciliation": {
-            "state": "pending-source-reconciliation",
-            "note": "No exact school/department assertion with an existing official review decision."
+            "state": "accounted-for-by-existing-decision",
+            "note": "Exact source school/department assertion already adjudicated; preserves prior evidence dates and does not reverify current provision.",
+            "priorDecisions": [
+              {
+                "universityId": "southern-illinois-university",
+                "sourceDepartmentId": "southern-illinois-university____business-analytics",
+                "disposition": "not-a-unit",
+                "unitIds": [],
+                "reason": "Original exact source posting identifies Business Analytics as hiring subject and actual host School of Analytics, Finance and Economics-SIUC. It is not a standalone Business Analytics department. Separate relevant Management/Marketing and Applied Engineering schools officially verified.",
+                "reviewCheckedAt": "2026-10-22",
+                "unitEvidence": [],
+                "evidenced": true
+              }
+            ]
           }
         },
         {
@@ -63259,8 +63341,20 @@
           "schoolAsListed": null,
           "departmentAsListed": "Business Analytics",
           "reconciliation": {
-            "state": "pending-source-reconciliation",
-            "note": "No exact school/department assertion with an existing official review decision."
+            "state": "accounted-for-by-existing-decision",
+            "note": "Exact source school/department assertion already adjudicated; preserves prior evidence dates and does not reverify current provision.",
+            "priorDecisions": [
+              {
+                "universityId": "southern-illinois-university",
+                "sourceDepartmentId": "southern-illinois-university____business-analytics",
+                "disposition": "not-a-unit",
+                "unitIds": [],
+                "reason": "Original exact source posting identifies Business Analytics as hiring subject and actual host School of Analytics, Finance and Economics-SIUC. It is not a standalone Business Analytics department. Separate relevant Management/Marketing and Applied Engineering schools officially verified.",
+                "reviewCheckedAt": "2026-10-22",
+                "unitEvidence": [],
+                "evidenced": true
+              }
+            ]
           }
         },
         {
@@ -63269,8 +63363,20 @@
           "schoolAsListed": null,
           "departmentAsListed": "Business Analytics",
           "reconciliation": {
-            "state": "pending-source-reconciliation",
-            "note": "No exact school/department assertion with an existing official review decision."
+            "state": "accounted-for-by-existing-decision",
+            "note": "Exact source school/department assertion already adjudicated; preserves prior evidence dates and does not reverify current provision.",
+            "priorDecisions": [
+              {
+                "universityId": "southern-illinois-university",
+                "sourceDepartmentId": "southern-illinois-university____business-analytics",
+                "disposition": "not-a-unit",
+                "unitIds": [],
+                "reason": "Original exact source posting identifies Business Analytics as hiring subject and actual host School of Analytics, Finance and Economics-SIUC. It is not a standalone Business Analytics department. Separate relevant Management/Marketing and Applied Engineering schools officially verified.",
+                "reviewCheckedAt": "2026-10-22",
+                "unitEvidence": [],
+                "evidenced": true
+              }
+            ]
           }
         }
       ]
@@ -65114,7 +65220,7 @@
       ]
     },
     {
-      "id": "reviewed:state-university-of-new-york-at-geneseo",
+      "id": "official:suny geneseo|united states",
       "officialUnitComparison": "pending-source-reconciliation",
       "sourceAssertions": [
         {
@@ -65123,8 +65229,19 @@
           "schoolAsListed": null,
           "departmentAsListed": "BA",
           "reconciliation": {
-            "state": "pending-source-reconciliation",
-            "note": "No exact school/department assertion with an existing official review decision."
+            "state": "unresolved-existing-decision",
+            "priorDecisions": [
+              {
+                "universityId": "state-university-of-new-york-at-geneseo",
+                "sourceDepartmentId": "state-university-of-new-york-at-geneseo____ba",
+                "disposition": "unresolved",
+                "unitIds": [],
+                "reason": "Imported BA abbreviation is not expanded into an invented department. Official current School of Business and undergraduate Data Analytics programme verified; original Data Analytics posting body inaccessible behind deleted-position reCaptcha. Full historical source unit/qualifying Ops remit remains unresolved.",
+                "reviewCheckedAt": "2026-10-22",
+                "unitEvidence": [],
+                "evidenced": true
+              }
+            ]
           }
         },
         {
@@ -65133,8 +65250,19 @@
           "schoolAsListed": null,
           "departmentAsListed": "BA",
           "reconciliation": {
-            "state": "pending-source-reconciliation",
-            "note": "No exact school/department assertion with an existing official review decision."
+            "state": "unresolved-existing-decision",
+            "priorDecisions": [
+              {
+                "universityId": "state-university-of-new-york-at-geneseo",
+                "sourceDepartmentId": "state-university-of-new-york-at-geneseo____ba",
+                "disposition": "unresolved",
+                "unitIds": [],
+                "reason": "Imported BA abbreviation is not expanded into an invented department. Official current School of Business and undergraduate Data Analytics programme verified; original Data Analytics posting body inaccessible behind deleted-position reCaptcha. Full historical source unit/qualifying Ops remit remains unresolved.",
+                "reviewCheckedAt": "2026-10-22",
+                "unitEvidence": [],
+                "evidenced": true
+              }
+            ]
           }
         },
         {
@@ -65143,8 +65271,19 @@
           "schoolAsListed": null,
           "departmentAsListed": "BA",
           "reconciliation": {
-            "state": "pending-source-reconciliation",
-            "note": "No exact school/department assertion with an existing official review decision."
+            "state": "unresolved-existing-decision",
+            "priorDecisions": [
+              {
+                "universityId": "state-university-of-new-york-at-geneseo",
+                "sourceDepartmentId": "state-university-of-new-york-at-geneseo____ba",
+                "disposition": "unresolved",
+                "unitIds": [],
+                "reason": "Imported BA abbreviation is not expanded into an invented department. Official current School of Business and undergraduate Data Analytics programme verified; original Data Analytics posting body inaccessible behind deleted-position reCaptcha. Full historical source unit/qualifying Ops remit remains unresolved.",
+                "reviewCheckedAt": "2026-10-22",
+                "unitEvidence": [],
+                "evidenced": true
+              }
+            ]
           }
         },
         {
@@ -65153,8 +65292,19 @@
           "schoolAsListed": null,
           "departmentAsListed": "BA",
           "reconciliation": {
-            "state": "pending-source-reconciliation",
-            "note": "No exact school/department assertion with an existing official review decision."
+            "state": "unresolved-existing-decision",
+            "priorDecisions": [
+              {
+                "universityId": "state-university-of-new-york-at-geneseo",
+                "sourceDepartmentId": "state-university-of-new-york-at-geneseo____ba",
+                "disposition": "unresolved",
+                "unitIds": [],
+                "reason": "Imported BA abbreviation is not expanded into an invented department. Official current School of Business and undergraduate Data Analytics programme verified; original Data Analytics posting body inaccessible behind deleted-position reCaptcha. Full historical source unit/qualifying Ops remit remains unresolved.",
+                "reviewCheckedAt": "2026-10-22",
+                "unitEvidence": [],
+                "evidenced": true
+              }
+            ]
           }
         }
       ]
@@ -100718,7 +100868,7 @@
       ]
     },
     {
-      "id": "reviewed:university-of-virgin-islands",
+      "id": "official:university of the virgin islands|united states",
       "officialUnitComparison": "pending-source-reconciliation",
       "sourceAssertions": [
         {
@@ -100727,8 +100877,19 @@
           "schoolAsListed": null,
           "departmentAsListed": "Decision Sciences",
           "reconciliation": {
-            "state": "pending-source-reconciliation",
-            "note": "No exact school/department assertion with an existing official review decision."
+            "state": "unresolved-existing-decision",
+            "priorDecisions": [
+              {
+                "universityId": "university-of-virgin-islands",
+                "sourceDepartmentId": "university-of-virgin-islands____decision-sciences",
+                "disposition": "unresolved",
+                "unitIds": [],
+                "reason": "Current official business department inventory lists Accounting/Finance, Hospitality/Tourism, IS/Technology, Management/Marketing/Construction Management and Entrepreneurship; no Decision Sciences department established. Could be course subject/historical label, but official schedule source unread, so no inferred replacement.",
+                "reviewCheckedAt": "2026-10-22",
+                "unitEvidence": [],
+                "evidenced": true
+              }
+            ]
           }
         },
         {
@@ -100737,8 +100898,19 @@
           "schoolAsListed": null,
           "departmentAsListed": "Decision Sciences",
           "reconciliation": {
-            "state": "pending-source-reconciliation",
-            "note": "No exact school/department assertion with an existing official review decision."
+            "state": "unresolved-existing-decision",
+            "priorDecisions": [
+              {
+                "universityId": "university-of-virgin-islands",
+                "sourceDepartmentId": "university-of-virgin-islands____decision-sciences",
+                "disposition": "unresolved",
+                "unitIds": [],
+                "reason": "Current official business department inventory lists Accounting/Finance, Hospitality/Tourism, IS/Technology, Management/Marketing/Construction Management and Entrepreneurship; no Decision Sciences department established. Could be course subject/historical label, but official schedule source unread, so no inferred replacement.",
+                "reviewCheckedAt": "2026-10-22",
+                "unitEvidence": [],
+                "evidenced": true
+              }
+            ]
           }
         },
         {
@@ -100747,8 +100919,19 @@
           "schoolAsListed": null,
           "departmentAsListed": "Decision Sciences",
           "reconciliation": {
-            "state": "pending-source-reconciliation",
-            "note": "No exact school/department assertion with an existing official review decision."
+            "state": "unresolved-existing-decision",
+            "priorDecisions": [
+              {
+                "universityId": "university-of-virgin-islands",
+                "sourceDepartmentId": "university-of-virgin-islands____decision-sciences",
+                "disposition": "unresolved",
+                "unitIds": [],
+                "reason": "Current official business department inventory lists Accounting/Finance, Hospitality/Tourism, IS/Technology, Management/Marketing/Construction Management and Entrepreneurship; no Decision Sciences department established. Could be course subject/historical label, but official schedule source unread, so no inferred replacement.",
+                "reviewCheckedAt": "2026-10-22",
+                "unitEvidence": [],
+                "evidenced": true
+              }
+            ]
           }
         },
         {
@@ -100757,8 +100940,19 @@
           "schoolAsListed": null,
           "departmentAsListed": "Decision Sciences",
           "reconciliation": {
-            "state": "pending-source-reconciliation",
-            "note": "No exact school/department assertion with an existing official review decision."
+            "state": "unresolved-existing-decision",
+            "priorDecisions": [
+              {
+                "universityId": "university-of-virgin-islands",
+                "sourceDepartmentId": "university-of-virgin-islands____decision-sciences",
+                "disposition": "unresolved",
+                "unitIds": [],
+                "reason": "Current official business department inventory lists Accounting/Finance, Hospitality/Tourism, IS/Technology, Management/Marketing/Construction Management and Entrepreneurship; no Decision Sciences department established. Could be course subject/historical label, but official schedule source unread, so no inferred replacement.",
+                "reviewCheckedAt": "2026-10-22",
+                "unitEvidence": [],
+                "evidenced": true
+              }
+            ]
           }
         }
       ]
@@ -101382,7 +101576,7 @@
       ]
     },
     {
-      "id": "reviewed:university-of-waikato",
+      "id": "official:university of waikato|china",
       "officialUnitComparison": "pending-source-reconciliation",
       "sourceAssertions": [
         {
@@ -101391,8 +101585,19 @@
           "schoolAsListed": "Business School",
           "departmentAsListed": "Supply Chain Management",
           "reconciliation": {
-            "state": "pending-source-reconciliation",
-            "note": "No exact school/department assertion with an existing official review decision."
+            "state": "unresolved-existing-decision",
+            "priorDecisions": [
+              {
+                "universityId": "university-of-waikato",
+                "sourceDepartmentId": "university-of-waikato__business-school__supply-chain-management",
+                "disposition": "unresolved",
+                "unitIds": [],
+                "reason": "Imported China/Business School/SCM may refer to offshore offering, not necessarily NZ main campus. Official Waikato current China SCM doctoral provision at SDU-UoW IBS independently verified, but exact archived job body gated by reCAPTCHA, so no guessed source-label-to-school equivalence.",
+                "reviewCheckedAt": "2026-10-22",
+                "unitEvidence": [],
+                "evidenced": true
+              }
+            ]
           }
         },
         {
@@ -101411,8 +101616,19 @@
           "schoolAsListed": "Business School",
           "departmentAsListed": "Supply Chain Management",
           "reconciliation": {
-            "state": "pending-source-reconciliation",
-            "note": "No exact school/department assertion with an existing official review decision."
+            "state": "unresolved-existing-decision",
+            "priorDecisions": [
+              {
+                "universityId": "university-of-waikato",
+                "sourceDepartmentId": "university-of-waikato__business-school__supply-chain-management",
+                "disposition": "unresolved",
+                "unitIds": [],
+                "reason": "Imported China/Business School/SCM may refer to offshore offering, not necessarily NZ main campus. Official Waikato current China SCM doctoral provision at SDU-UoW IBS independently verified, but exact archived job body gated by reCAPTCHA, so no guessed source-label-to-school equivalence.",
+                "reviewCheckedAt": "2026-10-22",
+                "unitEvidence": [],
+                "evidenced": true
+              }
+            ]
           }
         },
         {
@@ -102106,7 +102322,7 @@
       ]
     },
     {
-      "id": "reviewed:university-of-washington-bothell",
+      "id": "official:university of washington bothell|united states",
       "officialUnitComparison": "pending-source-reconciliation",
       "sourceAssertions": [
         {
@@ -102115,8 +102331,28 @@
           "schoolAsListed": "School of Business",
           "departmentAsListed": "Supply Chain Management and Operations",
           "reconciliation": {
-            "state": "pending-source-reconciliation",
-            "note": "No exact school/department assertion with an existing official review decision."
+            "state": "accounted-for-by-existing-decision",
+            "note": "Exact source school/department assertion already adjudicated; preserves prior evidence dates and does not reverify current provision.",
+            "priorDecisions": [
+              {
+                "universityId": "university-of-washington-bothell",
+                "sourceDepartmentId": "university-of-washington-bothell__school-of-business__supply-chain-management-and-operations",
+                "disposition": "replaced",
+                "unitIds": [
+                  "university-of-washington-bothell--school-of-business"
+                ],
+                "reason": "Source subject label represented under actual official School of Business; no standalone SCM and Operations department claimed. Programme and school education remit verified.",
+                "reviewCheckedAt": "2026-10-22",
+                "unitEvidence": [
+                  {
+                    "id": "university-of-washington-bothell--school-of-business",
+                    "sourceUrl": "https://www.uwb.edu/business/undergraduate/business-administration/supply-chain",
+                    "checkedAt": "2026-10-22"
+                  }
+                ],
+                "evidenced": true
+              }
+            ]
           }
         },
         {
@@ -102135,8 +102371,28 @@
           "schoolAsListed": "School of Business",
           "departmentAsListed": "Supply Chain Management and Operations",
           "reconciliation": {
-            "state": "pending-source-reconciliation",
-            "note": "No exact school/department assertion with an existing official review decision."
+            "state": "accounted-for-by-existing-decision",
+            "note": "Exact source school/department assertion already adjudicated; preserves prior evidence dates and does not reverify current provision.",
+            "priorDecisions": [
+              {
+                "universityId": "university-of-washington-bothell",
+                "sourceDepartmentId": "university-of-washington-bothell__school-of-business__supply-chain-management-and-operations",
+                "disposition": "replaced",
+                "unitIds": [
+                  "university-of-washington-bothell--school-of-business"
+                ],
+                "reason": "Source subject label represented under actual official School of Business; no standalone SCM and Operations department claimed. Programme and school education remit verified.",
+                "reviewCheckedAt": "2026-10-22",
+                "unitEvidence": [
+                  {
+                    "id": "university-of-washington-bothell--school-of-business",
+                    "sourceUrl": "https://www.uwb.edu/business/undergraduate/business-administration/supply-chain",
+                    "checkedAt": "2026-10-22"
+                  }
+                ],
+                "evidenced": true
+              }
+            ]
           }
         },
         {
@@ -102152,7 +102408,7 @@
       ]
     },
     {
-      "id": "reviewed:university-of-washington-tacoma-milgard-school-of-business",
+      "id": "official:university of washington tacoma|united states",
       "officialUnitComparison": "pending-source-reconciliation",
       "sourceAssertions": [
         {
@@ -102161,8 +102417,19 @@
           "schoolAsListed": null,
           "departmentAsListed": "SCM/BA",
           "reconciliation": {
-            "state": "pending-source-reconciliation",
-            "note": "No exact school/department assertion with an existing official review decision."
+            "state": "unresolved-existing-decision",
+            "priorDecisions": [
+              {
+                "universityId": "university-of-washington-tacoma-milgard-school-of-business",
+                "sourceDepartmentId": "university-of-washington-tacoma-milgard-school-of-business____scm-ba",
+                "disposition": "unresolved",
+                "unitIds": [],
+                "reason": "Current official Milgard faculty area Business Analytics & Operations verified independently, but raw SCM/BA posting acronym and supply-chain component not conclusively mapped. No forced expansion of source BA or invented SCM department.",
+                "reviewCheckedAt": "2026-10-22",
+                "unitEvidence": [],
+                "evidenced": true
+              }
+            ]
           }
         },
         {
@@ -102171,8 +102438,19 @@
           "schoolAsListed": null,
           "departmentAsListed": "SCM/BA",
           "reconciliation": {
-            "state": "pending-source-reconciliation",
-            "note": "No exact school/department assertion with an existing official review decision."
+            "state": "unresolved-existing-decision",
+            "priorDecisions": [
+              {
+                "universityId": "university-of-washington-tacoma-milgard-school-of-business",
+                "sourceDepartmentId": "university-of-washington-tacoma-milgard-school-of-business____scm-ba",
+                "disposition": "unresolved",
+                "unitIds": [],
+                "reason": "Current official Milgard faculty area Business Analytics & Operations verified independently, but raw SCM/BA posting acronym and supply-chain component not conclusively mapped. No forced expansion of source BA or invented SCM department.",
+                "reviewCheckedAt": "2026-10-22",
+                "unitEvidence": [],
+                "evidenced": true
+              }
+            ]
           }
         },
         {
@@ -102181,8 +102459,19 @@
           "schoolAsListed": null,
           "departmentAsListed": "SCM/BA",
           "reconciliation": {
-            "state": "pending-source-reconciliation",
-            "note": "No exact school/department assertion with an existing official review decision."
+            "state": "unresolved-existing-decision",
+            "priorDecisions": [
+              {
+                "universityId": "university-of-washington-tacoma-milgard-school-of-business",
+                "sourceDepartmentId": "university-of-washington-tacoma-milgard-school-of-business____scm-ba",
+                "disposition": "unresolved",
+                "unitIds": [],
+                "reason": "Current official Milgard faculty area Business Analytics & Operations verified independently, but raw SCM/BA posting acronym and supply-chain component not conclusively mapped. No forced expansion of source BA or invented SCM department.",
+                "reviewCheckedAt": "2026-10-22",
+                "unitEvidence": [],
+                "evidenced": true
+              }
+            ]
           }
         },
         {
@@ -102191,8 +102480,19 @@
           "schoolAsListed": null,
           "departmentAsListed": "SCM/BA",
           "reconciliation": {
-            "state": "pending-source-reconciliation",
-            "note": "No exact school/department assertion with an existing official review decision."
+            "state": "unresolved-existing-decision",
+            "priorDecisions": [
+              {
+                "universityId": "university-of-washington-tacoma-milgard-school-of-business",
+                "sourceDepartmentId": "university-of-washington-tacoma-milgard-school-of-business____scm-ba",
+                "disposition": "unresolved",
+                "unitIds": [],
+                "reason": "Current official Milgard faculty area Business Analytics & Operations verified independently, but raw SCM/BA posting acronym and supply-chain component not conclusively mapped. No forced expansion of source BA or invented SCM department.",
+                "reviewCheckedAt": "2026-10-22",
+                "unitEvidence": [],
+                "evidenced": true
+              }
+            ]
           }
         }
       ]
@@ -109455,11 +109755,6 @@
       "status": "partial"
     },
     {
-      "id": "ceibs",
-      "name": "CEIBS",
-      "status": "partial"
-    },
-    {
       "id": "ecole-polytechnique-federale-de-lausanne-epfl",
       "name": "École polytechnique fédérale de Lausanne (EPFL)",
       "status": "partial"
@@ -109650,18 +109945,8 @@
       "status": "partial"
     },
     {
-      "id": "aschaffenburg-university-of-applied-sciences",
-      "name": "Aschaffenburg University of Applied Sciences",
-      "status": "partial"
-    },
-    {
       "id": "canadian-university-dubai",
       "name": "Canadian University Dubai",
-      "status": "partial"
-    },
-    {
-      "id": "china-europe-international-business-school",
-      "name": "China Europe International Business School",
       "status": "partial"
     },
     {
@@ -109917,17 +110202,12 @@
     {
       "id": "smith-school-of-business",
       "name": "Smith School of Business",
-      "status": "pending"
+      "status": "partial"
     },
     {
       "id": "sogang-university",
       "name": "Sogang University",
       "status": "partial"
-    },
-    {
-      "id": "southern-illinois-university",
-      "name": "Southern Illinois University",
-      "status": "pending"
     },
     {
       "id": "southern-university-of-science-and-technology-sustech",
@@ -109952,7 +110232,7 @@
     {
       "id": "state-university-of-new-york-at-geneseo",
       "name": "State University of New York at Geneseo",
-      "status": "pending"
+      "status": "partial"
     },
     {
       "id": "stevens-institute-of-technology",
@@ -110132,22 +110412,17 @@
     {
       "id": "university-of-virgin-islands",
       "name": "University of Virgin Islands",
-      "status": "pending"
+      "status": "partial"
     },
     {
       "id": "university-of-waikato",
       "name": "University of Waikato",
-      "status": "pending"
-    },
-    {
-      "id": "university-of-washington-bothell",
-      "name": "University of Washington Bothell",
-      "status": "pending"
+      "status": "partial"
     },
     {
       "id": "university-of-washington-tacoma-milgard-school-of-business",
       "name": "University of Washington-Tacoma (Milgard School of Business)",
-      "status": "pending"
+      "status": "partial"
     },
     {
       "id": "university-of-west-florida",
