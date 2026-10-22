@@ -9,3 +9,5 @@ Imperial and Maryland technical/mathematical scope narrowed without inventing ad
 Validation: all 44 tests and public validators passed, including record dates and derived-data agreement. All 311 prior programme records deep-equal. Website preview checked with expanded doctoral limitations/evidence; public presentation rules retained. No people or career research. Raw Maryland HTML audit is source metadata, not a separate programme proposal. The manifest freezes 18 integrated proposals; continuation 11 remains separate work.
 
 Stage 1 remains incomplete: source-unit assertions, historical identity/unit relationships, doctoral credential/field and wider branch inventories and live-source scope. Stages 2–4 and automation held. Publication confirmation follows deployment; sustained Stage 1 research continues.
+
+Publication confirmed: 960d0865940267688ceb46a1789915a4690b0a49 pushed to main and research branch; Pages run 39762393968 succeeded. Live 306 routes/185 providers and new Cyprus entry verified. Research continued into continuation 11.

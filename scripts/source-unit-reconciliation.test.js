@@ -27,3 +27,21 @@ test('exact imported source ID disambiguates school aliases but a changed label 
  assert.equal(reconcileSourceUnit({school:'Business',department:'Operations'},...args).state,'conflicting-existing-decisions');
  assert.equal(reconcileSourceUnit({sourceRecordId:'old',school:null,department:'Operations'},...args).state,'pending-source-reconciliation');
 });
+
+const observed={source:'jobs',sourceRecordId:'job1',school:'Business',department:'New label'};
+const explicit={...observed,universityId:'a',disposition:'replaced',unitIds:['a--ops'],sourceUrl:'https://a.edu/ops',checkedAt:'2026-10-19',evidence:'Exact source label independently reconciled.'};
+test('explicit source decisions bind to exact record, source and tuple',()=>{
+ assert.equal(reconcileSourceUnit(observed,['a'],universities,[review],[explicit]).state,'accounted-for-by-individual-decision');
+ assert.equal(reconcileSourceUnit({...observed,source:'other'},['a'],universities,[review],[explicit]).state,'pending-source-reconciliation');
+ assert.equal(reconcileSourceUnit({...observed,department:'Changed'},['a'],universities,[review],[explicit]).state,'pending-source-reconciliation');
+});
+test('explicit decisions reject missing read evidence, wrong owners and conflicting decisions',()=>{
+ assert.throws(()=>reconcileSourceUnit(observed,['a'],universities,[{...review,sources:[]}],[explicit]));
+ assert.throws(()=>reconcileSourceUnit(observed,['b'],universities,[review],[explicit]));
+ assert.throws(()=>reconcileSourceUnit(observed,['a'],universities,[review],[explicit,explicit]));
+ assert.throws(()=>reconcileSourceUnit(observed,['a'],universities,[review],[{...explicit,unitIds:['unknown']}]));
+});
+test('explicit unresolved observations stay unresolved and preserve source date',()=>{
+ const r=reconcileSourceUnit(observed,['a'],universities,[review],[{...explicit,disposition:'unresolved',unitIds:[]}]);
+ assert.equal(r.state,'unresolved-individual-decision');assert.equal(r.decision.checkedAt,'2026-10-19');
+});

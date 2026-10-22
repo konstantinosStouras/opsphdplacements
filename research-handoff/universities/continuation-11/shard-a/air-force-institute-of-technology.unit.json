@@ -1,0 +1,137 @@
+{
+  "id": "air-force-institute-of-technology",
+  "status": "reviewed",
+  "canonicalName": "Air Force Institute of Technology",
+  "universitySourceUrl": "https://www.afit.edu/ENS/",
+  "checkedAt": "2026-10-20",
+  "reviewer": "Codex in Chrome",
+  "units": [
+    {
+      "id": "air-force-institute-of-technology--operational-sciences",
+      "name": "Department of Operational Sciences",
+      "school": "Graduate School of Engineering & Management",
+      "type": "department",
+      "fields": [
+        "operations-research",
+        "supply-chain",
+        "logistics"
+      ],
+      "sourceUrl": "https://www.afit.edu/ENS/",
+      "checkedAt": "2026-10-20",
+      "evidence": "Official department introduction explicitly describes operations research and logistics/supply chain management degrees and research. Graduate school page lists Operational Sciences among its departments."
+    },
+    {
+      "id": "air-force-institute-of-technology--systems-logistics",
+      "name": "School of Systems & Logistics",
+      "school": null,
+      "type": "school",
+      "fields": [
+        "supply-chain",
+        "logistics"
+      ],
+      "sourceUrl": "https://www.afit.edu/LS/",
+      "checkedAt": "2026-10-20",
+      "evidence": "Official school page offers supply-chain management and operational-logistics education and consulting; explicitly labelled continuing education rather than an additional graduate department."
+    }
+  ],
+  "decisions": [
+    {
+      "sourceDepartmentId": "air-force-institute-of-technology____scm-and-logistics",
+      "disposition": "not-a-unit",
+      "unitIds": [],
+      "reason": "Generic subject abbreviation cannot uniquely identify a department; verified graduate department and continuing-education school are recorded separately."
+    },
+    {
+      "sourceDepartmentId": "air-force-institute-of-technology__graduate-school-of-engineering-and-management__air-force-headquarters",
+      "disposition": "not-a-unit",
+      "unitIds": [],
+      "reason": "Air Force Headquarters is not an academic department in the graduate-school department list."
+    },
+    {
+      "sourceDepartmentId": "air-force-institute-of-technology__graduate-school-of-engineering-and-management__operational-sciences",
+      "disposition": "replaced",
+      "unitIds": [
+        "air-force-institute-of-technology--operational-sciences"
+      ],
+      "reason": "Full official Department of Operational Sciences name verified."
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.afit.edu/ENS/",
+      "checkedAt": "2026-10-20",
+      "outcome": "read",
+      "note": "Read official page in Chrome; checked engineering/management graduate departments and separate logistics continuing-education school."
+    },
+    {
+      "url": "https://www.afit.edu/LS/",
+      "checkedAt": "2026-10-20",
+      "outcome": "read",
+      "note": "Read official page in Chrome; checked engineering/management graduate departments and separate logistics continuing-education school."
+    },
+    {
+      "url": "https://www.afit.edu/EN/",
+      "checkedAt": "2026-10-20",
+      "outcome": "read",
+      "note": "Read official page in Chrome; checked engineering/management graduate departments and separate logistics continuing-education school."
+    },
+    {
+      "url": "https://www.afit.edu/ENS/",
+      "note": "Read full current Operational Sciences department, OR and logistics/SCM degrees and research; actual department and programme links.",
+      "checkedAt": "2026-10-22",
+      "outcome": "read"
+    },
+    {
+      "url": "https://www.afit.edu/ENS/programs.cfm?a=list&b=D",
+      "note": "Read complete departmental doctoral list: Data Science and Operations Research.",
+      "checkedAt": "2026-10-22",
+      "outcome": "read"
+    },
+    {
+      "url": "https://www.afit.edu/ENS/programs.cfm?a=view&D=37",
+      "note": "Read full Doctor of Philosophy in Operations Research: research degree, rigorous coursework, dissertation research and public defence, current admissions and department host.",
+      "checkedAt": "2026-10-22",
+      "outcome": "read"
+    },
+    {
+      "url": "https://www.afit.edu/EN/",
+      "note": "Read full current school homepage and all six departments. Engineering & Management graduate school distinct from continuing education.",
+      "checkedAt": "2026-10-22",
+      "outcome": "read"
+    },
+    {
+      "url": "https://www.afit.edu/EN/programs.cfm?a=list&b=D",
+      "note": "Read complete current 15-programme doctoral inventory and research outcomes. Only named OR programme relevant by explicit degree field; no SCM/logistics degree in current doctorate list.",
+      "checkedAt": "2026-10-22",
+      "outcome": "read"
+    },
+    {
+      "url": "https://www.afit.edu/EN/programs.cfm?a=view&D=51",
+      "note": "Read full Systems Engineering doctorate programme description, independent research/dissertation; no explicit Ops/OR/IE research specialization stated. Industrial Engineering appears only eligible admissions background and is not current degree provision.",
+      "checkedAt": "2026-10-22",
+      "outcome": "read"
+    },
+    {
+      "url": "https://www.afit.edu/EN/programs.cfm?a=view&D=30",
+      "note": "Read full Applied Mathematics doctorate, analytical/numerical methods and mathematical/statistical research; no explicit Operations Research field; faculty keyword methods alone not another route.",
+      "checkedAt": "2026-10-22",
+      "outcome": "read"
+    },
+    {
+      "url": "https://www.afit.edu/ENS/programs.cfm?a=view&D=80",
+      "note": "Read full Data Science PhD, original research/dissertation; OR only an eligible prior masters degree, not offered specialization.",
+      "checkedAt": "2026-10-22",
+      "outcome": "read"
+    },
+    {
+      "url": "https://www.afit.edu/LS/",
+      "note": "Read full current School of Systems & Logistics, competency-based courses in SCM and Operational Logistics under continuing education; no academic doctorate claimed.",
+      "checkedAt": "2026-10-22",
+      "outcome": "read"
+    }
+  ],
+  "limitations": [
+    "School of Systems & Logistics is continuing education, not evidence of additional doctoral provision. Current doctoral scope assessed through complete 15-programme school inventory and individually read potentially overlapping Systems Engineering, Applied Mathematics and Data Science descriptions; no claim concerning every possible dissertation."
+  ],
+  "duplicateOf": null
+}

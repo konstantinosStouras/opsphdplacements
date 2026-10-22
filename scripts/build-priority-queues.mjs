@@ -74,17 +74,20 @@ for(const o of catalogue.observations){
  c.observations.push(o);
 }
 const sourceChecks=new Map();
+const unitDecisionFile='research-handoff/priorities/source-unit-reconciliations.json';
+const unitDecisions=fs.existsSync(path.join(root,unitDecisionFile))?read(unitDecisionFile).records:[];
+for(const d of unitDecisions) assert(matched.some(o=>o.source===d.source&&o.sourceRecordId===d.sourceRecordId&&(o.school||null)===(d.school||null)&&(o.department||null)===(d.department||null)), 'Unknown or changed explicit source-unit assertion');
 for(const m of matched){
  const id=m.matchedOrganisationId||m.matchedGroupId;
  const check=sourceChecks.get(id)||{id,officialUnitComparison:'pending-source-reconciliation',sourceAssertions:[]};
  const ids=m.matchedImportedUniversityIds||grouped.find(g=>g.id===m.matchedGroupId)?.originals.map(o=>o.id)||[];
- const reconciliation=reconcileSourceUnit(m,ids,universities.records,reviews.records);
+ const reconciliation=reconcileSourceUnit(m,ids,universities.records,reviews.records,unitDecisions);
  check.sourceAssertions.push({source:m.source,sourceRecordId:m.sourceRecordId,schoolAsListed:m.school||null,departmentAsListed:m.department||null,reconciliation});sourceChecks.set(id,check);
 }
 const unitAssertionStates={};
 for(const check of sourceChecks.values()){
  for(const a of check.sourceAssertions)unitAssertionStates[a.reconciliation.state]=(unitAssertionStates[a.reconciliation.state]||0)+1;
- check.officialUnitComparison=check.sourceAssertions.every(a=>['no-unit-assertion','accounted-for-by-existing-decision'].includes(a.reconciliation.state))?'all-source-unit-assertions-accounted-for':'pending-source-reconciliation';
+ check.officialUnitComparison=check.sourceAssertions.every(a=>['no-unit-assertion','accounted-for-by-existing-decision','accounted-for-by-individual-decision'].includes(a.reconciliation.state))?'all-source-unit-assertions-accounted-for':'pending-source-reconciliation';
 }
 save('stage-1-university-queue.json',{
  asOf:reviews.records.flatMap(r=>[r.checkedAt,r.doctoralReview?.checkedAt]).filter(Boolean).sort().at(-1),phase:'active-source-reconciliation',publishedSourceRecords:universities.records.length,publishedReviewCounts:reviews.metadata,
