@@ -1,7 +1,7 @@
 {
  "version": 1,
  "metadata": {
-  "generatedAt": "2026-10-21",
+  "generatedAt": "2026-10-22",
   "derivedFrom": [
    "data/institutions.json",
    "data/universities.json",
@@ -18,7 +18,7 @@
    "phdInstitutions": 434,
    "directoryUniversities": 607,
    "firstEmployers": 493,
-   "withPrograms": 167,
+   "withPrograms": 176,
    "inBothDatabases": 210,
    "directoryOnly": 326,
    "peopleOnly": 224,
@@ -21015,7 +21015,8 @@
    "roles": [
     "phd-institution",
     "directory-university",
-    "first-employer"
+    "first-employer",
+    "program-register"
    ],
    "people": {
     "institutions": [
@@ -21145,7 +21146,52 @@
      }
     ]
    },
-   "programs": [],
+   "programs": [
+    {
+     "id": "aalto-university--science-industrial-engineering-management",
+     "programName": "Aalto Doctoral Programme in Science",
+     "specialization": "Industrial Engineering and Management",
+     "universityId": "aalto-university",
+     "school": "School of Science",
+     "degree": "Doctor of Science (Technology)",
+     "field": "Industrial Engineering; Operations Management",
+     "status": "active",
+     "statusAsOf": "2026-10-22"
+    },
+    {
+     "id": "aalto-university--science-systems-operations-research",
+     "programName": "Aalto Doctoral Programme in Science",
+     "specialization": "Systems and Operations Research",
+     "universityId": "aalto-university",
+     "school": "School of Science",
+     "degree": "Doctor of Science (Technology)",
+     "field": "Operations Research",
+     "status": "active",
+     "statusAsOf": "2026-10-22"
+    },
+    {
+     "id": "aalto-university--business-logistics",
+     "programName": "Aalto Doctoral Programme in Business, Economics and Finance",
+     "specialization": "Logistics",
+     "universityId": "aalto-university",
+     "school": "School of Business",
+     "degree": "Doctor of Science (Economics and Business Administration)",
+     "field": "Logistics; Operations Management; Supply Chain Management",
+     "status": "active",
+     "statusAsOf": "2026-10-22"
+    },
+    {
+     "id": "aalto-university--business-management-science",
+     "programName": "Aalto Doctoral Programme in Business, Economics and Finance",
+     "specialization": "Management Science",
+     "universityId": "aalto-university",
+     "school": "School of Business",
+     "degree": "Doctor of Science (Economics and Business Administration)",
+     "field": "Operations Research",
+     "status": "active",
+     "statusAsOf": "2026-10-22"
+    }
+   ],
    "sources": [
     {
      "url": "https://omlist.edutool.org/phd/by-year.html",
@@ -21166,6 +21212,10 @@
     {
      "url": "data/placements.json",
      "title": "Verified first-job records (people database)"
+    },
+    {
+     "url": "data/doctoral-programs.json",
+     "title": "Historical doctoral program register"
     }
    ],
    "review": {
@@ -21179,12 +21229,32 @@
       "source": "employers",
       "employer": "Aalto University",
       "match": "wikidata"
+     },
+     {
+      "source": "programs",
+      "program": "aalto-university--science-industrial-engineering-management",
+      "match": "exact"
+     },
+     {
+      "source": "programs",
+      "program": "aalto-university--science-systems-operations-research",
+      "match": "exact"
+     },
+     {
+      "source": "programs",
+      "program": "aalto-university--business-logistics",
+      "match": "exact"
+     },
+     {
+      "source": "programs",
+      "program": "aalto-university--business-management-science",
+      "match": "exact"
      }
     ],
     "conflicts": []
    },
    "addedAt": "2026-10-16T13:49:36Z",
-   "updatedAt": "2026-10-20T08:28:39Z"
+   "updatedAt": "2026-10-22T06:53:24Z"
   },
   {
    "id": "wd:Q219563",
@@ -22174,7 +22244,8 @@
    "roles": [
     "phd-institution",
     "directory-university",
-    "first-employer"
+    "first-employer",
+    "program-register"
    ],
    "people": {
     "institutions": [
@@ -22389,7 +22460,19 @@
      }
     ]
    },
-   "programs": [],
+   "programs": [
+    {
+     "id": "london-business-school--phd-management-science-operations",
+     "programName": "Management Science and Operations PhD programme",
+     "specialization": null,
+     "universityId": "london-business-school",
+     "school": "London Business School",
+     "degree": "PhD",
+     "field": "Operations Management; Supply Chain Management; Logistics",
+     "status": "active",
+     "statusAsOf": "2026-10-22"
+    }
+   ],
    "sources": [
     {
      "url": "https://omlist.edutool.org/phd/by-year.html",
@@ -22410,6 +22493,10 @@
     {
      "url": "data/placements.json",
      "title": "Verified first-job records (people database)"
+    },
+    {
+     "url": "data/doctoral-programs.json",
+     "title": "Historical doctoral program register"
     }
    ],
    "review": {
@@ -22433,12 +22520,17 @@
       "source": "employers",
       "employer": "London Business School",
       "match": "wikidata"
+     },
+     {
+      "source": "programs",
+      "program": "london-business-school--phd-management-science-operations",
+      "match": "exact"
      }
     ],
     "conflicts": []
    },
    "addedAt": "2026-10-16T13:49:36Z",
-   "updatedAt": "2026-10-20T08:28:39Z"
+   "updatedAt": "2026-10-22T06:53:24Z"
   },
   {
    "id": "wd:Q681025",
@@ -43419,7 +43511,8 @@
    "logo": "assets/logos/Q734764.png",
    "roles": [
     "phd-institution",
-    "directory-university"
+    "directory-university",
+    "program-register"
    ],
    "people": {
     "institutions": [
@@ -43520,7 +43613,19 @@
     ]
    },
    "employer": null,
-   "programs": [],
+   "programs": [
+    {
+     "id": "university-of-new-south-wales--information-systems-technology-management-phd",
+     "programName": "Doctor of Philosophy (PhD) Information Systems & Technology Management",
+     "specialization": "Operations Management research",
+     "universityId": "university-of-new-south-wales",
+     "school": "School of Information Systems & Technology Management, UNSW Business School",
+     "degree": "PhD",
+     "field": "Operations Management",
+     "status": "active",
+     "statusAsOf": "2026-10-22"
+    }
+   ],
    "sources": [
     {
      "url": "https://omlist.edutool.org/phd/by-year.html",
@@ -43537,6 +43642,10 @@
     {
      "url": "https://www.business.unsw.edu.au/about/schools/information-systems/faculty-people#1478185290487",
      "title": "Faculty page listed in the directory"
+    },
+    {
+     "url": "data/doctoral-programs.json",
+     "title": "Historical doctoral program register"
     }
    ],
    "review": {
@@ -43550,12 +43659,17 @@
       "source": "directory",
       "university": "University of New South Wales",
       "match": "exact"
+     },
+     {
+      "source": "programs",
+      "program": "university-of-new-south-wales--information-systems-technology-management-phd",
+      "match": "exact"
      }
     ],
     "conflicts": []
    },
    "addedAt": "2026-10-16T13:49:36Z",
-   "updatedAt": "2026-10-20T08:28:39Z"
+   "updatedAt": "2026-10-22T06:53:24Z"
   },
   {
    "id": "wd:Q3273896",
@@ -51916,7 +52030,8 @@
    "roles": [
     "phd-institution",
     "directory-university",
-    "first-employer"
+    "first-employer",
+    "program-register"
    ],
    "people": {
     "institutions": [
@@ -52084,7 +52199,30 @@
      }
     ]
    },
-   "programs": [],
+   "programs": [
+    {
+     "id": "city-university-of-hong-kong--decision-analytics-operations-phd",
+     "programName": "Doctor of Philosophy in Decision Analytics and Operations",
+     "specialization": "Operations Research and Operations Management",
+     "universityId": "city-university-of-hong-kong",
+     "school": "College of Business",
+     "degree": "PhD",
+     "field": "Operations Research; Operations Management; Supply Chain Management; Logistics",
+     "status": "active",
+     "statusAsOf": "2026-10-22"
+    },
+    {
+     "id": "city-university-of-hong-kong--systems-engineering-phd",
+     "programName": "Doctor of Philosophy (PhD)",
+     "specialization": "Systems Engineering",
+     "universityId": "city-university-of-hong-kong",
+     "school": "College of Engineering",
+     "degree": "PhD",
+     "field": "Industrial Engineering; Operations Management; Supply Chain Management; Logistics",
+     "status": "active",
+     "statusAsOf": "2026-10-22"
+    }
+   ],
    "sources": [
     {
      "url": "https://omlist.edutool.org/phd/by-year.html",
@@ -52105,6 +52243,10 @@
     {
      "url": "data/placements.json",
      "title": "Verified first-job records (people database)"
+    },
+    {
+     "url": "data/doctoral-programs.json",
+     "title": "Historical doctoral program register"
     }
    ],
    "review": {
@@ -52118,12 +52260,22 @@
       "source": "employers",
       "employer": "City University of Hong Kong",
       "match": "wikidata"
+     },
+     {
+      "source": "programs",
+      "program": "city-university-of-hong-kong--decision-analytics-operations-phd",
+      "match": "exact"
+     },
+     {
+      "source": "programs",
+      "program": "city-university-of-hong-kong--systems-engineering-phd",
+      "match": "exact"
      }
     ],
     "conflicts": []
    },
    "addedAt": "2026-10-16T13:49:36Z",
-   "updatedAt": "2026-10-20T08:28:39Z"
+   "updatedAt": "2026-10-22T06:53:24Z"
   },
   {
    "id": "wd:Q6129947",
@@ -72554,7 +72706,8 @@
    ],
    "logo": null,
    "roles": [
-    "directory-university"
+    "directory-university",
+    "program-register"
    ],
    "people": null,
    "directory": {
@@ -72610,19 +72763,41 @@
     ]
    },
    "employer": null,
-   "programs": [],
+   "programs": [
+    {
+     "id": "kennesaw-state-university--phd-interdisciplinary-engineering",
+     "programName": "Doctor of Philosophy in Interdisciplinary Engineering",
+     "specialization": "Industrial and Systems Engineering (participating doctoral research discipline)",
+     "universityId": "kennesaw-state-university",
+     "school": "Southern Polytechnic College of Engineering and Engineering Technology",
+     "degree": "PhD",
+     "field": "Industrial Engineering",
+     "status": "active",
+     "statusAsOf": "2026-10-22"
+    }
+   ],
    "sources": [
     {
      "url": "https://www.operationsacademia.org/universities",
      "title": "Operations Academia universities directory (universities database)"
+    },
+    {
+     "url": "data/doctoral-programs.json",
+     "title": "Historical doctoral program register"
     }
    ],
    "review": {
-    "matches": [],
+    "matches": [
+     {
+      "source": "programs",
+      "program": "kennesaw-state-university--phd-interdisciplinary-engineering",
+      "match": "exact"
+     }
+    ],
     "conflicts": []
    },
    "addedAt": "2026-10-16T13:49:36Z",
-   "updatedAt": "2026-10-16T13:49:36Z"
+   "updatedAt": "2026-10-22T06:53:24Z"
   },
   {
    "id": "wd:Q1054905",
@@ -89045,7 +89220,8 @@
    ],
    "logo": null,
    "roles": [
-    "directory-university"
+    "directory-university",
+    "program-register"
    ],
    "people": null,
    "directory": {
@@ -89074,19 +89250,41 @@
     ]
    },
    "employer": null,
-   "programs": [],
+   "programs": [
+    {
+     "id": "korea-university--phd-business-administration-lsom",
+     "programName": "PhD program in Business Administration",
+     "specialization": "LSOM (Logistics, Service and Operations Management)",
+     "universityId": "korea-university",
+     "school": "Korea University Business School",
+     "degree": "PhD",
+     "field": "Operations Management; Supply Chain Management; Logistics",
+     "status": "active",
+     "statusAsOf": "2026-10-22"
+    }
+   ],
    "sources": [
     {
      "url": "https://www.operationsacademia.org/universities",
      "title": "Operations Academia universities directory (universities database)"
+    },
+    {
+     "url": "data/doctoral-programs.json",
+     "title": "Historical doctoral program register"
     }
    ],
    "review": {
-    "matches": [],
+    "matches": [
+     {
+      "source": "programs",
+      "program": "korea-university--phd-business-administration-lsom",
+      "match": "exact"
+     }
+    ],
     "conflicts": []
    },
    "addedAt": "2026-10-16T13:49:36Z",
-   "updatedAt": "2026-10-16T13:49:36Z"
+   "updatedAt": "2026-10-22T06:53:24Z"
   },
   {
    "id": "wd:Q3106542",
@@ -95355,7 +95553,8 @@
    ],
    "logo": null,
    "roles": [
-    "directory-university"
+    "directory-university",
+    "program-register"
    ],
    "people": null,
    "directory": {
@@ -95384,7 +95583,19 @@
     ]
    },
    "employer": null,
-   "programs": [],
+   "programs": [
+    {
+     "id": "universite-libre-de-bruxelles--economics-management-phd-operations",
+     "programName": "Ph.D. in Economics and Management (doctorat en sciences économiques et de gestion)",
+     "specialization": "Operations and Supply Chain Management doctoral research",
+     "universityId": "universite-libre-de-bruxelles",
+     "school": "Solvay Brussels School of Economics and Management",
+     "degree": "PhD",
+     "field": "Operations Management; Supply Chain Management",
+     "status": "active",
+     "statusAsOf": "2026-10-22"
+    }
+   ],
    "sources": [
     {
      "url": "https://www.operationsacademia.org/universities",
@@ -95393,14 +95604,24 @@
     {
      "url": "http://www.solvay.edu/directory/679",
      "title": "Faculty page listed in the directory"
+    },
+    {
+     "url": "data/doctoral-programs.json",
+     "title": "Historical doctoral program register"
     }
    ],
    "review": {
-    "matches": [],
+    "matches": [
+     {
+      "source": "programs",
+      "program": "universite-libre-de-bruxelles--economics-management-phd-operations",
+      "match": "exact"
+     }
+    ],
     "conflicts": []
    },
    "addedAt": "2026-10-16T13:49:36Z",
-   "updatedAt": "2026-10-16T13:49:36Z"
+   "updatedAt": "2026-10-22T06:53:24Z"
   },
   {
    "id": "name:universite-mohammed-vi-polytechnique",
@@ -99887,7 +100108,8 @@
    "logo": null,
    "roles": [
     "directory-university",
-    "first-employer"
+    "first-employer",
+    "program-register"
    ],
    "people": null,
    "directory": {
@@ -99952,7 +100174,30 @@
      }
     ]
    },
-   "programs": [],
+   "programs": [
+    {
+     "id": "worcester-polytechnic-institute--business-administration-phd-operations",
+     "programName": "PhD in Business Administration",
+     "specialization": "Operations Management",
+     "universityId": "worcester-polytechnic-institute",
+     "school": "The WPI Business School",
+     "degree": "PhD",
+     "field": "Operations Management; Operations Research; Supply Chain Management",
+     "status": "active",
+     "statusAsOf": "2026-10-22"
+    },
+    {
+     "id": "worcester-polytechnic-institute--executive-phd-operations",
+     "programName": "Executive PhD",
+     "specialization": "Operations Management",
+     "universityId": "worcester-polytechnic-institute",
+     "school": "The WPI Business School",
+     "degree": "PhD",
+     "field": "Operations Management; Operations Research; Supply Chain Management",
+     "status": "active",
+     "statusAsOf": "2026-10-22"
+    }
+   ],
    "sources": [
     {
      "url": "https://www.operationsacademia.org/universities",
@@ -99961,6 +100206,10 @@
     {
      "url": "data/placements.json",
      "title": "Verified first-job records (people database)"
+    },
+    {
+     "url": "data/doctoral-programs.json",
+     "title": "Historical doctoral program register"
     }
    ],
    "review": {
@@ -99969,12 +100218,22 @@
       "source": "employers",
       "employer": "Worcester Polytechnic Institute (Operations and Industrial Engineering)",
       "match": "wikidata"
+     },
+     {
+      "source": "programs",
+      "program": "worcester-polytechnic-institute--business-administration-phd-operations",
+      "match": "exact"
+     },
+     {
+      "source": "programs",
+      "program": "worcester-polytechnic-institute--executive-phd-operations",
+      "match": "exact"
      }
     ],
     "conflicts": []
    },
    "addedAt": "2026-10-16T13:49:36Z",
-   "updatedAt": "2026-10-20T08:28:39Z"
+   "updatedAt": "2026-10-22T06:53:24Z"
   },
   {
    "id": "wd:Q3446068",
@@ -100217,7 +100476,8 @@
    "logo": null,
    "roles": [
     "directory-university",
-    "first-employer"
+    "first-employer",
+    "program-register"
    ],
    "people": null,
    "directory": {
@@ -100322,7 +100582,19 @@
      }
     ]
    },
-   "programs": [],
+   "programs": [
+    {
+     "id": "york-university--administration-phd-omis",
+     "programName": "PhD in Administration",
+     "specialization": "Operations Management and Information Systems",
+     "universityId": "york-university",
+     "school": "Schulich School of Business",
+     "degree": "PhD",
+     "field": "Operations Management; Supply Chain Management",
+     "status": "active",
+     "statusAsOf": "2026-10-22"
+    }
+   ],
    "sources": [
     {
      "url": "https://www.operationsacademia.org/universities",
@@ -100331,6 +100603,10 @@
     {
      "url": "data/placements.json",
      "title": "Verified first-job records (people database)"
+    },
+    {
+     "url": "data/doctoral-programs.json",
+     "title": "Historical doctoral program register"
     }
    ],
    "review": {
@@ -100344,12 +100620,17 @@
       "source": "employers",
       "employer": "York University (Schulich School of Business)",
       "match": "wikidata"
+     },
+     {
+      "source": "programs",
+      "program": "york-university--administration-phd-omis",
+      "match": "exact"
      }
     ],
     "conflicts": []
    },
    "addedAt": "2026-10-16T13:49:36Z",
-   "updatedAt": "2026-10-20T08:28:39Z"
+   "updatedAt": "2026-10-22T06:53:24Z"
   },
   {
    "id": "wd:Q1783191",

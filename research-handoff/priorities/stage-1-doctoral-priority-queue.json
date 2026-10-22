@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-10-21",
+  "asOf": "2026-10-22",
   "state": "Stage 1 discovery priority; Stage 2 held",
   "method": "First verify PhD institutions reported by the 2,149 OM List faculty, ranked by number of reported faculty; then expand to other OM List/Operations Academia university and job-source candidates. Names are linked only by accepted exact aliases. Imported degree institutions do not establish relevant field, current doctoral provision, degree completion or uninterrupted programme history.",
   "totalOmListFaculty": 2149,
@@ -8,8 +8,8 @@
   "rankedInstitutionLeads": 366,
   "matchedLeads": 183,
   "unresolvedLeads": 183,
-  "withVerifiedCurrentRoutes": 154,
-  "withCompletedCurrentBranchScope": 116,
+  "withVerifiedCurrentRoutes": 157,
+  "withCompletedCurrentBranchScope": 117,
   "records": [
     {
       "id": "massachusetts-institute-of-technology",
@@ -9546,24 +9546,43 @@
       ],
       "doctoralObservations": [
         {
-          "status": "partial",
-          "checkedAt": "2026-10-21",
-          "programmeIds": [],
+          "status": "verified",
+          "checkedAt": "2026-10-22",
+          "programmeIds": [
+            "aalto-university--business-logistics",
+            "aalto-university--business-management-science",
+            "aalto-university--science-industrial-engineering-management",
+            "aalto-university--science-systems-operations-research"
+          ],
           "branches": [
             {
               "branch": "business",
-              "reviewState": "partial",
-              "conclusion": "Current doctoral award/programme and relevant business area evidence not verified; official university website currently reports temporary unavailability. Existing20Oct unit observations do not complete doctoral gate.",
+              "reviewState": "checked",
+              "conclusion": "Complete current twelve-major business doctoral inventory read; Logistics and Management Science relevant majors verified with exact degree and current discipline/department mapping.",
               "sourceUrls": [
-                "https://www.aalto.fi/en/department-of-industrial-engineering-and-management"
+                "https://www.aalto.fi/en/study-options/aalto-doctoral-programme-in-business-economics-and-finance",
+                "https://www.aalto.fi/en/programmes/aalto-doctoral-programme-in-business-economics-and-finance/research-fields",
+                "https://www.aalto.fi/en/department-of-information-and-service-management",
+                "https://www.aalto.fi/en/department-of-information-and-service-management/logistics",
+                "https://www.aalto.fi/en/department-of-information-and-service-management/management-science"
               ]
             },
             {
               "branch": "engineering",
-              "reviewState": "partial",
-              "conclusion": "Opened official Industrial Engineering and Management department URL returned university temporary-unavailability notice, not doctoral content. No inferred degree name or present admission status.",
+              "reviewState": "checked",
+              "conclusion": "University complete six-programme doctoral inventory and all technical school field inventories read: Science6fields, Engineering7fields, ChemicalEngineering6fields, ElectricalEngineering published field list. Current Science programme explicitly includes Industrial Engineering and Management and Systems and Operations Research. No additional relevant doctorate inferred from broad process, manufacturing, transport, design, control or quantitative-method wording. Arts Design Architecture full ten-field inventory also read. Coverage concerns explicit published programme/field scope, not every individual dissertation or faculty project.",
               "sourceUrls": [
-                "https://www.aalto.fi/en/department-of-industrial-engineering-and-management"
+                "https://www.aalto.fi/en/study-options/aalto-doctoral-programme-in-science-0",
+                "https://www.aalto.fi/en/programmes/aalto-doctoral-programme-in-science/research-fields",
+                "https://www.aalto.fi/en/department-of-industrial-engineering-and-management/doctoral-studies-at-the-department",
+                "http://sal.aalto.fi/en/",
+                "https://www.aalto.fi/en/programmes/aalto-doctoral-programme-in-science/curriculum-2026-2028",
+                "https://www.aalto.fi/en/node/607751",
+                "https://www.aalto.fi/en/doctoral-education/doctoral-programmes",
+                "https://www.aalto.fi/en/node/1204246",
+                "https://www.aalto.fi/en/node/1204221",
+                "https://www.aalto.fi/en/node/1204231",
+                "https://www.aalto.fi/en/node/1204201"
               ]
             }
           ],
@@ -9573,17 +9592,144 @@
               "checkedAt": "2026-10-21",
               "outcome": "blocked",
               "note": "Official website displays multilingual temporary-unavailability notice and expects service again22October. No department/programme content available in this attempt; no bypass."
+            },
+            {
+              "url": "https://www.aalto.fi/en/department-of-industrial-engineering-and-management",
+              "checkedAt": "2026-10-22",
+              "outcome": "read",
+              "note": "Restored current department page read; department and explicit Operations and Service Management doctoral area."
+            },
+            {
+              "url": "https://www.aalto.fi/en/department-of-industrial-engineering-and-management/doctoral-studies-at-the-department",
+              "checkedAt": "2026-10-22",
+              "outcome": "read",
+              "note": "Full current departmental doctoral studies page: operations and service management dissertation research, academic career preparation, exact School of Science/Aalto Doctoral Programme in Science host."
+            },
+            {
+              "url": "https://www.aalto.fi/en/study-options/aalto-doctoral-programme-in-science-0",
+              "checkedAt": "2026-10-22",
+              "outcome": "read",
+              "note": "Full current admissions page: exact Doctor of Science (Technology), four-year independent academic research, supervising professor and research-plan admission; directs applicants to department research groups."
+            },
+            {
+              "url": "https://www.aalto.fi/en/programmes/aalto-doctoral-programme-in-science/research-fields",
+              "checkedAt": "2026-10-22",
+              "outcome": "read",
+              "note": "Full six-field official doctoral inventory read; defines field as agreed doctoral education area. Explicit Industrial Engineering and Management and Systems and Operations Research, the latter linked to Systems Analysis Laboratory."
+            },
+            {
+              "url": "https://www.aalto.fi/en/programmes/aalto-doctoral-programme-in-science/curriculum-2026-2028",
+              "checkedAt": "2026-10-22",
+              "outcome": "read",
+              "note": "Current 2026–2028 curriculum read: 30 ECTS research coursework plus doctoral thesis with no thesis credits. Content accordions did not expose additional prose; no hidden content asserted."
+            },
+            {
+              "url": "https://www.aalto.fi/en/study-options/aalto-doctoral-programme-in-business-economics-and-finance",
+              "checkedAt": "2026-10-22",
+              "outcome": "read",
+              "note": "Full current business admissions page, exact Doctor of Science (Economics and Business Administration), four-year academic research training, complete twelve-major inventory and 2027 intake."
+            },
+            {
+              "url": "https://www.aalto.fi/en/programmes/aalto-doctoral-programme-in-business-economics-and-finance/research-fields",
+              "checkedAt": "2026-10-22",
+              "outcome": "read",
+              "note": "Full twelve-major doctoral field inventory; Logistics and Management Science explicit. Supervisor names vary from admissions page, not collected or used to infer programme changes."
+            },
+            {
+              "url": "https://www.aalto.fi/en/department-of-information-and-service-management",
+              "checkedAt": "2026-10-22",
+              "outcome": "read",
+              "note": "Full current department page: School of Business host, three disciplines Information Systems Science, Logistics and Management Science; logistics explicitly Operations and SCM."
+            },
+            {
+              "url": "https://www.aalto.fi/en/department-of-information-and-service-management/logistics",
+              "checkedAt": "2026-10-22",
+              "outcome": "read",
+              "note": "Full current Logistics discipline page: explicit Operations Management and Supply Chain Management research, departmental breadcrumb and School of Business."
+            },
+            {
+              "url": "https://www.aalto.fi/en/department-of-information-and-service-management/management-science",
+              "checkedAt": "2026-10-22",
+              "outcome": "read",
+              "note": "Full current Management Science discipline page: explicitly relates Management Science to Operations Research, optimization, resource allocation and decision analysis; not methods-only inference."
+            },
+            {
+              "url": "http://sal.aalto.fi/en/",
+              "checkedAt": "2026-10-22",
+              "outcome": "read",
+              "note": "Full official laboratory site read: exact Systems Analysis Laboratory, Department of Mathematics and Systems Analysis, School of Science, operational research and decision-support scope. No graduate names collected."
+            },
+            {
+              "url": "https://www.aalto.fi/en/node/607246",
+              "checkedAt": "2026-10-22",
+              "outcome": "read",
+              "note": "Read Science programme contact/organization page: five School of Science departments and doctoral research fields."
+            },
+            {
+              "url": "https://www.aalto.fi/en/programmes/aalto-doctoral-programme-in-science",
+              "checkedAt": "2026-10-22",
+              "outcome": "read",
+              "note": "Read current student-guide programme gateway and curriculum/admission links."
+            },
+            {
+              "url": "https://www.aalto.fi/en/school-of-business/studies-and-programmes",
+              "checkedAt": "2026-10-22",
+              "outcome": "read",
+              "note": "Read business study gateway; programme-list body did not render links, so official admissions inventory independently located and read."
+            },
+            {
+              "url": "https://www.aalto.fi/en/node/607751",
+              "checkedAt": "2026-10-22",
+              "outcome": "read",
+              "note": "Read current doctoral education hub and public-defense definition; no individual graduate data collected."
+            },
+            {
+              "url": "https://www.aalto.fi/en/doctoral-education/doctoral-programmes",
+              "checkedAt": "2026-10-22",
+              "outcome": "read",
+              "note": "Read complete six-programme university doctoral inventory, exact four academic degree titles and direct links to all school doctoral-field inventories."
+            },
+            {
+              "url": "https://www.aalto.fi/en/node/1204246",
+              "checkedAt": "2026-10-22",
+              "outcome": "read",
+              "note": "Read full seven-field Engineering doctorate inventory: Civil Engineering, Energy Technology, Geoinformatics, Mechanical Engineering, Real Estate Economics, Spatial Planning and Transportation Engineering, Water and Environmental Engineering. No additional explicitly Ops/OR/IE doctoral field inferred from generic engineering or transportation wording."
+            },
+            {
+              "url": "https://www.aalto.fi/en/node/1204221",
+              "checkedAt": "2026-10-22",
+              "outcome": "read",
+              "note": "Read full current 2026–2028 Chemical Engineering doctoral-field inventory: Chemistry, Biotechnology, Chemical Engineering, Processing of Materials, Materials Science, Bioproduct Technology. Generic process/materials labels do not establish another Operations doctorate."
+            },
+            {
+              "url": "https://www.aalto.fi/en/node/1204231",
+              "checkedAt": "2026-10-22",
+              "outcome": "read",
+              "note": "Read Electrical Engineering doctoral-field inventory across three departments; no explicitly named Operations/OR/IE/logistics field. Intro says13 fields, displayed list also includes Computer engineering ELEC032U; no source-total correction or extra route invented."
+            },
+            {
+              "url": "https://www.aalto.fi/en/node/1204201",
+              "checkedAt": "2026-10-22",
+              "outcome": "read",
+              "note": "Read all ten Arts Design Architecture doctoral fields and exact award groupings. Industrial Design and Product and Service Systems are design research headings, not automatically Industrial Engineering or Operations Management."
             }
           ],
           "limitations": [
-            "Current official university source unavailable; exact academic doctoral award, research-doctorate nature, relevant programme/area and branch coverage remain unresolved. Previous unit evidence preserved with original dates, not converted current doctoral review."
+            "The 21 October temporary source outage is preserved as an earlier blocked observation; current pages became readable on22October.",
+            "Exact Finnish academic awards retained as official English titles; no automatic normalization to PhD.",
+            "Coverage is the university-wide published doctoral programme and named research-field inventory; not a census of every dissertation or an assertion that other broad engineering fields can never contain individual operations applications. Electrical Engineering field-count inconsistency retained in source note without inventing programme facts."
           ],
-          "coverageComplete": false
+          "coverageComplete": true
         }
       ],
-      "verifiedCurrentProgrammeIds": [],
-      "branchCoverageComplete": false,
-      "nextStep": "Verify official current relevant doctoral routes across business and engineering; record branch gaps"
+      "verifiedCurrentProgrammeIds": [
+        "aalto-university--science-industrial-engineering-management",
+        "aalto-university--science-systems-operations-research",
+        "aalto-university--business-logistics",
+        "aalto-university--business-management-science"
+      ],
+      "branchCoverageComplete": true,
+      "nextStep": "Current scoped doctoral inventory checked; retain evidence and historical limitations"
     },
     {
       "id": "fudan-university",
@@ -15633,12 +15779,37 @@
               "checkedAt": "2026-10-21",
               "outcome": "read",
               "note": "FullSchoolME department/institute inventory explicitly contains DepartmentIndustrialEngineeringManagement; parent resolved."
+            },
+            {
+              "url": "https://en.gs.sjtu.edu.cn/info/1053/1067.htm",
+              "checkedAt": "2026-10-22",
+              "outcome": "read",
+              "note": "Official Department of Mathematics graduate-school page is dated 19 May 2016 and supplies only an attachment link; no current doctoral field or credential established from its HTML."
+            },
+            {
+              "url": "https://nice-math.sjtu.edu.cn/Data/List/RESEARCHGROUPS",
+              "checkedAt": "2026-10-22",
+              "outcome": "read",
+              "note": "Current School of Mathematical Sciences research-group inventory read, including expanded interdisciplinary mathematics group. Seven broad mathematics groups are listed; no explicit doctoral Operations Research programme/area mapping established."
+            },
+            {
+              "url": "https://en.gs.sjtu.edu.cn/info/1062/3104.htm",
+              "checkedAt": "2026-10-22",
+              "outcome": "read",
+              "note": "Current graduate-school notice dated 21 January 2026 opened; programme notice content is image-based and rendered HTML supplies no textual doctoral inventory. No degree or field facts inferred."
+            },
+            {
+              "url": "https://en.gs.sjtu.edu.cn/Degrees1/disciplines.htm",
+              "checkedAt": "2026-10-22",
+              "outcome": "read",
+              "note": "Official degree discipline index read; its five linked authorization/ranking entries are dated 30 May 2016. Index alone does not establish current exhaustive relevant doctoral provision."
             }
           ],
           "limitations": [
             "Prior genericDoctoral credential gaps resolved by explicitACEMPh.D.Overview and2026MechanicalSchoolPh.D.admissions. Historicalsourceobservationsretained.",
             "Wideruniversityengineering/mathematicsinventory not yetexhausted; no institutionalcompletionclaim.",
-            "ImportedDataBusinessIntelligenceunit scope remains separateunresolvedfinding; genericanalytics not classifiedOps without evidence."
+            "ImportedDataBusinessIntelligenceunit scope remains separateunresolvedfinding; genericanalytics not classifiedOps without evidence.",
+            "22 October 2026 wider-inventory follow-up: current mathematics research groups do not establish an additional doctoral OR route; graduate-school discipline index is historical (2016), and current 2026 admissions notice is image-based. Broader institutional doctoral coverage remains incomplete; the three previously verified programmes and their original check dates are preserved."
           ],
           "coverageComplete": false
         }
@@ -20731,8 +20902,86 @@
       "owners": [
         "shard-a"
       ],
-      "doctoralObservations": [],
-      "verifiedCurrentProgrammeIds": [],
+      "doctoralObservations": [
+        {
+          "status": "verified",
+          "checkedAt": "2026-10-22",
+          "programmeIds": [
+            "city-university-of-hong-kong--decision-analytics-operations-phd",
+            "city-university-of-hong-kong--systems-engineering-phd"
+          ],
+          "branches": [
+            {
+              "branch": "business",
+              "reviewState": "partial",
+              "conclusion": "Full current six-department graduate research-area inventory read. DAO OR/OM PhD verified. Accountancy inventory also names interdisciplinary research with supply-chain management; its exact doctoral route and whether this constitutes a qualifying Operations field remain unresolved, so no automatic additional programme or completion claim. Information Systems draws OR methods for IS topics, not independently inferred an OR doctorate.",
+              "sourceUrls": [
+                "https://www.cityu.edu.hk/pg/research-degree-programmes/research-areas",
+                "https://www.cb.cityu.edu.hk/dao/research_degree/",
+                "https://www.cityu.edu.hk/catalogue/pg/202526/programme/DAOS_P.htm"
+              ]
+            },
+            {
+              "branch": "engineering",
+              "reviewState": "checked",
+              "conclusion": "Current full Engineering graduate research-area inventory individually read, including Architecture/Civil, Electrical, Materials, Mechanical and Systems Engineering; relevant SYE PhD verified from current full departmental degree page. Computing and Mathematics research areas also read. No additional route inferred solely from generic optimization, networking, scheduling, control, manufacturing or computational methods.",
+              "sourceUrls": [
+                "https://www.cityu.edu.hk/pg/research-degree-programmes/research-areas",
+                "https://www.cityu.edu.hk/sye/phdmphil.htm",
+                "http://www.cityu.edu.hk/sye/"
+              ]
+            }
+          ],
+          "sources": [
+            {
+              "url": "https://www.cb.cityu.edu.hk/people-and-research/people?dept_code=DAOS",
+              "checkedAt": "2026-10-22",
+              "outcome": "blocked",
+              "note": "Imported faculty URL returned 400 Bad Request; current official departmental and admissions pages located independently."
+            },
+            {
+              "url": "https://www.cb.cityu.edu.hk/dao/research_degree/",
+              "checkedAt": "2026-10-22",
+              "outcome": "read",
+              "note": "Full current PhD research-degree introduction read; explicit core OR/OM and Business Statistics fields and supply-chain/logistics applications."
+            },
+            {
+              "url": "https://www.cityu.edu.hk/catalogue/pg/202526/programme/DAOS_P.htm",
+              "checkedAt": "2026-10-22",
+              "outcome": "read",
+              "note": "Full 2025/26 official catalogue read, explicit archive warning retained: exact programme/award, department, OR/OM admission stream and thesis oral examination. Not represented as latest cohort curriculum."
+            },
+            {
+              "url": "https://www.cityu.edu.hk/pg/research-degree-programmes/research-areas",
+              "checkedAt": "2026-10-22",
+              "outcome": "read",
+              "note": "Current full college/department graduate research-area inventory read. Long Engineering segment read separately without truncation; full Business, Computing, Science sections also read. Current SYE and DAO research scope explicit; accountancy SCM interdisciplinary boundary left unresolved."
+            },
+            {
+              "url": "http://www.cityu.edu.hk/sye/",
+              "checkedAt": "2026-10-22",
+              "outcome": "read",
+              "note": "Official current department home, College of Engineering and PhD/MPhil link; separate professional doctorate offerings distinguished."
+            },
+            {
+              "url": "https://www.cityu.edu.hk/sye/phdmphil.htm",
+              "checkedAt": "2026-10-22",
+              "outcome": "read",
+              "note": "Full current research degree page last modified24September 2026: exact PhD research credential, OM/manufacturing/logistics/SCM scope, thesis requirement, current application and study provision."
+            }
+          ],
+          "limitations": [
+            "Accountancy interdisciplinary supply-chain topic requires scope/degree mapping before business inventory completion; coverageComplete false.",
+            "Current departmental official sources corroborate doctoral provision; archived DAO catalogue used only for stated exact title/award/stream, not current fees or unchanged cohort rules.",
+            "No university campus/name merger, historical rename date or individual graduate history inferred."
+          ],
+          "coverageComplete": false
+        }
+      ],
+      "verifiedCurrentProgrammeIds": [
+        "city-university-of-hong-kong--decision-analytics-operations-phd",
+        "city-university-of-hong-kong--systems-engineering-phd"
+      ],
       "branchCoverageComplete": false,
       "nextStep": "Verify official current relevant doctoral routes across business and engineering; record branch gaps"
     },
@@ -25242,8 +25491,125 @@
       "owners": [
         "shard-c"
       ],
-      "doctoralObservations": [],
-      "verifiedCurrentProgrammeIds": [],
+      "doctoralObservations": [
+        {
+          "status": "verified",
+          "checkedAt": "2026-10-22",
+          "programmeIds": [
+            "university-of-new-south-wales--information-systems-technology-management-phd"
+          ],
+          "branches": [
+            {
+              "branch": "business",
+              "reviewState": "checked",
+              "conclusion": "Full current eight-doctorate business inventory and programme1525 requirements/research structure read. Operations Management explicitly included in programme research preparation and actual school research area.",
+              "sourceUrls": [
+                "https://www.unsw.edu.au/business/study-with-us/postgraduate-research/phd-degrees/doctor-philosophy-phd-information-systems-technology-management",
+                "https://www.unsw.edu.au/business/study-with-us/postgraduate-research/postgraduate-research-degrees",
+                "https://www.unsw.edu.au/business/our-schools/information-systems-technology-management/our-research"
+              ]
+            },
+            {
+              "branch": "engineering",
+              "reviewState": "partial",
+              "conclusion": "Current Mechanical/Manufacturing school overview and study areas read; no exact relevant doctoral award established. Complete engineering, mathematics and Canberra doctoral inventories remain to check; no absence inferred.",
+              "sourceUrls": [
+                "https://www.unsw.edu.au/engineering/our-schools/mechanical-and-manufacturing-engineering"
+              ]
+            }
+          ],
+          "sources": [
+            {
+              "url": "https://www.unsw.edu.au/business/study-with-us/postgraduate-research/phd-degrees/doctor-philosophy-phd-information-systems-technology-management",
+              "checkedAt": "2026-10-22",
+              "outcome": "read",
+              "note": "Full programme1525 PhD overview, OM research foundations, original thesis and school host read."
+            },
+            {
+              "url": "https://www.unsw.edu.au/business/study-with-us/postgraduate-research/postgraduate-research-degrees",
+              "checkedAt": "2026-10-22",
+              "outcome": "read",
+              "note": "Full current business postgraduate research inventory with eight named PhDs read."
+            },
+            {
+              "url": "https://www.unsw.edu.au/engineering/our-schools/mechanical-and-manufacturing-engineering",
+              "checkedAt": "2026-10-22",
+              "outcome": "read",
+              "note": "Full current Mechanical/Manufacturing school homepage/study and research overview read; generic school remit not promoted to doctorate."
+            },
+            {
+              "url": "https://www.unsw.edu.au/business/our-schools/information-systems-technology-management/our-research",
+              "checkedAt": "2026-10-21",
+              "outcome": "read",
+              "note": "Prior actually opened current school research inventory explicitly names Operations Management and Global Supply Chain Management areas; original observation date retained."
+            }
+          ],
+          "limitations": [
+            "Current business doctoral eligibility separate from incomplete engineering/mathematics/Canberra programme inventories. No military Future Operations or generic manufacturing title inferred to be OR doctorate."
+          ],
+          "coverageComplete": false
+        },
+        {
+          "status": "verified",
+          "checkedAt": "2026-10-22",
+          "programmeIds": [
+            "university-of-new-south-wales--information-systems-technology-management-phd"
+          ],
+          "branches": [
+            {
+              "branch": "business",
+              "reviewState": "checked",
+              "conclusion": "Full current eight-doctorate business inventory and programme1525 requirements/research structure read. Operations Management explicitly included in programme research preparation and actual school research area.",
+              "sourceUrls": [
+                "https://www.unsw.edu.au/business/study-with-us/postgraduate-research/phd-degrees/doctor-philosophy-phd-information-systems-technology-management",
+                "https://www.unsw.edu.au/business/study-with-us/postgraduate-research/postgraduate-research-degrees",
+                "https://www.unsw.edu.au/business/our-schools/information-systems-technology-management/our-research"
+              ]
+            },
+            {
+              "branch": "engineering",
+              "reviewState": "partial",
+              "conclusion": "Current Mechanical/Manufacturing school overview and study areas read; no exact relevant doctoral award established. Complete engineering, mathematics and Canberra doctoral inventories remain to check; no absence inferred.",
+              "sourceUrls": [
+                "https://www.unsw.edu.au/engineering/our-schools/mechanical-and-manufacturing-engineering"
+              ]
+            }
+          ],
+          "sources": [
+            {
+              "url": "https://www.unsw.edu.au/business/study-with-us/postgraduate-research/phd-degrees/doctor-philosophy-phd-information-systems-technology-management",
+              "checkedAt": "2026-10-22",
+              "outcome": "read",
+              "note": "Full programme1525 PhD overview, OM research foundations, original thesis and school host read."
+            },
+            {
+              "url": "https://www.unsw.edu.au/business/study-with-us/postgraduate-research/postgraduate-research-degrees",
+              "checkedAt": "2026-10-22",
+              "outcome": "read",
+              "note": "Full current business postgraduate research inventory with eight named PhDs read."
+            },
+            {
+              "url": "https://www.unsw.edu.au/engineering/our-schools/mechanical-and-manufacturing-engineering",
+              "checkedAt": "2026-10-22",
+              "outcome": "read",
+              "note": "Full current Mechanical/Manufacturing school homepage/study and research overview read; generic school remit not promoted to doctorate."
+            },
+            {
+              "url": "https://www.unsw.edu.au/business/our-schools/information-systems-technology-management/our-research",
+              "checkedAt": "2026-10-21",
+              "outcome": "read",
+              "note": "Prior actually opened current school research inventory explicitly names Operations Management and Global Supply Chain Management areas; original observation date retained."
+            }
+          ],
+          "limitations": [
+            "Current business doctoral eligibility separate from incomplete engineering/mathematics/Canberra programme inventories. No military Future Operations or generic manufacturing title inferred to be OR doctorate."
+          ],
+          "coverageComplete": false
+        }
+      ],
+      "verifiedCurrentProgrammeIds": [
+        "university-of-new-south-wales--information-systems-technology-management-phd"
+      ],
       "branchCoverageComplete": false,
       "nextStep": "Verify official current relevant doctoral routes across business and engineering; record branch gaps"
     },
@@ -25826,7 +26192,56 @@
       "owners": [
         "shard-c"
       ],
-      "doctoralObservations": [],
+      "doctoralObservations": [
+        {
+          "status": "partial",
+          "checkedAt": "2026-10-22",
+          "programmeIds": [],
+          "branches": [
+            {
+              "branch": "business",
+              "reviewState": "checked",
+              "conclusion": "Full current Owen degree/programme inventory read: MBA, specialised masters, undergraduate and certificate offerings, no doctorate listed. Faculty PhD credentials not treated as school doctoral provision.",
+              "sourceUrls": [
+                "https://business.vanderbilt.edu/degrees-programs"
+              ]
+            },
+            {
+              "branch": "engineering",
+              "reviewState": "partial",
+              "conclusion": "Full current engineering graduate overview and six department listing read; interactive programme finder did not display its records. VECTOR academics explicitly offers PhD via Civil/Environmental transportation programme, but relevant OR/IE/logistics doctoral field not established from transport title alone.",
+              "sourceUrls": [
+                "https://engineering.vanderbilt.edu/academics/graduate/",
+                "https://www.vanderbilt.edu/vector/academics/"
+              ]
+            }
+          ],
+          "sources": [
+            {
+              "url": "https://business.vanderbilt.edu/degrees-programs",
+              "checkedAt": "2026-10-22",
+              "outcome": "read",
+              "note": "Full current Owen business degree/programme inventory read; homepage independently read before following actual inventory link."
+            },
+            {
+              "url": "https://engineering.vanderbilt.edu/academics/graduate/",
+              "checkedAt": "2026-10-22",
+              "outcome": "read",
+              "note": "Full current engineering graduate overview, department list and degree comparison read; programme finder rendered no degree records."
+            },
+            {
+              "url": "https://www.vanderbilt.edu/vector/academics/",
+              "checkedAt": "2026-10-22",
+              "outcome": "read",
+              "note": "Full official VECTOR academics page read: MS/MEng/PhD and CivilEnvironmental transportation programme relationship; no named qualifying OR/IE/logistics field."
+            }
+          ],
+          "limitations": [
+            "Business scope reviewed, but specific engineering transportation doctorate qualification/field link and full engineering doctoral programme inventory remain incomplete. No programme assigned from faculty interests, course names or general transport title."
+          ],
+          "coverageComplete": false
+        }
+      ],
       "verifiedCurrentProgrammeIds": [],
       "branchCoverageComplete": false,
       "nextStep": "Verify official current relevant doctoral routes across business and engineering; record branch gaps"

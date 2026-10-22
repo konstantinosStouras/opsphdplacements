@@ -1,6 +1,6 @@
 # Research status
 
-Generated from committed-format public datasets by `node scripts/update-research-status.mjs`. People-ledger snapshot check date: 2026-10-17. Doctoral source checks run through 2026-10-21. Refresh this file with each data release. Git history identifies the published revision.
+Generated from committed-format public datasets by `node scripts/update-research-status.mjs`. People-ledger snapshot check date: 2026-10-17. Doctoral source checks run through 2026-10-22. Refresh this file with each data release. Git history identifies the published revision.
 
 | Measure | Count |
 |---|---:|
@@ -12,9 +12,9 @@ Generated from committed-format public datasets by `node scripts/update-research
 | Researched but unresolved | 1070 |
 | Degree completion unconfirmed | 4 |
 | Pending individual review | 0 |
-| Doctoral register records, including historical and unresolved routes | 283 |
-| Verified relevant doctoral routes (tracks may overlap; admissions may be suspended) | 275 |
-| Institutions with verified relevant doctoral provision | 166 |
+| Doctoral register records, including historical and unresolved routes | 297 |
+| Verified relevant doctoral routes (tracks may overlap; admissions may be suspended) | 289 |
+| Institutions with verified relevant doctoral provision | 175 |
 | Names on program graduate and placement pages (person-years) | 14451 |
 | of which listed under an operations area | 2161 |
 | Institutions with such a page read | 117 |
@@ -22,11 +22,11 @@ Generated from committed-format public datasets by `node scripts/update-research
 | LinkedIn profiles with published history observations | 6 |
 | of which all accessible Experience entries read | 6 |
 | University directory records with completed official-source reviews | 438 |
-| University directory records partially reviewed | 84 |
+| University directory records partially reviewed | 85 |
 | University directory records blocked by source access | 5 |
-| University directory records awaiting review | 138 |
-| Discovery source records with doctoral observations | 266 |
-| of which current branch scope explicitly complete | 163 |
+| University directory records awaiting review | 137 |
+| Discovery source records with doctoral observations | 278 |
+| of which current branch scope explicitly complete | 167 |
 
 The program register is partial. It includes historical/predecessor records; its total is not the number of active programs worldwide. The graduate lists are what the programs' own pages list (live and archived copies), with the year's meaning as each page gives it; they are partial rosters, not a census. No complete graduate census, comprehensive employment-history panel, advisor dataset or publication-at-graduation dataset has been collected yet. Their schema and research rules are prepared.
 

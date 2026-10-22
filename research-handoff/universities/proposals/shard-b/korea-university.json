@@ -1,0 +1,123 @@
+{
+  "id": "korea-university",
+  "status": "reviewed",
+  "canonicalName": "Korea University",
+  "universitySourceUrl": "https://ie.korea.edu/",
+  "checkedAt": "2026-10-20",
+  "reviewer": "Codex in Chrome",
+  "units": [
+    {
+      "name": "School of Industrial Management Engineering",
+      "fields": [
+        "industrial-engineering"
+      ],
+      "evidence": "Official heading names School of Industrial Management Engineering; footer identifies Division of Industrial Management Engineering within College of Engineering, Korea University.",
+      "id": "korea-university--industrial-management-engineering",
+      "school": "College of Engineering",
+      "sourceUrl": "https://ie.korea.edu/",
+      "checkedAt": "2026-10-20",
+      "type": "school"
+    },
+    {
+      "name": "Logistics, Service & Operations Management (LSOM)",
+      "checkedAt": "2026-10-20",
+      "id": "korea-university--lsom",
+      "fields": [
+        "operations-management",
+        "supply-chain",
+        "logistics",
+        "operations-research"
+      ],
+      "school": "Korea University Business School",
+      "sourceUrl": "https://biz.korea.ac.kr/eng/undergraduate/features.html",
+      "type": "area",
+      "evidence": "Official Academic Groups page expands LSOM as Logistics, Service & Operations Management and describes logistics, manufacturing, supply chain, optimization and management science scope. Faculty page identifies area chair."
+    },
+    {
+      "id": "korea-university--business-administration",
+      "name": "Department of Business Administration",
+      "type": "department",
+      "school": "Korea University Business School",
+      "fields": [
+        "operations-management",
+        "supply-chain",
+        "logistics"
+      ],
+      "sourceUrl": "https://biz.korea.ac.kr/eng/msphd/intro.html",
+      "checkedAt": "2026-10-22",
+      "evidence": "Official MSPhDmajors page explicitly identifies Department of BusinessAdministration and its LSOMmajor alongside other graduate majors; no LSOMdepartment fabricated."
+    }
+  ],
+  "decisions": [
+    {
+      "reason": "Official Academic Groups page verifies full name and abbreviation; faculty page identifies area chair, so represented as area rather than standalone department.",
+      "disposition": "replaced",
+      "sourceDepartmentId": "korea-university__korea-university-business-school__logistics-service-and-operations-management",
+      "unitIds": [
+        "korea-university--lsom"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "outcome": "read",
+      "url": "https://biz.korea.ac.kr/professor/professor_list1.html?major=M06",
+      "note": "Original linked Korean faculty page with LSOM filter.",
+      "checkedAt": "2026-10-20"
+    },
+    {
+      "outcome": "read",
+      "url": "https://biz.korea.ac.kr/eng/professor/professor_list1.html?major=M06",
+      "note": "English LSOM area faculty and scope.",
+      "checkedAt": "2026-10-20"
+    },
+    {
+      "outcome": "read",
+      "url": "https://ie.korea.edu/",
+      "note": "Official engineering unit name and college/university hierarchy.",
+      "checkedAt": "2026-10-20"
+    },
+    {
+      "note": "Full expanded LSOM name and explicit operations scope; IS is separately listed.",
+      "checkedAt": "2026-10-20",
+      "url": "https://biz.korea.ac.kr/eng/undergraduate/features.html",
+      "outcome": "read"
+    },
+    {
+      "url": "https://biz.korea.ac.kr/eng/msphd/intro.html",
+      "checkedAt": "2026-10-22",
+      "outcome": "read",
+      "note": "DepartmentBusinessAdministration explicitly offers PhD,MS,integrated programmes with LSOMmajor; LSOM full logistics/service/operations/SCM scope. BusinessAnalytics separately masterone-year."
+    },
+    {
+      "url": "https://biz.korea.ac.kr/eng/msphd/process.html",
+      "checkedAt": "2026-10-22",
+      "outcome": "read",
+      "note": "ExpandedPhDprogramme requirements: academicresearchertraining,36majorcredits,qualifyingexam,foreignlanguageexam,dissertation."
+    },
+    {
+      "url": "https://ie.korea.edu/ie_en/about/overview.do",
+      "checkedAt": "2026-10-22",
+      "outcome": "read",
+      "note": "Current engineeringunit exact School heading/Division footer, CollegeEngineering; OR,production/logistics,SCM explicit scope."
+    },
+    {
+      "url": "https://ie.korea.edu/ie_en/guide/admission/admission_grad.do",
+      "checkedAt": "2026-10-22",
+      "outcome": "read",
+      "note": "Official English graduateadmissions page opened but body contains no doctoral credential or admissiondetails."
+    },
+    {
+      "url": "https://ie.korea.edu/ie_en/guide/curriculum/g_curriculum.do",
+      "checkedAt": "2026-10-22",
+      "outcome": "read",
+      "note": "Graduatecurriculum entry opened; dated2017 entry supplies headings plus PDFattachment, no exact doctoralcredential in HTML. Attachment not read."
+    }
+  ],
+  "limitations": [
+    "Engineering page heading says School while footer says Division; retained heading without inventing administrative resolution."
+  ],
+  "duplicateOf": null,
+  "addedAt": "2026-10-20T09:19:47Z",
+  "updatedAt": "2026-10-20T09:19:47Z"
+}
