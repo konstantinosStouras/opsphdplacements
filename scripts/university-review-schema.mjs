@@ -23,6 +23,15 @@ export function validateUniversityReviews(records, originals) {
     assert(r.canonicalName === null || text(r.canonicalName), fail('canonical name must be text or null'));
     if (r.canonicalName) assert(url(r.universitySourceUrl) && supported(r.universitySourceUrl, r.checkedAt), fail('university name needs opened evidence'));
     else assert(r.universitySourceUrl === null, fail('unverified name cannot have verification URL'));
+    if (r.organisationAliases !== undefined) {
+      assert(r.canonicalName && Array.isArray(r.organisationAliases), fail('organisation aliases need a verified parent identity'));
+      const aliases = new Set();
+      for (const a of r.organisationAliases) {
+        assert(text(a.name) && text(a.evidence) && date(a.checkedAt) && supported(a.sourceUrl, a.checkedAt), fail('organisation alias requires dated opened relationship evidence'));
+        const key = a.name.normalize('NFKC').toLocaleLowerCase();
+        assert(!aliases.has(key), fail('duplicate organisation alias')); aliases.add(key);
+      }
+    }
     assert(Array.isArray(r.units) && Array.isArray(r.decisions) && Array.isArray(r.limitations), fail('units, decisions and limitations required'));
     assert(r.limitations.every(text), fail('empty limitation'));
     if(r.doctoralReview){

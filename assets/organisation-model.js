@@ -30,12 +30,19 @@ export function organisationRows(entities,universities,reviews,programs,faculty,
    g.entities.push(e);for(const r of rs)if(!g.reviews.includes(r))g.reviews.push(r);if(bridge&&!g.reviews.includes(bridge))g.reviews.push(bridge);grouped.set(key,g);
   }
   const names=new Map();for(const g of grouped.values())for(const n of [g.name,...g.entities.flatMap(e=>e.aliases)])if(!names.has(fold(n)))names.set(fold(n),g);
+  // Explicit school/parent observations bridge career-only labels. Ambiguous
+  // targets or an existing conflicting entity remain separate for review.
+  const aliasTargets=new Map();
+  for(const g of grouped.values())for(const r of g.reviews)for(const review of r.reviews)for(const a of review.organisationAliases||[]){
+   const k=fold(a.name), targets=aliasTargets.get(k)||new Set();targets.add(g);aliasTargets.set(k,targets);
+  }
+  for(const [k,targets] of aliasTargets)if(targets.size===1){const g=[...targets][0];if(!names.has(k)||names.get(k)===g){names.set(k,g);g.reviewedAliases=g.reviews.flatMap(r=>r.reviews.flatMap(v=>v.organisationAliases||[])).map(a=>a.name);}}
   const observed=(name)=>{if(!name)return null;let g=names.get(fold(name));if(!g){g={id:'observed:'+fold(name),name,entities:[],reviews:[],programs:[]};grouped.set(g.id,g);names.set(fold(name),g);}return g;};
   for(const p of [...faculty.records,...roster.records]){const g=observed(p.currentInstitution||p.institution);if(g){g.affiliations||=new Set();g.affiliations.add(p.id);}}
   for(const h of [...histories.records,...linkedin.records])for(const j of h.jobs){const g=observed(j.employerAsWritten);if(g){g.careers||=new Set();g.careers.add(h.id);}}
   const rows=[...grouped.values()];
   for(const r of rows){
-   r.names=[...new Set([r.name,...r.entities.flatMap(e=>e.aliases)])];
+   r.names=[...new Set([r.name,...r.entities.flatMap(e=>e.aliases),...(r.reviewedAliases||[])])];
    r.countries=[...new Set(r.entities.map(e=>e.country).filter(Boolean))];
    const universityIds=new Set(r.reviews.flatMap(u=>u.originals.map(o=>o.id)));
    r.programs=programs.records.filter(p=>p.universityId?universityIds.has(p.universityId):r.names.some(n=>fold(n)===fold(p.university)));

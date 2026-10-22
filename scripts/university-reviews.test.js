@@ -73,3 +73,9 @@ test('evidenced non-university exclusion hides only directory presentation and p
     assert.throws(() => validateUniversityReviews([invalid], original));
   }
 });
+
+test('organisation aliases require independently dated opened relationship evidence', () => {
+ const r=review();r.organisationAliases=[{name:'Z University, Business School',sourceUrl:r.universitySourceUrl,checkedAt:r.checkedAt,evidence:'Official source identifies school within university.'}];
+ assert.doesNotThrow(()=>validateUniversityReviews([r],original));
+ r.organisationAliases[0].checkedAt='2026-10-21';assert.throws(()=>validateUniversityReviews([r],original));
+});

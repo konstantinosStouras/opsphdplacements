@@ -15,3 +15,17 @@ test('reviewed New Haven campuses keep countries, doctoral routes and employer o
  assert(!sa[0].employers.some(e=>e.name.includes('Mechanical and Industrial Engineering')));
  assert(us[0].employers.some(e=>e.name.includes('Mechanical and Industrial Engineering')));
 });
+
+test('explicit school aliases join career observations without merging similar or conflicting names',()=>{
+ const empty={records:[]};
+ const universities={records:[{id:'a',name:'A University',departments:[]},{id:'b',name:'B University',departments:[]}]};
+ const aliases=[{name:'A University, School'}];
+ const reviews={records:universities.records.map(r=>({...r,canonicalName:r.name,universitySourceUrl:'https://example.edu',status:'reviewed',units:[],limitations:[],duplicateOf:null,organisationAliases:r.id==='a'?aliases:[]}))};
+ const entities={records:universities.records.map(r=>({id:r.id,name:r.name,aliases:[r.name],country:'US',programs:[],directory:{universities:[{id:r.id}]}}))};
+ const histories={records:[{id:'person',jobs:[{employerAsWritten:'A University, School'}]},{id:'other',jobs:[{employerAsWritten:'A University, Another School'}]}]};
+ let rows=organisationRows(entities,universities,reviews,empty,empty,empty,histories,empty);
+ assert.equal(rows.length,3);assert(rows.find(r=>r.name==='A University').careers.has('person'));assert(rows.find(r=>r.name==='A University').search.includes('school'));
+ reviews.records[1].organisationAliases=aliases;
+ rows=organisationRows(entities,universities,reviews,empty,empty,empty,histories,empty);
+ assert.equal(rows.length,4);assert(!rows.find(r=>r.name==='A University').careers);
+});

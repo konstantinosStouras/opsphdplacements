@@ -13,6 +13,13 @@ for (const input of inputs) {
     // Unit proposals never replace the separately integrated doctoral overlay,
     // including when a contributor copied an older public row into a proposal.
     delete clean.doctoralReview;
+    if (clean.organisationAliases === undefined && records.get(clean.id)?.organisationAliases) {
+      clean.organisationAliases = records.get(clean.id).organisationAliases;
+      for (const alias of clean.organisationAliases) {
+        const source = records.get(clean.id).sources.find(s => s.url === alias.sourceUrl && s.checkedAt === alias.checkedAt && s.outcome === 'read');
+        if (source && !clean.sources.some(s => s.url === source.url && s.checkedAt === source.checkedAt && s.outcome === 'read')) clean.sources.push(source);
+      }
+    }
     if (records.get(clean.id)?.doctoralReview) clean.doctoralReview = records.get(clean.id).doctoralReview;
     // Preserve stamps for unchanged records; record-dates decides actual content changes.
     records.set(clean.id, { ...clean, ...(records.get(clean.id)?.addedAt ? { addedAt: records.get(clean.id).addedAt, updatedAt: records.get(clean.id).updatedAt } : {}) });

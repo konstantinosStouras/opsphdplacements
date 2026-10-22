@@ -3,11 +3,11 @@
   "metadata": {
     "definition": "Individual Chrome reviews of official university names and operations units. The original directory remains in universities.json. Reviewed describes the stated source scope, not an exhaustive current or historical census.",
     "sourceRecords": 666,
-    "attempted": 634,
-    "reviewed": 508,
-    "partial": 121,
+    "attempted": 635,
+    "reviewed": 512,
+    "partial": 118,
     "blocked": 5,
-    "pending": 32
+    "pending": 31
   },
   "records": [
     {
@@ -4603,12 +4603,24 @@
           "checkedAt": "2026-10-22",
           "outcome": "read",
           "note": "Source-name reconciliation: Baruch College, The City University of New York. Official homepage displays Baruch College and City University of New York together. This source wording identifies Baruch College within CUNY, not the entire university system."
+        },
+        {
+          "url": "https://zicklin.baruch.cuny.edu/why-zicklin/",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Full current official institutional page individually read in Chrome; exact school name and parent relationship supported."
         }
       ],
       "limitations": [],
       "duplicateOf": null,
-      "addedAt": "2026-10-20T10:06:22Z",
-      "updatedAt": "2026-10-22T11:20:54Z",
+      "organisationAliases": [
+        {
+          "name": "Baruch College, Zicklin School of Business",
+          "sourceUrl": "https://zicklin.baruch.cuny.edu/why-zicklin/",
+          "checkedAt": "2026-10-22",
+          "evidence": "The official Zicklin institutional overview explicitly states that the Zicklin School of Business is located within Baruch College. Exact school and college names appear in the current body and navigation. The supplied compound label therefore identifies the business school within Baruch College, not an additional institution."
+        }
+      ],
       "doctoralReview": {
         "status": "verified",
         "checkedAt": "2026-10-22",
@@ -4658,7 +4670,9 @@
           "The observation covers Baruch College provision only. It does not merge the CUNY Graduate Center, the CUNY university system or other constituent colleges into Baruch."
         ],
         "coverageComplete": true
-      }
+      },
+      "addedAt": "2026-10-20T10:06:22Z",
+      "updatedAt": "2026-10-22T17:42:14Z"
     },
     {
       "id": "bayes-business-school",
@@ -26714,12 +26728,12 @@
           {
             "branch": "engineering",
             "reviewState": "partial",
-            "conclusion": "Complete institutional PGR area index and engineering school/faculty structures read, plus broad engineering degree page and expanded sustainable topic. Computing, Data Science, Mathematics and remaining engineering research panels await scope review; physical manufacturing/control optimisation alone does not establish an additional IE/Ops doctorate.",
+            "conclusion": "Current institutional PGR index and all relevant technical degree overview pages read, with Engineering three topic panels and full award list, Computing six topic panels and actual PhD label, Mathematics applied/probability panels, Data Science optimisation and award list. Potential Engineering transport/logistics, Computing maintenance-optimisation and Data Science aviation/storage projects require a scope adjudication or more specific operational evidence; no additional route force-included. Other physical/mathematical methods remain separate.",
             "sourceUrls": [
-              "https://www.hull.ac.uk/study/postgraduate-research/courses",
-              "https://www.hull.ac.uk/about/faculties/faculty-of-science-and-engineering",
-              "https://www.hull.ac.uk/about/faculties/faculty-of-science-and-engineering/school-of-engineering-and-technology",
-              "https://www.hull.ac.uk/study/postgraduate-research/courses/engineering-research-degrees"
+              "https://www.hull.ac.uk/study/postgraduate-research/courses/engineering-research-degrees",
+              "https://www.hull.ac.uk/study/postgraduate-research/courses/mathematics-research-degrees",
+              "https://www.hull.ac.uk/study/postgraduate-research/courses/data-science-research-degrees",
+              "https://www.hull.ac.uk/study/postgraduate-research/courses/computer-science-research-degrees"
             ]
           }
         ],
@@ -26764,18 +26778,298 @@
             "url": "https://www.hull.ac.uk/study/postgraduate-research/courses/engineering-research-degrees",
             "checkedAt": "2026-10-22",
             "outcome": "read",
-            "note": "Read full Engineering research-degree overview and expanded Sustainable Engineering topic. Broad PhD and MSc by Thesis provision; detailed sustainable research materials/manufacturing technologies, device/control/chemical-energy processes. No industrial-system route inferred from physical process optimisation alone. Other topic panels, actual all-programmes accordion and computing/data/mathematics candidates remain unread."
+            "note": "Read entire current Engineering doctoral overview and expanded complete programme list (five actual PhD labels plus master’s entries), all three research topics Energy and Environment, Medical Engineering, Sustainable Engineering. Explicit Transport and logistics research bullet in Energy/Environment; precise doctoral registration/host mapping beyond common engineering page remains unresolved. Medical field concerns devices/materials; sustainable field physical materials/energy process/control optimisation, not an inferred industrial-systems route."
+          },
+          {
+            "url": "https://www.hull.ac.uk/study/postgraduate-research/courses/mathematics-research-degrees",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Read full Mathematics research-degree overview and expanded Applied Mathematics and Probability and Statistics. Environmental/industrial modelling concerns estuary pollution/radioactive repositories and fluid dynamics; genetic algorithms optimisation generic. Probability topics complex networks, foundational statistical decisions, astrophysics; no specific Ops application pathway inferred from methods alone. Pure Mathematics panel and programme list not expanded."
+          },
+          {
+            "url": "https://www.hull.ac.uk/study/postgraduate-research/courses/data-science-research-degrees",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Read full Data Science doctoral overview, exact award list MSC by Thesis Data Science and PhD Data Science, exact DAIM host, expanded Optimisation project titles. Power-system storage management and hydrogen-powered aviation infrastructure optimisation listed as titles only; no further project detail links or actual operational remit established. Generic PhD structure does not resolve project-scope eligibility."
+          },
+          {
+            "url": "https://www.hull.ac.uk/study/postgraduate-research/courses/computer-science-research-degrees",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Read full Computer Science doctoral overview, expanded award list including PhD Computer Science and all six research-topic descriptions. Dependable Systems explicitly multi-objective optimisation of system architecture and maintenance, safety/reliability/availability analysis, dependability requirements allocation, system-design metaheuristics. Actual scope versus software-architecture-only context remains unresolved. AI telehealth decision support, generic simulation, robotics and computing methods not automatically Ops pathways."
           }
         ],
         "limitations": [
           "Business school source identity and relevant current units verified. Current Engineering and Technology school observed, but its wider doctoral scope remains incomplete separately.",
           "PhD overview says Logistics while selector offers Management and five other titles. Logistics doctoral provision is explicit, but exact formal registration title for a logistics student is not established.",
-          "Current technical branch coverage remains incomplete; no exhaustive doctoral census or additional engineering absence claimed."
+          "Additional technical candidates examined individually, but exact substantive Ops scope and award-to-field mapping remain unresolved. Existing logistics doctoral route and its formal-title discrepancy are preserved unchanged. No new technical programme proposed until eligibility is resolved."
         ],
         "coverageComplete": false
       },
       "addedAt": "2026-10-22T17:32:28Z",
-      "updatedAt": "2026-10-22T17:32:28Z"
+      "updatedAt": "2026-10-22T17:42:14Z"
+    },
+    {
+      "id": "idaho-state-university",
+      "status": "reviewed",
+      "canonicalName": "Idaho State University",
+      "universitySourceUrl": "https://www.isu.edu/cob/programs/",
+      "checkedAt": "2026-10-22",
+      "reviewer": "Codex in Chrome",
+      "units": [
+        {
+          "id": "idaho-state-university--marketing-management",
+          "name": "Department of Marketing and Management",
+          "school": "College of Business",
+          "type": "department",
+          "fields": [
+            "operations-management",
+            "supply-chain"
+          ],
+          "sourceUrl": "https://www.higheredjobs.com/faculty/details.cfm?JobCode=179582129&Title=Assistant%2FAssociate%20Professor%20of%20Management%2C%20College%20of%20Business%20%283313%29",
+          "checkedAt": "2026-10-22",
+          "evidence": "Current university employer advert explicitly names this department and college, with primary supply chain/operations management undergraduate and graduate teaching, and relevant peer-reviewed research responsibilities."
+        },
+        {
+          "id": "idaho-state-university--civil-environmental-engineering",
+          "name": "Department of Civil and Environmental Engineering",
+          "school": "College of Science and Engineering",
+          "type": "department",
+          "fields": [
+            "operations-research"
+          ],
+          "sourceUrl": "https://www.isu.edu/cee/",
+          "checkedAt": "2026-10-22",
+          "evidence": "Current department page explicitly offers EAS PhD with Civil Engineering specialty and lists departmental research areas. Expanded Transportation Engineering remit concerns designing/managing road, highway and public-transit systems for safe efficient travel. Central doctoral catalog confirms Civil concentration and college/host."
+        }
+      ],
+      "decisions": [
+        {
+          "sourceDepartmentId": "idaho-state-university__college-of-business__marketing-and-management-supply-chain-and-operations-managem",
+          "disposition": "replaced",
+          "unitIds": [
+            "idaho-state-university--marketing-management"
+          ],
+          "reason": "Original current employer advert separates actual Department of Marketing and Management from position subject Supply Chain and Operations Management. One department retained, no separate SCM/OM department invented."
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.higheredjobs.com/faculty/details.cfm?JobCode=179582129&Title=Assistant%2FAssociate%20Professor%20of%20Management%2C%20College%20of%20Business%20%283313%29",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Read full current original employer advert, posting req2839, exact College of Business and Department of Marketing and Management host. Position primary undergraduate/graduate Supply Chain and operations management teaching and relevant research; recruitment PhD qualification is not university doctoral provision."
+        },
+        {
+          "url": "https://www.isu.edu/cob/programs/",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Read complete current business degree inventory: undergraduate majors, four graduate programmes HRD/MAcc/MBA/MHA and certificates including Supply Chain Management. No business PhD programme listed."
+        },
+        {
+          "url": "https://www.isu.edu/graduateprograms/",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Read complete unfiltered institutional graduate programme inventory, all actual links from Addiction Studies to TESOL. Exact doctoral award titles include broad Engineering and Applied Science and host variants, Mathematics Doctor of Arts, Nuclear Science and Engineering and other discipline doctorates. Distinct concentration links not counted as distinct degrees."
+        },
+        {
+          "url": "https://www.isu.edu/cose/programs/engineering-and-applied-science/",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Read entire Engineering and Applied Sciences PhD landing page, seven participating discipline links. Page gives no substantive research-field descriptions."
+        },
+        {
+          "url": "https://coursecat.isu.edu/graduate/scienceengineering/engineeringandappliedscience/dopengineeringandappliedscience/",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Read entire 2026-27 EAS doctoral catalog, exact broad PhD, college administration and twelve concentrations/host departments; research dissertation and oral defense required. Specific Ops field not established by concentration names or generic independent-research requirement."
+        },
+        {
+          "url": "https://coursecat.isu.edu/graduate/scienceengineering/civilandenvironmentalengineering/",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Read full CEE graduate catalog, EAS concentration options and other master’s descriptions. Master’s physical structures/water/geotechnical and environmental research descriptions not automatically transferred to doctoral operational research."
+        },
+        {
+          "url": "https://coursecat.isu.edu/graduate/scienceengineering/mechanicalengineering/",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Read full Mechanical and Measurement & Control Engineering graduate catalog displayed overview. EAS doctorate listed; detailed research descriptions concern master’s control/robotics/mechanics/energy. No substantive doctoral IE/Ops route inferred from control optimisation."
+        },
+        {
+          "url": "https://www.isu.edu/cee/",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Read full current CEE homepage, explicit EAS PhD with Civil Engineering/Environmental/ENSM specialties, research-area headings and expanded Other Research Areas. Transportation Engineering explicitly designing/managing roads/highways/public transit for safe efficient travel. Other listed areas critical infrastructure and additive manufacturing not separate Ops pathways."
+        },
+        {
+          "url": "https://www.isu.edu/math/",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Read full current Mathematics and Statistics homepage and expanded Applied and Computational Mathematics research panel. Physical/environmental numerical/PDE/computational methods, generic ML; no substantive Ops research pathway established. Homepage Doctorate of Arts (PhD) wording conflicts with exact catalog D.A.; not normalized."
+        },
+        {
+          "url": "https://coursecat.isu.edu/graduate/scienceengineering/mathematics/",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Read complete 2026-27 graduate mathematics overview. Exact separate D.A. in Mathematics and EAS PhD; D.A. higher-education teaching and mathematical breadth, EAS independent scholarly research. No Operations field inferred from generic mathematics."
+        },
+        {
+          "url": "https://www.isu.edu/cs/",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Read full current Computer Science homepage and every displayed research-area description. Explicit EAS PhD CS emphasis; computing, algorithms, AI, software, cybersecurity, data science and physical computational applications without specific operational field evidence."
+        },
+        {
+          "url": "https://www.isu.edu/ece/",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Read full current ECE homepage, exact EAS doctoral provision and every displayed research-area description. Control, electronics, communications, networks, IoT and power-grid systems; no additional OR/IE route inferred from engineering efficiency alone."
+        },
+        {
+          "url": "https://coursecat.isu.edu/graduate/scienceengineering/nuclearengineering/",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Read entire 2026-27 Nuclear Engineering, Health Physics and Physics graduate catalog overview. Nuclear doctorate research spans reactor physics/design, thermal hydraulics, nuclear fuels/materials, fuel cycle systems studies and waste; generic systems wording alone not operational scope. Applied Physics independent thesis/physical research separately described."
+        },
+        {
+          "url": "https://coursecat.isu.edu/graduate/scienceengineering/engineeringandappliedscience/dopengineeringandappliedscience/mecheng/eas/",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Read entire MMCE EAS doctoral concentration detail: exact Mechanical/Measurement & Control concentrations, dissertation/oral defense and dissemination requirements. No research-field inventory on this page; master’s topics on host overview not silently assigned doctoral scope."
+        }
+      ],
+      "limitations": [
+        "Current imported business unit reconciliation remains verified. Civil transport-system research host added on separately read evidence; broader doctoral technical coverage remains partial."
+      ],
+      "duplicateOf": null,
+      "doctoralReview": {
+        "status": "verified",
+        "checkedAt": "2026-10-22",
+        "programmeIds": [
+          "idaho-state-university--engineering-applied-science-civil-transportation-phd"
+        ],
+        "branches": [
+          {
+            "branch": "business",
+            "reviewState": "checked",
+            "conclusion": "Complete institutional graduate inventory and full current College of Business degree inventory read. MBA/MAcc/MHA/HRD master’s and certificates; no business doctoral programme verified. Actual Ops/SCM unit established independently by full employer advert.",
+            "sourceUrls": [
+              "https://www.isu.edu/graduateprograms/",
+              "https://www.isu.edu/cob/programs/",
+              "https://www.higheredjobs.com/faculty/details.cfm?JobCode=179582129&Title=Assistant%2FAssociate%20Professor%20of%20Management%2C%20College%20of%20Business%20%283313%29"
+            ]
+          },
+          {
+            "branch": "engineering",
+            "reviewState": "partial",
+            "conclusion": "Complete institutional degree inventory, central EAS doctorate/concentrations and individual CEE/CS/ECE/Math/current Nuclear/Physics graduate research descriptions read. Scoped Civil Engineering transport-system pathway verified through actual host PhD provision and transport design/management research. Mechanical doctoral requirements page has no substantive research inventory; nuclear fuel-cycle systems research requires further explicit operational detail before a second route. Methods/physical engineering alone not additional Ops routes.",
+            "sourceUrls": [
+              "https://www.isu.edu/cee/",
+              "https://www.isu.edu/math/",
+              "https://coursecat.isu.edu/graduate/scienceengineering/mathematics/",
+              "https://www.isu.edu/cs/",
+              "https://www.isu.edu/ece/",
+              "https://coursecat.isu.edu/graduate/scienceengineering/nuclearengineering/",
+              "https://coursecat.isu.edu/graduate/scienceengineering/engineeringandappliedscience/dopengineeringandappliedscience/mecheng/eas/"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://www.higheredjobs.com/faculty/details.cfm?JobCode=179582129&Title=Assistant%2FAssociate%20Professor%20of%20Management%2C%20College%20of%20Business%20%283313%29",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Read full current original employer advert, posting req2839, exact College of Business and Department of Marketing and Management host. Position primary undergraduate/graduate Supply Chain and operations management teaching and relevant research; recruitment PhD qualification is not university doctoral provision."
+          },
+          {
+            "url": "https://www.isu.edu/cob/programs/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Read complete current business degree inventory: undergraduate majors, four graduate programmes HRD/MAcc/MBA/MHA and certificates including Supply Chain Management. No business PhD programme listed."
+          },
+          {
+            "url": "https://www.isu.edu/graduateprograms/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Read complete unfiltered institutional graduate programme inventory, all actual links from Addiction Studies to TESOL. Exact doctoral award titles include broad Engineering and Applied Science and host variants, Mathematics Doctor of Arts, Nuclear Science and Engineering and other discipline doctorates. Distinct concentration links not counted as distinct degrees."
+          },
+          {
+            "url": "https://www.isu.edu/cose/programs/engineering-and-applied-science/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Read entire Engineering and Applied Sciences PhD landing page, seven participating discipline links. Page gives no substantive research-field descriptions."
+          },
+          {
+            "url": "https://coursecat.isu.edu/graduate/scienceengineering/engineeringandappliedscience/dopengineeringandappliedscience/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Read entire 2026-27 EAS doctoral catalog, exact broad PhD, college administration and twelve concentrations/host departments; research dissertation and oral defense required. Specific Ops field not established by concentration names or generic independent-research requirement."
+          },
+          {
+            "url": "https://coursecat.isu.edu/graduate/scienceengineering/civilandenvironmentalengineering/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Read full CEE graduate catalog, EAS concentration options and other master’s descriptions. Master’s physical structures/water/geotechnical and environmental research descriptions not automatically transferred to doctoral operational research."
+          },
+          {
+            "url": "https://coursecat.isu.edu/graduate/scienceengineering/mechanicalengineering/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Read full Mechanical and Measurement & Control Engineering graduate catalog displayed overview. EAS doctorate listed; detailed research descriptions concern master’s control/robotics/mechanics/energy. No substantive doctoral IE/Ops route inferred from control optimisation."
+          },
+          {
+            "url": "https://www.isu.edu/cee/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Read full current CEE homepage, explicit EAS PhD with Civil Engineering/Environmental/ENSM specialties, research-area headings and expanded Other Research Areas. Transportation Engineering explicitly designing/managing roads/highways/public transit for safe efficient travel. Other listed areas critical infrastructure and additive manufacturing not separate Ops pathways."
+          },
+          {
+            "url": "https://www.isu.edu/math/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Read full current Mathematics and Statistics homepage and expanded Applied and Computational Mathematics research panel. Physical/environmental numerical/PDE/computational methods, generic ML; no substantive Ops research pathway established. Homepage Doctorate of Arts (PhD) wording conflicts with exact catalog D.A.; not normalized."
+          },
+          {
+            "url": "https://coursecat.isu.edu/graduate/scienceengineering/mathematics/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Read complete 2026-27 graduate mathematics overview. Exact separate D.A. in Mathematics and EAS PhD; D.A. higher-education teaching and mathematical breadth, EAS independent scholarly research. No Operations field inferred from generic mathematics."
+          },
+          {
+            "url": "https://www.isu.edu/cs/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Read full current Computer Science homepage and every displayed research-area description. Explicit EAS PhD CS emphasis; computing, algorithms, AI, software, cybersecurity, data science and physical computational applications without specific operational field evidence."
+          },
+          {
+            "url": "https://www.isu.edu/ece/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Read full current ECE homepage, exact EAS doctoral provision and every displayed research-area description. Control, electronics, communications, networks, IoT and power-grid systems; no additional OR/IE route inferred from engineering efficiency alone."
+          },
+          {
+            "url": "https://coursecat.isu.edu/graduate/scienceengineering/nuclearengineering/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Read entire 2026-27 Nuclear Engineering, Health Physics and Physics graduate catalog overview. Nuclear doctorate research spans reactor physics/design, thermal hydraulics, nuclear fuels/materials, fuel cycle systems studies and waste; generic systems wording alone not operational scope. Applied Physics independent thesis/physical research separately described."
+          },
+          {
+            "url": "https://coursecat.isu.edu/graduate/scienceengineering/engineeringandappliedscience/dopengineeringandappliedscience/mecheng/eas/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Read entire MMCE EAS doctoral concentration detail: exact Mechanical/Measurement & Control concentrations, dissertation/oral defense and dissemination requirements. No research-field inventory on this page; master’s topics on host overview not silently assigned doctoral scope."
+          }
+        ],
+        "limitations": [
+          "One scoped Civil-concentration pathway established under exact broad EAS doctorate, not a separate transport award. Technical coverage remains partial where current doctoral research-field links remain unclear.",
+          "Mathematics homepage says Doctorate of Arts (PhD), but current catalog separately identifies D.A. and EAS PhD. Neither credential normalized or converted into an Ops offering without field evidence.",
+          "Nuclear fuel-cycle systems studies and mechanical/control doctoral provision are examined candidates, without an additional verified substantive operational pathway. No blanket absence inferred."
+        ],
+        "coverageComplete": false
+      },
+      "addedAt": "2026-10-22T17:42:14Z",
+      "updatedAt": "2026-10-22T17:42:14Z"
     },
     {
       "id": "ie-university",
@@ -32249,7 +32543,58 @@
       ],
       "duplicateOf": null,
       "addedAt": "2026-10-20T09:30:49Z",
-      "updatedAt": "2026-10-20T09:30:49Z"
+      "updatedAt": "2026-10-22T17:42:14Z",
+      "doctoralReview": {
+        "status": "no-qualifying-programme-verified",
+        "checkedAt": "2026-10-22",
+        "programmeIds": [],
+        "branches": [
+          {
+            "branch": "business",
+            "reviewState": "checked",
+            "sourceUrls": [
+              "https://www.lonestar.edu/catalog/#/policy/Sk5mf_lRt?bc=true&bcCurrent=Accreditations&bcGroup=Accreditations%20and%20Affiliations&bcItemType=policies",
+              "https://www.lonestar.edu/programs-of-study/"
+            ],
+            "conclusion": "Current official catalogue institution-wide award authority explicitly associate and baccalaureate degrees, plus certificates/diplomas at approved levels. Degree types list bachelor/associate/certificates, no graduate research doctorate."
+          },
+          {
+            "branch": "engineering",
+            "reviewState": "checked",
+            "sourceUrls": [
+              "https://www.lonestar.edu/catalog/#/policy/Sk5mf_lRt?bc=true&bcCurrent=Accreditations&bcGroup=Accreditations%20and%20Affiliations&bcItemType=policies",
+              "https://www.lonestar.edu/programs-of-study/"
+            ],
+            "conclusion": "Same current institution-wide award authority and programme degree-type list establish no doctoral level. Technical/applied bachelor and associate provision not doctoral engineering."
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://www.lonestar.edu/catalog/#/policy/Sk5mf_lRt?bc=true&bcCurrent=Accreditations&bcGroup=Accreditations%20and%20Affiliations&bcItemType=policies",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Current 2026–27 official catalogue accreditation policy reached by official accreditation redirect. Read institutional degree-authority statement explicitly associate and baccalaureate, certificates/diplomas at approved levels; policy marked under review. Read initial specialist accreditation rows, not every later row. No graduate award authority claimed."
+          },
+          {
+            "url": "https://www.lonestar.edu/programs-of-study/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Official programme page AX content read after navigation timeout. Full Types of Degrees headings bachelor BAS/BAT/BSN, associate AA/AAT/AS/AAS/OLSA and certificate headings. Dynamic individual programme list remained Loading; no claim to every programme card."
+          },
+          {
+            "url": "https://www.lonestar.edu/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Official homepage AX institution identity and community-college transfer/workforce remit read after navigation timeout. Eight colleges within Lone Star College System; no fabricated separate doctoral provider."
+          }
+        ],
+        "limitations": [
+          "Institution-wide official degree-level statement and degree-type inventory support current negative doctoral review; individual dynamic programme cards did not load.",
+          "Accreditation policy explicitly marked under review; preserved as current official source statement, not a guarantee of future degree authority.",
+          "Prior unit identity/scope limitations and original dates preserved."
+        ],
+        "coverageComplete": true
+      }
     },
     {
       "id": "longwood-university",
@@ -38436,7 +38781,43 @@
       ],
       "duplicateOf": null,
       "addedAt": "2026-10-20T11:00:16Z",
-      "updatedAt": "2026-10-20T11:00:16Z"
+      "updatedAt": "2026-10-22T17:42:14Z",
+      "doctoralReview": {
+        "status": "no-qualifying-programme-verified",
+        "checkedAt": "2026-10-22",
+        "programmeIds": [],
+        "branches": [
+          {
+            "branch": "business",
+            "reviewState": "checked",
+            "sourceUrls": [
+              "https://nevadastate.edu/academics/degrees-and-programs/"
+            ],
+            "conclusion": "Current full programme-type inventory has34 minors, 32 majors, 2 masters and 1 specialist; no doctoral type. Both master programmes individually displayed Nursing Leadership MSN and Speech-Language Pathology MS, no business doctorate."
+          },
+          {
+            "branch": "engineering",
+            "reviewState": "checked",
+            "sourceUrls": [
+              "https://nevadastate.edu/academics/degrees-and-programs/"
+            ],
+            "conclusion": "Current programme-type inventory has no doctorate. All graduate-level programmes displayed: two masters and School Psychology Education Specialist EdS; no engineering/IE/Ops research doctorate."
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://nevadastate.edu/academics/degrees-and-programs/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Read current degree finder programme-type categories and counts, then actively selected Masters and read both results Nursing Leadership MSN and Speech-Language Pathology MS; then selected Specialist and read School Psychology EdS. No doctorate category; not inferred from undergraduate first-page results. Exact Nevada State University Henderson identity in footer."
+          }
+        ],
+        "limitations": [
+          "Source-bounded current graduate provision review; all 69 undergraduate/graduate programme cards not individually opened. Graduate-level categories and all 3 graduate results actually read.",
+          "Prior reviewed university/unit facts and dates unchanged."
+        ],
+        "coverageComplete": true
+      }
     },
     {
       "id": "new-uzbekistan-university",
@@ -40356,7 +40737,62 @@
       ],
       "duplicateOf": null,
       "addedAt": "2026-10-20T11:00:16Z",
-      "updatedAt": "2026-10-20T11:00:16Z"
+      "updatedAt": "2026-10-22T17:42:14Z",
+      "doctoralReview": {
+        "status": "no-qualifying-programme-verified",
+        "checkedAt": "2026-10-22",
+        "programmeIds": [],
+        "branches": [
+          {
+            "branch": "business",
+            "reviewState": "checked",
+            "sourceUrls": [
+              "https://www.nic.edu/programs",
+              "https://nic.edu/"
+            ],
+            "conclusion": "Full rendered college programme directory and expanded degree-type choices read. Only associate degrees, technical/academic certificates and credentials; business programmes are foundational transfer/AAS, no doctoral provision."
+          },
+          {
+            "branch": "engineering",
+            "reviewState": "checked",
+            "sourceUrls": [
+              "https://www.nic.edu/programs",
+              "https://nic.edu/"
+            ],
+            "conclusion": "Current college award-type inventory contains no graduate or doctoral degree. Engineering/advanced manufacturing/CNC offerings are associate/technical routes, not IE doctorate."
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://www.nic.edu/programs",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Entire rendered academic programme directory read through World Languages and footer; page shows 95 programmes. Degree Type filter opened: Associates Degree, Technical Certificate, Academic Certificate, Credential. Psychology careers mention needing graduate degrees elsewhere, not local doctoral award."
+          },
+          {
+            "url": "https://nic.edu/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Entire official homepage read. Current North Idaho College Coeur d’Alene identity and explicit associate degree/certificate provision."
+          },
+          {
+            "url": "https://nic.edu/about/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Entire About page read after navigation timeout; official community college identity. Timeout did not prevent loaded body review."
+          },
+          {
+            "url": "https://nic.edu/accreditation/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Entire accreditation page read, institutional NWCCU status and regular review context. Accreditation not treated as proof of a particular doctoral degree."
+          }
+        ],
+        "limitations": [
+          "Current source-bounded institutional award inventory; prior unit-scope uncertainty and original check dates preserved."
+        ],
+        "coverageComplete": true
+      }
     },
     {
       "id": "northeastern-university",
@@ -43984,7 +44420,50 @@
       ],
       "duplicateOf": null,
       "addedAt": "2026-10-21T07:40:08Z",
-      "updatedAt": "2026-10-21T07:40:08Z"
+      "updatedAt": "2026-10-22T17:42:14Z",
+      "doctoralReview": {
+        "status": "no-qualifying-programme-verified",
+        "checkedAt": "2026-10-22",
+        "programmeIds": [],
+        "branches": [
+          {
+            "branch": "business",
+            "reviewState": "checked",
+            "sourceUrls": [
+              "https://graduate.providence.edu/",
+              "https://business.providence.edu/graduate-business-programs/"
+            ],
+            "conclusion": "Entire current business graduate degree inventory MBA variants, Business Analytics MS, Sports Administration MS and three certificates. No business research doctorate."
+          },
+          {
+            "branch": "engineering",
+            "reviewState": "not-present",
+            "sourceUrls": [
+              "https://graduate.providence.edu/"
+            ],
+            "conclusion": "Entire college graduate branch inventory Business, Education, History, Theology; no engineering graduate branch. No relevant engineering/Operations research doctorate established."
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://graduate.providence.edu/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Entire Providence College graduate overview read. Exactly four graduate branches Business, Education, History, Theology, Rhode Island identity; contemporary21October2026event. No engineering graduate branch."
+          },
+          {
+            "url": "https://business.providence.edu/graduate-business-programs/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Entire business graduate programme inventory read. MBA full/part-time/4+1/accounting cohort, MS Business Analytics, MS Sports Administration, certificates Business Analytics/Digital Marketing/Sports Management. Faculty PhD credentials and employment outcomes not confused with offered doctorate."
+          }
+        ],
+        "limitations": [
+          "Current source-bounded graduate business and engineering provision review; unrelated history/theology/education degree details not exhaustively enumerated.",
+          "Prior reviewed university/unit facts and original dates unchanged."
+        ],
+        "coverageComplete": true
+      }
     },
     {
       "id": "psu-behrend",
@@ -44839,7 +45318,42 @@
       ],
       "duplicateOf": null,
       "addedAt": "2026-10-21T08:10:46Z",
-      "updatedAt": "2026-10-21T08:10:46Z"
+      "updatedAt": "2026-10-22T17:42:14Z",
+      "doctoralReview": {
+        "status": "partial",
+        "checkedAt": "2026-10-22",
+        "programmeIds": [],
+        "branches": [
+          {
+            "branch": "business",
+            "reviewState": "blocked",
+            "sourceUrls": [
+              "https://www.quincy.edu/"
+            ],
+            "conclusion": "Official university home displayed Performing security verification. No academic inventory read; business doctoral provision unresolved."
+          },
+          {
+            "branch": "engineering",
+            "reviewState": "blocked",
+            "sourceUrls": [
+              "https://www.quincy.edu/"
+            ],
+            "conclusion": "Same individual official-source security verification prevents current programme inventory check; no negative conclusion."
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://www.quincy.edu/",
+            "checkedAt": "2026-10-22",
+            "outcome": "blocked",
+            "note": "Official home displayed Performing security verification and Cloudflare bot-verification text. No challenge interaction, bypass or downstream source workaround attempted; no academic content read."
+          }
+        ],
+        "limitations": [
+          "Individual official-source security verification blocks this review. Existing prior unit findings and dates retained; no doctoral absence inferred."
+        ],
+        "coverageComplete": false
+      }
     },
     {
       "id": "rensselaer-polytechnic-institute-rpi",
@@ -45093,14 +45607,26 @@
           "checkedAt": "2026-10-21",
           "outcome": "read",
           "note": "Full department name, CMOR acronym and operations research remit."
+        },
+        {
+          "url": "https://giving.rice.edu/jones-school-business",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Full current official institutional page individually read in Chrome; exact school name and parent relationship supported."
         }
       ],
       "limitations": [
         "Industrial Engineering appears as a multidisciplinary program on the official engineering directory; no separate department or research group established, so it is not relabeled as one."
       ],
       "duplicateOf": null,
-      "addedAt": "2026-10-21T08:10:46Z",
-      "updatedAt": "2026-10-22T11:20:54Z",
+      "organisationAliases": [
+        {
+          "name": "Rice University, Jesse H. Jones Graduate School of Business",
+          "sourceUrl": "https://giving.rice.edu/jones-school-business",
+          "checkedAt": "2026-10-22",
+          "evidence": "Rice University official giving website places Jones School of Business in its Schools & Units navigation and names the Jesse H. Jones Graduate School of Business in the body, also using Jones Graduate School of Business. The page describes education and business programmes across Rice University and identifies Rice University in the institutional footer. The supplied compound label identifies this business school within Rice, not a distinct university."
+        }
+      ],
       "doctoralReview": {
         "status": "verified",
         "checkedAt": "2026-10-22",
@@ -45166,7 +45692,9 @@
           "Broader quantitative methods in other subjects do not independently establish additional Ops doctoral routes."
         ],
         "coverageComplete": true
-      }
+      },
+      "addedAt": "2026-10-21T08:10:46Z",
+      "updatedAt": "2026-10-22T17:42:14Z"
     },
     {
       "id": "rochester-institute-of-technology",
@@ -81600,10 +82128,10 @@
     },
     {
       "id": "university-of-virginia",
-      "status": "partial",
+      "status": "reviewed",
       "canonicalName": "University of Virginia",
-      "universitySourceUrl": "https://www.darden.virginia.edu/phd/data-analytics-and-decision-science",
-      "checkedAt": "2026-10-21",
+      "universitySourceUrl": "https://www.darden.virginia.edu/faculty-research/academic-areas/data-analytics-decision-sciences",
+      "checkedAt": "2026-10-22",
       "reviewer": "Codex in Chrome",
       "units": [
         {
@@ -81630,6 +82158,19 @@
           "sourceUrl": "https://engineering.virginia.edu/department/systems-and-information-engineering/research/operations-research-and-analytics",
           "checkedAt": "2026-10-21",
           "evidence": "Official department research page explicitly names Department of Systems and Information Engineering and Operations Research and Analytics subgroup."
+        },
+        {
+          "id": "university-of-virginia--data-analytics-decision-sciences",
+          "name": "Data Analytics and Decision Sciences",
+          "type": "area",
+          "school": "Darden School of Business",
+          "fields": [
+            "operations-research",
+            "operations-management"
+          ],
+          "sourceUrl": "https://www.darden.virginia.edu/faculty-research/academic-areas/data-analytics-decision-sciences",
+          "checkedAt": "2026-10-22",
+          "evidence": "Official current academic-area page establishes exact named area within Darden. Its directly corresponding doctoral page explicitly includes pricing/revenue management and doctoral faculty expertise in public-sector operations, transportation and resource allocation, establishing substantive operational decision research beyond generic methods."
         }
       ],
       "decisions": [
@@ -81655,9 +82196,11 @@
         },
         {
           "sourceDepartmentId": "university-of-virginia__darden-school-of-business__data-analytics-and-decision-sciences",
-          "disposition": "unresolved",
-          "unitIds": [],
-          "reason": "DADS programme title expanded as Data Analytics and Decision Sciences on official doctoral page; exact unit operations/OR scope needs adjudication, not inferred from generic analytics."
+          "disposition": "replaced",
+          "unitIds": [
+            "university-of-virginia--data-analytics-decision-sciences"
+          ],
+          "reason": "Current official area identity and programme-linked operational research scope now read: pricing/revenue management plus explicit doctoral public-sector operations, transportation and resource-allocation expertise. Integrator accepted this as a relevant research pathway on 22 October; no separately titled Operations Research degree inferred."
         },
         {
           "sourceDepartmentId": "university-of-virginia__darden-school-of-business__technology-and-operations-management",
@@ -81692,16 +82235,35 @@
           "checkedAt": "2026-10-21",
           "outcome": "read",
           "note": "Official department OR and Analytics research subgroup."
+        },
+        {
+          "url": "https://www.darden.virginia.edu/faculty-research/academic-areas/data-analytics-decision-sciences",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Full official named academic-area page and complete eight-area navigation read."
+        },
+        {
+          "url": "https://www.darden.virginia.edu/phd/data-analytics-and-decision-science",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Full doctoral field page, all research topics and complete doctoral faculty expertise panel read. Explicit pricing/revenue management and public-sector operations/transportation/resource allocation."
+        },
+        {
+          "url": "https://www.darden.virginia.edu/phd/about",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Full doctoral programme overview read: Darden host and exactly two programmes of study, DADS and Strategy/Ethics/Entrepreneurship."
         }
       ],
       "limitations": [
-        "Data Analytics and Decision Sciences / DADS imported unit research-scope adjudication remains open."
+        "DADS is an academic area and programme of study in the Darden Ph.D. Program, not a separately titled Operations Research award. Wider engineering doctoral scope remains incomplete independently."
       ],
       "duplicateOf": null,
       "doctoralReview": {
         "status": "verified",
-        "checkedAt": "2026-10-21",
+        "checkedAt": "2026-10-22",
         "programmeIds": [
+          "university-of-virginia--darden-phd-data-analytics-decision-sciences",
           "university-of-virginia--systems-engineering-phd-or"
         ],
         "branches": [
@@ -81716,12 +82278,13 @@
           },
           {
             "branch": "business",
-            "conclusion": "Darden explicitly offers PhD only in Strategy/Ethics/Entrepreneurship and Data Analytics/Decision Sciences. No Technology/Operations Management PhD inferred. DADS programme includes optimization, dynamic programming, pricing/revenue management but explicit OM/OR specialization requires scope adjudication before separate qualifying record.",
+            "reviewState": "checked",
+            "conclusion": "Current Darden full doctoral inventory and DADS programme page read. Two programmes of study listed; DADS has explicit programme-linked operational research pathway accepted by integrator. Technology and Operations faculty area does not create another doctorate.",
             "sourceUrls": [
-              "https://www.darden.virginia.edu/phd",
-              "https://www.darden.virginia.edu/phd/data-analytics-and-decision-science"
-            ],
-            "reviewState": "partial"
+              "https://www.darden.virginia.edu/phd/about",
+              "https://www.darden.virginia.edu/phd/data-analytics-and-decision-science",
+              "https://www.darden.virginia.edu/faculty-research/academic-areas/data-analytics-decision-sciences"
+            ]
           }
         ],
         "sources": [
@@ -81748,15 +82311,34 @@
             "checkedAt": "2026-10-21",
             "outcome": "read",
             "note": "Official doctoral programme, admissions/supervision or research subgroup read in Chrome."
+          },
+          {
+            "url": "https://www.darden.virginia.edu/faculty-research/academic-areas/data-analytics-decision-sciences",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full official named academic-area page and complete eight-area navigation read."
+          },
+          {
+            "url": "https://www.darden.virginia.edu/phd/data-analytics-and-decision-science",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full doctoral field page, all research topics and complete doctoral faculty expertise panel read. Explicit pricing/revenue management and public-sector operations/transportation/resource allocation."
+          },
+          {
+            "url": "https://www.darden.virginia.edu/phd/about",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full doctoral programme overview read: Darden host and exactly two programmes of study, DADS and Strategy/Ethics/Entrepreneurship."
           }
         ],
         "limitations": [
-          "Darden DADS doctoral relevance needs integrator methodological adjudication; no Technology/Operations PhD inferred from faculty unit."
+          "Darden operational research field adjudication resolved on 22 October 2026; no separate Operations Research award or Technology/Operations doctorate inferred.",
+          "Existing Systems Engineering route and its 21 October evidence preserved; wider engineering doctoral inventory remains incomplete."
         ],
         "coverageComplete": false
       },
       "addedAt": "2026-10-21T11:02:27Z",
-      "updatedAt": "2026-10-21T11:02:27Z"
+      "updatedAt": "2026-10-22T17:42:14Z"
     },
     {
       "id": "university-of-waikato",
@@ -85115,19 +85697,34 @@
     },
     {
       "id": "vanderbilt-university",
-      "status": "partial",
+      "status": "reviewed",
       "canonicalName": "Vanderbilt University",
       "duplicateOf": null,
-      "universitySourceUrl": "https://engineering.vanderbilt.edu/academics/graduate/",
+      "universitySourceUrl": "https://business.vanderbilt.edu/faculty/directory/",
       "checkedAt": "2026-10-22",
       "reviewer": "Codex in Chrome",
-      "units": [],
+      "units": [
+        {
+          "id": "vanderbilt-university--operations-management-quantitative-methods",
+          "name": "Operations Management & Quantitative Methods",
+          "type": "area",
+          "school": "Owen Graduate School of Management",
+          "fields": [
+            "operations-management"
+          ],
+          "sourceUrl": "https://business.vanderbilt.edu/faculty/directory/",
+          "checkedAt": "2026-10-22",
+          "evidence": "Official current Owen faculty directory lists this exact Subject Area. Selecting that area displays six faculty entries, including multiple explicit Operations Management appointments and an Operations Management and Quantitative Methods appointment. Recorded as a faculty area, not an asserted department."
+        }
+      ],
       "decisions": [
         {
           "sourceDepartmentId": "vanderbilt-university__owen-graduate-school-of-management__operations-management-and-quantitative-methods",
-          "disposition": "unresolved",
-          "unitIds": [],
-          "reason": "Official Owen degree inventory confirms school context but imported Operations Management and Quantitative Methods unit label has not been individually reconciled against a current official unit inventory."
+          "disposition": "replaced",
+          "unitIds": [
+            "vanderbilt-university--operations-management-quantitative-methods"
+          ],
+          "reason": "Current official faculty-directory Subject Area exactly resolves the imported Operations Management and Quantitative Methods label, with filtered relevant faculty appointments in Owen. No separate department or doctorate is inferred."
         }
       ],
       "sources": [
@@ -85148,11 +85745,16 @@
           "checkedAt": "2026-10-22",
           "outcome": "read",
           "note": "Full official VECTOR academics page read: MS/MEng/PhD and CivilEnvironmental transportation programme relationship; no named qualifying OR/IE/logistics field."
+        },
+        {
+          "url": "https://business.vanderbilt.edu/faculty/directory/",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Full current faculty subject-area inventory read; actual Operations Management & Quantitative Methods filter selected and all six resulting area entries read."
         }
       ],
       "limitations": [
-        "Minimal institutional identity observation from individually opened official Vanderbilt business and engineering pages. Imported unit label remains unresolved; no complete university/unit review claimed.",
-        "Engineering doctoral finder did not render programme records; relevant doctoral field and full engineering inventory remain incomplete."
+        "Current source label and school relationship resolved as faculty area. Engineering doctoral inventory and transportation research eligibility remain incomplete separately; this unit observation does not assert Owen doctoral provision."
       ],
       "doctoralReview": {
         "status": "partial",
@@ -85203,7 +85805,7 @@
         "coverageComplete": false
       },
       "addedAt": "2026-10-22T06:53:24Z",
-      "updatedAt": "2026-10-22T06:53:24Z"
+      "updatedAt": "2026-10-22T17:42:14Z"
     },
     {
       "id": "vienna-university-of-economics-and-business",
@@ -86491,11 +87093,11 @@
     },
     {
       "id": "vrije-universiteit-amsterdam",
-      "status": "partial",
+      "status": "reviewed",
       "canonicalName": "Vrije Universiteit Amsterdam",
       "duplicateOf": null,
-      "universitySourceUrl": "https://vu.nl/en/about-vu/faculties/school-of-business-and-economics/departments/operations-analytics",
-      "checkedAt": "2026-10-21",
+      "universitySourceUrl": "https://vu.nl/en/about-vu/faculties/faculty-of-science/departments/mathematics",
+      "checkedAt": "2026-10-22",
       "reviewer": "Codex in Chrome",
       "units": [
         {
@@ -86512,14 +87114,30 @@
           "sourceUrl": "https://vu.nl/en/about-vu/faculties/school-of-business-and-economics/departments/operations-analytics",
           "checkedAt": "2026-10-21",
           "evidence": "Official page explicitly names department and school and research optimization methods for logistics and supply-chain decisions."
+        },
+        {
+          "id": "vrije-universiteit-amsterdam--mathematics-analytics-optimization",
+          "name": "Analytics & Optimization",
+          "type": "group",
+          "school": "Faculty of Science — Department of Mathematics",
+          "fields": [
+            "operations-research",
+            "operations-management",
+            "logistics"
+          ],
+          "sourceUrl": "https://vu.nl/en/about-vu/more-about/analytics-optimization",
+          "checkedAt": "2026-10-22",
+          "evidence": "Official named research group in the Department of Mathematics develops queueing and stochastic optimization for healthcare operations, integrated production and transport scheduling, and service planning. The department inventory directly links this named group and states PhD students contribute to all its research themes."
         }
       ],
       "decisions": [
         {
           "sourceDepartmentId": "vrije-universiteit-amsterdam____mathematics-analytics-and-optimization",
-          "disposition": "unresolved",
-          "unitIds": [],
-          "reason": "Current Mathematics doctorate confirms Department of Mathematics but does not establish imported combined Mathematics/Analytics/Optimization label as one formal relevant unit. Business Operations Analytics independently verified, not merged with Mathematics."
+          "disposition": "replaced",
+          "unitIds": [
+            "vrije-universiteit-amsterdam--mathematics-analytics-optimization"
+          ],
+          "reason": "The imported combined label is resolved as the Analytics & Optimization research group within the Department of Mathematics, not one combined department. Current official department and linked group pages establish exact identity, host and substantive operations research remit; independently verified business Operations Analytics remains separate."
         }
       ],
       "sources": [
@@ -86540,16 +87158,35 @@
           "checkedAt": "2026-10-21",
           "outcome": "read",
           "note": "Full Mathematics PhD overview read: Department of Mathematics and Faculty of Science doctoral embedding, no explicit OR/Ops field."
+        },
+        {
+          "url": "https://vu.nl/en/about-vu/faculties/faculty-of-science/departments/mathematics",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Full current Mathematics department overview and all six research themes read; exact Faculty of Science parent, linked Analytics & Optimization group, and explicit PhD participation in all themes."
+        },
+        {
+          "url": "https://vu.nl/en/about-vu/more-about/analytics-optimization",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Full named group research remit read, explicit healthcare queueing/operations, integrated production and transport scheduling, service planning."
+        },
+        {
+          "url": "https://vu.nl/en/about-vu/more-about/phd-in-mathematics-at-vu-amsterdam",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Full doctorate overview and expanded Research & Collaborations panel read; research proposal/supervisor path and Faculty of Science doctoral embedding."
         }
       ],
       "limitations": [
-        "Imported combined mathematics label remains unresolved; current Mathematics department not counted as OR unit from generic degree alone. Engineering branch inventory incomplete."
+        "Imported mathematical label now resolved to an actual research group, not a department. Wider technical doctoral inventory remains incomplete separately."
       ],
       "doctoralReview": {
         "status": "verified",
-        "checkedAt": "2026-10-21",
+        "checkedAt": "2026-10-22",
         "programmeIds": [
-          "vrije-universiteit-amsterdam--business-management-operations-analytics-phd"
+          "vrije-universiteit-amsterdam--business-management-operations-analytics-phd",
+          "vrije-universiteit-amsterdam--mathematics-phd-analytics-optimization"
         ],
         "branches": [
           {
@@ -86569,10 +87206,12 @@
           },
           {
             "branch": "mathematics",
-            "reviewState": "partial",
-            "conclusion": "Full current Mathematics PhD overview read, but no explicit qualifying OR/Ops research area on opened page. Imported combined mathematical unit label remains unresolved.",
+            "reviewState": "checked",
+            "conclusion": "Full PhD overview, department research-theme inventory and directly linked Analytics & Optimization group read. Explicit doctoral participation in all themes plus substantive healthcare, production/logistics and service operations establishes qualifying pathway.",
             "sourceUrls": [
-              "https://vu.nl/en/about-vu/more-about/phd-in-mathematics-at-vu-amsterdam"
+              "https://vu.nl/en/about-vu/more-about/phd-in-mathematics-at-vu-amsterdam",
+              "https://vu.nl/en/about-vu/faculties/faculty-of-science/departments/mathematics",
+              "https://vu.nl/en/about-vu/more-about/analytics-optimization"
             ]
           }
         ],
@@ -86594,15 +87233,33 @@
             "checkedAt": "2026-10-21",
             "outcome": "read",
             "note": "Full Mathematics PhD overview read: Department of Mathematics and Faculty of Science doctoral embedding, no explicit OR/Ops field."
+          },
+          {
+            "url": "https://vu.nl/en/about-vu/faculties/faculty-of-science/departments/mathematics",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full current Mathematics department overview and all six research themes read; exact Faculty of Science parent, linked Analytics & Optimization group, and explicit PhD participation in all themes."
+          },
+          {
+            "url": "https://vu.nl/en/about-vu/more-about/analytics-optimization",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full named group research remit read, explicit healthcare queueing/operations, integrated production and transport scheduling, service planning."
+          },
+          {
+            "url": "https://vu.nl/en/about-vu/more-about/phd-in-mathematics-at-vu-amsterdam",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full doctorate overview and expanded Research & Collaborations panel read; research proposal/supervisor path and Faculty of Science doctoral embedding."
           }
         ],
         "limitations": [
-          "Mathematics relevant doctoral relationship and engineering inventory incomplete; current business eligibility separate from those gaps."
+          "Current business and Mathematics doctoral pathways verified separately. Wider engineering/technical doctoral inventory remains incomplete; no absence claimed."
         ],
         "coverageComplete": false
       },
       "addedAt": "2026-10-21T21:30:10Z",
-      "updatedAt": "2026-10-21T21:30:10Z"
+      "updatedAt": "2026-10-22T17:42:14Z"
     },
     {
       "id": "wageningen-university",
@@ -88670,14 +89327,26 @@
           "checkedAt": "2026-10-20",
           "outcome": "read",
           "note": "Science research/chair/facility overview checked; no additional named operations or industrial-engineering unit established."
+        },
+        {
+          "url": "https://www.wlu.ca/programs/business-and-economics/graduate/management-phd/index.html",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Full official Management PhD page read in Chrome; Lazaridis school and Laurier parent relationship explicit."
         }
       ],
       "limitations": [
         "Operations and Decision Sciences is a faculty area within Business; not relabeled as a standalone department."
       ],
       "duplicateOf": null,
-      "addedAt": "2026-10-20T11:00:16Z",
-      "updatedAt": "2026-10-22T17:32:28Z",
+      "organisationAliases": [
+        {
+          "name": "Wilfrid Laurier University, Lazaridis School",
+          "sourceUrl": "https://www.wlu.ca/programs/business-and-economics/graduate/management-phd/index.html",
+          "checkedAt": "2026-10-22",
+          "evidence": "The official Laurier Management PhD page identifies its Lazaridis School of Business and Economics. The compound career label denotes that school within Wilfrid Laurier University, not another university; no employment or historical naming dates are inferred."
+        }
+      ],
       "doctoralReview": {
         "status": "verified",
         "checkedAt": "2026-10-22",
@@ -88736,7 +89405,9 @@
           "Source-bounded current programme inventory coverage, not historical/census claim. Existing20October unit dates preserved; programme sources checked22October."
         ],
         "coverageComplete": true
-      }
+      },
+      "addedAt": "2026-10-20T11:00:16Z",
+      "updatedAt": "2026-10-22T17:42:14Z"
     },
     {
       "id": "william-and-mary",

@@ -70,3 +70,5 @@ Use research-handoff/priorities/README.md before choosing a task. One integrator
 ## Stage 1 doctoral register — 21 October 2026
 
 Stage 1 doctoral proposals now follow research-handoff/universities/DOCTORAL-CONTRACT.md. Researchers save programme evidence separately from unit proposals; one integrator updates the existing public doctoral register. Official unit observations alone do not qualify a university for the final PhD-university list.
+
+Organisation-label proposals may add `organisationAliases` to a university review with an exact observed label and independently dated official parent-relationship evidence. Preserve original career strings and prior fact dates. Generic institution-name similarity is not a relationship check; submit uncertain aliases as observations for the sole integrator.
