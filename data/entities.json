@@ -18,7 +18,7 @@
    "phdInstitutions": 434,
    "directoryUniversities": 607,
    "firstEmployers": 493,
-   "withPrograms": 182,
+   "withPrograms": 184,
    "inBothDatabases": 210,
    "directoryOnly": 326,
    "peopleOnly": 224,
@@ -33572,7 +33572,8 @@
    "roles": [
     "phd-institution",
     "directory-university",
-    "first-employer"
+    "first-employer",
+    "program-register"
    ],
    "people": {
     "institutions": [
@@ -33759,7 +33760,30 @@
      }
     ]
    },
-   "programs": [],
+   "programs": [
+    {
+     "id": "iowa-state-university--business-technology-supply-chain-phd",
+     "programName": "Business and Technology PhD",
+     "specialization": "Supply Chain Management",
+     "universityId": "iowa-state-university",
+     "school": "Ivy College of Business",
+     "degree": "PhD",
+     "field": "Supply Chain Management; Logistics; Operations Management",
+     "status": "active",
+     "statusAsOf": "2026-10-22"
+    },
+    {
+     "id": "iowa-state-university--industrial-engineering-phd",
+     "programName": "Doctor of Philosophy in Industrial Engineering",
+     "specialization": null,
+     "universityId": "iowa-state-university",
+     "school": "College of Engineering",
+     "degree": "PhD",
+     "field": "Industrial Engineering; Operations Research",
+     "status": "active",
+     "statusAsOf": "2026-10-22"
+    }
+   ],
    "sources": [
     {
      "url": "https://omlist.edutool.org/phd/by-year.html",
@@ -33780,6 +33804,10 @@
     {
      "url": "data/placements.json",
      "title": "Verified first-job records (people database)"
+    },
+    {
+     "url": "data/doctoral-programs.json",
+     "title": "Historical doctoral program register"
     }
    ],
    "review": {
@@ -33808,12 +33836,22 @@
       "source": "employers",
       "employer": "Iowa State University, Ivy College of Business",
       "match": "wikidata"
+     },
+     {
+      "source": "programs",
+      "program": "iowa-state-university--business-technology-supply-chain-phd",
+      "match": "exact"
+     },
+     {
+      "source": "programs",
+      "program": "iowa-state-university--industrial-engineering-phd",
+      "match": "exact"
      }
     ],
     "conflicts": []
    },
    "addedAt": "2026-10-16T13:49:36Z",
-   "updatedAt": "2026-10-20T08:28:39Z"
+   "updatedAt": "2026-10-22T09:33:14Z"
   },
   {
    "id": "wd:Q1536258",
@@ -93492,7 +93530,8 @@
    ],
    "logo": null,
    "roles": [
-    "directory-university"
+    "directory-university",
+    "program-register"
    ],
    "people": null,
    "directory": {
@@ -93521,19 +93560,41 @@
     ]
    },
    "employer": null,
-   "programs": [],
+   "programs": [
+    {
+     "id": "sogang-university--phd-business-administration-lsom",
+     "programName": "Doctor of Philosophy (Ph.D.) in Business Administration",
+     "specialization": "LSOM (Logistics & Service Operations Management)",
+     "universityId": "sogang-university",
+     "school": "Sogang Business School",
+     "degree": "PhD",
+     "field": "Operations Management; Logistics; Supply Chain Management",
+     "status": "active",
+     "statusAsOf": "2026-10-22"
+    }
+   ],
    "sources": [
     {
      "url": "https://www.operationsacademia.org/universities",
      "title": "Operations Academia universities directory (universities database)"
+    },
+    {
+     "url": "data/doctoral-programs.json",
+     "title": "Historical doctoral program register"
     }
    ],
    "review": {
-    "matches": [],
+    "matches": [
+     {
+      "source": "programs",
+      "program": "sogang-university--phd-business-administration-lsom",
+      "match": "exact"
+     }
+    ],
     "conflicts": []
    },
    "addedAt": "2026-10-16T13:49:36Z",
-   "updatedAt": "2026-10-16T13:49:36Z"
+   "updatedAt": "2026-10-22T09:33:14Z"
   },
   {
    "id": "wd:Q1724577",

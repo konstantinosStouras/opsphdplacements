@@ -3,11 +3,11 @@
   "metadata": {
     "definition": "Individual Chrome reviews of official university names and operations units. The original directory remains in universities.json. Reviewed describes the stated source scope, not an exhaustive current or historical census.",
     "sourceRecords": 665,
-    "attempted": 530,
+    "attempted": 532,
     "reviewed": 439,
-    "partial": 86,
+    "partial": 88,
     "blocked": 5,
-    "pending": 135
+    "pending": 133
   },
   "records": [
     {
@@ -16715,18 +16715,25 @@
             "checkedAt": "2026-10-22",
             "outcome": "read",
             "note": "Read full current Management concentration page: exact Dr. rer. pol. credential, five-year academic doctorate, Research: Dissertation and Viva, doctoral curriculum and research-project areas strategy/innovation/entrepreneurship/HR/learning/design. Current text does not explicitly identify Ops/OR as a doctoral field. Copy inconsistency interview text mentions Finance on Management page; not treated as another programme."
+          },
+          {
+            "url": "https://www.frankfurt-school.de/cms/dam/jcr:b222e102-d8ac-4f6f-8de4-71cd303148ac/Doctoral%20Leaflet.pdf",
+            "checkedAt": "2026-10-22",
+            "outcome": "blocked",
+            "note": "One direct official Chrome navigation failed ERR_BLOCKED_BY_CLIENT. Own tab then showed Chrome message website is blocked/This page has been blocked by Chrome. No reload or alternate access workaround attempted. Official leaflet content remains unread; prior exact research doctorate evidence preserved separately and no qualifying Ops field inferred from search snippet."
           }
         ],
         "limitations": [
           "No qualifying doctoral programme is counted yet; generic Management doctoral availability plus department operations interests is insufficient field-level evidence.",
           "Exact Dr. rer. pol. award and Research: Dissertation and Viva establish academic research-doctorate nature if a qualifying field is subsequently verified; not normalized to PhD.",
           "One focused official search discovered a two-page Doctoral Leaflet PDF, snippet mentioning operations research. It was NOT opened/read; snippet is discovery only. Official URL: https://www.frankfurt-school.de/cms/dam/jcr:b222e102-d8ac-4f6f-8de4-71cd303148ac/Doctoral%20Leaflet.pdf . PDF avoided during this cut because of recent browser-extension blockers; no content verification claimed.",
-          "Historical imported Technology and Operations Management label remains a separate unit identity gap."
+          "Historical imported Technology and Operations Management label remains a separate unit identity gap.",
+          "Continuation 8 follow-up: the previously unread leaflet was now attempted directly and blocked by Chrome. Its content remains unverified; earlier reviewed credential and field limitations are unchanged."
         ],
         "coverageComplete": false
       },
       "addedAt": "2026-10-22T09:11:02Z",
-      "updatedAt": "2026-10-22T09:11:02Z"
+      "updatedAt": "2026-10-22T09:33:14Z"
     },
     {
       "id": "fudan-university",
@@ -19969,6 +19976,286 @@
       },
       "addedAt": "2026-10-21T11:14:34Z",
       "updatedAt": "2026-10-21T11:14:34Z"
+    },
+    {
+      "id": "iowa-state-university",
+      "status": "partial",
+      "canonicalName": "Iowa State University of Science and Technology",
+      "universitySourceUrl": "https://www.ivybusiness.iastate.edu/directory/?LName=&Department=SCM",
+      "checkedAt": "2026-10-22",
+      "reviewer": "Codex in Chrome",
+      "units": [
+        {
+          "id": "iowa-state-university--supply-chain-management",
+          "name": "Department of Supply Chain Management",
+          "school": "Ivy College of Business",
+          "type": "department",
+          "fields": [
+            "supply-chain",
+            "logistics",
+            "operations-management"
+          ],
+          "sourceUrl": "https://www.ivybusiness.iastate.edu/about-ivy/academic-departments/supply-chain-management/",
+          "checkedAt": "2026-10-22",
+          "evidence": "Official current department page explicitly names Department of Supply Chain Management at Ivy College of Business, covering procurement, operations and logistics, and links SCM doctoral specialization."
+        },
+        {
+          "id": "iowa-state-university--industrial-manufacturing-systems-engineering",
+          "name": "Department of Industrial and Manufacturing Systems Engineering",
+          "school": "College of Engineering",
+          "type": "department",
+          "fields": [
+            "industrial-engineering",
+            "operations-research"
+          ],
+          "sourceUrl": "https://www.imse.iastate.edu/graduate-program/degrees-and-programs/phd-degree/",
+          "checkedAt": "2026-10-22",
+          "evidence": "Official departmental PhD page gives exact department name and College of Engineering parent. Doctoral research areas explicitly include Operations Research and Analytics, Advanced Manufacturing, Human Factors and Ergonomics, Systems Engineering and Engineering Management."
+        }
+      ],
+      "decisions": [
+        {
+          "sourceDepartmentId": "iowa-state-university__ivy-college-of-business__is-ba",
+          "disposition": "unresolved",
+          "unitIds": [],
+          "reason": "Official current Information Systems and Business Analytics expansion verified, but doctorate narrative focuses IS/technology; individual OR faculty interests alone are not assigned a separately verified Operations unit remit."
+        },
+        {
+          "sourceDepartmentId": "iowa-state-university__ivy-college-of-business__supply-chain-and-information-systems",
+          "disposition": "unresolved",
+          "unitIds": [],
+          "reason": "Current official inventory names separate SCM and ISBA departments. Explicit historical relationship/rename or split of imported combined Supply Chain and Information Systems label was not read; no duplicate current department invented."
+        },
+        {
+          "sourceDepartmentId": "iowa-state-university__ivy-college-of-business__supply-chain-management",
+          "disposition": "replaced",
+          "unitIds": [
+            "iowa-state-university--supply-chain-management"
+          ],
+          "reason": "Exact current Department of Supply Chain Management independently verified from official department page and selected directory."
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.ivybusiness.iastate.edu/directory/?LName=&Department=SCM",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Read current official SCM-filtered directory: Department of Supply Chain Management, current Ivy school and full university legal name in footer. Incidental people not collected."
+        },
+        {
+          "url": "https://www.ivybusiness.iastate.edu/academics/phd-program/",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Full current Business and Technology PhD overview and six-specialization inventory read: Entrepreneurship, Finance, ISBA, Management, Marketing, SCM."
+        },
+        {
+          "url": "https://www.ivybusiness.iastate.edu/academics/phd-program/supply-chain-management/",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Full current SCM doctoral specialization read: Business and Technology major, logistics/purchasing/transportation/OM scholarly research and faculty-supervised doctoral dissertation."
+        },
+        {
+          "url": "https://www.ivybusiness.iastate.edu/about-ivy/academic-departments/supply-chain-management/",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Full actual Department of Supply Chain Management page read, procurement/operations/logistics remit, college host and explicit SCM PhD link."
+        },
+        {
+          "url": "https://www.ivybusiness.iastate.edu/academics/phd-program/information-systems-and-business-analytics/",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Full current ISBA doctoral specialization read: IS/technology research focus, formal name expanded; individual faculty list mentions OR/optimization but not converted into a formal Operations doctoral field."
+        },
+        {
+          "url": "https://www.imse.iastate.edu/graduate-program/degrees-and-programs/phd-degree/",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Full exact Doctor of Philosophy in Industrial Engineering page read, dissertation requirement, department host and all four doctoral research programmes including explicit Operations Research and Analytics."
+        },
+        {
+          "url": "https://www.imse.iastate.edu/graduate-program/degrees-and-programs/",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Read full IMSE graduate inventory: IE PhD only doctorate; Systems Engineering and Engineering Management listed as MEng, not separate PhDs."
+        },
+        {
+          "url": "https://www.engineering.iastate.edu/",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Read current College of Engineering entry and academic navigation."
+        },
+        {
+          "url": "https://www.engineering.iastate.edu/graduate-studies/",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Read current engineering graduate studies gateway and observed complete degree-programme link."
+        },
+        {
+          "url": "https://www.engineering.iastate.edu/graduate-studies/degree-programs/",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Read engineering graduate inventory with BOTH Department and Interdepartmental disclosures expanded: eight departmental hosts and ten interdisciplinary options; Systems Engineering explicitly MEng only. Other broad department doctoral fields not individually exhausted."
+        },
+        {
+          "url": "https://www.abe.iastate.edu/graduate-students/",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Read current ABE graduate inventory: Agricultural and Biosystems Engineering and Industrial and Agricultural Technology both offer PhD. Intro says Agricultural and Biological Engineering but programme-specific prose says Agricultural and Biosystems; no rename inferred."
+        },
+        {
+          "url": "https://www.abe.iastate.edu/graduate-students/industrial-and-agricultural-technology/",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Full current exact Doctor of Philosophy in Industrial and Agricultural Technology page read: five research areas including Industrial Systems Management and Manufacturing Technology. Exact credential established but qualifying Ops/IE field mapping remains unresolved."
+        },
+        {
+          "url": "https://www.abe.iastate.edu/research/",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Read all five current ABE research-focus headings and manufacturing-systems link."
+        },
+        {
+          "url": "https://www.abe.iastate.edu/research/advanced-machinery-enigineering-and-manufacturing-systems/",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Full Advanced Machinery Engineering and Manufacturing Systems group description read. Chief remit machinery, automation, system modelling and production agriculture; no automatic Industrial Technology-to-IE/OR normalization."
+        }
+      ],
+      "limitations": [
+        "Common current brand Iowa State University and official full footer name Iowa State University of Science and Technology refer to the same opened institutional pages; full official footer name retained.",
+        "Current opened business pages use Ivy College of Business; imported longer endowment form is not independently substituted as a newly checked fact.",
+        "Imported combined Supply Chain and Information Systems historical relationship remains unresolved; Industrial and Agricultural Technology doctoral scope is separately unresolved, not silently converted to Industrial Engineering."
+      ],
+      "duplicateOf": null,
+      "doctoralReview": {
+        "status": "verified",
+        "checkedAt": "2026-10-22",
+        "programmeIds": [
+          "iowa-state-university--business-technology-supply-chain-phd",
+          "iowa-state-university--industrial-engineering-phd"
+        ],
+        "branches": [
+          {
+            "branch": "business",
+            "reviewState": "checked",
+            "conclusion": "Full current Business and Technology PhD six-specialization inventory read, SCM doctoral scope independently verified. Full ISBA doctorate page checked; faculty OR/optimization interests alone do not establish a second Operations doctoral specialization.",
+            "sourceUrls": [
+              "https://www.ivybusiness.iastate.edu/academics/phd-program/",
+              "https://www.ivybusiness.iastate.edu/academics/phd-program/supply-chain-management/",
+              "https://www.ivybusiness.iastate.edu/about-ivy/academic-departments/supply-chain-management/",
+              "https://www.ivybusiness.iastate.edu/academics/phd-program/information-systems-and-business-analytics/"
+            ]
+          },
+          {
+            "branch": "engineering",
+            "reviewState": "partial",
+            "conclusion": "Industrial Engineering PhD and all four doctoral research programmes explicitly verified. Full IMSE graduate inventory distinguishes MEng Systems/Engineering Management from PhD. College graduate disclosures expanded for eight departments and ten interdisciplinary options. Additional Industrial and Agricultural Technology PhD has explicit Industrial Systems Management/Manufacturing Technology areas, but exact qualifying Ops/IE field mapping remains unresolved; broader engineering fields not all individually exhausted.",
+            "sourceUrls": [
+              "https://www.imse.iastate.edu/graduate-program/degrees-and-programs/phd-degree/",
+              "https://www.imse.iastate.edu/graduate-program/degrees-and-programs/",
+              "https://www.engineering.iastate.edu/graduate-studies/degree-programs/",
+              "https://www.abe.iastate.edu/graduate-students/",
+              "https://www.abe.iastate.edu/graduate-students/industrial-and-agricultural-technology/",
+              "https://www.abe.iastate.edu/research/",
+              "https://www.abe.iastate.edu/research/advanced-machinery-enigineering-and-manufacturing-systems/"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://www.ivybusiness.iastate.edu/directory/?LName=&Department=SCM",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Read current official SCM-filtered directory: Department of Supply Chain Management, current Ivy school and full university legal name in footer. Incidental people not collected."
+          },
+          {
+            "url": "https://www.ivybusiness.iastate.edu/academics/phd-program/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full current Business and Technology PhD overview and six-specialization inventory read: Entrepreneurship, Finance, ISBA, Management, Marketing, SCM."
+          },
+          {
+            "url": "https://www.ivybusiness.iastate.edu/academics/phd-program/supply-chain-management/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full current SCM doctoral specialization read: Business and Technology major, logistics/purchasing/transportation/OM scholarly research and faculty-supervised doctoral dissertation."
+          },
+          {
+            "url": "https://www.ivybusiness.iastate.edu/about-ivy/academic-departments/supply-chain-management/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full actual Department of Supply Chain Management page read, procurement/operations/logistics remit, college host and explicit SCM PhD link."
+          },
+          {
+            "url": "https://www.ivybusiness.iastate.edu/academics/phd-program/information-systems-and-business-analytics/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full current ISBA doctoral specialization read: IS/technology research focus, formal name expanded; individual faculty list mentions OR/optimization but not converted into a formal Operations doctoral field."
+          },
+          {
+            "url": "https://www.imse.iastate.edu/graduate-program/degrees-and-programs/phd-degree/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full exact Doctor of Philosophy in Industrial Engineering page read, dissertation requirement, department host and all four doctoral research programmes including explicit Operations Research and Analytics."
+          },
+          {
+            "url": "https://www.imse.iastate.edu/graduate-program/degrees-and-programs/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Read full IMSE graduate inventory: IE PhD only doctorate; Systems Engineering and Engineering Management listed as MEng, not separate PhDs."
+          },
+          {
+            "url": "https://www.engineering.iastate.edu/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Read current College of Engineering entry and academic navigation."
+          },
+          {
+            "url": "https://www.engineering.iastate.edu/graduate-studies/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Read current engineering graduate studies gateway and observed complete degree-programme link."
+          },
+          {
+            "url": "https://www.engineering.iastate.edu/graduate-studies/degree-programs/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Read engineering graduate inventory with BOTH Department and Interdepartmental disclosures expanded: eight departmental hosts and ten interdisciplinary options; Systems Engineering explicitly MEng only. Other broad department doctoral fields not individually exhausted."
+          },
+          {
+            "url": "https://www.abe.iastate.edu/graduate-students/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Read current ABE graduate inventory: Agricultural and Biosystems Engineering and Industrial and Agricultural Technology both offer PhD. Intro says Agricultural and Biological Engineering but programme-specific prose says Agricultural and Biosystems; no rename inferred."
+          },
+          {
+            "url": "https://www.abe.iastate.edu/graduate-students/industrial-and-agricultural-technology/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full current exact Doctor of Philosophy in Industrial and Agricultural Technology page read: five research areas including Industrial Systems Management and Manufacturing Technology. Exact credential established but qualifying Ops/IE field mapping remains unresolved."
+          },
+          {
+            "url": "https://www.abe.iastate.edu/research/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Read all five current ABE research-focus headings and manufacturing-systems link."
+          },
+          {
+            "url": "https://www.abe.iastate.edu/research/advanced-machinery-enigineering-and-manufacturing-systems/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full Advanced Machinery Engineering and Manufacturing Systems group description read. Chief remit machinery, automation, system modelling and production agriculture; no automatic Industrial Technology-to-IE/OR normalization."
+          }
+        ],
+        "limitations": [
+          "Industrial and Agricultural Technology PhD is an evidenced exact academic credential, but not automatically equivalent to Industrial Engineering or Operations Research. Candidate research-area field mapping remains unresolved, so not counted as a third qualifying route.",
+          "Other non-IMSE engineering doctoral scopes remain incompletely checked; coverageComplete false.",
+          "Source unit identity history, individual graduate enumeration and career research remain separate; no Stage2 work performed."
+        ],
+        "coverageComplete": false
+      },
+      "addedAt": "2026-10-22T09:33:14Z",
+      "updatedAt": "2026-10-22T09:33:14Z"
     },
     {
       "id": "johns-hopkins-university",
@@ -23518,7 +23805,66 @@
       ],
       "duplicateOf": null,
       "addedAt": "2026-10-20T09:43:28Z",
-      "updatedAt": "2026-10-20T09:43:28Z"
+      "updatedAt": "2026-10-22T09:33:14Z",
+      "doctoralReview": {
+        "status": "no-qualifying-programme-verified",
+        "checkedAt": "2026-10-22",
+        "programmeIds": [],
+        "branches": [
+          {
+            "branch": "business",
+            "reviewState": "checked",
+            "sourceUrls": [
+              "https://mainemaritime.edu/academics/",
+              "https://mainemaritime.edu/international-business-and-logistics/graduate-programs/",
+              "https://mainemaritime.edu/graduate-catalog/",
+              "https://mainemaritime.edu/graduate-catalog/graduate-program/"
+            ],
+            "conclusion": "Current academy graduate entry point and 2026–2027 graduate catalogue offer MSc Maritime Management with International Logistics Management and Global Logistics/Vessel Operations concentrations. Both are masters-level; no qualifying doctorate listed."
+          },
+          {
+            "branch": "engineering",
+            "reviewState": "checked",
+            "sourceUrls": [
+              "https://mainemaritime.edu/academics/",
+              "https://mainemaritime.edu/international-business-and-logistics/graduate-programs/",
+              "https://mainemaritime.edu/graduate-catalog/"
+            ],
+            "conclusion": "Institution-wide academic navigation describes engineering, marine science, transportation and logistics; its Graduate Programs link leads to the MSc inventory. No engineering doctoral award appears in the current published graduate provision."
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://mainemaritime.edu/academics/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Academy-wide academic scope and Graduate Programs navigation read; engineering, business, marine science and transportation distinguished."
+          },
+          {
+            "url": "https://mainemaritime.edu/international-business-and-logistics/graduate-programs/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Live graduate programme list has MSc Maritime Management, two concentrations, current 2026/2027 application dates. No doctoral programme listed."
+          },
+          {
+            "url": "https://mainemaritime.edu/graduate-catalog/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Official catalogue states 2026–2027 edition current as of 1 August 2026 with online updates during academic year; masters degree scope explicit."
+          },
+          {
+            "url": "https://mainemaritime.edu/graduate-catalog/graduate-program/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full current MSc programme requirements and two concentrations read; International Logistics Management 30 graduate credits, hybrid Global Logistics/Vessel Operations includes graduate plus undergraduate requirements. No doctorate inferred from logistics topic."
+          }
+        ],
+        "limitations": [
+          "Current published graduate scope only; no claim of historical absence. Logistics education and engineering activity do not themselves establish a doctoral programme.",
+          "No personal graduate information or professional contact details saved."
+        ],
+        "coverageComplete": true
+      }
     },
     {
       "id": "marian-university",
@@ -24636,7 +24982,43 @@
       ],
       "duplicateOf": null,
       "addedAt": "2026-10-20T09:53:00Z",
-      "updatedAt": "2026-10-20T09:53:00Z"
+      "updatedAt": "2026-10-22T09:33:14Z",
+      "doctoralReview": {
+        "status": "partial",
+        "checkedAt": "2026-10-22",
+        "programmeIds": [],
+        "branches": [
+          {
+            "branch": "business",
+            "reviewState": "partial",
+            "sourceUrls": [
+              "https://www.mun.ca/business/graduate/phd-in-management/"
+            ],
+            "conclusion": "Official programme destination currently replaced by university emergency maintenance notice. Programme credentials and specializations not read."
+          },
+          {
+            "branch": "engineering",
+            "reviewState": "partial",
+            "sourceUrls": [
+              "https://www.mun.ca/business/graduate/phd-in-management/"
+            ],
+            "conclusion": "Wider engineering inventory not reviewed during university site maintenance. No route inferred from search snippets or titles."
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://www.mun.ca/business/graduate/phd-in-management/",
+            "checkedAt": "2026-10-22",
+            "outcome": "blocked",
+            "note": "Individually opened official Management PhD programme destination in Chrome. University notice states some websites and online services temporarily offline as precaution after global cybersecurity vulnerability, with emergency maintenance and security updates ongoing. Programme body unavailable; no workaround or alternative-path retries attempted."
+          }
+        ],
+        "limitations": [
+          "Search results are discovery only and were not promoted to reviewed facts. Exact doctoral provision and both branch inventories remain unresolved.",
+          "Preserve any prior university/unit observations, programme facts and their original dates; this is an access limitation, not evidence of programme closure."
+        ],
+        "coverageComplete": false
+      }
     },
     {
       "id": "mercy-university",
@@ -38401,6 +38783,168 @@
       "updatedAt": "2026-10-21T21:30:10Z"
     },
     {
+      "id": "sogang-university",
+      "status": "partial",
+      "canonicalName": "Sogang University",
+      "universitySourceUrl": "https://www.sogang.ac.kr/en/guide/graduate-programs",
+      "checkedAt": "2026-10-22",
+      "reviewer": "Codex in Chrome",
+      "duplicateOf": null,
+      "units": [
+        {
+          "id": "sogang-university--business-administration",
+          "name": "Department of Business Administration",
+          "type": "department",
+          "school": "Sogang Business School",
+          "fields": [
+            "operations-management",
+            "logistics",
+            "supply-chain"
+          ],
+          "sourceUrl": "https://sbs.sogang.ac.kr/isbs/2006/subview.do",
+          "checkedAt": "2026-10-22",
+          "evidence": "Official Business School graduate overview names the Department of Business Administration and its LSOM doctoral concentration; complete graduate curriculum explicitly expands LSOM as Logistics & Service Operations Management."
+        }
+      ],
+      "decisions": [
+        {
+          "sourceDepartmentId": "sogang-university",
+          "disposition": "not-a-unit",
+          "unitIds": [],
+          "reason": "Imported bare university placeholder is not a department. Actual Business Administration department is verified separately."
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://sbs.sogang.ac.kr/isbs/2006/subview.do",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Graduate Business MS/PhD overview explicitly names Department of Business Administration, academic doctoral concentrations including LSOM, and separate Service Management EIC major."
+        },
+        {
+          "url": "https://sbs.sogang.ac.kr/isbs/2049/subview.do",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Complete eight-concentration graduate curriculum read. LSOM exact expansion Logistics & Service Operations Management; production/service processes, logistics/distribution and global SCM. Business Analytics generic decision methods not automatically classified as a separate OR doctoral route."
+        },
+        {
+          "url": "https://sbs.sogang.ac.kr/isbs/2050/subview.do",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Exact Doctor of Philosophy (PhD) in Business Administration award, LSOM concentration choice, 36 credits, independent research, field/qualifying exams, dissertation defence and publication requirements."
+        },
+        {
+          "url": "https://sbs.sogang.ac.kr/isbs/2052/subview.do",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Current Service Management EIC overview states separate part-time PhD, research dissertation and service process productivity focus; Service Operations Management in core curriculum. Exact formal operations research field and relationship to regular LSOM not established; no extra route inferred from coursework."
+        },
+        {
+          "url": "https://www.sogang.ac.kr/en/guide/graduate-programs",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "University official English graduate overview establishes Sogang University identity, Seoul address, graduate PhD provision and professional graduate schools including MOT."
+        },
+        {
+          "url": "https://esgmot.sogang.ac.kr/esgmot/engmotcoop.html",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Exact PhD in Management of Technology, cooperation course operated by Sogang Graduate School, research credits and engineering/MOT subjects. No explicit OR/Ops/IE/logistics doctoral field established from this programme page."
+        },
+        {
+          "url": "https://gradsch.sogang.ac.kr/gradsch/gradsch02_2.html",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Complete current general graduate department inventory read in Korean: business and Service Management; mathematics/sciences; engineering electronics, chemical/biomolecular, computing, mechanical, semiconductor; interdisciplinary MOT, AI and others. Wider doctoral research fields not exhausted."
+        }
+      ],
+      "limitations": [
+        "Engineering and interdisciplinary department inventory read, but full current relevant unit/programme scope remains incomplete.",
+        "LSOM is a doctoral concentration; no standalone LSOM administrative department invented. Service Management EIC and MOT provision retained as separate scope questions."
+      ],
+      "doctoralReview": {
+        "status": "verified",
+        "checkedAt": "2026-10-22",
+        "programmeIds": [
+          "sogang-university--phd-business-administration-lsom"
+        ],
+        "branches": [
+          {
+            "branch": "business",
+            "reviewState": "partial",
+            "sourceUrls": [
+              "https://sbs.sogang.ac.kr/isbs/2006/subview.do",
+              "https://sbs.sogang.ac.kr/isbs/2049/subview.do",
+              "https://sbs.sogang.ac.kr/isbs/2050/subview.do",
+              "https://sbs.sogang.ac.kr/isbs/2052/subview.do"
+            ],
+            "conclusion": "Regular Business Administration PhD LSOM is explicit. Separate Service Management EIC PhD has service operations coursework and productivity focus, but formal qualifying field and overlap with regular LSOM need further review. No additional route inferred solely from course titles."
+          },
+          {
+            "branch": "engineering",
+            "reviewState": "partial",
+            "sourceUrls": [
+              "https://gradsch.sogang.ac.kr/gradsch/gradsch02_2.html",
+              "https://esgmot.sogang.ac.kr/esgmot/engmotcoop.html",
+              "https://www.sogang.ac.kr/en/guide/graduate-programs"
+            ],
+            "conclusion": "Complete department and graduate-school entry inventories read. Exact MOT PhD is explicit but its relevant Operations research field remains unverified; broader engineering doctoral research inventories need examination."
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://sbs.sogang.ac.kr/isbs/2006/subview.do",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Graduate Business MS/PhD overview explicitly names Department of Business Administration, academic doctoral concentrations including LSOM, and separate Service Management EIC major."
+          },
+          {
+            "url": "https://sbs.sogang.ac.kr/isbs/2049/subview.do",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Complete eight-concentration graduate curriculum read. LSOM exact expansion Logistics & Service Operations Management; production/service processes, logistics/distribution and global SCM. Business Analytics generic decision methods not automatically classified as a separate OR doctoral route."
+          },
+          {
+            "url": "https://sbs.sogang.ac.kr/isbs/2050/subview.do",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Exact Doctor of Philosophy (PhD) in Business Administration award, LSOM concentration choice, 36 credits, independent research, field/qualifying exams, dissertation defence and publication requirements."
+          },
+          {
+            "url": "https://sbs.sogang.ac.kr/isbs/2052/subview.do",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Current Service Management EIC overview states separate part-time PhD, research dissertation and service process productivity focus; Service Operations Management in core curriculum. Exact formal operations research field and relationship to regular LSOM not established; no extra route inferred from coursework."
+          },
+          {
+            "url": "https://www.sogang.ac.kr/en/guide/graduate-programs",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "University official English graduate overview establishes Sogang University identity, Seoul address, graduate PhD provision and professional graduate schools including MOT."
+          },
+          {
+            "url": "https://esgmot.sogang.ac.kr/esgmot/engmotcoop.html",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Exact PhD in Management of Technology, cooperation course operated by Sogang Graduate School, research credits and engineering/MOT subjects. No explicit OR/Ops/IE/logistics doctoral field established from this programme page."
+          },
+          {
+            "url": "https://gradsch.sogang.ac.kr/gradsch/gradsch02_2.html",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Complete current general graduate department inventory read in Korean: business and Service Management; mathematics/sciences; engineering electronics, chemical/biomolecular, computing, mechanical, semiconductor; interdisciplinary MOT, AI and others. Wider doctoral research fields not exhausted."
+          }
+        ],
+        "limitations": [
+          "Engineering and interdisciplinary department inventory read, but full current relevant unit/programme scope remains incomplete.",
+          "LSOM is a doctoral concentration; no standalone LSOM administrative department invented. Service Management EIC and MOT provision retained as separate scope questions."
+        ],
+        "coverageComplete": false
+      },
+      "addedAt": "2026-10-22T09:33:14Z",
+      "updatedAt": "2026-10-22T09:33:14Z"
+    },
+    {
       "id": "southern-methodist-university",
       "status": "partial",
       "canonicalName": "Southern Methodist University",
@@ -45086,10 +45630,10 @@
       "limitations": [],
       "duplicateOf": null,
       "addedAt": "2026-10-20T09:30:49Z",
-      "updatedAt": "2026-10-21T20:23:18Z",
+      "updatedAt": "2026-10-22T09:33:14Z",
       "doctoralReview": {
         "status": "verified",
-        "checkedAt": "2026-10-21",
+        "checkedAt": "2026-10-22",
         "programmeIds": [
           "universite-laval--mechanical-engineering-industrial-phd",
           "universite-laval--operations-decision-systems-phd"
@@ -45098,18 +45642,37 @@
           {
             "branch": "business",
             "reviewState": "checked",
-            "conclusion": "Official operations/decision systems PhD route read in full.",
+            "conclusion": "Full business doctoral inventory and all seven named specializations checked; existing Operations and Decision Systems route retained, no extra award assigned.",
             "sourceUrls": [
               "https://www.ulaval.ca/etudes/programmes/doctorat-en-sciences-de-ladministration-operations-et-systemes-de-decision",
-              "https://www.fsa.ulaval.ca/faculte/departements-ecole/osd/"
+              "https://www.fsa.ulaval.ca/faculte/departements-ecole/osd/",
+              "https://www.fsa.ulaval.ca/etudier/programmes/",
+              "https://www.fsa.ulaval.ca/etudier/programmes/doctorat/"
             ]
           },
           {
             "branch": "engineering",
             "reviewState": "checked",
-            "conclusion": "Official mechanical doctorate explicitly offers industrial engineering concentration; combined department host directly named.",
+            "conclusion": "Full science/engineering inventory across 32 disciplines read; Industrial Engineering points to already verified Mechanical Engineering doctorate, not separate Industrial Engineering award.",
             "sourceUrls": [
-              "https://www.ulaval.ca/etudes/programmes/doctorat-en-genie-mecanique"
+              "https://www.ulaval.ca/etudes/programmes/doctorat-en-genie-mecanique",
+              "https://www.fsg.ulaval.ca/etudes/programmes-detudes"
+            ]
+          },
+          {
+            "branch": "mathematics",
+            "reviewState": "checked",
+            "conclusion": "Mathematics doctorate overview research scope read: algebra, analysis, modelling and computational/statistical research chairs; no explicit additional OR doctoral route established.",
+            "sourceUrls": [
+              "https://www.fsg.ulaval.ca/etudes/programmes-detudes/doctorat-en-mathematiques"
+            ]
+          },
+          {
+            "branch": "other",
+            "reviewState": "partial",
+            "conclusion": "Computing doctorate research includes combinatorial optimization but field qualification as OR remains unresolved; no route added from method wording alone.",
+            "sourceUrls": [
+              "https://www.fsg.ulaval.ca/etudes/programmes-detudes/doctorat-en-informatique"
             ]
           }
         ],
@@ -45131,10 +45694,41 @@
             "checkedAt": "2026-10-20",
             "outcome": "read",
             "note": "Prior actually opened official department/parent/remit evidence reused with original date from published unit review."
+          },
+          {
+            "url": "https://www.fsg.ulaval.ca/etudes/programmes-detudes",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full current 32-discipline science/engineering inventory read in Chrome. Industrial Engineering explicitly points to existing Mechanical Engineering doctorate, not a separate award."
+          },
+          {
+            "url": "https://www.fsg.ulaval.ca/etudes/programmes-detudes/doctorat-en-mathematiques",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full mathematics doctorate overview read: algebra, analysis, modelling and research chairs; no explicit OR doctoral field."
+          },
+          {
+            "url": "https://www.fsa.ulaval.ca/etudier/programmes/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full business programme inventory read: one research doctorate family."
+          },
+          {
+            "url": "https://www.fsa.ulaval.ca/etudier/programmes/doctorat/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full seven-specialization business PhD inventory read, including existing operations/decision-systems route. Incidental testimonials not collected as graduate records."
+          },
+          {
+            "url": "https://www.fsg.ulaval.ca/etudes/programmes-detudes/doctorat-en-informatique",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full computing doctorate overview read: combinatorial optimization, complexity, security, robotics, Industry4.0 and AI; no extra OR degree inferred."
           }
         ],
         "limitations": [
-          "Relevant routes in both branches verified; comprehensive wider doctoral inventory not independently exhausted. No historic start year or complete university programme census claimed."
+          "Complete current business doctoral and science/engineering programme inventories now read; existing two relevant route facts and original dates preserved.",
+          "Computing doctorate explicitly includes combinatorial optimization among research topics, but no explicit OR/industrial/operations field label on opened page; potential additional route remains field adjudication, not automatically assigned. No doctorate added from generic optimization."
         ],
         "coverageComplete": false
       }
@@ -49622,10 +50216,10 @@
       ],
       "canonicalName": "University of Cincinnati",
       "addedAt": "2026-10-20T10:24:43Z",
-      "updatedAt": "2026-10-21T11:51:57Z",
+      "updatedAt": "2026-10-22T09:33:14Z",
       "doctoralReview": {
         "status": "verified",
-        "checkedAt": "2026-10-21",
+        "checkedAt": "2026-10-22",
         "programmeIds": [
           "university-of-cincinnati--obais-phd-operations-management"
         ],
@@ -49640,11 +50234,14 @@
           },
           {
             "branch": "engineering",
-            "reviewState": "partial",
-            "conclusion": "Current ISE programme lists onlyBS/MEng. Parent Mechanical/Materials/Industrial department supports doctoral assistantships but exact broader doctoral degree route to relevant Industrial/OR research not established; no extra doctorate inferred.",
+            "reviewState": "checked",
+            "conclusion": "Full current college graduate and combined-department degree inventories checked: ISE only MEng; Mechanical/Materials doctoral degrees exist. Exact Mechanical PhD seven research foci read without explicit Ops/OR/IE pathway, so no extra qualifying doctorate inferred from umbrella department or advanced manufacturing title.",
             "sourceUrls": [
               "https://www.ceas.uc.edu/academics/departments/mechanical-materials-engineering/industrial-systems-engineering.html",
-              "https://www.ceas.uc.edu/academics/departments/mechanical-materials-engineering.html"
+              "https://www.ceas.uc.edu/academics/departments/mechanical-materials-engineering.html",
+              "https://www.ceas.uc.edu/academics/departments/mechanical-materials-engineering/degrees-programs.html",
+              "https://www.ceas.uc.edu/academics/departments/mechanical-materials-engineering/degrees-programs/mechanical-engineering-phd.html",
+              "https://www.ceas.uc.edu/academics/degrees-programs/graduate.html"
             ]
           }
         ],
@@ -49666,10 +50263,35 @@
             "checkedAt": "2026-10-21",
             "outcome": "read",
             "note": "Full current parent departmental overview read,Industrial programme and generic PhD assistantship heading,not exact relevant degree mapping."
+          },
+          {
+            "url": "https://www.ceas.uc.edu/academics/departments/mechanical-materials-engineering/industrial-systems-engineering.html",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full current ISE programme read: BS/MEng only, no doctoral degree assigned."
+          },
+          {
+            "url": "https://www.ceas.uc.edu/academics/departments/mechanical-materials-engineering/degrees-programs.html",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full current department degree inventory read, ISE MEng versus Mechanical/Materials PhDs."
+          },
+          {
+            "url": "https://www.ceas.uc.edu/academics/departments/mechanical-materials-engineering/degrees-programs/mechanical-engineering-phd.html",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full Mechanical Engineering PhD requirements and seven research foci read; advanced manufacturing, reliability, structural dynamics and related engineering fields do not explicitly establish Ops/OR/IE doctoral pathway."
+          },
+          {
+            "url": "https://www.ceas.uc.edu/academics/degrees-programs/graduate.html",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full current college graduate inventory read: ten doctoral subject listings, Industrial/Systems Engineering only MEng. Broad engineering degrees not automatically relevant."
           }
         ],
         "limitations": [
-          "Relevant route through parent engineering doctorate remains unresolved; ISE BS/MEng does not establish Industrial Engineering PhD."
+          "Prior broad engineering assistantship ambiguity narrowed by complete current degree inventory and exact Mechanical Engineering PhD field page: no Industrial/Systems Engineering PhD listed; no extra eligible doctorate assigned. Wider mathematical/other relevant field inventory not exhausted.",
+          "Mechanical programme body uses older Mechanical and Materials Engineering name while breadcrumb uses Mechanical, Materials, and Industrial Engineering. No unsupported rename timing or new unit asserted."
         ],
         "coverageComplete": false
       }
@@ -51047,10 +51669,10 @@
       ],
       "duplicateOf": null,
       "addedAt": "2026-10-20T09:34:49Z",
-      "updatedAt": "2026-10-21T20:23:18Z",
+      "updatedAt": "2026-10-22T09:33:14Z",
       "doctoralReview": {
         "status": "verified",
-        "checkedAt": "2026-10-21",
+        "checkedAt": "2026-10-22",
         "programmeIds": [
           "university-of-houston--industrial-engineering-phd",
           "university-of-houston--supply-chain-management-phd"
@@ -51068,11 +51690,15 @@
           {
             "branch": "engineering",
             "reviewState": "partial",
-            "conclusion": "Exact IE doctorate and full ISE degree inventory verified; broader college field list read but other engineering degree detail cards not reviewed.",
+            "conclusion": "Exact IE doctorate and full ISE degree inventory verified; broader college field list read but other engineering degree detail cards not reviewed. Follow-up 22 October: full degree-level and interdisciplinary inventories now read, Engineering Management confirmed master’s-only on its page, and Civil PhD field navigation reviewed. Wider engineering doctoral research-field checks remain incomplete; Mechanical PhD source hit a certificate error.",
             "sourceUrls": [
               "https://www.ie.uh.edu/graduate/degree-programs",
               "https://www.ie.uh.edu/graduate/degree-programs/phd",
-              "https://www.egr.uh.edu/academics/graduate-programs"
+              "https://www.egr.uh.edu/academics/graduate-programs",
+              "https://www.ise.uh.edu/graduate/degree-programs/memgmt",
+              "https://www.egr.uh.edu/academics/graduate-programs/interdisciplinary-programs",
+              "https://www.egr.uh.edu/academics/graduate-programs/programs",
+              "https://cee.uh.edu/programs/civil-graduate/doctor-philosophy-civil-engineering"
             ]
           }
         ],
@@ -51106,10 +51732,46 @@
             "checkedAt": "2026-10-21",
             "outcome": "read",
             "note": "Read full college graduate field inventory; additional degree-detail cards were not successfully opened, leaving broader engineering scope incomplete."
+          },
+          {
+            "url": "https://www.egr.uh.edu/academics/graduate-programs",
+            "outcome": "read",
+            "note": "Read entire graduate field inventory; expanded Engineering Management card links to its graduate degree page.",
+            "checkedAt": "2026-10-22"
+          },
+          {
+            "url": "https://www.ise.uh.edu/graduate/degree-programs/memgmt",
+            "outcome": "read",
+            "note": "Read full redirected official page. Engineering Management is a 30-credit online master’s degree in Industrial and Systems Engineering; operations courses and research descriptions do not establish an additional doctorate.",
+            "checkedAt": "2026-10-22"
+          },
+          {
+            "url": "https://www.egr.uh.edu/academics/graduate-programs/interdisciplinary-programs",
+            "outcome": "read",
+            "note": "Read complete interdisciplinary inventory: computer engineering/computer-controlled systems, physical/environmental/materials fields, and master’s-linked Engineering Data Science, MEng, Space Architecture and Subsea offerings.",
+            "checkedAt": "2026-10-22"
+          },
+          {
+            "url": "https://www.egr.uh.edu/academics/graduate-programs/programs",
+            "outcome": "read",
+            "note": "Read complete degree-level inventory. Eleven named engineering PhD fields; Engineering Data Science, Supply Chain and Logistics Technology, Technology Project Management and other technology programmes appear at master’s level. No additional doctorate inferred from these offerings.",
+            "checkedAt": "2026-10-22"
+          },
+          {
+            "url": "https://cee.uh.edu/programs/civil-graduate/doctor-philosophy-civil-engineering",
+            "outcome": "read",
+            "note": "Read complete redirected Civil Engineering PhD requirements and field navigation: geotechnical/materials, structural, water resources/fluid mechanics. No explicit Operations/OR/logistics doctoral field established on this page.",
+            "checkedAt": "2026-10-22"
+          },
+          {
+            "url": "https://mae.uh.edu/graduate-program/phd",
+            "outcome": "blocked",
+            "note": "Official college degree inventory link stopped at certificate common-name error. No bypass and no programme content read.",
+            "checkedAt": "2026-10-22"
           }
         ],
         "limitations": [
-          "Broader engineering programme details remain incomplete; no claim that two verified routes exhaust every interdisciplinary research option."
+          "Two existing verified routes retained unchanged. Full college degree-level inventory checked; broader doctoral research-field coverage remains incomplete. Mechanical PhD source blocked by certificate error, without bypass. No additional PhD inferred from engineering-management, data-science, supply-chain/logistics or project-management master’s offerings."
         ],
         "coverageComplete": false
       }
@@ -65678,7 +66340,61 @@
       ],
       "duplicateOf": null,
       "addedAt": "2026-10-20T10:24:43Z",
-      "updatedAt": "2026-10-20T10:24:43Z"
+      "updatedAt": "2026-10-22T09:33:14Z",
+      "doctoralReview": {
+        "status": "no-qualifying-programme-verified",
+        "checkedAt": "2026-10-22",
+        "programmeIds": [],
+        "branches": [
+          {
+            "branch": "business",
+            "reviewState": "checked",
+            "conclusion": "Full 2026–2027 graduate programme inventory lists business at MBA and Business Analytics MS level; no business doctorate in this current catalogue. Relevant undergraduate supply-chain provision does not establish doctoral eligibility.",
+            "sourceUrls": [
+              "https://catalog.ysu.edu/graduate/graduate-programs/"
+            ]
+          },
+          {
+            "branch": "engineering",
+            "reviewState": "checked",
+            "conclusion": "Full current graduate inventory lists Materials Science and Engineering as the sole engineering PhD. Its overview and degree requirements concern physical materials, instrumentation, structure/properties, thermodynamics and kinetics; no explicit Ops/OR/IE field established. Engineering and Engineering Management offerings otherwise appear at master's level. No qualifying route verified in this stated current catalogue scope.",
+            "sourceUrls": [
+              "https://catalog.ysu.edu/graduate/graduate-programs/",
+              "https://catalog.ysu.edu/graduate/graduate-programs/doctor-philosophy-materials-science-engineering/"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://catalog.ysu.edu/graduate/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Graduate catalogue explicitly 2026–2027, effective August 2026, Youngstown State University."
+          },
+          {
+            "url": "https://catalog.ysu.edu/graduate/graduatedegrees/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Complete degree-level list read. Institution offers doctorates, but this generic list alone does not establish relevant fields."
+          },
+          {
+            "url": "https://catalog.ysu.edu/graduate/graduate-programs/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Complete current graduate inventory read: five doctoral programmes in education, nursing, health sciences, materials science/engineering and physical therapy. Business, analytics, mathematics and other engineering provision listed at master's level."
+          },
+          {
+            "url": "https://catalog.ysu.edu/graduate/graduate-programs/doctor-philosophy-materials-science-engineering/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Opened overview and Degree Requirements tab, read both fully. Exact Materials Science and Engineering PhD, physical materials analytical/research focus and core structure, properties, thermodynamics, kinetics, dissertation requirements. Industrial research scientist career wording is not Industrial Engineering doctoral evidence."
+          }
+        ],
+        "limitations": [
+          "Conclusion is limited to the current 2026–2027 institutional programme inventory and the potentially relevant engineering PhD detail; it does not assert historical absence or exclude future provision."
+        ],
+        "coverageComplete": true
+      }
     },
     {
       "id": "zhejiang-university",
