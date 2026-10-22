@@ -54,3 +54,10 @@ export function organisationRows(entities,universities,reviews,programs,faculty,
 
  return rows;
 }
+
+// Canonical display names only for unambiguous, already grouped identities.
+export function organisationNameResolver(rows){
+ const targets=new Map();
+ for(const r of rows)for(const name of r.names){const k=fold(name),set=targets.get(k)||new Set();set.add(r);targets.set(k,set);}
+ return name=>{const candidates=targets.get(fold(name));return candidates?.size===1?[...candidates][0].name:name;};
+}

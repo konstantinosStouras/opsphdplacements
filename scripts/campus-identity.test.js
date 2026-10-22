@@ -29,3 +29,20 @@ test('explicit school aliases join career observations without merging similar o
  rows=organisationRows(entities,universities,reviews,empty,empty,empty,histories,empty);
  assert.equal(rows.length,4);assert(!rows.find(r=>r.name==='A University').careers);
 });
+import {organisationNameResolver} from '../assets/organisation-model.js';
+import {buildIndex,employerMetrics,institutionMetrics} from '../assets/analytics.js';
+import {normalize,filterRecords} from '../assets/model.js';
+
+test('KAIST has one combined destination action and a separate doctorate-origin view',()=>{
+ const rows=organisationRows(read('entities'),read('universities'),read('university-reviews'),read('doctoral-programs'),read('faculty'),read('faculty-roster-people'),read('employment-histories'),read('linkedin-histories'));
+ const canonicalName=organisationNameResolver(rows);
+ const state={faculty:[...read('faculty').records,...read('faculty-roster-people').records].map(normalize),placements:read('placements').records.map(normalize),progress:read('research-status')};
+ const idx=buildIndex(state);idx.canonicalName=canonicalName;
+ const name=canonicalName('KAIST');
+ const hires=employerMetrics(idx,name),origins=institutionMetrics(idx,name);
+ assert.equal(hires.total,4);assert.equal(origins.total,3);
+ assert.equal(new Set(hires.rows.map(p=>p.id)).size,4);
+ assert.equal(filterRecords(state.placements,{institution:name,canonicalName}).length,4);
+ assert.equal(employerMetrics(idx,'KAIST College of Business').total,4);
+ assert.equal(state.placements.filter(p=>p.employer==='KAIST').length,1);
+});

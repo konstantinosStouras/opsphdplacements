@@ -79,7 +79,8 @@ const rangeOf = years => (years.length ? (years[0] === years[years.length - 1] ?
 /** People who earned their doctorate at `name`, with their research status and verified first jobs. */
 export function institutionMetrics(index, name, period = 'all') {
   const sel = inPeriod(period, index.latest);
-  const rows = index.people.filter(p => p.phdInstitution === name && sel(p.phdYear));
+  const canonical=index.canonicalName||((n)=>n); name=canonical(name);
+  const rows = index.people.filter(p => canonical(p.phdInstitution) === name && sel(p.phdYear));
   const verified = rows.filter(p => p.placement);
   const statuses = countBy(rows, 'status');
   const cats = countBy(verified, p => p.placement.category);
@@ -113,7 +114,8 @@ export function institutionMetrics(index, name, period = 'all') {
 /** Verified first jobs at `name`, by the PhD cohort of the person hired. */
 export function employerMetrics(index, name, period = 'all') {
   const sel = inPeriod(period, index.latest);
-  const rows = index.people.filter(p => p.placement?.employer === name && sel(p.phdYear));
+  const canonical=index.canonicalName||((n)=>n); name=canonical(name);
+  const rows = index.people.filter(p => p.placement && canonical(p.placement.employer) === name && sel(p.phdYear));
   const sources = {}, positions = {}, byYear = {};
   for (const p of rows) {
     const s = (sources[p.phdInstitution || 'PhD institution not reported'] ||= { n: 0, cats: {} }); s.n++; s.cats[p.placement.category] = (s.cats[p.placement.category] || 0) + 1;

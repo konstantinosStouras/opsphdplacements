@@ -1,4 +1,4 @@
-import {distinctNames} from './organisation-model.js';
+import {distinctNames,organisationRows,organisationNameResolver} from './organisation-model.js';
 import {searchablePicker as pickList} from './picker.js';
 // Coverage grid, trends and profiles built from the public datasets. See analytics.js for the
 // numbers and charts.js for the drawing. Nothing here infers a job: every chart counts verified
@@ -9,10 +9,17 @@ import { fold } from './model.js';
 import { universityRows } from './university-model.js';
 import { renderUniversityUnits } from './university-view.js';
 
-let index = null;
+let index = null, indexPromise = null;
 export async function getIndex(state) {
-  if (!index) { index = buildIndex(state); loadCountries(index).then(() => document.dispatchEvent(new Event('countries-loaded'))); }
-  return index;
+  if (!indexPromise) indexPromise=(async()=>{
+    const [entities,universities,reviews]=await Promise.all(['entities','universities','university-reviews'].map(n=>loadJson('data/'+n+'.json')));
+    const empty={records:[]};
+    index=buildIndex(state);
+    index.canonicalName=organisationNameResolver(organisationRows(entities,universities,reviews,empty,empty,empty,empty,empty));
+    loadCountries(index).then(()=>document.dispatchEvent(new Event('countries-loaded')));
+    return index;
+  })();
+  return indexPromise;
 }
 
 /** The sentence above the coverage views, from the data. */
@@ -174,8 +181,8 @@ export function presetProfile(type, value) { if (type === 'phd') profile.phd = v
 export function profileSelection(type) { return type === 'phd' ? profile.phd : type === 'employer' ? profile.employer : profile.compare.filter(Boolean); }
 
 const periodSelect = (idx, current, onChange) => { const s = document.createElement('select'); s.setAttribute('aria-label', 'Cohorts'); fillPeriodSelect(s, idx); s.value = current; s.addEventListener('change', () => onChange(s.value)); return labelled('Cohorts', s); };
-const phdInstitutionValues = idx => [['', 'Choose a PhD institution'], ...institutionsWithAtLeast(idx, 1)];
-const employerValues = idx => { const c = {}; for (const p of idx.people) if (p.placement) c[p.placement.employer] = (c[p.placement.employer] || 0) + 1; return [['', 'Choose an employer'], ...Object.entries(c).sort((a, b) => a[0].localeCompare(b[0])).map(([n, k]) => [n, `${n} (${k})`])]; };
+const phdInstitutionValues = idx => {const counts=new Map();for(const p of idx.people)if(p.phdInstitution){const name=idx.canonicalName?.(p.phdInstitution)||p.phdInstitution;counts.set(name,(counts.get(name)||0)+1);}return [['','Choose a PhD institution'],...[...counts].sort((a,b)=>a[0].localeCompare(b[0])).map(([n,k])=>[n,`${n} (${k})`])];};
+const employerValues = idx => { const c = {}; for (const p of idx.people) if (p.placement) {const name=idx.canonicalName?.(p.placement.employer)||p.placement.employer;c[name]=(c[name]||0)+1;} return [['', 'Choose an employer'], ...Object.entries(c).sort((a, b) => a[0].localeCompare(b[0])).map(([n, k]) => [n, `${n} (${k})`])]; };
 const mainCategory = cats => CATEGORIES.find(c => cats[c.id] === Math.max(0, ...Object.values(cats)));
 const panel = (title, cls) => { const p = html('div', 'profile-panel' + (cls ? ' ' + cls : '')); p.append(html('h4', undefined, title)); const body = html('div'); p.append(body); return [p, body]; };
 const link = (text, href) => { const a = html('a', undefined, text); a.href = href; a.target = '_blank'; a.rel = 'noopener noreferrer'; return a; };
@@ -247,6 +254,7 @@ async function entityPanel(body, name, context, actions) {
 const entityPanelFor = (grid, name, context, actions) => { const [p, b] = panel('Organisation details and sources', 'entity-panel'); b.append(html('p', 'chart-empty', 'Loading the merged record…')); grid.append(p); entityPanel(b, name, context, actions); };
 
 export function renderProfile(type, hosts, idx, actions) {
+  if(idx.canonicalName){profile.phd=idx.canonicalName(profile.phd);profile.employer=idx.canonicalName(profile.employer);profile.compare=profile.compare.map(idx.canonicalName);}
   const { controls, content } = hosts;
   controls.replaceChildren(); content.replaceChildren(); content.classList.remove('empty');
   ({ phd: renderInstitutionProfile, employer: renderEmployerProfile, compare: renderComparison })[type]?.(hosts, idx, actions);

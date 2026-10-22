@@ -48,11 +48,11 @@ export async function renderOrganisations(section,actions){
     identity.append(node('strong',r.name),node('small',r.countries.join(' · ')||'Country not established'));
     const currentPhds=r.programs.filter(isCurrentPhdProgramme);if(currentPhds.length)identity.append(node('small',currentPhds.length+' verified current doctoral route'+(currentPhds.length===1?'':'s')));
     const aliases=distinctNames(r.names,r.name);if(aliases.length){const d=node('details');d.append(node('summary','Other names in sources'),node('p',aliases.join('; ')));identity.append(d);}
-    if(r.phd.length){people.append(node('p',r.phd.reduce((s,p)=>s+p.people,0).toLocaleString('en-GB')+' people earned doctorates here'));for(const p of r.phd)people.append(button('Doctoral outcomes: '+p.name,()=>actions.openInstitution(p.name)));}
-    if(r.employers.length){people.append(node('p',r.employers.reduce((s,p)=>s+p.verifiedFirstJobs,0).toLocaleString('en-GB')+' verified first jobs started here'));for(const e of r.employers)people.append(button('First hires: '+e.name,()=>actions.openEmployer(e.name)));}
+    if(r.phd.length){people.append(node('p',r.phd.reduce((s,p)=>s+p.people,0).toLocaleString('en-GB')+' people earned doctorates here'));people.append(button('Where '+r.name+' PhD graduates went',()=>actions.openInstitution(r.name)));}
+    if(r.employers.length){people.append(node('p',r.employers.reduce((s,p)=>s+p.verifiedFirstJobs,0).toLocaleString('en-GB')+' verified first jobs started here'));people.append(button('People hired by '+r.name,()=>actions.openEmployer(r.name)),node('small','Only their first job after the PhD is counted.'));}
     // Directory affiliations remain observations, never promoted into current jobs.
-    for(const name of distinctNames(r.names).filter(n=>actions.hasAffiliation(n)))people.append(button('People listed at '+name,()=>actions.openAffiliation(name)));
-    if(r.careers?.size)people.append(button(r.careers.size+' people with observed roles here',()=>actions.openCareers(r.name)));if(!people.childNodes.length)people.textContent='No matched people or first hires yet';
+    if(r.names.some(n=>actions.hasAffiliation(n)))people.append(button('People listed at '+r.name,()=>actions.openAffiliation(r.name)));
+    if(r.careers?.size)people.append(button(r.careers.size+' people with observed roles here',()=>actions.openCareers(r.name)));if(!people.childNodes.length)people.textContent='No matched graduates or hires yet';
     const detail=node('details');detail.append(node('summary','Organisation evidence and departments'));
     const sourceSeen=new Set();
     for(const u of r.reviews){

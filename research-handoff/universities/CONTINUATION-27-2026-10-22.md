@@ -9,3 +9,5 @@ Remaining:31initial unit reviews,118partial and5blocked;133of666have no doctoral
 Validation and live confirmation to be recorded after release checks.
 
 Validation:50tests, all dataset validators, record stamps and static build passed. Local expanded Laurier record is one row with all3observed career people, exact alias preserved and two doctorate routes. No visitor-facing raw filenames or project repository links in expanded content. Publication pending.
+
+Published7337832953b461167965617029b280e7525d455e; Pages run39825376719 succeeded. Live379routes/235institutions and Laurier one row/3observed career people confirmed. Screenshot renderer returned blank, not visual proof.
