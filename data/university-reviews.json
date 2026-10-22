@@ -3,11 +3,11 @@
   "metadata": {
     "definition": "Individual Chrome reviews of official university names and operations units. The original directory remains in universities.json. Reviewed describes the stated source scope, not an exhaustive current or historical census.",
     "sourceRecords": 665,
-    "attempted": 529,
+    "attempted": 530,
     "reviewed": 439,
-    "partial": 85,
+    "partial": 86,
     "blocked": 5,
-    "pending": 136
+    "pending": 135
   },
   "records": [
     {
@@ -2994,12 +2994,18 @@
           "checkedAt": "2026-10-20",
           "outcome": "read",
           "note": "Eight business departments checked; information systems/statistics is separate and not retained under operations remit."
+        },
+        {
+          "url": "https://www.baruch.cuny.edu/",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Source-name reconciliation: Baruch College, The City University of New York. Official homepage displays Baruch College and City University of New York together. This source wording identifies Baruch College within CUNY, not the entire university system."
         }
       ],
       "limitations": [],
       "duplicateOf": null,
       "addedAt": "2026-10-20T10:06:22Z",
-      "updatedAt": "2026-10-20T10:06:22Z"
+      "updatedAt": "2026-10-22T09:11:02Z"
     },
     {
       "id": "bayes-business-school",
@@ -14129,6 +14135,12 @@
           "checkedAt": "2026-10-21",
           "outcome": "read",
           "note": "Read full official Stochastic Operations Research group page, exact departmental host and explicit OR/logistics/service-operations research. No group-specific doctoral offering statement observed."
+        },
+        {
+          "url": "https://www.tue.nl/faculteit-industrial-engineering-innovation-sciences/studeren/graduate-programs/industrial-engineering-graduate-program/promoveren/phd-program-industrial-engineering",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Source-name reconciliation: TU Eindhoven. Official Eindhoven University of Technology page uses TU/e and names the School of Industrial Engineering within the Department of Industrial Engineering and Innovation Sciences. The source TU Eindhoven label with that same department is linked to this existing institution; not treated as a separate university or as an official full-name spelling."
         }
       ],
       "limitations": [
@@ -14210,7 +14222,7 @@
         "coverageComplete": false
       },
       "addedAt": "2026-10-21T11:02:27Z",
-      "updatedAt": "2026-10-21T21:55:18Z"
+      "updatedAt": "2026-10-22T09:11:02Z"
     },
     {
       "id": "emlv-ecole-de-commerce-et-de-management",
@@ -16567,6 +16579,156 @@
       "updatedAt": "2026-10-21T21:55:18Z"
     },
     {
+      "id": "frankfurt-school-of-finance-and-management",
+      "status": "partial",
+      "canonicalName": "Frankfurt School of Finance & Management",
+      "universitySourceUrl": "https://www.frankfurt-school.de/research-and-faculty",
+      "checkedAt": "2026-10-22",
+      "reviewer": "Codex in Chrome",
+      "units": [
+        {
+          "id": "frankfurt-school-of-finance-and-management--management",
+          "name": "Management",
+          "school": null,
+          "type": "department",
+          "fields": [
+            "operations-management"
+          ],
+          "sourceUrl": "https://www.frankfurt-school.de/research-and-faculty",
+          "checkedAt": "2026-10-22",
+          "evidence": "Official current research and faculty page names five academic departments, including Management, whose remit explicitly covers strategy, organisation, marketing, operations and decision-making. Retained actual Management department rather than inventing a separate Operations department."
+        }
+      ],
+      "decisions": [
+        {
+          "sourceDepartmentId": "frankfurt-school-of-finance-and-management____ba-om",
+          "disposition": "not-a-unit",
+          "unitIds": [],
+          "reason": "BA/OM is an imported subject abbreviation, not an officially named administrative unit; current Management department operations remit recorded separately."
+        },
+        {
+          "sourceDepartmentId": "frankfurt-school-of-finance-and-management____management",
+          "disposition": "replaced",
+          "unitIds": [
+            "frankfurt-school-of-finance-and-management--management"
+          ],
+          "reason": "Current official five-department inventory explicitly names Management with operations remit; exact current institution name retains ampersand."
+        },
+        {
+          "sourceDepartmentId": "frankfurt-school-of-finance-and-management____technology-and-operations-management",
+          "disposition": "unresolved",
+          "unitIds": [],
+          "reason": "Current department inventory names Management, but explicit relationship/succession of imported Technology and Operations Management label was not read; no second department invented."
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.frankfurt-school.de/home/research/departments/management.html",
+          "checkedAt": "2026-10-22",
+          "outcome": "blocked",
+          "note": "Imported legacy department link redirected to /en/research/departments/management.html and displayed Seite nicht gefunden (Page not found). Current official Research & Faculty navigation followed independently."
+        },
+        {
+          "url": "https://www.frankfurt-school.de/research-and-faculty",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Read full current official identity and all five academic departments. Management explicitly covers strategy, organisation, marketing, operations and decision-making. No separate Technology and Operations Management unit named."
+        },
+        {
+          "url": "https://www.frankfurt-school.de/study",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Full current degree inventory read: four research doctoral concentrations Accounting, Economics, Finance and Management; no separate engineering doctoral provision listed."
+        },
+        {
+          "url": "https://www.frankfurt-school.de/study/doctoral",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Full Doctoral Programme gateway, four research-focused concentrations, academic research training and faculty guidance read; no explicit Operations doctoral research field identified."
+        },
+        {
+          "url": "https://www.frankfurt-school.de/study/doctoral/doctoral-management",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Read full current Management concentration page: exact Dr. rer. pol. credential, five-year academic doctorate, Research: Dissertation and Viva, doctoral curriculum and research-project areas strategy/innovation/entrepreneurship/HR/learning/design. Current text does not explicitly identify Ops/OR as a doctoral field. Copy inconsistency interview text mentions Finance on Management page; not treated as another programme."
+        }
+      ],
+      "limitations": [
+        "Exact historical Technology and Operations Management label relationship remains unresolved.",
+        "Current Management department operations scope verified; a relevant doctoral specialisation is not inferred from faculty research or department existence alone."
+      ],
+      "duplicateOf": null,
+      "doctoralReview": {
+        "status": "partial",
+        "checkedAt": "2026-10-22",
+        "programmeIds": [],
+        "branches": [
+          {
+            "branch": "business",
+            "reviewState": "partial",
+            "conclusion": "Current four-concentration doctoral inventory and full Management page read. Exact academic credential Dr. rer. pol. and dissertation/viva research status verified, but current programme description does not explicitly establish Operations/OR/IE doctoral field. Department operations remit alone is not converted into qualifying doctoral provision.",
+            "sourceUrls": [
+              "https://www.frankfurt-school.de/research-and-faculty",
+              "https://www.frankfurt-school.de/study",
+              "https://www.frankfurt-school.de/study/doctoral",
+              "https://www.frankfurt-school.de/study/doctoral/doctoral-management"
+            ]
+          },
+          {
+            "branch": "engineering",
+            "reviewState": "not-present",
+            "conclusion": "Full current five-department research inventory and full degree-programme inventory list no separate engineering department or doctoral concentration. Computational Science & Philosophy is not silently renamed an engineering/OR doctorate.",
+            "sourceUrls": [
+              "https://www.frankfurt-school.de/research-and-faculty",
+              "https://www.frankfurt-school.de/study",
+              "https://www.frankfurt-school.de/study/doctoral"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://www.frankfurt-school.de/home/research/departments/management.html",
+            "checkedAt": "2026-10-22",
+            "outcome": "blocked",
+            "note": "Imported legacy department link redirected to /en/research/departments/management.html and displayed Seite nicht gefunden (Page not found). Current official Research & Faculty navigation followed independently."
+          },
+          {
+            "url": "https://www.frankfurt-school.de/research-and-faculty",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Read full current official identity and all five academic departments. Management explicitly covers strategy, organisation, marketing, operations and decision-making. No separate Technology and Operations Management unit named."
+          },
+          {
+            "url": "https://www.frankfurt-school.de/study",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full current degree inventory read: four research doctoral concentrations Accounting, Economics, Finance and Management; no separate engineering doctoral provision listed."
+          },
+          {
+            "url": "https://www.frankfurt-school.de/study/doctoral",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full Doctoral Programme gateway, four research-focused concentrations, academic research training and faculty guidance read; no explicit Operations doctoral research field identified."
+          },
+          {
+            "url": "https://www.frankfurt-school.de/study/doctoral/doctoral-management",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Read full current Management concentration page: exact Dr. rer. pol. credential, five-year academic doctorate, Research: Dissertation and Viva, doctoral curriculum and research-project areas strategy/innovation/entrepreneurship/HR/learning/design. Current text does not explicitly identify Ops/OR as a doctoral field. Copy inconsistency interview text mentions Finance on Management page; not treated as another programme."
+          }
+        ],
+        "limitations": [
+          "No qualifying doctoral programme is counted yet; generic Management doctoral availability plus department operations interests is insufficient field-level evidence.",
+          "Exact Dr. rer. pol. award and Research: Dissertation and Viva establish academic research-doctorate nature if a qualifying field is subsequently verified; not normalized to PhD.",
+          "One focused official search discovered a two-page Doctoral Leaflet PDF, snippet mentioning operations research. It was NOT opened/read; snippet is discovery only. Official URL: https://www.frankfurt-school.de/cms/dam/jcr:b222e102-d8ac-4f6f-8de4-71cd303148ac/Doctoral%20Leaflet.pdf . PDF avoided during this cut because of recent browser-extension blockers; no content verification claimed.",
+          "Historical imported Technology and Operations Management label remains a separate unit identity gap."
+        ],
+        "coverageComplete": false
+      },
+      "addedAt": "2026-10-22T09:11:02Z",
+      "updatedAt": "2026-10-22T09:11:02Z"
+    },
+    {
       "id": "fudan-university",
       "status": "reviewed",
       "canonicalName": "Fudan University",
@@ -16742,6 +16904,18 @@
           "sourceUrl": "https://business.gwu.edu/about/departments/decision-sciences",
           "checkedAt": "2026-10-21",
           "evidence": "Official full department name and School of Business/George Washington University parent verified. Department explicitly identifies operations management, optimization, stochastic modelling and supply-chain/operations research with faculty and doctoral students."
+        },
+        {
+          "id": "george-washington-university--engineering-management-systems-engineering",
+          "name": "Department of Engineering Management and Systems Engineering",
+          "school": "School of Engineering and Applied Science",
+          "type": "department",
+          "fields": [
+            "operations-research"
+          ],
+          "sourceUrl": "https://emse.engineering.gwu.edu/phd-systems-engineering",
+          "checkedAt": "2026-10-22",
+          "evidence": "Current department PhD page explicitly names departmental and school host. Current official Systems Engineering doctoral bulletin explicitly provides Operations Research and Management Science focus within this department; no standalone Industrial Engineering department inferred."
         }
       ],
       "decisions": [
@@ -16796,18 +16970,49 @@
           "checkedAt": "2026-10-21",
           "outcome": "read",
           "note": "Read full PhD Systems Engineering description and cross-cutting themes; no standalone Ops research route inferred from generic complex-system wording."
+        },
+        {
+          "url": "https://bulletin.gwu.edu/engineering-applied-science/engineering-management-systems-engineering/phd-systems-engineering/",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Read current2026–2027 GW Bulletin Systems Engineering PhD overview: exact Doctor of Philosophy in the Field of Systems Engineering and explicit Operations Research and Management Science focus. Catalog says Arlington/on-site locations whereas current department says Foggy Bottom; no location normalization or extra degree inferred."
+        },
+        {
+          "url": "https://emse.engineering.gwu.edu/phd-systems-engineering",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Read current departmental PhD Systems Engineering overview, department/school host, original research and dissertation, four research themes and online option; no duplicate delivery-mode route."
+        },
+        {
+          "url": "https://emse.engineering.gwu.edu/phd-or-deng-engineering-management",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Read current PhD/DEng gateway; separate credentials and respective bulletin links distinguished."
+        },
+        {
+          "url": "https://bulletin.gwu.edu/engineering-applied-science/engineering-management-systems-engineering/phd-engineering-management/",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Read overview plus entire Requirements tab. PhD heading conflicts with online master description in overview; doctoral requirements explicitly dissertation and PhD recommendation but no Ops/OR named field established. No additional relevant route invented from erroneous overview."
+        },
+        {
+          "url": "https://bulletin.gwu.edu/engineering-applied-science/",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Full current engineering school overview read: six exact departments and degrees; individual non-EMSE doctoral areas not yet exhausted."
         }
       ],
       "limitations": [
         "Imported IS and Technology Management unit label remains individually unchecked.",
-        "EMSE doctoral programmes are current, but specific qualifying Ops/OR/IE scope needs further programme-level verification; broad systems wording alone is not classified."
+        "Systems Engineering doctoral Operations Research and Management Science focus verified22October. Engineering Management doctorate and wider engineering doctoral areas still require explicit relevant field mapping; broad systems/method wording alone is not classified."
       ],
       "duplicateOf": null,
       "doctoralReview": {
         "status": "verified",
-        "checkedAt": "2026-10-21",
+        "checkedAt": "2026-10-22",
         "programmeIds": [
-          "george-washington-university--business-decision-sciences-phd"
+          "george-washington-university--business-decision-sciences-phd",
+          "george-washington-university--systems-engineering-operations-research-phd"
         ],
         "branches": [
           {
@@ -16822,11 +17027,16 @@
           {
             "branch": "engineering",
             "reviewState": "partial",
-            "conclusion": "Full EMSE doctoral inventory and both PhD descriptions individually read; Engineering Management and Systems Engineering awards exist, but exact eligible Ops/OR/IE programme-level scope remains unresolved, and wider engineering inventory unchecked.",
+            "conclusion": "EMSE Systems Engineering PhD now explicitly verified with named Operations Research and Management Science focus from current bulletin, resolving earlier field-level gap. Engineering Management doctorate confirmed as research credential but its programme-level Ops field remains unestablished; overview contains erroneous online-masters prose under PhD heading. School-wide six-department inventory read, other departments not yet fully checked; coverage remains incomplete.",
             "sourceUrls": [
               "https://emse.engineering.gwu.edu/academics",
               "https://emse.engineering.gwu.edu/phd-or-deng-engineering-management#PhDinEngineeringManagement",
-              "https://emse.engineering.gwu.edu/phd-systems-engineering"
+              "https://emse.engineering.gwu.edu/phd-systems-engineering",
+              "https://bulletin.gwu.edu/engineering-applied-science/engineering-management-systems-engineering/phd-systems-engineering/",
+              "https://emse.engineering.gwu.edu/phd-systems-engineering",
+              "https://emse.engineering.gwu.edu/phd-or-deng-engineering-management",
+              "https://bulletin.gwu.edu/engineering-applied-science/engineering-management-systems-engineering/phd-engineering-management/",
+              "https://bulletin.gwu.edu/engineering-applied-science/"
             ]
           }
         ],
@@ -16866,17 +17076,49 @@
             "checkedAt": "2026-10-21",
             "outcome": "read",
             "note": "Read full PhD Systems Engineering description and cross-cutting themes; no standalone Ops research route inferred from generic complex-system wording."
+          },
+          {
+            "url": "https://bulletin.gwu.edu/engineering-applied-science/engineering-management-systems-engineering/phd-systems-engineering/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Read current2026–2027 GW Bulletin Systems Engineering PhD overview: exact Doctor of Philosophy in the Field of Systems Engineering and explicit Operations Research and Management Science focus. Catalog says Arlington/on-site locations whereas current department says Foggy Bottom; no location normalization or extra degree inferred."
+          },
+          {
+            "url": "https://emse.engineering.gwu.edu/phd-systems-engineering",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Read current departmental PhD Systems Engineering overview, department/school host, original research and dissertation, four research themes and online option; no duplicate delivery-mode route."
+          },
+          {
+            "url": "https://emse.engineering.gwu.edu/phd-or-deng-engineering-management",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Read current PhD/DEng gateway; separate credentials and respective bulletin links distinguished."
+          },
+          {
+            "url": "https://bulletin.gwu.edu/engineering-applied-science/engineering-management-systems-engineering/phd-engineering-management/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Read overview plus entire Requirements tab. PhD heading conflicts with online master description in overview; doctoral requirements explicitly dissertation and PhD recommendation but no Ops/OR named field established. No additional relevant route invented from erroneous overview."
+          },
+          {
+            "url": "https://bulletin.gwu.edu/engineering-applied-science/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full current engineering school overview read: six exact departments and degrees; individual non-EMSE doctoral areas not yet exhausted."
           }
         ],
         "limitations": [
           "Full current engineering doctoral coverage incomplete.",
           "Fall2027 business intake closed; no inferred suspension, closure date or student-cohort status.",
-          "Historical/inexact imported ISTM administrative label remains separately unresolved."
+          "Historical/inexact imported ISTM administrative label remains separately unresolved.",
+          "New engineering OR-focus route verified22October from explicit current bulletin; earlier generic-source observations and business21October source-check dates preserved.",
+          "Engineering Management bulletin has inconsistent overview; exact relevant doctoral field remains unresolved without inferring from general methods or title."
         ],
         "coverageComplete": false
       },
       "addedAt": "2026-10-21T20:25:10Z",
-      "updatedAt": "2026-10-21T20:25:10Z"
+      "updatedAt": "2026-10-22T09:11:02Z"
     },
     {
       "id": "georgia-institute-of-technology",
@@ -20594,21 +20836,22 @@
         ],
         "branches": [
           {
-            "branch": "engineering",
-            "reviewState": "partial",
-            "sourceUrls": [
-              "https://graduate2.korea.ac.kr/department/major.html",
-              "https://graduate2.korea.ac.kr/academic/info04.html"
-            ],
-            "conclusion": "Full central engineering and science doctoral field inventory read. Industrial Management Engineering doctoral provision and research dissertation requirements are explicit, but exact award title remains unresolved. Industrial Artificial Intelligence is not separately counted without explicit operations scope."
-          },
-          {
             "branch": "business",
             "reviewState": "checked",
             "sourceUrls": [
               "https://graduate2.korea.ac.kr/department/major.html"
             ],
             "conclusion": "Central catalogue independently confirms Seoul Business Administration doctoral LSOM field and distinguishes master-only Business Analytics. Preserve existing verified LSOM PhD and original evidence dates."
+          },
+          {
+            "branch": "engineering",
+            "reviewState": "partial",
+            "sourceUrls": [
+              "https://graduate2.korea.ac.kr/department/major.html",
+              "https://graduate2.korea.ac.kr/academic/info04.html",
+              "https://graduate.korea.ac.kr/academic/regulations_view.html?no=1&page=1"
+            ],
+            "conclusion": "Full central engineering and science doctoral field inventory read. Industrial Management Engineering doctoral provision and research dissertation requirements are explicit, but exact award title remains unresolved. Industrial Artificial Intelligence is not separately counted without explicit operations scope. Follow-up: Current graduate award regulations located, but notice supplies HWP attachments rather than readable award clauses. Exact engineering doctoral credential remains unresolved; retain existing candidate and verified Business LSOM route."
           }
         ],
         "sources": [
@@ -20665,6 +20908,18 @@
             "checkedAt": "2026-10-22",
             "outcome": "read",
             "note": "Current Korean graduate school homepage read; campus contacts distinguish Seoul and Sejong. No exact engineering credential inferred from homepage."
+          },
+          {
+            "url": "https://graduate.korea.ac.kr/academic/regulations.html",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Current regulations index lists two notices dated 5 January 2026, including graduate school rules and academic operation regulations."
+          },
+          {
+            "url": "https://graduate.korea.ac.kr/academic/regulations_view.html?no=1&page=1",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Official notice states graduate school rules amended 1 January 2026 and academic operation rules amended 1 March 2025. Actual provisions supplied only as two HWP attachments; attachments not opened or treated as reviewed."
           }
         ],
         "limitations": [
@@ -20672,12 +20927,14 @@
           "Additive follow-up: retain all existing Business Administration LSOM programme records, sources and check dates.",
           "Exact engineering award title unresolved; generic doctoral wording not converted to PhD.",
           "Distinct Sejong Operations Management doctoral field requires separate campus identity and award review; no merge into Seoul programme.",
-          "Other generic engineering fields, smart manufacturing and mathematical methods are not automatically qualifying Operations routes."
+          "Other generic engineering fields, smart manufacturing and mathematical methods are not automatically qualifying Operations routes.",
+          "Additive source follow-up only. Preserve prior programme IDs, Business LSOM PhD, generic Industrial Management Engineering doctoral candidate, all sources and original dates.",
+          "HWP regulation attachments were not read in Chrome. No exact engineering credential resolved and no credentialResolutionEvidence claimed."
         ],
         "coverageComplete": false
       },
       "addedAt": "2026-10-20T09:19:47Z",
-      "updatedAt": "2026-10-22T07:57:19Z"
+      "updatedAt": "2026-10-22T09:11:02Z"
     },
     {
       "id": "ku-leuven",
@@ -22545,7 +22802,43 @@
       ],
       "duplicateOf": null,
       "addedAt": "2026-10-20T09:30:49Z",
-      "updatedAt": "2026-10-20T09:30:49Z"
+      "updatedAt": "2026-10-22T09:11:02Z",
+      "doctoralReview": {
+        "status": "no-qualifying-programme-verified",
+        "checkedAt": "2026-10-22",
+        "programmeIds": [],
+        "branches": [
+          {
+            "branch": "business",
+            "reviewState": "checked",
+            "sourceUrls": [
+              "https://www.longwood.edu/academicaffairs/degree-programs/"
+            ],
+            "conclusion": "Complete official authorized degree table lists Business Administration BSBA and MBA; no business doctorate is listed."
+          },
+          {
+            "branch": "engineering",
+            "reviewState": "checked",
+            "sourceUrls": [
+              "https://www.longwood.edu/academicaffairs/degree-programs/"
+            ],
+            "conclusion": "Complete official authorized degree table contains undergraduate and masters awards, with no engineering doctorate or other doctoral programme. Current inventory only; no historical absence inferred."
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://www.longwood.edu/academicaffairs/degree-programs/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full Academic Affairs Degree Programs table read. University explicitly describes it as degree programmes authorized by the State Council of Higher Education for Virginia. Awards include bachelors, MBA, MS and MEd only; official footer identifies Longwood University, Farmville."
+          }
+        ],
+        "limitations": [
+          "No qualifying programme verified within the current university-wide authorized degree inventory. Historical programme provision not researched.",
+          "Existing source/unit assertions remain preserved separately; degree inventory does not resolve every imported unit label."
+        ],
+        "coverageComplete": true
+      }
     },
     {
       "id": "lousiana-tech-univ",
@@ -22718,7 +23011,70 @@
       ],
       "duplicateOf": null,
       "addedAt": "2026-10-20T09:34:49Z",
-      "updatedAt": "2026-10-20T09:34:49Z"
+      "updatedAt": "2026-10-22T09:11:02Z",
+      "doctoralReview": {
+        "status": "no-qualifying-programme-verified",
+        "checkedAt": "2026-10-22",
+        "programmeIds": [],
+        "branches": [
+          {
+            "branch": "business",
+            "reviewState": "checked",
+            "sourceUrls": [
+              "https://www.luc.edu/quinlan/academics/graduatedegrees/",
+              "https://catalog.luc.edu/graduate-professional/business/"
+            ],
+            "conclusion": "Full current business graduate and catalogue inventories provide masters and certificate awards only. Supply Chain Management and Business Analytics are explicitly masters programmes; no qualifying business doctorate verified."
+          },
+          {
+            "branch": "engineering",
+            "reviewState": "checked",
+            "sourceUrls": [
+              "https://www.luc.edu/gradschool/academics/degreeprograms/",
+              "https://catalog.luc.edu/graduate-professional/graduate-school/arts-sciences/",
+              "https://catalog.luc.edu/graduate-professional/graduate-school/arts-sciences/computer-science/computer-science-phd/#curriculumtext"
+            ],
+            "conclusion": "Current graduate school and technical catalogue inventories checked, including Computer Science PhD overview and full curriculum. No explicit qualifying Operations doctoral field established; algorithms, AI and numerical analysis alone are insufficient. No separate engineering doctoral school in the current catalogue menu."
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://www.luc.edu/quinlan/academics/graduatedegrees/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full current business graduate inventory: MBA, MS, MBA/MS, certificates and non-degree executive education; no business doctorate."
+          },
+          {
+            "url": "https://catalog.luc.edu/graduate-professional/business/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Complete 2026–2027 Quinlan catalogue programme menu read, including Supply Chain Management MSSCM and MBA/MSSCM and Business Analytics MS, without a doctoral award."
+          },
+          {
+            "url": "https://www.luc.edu/gradschool/academics/degreeprograms/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full Graduate School degree inventory read; technical Computer Science PhD, mathematics/applied statistics and Data Science masters."
+          },
+          {
+            "url": "https://catalog.luc.edu/graduate-professional/graduate-school/arts-sciences/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full current Arts and Sciences programme inventory read, with Computer Science PhD and masters-only mathematics/statistics/data science. University graduate catalogue school menu contains no standalone engineering school."
+          },
+          {
+            "url": "https://catalog.luc.edu/graduate-professional/graduate-school/arts-sciences/computer-science/computer-science-phd/#curriculumtext",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Computer Science PhD overview and complete curriculum read: research-focused, 60 credits and dissertation, four pillars theory/systems/software/AI. No explicit Operations Research, Operations Management, IE, logistics or SCM doctoral specialization established. Generic algorithms/AI not promoted to Operations field."
+          }
+        ],
+        "limitations": [
+          "No qualifying programme verified within the current reviewed doctoral and technical scope; does not claim historical absence or absence of individual Operations researchers.",
+          "Loyola University Chicago kept distinct from other Loyola universities. Original university/unit discovery records remain preserved."
+        ],
+        "coverageComplete": true
+      }
     },
     {
       "id": "maastricht-university",
@@ -23058,7 +23414,51 @@
       ],
       "duplicateOf": null,
       "addedAt": "2026-10-20T09:43:28Z",
-      "updatedAt": "2026-10-20T09:43:28Z"
+      "updatedAt": "2026-10-22T09:11:02Z",
+      "doctoralReview": {
+        "status": "no-qualifying-programme-verified",
+        "checkedAt": "2026-10-22",
+        "programmeIds": [],
+        "branches": [
+          {
+            "branch": "business",
+            "reviewState": "checked",
+            "sourceUrls": [
+              "https://www.macewan.ca/academics/programs/",
+              "https://calendar.macewan.ca/programs/"
+            ],
+            "conclusion": "Complete live university programme finder lists business bachelors, diplomas and certificates; Supply Chain Management is Bachelor of Commerce. No business doctorate listed."
+          },
+          {
+            "branch": "engineering",
+            "reviewState": "checked",
+            "sourceUrls": [
+              "https://www.macewan.ca/academics/programs/",
+              "https://calendar.macewan.ca/programs/"
+            ],
+            "conclusion": "Full live university programme list and published 2027–2028 catalogue contain undergraduate/applied degrees, certificates, diplomas and transfer programmes, without a doctoral award. Computer Science, Data Science and Mathematics are bachelors-level."
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://www.macewan.ca/academics/programs/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Complete live Browse Programs list read with all programme types unfiltered; all degree entries identify bachelors or applied degree, including Supply Chain Management BCom. No graduate/doctoral award listed. Official footer identifies Edmonton campus."
+          },
+          {
+            "url": "https://calendar.macewan.ca/programs/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Entire published 2027–2028 Programs of Study list and credential filter read; degrees are bachelors, with diplomas, certificates, post-baccalaureate/post-diploma certificates and transfer/entrance programmes. Forward-edition status retained, not treated as 2026–2027 catalogue."
+          }
+        ],
+        "limitations": [
+          "Current live programme scope only; 2027–2028 published calendar is explicitly a forward-edition cross-check, not evidence of historical absence.",
+          "No qualifying doctoral programme verified from current live list. Individual faculty research or future planned provision not inferred."
+        ],
+        "coverageComplete": true
+      }
     },
     {
       "id": "maine-maritime-academy",
@@ -41276,6 +41676,12 @@
           "checkedAt": "2026-10-21",
           "outcome": "blocked",
           "note": "Older business doctoral host failed with browser client block. No challenge interaction or bypass. Independent official programme catalog linked current bmphd.hkust.edu.hk source, opened separately."
+        },
+        {
+          "url": "https://bmphd.hkust.edu.hk/programs/program-overview",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Source-name reconciliation: Hong Kong University of Science and Technology (HKUST). Official doctoral page uses HKUST Business School and the full The Hong Kong University of Science and Technology name, with Clear Water Bay, Kowloon, Hong Kong location. Source label omits the article and appends the acronym; it does not identify the separate Guangzhou campus."
         }
       ],
       "limitations": [],
@@ -41352,7 +41758,7 @@
         "coverageComplete": true
       },
       "addedAt": "2026-10-21T11:02:27Z",
-      "updatedAt": "2026-10-21T11:51:57Z"
+      "updatedAt": "2026-10-22T09:11:02Z"
     },
     {
       "id": "the-hong-kong-university-of-science-and-technology-hkust",
@@ -50401,10 +50807,14 @@
           "note": "Explicit manufacturing, logistics, supply-chain and decision-model research.",
           "outcome": "read",
           "checkedAt": "2026-10-20"
+        },
+        {
+          "url": "https://www.hku.hk/",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Source-name reconciliation: University of Hong Kong (HKU). Official homepage explicitly writes The University of Hong Kong (HKU). The source label omits the article and preserves the same acronym; no separate institution created."
         }
       ],
-      "addedAt": "2026-10-20T10:28:08Z",
-      "updatedAt": "2026-10-21T11:51:57Z",
       "doctoralReview": {
         "status": "verified",
         "checkedAt": "2026-10-21",
@@ -50462,7 +50872,9 @@
           "Current scoped programme inventory only; no founding dates or historical rename dates inferred."
         ],
         "coverageComplete": true
-      }
+      },
+      "addedAt": "2026-10-20T10:28:08Z",
+      "updatedAt": "2026-10-22T09:11:02Z"
     },
     {
       "id": "university-of-houston",
@@ -51411,7 +51823,65 @@
       "status": "reviewed",
       "canonicalName": "University of Kentucky",
       "addedAt": "2026-10-20T11:00:16Z",
-      "updatedAt": "2026-10-20T11:00:16Z"
+      "updatedAt": "2026-10-22T09:11:02Z",
+      "doctoralReview": {
+        "status": "verified",
+        "checkedAt": "2026-10-22",
+        "programmeIds": [
+          "university-of-kentucky--mechanical-engineering-phd-operations"
+        ],
+        "branches": [
+          {
+            "branch": "business",
+            "reviewState": "partial",
+            "conclusion": "Complete current Business Administration PhD four-concentration inventory read. Marketing & Supply Chain is an exact concentration label, but detailed current page describes marketing phenomena, consumer behaviour, strategy and marketing-professor training only. Relevant substantive supply-chain doctoral field remains unresolved; no second route assigned from combined name alone.",
+            "sourceUrls": [
+              "https://gatton.uky.edu/programs/phd/phd-business-administration",
+              "https://gatton.uky.edu/programs/phd/phd-business-administration/marketing-supply-chain"
+            ]
+          },
+          {
+            "branch": "engineering",
+            "reviewState": "partial",
+            "conclusion": "Current MAE mechanical-engineering PhD and explicit SOM lab doctoral-entry pathway verified. Full wider engineering doctoral inventory, other lab pathways and mathematical research scope remain incomplete.",
+            "sourceUrls": [
+              "https://engr.uky.edu/research/centers-institutes-and-consortia/ism/research/sustainable-operations-management-research",
+              "https://mae.engr.uky.edu/"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://engr.uky.edu/research/centers-institutes-and-consortia/ism/research/sustainable-operations-management-research",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full official SOM laboratory page individually read in Chrome, explicit Mechanical Engineering PhD recruitment and named OM/OR research; no individual biographies or graduate records collected."
+          },
+          {
+            "url": "https://mae.engr.uky.edu/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full current MAE departmental homepage read, exact department and college identity and mechanical-engineering MSc/PhD provision."
+          },
+          {
+            "url": "https://gatton.uky.edu/programs/phd/phd-business-administration",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full current Business Administration doctoral inventory read: Accounting, Finance/Quantitative Methods, Management, Marketing/Supply Chain."
+          },
+          {
+            "url": "https://gatton.uky.edu/programs/phd/phd-business-administration/marketing-supply-chain",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full current exact concentration page read: Fall2027 intake, marketing-focused substantive training and dissertation/defense requirements. Combined title versus actual field boundary preserved."
+          }
+        ],
+        "limitations": [
+          "Known Mechanical Engineering doctoral research route verified without asserting complete institutional branch inventory.",
+          "Business combined Marketing & Supply Chain label requires further substantive field evidence; title alone not promoted to a separate SCM route. Existing unit identities retain their Oct20 check dates and no paired unit changes required."
+        ],
+        "coverageComplete": false
+      }
     },
     {
       "canonicalName": "University of Leeds",

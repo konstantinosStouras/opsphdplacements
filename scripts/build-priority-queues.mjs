@@ -1,6 +1,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import crypto from 'node:crypto';
+import assert from 'node:assert/strict';
 import {fold} from '../assets/model.js';
 import {universityRows} from '../assets/university-model.js';
 import {organisationRows} from '../assets/organisation-model.js';
@@ -41,7 +42,27 @@ const acceptedNames=new Map();
 for(const r of joined){const ids=r.entities.flatMap(e=>(e.directory?.universities||[]).map(u=>u.id));if(!ids.length)continue;for(const name of r.names){const k=fold(name);acceptedNames.set(k,[...(acceptedNames.get(k)||[]),{id:r.id,sourceIds:[...new Set(ids)]}]);}}
 const exclusions=new Map();for(const r of reviews.records)if(r.directoryExclusion){const u=universities.records.find(u=>u.id===r.id);for(const name of [u?.name,...(u?.spellings||[])])if(name)exclusions.set(fold(name),{id:r.id,evidence:r.directoryExclusion});}
 const candidates=new Map(),matched=[],excluded=[];
+// Individually reviewed source-record decisions are exact, scoped discovery links.
+// They never introduce fuzzy/global aliases or verify the source's unit assertion.
+const reconciliationFile='research-handoff/priorities/source-name-reconciliations-2026-10-22.json';
+const reconciliations=fs.existsSync(path.join(root,reconciliationFile))?read(reconciliationFile).records:[];
+const reconciledKeys=new Set();
+for(const r of reconciliations){
+ const review=reviews.records.find(u=>u.id===r.universityId);
+ assert(review?.canonicalName&&r.evidence&&r.sourceRecordIds?.length,'Invalid source identity reconciliation');
+ assert(review.sources.some(s=>s.url===r.sourceUrl&&s.checkedAt===r.checkedAt&&s.outcome==='read'),'Reconciliation needs integrated opened official evidence');
+ for(const sourceRecordId of r.sourceRecordIds){
+  const key=JSON.stringify([r.nameAsListed,sourceRecordId]);assert(!reconciledKeys.has(key),'Conflicting source identity decisions');reconciledKeys.add(key);
+  assert(catalogue.observations.some(o=>o.name===r.nameAsListed&&o.sourceRecordId===sourceRecordId&&(o.countryAsListed||null)===r.countryAsListed),'Unknown or mismatched source identity assertion');
+ }
+}
 for(const o of catalogue.observations){
+ const resolution=reconciliations.find(r=>r.nameAsListed===o.name&&r.sourceRecordIds.includes(o.sourceRecordId)&&(o.countryAsListed||null)===r.countryAsListed);
+ if(resolution){
+  const targets=joined.filter(r=>r.reviews.some(u=>u.originals.some(original=>original.id===resolution.universityId)));
+  assert(targets.length===1,'Reconciled source identity must resolve to one joined organisation');
+  matched.push({...o,matchedOrganisationId:targets[0].id,matchedImportedUniversityIds:[resolution.universityId],match:'individually reviewed source-record identity; unit assertion still requires reconciliation',identityEvidence:{sourceUrl:resolution.sourceUrl,checkedAt:resolution.checkedAt,evidence:resolution.evidence}});continue;
+ }
  if(exclusions.has(fold(o.name))){excluded.push({...o,disposition:'previously reviewed non-university exclusion',...exclusions.get(fold(o.name))});continue;}
  const accepted=[...new Map((acceptedNames.get(fold(o.name))||[]).map(x=>[x.id,x])).values()];
  if(accepted.length===1){matched.push({...o,matchedOrganisationId:accepted[0].id,matchedImportedUniversityIds:accepted[0].sourceIds,match:'accepted entity/review alias; discovery linkage, not new unit verification'});continue;}

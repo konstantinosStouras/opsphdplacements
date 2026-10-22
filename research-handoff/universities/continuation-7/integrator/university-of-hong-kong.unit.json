@@ -1,0 +1,99 @@
+{
+  "id": "university-of-hong-kong",
+  "checkedAt": "2026-10-20",
+  "status": "reviewed",
+  "limitations": [
+    "Business academic-areas landing page loaded without detailed body; the official research-postgraduate fields page supplies the named Innovation and Information Management area and explicit operations remit. It is recorded as an area, not a department."
+  ],
+  "universitySourceUrl": "https://www.dase.hku.hk/research/research-areas",
+  "canonicalName": "The University of Hong Kong",
+  "units": [
+    {
+      "checkedAt": "2026-10-20",
+      "type": "area",
+      "school": "HKU Business School",
+      "sourceUrl": "https://fbeo.fbe.hku.hk/phd/programmes/fields-of-study",
+      "evidence": "Official fields page identifies Innovation and Information Management and explicitly includes Operations Management research covering queueing, scheduling, stochastic optimization, supply chains and transportation, alongside business analytics and information systems.",
+      "fields": [
+        "operations-management",
+        "operations-research",
+        "supply-chain",
+        "logistics"
+      ],
+      "id": "university-of-hong-kong--innovation-information-management",
+      "name": "Innovation and Information Management"
+    },
+    {
+      "checkedAt": "2026-10-20",
+      "type": "department",
+      "school": "Faculty of Engineering",
+      "sourceUrl": "https://www.dase.hku.hk/research/research-areas",
+      "evidence": "Official department introduction names the full unit and engineering parent link; research areas explicitly address manufacturing, logistics and supply-chain management data engineering, decision models and human-machine systems.",
+      "fields": [
+        "industrial-engineering",
+        "supply-chain",
+        "logistics"
+      ],
+      "id": "university-of-hong-kong--data-systems-engineering",
+      "name": "Department of Data and Systems Engineering"
+    }
+  ],
+  "duplicateOf": null,
+  "reviewer": "Codex in Chrome",
+  "decisions": [
+    {
+      "unitIds": [],
+      "reason": "Recruiting shorthand is not an official unit name; analytics is a research subfield in the verified combined area.",
+      "sourceDepartmentId": "university-of-hong-kong____ba",
+      "disposition": "not-a-unit"
+    },
+    {
+      "unitIds": [
+        "university-of-hong-kong--data-systems-engineering"
+      ],
+      "reason": "Use verified full department name.",
+      "sourceDepartmentId": "university-of-hong-kong____data-and-systems-engineering",
+      "disposition": "replaced"
+    },
+    {
+      "unitIds": [
+        "university-of-hong-kong--innovation-information-management"
+      ],
+      "reason": "Imported list of research fields consolidated under the official combined academic area that explicitly contains those fields.",
+      "sourceDepartmentId": "university-of-hong-kong__hku-business-school__business-analytics-statistics-operations-management-and-info",
+      "disposition": "replaced"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.hkubs.hku.hk/research/academic-areas/",
+      "note": "Landing page loaded but lacked detailed academic-area body; used alternate official fields page.",
+      "outcome": "read",
+      "checkedAt": "2026-10-20"
+    },
+    {
+      "url": "https://fbeo.fbe.hku.hk/phd/programmes/fields-of-study",
+      "note": "Named combined business area and detailed operations-management research.",
+      "outcome": "read",
+      "checkedAt": "2026-10-20"
+    },
+    {
+      "url": "https://www.dase.hku.hk/about-us/introduction",
+      "note": "Full engineering department name, university identity and Faculty of Engineering navigation.",
+      "outcome": "read",
+      "checkedAt": "2026-10-20"
+    },
+    {
+      "url": "https://www.dase.hku.hk/research/research-areas",
+      "note": "Explicit manufacturing, logistics, supply-chain and decision-model research.",
+      "outcome": "read",
+      "checkedAt": "2026-10-20"
+    },
+    {
+      "url": "https://www.hku.hk/",
+      "checkedAt": "2026-10-22",
+      "outcome": "read",
+      "note": "Source-name reconciliation: University of Hong Kong (HKU). Official homepage explicitly writes The University of Hong Kong (HKU). The source label omits the article and preserves the same acronym; no separate institution created."
+    }
+  ]
+}
