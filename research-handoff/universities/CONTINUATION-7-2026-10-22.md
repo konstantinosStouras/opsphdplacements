@@ -15,3 +15,7 @@ Validation: 39 tests and all public validators passed; four relational schema te
 Next work: remaining university identity/unit reviews, unresolved historical department labels, doctoral field/credential and wider-branch checks, source-unit assertion reconciliation and live-source coverage. Zero unmatched institution labels does not justify a Stage 1 completion claim. No background research was enabled.
 
 Local preview confirms 297 routes at 181 providers. Frankfurt official-name reconciliation joins its prior separate directory/observed identity, reducing the displayed full organisation directory from 1,282 to 1,281 without removing source records. Expanded Kentucky, Frankfurt and GW evidence checked; visitor text/link audit passed.
+
+## Publication confirmed
+
+Commit 08812cd312874586e8694697824685cc56555aef published to main and the research branch. Pages run 39754070005 succeeded, including clean validation/build/deployment. Live totals verified at 297 routes, 181 providers and 1,281 joined organisations; Kentucky route and expanded evidence verified. Visitor text/link audit passed. Research-source and local-preview tabs closed; live deliverable remains open. Exact 30 changed release files are listed in the manifest.
