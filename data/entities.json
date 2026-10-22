@@ -18,7 +18,7 @@
    "phdInstitutions": 434,
    "directoryUniversities": 607,
    "firstEmployers": 493,
-   "withPrograms": 188,
+   "withPrograms": 190,
    "inBothDatabases": 210,
    "directoryOnly": 326,
    "peopleOnly": 224,
@@ -96468,7 +96468,8 @@
    "coords": null,
    "logo": null,
    "roles": [
-    "directory-university"
+    "directory-university",
+    "program-register"
    ],
    "people": null,
    "directory": {
@@ -96497,19 +96498,41 @@
     ]
    },
    "employer": null,
-   "programs": [],
+   "programs": [
+    {
+     "id": "university-of-leeds-uk--phd-analytics-technology-operations",
+     "programName": "PhD",
+     "specialization": "Analytics, Technology and Operations doctoral research",
+     "universityId": "university-of-leeds-uk",
+     "school": "Leeds University Business School",
+     "degree": "Doctor of Philosophy (PhD)",
+     "field": "Operations Management; Operations Research; Supply Chain Management",
+     "status": "active",
+     "statusAsOf": "2026-10-22"
+    }
+   ],
    "sources": [
     {
      "url": "https://www.operationsacademia.org/universities",
      "title": "Operations Academia universities directory (universities database)"
+    },
+    {
+     "url": "data/doctoral-programs.json",
+     "title": "Historical doctoral program register"
     }
    ],
    "review": {
-    "matches": [],
+    "matches": [
+     {
+      "source": "programs",
+      "program": "university-of-leeds-uk--phd-analytics-technology-operations",
+      "match": "exact"
+     }
+    ],
     "conflicts": []
    },
    "addedAt": "2026-10-16T13:49:36Z",
-   "updatedAt": "2026-10-16T13:49:36Z"
+   "updatedAt": "2026-10-22T10:34:24Z"
   },
   {
    "id": "wd:Q7895654",
@@ -96711,7 +96734,8 @@
    "logo": null,
    "roles": [
     "directory-university",
-    "first-employer"
+    "first-employer",
+    "program-register"
    ],
    "people": null,
    "directory": {
@@ -96776,7 +96800,30 @@
      }
     ]
    },
-   "programs": [],
+   "programs": [
+    {
+     "id": "university-of-massachusetts-lowell--industrial-engineering-phd",
+     "programName": "Doctor of Philosophy (Ph.D.) in Industrial Engineering",
+     "specialization": null,
+     "universityId": "university-of-massachusetts-lowell",
+     "school": "Francis College of Engineering",
+     "degree": "PhD",
+     "field": "Industrial Engineering",
+     "status": "active",
+     "statusAsOf": "2026-10-22"
+    },
+    {
+     "id": "university-of-massachusetts-lowell--business-administration-phd-decision-sciences",
+     "programName": "Ph.D. in Business Administration",
+     "specialization": "Decision Sciences option",
+     "universityId": "university-of-massachusetts-lowell",
+     "school": "Manning School of Business",
+     "degree": "Doctor of Philosophy (Ph.D.)",
+     "field": "Operations Management",
+     "status": "active",
+     "statusAsOf": "2026-10-22"
+    }
+   ],
    "sources": [
     {
      "url": "https://www.operationsacademia.org/universities",
@@ -96785,6 +96832,10 @@
     {
      "url": "data/placements.json",
      "title": "Verified first-job records (people database)"
+    },
+    {
+     "url": "data/doctoral-programs.json",
+     "title": "Historical doctoral program register"
     }
    ],
    "review": {
@@ -96793,12 +96844,22 @@
       "source": "employers",
       "employer": "University of Massachusetts Lowell (Manning School of Business)",
       "match": "wikidata"
+     },
+     {
+      "source": "programs",
+      "program": "university-of-massachusetts-lowell--industrial-engineering-phd",
+      "match": "exact"
+     },
+     {
+      "source": "programs",
+      "program": "university-of-massachusetts-lowell--business-administration-phd-decision-sciences",
+      "match": "exact"
      }
     ],
     "conflicts": []
    },
    "addedAt": "2026-10-16T13:49:36Z",
-   "updatedAt": "2026-10-20T08:28:39Z"
+   "updatedAt": "2026-10-22T10:34:24Z"
   },
   {
    "id": "wd:Q7895782",
