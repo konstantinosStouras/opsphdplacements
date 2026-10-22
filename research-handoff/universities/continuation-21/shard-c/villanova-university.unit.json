@@ -1,0 +1,88 @@
+{
+  "id": "villanova-university",
+  "status": "partial",
+  "canonicalName": "Villanova University",
+  "universitySourceUrl": "https://www.villanova.edu/university/business/faculty-and-research/faculty-by-department.html#4",
+  "checkedAt": "2026-10-22",
+  "reviewer": "Codex in Chrome",
+  "duplicateOf": null,
+  "units": [
+    {
+      "id": "villanova-university--management-operations",
+      "name": "Management & Operations",
+      "school": "Villanova School of Business",
+      "type": "department",
+      "fields": [
+        "operations-management"
+      ],
+      "sourceUrl": "https://www.villanova.edu/university/business/faculty-and-research/faculty-by-department.html#4",
+      "checkedAt": "2026-10-22",
+      "evidence": "Official Faculty Directory explicitly lists five departments and has Management & Operations heading, establishing actual combined department and school parent. Not a separate standalone OM department."
+    }
+  ],
+  "decisions": [
+    {
+      "sourceDepartmentId": "villanova-university",
+      "disposition": "not-a-unit",
+      "unitIds": [],
+      "reason": "Imported generic university-only row is institution identity, not separate department."
+    },
+    {
+      "sourceDepartmentId": "villanova-university____ba-ai",
+      "disposition": "unresolved",
+      "unitIds": [],
+      "reason": "Imported BA/AI subject acronym not a current formal department name; original official posting33341 is unavailable. Do not infer exact department from generic analytics/AI."
+    },
+    {
+      "sourceDepartmentId": "villanova-university__villanova-school-of-business__accounting-and-information-systems",
+      "disposition": "unresolved",
+      "unitIds": [],
+      "reason": "Actual Accounting & Information Systems department existence verified in official directory; relevant Ops/OR/IE remit and source-specific MIS hiring scope not yet established. Generic IS alone not in-scope."
+    },
+    {
+      "sourceDepartmentId": "villanova-university__villanova-school-of-business__management-and-operations",
+      "disposition": "replaced",
+      "unitIds": [
+        "villanova-university--management-operations"
+      ],
+      "reason": "Current actual combined department name/type and school parent verified in official faculty directory."
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.villanova.edu/university/business/faculty-and-research/faculty-by-department.html#4",
+      "checkedAt": "2026-10-22",
+      "outcome": "read",
+      "note": "Full current official business Faculty Directory read: five actual departments, exact Management & Operations and Accounting & Information Systems names. No person-history research performed."
+    },
+    {
+      "url": "https://jobs.villanova.edu/postings/33341",
+      "checkedAt": "2026-10-22",
+      "outcome": "blocked",
+      "note": "Actually opened original official BA/AI hiring source: This posting is not available. No job body or acronym/host verified."
+    },
+    {
+      "url": "https://www.villanova.edu/university/business/academics.html",
+      "checkedAt": "2026-10-22",
+      "outcome": "read",
+      "note": "Link resolves university-wide Academics/Programs finder; complete unfiltered programme text read. Displays zero despite many programme cards. Actual Doctoral filter clicked, returns no matches while other cards remain in body; filter result not trusted as absence evidence."
+    },
+    {
+      "url": "https://www.villanova.edu/content/university/engineering/academic-programs/mechanical/doctoral-program.html",
+      "checkedAt": "2026-10-22",
+      "outcome": "read",
+      "note": "Full exact Mechanical PhD concentration page read: thermal sciences, mechanics/materials, dynamics/control, bioengineering, nanotechnology; no explicit current Ops/OR/IE field in this page."
+    },
+    {
+      "url": "https://www.villanova.edu/content/university/engineering/academic-programs/sustainable/doctoral-program.html",
+      "checkedAt": "2026-10-22",
+      "outcome": "read",
+      "note": "Full exact Sustainable Engineering PhD concentration page read: broad whole-systems/STEEP, energy/environment/infrastructure/development/materials/water topics. No explicit Ops/OR/IE concentration inferred from whole-systems language."
+    }
+  ],
+  "limitations": [
+    "University finder returned contradictory zero count/no-matches with programme cards still present; no doctoral census inferred.",
+    "Civil/Environmental, Electrical/Computer, Chemical/Biological and detailed sustainable field scope remain unreviewed. Unit review remains partial for original analytics/MIS labels and wider engineering inventory.",
+    "Imported Drive ad not opened as PDF preview because current official department already verifies actual name; historical job details remain unaudited."
+  ]
+}

@@ -18,7 +18,7 @@
    "phdInstitutions": 434,
    "directoryUniversities": 608,
    "firstEmployers": 493,
-   "withPrograms": 215,
+   "withPrograms": 218,
    "inBothDatabases": 210,
    "directoryOnly": 328,
    "peopleOnly": 224,
@@ -39504,7 +39504,8 @@
    "roles": [
     "phd-institution",
     "directory-university",
-    "first-employer"
+    "first-employer",
+    "program-register"
    ],
    "people": {
     "institutions": [
@@ -39670,7 +39671,41 @@
      }
     ]
    },
-   "programs": [],
+   "programs": [
+    {
+     "id": "george-mason-university--business-operations-management-phd",
+     "programName": "PhD in Business",
+     "specialization": "Operations Management",
+     "universityId": "george-mason-university",
+     "school": "Costello College of Business",
+     "degree": "PhD",
+     "field": "Operations Management; Supply Chain Management",
+     "status": "active",
+     "statusAsOf": "2026-10-22"
+    },
+    {
+     "id": "george-mason-university--systems-engineering-operations-research-phd",
+     "programName": "PhD in Systems Engineering and Operations Research",
+     "specialization": null,
+     "universityId": "george-mason-university",
+     "school": "College of Engineering and Computing",
+     "degree": "PhD",
+     "field": "Operations Research; Industrial Engineering",
+     "status": "active",
+     "statusAsOf": "2026-10-22"
+    },
+    {
+     "id": "george-mason-university--civil-infrastructure-engineering-transportation-phd",
+     "programName": "Doctor of Philosophy in Civil and Infrastructure Engineering",
+     "specialization": "Transportation Engineering; Construction Engineering and Management research interest areas",
+     "universityId": "george-mason-university",
+     "school": "Volgenau School of Engineering, College of Engineering and Computing",
+     "degree": "PhD",
+     "field": "Operations Research; Operations Management",
+     "status": "active",
+     "statusAsOf": "2026-10-22"
+    }
+   ],
    "sources": [
     {
      "url": "https://omlist.edutool.org/phd/by-year.html",
@@ -39695,6 +39730,10 @@
     {
      "url": "data/placements.json",
      "title": "Verified first-job records (people database)"
+    },
+    {
+     "url": "data/doctoral-programs.json",
+     "title": "Historical doctoral program register"
     }
    ],
    "review": {
@@ -39728,12 +39767,27 @@
       "source": "employers",
       "employer": "George Mason University (Information Systems and Operations Management)",
       "match": "wikidata"
+     },
+     {
+      "source": "programs",
+      "program": "george-mason-university--business-operations-management-phd",
+      "match": "exact"
+     },
+     {
+      "source": "programs",
+      "program": "george-mason-university--systems-engineering-operations-research-phd",
+      "match": "exact"
+     },
+     {
+      "source": "programs",
+      "program": "george-mason-university--civil-infrastructure-engineering-transportation-phd",
+      "match": "exact"
      }
     ],
     "conflicts": []
    },
    "addedAt": "2026-10-16T13:49:36Z",
-   "updatedAt": "2026-10-20T08:28:39Z"
+   "updatedAt": "2026-10-22T12:14:06Z"
   },
   {
    "id": "wd:Q837164",
@@ -72882,7 +72936,8 @@
    "logo": null,
    "roles": [
     "directory-university",
-    "first-employer"
+    "first-employer",
+    "program-register"
    ],
    "people": null,
    "directory": {
@@ -72999,7 +73054,30 @@
      }
     ]
    },
-   "programs": [],
+   "programs": [
+    {
+     "id": "texas-state-university--engineering-management-phd",
+     "programName": "Engineering Management",
+     "specialization": null,
+     "universityId": "texas-state-university",
+     "school": "College of Science and Engineering",
+     "degree": "PhD",
+     "field": "Operations Management; Logistics",
+     "status": "active",
+     "statusAsOf": "2026-10-22"
+    },
+    {
+     "id": "texas-state-university--mechanical-manufacturing-engineering-phd",
+     "programName": "Mechanical and Manufacturing Engineering",
+     "specialization": null,
+     "universityId": "texas-state-university",
+     "school": "Ingram School of Engineering",
+     "degree": "PhD",
+     "field": "Industrial Engineering; Operations Research",
+     "status": "active",
+     "statusAsOf": "2026-10-22"
+    }
+   ],
    "sources": [
     {
      "url": "https://www.operationsacademia.org/universities",
@@ -73008,6 +73086,10 @@
     {
      "url": "data/placements.json",
      "title": "Verified first-job records (people database)"
+    },
+    {
+     "url": "data/doctoral-programs.json",
+     "title": "Historical doctoral program register"
     }
    ],
    "review": {
@@ -73021,12 +73103,22 @@
       "source": "employers",
       "employer": "Texas State University, McCoy College of Business",
       "match": "wikidata"
+     },
+     {
+      "source": "programs",
+      "program": "texas-state-university--engineering-management-phd",
+      "match": "exact"
+     },
+     {
+      "source": "programs",
+      "program": "texas-state-university--mechanical-manufacturing-engineering-phd",
+      "match": "exact"
      }
     ],
     "conflicts": []
    },
    "addedAt": "2026-10-16T13:49:36Z",
-   "updatedAt": "2026-10-20T08:28:39Z"
+   "updatedAt": "2026-10-22T12:14:06Z"
   },
   {
    "id": "wd:Q1153198",
@@ -82187,7 +82279,8 @@
    "logo": null,
    "roles": [
     "directory-university",
-    "first-employer"
+    "first-employer",
+    "program-register"
    ],
    "people": null,
    "directory": {
@@ -82287,7 +82380,30 @@
      }
     ]
    },
-   "programs": [],
+   "programs": [
+    {
+     "id": "wu-vienna--social-economic-sciences-doctorate-logistics",
+     "programName": "Doctoral Program in Social and Economic Sciences",
+     "specialization": "Transport and Logistics Management research pathway",
+     "universityId": "wu-vienna",
+     "school": null,
+     "degree": "Doktor/in der Sozial- und Wirtschaftswissenschaften, Dr.rer.soc.oec.",
+     "field": "Logistics",
+     "status": "active",
+     "statusAsOf": "2026-10-22"
+    },
+    {
+     "id": "wu-vienna--economic-social-sciences-phd-logistics",
+     "programName": "PhD Program in Economic and Social Sciences",
+     "specialization": "Transport and Logistics Management research pathway",
+     "universityId": "wu-vienna",
+     "school": null,
+     "degree": "PhD",
+     "field": "Logistics",
+     "status": "active",
+     "statusAsOf": "2026-10-22"
+    }
+   ],
    "sources": [
     {
      "url": "https://www.operationsacademia.org/universities",
@@ -82300,6 +82416,10 @@
     {
      "url": "data/placements.json",
      "title": "Verified first-job records (people database)"
+    },
+    {
+     "url": "data/doctoral-programs.json",
+     "title": "Historical doctoral program register"
     }
    ],
    "review": {
@@ -82318,12 +82438,22 @@
       "source": "employers",
       "employer": "WU Vienna University of Economics and Business, Department of Business Analytics and Decision Sciences",
       "match": "wikidata"
+     },
+     {
+      "source": "programs",
+      "program": "wu-vienna--social-economic-sciences-doctorate-logistics",
+      "match": "exact"
+     },
+     {
+      "source": "programs",
+      "program": "wu-vienna--economic-social-sciences-phd-logistics",
+      "match": "exact"
      }
     ],
     "conflicts": []
    },
    "addedAt": "2026-10-16T13:49:36Z",
-   "updatedAt": "2026-10-20T08:28:39Z"
+   "updatedAt": "2026-10-22T12:14:06Z"
   },
   {
    "id": "wd:Q349055",

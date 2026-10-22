@@ -9,3 +9,5 @@ Complete negative current doctoral inventories: Texas A&M International, Texas A
 Louisiana Tech is a separate discovery review, NOT integrated: it lacks an existing stable university ID in this frame. Current Engineering PhD and Business PhD pages and selected Computational Analysis/Modeling curriculum read; no relevant route established. Engineering/Technology Management applied doctorate not relabelled PhD. Blank linked catalogue and unexpanded application fields remain limitations. Preserve this ancillary research for official source-frame expansion, without inventing an existing university ID.
 
 Validation: 48 tests, public validators and static build passed. Expanded Florida State organisation and programme evidence passed visitor-interface audit. Publication confirmation follows. Continuation 21 is separate unpublished work. Stages 2-4 and automation remain held; continue remaining identities, source assertions and incomplete doctoral scopes.
+
+Publication confirmed: `e9dd951`, Pages run `39776380892` success; live UT San Antonio route checked, screenshot stage1-release20.png.

@@ -2,7 +2,7 @@
 
 ## Active priority order — updated 22 October 2026
 
-1. **Stage 1, active:** reconcile OM List schools, faculty-reported PhD institutions and Operations Academia universities/job postings to official university, unit and relevant doctoral provision. Current 666-record frame: 474 unit reviews complete; 108 partial, 5 blocked and 79 pending. Doctoral scope is a separate gate: 454 observations, 289 current branch scopes complete. Source-name matching alone is not verification.
+1. **Stage 1, active:** reconcile OM List schools, faculty-reported PhD institutions and Operations Academia universities/job postings to official university, unit and relevant doctoral provision. Current 666-record frame: 478 unit reviews complete; 114 partial, 5 blocked and 69 pending. Doctoral scope is a separate gate: 465 observations, 293 current branch scopes complete. Source-name matching alone is not verification.
 2. **Stage 2, held:** verify the 2,149 OM List faculty through their linked sources, separating doctorate facts, first jobs and full employment histories. Existing 1,524 verified first jobs do not establish complete histories.
 3. **Stage 3, held:** expand the people register from relevant Stage 1 department faculty pages and recursively from institutions in doctorate/employment histories; deduplicate and verify new faculty under the same evidence rules.
 4. **Stage 4, held:** enumerate historical PhD graduates through archives/Wayback and verify their careers. Begin only after the earlier gates.
@@ -326,3 +326,5 @@ Stage 1 continuation 19 (22 October): 341 routes/212 providers, 350 records; 468
 - [ ] Reconcile observed career-only organisation label `Tek de Monterrey, Moterrey` against official institution/campus evidence, alongside Rice Jones and Baruch Zicklin. Preserve raw career employer text; do not fuzzy-merge.
 
 Stage 1 continuation 20 (22 October): 345 routes/214 providers, 354 records; 474 complete unit reviews, 108 partial, 5 blocked, 79 pending. Ten untouched records examined; six unit reviews completed. Doctoral observations 454; complete scopes 289. Four new Florida State/UT San Antonio routes retain exact credentials, research pathways and joint-provider caveats. Louisiana Tech discovery review remains unmerged pending source-frame identity and qualifying evidence. Continue remaining Stage 1 checks; Stages 2-4 held.
+
+Stage 1 continuation 21 (22 October): 352 routes/217 providers, 361 records; 478 complete unit reviews, 114 partial, 5 blocked, 69 pending. Ten untouched identities examined; four unit reviews completed. Doctoral observations465, complete scopes293. WU alias reconciled with original unit dates preserved. Seven new George Mason/Texas State/WU routes; broader institutional checks and named source limitations remain incomplete. Continue Stage1; later stages held.
