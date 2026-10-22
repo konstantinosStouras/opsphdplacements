@@ -3,11 +3,11 @@
   "metadata": {
     "definition": "Individual Chrome reviews of official university names and operations units. The original directory remains in universities.json. Reviewed describes the stated source scope, not an exhaustive current or historical census.",
     "sourceRecords": 665,
-    "attempted": 528,
-    "reviewed": 438,
+    "attempted": 529,
+    "reviewed": 439,
     "partial": 85,
     "blocked": 5,
-    "pending": 137
+    "pending": 136
   },
   "records": [
     {
@@ -14434,7 +14434,7 @@
       "duplicateOf": null,
       "doctoralReview": {
         "status": "verified",
-        "checkedAt": "2026-10-21",
+        "checkedAt": "2026-10-22",
         "programmeIds": [
           "emory-university--isom-operations-management"
         ],
@@ -14450,11 +14450,24 @@
           },
           {
             "branch": "engineering",
-            "reviewState": "partial",
-            "conclusion": "No standalone engineering school in official nine-school list; full Laney technical and possible joint engineering doctorate scope remains unresolved.",
+            "reviewState": "checked",
+            "conclusion": "Complete current university PhD-filtered degree inventory read through final page. No standalone Engineering school, but actual joint Georgia Tech/Emory Biomedical Engineering doctoral offering independently followed and all eleven research-area descriptions checked; no extra Ops/OR/IE field inferred from biomedical systems/robotics. Current Mathematics doctoral research-area inventory and CODES/discrete area detail read; optimization/combinatorics methods alone not an OR doctorate. Full CSI PhD research-training/concentration scope and Health Services Research/Policy PhD two tracks read. Relevant published current programme/field scope checked, not every dissertation.",
             "sourceUrls": [
               "https://www.emory.edu/academics/schools-colleges",
-              "https://www.emory.edu/academics/degrees-programs"
+              "https://www.emory.edu/academics/degrees-programs",
+              "https://www.emory.edu/academics/degrees-programs",
+              "https://www.emory.edu/academics/degrees-programs?search=&degree=491&page=1",
+              "https://www.emory.edu/academics/degrees-programs?search=&degree=491&page=2",
+              "https://mathematics.emory.edu/graduate/grad-info.html",
+              "https://mathematics.emory.edu/research/algebra.html",
+              "https://mathematics.emory.edu/research/computational.html",
+              "https://mathematics.emory.edu/research/discrete-mathematics.html",
+              "https://www.emory.edu/academics/degrees-programs/biomedical-engineering",
+              "https://bme.gatech.edu/academics/phd-programs",
+              "https://bme.gatech.edu/research/areas-research",
+              "https://www.emory.edu/academics/degrees-programs/computer-science-and-informatics",
+              "https://computerscience.emory.edu/graduate-phd/index.html",
+              "https://sph.emory.edu/degrees-programs/phd/health-services-research-health-policy"
             ]
           }
         ],
@@ -14494,15 +14507,95 @@
             "note": "Central degree directory opened; initial dynamically loaded rows read but full doctoral/technical inventory not exhausted.",
             "checkedAt": "2026-10-21",
             "outcome": "read"
+          },
+          {
+            "url": "https://www.emory.edu/academics/degrees-programs",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Read current university degree directory, selected exact PhD degree filter and read first25 doctoral entries; current nine-school list includes no standalone Engineering school."
+          },
+          {
+            "url": "https://www.emory.edu/academics/degrees-programs?search=&degree=491&page=1",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Followed observed Load More destination and read cumulative first50 filtered PhD entries, including joint Biomedical Engineering, CSI, Mathematics, health-services and business fields."
+          },
+          {
+            "url": "https://www.emory.edu/academics/degrees-programs?search=&degree=491&page=2",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Followed observed final Load More destination and read remaining PhD fields through Women’s Gender and Sexuality Studies; no further pagination."
+          },
+          {
+            "url": "https://mathematics.emory.edu/graduate/grad-info.html",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full current Mathematics PhD programme read; direct doctoral Areas of Research link followed."
+          },
+          {
+            "url": "https://mathematics.emory.edu/research/algebra.html",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Read Mathematics research navigation: Algebra/Number Theory, Analysis/Differential Geometry, CODES, Discrete Mathematics/Combinatorics and Pedagogy."
+          },
+          {
+            "url": "https://mathematics.emory.edu/research/computational.html",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Read full CODES area, computational/applied mathematics for medical/environment/disease modelling; generic optimization as mathematical foundation not inferred Operations Research doctorate."
+          },
+          {
+            "url": "https://mathematics.emory.edu/research/discrete-mathematics.html",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Read full discrete geometry/combinatorics area; methods supporting optimization/theoretical CS do not establish an Operations Research doctoral field."
+          },
+          {
+            "url": "https://www.emory.edu/academics/degrees-programs/biomedical-engineering",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Official degree-directory entry redirected to actual joint programme at bme.gatech.edu/academics/phd-programs; no separate duplicate degree inferred."
+          },
+          {
+            "url": "https://bme.gatech.edu/academics/phd-programs",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Read full joint Georgia Tech/Emory Biomedical Engineering PhD and MD/PhD programme overview, Wallace H.Coulter Department and interdisciplinary doctoral scope."
+          },
+          {
+            "url": "https://bme.gatech.edu/research/areas-research",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Read all eleven joint BME research-area descriptions; biomedical systems modelling/robotics/health equity not automatically Operations/OR/IE provision."
+          },
+          {
+            "url": "https://www.emory.edu/academics/degrees-programs/computer-science-and-informatics",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Official degree-directory entry redirected to current Emory Computer Science department home; research/graduate overview read."
+          },
+          {
+            "url": "https://computerscience.emory.edu/graduate-phd/index.html",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Read full CSI PhD programme, Computer Science and Biomedical Informatics concentrations, joint three-department administration and all stated research-training areas; no explicit Operations field asserted."
+          },
+          {
+            "url": "https://sph.emory.edu/degrees-programs/phd/health-services-research-health-policy",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Read full current PhD Health Services Research/Health Policy overview and two exact tracks Economics, Organizations and Management. Policy/economic/OB/technology-management training not converted into Operations doctorate;2027 intake dates current."
           }
         ],
         "limitations": [
-          "Additional technical relevant doctoral research areas not fully checked."
+          "Current published doctoral programme/research-field inventory reviewed, not an exhaustive history of every dissertation or faculty project.",
+          "Emory participates in a joint Biomedical Engineering doctorate despite having no standalone engineering school; it is not excluded merely by institutional school structure. No separate relevant Operations route inferred from its stated biomedical fields.",
+          "Original verified business doctorate facts and source-check dates retained; new observations update branch scope rather than re-date programme evidence."
         ],
-        "coverageComplete": false
+        "coverageComplete": true
       },
       "addedAt": "2026-10-21T11:02:27Z",
-      "updatedAt": "2026-10-21T11:02:27Z"
+      "updatedAt": "2026-10-22T07:57:19Z"
     },
     {
       "id": "endicott-college",
@@ -18707,6 +18800,138 @@
       "updatedAt": "2026-10-21T21:55:18Z"
     },
     {
+      "id": "iim-ahmedabad",
+      "status": "reviewed",
+      "canonicalName": "Indian Institute of Management Ahmedabad",
+      "universitySourceUrl": "https://www.iima.ac.in/academics/phd/admission",
+      "checkedAt": "2026-10-22",
+      "reviewer": "Codex in Chrome",
+      "units": [
+        {
+          "id": "iim-ahmedabad--operations-and-decision-sciences",
+          "name": "Operations and Decision Sciences",
+          "school": null,
+          "type": "area",
+          "fields": [
+            "operations-management",
+            "operations-research",
+            "supply-chain",
+            "logistics"
+          ],
+          "sourceUrl": "https://www.iima.ac.in/faculty-research/areas/Operations-and-Decision-Sciences",
+          "checkedAt": "2026-10-22",
+          "evidence": "Official page explicitly identifies the Operations and Decision Sciences area, with OM, OR and statistics remit, supply-chain coordination and logistics applications. Academic-area inventory confirms the unit, without a separate engineering school."
+        }
+      ],
+      "decisions": [
+        {
+          "sourceDepartmentId": "iim-ahmedabad____management",
+          "disposition": "not-a-unit",
+          "unitIds": [
+            "iim-ahmedabad--operations-and-decision-sciences"
+          ],
+          "reason": "Imported Management is a generic discipline, not the official unit name. Official academic-area inventory identifies Operations and Decision Sciences as the relevant area."
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.iima.ac.in/academics/phd/admission",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Full institution name and eleven doctoral specializations, including Operations & Decision Sciences, explicitly stated."
+        },
+        {
+          "url": "https://www.iima.ac.in/faculty-research/areas/Operations-and-Decision-Sciences",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Official area name/type, OM/OR/SCM/logistics remit and doctoral teaching read."
+        },
+        {
+          "url": "https://www.iima.ac.in/faculty-research/areas",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Complete current academic-area inventory read; management/social-science areas, Communication and Dubai Campus entry, no separate engineering school listed."
+        },
+        {
+          "url": "https://www.iima.ac.in/faculty-research/areas/Public-Systems-Group",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Rendered page identifies Public Systems Group and doctoral course filter but does not establish a distinct relevant doctoral research field in the visible content."
+        }
+      ],
+      "limitations": [
+        "Current identity and imported generic label reconciled; this is not an exhaustive research-centre inventory. Public Systems doctoral relevance and any separate Dubai doctoral provision remain unverified; no second route or campus is inferred."
+      ],
+      "duplicateOf": null,
+      "doctoralReview": {
+        "status": "verified",
+        "checkedAt": "2026-10-22",
+        "programmeIds": [
+          "iim-ahmedabad--phd-operations-and-decision-sciences"
+        ],
+        "branches": [
+          {
+            "branch": "business",
+            "reviewState": "partial",
+            "conclusion": "Eleven current doctoral specializations read in central admissions page; Operations & Decision Sciences qualification and host verified. Public Systems page lacks sufficient visible field detail to resolve potential additional relevance.",
+            "sourceUrls": [
+              "https://www.iima.ac.in/academics/phd/admission",
+              "https://www.iima.ac.in/faculty-research/areas/Operations-and-Decision-Sciences",
+              "https://www.iima.ac.in/faculty-research/areas/Public-Systems-Group"
+            ]
+          },
+          {
+            "branch": "engineering",
+            "reviewState": "not-present",
+            "conclusion": "Current central doctoral specialization and academic-area inventories list no separate engineering school or engineering doctoral branch. The verified operations route is in the management doctorate.",
+            "sourceUrls": [
+              "https://www.iima.ac.in/academics/phd/admission",
+              "https://www.iima.ac.in/faculty-research/areas"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://www.iima.ac.in/academics/phd",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Official PhD programme entry and original-research purpose read."
+          },
+          {
+            "url": "https://www.iima.ac.in/academics/phd/admission",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Explicit PhD award, eleven specializations, coursework/comprehensive exam/thesis structure and current 2027 eligibility deadlines read."
+          },
+          {
+            "url": "https://www.iima.ac.in/faculty-research/areas/Operations-and-Decision-Sciences",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Area OM/OR, supply-chain/logistics scope, PhD core and elective curriculum, and doctorate participation read."
+          },
+          {
+            "url": "https://www.iima.ac.in/faculty-research/areas",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Complete current academic-area inventory read; no separate engineering branch listed."
+          },
+          {
+            "url": "https://www.iima.ac.in/faculty-research/areas/Public-Systems-Group",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Sparse rendered page identifies group and PhD course filter; no additional relevant specialization inferred."
+          }
+        ],
+        "limitations": [
+          "Earlier brochure extension blockage is retained in continuation-5 source-limitations metadata. Current findings use actually read public HTML evidence, not the incomplete brochure.",
+          "Public Systems relevance and separate Dubai provision remain unresolved; coverage is not complete."
+        ],
+        "coverageComplete": false
+      },
+      "addedAt": "2026-10-22T07:57:19Z",
+      "updatedAt": "2026-10-22T07:57:19Z"
+    },
+    {
       "id": "iim-bangalore",
       "status": "reviewed",
       "canonicalName": "Indian Institute of Management Bangalore",
@@ -20361,30 +20586,29 @@
       ],
       "duplicateOf": null,
       "doctoralReview": {
-        "status": "verified",
+        "status": "partial",
         "checkedAt": "2026-10-22",
         "programmeIds": [
+          "korea-university--doctoral-industrial-management-engineering",
           "korea-university--phd-business-administration-lsom"
         ],
         "branches": [
           {
-            "branch": "business",
-            "reviewState": "checked",
-            "sourceUrls": [
-              "https://biz.korea.ac.kr/eng/msphd/intro.html",
-              "https://biz.korea.ac.kr/eng/msphd/process.html"
-            ],
-            "conclusion": "Fullcurrent BusinessAdministrationPhD majors inventory read; LSOMdoctoralmajor explicit, othermajorslisted; BusinessAnalyticsmasteronly."
-          },
-          {
             "branch": "engineering",
             "reviewState": "partial",
             "sourceUrls": [
-              "https://ie.korea.edu/ie_en/about/overview.do",
-              "https://ie.korea.edu/ie_en/guide/admission/admission_grad.do",
-              "https://ie.korea.edu/ie_en/guide/curriculum/g_curriculum.do"
+              "https://graduate2.korea.ac.kr/department/major.html",
+              "https://graduate2.korea.ac.kr/academic/info04.html"
             ],
-            "conclusion": "IndustrialManagementEngineering unit andOR/SCMscope verified, but blank English graduateadmissionpage and2017PDFonlycurriculum leave exact current doctoralcredential unresolved. No engineeringPhD inferred."
+            "conclusion": "Full central engineering and science doctoral field inventory read. Industrial Management Engineering doctoral provision and research dissertation requirements are explicit, but exact award title remains unresolved. Industrial Artificial Intelligence is not separately counted without explicit operations scope."
+          },
+          {
+            "branch": "business",
+            "reviewState": "checked",
+            "sourceUrls": [
+              "https://graduate2.korea.ac.kr/department/major.html"
+            ],
+            "conclusion": "Central catalogue independently confirms Seoul Business Administration doctoral LSOM field and distinguishes master-only Business Analytics. Preserve existing verified LSOM PhD and original evidence dates."
           }
         ],
         "sources": [
@@ -20417,15 +20641,43 @@
             "checkedAt": "2026-10-22",
             "outcome": "read",
             "note": "Graduatecurriculum entry opened; dated2017 entry supplies headings plus PDFattachment, no exact doctoralcredential in HTML. Attachment not read."
+          },
+          {
+            "url": "https://graduate2.korea.ac.kr/department/major.html",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full current central graduate catalogue read, spanning Seoul and explicitly marked Sejong colleges. Seoul engineering includes Industrial Management Engineering and Industrial Artificial Intelligence doctoral fields; business lists doctoral LSOM. Sejong Corporate Management separately lists Operations Management and is retained only as a distinct-campus discovery lead."
+          },
+          {
+            "url": "https://graduate2.korea.ac.kr/academic/info04.html",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Central doctoral dissertation requirements require comprehensive and language examinations, dissertation examination and final dissertation submission. This establishes research nature but does not itself state exact award title."
+          },
+          {
+            "url": "https://graduate2.korea.ac.kr/about/factsheet.html",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Current official graduate factsheet read with 2025 source notes; does not provide exact engineering doctoral award title."
+          },
+          {
+            "url": "https://graduate.korea.ac.kr/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Current Korean graduate school homepage read; campus contacts distinguish Seoul and Sejong. No exact engineering credential inferred from homepage."
           }
         ],
         "limitations": [
-          "Engineering doctoralprovision remains unresolved; explicit unit and graduatepage are insufficient proof of exact doctoral award. Broaderinstitutionalcoverage incomplete; Seoul Anamidentity preserved, no Sejongcampusmerge."
+          "Engineering doctoralprovision remains unresolved; explicit unit and graduatepage are insufficient proof of exact doctoral award. Broaderinstitutionalcoverage incomplete; Seoul Anamidentity preserved, no Sejongcampusmerge.",
+          "Additive follow-up: retain all existing Business Administration LSOM programme records, sources and check dates.",
+          "Exact engineering award title unresolved; generic doctoral wording not converted to PhD.",
+          "Distinct Sejong Operations Management doctoral field requires separate campus identity and award review; no merge into Seoul programme.",
+          "Other generic engineering fields, smart manufacturing and mathematical methods are not automatically qualifying Operations routes."
         ],
         "coverageComplete": false
       },
       "addedAt": "2026-10-20T09:19:47Z",
-      "updatedAt": "2026-10-22T06:53:24Z"
+      "updatedAt": "2026-10-22T07:57:19Z"
     },
     {
       "id": "ku-leuven",
@@ -21847,22 +22099,27 @@
             "branch": "business",
             "reviewState": "checked",
             "sourceUrls": [
-              "https://www.ln.edu.hk/rpg/admission/list-of-programmes",
               "https://www.ln.edu.hk/rpg/research-area/business",
               "https://www.ln.edu.hk/orm",
-              "https://www.ln.edu.hk/rpg/admission/list-of-programmes/collaborative-programmes/double-phd-degree-programme-in-business-with-south-china-university-of-technology-china"
+              "https://www.ln.edu.hk/rpg/admission/list-of-programmes/collaborative-programmes/double-phd-degree-programme-in-business-with-south-china-university-of-technology-china",
+              "https://www.ln.edu.hk/rpg/admission/list-of-programmes/collaborative-programmes/double-phd-degree-programme-in-mathematics-and-business-with-renmin-university-of-china-ruc-china",
+              "https://www.ln.edu.hk/rpg/admission/list-of-programmes/collaborative-programmes/Double-PhD-Degree-Programme-in-Economics-with-Shandong-University",
+              "https://www.ln.edu.hk/rpg/admission/list-of-programmes/collaborative-programmes/double-phd-degree-programme-in-economics-with-wuhan-university"
             ],
-            "conclusion": "Business PhD Operations Management is explicit and mapped to ORM. Joint Business double degree with SCUT is documented but its precise Operations field entry is unresolved; other joint options not individually examined."
+            "conclusion": "Current Business Operations Management PhD and its department host remain verified. All six joint programme pages are now accounted for, including earlier SCUT Business check: they lead to existing Lingnan Business, Data Science or Economics awards; no separately stated Operations doctorate was added from a joint title. Preserve partner awards and distinct thesis requirements in sources."
           },
           {
             "branch": "engineering",
-            "reviewState": "partial",
+            "reviewState": "checked",
             "sourceUrls": [
-              "https://www.ln.edu.hk/rpg/admission/list-of-programmes",
               "https://www.ln.edu.hk/rpg/research-area/data-science/data-science",
-              "https://www.ln.edu.hk/faculties-and-units/faculties-and-departments"
+              "https://www.ln.edu.hk/faculties-and-units/faculties-and-departments",
+              "https://www.ln.edu.hk/rpg/research-area/other/environmental-science",
+              "https://www.ln.edu.hk/rpg/research-area/other/sustainability",
+              "https://www.ln.edu.hk/rpg/admission/list-of-programmes/collaborative-programmes/double-phd-degree-programme-in-data-science-with-chongqing-university-china",
+              "https://www.ln.edu.hk/rpg/admission/list-of-programmes/collaborative-programmes/double-phd-degree-programme-in-data-science-with-shandong-university-sdu-china"
             ],
-            "conclusion": "No separate engineering faculty in current units inventory. Technical Data Science PhD explicitly covers OR and logistics research. Environmental Science/Sustainability and remaining joint doctoral field scopes have not been exhausted."
+            "conclusion": "Current university academic units and doctoral inventory contain no separate engineering faculty. Technical Data Science PhD explicitly covers OR and logistics as previously verified. Remaining Environmental Science and Sustainability doctoral research lists read; generic green manufacturing, transport, materials and control applications do not establish another qualifying Operations doctorate."
           }
         ],
         "sources": [
@@ -21901,17 +22158,60 @@
             "checkedAt": "2026-10-22",
             "outcome": "read",
             "note": "Current Business double PhD with SCUT awards Lingnan PhD Business and SCUT PhD Management, separate theses examinations and current 15 January 2027 application deadline. Exact Operations field eligibility not stated; no additional independent operations route inferred."
+          },
+          {
+            "url": "https://www.ln.edu.hk/rpg/research-area/other/environmental-science",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full current Environmental Science doctoral research area list read: urban environment/health, renewable energy and battery systems, ecology and conservation. No explicit OR, Ops, IE or logistics doctoral field established."
+          },
+          {
+            "url": "https://www.ln.edu.hk/rpg/research-area/other/sustainability",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full current Sustainability doctoral research field list read. Materials, energy, carbon, environmental and infrastructure/AI topics include green manufacturing and intelligent transport, but do not explicitly establish an additional OR/Ops/IE/logistics doctoral field. Broad application labels not promoted to another route."
+          },
+          {
+            "url": "https://www.ln.edu.hk/rpg/admission/list-of-programmes/collaborative-programmes/double-phd-degree-programme-in-mathematics-and-business-with-renmin-university-of-china-ruc-china",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full current joint Mathematics and Business programme read: Lingnan PhD in Business and Renmin PhD in Mathematics, separate examinations and existing Lingnan Business curriculum. No separately specified Operations field; no additional independent Lingnan degree type counted."
+          },
+          {
+            "url": "https://www.ln.edu.hk/rpg/admission/list-of-programmes/collaborative-programmes/double-phd-degree-programme-in-data-science-with-chongqing-university-china",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full current joint Data Science programme read: Lingnan School of Data Science with AI/Industrial Data Science divisions, existing 14-credit Data Science PhD requirements; separate Lingnan and Chongqing awards and distinct theses. Lingnan award overlaps its existing Data Science programme."
+          },
+          {
+            "url": "https://www.ln.edu.hk/rpg/admission/list-of-programmes/collaborative-programmes/double-phd-degree-programme-in-data-science-with-shandong-university-sdu-china",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full current joint Data Science programme read: Lingnan School of Data Science and Shandong School of Control Science and Engineering; existing Lingnan Data Science PhD curriculum and separate institutional thesis examinations. No second independent Lingnan Data Science degree counted."
+          },
+          {
+            "url": "https://www.ln.edu.hk/rpg/admission/list-of-programmes/collaborative-programmes/Double-PhD-Degree-Programme-in-Economics-with-Shandong-University",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full current joint Economics programme read: two Economics PhD awards with distinct theses, Lingnan Department of Economics. No explicit qualifying Operations doctoral field on the programme page."
+          },
+          {
+            "url": "https://www.ln.edu.hk/rpg/admission/list-of-programmes/collaborative-programmes/double-phd-degree-programme-in-economics-with-wuhan-university",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full current joint Economics programme read: two Economics PhD awards, two theses/examinations and Lingnan Department of Economics. No explicit qualifying Operations doctoral field on the programme page."
           }
         ],
         "limitations": [
-          "Joint doctoral options and Environmental Science/Sustainability field inventories remain to be examined before complete institutional scope is claimed.",
-          "Joint award paths are not automatically counted again as independent degrees in the same regular Business or Data Science PhD field.",
-          "Distinct Hong Kong institution; no namesake institution or mainland partner identity merge."
+          "Current published business and technical doctoral scope checked; historical worldwide programme completeness is not claimed.",
+          "Joint degree arrangements confer separate partner awards subject to their requirements; this register preserves one existing Lingnan Business route and one Data Science route rather than duplicating the same Lingnan award for each partner. No partner institution identity merge.",
+          "Specific joint-cohort access to Operations supervisors is not independently guaranteed by a generic joint Business title. No new joint Operations route inferred; precise topic approvals remain individual.",
+          "Earlier programme facts, IDs and per-fact check dates retained; new observations extend coverage only."
         ],
-        "coverageComplete": false
+        "coverageComplete": true
       },
       "addedAt": "2026-10-20T09:25:45Z",
-      "updatedAt": "2026-10-22T07:18:58Z"
+      "updatedAt": "2026-10-22T07:57:19Z"
     },
     {
       "id": "london-business-school",
@@ -45936,7 +46236,7 @@
       ],
       "duplicateOf": null,
       "addedAt": "2026-10-20T09:43:28Z",
-      "updatedAt": "2026-10-22T07:18:58Z",
+      "updatedAt": "2026-10-22T07:57:19Z",
       "doctoralReview": {
         "status": "partial",
         "checkedAt": "2026-10-22",
@@ -45954,11 +46254,12 @@
           {
             "branch": "engineering",
             "reviewState": "partial",
-            "conclusion": "Engineering PhD explicitly lists Engineering Management among eleven concentrations and requires original thesis/defense. Relevant operations/OR/industrial-engineering field within that concentration has not been established; no route added from generic management title. ECE departmental graduate research is power/control/computing, not inferred OR from energy optimization.",
+            "conclusion": "Engineering PhD explicitly lists Engineering Management among eleven concentrations and requires original thesis/defense. Relevant operations/OR/industrial-engineering field within that concentration has not been established; no route added from generic management title. ECE departmental graduate research is power/control/computing, not inferred OR from energy optimization. Follow-up current ESM inventory explicitly verifies an Operations Research course, but course availability plus a broad Engineering Management PhD concentration does not establish OR doctoral research provision.",
             "sourceUrls": [
               "https://catalog.uaf.edu/phd/engineering/",
               "https://catalog.uaf.edu/academic-departments/electrical-computer-engineering/",
-              "https://catalog.uaf.edu/academic-departments/civil-geological-environmental-engineering/"
+              "https://catalog.uaf.edu/academic-departments/civil-geological-environmental-engineering/",
+              "https://catalog.uaf.edu/courses/esm/"
             ]
           },
           {
@@ -46022,10 +46323,17 @@
             "checkedAt": "2026-10-22",
             "outcome": "read",
             "note": "Full department overview read. Engineering management appears in masters context, not an explicit doctoral Operations/OR specialization. Generic combined engineering doctorate retained without qualification inference."
+          },
+          {
+            "url": "https://catalog.uaf.edu/courses/esm/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full current ESM course catalogue individually read in Chrome. Explicit ESM F621 Operations Research covers LP, inventory, queuing, simulation and dynamic programming, under Civil/Geological/Environmental Engineering. F699 describes thesis/dissertation research but page does not assign OR as a doctoral research field."
           }
         ],
         "limitations": [
-          "Engineering Management concentration relevance, Mathematics doctoral research fields and individualized Interdisciplinary Studies route scope remain unresolved. No doctoral route assigned from concentration title, optimization method or generic doctoral provision alone."
+          "Engineering Management concentration relevance, Mathematics doctoral research fields and individualized Interdisciplinary Studies route scope remain unresolved. No doctoral route assigned from concentration title, optimization method or generic doctoral provision alone.",
+          "Current ESM OR course observation adds explicit disciplinary teaching evidence without resolving the doctoral research-field gate. No programme promoted on a course-to-degree inference."
         ],
         "coverageComplete": false
       }
@@ -48614,22 +48922,22 @@
       "id": "university-of-central-florida",
       "status": "reviewed",
       "canonicalName": "University of Central Florida",
-      "universitySourceUrl": "https://www.iems.ucf.edu/",
-      "checkedAt": "2026-10-20",
+      "universitySourceUrl": "https://www.ucf.edu/degree/industrial-engineering-phd/",
+      "checkedAt": "2026-10-22",
       "reviewer": "Codex in Chrome",
       "units": [
         {
           "id": "university-of-central-florida--industrial-engineering-management-systems",
           "name": "Department of Industrial Engineering and Management Systems (IEMS)",
-          "school": null,
+          "school": "College of Engineering and Computer Science",
           "type": "department",
           "fields": [
             "industrial-engineering",
             "operations-research"
           ],
-          "sourceUrl": "https://www.iems.ucf.edu/",
-          "checkedAt": "2026-10-20",
-          "evidence": "Official welcome spells out full department name and acronym and confirms industrial engineering education and multidisciplinary research."
+          "sourceUrl": "https://www.ucf.edu/degree/industrial-engineering-phd/",
+          "checkedAt": "2026-10-22",
+          "evidence": "Official current university Industrial Engineering PhD page explicitly names full IEMS department and its College of Engineering and Computer Science host; earlier department identity observation retained in sources."
         }
       ],
       "decisions": [
@@ -48658,14 +48966,77 @@
           "checkedAt": "2026-10-20",
           "outcome": "read",
           "note": "Current Barry S. Miller College of Business branding and program overview reviewed."
+        },
+        {
+          "url": "https://www.ucf.edu/degree/industrial-engineering-phd/",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Full official degree page individually read in Chrome: exact credential, college, department, relevant doctoral research areas and admission pathways."
         }
       ],
       "limitations": [
-        "Intelligent Work Systems initiative is not presented as an existing academic department; engineering parent college left null because name not established on reviewed department welcome."
+        "Prior Intelligent Work Systems imported label remains a chair/initiative observation, not an existing department. Engineering parent college is now explicitly established on current official degree page; no unit identity change."
       ],
       "duplicateOf": null,
       "addedAt": "2026-10-20T10:06:22Z",
-      "updatedAt": "2026-10-20T10:06:22Z"
+      "updatedAt": "2026-10-22T07:57:19Z",
+      "doctoralReview": {
+        "status": "verified",
+        "checkedAt": "2026-10-22",
+        "programmeIds": [
+          "university-of-central-florida--industrial-engineering-phd"
+        ],
+        "branches": [
+          {
+            "branch": "business",
+            "reviewState": "checked",
+            "conclusion": "Complete current business PhD four-track inventory read (Accounting, Finance, Management, Marketing), plus full Management track field/curriculum page: Entrepreneurship, HR, OB and Strategy, no relevant operations research doctorate established.",
+            "sourceUrls": [
+              "https://business.ucf.edu/degree/business-administration-phd/",
+              "https://business.ucf.edu/degree/business-administration-phd/management-ph-d-program/"
+            ]
+          },
+          {
+            "branch": "engineering",
+            "reviewState": "partial",
+            "conclusion": "Exact Industrial Engineering doctoral route and current IEMS department verified. Full wider college doctoral inventory and other mathematical relevant branches not exhausted.",
+            "sourceUrls": [
+              "https://www.ucf.edu/degree/industrial-engineering-phd/",
+              "https://iems.ucf.edu/"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://www.ucf.edu/degree/industrial-engineering-phd/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full official degree page individually read in Chrome: exact credential, college, department, relevant doctoral research areas and admission pathways."
+          },
+          {
+            "url": "https://iems.ucf.edu/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full current department welcome read; full IEMS department identity confirmed."
+          },
+          {
+            "url": "https://business.ucf.edu/degree/business-administration-phd/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full four-track business doctoral inventory read, next Fall2027 intake."
+          },
+          {
+            "url": "https://business.ucf.edu/degree/business-administration-phd/management-ph-d-program/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full Management doctoral scope/curriculum read; incidental profile/testimonial text not collected as graduate/career evidence."
+          }
+        ],
+        "limitations": [
+          "Known Industrial Engineering route verified; wider university doctoral branch completeness remains partial. No eligible business route inferred from general Management label."
+        ],
+        "coverageComplete": false
+      }
     },
     {
       "canonicalName": "University of Chicago",
