@@ -5,6 +5,7 @@ import assert from 'node:assert/strict';
 import {fold} from '../assets/model.js';
 import {universityRows} from '../assets/university-model.js';
 import {organisationRows} from '../assets/organisation-model.js';
+import {reconcileSourceUnit} from './source-unit-reconciliation.mjs';
 
 const root=path.resolve(import.meta.dirname,'..'),dir=path.join(root,'research-handoff/priorities');
 const read=file=>JSON.parse(fs.readFileSync(path.join(root,file),'utf8'));
@@ -73,13 +74,24 @@ for(const o of catalogue.observations){
  c.observations.push(o);
 }
 const sourceChecks=new Map();
-for(const m of matched){const id=m.matchedOrganisationId||m.matchedGroupId;const check=sourceChecks.get(id)||{id,officialUnitComparison:'pending-source-reconciliation',sourceAssertions:[]};check.sourceAssertions.push({source:m.source,sourceRecordId:m.sourceRecordId,schoolAsListed:m.school||null,departmentAsListed:m.department||null});sourceChecks.set(id,check);}
+for(const m of matched){
+ const id=m.matchedOrganisationId||m.matchedGroupId;
+ const check=sourceChecks.get(id)||{id,officialUnitComparison:'pending-source-reconciliation',sourceAssertions:[]};
+ const ids=m.matchedImportedUniversityIds||grouped.find(g=>g.id===m.matchedGroupId)?.originals.map(o=>o.id)||[];
+ const reconciliation=reconcileSourceUnit(m,ids,universities.records,reviews.records);
+ check.sourceAssertions.push({source:m.source,sourceRecordId:m.sourceRecordId,schoolAsListed:m.school||null,departmentAsListed:m.department||null,reconciliation});sourceChecks.set(id,check);
+}
+const unitAssertionStates={};
+for(const check of sourceChecks.values()){
+ for(const a of check.sourceAssertions)unitAssertionStates[a.reconciliation.state]=(unitAssertionStates[a.reconciliation.state]||0)+1;
+ check.officialUnitComparison=check.sourceAssertions.every(a=>['no-unit-assertion','accounted-for-by-existing-decision'].includes(a.reconciliation.state))?'all-source-unit-assertions-accounted-for':'pending-source-reconciliation';
+}
 save('stage-1-university-queue.json',{
  asOf:reviews.records.flatMap(r=>[r.checkedAt,r.doctoralReview?.checkedAt]).filter(Boolean).sort().at(-1),phase:'active-source-reconciliation',publishedSourceRecords:universities.records.length,publishedReviewCounts:reviews.metadata,
  completionGate:'First verify PhD institutions reported by OM List faculty, then expand to other university/job-source candidates. Verify current relevant doctoral programmes across business and engineering, official university/unit identities and aliases. Unit reviews alone do not establish doctoral eligibility or Stage 1 completion.',
  doctoralPriorityQueue:'stage-1-doctoral-priority-queue.json',
  sourceCoverageGate:'Public compiled Operations Academia university/current-and-archived job files, public directory/archive corrections and all 202 OM List school rows frozen. Institutional identities and every additional unit assertion still require adjudication; candidate labels are not additional verified universities. No private/held submissions were accessed.',
- sourceCatalogues:catalogueFiles,matchedInstitutionSourceChecks:[...sourceChecks.values()],matchedObservations:matched.length,excludedObservations:excluded.length,exclusions:excluded,
+ sourceCatalogues:catalogueFiles,unitAssertionStates,matchedInstitutionSourceChecks:[...sourceChecks.values()],matchedObservations:matched.length,excludedObservations:excluded.length,exclusions:excluded,
  existingFollowUps:universities.records.filter(u=>!reviews.records.some(r=>r.id===u.id&&r.status==='reviewed')).map(u=>({id:u.id,name:u.name,status:reviews.records.find(r=>r.id===u.id)?.status||'pending'})),
  candidates:[...candidates.values()].sort((a,b)=>a.nameAsListed.localeCompare(b.nameAsListed))
 });
