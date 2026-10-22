@@ -3,11 +3,11 @@
   "metadata": {
     "definition": "Individual Chrome reviews of official university names and operations units. The original directory remains in universities.json. Reviewed describes the stated source scope, not an exhaustive current or historical census.",
     "sourceRecords": 666,
-    "attempted": 607,
-    "reviewed": 486,
-    "partial": 116,
+    "attempted": 613,
+    "reviewed": 490,
+    "partial": 118,
     "blocked": 5,
-    "pending": 59
+    "pending": 53
   },
   "records": [
     {
@@ -22450,15 +22450,22 @@
             "checkedAt": "2026-10-21",
             "outcome": "read",
             "note": "Official2025 STEM designation description for current Scheller PhD and MS Major in Management; no separate DBA award inferred from ranking badge."
+          },
+          {
+            "url": "https://www.isye.gatech.edu/academics/doctoral",
+            "checkedAt": "2026-10-22",
+            "outcome": "blocked",
+            "note": "Alias continuation attempted the current doctoral source in Chrome; browser explicitly returned connection timeout. No reread or refreshed programme verification claimed. Previously individually read 21 October source observations retained with their original dates."
           }
         ],
         "limitations": [
-          "Current business/ISyE/ACO Operations scope checked; no all-disciplines or historical census claim. Generic interdisciplinary Bioinformatics/Computational Science/Machine Learning degrees not classified solely from participation in ISyE."
+          "Current business/ISyE/ACO Operations scope checked; no all-disciplines or historical census claim. Generic interdisciplinary Bioinformatics/Computational Science/Machine Learning degrees not classified solely from participation in ISyE.",
+          "Same four existing canonical programme IDs reused for the ISyE source alias; no additional degrees/providers. All programme and branch facts retain original 21 October checks. The 22 October doctoral-source attempt timed out."
         ],
         "coverageComplete": true
       },
       "addedAt": "2026-10-21T11:14:34Z",
-      "updatedAt": "2026-10-21T11:14:34Z"
+      "updatedAt": "2026-10-22T12:29:09Z"
     },
     {
       "id": "georgia-southern-university",
@@ -22704,6 +22711,125 @@
       "updatedAt": "2026-10-22T12:21:01Z"
     },
     {
+      "id": "georgia-southwestern-state-university",
+      "status": "reviewed",
+      "canonicalName": "Georgia Southwestern State University",
+      "universitySourceUrl": "https://www.gsw.edu/college-of-business-and-computing/index",
+      "checkedAt": "2026-10-22",
+      "reviewer": "Codex in Chrome",
+      "units": [],
+      "decisions": [
+        {
+          "sourceDepartmentId": "georgia-southwestern-state-university__college-of-business-and-computing__management",
+          "disposition": "not-a-unit",
+          "unitIds": [],
+          "reason": "Current official College of Business and Computing and Management page expressly identify Management as a Bachelor of Business Administration major. No separately constituted Management department is established by the imported label; generic business/process leadership is not converted into an Operations unit."
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.gsw.edu/college-of-business-and-computing/index",
+          "note": "Read full current College of Business and Computing overview, all business/computing undergraduate majors and graduate/certificate offerings. Management is listed as undergraduate major; Department of Computing explicitly exists separately. Generic AACSB description about bachelor’s/master’s/doctoral business schools is accreditation background, not evidence GSW awards PhDs.",
+          "checkedAt": "2026-10-22",
+          "outcome": "read"
+        },
+        {
+          "url": "https://www.gsw.edu/college-of-business-and-computing/management",
+          "note": "Read full BBA in Management page, programme details, degree level, careers and college context. Management is expressly a degree major. Curriculum link is an XLSX and was not opened/read in Chrome; no course-level scope claimed from that file.",
+          "checkedAt": "2026-10-22",
+          "outcome": "read"
+        },
+        {
+          "url": "https://www.gsw.edu/admissions/graduate/index",
+          "note": "Read full Graduate Admissions page and all three current graduate provider categories: Business and Computing, Nursing, Education; followed the observed All Graduate Programs inventory link.",
+          "checkedAt": "2026-10-22",
+          "outcome": "read"
+        },
+        {
+          "url": "https://www.gsw.edu/degrees",
+          "note": "Read full undergraduate programme panel, then selected Graduate and read the entire graduate panel. Graduate awards: MBA, MEd fields, Education Specialist fields, MS Computer Science and MSN fields. No doctoral row. Undergraduate pre-engineering explicitly Regents’ Engineering Pathway, not direct doctorate.",
+          "checkedAt": "2026-10-22",
+          "outcome": "read"
+        },
+        {
+          "url": "https://www.gsw.edu/college-of-business-and-computing/mba-program",
+          "note": "Read full displayed MBA overview/programme details and admission overview. Broad business simulation in global manufacturing context does not establish a distinct Ops department or research doctorate. Collapsed admissions detail not expanded; curriculum XLSX not read.",
+          "checkedAt": "2026-10-22",
+          "outcome": "read"
+        }
+      ],
+      "limitations": [
+        "Management is verified as a major rather than a separate department. Detailed curriculum spreadsheets were not reviewed; no exhaustive claim about all Operations teaching in the college.",
+        "No research doctorate is listed in the full current institutional Graduate panel; generic AACSB wording about doctoral business schools is not institutional award evidence."
+      ],
+      "duplicateOf": null,
+      "doctoralReview": {
+        "status": "no-qualifying-programme-verified",
+        "checkedAt": "2026-10-22",
+        "programmeIds": [],
+        "branches": [
+          {
+            "branch": "business",
+            "reviewState": "checked",
+            "conclusion": "Complete current institutional Graduate panel and business-college programme list read. Business award is MBA; computing award is MS. No relevant academic research doctorate listed. Undergraduate Management is BBA, and AACSB’s generic doctoral-school wording is not an institutional degree.",
+            "sourceUrls": [
+              "https://www.gsw.edu/college-of-business-and-computing/index",
+              "https://www.gsw.edu/admissions/graduate/index",
+              "https://www.gsw.edu/degrees",
+              "https://www.gsw.edu/college-of-business-and-computing/mba-program"
+            ]
+          },
+          {
+            "branch": "engineering",
+            "reviewState": "checked",
+            "conclusion": "Complete current institutional Undergraduate and Graduate panels read. Graduate provision is master’s and Education Specialist only; pre-engineering is an undergraduate transfer pathway. No engineering/IE/OR doctorate appears in current direct-award inventory.",
+            "sourceUrls": [
+              "https://www.gsw.edu/admissions/graduate/index",
+              "https://www.gsw.edu/degrees"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://www.gsw.edu/college-of-business-and-computing/index",
+            "note": "Read full current College of Business and Computing overview, all business/computing undergraduate majors and graduate/certificate offerings. Management is listed as undergraduate major; Department of Computing explicitly exists separately. Generic AACSB description about bachelor’s/master’s/doctoral business schools is accreditation background, not evidence GSW awards PhDs.",
+            "checkedAt": "2026-10-22",
+            "outcome": "read"
+          },
+          {
+            "url": "https://www.gsw.edu/college-of-business-and-computing/management",
+            "note": "Read full BBA in Management page, programme details, degree level, careers and college context. Management is expressly a degree major. Curriculum link is an XLSX and was not opened/read in Chrome; no course-level scope claimed from that file.",
+            "checkedAt": "2026-10-22",
+            "outcome": "read"
+          },
+          {
+            "url": "https://www.gsw.edu/admissions/graduate/index",
+            "note": "Read full Graduate Admissions page and all three current graduate provider categories: Business and Computing, Nursing, Education; followed the observed All Graduate Programs inventory link.",
+            "checkedAt": "2026-10-22",
+            "outcome": "read"
+          },
+          {
+            "url": "https://www.gsw.edu/degrees",
+            "note": "Read full undergraduate programme panel, then selected Graduate and read the entire graduate panel. Graduate awards: MBA, MEd fields, Education Specialist fields, MS Computer Science and MSN fields. No doctoral row. Undergraduate pre-engineering explicitly Regents’ Engineering Pathway, not direct doctorate.",
+            "checkedAt": "2026-10-22",
+            "outcome": "read"
+          },
+          {
+            "url": "https://www.gsw.edu/college-of-business-and-computing/mba-program",
+            "note": "Read full displayed MBA overview/programme details and admission overview. Broad business simulation in global manufacturing context does not establish a distinct Ops department or research doctorate. Collapsed admissions detail not expanded; curriculum XLSX not read.",
+            "checkedAt": "2026-10-22",
+            "outcome": "read"
+          }
+        ],
+        "limitations": [
+          "Current source-bounded institutional award inventory conclusion, not historical or permanent absence. Detailed undergraduate/MBA curriculum spreadsheets are unreviewed; that does not create doctoral eligibility."
+        ],
+        "coverageComplete": true
+      },
+      "addedAt": "2026-10-22T12:29:09Z",
+      "updatedAt": "2026-10-22T12:29:09Z"
+    },
+    {
       "id": "georgia-state-university",
       "status": "partial",
       "canonicalName": "Georgia State University",
@@ -22877,6 +23003,252 @@
       },
       "addedAt": "2026-10-21T20:31:33Z",
       "updatedAt": "2026-10-21T20:31:33Z"
+    },
+    {
+      "id": "georgia-tech-isye",
+      "status": "reviewed",
+      "canonicalName": "Georgia Institute of Technology",
+      "universitySourceUrl": "https://www.isye.gatech.edu/academics/doctoral",
+      "checkedAt": "2026-10-21",
+      "reviewer": "Codex in Chrome",
+      "units": [
+        {
+          "id": "georgia-institute-of-technology--industrial-systems-engineering",
+          "name": "H. Milton Stewart School of Industrial and Systems Engineering",
+          "school": "College of Engineering",
+          "type": "school",
+          "fields": [
+            "industrial-engineering",
+            "operations-research",
+            "operations-management",
+            "supply-chain",
+            "logistics"
+          ],
+          "sourceUrl": "https://www.isye.gatech.edu/academics/doctoral",
+          "checkedAt": "2026-10-21",
+          "evidence": "Official School of ISyE under College of Engineering explicitly hosts separate IE and OR PhDs; IE includes supply-chain/manufacturing systems and OR quantitative methodology."
+        },
+        {
+          "id": "georgia-institute-of-technology--operations-management",
+          "name": "Operations Management",
+          "school": "Scheller College of Business",
+          "type": "area",
+          "fields": [
+            "operations-management",
+            "operations-research",
+            "supply-chain",
+            "logistics"
+          ],
+          "sourceUrl": "https://www.scheller.gatech.edu/academics-research/operations-management/index.html",
+          "checkedAt": "2026-10-21",
+          "evidence": "Official academic functional area with named faculty and PhD student group, research and teaching production/planning/processes/inventory/SCM; doctoral concentration confirms explicit host and research remit."
+        }
+      ],
+      "decisions": [
+        {
+          "sourceDepartmentId": "georgia-tech-isye____isye",
+          "disposition": "duplicate",
+          "unitIds": [
+            "georgia-institute-of-technology--industrial-systems-engineering"
+          ],
+          "reason": "Georgia Tech (ISyE) is the same Georgia Institute of Technology institution and H. Milton Stewart School of Industrial and Systems Engineering already officially verified on 21 October. Institution and school abbreviation are not a second university or department; prior evidence dates retained."
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.isye.gatech.edu/academics/doctoral",
+          "checkedAt": "2026-10-21",
+          "outcome": "read",
+          "note": "Official H. Milton Stewart School of Industrial and Systems Engineering, College of Engineering, Georgia Institute of Technology. Full core/interdisciplinary doctoral inventory read, including IE, OR and ACO."
+        },
+        {
+          "url": "https://www.isye.gatech.edu/academics/doctoral/degrees/industrial-engineering",
+          "checkedAt": "2026-10-21",
+          "outcome": "read",
+          "note": "Current Ph.D. Industrial Engineering explicitly distinct, general track plus Supply Chain Engineering, Statistics/Data Science, Economic Decision Analysis and Systems Informatics/Control specializations; fall admission and original dissertation."
+        },
+        {
+          "url": "https://www.isye.gatech.edu/academics/doctoral/degrees/operations-research",
+          "checkedAt": "2026-10-21",
+          "outcome": "read",
+          "note": "Current Ph.D. Operations Research, ISyE host, optimization, stochastics/applied probability and simulation; distinct application and admission."
+        },
+        {
+          "url": "https://www.scheller.gatech.edu/academics-research/operations-management/index.html",
+          "checkedAt": "2026-10-21",
+          "outcome": "read",
+          "note": "Current Scheller Operations Management functional academic area, own faculty and PhD student group, production/process/inventory/distribution/SCM remit; not labelled department."
+        },
+        {
+          "url": "https://www.scheller.gatech.edu/explore-programs/phd/index.html",
+          "checkedAt": "2026-10-21",
+          "outcome": "read",
+          "note": "Current full-time five-year Scheller Ph.D. programme, current institutional identity."
+        },
+        {
+          "url": "https://www.scheller.gatech.edu/explore-programs/phd/academics/concentrations/index.html",
+          "checkedAt": "2026-10-21",
+          "outcome": "read",
+          "note": "All seven current doctoral concentrations read, including OM."
+        },
+        {
+          "url": "https://www.scheller.gatech.edu/explore-programs/phd/academics/concentrations/operations-management.html",
+          "checkedAt": "2026-10-21",
+          "outcome": "read",
+          "note": "Explicit OM doctoral concentration, SCM/sustainability/healthcare research and OR-methods training through ISyE, five-year funding and Jan6 application deadline."
+        },
+        {
+          "url": "https://www.aco.gatech.edu/",
+          "checkedAt": "2026-10-21",
+          "outcome": "read",
+          "note": "Current Ph.D. Program Algorithms, Combinatorics and Optimization, sponsored jointly Computing, ISyE and Mathematics."
+        },
+        {
+          "url": "https://aco.gatech.edu/academics/aco-program-description",
+          "checkedAt": "2026-10-21",
+          "outcome": "read",
+          "note": "ACO explicitly not independent academic unit; home units Computing/Mathematics/ISyE; shared PhD milestones, research proposal/dissertation, cross-unit supervisors."
+        },
+        {
+          "url": "https://aco.gatech.edu/academics/aco-course-requirements",
+          "checkedAt": "2026-10-21",
+          "outcome": "read",
+          "note": "ACO PhD core includes ISyE Theory Linear Inequalities, Advanced Combinatorial Optimization; ISyE home students additional stochastic/nonlinear optimization."
+        },
+        {
+          "url": "https://www.scheller.gatech.edu/news/2025/phd-msmsgt-stem-designation.html",
+          "checkedAt": "2026-10-21",
+          "outcome": "read",
+          "note": "Official2025 STEM designation description for current Scheller PhD and MS Major in Management; no separate DBA award inferred from ranking badge."
+        },
+        {
+          "url": "https://www.isye.gatech.edu/academics/doctoral",
+          "checkedAt": "2026-10-22",
+          "outcome": "blocked",
+          "note": "Alias continuation attempted the current doctoral source in Chrome; browser explicitly returned connection timeout. No reread or refreshed programme verification claimed. Previously individually read 21 October source observations retained with their original dates."
+        }
+      ],
+      "limitations": [
+        "ACO explicitly not separate academic unit; retained once as shared doctoral route. No programme founding/closure history inferred.",
+        "Alias reconciled on 22 October from earlier individually reviewed official Georgia Tech/ISyE evidence, not an exact-name match alone. Today’s source timeout adds a dated limitation; no older verification date changed."
+      ],
+      "duplicateOf": "georgia-institute-of-technology",
+      "doctoralReview": {
+        "status": "verified",
+        "checkedAt": "2026-10-21",
+        "programmeIds": [
+          "gatech-industrial-engineering-phd",
+          "gatech-operations-research-phd",
+          "georgia-institute-of-technology--algorithms-combinatorics-optimization-phd",
+          "georgia-institute-of-technology--scheller-phd-operations-management"
+        ],
+        "branches": [
+          {
+            "branch": "business",
+            "reviewState": "checked",
+            "conclusion": "Scheller full seven doctoral concentrations and OM detail read; explicit separate business Operations doctoral route verified.",
+            "sourceUrls": [
+              "https://www.scheller.gatech.edu/academics-research/operations-management/index.html",
+              "https://www.scheller.gatech.edu/explore-programs/phd/index.html",
+              "https://www.scheller.gatech.edu/explore-programs/phd/academics/concentrations/index.html",
+              "https://www.scheller.gatech.edu/explore-programs/phd/academics/concentrations/operations-management.html"
+            ]
+          },
+          {
+            "branch": "engineering",
+            "reviewState": "checked",
+            "conclusion": "ISyE full core/interdisciplinary doctoral inventory, distinct IE/OR pages and shared ACO description/course requirements read. Existing IE/OR pilot identities retained.",
+            "sourceUrls": [
+              "https://www.isye.gatech.edu/academics/doctoral",
+              "https://www.isye.gatech.edu/academics/doctoral/degrees/industrial-engineering",
+              "https://www.isye.gatech.edu/academics/doctoral/degrees/operations-research",
+              "https://aco.gatech.edu/academics/aco-program-description",
+              "https://aco.gatech.edu/academics/aco-course-requirements"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://www.isye.gatech.edu/academics/doctoral",
+            "checkedAt": "2026-10-21",
+            "outcome": "read",
+            "note": "Official H. Milton Stewart School of Industrial and Systems Engineering, College of Engineering, Georgia Institute of Technology. Full core/interdisciplinary doctoral inventory read, including IE, OR and ACO."
+          },
+          {
+            "url": "https://www.isye.gatech.edu/academics/doctoral/degrees/industrial-engineering",
+            "checkedAt": "2026-10-21",
+            "outcome": "read",
+            "note": "Current Ph.D. Industrial Engineering explicitly distinct, general track plus Supply Chain Engineering, Statistics/Data Science, Economic Decision Analysis and Systems Informatics/Control specializations; fall admission and original dissertation."
+          },
+          {
+            "url": "https://www.isye.gatech.edu/academics/doctoral/degrees/operations-research",
+            "checkedAt": "2026-10-21",
+            "outcome": "read",
+            "note": "Current Ph.D. Operations Research, ISyE host, optimization, stochastics/applied probability and simulation; distinct application and admission."
+          },
+          {
+            "url": "https://www.scheller.gatech.edu/academics-research/operations-management/index.html",
+            "checkedAt": "2026-10-21",
+            "outcome": "read",
+            "note": "Current Scheller Operations Management functional academic area, own faculty and PhD student group, production/process/inventory/distribution/SCM remit; not labelled department."
+          },
+          {
+            "url": "https://www.scheller.gatech.edu/explore-programs/phd/index.html",
+            "checkedAt": "2026-10-21",
+            "outcome": "read",
+            "note": "Current full-time five-year Scheller Ph.D. programme, current institutional identity."
+          },
+          {
+            "url": "https://www.scheller.gatech.edu/explore-programs/phd/academics/concentrations/index.html",
+            "checkedAt": "2026-10-21",
+            "outcome": "read",
+            "note": "All seven current doctoral concentrations read, including OM."
+          },
+          {
+            "url": "https://www.scheller.gatech.edu/explore-programs/phd/academics/concentrations/operations-management.html",
+            "checkedAt": "2026-10-21",
+            "outcome": "read",
+            "note": "Explicit OM doctoral concentration, SCM/sustainability/healthcare research and OR-methods training through ISyE, five-year funding and Jan6 application deadline."
+          },
+          {
+            "url": "https://www.aco.gatech.edu/",
+            "checkedAt": "2026-10-21",
+            "outcome": "read",
+            "note": "Current Ph.D. Program Algorithms, Combinatorics and Optimization, sponsored jointly Computing, ISyE and Mathematics."
+          },
+          {
+            "url": "https://aco.gatech.edu/academics/aco-program-description",
+            "checkedAt": "2026-10-21",
+            "outcome": "read",
+            "note": "ACO explicitly not independent academic unit; home units Computing/Mathematics/ISyE; shared PhD milestones, research proposal/dissertation, cross-unit supervisors."
+          },
+          {
+            "url": "https://aco.gatech.edu/academics/aco-course-requirements",
+            "checkedAt": "2026-10-21",
+            "outcome": "read",
+            "note": "ACO PhD core includes ISyE Theory Linear Inequalities, Advanced Combinatorial Optimization; ISyE home students additional stochastic/nonlinear optimization."
+          },
+          {
+            "url": "https://www.scheller.gatech.edu/news/2025/phd-msmsgt-stem-designation.html",
+            "checkedAt": "2026-10-21",
+            "outcome": "read",
+            "note": "Official2025 STEM designation description for current Scheller PhD and MS Major in Management; no separate DBA award inferred from ranking badge."
+          },
+          {
+            "url": "https://www.isye.gatech.edu/academics/doctoral",
+            "checkedAt": "2026-10-22",
+            "outcome": "blocked",
+            "note": "Alias continuation attempted the current doctoral source in Chrome; browser explicitly returned connection timeout. No reread or refreshed programme verification claimed. Previously individually read 21 October source observations retained with their original dates."
+          }
+        ],
+        "limitations": [
+          "Current business/ISyE/ACO Operations scope checked; no all-disciplines or historical census claim. Generic interdisciplinary Bioinformatics/Computational Science/Machine Learning degrees not classified solely from participation in ISyE.",
+          "Same four existing canonical programme IDs reused for the ISyE source alias; no additional degrees/providers. All programme and branch facts retain original 21 October checks. The 22 October doctoral-source attempt timed out."
+        ],
+        "coverageComplete": true
+      },
+      "addedAt": "2026-10-22T12:29:09Z",
+      "updatedAt": "2026-10-22T12:29:09Z"
     },
     {
       "id": "ghent-university",
@@ -23795,6 +24167,262 @@
       "updatedAt": "2026-10-21T20:25:10Z"
     },
     {
+      "id": "hkust-gz",
+      "status": "partial",
+      "canonicalName": "The Hong Kong University of Science and Technology (Guangzhou)",
+      "universitySourceUrl": "https://www.hkust-gz.edu.cn/academics/#hubs-and-thrust-areas",
+      "checkedAt": "2026-10-22",
+      "reviewer": "Codex in Chrome",
+      "duplicateOf": "the-hong-kong-university-of-science-and-technology-guangzhou",
+      "units": [
+        {
+          "id": "the-hong-kong-university-of-science-and-technology-guangzhou--smart-manufacturing",
+          "name": "Smart Manufacturing Thrust Area",
+          "type": "area",
+          "school": "Systems Hub",
+          "fields": [
+            "industrial-engineering",
+            "operations-management"
+          ],
+          "sourceUrl": "https://fytgs.hkust-gz.edu.cn/programs/smart-manufacturing-4",
+          "checkedAt": "2026-10-22",
+          "evidence": "Official catalogue exact offering unit Smart Manufacturing Thrust Area/Systems Hub; current thrust and PhD outcomes establish production-system performance modelling, optimal planning, quality and industrial analytics. Thrust area retained as area, not invented department."
+        },
+        {
+          "id": "the-hong-kong-university-of-science-and-technology-guangzhou--intelligent-transportation",
+          "name": "Intelligent Transportation Thrust Area",
+          "type": "area",
+          "school": "Systems Hub",
+          "fields": [
+            "logistics",
+            "operations-management"
+          ],
+          "sourceUrl": "https://fytgs.hkust-gz.edu.cn/programs/2024-25/systems-hub/intelligent-transportation-3",
+          "checkedAt": "2026-10-22",
+          "evidence": "Official doctorate catalogue exact offering unit Intelligent Transportation Thrust Area/Systems Hub; current thrust research explicitly automated port operations/shipping logistics and multimodal people/goods transport operations."
+        }
+      ],
+      "decisions": [
+        {
+          "sourceDepartmentId": "hkust____ds-and-analytics-thrust",
+          "disposition": "unresolved",
+          "unitIds": [],
+          "reason": "Official current Data Science and Analytics Thrust within Information Hub is observed and source shorthand reconciled to that label. Its broad statistics, machine learning, optimization and industrial/business analytics overview does not yet establish substantive Operations research scope. No invented Decision Analytics rename or copied Clear Water Bay unit."
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.hkust-gz.edu.cn/academics/hubs-and-thrust-areas/systems-hub/smart-manufacturing/",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Entire current Smart Manufacturing Thrust page read. Actual thrust within Systems Hub, manufacturing performance/efficiency/flexibility, human-cyber-physical manufacturing systems, intelligent quality management, industrial analytics and sustainable manufacturing. Substantive IE scope, not materials-only methods."
+        },
+        {
+          "url": "https://fytgs.hkust-gz.edu.cn/programs/smart-manufacturing-4",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Actual FYTGS 2025/26 Smart Manufacturing General Information and Learning Outcomes panels individually opened/read. Exact award Doctor of Philosophy in Smart Manufacturing, offering Smart Manufacturing Thrust Area/Systems Hub. PhD outcomes manufacturing-system performance modelling, optimal model solutions and planning, original independent manufacturing and systems research; MPhil distinct."
+        },
+        {
+          "url": "https://sysh.hkust-gz.edu.cn/academics/research-postgraduate-study/postgraduate-programs/programs/phd-in-smmg/",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Entire Systems Hub actual PhD Smart Manufacturing page read via accessibility tree after navigation timeout. PhD original research and thesis examination, 21credits coursework, part-time and full-time variants; domain sample manufacturing/automation/analytics courses. Old scholarship 2024/25 figure not treated current or copied as degree fact."
+        },
+        {
+          "url": "https://www.hkust-gz.edu.cn/academics/hubs-and-thrust-areas/systems-hub/intelligent-transportation",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Entire current Intelligent Transportation Thrust page read. Multimodal transport operations/management for people and goods, urban rail operations, automated port operations and shipping logistics; actual thrust in Systems Hub. Current Program Introduction points to 2024/25 catalogue."
+        },
+        {
+          "url": "https://fytgs.hkust-gz.edu.cn/programs/2024-25/systems-hub/intelligent-transportation-3",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Actual linked FYTGS 2024/25 General Information and Learning Outcomes panels individually read. Exact Doctor of Philosophy in Intelligent Transportation, offering Intelligent Transportation Thrust Area/Systems Hub, traffic management systems and original independent transport research. Current main thrust still links this catalogue, but 2026/27 intake not separately established."
+        },
+        {
+          "url": "https://www.hkust-gz.edu.cn/academics/hubs-and-thrust-areas/society-hub/",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Entire current Society Hub overview read, four thrusts Carbon Neutrality and Climate Change, Financial Technology, Innovation, Policy and Entrepreneurship, Urban Governance and Design. No standalone business school assumed; detailed doctoral scope not fully examined."
+        },
+        {
+          "url": "https://fytgs.hkust-gz.edu.cn/postgraduate-programs/postgraduate-program-catalog",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Rendered full postgraduate catalogue landing lacks programme table/list; not treated complete doctoral inventory. Actual individual programme catalogues read separately."
+        },
+        {
+          "url": "https://www.hkust-gz.edu.cn/academics/#hubs-and-thrust-areas",
+          "note": "Shard A independently read full official Academics page today: exact full Guangzhou university name and explicit HKUST(GZ) acronym, separate hub/thrust structure and distinction from Clear Water Bay. B programme observations reused with original check dates, not re-enumerated.",
+          "checkedAt": "2026-10-22",
+          "outcome": "read"
+        },
+        {
+          "url": "https://www.hkust-gz.edu.cn/academics/hubs-and-thrust-areas/information-hub/",
+          "note": "Shard A read complete current Information Hub page and all four thrust labels; Data Science and Analytics explicitly named and linked.",
+          "checkedAt": "2026-10-22",
+          "outcome": "read"
+        },
+        {
+          "url": "https://www.hkust-gz.edu.cn/academics/hubs-and-thrust-areas/information-hub/data-science-and-analytics",
+          "note": "Shard A read complete current DSA thrust page: actual unit and Information Hub parent, statistics/machine learning/optimization mission and eight broad focus areas including Industrial and Business Analytics. Generic methods/application title alone does not establish a substantive Operations field.",
+          "checkedAt": "2026-10-22",
+          "outcome": "read"
+        },
+        {
+          "url": "https://dsa.hkust-gz.edu.cn/",
+          "note": "Navigation timed out but fresh complete accessibility snapshot read current DSA site: exact Data Science and Analytics Thrust identity, PhD/MPhil research postgraduate links, and lab/research navigation. No career records added.",
+          "checkedAt": "2026-10-22",
+          "outcome": "read"
+        },
+        {
+          "url": "https://dsa.hkust-gz.edu.cn/programs/research-postgraduate-program/phd-in-data-science-and-analytics/",
+          "note": "Shard A read all rendered PhD page text: exact PhD heading and Program Overview/Admission Events/Brochure labels, but detailed overview content absent. Not treated as an eligible Operations doctorate.",
+          "checkedAt": "2026-10-22",
+          "outcome": "read"
+        },
+        {
+          "url": "https://dsa.hkust-gz.edu.cn/research/",
+          "note": "Shard A read complete current labs/institutes inventory. Names alone, including Industrial Informatics and Intelligence Institute, do not establish doctoral Operations remit; linked lab pages not read.",
+          "checkedAt": "2026-10-22",
+          "outcome": "read"
+        }
+      ],
+      "limitations": [
+        "Guangzhou institution kept distinct from HKUST Clear Water Bay. Co-supervision and academic quality links do not establish identical awarding provider.",
+        "Main academic quality statement refers HKUST degree awards; exact legal conferring institution/award-certificate relationship not separately resolved. Actual named PhD programmes and Guangzhou teaching/research hosts are directly observed.",
+        "Programme catalogue general landing does not render full list. Society/Information broader relevant doctoral fields remain incomplete.",
+        "Smart Manufacturing individual catalogue 2025/26; Transportation linked catalogue 2024/25. Current unit pages read,2026/27 intake availability not established.",
+        "Alias identity independently verified by shard A from the exact full Guangzhou name and explicit HKUST(GZ) acronym. Two canonical programme/unit observations reused from shard B with original dates; no duplicate degrees or campus merger.",
+        "All owned imported DSA source labels map linguistically to the observed thrust, but substantive Operations eligibility remains unresolved. The rendered DSA PhD page lacks detailed overview; broad optimization/analytics alone is insufficient."
+      ],
+      "doctoralReview": {
+        "status": "verified",
+        "checkedAt": "2026-10-22",
+        "programmeIds": [
+          "the-hong-kong-university-of-science-and-technology-guangzhou--intelligent-transportation-phd",
+          "the-hong-kong-university-of-science-and-technology-guangzhou--smart-manufacturing-phd"
+        ],
+        "branches": [
+          {
+            "branch": "business",
+            "reviewState": "partial",
+            "sourceUrls": [
+              "https://www.hkust-gz.edu.cn/academics/#hubs-and-thrust-areas",
+              "https://www.hkust-gz.edu.cn/academics/hubs-and-thrust-areas/society-hub/",
+              "https://www.hkust-gz.edu.cn/academics/hubs-and-thrust-areas/information-hub/"
+            ],
+            "conclusion": "Distinct cross-disciplinary hub structure checked; Society and Information inventories read, but analytics/other management-related doctoral fields not fully mapped. No copied Clear Water Bay Business School PhD."
+          },
+          {
+            "branch": "engineering",
+            "reviewState": "partial",
+            "sourceUrls": [
+              "https://www.hkust-gz.edu.cn/academics/hubs-and-thrust-areas/systems-hub/smart-manufacturing/",
+              "https://fytgs.hkust-gz.edu.cn/programs/smart-manufacturing-4",
+              "https://sysh.hkust-gz.edu.cn/academics/research-postgraduate-study/postgraduate-programs/programs/phd-in-smmg/",
+              "https://www.hkust-gz.edu.cn/academics/hubs-and-thrust-areas/systems-hub/intelligent-transportation",
+              "https://fytgs.hkust-gz.edu.cn/programs/2024-25/systems-hub/intelligent-transportation-3",
+              "https://fytgs.hkust-gz.edu.cn/postgraduate-programs/postgraduate-program-catalog"
+            ],
+            "conclusion": "Two exact relevant PhD programmes and Systems Hub thrust hosts directly verified; broader doctoral catalogue not rendered and other detailed scopes remain incomplete."
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://www.hkust-gz.edu.cn/academics/hubs-and-thrust-areas/systems-hub/smart-manufacturing/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Entire current Smart Manufacturing Thrust page read. Actual thrust within Systems Hub, manufacturing performance/efficiency/flexibility, human-cyber-physical manufacturing systems, intelligent quality management, industrial analytics and sustainable manufacturing. Substantive IE scope, not materials-only methods."
+          },
+          {
+            "url": "https://fytgs.hkust-gz.edu.cn/programs/smart-manufacturing-4",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Actual FYTGS 2025/26 Smart Manufacturing General Information and Learning Outcomes panels individually opened/read. Exact award Doctor of Philosophy in Smart Manufacturing, offering Smart Manufacturing Thrust Area/Systems Hub. PhD outcomes manufacturing-system performance modelling, optimal model solutions and planning, original independent manufacturing and systems research; MPhil distinct."
+          },
+          {
+            "url": "https://sysh.hkust-gz.edu.cn/academics/research-postgraduate-study/postgraduate-programs/programs/phd-in-smmg/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Entire Systems Hub actual PhD Smart Manufacturing page read via accessibility tree after navigation timeout. PhD original research and thesis examination, 21credits coursework, part-time and full-time variants; domain sample manufacturing/automation/analytics courses. Old scholarship 2024/25 figure not treated current or copied as degree fact."
+          },
+          {
+            "url": "https://www.hkust-gz.edu.cn/academics/hubs-and-thrust-areas/systems-hub/intelligent-transportation",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Entire current Intelligent Transportation Thrust page read. Multimodal transport operations/management for people and goods, urban rail operations, automated port operations and shipping logistics; actual thrust in Systems Hub. Current Program Introduction points to 2024/25 catalogue."
+          },
+          {
+            "url": "https://fytgs.hkust-gz.edu.cn/programs/2024-25/systems-hub/intelligent-transportation-3",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Actual linked FYTGS 2024/25 General Information and Learning Outcomes panels individually read. Exact Doctor of Philosophy in Intelligent Transportation, offering Intelligent Transportation Thrust Area/Systems Hub, traffic management systems and original independent transport research. Current main thrust still links this catalogue, but 2026/27 intake not separately established."
+          },
+          {
+            "url": "https://www.hkust-gz.edu.cn/academics/hubs-and-thrust-areas/society-hub/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Entire current Society Hub overview read, four thrusts Carbon Neutrality and Climate Change, Financial Technology, Innovation, Policy and Entrepreneurship, Urban Governance and Design. No standalone business school assumed; detailed doctoral scope not fully examined."
+          },
+          {
+            "url": "https://fytgs.hkust-gz.edu.cn/postgraduate-programs/postgraduate-program-catalog",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Rendered full postgraduate catalogue landing lacks programme table/list; not treated complete doctoral inventory. Actual individual programme catalogues read separately."
+          },
+          {
+            "url": "https://www.hkust-gz.edu.cn/academics/#hubs-and-thrust-areas",
+            "note": "Shard A independently read full official Academics page today: exact full Guangzhou university name and explicit HKUST(GZ) acronym, separate hub/thrust structure and distinction from Clear Water Bay. B programme observations reused with original check dates, not re-enumerated.",
+            "checkedAt": "2026-10-22",
+            "outcome": "read"
+          },
+          {
+            "url": "https://www.hkust-gz.edu.cn/academics/hubs-and-thrust-areas/information-hub/",
+            "note": "Shard A read complete current Information Hub page and all four thrust labels; Data Science and Analytics explicitly named and linked.",
+            "checkedAt": "2026-10-22",
+            "outcome": "read"
+          },
+          {
+            "url": "https://www.hkust-gz.edu.cn/academics/hubs-and-thrust-areas/information-hub/data-science-and-analytics",
+            "note": "Shard A read complete current DSA thrust page: actual unit and Information Hub parent, statistics/machine learning/optimization mission and eight broad focus areas including Industrial and Business Analytics. Generic methods/application title alone does not establish a substantive Operations field.",
+            "checkedAt": "2026-10-22",
+            "outcome": "read"
+          },
+          {
+            "url": "https://dsa.hkust-gz.edu.cn/",
+            "note": "Navigation timed out but fresh complete accessibility snapshot read current DSA site: exact Data Science and Analytics Thrust identity, PhD/MPhil research postgraduate links, and lab/research navigation. No career records added.",
+            "checkedAt": "2026-10-22",
+            "outcome": "read"
+          },
+          {
+            "url": "https://dsa.hkust-gz.edu.cn/programs/research-postgraduate-program/phd-in-data-science-and-analytics/",
+            "note": "Shard A read all rendered PhD page text: exact PhD heading and Program Overview/Admission Events/Brochure labels, but detailed overview content absent. Not treated as an eligible Operations doctorate.",
+            "checkedAt": "2026-10-22",
+            "outcome": "read"
+          },
+          {
+            "url": "https://dsa.hkust-gz.edu.cn/research/",
+            "note": "Shard A read complete current labs/institutes inventory. Names alone, including Industrial Informatics and Intelligence Institute, do not establish doctoral Operations remit; linked lab pages not read.",
+            "checkedAt": "2026-10-22",
+            "outcome": "read"
+          }
+        ],
+        "limitations": [
+          "Guangzhou institution kept distinct from HKUST Clear Water Bay. Co-supervision and academic quality links do not establish identical awarding provider.",
+          "Main academic quality statement refers HKUST degree awards; exact legal conferring institution/award-certificate relationship not separately resolved. Actual named PhD programmes and Guangzhou teaching/research hosts are directly observed.",
+          "Programme catalogue general landing does not render full list. Society/Information broader relevant doctoral fields remain incomplete.",
+          "Smart Manufacturing individual catalogue 2025/26; Transportation linked catalogue 2024/25. Current unit pages read,2026/27 intake availability not established.",
+          "Two existing canonical Guangzhou route observations are reused from shard B, not new doctorate enumeration or additional degree count. Data Science and Analytics PhD heading is separately observed but not promoted without substantive Operations scope."
+        ],
+        "coverageComplete": false
+      },
+      "addedAt": "2026-10-22T12:29:09Z",
+      "updatedAt": "2026-10-22T12:29:09Z"
+    },
+    {
       "id": "hong-kong-polytechnic-university",
       "status": "reviewed",
       "canonicalName": "The Hong Kong Polytechnic University",
@@ -24202,6 +24830,268 @@
       },
       "addedAt": "2026-10-21T11:37:44Z",
       "updatedAt": "2026-10-21T11:37:44Z"
+    },
+    {
+      "id": "hong-kong-university-of-science-and-technology-guangzhou",
+      "status": "partial",
+      "canonicalName": "The Hong Kong University of Science and Technology (Guangzhou)",
+      "universitySourceUrl": "https://www.hkust-gz.edu.cn/academics/#hubs-and-thrust-areas",
+      "checkedAt": "2026-10-22",
+      "reviewer": "Codex in Chrome",
+      "duplicateOf": "the-hong-kong-university-of-science-and-technology-guangzhou",
+      "units": [
+        {
+          "id": "the-hong-kong-university-of-science-and-technology-guangzhou--smart-manufacturing",
+          "name": "Smart Manufacturing Thrust Area",
+          "type": "area",
+          "school": "Systems Hub",
+          "fields": [
+            "industrial-engineering",
+            "operations-management"
+          ],
+          "sourceUrl": "https://fytgs.hkust-gz.edu.cn/programs/smart-manufacturing-4",
+          "checkedAt": "2026-10-22",
+          "evidence": "Official catalogue exact offering unit Smart Manufacturing Thrust Area/Systems Hub; current thrust and PhD outcomes establish production-system performance modelling, optimal planning, quality and industrial analytics. Thrust area retained as area, not invented department."
+        },
+        {
+          "id": "the-hong-kong-university-of-science-and-technology-guangzhou--intelligent-transportation",
+          "name": "Intelligent Transportation Thrust Area",
+          "type": "area",
+          "school": "Systems Hub",
+          "fields": [
+            "logistics",
+            "operations-management"
+          ],
+          "sourceUrl": "https://fytgs.hkust-gz.edu.cn/programs/2024-25/systems-hub/intelligent-transportation-3",
+          "checkedAt": "2026-10-22",
+          "evidence": "Official doctorate catalogue exact offering unit Intelligent Transportation Thrust Area/Systems Hub; current thrust research explicitly automated port operations/shipping logistics and multimodal people/goods transport operations."
+        }
+      ],
+      "decisions": [
+        {
+          "sourceDepartmentId": "hong-kong-university-of-science-and-technology-guangzhou____data-science-and-analytics-dsa-thrust",
+          "disposition": "unresolved",
+          "unitIds": [],
+          "reason": "Official current Data Science and Analytics Thrust within Information Hub is observed and source shorthand reconciled to that label. Its broad statistics, machine learning, optimization and industrial/business analytics overview does not yet establish substantive Operations research scope. No invented Decision Analytics rename or copied Clear Water Bay unit."
+        },
+        {
+          "sourceDepartmentId": "hong-kong-university-of-science-and-technology-guangzhou____ds-and-analytics",
+          "disposition": "unresolved",
+          "unitIds": [],
+          "reason": "Official current Data Science and Analytics Thrust within Information Hub is observed and source shorthand reconciled to that label. Its broad statistics, machine learning, optimization and industrial/business analytics overview does not yet establish substantive Operations research scope. No invented Decision Analytics rename or copied Clear Water Bay unit."
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.hkust-gz.edu.cn/academics/hubs-and-thrust-areas/systems-hub/smart-manufacturing/",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Entire current Smart Manufacturing Thrust page read. Actual thrust within Systems Hub, manufacturing performance/efficiency/flexibility, human-cyber-physical manufacturing systems, intelligent quality management, industrial analytics and sustainable manufacturing. Substantive IE scope, not materials-only methods."
+        },
+        {
+          "url": "https://fytgs.hkust-gz.edu.cn/programs/smart-manufacturing-4",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Actual FYTGS 2025/26 Smart Manufacturing General Information and Learning Outcomes panels individually opened/read. Exact award Doctor of Philosophy in Smart Manufacturing, offering Smart Manufacturing Thrust Area/Systems Hub. PhD outcomes manufacturing-system performance modelling, optimal model solutions and planning, original independent manufacturing and systems research; MPhil distinct."
+        },
+        {
+          "url": "https://sysh.hkust-gz.edu.cn/academics/research-postgraduate-study/postgraduate-programs/programs/phd-in-smmg/",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Entire Systems Hub actual PhD Smart Manufacturing page read via accessibility tree after navigation timeout. PhD original research and thesis examination, 21credits coursework, part-time and full-time variants; domain sample manufacturing/automation/analytics courses. Old scholarship 2024/25 figure not treated current or copied as degree fact."
+        },
+        {
+          "url": "https://www.hkust-gz.edu.cn/academics/hubs-and-thrust-areas/systems-hub/intelligent-transportation",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Entire current Intelligent Transportation Thrust page read. Multimodal transport operations/management for people and goods, urban rail operations, automated port operations and shipping logistics; actual thrust in Systems Hub. Current Program Introduction points to 2024/25 catalogue."
+        },
+        {
+          "url": "https://fytgs.hkust-gz.edu.cn/programs/2024-25/systems-hub/intelligent-transportation-3",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Actual linked FYTGS 2024/25 General Information and Learning Outcomes panels individually read. Exact Doctor of Philosophy in Intelligent Transportation, offering Intelligent Transportation Thrust Area/Systems Hub, traffic management systems and original independent transport research. Current main thrust still links this catalogue, but 2026/27 intake not separately established."
+        },
+        {
+          "url": "https://www.hkust-gz.edu.cn/academics/hubs-and-thrust-areas/society-hub/",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Entire current Society Hub overview read, four thrusts Carbon Neutrality and Climate Change, Financial Technology, Innovation, Policy and Entrepreneurship, Urban Governance and Design. No standalone business school assumed; detailed doctoral scope not fully examined."
+        },
+        {
+          "url": "https://fytgs.hkust-gz.edu.cn/postgraduate-programs/postgraduate-program-catalog",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Rendered full postgraduate catalogue landing lacks programme table/list; not treated complete doctoral inventory. Actual individual programme catalogues read separately."
+        },
+        {
+          "url": "https://www.hkust-gz.edu.cn/academics/#hubs-and-thrust-areas",
+          "note": "Shard A independently read full official Academics page today: exact full Guangzhou university name and explicit HKUST(GZ) acronym, separate hub/thrust structure and distinction from Clear Water Bay. B programme observations reused with original check dates, not re-enumerated.",
+          "checkedAt": "2026-10-22",
+          "outcome": "read"
+        },
+        {
+          "url": "https://www.hkust-gz.edu.cn/academics/hubs-and-thrust-areas/information-hub/",
+          "note": "Shard A read complete current Information Hub page and all four thrust labels; Data Science and Analytics explicitly named and linked.",
+          "checkedAt": "2026-10-22",
+          "outcome": "read"
+        },
+        {
+          "url": "https://www.hkust-gz.edu.cn/academics/hubs-and-thrust-areas/information-hub/data-science-and-analytics",
+          "note": "Shard A read complete current DSA thrust page: actual unit and Information Hub parent, statistics/machine learning/optimization mission and eight broad focus areas including Industrial and Business Analytics. Generic methods/application title alone does not establish a substantive Operations field.",
+          "checkedAt": "2026-10-22",
+          "outcome": "read"
+        },
+        {
+          "url": "https://dsa.hkust-gz.edu.cn/",
+          "note": "Navigation timed out but fresh complete accessibility snapshot read current DSA site: exact Data Science and Analytics Thrust identity, PhD/MPhil research postgraduate links, and lab/research navigation. No career records added.",
+          "checkedAt": "2026-10-22",
+          "outcome": "read"
+        },
+        {
+          "url": "https://dsa.hkust-gz.edu.cn/programs/research-postgraduate-program/phd-in-data-science-and-analytics/",
+          "note": "Shard A read all rendered PhD page text: exact PhD heading and Program Overview/Admission Events/Brochure labels, but detailed overview content absent. Not treated as an eligible Operations doctorate.",
+          "checkedAt": "2026-10-22",
+          "outcome": "read"
+        },
+        {
+          "url": "https://dsa.hkust-gz.edu.cn/research/",
+          "note": "Shard A read complete current labs/institutes inventory. Names alone, including Industrial Informatics and Intelligence Institute, do not establish doctoral Operations remit; linked lab pages not read.",
+          "checkedAt": "2026-10-22",
+          "outcome": "read"
+        }
+      ],
+      "limitations": [
+        "Guangzhou institution kept distinct from HKUST Clear Water Bay. Co-supervision and academic quality links do not establish identical awarding provider.",
+        "Main academic quality statement refers HKUST degree awards; exact legal conferring institution/award-certificate relationship not separately resolved. Actual named PhD programmes and Guangzhou teaching/research hosts are directly observed.",
+        "Programme catalogue general landing does not render full list. Society/Information broader relevant doctoral fields remain incomplete.",
+        "Smart Manufacturing individual catalogue 2025/26; Transportation linked catalogue 2024/25. Current unit pages read,2026/27 intake availability not established.",
+        "Alias identity independently verified by shard A from the exact full Guangzhou name and explicit HKUST(GZ) acronym. Two canonical programme/unit observations reused from shard B with original dates; no duplicate degrees or campus merger.",
+        "All owned imported DSA source labels map linguistically to the observed thrust, but substantive Operations eligibility remains unresolved. The rendered DSA PhD page lacks detailed overview; broad optimization/analytics alone is insufficient."
+      ],
+      "doctoralReview": {
+        "status": "verified",
+        "checkedAt": "2026-10-22",
+        "programmeIds": [
+          "the-hong-kong-university-of-science-and-technology-guangzhou--intelligent-transportation-phd",
+          "the-hong-kong-university-of-science-and-technology-guangzhou--smart-manufacturing-phd"
+        ],
+        "branches": [
+          {
+            "branch": "business",
+            "reviewState": "partial",
+            "sourceUrls": [
+              "https://www.hkust-gz.edu.cn/academics/#hubs-and-thrust-areas",
+              "https://www.hkust-gz.edu.cn/academics/hubs-and-thrust-areas/society-hub/",
+              "https://www.hkust-gz.edu.cn/academics/hubs-and-thrust-areas/information-hub/"
+            ],
+            "conclusion": "Distinct cross-disciplinary hub structure checked; Society and Information inventories read, but analytics/other management-related doctoral fields not fully mapped. No copied Clear Water Bay Business School PhD."
+          },
+          {
+            "branch": "engineering",
+            "reviewState": "partial",
+            "sourceUrls": [
+              "https://www.hkust-gz.edu.cn/academics/hubs-and-thrust-areas/systems-hub/smart-manufacturing/",
+              "https://fytgs.hkust-gz.edu.cn/programs/smart-manufacturing-4",
+              "https://sysh.hkust-gz.edu.cn/academics/research-postgraduate-study/postgraduate-programs/programs/phd-in-smmg/",
+              "https://www.hkust-gz.edu.cn/academics/hubs-and-thrust-areas/systems-hub/intelligent-transportation",
+              "https://fytgs.hkust-gz.edu.cn/programs/2024-25/systems-hub/intelligent-transportation-3",
+              "https://fytgs.hkust-gz.edu.cn/postgraduate-programs/postgraduate-program-catalog"
+            ],
+            "conclusion": "Two exact relevant PhD programmes and Systems Hub thrust hosts directly verified; broader doctoral catalogue not rendered and other detailed scopes remain incomplete."
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://www.hkust-gz.edu.cn/academics/hubs-and-thrust-areas/systems-hub/smart-manufacturing/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Entire current Smart Manufacturing Thrust page read. Actual thrust within Systems Hub, manufacturing performance/efficiency/flexibility, human-cyber-physical manufacturing systems, intelligent quality management, industrial analytics and sustainable manufacturing. Substantive IE scope, not materials-only methods."
+          },
+          {
+            "url": "https://fytgs.hkust-gz.edu.cn/programs/smart-manufacturing-4",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Actual FYTGS 2025/26 Smart Manufacturing General Information and Learning Outcomes panels individually opened/read. Exact award Doctor of Philosophy in Smart Manufacturing, offering Smart Manufacturing Thrust Area/Systems Hub. PhD outcomes manufacturing-system performance modelling, optimal model solutions and planning, original independent manufacturing and systems research; MPhil distinct."
+          },
+          {
+            "url": "https://sysh.hkust-gz.edu.cn/academics/research-postgraduate-study/postgraduate-programs/programs/phd-in-smmg/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Entire Systems Hub actual PhD Smart Manufacturing page read via accessibility tree after navigation timeout. PhD original research and thesis examination, 21credits coursework, part-time and full-time variants; domain sample manufacturing/automation/analytics courses. Old scholarship 2024/25 figure not treated current or copied as degree fact."
+          },
+          {
+            "url": "https://www.hkust-gz.edu.cn/academics/hubs-and-thrust-areas/systems-hub/intelligent-transportation",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Entire current Intelligent Transportation Thrust page read. Multimodal transport operations/management for people and goods, urban rail operations, automated port operations and shipping logistics; actual thrust in Systems Hub. Current Program Introduction points to 2024/25 catalogue."
+          },
+          {
+            "url": "https://fytgs.hkust-gz.edu.cn/programs/2024-25/systems-hub/intelligent-transportation-3",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Actual linked FYTGS 2024/25 General Information and Learning Outcomes panels individually read. Exact Doctor of Philosophy in Intelligent Transportation, offering Intelligent Transportation Thrust Area/Systems Hub, traffic management systems and original independent transport research. Current main thrust still links this catalogue, but 2026/27 intake not separately established."
+          },
+          {
+            "url": "https://www.hkust-gz.edu.cn/academics/hubs-and-thrust-areas/society-hub/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Entire current Society Hub overview read, four thrusts Carbon Neutrality and Climate Change, Financial Technology, Innovation, Policy and Entrepreneurship, Urban Governance and Design. No standalone business school assumed; detailed doctoral scope not fully examined."
+          },
+          {
+            "url": "https://fytgs.hkust-gz.edu.cn/postgraduate-programs/postgraduate-program-catalog",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Rendered full postgraduate catalogue landing lacks programme table/list; not treated complete doctoral inventory. Actual individual programme catalogues read separately."
+          },
+          {
+            "url": "https://www.hkust-gz.edu.cn/academics/#hubs-and-thrust-areas",
+            "note": "Shard A independently read full official Academics page today: exact full Guangzhou university name and explicit HKUST(GZ) acronym, separate hub/thrust structure and distinction from Clear Water Bay. B programme observations reused with original check dates, not re-enumerated.",
+            "checkedAt": "2026-10-22",
+            "outcome": "read"
+          },
+          {
+            "url": "https://www.hkust-gz.edu.cn/academics/hubs-and-thrust-areas/information-hub/",
+            "note": "Shard A read complete current Information Hub page and all four thrust labels; Data Science and Analytics explicitly named and linked.",
+            "checkedAt": "2026-10-22",
+            "outcome": "read"
+          },
+          {
+            "url": "https://www.hkust-gz.edu.cn/academics/hubs-and-thrust-areas/information-hub/data-science-and-analytics",
+            "note": "Shard A read complete current DSA thrust page: actual unit and Information Hub parent, statistics/machine learning/optimization mission and eight broad focus areas including Industrial and Business Analytics. Generic methods/application title alone does not establish a substantive Operations field.",
+            "checkedAt": "2026-10-22",
+            "outcome": "read"
+          },
+          {
+            "url": "https://dsa.hkust-gz.edu.cn/",
+            "note": "Navigation timed out but fresh complete accessibility snapshot read current DSA site: exact Data Science and Analytics Thrust identity, PhD/MPhil research postgraduate links, and lab/research navigation. No career records added.",
+            "checkedAt": "2026-10-22",
+            "outcome": "read"
+          },
+          {
+            "url": "https://dsa.hkust-gz.edu.cn/programs/research-postgraduate-program/phd-in-data-science-and-analytics/",
+            "note": "Shard A read all rendered PhD page text: exact PhD heading and Program Overview/Admission Events/Brochure labels, but detailed overview content absent. Not treated as an eligible Operations doctorate.",
+            "checkedAt": "2026-10-22",
+            "outcome": "read"
+          },
+          {
+            "url": "https://dsa.hkust-gz.edu.cn/research/",
+            "note": "Shard A read complete current labs/institutes inventory. Names alone, including Industrial Informatics and Intelligence Institute, do not establish doctoral Operations remit; linked lab pages not read.",
+            "checkedAt": "2026-10-22",
+            "outcome": "read"
+          }
+        ],
+        "limitations": [
+          "Guangzhou institution kept distinct from HKUST Clear Water Bay. Co-supervision and academic quality links do not establish identical awarding provider.",
+          "Main academic quality statement refers HKUST degree awards; exact legal conferring institution/award-certificate relationship not separately resolved. Actual named PhD programmes and Guangzhou teaching/research hosts are directly observed.",
+          "Programme catalogue general landing does not render full list. Society/Information broader relevant doctoral fields remain incomplete.",
+          "Smart Manufacturing individual catalogue 2025/26; Transportation linked catalogue 2024/25. Current unit pages read,2026/27 intake availability not established.",
+          "Two existing canonical Guangzhou route observations are reused from shard B, not new doctorate enumeration or additional degree count. Data Science and Analytics PhD heading is separately observed but not promoted without substantive Operations scope."
+        ],
+        "coverageComplete": false
+      },
+      "addedAt": "2026-10-22T12:29:09Z",
+      "updatedAt": "2026-10-22T12:29:09Z"
     },
     {
       "id": "ie-university",
@@ -25865,11 +26755,12 @@
     },
     {
       "id": "kedge-business-school",
-      "status": "partial",
+      "status": "reviewed",
       "canonicalName": "KEDGE Business School",
       "universitySourceUrl": "https://student.kedge.edu/faculty/departments/operations-management-and-information-systems-mosi",
-      "checkedAt": "2026-10-21",
+      "checkedAt": "2026-10-22",
       "reviewer": "Codex in Chrome",
+      "duplicateOf": null,
       "units": [
         {
           "id": "kedge-business-school--operations-information-systems",
@@ -25906,7 +26797,7 @@
           "unitIds": [
             "kedge-business-school--operations-information-systems"
           ],
-          "reason": "Official page confirms the full combined department name, organizational type and official MOSI acronym."
+          "reason": "Exact official MOSI department name, acronym and KEDGE identity verified. One department retained; programmes and research axes not separate administrative departments."
         }
       ],
       "sources": [
@@ -25921,14 +26812,123 @@
           "checkedAt": "2026-10-21",
           "outcome": "read",
           "note": "Supply chain research centre identity, CESIT acronym and research axes."
+        },
+        {
+          "url": "https://student.kedge.edu/faculty/departments/operations-management-and-information-systems-mosi",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Entire displayed official MOSI department overview read: exact Operations Management and Information Systems Academic Department, KEDGE Business School; purchasing, supply chain, quality, project management, urban logistics, maritime/air transport. Explicit MOSI staff membership of CESIT. Educational Team accordion not expanded; no faculty histories collected."
+        },
+        {
+          "url": "https://student.kedge.edu/programmes/phd-doctor-of-philosophy-in-business-administration",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Full PhD overview read: exact Doctor of Philosophy in Business Administration, future academic faculty/publication mission, explicitly closely related Supply Chain research centre. Bordeaux/Marseille/Paris campuses shown; one programme, not three separate awards. Current PhD positions stated open, no individual intake date inferred."
+        },
+        {
+          "url": "https://student.kedge.edu/programmes/phd-doctor-of-philosophy-in-business-administration/curriculum#programmeMenu",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Entire displayed curriculum read, both stage details present: research training, independent project with supervisor, three-paper thesis submitted and defended. Exact Doctor of Philosophy in Business Administration, distinct from executive DBA. No student enumeration."
+        },
+        {
+          "url": "https://student.kedge.edu/faculty/research-intellectual-contributions/centres-of-excellence/supply-chain-cesit",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Full centre research overview read: scientific methods/tools for supply-chain organization/transformation, explicit maritime/sustainable/4.0/urban logistics/analytics axes, doctoral researcher participation. Centre directly linked from actual PhD overview; linked Team list not opened."
+        },
+        {
+          "url": "https://student.kedge.edu/programmes",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Full displayed programme catalogue read, complete list without pagination. One Business Administration PhD, bachelor/master/MSc/certificates; no engineering doctorate. Executive-site DBA not relabelled PhD."
+        },
+        {
+          "url": "https://student.kedge.edu/faculty/departments",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Full six-department inventory read: Audit/Control/Accounting/Economics/Law, Finance, Management, Marketing, MOSI, Strategy. No engineering department; Business Engineering programme reference on MOSI is not an IE department/doctorate."
         }
       ],
       "limitations": [
-        "Research paused at the owner's request after the two official pages were read. A broader academic and engineering inventory remains unchecked. Business Engineering is mentioned as a program on the department page, not verified as a separate department."
+        "Full displayed academic department and programme inventories read. Programme research affiliation through CESIT/MOSI is not a separately awarded SCM degree; no historical founding or admissions dates inferred.",
+        "Prior 21 October review paused before broader inventory. That specific gap is resolved by the 22 October full department/programme inventories; existing unit IDs and 21 October fact dates are preserved, with new corroborating source observations recorded separately."
       ],
-      "duplicateOf": null,
       "addedAt": "2026-10-21T08:10:46Z",
-      "updatedAt": "2026-10-21T08:10:46Z"
+      "updatedAt": "2026-10-22T12:29:09Z",
+      "doctoralReview": {
+        "status": "verified",
+        "checkedAt": "2026-10-22",
+        "programmeIds": [
+          "kedge-business-school--business-administration-supply-chain-phd"
+        ],
+        "branches": [
+          {
+            "branch": "business",
+            "reviewState": "checked",
+            "conclusion": "Full current academic programme inventory, PhD overview/curriculum and directly linked Supply Chain research scope verified. One eligible broad Business Administration PhD retained. Other research-centre topics do not create separate degree awards.",
+            "sourceUrls": [
+              "https://student.kedge.edu/faculty/departments/operations-management-and-information-systems-mosi",
+              "https://student.kedge.edu/programmes/phd-doctor-of-philosophy-in-business-administration",
+              "https://student.kedge.edu/programmes/phd-doctor-of-philosophy-in-business-administration/curriculum#programmeMenu",
+              "https://student.kedge.edu/faculty/research-intellectual-contributions/centres-of-excellence/supply-chain-cesit",
+              "https://student.kedge.edu/programmes"
+            ]
+          },
+          {
+            "branch": "engineering",
+            "reviewState": "checked",
+            "conclusion": "Full academic department and programme inventories show business-school provision, no engineering PhD or department. Business Engineering wording in non-doctoral teaching is not Industrial Engineering doctoral provision.",
+            "sourceUrls": [
+              "https://student.kedge.edu/faculty/departments/operations-management-and-information-systems-mosi",
+              "https://student.kedge.edu/programmes",
+              "https://student.kedge.edu/faculty/departments"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://student.kedge.edu/faculty/departments/operations-management-and-information-systems-mosi",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Entire displayed official MOSI department overview read: exact Operations Management and Information Systems Academic Department, KEDGE Business School; purchasing, supply chain, quality, project management, urban logistics, maritime/air transport. Explicit MOSI staff membership of CESIT. Educational Team accordion not expanded; no faculty histories collected."
+          },
+          {
+            "url": "https://student.kedge.edu/programmes/phd-doctor-of-philosophy-in-business-administration",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full PhD overview read: exact Doctor of Philosophy in Business Administration, future academic faculty/publication mission, explicitly closely related Supply Chain research centre. Bordeaux/Marseille/Paris campuses shown; one programme, not three separate awards. Current PhD positions stated open, no individual intake date inferred."
+          },
+          {
+            "url": "https://student.kedge.edu/programmes/phd-doctor-of-philosophy-in-business-administration/curriculum#programmeMenu",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Entire displayed curriculum read, both stage details present: research training, independent project with supervisor, three-paper thesis submitted and defended. Exact Doctor of Philosophy in Business Administration, distinct from executive DBA. No student enumeration."
+          },
+          {
+            "url": "https://student.kedge.edu/faculty/research-intellectual-contributions/centres-of-excellence/supply-chain-cesit",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full centre research overview read: scientific methods/tools for supply-chain organization/transformation, explicit maritime/sustainable/4.0/urban logistics/analytics axes, doctoral researcher participation. Centre directly linked from actual PhD overview; linked Team list not opened."
+          },
+          {
+            "url": "https://student.kedge.edu/programmes",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full displayed programme catalogue read, complete list without pagination. One Business Administration PhD, bachelor/master/MSc/certificates; no engineering doctorate. Executive-site DBA not relabelled PhD."
+          },
+          {
+            "url": "https://student.kedge.edu/faculty/departments",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full six-department inventory read: Audit/Control/Accounting/Economics/Law, Finance, Management, Marketing, MOSI, Strategy. No engineering department; Business Engineering programme reference on MOSI is not an IE department/doctorate."
+          }
+        ],
+        "limitations": [
+          "Current source-bounded inventory coverage; no historical admissions/closure dates or uninterrupted offering inferred. Campus sites are not multiplied as providers. Executive DBA not converted into PhD."
+        ],
+        "coverageComplete": true
+      }
     },
     {
       "id": "kennesaw-state-university",
@@ -53512,12 +54512,6 @@
         ],
         "sources": [
           {
-            "url": "https://www.hkust-gz.edu.cn/academics/#hubs-and-thrust-areas",
-            "checkedAt": "2026-10-22",
-            "outcome": "read",
-            "note": "Entire official Academics page read. Separate cooperatively run Guangzhou institution founded June 2022; four Hubs with Thrust Areas, distinct from Clear Water Bay four-school structure. Co-supervision can span campuses without merging providers. Academic quality statement refers Hong Kong QAC governing HKUST degree awards; exact conferring relationship remains limitation, no inference that Guangzhou independently confers every listed award."
-          },
-          {
             "url": "https://www.hkust-gz.edu.cn/academics/hubs-and-thrust-areas/systems-hub/smart-manufacturing/",
             "checkedAt": "2026-10-22",
             "outcome": "read",
@@ -53554,28 +54548,59 @@
             "note": "Entire current Society Hub overview read, four thrusts Carbon Neutrality and Climate Change, Financial Technology, Innovation, Policy and Entrepreneurship, Urban Governance and Design. No standalone business school assumed; detailed doctoral scope not fully examined."
           },
           {
-            "url": "https://www.hkust-gz.edu.cn/academics/hubs-and-thrust-areas/information-hub/",
-            "checkedAt": "2026-10-22",
-            "outcome": "read",
-            "note": "Entire current Information Hub overview read, AI, Data Science and Analytics, IoT, Computational Media and Arts; detailed analytics doctoral Ops field not yet checked, no guessed Decision Analytics rename."
-          },
-          {
             "url": "https://fytgs.hkust-gz.edu.cn/postgraduate-programs/postgraduate-program-catalog",
             "checkedAt": "2026-10-22",
             "outcome": "read",
             "note": "Rendered full postgraduate catalogue landing lacks programme table/list; not treated complete doctoral inventory. Actual individual programme catalogues read separately."
+          },
+          {
+            "url": "https://www.hkust-gz.edu.cn/academics/#hubs-and-thrust-areas",
+            "note": "Shard A independently read full official Academics page today: exact full Guangzhou university name and explicit HKUST(GZ) acronym, separate hub/thrust structure and distinction from Clear Water Bay. B programme observations reused with original check dates, not re-enumerated.",
+            "checkedAt": "2026-10-22",
+            "outcome": "read"
+          },
+          {
+            "url": "https://www.hkust-gz.edu.cn/academics/hubs-and-thrust-areas/information-hub/",
+            "note": "Shard A read complete current Information Hub page and all four thrust labels; Data Science and Analytics explicitly named and linked.",
+            "checkedAt": "2026-10-22",
+            "outcome": "read"
+          },
+          {
+            "url": "https://www.hkust-gz.edu.cn/academics/hubs-and-thrust-areas/information-hub/data-science-and-analytics",
+            "note": "Shard A read complete current DSA thrust page: actual unit and Information Hub parent, statistics/machine learning/optimization mission and eight broad focus areas including Industrial and Business Analytics. Generic methods/application title alone does not establish a substantive Operations field.",
+            "checkedAt": "2026-10-22",
+            "outcome": "read"
+          },
+          {
+            "url": "https://dsa.hkust-gz.edu.cn/",
+            "note": "Navigation timed out but fresh complete accessibility snapshot read current DSA site: exact Data Science and Analytics Thrust identity, PhD/MPhil research postgraduate links, and lab/research navigation. No career records added.",
+            "checkedAt": "2026-10-22",
+            "outcome": "read"
+          },
+          {
+            "url": "https://dsa.hkust-gz.edu.cn/programs/research-postgraduate-program/phd-in-data-science-and-analytics/",
+            "note": "Shard A read all rendered PhD page text: exact PhD heading and Program Overview/Admission Events/Brochure labels, but detailed overview content absent. Not treated as an eligible Operations doctorate.",
+            "checkedAt": "2026-10-22",
+            "outcome": "read"
+          },
+          {
+            "url": "https://dsa.hkust-gz.edu.cn/research/",
+            "note": "Shard A read complete current labs/institutes inventory. Names alone, including Industrial Informatics and Intelligence Institute, do not establish doctoral Operations remit; linked lab pages not read.",
+            "checkedAt": "2026-10-22",
+            "outcome": "read"
           }
         ],
         "limitations": [
           "Guangzhou institution kept distinct from HKUST Clear Water Bay. Co-supervision and academic quality links do not establish identical awarding provider.",
           "Main academic quality statement refers HKUST degree awards; exact legal conferring institution/award-certificate relationship not separately resolved. Actual named PhD programmes and Guangzhou teaching/research hosts are directly observed.",
           "Programme catalogue general landing does not render full list. Society/Information broader relevant doctoral fields remain incomplete.",
-          "Smart Manufacturing individual catalogue 2025/26; Transportation linked catalogue 2024/25. Current unit pages read,2026/27 intake availability not established."
+          "Smart Manufacturing individual catalogue 2025/26; Transportation linked catalogue 2024/25. Current unit pages read,2026/27 intake availability not established.",
+          "Two existing canonical Guangzhou route observations are reused from shard B, not new doctorate enumeration or additional degree count. Data Science and Analytics PhD heading is separately observed but not promoted without substantive Operations scope."
         ],
         "coverageComplete": false
       },
       "addedAt": "2026-10-22T12:21:01Z",
-      "updatedAt": "2026-10-22T12:21:01Z"
+      "updatedAt": "2026-10-22T12:29:09Z"
     },
     {
       "id": "the-hong-kong-university-of-science-and-technology-hkust",
@@ -54550,6 +55575,414 @@
       },
       "addedAt": "2026-10-22T12:21:01Z",
       "updatedAt": "2026-10-22T12:21:01Z"
+    },
+    {
+      "id": "the-university-of-memphis",
+      "status": "partial",
+      "canonicalName": "The University of Memphis",
+      "universitySourceUrl": "https://www.memphis.edu/graduateschool/programs/doctoral.php",
+      "checkedAt": "2026-10-22",
+      "reviewer": "Codex in Chrome",
+      "duplicateOf": null,
+      "units": [
+        {
+          "id": "the-university-of-memphis--marketing-supply-chain-management",
+          "name": "Department of Marketing and Supply Chain Management",
+          "type": "department",
+          "school": "Fogelman College of Business and Economics",
+          "fields": [
+            "operations-management",
+            "supply-chain",
+            "logistics"
+          ],
+          "sourceUrl": "https://www.memphis.edu/mscm/",
+          "checkedAt": "2026-10-22",
+          "evidence": "Still-live official exact combined department offers formal SCM BBA/minor and graduate certificate, substantive sourcing/procurement/operations/transport/distribution. Separate current SCM pages create structural-date discrepancy explicitly retained, not duplicate unit."
+        },
+        {
+          "id": "the-university-of-memphis--civil-construction-environmental-engineering",
+          "name": "Department of Civil, Construction, and Environmental Engineering",
+          "type": "department",
+          "school": "Herff College of Engineering",
+          "fields": [
+            "logistics",
+            "operations-management"
+          ],
+          "sourceUrl": "https://www.memphis.edu/ce/research.php",
+          "checkedAt": "2026-10-22",
+          "evidence": "Actual current department directly links graduate MS/PhD research programme to Transportation research, planning/operations and smart mobility/logistics, not generic numerical optimization alone."
+        }
+      ],
+      "decisions": [
+        {
+          "sourceDepartmentId": "university-of-memphis____marketing-and-supply-chain-management",
+          "disposition": "replaced",
+          "unitIds": [
+            "the-university-of-memphis--marketing-supply-chain-management"
+          ],
+          "reason": "Exact imported combined department directly verified on still-live official page; newer separate SCM naming also recorded, no invented historical change date."
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.memphis.edu/supplychain/programs/",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Entire current Supply Chain Management department programme page read. BBA/minor, Professional MBA SCM concentration, 12-credit graduate certificate. No SCM PhD listed. Actual current separate Department Supply Chain Management wording differs still-live older combined department page."
+        },
+        {
+          "url": "https://www.memphis.edu/mscm/",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Entire still-live official Marketing and Supply Chain Management department page read. Actual exact imported combined department, formal SCM BBA/minor and graduate certificate, Marketing PhD. Fogelman College of Business and Economics identified. Both combined and separate current official labels retained as unresolved structural/temporal discrepancy; no invented split/rename date or duplicate unit enumeration."
+        },
+        {
+          "url": "https://www.memphis.edu/fcbegrad/phd/phd-management.php",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Entire actual Management PhD concentration page and full curriculum read. HR, Organizational Behavior, Strategic Management; original dissertation. Full six-functional-field inventory Accounting/Economics/Finance/Management/MIS/Marketing. No relevant Operations field inferred from strategic integrated-systems wording or statistical courses."
+        },
+        {
+          "url": "https://www.memphis.edu/fcbegrad/phd/phd-mis.php",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Entire actual MIS PhD concentration/curriculum read. Generic Business Analytics, database, system design, security and research methods, no explicit Operations doctoral field. Graduate publication in Journal of Operations Management alone is not proof of an Ops degree/field. No individual graduate careers collected."
+        },
+        {
+          "url": "https://www.memphis.edu/graduateschool/programs/doctoral.php",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Entire university doctoral programme/concentration table read. Business six fields, Engineering Civil/Computer/Electrical/Mechanical, separate Biomedical PhD, Mathematics / Applied Statistics PhD and other disciplines. EdS not PhD, masters not promoted. Wider mathematical doctoral research fields unexamined."
+        },
+        {
+          "url": "https://www.memphis.edu/herff/departments/degrees-grad.php",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Engineering graduate degrees table page1 read: broad Engineering PhD four concentrations, certificates Applied Lean / Freight Transportation, EngineeringManagement MS with Manufacturing/Transportation concentrations. Table page 2 not read, not claimed whole master inventory."
+        },
+        {
+          "url": "https://www.memphis.edu/me/",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Entire Mechanical department home read, research opportunities thermo/fluid and applied mechanics/materials. Generic manufacture/robots and industry career applications not Operations field evidence."
+        },
+        {
+          "url": "https://www.memphis.edu/me/graduate/",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Entire Mechanical graduate page read: actual Engineering PhD with Mechanical concentration and Mechanical MS; detailed research focus not doctoral Industrial Engineering."
+        },
+        {
+          "url": "https://www.memphis.edu/ce/",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Entire current Civil, Construction and Environmental Engineering department home read, actual host within Herff College of Engineering and undergraduate/graduate research environment."
+        },
+        {
+          "url": "https://www.memphis.edu/ce/future-students/phd.php",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Entire actual Civil department Engineering PhD page read. Exact broad PhD Engineering, separate Civil/Computer/Electrical/Mechanical concentrations, 72 credits including minimum 48 coursework plus independent dissertation. Actual Civil doctoral route, not separate Transportation award."
+        },
+        {
+          "url": "https://www.memphis.edu/ce/research.php",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Entire official Civil department research page read. Directly states graduate programme supports MS and PhD, flexible curricula fit research interests, major research Transportation; substantive research explicitly Transportation Planning and Operations and Transportation / Smart Mobility / Logistics. This links departmental doctoral research environment to Logistics/Ops; generic structural optimization excluded."
+        }
+      ],
+      "limitations": [
+        "Still-live official combined Marketing and Supply Chain Management page differs current separate Supply Chain Management department pages. One combined imported unit retained with exact evidence, no inferred split/rename date or invented duplicate units.",
+        "Civil doctoral Logistics/Ops scope is flexible research area documented on department MS/PhD research page; formal concentration is Civil Engineering, not separately titled Transportation or Logistics degree.",
+        "Wider Mathematics/Applied Statistics doctoral scope and all other possible engineering fields not fully examined; coverage incomplete."
+      ],
+      "doctoralReview": {
+        "status": "verified",
+        "checkedAt": "2026-10-22",
+        "programmeIds": [
+          "the-university-of-memphis--engineering-phd-civil"
+        ],
+        "branches": [
+          {
+            "branch": "business",
+            "reviewState": "checked",
+            "sourceUrls": [
+              "https://www.memphis.edu/supplychain/programs/",
+              "https://www.memphis.edu/mscm/",
+              "https://www.memphis.edu/fcbegrad/phd/phd-management.php",
+              "https://www.memphis.edu/fcbegrad/phd/phd-mis.php",
+              "https://www.memphis.edu/graduateschool/programs/doctoral.php"
+            ],
+            "conclusion": "Full current six-field business doctoral inventory, Management/MIS detailed curricula and SCM academic degrees read. No relevant business doctoral field established; SCM MBA/certificate not PhD."
+          },
+          {
+            "branch": "engineering",
+            "reviewState": "partial",
+            "sourceUrls": [
+              "https://www.memphis.edu/graduateschool/programs/doctoral.php",
+              "https://www.memphis.edu/herff/departments/degrees-grad.php",
+              "https://www.memphis.edu/me/",
+              "https://www.memphis.edu/me/graduate/",
+              "https://www.memphis.edu/ce/",
+              "https://www.memphis.edu/ce/future-students/phd.php",
+              "https://www.memphis.edu/ce/research.php"
+            ],
+            "conclusion": "Actual broad Engineering PhD Civil route linked to documented doctoral Transportation/Ops/Logistics research environment. Wider mathematical and other engineering possible field details incomplete."
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://www.memphis.edu/supplychain/programs/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Entire current Supply Chain Management department programme page read. BBA/minor, Professional MBA SCM concentration, 12-credit graduate certificate. No SCM PhD listed. Actual current separate Department Supply Chain Management wording differs still-live older combined department page."
+          },
+          {
+            "url": "https://www.memphis.edu/mscm/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Entire still-live official Marketing and Supply Chain Management department page read. Actual exact imported combined department, formal SCM BBA/minor and graduate certificate, Marketing PhD. Fogelman College of Business and Economics identified. Both combined and separate current official labels retained as unresolved structural/temporal discrepancy; no invented split/rename date or duplicate unit enumeration."
+          },
+          {
+            "url": "https://www.memphis.edu/fcbegrad/phd/phd-management.php",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Entire actual Management PhD concentration page and full curriculum read. HR, Organizational Behavior, Strategic Management; original dissertation. Full six-functional-field inventory Accounting/Economics/Finance/Management/MIS/Marketing. No relevant Operations field inferred from strategic integrated-systems wording or statistical courses."
+          },
+          {
+            "url": "https://www.memphis.edu/fcbegrad/phd/phd-mis.php",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Entire actual MIS PhD concentration/curriculum read. Generic Business Analytics, database, system design, security and research methods, no explicit Operations doctoral field. Graduate publication in Journal of Operations Management alone is not proof of an Ops degree/field. No individual graduate careers collected."
+          },
+          {
+            "url": "https://www.memphis.edu/graduateschool/programs/doctoral.php",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Entire university doctoral programme/concentration table read. Business six fields, Engineering Civil/Computer/Electrical/Mechanical, separate Biomedical PhD, Mathematics / Applied Statistics PhD and other disciplines. EdS not PhD, masters not promoted. Wider mathematical doctoral research fields unexamined."
+          },
+          {
+            "url": "https://www.memphis.edu/herff/departments/degrees-grad.php",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Engineering graduate degrees table page1 read: broad Engineering PhD four concentrations, certificates Applied Lean / Freight Transportation, EngineeringManagement MS with Manufacturing/Transportation concentrations. Table page 2 not read, not claimed whole master inventory."
+          },
+          {
+            "url": "https://www.memphis.edu/me/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Entire Mechanical department home read, research opportunities thermo/fluid and applied mechanics/materials. Generic manufacture/robots and industry career applications not Operations field evidence."
+          },
+          {
+            "url": "https://www.memphis.edu/me/graduate/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Entire Mechanical graduate page read: actual Engineering PhD with Mechanical concentration and Mechanical MS; detailed research focus not doctoral Industrial Engineering."
+          },
+          {
+            "url": "https://www.memphis.edu/ce/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Entire current Civil, Construction and Environmental Engineering department home read, actual host within Herff College of Engineering and undergraduate/graduate research environment."
+          },
+          {
+            "url": "https://www.memphis.edu/ce/future-students/phd.php",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Entire actual Civil department Engineering PhD page read. Exact broad PhD Engineering, separate Civil/Computer/Electrical/Mechanical concentrations, 72 credits including minimum 48 coursework plus independent dissertation. Actual Civil doctoral route, not separate Transportation award."
+          },
+          {
+            "url": "https://www.memphis.edu/ce/research.php",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Entire official Civil department research page read. Directly states graduate programme supports MS and PhD, flexible curricula fit research interests, major research Transportation; substantive research explicitly Transportation Planning and Operations and Transportation / Smart Mobility / Logistics. This links departmental doctoral research environment to Logistics/Ops; generic structural optimization excluded."
+          }
+        ],
+        "limitations": [
+          "Still-live official combined Marketing and Supply Chain Management page differs current separate Supply Chain Management department pages. One combined imported unit retained with exact evidence, no inferred split/rename date or invented duplicate units.",
+          "Civil doctoral Logistics/Ops scope is flexible research area documented on department MS/PhD research page; formal concentration is Civil Engineering, not separately titled Transportation or Logistics degree.",
+          "Wider Mathematics/Applied Statistics doctoral scope and all other possible engineering fields not fully examined; coverage incomplete."
+        ],
+        "coverageComplete": false
+      },
+      "addedAt": "2026-10-22T12:29:09Z",
+      "updatedAt": "2026-10-22T12:29:09Z"
+    },
+    {
+      "id": "the-university-of-michigan-flint",
+      "status": "reviewed",
+      "canonicalName": "University of Michigan-Flint",
+      "universitySourceUrl": "https://www.umflint.edu/som/undergraduate-business-programs/supply-chain-management/",
+      "checkedAt": "2026-10-22",
+      "reviewer": "Codex in Chrome",
+      "duplicateOf": "university-of-michigan-flint",
+      "units": [
+        {
+          "id": "university-of-michigan-flint--school-management",
+          "evidence": "Official supply-chain degree page names the School of Management as its academic host and describes faculty supply-chain research plus operations strategy, procurement, logistics and analytics.",
+          "sourceUrl": "https://www.umflint.edu/som/undergraduate-business-programs/supply-chain-management/",
+          "school": null,
+          "fields": [
+            "operations-management",
+            "supply-chain",
+            "logistics"
+          ],
+          "name": "School of Management",
+          "checkedAt": "2026-10-20",
+          "type": "school"
+        },
+        {
+          "id": "university-of-michigan-flint--innovation-technology",
+          "evidence": "Official smart-manufacturing graduate program names the College of Innovation and Technology, describing operational data, production-line efficiency and supply-chain management; its engineering faculty directory confirms named smart-manufacturing faculty and program director.",
+          "sourceUrl": "https://www.umflint.edu/graduateprograms/smart-manufacturing-ms/",
+          "school": null,
+          "fields": [
+            "operations-management",
+            "supply-chain"
+          ],
+          "name": "College of Innovation and Technology",
+          "checkedAt": "2026-10-20",
+          "type": "school"
+        },
+        {
+          "id": "university-of-michigan-flint--management-marketing",
+          "name": "Department of Management and Marketing",
+          "type": "department",
+          "school": "School of Management",
+          "fields": [
+            "operations-management",
+            "supply-chain"
+          ],
+          "sourceUrl": "https://www.umflint.edu/som/contact-us/#mmfaculty",
+          "checkedAt": "2026-10-22",
+          "evidence": "Current official Management and Marketing Department panel explicitly identifies chair and academic faculty in Operations Management and Supply Chain Management within same department/School of Management; substantive field remit, not degree title as department."
+        }
+      ],
+      "decisions": [
+        {
+          "sourceDepartmentId": "university-of-michigan-flint__school-of-management__management-and-marketing",
+          "disposition": "replaced",
+          "unitIds": [
+            "university-of-michigan-flint--management-marketing"
+          ],
+          "reason": "Current official department panel independently verifies full Management and Marketing department and School of Management parent, including explicit Ops/SCM academic roles. Old source URL 404 replaced by directly linked current official faculty panel."
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.umflint.edu/som/undergraduate-business-programs/supply-chain-management/",
+          "note": "Full university name, school host, operations/supply-chain academic scope.",
+          "checkedAt": "2026-10-20",
+          "outcome": "read"
+        },
+        {
+          "url": "https://www.umflint.edu/graduateprograms/smart-manufacturing-ms/",
+          "note": "Manufacturing systems and supply-chain scope in College of Innovation and Technology.",
+          "checkedAt": "2026-10-20",
+          "outcome": "read"
+        },
+        {
+          "url": "https://www.umflint.edu/cit/contact-us/engineering-and-technology/",
+          "note": "Faculty roster uses multiple engineering/technology department labels; smart-manufacturing director and faculty identified at college level.",
+          "checkedAt": "2026-10-20",
+          "outcome": "read"
+        },
+        {
+          "url": "https://www.umflint.edu/som/som-faculty-staff",
+          "checkedAt": "2026-10-22",
+          "outcome": "blocked",
+          "note": "Imported original faculty URL individually opened, explicit 404 Page Not Found. No historical faculty-host facts inferred from failed page. Current official supply chain page provides updated faculty link followed directly."
+        },
+        {
+          "url": "https://www.umflint.edu/som/undergraduate-business-programs/supply-chain-management/",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Entire current official BS Supply Chain Management page read. Explicit The University of Michigan-Flint, School of Management, formal SCM degree, 14 required SCM courses, operations strategy/procurement/logistics/analytics and faculty supply chain research. Meet Faculty link directly points current Management and Marketing section."
+        },
+        {
+          "url": "https://www.umflint.edu/som/contact-us/#mmfaculty",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Entire current contact page and Management and Marketing Department section individually opened/read. Exact department and School of Management parent. Chair explicitly Department Management and Marketing; multiple faculty roles Operations Management and Supply Chain Management, one explicitly departmental SCM affiliation. No degree/employment history or contacts collected."
+        }
+      ],
+      "limitations": [
+        "Sources establish school/college hosts and academic programs but no separate Operations or Industrial Engineering department. Broad hosts are typed school; degree names are not promoted to departments.",
+        "Flint is retained separately from Ann Arbor and Dearborn.",
+        "Newly verified current Management and Marketing department is nested in existing School of Management; old 20 October unit facts retained, new department dated 22 October.",
+        "Previously published doctoral observation retained with original 22 October source checks; no fresh DBA/Computing PhD re-read claimed during alias identity check."
+      ],
+      "doctoralReview": {
+        "status": "no-qualifying-programme-verified",
+        "checkedAt": "2026-10-22",
+        "programmeIds": [],
+        "branches": [
+          {
+            "branch": "business",
+            "reviewState": "checked",
+            "conclusion": "Complete university graduate inventory and full DBA programme read. Business doctorate is explicitly DBA for experienced managers with applied strategic-business research, not PhD. Supply-chain strategy occurs as coursework, not independently named qualifying doctoral research field; no eligible academic Ops/OR/IE/SCM route established.",
+            "sourceUrls": [
+              "https://www.umflint.edu/graduateprograms/",
+              "https://www.umflint.edu/graduateprograms/business-dba/"
+            ]
+          },
+          {
+            "branch": "engineering",
+            "reviewState": "checked",
+            "conclusion": "Complete current doctoral inventory and full Computing PhD read. Computing research/doctoral scope concerns computer/data science, systems, security and software; no explicit relevant Operations/OR/IE field. Engineering, smart manufacturing and SCM degrees are masters in published inventory, not doctorate.",
+            "sourceUrls": [
+              "https://www.umflint.edu/graduateprograms/",
+              "https://www.umflint.edu/graduateprograms/computing-phd/"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://www.umflint.edu/graduateprograms/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full current university graduate inventory read in Chrome: complete doctoral list, masters, graduate certificates and dual degrees. Flint distinct from Ann Arbor/Dearborn, shared resources not a shared degree merge."
+          },
+          {
+            "url": "https://www.umflint.edu/graduateprograms/computing-phd/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full Computing PhD programme scope, research/advisor entry, dissertation and admission text read; no OR field inferred from computing tools."
+          },
+          {
+            "url": "https://www.umflint.edu/graduateprograms/business-dba/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full exact DBA programme read, applied strategy model/dissertation and SCM strategy course distinguished from named relevant doctoral research field. Incidental testimonials not collected as individual histories."
+          },
+          {
+            "url": "https://www.umflint.edu/som/som-faculty-staff",
+            "checkedAt": "2026-10-22",
+            "outcome": "blocked",
+            "note": "Imported original faculty URL individually opened, explicit 404 Page Not Found. No historical faculty-host facts inferred from failed page. Current official supply chain page provides updated faculty link followed directly."
+          },
+          {
+            "url": "https://www.umflint.edu/som/undergraduate-business-programs/supply-chain-management/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Entire current official BS Supply Chain Management page read. Explicit The University of Michigan-Flint, School of Management, formal SCM degree, 14 required SCM courses, operations strategy/procurement/logistics/analytics and faculty supply chain research. Meet Faculty link directly points current Management and Marketing section."
+          },
+          {
+            "url": "https://www.umflint.edu/som/contact-us/#mmfaculty",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Entire current contact page and Management and Marketing Department section individually opened/read. Exact department and School of Management parent. Chair explicitly Department Management and Marketing; multiple faculty roles Operations Management and Supply Chain Management, one explicitly departmental SCM affiliation. No degree/employment history or contacts collected."
+          }
+        ],
+        "limitations": [
+          "Source-bounded current published doctoral inventory and plausibly related programmes checked. Exact DBA is retained in evidence, not silently converted into PhD; this observation does not resolve global professional-DBA inclusion policy. No qualified programme established from a course title alone.",
+          "Not a claim about historical provision or that scholars never use operations methods. Existing unit and identity dates unchanged; Flint remains distinct campus/institution.",
+          "Alias identity and actual current Management and Marketing department independently verified. Canonical published doctoral inventory carried forward, not re-enumerated; no new programme/provider."
+        ],
+        "coverageComplete": true
+      },
+      "addedAt": "2026-10-22T12:29:09Z",
+      "updatedAt": "2026-10-22T12:29:09Z"
     },
     {
       "id": "the-university-of-texas-at-austin",
@@ -67408,7 +68841,7 @@
     },
     {
       "id": "university-of-michigan-flint",
-      "checkedAt": "2026-10-20",
+      "checkedAt": "2026-10-22",
       "units": [
         {
           "id": "university-of-michigan-flint--school-management",
@@ -67436,6 +68869,19 @@
           "name": "College of Innovation and Technology",
           "checkedAt": "2026-10-20",
           "type": "school"
+        },
+        {
+          "id": "university-of-michigan-flint--management-marketing",
+          "name": "Department of Management and Marketing",
+          "type": "department",
+          "school": "School of Management",
+          "fields": [
+            "operations-management",
+            "supply-chain"
+          ],
+          "sourceUrl": "https://www.umflint.edu/som/contact-us/#mmfaculty",
+          "checkedAt": "2026-10-22",
+          "evidence": "Current official Management and Marketing Department panel explicitly identifies chair and academic faculty in Operations Management and Supply Chain Management within same department/School of Management; substantive field remit, not degree title as department."
         }
       ],
       "decisions": [
@@ -67470,19 +68916,38 @@
           "note": "Faculty roster uses multiple engineering/technology department labels; smart-manufacturing director and faculty identified at college level.",
           "checkedAt": "2026-10-20",
           "outcome": "read"
+        },
+        {
+          "url": "https://www.umflint.edu/som/som-faculty-staff",
+          "checkedAt": "2026-10-22",
+          "outcome": "blocked",
+          "note": "Imported original faculty URL individually opened, explicit 404 Page Not Found. No historical faculty-host facts inferred from failed page. Current official supply chain page provides updated faculty link followed directly."
+        },
+        {
+          "url": "https://www.umflint.edu/som/undergraduate-business-programs/supply-chain-management/",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Entire current official BS Supply Chain Management page read. Explicit The University of Michigan-Flint, School of Management, formal SCM degree, 14 required SCM courses, operations strategy/procurement/logistics/analytics and faculty supply chain research. Meet Faculty link directly points current Management and Marketing section."
+        },
+        {
+          "url": "https://www.umflint.edu/som/contact-us/#mmfaculty",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Entire current contact page and Management and Marketing Department section individually opened/read. Exact department and School of Management parent. Chair explicitly Department Management and Marketing; multiple faculty roles Operations Management and Supply Chain Management, one explicitly departmental SCM affiliation. No degree/employment history or contacts collected."
         }
       ],
       "universitySourceUrl": "https://www.umflint.edu/som/undergraduate-business-programs/supply-chain-management/",
       "limitations": [
         "Sources establish school/college hosts and academic programs but no separate Operations or Industrial Engineering department. Broad hosts are typed school; degree names are not promoted to departments.",
-        "Flint is retained separately from Ann Arbor and Dearborn."
+        "Flint is retained separately from Ann Arbor and Dearborn.",
+        "Newly verified current Management and Marketing department is nested in existing School of Management; old 20 October unit facts retained, new department dated 22 October.",
+        "Previously published doctoral observation retained with original 22 October source checks; no fresh DBA/Computing PhD re-read claimed during alias identity check.",
+        "Canonical integrator composition adds the newly verified department from the alias proposal while preserving both existing source-department decisions and older unit facts."
       ],
       "duplicateOf": null,
       "canonicalName": "University of Michigan-Flint",
       "reviewer": "Codex in Chrome",
       "status": "reviewed",
-      "addedAt": "2026-10-21T06:57:04Z",
-      "updatedAt": "2026-10-22T10:46:34Z",
       "doctoralReview": {
         "status": "no-qualifying-programme-verified",
         "checkedAt": "2026-10-22",
@@ -67525,14 +68990,35 @@
             "checkedAt": "2026-10-22",
             "outcome": "read",
             "note": "Full exact DBA programme read, applied strategy model/dissertation and SCM strategy course distinguished from named relevant doctoral research field. Incidental testimonials not collected as individual histories."
+          },
+          {
+            "url": "https://www.umflint.edu/som/som-faculty-staff",
+            "checkedAt": "2026-10-22",
+            "outcome": "blocked",
+            "note": "Imported original faculty URL individually opened, explicit 404 Page Not Found. No historical faculty-host facts inferred from failed page. Current official supply chain page provides updated faculty link followed directly."
+          },
+          {
+            "url": "https://www.umflint.edu/som/undergraduate-business-programs/supply-chain-management/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Entire current official BS Supply Chain Management page read. Explicit The University of Michigan-Flint, School of Management, formal SCM degree, 14 required SCM courses, operations strategy/procurement/logistics/analytics and faculty supply chain research. Meet Faculty link directly points current Management and Marketing section."
+          },
+          {
+            "url": "https://www.umflint.edu/som/contact-us/#mmfaculty",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Entire current contact page and Management and Marketing Department section individually opened/read. Exact department and School of Management parent. Chair explicitly Department Management and Marketing; multiple faculty roles Operations Management and Supply Chain Management, one explicitly departmental SCM affiliation. No degree/employment history or contacts collected."
           }
         ],
         "limitations": [
           "Source-bounded current published doctoral inventory and plausibly related programmes checked. Exact DBA is retained in evidence, not silently converted into PhD; this observation does not resolve global professional-DBA inclusion policy. No qualified programme established from a course title alone.",
-          "Not a claim about historical provision or that scholars never use operations methods. Existing unit and identity dates unchanged; Flint remains distinct campus/institution."
+          "Not a claim about historical provision or that scholars never use operations methods. Existing unit and identity dates unchanged; Flint remains distinct campus/institution.",
+          "Alias identity and actual current Management and Marketing department independently verified. Canonical published doctoral inventory carried forward, not re-enumerated; no new programme/provider."
         ],
         "coverageComplete": true
-      }
+      },
+      "addedAt": "2026-10-21T06:57:04Z",
+      "updatedAt": "2026-10-22T12:29:09Z"
     },
     {
       "canonicalName": "University of Minnesota",
@@ -70933,7 +72419,68 @@
         "Imported research-unit URL redirects to the faculty directory; department type is supported by its chair listing."
       ],
       "addedAt": "2026-10-21T07:40:08Z",
-      "updatedAt": "2026-10-21T07:40:08Z"
+      "updatedAt": "2026-10-22T12:29:09Z",
+      "doctoralReview": {
+        "status": "partial",
+        "checkedAt": "2026-10-22",
+        "programmeIds": [],
+        "branches": [
+          {
+            "branch": "business",
+            "reviewState": "partial",
+            "conclusion": "Actual central Graduate School confirms current Analytics Doctor of Philosophy hosted by ITAO in Mendoza. Detailed doctoral research-field page replaced by security-maintenance notice. Generic analytics methods and host department name alone not used to assert doctoral Ops/OR field.",
+            "sourceUrls": [
+              "https://graduateschool.nd.edu/degree-programs/analytics-phd---doctoral/",
+              "https://mendoza.nd.edu/research-faculty/academic-departments/phd-analytics/"
+            ]
+          },
+          {
+            "branch": "engineering",
+            "reviewState": "partial",
+            "conclusion": "Previously reviewed engineering units retained separately; current complete doctoral engineering/science inventory not yet checked. Official catalogue graduate entry returns Page Not Found.",
+            "sourceUrls": [
+              "https://catalog.nd.edu/graduate/"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://mendoza.nd.edu/research-faculty/academic-departments/phd-analytics/",
+            "checkedAt": "2026-10-22",
+            "outcome": "blocked",
+            "note": "Actually opened official Analytics PhD page; Mendoza site temporarily offline while university addresses PHP security vulnerabilities. Only maintenance notice/application links visible, no programme text."
+          },
+          {
+            "url": "https://catalog.nd.edu/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Current 2026-27 official bulletin navigation read."
+          },
+          {
+            "url": "https://catalog.nd.edu/programs/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full programme list read; predominantly undergraduate catalogue and generic Graduate entry, not complete doctorate inventory."
+          },
+          {
+            "url": "https://catalog.nd.edu/graduate/",
+            "checkedAt": "2026-10-22",
+            "outcome": "blocked",
+            "note": "Actual official Graduate navigation followed; Page Not Found, no graduate catalogue content."
+          },
+          {
+            "url": "https://graduateschool.nd.edu/degree-programs/analytics-phd---doctoral/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full central Graduate School Analytics PhD page read; exact Doctor of Philosophy, ITAO/Mendoza host, T-shaped scholarly methods training. Explicit operations/OR doctoral research field not in page text."
+          }
+        ],
+        "limitations": [
+          "Central programme existence verified independently of unavailable detailed research-field source. No analytics-methods-only eligibility inference.",
+          "No older unit fact dates refreshed. Business doctoral research scope and engineering/science inventory remain incomplete; maintenance source may be revisited when restored."
+        ],
+        "coverageComplete": false
+      }
     },
     {
       "id": "university-of-oklahoma",
@@ -71133,7 +72680,107 @@
         "New engineering college announced September 2026 remains proposed in the read announcement. Current Knight Campus bioengineering scope does not establish an in-scope operations department."
       ],
       "addedAt": "2026-10-21T07:40:08Z",
-      "updatedAt": "2026-10-21T07:40:08Z"
+      "updatedAt": "2026-10-22T12:29:09Z",
+      "doctoralReview": {
+        "status": "verified",
+        "checkedAt": "2026-10-22",
+        "programmeIds": [
+          "university-of-oregon--operations-business-analytics-phd"
+        ],
+        "branches": [
+          {
+            "branch": "business",
+            "reviewState": "checked",
+            "conclusion": "Full five-concentration business PhD inventory and exact OBA doctorate current curriculum/research read. OM/OR/SCM route verified with existing actual department host.",
+            "sourceUrls": [
+              "https://business.uoregon.edu/faculty/departments/operations-business-analytics",
+              "https://business.uoregon.edu/phd/operations-management",
+              "https://business.uoregon.edu/programs/phd",
+              "https://catalog.uoregon.edu/coll-business/phd-operations-bus-analytics/"
+            ]
+          },
+          {
+            "branch": "engineering",
+            "reviewState": "checked",
+            "conclusion": "Complete current university graduate-degree inventory read. No IE/OR-titled engineering doctoral programme; Bioengineering named separately, no broader engineering doctorate invented.",
+            "sourceUrls": [
+              "https://catalog.uoregon.edu/gr-programs/"
+            ]
+          },
+          {
+            "branch": "mathematics",
+            "reviewState": "checked",
+            "conclusion": "Actual current Mathematics PhD overview research areas read: algebra, analysis, topology, geometry, probability, number theory and mathematical biology. No explicit operations-research pathway in stated programme scope. Probability alone not OR eligibility.",
+            "sourceUrls": [
+              "https://catalog.uoregon.edu/arts-sciences/natural-sciences/mathematics/phd-mathematics/"
+            ]
+          },
+          {
+            "branch": "other",
+            "reviewState": "checked",
+            "conclusion": "Actual current Computer Science department overview and PhD Overview/Requirements read. Foundations, Data Science and Systems depths, algorithms/computing/network/security research; no explicit Ops/OR/IE pathway established. Generic modelling/simulation or AI methods not sufficient.",
+            "sourceUrls": [
+              "https://catalog.uoregon.edu/arts-sciences/school-computer-data-sciences/computer-science/",
+              "https://catalog.uoregon.edu/arts-sciences/school-computer-data-sciences/computer-science/phd-computer-science/"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://business.uoregon.edu/faculty/departments/operations-business-analytics",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full actual department page read: current name, prior Decision Sciences name, complete research fields and actual doctoral link."
+          },
+          {
+            "url": "https://business.uoregon.edu/phd/operations-management",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full current Operations/Business Analytics PhD page read, explicit OM/SCM research, optimization/queueing, original dissertation/proposal/final defense and exams."
+          },
+          {
+            "url": "https://business.uoregon.edu/programs/phd",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full business PhD page and five concentration inventory read; Operations/Business Analytics one area, no duplicate degree from former name."
+          },
+          {
+            "url": "https://catalog.uoregon.edu/coll-business/phd-operations-bus-analytics/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Current 2026-27 catalogue Overview and actual Requirements tab read. Exact PhD in Operations and Business Analytics; production/distribution/staffing/pricing/supply-chain remit; Operations Research Modeling, inventory/supply-chain, optimization specialization and dissertation requirements."
+          },
+          {
+            "url": "https://catalog.uoregon.edu/gr-programs/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Actual Degree Programs tab opened and complete university graduate-degree inventory read. OBA PhD; no IE/OR-titled engineering doctorate. Bioengineering PhD and CS/Math PhDs separately listed; plausible quantitative research fields followed individually."
+          },
+          {
+            "url": "https://catalog.uoregon.edu/arts-sciences/natural-sciences/mathematics/phd-mathematics/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full current Mathematics PhD overview and explicit research-group inventory read; no OR field named."
+          },
+          {
+            "url": "https://catalog.uoregon.edu/arts-sciences/school-computer-data-sciences/computer-science/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full current Computer Science department research overview and programme navigation read."
+          },
+          {
+            "url": "https://catalog.uoregon.edu/arts-sciences/school-computer-data-sciences/computer-science/phd-computer-science/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Actual current CS PhD Overview and complete Requirements tab read including all three depth groups, dissertation and research-area rules. No explicit Ops/OR/IE pathway, generic modelling/AI not eligibility."
+          }
+        ],
+        "limitations": [
+          "Current source-bounded full graduate inventory and plausible mathematics/computing programme fields checked; not an exhaustive historical census or claim that generic methods cannot be applied to operations.",
+          "No earlier unit fact/check date refreshed. Department former Decision Sciences wording retained without inferred rename date."
+        ],
+        "coverageComplete": true
+      }
     },
     {
       "id": "university-of-oxford",
@@ -71230,7 +72877,64 @@
         "Engineering pages were examined but no additional sufficiently explicit operations/industrial-engineering organizational unit was verified."
       ],
       "addedAt": "2026-10-21T08:10:46Z",
-      "updatedAt": "2026-10-21T08:10:46Z"
+      "updatedAt": "2026-10-22T12:29:09Z",
+      "doctoralReview": {
+        "status": "verified",
+        "checkedAt": "2026-10-22",
+        "programmeIds": [
+          "university-of-oxford--dphil-management-operations-supply-chain"
+        ],
+        "branches": [
+          {
+            "branch": "business",
+            "reviewState": "checked",
+            "conclusion": "Actual business programme says two parallel doctoral programmes Finance/Management with shared places. Relevant Management DPhil current detailed fields and original thesis/viva requirements actually expanded/read; no finance route assumed relevant.",
+            "sourceUrls": [
+              "https://www.sbs.ox.ac.uk/programmes/degrees/dphil-management"
+            ]
+          },
+          {
+            "branch": "engineering",
+            "reviewState": "partial",
+            "conclusion": "Full central Engineering Science department course inventory and DPhil Engineering Science Overview plus actual Themes panel read. Eight broad research themes include chemical/process and information/vision/control engineering, no explicit Ops/OR/IE route in these pages. Relevant technical pathway detail and interdisciplinary CDT field inventories remain incomplete, no control/process-to-Ops inference.",
+            "sourceUrls": [
+              "https://www.ox.ac.uk/admissions/graduate/courses/departments/engineering-science",
+              "https://www.ox.ac.uk/admissions/graduate/courses/dphil-engineering-science"
+            ]
+          },
+          {
+            "branch": "mathematics",
+            "reviewState": "partial",
+            "conclusion": "Current mathematics/statistics/computing doctoral research fields and relevant OR pathways remain to be individually checked; no generic mathematics-to-OR inference.",
+            "sourceUrls": []
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://www.sbs.ox.ac.uk/programmes/degrees/dphil-management",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full actual DPhil Management page and expanded OM/Business Analytics, SCM and fourth-year Submission panels read. Next 2027 intake explicitly preserved, exact DPhil/PhD equivalence and original thesis/viva. No graduate career extraction performed."
+          },
+          {
+            "url": "https://www.ox.ac.uk/admissions/graduate/courses/departments/engineering-science",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full central current Engineering Science department graduate course inventory read, all broad engineering branches and named interdisciplinary CDTs."
+          },
+          {
+            "url": "https://www.ox.ac.uk/admissions/graduate/courses/dphil-engineering-science",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Central DPhil Engineering Science course Overview and actual Themes/Further research panels opened/read. All eight broad themes read, next 2027-28 entry preserved; no explicit IE/OR pathway established from generic control/process themes."
+          }
+        ],
+        "limitations": [
+          "Verified business doctoral route independent of incomplete all-university technical doctoral scope.",
+          "Earlier unit facts/check dates preserved; no department or PhD diploma invented from research-area name."
+        ],
+        "coverageComplete": false
+      }
     },
     {
       "id": "university-of-pennsylvania",

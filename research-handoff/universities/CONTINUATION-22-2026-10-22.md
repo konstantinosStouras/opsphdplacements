@@ -9,3 +9,5 @@ Montclair current doctoral inventory filter successfully selected and all ten en
 Georgia Southern wider engineering/business lists fail to render and catalogue detail empty; no inference about two unnamed engineering PhDs. VinUniversity CS doctoral field details and VCU wider IS/Management/technical fields remain partial. New Guangzhou broader hub scopes and awarding relationship remain partial. Suspended admissions does not establish programme closure or end dates.
 
 Validation: 48 tests, public validators and static build passed. Expanded Georgia Southern evidence displays admissions suspended and its limits, with no visitor-facing internal filenames or repository links. Publication confirmation follows. Continuations23/24 remain separate unpublished work. Stages2-4 and automation held. Continue remaining Stage1 identities and incomplete doctoral/source assertions.
+
+Publication confirmed: `ffd54e0`, Pages run `39777946076` success; live Georgia Southern admissions-suspended route checked, screenshot stage1-release22.png.

@@ -8,8 +8,8 @@
   "rankedInstitutionLeads": 366,
   "matchedLeads": 183,
   "unresolvedLeads": 183,
-  "withVerifiedCurrentRoutes": 160,
-  "withCompletedCurrentBranchScope": 119,
+  "withVerifiedCurrentRoutes": 161,
+  "withCompletedCurrentBranchScope": 120,
   "records": [
     {
       "id": "massachusetts-institute-of-technology",
@@ -1145,7 +1145,8 @@
       "id": "georgia-institute-of-technology",
       "name": "Georgia Institute of Technology",
       "sourceUniversityIds": [
-        "georgia-institute-of-technology"
+        "georgia-institute-of-technology",
+        "georgia-tech-isye"
       ],
       "candidateUniversityIds": [
         "georgia-institute-of-technology"
@@ -1311,10 +1312,131 @@
               "checkedAt": "2026-10-21",
               "outcome": "read",
               "note": "Official2025 STEM designation description for current Scheller PhD and MS Major in Management; no separate DBA award inferred from ranking badge."
+            },
+            {
+              "url": "https://www.isye.gatech.edu/academics/doctoral",
+              "checkedAt": "2026-10-22",
+              "outcome": "blocked",
+              "note": "Alias continuation attempted the current doctoral source in Chrome; browser explicitly returned connection timeout. No reread or refreshed programme verification claimed. Previously individually read 21 October source observations retained with their original dates."
             }
           ],
           "limitations": [
-            "Current business/ISyE/ACO Operations scope checked; no all-disciplines or historical census claim. Generic interdisciplinary Bioinformatics/Computational Science/Machine Learning degrees not classified solely from participation in ISyE."
+            "Current business/ISyE/ACO Operations scope checked; no all-disciplines or historical census claim. Generic interdisciplinary Bioinformatics/Computational Science/Machine Learning degrees not classified solely from participation in ISyE.",
+            "Same four existing canonical programme IDs reused for the ISyE source alias; no additional degrees/providers. All programme and branch facts retain original 21 October checks. The 22 October doctoral-source attempt timed out."
+          ],
+          "coverageComplete": true
+        },
+        {
+          "status": "verified",
+          "checkedAt": "2026-10-21",
+          "programmeIds": [
+            "gatech-industrial-engineering-phd",
+            "gatech-operations-research-phd",
+            "georgia-institute-of-technology--algorithms-combinatorics-optimization-phd",
+            "georgia-institute-of-technology--scheller-phd-operations-management"
+          ],
+          "branches": [
+            {
+              "branch": "business",
+              "reviewState": "checked",
+              "conclusion": "Scheller full seven doctoral concentrations and OM detail read; explicit separate business Operations doctoral route verified.",
+              "sourceUrls": [
+                "https://www.scheller.gatech.edu/academics-research/operations-management/index.html",
+                "https://www.scheller.gatech.edu/explore-programs/phd/index.html",
+                "https://www.scheller.gatech.edu/explore-programs/phd/academics/concentrations/index.html",
+                "https://www.scheller.gatech.edu/explore-programs/phd/academics/concentrations/operations-management.html"
+              ]
+            },
+            {
+              "branch": "engineering",
+              "reviewState": "checked",
+              "conclusion": "ISyE full core/interdisciplinary doctoral inventory, distinct IE/OR pages and shared ACO description/course requirements read. Existing IE/OR pilot identities retained.",
+              "sourceUrls": [
+                "https://www.isye.gatech.edu/academics/doctoral",
+                "https://www.isye.gatech.edu/academics/doctoral/degrees/industrial-engineering",
+                "https://www.isye.gatech.edu/academics/doctoral/degrees/operations-research",
+                "https://aco.gatech.edu/academics/aco-program-description",
+                "https://aco.gatech.edu/academics/aco-course-requirements"
+              ]
+            }
+          ],
+          "sources": [
+            {
+              "url": "https://www.isye.gatech.edu/academics/doctoral",
+              "checkedAt": "2026-10-21",
+              "outcome": "read",
+              "note": "Official H. Milton Stewart School of Industrial and Systems Engineering, College of Engineering, Georgia Institute of Technology. Full core/interdisciplinary doctoral inventory read, including IE, OR and ACO."
+            },
+            {
+              "url": "https://www.isye.gatech.edu/academics/doctoral/degrees/industrial-engineering",
+              "checkedAt": "2026-10-21",
+              "outcome": "read",
+              "note": "Current Ph.D. Industrial Engineering explicitly distinct, general track plus Supply Chain Engineering, Statistics/Data Science, Economic Decision Analysis and Systems Informatics/Control specializations; fall admission and original dissertation."
+            },
+            {
+              "url": "https://www.isye.gatech.edu/academics/doctoral/degrees/operations-research",
+              "checkedAt": "2026-10-21",
+              "outcome": "read",
+              "note": "Current Ph.D. Operations Research, ISyE host, optimization, stochastics/applied probability and simulation; distinct application and admission."
+            },
+            {
+              "url": "https://www.scheller.gatech.edu/academics-research/operations-management/index.html",
+              "checkedAt": "2026-10-21",
+              "outcome": "read",
+              "note": "Current Scheller Operations Management functional academic area, own faculty and PhD student group, production/process/inventory/distribution/SCM remit; not labelled department."
+            },
+            {
+              "url": "https://www.scheller.gatech.edu/explore-programs/phd/index.html",
+              "checkedAt": "2026-10-21",
+              "outcome": "read",
+              "note": "Current full-time five-year Scheller Ph.D. programme, current institutional identity."
+            },
+            {
+              "url": "https://www.scheller.gatech.edu/explore-programs/phd/academics/concentrations/index.html",
+              "checkedAt": "2026-10-21",
+              "outcome": "read",
+              "note": "All seven current doctoral concentrations read, including OM."
+            },
+            {
+              "url": "https://www.scheller.gatech.edu/explore-programs/phd/academics/concentrations/operations-management.html",
+              "checkedAt": "2026-10-21",
+              "outcome": "read",
+              "note": "Explicit OM doctoral concentration, SCM/sustainability/healthcare research and OR-methods training through ISyE, five-year funding and Jan6 application deadline."
+            },
+            {
+              "url": "https://www.aco.gatech.edu/",
+              "checkedAt": "2026-10-21",
+              "outcome": "read",
+              "note": "Current Ph.D. Program Algorithms, Combinatorics and Optimization, sponsored jointly Computing, ISyE and Mathematics."
+            },
+            {
+              "url": "https://aco.gatech.edu/academics/aco-program-description",
+              "checkedAt": "2026-10-21",
+              "outcome": "read",
+              "note": "ACO explicitly not independent academic unit; home units Computing/Mathematics/ISyE; shared PhD milestones, research proposal/dissertation, cross-unit supervisors."
+            },
+            {
+              "url": "https://aco.gatech.edu/academics/aco-course-requirements",
+              "checkedAt": "2026-10-21",
+              "outcome": "read",
+              "note": "ACO PhD core includes ISyE Theory Linear Inequalities, Advanced Combinatorial Optimization; ISyE home students additional stochastic/nonlinear optimization."
+            },
+            {
+              "url": "https://www.scheller.gatech.edu/news/2025/phd-msmsgt-stem-designation.html",
+              "checkedAt": "2026-10-21",
+              "outcome": "read",
+              "note": "Official2025 STEM designation description for current Scheller PhD and MS Major in Management; no separate DBA award inferred from ranking badge."
+            },
+            {
+              "url": "https://www.isye.gatech.edu/academics/doctoral",
+              "checkedAt": "2026-10-22",
+              "outcome": "blocked",
+              "note": "Alias continuation attempted the current doctoral source in Chrome; browser explicitly returned connection timeout. No reread or refreshed programme verification claimed. Previously individually read 21 October source observations retained with their original dates."
+            }
+          ],
+          "limitations": [
+            "Current business/ISyE/ACO Operations scope checked; no all-disciplines or historical census claim. Generic interdisciplinary Bioinformatics/Computational Science/Machine Learning degrees not classified solely from participation in ISyE.",
+            "Same four existing canonical programme IDs reused for the ISyE source alias; no additional degrees/providers. All programme and branch facts retain original 21 October checks. The 22 October doctoral-source attempt timed out."
           ],
           "coverageComplete": true
         }
@@ -22619,10 +22741,86 @@
       "owners": [
         "integrator"
       ],
-      "doctoralObservations": [],
-      "verifiedCurrentProgrammeIds": [],
-      "branchCoverageComplete": false,
-      "nextStep": "Verify official current relevant doctoral routes across business and engineering; record branch gaps"
+      "doctoralObservations": [
+        {
+          "status": "verified",
+          "checkedAt": "2026-10-22",
+          "programmeIds": [
+            "kedge-business-school--business-administration-supply-chain-phd"
+          ],
+          "branches": [
+            {
+              "branch": "business",
+              "reviewState": "checked",
+              "conclusion": "Full current academic programme inventory, PhD overview/curriculum and directly linked Supply Chain research scope verified. One eligible broad Business Administration PhD retained. Other research-centre topics do not create separate degree awards.",
+              "sourceUrls": [
+                "https://student.kedge.edu/faculty/departments/operations-management-and-information-systems-mosi",
+                "https://student.kedge.edu/programmes/phd-doctor-of-philosophy-in-business-administration",
+                "https://student.kedge.edu/programmes/phd-doctor-of-philosophy-in-business-administration/curriculum#programmeMenu",
+                "https://student.kedge.edu/faculty/research-intellectual-contributions/centres-of-excellence/supply-chain-cesit",
+                "https://student.kedge.edu/programmes"
+              ]
+            },
+            {
+              "branch": "engineering",
+              "reviewState": "checked",
+              "conclusion": "Full academic department and programme inventories show business-school provision, no engineering PhD or department. Business Engineering wording in non-doctoral teaching is not Industrial Engineering doctoral provision.",
+              "sourceUrls": [
+                "https://student.kedge.edu/faculty/departments/operations-management-and-information-systems-mosi",
+                "https://student.kedge.edu/programmes",
+                "https://student.kedge.edu/faculty/departments"
+              ]
+            }
+          ],
+          "sources": [
+            {
+              "url": "https://student.kedge.edu/faculty/departments/operations-management-and-information-systems-mosi",
+              "checkedAt": "2026-10-22",
+              "outcome": "read",
+              "note": "Entire displayed official MOSI department overview read: exact Operations Management and Information Systems Academic Department, KEDGE Business School; purchasing, supply chain, quality, project management, urban logistics, maritime/air transport. Explicit MOSI staff membership of CESIT. Educational Team accordion not expanded; no faculty histories collected."
+            },
+            {
+              "url": "https://student.kedge.edu/programmes/phd-doctor-of-philosophy-in-business-administration",
+              "checkedAt": "2026-10-22",
+              "outcome": "read",
+              "note": "Full PhD overview read: exact Doctor of Philosophy in Business Administration, future academic faculty/publication mission, explicitly closely related Supply Chain research centre. Bordeaux/Marseille/Paris campuses shown; one programme, not three separate awards. Current PhD positions stated open, no individual intake date inferred."
+            },
+            {
+              "url": "https://student.kedge.edu/programmes/phd-doctor-of-philosophy-in-business-administration/curriculum#programmeMenu",
+              "checkedAt": "2026-10-22",
+              "outcome": "read",
+              "note": "Entire displayed curriculum read, both stage details present: research training, independent project with supervisor, three-paper thesis submitted and defended. Exact Doctor of Philosophy in Business Administration, distinct from executive DBA. No student enumeration."
+            },
+            {
+              "url": "https://student.kedge.edu/faculty/research-intellectual-contributions/centres-of-excellence/supply-chain-cesit",
+              "checkedAt": "2026-10-22",
+              "outcome": "read",
+              "note": "Full centre research overview read: scientific methods/tools for supply-chain organization/transformation, explicit maritime/sustainable/4.0/urban logistics/analytics axes, doctoral researcher participation. Centre directly linked from actual PhD overview; linked Team list not opened."
+            },
+            {
+              "url": "https://student.kedge.edu/programmes",
+              "checkedAt": "2026-10-22",
+              "outcome": "read",
+              "note": "Full displayed programme catalogue read, complete list without pagination. One Business Administration PhD, bachelor/master/MSc/certificates; no engineering doctorate. Executive-site DBA not relabelled PhD."
+            },
+            {
+              "url": "https://student.kedge.edu/faculty/departments",
+              "checkedAt": "2026-10-22",
+              "outcome": "read",
+              "note": "Full six-department inventory read: Audit/Control/Accounting/Economics/Law, Finance, Management, Marketing, MOSI, Strategy. No engineering department; Business Engineering programme reference on MOSI is not an IE department/doctorate."
+            }
+          ],
+          "limitations": [
+            "Current source-bounded inventory coverage; no historical admissions/closure dates or uninterrupted offering inferred. Campus sites are not multiplied as providers. Executive DBA not converted into PhD."
+          ],
+          "coverageComplete": true
+        }
+      ],
+      "verifiedCurrentProgrammeIds": [
+        "kedge-business-school--business-administration-supply-chain-phd"
+      ],
+      "branchCoverageComplete": true,
+      "nextStep": "Current scoped doctoral inventory checked; retain evidence and historical limitations"
     },
     {
       "id": "unresolved:kobe university",
