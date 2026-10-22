@@ -18,7 +18,7 @@
    "phdInstitutions": 434,
    "directoryUniversities": 607,
    "firstEmployers": 493,
-   "withPrograms": 176,
+   "withPrograms": 179,
    "inBothDatabases": 210,
    "directoryOnly": 326,
    "peopleOnly": 224,
@@ -31418,7 +31418,8 @@
    "roles": [
     "phd-institution",
     "directory-university",
-    "first-employer"
+    "first-employer",
+    "program-register"
    ],
    "people": {
     "institutions": [
@@ -31529,7 +31530,19 @@
      }
     ]
    },
-   "programs": [],
+   "programs": [
+    {
+     "id": "copenhagen-business-school--phd-operations-management",
+     "programName": "PhD programme at CBS",
+     "specialization": "Operations Management",
+     "universityId": "copenhagen-business-school",
+     "school": "CBS PhD School",
+     "degree": "PhD",
+     "field": "Operations Management; Supply Chain Management; Logistics",
+     "status": "active",
+     "statusAsOf": "2026-10-22"
+    }
+   ],
    "sources": [
     {
      "url": "https://omlist.edutool.org/phd/by-year.html",
@@ -31550,6 +31563,10 @@
     {
      "url": "data/placements.json",
      "title": "Verified first-job records (people database)"
+    },
+    {
+     "url": "data/doctoral-programs.json",
+     "title": "Historical doctoral program register"
     }
    ],
    "review": {
@@ -31563,12 +31580,17 @@
       "source": "employers",
       "employer": "Copenhagen Business School",
       "match": "wikidata"
+     },
+     {
+      "source": "programs",
+      "program": "copenhagen-business-school--phd-operations-management",
+      "match": "exact"
      }
     ],
     "conflicts": []
    },
    "addedAt": "2026-10-16T13:49:36Z",
-   "updatedAt": "2026-10-20T08:28:39Z"
+   "updatedAt": "2026-10-22T07:18:58Z"
   },
   {
    "id": "wd:Q4380853",
@@ -53644,7 +53666,8 @@
    "roles": [
     "phd-institution",
     "directory-university",
-    "first-employer"
+    "first-employer",
+    "program-register"
    ],
    "people": {
     "institutions": [
@@ -53767,7 +53790,19 @@
      }
     ]
    },
-   "programs": [],
+   "programs": [
+    {
+     "id": "university-of-california-riverside--business-administration-operations-phd",
+     "programName": "Ph.D. in Business Administration",
+     "specialization": "Operations Management",
+     "universityId": "university-of-california-riverside",
+     "school": "School of Business",
+     "degree": "PhD",
+     "field": "Operations Management; Supply Chain Management",
+     "status": "active",
+     "statusAsOf": "2026-10-22"
+    }
+   ],
    "sources": [
     {
      "url": "https://omlist.edutool.org/phd/by-year.html",
@@ -53788,6 +53823,10 @@
     {
      "url": "data/placements.json",
      "title": "Verified first-job records (people database)"
+    },
+    {
+     "url": "data/doctoral-programs.json",
+     "title": "Historical doctoral program register"
     }
    ],
    "review": {
@@ -53801,12 +53840,17 @@
       "source": "employers",
       "employer": "University of California, Riverside",
       "match": "wikidata"
+     },
+     {
+      "source": "programs",
+      "program": "university-of-california-riverside--business-administration-operations-phd",
+      "match": "exact"
      }
     ],
     "conflicts": []
    },
    "addedAt": "2026-10-16T13:49:36Z",
-   "updatedAt": "2026-10-20T08:28:39Z"
+   "updatedAt": "2026-10-22T07:18:58Z"
   },
   {
    "id": "wd:Q52413",
@@ -89644,7 +89688,8 @@
    ],
    "logo": null,
    "roles": [
-    "directory-university"
+    "directory-university",
+    "program-register"
    ],
    "people": null,
    "directory": {
@@ -89673,7 +89718,30 @@
     ]
    },
    "employer": null,
-   "programs": [],
+   "programs": [
+    {
+     "id": "lingnan-university--phd-business-operations-management",
+     "programName": "PhD in Business",
+     "specialization": "Operations Management",
+     "universityId": "lingnan-university",
+     "school": "Faculty of Business",
+     "degree": "PhD",
+     "field": "Operations Management; Operations Research; Supply Chain Management",
+     "status": "active",
+     "statusAsOf": "2026-10-22"
+    },
+    {
+     "id": "lingnan-university--phd-data-science-operations-research",
+     "programName": "PhD in Data Science",
+     "specialization": "Operational research and management science; smart logistics and supply chain analytics",
+     "universityId": "lingnan-university",
+     "school": "School of Data Science",
+     "degree": "PhD",
+     "field": "Operations Research; Logistics; Supply Chain Management",
+     "status": "active",
+     "statusAsOf": "2026-10-22"
+    }
+   ],
    "sources": [
     {
      "url": "https://www.operationsacademia.org/universities",
@@ -89682,14 +89750,29 @@
     {
      "url": "http://cptra.ln.edu.hk/people.html",
      "title": "Faculty page listed in the directory"
+    },
+    {
+     "url": "data/doctoral-programs.json",
+     "title": "Historical doctoral program register"
     }
    ],
    "review": {
-    "matches": [],
+    "matches": [
+     {
+      "source": "programs",
+      "program": "lingnan-university--phd-business-operations-management",
+      "match": "exact"
+     },
+     {
+      "source": "programs",
+      "program": "lingnan-university--phd-data-science-operations-research",
+      "match": "exact"
+     }
+    ],
     "conflicts": []
    },
    "addedAt": "2026-10-16T13:49:36Z",
-   "updatedAt": "2026-10-16T13:49:36Z"
+   "updatedAt": "2026-10-22T07:18:58Z"
   },
   {
    "id": "wd:Q4117087",

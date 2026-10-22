@@ -10386,27 +10386,32 @@
       ],
       "duplicateOf": null,
       "addedAt": "2026-10-21T08:10:46Z",
-      "updatedAt": "2026-10-21T20:23:18Z",
+      "updatedAt": "2026-10-22T07:18:58Z",
       "doctoralReview": {
-        "status": "partial",
-        "checkedAt": "2026-10-21",
-        "programmeIds": [],
+        "status": "verified",
+        "checkedAt": "2026-10-22",
+        "programmeIds": [
+          "copenhagen-business-school--phd-operations-management"
+        ],
         "branches": [
           {
             "branch": "business",
-            "reviewState": "partial",
-            "conclusion": "Official department and central PhD pages both returned HTTP503 Backend fetch failed in Chrome. Search results identify current official PhD material but snippets are discovery only; exact award and relevant doctoral programme not verified.",
+            "reviewState": "checked",
+            "conclusion": "Full central PhD programme and expanded eleven-department doctoral coordinator inventory read; programme is research PhD with approved thesis and public defence. Explicit Operations Management department doctoral participation and operations/SCM/logistics focus verified. Full eleven research-department inventory checked.",
             "sourceUrls": [
+              "https://www.cbs.dk/en/research/phd-cbs",
               "https://www.cbs.dk/en/research/departments/department-operations-management",
-              "https://www.cbs.dk/en/research/phd-cbs"
+              "https://www.cbs.dk/en/research/departments"
             ]
           },
           {
             "branch": "engineering",
-            "reviewState": "partial",
-            "conclusion": "Earlier official unit inventory described CBS business-school departments without engineering, but current doctoral inventory could not be read. Current doctoral scope remains unknown.",
+            "reviewState": "not-present",
+            "conclusion": "Complete current institutional research-department and doctoral coordinator inventories contain eleven business/social-science departments, including Operations Management; no separate engineering department/school is listed. Engineering-like production research is within the verified OM department, not an invented engineering degree.",
             "sourceUrls": [
-              "https://www.cbs.dk/en/research/phd-cbs"
+              "https://www.cbs.dk/en/research/phd-cbs",
+              "https://www.cbs.dk/en/research/departments",
+              "https://www.cbs.dk/en/research/departments/department-operations-management"
             ]
           }
         ],
@@ -10422,13 +10427,31 @@
             "checkedAt": "2026-10-21",
             "outcome": "blocked",
             "note": "Official page opened in Chrome and returned Error503 Backend fetch failed / Varnish cache server. No programme facts taken from search snippets."
+          },
+          {
+            "url": "https://www.cbs.dk/en/research/phd-cbs",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Restored site. Read full central PhD programme: exact PhD credential, independent research/thesis/public-defence award, CBS PhD School host, departmental enrolment and all eleven hosts in expanded PhD Coordinator disclosure. Funding/application details not converted into separate degrees."
+          },
+          {
+            "url": "https://www.cbs.dk/en/research/departments/department-operations-management",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Read full current department about panel with all five focus areas, then visible Education tab via its actual label. Education explicitly states departmental PhD community and PhD fellowship; OM and SCM/logistics research scope explicit."
+          },
+          {
+            "url": "https://www.cbs.dk/en/research/departments",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full current eleven-department research inventory read; no separate engineering school/department. Earlier source outage superseded only as current availability, not erased."
           }
         ],
         "limitations": [
-          "Current official programme access unavailable. Existing unit verification is preserved separately and is not converted into doctoral completion.",
-          "No bypass or repeated outage retries attempted; revisit after site recovery."
+          "Earlier21October503 source observations retained; restored content actually read22October.",
+          "Current source-bounded central/departmental doctoral inventory checked, not historical programme or individual graduate census. No doctoral admissions continuity or founding date inferred."
         ],
-        "coverageComplete": false
+        "coverageComplete": true
       }
     },
     {
@@ -20806,7 +20829,43 @@
       ],
       "duplicateOf": null,
       "addedAt": "2026-10-20T09:19:47Z",
-      "updatedAt": "2026-10-20T09:30:49Z"
+      "updatedAt": "2026-10-22T07:18:58Z",
+      "doctoralReview": {
+        "status": "no-qualifying-programme-verified",
+        "checkedAt": "2026-10-22",
+        "programmeIds": [],
+        "branches": [
+          {
+            "branch": "business",
+            "reviewState": "checked",
+            "sourceUrls": [
+              "https://catalog.lasalle.edu/graduate/doctorates/"
+            ],
+            "conclusion": "The complete 2026–2027 university doctoral catalogue lists two Nursing Practice routes and Clinical Psychology only. No business doctorate or relevant operations doctoral programme is listed."
+          },
+          {
+            "branch": "engineering",
+            "reviewState": "checked",
+            "sourceUrls": [
+              "https://catalog.lasalle.edu/graduate/doctorates/"
+            ],
+            "conclusion": "No engineering doctorate appears in the complete 2026–2027 university doctoral catalogue. This is a current catalogue scope conclusion, not a claim about historical provision."
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://catalog.lasalle.edu/graduate/doctorates/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full current 2026–2027 Doctorates catalogue read: Doctor of Nursing Practice post-master; Doctor of Nursing Practice post-BSN nurse anesthesia; Doctor of Psychology in Clinical Psychology. Official footer identifies La Salle University, Philadelphia."
+          }
+        ],
+        "limitations": [
+          "Current documented doctoral inventory only; historical provision not established. La Salle in Philadelphia is distinct from institutions using La Salle names in other countries.",
+          "Imported BA unit shorthand remains unresolved under the prior unit review; absence of a qualifying doctoral programme does not silently resolve that separate source label."
+        ],
+        "coverageComplete": true
+      }
     },
     {
       "id": "lake-erie-college",
@@ -20849,7 +20908,49 @@
       ],
       "duplicateOf": null,
       "addedAt": "2026-10-20T09:25:45Z",
-      "updatedAt": "2026-10-20T09:30:49Z"
+      "updatedAt": "2026-10-22T07:18:58Z",
+      "doctoralReview": {
+        "status": "no-qualifying-programme-verified",
+        "checkedAt": "2026-10-22",
+        "programmeIds": [],
+        "branches": [
+          {
+            "branch": "business",
+            "reviewState": "checked",
+            "sourceUrls": [
+              "https://www.lec.edu/graduate-degrees"
+            ],
+            "conclusion": "Complete current graduate degree inventory lists MBA, education and professional studies masters, plus the physician assistant programme. Business offering is explicitly Master of Business Administration; no business doctorate listed."
+          },
+          {
+            "branch": "engineering",
+            "reviewState": "checked",
+            "sourceUrls": [
+              "https://www.lec.edu/graduate-degrees"
+            ],
+            "conclusion": "No engineering doctorate or other doctoral programme appears in the complete current graduate degree inventory. This conclusion is bounded to this college and its current published list."
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://www.lec.edu/graduate-degrees",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Current official Graduate Degrees page lists Physician Assistant, Master of Business Administration, Master of Education Leadership, Master of Education and Master of Professional Studies. MBA and its two concentrations are explicitly masters-level; official footer identifies Lake Erie College in Painesville, Ohio."
+          },
+          {
+            "url": "https://catalog.lec.edu/content.php?catoid=7&navoid=195",
+            "checkedAt": "2026-10-22",
+            "outcome": "blocked",
+            "note": "Individually opened the official graduate catalogue result in Chrome; rendered body was empty. No catalogue facts inferred."
+          }
+        ],
+        "limitations": [
+          "Current graduate inventory supports no qualifying doctoral programme; historical doctoral provision was not researched.",
+          "Lake Erie College is distinct from the Lake Erie College of Osteopathic Medicine and the University of Toledo Lake Erie Center. Namesakes were not merged."
+        ],
+        "coverageComplete": true
+      }
     },
     {
       "id": "lancaster-university",
@@ -21240,7 +21341,43 @@
       ],
       "duplicateOf": null,
       "addedAt": "2026-10-20T09:25:45Z",
-      "updatedAt": "2026-10-20T09:30:49Z"
+      "updatedAt": "2026-10-22T07:18:58Z",
+      "doctoralReview": {
+        "status": "no-qualifying-programme-verified",
+        "checkedAt": "2026-10-22",
+        "programmeIds": [],
+        "branches": [
+          {
+            "branch": "business",
+            "reviewState": "checked",
+            "sourceUrls": [
+              "https://www.lemoyne.edu/academics/graduate-programs/explore-graduate-programs/"
+            ],
+            "conclusion": "Complete current graduate inventory lists the Madden College MBA as a masters award. Executive Leadership is explicitly an EdD in the Purcell School of Professional Studies, not an Operations PhD."
+          },
+          {
+            "branch": "engineering",
+            "reviewState": "checked",
+            "sourceUrls": [
+              "https://www.lemoyne.edu/academics/graduate-programs/explore-graduate-programs/"
+            ],
+            "conclusion": "No engineering or other qualifying operations research doctorate is listed in the complete current graduate inventory. The only doctoral awards listed are Nursing Practice and Executive Leadership."
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://www.lemoyne.edu/academics/graduate-programs/explore-graduate-programs/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Complete current Find Your Graduate Program inventory read: eight programmes with exact degrees and schools. Doctorates are Nursing Practice DNP and Executive Leadership EdD; remaining listed awards are masters or certificates. Official footer confirms Le Moyne College, Syracuse."
+          }
+        ],
+        "limitations": [
+          "Current published graduate inventory only; no historical absence claim. The EdD and DNP are preserved as their exact professional/education awards and not silently converted to PhD.",
+          "No graduate or faculty career research conducted."
+        ],
+        "coverageComplete": true
+      }
     },
     {
       "id": "lees-mcrae-college",
@@ -21600,17 +21737,31 @@
       "reviewer": "Codex in Chrome",
       "units": [
         {
-          "sourceUrl": "https://www.ln.edu.hk/orm",
+          "sourceUrl": "https://www.ln.edu.hk/faculties-and-units/faculties-and-departments",
           "type": "department",
           "name": "Department of Operations and Risk Management (ORM)",
-          "school": null,
-          "checkedAt": "2026-10-20",
-          "evidence": "Official department states establishment in 2024 combining former Computing and Decision Sciences and Finance and Insurance strengths; explicitly covers operations management and supports supply chain masters and business research training.",
+          "school": "Faculty of Business",
+          "checkedAt": "2026-10-22",
+          "evidence": "Official department states establishment in 2024 combining former Computing and Decision Sciences and Finance and Insurance strengths; explicitly covers operations management and supports supply chain masters and business research training. Parent Faculty of Business confirmed in the current academic units inventory on 22 October 2026.",
           "id": "lingnan-university--operations-risk-management",
           "fields": [
             "operations-management",
             "supply-chain"
           ]
+        },
+        {
+          "id": "lingnan-university--school-data-science",
+          "name": "School of Data Science",
+          "type": "school",
+          "school": "Lingnan University",
+          "fields": [
+            "operations-research",
+            "logistics",
+            "supply-chain"
+          ],
+          "sourceUrl": "https://www.ln.edu.hk/rpg/research-area/data-science/data-science",
+          "checkedAt": "2026-10-22",
+          "evidence": "Current school identity is explicitly listed in the university academic units inventory; its Data Science research postgraduate fields explicitly include operational research, management science, smart logistics and supply chain analytics."
         }
       ],
       "decisions": [
@@ -21641,14 +21792,126 @@
           "outcome": "read",
           "url": "https://www.ln.edu.hk/academics",
           "checkedAt": "2026-10-20"
+        },
+        {
+          "url": "https://www.ln.edu.hk/rpg/admission/list-of-programmes",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Complete current research postgraduate programme inventory explicitly gives Doctor of Philosophy (PhD) and Business including Operations Management, Data Science, Arts, Social Sciences and Environmental Science/Sustainability. Joint programmes listed separately."
+        },
+        {
+          "url": "https://www.ln.edu.hk/rpg/research-area/business",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Current doctoral Business research areas explicitly include manufacturing/service operations management, operations research and management science, and supply chain management."
+        },
+        {
+          "url": "https://www.ln.edu.hk/orm",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Current department provides research training and supervision to MPhil and PhD candidates in Business; 2024 predecessor history stated. Exact Operations and Risk Management department name retained."
+        },
+        {
+          "url": "https://www.ln.edu.hk/rpg/research-area/data-science/data-science",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Current research postgraduate Data Science fields explicitly include operational research and management science, smart logistics and supply chain analytics, industrial data science and smart manufacturing."
+        },
+        {
+          "url": "https://www.ln.edu.hk/faculties-and-units/faculties-and-departments",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Complete current academic units inventory maps ORM to Faculty of Business and lists School of Data Science with AI and Industrial Data Science divisions. No engineering faculty in this current university inventory."
+        },
+        {
+          "url": "https://www.ln.edu.hk/rpg/admission/list-of-programmes/collaborative-programmes/double-phd-degree-programme-in-business-with-south-china-university-of-technology-china",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Current Business double PhD with SCUT awards Lingnan PhD Business and SCUT PhD Management, separate theses examinations and current 15 January 2027 application deadline. Exact Operations field eligibility not stated; no additional independent operations route inferred."
         }
       ],
       "limitations": [
-        "Parent faculty not explicitly transcribed on the opened department page, so left null rather than carrying unverified import."
+        "ORM parent faculty resolved from current academic units inventory on 22 October 2026; original department name and historical observations preserved.",
+        "No standalone Operations Research department inferred from Data Science doctoral research fields."
       ],
       "duplicateOf": null,
+      "doctoralReview": {
+        "status": "verified",
+        "checkedAt": "2026-10-22",
+        "programmeIds": [
+          "lingnan-university--phd-business-operations-management",
+          "lingnan-university--phd-data-science-operations-research"
+        ],
+        "branches": [
+          {
+            "branch": "business",
+            "reviewState": "checked",
+            "sourceUrls": [
+              "https://www.ln.edu.hk/rpg/admission/list-of-programmes",
+              "https://www.ln.edu.hk/rpg/research-area/business",
+              "https://www.ln.edu.hk/orm",
+              "https://www.ln.edu.hk/rpg/admission/list-of-programmes/collaborative-programmes/double-phd-degree-programme-in-business-with-south-china-university-of-technology-china"
+            ],
+            "conclusion": "Business PhD Operations Management is explicit and mapped to ORM. Joint Business double degree with SCUT is documented but its precise Operations field entry is unresolved; other joint options not individually examined."
+          },
+          {
+            "branch": "engineering",
+            "reviewState": "partial",
+            "sourceUrls": [
+              "https://www.ln.edu.hk/rpg/admission/list-of-programmes",
+              "https://www.ln.edu.hk/rpg/research-area/data-science/data-science",
+              "https://www.ln.edu.hk/faculties-and-units/faculties-and-departments"
+            ],
+            "conclusion": "No separate engineering faculty in current units inventory. Technical Data Science PhD explicitly covers OR and logistics research. Environmental Science/Sustainability and remaining joint doctoral field scopes have not been exhausted."
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://www.ln.edu.hk/rpg/admission/list-of-programmes",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Complete current research postgraduate programme inventory explicitly gives Doctor of Philosophy (PhD) and Business including Operations Management, Data Science, Arts, Social Sciences and Environmental Science/Sustainability. Joint programmes listed separately."
+          },
+          {
+            "url": "https://www.ln.edu.hk/rpg/research-area/business",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Current doctoral Business research areas explicitly include manufacturing/service operations management, operations research and management science, and supply chain management."
+          },
+          {
+            "url": "https://www.ln.edu.hk/orm",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Current department provides research training and supervision to MPhil and PhD candidates in Business; 2024 predecessor history stated. Exact Operations and Risk Management department name retained."
+          },
+          {
+            "url": "https://www.ln.edu.hk/rpg/research-area/data-science/data-science",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Current research postgraduate Data Science fields explicitly include operational research and management science, smart logistics and supply chain analytics, industrial data science and smart manufacturing."
+          },
+          {
+            "url": "https://www.ln.edu.hk/faculties-and-units/faculties-and-departments",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Complete current academic units inventory maps ORM to Faculty of Business and lists School of Data Science with AI and Industrial Data Science divisions. No engineering faculty in this current university inventory."
+          },
+          {
+            "url": "https://www.ln.edu.hk/rpg/admission/list-of-programmes/collaborative-programmes/double-phd-degree-programme-in-business-with-south-china-university-of-technology-china",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Current Business double PhD with SCUT awards Lingnan PhD Business and SCUT PhD Management, separate theses examinations and current 15 January 2027 application deadline. Exact Operations field eligibility not stated; no additional independent operations route inferred."
+          }
+        ],
+        "limitations": [
+          "Joint doctoral options and Environmental Science/Sustainability field inventories remain to be examined before complete institutional scope is claimed.",
+          "Joint award paths are not automatically counted again as independent degrees in the same regular Business or Data Science PhD field.",
+          "Distinct Hong Kong institution; no namesake institution or mainland partner identity merge."
+        ],
+        "coverageComplete": false
+      },
       "addedAt": "2026-10-20T09:25:45Z",
-      "updatedAt": "2026-10-20T09:25:45Z"
+      "updatedAt": "2026-10-22T07:18:58Z"
     },
     {
       "id": "london-business-school",
@@ -22311,7 +22574,7 @@
       "duplicateOf": null,
       "doctoralReview": {
         "status": "verified",
-        "checkedAt": "2026-10-21",
+        "checkedAt": "2026-10-22",
         "programmeIds": [
           "maastricht-university--economics-business-phd-operations"
         ],
@@ -22329,14 +22592,13 @@
             "branch": "engineering",
             "reviewState": "partial",
             "sourceUrls": [
-              "https://www.maastrichtuniversity.nl/about-um/faculties/science-and-engineering/research/research-departments",
-              "https://www.maastrichtuniversity.nl/about-um/faculties/science-and-engineering/research/fse-stem-graduate-school",
               "https://www.maastrichtuniversity.nl/department-advanced-computing-sciences/research/applied_mathematics/operations_research",
-              "https://www.maastrichtuniversity.nl/department-advanced-computing-sciences/research/applied_mathematics",
-              "https://www.maastrichtuniversity.nl/research/department-advanced-computing-sciences/education",
-              "https://www.maastrichtuniversity.nl/research/mathematics-centre-maastricht-mcm"
+              "https://www.maastrichtuniversity.nl/phd-structure-netherlands",
+              "https://www.maastrichtuniversity.nl/starting-phd-maastricht-university",
+              "https://www.maastrichtuniversity.nl/about-um/faculties/science-and-engineering/research/fse-stem-graduate-school",
+              "https://www.maastrichtuniversity.nl/about-um/faculties/science-and-engineering/research/research-departments"
             ],
-            "conclusion": "Complete FSEresearchunit inventory and allFSEPhDtraining framework read. Actual DACSORresearch theme verified, but exactdoctoralcredential/ORhostregistration not established from genericgraduateSchool and placeholderappliedMath page. Current DACS education page confirms broad PhD openings in data science/AI/computer science/mathematics, but no explicit OR doctoral field. Former OperationsResearch degree explicitly an MSc. MCM OR research and LNMB training do not establish separate award."
+            "conclusion": "Individualized PhD diploma structure and FSE entry are explicit. Current Operations Research research area does not itself map doctoral entry into the group; no new route inferred."
           }
         ],
         "sources": [
@@ -22393,17 +22655,48 @@
             "checkedAt": "2026-10-21",
             "outcome": "read",
             "note": "Actual MathematicsCentreMaastricht research institute coordinated FSE+SBE, core departmentsDACS/DAD/QE and explicit ORresearch. LNMB/DISC research-school affiliation is training, not an independently awarded doctorate."
+          },
+          {
+            "url": "https://www.maastrichtuniversity.nl/department-advanced-computing-sciences/research/applied_mathematics/operations_research",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Current DACS Applied Mathematics Operations Research research area covers constrained industrial decisions, stochastic methods, game theory, manufacturing, government, energy and health. No doctoral entry or credential stated on this research-area page."
+          },
+          {
+            "url": "https://www.maastrichtuniversity.nl/phd-structure-netherlands",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Official PhD pathway has employed, scholarship, externally financed and own-resource routes; all require research proposals, satisfy the same dissertation criteria and receive the same PhD diploma."
+          },
+          {
+            "url": "https://www.maastrichtuniversity.nl/starting-phd-maastricht-university",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "University entry guidance says PhD programmes are not education programmes as such and lists decentralized faculty entry points including Science and Engineering and Business and Economics."
+          },
+          {
+            "url": "https://www.maastrichtuniversity.nl/about-um/faculties/science-and-engineering/research/fse-stem-graduate-school",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Faculty doctoral entry page supports all FSE PhD candidates, research projects and affiliated training schools including LNMB. No exact OR doctoral-entry-to-group mapping established."
+          },
+          {
+            "url": "https://www.maastrichtuniversity.nl/about-um/faculties/science-and-engineering/research/research-departments",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full current FSE department/institute inventory read: DACS, Mathematics Centre Maastricht and departments in materials, physics, sensors, systems biology, chemistry, food, society, arts and agriculture."
           }
         ],
         "limitations": [
           "CurrentengineeringORdoctoralaward/registrationmapping unresolved; do not fabricate PhDinOperationsResearch from researchtheme and genericfacultyPhDsupport alone.",
           "Central PhDtraininglist explicitly not exhaustivepaid/externaldoctoralofferings; bothbranch factualcoverage remains incomplete.",
-          "Additional current DACS/MCM checks retain engineering gap: broad PhD projects plus OR research institute are not enough to invent an exact OR doctoral registration. Former MSc OperationsResearch must not be counted as doctorate."
+          "Additional current DACS/MCM checks retain engineering gap: broad PhD projects plus OR research institute are not enough to invent an exact OR doctoral registration. Former MSc OperationsResearch must not be counted as doctorate.",
+          "Business branch not rechecked in this follow-up. Engineering OR doctoral mapping remains unresolved."
         ],
         "coverageComplete": false
       },
       "addedAt": "2026-10-20T09:43:28Z",
-      "updatedAt": "2026-10-21T21:55:18Z"
+      "updatedAt": "2026-10-22T07:18:58Z"
     },
     {
       "id": "macewan-university",
@@ -45329,7 +45622,57 @@
       "universitySourceUrl": "https://catalog.uab.edu/undergraduate/schoolofbusiness/marketingeconomics/",
       "reviewer": "Codex in Chrome",
       "addedAt": "2026-10-20T09:43:28Z",
-      "updatedAt": "2026-10-20T09:43:28Z"
+      "updatedAt": "2026-10-22T07:18:58Z",
+      "doctoralReview": {
+        "status": "no-qualifying-programme-verified",
+        "checkedAt": "2026-10-22",
+        "programmeIds": [],
+        "branches": [
+          {
+            "branch": "business",
+            "reviewState": "checked",
+            "conclusion": "Complete published Collat graduate inventory lists three masters and certificates, no doctorate. Existing operations/distribution undergraduate units do not establish doctoral provision.",
+            "sourceUrls": [
+              "https://catalog.uab.edu/graduate/schoolofbusiness/"
+            ]
+          },
+          {
+            "branch": "engineering",
+            "reviewState": "partial",
+            "conclusion": "Complete engineering graduate inventory and Interdisciplinary Engineering PhD page read. No named Industrial Engineering/Operations route verified; interdisciplinary dissertation structure alone does not establish a relevant field. Potential individual interdisciplinary operations supervision remains unverified.",
+            "sourceUrls": [
+              "https://www.uab.edu/engineering/home/graduate",
+              "https://www.uab.edu/engineering/home/graduate/ph-d-in-interdisciplinary-engineering"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://www.uab.edu/engineering/home/graduate",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full current engineering graduate inventory read individually in Chrome; doctorates in Biomedical, Civil, Computer, Interdisciplinary, Materials Engineering, Materials Science and Neuroengineering."
+          },
+          {
+            "url": "https://www.uab.edu/engineering/home/graduate/ph-d-in-interdisciplinary-engineering",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full programme read: IE means Interdisciplinary Engineering; research dissertation across four engineering departments. No explicit qualifying operations/OR/industrial-engineering doctoral field established."
+          },
+          {
+            "url": "https://catalog.uab.edu/graduate/schoolofbusiness/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full Collat graduate school inventory read in Chrome: Accounting, MBA and MIS masters plus certificates; accreditation explicitly baccalaureate and masters. Header says 2026-2027 while sidebar/footer say 2025-2026."
+          }
+        ],
+        "limitations": [
+          "No qualifying doctoral route verified within reviewed scope; this is not proof of eternal absence. Interdisciplinary Engineering abbreviation IE must not be interpreted as Industrial Engineering.",
+          "Catalogue has conflicting edition labels: 2026-2027 header and 2025-2026 sidebar/footer. Broader individualized doctoral field pathways remain unresolved.",
+          "Existing published university alias relationship and unit evidence retain their earlier check dates; no unit changes proposed."
+        ],
+        "coverageComplete": false
+      }
     },
     {
       "canonicalName": "The University of Alabama at Birmingham",
@@ -45406,7 +45749,57 @@
       "universitySourceUrl": "https://catalog.uab.edu/undergraduate/schoolofbusiness/marketingeconomics/",
       "reviewer": "Codex in Chrome",
       "addedAt": "2026-10-20T09:43:28Z",
-      "updatedAt": "2026-10-20T09:43:28Z"
+      "updatedAt": "2026-10-22T07:18:58Z",
+      "doctoralReview": {
+        "status": "no-qualifying-programme-verified",
+        "checkedAt": "2026-10-22",
+        "programmeIds": [],
+        "branches": [
+          {
+            "branch": "business",
+            "reviewState": "checked",
+            "conclusion": "Complete published Collat graduate inventory lists three masters and certificates, no doctorate. Existing operations/distribution undergraduate units do not establish doctoral provision.",
+            "sourceUrls": [
+              "https://catalog.uab.edu/graduate/schoolofbusiness/"
+            ]
+          },
+          {
+            "branch": "engineering",
+            "reviewState": "partial",
+            "conclusion": "Complete engineering graduate inventory and Interdisciplinary Engineering PhD page read. No named Industrial Engineering/Operations route verified; interdisciplinary dissertation structure alone does not establish a relevant field. Potential individual interdisciplinary operations supervision remains unverified.",
+            "sourceUrls": [
+              "https://www.uab.edu/engineering/home/graduate",
+              "https://www.uab.edu/engineering/home/graduate/ph-d-in-interdisciplinary-engineering"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://www.uab.edu/engineering/home/graduate",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full current engineering graduate inventory read individually in Chrome; doctorates in Biomedical, Civil, Computer, Interdisciplinary, Materials Engineering, Materials Science and Neuroengineering."
+          },
+          {
+            "url": "https://www.uab.edu/engineering/home/graduate/ph-d-in-interdisciplinary-engineering",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full programme read: IE means Interdisciplinary Engineering; research dissertation across four engineering departments. No explicit qualifying operations/OR/industrial-engineering doctoral field established."
+          },
+          {
+            "url": "https://catalog.uab.edu/graduate/schoolofbusiness/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full Collat graduate school inventory read in Chrome: Accounting, MBA and MIS masters plus certificates; accreditation explicitly baccalaureate and masters. Header says 2026-2027 while sidebar/footer say 2025-2026."
+          }
+        ],
+        "limitations": [
+          "No qualifying doctoral route verified within reviewed scope; this is not proof of eternal absence. Interdisciplinary Engineering abbreviation IE must not be interpreted as Industrial Engineering.",
+          "Catalogue has conflicting edition labels: 2026-2027 header and 2025-2026 sidebar/footer. Broader individualized doctoral field pathways remain unresolved.",
+          "Existing published university alias relationship and unit evidence retain their earlier check dates; no unit changes proposed."
+        ],
+        "coverageComplete": false
+      }
     },
     {
       "id": "university-of-alaska-anchorage",
@@ -45465,7 +45858,42 @@
       ],
       "duplicateOf": null,
       "addedAt": "2026-10-20T09:43:28Z",
-      "updatedAt": "2026-10-20T09:43:28Z"
+      "updatedAt": "2026-10-22T07:18:58Z",
+      "doctoralReview": {
+        "status": "no-qualifying-programme-verified",
+        "checkedAt": "2026-10-22",
+        "programmeIds": [],
+        "branches": [
+          {
+            "branch": "business",
+            "reviewState": "checked",
+            "conclusion": "Complete current university graduate A-Z inventory read: General Management MBA, Public Administration MPA, Public Policy MPP and business analytics certificate; no business research doctorate listed.",
+            "sourceUrls": [
+              "https://catalog.uaa.alaska.edu/graduateprograms/"
+            ]
+          },
+          {
+            "branch": "engineering",
+            "reviewState": "checked",
+            "conclusion": "Complete current graduate A-Z inventory lists Civil and Mechanical Engineering MS, Artificial Intelligence/Data Science/Engineering MS, Project Management MS/certificate. No engineering or relevant Ops/OR/IE doctorate listed. University doctoral entries concern psychology and health, including explicitly collaborative awards elsewhere.",
+            "sourceUrls": [
+              "https://catalog.uaa.alaska.edu/graduateprograms/"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://catalog.uaa.alaska.edu/graduateprograms/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Official 2026-2027 graduate catalogue overview and complete All Programs A-Z tab individually read in Chrome. Overview explicitly distinguishes UAA graduate provision from collaborative doctoral degrees granted by another university."
+          }
+        ],
+        "limitations": [
+          "No qualifying programme verified in complete stated current graduate catalogue scope; not a claim about historical doctoral provision or future programmes. Collaborative doctorate participation does not automatically establish UAA as degree awarder."
+        ],
+        "coverageComplete": true
+      }
     },
     {
       "id": "university-of-alaska-fairbanks",
@@ -45508,7 +45936,99 @@
       ],
       "duplicateOf": null,
       "addedAt": "2026-10-20T09:43:28Z",
-      "updatedAt": "2026-10-20T09:43:28Z"
+      "updatedAt": "2026-10-22T07:18:58Z",
+      "doctoralReview": {
+        "status": "partial",
+        "checkedAt": "2026-10-22",
+        "programmeIds": [],
+        "branches": [
+          {
+            "branch": "business",
+            "reviewState": "checked",
+            "conclusion": "Current central programme catalogue business entries list MBA and masters/certificates in security/disaster management, with no business doctorate in doctoral inventory.",
+            "sourceUrls": [
+              "https://catalog.uaf.edu/programs/",
+              "https://catalog.uaf.edu/phd/engineering/"
+            ]
+          },
+          {
+            "branch": "engineering",
+            "reviewState": "partial",
+            "conclusion": "Engineering PhD explicitly lists Engineering Management among eleven concentrations and requires original thesis/defense. Relevant operations/OR/industrial-engineering field within that concentration has not been established; no route added from generic management title. ECE departmental graduate research is power/control/computing, not inferred OR from energy optimization.",
+            "sourceUrls": [
+              "https://catalog.uaf.edu/phd/engineering/",
+              "https://catalog.uaf.edu/academic-departments/electrical-computer-engineering/",
+              "https://catalog.uaf.edu/academic-departments/civil-geological-environmental-engineering/"
+            ]
+          },
+          {
+            "branch": "mathematics",
+            "reviewState": "partial",
+            "conclusion": "Mathematics PhD and departmental overview read; applied/pure mathematics research stated, no explicit relevant OR area established. More detailed research-field scope remains unresolved.",
+            "sourceUrls": [
+              "https://catalog.uaf.edu/phd/mathematics/",
+              "https://catalog.uaf.edu/academic-departments/mathematics-statistics/"
+            ]
+          },
+          {
+            "branch": "other",
+            "reviewState": "partial",
+            "conclusion": "Interdisciplinary Studies PhD individualized thesis/coursework requirements read; no explicit relevant operations field pathway established.",
+            "sourceUrls": [
+              "https://catalog.uaf.edu/programs/",
+              "https://catalog.uaf.edu/phd/interdisciplinary-studies/"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://catalog.uaf.edu/programs/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Official 2026-2027 central programme inventory opened in Chrome; business entries and doctoral leads read, rather than claiming every long directory entry reviewed."
+          },
+          {
+            "url": "https://catalog.uaf.edu/phd/engineering/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full engineering PhD requirements and complete doctoral degree navigation inventory read."
+          },
+          {
+            "url": "https://catalog.uaf.edu/academic-departments/electrical-computer-engineering/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full official department overview and graduate research/Engineering PhD text read. Broad combined college PhD not assigned exclusively to ECE from catalogue navigation."
+          },
+          {
+            "url": "https://catalog.uaf.edu/phd/mathematics/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full Mathematics PhD requirements page read; generic mathematical curriculum not proof of OR specialization."
+          },
+          {
+            "url": "https://catalog.uaf.edu/academic-departments/mathematics-statistics/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full departmental overview read; Mathematics PhD described as applied/pure mathematics, no OR doctoral area specified."
+          },
+          {
+            "url": "https://catalog.uaf.edu/phd/interdisciplinary-studies/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full individualized thesis/coursework programme requirements read; no relevant operations field specified."
+          },
+          {
+            "url": "https://catalog.uaf.edu/academic-departments/civil-geological-environmental-engineering/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full department overview read. Engineering management appears in masters context, not an explicit doctoral Operations/OR specialization. Generic combined engineering doctorate retained without qualification inference."
+          }
+        ],
+        "limitations": [
+          "Engineering Management concentration relevance, Mathematics doctoral research fields and individualized Interdisciplinary Studies route scope remain unresolved. No doctoral route assigned from concentration title, optimization method or generic doctoral provision alone."
+        ],
+        "coverageComplete": false
+      }
     },
     {
       "id": "university-of-alberta",
@@ -47583,7 +48103,56 @@
       ],
       "duplicateOf": null,
       "addedAt": "2026-10-20T10:06:22Z",
-      "updatedAt": "2026-10-20T10:06:22Z"
+      "updatedAt": "2026-10-22T07:18:58Z",
+      "doctoralReview": {
+        "status": "partial",
+        "checkedAt": "2026-10-22",
+        "programmeIds": [],
+        "branches": [
+          {
+            "branch": "business",
+            "reviewState": "partial",
+            "conclusion": "Management of Complex Systems PhD explicitly offered by MIST Graduate Group within engineering; exact programme and complete departmental research-theme page read. Decision support, optimization, innovation and human-natural systems themes do not explicitly establish Ops/OR/IE/SCM doctoral field. No separate business award inferred.",
+            "sourceUrls": [
+              "https://mcs.ucmerced.edu/phd-program-info",
+              "https://mcs.ucmerced.edu/research-areas"
+            ]
+          },
+          {
+            "branch": "engineering",
+            "reviewState": "partial",
+            "conclusion": "Full official school graduate inventory read: six programmes Bioengineering, EECS, Environmental Systems, Management of Complex Systems, Materials/Biomaterials, Mechanical. Relevant doctoral field pathways within broad engineering degrees remain unverified.",
+            "sourceUrls": [
+              "https://engineering.ucmerced.edu/graduate-studies"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://mcs.ucmerced.edu/phd-program-info",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full exact MCS PhD description read in Chrome; administrative Department of Management of Complex Systems / School of Engineering, MIST Graduate Group programme provision."
+          },
+          {
+            "url": "https://mcs.ucmerced.edu/research-areas",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full four-theme research inventory read: decision support/innovation; coupled systems; people at work; climate/resilience. Optimization appears among methods, not a named OR doctoral field."
+          },
+          {
+            "url": "https://engineering.ucmerced.edu/graduate-studies",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full engineering graduate overview and complete six-programme inventory read. No independent IE/OR award listed; broad doctoral research fields still need individual checks."
+          }
+        ],
+        "limitations": [
+          "Exact Management of Complex Systems PhD exists, but current opened sources do not establish qualifying field. No route assigned from generic management science framing, decision-making or optimization alone.",
+          "Wider engineering and mathematical doctoral field mapping remains incomplete. No individual student/faculty career or graduate facts collected."
+        ],
+        "coverageComplete": false
+      }
     },
     {
       "duplicateOf": null,
@@ -47652,7 +48221,77 @@
       ],
       "canonicalName": "University of California, Riverside",
       "addedAt": "2026-10-20T09:53:41Z",
-      "updatedAt": "2026-10-20T09:53:41Z"
+      "updatedAt": "2026-10-22T07:18:58Z",
+      "doctoralReview": {
+        "status": "verified",
+        "checkedAt": "2026-10-22",
+        "programmeIds": [
+          "university-of-california-riverside--business-administration-operations-phd"
+        ],
+        "branches": [
+          {
+            "branch": "business",
+            "reviewState": "checked",
+            "conclusion": "Complete current PhD concentration inventory read: Finance, Strategic Management and Organization, Marketing, Operations. Operations is one concentration of broad Business Administration PhD, not a separate second award.",
+            "sourceUrls": [
+              "https://business.ucr.edu/phd",
+              "https://business.ucr.edu/phd/operations"
+            ]
+          },
+          {
+            "branch": "engineering",
+            "reviewState": "checked",
+            "conclusion": "Full current engineering degree inventory read: six PhDs in Bioengineering, Chemical/Environmental, Computer Science/Engineering, Electrical, Materials, Mechanical. No named Ops/OR/IE doctorate; Engineering Management listed as online masters only. No additional qualifying engineering route established.",
+            "sourceUrls": [
+              "https://www.engr.ucr.edu/academics"
+            ]
+          },
+          {
+            "branch": "mathematics",
+            "reviewState": "partial",
+            "conclusion": "Four-group departmental research inventory and expanded PDE/Applied Mathematics subfields read. Optimization is a listed method, without explicit OR doctoral field qualification; full doctoral mapping remains unresolved.",
+            "sourceUrls": [
+              "https://mathdept.ucr.edu/research-groups-new"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://business.ucr.edu/phd/operations",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full exact concentration programme page individually read in Chrome, with periodic admissions and dissertation requirements."
+          },
+          {
+            "url": "https://business.ucr.edu/phd",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full current four-concentration Business Administration PhD inventory read."
+          },
+          {
+            "url": "https://www.engr.ucr.edu/academics",
+            "checkedAt": "2026-10-20",
+            "outcome": "read",
+            "note": "Earlier individually read engineering unit inventory retained with original source date; does not complete current doctoral field review."
+          },
+          {
+            "url": "https://www.engr.ucr.edu/academics",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full current engineering academics page now read: complete six PhD inventory, five departments/five interdisciplinary programmes. Engineering Management appears only as online masters specialization."
+          },
+          {
+            "url": "https://mathdept.ucr.edu/research-groups-new",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Research overview and PDE/Applied Mathematics tab read, including optimization, scientific computing and machine learning. These methods alone are not OR doctoral field proof."
+          }
+        ],
+        "limitations": [
+          "Current engineering and business inventories read; wider mathematical doctoral field mapping remains unresolved. No extra OR route inferred from optimization, machine learning or computing methods."
+        ],
+        "coverageComplete": false
+      }
     },
     {
       "id": "university-of-california-san-diego-ucsd",
@@ -59586,7 +60225,7 @@
       "duplicateOf": null,
       "doctoralReview": {
         "status": "verified",
-        "checkedAt": "2026-10-21",
+        "checkedAt": "2026-10-22",
         "programmeIds": [
           "university-of-warwick--business-management-phd-operations",
           "university-of-warwick--wmg-engineering-phd-supply-chain"
@@ -59604,22 +60243,29 @@
           },
           {
             "branch": "engineering",
-            "reviewState": "partial",
-            "conclusion": "WMG Engineering PhD and supply-chain doctoral research scope verified. Separate School of Engineering and mathematical/OR doctoral inventory not yet fully checked.",
+            "reviewState": "checked",
+            "conclusion": "WMG Engineering PhD and supply-chain route remain verified. Separate School of Engineering research-degree inventory and exact Engineering MPhil/PhD read on 22 October. Its six expanded research clusters concern built environment, biomedical, electrical power, fluids, materials and predictive modelling; no additional explicit Ops/IE route established from these themes.",
             "sourceUrls": [
               "https://warwick.ac.uk/fac/sci/wmg",
               "https://warwick.ac.uk/fac/sci/wmg/study/research-degrees/",
               "https://warwick.ac.uk/fac/sci/wmg/study/research-degrees/doctor-of-philosophy-engineering/",
-              "https://warwick.ac.uk/fac/sci/wmg/research/research-areas/supply-chain"
+              "https://warwick.ac.uk/fac/sci/wmg/research/research-areas/supply-chain",
+              "https://warwick.ac.uk/fac/sci/eng/",
+              "https://warwick.ac.uk/fac/sci/eng/postgraduate/research-courses/",
+              "https://warwick.ac.uk/study/postgraduate/courses/mphil-phd-engineering"
             ]
           },
           {
             "branch": "mathematics",
             "reviewState": "partial",
-            "conclusion": "StatisticsPhD exact qualification and full current five-theme research inventory read; no explicit doctoral OR/Ops field verified. MathematicsInstitute and broader university mathematical doctoral scope remain incomplete. No methods-only degree added.",
+            "conclusion": "Current Mathematics CDT explicitly leads from MPhil to PhD in any mathematics area. Mathematics research inventory includes DIMAP; its homepage places explicit mathematics-of-operational-research PhD studentships among previously advertised positions beside 2010-era notices. This does not establish a current additional OR doctoral route. Current individual mathematical/Computer Science pathways remain unresolved; no extra award inferred from the multidisciplinary centre.",
             "sourceUrls": [
               "https://warwick.ac.uk/study/postgraduate/courses/mphil-phd-statistics/",
-              "https://warwick.ac.uk/fac/sci/statistics/research/"
+              "https://warwick.ac.uk/fac/sci/statistics/research/",
+              "https://warwick.ac.uk/fac/sci/maths/studywithus/postgraduateresearch/",
+              "https://warwick.ac.uk/fac/sci/maths/studywithus/postgraduateresearch/cdt-course/",
+              "https://warwick.ac.uk/fac/sci/maths/research/",
+              "https://warwick.ac.uk/fac/cross_fac/dimap/"
             ]
           }
         ],
@@ -59677,17 +60323,59 @@
             "checkedAt": "2026-10-21",
             "outcome": "read",
             "note": "Full departmental research inventory read including CRiSM, Probability, MathRad and StochasticFinance. Generic applications in business/engineering and optimization/finance methods not promoted to Operations doctorate."
+          },
+          {
+            "url": "https://warwick.ac.uk/fac/sci/eng/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Official School of Engineering identity and research-degree navigation read."
+          },
+          {
+            "url": "https://warwick.ac.uk/fac/sci/eng/postgraduate/research-courses/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Research-degree inventory read: MSc by Research, MPhil/PhD, PhD by Publication and three listed doctoral training centres."
+          },
+          {
+            "url": "https://warwick.ac.uk/study/postgraduate/courses/mphil-phd-engineering",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Exact Engineering MPhil/PhD qualification, School of Engineering host and all six expanded research clusters read. No explicit Ops/IE field established by those themes."
+          },
+          {
+            "url": "https://warwick.ac.uk/fac/sci/maths/studywithus/postgraduateresearch/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Current Mathematics doctoral entry page read, with links to its CDT and associated statistics/computer science training."
+          },
+          {
+            "url": "https://warwick.ac.uk/fac/sci/maths/studywithus/postgraduateresearch/cdt-course/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full CDT structure read: mathematics in any area, taught first year and project, then MPhil-to-PhD upgrade. No separate OR award stated."
+          },
+          {
+            "url": "https://warwick.ac.uk/fac/sci/maths/research/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full mathematics research inventory read, including DIMAP, CAMaCS and other centres."
+          },
+          {
+            "url": "https://warwick.ac.uk/fac/cross_fac/dimap/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full multidisciplinary centre page read. Explicit mathematics-of-operational-research PhD studentships appear in historical advertised positions, not a verified current intake. Centre spans Computer Science, Mathematics and Business; no separate award inferred."
           }
         ],
         "limitations": [
           "Imported IS and WMG Applied Artificial Intelligence labels remain unresolved.",
-          "Current doctoral inventory outside WBS and WMG, including School of Engineering and mathematical/OR routes, remains incomplete.",
-          "Statistics doctoral research currently checked separately; MathematicsInstitute and engineering-school doctoral inventories remain unexhausted. UndergraduateMORSE is not doctoral evidence."
+          "School of Engineering inventory is now checked, with no additional relevant doctoral route verified from its six themes.",
+          "Current mathematical/Computer Science OR doctoral pathway and historical DIMAP award mapping remain incomplete. Historical studentships do not prove a current intake."
         ],
         "coverageComplete": false
       },
       "addedAt": "2026-10-21T20:23:18Z",
-      "updatedAt": "2026-10-21T21:55:18Z"
+      "updatedAt": "2026-10-22T07:18:58Z"
     },
     {
       "id": "university-of-washington",
@@ -63952,7 +64640,7 @@
       ],
       "duplicateOf": null,
       "addedAt": "2026-10-20T10:24:43Z",
-      "updatedAt": "2026-10-22T06:53:24Z",
+      "updatedAt": "2026-10-22T07:18:58Z",
       "doctoralReview": {
         "status": "verified",
         "checkedAt": "2026-10-22",
@@ -63972,18 +64660,25 @@
           {
             "branch": "engineering",
             "reviewState": "partial",
-            "conclusion": "Full four-department inventory and current Mechanical PhD description checked; no qualifying Operations field established in mechanical scope. Civil, EECS and Earth/Space doctoral mappings remain incomplete.",
+            "conclusion": "All four engineering departments now have current graduate programme-level checks, including Civil, Earth/Space, EECS and prior Mechanical. No additional Ops route verified. Civil freight transport network research is explicit but its qualifying logistics/OR doctoral mapping remains unresolved.",
             "sourceUrls": [
               "https://lassonde.yorku.ca/academics/departments/",
               "https://www.yorku.ca/gradstudies/science-and-engineering/",
-              "https://futurestudents.yorku.ca/graduate/programs/mechanical-engineering"
+              "https://futurestudents.yorku.ca/graduate/programs/mechanical-engineering",
+              "https://lassonde.yorku.ca/academics/graduate-program-in-civil-engineering",
+              "https://lassonde.yorku.ca/academics/graduate-program-in-earth-and-space-science",
+              "https://lassonde.yorku.ca/academics/graduate-program-in-electrical-engineering-computer-science"
             ]
           },
           {
             "branch": "mathematics",
-            "reviewState": "partial",
-            "conclusion": "Mathematics and Statistics doctoral research inventories remain unchecked.",
-            "sourceUrls": []
+            "reviewState": "checked",
+            "conclusion": "Current Mathematics and Statistics graduate landing and complete programme descriptions read. Applied and Industrial Mathematics is MSc; broad mathematics PhD and generic optimization interests do not independently establish a doctoral OR specialization.",
+            "sourceUrls": [
+              "https://www.yorku.ca/gradstudies/academiccalendar/2022-2023/mathematics-statistics/",
+              "https://www.yorku.ca/gradstudies/mathstats/",
+              "https://www.yorku.ca/gradstudies/mathstats/programs/"
+            ]
           }
         ],
         "sources": [
@@ -64016,10 +64711,47 @@
             "note": "Full current Mechanical Engineering graduate page read including exact PhD with dissertation; stated research solid mechanics, thermofluids, control, aerospace, microfluidics, materials and biomedical optics. No explicit qualifying Operations route established.",
             "outcome": "read",
             "checkedAt": "2026-10-22"
+          },
+          {
+            "url": "https://www.yorku.ca/gradstudies/academiccalendar/2022-2023/mathematics-statistics/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Archived 2022–2023 Mathematics and Statistics About section read; explicit PhD with pure/applied mathematics/statistics scope. Used only as dated background and link to current programme."
+          },
+          {
+            "url": "https://www.yorku.ca/gradstudies/mathstats/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Current graduate landing read: PhD distinguished from Applied and Industrial Mathematics MSc; Fall2027 application period. Generic optimization research does not independently establish an OR doctoral field."
+          },
+          {
+            "url": "https://www.yorku.ca/gradstudies/mathstats/programs/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Complete current programme descriptions read: PhD subfields are foundations, algebra/geometry, probability/statistical theory, analysis and applied mathematics; Industrial Mathematics remains MSc."
+          },
+          {
+            "url": "https://lassonde.yorku.ca/academics/graduate-program-in-civil-engineering",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Current Civil Engineering PhD page read including programme description and all research-strength themes. Freight transport networks explicitly mentioned, but logistics/OR doctoral field mapping unresolved; no additional route inferred."
+          },
+          {
+            "url": "https://lassonde.yorku.ca/academics/graduate-program-in-earth-and-space-science",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Current Earth and Space Science PhD description and research themes read: atmospheric, geomatics, planetary and space engineering; no explicit Ops field verified."
+          },
+          {
+            "url": "https://lassonde.yorku.ca/academics/graduate-program-in-electrical-engineering-computer-science",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Current Electrical Engineering and Computer Science PhD description, doctoral admissions panel and research-strength list read; computing/electronics/networks methods not automatically Operations research."
           }
         ],
         "limitations": [
-          "Civil, EECS, Earth/Space and mathematical doctoral scope remain incomplete; no university-wide completion claim."
+          "Civil Engineering freight transport research requires explicit qualifying logistics/OR doctoral mapping before adding another route.",
+          "Current mathematical and engineering programme inventories were checked, but interdisciplinary Ops eligibility remains incomplete; no exhaustive historical claim."
         ],
         "coverageComplete": false
       }
