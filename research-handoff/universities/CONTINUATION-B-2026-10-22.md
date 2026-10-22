@@ -21,3 +21,5 @@ These five files were frozen for the integrator and are not edited afterward. Th
 These three aliases share canonical programme ID london-business-school--phd-management-science-operations. Complete current seven-subject doctoral inventory and thesis/defence requirement read in Chrome on 22 October; current Management Science and Operations programme has open applications. No separate engineering branch in the complete school doctoral inventory.
 
 Validation: standard access encountered intermittent Dropbox EPERM reading project schema, alongside Git loose-object read errors. Elevated validation of the three LBS proposals was launched; result pending at this handoff write. No public dataset, website, Git commit or deployment was changed by this lane.
+
+Final integration status: reviewed findings in this batch, including the later London Business School aliases, were integrated and published in c23ccc7. All 39 tests, public validators, four schema tests, clean remote build/deployment and live desktop/mobile checks passed. See CONTINUATION-4-2026-10-22.md and its release manifest for exact scope and remaining limitations.

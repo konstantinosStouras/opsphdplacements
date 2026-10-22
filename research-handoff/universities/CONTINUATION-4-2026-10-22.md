@@ -1,6 +1,6 @@
 # Stage 1 continuation 4 — 22 October 2026
 
-Integrated 14 additional verified current doctoral routes at nine additional providers: Aalto (four fields), City University of Hong Kong (two), Worcester Polytechnic Institute (two), York, UNSW Sydney, Kennesaw State, Korea University, Université libre de Bruxelles and London Business School (one each). Current public-format totals are 297 register records, 289 verified current routes and 175 providers. Publication remains pending until the deployment audit below is completed.
+Integrated 14 additional verified current doctoral routes at nine additional providers: Aalto (four fields), City University of Hong Kong (two), Worcester Polytechnic Institute (two), York, UNSW Sydney, Kennesaw State, Korea University, Université libre de Bruxelles and London Business School (one each). Current public-format totals are 297 register records, 289 verified current routes and 175 providers. Published in commit c23ccc7; final deployment audit is recorded below.
 
 Aalto's full six-school published doctoral inventory and London Business School's complete seven-subject inventory are now checked. Aalto's exact Doctor of Science credentials are retained as evidenced academic research doctorates. WPI's regular and executive Operations routes overlap in subject coverage; they are alternative routes, not two awards per graduate. Kennesaw's broad Interdisciplinary Engineering PhD explicitly includes Industrial and Systems Engineering research; no separate IE award was invented. Three LBS aliases and two UNSW aliases share one respective programme identity.
 
@@ -17,3 +17,7 @@ Unpublished continuation: shard-c-pending-2026-10-22.md preserves partially read
 All three research lanes are held after their saved cases and source tabs are closed. Stages 2–4 remain held and automation remains paused. Next work: remaining ranked doctoral branches and identities, the 137 untouched unit records, and complete source-unit reconciliation. No automatic research continuation is promised.
 
 Local preview passed: current totals, Aalto four exact academic doctorates, expanded branch and programme evidence with dates, no forbidden visitor links or filenames. Local static copy was blocked by an existing Dropbox offline logo (Q230492.png), not a changed dataset. GitHub clean build/deployment must pass before publication is confirmed.
+
+## Publication confirmed
+
+Commit c23ccc788acbb7bf5c6e620cf02dc59eac1edb88 was pushed to main and the research branch. GitHub Pages run 39737482742 completed successfully, including its clean build and checks, resolving the publication dependency noted above. Live browser checks confirmed 289 routes at 175 providers, Aalto search and its four routes, and expanded evidence with no visible dataset filenames or project repository links. At a 390px mobile viewport, document client and scroll widths both measured 375px (no horizontal overflow). The local offline logo remains unchanged. Exact changed files are listed in the release manifest. Stages 2–4 remain held.
