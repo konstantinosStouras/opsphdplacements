@@ -18,7 +18,7 @@
    "phdInstitutions": 434,
    "directoryUniversities": 608,
    "firstEmployers": 493,
-   "withPrograms": 218,
+   "withPrograms": 220,
    "inBothDatabases": 210,
    "directoryOnly": 328,
    "peopleOnly": 224,
@@ -74846,7 +74846,8 @@
    "coords": null,
    "logo": null,
    "roles": [
-    "directory-university"
+    "directory-university",
+    "program-register"
    ],
    "people": null,
    "directory": {
@@ -74903,11 +74904,38 @@
     ]
    },
    "employer": null,
-   "programs": [],
+   "programs": [
+    {
+     "id": "the-hong-kong-university-of-science-and-technology-guangzhou--smart-manufacturing-phd",
+     "programName": "Smart Manufacturing",
+     "specialization": null,
+     "universityId": "the-hong-kong-university-of-science-and-technology-guangzhou",
+     "school": "Systems Hub",
+     "degree": "Doctor of Philosophy in Smart Manufacturing",
+     "field": "Industrial Engineering; Operations Management",
+     "status": "active",
+     "statusAsOf": "2026-10-22"
+    },
+    {
+     "id": "the-hong-kong-university-of-science-and-technology-guangzhou--intelligent-transportation-phd",
+     "programName": "Intelligent Transportation",
+     "specialization": null,
+     "universityId": "the-hong-kong-university-of-science-and-technology-guangzhou",
+     "school": "Systems Hub",
+     "degree": "Doctor of Philosophy in Intelligent Transportation",
+     "field": "Logistics; Operations Management",
+     "status": "active",
+     "statusAsOf": "2026-10-22"
+    }
+   ],
    "sources": [
     {
      "url": "https://www.operationsacademia.org/universities",
      "title": "Operations Academia universities directory (universities database)"
+    },
+    {
+     "url": "data/doctoral-programs.json",
+     "title": "Historical doctoral program register"
     }
    ],
    "review": {
@@ -74916,12 +74944,22 @@
       "source": "directory",
       "university": "The Hong Kong University of Science and Technology (Guangzhou)",
       "match": "exact"
+     },
+     {
+      "source": "programs",
+      "program": "the-hong-kong-university-of-science-and-technology-guangzhou--smart-manufacturing-phd",
+      "match": "exact"
+     },
+     {
+      "source": "programs",
+      "program": "the-hong-kong-university-of-science-and-technology-guangzhou--intelligent-transportation-phd",
+      "match": "exact"
      }
     ],
     "conflicts": []
    },
    "addedAt": "2026-10-16T13:49:36Z",
-   "updatedAt": "2026-10-16T13:49:36Z"
+   "updatedAt": "2026-10-22T12:21:01Z"
   },
   {
    "id": "wd:Q7885718",
@@ -78593,7 +78631,8 @@
    "logo": null,
    "roles": [
     "directory-university",
-    "first-employer"
+    "first-employer",
+    "program-register"
    ],
    "people": null,
    "directory": {
@@ -78679,7 +78718,19 @@
      }
     ]
    },
-   "programs": [],
+   "programs": [
+    {
+     "id": "georgia-southern-university--logistics-supply-chain-management-phd",
+     "programName": "PhD in Logistics and Supply Chain Management",
+     "specialization": null,
+     "universityId": "georgia-southern-university",
+     "school": "Parker College of Business",
+     "degree": "PhD",
+     "field": "Supply Chain Management; Logistics; Operations Management",
+     "status": "admissions-suspended",
+     "statusAsOf": "2026-10-22"
+    }
+   ],
    "sources": [
     {
      "url": "https://www.operationsacademia.org/universities",
@@ -78688,6 +78739,10 @@
     {
      "url": "data/placements.json",
      "title": "Verified first-job records (people database)"
+    },
+    {
+     "url": "data/doctoral-programs.json",
+     "title": "Historical doctoral program register"
     }
    ],
    "review": {
@@ -78701,12 +78756,17 @@
       "source": "employers",
       "employer": "Georgia Southern University (Department of Logistics and Supply Chain Management)",
       "match": "wikidata"
+     },
+     {
+      "source": "programs",
+      "program": "georgia-southern-university--logistics-supply-chain-management-phd",
+      "match": "exact"
      }
     ],
     "conflicts": []
    },
    "addedAt": "2026-10-16T13:49:36Z",
-   "updatedAt": "2026-10-20T08:28:39Z"
+   "updatedAt": "2026-10-22T12:21:01Z"
   },
   {
    "id": "name:hanken-school-of-economics",

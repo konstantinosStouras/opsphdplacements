@@ -1,0 +1,11 @@
+# Stage 1 continuation 22 - 22 October 2026
+
+Twenty-one frozen public proposals integrated (ten unit, eleven doctoral). Three new routes at two providers: Georgia Southern Logistics and Supply Chain Management PhD with admissions suspended; HKUST Guangzhou Smart Manufacturing and Intelligent Transportation PhDs. Guangzhou teaching/research provider remains distinct from Clear Water Bay; precise legal award-conferring relationship is explicitly unresolved. Current unit pages link individual catalogues dated 2025/26 and 2024/25; 2026/27 intake not independently established.
+
+355 verified routes at 219 providers in 364 records. University frame 666: 486 reviewed, 116 partial, 5 blocked, 59 pending. Doctoral observations 476; current scopes complete 299. Ten untouched source identities examined; eight unit reviews completed. All 361 prior programme records preserved exactly. HKU two aliases and Alabama alias reconciled through scope-only observations without replacing original programme facts/dates; VCU alias also reconciled. Imports and people histories unchanged.
+
+Montclair current doctoral inventory filter successfully selected and all ten entries read, with related environmental, industrial psychology and mathematics education pages examined; no qualifying route verified, current scope complete. Georgia College and Georgia Gwinnett full graduate/programme inventories similarly negative. Existing unit dates preserved. HKU/Alabama completed canonical doctoral observations reused with explicit original dates, not a new full source read.
+
+Georgia Southern wider engineering/business lists fail to render and catalogue detail empty; no inference about two unnamed engineering PhDs. VinUniversity CS doctoral field details and VCU wider IS/Management/technical fields remain partial. New Guangzhou broader hub scopes and awarding relationship remain partial. Suspended admissions does not establish programme closure or end dates.
+
+Validation: 48 tests, public validators and static build passed. Expanded Georgia Southern evidence displays admissions suspended and its limits, with no visitor-facing internal filenames or repository links. Publication confirmation follows. Continuations23/24 remain separate unpublished work. Stages2-4 and automation held. Continue remaining Stage1 identities and incomplete doctoral/source assertions.

@@ -1,0 +1,83 @@
+{
+  "id": "vinuniversity",
+  "status": "reviewed",
+  "canonicalName": "VinUniversity",
+  "universitySourceUrl": "https://cbm.vinuni.edu.vn/",
+  "checkedAt": "2026-10-22",
+  "reviewer": "Codex in Chrome",
+  "duplicateOf": null,
+  "units": [
+    {
+      "id": "vinuniversity--business-management",
+      "name": "College of Business & Management",
+      "school": null,
+      "type": "school",
+      "fields": [
+        "operations-management",
+        "supply-chain"
+      ],
+      "sourceUrl": "https://cbm.vinuni.edu.vn/",
+      "checkedAt": "2026-10-22",
+      "evidence": "Actual college homepage and official academic catalogue establish CBM host. BBA Operations and Supply Chain Management is a concentration/minor in college, not a standalone department; actual school-level unit retained."
+    }
+  ],
+  "decisions": [
+    {
+      "sourceDepartmentId": "vinuniversity__college-of-business-and-management__supply-chain",
+      "disposition": "replaced",
+      "unitIds": [
+        "vinuniversity--business-management"
+      ],
+      "reason": "Imported Supply Chain subject represented by verified actual college host. Official catalogue identifies Operations/SCM concentration/minor, not formal Supply Chain department."
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://policy.vinuni.edu.vn/publication/academic-catalogs/",
+      "checkedAt": "2026-10-22",
+      "outcome": "read",
+      "note": "Full official Academic Catalogs page read: four colleges, current programme/curriculum tables, BBA Operations/SCM concentration and minor, business MBA, technical masters and sole listed Computer Science PhD. Programme fields retained as education subjects rather than departments."
+    },
+    {
+      "url": "https://cbm.vinuni.edu.vn/",
+      "checkedAt": "2026-10-22",
+      "outcome": "read",
+      "note": "Full actual College of Business & Management homepage read; BBA, hospitality/finance bachelor programmes and MBA, college formal identity."
+    },
+    {
+      "url": "https://cbm.vinuni.edu.vn/faculty-research/faculty/",
+      "checkedAt": "2026-10-22",
+      "outcome": "read",
+      "note": "Faculty page loads only navigation/heading/footer, no faculty grouping text; no named Supply Chain department inferred."
+    },
+    {
+      "url": "https://cecs.vinuni.edu.vn/",
+      "checkedAt": "2026-10-22",
+      "outcome": "read",
+      "note": "Full College of Engineering & Computer Science homepage and actual graduate navigation read; engineering/computer-science masters and CS PhD."
+    },
+    {
+      "url": "https://cecs.vinuni.edu.vn/graduate/phd-in-computer-science/",
+      "checkedAt": "2026-10-22",
+      "outcome": "read",
+      "note": "Full current exact CS PhD overview read: ML/algorithms, methodology and independent research; no explicit Ops/OR/IE pathway in text."
+    },
+    {
+      "url": "https://cecs.vinuni.edu.vn/graduate/phd-in-computer-science/program-description/",
+      "checkedAt": "2026-10-22",
+      "outcome": "read",
+      "note": "Actual Program Details navigation opened. Rendered text limited to navigation/Previous/Next/here; image/document content not completely read, so no full research-field claim."
+    },
+    {
+      "url": "https://cecs.vinuni.edu.vn/graduate/phd-in-computer-science/research-project/",
+      "checkedAt": "2026-10-22",
+      "outcome": "read",
+      "note": "Actual Research Project navigation opened; page only links AY2024 PDF research projects. Linked PDF not opened/read, not current field verification."
+    }
+  ],
+  "limitations": [
+    "Official policy catalogue names College of Business and Management; current college brand uses ampersand, preserved as actual homepage heading.",
+    "Full faculty grouping did not load; no separate subject track or departmental organizational status inferred from professor title.",
+    "Engineering college undergraduate Systems/Manufacturing and technical masters entries do not establish separate IE department or doctorate. Doctoral research-field scope remains partial."
+  ]
+}
