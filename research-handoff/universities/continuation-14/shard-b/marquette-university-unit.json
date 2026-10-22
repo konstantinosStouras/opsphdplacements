@@ -1,0 +1,88 @@
+{
+  "id": "marquette-university",
+  "status": "reviewed",
+  "canonicalName": "Marquette University",
+  "universitySourceUrl": "https://www.marquette.edu/mechanical-engineering/",
+  "checkedAt": "2026-10-22",
+  "reviewer": "Codex in Chrome",
+  "units": [
+    {
+      "school": null,
+      "checkedAt": "2026-10-20",
+      "type": "department",
+      "sourceUrl": "https://www.marquette.edu/business/departments/supply-chain-systems-intelligence.php",
+      "id": "marquette-university--supply-chain-systems-intelligence",
+      "name": "Supply Chain and Systems Intelligence",
+      "evidence": "Official page calls this a department, names its chair, and explicitly covers Operations & Supply Chain Management alongside IS, analytics and AI.",
+      "fields": [
+        "operations-management",
+        "supply-chain"
+      ]
+    },
+    {
+      "id": "marquette-university--mechanical-engineering",
+      "name": "Department of Mechanical Engineering",
+      "type": "department",
+      "school": "Opus College of Engineering",
+      "fields": [
+        "industrial-engineering",
+        "operations-management"
+      ],
+      "sourceUrl": "https://www.marquette.edu/mechanical-engineering/",
+      "checkedAt": "2026-10-22",
+      "evidence": "Official department home names department and college, Mechanical Engineering PhD and manufacturing systems concentration. Linked graduate programme doctoral and manufacturing specialization sections explicitly cover production integration, cellular manufacturing, ergonomics, reliability/quality and complex manufacturing systems; this is substantive IE/Operations scope within the actual Mechanical host, not an invented Industrial Engineering department."
+    }
+  ],
+  "decisions": [
+    {
+      "reason": "Imported operations/supply-chain acronym is represented by full current combined department name.",
+      "disposition": "replaced",
+      "sourceDepartmentId": "marquette-university____oscm",
+      "unitIds": [
+        "marquette-university--supply-chain-systems-intelligence"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.marquette.edu/business/departments/supply-chain-systems-intelligence.php",
+      "outcome": "read",
+      "note": "Full department name, chair and operations/supply-chain remit.",
+      "checkedAt": "2026-10-20"
+    },
+    {
+      "url": "https://bulletin.marquette.edu/engineering/",
+      "outcome": "read",
+      "note": "2026-27 engineering inventory lists biomedical, civil/construction/environmental, electrical/computer and mechanical engineering. Applied Supply Chain, Engineering & Technology is a concentration, not another department.",
+      "checkedAt": "2026-10-20"
+    },
+    {
+      "url": "https://www.marquette.edu/grad/programs-mechanical-engineering.php",
+      "checkedAt": "2026-10-22",
+      "outcome": "read",
+      "note": "Mechanical doctoral and Manufacturing and Materials Systems Engineering accordions expanded and read. Doctoral outcomes explicitly require one of three departmental specializations and original research; manufacturing specialization explicitly includes cellular manufacturing, production integration, ergonomics, reliability/quality, human performance/safety, complex manufacturing systems and quality systems. This substantive production-system/ergonomics scope supports IE/Operations classification; materials processes alone would not."
+    },
+    {
+      "url": "https://www.marquette.edu/mechanical-engineering/",
+      "checkedAt": "2026-10-22",
+      "outcome": "read",
+      "note": "Official department home explicitly names Department of Mechanical Engineering, Opus College of Engineering, and Doctor of Philosophy in Mechanical Engineering with manufacturing systems concentration."
+    },
+    {
+      "url": "https://www.marquette.edu/grad/programs-biomedical-engineering.php",
+      "checkedAt": "2026-10-22",
+      "outcome": "read",
+      "note": "Biomedical MS/PhD full specialization inventory read: bioinstrumentation, biomechanics, imaging, cellular/molecular, computational biology/bioinformatics and rehabilitation. No separate Operations specialization established."
+    },
+    {
+      "url": "https://www.marquette.edu/grad/programs-electrical-computer-engineering.php",
+      "checkedAt": "2026-10-22",
+      "outcome": "read",
+      "note": "Electrical/Computer PhD detail and all nested specialization accordions read. Electrical: signal processing, communications, controls, power/energy, devices/microsystems; Computer: ML/algorithms, embedded/IoT, vision/image processing. No explicit qualifying Operations specialization; methods alone not classified as OR."
+    }
+  ],
+  "limitations": [
+    "No standalone Industrial Engineering department inferred; qualifying manufacturing/ergonomics scope is hosted in Mechanical Engineering."
+  ],
+  "duplicateOf": null
+}

@@ -1,0 +1,11 @@
+# Stage 1 continuation 13 — 22 October 2026
+
+Five verified routes added: Ahmedabad Management PhD Operations/Supply Chain/Decision Sciences; Mississippi State Industrial and Systems Engineering PhD; Missouri S&T Engineering Management PhD with explicit OR research; Michigan–Dearborn Industrial and Systems Engineering PhD; Marquette Mechanical Engineering PhD, Manufacturing and Materials Systems Engineering specialization. Exact awards and actual hosts retained.
+
+317 verified routes at 194 providers in 326 records. All 321 previous programme records preserved exactly. University/unit status remains 447 reviewed, 90 partial, 5 blocked and 123 pending. Doctoral observations increased to 344; complete stated current scopes increased by 14 to 215. Abu Dhabi remains partial. Current negative findings do not establish historical absence.
+
+18 frozen proposals integrated. The completed continuation-14 Marquette pair supersedes the earlier continuation-13 partial doctoral proposal, which is retained as history. Mississippi State two changed source assertions individually reconciled to dated read official evidence. Other continuation-14 proposals remain unintegrated.
+
+Provider measure clarified: distinct campus programmes remain separate; this is not a count of independent legal degree-awarding bodies. Dearborn's stated Rackham/Ann Arbor relationship is retained. Functional IE/Operations eligibility requires substantive doctoral production/service planning, quality or ergonomics evidence; generic manufacturing processes or optimization coursework alone is insufficient. Marquette qualifies by explicit production integration, quality systems and ergonomics, not by its broad Mechanical Engineering title.
+
+Validation: all 47 tests and public validators passed; prior programme records deep-equal; static build completed. Built summary wording and expanded programme evidence audited for prohibited visitor-facing technical links and filenames. An old unversioned preview cached an earlier explanatory sentence; the versioned deployable build displayed the new sentence correctly. No people, employment or graduate research performed. Stage 1 remains incomplete and research continues. Stages 2–4 and automation remain held.

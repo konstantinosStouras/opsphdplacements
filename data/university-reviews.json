@@ -934,7 +934,57 @@
       ],
       "duplicateOf": null,
       "addedAt": "2026-10-20T09:19:47Z",
-      "updatedAt": "2026-10-20T09:19:47Z"
+      "updatedAt": "2026-10-22T10:46:34Z",
+      "doctoralReview": {
+        "status": "partial",
+        "checkedAt": "2026-10-22",
+        "programmeIds": [],
+        "branches": [
+          {
+            "branch": "business",
+            "reviewState": "checked",
+            "conclusion": "Complete current postgraduate list read: business doctorate is Doctor of Business Administration(DBA), separately outside current academic research doctorate scope pending standing policy, not normalized to PhD. Business masters do not establish PhD route.",
+            "sourceUrls": [
+              "https://www.adu.ac.ae/study/programs/postgraduate"
+            ]
+          },
+          {
+            "branch": "engineering",
+            "reviewState": "partial",
+            "conclusion": "Current complete postgraduate list names Engineering Management and Intelligent Systems Engineering PhDs. Full Engineering Management page read: academic PhD dissertation 30 credits and sustainabledevelopment/energytransition/materialusage aims, but no explicit qualifying Ops/IE field established. Intelligent Systems Engineering detail navigation stalled blank/timeout, remains unread. Related curriculum/field gap explicit.",
+            "sourceUrls": [
+              "https://www.adu.ac.ae/study/programs/postgraduate",
+              "https://www.adu.ac.ae/study/colleges/college-of-engineering/ProgramDetail/phd-in-engineering-management"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://www.adu.ac.ae/study/programs/postgraduate",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Read full current postgraduate programme finder after initial navigation timeout recovered. Five doctoral labels: Education, Business Administration(DBA), Engineering Management, Intelligent Systems Engineering, Law. No pagination."
+          },
+          {
+            "url": "https://www.adu.ac.ae/study/colleges/college-of-engineering/ProgramDetail/phd-in-engineering-management",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Read full current Engineering Management PhD description: College Engineering,54 credits including 30 PhD dissertation,24 course credits,3/4 years of study, original technical/managerial research. No explicit Ops/OR/IE research field stated; linked catalogue PDF unread."
+          },
+          {
+            "url": "https://www.adu.ac.ae/study/colleges/college-of-engineering/ProgramDetail/phd-in-intelligent-systems-engineering",
+            "checkedAt": "2026-10-22",
+            "outcome": "blocked",
+            "note": "Attempted official detail navigation; repeated navigation/browser command dispatch/focus timeouts, screenshot blank. No page contents read and no access control bypass."
+          }
+        ],
+        "limitations": [
+          "Current Engineering Management PhD academic research credential established but relevant Operations field mapping unresolved; no fabricated eligible route.",
+          "Intelligent Systems Engineering doctorate appears in read current central inventory, detail page remains unread after repeated blank/timeouts.",
+          "DBA preserved as separate degree category, not counted as PhD or eligible research doctorate under standing scope."
+        ],
+        "coverageComplete": false
+      }
     },
     {
       "id": "adelphi-university",
@@ -1017,7 +1067,49 @@
       ],
       "duplicateOf": null,
       "addedAt": "2026-10-20T09:19:47Z",
-      "updatedAt": "2026-10-20T09:43:28Z"
+      "updatedAt": "2026-10-22T10:46:34Z",
+      "doctoralReview": {
+        "status": "no-qualifying-programme-verified",
+        "checkedAt": "2026-10-22",
+        "programmeIds": [],
+        "branches": [
+          {
+            "branch": "business",
+            "reviewState": "checked",
+            "conclusion": "Full university A-Z programme inventory read. Business Management undergraduate/certificates, Analytics undergraduate/masters, MBA routes and Supply Chain Management masters/certificate; no business doctorate listed. No doctoral Ops provision inferred from these lower degrees.",
+            "sourceUrls": [
+              "https://www.adelphi.edu/programs/"
+            ]
+          },
+          {
+            "branch": "engineering",
+            "reviewState": "checked",
+            "conclusion": "Full current university programme inventory read. Engineering is preprofessional/joint BA/BS/MS, Computer Science BS/MS, Mathematics/Statistics undergraduate, no engineering/math/CS research doctorate listed. Current doctoral labels concern nursing, audiology, psychology, education, socialwork and speechlanguage sciences; not explicit Operations field.",
+            "sourceUrls": [
+              "https://www.adelphi.edu/programs/"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://www.adelphi.edu/academics/graduate-degrees/",
+            "checkedAt": "2026-10-22",
+            "outcome": "blocked",
+            "note": "Focused official graduate entry URL returned 404; used actual official 404 page link to current programme finder."
+          },
+          {
+            "url": "https://www.adelphi.edu/programs/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Read full current A-Z all levels and locations programme inventory via accessibility tree, including every letter and doctoral labels. Doctoral category includes postdoctoral certificates, not interpreted as new awarded degrees. No pagination."
+          }
+        ],
+        "limitations": [
+          "Bounded current named programme inventory assessment, no assertion about every possible interdisciplinary dissertation or future offering.",
+          "Preprofessional joint professional degrees not counted as Adelphi Operations research doctorates."
+        ],
+        "coverageComplete": true
+      }
     },
     {
       "id": "adolfo-ibanez-university",
@@ -1071,6 +1163,20 @@
           "sourceUrl": "https://ahduni.edu.in/academics/schools-centres/amrut-mody-school-of-management/faculty/#technology-operations-and-decisions-sciences-tab",
           "checkedAt": "2026-10-20",
           "evidence": "The official faculty directory groups faculty under Technology, Operations and Decisions Sciences. Multiple members explicitly research operations, supply-chain coordination, queueing and optimisation. Wording preserves the website plural Decisions."
+        },
+        {
+          "id": "ahmedabad-university--amrut-mody-school-management",
+          "name": "Amrut Mody School of Management",
+          "school": null,
+          "type": "school",
+          "fields": [
+            "operations-management",
+            "operations-research",
+            "supply-chain"
+          ],
+          "sourceUrl": "https://ahduni.edu.in/academics/programmes/doctoral-programmes/phd-at-amrut-mody-school-of-management/",
+          "checkedAt": "2026-10-22",
+          "evidence": "Actual named school explicitly offers Management PhD with Technology Operations Supply Chain Management Decision Sciences doctoral research domain and Operations Management programmearea. School-level host retained independently of older faculty-area wording."
         }
       ],
       "decisions": [
@@ -1101,14 +1207,85 @@
           "note": "Engineering school overview checked; no separate named industrial engineering or operations unit verified there.",
           "checkedAt": "2026-10-20",
           "outcome": "read"
+        },
+        {
+          "url": "https://ahduni.edu.in/academics/programmes/doctoral-programmes/phd-at-amrut-mody-school-of-management/",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Read full Management PhD overview, thesis/coursework/comprehensive exam structure and all 7 research categories. Technology Operations Supply Chain Management Decision Sciences explicit domain; Program Must Knows explicitly Operations Management."
+        },
+        {
+          "url": "https://ahduni.edu.in/academics/programmes/doctoral-programmes/phd-at-school-of-engineering-and-applied-science/",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Read full engineering doctoral programme and all 4 theme groups/subfields: Advanced Devices Circuits Systems; Design Thermofluids Materials Manufacturing; Climate Energy Sustainable Futures; Computing AI Systems. Generic manufacturing, predictive maintenance, control, optimization, transport analytics alone not explicit separate Operations degree."
+        },
+        {
+          "url": "https://ahduni.edu.in/academics/programmes/graduate-programmes/#doctoral-programmes",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Read full current masters and doctoral programme inventory. Four doctoral school pathways: Management, Public Health(Epidemiology), Arts Sciences(Humanities Social Sciences/Biological Life Sciences/Physics), Engineering Applied Science."
         }
       ],
       "limitations": [
-        "Faculty area, not asserted to be a formal department. Engineering overview is not evidence that no relevant specialist group exists."
+        "The faculty area is named Technology, Operations and Decisions Sciences. The doctoral research domain is named Technology, Operations and Supply Chain Management, Decision Sciences. Neither is asserted to be a formal department, and no historical rename is inferred.",
+        "The full current engineering doctoral theme inventory was read. The scope assessment concerns named programmes and explicit research fields, not every research group or dissertation."
       ],
       "duplicateOf": null,
       "addedAt": "2026-10-20T09:19:47Z",
-      "updatedAt": "2026-10-20T09:19:47Z"
+      "updatedAt": "2026-10-22T10:46:34Z",
+      "doctoralReview": {
+        "status": "verified",
+        "checkedAt": "2026-10-22",
+        "programmeIds": [
+          "ahmedabad-university--management-operations-supply-chain-phd"
+        ],
+        "branches": [
+          {
+            "branch": "business",
+            "reviewState": "checked",
+            "conclusion": "Full Management PhD curriculum and all 7 research categories read. Explicit Technology, Operations and Supply Chain Management, Decision Sciences area verified; full central doctoral inventory corroborates actual school pathway.",
+            "sourceUrls": [
+              "https://ahduni.edu.in/academics/programmes/doctoral-programmes/phd-at-amrut-mody-school-of-management/",
+              "https://ahduni.edu.in/academics/programmes/graduate-programmes/#doctoral-programmes"
+            ]
+          },
+          {
+            "branch": "engineering",
+            "reviewState": "checked",
+            "conclusion": "Full current Engineering Applied Science doctoral description and all 4 research theme groups/subfields read. No explicit additional Ops/OR/IE research field stated; generic manufacturing/control/transport analytics not sufficient for second route. Current central doctoral school inventory checked; unrelated Public Health and Arts Sciences paths not expanded as speculative Ops routes.",
+            "sourceUrls": [
+              "https://ahduni.edu.in/academics/programmes/doctoral-programmes/phd-at-school-of-engineering-and-applied-science/",
+              "https://ahduni.edu.in/academics/programmes/graduate-programmes/#doctoral-programmes"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://ahduni.edu.in/academics/programmes/doctoral-programmes/phd-at-amrut-mody-school-of-management/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Read full Management PhD overview, thesis/coursework/comprehensive exam structure and all 7 research categories. Technology Operations Supply Chain Management Decision Sciences explicit domain; Program Must Knows explicitly Operations Management."
+          },
+          {
+            "url": "https://ahduni.edu.in/academics/programmes/doctoral-programmes/phd-at-school-of-engineering-and-applied-science/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Read full engineering doctoral programme and all 4 theme groups/subfields: Advanced Devices Circuits Systems; Design Thermofluids Materials Manufacturing; Climate Energy Sustainable Futures; Computing AI Systems. Generic manufacturing, predictive maintenance, control, optimization, transport analytics alone not explicit separate Operations degree."
+          },
+          {
+            "url": "https://ahduni.edu.in/academics/programmes/graduate-programmes/#doctoral-programmes",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Read full current masters and doctoral programme inventory. Four doctoral school pathways: Management, Public Health (Epidemiology), Arts Sciences (Humanities Social Sciences/Biological Life Sciences/Physics), Engineering Applied Science."
+          }
+        ],
+        "limitations": [
+          "Current named programme and explicit research domain scope checked, not every possible interdisciplinary dissertation.",
+          "Doctoral research-domain label and older faculty area label retained separately without inferred department rename."
+        ],
+        "coverageComplete": true
+      }
     },
     {
       "id": "air-force-institute-of-technology",
@@ -1498,7 +1675,49 @@
       ],
       "duplicateOf": null,
       "addedAt": "2026-10-20T09:25:45Z",
-      "updatedAt": "2026-10-20T09:25:45Z"
+      "updatedAt": "2026-10-22T10:46:34Z",
+      "doctoralReview": {
+        "status": "no-qualifying-programme-verified",
+        "checkedAt": "2026-10-22",
+        "programmeIds": [],
+        "branches": [
+          {
+            "branch": "business",
+            "reviewState": "checked",
+            "conclusion": "Complete 32 programme graduateinventory read with all types/all colleges. Management Marketing Logistics lists MBA and MPA only; no current business doctorate in full university list.",
+            "sourceUrls": [
+              "https://www.aamu.edu/academics/graduate-studies/graduate-program-listing.html"
+            ]
+          },
+          {
+            "branch": "engineering",
+            "reviewState": "checked",
+            "conclusion": "Complete current graduate inventory read. Electrical/CS offer masters only, Mechanical/Civil/Construction lists Mechanical MS and Systems Materiel MEng. Applied Physics sole technical doctorate: full page explicitly optics/lasers/materials science/space sciences, no Operations field. Otherdoctorates Plant Soil Science, Food Science, Social Work, Curriculum Instruction are unrelated namedfields; no speculative dissertation expansion.",
+            "sourceUrls": [
+              "https://www.aamu.edu/academics/graduate-studies/graduate-program-listing.html",
+              "https://www.aamu.edu/academics/graduate-studies/phd-applied-physics.html"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://www.aamu.edu/academics/graduate-studies/graduate-program-listing.html",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Read full dynamically loaded 32 graduate programme list, all programme types/all colleges selected; doctoral labels five: Plant Soil, Food Science, Applied Physics, Social Work, Curriculum Instruction. Programme types and all departmental entries read, no pagination."
+          },
+          {
+            "url": "https://www.aamu.edu/academics/graduate-studies/phd-applied-physics.html",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Read full Applied Physics doctoral description and explicit specializations optics/lasers/materials science/space sciences; no Operations field established."
+          }
+        ],
+        "limitations": [
+          "Bounded current official graduate programme inventory and explicit technical doctoral field assessment; no claim about every interdisciplinary research project."
+        ],
+        "coverageComplete": true
+      }
     },
     {
       "id": "alfaisal-university-au",
@@ -1577,7 +1796,72 @@
       "limitations": [],
       "duplicateOf": null,
       "addedAt": "2026-10-20T09:25:45Z",
-      "updatedAt": "2026-10-20T09:25:45Z"
+      "updatedAt": "2026-10-22T10:46:34Z",
+      "doctoralReview": {
+        "status": "no-qualifying-programme-verified",
+        "checkedAt": "2026-10-22",
+        "programmeIds": [],
+        "branches": [
+          {
+            "branch": "business",
+            "reviewState": "checked",
+            "conclusion": "Full current graduate school degree frame and full businessgraduate programme inventory read. MBA/Executive MBA routes only; no business doctorate listed. Operations MBA content not extrapolated to doctoral provision.",
+            "sourceUrls": [
+              "https://gradschool.alfaisal.edu/",
+              "https://gradschool.alfaisal.edu/programs",
+              "https://gradschool.alfaisal.edu/gs-programs",
+              "https://gradschool.alfaisal.edu/phd"
+            ]
+          },
+          {
+            "branch": "engineering",
+            "reviewState": "checked",
+            "conclusion": "Full current engineering graduate page explicitly lists three masters only, including Engineering and Systems Management with manufacturing/supplychain scope. Current doctoral category is Biomedical Sciences; full research description read without explicit Operationsfield. No additional research doctorate asserted from masters or generic multidisciplinaryscience.",
+            "sourceUrls": [
+              "https://gradschool.alfaisal.edu/",
+              "https://gradschool.alfaisal.edu/gs-coe-programs",
+              "https://gradschool.alfaisal.edu/phd"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://gradschool.alfaisal.edu/",
+            "note": "Read full current graduate school homepage and degree categories Higher Diploma, Masters, PhD; official university identity and 5 college frame.",
+            "checkedAt": "2026-10-22",
+            "outcome": "read"
+          },
+          {
+            "url": "https://gradschool.alfaisal.edu/programs",
+            "note": "Read full masters inventory entry linking business, engineering and advanced computing, medicine.",
+            "checkedAt": "2026-10-22",
+            "outcome": "read"
+          },
+          {
+            "url": "https://gradschool.alfaisal.edu/gs-programs",
+            "note": "Read full current Graduate Business Programs inventory, MBA/Executive MBA variants and concentration descriptions; no doctorate.",
+            "checkedAt": "2026-10-22",
+            "outcome": "read"
+          },
+          {
+            "url": "https://gradschool.alfaisal.edu/gs-coe-programs",
+            "note": "Read full current Graduate Engineering Advanced Computing inventory explicitly threegraduate programmes, all masters: Engineering and Systems Management, AI, Cybersecurity. Manufacturing Supply Chain research scope belongs MEM, not PhD.",
+            "checkedAt": "2026-10-22",
+            "outcome": "read"
+          },
+          {
+            "url": "https://gradschool.alfaisal.edu/phd",
+            "note": "Read full current Graduate School PhD page: Biomedical Sciences four-year research doctorate, molecular biology/neuroscience/genetics/immunology/biochemistry; no explicit Operations field. Related interdisciplinary engineering not inferred as Operations.",
+            "checkedAt": "2026-10-22",
+            "outcome": "read"
+          }
+        ],
+        "limitations": [
+          "Bounded current graduate programmes and doctoral category inventory assessment, not an assertion about every possible dissertation or future offerings.",
+          "Biomedical Sciences has collaborative partners including KAUST; no shared institutional identity or awarder change inferred."
+        ],
+        "coverageComplete": true
+      }
     },
     {
       "id": "alma-college",
@@ -1649,7 +1933,50 @@
       ],
       "duplicateOf": null,
       "addedAt": "2026-10-20T09:25:45Z",
-      "updatedAt": "2026-10-20T09:25:45Z"
+      "updatedAt": "2026-10-22T10:46:34Z",
+      "doctoralReview": {
+        "status": "no-qualifying-programme-verified",
+        "checkedAt": "2026-10-22",
+        "programmeIds": [],
+        "branches": [
+          {
+            "branch": "business",
+            "reviewState": "checked",
+            "conclusion": "Full academic programme list and graduate offerings read. Operations Supply Chain appears in general programmes of study; completegraduate section lists only MA Special Education and MFA Creative Writing. No doctoral business provision in bounded current inventory.",
+            "sourceUrls": [
+              "https://www.alma.edu/academics/academic-program-listing/",
+              "https://www.alma.edu/academics/programs/graduate-programs/"
+            ]
+          },
+          {
+            "branch": "engineering",
+            "reviewState": "checked",
+            "conclusion": "Full collegeprogramme list includes Computer Engineering, Electrical Engineering, Engineering Science, Mathematical Sciences among generalprogrammes of study; graduateinventory limited MA Special Education/MFA Creative Writing, no engineering doctorate.",
+            "sourceUrls": [
+              "https://www.alma.edu/academics/academic-program-listing/",
+              "https://www.alma.edu/academics/programs/graduate-programs/"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://www.alma.edu/academics/programs/graduate-programs/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Read full current graduate programmes page, explicit MA Special Education and MFA Creative Writing; no doctorate listed."
+          },
+          {
+            "url": "https://www.alma.edu/academics/academic-program-listing/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Read complete academic programme listing: programmes of study, two graduate entries and preprofessional paths; no pagination. Operations Supply Chain in general study list not extrapolated to doctoral provision."
+          }
+        ],
+        "limitations": [
+          "Bounded current published degree inventory, not historical/future degree authorization claim."
+        ],
+        "coverageComplete": true
+      }
     },
     {
       "id": "american-university-in-the-emirates",
@@ -1720,7 +2047,51 @@
       ],
       "duplicateOf": null,
       "addedAt": "2026-10-20T09:25:45Z",
-      "updatedAt": "2026-10-20T09:25:45Z"
+      "updatedAt": "2026-10-22T10:46:34Z",
+      "doctoralReview": {
+        "status": "no-qualifying-programme-verified",
+        "checkedAt": "2026-10-22",
+        "programmeIds": [],
+        "branches": [
+          {
+            "branch": "business",
+            "reviewState": "checked",
+            "conclusion": "All seven graduatecollege tabs individually opened/read. Business offers masters, DBA and Leadership and Public Administration doctorate. Full DLPA programme/About and displayed core curriculum read: governance/public policy/leadership/organizationaltransformation, no explicit Operations field. DBA separate pending standing scope, never normalized PhD. Other currentdoctorates law/media/security/cognitivewarfare have unrelated namedfields.",
+            "sourceUrls": [
+              "https://aue.ae/graduate-programs/",
+              "https://aue.ae/doctorate-in-leadership-and-public-administration/"
+            ]
+          },
+          {
+            "branch": "engineering",
+            "reviewState": "checked",
+            "conclusion": "Entire Engineering Technology graduate tab read: Knowledge Management master and AI and Data Science MSc, no doctoral offering. All other graduatecollege tabs checked; no current engineeringresearch doctorate listed.",
+            "sourceUrls": [
+              "https://aue.ae/graduate-programs/"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://aue.ae/graduate-programs/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Individually opened/read all seven tabs Business Administration, Education, Design, Engineering Technology, Law, Media Mass Communication, Security Global Studies. Last security tab also includes PhD in Cognitive Warfare and Strategic Influence; complete rendered inventory, no search result count substituted."
+          },
+          {
+            "url": "https://aue.ae/doctorate-in-leadership-and-public-administration/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Read full current DLPA page and expanded About Program: research-led leadership/public administration, governance/digital government/public policy/sustainability,30 credit dissertation and 8 displayed core courses. No explicit Operations research field; Pending SACSCOC approval notice preserved without inferring programme closure."
+          }
+        ],
+        "limitations": [
+          "Scope current named doctoral programmes and explicit related programme fields, not every potential dissertation.",
+          "DBA separate pending standing academicresearch doctorate scope; no qualifying PhD field inferred.",
+          "DLPA page says Pending SACSCOC approval; no judgment on legal authorization/admissions made."
+        ],
+        "coverageComplete": true
+      }
     },
     {
       "id": "american-university-kogod-school-of-business",
@@ -24579,8 +24950,8 @@
       "id": "marquette-university",
       "status": "reviewed",
       "canonicalName": "Marquette University",
-      "universitySourceUrl": "https://bulletin.marquette.edu/engineering/",
-      "checkedAt": "2026-10-20",
+      "universitySourceUrl": "https://www.marquette.edu/mechanical-engineering/",
+      "checkedAt": "2026-10-22",
       "reviewer": "Codex in Chrome",
       "units": [
         {
@@ -24595,6 +24966,19 @@
             "operations-management",
             "supply-chain"
           ]
+        },
+        {
+          "id": "marquette-university--mechanical-engineering",
+          "name": "Department of Mechanical Engineering",
+          "type": "department",
+          "school": "Opus College of Engineering",
+          "fields": [
+            "industrial-engineering",
+            "operations-management"
+          ],
+          "sourceUrl": "https://www.marquette.edu/mechanical-engineering/",
+          "checkedAt": "2026-10-22",
+          "evidence": "Official department home names department and college, Mechanical Engineering PhD and manufacturing systems concentration. Linked graduate programme doctoral and manufacturing specialization sections explicitly cover production integration, cellular manufacturing, ergonomics, reliability/quality and complex manufacturing systems; this is substantive IE/Operations scope within the actual Mechanical host, not an invented Industrial Engineering department."
         }
       ],
       "decisions": [
@@ -24619,14 +25003,140 @@
           "outcome": "read",
           "note": "2026-27 engineering inventory lists biomedical, civil/construction/environmental, electrical/computer and mechanical engineering. Applied Supply Chain, Engineering & Technology is a concentration, not another department.",
           "checkedAt": "2026-10-20"
+        },
+        {
+          "url": "https://www.marquette.edu/grad/programs-mechanical-engineering.php",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Mechanical doctoral and Manufacturing and Materials Systems Engineering accordions expanded and read. Doctoral outcomes explicitly require one of three departmental specializations and original research; manufacturing specialization explicitly includes cellular manufacturing, production integration, ergonomics, reliability/quality, human performance/safety, complex manufacturing systems and quality systems. This substantive production-system/ergonomics scope supports IE/Operations classification; materials processes alone would not."
+        },
+        {
+          "url": "https://www.marquette.edu/mechanical-engineering/",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Official department home explicitly names Department of Mechanical Engineering, Opus College of Engineering, and Doctor of Philosophy in Mechanical Engineering with manufacturing systems concentration."
+        },
+        {
+          "url": "https://www.marquette.edu/grad/programs-biomedical-engineering.php",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Biomedical MS/PhD full specialization inventory read: bioinstrumentation, biomechanics, imaging, cellular/molecular, computational biology/bioinformatics and rehabilitation. No separate Operations specialization established."
+        },
+        {
+          "url": "https://www.marquette.edu/grad/programs-electrical-computer-engineering.php",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Electrical/Computer PhD detail and all nested specialization accordions read. Electrical: signal processing, communications, controls, power/energy, devices/microsystems; Computer: ML/algorithms, embedded/IoT, vision/image processing. No explicit qualifying Operations specialization; methods alone not classified as OR."
         }
       ],
       "limitations": [
-        "No standalone industrial engineering department shown in current engineering inventory."
+        "No standalone Industrial Engineering department inferred; qualifying manufacturing/ergonomics scope is hosted in Mechanical Engineering."
       ],
       "duplicateOf": null,
       "addedAt": "2026-10-20T09:43:28Z",
-      "updatedAt": "2026-10-20T09:43:28Z"
+      "updatedAt": "2026-10-22T10:46:34Z",
+      "doctoralReview": {
+        "status": "verified",
+        "checkedAt": "2026-10-22",
+        "programmeIds": [
+          "marquette-university--mechanical-engineering-manufacturing-systems-phd"
+        ],
+        "branches": [
+          {
+            "branch": "business",
+            "reviewState": "checked",
+            "sourceUrls": [
+              "https://www.marquette.edu/grad/programs.php",
+              "https://www.marquette.edu/business/departments/supply-chain-systems-intelligence.php"
+            ],
+            "conclusion": "Full live graduate inventory contains business master’s/MBA programmes without a business doctorate. Current relevant department offers undergraduate majors; these do not establish a PhD."
+          },
+          {
+            "branch": "engineering",
+            "reviewState": "checked",
+            "sourceUrls": [
+              "https://www.marquette.edu/grad/programs.php",
+              "https://www.marquette.edu/grad/grad-engineering.php",
+              "https://www.marquette.edu/grad/programs-computational-mathematical-statistical-sciences.php",
+              "https://www.marquette.edu/grad/programs-healthcare-technologies-management.php",
+              "https://www.marquette.edu/grad/programs-civil-engineering.php",
+              "https://www.marquette.edu/grad/programs-mechanical-engineering.php",
+              "https://www.marquette.edu/mechanical-engineering/",
+              "https://www.marquette.edu/grad/programs-biomedical-engineering.php",
+              "https://www.marquette.edu/grad/programs-electrical-computer-engineering.php"
+            ],
+            "conclusion": "Engineering full inventory and all listed broad engineering doctoral fields checked via detail/specialization pages. Mechanical PhD explicitly maps to manufacturing specialization with production-system/quality/ergonomics scope; retained as qualifying actual host. Biomedical, Electrical/Computer, Civil and mathematical descriptions do not establish another qualifying Operations route."
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://www.marquette.edu/grad/programs.php",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Entire live unfiltered graduate programme list read. Business programmes MBA/EMBA, Management and other master’s awards; no business PhD listed. Engineering and Computational Mathematical and Statistical Sciences doctorates listed."
+          },
+          {
+            "url": "https://www.marquette.edu/grad/grad-engineering.php",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Entire engineering summary read: Biomedical, Civil/Construction/Environmental, Electrical/Computer and Mechanical doctoral fields. Summary also labels Health Care Technologies Management MS/PhD, conflicting with linked detail. Systems Engineering card links a graduate certificate. Expand-all control did not reveal extra specialization content in returned visible text."
+          },
+          {
+            "url": "https://www.marquette.edu/grad/programs-computational-mathematical-statistical-sciences.php",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Computational Mathematical and Statistical Sciences PhD programme detail and expanded Is This Program Right For Me section read. 57 credits, computational/applied mathematics/statistics and scientific/engineering models; no explicit OR doctorate specialization established."
+          },
+          {
+            "url": "https://www.marquette.edu/grad/programs-healthcare-technologies-management.php",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Linked programme detail explicitly titled Master’s in Healthcare Technologies Management, 37-credit joint master’s with Medical College of Wisconsin, currently not admitting. This contradicts summary PhD label; no doctoral route inferred."
+          },
+          {
+            "url": "https://www.marquette.edu/grad/programs-civil-engineering.php",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Civil/Construction/Environmental master’s and PhD detail read, including expanded Specializations: construction, environmental/water resources, structures/mechanics, transportation/materials. No explicit OR/Ops/IE field established."
+          },
+          {
+            "url": "https://www.marquette.edu/business/departments/supply-chain-systems-intelligence.php",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Current Supply Chain and Systems Intelligence page read: explicitly department and chair, four connected undergraduate majors Operations & Supply Chain Management, IS, Business Analytics, AI. Confirms earlier unit identity; undergraduate ASCENT projects not PhD provision."
+          },
+          {
+            "url": "https://www.marquette.edu/grad/programs-mechanical-engineering.php",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Mechanical doctoral and Manufacturing and Materials Systems Engineering accordions expanded and read. Doctoral outcomes explicitly require one of three departmental specializations and original research; manufacturing specialization explicitly includes cellular manufacturing, production integration, ergonomics, reliability/quality, human performance/safety, complex manufacturing systems and quality systems. This substantive production-system/ergonomics scope supports IE/Operations classification; materials processes alone would not."
+          },
+          {
+            "url": "https://www.marquette.edu/mechanical-engineering/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Official department home explicitly names Department of Mechanical Engineering, Opus College of Engineering, and Doctor of Philosophy in Mechanical Engineering with manufacturing systems concentration."
+          },
+          {
+            "url": "https://www.marquette.edu/grad/programs-biomedical-engineering.php",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Biomedical MS/PhD full specialization inventory read: bioinstrumentation, biomechanics, imaging, cellular/molecular, computational biology/bioinformatics and rehabilitation. No separate Operations specialization established."
+          },
+          {
+            "url": "https://www.marquette.edu/grad/programs-electrical-computer-engineering.php",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Electrical/Computer PhD detail and all nested specialization accordions read. Electrical: signal processing, communications, controls, power/energy, devices/microsystems; Computer: ML/algorithms, embedded/IoT, vision/image processing. No explicit qualifying Operations specialization; methods alone not classified as OR."
+          }
+        ],
+        "limitations": [
+          "Current live programme inventory scope only; no historical census.",
+          "Healthcare summary MS/PhD label still conflicts with master’s-only programme detail and no current admissions. No qualifying Operations doctorate established there; contradiction preserved.",
+          "Computational mathematics and electrical controls/ML methods alone not classified as OR."
+        ],
+        "coverageComplete": true
+      }
     },
     {
       "id": "massachusetts-institute-of-technology",
@@ -26160,22 +26670,22 @@
       "id": "mississippi-state-university",
       "status": "reviewed",
       "canonicalName": "Mississippi State University",
-      "universitySourceUrl": "https://www.ise.msstate.edu/",
-      "checkedAt": "2026-10-20",
+      "universitySourceUrl": "https://www.catalog.msstate.edu/graduate/colleges-degree-programs/engineering/",
+      "checkedAt": "2026-10-22",
       "reviewer": "Codex in Chrome",
       "units": [
         {
-          "sourceUrl": "https://www.ise.msstate.edu/",
-          "school": null,
+          "sourceUrl": "https://www.catalog.msstate.edu/graduate/colleges-degree-programs/engineering/industrial-systems/",
+          "school": "James Worth Bagley College of Engineering",
           "type": "department",
           "id": "mississippi-state-university--industrial-systems-engineering",
           "fields": [
             "industrial-engineering",
             "operations-research"
           ],
-          "checkedAt": "2026-10-20",
-          "name": "Industrial & Systems Engineering Department",
-          "evidence": "Official welcome explicitly names department and university, industrial engineering degrees and manufacturing/service-system remit."
+          "checkedAt": "2026-10-22",
+          "name": "Department of Industrial and Systems Engineering",
+          "evidence": "Current 2026–2027 catalogue explicitly names the department, its Industrial and Systems Engineering PhD, and James Worth Bagley College of Engineering parent. Earlier department home observation retained in sources."
         },
         {
           "sourceUrl": "https://www.business.msstate.edu/academics/academic-areas/department-marketing-quantitative-analysis-supply-chain-logistics",
@@ -26226,14 +26736,109 @@
           "url": "http://www.ise.msstate.edu/people/faculty/",
           "outcome": "blocked",
           "note": "Imported HTTP faculty URL blocked by browser; official HTTPS department home accessible."
+        },
+        {
+          "url": "https://www.catalog.msstate.edu/graduate/colleges-degree-programs/engineering/industrial-systems/",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "2026–2027 overview and Programs of Study tab read. Department of Industrial and Systems Engineering explicitly offers Doctor of Philosophy in Industrial and Systems Engineering; 68-hour requirements include dissertation and oral defence. Named concentrations including Operations Research are explicitly master’s-level, not separate PhDs."
+        },
+        {
+          "url": "https://www.catalog.msstate.edu/graduate/colleges-degree-programs/engineering/",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Complete engineering degree table read: 12 doctoral options, explicit Industrial and Systems Engineering PhD and exact James Worth Bagley College of Engineering parent. Online and Starkville modes are the same award, not duplicate routes."
+        },
+        {
+          "url": "https://www.catalog.msstate.edu/graduate/colleges-degree-programs/business/",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Full business graduate inventory read: Business Administration PhD concentrations in Business Information Systems, Finance, Management and Marketing."
+        },
+        {
+          "url": "https://www.catalog.msstate.edu/graduate/colleges-degree-programs/business/business-administration-phd/",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Overview and Programs of Study tabs read. Business PhD concentrations contain no explicit Ops/OR/IE/SCM specialization. Overview lists four concentrations while study tab additionally lists Accounting and Economics; discrepancy preserved. Production Management is an undergraduate prerequisite, not a PhD specialization."
+        },
+        {
+          "url": "https://www.catalog.msstate.edu/graduate/colleges-degree-programs/business/management-information-systems/",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Current Management and Information Systems department overview read: Information Systems and Management PhD concentrations, MSIS, no explicit qualifying Operations specialization established."
         }
       ],
       "limitations": [
-        "Imported extended engineering college name not independently expanded; engineering unit parent left null."
+        "Earlier 20 October business department identity observation retained; current graduate catalogue navigation still uses Marketing, Quantitative Analysis, and Business Law. No unsupported rename chronology inferred."
       ],
       "duplicateOf": null,
       "addedAt": "2026-10-20T10:06:22Z",
-      "updatedAt": "2026-10-20T10:06:22Z"
+      "updatedAt": "2026-10-22T10:46:34Z",
+      "doctoralReview": {
+        "status": "verified",
+        "checkedAt": "2026-10-22",
+        "programmeIds": [
+          "mississippi-state-university--industrial-systems-engineering-phd"
+        ],
+        "branches": [
+          {
+            "branch": "business",
+            "reviewState": "checked",
+            "sourceUrls": [
+              "https://www.catalog.msstate.edu/graduate/colleges-degree-programs/business/",
+              "https://www.catalog.msstate.edu/graduate/colleges-degree-programs/business/business-administration-phd/",
+              "https://www.catalog.msstate.edu/graduate/colleges-degree-programs/business/management-information-systems/"
+            ],
+            "conclusion": "Complete college graduate inventory, Business Administration PhD overview/study tabs and Management and Information Systems overview checked. No explicit qualifying Operations doctoral concentration established; generic Management/IS and undergraduate Production Management prerequisite are insufficient."
+          },
+          {
+            "branch": "engineering",
+            "reviewState": "checked",
+            "sourceUrls": [
+              "https://www.catalog.msstate.edu/graduate/colleges-degree-programs/engineering/",
+              "https://www.catalog.msstate.edu/graduate/colleges-degree-programs/engineering/industrial-systems/"
+            ],
+            "conclusion": "Full college graduate degree inventory and Industrial and Systems Engineering programme overview/study tab checked. One explicit ISE PhD retained; master’s concentrations and delivery modes are not independent doctorates."
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://www.catalog.msstate.edu/graduate/colleges-degree-programs/engineering/industrial-systems/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "2026–2027 overview and Programs of Study tab read. Department of Industrial and Systems Engineering explicitly offers Doctor of Philosophy in Industrial and Systems Engineering; 68-hour requirements include dissertation and oral defence. Named concentrations including Operations Research are explicitly master’s-level, not separate PhDs."
+          },
+          {
+            "url": "https://www.catalog.msstate.edu/graduate/colleges-degree-programs/engineering/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Complete engineering degree table read: 12 doctoral options, explicit Industrial and Systems Engineering PhD and exact James Worth Bagley College of Engineering parent. Online and Starkville modes are the same award, not duplicate routes."
+          },
+          {
+            "url": "https://www.catalog.msstate.edu/graduate/colleges-degree-programs/business/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full business graduate inventory read: Business Administration PhD concentrations in Business Information Systems, Finance, Management and Marketing."
+          },
+          {
+            "url": "https://www.catalog.msstate.edu/graduate/colleges-degree-programs/business/business-administration-phd/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Overview and Programs of Study tabs read. Business PhD concentrations contain no explicit Ops/OR/IE/SCM specialization. Overview lists four concentrations while study tab additionally lists Accounting and Economics; discrepancy preserved. Production Management is an undergraduate prerequisite, not a PhD specialization."
+          },
+          {
+            "url": "https://www.catalog.msstate.edu/graduate/colleges-degree-programs/business/management-information-systems/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Current Management and Information Systems department overview read: Information Systems and Management PhD concentrations, MSIS, no explicit qualifying Operations specialization established."
+          }
+        ],
+        "limitations": [
+          "Current catalogue scope only; other engineering disciplines are not classified as Operations merely for quantitative methods.",
+          "Business PhD overview lists four concentrations but study tab also lists Accounting and Economics; neither lists a qualifying Operations concentration."
+        ],
+        "coverageComplete": true
+      }
     },
     {
       "id": "missouri-southern-state-university",
@@ -26472,7 +27077,66 @@
       ],
       "duplicateOf": null,
       "addedAt": "2026-10-20T10:06:22Z",
-      "updatedAt": "2026-10-20T10:06:22Z"
+      "updatedAt": "2026-10-22T10:46:34Z",
+      "doctoralReview": {
+        "status": "verified",
+        "checkedAt": "2026-10-22",
+        "programmeIds": [
+          "missouri-university-of-science-and-technology--engineering-management-phd"
+        ],
+        "branches": [
+          {
+            "branch": "business",
+            "reviewState": "checked",
+            "sourceUrls": [
+              "https://catalog.mst.edu/graduate/graduatedegreeprograms/"
+            ],
+            "conclusion": "Complete university graduate degree inventory lists Business Administration MBA only and Information Science and Technology MS, no separate business doctorate."
+          },
+          {
+            "branch": "engineering",
+            "reviewState": "checked",
+            "sourceUrls": [
+              "https://catalog.mst.edu/graduate/graduatedegreeprograms/",
+              "https://catalog.mst.edu/graduate/graduatedegreeprograms/engineeringmanagement/",
+              "https://catalog.mst.edu/graduate/graduatedegreeprograms/systemsengineering/",
+              "https://catalog.mst.edu/graduate/graduatedegreeprograms/mathematicsandstatistics/"
+            ],
+            "conclusion": "Complete graduate inventory read with detailed Engineering Management and Systems Engineering doctoral tabs and mathematics overview. Engineering Management PhD explicitly supports Operations Research; Systems and mathematical methods alone not promoted into qualifying OR routes. Manufacturing is master’s-level."
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://catalog.mst.edu/graduate/graduatedegreeprograms/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Complete 2026–2027 university graduate degree list read. Business Administration offers MBA, Manufacturing Engineering MS/ME, Engineering Management MS/PhD, Systems Engineering MS/PhD, Mathematics PhD; no separate Industrial Engineering degree listed. Full official university name in footer."
+          },
+          {
+            "url": "https://catalog.mst.edu/graduate/graduatedegreeprograms/engineeringmanagement/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Engineering Management overview and Doctorate tab read. Explicit PhD in Engineering Management, advisory committee, original dissertation, defence and publication requirements. Doctoral Research Areas explicitly include Operations Research, simulation-based optimization, airline revenue management, lean management, human factors and other areas. Overview names Engineering Management and Systems Engineering department."
+          },
+          {
+            "url": "https://catalog.mst.edu/graduate/graduatedegreeprograms/systemsengineering/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Systems Engineering overview and Doctorate tab read. Actual PhD and dissertation requirements verified, but listed doctoral research areas are systems architecture, machine/deep learning, modelling/simulation, digital twins, human-AI and infrastructure; no explicit qualifying Operations field mapped. Not silently classified from methods or shared host."
+          },
+          {
+            "url": "https://catalog.mst.edu/graduate/graduatedegreeprograms/mathematicsandstatistics/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full mathematics overview read. PhD emphases mathematics, computational/applied mathematics and statistics; no explicit OR specialization. Mathematical methods alone not classified as OR."
+          }
+        ],
+        "limitations": [
+          "Current 2026–2027 catalogue scope, not historical programme census.",
+          "Systems Engineering is an actual PhD but a qualifying Ops/OR/IE field is not established by the opened doctoral research areas; it is retained as a scope finding rather than an eligible programme."
+        ],
+        "coverageComplete": true
+      }
     },
     {
       "id": "mit",
@@ -56471,7 +57135,71 @@
       ],
       "checkedAt": "2026-10-20",
       "addedAt": "2026-10-20T11:00:16Z",
-      "updatedAt": "2026-10-20T11:00:16Z"
+      "updatedAt": "2026-10-22T10:46:34Z",
+      "doctoralReview": {
+        "status": "no-qualifying-programme-verified",
+        "checkedAt": "2026-10-22",
+        "programmeIds": [],
+        "branches": [
+          {
+            "branch": "business",
+            "reviewState": "checked",
+            "conclusion": "Complete 26-entry current university doctoral inventory and exact Business Administration PhD three-track overview read. Information Systems for Data Science/Management track actually expanded and read: IS/data-science/IT research, decision-model applications and analytics; no explicit qualifying Ops/OR/IE/SCM doctoral field. Faculty interests or analytics methods alone not promoted to eligibility.",
+            "sourceUrls": [
+              "https://www.umb.edu/academics/program-finder/",
+              "https://www.umb.edu/academics/program-finder/?courseType=doctorate&page=2",
+              "https://www.umb.edu/academics/program-finder/business-administration-phd/"
+            ]
+          },
+          {
+            "branch": "engineering",
+            "reviewState": "checked",
+            "conclusion": "Complete university doctoral inventory and plausibly related Computational Sciences/Computer Science PhD current field descriptions read. Computational tracks are Data Analytics, Bioinformatics, Computational Physics; CS dissertation areas software/data/systems/theory. No named Industrial/OR/Operations doctoral route. Biomedical Engineering/Biotechnology title not treated as relevant operations doctorate.",
+            "sourceUrls": [
+              "https://www.umb.edu/academics/program-finder/",
+              "https://www.umb.edu/academics/program-finder/?courseType=doctorate&page=2",
+              "https://www.umb.edu/academics/program-finder/computational-sciences-phd/",
+              "https://www.umb.edu/academics/program-finder/computer-science-phd/"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://www.umb.edu/academics/program-finder/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Official programme finder Doctorate filter actually selected and updated 26 results verified; first 20 doctoral entries individually read, not unfiltered 249-programme claim."
+          },
+          {
+            "url": "https://www.umb.edu/academics/program-finder/?courseType=doctorate&page=2",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "All remaining six doctoral entries on filtered second page read. Full 26-entry current doctoral inventory completed."
+          },
+          {
+            "url": "https://www.umb.edu/academics/program-finder/business-administration-phd/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full business PhD overview and actual expanded IS/Data Science/Management track read, including research areas and mentorship; no individual career or graduate records collected."
+          },
+          {
+            "url": "https://www.umb.edu/academics/program-finder/computational-sciences-phd/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full current Computational Sciences PhD programme/three tracks and participating engineering/math departments read; generic models/ML/finance simulations not OR degree proof."
+          },
+          {
+            "url": "https://www.umb.edu/academics/program-finder/computer-science-phd/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full current CS PhD overview and dissertation research fields read, no explicit relevant OR/IE/Ops field."
+          }
+        ],
+        "limitations": [
+          "Source-bounded completion of current published doctoral inventory and plausibly related programme fields, not every unrelated laboratory/dissertation or historical absence claim. No qualifying route verified; not a claim that researchers never use optimization/operations methods. Existing unit/evidence dates unchanged."
+        ],
+        "coverageComplete": true
+      }
     },
     {
       "universitySourceUrl": "https://www.uml.edu/msb/departments/operations-info-systems/faculty/",
@@ -57333,7 +58061,52 @@
         }
       ],
       "addedAt": "2026-10-21T06:57:04Z",
-      "updatedAt": "2026-10-21T06:57:04Z"
+      "updatedAt": "2026-10-22T10:46:34Z",
+      "doctoralReview": {
+        "status": "verified",
+        "checkedAt": "2026-10-22",
+        "programmeIds": [
+          "university-of-michigan-dearborn--industrial-systems-engineering-phd"
+        ],
+        "branches": [
+          {
+            "branch": "business",
+            "reviewState": "checked",
+            "conclusion": "Complete current university doctoral inventory filtered and read: seven entries, none business; business operations teaching/department does not establish doctorate.",
+            "sourceUrls": [
+              "https://umdearborn.edu/academics/program"
+            ]
+          },
+          {
+            "branch": "engineering",
+            "reviewState": "checked",
+            "conclusion": "Complete seven-entry doctoral inventory read and exact ISE research programme/three concentration fields checked. Other programmes are Computer and Information Science, Mechanical Sciences and Engineering, EECE PhDs and Automotive Systems and Mobility/ECE DEng plus Education EdD, not additional relevant Ops/IE awards inferred from systems names.",
+            "sourceUrls": [
+              "https://umdearborn.edu/academics/program",
+              "https://umdearborn.edu/academics/program/industrial-and-systems-engineering-phd"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://umdearborn.edu/academics/program/industrial-and-systems-engineering-phd",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full current programme and actual expanded What You Will Study panel read in Chrome: exact ISE PhD, three fields, dissertation and explicit Rackham/Ann Arbor-to-Dearborn programme administration relationship."
+          },
+          {
+            "url": "https://umdearborn.edu/academics/program",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Official programme finder Doctoral Degree programme-type filter selected and Apply submitted. Updated Showing 7 out of 7 results individually read, not unfiltered 208-programme claim."
+          }
+        ],
+        "limitations": [
+          "Source-bounded current doctoral inventory and plausibly relevant programme research scope complete; not a historical or worldwide census.",
+          "Sourced Rackham/Ann Arbor graduate-school relationship retained explicitly. Provider measure is institution/campus offering the distinct route, not independently constituted legal awarding body. Existing exact unit dates unchanged."
+        ],
+        "coverageComplete": true
+      }
     },
     {
       "id": "university-of-michigan-flint",
@@ -57411,7 +58184,57 @@
       "reviewer": "Codex in Chrome",
       "status": "reviewed",
       "addedAt": "2026-10-21T06:57:04Z",
-      "updatedAt": "2026-10-21T06:57:04Z"
+      "updatedAt": "2026-10-22T10:46:34Z",
+      "doctoralReview": {
+        "status": "no-qualifying-programme-verified",
+        "checkedAt": "2026-10-22",
+        "programmeIds": [],
+        "branches": [
+          {
+            "branch": "business",
+            "reviewState": "checked",
+            "conclusion": "Complete university graduate inventory and full DBA programme read. Business doctorate is explicitly DBA for experienced managers with applied strategic-business research, not PhD. Supply-chain strategy occurs as coursework, not independently named qualifying doctoral research field; no eligible academic Ops/OR/IE/SCM route established.",
+            "sourceUrls": [
+              "https://www.umflint.edu/graduateprograms/",
+              "https://www.umflint.edu/graduateprograms/business-dba/"
+            ]
+          },
+          {
+            "branch": "engineering",
+            "reviewState": "checked",
+            "conclusion": "Complete current doctoral inventory and full Computing PhD read. Computing research/doctoral scope concerns computer/data science, systems, security and software; no explicit relevant Operations/OR/IE field. Engineering, smart manufacturing and SCM degrees are masters in published inventory, not doctorate.",
+            "sourceUrls": [
+              "https://www.umflint.edu/graduateprograms/",
+              "https://www.umflint.edu/graduateprograms/computing-phd/"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://www.umflint.edu/graduateprograms/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full current university graduate inventory read in Chrome: complete doctoral list, masters, graduate certificates and dual degrees. Flint distinct from Ann Arbor/Dearborn, shared resources not a shared degree merge."
+          },
+          {
+            "url": "https://www.umflint.edu/graduateprograms/computing-phd/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full Computing PhD programme scope, research/advisor entry, dissertation and admission text read; no OR field inferred from computing tools."
+          },
+          {
+            "url": "https://www.umflint.edu/graduateprograms/business-dba/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full exact DBA programme read, applied strategy model/dissertation and SCM strategy course distinguished from named relevant doctoral research field. Incidental testimonials not collected as individual histories."
+          }
+        ],
+        "limitations": [
+          "Source-bounded current published doctoral inventory and plausibly related programmes checked. Exact DBA is retained in evidence, not silently converted into PhD; this observation does not resolve global professional-DBA inclusion policy. No qualified programme established from a course title alone.",
+          "Not a claim about historical provision or that scholars never use operations methods. Existing unit and identity dates unchanged; Flint remains distinct campus/institution."
+        ],
+        "coverageComplete": true
+      }
     },
     {
       "canonicalName": "University of Minnesota",
@@ -66163,7 +66986,48 @@
       ],
       "duplicateOf": null,
       "addedAt": "2026-10-21T08:10:46Z",
-      "updatedAt": "2026-10-21T08:10:46Z"
+      "updatedAt": "2026-10-22T10:46:34Z",
+      "doctoralReview": {
+        "status": "no-qualifying-programme-verified",
+        "checkedAt": "2026-10-22",
+        "programmeIds": [],
+        "branches": [
+          {
+            "branch": "business",
+            "reviewState": "checked",
+            "conclusion": "Full current university programme finder read and Doctorate filter actually selected. Six settled results: DNP, JD and four dual masters degrees. MBA dual detail explicitly awards JD and MBA, not a business PhD. No qualifying Operations doctorate.",
+            "sourceUrls": [
+              "https://www.washburn.edu/academics/aos/index.html"
+            ]
+          },
+          {
+            "branch": "engineering",
+            "reviewState": "checked",
+            "conclusion": "Complete selected university Doctorate facet contains DNP/JD and named masters dual degrees only. Unfiltered inventory includes technical institute/engineering certificate/undergraduate provision; no eligible technical doctorate in current published scope.",
+            "sourceUrls": [
+              "https://www.washburn.edu/academics/aos/index.html"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://www.washburn.edu/academics/aos/index.html",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full current programme finder and degree-level choices read. Selected Doctorate, waited for actual settled six-result display, read MBA dual detail showing Available Degrees JD,MBA and legal/business joint programme."
+          },
+          {
+            "url": "https://www.washburn.edu/academics/college-schools/index.html",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full current college/school structure read; includes separate technical institute and law school, linked central programme finder."
+          }
+        ],
+        "limitations": [
+          "Current published degree-level inventory only, not historical absence. Dual masters rows are not relabelled PhD because website groups them in Doctorate filter. Earlier unresolved DA/Quantitative Methods source-unit label remains separate; source dates retained."
+        ],
+        "coverageComplete": true
+      }
     },
     {
       "id": "washington-and-lee-university",
@@ -68067,7 +68931,48 @@
       ],
       "duplicateOf": null,
       "addedAt": "2026-10-20T11:00:16Z",
-      "updatedAt": "2026-10-20T11:00:16Z"
+      "updatedAt": "2026-10-22T10:46:34Z",
+      "doctoralReview": {
+        "status": "no-qualifying-programme-verified",
+        "checkedAt": "2026-10-22",
+        "programmeIds": [],
+        "branches": [
+          {
+            "branch": "business",
+            "reviewState": "checked",
+            "conclusion": "Complete 2026–2027 graduate inventory explicitly offers masters, certificates and Education Specialist programmes only. Management graduate award is MS with executive certificates; no research doctorate.",
+            "sourceUrls": [
+              "https://catalog.worcester.edu/graduate/programs/"
+            ]
+          },
+          {
+            "branch": "engineering",
+            "reviewState": "checked",
+            "conclusion": "Full current graduate inventory read, no engineering doctorate or other research doctorate listed. Technical graduate programmes Biology/Biotechnology are masters; EdS not relabelled PhD.",
+            "sourceUrls": [
+              "https://catalog.worcester.edu/graduate/programs/"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://catalog.worcester.edu/graduate/programs/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full current graduate A-Z page read in Chrome, explicit degree-level summary and every programme label. No doctoral credential listed."
+          },
+          {
+            "url": "https://catalog.worcester.edu/graduate/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Current graduate catalogue identifies 2026–2027 edition, published 31 August 2026; linked A-Z used."
+          }
+        ],
+        "limitations": [
+          "Complete stated current graduate inventory only, not historical absence. Previous unit scope and check dates retained; a single undergraduate Operations core course is not a separately qualifying unit."
+        ],
+        "coverageComplete": true
+      }
     },
     {
       "id": "wu-vienna",

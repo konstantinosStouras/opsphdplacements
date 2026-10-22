@@ -9,3 +9,5 @@ Abilene official current catalogue resolved incomplete marketing inventory and m
 Macau current central inventory and Business Administration doctorate read, but exact relevant field and engineering/math links incomplete. Detailed curriculum viewer blocked browser; own research tab closed through supported management under owner authorization. No unread content counted and remaining research continued. Leeds engineering/mathematics scope remains partial.
 
 Validation:47 tests/public validators passed. All318 prior programme records deep-equal. Expanded Lowell current-scope, both programmes and unit evidence visitor audit passed; no visible dataset filenames/project repository links. Imported people, careers, graduates and universities unchanged. Manifest freezes14 proposals. Stage1 remains incomplete; Stages2–4 and automation held. Continuation13 remains separate research.
+
+Publication confirmed: ea0b9eddbec600ace6425afd7089c03cc683d305 pushed to main and research branch; Pages run39764359199 succeeded. Live312 routes/189 providers and Lowell two-route entry verified. Research continued directly into continuation13.
