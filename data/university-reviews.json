@@ -3,11 +3,11 @@
   "metadata": {
     "definition": "Individual Chrome reviews of official university names and operations units. The original directory remains in universities.json. Reviewed describes the stated source scope, not an exhaustive current or historical census.",
     "sourceRecords": 665,
-    "attempted": 542,
-    "reviewed": 447,
-    "partial": 90,
+    "attempted": 544,
+    "reviewed": 448,
+    "partial": 91,
     "blocked": 5,
-    "pending": 123
+    "pending": 121
   },
   "records": [
     {
@@ -2153,7 +2153,50 @@
       ],
       "duplicateOf": null,
       "addedAt": "2026-10-20T09:30:49Z",
-      "updatedAt": "2026-10-20T09:30:49Z"
+      "updatedAt": "2026-10-22T10:56:12Z",
+      "doctoralReview": {
+        "status": "no-qualifying-programme-verified",
+        "checkedAt": "2026-10-22",
+        "programmeIds": [],
+        "branches": [
+          {
+            "branch": "business",
+            "reviewState": "checked",
+            "conclusion": "Read the complete authoritative 2026–27 catalogue list of 13 doctoral programmes. No Kogod, business or management doctorate is listed. Economics and Public Administration doctoral titles are not assumed to provide Operations research. Faculty teaching and research in Information Technology and Analytics do not establish doctoral provision.",
+            "sourceUrls": [
+              "https://catalog.american.edu/content.php?catoid=23&navoid=4428"
+            ]
+          },
+          {
+            "branch": "engineering",
+            "reviewState": "checked",
+            "conclusion": "Read the complete doctoral inventory and the full potentially related Computational Science and Artificial Intelligence PhD curriculum. Its tracks are Artificial Intelligence, Computational Astronomy and Physics, and Foundations of Data Science. None explicitly names Operations Research or Industrial Engineering. Generic numerical and stochastic methods, and advisor-approved electives, do not establish a formal Operations doctoral field. Previously verified joint engineering degrees at Columbia remain separate from degrees awarded by American University.",
+            "sourceUrls": [
+              "https://catalog.american.edu/content.php?catoid=23&navoid=4428",
+              "https://catalog.american.edu/preview_program.php?catoid=23&poid=12130&returnto=4428"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://catalog.american.edu/content.php?catoid=23&navoid=4428",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Read the complete current American University 2026–27 catalogue Doctoral Program (GR) list of 13 degrees. The initial page load was delayed but recovered; the complete text was read."
+          },
+          {
+            "url": "https://catalog.american.edu/preview_program.php?catoid=23&poid=12130&returnto=4428",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Read the complete Computational Science and Artificial Intelligence PhD admissions, dissertation and comprehensive examination requirements, departmental hosts, core curriculum and all three disciplinary tracks. Generic stochastic and numerical methods do not establish an explicit Operations field."
+          }
+        ],
+        "limitations": [
+          "The scope concerns current named doctorates and explicit related technical fields, not all possible interdisciplinary dissertations.",
+          "The imported Kogod school label retains the verified American University identity; no merge with similarly named universities is inferred."
+        ],
+        "coverageComplete": true
+      }
     },
     {
       "id": "american-university-of-beirut",
@@ -2256,7 +2299,93 @@
       "limitations": [],
       "duplicateOf": null,
       "addedAt": "2026-10-20T09:30:49Z",
-      "updatedAt": "2026-10-20T09:30:49Z"
+      "updatedAt": "2026-10-22T10:56:12Z",
+      "doctoralReview": {
+        "status": "partial",
+        "checkedAt": "2026-10-22",
+        "programmeIds": [],
+        "branches": [
+          {
+            "branch": "business",
+            "reviewState": "checked",
+            "conclusion": "Complete current university graduate inventory read. Business Administration, Business Analytics, Finance and Human Resources Management are masters offerings; no business doctorate listed. Existing Business Information and Decision Systems academic area alone does not establish doctoral provision.",
+            "sourceUrls": [
+              "https://www.aub.edu.lb/academics/Pages/Graduateprograms.aspx"
+            ]
+          },
+          {
+            "branch": "engineering",
+            "reviewState": "partial",
+            "conclusion": "Full university graduate inventory and potentially related IEM, Civil, Mathematics, Mechanical and Computational and Data Sciences doctoral descriptions read. IEM offers BE/MEM only; no qualifying doctoral field verified from the other descriptions. Civil explicitly mentions concentration areas but does not enumerate their doctoral mapping; transportation research is generic, so that concrete field mapping remains unresolved rather than inferred from methods. No speculative expansion into unrelated biomedical or physical science dissertations.",
+            "sourceUrls": [
+              "https://www.aub.edu.lb/academics/Pages/Graduateprograms.aspx",
+              "https://www.aub.edu.lb/msfea/iem/Pages/default.aspx",
+              "https://www.aub.edu.lb/msfea/cee/CE-PHD/Pages/default.aspx",
+              "https://www.aub.edu.lb/msfea/cee/Pages/default.aspx",
+              "https://www.aub.edu.lb/msfea/cee/Pages/research.aspx",
+              "https://www.aub.edu.lb/scds/Academic_Programs/PhD_Data_Science/Pages/default.aspx",
+              "https://www.aub.edu.lb/Registrar/catalogue2026-27/gr/Pages/fas-dom.aspx",
+              "https://www.aub.edu.lb/msfea/me/MECH-PHD/Pages/default.aspx"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://www.aub.edu.lb/academics/Pages/Graduateprograms.aspx",
+            "note": "Read the complete dynamically loaded university graduate inventory across all academic divisions and programme types. Business offers masters; Industrial Engineering and Engineering Management are not listed as doctorates. Technical doctorates include Civil, Mechanical, Mathematics, Computational and Data Sciences and other engineering fields.",
+            "checkedAt": "2026-10-22",
+            "outcome": "read"
+          },
+          {
+            "url": "https://www.aub.edu.lb/msfea/iem/Pages/default.aspx",
+            "note": "Read the full current Industrial Engineering and Management department homepage: BE Industrial Engineering, MEM Engineering Management and an undergraduate minor, with no doctoral offering stated.",
+            "checkedAt": "2026-10-22",
+            "outcome": "read"
+          },
+          {
+            "url": "https://www.aub.edu.lb/msfea/cee/CE-PHD/Pages/default.aspx",
+            "note": "Read the full Civil Engineering PhD page: research training and broad concentration objectives. No named Operations field or complete list of doctoral concentrations is supplied.",
+            "checkedAt": "2026-10-22",
+            "outcome": "read"
+          },
+          {
+            "url": "https://www.aub.edu.lb/msfea/cee/Pages/default.aspx",
+            "note": "Read the full current Civil and Environmental Engineering homepage and graduate programmes. Civil and Environmental/Water Resources PhDs explicitly present.",
+            "checkedAt": "2026-10-22",
+            "outcome": "read"
+          },
+          {
+            "url": "https://www.aub.edu.lb/msfea/cee/Pages/research.aspx",
+            "note": "Read the complete departmental research introduction: infrastructure, environment, water, geotechnical systems, structures, transportation and smart construction. The Research Labs area did not supply a complete explicit doctoral concentration mapping.",
+            "checkedAt": "2026-10-22",
+            "outcome": "read"
+          },
+          {
+            "url": "https://www.aub.edu.lb/scds/Academic_Programs/PhD_Data_Science/Pages/default.aspx",
+            "note": "Read the full Computational and Data Sciences PhD overview and learning outcomes. Generic computing, AI and interdisciplinary research do not explicitly establish Operations research scope.",
+            "checkedAt": "2026-10-22",
+            "outcome": "read"
+          },
+          {
+            "url": "https://www.aub.edu.lb/Registrar/catalogue2026-27/gr/Pages/fas-dom.aspx",
+            "note": "Read the complete 2026–27 Mathematics graduate catalogue, including PhD admissions, curriculum and research requirements. No explicitly named Operations Research field established.",
+            "checkedAt": "2026-10-22",
+            "outcome": "read"
+          },
+          {
+            "url": "https://www.aub.edu.lb/msfea/me/MECH-PHD/Pages/default.aspx",
+            "note": "Read the full Mechanical Engineering PhD description, requirements and three major areas: Thermal and Fluid Sciences; Design, Materials and Manufacturing; Mechatronics. Manufacturing processes and control topics not recoded as Industrial Engineering doctoral provision.",
+            "checkedAt": "2026-10-22",
+            "outcome": "read"
+          }
+        ],
+        "limitations": [
+          "Civil Engineering doctoral concentration mapping remains unresolved; current transportation research alone is insufficient to assert an Operations doctorate.",
+          "No qualifying doctorate is verified yet. This does not assert that the university has no doctoral research related to Operations.",
+          "The School of Business source alias is already identity-matched to this university; no duplicate degrees are created."
+        ],
+        "coverageComplete": false
+      }
     },
     {
       "id": "american-university-of-beirut-school-of-business",
@@ -2332,7 +2461,93 @@
       "limitations": [],
       "duplicateOf": "american-university-of-beirut",
       "addedAt": "2026-10-20T09:30:49Z",
-      "updatedAt": "2026-10-20T09:30:49Z"
+      "updatedAt": "2026-10-22T10:56:12Z",
+      "doctoralReview": {
+        "status": "partial",
+        "checkedAt": "2026-10-22",
+        "programmeIds": [],
+        "branches": [
+          {
+            "branch": "business",
+            "reviewState": "checked",
+            "conclusion": "Complete current university graduate inventory read. Business Administration, Business Analytics, Finance and Human Resources Management are masters offerings; no business doctorate listed. Existing Business Information and Decision Systems academic area alone does not establish doctoral provision.",
+            "sourceUrls": [
+              "https://www.aub.edu.lb/academics/Pages/Graduateprograms.aspx"
+            ]
+          },
+          {
+            "branch": "engineering",
+            "reviewState": "partial",
+            "conclusion": "Full university graduate inventory and potentially related IEM, Civil, Mathematics, Mechanical and Computational and Data Sciences doctoral descriptions read. IEM offers BE/MEM only; no qualifying doctoral field verified from the other descriptions. Civil explicitly mentions concentration areas but does not enumerate their doctoral mapping; transportation research is generic, so that concrete field mapping remains unresolved rather than inferred from methods. No speculative expansion into unrelated biomedical or physical science dissertations.",
+            "sourceUrls": [
+              "https://www.aub.edu.lb/academics/Pages/Graduateprograms.aspx",
+              "https://www.aub.edu.lb/msfea/iem/Pages/default.aspx",
+              "https://www.aub.edu.lb/msfea/cee/CE-PHD/Pages/default.aspx",
+              "https://www.aub.edu.lb/msfea/cee/Pages/default.aspx",
+              "https://www.aub.edu.lb/msfea/cee/Pages/research.aspx",
+              "https://www.aub.edu.lb/scds/Academic_Programs/PhD_Data_Science/Pages/default.aspx",
+              "https://www.aub.edu.lb/Registrar/catalogue2026-27/gr/Pages/fas-dom.aspx",
+              "https://www.aub.edu.lb/msfea/me/MECH-PHD/Pages/default.aspx"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://www.aub.edu.lb/academics/Pages/Graduateprograms.aspx",
+            "note": "Read the complete dynamically loaded university graduate inventory across all academic divisions and programme types. Business offers masters; Industrial Engineering and Engineering Management are not listed as doctorates. Technical doctorates include Civil, Mechanical, Mathematics, Computational and Data Sciences and other engineering fields.",
+            "checkedAt": "2026-10-22",
+            "outcome": "read"
+          },
+          {
+            "url": "https://www.aub.edu.lb/msfea/iem/Pages/default.aspx",
+            "note": "Read the full current Industrial Engineering and Management department homepage: BE Industrial Engineering, MEM Engineering Management and an undergraduate minor, with no doctoral offering stated.",
+            "checkedAt": "2026-10-22",
+            "outcome": "read"
+          },
+          {
+            "url": "https://www.aub.edu.lb/msfea/cee/CE-PHD/Pages/default.aspx",
+            "note": "Read the full Civil Engineering PhD page: research training and broad concentration objectives. No named Operations field or complete list of doctoral concentrations is supplied.",
+            "checkedAt": "2026-10-22",
+            "outcome": "read"
+          },
+          {
+            "url": "https://www.aub.edu.lb/msfea/cee/Pages/default.aspx",
+            "note": "Read the full current Civil and Environmental Engineering homepage and graduate programmes. Civil and Environmental/Water Resources PhDs explicitly present.",
+            "checkedAt": "2026-10-22",
+            "outcome": "read"
+          },
+          {
+            "url": "https://www.aub.edu.lb/msfea/cee/Pages/research.aspx",
+            "note": "Read the complete departmental research introduction: infrastructure, environment, water, geotechnical systems, structures, transportation and smart construction. The Research Labs area did not supply a complete explicit doctoral concentration mapping.",
+            "checkedAt": "2026-10-22",
+            "outcome": "read"
+          },
+          {
+            "url": "https://www.aub.edu.lb/scds/Academic_Programs/PhD_Data_Science/Pages/default.aspx",
+            "note": "Read the full Computational and Data Sciences PhD overview and learning outcomes. Generic computing, AI and interdisciplinary research do not explicitly establish Operations research scope.",
+            "checkedAt": "2026-10-22",
+            "outcome": "read"
+          },
+          {
+            "url": "https://www.aub.edu.lb/Registrar/catalogue2026-27/gr/Pages/fas-dom.aspx",
+            "note": "Read the complete 2026–27 Mathematics graduate catalogue, including PhD admissions, curriculum and research requirements. No explicitly named Operations Research field established.",
+            "checkedAt": "2026-10-22",
+            "outcome": "read"
+          },
+          {
+            "url": "https://www.aub.edu.lb/msfea/me/MECH-PHD/Pages/default.aspx",
+            "note": "Read the full Mechanical Engineering PhD description, requirements and three major areas: Thermal and Fluid Sciences; Design, Materials and Manufacturing; Mechatronics. Manufacturing processes and control topics not recoded as Industrial Engineering doctoral provision.",
+            "checkedAt": "2026-10-22",
+            "outcome": "read"
+          }
+        ],
+        "limitations": [
+          "Civil Engineering doctoral concentration mapping remains unresolved; current transportation research alone is insufficient to assert an Operations doctorate.",
+          "No qualifying doctorate is verified yet. This does not assert that the university has no doctoral research related to Operations.",
+          "The School of Business source alias is already identity-matched to this university; no duplicate degrees are created."
+        ],
+        "coverageComplete": false
+      }
     },
     {
       "id": "american-university-of-kurdistan",
@@ -2388,7 +2603,65 @@
       ],
       "duplicateOf": null,
       "addedAt": "2026-10-20T09:30:49Z",
-      "updatedAt": "2026-10-20T09:30:49Z"
+      "updatedAt": "2026-10-22T10:56:12Z",
+      "doctoralReview": {
+        "status": "no-qualifying-programme-verified",
+        "checkedAt": "2026-10-22",
+        "programmeIds": [],
+        "branches": [
+          {
+            "branch": "business",
+            "reviewState": "checked",
+            "conclusion": "Read the complete current college inventory and the Business college description. Business offers bachelor programmes, with no doctoral provision stated. A separate Arts and Sciences graduate page offers an Artificial Intelligence master, not a business doctorate.",
+            "sourceUrls": [
+              "https://auk.edu.krd/academics/colleges",
+              "http://auk.edu.krd/academics/colleges/college-of-business",
+              "https://auk.edu.krd/academics/colleges/college-of-arts-and-sciences/academic-programs/masters-degree-programs"
+            ]
+          },
+          {
+            "branch": "engineering",
+            "reviewState": "checked",
+            "conclusion": "Read the full Engineering college description and university college inventory. Three Bachelor of Science programmes are listed: Architectural Engineering, Petroleum Engineering, and Electronics and Telecommunication Engineering. The Wayne State agreement concerns masters study in the United States, not an AUK doctorate. No relevant doctoral provision is listed.",
+            "sourceUrls": [
+              "https://auk.edu.krd/academics/colleges",
+              "http://auk.edu.krd/academics/colleges/college-of-engineering",
+              "https://auk.edu.krd/academics/colleges/college-of-arts-and-sciences/academic-programs/masters-degree-programs"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://auk.edu.krd/academics/colleges/college-of-arts-and-sciences/academic-programs/masters-degree-programs",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Read the full current masters programme page and academic programme navigation; Master of Science in Artificial Intelligence is a masters award."
+          },
+          {
+            "url": "https://auk.edu.krd/academics/colleges",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Read the complete four-college inventory and stated programme levels."
+          },
+          {
+            "url": "http://auk.edu.krd/academics/colleges/college-of-business",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Read the full Business college introduction, explicitly describing the bachelor Business Administration programme."
+          },
+          {
+            "url": "http://auk.edu.krd/academics/colleges/college-of-engineering",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Read the full Engineering college introduction: three bachelor programmes and an agreement for masters study at Wayne State; no local doctoral degree inferred."
+          }
+        ],
+        "limitations": [
+          "The assessment is bounded to currently published college and graduate programme provision; it does not claim historical or future degree authority.",
+          "The university is in Duhok, Kurdistan Region of Iraq. No identity merge with similarly named American universities is inferred."
+        ],
+        "coverageComplete": true
+      }
     },
     {
       "id": "american-university-of-phnom-penh",
@@ -2431,7 +2704,51 @@
       ],
       "duplicateOf": null,
       "addedAt": "2026-10-20T09:30:49Z",
-      "updatedAt": "2026-10-20T09:30:49Z"
+      "updatedAt": "2026-10-22T10:56:12Z",
+      "doctoralReview": {
+        "status": "no-qualifying-programme-verified",
+        "checkedAt": "2026-10-22",
+        "programmeIds": [],
+        "branches": [
+          {
+            "branch": "business",
+            "reviewState": "checked",
+            "conclusion": "Read the current university faculties and graduate studies entry points and the complete masters majors list. Business offers an MBA. Current graduate inventory lists six masters programmes and no doctorate; no doctoral Operations provision is established.",
+            "sourceUrls": [
+              "https://www.aupp.edu.kh/faculties-programs-centers-labs/",
+              "https://www.aupp.edu.kh/future-students-masters/"
+            ]
+          },
+          {
+            "branch": "engineering",
+            "reviewState": "checked",
+            "conclusion": "Current faculties list Digital Technologies rather than a separate engineering school. The complete current graduate majors list includes Computer Science with an AI specialization at masters level, alongside business and law masters. No technical research doctorate is listed.",
+            "sourceUrls": [
+              "https://www.aupp.edu.kh/faculties-programs-centers-labs/",
+              "https://www.aupp.edu.kh/future-students-masters/"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://www.aupp.edu.kh/faculties-programs-centers-labs/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Read the full university faculties, programmes, centres and labs introduction and the graduate studies section. It distinguishes undergraduate and graduate study and describes masters degrees."
+          },
+          {
+            "url": "https://www.aupp.edu.kh/future-students-masters/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Read the complete current Faculty of Graduate Studies admissions and majors list: MBA, Legal Studies, Laws in International Business and Digital Technologies, Laws in Cybersecurity, Laws in Artificial Intelligence, and Computer Science with an AI specialization. Each is explicitly a masters award."
+          }
+        ],
+        "limitations": [
+          "The assessment concerns current published graduate provision, not historical or future degree authorization.",
+          "The general faculties page lists fewer graduate links than the current masters admissions page; the fuller six-programme admissions list was read and retained."
+        ],
+        "coverageComplete": true
+      }
     },
     {
       "id": "american-university-of-sharjah",
@@ -2505,7 +2822,84 @@
       "limitations": [],
       "duplicateOf": null,
       "addedAt": "2026-10-20T09:34:49Z",
-      "updatedAt": "2026-10-20T09:34:49Z"
+      "updatedAt": "2026-10-22T10:56:12Z",
+      "doctoralReview": {
+        "status": "verified",
+        "checkedAt": "2026-10-22",
+        "programmeIds": [
+          "american-university-of-sharjah--engineering-systems-management-supply-chain-phd"
+        ],
+        "branches": [
+          {
+            "branch": "business",
+            "reviewState": "checked",
+            "conclusion": "Read the complete current doctoral inventory and full related Management PhD description. Business doctorates are Finance and Management. Management explicitly describes strategy, entrepreneurship, organizational behavior and human resources; no additional Operations doctoral field verified.",
+            "sourceUrls": [
+              "https://www.aus.edu/programs/doctor",
+              "https://www.aus.edu/sba/department-of-management-strategy-and-entrepreneurship/phd-in-management"
+            ]
+          },
+          {
+            "branch": "engineering",
+            "reviewState": "checked",
+            "conclusion": "Read the complete eight-programme doctoral inventory and the full potentially related Engineering Systems Management, Mathematics, and Civil and Environmental doctoral descriptions. Engineering Systems Management explicitly provides SCM research. No additional Operations field is established from the other descriptions; unrelated physical and biomedical doctorates are not expanded speculatively.",
+            "sourceUrls": [
+              "https://www.aus.edu/programs/doctor",
+              "https://www.aus.edu/cen/department-of-industrial-engineering/phd-in-engineering-engineering-systems-management",
+              "https://www.aus.edu/cas/department-of-mathematics-and-statistics/phd-in-mathematics-phd-mth",
+              "https://www.aus.edu/cen/department-of-civil-engineering/phd-in-civil-and-environmental-engineering"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://www.aus.edu/cen/department-of-industrial-engineering/phd-in-engineering-engineering-systems-management",
+            "note": "Read the full current doctoral programme, departmental and college hosts, original dissertation research, admissions and explicit Supply Chain Management field. One Engineering Systems Management degree, not a separate doctorate for each research topic.",
+            "checkedAt": "2026-10-22",
+            "outcome": "read"
+          },
+          {
+            "url": "https://www.aus.edu/admissions/masters-degrees",
+            "note": "Read the current graduate entry page and its separate Doctoral Degrees link; masters and doctoral levels distinguished.",
+            "checkedAt": "2026-10-22",
+            "outcome": "read"
+          },
+          {
+            "url": "https://www.aus.edu/admissions/doctoral-degrees",
+            "note": "Read the full central doctoral introduction and official doctoral programme inventory link.",
+            "checkedAt": "2026-10-22",
+            "outcome": "read"
+          },
+          {
+            "url": "https://www.aus.edu/programs/doctor",
+            "note": "Read the complete eight-programme doctoral inventory and departmental hosts: Civil and Environmental; Biosciences and Bioengineering; Electrical and Computer; Engineering Systems Management; Finance; Management; Materials; Mathematics.",
+            "checkedAt": "2026-10-22",
+            "outcome": "read"
+          },
+          {
+            "url": "https://www.aus.edu/sba/department-of-management-strategy-and-entrepreneurship/phd-in-management",
+            "note": "Read the full current Management PhD description: strategic management and leadership, entrepreneurship and family businesses, organizational behavior and human resources. No explicit Operations research field established.",
+            "checkedAt": "2026-10-22",
+            "outcome": "read"
+          },
+          {
+            "url": "https://www.aus.edu/cas/department-of-mathematics-and-statistics/phd-in-mathematics-phd-mth",
+            "note": "Read the full Mathematics PhD description, research mission and learning outcomes; algebra, analysis, dynamical systems and statistics explicitly listed. Generic applied mathematics does not establish another Operations Research doctorate.",
+            "checkedAt": "2026-10-22",
+            "outcome": "read"
+          },
+          {
+            "url": "https://www.aus.edu/cen/department-of-civil-engineering/phd-in-civil-and-environmental-engineering",
+            "note": "Read the full Civil and Environmental PhD description and research structure; broad sustainability, resilience, security, digitization and robustness are not explicitly an Operations field.",
+            "checkedAt": "2026-10-22",
+            "outcome": "read"
+          }
+        ],
+        "limitations": [
+          "The scope covers current named doctorates and explicitly described related research fields, not every possible dissertation or elective topic."
+        ],
+        "coverageComplete": true
+      }
     },
     {
       "id": "appalachian-state-university",
@@ -2561,7 +2955,42 @@
       "limitations": [],
       "duplicateOf": null,
       "addedAt": "2026-10-20T09:43:28Z",
-      "updatedAt": "2026-10-20T09:43:28Z"
+      "updatedAt": "2026-10-22T10:56:12Z",
+      "doctoralReview": {
+        "status": "no-qualifying-programme-verified",
+        "checkedAt": "2026-10-22",
+        "programmeIds": [],
+        "branches": [
+          {
+            "branch": "business",
+            "reviewState": "checked",
+            "conclusion": "Read the complete current university doctoral inventory. It lists Clinical Psychology (PsyD), Educational Leadership (EdD) and Nursing Practice (DNP), with exact departments and disciplines. No business or Operations research doctorate is listed.",
+            "sourceUrls": [
+              "https://www.appstate.edu/academics/doctoral/"
+            ]
+          },
+          {
+            "branch": "engineering",
+            "reviewState": "checked",
+            "conclusion": "The complete university doctoral inventory lists only psychology, educational leadership and nursing. No engineering, Industrial Engineering or Operations Research doctorate appears in this current bounded list; unrelated professional fields are not expanded into a speculative dissertation census.",
+            "sourceUrls": [
+              "https://www.appstate.edu/academics/doctoral/"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://www.appstate.edu/academics/doctoral/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Read the complete official Doctoral Programs table: three programmes, their departments, disciplines and online delivery labels. No filters or pagination restrict the list."
+          }
+        ],
+        "limitations": [
+          "The assessment concerns current named doctoral provision, not every possible interdisciplinary dissertation or historical or future award authority."
+        ],
+        "coverageComplete": true
+      }
     },
     {
       "id": "arizona-state-university",
@@ -26068,7 +26497,57 @@
       ],
       "duplicateOf": null,
       "addedAt": "2026-10-20T09:53:00Z",
-      "updatedAt": "2026-10-20T09:53:00Z"
+      "updatedAt": "2026-10-22T10:56:12Z",
+      "doctoralReview": {
+        "status": "no-qualifying-programme-verified",
+        "checkedAt": "2026-10-22",
+        "programmeIds": [],
+        "branches": [
+          {
+            "branch": "business",
+            "reviewState": "checked",
+            "sourceUrls": [
+              "https://www.mef.edu.tr/en/fakulteler/lisansustu-egitim-enstitusu/programlar"
+            ],
+            "conclusion": "Complete Graduate School inventory lists Business Administration, Economics/Finance and Big Data Analytics only among master’s programmes. Doctoral list is Private Law, Public Law and Computer Science and Engineering; no business/Ops doctorate."
+          },
+          {
+            "branch": "engineering",
+            "reviewState": "checked",
+            "sourceUrls": [
+              "https://www.mef.edu.tr/en/fakulteler/lisansustu-egitim-enstitusu/programlar",
+              "https://www.mef.edu.tr/en/fakulteler/lisansustu-egitim-enstitusu/danisma-kurulu/doktora/bilgisayar-bilimleri-ve-muhendisligi-doktora-programlari-turkce-ve-ingilizce",
+              "https://www.mef.edu.tr/en/fakulteler/muhendislik-fakultesi/endustri-muhendisligi/lisansustu-programlari"
+            ],
+            "conclusion": "Entire graduate inventory and only technical PhD detail checked. CSE PhD research emphasis data/computer sciences and AI with software, IoT, business intelligence, cloud and image/pattern fields, no explicit qualifying OR/Ops/IE specialization. Industrial Engineering graduate page refers to the same Graduate School without listing its own doctorate."
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://www.mef.edu.tr/en/fakulteler/lisansustu-egitim-enstitusu/programlar",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Complete PhD and master’s inventory read: three doctoral programmes Private Law, Public Law, Computer Science and Engineering, with separate named master’s list including business and technical subjects."
+          },
+          {
+            "url": "https://www.mef.edu.tr/en/fakulteler/lisansustu-egitim-enstitusu/danisma-kurulu/doktora/bilgisayar-bilimleri-ve-muhendisligi-doktora-programlari-turkce-ve-ingilizce",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Actual MEF Computer Science and Engineering PhD description read. Research in data sciences, computer sciences and AI; software, network/IoT, business intelligence/analytics, cloud, ML and image processing. Generic quantitative computing is not itself Operations Research."
+          },
+          {
+            "url": "https://www.mef.edu.tr/en/fakulteler/muhendislik-fakultesi/endustri-muhendisligi/lisansustu-programlari",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Actual Industrial Engineering department Graduate Programs page read; only directs reader to Graduate School. This crosslink is not treated as a separate IE doctorate."
+          }
+        ],
+        "limitations": [
+          "Current official Graduate School inventory scope only; no historical absence claimed.",
+          "A relevant Industrial Engineering department does not automatically establish doctoral provision; CSE methods-only topics not reclassified as OR."
+        ],
+        "coverageComplete": true
+      }
     },
     {
       "id": "memorial-university-of-newfoundland",
@@ -26351,7 +26830,79 @@
       ],
       "duplicateOf": null,
       "addedAt": "2026-10-20T09:53:41Z",
-      "updatedAt": "2026-10-20T09:53:41Z"
+      "updatedAt": "2026-10-22T10:56:12Z",
+      "doctoralReview": {
+        "status": "no-qualifying-programme-verified",
+        "checkedAt": "2026-10-22",
+        "programmeIds": [],
+        "branches": [
+          {
+            "branch": "business",
+            "reviewState": "checked",
+            "sourceUrls": [
+              "https://miamioh.edu/graduate-school/academics/doctoral-programs.html"
+            ],
+            "conclusion": "Full current university doctoral table contains no business doctorate; existing relevant Farmer School unit not automatically a PhD provider."
+          },
+          {
+            "branch": "engineering",
+            "reviewState": "checked",
+            "sourceUrls": [
+              "https://miamioh.edu/graduate-school/academics/doctoral-programs.html",
+              "https://bulletin.miamioh.edu/graduate-fields-study/engineering/",
+              "https://programs.miamioh.edu/programs/engineering-ph-d/",
+              "https://miamioh.edu/cec/graduate-programs/",
+              "https://miamioh.edu/cec/departments/mechanical-manufacturing-engineering/index.html",
+              "https://miamioh.edu/cec/departments/mechanical-manufacturing-engineering/research.html"
+            ],
+            "conclusion": "Engineering PhD and formal Mechanical and Manufacturing concentration are actual provision, but opened programme and MME research scope show process/material manufacturing, digital twins and automation without explicit qualifying OR/Ops/IE research specialization. No qualifying route inferred from manufacturing name alone. CS concentrations also do not establish another Ops route."
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://miamioh.edu/graduate-school/academics/doctoral-programs.html",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full doctoral degree and concentration table read. No business doctorate; Computer Science concentrations Applied Physics, AI/ML, cryptography, cybersecurity and quantum. Actual Engineering PhD lists six concentrations including Mechanical and Manufacturing, Robotics and Automation. Summary number not treated as independently counted table total."
+          },
+          {
+            "url": "https://bulletin.miamioh.edu/graduate-fields-study/engineering/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "2026–2027 Engineering Doctor of Philosophy requirements read: 60 hours after master’s or 90 after bachelor’s, at least 30 dissertation research hours, written/oral proposal and dissertation defence. Mechanical and Manufacturing concentration uses MME 850 research."
+          },
+          {
+            "url": "https://programs.miamioh.edu/programs/engineering-ph-d/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Engineering PhD full programme page read. Actual collaboration CEC/Physics; six named concentrations and research clusters Robotics/Automation/Manufacturing, AI/HPC, assistive/sustainable technologies; no explicit Operations Research/production planning field. Generic quality/efficiency co-curricular societal-impact requirement does not establish Ops specialization."
+          },
+          {
+            "url": "https://miamioh.edu/cec/graduate-programs/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full CEC graduate programme inventory read: Engineering and Computer Science PhDs, plus master’s/certificates. Mechanical and Smart Manufacturing MEng not promoted to an independent PhD."
+          },
+          {
+            "url": "https://miamioh.edu/cec/departments/mechanical-manufacturing-engineering/index.html",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Actual Department of Mechanical and Manufacturing Engineering identity, CEC, graduate options and Oxford Ohio identity read. Manufacturing and Engineering Management undergraduate majors not themselves doctoral evidence."
+          },
+          {
+            "url": "https://miamioh.edu/cec/departments/mechanical-manufacturing-engineering/research.html",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full MME research page and expanded Smart Manufacturing faculty topics read: digital twins/ML, controls/automation/nanomaterials, additive manufacturing/EDM and manufacturing processes. Generic process/manufacture scope alone not treated as substantive OR/Ops/IE doctoral route."
+          }
+        ],
+        "limitations": [
+          "Oxford Ohio Miami University only; University of Miami Florida not merged.",
+          "Actual Engineering PhD with Mechanical and Manufacturing concentration is documented discovery. Eligible substantive Ops/IE field is not established by the opened production-process descriptions; unobserved individual topics are not declared absent.",
+          "Current source-bounded inventory scope, not historical census; advanced manufacturing name alone is insufficient eligibility evidence."
+        ],
+        "coverageComplete": true
+      }
     },
     {
       "id": "michigan-state-university",
@@ -26627,7 +27178,67 @@
       ],
       "duplicateOf": null,
       "addedAt": "2026-10-20T10:06:22Z",
-      "updatedAt": "2026-10-20T10:06:22Z"
+      "updatedAt": "2026-10-22T10:56:12Z",
+      "doctoralReview": {
+        "status": "no-qualifying-programme-verified",
+        "checkedAt": "2026-10-22",
+        "programmeIds": [],
+        "branches": [
+          {
+            "branch": "business",
+            "reviewState": "checked",
+            "sourceUrls": [
+              "https://www.mga.edu/graduate-school/programs/index.php",
+              "https://www.mga.edu/graduate-school/programs/information-technology-ds.php",
+              "https://www.mga.edu/graduate-school/programs/public-safety-ds.php",
+              "https://mga.smartcatalogiq.com/en/2026-2027/the-graduate-school-academic-catalog-2026-2027/programs/school-of-education-and-behavioral-sciences/department-of-psychology-and-criminal-justice/doctorate-in-public-safety-dps/"
+            ],
+            "conclusion": "Complete doctoral-degree table shows Information Technology DS and Public Safety DS only. IT strategic operations is generic IT leadership; no business/Ops/SCM PhD specialization. Public Safety is explicitly professional practice doctorate, not an Ops research doctorate."
+          },
+          {
+            "branch": "engineering",
+            "reviewState": "checked",
+            "sourceUrls": [
+              "https://www.mga.edu/graduate-school/programs/index.php",
+              "https://www.mga.edu/graduate-school/programs/information-technology-ds.php",
+              "https://www.mga.edu/graduate-school/programs/public-safety-ds.php",
+              "https://mga.smartcatalogiq.com/en/2026-2027/the-graduate-school-academic-catalog-2026-2027/programs/school-of-education-and-behavioral-sciences/department-of-psychology-and-criminal-justice/doctorate-in-public-safety-dps/"
+            ],
+            "conclusion": "Complete doctoral table and both actual DSc programme details read. No engineering/IE/OR doctorate established. Public Safety Security/Analytics and Emergency/Disaster tracks do not explicitly establish Operations Research/logistics specialization and culminate in professional field practicum/capstone."
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://www.mga.edu/graduate-school/programs/index.php",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Current Doctoral Degrees table with All Campuses/Formats and All Schools read: Information Technology D.S. (Computing), Public Safety D.S. with Security/Analytics and Emergency/Disaster tracks (Education/Behavioral Sciences). Master’s tab not falsely claimed as fully read."
+          },
+          {
+            "url": "https://www.mga.edu/graduate-school/programs/information-technology-ds.php",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Exact Doctor of Science in Information Technology, 54 credits, IT leadership with innovation/strategy/technology and applied IT research project; strategic operations wording not treated as academic Operations specialization."
+          },
+          {
+            "url": "https://www.mga.edu/graduate-school/programs/public-safety-ds.php",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Exact Doctor of Science in Public Safety, 54 credits, executive public safety practice and two tracks read."
+          },
+          {
+            "url": "https://mga.smartcatalogiq.com/en/2026-2027/the-graduate-school-academic-catalog-2026-2027/programs/school-of-education-and-behavioral-sciences/department-of-psychology-and-criminal-justice/doctorate-in-public-safety-dps/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Complete 2026–2027 public safety curriculum read. Explicit online professional doctorate with field-based practicum/capstone, not dissertation academic PhD. Track courses infrastructure/resilience, emergency management, disaster science/conflict; security/GIS/cyber/fraud; no explicit OR/SCM/logistics specialization."
+          }
+        ],
+        "limitations": [
+          "Exact D.S. credentials preserved as discovery evidence, not silently converted to PhD awards.",
+          "Current doctoral inventory scope only; generic strategic operations, analytics and emergency management do not alone establish qualifying Ops research doctorate."
+        ],
+        "coverageComplete": true
+      }
     },
     {
       "id": "minnesota-state-university",
@@ -26927,7 +27538,42 @@
       ],
       "duplicateOf": null,
       "addedAt": "2026-10-20T10:06:22Z",
-      "updatedAt": "2026-10-20T10:06:22Z"
+      "updatedAt": "2026-10-22T10:56:12Z",
+      "doctoralReview": {
+        "status": "no-qualifying-programme-verified",
+        "checkedAt": "2026-10-22",
+        "programmeIds": [],
+        "branches": [
+          {
+            "branch": "business",
+            "reviewState": "checked",
+            "sourceUrls": [
+              "https://www.mssu.edu/academics/graduate/index.php"
+            ],
+            "conclusion": "Entire university Graduate and Professional Studies programme list read: MBA, Data Analytics MS and Healthcare Administration MS; no business doctorate."
+          },
+          {
+            "branch": "engineering",
+            "reviewState": "checked",
+            "sourceUrls": [
+              "https://www.mssu.edu/academics/graduate/index.php"
+            ],
+            "conclusion": "University-wide current graduate inventory explicitly presents master’s programmes across business/data, education, health, justice and sport; no engineering or relevant Ops/IE doctorate listed."
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://www.mssu.edu/academics/graduate/index.php",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Entire School of Graduate and Professional Studies overview and programme cards read: MAT, MBA, MS Curriculum/Instruction, Data Analytics, Healthcare Administration, Justice, K–12 School Administration, Sport/Recreation and Nursing. Page explicitly describes these as master’s degree programmes. Joplin Missouri identity confirmed."
+          }
+        ],
+        "limitations": [
+          "Current official graduate inventory scope only; no historical absence or future programme restriction claimed."
+        ],
+        "coverageComplete": true
+      }
     },
     {
       "id": "missouri-state-university",
@@ -26993,7 +27639,50 @@
       ],
       "duplicateOf": null,
       "addedAt": "2026-10-20T10:06:22Z",
-      "updatedAt": "2026-10-20T10:06:22Z"
+      "updatedAt": "2026-10-22T10:56:12Z",
+      "doctoralReview": {
+        "status": "no-qualifying-programme-verified",
+        "checkedAt": "2026-10-22",
+        "programmeIds": [],
+        "branches": [
+          {
+            "branch": "business",
+            "reviewState": "checked",
+            "sourceUrls": [
+              "https://graduate.missouristate.edu/FutureStudents/Grad_Programs.htm"
+            ],
+            "conclusion": "Complete current graduate programme table by college read. Business lists Accountancy, MBA/STEM MBA, Cybersecurity, Health Administration, Information Technology and Project Management master’s plus certificates including SCM; no business doctorate."
+          },
+          {
+            "branch": "engineering",
+            "reviewState": "checked",
+            "sourceUrls": [
+              "https://graduate.missouristate.edu/FutureStudents/Grad_Programs.htm",
+              "https://graduate.missouristate.edu/FacultyStaff/PhDPlanning.htm"
+            ],
+            "conclusion": "Complete graduate table covers natural/applied sciences with CS, materials, mathematics and MNAS master’s only; no qualifying engineering/Ops research doctorate. Research doctorate planning page explicitly describes prospective PhD design and intellectual-community events, not approved operating degrees."
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://graduate.missouristate.edu/FutureStudents/Grad_Programs.htm",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Entire current graduate college-by-college table read, modified 29 September 2026. Education EdD/EdS, health professional doctorates and Defense and Strategic Studies DDSS listed; EdS specialist retained as named, not converted to PhD. Business and technical/science branches master’s/certificates."
+          },
+          {
+            "url": "https://graduate.missouristate.edu/FacultyStaff/PhDPlanning.htm",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Committee on Planning Research Doctorates page read, modified 24 September 2026. Explicit planning/exploration of future PhD programmes with AI/Applied Data Science and other community events; no current degree authorization/admission inferred. Linked faculty/staff OneDrive resources not accessed."
+          }
+        ],
+        "limitations": [
+          "Current programme inventory scope; future research doctorate planning is not eligible current provision.",
+          "Existing cooperative Missouri S&T engineering identity distinction retained; no partner doctorate attributed to Missouri State."
+        ],
+        "coverageComplete": true
+      }
     },
     {
       "id": "missouri-university-of-science-and-technology",
@@ -41451,6 +42140,240 @@
       },
       "addedAt": "2026-10-22T10:34:24Z",
       "updatedAt": "2026-10-22T10:34:24Z"
+    },
+    {
+      "id": "st-john-s-university",
+      "status": "partial",
+      "canonicalName": "St. John's University",
+      "universitySourceUrl": "https://www.stjohns.edu/offices-departments/business-analytics-information-systems",
+      "checkedAt": "2026-10-22",
+      "reviewer": "Codex in Chrome",
+      "duplicateOf": null,
+      "units": [],
+      "decisions": [
+        {
+          "sourceDepartmentId": "st-john-s-university____business-analytics",
+          "disposition": "not-a-unit",
+          "unitIds": [],
+          "reason": "Bare Business Analytics is a programme/subject label; official actual department identity retained in source evidence."
+        },
+        {
+          "sourceDepartmentId": "st-john-s-university__peter-j-tobin-college-of-business__business-analytics-and-information-systems",
+          "disposition": "unresolved",
+          "unitIds": [],
+          "reason": "Actual Department of Business Analytics and Information Systems and Tobin parent officially verified. Qualifying Ops/OR remit remains insufficiently established: current page mentions preparation for future OR graduate study, not a substantive current specialization/research field. No invented eligible field."
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.stjohns.edu/offices-departments/business-analytics-information-systems",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Official New York/Queens university department page read: exact Department of Business Analytics and Information Systems in The Peter J. Tobin College of Business; curriculum prepares students for further graduate study including Operations Research. That preparation statement alone does not establish a substantive current OR/Ops specialization or research remit."
+        },
+        {
+          "url": "https://www.stjohns.edu/academics/schools/peter-j-tobin-college-business/peter-j-tobin-college-business-graduate-programs",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Full current Tobin graduate page read: MBA variants, MS degrees and advanced certificates only. No business doctorate offered in this inventory."
+        },
+        {
+          "url": "https://www.stjohns.edu/admission/graduate-admission/graduate-programs",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Entire current A–W graduate programme degree list read. Mathematics/Computing/ML are MA, CS and AI/DataScience MS; no engineering doctorate. PhDs listed in biology, psychology, education/literacy, English, communication, pharmacy sciences and world history; no qualifying Operations/IE doctorate. Queens NY official university identity confirmed."
+        }
+      ],
+      "limitations": [
+        "Official institutional and departmental identity verified; qualifying unit scope remains unresolved beyond generic analytics and preparation for later OR study.",
+        "No current relevant doctoral provision in complete opened graduate inventory; doctoral negative observation is separate from unit-scope question."
+      ],
+      "doctoralReview": {
+        "status": "no-qualifying-programme-verified",
+        "checkedAt": "2026-10-22",
+        "programmeIds": [],
+        "branches": [
+          {
+            "branch": "business",
+            "reviewState": "checked",
+            "sourceUrls": [
+              "https://www.stjohns.edu/academics/schools/peter-j-tobin-college-business/peter-j-tobin-college-business-graduate-programs",
+              "https://www.stjohns.edu/admission/graduate-admission/graduate-programs"
+            ],
+            "conclusion": "Complete Tobin graduate offerings are MBA, MS and certificates; no business doctorate in current inventory."
+          },
+          {
+            "branch": "engineering",
+            "reviewState": "checked",
+            "sourceUrls": [
+              "https://www.stjohns.edu/admission/graduate-admission/graduate-programs"
+            ],
+            "conclusion": "Complete university graduate list read; CS/AI/Data Science master’s and mathematical/computing MA only, no engineering or qualifying OR/Ops/IE doctorate listed."
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://www.stjohns.edu/offices-departments/business-analytics-information-systems",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Official New York/Queens university department page read: exact Department of Business Analytics and Information Systems in The Peter J. Tobin College of Business; curriculum prepares students for further graduate study including Operations Research. That preparation statement alone does not establish a substantive current OR/Ops specialization or research remit."
+          },
+          {
+            "url": "https://www.stjohns.edu/academics/schools/peter-j-tobin-college-business/peter-j-tobin-college-business-graduate-programs",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full current Tobin graduate page read: MBA variants, MS degrees and advanced certificates only. No business doctorate offered in this inventory."
+          },
+          {
+            "url": "https://www.stjohns.edu/admission/graduate-admission/graduate-programs",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Entire current A–W graduate programme degree list read. Mathematics/Computing/ML are MA, CS and AI/DataScience MS; no engineering doctorate. PhDs listed in biology, psychology, education/literacy, English, communication, pharmacy sciences and world history; no qualifying Operations/IE doctorate. Queens NY official university identity confirmed."
+          }
+        ],
+        "limitations": [
+          "Current official programme inventory scope, not historical absence.",
+          "University is Queens/New York St. John’s with Tobin; no namesake institutions merged."
+        ],
+        "coverageComplete": true
+      },
+      "addedAt": "2026-10-22T10:56:12Z",
+      "updatedAt": "2026-10-22T10:56:12Z"
+    },
+    {
+      "id": "st-thomas-university",
+      "status": "reviewed",
+      "canonicalName": "St. Thomas University",
+      "universitySourceUrl": "https://www.stu.edu/business/",
+      "checkedAt": "2026-10-22",
+      "reviewer": "Codex in Chrome",
+      "duplicateOf": null,
+      "units": [
+        {
+          "id": "st-thomas-university--gus-machado-business",
+          "name": "Gus Machado College of Business",
+          "type": "school",
+          "school": null,
+          "fields": [
+            "supply-chain",
+            "logistics",
+            "operations-management"
+          ],
+          "sourceUrl": "https://www.stu.edu/business/",
+          "checkedAt": "2026-10-22",
+          "evidence": "Official university names actual Gus Machado College of Business and its MBA provision. University-linked formal MBA Supply Chain Management specialization explicitly covers logistics and operations management with 12 specialization credits. College host retained; no invented compound department."
+        }
+      ],
+      "decisions": [
+        {
+          "sourceDepartmentId": "st-thomas-university__gus-machado-college-of-business__quantitative-and-statistical-analysis-supply-chain-operation",
+          "disposition": "not-a-unit",
+          "unitIds": [],
+          "reason": "Long compound teaching-subject list is not an official department identified in opened evidence. Actual college independently verified with formal supply-chain MBA specialization."
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.stu.edu/programs/",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Entire current undergraduate/master’s/postmaster’s/doctoral table read. Supply Chain Management MBA and Trade/Logistics undergraduate provision; engineering is pre-engineering pathway only. Doctorates Administration, Ethical Leadership, nursing, sports and theology/leadership, no Ops/IE research doctorate identified. Miami Gardens Florida address confirms namesake distinction."
+        },
+        {
+          "url": "https://www.stu.edu/business/",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Exact Gus Machado College of Business and St. Thomas University Miami identity read; actual college offers MBA and programmes, no compound subject department named in opened page."
+        },
+        {
+          "url": "https://www.stu.edu/program/dba/business-administration/",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Exact Doctor of Business Administration read, 60 credits, applied scholar-practitioner research, Management/Sports Administration/Cyber Security specializations. Action research, dissertation or journal articles are alternatives. DBA retained as DBA and not converted into PhD; no qualifying Ops specialization."
+        },
+        {
+          "url": "https://www.stu.edu/program/phd/ethical-leadership-online/",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Actual Doctor of Philosophy in Ethical Leadership programme read, specializations Criminal Justice and Higher Education. Generic organizational effectiveness and leadership are not an Ops/IE field."
+        },
+        {
+          "url": "https://online.stu.edu/degrees/business/mba/supply-chain-management/",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "University-linked official online MBA Supply Chain Management page read: 30 credits and 12 specialization credits, explicitly logistics, operations management, import/export and supply value-chain optimization. Formal specialization establishes substantive college scope beyond a single general core course. Partner-maintained page states STU retains academic/curriculum responsibility."
+        }
+      ],
+      "limitations": [
+        "Miami Gardens Florida St. Thomas University only; Minnesota University of St. Thomas and Canadian namesakes not merged.",
+        "No named standalone Ops/SCM department established; actual college-level host retained."
+      ],
+      "doctoralReview": {
+        "status": "no-qualifying-programme-verified",
+        "checkedAt": "2026-10-22",
+        "programmeIds": [],
+        "branches": [
+          {
+            "branch": "business",
+            "reviewState": "checked",
+            "sourceUrls": [
+              "https://www.stu.edu/programs/",
+              "https://www.stu.edu/business/",
+              "https://www.stu.edu/program/dba/business-administration/",
+              "https://www.stu.edu/program/phd/ethical-leadership-online/",
+              "https://online.stu.edu/degrees/business/mba/supply-chain-management/"
+            ],
+            "conclusion": "Full university programme table, business college, DBA and actual Ethical Leadership PhD checked. SCM is MBA specialization; DBA General Management is not PhD or explicit Ops specialization. Ethical Leadership PhD tracks unrelated."
+          },
+          {
+            "branch": "engineering",
+            "reviewState": "checked",
+            "sourceUrls": [
+              "https://www.stu.edu/programs/"
+            ],
+            "conclusion": "Full current degree table includes undergraduate pre-engineering pathway and master’s data/cyber fields, no engineering or qualifying Ops/IE doctorate."
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://www.stu.edu/programs/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Entire current undergraduate/master’s/postmaster’s/doctoral table read. Supply Chain Management MBA and Trade/Logistics undergraduate provision; engineering is pre-engineering pathway only. Doctorates Administration, Ethical Leadership, nursing, sports and theology/leadership, no Ops/IE research doctorate identified. Miami Gardens Florida address confirms namesake distinction."
+          },
+          {
+            "url": "https://www.stu.edu/business/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Exact Gus Machado College of Business and St. Thomas University Miami identity read; actual college offers MBA and programmes, no compound subject department named in opened page."
+          },
+          {
+            "url": "https://www.stu.edu/program/dba/business-administration/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Exact Doctor of Business Administration read, 60 credits, applied scholar-practitioner research, Management/Sports Administration/Cyber Security specializations. Action research, dissertation or journal articles are alternatives. DBA retained as DBA and not converted into PhD; no qualifying Ops specialization."
+          },
+          {
+            "url": "https://www.stu.edu/program/phd/ethical-leadership-online/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Actual Doctor of Philosophy in Ethical Leadership programme read, specializations Criminal Justice and Higher Education. Generic organizational effectiveness and leadership are not an Ops/IE field."
+          },
+          {
+            "url": "https://online.stu.edu/degrees/business/mba/supply-chain-management/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "University-linked official online MBA Supply Chain Management page read: 30 credits and 12 specialization credits, explicitly logistics, operations management, import/export and supply value-chain optimization. Formal specialization establishes substantive college scope beyond a single general core course. Partner-maintained page states STU retains academic/curriculum responsibility."
+          }
+        ],
+        "limitations": [
+          "Current programme inventory scope only, not historical absence.",
+          "DBA is an actual applied doctorate with research alternatives; exact credential preserved separately, not silently treated as PhD."
+        ],
+        "coverageComplete": true
+      },
+      "addedAt": "2026-10-22T10:56:12Z",
+      "updatedAt": "2026-10-22T10:56:12Z"
     },
     {
       "id": "stanford-gsb",
@@ -56308,12 +57231,13 @@
       "universitySourceUrl": "https://umanitoba.ca/asper/department-supply-chain-management",
       "status": "reviewed",
       "addedAt": "2026-10-20T11:00:16Z",
-      "updatedAt": "2026-10-22T10:27:31Z",
+      "updatedAt": "2026-10-22T10:56:12Z",
       "doctoralReview": {
         "status": "verified",
         "checkedAt": "2026-10-22",
         "programmeIds": [
-          "university-of-manitoba--management-phd-supply-chain-management"
+          "university-of-manitoba--management-phd-supply-chain-management",
+          "university-of-manitoba--mechanical-engineering-phd-manufacturing-production"
         ],
         "branches": [
           {
@@ -56328,7 +57252,7 @@
           {
             "branch": "engineering",
             "reviewState": "partial",
-            "conclusion": "Exact Mechanical Engineering PhD, advisor-entry pathway and all five research area titles read; expanded department Manufacturing/Production group includes planning/design/operation of production, service and socio-technical systems. Eligibility as additional IE/OM doctoral field remains adjudication because exact PhD research title is Manufacturing and Production rather than explicitly IE/OM. No additional degree asserted from generic manufacturing title.",
+            "conclusion": "Exact Mechanical Engineering PhD and named Manufacturing and Production doctoral research area verified; actual expanded department field definition explicitly includes planning/design/operation of production, service and socio-technical systems. This supports substantive IE/OM doctoral scope under source-bounded policy, not generic manufacturing inference. Wider engineering/mathematical doctoral inventories remain incomplete.",
             "sourceUrls": [
               "https://umanitoba.ca/engineering/mechanical",
               "https://umanitoba.ca/explore/programs-of-study/mechanical-engineering-phd"
@@ -56362,7 +57286,8 @@
           }
         ],
         "limitations": [
-          "One explicit SCM route verified. Manufacturing/Production research eligibility and wider engineering/mathematical inventories remain incomplete; no complete university census claimed. Existing reviewed units retain their earlier check dates."
+          "Existing Management PhD SCM route and its dates/facts preserved. One additional Mechanical Engineering PhD research pathway verified from explicit doctorate-to-field composition; no strict literal IE diploma title required.",
+          "Wider engineering and mathematical doctoral inventory coverage remains incomplete. Existing unit identities and earlier check dates preserved."
         ],
         "coverageComplete": false
       }
@@ -58578,7 +59503,100 @@
         "Engineering academic inventory was examined; it did not establish an additional industrial engineering or operations unit. This does not prove absence of individual research."
       ],
       "addedAt": "2026-10-21T06:57:04Z",
-      "updatedAt": "2026-10-21T06:57:04Z"
+      "updatedAt": "2026-10-22T10:56:12Z",
+      "doctoralReview": {
+        "status": "partial",
+        "checkedAt": "2026-10-22",
+        "programmeIds": [],
+        "branches": [
+          {
+            "branch": "business",
+            "reviewState": "checked",
+            "conclusion": "Complete 2026–27 university programme inventory read: Bloch Management graduate entries are masters/certificates, no current business doctorate listed. Undergraduate SCM emphasis and graduate analytics methods not promoted to doctoral eligibility.",
+            "sourceUrls": [
+              "https://catalog.umkc.edu/academic-programs/"
+            ]
+          },
+          {
+            "branch": "engineering",
+            "reviewState": "partial",
+            "conclusion": "Full current Civil, Mechanical, Computer Science, Electrical and Computer Engineering PhD requirements read. Mechanical includes generic Manufacturing topic and Manufacturing Management course; Civil includes Construction with scheduling/project management coursework. These do not alone establish substantive Ops/IE doctoral research field. Department overview retains older interdisciplinary-entry wording despite current named PhD links; central old interdisciplinary programme explicitly no longer accepting applications. Specific manufacturing/production or construction operations research definition remains unverified.",
+            "sourceUrls": [
+              "https://catalog.umkc.edu/academic-programs/",
+              "https://catalog.umkc.edu/colleges-schools/graduate-studies/interdisciplinary-phd-program/",
+              "https://catalog.umkc.edu/colleges-schools/science-engineering/mechanical-engineering/doctor-of-philosophy-mechanical-engineering/",
+              "https://catalog.umkc.edu/colleges-schools/science-engineering/civil-engineering/doctor-of-philosophy-civil-engineering/",
+              "https://catalog.umkc.edu/colleges-schools/science-engineering/computer-science/doctor-of-philosophy-computer-science/",
+              "https://catalog.umkc.edu/colleges-schools/science-engineering/electrical-computer-engineering/doctor-of-philosophy-electrical-computer-engineering/",
+              "https://catalog.umkc.edu/colleges-schools/science-engineering/mechanical-engineering/"
+            ]
+          },
+          {
+            "branch": "mathematics",
+            "reviewState": "checked",
+            "conclusion": "Full current Natural Sciences PhD Mathematics primary/secondary discipline requirements read, mathematics and statistics focus. Optimization optional course does not establish distinct Operations Research doctoral field.",
+            "sourceUrls": [
+              "https://catalog.umkc.edu/colleges-schools/graduate-studies/mathematics/phd/"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://catalog.umkc.edu/academic-programs/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Complete current university academic programme degree table read in Chrome."
+          },
+          {
+            "url": "https://catalog.umkc.edu/colleges-schools/graduate-studies/interdisciplinary-phd-program/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full legacy Interdisciplinary PhD page read; no longer accepting applications and new discipline PhDs explicitly listed."
+          },
+          {
+            "url": "https://catalog.umkc.edu/colleges-schools/science-engineering/mechanical-engineering/doctor-of-philosophy-mechanical-engineering/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full visible current doctoral programme requirements and research/topic lists read in Chrome."
+          },
+          {
+            "url": "https://catalog.umkc.edu/colleges-schools/graduate-studies/mathematics/phd/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full visible current doctoral programme requirements and research/topic lists read in Chrome."
+          },
+          {
+            "url": "https://catalog.umkc.edu/colleges-schools/science-engineering/civil-engineering/doctor-of-philosophy-civil-engineering/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full visible current doctoral programme requirements and research/topic lists read in Chrome."
+          },
+          {
+            "url": "https://catalog.umkc.edu/colleges-schools/science-engineering/computer-science/doctor-of-philosophy-computer-science/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full visible current doctoral programme requirements and research/topic lists read in Chrome."
+          },
+          {
+            "url": "https://catalog.umkc.edu/colleges-schools/science-engineering/electrical-computer-engineering/doctor-of-philosophy-electrical-computer-engineering/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full visible current doctoral programme requirements and research/topic lists read in Chrome."
+          },
+          {
+            "url": "https://catalog.umkc.edu/colleges-schools/science-engineering/mechanical-engineering/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full Mechanical department overview read; older interdisciplinary language and current named PhD link conflict preserved."
+          }
+        ],
+        "limitations": [
+          "No qualifying programme verified yet; incomplete manufacturing/construction research-field definition retained explicitly. A doctorate title, generic engineering systems or methods course alone is insufficient.",
+          "Current named engineering PhD programmes and legacy interdisciplinary admission closure kept distinct; old departmental wording not silently reconciled into an invented transition date.",
+          "Existing official university/unit review and dates preserved; no individual faculty or graduate career research."
+        ],
+        "coverageComplete": false
+      }
     },
     {
       "decisions": [
@@ -58789,7 +59807,88 @@
         "Engineering inventory did not establish an additional in-scope unit; mechanical manufacturing alone does not establish industrial engineering."
       ],
       "addedAt": "2026-10-21T06:57:04Z",
-      "updatedAt": "2026-10-21T06:57:04Z"
+      "updatedAt": "2026-10-22T10:56:12Z",
+      "doctoralReview": {
+        "status": "verified",
+        "checkedAt": "2026-10-22",
+        "programmeIds": [
+          "university-of-missouri-st-louis--business-administration-phd-supply-chain-analytics"
+        ],
+        "branches": [
+          {
+            "branch": "business",
+            "reviewState": "checked",
+            "conclusion": "Current complete A–Z programme navigation read, relevant business PhD explicitly verified. Separate DBA full requirements read: experienced-management doctorate and dissertation, not converted to PhD or counted as additional named Ops specialization.",
+            "sourceUrls": [
+              "https://bulletin.umsl.edu/programs/business-administration-phd-supply-chain-and-analytics-emphasis/",
+              "https://www.umsl.edu/business/departments/supply-chain/degrees/doctoral/overview.html",
+              "https://bulletin.umsl.edu/programs/business-dba/"
+            ]
+          },
+          {
+            "branch": "engineering",
+            "reviewState": "checked",
+            "conclusion": "Complete 2026–27 A–Z navigation lists Civil, Electrical and Mechanical engineering bachelor degrees and joint Washington University undergraduate programmes, no engineering doctorate. Existing engineering unit review preserved.",
+            "sourceUrls": [
+              "https://bulletin.umsl.edu/programs/business-administration-phd-supply-chain-and-analytics-emphasis/"
+            ]
+          },
+          {
+            "branch": "mathematics",
+            "reviewState": "partial",
+            "conclusion": "Mathematics and Statistics emphasis overviews explicitly stopped accepting applications effective Fall2021. Their requirements tabs could not be activated; no relevant historical OR field inferred. ComputerScience emphasis full current admission/research/dissertation requirements read, no explicit Ops/OR doctoral field established.",
+            "sourceUrls": [
+              "https://bulletin.umsl.edu/programs/mathematical-and-computational-science-phd-mathematics-emphasis/",
+              "https://bulletin.umsl.edu/programs/mathematical-and-computational-science-phd-statistics-emphasis/",
+              "https://bulletin.umsl.edu/programs/mathematical-and-computational-science-phd-computer-science-emphasis/"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://www.umsl.edu/business/departments/supply-chain/degrees/doctoral/overview.html",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full official department doctoral overview read in Chrome."
+          },
+          {
+            "url": "https://bulletin.umsl.edu/programs/business-administration-phd-supply-chain-and-analytics-emphasis/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full current programme requirements and complete A–Z programme navigation read in Chrome."
+          },
+          {
+            "url": "https://bulletin.umsl.edu/programs/mathematical-and-computational-science-phd-mathematics-emphasis/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Overview read; admissions-ended Fall2021 explicitly stated. Requirements not read."
+          },
+          {
+            "url": "https://bulletin.umsl.edu/programs/mathematical-and-computational-science-phd-statistics-emphasis/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Overview read; admissions-ended Fall2021 explicitly stated. Requirements not read."
+          },
+          {
+            "url": "https://bulletin.umsl.edu/programs/mathematical-and-computational-science-phd-computer-science-emphasis/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full visible programme requirements read in Chrome."
+          },
+          {
+            "url": "https://bulletin.umsl.edu/programs/business-dba/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full visible programme requirements read in Chrome."
+          }
+        ],
+        "limitations": [
+          "Current business route verified independently of remaining historical mathematics/statistics field scope. Coverage incomplete because requirements of the two admissions-ended mathematical doctoral emphases were not reviewed.",
+          "DBA kept distinct under standing credential scope; quantitative courses alone do not establish additional relevant doctoral field.",
+          "Existing official university/unit identities and prior check dates unchanged."
+        ],
+        "coverageComplete": false
+      }
     },
     {
       "id": "university-of-navarra",
@@ -59001,7 +60100,58 @@
         "Industrial Distribution retained through its actual departmental host, not mislabeled as an independent department or industrial engineering. Industrial Technology parent school not explicit on opened pages, so left null."
       ],
       "addedAt": "2026-10-21T06:57:04Z",
-      "updatedAt": "2026-10-21T06:57:04Z"
+      "updatedAt": "2026-10-22T10:56:12Z",
+      "doctoralReview": {
+        "status": "no-qualifying-programme-verified",
+        "checkedAt": "2026-10-22",
+        "programmeIds": [],
+        "branches": [
+          {
+            "branch": "business",
+            "reviewState": "checked",
+            "conclusion": "Current 2026–27 graduate departmental inventory explicitly offers graduate masters or specialist programmes, not doctoral degrees. Business Administration is listed among full graduate programmes; management and SCM departments may offer graduate coursework but not full graduate programmes according to this inventory. No doctoral eligibility inferred from departmental names.",
+            "sourceUrls": [
+              "https://www.unk.edu/academics/gradstudies/",
+              "https://catalog.unk.edu/graduate/",
+              "https://catalog.unk.edu/graduate/departments/"
+            ]
+          },
+          {
+            "branch": "engineering",
+            "reviewState": "checked",
+            "conclusion": "Complete current graduate inventory explicitly bounded to masters/specialist programmes. Industrial Technology and Cyber Systems appear in department navigation but not full graduate programme list; no university engineering doctorate verified. UNMC at UNK is separate affiliation, not an automatic UNK degree merge.",
+            "sourceUrls": [
+              "https://www.unk.edu/academics/gradstudies/",
+              "https://catalog.unk.edu/graduate/",
+              "https://catalog.unk.edu/graduate/departments/"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://www.unk.edu/academics/gradstudies/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full university Graduate Studies entry read in Chrome, more than30 graduate programmes and programme finder scope."
+          },
+          {
+            "url": "https://catalog.unk.edu/graduate/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full 2026–27 graduate catalogue entry read, edition/date and identity verified."
+          },
+          {
+            "url": "https://catalog.unk.edu/graduate/departments/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full current graduate department/programme inventory read, explicit masters or specialist scope and distinction between graduate coursework and full degree programmes."
+          }
+        ],
+        "limitations": [
+          "Source-bounded current published graduate provision checked; not historical absence or claim about courses/research methods. Existing university/unit identities and evidence dates preserved."
+        ],
+        "coverageComplete": true
+      }
     },
     {
       "id": "university-of-nebraska-at-omaha",
@@ -59072,7 +60222,63 @@
         "No separate Omaha industrial engineering unit established; engineering units linked from Omaha index belong to Nebraska-Lincoln. ISQA name alone is insufficient to verify operations research."
       ],
       "addedAt": "2026-10-21T06:57:04Z",
-      "updatedAt": "2026-10-21T06:57:04Z"
+      "updatedAt": "2026-10-22T10:56:12Z",
+      "doctoralReview": {
+        "status": "no-qualifying-programme-verified",
+        "checkedAt": "2026-10-22",
+        "programmeIds": [],
+        "branches": [
+          {
+            "branch": "business",
+            "reviewState": "checked",
+            "conclusion": "Complete current 2026–27 graduate inventory read. Business degrees are MBA variants/masters/certificates, Healthcare Logistics and SCM is MS, logistics/SCM also certificate; no business Operations/SCM doctorate listed. Joint MBA with UNMC professional doctorate is not standalone UNO research PhD.",
+            "sourceUrls": [
+              "https://catalog.unomaha.edu/graduate/degree-programs-certificates-minors/"
+            ]
+          },
+          {
+            "branch": "engineering",
+            "reviewState": "checked",
+            "conclusion": "Complete current graduate inventory and plausibly related Computing and Information Science PhD read, actual Concentrations tab opened: AI, Computing Systems, Human-Centered Computing, IT Project Management. Curricula concern computing/information systems and software/agile management, without explicit Operations/OR/IE doctoral research field. Biomechanics/Kinesiology doctorate explicitly movement/rehabilitation/physical activity research, not inferred industrial human factors. No other standalone engineering research doctorate listed.",
+            "sourceUrls": [
+              "https://catalog.unomaha.edu/graduate/degree-programs-certificates-minors/",
+              "https://catalog.unomaha.edu/graduate/degree-programs-certificates-minors/information-technology/information-technology-phd/",
+              "https://catalog.unomaha.edu/graduate/degree-programs-certificates-minors/exercise-science/"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://catalog.unomaha.edu/graduate/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "2026–27 Graduate Catalogue entry identity/edition read."
+          },
+          {
+            "url": "https://catalog.unomaha.edu/graduate/degree-programs-certificates-minors/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Complete current graduate degree, certificate and minor list read individually in Chrome."
+          },
+          {
+            "url": "https://catalog.unomaha.edu/graduate/degree-programs-certificates-minors/information-technology/information-technology-phd/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full overview and actual expanded Concentrations tab read: all four concentration curricula."
+          },
+          {
+            "url": "https://catalog.unomaha.edu/graduate/degree-programs-certificates-minors/exercise-science/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full current doctoral overview and all four concentration scope descriptions read."
+          }
+        ],
+        "limitations": [
+          "Source-bounded current doctoral inventory and plausibly relevant programme fields checked, not every unrelated faculty project or historical absence claim. Methods, computing and project management do not alone establish relevant Ops/OR/IE doctoral field.",
+          "UNO offering and UNMC joint professional degrees kept distinct; existing university/unit identity and dates unchanged."
+        ],
+        "coverageComplete": true
+      }
     },
     {
       "id": "university-of-nebraska-lincoln",
@@ -59224,7 +60430,101 @@
         "No relevant operations unit verified on examined business and engineering inventories; this does not establish that no individual undertakes operations research. Historical Managerial Sciences name not assigned a rename date."
       ],
       "addedAt": "2026-10-21T06:57:04Z",
-      "updatedAt": "2026-10-21T06:57:04Z"
+      "updatedAt": "2026-10-22T10:56:12Z",
+      "doctoralReview": {
+        "status": "partial",
+        "checkedAt": "2026-10-22",
+        "programmeIds": [],
+        "branches": [
+          {
+            "branch": "business",
+            "reviewState": "partial",
+            "conclusion": "Complete current doctoral list and actual Management/Information Systems panels read. Management PhD full programme gives OB, strategy, entrepreneurship and behavioral decision-making concentrations, not Ops/OR inferred from judgment/game theory methods. Information Systems current degree/admissions verified but substantive research-field provision still unreviewed.",
+            "sourceUrls": [
+              "https://www.unr.edu/degrees/doctoral",
+              "https://www.unr.edu/business/degree-programs/business-administration/phd-management"
+            ]
+          },
+          {
+            "branch": "engineering",
+            "reviewState": "partial",
+            "conclusion": "Complete current doctoral inventory and full Mechanical PhD requirements read. Actual Design and Manufacturing research page describes fabrication/material processes, not production/service operations management. Mineral Resource doctoral admissions panel actually expanded: geotechnical specializations with dissertation topics including materials handling and mine design; no explicit OR field verified. Remaining plausible engineering research fields not yet fully checked. Incidental new school-head title includes Industrial but not treated as doctorate proof.",
+            "sourceUrls": [
+              "https://www.unr.edu/degrees/doctoral",
+              "https://www.unr.edu/me/graduate-programs/mechanical-engineering",
+              "https://www.unr.edu/me/research",
+              "https://www.unr.edu/me/research/me-research-design-and-manufacturing",
+              "https://www.unr.edu/mining/graduate/graduate-admissions"
+            ]
+          },
+          {
+            "branch": "mathematics",
+            "reviewState": "partial",
+            "conclusion": "Current mathematics doctoral admissions panel read; linked HTML handbook explicitly old 2021–22 at landing and 2022–23 programme-description chapter. Broad independent mathematics research described, no OR field verified. Historical handbook not relabelled as current field inventory. Statistics and Data Science research scope remains unreviewed.",
+            "sourceUrls": [
+              "https://www.unr.edu/degrees/doctoral",
+              "https://www.unr.edu/math/graduate/phd-in-mathematics-graduate-handbook",
+              "https://www.unr.edu/math/graduate/phd-in-mathematics-graduate-handbook/program-description"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://www.unr.edu/degrees/doctoral",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full current doctoral list and actual expanded Mathematics, Management, Information Systems and Mechanical admissions panels read in Chrome."
+          },
+          {
+            "url": "https://www.unr.edu/business/degree-programs/business-administration/phd-management",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full current visible programme/research page read in Chrome."
+          },
+          {
+            "url": "https://www.unr.edu/math/graduate/phd-in-mathematics-graduate-handbook",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full HTML handbook contents read, landing explicitly 2021–22 only."
+          },
+          {
+            "url": "https://www.unr.edu/math/graduate/phd-in-mathematics-graduate-handbook/program-description",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full programme description read, chapter explicitly 2022–23 only; not represented as current."
+          },
+          {
+            "url": "https://www.unr.edu/me/graduate-programs/mechanical-engineering",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full current visible programme/research page read in Chrome."
+          },
+          {
+            "url": "https://www.unr.edu/me/research",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full current visible programme/research page read in Chrome."
+          },
+          {
+            "url": "https://www.unr.edu/me/research/me-research-design-and-manufacturing",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full current visible programme/research page read in Chrome."
+          },
+          {
+            "url": "https://www.unr.edu/mining/graduate/graduate-admissions",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full admissions page and actually expanded Mineral Resource Engineering PhD specializations/dissertation field panel read."
+          }
+        ],
+        "limitations": [
+          "No qualifying Ops/OR/IE doctoral route verified in examined fields; current IS, statistics and wider engineering research scope remains incomplete.",
+          "Exact University of Nevada, Reno identity retained from existing reviewed record; no Las Vegas campus merge. Existing university/unit facts and dates preserved.",
+          "Old mathematics handbook date discrepancies and mineral panel geo-engineering wording preserved as source limitations, not silently resolved."
+        ],
+        "coverageComplete": false
+      }
     },
     {
       "id": "university-of-nevada-las-vegas",
@@ -67992,7 +69292,50 @@
       ],
       "duplicateOf": null,
       "addedAt": "2026-10-21T07:40:08Z",
-      "updatedAt": "2026-10-21T07:40:08Z"
+      "updatedAt": "2026-10-22T10:56:12Z",
+      "doctoralReview": {
+        "status": "no-qualifying-programme-verified",
+        "checkedAt": "2026-10-22",
+        "programmeIds": [],
+        "branches": [
+          {
+            "branch": "business",
+            "reviewState": "checked",
+            "conclusion": "Official current institutional description explicitly limits awards to two-year transfer/occupational degrees, occupational certificates and one Business Management BAS. Full academic cluster inventory read; no doctorate provision.",
+            "sourceUrls": [
+              "https://www.westernwyoming.edu/about/index.php",
+              "https://www.westernwyoming.edu/academics/major-programs/index.php"
+            ]
+          },
+          {
+            "branch": "engineering",
+            "reviewState": "checked",
+            "conclusion": "Official current institutional description explicitly limits awards to two-year transfer/occupational degrees, occupational certificates and one Business Management BAS. Full academic cluster inventory read; no doctorate provision.",
+            "sourceUrls": [
+              "https://www.westernwyoming.edu/about/index.php",
+              "https://www.westernwyoming.edu/academics/major-programs/index.php"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://www.westernwyoming.edu/about/index.php",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full About Western page read in Chrome: public two-year college, degree levels explicitly enumerated including new Business Management BAS. No graduate or doctoral degree included."
+          },
+          {
+            "url": "https://www.westernwyoming.edu/academics/major-programs/index.php",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full six-cluster academic inventory read; degree-level statement verified on linked About page."
+          }
+        ],
+        "limitations": [
+          "Current stated programme inventory only, not historical absence. Existing unit evidence and its dates retained."
+        ],
+        "coverageComplete": true
+      }
     },
     {
       "id": "westfield-state-university",
@@ -68608,7 +69951,49 @@
       ],
       "duplicateOf": null,
       "addedAt": "2026-10-20T11:00:16Z",
-      "updatedAt": "2026-10-20T11:00:16Z"
+      "updatedAt": "2026-10-22T10:56:12Z",
+      "doctoralReview": {
+        "status": "no-qualifying-programme-verified",
+        "checkedAt": "2026-10-22",
+        "programmeIds": [],
+        "branches": [
+          {
+            "branch": "business",
+            "reviewState": "checked",
+            "conclusion": "Full current graduate inventory describes MBA and Master of Accounting only for business; no business doctorate listed.",
+            "sourceUrls": [
+              "https://www.wingate.edu/academics/graduate"
+            ]
+          },
+          {
+            "branch": "engineering",
+            "reviewState": "checked",
+            "conclusion": "Complete academic school and graduate programme inventories read. Listed doctorates are education and professional health awards; no engineering or related Operations doctorate listed.",
+            "sourceUrls": [
+              "https://www.wingate.edu/academics",
+              "https://www.wingate.edu/academics/graduate"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://www.wingate.edu/academics",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Entire academic school inventory read in Chrome, including business two master degrees, education doctoral provision, health professional doctorates and undergraduate arts/sciences."
+          },
+          {
+            "url": "https://www.wingate.edu/academics/graduate",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Entire graduate inventory read through official Explore Degrees link: business and sport management masters, education doctorates, DMSc, DPT, OTD and PharmD; no relevant research doctorate listed."
+          }
+        ],
+        "limitations": [
+          "Current stated programme inventory only, not historical absence. Existing unit evidence and its dates retained."
+        ],
+        "coverageComplete": true
+      }
     },
     {
       "id": "winona-state-university",
