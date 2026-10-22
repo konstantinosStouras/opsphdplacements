@@ -1,6 +1,6 @@
 # Stage 1 continuation 5 — 22 October 2026
 
-Four new current doctoral routes at three additional providers: Copenhagen Business School Operations Management, Lingnan University Business Operations Management and Data Science OR/logistics, and UC Riverside Business Administration Operations Management. Current register: 301 records, 293 verified relevant routes, 178 providers. Publication pending final deployment confirmation.
+Four new current doctoral routes at three additional providers: Copenhagen Business School Operations Management, Lingnan University Business Operations Management and Data Science OR/logistics, and UC Riverside Business Administration Operations Management. Current register: 301 records, 293 verified relevant routes, 178 providers. Published in commit 0fa4b37; final deployment verification below.
 
 CBS current eleven-department doctoral inventory is complete for stated scope after the previously unavailable site became readable. Alaska Anchorage, La Salle Philadelphia, Lake Erie College and Le Moyne have completed current published graduate/doctoral inventory checks with no qualifying programme verified. These findings are bounded to the inventories and dates, not historical absence claims. Collaborative doctoral participation does not automatically establish the local institution as awarder.
 
@@ -15,3 +15,7 @@ Validation: 39 tests, all public validators, four schema tests and SQLite rebuil
 Portable proposals and exact reviewed hashes are in release-2026-10-22-continuation-5.json; integrate-continuation-5.mjs is a dated construction record, not a general refresh. All ready proposals were frozen after ownership handoff. Southern Indiana's unrelated unreadable modified proposal is preserved and excluded from this release.
 
 Research stopped at an actual Chrome extension-window block while opening the official IIM Ahmedabad brochure. Its cover/partial rendering and Erasmus navigation/body timeouts are saved only in continuation-5/shard-a/source-limitations.json. No IIM or Erasmus route was inferred or source-check date refreshed. Agent A's source tab was marked for user handoff because even closing it was blocked. Other researchers closed completed tabs. Automation remains paused; Stages 2–4 remain held. Next step after the Chrome handoff: resume remaining official doctoral branch checks and source reconciliation under the frozen ownership assignments.
+
+## Publication confirmed
+
+Commit 0fa4b37ce29583788b6b3089c755aca5a8d0c5d3 was pushed to main and the research branch. GitHub Pages run 39740275037 succeeded, including clean build, tests and deployment. The live site confirms 293 routes at 178 providers and Lingnan two routes, with expanded programme evidence passing the visitor text/link audit. Local 390px mobile preview had equal 375px document client/scroll widths. The public site was checked after fresh data finished loading. Exact release files are listed in the manifest.
