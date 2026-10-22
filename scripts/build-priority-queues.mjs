@@ -29,7 +29,7 @@ if(process.argv.includes('--refresh-source-catalogue')){
  for(const r of schools.records)observations.push({source:'omlist-schools',sourceRecordId:r.sourceId,name:r.name,department:r.departmentAsListed,countryAsListed:r.countryAsListed,sourceUrl:r.sourceUrl});
  save('source-catalogue-2026-10-21.json',{asOf:'2026-10-21',state:'discovery-only',sources,observations,limitation:'Source reconciliation and live-overlay coverage are incomplete. No observation verifies a university name or operations unit.'});
 }
-const catalogueFiles=['source-catalogue-2026-10-21.json','source-catalogue-live-2026-10-21.json'].filter(file=>fs.existsSync(path.join(dir,file)));
+const catalogueFiles=['source-catalogue-2026-10-21.json','source-catalogue-live-2026-10-21.json','source-catalogue-official-expansion-2026-10-22.json'].filter(file=>fs.existsSync(path.join(dir,file)));
 const catalogue={observations:catalogueFiles.flatMap(file=>read('research-handoff/priorities/'+file).observations)};
 const universities=read('data/universities.json'),reviews=read('data/university-reviews.json');
 const grouped=universityRows(universities.records,reviews.records),byName=new Map();

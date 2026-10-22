@@ -3,9 +3,9 @@
  "metadata": {
   "source": "https://www.operationsacademia.org/data/directory.json",
   "retrievedAt": "2026-10-16",
-  "rowCount": 1162,
-  "universityCount": 665,
-  "departmentCount": 1162,
+  "rowCount": 1163,
+  "universityCount": 666,
+  "departmentCount": 1163,
   "countries": 44,
   "definition": "Universities, schools and departments that do Operations, as listed in the Operations Academia directory. Listing in the directory does not establish that a university awards a doctorate in the field; doctoral provision is recorded separately in data/doctoral-programs.json.",
   "note": "The directory file is the committed source of truth of the Operations Academia site; corrections made by signed-in users are overlaid there at read time and are not included here. Directory names that differ only in accents, punctuation, spacing or case are one university (\"spellings\" lists the variants). Links to the people database: \"exact\" is the same name after normalising spelling, \"wikidata\" is the same Wikidata item matched independently for both names, \"campus-qualifier\" is a people-database name equal to the directory name plus a campus qualifier (at Ann Arbor, College Park). Unmatched universities are not linked.",
@@ -20,8 +20,8 @@
   "originalImportedUniversityCount": 645,
   "originalImportedDepartmentCount": 1133,
   "originalImportedRowCount": 1133,
-  "sourceAdditions": 20,
-  "sourceAdditionNote": "Additional discovery assertions from frozen OM List and Operations Academia public sources. Original imported records remain intact. Official names, eligibility and alias decisions require the separate review overlay."
+  "sourceAdditions": 21,
+  "sourceAdditionNote": "Additional discovery assertions from frozen OM List, Operations Academia and individually read official institutional sources. Original imported records remain intact. Official names, eligibility and alias decisions require the separate review overlay."
  },
  "records": [
   {
@@ -42480,6 +42480,60 @@
    },
    "addedAt": "2026-10-21T11:02:27Z",
    "updatedAt": "2026-10-21T11:02:27Z"
+  },
+  {
+   "id": "university-of-new-haven-connecticut",
+   "name": "University of New Haven",
+   "country": "United States",
+   "departmentCount": 1,
+   "departments": [
+    {
+     "id": "university-of-new-haven-connecticut--official-campus-connecticut-main-campus-doctoral-programme",
+     "school": "Tagliatela College of Engineering",
+     "department": "Department of Mechanical and Industrial Engineering",
+     "type": null,
+     "country": "United States",
+     "facultyUrl": null,
+     "departmentUrl": null,
+     "address": null,
+     "sources": [
+      "official-campus"
+     ],
+     "postings": null,
+     "lastPosted": null,
+     "lat": null,
+     "lng": null,
+     "characteristics": null,
+     "sourceAssertion": {
+      "source": "official-campus",
+      "sourceRecordId": "connecticut-main-campus",
+      "layer": "doctoral-programme",
+      "sourceUrl": "https://www.newhaven.edu/engineering/graduate-programs/engineering-applied-science-phd/index.php",
+      "hidden": false
+     }
+    }
+   ],
+   "coords": null,
+   "directorySources": [
+    "official-campus"
+   ],
+   "wikidata": null,
+   "peopleDatabase": null,
+   "sources": [
+    {
+     "url": "https://www.newhaven.edu/engineering/graduate-programs/engineering-applied-science-phd/index.php",
+     "title": "Official campus discovery; doctoral and unit evidence reviewed separately",
+     "retrievedAt": "2026-10-22"
+    }
+   ],
+   "sourceAddition": {
+    "selection": "research-handoff/universities/add-new-haven-connecticut-2026-10-22.mjs",
+    "sourceCatalogue": "research-handoff/universities/continuation-15/shard-c/new-haven-connecticut.official-source-catalogue.json",
+    "retrievedAt": "2026-10-22",
+    "reason": "Imported Saudi country and Business/Digital Innovation school match Riyadh. Separate Connecticut offering verified, original Saudi row preserved."
+   },
+   "addedAt": "2026-10-22T11:07:23Z",
+   "updatedAt": "2026-10-22T11:07:23Z"
   }
  ]
 }

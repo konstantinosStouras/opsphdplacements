@@ -15,9 +15,19 @@
 // Usage: node scripts/build-entities.mjs   (after build-institutions.mjs and import-operations-academia.mjs)
 import fs from 'node:fs';
 import path from 'node:path';
+import assert from 'node:assert/strict';
 const root = path.resolve(import.meta.dirname, '..');
 const read = f => (fs.existsSync(path.join(root, f)) ? JSON.parse(fs.readFileSync(path.join(root, f), 'utf8')) : null);
 const institutions = read('data/institutions.json').records, universities = read('data/universities.json').records, employers = read('data/employers.json').records, programs = read('data/doctoral-programs.json').records;
+const campusDecisions = new Map();
+for (const d of read('research-handoff/priorities/entity-campus-reconciliations.json')?.records || []) {
+  const u = universities.find(u => u.id === d.universityId);
+  const r = read('data/university-reviews.json').records.find(r => r.id === d.universityId);
+  assert(u && r?.canonicalName === d.canonicalName && u.country === d.country && d.reason, 'Invalid campus entity decision');
+  assert(r.sources.some(s => s.url === d.sourceUrl && s.checkedAt === d.checkedAt && s.outcome === 'read'), 'Campus identity requires read official evidence');
+  assert(!campusDecisions.has(d.universityId), 'Duplicate campus decision');
+  campusDecisions.set(d.universityId, d);
+}
 const locationFiles = { institution: read('data/institution-locations.json'), university: read('data/university-locations.json'), employer: read('data/employer-locations.json') };
 const locByName = {}; for (const [kind, data] of Object.entries(locationFiles)) { locByName[kind] = new Map(); for (const r of data?.records || []) locByName[kind].set(r[kind], r); }
 const CATEGORIES = ['tenure-track', 'postdoc', 'teaching-track', 'other-academic', 'industry', 'government', 'nonprofit', 'unknown'];
@@ -29,7 +39,7 @@ const slug = s => s.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').repla
 const norm = s => s.replace(/\s*\([A-Z][A-Z&.\-]{1,9}\)\s*$/, '').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/&/g, ' and ').replace(/[’'`]/g, '').replace(/[^a-z0-9 ]/g, ' ').replace(/\b(the|of|at|and|in)\b/g, ' ').replace(/\s+/g, ' ').trim();
 
 const entities = [], byQid = new Map(), byAlias = new Map();
-const addAlias = (e, name) => { if (!name) return; if (!e.aliases.includes(name)) e.aliases.push(name); const n = norm(name); if (!byAlias.has(n)) byAlias.set(n, e); };
+const addAlias = (e, name) => { if (!name) return; if (!e.aliases.includes(name)) e.aliases.push(name); if(e.review.campusIdentity)return; const n = norm(name); if (!byAlias.has(n)) byAlias.set(n, e); };
 const newEntity = (name, qid) => {
   const e = { id: qid ? `wd:${qid}` : `name:${slug(name)}`, wikidata: qid || null, name, aliases: [], country: null, coords: null, logo: null, roles: [], people: null, directory: null, employer: null, programs: [], sources: [], review: { matches: [], conflicts: [] } };
   entities.push(e); if (qid) byQid.set(qid, e); addAlias(e, name);
@@ -75,7 +85,12 @@ for (const i of institutions) {
 // Database 1, directory universities: departments, attached by the import's link or a shared Wikidata item.
 for (const u of universities) {
   let e = null, match = null;
-  if (u.peopleDatabase) { e = entities.find(x => x.people?.institutions.some(i => i.institutionId === u.peopleDatabase.institutionId)); match = u.peopleDatabase.match; }
+  const campus = campusDecisions.get(u.id);
+  if (campus) {
+    e = {id:'campus:'+u.id,wikidata:null,name:campus.canonicalName,aliases:[],country:campus.country,coords:null,logo:null,roles:[],people:null,directory:null,employer:null,programs:[],sources:[],review:{matches:[],conflicts:[],campusIdentity:campus}};
+    entities.push(e);addAlias(e,campus.canonicalName);match='individually reviewed campus identity';
+  }
+  if (!e && u.peopleDatabase) { e = entities.find(x => x.people?.institutions.some(i => i.institutionId === u.peopleDatabase.institutionId)); match = u.peopleDatabase.match; }
   if (!e && u.wikidata && byQid.has(u.wikidata)) { e = byQid.get(u.wikidata); match = 'wikidata'; }
   if (!e) { e = find(u.name, null); if (e) match = 'exact'; }
   if (!e) e = newEntity((u.wikidata && firstLoc('university', u.spellings || [u.name])?.label) || u.name, u.wikidata); else if (match) e.review.matches.push({ source: 'directory', university: u.name, match });
@@ -86,7 +101,7 @@ for (const u of universities) {
   e.directory.universities.push({ id: u.id, name: u.name, spellings: u.spellings || [u.name], country: u.country, departmentCount: u.departmentCount, match: match || 'new' });
   for (const d of u.departments) e.directory.departments.push({ id: d.id, university: u.name, school: d.school, department: d.department, type: d.type, facultyUrl: d.facultyUrl, departmentUrl: d.departmentUrl });
   if (!e.country && u.country && !Array.isArray(u.country)) e.country = u.country;
-  place(e, firstLoc('university', u.spellings || [u.name]), u.coords);
+  if(!campus)place(e, firstLoc('university', u.spellings || [u.name]), u.coords);
   addSource(e, 'https://www.operationsacademia.org/universities', 'Operations Academia universities directory (universities database)');
   for (const s of u.sources) if (s.title.startsWith('Faculty page')) addSource(e, s.url, 'Faculty page listed in the directory');
 }

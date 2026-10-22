@@ -11,3 +11,5 @@ St John’s actual Business Analytics and Information Systems department identit
 Remaining material checks include Beirut Civil doctoral field mapping; Manitoba wider engineering/mathematical inventory; UMKC production/construction research scope; UMSL admissions-ended mathematics/statistics requirements; and Reno current IS, mathematical and wider engineering fields. Separate aliases share evidence without creating duplicate degrees.
 
 Validation: all 47 tests and public validators passed; all 326 prior programme records unchanged; static build completed. Source imports and people/career/graduate data unchanged. Continuation 15 is separate ongoing research. Stage 1 remains incomplete; Stages 2–4 and automation held.
+
+Publication confirmed: 35392b9382a26df6ed2d5996466abc660130c6a1 pushed to main and research branch; Pages run 39767206532 succeeded. Live 320 routes/196 providers and Sharjah entry verified. Research continues into continuation 15.

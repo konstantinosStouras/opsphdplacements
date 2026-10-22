@@ -1,13 +1,13 @@
 {
   "asOf": "2026-10-22",
   "phase": "active-source-reconciliation",
-  "publishedSourceRecords": 665,
+  "publishedSourceRecords": 666,
   "publishedReviewCounts": {
     "definition": "Individual Chrome reviews of official university names and operations units. The original directory remains in universities.json. Reviewed describes the stated source scope, not an exhaustive current or historical census.",
-    "sourceRecords": 665,
-    "attempted": 544,
+    "sourceRecords": 666,
+    "attempted": 545,
     "reviewed": 448,
-    "partial": 91,
+    "partial": 92,
     "blocked": 5,
     "pending": 121
   },
@@ -16,10 +16,11 @@
   "sourceCoverageGate": "Public compiled Operations Academia university/current-and-archived job files, public directory/archive corrections and all 202 OM List school rows frozen. Institutional identities and every additional unit assertion still require adjudication; candidate labels are not additional verified universities. No private/held submissions were accessed.",
   "sourceCatalogues": [
     "source-catalogue-2026-10-21.json",
-    "source-catalogue-live-2026-10-21.json"
+    "source-catalogue-live-2026-10-21.json",
+    "source-catalogue-official-expansion-2026-10-22.json"
   ],
   "unitAssertionStates": {
-    "accounted-for-by-existing-decision": 2679,
+    "accounted-for-by-existing-decision": 2680,
     "pending-source-reconciliation": 2177,
     "unresolved-existing-decision": 329,
     "accounted-for-by-individual-decision": 5,
@@ -109131,9 +109132,45 @@
           }
         }
       ]
+    },
+    {
+      "id": "official:university of new haven|united states",
+      "officialUnitComparison": "all-source-unit-assertions-accounted-for",
+      "sourceAssertions": [
+        {
+          "source": "official-campus",
+          "sourceRecordId": "connecticut-main-campus",
+          "schoolAsListed": "Tagliatela College of Engineering",
+          "departmentAsListed": "Department of Mechanical and Industrial Engineering",
+          "reconciliation": {
+            "state": "accounted-for-by-existing-decision",
+            "note": "Exact source school/department assertion already adjudicated; preserves prior evidence dates and does not reverify current provision.",
+            "priorDecisions": [
+              {
+                "universityId": "university-of-new-haven-connecticut",
+                "sourceDepartmentId": "university-of-new-haven-connecticut--official-campus-connecticut-main-campus-doctoral-programme",
+                "disposition": "replaced",
+                "unitIds": [
+                  "university-of-new-haven-connecticut--mechanical-industrial-engineering"
+                ],
+                "reason": "Exact current official department hosts relevant IE/operations education and lists broad PhD; source doctoral field not relabelled as separate department.",
+                "reviewCheckedAt": "2026-10-22",
+                "unitEvidence": [
+                  {
+                    "id": "university-of-new-haven-connecticut--mechanical-industrial-engineering",
+                    "sourceUrl": "https://newhaven.edu/engineering/academic-departments/mechanical-industrial-engineering/index.php",
+                    "checkedAt": "2026-10-22"
+                  }
+                ],
+                "evidenced": true
+              }
+            ]
+          }
+        }
+      ]
     }
   ],
-  "matchedObservations": 5395,
+  "matchedObservations": 5396,
   "excludedObservations": 6,
   "exclusions": [
     {
@@ -110321,6 +110358,11 @@
       "id": "valparaiso-university",
       "name": "Valparaiso University",
       "status": "pending"
+    },
+    {
+      "id": "university-of-new-haven-connecticut",
+      "name": "University of New Haven",
+      "status": "partial"
     }
   ],
   "candidates": []

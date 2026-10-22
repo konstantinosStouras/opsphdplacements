@@ -13,14 +13,14 @@
   ],
   "definition": "One record per organisation that appears in either database or the program register: the universities with operations departments (Operations Academia directory), the PhD institutions and first employers of the people in the OM List import, and the registered doctoral programs. Keyed by Wikidata item when known, otherwise by name. Parts that a source does not supply are null; nothing is inferred across sources. Where two source rows land on one entity, both rows stay listed under it and their figures are added.",
   "counts": {
-   "entities": 1022,
+   "entities": 1024,
    "withWikidata": 910,
    "phdInstitutions": 434,
-   "directoryUniversities": 607,
+   "directoryUniversities": 608,
    "firstEmployers": 493,
-   "withPrograms": 197,
+   "withPrograms": 200,
    "inBothDatabases": 210,
-   "directoryOnly": 326,
+   "directoryOnly": 328,
    "peopleOnly": 224,
    "conflicts": 0
   }
@@ -45855,7 +45855,8 @@
    "roles": [
     "phd-institution",
     "directory-university",
-    "first-employer"
+    "first-employer",
+    "program-register"
    ],
    "people": {
     "institutions": [
@@ -46003,7 +46004,19 @@
      }
     ]
    },
-   "programs": [],
+   "programs": [
+    {
+     "id": "naval-postgraduate-school--operations-research-phd-382",
+     "programName": "Operations Analysis PhD - Curriculum 382 (RES)",
+     "specialization": null,
+     "universityId": "naval-postgraduate-school",
+     "school": null,
+     "degree": "Doctor of Philosophy in Operations Research",
+     "field": "Operations Research",
+     "status": "active",
+     "statusAsOf": "2026-10-22"
+    }
+   ],
    "sources": [
     {
      "url": "https://omlist.edutool.org/phd/by-year.html",
@@ -46024,6 +46037,10 @@
     {
      "url": "data/placements.json",
      "title": "Verified first-job records (people database)"
+    },
+    {
+     "url": "data/doctoral-programs.json",
+     "title": "Historical doctoral program register"
     }
    ],
    "review": {
@@ -46047,12 +46064,17 @@
       "source": "employers",
       "employer": "Naval Postgraduate School, Graduate School of Business & Public Policy",
       "match": "wikidata"
+     },
+     {
+      "source": "programs",
+      "program": "naval-postgraduate-school--operations-research-phd-382",
+      "match": "exact"
      }
     ],
     "conflicts": []
    },
    "addedAt": "2026-10-16T13:49:36Z",
-   "updatedAt": "2026-10-20T08:28:39Z"
+   "updatedAt": "2026-10-22T11:07:23Z"
   },
   {
    "id": "wd:Q657222",
@@ -53690,7 +53712,8 @@
    "roles": [
     "phd-institution",
     "directory-university",
-    "first-employer"
+    "first-employer",
+    "program-register"
    ],
    "people": {
     "institutions": [
@@ -53807,7 +53830,19 @@
     ],
     "positions": []
    },
-   "programs": [],
+   "programs": [
+    {
+     "id": "northeastern-university--industrial-engineering-phd-boston",
+     "programName": "Industrial Engineering, PhD (Boston)",
+     "specialization": null,
+     "universityId": "northeastern-university",
+     "school": "College of Engineering",
+     "degree": "PhD",
+     "field": "Industrial Engineering",
+     "status": "active",
+     "statusAsOf": "2026-10-22"
+    }
+   ],
    "sources": [
     {
      "url": "https://omlist.edutool.org/phd/by-year.html",
@@ -53828,6 +53863,10 @@
     {
      "url": "data/placements.json",
      "title": "Verified first-job records (people database)"
+    },
+    {
+     "url": "data/doctoral-programs.json",
+     "title": "Historical doctoral program register"
     }
    ],
    "review": {
@@ -53841,12 +53880,17 @@
       "source": "employers",
       "employer": "Northeastern University",
       "match": "wikidata"
+     },
+     {
+      "source": "programs",
+      "program": "northeastern-university--industrial-engineering-phd-boston",
+      "match": "exact"
      }
     ],
     "conflicts": []
    },
    "addedAt": "2026-10-16T13:49:36Z",
-   "updatedAt": "2026-10-20T08:28:39Z"
+   "updatedAt": "2026-10-22T11:07:23Z"
   },
   {
    "id": "wd:Q1075148",
@@ -97615,22 +97659,108 @@
    "updatedAt": "2026-10-21T11:02:27Z"
   },
   {
-   "id": "wd:Q917899",
-   "wikidata": "Q917899",
+   "id": "campus:university-of-new-haven-connecticut",
+   "wikidata": null,
    "name": "University of New Haven",
    "aliases": [
-    "University of New Haven",
-    "University of New Haven (Department of Mechanical and Industrial Engineering)"
+    "University of New Haven"
    ],
-   "country": "Saudi Arabia",
-   "coords": [
-    41.292,
-    -72.962
-   ],
+   "country": "United States",
+   "coords": null,
    "logo": null,
    "roles": [
     "directory-university",
-    "first-employer"
+    "program-register"
+   ],
+   "people": null,
+   "directory": {
+    "universities": [
+     {
+      "id": "university-of-new-haven-connecticut",
+      "name": "University of New Haven",
+      "spellings": [
+       "University of New Haven"
+      ],
+      "country": "United States",
+      "departmentCount": 1,
+      "match": "individually reviewed campus identity"
+     }
+    ],
+    "departments": [
+     {
+      "id": "university-of-new-haven-connecticut--official-campus-connecticut-main-campus-doctoral-programme",
+      "university": "University of New Haven",
+      "school": "Tagliatela College of Engineering",
+      "department": "Department of Mechanical and Industrial Engineering",
+      "type": null,
+      "facultyUrl": null,
+      "departmentUrl": null
+     }
+    ]
+   },
+   "employer": null,
+   "programs": [
+    {
+     "id": "university-of-new-haven-connecticut--engineering-applied-science-phd-industrial-systems",
+     "programName": "PhD in Engineering and Applied Science",
+     "specialization": "Industrial and systems engineering research pathway",
+     "universityId": "university-of-new-haven-connecticut",
+     "school": "Tagliatela College of Engineering",
+     "degree": "PhD",
+     "field": "Industrial Engineering",
+     "status": "active",
+     "statusAsOf": "2026-10-22"
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://www.operationsacademia.org/universities",
+     "title": "Operations Academia universities directory (universities database)"
+    },
+    {
+     "url": "data/doctoral-programs.json",
+     "title": "Historical doctoral program register"
+    }
+   ],
+   "review": {
+    "matches": [
+     {
+      "source": "directory",
+      "university": "University of New Haven",
+      "match": "individually reviewed campus identity"
+     },
+     {
+      "source": "programs",
+      "program": "university-of-new-haven-connecticut--engineering-applied-science-phd-industrial-systems",
+      "match": "exact"
+     }
+    ],
+    "conflicts": [],
+    "campusIdentity": {
+     "universityId": "university-of-new-haven-connecticut",
+     "canonicalName": "University of New Haven",
+     "country": "United States",
+     "sourceUrl": "https://newhaven.edu/engineering/academic-departments/mechanical-industrial-engineering/index.php",
+     "checkedAt": "2026-10-22",
+     "reason": "Individually verified campus offering. Shared raw university name and imported Wikidata match must not merge Connecticut and Riyadh."
+    }
+   },
+   "addedAt": "2026-10-22T11:11:21Z",
+   "updatedAt": "2026-10-22T11:11:21Z"
+  },
+  {
+   "id": "campus:university-of-new-haven",
+   "wikidata": null,
+   "name": "University of New Haven – Riyadh",
+   "aliases": [
+    "University of New Haven – Riyadh",
+    "University of New Haven"
+   ],
+   "country": "Saudi Arabia",
+   "coords": null,
+   "logo": null,
+   "roles": [
+    "directory-university"
    ],
    "people": null,
    "directory": {
@@ -97643,7 +97773,7 @@
       ],
       "country": "Saudi Arabia",
       "departmentCount": 1,
-      "match": "new"
+      "match": "individually reviewed campus identity"
      }
     ],
     "departments": [
@@ -97658,66 +97788,34 @@
      }
     ]
    },
-   "employer": {
-    "employers": [
-     {
-      "employerId": "university-of-new-haven-department-of-mechanical-and-industrial-engineering",
-      "name": "University of New Haven (Department of Mechanical and Industrial Engineering)",
-      "spellings": [
-       "University of New Haven (Department of Mechanical and Industrial Engineering)"
-      ],
-      "verifiedFirstJobs": 1
-     }
-    ],
-    "verifiedFirstJobs": 1,
-    "firstCohort": 2022,
-    "lastCohort": 2022,
-    "firstJobTypes": {
-     "tenure-track": 0,
-     "postdoc": 0,
-     "teaching-track": 1,
-     "other-academic": 0,
-     "industry": 0,
-     "government": 0,
-     "nonprofit": 0,
-     "unknown": 0
-    },
-    "sourceInstitutions": [
-     {
-      "institution": "University of Texas at Arlington",
-      "count": 1
-     }
-    ],
-    "positions": [
-     {
-      "position": "Assistant Professor of Practice",
-      "count": 1
-     }
-    ]
-   },
+   "employer": null,
    "programs": [],
    "sources": [
     {
      "url": "https://www.operationsacademia.org/universities",
      "title": "Operations Academia universities directory (universities database)"
-    },
-    {
-     "url": "data/placements.json",
-     "title": "Verified first-job records (people database)"
     }
    ],
    "review": {
     "matches": [
      {
-      "source": "employers",
-      "employer": "University of New Haven (Department of Mechanical and Industrial Engineering)",
-      "match": "wikidata"
+      "source": "directory",
+      "university": "University of New Haven",
+      "match": "individually reviewed campus identity"
      }
     ],
-    "conflicts": []
+    "conflicts": [],
+    "campusIdentity": {
+     "universityId": "university-of-new-haven",
+     "canonicalName": "University of New Haven – Riyadh",
+     "country": "Saudi Arabia",
+     "sourceUrl": "https://sa.newhaven.edu/en/academics/college-of-business-and-digital-innovation/",
+     "checkedAt": "2026-10-21",
+     "reason": "Individually verified campus offering. Shared raw university name and imported Wikidata match must not merge Connecticut and Riyadh."
+    }
    },
-   "addedAt": "2026-10-16T13:49:36Z",
-   "updatedAt": "2026-10-20T08:28:39Z"
+   "addedAt": "2026-10-22T11:11:21Z",
+   "updatedAt": "2026-10-22T11:11:21Z"
   },
   {
    "id": "wd:Q1190812",
@@ -113586,6 +113684,76 @@
    },
    "addedAt": "2026-10-16T13:49:36Z",
    "updatedAt": "2026-10-20T08:28:39Z"
+  },
+  {
+   "id": "wd:Q917899",
+   "wikidata": "Q917899",
+   "name": "University of New Haven",
+   "aliases": [
+    "University of New Haven",
+    "University of New Haven (Department of Mechanical and Industrial Engineering)"
+   ],
+   "country": "United States",
+   "coords": [
+    41.292,
+    -72.962
+   ],
+   "logo": null,
+   "roles": [
+    "first-employer"
+   ],
+   "people": null,
+   "directory": null,
+   "employer": {
+    "employers": [
+     {
+      "employerId": "university-of-new-haven-department-of-mechanical-and-industrial-engineering",
+      "name": "University of New Haven (Department of Mechanical and Industrial Engineering)",
+      "spellings": [
+       "University of New Haven (Department of Mechanical and Industrial Engineering)"
+      ],
+      "verifiedFirstJobs": 1
+     }
+    ],
+    "verifiedFirstJobs": 1,
+    "firstCohort": 2022,
+    "lastCohort": 2022,
+    "firstJobTypes": {
+     "tenure-track": 0,
+     "postdoc": 0,
+     "teaching-track": 1,
+     "other-academic": 0,
+     "industry": 0,
+     "government": 0,
+     "nonprofit": 0,
+     "unknown": 0
+    },
+    "sourceInstitutions": [
+     {
+      "institution": "University of Texas at Arlington",
+      "count": 1
+     }
+    ],
+    "positions": [
+     {
+      "position": "Assistant Professor of Practice",
+      "count": 1
+     }
+    ]
+   },
+   "programs": [],
+   "sources": [
+    {
+     "url": "data/placements.json",
+     "title": "Verified first-job records (people database)"
+    }
+   ],
+   "review": {
+    "matches": [],
+    "conflicts": []
+   },
+   "addedAt": "2026-10-16T13:49:36Z",
+   "updatedAt": "2026-10-22T11:11:21Z"
   },
   {
    "id": "wd:Q10709746",
