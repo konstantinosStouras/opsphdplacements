@@ -1,0 +1,113 @@
+{
+  "id": "ferris-state-university",
+  "status": "partial",
+  "canonicalName": "Ferris State University",
+  "universitySourceUrl": "https://www.ferris.edu/colleges.htm",
+  "checkedAt": "2026-10-22",
+  "reviewer": "Codex in Chrome",
+  "units": [
+    {
+      "id": "ferris-state-university--management",
+      "name": "Management Department",
+      "school": "College of Business",
+      "type": "department",
+      "fields": [
+        "operations-management",
+        "supply-chain",
+        "logistics"
+      ],
+      "sourceUrl": "https://www.ferris.edu/business/operations-supply-management/homepage.htm",
+      "checkedAt": "2026-10-22",
+      "evidence": "The official Operations and Supply Chain Management bachelor programme identifies the Management Department as host. Its substantive curriculum concerns inventory, logistics, quality, process improvement and supply chain strategy; the Management department page separately lists the programme."
+    },
+    {
+      "id": "ferris-state-university--automation-mechanical-manufacturing-systems",
+      "name": "School of Automation, Mechanical & Manufacturing Systems",
+      "school": "College of Engineering Technology",
+      "type": "school",
+      "fields": [
+        "industrial-engineering",
+        "operations-management"
+      ],
+      "sourceUrl": "https://www.ferris.edu/CET/automation-mechanical-manufacturing/Manufacturing/mfge/homepage.htm",
+      "checkedAt": "2026-10-22",
+      "evidence": "The official Manufacturing Engineering Technology bachelor page explicitly identifies this school. Its production-system scope includes process design and analysis, planning, machine location, tool and part movement, sequencing and equipment selection across the total production process."
+    }
+  ],
+  "decisions": [
+    {
+      "sourceDepartmentId": "ferris-state-university____accountancy-finance-and-information-systems",
+      "disposition": "out-of-scope",
+      "unitIds": [],
+      "reason": "The official department exists under this expanded name, but its listed accountancy, finance, computing, AI, information security and project management programmes do not establish a substantive Operations unit. Operations and Supply Chain Management belongs to the separate Management Department."
+    },
+    {
+      "sourceDepartmentId": "ferris-state-university____da",
+      "disposition": "unresolved",
+      "unitIds": [],
+      "reason": "DA is not an expanded department label in the official business list. A Data Science and Analytics MS exists, but no official evidence establishes that this imported abbreviation identifies that programme or an Operations department."
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.ferris.edu/business/departments/index.htm",
+      "checkedAt": "2026-10-22",
+      "outcome": "read",
+      "note": "Read complete current business department list: Accountancy/Finance/Information Systems, Criminal Justice, Management, Marketing."
+    },
+    {
+      "url": "https://www.ferris.edu/business/departments/accountancy-finance-information-systems.htm",
+      "checkedAt": "2026-10-22",
+      "outcome": "read",
+      "note": "Read complete department page and all eight programme categories; no substantive Operations field established for this department."
+    },
+    {
+      "url": "https://www.ferris.edu/business/departments/management.htm",
+      "checkedAt": "2026-10-22",
+      "outcome": "read",
+      "note": "Read full Management Department page, including Operations and Supply Management programme host."
+    },
+    {
+      "url": "https://www.ferris.edu/business/operations-supply-management/homepage.htm",
+      "checkedAt": "2026-10-22",
+      "outcome": "read",
+      "note": "Read complete bachelor programme overview with explicit Management Department contact and substantive operations, logistics, inventory, quality and supply chain scope. Collapsed detailed course/faculty sections were not read."
+    },
+    {
+      "url": "https://www.ferris.edu/business/data-science-analytics-ms/homepage.htm",
+      "checkedAt": "2026-10-22",
+      "outcome": "read",
+      "note": "Read complete visible Data Science and Analytics MS overview and all three concentration options. This does not establish the expansion or organizational meaning of imported DA."
+    },
+    {
+      "url": "https://www.ferris.edu/graduatestudies/index.htm",
+      "checkedAt": "2026-10-22",
+      "outcome": "read",
+      "note": "Expanded both doctoral/professional and master degree panels; read every listed degree and level. Doctoral/professional options are Community College Leadership EdD, Nursing Practice DNP, Optometry OD and Pharmacy PharmD."
+    },
+    {
+      "url": "https://www.ferris.edu/colleges.htm",
+      "checkedAt": "2026-10-22",
+      "outcome": "read",
+      "note": "Read full university college inventory. Its engineering summary uses older school labels than the current manufacturing page; no succession dates inferred."
+    },
+    {
+      "url": "https://www.ferris.edu/CET/programs.htm",
+      "checkedAt": "2026-10-22",
+      "outcome": "read",
+      "note": "Waited for dynamic programme table to load, selected 100 entries, then read all 50 engineering programme titles and degree levels. All listed entries are undergraduate."
+    },
+    {
+      "url": "https://www.ferris.edu/CET/automation-mechanical-manufacturing/Manufacturing/mfge/homepage.htm",
+      "checkedAt": "2026-10-22",
+      "outcome": "read",
+      "note": "Read full Manufacturing Engineering Technology BS page, explicit School of Automation, Mechanical & Manufacturing Systems contact and substantive production process design, planning, machine location and work-flow decisions. Older 2020 labour-market projection is not treated as a current statistic."
+    }
+  ],
+  "limitations": [
+    "Imported DA remains unresolved; it is not silently expanded to Data Analytics or Data Science and Analytics.",
+    "The central college overview uses four older engineering school labels, whereas the current Manufacturing Engineering Technology page names the School of Automation, Mechanical & Manufacturing Systems. The directly stated host is preserved without inferring a historical rename date.",
+    "This review checks the imported business labels and current relevant business/engineering structures. It does not enumerate every individual interdisciplinary research project."
+  ],
+  "duplicateOf": null
+}

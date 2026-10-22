@@ -3,11 +3,11 @@
   "metadata": {
     "definition": "Individual Chrome reviews of official university names and operations units. The original directory remains in universities.json. Reviewed describes the stated source scope, not an exhaustive current or historical census.",
     "sourceRecords": 666,
-    "attempted": 552,
-    "reviewed": 453,
-    "partial": 94,
+    "attempted": 564,
+    "reviewed": 462,
+    "partial": 97,
     "blocked": 5,
-    "pending": 114
+    "pending": 102
   },
   "records": [
     {
@@ -18836,6 +18836,428 @@
       "updatedAt": "2026-10-21T11:14:34Z"
     },
     {
+      "id": "fairmont-state-university",
+      "status": "reviewed",
+      "canonicalName": "Fairmont State University",
+      "universitySourceUrl": "https://www.fairmontstate.edu/coba/default.aspx",
+      "checkedAt": "2026-10-22",
+      "reviewer": "Codex in Chrome",
+      "units": [
+        {
+          "id": "fairmont-state-university--engineering-technology",
+          "name": "Engineering Technology Department",
+          "school": "College of Science and Technology",
+          "type": "department",
+          "fields": [
+            "operations-management",
+            "supply-chain"
+          ],
+          "sourceUrl": "https://www.fairmontstate.edu/academics/programs/master-engineering-management.aspx",
+          "checkedAt": "2026-10-22",
+          "evidence": "The official Engineering Management master’s page explicitly identifies its department chair and teaches Operations and Systems Management, Quality Assurance and Process Improvement, Engineering Decision Analysis, and Operations & Supply Chain Management. The complete Science and Technology overview places Engineering Management in Engineering Technology. This establishes a relevant current department, not a doctoral programme."
+        }
+      ],
+      "decisions": [
+        {
+          "sourceDepartmentId": "fairmont-state-university____is",
+          "disposition": "out-of-scope",
+          "unitIds": [],
+          "reason": "The official Information Systems Management programme explicitly concerns computerized information systems, programming, analytics, cybersecurity and IT careers. No separately named Operations unit is established by the imported IS shorthand."
+        },
+        {
+          "sourceDepartmentId": "fairmont-state-university____it-management",
+          "disposition": "out-of-scope",
+          "unitIds": [],
+          "reason": "The imported IT Management wording does not establish a separate Operations department. Official Information Systems Management scope is IT/business systems; the independently verified Engineering Technology department is retained separately, not treated as an alias."
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.fairmontstate.edu/coba/default.aspx",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Read full business college overview, exact university and college identity, all undergraduate/graduate offerings."
+        },
+        {
+          "url": "https://www.fairmontstate.edu/academics/programs/information-systems-management.aspx",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Read full Information Systems Management page: award level, curricular areas, programme host context and named Marketing and Management chair. IS/IT application to business is not automatically Operations Research."
+        },
+        {
+          "url": "https://www.fairmontstate.edu/scitech/default.aspx",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Read all four academic department categories and all programmes; Engineering Management appears under Engineering Technology."
+        },
+        {
+          "url": "https://www.fairmontstate.edu/academics/programs/master-engineering-management.aspx",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Read full displayed Engineering Management master’s page, substantive operations/supply-chain/quality curriculum and exact Engineering Technology Department contact heading."
+        }
+      ],
+      "limitations": [
+        "The imported generic IS and IT Management labels are not expanded into invented departments. Engineering Technology is verified independently from official current evidence; no doctoral provision is inferred from the master’s programme."
+      ],
+      "duplicateOf": null,
+      "doctoralReview": {
+        "status": "no-qualifying-programme-verified",
+        "checkedAt": "2026-10-22",
+        "programmeIds": [],
+        "branches": [
+          {
+            "branch": "business",
+            "reviewState": "checked",
+            "conclusion": "The complete current all-programme inventory lists undergraduate, master’s, minor and graduate certificate provision. Business Administration and Healthcare Administration are master’s awards; no business doctorate is listed.",
+            "sourceUrls": [
+              "https://www.fairmontstate.edu/academics/programs/default.aspx"
+            ]
+          },
+          {
+            "branch": "engineering",
+            "reviewState": "checked",
+            "conclusion": "The full university inventory and complete Engineering Management description establish the relevant engineering programme as a 30-credit Master of Science with applied capstone. No engineering or other qualifying research doctorate is listed.",
+            "sourceUrls": [
+              "https://www.fairmontstate.edu/academics/programs/default.aspx",
+              "https://www.fairmontstate.edu/academics/programs/master-engineering-management.aspx"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://www.fairmontstate.edu/academics/programs/default.aspx",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Read the complete unfiltered alphabetic academic programme inventory and every displayed degree title/level from Accounting through Women’s and Gender Studies. No doctoral title is displayed."
+          },
+          {
+            "url": "https://www.fairmontstate.edu/academics/programs/master-engineering-management.aspx",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Read the full Engineering Management programme description, explicit master’s award, applied capstone and substantive operations/supply-chain curriculum. It is not a doctorate."
+          }
+        ],
+        "limitations": [
+          "The independently verified relevant Engineering Technology unit is retained in the unit register. This current degree-inventory observation does not establish historical doctorate absence or convert the master’s programme into doctoral eligibility."
+        ],
+        "coverageComplete": true
+      },
+      "addedAt": "2026-10-22T11:44:54Z",
+      "updatedAt": "2026-10-22T11:44:54Z"
+    },
+    {
+      "id": "fayetteville-state-university",
+      "status": "reviewed",
+      "canonicalName": "Fayetteville State University",
+      "universitySourceUrl": "https://www.uncfsu.edu/academics/colleges-schools-and-departments/broadwell-college-of-business-and-economics",
+      "checkedAt": "2026-10-22",
+      "reviewer": "Codex in Chrome",
+      "units": [
+        {
+          "id": "fayetteville-state-university--management-marketing-entrepreneurship-fire-emergency-services",
+          "name": "Department of Management, Marketing, Entrepreneurship, and Fire & Emergency Services Administration",
+          "school": "Broadwell College of Business and Economics",
+          "type": "department",
+          "fields": [
+            "supply-chain",
+            "logistics",
+            "operations-management"
+          ],
+          "sourceUrl": "https://www.uncfsu.edu/academics/colleges-schools-and-departments/broadwell-college-of-business-and-economics/department-of-management-marketing-entrepreneurship-and-fire-and-emergency-services-administration/supply-chain-management-and-technology-(bs)",
+          "checkedAt": "2026-10-22",
+          "evidence": "The official Supply Chain Management and Technology bachelor’s page and business college department list explicitly identify this department host. The programme teaches procurement, inventory, transport, distribution, logistics networks, operations planning and control, ERP systems and supply chain project management. The degree is not treated as a department."
+        }
+      ],
+      "decisions": [
+        {
+          "sourceDepartmentId": "fayetteville-state-university____supply-chain-management",
+          "disposition": "replaced",
+          "unitIds": [
+            "fayetteville-state-university--management-marketing-entrepreneurship-fire-emergency-services"
+          ],
+          "reason": "Supply Chain Management is an official bachelor’s programme hosted by the verified full department, not a separately named department."
+        },
+        {
+          "sourceDepartmentId": "fayetteville-state-university____isba",
+          "disposition": "out-of-scope",
+          "unitIds": [],
+          "reason": "Official Information Systems and Business Analytics is a B.S. programme in the Accounting, Finance, Healthcare Administration, and Information Systems department. Its full stated scope concerns information systems, analytics and databases; no separate qualifying Operations unit is established."
+        },
+        {
+          "sourceDepartmentId": "fayetteville-state-university____healthcare",
+          "disposition": "out-of-scope",
+          "unitIds": [],
+          "reason": "The official Healthcare Administration B.S. and Healthcare Management concentration are programmes in the combined Accounting/Finance/Healthcare/IS department. Generic healthcare management, systems thinking and quantitative business tools do not establish a substantive Operations unit."
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.uncfsu.edu/academics/colleges-schools-and-departments/broadwell-college-of-business-and-economics",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Read complete business college overview, current three-department list and all stated programme categories."
+        },
+        {
+          "url": "https://www.uncfsu.edu/academics/colleges-schools-and-departments/broadwell-college-of-business-and-economics/department-of-management-marketing-entrepreneurship-and-fire-and-emergency-services-administration/supply-chain-management-and-technology-(bs)",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Read full Supply Chain Management and Technology page, explicit full host heading/breadcrumb, substantive operations and logistics curriculum. Shorter department contact wording is retained as a page inconsistency, not a separate unit."
+        },
+        {
+          "url": "https://www.uncfsu.edu/academics/colleges-schools-and-departments/broadwell-college-of-business-and-economics/department-of-accounting-finance-healthcare-administration-and-information-systems/information-systems-and-business-analytics-(bs)",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Read full Information Systems and Business Analytics programme page, exact combined department host, degree and generic analytics/database scope."
+        },
+        {
+          "url": "https://www.uncfsu.edu/academics/colleges-schools-and-departments/broadwell-college-of-business-and-economics/department-of-accounting-finance-healthcare-administration-and-information-systems/healthcare-administration-(bs)",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Read full Healthcare Administration programme page and Healthcare Management concentration learning outcomes. Generic Healthcare Department prose differs from the explicit combined host; no separate department is invented."
+        },
+        {
+          "url": "https://www.uncfsu.edu/academics/colleges-schools-and-departments",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Read all four university college descriptions: Business and Economics, Education, Health/Science/Technology, Humanities/Social Sciences."
+        },
+        {
+          "url": "https://www.uncfsu.edu/academics/colleges-schools-and-departments/lloyd-college-of-health-science-and-technology",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Read full technical college overview and its four units: Biological/Forensic Sciences, Chemistry/Physics/Materials Science, Mathematics/Computer Science, Nursing. No separate Industrial Engineering unit is listed in this structure."
+        }
+      ],
+      "limitations": [
+        "Department headings and college navigation give the expanded Management/Marketing/Entrepreneurship/Fire/Emergency Services name; the programme contact section uses a shorter version. No historical rename date or separate organizational entity is inferred.",
+        "This is a bounded reconciliation of the imported labels and current business/technical structure, not a census of every interdisciplinary faculty research project."
+      ],
+      "duplicateOf": null,
+      "doctoralReview": {
+        "status": "no-qualifying-programme-verified",
+        "checkedAt": "2026-10-22",
+        "programmeIds": [],
+        "branches": [
+          {
+            "branch": "business",
+            "reviewState": "checked",
+            "conclusion": "Central graduate admissions explicitly states one doctoral programme and identifies it as Education. The complete business college overview lists undergraduate programmes, MBA concentrations and graduate certificates, with no business research doctorate.",
+            "sourceUrls": [
+              "https://www.uncfsu.edu/admission-and-aid/graduate-admissions",
+              "https://www.uncfsu.edu/academics/colleges-schools-and-departments/broadwell-college-of-business-and-economics"
+            ]
+          },
+          {
+            "branch": "engineering",
+            "reviewState": "checked",
+            "conclusion": "The central graduate overview identifies its sole doctorate as Education. The full technical college overview lists Biological/Forensic Sciences, Chemistry/Physics/Materials Science, Mathematics/Computer Science and Nursing units, without a separate qualifying engineering doctoral programme.",
+            "sourceUrls": [
+              "https://www.uncfsu.edu/admission-and-aid/graduate-admissions",
+              "https://www.uncfsu.edu/academics/colleges-schools-and-departments/lloyd-college-of-health-science-and-technology"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://www.uncfsu.edu/admission-and-aid/graduate-admissions",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Read the full central Graduate Admissions overview: explicit one doctoral programme, identified in its Doctoral section as Education for mid/senior-level administrators. Older fsu-admissions URL redirected here."
+          },
+          {
+            "url": "https://www.uncfsu.edu/academics/colleges-schools-and-departments/broadwell-college-of-business-and-economics",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Read full business college organisation, current programme categories, MBA concentrations and graduate certificate overview."
+          },
+          {
+            "url": "https://www.uncfsu.edu/academics/colleges-schools-and-departments/lloyd-college-of-health-science-and-technology",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Read full current technical college overview and all four academic unit categories."
+          }
+        ],
+        "limitations": [
+          "The observation is bounded by the current central graduate overview and official business/technical structures. It does not classify individual Education dissertations or establish historical programme absence."
+        ],
+        "coverageComplete": true
+      },
+      "addedAt": "2026-10-22T11:44:54Z",
+      "updatedAt": "2026-10-22T11:44:54Z"
+    },
+    {
+      "id": "ferris-state-university",
+      "status": "partial",
+      "canonicalName": "Ferris State University",
+      "universitySourceUrl": "https://www.ferris.edu/colleges.htm",
+      "checkedAt": "2026-10-22",
+      "reviewer": "Codex in Chrome",
+      "units": [
+        {
+          "id": "ferris-state-university--management",
+          "name": "Management Department",
+          "school": "College of Business",
+          "type": "department",
+          "fields": [
+            "operations-management",
+            "supply-chain",
+            "logistics"
+          ],
+          "sourceUrl": "https://www.ferris.edu/business/operations-supply-management/homepage.htm",
+          "checkedAt": "2026-10-22",
+          "evidence": "The official Operations and Supply Chain Management bachelor programme identifies the Management Department as host. Its substantive curriculum concerns inventory, logistics, quality, process improvement and supply chain strategy; the Management department page separately lists the programme."
+        },
+        {
+          "id": "ferris-state-university--automation-mechanical-manufacturing-systems",
+          "name": "School of Automation, Mechanical & Manufacturing Systems",
+          "school": "College of Engineering Technology",
+          "type": "school",
+          "fields": [
+            "industrial-engineering",
+            "operations-management"
+          ],
+          "sourceUrl": "https://www.ferris.edu/CET/automation-mechanical-manufacturing/Manufacturing/mfge/homepage.htm",
+          "checkedAt": "2026-10-22",
+          "evidence": "The official Manufacturing Engineering Technology bachelor page explicitly identifies this school. Its production-system scope includes process design and analysis, planning, machine location, tool and part movement, sequencing and equipment selection across the total production process."
+        }
+      ],
+      "decisions": [
+        {
+          "sourceDepartmentId": "ferris-state-university____accountancy-finance-and-information-systems",
+          "disposition": "out-of-scope",
+          "unitIds": [],
+          "reason": "The official department exists under this expanded name, but its listed accountancy, finance, computing, AI, information security and project management programmes do not establish a substantive Operations unit. Operations and Supply Chain Management belongs to the separate Management Department."
+        },
+        {
+          "sourceDepartmentId": "ferris-state-university____da",
+          "disposition": "unresolved",
+          "unitIds": [],
+          "reason": "DA is not an expanded department label in the official business list. A Data Science and Analytics MS exists, but no official evidence establishes that this imported abbreviation identifies that programme or an Operations department."
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.ferris.edu/business/departments/index.htm",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Read complete current business department list: Accountancy/Finance/Information Systems, Criminal Justice, Management, Marketing."
+        },
+        {
+          "url": "https://www.ferris.edu/business/departments/accountancy-finance-information-systems.htm",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Read complete department page and all eight programme categories; no substantive Operations field established for this department."
+        },
+        {
+          "url": "https://www.ferris.edu/business/departments/management.htm",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Read full Management Department page, including Operations and Supply Management programme host."
+        },
+        {
+          "url": "https://www.ferris.edu/business/operations-supply-management/homepage.htm",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Read complete bachelor programme overview with explicit Management Department contact and substantive operations, logistics, inventory, quality and supply chain scope. Collapsed detailed course/faculty sections were not read."
+        },
+        {
+          "url": "https://www.ferris.edu/business/data-science-analytics-ms/homepage.htm",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Read complete visible Data Science and Analytics MS overview and all three concentration options. This does not establish the expansion or organizational meaning of imported DA."
+        },
+        {
+          "url": "https://www.ferris.edu/graduatestudies/index.htm",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Expanded both doctoral/professional and master degree panels; read every listed degree and level. Doctoral/professional options are Community College Leadership EdD, Nursing Practice DNP, Optometry OD and Pharmacy PharmD."
+        },
+        {
+          "url": "https://www.ferris.edu/colleges.htm",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Read full university college inventory. Its engineering summary uses older school labels than the current manufacturing page; no succession dates inferred."
+        },
+        {
+          "url": "https://www.ferris.edu/CET/programs.htm",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Waited for dynamic programme table to load, selected 100 entries, then read all 50 engineering programme titles and degree levels. All listed entries are undergraduate."
+        },
+        {
+          "url": "https://www.ferris.edu/CET/automation-mechanical-manufacturing/Manufacturing/mfge/homepage.htm",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Read full Manufacturing Engineering Technology BS page, explicit School of Automation, Mechanical & Manufacturing Systems contact and substantive production process design, planning, machine location and work-flow decisions. Older 2020 labour-market projection is not treated as a current statistic."
+        }
+      ],
+      "limitations": [
+        "Imported DA remains unresolved; it is not silently expanded to Data Analytics or Data Science and Analytics.",
+        "The central college overview uses four older engineering school labels, whereas the current Manufacturing Engineering Technology page names the School of Automation, Mechanical & Manufacturing Systems. The directly stated host is preserved without inferring a historical rename date.",
+        "This review checks the imported business labels and current relevant business/engineering structures. It does not enumerate every individual interdisciplinary research project."
+      ],
+      "duplicateOf": null,
+      "doctoralReview": {
+        "status": "no-qualifying-programme-verified",
+        "checkedAt": "2026-10-22",
+        "programmeIds": [],
+        "branches": [
+          {
+            "branch": "business",
+            "reviewState": "checked",
+            "conclusion": "The full central doctoral/professional inventory lists four education/health professional degrees and no Operations business research doctorate. Management has an Operations and Supply Chain Management bachelor programme; Data Science and Analytics is an MS.",
+            "sourceUrls": [
+              "https://www.ferris.edu/graduatestudies/index.htm",
+              "https://www.ferris.edu/business/operations-supply-management/homepage.htm",
+              "https://www.ferris.edu/business/data-science-analytics-ms/homepage.htm"
+            ]
+          },
+          {
+            "branch": "engineering",
+            "reviewState": "checked",
+            "conclusion": "The complete central doctoral/professional inventory has no engineering research doctorate. All 50 entries in the loaded engineering programme table are undergraduate, including manufacturing, industrial technology and lean technology.",
+            "sourceUrls": [
+              "https://www.ferris.edu/graduatestudies/index.htm",
+              "https://www.ferris.edu/CET/programs.htm"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://www.ferris.edu/business/operations-supply-management/homepage.htm",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Read complete bachelor programme overview with explicit Management Department contact and substantive operations, logistics, inventory, quality and supply chain scope. Collapsed detailed course/faculty sections were not read."
+          },
+          {
+            "url": "https://www.ferris.edu/business/data-science-analytics-ms/homepage.htm",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Read complete visible Data Science and Analytics MS overview and all three concentration options. This does not establish the expansion or organizational meaning of imported DA."
+          },
+          {
+            "url": "https://www.ferris.edu/graduatestudies/index.htm",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Expanded both doctoral/professional and master degree panels; read every listed degree and level. Doctoral/professional options are Community College Leadership EdD, Nursing Practice DNP, Optometry OD and Pharmacy PharmD."
+          },
+          {
+            "url": "https://www.ferris.edu/CET/programs.htm",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Waited for dynamic programme table to load, selected 100 entries, then read all 50 engineering programme titles and degree levels. All listed entries are undergraduate."
+          }
+        ],
+        "limitations": [
+          "Current source-bounded doctoral coverage is complete independently of the unresolved imported DA organizational label. No historical absence or classification of individual education dissertations is claimed."
+        ],
+        "coverageComplete": true
+      },
+      "addedAt": "2026-10-22T11:44:54Z",
+      "updatedAt": "2026-10-22T11:44:54Z"
+    },
+    {
       "id": "fgv-eaesp",
       "status": "partial",
       "canonicalName": "Fundação Getulio Vargas",
@@ -18990,6 +19412,311 @@
       },
       "addedAt": "2026-10-21T11:14:34Z",
       "updatedAt": "2026-10-21T21:55:18Z"
+    },
+    {
+      "id": "fisher-college",
+      "status": "partial",
+      "canonicalName": "Fisher College",
+      "universitySourceUrl": "https://www.fisher.edu/academics/undergraduate-programs/bs-in-management",
+      "checkedAt": "2026-10-22",
+      "reviewer": "Codex in Chrome",
+      "units": [],
+      "decisions": [
+        {
+          "sourceDepartmentId": "fisher-college____om",
+          "disposition": "unresolved",
+          "unitIds": [],
+          "reason": "Boston Fisher College explicitly teaches MG335 Operations Management within a Management BS, but no organizational Operations unit or definitive identity match for the imported job is established. The exact original job requires human verification to reveal the deleted content."
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.fisher.edu/academics/undergraduate-programs/bs-in-management",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Read complete Boston Fisher College Management BS overview and expanded full Programme Courses panel. Explicit MG335 Operations Management is a course; no separately named Operations department established."
+        },
+        {
+          "url": "https://www.fisher.edu/academics/graduate-programs",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Read complete unfiltered graduate programme inventory and all degree levels: eleven cards comprising masters, MBA concentrations and graduate certificate; no research doctorate listed."
+        },
+        {
+          "url": "https://www.higheredjobs.com/faculty/details.cfm?JobCode=179388754&Title=Assistant%20Professor%20-%20Management",
+          "checkedAt": "2026-10-22",
+          "outcome": "blocked",
+          "note": "Officially linked original job destination opened. Visible title Assistant Professor - Management and deleted 2026-05-23 notice; page explicitly requires reCAPTCHA to view deleted content. No challenge interaction or bypass; employer identity remains unread."
+        }
+      ],
+      "limitations": [
+        "The source job employer identity cannot be verified from the deleted job content. Boston Fisher College and Ohio State University Fisher College of Business are not merged. The imported Boston Wikidata association is discovery, not verification of this source job.",
+        "Boston Fisher College programme facts are recorded as scoped candidate observations, not evidence that the imported OM assertion belongs to that institution."
+      ],
+      "duplicateOf": null,
+      "doctoralReview": {
+        "status": "partial",
+        "checkedAt": "2026-10-22",
+        "programmeIds": [],
+        "branches": [
+          {
+            "branch": "business",
+            "reviewState": "partial",
+            "conclusion": "The Boston Fisher College full current graduate inventory contains only masters and graduate certificate offerings, and Management is a BS. However the source employer identity remains unresolved, so these candidate facts cannot close the imported university doctoral gate.",
+            "sourceUrls": [
+              "https://www.fisher.edu/academics/undergraduate-programs/bs-in-management",
+              "https://www.fisher.edu/academics/graduate-programs"
+            ]
+          },
+          {
+            "branch": "engineering",
+            "reviewState": "partial",
+            "conclusion": "No engineering doctorate appears in the complete Boston candidate graduate inventory. Source institution identity must be established before attributing a complete engineering disposition to this imported label.",
+            "sourceUrls": [
+              "https://www.fisher.edu/academics/graduate-programs"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://www.fisher.edu/academics/undergraduate-programs/bs-in-management",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Read complete Boston Fisher College Management BS overview and expanded full Programme Courses panel. Explicit MG335 Operations Management is a course; no separately named Operations department established."
+          },
+          {
+            "url": "https://www.fisher.edu/academics/graduate-programs",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Read complete unfiltered graduate programme inventory and all degree levels: eleven cards comprising masters, MBA concentrations and graduate certificate; no research doctorate listed."
+          },
+          {
+            "url": "https://www.higheredjobs.com/faculty/details.cfm?JobCode=179388754&Title=Assistant%20Professor%20-%20Management",
+            "checkedAt": "2026-10-22",
+            "outcome": "blocked",
+            "note": "Officially linked original job destination opened. Visible title Assistant Professor - Management and deleted 2026-05-23 notice; page explicitly requires reCAPTCHA to view deleted content. No challenge interaction or bypass; employer identity remains unread."
+          }
+        ],
+        "limitations": [
+          "The source job employer identity cannot be verified from the deleted job content. Boston Fisher College and Ohio State University Fisher College of Business are not merged. The imported Boston Wikidata association is discovery, not verification of this source job.",
+          "Boston Fisher College programme facts are recorded as scoped candidate observations, not evidence that the imported OM assertion belongs to that institution."
+        ],
+        "coverageComplete": false
+      },
+      "addedAt": "2026-10-22T11:44:54Z",
+      "updatedAt": "2026-10-22T11:44:54Z"
+    },
+    {
+      "id": "flame-university",
+      "status": "reviewed",
+      "canonicalName": "FLAME University",
+      "universitySourceUrl": "https://www.flame.edu.in/academics/schools-departments",
+      "checkedAt": "2026-10-22",
+      "reviewer": "Codex in Chrome",
+      "units": [
+        {
+          "id": "flame-university--operations-analytics",
+          "name": "Department of Operations & Analytics",
+          "school": "FLAME School of Business",
+          "type": "department",
+          "fields": [
+            "operations-management",
+            "operations-research",
+            "supply-chain"
+          ],
+          "sourceUrl": "https://www.flame.edu.in/academics/schools-departments/operations-and-analytics",
+          "checkedAt": "2026-10-22",
+          "evidence": "The full official university structure places this department in FLAME School of Business. It offers Operations and Business Analytics majors, explicitly teaching productive systems, SCM, project planning/control and Advanced Operations Research."
+        },
+        {
+          "id": "flame-university--business",
+          "name": "FLAME School of Business",
+          "school": null,
+          "type": "school",
+          "fields": [
+            "operations-management",
+            "supply-chain"
+          ],
+          "sourceUrl": "https://www.flame.edu.in/academics/schools-departments",
+          "checkedAt": "2026-10-22",
+          "evidence": "The official structure names this school, its Operations & Analytics department and substantive operations management teaching. The doctoral eligibility table assigns Management to Faculty of Business; the programme explicitly includes Operations/Business Analytics research."
+        },
+        {
+          "id": "flame-university--computing-data-sciences",
+          "name": "FLAME School of Computing and Data Sciences",
+          "school": null,
+          "type": "school",
+          "fields": [
+            "supply-chain"
+          ],
+          "sourceUrl": "https://www.flame.edu.in/academics/schools-departments/computing-and-data-sciences",
+          "checkedAt": "2026-10-22",
+          "evidence": "The official school directly links its doctoral Data Science offering to the Computing and Data Science PhD page. That doctoral page explicitly permits research optimizing a supply chain management network; only this scoped research pathway establishes relevance."
+        }
+      ],
+      "decisions": [
+        {
+          "sourceDepartmentId": "flame-university____ba",
+          "disposition": "replaced",
+          "unitIds": [
+            "flame-university--operations-analytics"
+          ],
+          "reason": "Business Analytics is one of the two majors explicitly offered by the Department of Operations & Analytics; it is not a separate department."
+        },
+        {
+          "sourceDepartmentId": "flame-university____om",
+          "disposition": "replaced",
+          "unitIds": [
+            "flame-university--operations-analytics"
+          ],
+          "reason": "Operations/SCM is explicitly offered by the Department of Operations & Analytics; the imported OM topic is replaced with this exact current department."
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.flame.edu.in/academics/schools-departments",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Read complete five-school and departmental inventory, exact Operations & Analytics department under FLAME School of Business and Computing/Data Sciences department under its school. No separate engineering school listed."
+        },
+        {
+          "url": "https://www.flame.edu.in/academics/schools-departments/operations-and-analytics",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Read full department page; explicitly two majors Operations and Business Analytics, SCM/productive service systems/project planning and Advanced Operations Research teaching."
+        },
+        {
+          "url": "https://www.flame.edu.in/academics/doctoral-program/management",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Read full Management PhD description and complete guide list. Explicit broad doctoral research areas include Operations/Business Analytics; a listed guide researches sustainable manufacturing, SCM, operations strategy and lean manufacturing."
+        },
+        {
+          "url": "https://www.flame.edu.in/academics/doctoral-program",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Read full current seven-area doctoral inventory, research/dissertation and thesis requirements, supervision structure, and all eligibility rows. Management is under Faculty of Business; Computing and Data Science is under Faculty of Computing and Data Science. Current 2026 eligibility condition retained without invented admissions date."
+        },
+        {
+          "url": "https://www.flame.edu.in/academics/doctoral-program/data-science",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Read full Computing and Data Science doctoral description and all research themes/guides. Explicitly states a PhD scholar could optimize a supply chain management network as an interdisciplinary doctoral research example. Research/thesis/defense described. Not an elective or a formal SCM concentration."
+        },
+        {
+          "url": "https://www.flame.edu.in/academics/schools-departments/computing-and-data-sciences",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Read complete School of Computing and Data Sciences overview, offerings and faculty list. Its doctoral Data Science offering links directly to the read Computing and Data Science doctoral page; naming variation is retained, not a second degree."
+        },
+        {
+          "url": "https://www.flame.edu.in/academics/doctoral-program/environmental-studies",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Read full Environmental Studies PhD description and complete guide/research list. Scope is climate, biodiversity, ecological/environmental policy and geospatial research; generic sustainability/food production wording does not establish an additional Operations route."
+        },
+        {
+          "url": "https://www.flame.edu.in/faculty/bhavya-pande",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Read official faculty page for institutional Operations role and substantive sustainable manufacturing/supply chain research only to support Stage 1 field mapping; no employment-history data added."
+        }
+      ],
+      "limitations": [
+        "The current structure has five schools and no separate engineering school. The relevant technical doctoral offering is within Computing and Data Sciences.",
+        "Current source labels are reconciled to a combined department; no historical rename date is inferred."
+      ],
+      "duplicateOf": null,
+      "doctoralReview": {
+        "status": "verified",
+        "checkedAt": "2026-10-22",
+        "programmeIds": [
+          "flame-university--computing-data-science-supply-chain-phd",
+          "flame-university--management-operations-business-analytics-phd"
+        ],
+        "branches": [
+          {
+            "branch": "business",
+            "reviewState": "checked",
+            "conclusion": "Complete current doctoral inventory and Management doctorate read; Management explicitly includes Operations/Business Analytics research. The whole business school/department structure was checked; one broad Management degree is recorded, not one degree per field.",
+            "sourceUrls": [
+              "https://www.flame.edu.in/academics/doctoral-program",
+              "https://www.flame.edu.in/academics/doctoral-program/management",
+              "https://www.flame.edu.in/academics/schools-departments",
+              "https://www.flame.edu.in/academics/schools-departments/operations-and-analytics"
+            ]
+          },
+          {
+            "branch": "engineering",
+            "reviewState": "checked",
+            "conclusion": "The full five-school structure has no separate engineering school. The complete doctoral inventory and potentially relevant Computing/Data Science and Environmental Studies descriptions were read. Computing explicitly permits supply-chain network doctoral research; environmental sustainability/ecology is not counted as a separate Operations route.",
+            "sourceUrls": [
+              "https://www.flame.edu.in/academics/schools-departments",
+              "https://www.flame.edu.in/academics/doctoral-program",
+              "https://www.flame.edu.in/academics/doctoral-program/data-science",
+              "https://www.flame.edu.in/academics/schools-departments/computing-and-data-sciences",
+              "https://www.flame.edu.in/academics/doctoral-program/environmental-studies"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://www.flame.edu.in/academics/schools-departments",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Read complete five-school and departmental inventory, exact Operations & Analytics department under FLAME School of Business and Computing/Data Sciences department under its school. No separate engineering school listed."
+          },
+          {
+            "url": "https://www.flame.edu.in/academics/schools-departments/operations-and-analytics",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Read full department page; explicitly two majors Operations and Business Analytics, SCM/productive service systems/project planning and Advanced Operations Research teaching."
+          },
+          {
+            "url": "https://www.flame.edu.in/academics/doctoral-program/management",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Read full Management PhD description and complete guide list. Explicit broad doctoral research areas include Operations/Business Analytics; a listed guide researches sustainable manufacturing, SCM, operations strategy and lean manufacturing."
+          },
+          {
+            "url": "https://www.flame.edu.in/academics/doctoral-program",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Read full current seven-area doctoral inventory, research/dissertation and thesis requirements, supervision structure, and all eligibility rows. Management is under Faculty of Business; Computing and Data Science is under Faculty of Computing and Data Science. Current 2026 eligibility condition retained without invented admissions date."
+          },
+          {
+            "url": "https://www.flame.edu.in/academics/doctoral-program/data-science",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Read full Computing and Data Science doctoral description and all research themes/guides. Explicitly states a PhD scholar could optimize a supply chain management network as an interdisciplinary doctoral research example. Research/thesis/defense described. Not an elective or a formal SCM concentration."
+          },
+          {
+            "url": "https://www.flame.edu.in/academics/schools-departments/computing-and-data-sciences",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Read complete School of Computing and Data Sciences overview, offerings and faculty list. Its doctoral Data Science offering links directly to the read Computing and Data Science doctoral page; naming variation is retained, not a second degree."
+          },
+          {
+            "url": "https://www.flame.edu.in/academics/doctoral-program/environmental-studies",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Read full Environmental Studies PhD description and complete guide/research list. Scope is climate, biodiversity, ecological/environmental policy and geospatial research; generic sustainability/food production wording does not establish an additional Operations route."
+          },
+          {
+            "url": "https://www.flame.edu.in/faculty/bhavya-pande",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Read official faculty page for institutional Operations role and substantive sustainable manufacturing/supply chain research only to support Stage 1 field mapping; no employment-history data added."
+          }
+        ],
+        "limitations": [
+          "Coverage is bounded by the complete current doctoral and school inventories and the related Management, Computing/Data Science and Environmental Studies descriptions. Individual unrelated liberal-arts dissertations are not enumerated.",
+          "No founding date, graduate cohort census or uninterrupted intake availability is inferred."
+        ],
+        "coverageComplete": true
+      },
+      "addedAt": "2026-10-22T11:44:54Z",
+      "updatedAt": "2026-10-22T11:44:54Z"
     },
     {
       "id": "frankfurt-school-of-finance-and-management",
@@ -24809,7 +25536,50 @@
       ],
       "duplicateOf": null,
       "addedAt": "2026-10-20T09:25:45Z",
-      "updatedAt": "2026-10-20T10:06:22Z"
+      "updatedAt": "2026-10-22T11:44:54Z",
+      "doctoralReview": {
+        "status": "no-qualifying-programme-verified",
+        "checkedAt": "2026-10-22",
+        "programmeIds": [],
+        "branches": [
+          {
+            "branch": "business",
+            "reviewState": "checked",
+            "sourceUrls": [
+              "https://www.lmc.edu/academics/index.htm",
+              "https://www.lmc.edu/academics/programs/index.htm"
+            ],
+            "conclusion": "Full current academic structure and complete main-campus, online and graduate programme inventory read. Four graduate offerings all explicitly masters: Teaching, Healthcare Administration, Criminal Justice and Human Services. No relevant research doctorate in this bounded current inventory."
+          },
+          {
+            "branch": "engineering",
+            "reviewState": "checked",
+            "sourceUrls": [
+              "https://www.lmc.edu/academics/index.htm",
+              "https://www.lmc.edu/academics/programs/index.htm"
+            ],
+            "conclusion": "Full current academic structure and complete main-campus, online and graduate programme inventory read. Four graduate offerings all explicitly masters: Teaching, Healthcare Administration, Criminal Justice and Human Services. No relevant research doctorate in this bounded current inventory."
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://www.lmc.edu/academics/index.htm",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full academic overview read in Chrome: four schools; graduate paragraph says three but enumerates four masters. No number silently repaired."
+          },
+          {
+            "url": "https://www.lmc.edu/academics/programs/index.htm",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Entire main-campus, online/distance and graduate programme inventory read in Chrome. Four exact master titles listed, no doctoral programme. Graduate Human Services link actual programme path here unlike placeholder on overview."
+          }
+        ],
+        "limitations": [
+          "Current published inventory only, not historical absence. Earlier university/unit facts and check dates preserved. Overview introductory count says three while four master titles are enumerated and corroborated by complete programme inventory."
+        ],
+        "coverageComplete": true
+      }
     },
     {
       "id": "lehigh-university",
@@ -25036,7 +25806,50 @@
       ],
       "duplicateOf": null,
       "addedAt": "2026-10-20T09:25:45Z",
-      "updatedAt": "2026-10-20T09:53:00Z"
+      "updatedAt": "2026-10-22T11:44:54Z",
+      "doctoralReview": {
+        "status": "no-qualifying-programme-verified",
+        "checkedAt": "2026-10-22",
+        "programmeIds": [],
+        "branches": [
+          {
+            "branch": "business",
+            "reviewState": "checked",
+            "sourceUrls": [
+              "https://www.lr.edu/degree-program-finder?type=graduate",
+              "https://www.lr.edu/degree-program-finder?audience[0]=101&page=1"
+            ],
+            "conclusion": "Official Graduate and Doctoral Programs navigation opens complete graduate finder. All23 results read across two pages. Doctoral entries are Health Science DHSc and Nursing Practice DNP variants; business graduate degrees MBA and MBA/Leadership MA, no qualifying research PhD or engineering doctorate."
+          },
+          {
+            "branch": "engineering",
+            "reviewState": "checked",
+            "sourceUrls": [
+              "https://www.lr.edu/degree-program-finder?type=graduate",
+              "https://www.lr.edu/degree-program-finder?audience[0]=101&page=1"
+            ],
+            "conclusion": "Official Graduate and Doctoral Programs navigation opens complete graduate finder. All23 results read across two pages. Doctoral entries are Health Science DHSc and Nursing Practice DNP variants; business graduate degrees MBA and MBA/Leadership MA, no qualifying research PhD or engineering doctorate."
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://www.lr.edu/degree-program-finder?type=graduate",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Official graduate finder first12of23 entries read in Chrome, active Graduate filter shown. Business MBA/dual MA, HealthScience DHSc, NursingPractice DNP, other masters/certificates."
+          },
+          {
+            "url": "https://www.lr.edu/degree-program-finder?audience[0]=101&page=1",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Actual next-page link followed; final11of23 entries all read. PsychiatricMentalHealth DNP variant, remaining masters/certificates. No additional page needed; current page2 final23."
+          }
+        ],
+        "limitations": [
+          "Source-bounded current graduate inventory only, not historical absence. DNP and DHSc not converted to PhD. Earlier university/unit evidence/check dates unchanged."
+        ],
+        "coverageComplete": true
+      }
     },
     {
       "id": "lincoln-memorial-university",
@@ -25085,7 +25898,55 @@
       ],
       "duplicateOf": null,
       "addedAt": "2026-10-20T09:25:45Z",
-      "updatedAt": "2026-10-20T09:53:00Z"
+      "updatedAt": "2026-10-22T11:44:54Z",
+      "doctoralReview": {
+        "status": "no-qualifying-programme-verified",
+        "checkedAt": "2026-10-22",
+        "programmeIds": [],
+        "branches": [
+          {
+            "branch": "business",
+            "reviewState": "checked",
+            "sourceUrls": [
+              "https://www.lmunet.edu/school-of-business/",
+              "https://www.lmunet.edu/school-of-business/academics/graduate-programs/doctor-of-philosophy-in-business-administration/"
+            ],
+            "conclusion": "Full school programme inventory and actual Business Administration PhD overview plus all three expanded concentration curricula read: Business Analytics, Management, Marketing. Original dissertation confirmed, but no explicit Ops/OR/IE/SCM field; decision modelling course alone not qualifying. DBA separately named, not converted to PhD."
+          },
+          {
+            "branch": "engineering",
+            "reviewState": "checked",
+            "sourceUrls": [
+              "https://www.lmunet.edu/school-of-engineering/"
+            ],
+            "conclusion": "Full current school degree inventory explicitly Civil Engineering BS and Mechanical Engineering BS; two locations for latter, not extra degree. No engineering doctorate offered in current published school scope."
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://www.lmunet.edu/school-of-business/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Entire current Business School offering list read in Chrome, DBA and PhD separately labelled."
+          },
+          {
+            "url": "https://www.lmunet.edu/school-of-business/academics/graduate-programs/doctor-of-philosophy-in-business-administration/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Entire Business PhD overview read and Business Analytics, Management, Marketing accordions individually expanded and complete tables read. 66-credit research PhD with original dissertation, generic analytics/decision methods and management/marketing research not a verified Ops specialization."
+          },
+          {
+            "url": "https://www.lmunet.edu/school-of-engineering/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Entire engineering school page read in Chrome; explicit Civil BS Harrogate, Mechanical BS Harrogate/WestKnoxville. No doctorate in listed school inventory."
+          }
+        ],
+        "limitations": [
+          "Bounded current business/engineering degree scope only. No relevant doctoral research field established from generic business analytics curriculum or dissertation requirement. Existing imported BA acronym remains unresolved independently; doctorate scope does not resolve the original source label."
+        ],
+        "coverageComplete": true
+      }
     },
     {
       "id": "lingnan-university",
@@ -43655,6 +44516,192 @@
       "updatedAt": "2026-10-21T20:25:10Z"
     },
     {
+      "id": "southern-university-of-science-and-technology-sustech",
+      "status": "reviewed",
+      "canonicalName": "Southern University of Science and Technology",
+      "universitySourceUrl": "https://gs.sustech.edu.cn/#/admission/en/detail?current_id=187&id=187&article_id=3408",
+      "checkedAt": "2026-10-22",
+      "reviewer": "Codex in Chrome",
+      "duplicateOf": null,
+      "units": [
+        {
+          "id": "southern-university-of-science-and-technology-sustech--information-systems-management-engineering",
+          "name": "Department of Information Systems and Management Engineering",
+          "type": "department",
+          "school": "College of Business",
+          "fields": [
+            "operations-management",
+            "operations-research",
+            "logistics"
+          ],
+          "sourceUrl": "https://www.sustech.edu.cn/en/colleges/college-of-business.html",
+          "checkedAt": "2026-10-22",
+          "evidence": "Official College of Business directory names Department of Information Systems and Management Engineering; separate unit directory calls same faculty group a Division. Linked official Qiaochu He profile explicitly establishes primary Operations Management and OR research with logistics/healthcare applications. One unit retained with nomenclature discrepancy explicit."
+        }
+      ],
+      "decisions": [
+        {
+          "sourceDepartmentId": "southern-university-of-science-and-technology-sustech__school-of-business-analytics__information-and-operations-management",
+          "disposition": "not-a-unit",
+          "unitIds": [],
+          "reason": "Imported split compound School of Business, Analytics / Information, and Operations Management is not an actual named administrative unit in current official inventory. Actual IS/Management Engineering department with Ops scope verified independently; no undocumented historical rename asserted."
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.sustech.edu.cn/en/colleges/division-of-information-systems-and-management-engineering.html",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Official faculty unit list names Division of Information Systems & Management Engineering, with named associated faculty. No duplicate unit created for alternative division/department labels."
+        },
+        {
+          "url": "https://www.sustech.edu.cn/en/colleges/college-of-business.html",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Official College of Business faculty list assigns same faculty to Department of Information Systems and Management Engineering; current parent and department wording directly observed, distinct from slash/compound imported School of Business Analytics wording."
+        },
+        {
+          "url": "https://www.sustech.edu.cn/en/faculties/heqiaochu.html",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Official current faculty profile linked from same unit directory read for unit scope only: primary research explicitly Operations Management, logistics/healthcare, OR/AI/game theory. Employment history and supervisee placements not collected as Stage2/graduate data."
+        },
+        {
+          "url": "https://www.sustech.edu.cn/en/college.html",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Entire current university school/department inventory read: full College of Engineering branches, Business School undergraduate Industrial Engineering among finance/accounting/data subjects, new Automation and Intelligent Manufacturing school. Degree-name alone not invented department or doctoral proof."
+        },
+        {
+          "url": "https://business.sustech.edu.cn/index_en.php",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Official Business School English page/navigation read: Departments Finance and ISME; body otherwise sparse, no actual doctoral field details."
+        },
+        {
+          "url": "https://aim.sustech.edu.cn/",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Official current Chinese Automation and Intelligent Manufacturing school home read. Former Systems Design and Intelligent Manufacturing, established November 2018; Automation merged January 2023. Current research controls/AI/robotics/intelligent manufacturing; two centres control technologies and design/manufacturing, one Automation undergrad major, Control Science and Engineering doctoral point. No Ops/IE eligibility inferred from process/control methods."
+        },
+        {
+          "url": "https://www.sustech.edu.cn/en/academics.html#Graduate",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Official main university Graduate Education overview read, links graduate school/international admission; joint postgraduate training explicitly separate. General overview not programme verification."
+        },
+        {
+          "url": "https://gs.sustech.edu.cn/#/admission/en/home",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Rendered English graduate school landing page read. Older 16-school list and joint doctoral student examples not treated as current all-programme inventory or degree award evidence."
+        },
+        {
+          "url": "https://gs.sustech.edu.cn/#/admission/en/detail?current_id=187&id=187&article_id=3408",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Entire 2026 international postgraduate admissions guide read from official graduate school. Full 14-major table includes 120100 Management Science and Engineering doctoral-only, 0801Z1 Intelligent Manufacturing and Robotics, 081100 Control Science and Engineering, and others. Generic Doctoral Program four years and signed supervisor Research Plan; actual exact doctoral award/field-to-business-host mapping not established from HTML. Annex 1 programme/supervisor PDF listed but not opened; no facts inferred from attachment."
+        }
+      ],
+      "limitations": [
+        "Official unit directory uses Division while parent faculty directory uses Department for same faculty group; one record preserves both observed labels, no invented reorganization chronology.",
+        "Automation/Intelligent Manufacturing current controls/design/manufacturing scope is not automatically an Operations or IE unit.",
+        "Doctoral credential and detailed field/host mapping remain incomplete in separate doctoral observation; unit review alone not Stage1 eligibility."
+      ],
+      "doctoralReview": {
+        "status": "partial",
+        "checkedAt": "2026-10-22",
+        "programmeIds": [],
+        "branches": [
+          {
+            "branch": "business",
+            "reviewState": "partial",
+            "sourceUrls": [
+              "https://www.sustech.edu.cn/en/colleges/college-of-business.html",
+              "https://business.sustech.edu.cn/index_en.php",
+              "https://www.sustech.edu.cn/en/faculties/heqiaochu.html",
+              "https://gs.sustech.edu.cn/#/admission/en/detail?current_id=187&id=187&article_id=3408"
+            ],
+            "conclusion": "Current business department and substantive Ops research verified. Official 2026 guide lists doctoral Management Science and Engineering 120100 but exact award and direct field-to-host mapping require further evidence; doctoral supervisees on faculty profile not proof of SUSTech awarding degree."
+          },
+          {
+            "branch": "engineering",
+            "reviewState": "partial",
+            "sourceUrls": [
+              "https://www.sustech.edu.cn/en/college.html",
+              "https://aim.sustech.edu.cn/",
+              "https://gs.sustech.edu.cn/#/admission/en/detail?current_id=187&id=187&article_id=3408"
+            ],
+            "conclusion": "Full university unit inventory and 14-major 2026 doctoral guide read. Automation school explicitly current Control Science and Engineering doctoral point; generic control/manufacturing not automatically qualifying Ops. Exact academic credentials and detailed doctorate/relevant field mapping not fully established."
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://www.sustech.edu.cn/en/colleges/division-of-information-systems-and-management-engineering.html",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Official faculty unit list names Division of Information Systems & Management Engineering, with named associated faculty. No duplicate unit created for alternative division/department labels."
+          },
+          {
+            "url": "https://www.sustech.edu.cn/en/colleges/college-of-business.html",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Official College of Business faculty list assigns same faculty to Department of Information Systems and Management Engineering; current parent and department wording directly observed, distinct from slash/compound imported School of Business Analytics wording."
+          },
+          {
+            "url": "https://www.sustech.edu.cn/en/faculties/heqiaochu.html",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Official current faculty profile linked from same unit directory read for unit scope only: primary research explicitly Operations Management, logistics/healthcare, OR/AI/game theory. Employment history and supervisee placements not collected as Stage2/graduate data."
+          },
+          {
+            "url": "https://www.sustech.edu.cn/en/college.html",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Entire current university school/department inventory read: full College of Engineering branches, Business School undergraduate Industrial Engineering among finance/accounting/data subjects, new Automation and Intelligent Manufacturing school. Degree-name alone not invented department or doctoral proof."
+          },
+          {
+            "url": "https://business.sustech.edu.cn/index_en.php",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Official Business School English page/navigation read: Departments Finance and ISME; body otherwise sparse, no actual doctoral field details."
+          },
+          {
+            "url": "https://aim.sustech.edu.cn/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Official current Chinese Automation and Intelligent Manufacturing school home read. Former Systems Design and Intelligent Manufacturing, established November 2018; Automation merged January 2023. Current research controls/AI/robotics/intelligent manufacturing; two centres control technologies and design/manufacturing, one Automation undergrad major, Control Science and Engineering doctoral point. No Ops/IE eligibility inferred from process/control methods."
+          },
+          {
+            "url": "https://www.sustech.edu.cn/en/academics.html#Graduate",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Official main university Graduate Education overview read, links graduate school/international admission; joint postgraduate training explicitly separate. General overview not programme verification."
+          },
+          {
+            "url": "https://gs.sustech.edu.cn/#/admission/en/home",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Rendered English graduate school landing page read. Older 16-school list and joint doctoral student examples not treated as current all-programme inventory or degree award evidence."
+          },
+          {
+            "url": "https://gs.sustech.edu.cn/#/admission/en/detail?current_id=187&id=187&article_id=3408",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Entire 2026 international postgraduate admissions guide read from official graduate school. Full 14-major table includes 120100 Management Science and Engineering doctoral-only, 0801Z1 Intelligent Manufacturing and Robotics, 081100 Control Science and Engineering, and others. Generic Doctoral Program four years and signed supervisor Research Plan; actual exact doctoral award/field-to-business-host mapping not established from HTML. Annex 1 programme/supervisor PDF listed but not opened; no facts inferred from attachment."
+          }
+        ],
+        "limitations": [
+          "Actual 2026 doctoral major Management Science and Engineering 120100 is discovery with official generic Doctoral Program label; do not fill PhD or Doctor of Management without explicit award evidence.",
+          "Annex 1 official programme/supervisor PDF is listed but not opened; no content facts claimed.",
+          "Old graduate-school 16-department landing page and joint training examples not substituted for current degree verification."
+        ],
+        "coverageComplete": false
+      },
+      "addedAt": "2026-10-22T11:44:54Z",
+      "updatedAt": "2026-10-22T11:44:54Z"
+    },
+    {
       "id": "southern-utah-university",
       "status": "reviewed",
       "canonicalName": "Southern Utah University",
@@ -43995,6 +45042,128 @@
         ],
         "coverageComplete": true
       }
+    },
+    {
+      "id": "srm-university",
+      "status": "partial",
+      "canonicalName": "SRM Institute of Science and Technology",
+      "universitySourceUrl": "https://www.srmist.edu.in/about-us/",
+      "checkedAt": "2026-10-22",
+      "reviewer": "Codex in Chrome",
+      "duplicateOf": null,
+      "units": [],
+      "decisions": [
+        {
+          "sourceDepartmentId": "srm-university____operation-and-supply-chain-management",
+          "disposition": "unresolved",
+          "unitIds": [],
+          "reason": "Current Faculty of Management and an Operations faculty affiliation are observed, but imported exact department and its host are not yet verified. No department invented from a subject label."
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.srmist.edu.in/about-us/",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Official About page read: exact SRM Institute of Science and Technology name, Kattankulathur engineering college brought under SRMIST Chennai in 2003, doctoral education across six faculties. Group institutions AP, Haryana and Sikkim listed separately; no blanket campus/provider merger inferred from broad group history."
+        },
+        {
+          "url": "https://www.srmist.edu.in/faculty-of-management/",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Current Faculty of Management landing page read: Kattankulathur - Chennai, current Faculty wording. Sparse rendered academic section supplies no detailed doctoral field."
+        },
+        {
+          "url": "https://www.srmist.edu.in/faculty/aravindaraj-k/",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Rendered official faculty profile read for unit scope only: Assistant Professor, Operations. Detailed research and programme mapping not rendered; no career or graduate history collected."
+        },
+        {
+          "url": "https://www.srmist.edu.in/admission-india/phd/programs-offered/",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Entire rendered PhD programme table read: Engineering and Technology, Science and Medical, Humanities, full-time and part-time categories. Updated July 2022. No exact Operations or IE doctoral field or host in table; general PhD availability not specific programme proof."
+        },
+        {
+          "url": "https://www.srmist.edu.in/departments/",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Rendered department directory first page read, with campus and college filters and nine pages. Faculty of Management and Faculty of Engineering and Technology are filter labels. First twelve engineering departments visible; remaining pages not reviewed, not full inventory."
+        }
+      ],
+      "limitations": [
+        "Imported Kattankulathur address identifies the Chennai institution, not independent SRM University AP, Haryana or Sikkim. Broad group overview is not evidence that these are one awarding provider.",
+        "Current Faculty of Management and individual Operations affiliation observed, but original Operation and Supply Chain Management department title and administrative status remain unverified.",
+        "Doctoral table is broad and dated July 2022; it does not establish an exact Operations or Industrial Engineering doctoral specialization.",
+        "Management academic details rendered sparsely and engineering department directory only first page reviewed; both detailed doctoral branches remain incomplete."
+      ],
+      "doctoralReview": {
+        "status": "partial",
+        "checkedAt": "2026-10-22",
+        "programmeIds": [],
+        "branches": [
+          {
+            "branch": "business",
+            "reviewState": "partial",
+            "sourceUrls": [
+              "https://www.srmist.edu.in/faculty-of-management/",
+              "https://www.srmist.edu.in/admission-india/phd/programs-offered/"
+            ],
+            "conclusion": "Faculty of Management Kattankulathur verified; sparse current academic landing and broad PhD fees table do not identify exact doctoral Operations field or award-to-host mapping."
+          },
+          {
+            "branch": "engineering",
+            "reviewState": "partial",
+            "sourceUrls": [
+              "https://www.srmist.edu.in/departments/",
+              "https://www.srmist.edu.in/admission-india/phd/programs-offered/"
+            ],
+            "conclusion": "General Engineering and Technology PhD is listed, but only first department directory page read and no exact relevant doctoral field established."
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://www.srmist.edu.in/about-us/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Official About page read: exact SRM Institute of Science and Technology name, Kattankulathur engineering college brought under SRMIST Chennai in 2003, doctoral education across six faculties. Group institutions AP, Haryana and Sikkim listed separately; no blanket campus/provider merger inferred from broad group history."
+          },
+          {
+            "url": "https://www.srmist.edu.in/faculty-of-management/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Current Faculty of Management landing page read: Kattankulathur - Chennai, current Faculty wording. Sparse rendered academic section supplies no detailed doctoral field."
+          },
+          {
+            "url": "https://www.srmist.edu.in/faculty/aravindaraj-k/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Rendered official faculty profile read for unit scope only: Assistant Professor, Operations. Detailed research and programme mapping not rendered; no career or graduate history collected."
+          },
+          {
+            "url": "https://www.srmist.edu.in/admission-india/phd/programs-offered/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Entire rendered PhD programme table read: Engineering and Technology, Science and Medical, Humanities, full-time and part-time categories. Updated July 2022. No exact Operations or IE doctoral field or host in table; general PhD availability not specific programme proof."
+          },
+          {
+            "url": "https://www.srmist.edu.in/departments/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Rendered department directory first page read, with campus and college filters and nine pages. Faculty of Management and Faculty of Engineering and Technology are filter labels. First twelve engineering departments visible; remaining pages not reviewed, not full inventory."
+          }
+        ],
+        "limitations": [
+          "Imported Kattankulathur address identifies the Chennai institution, not independent SRM University AP, Haryana or Sikkim. Broad group overview is not evidence that these are one awarding provider.",
+          "Current Faculty of Management and individual Operations affiliation observed, but original Operation and Supply Chain Management department title and administrative status remain unverified.",
+          "Doctoral table is broad and dated July 2022; it does not establish an exact Operations or Industrial Engineering doctoral specialization.",
+          "Management academic details rendered sparsely and engineering department directory only first page reviewed; both detailed doctoral branches remain incomplete."
+        ],
+        "coverageComplete": false
+      },
+      "addedAt": "2026-10-22T11:44:54Z",
+      "updatedAt": "2026-10-22T11:44:54Z"
     },
     {
       "id": "st-cloud-state-university",
@@ -45298,6 +46467,131 @@
       },
       "addedAt": "2026-10-21T11:02:27Z",
       "updatedAt": "2026-10-21T11:02:27Z"
+    },
+    {
+      "id": "sungkyunkwan-university",
+      "status": "reviewed",
+      "canonicalName": "Sungkyunkwan University",
+      "universitySourceUrl": "https://enc.skku.edu/eng_enc/systems_intro.do",
+      "checkedAt": "2026-10-22",
+      "reviewer": "Codex in Chrome",
+      "duplicateOf": null,
+      "units": [
+        {
+          "id": "sungkyunkwan-university--systems-management-engineering",
+          "name": "Department of Systems Management Engineering",
+          "type": "department",
+          "school": "College of Engineering",
+          "fields": [
+            "industrial-engineering",
+            "operations-research",
+            "operations-management"
+          ],
+          "sourceUrl": "https://enc.skku.edu/eng_enc/systems_intro.do",
+          "checkedAt": "2026-10-22",
+          "evidence": "Official department introduction explicitly names Department of Systems Management Engineering, OR/production/quality/ergonomics research and Industrial Engineering PhD. Department renamed from Industrial Engineering in 1999, while graduate degree title remains Industrial Engineering; no duplicate department created."
+        },
+        {
+          "id": "sungkyunkwan-university--business-school",
+          "name": "SKK Business School",
+          "type": "school",
+          "school": null,
+          "fields": [
+            "operations-management"
+          ],
+          "sourceUrl": "https://biz.skku.edu/eng_bizskk/grad_ms_intro.do",
+          "checkedAt": "2026-10-22",
+          "evidence": "Actual SKK Business School graduate MS/PhD introduction explicitly includes Production Management as formal doctoral major field and research/thesis objectives; substantive Ops doctoral remit, not a single generic required course."
+        }
+      ],
+      "decisions": [
+        {
+          "sourceDepartmentId": "sungkyunkwan-university",
+          "disposition": "not-a-unit",
+          "unitIds": [],
+          "reason": "Original record is bare university placeholder, not a department. Actual relevant Systems Management Engineering department and Business School verified independently."
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://enc.skku.edu/eng_enc/systems_intro.do",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Entire official College of Engineering Systems Management Engineering introduction read: actual department, research in OR/production/quality/ergonomics, exact Doctor of Philosophy in Industrial Engineering, 48 coursework credits beyond bachelor’s and 24-credit dissertation. Same page explicitly distinguishes current department name and degree title, historical doctoral establishment in 1986 and first three PhD graduates in 1993; legacy resource/faculty details not assumed current census."
+        },
+        {
+          "url": "https://biz.skku.edu/eng_bizskk/grad_ms_intro.do",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Entire current SKK Business School Graduate MS/PhD introduction read. Explicit doctoral major fields including Production Management alongside marketing/organization/HR/MIS/accounting/finance; separate PhD learning objectives include academic research and thesis/dissertation integrity. This is formal doctoral field, not one general core course."
+        },
+        {
+          "url": "https://www.skku.edu/eng/edu/graduateSchool/graduate_school.do",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Entire current general Graduate Programs university inventory read, Humanities/Social and Natural Science campuses. Business Administration major and doctoral Production Management field confirmed; Industrial Engineering current engineering major. Wider engineering programmes include Smart Factory Convergence, Service Design, crisis/disaster/risk, technology programmes requiring separate degree/field mapping; not fabricated independent departments."
+        }
+      ],
+      "limitations": [
+        "Systems Management Engineering department name differs from actual Industrial Engineering graduate award; same official page expressly maps them.",
+        "Department page includes legacy faculty/resource and history details; these are not a completed current faculty census.",
+        "Current graduate programme names such as Smart Factory Convergence are programmes, not automatically new administrative departments. Detailed wider doctoral fields remain incomplete separately."
+      ],
+      "doctoralReview": {
+        "status": "verified",
+        "checkedAt": "2026-10-22",
+        "programmeIds": [
+          "sungkyunkwan-university--business-administration-phd-production-management",
+          "sungkyunkwan-university--industrial-engineering-phd"
+        ],
+        "branches": [
+          {
+            "branch": "business",
+            "reviewState": "checked",
+            "sourceUrls": [
+              "https://biz.skku.edu/eng_bizskk/grad_ms_intro.do",
+              "https://www.skku.edu/eng/edu/graduateSchool/graduate_school.do"
+            ],
+            "conclusion": "Full academic MS/PhD introduction and complete university general graduate inventory read. Formal Production Management doctoral field established; professional MBA names not promoted to extra PhDs."
+          },
+          {
+            "branch": "engineering",
+            "reviewState": "partial",
+            "sourceUrls": [
+              "https://enc.skku.edu/eng_enc/systems_intro.do",
+              "https://www.skku.edu/eng/edu/graduateSchool/graduate_school.do"
+            ],
+            "conclusion": "Actual Industrial Engineering PhD established in Systems Management Engineering department; entire general graduate major list read. Wider Smart Factory Convergence/Service Design/risk-management programmes require exact degree and field mapping before branch exhaustion."
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://enc.skku.edu/eng_enc/systems_intro.do",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Entire official College of Engineering Systems Management Engineering introduction read: actual department, research in OR/production/quality/ergonomics, exact Doctor of Philosophy in Industrial Engineering, 48 coursework credits beyond bachelor’s and 24-credit dissertation. Same page explicitly distinguishes current department name and degree title, historical doctoral establishment in 1986 and first three PhD graduates in 1993; legacy resource/faculty details not assumed current census."
+          },
+          {
+            "url": "https://biz.skku.edu/eng_bizskk/grad_ms_intro.do",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Entire current SKK Business School Graduate MS/PhD introduction read. Explicit doctoral major fields including Production Management alongside marketing/organization/HR/MIS/accounting/finance; separate PhD learning objectives include academic research and thesis/dissertation integrity. This is formal doctoral field, not one general core course."
+          },
+          {
+            "url": "https://www.skku.edu/eng/edu/graduateSchool/graduate_school.do",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Entire current general Graduate Programs university inventory read, Humanities/Social and Natural Science campuses. Business Administration major and doctoral Production Management field confirmed; Industrial Engineering current engineering major. Wider engineering programmes include Smart Factory Convergence, Service Design, crisis/disaster/risk, technology programmes requiring separate degree/field mapping; not fabricated independent departments."
+          }
+        ],
+        "limitations": [
+          "Two sourced doctoral routes established; wider engineering graduate programme credential/field scope remains incomplete, coverage false.",
+          "No faculty/graduate career data collected from departmental page; Stage2–4 remain held."
+        ],
+        "coverageComplete": false
+      },
+      "addedAt": "2026-10-22T11:44:54Z",
+      "updatedAt": "2026-10-22T11:44:54Z"
     },
     {
       "id": "syracuse-university",
@@ -70229,6 +71523,483 @@
       "updatedAt": "2026-10-21T11:51:57Z"
     },
     {
+      "id": "university-of-west-florida",
+      "status": "reviewed",
+      "canonicalName": "University of West Florida",
+      "universitySourceUrl": "http://uwf.edu/cob/",
+      "checkedAt": "2026-10-22",
+      "reviewer": "Codex in Chrome",
+      "duplicateOf": null,
+      "units": [
+        {
+          "id": "university-of-west-florida--commerce",
+          "name": "Department of Commerce",
+          "school": "Lewis Bear Jr. College of Business",
+          "type": "department",
+          "fields": [
+            "supply-chain",
+            "logistics"
+          ],
+          "sourceUrl": "https://uwf.edu/lbjcob/departments/commerce/",
+          "checkedAt": "2026-10-22",
+          "evidence": "Full official department page explicitly names Department of Commerce and current college parent, supply-chain education, logistics operations and supply-chain collaboration/variation research remit."
+        },
+        {
+          "id": "university-of-west-florida--supply-chain-management-excellence",
+          "name": "Center for Supply Chain Management Excellence",
+          "school": "Lewis Bear Jr. College of Business",
+          "type": "center",
+          "fields": [
+            "supply-chain",
+            "logistics"
+          ],
+          "sourceUrl": "https://uwf.edu/centers/center-for-supply-chain-management-excellence/",
+          "checkedAt": "2026-10-22",
+          "evidence": "Actual full centre page explicitly names logistics/transportation operations education and corporate-partner supply-chain research. Current college homepage lists it among its centres; retained as centre, not department."
+        }
+      ],
+      "decisions": [
+        {
+          "sourceDepartmentId": "university-of-west-florida",
+          "disposition": "replaced",
+          "unitIds": [
+            "university-of-west-florida--commerce",
+            "university-of-west-florida--supply-chain-management-excellence"
+          ],
+          "reason": "Generic university/college source replaced by independently verified relevant current department and centre under actual full college name; imported source unchanged."
+        }
+      ],
+      "sources": [
+        {
+          "url": "http://uwf.edu/cob/",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Exact imported source opened, current Lewis Bear Jr. College of Business branding, departments and SCM centre links read."
+        },
+        {
+          "url": "https://uwf.edu/lbjcob/departments/",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Full current official department/centre/college inventory and remit read in Chrome."
+        },
+        {
+          "url": "https://uwf.edu/lbjcob/departments/commerce/",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Full current official department/centre/college inventory and remit read in Chrome."
+        },
+        {
+          "url": "https://uwf.edu/lbjcob/departments/business-administration/",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Full current official department/centre/college inventory and remit read in Chrome."
+        },
+        {
+          "url": "https://uwf.edu/centers/center-for-supply-chain-management-excellence/",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Full current official department/centre/college inventory and remit read in Chrome."
+        },
+        {
+          "url": "https://uwf.edu/hmcse/",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Full current official department/centre/college inventory and remit read in Chrome."
+        },
+        {
+          "url": "https://uwf.edu/hmcse/departments/",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Full current official department/centre/college inventory and remit read in Chrome."
+        },
+        {
+          "url": "https://uwf.edu/programs/",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Full current university programme finder visible inventory read: explicitly three doctoral programmes, Curriculum/Instruction EdD, Instructional/Performance Technology EdD and Intelligent Systems/Robotics PhD. Other business/math/engineering degree levels distinguished."
+        },
+        {
+          "url": "https://uwf.edu/programs/hmcse/intelligent-systems-robotics-phd/",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Full current research PhD overview, AI/robotics/human-machine research scope, degree/department/college/IHMC relationship and current requirements description read."
+        }
+      ],
+      "limitations": [
+        "Current college name verified without inventing historical rename date. Generic Business Administration department page did not independently establish further Ops unit.",
+        "Technical college full department list and only technical PhD read; robotics/AI/human-machine scope not automatically IE/OR. No additional relevant engineering unit verified in stated scope."
+      ],
+      "doctoralReview": {
+        "status": "no-qualifying-programme-verified",
+        "checkedAt": "2026-10-22",
+        "programmeIds": [],
+        "branches": [
+          {
+            "branch": "business",
+            "reviewState": "checked",
+            "conclusion": "Full current university degree inventory and business degree levels read. SCM/logistics degree and MBA concentration are undergraduate/masters/certificates, no business doctorate. Relevant department and centre do not establish doctoral provision.",
+            "sourceUrls": [
+              "http://uwf.edu/cob/",
+              "https://uwf.edu/programs/"
+            ]
+          },
+          {
+            "branch": "engineering",
+            "reviewState": "checked",
+            "conclusion": "Complete current university doctorate inventory has two education EdDs plus Intelligent Systems/Robotics PhD. Full exact ISR PhD read: human-machine augmentation, AI/robotics research with IHMC, no explicit substantive IE/OR/Operations research field. Industrial employers/career examples and generic systems/AI methods not promoted to relevant route.",
+            "sourceUrls": [
+              "https://uwf.edu/hmcse/",
+              "https://uwf.edu/hmcse/departments/",
+              "https://uwf.edu/programs/",
+              "https://uwf.edu/programs/hmcse/intelligent-systems-robotics-phd/"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "http://uwf.edu/cob/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Exact imported source opened, current Lewis Bear Jr. College of Business branding, departments and SCM centre links read."
+          },
+          {
+            "url": "https://uwf.edu/lbjcob/departments/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full current official department/centre/college inventory and remit read in Chrome."
+          },
+          {
+            "url": "https://uwf.edu/lbjcob/departments/commerce/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full current official department/centre/college inventory and remit read in Chrome."
+          },
+          {
+            "url": "https://uwf.edu/lbjcob/departments/business-administration/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full current official department/centre/college inventory and remit read in Chrome."
+          },
+          {
+            "url": "https://uwf.edu/centers/center-for-supply-chain-management-excellence/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full current official department/centre/college inventory and remit read in Chrome."
+          },
+          {
+            "url": "https://uwf.edu/hmcse/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full current official department/centre/college inventory and remit read in Chrome."
+          },
+          {
+            "url": "https://uwf.edu/hmcse/departments/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full current official department/centre/college inventory and remit read in Chrome."
+          },
+          {
+            "url": "https://uwf.edu/programs/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full current university programme finder visible inventory read: explicitly three doctoral programmes, Curriculum/Instruction EdD, Instructional/Performance Technology EdD and Intelligent Systems/Robotics PhD. Other business/math/engineering degree levels distinguished."
+          },
+          {
+            "url": "https://uwf.edu/programs/hmcse/intelligent-systems-robotics-phd/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full current research PhD overview, AI/robotics/human-machine research scope, degree/department/college/IHMC relationship and current requirements description read."
+          }
+        ],
+        "limitations": [
+          "Source-bounded current doctoral inventory and only plausible technical PhD research scope checked, not all unrelated IHMC faculty projects/dissertations. No qualifying doctorate verified, not claim that research never uses operations methods.",
+          "Unit review independently verifies current Commerce department and SCM centre; non-doctoral relevant units remain distinguished from providers."
+        ],
+        "coverageComplete": true
+      },
+      "addedAt": "2026-10-22T11:44:54Z",
+      "updatedAt": "2026-10-22T11:44:54Z"
+    },
+    {
+      "id": "university-of-wisconsin-green-bay",
+      "status": "reviewed",
+      "canonicalName": "University of Wisconsin-Green Bay",
+      "universitySourceUrl": "https://www.uwgb.edu/csb/",
+      "checkedAt": "2026-10-22",
+      "reviewer": "Codex in Chrome",
+      "duplicateOf": null,
+      "units": [
+        {
+          "id": "university-of-wisconsin-green-bay--cofrin-school-business",
+          "name": "Austin E. Cofrin School of Business",
+          "school": null,
+          "type": "school",
+          "fields": [
+            "supply-chain",
+            "logistics",
+            "operations-management"
+          ],
+          "sourceUrl": "https://www.uwgb.edu/csb/",
+          "checkedAt": "2026-10-22",
+          "evidence": "Official global navigation spells full Austin E. Cofrin School of Business name; school page explicitly hosts undergraduate and MS Supply Chain Management. Exact MS page defines planning, sourcing, production, inventory and logistics operations. Retained actual school, not invented SCM department."
+        }
+      ],
+      "decisions": [
+        {
+          "sourceDepartmentId": "university-of-wisconsin-green-bay____scm-and-logistics",
+          "disposition": "replaced",
+          "unitIds": [
+            "university-of-wisconsin-green-bay--cofrin-school-business"
+          ],
+          "reason": "Subject field verified within actual business school and explicit SCM programme scope, no separate formal SCM and Logistics department established."
+        },
+        {
+          "sourceDepartmentId": "university-of-wisconsin-green-bay____sustainable-management",
+          "disposition": "not-a-unit",
+          "unitIds": [],
+          "reason": "Official exact Sustainable Management page is a collaborative MS programme with UW Online Collaboratives, not standalone department/group. Programme preserved as source subject, not converted to formal unit."
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.uwgb.edu/csb/",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Full current official school/college governance-unit/programme inventory read in Chrome."
+        },
+        {
+          "url": "https://www.uwgb.edu/ms-supply-chain-management/about/",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Full current SCM MS scope read, actual global navigation explicitly spells Austin E. Cofrin School of Business; programme not separate department."
+        },
+        {
+          "url": "https://www.uwgb.edu/sustainable-management/",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Full current Sustainable Management MS programme read, UW Online Collaboratives relation and non-unit status."
+        },
+        {
+          "url": "https://www.uwgb.edu/cset/",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Full current official school/college governance-unit/programme inventory read in Chrome."
+        },
+        {
+          "url": "https://www.uwgb.edu/cset/programs/",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Full current official school/college governance-unit/programme inventory read in Chrome."
+        },
+        {
+          "url": "https://www.uwgb.edu/graduate/programs/degrees/",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Complete current graduate degree inventory by all nine topics read, two education EdDs only, all business/technical offerings masters."
+        }
+      ],
+      "limitations": [
+        "Current full school name established from official navigation; current shorter Cofrin School branding not assigned historical rename date.",
+        "Engineering governance/programmes checked: Human Biology, Natural/Applied Sciences and Resch Engineering school; no separate IE/OR unit verified from technical degree titles. Collaborative sustainable-management programme not separately counted as unit."
+      ],
+      "doctoralReview": {
+        "status": "no-qualifying-programme-verified",
+        "checkedAt": "2026-10-22",
+        "programmeIds": [],
+        "branches": [
+          {
+            "branch": "business",
+            "reviewState": "checked",
+            "conclusion": "Complete current graduate inventory and exact business-school/SCM/Sustainable Management pages read. Business and supply-chain/sustainability offerings MBA/MS/certificates, not doctorates. Only doctoral degrees listed are Applied Leadership EdD and First Nations Education EdD.",
+            "sourceUrls": [
+              "https://www.uwgb.edu/graduate/programs/degrees/",
+              "https://www.uwgb.edu/csb/",
+              "https://www.uwgb.edu/ms-supply-chain-management/about/",
+              "https://www.uwgb.edu/sustainable-management/"
+            ]
+          },
+          {
+            "branch": "engineering",
+            "reviewState": "checked",
+            "conclusion": "Full technical college governance/programme inventory and complete university graduate list read. Current technical advanced degrees are masters; no IE/OR/engineering doctorate listed. Education leadership doctorates not inferred Operations research.",
+            "sourceUrls": [
+              "https://www.uwgb.edu/cset/",
+              "https://www.uwgb.edu/cset/programs/",
+              "https://www.uwgb.edu/graduate/programs/degrees/"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://www.uwgb.edu/csb/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full current official school/college governance-unit/programme inventory read in Chrome."
+          },
+          {
+            "url": "https://www.uwgb.edu/ms-supply-chain-management/about/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full current SCM MS scope read, actual global navigation explicitly spells Austin E. Cofrin School of Business; programme not separate department."
+          },
+          {
+            "url": "https://www.uwgb.edu/sustainable-management/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full current Sustainable Management MS programme read, UW Online Collaboratives relation and non-unit status."
+          },
+          {
+            "url": "https://www.uwgb.edu/cset/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full current official school/college governance-unit/programme inventory read in Chrome."
+          },
+          {
+            "url": "https://www.uwgb.edu/cset/programs/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full current official school/college governance-unit/programme inventory read in Chrome."
+          },
+          {
+            "url": "https://www.uwgb.edu/graduate/programs/degrees/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Complete current graduate degree inventory by all nine topics read, two education EdDs only, all business/technical offerings masters."
+          }
+        ],
+        "limitations": [
+          "Source-bounded current published graduate degree inventory checked; no historical absence or all individual faculty research claim. UW Online Collaboratives association does not import other-campus doctorates."
+        ],
+        "coverageComplete": true
+      },
+      "addedAt": "2026-10-22T11:44:54Z",
+      "updatedAt": "2026-10-22T11:44:54Z"
+    },
+    {
+      "id": "university-of-wisconsin-la-crosse",
+      "status": "reviewed",
+      "canonicalName": "University of Wisconsin-La Crosse",
+      "universitySourceUrl": "https://catalog.uwlax.edu/graduate/",
+      "checkedAt": "2026-10-22",
+      "reviewer": "Codex in Chrome",
+      "duplicateOf": null,
+      "units": [
+        {
+          "id": "university-of-wisconsin-la-crosse--management",
+          "name": "Management Department",
+          "school": "College of Business Administration",
+          "type": "department",
+          "fields": [
+            "operations-management",
+            "supply-chain",
+            "logistics"
+          ],
+          "sourceUrl": "https://catalog.uwlax.edu/undergraduate/management/",
+          "checkedAt": "2026-10-22",
+          "evidence": "Current official catalogue gives actual Management Department and College of Business Administration parent, explicitly includes production/operations management in programme scope. Actual courses tab spells Global Supply Chain Management and Logistics, forecasting/inventory/quality/process operations. Not separate OM/SCM department."
+        }
+      ],
+      "decisions": [
+        {
+          "sourceDepartmentId": "university-of-wisconsin-la-crosse____om-scm",
+          "disposition": "replaced",
+          "unitIds": [
+            "university-of-wisconsin-la-crosse--management"
+          ],
+          "reason": "Imported abbreviated subject field represented by actual Management Department with explicitly spelled operations and global supply-chain remit; no acronym-only canonical unit."
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://catalog.uwlax.edu/undergraduate/management/",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Full current 2026–27 department overview and actual Courses tab read: explicit production/operations management programme remit, MGT 393 OM and MGT 492 full Global Supply Chain Management and Logistics."
+        },
+        {
+          "url": "https://catalog.uwlax.edu/undergraduate/scienceandhealth/",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Full technical college department/unit and degree inventory, pre-engineering/partner dual-degree distinction read."
+        },
+        {
+          "url": "https://catalog.uwlax.edu/graduate/",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Full current graduate catalogue edition scope read, published July 2026 and two doctoral programmes stated."
+        },
+        {
+          "url": "https://catalog.uwlax.edu/graduate/programrequirements/",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Complete current graduate degrees/programme requirements list read, exact DPT and Student Affairs Administration/Leadership EdD, other offerings masters/certificates."
+        }
+      ],
+      "limitations": [
+        "Both Management Department and Department of Management wording occur in official catalogue; title retained without inferred historical rename.",
+        "Science/engineering branch inventory includes Computer Science/Computer Engineering and Engineering Physics plus partner dual degrees, no further IE/OR unit verified. Degree-method courses alone not new units."
+      ],
+      "doctoralReview": {
+        "status": "no-qualifying-programme-verified",
+        "checkedAt": "2026-10-22",
+        "programmeIds": [],
+        "branches": [
+          {
+            "branch": "business",
+            "reviewState": "checked",
+            "conclusion": "Complete current July 2026 graduate inventory read; no business doctorate. Relevant undergraduate Management Department operations/SCM remit not evidence of PhD.",
+            "sourceUrls": [
+              "https://catalog.uwlax.edu/undergraduate/management/",
+              "https://catalog.uwlax.edu/graduate/",
+              "https://catalog.uwlax.edu/graduate/programrequirements/"
+            ]
+          },
+          {
+            "branch": "engineering",
+            "reviewState": "checked",
+            "conclusion": "Full technical college and current graduate degree inventories read: only DPT and Student Affairs Administration/Leadership EdD doctorates. Software engineering, applied statistics, data science and other technical graduate offerings masters, not research PhDs. Partner undergraduate engineering degrees not transferred into UWL doctoral provision.",
+            "sourceUrls": [
+              "https://catalog.uwlax.edu/undergraduate/scienceandhealth/",
+              "https://catalog.uwlax.edu/graduate/",
+              "https://catalog.uwlax.edu/graduate/programrequirements/"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://catalog.uwlax.edu/undergraduate/management/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full current 2026–27 department overview and actual Courses tab read: explicit production/operations management programme remit, MGT 393 OM and MGT 492 full Global Supply Chain Management and Logistics."
+          },
+          {
+            "url": "https://catalog.uwlax.edu/undergraduate/scienceandhealth/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full technical college department/unit and degree inventory, pre-engineering/partner dual-degree distinction read."
+          },
+          {
+            "url": "https://catalog.uwlax.edu/graduate/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full current graduate catalogue edition scope read, published July 2026 and two doctoral programmes stated."
+          },
+          {
+            "url": "https://catalog.uwlax.edu/graduate/programrequirements/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Complete current graduate degrees/programme requirements list read, exact DPT and Student Affairs Administration/Leadership EdD, other offerings masters/certificates."
+          }
+        ],
+        "limitations": [
+          "Source-bounded current 2026–27 published inventories checked, not historical absence or all faculty research. Catalogue states changes after July 2026 appear next edition, retained temporal limit."
+        ],
+        "coverageComplete": true
+      },
+      "addedAt": "2026-10-22T11:44:54Z",
+      "updatedAt": "2026-10-22T11:44:54Z"
+    },
+    {
       "id": "university-of-wisconsin-madison",
       "status": "reviewed",
       "canonicalName": "University of Wisconsin–Madison",
@@ -70494,6 +72265,155 @@
       },
       "addedAt": "2026-10-21T21:30:10Z",
       "updatedAt": "2026-10-21T21:30:10Z"
+    },
+    {
+      "id": "university-of-wisconsin-stout",
+      "status": "reviewed",
+      "canonicalName": "University of Wisconsin-Stout",
+      "universitySourceUrl": "https://www.uwstout.edu/academics/colleges-schools/college-science-technology-engineering-mathematics-management/school-management/operations-management-department",
+      "checkedAt": "2026-10-22",
+      "reviewer": "Codex in Chrome",
+      "duplicateOf": null,
+      "units": [
+        {
+          "id": "university-of-wisconsin-stout--operations-management",
+          "name": "Operations & Management Department",
+          "school": "School of Management",
+          "type": "department",
+          "fields": [
+            "operations-management",
+            "supply-chain"
+          ],
+          "sourceUrl": "https://www.uwstout.edu/academics/colleges-schools/college-science-technology-engineering-mathematics-management/school-management/operations-management-department",
+          "checkedAt": "2026-10-22",
+          "evidence": "Actual official department gives full Operations & Management name, School of Management parent within College of Science/Technology/Engineering/Mathematics/Management, operations/technology-oriented remit and explicit MS Operations and Supply Management, quality management programmes. Actual department retained, not acronym-only OM."
+        }
+      ],
+      "decisions": [
+        {
+          "sourceDepartmentId": "university-of-wisconsin-stout____om",
+          "disposition": "replaced",
+          "unitIds": [
+            "university-of-wisconsin-stout--operations-management"
+          ],
+          "reason": "Imported abbreviated subject label represented by actual verified Operations & Management Department with explicit operations/supply-management education scope, not assumed standalone OM department."
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.uwstout.edu/academics/colleges-schools/college-science-technology-engineering-mathematics-management/school-management/operations-management-department",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Full official Operations & Management Department page, School of Management/college breadcrumb and operations/supply-management graduate programme remit read."
+        },
+        {
+          "url": "https://www.uwstout.edu/academics/colleges-schools/college-science-technology-engineering-mathematics-management/robert-f-cervenka-school-engineering",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Full official engineering school/department or Manufacturing Engineering MS field description read, exact types and hierarchy."
+        },
+        {
+          "url": "https://www.uwstout.edu/academics/colleges-schools/college-science-technology-engineering-mathematics-management/robert-f-cervenka-school-engineering/engineering-technology-department",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Full official engineering school/department or Manufacturing Engineering MS field description read, exact types and hierarchy."
+        },
+        {
+          "url": "https://www.uwstout.edu/programs/ms-manufacturing-engineering",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Full official engineering school/department or Manufacturing Engineering MS field description read, exact types and hierarchy."
+        },
+        {
+          "url": "https://www.uwstout.edu/programs",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Full first 200 of 204 university programme entries actually read; only doctoral entry EdD Career/Technical Education Leadership, other Ops/engineering graduate entries masters."
+        },
+        {
+          "url": "https://www.uwstout.edu/programs?page=1",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "All final 4 entries 201–204 read; complete two-page current academic programme inventory."
+        }
+      ],
+      "limitations": [
+        "Current Polytechnic branding appears throughout website; canonical university base name retained without asserting legal rename. Actual named College/School/Department hierarchy recorded, no acronym expansion from memory.",
+        "Engineering/Technology department and Manufacturing MS checked; design/process efficiency/quality systems observed but no separately titled IE/OR unit or doctorate invented. No claim that manufacturing never uses industrial engineering methods."
+      ],
+      "doctoralReview": {
+        "status": "no-qualifying-programme-verified",
+        "checkedAt": "2026-10-22",
+        "programmeIds": [],
+        "branches": [
+          {
+            "branch": "business",
+            "reviewState": "checked",
+            "conclusion": "Complete two-page 204-entry university degree inventory and Operations/Management department read. Operations/Supply Management, Sustainable Management and related advanced programmes are masters, not doctoral degrees.",
+            "sourceUrls": [
+              "https://www.uwstout.edu/academics/colleges-schools/college-science-technology-engineering-mathematics-management/school-management/operations-management-department",
+              "https://www.uwstout.edu/programs",
+              "https://www.uwstout.edu/programs?page=1"
+            ]
+          },
+          {
+            "branch": "engineering",
+            "reviewState": "checked",
+            "conclusion": "Full engineering school, technical department and exact Manufacturing MS research/education scope read. Complete degree inventory only doctorate EdD Career and Technical Education Leadership; technical degrees bachelors/masters/certificates, no relevant IE/OR PhD.",
+            "sourceUrls": [
+              "https://www.uwstout.edu/academics/colleges-schools/college-science-technology-engineering-mathematics-management/robert-f-cervenka-school-engineering",
+              "https://www.uwstout.edu/academics/colleges-schools/college-science-technology-engineering-mathematics-management/robert-f-cervenka-school-engineering/engineering-technology-department",
+              "https://www.uwstout.edu/programs/ms-manufacturing-engineering",
+              "https://www.uwstout.edu/programs",
+              "https://www.uwstout.edu/programs?page=1"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://www.uwstout.edu/academics/colleges-schools/college-science-technology-engineering-mathematics-management/school-management/operations-management-department",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full official Operations & Management Department page, School of Management/college breadcrumb and operations/supply-management graduate programme remit read."
+          },
+          {
+            "url": "https://www.uwstout.edu/academics/colleges-schools/college-science-technology-engineering-mathematics-management/robert-f-cervenka-school-engineering",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full official engineering school/department or Manufacturing Engineering MS field description read, exact types and hierarchy."
+          },
+          {
+            "url": "https://www.uwstout.edu/academics/colleges-schools/college-science-technology-engineering-mathematics-management/robert-f-cervenka-school-engineering/engineering-technology-department",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full official engineering school/department or Manufacturing Engineering MS field description read, exact types and hierarchy."
+          },
+          {
+            "url": "https://www.uwstout.edu/programs/ms-manufacturing-engineering",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full official engineering school/department or Manufacturing Engineering MS field description read, exact types and hierarchy."
+          },
+          {
+            "url": "https://www.uwstout.edu/programs",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full first 200 of 204 university programme entries actually read; only doctoral entry EdD Career/Technical Education Leadership, other Ops/engineering graduate entries masters."
+          },
+          {
+            "url": "https://www.uwstout.edu/programs?page=1",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "All final 4 entries 201–204 read; complete two-page current academic programme inventory."
+          }
+        ],
+        "limitations": [
+          "Source-bounded current university programme inventory complete; one EdD doctoral listing not confused with engineering PhD. Manufacturing systems/optimization education retained as masters scope, not doctoral eligibility."
+        ],
+        "coverageComplete": true
+      },
+      "addedAt": "2026-10-22T11:44:54Z",
+      "updatedAt": "2026-10-22T11:44:54Z"
     },
     {
       "id": "unsw-sydney",
@@ -72314,7 +74234,48 @@
       ],
       "duplicateOf": null,
       "addedAt": "2026-10-21T07:40:08Z",
-      "updatedAt": "2026-10-21T07:40:08Z"
+      "updatedAt": "2026-10-22T11:44:54Z",
+      "doctoralReview": {
+        "status": "no-qualifying-programme-verified",
+        "checkedAt": "2026-10-22",
+        "programmeIds": [],
+        "branches": [
+          {
+            "branch": "business",
+            "reviewState": "checked",
+            "sourceUrls": [
+              "https://catalogs.wcsu.edu/grad/graduate-programs/"
+            ],
+            "conclusion": "Full current2026–27 graduate catalogue inventory read, including all doctorate/master/certificate headings. Only doctoral programmes listed are Instructional Leadership EdD, Nursing Education EdD and DNP. Business MBA options and AI/mathematics masters are not research PhDs; no relevant doctorate in current bounded inventory."
+          },
+          {
+            "branch": "engineering",
+            "reviewState": "checked",
+            "sourceUrls": [
+              "https://catalogs.wcsu.edu/grad/graduate-programs/"
+            ],
+            "conclusion": "Full current2026–27 graduate catalogue inventory read, including all doctorate/master/certificate headings. Only doctoral programmes listed are Instructional Leadership EdD, Nursing Education EdD and DNP. Business MBA options and AI/mathematics masters are not research PhDs; no relevant doctorate in current bounded inventory."
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://catalogs.wcsu.edu/grad/graduate-programs/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Entire graduate programme table individually read in Chrome. Explicit three doctorate rows, all masters/options/certificates and four school navigation. Current2026–27 catalogue corroborated by displayed PDF-version label/path; linked PDF not opened or claimed read."
+          },
+          {
+            "url": "https://www.wcsu.edu/academics/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Current academic landing rendered introductory paragraph only; no degree facts derived. Focused search located official graduate catalogue, opened separately."
+          }
+        ],
+        "limitations": [
+          "Current complete published catalogue inventory only, not historical absence or unrelated dissertation topics. Existing unit evidence/dates retained."
+        ],
+        "coverageComplete": true
+      }
     },
     {
       "id": "western-illinois-university",
