@@ -9,3 +9,5 @@ Source-unit reconciliation now reuses exact prior reviewed school/department ass
 Validation: all 44 tests and public validators passed; four relational schema tests and SQLite construction passed. Existing programme equality asserted. Expanded Cranfield evidence passed visitor audit with no visible dataset filenames or project repository links. Imported university, people, employment and graduate data unchanged. The manifest lists exact files and frozen proposal hashes. Raw source-limitation notes are audit material, not additional verified programmes.
 
 The owner requires continued Stage 1 work through completion, with rolling publication. Remaining identity, unit-assertion, doctoral field/credential and source-coverage checks continue. Stages 2–4 and automation remain held. Continuation 10 proposals are separate and not part of this release. Publication confirmation will be appended after deployment.
+
+Publication confirmed: release 8c0c868939ca67db8daf070afb4f803cb0b4d32c pushed to main and research branch; Pages run 39761843496 succeeded. Live totals 302 routes at 183 providers and 1,281 organisations confirmed. Work continued directly into continuation 10.

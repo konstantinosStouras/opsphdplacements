@@ -1,0 +1,137 @@
+{
+  "id": "johns-hopkins-university",
+  "status": "reviewed",
+  "canonicalName": "Johns Hopkins University",
+  "universitySourceUrl": "https://engineering.jhu.edu/ams/",
+  "checkedAt": "2026-10-21",
+  "reviewer": "Codex in Chrome",
+  "units": [
+    {
+      "id": "johns-hopkins-university--operations-management-business-analytics",
+      "name": "Operations Management & Business Analytics",
+      "school": "Carey Business School",
+      "type": "area",
+      "fields": [
+        "operations-management"
+      ],
+      "sourceUrl": "https://carey.jhu.edu/faculty/faculty-directory",
+      "checkedAt": "2026-10-21",
+      "evidence": "Current official Carey faculty directory explicitly labels this an Academic Area. Exact ampersand name retained; not claimed as a department."
+    },
+    {
+      "id": "johns-hopkins-university--applied-mathematics-statistics",
+      "name": "Department of Applied Mathematics and Statistics",
+      "school": "Whiting School of Engineering",
+      "type": "department",
+      "fields": [
+        "operations-research"
+      ],
+      "sourceUrl": "https://engineering.jhu.edu/ams/",
+      "checkedAt": "2026-10-21",
+      "evidence": "Current official department homepage establishes full title and Whiting School of Engineering parent. Its current doctoral programme explicitly includes optimization/operations research concentration."
+    },
+    {
+      "id": "johns-hopkins-university--civil-systems-engineering",
+      "name": "Department of Civil and Systems Engineering",
+      "school": "Whiting School of Engineering",
+      "type": "department",
+      "fields": [
+        "operations-research",
+        "operations-management"
+      ],
+      "sourceUrl": "https://systems.jhu.edu/phd/",
+      "checkedAt": "2026-10-22",
+      "evidence": "Official current CSSE doctoral page locates center in Civil and Systems Engineering department and explicitly maps its Systems Engineering doctoral research to operations research and operations management; department PhD page names broad Civil and Systems Engineering award."
+    },
+    {
+      "id": "johns-hopkins-university--systems-science-engineering",
+      "name": "Center for Systems Science and Engineering",
+      "school": "Whiting School of Engineering",
+      "type": "center",
+      "fields": [
+        "operations-research",
+        "operations-management"
+      ],
+      "sourceUrl": "https://systems.jhu.edu/phd/",
+      "checkedAt": "2026-10-22",
+      "evidence": "Actual Center for Systems Science and Engineering explicitly housed in CaSE, with Systems Engineering doctoral provision spanning operations research and operations management."
+    }
+  ],
+  "decisions": [
+    {
+      "sourceDepartmentId": "johns-hopkins-university__carey-business-school__operations-management-and-business-analytics",
+      "disposition": "replaced",
+      "unitIds": [
+        "johns-hopkins-university--operations-management-business-analytics"
+      ],
+      "reason": "Correct imported department wording to exact official Academic Area identity and ampersand name."
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://carey.jhu.edu/faculty/faculty-directory",
+      "checkedAt": "2026-10-21",
+      "outcome": "read",
+      "note": "Read current faculty-directory Academic Area filters and exact Operations Management & Business Analytics label. No individual career data extracted."
+    },
+    {
+      "url": "https://carey.jhu.edu/programs",
+      "checkedAt": "2026-10-21",
+      "outcome": "read",
+      "note": "Read official current programme introduction and all programme-type filter categories; MBA, specialized masters, certificates and executive education, no doctoral category displayed. Pagination not exhaustively read."
+    },
+    {
+      "url": "https://engineering.jhu.edu/ams/",
+      "checkedAt": "2026-10-21",
+      "outcome": "read",
+      "note": "Read full official Department of Applied Mathematics and Statistics homepage and Whiting School of Engineering parent."
+    },
+    {
+      "url": "https://engineering.jhu.edu/ams/academics/graduate-studies/doctoral-program/",
+      "checkedAt": "2026-10-21",
+      "outcome": "read",
+      "note": "Read full current Applied Mathematics and Statistics PhD description with explicit optimization/operations research concentration."
+    },
+    {
+      "url": "https://systems.jhu.edu/phd/",
+      "checkedAt": "2026-10-22",
+      "outcome": "read",
+      "note": "Read full Doctoral Programs page: CaSE hosts CSSE; Systems Engineering PhD research explicitly spans operations research and operations management, with thesis and oral examination. DEng distinguished."
+    },
+    {
+      "url": "https://engineering.jhu.edu/case/academics/phd-program/",
+      "checkedAt": "2026-10-22",
+      "outcome": "read",
+      "note": "Read full current PhD in Civil and Systems Engineering programme, Systems/Structures/Mechanics of Materials choices, research provision and Whiting school identity."
+    },
+    {
+      "url": "https://engineering.jhu.edu/education/graduate-studies/",
+      "checkedAt": "2026-10-22",
+      "outcome": "read",
+      "note": "Read current graduate degree pathways distinguishing full-time PhD, masters and professional DEng."
+    },
+    {
+      "url": "https://engineering.jhu.edu/resource-finder/?query=&degree_level=doctoral&learning_mode=on-site#program_results",
+      "checkedAt": "2026-10-22",
+      "outcome": "read",
+      "note": "Read complete nine-programme onsite doctoral inventory; no pagination. Includes AMS, Biomedical, Chemical/Biomolecular, Civil/Systems, Computer Science, Electrical/Computer, Geography/Environmental, Materials, Mechanical."
+    },
+    {
+      "url": "https://publichealth.jhu.edu/academics/phd-in-geography-and-environmental-engineering",
+      "checkedAt": "2026-10-22",
+      "outcome": "read",
+      "note": "Opened old Geography/Environmental doctoral URL; current rendered programme is Doctor of Philosophy in Environmental Engineering, Department of Environmental Health and Engineering, Whiting. Full page read, optional Environmental Sustainability Resilience and Health track; listed disciplines do not explicitly establish Ops/OR/IE scope."
+    },
+    {
+      "url": "https://me.jhu.edu/education/graduate-studies/phd-program/",
+      "checkedAt": "2026-10-22",
+      "outcome": "read",
+      "note": "Read full Mechanical Engineering PhD page: fluids, renewable energy, materials processing/manufacturing, prosthetics, diagnostics and nanotechnology. Generic manufacturing wording does not establish Industrial Engineering or Operations doctoral scope."
+    }
+  ],
+  "limitations": [
+    "Imported Carey academic-area identity is reconciled independently of doctoral inventory.",
+    "Full current Whiting doctoral inventory read; remaining individual doctoral research-area pages are not all exhausted."
+  ],
+  "duplicateOf": null
+}
