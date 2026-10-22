@@ -11,3 +11,5 @@ The initial preview caught an existing raw entity join combining both campuses u
 Naval programme access conditions retained. Northeastern catalogue copied introductory Mechanical wording conflicts with its IE title/requirements; independent department inventory corroborates exact IE award, discrepancy preserved. UNLV wider Hospitality/engineering/mathematics checks remain partial; unread catalogue content is not verification. No people-history or graduate collection occurred.
 
 Validation: 48 tests and public validators passed, static build completed, original programme/source preservation assertions passed. Expanded both-campus notes contain no prohibited visitor-facing filenames/project repository links. Stage 1 remains incomplete; research continues with continuation 16 and later identity/unit follow-ups. Stages 2–4 and automation held.
+
+Publication confirmed: commit `63451d1`, Pages run `39769054016` succeeded. Live New Haven Connecticut and Riyadh rows checked separately; doctorate attaches only to Connecticut. Screenshot saved as stage1-release15.png.

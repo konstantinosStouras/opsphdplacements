@@ -1,10 +1,11 @@
 # Remaining work and handoff priorities
 
-## Active priority order — 21 October 2026
+## Active priority order — updated 22 October 2026
 
-1. **First:** reconcile OM List schools + Operations Academia universities and job postings; finish official university/OM/OR/IE-unit verification and duplicate decisions. Old import: 360/645 reviewed, 285 still need completion. The expanded/live source frame is not yet frozen.
-2. **Then:** only the 2,149 OM List faculty, using their linked sources for separately verified doctorate facts, first jobs and full employment histories. 1,524 verified first jobs; full histories remain incomplete.
-3. **Later:** doctoral-program graduate census, archives/Wayback and graduate-by-graduate LinkedIn/career research. Held until 1 and 2 meet their gates.
+1. **Stage 1, active:** reconcile OM List schools, faculty-reported PhD institutions and Operations Academia universities/job postings to official university, unit and relevant doctoral provision. Current 666-record frame: 448 unit reviews complete; 92 partial, 5 blocked and 121 pending. Doctoral scope is a separate gate: 400 observations, 258 current branch scopes complete. Source-name matching alone is not verification.
+2. **Stage 2, held:** verify the 2,149 OM List faculty through their linked sources, separating doctorate facts, first jobs and full employment histories. Existing 1,524 verified first jobs do not establish complete histories.
+3. **Stage 3, held:** expand the people register from relevant Stage 1 department faculty pages and recursively from institutions in doctorate/employment histories; deduplicate and verify new faculty under the same evidence rules.
+4. **Stage 4, held:** enumerate historical PhD graduates through archives/Wayback and verify their careers. Begin only after the earlier gates.
 
 See [current priority contract and queues](research-handoff/priorities/README.md). Manual Stage 1 source reconciliation is resumed by the owner; the automation remains paused. The older mixed-source alphabetical queue and pause notes below are historical checkpoints, not the current next action.
 
@@ -313,3 +314,5 @@ Stage 1 continuation 14 (22 October): 320 verified routes at 196 providers; 329 
 Campus matching pitfall resolved in continuation 15: raw identical New Haven labels and imported US Wikidata on the Saudi source formerly merged countries and doctorate ownership. Explicit reviewed campus entity decisions now isolate Riyadh and Connecticut before rendering; regression test protects doctoral and employer separation. Imported source rows and placement facts remain intact.
 
 Stage 1 continuation 15 (22 October): 323 verified routes/199 providers, 332 register records. Doctoral observations 382, complete current scopes 246 (up 15). University/campus frame 666: 448 reviewed, 92 partial, 5 blocked, 121 pending. Three routes added; New Haven Connecticut discovered separately from Riyadh. Frozen source observations now 5,402 including one official campus expansion; exact source names all linked, unit assertions remain incomplete. UNLV, Northeastern wider branches and Connecticut business units remain partial. Continue Stage 1 only.
+
+Stage 1 continuation 16 (22 October): 329 verified routes/204 providers, 338 register records. Added six routes across five providers; 400 doctoral observations and 258 complete current scopes (up 12). Unit totals unchanged. Nineteen proposals integrated with alias routes counted once, old evidence dates preserved. All 332 prior programme records unchanged. Continue remaining identity/unit assertions and incomplete doctoral branches; Stages 2–4 held.
