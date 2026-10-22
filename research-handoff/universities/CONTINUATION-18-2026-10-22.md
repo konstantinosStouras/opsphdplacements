@@ -1,4 +1,4 @@
-# Stage 1 continuation 18 â€” 22 October 2026
+# Stage 1 continuation 18 — 22 October 2026
 
 Twenty-eight frozen proposals integrated: 12 university/unit reviews and 16 doctoral observations. Four new routes at two providers: FLAME Management PhD with explicit Operations/Business Analytics research area; FLAME Computing and Data Science PhD with explicit supply-chain network optimization research pathway; Sungkyunkwan Industrial Engineering PhD; Sungkyunkwan Business Administration PhD Production Management. Broad degree titles and non-formal research-area limitations retained.
 
@@ -8,4 +8,6 @@ Completed negative doctoral inventories include Lees-McRae, Lenoir-Rhyne, Lincol
 
 Integration encountered temporary Windows synchronized-file rename locks. The dated recipe batches these independent doctoral proposals into one validated write; all proposal hashes and baseline-preservation assertions retained. No generic filesystem helper or evidence rule changed.
 
-Validation: 48 tests, public validators and static build passed. Expanded FLAME organisation and both programme evidence panels passed the visitor audit: no internal filenames or project repository links. Publication confirmation follows. Continuation 19 proposals are separate and unpublished. Stages 2â€“4 and automation remain held. Continue remaining Stage 1 identities, doctoral scopes and exact source-unit reconciliation; no census claim.
+Validation: 48 tests, public validators and static build passed. Expanded FLAME organisation and both programme evidence panels passed the visitor audit: no internal filenames or project repository links. Publication confirmation follows. Continuation 19 proposals are separate and unpublished. Stages 2–4 and automation remain held. Continue remaining Stage 1 identities, doctoral scopes and exact source-unit reconciliation; no census claim.
+
+Publication confirmed: commit `7121144`, Pages run `39773540060` success. Live Sungkyunkwan two-route entry checked; screenshot stage1-release18.png.
