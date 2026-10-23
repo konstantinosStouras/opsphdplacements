@@ -1,8 +1,8 @@
 # Remaining work and handoff priorities
 
-## Active priority order — updated 22 October 2026
+## Active priority order — updated 23 October 2026
 
-1. **Stage 1, active:** reconcile OM List schools, faculty-reported PhD institutions and Operations Academia universities/job postings to official university, unit and relevant doctoral provision. Current 666-record frame: 512 unit reviews complete; 118 partial, 5 blocked and 31 pending. Doctoral scope is a separate gate: 533 observations, 335 current branch scopes complete. Source-name matching alone is not verification.
+1. **Stage 1, active:** reconcile OM List schools, faculty-reported PhD institutions and Operations Academia universities/job postings to official university, unit and relevant doctoral provision. Current 666-record frame: 512 unit reviews complete; 119 partial, 5 blocked and 30 pending. Doctoral scope is a separate gate: 537 observations; incomplete branch scopes remain. Source-name matching alone is not verification.
 2. **Stage 2, held:** verify the 2,149 OM List faculty through their linked sources, separating doctorate facts, first jobs and full employment histories. Existing 1,524 verified first jobs do not establish complete histories.
 3. **Stage 3, held:** expand the people register from relevant Stage 1 department faculty pages and recursively from institutions in doctorate/employment histories; deduplicate and verify new faculty under the same evidence rules.
 4. **Stage 4, held:** enumerate historical PhD graduates through archives/Wayback and verify their careers. Begin only after the earlier gates.
@@ -344,3 +344,7 @@ Organisation display audit26: career-only label Wilfrid Laurier University, Laza
 Stage 1 continuation27 (22 October 2026): 379 verified relevant doctoral routes at 235 institutions (388 records). University frame666: 512 reviewed,118partial,5blocked,31pending;533doctoral observations,335current scopes complete. Added VU Mathematics Analytics/Optimization, Virginia Darden DADS and Idaho State EAS/Civil transport-system research pathways; exact broad awards and limitations preserved. Three explicit official school-parent aliases consolidate Rice/Jones, Baruch/Zicklin and Laurier/Lazaridis career-only labels without changing original employment observations. Stages2–4 remain held. See research-handoff/universities/CONTINUATION-27-2026-10-22.md.
 
 22 October 2026 organisation-action correction: replace repeated per-alias links with one graduate-outcomes action and one hiring action per organisation. Label hiring as People hired by [organisation], with Only their first job after the PhD is counted. Profile selectors/metrics and table dropdowns resolve the same unambiguous organisation aliases, retaining original source text. KAIST regression:4hired people versus3doctorate-origin people; no research facts changed.
+# Stage 1 continuation 28 — 23 October 2026
+
+- Integrated six newly verified doctoral routes for Indiana State, Nazarbayev, Vanderbilt, Rochester Institute of Technology (two), and Northern Illinois from individually read official sources. Preserve their programme-specific limitations and older source dates. Public publication remains to be confirmed in the dated handoff.
+- Continue the 30 pending and 119 partial university/unit reviews, 5 blocked source reviews, and incomplete doctoral branch scopes. The 182 unmatched OM List reported-degree leads remain discovery priorities, not verified providers. Integrate further frozen shard proposals only after resolving latest additive versions and unit dependencies. Hold Stages 2–4.

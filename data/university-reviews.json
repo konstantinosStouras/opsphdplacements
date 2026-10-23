@@ -3,11 +3,11 @@
   "metadata": {
     "definition": "Individual Chrome reviews of official university names and operations units. The original directory remains in universities.json. Reviewed describes the stated source scope, not an exhaustive current or historical census.",
     "sourceRecords": 666,
-    "attempted": 635,
+    "attempted": 636,
     "reviewed": 512,
-    "partial": 118,
+    "partial": 119,
     "blocked": 5,
-    "pending": 31
+    "pending": 30
   },
   "records": [
     {
@@ -27856,6 +27856,174 @@
       "updatedAt": "2026-10-21T21:30:10Z"
     },
     {
+      "id": "indiana-state-university",
+      "status": "partial",
+      "canonicalName": "Indiana State University",
+      "universitySourceUrl": "https://www.indianastate.edu/academics/colleges/business/marketing-operations",
+      "checkedAt": "2026-10-22",
+      "reviewer": "Codex in Chrome",
+      "units": [
+        {
+          "id": "indiana-state-university--marketing-operations",
+          "name": "Department of Marketing and Operations",
+          "school": "Scott College of Business",
+          "type": "department",
+          "fields": [
+            "operations-management",
+            "supply-chain"
+          ],
+          "sourceUrl": "https://www.indianastate.edu/academics/colleges/business/marketing-operations",
+          "checkedAt": "2026-10-22",
+          "evidence": "Exact current department and host explicitly stated; scope producing/delivering manufacturing and service outputs efficiently with global supply chain quality/speed/customisation. SCM degree provision explicitly listed."
+        },
+        {
+          "id": "indiana-state-university--bailey-engineering-technology",
+          "name": "Bailey College of Engineering & Technology",
+          "school": null,
+          "type": "school",
+          "fields": [
+            "industrial-engineering",
+            "operations-management"
+          ],
+          "sourceUrl": "https://www.indianastate.edu/academics/academic-program-finder/technology-management-phd",
+          "checkedAt": "2026-10-22",
+          "evidence": "Current official Technology Management PhD page explicitly identifies Bailey College host for doctoral Manufacturing Systems and Quality Systems specializations, personalised doctoral research and original dissertation. No independently named Technology Management department inferred."
+        }
+      ],
+      "decisions": [
+        {
+          "sourceDepartmentId": "indiana-state-university__scott-college-of-business__marketing-and-operations",
+          "disposition": "replaced",
+          "unitIds": [
+            "indiana-state-university--marketing-operations"
+          ],
+          "reason": "Exact current Marketing and Operations department and Scott College parent verified directly; one combined department retained."
+        },
+        {
+          "sourceDepartmentId": "indiana-state-university____ba",
+          "disposition": "unresolved",
+          "unitIds": [],
+          "reason": "Current Business Analytics minor is an observed programme, but original BA source abbreviation/adverts not individually read. Cannot safely infer expansion, department or historical succession."
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.indianastate.edu/academics/colleges/business/marketing-operations",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Read entire current exact Department of Marketing and Operations page, Scott College host, manufacturing/service operations efficiency and global supply chain/quality/customisation scope, actual Business Analytics minor and SCM bachelor/minor degrees."
+        },
+        {
+          "url": "https://www.indianastate.edu/academics/colleges/business",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Read entire current Scott College overview, institutional identity, programme navigation and OSCM teaching description. Summary statistics not imported into dataset."
+        },
+        {
+          "url": "https://www.indianastate.edu/academics/colleges/business/graduate-programs",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Read full Scott College graduate inventory: MBA, Human Resources MS and Organizational Leadership and Learning graduate certificate. No business doctoral award listed."
+        },
+        {
+          "url": "https://www.indianastate.edu/academics/academic-program-finder/technology-management-phd",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Read entire displayed Technology Management PhD overview, exact Indiana State awarding identity and Bailey College host, consortium BGSU/UCM/ECU, all five named doctoral specializations including Manufacturing Systems and Quality Systems. Personalised research programme and original dissertation required. Other admission accordion details not expanded; no applications made."
+        },
+        {
+          "url": "https://www.indianastate.edu/academics/academic-program-finder/search",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Selected actual Doctoral programme-type checkbox; first returned list still stale, then read fully updated filtered results, Doctoral chip, all twelve named doctoral entries, no pagination. Technology Management sole Bailey engineering/technology entry; business college has no doctoral result. Other entries biology, psychology, education, health and spatial/earth science. No all-science dissertation census."
+        },
+        {
+          "url": "https://catalog.indstate.edu/preview_program.php?catoid=66&poid=12087",
+          "checkedAt": "2026-10-22",
+          "outcome": "blocked",
+          "note": "Official catalog link from actual PhD overview opened, returned blank body then browser state command timed out. Detailed catalog content not read; named specializations evidenced on current main PhD page, no invented courses."
+        }
+      ],
+      "limitations": [
+        "BA source shorthand remains unresolved separately from verified current department and doctoral provision.",
+        "Consortium partners remain distinct institutions. Current Indiana State PhD page identifies the degree as from Indiana State; no separate degree for each delivery partner or entry specialization."
+      ],
+      "duplicateOf": null,
+      "doctoralReview": {
+        "status": "verified",
+        "checkedAt": "2026-10-22",
+        "programmeIds": [
+          "indiana-state-university--technology-management-manufacturing-quality-phd"
+        ],
+        "branches": [
+          {
+            "branch": "business",
+            "reviewState": "checked",
+            "conclusion": "Full current Scott graduate inventory and actual Doctoral-filtered institutional programme list read. Business offerings MBA/HRMS/certificate, no eligible business doctorate; actual Ops/SCM department remains verified independently.",
+            "sourceUrls": [
+              "https://www.indianastate.edu/academics/colleges/business/graduate-programs",
+              "https://www.indianastate.edu/academics/colleges/business/marketing-operations",
+              "https://www.indianastate.edu/academics/academic-program-finder/search"
+            ]
+          },
+          {
+            "branch": "engineering",
+            "reviewState": "checked",
+            "conclusion": "Entire updated institutional doctoral list read, Technology Management sole Bailey engineering/technology doctorate. Full current programme overview explicitly names Manufacturing Systems and Quality Systems research specializations, original dissertation and consortium/college host. No extra doctorate inferred from individual specializations or delivery universities.",
+            "sourceUrls": [
+              "https://www.indianastate.edu/academics/academic-program-finder/search",
+              "https://www.indianastate.edu/academics/academic-program-finder/technology-management-phd"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://www.indianastate.edu/academics/colleges/business/marketing-operations",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Read entire current exact Department of Marketing and Operations page, Scott College host, manufacturing/service operations efficiency and global supply chain/quality/customisation scope, actual Business Analytics minor and SCM bachelor/minor degrees."
+          },
+          {
+            "url": "https://www.indianastate.edu/academics/colleges/business",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Read entire current Scott College overview, institutional identity, programme navigation and OSCM teaching description. Summary statistics not imported into dataset."
+          },
+          {
+            "url": "https://www.indianastate.edu/academics/colleges/business/graduate-programs",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Read full Scott College graduate inventory: MBA, Human Resources MS and Organizational Leadership and Learning graduate certificate. No business doctoral award listed."
+          },
+          {
+            "url": "https://www.indianastate.edu/academics/academic-program-finder/technology-management-phd",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Read entire displayed Technology Management PhD overview, exact Indiana State awarding identity and Bailey College host, consortium BGSU/UCM/ECU, all five named doctoral specializations including Manufacturing Systems and Quality Systems. Personalised research programme and original dissertation required. Other admission accordion details not expanded; no applications made."
+          },
+          {
+            "url": "https://www.indianastate.edu/academics/academic-program-finder/search",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Selected actual Doctoral programme-type checkbox; first returned list still stale, then read fully updated filtered results, Doctoral chip, all twelve named doctoral entries, no pagination. Technology Management sole Bailey engineering/technology entry; business college has no doctoral result. Other entries biology, psychology, education, health and spatial/earth science. No all-science dissertation census."
+          },
+          {
+            "url": "https://catalog.indstate.edu/preview_program.php?catoid=66&poid=12087",
+            "checkedAt": "2026-10-22",
+            "outcome": "blocked",
+            "note": "Official catalog link from actual PhD overview opened, returned blank body then browser state command timed out. Detailed catalog content not read; named specializations evidenced on current main PhD page, no invented courses."
+          }
+        ],
+        "limitations": [
+          "Source-bounded current institutional doctoral inventory coverage; detailed Technology Management catalog link failed, so no granular course/research-topic claims beyond explicit named doctoral specializations and original-research structure.",
+          "Consortium delivery/supervision and home-university dissertation defense do not create four degree records. Exact Indiana State awarding description from programme page retained."
+        ],
+        "coverageComplete": true
+      },
+      "addedAt": "2026-10-23T06:29:23Z",
+      "updatedAt": "2026-10-23T06:29:23Z"
+    },
+    {
       "id": "indiana-university",
       "status": "reviewed",
       "canonicalName": "Indiana University Bloomington",
@@ -38252,8 +38420,8 @@
       "id": "nazarbayev-university",
       "status": "reviewed",
       "canonicalName": "Nazarbayev University",
-      "universitySourceUrl": "https://nu.edu.kz/academics/schools/",
-      "checkedAt": "2026-10-20",
+      "universitySourceUrl": "https://nu.edu.kz/admissions/programs/",
+      "checkedAt": "2026-10-22",
       "reviewer": "Codex in Chrome",
       "units": [
         {
@@ -38282,6 +38450,18 @@
           ],
           "name": "School of Engineering",
           "id": "nazarbayev-university--school-engineering"
+        },
+        {
+          "id": "nazarbayev-university--mathematics",
+          "name": "Department of Mathematics",
+          "type": "department",
+          "school": "School of Computing and Artificial Intelligence",
+          "fields": [
+            "operations-research"
+          ],
+          "sourceUrl": "https://scai.nu.edu.kz/phd-math",
+          "checkedAt": "2026-10-22",
+          "evidence": "Mathematics PhD explicitly identifies Department of Mathematics and formal OR research area. Current central programme directory and SCAI About page map mathematics to SCAI; older SSH wording retained in programme aims is disclosed."
         }
       ],
       "decisions": [
@@ -38328,15 +38508,134 @@
           "checkedAt": "2026-10-20",
           "url": "https://nu.edu.kz/academics/schools/",
           "outcome": "read"
+        },
+        {
+          "url": "https://nu.edu.kz/admissions/programs/",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Entire rendered university A-Z degree directory read, including all doctoral, professional doctorate, masters and bachelor cards. Current school mapping separates SCAI from School of Engineering. PhD Business Administration distinct professional DBA. Master Engineering Management not doctorate."
+        },
+        {
+          "url": "https://scai.nu.edu.kz/phd-math",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Entire current Mathematics PhD page read. Exact Doctor of Philosophy, original doctoral thesis 204 ECTS, research area Optimization, Operations Research and Mathematical Finance explicitly includes OR; research-aligned OR elective is supplementary. Programme aims retain older Department of Mathematics, School of Sciences and Humanities wording despite current SCAI site/footer and central programme host."
+        },
+        {
+          "url": "https://scai.nu.edu.kz/about",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Entire current SCAI About page read, exact School of Computing and Artificial Intelligence, Nazarbayev University, mathematics educational and research provision; current school context corroborates central A-Z mapping."
+        },
+        {
+          "url": "https://gsb.nu.edu.kz/phd_in_ba",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Entire Business Administration PhD page read. Explicit core research fields Accounting, Business Economics, Finance, Management, Organizations and Strategy; original thesis. Operations professor appears in faculty list but no explicit Operations doctoral field established. Academic PhD versus professional DBA comparison separately read."
+        },
+        {
+          "url": "https://soe.nu.edu.kz/phd_in_set",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Entire Science, Engineering and Technology PhD page read. Original thesis, broad priority research energy/ICT/materials/sustainable/biomedical/robotics, advanced manufacturing technologies. No explicit OR/IE or substantive production-system planning field established."
+        },
+        {
+          "url": "https://soe.nu.edu.kz/phd_in_mae",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Entire Mechanical Engineering PhD page read. Original research, energy/biomedical/advanced design/manufacturing/control/transport/sustainability, full elective lists. Manufacturing processes/materials/control not automatically IE/Operations research."
         }
       ],
       "limitations": [
         "Current central schools inventory and engineering site use School of Engineering; some program text retains older School of Engineering and Digital Sciences.",
-        "No separate named Operations Management or Industrial Engineering department established; actual broad academic schools retained, degree program not fabricated as department."
+        "No separate named Operations Management or Industrial Engineering department established; actual broad academic schools retained, degree program not fabricated as department.",
+        "Mathematics PhD aims retain older School of Sciences and Humanities host wording; current central directory and SCAI school site map mathematics to SCAI. No restructuring date inferred."
       ],
       "duplicateOf": null,
       "addedAt": "2026-10-20T10:28:08Z",
-      "updatedAt": "2026-10-20T10:28:08Z"
+      "updatedAt": "2026-10-23T06:29:23Z",
+      "doctoralReview": {
+        "status": "verified",
+        "checkedAt": "2026-10-22",
+        "programmeIds": [
+          "nazarbayev-university--mathematics-phd-operations-research"
+        ],
+        "branches": [
+          {
+            "branch": "business",
+            "reviewState": "checked",
+            "sourceUrls": [
+              "https://nu.edu.kz/admissions/programs/",
+              "https://gsb.nu.edu.kz/phd_in_ba"
+            ],
+            "conclusion": "Entire PhD description and university programme directory read. Enumerated academic research fields do not explicitly include Operations; OM faculty listing alone not used as doctoral field proof. Professional DBA kept distinct."
+          },
+          {
+            "branch": "engineering",
+            "reviewState": "partial",
+            "sourceUrls": [
+              "https://nu.edu.kz/admissions/programs/",
+              "https://soe.nu.edu.kz/phd_in_set",
+              "https://soe.nu.edu.kz/phd_in_mae"
+            ],
+            "conclusion": "Full current programme directory and SET/Mechanical PhD pages read; broad advanced manufacturing/control not enough IE/Ops research proof. Other engineering/computing doctoral fields still incomplete."
+          },
+          {
+            "branch": "mathematics",
+            "reviewState": "checked",
+            "sourceUrls": [
+              "https://nu.edu.kz/admissions/programs/",
+              "https://scai.nu.edu.kz/phd-math",
+              "https://scai.nu.edu.kz/about"
+            ],
+            "conclusion": "Entire actual Mathematics PhD and current school context read. Explicit OR research area and original doctoral thesis establish eligible provision."
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://nu.edu.kz/admissions/programs/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Entire rendered university A-Z degree directory read, including all doctoral, professional doctorate, masters and bachelor cards. Current school mapping separates SCAI from School of Engineering. PhD Business Administration distinct professional DBA. Master Engineering Management not doctorate."
+          },
+          {
+            "url": "https://scai.nu.edu.kz/phd-math",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Entire current Mathematics PhD page read. Exact Doctor of Philosophy, original doctoral thesis 204 ECTS, research area Optimization, Operations Research and Mathematical Finance explicitly includes OR; research-aligned OR elective is supplementary. Programme aims retain older Department of Mathematics, School of Sciences and Humanities wording despite current SCAI site/footer and central programme host."
+          },
+          {
+            "url": "https://scai.nu.edu.kz/about",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Entire current SCAI About page read, exact School of Computing and Artificial Intelligence, Nazarbayev University, mathematics educational and research provision; current school context corroborates central A-Z mapping."
+          },
+          {
+            "url": "https://gsb.nu.edu.kz/phd_in_ba",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Entire Business Administration PhD page read. Explicit core research fields Accounting, Business Economics, Finance, Management, Organizations and Strategy; original thesis. Operations professor appears in faculty list but no explicit Operations doctoral field established. Academic PhD versus professional DBA comparison separately read."
+          },
+          {
+            "url": "https://soe.nu.edu.kz/phd_in_set",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Entire Science, Engineering and Technology PhD page read. Original thesis, broad priority research energy/ICT/materials/sustainable/biomedical/robotics, advanced manufacturing technologies. No explicit OR/IE or substantive production-system planning field established."
+          },
+          {
+            "url": "https://soe.nu.edu.kz/phd_in_mae",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Entire Mechanical Engineering PhD page read. Original research, energy/biomedical/advanced design/manufacturing/control/transport/sustainability, full elective lists. Manufacturing processes/materials/control not automatically IE/Operations research."
+          }
+        ],
+        "limitations": [
+          "Other engineering/computing doctoral research fields remain incomplete.",
+          "Prior 20 October broad-school facts and source-label decisions preserved with original dates.",
+          "Current SCAI versus older SSH mathematics host wording retained; no historical succession date inferred."
+        ],
+        "coverageComplete": false
+      }
     },
     {
       "id": "nc-state-university",
@@ -41027,7 +41326,75 @@
       "limitations": [],
       "duplicateOf": null,
       "addedAt": "2026-10-20T11:00:16Z",
-      "updatedAt": "2026-10-20T11:00:16Z"
+      "updatedAt": "2026-10-23T06:29:23Z",
+      "doctoralReview": {
+        "status": "verified",
+        "checkedAt": "2026-10-22",
+        "programmeIds": [
+          "northern-illinois-university--industrial-systems-engineering-phd"
+        ],
+        "branches": [
+          {
+            "branch": "business",
+            "reviewState": "checked",
+            "sourceUrls": [
+              "https://www.niu.edu/grad/academics/index.shtml?level=Doctoral#table"
+            ],
+            "conclusion": "Entire 27-result university doctoral inventory read, no business doctorate. Existing OMIS department remains a relevant unit independently of doctorate provision."
+          },
+          {
+            "branch": "engineering",
+            "reviewState": "partial",
+            "sourceUrls": [
+              "https://www.niu.edu/grad/academics/index.shtml?level=Doctoral#table",
+              "https://www.niu.edu/ceet/academics/industrial-and-systems-engineering/doctorate-industrial-systems.shtml",
+              "https://catalog.niu.edu/preview_program.php?catoid=66&poid=19354"
+            ],
+            "conclusion": "IE/Systems PhD and entire current curriculum verified. Other engineering doctorate research scope not yet exhaustively checked."
+          },
+          {
+            "branch": "mathematics",
+            "reviewState": "blocked",
+            "sourceUrls": [
+              "https://www.niu.edu/grad/academics/index.shtml?level=Doctoral#table",
+              "https://www.niu.edu/math/academics/graduate/doctorate.shtml"
+            ],
+            "conclusion": "Mathematical Sciences doctorate identified, exact official detail link blocked by browser client. No OR conclusion or negative inference."
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://www.niu.edu/grad/academics/index.shtml?level=Doctoral#table",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Selected official doctoral filter link and increased visible page-size selector to 100. Entire 27/27 doctoral table read, no business doctorate. Engineering IE/Systems, Mechanical, Electrical and Mathematical Sciences PhDs identified; law separately linked outside table."
+          },
+          {
+            "url": "https://www.niu.edu/ceet/academics/industrial-and-systems-engineering/doctorate-industrial-systems.shtml",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Entire actual Industrial and Systems Engineering PhD page read, 90 credits, exact department and College of Engineering and Engineering Technology. Healthcare operations, production/manufacturing and supply chain/transport remit. Main table initially linked MS page, so followed separate actual PhD link."
+          },
+          {
+            "url": "https://catalog.niu.edu/preview_program.php?catoid=66&poid=19354",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Entire current 2026–27 official doctoral programme catalogue read through final footer. Original independent research, 90 credits including 24 dissertation, mandatory Linear Programming and Network Flows, core human factors/ergonomics, quality, production/inventory control and simulation; candidacy and oral dissertation defence."
+          },
+          {
+            "url": "https://www.niu.edu/math/academics/graduate/doctorate.shtml",
+            "checkedAt": "2026-10-22",
+            "outcome": "blocked",
+            "note": "Official Mathematical Sciences doctoral link from university table returned browser ERR_BLOCKED_BY_CLIENT. No page content read and no alternate destination workaround attempted."
+          }
+        ],
+        "limitations": [
+          "Mathematical Sciences individual official source blocked; no workaround or eligibility inference.",
+          "Other engineering doctoral detailed scopes remain incomplete.",
+          "Prior reviewed university/unit facts and original check dates unchanged."
+        ],
+        "coverageComplete": false
+      }
     },
     {
       "id": "northern-kentucky-university",
@@ -45700,8 +46067,8 @@
       "id": "rochester-institute-of-technology",
       "status": "reviewed",
       "canonicalName": "Rochester Institute of Technology",
-      "universitySourceUrl": "https://www.rit.edu/",
-      "checkedAt": "2026-10-21",
+      "universitySourceUrl": "https://www.rit.edu/study/sustainability-phd",
+      "checkedAt": "2026-10-22",
       "reviewer": "Codex in Chrome",
       "units": [
         {
@@ -45732,6 +46099,19 @@
           "sourceUrl": "https://www.rit.edu/engineering/ise",
           "checkedAt": "2026-10-21",
           "evidence": "Official department page names its head, research and degrees; remit includes optimal distribution, shipment tracking, manufacturing systems and a supply-chain-management option."
+        },
+        {
+          "id": "rochester-institute-of-technology--golisano-institute-sustainability",
+          "name": "Golisano Institute for Sustainability",
+          "type": "institute",
+          "school": null,
+          "fields": [
+            "supply-chain",
+            "operations-management"
+          ],
+          "sourceUrl": "https://www.rit.edu/study/sustainability-phd",
+          "checkedAt": "2026-10-22",
+          "evidence": "Actual doctoral host sponsors novel sustainability research with explicit closed-loop SCM methodology, research area remanufacturing/resource recovery and transportation systems analysis."
         }
       ],
       "decisions": [
@@ -45798,12 +46178,100 @@
           "checkedAt": "2026-10-21",
           "outcome": "read",
           "note": "Separate technology college checked; no additional in-scope organizational unit verified."
+        },
+        {
+          "url": "https://www.rit.edu/study/sustainability-phd",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Entire Sustainability PhD rendered page read. Funded individual novel research projects under actual Golisano Institute for Sustainability; doctoral methods explicitly closed-loop supply chain management. Formal research areas circular economy with remanufacturing/resource recovery and transportation systems analysis, beyond generic sustainability branding. No formal separate SCM concentration asserted."
+        },
+        {
+          "url": "https://www.rit.edu/study/mathematical-modeling-phd",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Entire Mathematical Modeling PhD page read in overview and post-load curriculum segments. Original dissertation, three required foundation courses and research; listed inverse optimisation, statistics, biomedical, discrete maths/dynamical systems etc. Loaded five concentration course lists read. Generic optimisation/discrete algorithms not assumed OR research field."
         }
       ],
-      "limitations": [],
+      "limitations": [
+        "Broad Sustainability PhD supports specific closed-loop supply-chain and remanufacturing research; not every institute activity or graduate is classified Operations."
+      ],
       "duplicateOf": null,
       "addedAt": "2026-10-21T08:10:46Z",
-      "updatedAt": "2026-10-21T08:10:46Z"
+      "updatedAt": "2026-10-23T06:29:23Z",
+      "doctoralReview": {
+        "status": "verified",
+        "checkedAt": "2026-10-22",
+        "programmeIds": [
+          "rochester-institute-of-technology--mechanical-industrial-engineering-phd",
+          "rochester-institute-of-technology--sustainability-phd"
+        ],
+        "branches": [
+          {
+            "branch": "business",
+            "reviewState": "checked",
+            "sourceUrls": [
+              "https://www.rit.edu/study/doctoral",
+              "https://www.rit.edu/study/business-administration-phd"
+            ],
+            "conclusion": "Full doctoral inventory and business PhD research description read. Three specialties Digital Transformation, Finance/Accounting, Strategy/Innovation; no explicit Ops/SCM doctorate specialization established. Circular-economy student spotlight alone not sufficient field mapping."
+          },
+          {
+            "branch": "engineering",
+            "reviewState": "partial",
+            "sourceUrls": [
+              "https://www.rit.edu/study/doctoral",
+              "https://www.rit.edu/study/mechanical-and-industrial-engineering-phd",
+              "https://www.rit.edu/study/sustainability-phd"
+            ],
+            "conclusion": "Mechanical/Industrial Engineering PhD and broad Sustainability PhD closed-loop SCM/remanufacturing remit verified. Other engineering doctoral research scopes remain incomplete."
+          },
+          {
+            "branch": "mathematics",
+            "reviewState": "checked",
+            "sourceUrls": [
+              "https://www.rit.edu/study/mathematical-modeling-phd"
+            ],
+            "conclusion": "Entire mathematical modelling PhD research and listed concentration courses read; generic optimisation/discrete maths not explicit OR field, no additional eligible route."
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://www.rit.edu/study/doctoral",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full current doctoral degree list read via loaded AX state, including combined Mechanical/Industrial Engineering, Business Administration, Mathematical Modeling, Sustainability and other PhDs; OTD distinct."
+          },
+          {
+            "url": "https://www.rit.edu/study/mechanical-and-industrial-engineering-phd",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Entire rendered programme body read and expanded overview checked. Exact PhD, industrial engineering research and ergonomics/simulation/optimisation, direct ISE/ME research links, Kate Gleason College host. Current 2026–27 curriculum loaded foundation electives; year headings but course cells absent from accessible text, no claim full detailed course sequence. Doctoral research/candidacy/dissertation defence resource links present, not opened."
+          },
+          {
+            "url": "https://www.rit.edu/study/business-administration-phd",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Entire current Business Administration PhD page read. Three specialties Digital Transformation, Finance/Accounting, Strategy/Innovation; last explicitly not accepting students for 2027–28 alone, not treated permanent suspension. Circular-economy student spotlight visible but not used to invent separate SCM doctoral field."
+          },
+          {
+            "url": "https://www.rit.edu/study/sustainability-phd",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Entire Sustainability PhD rendered page read. Funded individual novel research projects under actual Golisano Institute for Sustainability; doctoral methods explicitly closed-loop supply chain management. Formal research areas circular economy with remanufacturing/resource recovery and transportation systems analysis, beyond generic sustainability branding. No formal separate SCM concentration asserted."
+          },
+          {
+            "url": "https://www.rit.edu/study/mathematical-modeling-phd",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Entire Mathematical Modeling PhD page read in overview and post-load curriculum segments. Original dissertation, three required foundation courses and research; listed inverse optimisation, statistics, biomedical, discrete maths/dynamical systems etc. Loaded five concentration course lists read. Generic optimisation/discrete algorithms not assumed OR research field."
+          }
+        ],
+        "limitations": [
+          "Other current engineering doctorate research fields remain incomplete; Mathematical Modeling reviewed separately without explicit OR field.",
+          "Prior reviewed university/department facts and original 21 October dates preserved."
+        ],
+        "coverageComplete": false
+      }
     },
     {
       "id": "rochester-institute-of-technology-saunders-college-of-business",
@@ -85715,6 +86183,19 @@
           "sourceUrl": "https://business.vanderbilt.edu/faculty/directory/",
           "checkedAt": "2026-10-22",
           "evidence": "Official current Owen faculty directory lists this exact Subject Area. Selecting that area displays six faculty entries, including multiple explicit Operations Management appointments and an Operations Management and Quantitative Methods appointment. Recorded as a faculty area, not an asserted department."
+        },
+        {
+          "id": "vanderbilt-university--transportation-operational-resiliency",
+          "name": "Vanderbilt Center for Transportation and Operational Resiliency",
+          "type": "center",
+          "school": "School of Engineering",
+          "fields": [
+            "logistics",
+            "operations-management"
+          ],
+          "sourceUrl": "https://www.vanderbilt.edu/vector/",
+          "checkedAt": "2026-10-22",
+          "evidence": "Official centre homepage explicitly names current research in intermodal freight, policy/management/operations, incident and emergency operations, and transportation system management. Current CEE department page directly lists VECTOR among its research centres; centre Academics explicitly offers doctoral transportation study via Civil and Environmental Engineering."
         }
       ],
       "decisions": [
@@ -85751,15 +86232,42 @@
           "checkedAt": "2026-10-22",
           "outcome": "read",
           "note": "Full current faculty subject-area inventory read; actual Operations Management & Quantitative Methods filter selected and all six resulting area entries read."
+        },
+        {
+          "url": "https://www.vanderbilt.edu/vector/",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Full current centre homepage research topics and institutional remit read. Exact title Resiliency retained; CEE link uses Resilience variant."
+        },
+        {
+          "url": "https://www.vanderbilt.edu/vector/academics/",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Full centre doctorate relationship and actual expanded core/elective panels read; eligibility rests on centre current research and direct degree relationship, not elective course titles."
+        },
+        {
+          "url": "https://engineering.vanderbilt.edu/departments/civil-environmental-engineering/",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Full current official department page read; actual research centre links and graduate degree links followed."
+        },
+        {
+          "url": "https://engineering.vanderbilt.edu/departments/civil-environmental-engineering/graduate-programs/",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Full graduate overview and actual Civil Engineering and Risk/Reliability/Resilience panels expanded/read. Explicit Civil Engineering PhD, dissertation final defense, research areas; separate RRR is MEng, not added doctorate."
         }
       ],
       "limitations": [
-        "Current source label and school relationship resolved as faculty area. Engineering doctoral inventory and transportation research eligibility remain incomplete separately; this unit observation does not assert Owen doctoral provision."
+        "Current source label and school relationship resolved as faculty area. Engineering doctoral inventory and transportation research eligibility remain incomplete separately; this unit observation does not assert Owen doctoral provision.",
+        "VECTOR homepage uses Operational Resiliency while department link uses Operational Resilience; treated as the same actually linked centre, not duplicate units. Wider engineering doctoral inventory remains incomplete."
       ],
       "doctoralReview": {
-        "status": "partial",
+        "status": "verified",
         "checkedAt": "2026-10-22",
-        "programmeIds": [],
+        "programmeIds": [
+          "vanderbilt-university--civil-engineering-phd-transportation-operations"
+        ],
         "branches": [
           {
             "branch": "business",
@@ -85772,10 +86280,13 @@
           {
             "branch": "engineering",
             "reviewState": "partial",
-            "conclusion": "Full current engineering graduate overview and six department listing read; interactive programme finder did not display its records. VECTOR academics explicitly offers PhD via Civil/Environmental transportation programme, but relevant OR/IE/logistics doctoral field not established from transport title alone.",
+            "conclusion": "Current department overview/graduate programme and expanded Civil Engineering doctorate panel read. Explicit VECTOR transportation doctorate connection and centre current intermodal freight/operations remit establish an eligible pathway. Broader engineering degree inventory and other departments remain incomplete; separate RRR is MEng.",
             "sourceUrls": [
               "https://engineering.vanderbilt.edu/academics/graduate/",
-              "https://www.vanderbilt.edu/vector/academics/"
+              "https://www.vanderbilt.edu/vector/academics/",
+              "https://www.vanderbilt.edu/vector/",
+              "https://engineering.vanderbilt.edu/departments/civil-environmental-engineering/",
+              "https://engineering.vanderbilt.edu/departments/civil-environmental-engineering/graduate-programs/"
             ]
           }
         ],
@@ -85797,15 +86308,40 @@
             "checkedAt": "2026-10-22",
             "outcome": "read",
             "note": "Full official VECTOR academics page read: MS/MEng/PhD and CivilEnvironmental transportation programme relationship; no named qualifying OR/IE/logistics field."
+          },
+          {
+            "url": "https://www.vanderbilt.edu/vector/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full current centre homepage research topics and institutional remit read. Exact title Resiliency retained; CEE link uses Resilience variant."
+          },
+          {
+            "url": "https://www.vanderbilt.edu/vector/academics/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full centre doctorate relationship and actual expanded core/elective panels read; eligibility rests on centre current research and direct degree relationship, not elective course titles."
+          },
+          {
+            "url": "https://engineering.vanderbilt.edu/departments/civil-environmental-engineering/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full current official department page read; actual research centre links and graduate degree links followed."
+          },
+          {
+            "url": "https://engineering.vanderbilt.edu/departments/civil-environmental-engineering/graduate-programs/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full graduate overview and actual Civil Engineering and Risk/Reliability/Resilience panels expanded/read. Explicit Civil Engineering PhD, dissertation final defense, research areas; separate RRR is MEng, not added doctorate."
           }
         ],
         "limitations": [
-          "Business scope reviewed, but specific engineering transportation doctorate qualification/field link and full engineering doctoral programme inventory remain incomplete. No programme assigned from faculty interests, course names or general transport title."
+          "Business doctoral inventory remains checked with no Owen doctorate listed. Wider engineering doctoral programme inventory remains incomplete.",
+          "No independently titled OR/IE doctorate inferred. Current source-bounded transportation logistics/operations research pathway documented separately from representative electives."
         ],
         "coverageComplete": false
       },
       "addedAt": "2026-10-22T06:53:24Z",
-      "updatedAt": "2026-10-22T17:42:14Z"
+      "updatedAt": "2026-10-23T06:29:23Z"
     },
     {
       "id": "vienna-university-of-economics-and-business",

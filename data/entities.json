@@ -1,7 +1,7 @@
 {
  "version": 1,
  "metadata": {
-  "generatedAt": "2026-10-22",
+  "generatedAt": "2026-10-23",
   "derivedFrom": [
    "data/institutions.json",
    "data/universities.json",
@@ -18,7 +18,7 @@
    "phdInstitutions": 434,
    "directoryUniversities": 608,
    "firstEmployers": 493,
-   "withPrograms": 236,
+   "withPrograms": 241,
    "inBothDatabases": 210,
    "directoryOnly": 328,
    "peopleOnly": 224,
@@ -47139,7 +47139,8 @@
    "roles": [
     "phd-institution",
     "directory-university",
-    "first-employer"
+    "first-employer",
+    "program-register"
    ],
    "people": {
     "institutions": [
@@ -47283,7 +47284,19 @@
      }
     ]
    },
-   "programs": [],
+   "programs": [
+    {
+     "id": "vanderbilt-university--civil-engineering-phd-transportation-operations",
+     "programName": "Doctor of Philosophy (Ph.D.) — Civil Engineering",
+     "specialization": "Transportation engineering — intermodal freight and transportation operations research",
+     "universityId": "vanderbilt-university",
+     "school": "School of Engineering",
+     "degree": "Ph.D.",
+     "field": "Logistics; Operations Management",
+     "status": "active",
+     "statusAsOf": "2026-10-22"
+    }
+   ],
    "sources": [
     {
      "url": "https://omlist.edutool.org/phd/by-year.html",
@@ -47304,6 +47317,10 @@
     {
      "url": "data/placements.json",
      "title": "Verified first-job records (people database)"
+    },
+    {
+     "url": "data/doctoral-programs.json",
+     "title": "Historical doctoral program register"
     }
    ],
    "review": {
@@ -47327,12 +47344,17 @@
       "source": "employers",
       "employer": "Vanderbilt University (Department of Civil and Environmental Engineering)",
       "match": "wikidata"
+     },
+     {
+      "source": "programs",
+      "program": "vanderbilt-university--civil-engineering-phd-transportation-operations",
+      "match": "exact"
      }
     ],
     "conflicts": []
    },
    "addedAt": "2026-10-16T13:49:36Z",
-   "updatedAt": "2026-10-20T08:28:39Z"
+   "updatedAt": "2026-10-23T06:29:23Z"
   },
   {
    "id": "wd:Q1358296",
@@ -79336,7 +79358,8 @@
    ],
    "logo": null,
    "roles": [
-    "directory-university"
+    "directory-university",
+    "program-register"
    ],
    "people": null,
    "directory": {
@@ -79374,19 +79397,41 @@
     ]
    },
    "employer": null,
-   "programs": [],
+   "programs": [
+    {
+     "id": "indiana-state-university--technology-management-manufacturing-quality-phd",
+     "programName": "Doctor of Philosophy in Technology Management",
+     "specialization": "Manufacturing Systems; Quality Systems",
+     "universityId": "indiana-state-university",
+     "school": "Bailey College of Engineering & Technology",
+     "degree": "Doctor of Philosophy (PhD)",
+     "field": "Industrial Engineering; Operations Management",
+     "status": "active",
+     "statusAsOf": "2026-10-22"
+    }
+   ],
    "sources": [
     {
      "url": "https://www.operationsacademia.org/universities",
      "title": "Operations Academia universities directory (universities database)"
+    },
+    {
+     "url": "data/doctoral-programs.json",
+     "title": "Historical doctoral program register"
     }
    ],
    "review": {
-    "matches": [],
+    "matches": [
+     {
+      "source": "programs",
+      "program": "indiana-state-university--technology-management-manufacturing-quality-phd",
+      "match": "exact"
+     }
+    ],
     "conflicts": []
    },
    "addedAt": "2026-10-16T13:49:36Z",
-   "updatedAt": "2026-10-16T13:49:36Z"
+   "updatedAt": "2026-10-23T06:29:23Z"
   },
   {
    "id": "wd:Q1002573",
@@ -92177,7 +92222,8 @@
    ],
    "logo": null,
    "roles": [
-    "directory-university"
+    "directory-university",
+    "program-register"
    ],
    "people": null,
    "directory": {
@@ -92206,19 +92252,41 @@
     ]
    },
    "employer": null,
-   "programs": [],
+   "programs": [
+    {
+     "id": "nazarbayev-university--mathematics-phd-operations-research",
+     "programName": "Mathematics",
+     "specialization": null,
+     "universityId": "nazarbayev-university",
+     "school": "School of Computing and Artificial Intelligence",
+     "degree": "PhD",
+     "field": "Operations Research",
+     "status": "active",
+     "statusAsOf": "2026-10-22"
+    }
+   ],
    "sources": [
     {
      "url": "https://www.operationsacademia.org/universities",
      "title": "Operations Academia universities directory (universities database)"
+    },
+    {
+     "url": "data/doctoral-programs.json",
+     "title": "Historical doctoral program register"
     }
    ],
    "review": {
-    "matches": [],
+    "matches": [
+     {
+      "source": "programs",
+      "program": "nazarbayev-university--mathematics-phd-operations-research",
+      "match": "exact"
+     }
+    ],
     "conflicts": []
    },
    "addedAt": "2026-10-16T13:49:36Z",
-   "updatedAt": "2026-10-16T13:49:36Z"
+   "updatedAt": "2026-10-23T06:29:23Z"
   },
   {
    "id": "name:neeley-school-of-business-texas-christian-univ",
@@ -92729,7 +92797,8 @@
    ],
    "logo": null,
    "roles": [
-    "directory-university"
+    "directory-university",
+    "program-register"
    ],
    "people": null,
    "directory": {
@@ -92758,19 +92827,41 @@
     ]
    },
    "employer": null,
-   "programs": [],
+   "programs": [
+    {
+     "id": "northern-illinois-university--industrial-systems-engineering-phd",
+     "programName": "Industrial and Systems Engineering",
+     "specialization": null,
+     "universityId": "northern-illinois-university",
+     "school": "College of Engineering and Engineering Technology",
+     "degree": "PhD",
+     "field": "Industrial Engineering; Operations Research; Operations Management; Supply Chain Management",
+     "status": "active",
+     "statusAsOf": "2026-10-22"
+    }
+   ],
    "sources": [
     {
      "url": "https://www.operationsacademia.org/universities",
      "title": "Operations Academia universities directory (universities database)"
+    },
+    {
+     "url": "data/doctoral-programs.json",
+     "title": "Historical doctoral program register"
     }
    ],
    "review": {
-    "matches": [],
+    "matches": [
+     {
+      "source": "programs",
+      "program": "northern-illinois-university--industrial-systems-engineering-phd",
+      "match": "exact"
+     }
+    ],
     "conflicts": []
    },
    "addedAt": "2026-10-16T13:49:36Z",
-   "updatedAt": "2026-10-16T13:49:36Z"
+   "updatedAt": "2026-10-23T06:29:23Z"
   },
   {
    "id": "wd:Q2001033",
@@ -93505,7 +93596,8 @@
    "logo": null,
    "roles": [
     "directory-university",
-    "first-employer"
+    "first-employer",
+    "program-register"
    ],
    "people": null,
    "directory": {
@@ -93570,7 +93662,30 @@
      }
     ]
    },
-   "programs": [],
+   "programs": [
+    {
+     "id": "rochester-institute-of-technology--mechanical-industrial-engineering-phd",
+     "programName": "Mechanical and Industrial Engineering",
+     "specialization": null,
+     "universityId": "rochester-institute-of-technology",
+     "school": "Kate Gleason College of Engineering",
+     "degree": "PhD",
+     "field": "Industrial Engineering; Operations Research; Operations Management",
+     "status": "active",
+     "statusAsOf": "2026-10-22"
+    },
+    {
+     "id": "rochester-institute-of-technology--sustainability-phd",
+     "programName": "Sustainability",
+     "specialization": null,
+     "universityId": "rochester-institute-of-technology",
+     "school": "Golisano Institute for Sustainability",
+     "degree": "PhD",
+     "field": "Supply Chain Management; Operations Management",
+     "status": "active",
+     "statusAsOf": "2026-10-22"
+    }
+   ],
    "sources": [
     {
      "url": "https://www.operationsacademia.org/universities",
@@ -93579,6 +93694,10 @@
     {
      "url": "data/placements.json",
      "title": "Verified first-job records (people database)"
+    },
+    {
+     "url": "data/doctoral-programs.json",
+     "title": "Historical doctoral program register"
     }
    ],
    "review": {
@@ -93587,12 +93706,22 @@
       "source": "employers",
       "employer": "Rochester Institute of Technology",
       "match": "wikidata"
+     },
+     {
+      "source": "programs",
+      "program": "rochester-institute-of-technology--mechanical-industrial-engineering-phd",
+      "match": "exact"
+     },
+     {
+      "source": "programs",
+      "program": "rochester-institute-of-technology--sustainability-phd",
+      "match": "exact"
      }
     ],
     "conflicts": []
    },
    "addedAt": "2026-10-16T13:49:36Z",
-   "updatedAt": "2026-10-20T08:28:39Z"
+   "updatedAt": "2026-10-23T06:29:23Z"
   },
   {
    "id": "name:rochester-institute-of-technology-saunders-college-of-business",

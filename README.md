@@ -2,6 +2,8 @@
 
 Public website: https://www.stouras.com/opsphdplacements/
 
+Stage 1 integration checkpoint (23 October 2026, pending publication): 385 verified relevant doctoral routes at 240 institutions. The directory frame has 512 completed official-source unit reviews, 119 partial, 5 blocked and 30 pending. Source-bounded doctoral reviews remain incomplete; Stages 2–4 are held. See `research-handoff/universities/CONTINUATION-28-2026-10-23.md` for this release's exact evidence and limitations.
+
 An independent, static research directory for Operations Research, Operations Management and Industrial Engineering. The visual organization is inspired by Econ PhD Placements; all application code is original.
 
 ## Continue the project
