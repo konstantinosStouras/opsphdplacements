@@ -18,7 +18,7 @@
    "phdInstitutions": 434,
    "directoryUniversities": 609,
    "firstEmployers": 493,
-   "withPrograms": 248,
+   "withPrograms": 249,
    "inBothDatabases": 211,
    "directoryOnly": 328,
    "peopleOnly": 223,
@@ -98983,7 +98983,8 @@
    "logo": null,
    "roles": [
     "directory-university",
-    "first-employer"
+    "first-employer",
+    "program-register"
    ],
    "people": null,
    "directory": {
@@ -99052,7 +99053,19 @@
      }
     ]
    },
-   "programs": [],
+   "programs": [
+    {
+     "id": "university-of-nevada--mathematics-phd-operations-research",
+     "programName": "Mathematics",
+     "specialization": null,
+     "universityId": "university-of-nevada",
+     "school": "College of Science",
+     "degree": "Ph.D.",
+     "field": "Operations Research",
+     "status": "active",
+     "statusAsOf": "2026-10-22"
+    }
+   ],
    "sources": [
     {
      "url": "https://www.operationsacademia.org/universities",
@@ -99065,6 +99078,10 @@
     {
      "url": "data/placements.json",
      "title": "Verified first-job records (people database)"
+    },
+    {
+     "url": "data/doctoral-programs.json",
+     "title": "Historical doctoral program register"
     }
    ],
    "review": {
@@ -99073,12 +99090,17 @@
       "source": "employers",
       "employer": "University of Nevada, Reno",
       "match": "wikidata"
+     },
+     {
+      "source": "programs",
+      "program": "university-of-nevada--mathematics-phd-operations-research",
+      "match": "exact"
      }
     ],
     "conflicts": []
    },
    "addedAt": "2026-10-16T13:49:36Z",
-   "updatedAt": "2026-10-20T08:28:39Z"
+   "updatedAt": "2026-10-23T07:41:48Z"
   },
   {
    "id": "name:university-of-new-hampshire",
