@@ -1,0 +1,7 @@
+# Stage 1 continuation 34 — 23 October 2026
+
+The UMass Amherst unit proposal from `continuation-38/shard-c/` and latest additive doctoral proposal from `continuation-39/shard-c/` were integrated together. Current official business and engineering inventories establish two distinct eligible doctorates: the broad Management PhD with Operations Management concentration, and Industrial Engineering and Operations Research PhD. The source-bounded business and engineering branch review is complete. The 2025/26 bulletin's award wording retains its original source date, while separately checked current school pages establish live provision. Evidence, primary URLs, exact host units and limitations are in the two proposals and public records.
+
+The public register now has 409 programme records, 400 verified relevant routes and 244 providers. The unfinished grouped discovery identity list has 329 entries, separate from 182 unresolved OM List reported-degree labels. Source-unit assertions and current directory/posting reconciliation still prevent Stage 1 completion. Stages 2–4 remain held.
+
+The paired unit and doctoral proposal SHA-256 hashes are `AFDBE89A957BD31A41211AC7EEE75740E2EE58D7BE6C93D3AD45C6AF0DDBEC8E` and `45D5190F9F93F240D9B9F20A9204485697E13B0265176116B495DBC1393C3F6D`. Merge previews, the full test suite (51/51), data validation, duplicate-display audit and static build passed with normal Windows file permissions. GitHub Pages deployment and live row require confirmation.

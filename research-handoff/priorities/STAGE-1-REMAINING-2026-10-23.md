@@ -2,7 +2,7 @@
 
 This is an alphabetical planning snapshot from the published university frame and the OM List reported-PhD-institution queue. It is **not** a list of confirmed PhD providers. Some institutions already have frozen official-source proposals awaiting integrator review and publication; they remain here until the public register records the outcome. A missing or partial doctoral review never means that no qualifying doctorate exists.
 
-The published 666 university/campus source records group into 579 display identities; 330 identities have an incomplete unit review or doctoral branch check. Of the source records, 154 have incomplete unit reviews and 327 lack a complete current doctoral branch scope. The separate OM List queue has 182 reported institution labels still needing identity reconciliation. These lists overlap in real institutions but are not merged without accepted evidence. Source-unit assertions and live directory/posting coverage are additional Stage 1 gates.
+The published 666 university/campus source records group into 579 display identities; 329 identities have an incomplete unit review or doctoral branch check. Of the source records, 154 have incomplete unit reviews and 326 lack a complete current doctoral branch scope. The separate OM List queue has 182 reported institution labels still needing identity reconciliation. These lists overlap in real institutions but are not merged without accepted evidence. Source-unit assertions and live directory/posting coverage are additional Stage 1 gates.
 
 ## In the university/campus discovery frame
 
@@ -286,58 +286,57 @@ The published 666 university/campus source records group into 579 display identi
 | 276 | University of Macau | doctoral branch scope |
 | 277 | University of Mannheim | doctoral branch scope |
 | 278 | University of Maryland | unit/identity: partial; doctoral branch scope |
-| 279 | University of Massachusetts Amherst | doctoral branch scope |
-| 280 | University of Miami | doctoral branch scope |
-| 281 | University of Missouri | doctoral branch scope |
-| 282 | University of Missouri-Kansas City | doctoral branch scope |
-| 283 | University of Missouri–St. Louis | doctoral branch scope |
-| 284 | University of Nevada, Las Vegas | doctoral branch scope |
-| 285 | University of Nevada, Reno | doctoral branch scope |
-| 286 | University of New Hampshire | unit/identity: pending; doctoral branch scope |
-| 287 | University of New Haven | unit/identity: partial |
-| 288 | University of New South Wales | doctoral branch scope |
-| 289 | University of Northern Iowa | doctoral branch scope |
-| 290 | University of Notre Dame | doctoral branch scope |
-| 291 | University of Oxford | doctoral branch scope |
-| 292 | University of Pennsylvania | doctoral branch scope |
-| 293 | University of Puget Sound | unit/identity: partial |
-| 294 | University of Science and Technology of China | doctoral branch scope |
-| 295 | University of Southern Denmark | doctoral branch scope |
-| 296 | University of Stirling | unit/identity: partial |
-| 297 | University of the Virgin Islands | unit/identity: partial |
-| 298 | University of Toronto | unit/identity: partial |
-| 299 | University of Toronto Mississauga | doctoral branch scope |
-| 300 | University of Toronto Scarborough | doctoral branch scope |
-| 301 | University of Vienna | unit/identity: partial; doctoral branch scope |
-| 302 | University of Virginia | unit/identity: partial; doctoral branch scope |
-| 303 | University of Waikato | unit/identity: partial; doctoral branch scope |
-| 304 | University of Warwick | unit/identity: partial; doctoral branch scope |
-| 305 | University of Washington Tacoma | unit/identity: partial |
-| 306 | University of Windsor | unit/identity: pending; doctoral branch scope |
-| 307 | University of Zurich | doctoral branch scope |
-| 308 | Valley City State University | unit/identity: partial |
-| 309 | Valparaiso University | unit/identity: pending; doctoral branch scope |
-| 310 | Vanderbilt University | doctoral branch scope |
-| 311 | Vienna University of Economics and Business | doctoral branch scope |
-| 312 | Villanova University | unit/identity: partial; doctoral branch scope |
-| 313 | VinUniversity | doctoral branch scope |
-| 314 | Virginia Commonwealth University | doctoral branch scope |
-| 315 | Virginia Polytechnic Institute and State University | unit/identity: partial |
-| 316 | Vrije Universiteit Amsterdam | doctoral branch scope |
-| 317 | Wageningen University | doctoral branch scope |
-| 318 | Wake Forest University | doctoral branch scope |
-| 319 | Wayne State University | doctoral branch scope |
-| 320 | West Virginia University | unit/identity: partial; doctoral branch scope |
-| 321 | Westfield State University | unit/identity: partial |
-| 322 | Wheaton College of Massachusetts | unit/identity: blocked; doctoral branch scope |
-| 323 | Wichita State University | doctoral branch scope |
-| 324 | William & Mary | doctoral branch scope |
-| 325 | Winona State University | unit/identity: partial |
-| 326 | Worcester Polytechnic Institute | doctoral branch scope |
-| 327 | Xi'an Jiaotong University | unit/identity: partial; doctoral branch scope |
-| 328 | Xi'an Jiaotong-Liverpool University | doctoral branch scope |
-| 329 | York University | doctoral branch scope |
-| 330 | Zhejiang University | unit/identity: partial; doctoral branch scope |
+| 279 | University of Miami | doctoral branch scope |
+| 280 | University of Missouri | doctoral branch scope |
+| 281 | University of Missouri-Kansas City | doctoral branch scope |
+| 282 | University of Missouri–St. Louis | doctoral branch scope |
+| 283 | University of Nevada, Las Vegas | doctoral branch scope |
+| 284 | University of Nevada, Reno | doctoral branch scope |
+| 285 | University of New Hampshire | unit/identity: pending; doctoral branch scope |
+| 286 | University of New Haven | unit/identity: partial |
+| 287 | University of New South Wales | doctoral branch scope |
+| 288 | University of Northern Iowa | doctoral branch scope |
+| 289 | University of Notre Dame | doctoral branch scope |
+| 290 | University of Oxford | doctoral branch scope |
+| 291 | University of Pennsylvania | doctoral branch scope |
+| 292 | University of Puget Sound | unit/identity: partial |
+| 293 | University of Science and Technology of China | doctoral branch scope |
+| 294 | University of Southern Denmark | doctoral branch scope |
+| 295 | University of Stirling | unit/identity: partial |
+| 296 | University of the Virgin Islands | unit/identity: partial |
+| 297 | University of Toronto | unit/identity: partial |
+| 298 | University of Toronto Mississauga | doctoral branch scope |
+| 299 | University of Toronto Scarborough | doctoral branch scope |
+| 300 | University of Vienna | unit/identity: partial; doctoral branch scope |
+| 301 | University of Virginia | unit/identity: partial; doctoral branch scope |
+| 302 | University of Waikato | unit/identity: partial; doctoral branch scope |
+| 303 | University of Warwick | unit/identity: partial; doctoral branch scope |
+| 304 | University of Washington Tacoma | unit/identity: partial |
+| 305 | University of Windsor | unit/identity: pending; doctoral branch scope |
+| 306 | University of Zurich | doctoral branch scope |
+| 307 | Valley City State University | unit/identity: partial |
+| 308 | Valparaiso University | unit/identity: pending; doctoral branch scope |
+| 309 | Vanderbilt University | doctoral branch scope |
+| 310 | Vienna University of Economics and Business | doctoral branch scope |
+| 311 | Villanova University | unit/identity: partial; doctoral branch scope |
+| 312 | VinUniversity | doctoral branch scope |
+| 313 | Virginia Commonwealth University | doctoral branch scope |
+| 314 | Virginia Polytechnic Institute and State University | unit/identity: partial |
+| 315 | Vrije Universiteit Amsterdam | doctoral branch scope |
+| 316 | Wageningen University | doctoral branch scope |
+| 317 | Wake Forest University | doctoral branch scope |
+| 318 | Wayne State University | doctoral branch scope |
+| 319 | West Virginia University | unit/identity: partial; doctoral branch scope |
+| 320 | Westfield State University | unit/identity: partial |
+| 321 | Wheaton College of Massachusetts | unit/identity: blocked; doctoral branch scope |
+| 322 | Wichita State University | doctoral branch scope |
+| 323 | William & Mary | doctoral branch scope |
+| 324 | Winona State University | unit/identity: partial |
+| 325 | Worcester Polytechnic Institute | doctoral branch scope |
+| 326 | Xi'an Jiaotong University | unit/identity: partial; doctoral branch scope |
+| 327 | Xi'an Jiaotong-Liverpool University | doctoral branch scope |
+| 328 | York University | doctoral branch scope |
+| 329 | Zhejiang University | unit/identity: partial; doctoral branch scope |
 
 ## OM List reported PhD institutions without an accepted source-record match
 
