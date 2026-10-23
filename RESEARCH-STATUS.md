@@ -1,6 +1,6 @@
 # Research status
 
-Generated from committed-format public datasets by `node scripts/update-research-status.mjs`. People-ledger snapshot check date: 2026-10-17. Doctoral source checks run through 2026-10-22. Refresh this file with each data release. Git history identifies the published revision.
+Generated from committed-format public datasets by `node scripts/update-research-status.mjs`. People-ledger snapshot check date: 2026-10-17. Doctoral source checks run through 2026-10-23. Refresh this file with each data release. Git history identifies the published revision.
 
 | Measure | Count |
 |---|---:|
@@ -12,9 +12,9 @@ Generated from committed-format public datasets by `node scripts/update-research
 | Researched but unresolved | 1070 |
 | Degree completion unconfirmed | 4 |
 | Pending individual review | 0 |
-| Doctoral register records, including historical and unresolved routes | 401 |
-| Verified relevant doctoral routes (tracks may overlap; admissions may be suspended) | 392 |
-| Institutions with verified relevant doctoral provision | 240 |
+| Doctoral register records, including historical and unresolved routes | 404 |
+| Verified relevant doctoral routes (tracks may overlap; admissions may be suspended) | 395 |
+| Institutions with verified relevant doctoral provision | 241 |
 | Names on program graduate and placement pages (person-years) | 14451 |
 | of which listed under an operations area | 2161 |
 | Institutions with such a page read | 117 |
@@ -25,7 +25,7 @@ Generated from committed-format public datasets by `node scripts/update-research
 | University directory records partially reviewed | 119 |
 | University directory records blocked by source access | 5 |
 | University directory records awaiting review | 30 |
-| Discovery source records with doctoral observations | 537 |
+| Discovery source records with doctoral observations | 538 |
 | of which current branch scope explicitly complete | 337 |
 
 The program register is partial. It includes historical/predecessor records; its total is not the number of active programs worldwide. The graduate lists are what the programs' own pages list (live and archived copies), with the year's meaning as each page gives it; they are partial rosters, not a census. No complete graduate census, comprehensive employment-history panel, advisor dataset or publication-at-graduation dataset has been collected yet. Their schema and research rules are prepared.
