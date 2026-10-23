@@ -3,6 +3,11 @@ import assert from 'node:assert/strict';
 import {validateDoctoralProposal,isPhdDegree,canResolveCredential} from './doctoral-proposal-schema.mjs';
 import {isCurrentPhdProgramme} from '../assets/program-model.js';
 import {organisationRows} from '../assets/organisation-model.js';
+test('official Science suffix remains one PhD credential, while other doctoral titles stay distinct',()=>{
+ assert(isPhdDegree('Doctor of Philosophy - Science'));
+ assert(isCurrentPhdProgramme({status:'active',degree:'Doctor of Philosophy - Science'}));
+ assert(!isPhdDegree('Doctor of Business Administration - Science'));
+});
 const universities=[{id:'u'},{id:'other'}],reviews=[{id:'u',duplicateOf:null,units:[{id:'u--operations'}]},{id:'other',duplicateOf:null,units:[{id:'other--ie'}]}];
 const proposal=()=>({universityId:'u',checkedAt:'2026-10-21',status:'verified',programmes:[{id:'u--phd-om',programName:'Business Administration',degree:'PhD',specialization:'Operations Management',school:'Business School',department:null,unitIds:['u--operations'],fields:['Operations Management'],status:'active',sourceUrl:'https://example.edu/phd',checkedAt:'2026-10-21',evidence:'Official doctoral curriculum explicitly offers Operations Management specialization.',limitations:[]}],branches:[{branch:'business',conclusion:'Named doctoral track verified; engineering not yet checked.',sourceUrls:['https://example.edu/phd']}],sources:[{url:'https://example.edu/phd',checkedAt:'2026-10-21',outcome:'read',note:'Doctoral curriculum and exact specialization read.'}],limitations:['Engineering inventory remains to be checked.']});
 test('doctoral evidence cannot be replaced by an unavailable source or a different university unit',()=>{
