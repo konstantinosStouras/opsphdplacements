@@ -1,0 +1,144 @@
+{
+  "id": "university-of-british-columbia",
+  "status": "partial",
+  "canonicalName": "The University of British Columbia",
+  "universitySourceUrl": "https://www.sauder.ubc.ca/thought-leadership/divisions/operations-and-logistics",
+  "checkedAt": "2026-10-20",
+  "reviewer": "Codex in Chrome",
+  "units": [
+    {
+      "id": "ubc-sauder-school-of-business--operations-logistics",
+      "name": "Operations & Logistics Division",
+      "school": "UBC Sauder School of Business",
+      "type": "division",
+      "fields": [
+        "operations-management",
+        "operations-research",
+        "supply-chain",
+        "logistics"
+      ],
+      "sourceUrl": "https://www.sauder.ubc.ca/thought-leadership/divisions/operations-and-logistics",
+      "checkedAt": "2026-10-20",
+      "evidence": "Official division overview explicitly names Operations & Logistics Division at UBC Sauder and describes operations management, distribution planning, supply-chain management and operations research; footer identifies The University of British Columbia."
+    },
+    {
+      "sourceUrl": "https://management.ok.ubc.ca/about/contact/amin-ahmadi-digehsara/",
+      "evidence": "Official Faculty of Management member profile identifies supply-chain network design, transportation and mobility planning, decision-making under uncertainty, operations research and analytics. Faculty research overview locates this unit at Okanagan.",
+      "type": "school",
+      "id": "university-of-british-columbia--okanagan-management",
+      "checkedAt": "2026-10-20",
+      "fields": [
+        "supply-chain",
+        "logistics",
+        "operations-research"
+      ],
+      "name": "Faculty of Management",
+      "school": null
+    },
+    {
+      "id": "university-of-british-columbia--forest-resources-management",
+      "name": "Department of Forest Resources Management",
+      "school": "Faculty of Forestry & Environmental Stewardship",
+      "type": "department",
+      "fields": [
+        "operations-research",
+        "industrial-engineering"
+      ],
+      "sourceUrl": "https://www.grad.ubc.ca/category/academic-unit/department-forest-resources-management",
+      "checkedAt": "2026-10-22",
+      "evidence": "Independent official graduate-school department page establishes exact identity; current structured research-supervision record links academic unit to explicitly named OR, production systems, stochastic/robust optimization and forest operations research and to Forestry doctoral programme. Does not verify identity of inaccessible Industrial Engineering Research Group website."
+    }
+  ],
+  "decisions": [
+    {
+      "sourceDepartmentId": "university-of-british-columbia__faculty-of-management__operations-and-supply-chain-management",
+      "reason": "Faculty and operations researcher verified, but imported specialty is not established as a separate formal department; record verified Faculty of Management instead.",
+      "disposition": "not-a-unit",
+      "unitIds": []
+    },
+    {
+      "sourceDepartmentId": "university-of-british-columbia__sauder-school-of-business__operations-and-logistics",
+      "reason": "Official full division name confirmed.",
+      "disposition": "replaced",
+      "unitIds": [
+        "ubc-sauder-school-of-business--operations-logistics"
+      ]
+    },
+    {
+      "sourceDepartmentId": "university-of-british-columbia__sauder-school-of-business__transportation-operations",
+      "reason": "Transportation operations is covered within verified Operations & Logistics Division, not a separately established department.",
+      "disposition": "duplicate",
+      "unitIds": [
+        "ubc-sauder-school-of-business--operations-logistics"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.sauder.ubc.ca/thought-leadership/divisions/operations-and-logistics",
+      "checkedAt": "2026-10-20",
+      "outcome": "read",
+      "note": "Division identity, school and university hierarchy, explicit operations and logistics scope."
+    },
+    {
+      "outcome": "read",
+      "note": "Faculty of Management research overview and Okanagan identity.",
+      "url": "https://management.ok.ubc.ca/research/",
+      "checkedAt": "2026-10-20"
+    },
+    {
+      "outcome": "read",
+      "note": "Faculty membership and explicit supply-chain/OR/logistics research.",
+      "url": "https://management.ok.ubc.ca/about/contact/amin-ahmadi-digehsara/",
+      "checkedAt": "2026-10-20"
+    },
+    {
+      "outcome": "blocked",
+      "note": "UBC browser verification; not bypassed.",
+      "url": "https://operationsmanagement.ok.ubc.ca/",
+      "checkedAt": "2026-10-20"
+    },
+    {
+      "outcome": "blocked",
+      "note": "Industrial Engineering Research Group site reached browser verification; no page contents treated as read.",
+      "url": "https://ierg.forestry.ubc.ca/",
+      "checkedAt": "2026-10-20"
+    },
+    {
+      "outcome": "blocked",
+      "note": "Official alternate people page also browser verification.",
+      "url": "https://ierg.sites.olt.ubc.ca/people/",
+      "checkedAt": "2026-10-20"
+    },
+    {
+      "outcome": "read",
+      "note": "University research taxonomy loaded but academic-unit list content did not; not taken as unit evidence.",
+      "url": "https://www.grad.ubc.ca/research/industrial-systems-processes-engineering-rdf202",
+      "checkedAt": "2026-10-20"
+    },
+    {
+      "url": "https://www.grad.ubc.ca/prospective-students/graduate-degree-programs/phd-forestry",
+      "checkedAt": "2026-10-22",
+      "outcome": "read",
+      "note": "Full current Forestry PhD main page/structure/facts read: original dissertation, Vancouver, students belong to one of three departments based on supervisor. Admission September 2027 open October 2026. Graduate citations/student stories not collected as individual histories."
+    },
+    {
+      "url": "https://www.grad.ubc.ca/category/academic-unit/department-forest-resources-management",
+      "checkedAt": "2026-10-22",
+      "outcome": "read",
+      "note": "Full department identity and first-page research-supervisor table read; OR/industrial-engineering supervisor field observed. Page 1 of 2 not called complete departmental inventory; second page not read."
+    },
+    {
+      "url": "https://www.grad.ubc.ca/researcher/20974-paradis",
+      "checkedAt": "2026-10-22",
+      "outcome": "read",
+      "note": "Full opened official graduate-school supervision record overview read. Explicit RELEVANT THESIS-BASED DEGREE PROGRAMS includes Forestry Doctor of Philosophy, PROGRAM AFFILIATION Forestry, ACADEMIC UNIT Forest Resources Management, research classification OR/production systems. Graduate student supervision/history panels not opened."
+    }
+  ],
+  "limitations": [
+    "Industrial Engineering Research Group remains unverified because both official sites require browser verification; no access-control bypass performed.",
+    "Okanagan operations site also requires browser verification. Faculty of Management scope verified through accessible official research and faculty pages, but no separate operations department asserted.",
+    "New Forest Resources Management department research/doctoral evidence is independent of earlier verification-blocked research-group websites. IERG group identity/content remains unread, not bypassed."
+  ],
+  "duplicateOf": null
+}
