@@ -12,9 +12,9 @@ Generated from committed-format public datasets by `node scripts/update-research
 | Researched but unresolved | 1070 |
 | Degree completion unconfirmed | 4 |
 | Pending individual review | 0 |
-| Doctoral register records, including historical and unresolved routes | 409 |
-| Verified relevant doctoral routes (tracks may overlap; admissions may be suspended) | 400 |
-| Institutions with verified relevant doctoral provision | 244 |
+| Doctoral register records, including historical and unresolved routes | 414 |
+| Verified relevant doctoral routes (tracks may overlap; admissions may be suspended) | 405 |
+| Institutions with verified relevant doctoral provision | 246 |
 | Names on program graduate and placement pages (person-years) | 14451 |
 | of which listed under an operations area | 2161 |
 | Institutions with such a page read | 117 |
@@ -25,7 +25,7 @@ Generated from committed-format public datasets by `node scripts/update-research
 | University directory records partially reviewed | 119 |
 | University directory records blocked by source access | 5 |
 | University directory records awaiting review | 30 |
-| Discovery source records with doctoral observations | 540 |
+| Discovery source records with doctoral observations | 541 |
 | of which current branch scope explicitly complete | 340 |
 
 The program register is partial. It includes historical/predecessor records; its total is not the number of active programs worldwide. The graduate lists are what the programs' own pages list (live and archived copies), with the year's meaning as each page gives it; they are partial rosters, not a census. No complete graduate census, comprehensive employment-history panel, advisor dataset or publication-at-graduation dataset has been collected yet. Their schema and research rules are prepared.
