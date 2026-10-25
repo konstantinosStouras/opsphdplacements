@@ -10,6 +10,8 @@ for(const file of ['data/doctoral-programs.json','data/universities.json']){
  console.log(file,{preserved:old.length,added:current.length-old.length});
 }
 for(const p of ['data/faculty.json','data/faculty-roster-people.json','data/placements.json','data/employment-histories.json','data/linkedin-histories.json'])assert.deepEqual(read(p),before(p),'Held people dataset changed: '+p);
+const actualUnits=new Map(read('data/university-reviews.json').records.map(r=>[r.id,r]));
+for(const r of read('research-handoff/universities/continuation-182/unit-integration.json'))for(const [k,v]of Object.entries(r))if(!['addedAt','updatedAt','doctoralReview'].includes(k))assert.deepEqual(actualUnits.get(r.id)[k],v,'Unit changed after reviewed cut: '+r.id+'/'+k);
 const violations=[];function scan(v,p){if(typeof v==='string'){if(/\.json\b|github\.com\/[^/]+\/opsphdplacements|raw\.githubusercontent\.com\/[^/]+\/opsphdplacements/i.test(displayText(v)))violations.push(p);}else if(Array.isArray(v))v.forEach((x,i)=>scan(x,p+'['+i+']'));else if(v&&typeof v==='object')for(const[k,x]of Object.entries(v))scan(x,p+'.'+k);}
 for(const p of ['data/university-reviews.json','data/doctoral-programs.json'])scan(read(p),p);
 assert.equal(violations.length,0,JSON.stringify(violations));console.log({heldPeopleDataUnchanged:true,displayTextViolations:0});

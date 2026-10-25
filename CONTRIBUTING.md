@@ -1,5 +1,7 @@
 # Contributing to Operations PhD Placements
 
+Stage 1 publication coordination (25 October 2026): research contributors validate proposal objects with the pure schemas and virtual source records; they do not invoke public-data merger commands, including previews. The sole integrator runs merges and verifies the frozen public-data cut before publication. The university-review merger writes by default; its preview flag is `--dry-run`. This prevents a late proposal from entering a validated release without review or updated record stamps.
+
 The aim is a historical graduate census covering Operations Management, Operations Research and Industrial Engineering, independent of employment destination. The existing OM List import is one faculty-based research input. It is not the graduate population.
 
 ## Start here
