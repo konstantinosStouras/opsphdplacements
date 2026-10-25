@@ -1,0 +1,11 @@
+import fs from 'node:fs';
+const dir='research-handoff/universities/continuation-171',read=p=>JSON.parse(fs.readFileSync(p)),write=(f,v)=>fs.writeFileSync(dir+'/'+f+'.json',JSON.stringify(v,null,2)+'\n');
+const e=read('research-handoff/universities/continuation-152/shard-a/helsinki-school-of-economics-and-business-administration.identity-confirmed.json');
+const id='helsinki-school-of-economics-and-business-administration';
+write('helsinki.source-catalogue',{asOf:'2026-10-16',state:'om-list-reported-doctorate-institution-discovery-only',observations:[{source:'OM List',sourceRecordId:'helsinki-predecessor-reported-doctorates',layer:'reported-phd-institution',name:e.sourceLabel,school:null,department:null,countryAsListed:null,sourceUrl:'https://omlist.edutool.org/faculty',hidden:false,facultyIds:e.facultyIds,evidence:'Historical institution label in two imported doctorate reports; person awards remain unverified.'}]});
+write('helsinki.source-addition',{sourceCatalogue:dir+'/helsinki.source-catalogue.json',records:[{id,nameAsListed:e.sourceLabel,reason:'Source-backed historical predecessor association to existing Aalto lineage; preserves original award labels and is not an additional current provider.'}]});
+write('helsinki.unit',{id,status:'reviewed',canonicalName:'Aalto University',universitySourceUrl:e.sources[0].url,checkedAt:e.checkedAt,reviewer:'Codex; individually read official historical identity evidence',duplicateOf:'aalto-university',units:[],decisions:[{sourceDepartmentId:id+'--om-list-helsinki-predecessor-reported-doctorates-reported-phd-institution',disposition:'not-a-unit',unitIds:[],reason:'Reported historical doctorate institution only; source does not assert a department.'}],sources:e.sources,limitations:e.limitations});
+const r=read('data/university-reviews.json').records.find(r=>r.id==='aalto-university'), p=read('data/doctoral-programs.json').records;
+const d=r.doctoralReview;
+write('helsinki.doctoral-scope',{universityId:id,checkedAt:d.checkedAt,status:d.status,coverageComplete:d.coverageComplete,branches:d.branches,sources:d.sources,limitations:d.limitations,programmes:d.programmeIds.map(id=>{const x=p.find(p=>p.id===id);return {...x,sourceUrl:x.sources[0].url,evidence:x.evidenceNote};})});
+console.log('Prepared historical alias source row, duplicate review and unchanged canonical doctoral scope');
