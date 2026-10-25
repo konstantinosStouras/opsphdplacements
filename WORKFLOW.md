@@ -6,6 +6,8 @@ Owner title correction (25 October): a public qualifying route needs Operations,
 
 USTC continuation 125 (25 October): the current School of Management PhD page and official degree inventory jointly establish a Management Science and Engineering PhD hosted by the Department of Management Science. Integrate the additive proposal in `research-handoff/universities/continuation-125/integrator/ustc.doctoral.json` with `merge-doctoral-proposals.mjs`; prior unknown-status routes remain untouched. An official page listing a professional doctorate is not evidence for an additional research PhD. Rebuild entities, queues, status and record dates before validation.
 
+Mannheim continuation 126 (25 October): current Business School pages establish one structured Operations Management doctoral route. Keep the programme's public Ph.D. label distinct from its exact Dr. rer. pol. award and attach research-doctorate evidence. Integrate `research-handoff/universities/continuation-126/integrator/mannheim.doctoral.json` with `merge-doctoral-proposals.mjs`. Preserve the prior blocked URL as dated provenance; do not count the alternative chair-based study path as a second award. Rebuild and validate as above.
+
 ## 1. Establish the program population
 
 Build a register of historical OR/OM/IE doctoral programs. Operations Academia is a discovery source, not proof of degree provision or a complete historical frame. Add official catalogs and archives, dissertation repositories, predecessor departments and closed programs. Distinguish university, school, department, program, specialization and campus. A department merger does not establish a degree's closure date.

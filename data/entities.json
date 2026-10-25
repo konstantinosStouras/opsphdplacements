@@ -18,7 +18,7 @@
    "phdInstitutions": 434,
    "directoryUniversities": 609,
    "firstEmployers": 493,
-   "withPrograms": 252,
+   "withPrograms": 253,
    "inBothDatabases": 211,
    "directoryOnly": 328,
    "peopleOnly": 223,
@@ -30578,7 +30578,8 @@
    "roles": [
     "phd-institution",
     "directory-university",
-    "first-employer"
+    "first-employer",
+    "program-register"
    ],
    "people": {
     "institutions": [
@@ -30741,7 +30742,19 @@
      }
     ]
    },
-   "programs": [],
+   "programs": [
+    {
+     "id": "university-of-mannheim--operations-management-cdsb-doctorate",
+     "programName": "Ph.D. in Operations Management",
+     "specialization": "Operations Management",
+     "universityId": "university-of-mannheim",
+     "school": "Business School; Center for Doctoral Studies in Business",
+     "degree": "Dr. rer. pol.",
+     "field": "Operations Management; Operations Research",
+     "status": "active",
+     "statusAsOf": "2026-10-25"
+    }
+   ],
    "sources": [
     {
      "url": "https://omlist.edutool.org/phd/by-year.html",
@@ -30762,6 +30775,10 @@
     {
      "url": "data/placements.json",
      "title": "Verified first-job records (people database)"
+    },
+    {
+     "url": "data/doctoral-programs.json",
+     "title": "Historical doctoral program register"
     }
    ],
    "review": {
@@ -30780,12 +30797,17 @@
       "source": "employers",
       "employer": "University of Mannheim, Industrieseminar",
       "match": "wikidata"
+     },
+     {
+      "source": "programs",
+      "program": "university-of-mannheim--operations-management-cdsb-doctorate",
+      "match": "exact"
      }
     ],
     "conflicts": []
    },
    "addedAt": "2026-10-16T13:49:36Z",
-   "updatedAt": "2026-10-20T08:28:39Z"
+   "updatedAt": "2026-10-25T16:21:49Z"
   },
   {
    "id": "wd:Q189022",
