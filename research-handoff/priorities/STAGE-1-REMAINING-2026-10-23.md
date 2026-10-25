@@ -2,7 +2,7 @@
 
 This is an alphabetical planning snapshot from the published university frame and the OM List reported-PhD-institution queue. It is **not** a list of confirmed PhD providers. Some institutions already have frozen official-source proposals awaiting integrator review and publication; they remain here until the public register records the outcome. A missing or partial doctoral review never means that no qualifying doctorate exists.
 
-The published 832 university/campus source records group into 737 display identities; 284 identities have an incomplete unit review, doctoral branch check or title/host adjudication. Of the source records, 236 have incomplete unit reviews and 240 lack a complete current doctoral branch scope. 0 programme title/host decisions remain pending and are withheld from qualifying counts. The separate OM List queue has 6 reported institution labels still needing identity reconciliation. These lists overlap in real institutions but are not merged without accepted evidence. Source-unit assertions and live directory/posting coverage are additional Stage 1 gates.
+The published 832 university/campus source records group into 737 display identities; 284 identities have an incomplete unit review, doctoral branch check or title/host adjudication. Of the source records, 234 have incomplete unit reviews and 240 lack a complete current doctoral branch scope. 0 programme title/host decisions remain pending and are withheld from qualifying counts. The separate OM List queue has 6 reported institution labels still needing identity reconciliation. These lists overlap in real institutions but are not merged without accepted evidence. Source-unit assertions and live directory/posting coverage are additional Stage 1 gates.
 
 ## In the university/campus discovery frame
 
@@ -176,7 +176,7 @@ The published 832 university/campus source records group into 737 display identi
 | 166 | The Chinese University of Hong Kong, Shenzhen | doctoral branch scope |
 | 167 | The City University of New York | unit/identity: partial; doctoral branch scope |
 | 168 | The George Washington University | unit/identity: partial; doctoral branch scope |
-| 169 | The Hong Kong University of Science and Technology (Guangzhou) | unit/identity: partial; doctoral branch scope |
+| 169 | The Hong Kong University of Science and Technology (Guangzhou) | doctoral branch scope |
 | 170 | The University of Adelaide | unit/identity: partial; doctoral branch scope |
 | 171 | The University of British Columbia | unit/identity: partial |
 | 172 | The University of Edinburgh | unit/identity: partial; doctoral branch scope |
