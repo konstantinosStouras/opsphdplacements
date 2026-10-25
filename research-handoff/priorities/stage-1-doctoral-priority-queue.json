@@ -6,9 +6,9 @@
   "facultyWithoutNamedPhdInstitution": 24,
   "distinctReportedInstitutionLabels": 369,
   "rankedInstitutionLeads": 355,
-  "matchedLeads": 337,
-  "unresolvedLeads": 18,
-  "withVerifiedCurrentRoutes": 224,
+  "matchedLeads": 338,
+  "unresolvedLeads": 17,
+  "withVerifiedCurrentRoutes": 225,
   "withCompletedCurrentBranchScope": 180,
   "records": [
     {
@@ -42450,11 +42450,15 @@
       "nextStep": "Verify official current relevant doctoral routes across business and engineering; record branch gaps"
     },
     {
-      "id": "unresolved:university of kent",
+      "id": "university-of-kent",
       "name": "University of Kent",
-      "sourceUniversityIds": [],
-      "candidateUniversityIds": [],
-      "identityMatch": "unresolved discovery label",
+      "sourceUniversityIds": [
+        "university-of-kent"
+      ],
+      "candidateUniversityIds": [
+        "university-of-kent"
+      ],
+      "identityMatch": "accepted university/entity name",
       "reportedFacultyCount": 1,
       "reportedNames": [
         "University of Kent"
@@ -42463,11 +42467,76 @@
         "omlist-990e1dc308a69ab5"
       ],
       "sourceUrls": [],
-      "owners": [],
-      "doctoralObservations": [],
-      "verifiedCurrentProgrammeIds": [],
+      "owners": [
+        "integrator"
+      ],
+      "doctoralObservations": [
+        {
+          "status": "partial",
+          "checkedAt": "2026-10-25",
+          "programmeIds": [
+            "university-of-kent--business-analytics-phd-operations-department",
+            "university-of-kent--operational-research-phd"
+          ],
+          "branches": [
+            {
+              "branch": "business",
+              "reviewState": "checked",
+              "conclusion": "Current named Operations department explicitly hosts two doctoral programmes: Operational Research and Business Analytics. The business doctoral course inventory also lists Accounting, Finance, Management, Marketing and other separate programmes, none added merely by topic. The old Management Science path resolves to Business Analytics and is not a distinct current award.",
+              "sourceUrls": [
+                "https://research.kent.ac.uk/daos/degree-programmes/",
+                "https://www.kent.ac.uk/courses/postgraduate/319",
+                "https://www.kent.ac.uk/courses/postgraduate/316/management-science"
+              ]
+            },
+            {
+              "branch": "engineering",
+              "reviewState": "partial",
+              "conclusion": "Current School of Engineering, Mathematics and Physics is named in university navigation, but its formal doctoral course/field inventory has not yet been read; no negative engineering conclusion or additional route claimed.",
+              "sourceUrls": [
+                "https://www.kent.ac.uk/courses/postgraduate/316/management-science"
+              ]
+            }
+          ],
+          "sources": [
+            {
+              "url": "https://research.kent.ac.uk/daos/degree-programmes/",
+              "checkedAt": "2026-10-25",
+              "outcome": "read",
+              "note": "Full named department page and exact two current hosted PhD titles."
+            },
+            {
+              "url": "https://www.kent.ac.uk/courses/postgraduate/319",
+              "checkedAt": "2026-10-25",
+              "outcome": "read",
+              "note": "Full current Operational Research PhD page and department host."
+            },
+            {
+              "url": "https://www.kent.ac.uk/courses/postgraduate/316/management-science",
+              "checkedAt": "2026-10-25",
+              "outcome": "read",
+              "note": "Former management-science path currently renders Business Analytics PhD; avoid duplicate award."
+            },
+            {
+              "url": "https://www.kent.ac.uk/kent-business-school/postgraduate",
+              "checkedAt": "2026-10-25",
+              "outcome": "read",
+              "note": "Current business school postgraduate landing page; detailed list appears elsewhere and operational department page provides exact hosted PhD titles."
+            }
+          ],
+          "limitations": [
+            "Engineering/mathematics current PhD field inventory still needs a bounded check; no university-wide census claim.",
+            "Individual imported doctorate and its subject remain Stage 2, not inferred from the present-day programme list."
+          ],
+          "coverageComplete": false
+        }
+      ],
+      "verifiedCurrentProgrammeIds": [
+        "university-of-kent--operational-research-phd",
+        "university-of-kent--business-analytics-phd-operations-department"
+      ],
       "branchCoverageComplete": false,
-      "nextStep": "Resolve official identity and add/associate discovery record without speculative merge"
+      "nextStep": "Verify official current relevant doctoral routes across business and engineering; record branch gaps"
     },
     {
       "id": "university-of-lausanne",

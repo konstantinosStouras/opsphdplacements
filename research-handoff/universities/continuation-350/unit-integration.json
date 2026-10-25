@@ -1,0 +1,453 @@
+[
+  {
+    "id": "university-of-kent",
+    "status": "partial",
+    "canonicalName": "University of Kent",
+    "universitySourceUrl": "https://www.kent.ac.uk/courses/postgraduate/319",
+    "checkedAt": "2026-10-25",
+    "reviewer": "Codex via fully opened current official University of Kent course and department pages",
+    "duplicateOf": null,
+    "units": [
+      {
+        "id": "university-of-kent--department-of-analytics-operations-and-systems",
+        "name": "Department of Analytics, Operations and Systems",
+        "school": "Kent Business School",
+        "type": "department",
+        "fields": [
+          "operations-research",
+          "operations-management"
+        ],
+        "sourceUrl": "https://research.kent.ac.uk/daos/degree-programmes/",
+        "checkedAt": "2026-10-25",
+        "evidence": "Official department degree-programmes page names this exact department, places 18 doctoral researchers in PhD Business Analytics and PhD Operational Research, and identifies its Kent Business School context."
+      }
+    ],
+    "decisions": [
+      {
+        "sourceDepartmentId": "university-of-kent--om-list-university-of-kent-reported-doctorate-one-profile-reported-phd-institution",
+        "disposition": "not-a-unit",
+        "unitIds": [],
+        "reason": "Reported doctorate-institution discovery label only; no department assertion or individual degree verification."
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://research.kent.ac.uk/daos/degree-programmes/",
+        "checkedAt": "2026-10-25",
+        "outcome": "read",
+        "note": "Full official department page gives exact title, doctoral student programmes and Kent address."
+      },
+      {
+        "url": "https://www.kent.ac.uk/courses/postgraduate/319",
+        "checkedAt": "2026-10-25",
+        "outcome": "read",
+        "note": "Current official Operational Research PhD page names the department and Kent Business School."
+      }
+    ],
+    "limitations": [
+      "Business department identity and doctoral activity are verified. An exhaustive university-wide academic-unit/source-assertion reconciliation has not yet been completed.",
+      "The imported faculty degree institution is only a discovery lead; individual year and field were not checked here."
+    ]
+  },
+  {
+    "id": "university-of-british-columbia",
+    "status": "reviewed",
+    "canonicalName": "The University of British Columbia",
+    "universitySourceUrl": "https://www.sauder.ubc.ca/thought-leadership/divisions/operations-and-logistics",
+    "checkedAt": "2026-10-20",
+    "reviewer": "Codex; actual full official central unit inventories opened through web tool",
+    "units": [
+      {
+        "id": "ubc-sauder-school-of-business--operations-logistics",
+        "name": "Operations & Logistics Division",
+        "school": "UBC Sauder School of Business",
+        "type": "division",
+        "fields": [
+          "operations-management",
+          "operations-research",
+          "supply-chain",
+          "logistics"
+        ],
+        "sourceUrl": "https://www.sauder.ubc.ca/thought-leadership/divisions/operations-and-logistics",
+        "checkedAt": "2026-10-20",
+        "evidence": "Official division overview explicitly names Operations & Logistics Division at UBC Sauder and describes operations management, distribution planning, supply-chain management and operations research; footer identifies The University of British Columbia."
+      },
+      {
+        "sourceUrl": "https://management.ok.ubc.ca/about/contact/amin-ahmadi-digehsara/",
+        "evidence": "Official Faculty of Management member profile identifies supply-chain network design, transportation and mobility planning, decision-making under uncertainty, operations research and analytics. Faculty research overview locates this unit at Okanagan.",
+        "type": "school",
+        "id": "university-of-british-columbia--okanagan-management",
+        "checkedAt": "2026-10-20",
+        "fields": [
+          "supply-chain",
+          "logistics",
+          "operations-research"
+        ],
+        "name": "Faculty of Management",
+        "school": null
+      },
+      {
+        "id": "university-of-british-columbia--forest-resources-management",
+        "name": "Department of Forest Resources Management",
+        "school": "Faculty of Forestry & Environmental Stewardship",
+        "type": "department",
+        "fields": [
+          "operations-research",
+          "industrial-engineering"
+        ],
+        "sourceUrl": "https://www.grad.ubc.ca/category/academic-unit/department-forest-resources-management",
+        "checkedAt": "2026-10-22",
+        "evidence": "Independent official graduate-school department page establishes exact identity; current structured research-supervision record links academic unit to explicitly named OR, production systems, stochastic/robust optimization and forest operations research and to Forestry doctoral programme. Does not verify identity of inaccessible Industrial Engineering Research Group website."
+      }
+    ],
+    "decisions": [
+      {
+        "sourceDepartmentId": "university-of-british-columbia__faculty-of-management__operations-and-supply-chain-management",
+        "reason": "Faculty and operations researcher verified, but imported specialty is not established as a separate formal department; record verified Faculty of Management instead.",
+        "disposition": "not-a-unit",
+        "unitIds": []
+      },
+      {
+        "sourceDepartmentId": "university-of-british-columbia__sauder-school-of-business__operations-and-logistics",
+        "reason": "Official full division name confirmed.",
+        "disposition": "replaced",
+        "unitIds": [
+          "ubc-sauder-school-of-business--operations-logistics"
+        ]
+      },
+      {
+        "sourceDepartmentId": "university-of-british-columbia__sauder-school-of-business__transportation-operations",
+        "reason": "Transportation operations is covered within verified Operations & Logistics Division, not a separately established department.",
+        "disposition": "duplicate",
+        "unitIds": [
+          "ubc-sauder-school-of-business--operations-logistics"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.sauder.ubc.ca/thought-leadership/divisions/operations-and-logistics",
+        "checkedAt": "2026-10-20",
+        "outcome": "read",
+        "note": "Division identity, school and university hierarchy, explicit operations and logistics scope."
+      },
+      {
+        "outcome": "read",
+        "note": "Faculty of Management research overview and Okanagan identity.",
+        "url": "https://management.ok.ubc.ca/research/",
+        "checkedAt": "2026-10-20"
+      },
+      {
+        "outcome": "read",
+        "note": "Faculty membership and explicit supply-chain/OR/logistics research.",
+        "url": "https://management.ok.ubc.ca/about/contact/amin-ahmadi-digehsara/",
+        "checkedAt": "2026-10-20"
+      },
+      {
+        "outcome": "blocked",
+        "note": "UBC browser verification; not bypassed.",
+        "url": "https://operationsmanagement.ok.ubc.ca/",
+        "checkedAt": "2026-10-20"
+      },
+      {
+        "outcome": "blocked",
+        "note": "Industrial Engineering Research Group site reached browser verification; no page contents treated as read.",
+        "url": "https://ierg.forestry.ubc.ca/",
+        "checkedAt": "2026-10-20"
+      },
+      {
+        "outcome": "blocked",
+        "note": "Official alternate people page also browser verification.",
+        "url": "https://ierg.sites.olt.ubc.ca/people/",
+        "checkedAt": "2026-10-20"
+      },
+      {
+        "outcome": "read",
+        "note": "University research taxonomy loaded but academic-unit list content did not; not taken as unit evidence.",
+        "url": "https://www.grad.ubc.ca/research/industrial-systems-processes-engineering-rdf202",
+        "checkedAt": "2026-10-20"
+      },
+      {
+        "url": "https://www.grad.ubc.ca/prospective-students/graduate-degree-programs/phd-forestry",
+        "checkedAt": "2026-10-22",
+        "outcome": "read",
+        "note": "Full current Forestry PhD main page/structure/facts read: original dissertation, Vancouver, students belong to one of three departments based on supervisor. Admission September 2027 open October 2026. Graduate citations/student stories not collected as individual histories."
+      },
+      {
+        "url": "https://www.grad.ubc.ca/category/academic-unit/department-forest-resources-management",
+        "checkedAt": "2026-10-22",
+        "outcome": "read",
+        "note": "Full department identity and first-page research-supervisor table read; OR/industrial-engineering supervisor field observed. Page 1 of 2 not called complete departmental inventory; second page not read."
+      },
+      {
+        "url": "https://www.grad.ubc.ca/researcher/20974-paradis",
+        "checkedAt": "2026-10-22",
+        "outcome": "read",
+        "note": "Full opened official graduate-school supervision record overview read. Explicit RELEVANT THESIS-BASED DEGREE PROGRAMS includes Forestry Doctor of Philosophy, PROGRAM AFFILIATION Forestry, ACADEMIC UNIT Forest Resources Management, research classification OR/production systems. Graduate student supervision/history panels not opened."
+      },
+      {
+        "url": "https://www.ubc.ca/our-campuses/vancouver/directories/faculties-schools.html",
+        "checkedAt": "2026-10-25",
+        "outcome": "read",
+        "note": "Complete current official Vancouver faculties/schools/departments directory body read. Full Applied Science, Sauder, Forestry and Science unit menus; explicit Operations and Logistics Division. Individual labs/programmes explicitly distinguished in page introduction."
+      },
+      {
+        "url": "https://vancouver.calendar.ubc.ca/faculties-colleges-and-schools/faculty-applied-science/introduction",
+        "checkedAt": "2026-10-25",
+        "outcome": "read",
+        "note": "Full substantive Applied Science Academic Calendar introduction read. Explicit engineering departments, Biomedical Engineering school and named boards of study; programme versus formal academic unit distinction retained."
+      },
+      {
+        "url": "https://ok.ubc.ca/academics/faculties-and-schools/",
+        "checkedAt": "2026-10-25",
+        "outcome": "read",
+        "note": "Complete actual nine faculty/school Okanagan directory read, including listed departments, Engineering school within Applied Science, separate Faculty of Management and Science Mathematics/Physics/Statistics department."
+      }
+    ],
+    "limitations": [
+      "Bounded current university/unit scope adjudicated complete from actually read current Vancouver and Okanagan full formal-unit inventories and all three resolved imported assertions. Existing units, exact stable IDs, faculty-campus relationships, aliases and per-fact check dates are preserved. Current central directory corroborates Operations and Logistics division; no source assertion newly guessed from a degree title.",
+      "Industrial Engineering Research Group and earlier Okanagan operations-group destinations remain unread because verification challenges prevented access; no retry or access-control bypass. These are research-group enquiries rather than unresolved imported matching department/school assertions. Full current formal-unit menus establish the bounded scope without claiming those groups were verified, absent or independently doctoral administering units.",
+      "Prior Forest Resources Management and Mining observations remain independent of blocked IERG pages; their original facts/dates are retained. This source-unit completion does not alter current doctoral programme title exclusions or imply Forestry qualifies under its generic supervisor taxonomy. Latest doctoral review is omitted and must be preserved separately by integrator."
+    ],
+    "duplicateOf": null,
+    "assessedAt": "2026-10-25"
+  },
+  {
+    "reviewer": "Codex integrator, dated member-unit ownership correction using official evidence read20October; no new source-check claim",
+    "universitySourceUrl": "https://www.london.ac.uk/federation/london-business-school",
+    "sources": [
+      {
+        "note": "Bayes operations/supply-chain research grouping.",
+        "url": "https://www.bayes.citystgeorges.ac.uk/faculties-and-research/management/people#accordion-927190-header-2",
+        "outcome": "read",
+        "checkedAt": "2026-10-20"
+      },
+      {
+        "note": "LBS Management Science and Operations faculty area.",
+        "url": "https://www.london.edu/faculty-and-research/management-science-and-operations/faculty-profiles",
+        "outcome": "read",
+        "checkedAt": "2026-10-20"
+      },
+      {
+        "note": "City St George's is a federation member, created by City/St George's merger in August 2024.",
+        "url": "https://www.london.ac.uk/federation/city-st-georges-university-london",
+        "outcome": "read",
+        "checkedAt": "2026-10-20"
+      },
+      {
+        "note": "LBS is a distinct federation member with Management Science and Operations among its subject areas.",
+        "url": "https://www.london.ac.uk/federation/london-business-school",
+        "outcome": "read",
+        "checkedAt": "2026-10-20"
+      }
+    ],
+    "duplicateOf": null,
+    "checkedAt": "2026-10-20",
+    "id": "university-of-london",
+    "limitations": [
+      "The imported federal umbrella row combined Bayes at City St George's and London Business School. These are distinct members, not aliases of the federal University of London; their verified units are displayed with their own reviewed member records.",
+      "Original observations and source-check dates are preserved in the ownership correction history. All imported assertions are reconciled within this federal source scope; no exhaustive member-university engineering census is claimed.",
+      "No member doctorate is attributed to the federal University of London from these unit observations. Separately reviewed member doctoral scopes remain independent."
+    ],
+    "canonicalName": "University of London",
+    "units": [],
+    "status": "reviewed",
+    "decisions": [
+      {
+        "sourceDepartmentId": "university-of-london",
+        "reason": "University-only placeholder names no department.",
+        "unitIds": [],
+        "disposition": "not-a-unit"
+      },
+      {
+        "sourceDepartmentId": "university-of-london__bayes-business-school",
+        "reason": "School-only placeholder; Bayes is a school within a distinct federation member.",
+        "unitIds": [],
+        "disposition": "not-a-unit"
+      },
+      {
+        "sourceDepartmentId": "university-of-london__bayes-business-school__operations-and-supply-chain-management",
+        "reason": "Bayes Operations and Supply Chain Management belongs to City St George's, a separate federation member, and is already registered with Bayes. This imported assertion is outside the federal university unit inventory; neither the unit nor the member university has been deleted or merged.",
+        "unitIds": [],
+        "disposition": "out-of-scope"
+      },
+      {
+        "sourceDepartmentId": "university-of-london__london-business-school__management-science-and-operations",
+        "reason": "Management Science and Operations belongs to London Business School, a separate federation member, and is already registered there. This imported assertion is outside the federal university unit inventory; neither the unit nor the member university has been deleted or merged.",
+        "unitIds": [],
+        "disposition": "out-of-scope"
+      }
+    ],
+    "doctoralReview": {
+      "status": "no-qualifying-programme-verified",
+      "checkedAt": "2026-10-22",
+      "programmeIds": [],
+      "branches": [
+        {
+          "branch": "business",
+          "reviewState": "checked",
+          "conclusion": "Full federal research-degree inventory explicitly includes separate Doctor in Business Administration. DBA kept separate under credential scope policy, not converted to PhD or called non-research. Explicit member LBS/Bayes operations doctorates belong to independently reviewed offering institutions and are not duplicated under umbrella University of London.",
+          "sourceUrls": [
+            "https://www.london.ac.uk/study/courses/research-degree",
+            "https://www.london.ac.uk/federation/london-business-school"
+          ]
+        },
+        {
+          "branch": "engineering",
+          "reviewState": "not-present",
+          "conclusion": "Complete expanded central federal doctoral-course inventory contains humanities and social sciences research degrees, plus separate DBA, no federal engineering doctorate listed. This is the direct federal offering scope only, not a claim that federation member universities lack engineering.",
+          "sourceUrls": [
+            "https://www.london.ac.uk/study/courses/research-degree"
+          ]
+        },
+        {
+          "branch": "mathematics",
+          "reviewState": "not-present",
+          "conclusion": "No mathematical doctorate listed in the complete current expanded direct federal doctoral-course inventory. Separate member mathematical offerings remain independently owned; no federation-wide absence claimed.",
+          "sourceUrls": [
+            "https://www.london.ac.uk/study/courses/research-degree"
+          ]
+        },
+        {
+          "branch": "other",
+          "reviewState": "checked",
+          "conclusion": "All 12 current central PhD/MPhil course listings read. New Social Sciences online PhD fully expanded and read: eleven offered supervision disciplines, no explicit Ops/OR/IE/SCM/Logistics field; generic economics or urban planning not inferred qualifying. Application opening 29 October 2026 and January 2027 intake are future as of check; no current open application or completed graduates inferred.",
+          "sourceUrls": [
+            "https://www.london.ac.uk/study/courses/research-degree",
+            "https://www.london.ac.uk/study/courses/research-degree/phd-social-sciences-online"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.london.edu/faculty-and-research/management-science-and-operations/phd-programme",
+          "checkedAt": "2026-10-21",
+          "outcome": "read",
+          "note": "Full current LBS Management Science and Operations PhD programme read: applications open, quantitative research, rigorous curriculum; no umbrella degree-awarder relationship established."
+        },
+        {
+          "url": "https://www.london.edu/phd/faqs",
+          "checkedAt": "2026-10-21",
+          "outcome": "read",
+          "note": "Full rendered current LBS PhD FAQ headings/contact read; no degree-awarder statement present in visible overview."
+        },
+        {
+          "url": "https://www.london.ac.uk/federation/london-business-school",
+          "checkedAt": "2026-10-21",
+          "outcome": "read",
+          "note": "Full official federation LBS member page read: member since1965, postgraduate degrees and MSO subject area; membership is not automatic canonical merger or degree-awarder evidence."
+        },
+        {
+          "url": "https://www.london.ac.uk/study/courses/research-degree",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Full federal research-degree landing read and actual Load More courses button successfully expanded: all 12 PhD/MPhil listings plus separate DBA. Earlier 6-card view not treated as complete."
+        },
+        {
+          "url": "https://www.london.ac.uk/study/courses/research-degree/phd-social-sciences-online",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Full course page and all Course Overview panels explicitly expanded/read, including original 100,000-word thesis, eleven supervision disciplines and federation-wide supervisor matching. Application dates observed; profile/testimonial material not collected as individual histories."
+        }
+      ],
+      "limitations": [
+        "This is complete stated direct-federal current doctoral inventory scope, not every member university, historical degree or possible future individualized topic. No qualifying Operations route verified in this scope.",
+        "LBS and Bayes have separately reviewed canonical offering institutions/programmes. Prior legal-awarder uncertainty does not create a duplicate umbrella provider under current actual-offering-institution measure. Source-parent consolidation remains separate continuation 103 proposal.",
+        "Raw University of London reported doctorate origins remain ambiguous; this current programme scope does not assign individuals to members or deny historical degrees.",
+        "DBA is acknowledged separately; its research character is not negated by this project credential-scope decision.",
+        "Generic Social Sciences economics/urban planning and project-management transferable skills do not establish a substantive Operations doctoral field."
+      ],
+      "coverageComplete": true
+    },
+    "assessedAt": "2026-10-25",
+    "priorUnitObservations": [
+      {
+        "assessedAt": "2026-10-25",
+        "priorCheckedAt": "2026-10-20",
+        "units": [
+          {
+            "evidence": "Official Bayes Faculty of Management people page explicitly labels academic staff research groupings and lists Operations and Supply Chain Management among them.",
+            "checkedAt": "2026-10-20",
+            "school": "Bayes Business School, City St George's, University of London",
+            "id": "university-of-london--bayes-operations-supply-chain",
+            "type": "group",
+            "name": "Operations and Supply Chain Management",
+            "fields": [
+              "operations-management",
+              "supply-chain"
+            ],
+            "sourceUrl": "https://www.bayes.citystgeorges.ac.uk/faculties-and-research/management/people#accordion-927190-header-2"
+          },
+          {
+            "evidence": "Official LBS faculty page names Management Science and Operations faculty; University of London member page separately identifies this as one of LBS subject areas.",
+            "checkedAt": "2026-10-20",
+            "school": "London Business School",
+            "id": "university-of-london--lbs-management-science-operations",
+            "type": "area",
+            "name": "Management Science and Operations",
+            "fields": [
+              "operations-management",
+              "operations-research"
+            ],
+            "sourceUrl": "https://www.london.edu/faculty-and-research/management-science-and-operations/faculty-profiles"
+          }
+        ],
+        "decisions": [
+          {
+            "sourceDepartmentId": "university-of-london",
+            "reason": "University-only placeholder names no department.",
+            "unitIds": [],
+            "disposition": "not-a-unit"
+          },
+          {
+            "sourceDepartmentId": "university-of-london__bayes-business-school",
+            "reason": "School-only placeholder; Bayes is a school within a distinct federation member.",
+            "unitIds": [],
+            "disposition": "not-a-unit"
+          },
+          {
+            "sourceDepartmentId": "university-of-london__bayes-business-school__operations-and-supply-chain-management",
+            "reason": "Verified research grouping retained with specific Bayes/City St George's parent, pending cross-record ownership consolidation.",
+            "unitIds": [
+              "university-of-london--bayes-operations-supply-chain"
+            ],
+            "disposition": "replaced"
+          },
+          {
+            "sourceDepartmentId": "university-of-london__london-business-school__management-science-and-operations",
+            "reason": "Verified LBS subject area retained with its own federation-member parent.",
+            "unitIds": [
+              "university-of-london--lbs-management-science-operations"
+            ],
+            "disposition": "replaced"
+          }
+        ],
+        "limitations": [
+          "This imported row combines two distinct federation members: Bayes at City St George's and London Business School. It cannot be safely collapsed into one university alias. Integrator should reconcile unit ownership with separately reviewed member records.",
+          "A federation-wide engineering census was not performed because that would duplicate separate member-university reviews; this umbrella record remains partial."
+        ],
+        "reason": "Imported federal umbrella combined separately reviewed member units. Retain original unit observations and stable IDs as history; current units live only under their actual members."
+      }
+    ],
+    "unitOwnershipCorrections": [
+      {
+        "priorUnitId": "university-of-london--bayes-operations-supply-chain",
+        "universityId": "bayes-business-school",
+        "unitId": "bayes-business-school--operations-and-supply-chain-management",
+        "assessedAt": "2026-10-25",
+        "evidence": "Bayes Operations and Supply Chain Management belongs to City St George's, a separate federation member, and is already registered with Bayes.",
+        "sourceUrl": "https://www.bayes.citystgeorges.ac.uk/faculties-and-research/management/people#accordion-927190-header-2",
+        "checkedAt": "2026-10-20"
+      },
+      {
+        "priorUnitId": "university-of-london--lbs-management-science-operations",
+        "universityId": "london-business-school",
+        "unitId": "london-business-school--management-science-operations",
+        "assessedAt": "2026-10-25",
+        "evidence": "Management Science and Operations belongs to London Business School, a separate federation member, and is already registered there.",
+        "sourceUrl": "https://www.london.edu/faculty-and-research/management-science-and-operations/faculty-profiles",
+        "checkedAt": "2026-10-20"
+      }
+    ]
+  }
+]

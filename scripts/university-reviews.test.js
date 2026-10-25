@@ -94,3 +94,13 @@ test('organisation aliases require independently dated opened relationship evide
  assert.doesNotThrow(()=>validateUniversityReviews([r],original));
  r.organisationAliases[0].checkedAt='2026-10-21';assert.throws(()=>validateUniversityReviews([r],original));
 });
+
+test('federal umbrella corrections preserve member units without duplicate display ownership', () => {
+ const member=review(), umbrella={...structuredClone(member),id:'z-school',units:[],decisions:[{sourceDepartmentId:'zs-om',disposition:'out-of-scope',unitIds:[],reason:'Unit belongs to separately reviewed federation member.'}]};
+ const former={...structuredClone(member.units[0]),id:'z-school--former-operations'};
+ umbrella.priorUnitObservations=[{units:[former],decisions:[]}];
+ umbrella.unitOwnershipCorrections=[{priorUnitId:former.id,universityId:member.id,unitId:member.units[0].id,assessedAt:'2026-10-25',sourceUrl:member.universitySourceUrl,checkedAt:member.checkedAt,evidence:'Official member relationship and unit ownership verified.'}];
+ assert.doesNotThrow(()=>validateUniversityReviews([member,umbrella],original));
+ const rows=universityRows(original,[member,umbrella]);assert.equal(rows.find(r=>r.id===member.id).units.length,1);assert.equal(rows.find(r=>r.id===umbrella.id).units.length,0);
+ for(const mutate of [r=>r.units=[former],r=>r.unitOwnershipCorrections[0].unitId='missing',r=>r.priorUnitObservations=[]]){const invalid=structuredClone(umbrella);mutate(invalid);assert.throws(()=>validateUniversityReviews([member,invalid],original));}
+});

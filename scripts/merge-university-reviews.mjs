@@ -13,6 +13,11 @@ for (const input of inputs) {
     // Unit proposals never replace the separately integrated doctoral overlay,
     // including when a contributor copied an older public row into a proposal.
     delete clean.doctoralReview;
+    // A later source review must not silently erase a reviewed member-unit
+    // ownership correction or resurrect its former duplicate display units.
+    for (const key of ['unitOwnershipCorrections', 'priorUnitObservations']) {
+      if (clean[key] === undefined && records.get(clean.id)?.[key]) clean[key] = records.get(clean.id)[key];
+    }
     if (clean.organisationAliases === undefined && records.get(clean.id)?.organisationAliases) {
       clean.organisationAliases = records.get(clean.id).organisationAliases;
       for (const alias of clean.organisationAliases) {

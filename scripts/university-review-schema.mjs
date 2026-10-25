@@ -77,6 +77,18 @@ export function validateUniversityReviews(records, originals) {
   }
   const byId = new Map(records.map(r => [r.id, r]));
   for (const r of records) {
+    if (r.unitOwnershipCorrections !== undefined) {
+      assert(Array.isArray(r.unitOwnershipCorrections) && Array.isArray(r.priorUnitObservations), `${r.id}: ownership history required`);
+      const seenUnits = new Set();
+      for (const c of r.unitOwnershipCorrections) {
+        assert(text(c.priorUnitId) && !seenUnits.has(c.priorUnitId) && date(c.assessedAt) && text(c.evidence), `${r.id}: invalid ownership correction`);
+        seenUnits.add(c.priorUnitId);
+        assert(c.universityId !== r.id && byId.get(c.universityId)?.units.some(u => u.id === c.unitId), `${r.id}: unknown member unit owner`);
+        assert(!r.units.some(u => u.id === c.priorUnitId), `${r.id}: duplicate member unit resurrected`);
+        assert(r.priorUnitObservations.some(h => h.units?.some(u => u.id === c.priorUnitId)), `${r.id}: prior unit observation missing`);
+        assert(r.sources.some(s => s.url === c.sourceUrl && s.checkedAt === c.checkedAt && s.outcome === 'read'), `${r.id}: ownership correction needs read evidence`);
+      }
+    }
     let next = r; const seen = new Set();
     while (next?.duplicateOf) {
       assert(!seen.has(next.id), `${r.id}: duplicate cycle`); seen.add(next.id);

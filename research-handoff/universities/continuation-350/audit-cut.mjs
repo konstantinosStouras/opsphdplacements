@@ -1,0 +1,11 @@
+import fs from 'node:fs';
+import assert from 'node:assert/strict';
+import {execFileSync} from 'node:child_process';
+import {displayText} from '../../../assets/model.js';
+const dir='research-handoff/universities/continuation-350',read=p=>JSON.parse(fs.readFileSync(p)),before=p=>JSON.parse(execFileSync('git',['show','5fcd817db02eb1be195d086a8d782acc32749805:'+p],{maxBuffer:50e6})),clean=r=>Object.fromEntries(Object.entries(r).filter(([k])=>!['addedAt','updatedAt'].includes(k)));
+const exceptions=new Map();
+for(const file of ['data/doctoral-programs.json','data/universities.json']){const old=before(file).records,current=read(file).records,byId=new Map(current.map(r=>[r.id,r]));for(const r of old){const now=clean(byId.get(r.id)),prior=clean(r),x=exceptions.get(r.id);if(x){assert.deepEqual(now.titleScopeReview,x.titleScopeReview);delete now.titleScopeReview;now.sources=now.sources.filter(s=>!x.addedSourceIds.includes(s.id));}assert.deepEqual(now,prior,'Prior observation changed '+r.id);}console.log(file,{preserved:old.length,titleOnlyCorrections:file.includes('doctoral')?exceptions.size:0,added:current.length-old.length});}
+for(const p of ['data/faculty.json','data/faculty-roster-people.json','data/placements.json','data/employment-histories.json','data/linkedin-histories.json'])assert.deepEqual(read(p),before(p),'Held dataset changed '+p);
+const units=new Map(read('data/university-reviews.json').records.map(r=>[r.id,r]));for(const r of read(dir+'/unit-integration.json'))for(const[k,v]of Object.entries(r))if(!['addedAt','updatedAt','doctoralReview'].includes(k))assert.deepEqual(units.get(r.id)[k],v,'Unapproved unit '+r.id+'/'+k);
+const violations=[];function scan(v,p){if(typeof v==='string'){if(/\.json\b|github\.com\/[^/]+\/opsphdplacements|raw\.githubusercontent\.com\/[^/]+\/opsphdplacements/i.test(displayText(v)))violations.push(p);}else if(Array.isArray(v))v.forEach((x,i)=>scan(x,p+'['+i+']'));else if(v&&typeof v==='object')for(const[k,x]of Object.entries(v))scan(x,p+'.'+k);}
+for(const p of ['data/university-reviews.json','data/doctoral-programs.json'])scan(read(p),p);assert.equal(violations.length,0,JSON.stringify(violations));console.log({heldPeopleDataUnchanged:true,displayTextViolations:0});

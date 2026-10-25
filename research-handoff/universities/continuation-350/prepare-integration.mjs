@@ -1,0 +1,9 @@
+import fs from 'node:fs';import crypto from 'node:crypto';import {execFileSync} from 'node:child_process';
+const dir='research-handoff/universities/continuation-350',root='research-handoff/universities/',read=p=>JSON.parse(fs.readFileSync(p)),extra=(lane,s)=>{const[n,f]=s.split('/');return root+`continuation-${n}/shard-${lane}/${f}.json`;};
+const sources=[extra('a','290/university-of-kent.source-addition')];
+const unitInputs=[extra('a','290/university-of-kent.unit'),extra('c','255/ubc.unit-scope-composite'),dir+'/london.ownership-correction.unit.json'];
+const programmes=[extra('a','290/university-of-kent.doctoral'),extra('c','257/xian-jiaotong.mathematics-or-doctorate')];
+const scopes=['272/pmu-current-doctoral-inventory-partial','273/psu-behrend-current-doctoral-access-limitation','275/nyu-abu-dhabi-additive-engineering-scope-partial','276/new-york-university-shanghai.current-complete-doctoral-title-scope','276/nyu-shanghai.current-complete-doctoral-title-scope','277/saarland-current-doctoral-framework-partial'].map(s=>extra('b',s));
+const m={baseCommit:execFileSync('git',['rev-parse','HEAD'],{encoding:'utf8'}).trim(),sources,unitInputs,programmes,scopes};m.frozenInputs=[...new Set([...sources,...sources.map(p=>read(p).sourceCatalogue),...unitInputs,...programmes,...scopes])].map(path=>({path,sha256:crypto.createHash('sha256').update(fs.readFileSync(path)).digest('hex')}));fs.writeFileSync(dir+'/integration-manifest.json',JSON.stringify(m,null,2)+'\n');
+fs.writeFileSync(dir+'/apply-phase.mjs',fs.readFileSync(root+'continuation-260/apply-phase.mjs','utf8').replaceAll('continuation-260','continuation-350'));
+fs.writeFileSync(dir+'/audit-cut.mjs',fs.readFileSync(root+'continuation-260/audit-cut.mjs','utf8').replaceAll('continuation-260','continuation-350').replaceAll('1f9afd6',m.baseCommit));console.log({sources:sources.length,units:unitInputs.length,programmes:programmes.length,scopes:scopes.length});
