@@ -1,0 +1,23 @@
+import fs from 'node:fs';
+import crypto from 'node:crypto';
+const prefix='research-handoff/universities/',base=prefix+'continuation-150';
+const stats='279 title-qualified routes at 213 providers; 450 sourced programme observations retained. The 688-record source frame has 535 completed unit reviews, 148 partial, five blocked and zero pending. Doctoral scope is separate: 643 observations, 484 current branch scopes complete. The remaining worklist has 242 grouped incomplete identities, including nine pending title/host cases, and 160 unresolved OM List reported-degree labels (overlapping populations).';
+function replace(file,start,text){const old=fs.readFileSync(file,'utf8'),re=new RegExp('^'+start+'.*$','m');if(!re.test(old))throw Error(file);fs.writeFileSync(file,old.replace(re,text));}
+replace('README.md','Stage 1 integration checkpoint',`Stage 1 integration checkpoint (25 October 2026): ${stats} Current doctoral scope completed for 27 additional source records; NOVA Mathematics/Operations Research retained with unknown current status, outside qualifying counts. Stage 1 incomplete; Stages 2–4 held. See [current handoff](research-handoff/universities/continuation-150/README.md).`);
+replace('TODO.md','Stage 1 update,',`Stage 1 update, 25 October 2026: ${stats} See [continuation150](research-handoff/universities/continuation-150/README.md). Continue current doctoral gaps, source-unit identity discrepancies and unresolved reported-PhD institutions. Stages 2–4 held.`);
+replace('research-handoff/priorities/README.md','Current Stage 1 public scope:',`Current Stage 1 public scope: official programme title, named doctoral field/specialization or actual department/school host must name Operations (including Operational Research), Management Science or Industrial Engineering. ${stats} See [continuation150](../universities/continuation-150/README.md). Earlier checkpoints retain original dates.`);
+const later=[
+'146/shard-a/aschaffenburg-university-of-applied-sciences.doctoral.json','146/shard-a/beijing-normal-hong-kong-baptist-university-bnbu.doctoral.json','141/shard-c/university-of-mannheim.doctoral-scope-composite.json',
+'146/shard-a/ceibs.doctoral.json','146/shard-a/china-europe-international-business-school.doctoral.json','147/shard-a/esmt-berlin.doctoral.json','147/shard-a/hainan-bielefeld-university-of-applied-sciences.doctoral.json','147/shard-a/aston-university.doctoral.json',
+'153/shard-b/tennessee-tech-university-doctoral-scope.json','153/shard-b/the-catholic-university-of-america-doctoral-scope.json','145/shard-c/university-of-bristol.doctoral-scope-composite.json','150/drexel.doctoral-scope.json','154/shard-b/qatar-university-doctoral-scope.json'];
+for(const d of ['151/shard-b','152/shard-b'])for(const f of fs.readdirSync(prefix+'continuation-'+d).filter(f=>f.endsWith('-doctoral-scope.json')))later.push(d+'/'+f);
+const manifest=JSON.parse(fs.readFileSync(base+'/integration-manifest.json'));
+manifest.subsequentScopeOnlyProposals=later.map(p=>prefix+'continuation-'+p);manifest.totalScopeObservations=29;manifest.currentScopeCompleteIncrease=27;
+fs.writeFileSync(base+'/integration-manifest.json',JSON.stringify(manifest,null,2)+'\n');
+const files=['README.md','TODO.md','RESEARCH-STATUS.md','data/university-reviews.json','data/doctoral-programs.json','data/record-dates.json','research-handoff/priorities/README.md','research-handoff/priorities/STAGE-1-REMAINING-2026-10-23.md','research-handoff/priorities/stage-1-doctoral-priority-queue.json'];
+function collect(dir){for(const e of fs.readdirSync(dir,{withFileTypes:true})){const p=dir+'/'+e.name;if(e.isDirectory())collect(p);else if(/\.(json|md|mjs|txt)$/.test(p))files.push(p);}}
+for(const d of ['139/shard-c','140/shard-c','141/shard-c','142/shard-c','143/shard-c','144/shard-c','145/shard-c','144/shard-a','145/shard-a','146/shard-a','147/shard-a','147/shard-b','148/shard-b','149/shard-b','150','151/shard-b','152/shard-b','153/shard-b','154/shard-b'])collect(prefix+'continuation-'+d);
+files.push(base+'/release-files.txt',base+'/release-hashes.json');
+const paths=[...new Set(files)].sort();fs.writeFileSync(base+'/release-files.txt',paths.join('\n')+'\n');
+fs.writeFileSync(base+'/release-hashes.json',JSON.stringify({frozenAt:new Date().toISOString(),purpose:'Portable proposal snapshot. Integrated findings are identified in README and manifest; inclusion alone is not verification or public integration.',files:paths.filter(p=>p!==base+'/release-hashes.json').map(path=>({path,sha256:crypto.createHash('sha256').update(fs.readFileSync(path)).digest('hex')}))},null,2)+'\n');
+console.log('Prepared reviewed release paths',paths.length);
