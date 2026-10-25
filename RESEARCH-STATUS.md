@@ -12,8 +12,8 @@ Generated from committed-format public datasets by `node scripts/update-research
 | Researched but unresolved | 1070 |
 | Degree completion unconfirmed | 4 |
 | Pending individual review | 0 |
-| Named-scope doctoral register records, including historical and unresolved routes | 403 |
-| Verified relevant doctoral routes (tracks may overlap; admissions may be suspended) | 394 |
+| Named-scope doctoral register records, including historical and unresolved routes | 404 |
+| Verified relevant doctoral routes (tracks may overlap; admissions may be suspended) | 395 |
 | Institutions with verified relevant doctoral provision | 299 |
 | Names on program graduate and placement pages (person-years) | 14451 |
 | of which listed under an operations area | 2161 |

@@ -58,7 +58,7 @@ export async function renderOrganisations(section,actions){
     for(const u of r.reviews){
      const doctoral=(u.reviews.find(review=>review.id===u.id)||u.reviews.find(review=>review.doctoralReview))?.doctoralReview;
      if(doctoral){const coverage=node('details');coverage.append(node('summary','Doctoral programme coverage: '+(doctoral.coverageComplete?'current branch checks complete':'incomplete')),node('p','Checked '+doctoral.checkedAt));for(const b of doctoral.branches)coverage.append(node('p',b.branch.charAt(0).toUpperCase()+b.branch.slice(1)+': '+b.conclusion));for(const limitation of doctoral.limitations)coverage.append(node('p',limitation));detail.append(coverage);}
-     renderUniversityUnits(detail,u);for(const review of u.reviews)for(const s of review.sources){const key=[s.url,s.checkedAt,s.outcome,s.note].join('|');if(sourceSeen.has(key))continue;sourceSeen.add(key);const a=node('a','Official evidence ↗');a.href=s.url;a.target='_blank';a.rel='noopener noreferrer';detail.append(a,node('small',(s.outcome==='read'?'Checked ':'Attempted ')+s.checkedAt),node('p',s.note));}
+     renderUniversityUnits(detail,u);for(const review of u.reviews)for(const s of [...review.sources,...(review.doctoralReview?.sources||[])]){const key=[s.url,s.checkedAt,s.outcome,s.note].join('|');if(sourceSeen.has(key))continue;sourceSeen.add(key);const a=node('a','Official evidence ↗');a.href=s.url;a.target='_blank';a.rel='noopener noreferrer';detail.append(a,node('small',(s.outcome==='read'?'Checked ':'Attempted ')+s.checkedAt),node('p',s.note));}
     }
     if(!r.reviews.length)detail.append(node('p','Operations departments have not been reviewed for this organisation.'));
     for(const p of r.programs)renderProgramme(detail,p);
