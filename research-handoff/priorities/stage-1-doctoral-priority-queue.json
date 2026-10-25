@@ -6,9 +6,9 @@
   "facultyWithoutNamedPhdInstitution": 24,
   "distinctReportedInstitutionLabels": 369,
   "rankedInstitutionLeads": 364,
-  "matchedLeads": 282,
-  "unresolvedLeads": 82,
-  "withVerifiedCurrentRoutes": 196,
+  "matchedLeads": 286,
+  "unresolvedLeads": 78,
+  "withVerifiedCurrentRoutes": 198,
   "withCompletedCurrentBranchScope": 169,
   "records": [
     {
@@ -34945,11 +34945,15 @@
       "nextStep": "Current scoped doctoral inventory checked; retain evidence and historical limitations"
     },
     {
-      "id": "unresolved:stockholm university",
+      "id": "stockholm-university",
       "name": "Stockholm University",
-      "sourceUniversityIds": [],
-      "candidateUniversityIds": [],
-      "identityMatch": "unresolved discovery label",
+      "sourceUniversityIds": [
+        "stockholm-university"
+      ],
+      "candidateUniversityIds": [
+        "stockholm-university"
+      ],
+      "identityMatch": "accepted university/entity name",
       "reportedFacultyCount": 1,
       "reportedNames": [
         "Stockholm University"
@@ -34958,11 +34962,60 @@
         "omlist-d76f88c9a4470efe"
       ],
       "sourceUrls": [],
-      "owners": [],
-      "doctoralObservations": [],
-      "verifiedCurrentProgrammeIds": [],
+      "owners": [
+        "integrator"
+      ],
+      "doctoralObservations": [
+        {
+          "status": "verified",
+          "checkedAt": "2026-10-25",
+          "programmeIds": [
+            "stockholm-university--business-administration-accounting-operations-management-phd"
+          ],
+          "branches": [
+            {
+              "branch": "business",
+              "reviewState": "partial",
+              "conclusion": "Stockholm Business School's current Business Administration doctoral page fully lists three formal specializations; Accounting and operations management qualifies, generic Management and Marketing do not. Separate Finance doctoral field not yet assessed for named Operations area.",
+              "sourceUrls": [
+                "https://www.su.se/english/divisions/stockholm-business-school/education/courses-and-programmes/doctoral-programme-in-business-administration"
+              ]
+            },
+            {
+              "branch": "engineering",
+              "reviewState": "partial",
+              "conclusion": "Other plausible technical/mathematical doctoral named fields at Stockholm University have not been inventoried.",
+              "sourceUrls": [
+                "https://www.su.se/english/about-the-university"
+              ]
+            }
+          ],
+          "sources": [
+            {
+              "url": "https://www.su.se/english/about-the-university",
+              "checkedAt": "2026-10-25",
+              "outcome": "read",
+              "note": "Official current university identity page."
+            },
+            {
+              "url": "https://www.su.se/english/divisions/stockholm-business-school/education/courses-and-programmes/doctoral-programme-in-business-administration",
+              "checkedAt": "2026-10-25",
+              "outcome": "read",
+              "note": "Full 2026-updated business doctoral page: exact named specialization, PhD wording, supervised dissertation and public defence."
+            }
+          ],
+          "limitations": [
+            "One formally named qualifying specialization verified at Stockholm Business School; other university doctoral named-field inventories incomplete.",
+            "No inference about imported individual's degree field or career history."
+          ],
+          "coverageComplete": false
+        }
+      ],
+      "verifiedCurrentProgrammeIds": [
+        "stockholm-university--business-administration-accounting-operations-management-phd"
+      ],
       "branchCoverageComplete": false,
-      "nextStep": "Resolve official identity and add/associate discovery record without speculative merge"
+      "nextStep": "Verify official current relevant doctoral routes across business and engineering; record branch gaps"
     },
     {
       "id": "syracuse-university",
@@ -35148,11 +35201,15 @@
       "nextStep": "Verify official current relevant doctoral routes across business and engineering; record branch gaps"
     },
     {
-      "id": "unresolved:technical university of denmark",
+      "id": "technical-university-of-denmark",
       "name": "Technical University of Denmark",
-      "sourceUniversityIds": [],
-      "candidateUniversityIds": [],
-      "identityMatch": "unresolved discovery label",
+      "sourceUniversityIds": [
+        "technical-university-of-denmark"
+      ],
+      "candidateUniversityIds": [
+        "technical-university-of-denmark"
+      ],
+      "identityMatch": "accepted university/entity name",
       "reportedFacultyCount": 1,
       "reportedNames": [
         "Technical University of Denmark"
@@ -35161,11 +35218,70 @@
         "omlist-f760da8b30dcc8d7"
       ],
       "sourceUrls": [],
-      "owners": [],
-      "doctoralObservations": [],
+      "owners": [
+        "integrator"
+      ],
+      "doctoralObservations": [
+        {
+          "status": "partial",
+          "checkedAt": "2026-10-25",
+          "programmeIds": [],
+          "branches": [
+            {
+              "branch": "business",
+              "reviewState": "partial",
+              "conclusion": "DTU Management PhD school has independent research, doctoral thesis and public defence; current page does not formally name Operations, Management Science or Industrial Engineering in doctoral title/area. Other department doctoral field inventories remain incomplete.",
+              "sourceUrls": [
+                "https://www.man.dtu.dk/english/Education/PhD",
+                "https://www.man.dtu.dk/english"
+              ]
+            },
+            {
+              "branch": "engineering",
+              "reviewState": "partial",
+              "conclusion": "University engineering doctoral programmes and formal named areas not yet inventoried.",
+              "sourceUrls": [
+                "https://www.dtu.dk/english/about"
+              ]
+            }
+          ],
+          "sources": [
+            {
+              "url": "https://www.dtu.dk/english/about",
+              "checkedAt": "2026-10-25",
+              "outcome": "read",
+              "note": "Official identity full-open."
+            },
+            {
+              "url": "https://www.man.dtu.dk/english/Education/PhD",
+              "checkedAt": "2026-10-25",
+              "outcome": "read",
+              "note": "Full PhD programme page: actual research doctorate, no named Ops/MS/IE field on page."
+            },
+            {
+              "url": "https://www.man.dtu.dk/english",
+              "checkedAt": "2026-10-25",
+              "outcome": "read",
+              "note": "Official department identity, research group listing and PhD school link."
+            },
+            {
+              "url": "https://www.man.dtu.dk/english/about-us/department-organisation/divisions/management-science-division/operations-and-supply-chain-management",
+              "checkedAt": "2026-10-25",
+              "outcome": "read",
+              "note": "Full official Operations research section page, correctly classified as section rather than named doctoral field."
+            }
+          ],
+          "limitations": [
+            "No qualifying programme counted: research-group or section wording and a generic department PhD cannot substitute for an official named doctoral research area.",
+            "Broader current doctoral title/field inventory incomplete; no negative university-wide conclusion.",
+            "Imported OM List individual's reported degree not verified."
+          ],
+          "coverageComplete": false
+        }
+      ],
       "verifiedCurrentProgrammeIds": [],
       "branchCoverageComplete": false,
-      "nextStep": "Resolve official identity and add/associate discovery record without speculative merge"
+      "nextStep": "Verify official current relevant doctoral routes across business and engineering; record branch gaps"
     },
     {
       "id": "unresolved:technical university of dortmund",
@@ -35750,6 +35866,81 @@
       "nextStep": "Resolve official identity and add/associate discovery record without speculative merge"
     },
     {
+      "id": "university-of-sheffield",
+      "name": "The University of Sheffield",
+      "sourceUniversityIds": [
+        "university-of-sheffield"
+      ],
+      "candidateUniversityIds": [
+        "university-of-sheffield"
+      ],
+      "identityMatch": "accepted university/entity name",
+      "reportedFacultyCount": 1,
+      "reportedNames": [
+        "University of Sheffield"
+      ],
+      "facultyIds": [
+        "omlist-75132541f6a9692d"
+      ],
+      "sourceUrls": [],
+      "owners": [
+        "integrator"
+      ],
+      "doctoralObservations": [
+        {
+          "status": "partial",
+          "checkedAt": "2026-10-25",
+          "programmeIds": [],
+          "branches": [
+            {
+              "branch": "business",
+              "reviewState": "partial",
+              "conclusion": "Sheffield University Management School actively admits to a PhD in Management; Operations Management and Decision Sciences is a subject group for staff and doctoral researchers, but no official named Operations doctoral track/area was confirmed on admissions page.",
+              "sourceUrls": [
+                "https://sheffield.ac.uk/management/phd/apply",
+                "https://sheffield.ac.uk/management/people/academic-staff/omds",
+                "https://www.sheffield.ac.uk/management/people/doctoral-researchers"
+              ]
+            },
+            {
+              "branch": "engineering",
+              "reviewState": "partial",
+              "conclusion": "Current engineering/mathematical doctoral formal title and area inventories remain unread.",
+              "sourceUrls": []
+            }
+          ],
+          "sources": [
+            {
+              "url": "https://sheffield.ac.uk/management/phd/apply",
+              "checkedAt": "2026-10-25",
+              "outcome": "read",
+              "note": "Full official 2026 Management PhD admissions, generic degree title, research proposal requirement, no formal Ops route listed."
+            },
+            {
+              "url": "https://sheffield.ac.uk/management/people/academic-staff/omds",
+              "checkedAt": "2026-10-25",
+              "outcome": "read",
+              "note": "Full official OMDS subject-group directory, not named doctoral field evidence."
+            },
+            {
+              "url": "https://www.sheffield.ac.uk/management/people/doctoral-researchers",
+              "checkedAt": "2026-10-25",
+              "outcome": "read",
+              "note": "Full official PhD researcher list labels students by OMDS subject group; this alone cannot establish formal degree specialization."
+            }
+          ],
+          "limitations": [
+            "No qualifying route counted until an official programme title, named specialization/doctoral research area, or actual department/school title explicitly qualifies.",
+            "This is an incomplete current review, not a negative Sheffield-wide conclusion; OM List person's 1996 degree remains discovery only."
+          ],
+          "coverageComplete": false
+        }
+      ],
+      "verifiedCurrentProgrammeIds": [],
+      "branchCoverageComplete": false,
+      "nextStep": "Verify official current relevant doctoral routes across business and engineering; record branch gaps"
+    },
+    {
       "id": "tianjin-university",
       "name": "Tianjin University",
       "sourceUniversityIds": [
@@ -35870,11 +36061,15 @@
       "nextStep": "Resolve official identity and add/associate discovery record without speculative merge"
     },
     {
-      "id": "unresolved:universidad carlos iii de madrid",
+      "id": "universidad-carlos-iii-de-madrid",
       "name": "Universidad Carlos III de Madrid",
-      "sourceUniversityIds": [],
-      "candidateUniversityIds": [],
-      "identityMatch": "unresolved discovery label",
+      "sourceUniversityIds": [
+        "universidad-carlos-iii-de-madrid"
+      ],
+      "candidateUniversityIds": [
+        "universidad-carlos-iii-de-madrid"
+      ],
+      "identityMatch": "accepted university/entity name",
       "reportedFacultyCount": 1,
       "reportedNames": [
         "Universidad Carlos III de Madrid"
@@ -35883,11 +36078,73 @@
         "omlist-9a279e98c3cf0df3"
       ],
       "sourceUrls": [],
-      "owners": [],
-      "doctoralObservations": [],
-      "verifiedCurrentProgrammeIds": [],
+      "owners": [
+        "integrator"
+      ],
+      "doctoralObservations": [
+        {
+          "status": "verified",
+          "checkedAt": "2026-10-25",
+          "programmeIds": [
+            "universidad-carlos-iii-de-madrid--estadistica-ciencia-datos-investigacion-operaciones-doctorate"
+          ],
+          "branches": [
+            {
+              "branch": "business",
+              "reviewState": "partial",
+              "conclusion": "Current Business and Finance doctorate has four listed specializations (Accounting, Finance, Management, Marketing), none named Operations or Management Science; other business doctoral fields remain incomplete.",
+              "sourceUrls": [
+                "https://uc3m.es/doctorado/empresa-finanzas"
+              ]
+            },
+            {
+              "branch": "engineering",
+              "reviewState": "partial",
+              "conclusion": "Current Statistics for Data Science doctorate has formal named OR research line; Mechanical Engineering and Industrial Organization doctorate is not IE by literal title. Other plausible technical doctoral fields remain to inventory.",
+              "sourceUrls": [
+                "https://www.uc3m.es/doctorado/estadistica-ciencia-datos",
+                "https://www.uc3m.es/doctorado/ingenieria-mecanica-organizacion-industrial"
+              ]
+            }
+          ],
+          "sources": [
+            {
+              "url": "https://www.uc3m.es/doctorado/estadistica-ciencia-datos",
+              "checkedAt": "2026-10-25",
+              "outcome": "read",
+              "note": "Full current official doctoral course page: named OR research line, original-research thesis and current admission places."
+            },
+            {
+              "url": "https://www.uc3m.es/doctorado/media/doctorado/doc/archivo/doc_memoria-verificacion-estadistica-ciencia-de-datos/memoria-verificada-estadistica-para-la-ciencia-de-datos.pdf",
+              "checkedAt": "2026-10-25",
+              "outcome": "read",
+              "note": "Full official 2023 52-page degree verification memorandum: official doctoral award, named OR research line and thesis defence requirements; used alongside current course page, not as sole current proof."
+            },
+            {
+              "url": "https://uc3m.es/doctorado/empresa-finanzas",
+              "checkedAt": "2026-10-25",
+              "outcome": "read",
+              "note": "Full current business doctorate page: four formal specializations, no Operations/Management Science named."
+            },
+            {
+              "url": "https://www.uc3m.es/doctorado/ingenieria-mecanica-organizacion-industrial",
+              "checkedAt": "2026-10-25",
+              "outcome": "read",
+              "note": "Full current other-engineering doctorate page: Industrial Organization distinct from IE."
+            }
+          ],
+          "limitations": [
+            "One formal named OR doctoral research line verified; broader current doctoral scope partial.",
+            "The source OM List person's 2009 award remains discovery only, no person verification undertaken."
+          ],
+          "coverageComplete": false
+        }
+      ],
+      "verifiedCurrentProgrammeIds": [
+        "universidad-carlos-iii-de-madrid--estadistica-ciencia-datos-investigacion-operaciones-doctorate"
+      ],
       "branchCoverageComplete": false,
-      "nextStep": "Resolve official identity and add/associate discovery record without speculative merge"
+      "nextStep": "Verify official current relevant doctoral routes across business and engineering; record branch gaps"
     },
     {
       "id": "universidad-de-chile",
@@ -39652,26 +39909,6 @@
       ],
       "facultyIds": [
         "omlist-9408f358c624e4b1"
-      ],
-      "sourceUrls": [],
-      "owners": [],
-      "doctoralObservations": [],
-      "verifiedCurrentProgrammeIds": [],
-      "branchCoverageComplete": false,
-      "nextStep": "Resolve official identity and add/associate discovery record without speculative merge"
-    },
-    {
-      "id": "unresolved:university of sheffield",
-      "name": "University of Sheffield",
-      "sourceUniversityIds": [],
-      "candidateUniversityIds": [],
-      "identityMatch": "unresolved discovery label",
-      "reportedFacultyCount": 1,
-      "reportedNames": [
-        "University of Sheffield"
-      ],
-      "facultyIds": [
-        "omlist-75132541f6a9692d"
       ],
       "sourceUrls": [],
       "owners": [],

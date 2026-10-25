@@ -1,0 +1,126 @@
+{
+  "id": "the-chinese-university-of-hong-kong-shenzhen",
+  "status": "reviewed",
+  "canonicalName": "The Chinese University of Hong Kong, Shenzhen",
+  "universitySourceUrl": "https://sme.cuhk.edu.cn/en/teacher/1826",
+  "checkedAt": "2026-10-25",
+  "reviewer": "Codex; original public advertisement PDF and linked official host profile read in Chrome",
+  "units": [
+    {
+      "id": "cuhk-shenzhen--information-systems-operations-management",
+      "name": "Information Systems & Operations Management",
+      "school": "School of Management and Economics",
+      "type": "area",
+      "fields": [
+        "operations-management"
+      ],
+      "sourceUrl": "https://sme.cuhk.edu.cn/en/teacher-search",
+      "checkedAt": "2026-10-21",
+      "evidence": "Official faculty directory explicitly lists this academic field and academic area; retained as an area, not a department."
+    },
+    {
+      "id": "cuhk-shenzhen--school-of-data-science",
+      "name": "School of Data Science",
+      "school": null,
+      "type": "school",
+      "fields": [
+        "operations-research",
+        "operations-management"
+      ],
+      "sourceUrl": "https://sds.cuhk.edu.cn/en",
+      "checkedAt": "2026-10-21",
+      "evidence": "Official school introduction explicitly names operations research and operations management among its theoretical and application fields."
+    }
+  ],
+  "decisions": [
+    {
+      "sourceDepartmentId": "chinese-university-of-hong-kong-shenzhen",
+      "disposition": "replaced",
+      "unitIds": [
+        "cuhk-shenzhen--information-systems-operations-management",
+        "cuhk-shenzhen--school-of-data-science"
+      ],
+      "reason": "Source alias reconciled to canonical Shenzhen institution and verified school/academic area using coordinated official-source review."
+    },
+    {
+      "sourceDepartmentId": "chinese-university-of-hong-kong-shenzhen__school-of-data-science__operations-research",
+      "disposition": "replaced",
+      "unitIds": [
+        "cuhk-shenzhen--school-of-data-science"
+      ],
+      "reason": "Operations Research is a doctoral research field in the verified School of Data Science, not a verified separate department."
+    },
+    {
+      "sourceDepartmentId": "chinese-university-of-hong-kong-shenzhen__school-of-management-and-economics__information-systems-and-operations-management",
+      "disposition": "replaced",
+      "unitIds": [
+        "cuhk-shenzhen--information-systems-operations-management"
+      ],
+      "reason": "Source alias reconciled to canonical Shenzhen institution and verified school/academic area using coordinated official-source review."
+    },
+    {
+      "sourceDepartmentId": "chinese-university-of-hong-kong-shenzhen__school-of-management-and-economics__management-and-economics",
+      "disposition": "replaced",
+      "unitIds": [
+        "cuhk-shenzhen--information-systems-operations-management"
+      ],
+      "reason": "Source alias reconciled to canonical Shenzhen institution and verified school/academic area using coordinated official-source review."
+    },
+    {
+      "sourceDepartmentId": "chinese-university-of-hong-kong-shenzhen__school-of-management-and-economics__the-research-group-of-prof-yiming-zhang",
+      "disposition": "not-a-unit",
+      "unitIds": [],
+      "reason": "Exact original two-page vacancy now actually read: named professor research group is an interdisciplinary postdoctoral project team, formally affiliated with SME and including faculty at other universities. It does not identify a separate administrative department or independent named doctoral programme. Actual school/academic-area units already reconciled separately."
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://sme.cuhk.edu.cn/en/node/553",
+      "checkedAt": "2026-10-21",
+      "outcome": "read",
+      "note": "Official faculty overview establishes The Chinese University of Hong Kong, Shenzhen identity and School of Management and Economics faculty context; no Operations unit verified from this overview."
+    },
+    {
+      "url": "https://sme.cuhk.edu.cn/en/teacher-search",
+      "note": "Official academic-field and academic-area structure includes Information Systems & Operations Management.",
+      "checkedAt": "2026-10-21",
+      "outcome": "read"
+    },
+    {
+      "url": "https://www.cuhk.edu.cn/en",
+      "note": "Read school inventory confirming Data Science, Science and Engineering, and Management and Economics schools and Shenzhen identity.",
+      "checkedAt": "2026-10-21",
+      "outcome": "read"
+    },
+    {
+      "url": "https://sds.cuhk.edu.cn/en",
+      "note": "School introduction explicitly includes operations research and operations management.",
+      "checkedAt": "2026-10-21",
+      "outcome": "read"
+    },
+    {
+      "url": "https://sse.cuhk.edu.cn/en",
+      "note": "Read engineering school navigation, programs and research overview; supply-chain/logistics master remains a program, not a department.",
+      "checkedAt": "2026-10-21",
+      "outcome": "read"
+    },
+    {
+      "url": "https://drive.google.com/file/d/1wx1Yb6UHguEVuh1Y7pMLBcZPDZyFFALL/view",
+      "checkedAt": "2026-10-25",
+      "outcome": "read",
+      "note": "Full loaded two-page original linked advertisement read in Chrome Drive PDF viewer, no download. Postdoctoral project in platform operations/market design formally affiliated with School of Management and Economics CUHK Shenzhen; supervised by Yiming Zhang with collaborating faculty elsewhere. Research team is a project collaboration, not named administrative department. Research themes and applicant PhD fields do not establish new local PhD programme."
+    },
+    {
+      "url": "https://sme.cuhk.edu.cn/en/teacher/1826",
+      "checkedAt": "2026-10-25",
+      "outcome": "read",
+      "note": "Linked official SME institutional profile identity/header and address read in Chrome, matching Yiming Zhang and CUHK Shenzhen academic host. Used only for source attribution and institutional identity; no person degree/career data entered, no CV accessed."
+    }
+  ],
+  "limitations": [
+    "All imported alias/unit assertions resolved without inventing a separate professor-named department. Canonical Shenzhen programme/unit IDs and original dates retained; Hong Kong campus not merged.",
+    "A project research team in Platform Operations is not an actual Operations-named department/school or additional formal doctoral specialization. Applicant doctorate qualifications not local award evidence.",
+    "Independent remaining canonical doctoral branch coverage gaps remain separate; this source-unit closure does not mark whole doctoral inventory complete or collect graduate/postdoc employment histories."
+  ],
+  "duplicateOf": "cuhk-shenzhen"
+}
