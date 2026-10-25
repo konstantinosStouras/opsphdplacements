@@ -1,0 +1,15 @@
+import fs from 'node:fs';
+import crypto from 'node:crypto';
+import {execFileSync} from 'node:child_process';
+const dir='research-handoff/universities/continuation-300',root='research-handoff/universities/',read=p=>JSON.parse(fs.readFileSync(p));
+const specs=[["fau-erlangen-nuremberg", 224], ["justus-liebig-university-giessen", 225], ["university-of-hamburg", 226], ["leiden-university", 227], ["university-of-lausanne", 228], ["university-of-leicester", 229]];
+const path=(n,id,suffix)=>root+`continuation-${n}/shard-a/${id}.${suffix}.json`,extra=(lane,s)=>{const[n,f]=s.split('/');return root+`continuation-${n}/shard-${lane}/${f}.json`;};
+const sources=specs.map(([id,n])=>path(n,id,'source-addition'));
+const unitInputs=specs.map(([id,n])=>path(n,id,'unit'));
+const programmes=specs.map(([id,n])=>path(n,id,'doctoral'));
+const scopes=['219/worcester-polytechnic-institute.doctoral-scope-composite','220/university-of-alabama-birmingham.doctoral-scope-composite','223/york-university.doctoral-scope-composite'].map(s=>extra('c',s)).concat(['248/sgi-source-bounded-doctoral-scope','249/enmu-current-complete-doctoral-scope','250/eiu-current-complete-doctoral-scope','251/etsu-current-complete-doctoral-scope','252/emlv-school-bounded-doctoral-scope'].map(s=>extra('b',s)));
+const m={baseCommit:execFileSync('git',['rev-parse','HEAD'],{encoding:'utf8'}).trim(),sources,unitInputs,programmes,scopes};
+m.frozenInputs=[...new Set([...sources,...sources.map(p=>read(p).sourceCatalogue),...unitInputs,...programmes,...scopes,dir+'/root-title-observations.json'])].map(path=>({path,sha256:crypto.createHash('sha256').update(fs.readFileSync(path)).digest('hex')}));
+fs.writeFileSync(dir+'/integration-manifest.json',JSON.stringify(m,null,2)+'\n');
+fs.writeFileSync(dir+'/apply-phase.mjs',fs.readFileSync(root+'continuation-260/apply-phase.mjs','utf8').replaceAll('continuation-260','continuation-300'));
+console.log({sources:sources.length,units:unitInputs.length,programmes:programmes.length,scopes:scopes.length});
