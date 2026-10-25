@@ -2,7 +2,7 @@
 
 Public website: https://www.stouras.com/opsphdplacements/
 
-Stage 1 integration checkpoint (25 October 2026): 291 qualifying current doctoral routes at 221 providers; 461 sourced programme observations retained. The 704-record source frame has 544 completed unit reviews, 155 partial, five blocked and zero pending. Doctoral scope: 659 observations, 491 current branch scopes complete. Remaining: 248 grouped incomplete identities, nine pending title/host cases and 144 unresolved OM List reported-degree labels (overlapping populations). Eleven programme observations integrated (two current-status unknown), USTC current status resolved, historical Helsinki alias reconciled, French Industrial Engineering title recognized. Stage 1 incomplete; Stages 2–4 held. See [current handoff](research-handoff/universities/continuation-171/README.md).
+Stage 1 integration checkpoint (25 October 2026): 299 qualifying current doctoral routes at 226 providers; 469 sourced programme observations retained. The 716-record source frame has 547 completed unit reviews,164 partial and five blocked. Doctoral scope:670 observations,495 current branch scopes complete. Remaining:256 grouped incomplete identities,nine pending title/host cases and132 unresolved OM List reported-degree labels (overlapping populations). Eight additional doctoral routes and four current doctoral-scope closures integrated. Stage 1 incomplete; Stages 2–4 held. See [current handoff](research-handoff/universities/continuation-182/README.md).
 
 An independent, static research directory for Operations Research, Operations Management and Industrial Engineering. The visual organization is inspired by Econ PhD Placements; all application code is original.
 

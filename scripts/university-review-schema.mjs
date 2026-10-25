@@ -6,7 +6,7 @@ const url = v => {
   try { const u = new URL(v); return ['https:', 'http:'].includes(u.protocol) && !u.username && !u.password; } catch { return false; }
 };
 const fields = new Set(['operations-management', 'operations-research', 'industrial-engineering', 'supply-chain', 'logistics']);
-const types = new Set(['department', 'school', 'division', 'group', 'area', 'center', 'institute', 'pillar', 'cluster', 'chair', 'laboratory']);
+const types = new Set(['department', 'school', 'faculty', 'division', 'group', 'area', 'center', 'institute', 'pillar', 'cluster', 'chair', 'laboratory']);
 const dispositions = new Set(['replaced', 'duplicate', 'out-of-scope', 'not-a-unit', 'unresolved']);
 
 export function validateUniversityReviews(records, originals) {

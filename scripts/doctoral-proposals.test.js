@@ -32,6 +32,8 @@ test('reviewed descriptive research topics cannot re-enter the named-title regis
  assert(hasNamedOperationsScope('Doctorat en Génie industriel'));
  assert(hasNamedOperationsScope('Département de mathématiques et de génie industriel'));
  assert(!hasNamedOperationsScope('Doctorat en Génie mécanique'));
+ assert(hasNamedOperationsScope('Estadística e investigación operativa'));
+ assert(!hasNamedOperationsScope('Investigación en ingeniería mecánica'));
  assert(!hasNamedOperationsScope('Operational Technology'));
  assert(!hasNamedOperationsScope('Process Safety Engineering'));
 });

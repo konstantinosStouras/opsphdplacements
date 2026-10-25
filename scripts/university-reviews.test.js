@@ -36,6 +36,9 @@ test('reviewed aliases merge only with a reviewed target; evidence and original 
 });
 test('validation rejects unvisited evidence, unsupported fields and omitted imported labels', () => {
   assert.doesNotThrow(() => validateUniversityReviews([review()], original));
+ const faculty = review(); faculty.units[0].type = 'faculty';
+ assert.doesNotThrow(() => validateUniversityReviews([faculty], original));
+ assert.equal(universityRows(original, [faculty]).find(r => r.id === 'z').units[0].type, 'faculty');
   for (const mutate of [
     r => r.sources[0].outcome = 'blocked',
     r => r.units[0].fields = ['information-systems'],
