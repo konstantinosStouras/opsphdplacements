@@ -1,0 +1,15 @@
+import fs from 'node:fs';
+import crypto from 'node:crypto';
+import {execFileSync} from 'node:child_process';
+const dir='research-handoff/universities/continuation-280',root='research-handoff/universities/',read=p=>JSON.parse(fs.readFileSync(p));
+const specs=[['universidad-de-valladolid',205],['university-of-regina',206],['university-of-salford',207],['clausthal-university-of-technology',208],['tu-dortmund-university',209],['tud-dresden',210]];
+const path=(n,id,suffix)=>root+`continuation-${n}/shard-a/${id}.${suffix}.json`,extra=(lane,s)=>{const[n,f]=s.split('/');return root+`continuation-${n}/shard-${lane}/${f}.json`;};
+const sources=specs.map(([id,n])=>path(n,id,'source-addition'));
+const unitInputs=specs.map(([id,n])=>path(n,id,'unit')).concat(['235/cuhk-shenzhen-professor-group-unit','236/monterrey-original-research-host-unit','237/stevens-original-operations-field-unit','238/guangzhou-current-unit-scope'].map(s=>extra('b',s)));
+const programmes=specs.map(([id,n])=>path(n,id,'doctoral'));
+const scopes=['206/university-of-oxford.doctoral-scope-composite','208/university-of-queensland.doctoral-partial-composite'].map(s=>extra('c',s));
+const m={baseCommit:execFileSync('git',['rev-parse','HEAD'],{encoding:'utf8'}).trim(),sources,unitInputs,programmes,scopes};
+m.frozenInputs=[...new Set([...sources,...sources.map(p=>read(p).sourceCatalogue),...unitInputs,...programmes,...scopes,dir+'/root-title-observations.json'])].map(path=>({path,sha256:crypto.createHash('sha256').update(fs.readFileSync(path)).digest('hex')}));
+fs.writeFileSync(dir+'/integration-manifest.json',JSON.stringify(m,null,2)+'\n');
+fs.writeFileSync(dir+'/apply-phase.mjs',fs.readFileSync(root+'continuation-260/apply-phase.mjs','utf8').replaceAll('continuation-260','continuation-280'));
+console.log({sources:sources.length,units:unitInputs.length,programmes:programmes.length,scopes:scopes.length});

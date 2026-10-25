@@ -6,9 +6,9 @@
   "facultyWithoutNamedPhdInstitution": 24,
   "distinctReportedInstitutionLabels": 369,
   "rankedInstitutionLeads": 364,
-  "matchedLeads": 286,
-  "unresolvedLeads": 78,
-  "withVerifiedCurrentRoutes": 198,
+  "matchedLeads": 292,
+  "unresolvedLeads": 72,
+  "withVerifiedCurrentRoutes": 201,
   "withCompletedCurrentBranchScope": 169,
   "records": [
     {
@@ -11460,7 +11460,9 @@
           "coverageComplete": true
         }
       ],
-      "verifiedCurrentProgrammeIds": [],
+      "verifiedCurrentProgrammeIds": [
+        "university-of-bath--management-phd-operations"
+      ],
       "branchCoverageComplete": true,
       "nextStep": "Current scoped doctoral inventory checked; retain evidence and historical limitations"
     },
@@ -24827,7 +24829,8 @@
         }
       ],
       "verifiedCurrentProgrammeIds": [
-        "koc-university--industrial-engineering-operations-management-phd"
+        "koc-university--industrial-engineering-operations-management-phd",
+        "koc-university--business-administration-phd-operations"
       ],
       "branchCoverageComplete": true,
       "nextStep": "Current scoped doctoral inventory checked; retain evidence and historical limitations"
@@ -30702,6 +30705,88 @@
       "nextStep": "Verify official current relevant doctoral routes across business and engineering; record branch gaps"
     },
     {
+      "id": "clausthal-university-of-technology",
+      "name": "Clausthal University of Technology",
+      "sourceUniversityIds": [
+        "clausthal-university-of-technology"
+      ],
+      "candidateUniversityIds": [
+        "clausthal-university-of-technology"
+      ],
+      "identityMatch": "accepted university/entity name",
+      "reportedFacultyCount": 1,
+      "reportedNames": [
+        "Technical University of Clausthal"
+      ],
+      "facultyIds": [
+        "omlist-86fc453d1720c869"
+      ],
+      "sourceUrls": [],
+      "owners": [
+        "integrator"
+      ],
+      "doctoralObservations": [
+        {
+          "status": "partial",
+          "checkedAt": "2026-10-25",
+          "programmeIds": [],
+          "branches": [
+            {
+              "branch": "business",
+              "reviewState": "partial",
+              "conclusion": "Current graduate academy confirms faculty research doctorates; business/economic exact current doctoral field list not read.",
+              "sourceUrls": [
+                "https://www.graduiertenakademie.tu-clausthal.de/promotion/planung-schritt-fuer-schritt"
+              ]
+            },
+            {
+              "branch": "engineering",
+              "reviewState": "partial",
+              "conclusion": "Possible current Operations Research Promotion field appears in indexed 2025 official bulletin but full page returned live security challenge; no qualifying route counted pending accessible official confirmation.",
+              "sourceUrls": [
+                "https://www.graduiertenakademie.tu-clausthal.de/promotion/planung-schritt-fuer-schritt"
+              ]
+            }
+          ],
+          "sources": [
+            {
+              "url": "https://www.tu-clausthal.de/en/university/about-us",
+              "checkedAt": "2026-10-25",
+              "outcome": "read",
+              "note": "Full official current institution identity page."
+            },
+            {
+              "url": "https://www.graduiertenakademie.tu-clausthal.de/promotion/planung-schritt-fuer-schritt",
+              "checkedAt": "2026-10-25",
+              "outcome": "read",
+              "note": "Full current doctoral-process page confirms supervised dissertation, faculty approval and defence but no exact named OR doctoral field."
+            },
+            {
+              "url": "https://dokumente.ub.tu-clausthal.de/servlets/MCRFileNodeServlet/clausthal_derivate_00002562/2025_10_VKB.pdf",
+              "checkedAt": "2026-10-25",
+              "outcome": "blocked",
+              "note": "Live Security Check on full open; no indexed-snippet promotion claim promoted to verified."
+            },
+            {
+              "url": "https://www.asta.tu-clausthal.de/fileadmin/AStA/Hochschulpolitisches/Ordnungen/Organisationssatzung/Organisationssatzung_beschlossen_am_2025-11-26.pdf",
+              "checkedAt": "2026-10-25",
+              "outcome": "blocked",
+              "note": "Full open 404; no source evidence used."
+            }
+          ],
+          "limitations": [
+            "No qualifying route counted because current official bulletin was access-challenged and other read pages only establish generic research doctorate.",
+            "Do not retry or bypass live security challenge; use independently accessible official title evidence if later available.",
+            "Stage 2 individual 2002 degree remains discovery only."
+          ],
+          "coverageComplete": false
+        }
+      ],
+      "verifiedCurrentProgrammeIds": [],
+      "branchCoverageComplete": false,
+      "nextStep": "Verify official current relevant doctoral routes across business and engineering; record branch gaps"
+    },
+    {
       "id": "dalian-university-of-technology",
       "name": "Dalian University of Technology",
       "sourceUniversityIds": [
@@ -35111,26 +35196,6 @@
       "nextStep": "Current scoped doctoral inventory checked; retain evidence and historical limitations"
     },
     {
-      "id": "unresolved:technical university of clausthal",
-      "name": "Technical University of Clausthal",
-      "sourceUniversityIds": [],
-      "candidateUniversityIds": [],
-      "identityMatch": "unresolved discovery label",
-      "reportedFacultyCount": 1,
-      "reportedNames": [
-        "Technical University of Clausthal"
-      ],
-      "facultyIds": [
-        "omlist-86fc453d1720c869"
-      ],
-      "sourceUrls": [],
-      "owners": [],
-      "doctoralObservations": [],
-      "verifiedCurrentProgrammeIds": [],
-      "branchCoverageComplete": false,
-      "nextStep": "Resolve official identity and add/associate discovery record without speculative merge"
-    },
-    {
       "id": "technical-university-of-darmstadt",
       "name": "Technical University of Darmstadt",
       "sourceUniversityIds": [
@@ -35282,46 +35347,6 @@
       "verifiedCurrentProgrammeIds": [],
       "branchCoverageComplete": false,
       "nextStep": "Verify official current relevant doctoral routes across business and engineering; record branch gaps"
-    },
-    {
-      "id": "unresolved:technical university of dortmund",
-      "name": "Technical University of Dortmund",
-      "sourceUniversityIds": [],
-      "candidateUniversityIds": [],
-      "identityMatch": "unresolved discovery label",
-      "reportedFacultyCount": 1,
-      "reportedNames": [
-        "Technical University of Dortmund"
-      ],
-      "facultyIds": [
-        "omlist-d69f54b4003389c7"
-      ],
-      "sourceUrls": [],
-      "owners": [],
-      "doctoralObservations": [],
-      "verifiedCurrentProgrammeIds": [],
-      "branchCoverageComplete": false,
-      "nextStep": "Resolve official identity and add/associate discovery record without speculative merge"
-    },
-    {
-      "id": "unresolved:technical university of dresden",
-      "name": "Technical University of Dresden",
-      "sourceUniversityIds": [],
-      "candidateUniversityIds": [],
-      "identityMatch": "unresolved discovery label",
-      "reportedFacultyCount": 1,
-      "reportedNames": [
-        "Technical University of Dresden"
-      ],
-      "facultyIds": [
-        "omlist-dbd54a7602c9309b"
-      ],
-      "sourceUrls": [],
-      "owners": [],
-      "doctoralObservations": [],
-      "verifiedCurrentProgrammeIds": [],
-      "branchCoverageComplete": false,
-      "nextStep": "Resolve official identity and add/associate discovery record without speculative merge"
     },
     {
       "id": "unresolved:telecom paris",
@@ -36041,6 +36066,158 @@
       "nextStep": "Verify official current relevant doctoral routes across business and engineering; record branch gaps"
     },
     {
+      "id": "tu-dortmund-university",
+      "name": "TU Dortmund University",
+      "sourceUniversityIds": [
+        "tu-dortmund-university"
+      ],
+      "candidateUniversityIds": [
+        "tu-dortmund-university"
+      ],
+      "identityMatch": "accepted university/entity name",
+      "reportedFacultyCount": 1,
+      "reportedNames": [
+        "Technical University of Dortmund"
+      ],
+      "facultyIds": [
+        "omlist-d69f54b4003389c7"
+      ],
+      "sourceUrls": [],
+      "owners": [
+        "integrator"
+      ],
+      "doctoralObservations": [
+        {
+          "status": "partial",
+          "checkedAt": "2026-10-25",
+          "programmeIds": [],
+          "branches": [
+            {
+              "branch": "business",
+              "reviewState": "partial",
+              "conclusion": "Current Faculty of Business and Economics structured doctoral process requires original dissertation and oral disputation; Management Science is a professor/chair title. No formally named doctoral specialization confirmed from opened page.",
+              "sourceUrls": [
+                "https://wiwi.tu-dortmund.de/fakultaet/zentraleeinrichtungen/promotionsangelegenheiten/strukturiertes-promotionsprogramm/",
+                "https://ms.wiwi.tu-dortmund.de/"
+              ]
+            },
+            {
+              "branch": "engineering",
+              "reviewState": "partial",
+              "conclusion": "Technical/mathematical faculties' exact formal doctoral subject-title and named-field inventories remain unread; Industrial Engineering master's title alone is not doctorate evidence.",
+              "sourceUrls": [
+                "https://www.tu-dortmund.de/en/university/profile/"
+              ]
+            }
+          ],
+          "sources": [
+            {
+              "url": "https://www.tu-dortmund.de/en/university/profile/",
+              "checkedAt": "2026-10-25",
+              "outcome": "read",
+              "note": "Full official canonical identity and general faculty structure."
+            },
+            {
+              "url": "https://wiwi.tu-dortmund.de/fakultaet/zentraleeinrichtungen/promotionsangelegenheiten/strukturiertes-promotionsprogramm/",
+              "checkedAt": "2026-10-25",
+              "outcome": "read",
+              "note": "Full current business faculty doctoral process: dissertation, structured study and disputation; no explicit Ops/MS field."
+            },
+            {
+              "url": "https://ms.wiwi.tu-dortmund.de/",
+              "checkedAt": "2026-10-25",
+              "outcome": "read",
+              "note": "Full current Management Science professorship site, not a programme/department."
+            }
+          ],
+          "limitations": [
+            "No qualifying route from actual opened pages yet; an academic chair's title and generic doctorate cannot be combined into an invented named PhD.",
+            "Other current doctoral named fields still to assess; 2016 imported person award remains discovery only."
+          ],
+          "coverageComplete": false
+        }
+      ],
+      "verifiedCurrentProgrammeIds": [],
+      "branchCoverageComplete": false,
+      "nextStep": "Verify official current relevant doctoral routes across business and engineering; record branch gaps"
+    },
+    {
+      "id": "tud-dresden",
+      "name": "TUD Dresden University of Technology",
+      "sourceUniversityIds": [
+        "tud-dresden"
+      ],
+      "candidateUniversityIds": [
+        "tud-dresden"
+      ],
+      "identityMatch": "accepted university/entity name",
+      "reportedFacultyCount": 1,
+      "reportedNames": [
+        "Technical University of Dresden"
+      ],
+      "facultyIds": [
+        "omlist-dbd54a7602c9309b"
+      ],
+      "sourceUrls": [],
+      "owners": [
+        "integrator"
+      ],
+      "doctoralObservations": [
+        {
+          "status": "partial",
+          "checkedAt": "2026-10-25",
+          "programmeIds": [],
+          "branches": [
+            {
+              "branch": "business",
+              "reviewState": "partial",
+              "conclusion": "University permits academic original-research doctorate and has a Management Science junior professorship, but no formal Management Science doctoral specialty or qualifying department/school title has yet been verified.",
+              "sourceUrls": [
+                "https://tu-dresden.de/forschung-transfer/wissenschaftlicher-nachwuchs/promotion/index?set_language=de",
+                "https://tu-dresden.de/bu/wirtschaft/managementscience/"
+              ]
+            },
+            {
+              "branch": "engineering",
+              "reviewState": "partial",
+              "conclusion": "Current university administrative list marks Wirtschaftsingenieurwesen Promotion as auslaufend; no active intake inferred. Other formal doctoral fields require review.",
+              "sourceUrls": [
+                "https://tu-dresden.de/studium/im-studium/ressourcen/dateien/immatrikulationsamt/immatrikulationsamt/zustaendige-sachbearbeiter-innen-gemaess-studiengangszuordnung-a-z"
+              ]
+            }
+          ],
+          "sources": [
+            {
+              "url": "https://tu-dresden.de/forschung-transfer/wissenschaftlicher-nachwuchs/promotion/index?set_language=de",
+              "checkedAt": "2026-10-25",
+              "outcome": "read",
+              "note": "Full university page describes original research contribution, dissertation and oral examination; institution-wide doctorate framework alone not an eligible title."
+            },
+            {
+              "url": "https://tu-dresden.de/bu/wirtschaft/managementscience/",
+              "checkedAt": "2026-10-25",
+              "outcome": "read",
+              "note": "Management Science is a junior professorship, not formal doctoral field or department/school."
+            },
+            {
+              "url": "https://tu-dresden.de/studium/im-studium/ressourcen/dateien/immatrikulationsamt/immatrikulationsamt/zustaendige-sachbearbeiter-innen-gemaess-studiengangszuordnung-a-z",
+              "checkedAt": "2026-10-25",
+              "outcome": "read",
+              "note": "Full degree administrative inventory marks Industrial Engineering doctorate (Wirtschaftsingenieurwesen/Prom) phasing out."
+            }
+          ],
+          "limitations": [
+            "Historical OM List reported 2009 doctorate is discovery only, not individual award verification.",
+            "Current named doctoral specialty and actual host-unit inventories incomplete; do not publish a positive route from a chair plus generic research doctorate."
+          ],
+          "coverageComplete": false
+        }
+      ],
+      "verifiedCurrentProgrammeIds": [],
+      "branchCoverageComplete": false,
+      "nextStep": "Verify official current relevant doctoral routes across business and engineering; record branch gaps"
+    },
+    {
       "id": "unresolved:universidad autonoma de madrid",
       "name": "Universidad Autónoma de Madrid",
       "sourceUniversityIds": [],
@@ -36233,11 +36410,15 @@
       "nextStep": "Current scoped doctoral inventory checked; retain evidence and historical limitations"
     },
     {
-      "id": "unresolved:universidad de valladolid",
+      "id": "universidad-de-valladolid",
       "name": "Universidad de Valladolid",
-      "sourceUniversityIds": [],
-      "candidateUniversityIds": [],
-      "identityMatch": "unresolved discovery label",
+      "sourceUniversityIds": [
+        "universidad-de-valladolid"
+      ],
+      "candidateUniversityIds": [
+        "universidad-de-valladolid"
+      ],
+      "identityMatch": "accepted university/entity name",
       "reportedFacultyCount": 1,
       "reportedNames": [
         "Universidad de Valladolid"
@@ -36246,11 +36427,74 @@
         "omlist-d09adddf5e933d20"
       ],
       "sourceUrls": [],
-      "owners": [],
-      "doctoralObservations": [],
-      "verifiedCurrentProgrammeIds": [],
+      "owners": [
+        "integrator"
+      ],
+      "doctoralObservations": [
+        {
+          "status": "verified",
+          "checkedAt": "2026-10-25",
+          "programmeIds": [
+            "universidad-de-valladolid--ingenieria-industrial-doctorado"
+          ],
+          "branches": [
+            {
+              "branch": "business",
+              "reviewState": "partial",
+              "conclusion": "Doctoral-school catalogue lists Economics and Business Economics, but detailed formal named research-field inventories are not yet read.",
+              "sourceUrls": [
+                "https://esduva.uva.es/oferta/programas-de-doctorado/"
+              ]
+            },
+            {
+              "branch": "engineering",
+              "reviewState": "partial",
+              "conclusion": "One current Industrial Engineering doctorate verified at actual matching school; current catalogue also lists Mathematics/Computer Science and other engineering awards, whose plausible formal named Ops/IE fields are not yet fully checked.",
+              "sourceUrls": [
+                "https://esduva.uva.es/oferta/programas-de-doctorado/",
+                "https://www.eii.uva.es/titulaciones/index.php",
+                "https://doctorado-ing-industrial.uva.es/en/home/"
+              ]
+            }
+          ],
+          "sources": [
+            {
+              "url": "https://esduva.uva.es/oferta/programas-de-doctorado/",
+              "checkedAt": "2026-10-25",
+              "outcome": "read",
+              "note": "Full current university doctoral programme inventory, exact doctorate title."
+            },
+            {
+              "url": "https://www.eii.uva.es/titulaciones/index.php",
+              "checkedAt": "2026-10-25",
+              "outcome": "read",
+              "note": "Full current School of Industrial Engineering degree list, doctorate hosted there."
+            },
+            {
+              "url": "https://doctorado-ing-industrial.uva.es/en/home/",
+              "checkedAt": "2026-10-25",
+              "outcome": "read",
+              "note": "Full dedicated programme site, active places, thesis and school facilities."
+            },
+            {
+              "url": "https://doctorado-ing-industrial.uva.es/en/information/objectives-and-competencies/",
+              "checkedAt": "2026-10-25",
+              "outcome": "read",
+              "note": "Full dedicated programme objectives page: original research doctoral credential."
+            }
+          ],
+          "limitations": [
+            "Current Industrial Engineering doctorate verified; other formal named business/mathematical/technical fields not fully inventoried.",
+            "1995 individual OM List degree remains discovery only."
+          ],
+          "coverageComplete": false
+        }
+      ],
+      "verifiedCurrentProgrammeIds": [
+        "universidad-de-valladolid--ingenieria-industrial-doctorado"
+      ],
       "branchCoverageComplete": false,
-      "nextStep": "Resolve official identity and add/associate discovery record without speculative merge"
+      "nextStep": "Verify official current relevant doctoral routes across business and engineering; record branch gaps"
     },
     {
       "id": "university-of-sao-paulo",
@@ -39878,11 +40122,15 @@
       "nextStep": "Verify official current relevant doctoral routes across business and engineering; record branch gaps"
     },
     {
-      "id": "unresolved:university of regina",
+      "id": "university-of-regina",
       "name": "University of Regina",
-      "sourceUniversityIds": [],
-      "candidateUniversityIds": [],
-      "identityMatch": "unresolved discovery label",
+      "sourceUniversityIds": [
+        "university-of-regina"
+      ],
+      "candidateUniversityIds": [
+        "university-of-regina"
+      ],
+      "identityMatch": "accepted university/entity name",
       "reportedFacultyCount": 1,
       "reportedNames": [
         "University of Regina"
@@ -39891,18 +40139,78 @@
         "omlist-13d4fcfa204878ad"
       ],
       "sourceUrls": [],
-      "owners": [],
-      "doctoralObservations": [],
-      "verifiedCurrentProgrammeIds": [],
+      "owners": [
+        "integrator"
+      ],
+      "doctoralObservations": [
+        {
+          "status": "verified",
+          "checkedAt": "2026-10-25",
+          "programmeIds": [
+            "university-of-regina--industrial-systems-engineering-phd"
+          ],
+          "branches": [
+            {
+              "branch": "business",
+              "reviewState": "partial",
+              "conclusion": "Current central graduate calendar lists master's credentials for Kenneth Levene Graduate School of Business, no listed business PhD; other named research-field possibility not fully assessed.",
+              "sourceUrls": [
+                "https://www.uregina.ca/graduate-studies-research/graduate-calendar/all-programs/index.html"
+              ]
+            },
+            {
+              "branch": "engineering",
+              "reviewState": "partial",
+              "conclusion": "One current Industrial Systems Engineering PhD verified; full current engineering doctoral titles listed, but plausible Mathematics/Statistics formal named-field inventory not yet read.",
+              "sourceUrls": [
+                "https://www.uregina.ca/academics/programs/engineering/masters-phd-industrial-systems-engineering.html",
+                "https://www.uregina.ca/graduate-studies-research/graduate-calendar/all-programs/index.html"
+              ]
+            }
+          ],
+          "sources": [
+            {
+              "url": "https://www.uregina.ca/academics/programs/engineering/masters-phd-industrial-systems-engineering.html",
+              "checkedAt": "2026-10-25",
+              "outcome": "read",
+              "note": "Full current Industrial Systems Engineering graduate programme page, literal PhD degree and alternative admission-credit paths."
+            },
+            {
+              "url": "https://www.uregina.ca/graduate-studies-research/graduate-calendar/all-programs/index.html",
+              "checkedAt": "2026-10-25",
+              "outcome": "read",
+              "note": "Full central current graduate programme inventory: Industrial Systems Engineering PhD and business school programmes."
+            },
+            {
+              "url": "https://www.uregina.ca/engineering/graduate-students/Index.html",
+              "checkedAt": "2026-10-25",
+              "outcome": "read",
+              "note": "Current faculty graduate page confirms Industrial Systems Engineering PhD thesis route."
+            }
+          ],
+          "limitations": [
+            "Industrial Systems Engineering PhD verified; other formal Math/Statistics fields and source unit identity remain incomplete.",
+            "1989 individual OM List award is discovery only."
+          ],
+          "coverageComplete": false
+        }
+      ],
+      "verifiedCurrentProgrammeIds": [
+        "university-of-regina--industrial-systems-engineering-phd"
+      ],
       "branchCoverageComplete": false,
-      "nextStep": "Resolve official identity and add/associate discovery record without speculative merge"
+      "nextStep": "Verify official current relevant doctoral routes across business and engineering; record branch gaps"
     },
     {
-      "id": "unresolved:university of salford",
+      "id": "university-of-salford",
       "name": "University of Salford",
-      "sourceUniversityIds": [],
-      "candidateUniversityIds": [],
-      "identityMatch": "unresolved discovery label",
+      "sourceUniversityIds": [
+        "university-of-salford"
+      ],
+      "candidateUniversityIds": [
+        "university-of-salford"
+      ],
+      "identityMatch": "accepted university/entity name",
       "reportedFacultyCount": 1,
       "reportedNames": [
         "University of Salford"
@@ -39911,11 +40219,55 @@
         "omlist-9408f358c624e4b1"
       ],
       "sourceUrls": [],
-      "owners": [],
-      "doctoralObservations": [],
+      "owners": [
+        "integrator"
+      ],
+      "doctoralObservations": [
+        {
+          "status": "partial",
+          "checkedAt": "2026-10-25",
+          "programmeIds": [],
+          "branches": [
+            {
+              "branch": "business",
+              "reviewState": "partial",
+              "conclusion": "Current generic PhD in Business, Management and Law allows original research; its page lists Operations Management as one of six Salford Business School research clusters, not explicitly as a formal doctoral research line/specialization. Qualification held pending stronger title evidence.",
+              "sourceUrls": [
+                "https://www.salford.ac.uk/courses/postgraduate-researchdoctorate/business-management-and-law",
+                "https://www.salford.ac.uk/salford-business-school/study-for-a-phd"
+              ]
+            },
+            {
+              "branch": "engineering",
+              "reviewState": "partial",
+              "conclusion": "Current engineering/mathematical doctoral formal named fields have not been inventoried.",
+              "sourceUrls": []
+            }
+          ],
+          "sources": [
+            {
+              "url": "https://www.salford.ac.uk/courses/postgraduate-researchdoctorate/business-management-and-law",
+              "checkedAt": "2026-10-25",
+              "outcome": "read",
+              "note": "Full 2026/27 generic business doctorate course page: Operations Management is school research cluster, not explicit PhD specialization."
+            },
+            {
+              "url": "https://www.salford.ac.uk/salford-business-school/study-for-a-phd",
+              "checkedAt": "2026-10-25",
+              "outcome": "read",
+              "note": "Full business school doctoral page references same course and research clusters."
+            }
+          ],
+          "limitations": [
+            "No qualifying route counted from a business research cluster alone under strict title rule; this is not a university-wide negative conclusion.",
+            "Stage 2 individual 2018 degree verification held."
+          ],
+          "coverageComplete": false
+        }
+      ],
       "verifiedCurrentProgrammeIds": [],
       "branchCoverageComplete": false,
-      "nextStep": "Resolve official identity and add/associate discovery record without speculative merge"
+      "nextStep": "Verify official current relevant doctoral routes across business and engineering; record branch gaps"
     },
     {
       "id": "university-of-south-florida",

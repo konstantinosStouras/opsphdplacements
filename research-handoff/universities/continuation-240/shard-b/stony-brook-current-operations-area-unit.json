@@ -1,0 +1,94 @@
+{
+  "id": "stony-brook-university",
+  "status": "partial",
+  "canonicalName": "Stony Brook University",
+  "universitySourceUrl": "https://www.stonybrook.edu/business/about/administration-staff.html",
+  "checkedAt": "2026-10-25",
+  "reviewer": "Codex; complete current official administration and area-head inventory opened as primary web text",
+  "units": [
+    {
+      "id": "stony-brook-university--applied-mathematics-statistics",
+      "name": "Department of Applied Mathematics and Statistics",
+      "school": "College of Engineering and Applied Sciences",
+      "type": "department",
+      "fields": [
+        "operations-research",
+        "industrial-engineering"
+      ],
+      "sourceUrl": "https://www.stonybrook.edu/ams/academics/graduate/operations-research.html",
+      "checkedAt": "2026-10-21",
+      "evidence": "Official department OR graduate page explicitly offers MS and PhD training in Operations Research and identifies department and engineering-college parent; describes management science/industrial engineering methods, optimization and simulation."
+    },
+    {
+      "id": "stony-brook-university--management-operations-decision-analytics",
+      "name": "Management, Operations and Decision Analytics",
+      "type": "area",
+      "school": "College of Business",
+      "fields": [
+        "operations-management"
+      ],
+      "sourceUrl": "https://www.stonybrook.edu/business/about/administration-staff.html",
+      "checkedAt": "2026-10-25",
+      "evidence": "Actual current official administration inventory explicitly appoints an Area Head of Management, Operations and Decision Analytics, alongside separate Management Organizational Behavior/Strategy, Accounting, Marketing and Finance area heads. This verifies an academic area, not an independent department or doctorate."
+    }
+  ],
+  "decisions": [
+    {
+      "sourceDepartmentId": "stony-brook-university____om-ds",
+      "disposition": "not-a-unit",
+      "unitIds": [],
+      "reason": "Posting subject abbreviations do not establish a standalone department."
+    },
+    {
+      "sourceDepartmentId": "stony-brook-university__college-of-business__operations-and-decision-analytics",
+      "disposition": "replaced",
+      "unitIds": [
+        "stony-brook-university--management-operations-decision-analytics"
+      ],
+      "reason": "The current official college administrative inventory explicitly establishes the named Management, Operations and Decision Analytics area and its area-head role. Imported ODA research label is represented within this actual area, not a fabricated separate department. Exact historical transition chronology remains unknown."
+    },
+    {
+      "sourceDepartmentId": "stony-brook-university__college-of-business__operations-management",
+      "disposition": "unresolved",
+      "unitIds": [],
+      "reason": "Current official pages do not establish this old standalone faculty-area title or its successor; degree subject alone is not administrative unit."
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.stonybrook.edu/ams/academics/graduate/operations-research.html",
+      "checkedAt": "2026-10-21",
+      "outcome": "read",
+      "note": "Explicit OR graduate training offering PhD under Department of Applied Mathematics and Statistics, College of Engineering and Applied Sciences; no graduate roster collected."
+    },
+    {
+      "url": "https://www.stonybrook.edu/commcms/business/faculty-research/research.php#view-operations",
+      "checkedAt": "2026-10-21",
+      "outcome": "blocked",
+      "note": "Imported business research URL returns official File Not Found."
+    },
+    {
+      "url": "https://www.stonybrook.edu/business/graduate/",
+      "checkedAt": "2026-10-21",
+      "outcome": "read",
+      "note": "Current business graduate inventory lists MBA, specialized masters and certificates; no business doctorate listed."
+    },
+    {
+      "url": "https://www.stonybrook.edu/business/faculty-research/index.html",
+      "checkedAt": "2026-10-21",
+      "outcome": "read",
+      "note": "Current business faculty/research overview includes MBA concentration Innovation and Operations Analytics, not a named department or explicit old area-rename statement."
+    },
+    {
+      "url": "https://www.stonybrook.edu/business/about/administration-staff.html",
+      "checkedAt": "2026-10-25",
+      "outcome": "read",
+      "note": "Complete substantive current administration, program-director and area-head inventory read through primary web text. Explicit Area Head of Management, Operations and Decision Analytics establishes organizational area. Individual job histories and personal contact details not collected."
+    }
+  ],
+  "limitations": [
+    "Current Management, Operations and Decision Analytics area is verified from explicit organizational area-head inventory. No department or local doctoral programme inferred from an area or MBA concentration.",
+    "Historical Operations Management imported standalone faculty-area label remains unresolved: old faculty source disappeared and no exact historic-to-current transition or subordinate status has been verified. Existing current doctoral scope and original programme/check dates remain unchanged."
+  ],
+  "duplicateOf": null
+}
