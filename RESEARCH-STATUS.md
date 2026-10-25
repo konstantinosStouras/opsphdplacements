@@ -1,6 +1,6 @@
 # Research status
 
-Generated from committed-format public datasets by `node scripts/update-research-status.mjs`. People-ledger snapshot check date: 2026-10-17. Doctoral source checks run through 2026-10-23. Refresh this file with each data release. Git history identifies the published revision.
+Generated from committed-format public datasets by `node scripts/update-research-status.mjs`. People-ledger snapshot check date: 2026-10-17. Doctoral source checks run through 2026-10-25. Refresh this file with each data release. Git history identifies the published revision.
 
 | Measure | Count |
 |---|---:|
@@ -12,9 +12,9 @@ Generated from committed-format public datasets by `node scripts/update-research
 | Researched but unresolved | 1070 |
 | Degree completion unconfirmed | 4 |
 | Pending individual review | 0 |
-| Named-scope doctoral register records, including historical and unresolved routes | 295 |
-| Verified relevant doctoral routes (tracks may overlap; admissions may be suspended) | 290 |
-| Institutions with verified relevant doctoral provision | 214 |
+| Named-scope doctoral register records, including historical and unresolved routes | 296 |
+| Verified relevant doctoral routes (tracks may overlap; admissions may be suspended) | 291 |
+| Institutions with verified relevant doctoral provision | 215 |
 | Names on program graduate and placement pages (person-years) | 14451 |
 | of which listed under an operations area | 2161 |
 | Institutions with such a page read | 117 |
