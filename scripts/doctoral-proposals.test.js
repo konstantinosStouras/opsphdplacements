@@ -27,6 +27,9 @@ test('reviewed descriptive research topics cannot re-enter the named-title regis
  assert(!isNamedOperationsProgramme({...p,titleScopeReview:{decision:'pending'}}));
  assert(hasNamedOperationsScope('Industrial and Process Engineering'));
  assert(hasNamedOperationsScope('Industrial and Process Safety Engineering'));
+ assert(hasNamedOperationsScope('Industrial and Manufacturing Systems Engineering'));
+ assert(hasNamedOperationsScope('Operational research'));
+ assert(!hasNamedOperationsScope('Operational Technology'));
  assert(!hasNamedOperationsScope('Process Safety Engineering'));
 });
 const proposal=()=>({universityId:'u',checkedAt:'2026-10-21',status:'verified',programmes:[{id:'u--phd-om',programName:'Business Administration',degree:'PhD',specialization:'Operations Management',school:'Business School',department:null,unitIds:['u--operations'],fields:['Operations Management'],status:'active',sourceUrl:'https://example.edu/phd',checkedAt:'2026-10-21',evidence:'Official doctoral curriculum explicitly offers Operations Management specialization.',limitations:[]}],branches:[{branch:'business',conclusion:'Named doctoral track verified; engineering not yet checked.',sourceUrls:['https://example.edu/phd']}],sources:[{url:'https://example.edu/phd',checkedAt:'2026-10-21',outcome:'read',note:'Doctoral curriculum and exact specialization read.'}],limitations:['Engineering inventory remains to be checked.']});

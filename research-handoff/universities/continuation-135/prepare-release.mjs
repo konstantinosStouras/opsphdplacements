@@ -1,0 +1,21 @@
+import fs from 'node:fs';
+const base='research-handoff/universities/continuation-135';
+const stats='271 title-qualified routes at 205 providers; 442 sourced programme observations retained. The 676-record discovery frame has 531 completed unit reviews, 141 partial, four blocked and zero pending. Doctoral scope is separate: 629 observations, 433 current branch scopes complete. The remaining worklist has 269 grouped incomplete identities, including ten pending title/host cases, and 172 unresolved OM List reported-degree labels (overlapping populations).';
+function replace(file,start,text){const old=fs.readFileSync(file,'utf8'),re=new RegExp('^'+start+'.*$','m');if(!re.test(old))throw Error(file);fs.writeFileSync(file,old.replace(re,text));}
+replace('README.md','Stage 1 integration checkpoint',`Stage 1 integration checkpoint (25 October 2026): ${stats} Ten new doctoral routes and the resolved ULB Management Science track integrated; Stage 1 incomplete, Stages 2–4 held. See [current handoff](research-handoff/universities/continuation-135/README.md).`);
+replace('TODO.md','Stage 1 update,',`Stage 1 update, 25 October 2026: ${stats} See [continuation135](research-handoff/universities/continuation-135/README.md). Continue incomplete current inventories, unresolved PhD-source identities and title/host decisions. Preserve historical discrepancies separately. Stages 2–4 held.`);
+replace('research-handoff/priorities/README.md','Current Stage 1 public scope:',`Current Stage 1 public scope: official programme title, named doctoral field/specialization or actual department/school host must name Operations (including Operational Research), Management Science or Industrial Engineering. ${stats} See [continuation135](../universities/continuation-135/README.md). Earlier checkpoints retain original dates.`);
+const files=['README.md','TODO.md','WORKFLOW.md','RESEARCH-DESIGN.md','RESEARCH-STATUS.md','index.html','assets/program-model.js','scripts/doctoral-proposals.test.js',...['universities','university-reviews','doctoral-programs','entities','record-dates'].map(n=>`data/${n}.json`),'research-handoff/priorities/README.md','research-handoff/priorities/STAGE-1-REMAINING-2026-10-23.md','research-handoff/priorities/stage-1-doctoral-priority-queue.json','research-handoff/priorities/stage-1-university-queue.json'];
+function collect(dir){for(const e of fs.readdirSync(dir,{withFileTypes:true})){const p=dir+'/'+e.name;if(e.isDirectory())collect(p);else if(/\.(json|md|mjs|txt)$/.test(p))files.push(p);}}
+collect(base);
+const prefix='research-handoff/universities/';
+for(const n of ['university-of-windsor','universite-mohammed-vi-polytechnique'])for(const kind of ['unit','doctoral'])files.push(`${prefix}continuation-133/shard-c/${n}.${kind}.json`);
+for(const n of ['universite-libre-de-bruxelles.fresh-title-review','university-of-bath.fresh-title-review','university-of-tennessee-at-chattanooga.fresh-title-review','universidade-catolica-portuguesa.fresh-title-limitation'])files.push(`${prefix}continuation-133/shard-c/${n}.json`);
+for(const n of ['ajman-university','dakota-state-university'])files.push(`${prefix}continuation-134/shard-a/${n}.doctoral.json`);
+for(const n of ['the-hebrew-university-of-jerusalem-unit','the-hebrew-university-of-jerusalem-doctoral','memorial-university-of-newfoundland-doctoral','skema-business-school-doctoral','technical-university-of-munich-doctoral-followup','maastricht-university-doctoral-followup','shanghai-jiao-tong-university-doctoral-followup','peking-university-doctoral-followup'])files.push(`${prefix}continuation-134/shard-b/${n}.json`);
+collect(`${prefix}continuation-134/shard-c`);
+for(const n of ['source-catalogue','source-addition','politecnico-di-milano.unit','politecnico-di-milano.doctoral','technical-university-of-berlin.unit','technical-university-of-berlin.doctoral'])files.push(`${prefix}continuation-136/shard-a/${n}.json`);
+for(const n of ['source-catalogue','source-addition','university-of-reading.unit','university-of-reading.doctoral','university-of-st-gallen.unit','university-of-st-gallen.doctoral'])files.push(`${prefix}continuation-137/shard-a/${n}.json`);
+files.push(`${base}/release-files.txt`);
+fs.writeFileSync(`${base}/release-files.txt`,[...new Set(files)].sort().join('\n')+'\n');
+console.log('Prepared reviewed release paths',new Set(files).size);
