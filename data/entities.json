@@ -18,7 +18,7 @@
    "phdInstitutions": 434,
    "directoryUniversities": 609,
    "firstEmployers": 493,
-   "withPrograms": 253,
+   "withPrograms": 255,
    "inBothDatabases": 211,
    "directoryOnly": 328,
    "peopleOnly": 223,
@@ -32272,7 +32272,8 @@
    "roles": [
     "phd-institution",
     "directory-university",
-    "first-employer"
+    "first-employer",
+    "program-register"
    ],
    "people": {
     "institutions": [
@@ -32424,7 +32425,19 @@
      }
     ]
    },
-   "programs": [],
+   "programs": [
+    {
+     "id": "university-of-connecticut--business-administration-phd-opim",
+     "programName": "Business Administration",
+     "specialization": "Operations and Information Management",
+     "universityId": "university-of-connecticut",
+     "school": "UConn School of Business",
+     "degree": "PhD",
+     "field": "Operations Management; Supply Chain Management",
+     "status": "active",
+     "statusAsOf": "2026-10-22"
+    }
+   ],
    "sources": [
     {
      "url": "https://omlist.edutool.org/phd/by-year.html",
@@ -32445,6 +32458,10 @@
     {
      "url": "data/placements.json",
      "title": "Verified first-job records (people database)"
+    },
+    {
+     "url": "data/doctoral-programs.json",
+     "title": "Historical doctoral program register"
     }
    ],
    "review": {
@@ -32468,12 +32485,17 @@
       "source": "employers",
       "employer": "University of Connecticut, Department of Operations and Information Management",
       "match": "wikidata"
+     },
+     {
+      "source": "programs",
+      "program": "university-of-connecticut--business-administration-phd-opim",
+      "match": "exact"
      }
     ],
     "conflicts": []
    },
    "addedAt": "2026-10-16T13:49:36Z",
-   "updatedAt": "2026-10-20T08:28:39Z"
+   "updatedAt": "2026-10-25T16:31:47Z"
   },
   {
    "id": "wd:Q926068",
@@ -45578,7 +45600,8 @@
    "logo": "assets/logos/Q1137665.png",
    "roles": [
     "phd-institution",
-    "directory-university"
+    "directory-university",
+    "program-register"
    ],
    "people": {
     "institutions": [
@@ -45642,7 +45665,19 @@
     ]
    },
    "employer": null,
-   "programs": [],
+   "programs": [
+    {
+     "id": "ghent-university--industrial-engineering-operations-research-doctorate",
+     "programName": "Doctor of Industrial Engineering and Operations Research",
+     "specialization": null,
+     "universityId": "ghent-university",
+     "school": "Faculty of Engineering and Architecture",
+     "degree": "Doctor of Industrial Engineering and Operations Research",
+     "field": "Industrial Engineering; Operations Research",
+     "status": "active",
+     "statusAsOf": "2026-10-25"
+    }
+   ],
    "sources": [
     {
      "url": "https://omlist.edutool.org/phd/by-year.html",
@@ -45655,6 +45690,10 @@
     {
      "url": "https://www.operationsacademia.org/universities",
      "title": "Operations Academia universities directory (universities database)"
+    },
+    {
+     "url": "data/doctoral-programs.json",
+     "title": "Historical doctoral program register"
     }
    ],
    "review": {
@@ -45663,12 +45702,17 @@
       "source": "directory",
       "university": "Ghent University",
       "match": "exact"
+     },
+     {
+      "source": "programs",
+      "program": "ghent-university--industrial-engineering-operations-research-doctorate",
+      "match": "exact"
      }
     ],
     "conflicts": []
    },
    "addedAt": "2026-10-16T13:49:36Z",
-   "updatedAt": "2026-10-20T08:28:39Z"
+   "updatedAt": "2026-10-25T16:34:00Z"
   },
   {
    "id": "wd:Q174158",

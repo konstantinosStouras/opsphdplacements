@@ -4,9 +4,9 @@
     "definition": "Individual Chrome reviews of official university names and operations units. The original directory remains in universities.json. Reviewed describes the stated source scope, not an exhaustive current or historical census.",
     "sourceRecords": 667,
     "attempted": 637,
-    "reviewed": 512,
+    "reviewed": 513,
     "partial": 120,
-    "blocked": 5,
+    "blocked": 4,
     "pending": 30
   },
   "records": [
@@ -24048,84 +24048,147 @@
     },
     {
       "id": "ghent-university",
-      "status": "blocked",
-      "canonicalName": null,
-      "universitySourceUrl": null,
-      "checkedAt": "2026-10-21",
-      "reviewer": "Codex in Chrome",
-      "units": [],
+      "status": "reviewed",
+      "canonicalName": "Ghent University",
+      "universitySourceUrl": "https://ea18.ugent.be/",
+      "checkedAt": "2026-10-25",
+      "reviewer": "Codex in in-app browser",
+      "units": [
+        {
+          "id": "ghent-university--industrial-systems-engineering-product-design",
+          "name": "Department of Industrial Systems Engineering and Product Design",
+          "school": "Faculty of Engineering and Architecture",
+          "type": "department",
+          "fields": [
+            "industrial-engineering",
+            "operations-research"
+          ],
+          "sourceUrl": "https://ea18.ugent.be/",
+          "checkedAt": "2026-10-25",
+          "evidence": "The official EA18 site identifies the department by this full name within Ghent University's Faculty of Engineering and Architecture and lists its Industrial Engineering and Operations Research master's programme. The separate faculty committee and 2026–2027 university catalogue establish the named doctorate; the department page does not itself claim to administer it."
+        },
+        {
+          "id": "ghent-university--business-informatics-operations-management",
+          "name": "Department of Business Informatics and Operations Management",
+          "school": "Faculty of Economics and Business Administration",
+          "type": "department",
+          "fields": [
+            "operations-management",
+            "operations-research"
+          ],
+          "sourceUrl": "https://www.ugent.be/eb/beleidsinformatica/en/about-us",
+          "checkedAt": "2026-10-25",
+          "evidence": "The official Ghent department page names this full department in the business faculty and describes doctoral supervision; its department homepage links Operations Research & Scheduling and Operations and Production Management research groups. No separate business doctorate is inferred from that unit identity."
+        }
+      ],
       "decisions": [
         {
           "sourceDepartmentId": "ghent-university__faculty-of-engineering-and-architecture__industrial-systems-engineering-and-product-design",
-          "disposition": "unresolved",
-          "unitIds": [],
-          "reason": "Official department source and prospective academic doctorate catalogue both timed out; imported label not verified from snippets."
+          "disposition": "replaced",
+          "unitIds": [
+            "ghent-university--industrial-systems-engineering-product-design"
+          ],
+          "reason": "The opened EA18 institutional page establishes the full official department title and faculty parent; the imported label represents this unit."
         }
       ],
       "sources": [
         {
           "url": "https://ea18.ugent.be/",
-          "checkedAt": "2026-10-21",
-          "outcome": "blocked",
-          "note": "Opened official source in Chrome; This site cannot be reached / ERR_CONNECTION_TIMED_OUT. Search snippets treated as discovery only, not verification."
+          "checkedAt": "2026-10-25",
+          "outcome": "read",
+          "note": "Official EA18 department identity and Ghent faculty parent."
         },
         {
-          "url": "https://studiekiezer.ugent.be/2025/doctor-of-industrial-engineering-and-operations-research",
-          "checkedAt": "2026-10-21",
-          "outcome": "blocked",
-          "note": "Opened official source in Chrome; This site cannot be reached / ERR_CONNECTION_TIMED_OUT. Search snippets treated as discovery only, not verification."
+          "url": "https://www.ugent.be/eb/beleidsinformatica/en/about-us",
+          "checkedAt": "2026-10-25",
+          "outcome": "read",
+          "note": "Official business faculty department identity and doctoral-supervision statement."
+        },
+        {
+          "url": "https://www.ugent.be/eb/beleidsinformatica/en",
+          "checkedAt": "2026-10-25",
+          "outcome": "read",
+          "note": "Department homepage lists Operations Research & Scheduling and Operations and Production Management groups."
+        },
+        {
+          "url": "https://studiekiezer.ugent.be/2026/doctor-of-industrial-engineering-and-operations-research/starten",
+          "checkedAt": "2026-10-25",
+          "outcome": "read",
+          "note": "Current university catalogue lists named IE/OR doctorate and Faculty of Engineering and Architecture."
         }
       ],
       "limitations": [
-        "Neither official departmental identity nor academic doctoral credential/field could be read.",
-        "Current/historical catalogue distinction and exact doctoral award remain unresolved; no guessed2026URL or repeat reload attempted."
+        "Official doctorate is assigned to the Faculty of Engineering and Architecture in the catalogue, not specifically to EA18; no department-to-degree administrative link inferred.",
+        "Exact business doctorate remains a separate doctoral-review question."
       ],
       "duplicateOf": null,
       "doctoralReview": {
-        "status": "partial",
-        "checkedAt": "2026-10-21",
-        "programmeIds": [],
+        "status": "verified",
+        "checkedAt": "2026-10-25",
+        "programmeIds": [
+          "ghent-university--industrial-engineering-operations-research-doctorate"
+        ],
         "branches": [
           {
-            "branch": "business",
-            "reviewState": "partial",
-            "conclusion": "No business doctoral inventory read; institutional eligibility remains unknown.",
+            "branch": "engineering",
+            "reviewState": "checked",
+            "conclusion": "Current named Industrial Engineering and Operations Research doctorate verified in the Faculty of Engineering and Architecture; no separate degree inferred from its Industrial Systems Engineering and Product Design department.",
             "sourceUrls": [
+              "https://studiekiezer.ugent.be/2026/doctor-of-industrial-engineering-and-operations-research/starten",
+              "https://www.ugent.be/ea/en/faculty/councils-and-committees/study-programme-committees/ocieor.htm",
               "https://ea18.ugent.be/"
             ]
           },
           {
-            "branch": "engineering",
+            "branch": "business",
             "reviewState": "partial",
-            "conclusion": "Official imported department and prospective IE/OR academic-doctorate catalogue pages timed out. No credential, current-status or host fact verified from snippets.",
+            "conclusion": "Ghent officially names its Department of Business Informatics and Operations Management and says its staff supervise doctoral research, but the opened pages do not identify the exact named business doctoral award or a formal Operations Management doctoral route. No additional programme proposed.",
             "sourceUrls": [
-              "https://ea18.ugent.be/",
-              "https://studiekiezer.ugent.be/2025/doctor-of-industrial-engineering-and-operations-research"
+              "https://www.ugent.be/eb/beleidsinformatica/en/about-us",
+              "https://www.ugent.be/eb/beleidsinformatica/en"
             ]
           }
         ],
         "sources": [
           {
-            "url": "https://ea18.ugent.be/",
-            "checkedAt": "2026-10-21",
-            "outcome": "blocked",
-            "note": "Opened official source in Chrome; This site cannot be reached / ERR_CONNECTION_TIMED_OUT. Search snippets treated as discovery only, not verification."
+            "url": "https://studiekiezer.ugent.be/2026/doctor-of-industrial-engineering-and-operations-research/starten",
+            "checkedAt": "2026-10-25",
+            "outcome": "read",
+            "note": "2026–2027 catalogue names the doctorate, faculty and PhD-student enrolment."
           },
           {
-            "url": "https://studiekiezer.ugent.be/2025/doctor-of-industrial-engineering-and-operations-research",
-            "checkedAt": "2026-10-21",
-            "outcome": "blocked",
-            "note": "Opened official source in Chrome; This site cannot be reached / ERR_CONNECTION_TIMED_OUT. Search snippets treated as discovery only, not verification."
+            "url": "https://www.ugent.be/ea/en/faculty/councils-and-committees/study-programme-committees/ocieor.htm",
+            "checkedAt": "2026-10-25",
+            "outcome": "read",
+            "note": "Faculty committee lists the Doctorate of Industrial Engineering and Operations Research, code EDBKSY, among the programmes it oversees."
+          },
+          {
+            "url": "https://ea18.ugent.be/",
+            "checkedAt": "2026-10-25",
+            "outcome": "read",
+            "note": "Official Department of Industrial Systems Engineering and Product Design name, institutional parent and master's inventory; no department-level doctorate title asserted."
+          },
+          {
+            "url": "https://www.ugent.be/eb/beleidsinformatica/en/about-us",
+            "checkedAt": "2026-10-25",
+            "outcome": "read",
+            "note": "Official Department of Business Informatics and Operations Management and doctoral-supervision statement; exact business doctorate unresolved."
+          },
+          {
+            "url": "https://www.ugent.be/eb/beleidsinformatica/en",
+            "checkedAt": "2026-10-25",
+            "outcome": "read",
+            "note": "Official department homepage links Operations Research & Scheduling and Operations and Production Management research groups."
           }
         ],
         "limitations": [
-          "Official departmental and academic-catalogue access unavailable; no currently verified programme.",
-          "This is a per-source access limitation, not a no-programme finding."
+          "Business Operations Management doctoral pathway and exact award remain to be checked in the faculty's current doctoral inventory.",
+          "Earlier 21 October access failures are superseded only for the sources read here; other historical questions remain open."
         ],
         "coverageComplete": false
       },
       "addedAt": "2026-10-21T21:30:10Z",
-      "updatedAt": "2026-10-21T21:30:10Z"
+      "updatedAt": "2026-10-25T16:34:00Z"
     },
     {
       "id": "goldey-beacom-college",
@@ -70424,27 +70487,44 @@
       "status": "reviewed",
       "universitySourceUrl": "https://opim.business.uconn.edu/research/",
       "addedAt": "2026-10-20T10:24:43Z",
-      "updatedAt": "2026-10-21T21:30:10Z",
+      "updatedAt": "2026-10-25T16:31:47Z",
       "doctoralReview": {
-        "status": "partial",
-        "checkedAt": "2026-10-21",
-        "programmeIds": [],
+        "status": "verified",
+        "checkedAt": "2026-10-22",
+        "programmeIds": [
+          "university-of-connecticut--business-administration-phd-opim"
+        ],
         "branches": [
           {
             "branch": "business",
-            "reviewState": "partial",
-            "conclusion": "Two official OPIM doctoral source candidates discovered in Chrome search; navigation/read commands timed out before primary page text was available. No facts accepted from snippets.",
+            "reviewState": "checked",
+            "conclusion": "Full current graduate degree inventory and complete Business Administration PHD Overview/Requirements read. Explicit Operations and Information Management doctoral concentration and dissertation verified; SCM/MS and analytics/project-management MS remain separate masters.",
             "sourceUrls": [
-              "https://phd.business.uconn.edu/areas-of-study/opim/",
-              "https://opim.business.uconn.edu/ph-d-opim/"
+              "https://catalog.uconn.edu/graduate/graduate-programs/",
+              "https://catalog.uconn.edu/graduate/degree-programs/business-administration-phd/"
             ]
           },
           {
             "branch": "engineering",
-            "reviewState": "partial",
-            "conclusion": "Official engineering doctorate inventory discovered; navigation command timed out before source could be read.",
+            "reviewState": "checked",
+            "conclusion": "Full current university graduate inventory plus Mechanical/Civil doctorate concentration overviews, current CEE school research inventory, full Transportation/Urban research description and Manufacturing Simulation Centre overview read. Transport research is safety, planning, data/GIS and mobility; CMSC physics-based product/process simulation, robotics and technical assistance. No additional substantive qualifying doctoral Ops/OR field established from broad transportation, manufacturing or systems titles in this reviewed scope.",
             "sourceUrls": [
-              "https://grad.engineering.uconn.edu/ph-d-in-engineering/"
+              "https://catalog.uconn.edu/graduate/graduate-programs/",
+              "https://catalog.uconn.edu/graduate/degree-programs/mechanical-engineering-phd/",
+              "https://catalog.uconn.edu/graduate/degree-programs/civil-engineering-phd/",
+              "https://cee.engr.uconn.edu/",
+              "https://cee.engr.uconn.edu/research/research-areas/transportation-and-urban-engineering/",
+              "https://cmsc.uconn.edu/"
+            ]
+          },
+          {
+            "branch": "mathematics",
+            "reviewState": "checked",
+            "conclusion": "Current Mathematics and Statistics doctoral overviews read. Broad pure/applied/actuarial mathematical areas, statistics theory/application and generic interdisciplinary Integrative Studies do not independently establish a named qualifying Ops/OR route in this stated programme scope.",
+            "sourceUrls": [
+              "https://catalog.uconn.edu/graduate/degree-programs/mathematics-phd/",
+              "https://catalog.uconn.edu/graduate/degree-programs/statistics-phd/",
+              "https://catalog.uconn.edu/graduate/degree-programs/integrative-studies-phd/"
             ]
           }
         ],
@@ -70466,12 +70546,86 @@
             "checkedAt": "2026-10-21",
             "outcome": "blocked",
             "note": "Chrome navigation/reading commands timed out; no primary text reviewed. Technical access limitation, not verified security challenge or programme absence."
+          },
+          {
+            "url": "https://catalog.uconn.edu/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full current 2026–27 catalogue homepage read and actual Graduate Programs link followed."
+          },
+          {
+            "url": "https://catalog.uconn.edu/graduate/graduate-programs/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Complete university graduate degree inventory read; PhD programmes distinguished from business SCM/analytics masters."
+          },
+          {
+            "url": "https://catalog.uconn.edu/graduate/degree-programs/business-administration-phd/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full Business Administration PHD Overview and actual Requirements tab read: exact OPIM area/concentration, original dissertation, qualifying research/exam, Storrs in-person."
+          },
+          {
+            "url": "https://catalog.uconn.edu/graduate/degree-programs/mechanical-engineering-phd/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full Mechanical PhD overview read: Systems and Mechanics or Thermal and Fluid Sciences concentrations, actual School of Mechanical/Aerospace/Manufacturing host."
+          },
+          {
+            "url": "https://catalog.uconn.edu/graduate/degree-programs/mathematics-phd/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full Mathematics PHD overview read: pure/applied/actuarial areas and original dissertation, no explicit Ops field."
+          },
+          {
+            "url": "https://catalog.uconn.edu/graduate/degree-programs/statistics-phd/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full Statistics PhD overview read: statistical application/theory, no explicit Ops/OR field."
+          },
+          {
+            "url": "https://catalog.uconn.edu/graduate/degree-programs/civil-engineering-phd/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full Civil PhD overview read: Applied Mechanics, Geotechnical, Structural, Transportation/Urban concentrations. Transport title alone not promoted to operational/logistics research."
+          },
+          {
+            "url": "https://catalog.uconn.edu/graduate/degree-programs/integrative-studies-phd/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full Integrative PhD overview read: applicant already in a UConn PhD and interdisciplinary dissertation; no named relevant Ops pathway."
+          },
+          {
+            "url": "https://opim.business.uconn.edu/research/",
+            "checkedAt": "2026-10-20",
+            "outcome": "read",
+            "note": "Previously individually read official departmental research evidence preserved with original date: Operations and Supply Chain Management, optimization, manufacturing and logistics remit. Not a new source refresh."
+          },
+          {
+            "url": "https://cee.engr.uconn.edu/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full current CEE school homepage and research navigation read. Current School of Civil and Environmental Engineering title differs from department wording in catalogue; no historical rename date inferred."
+          },
+          {
+            "url": "https://cee.engr.uconn.edu/research/research-areas/transportation-and-urban-engineering/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full actual Transportation and Urban Engineering research-group page and listed project descriptions read; safety/planning/GIS/mobility, not explicit Operations Research doctorate."
+          },
+          {
+            "url": "https://cmsc.uconn.edu/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Navigation initially slow; subsequent full browser accessibility page actually loaded and read. Centre research and services describe physical product lifecycle simulation, robotic manufacturing and computational intelligence; no doctoral programme or IE/OR field inferred from operational-efficiency mission."
           }
         ],
         "limitations": [
-          "Current doctoral eligibility remains unverified. Repeated command timeouts may reflect browser automation availability rather than individual site content; no access-control bypass attempted."
+          "Earlier doctoral/engineering endpoints remain technical-timeout observations; new official catalogue independently establishes current business route and complete degree inventory. No access-control bypass.",
+          "Current source-bounded graduate inventory and plausibly related engineering/mathematical programme research fields checked. No census of every laboratory, dissertation or historical programme claimed.",
+          "Current CEE school homepage uses School of Civil and Environmental Engineering, while catalogue uses Department wording. No succession date inferred; no additional qualifying route is assigned to either label. Existing OPIM unit and research evidence dates remain unchanged."
         ],
-        "coverageComplete": false
+        "coverageComplete": true
       }
     },
     {

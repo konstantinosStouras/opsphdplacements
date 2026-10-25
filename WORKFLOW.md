@@ -8,6 +8,10 @@ USTC continuation 125 (25 October): the current School of Management PhD page an
 
 Mannheim continuation 126 (25 October): current Business School pages establish one structured Operations Management doctoral route. Keep the programme's public Ph.D. label distinct from its exact Dr. rer. pol. award and attach research-doctorate evidence. Integrate `research-handoff/universities/continuation-126/integrator/mannheim.doctoral.json` with `merge-doctoral-proposals.mjs`. Preserve the prior blocked URL as dated provenance; do not count the alternative chair-based study path as a second award. Rebuild and validate as above.
 
+UConn continuation (25 October integration): the 22 October official 2026–27 catalogue review establishes one Business Administration PhD concentration in Operations and Information Management. Integrate the saved shard-C proposal with merge-doctoral-proposals.mjs; the concentration is one route, not a separate degree, and the original source-check date remains 22 October. Rebuild entities, priority queues, status and record dates before validation.
+
+Ghent continuation (25 October): merge the reviewed university-unit proposal in research-handoff/universities/continuation-127/shard-a/ghent-university.unit.json first, then its doctoral proposal. The current university catalogue establishes one exact Doctor of Industrial Engineering and Operations Research in the Faculty of Engineering and Architecture. The department is not asserted as award administrator; the separate business doctoral award remains unresolved.
+
 ## 1. Establish the program population
 
 Build a register of historical OR/OM/IE doctoral programs. Operations Academia is a discovery source, not proof of degree provision or a complete historical frame. Add official catalogs and archives, dissertation repositories, predecessor departments and closed programs. Distinguish university, school, department, program, specialization and campus. A department merger does not establish a degree's closure date.
