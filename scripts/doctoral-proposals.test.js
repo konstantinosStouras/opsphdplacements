@@ -27,6 +27,8 @@ test('reviewed descriptive research topics cannot re-enter the named-title regis
  assert(isNamedOperationsProgramme({programName:'PhD in Mechanical Engineering',specialization:'Industrial Engineering',unitIds:[]}));
  assert.equal(p.specialization,'Operations Management laboratory research');
  assert(!isNamedOperationsProgramme({...p,titleScopeReview:{decision:'pending'}}));
+ assert(hasNamedOperationsScope('Industrial and Human Factors Engineering'));
+ assert(!hasNamedOperationsScope('Human Factors Engineering'));
  assert(hasNamedOperationsScope('Industrial and Process Engineering'));
  assert(hasNamedOperationsScope('Industrial and Process Safety Engineering'));
  assert(hasNamedOperationsScope('Industrial and Manufacturing Systems Engineering'));
@@ -41,6 +43,9 @@ test('reviewed descriptive research topics cannot re-enter the named-title regis
  assert(!hasNamedOperationsScope('Ingeniería Mecánica y Organización Industrial'));
  assert(!hasNamedOperationsScope('Investigación en ingeniería mecánica'));
  assert(hasNamedOperationsScope('Gestão de Operações'));
+ assert(hasNamedOperationsScope('Gestión de Operaciones (GOP)'));
+ assert(!hasNamedOperationsScope('Gestión de la Información'));
+
  assert(!hasNamedOperationsScope('Engenharia de Produção'));
  assert(hasNamedOperationsScope('Διοίκησης Παραγωγής και επιχειρησιακών λειτουργιών'));
  assert(!hasNamedOperationsScope('Σχολή Μηχανολόγων Μηχανικών'));

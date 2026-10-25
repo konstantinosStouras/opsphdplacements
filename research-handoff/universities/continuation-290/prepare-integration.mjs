@@ -1,0 +1,15 @@
+import fs from 'node:fs';
+import crypto from 'node:crypto';
+import {execFileSync} from 'node:child_process';
+const dir='research-handoff/universities/continuation-290',root='research-handoff/universities/',read=p=>JSON.parse(fs.readFileSync(p));
+const specs=[["university-of-tasmania", 211], ["university-of-toulon", 212], ["university-of-tsukuba", 213], ["university-of-wales", 214], ["university-of-westminster", 215], ["wright-state-university", 216], ["university-of-basel", 218], ["university-of-bradford", 219], ["university-of-brighton", 220], ["warsaw-university-of-technology", 221], ["wuhan-university", 222]];
+const path=(n,id,suffix)=>root+`continuation-${n}/shard-a/${id}.${suffix}.json`,extra=(lane,s)=>{const[n,f]=s.split('/');return root+`continuation-${n}/shard-${lane}/${f}.json`;};
+const sources=specs.map(([id,n])=>path(n,id,'source-addition'));
+const unitInputs=specs.map(([id,n])=>path(n,id,'unit')).concat(['239/tum-original-department-alias-unit','240/stony-brook-current-operations-area-unit'].map(s=>extra('b',s)));
+const programmes=specs.map(([id,n])=>path(n,id,'doctoral')).concat(extra('c','212/university-of-zurich.doctoral'));
+const scopes=['214/university-of-texas-at-el-paso.doctoral-scope-composite'].map(s=>extra('c',s)).concat(['242/monterrey-current-composite-doctoral-scope','243/sydney-current-composite-doctoral-scope'].map(s=>extra('b',s)));
+const m={baseCommit:execFileSync('git',['rev-parse','HEAD'],{encoding:'utf8'}).trim(),sources,unitInputs,programmes,scopes};
+m.frozenInputs=[...new Set([...sources,...sources.map(p=>read(p).sourceCatalogue),...unitInputs,...programmes,...scopes])].map(path=>({path,sha256:crypto.createHash('sha256').update(fs.readFileSync(path)).digest('hex')}));
+fs.writeFileSync(dir+'/integration-manifest.json',JSON.stringify(m,null,2)+'\n');
+fs.writeFileSync(dir+'/apply-phase.mjs',fs.readFileSync(root+'continuation-260/apply-phase.mjs','utf8').replaceAll('continuation-260','continuation-290'));
+console.log({sources:sources.length,units:unitInputs.length,programmes:programmes.length,scopes:scopes.length});

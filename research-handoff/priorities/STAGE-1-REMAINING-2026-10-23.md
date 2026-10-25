@@ -2,7 +2,7 @@
 
 This is an alphabetical planning snapshot from the published university frame and the OM List reported-PhD-institution queue. It is **not** a list of confirmed PhD providers. Some institutions already have frozen official-source proposals awaiting integrator review and publication; they remain here until the public register records the outcome. A missing or partial doctoral review never means that no qualifying doctorate exists.
 
-The published 775 university/campus source records group into 680 display identities; 271 identities have an incomplete unit review, doctoral branch check or title/host adjudication. Of the source records, 195 have incomplete unit reviews and 243 lack a complete current doctoral branch scope. 5 programme title/host decisions remain pending and are withheld from qualifying counts. The separate OM List queue has 72 reported institution labels still needing identity reconciliation. These lists overlap in real institutions but are not merged without accepted evidence. Source-unit assertions and live directory/posting coverage are additional Stage 1 gates.
+The published 786 university/campus source records group into 691 display identities; 278 identities have an incomplete unit review, doctoral branch check or title/host adjudication. Of the source records, 205 have incomplete unit reviews and 250 lack a complete current doctoral branch scope. 5 programme title/host decisions remain pending and are withheld from qualifying counts. The separate OM List queue has 61 reported institution labels still needing identity reconciliation. These lists overlap in real institutions but are not merged without accepted evidence. Source-unit assertions and live directory/posting coverage are additional Stage 1 gates.
 
 ## In the university/campus discovery frame
 
@@ -171,54 +171,54 @@ The published 775 university/campus source records group into 680 display identi
 | 161 | Technical University of Darmstadt | unit/identity: partial; doctoral branch scope |
 | 162 | Technical University of Denmark | unit/identity: partial; doctoral branch scope |
 | 163 | Technical University of Munich | unit/identity: partial |
-| 164 | Tecnológico de Monterrey | doctoral branch scope |
-| 165 | Tel Aviv University | programme title/host adjudication |
-| 166 | Tennessee Tech University | unit/identity: partial |
-| 167 | Texas Southern University | unit/identity: partial |
-| 168 | Texas State University | unit/identity: partial |
-| 169 | The Chinese University of Hong Kong, Shenzhen | doctoral branch scope |
-| 170 | The City University of New York | unit/identity: partial; doctoral branch scope |
-| 171 | The George Washington University | unit/identity: partial; doctoral branch scope |
-| 172 | The Hong Kong University of Science and Technology (Guangzhou) | unit/identity: partial; doctoral branch scope |
-| 173 | The University of British Columbia | unit/identity: partial |
-| 174 | The University of Edinburgh | unit/identity: partial; doctoral branch scope |
-| 175 | The University of Manchester | unit/identity: partial; doctoral branch scope |
-| 176 | The University of Memphis | unit/identity: partial |
-| 177 | The University of New Mexico | doctoral branch scope |
-| 178 | The University of Queensland | doctoral branch scope |
-| 179 | The University of Sheffield | unit/identity: partial; doctoral branch scope |
-| 180 | The University of Sydney | doctoral branch scope |
-| 181 | The University of Texas at Arlington | unit/identity: partial |
-| 182 | The University of Texas at Dallas | unit/identity: partial |
-| 183 | The University of Texas at El Paso | doctoral branch scope |
-| 184 | Tianjin University | doctoral branch scope |
-| 185 | Tilburg University | unit/identity: partial |
-| 186 | Tongji University | doctoral branch scope |
-| 187 | Toulouse School of Economics and Quantitative Social Sciences | unit/identity: partial; doctoral branch scope |
-| 188 | Tsinghua University | doctoral branch scope |
-| 189 | TU Dortmund University | unit/identity: partial; doctoral branch scope |
-| 190 | TUD Dresden University of Technology | unit/identity: partial; doctoral branch scope |
-| 191 | Tusculum University | unit/identity: partial; doctoral branch scope |
-| 192 | Universidad Adolfo Ibáñez | unit/identity: partial; doctoral branch scope |
-| 193 | Universidad Carlos III de Madrid | unit/identity: partial; doctoral branch scope |
-| 194 | Universidad de los Andes | doctoral branch scope |
-| 195 | Universidad de Valladolid | unit/identity: partial; doctoral branch scope |
-| 196 | Universidad de Zaragoza | unit/identity: partial; doctoral branch scope |
-| 197 | Universidade Católica Portuguesa | doctoral branch scope |
-| 198 | Universidade de São Paulo | unit/identity: partial; doctoral branch scope |
-| 199 | Universidade Federal de Santa Catarina | unit/identity: partial; doctoral branch scope |
-| 200 | Università degli studi di Bergamo | unit/identity: partial; doctoral branch scope |
-| 201 | Università della Svizzera italiana | unit/identity: partial; doctoral branch scope |
-| 202 | Universität des Saarlandes | doctoral branch scope |
-| 203 | Université Cadi Ayyad | unit/identity: partial; doctoral branch scope |
-| 204 | Université de Sfax | unit/identity: partial; doctoral branch scope |
-| 205 | Université Grenoble Alpes | unit/identity: partial; doctoral branch scope |
-| 206 | Université libre de Bruxelles | unit/identity: partial; doctoral branch scope |
-| 207 | University College London | doctoral branch scope |
-| 208 | University of Alberta | doctoral branch scope |
-| 209 | University of Augsburg | unit/identity: partial; doctoral branch scope |
-| 210 | University of Bayreuth | unit/identity: partial; doctoral branch scope |
-| 211 | University of Birmingham | unit/identity: partial; doctoral branch scope |
+| 164 | Tel Aviv University | programme title/host adjudication |
+| 165 | Tennessee Tech University | unit/identity: partial |
+| 166 | Texas Southern University | unit/identity: partial |
+| 167 | Texas State University | unit/identity: partial |
+| 168 | The Chinese University of Hong Kong, Shenzhen | doctoral branch scope |
+| 169 | The City University of New York | unit/identity: partial; doctoral branch scope |
+| 170 | The George Washington University | unit/identity: partial; doctoral branch scope |
+| 171 | The Hong Kong University of Science and Technology (Guangzhou) | unit/identity: partial; doctoral branch scope |
+| 172 | The University of British Columbia | unit/identity: partial |
+| 173 | The University of Edinburgh | unit/identity: partial; doctoral branch scope |
+| 174 | The University of Manchester | unit/identity: partial; doctoral branch scope |
+| 175 | The University of Memphis | unit/identity: partial |
+| 176 | The University of New Mexico | doctoral branch scope |
+| 177 | The University of Queensland | doctoral branch scope |
+| 178 | The University of Sheffield | unit/identity: partial; doctoral branch scope |
+| 179 | The University of Texas at Arlington | unit/identity: partial |
+| 180 | The University of Texas at Dallas | unit/identity: partial |
+| 181 | Tianjin University | doctoral branch scope |
+| 182 | Tilburg University | unit/identity: partial |
+| 183 | Tongji University | doctoral branch scope |
+| 184 | Toulouse School of Economics and Quantitative Social Sciences | unit/identity: partial; doctoral branch scope |
+| 185 | Tsinghua University | doctoral branch scope |
+| 186 | TU Dortmund University | unit/identity: partial; doctoral branch scope |
+| 187 | TUD Dresden University of Technology | unit/identity: partial; doctoral branch scope |
+| 188 | Tusculum University | unit/identity: partial; doctoral branch scope |
+| 189 | Universidad Adolfo Ibáñez | unit/identity: partial; doctoral branch scope |
+| 190 | Universidad Carlos III de Madrid | unit/identity: partial; doctoral branch scope |
+| 191 | Universidad de Valladolid | unit/identity: partial; doctoral branch scope |
+| 192 | Universidad de Zaragoza | unit/identity: partial; doctoral branch scope |
+| 193 | Universidade Católica Portuguesa | doctoral branch scope |
+| 194 | Universidade de São Paulo | unit/identity: partial; doctoral branch scope |
+| 195 | Universidade Federal de Santa Catarina | unit/identity: partial; doctoral branch scope |
+| 196 | Università degli studi di Bergamo | unit/identity: partial; doctoral branch scope |
+| 197 | Università della Svizzera italiana | unit/identity: partial; doctoral branch scope |
+| 198 | Universität des Saarlandes | doctoral branch scope |
+| 199 | Université Cadi Ayyad | unit/identity: partial; doctoral branch scope |
+| 200 | Université de Sfax | unit/identity: partial; doctoral branch scope |
+| 201 | Université de Toulon | unit/identity: partial; doctoral branch scope |
+| 202 | Université Grenoble Alpes | unit/identity: partial; doctoral branch scope |
+| 203 | Université libre de Bruxelles | unit/identity: partial; doctoral branch scope |
+| 204 | University College London | doctoral branch scope |
+| 205 | University of Alberta | doctoral branch scope |
+| 206 | University of Augsburg | unit/identity: partial; doctoral branch scope |
+| 207 | University of Basel | unit/identity: partial; doctoral branch scope |
+| 208 | University of Bayreuth | unit/identity: partial; doctoral branch scope |
+| 209 | University of Birmingham | unit/identity: partial; doctoral branch scope |
+| 210 | University of Bradford | unit/identity: partial; doctoral branch scope |
+| 211 | University of Brighton | unit/identity: partial; doctoral branch scope |
 | 212 | University of Cambridge | unit/identity: partial |
 | 213 | University of Cyprus | doctoral branch scope |
 | 214 | University of Delhi | unit/identity: partial; doctoral branch scope |
@@ -248,37 +248,44 @@ The published 775 university/campus source records group into 680 display identi
 | 238 | University of Southampton | unit/identity: partial |
 | 239 | University of St.Gallen | unit/identity: partial; doctoral branch scope |
 | 240 | University of Stirling | unit/identity: partial |
-| 241 | University of the Virgin Islands | unit/identity: partial |
-| 242 | University of Toronto | unit/identity: partial |
-| 243 | University of Toronto Mississauga | doctoral branch scope |
-| 244 | University of Toronto Scarborough | doctoral branch scope |
-| 245 | University of Trento | doctoral branch scope |
-| 246 | University of Vaasa | unit/identity: partial; doctoral branch scope |
-| 247 | University of Vienna | unit/identity: partial; doctoral branch scope |
-| 248 | University of Virginia | unit/identity: partial; doctoral branch scope |
-| 249 | University of Waikato | unit/identity: partial; doctoral branch scope |
-| 250 | University of Warwick | unit/identity: partial; doctoral branch scope |
-| 251 | University of Washington Tacoma | unit/identity: partial |
-| 252 | University of Windsor | doctoral branch scope |
-| 253 | University of Zurich | doctoral branch scope |
-| 254 | Valley City State University | unit/identity: partial |
-| 255 | Vienna University of Economics and Business | doctoral branch scope |
-| 256 | Villanova University | unit/identity: partial |
-| 257 | Virginia Polytechnic Institute and State University | unit/identity: partial |
-| 258 | Wageningen University | doctoral branch scope |
-| 259 | Wake Forest University | doctoral branch scope |
-| 260 | Wayne State University | doctoral branch scope |
-| 261 | West Virginia University | unit/identity: partial; doctoral branch scope |
-| 262 | Westfield State University | unit/identity: partial |
-| 263 | Wheaton College of Massachusetts | unit/identity: blocked; doctoral branch scope |
-| 264 | Wichita State University | doctoral branch scope |
-| 265 | William & Mary | doctoral branch scope |
-| 266 | Winona State University | unit/identity: partial |
-| 267 | Worcester Polytechnic Institute | doctoral branch scope |
-| 268 | Xi'an Jiaotong University | unit/identity: partial; doctoral branch scope |
-| 269 | Xi'an Jiaotong-Liverpool University | doctoral branch scope |
-| 270 | York University | doctoral branch scope |
-| 271 | Zhejiang University | unit/identity: partial; doctoral branch scope |
+| 241 | University of Tasmania | unit/identity: partial; doctoral branch scope |
+| 242 | University of the Virgin Islands | unit/identity: partial |
+| 243 | University of Toronto | unit/identity: partial |
+| 244 | University of Toronto Mississauga | doctoral branch scope |
+| 245 | University of Toronto Scarborough | doctoral branch scope |
+| 246 | University of Trento | doctoral branch scope |
+| 247 | University of Tsukuba | unit/identity: partial; doctoral branch scope |
+| 248 | University of Vaasa | unit/identity: partial; doctoral branch scope |
+| 249 | University of Vienna | unit/identity: partial; doctoral branch scope |
+| 250 | University of Virginia | unit/identity: partial; doctoral branch scope |
+| 251 | University of Waikato | unit/identity: partial; doctoral branch scope |
+| 252 | University of Wales | unit/identity: partial; doctoral branch scope |
+| 253 | University of Warwick | unit/identity: partial; doctoral branch scope |
+| 254 | University of Washington Tacoma | unit/identity: partial |
+| 255 | University of Westminster | unit/identity: partial; doctoral branch scope |
+| 256 | University of Windsor | doctoral branch scope |
+| 257 | University of Zurich | doctoral branch scope |
+| 258 | Valley City State University | unit/identity: partial |
+| 259 | Vienna University of Economics and Business | doctoral branch scope |
+| 260 | Villanova University | unit/identity: partial |
+| 261 | Virginia Polytechnic Institute and State University | unit/identity: partial |
+| 262 | Wageningen University | doctoral branch scope |
+| 263 | Wake Forest University | doctoral branch scope |
+| 264 | Warsaw University of Technology | unit/identity: partial; doctoral branch scope |
+| 265 | Wayne State University | doctoral branch scope |
+| 266 | West Virginia University | unit/identity: partial; doctoral branch scope |
+| 267 | Westfield State University | unit/identity: partial |
+| 268 | Wheaton College of Massachusetts | unit/identity: blocked; doctoral branch scope |
+| 269 | Wichita State University | doctoral branch scope |
+| 270 | William & Mary | doctoral branch scope |
+| 271 | Winona State University | unit/identity: partial |
+| 272 | Worcester Polytechnic Institute | doctoral branch scope |
+| 273 | Wright State University | unit/identity: partial; doctoral branch scope |
+| 274 | Wuhan University | unit/identity: partial; doctoral branch scope |
+| 275 | Xi'an Jiaotong University | unit/identity: partial; doctoral branch scope |
+| 276 | Xi'an Jiaotong-Liverpool University | doctoral branch scope |
+| 277 | York University | doctoral branch scope |
+| 278 | Zhejiang University | unit/identity: partial; doctoral branch scope |
 
 ## OM List reported PhD institutions without an accepted source-record match
 
@@ -328,35 +335,24 @@ These are names as reported in faculty directory metadata. The name, relevant fi
 | 40 | University of Adelaide | 1 |
 | 41 | University of Aix-Marseille II | 1 |
 | 42 | University of Athens | 1 |
-| 43 | University of Basel | 1 |
-| 44 | University of Berlin | 1 |
-| 45 | University of Bordeaux | 1 |
-| 46 | University of Bordeaux IV | 1 |
-| 47 | University of Bradford Management Centre | 1 |
-| 48 | University of Brighton | 1 |
-| 49 | University of Chinese Academy of Sciences | 1 |
-| 50 | University of Erlangen-Nuremberg | 1 |
-| 51 | University of Giessen | 1 |
-| 52 | University of Hamburg | 1 |
-| 53 | University of Kent | 1 |
-| 54 | University of Lausanne | 1 |
-| 55 | University of Leicester | 1 |
-| 56 | University of Leiden | 1 |
-| 57 | University of Leipzig | 1 |
-| 58 | University of Paris | 1 |
-| 59 | University of Piraeus | 1 |
-| 60 | University of Strathclyde | 1 |
-| 61 | University of Tasmania | 1 |
-| 62 | University of Toulon | 1 |
-| 63 | University of Tsukuba | 1 |
-| 64 | University of Wales | 1 |
-| 65 | University of Westminster | 1 |
-| 66 | University of York | 2 |
-| 67 | University Paris 8 | 1 |
-| 68 | University Pierre Mendès France of Grenoble | 1 |
-| 69 | Warsaw University of Technology | 1 |
-| 70 | World Maritime University | 1 |
-| 71 | Wright State University | 1 |
-| 72 | Wuhan University | 1 |
+| 43 | University of Berlin | 1 |
+| 44 | University of Bordeaux | 1 |
+| 45 | University of Bordeaux IV | 1 |
+| 46 | University of Chinese Academy of Sciences | 1 |
+| 47 | University of Erlangen-Nuremberg | 1 |
+| 48 | University of Giessen | 1 |
+| 49 | University of Hamburg | 1 |
+| 50 | University of Kent | 1 |
+| 51 | University of Lausanne | 1 |
+| 52 | University of Leicester | 1 |
+| 53 | University of Leiden | 1 |
+| 54 | University of Leipzig | 1 |
+| 55 | University of Paris | 1 |
+| 56 | University of Piraeus | 1 |
+| 57 | University of Strathclyde | 1 |
+| 58 | University of York | 2 |
+| 59 | University Paris 8 | 1 |
+| 60 | University Pierre Mendès France of Grenoble | 1 |
+| 61 | World Maritime University | 1 |
 
 Stages 2–4 remain held until Stage 1 is finished.

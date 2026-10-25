@@ -3,7 +3,7 @@ export const isPhdDegree=v=>/^(?:(?:phd|ph d)(?: doctor of philosophy| or scd| o
 // An extant programme with suspended admissions is not a closed programme.
 export const isCurrentPhdProgramme=p=>['active','admissions-suspended'].includes(p.status)&&p.programmeType!=='research-training'&&(isPhdDegree(p.degree)&&p.phdEligibility!=='credential-unresolved'||p.phdEligibility==='verified-research-doctorate'&&!!p.researchDoctorateEvidence);
 // Stage 1's public gate uses official titles, not inferred research relevance.
-export const hasNamedOperationsScope=name=>/operations|operational research|investigacion (?:operativa|de operaciones)|gestao de operacoes|επιχειρησιακων λειτουργιων|management science|genie industriel|ingenierias? industrial(?:es)?\b|industrial(?:\s+(?:(?:and|&)\s+)?(?:systems?|management(?: systems?)?|manufacturing systems?|process(?: safety)?))?\s+engineering/i.test(fold(name||''));
+export const hasNamedOperationsScope=name=>/operations|operational research|investigacion (?:operativa|de operaciones)|gestao de operacoes|gestion de operaciones|επιχειρησιακων λειτουργιων|management science|genie industriel|ingenierias? industrial(?:es)?\b|industrial(?:\s+(?:(?:and|&)\s+)?(?:systems?|human factors|management(?: systems?)?|manufacturing systems?|process(?: safety)?))?\s+engineering/i.test(fold(name||''));
 export const isNamedOperationsProgramme=(p,units=[])=>
   !['excluded','pending'].includes(p.titleScopeReview?.decision)&&(
   [p.programName,p.specialization,p.department,p.school].some(hasNamedOperationsScope)||
