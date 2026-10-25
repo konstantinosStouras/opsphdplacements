@@ -25,8 +25,8 @@ Generated from committed-format public datasets by `node scripts/update-research
 | University directory records partially reviewed | 229 |
 | University directory records blocked by source access | 5 |
 | University directory records awaiting review | 0 |
-| Discovery source records with doctoral observations | 810 |
-| of which current branch scope explicitly complete | 592 |
+| Discovery source records with doctoral observations | 811 |
+| of which current branch scope explicitly complete | 593 |
 
 The program register is partial. It includes historical/predecessor records; its total is not the number of active programs worldwide. The graduate lists are what the programs' own pages list (live and archived copies), with the year's meaning as each page gives it; they are partial rosters, not a census. No complete graduate census, comprehensive employment-history panel, advisor dataset or publication-at-graduation dataset has been collected yet. Their schema and research rules are prepared.
 

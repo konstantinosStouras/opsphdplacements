@@ -62,7 +62,7 @@ export async function renderOrganisations(section,actions){
     }
     if(!r.reviews.length)detail.append(node('p','Operations departments have not been reviewed for this organisation.'));
     for(const p of r.programs)renderProgramme(detail,p);
-    if(!r.programs.length)detail.append(node('p','No doctoral program has been entered in the initial register. This does not establish that none exists.'));
+    if(!r.programs.length)detail.append(node('p','No doctoral programme meeting the Operations, Management Science or Industrial Engineering title rule is currently shown here. The coverage notes explain what has been checked and what remains unknown.'));
     evidence.append(detail);tr.append(identity,people,evidence);body.append(tr);
    }
    shown=Math.min(shown+40,selected.length);count.textContent=`${shown.toLocaleString('en-GB')} of ${selected.length.toLocaleString('en-GB')} matching organisations shown`;more.hidden=shown>=selected.length;
