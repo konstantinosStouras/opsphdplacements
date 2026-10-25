@@ -28,7 +28,7 @@ for (const input of inputs) {
 data.records = [...records.values()].sort((a, b) => a.id.localeCompare(b.id));
 validateUniversityReviews(data.records, original.records);
 data.metadata = {
-  definition: 'Individual Chrome reviews of official university names and operations units. The original directory remains in universities.json. Reviewed describes the stated source scope, not an exhaustive current or historical census.',
+  definition: 'Individual official-source reviews of university names and operations units. The original directory remains in universities.json. Reviewed describes the stated source scope, not an exhaustive current or historical census. Source notes identify the access method where recorded.',
   sourceRecords: original.records.length,
   attempted: data.records.length,
   reviewed: data.records.filter(r => r.status === 'reviewed').length,

@@ -8,8 +8,8 @@
   "rankedInstitutionLeads": 366,
   "matchedLeads": 186,
   "unresolvedLeads": 180,
-  "withVerifiedCurrentRoutes": 152,
-  "withCompletedCurrentBranchScope": 129,
+  "withVerifiedCurrentRoutes": 138,
+  "withCompletedCurrentBranchScope": 130,
   "records": [
     {
       "id": "massachusetts-institute-of-technology",
@@ -4998,9 +4998,7 @@
           "coverageComplete": false
         }
       ],
-      "verifiedCurrentProgrammeIds": [
-        "erasmus-university-rotterdam--management-economics-bplis"
-      ],
+      "verifiedCurrentProgrammeIds": [],
       "branchCoverageComplete": false,
       "nextStep": "Verify official current relevant doctoral routes across business and engineering; record branch gaps"
     },
@@ -9084,7 +9082,8 @@
       "id": "ku-leuven",
       "name": "KU Leuven",
       "sourceUniversityIds": [
-        "ku-leuven"
+        "ku-leuven",
+        "katholieke-universiteit-ku-leuven"
       ],
       "candidateUniversityIds": [
         "ku-leuven"
@@ -9114,7 +9113,7 @@
       "doctoralObservations": [
         {
           "status": "verified",
-          "checkedAt": "2026-10-21",
+          "checkedAt": "2026-10-25",
           "programmeIds": [
             "ku-leuven--engineering-science-phd-industrial-management",
             "ku-leuven--phd-business-economics-operations"
@@ -9198,11 +9197,131 @@
               "checkedAt": "2026-10-21",
               "outcome": "read",
               "note": "Read current FacultyEngineeringScience PhD framework, ADS and doctoral defense requirements."
+            },
+            {
+              "url": "https://admin.kuleuven.be/sab/jd/en/id-sheet",
+              "checkedAt": "2026-10-25",
+              "outcome": "read",
+              "note": "Opened full official Legal Department page using web tool. Legal name Katholieke Universiteit Leuven and short name KU Leuven are explicitly the same legal entity. Its guidance prefers KU Leuven for ordinary communications."
+            },
+            {
+              "url": "https://feb.kuleuven.be/research/decision-sciences-and-information-management/om",
+              "checkedAt": "2026-10-25",
+              "outcome": "read",
+              "note": "Opened full official centre page using web tool. Exact Research Centre for Operations Management title, Faculty of Economics and Business parent, production/service/healthcare operational-process research. Source calls itself research centre and research group, not department."
             }
           ],
           "limitations": [
             "Current PhD routes established; exact EngineeringScience full diploma wording remains unspecified and not fabricated.",
-            "KU Leuven retained official institutional name; no unrelated Leuven institutional identity merged."
+            "KU Leuven retained official institutional name; no unrelated Leuven institutional identity merged.",
+            "Alias identity individually verified by official legal page on 25 October via web tool. Doctoral branches reuse saved canonical observations with original 21 October dates; no fresh full doctoral inventory review claimed. Existing route facts and strict title-scope exclusions remain unchanged."
+          ],
+          "coverageComplete": true
+        },
+        {
+          "status": "verified",
+          "checkedAt": "2026-10-25",
+          "programmeIds": [
+            "ku-leuven--engineering-science-phd-industrial-management",
+            "ku-leuven--phd-business-economics-operations"
+          ],
+          "branches": [
+            {
+              "branch": "business",
+              "reviewState": "checked",
+              "conclusion": "Full current FEB doctoral programme inventory and complete BusinessEconomics doctoral requirements checked; OM centre current doctoral research mapped. Professional Vlerick route kept separate.",
+              "sourceUrls": [
+                "https://feb.kuleuven.be/research/decision-sciences-and-information-management/om",
+                "https://feb.kuleuven.be/research/PhD/PhD",
+                "https://feb.kuleuven.be/research/PhD/businesseconomics/Business",
+                "https://feb.kuleuven.be/research/PhD/doctoral-program-business-economics"
+              ]
+            },
+            {
+              "branch": "engineering",
+              "reviewState": "checked",
+              "conclusion": "Current EngineeringScience faculty whole seven-department research/doctoral inventory checked and MIM division current logistics doctoral research verified. No standalone IndustrialEngineering department invented.",
+              "sourceUrls": [
+                "https://www.mech.kuleuven.be/en/mim",
+                "https://www.mech.kuleuven.be/en/cib/imresearch/scmlog",
+                "https://www.mech.kuleuven.be/en/mim/imresearch/PhD",
+                "https://eng.kuleuven.be/onderzoek",
+                "https://eng.kuleuven.be/en/research/phd"
+              ]
+            }
+          ],
+          "sources": [
+            {
+              "url": "https://feb.kuleuven.be/research/decision-sciences-and-information-management/om",
+              "checkedAt": "2026-10-21",
+              "outcome": "read",
+              "note": "Read OM centre full scope, current2026 OMdoctoral seminars and official PhD link."
+            },
+            {
+              "url": "https://feb.kuleuven.be/research/PhD/PhD",
+              "checkedAt": "2026-10-21",
+              "outcome": "read",
+              "note": "Read full FEB doctoral inventory: Economics, BusinessEconomics, separate professional BusinessAdministration route."
+            },
+            {
+              "url": "https://feb.kuleuven.be/research/PhD/businesseconomics/Business",
+              "checkedAt": "2026-10-21",
+              "outcome": "read",
+              "note": "Read exact BusinessEconomics PhD, independent research training and successful thesis pre/public defense award."
+            },
+            {
+              "url": "https://feb.kuleuven.be/research/PhD/doctoral-program-business-economics",
+              "checkedAt": "2026-10-21",
+              "outcome": "read",
+              "note": "Read full group-specific doctoral training curriculum, research proposal, doctoral seminars, publication and dissertation rules."
+            },
+            {
+              "url": "https://www.mech.kuleuven.be/en/mim",
+              "checkedAt": "2026-10-21",
+              "outcome": "read",
+              "note": "Read actual MIM division under MechanicalEngineering and logistics/operations research."
+            },
+            {
+              "url": "https://www.mech.kuleuven.be/en/cib/imresearch/scmlog",
+              "checkedAt": "2026-10-21",
+              "outcome": "read",
+              "note": "Read current logistics projects explicitly marked PhD and SCM/routing scope; no individual career observations collected."
+            },
+            {
+              "url": "https://www.mech.kuleuven.be/en/mim/imresearch/PhD",
+              "checkedAt": "2026-10-21",
+              "outcome": "read",
+              "note": "Read institutional ongoing/finished doctoral-research inventory confirming division doctoral research in planning/routing/industrial operations; no graduate enumeration extracted."
+            },
+            {
+              "url": "https://eng.kuleuven.be/onderzoek",
+              "checkedAt": "2026-10-21",
+              "outcome": "read",
+              "note": "Read current EngineeringScience faculty research page, all seven departments and doctoral framework/navigation; current PhD last-mile logistics research highlighted."
+            },
+            {
+              "url": "https://eng.kuleuven.be/en/research/phd",
+              "checkedAt": "2026-10-21",
+              "outcome": "read",
+              "note": "Read current FacultyEngineeringScience PhD framework, ADS and doctoral defense requirements."
+            },
+            {
+              "url": "https://admin.kuleuven.be/sab/jd/en/id-sheet",
+              "checkedAt": "2026-10-25",
+              "outcome": "read",
+              "note": "Opened full official Legal Department page using web tool. Legal name Katholieke Universiteit Leuven and short name KU Leuven are explicitly the same legal entity. Its guidance prefers KU Leuven for ordinary communications."
+            },
+            {
+              "url": "https://feb.kuleuven.be/research/decision-sciences-and-information-management/om",
+              "checkedAt": "2026-10-25",
+              "outcome": "read",
+              "note": "Opened full official centre page using web tool. Exact Research Centre for Operations Management title, Faculty of Economics and Business parent, production/service/healthcare operational-process research. Source calls itself research centre and research group, not department."
+            }
+          ],
+          "limitations": [
+            "Current PhD routes established; exact EngineeringScience full diploma wording remains unspecified and not fabricated.",
+            "KU Leuven retained official institutional name; no unrelated Leuven institutional identity merged.",
+            "Alias identity individually verified by official legal page on 25 October via web tool. Doctoral branches reuse saved canonical observations with original 21 October dates; no fresh full doctoral inventory review claimed. Existing route facts and strict title-scope exclusions remain unchanged."
           ],
           "coverageComplete": true
         }
@@ -9937,9 +10056,7 @@
           "coverageComplete": true
         }
       ],
-      "verifiedCurrentProgrammeIds": [
-        "university-of-bath--management-phd-operations"
-      ],
+      "verifiedCurrentProgrammeIds": [],
       "branchCoverageComplete": true,
       "nextStep": "Current scoped doctoral inventory checked; retain evidence and historical limitations"
     },
@@ -10510,7 +10627,6 @@
         }
       ],
       "verifiedCurrentProgrammeIds": [
-        "virginia-tech--business-information-technology-phd",
         "virginia-tech--industrial-systems-engineering-phd"
       ],
       "branchCoverageComplete": true,
@@ -11711,8 +11827,7 @@
         }
       ],
       "verifiedCurrentProgrammeIds": [
-        "university-college-london--management-operations-technology-phd",
-        "university-college-london--global-healthcare-leadership-management-phd-operations"
+        "university-college-london--management-operations-technology-phd"
       ],
       "branchCoverageComplete": false,
       "nextStep": "Verify official current relevant doctoral routes across business and engineering; record branch gaps"
@@ -12510,9 +12625,7 @@
           "coverageComplete": true
         }
       ],
-      "verifiedCurrentProgrammeIds": [
-        "whu-otto-beisheim-school-of-management--business-economics-research-doctorate-supply-chain"
-      ],
+      "verifiedCurrentProgrammeIds": [],
       "branchCoverageComplete": true,
       "nextStep": "Current scoped doctoral inventory checked; retain evidence and historical limitations"
     },
@@ -12614,9 +12727,7 @@
           "coverageComplete": false
         }
       ],
-      "verifiedCurrentProgrammeIds": [
-        "karlsruhe-institute-of-technology--business-economics-operations-research-doctorate"
-      ],
+      "verifiedCurrentProgrammeIds": [],
       "branchCoverageComplete": false,
       "nextStep": "Verify official current relevant doctoral routes across business and engineering; record branch gaps"
     },
@@ -13091,8 +13202,7 @@
         }
       ],
       "verifiedCurrentProgrammeIds": [
-        "university-of-amsterdam--business-school-phd-operations-management",
-        "university-of-amsterdam--mathematics-phd-stochastic-operations-research"
+        "university-of-amsterdam--business-school-phd-operations-management"
       ],
       "branchCoverageComplete": true,
       "nextStep": "Current scoped doctoral inventory checked; retain evidence and historical limitations"
@@ -14139,9 +14249,7 @@
           "coverageComplete": false
         }
       ],
-      "verifiedCurrentProgrammeIds": [
-        "university-of-manchester--business-management-phd-management-sciences"
-      ],
+      "verifiedCurrentProgrammeIds": [],
       "branchCoverageComplete": false,
       "nextStep": "Verify official current relevant doctoral routes across business and engineering; record branch gaps"
     },
@@ -15694,8 +15802,7 @@
         }
       ],
       "verifiedCurrentProgrammeIds": [
-        "tel-aviv-university--phd-engineering-industrial-systems",
-        "tel-aviv-university--coller-phd-operations-research"
+        "tel-aviv-university--phd-engineering-industrial-systems"
       ],
       "branchCoverageComplete": true,
       "nextStep": "Current scoped doctoral inventory checked; retain evidence and historical limitations"
@@ -15927,8 +16034,7 @@
         }
       ],
       "verifiedCurrentProgrammeIds": [
-        "university-of-hong-kong--business-economics-phd-operations-management",
-        "university-of-hong-kong--data-systems-engineering-phd"
+        "university-of-hong-kong--business-economics-phd-operations-management"
       ],
       "branchCoverageComplete": true,
       "nextStep": "Current scoped doctoral inventory checked; retain evidence and historical limitations"
@@ -17634,9 +17740,7 @@
           "coverageComplete": true
         }
       ],
-      "verifiedCurrentProgrammeIds": [
-        "newcastle-university--business-management-phd-operations"
-      ],
+      "verifiedCurrentProgrammeIds": [],
       "branchCoverageComplete": true,
       "nextStep": "Current scoped doctoral inventory checked; retain evidence and historical limitations"
     },
@@ -19659,9 +19763,7 @@
           "coverageComplete": false
         }
       ],
-      "verifiedCurrentProgrammeIds": [
-        "chalmers-university-of-technology--technology-management-economics-supply-operations-phd"
-      ],
+      "verifiedCurrentProgrammeIds": [],
       "branchCoverageComplete": false,
       "nextStep": "Verify official current relevant doctoral routes across business and engineering; record branch gaps"
     },
@@ -20690,7 +20792,71 @@
       "owners": [
         "integrator"
       ],
-      "doctoralObservations": [],
+      "doctoralObservations": [
+        {
+          "status": "partial",
+          "checkedAt": "2026-10-25",
+          "programmeIds": [],
+          "branches": [
+            {
+              "branch": "business",
+              "reviewState": "checked",
+              "conclusion": "RBS confirms it launched a PhD in 2019; its faculty/biography pages establish the SCM/IS department and one UIR Operations Management and Information Systems doctorate, but current qualifying route title/host was not established by the opened catalogue.",
+              "sourceUrls": [
+                "https://rbs.uir.ac.ma/rabat-business-school-faculty/",
+                "https://rbs.uir.ac.ma/zakaria-el-hathat/",
+                "https://rbs.uir.ac.ma/about-rbs/",
+                "https://rbs.uir.ac.ma/programmes/"
+              ]
+            },
+            {
+              "branch": "engineering",
+              "reviewState": "unexamined",
+              "conclusion": "UIR generic PhD admissions page failed with 502; engineering doctoral programme inventory was not reviewed.",
+              "sourceUrls": [
+                "https://www.uir.ac.ma/en/pole/research/Admissions"
+              ]
+            }
+          ],
+          "sources": [
+            {
+              "url": "https://rbs.uir.ac.ma/rabat-business-school-faculty/",
+              "checkedAt": "2026-10-25",
+              "outcome": "read",
+              "note": "Read Rabat Business School official academic department inventory, including exact Department of Supply Chain Management & Information Systems."
+            },
+            {
+              "url": "https://rbs.uir.ac.ma/zakaria-el-hathat/",
+              "checkedAt": "2026-10-25",
+              "outcome": "read",
+              "note": "Read official faculty biography identifying one alumnus PhD in Operations Management and Information Systems from the International University of Rabat; individual credential wording is not a current programme inventory."
+            },
+            {
+              "url": "https://rbs.uir.ac.ma/about-rbs/",
+              "checkedAt": "2026-10-25",
+              "outcome": "read",
+              "note": "Read full official RBS institutional history; explicitly states it launched a PhD programme in 2019 but does not give the exact qualifying specialization/award title or current intake status."
+            },
+            {
+              "url": "https://www.uir.ac.ma/en/pole/research/Admissions",
+              "checkedAt": "2026-10-25",
+              "outcome": "blocked",
+              "note": "Direct official university admissions page returned 502 Bad Gateway when opened; search preview was not used as verification."
+            },
+            {
+              "url": "https://rbs.uir.ac.ma/programmes/",
+              "checkedAt": "2026-10-25",
+              "outcome": "read",
+              "note": "Read current Rabat Business School programme catalogue, which displays bachelor, master, executive and QTEM routes but no named current doctoral programme."
+            }
+          ],
+          "limitations": [
+            "The PhD launch is verified historical provision, but individual degree wording does not establish the current named programme/track or admission status.",
+            "Do not infer the current qualifying route from an alumnus biography or a blocked doctoral admissions page."
+          ],
+          "coverageComplete": false
+        }
+      ],
       "verifiedCurrentProgrammeIds": [],
       "branchCoverageComplete": false,
       "nextStep": "Verify official current relevant doctoral routes across business and engineering; record branch gaps"
@@ -20829,8 +20995,7 @@
         }
       ],
       "verifiedCurrentProgrammeIds": [
-        "koc-university--industrial-engineering-operations-management-phd",
-        "koc-university--business-administration-phd-operations"
+        "koc-university--industrial-engineering-operations-management-phd"
       ],
       "branchCoverageComplete": true,
       "nextStep": "Current scoped doctoral inventory checked; retain evidence and historical limitations"
@@ -21971,9 +22136,7 @@
           "coverageComplete": false
         }
       ],
-      "verifiedCurrentProgrammeIds": [
-        "university-of-bristol--management-phd-operations"
-      ],
+      "verifiedCurrentProgrammeIds": [],
       "branchCoverageComplete": false,
       "nextStep": "Verify official current relevant doctoral routes across business and engineering; record branch gaps"
     },
@@ -22752,9 +22915,7 @@
           "coverageComplete": false
         }
       ],
-      "verifiedCurrentProgrammeIds": [
-        "university-of-virginia--systems-engineering-phd-or"
-      ],
+      "verifiedCurrentProgrammeIds": [],
       "branchCoverageComplete": false,
       "nextStep": "Verify official current relevant doctoral routes across business and engineering; record branch gaps"
     },
@@ -23086,9 +23247,7 @@
           "coverageComplete": false
         }
       ],
-      "verifiedCurrentProgrammeIds": [
-        "wageningen-university--phd-operations-research-logistics"
-      ],
+      "verifiedCurrentProgrammeIds": [],
       "branchCoverageComplete": false,
       "nextStep": "Verify official current relevant doctoral routes across business and engineering; record branch gaps"
     },
@@ -23202,9 +23361,7 @@
           "coverageComplete": true
         }
       ],
-      "verifiedCurrentProgrammeIds": [
-        "aalborg-university--materials-mechanical-manufacturing-phd-operations"
-      ],
+      "verifiedCurrentProgrammeIds": [],
       "branchCoverageComplete": true,
       "nextStep": "Current scoped doctoral inventory checked; retain evidence and historical limitations"
     },
@@ -24745,9 +24902,7 @@
           "coverageComplete": true
         }
       ],
-      "verifiedCurrentProgrammeIds": [
-        "kedge-business-school--business-administration-supply-chain-phd"
-      ],
+      "verifiedCurrentProgrammeIds": [],
       "branchCoverageComplete": true,
       "nextStep": "Current scoped doctoral inventory checked; retain evidence and historical limitations"
     },
@@ -28103,7 +28258,7 @@
       "doctoralObservations": [
         {
           "status": "verified",
-          "checkedAt": "2026-10-21",
+          "checkedAt": "2026-10-22",
           "programmeIds": [
             "university-of-calgary--management-operations-supply-chain-phd"
           ],
@@ -28111,17 +28266,31 @@
             {
               "branch": "business",
               "reviewState": "checked",
-              "conclusion": "Full ManagementPhD overview, specialization inventory, thesis/admissions and Haskaynehost read.",
+              "conclusion": "Full ManagementPhD overview, specialization inventory, thesis/admissions and Haskaynehost read. Scope-policy adjudication on 25 October: Actual Show all graduate results expanded and full current university programme/credential inventory read. Management eight doctoral specializations, exact Math/Statistics doctorate and five named specializations, Mechanical/Manufacturing full displayed research listings, Sustainable Systems and Civil exact doctorates/specializations read. Remaining Transportation/Project Management/Sustainable Systems and manufacturing research topics do not create qualifying Ops/IE titles under revised rule; no broad hidden-field census required. No new primary read; original source dates retained.",
               "sourceUrls": [
                 "https://grad.ucalgary.ca/future-students/graduate/discover-opportunities/explore-programs/management-phd"
               ]
             },
             {
               "branch": "engineering",
-              "reviewState": "partial",
-              "conclusion": "Full Mechanical/ManufacturingPhD overview and named specializations read; manufacturing optimization/robotics not equated to OR/IEdoctoral field. Supervisor list paginated and wider engineering inventory not exhausted; no global negative claim.",
+              "reviewState": "checked",
+              "conclusion": "Full university graduate degree inventory now expanded/read; all Mechanical/Manufacturing programme supervisor research listings expanded/read (not individual histories). Listed manufacturing concerns physical processes, robotics/control/materials; no explicit OR/industrial operations field verified. Newly identified Sustainable Systems Engineering PhD overview, themes and supervisor research list read: sustainability/regenerative systems design and modelling, no qualifying route inferred from SCM career destination alone. Civil, mathematical and other plausibly relevant doctoral fields still require bounded follow-up. Civil Engineering PhD current overview now read with formal Transportation Engineering specialization; department linked research focus explicitly plans and operates traffic, transit and emerging mobility services. Substantive Operations field adjudication pending in separate observation; no additional route counted before integration. Scope-policy adjudication on 25 October: Actual Show all graduate results expanded and full current university programme/credential inventory read. Management eight doctoral specializations, exact Math/Statistics doctorate and five named specializations, Mechanical/Manufacturing full displayed research listings, Sustainable Systems and Civil exact doctorates/specializations read. Remaining Transportation/Project Management/Sustainable Systems and manufacturing research topics do not create qualifying Ops/IE titles under revised rule; no broad hidden-field census required. No new primary read; original source dates retained.",
               "sourceUrls": [
-                "https://grad.ucalgary.ca/future-students/graduate/discover-opportunities/explore-programs/mechanical-and-manufacturing-engineering-phd"
+                "https://grad.ucalgary.ca/future-students/graduate/discover-opportunities/explore-programs/mechanical-and-manufacturing-engineering-phd",
+                "https://grad.ucalgary.ca/future-students/graduate/discover-opportunities/explore-programs/mechanical-and-manufacturing-engineering-phd",
+                "https://grad.ucalgary.ca/future-students/graduate/discover-opportunities/explore-programs",
+                "https://grad.ucalgary.ca/future-students/graduate/discover-opportunities/explore-programs/sustainable-systems-engineering-phd-thesis",
+                "https://grad.ucalgary.ca/future-students/graduate/discover-opportunities/explore-programs/civil-engineering-phd",
+                "https://schulich.ucalgary.ca/departments/civil-engineering",
+                "https://schulich.ucalgary.ca/civil/research/research-areas"
+              ]
+            },
+            {
+              "branch": "mathematics",
+              "reviewState": "checked",
+              "conclusion": "Current exact Mathematics and Statistics PhD overview explicitly permits industrial mathematics and operations research; research thesis/defense and actual department/faculty host read. One broad doctorate with OR research option, no formal OR concentration inferred. Scope-policy adjudication on 25 October: Actual Show all graduate results expanded and full current university programme/credential inventory read. Management eight doctoral specializations, exact Math/Statistics doctorate and five named specializations, Mechanical/Manufacturing full displayed research listings, Sustainable Systems and Civil exact doctorates/specializations read. Remaining Transportation/Project Management/Sustainable Systems and manufacturing research topics do not create qualifying Ops/IE titles under revised rule; no broad hidden-field census required. No new primary read; original source dates retained.",
+              "sourceUrls": [
+                "https://grad.ucalgary.ca/future-students/graduate/discover-opportunities/explore-programs/math-and-statistics-phd"
               ]
             }
           ],
@@ -28137,19 +28306,76 @@
               "checkedAt": "2026-10-21",
               "outcome": "read",
               "note": "Full rendered current MechanicalManufacturingPhD overview, specialization list and first supervisor page read; remaining supervisor pages not read and no individualcareercollection."
+            },
+            {
+              "url": "https://grad.ucalgary.ca/future-students/graduate/discover-opportunities/explore-programs/mechanical-and-manufacturing-engineering-phd",
+              "checkedAt": "2026-10-22",
+              "outcome": "read",
+              "note": "Full current doctoral overview read via actual loaded browser state; actual Show all research listings expanded and every displayed listing read, including later manufacturing/materials/design researchers. No individual biography or employment history collected."
+            },
+            {
+              "url": "https://grad.ucalgary.ca/future-students/graduate/discover-opportunities/explore-programs",
+              "checkedAt": "2026-10-22",
+              "outcome": "read",
+              "note": "Actual Show all results expanded, then complete current university graduate programme/credential inventory read. Engineering PhDs include Biomedical, Chemical/Petroleum, Civil, Electrical/Computer, Geomatics, Mechanical/Manufacturing and Sustainable Systems; masters/certificates distinct."
+            },
+            {
+              "url": "https://grad.ucalgary.ca/future-students/graduate/discover-opportunities/explore-programs/sustainable-systems-engineering-phd-thesis",
+              "checkedAt": "2026-10-22",
+              "outcome": "read",
+              "note": "Full substantive current doctorate overview, sustainability themes, completion requirements, thesis defense, all four displayed supervisor research fields and Schulich programme office read. SCM listed as career role, not explicitly a doctoral research specialization."
+            },
+            {
+              "url": "https://grad.ucalgary.ca/future-students/graduate/discover-opportunities/explore-programs/math-and-statistics-phd",
+              "checkedAt": "2026-10-22",
+              "outcome": "read",
+              "note": "Full current Mathematics and Statistics doctorate overview, exact departmental/faculty host, five named specializations and original thesis/defense requirements read. Explicit industrial mathematics and operations research doctoral work stated; no individual supervisor biographies or employment histories collected."
+            },
+            {
+              "url": "https://grad.ucalgary.ca/future-students/graduate/discover-opportunities/explore-programs/civil-engineering-phd",
+              "checkedAt": "2026-10-22",
+              "outcome": "read",
+              "note": "Full exact Civil Engineering PhD overview, specialization list, original thesis/open oral defense and Department/Schulich host read. Transportation Engineering and Project Management are explicitly named specializations; not all names automatically qualifying Operations research."
+            },
+            {
+              "url": "https://schulich.ucalgary.ca/departments/civil-engineering",
+              "checkedAt": "2026-10-22",
+              "outcome": "read",
+              "note": "Current departmental homepage read, exact Department of Civil Engineering and actual research-area navigation."
+            },
+            {
+              "url": "https://schulich.ucalgary.ca/civil/research/research-areas",
+              "checkedAt": "2026-10-22",
+              "outcome": "read",
+              "note": "Full current research-area inventory read; actual Transportation Systems Diagnosis, Monitoring, and Management accordion expanded/read, explicit planning/operation of traffic, transit/emerging mobility, operations analysis, multimodal modelling and air-transport planning/operations."
+            },
+            {
+              "url": "https://haskayne.ucalgary.ca/research-and-faculty/academic-areas/operations-and-supply-chain-management",
+              "checkedAt": "2026-10-20",
+              "outcome": "read",
+              "note": "Academic area title, scope and faculty."
+            },
+            {
+              "url": "https://schulich.ucalgary.ca/research/research-themes/advanced-materials-and-manufacturing/manufacturing-and-maintenance-systems",
+              "checkedAt": "2026-10-20",
+              "outcome": "read",
+              "note": "Engineering manufacturing theme and faculty affiliations reviewed; primarily automation, materials, design and control; not inferred to be a separate industrial engineering or operations unit."
             }
           ],
           "limitations": [
-            "Engineering branch incomplete beyond knownmanufacturing doctorate overview; degree exact but no explicit qualifying Ops/OR/IE field established from opened text."
+            "Civil formal Transportation Engineering and Project Management specializations remain genuine but are not renamed Operations/OR from transport planning/operational research descriptions. Earlier substantive-scope candidate preserved in audit.",
+            "Sustainable Systems doctorate and manufacturing research remain real offerings; sustainability models, supply-chain career destinations, robotics/materials/control do not by themselves create named qualifying title.",
+            "Existing Management/Math doctoral records, actual thesis/defense evidence and all original check dates retained unchanged through scope-only operation.",
+            "Scope-only title-policy adjudication from previously opened complete official inventories, not new source verification or historical census. Current programme facts/IDs must remain unchanged through --scope-only integration. All prior scope questions retained in handoff snapshot."
           ],
-          "coverageComplete": false
+          "coverageComplete": true
         }
       ],
       "verifiedCurrentProgrammeIds": [
         "university-of-calgary--management-operations-supply-chain-phd"
       ],
-      "branchCoverageComplete": false,
-      "nextStep": "Verify official current relevant doctoral routes across business and engineering; record branch gaps"
+      "branchCoverageComplete": true,
+      "nextStep": "Current scoped doctoral inventory checked; retain evidence and historical limitations"
     },
     {
       "id": "university-of-california-davis",
@@ -29244,9 +29470,7 @@
           "coverageComplete": false
         }
       ],
-      "verifiedCurrentProgrammeIds": [
-        "university-of-new-south-wales--information-systems-technology-management-phd"
-      ],
+      "verifiedCurrentProgrammeIds": [],
       "branchCoverageComplete": false,
       "nextStep": "Verify official current relevant doctoral routes across business and engineering; record branch gaps"
     },
@@ -29600,9 +29824,7 @@
           "coverageComplete": true
         }
       ],
-      "verifiedCurrentProgrammeIds": [
-        "university-of-stirling--management-organisation-operations-phd"
-      ],
+      "verifiedCurrentProgrammeIds": [],
       "branchCoverageComplete": true,
       "nextStep": "Current scoped doctoral inventory checked; retain evidence and historical limitations"
     },

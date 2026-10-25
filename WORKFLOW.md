@@ -286,3 +286,6 @@ Stage 1 continuation 39: integrate the latest Colorado School of Mines continuat
 
 
 Continuation 128 title audit: `scripts/validate-programs.mjs` validates dated source-linked `titleScopeReview` exclusions; `isNamedOperationsProgramme` honors them in all shared title-filtered counts and views. Preserve this property during future programme updates. Scope-only composites must reference exact current programme fields and use `merge-doctoral-proposals.mjs --scope-only`; integration must not refresh original fact dates. See `research-handoff/universities/continuation-128/README.md` for exact integrated files and safe reproduction order.
+
+
+Continuation133: the shared title helper/validator supports pending title reviews and excludes these from qualifying counts; the remaining report includes those unresolved host/title cases even if the earlier branch inventory was complete. Its source-frame total is computed from data rather than a frozen number. Official pages opened through the web tool are recorded as that access method when browser control is unavailable; search snippets are discovery only. Each source must state the actual evidence read, including expanded UI scope or PDF page when applicable.

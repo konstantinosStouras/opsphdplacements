@@ -3,9 +3,9 @@ export const isPhdDegree=v=>/^(?:(?:phd|ph d)(?: doctor of philosophy| or scd| o
 // An extant programme with suspended admissions is not a closed programme.
 export const isCurrentPhdProgramme=p=>['active','admissions-suspended'].includes(p.status)&&p.programmeType!=='research-training'&&(isPhdDegree(p.degree)&&p.phdEligibility!=='credential-unresolved'||p.phdEligibility==='verified-research-doctorate'&&!!p.researchDoctorateEvidence);
 // Stage 1's public gate uses official titles, not inferred research relevance.
-export const hasNamedOperationsScope=name=>/operations|management science|industrial(?:\s+(?:(?:and|&)\s+)?(?:systems?|management systems?))?\s+engineering/i.test(name||'');
+export const hasNamedOperationsScope=name=>/operations|management science|industrial(?:\s+(?:(?:and|&)\s+)?(?:systems?|management systems?|process(?: safety)?))?\s+engineering/i.test(name||'');
 export const isNamedOperationsProgramme=(p,units=[])=>
-  p.titleScopeReview?.decision!=='excluded'&&(
+  !['excluded','pending'].includes(p.titleScopeReview?.decision)&&(
   [p.programName,p.specialization,p.department,p.school].some(hasNamedOperationsScope)||
   units.some(u=>(p.unitIds||[]).includes(u.id)&&hasNamedOperationsScope(u.name)));
 export const programmeLabel=p=>p.specialization&&!fold(p.programName).includes(fold(p.specialization))?p.programName+' — '+p.specialization:p.programName;

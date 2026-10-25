@@ -1,8 +1,8 @@
-# Stage 1 institutions still needing checks — 23 October 2026
+# Stage 1 institutions still needing checks — updated 25 October 2026
 
 This is an alphabetical planning snapshot from the published university frame and the OM List reported-PhD-institution queue. It is **not** a list of confirmed PhD providers. Some institutions already have frozen official-source proposals awaiting integrator review and publication; they remain here until the public register records the outcome. A missing or partial doctoral review never means that no qualifying doctorate exists.
 
-The published 666 university/campus source records group into 576 display identities; 277 identities have an incomplete unit review or doctoral branch check. Of the source records, 149 have incomplete unit reviews and 262 lack a complete current doctoral branch scope. The separate OM List queue has 180 reported institution labels still needing identity reconciliation. These lists overlap in real institutions but are not merged without accepted evidence. Source-unit assertions and live directory/posting coverage are additional Stage 1 gates.
+The published 668 university/campus source records group into 575 display identities; 265 identities have an incomplete unit review, doctoral branch check or title/host adjudication. Of the source records, 138 have incomplete unit reviews and 241 lack a complete current doctoral branch scope. 11 programme title/host decisions remain pending and are withheld from qualifying counts. The separate OM List queue has 180 reported institution labels still needing identity reconciliation. These lists overlap in real institutions but are not merged without accepted evidence. Source-unit assertions and live directory/posting coverage are additional Stage 1 gates.
 
 ## In the university/campus discovery frame
 
@@ -10,281 +10,269 @@ The published 666 university/campus source records group into 576 display identi
 |---:|---|---|
 | 1 | Abu Dhabi University | doctoral branch scope |
 | 2 | Ajman University | unit/identity: partial; doctoral branch scope |
-| 3 | Alba Graduate Business School | unit/identity: pending; doctoral branch scope |
-| 4 | American University of Beirut | doctoral branch scope |
-| 5 | Ball State University | doctoral branch scope |
-| 6 | Beijing Normal-Hong Kong Baptist University | doctoral branch scope |
-| 7 | Bielefeld University | doctoral branch scope |
-| 8 | Binghamton University | doctoral branch scope |
-| 9 | Birla Institute of Technology & Science, Pilani | doctoral branch scope |
-| 10 | Bocconi University | doctoral branch scope |
-| 11 | Boise State University | unit/identity: partial |
-| 12 | Brandeis University | doctoral branch scope |
-| 13 | Brigham Young University | doctoral branch scope |
-| 14 | California State University, Long Beach | doctoral branch scope |
-| 15 | Campbellsville University | doctoral branch scope |
-| 16 | Canadian University Dubai | unit/identity: partial |
-| 17 | Chalmers University of Technology | doctoral branch scope |
-| 18 | China Europe International Business School | doctoral branch scope |
-| 19 | City St George's, University of London | doctoral branch scope |
-| 20 | City University of Hong Kong | doctoral branch scope |
-| 21 | Clarkson University | doctoral branch scope |
-| 22 | College of Charleston | doctoral branch scope |
-| 23 | College of Staten Island | doctoral branch scope |
-| 24 | Colorado School of Mines | unit/identity: partial; doctoral branch scope |
-| 25 | Colorado State University | doctoral branch scope |
-| 26 | Columbia University | unit/identity: partial |
-| 27 | Concordia University | doctoral branch scope |
-| 28 | Cranfield University | doctoral branch scope |
-| 29 | Dakota State University | doctoral branch scope |
-| 30 | Dartmouth College | doctoral branch scope |
-| 31 | DePauw University | doctoral branch scope |
-| 32 | DeSales University | doctoral branch scope |
-| 33 | Dongbei University of Finance and Economics | doctoral branch scope |
-| 34 | Donghua University | doctoral branch scope |
-| 35 | Drexel University | doctoral branch scope |
-| 36 | Durham University | doctoral branch scope |
-| 37 | East Tennessee State University | doctoral branch scope |
-| 38 | East Texas A&M University | unit/identity: pending; doctoral branch scope |
-| 39 | Eastern Illinois University | doctoral branch scope |
-| 40 | Eastern New Mexico University | doctoral branch scope |
-| 41 | EBS Universität | unit/identity: partial |
-| 42 | École de Management Léonard de Vinci | unit/identity: partial; doctoral branch scope |
-| 43 | École polytechnique fédérale de Lausanne | unit/identity: partial; doctoral branch scope |
-| 44 | Eindhoven University of Technology | unit/identity: partial; doctoral branch scope |
-| 45 | Emory University | unit/identity: partial |
-| 46 | Erasmus University Rotterdam | unit/identity: partial; doctoral branch scope |
-| 47 | ESMT Berlin | doctoral branch scope |
-| 48 | ETH Zurich | unit/identity: partial; doctoral branch scope |
-| 49 | Ewha Womans University | unit/identity: partial; doctoral branch scope |
-| 50 | Ferris State University | unit/identity: partial |
-| 51 | Fisher College | unit/identity: partial; doctoral branch scope |
-| 52 | Florida International University | unit/identity: partial |
-| 53 | Florida Polytechnic University | unit/identity: partial; doctoral branch scope |
-| 54 | Florida State University | unit/identity: partial; doctoral branch scope |
-| 55 | Frankfurt School of Finance & Management | unit/identity: partial; doctoral branch scope |
-| 56 | Franklin & Marshall College | unit/identity: partial |
-| 57 | Fundação Getulio Vargas | unit/identity: partial; doctoral branch scope |
-| 58 | George Mason University | doctoral branch scope |
-| 59 | Georgia Southern University | unit/identity: partial; doctoral branch scope |
-| 60 | Georgia State University | unit/identity: partial; doctoral branch scope |
-| 61 | Ghent University | doctoral branch scope |
-| 62 | Hainan Bielefeld University of Applied Sciences | doctoral branch scope |
-| 63 | Hamad Bin Khalifa University | unit/identity: partial |
-| 64 | Hanken School of Economics | unit/identity: pending; doctoral branch scope |
-| 65 | Harris-Stowe State University | doctoral branch scope |
-| 66 | Harvard University | unit/identity: partial |
-| 67 | HEC Montréal | unit/identity: partial |
-| 68 | HEC Paris | unit/identity: partial |
-| 69 | Houston Christian University | unit/identity: partial |
-| 70 | Howard University | unit/identity: partial |
-| 71 | Huron University | unit/identity: pending; doctoral branch scope |
-| 72 | Idaho State University | doctoral branch scope |
-| 73 | IE University | unit/identity: partial |
-| 74 | IÉSEG School of Management | doctoral branch scope |
-| 75 | Imperial College London | unit/identity: partial; doctoral branch scope |
-| 76 | Indian Institute of Management Ahmedabad | doctoral branch scope |
-| 77 | Indian Institute of Technology Bombay | unit/identity: partial; doctoral branch scope |
-| 78 | Indian School of Business | unit/identity: partial |
-| 79 | Indiana State University | unit/identity: partial |
-| 80 | Indiana University (Kelley) | unit/identity: partial; doctoral branch scope |
-| 81 | INSEAD | unit/identity: partial |
-| 82 | Institut Mines-Télécom | unit/identity: pending; doctoral branch scope |
-| 83 | International Management Institute | unit/identity: pending; doctoral branch scope |
-| 84 | International University of Rabat | unit/identity: pending; doctoral branch scope |
-| 85 | Iowa State University of Science and Technology | unit/identity: partial; doctoral branch scope |
-| 86 | IPADE Business School | unit/identity: partial |
-| 87 | IT University of Copenhagen | unit/identity: partial; doctoral branch scope |
-| 88 | James Madison University | unit/identity: partial |
-| 89 | John Carroll University | unit/identity: pending; doctoral branch scope |
-| 90 | Johns Hopkins University | doctoral branch scope |
-| 91 | Johnson & Wales University | unit/identity: partial |
-| 92 | Karlsruhe Institute of Technology | unit/identity: partial; doctoral branch scope |
-| 93 | Katholieke Universiteit (KU) Leuven | unit/identity: pending; doctoral branch scope |
-| 94 | Kazakh-American Free University | unit/identity: partial; doctoral branch scope |
-| 95 | Kean University | unit/identity: partial; doctoral branch scope |
-| 96 | KIMEP University | unit/identity: partial; doctoral branch scope |
-| 97 | KNUST | unit/identity: blocked; doctoral branch scope |
-| 98 | Korea Advanced Institute of Science and Technology | unit/identity: partial; doctoral branch scope |
-| 99 | Korea University | doctoral branch scope |
-| 100 | Lone Star College System | unit/identity: partial |
-| 101 | Louisiana Tech University | doctoral branch scope |
-| 102 | Maastricht University | doctoral branch scope |
-| 103 | Marian University | unit/identity: partial; doctoral branch scope |
-| 104 | Memorial University of Newfoundland | doctoral branch scope |
-| 105 | Minnesota State University | unit/identity: partial; doctoral branch scope |
-| 106 | Morgan State University | doctoral branch scope |
-| 107 | National Yang Ming Chiao Tung University | unit/identity: partial; doctoral branch scope |
-| 108 | Nazarbayev University | doctoral branch scope |
-| 109 | NEOMA Business School | doctoral branch scope |
-| 110 | New Uzbekistan University | doctoral branch scope |
-| 111 | New York University Abu Dhabi | doctoral branch scope |
-| 112 | New York University Shanghai | doctoral branch scope |
-| 113 | Northeastern University | doctoral branch scope |
-| 114 | Northern Illinois University | doctoral branch scope |
-| 115 | Northern State University | unit/identity: partial |
-| 116 | NOVA University Lisbon | doctoral branch scope |
-| 117 | Oakland University | doctoral branch scope |
-| 118 | Oregon State University | doctoral branch scope |
-| 119 | Özyeğin University | doctoral branch scope |
-| 120 | Palm Beach Atlantic University | unit/identity: partial |
-| 121 | Peking University | unit/identity: partial; doctoral branch scope |
-| 122 | Penn State Erie, The Behrend College | doctoral branch scope |
-| 123 | Pompeu Fabra University | doctoral branch scope |
-| 124 | Pontificia Universidad Católica de Chile | doctoral branch scope |
-| 125 | Prince Mohammad Bin Fahd University | doctoral branch scope |
-| 126 | Qatar University | doctoral branch scope |
-| 127 | Queen's University | unit/identity: partial |
-| 128 | Quincy University | doctoral branch scope |
-| 129 | Rochester Institute of Technology | doctoral branch scope |
-| 130 | Rowan University | doctoral branch scope |
-| 131 | Sacred Heart University | unit/identity: pending; doctoral branch scope |
-| 132 | Saint Louis University | doctoral branch scope |
-| 133 | Saint Mary’s College of California | unit/identity: partial; doctoral branch scope |
-| 134 | Sam Houston State University | doctoral branch scope |
-| 135 | San Diego State University | doctoral branch scope |
-| 136 | San Francisco State University | doctoral branch scope |
-| 137 | San José State University | unit/identity: partial |
-| 138 | Santa Clara University | doctoral branch scope |
-| 139 | Savannah State University | doctoral branch scope |
-| 140 | Shandong University of Finance and Economics | unit/identity: blocked; doctoral branch scope |
-| 141 | Shanghai Jiao Tong University | unit/identity: partial; doctoral branch scope |
-| 142 | Shanghai University of Finance and Economics | unit/identity: partial; doctoral branch scope |
-| 143 | Singapore Management University | unit/identity: partial |
-| 144 | SKEMA Business School | doctoral branch scope |
-| 145 | Skolkovo Institute of Science and Technology | unit/identity: partial; doctoral branch scope |
-| 146 | Sogang University | unit/identity: partial; doctoral branch scope |
-| 147 | Southern Methodist University | unit/identity: partial |
-| 148 | Southern University of Science and Technology | doctoral branch scope |
-| 149 | Southwest Minnesota State University | unit/identity: partial |
-| 150 | Spartanburg Methodist College | unit/identity: partial |
-| 151 | SRM Institute of Science and Technology | unit/identity: partial; doctoral branch scope |
-| 152 | St. John's University | unit/identity: partial |
-| 153 | St.Gallen Institute of Management in Asia | unit/identity: partial; doctoral branch scope |
-| 154 | Stevens Institute of Technology | unit/identity: partial |
-| 155 | Stonehill College | unit/identity: partial |
-| 156 | Stony Brook University | unit/identity: partial |
-| 157 | Sungkyunkwan University | doctoral branch scope |
-| 158 | SUNY Geneseo | unit/identity: partial |
-| 159 | SUNY Korea | unit/identity: pending; doctoral branch scope |
-| 160 | Taejae University | unit/identity: pending; doctoral branch scope |
-| 161 | TBS Education | doctoral branch scope |
-| 162 | Technical University of Munich | unit/identity: partial; doctoral branch scope |
-| 163 | Technische Hochschule Aschaffenburg | doctoral branch scope |
-| 164 | Tecnológico de Monterrey | unit/identity: partial; doctoral branch scope |
-| 165 | TED University | unit/identity: partial; doctoral branch scope |
-| 166 | Tennessee Tech University | unit/identity: partial; doctoral branch scope |
-| 167 | Tennessee Wesleyan University | unit/identity: partial; doctoral branch scope |
-| 168 | Texas A&M University-Corpus Christi | unit/identity: pending; doctoral branch scope |
-| 169 | Texas Southern University | unit/identity: partial |
-| 170 | Texas State University | unit/identity: partial; doctoral branch scope |
-| 171 | The Catholic University of America | unit/identity: partial; doctoral branch scope |
-| 172 | The Chinese University of Hong Kong | unit/identity: partial |
-| 173 | The Chinese University of Hong Kong, Shenzhen | unit/identity: partial; doctoral branch scope |
-| 174 | The City University of New York | unit/identity: partial; doctoral branch scope |
-| 175 | The College of New Jersey | unit/identity: partial; doctoral branch scope |
-| 176 | The George Washington University | unit/identity: partial; doctoral branch scope |
-| 177 | The Hebrew University of Jerusalem | unit/identity: blocked; doctoral branch scope |
-| 178 | The Hong Kong University of Science and Technology | unit/identity: partial |
-| 179 | The Hong Kong University of Science and Technology (Guangzhou) | unit/identity: partial; doctoral branch scope |
-| 180 | The University of Alabama at Birmingham | doctoral branch scope |
-| 181 | The University of British Columbia | unit/identity: partial; doctoral branch scope |
-| 182 | The University of Manchester | unit/identity: partial; doctoral branch scope |
-| 183 | The University of Melbourne | doctoral branch scope |
-| 184 | The University of Memphis | unit/identity: partial; doctoral branch scope |
-| 185 | The University of New Mexico | doctoral branch scope |
-| 186 | The University of North Carolina at Charlotte | doctoral branch scope |
-| 187 | The University of Oklahoma | doctoral branch scope |
-| 188 | The University of Queensland | doctoral branch scope |
-| 189 | The University of Sydney | unit/identity: partial; doctoral branch scope |
-| 190 | The University of Tennessee, Knoxville | doctoral branch scope |
-| 191 | The University of Texas at Arlington | unit/identity: partial |
-| 192 | The University of Texas at Dallas | unit/identity: partial |
-| 193 | The University of Texas at El Paso | doctoral branch scope |
-| 194 | The University of Texas at San Antonio | doctoral branch scope |
-| 195 | Tilburg University | unit/identity: partial |
-| 196 | TOBB Economics and Technology University | doctoral branch scope |
-| 197 | Tongji University | doctoral branch scope |
-| 198 | Tsinghua University | doctoral branch scope |
-| 199 | Tusculum University | unit/identity: partial; doctoral branch scope |
-| 200 | Universidad Adolfo Ibáñez | unit/identity: partial; doctoral branch scope |
-| 201 | Universidad de los Andes | doctoral branch scope |
-| 202 | Universidad Torcuato Di Tella | doctoral branch scope |
-| 203 | Universidade Católica Portuguesa | doctoral branch scope |
-| 204 | Universität des Saarlandes | doctoral branch scope |
-| 205 | Universitat Pompeu Fabra | unit/identity: partial; doctoral branch scope |
-| 206 | Université catholique de Louvain | doctoral branch scope |
-| 207 | Université libre de Bruxelles | unit/identity: partial; doctoral branch scope |
-| 208 | Université Mohammed VI Polytechnique | unit/identity: pending; doctoral branch scope |
-| 209 | University College Dublin | doctoral branch scope |
-| 210 | University College London | doctoral branch scope |
-| 211 | University of Alaska Fairbanks | doctoral branch scope |
-| 212 | University of Alberta | doctoral branch scope |
-| 213 | University of Bristol | doctoral branch scope |
-| 214 | University of Calgary | doctoral branch scope |
-| 215 | University of California, Davis | doctoral branch scope |
-| 216 | University of Cambridge | unit/identity: partial |
-| 217 | University of Central Arkansas | doctoral branch scope |
-| 218 | University of Central Florida | doctoral branch scope |
-| 219 | University of Colorado Denver | doctoral branch scope |
-| 220 | University of Cyprus | doctoral branch scope |
-| 221 | University of Dayton | doctoral branch scope |
-| 222 | University of Houston | doctoral branch scope |
-| 223 | University of Hull | doctoral branch scope |
-| 224 | University of Illinois Urbana-Champaign | doctoral branch scope |
-| 225 | University of Kentucky | doctoral branch scope |
-| 226 | University of Leeds | doctoral branch scope |
-| 227 | University of London | unit/identity: partial |
-| 228 | University of Macau | doctoral branch scope |
-| 229 | University of Mannheim | doctoral branch scope |
-| 230 | University of Maryland | unit/identity: partial; doctoral branch scope |
-| 231 | University of Missouri | doctoral branch scope |
-| 232 | University of Navarra | unit/identity: partial |
-| 233 | University of Nevada, Las Vegas | doctoral branch scope |
-| 234 | University of Nevada, Reno | doctoral branch scope |
-| 235 | University of New Hampshire | unit/identity: pending; doctoral branch scope |
-| 236 | University of New Haven | unit/identity: partial |
-| 237 | University of New South Wales | doctoral branch scope |
-| 238 | University of Notre Dame | doctoral branch scope |
-| 239 | University of Oxford | doctoral branch scope |
-| 240 | University of Puget Sound | unit/identity: partial |
-| 241 | University of Science and Technology of China | doctoral branch scope |
-| 242 | University of Southern Denmark | doctoral branch scope |
-| 243 | University of Stirling | unit/identity: partial |
-| 244 | University of the Virgin Islands | unit/identity: partial |
-| 245 | University of Toronto | unit/identity: partial |
-| 246 | University of Toronto Mississauga | doctoral branch scope |
-| 247 | University of Toronto Scarborough | doctoral branch scope |
-| 248 | University of Vienna | unit/identity: partial; doctoral branch scope |
-| 249 | University of Virginia | unit/identity: partial; doctoral branch scope |
-| 250 | University of Waikato | unit/identity: partial; doctoral branch scope |
-| 251 | University of Warwick | unit/identity: partial; doctoral branch scope |
-| 252 | University of Washington Tacoma | unit/identity: partial |
-| 253 | University of Windsor | unit/identity: pending; doctoral branch scope |
-| 254 | University of Zurich | doctoral branch scope |
-| 255 | Valley City State University | unit/identity: partial |
-| 256 | Valparaiso University | unit/identity: pending; doctoral branch scope |
-| 257 | Vanderbilt University | doctoral branch scope |
-| 258 | Vienna University of Economics and Business | doctoral branch scope |
-| 259 | Villanova University | unit/identity: partial; doctoral branch scope |
-| 260 | VinUniversity | doctoral branch scope |
-| 261 | Virginia Commonwealth University | doctoral branch scope |
-| 262 | Virginia Polytechnic Institute and State University | unit/identity: partial |
-| 263 | Vrije Universiteit Amsterdam | doctoral branch scope |
-| 264 | Wageningen University | doctoral branch scope |
-| 265 | Wake Forest University | doctoral branch scope |
-| 266 | Wayne State University | doctoral branch scope |
-| 267 | West Virginia University | unit/identity: partial; doctoral branch scope |
-| 268 | Westfield State University | unit/identity: partial |
-| 269 | Wheaton College of Massachusetts | unit/identity: blocked; doctoral branch scope |
-| 270 | Wichita State University | doctoral branch scope |
-| 271 | William & Mary | doctoral branch scope |
-| 272 | Winona State University | unit/identity: partial |
-| 273 | Worcester Polytechnic Institute | doctoral branch scope |
-| 274 | Xi'an Jiaotong University | unit/identity: partial; doctoral branch scope |
-| 275 | Xi'an Jiaotong-Liverpool University | doctoral branch scope |
-| 276 | York University | doctoral branch scope |
-| 277 | Zhejiang University | unit/identity: partial; doctoral branch scope |
+| 3 | American University of Beirut | doctoral branch scope |
+| 4 | Beijing Normal-Hong Kong Baptist University | doctoral branch scope |
+| 5 | Bielefeld University | doctoral branch scope |
+| 6 | Binghamton University | doctoral branch scope |
+| 7 | Birla Institute of Technology & Science, Pilani | doctoral branch scope |
+| 8 | Bocconi University | doctoral branch scope |
+| 9 | Boise State University | unit/identity: partial |
+| 10 | Brandeis University | doctoral branch scope |
+| 11 | Brigham Young University | doctoral branch scope |
+| 12 | California State University, Long Beach | doctoral branch scope |
+| 13 | Campbellsville University | doctoral branch scope |
+| 14 | Canadian University Dubai | unit/identity: partial |
+| 15 | Chalmers University of Technology | doctoral branch scope |
+| 16 | China Europe International Business School | doctoral branch scope |
+| 17 | City St George's, University of London | doctoral branch scope |
+| 18 | City University of Hong Kong | doctoral branch scope |
+| 19 | Clarkson University | doctoral branch scope |
+| 20 | College of Charleston | doctoral branch scope |
+| 21 | College of Staten Island | doctoral branch scope |
+| 22 | Colorado School of Mines | unit/identity: partial; doctoral branch scope |
+| 23 | Colorado State University | doctoral branch scope |
+| 24 | Columbia University | unit/identity: partial |
+| 25 | Concordia University | doctoral branch scope |
+| 26 | Cranfield University | doctoral branch scope |
+| 27 | Dakota State University | doctoral branch scope |
+| 28 | Dartmouth College | doctoral branch scope |
+| 29 | DePauw University | doctoral branch scope |
+| 30 | DeSales University | doctoral branch scope |
+| 31 | Dongbei University of Finance and Economics | doctoral branch scope |
+| 32 | Donghua University | doctoral branch scope |
+| 33 | Drexel University | doctoral branch scope |
+| 34 | Durham University | doctoral branch scope |
+| 35 | East Tennessee State University | doctoral branch scope |
+| 36 | East Texas A&M University | unit/identity: partial |
+| 37 | Eastern Illinois University | doctoral branch scope |
+| 38 | Eastern New Mexico University | doctoral branch scope |
+| 39 | EBS Universität | unit/identity: partial |
+| 40 | École de Management Léonard de Vinci | unit/identity: partial; doctoral branch scope |
+| 41 | École polytechnique fédérale de Lausanne | unit/identity: partial; doctoral branch scope |
+| 42 | Eindhoven University of Technology | unit/identity: partial; doctoral branch scope |
+| 43 | Emory University | unit/identity: partial |
+| 44 | Erasmus University Rotterdam | unit/identity: partial; doctoral branch scope; programme title/host adjudication |
+| 45 | ESMT Berlin | doctoral branch scope |
+| 46 | ETH Zurich | unit/identity: partial; doctoral branch scope |
+| 47 | Ewha Womans University | unit/identity: partial; doctoral branch scope; programme title/host adjudication |
+| 48 | Ferris State University | unit/identity: partial |
+| 49 | Fisher College | unit/identity: partial; doctoral branch scope |
+| 50 | Florida International University | unit/identity: partial |
+| 51 | Florida Polytechnic University | unit/identity: partial |
+| 52 | Florida State University | unit/identity: partial; doctoral branch scope |
+| 53 | Frankfurt School of Finance & Management | unit/identity: partial; doctoral branch scope |
+| 54 | Franklin & Marshall College | unit/identity: partial |
+| 55 | Fundação Getulio Vargas | unit/identity: partial; doctoral branch scope |
+| 56 | George Mason University | doctoral branch scope |
+| 57 | Georgia Southern University | unit/identity: partial; doctoral branch scope |
+| 58 | Georgia State University | unit/identity: partial; doctoral branch scope |
+| 59 | Ghent University | doctoral branch scope |
+| 60 | Hainan Bielefeld University of Applied Sciences | doctoral branch scope |
+| 61 | Hamad Bin Khalifa University | unit/identity: partial; programme title/host adjudication |
+| 62 | Harris-Stowe State University | doctoral branch scope |
+| 63 | Harvard University | unit/identity: partial |
+| 64 | HEC Montréal | unit/identity: partial |
+| 65 | HEC Paris | unit/identity: partial |
+| 66 | Houston Christian University | unit/identity: partial |
+| 67 | Howard University | unit/identity: partial |
+| 68 | Idaho State University | doctoral branch scope |
+| 69 | IE University | unit/identity: partial |
+| 70 | IÉSEG School of Management | doctoral branch scope |
+| 71 | Imperial College London | unit/identity: partial; doctoral branch scope |
+| 72 | Indian Institute of Management Ahmedabad | doctoral branch scope |
+| 73 | Indian Institute of Technology Bombay | unit/identity: partial; doctoral branch scope |
+| 74 | Indian School of Business | unit/identity: partial |
+| 75 | Indiana State University | unit/identity: partial |
+| 76 | Indiana University (Kelley) | unit/identity: partial; doctoral branch scope |
+| 77 | INSEAD | unit/identity: partial |
+| 78 | Institut Mines-Télécom | unit/identity: partial; doctoral branch scope |
+| 79 | International University of Rabat | unit/identity: partial; doctoral branch scope |
+| 80 | Iowa State University of Science and Technology | unit/identity: partial; doctoral branch scope |
+| 81 | IPADE Business School | unit/identity: partial |
+| 82 | IT University of Copenhagen | unit/identity: partial; doctoral branch scope |
+| 83 | James Madison University | unit/identity: partial |
+| 84 | Johns Hopkins University | doctoral branch scope |
+| 85 | Johnson & Wales University | unit/identity: partial |
+| 86 | Karlsruhe Institute of Technology | unit/identity: partial; doctoral branch scope; programme title/host adjudication |
+| 87 | Kazakh-American Free University | unit/identity: partial; doctoral branch scope |
+| 88 | Kean University | unit/identity: partial |
+| 89 | KEDGE Business School | programme title/host adjudication |
+| 90 | KIMEP University | unit/identity: partial; doctoral branch scope |
+| 91 | KNUST | unit/identity: blocked; doctoral branch scope |
+| 92 | Koç University | programme title/host adjudication |
+| 93 | Korea Advanced Institute of Science and Technology | unit/identity: partial; doctoral branch scope |
+| 94 | Korea University | doctoral branch scope |
+| 95 | Lone Star College System | unit/identity: partial |
+| 96 | Louisiana Tech University | doctoral branch scope |
+| 97 | Maastricht University | doctoral branch scope |
+| 98 | Marian University | unit/identity: partial; doctoral branch scope |
+| 99 | Memorial University of Newfoundland | doctoral branch scope |
+| 100 | Minnesota State University | unit/identity: partial; doctoral branch scope |
+| 101 | Morgan State University | doctoral branch scope |
+| 102 | National Yang Ming Chiao Tung University | unit/identity: partial; doctoral branch scope |
+| 103 | Nazarbayev University | doctoral branch scope |
+| 104 | NEOMA Business School | doctoral branch scope |
+| 105 | New Uzbekistan University | doctoral branch scope |
+| 106 | New York University Abu Dhabi | doctoral branch scope |
+| 107 | New York University Shanghai | doctoral branch scope |
+| 108 | Northeastern University | doctoral branch scope |
+| 109 | Northern Illinois University | doctoral branch scope |
+| 110 | Northern State University | unit/identity: partial |
+| 111 | NOVA University Lisbon | doctoral branch scope |
+| 112 | Oakland University | doctoral branch scope |
+| 113 | Oregon State University | doctoral branch scope |
+| 114 | Özyeğin University | doctoral branch scope |
+| 115 | Palm Beach Atlantic University | unit/identity: partial |
+| 116 | Peking University | unit/identity: partial; doctoral branch scope |
+| 117 | Penn State Erie, The Behrend College | doctoral branch scope |
+| 118 | Pompeu Fabra University | doctoral branch scope |
+| 119 | Pontificia Universidad Católica de Chile | doctoral branch scope |
+| 120 | Prince Mohammad Bin Fahd University | doctoral branch scope |
+| 121 | Qatar University | doctoral branch scope |
+| 122 | Queen's University | unit/identity: partial |
+| 123 | Quincy University | doctoral branch scope |
+| 124 | Rochester Institute of Technology | doctoral branch scope |
+| 125 | Rowan University | doctoral branch scope |
+| 126 | Saint Louis University | doctoral branch scope |
+| 127 | Saint Mary’s College of California | unit/identity: partial; doctoral branch scope |
+| 128 | Sam Houston State University | doctoral branch scope |
+| 129 | San Diego State University | doctoral branch scope |
+| 130 | San Francisco State University | doctoral branch scope |
+| 131 | San José State University | unit/identity: partial |
+| 132 | Santa Clara University | doctoral branch scope |
+| 133 | Savannah State University | doctoral branch scope |
+| 134 | Shandong University of Finance and Economics | unit/identity: blocked; doctoral branch scope |
+| 135 | Shanghai Jiao Tong University | unit/identity: partial; doctoral branch scope |
+| 136 | Shanghai University of Finance and Economics | unit/identity: partial; doctoral branch scope |
+| 137 | Singapore Management University | unit/identity: partial |
+| 138 | SKEMA Business School | doctoral branch scope |
+| 139 | Skolkovo Institute of Science and Technology | unit/identity: partial; doctoral branch scope |
+| 140 | Sogang University | unit/identity: partial; doctoral branch scope |
+| 141 | Southern Methodist University | unit/identity: partial |
+| 142 | Southern University of Science and Technology | doctoral branch scope |
+| 143 | Southwest Minnesota State University | unit/identity: partial |
+| 144 | Spartanburg Methodist College | unit/identity: partial |
+| 145 | SRM Institute of Science and Technology | unit/identity: partial; doctoral branch scope |
+| 146 | St. John's University | unit/identity: partial |
+| 147 | St.Gallen Institute of Management in Asia | unit/identity: partial; doctoral branch scope |
+| 148 | Stevens Institute of Technology | unit/identity: partial |
+| 149 | Stonehill College | unit/identity: partial |
+| 150 | Stony Brook University | unit/identity: partial |
+| 151 | Sungkyunkwan University | doctoral branch scope |
+| 152 | SUNY Geneseo | unit/identity: partial |
+| 153 | SUNY Korea | unit/identity: partial; doctoral branch scope |
+| 154 | TBS Education | doctoral branch scope |
+| 155 | Technical University of Munich | unit/identity: partial; doctoral branch scope |
+| 156 | Technische Hochschule Aschaffenburg | doctoral branch scope |
+| 157 | Tecnológico de Monterrey | unit/identity: partial; doctoral branch scope |
+| 158 | TED University | unit/identity: partial; doctoral branch scope |
+| 159 | Tel Aviv University | programme title/host adjudication |
+| 160 | Tennessee Tech University | unit/identity: partial; doctoral branch scope |
+| 161 | Tennessee Wesleyan University | unit/identity: partial; doctoral branch scope |
+| 162 | Texas Southern University | unit/identity: partial |
+| 163 | Texas State University | unit/identity: partial; doctoral branch scope |
+| 164 | The Catholic University of America | unit/identity: partial; doctoral branch scope |
+| 165 | The Chinese University of Hong Kong | unit/identity: partial |
+| 166 | The Chinese University of Hong Kong, Shenzhen | unit/identity: partial; doctoral branch scope |
+| 167 | The City University of New York | unit/identity: partial; doctoral branch scope |
+| 168 | The College of New Jersey | unit/identity: partial; doctoral branch scope |
+| 169 | The George Washington University | unit/identity: partial; doctoral branch scope |
+| 170 | The Hebrew University of Jerusalem | unit/identity: blocked; doctoral branch scope |
+| 171 | The Hong Kong University of Science and Technology | unit/identity: partial |
+| 172 | The Hong Kong University of Science and Technology (Guangzhou) | unit/identity: partial; doctoral branch scope |
+| 173 | The University of British Columbia | unit/identity: partial; doctoral branch scope |
+| 174 | The University of Manchester | unit/identity: partial; doctoral branch scope |
+| 175 | The University of Melbourne | doctoral branch scope |
+| 176 | The University of Memphis | unit/identity: partial; doctoral branch scope |
+| 177 | The University of New Mexico | doctoral branch scope |
+| 178 | The University of North Carolina at Charlotte | doctoral branch scope |
+| 179 | The University of Oklahoma | doctoral branch scope |
+| 180 | The University of Queensland | doctoral branch scope |
+| 181 | The University of Sydney | unit/identity: partial; doctoral branch scope |
+| 182 | The University of Tennessee, Knoxville | doctoral branch scope |
+| 183 | The University of Texas at Arlington | unit/identity: partial |
+| 184 | The University of Texas at Dallas | unit/identity: partial |
+| 185 | The University of Texas at El Paso | doctoral branch scope |
+| 186 | The University of Texas at San Antonio | doctoral branch scope |
+| 187 | Tilburg University | unit/identity: partial |
+| 188 | TOBB Economics and Technology University | doctoral branch scope |
+| 189 | Tongji University | doctoral branch scope |
+| 190 | Tsinghua University | doctoral branch scope |
+| 191 | Tusculum University | unit/identity: partial; doctoral branch scope |
+| 192 | Universidad Adolfo Ibáñez | unit/identity: partial; doctoral branch scope |
+| 193 | Universidad de los Andes | doctoral branch scope |
+| 194 | Universidad Torcuato Di Tella | doctoral branch scope |
+| 195 | Universidade Católica Portuguesa | doctoral branch scope |
+| 196 | Universidade Católica Portuguesa | programme title/host adjudication |
+| 197 | Universität des Saarlandes | doctoral branch scope |
+| 198 | Universitat Pompeu Fabra | unit/identity: partial; doctoral branch scope |
+| 199 | Université catholique de Louvain | doctoral branch scope |
+| 200 | Université libre de Bruxelles | unit/identity: partial; doctoral branch scope; programme title/host adjudication |
+| 201 | Université Mohammed VI Polytechnique | unit/identity: pending; doctoral branch scope |
+| 202 | University College Dublin | doctoral branch scope |
+| 203 | University College London | doctoral branch scope |
+| 204 | University of Alberta | doctoral branch scope |
+| 205 | University of Bath | programme title/host adjudication |
+| 206 | University of Bristol | doctoral branch scope |
+| 207 | University of California, Davis | doctoral branch scope |
+| 208 | University of Cambridge | unit/identity: partial |
+| 209 | University of Central Arkansas | doctoral branch scope |
+| 210 | University of Central Florida | doctoral branch scope |
+| 211 | University of Cyprus | doctoral branch scope |
+| 212 | University of Houston | doctoral branch scope |
+| 213 | University of Hull | doctoral branch scope |
+| 214 | University of Illinois Urbana-Champaign | doctoral branch scope |
+| 215 | University of Leeds | doctoral branch scope |
+| 216 | University of London | unit/identity: partial |
+| 217 | University of Macau | doctoral branch scope |
+| 218 | University of Mannheim | doctoral branch scope |
+| 219 | University of Maryland | unit/identity: partial; doctoral branch scope |
+| 220 | University of Missouri | doctoral branch scope |
+| 221 | University of Navarra | unit/identity: partial |
+| 222 | University of Nevada, Las Vegas | doctoral branch scope |
+| 223 | University of New Hampshire | doctoral branch scope |
+| 224 | University of New Haven | unit/identity: partial |
+| 225 | University of New South Wales | doctoral branch scope |
+| 226 | University of Notre Dame | doctoral branch scope |
+| 227 | University of Oxford | doctoral branch scope |
+| 228 | University of Puget Sound | unit/identity: partial |
+| 229 | University of Science and Technology of China | doctoral branch scope |
+| 230 | University of Southern Denmark | doctoral branch scope |
+| 231 | University of Stirling | unit/identity: partial |
+| 232 | University of Tennessee at Chattanooga | programme title/host adjudication |
+| 233 | University of the Virgin Islands | unit/identity: partial |
+| 234 | University of Toronto | unit/identity: partial |
+| 235 | University of Toronto Mississauga | doctoral branch scope |
+| 236 | University of Toronto Scarborough | doctoral branch scope |
+| 237 | University of Vienna | unit/identity: partial; doctoral branch scope |
+| 238 | University of Virginia | unit/identity: partial; doctoral branch scope |
+| 239 | University of Waikato | unit/identity: partial; doctoral branch scope |
+| 240 | University of Warwick | unit/identity: partial; doctoral branch scope |
+| 241 | University of Washington Tacoma | unit/identity: partial |
+| 242 | University of Windsor | unit/identity: pending; doctoral branch scope |
+| 243 | University of Zurich | doctoral branch scope |
+| 244 | Valley City State University | unit/identity: partial |
+| 245 | Vanderbilt University | doctoral branch scope |
+| 246 | Vienna University of Economics and Business | doctoral branch scope |
+| 247 | Villanova University | unit/identity: partial; doctoral branch scope |
+| 248 | VinUniversity | doctoral branch scope |
+| 249 | Virginia Commonwealth University | doctoral branch scope |
+| 250 | Virginia Polytechnic Institute and State University | unit/identity: partial |
+| 251 | Vrije Universiteit Amsterdam | doctoral branch scope |
+| 252 | Wageningen University | doctoral branch scope |
+| 253 | Wake Forest University | doctoral branch scope |
+| 254 | Wayne State University | doctoral branch scope |
+| 255 | West Virginia University | unit/identity: partial; doctoral branch scope |
+| 256 | Westfield State University | unit/identity: partial |
+| 257 | Wheaton College of Massachusetts | unit/identity: blocked; doctoral branch scope |
+| 258 | Wichita State University | doctoral branch scope |
+| 259 | William & Mary | doctoral branch scope |
+| 260 | Winona State University | unit/identity: partial |
+| 261 | Worcester Polytechnic Institute | doctoral branch scope |
+| 262 | Xi'an Jiaotong University | unit/identity: partial; doctoral branch scope |
+| 263 | Xi'an Jiaotong-Liverpool University | doctoral branch scope |
+| 264 | York University | doctoral branch scope |
+| 265 | Zhejiang University | unit/identity: partial; doctoral branch scope |
 
 ## OM List reported PhD institutions without an accepted source-record match
 

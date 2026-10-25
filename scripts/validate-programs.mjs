@@ -13,7 +13,7 @@ export function validatePrograms(data){
   for(const s of p.sources)if(!s.id||!isSourceUrl(s.url)||!s.title||!date(s.lastCheckedAt))throw Error(`Invalid program source: ${p.id}`);
   if(p.titleScopeReview){
    const r=p.titleScopeReview;
-   if(r.decision!=='excluded'||!date(r.assessedAt)||!r.reason||!r.sourceIds?.length||r.sourceIds.some(id=>!sources.has(id)))throw Error(`Invalid title-scope assessment: ${p.id}`);
+   if(!['excluded','pending'].includes(r.decision)||!date(r.assessedAt)||!r.reason||!r.sourceIds?.length||r.sourceIds.some(id=>!sources.has(id)))throw Error(`Invalid title-scope assessment: ${p.id}`);
   }
   for(const f of p.facts){
    if(!f.field||!f.evidenceNote||!date(f.lastCheckedAt)||!Array.isArray(f.sourceIds)||f.sourceIds.some(id=>!sources.has(id)))throw Error(`Invalid program fact: ${p.id}`);
