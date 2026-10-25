@@ -1,0 +1,9 @@
+import fs from 'node:fs';
+import assert from 'node:assert/strict';
+import {validatePrograms} from '../../../scripts/validate-programs.mjs';
+const file='data/doctoral-programs.json',d=JSON.parse(fs.readFileSync(file)),p=d.records.find(p=>p.id==='kth-royal-institute-of-technology--industrial-engineering-management-doctorate');
+assert(p&&p.degree==='Degree of Doctor');
+const sourceUrl='https://www.kth.se/polopoly_fs/1.1411779.1750684565%21/Doctoral%20programme%20Industrial%20engineering%20and%20management%20March%202019.pdf';assert(p.sources.some(s=>s.url===sourceUrl&&s.lastCheckedAt==='2026-10-25'));
+const evidence={sourceUrl,checkedAt:'2026-10-25',evidence:'Official Industrial Engineering and Management syllabus: Degree of Doctor requires240credits, independent original research and a doctoral thesis with new theoretical/empirical results, peer-reviewable work and public defence (PDFpp.2,5–7,10). This establishes an academic research doctorate; exact Degree of Doctor wording retained, not changed to PhD.2019syllabus currency caveat retained alongside current doctoral-subject listing.'};
+const audit={programmeId:p.id,assessmentDate:'2026-10-25',priorEligibility:p.phdEligibility,eligibility:'verified-research-doctorate',evidence,method:'Integrator opened original official PDF and read subject,award,thesis/research and public-defence requirements. Fact values,source checks and credential text remain unchanged.'};
+p.phdEligibility='verified-research-doctorate';p.researchDoctorateEvidence=evidence;validatePrograms(d);fs.writeFileSync('research-handoff/universities/continuation-220/kth-credential-audit.json',JSON.stringify(audit,null,2)+'\n');if(process.argv.includes('--apply'))fs.writeFileSync(file,JSON.stringify(d,null,2)+'\n');console.log({apply:process.argv.includes('--apply'),credentialText:p.degree,eligibility:p.phdEligibility});
