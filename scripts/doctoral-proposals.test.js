@@ -14,6 +14,8 @@ test('Stage 1 public title gate keeps named Ops and IE awards without promoting 
  assert(isNamedOperationsProgramme({programName:'PhD in Management',specialization:'Operations Management',unitIds:[]},hosts));
  assert(isNamedOperationsProgramme({programName:'PhD in Management',unitIds:['operations']},hosts));
  assert(hasNamedOperationsScope('School of Industrial and Systems Engineering'));
+ assert(hasNamedOperationsScope('Industrial and Management Engineering'));
+ assert(!hasNamedOperationsScope('Management Engineering'));
  assert(!isNamedOperationsProgramme({programName:'PhD in Mechanical Engineering',unitIds:['mechanical']},hosts));
  assert(!hasNamedOperationsScope('Department of Mechanical Engineering'));
  assert(!hasNamedOperationsScope('PhD in Systems Engineering'));

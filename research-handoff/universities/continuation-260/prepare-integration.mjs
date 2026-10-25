@@ -1,0 +1,17 @@
+import fs from 'node:fs';
+import crypto from 'node:crypto';
+import {execFileSync} from 'node:child_process';
+const dir='research-handoff/universities/continuation-260',root='research-handoff/universities/',read=p=>JSON.parse(fs.readFileSync(p));
+const specs=[['sapienza-universita-di-roma',190],['university-of-bergamo',191],['university-of-augsburg',192],['university-of-vaasa',193],['university-of-regensburg',194],['university-of-sfax',196],['university-of-trento',197],['university-of-sao-paulo',198]];
+const path=(n,id,suffix)=>root+`continuation-${n}/shard-a/${id}.${suffix}.json`;
+const sources=specs.map(([id,n])=>path(n,id,'source-addition'));
+const extra=(lane,s)=>{const[n,f]=s.split('/');return root+`continuation-${n}/shard-${lane}/${f}.json`;};
+const unitInputs=specs.map(([id,n])=>path(id==='university-of-sao-paulo'?201:n,id,'unit')).concat(['227/hebrew-current-unit-scope','229/national-chiao-tung-university-saved-inventory-unit','229/sogang-university-saved-inventory-unit','230/sjtu-known-department-title-unit','231/tcnj-saved-current-unit-scope','232/catholic-saved-current-unit-scope'].map(s=>extra('b',s)));
+const programmes=specs.map(([id,n])=>path(id==='university-of-sao-paulo'?201:n,id,'doctoral')).concat(['197/virginia-commonwealth-university.doctoral','199/university-of-notre-dame.doctoral'].map(s=>extra('c',s)));
+const scopes=['198/vinuniversity.doctoral-scope-composite','200/university-of-nevada-las-vegas.doctoral-scope-composite'].map(s=>extra('c',s)).concat(extra('b','228/hebrew-current-composite-doctoral-scope'));
+const m={baseCommit:execFileSync('git',['rev-parse','HEAD'],{encoding:'utf8'}).trim(),sources,unitInputs,programmes,scopes};
+m.frozenInputs=[...new Set([...sources,...sources.map(p=>read(p).sourceCatalogue),...unitInputs,...programmes,...scopes])].map(path=>({path,sha256:crypto.createHash('sha256').update(fs.readFileSync(path)).digest('hex')}));
+fs.writeFileSync(dir+'/integration-manifest.json',JSON.stringify(m,null,2)+'\n');
+fs.writeFileSync(dir+'/apply-phase.mjs',fs.readFileSync(root+'continuation-250/apply-phase.mjs','utf8').replaceAll('continuation-250','continuation-260'));
+fs.writeFileSync(dir+'/audit-cut.mjs',fs.readFileSync(root+'continuation-250/audit-cut.mjs','utf8').replaceAll('continuation-250','continuation-260').replaceAll('a2899a0:','1f9afd6:'));
+console.log({sources:sources.length,units:unitInputs.length,programmes:programmes.length,scopes:scopes.length});

@@ -14,14 +14,14 @@
   "definition": "One record per organisation that appears in either database or the program register: the universities with operations departments (Operations Academia directory), the PhD institutions and first employers of the people in the OM List import, and the registered doctoral programs. Keyed by Wikidata item when known, otherwise by name. Parts that a source does not supply are null; nothing is inferred across sources. Where two source rows land on one entity, both rows stay listed under it and their figures are added.",
   "counts": {
    "entities": 1024,
-   "withWikidata": 910,
+   "withWikidata": 909,
    "phdInstitutions": 434,
-   "directoryUniversities": 699,
+   "directoryUniversities": 707,
    "firstEmployers": 493,
-   "withPrograms": 317,
-   "inBothDatabases": 301,
+   "withPrograms": 323,
+   "inBothDatabases": 308,
    "directoryOnly": 328,
-   "peopleOnly": 133,
+   "peopleOnly": 126,
    "conflicts": 0
   }
  },
@@ -25283,7 +25283,8 @@
    "roles": [
     "phd-institution",
     "directory-university",
-    "first-employer"
+    "first-employer",
+    "program-register"
    ],
    "people": {
     "institutions": [
@@ -25486,7 +25487,19 @@
      }
     ]
    },
-   "programs": [],
+   "programs": [
+    {
+     "id": "university-of-notre-dame--analytics-phd",
+     "programName": "Analytics",
+     "specialization": null,
+     "universityId": "university-of-notre-dame",
+     "school": "Mendoza College of Business",
+     "degree": "Doctor of Philosophy",
+     "field": "Operations Management",
+     "status": "active",
+     "statusAsOf": "2026-10-25"
+    }
+   ],
    "sources": [
     {
      "url": "https://omlist.edutool.org/phd/by-year.html",
@@ -25507,6 +25520,10 @@
     {
      "url": "data/placements.json",
      "title": "Verified first-job records (people database)"
+    },
+    {
+     "url": "data/doctoral-programs.json",
+     "title": "Historical doctoral program register"
     }
    ],
    "review": {
@@ -25540,12 +25557,17 @@
       "source": "employers",
       "employer": "University of Notre Dame (Mendoza College of Business, Department of IT, Analytics, and Operations)",
       "match": "wikidata"
+     },
+     {
+      "source": "programs",
+      "program": "university-of-notre-dame--analytics-phd",
+      "match": "exact"
      }
     ],
     "conflicts": []
    },
    "addedAt": "2026-10-16T13:49:36Z",
-   "updatedAt": "2026-10-20T08:28:39Z"
+   "updatedAt": "2026-10-25T21:10:29Z"
   },
   {
    "id": "wd:Q193727",
@@ -50302,6 +50324,147 @@
    "updatedAt": "2026-10-25T19:22:01Z"
   },
   {
+   "id": "wd:Q209344",
+   "wikidata": "Q209344",
+   "name": "Sapienza University of Rome",
+   "aliases": [
+    "Sapienza University of Rome",
+    "Sapienza Università di Roma"
+   ],
+   "country": "Italy",
+   "coords": [
+    41.903,
+    12.516
+   ],
+   "logo": "assets/logos/Q209344.png",
+   "roles": [
+    "phd-institution",
+    "directory-university",
+    "program-register"
+   ],
+   "people": {
+    "institutions": [
+     {
+      "institutionId": "sapienza-universita-di-roma",
+      "name": "Sapienza Università di Roma",
+      "spellings": [
+       "Sapienza Università di Roma"
+      ],
+      "people": 2,
+      "verifiedFirstJobs": 0
+     }
+    ],
+    "people": 2,
+    "verifiedFirstJobs": 0,
+    "unresolved": 2,
+    "pending": 0,
+    "notYetCompleted": 0,
+    "firstYear": 2003,
+    "lastYear": 2003,
+    "firstJobTypes": {
+     "tenure-track": 0,
+     "postdoc": 0,
+     "teaching-track": 0,
+     "other-academic": 0,
+     "industry": 0,
+     "government": 0,
+     "nonprofit": 0,
+     "unknown": 0
+    },
+    "topFirstEmployers": []
+   },
+   "directory": {
+    "universities": [
+     {
+      "id": "sapienza-universita-di-roma",
+      "name": "Sapienza Università di Roma",
+      "spellings": [
+       "Sapienza Università di Roma"
+      ],
+      "country": null,
+      "departmentCount": 1,
+      "match": "exact"
+     }
+    ],
+    "departments": [
+     {
+      "id": "sapienza-universita-di-roma--om-list-sapienza-universita-di-roma-reported-doctorate-one-profile-reported-phd-institution",
+      "university": "Sapienza Università di Roma",
+      "school": null,
+      "department": null,
+      "type": null,
+      "facultyUrl": null,
+      "departmentUrl": null
+     }
+    ]
+   },
+   "employer": null,
+   "programs": [
+    {
+     "id": "sapienza-universita-di-roma--automatic-control-bioengineering-operations-research-phd",
+     "programName": "Automatic Control, Bioengineering and Operations Research",
+     "specialization": null,
+     "universityId": "sapienza-universita-di-roma",
+     "school": "Scuola di dottorato in Scienza e tecnologia dell’informazione e delle comunicazioni",
+     "degree": "PhD",
+     "field": "Operations Research",
+     "status": "active",
+     "statusAsOf": "2026-10-25"
+    },
+    {
+     "id": "sapienza-universita-di-roma--industrial-management-engineering-phd",
+     "programName": "Industrial and Management Engineering",
+     "specialization": null,
+     "universityId": "sapienza-universita-di-roma",
+     "school": "Scuola di dottorato in Scienze e tecnologie per l’innovazione industriale",
+     "degree": "PhD",
+     "field": "Industrial Engineering",
+     "status": "active",
+     "statusAsOf": "2026-10-25"
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://omlist.edutool.org/phd/by-year.html",
+     "title": "OM List, PhD graduates by year (people database)"
+    },
+    {
+     "url": "https://www.wikidata.org/wiki/Q209344",
+     "title": "Wikidata item"
+    },
+    {
+     "url": "https://www.operationsacademia.org/universities",
+     "title": "Operations Academia universities directory (universities database)"
+    },
+    {
+     "url": "data/doctoral-programs.json",
+     "title": "Historical doctoral program register"
+    }
+   ],
+   "review": {
+    "matches": [
+     {
+      "source": "directory",
+      "university": "Sapienza Università di Roma",
+      "match": "exact"
+     },
+     {
+      "source": "programs",
+      "program": "sapienza-universita-di-roma--automatic-control-bioengineering-operations-research-phd",
+      "match": "exact"
+     },
+     {
+      "source": "programs",
+      "program": "sapienza-universita-di-roma--industrial-management-engineering-phd",
+      "match": "exact"
+     }
+    ],
+    "conflicts": []
+   },
+   "addedAt": "2026-10-16T13:49:36Z",
+   "updatedAt": "2026-10-25T21:10:29Z"
+  },
+  {
    "id": "wd:Q3551770",
    "wikidata": "Q3551770",
    "name": "Southeast University",
@@ -53785,74 +53948,6 @@
     },
     {
      "url": "https://www.wikidata.org/wiki/Q1640731",
-     "title": "Wikidata item"
-    }
-   ],
-   "review": {
-    "matches": [],
-    "conflicts": []
-   },
-   "addedAt": "2026-10-16T13:49:36Z",
-   "updatedAt": "2026-10-20T08:28:39Z"
-  },
-  {
-   "id": "wd:Q209344",
-   "wikidata": "Q209344",
-   "name": "Sapienza University of Rome",
-   "aliases": [
-    "Sapienza University of Rome",
-    "Sapienza Università di Roma"
-   ],
-   "country": "Italy",
-   "coords": [
-    41.903,
-    12.516
-   ],
-   "logo": "assets/logos/Q209344.png",
-   "roles": [
-    "phd-institution"
-   ],
-   "people": {
-    "institutions": [
-     {
-      "institutionId": "sapienza-universita-di-roma",
-      "name": "Sapienza Università di Roma",
-      "spellings": [
-       "Sapienza Università di Roma"
-      ],
-      "people": 2,
-      "verifiedFirstJobs": 0
-     }
-    ],
-    "people": 2,
-    "verifiedFirstJobs": 0,
-    "unresolved": 2,
-    "pending": 0,
-    "notYetCompleted": 0,
-    "firstYear": 2003,
-    "lastYear": 2003,
-    "firstJobTypes": {
-     "tenure-track": 0,
-     "postdoc": 0,
-     "teaching-track": 0,
-     "other-academic": 0,
-     "industry": 0,
-     "government": 0,
-     "nonprofit": 0,
-     "unknown": 0
-    },
-    "topFirstEmployers": []
-   },
-   "directory": null,
-   "employer": null,
-   "programs": [],
-   "sources": [
-    {
-     "url": "https://omlist.edutool.org/phd/by-year.html",
-     "title": "OM List, PhD graduates by year (people database)"
-    },
-    {
-     "url": "https://www.wikidata.org/wiki/Q209344",
      "title": "Wikidata item"
     }
    ],
@@ -57505,7 +57600,8 @@
    "roles": [
     "phd-institution",
     "directory-university",
-    "first-employer"
+    "first-employer",
+    "program-register"
    ],
    "people": {
     "institutions": [
@@ -57649,7 +57745,19 @@
      }
     ]
    },
-   "programs": [],
+   "programs": [
+    {
+     "id": "virginia-commonwealth-university--systems-modeling-analysis-phd-industrial-statistics-operations-research",
+     "programName": "Systems Modeling and Analysis",
+     "specialization": "Industrial statistics and operations research",
+     "universityId": "virginia-commonwealth-university",
+     "school": "College of Humanities and Sciences",
+     "degree": "Doctor of Philosophy (Ph.D.)",
+     "field": "Operations Research",
+     "status": "admissions-suspended",
+     "statusAsOf": "2026-10-25"
+    }
+   ],
    "sources": [
     {
      "url": "https://omlist.edutool.org/phd/by-year.html",
@@ -57670,6 +57778,10 @@
     {
      "url": "data/placements.json",
      "title": "Verified first-job records (people database)"
+    },
+    {
+     "url": "data/doctoral-programs.json",
+     "title": "Historical doctoral program register"
     }
    ],
    "review": {
@@ -57693,12 +57805,17 @@
       "source": "employers",
       "employer": "Virginia Commonwealth University (Statistical Sciences and Operations Research)",
       "match": "wikidata"
+     },
+     {
+      "source": "programs",
+      "program": "virginia-commonwealth-university--systems-modeling-analysis-phd-industrial-statistics-operations-research",
+      "match": "exact"
      }
     ],
     "conflicts": []
    },
    "addedAt": "2026-10-16T13:49:36Z",
-   "updatedAt": "2026-10-20T08:28:39Z"
+   "updatedAt": "2026-10-25T21:10:29Z"
   },
   {
    "id": "wd:Q863813",
@@ -66463,6 +66580,113 @@
    "updatedAt": "2026-10-25T20:58:16Z"
   },
   {
+   "id": "wd:Q45855",
+   "wikidata": "Q45855",
+   "name": "University of Bergamo",
+   "aliases": [
+    "University of Bergamo"
+   ],
+   "country": "Italy",
+   "coords": [
+    45.705,
+    9.661
+   ],
+   "logo": "assets/logos/Q45855.png",
+   "roles": [
+    "phd-institution",
+    "directory-university"
+   ],
+   "people": {
+    "institutions": [
+     {
+      "institutionId": "university-of-bergamo",
+      "name": "University of Bergamo",
+      "spellings": [
+       "University of Bergamo"
+      ],
+      "people": 1,
+      "verifiedFirstJobs": 1
+     }
+    ],
+    "people": 1,
+    "verifiedFirstJobs": 1,
+    "unresolved": 0,
+    "pending": 0,
+    "notYetCompleted": 0,
+    "firstYear": 2014,
+    "lastYear": 2014,
+    "firstJobTypes": {
+     "tenure-track": 0,
+     "postdoc": 0,
+     "teaching-track": 0,
+     "other-academic": 0,
+     "industry": 0,
+     "government": 0,
+     "nonprofit": 0,
+     "unknown": 1
+    },
+    "topFirstEmployers": [
+     {
+      "employer": "University College Dublin (Michael Smurfit Graduate Business School)",
+      "count": 1
+     }
+    ]
+   },
+   "directory": {
+    "universities": [
+     {
+      "id": "university-of-bergamo",
+      "name": "University of Bergamo",
+      "spellings": [
+       "University of Bergamo"
+      ],
+      "country": null,
+      "departmentCount": 1,
+      "match": "exact"
+     }
+    ],
+    "departments": [
+     {
+      "id": "university-of-bergamo--om-list-university-of-bergamo-reported-doctorate-one-profile-reported-phd-institution",
+      "university": "University of Bergamo",
+      "school": null,
+      "department": null,
+      "type": null,
+      "facultyUrl": null,
+      "departmentUrl": null
+     }
+    ]
+   },
+   "employer": null,
+   "programs": [],
+   "sources": [
+    {
+     "url": "https://omlist.edutool.org/phd/by-year.html",
+     "title": "OM List, PhD graduates by year (people database)"
+    },
+    {
+     "url": "https://www.wikidata.org/wiki/Q45855",
+     "title": "Wikidata item"
+    },
+    {
+     "url": "https://www.operationsacademia.org/universities",
+     "title": "Operations Academia universities directory (universities database)"
+    }
+   ],
+   "review": {
+    "matches": [
+     {
+      "source": "directory",
+      "university": "University of Bergamo",
+      "match": "exact"
+     }
+    ],
+    "conflicts": []
+   },
+   "addedAt": "2026-10-16T13:49:36Z",
+   "updatedAt": "2026-10-25T21:10:29Z"
+  },
+  {
    "id": "wd:Q1067471",
    "wikidata": "Q1067471",
    "name": "University of Calgary",
@@ -67988,6 +68212,372 @@
    "updatedAt": "2026-10-25T20:58:16Z"
   },
   {
+   "id": "wd:Q574571",
+   "wikidata": "Q574571",
+   "name": "University of Regensburg",
+   "aliases": [
+    "University of Regensburg"
+   ],
+   "country": "Germany",
+   "coords": [
+    48.999,
+    12.093
+   ],
+   "logo": "assets/logos/Q574571.png",
+   "roles": [
+    "phd-institution",
+    "directory-university"
+   ],
+   "people": {
+    "institutions": [
+     {
+      "institutionId": "university-of-regensburg",
+      "name": "University of Regensburg",
+      "spellings": [
+       "University of Regensburg"
+      ],
+      "people": 1,
+      "verifiedFirstJobs": 0
+     }
+    ],
+    "people": 1,
+    "verifiedFirstJobs": 0,
+    "unresolved": 1,
+    "pending": 0,
+    "notYetCompleted": 0,
+    "firstYear": 1995,
+    "lastYear": 1995,
+    "firstJobTypes": {
+     "tenure-track": 0,
+     "postdoc": 0,
+     "teaching-track": 0,
+     "other-academic": 0,
+     "industry": 0,
+     "government": 0,
+     "nonprofit": 0,
+     "unknown": 0
+    },
+    "topFirstEmployers": []
+   },
+   "directory": {
+    "universities": [
+     {
+      "id": "university-of-regensburg",
+      "name": "University of Regensburg",
+      "spellings": [
+       "University of Regensburg"
+      ],
+      "country": null,
+      "departmentCount": 1,
+      "match": "exact"
+     }
+    ],
+    "departments": [
+     {
+      "id": "university-of-regensburg--om-list-university-of-regensburg-reported-doctorate-one-profile-reported-phd-institution",
+      "university": "University of Regensburg",
+      "school": null,
+      "department": null,
+      "type": null,
+      "facultyUrl": null,
+      "departmentUrl": null
+     }
+    ]
+   },
+   "employer": null,
+   "programs": [],
+   "sources": [
+    {
+     "url": "https://omlist.edutool.org/phd/by-year.html",
+     "title": "OM List, PhD graduates by year (people database)"
+    },
+    {
+     "url": "https://www.wikidata.org/wiki/Q574571",
+     "title": "Wikidata item"
+    },
+    {
+     "url": "https://www.operationsacademia.org/universities",
+     "title": "Operations Academia universities directory (universities database)"
+    }
+   ],
+   "review": {
+    "matches": [
+     {
+      "source": "directory",
+      "university": "University of Regensburg",
+      "match": "exact"
+     }
+    ],
+    "conflicts": []
+   },
+   "addedAt": "2026-10-16T13:49:36Z",
+   "updatedAt": "2026-10-25T21:10:29Z"
+  },
+  {
+   "id": "wd:Q835960",
+   "wikidata": "Q835960",
+   "name": "University of São Paulo",
+   "aliases": [
+    "University of São Paulo"
+   ],
+   "country": "Brazil",
+   "coords": [
+    -23.561,
+    -46.731
+   ],
+   "logo": "assets/logos/Q835960.png",
+   "roles": [
+    "phd-institution",
+    "directory-university",
+    "program-register"
+   ],
+   "people": {
+    "institutions": [
+     {
+      "institutionId": "university-of-sao-paulo",
+      "name": "University of São Paulo",
+      "spellings": [
+       "University of São Paulo"
+      ],
+      "people": 1,
+      "verifiedFirstJobs": 0
+     }
+    ],
+    "people": 1,
+    "verifiedFirstJobs": 0,
+    "unresolved": 1,
+    "pending": 0,
+    "notYetCompleted": 0,
+    "firstYear": 2017,
+    "lastYear": 2017,
+    "firstJobTypes": {
+     "tenure-track": 0,
+     "postdoc": 0,
+     "teaching-track": 0,
+     "other-academic": 0,
+     "industry": 0,
+     "government": 0,
+     "nonprofit": 0,
+     "unknown": 0
+    },
+    "topFirstEmployers": []
+   },
+   "directory": {
+    "universities": [
+     {
+      "id": "university-of-sao-paulo",
+      "name": "University of São Paulo",
+      "spellings": [
+       "University of São Paulo"
+      ],
+      "country": null,
+      "departmentCount": 1,
+      "match": "exact"
+     }
+    ],
+    "departments": [
+     {
+      "id": "university-of-sao-paulo--om-list-university-of-sao-paulo-reported-doctorate-one-profile-reported-phd-institution",
+      "university": "University of São Paulo",
+      "school": null,
+      "department": null,
+      "type": null,
+      "facultyUrl": null,
+      "departmentUrl": null
+     }
+    ]
+   },
+   "employer": null,
+   "programs": [
+    {
+     "id": "university-of-sao-paulo--ep-usp-engenharia-de-producao-gestao-de-operacoes-logistica-doctorate",
+     "programName": "Doutorado em Engenharia de Produção",
+     "specialization": "Gestão de Operações e Logística",
+     "universityId": "university-of-sao-paulo",
+     "school": "Escola Politécnica da Universidade de São Paulo",
+     "degree": "Doutorado",
+     "field": "Operations Management",
+     "status": "active",
+     "statusAsOf": "2026-10-25"
+    },
+    {
+     "id": "university-of-sao-paulo--eesc-usp-engenharia-de-producao-processos-gestao-operacoes-doctorate",
+     "programName": "Doutorado em Ciências, Programa de Engenharia de Produção",
+     "specialization": "Processos e Gestão de Operações",
+     "universityId": "university-of-sao-paulo",
+     "school": "Escola de Engenharia de São Carlos da Universidade de São Paulo",
+     "degree": "Doutorado em Ciências",
+     "field": "Operations Management; Operations Research",
+     "status": "active",
+     "statusAsOf": "2026-10-25"
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://omlist.edutool.org/phd/by-year.html",
+     "title": "OM List, PhD graduates by year (people database)"
+    },
+    {
+     "url": "https://www.wikidata.org/wiki/Q835960",
+     "title": "Wikidata item"
+    },
+    {
+     "url": "https://www.operationsacademia.org/universities",
+     "title": "Operations Academia universities directory (universities database)"
+    },
+    {
+     "url": "data/doctoral-programs.json",
+     "title": "Historical doctoral program register"
+    }
+   ],
+   "review": {
+    "matches": [
+     {
+      "source": "directory",
+      "university": "University of São Paulo",
+      "match": "exact"
+     },
+     {
+      "source": "programs",
+      "program": "university-of-sao-paulo--ep-usp-engenharia-de-producao-gestao-de-operacoes-logistica-doctorate",
+      "match": "exact"
+     },
+     {
+      "source": "programs",
+      "program": "university-of-sao-paulo--eesc-usp-engenharia-de-producao-processos-gestao-operacoes-doctorate",
+      "match": "exact"
+     }
+    ],
+    "conflicts": []
+   },
+   "addedAt": "2026-10-16T13:49:36Z",
+   "updatedAt": "2026-10-25T21:10:29Z"
+  },
+  {
+   "id": "wd:Q540341",
+   "wikidata": "Q540341",
+   "name": "University of Sfax",
+   "aliases": [
+    "University of Sfax"
+   ],
+   "country": "Tunisia",
+   "coords": [
+    34.737,
+    10.744
+   ],
+   "logo": "assets/logos/Q540341.png",
+   "roles": [
+    "phd-institution",
+    "directory-university",
+    "program-register"
+   ],
+   "people": {
+    "institutions": [
+     {
+      "institutionId": "university-of-sfax",
+      "name": "University of Sfax",
+      "spellings": [
+       "University of Sfax"
+      ],
+      "people": 1,
+      "verifiedFirstJobs": 0
+     }
+    ],
+    "people": 1,
+    "verifiedFirstJobs": 0,
+    "unresolved": 1,
+    "pending": 0,
+    "notYetCompleted": 0,
+    "firstYear": 2017,
+    "lastYear": 2017,
+    "firstJobTypes": {
+     "tenure-track": 0,
+     "postdoc": 0,
+     "teaching-track": 0,
+     "other-academic": 0,
+     "industry": 0,
+     "government": 0,
+     "nonprofit": 0,
+     "unknown": 0
+    },
+    "topFirstEmployers": []
+   },
+   "directory": {
+    "universities": [
+     {
+      "id": "university-of-sfax",
+      "name": "University of Sfax",
+      "spellings": [
+       "University of Sfax"
+      ],
+      "country": null,
+      "departmentCount": 1,
+      "match": "exact"
+     }
+    ],
+    "departments": [
+     {
+      "id": "university-of-sfax--om-list-university-of-sfax-reported-doctorate-one-profile-reported-phd-institution",
+      "university": "University of Sfax",
+      "school": null,
+      "department": null,
+      "type": null,
+      "facultyUrl": null,
+      "departmentUrl": null
+     }
+    ]
+   },
+   "employer": null,
+   "programs": [
+    {
+     "id": "university-of-sfax--genie-industriel-doctorat",
+     "programName": "Doctorat en Génie Industriel",
+     "specialization": null,
+     "universityId": "university-of-sfax",
+     "school": "Institut Supérieur de Gestion Industrielle de Sfax",
+     "degree": "Doctorat",
+     "field": "Industrial Engineering",
+     "status": "active",
+     "statusAsOf": "2026-10-25"
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://omlist.edutool.org/phd/by-year.html",
+     "title": "OM List, PhD graduates by year (people database)"
+    },
+    {
+     "url": "https://www.wikidata.org/wiki/Q540341",
+     "title": "Wikidata item"
+    },
+    {
+     "url": "https://www.operationsacademia.org/universities",
+     "title": "Operations Academia universities directory (universities database)"
+    },
+    {
+     "url": "data/doctoral-programs.json",
+     "title": "Historical doctoral program register"
+    }
+   ],
+   "review": {
+    "matches": [
+     {
+      "source": "directory",
+      "university": "University of Sfax",
+      "match": "exact"
+     },
+     {
+      "source": "programs",
+      "program": "university-of-sfax--genie-industriel-doctorat",
+      "match": "exact"
+     }
+    ],
+    "conflicts": []
+   },
+   "addedAt": "2026-10-16T13:49:36Z",
+   "updatedAt": "2026-10-25T21:10:29Z"
+  },
+  {
    "id": "wd:Q624090",
    "wikidata": "Q624090",
    "name": "University of Southern Mississippi",
@@ -68399,6 +68989,232 @@
    },
    "addedAt": "2026-10-16T13:49:36Z",
    "updatedAt": "2026-10-20T08:28:39Z"
+  },
+  {
+   "id": "wd:Q930528",
+   "wikidata": "Q930528",
+   "name": "University of Trento",
+   "aliases": [
+    "University of Trento"
+   ],
+   "country": "Italy",
+   "coords": [
+    46.069,
+    11.121
+   ],
+   "logo": "assets/logos/Q930528.png",
+   "roles": [
+    "phd-institution",
+    "directory-university",
+    "program-register"
+   ],
+   "people": {
+    "institutions": [
+     {
+      "institutionId": "university-of-trento",
+      "name": "University of Trento",
+      "spellings": [
+       "University of Trento"
+      ],
+      "people": 1,
+      "verifiedFirstJobs": 0
+     }
+    ],
+    "people": 1,
+    "verifiedFirstJobs": 0,
+    "unresolved": 1,
+    "pending": 0,
+    "notYetCompleted": 0,
+    "firstYear": 2025,
+    "lastYear": 2025,
+    "firstJobTypes": {
+     "tenure-track": 0,
+     "postdoc": 0,
+     "teaching-track": 0,
+     "other-academic": 0,
+     "industry": 0,
+     "government": 0,
+     "nonprofit": 0,
+     "unknown": 0
+    },
+    "topFirstEmployers": []
+   },
+   "directory": {
+    "universities": [
+     {
+      "id": "university-of-trento",
+      "name": "University of Trento",
+      "spellings": [
+       "University of Trento"
+      ],
+      "country": null,
+      "departmentCount": 1,
+      "match": "exact"
+     }
+    ],
+    "departments": [
+     {
+      "id": "university-of-trento--om-list-university-of-trento-reported-doctorate-one-profile-reported-phd-institution",
+      "university": "University of Trento",
+      "school": null,
+      "department": null,
+      "type": null,
+      "facultyUrl": null,
+      "departmentUrl": null
+     }
+    ]
+   },
+   "employer": null,
+   "programs": [
+    {
+     "id": "university-of-trento--industrial-innovation-phd",
+     "programName": "PhD programme in Industrial Innovation",
+     "specialization": null,
+     "universityId": "university-of-trento",
+     "school": null,
+     "degree": "PhD",
+     "field": "Industrial Engineering",
+     "status": "active",
+     "statusAsOf": "2026-10-25"
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://omlist.edutool.org/phd/by-year.html",
+     "title": "OM List, PhD graduates by year (people database)"
+    },
+    {
+     "url": "https://www.wikidata.org/wiki/Q930528",
+     "title": "Wikidata item"
+    },
+    {
+     "url": "https://www.operationsacademia.org/universities",
+     "title": "Operations Academia universities directory (universities database)"
+    },
+    {
+     "url": "data/doctoral-programs.json",
+     "title": "Historical doctoral program register"
+    }
+   ],
+   "review": {
+    "matches": [
+     {
+      "source": "directory",
+      "university": "University of Trento",
+      "match": "exact"
+     },
+     {
+      "source": "programs",
+      "program": "university-of-trento--industrial-innovation-phd",
+      "match": "exact"
+     }
+    ],
+    "conflicts": []
+   },
+   "addedAt": "2026-10-16T13:49:36Z",
+   "updatedAt": "2026-10-25T21:10:29Z"
+  },
+  {
+   "id": "wd:Q1724372",
+   "wikidata": "Q1724372",
+   "name": "University of Vaasa",
+   "aliases": [
+    "University of Vaasa"
+   ],
+   "country": "Finland",
+   "coords": [
+    63.105,
+    21.593
+   ],
+   "logo": "assets/logos/Q1724372.png",
+   "roles": [
+    "phd-institution",
+    "directory-university"
+   ],
+   "people": {
+    "institutions": [
+     {
+      "institutionId": "university-of-vaasa",
+      "name": "University of Vaasa",
+      "spellings": [
+       "University of Vaasa"
+      ],
+      "people": 1,
+      "verifiedFirstJobs": 0
+     }
+    ],
+    "people": 1,
+    "verifiedFirstJobs": 0,
+    "unresolved": 1,
+    "pending": 0,
+    "notYetCompleted": 0,
+    "firstYear": 2014,
+    "lastYear": 2014,
+    "firstJobTypes": {
+     "tenure-track": 0,
+     "postdoc": 0,
+     "teaching-track": 0,
+     "other-academic": 0,
+     "industry": 0,
+     "government": 0,
+     "nonprofit": 0,
+     "unknown": 0
+    },
+    "topFirstEmployers": []
+   },
+   "directory": {
+    "universities": [
+     {
+      "id": "university-of-vaasa",
+      "name": "University of Vaasa",
+      "spellings": [
+       "University of Vaasa"
+      ],
+      "country": null,
+      "departmentCount": 1,
+      "match": "exact"
+     }
+    ],
+    "departments": [
+     {
+      "id": "university-of-vaasa--om-list-university-of-vaasa-reported-doctorate-one-profile-reported-phd-institution",
+      "university": "University of Vaasa",
+      "school": null,
+      "department": null,
+      "type": null,
+      "facultyUrl": null,
+      "departmentUrl": null
+     }
+    ]
+   },
+   "employer": null,
+   "programs": [],
+   "sources": [
+    {
+     "url": "https://omlist.edutool.org/phd/by-year.html",
+     "title": "OM List, PhD graduates by year (people database)"
+    },
+    {
+     "url": "https://www.wikidata.org/wiki/Q1724372",
+     "title": "Wikidata item"
+    },
+    {
+     "url": "https://www.operationsacademia.org/universities",
+     "title": "Operations Academia universities directory (universities database)"
+    }
+   ],
+   "review": {
+    "matches": [
+     {
+      "source": "directory",
+      "university": "University of Vaasa",
+      "match": "exact"
+     }
+    ],
+    "conflicts": []
+   },
+   "addedAt": "2026-10-16T13:49:36Z",
+   "updatedAt": "2026-10-25T21:10:29Z"
   },
   {
    "id": "wd:Q2065769",
@@ -73285,78 +74101,6 @@
    "updatedAt": "2026-10-20T08:28:39Z"
   },
   {
-   "id": "wd:Q45855",
-   "wikidata": "Q45855",
-   "name": "University of Bergamo",
-   "aliases": [
-    "University of Bergamo"
-   ],
-   "country": "Italy",
-   "coords": [
-    45.705,
-    9.661
-   ],
-   "logo": "assets/logos/Q45855.png",
-   "roles": [
-    "phd-institution"
-   ],
-   "people": {
-    "institutions": [
-     {
-      "institutionId": "university-of-bergamo",
-      "name": "University of Bergamo",
-      "spellings": [
-       "University of Bergamo"
-      ],
-      "people": 1,
-      "verifiedFirstJobs": 1
-     }
-    ],
-    "people": 1,
-    "verifiedFirstJobs": 1,
-    "unresolved": 0,
-    "pending": 0,
-    "notYetCompleted": 0,
-    "firstYear": 2014,
-    "lastYear": 2014,
-    "firstJobTypes": {
-     "tenure-track": 0,
-     "postdoc": 0,
-     "teaching-track": 0,
-     "other-academic": 0,
-     "industry": 0,
-     "government": 0,
-     "nonprofit": 0,
-     "unknown": 1
-    },
-    "topFirstEmployers": [
-     {
-      "employer": "University College Dublin (Michael Smurfit Graduate Business School)",
-      "count": 1
-     }
-    ]
-   },
-   "directory": null,
-   "employer": null,
-   "programs": [],
-   "sources": [
-    {
-     "url": "https://omlist.edutool.org/phd/by-year.html",
-     "title": "OM List, PhD graduates by year (people database)"
-    },
-    {
-     "url": "https://www.wikidata.org/wiki/Q45855",
-     "title": "Wikidata item"
-    }
-   ],
-   "review": {
-    "matches": [],
-    "conflicts": []
-   },
-   "addedAt": "2026-10-16T13:49:36Z",
-   "updatedAt": "2026-10-20T08:28:39Z"
-  },
-  {
    "id": "wd:Q13344",
    "wikidata": "Q13344",
    "name": "University of Bordeaux",
@@ -75091,73 +75835,6 @@
    "updatedAt": "2026-10-20T08:28:39Z"
   },
   {
-   "id": "wd:Q574571",
-   "wikidata": "Q574571",
-   "name": "University of Regensburg",
-   "aliases": [
-    "University of Regensburg"
-   ],
-   "country": "Germany",
-   "coords": [
-    48.999,
-    12.093
-   ],
-   "logo": "assets/logos/Q574571.png",
-   "roles": [
-    "phd-institution"
-   ],
-   "people": {
-    "institutions": [
-     {
-      "institutionId": "university-of-regensburg",
-      "name": "University of Regensburg",
-      "spellings": [
-       "University of Regensburg"
-      ],
-      "people": 1,
-      "verifiedFirstJobs": 0
-     }
-    ],
-    "people": 1,
-    "verifiedFirstJobs": 0,
-    "unresolved": 1,
-    "pending": 0,
-    "notYetCompleted": 0,
-    "firstYear": 1995,
-    "lastYear": 1995,
-    "firstJobTypes": {
-     "tenure-track": 0,
-     "postdoc": 0,
-     "teaching-track": 0,
-     "other-academic": 0,
-     "industry": 0,
-     "government": 0,
-     "nonprofit": 0,
-     "unknown": 0
-    },
-    "topFirstEmployers": []
-   },
-   "directory": null,
-   "employer": null,
-   "programs": [],
-   "sources": [
-    {
-     "url": "https://omlist.edutool.org/phd/by-year.html",
-     "title": "OM List, PhD graduates by year (people database)"
-    },
-    {
-     "url": "https://www.wikidata.org/wiki/Q574571",
-     "title": "Wikidata item"
-    }
-   ],
-   "review": {
-    "matches": [],
-    "conflicts": []
-   },
-   "addedAt": "2026-10-16T13:49:36Z",
-   "updatedAt": "2026-10-20T08:28:39Z"
-  },
-  {
    "id": "wd:Q3104287",
    "wikidata": "Q3104287",
    "name": "University of Regina",
@@ -75338,140 +76015,6 @@
       "match": "wikidata"
      }
     ],
-    "conflicts": []
-   },
-   "addedAt": "2026-10-16T13:49:36Z",
-   "updatedAt": "2026-10-20T08:28:39Z"
-  },
-  {
-   "id": "wd:Q835960",
-   "wikidata": "Q835960",
-   "name": "University of São Paulo",
-   "aliases": [
-    "University of São Paulo"
-   ],
-   "country": "Brazil",
-   "coords": [
-    -23.561,
-    -46.731
-   ],
-   "logo": "assets/logos/Q835960.png",
-   "roles": [
-    "phd-institution"
-   ],
-   "people": {
-    "institutions": [
-     {
-      "institutionId": "university-of-sao-paulo",
-      "name": "University of São Paulo",
-      "spellings": [
-       "University of São Paulo"
-      ],
-      "people": 1,
-      "verifiedFirstJobs": 0
-     }
-    ],
-    "people": 1,
-    "verifiedFirstJobs": 0,
-    "unresolved": 1,
-    "pending": 0,
-    "notYetCompleted": 0,
-    "firstYear": 2017,
-    "lastYear": 2017,
-    "firstJobTypes": {
-     "tenure-track": 0,
-     "postdoc": 0,
-     "teaching-track": 0,
-     "other-academic": 0,
-     "industry": 0,
-     "government": 0,
-     "nonprofit": 0,
-     "unknown": 0
-    },
-    "topFirstEmployers": []
-   },
-   "directory": null,
-   "employer": null,
-   "programs": [],
-   "sources": [
-    {
-     "url": "https://omlist.edutool.org/phd/by-year.html",
-     "title": "OM List, PhD graduates by year (people database)"
-    },
-    {
-     "url": "https://www.wikidata.org/wiki/Q835960",
-     "title": "Wikidata item"
-    }
-   ],
-   "review": {
-    "matches": [],
-    "conflicts": []
-   },
-   "addedAt": "2026-10-16T13:49:36Z",
-   "updatedAt": "2026-10-20T08:28:39Z"
-  },
-  {
-   "id": "wd:Q540341",
-   "wikidata": "Q540341",
-   "name": "University of Sfax",
-   "aliases": [
-    "University of Sfax"
-   ],
-   "country": "Tunisia",
-   "coords": [
-    34.737,
-    10.744
-   ],
-   "logo": "assets/logos/Q540341.png",
-   "roles": [
-    "phd-institution"
-   ],
-   "people": {
-    "institutions": [
-     {
-      "institutionId": "university-of-sfax",
-      "name": "University of Sfax",
-      "spellings": [
-       "University of Sfax"
-      ],
-      "people": 1,
-      "verifiedFirstJobs": 0
-     }
-    ],
-    "people": 1,
-    "verifiedFirstJobs": 0,
-    "unresolved": 1,
-    "pending": 0,
-    "notYetCompleted": 0,
-    "firstYear": 2017,
-    "lastYear": 2017,
-    "firstJobTypes": {
-     "tenure-track": 0,
-     "postdoc": 0,
-     "teaching-track": 0,
-     "other-academic": 0,
-     "industry": 0,
-     "government": 0,
-     "nonprofit": 0,
-     "unknown": 0
-    },
-    "topFirstEmployers": []
-   },
-   "directory": null,
-   "employer": null,
-   "programs": [],
-   "sources": [
-    {
-     "url": "https://omlist.edutool.org/phd/by-year.html",
-     "title": "OM List, PhD graduates by year (people database)"
-    },
-    {
-     "url": "https://www.wikidata.org/wiki/Q540341",
-     "title": "Wikidata item"
-    }
-   ],
-   "review": {
-    "matches": [],
     "conflicts": []
    },
    "addedAt": "2026-10-16T13:49:36Z",
@@ -75960,73 +76503,6 @@
    "updatedAt": "2026-10-20T08:28:39Z"
   },
   {
-   "id": "wd:Q930528",
-   "wikidata": "Q930528",
-   "name": "University of Trento",
-   "aliases": [
-    "University of Trento"
-   ],
-   "country": "Italy",
-   "coords": [
-    46.069,
-    11.121
-   ],
-   "logo": "assets/logos/Q930528.png",
-   "roles": [
-    "phd-institution"
-   ],
-   "people": {
-    "institutions": [
-     {
-      "institutionId": "university-of-trento",
-      "name": "University of Trento",
-      "spellings": [
-       "University of Trento"
-      ],
-      "people": 1,
-      "verifiedFirstJobs": 0
-     }
-    ],
-    "people": 1,
-    "verifiedFirstJobs": 0,
-    "unresolved": 1,
-    "pending": 0,
-    "notYetCompleted": 0,
-    "firstYear": 2025,
-    "lastYear": 2025,
-    "firstJobTypes": {
-     "tenure-track": 0,
-     "postdoc": 0,
-     "teaching-track": 0,
-     "other-academic": 0,
-     "industry": 0,
-     "government": 0,
-     "nonprofit": 0,
-     "unknown": 0
-    },
-    "topFirstEmployers": []
-   },
-   "directory": null,
-   "employer": null,
-   "programs": [],
-   "sources": [
-    {
-     "url": "https://omlist.edutool.org/phd/by-year.html",
-     "title": "OM List, PhD graduates by year (people database)"
-    },
-    {
-     "url": "https://www.wikidata.org/wiki/Q930528",
-     "title": "Wikidata item"
-    }
-   ],
-   "review": {
-    "matches": [],
-    "conflicts": []
-   },
-   "addedAt": "2026-10-16T13:49:36Z",
-   "updatedAt": "2026-10-20T08:28:39Z"
-  },
-  {
    "id": "wd:Q743615",
    "wikidata": "Q743615",
    "name": "University of Tsukuba",
@@ -76083,73 +76559,6 @@
     },
     {
      "url": "https://www.wikidata.org/wiki/Q743615",
-     "title": "Wikidata item"
-    }
-   ],
-   "review": {
-    "matches": [],
-    "conflicts": []
-   },
-   "addedAt": "2026-10-16T13:49:36Z",
-   "updatedAt": "2026-10-20T08:28:39Z"
-  },
-  {
-   "id": "wd:Q1724372",
-   "wikidata": "Q1724372",
-   "name": "University of Vaasa",
-   "aliases": [
-    "University of Vaasa"
-   ],
-   "country": "Finland",
-   "coords": [
-    63.105,
-    21.593
-   ],
-   "logo": "assets/logos/Q1724372.png",
-   "roles": [
-    "phd-institution"
-   ],
-   "people": {
-    "institutions": [
-     {
-      "institutionId": "university-of-vaasa",
-      "name": "University of Vaasa",
-      "spellings": [
-       "University of Vaasa"
-      ],
-      "people": 1,
-      "verifiedFirstJobs": 0
-     }
-    ],
-    "people": 1,
-    "verifiedFirstJobs": 0,
-    "unresolved": 1,
-    "pending": 0,
-    "notYetCompleted": 0,
-    "firstYear": 2014,
-    "lastYear": 2014,
-    "firstJobTypes": {
-     "tenure-track": 0,
-     "postdoc": 0,
-     "teaching-track": 0,
-     "other-academic": 0,
-     "industry": 0,
-     "government": 0,
-     "nonprofit": 0,
-     "unknown": 0
-    },
-    "topFirstEmployers": []
-   },
-   "directory": null,
-   "employer": null,
-   "programs": [],
-   "sources": [
-    {
-     "url": "https://omlist.edutool.org/phd/by-year.html",
-     "title": "OM List, PhD graduates by year (people database)"
-    },
-    {
-     "url": "https://www.wikidata.org/wiki/Q1724372",
      "title": "Wikidata item"
     }
    ],
@@ -102750,6 +103159,110 @@
    "updatedAt": "2026-10-16T13:49:36Z"
   },
   {
+   "id": "name:university-of-augsburg",
+   "wikidata": null,
+   "name": "University of Augsburg",
+   "aliases": [
+    "University of Augsburg"
+   ],
+   "country": "Germany",
+   "coords": [
+    48.334,
+    10.898
+   ],
+   "logo": null,
+   "roles": [
+    "directory-university",
+    "first-employer"
+   ],
+   "people": null,
+   "directory": {
+    "universities": [
+     {
+      "id": "university-of-augsburg",
+      "name": "University of Augsburg",
+      "spellings": [
+       "University of Augsburg"
+      ],
+      "country": null,
+      "departmentCount": 1,
+      "match": "new"
+     }
+    ],
+    "departments": [
+     {
+      "id": "university-of-augsburg--om-list-university-of-augsburg-reported-doctorate-one-profile-reported-phd-institution",
+      "university": "University of Augsburg",
+      "school": null,
+      "department": null,
+      "type": null,
+      "facultyUrl": null,
+      "departmentUrl": null
+     }
+    ]
+   },
+   "employer": {
+    "employers": [
+     {
+      "employerId": "university-of-augsburg",
+      "name": "University of Augsburg",
+      "spellings": [
+       "University of Augsburg"
+      ],
+      "verifiedFirstJobs": 1
+     }
+    ],
+    "verifiedFirstJobs": 1,
+    "firstCohort": 2013,
+    "lastCohort": 2013,
+    "firstJobTypes": {
+     "tenure-track": 0,
+     "postdoc": 1,
+     "teaching-track": 0,
+     "other-academic": 0,
+     "industry": 0,
+     "government": 0,
+     "nonprofit": 0,
+     "unknown": 0
+    },
+    "sourceInstitutions": [
+     {
+      "institution": "Technical University of Munich",
+      "count": 1
+     }
+    ],
+    "positions": [
+     {
+      "position": "Post Doc (Akademischer Rat auf Zeit), Chair of Health Care Operations/Health Information Management",
+      "count": 1
+     }
+    ]
+   },
+   "programs": [],
+   "sources": [
+    {
+     "url": "https://www.operationsacademia.org/universities",
+     "title": "Operations Academia universities directory (universities database)"
+    },
+    {
+     "url": "data/placements.json",
+     "title": "Verified first-job records (people database)"
+    }
+   ],
+   "review": {
+    "matches": [
+     {
+      "source": "employers",
+      "employer": "University of Augsburg",
+      "match": "exact"
+     }
+    ],
+    "conflicts": []
+   },
+   "addedAt": "2026-10-25T21:10:29Z",
+   "updatedAt": "2026-10-25T21:10:29Z"
+  },
+  {
    "id": "wd:Q1782724",
    "wikidata": "Q1782724",
    "name": "University of Central Arkansas",
@@ -119690,75 +120203,6 @@
     "positions": [
      {
       "position": "Lektor (Assistant Professor)",
-      "count": 1
-     }
-    ]
-   },
-   "programs": [],
-   "sources": [
-    {
-     "url": "data/placements.json",
-     "title": "Verified first-job records (people database)"
-    }
-   ],
-   "review": {
-    "matches": [],
-    "conflicts": []
-   },
-   "addedAt": "2026-10-16T13:49:36Z",
-   "updatedAt": "2026-10-20T08:28:39Z"
-  },
-  {
-   "id": "wd:Q616905",
-   "wikidata": "Q616905",
-   "name": "University of Augsburg",
-   "aliases": [
-    "University of Augsburg"
-   ],
-   "country": "Germany",
-   "coords": [
-    48.334,
-    10.898
-   ],
-   "logo": null,
-   "roles": [
-    "first-employer"
-   ],
-   "people": null,
-   "directory": null,
-   "employer": {
-    "employers": [
-     {
-      "employerId": "university-of-augsburg",
-      "name": "University of Augsburg",
-      "spellings": [
-       "University of Augsburg"
-      ],
-      "verifiedFirstJobs": 1
-     }
-    ],
-    "verifiedFirstJobs": 1,
-    "firstCohort": 2013,
-    "lastCohort": 2013,
-    "firstJobTypes": {
-     "tenure-track": 0,
-     "postdoc": 1,
-     "teaching-track": 0,
-     "other-academic": 0,
-     "industry": 0,
-     "government": 0,
-     "nonprofit": 0,
-     "unknown": 0
-    },
-    "sourceInstitutions": [
-     {
-      "institution": "Technical University of Munich",
-      "count": 1
-     }
-    ],
-    "positions": [
-     {
-      "position": "Post Doc (Akademischer Rat auf Zeit), Chair of Health Care Operations/Health Information Management",
       "count": 1
      }
     ]
