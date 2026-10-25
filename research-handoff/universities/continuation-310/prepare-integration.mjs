@@ -1,0 +1,18 @@
+import fs from 'node:fs';
+import crypto from 'node:crypto';
+import {execFileSync} from 'node:child_process';
+const dir='research-handoff/universities/continuation-310',root='research-handoff/universities/',read=p=>JSON.parse(fs.readFileSync(p));
+const specs=[['leipzig-university',230],['university-of-piraeus',231],['university-of-strathclyde',232],['jc-bose-university-of-science-and-technology',233,233,235],['indian-institute-of-management-rohtak',234,236,236],['lomonosov-moscow-state-university',237,237,241],['otto-von-guericke-university-magdeburg',239],['rwth-aachen-university',240],['national-technical-university-of-athens',241],['the-university-of-mississippi',242],['universidad-autonoma-de-madrid',243],['universita-di-napoli-federico-ii',244],['universitat-autonoma-de-barcelona',245]];
+const path=(n,id,suffix)=>root+`continuation-${n}/shard-a/${id}.${suffix}.json`,extra=(lane,s)=>{const[n,f]=s.split('/');return root+`continuation-${n}/shard-${lane}/${f}.json`;};
+const sources=specs.map(([id,n])=>path(n,id,'source-addition'));
+const unitInputs=specs.map(([id,n,u])=>path(u??n,id,'unit'));
+const programmes=specs.map(([id,n,u,d])=>path(d??n,id,'doctoral')).concat(extra('b','257/brighton-mathematical-operational-research-doctoral'));
+const scopes=['224/tusculum-university.doctoral','225/wageningen-university.doctoral-scope-composite','226/university-of-windsor.doctoral-scope-composite','227/universite-libre-de-bruxelles.doctoral-scope-composite'].map(s=>extra('c',s)).concat(['253/kafu-current-complete-doctoral-scope','254/hull-current-title-bounded-doctoral-scope','255/byu-current-title-bounded-doctoral-scope','256/konan-pending-operations-doctoral-candidate'].map(s=>extra('b',s)));
+const m={baseCommit:execFileSync('git',['rev-parse','HEAD'],{encoding:'utf8'}).trim(),sources,unitInputs,programmes,scopes};
+m.frozenInputs=[...new Set([...sources,...sources.map(p=>read(p).sourceCatalogue),...unitInputs,...programmes,...scopes])].map(path=>({path,sha256:crypto.createHash('sha256').update(fs.readFileSync(path)).digest('hex')}));
+fs.writeFileSync(dir+'/integration-manifest.json',JSON.stringify(m,null,2)+'\n');
+fs.writeFileSync(dir+'/apply-phase.mjs',fs.readFileSync(root+'continuation-260/apply-phase.mjs','utf8').replaceAll('continuation-260','continuation-310'));
+const phasePath=dir+'/apply-phase.mjs',phase=fs.readFileSync(phasePath,'utf8');
+fs.writeFileSync(phasePath,phase.replace(" if(r.id==='nantes-universite')", " if(r.id==='lomonosov-moscow-state-university')r.limitations[0]='Initial degree-page review did not establish the Operations Research doctoral host link. The later dated doctoral observation adds the official faculty postgraduate-student bridge; its evidence-age limitation remains explicit. No individual degree is verified.';\n if(r.id==='nantes-universite')"));
+fs.writeFileSync(dir+'/audit-cut.mjs',fs.readFileSync(root+'continuation-260/audit-cut.mjs','utf8').replaceAll('continuation-260','continuation-310').replaceAll('1f9afd6',m.baseCommit));
+console.log({sources:sources.length,units:unitInputs.length,programmes:programmes.length,scopes:scopes.length});

@@ -40,6 +40,9 @@ test('reviewed descriptive research topics cannot re-enter the named-title regis
  assert(hasNamedOperationsScope('Investigación de operaciones para la Ciencia de Datos'));
  assert(hasNamedOperationsScope('Doctorado en Ingeniería Industrial'));
  assert(hasNamedOperationsScope('Escuela de Ingenierías Industriales'));
+ assert(hasNamedOperationsScope('Dottorato di Ricerca in Ingegneria Industriale'));
+ assert(!hasNamedOperationsScope('Ingegneria Meccanica'));
+ assert(!hasNamedOperationsScope('Ingegneria Gestionale'));
  assert(!hasNamedOperationsScope('Ingeniería Mecánica y Organización Industrial'));
  assert(!hasNamedOperationsScope('Investigación en ingeniería mecánica'));
  assert(hasNamedOperationsScope('Gestão de Operações'));

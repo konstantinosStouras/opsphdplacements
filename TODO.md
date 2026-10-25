@@ -1,6 +1,6 @@
 # Remaining work and handoff priorities
 
-Stage 1 update, 25 October 2026: 360 qualifying doctoral programmes and named fields at 276 providers; 523 sourced programme observations retained. The 792-record source frame has 581 completed unit reviews, 206 partial and five blocked. Doctoral scope: 751 observations, 557 current branch scopes complete. Remaining: 278 grouped incomplete identities, two pending title/host cases and 55 unresolved OM List reported-degree labels (overlapping populations). See [continuation300](research-handoff/universities/continuation-300/README.md). Continue remaining source identities, doctoral fields and pending title/host decisions. Stages 2–4 held.
+Stage 1 update, 25 October 2026: 369 qualifying doctoral programmes and named fields at 284 providers; 532 sourced programme observations retained. The 805-record source frame has 583 completed unit reviews, 216 partial and six blocked. Doctoral scope: 765 observations, 566 current branch scopes complete. Remaining: 286 grouped incomplete identities, two pending title/host cases and 42 unresolved OM List reported-degree labels (overlapping populations). See [continuation310](research-handoff/universities/continuation-310/README.md). Continue remaining source identities, doctoral fields and pending title/host decisions. Stages 2–4 held.
 
 ## Active priority order — updated 23 October 2026
 
