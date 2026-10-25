@@ -1,4 +1,6 @@
-# Current research priorities — owner instruction, 21 October 2026
+# Current research priorities — owner instruction, updated 25 October 2026
+
+Current Stage 1 public scope: include a doctoral route or named academic unit only when its official title, named specialization, or reviewed department/school title explicitly identifies Operations, Management Science or Industrial Engineering. Industrial and Systems Engineering is an Industrial Engineering title; other engineering fields alone do not qualify. Colorado School of Mines remains through its Operations Research with Engineering PhD title, while its other participating departments are not qualifying units. The public view currently shows 290 verified routes at 214 providers; the 422-record sourced research log preserves earlier broader evidence for audit. See [title-scope handoff](../universities/TITLE-SCOPE-2026-10-25.md). Historical counts below describe their original broader rule and must not be read as current public totals.
 
 This supersedes the earlier collection order and blanket pause for manual Stage 1 work. It does not resume the paused automation, authorize outreach, or start graduate research. The current chat is the sole integrator. Three authorized university research lanes resumed under their frozen shards; companion career work and automation remain held.
 

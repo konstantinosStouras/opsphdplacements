@@ -1,4 +1,5 @@
 import { html } from './charts.js';
+import {hasNamedOperationsScope} from './program-model.js';
 
 export const reviewLabels = {
   reviewed: 'Official-source review completed',
@@ -16,7 +17,7 @@ export function renderUniversityUnits(host, row) {
     for (const unit of row.units) {
       const item = html('li');
       item.append(link(unit.name, unit.sourceUrl));
-      item.append(html('small', 'unit-parent', [unit.school, unit.type].filter(Boolean).join(' · ')));
+      item.append(html('small', 'unit-parent', [hasNamedOperationsScope(unit.school)?unit.school:null, unit.type].filter(Boolean).join(' · ')));
       item.append(html('small', 'unit-check', `Checked ${unit.checkedAt}`));
       const evidence = html('details', 'unit-evidence');
       evidence.append(html('summary', undefined, 'Evidence'), html('p', undefined, unit.evidence));
@@ -38,10 +39,11 @@ export function renderUniversityUnits(host, row) {
   const list = html('ul', 'dept-list');
   const decisions = new Map(row.reviews.flatMap(r => r.decisions).map(d => [d.sourceDepartmentId, d]));
   for (const original of row.originals) for (const d of original.departments) {
+    const namedParts=[d.school,d.department].filter(hasNamedOperationsScope);if(!namedParts.length)continue;
     const li = html('li'), decision = decisions.get(d.id);
-    li.append(html('span', undefined, [d.school, d.department].filter(Boolean).join(' · ') || 'Department not named'));
+    li.append(html('span', undefined, namedParts.join(' · ')));
     li.append(html('small', 'unit-parent', decision ? `${decision.disposition}: ${decision.reason}` : 'Unreviewed imported label'));
     list.append(li);
   }
-  originals.append(list); host.append(originals);
+  if(list.childNodes.length){originals.append(list);host.append(originals);}
 }

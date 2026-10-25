@@ -1,5 +1,6 @@
 import {fold} from './model.js';
 import {universityRows} from './university-model.js';
+import {isNamedOperationsProgramme} from './program-model.js';
 
 export function distinctNames(names,exclude=''){const seen=new Set(exclude?[fold(exclude)]:[]);return names.filter(n=>{const key=fold(n);if(!key||seen.has(key))return false;seen.add(key);return true;});}
 
@@ -45,7 +46,7 @@ export function organisationRows(entities,universities,reviews,programs,faculty,
    r.names=[...new Set([r.name,...r.entities.flatMap(e=>e.aliases),...(r.reviewedAliases||[])])];
    r.countries=[...new Set(r.entities.map(e=>e.country).filter(Boolean))];
    const universityIds=new Set(r.reviews.flatMap(u=>u.originals.map(o=>o.id)));
-   r.programs=programs.records.filter(p=>p.universityId?universityIds.has(p.universityId):r.names.some(n=>fold(n)===fold(p.university)));
+   r.programs=programs.records.filter(p=>(p.universityId?universityIds.has(p.universityId):r.names.some(n=>fold(n)===fold(p.university)))&&isNamedOperationsProgramme(p,r.reviews.flatMap(u=>u.units)));
    r.phd=r.entities.flatMap(e=>e.people?.institutions||[]);
    r.employers=r.entities.flatMap(e=>e.employer?.employers||[]);
    r.search=fold([r.name,...r.names,...r.countries,...r.reviews.map(u=>u.searchText),...r.programs.flatMap(p=>[p.programName,p.specialization,...(p.fields||[])])].join(' '));

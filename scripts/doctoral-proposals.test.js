@@ -1,12 +1,22 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {validateDoctoralProposal,isPhdDegree,canResolveCredential} from './doctoral-proposal-schema.mjs';
-import {isCurrentPhdProgramme} from '../assets/program-model.js';
+import {isCurrentPhdProgramme,isNamedOperationsProgramme,hasNamedOperationsScope} from '../assets/program-model.js';
 import {organisationRows} from '../assets/organisation-model.js';
 test('official Science suffix remains one PhD credential, while other doctoral titles stay distinct',()=>{
  assert(isPhdDegree('Doctor of Philosophy - Science'));
  assert(isCurrentPhdProgramme({status:'active',degree:'Doctor of Philosophy - Science'}));
  assert(!isPhdDegree('Doctor of Business Administration - Science'));
+});
+test('Stage 1 public title gate keeps named Ops and IE awards without promoting unrelated engineering hosts',()=>{
+ const hosts=[{id:'mechanical',name:'Department of Mechanical Engineering'},{id:'operations',name:'Department of Operations and Information Management'}];
+ assert(isNamedOperationsProgramme({programName:'Doctor of Philosophy in Operations Research with Engineering',unitIds:['mechanical']},hosts));
+ assert(isNamedOperationsProgramme({programName:'PhD in Management',specialization:'Operations Management',unitIds:[]},hosts));
+ assert(isNamedOperationsProgramme({programName:'PhD in Management',unitIds:['operations']},hosts));
+ assert(hasNamedOperationsScope('School of Industrial and Systems Engineering'));
+ assert(!isNamedOperationsProgramme({programName:'PhD in Mechanical Engineering',unitIds:['mechanical']},hosts));
+ assert(!hasNamedOperationsScope('Department of Mechanical Engineering'));
+ assert(!hasNamedOperationsScope('PhD in Systems Engineering'));
 });
 const universities=[{id:'u'},{id:'other'}],reviews=[{id:'u',duplicateOf:null,units:[{id:'u--operations'}]},{id:'other',duplicateOf:null,units:[{id:'other--ie'}]}];
 const proposal=()=>({universityId:'u',checkedAt:'2026-10-21',status:'verified',programmes:[{id:'u--phd-om',programName:'Business Administration',degree:'PhD',specialization:'Operations Management',school:'Business School',department:null,unitIds:['u--operations'],fields:['Operations Management'],status:'active',sourceUrl:'https://example.edu/phd',checkedAt:'2026-10-21',evidence:'Official doctoral curriculum explicitly offers Operations Management specialization.',limitations:[]}],branches:[{branch:'business',conclusion:'Named doctoral track verified; engineering not yet checked.',sourceUrls:['https://example.edu/phd']}],sources:[{url:'https://example.edu/phd',checkedAt:'2026-10-21',outcome:'read',note:'Doctoral curriculum and exact specialization read.'}],limitations:['Engineering inventory remains to be checked.']});

@@ -2,7 +2,7 @@ import {loadJson} from './analytics.js';
 import {fold,displayText} from './model.js';
 import {organisationRows,distinctNames} from './organisation-model.js';
 import {renderUniversityUnits} from './university-view.js';
-import {isCurrentPhdProgramme,programmeLabel} from './program-model.js';
+import {isCurrentPhdProgramme,programmeLabel,hasNamedOperationsScope} from './program-model.js';
 
 const node=(tag,text)=>{const n=document.createElement(tag);if(text!=null)n.textContent=displayText(text);return n;};
 const button=(text,action)=>{const b=node('button',text);b.type='button';b.className='text-button';b.addEventListener('click',action);return b;};
@@ -11,11 +11,11 @@ function renderProgramme(parent,p){
  parent.append(node('h4',programmeLabel(p)),node('p',[p.degree,p.status==='active'?'Currently offered':p.status.replaceAll('-',' '),'Checked '+p.lastCheckedAt].filter(Boolean).join(' · ')));
  if(p.programmeType==='dual-title')parent.append(node('p','Dual-title option taken alongside a primary doctorate. '+p.overlapNote));
  if(p.programmeType==='research-training')parent.append(node('p','Research training route; not an additional doctoral award. '+p.overlapNote));
- if(p.school||p.department)parent.append(node('p',[p.school,p.department].filter(Boolean).join(' · ')));
+ const namedHosts=[p.school,p.department].filter(hasNamedOperationsScope);if(namedHosts.length)parent.append(node('p',namedHosts.join(' · ')));
  if(p.phdEligibility==='credential-unresolved')parent.append(node('p','Doctoral provision is documented; the exact awarding credential still needs confirmation.'));
  for(const limitation of p.limitations||[])parent.append(node('p',limitation));
  const facts=node('details');facts.append(node('summary','Programme evidence and history'));
- for(const fact of (p.facts||[]).filter(f=>!['primaryProgrammeIds','programmeType'].includes(f.field)))facts.append(node('p',(programmeFields[fact.field]||'Programme detail')+': '+(fact.value==null?'Unknown':Array.isArray(fact.value)?fact.value.join('; '):String(fact.value))+' · Checked '+fact.lastCheckedAt));
+ for(const fact of (p.facts||[]).filter(f=>!['primaryProgrammeIds','programmeType'].includes(f.field)&&(!['school','department'].includes(f.field)||hasNamedOperationsScope(f.value))))facts.append(node('p',(programmeFields[fact.field]||'Programme detail')+': '+(fact.value==null?'Unknown':Array.isArray(fact.value)?fact.value.join('; '):String(fact.value))+' · Checked '+fact.lastCheckedAt));
  for(const h of p.history||[])facts.append(node('p',(h.year?h.year+': ':'')+h.event+' · Checked '+h.lastCheckedAt));
  for(const s of p.sources){const a=node('a','Official programme evidence ↗');a.href=s.url;a.target='_blank';a.rel='noopener noreferrer';facts.append(a,node('small','Checked '+s.lastCheckedAt),node('p',s.notes||s.title));}
  parent.append(facts);
@@ -32,10 +32,10 @@ export async function renderOrganisations(section,actions){
   for(const [v,t]of [['','All organisations'],['program','Universities with verified Ops doctorates'],['phd',"People’s PhD institutions"],['employer','First employers'],['career','Observed career employers'],['affiliation','Directory affiliations'],['units','With reviewed operations units']])role.append(new Option(t,v));roleLabel.append(role);
   const countryLabel=node('label','Country');const country=node('select');country.setAttribute('aria-label','Organisation country');country.append(new Option('All countries',''));for(const c of [...new Set(rows.flatMap(r=>r.countries))].sort())country.append(new Option(c,c));countryLabel.append(country);
   const reviewLabel=node('label','Department review');const review=node('select');review.setAttribute('aria-label','Organisation department review');for(const [v,t]of [['','All review states'],['reviewed','Completed'],['partial','Partial'],['blocked','Blocked'],['pending','Pending'],['unlisted','Not in the university review queue']])review.append(new Option(t,v));reviewLabel.append(review);
-  const rm=reviews.metadata,phdProviders=rows.filter(r=>r.programs.some(isCurrentPhdProgramme)).length,doctoralRoutes=programs.records.filter(isCurrentPhdProgramme).length;
+  const rm=reviews.metadata,phdProviders=rows.filter(r=>r.programs.some(isCurrentPhdProgramme)).length,doctoralRoutes=new Set(rows.flatMap(r=>r.programs.filter(isCurrentPhdProgramme).map(p=>p.id))).size;
   const scopeNotes=[
    `The full directory contains ${rows.length.toLocaleString('en-GB')} organisations: universities, companies, government bodies and other employers found across our sources. A directory entry does not mean its identity or doctoral programmes have been verified.`,
-   `Verified doctoral provision: ${doctoralRoutes} relevant PhD or equivalent research-doctorate routes at ${phdProviders} institutions. One institution can have several programmes or specializations. Distinct campuses offering their own programmes remain separate; this is not a count of legal degree-awarding bodies. Some programmes may not currently admit students; coverage remains incomplete. Choose “Universities with verified Ops doctorates” below to view these institutions.`,
+   `Verified doctoral provision under the title rule: ${doctoralRoutes} PhD or equivalent research-doctorate routes at ${phdProviders} institutions. A programme or its reviewed department must name Operations, Management Science or Industrial Engineering; unrelated engineering departments do not qualify. One institution can have several programmes. Some programmes may not currently admit students; coverage remains incomplete. Choose “Universities with verified Ops doctorates” below to view these institutions.`,
    `University review progress: ${rm.sourceRecords} university entries from our source lists, including aliases and school-level entries; ${rm.reviewed} identity and department reviews complete, ${rm.partial} partial, ${rm.blocked} blocked and ${rm.pending} pending. Doctoral eligibility and branch coverage are checked separately, so this is not a count of verified PhD providers.`
   ];
   for(const text of scopeNotes){const note=node('p',text);note.className='map-note';controls.before(note);}

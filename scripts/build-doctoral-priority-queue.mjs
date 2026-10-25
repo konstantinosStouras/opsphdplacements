@@ -3,7 +3,7 @@ import fs from 'node:fs';
 import {fold} from '../assets/model.js';
 import {universityRows} from '../assets/university-model.js';
 import {organisationRows} from '../assets/organisation-model.js';
-import {isCurrentPhdProgramme} from '../assets/program-model.js';
+import {isCurrentPhdProgramme,isNamedOperationsProgramme} from '../assets/program-model.js';
 const read=f=>JSON.parse(fs.readFileSync(f,'utf8'));
 const universities=read('data/universities.json'),reviews=read('data/university-reviews.json'),programmes=read('data/doctoral-programs.json');
 const faculty=read('data/faculty.json').records,assignments=read('research-handoff/universities/assignments.json');
@@ -17,7 +17,7 @@ const leads=new Map();let missing=0;
 for(const p of faculty){if(!p.phdInstitution||['unknown','not reported','n a'].includes(fold(p.phdInstitution))){missing++;continue;}
  const ids=byName.get(fold(p.phdInstitution))||[],key=ids.length===1?ids[0]:'unresolved:'+fold(p.phdInstitution);
  const g=ids.length===1?groups.find(g=>g.id===ids[0]):null;
- let row=leads.get(key);if(!row){row={id:key,name:g?.name||p.phdInstitution,sourceUniversityIds:g?.originals.map(o=>o.id)||[],candidateUniversityIds:ids,identityMatch:g?'accepted university/entity name':'unresolved discovery label',reportedFacultyCount:0,reportedNames:[],facultyIds:[],sourceUrls:[],owners:[...new Set((g?.originals||[]).map(o=>owner(o.id)))],doctoralObservations:(g?.originals||[]).map(o=>reviews.records.find(r=>r.id===o.id)?.doctoralReview).filter(Boolean),verifiedCurrentProgrammeIds:programmes.records.filter(q=>isCurrentPhdProgramme(q)&&(q.universityId?g?.originals.some(o=>o.id===q.universityId):g&&fold(q.university)===fold(g.name))).map(q=>q.id)};leads.set(key,row);}
+ let row=leads.get(key);if(!row){row={id:key,name:g?.name||p.phdInstitution,sourceUniversityIds:g?.originals.map(o=>o.id)||[],candidateUniversityIds:ids,identityMatch:g?'accepted university/entity name':'unresolved discovery label',reportedFacultyCount:0,reportedNames:[],facultyIds:[],sourceUrls:[],owners:[...new Set((g?.originals||[]).map(o=>owner(o.id)))],doctoralObservations:(g?.originals||[]).map(o=>reviews.records.find(r=>r.id===o.id)?.doctoralReview).filter(Boolean),verifiedCurrentProgrammeIds:programmes.records.filter(q=>isCurrentPhdProgramme(q)&&isNamedOperationsProgramme(q,reviews.records.find(r=>r.id===q.universityId)?.units||[])&&(q.universityId?g?.originals.some(o=>o.id===q.universityId):g&&fold(q.university)===fold(g.name))).map(q=>q.id)};leads.set(key,row);}
  row.reportedFacultyCount++;row.reportedNames.push(p.phdInstitution);row.facultyIds.push(p.id);if(p.phdInstitutionSourceUrl)row.sourceUrls.push(p.phdInstitutionSourceUrl);
 }
 const records=[...leads.values()].map(r=>({...r,reportedNames:[...new Set(r.reportedNames)],sourceUrls:[...new Set(r.sourceUrls)],branchCoverageComplete:r.doctoralObservations.some(d=>d.coverageComplete),nextStep:!r.sourceUniversityIds.length?'Resolve official identity and add/associate discovery record without speculative merge':r.doctoralObservations.some(d=>d.coverageComplete)?'Current scoped doctoral inventory checked; retain evidence and historical limitations':'Verify official current relevant doctoral routes across business and engineering; record branch gaps'})).sort((a,b)=>b.reportedFacultyCount-a.reportedFacultyCount||a.name.localeCompare(b.name));

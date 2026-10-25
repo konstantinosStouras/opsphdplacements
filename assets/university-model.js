@@ -1,3 +1,4 @@
+import {hasNamedOperationsScope} from './program-model.js';
 // Reviewed observations overlay the immutable directory import; no fuzzy identity merges.
 export const universityOrder = (a, b) => a.name.localeCompare(b.name, 'en', { sensitivity: 'base' }) || a.id.localeCompare(b.id);
 
@@ -32,7 +33,7 @@ export function universityRows(imported, observations = []) {
       const u = unitMap.get(key);
       if (!u.evidenceSources.some(s => s.sourceUrl === unit.sourceUrl && s.checkedAt === unit.checkedAt)) u.evidenceSources.push(unit);
     }
-    const units = [...unitMap.values()].sort((a, b) => a.name.localeCompare(b.name, 'en'));
+    const units = [...unitMap.values()].filter(u=>hasNamedOperationsScope(u.name)).sort((a, b) => a.name.localeCompare(b.name, 'en'));
     const statuses = originals.map(r => reviews.get(r.id)?.status || 'pending');
     const reviewStatus = statuses.every(s => s === 'reviewed') ? 'reviewed'
       : statuses.every(s => s === 'pending') ? 'pending'
@@ -45,7 +46,7 @@ export function universityRows(imported, observations = []) {
       reviewUpdatedAt: checked.map(r => r.updatedAt).filter(Boolean).sort().at(-1) || null,
       limitations: [...new Set(checked.flatMap(r => r.limitations))],
       peopleDatabases: [...new Map(originals.filter(r => r.peopleDatabase).map(r => [r.peopleDatabase.institutionId, r.peopleDatabase])).values()],
-      searchText: [review?.canonicalName, ...originals.flatMap(r => [r.name, ...(r.spellings || []), ...r.departments.flatMap(d => [d.school, d.department])]), ...units.flatMap(u => [u.school, u.name, ...u.fields])].filter(Boolean).join(' ').toLocaleLowerCase()
+      searchText: [review?.canonicalName, ...originals.flatMap(r => [r.name, ...(r.spellings || []), ...r.departments.flatMap(d => [d.school, d.department].filter(hasNamedOperationsScope))]), ...units.flatMap(u => [u.name])].filter(Boolean).join(' ').toLocaleLowerCase()
     };
   }).sort(universityOrder);
 }

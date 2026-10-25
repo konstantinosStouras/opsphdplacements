@@ -1,7 +1,7 @@
 {
  "version": 1,
  "metadata": {
-  "generatedAt": "2026-10-23",
+  "generatedAt": "2026-10-25",
   "derivedFrom": [
    "data/institutions.json",
    "data/universities.json",
@@ -18,7 +18,7 @@
    "phdInstitutions": 434,
    "directoryUniversities": 609,
    "firstEmployers": 493,
-   "withPrograms": 249,
+   "withPrograms": 252,
    "inBothDatabases": 211,
    "directoryOnly": 328,
    "peopleOnly": 223,
@@ -54939,7 +54939,8 @@
    "roles": [
     "phd-institution",
     "directory-university",
-    "first-employer"
+    "first-employer",
+    "program-register"
    ],
    "people": {
     "institutions": [
@@ -55063,7 +55064,19 @@
      }
     ]
    },
-   "programs": [],
+   "programs": [
+    {
+     "id": "binghamton-university--industrial-systems-engineering-phd",
+     "programName": "PhD in Industrial and Systems Engineering",
+     "specialization": null,
+     "universityId": "binghamton-university",
+     "school": "Thomas J. Watson College of Engineering and Applied Science",
+     "degree": "PhD",
+     "field": "Industrial Engineering; Operations Research; Supply Chain Management; Operations Management",
+     "status": "active",
+     "statusAsOf": "2026-10-22"
+    }
+   ],
    "sources": [
     {
      "url": "https://omlist.edutool.org/phd/by-year.html",
@@ -55084,6 +55097,10 @@
     {
      "url": "data/placements.json",
      "title": "Verified first-job records (people database)"
+    },
+    {
+     "url": "data/doctoral-programs.json",
+     "title": "Historical doctoral program register"
     }
    ],
    "review": {
@@ -55102,12 +55119,17 @@
       "source": "employers",
       "employer": "State University of New York at Binghamton",
       "match": "wikidata"
+     },
+     {
+      "source": "programs",
+      "program": "binghamton-university--industrial-systems-engineering-phd",
+      "match": "exact"
      }
     ],
     "conflicts": []
    },
    "addedAt": "2026-10-16T13:49:36Z",
-   "updatedAt": "2026-10-20T08:28:39Z"
+   "updatedAt": "2026-10-25T08:28:01Z"
   },
   {
    "id": "wd:Q49116",
@@ -86957,7 +86979,8 @@
    ],
    "logo": null,
    "roles": [
-    "directory-university"
+    "directory-university",
+    "program-register"
    ],
    "people": null,
    "directory": {
@@ -86986,19 +87009,41 @@
     ]
    },
    "employer": null,
-   "programs": [],
+   "programs": [
+    {
+     "id": "colorado-school-of-mines--operations-research-engineering-phd",
+     "programName": "Doctor of Philosophy in Operations Research with Engineering",
+     "specialization": null,
+     "universityId": "colorado-school-of-mines",
+     "school": null,
+     "degree": "PhD",
+     "field": "Operations Research; Operations Management; Supply Chain Management; Industrial Engineering",
+     "status": "active",
+     "statusAsOf": "2026-10-22"
+    }
+   ],
    "sources": [
     {
      "url": "https://www.operationsacademia.org/universities",
      "title": "Operations Academia universities directory (universities database)"
+    },
+    {
+     "url": "data/doctoral-programs.json",
+     "title": "Historical doctoral program register"
     }
    ],
    "review": {
-    "matches": [],
+    "matches": [
+     {
+      "source": "programs",
+      "program": "colorado-school-of-mines--operations-research-engineering-phd",
+      "match": "exact"
+     }
+    ],
     "conflicts": []
    },
    "addedAt": "2026-10-16T13:49:36Z",
-   "updatedAt": "2026-10-16T13:49:36Z"
+   "updatedAt": "2026-10-25T08:28:01Z"
   },
   {
    "id": "wd:Q5149615",
@@ -93331,7 +93376,8 @@
    ],
    "logo": null,
    "roles": [
-    "directory-university"
+    "directory-university",
+    "program-register"
    ],
    "people": null,
    "directory": {
@@ -93360,19 +93406,57 @@
     ]
    },
    "employer": null,
-   "programs": [],
+   "programs": [
+    {
+     "id": "nova-university-lisbon--management-phd-operations-technology-innovation",
+     "programName": "Ph.D. in Management",
+     "specialization": "Operations, Technology and Innovation Management",
+     "universityId": "nova-university-lisbon",
+     "school": "NOVA School of Business and Economics",
+     "degree": "PhD",
+     "field": "Operations Management; Supply Chain Management",
+     "status": "active",
+     "statusAsOf": "2026-10-22"
+    },
+    {
+     "id": "nova-university-lisbon--industrial-engineering-phd",
+     "programName": "PhD in Industrial Engineering",
+     "specialization": null,
+     "universityId": "nova-university-lisbon",
+     "school": "NOVA School of Science and Technology",
+     "degree": "PhD",
+     "field": "Industrial Engineering; Operations Management; Logistics; Supply Chain Management",
+     "status": "active",
+     "statusAsOf": "2026-10-22"
+    }
+   ],
    "sources": [
     {
      "url": "https://www.operationsacademia.org/universities",
      "title": "Operations Academia universities directory (universities database)"
+    },
+    {
+     "url": "data/doctoral-programs.json",
+     "title": "Historical doctoral program register"
     }
    ],
    "review": {
-    "matches": [],
+    "matches": [
+     {
+      "source": "programs",
+      "program": "nova-university-lisbon--management-phd-operations-technology-innovation",
+      "match": "exact"
+     },
+     {
+      "source": "programs",
+      "program": "nova-university-lisbon--industrial-engineering-phd",
+      "match": "exact"
+     }
+    ],
     "conflicts": []
    },
    "addedAt": "2026-10-16T13:49:36Z",
-   "updatedAt": "2026-10-16T13:49:36Z"
+   "updatedAt": "2026-10-25T08:28:01Z"
   },
   {
    "id": "wd:Q782116",

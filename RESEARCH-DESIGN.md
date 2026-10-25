@@ -2,6 +2,8 @@
 
 Version: 16 October 2026. This describes the planned graduate census and career-history extension. The published directory is currently a partial first-placement study of the imported OM List faculty; it is not yet a graduate census.
 
+Stage 1 title rule revised 25 October 2026 by the owner: the public university/doctoral register shows a route or academic unit only when the official programme title, named specialization, or reviewed department/school title says Operations, Operations Research, Operations Management, Management Science, or Industrial Engineering. Industrial and Systems Engineering is included as an Industrial Engineering title. A broad logistics, supply-chain, data-science, transportation, manufacturing, systems, civil, mechanical or other engineering research topic alone does not qualify. Colorado School of Mines qualifies through its Operations Research with Engineering PhD title; its participating Mechanical Engineering and other nonmatching departments are not displayed as qualifying departments. Retain earlier broader observations in the sourced research log for correction history, but exclude them from public qualifying counts and department display. This title rule supersedes broader field-inference examples elsewhere in this historical design until individually re-adjudicated.
+
 ## Population and collection order
 
 1. Build a worldwide register of universities and **historical doctoral programs** in Operations Management, Operations Research and Industrial Engineering, including programs that closed, suspended admissions, merged or changed names. Use the [Operations Academia university directory](https://www.operationsacademia.org/universities) as a dated discovery source, not an exhaustive population frame. Its cards combine schools and departments from postings and curated records; listing does not prove a department awards an in-scope PhD. Supplement it with official catalogs, archived university pages, dissertation repositories and documented predecessor programs. Distinguish university, school, department and program identities.
@@ -142,6 +144,8 @@ The project maintains two databases that will be merged into one entity model.
 **Broad mathematics pathways.** A current Mathematics PhD can be relevant when the same department's current research inventory explicitly names operations research and the graduate page connects doctoral students to that research. Record the formal award as Mathematics, with OR as a field, rather than inventing a named OR doctorate. Nevada Reno is a reviewed example (23 October 2026); unrelated campuses and unresolved engineering candidates remain distinct.
 
 The same award/field distinction applies to Melbourne's Science PhD in its Operations Research research group and UCF's Modeling and Simulation PhD with expressly offered supply-chain/logistics doctoral research. Count each distinct broad award pathway once; a preliminary masters phase, alternative admission track, or collaborating research centre does not create another doctorate.
+
+For an interdisciplinary doctorate, count the awarded programme once even when its curriculum and research span several participating departments. Colorado School of Mines' Operations Research with Engineering PhD is one such route. Distinct programmes within one university and different schools remain separate when official award pages establish each, as with NOVA's Management and Industrial Engineering PhDs.
 
 ### Where an employer is placed (18 October 2026)
 
