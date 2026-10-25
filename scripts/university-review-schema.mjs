@@ -53,8 +53,9 @@ export function validateUniversityReviews(records, originals) {
     for (const u of r.units) {
       assert(text(u.id) && !unitIds.has(u.id), fail('duplicate unit ID')); unitIds.add(u.id);
       assert(text(u.name) && (u.school === null || text(u.school)) && types.has(u.type), fail('unit name, parent and type required'));
+      if (u.temporalStatus !== undefined) assert(u.temporalStatus === 'historical', fail('unsupported unit temporal status'));
       assert(!/^[A-Z]{1,5}(?:[\/&+, -]+[A-Z]{1,5})*$/.test(u.name), fail('acronym-only unit name; official full name required'));
-      const key = [u.name, u.school, u.type].join('|').normalize('NFKC').toLocaleLowerCase();
+      const key = [u.name, u.school, u.type, u.temporalStatus || ''].join('|').normalize('NFKC').toLocaleLowerCase();
       assert(!unitNames.has(key), fail('duplicate canonical unit')); unitNames.add(key);
       assert(Array.isArray(u.fields) && u.fields.length && u.fields.every(f => fields.has(f)), fail('unit requires operations scope'));
       assert(date(u.checkedAt) && supported(u.sourceUrl, u.checkedAt) && text(u.evidence), fail('unit requires read source and evidence'));

@@ -5,11 +5,11 @@
   "totalOmListFaculty": 2149,
   "facultyWithoutNamedPhdInstitution": 24,
   "distinctReportedInstitutionLabels": 369,
-  "rankedInstitutionLeads": 365,
-  "matchedLeads": 260,
-  "unresolvedLeads": 105,
-  "withVerifiedCurrentRoutes": 184,
-  "withCompletedCurrentBranchScope": 166,
+  "rankedInstitutionLeads": 364,
+  "matchedLeads": 267,
+  "unresolvedLeads": 97,
+  "withVerifiedCurrentRoutes": 187,
+  "withCompletedCurrentBranchScope": 168,
   "records": [
     {
       "id": "massachusetts-institute-of-technology",
@@ -3722,13 +3722,16 @@
           "branches": [
             {
               "branch": "business",
-              "reviewState": "partial",
-              "conclusion": "Full Smith doctoral specialization inventory and OM/MS route were read on 21 October. SCM remains a recorded doctoral specialization, but its strict title eligibility through the current host remains unresolved: doctoral page names Logistics, Business and Public Policy, whereas current DOIT page states SCM remit. Preserve null SCM department and original facts; do not infer a new current LBPP department or treat historical wording as resolved.",
+              "reviewState": "checked",
+              "conclusion": "Full actual current Smith doctoral specialty inventory and specific SCM host follow-up checked. Preserve verified OM/MS route. Specific SCM doctoral page and2026–27catalogue name LBPP department; no matching Ops/MS/IE title and no actual source establishes PhD transfer to DOIT, so separate186title exclusion proposed. Current departmental directory/DOIT taught SCM remit conflict is preserved without inferred merger date. IS is another specialty under the same broad Smith parent, not another Operations route from generic shared host.",
               "sourceUrls": [
                 "https://www.rhsmith.umd.edu/programs/phd/academics/areas-specialization/operations-managementmanagement-science-omms",
                 "https://www.rhsmith.umd.edu/programs/phd/academics/areas-specialization/supply-chain-management-scm",
                 "https://www.rhsmith.umd.edu/programs/phd/academics/areas-specialization",
-                "https://www.rhsmith.umd.edu/departments/decision-operations-information-technologies"
+                "https://www.rhsmith.umd.edu/departments/decision-operations-information-technologies",
+                "https://www.rhsmith.umd.edu/departments",
+                "https://academiccatalog.umd.edu/undergraduate/colleges-schools/business/logistics-business-public-policy/",
+                "https://www.rhsmith.umd.edu/programs/phd/academics/areas-specialization/information-systems"
               ]
             },
             {
@@ -3990,15 +3993,56 @@
               "toolCrawlLabel": "yesterday",
               "note": "Full substantive Civil PhD and five named research areas read: Disaster Resilience, Environment/Resources, Infrastructure Systems, Project Management, Transportation/Mobility. Degree explicitly Civil Engineering regardless research specialization. No matching Operations/MS/IE area title; logistics/analytics applications in transportation not separate OR field.",
               "accessMethod": "web.open/click actual official HTML; authorized fallback"
+            },
+            {
+              "url": "https://www.rhsmith.umd.edu/programs/phd/academics/areas-specialization/supply-chain-management-scm",
+              "checkedAt": "2026-10-25",
+              "outcome": "read",
+              "accessMethod": "web.open/click/find actual official HTML; authorized fallback",
+              "note": "Full substantive SCM PhD page freshly read. Explicit specialization operates under Department of Logistics, Business, and Public Policy. Method/journal names not converted into programme titles. Alumni rows incidental to page and not used for Stage2/graduate career verification."
+            },
+            {
+              "url": "https://www.rhsmith.umd.edu/departments",
+              "checkedAt": "2026-10-25",
+              "outcome": "read",
+              "accessMethod": "web.open/click/find actual official HTML; authorized fallback",
+              "note": "Complete current five-department list read, including DOIT and omitting LBPP. This conflicts with specific doctoral and dated catalogue host evidence; no merger date inferred."
+            },
+            {
+              "url": "https://www.rhsmith.umd.edu/departments/decision-operations-information-technologies",
+              "checkedAt": "2026-10-25",
+              "outcome": "read",
+              "accessMethod": "web.open/click/find actual official HTML; authorized fallback",
+              "note": "Full actual DOIT page read. Lists SCM undergraduate major and MS plus a generic PhD and Information Systems DBA. Does not specifically assign SCM PhD to DOIT. Generic research/course overlap is insufficient for doctoral host transfer."
+            },
+            {
+              "url": "https://academiccatalog.umd.edu/undergraduate/colleges-schools/business/logistics-business-public-policy/",
+              "checkedAt": "2026-10-25",
+              "outcome": "read",
+              "accessMethod": "web.open/click/find actual official HTML; authorized fallback",
+              "note": "Actual2026–27 Catalogue substantive body and faculty/programme tabs text read using opened page plus find context. Explicit Logistics, Business, and Public Policy Department offers undergraduate International Business and SCM majors. Corroborates actual department identity, not independent proof of doctoral transfer or a reorganization date."
+            },
+            {
+              "url": "https://www.rhsmith.umd.edu/programs/phd/academics/areas-specialization",
+              "checkedAt": "2026-10-25",
+              "outcome": "read",
+              "accessMethod": "web.click actual full official HTML; authorized fallback",
+              "note": "Complete actual PhD specialization list read: nine linked specialties despite introductory text saying seven areas/five departments. OM/MS explicitly named. No numerical correction inferred beyond observed list discrepancy."
+            },
+            {
+              "url": "https://www.rhsmith.umd.edu/programs/phd/academics/areas-specialization/information-systems",
+              "checkedAt": "2026-10-25",
+              "outcome": "read",
+              "accessMethod": "web.click actual full official HTML; authorized fallback",
+              "note": "Full substantive Information Systems doctoral specialty read: actual DOIT department host, named field IS/economics/behaviour/social/marketing/healthcare. A different nonmatching specialty under combined Operations department is not independently re-labelled an Operations doctorate; parent Smith PhD with actual OM/MS specialty remains one relevant route. Incidental placement rows not used for career research."
             }
           ],
           "limitations": [
-            "SCM strict title/current department-host linkage remains material and unresolved; business branch partial. Existing SCM observation is preserved, not newly approved under the title rule.",
-            "Operations research is a named application research area in Applied Mathematics, not a separately titled PhD or formal OR concentration.",
-            "Scientific Computation sample-plan PDF remains unread and was not reopened after the earlier access blocker; no additional route inferred.",
-            "Source ages and original per-fact dates are preserved. Scope completion does not refresh existing programme credentials, hosts or status dates. No research browser tabs were created."
+            "Conditional scope-only integration after186SCMtitle exclusion accepted. Preserve all current raw programme IDs including excluded SCM, exact original core facts, check dates and independently verified AMSC OR application-area composition.",
+            "Specific current SCM host evidence outweighs generic directory/taught offerings for title inclusion, but organizational mismatch remains explicit. Do not fill null department, infer merger or claim current department rename resolved.",
+            "Source-bounded doctoral title/field scope complete with earlier actual engineering/math inventories retained. No census of every individual research topic. No browser tabs or public merger commands."
           ],
-          "coverageComplete": false
+          "coverageComplete": true
         },
         {
           "status": "verified",
@@ -4147,8 +4191,8 @@
         "university-of-maryland--smith-phd-operations-management-management-science",
         "university-of-maryland--amsc-phd-applied-mathematics-operations-research"
       ],
-      "branchCoverageComplete": false,
-      "nextStep": "Verify official current relevant doctoral routes across business and engineering; record branch gaps"
+      "branchCoverageComplete": true,
+      "nextStep": "Current scoped doctoral inventory checked; retain evidence and historical limitations"
     },
     {
       "id": "duke-university",
@@ -24123,6 +24167,88 @@
       "nextStep": "Current scoped doctoral inventory checked; retain evidence and historical limitations"
     },
     {
+      "id": "indian-institute-of-management-kozhikode",
+      "name": "Indian Institute of Management Kozhikode",
+      "sourceUniversityIds": [
+        "indian-institute-of-management-kozhikode"
+      ],
+      "candidateUniversityIds": [
+        "indian-institute-of-management-kozhikode"
+      ],
+      "identityMatch": "accepted university/entity name",
+      "reportedFacultyCount": 2,
+      "reportedNames": [
+        "Indian Institute of Management, Kozhikode",
+        "IIM Kozhikode"
+      ],
+      "facultyIds": [
+        "omlist-2f0fa836a589c634",
+        "omlist-817ff0387070df85"
+      ],
+      "sourceUrls": [],
+      "owners": [
+        "integrator"
+      ],
+      "doctoralObservations": [
+        {
+          "status": "verified",
+          "checkedAt": "2026-10-25",
+          "programmeIds": [
+            "indian-institute-of-management-kozhikode--phd-management-dsom"
+          ],
+          "branches": [
+            {
+              "branch": "business",
+              "reviewState": "checked",
+              "conclusion": "Official 2026–27 policy inventories three admission/delivery tracks and all eight academic specialization areas; all three tracks share the PhD award and qualifying Decision Sciences and Operations Management field, represented as one route.",
+              "sourceUrls": [
+                "https://www.iimk.ac.in/academic-programmes/DP",
+                "https://iimk.ac.in/uploads/userfiles/Admissions_Policy_2026-27.pdf"
+              ]
+            },
+            {
+              "branch": "engineering",
+              "reviewState": "not-present",
+              "conclusion": "IIM Kozhikode's current academic and doctoral programme inventories are management-only; no engineering school or technical doctoral branch is listed by this institution.",
+              "sourceUrls": [
+                "https://www.iimk.ac.in/academic-programmes/DP"
+              ]
+            }
+          ],
+          "sources": [
+            {
+              "url": "https://www.iimk.ac.in/academic-programmes/DP",
+              "checkedAt": "2026-10-25",
+              "outcome": "read",
+              "note": "Full current doctoral overview and academic programme navigation."
+            },
+            {
+              "url": "https://iimk.ac.in/uploads/userfiles/Admissions_Policy_2026-27.pdf",
+              "checkedAt": "2026-10-25",
+              "outcome": "read",
+              "note": "Full 11-page official 2026–27 policy, PhD award, full list of tracks and areas, research thesis/viva."
+            },
+            {
+              "url": "https://iimk.ac.in/academic-area/Decision-Sciences-and-Operations-Management-Area",
+              "checkedAt": "2026-10-25",
+              "outcome": "read",
+              "note": "Full current formal academic area page."
+            }
+          ],
+          "limitations": [
+            "Three DPM tracks share the PhD degree and formal specialization and are consolidated into one doctoral route; track-specific credential notation is retained.",
+            "The imported 2021 individual degree report remains discovery only."
+          ],
+          "coverageComplete": true
+        }
+      ],
+      "verifiedCurrentProgrammeIds": [
+        "indian-institute-of-management-kozhikode--phd-management-dsom"
+      ],
+      "branchCoverageComplete": true,
+      "nextStep": "Current scoped doctoral inventory checked; retain evidence and historical limitations"
+    },
+    {
       "id": "indian-institute-of-technology-kharagpur",
       "name": "Indian Institute of Technology Kharagpur",
       "sourceUniversityIds": [
@@ -30141,11 +30267,15 @@
       "nextStep": "Verify official current relevant doctoral routes across business and engineering; record branch gaps"
     },
     {
-      "id": "unresolved:catholic university of eichstatt ingolstadt",
+      "id": "catholic-university-of-eichstatt-ingolstadt",
       "name": "Catholic University of Eichstätt-Ingolstadt",
-      "sourceUniversityIds": [],
-      "candidateUniversityIds": [],
-      "identityMatch": "unresolved discovery label",
+      "sourceUniversityIds": [
+        "catholic-university-of-eichstatt-ingolstadt"
+      ],
+      "candidateUniversityIds": [
+        "catholic-university-of-eichstatt-ingolstadt"
+      ],
+      "identityMatch": "accepted university/entity name",
       "reportedFacultyCount": 1,
       "reportedNames": [
         "Catholic University of Eichstätt-Ingolstadt"
@@ -30154,11 +30284,55 @@
         "omlist-8781c6693fe274d8"
       ],
       "sourceUrls": [],
-      "owners": [],
-      "doctoralObservations": [],
+      "owners": [
+        "integrator"
+      ],
+      "doctoralObservations": [
+        {
+          "status": "partial",
+          "checkedAt": "2026-10-25",
+          "programmeIds": [],
+          "branches": [
+            {
+              "branch": "business",
+              "reviewState": "partial",
+              "conclusion": "WFI Ingolstadt School of Management has research doctorates with dissertation and viva/disputation. Its current academic discipline Management and Organizations includes Operations Management professorships; professor titles alone do not establish a formal named Operations doctoral programme, area or host department. No qualifying route asserted yet.",
+              "sourceUrls": [
+                "https://www.ku.de/en/the-ku/faculties/wfi",
+                "https://www.ku.de/en/the-ku/faculties/wfi/research/doctoral-and-post-doctoral-studies"
+              ]
+            },
+            {
+              "branch": "engineering",
+              "reviewState": "not-started",
+              "conclusion": "Other faculties and technical named doctorate/unit inventory not reviewed.",
+              "sourceUrls": []
+            }
+          ],
+          "sources": [
+            {
+              "url": "https://www.ku.de/en/the-ku/faculties/wfi",
+              "checkedAt": "2026-10-25",
+              "outcome": "read",
+              "note": "Full WFI current school disciplinary and professorship structure."
+            },
+            {
+              "url": "https://www.ku.de/en/the-ku/faculties/wfi/research/doctoral-and-post-doctoral-studies",
+              "checkedAt": "2026-10-25",
+              "outcome": "read",
+              "note": "Full official business-school doctoral procedure; research dissertation and examination, no exact named Operations award."
+            }
+          ],
+          "limitations": [
+            "Business formal doctoral title/field inventory and technical faculties remain incomplete; Operations professorships are recorded but not promoted to qualifying programmes.",
+            "One OM List 2011 individual doctorate remains discovery only."
+          ],
+          "coverageComplete": false
+        }
+      ],
       "verifiedCurrentProgrammeIds": [],
       "branchCoverageComplete": false,
-      "nextStep": "Resolve official identity and add/associate discovery record without speculative merge"
+      "nextStep": "Verify official current relevant doctoral routes across business and engineering; record branch gaps"
     },
     {
       "id": "unresolved:centralesupelec",
@@ -30172,26 +30346,6 @@
       ],
       "facultyIds": [
         "omlist-f10c4a38e654e7b6"
-      ],
-      "sourceUrls": [],
-      "owners": [],
-      "doctoralObservations": [],
-      "verifiedCurrentProgrammeIds": [],
-      "branchCoverageComplete": false,
-      "nextStep": "Resolve official identity and add/associate discovery record without speculative merge"
-    },
-    {
-      "id": "unresolved:christian albrechts universitat kiel",
-      "name": "Christian-Albrechts-Universität Kiel",
-      "sourceUniversityIds": [],
-      "candidateUniversityIds": [],
-      "identityMatch": "unresolved discovery label",
-      "reportedFacultyCount": 1,
-      "reportedNames": [
-        "Christian-Albrechts-Universität Kiel"
-      ],
-      "facultyIds": [
-        "omlist-69f4e1e33a9951ce"
       ],
       "sourceUrls": [],
       "owners": [],
@@ -30693,11 +30847,15 @@
       "nextStep": "Resolve official identity and add/associate discovery record without speculative merge"
     },
     {
-      "id": "unresolved:friedrich schiller university of jena",
-      "name": "Friedrich Schiller University of Jena",
-      "sourceUniversityIds": [],
-      "candidateUniversityIds": [],
-      "identityMatch": "unresolved discovery label",
+      "id": "friedrich-schiller-university-jena",
+      "name": "Friedrich Schiller University Jena",
+      "sourceUniversityIds": [
+        "friedrich-schiller-university-jena"
+      ],
+      "candidateUniversityIds": [
+        "friedrich-schiller-university-jena"
+      ],
+      "identityMatch": "accepted university/entity name",
       "reportedFacultyCount": 1,
       "reportedNames": [
         "Friedrich Schiller University of Jena"
@@ -30706,11 +30864,72 @@
         "omlist-96098fb07eb8b871"
       ],
       "sourceUrls": [],
-      "owners": [],
-      "doctoralObservations": [],
+      "owners": [
+        "integrator"
+      ],
+      "doctoralObservations": [
+        {
+          "status": "partial",
+          "checkedAt": "2026-10-25",
+          "programmeIds": [],
+          "branches": [
+            {
+              "branch": "business",
+              "reviewState": "partial",
+              "conclusion": "Faculty of Economics and Business Administration operates current 2026–27 PhD procedures; opened faculty page and university regulations directory do not establish a formal named Operations/Management Science doctoral specialization. A 2026 doctoral job at the Operation Management chair documents a supervisor, not a named doctoral route.",
+              "sourceUrls": [
+                "https://www.wiwi.uni-jena.de/en/122/phd-process",
+                "https://www.uni-jena.de/en/16010/doctoral-examination-regulations",
+                "https://jobs.uni-jena.de/jobposting/6e8d08813470d575361e8ad8faa187c4c5401731"
+              ]
+            },
+            {
+              "branch": "engineering",
+              "reviewState": "partial",
+              "conclusion": "University current faculty regulations directory does not identify a standalone engineering faculty, but technical doctorates in mathematics/computer science remain to examine for actual formal Operations Research titles.",
+              "sourceUrls": [
+                "https://www.uni-jena.de/en/16010/doctoral-examination-regulations"
+              ]
+            },
+            {
+              "branch": "mathematics",
+              "reviewState": "partial",
+              "conclusion": "Faculty of Mathematics and Computer Science doctoral regulations are listed but its current formal research fields have not been fully read.",
+              "sourceUrls": [
+                "https://www.uni-jena.de/en/16010/doctoral-examination-regulations"
+              ]
+            }
+          ],
+          "sources": [
+            {
+              "url": "https://www.wiwi.uni-jena.de/en/122/phd-process",
+              "checkedAt": "2026-10-25",
+              "outcome": "read",
+              "note": "Full faculty doctoral-process page and 2026–27 board schedule."
+            },
+            {
+              "url": "https://www.uni-jena.de/en/16010/doctoral-examination-regulations",
+              "checkedAt": "2026-10-25",
+              "outcome": "read",
+              "note": "Full current university directory of faculty doctoral regulations."
+            },
+            {
+              "url": "https://jobs.uni-jena.de/jobposting/6e8d08813470d575361e8ad8faa187c4c5401731",
+              "checkedAt": "2026-10-25",
+              "outcome": "read",
+              "note": "Full official Operation Management chair doctoral job, not a formal doctoral title."
+            }
+          ],
+          "limitations": [
+            "No qualifying named doctoral programme or department yet established.",
+            "The imported 2012 individual degree is discovery only; formal doctoral-field inventories remain incomplete."
+          ],
+          "coverageComplete": false
+        }
+      ],
       "verifiedCurrentProgrammeIds": [],
       "branchCoverageComplete": false,
-      "nextStep": "Resolve official identity and add/associate discovery record without speculative merge"
+      "nextStep": "Verify official current relevant doctoral routes across business and engineering; record branch gaps"
     },
     {
       "id": "unresolved:geneva school of economics and management",
@@ -30744,26 +30963,6 @@
       ],
       "facultyIds": [
         "omlist-f7cf2389200818b0"
-      ],
-      "sourceUrls": [],
-      "owners": [],
-      "doctoralObservations": [],
-      "verifiedCurrentProgrammeIds": [],
-      "branchCoverageComplete": false,
-      "nextStep": "Resolve official identity and add/associate discovery record without speculative merge"
-    },
-    {
-      "id": "unresolved:grenoble alpes university",
-      "name": "Grenoble Alpes University",
-      "sourceUniversityIds": [],
-      "candidateUniversityIds": [],
-      "identityMatch": "unresolved discovery label",
-      "reportedFacultyCount": 1,
-      "reportedNames": [
-        "Grenoble Alpes University"
-      ],
-      "facultyIds": [
-        "omlist-43f09de7c188c926"
       ],
       "sourceUrls": [],
       "owners": [],
@@ -31006,26 +31205,6 @@
       "nextStep": "Verify official current relevant doctoral routes across business and engineering; record branch gaps"
     },
     {
-      "id": "unresolved:iim kozhikode",
-      "name": "IIM Kozhikode",
-      "sourceUniversityIds": [],
-      "candidateUniversityIds": [],
-      "identityMatch": "unresolved discovery label",
-      "reportedFacultyCount": 1,
-      "reportedNames": [
-        "IIM Kozhikode"
-      ],
-      "facultyIds": [
-        "omlist-817ff0387070df85"
-      ],
-      "sourceUrls": [],
-      "owners": [],
-      "doctoralObservations": [],
-      "verifiedCurrentProgrammeIds": [],
-      "branchCoverageComplete": false,
-      "nextStep": "Resolve official identity and add/associate discovery record without speculative merge"
-    },
-    {
       "id": "unresolved:imt atlantique",
       "name": "IMT Atlantique",
       "sourceUniversityIds": [],
@@ -31151,26 +31330,6 @@
       ],
       "facultyIds": [
         "omlist-d7c837d72cee119a"
-      ],
-      "sourceUrls": [],
-      "owners": [],
-      "doctoralObservations": [],
-      "verifiedCurrentProgrammeIds": [],
-      "branchCoverageComplete": false,
-      "nextStep": "Resolve official identity and add/associate discovery record without speculative merge"
-    },
-    {
-      "id": "unresolved:indian institute of management kozhikode",
-      "name": "Indian Institute of Management, Kozhikode",
-      "sourceUniversityIds": [],
-      "candidateUniversityIds": [],
-      "identityMatch": "unresolved discovery label",
-      "reportedFacultyCount": 1,
-      "reportedNames": [
-        "Indian Institute of Management, Kozhikode"
-      ],
-      "facultyIds": [
-        "omlist-2f0fa836a589c634"
       ],
       "sourceUrls": [],
       "owners": [],
@@ -31581,11 +31740,15 @@
       "nextStep": "Current scoped doctoral inventory checked; retain evidence and historical limitations"
     },
     {
-      "id": "unresolved:istanbul technical university",
+      "id": "istanbul-technical-university",
       "name": "Istanbul Technical University",
-      "sourceUniversityIds": [],
-      "candidateUniversityIds": [],
-      "identityMatch": "unresolved discovery label",
+      "sourceUniversityIds": [
+        "istanbul-technical-university"
+      ],
+      "candidateUniversityIds": [
+        "istanbul-technical-university"
+      ],
+      "identityMatch": "accepted university/entity name",
       "reportedFacultyCount": 1,
       "reportedNames": [
         "Istanbul Technical University"
@@ -31594,11 +31757,61 @@
         "omlist-c0fb23821353e927"
       ],
       "sourceUrls": [],
-      "owners": [],
-      "doctoralObservations": [],
-      "verifiedCurrentProgrammeIds": [],
+      "owners": [
+        "integrator"
+      ],
+      "doctoralObservations": [
+        {
+          "status": "verified",
+          "checkedAt": "2026-10-25",
+          "programmeIds": [
+            "istanbul-technical-university--industrial-engineering-phd"
+          ],
+          "branches": [
+            {
+              "branch": "business",
+              "reviewState": "partial",
+              "conclusion": "The Industrial Engineering doctoral programme is taught at the Faculty of Management; other faculty doctoral programmes and formally named Operations fields require a current title inventory.",
+              "sourceUrls": [
+                "https://www.tyyc.itu.edu.tr/ProgramHakkinda.php?Dili=EN&Program=END_EM_DR",
+                "https://end.itu.edu.tr/en/education/phd-program"
+              ]
+            },
+            {
+              "branch": "engineering",
+              "reviewState": "partial",
+              "conclusion": "One current Industrial Engineering doctoral title and host department verified; other engineering and quantitative school fields remain to inventory for further exact title matches.",
+              "sourceUrls": [
+                "https://www.tyyc.itu.edu.tr/ProgramHakkinda.php?Dili=EN&Program=END_EM_DR"
+              ]
+            }
+          ],
+          "sources": [
+            {
+              "url": "https://www.tyyc.itu.edu.tr/ProgramHakkinda.php?Dili=EN&Program=END_EM_DR",
+              "checkedAt": "2026-10-25",
+              "outcome": "read",
+              "note": "Full official 2026–27 doctoral programme and degree profile."
+            },
+            {
+              "url": "https://end.itu.edu.tr/en/education/phd-program",
+              "checkedAt": "2026-10-25",
+              "outcome": "read",
+              "note": "Full current department PhD page, original research and thesis requirement."
+            }
+          ],
+          "limitations": [
+            "Full university-wide business, engineering and mathematical doctoral title inventories are not complete; current Industrial Engineering route alone is verified.",
+            "OM List individual's reported 2010 doctorate is discovery only and not matched to programme evidence."
+          ],
+          "coverageComplete": false
+        }
+      ],
+      "verifiedCurrentProgrammeIds": [
+        "istanbul-technical-university--industrial-engineering-phd"
+      ],
       "branchCoverageComplete": false,
-      "nextStep": "Resolve official identity and add/associate discovery record without speculative merge"
+      "nextStep": "Verify official current relevant doctoral routes across business and engineering; record branch gaps"
     },
     {
       "id": "unresolved:j c bose university of science and technology",
@@ -31917,6 +32130,82 @@
       "verifiedCurrentProgrammeIds": [],
       "branchCoverageComplete": true,
       "nextStep": "Current scoped doctoral inventory checked; retain evidence and historical limitations"
+    },
+    {
+      "id": "kiel-university",
+      "name": "Kiel University",
+      "sourceUniversityIds": [
+        "kiel-university"
+      ],
+      "candidateUniversityIds": [
+        "kiel-university"
+      ],
+      "identityMatch": "accepted university/entity name",
+      "reportedFacultyCount": 1,
+      "reportedNames": [
+        "Christian-Albrechts-Universität Kiel"
+      ],
+      "facultyIds": [
+        "omlist-69f4e1e33a9951ce"
+      ],
+      "sourceUrls": [],
+      "owners": [
+        "integrator"
+      ],
+      "doctoralObservations": [
+        {
+          "status": "partial",
+          "checkedAt": "2026-10-25",
+          "programmeIds": [],
+          "branches": [
+            {
+              "branch": "business",
+              "reviewState": "partial",
+              "conclusion": "Current Faculty of Business, Economics and Social Sciences navigation lists Institute of Business Administration and a Supply Chain Management professorship, and a Quantitative Economics doctoral programme; no formal named Operations/Management Science doctoral award/area verified from opened pages. Professor research and doctoral job topics do not qualify.",
+              "sourceUrls": [
+                "https://www.uni-kiel.de/de/wiso/institute-professuren/bwl/professuren/supply-chain-management",
+                "https://www.uni-kiel.de/en/wiso/faculty/doctorate-habilitation/doctoral-programme-quantitative-economics/co-operations"
+              ]
+            },
+            {
+              "branch": "engineering",
+              "reviewState": "partial",
+              "conclusion": "Official 2026 technical faculty vacancy names doctoral research in electronic/information engineering and accepts industrial-engineering prior degrees; this is not an Industrial Engineering doctoral title. Other technical doctoral-field inventory not complete.",
+              "sourceUrls": [
+                "https://jobs.uni-kiel.de/jobposting/a0adcefbc6e05f6115c6b1fca8e9fae2cb060f900"
+              ]
+            }
+          ],
+          "sources": [
+            {
+              "url": "https://www.uni-kiel.de/de/wiso/institute-professuren/bwl/professuren/supply-chain-management",
+              "checkedAt": "2026-10-25",
+              "outcome": "read",
+              "note": "Full current faculty navigation and Supply Chain Management professorship page after official redirect."
+            },
+            {
+              "url": "https://www.uni-kiel.de/en/wiso/faculty/doctorate-habilitation/doctoral-programme-quantitative-economics/co-operations",
+              "checkedAt": "2026-10-25",
+              "outcome": "read",
+              "note": "Full official Quantitative Economics doctoral programme cooperation page; no named Operations/IE route on this evidence."
+            },
+            {
+              "url": "https://jobs.uni-kiel.de/jobposting/a0adcefbc6e05f6115c6b1fca8e9fae2cb060f900",
+              "checkedAt": "2026-10-25",
+              "outcome": "read",
+              "note": "Full official 2026 job page, prior degree in industrial engineering only, not a formal doctoral title."
+            }
+          ],
+          "limitations": [
+            "No title-qualifying current doctorate asserted from subject/research terms alone; formal business and technical doctoral field inventories remain incomplete.",
+            "One imported 2022 individual doctorate remains discovery only."
+          ],
+          "coverageComplete": false
+        }
+      ],
+      "verifiedCurrentProgrammeIds": [],
+      "branchCoverageComplete": false,
+      "nextStep": "Verify official current relevant doctoral routes across business and engineering; record branch gaps"
     },
     {
       "id": "kobe-university",
@@ -35879,26 +36168,6 @@
       "nextStep": "Current scoped doctoral inventory checked; retain evidence and historical limitations"
     },
     {
-      "id": "unresolved:universite de geneve",
-      "name": "Université de Genève",
-      "sourceUniversityIds": [],
-      "candidateUniversityIds": [],
-      "identityMatch": "unresolved discovery label",
-      "reportedFacultyCount": 1,
-      "reportedNames": [
-        "Université de Genève"
-      ],
-      "facultyIds": [
-        "omlist-bd0df95c1dfccf73"
-      ],
-      "sourceUrls": [],
-      "owners": [],
-      "doctoralObservations": [],
-      "verifiedCurrentProgrammeIds": [],
-      "branchCoverageComplete": false,
-      "nextStep": "Resolve official identity and add/associate discovery record without speculative merge"
-    },
-    {
       "id": "unresolved:universite de lille",
       "name": "Université de Lille",
       "sourceUniversityIds": [],
@@ -35957,6 +36226,110 @@
       "verifiedCurrentProgrammeIds": [],
       "branchCoverageComplete": false,
       "nextStep": "Resolve official identity and add/associate discovery record without speculative merge"
+    },
+    {
+      "id": "universite-grenoble-alpes",
+      "name": "Université Grenoble Alpes",
+      "sourceUniversityIds": [
+        "universite-grenoble-alpes"
+      ],
+      "candidateUniversityIds": [
+        "universite-grenoble-alpes"
+      ],
+      "identityMatch": "accepted university/entity name",
+      "reportedFacultyCount": 1,
+      "reportedNames": [
+        "Grenoble Alpes University"
+      ],
+      "facultyIds": [
+        "omlist-43f09de7c188c926"
+      ],
+      "sourceUrls": [],
+      "owners": [
+        "integrator"
+      ],
+      "doctoralObservations": [
+        {
+          "status": "verified",
+          "checkedAt": "2026-10-25",
+          "programmeIds": [
+            "universite-grenoble-alpes--industrial-engineering-conception-production-phd"
+          ],
+          "branches": [
+            {
+              "branch": "business",
+              "reviewState": "checked",
+              "conclusion": "Doctoral School of Management Sciences full five-specialty inventory read: Finance, HR, Strategic Management, Marketing, and Information Systems–Supply Chain Management; none is formally named Operations, quantitative Management Science or Industrial Engineering. The broad Gestion school title is not itself a quantitative Management Science qualification.",
+              "sourceUrls": [
+                "https://doctorat.univ-grenoble-alpes.fr/doctoral-college/doctoral-schools/doctoral-school-of-management-sciences-803929.kjsp",
+                "https://doctorat.univ-grenoble-alpes.fr/preparing-a-phd/doctorate-enrolment/application-and-admission-to-doctoral-school-890537.kjsp"
+              ]
+            },
+            {
+              "branch": "engineering",
+              "reviewState": "checked",
+              "conclusion": "Official I-MEP² doctoral school names five PhD specialty domains, including GI Industrial engineering: conception and production. This is the one title-eligible engineering specialty evidenced, while mechanics, materials, electrochemistry and process fields are distinct.",
+              "sourceUrls": [
+                "https://doctorat.univ-grenoble-alpes.fr/preparing-a-phd/doctorate-enrolment/application-and-admission-to-doctoral-school-890537.kjsp",
+                "https://edimep2.univ-grenoble-alpes.fr/doctoral-school/phd-specialities/",
+                "https://edimep2.univ-grenoble-alpes.fr/apply/conditions-and-prerequisites/"
+              ]
+            },
+            {
+              "branch": "mathematics",
+              "reviewState": "checked",
+              "conclusion": "MSTII formal PhD specialty inventory lists Computer Science, Mathematics-Informatics, Applied Mathematics, Mathematics, with no named Operations Research specialty.",
+              "sourceUrls": [
+                "https://doctorat.univ-grenoble-alpes.fr/preparing-a-phd/doctorate-enrolment/application-and-admission-to-doctoral-school-890537.kjsp",
+                "https://edmstii.univ-grenoble-alpes.fr/mstii-doctoral-school/phd-specialities/"
+              ]
+            }
+          ],
+          "sources": [
+            {
+              "url": "https://doctorat.univ-grenoble-alpes.fr/preparing-a-phd/doctorate-enrolment/application-and-admission-to-doctoral-school-890537.kjsp",
+              "checkedAt": "2026-10-25",
+              "outcome": "read",
+              "note": "Full current university Doctoral College enrolment page and school list, updated 2 October 2026."
+            },
+            {
+              "url": "https://doctorat.univ-grenoble-alpes.fr/doctoral-college/doctoral-schools/doctoral-school-of-management-sciences-803929.kjsp",
+              "checkedAt": "2026-10-25",
+              "outcome": "read",
+              "note": "Full official Management Sciences doctoral school page, exact title and five specialties."
+            },
+            {
+              "url": "https://edimep2.univ-grenoble-alpes.fr/doctoral-school/phd-specialities/",
+              "checkedAt": "2026-10-25",
+              "outcome": "read",
+              "note": "Full formal GI Industrial engineering PhD specialty inventory."
+            },
+            {
+              "url": "https://edimep2.univ-grenoble-alpes.fr/apply/conditions-and-prerequisites/",
+              "checkedAt": "2026-10-25",
+              "outcome": "read",
+              "note": "Full engineering doctoral school admissions page confirms current original-thesis route."
+            },
+            {
+              "url": "https://edmstii.univ-grenoble-alpes.fr/mstii-doctoral-school/phd-specialities/",
+              "checkedAt": "2026-10-25",
+              "outcome": "read",
+              "note": "Full math/informatics formal PhD specialty inventory, no OR field."
+            }
+          ],
+          "limitations": [
+            "Formal Industrial engineering: conception and production PhD specialty qualifies; broad Management Sciences school and its five specialties do not.",
+            "The relevant formal fields of business, engineering and mathematics/informatics doctoral schools were read, but additional university schools not exhaustively inventoried; global scope stays partial.",
+            "Imported individual 2021 doctorate remains discovery only."
+          ],
+          "coverageComplete": false
+        }
+      ],
+      "verifiedCurrentProgrammeIds": [
+        "universite-grenoble-alpes--industrial-engineering-conception-production-phd"
+      ],
+      "branchCoverageComplete": false,
+      "nextStep": "Verify official current relevant doctoral routes across business and engineering; record branch gaps"
     },
     {
       "id": "unresolved:universite paris saclay",
@@ -36296,13 +36669,17 @@
             {
               "branch": "engineering",
               "reviewState": "partial",
-              "conclusion": "New current departmental PhD objectives explicitly connect Mechanical Engineering doctorate to Engineering Systems Integration, Reliability and Operations. Its actual research specialization explicitly defines OR/Decision Analytics and logistics/supply-chain operations. Mechanical PhD pathway now verified independently of still-unallocated Engineering Management award. Wider engineering/math doctoral inventory remains incomplete. Follow-up25 October: complete Engineering degree inventory and Civil/Environmental graduate named field inventory read. Current separate Engineering Management PhD primary presents robot-verification challenge and body was not read; no bypass. Prior Mechanical Operations pathway remains separate and original dates unchanged. Remaining Engineering Management field allocation and other plausible technical fields stay explicit.",
+              "conclusion": "Full current engineering programme inventory and earlier Mechanical/Civil/Environmental/Mining/Petroleum field checks retained. Newly actual ECE PhD twelve-field list and department thirteen-field inventory plus Computing Science standard/Statistical Machine Learning doctoral routes and sixteen research areas read. No additional title-eligible field established. Separate Engineering Management exact doctoral Operations Research field allocation remains unresolved; challenged163source not retried, no second Mechanical/OR route inferred.",
               "sourceUrls": [
                 "https://www.ualberta.ca/en/graduate-programs/doctor-of-philosophy-in-engineering-management-mechanical-engineering.html",
                 "https://www.ualberta.ca/en/engineering/mechanical-engineering/research/engineering-systems-integration-reliability-and-operations.html",
                 "https://www.ualberta.ca/en/engineering/mechanical-engineering/graduate/doctor-of-philosophy.html",
                 "https://www.ualberta.ca/en/engineering/programs/graduate/index.html",
-                "https://www.ualberta.ca/en/engineering/civil-environmental-engineering/graduate/index.html"
+                "https://www.ualberta.ca/en/engineering/civil-environmental-engineering/graduate/index.html",
+                "https://www.ualberta.ca/en/graduate-programs/doctor-of-philosophy-electrical-and-computer-engineering.html",
+                "https://www.ualberta.ca/en/engineering/electrical-computer-engineering/research/index.html",
+                "https://www.ualberta.ca/en/graduate-programs/doctor-of-philosophy-computing-science.html",
+                "https://www.ualberta.ca/en/computing-science/research/research-areas/index.html"
               ]
             },
             {
@@ -36384,14 +36761,40 @@
               "outcome": "blocked",
               "checkedAt": "2026-10-25",
               "accessMethod": "web.open/click actual official HTML; authorized fallback"
+            },
+            {
+              "url": "https://www.ualberta.ca/en/graduate-programs/doctor-of-philosophy-electrical-and-computer-engineering.html",
+              "checkedAt": "2026-10-25",
+              "outcome": "read",
+              "accessMethod": "web.open actual official full HTML; authorized fallback",
+              "note": "Full actual ECE PhD programme and complete twelve named research areas read. Original thesis and candidacy required; fields biomedical,communications,computing,control,electromagnetics,energy,circuits,nanodevices,photonics,signal processing,software/intelligent systems,solid-state electronics. No matching Ops/MS/IE named doctoral field."
+            },
+            {
+              "url": "https://www.ualberta.ca/en/engineering/electrical-computer-engineering/research/index.html",
+              "checkedAt": "2026-10-25",
+              "outcome": "read",
+              "accessMethod": "web.open actual official full HTML; authorized fallback",
+              "note": "Full actual department research descriptions and complete thirteen named areas read, adding AI Robotics Machine Learning to programme list. No matching title; individual control/optimization uses not converted into Operations doctorate."
+            },
+            {
+              "url": "https://www.ualberta.ca/en/graduate-programs/doctor-of-philosophy-computing-science.html",
+              "checkedAt": "2026-10-25",
+              "outcome": "read",
+              "accessMethod": "web.open actual official full HTML; authorized fallback",
+              "note": "Full actual Computing Science PhD programme requirements and degree/field inventory read: standard PhD plus Statistical Machine Learning specialization; other Multimedia route only MSc. Original doctoral dissertation and candidacy required. No matching Ops/MS/IE title."
+            },
+            {
+              "url": "https://www.ualberta.ca/en/computing-science/research/research-areas/index.html",
+              "checkedAt": "2026-10-25",
+              "outcome": "read",
+              "accessMethod": "web.open actual official full HTML; authorized fallback",
+              "note": "Entire substantive16-area inventory and descriptions read across two displayed sections, including algorithms,AI,networks,games,graphics,vision,databases,HCI,machine learning,NLP,privacy,reinforcement learning,robotics,software. Broad faculty research categories explicitly distinguished from formal degree specialization. No matching Ops/MS/IE named field."
             }
           ],
           "limitations": [
-            "Prior Business OIS doctoral facts/dates preserved. Mechanical PhD now explicitly linked to OR/Decision Analytics via actual programme objectives and identically named research area.",
-            "Earlier Engineering Management-to-OR ambiguity is not silently converted into another route; separate award remains observed but not assigned OR solely from departmental umbrella.",
-            "Broader university engineering/mathematical inventories remain incomplete; no institutional completeness claim.",
-            "Current Engineering Management primary access failed at robot-verification page; prior evidence preserved with original date, no new source verification claimed.",
-            "Full Math/Stats degree/field matrix now checked; remaining Engineering Management field allocation and wider computing/electrical technical fields unresolved. No browser tabs created."
+            "Scope-only composition preserves both existing doctoral programme exact cores, facts, original source-check dates and title decisions. No new programme or credential refresh.",
+            "Prior completed faculty inventory, Civil/Mining/Petroleum and Mechanical/Math fields retained. Current Electrical/Computer and Science Computing named fields now checked. Only separate Engineering Management exact doctoral OR allocation remains material technical gap; blocked source retained without retry.",
+            "No browser tabs or public merger commands."
           ],
           "coverageComplete": false
         }
@@ -37265,6 +37668,91 @@
       "verifiedCurrentProgrammeIds": [],
       "branchCoverageComplete": false,
       "nextStep": "Resolve official identity and add/associate discovery record without speculative merge"
+    },
+    {
+      "id": "university-of-geneva",
+      "name": "University of Geneva",
+      "sourceUniversityIds": [
+        "university-of-geneva"
+      ],
+      "candidateUniversityIds": [
+        "university-of-geneva"
+      ],
+      "identityMatch": "accepted university/entity name",
+      "reportedFacultyCount": 1,
+      "reportedNames": [
+        "Université de Genève"
+      ],
+      "facultyIds": [
+        "omlist-bd0df95c1dfccf73"
+      ],
+      "sourceUrls": [],
+      "owners": [
+        "integrator"
+      ],
+      "doctoralObservations": [
+        {
+          "status": "partial",
+          "checkedAt": "2026-10-25",
+          "programmeIds": [],
+          "branches": [
+            {
+              "branch": "business",
+              "reviewState": "partial",
+              "conclusion": "GSEM formally offers Ph.D. in Management and advertises Operations Management as an Institute of Management research area, but the checked PhD and admissions pages do not title a doctoral programme/specialization Operations or quantitative Management Science.",
+              "sourceUrls": [
+                "https://www.unige.ch/gsem/en/programs/phd/management",
+                "https://www.unige.ch/gsem/en/research/institutes/iom",
+                "https://www.unige.ch/gsem/en/students/phd/admissions/"
+              ]
+            },
+            {
+              "branch": "engineering",
+              "reviewState": "partial",
+              "conclusion": "University-wide technical doctoral inventory not yet read; no Industrial Engineering or Operations Research route inferred.",
+              "sourceUrls": [
+                "https://www.unige.ch/gsem/en/programs/phd/management"
+              ]
+            },
+            {
+              "branch": "mathematics",
+              "reviewState": "partial",
+              "conclusion": "University-wide mathematics and statistics formal doctoral specializations not yet read.",
+              "sourceUrls": [
+                "https://www.unige.ch/gsem/en/students/phd/admissions/"
+              ]
+            }
+          ],
+          "sources": [
+            {
+              "url": "https://www.unige.ch/gsem/en/programs/phd/management",
+              "checkedAt": "2026-10-25",
+              "outcome": "read",
+              "note": "Full Ph.D. in Management page, exact university awarder, research-thesis requirements."
+            },
+            {
+              "url": "https://www.unige.ch/gsem/en/research/institutes/iom",
+              "checkedAt": "2026-10-25",
+              "outcome": "read",
+              "note": "Full current Institute of Management research areas and PhD teaching description."
+            },
+            {
+              "url": "https://www.unige.ch/gsem/en/students/phd/admissions/",
+              "checkedAt": "2026-10-25",
+              "outcome": "read",
+              "note": "Full admissions list of GSEM doctoral subjects, including generic Management."
+            }
+          ],
+          "limitations": [
+            "No title-eligible formal doctoral route established from GSEM's generic Management PhD or Operations Management research area.",
+            "University-wide technical and quantitative doctoral specialization inventories incomplete; two imported individual degree reports remain discovery only."
+          ],
+          "coverageComplete": false
+        }
+      ],
+      "verifiedCurrentProgrammeIds": [],
+      "branchCoverageComplete": false,
+      "nextStep": "Verify official current relevant doctoral routes across business and engineering; record branch gaps"
     },
     {
       "id": "unresolved:university of giessen",

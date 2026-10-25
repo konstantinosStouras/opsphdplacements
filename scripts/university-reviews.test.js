@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { universityRows } from '../assets/university-model.js';
+import { universityRows, universityUnitTypeLabel } from '../assets/university-model.js';
 import { validateUniversityReviews } from './university-review-schema.mjs';
 
 const original = [
@@ -16,6 +16,16 @@ const review = () => ({
   decisions: [{ sourceDepartmentId: 'z-om', disposition: 'replaced', unitIds: ['z--operations'], reason: 'Official full name.' }],
   sources: [{ url: 'https://example.edu/operations', checkedAt: '2026-10-20', outcome: 'read', note: 'Department and university identified.' }],
   limitations: [], duplicateOf: null
+});
+test('historical units remain labelled and distinct from same-named later units', () => {
+  const r = review();
+  r.units.push({...structuredClone(r.units[0]), id:'z--historic-operations', temporalStatus:'historical', evidence:'Official archive identifies this historical department; successor and closure date unknown.'});
+  assert.doesNotThrow(() => validateUniversityReviews([r], original));
+  const row = universityRows(original, [r]).find(x=>x.id==='z');
+  assert.equal(row.units.length, 2);
+  assert.deepEqual(row.units.map(universityUnitTypeLabel), ['department','Historical department']);
+  r.units[1].temporalStatus='probably-current';
+  assert.throws(() => validateUniversityReviews([r], original), /temporal status/);
 });
 test('unreviewed names remain separate and have no verified units or fabricated dates', () => {
   const rows = universityRows(original);

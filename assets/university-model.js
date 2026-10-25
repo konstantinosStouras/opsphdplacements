@@ -1,6 +1,7 @@
 import {hasNamedOperationsScope} from './program-model.js';
 // Reviewed observations overlay the immutable directory import; no fuzzy identity merges.
 export const universityOrder = (a, b) => a.name.localeCompare(b.name, 'en', { sensitivity: 'base' }) || a.id.localeCompare(b.id);
+export const universityUnitTypeLabel = unit => unit.temporalStatus === 'historical' ? `Historical ${unit.type}` : unit.type;
 
 export function universityRows(imported, observations = []) {
   const byId = new Map(imported.map(r => [r.id, r]));
@@ -28,7 +29,7 @@ export function universityRows(imported, observations = []) {
     // Same official unit can be listed by multiple imported aliases. Preserve all evidence.
     const unitMap = new Map();
     for (const observation of checked) for (const unit of observation.units) {
-      const key = [unit.name, unit.school || '', unit.type].join('|').normalize('NFKC').toLocaleLowerCase();
+      const key = [unit.name, unit.school || '', unit.type, unit.temporalStatus || ''].join('|').normalize('NFKC').toLocaleLowerCase();
       if (!unitMap.has(key)) unitMap.set(key, { ...unit, evidenceSources: [] });
       const u = unitMap.get(key);
       if (!u.evidenceSources.some(s => s.sourceUrl === unit.sourceUrl && s.checkedAt === unit.checkedAt)) u.evidenceSources.push(unit);

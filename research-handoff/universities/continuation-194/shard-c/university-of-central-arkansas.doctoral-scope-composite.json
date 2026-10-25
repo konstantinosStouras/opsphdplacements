@@ -1,0 +1,61 @@
+{
+  "universityId": "university-of-central-arkansas",
+  "checkedAt": "2026-10-25",
+  "status": "no-qualifying-programme-verified",
+  "coverageComplete": true,
+  "programmes": [],
+  "branches": [
+    {
+      "branch": "business",
+      "reviewState": "checked",
+      "conclusion": "Official current2026–27 complete graduate degree inventory read: business offers MBA and Master of Accountancy; only PhD titles are Leadership for Inclusion and Equity, Physical Therapy and Psychology. No matching business Operations/MS/IE doctorate verified.",
+      "sourceUrls": [
+        "https://uca.edu/gbulletin/home/",
+        "https://uca.edu/gbulletin/the-graduate-school/"
+      ]
+    },
+    {
+      "branch": "engineering",
+      "reviewState": "checked",
+      "conclusion": "Same complete university-wide graduate degree inventory read; no engineering doctorate listed. Computing, Applied Mathematics and Applied Data Analytics are masters, not doctorate provision. Unrelated health/education PhD and professional clinical doctorates do not qualify.",
+      "sourceUrls": [
+        "https://uca.edu/gbulletin/home/",
+        "https://uca.edu/gbulletin/the-graduate-school/"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://uca.edu/graduateschool/gradprograms/",
+      "checkedAt": "2026-10-22",
+      "outcome": "blocked",
+      "note": "Chrome navigation/body timed out; fresh browser state displayed site cannot be reached ERR_TIMED_OUT. No primary programme content read, no qualification inferred."
+    },
+    {
+      "url": "https://uca.edu/gbulletin/home/",
+      "checkedAt": "2026-10-25",
+      "outcome": "read",
+      "accessMethod": "web.open actual official HTML; authorized fallback",
+      "note": "Full official bulletin landing read. Published June2026, identifies this as official current2026–27 Graduate Bulletin effective Fall2026."
+    },
+    {
+      "url": "https://uca.edu/gbulletin/fields-of-study/",
+      "checkedAt": "2026-10-25",
+      "outcome": "blocked",
+      "accessMethod": "web.click actual bulletin Fields of Study link",
+      "note": "Field index fetch timed out, body unread. No retry. Separate current complete degree list on actual Graduate School bulletin page read instead."
+    },
+    {
+      "url": "https://uca.edu/gbulletin/the-graduate-school/",
+      "checkedAt": "2026-10-25",
+      "outcome": "read",
+      "accessMethod": "web.click actual official full HTML; authorized fallback",
+      "note": "Full substantive current Graduate School bulletin read including complete Graduate Degrees and Programs list. PhDs Leadership for Inclusion and Equity, Physical Therapy, Psychology; professional DNP/OTD/DPT separate. Business MBA/MAcc, Applied Data Analytics/Applied Mathematics/Computer Science MS. No relevant business/engineering doctoral title. Visible editorial suggestion to link Graduate School list preserved, not mistaken for additional programme or instruction."
+    }
+  ],
+  "limitations": [
+    "Source-bounded current official published bulletin inventory, not a claim that no Operations faculty research exists. Prior22October timed-out graduate-programme site and fresh25October field-index failure remain explicit; neither was retried or treated as programme absence.",
+    "Current bulletin degree-list body contains an editorial note about avoiding conflicting duplicate lists; retained as source limitation, but actual published official complete list is readable and identifies doctoral versus masters awards.",
+    "No browser tabs, public edits or merger commands."
+  ]
+}

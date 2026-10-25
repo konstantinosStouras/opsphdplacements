@@ -1,5 +1,6 @@
 import { html } from './charts.js';
 import {hasNamedOperationsScope} from './program-model.js';
+import {universityUnitTypeLabel} from './university-model.js';
 
 export const reviewLabels = {
   reviewed: 'Official-source review completed',
@@ -17,7 +18,7 @@ export function renderUniversityUnits(host, row) {
     for (const unit of row.units) {
       const item = html('li');
       item.append(link(unit.name, unit.sourceUrl));
-      item.append(html('small', 'unit-parent', [hasNamedOperationsScope(unit.school)?unit.school:null, unit.type].filter(Boolean).join(' · ')));
+      item.append(html('small', 'unit-parent', [hasNamedOperationsScope(unit.school)?unit.school:null, universityUnitTypeLabel(unit)].filter(Boolean).join(' · ')));
       item.append(html('small', 'unit-check', `Checked ${unit.checkedAt}`));
       const evidence = html('details', 'unit-evidence');
       evidence.append(html('summary', undefined, 'Evidence'), html('p', undefined, unit.evidence));
