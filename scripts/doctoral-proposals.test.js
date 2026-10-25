@@ -19,6 +19,12 @@ test('Stage 1 public title gate keeps named Ops and IE awards without promoting 
  assert(!hasNamedOperationsScope('PhD in Systems Engineering'));
 });
 const universities=[{id:'u'},{id:'other'}],reviews=[{id:'u',duplicateOf:null,units:[{id:'u--operations'}]},{id:'other',duplicateOf:null,units:[{id:'other--ie'}]}];
+test('reviewed descriptive research topics cannot re-enter the named-title register',()=>{
+ const p={programName:'PhD in Mechanical Engineering',specialization:'Operations Management laboratory research',unitIds:['lab'],titleScopeReview:{decision:'excluded'}};
+ assert(!isNamedOperationsProgramme(p,[{id:'lab',name:'Operations Management Laboratory'}]));
+ assert(isNamedOperationsProgramme({programName:'PhD in Mechanical Engineering',specialization:'Industrial Engineering',unitIds:[]}));
+ assert.equal(p.specialization,'Operations Management laboratory research');
+});
 const proposal=()=>({universityId:'u',checkedAt:'2026-10-21',status:'verified',programmes:[{id:'u--phd-om',programName:'Business Administration',degree:'PhD',specialization:'Operations Management',school:'Business School',department:null,unitIds:['u--operations'],fields:['Operations Management'],status:'active',sourceUrl:'https://example.edu/phd',checkedAt:'2026-10-21',evidence:'Official doctoral curriculum explicitly offers Operations Management specialization.',limitations:[]}],branches:[{branch:'business',conclusion:'Named doctoral track verified; engineering not yet checked.',sourceUrls:['https://example.edu/phd']}],sources:[{url:'https://example.edu/phd',checkedAt:'2026-10-21',outcome:'read',note:'Doctoral curriculum and exact specialization read.'}],limitations:['Engineering inventory remains to be checked.']});
 test('doctoral evidence cannot be replaced by an unavailable source or a different university unit',()=>{
  assert.doesNotThrow(()=>validateDoctoralProposal(proposal(),universities,reviews));

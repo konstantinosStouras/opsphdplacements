@@ -1,0 +1,75 @@
+{
+  "composedAt": "2026-10-25",
+  "freshPrimaryReads": false,
+  "publicEdits": false,
+  "entries": [
+    {
+      "path": "research-handoff/universities/continuation-128/shard-b/scope-composites/massachusetts-institute-of-technology-mit-doctoral.json",
+      "kind": "doctoral-scope-only",
+      "originalProposalPath": "research-handoff/universities/continuation-37/shard-b/massachusetts-institute-of-technology-mit-doctoral.json",
+      "sha256": "2cc6402a56512701863ee529ee3c0ecdb2947b332c9bf07bf2edde5441b0a9dc"
+    },
+    {
+      "path": "research-handoff/universities/continuation-128/shard-b/scope-composites/mit-doctoral.json",
+      "kind": "doctoral-scope-only",
+      "originalProposalPath": "research-handoff/universities/continuation-37/shard-b/mit-doctoral.json",
+      "sha256": "3b692e5aac2c5e7ce455ad8598509ca9690ac5464863e1ce44883b7dc7d87b77"
+    },
+    {
+      "path": "research-handoff/universities/continuation-128/shard-b/scope-composites/mit-sloan-doctoral.json",
+      "kind": "doctoral-scope-only",
+      "originalProposalPath": "research-handoff/universities/continuation-37/shard-b/mit-sloan-doctoral.json",
+      "sha256": "eb12612694ea1d922a86d8bfb4ff7f3df2616c8a2df079bb585a2be27ba49ad0"
+    },
+    {
+      "path": "research-handoff/universities/continuation-128/shard-b/scope-composites/san-jose-state-university-doctoral.json",
+      "kind": "doctoral-scope-only",
+      "originalProposalPath": "research-handoff/universities/continuation-63/shard-b/san-jose-state-university-doctoral.json",
+      "sha256": "6b8de4d323bede047f7f25fdbd21975a01d24f7f9a5dd441a7684e7a4134c59c"
+    },
+    {
+      "path": "research-handoff/universities/continuation-128/shard-b/scope-composites/ie-business-school-unit.json",
+      "kind": "unit-observation",
+      "originalProposalPath": "research-handoff/universities/continuation-38/shard-a/ie-business-school.unit.json",
+      "sha256": "3e10b32fc27d82854879b51a1520fa9d0626029a67763246181f890890375523"
+    },
+    {
+      "path": "research-handoff/universities/continuation-128/shard-b/scope-composites/ieseg-unit.json",
+      "kind": "unit-observation",
+      "originalProposalPath": "research-handoff/universities/continuation-40/shard-a/ieseg.unit.json",
+      "sha256": "8e4a9d9bb9b81a4e6d333015f0bd68745751a56b71ef5d1cda60c0cf1388dae4"
+    },
+    {
+      "path": "research-handoff/universities/continuation-128/shard-b/scope-composites/ie-business-school-doctoral.json",
+      "kind": "doctoral-scope-only-after-unit",
+      "originalProposalPath": "research-handoff/universities/continuation-38/shard-a/ie-business-school.doctoral.json",
+      "sha256": "c0cbe02be50c554ef97404e7063e17d6580d09e3f4237e6e264aaed331ef7f82"
+    },
+    {
+      "path": "research-handoff/universities/continuation-128/shard-b/scope-composites/ieseg-doctoral.json",
+      "kind": "doctoral-partial-after-unit",
+      "originalProposalPath": "research-handoff/universities/continuation-40/shard-a/ieseg.doctoral.json",
+      "sha256": "b6c2a725e1fa4acfdf34ec1b279dfd84339eb6337301a60e5f9e7a912894a788"
+    }
+  ],
+  "compositionNotes": [
+    "MIT aliases use exact latest public programme core facts with existing IDs for --scope-only; canonical branch/source observations composed with alias identity evidence. Existing programme IDs are preserved.",
+    "San Jose doctoral inventory closes only doctoral scope; historical Marketing and Decision Sciences unit succession remains partial.",
+    "IE Business School alias is explicitly IE University; legacy unit labels remain unresolved. Integrate unit before doctoral scope.",
+    "IESEG remains distinct from KU Leuven and Lille. Unit reviewed, doctoral partial; no new programme or award count.",
+    "All original check dates retained. Other shard original proposals copied into owned composited outputs without modifying originals."
+  ],
+  "validation": {
+    "doctoralSchema": "All six doctoral proposals pass against latest public snapshot, with proposed units overlaid for IE Business School and IESEG.",
+    "unitSchema": "Both unit proposals pass full public-overlay validation.",
+    "doctoralMergerPreview": {
+      "apply": false,
+      "addedProgrammeIds": [],
+      "updatedProgrammeIds": [],
+      "doctoralUniversityObservations": 5,
+      "historicalProgrammeDetailsPreserved": true,
+      "files": "MIT three aliases and San Jose"
+    },
+    "unitMergerPreview": "Both unit proposals pass --dry-run. IE alias and IESEG doctoral CLI previews require unit integration first; virtual-overlay schema validation already passed."
+  }
+}

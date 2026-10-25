@@ -1,0 +1,67 @@
+{
+  "auditDate": "2026-10-25",
+  "scope": "Published doctoral routes attached to frozen university shard A; audit against the 25 October exact-title rule using saved opened-and-read official evidence only. No new official source was opened in this audit.",
+  "integrationInstruction": "Exclude the exact IDs below from the public qualifying doctoral register/count while preserving their existing research observations and checked dates in the audit record. Do not infer that their universities have no other qualifying route.",
+  "exclude": [
+    {
+      "programmeId": "ecole-polytechnique-federale-de-lausanne-epfl--edmt-management-technology",
+      "reason": "EDMT is officially Management of Technology; operations management is a research area of affiliated labs, and TOM is a chair, not the doctoral programme, named specialization, department, or school.",
+      "officialSources": ["https://www.epfl.ch/education/phd/edmt-management-of-technology/", "https://www.epfl.ch/education/phd/edmt-management-of-technology/edmt-affiliated-labs-research-expertise/"],
+      "originalCheckedAt": "2026-10-21"
+    },
+    {
+      "programmeId": "eth-zurich--mtec-doctorate-operations",
+      "reason": "The doctorate and hosting department are Management, Technology, and Economics. Operations appears in the title of a chair and a laboratory only; the saved review explicitly says no formal Operations concentration was established.",
+      "officialSources": ["https://mtec.ethz.ch/doctorate.html", "https://mtec.ethz.ch/research/research-groups.html", "https://pom.ethz.ch/"],
+      "originalCheckedAt": "2026-10-21"
+    },
+    {
+      "programmeId": "carnegie-mellon-university--algorithms-combinatorics-optimization-phd",
+      "reason": "The formally named joint doctorate is Algorithms, Combinatorics, and Optimization. An Operations Research academic group jointly administers it, but the group is recorded as an area, not a qualifying department/school or named programme specialization.",
+      "officialSources": ["https://www.cmu.edu/tepper/programs/phd/joint-phd-programs/algorithms-combinatorics-and-optimization", "https://www.cmu.edu/tepper/programs/phd"],
+      "originalCheckedAt": "2026-10-21"
+    },
+    {
+      "programmeId": "harvard-university--health-policy-management-phd",
+      "reason": "Health Policy PhD Management track is the formal route; Technology and Operations Management is a collaborating HBS academic area, not the doctoral track title or stated administrative home.",
+      "officialSources": ["https://www.hbs.edu/doctoral/phd-programs/health-policy", "https://www.hbs.edu/faculty/units/tom/Pages/faculty.aspx"],
+      "originalCheckedAt": "2026-10-21"
+    },
+    {
+      "programmeId": "chalmers-university-of-technology--technology-management-economics-supply-operations-phd",
+      "reason": "The formal doctoral award and department are Technology Management and Economics. Supply and Operations Management is a division participating in doctoral teaching; the saved limitation explicitly says it is not a formally named doctoral specialization.",
+      "officialSources": ["https://www.chalmers.se/en/research/doctoral-studies/graduate-schools/technology-management-and-economics/", "https://www.chalmers.se/en/departments/tme/research/supply-and-operations-management/"],
+      "originalCheckedAt": "2026-10-21"
+    },
+    {
+      "programmeId": "eindhoven-university-of-technology-tu-e--phd-stochastic-operations-research",
+      "reason": "The generic PhD route has no fixed programme and the exact phrase Stochastic Operations Research names a research group, not a formal doctorate specialization or department/school. The saved limitation explicitly acknowledges this distinction.",
+      "officialSources": ["https://www.tue.nl/studeren/graduate-school/phd", "https://www.tue.nl/en/research/research-groups/mathematics/statistics-probability-and-operations-research/stochastic-operations-research"],
+      "originalCheckedAt": "2026-10-21"
+    },
+    {
+      "programmeId": "concordia-university--civil-engineering-phd-transport-operations",
+      "reason": "The formal doctorate and host are Civil Engineering; traffic operations is a supervisor's research remit, and the saved limitation states it is not a formal named credential.",
+      "officialSources": ["https://www.concordia.ca/academics/graduate/civil-engineering-phd.html", "https://www.concordia.ca/faculty/ciprian-alecsandru.html?c=/ginacody/building-civil-environmental-eng/research/expertise"],
+      "originalCheckedAt": "2026-10-22"
+    }
+  ],
+  "holdForExactHostAdjudication": [
+    {
+      "programmeId": "kedge-business-school--business-administration-supply-chain-phd",
+      "reason": "The formally named PhD and Supply Chain research pathway do not match the title rule. The linked Operations Management and Information Systems Academic Department qualifies by its own title, but the saved evidence only associates its staff with the research centre and does not establish that it hosts/administers this PhD. Do not drop until that relationship is adjudicated.",
+      "officialSources": ["https://student.kedge.edu/programmes/phd-doctor-of-philosophy-in-business-administration", "https://student.kedge.edu/faculty/departments/operations-management-and-information-systems-mosi"],
+      "originalCheckedAt": "2026-10-22"
+    },
+    {
+      "programmeId": "carnegie-mellon-university--public-policy-management-management-science-phd",
+      "reason": "Management Science appears as an expanded research-area accordion of the Public Policy and Management PhD; confirm whether this is an official named doctoral area/specialization rather than a descriptive research category before excluding.",
+      "officialSources": ["https://www.heinz.cmu.edu/programs/phd-programs/public-policy-management"],
+      "originalCheckedAt": "2026-10-21"
+    }
+  ],
+  "retainExamples": [
+    {"programmeId": "colorado-state-university--systems-engineering-phd", "reason": "Official Graduate School PhD inventory explicitly names Operations Research as an Area of Study within the degree; a named degree-linked area, not merely supervisor research.", "officialSource": "https://graduateschool.colostate.edu/programs/systems-engineering-phd/", "originalCheckedAt": "2026-10-22"},
+    {"programmeId": "johns-hopkins-university--applied-mathematics-statistics-optimization-or-phd", "reason": "Official doctoral programme explicitly calls optimization/operations research a concentration.", "officialSource": "https://engineering.jhu.edu/ams/academics/graduate-studies/doctoral-program/", "originalCheckedAt": "2026-10-21"}
+  ]
+}
