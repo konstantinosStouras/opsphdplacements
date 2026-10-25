@@ -1,0 +1,103 @@
+{
+  "id": "villanova-university",
+  "status": "partial",
+  "canonicalName": "Villanova University",
+  "universitySourceUrl": "https://www.villanova.edu/university/business/faculty-and-research/faculty-by-department.html#4",
+  "checkedAt": "2026-10-22",
+  "reviewer": "Codex; official full HTML pages individually opened through web tool",
+  "duplicateOf": null,
+  "units": [
+    {
+      "id": "villanova-university--management-operations",
+      "name": "Management & Operations",
+      "school": "Villanova School of Business",
+      "type": "department",
+      "fields": [
+        "operations-management"
+      ],
+      "sourceUrl": "https://www.villanova.edu/university/business/faculty-and-research/faculty-by-department.html#4",
+      "checkedAt": "2026-10-22",
+      "evidence": "Official Faculty Directory explicitly lists five departments and has Management & Operations heading, establishing actual combined department and school parent. Not a separate standalone OM department."
+    }
+  ],
+  "decisions": [
+    {
+      "sourceDepartmentId": "villanova-university",
+      "disposition": "not-a-unit",
+      "unitIds": [],
+      "reason": "Imported generic university-only row is institution identity, not separate department."
+    },
+    {
+      "sourceDepartmentId": "villanova-university____ba-ai",
+      "disposition": "unresolved",
+      "unitIds": [],
+      "reason": "Imported BA/AI subject acronym not a current formal department name; original official posting 33341 is unavailable. Do not infer exact department from generic analytics/AI."
+    },
+    {
+      "sourceDepartmentId": "villanova-university__villanova-school-of-business__accounting-and-information-systems",
+      "disposition": "out-of-scope",
+      "unitIds": [],
+      "reason": "Current official department page verifies exact Accounting & Information Systems Department within Villanova School of Business. Fully read official MIS advertisement 36424, posting 20260076F dated 22 September 2026, matches the imported row date and explicitly hosts MIS/AI teaching and research in this department. Neither exact department title nor advertised field names Operations, Operations Research/Management, Management Science or Industrial Engineering. General department Research & Expertise includes supply chain management, but this topic list does not establish a qualifying named unit or doctoral field under the current title rule. Preserve actual department identity here rather than create an eligible unit from generic MIS or AI."
+    },
+    {
+      "sourceDepartmentId": "villanova-university__villanova-school-of-business__management-and-operations",
+      "disposition": "replaced",
+      "unitIds": [
+        "villanova-university--management-operations"
+      ],
+      "reason": "Current actual combined department name/type and school parent verified in official faculty directory."
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.villanova.edu/university/business/faculty-and-research/faculty-by-department.html#4",
+      "checkedAt": "2026-10-22",
+      "outcome": "read",
+      "note": "Full current official business Faculty Directory read: five actual departments, exact Management & Operations and Accounting & Information Systems names. No person-history research performed."
+    },
+    {
+      "url": "https://jobs.villanova.edu/postings/33341",
+      "checkedAt": "2026-10-22",
+      "outcome": "blocked",
+      "note": "Actually opened original official BA/AI hiring source: This posting is not available. No job body or acronym/host verified."
+    },
+    {
+      "url": "https://www.villanova.edu/university/business/academics.html",
+      "checkedAt": "2026-10-22",
+      "outcome": "read",
+      "note": "Link resolves university-wide Academics/Programs finder; complete unfiltered programme text read. Displays zero despite many programme cards. Actual Doctoral filter clicked, returns no matches while other cards remain in body; filter result not trusted as absence evidence."
+    },
+    {
+      "url": "https://www.villanova.edu/content/university/engineering/academic-programs/mechanical/doctoral-program.html",
+      "checkedAt": "2026-10-22",
+      "outcome": "read",
+      "note": "Full exact Mechanical PhD concentration page read: thermal sciences, mechanics/materials, dynamics/control, bioengineering, nanotechnology; no explicit current Ops/OR/IE field in this page."
+    },
+    {
+      "url": "https://www.villanova.edu/content/university/engineering/academic-programs/sustainable/doctoral-program.html",
+      "checkedAt": "2026-10-22",
+      "outcome": "read",
+      "note": "Full exact Sustainable Engineering PhD concentration page read: broad whole-systems/STEEP, energy/environment/infrastructure/development/materials/water topics. No explicit Ops/OR/IE concentration inferred from whole-systems language."
+    },
+    {
+      "url": "https://www.villanova.edu/university/business/faculty-and-research/academic-departments/accounting.html",
+      "checkedAt": "2026-10-25",
+      "outcome": "read",
+      "note": "Full current Accounting & Information Systems department body read, including actual school parent, supported degree menu and generic research/expertise list. Older www1 department URL redirects here."
+    },
+    {
+      "url": "https://jobs.villanova.edu/postings/36424",
+      "checkedAt": "2026-10-25",
+      "outcome": "read",
+      "note": "Full official MIS faculty advertisement read. Posting 20260076F, 22 September 2026, exact department and school, MIS/AI teaching and MIS research. Applicant qualification is not a locally offered doctorate."
+    }
+  ],
+  "limitations": [
+    "University finder returned contradictory zero count/no-matches with programme cards still present; no doctoral census inferred.",
+    "Civil/Environmental, Electrical/Computer, Chemical/Biological and detailed sustainable field scope remain unreviewed. Unit review remains partial for original analytics/MIS labels and wider engineering inventory.",
+    "Imported Drive ad not opened as PDF preview because current official department already verifies actual name; historical job details remain unaudited.",
+    "25 October 2026 scope correction: Accounting & Information Systems imported assertion is resolved out of scope by exact current titles and official MIS advertisement. Actual department identity is preserved in the source decision; no claim that individual supply-chain research is absent. Earlier current Management & Operations unit facts and 21/22 October evidence dates are unchanged.",
+    "The original 2025 BA/AI posting 33341 remains inaccessible and unresolved; it was not retried or mapped from the separate 2026 MIS advertisement. Institution unit review remains partial. Current doctoral review is omitted from this proposal to preserve the latest separately reviewed scope."
+  ],
+  "assessedAt": "2026-10-25"
+}

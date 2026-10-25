@@ -1,0 +1,16 @@
+import fs from 'node:fs';
+import crypto from 'node:crypto';
+import {execFileSync} from 'node:child_process';
+const dir='research-handoff/universities/continuation-330',root='research-handoff/universities/',read=p=>JSON.parse(fs.readFileSync(p));
+const specs=[['university-of-bordeaux',260],['university-paris-8',263],['university-of-chinese-academy-of-sciences',266],['world-maritime-university',267],['mines-saint-etienne',275],['imt-atlantique',277]];
+const path=(n,id,suffix)=>root+`continuation-${n}/shard-a/${id}.${suffix}.json`,extra=(lane,s)=>{const[n,f]=s.split('/');return root+`continuation-${n}/shard-${lane}/${f}.json`;};
+const sources=specs.map(([id,n])=>path(n,id,'source-addition'));
+const unitInputs=specs.map(([id,n])=>path(n,id,'unit')).concat(['263/piraeus-recovered-official-identity.unit','267/insead-historical-social-innovation-host.unit','267/lut-actual-industrial-engineering-department.unit'].map(s=>extra('b',s)),['240/virginia-tech.healthcare-source-reconciliation','243/villanova.accounting-is-source-reconciliation'].map(s=>extra('c',s)),extra('a','279/mohammed-v-university-in-rabat.unit-add-emi'));
+const programmes=specs.map(([id,n])=>id==='university-of-chinese-academy-of-sciences'?path(268,id,'doctoral-corrected'):path(n,id,'doctoral')).concat(extra('b','267/lut-existing-doctoral-department-mapping'));
+const scopes=['263/piraeus-recovered-official-doctoral-html','265/magdeburg-current-complete-title-scope','266/leipzig-current-complete-technical-title-scope'].map(s=>extra('b',s)).concat(extra('a','271/university-of-geneva.doctoral-bounded-complete'));
+const m={baseCommit:execFileSync('git',['rev-parse','HEAD'],{encoding:'utf8'}).trim(),sources,unitInputs,programmes,scopes};
+m.frozenInputs=[...new Set([...sources,...sources.map(p=>read(p).sourceCatalogue),...unitInputs,...programmes,...scopes])].map(path=>({path,sha256:crypto.createHash('sha256').update(fs.readFileSync(path)).digest('hex')}));
+fs.writeFileSync(dir+'/integration-manifest.json',JSON.stringify(m,null,2)+'\n');
+fs.writeFileSync(dir+'/apply-phase.mjs',fs.readFileSync(root+'continuation-260/apply-phase.mjs','utf8').replaceAll('continuation-260','continuation-330'));
+fs.writeFileSync(dir+'/resolve-titles.mjs',fs.readFileSync(root+'continuation-300/resolve-titles.mjs','utf8').replaceAll('continuation-300','continuation-330').replaceAll('continuation300','continuation330'));
+console.log({sources:sources.length,units:unitInputs.length,programmes:programmes.length,scopes:scopes.length});
