@@ -1,0 +1,133 @@
+{
+  "id": "columbia-university",
+  "status": "reviewed",
+  "canonicalName": "Columbia University",
+  "universitySourceUrl": "https://ieor.columbia.edu/",
+  "checkedAt": "2026-10-25",
+  "reviewer": "Codex via opened official web pages",
+  "units": [
+    {
+      "id": "columbia-university--decision-risk-operations",
+      "name": "Decision, Risk, and Operations Division (DRO)",
+      "school": "Columbia Business School",
+      "type": "division",
+      "fields": [
+        "operations-management",
+        "operations-research",
+        "supply-chain",
+        "logistics"
+      ],
+      "sourceUrl": "https://business.columbia.edu/faculty/divisions/dro",
+      "checkedAt": "2026-10-21",
+      "evidence": "Division full name and explicit operations, logistics, supply-chain, optimization remit; affiliated Computational Optimization Research Center named and described."
+    },
+    {
+      "id": "columbia-university--industrial-engineering-operations-research",
+      "name": "Department of Industrial Engineering and Operations Research (IEOR)",
+      "school": "The Fu Foundation School of Engineering and Applied Science",
+      "type": "department",
+      "fields": [
+        "industrial-engineering",
+        "operations-research",
+        "operations-management",
+        "supply-chain"
+      ],
+      "sourceUrl": "https://ieor.columbia.edu/",
+      "checkedAt": "2026-10-21",
+      "evidence": "Full Industrial Engineering and Operations Research department, IEOR acronym, healthcare operations and supply-chain research."
+    }
+  ],
+  "decisions": [
+    {
+      "sourceDepartmentId": "columbia-university",
+      "disposition": "not-a-unit",
+      "unitIds": [],
+      "reason": "University-only placeholder."
+    },
+    {
+      "sourceDepartmentId": "columbia-university__columbia-business-school__decision-risk-and-operations",
+      "disposition": "replaced",
+      "unitIds": [
+        "columbia-university--decision-risk-operations"
+      ],
+      "reason": "Full current division name and organizational type verified."
+    },
+    {
+      "sourceDepartmentId": "columbia-university__fu-foundation-school-of-engineering-and-applied-science__industrial-engineering-and-operations-research",
+      "disposition": "replaced",
+      "unitIds": [
+        "columbia-university--industrial-engineering-operations-research"
+      ],
+      "reason": "Full current engineering department and school names verified."
+    },
+    {
+      "sourceDepartmentId": "columbia-university__graduate-school-of-business__decision-risk-and-operations",
+      "disposition": "duplicate",
+      "unitIds": [
+        "columbia-university--decision-risk-operations"
+      ],
+      "reason": "Same current DRO division at Columbia Business School, represented once."
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://business.columbia.edu/faculty/divisions/dro/faculty",
+      "checkedAt": "2026-10-21",
+      "outcome": "read",
+      "note": "Full Decision, Risk, and Operations Division roster and university/business school identity."
+    },
+    {
+      "url": "https://business.columbia.edu/faculty/divisions/dro",
+      "checkedAt": "2026-10-21",
+      "outcome": "read",
+      "note": "Division full name and explicit operations, logistics, supply-chain, optimization remit; affiliated Computational Optimization Research Center named and described."
+    },
+    {
+      "url": "https://ieor.columbia.edu/",
+      "checkedAt": "2026-10-21",
+      "outcome": "read",
+      "note": "Full Industrial Engineering and Operations Research department, IEOR acronym, healthcare operations and supply-chain research."
+    },
+    {
+      "url": "https://ieor.columbia.edu/about",
+      "checkedAt": "2026-10-21",
+      "outcome": "read",
+      "note": "Department name and academic navigation."
+    },
+    {
+      "url": "https://www.engineering.columbia.edu/",
+      "checkedAt": "2026-10-21",
+      "outcome": "read",
+      "note": "Full Fu Foundation School of Engineering and Applied Science name."
+    },
+    {
+      "url": "https://www.corc.ieor.columbia.edu/",
+      "checkedAt": "2026-10-21",
+      "outcome": "blocked",
+      "note": "Chrome certificate-name mismatch; warning not bypassed; center information supported only by the public DRO division page."
+    },
+    {
+      "url": "https://business.columbia.edu/faculty/divisions/dro/centers",
+      "checkedAt": "2026-10-21",
+      "outcome": "blocked",
+      "note": "Redirected to Columbia University Authentication; no login attempted."
+    },
+    {
+      "url": "https://business.columbia.edu/faculty/divisions/dro",
+      "checkedAt": "2026-10-25",
+      "outcome": "read",
+      "note": "Full current Columbia Business School division page names Decision, Risk, and Operations, its Operations remit and lists Computational Optimization Research Center separately as an affiliated center, not an academic department."
+    },
+    {
+      "url": "https://ieor.columbia.edu/",
+      "checkedAt": "2026-10-25",
+      "outcome": "read",
+      "note": "Full current Columbia Engineering IEOR home names Columbia University, the Department of Industrial Engineering and Operations Research, and its PhD programme."
+    }
+  ],
+  "limitations": [
+    "Both imported academic department/division identities are reconciled to current official names, with the duplicated Graduate School of Business DRO source row mapped to the one current Columbia Business School division.",
+    "The official DRO page mentions Computational Optimization Research Center as an affiliated research center. It is not a department or a distinct named Operations/Management Science/Industrial Engineering qualifying unit; its standalone site previously raised a certificate mismatch and was not reopened or bypassed. Other affiliated centers need no separate department identity claim."
+  ],
+  "duplicateOf": null
+}

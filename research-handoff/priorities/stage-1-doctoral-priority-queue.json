@@ -8,8 +8,8 @@
   "rankedInstitutionLeads": 365,
   "matchedLeads": 237,
   "unresolvedLeads": 128,
-  "withVerifiedCurrentRoutes": 168,
-  "withCompletedCurrentBranchScope": 155,
+  "withVerifiedCurrentRoutes": 170,
+  "withCompletedCurrentBranchScope": 159,
   "records": [
     {
       "id": "massachusetts-institute-of-technology",
@@ -13333,10 +13333,12 @@
             },
             {
               "branch": "engineering",
-              "reviewState": "partial",
-              "conclusion": "Original source row is reviewed TBS Education business-school identity, not University Toulouse or Toulouse Capitole engineering. Current collaborative doctoral page gives no engineering programme; complete current TBS institutional programme inventory not rechecked here, so no all-university engineering absence asserted.",
+              "reviewState": "checked",
+              "conclusion": "Actual full TBS doctoral inventory and institutional business programme/research inventory read25October. Two doctoral offerings PhD partnership with TSM and separate DBA; no independent TBS engineering doctoral programme listed. HDR staff may supervise external Aeronautics/Astronautics theses; supervisor eligibility does not establish a TBS doctorate or named Ops field. Existing current five-track TSM PhD inventory contains no qualifying title; no Operations route inferred from Information Operations research lab.",
               "sourceUrls": [
-                "https://www.tbs-education.com/programs/phd-program/"
+                "https://www.tbs-education.com/programs/phd-program/",
+                "https://www.tbs-education.com/about-tbs/facts-and-figures/",
+                "https://www.tbs-education.com/faculty-research/doctoral-programs/"
               ]
             }
           ],
@@ -13388,15 +13390,37 @@
               "outcome": "read",
               "toolCrawlLabel": "yesterday",
               "note": "Full substantive12July2022official agreement article read. TSM explicitly Toulouse Capitole University School of Management; three institutions TSM/UTC/TBS signed five-year doctoral collaboration renewing2017agreement. Collaboration promotion/teaching/supervision/professional integration, not explicit TBS autonomous awarding entitlement."
+            },
+            {
+              "url": "https://www.tbs-education.com/about-tbs/facts-and-figures/",
+              "checkedAt": "2026-10-25",
+              "outcome": "read",
+              "accessMethod": "web.open actual official HTML; authorized fallback",
+              "note": "Full substantive institutional facts/programme/research inventory read. Business bachelor, management masters/MSc and executive provision; one collaborative doctoral programme with TSM. Six research labs, including Information operations and decision sciences, are labs rather than formal doctoral programmes or departments. Source figures and older federation naming retained as its own assertions, not new verified census or legal university merge."
+            },
+            {
+              "url": "https://www.tbs-education.com/faculty-research/doctoral-programs/",
+              "checkedAt": "2026-10-25",
+              "outcome": "read",
+              "accessMethod": "web.open actual official HTML; authorized fallback",
+              "note": "Full substantive actual doctoral inventory read. Explicit two offerings PhD and DBA; PhD collaboration with TSM Ecole Doctorale Sciences de Gestion at Toulouse1Capitole. HDR staff can also supervise external Aeronautics/Astronautics doctoral-school theses; this is supervisor eligibility, not TBS independent engineering doctoral award. Broad English Management Science translation of French management discipline not quantitative MS. Faculty HDR fields not treated as named doctoral fields."
+            },
+            {
+              "url": "https://www.tbs-education.com/programs/post-graduate/",
+              "checkedAt": "2026-10-25",
+              "outcome": "blocked",
+              "accessMethod": "web.open actual official URL; authorized fallback",
+              "note": "Specific current postgraduate landing returned403Forbidden; no retry or workaround. Full actual doctoral inventory independently readable on distinct official doctoral-programmes page, so this unavailable wider taught-programme landing is not sole source for doctoral scope."
             }
           ],
           "limitations": [
-            "Broad English Management Sciences on French management research programme spans five non-Operations tracks; do not silently equate it with quantitative Management Science. Title-scope adjudication remains explicit.",
-            "Exact current doctorate diploma-awarder wording not resolved by historical partnership alone. No programme assigned to TBS or University Toulouse engineering identity.",
-            "Actual official full HTML via authorized web fallback; no browser tabs created.",
-            "Current collaborative five-track business programme title exclusion reviewed; overall institutional programme inventory completion still partial. University Toulouse source alias must not be reassigned to current Toulouse Capitole legal identity through shared city wording."
+            "Current bounded doctoral inventory/title scope complete for reviewed TBS business-school identity, not a claim about Toulouse Capitole University or present University Toulouse broader degrees.",
+            "Current TSM five tracks do not match Ops/quantitative Management Science/IE; broad French sciences de gestion translation must not qualify as quantitative Management Science.",
+            "DBA is distinct professional doctoral offering; no academic PhD eligibility inferred from it. External HDR supervision and research labs do not create another doctoral programme or department.",
+            "Specific postgraduate landing403 and earlier homepage block retained; actual full doctoral inventory and institutional facts were readable, so taught landing availability is nonmaterial to this bounded PhD title conclusion.",
+            "No exact legal awarder invented from partnership; no qualifying programme added. Original check dates retained. No browser tabs created."
           ],
-          "coverageComplete": false
+          "coverageComplete": true
         },
         {
           "status": "partial",
@@ -13442,8 +13466,8 @@
         }
       ],
       "verifiedCurrentProgrammeIds": [],
-      "branchCoverageComplete": false,
-      "nextStep": "Verify official current relevant doctoral routes across business and engineering; record branch gaps"
+      "branchCoverageComplete": true,
+      "nextStep": "Current scoped doctoral inventory checked; retain evidence and historical limitations"
     },
     {
       "id": "university-of-alabama",
@@ -16612,7 +16636,7 @@
       ],
       "doctoralObservations": [
         {
-          "status": "partial",
+          "status": "verified",
           "checkedAt": "2026-10-25",
           "programmeIds": [
             "technical-university-of-munich--adone-doctoral-training",
@@ -16624,7 +16648,7 @@
             {
               "branch": "business",
               "reviewState": "checked",
-              "conclusion": "Current Management doctoral programme and actual German award-title alternatives verified; relevant Operations & Technology department links joint AdONE doctoral research. Exact award-to-subject allocation remains unresolved.",
+              "conclusion": "Actual Operations and Technology academic department hosts Management doctoral research. Existing exact German award alternatives remain one route with disciplinary choice caveat; original 21 October facts preserved.",
               "sourceUrls": [
                 "https://www.mgt.tum.de/faculty-research/doctoral-program",
                 "https://www.mgt.tum.de/faculty-research/academic-departments/operations-technology",
@@ -16634,13 +16658,19 @@
             {
               "branch": "engineering",
               "reviewState": "checked",
-              "conclusion": "CIT joint AdONE doctoral research and ED logistics-chair doctoral route verified; current doctoral frameworks read. Exact CIT/ED academic credential titles remain unresolved.",
+              "conclusion": "Current CIT inventory lists Mathematics, Computer Engineering, Computer Science and Electrical Engineering departments. Current ED lists eight actual departments, none named Operations, Management Science or Industrial Engineering. Both doctoral frameworks use individual supervisor-led projects. Mathematics full group menu and AdONE overview distinguish research groups/applications from formal doctoral titles. Existing CIT descriptive AdONE topic and ED logistics-chair routes do not meet current formal title/department-school host rule; no new named qualifying technical route established.",
               "sourceUrls": [
                 "https://www.cit.tum.de/en/cit/research/doctorate/",
                 "https://www.ed.tum.de/en/ed/research-and-innovation/doctorate/",
                 "https://www.mec.ed.tum.de/en/fml/open-positions/",
                 "https://www.mec.ed.tum.de/en/fml/research/areas-of-research/",
-                "https://www.gs.tum.de/en/adone/start/"
+                "https://www.gs.tum.de/en/adone/start/",
+                "https://www.cit.tum.de/en/cit/research/",
+                "https://www.ed.tum.de/en/ed/about/departments/",
+                "https://www.math.cit.tum.de/en/math/home/",
+                "https://www.gs.tum.de/en/adone/start/",
+                "https://www.ed.tum.de/en/ed/research-and-innovation/doctorate/",
+                "https://www.cit.tum.de/fileadmin/w00byx/cit/02_Forschung/Promotion/Dokumente/2024-09-26_AES_PromO.pdf"
               ]
             }
           ],
@@ -16710,19 +16740,58 @@
               "outcome": "read",
               "note": "Full current CIT doctoral requirements, registration and submission HTML read via web tool. Degree-awarding CIT identified, but exact award title absent; detailed dissertation/examination guidelines explicitly require TUM User ID and were not accessed.",
               "checkedAt": "2026-10-25"
+            },
+            {
+              "url": "https://www.cit.tum.de/en/cit/research/",
+              "checkedAt": "2026-10-25",
+              "outcome": "read",
+              "note": "Full substantive current research overview and all four actual department titles read; integrative institutes are expressly separate."
+            },
+            {
+              "url": "https://www.ed.tum.de/en/ed/about/departments/",
+              "checkedAt": "2026-10-25",
+              "outcome": "read",
+              "note": "Full substantive eight-department inventory read: Aerospace and Geodesy; Architecture; Civil and Environmental Engineering; Energy and Process Engineering; Engineering Physics and Computation; Materials Engineering; Mechanical Engineering; Mobility Systems Engineering."
+            },
+            {
+              "url": "https://www.math.cit.tum.de/en/math/home/",
+              "checkedAt": "2026-10-25",
+              "outcome": "read",
+              "note": "Complete current substantive department overview and full research Groups menu read. Discrete Optimization, Mathematical Optimization and Optimal Control are group names; AdONE explicitly under cooperation projects, not invented as a formal Operations doctoral specialization."
+            },
+            {
+              "url": "https://www.gs.tum.de/en/adone/start/",
+              "checkedAt": "2026-10-25",
+              "outcome": "read",
+              "note": "Complete current substantive overview read. Advanced Optimization in a Networked Economy, joint Management/CIT research training group, individual scientific applications; management science describes research intersection, not a formal named doctoral field."
+            },
+            {
+              "url": "https://www.ed.tum.de/en/ed/research-and-innovation/doctorate/",
+              "checkedAt": "2026-10-25",
+              "outcome": "read",
+              "note": "Complete current substantive doctoral framework read: individual scientific supervision in eight departments/chairs, registration, dissertation, examination and oral examination. Detailed procedures link to internal wiki, not accessed."
+            },
+            {
+              "url": "https://www.cit.tum.de/fileadmin/w00byx/cit/02_Forschung/Promotion/Dokumente/2024-09-26_AES_PromO.pdf",
+              "checkedAt": "2026-10-25",
+              "outcome": "read",
+              "note": "Official 26 September 2024 regulation: school-level actual academic doctorate alternatives and independent scientific dissertation/oral examination. Relevant sections 1, 2, 7 and 9 read, not all unrelated regulations."
             }
           ],
           "limitations": [
             "Exact award-to-operations-field allocation at Management and exact CIT/ED credentials remain unresolved; listed school award alternatives must not be counted as four separate programmes.",
             "AdONE overlaps underlying Management/CIT doctorates and must not be counted as another independent degree.",
             "CIT credential revisit: expanded public Regulations CIT points to detailed dissertation/examination guidelines requiring TUM User ID; those restricted documents were not accessed. Linked public regulation announcement gives no award-title mapping. No credential guessed from staff Dr. titles.",
-            "Fresh 25 October CIT follow-up confirms current doctoral provision and entry/submission framework, but does not resolve exact credential. No inferred PhD, staff-title conversion or restricted-guideline access. Existing Management award, AdONE overlap and all programme dates remain preserved."
+            "Fresh 25 October CIT follow-up confirms current doctoral provision and entry/submission framework, but does not resolve exact credential. No inferred PhD, staff-title conversion or restricted-guideline access. Existing Management award, AdONE overlap and all programme dates remain preserved.",
+            "Current title-scope reassessment: school-level credential alternatives for the two excluded generic technical routes are now public, but no particular alternative is selected. Their historic unknown credentials and research observations remain preserved; credential choice is not required to exclude a nonmatching actual title.",
+            "AdONE is a jointly hosted research training group named Advanced Optimization in a Networked Economy; its management-science intersection and applications are not invented as a formal Operations doctoral field. One actual Operations and Technology department-hosted Management route remains qualifying.",
+            "Scope is current published formal title/host provision in the plausible business and technical branches, not all independent supervisor topics. The ED logistics chair and CIT research groups are not promoted to actual departments or named doctoral concentrations."
           ],
-          "coverageComplete": false
+          "coverageComplete": true
         },
         {
-          "status": "partial",
-          "checkedAt": "2026-10-21",
+          "status": "verified",
+          "checkedAt": "2026-10-25",
           "programmeIds": [
             "technical-university-of-munich--adone-doctoral-training",
             "technical-university-of-munich--cit-research-doctorate-operations",
@@ -16733,7 +16802,7 @@
             {
               "branch": "business",
               "reviewState": "checked",
-              "conclusion": "Current Management doctoral programme and actual German award-title alternatives verified; relevant Operations & Technology department links joint AdONE doctoral research. Exact award-to-subject allocation remains unresolved.",
+              "conclusion": "Actual Operations and Technology academic department hosts Management doctoral research. Existing exact German award alternatives remain one route with disciplinary choice caveat; original 21 October facts preserved.",
               "sourceUrls": [
                 "https://www.mgt.tum.de/faculty-research/doctoral-program",
                 "https://www.mgt.tum.de/faculty-research/academic-departments/operations-technology",
@@ -16743,13 +16812,19 @@
             {
               "branch": "engineering",
               "reviewState": "checked",
-              "conclusion": "CIT joint AdONE doctoral research and ED logistics-chair doctoral route verified; current doctoral frameworks read. Exact CIT/ED academic credential titles remain unresolved.",
+              "conclusion": "Current CIT inventory lists Mathematics, Computer Engineering, Computer Science and Electrical Engineering departments. Current ED lists eight actual departments, none named Operations, Management Science or Industrial Engineering. Both doctoral frameworks use individual supervisor-led projects. Mathematics full group menu and AdONE overview distinguish research groups/applications from formal doctoral titles. Existing CIT descriptive AdONE topic and ED logistics-chair routes do not meet current formal title/department-school host rule; no new named qualifying technical route established.",
               "sourceUrls": [
                 "https://www.cit.tum.de/en/cit/research/doctorate/",
                 "https://www.ed.tum.de/en/ed/research-and-innovation/doctorate/",
                 "https://www.mec.ed.tum.de/en/fml/open-positions/",
                 "https://www.mec.ed.tum.de/en/fml/research/areas-of-research/",
-                "https://www.gs.tum.de/en/adone/start/"
+                "https://www.gs.tum.de/en/adone/start/",
+                "https://www.cit.tum.de/en/cit/research/",
+                "https://www.ed.tum.de/en/ed/about/departments/",
+                "https://www.math.cit.tum.de/en/math/home/",
+                "https://www.gs.tum.de/en/adone/start/",
+                "https://www.ed.tum.de/en/ed/research-and-innovation/doctorate/",
+                "https://www.cit.tum.de/fileadmin/w00byx/cit/02_Forschung/Promotion/Dokumente/2024-09-26_AES_PromO.pdf"
               ]
             }
           ],
@@ -16813,18 +16888,64 @@
               "checkedAt": "2026-10-21",
               "outcome": "read",
               "note": "Official regulation link from current CIT page leads to 23Aug2021 announcement explaining department-to-school transition and new doctoral regulations effective1Oct2021; no exact CIT doctoral credential or subject allocation stated."
+            },
+            {
+              "url": "https://www.cit.tum.de/en/cit/research/doctorate/",
+              "outcome": "read",
+              "note": "Full current CIT doctoral requirements, registration and submission HTML read via web tool. Degree-awarding CIT identified, but exact award title absent; detailed dissertation/examination guidelines explicitly require TUM User ID and were not accessed.",
+              "checkedAt": "2026-10-25"
+            },
+            {
+              "url": "https://www.cit.tum.de/en/cit/research/",
+              "checkedAt": "2026-10-25",
+              "outcome": "read",
+              "note": "Full substantive current research overview and all four actual department titles read; integrative institutes are expressly separate."
+            },
+            {
+              "url": "https://www.ed.tum.de/en/ed/about/departments/",
+              "checkedAt": "2026-10-25",
+              "outcome": "read",
+              "note": "Full substantive eight-department inventory read: Aerospace and Geodesy; Architecture; Civil and Environmental Engineering; Energy and Process Engineering; Engineering Physics and Computation; Materials Engineering; Mechanical Engineering; Mobility Systems Engineering."
+            },
+            {
+              "url": "https://www.math.cit.tum.de/en/math/home/",
+              "checkedAt": "2026-10-25",
+              "outcome": "read",
+              "note": "Complete current substantive department overview and full research Groups menu read. Discrete Optimization, Mathematical Optimization and Optimal Control are group names; AdONE explicitly under cooperation projects, not invented as a formal Operations doctoral specialization."
+            },
+            {
+              "url": "https://www.gs.tum.de/en/adone/start/",
+              "checkedAt": "2026-10-25",
+              "outcome": "read",
+              "note": "Complete current substantive overview read. Advanced Optimization in a Networked Economy, joint Management/CIT research training group, individual scientific applications; management science describes research intersection, not a formal named doctoral field."
+            },
+            {
+              "url": "https://www.ed.tum.de/en/ed/research-and-innovation/doctorate/",
+              "checkedAt": "2026-10-25",
+              "outcome": "read",
+              "note": "Complete current substantive doctoral framework read: individual scientific supervision in eight departments/chairs, registration, dissertation, examination and oral examination. Detailed procedures link to internal wiki, not accessed."
+            },
+            {
+              "url": "https://www.cit.tum.de/fileadmin/w00byx/cit/02_Forschung/Promotion/Dokumente/2024-09-26_AES_PromO.pdf",
+              "checkedAt": "2026-10-25",
+              "outcome": "read",
+              "note": "Official 26 September 2024 regulation: school-level actual academic doctorate alternatives and independent scientific dissertation/oral examination. Relevant sections 1, 2, 7 and 9 read, not all unrelated regulations."
             }
           ],
           "limitations": [
             "Exact award-to-operations-field allocation at Management and exact CIT/ED credentials remain unresolved; listed school award alternatives must not be counted as four separate programmes.",
             "AdONE overlaps underlying Management/CIT doctorates and must not be counted as another independent degree.",
-            "CIT credential revisit: expanded public Regulations CIT points to detailed dissertation/examination guidelines requiring TUM User ID; those restricted documents were not accessed. Linked public regulation announcement gives no award-title mapping. No credential guessed from staff Dr. titles."
+            "CIT credential revisit: expanded public Regulations CIT points to detailed dissertation/examination guidelines requiring TUM User ID; those restricted documents were not accessed. Linked public regulation announcement gives no award-title mapping. No credential guessed from staff Dr. titles.",
+            "Fresh 25 October CIT follow-up confirms current doctoral provision and entry/submission framework, but does not resolve exact credential. No inferred PhD, staff-title conversion or restricted-guideline access. Existing Management award, AdONE overlap and all programme dates remain preserved.",
+            "Current title-scope reassessment: school-level credential alternatives for the two excluded generic technical routes are now public, but no particular alternative is selected. Their historic unknown credentials and research observations remain preserved; credential choice is not required to exclude a nonmatching actual title.",
+            "AdONE is a jointly hosted research training group named Advanced Optimization in a Networked Economy; its management-science intersection and applications are not invented as a formal Operations doctoral field. One actual Operations and Technology department-hosted Management route remains qualifying.",
+            "Scope is current published formal title/host provision in the plausible business and technical branches, not all independent supervisor topics. The ED logistics chair and CIT research groups are not promoted to actual departments or named doctoral concentrations."
           ],
-          "coverageComplete": false
+          "coverageComplete": true
         },
         {
-          "status": "partial",
-          "checkedAt": "2026-10-21",
+          "status": "verified",
+          "checkedAt": "2026-10-25",
           "programmeIds": [
             "technical-university-of-munich--adone-doctoral-training",
             "technical-university-of-munich--cit-research-doctorate-operations",
@@ -16835,7 +16956,7 @@
             {
               "branch": "business",
               "reviewState": "checked",
-              "conclusion": "Current Management doctoral programme and actual German award-title alternatives verified; relevant Operations & Technology department links joint AdONE doctoral research. Exact award-to-subject allocation remains unresolved.",
+              "conclusion": "Actual Operations and Technology academic department hosts Management doctoral research. Existing exact German award alternatives remain one route with disciplinary choice caveat; original 21 October facts preserved.",
               "sourceUrls": [
                 "https://www.mgt.tum.de/faculty-research/doctoral-program",
                 "https://www.mgt.tum.de/faculty-research/academic-departments/operations-technology",
@@ -16845,13 +16966,19 @@
             {
               "branch": "engineering",
               "reviewState": "checked",
-              "conclusion": "CIT joint AdONE doctoral research and ED logistics-chair doctoral route verified; current doctoral frameworks read. Exact CIT/ED academic credential titles remain unresolved.",
+              "conclusion": "Current CIT inventory lists Mathematics, Computer Engineering, Computer Science and Electrical Engineering departments. Current ED lists eight actual departments, none named Operations, Management Science or Industrial Engineering. Both doctoral frameworks use individual supervisor-led projects. Mathematics full group menu and AdONE overview distinguish research groups/applications from formal doctoral titles. Existing CIT descriptive AdONE topic and ED logistics-chair routes do not meet current formal title/department-school host rule; no new named qualifying technical route established.",
               "sourceUrls": [
                 "https://www.cit.tum.de/en/cit/research/doctorate/",
                 "https://www.ed.tum.de/en/ed/research-and-innovation/doctorate/",
                 "https://www.mec.ed.tum.de/en/fml/open-positions/",
                 "https://www.mec.ed.tum.de/en/fml/research/areas-of-research/",
-                "https://www.gs.tum.de/en/adone/start/"
+                "https://www.gs.tum.de/en/adone/start/",
+                "https://www.cit.tum.de/en/cit/research/",
+                "https://www.ed.tum.de/en/ed/about/departments/",
+                "https://www.math.cit.tum.de/en/math/home/",
+                "https://www.gs.tum.de/en/adone/start/",
+                "https://www.ed.tum.de/en/ed/research-and-innovation/doctorate/",
+                "https://www.cit.tum.de/fileadmin/w00byx/cit/02_Forschung/Promotion/Dokumente/2024-09-26_AES_PromO.pdf"
               ]
             }
           ],
@@ -16884,7 +17011,7 @@
               "url": "https://www.cit.tum.de/en/cit/research/doctorate/",
               "checkedAt": "2026-10-21",
               "outcome": "read",
-              "note": "Current CIT doctoral research route, supervisor/doctoral registration and dissertation submission. Expanded public prerequisites read. Exact academic award title not given."
+              "note": "Current CIT doctoral research route, supervisor/doctoral registration and dissertation submission. Expanded public prerequisites read. Exact academic award title not given. Revisited and expanded Regulations CIT: public links to graduate-centre regulation PDF and TUM regulations; detailed dissertation/examination guidelines in internal wiki explicitly require TUM User ID. No login attempted. Exact school award title remains absent from opened public HTML."
             },
             {
               "url": "https://www.ed.tum.de/en/ed/research-and-innovation/doctorate/",
@@ -16909,20 +17036,73 @@
               "checkedAt": "2026-10-21",
               "outcome": "read",
               "note": "TUM doctoral model explicitly individual independent research at chair/institute with PhD-like structuring support, contrasts traditional doctorate and Anglo-Saxon PhD."
+            },
+            {
+              "url": "https://www.gs.tum.de/en/gs/doctorate-at-tum/news/article/neue-promotionsordnung-und-tum-gs-statut-mir-wirkung-ab-01-oktober-2021/",
+              "checkedAt": "2026-10-21",
+              "outcome": "read",
+              "note": "Official regulation link from current CIT page leads to 23Aug2021 announcement explaining department-to-school transition and new doctoral regulations effective1Oct2021; no exact CIT doctoral credential or subject allocation stated."
+            },
+            {
+              "url": "https://www.cit.tum.de/en/cit/research/doctorate/",
+              "outcome": "read",
+              "note": "Full current CIT doctoral requirements, registration and submission HTML read via web tool. Degree-awarding CIT identified, but exact award title absent; detailed dissertation/examination guidelines explicitly require TUM User ID and were not accessed.",
+              "checkedAt": "2026-10-25"
+            },
+            {
+              "url": "https://www.cit.tum.de/en/cit/research/",
+              "checkedAt": "2026-10-25",
+              "outcome": "read",
+              "note": "Full substantive current research overview and all four actual department titles read; integrative institutes are expressly separate."
+            },
+            {
+              "url": "https://www.ed.tum.de/en/ed/about/departments/",
+              "checkedAt": "2026-10-25",
+              "outcome": "read",
+              "note": "Full substantive eight-department inventory read: Aerospace and Geodesy; Architecture; Civil and Environmental Engineering; Energy and Process Engineering; Engineering Physics and Computation; Materials Engineering; Mechanical Engineering; Mobility Systems Engineering."
+            },
+            {
+              "url": "https://www.math.cit.tum.de/en/math/home/",
+              "checkedAt": "2026-10-25",
+              "outcome": "read",
+              "note": "Complete current substantive department overview and full research Groups menu read. Discrete Optimization, Mathematical Optimization and Optimal Control are group names; AdONE explicitly under cooperation projects, not invented as a formal Operations doctoral specialization."
+            },
+            {
+              "url": "https://www.gs.tum.de/en/adone/start/",
+              "checkedAt": "2026-10-25",
+              "outcome": "read",
+              "note": "Complete current substantive overview read. Advanced Optimization in a Networked Economy, joint Management/CIT research training group, individual scientific applications; management science describes research intersection, not a formal named doctoral field."
+            },
+            {
+              "url": "https://www.ed.tum.de/en/ed/research-and-innovation/doctorate/",
+              "checkedAt": "2026-10-25",
+              "outcome": "read",
+              "note": "Complete current substantive doctoral framework read: individual scientific supervision in eight departments/chairs, registration, dissertation, examination and oral examination. Detailed procedures link to internal wiki, not accessed."
+            },
+            {
+              "url": "https://www.cit.tum.de/fileadmin/w00byx/cit/02_Forschung/Promotion/Dokumente/2024-09-26_AES_PromO.pdf",
+              "checkedAt": "2026-10-25",
+              "outcome": "read",
+              "note": "Official 26 September 2024 regulation: school-level actual academic doctorate alternatives and independent scientific dissertation/oral examination. Relevant sections 1, 2, 7 and 9 read, not all unrelated regulations."
             }
           ],
           "limitations": [
             "Exact award-to-operations-field allocation at Management and exact CIT/ED credentials remain unresolved; listed school award alternatives must not be counted as four separate programmes.",
-            "AdONE overlaps underlying Management/CIT doctorates and must not be counted as another independent degree."
+            "AdONE overlaps underlying Management/CIT doctorates and must not be counted as another independent degree.",
+            "CIT credential revisit: expanded public Regulations CIT points to detailed dissertation/examination guidelines requiring TUM User ID; those restricted documents were not accessed. Linked public regulation announcement gives no award-title mapping. No credential guessed from staff Dr. titles.",
+            "Fresh 25 October CIT follow-up confirms current doctoral provision and entry/submission framework, but does not resolve exact credential. No inferred PhD, staff-title conversion or restricted-guideline access. Existing Management award, AdONE overlap and all programme dates remain preserved.",
+            "Current title-scope reassessment: school-level credential alternatives for the two excluded generic technical routes are now public, but no particular alternative is selected. Their historic unknown credentials and research observations remain preserved; credential choice is not required to exclude a nonmatching actual title.",
+            "AdONE is a jointly hosted research training group named Advanced Optimization in a Networked Economy; its management-science intersection and applications are not invented as a formal Operations doctoral field. One actual Operations and Technology department-hosted Management route remains qualifying.",
+            "Scope is current published formal title/host provision in the plausible business and technical branches, not all independent supervisor topics. The ED logistics chair and CIT research groups are not promoted to actual departments or named doctoral concentrations."
           ],
-          "coverageComplete": false
+          "coverageComplete": true
         }
       ],
       "verifiedCurrentProgrammeIds": [
         "technical-university-of-munich--management-research-doctorate"
       ],
-      "branchCoverageComplete": false,
-      "nextStep": "Verify official current relevant doctoral routes across business and engineering; record branch gaps"
+      "branchCoverageComplete": true,
+      "nextStep": "Current scoped doctoral inventory checked; retain evidence and historical limitations"
     },
     {
       "id": "technion-israel-institute-of-technology",
@@ -25908,10 +26088,12 @@
             {
               "branch": "engineering",
               "reviewState": "partial",
-              "conclusion": "School of Mathematics formal Optimization and Operational Research PhD verified. School of Engineering presents a general Engineering PhD across Chemical, Mechanical, Civil/Environmental and Electrical/Electronic engineering, without a named IE/Ops title; full mathematics/informatics and technical specialty inventory remains unfinished.",
+              "conclusion": "Full School of Mathematics PhD application inventory read: Algebra/Geometry/Topology, Analysis, Applied/Computational Mathematics, Mathematics Education, Mathematical Physics, Optimization and Operational Research, Probability/Stochastics, Statistics. Only the independently verified Optimization and Operational Research PhD has a qualifying title. School of Engineering overview advertises generic Engineering PhD disciplines; Informatics research directory lists broad topics but is not a doctoral-field inventory. Other technical specialty degree inventory remains incomplete.",
               "sourceUrls": [
                 "https://maths.ed.ac.uk/research/data-decisions/optimization-and-operational-research/phd-opportunities",
-                "https://eng.ed.ac.uk/studying/degrees/postgraduate-research/study-phd"
+                "https://eng.ed.ac.uk/studying/degrees/postgraduate-research/study-phd",
+                "https://maths.ed.ac.uk/studying-here/pgr/phd-application/how-to-apply",
+                "https://people.inf.ed.ac.uk/research-directory.html"
               ]
             }
           ],
@@ -25951,12 +26133,29 @@
               "checkedAt": "2026-10-25",
               "outcome": "read",
               "note": "Opened full School of Engineering PhD overview; its engineering disciplines apply to a general Engineering PhD rather than an explicitly titled IE/Ops route."
+            },
+            {
+              "url": "https://maths.ed.ac.uk/studying-here/pgr/phd-application/how-to-apply",
+              "checkedAt": "2026-10-25",
+              "outcome": "read",
+              "note": "Full School of Mathematics PhD programme application list; one formally named qualifying OR PhD."
+            },
+            {
+              "url": "https://people.inf.ed.ac.uk/research-directory.html",
+              "checkedAt": "2026-10-25",
+              "outcome": "read",
+              "note": "Full Informatics research-area directory; broad research topics are not automatically named doctoral fields."
+            },
+            {
+              "url": "https://study.ed.ac.uk/programmes/postgraduate-research-a-z",
+              "checkedAt": "2026-10-25",
+              "outcome": "blocked",
+              "note": "Attempted full central 2026 research-degree A–Z catalogue returned 403. Search preview is discovery only and no catalogue-completeness claim is derived."
             }
           ],
           "limitations": [
-            "Adds a distinct formally named Management Science and Analytics PhD to existing Mathematics Optimization and Operational Research PhD; no overlap inferred.",
-            "Current business doctorate inventory checked. Other technical/mathematical doctoral fields still need review before complete coverage.",
-            "Previously attempted Mathematics central degree page returned 403; its inaccessible contents were never used. The separate Management Science central degree page opened and was read.",
+            "Current Business School and School of Mathematics formal doctoral programme lists checked; two distinct qualifying routes retained.",
+            "School of Engineering general doctorate overview read; Informatics research directory is not a formal doctoral-field list. Central research-degree A–Z catalogue returned 403, so remaining technical specialty coverage stays partial.",
             "Two imported person-level doctorate reports remain discovery only."
           ],
           "coverageComplete": false
@@ -27085,23 +27284,33 @@
           "status": "verified",
           "checkedAt": "2026-10-25",
           "programmeIds": [
+            "university-of-delhi--management-phd-operations-management-decision-science",
             "university-of-delhi--operational-research-phd"
           ],
           "branches": [
             {
               "branch": "business",
-              "reviewState": "unreviewed",
-              "conclusion": "Other business doctoral routes and named specialisations have not been inventoried.",
-              "sourceUrls": []
+              "reviewState": "checked",
+              "conclusion": "Current FMS Doctoral Programme page and 2026 admissions bulletin fully list the PhD in Management specializations: Operations Management & Decision Science; Management of Information Technology; Organizational Behaviour & HRM; Marketing; Strategy/General Management/Economics; Finance. The first is the only named qualifying business route. FMS is a Faculty of Management Studies, not itself a department titled Operations.",
+              "sourceUrls": [
+                "https://www.fms.edu/programmes/doctoral-programme",
+                "https://www.fms.edu/static/programmes/MBA_2026.pdf",
+                "https://www.du.ac.in/?page=ph.d."
+              ]
             },
             {
               "branch": "engineering",
               "reviewState": "partial",
-              "conclusion": "Faculty of Mathematical Sciences Operational Research doctorate verified. Other technical doctoral inventory not yet read.",
+              "conclusion": "Current central PhD subject list has Operational Research but no separate Industrial Engineering title. Main department directory omits Production & Industrial Engineering, whereas the official March 2026 Academic Council roster still retains a head position for that department marked Vacant, and older university history confirms founding in 1998. Neither administrative post nor historical identity establishes active current IE PhD provision; technical branch remains partial pending a current faculty/doctoral host source. An official 2013 PhD awardee roll names two recipients from Production and Industrial Engineering, establishing historical doctoral output but not 2026 current intake.",
               "sourceUrls": [
                 "https://or.du.ac.in/",
                 "https://or.du.ac.in/About-us",
-                "https://or.du.ac.in/Programmes-Offered/Ph.D.-in-Operational-Research"
+                "https://or.du.ac.in/Programmes-Offered/Ph.D.-in-Operational-Research",
+                "https://www.du.ac.in/?page=ph.d.",
+                "https://www.du.ac.in/index.php?page=departments-at-du",
+                "https://www.du.ac.in/index.php?page=list-of-department",
+                "https://www.du.ac.in/uploads/12032026-academics-List%20of%20A.C.%20members.pdf",
+                "https://www.du.ac.in/du/uploads/news/South%20Campus/07032014_LIST-OF-PHD-AWARDEES-2013.pdf"
               ]
             }
           ],
@@ -27123,17 +27332,61 @@
               "checkedAt": "2026-10-25",
               "outcome": "read",
               "note": "Full formal programme page identifies PhD and coursework."
+            },
+            {
+              "url": "https://www.fms.edu/programmes/doctoral-programme",
+              "checkedAt": "2026-10-25",
+              "outcome": "read",
+              "note": "Full current FMS doctoral programme page; named Operations Management and Decision Science research area mandatory at application."
+            },
+            {
+              "url": "https://www.fms.edu/static/programmes/MBA_2026.pdf",
+              "checkedAt": "2026-10-25",
+              "outcome": "read",
+              "note": "Full official 2026 admissions bulletin, p.12: PhD in Management with major Operations Management & Decision Science specialization and area-specific selection."
+            },
+            {
+              "url": "https://www.du.ac.in/?page=ph.d.",
+              "checkedAt": "2026-10-25",
+              "outcome": "read",
+              "note": "Full central PhD subject list, last updated August 2025; Operational Research listed; Industrial Engineering not separately listed."
+            },
+            {
+              "url": "https://www.du.ac.in/index.php?page=departments-at-du",
+              "checkedAt": "2026-10-25",
+              "outcome": "read",
+              "note": "Full current university department directory: Department of Operational Research present; Production & Industrial Engineering not shown on the main Faculty of Technology subsection."
+            },
+            {
+              "url": "https://www.du.ac.in/index.php?page=list-of-department",
+              "checkedAt": "2026-10-25",
+              "outcome": "read",
+              "note": "Full legacy-style university department listing includes Production & Industrial Engineering under Faculty of Technology, creating a current identity/host discrepancy to resolve."
+            },
+            {
+              "url": "https://www.du.ac.in/uploads/12032026-academics-List%20of%20A.C.%20members.pdf",
+              "checkedAt": "2026-10-25",
+              "outcome": "read",
+              "note": "Full March 2026 official Academic Council roster, PDF p.17: head position for Production & Industrial Engineering remains listed but Vacant; does not establish active department teaching or doctoral intake."
+            },
+            {
+              "url": "https://www.du.ac.in/du/uploads/news/South%20Campus/07032014_LIST-OF-PHD-AWARDEES-2013.pdf",
+              "checkedAt": "2026-10-25",
+              "outcome": "read",
+              "note": "Full official 2013 PhD degree awardee roll, 2014 convocation, PDF p.5 lists two graduates from Production and Industrial Engineering. Historical evidence only; no inference of current 2026 route."
             }
           ],
           "limitations": [
-            "Other plausible relevant university doctoral fields and departments remain to review; positive route is source-bounded.",
-            "Two imported person-level doctorate reports were not independently verified."
+            "Two distinct source-verified doctoral routes: Operational Research PhD and FMS Management PhD specialization Operations Management & Decision Science.",
+            "Business named doctoral specialization inventory checked. Technical remains partial: 2013 PhD awards confirm historical Production and Industrial Engineering doctoral output, but current central PhD list and main directory omit a corresponding active route; March 2026 administrative head position is vacant.",
+            "Two imported person-level doctorate reports remain discovery only."
           ],
           "coverageComplete": false
         }
       ],
       "verifiedCurrentProgrammeIds": [
-        "university-of-delhi--operational-research-phd"
+        "university-of-delhi--operational-research-phd",
+        "university-of-delhi--management-phd-operations-management-decision-science"
       ],
       "branchCoverageComplete": false,
       "nextStep": "Verify official current relevant doctoral routes across business and engineering; record branch gaps"
@@ -27239,19 +27492,23 @@
           "branches": [
             {
               "branch": "business",
-              "reviewState": "partial",
-              "conclusion": "Current Department of Operations and named FEB doctoral research programme verified. Other FEB research programmes listed centrally, but detailed doctoral-field scope not fully read.",
+              "reviewState": "checked",
+              "conclusion": "Full current FEB PhD research-programme inventory read: Economics/Econometrics/Finance, Global Economics & Management, Human Resource Management/Organisational Behaviour, Innovation/Organisation, Marketing, and Operations Management/Operations Research. The latter is the sole named qualifying FEB research programme; general operations topics elsewhere are not additional routes.",
               "sourceUrls": [
                 "https://www.rug.nl/research/gradschool-economics-and-business/phd-programme/prospective-phd/opera/?lang=en",
-                "https://www.rug.nl/feb/organization/units/academic-departments/operations/?lang=en"
+                "https://www.rug.nl/feb/organization/units/academic-departments/operations/?lang=en",
+                "https://www.rug.nl/education/phd-programmes/prospective/phd-research-programmes?lang=en"
               ]
             },
             {
               "branch": "engineering",
               "reviewState": "partial",
-              "conclusion": "Central official university page lists Industrial Engineering among Science and Engineering PhD research themes, but its linked page failed to fetch; actual formal route and unit host remain unresolved.",
+              "conclusion": "Current FSE PhD credential and broad research-group inventories read. Industrial Engineering is an FSE research-group category, with multiple groups nested beneath it, but the specific Industrial Engineering link failed to open; no direct evidence that it is a distinct named doctoral route or qualifying reviewed department. Engineering PhD overview is generic. Exact current formal IE route and host still unresolved; partial.",
               "sourceUrls": [
-                "https://www.rug.nl/education/phd-programmes/prospective/phd-research-programmes?lang=en"
+                "https://www.rug.nl/education/phd-programmes/prospective/phd-research-programmes?lang=en",
+                "https://www.rug.nl/fse/education/choose-your-study/international-portal/our-education/phd-and-engd?lang=en",
+                "https://www.rug.nl/research/fse/group/?lang=en",
+                "https://www.rug.nl/fse/engineering/research-gec/engineering-education/engineering-phd-programmes?lang=en"
               ]
             }
           ],
@@ -27279,11 +27536,30 @@
               "checkedAt": "2026-10-25",
               "outcome": "blocked",
               "note": "Official central page Industrial Engineering link failed to fetch (cache miss); no direct unit/doctoral facts inferred."
+            },
+            {
+              "url": "https://www.rug.nl/fse/education/choose-your-study/international-portal/our-education/phd-and-engd?lang=en",
+              "checkedAt": "2026-10-25",
+              "outcome": "read",
+              "note": "Full current FSE page distinguishes four-year PhD research doctorate from two-year professional EngD."
+            },
+            {
+              "url": "https://www.rug.nl/research/fse/group/?lang=en",
+              "checkedAt": "2026-10-25",
+              "outcome": "read",
+              "note": "Full FSE research-group inventory: Industrial Engineering is a category grouping research groups, not itself explicitly a doctoral programme or department."
+            },
+            {
+              "url": "https://www.rug.nl/fse/engineering/research-gec/engineering-education/engineering-phd-programmes?lang=en",
+              "checkedAt": "2026-10-25",
+              "outcome": "read",
+              "note": "Full generic Engineering PhD overview (last modified 2020) explains embedded research and graduate-school administration, not a separately named IE doctorate."
             }
           ],
           "limitations": [
-            "Science and Engineering Industrial Engineering route remains a lead until direct current field and host evidence is read.",
-            "Other university doctoral fields not fully assessed; two imported faculty doctorate reports not independently checked."
+            "Current FEB named programme inventory checked; FSE Industrial Engineering is only established as a research-group category, not a distinct doctoral route.",
+            "Official linked Industrial Engineering detail page failed to fetch; current technical route/host remains incomplete.",
+            "Imported faculty doctorate reports remain discovery only; no person verification was undertaken."
           ],
           "coverageComplete": false
         }
@@ -33538,26 +33814,33 @@
       ],
       "doctoralObservations": [
         {
-          "status": "partial",
-          "checkedAt": "2026-10-21",
-          "programmeIds": [],
+          "status": "verified",
+          "checkedAt": "2026-10-25",
+          "programmeIds": [
+            "universite-catholique-de-louvain--lidam-core-phd-operations-research"
+          ],
           "branches": [
             {
               "branch": "business",
               "reviewState": "partial",
-              "conclusion": "Current LIDAM Management doctorate points directly to LSM Doctorat en sciences économiques et de gestion, whose2026-27administration and thesis-defence documents are explicit. CORE doctoral page says supervision within various departmental doctoral programmes related to CORE fields, but exact relevant Ops doctoral field-to-award/host mapping not established. No generic doctorate-to-OR inference.",
+              "conclusion": "Current LIDAM Management doctorate points directly to LSM Doctorat en sciences économiques et de gestion, whose2026-27administration and thesis-defence documents are explicit. CORE doctoral page says supervision within various departmental doctoral programmes related to CORE fields, but exact relevant Ops doctoral field-to-award/host mapping not established. No generic doctorate-to-OR inference. Current 25 October official LIDAM OR PhD recruitment directly establishes institutional doctoral research field; exact school/domain allocation remains unknown, not assigned to this branch by inference. Wider named doctoral inventory remains incomplete.",
               "sourceUrls": [
                 "https://uclouvain.be/en/research-institutes/lidam/core/training",
                 "https://uclouvain.be/en/research-institutes/lidam/doctoral-school-in-management",
-                "https://uclouvain.be/fr/facultes/lsm/doctorat-en-sciences-economiques-et-de-gestion"
+                "https://uclouvain.be/fr/facultes/lsm/doctorat-en-sciences-economiques-et-de-gestion",
+                "https://uclouvain.be/en/research-institutes/lidam/core/news/job-phd-position-in-operations-research",
+                "https://uclouvain.be/en/research-institutes/lidam/phd"
               ]
             },
             {
               "branch": "engineering",
               "reviewState": "partial",
-              "conclusion": "LIDAM Science/Technology doctoral page names broad engineering/science domains and faculties, but not exact OR/IE doctoral specialization or host. No route assigned from broad sector.",
+              "conclusion": "LIDAM Science/Technology doctoral page names broad engineering/science domains and faculties, but not exact OR/IE doctoral specialization or host. No route assigned from broad sector. Current 25 October official LIDAM OR PhD recruitment directly establishes institutional doctoral research field; exact school/domain allocation remains unknown, not assigned to this branch by inference. Wider named doctoral inventory remains incomplete.",
               "sourceUrls": [
-                "https://uclouvain.be/en/research-institutes/lidam/science-technology-sector"
+                "https://uclouvain.be/en/research-institutes/lidam/science-technology-sector",
+                "https://uclouvain.be/en/research-institutes/lidam/core/news/job-phd-position-in-operations-research",
+                "https://uclouvain.be/en/research-institutes/lidam/phd",
+                "https://uclouvain.be/en/research-institutes/lidam/core/training"
               ]
             }
           ],
@@ -33585,15 +33868,40 @@
               "checkedAt": "2026-10-21",
               "outcome": "read",
               "note": "Full current LSM French doctorate page read, exact title,2026-27administration and thesis-defence documentation."
+            },
+            {
+              "url": "https://uclouvain.be/en/research-institutes/lidam/core/news/job-phd-position-in-operations-research",
+              "note": "Full actual official LIDAM/CORE announcement read, published5May2026 modified7August2026. Explicit PhD position in Operations Research startingOctober2026 or soon thereafter, doctorate-level coursework within UCLouvain doctoral programme, independent/collaborative OR research, original theoretical/numerical questions, completed PhD dissertation aimed at peer-reviewed publications. Rolling recruitment until filled; actual vacancy availability today unknown. This is named doctoral research opportunity, not faculty hiring credential or generic research interest.",
+              "checkedAt": "2026-10-25",
+              "outcome": "read",
+              "accessMethod": "web.open actual official HTML; authorized fallback"
+            },
+            {
+              "url": "https://uclouvain.be/en/research-institutes/lidam/phd",
+              "note": "Full actual LIDAM prospective-doctoral pathway read. Applicant must register in one of four doctoral schools depending on field: Economics, Management, Science/Technology, Statistics. Institute is not independent doctoral awarder; exact school/domain of the OR advertised pathway is not allocated on this page.",
+              "checkedAt": "2026-10-25",
+              "outcome": "read",
+              "accessMethod": "web.open actual official HTML; authorized fallback"
+            },
+            {
+              "url": "https://uclouvain.be/en/research-institutes/lidam/core/training",
+              "note": "Full substantive actual CORE doctoral page read. Supervises doctoral research through various UCL departments related to CORE fields; named interinstitutional quantitative economics programme and archived schemes separately. Does not allocate advertised OR project to exact degree/domain. No separate doctorate created for centre or every partnership.",
+              "checkedAt": "2026-10-25",
+              "outcome": "read",
+              "accessMethod": "web.open actual official HTML; authorized fallback"
             }
           ],
           "limitations": [
-            "Relevant current exact doctoral award/field/host linkage remains unverified despite clear doctoral research presence. CORE is a research centre, not silently treated as degree-awarding department."
+            "Current explicit OR research PhD provision established; exact faculty/domain inscription remains unknown and no alternative doctorate inferred.",
+            "Business and engineering broader doctoral inventories remain partial. Earlier separate broad management/science and CORE departmental relationships preserved with original dates.",
+            "No independent legal award by institute/centre asserted. No graduate employment/history research or browser tabs."
           ],
           "coverageComplete": false
         }
       ],
-      "verifiedCurrentProgrammeIds": [],
+      "verifiedCurrentProgrammeIds": [
+        "universite-catholique-de-louvain--lidam-core-phd-operations-research"
+      ],
       "branchCoverageComplete": false,
       "nextStep": "Verify official current relevant doctoral routes across business and engineering; record branch gaps"
     },
@@ -33996,7 +34304,7 @@
       "doctoralObservations": [
         {
           "status": "verified",
-          "checkedAt": "2026-10-22",
+          "checkedAt": "2026-10-25",
           "programmeIds": [
             "university-of-alberta--business-operations-information-systems-phd",
             "university-of-alberta--mechanical-engineering-phd-operations-research"
@@ -34015,11 +34323,21 @@
             {
               "branch": "engineering",
               "reviewState": "partial",
-              "conclusion": "New current departmental PhD objectives explicitly connect Mechanical Engineering doctorate to Engineering Systems Integration, Reliability and Operations. Its actual research specialization explicitly defines OR/Decision Analytics and logistics/supply-chain operations. Mechanical PhD pathway now verified independently of still-unallocated Engineering Management award. Wider engineering/math doctoral inventory remains incomplete.",
+              "conclusion": "New current departmental PhD objectives explicitly connect Mechanical Engineering doctorate to Engineering Systems Integration, Reliability and Operations. Its actual research specialization explicitly defines OR/Decision Analytics and logistics/supply-chain operations. Mechanical PhD pathway now verified independently of still-unallocated Engineering Management award. Wider engineering/math doctoral inventory remains incomplete. Follow-up25 October: complete Engineering degree inventory and Civil/Environmental graduate named field inventory read. Current separate Engineering Management PhD primary presents robot-verification challenge and body was not read; no bypass. Prior Mechanical Operations pathway remains separate and original dates unchanged. Remaining Engineering Management field allocation and other plausible technical fields stay explicit.",
               "sourceUrls": [
                 "https://www.ualberta.ca/en/graduate-programs/doctor-of-philosophy-in-engineering-management-mechanical-engineering.html",
                 "https://www.ualberta.ca/en/engineering/mechanical-engineering/research/engineering-systems-integration-reliability-and-operations.html",
-                "https://www.ualberta.ca/en/engineering/mechanical-engineering/graduate/doctor-of-philosophy.html"
+                "https://www.ualberta.ca/en/engineering/mechanical-engineering/graduate/doctor-of-philosophy.html",
+                "https://www.ualberta.ca/en/engineering/programs/graduate/index.html",
+                "https://www.ualberta.ca/en/engineering/civil-environmental-engineering/graduate/index.html"
+              ]
+            },
+            {
+              "branch": "mathematics",
+              "reviewState": "checked",
+              "conclusion": "Full current Math/Stats degree-versus-research-field matrix read, including named mathematics/applied mathematics subfields. No additional matching Operations/MS/IE doctoral field established. MDP and Biostatistics explicitly not PhD offerings; embedded Data Science certificate not doctorate.",
+              "sourceUrls": [
+                "https://www.ualberta.ca/en/mathematical-and-statistical-sciences/graduate-studies/programs/index.html"
               ]
             }
           ],
@@ -34065,12 +34383,42 @@
               "checkedAt": "2026-10-22",
               "outcome": "read",
               "note": "Full research area and all six named specialization descriptions read; explicit OR/Decision Analytics with planning, scheduling, logistics, queues and supply-chain resilience. Earlier read/date preserved separately."
+            },
+            {
+              "url": "https://www.ualberta.ca/en/engineering/programs/graduate/index.html",
+              "note": "Complete substantive Engineering graduate degree inventory read, including expanded PhD list: Biomedical; Chemical/Materials; Civil/Environmental/Mining/Petroleum; Electrical/Computer/Engineering Physics; Engineering Management; Mechanical. MD/PhD Biomedical separate medical joint pathway, no additional Operations title. Masters, MBA/MEng and certificates distinguished.",
+              "outcome": "read",
+              "checkedAt": "2026-10-25",
+              "accessMethod": "web.open/click actual official HTML; authorized fallback"
+            },
+            {
+              "url": "https://www.ualberta.ca/en/mathematical-and-statistical-sciences/graduate-studies/programs/index.html",
+              "note": "Full actual Math/Stats graduate research-area versus degree matrix read. PhDs Mathematics, Applied Math, Mathematical Finance, Mathematical Physics, Statistics, Statistical Machine Learning. Actual included mathematics/applied mathematics subfields name no Operations/MS/IE. Modelling Data Predictions and Biostatistics explicitly have no PhD in table. Embedded Data Science certificate not another doctorate.",
+              "outcome": "read",
+              "checkedAt": "2026-10-25",
+              "accessMethod": "web.open/click actual official HTML; authorized fallback"
+            },
+            {
+              "url": "https://www.ualberta.ca/en/engineering/civil-environmental-engineering/graduate/index.html",
+              "note": "Full actual Civil/Environmental/Mining/Petroleum graduate programme and named field inventory read: construction, environmental, geotechnical/geoenvironmental, mining, petroleum, structural, transportation, water resources, cross-disciplinary. MSc, MEng, MBA/MEng and PhD distinguished; no directly matching Ops/MS/IE doctoral title in actual field inventory.",
+              "outcome": "read",
+              "checkedAt": "2026-10-25",
+              "accessMethod": "web.open/click actual official HTML; authorized fallback"
+            },
+            {
+              "url": "https://www.ualberta.ca/en/graduate-programs/doctor-of-philosophy-in-engineering-management-mechanical-engineering.html",
+              "note": "Current actual primary URL presents JavaScript robot-verification page; programme body unread on25 October. No reload, challenge interaction or bypass. Older genuinely read programme facts remain separately dated; current access failure does not revoke prior observed award.",
+              "outcome": "blocked",
+              "checkedAt": "2026-10-25",
+              "accessMethod": "web.open/click actual official HTML; authorized fallback"
             }
           ],
           "limitations": [
             "Prior Business OIS doctoral facts/dates preserved. Mechanical PhD now explicitly linked to OR/Decision Analytics via actual programme objectives and identically named research area.",
             "Earlier Engineering Management-to-OR ambiguity is not silently converted into another route; separate award remains observed but not assigned OR solely from departmental umbrella.",
-            "Broader university engineering/mathematical inventories remain incomplete; no institutional completeness claim."
+            "Broader university engineering/mathematical inventories remain incomplete; no institutional completeness claim.",
+            "Current Engineering Management primary access failed at robot-verification page; prior evidence preserved with original date, no new source verification claimed.",
+            "Full Math/Stats degree/field matrix now checked; remaining Engineering Management field allocation and wider computing/electrical technical fields unresolved. No browser tabs created."
           ],
           "coverageComplete": false
         }
@@ -34542,9 +34890,11 @@
       ],
       "doctoralObservations": [
         {
-          "status": "partial",
-          "checkedAt": "2026-10-21",
-          "programmeIds": [],
+          "status": "verified",
+          "checkedAt": "2026-10-25",
+          "programmeIds": [
+            "university-of-california-davis--transportation-technology-policy-phd-infrastructure-operations"
+          ],
           "branches": [
             {
               "branch": "business",
@@ -34557,17 +34907,22 @@
             {
               "branch": "engineering",
               "reviewState": "checked",
-              "conclusion": "Full current engineering graduate degree inventory read, no IE/OR named doctoral route. TransportationTechnologyPolicyPhD infrastructure/operations research lead remains broad, not automatically logistics/OR.",
+              "conclusion": "Earlier full current Engineering degree inventory retained; actual current ITS programme and2026–27 PhD-specific catalogue now establish formal Infrastructure & Operations track within TTP PhD. Distinguish actual named track from broad transportation topic and generic logistics methods. No IE/OR relabelling.",
               "sourceUrls": [
-                "https://engineering.ucdavis.edu/admissions/graduate/programs"
+                "https://engineering.ucdavis.edu/admissions/graduate/programs",
+                "https://its.ucdavis.edu/education/transportation-technology-policy-graduate-group",
+                "https://catalog.ucdavis.edu/departments-programs-degrees/transportation-technology-policy-graduate-group/transportation-technology-policy-phd/",
+                "https://grad.ucdavis.edu/programs/gttp"
               ]
             },
             {
               "branch": "mathematics",
-              "reviewState": "partial",
-              "conclusion": "Current AppliedMath interdisciplinary group PhDPlanB explicit and optimization/control among research areas, but no explicit OR/IE/Opsdoctoral specialization. Undergraduate MathematicalAnalytics/OR discovery not doctoral proof; qualifying field requires scope adjudication.",
+              "reviewState": "checked",
+              "conclusion": "Actual current Applied Mathematics PhD overview and full programme doctoral requirements read. Named formal tracks and specialization examples do not name Operations/MS/IE. Optimization/control and faculty research alone not treated as OR. Undergraduate Mathematical Analytics/OR not doctoral proof.",
               "sourceUrls": [
-                "https://grad.ucdavis.edu/programs/gapm"
+                "https://grad.ucdavis.edu/programs/gapm",
+                "https://appliedmath.ucdavis.edu/",
+                "https://appliedmath.ucdavis.edu/graduate/degree_req/phd-degree-req"
               ]
             }
           ],
@@ -34589,17 +34944,63 @@
               "checkedAt": "2026-10-21",
               "outcome": "read",
               "note": "Full current AppliedMathematics graduate group PhDPlanB overview, optimization/control research and LettersScience lead dean read."
+            },
+            {
+              "url": "https://grad.ucdavis.edu/programs/gapm",
+              "note": "Full substantive current Applied Mathematics graduate programme overview and degree/admission information read. PhD PlanB, interdisciplinary graduate group, College Letters/Science. Named studies include optimization/control but no Operations/MS/IE title; general engineering applications not automatically OR.",
+              "checkedAt": "2026-10-25",
+              "outcome": "read",
+              "accessMethod": "web.open/click actual official HTML; authorized fallback"
+            },
+            {
+              "url": "https://appliedmath.ucdavis.edu/",
+              "note": "Actual programme homepage read; academic announcements and news do not establish named Operations doctoral field. No individual graduate histories collected.",
+              "checkedAt": "2026-10-25",
+              "outcome": "read",
+              "accessMethod": "web.open/click actual official HTML; authorized fallback"
+            },
+            {
+              "url": "https://appliedmath.ucdavis.edu/graduate/degree_req/phd-degree-req",
+              "note": "Full actual PhD degree requirements read, Fall2024 requirements still linked from current programme. Dissertation original publishable contribution and exit seminar; named AreaA/B tracks Analysis/Applied, Data Science, Numerical Methods, Probability, Theoretical CS. Field-specialization examples optimization/probability/biology/signal processing; no explicit Operations title. No doctorate inferred from undergraduate OR curriculum.",
+              "checkedAt": "2026-10-25",
+              "outcome": "read",
+              "accessMethod": "web.open/click actual official HTML; authorized fallback"
+            },
+            {
+              "url": "https://its.ucdavis.edu/education/transportation-technology-policy-graduate-group",
+              "note": "Full current ITS doctoral/MS programme overview read, source updated5October2026. Actual formal three tracks Vehicles/Fuels, Demand/Behavior, Infrastructure/Operations; programme hosted by ITS,60+faculty across12departments. Sustainable freight/logistics explicitly research focus. This is programme-track language, not generic faculty interests.",
+              "checkedAt": "2026-10-25",
+              "outcome": "read",
+              "accessMethod": "web.open/click actual official HTML; authorized fallback"
+            },
+            {
+              "url": "https://catalog.ucdavis.edu/departments-programs-degrees/transportation-technology-policy-graduate-group/transportation-technology-policy-phd/",
+              "note": "Full substantive actual2026–27 PhD-specific catalogue read. Exact Transportation Technology & Policy Doctor of Philosophy. Students choose one of three tracks including Infrastructure & Operations; PhD students follow track curriculum plus extra skills/electives, minimum54units. Catalogue publication27April2026; no separate OR or IE award inferred.",
+              "checkedAt": "2026-10-25",
+              "outcome": "read",
+              "accessMethod": "web.open/click actual official HTML; authorized fallback"
+            },
+            {
+              "url": "https://grad.ucdavis.edu/programs/gttp",
+              "note": "Full substantive current central TTP doctoral programme/degrees/admissions record read. Interdisciplinary Graduate Group hosted by ITS, lead dean College of Engineering; PhD PlanB distinct from MS plans. Current2027 application deadlines and2025 requirements link; doctoral eligibility not inferred from faculty credentials.",
+              "checkedAt": "2026-10-25",
+              "outcome": "read",
+              "accessMethod": "web.open/click actual official HTML; authorized fallback"
             }
           ],
           "limitations": [
-            "No relevant doctorate fully verified yet. Broad mathematical optimization/control and transportation operations candidate fields remain explicit scope decisions; no undergraduate OR→PhD inference."
+            "Bounded current Business/Engineering inventory previously read and retained with original dates. Mathematics named-field follow-up completed25October; generic optimization/control does not qualify independently.",
+            "Positive inclusion depends on actual named Infrastructure & Operations doctoral track under owner title rule, not generic transportation operations topic. Integrator adjudication requested.",
+            "No claimed separate OR/IE diploma, no new department inferred, no individual graduate research. No source browser tabs created."
           ],
-          "coverageComplete": false
+          "coverageComplete": true
         }
       ],
-      "verifiedCurrentProgrammeIds": [],
-      "branchCoverageComplete": false,
-      "nextStep": "Verify official current relevant doctoral routes across business and engineering; record branch gaps"
+      "verifiedCurrentProgrammeIds": [
+        "university-of-california-davis--transportation-technology-policy-phd-infrastructure-operations"
+      ],
+      "branchCoverageComplete": true,
+      "nextStep": "Current scoped doctoral inventory checked; retain evidence and historical limitations"
     },
     {
       "id": "unresolved:university of chinese academy of sciences",
@@ -36219,7 +36620,7 @@
       "doctoralObservations": [
         {
           "status": "verified",
-          "checkedAt": "2026-10-22",
+          "checkedAt": "2026-10-25",
           "programmeIds": [
             "vanderbilt-university--civil-engineering-phd-transportation-operations"
           ],
@@ -36234,14 +36635,17 @@
             },
             {
               "branch": "engineering",
-              "reviewState": "partial",
-              "conclusion": "Current department overview/graduate programme and expanded Civil Engineering doctorate panel read. Explicit VECTOR transportation doctorate connection and centre current intermodal freight/operations remit establish an eligible pathway. Broader engineering degree inventory and other departments remain incomplete; separate RRR is MEng.",
+              "reviewState": "checked",
+              "conclusion": "Complete actual central Graduate School degree/school inventory read, current Engineering department/degree framework checked and plausible Mechanical doctoral focus fields and Engineering Science/Management offerings individually read. No additional named Operations/MS/IE doctoral title established. Engineering Management is MEng, not PhD. Existing Civil/VECTOR programme facts and any title eligibility adjudication remain unchanged; bounded scope closes previous wider-inventory gap.",
               "sourceUrls": [
                 "https://engineering.vanderbilt.edu/academics/graduate/",
                 "https://www.vanderbilt.edu/vector/academics/",
                 "https://www.vanderbilt.edu/vector/",
                 "https://engineering.vanderbilt.edu/departments/civil-environmental-engineering/",
-                "https://engineering.vanderbilt.edu/departments/civil-environmental-engineering/graduate-programs/"
+                "https://engineering.vanderbilt.edu/departments/civil-environmental-engineering/graduate-programs/",
+                "https://gradschool.vanderbilt.edu/admissions/apply/application-requirements-by-program/",
+                "https://engineering.vanderbilt.edu/departments/mechanical-engineering/graduate-programs/",
+                "https://engineering.vanderbilt.edu/departments/engineering-science-management/"
               ]
             }
           ],
@@ -36287,18 +36691,47 @@
               "checkedAt": "2026-10-22",
               "outcome": "read",
               "note": "Full graduate overview and actual Civil Engineering and Risk/Reliability/Resilience panels expanded/read. Explicit Civil Engineering PhD, dissertation final defense, research areas; separate RRR is MEng, not added doctorate."
+            },
+            {
+              "url": "https://engineering.vanderbilt.edu/academics/graduate/",
+              "note": "Full substantive current Engineering graduate overview read. Research MS/PhD through Graduate School, doctoral dissertation72hours; engineering departments listed. Embedded dynamic finder has controls but no actual programme rows in opened HTML, so this page alone is not full degree-inventory verification. Current Engineering deadlines refer2027; central Graduate School actual table read separately.",
+              "checkedAt": "2026-10-25",
+              "outcome": "read",
+              "accessMethod": "web.open/click actual official HTML; authorized fallback"
+            },
+            {
+              "url": "https://gradschool.vanderbilt.edu/admissions/apply/application-requirements-by-program/",
+              "note": "Full actual central Graduate School degree/school table read through Special Education. Engineering PhDs explicitly Biomedical, Chemical, Civil, Computer Science, Electrical/Computer, Environmental, Interdisciplinary Materials, Mechanical. Mathematics separately Arts/Science, no independently named IE/Operations programme. Graduate table dates differ from Engineering2027 instructions; do not merge deadline claims or infer closure from discrepancy.",
+              "checkedAt": "2026-10-25",
+              "outcome": "read",
+              "accessMethod": "web.open/click actual official HTML; authorized fallback"
+            },
+            {
+              "url": "https://engineering.vanderbilt.edu/departments/mechanical-engineering/graduate-programs/",
+              "note": "Full substantive actual Mechanical graduate overview, seven focus areas and doctoral requirements read. Surgical robotics, rehabilitation/social robots, mechatronics/control/design, energy, fluids, nanotechnology, advanced manufacturing. Individual doctoral dissertation/exam research; no explicit Operations/MS/IE title or field. Generic manufacturing not treated as IE.",
+              "checkedAt": "2026-10-25",
+              "outcome": "read",
+              "accessMethod": "web.open/click actual official HTML; authorized fallback"
+            },
+            {
+              "url": "https://engineering.vanderbilt.edu/departments/engineering-science-management/",
+              "note": "Full substantive Division Engineering Science/Management current offering read. Undergraduate Engineering Science BS/Engineering Management minor; only online graduate offering MEng Engineering Management. No PhD assigned from interdisciplinary division title or apply-to-graduate button. Division rename2024 historical caveat retained, not a doctoral name change.",
+              "checkedAt": "2026-10-25",
+              "outcome": "read",
+              "accessMethod": "web.open/click actual official HTML; authorized fallback"
             }
           ],
           "limitations": [
-            "Business doctoral inventory remains checked with no Owen doctorate listed. Wider engineering doctoral programme inventory remains incomplete.",
-            "No independently titled OR/IE doctorate inferred. Current source-bounded transportation logistics/operations research pathway documented separately from representative electives."
+            "Current bounded Business/Engineering degree/field inventory review, not historical award census or all faculty research topics.",
+            "Embedded Engineering finder did not expose programme rows; actual full central Graduate School table supplies degree inventory. Different deadline dates across pages not adjudicated as programme status.",
+            "Original Civil/VECTOR field/credential facts, dates and existing strict-title decisions remain unchanged. Scope-only coverage does not itself newly approve broad Transportation as Ops. No browser tabs created."
           ],
-          "coverageComplete": false
+          "coverageComplete": true
         }
       ],
       "verifiedCurrentProgrammeIds": [],
-      "branchCoverageComplete": false,
-      "nextStep": "Verify official current relevant doctoral routes across business and engineering; record branch gaps"
+      "branchCoverageComplete": true,
+      "nextStep": "Current scoped doctoral inventory checked; retain evidence and historical limitations"
     },
     {
       "id": "unresolved:warsaw university of technology",

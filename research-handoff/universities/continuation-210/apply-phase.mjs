@@ -1,0 +1,11 @@
+import fs from 'node:fs';
+import crypto from 'node:crypto';
+import assert from 'node:assert/strict';
+import {execFileSync} from 'node:child_process';
+const dir='research-handoff/universities/continuation-210',m=JSON.parse(fs.readFileSync(dir+'/integration-manifest.json')),phase=process.argv[2],apply=process.argv.includes('--apply');
+for(const f of m.frozenInputs)assert.equal(crypto.createHash('sha256').update(fs.readFileSync(f.path)).digest('hex'),f.sha256,'Frozen input changed: '+f.path);
+const run=(script,files,flags=[])=>execFileSync(process.execPath,[script,...files,...flags],{stdio:'inherit'});
+if(phase==='units')run('scripts/merge-university-reviews.mjs',[dir+'/unit-integration.json'],apply?[]:['--dry-run']);
+else if(phase==='programmes')run('scripts/merge-doctoral-proposals.mjs',m.programmes,apply?['--apply']:[]);
+else if(phase==='scopes')run('scripts/merge-doctoral-proposals.mjs',m.scopes,['--scope-only',...(apply?['--apply']:[])]);
+else throw Error('Unknown phase');
