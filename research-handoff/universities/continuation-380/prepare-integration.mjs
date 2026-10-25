@@ -1,0 +1,7 @@
+import fs from 'node:fs';import crypto from 'node:crypto';import {execFileSync} from 'node:child_process';
+const dir='research-handoff/universities/continuation-380',root='research-handoff/universities/',p=(n,l,f)=>`${root}continuation-${n}/shard-${l}/${f}.json`;
+const sources=[],unitInputs=[p(313,'a','aalborg-university.unit')],programmes=[],scopes=[p(311,'a','georgia-southern-university.doctoral'),p(312,'a','iim-ahmedabad.doctoral'),p(266,'c','utm.local-administered-doctoral-scope-composite')];
+const assertionInputs=[p(285,'b','mit-existing-evidence-source-assertion-proposals'),p(285,'b','tum-emory-existing-evidence-source-assertion-proposals'),p(286,'b','koc-nus-existing-evidence-source-assertion-proposals'),p(287,'b','northwestern-lehigh-existing-evidence-source-assertion-proposals'),p(313,'a','aalborg-source-unit-assertions'),dir+'/ucl-host-specific-source-decisions.json'];
+const m={baseCommit:execFileSync('git',['rev-parse','HEAD'],{encoding:'utf8'}).trim(),sources,unitInputs,programmes,scopes,assertionInputs};m.frozenInputs=[...unitInputs,...scopes,...assertionInputs].map(path=>({path,sha256:crypto.createHash('sha256').update(fs.readFileSync(path)).digest('hex')}));fs.writeFileSync(dir+'/integration-manifest.json',JSON.stringify(m,null,2)+'\n');
+fs.writeFileSync(dir+'/apply-phase.mjs',fs.readFileSync(root+'continuation-370/apply-phase.mjs','utf8').replaceAll('continuation-370','continuation-380'));
+console.log({units:unitInputs.length,scopes:scopes.length,assertionFiles:assertionInputs.length});

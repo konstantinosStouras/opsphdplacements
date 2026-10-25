@@ -119,8 +119,8 @@
       "status": "reviewed",
       "canonicalName": "Aalborg University",
       "universitySourceUrl": "https://www.mp.aau.dk/research/research-areas/soim",
-      "checkedAt": "2026-10-20",
-      "reviewer": "Codex in Chrome",
+      "checkedAt": "2026-10-25",
+      "reviewer": "Codex via opened official web pages",
       "units": [
         {
           "id": "aalborg-university--materials-and-production",
@@ -158,14 +158,25 @@
           "checkedAt": "2026-10-20",
           "outcome": "read",
           "note": "Business-school overview lists seven groups; none explicitly named operations or supply chain. No separate business-school operations unit verified."
+        },
+        {
+          "url": "https://www.phd.aau.dk/eng",
+          "checkedAt": "2026-10-25",
+          "outcome": "read",
+          "note": "Full current Doctoral School of Engineering and Science page explicitly names parent Faculty of Engineering and Science at Aalborg University."
+        },
+        {
+          "url": "https://www.mp.aau.dk/research/research-areas/soim",
+          "checkedAt": "2026-10-25",
+          "outcome": "read",
+          "note": "Full current official research page explicitly names Department of Materials and Production and SOIM group; confirms compound job label department part."
         }
       ],
       "limitations": [
-        "No separate business-school operations unit verified from its research-group overview. Parent faculty name was not independently established on the opened pages."
+        "Historical imported job assertion is reconciled to official parent faculty and department names; no individual hire/person fact is inferred.",
+        "Department title Materials and Production is not itself a strict Ops/MS/IE qualifying title; its mapped identity is retained as source reconciliation, while doctorate eligibility follows the separate current verified route and title gate."
       ],
       "duplicateOf": null,
-      "addedAt": "2026-10-20T09:10:37Z",
-      "updatedAt": "2026-10-21T21:30:10Z",
       "doctoralReview": {
         "status": "verified",
         "checkedAt": "2026-10-21",
@@ -252,7 +263,9 @@
           "Earlier official unit observations/check dates preserved unchanged; current programme host supported by new current departmental read."
         ],
         "coverageComplete": true
-      }
+      },
+      "addedAt": "2026-10-20T09:10:37Z",
+      "updatedAt": "2026-10-25T23:15:05Z"
     },
     {
       "id": "aalto-university",
@@ -29807,31 +29820,28 @@
       "duplicateOf": null,
       "doctoralReview": {
         "status": "verified",
-        "checkedAt": "2026-10-22",
+        "checkedAt": "2026-10-25",
         "programmeIds": [
           "georgia-southern-university--logistics-supply-chain-management-phd"
         ],
         "branches": [
           {
             "branch": "business",
-            "reviewState": "partial",
-            "conclusion": "Exact Logistics and Supply Chain Management PhD and department verified with explicit no-new-applications restriction. Parker college’s degree-programmes page displays prose but no actual award list, so complete wider business doctoral coverage remains unresolved.",
+            "reviewState": "checked",
+            "conclusion": "Current official university degree data embedded on Parker College Degrees & Programs page was fully read for all doctoral rows. The previously verified Logistics and Supply Chain Management PhD remains documented with no-new-applications restriction; the global current catalogue does not show another Parker research doctorate. Its title and Logistics & Supply Chain department title alone do not pass strict Ops/MS/IE title gate. Operations-named BBA and graduate certificates are not doctorates.",
             "sourceUrls": [
-              "https://www.georgiasouthern.edu/degrees/phd-logistics-supply-chain-management",
-              "https://www.georgiasouthern.edu/colleges/parker-business/departments/logistics-supply-chain-management",
-              "https://georgiasouthern.edu/colleges/parker-business/degrees-programs/"
+              "https://www.georgiasouthern.edu/colleges/parker-business/degrees-programs",
+              "https://www.georgiasouthern.edu/degrees/phd-logistics-supply-chain-management"
             ]
           },
           {
             "branch": "engineering",
-            "reviewState": "partial",
-            "conclusion": "College and all six department summaries read. Engineering degrees page states two PhDs but renders no award list, central degree finder is also absent, and the current graduate catalog destination returned no readable content. Manufacturing overview establishes BS/master’s, insufficient to resolve remaining doctoral provision.",
+            "reviewState": "checked",
+            "conclusion": "Current official university degree data lists exactly two Engineering & Computing PhDs: Engineering and Applied Computing. Full PhD descriptions were opened. Engineering has named concentrations Civil, Electrical, Mechanical and Advanced Manufacturing; Applied Computing has Computational Foundations, Cybersecurity and Machine Learning. No title-matching Ops/MS/IE doctorate, concentration or reviewed department host is shown. A prior graduate catalog page remained unread but current official programme bodies resolve these exact title inventories.",
             "sourceUrls": [
-              "https://georgiasouthern.edu/colleges/engineering-computing/",
-              "https://georgiasouthern.edu/colleges/engineering-computing/degrees-programs/",
-              "https://www.georgiasouthern.edu/degrees",
-              "https://catalog.georgiasouthern.edu/content.php?catoid=17&navoid=1981",
-              "https://georgiasouthern.edu/colleges/engineering-computing/departments/manufacturing-engineering/"
+              "https://www.georgiasouthern.edu/colleges/engineering-computing/degrees-programs",
+              "https://www.georgiasouthern.edu/degrees/phd-in-engineering",
+              "https://www.georgiasouthern.edu/degrees/phd-in-applied-computing"
             ]
           }
         ],
@@ -29913,16 +29923,40 @@
             "note": "Read full manufacturing department page: BS and master’s/advanced manufacturing, robotics/automation/material processing; no separately named current doctorate established. This does not resolve the engineering college’s two unnamed PhDs.",
             "outcome": "read",
             "checkedAt": "2026-10-22"
+          },
+          {
+            "url": "https://www.georgiasouthern.edu/colleges/parker-business/degrees-programs",
+            "checkedAt": "2026-10-25",
+            "outcome": "read",
+            "note": "Full current Parker degree list rendered, including embedded university-wide rows. Doctoral titles and levels checked; no additional business research doctorate beyond saved suspended-admissions Logistics PhD."
+          },
+          {
+            "url": "https://www.georgiasouthern.edu/colleges/engineering-computing/degrees-programs",
+            "checkedAt": "2026-10-25",
+            "outcome": "read",
+            "note": "Full current college degree list rendered this time, identifies Engineering and Applied Computing as its two PhDs and their hosts."
+          },
+          {
+            "url": "https://www.georgiasouthern.edu/degrees/phd-in-engineering",
+            "checkedAt": "2026-10-25",
+            "outcome": "read",
+            "note": "Full official current PhD page lists exact four concentrations Civil, Electrical, Mechanical, Advanced Manufacturing; no Ops/MS/IE."
+          },
+          {
+            "url": "https://www.georgiasouthern.edu/degrees/phd-in-applied-computing",
+            "checkedAt": "2026-10-25",
+            "outcome": "read",
+            "note": "Full official current PhD page lists exact three concentrations Computational Foundations, Cybersecurity, Machine Learning; no Ops/MS/IE."
           }
         ],
         "limitations": [
-          "One documented doctoral route with suspended admissions does not complete institutional branch coverage. Current degree-list rendering and catalog destination failure are individual evidence gaps, not proof of absence.",
-          "Official PhD page contains apparent placeholder numeric job/salary fields. They were not imported or used as evidence. No graduate employment research performed."
+          "Current formal title/field scope complete from actual official degree list and detailed plausible programme pages. Older blank catalog attempt remains recorded; no access-control workaround.",
+          "Existing Logistics and Supply Chain Management PhD with no-new-applications restriction is preserved as factual programme observation. Shared strict title helper excludes it from qualifying count; no inferred closure date or permanent termination."
         ],
-        "coverageComplete": false
+        "coverageComplete": true
       },
       "addedAt": "2026-10-22T12:21:01Z",
-      "updatedAt": "2026-10-22T12:21:01Z"
+      "updatedAt": "2026-10-25T23:15:05Z"
     },
     {
       "id": "georgia-southwestern-state-university",
@@ -36230,25 +36264,26 @@
       "duplicateOf": null,
       "doctoralReview": {
         "status": "verified",
-        "checkedAt": "2026-10-22",
+        "checkedAt": "2026-10-25",
         "programmeIds": [
           "iim-ahmedabad--phd-operations-and-decision-sciences"
         ],
         "branches": [
           {
             "branch": "business",
-            "reviewState": "partial",
-            "conclusion": "Eleven current doctoral specializations read in central admissions page; Operations & Decision Sciences qualification and host verified. Public Systems page lacks sufficient visible field detail to resolve potential additional relevance.",
+            "reviewState": "checked",
+            "conclusion": "Full current official IIMA Doctoral Programme in Management admissions page names all eleven formal doctoral specializations, including Operations & Decision Sciences and separately Public Systems. Full Public Systems Group description and dissertation listing show public policy/management/transport topics but do not rename that specialization Operations, Management Science or Industrial Engineering. The existing Operations & Decision Sciences PhD route remains the one qualifying formal doctoral specialization. Current IIMA Dubai campus programme list shows only one-year MBA and executive education; Operations electives there are not doctoral provision.",
             "sourceUrls": [
               "https://www.iima.ac.in/academics/phd/admission",
-              "https://www.iima.ac.in/faculty-research/areas/Operations-and-Decision-Sciences",
-              "https://www.iima.ac.in/faculty-research/areas/Public-Systems-Group"
+              "https://www.iima.ac.in/faculty-research/areas/Public-Systems-Group",
+              "https://www.iima.ac.in/iima-dubai-campus.",
+              "https://www.iima.ac.in/iima-dubai-campus/academic-dubai/one-year-mba/about-programme"
             ]
           },
           {
             "branch": "engineering",
             "reviewState": "not-present",
-            "conclusion": "Current central doctoral specialization and academic-area inventories list no separate engineering school or engineering doctoral branch. The verified operations route is in the management doctorate.",
+            "conclusion": "The complete IIMA doctoral specialization and academic area lists have no separate engineering school/doctorate branch; the relevant programme is within management.",
             "sourceUrls": [
               "https://www.iima.ac.in/academics/phd/admission",
               "https://www.iima.ac.in/faculty-research/areas"
@@ -36285,16 +36320,40 @@
             "checkedAt": "2026-10-22",
             "outcome": "read",
             "note": "Sparse rendered page identifies group and PhD course filter; no additional relevant specialization inferred."
+          },
+          {
+            "url": "https://www.iima.ac.in/academics/phd/admission",
+            "checkedAt": "2026-10-25",
+            "outcome": "read",
+            "note": "Fresh full current 2027 admissions page, eleven exact doctorate specializations and housing areas read."
+          },
+          {
+            "url": "https://www.iima.ac.in/faculty-research/areas/Public-Systems-Group",
+            "checkedAt": "2026-10-25",
+            "outcome": "read",
+            "note": "Fresh full Public Systems research/course/dissertation description read; no formal Ops/MS/IE title or distinct Operations field asserted."
+          },
+          {
+            "url": "https://www.iima.ac.in/iima-dubai-campus.",
+            "checkedAt": "2026-10-25",
+            "outcome": "read",
+            "note": "Full campus programme navigation lists one-year MBA and executive education, no doctoral offering."
+          },
+          {
+            "url": "https://www.iima.ac.in/iima-dubai-campus/academic-dubai/one-year-mba/about-programme",
+            "checkedAt": "2026-10-25",
+            "outcome": "read",
+            "note": "Full Dubai one-year MBA curriculum confirms Operations & Decision Sciences is elective area within MBA, not PhD."
           }
         ],
         "limitations": [
-          "Earlier brochure extension blockage is retained in continuation-5 source-limitations metadata. Current findings use actually read public HTML evidence, not the incomplete brochure.",
-          "Public Systems relevance and separate Dubai provision remain unresolved; coverage is not complete."
+          "Current published formal doctoral title/field scope is source-bounded complete. This does not assert no future Dubai doctorate or individual graduate outcome.",
+          "Earlier PDF extension block preserved in historic metadata; no retry or access workaround. Existing qualifying programme facts retain original source dates."
         ],
-        "coverageComplete": false
+        "coverageComplete": true
       },
       "addedAt": "2026-10-22T07:57:19Z",
-      "updatedAt": "2026-10-22T07:57:19Z"
+      "updatedAt": "2026-10-25T23:15:05Z"
     },
     {
       "id": "iim-bangalore",
@@ -119066,36 +119125,40 @@
         "UTM is distinct campus identity, not separate legal university and not blindly merged with StGeorge; tri-campus graduate programmes tracked separately without duplicate degrees."
       ],
       "addedAt": "2026-10-21T11:02:27Z",
-      "updatedAt": "2026-10-22T17:22:29Z",
+      "updatedAt": "2026-10-25T23:15:05Z",
       "doctoralReview": {
-        "status": "partial",
-        "checkedAt": "2026-10-22",
+        "status": "no-qualifying-programme-verified",
+        "checkedAt": "2026-10-25",
         "programmeIds": [],
         "branches": [
           {
             "branch": "business",
-            "reviewState": "partial",
-            "conclusion": "Full campus graduate inventory explicitly identifies tri-campus Rotman Management research programme and UTM-exclusive professional masters separately. Current local Management Operations appointment verified, but exact campus-supervisor relationship to parent OM/Statistics PhD not yet established; no duplicate campus programme minted.",
+            "reviewState": "checked",
+            "conclusion": "Bounded locally administered campus graduate scope checked from complete current campus programme/tri-campus framework and formal campus unit inventory. Local professional offerings are masters. Shared Management participation remains under Toronto parent administration; no additional separately administered qualifying campus doctorate established. This does not deny campus supervision or parent awards.",
             "sourceUrls": [
               "https://www.utm.utoronto.ca/grad-students/graduate-programs-and-departments",
-              "https://www.utm.utoronto.ca/management/people/category/faculty"
+              "https://www.sgs.utoronto.ca/about/campuses/professional-by-campus/",
+              "https://www.vpacademic.utoronto.ca/academic-units/academic-unit-list-departments-edus/"
             ]
           },
           {
             "branch": "engineering",
-            "reviewState": "partial",
-            "conclusion": "Complete campus unit inventory has no standalone engineering department. Campus graduate inventory explicitly participates in tri-campus Mechanical/Industrial Engineering research degree; particular local Ops/OR doctoral field mapping unverified, existing parent degree retained separately.",
+            "reviewState": "checked",
+            "conclusion": "Bounded locally administered campus graduate scope checked from complete current campus programme/tri-campus framework and formal campus unit inventory. Local professional offerings are masters. Shared Mechanical and Industrial Engineering participation remains under Toronto parent administration; no additional separately administered qualifying campus doctorate established. This does not deny campus supervision or parent awards.",
             "sourceUrls": [
-              "https://www.utm.utoronto.ca/research-innovation/about/departments-units/departments-utm",
-              "https://www.utm.utoronto.ca/grad-students/graduate-programs-and-departments"
+              "https://www.utm.utoronto.ca/grad-students/graduate-programs-and-departments",
+              "https://www.sgs.utoronto.ca/about/campuses/professional-by-campus/",
+              "https://www.vpacademic.utoronto.ca/academic-units/academic-unit-list-departments-edus/"
             ]
           },
           {
             "branch": "mathematics",
             "reviewState": "checked",
-            "conclusion": "Full campus academic research inventory describes Mathematical and Computational Sciences as math/statistics/CS, robotics, ML, education and theory; no explicitly named additional Ops/OR unit or current local doctoral route identified.",
+            "conclusion": "Bounded locally administered campus graduate scope checked from complete current campus programme/tri-campus framework and formal campus unit inventory. Local professional offerings are masters. Shared research-stream science participation remains under Toronto parent administration; no additional separately administered qualifying campus doctorate established. This does not deny campus supervision or parent awards.",
             "sourceUrls": [
-              "https://www.utm.utoronto.ca/research-innovation/about/departments-units/departments-utm"
+              "https://www.utm.utoronto.ca/grad-students/graduate-programs-and-departments",
+              "https://www.sgs.utoronto.ca/about/campuses/professional-by-campus/",
+              "https://www.vpacademic.utoronto.ca/academic-units/academic-unit-list-departments-edus/"
             ]
           }
         ],
@@ -119123,13 +119186,36 @@
             "checkedAt": "2026-10-22",
             "outcome": "read",
             "note": "Full actual campus research/professional graduate inventory read: tri-campus shared research degrees, home graduate department usually StGeorge, UTM affiliation based on supervisor location; MIE and Rotman Management programme links. Exclusive UTM professional masters listed separately."
+          },
+          {
+            "url": "https://www.utm.utoronto.ca/grad-students/graduate-programs-and-departments",
+            "checkedAt": "2026-10-25",
+            "outcome": "read",
+            "note": "Complete substantive current campus graduate programme inventory read. Explicit tri-campus research framework with supervisors at all campuses, home graduate department likely St George and optional Mississauga affiliation. Shared list includes Management and Mechanical and Industrial Engineering. Separate exclusive local professional-stream programmes are masters, including IMI and Medicine offerings.",
+            "accessMethod": "web.open actual official HTML; authorized fallback"
+          },
+          {
+            "url": "https://www.sgs.utoronto.ca/about/campuses/professional-by-campus/",
+            "checkedAt": "2026-10-25",
+            "outcome": "read",
+            "note": "Complete current professional-by-campus degree inventory read. Mississauga Management and Innovation offerings and Biomedical Communications are masters. This professional-only menu is corroboration, not independently a research-doctoral census.",
+            "accessMethod": "web.open actual official HTML; authorized fallback"
+          },
+          {
+            "url": "https://www.vpacademic.utoronto.ca/academic-units/academic-unit-list-departments-edus/",
+            "checkedAt": "2026-10-25",
+            "outcome": "read",
+            "note": "Actual governance definitions and complete Mississauga unit section read, dated current21September2026. Fifteen departments plus institutes/EDUs; Management and Mathematical and Computational Sciences present, no local engineering department. Engineering faculty and MIE department shown separately at parent university, not reassigned to campus. No claim every parent division section was independently audited.",
+            "accessMethod": "web.open actual official HTML; authorized fallback"
           }
         ],
         "limitations": [
-          "Shared tri-campus participation is not a new campus degree award. Existing parent OM/Statistics and MIE PhD programme IDs are not duplicated under UTM.",
-          "Current local relevant doctoral pathway/supervisor allocation remains unresolved; no absence claim."
+          "Completion is limited to separately administered Mississauga campus doctoral host/award scope. Tri-campus Management and Mechanical and Industrial Engineering research pathways remain University of Toronto parent programmes; not absent and not duplicated as new campus degrees/providers.",
+          "No claim that UTM lacks doctoral students or supervision. Official campus page explicitly hosts research-stream programmes through tri-campus framework; individual local supervisor allocation is not enumerated.",
+          "Retain existing parent programme records and original dates unchanged. This negative campus-only observation must not erase shared-parent participation history or imply full Toronto parent doctoral coverage.",
+          "No public datasets or merger scripts touched; actual official HTML opened through authorized web fallback, no browser tabs created."
         ],
-        "coverageComplete": false
+        "coverageComplete": true
       }
     },
     {
