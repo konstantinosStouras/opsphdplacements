@@ -1,0 +1,630 @@
+{
+  "assessedAt": "2026-10-25",
+  "method": "Exact existing unit/field exclusions and established parent-placeholder policy; original source dates retained. No new web reads.",
+  "supportingPublicReviews": [
+    {
+      "id": "villanova-university",
+      "status": "partial",
+      "canonicalName": "Villanova University",
+      "universitySourceUrl": "https://www.villanova.edu/university/business/faculty-and-research/faculty-by-department.html#4",
+      "checkedAt": "2026-10-22",
+      "reviewer": "Codex; official full HTML pages individually opened through web tool",
+      "duplicateOf": null,
+      "units": [
+        {
+          "id": "villanova-university--management-operations",
+          "name": "Management & Operations",
+          "school": "Villanova School of Business",
+          "type": "department",
+          "fields": [
+            "operations-management"
+          ],
+          "sourceUrl": "https://www.villanova.edu/university/business/faculty-and-research/faculty-by-department.html#4",
+          "checkedAt": "2026-10-22",
+          "evidence": "Official Faculty Directory explicitly lists five departments and has Management & Operations heading, establishing actual combined department and school parent. Not a separate standalone OM department."
+        }
+      ],
+      "decisions": [
+        {
+          "sourceDepartmentId": "villanova-university",
+          "disposition": "not-a-unit",
+          "unitIds": [],
+          "reason": "Imported generic university-only row is institution identity, not separate department."
+        },
+        {
+          "sourceDepartmentId": "villanova-university____ba-ai",
+          "disposition": "unresolved",
+          "unitIds": [],
+          "reason": "Imported BA/AI subject acronym not a current formal department name; original official posting 33341 is unavailable. Do not infer exact department from generic analytics/AI."
+        },
+        {
+          "sourceDepartmentId": "villanova-university__villanova-school-of-business__accounting-and-information-systems",
+          "disposition": "out-of-scope",
+          "unitIds": [],
+          "reason": "Current official department page verifies exact Accounting & Information Systems Department within Villanova School of Business. Fully read official MIS advertisement 36424, posting 20260076F dated 22 September 2026, matches the imported row date and explicitly hosts MIS/AI teaching and research in this department. Neither exact department title nor advertised field names Operations, Operations Research/Management, Management Science or Industrial Engineering. General department Research & Expertise includes supply chain management, but this topic list does not establish a qualifying named unit or doctoral field under the current title rule. Preserve actual department identity here rather than create an eligible unit from generic MIS or AI."
+        },
+        {
+          "sourceDepartmentId": "villanova-university__villanova-school-of-business__management-and-operations",
+          "disposition": "replaced",
+          "unitIds": [
+            "villanova-university--management-operations"
+          ],
+          "reason": "Current actual combined department name/type and school parent verified in official faculty directory."
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.villanova.edu/university/business/faculty-and-research/faculty-by-department.html#4",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Full current official business Faculty Directory read: five actual departments, exact Management & Operations and Accounting & Information Systems names. No person-history research performed."
+        },
+        {
+          "url": "https://jobs.villanova.edu/postings/33341",
+          "checkedAt": "2026-10-22",
+          "outcome": "blocked",
+          "note": "Actually opened original official BA/AI hiring source: This posting is not available. No job body or acronym/host verified."
+        },
+        {
+          "url": "https://www.villanova.edu/university/business/academics.html",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Link resolves university-wide Academics/Programs finder; complete unfiltered programme text read. Displays zero despite many programme cards. Actual Doctoral filter clicked, returns no matches while other cards remain in body; filter result not trusted as absence evidence."
+        },
+        {
+          "url": "https://www.villanova.edu/content/university/engineering/academic-programs/mechanical/doctoral-program.html",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Full exact Mechanical PhD concentration page read: thermal sciences, mechanics/materials, dynamics/control, bioengineering, nanotechnology; no explicit current Ops/OR/IE field in this page."
+        },
+        {
+          "url": "https://www.villanova.edu/content/university/engineering/academic-programs/sustainable/doctoral-program.html",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Full exact Sustainable Engineering PhD concentration page read: broad whole-systems/STEEP, energy/environment/infrastructure/development/materials/water topics. No explicit Ops/OR/IE concentration inferred from whole-systems language."
+        },
+        {
+          "url": "https://www.villanova.edu/university/business/faculty-and-research/academic-departments/accounting.html",
+          "checkedAt": "2026-10-25",
+          "outcome": "read",
+          "note": "Full current Accounting & Information Systems department body read, including actual school parent, supported degree menu and generic research/expertise list. Older www1 department URL redirects here."
+        },
+        {
+          "url": "https://jobs.villanova.edu/postings/36424",
+          "checkedAt": "2026-10-25",
+          "outcome": "read",
+          "note": "Full official MIS faculty advertisement read. Posting 20260076F, 22 September 2026, exact department and school, MIS/AI teaching and MIS research. Applicant qualification is not a locally offered doctorate."
+        }
+      ],
+      "limitations": [
+        "University finder returned contradictory zero count/no-matches with programme cards still present; no doctoral census inferred.",
+        "Civil/Environmental, Electrical/Computer, Chemical/Biological and detailed sustainable field scope remain unreviewed. Unit review remains partial for original analytics/MIS labels and wider engineering inventory.",
+        "Imported Drive ad not opened as PDF preview because current official department already verifies actual name; historical job details remain unaudited.",
+        "25 October 2026 scope correction: Accounting & Information Systems imported assertion is resolved out of scope by exact current titles and official MIS advertisement. Actual department identity is preserved in the source decision; no claim that individual supply-chain research is absent. Earlier current Management & Operations unit facts and 21/22 October evidence dates are unchanged.",
+        "The original 2025 BA/AI posting 33341 remains inaccessible and unresolved; it was not retried or mapped from the separate 2026 MIS advertisement. Institution unit review remains partial. Current doctoral review is omitted from this proposal to preserve the latest separately reviewed scope."
+      ],
+      "assessedAt": "2026-10-25",
+      "doctoralReview": {
+        "status": "no-qualifying-programme-verified",
+        "checkedAt": "2026-10-25",
+        "programmeIds": [],
+        "branches": [
+          {
+            "branch": "business",
+            "reviewState": "checked",
+            "conclusion": "Independent actual Business graduate degree menu now fully read: MBA and specialised masters, no business PhD. Management and Operations department identity does not confer doctorate. Historical unavailable analytics hiring source remains separate unit-source limitation, not a current doctoral eligibility gate.",
+            "sourceUrls": [
+              "https://www.villanova.edu/university/business/academics/graduate-programs.html",
+              "https://www.villanova.edu/university/business/faculty-and-research/faculty-by-department.html#4"
+            ]
+          },
+          {
+            "branch": "engineering",
+            "reviewState": "checked",
+            "conclusion": "Complete current one-PhD Engineering inventory, five host departments and six specialised research headings, current exact Chemical/Biological, Civil/Environmental and Electrical/Computer doctoral fields plus original22October full Mechanical and Sustainable doctoral fields checked. No title-eligible Ops/MS/IE doctorate established. Generic sustainable systems and future individual research interests do not require endless hidden-topic review.",
+            "sourceUrls": [
+              "https://www.villanova.edu/content/university/engineering/academic-programs/mechanical/doctoral-program.html",
+              "https://www.villanova.edu/university/engineering/academic-programs/graduate-studies.html",
+              "https://www.villanova.edu/university/engineering/academic-programs/graduate-studies/doctoral-program.html",
+              "https://www.villanova.edu/university/engineering/academic-programs/electrical-computer/doctoral-program.html",
+              "https://www.villanova.edu/university/engineering/academic-programs/chemical-biological/doctoral-program.html",
+              "https://www.villanova.edu/university/engineering/academic-programs/civil-environmental/doctoral-program.html",
+              "https://www.villanova.edu/content/university/engineering/academic-programs/sustainable/doctoral-program.html"
+            ]
+          },
+          {
+            "branch": "mathematics",
+            "reviewState": "checked",
+            "conclusion": "Complete current CLAS inventory explicitly only Philosophy and Theology PhDs; Math,StatisticsDataScience and Computing graduate offers are masters. No matching doctorate.",
+            "sourceUrls": [
+              "https://www.villanova.edu/university/liberal-arts-sciences/graduate-studies/graduate-programs.html"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://www.villanova.edu/university/business/faculty-and-research/faculty-by-department.html#4",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full current official business Faculty Directory read: five actual departments, exact Management & Operations and Accounting & Information Systems names. No person-history research performed."
+          },
+          {
+            "url": "https://jobs.villanova.edu/postings/33341",
+            "checkedAt": "2026-10-22",
+            "outcome": "blocked",
+            "note": "Actually opened original official BA/AI hiring source: This posting is not available. No job body or acronym/host verified."
+          },
+          {
+            "url": "https://www.villanova.edu/university/business/academics.html",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Link resolves university-wide Academics/Programs finder; complete unfiltered programme text read. Displays zero despite many programme cards. Actual Doctoral filter clicked, returns no matches while other cards remain in body; filter result not trusted as absence evidence."
+          },
+          {
+            "url": "https://www.villanova.edu/content/university/engineering/academic-programs/mechanical/doctoral-program.html",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full exact Mechanical PhD concentration page read: thermal sciences, mechanics/materials, dynamics/control, bioengineering, nanotechnology; no explicit current Ops/OR/IE field in this page."
+          },
+          {
+            "url": "https://www.villanova.edu/content/university/engineering/academic-programs/sustainable/doctoral-program.html",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full exact Sustainable Engineering PhD concentration page read: broad whole-systems/STEEP, energy/environment/infrastructure/development/materials/water topics. No explicit Ops/OR/IE concentration inferred from whole-systems language."
+          },
+          {
+            "url": "https://www.villanova.edu/university/business/academics/graduate-programs.html",
+            "checkedAt": "2026-10-25",
+            "outcome": "read",
+            "accessMethod": "web.open/click actual official HTML; authorized fallback",
+            "note": "Complete current actual Business graduate programme menu read: MBA plus specialised masters Accounting/Tax,Finance,BusinessAnalyticsAI,ChurchManagement. No doctoral business programme listed. This independently resolves old unreliable universal finder, not absence from zero-result controls."
+          },
+          {
+            "url": "https://www.villanova.edu/university/liberal-arts-sciences/graduate-studies/graduate-programs.html",
+            "checkedAt": "2026-10-25",
+            "outcome": "read",
+            "accessMethod": "web.open/click actual official HTML; authorized fallback",
+            "note": "Complete current CLAS graduate degree inventory read: explicitly only two PhDs Philosophy and Theology. Math MA,AppliedStatisticsDataScienceMS,ComputerScience/SoftwareEngineeringMS; no relevant technical doctorate."
+          },
+          {
+            "url": "https://www.villanova.edu/content/university/engineering/academic-programs/mechanical/doctoral-program.html",
+            "checkedAt": "2026-10-25",
+            "outcome": "blocked",
+            "accessMethod": "web.open/click actual official HTML; authorized fallback",
+            "note": "Older source path inaccessible through tool today. Prior22October actual read preserved, no alternate path retry. Current independent central Engineering catalogue and other named departmental doctoral fields read."
+          },
+          {
+            "url": "https://www.villanova.edu/university/engineering/academic-programs/graduate-studies.html",
+            "checkedAt": "2026-10-25",
+            "outcome": "read",
+            "accessMethod": "web.open/click actual official HTML; authorized fallback",
+            "note": "Complete current Engineering graduate degree inventory read: one Engineering PhD with five departmental/discipline groupings, distinct twelve masters and certificates. No IE/Operations/MS named doctorate."
+          },
+          {
+            "url": "https://www.villanova.edu/university/engineering/academic-programs/graduate-studies/doctoral-program.html",
+            "checkedAt": "2026-10-25",
+            "outcome": "read",
+            "accessMethod": "web.open/click actual official HTML; authorized fallback",
+            "note": "Full substantive Engineering doctoral framework, complete five host departments and six specialised research-area headings read. Original independent dissertation. Academic/Industry Scholars are professional-development tracks, not Operations doctoral specialties."
+          },
+          {
+            "url": "https://www.villanova.edu/university/engineering/academic-programs/electrical-computer/doctoral-program.html",
+            "checkedAt": "2026-10-25",
+            "outcome": "read",
+            "accessMethod": "web.open/click actual official HTML; authorized fallback",
+            "note": "Full actual department-linked doctoral field list read: antenna/networks/converters/emission control/cybersecurity/hardware-security/communications/microgrids/solar/photonic/pindiode/radar. No matching Operations/MS/IE field."
+          },
+          {
+            "url": "https://www.villanova.edu/university/engineering/academic-programs/chemical-biological/doctoral-program.html",
+            "checkedAt": "2026-10-25",
+            "outcome": "read",
+            "accessMethod": "web.open/click actual official HTML; authorized fallback",
+            "note": "Full actual doctoral field inventory read: biomass,catalysis,computationalmodelling,biomaterials/drugdelivery,gene therapy,bloodsubstitutes,pharmaceuticalprocessing,systemsbiology. No matching field, process-engineering not IE inference."
+          },
+          {
+            "url": "https://www.villanova.edu/university/engineering/academic-programs/civil-environmental/doctoral-program.html",
+            "checkedAt": "2026-10-25",
+            "outcome": "read",
+            "accessMethod": "web.open/click actual official HTML; authorized fallback",
+            "note": "Full actual doctoral field inventory read: Geotechnical,Structural,Transportation,WaterResourcesEnvironmental. No named Operations/MS/IE field. Testimonials incidental and not used for graduate careers."
+          }
+        ],
+        "limitations": [
+          "Current bounded doctoral scope complete; unit review can remain partial solely for unavailable historical analytics hiring assertion, not a fabricated source reconciliation.",
+          "Original Mechanical/Sustainable22October evidence dates retained; older Mechanical path unavailable25October is preserved separately, no false fresh read.",
+          "No assertion no Operations faculty research exists. No browser tabs, career-history work, public edits or merger commands."
+        ],
+        "coverageComplete": true
+      },
+      "addedAt": "2026-10-22T12:14:06Z",
+      "updatedAt": "2026-10-25T22:34:56Z"
+    },
+    {
+      "id": "youngstown-state-university",
+      "status": "reviewed",
+      "canonicalName": "Youngstown State University",
+      "universitySourceUrl": "https://catalog.ysu.edu/undergraduate/colleges-programs/college-science-technology-engineering-mathematics/department-mechanical-industrial/industrial-systems-engineering-program/",
+      "checkedAt": "2026-10-20",
+      "reviewer": "Codex in Chrome",
+      "units": [
+        {
+          "id": "youngstown-state-university--rayen-engineering",
+          "name": "Rayen School of Engineering",
+          "school": "College of Science, Technology, Engineering, and Mathematics",
+          "type": "school",
+          "fields": [
+            "industrial-engineering",
+            "operations-research",
+            "supply-chain",
+            "logistics"
+          ],
+          "sourceUrl": "https://ysu.edu/people/seokgi-lee",
+          "checkedAt": "2026-10-20",
+          "evidence": "Official faculty profile explicitly places industrial and systems engineering professor in Rayen School of Engineering and details supply-chain control, logistics, transportation simulation-optimization and OR research. Current catalog also places the Industrial and Systems Engineering program within this school."
+        },
+        {
+          "id": "youngstown-state-university--management-marketing",
+          "name": "Department of Management and Marketing",
+          "school": "Warren P. Williamson, Jr. College of Business Administration",
+          "type": "department",
+          "fields": [
+            "supply-chain"
+          ],
+          "sourceUrl": "https://catalog.ysu.edu/undergraduate/colleges-programs/college-business-administration/department-management-marketing/",
+          "checkedAt": "2026-10-20",
+          "evidence": "Current catalog department chair welcome gives full departmental title and explicitly includes supply chain management among its programs, plus a student information and supply chain association."
+        }
+      ],
+      "decisions": [
+        {
+          "sourceDepartmentId": "youngstown-state-university__williamson-college-of-business-administration__lariccia-school-of-accounting-and-finance",
+          "disposition": "out-of-scope",
+          "unitIds": [],
+          "reason": "Opened Lariccia catalog lists accounting, finance and business analytics/economics. Quantitative decision models alone do not establish operations remit. Relevant supply-chain department and industrial-engineering school verified separately."
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://catalog.ysu.edu/undergraduate/colleges-programs/college-science-technology-engineering-mathematics/department-mechanical-industrial/industrial-systems-engineering-program/",
+          "note": "Current 2026–2027 catalog university identity and school hierarchy, IE/OR program scope.",
+          "outcome": "read",
+          "checkedAt": "2026-10-20"
+        },
+        {
+          "url": "https://catalog.ysu.edu/undergraduate/colleges-programs/college-science-technology-engineering-mathematics/department-mechanical-industrial/",
+          "note": "Mechanical, Industrial, and Manufacturing Engineering catalog heading; descriptive text calls it a program, so not promoted to a department.",
+          "outcome": "read",
+          "checkedAt": "2026-10-20"
+        },
+        {
+          "url": "https://ysu.edu/people/seokgi-lee",
+          "note": "Named school affiliation and substantive IE/OR/logistics research.",
+          "outcome": "read",
+          "checkedAt": "2026-10-20"
+        },
+        {
+          "url": "https://catalog.ysu.edu/undergraduate/colleges-programs/college-business-administration/department-management-marketing/",
+          "note": "Full business department and college names; explicit SCM remit.",
+          "outcome": "read",
+          "checkedAt": "2026-10-20"
+        },
+        {
+          "url": "https://catalog.ysu.edu/undergraduate/colleges-programs/college-business-administration/department-accounting-finance-economics/",
+          "note": "Accounting, finance and analytics/economics disciplines read; no verified operations unit.",
+          "outcome": "read",
+          "checkedAt": "2026-10-20"
+        }
+      ],
+      "limitations": [
+        "Engineering is represented by its verified school host. The catalog groups Mechanical, Industrial, and Manufacturing Engineering but does not explicitly establish departmental status in the opened overview, which calls it a program."
+      ],
+      "duplicateOf": null,
+      "addedAt": "2026-10-20T10:24:43Z",
+      "updatedAt": "2026-10-22T09:33:14Z",
+      "doctoralReview": {
+        "status": "no-qualifying-programme-verified",
+        "checkedAt": "2026-10-22",
+        "programmeIds": [],
+        "branches": [
+          {
+            "branch": "business",
+            "reviewState": "checked",
+            "conclusion": "Full 2026–2027 graduate programme inventory lists business at MBA and Business Analytics MS level; no business doctorate in this current catalogue. Relevant undergraduate supply-chain provision does not establish doctoral eligibility.",
+            "sourceUrls": [
+              "https://catalog.ysu.edu/graduate/graduate-programs/"
+            ]
+          },
+          {
+            "branch": "engineering",
+            "reviewState": "checked",
+            "conclusion": "Full current graduate inventory lists Materials Science and Engineering as the sole engineering PhD. Its overview and degree requirements concern physical materials, instrumentation, structure/properties, thermodynamics and kinetics; no explicit Ops/OR/IE field established. Engineering and Engineering Management offerings otherwise appear at master's level. No qualifying route verified in this stated current catalogue scope.",
+            "sourceUrls": [
+              "https://catalog.ysu.edu/graduate/graduate-programs/",
+              "https://catalog.ysu.edu/graduate/graduate-programs/doctor-philosophy-materials-science-engineering/"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://catalog.ysu.edu/graduate/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Graduate catalogue explicitly 2026–2027, effective August 2026, Youngstown State University."
+          },
+          {
+            "url": "https://catalog.ysu.edu/graduate/graduatedegrees/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Complete degree-level list read. Institution offers doctorates, but this generic list alone does not establish relevant fields."
+          },
+          {
+            "url": "https://catalog.ysu.edu/graduate/graduate-programs/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Complete current graduate inventory read: five doctoral programmes in education, nursing, health sciences, materials science/engineering and physical therapy. Business, analytics, mathematics and other engineering provision listed at master's level."
+          },
+          {
+            "url": "https://catalog.ysu.edu/graduate/graduate-programs/doctor-philosophy-materials-science-engineering/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Opened overview and Degree Requirements tab, read both fully. Exact Materials Science and Engineering PhD, physical materials analytical/research focus and core structure, properties, thermodynamics, kinetics, dissertation requirements. Industrial research scientist career wording is not Industrial Engineering doctoral evidence."
+          }
+        ],
+        "limitations": [
+          "Conclusion is limited to the current 2026–2027 institutional programme inventory and the potentially relevant engineering PhD detail; it does not assert historical absence or exclude future provision."
+        ],
+        "coverageComplete": true
+      }
+    },
+    {
+      "id": "university-of-nevada-las-vegas",
+      "status": "reviewed",
+      "canonicalName": "University of Nevada, Las Vegas",
+      "universitySourceUrl": "https://www.unlv.edu/mib/about",
+      "checkedAt": "2026-10-21",
+      "reviewer": "Codex in Chrome",
+      "duplicateOf": null,
+      "units": [
+        {
+          "id": "university-of-nevada-las-vegas--marketing-international-business",
+          "name": "Department of Marketing and International Business (MIB)",
+          "school": "Lee Business School",
+          "type": "department",
+          "fields": [
+            "supply-chain"
+          ],
+          "sourceUrl": "https://www.unlv.edu/mib/about",
+          "checkedAt": "2026-10-21",
+          "evidence": "Official About page gives full department name and acronym, and its mission explicitly includes supply chain management. Department homepage confirms Lee Business School parent."
+        }
+      ],
+      "decisions": [
+        {
+          "sourceDepartmentId": "university-of-nevada-las-vegas____supply-chain-management",
+          "disposition": "replaced",
+          "unitIds": [
+            "university-of-nevada-las-vegas--marketing-international-business"
+          ],
+          "reason": "Supply chain subject is verified within the actual combined department."
+        },
+        {
+          "sourceDepartmentId": "university-of-nevada-las-vegas__lee-business-school",
+          "disposition": "duplicate",
+          "unitIds": [
+            "university-of-nevada-las-vegas--marketing-international-business"
+          ],
+          "reason": "Broad parent-school listing consolidated into its verified relevant department."
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.unlv.edu/mib/about",
+          "checkedAt": "2026-10-21",
+          "outcome": "read",
+          "note": "University name, department full name/acronym and explicit supply-chain mission."
+        },
+        {
+          "url": "https://www.unlv.edu/mib",
+          "checkedAt": "2026-10-21",
+          "outcome": "read",
+          "note": "Department homepage names Lee Business School as parent."
+        },
+        {
+          "url": "https://www.unlv.edu/engineering",
+          "checkedAt": "2026-10-21",
+          "outcome": "read",
+          "note": "Engineering school departments and interdisciplinary programs reviewed; no separate industrial engineering unit verified."
+        }
+      ],
+      "limitations": [
+        "Engineering inventory contains inconsistent four/five department counts, but listed fields do not establish an additional industrial engineering unit. No independent supply-chain department inferred."
+      ],
+      "addedAt": "2026-10-21T07:40:08Z",
+      "updatedAt": "2026-10-25T21:10:29Z",
+      "doctoralReview": {
+        "status": "no-qualifying-programme-verified",
+        "checkedAt": "2026-10-25",
+        "programmeIds": [],
+        "branches": [
+          {
+            "branch": "business",
+            "reviewState": "checked",
+            "conclusion": "Earlier complete university directory and all three future Business PhD concentration curricula retained at original22Oct date; Fall2027 launch not current provision. Current Hospitality degree plus actual2026–27 programme handbook requirements/individual study rules reviewed; generic operational consulting and unnamed committee-selected major/minor topics do not establish matching doctoral title. Unavailable exact catalogue and unsupported current plan preserved as limitations, not automatic eligibility holds absent concrete named-field lead.",
+            "sourceUrls": [
+              "https://www.unlv.edu/academics/degrees/graduate",
+              "https://www.unlv.edu/academics/degrees/graduate?page=3",
+              "https://www.unlv.edu/degree/phd-business",
+              "https://www.unlv.edu/degree/phd-hospitality-administration",
+              "https://catalog.unlv.edu/preview_program.php?catoid=52&poid=14637",
+              "https://www.unlv.edu/degree/phd-hospitality-administration",
+              "https://www.unlv.edu/sites/default/files/media/document/2025-10/PhD-HospitalityAdmin-Handbook_0.pdf",
+              "https://www.unlv.edu/sites/default/files/media/document/2026-06/2026-27-HOAPHD.docx"
+            ]
+          },
+          {
+            "branch": "engineering",
+            "reviewState": "checked",
+            "conclusion": "Earlier complete directory and Mechanical all eight subplan requirements retain22Oct dates. Actual current Civil/CS/Electrical programme field inventories read. No matching degree, actual host or named doctoral field; CS OR Analyst is career example only.",
+            "sourceUrls": [
+              "https://www.unlv.edu/academics/degrees/graduate",
+              "https://www.unlv.edu/academics/degrees/graduate?page=1",
+              "https://www.unlv.edu/academics/degrees/graduate?page=2",
+              "https://www.unlv.edu/academics/degrees/graduate?page=4",
+              "https://www.unlv.edu/degree/phd-mechanical-engineering",
+              "https://www.unlv.edu/degree/phd-computer-science",
+              "https://www.unlv.edu/degree/phd-civil-environmental-engineering",
+              "https://www.unlv.edu/degree/phd-electrical-engineering"
+            ]
+          },
+          {
+            "branch": "mathematics",
+            "reviewState": "checked",
+            "conclusion": "Actual current doctoral overview and independent handbook complete formal four-concentration/eight-track inventory checked. No matching title; generic Applied Math, decision-support careers and individual possible topics are insufficient. Embedded unavailable curriculum widget retained without pretending read.",
+            "sourceUrls": [
+              "https://www.unlv.edu/degree/phd-mathematical-sciences",
+              "https://www.unlv.edu/sites/default/files/media/document/2026-08/PhD-MathSciences-Handbook.pdf"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://www.unlv.edu/academics/degrees/graduate",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Corresponding page of seven-page current graduate degree directory fully read in Chrome; pagination checked. Canonical page query retained without transient view-state parameters."
+          },
+          {
+            "url": "https://www.unlv.edu/academics/degrees/graduate?page=1",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Corresponding page of seven-page current graduate degree directory fully read in Chrome; pagination checked. Canonical page query retained without transient view-state parameters."
+          },
+          {
+            "url": "https://www.unlv.edu/academics/degrees/graduate?page=2",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Corresponding page of seven-page current graduate degree directory fully read in Chrome; pagination checked. Canonical page query retained without transient view-state parameters."
+          },
+          {
+            "url": "https://www.unlv.edu/academics/degrees/graduate?page=3",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Corresponding page of seven-page current graduate degree directory fully read in Chrome; pagination checked. Canonical page query retained without transient view-state parameters."
+          },
+          {
+            "url": "https://www.unlv.edu/academics/degrees/graduate?page=4",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Corresponding page of seven-page current graduate degree directory fully read in Chrome; pagination checked. Canonical page query retained without transient view-state parameters."
+          },
+          {
+            "url": "https://www.unlv.edu/academics/degrees/graduate?page=5",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Corresponding page of seven-page current graduate degree directory fully read in Chrome; pagination checked. Canonical page query retained without transient view-state parameters."
+          },
+          {
+            "url": "https://www.unlv.edu/academics/degrees/graduate?page=6",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Corresponding page of seven-page current graduate degree directory fully read in Chrome; pagination checked. Canonical page query retained without transient view-state parameters."
+          },
+          {
+            "url": "https://www.unlv.edu/degree/phd-business",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full Business PhD overview and three concentration curricula read; explicit starts Fall2027."
+          },
+          {
+            "url": "https://www.unlv.edu/degree/phd-mathematical-sciences",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full visible Math PhD overview/four concentration descriptions read; embedded requirements not loaded at observation."
+          },
+          {
+            "url": "https://www.unlv.edu/degree/phd-mechanical-engineering",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full current Mechanical PhD overview and all eight subplan curriculum/admission/dissertation requirements read."
+          },
+          {
+            "url": "https://www.unlv.edu/degree/phd-hospitality-administration",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full current 60-credit research PhD overview read, exact College host and hospitality/tourism scope. Embedded requirements remained loading."
+          },
+          {
+            "url": "https://catalog.unlv.edu/preview_program.php?catoid=52&poid=14637",
+            "checkedAt": "2026-10-22",
+            "outcome": "blocked",
+            "note": "Actual View in Catalog link opened in Chrome, page blank then browser frame read timed out; no substantive curriculum read or verification claimed."
+          },
+          {
+            "url": "https://www.unlv.edu/degree/phd-mathematical-sciences",
+            "checkedAt": "2026-10-25",
+            "outcome": "read",
+            "note": "Actual current degree overview, all four formal concentrations/eight entry tracks and download navigation read. Embedded catalogue requirements still Loading; not completed from that widget. No new named Ops/OR field.",
+            "accessMethod": "Actual official HTML/PDF text through authorized web fallback; PDF guidance read, Adobe unavailable. No browser tabs."
+          },
+          {
+            "url": "https://www.unlv.edu/sites/default/files/media/document/2026-08/PhD-MathSciences-Handbook.pdf",
+            "checkedAt": "2026-10-25",
+            "outcome": "read",
+            "note": "Actual official10-page handbook extracted pages0–2 read: complete four concentration/eight-track inventory and qualifying requirements. Applied/Computational/Pure Math/Statistics, no Ops/OR field. Remaining handbook administrative pages not fully read.",
+            "accessMethod": "Actual official HTML/PDF text through authorized web fallback; PDF guidance read, Adobe unavailable. No browser tabs."
+          },
+          {
+            "url": "https://www.unlv.edu/degree/phd-hospitality-administration",
+            "checkedAt": "2026-10-25",
+            "outcome": "read",
+            "note": "Full actual degree overview/current source-host and download menu read. Hospitality/tourism research, generic faculty operational consulting not named Ops doctoral field. Embedded requirements remain Loading.",
+            "accessMethod": "Actual official HTML/PDF text through authorized web fallback; PDF guidance read, Adobe unavailable. No browser tabs."
+          },
+          {
+            "url": "https://www.unlv.edu/sites/default/files/media/document/2025-10/PhD-HospitalityAdmin-Handbook_0.pdf",
+            "checkedAt": "2026-10-25",
+            "outcome": "read",
+            "note": "Actual 2026–27 handbook pages0–11 extracted text read, including entire programme requirements/qualifying/comprehensive/degree-plan/dissertation and independent-study sections. Individual committee-defined major/minor areas not explicitly named Operations. No invented concentration from operational consulting. Remaining university-resource/log pages not fully read.",
+            "accessMethod": "Actual official HTML/PDF text through authorized web fallback; PDF guidance read, Adobe unavailable. No browser tabs."
+          },
+          {
+            "url": "https://www.unlv.edu/sites/default/files/media/document/2026-06/2026-27-HOAPHD.docx",
+            "checkedAt": "2026-10-25",
+            "outcome": "blocked",
+            "note": "Actual independent current plan link attempted: unsupported DOCX content-type, no content read or validation claimed.",
+            "accessMethod": "Actual official HTML/PDF text through authorized web fallback; PDF guidance read, Adobe unavailable. No browser tabs."
+          },
+          {
+            "url": "https://www.unlv.edu/degree/phd-computer-science",
+            "checkedAt": "2026-10-25",
+            "outcome": "read",
+            "note": "Current actual programme overview, complete named doctoral study-area list and department scope read. Scheduling in mixed graduate research paragraph, Operations Research Analyst in career list only; neither a named OR doctoral field. Available entry tracks not separate awards.",
+            "accessMethod": "Actual official HTML/PDF text through authorized web fallback; PDF guidance read, Adobe unavailable. No browser tabs."
+          },
+          {
+            "url": "https://www.unlv.edu/degree/phd-civil-environmental-engineering",
+            "checkedAt": "2026-10-25",
+            "outcome": "read",
+            "note": "Full actual current programme/field menu read: Construction, Geotechnical, Structural, Transportation, WaterResources/Environmental; no matching title. Generic transport methods not relabeled OR.",
+            "accessMethod": "Actual official HTML/PDF text through authorized web fallback; PDF guidance read, Adobe unavailable. No browser tabs."
+          },
+          {
+            "url": "https://www.unlv.edu/degree/phd-electrical-engineering",
+            "checkedAt": "2026-10-25",
+            "outcome": "read",
+            "note": "Full actual programme major-field list and doctoral research/dissertation outcomes read: Communications, Control, DigitalDesign/ComputerSystems, Electromagnetics/Optics, Electronics, IntelligentSystems/Robotics, Photonics/Quantum, Power, SignalProcessing,SolidState; no matching title. Embedded requirements remain Loading.",
+            "accessMethod": "Actual official HTML/PDF text through authorized web fallback; PDF guidance read, Adobe unavailable. No browser tabs."
+          }
+        ],
+        "limitations": [
+          "Current bounded title/host scope completion does not claim absence of individual OR-related doctoral research.",
+          "Exact old catalogue source and unsupported independent DOCX plan remain unavailable. No protocol/host or backend bypass/retry.",
+          "Handbook read extent explicit; no claim full14-page Hospitality or10-page Math handbook read. Full named programme inventory and plausible field descriptions reviewed, not every unrelated course.",
+          "Prior complete directory/Mechanical and future Business2027 source observations retain original22Oct dates. No public edits.",
+          "Current Math Applied post-bachelor2026–27 plan link also returned an internal fetch error, with no substantive text or resolved document URL in output. Independent actual handbook formal inventory used; no plan content claimed."
+        ],
+        "coverageComplete": true
+      }
+    }
+  ]
+}
