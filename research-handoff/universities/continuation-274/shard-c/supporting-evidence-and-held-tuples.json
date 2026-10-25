@@ -1,0 +1,309 @@
+{
+  "assessedAt": "2026-10-25",
+  "method": "Exact source tuple composition from existing official source observations and explicit prior public decisions. Original20October checks retained, no new source read.",
+  "held": [
+    {
+      "source": "oa-jobs",
+      "sourceRecordId": "2027-tulane-university-20260824",
+      "schoolAsListed": "A. B. Freeman School of Business",
+      "departmentAsListed": "A. B. Freeman School of Business, Information Systems",
+      "reconciliation": {
+        "state": "pending-source-reconciliation",
+        "note": "No exact school/department assertion with an existing official review decision."
+      }
+    },
+    {
+      "source": "oa-live-jobs",
+      "sourceRecordId": "2027-tulane-university-20260824",
+      "schoolAsListed": "A. B. Freeman School of Business",
+      "departmentAsListed": "A. B. Freeman School of Business, Information Systems",
+      "reconciliation": {
+        "state": "pending-source-reconciliation",
+        "note": "No exact school/department assertion with an existing official review decision."
+      }
+    }
+  ],
+  "supportingPublicReviews": [
+    {
+      "id": "tulane-university",
+      "status": "reviewed",
+      "canonicalName": "Tulane University",
+      "universitySourceUrl": "https://freeman.tulane.edu/faculty-research/management-science",
+      "checkedAt": "2026-10-20",
+      "reviewer": "Codex in Chrome",
+      "units": [
+        {
+          "id": "tulane-university--management-science",
+          "name": "Management Science",
+          "school": "Freeman School of Business",
+          "type": "area",
+          "fields": [
+            "operations-management",
+            "supply-chain"
+          ],
+          "sourceUrl": "https://freeman.tulane.edu/faculty-research/management-science",
+          "checkedAt": "2026-10-20",
+          "evidence": "Official Management Science faculty listing; linked Claire Senot profile calls her Area Coordinator, Management Science and explicitly describes operations research and operations/supply-chain teaching."
+        }
+      ],
+      "decisions": [
+        {
+          "sourceDepartmentId": "tulane-university",
+          "disposition": "not-a-unit",
+          "unitIds": [],
+          "reason": "University-only placeholder does not name a department."
+        },
+        {
+          "sourceDepartmentId": "tulane-university__a-b-freeman-school-of-business",
+          "disposition": "not-a-unit",
+          "unitIds": [
+            "tulane-university--management-science"
+          ],
+          "reason": "School-only label is represented as parent of the verified academic area."
+        },
+        {
+          "sourceDepartmentId": "tulane-university__a-b-freeman-school-of-business__information-systems",
+          "disposition": "out-of-scope",
+          "unitIds": [],
+          "reason": "Standalone Information Systems label has no operations component; not retained as an operations unit."
+        },
+        {
+          "sourceDepartmentId": "tulane-university__a-b-freeman-school-of-business__management-science",
+          "disposition": "replaced",
+          "unitIds": [
+            "tulane-university--management-science"
+          ],
+          "reason": "Official page confirms Management Science; area coordinator wording supports area rather than assuming department."
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://freeman.tulane.edu/faculty-research/management-science",
+          "checkedAt": "2026-10-20",
+          "outcome": "read",
+          "note": "University, school and Management Science faculty listing."
+        },
+        {
+          "url": "https://freeman.tulane.edu/faculty-research/management-science/claire-senot",
+          "checkedAt": "2026-10-20",
+          "outcome": "read",
+          "note": "Management Science area coordinator and operations/supply-chain scope."
+        },
+        {
+          "url": "https://sse.tulane.edu/departments-programs",
+          "checkedAt": "2026-10-20",
+          "outcome": "read",
+          "note": "Official Science and Engineering department/program directory examined; no Industrial Engineering or named operations department listed."
+        }
+      ],
+      "limitations": [
+        "Engineering directory check does not establish absence of operations research by individual faculty."
+      ],
+      "duplicateOf": null,
+      "addedAt": "2026-10-20T09:10:37Z",
+      "updatedAt": "2026-10-21T11:02:27Z",
+      "doctoralReview": {
+        "status": "no-qualifying-programme-verified",
+        "checkedAt": "2026-10-21",
+        "programmeIds": [],
+        "branches": [
+          {
+            "branch": "business",
+            "reviewState": "checked",
+            "conclusion": "Current Freeman Business Administration PhD explicitly concentrates in Finance and Financial Accounting only; no OM/OR doctoral track verified despite Management Science faculty unit.",
+            "sourceUrls": [
+              "https://freeman.tulane.edu/graduate/phd-business-administration"
+            ]
+          },
+          {
+            "branch": "engineering",
+            "reviewState": "checked",
+            "conclusion": "Full Science/Engineering department-programme inventory read; no Industrial Engineering/OR department listed. Mathematics PhD and four core research groups overview also read; no explicit OM/OR/IE doctoral research area verified.",
+            "sourceUrls": [
+              "https://sse.tulane.edu/departments-programs",
+              "https://sse.tulane.edu/math"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://freeman.tulane.edu/graduate/phd-business-administration",
+            "checkedAt": "2026-10-21",
+            "outcome": "read",
+            "note": "Full current business doctoral programme and exact two concentrations read."
+          },
+          {
+            "url": "https://sse.tulane.edu/departments-programs",
+            "checkedAt": "2026-10-21",
+            "outcome": "read",
+            "note": "Complete Science/Engineering department and programme inventory read."
+          },
+          {
+            "url": "https://sse.tulane.edu/math",
+            "checkedAt": "2026-10-21",
+            "outcome": "read",
+            "note": "Current Mathematics PhD overview and four core research group descriptions read; no in-scope doctoral research area inferred."
+          }
+        ],
+        "limitations": [
+          "Current reviewed branch scope, not historical proof of no eligible doctorate."
+        ],
+        "coverageComplete": true
+      }
+    },
+    {
+      "sources": [
+        {
+          "url": "https://ioe.engin.umich.edu/",
+          "checkedAt": "2026-10-20",
+          "note": "Engineering full name and Ann Arbor campus identity.",
+          "outcome": "read"
+        },
+        {
+          "url": "https://michiganross.umich.edu/faculty-research/directory?status=All&department=39&name=&last=&sort_by=field_sort_name_value",
+          "checkedAt": "2026-10-20",
+          "note": "Current academic department name and faculty.",
+          "outcome": "read"
+        },
+        {
+          "url": "https://www.si.umich.edu/research/research-areas",
+          "checkedAt": "2026-10-20",
+          "note": "School of Information research-area directory; imported directory URL returned Page Not Found.",
+          "outcome": "read"
+        }
+      ],
+      "reviewer": "Codex in Chrome",
+      "checkedAt": "2026-10-20",
+      "canonicalName": "University of Michigan",
+      "units": [
+        {
+          "checkedAt": "2026-10-20",
+          "name": "Industrial and Operations Engineering",
+          "id": "university-of-michigan--industrial-operations-engineering",
+          "fields": [
+            "industrial-engineering",
+            "operations-research"
+          ],
+          "type": "department",
+          "school": "College of Engineering",
+          "evidence": "Official engineering home page names Industrial and Operations Engineering, College of Engineering, and University of Michigan Ann Arbor; describes optimization, data analytics and human-centered systems.",
+          "sourceUrl": "https://ioe.engin.umich.edu/"
+        },
+        {
+          "checkedAt": "2026-10-20",
+          "name": "Technology and Operations",
+          "id": "university-of-michigan--technology-operations",
+          "fields": [
+            "operations-management"
+          ],
+          "type": "department",
+          "school": "Stephen M. Ross School of Business",
+          "evidence": "Official Ross faculty directory explicitly labels Technology and Operations as the selected Academic Department and lists its professors.",
+          "sourceUrl": "https://michiganross.umich.edu/faculty-research/directory?status=All&department=39&name=&last=&sort_by=field_sort_name_value"
+        }
+      ],
+      "status": "reviewed",
+      "universitySourceUrl": "https://ioe.engin.umich.edu/",
+      "duplicateOf": null,
+      "id": "university-of-michigan",
+      "limitations": [
+        "Sports Analytics is retained only as an imported recruiting specialty in the audit; the reviewed sources do not establish it as a separate academic unit."
+      ],
+      "decisions": [
+        {
+          "unitIds": [],
+          "reason": "Information school and information-only label fall outside the requested operations remit; its research directory lists information/computing fields, not a combined operations department.",
+          "sourceDepartmentId": "university-of-michigan____information",
+          "disposition": "out-of-scope"
+        },
+        {
+          "unitIds": [],
+          "reason": "Imported recruiting subject/position wording does not name a distinct academic unit.",
+          "sourceDepartmentId": "university-of-michigan____sports-analytics",
+          "disposition": "not-a-unit"
+        },
+        {
+          "unitIds": [
+            "university-of-michigan--industrial-operations-engineering"
+          ],
+          "reason": "Verified current engineering department.",
+          "sourceDepartmentId": "university-of-michigan__college-of-engineering__industrial-and-operations-engineering",
+          "disposition": "replaced"
+        },
+        {
+          "unitIds": [],
+          "reason": "Information school and information-only label fall outside the requested operations remit; its research directory lists information/computing fields, not a combined operations department.",
+          "sourceDepartmentId": "university-of-michigan__school-of-information",
+          "disposition": "out-of-scope"
+        },
+        {
+          "unitIds": [],
+          "reason": "Imported recruiting subject/position wording does not name a distinct academic unit.",
+          "sourceDepartmentId": "university-of-michigan__stephen-m-ross-school-of-business__interdisciplinary-position-management-and-organizations-stra",
+          "disposition": "not-a-unit"
+        },
+        {
+          "unitIds": [
+            "university-of-michigan--technology-operations"
+          ],
+          "reason": "Current faculty directory names academic department Technology and Operations, without the extra Management suffix.",
+          "sourceDepartmentId": "university-of-michigan__stephen-m-ross-school-of-business__technology-and-operations-management",
+          "disposition": "replaced"
+        }
+      ],
+      "addedAt": "2026-10-21T06:57:04Z",
+      "updatedAt": "2026-10-21T11:14:34Z",
+      "doctoralReview": {
+        "status": "verified",
+        "checkedAt": "2026-10-21",
+        "programmeIds": [
+          "university-of-michigan--industrial-operations-engineering-phd",
+          "university-of-michigan--technology-operations-phd"
+        ],
+        "branches": [
+          {
+            "branch": "business",
+            "reviewState": "checked",
+            "conclusion": "Current Ross Technology and Operations PhD verified with department and explicit relevant doctoral research scope.",
+            "sourceUrls": [
+              "https://michiganross.umich.edu/phd/areas-of-study/technology-operations"
+            ]
+          },
+          {
+            "branch": "engineering",
+            "reviewState": "checked",
+            "conclusion": "Current IOE PhD verified, doctoral research and Operations Research qualifying path; both relevant reviewed branches covered.",
+            "sourceUrls": [
+              "https://ioe.engin.umich.edu/graduate/phd-program/",
+              "https://ioe.engin.umich.edu/graduate/phd-program/phd-programs-curriculum/"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://michiganross.umich.edu/phd/areas-of-study/technology-operations",
+            "checkedAt": "2026-10-21",
+            "outcome": "read",
+            "note": "Full doctoral overview and expanded Research accordion read. No individual graduate/placement facts collected."
+          },
+          {
+            "url": "https://ioe.engin.umich.edu/graduate/phd-program/",
+            "checkedAt": "2026-10-21",
+            "outcome": "read",
+            "note": "Full IOE doctoral programme research-area overview read."
+          },
+          {
+            "url": "https://ioe.engin.umich.edu/graduate/phd-program/phd-programs-curriculum/",
+            "checkedAt": "2026-10-21",
+            "outcome": "read",
+            "note": "Full IOE PhD qualifying/preliminary dissertation curriculum read."
+          }
+        ],
+        "limitations": [
+          "Current scoped programme inventory only; no historical start dates or uninterrupted admissions inferred."
+        ],
+        "coverageComplete": true
+      }
+    }
+  ]
+}

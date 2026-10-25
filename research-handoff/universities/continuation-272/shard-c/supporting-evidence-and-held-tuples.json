@@ -1,0 +1,508 @@
+{
+  "assessedAt": "2026-10-25",
+  "method": "Exact source assertion composition from existing public official observations and explicit decisions only. Original per-fact dates retained, no fresh source claim.",
+  "held": [
+    {
+      "source": "omlist-schools",
+      "sourceRecordId": "/schools/university-of-virginia.html",
+      "schoolAsListed": null,
+      "departmentAsListed": "Technology and Operations Management\nData Analytics and Decision Sciences",
+      "reconciliation": {
+        "state": "pending-source-reconciliation",
+        "note": "No exact school/department assertion with an existing official review decision."
+      }
+    },
+    {
+      "source": "omlist-schools",
+      "sourceRecordId": "/schools/university-of-virginia.html",
+      "schoolAsListed": null,
+      "departmentAsListed": "Technology and Operations Management\nData Analytics and Decision Sciences",
+      "reconciliation": {
+        "state": "pending-source-reconciliation",
+        "note": "No exact school/department assertion with an existing official review decision."
+      }
+    },
+    {
+      "source": "oa-live-directory",
+      "sourceRecordId": "virginia-tech____data-science",
+      "schoolAsListed": "College of Science",
+      "departmentAsListed": "Academy of Data Science",
+      "reconciliation": {
+        "state": "pending-source-reconciliation",
+        "note": "No exact school/department assertion with an existing official review decision."
+      }
+    },
+    {
+      "source": "oa-live-directory",
+      "sourceRecordId": "virginia-tech____healthcare-operations",
+      "schoolAsListed": "Virginia Tech Carilion School of Medicine",
+      "departmentAsListed": "Smart Healthcare Hub",
+      "reconciliation": {
+        "state": "pending-source-reconciliation",
+        "note": "No exact school/department assertion with an existing official review decision."
+      }
+    }
+  ],
+  "supportingPublicReviews": [
+    {
+      "id": "university-of-virginia",
+      "status": "reviewed",
+      "canonicalName": "University of Virginia",
+      "universitySourceUrl": "https://www.darden.virginia.edu/faculty-research/academic-areas/data-analytics-decision-sciences",
+      "checkedAt": "2026-10-22",
+      "reviewer": "Codex in Chrome",
+      "units": [
+        {
+          "id": "university-of-virginia--technology-operations-management",
+          "name": "Technology and Operations Management",
+          "school": "Darden School of Business",
+          "type": "area",
+          "fields": [
+            "operations-management",
+            "supply-chain"
+          ],
+          "sourceUrl": "https://www.darden.virginia.edu/faculty-research/academic-areas/technology-operations-management",
+          "checkedAt": "2026-10-21",
+          "evidence": "Official Academic Areas page names this area and describes product/service processes, inventory, capacity and extended supply-chain scope."
+        },
+        {
+          "id": "university-of-virginia--systems-information-engineering",
+          "name": "Systems and Information Engineering",
+          "school": "School of Engineering and Applied Science",
+          "type": "department",
+          "fields": [
+            "operations-research"
+          ],
+          "sourceUrl": "https://engineering.virginia.edu/department/systems-and-information-engineering/research/operations-research-and-analytics",
+          "checkedAt": "2026-10-21",
+          "evidence": "Official department research page explicitly names Department of Systems and Information Engineering and Operations Research and Analytics subgroup."
+        },
+        {
+          "id": "university-of-virginia--data-analytics-decision-sciences",
+          "name": "Data Analytics and Decision Sciences",
+          "type": "area",
+          "school": "Darden School of Business",
+          "fields": [
+            "operations-research",
+            "operations-management"
+          ],
+          "sourceUrl": "https://www.darden.virginia.edu/faculty-research/academic-areas/data-analytics-decision-sciences",
+          "checkedAt": "2026-10-22",
+          "evidence": "Official current academic-area page establishes exact named area within Darden. Its directly corresponding doctoral page explicitly includes pricing/revenue management and doctoral faculty expertise in public-sector operations, transportation and resource allocation, establishing substantive operational decision research beyond generic methods."
+        }
+      ],
+      "decisions": [
+        {
+          "sourceDepartmentId": "university-of-virginia",
+          "disposition": "not-a-unit",
+          "unitIds": [],
+          "reason": "Blank seed/parent-school row asserts no distinct departmental label."
+        },
+        {
+          "sourceDepartmentId": "university-of-virginia____om",
+          "disposition": "replaced",
+          "unitIds": [
+            "university-of-virginia--technology-operations-management"
+          ],
+          "reason": "Official academic area page verifies exact Operations area name and scope."
+        },
+        {
+          "sourceDepartmentId": "university-of-virginia__darden-school-of-business",
+          "disposition": "not-a-unit",
+          "unitIds": [],
+          "reason": "Blank seed/parent-school row asserts no distinct departmental label."
+        },
+        {
+          "sourceDepartmentId": "university-of-virginia__darden-school-of-business__data-analytics-and-decision-sciences",
+          "disposition": "replaced",
+          "unitIds": [
+            "university-of-virginia--data-analytics-decision-sciences"
+          ],
+          "reason": "Current official area identity and programme-linked operational research scope now read: pricing/revenue management plus explicit doctoral public-sector operations, transportation and resource-allocation expertise. Integrator accepted this as a relevant research pathway on 22 October; no separately titled Operations Research degree inferred."
+        },
+        {
+          "sourceDepartmentId": "university-of-virginia__darden-school-of-business__technology-and-operations-management",
+          "disposition": "replaced",
+          "unitIds": [
+            "university-of-virginia--technology-operations-management"
+          ],
+          "reason": "Official academic area page verifies exact Operations area name and scope."
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.darden.virginia.edu/faculty-research/academic-areas/technology-operations-management",
+          "checkedAt": "2026-10-21",
+          "outcome": "read",
+          "note": "Official Operations academic area name, type and supply-chain/process remit."
+        },
+        {
+          "url": "https://www.darden.virginia.edu/phd/data-analytics-and-decision-science",
+          "checkedAt": "2026-10-21",
+          "outcome": "read",
+          "note": "University of Virginia Darden school identity and full DADS doctoral title."
+        },
+        {
+          "url": "https://engineering.virginia.edu/department/systems-and-information-engineering/academics/graduate-programs/phd-systems-engineering",
+          "checkedAt": "2026-10-21",
+          "outcome": "read",
+          "note": "Official Systems Engineering PhD and department name."
+        },
+        {
+          "url": "https://engineering.virginia.edu/department/systems-and-information-engineering/research/operations-research-and-analytics",
+          "checkedAt": "2026-10-21",
+          "outcome": "read",
+          "note": "Official department OR and Analytics research subgroup."
+        },
+        {
+          "url": "https://www.darden.virginia.edu/faculty-research/academic-areas/data-analytics-decision-sciences",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Full official named academic-area page and complete eight-area navigation read."
+        },
+        {
+          "url": "https://www.darden.virginia.edu/phd/data-analytics-and-decision-science",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Full doctoral field page, all research topics and complete doctoral faculty expertise panel read. Explicit pricing/revenue management and public-sector operations/transportation/resource allocation."
+        },
+        {
+          "url": "https://www.darden.virginia.edu/phd/about",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Full doctoral programme overview read: Darden host and exactly two programmes of study, DADS and Strategy/Ethics/Entrepreneurship."
+        }
+      ],
+      "limitations": [
+        "DADS is an academic area and programme of study in the Darden Ph.D. Program, not a separately titled Operations Research award. Wider engineering doctoral scope remains incomplete independently."
+      ],
+      "duplicateOf": null,
+      "doctoralReview": {
+        "status": "verified",
+        "checkedAt": "2026-10-25",
+        "programmeIds": [
+          "university-of-virginia--darden-phd-data-analytics-decision-sciences",
+          "university-of-virginia--systems-engineering-phd-or"
+        ],
+        "branches": [
+          {
+            "branch": "engineering",
+            "conclusion": "Complete current Engineering graduate programme inventory and actual Civil formal specializations, Mechanical/Aerospace PhD research fields, Applied Mathematics and Engineering Science offerings read on25 October. No additional named Ops/MS/IE doctorate established beyond retained Systems OR pathway. Actual Systems PhD admissions explicitly routes candidates through research subgroups; existing exact credential and older per-fact dates preserved. Engineering Science suspension is undergraduate only.",
+            "sourceUrls": [
+              "https://engineering.virginia.edu/department/systems-and-information-engineering/academics/graduate-programs/phd-systems-engineering",
+              "https://engineering.virginia.edu/department/systems-and-information-engineering/research/operations-research-and-analytics",
+              "https://engineering.virginia.edu/program-finder",
+              "https://engineering.virginia.edu/department/civil-and-environmental-engineering/academics/graduate-programs/phd-civil-engineering",
+              "https://engineering.virginia.edu/offices-programs/applied-mathematics",
+              "https://engineering.virginia.edu/undergraduate-study/future-undergrads/special-academic-programs/engineering-science",
+              "https://engineering.virginia.edu/department/mechanical-and-aerospace-engineering/academics/graduate-programs/phd-mechanical-and-aerospace-engineering"
+            ],
+            "reviewState": "checked"
+          },
+          {
+            "branch": "business",
+            "reviewState": "checked",
+            "conclusion": "Current Darden full doctoral inventory and DADS programme page read. Two programmes of study listed; DADS has explicit programme-linked operational research pathway accepted by integrator. Technology and Operations faculty area does not create another doctorate.",
+            "sourceUrls": [
+              "https://www.darden.virginia.edu/phd/about",
+              "https://www.darden.virginia.edu/phd/data-analytics-and-decision-science",
+              "https://www.darden.virginia.edu/faculty-research/academic-areas/data-analytics-decision-sciences"
+            ]
+          },
+          {
+            "branch": "mathematics",
+            "reviewState": "partial",
+            "conclusion": "Separate Arts and Sciences Mathematics doctoral application-area lead remains unresolved: actual official graduate research-area page returned502 Bad Gateway. Search-index text is discovery only; no new OR route or field verification from cached snippets.",
+            "sourceUrls": [
+              "https://math.virginia.edu/graduate/research_areas/"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://engineering.virginia.edu/department/systems-and-information-engineering/academics/graduate-programs/phd-systems-engineering",
+            "checkedAt": "2026-10-21",
+            "outcome": "read",
+            "note": "Official doctoral programme, admissions/supervision or research subgroup read in Chrome."
+          },
+          {
+            "url": "https://engineering.virginia.edu/department/systems-and-information-engineering/research/operations-research-and-analytics",
+            "checkedAt": "2026-10-21",
+            "outcome": "read",
+            "note": "Official doctoral programme, admissions/supervision or research subgroup read in Chrome."
+          },
+          {
+            "url": "https://www.darden.virginia.edu/phd",
+            "checkedAt": "2026-10-21",
+            "outcome": "read",
+            "note": "Official doctoral programme, admissions/supervision or research subgroup read in Chrome."
+          },
+          {
+            "url": "https://www.darden.virginia.edu/phd/data-analytics-and-decision-science",
+            "checkedAt": "2026-10-21",
+            "outcome": "read",
+            "note": "Official doctoral programme, admissions/supervision or research subgroup read in Chrome."
+          },
+          {
+            "url": "https://www.darden.virginia.edu/faculty-research/academic-areas/data-analytics-decision-sciences",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full official named academic-area page and complete eight-area navigation read."
+          },
+          {
+            "url": "https://www.darden.virginia.edu/phd/data-analytics-and-decision-science",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full doctoral field page, all research topics and complete doctoral faculty expertise panel read. Explicit pricing/revenue management and public-sector operations/transportation/resource allocation."
+          },
+          {
+            "url": "https://www.darden.virginia.edu/phd/about",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full doctoral programme overview read: Darden host and exactly two programmes of study, DADS and Strategy/Ethics/Entrepreneurship."
+          },
+          {
+            "url": "https://engineering.virginia.edu/program-finder",
+            "note": "Full actual Engineering programme finder read across all nine graduate programme families: Biomedical, Chemical, Civil, Computer Engineering, Computer Science, Electrical, Materials, Mechanical/Aerospace and Systems. No independently named IE doctorate. Engineering Science and Applied Mathematics appear in broader departmental navigation but not as doctoral degrees in this inventory; their actual offering still needs checking.",
+            "checkedAt": "2026-10-25",
+            "outcome": "read",
+            "accessMethod": "web.open/click actual official HTML; authorized fallback"
+          },
+          {
+            "url": "https://engineering.virginia.edu/department/systems-and-information-engineering/academics/graduate-programs/phd-systems-engineering",
+            "note": "Actual Systems Engineering PhD substantive admissions and research requirements read through academic-progress section. Explicit candidates evaluated by research subgroups, some admitted directly to a group/advisor, others connected during first year. Named OR and Analytics group linked in actual department navigation; existing OR pathway not inferred from foundation courses alone. Doctoral original research, dissertation, qualifying/proposal/final defence confirmed.",
+            "checkedAt": "2026-10-25",
+            "outcome": "read",
+            "accessMethod": "web.open/click actual official HTML; authorized fallback"
+          },
+          {
+            "url": "https://engineering.virginia.edu/department/civil-and-environmental-engineering/academics/graduate-programs/phd-civil-engineering",
+            "note": "Full substantive Civil PhD page read. Five actual formal specializations: Construction Engineering/Management, Environmental/Water Resources, Infrastructure Systems, Structural, Transportation. No named Operations, Management Science or IE field. Infrastructure Systems Engineering is not Industrial Systems Engineering. Original research dissertation/defence and Fall2027 applications explicit.",
+            "checkedAt": "2026-10-25",
+            "outcome": "read",
+            "accessMethod": "web.open/click actual official HTML; authorized fallback"
+          },
+          {
+            "url": "https://engineering.virginia.edu/offices-programs/applied-mathematics",
+            "note": "Full actual Applied Mathematics office page read. Published offering undergraduate minor, undergraduate tutoring and teaching-assistant opportunities; no own doctoral degree in page or full Engineering graduate inventory.",
+            "checkedAt": "2026-10-25",
+            "outcome": "read",
+            "accessMethod": "web.open/click actual official HTML; authorized fallback"
+          },
+          {
+            "url": "https://engineering.virginia.edu/undergraduate-study/future-undergrads/special-academic-programs/engineering-science",
+            "note": "Full actual Engineering Science page read. Explicit undergraduate major with two minors, currently not accepting new students; closure applies this undergraduate programme, not inferred doctoral suspension. No extra doctorate.",
+            "checkedAt": "2026-10-25",
+            "outcome": "read",
+            "accessMethod": "web.open/click actual official HTML; authorized fallback"
+          },
+          {
+            "url": "https://engineering.virginia.edu/department/mechanical-and-aerospace-engineering/academics/graduate-programs/phd-mechanical-and-aerospace-engineering",
+            "note": "Full substantive Mechanical/Aerospace PhD page and complete named research menu read: aeronautics, biomechanics, data analytics/AI, energy, materials/design, computing, hypersonics, robotics/dynamics, additive manufacturing, space, thermal systems. No Operations/MS/IE named field. Generic manufacturing and numerical methods do not create additional route.",
+            "checkedAt": "2026-10-25",
+            "outcome": "read",
+            "accessMethod": "web.open/click actual official HTML; authorized fallback"
+          },
+          {
+            "url": "https://math.virginia.edu/graduate/research_areas/",
+            "checkedAt": "2026-10-25",
+            "outcome": "blocked",
+            "note": "Actual official graduate research-area page returned502 Bad Gateway, body unread. Search-index discovery mentioned probability applications to OR; this is not source verification and no route added. No repeat or alternative-host bypass attempted.",
+            "accessMethod": "web.open actual primary URL; authorized fallback"
+          }
+        ],
+        "limitations": [
+          "Bounded engineering doctoral scope now checked; Mathematics concrete programme-linked OR application-area lead remains material and unread because official source failed.",
+          "Existing business DADS adjudication and21–22 October per-fact evidence retained. No new programme or current-status refresh in scope-only composition.",
+          "No source browser tabs created."
+        ],
+        "coverageComplete": false
+      },
+      "addedAt": "2026-10-21T11:02:27Z",
+      "updatedAt": "2026-10-25T20:05:21Z"
+    },
+    {
+      "id": "virginia-tech",
+      "status": "partial",
+      "canonicalName": "Virginia Polytechnic Institute and State University",
+      "duplicateOf": null,
+      "universitySourceUrl": "https://bit.vt.edu/academics/graduate-programs/phd-program.html",
+      "reviewer": "Codex in Chrome",
+      "checkedAt": "2026-10-21",
+      "decisions": [
+        {
+          "sourceDepartmentId": "virginia-tech____data-science",
+          "disposition": "unresolved",
+          "unitIds": [],
+          "reason": "Generic Data Science job-topic label cannot be uniquely assigned to BIT/ISE or another administrative host from current evidence."
+        },
+        {
+          "sourceDepartmentId": "virginia-tech____grado-department-of-industrial-and-systems-engineering",
+          "disposition": "replaced",
+          "unitIds": [
+            "virginia-tech--industrial-systems-engineering"
+          ],
+          "reason": "Current exact named department verified."
+        },
+        {
+          "sourceDepartmentId": "virginia-tech____healthcare-operations",
+          "disposition": "not-a-unit",
+          "unitIds": [],
+          "reason": "Actual official medical-school ad uses HealthcareOperationsBusinessAnalytics as interdisciplinary hiring field for SmartHealthcareHub, expressly strategic initiative of VT/VTCarilionSchoolMedicine, not separate HealthcareOperations department. Exact lower administrative appointment not established, no forced ISE/BIT mapping or hub promoted to school/department.",
+          "sourceUrl": "https://medicine.vtc.vt.edu/jobs/Open-Rank-Faculty-Position.html",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "sourceDepartmentId": "virginia-tech__grado-department-of-industrial-and-systems-engineering__operations-research",
+          "disposition": "replaced",
+          "unitIds": [
+            "virginia-tech--industrial-systems-engineering"
+          ],
+          "reason": "Official OR PhD concentration is within Grado ISE; not separate department."
+        },
+        {
+          "sourceDepartmentId": "virginia-tech__pamplin-college-of-business__business-information-technology",
+          "disposition": "replaced",
+          "unitIds": [
+            "virginia-tech--business-information-technology"
+          ],
+          "reason": "Current exact named department verified."
+        }
+      ],
+      "units": [
+        {
+          "id": "virginia-tech--business-information-technology",
+          "name": "Business Information Technology",
+          "type": "department",
+          "school": "Pamplin College of Business",
+          "fields": [
+            "operations-management",
+            "supply-chain"
+          ],
+          "sourceUrl": "https://bit.vt.edu/academics/graduate-programs/phd-program/details.html",
+          "checkedAt": "2026-10-21",
+          "evidence": "Official BIT doctoral page explicitly calls BIT department, operations and supply-chain research curriculum and Pamplin parent breadcrumb."
+        },
+        {
+          "id": "virginia-tech--industrial-systems-engineering",
+          "name": "Grado Department of Industrial and Systems Engineering",
+          "type": "department",
+          "school": "College of Engineering",
+          "fields": [
+            "industrial-engineering",
+            "operations-research"
+          ],
+          "sourceUrl": "https://ise.vt.edu/academics/graduate/phd.html",
+          "checkedAt": "2026-10-21",
+          "evidence": "Official doctoral programme explicitly names Grado Department with CollegeEngineering breadcrumb and relevant OR/manufacturing/systems doctoral concentrations."
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://bit.vt.edu/academics/graduate-programs/phd-program.html",
+          "checkedAt": "2026-10-21",
+          "outcome": "read",
+          "note": "Full BIT doctoral programme overview read, exact full university legal name in footer and common VirginiaTech brand."
+        },
+        {
+          "url": "https://bit.vt.edu/academics/graduate-programs/phd-program/details.html",
+          "checkedAt": "2026-10-21",
+          "outcome": "read",
+          "note": "Full BIT doctoral programme details read, department/college and OM/SCM doctoral curriculum."
+        },
+        {
+          "url": "https://ise.vt.edu/academics/graduate/phd.html",
+          "checkedAt": "2026-10-21",
+          "outcome": "read",
+          "note": "Full ISE PhD programme and complete concentration inventory read."
+        },
+        {
+          "url": "https://ise.vt.edu/academics/graduate/phd/or.html",
+          "checkedAt": "2026-10-21",
+          "outcome": "read",
+          "note": "Full OR doctoral concentration requirements/areas read, including healthcare/publicpolicy and production/supplychain/logistics."
+        },
+        {
+          "url": "https://medicine.vtc.vt.edu/jobs/Open-Rank-Faculty-Position.html",
+          "checkedAt": "2026-10-25",
+          "outcome": "read",
+          "accessMethod": "Actual full official medical-school HTML individually opened via authorized fallback",
+          "note": "Full ad body read: OpenRankFacultyPositionHealthcareOperationsBusinessAnalytics, SmartHealthcareHub expressly strategic initiative of VT and VTCarilionSchoolMedicine. Crosscollege interdisciplinary role; IE/OR expertise qualification not appointment department or own programme."
+        },
+        {
+          "url": "https://jobs.apply.vt.edu/jobs/open-rank-faculty-position-in-healthcare-operations-and-business-analytics-roanoke-virginia-virginia-united-states",
+          "checkedAt": "2026-10-25",
+          "outcome": "blocked",
+          "note": "Actual medicalschoolad linked detail endpoint404; no body read/no retry."
+        }
+      ],
+      "limitations": [
+        "Existing university identity/ISE/BIT units and21October source dates unchanged. Actual25October medicalschoolhiring observation does not refresh degree/PhD facts.",
+        "Imported HealthcareOperations hiring-topic source assertion classified not-a-unit from actual official ad, rawlabel/date preserved; exact originatingOApostingURL not independently recovered, no exactadrecordmatchclaim.",
+        "Actual SmartHealthcareHub strategic initiative distinct from formal department. Interdisciplinary/crosscollege appointment host remains unknown; IE/OR applicant expertise not department or doctorate.",
+        "Generic imported DataScience2025May source label remains unresolved. No unitreview completion claimed and latest publicdoctoralReview preserved separately."
+      ],
+      "assessedAt": "2026-10-25",
+      "doctoralReview": {
+        "status": "verified",
+        "checkedAt": "2026-10-21",
+        "programmeIds": [
+          "virginia-tech--business-information-technology-phd",
+          "virginia-tech--industrial-systems-engineering-phd"
+        ],
+        "branches": [
+          {
+            "branch": "business",
+            "reviewState": "checked",
+            "conclusion": "BIT PhD with explicit OM/SCM doctoral research/curriculum verified.",
+            "sourceUrls": [
+              "https://bit.vt.edu/academics/graduate-programs/phd-program.html",
+              "https://bit.vt.edu/academics/graduate-programs/phd-program/details.html"
+            ]
+          },
+          {
+            "branch": "engineering",
+            "reviewState": "checked",
+            "conclusion": "Grado ISE PhD and full concentration inventory verified; OR concentration detailed current requirements read.",
+            "sourceUrls": [
+              "https://ise.vt.edu/academics/graduate/phd.html",
+              "https://ise.vt.edu/academics/graduate/phd/or.html"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://bit.vt.edu/academics/graduate-programs/phd-program.html",
+            "checkedAt": "2026-10-21",
+            "outcome": "read",
+            "note": "Full BIT doctoral programme overview read, exact full university legal name in footer and common VirginiaTech brand."
+          },
+          {
+            "url": "https://bit.vt.edu/academics/graduate-programs/phd-program/details.html",
+            "checkedAt": "2026-10-21",
+            "outcome": "read",
+            "note": "Full BIT doctoral programme details read, department/college and OM/SCM doctoral curriculum."
+          },
+          {
+            "url": "https://ise.vt.edu/academics/graduate/phd.html",
+            "checkedAt": "2026-10-21",
+            "outcome": "read",
+            "note": "Full ISE PhD programme and complete concentration inventory read."
+          },
+          {
+            "url": "https://ise.vt.edu/academics/graduate/phd/or.html",
+            "checkedAt": "2026-10-21",
+            "outcome": "read",
+            "note": "Full OR doctoral concentration requirements/areas read, including healthcare/publicpolicy and production/supplychain/logistics."
+          }
+        ],
+        "limitations": [
+          "Current doctoral eligibility independent of unresolved imported generic job-topic ownership; no historical dates inferred."
+        ],
+        "coverageComplete": true
+      },
+      "addedAt": "2026-10-21T11:51:57Z",
+      "updatedAt": "2026-10-25T22:34:56Z"
+    }
+  ]
+}

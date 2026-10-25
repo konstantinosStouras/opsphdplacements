@@ -1,0 +1,40 @@
+{
+  "checkedAt": "2026-10-25",
+  "method": "Read-only exact frozen source placeholders and retained official institution/unit identity observations. No new reads/public edits.",
+  "records": [
+    {
+      "universityId": "kuhne-logistics-university",
+      "officialReadSource": {
+        "note": "University full name and management/logistics institutional scope.",
+        "outcome": "read",
+        "checkedAt": "2026-10-20",
+        "url": "https://www.klu.org/"
+      },
+      "placeholder": "-"
+    },
+    {
+      "universityId": "nova-university-lisbon",
+      "officialReadSource": {
+        "url": "https://www.novasbe.unl.pt/en/faculty-research/faculty",
+        "checkedAt": "2026-10-20",
+        "outcome": "read",
+        "note": "Full operations academic area in current faculty filter; separate quantitative/analytics area not retained."
+      },
+      "placeholder": "TBC"
+    },
+    {
+      "universityId": "singapore-university-of-technology-and-design",
+      "officialReadSource": {
+        "url": "https://www.sutd.edu.sg/education",
+        "checkedAt": "2026-10-21",
+        "outcome": "read",
+        "note": "Official academic organization explicitly uses pillars/clusters/programme instead of traditional departments and schools; ESD is Pillar."
+      },
+      "placeholder": "TBC"
+    }
+  ],
+  "validation": "Three exact source tuples and retained official read URL/date references pass pure reconcileSourceUnit.",
+  "limitations": [
+    "This only adjudicates literal non-name placeholders. Actual unit assertions/doctoral provision remain independent; no placeholder expands to a guessed department."
+  ]
+}
