@@ -14,14 +14,14 @@
   "definition": "One record per organisation that appears in either database or the program register: the universities with operations departments (Operations Academia directory), the PhD institutions and first employers of the people in the OM List import, and the registered doctoral programs. Keyed by Wikidata item when known, otherwise by name. Parts that a source does not supply are null; nothing is inferred across sources. Where two source rows land on one entity, both rows stay listed under it and their figures are added.",
   "counts": {
    "entities": 1024,
-   "withWikidata": 909,
+   "withWikidata": 908,
    "phdInstitutions": 434,
-   "directoryUniversities": 763,
+   "directoryUniversities": 773,
    "firstEmployers": 493,
    "withPrograms": 354,
-   "inBothDatabases": 364,
+   "inBothDatabases": 373,
    "directoryOnly": 328,
-   "peopleOnly": 70,
+   "peopleOnly": 61,
    "conflicts": 0
   }
  },
@@ -31893,6 +31893,145 @@
    "updatedAt": "2026-10-22T07:18:58Z"
   },
   {
+   "id": "wd:Q273447",
+   "wikidata": "Q273447",
+   "name": "École Centrale Paris",
+   "aliases": [
+    "École Centrale Paris",
+    "Ecole Centrale Paris",
+    "École centrale de Paris"
+   ],
+   "country": "France",
+   "coords": [
+    48.766,
+    2.288
+   ],
+   "logo": "assets/logos/Q273447.png",
+   "roles": [
+    "phd-institution",
+    "directory-university"
+   ],
+   "people": {
+    "institutions": [
+     {
+      "institutionId": "ecole-centrale-paris",
+      "name": "Ecole Centrale Paris",
+      "spellings": [
+       "Ecole Centrale Paris"
+      ],
+      "people": 4,
+      "verifiedFirstJobs": 4
+     },
+     {
+      "institutionId": "ecole-centrale-de-paris",
+      "name": "École centrale de Paris",
+      "spellings": [
+       "École centrale de Paris"
+      ],
+      "people": 1,
+      "verifiedFirstJobs": 1
+     }
+    ],
+    "people": 5,
+    "verifiedFirstJobs": 5,
+    "unresolved": 0,
+    "pending": 0,
+    "notYetCompleted": 0,
+    "firstYear": 1994,
+    "lastYear": 2012,
+    "firstJobTypes": {
+     "tenure-track": 0,
+     "postdoc": 1,
+     "teaching-track": 0,
+     "other-academic": 1,
+     "industry": 0,
+     "government": 0,
+     "nonprofit": 0,
+     "unknown": 3
+    },
+    "topFirstEmployers": [
+     {
+      "employer": "Eindhoven University of Technology",
+      "count": 1
+     },
+     {
+      "employer": "HEC Montréal",
+      "count": 1
+     },
+     {
+      "employer": "HEC Montréal (Department of Logistics and Operations Management)",
+      "count": 1
+     },
+     {
+      "employer": "NASA Jet Propulsion Laboratory (Caltech), Pasadena",
+      "count": 1
+     },
+     {
+      "employer": "University of Salford",
+      "count": 1
+     }
+    ]
+   },
+   "directory": {
+    "universities": [
+     {
+      "id": "ecole-centrale-paris-historical",
+      "name": "Ecole Centrale Paris",
+      "spellings": [
+       "Ecole Centrale Paris"
+      ],
+      "country": null,
+      "departmentCount": 1,
+      "match": "exact"
+     }
+    ],
+    "departments": [
+     {
+      "id": "ecole-centrale-paris-historical--om-list-ecole-centrale-paris-reported-doctorate-two-profiles-reported-phd-institution",
+      "university": "Ecole Centrale Paris",
+      "school": null,
+      "department": null,
+      "type": null,
+      "facultyUrl": null,
+      "departmentUrl": null
+     }
+    ]
+   },
+   "employer": null,
+   "programs": [],
+   "sources": [
+    {
+     "url": "https://omlist.edutool.org/phd/by-year.html",
+     "title": "OM List, PhD graduates by year (people database)"
+    },
+    {
+     "url": "https://www.wikidata.org/wiki/Q273447",
+     "title": "Wikidata item"
+    },
+    {
+     "url": "https://www.operationsacademia.org/universities",
+     "title": "Operations Academia universities directory (universities database)"
+    }
+   ],
+   "review": {
+    "matches": [
+     {
+      "source": "institutions",
+      "institution": "École centrale de Paris",
+      "match": "wikidata"
+     },
+     {
+      "source": "directory",
+      "university": "Ecole Centrale Paris",
+      "match": "exact"
+     }
+    ],
+    "conflicts": []
+   },
+   "addedAt": "2026-10-16T13:49:36Z",
+   "updatedAt": "2026-10-25T22:58:21Z"
+  },
+  {
    "id": "wd:Q1194650",
    "wikidata": "Q1194650",
    "name": "Indian Institute of Technology Delhi",
@@ -33036,111 +33175,6 @@
    },
    "addedAt": "2026-10-16T13:49:36Z",
    "updatedAt": "2026-10-21T11:53:27Z"
-  },
-  {
-   "id": "wd:Q273447",
-   "wikidata": "Q273447",
-   "name": "École Centrale Paris",
-   "aliases": [
-    "École Centrale Paris",
-    "Ecole Centrale Paris",
-    "École centrale de Paris"
-   ],
-   "country": "France",
-   "coords": [
-    48.766,
-    2.288
-   ],
-   "logo": "assets/logos/Q273447.png",
-   "roles": [
-    "phd-institution"
-   ],
-   "people": {
-    "institutions": [
-     {
-      "institutionId": "ecole-centrale-paris",
-      "name": "Ecole Centrale Paris",
-      "spellings": [
-       "Ecole Centrale Paris"
-      ],
-      "people": 4,
-      "verifiedFirstJobs": 4
-     },
-     {
-      "institutionId": "ecole-centrale-de-paris",
-      "name": "École centrale de Paris",
-      "spellings": [
-       "École centrale de Paris"
-      ],
-      "people": 1,
-      "verifiedFirstJobs": 1
-     }
-    ],
-    "people": 5,
-    "verifiedFirstJobs": 5,
-    "unresolved": 0,
-    "pending": 0,
-    "notYetCompleted": 0,
-    "firstYear": 1994,
-    "lastYear": 2012,
-    "firstJobTypes": {
-     "tenure-track": 0,
-     "postdoc": 1,
-     "teaching-track": 0,
-     "other-academic": 1,
-     "industry": 0,
-     "government": 0,
-     "nonprofit": 0,
-     "unknown": 3
-    },
-    "topFirstEmployers": [
-     {
-      "employer": "Eindhoven University of Technology",
-      "count": 1
-     },
-     {
-      "employer": "HEC Montréal",
-      "count": 1
-     },
-     {
-      "employer": "HEC Montréal (Department of Logistics and Operations Management)",
-      "count": 1
-     },
-     {
-      "employer": "NASA Jet Propulsion Laboratory (Caltech), Pasadena",
-      "count": 1
-     },
-     {
-      "employer": "University of Salford",
-      "count": 1
-     }
-    ]
-   },
-   "directory": null,
-   "employer": null,
-   "programs": [],
-   "sources": [
-    {
-     "url": "https://omlist.edutool.org/phd/by-year.html",
-     "title": "OM List, PhD graduates by year (people database)"
-    },
-    {
-     "url": "https://www.wikidata.org/wiki/Q273447",
-     "title": "Wikidata item"
-    }
-   ],
-   "review": {
-    "matches": [
-     {
-      "source": "institutions",
-      "institution": "École centrale de Paris",
-      "match": "wikidata"
-     }
-    ],
-    "conflicts": []
-   },
-   "addedAt": "2026-10-16T13:49:36Z",
-   "updatedAt": "2026-10-20T08:28:39Z"
   },
   {
    "id": "wd:Q721064",
@@ -61363,6 +61397,114 @@
    "updatedAt": "2026-10-21T21:30:10Z"
   },
   {
+   "id": "wd:Q17014550",
+   "wikidata": "Q17014550",
+   "name": "Academy of Mathematics and Systems Science",
+   "aliases": [
+    "Academy of Mathematics and Systems Science",
+    "Academy of Mathematics and Systems Science, Chinese Academy of Science"
+   ],
+   "country": "People's Republic of China",
+   "coords": [
+    39.986,
+    116.331
+   ],
+   "logo": "assets/logos/Q17014550.png",
+   "roles": [
+    "phd-institution",
+    "directory-university"
+   ],
+   "people": {
+    "institutions": [
+     {
+      "institutionId": "academy-of-mathematics-and-systems-science-chinese-academy-of-science",
+      "name": "Academy of Mathematics and Systems Science, Chinese Academy of Science",
+      "spellings": [
+       "Academy of Mathematics and Systems Science, Chinese Academy of Science"
+      ],
+      "people": 1,
+      "verifiedFirstJobs": 1
+     }
+    ],
+    "people": 1,
+    "verifiedFirstJobs": 1,
+    "unresolved": 0,
+    "pending": 0,
+    "notYetCompleted": 0,
+    "firstYear": 2011,
+    "lastYear": 2011,
+    "firstJobTypes": {
+     "tenure-track": 0,
+     "postdoc": 1,
+     "teaching-track": 0,
+     "other-academic": 0,
+     "industry": 0,
+     "government": 0,
+     "nonprofit": 0,
+     "unknown": 0
+    },
+    "topFirstEmployers": [
+     {
+      "employer": "Chinese Academy of Sciences",
+      "count": 1
+     }
+    ]
+   },
+   "directory": {
+    "universities": [
+     {
+      "id": "academy-of-mathematics-and-systems-science-cas",
+      "name": "Academy of Mathematics and Systems Science, Chinese Academy of Science",
+      "spellings": [
+       "Academy of Mathematics and Systems Science, Chinese Academy of Science"
+      ],
+      "country": null,
+      "departmentCount": 1,
+      "match": "exact"
+     }
+    ],
+    "departments": [
+     {
+      "id": "academy-of-mathematics-and-systems-science-cas--om-list-amss-cas-reported-doctorate-one-profile-reported-phd-institution",
+      "university": "Academy of Mathematics and Systems Science, Chinese Academy of Science",
+      "school": null,
+      "department": null,
+      "type": null,
+      "facultyUrl": null,
+      "departmentUrl": null
+     }
+    ]
+   },
+   "employer": null,
+   "programs": [],
+   "sources": [
+    {
+     "url": "https://omlist.edutool.org/phd/by-year.html",
+     "title": "OM List, PhD graduates by year (people database)"
+    },
+    {
+     "url": "https://www.wikidata.org/wiki/Q17014550",
+     "title": "Wikidata item"
+    },
+    {
+     "url": "https://www.operationsacademia.org/universities",
+     "title": "Operations Academia universities directory (universities database)"
+    }
+   ],
+   "review": {
+    "matches": [
+     {
+      "source": "directory",
+      "university": "Academy of Mathematics and Systems Science, Chinese Academy of Science",
+      "match": "exact"
+     }
+    ],
+    "conflicts": []
+   },
+   "addedAt": "2026-10-16T13:49:36Z",
+   "updatedAt": "2026-10-25T22:58:21Z"
+  },
+  {
    "id": "wd:Q4746780",
    "wikidata": "Q4746780",
    "name": "Amirkabir University of Technology",
@@ -63258,6 +63400,109 @@
    "updatedAt": "2026-10-21T11:02:27Z"
   },
   {
+   "id": "wd:Q273626",
+   "wikidata": "Q273626",
+   "name": "École polytechnique",
+   "aliases": [
+    "École polytechnique",
+    "Ecole Polytechnique"
+   ],
+   "country": "France",
+   "coords": [
+    48.712,
+    2.21
+   ],
+   "logo": "assets/logos/Q273626.png",
+   "roles": [
+    "phd-institution",
+    "directory-university"
+   ],
+   "people": {
+    "institutions": [
+     {
+      "institutionId": "ecole-polytechnique",
+      "name": "Ecole Polytechnique",
+      "spellings": [
+       "Ecole Polytechnique"
+      ],
+      "people": 1,
+      "verifiedFirstJobs": 0
+     }
+    ],
+    "people": 1,
+    "verifiedFirstJobs": 0,
+    "unresolved": 1,
+    "pending": 0,
+    "notYetCompleted": 0,
+    "firstYear": 1999,
+    "lastYear": 1999,
+    "firstJobTypes": {
+     "tenure-track": 0,
+     "postdoc": 0,
+     "teaching-track": 0,
+     "other-academic": 0,
+     "industry": 0,
+     "government": 0,
+     "nonprofit": 0,
+     "unknown": 0
+    },
+    "topFirstEmployers": []
+   },
+   "directory": {
+    "universities": [
+     {
+      "id": "ecole-polytechnique-france",
+      "name": "Ecole Polytechnique",
+      "spellings": [
+       "Ecole Polytechnique"
+      ],
+      "country": null,
+      "departmentCount": 1,
+      "match": "exact"
+     }
+    ],
+    "departments": [
+     {
+      "id": "ecole-polytechnique-france--om-list-ecole-polytechnique-reported-doctorate-one-profile-reported-phd-institution",
+      "university": "Ecole Polytechnique",
+      "school": null,
+      "department": null,
+      "type": null,
+      "facultyUrl": null,
+      "departmentUrl": null
+     }
+    ]
+   },
+   "employer": null,
+   "programs": [],
+   "sources": [
+    {
+     "url": "https://omlist.edutool.org/phd/by-year.html",
+     "title": "OM List, PhD graduates by year (people database)"
+    },
+    {
+     "url": "https://www.wikidata.org/wiki/Q273626",
+     "title": "Wikidata item"
+    },
+    {
+     "url": "https://www.operationsacademia.org/universities",
+     "title": "Operations Academia universities directory (universities database)"
+    }
+   ],
+   "review": {
+    "matches": [
+     {
+      "source": "directory",
+      "university": "Ecole Polytechnique",
+      "match": "exact"
+     }
+    ],
+    "conflicts": []
+   },
+   "addedAt": "2026-10-18T05:46:46Z",
+   "updatedAt": "2026-10-25T22:58:21Z"
+  },
+  {
    "id": "wd:Q621043",
    "wikidata": "Q621043",
    "name": "Emory University",
@@ -63474,6 +63719,108 @@
    "updatedAt": "2026-10-21T11:02:27Z"
   },
   {
+   "id": "wd:Q1275372",
+   "wikidata": "Q1275372",
+   "name": "ENSAE Paris",
+   "aliases": [
+    "ENSAE Paris"
+   ],
+   "country": "France",
+   "coords": [
+    48.711,
+    2.208
+   ],
+   "logo": "assets/logos/Q1275372.png",
+   "roles": [
+    "phd-institution",
+    "directory-university"
+   ],
+   "people": {
+    "institutions": [
+     {
+      "institutionId": "ensae-paris",
+      "name": "ENSAE Paris",
+      "spellings": [
+       "ENSAE Paris"
+      ],
+      "people": 1,
+      "verifiedFirstJobs": 0
+     }
+    ],
+    "people": 1,
+    "verifiedFirstJobs": 0,
+    "unresolved": 1,
+    "pending": 0,
+    "notYetCompleted": 0,
+    "firstYear": 2023,
+    "lastYear": 2023,
+    "firstJobTypes": {
+     "tenure-track": 0,
+     "postdoc": 0,
+     "teaching-track": 0,
+     "other-academic": 0,
+     "industry": 0,
+     "government": 0,
+     "nonprofit": 0,
+     "unknown": 0
+    },
+    "topFirstEmployers": []
+   },
+   "directory": {
+    "universities": [
+     {
+      "id": "ensae-paris",
+      "name": "ENSAE Paris",
+      "spellings": [
+       "ENSAE Paris"
+      ],
+      "country": null,
+      "departmentCount": 1,
+      "match": "exact"
+     }
+    ],
+    "departments": [
+     {
+      "id": "ensae-paris--om-list-ensae-paris-reported-doctorate-one-profile-reported-phd-institution",
+      "university": "ENSAE Paris",
+      "school": null,
+      "department": null,
+      "type": null,
+      "facultyUrl": null,
+      "departmentUrl": null
+     }
+    ]
+   },
+   "employer": null,
+   "programs": [],
+   "sources": [
+    {
+     "url": "https://omlist.edutool.org/phd/by-year.html",
+     "title": "OM List, PhD graduates by year (people database)"
+    },
+    {
+     "url": "https://www.wikidata.org/wiki/Q1275372",
+     "title": "Wikidata item"
+    },
+    {
+     "url": "https://www.operationsacademia.org/universities",
+     "title": "Operations Academia universities directory (universities database)"
+    }
+   ],
+   "review": {
+    "matches": [
+     {
+      "source": "directory",
+      "university": "ENSAE Paris",
+      "match": "exact"
+     }
+    ],
+    "conflicts": []
+   },
+   "addedAt": "2026-10-16T13:49:36Z",
+   "updatedAt": "2026-10-25T22:58:21Z"
+  },
+  {
    "id": "wd:Q3578440",
    "wikidata": "Q3578440",
    "name": "ESC Rennes School of Business",
@@ -63621,6 +63968,267 @@
    },
    "addedAt": "2026-10-16T13:49:36Z",
    "updatedAt": "2026-10-25T22:19:48Z"
+  },
+  {
+   "id": "wd:Q766447",
+   "wikidata": "Q766447",
+   "name": "Federal University of Rio Grande do Sul",
+   "aliases": [
+    "Federal University of Rio Grande do Sul"
+   ],
+   "country": "Brazil",
+   "coords": [
+    -30.034,
+    -51.219
+   ],
+   "logo": "assets/logos/Q766447.png",
+   "roles": [
+    "phd-institution",
+    "directory-university",
+    "first-employer"
+   ],
+   "people": {
+    "institutions": [
+     {
+      "institutionId": "federal-university-of-rio-grande-do-sul",
+      "name": "Federal University of Rio Grande do Sul",
+      "spellings": [
+       "Federal University of Rio Grande do Sul"
+      ],
+      "people": 1,
+      "verifiedFirstJobs": 1
+     }
+    ],
+    "people": 1,
+    "verifiedFirstJobs": 1,
+    "unresolved": 0,
+    "pending": 0,
+    "notYetCompleted": 0,
+    "firstYear": 1999,
+    "lastYear": 1999,
+    "firstJobTypes": {
+     "tenure-track": 0,
+     "postdoc": 0,
+     "teaching-track": 0,
+     "other-academic": 0,
+     "industry": 0,
+     "government": 0,
+     "nonprofit": 0,
+     "unknown": 1
+    },
+    "topFirstEmployers": [
+     {
+      "employer": "Universidade do Vale do Rio dos Sinos (Unisinos)",
+      "count": 1
+     }
+    ]
+   },
+   "directory": {
+    "universities": [
+     {
+      "id": "federal-university-of-rio-grande-do-sul",
+      "name": "Federal University of Rio Grande do Sul",
+      "spellings": [
+       "Federal University of Rio Grande do Sul"
+      ],
+      "country": null,
+      "departmentCount": 1,
+      "match": "exact"
+     }
+    ],
+    "departments": [
+     {
+      "id": "federal-university-of-rio-grande-do-sul--om-list-federal-university-of-rio-grande-do-sul-reported-doctorate-one-profile-reported-phd-institution",
+      "university": "Federal University of Rio Grande do Sul",
+      "school": null,
+      "department": null,
+      "type": null,
+      "facultyUrl": null,
+      "departmentUrl": null
+     }
+    ]
+   },
+   "employer": {
+    "employers": [
+     {
+      "employerId": "federal-university-of-rio-grande-do-sul",
+      "name": "Federal University of Rio Grande do Sul",
+      "spellings": [
+       "Federal University of Rio Grande do Sul"
+      ],
+      "verifiedFirstJobs": 1
+     }
+    ],
+    "verifiedFirstJobs": 1,
+    "firstCohort": 1997,
+    "lastCohort": 1997,
+    "firstJobTypes": {
+     "tenure-track": 0,
+     "postdoc": 1,
+     "teaching-track": 0,
+     "other-academic": 0,
+     "industry": 0,
+     "government": 0,
+     "nonprofit": 0,
+     "unknown": 0
+    },
+    "sourceInstitutions": [
+     {
+      "institution": "University of Warwick",
+      "count": 1
+     }
+    ],
+    "positions": [
+     {
+      "position": "Post-Doctoral Fellow",
+      "count": 1
+     }
+    ]
+   },
+   "programs": [],
+   "sources": [
+    {
+     "url": "https://omlist.edutool.org/phd/by-year.html",
+     "title": "OM List, PhD graduates by year (people database)"
+    },
+    {
+     "url": "https://www.wikidata.org/wiki/Q766447",
+     "title": "Wikidata item"
+    },
+    {
+     "url": "https://www.operationsacademia.org/universities",
+     "title": "Operations Academia universities directory (universities database)"
+    },
+    {
+     "url": "data/placements.json",
+     "title": "Verified first-job records (people database)"
+    }
+   ],
+   "review": {
+    "matches": [
+     {
+      "source": "directory",
+      "university": "Federal University of Rio Grande do Sul",
+      "match": "exact"
+     },
+     {
+      "source": "employers",
+      "employer": "Federal University of Rio Grande do Sul",
+      "match": "wikidata"
+     }
+    ],
+    "conflicts": []
+   },
+   "addedAt": "2026-10-16T13:49:36Z",
+   "updatedAt": "2026-10-25T22:58:21Z"
+  },
+  {
+   "id": "wd:Q1665121",
+   "wikidata": "Q1665121",
+   "name": "Grenoble Institute of Technology",
+   "aliases": [
+    "Grenoble Institute of Technology",
+    "National Polytechnic Institute of Grenoble"
+   ],
+   "country": "France",
+   "coords": [
+    45.191,
+    5.717
+   ],
+   "logo": "assets/logos/Q1665121.png",
+   "roles": [
+    "phd-institution",
+    "directory-university"
+   ],
+   "people": {
+    "institutions": [
+     {
+      "institutionId": "national-polytechnic-institute-of-grenoble",
+      "name": "National Polytechnic Institute of Grenoble",
+      "spellings": [
+       "National Polytechnic Institute of Grenoble"
+      ],
+      "people": 1,
+      "verifiedFirstJobs": 1
+     }
+    ],
+    "people": 1,
+    "verifiedFirstJobs": 1,
+    "unresolved": 0,
+    "pending": 0,
+    "notYetCompleted": 0,
+    "firstYear": 1986,
+    "lastYear": 1986,
+    "firstJobTypes": {
+     "tenure-track": 0,
+     "postdoc": 1,
+     "teaching-track": 0,
+     "other-academic": 0,
+     "industry": 0,
+     "government": 0,
+     "nonprofit": 0,
+     "unknown": 0
+    },
+    "topFirstEmployers": [
+     {
+      "employer": "University of Toronto",
+      "count": 1
+     }
+    ]
+   },
+   "directory": {
+    "universities": [
+     {
+      "id": "institut-national-polytechnique-de-grenoble-historical",
+      "name": "National Polytechnic Institute of Grenoble",
+      "spellings": [
+       "National Polytechnic Institute of Grenoble"
+      ],
+      "country": null,
+      "departmentCount": 1,
+      "match": "exact"
+     }
+    ],
+    "departments": [
+     {
+      "id": "institut-national-polytechnique-de-grenoble-historical--om-list-inpg-reported-doctorate-one-profile-reported-phd-institution",
+      "university": "National Polytechnic Institute of Grenoble",
+      "school": null,
+      "department": null,
+      "type": null,
+      "facultyUrl": null,
+      "departmentUrl": null
+     }
+    ]
+   },
+   "employer": null,
+   "programs": [],
+   "sources": [
+    {
+     "url": "https://omlist.edutool.org/phd/by-year.html",
+     "title": "OM List, PhD graduates by year (people database)"
+    },
+    {
+     "url": "https://www.wikidata.org/wiki/Q1665121",
+     "title": "Wikidata item"
+    },
+    {
+     "url": "https://www.operationsacademia.org/universities",
+     "title": "Operations Academia universities directory (universities database)"
+    }
+   ],
+   "review": {
+    "matches": [
+     {
+      "source": "directory",
+      "university": "National Polytechnic Institute of Grenoble",
+      "match": "exact"
+     }
+    ],
+    "conflicts": []
+   },
+   "addedAt": "2026-10-18T05:46:46Z",
+   "updatedAt": "2026-10-25T22:58:21Z"
   },
   {
    "id": "wd:Q632558",
@@ -66400,6 +67008,109 @@
    },
    "addedAt": "2026-10-16T13:49:36Z",
    "updatedAt": "2026-10-25T19:22:01Z"
+  },
+  {
+   "id": "wd:Q1132955",
+   "wikidata": "Q1132955",
+   "name": "Lorraine INP",
+   "aliases": [
+    "Lorraine INP",
+    "Institut National Polytechnique de Lorraine"
+   ],
+   "country": "France",
+   "coords": [
+    48.652,
+    6.148
+   ],
+   "logo": "assets/logos/Q1132955.png",
+   "roles": [
+    "phd-institution",
+    "directory-university"
+   ],
+   "people": {
+    "institutions": [
+     {
+      "institutionId": "institut-national-polytechnique-de-lorraine",
+      "name": "Institut National Polytechnique de Lorraine",
+      "spellings": [
+       "Institut National Polytechnique de Lorraine"
+      ],
+      "people": 1,
+      "verifiedFirstJobs": 0
+     }
+    ],
+    "people": 1,
+    "verifiedFirstJobs": 0,
+    "unresolved": 1,
+    "pending": 0,
+    "notYetCompleted": 0,
+    "firstYear": 1990,
+    "lastYear": 1990,
+    "firstJobTypes": {
+     "tenure-track": 0,
+     "postdoc": 0,
+     "teaching-track": 0,
+     "other-academic": 0,
+     "industry": 0,
+     "government": 0,
+     "nonprofit": 0,
+     "unknown": 0
+    },
+    "topFirstEmployers": []
+   },
+   "directory": {
+    "universities": [
+     {
+      "id": "institut-national-polytechnique-de-lorraine-historical",
+      "name": "Institut National Polytechnique de Lorraine",
+      "spellings": [
+       "Institut National Polytechnique de Lorraine"
+      ],
+      "country": null,
+      "departmentCount": 1,
+      "match": "exact"
+     }
+    ],
+    "departments": [
+     {
+      "id": "institut-national-polytechnique-de-lorraine-historical--om-list-inpl-reported-doctorate-one-profile-reported-phd-institution",
+      "university": "Institut National Polytechnique de Lorraine",
+      "school": null,
+      "department": null,
+      "type": null,
+      "facultyUrl": null,
+      "departmentUrl": null
+     }
+    ]
+   },
+   "employer": null,
+   "programs": [],
+   "sources": [
+    {
+     "url": "https://omlist.edutool.org/phd/by-year.html",
+     "title": "OM List, PhD graduates by year (people database)"
+    },
+    {
+     "url": "https://www.wikidata.org/wiki/Q1132955",
+     "title": "Wikidata item"
+    },
+    {
+     "url": "https://www.operationsacademia.org/universities",
+     "title": "Operations Academia universities directory (universities database)"
+    }
+   ],
+   "review": {
+    "matches": [
+     {
+      "source": "directory",
+      "university": "Institut National Polytechnique de Lorraine",
+      "match": "exact"
+     }
+    ],
+    "conflicts": []
+   },
+   "addedAt": "2026-10-16T13:49:36Z",
+   "updatedAt": "2026-10-25T22:58:21Z"
   },
   {
    "id": "wd:Q1434547",
@@ -69760,6 +70471,113 @@
    "updatedAt": "2026-10-25T20:58:16Z"
   },
   {
+   "id": "wd:Q15574",
+   "wikidata": "Q15574",
+   "name": "University of Adelaide",
+   "aliases": [
+    "University of Adelaide"
+   ],
+   "country": "Australia",
+   "coords": [
+    -34.921,
+    138.605
+   ],
+   "logo": "assets/logos/Q15574.png",
+   "roles": [
+    "phd-institution",
+    "directory-university"
+   ],
+   "people": {
+    "institutions": [
+     {
+      "institutionId": "university-of-adelaide",
+      "name": "University of Adelaide",
+      "spellings": [
+       "University of Adelaide"
+      ],
+      "people": 1,
+      "verifiedFirstJobs": 1
+     }
+    ],
+    "people": 1,
+    "verifiedFirstJobs": 1,
+    "unresolved": 0,
+    "pending": 0,
+    "notYetCompleted": 0,
+    "firstYear": 1987,
+    "lastYear": 1987,
+    "firstJobTypes": {
+     "tenure-track": 0,
+     "postdoc": 0,
+     "teaching-track": 0,
+     "other-academic": 0,
+     "industry": 0,
+     "government": 1,
+     "nonprofit": 0,
+     "unknown": 0
+    },
+    "topFirstEmployers": [
+     {
+      "employer": "Ministry of Defence (Mindef), Singapore",
+      "count": 1
+     }
+    ]
+   },
+   "directory": {
+    "universities": [
+     {
+      "id": "the-university-of-adelaide-historical",
+      "name": "University of Adelaide",
+      "spellings": [
+       "University of Adelaide"
+      ],
+      "country": null,
+      "departmentCount": 1,
+      "match": "exact"
+     }
+    ],
+    "departments": [
+     {
+      "id": "the-university-of-adelaide-historical--om-list-university-of-adelaide-reported-doctorate-one-profile-reported-phd-institution",
+      "university": "University of Adelaide",
+      "school": null,
+      "department": null,
+      "type": null,
+      "facultyUrl": null,
+      "departmentUrl": null
+     }
+    ]
+   },
+   "employer": null,
+   "programs": [],
+   "sources": [
+    {
+     "url": "https://omlist.edutool.org/phd/by-year.html",
+     "title": "OM List, PhD graduates by year (people database)"
+    },
+    {
+     "url": "https://www.wikidata.org/wiki/Q15574",
+     "title": "Wikidata item"
+    },
+    {
+     "url": "https://www.operationsacademia.org/universities",
+     "title": "Operations Academia universities directory (universities database)"
+    }
+   ],
+   "review": {
+    "matches": [
+     {
+      "source": "directory",
+      "university": "University of Adelaide",
+      "match": "exact"
+     }
+    ],
+    "conflicts": []
+   },
+   "addedAt": "2026-10-16T13:49:36Z",
+   "updatedAt": "2026-10-25T22:58:21Z"
+  },
+  {
    "id": "wd:Q372608",
    "wikidata": "Q372608",
    "name": "University of Basel",
@@ -71039,6 +71857,114 @@
    },
    "addedAt": "2026-10-16T13:49:36Z",
    "updatedAt": "2026-10-25T22:34:56Z"
+  },
+  {
+   "id": "wd:Q30946111",
+   "wikidata": "Q30946111",
+   "name": "University of Chinese Academy of Social Sciences",
+   "aliases": [
+    "University of Chinese Academy of Social Sciences",
+    "Graduate School of China's Academy of Social Science"
+   ],
+   "country": "People's Republic of China",
+   "coords": [
+    39.739,
+    116.174
+   ],
+   "logo": "assets/logos/Q30946111.png",
+   "roles": [
+    "phd-institution",
+    "directory-university"
+   ],
+   "people": {
+    "institutions": [
+     {
+      "institutionId": "graduate-school-of-china-s-academy-of-social-science",
+      "name": "Graduate School of China's Academy of Social Science",
+      "spellings": [
+       "Graduate School of China's Academy of Social Science"
+      ],
+      "people": 1,
+      "verifiedFirstJobs": 1
+     }
+    ],
+    "people": 1,
+    "verifiedFirstJobs": 1,
+    "unresolved": 0,
+    "pending": 0,
+    "notYetCompleted": 0,
+    "firstYear": 1997,
+    "lastYear": 1997,
+    "firstJobTypes": {
+     "tenure-track": 0,
+     "postdoc": 1,
+     "teaching-track": 0,
+     "other-academic": 0,
+     "industry": 0,
+     "government": 0,
+     "nonprofit": 0,
+     "unknown": 0
+    },
+    "topFirstEmployers": [
+     {
+      "employer": "Peking University (Guanghua School of Management)",
+      "count": 1
+     }
+    ]
+   },
+   "directory": {
+    "universities": [
+     {
+      "id": "graduate-school-chinese-academy-social-sciences-historical",
+      "name": "Graduate School of China's Academy of Social Science",
+      "spellings": [
+       "Graduate School of China's Academy of Social Science"
+      ],
+      "country": null,
+      "departmentCount": 1,
+      "match": "exact"
+     }
+    ],
+    "departments": [
+     {
+      "id": "graduate-school-chinese-academy-social-sciences-historical--om-list-cass-graduate-school-reported-doctorate-one-profile-reported-phd-institution",
+      "university": "Graduate School of China's Academy of Social Science",
+      "school": null,
+      "department": null,
+      "type": null,
+      "facultyUrl": null,
+      "departmentUrl": null
+     }
+    ]
+   },
+   "employer": null,
+   "programs": [],
+   "sources": [
+    {
+     "url": "https://omlist.edutool.org/phd/by-year.html",
+     "title": "OM List, PhD graduates by year (people database)"
+    },
+    {
+     "url": "https://www.wikidata.org/wiki/Q30946111",
+     "title": "Wikidata item"
+    },
+    {
+     "url": "https://www.operationsacademia.org/universities",
+     "title": "Operations Academia universities directory (universities database)"
+    }
+   ],
+   "review": {
+    "matches": [
+     {
+      "source": "directory",
+      "university": "Graduate School of China's Academy of Social Science",
+      "match": "exact"
+     }
+    ],
+    "conflicts": []
+   },
+   "addedAt": "2026-10-16T13:49:36Z",
+   "updatedAt": "2026-10-25T22:58:21Z"
   },
   {
    "id": "wd:Q40025",
@@ -75702,79 +76628,6 @@
    "updatedAt": "2026-10-25T21:39:03Z"
   },
   {
-   "id": "wd:Q17014550",
-   "wikidata": "Q17014550",
-   "name": "Academy of Mathematics and Systems Science",
-   "aliases": [
-    "Academy of Mathematics and Systems Science",
-    "Academy of Mathematics and Systems Science, Chinese Academy of Science"
-   ],
-   "country": "People's Republic of China",
-   "coords": [
-    39.986,
-    116.331
-   ],
-   "logo": "assets/logos/Q17014550.png",
-   "roles": [
-    "phd-institution"
-   ],
-   "people": {
-    "institutions": [
-     {
-      "institutionId": "academy-of-mathematics-and-systems-science-chinese-academy-of-science",
-      "name": "Academy of Mathematics and Systems Science, Chinese Academy of Science",
-      "spellings": [
-       "Academy of Mathematics and Systems Science, Chinese Academy of Science"
-      ],
-      "people": 1,
-      "verifiedFirstJobs": 1
-     }
-    ],
-    "people": 1,
-    "verifiedFirstJobs": 1,
-    "unresolved": 0,
-    "pending": 0,
-    "notYetCompleted": 0,
-    "firstYear": 2011,
-    "lastYear": 2011,
-    "firstJobTypes": {
-     "tenure-track": 0,
-     "postdoc": 1,
-     "teaching-track": 0,
-     "other-academic": 0,
-     "industry": 0,
-     "government": 0,
-     "nonprofit": 0,
-     "unknown": 0
-    },
-    "topFirstEmployers": [
-     {
-      "employer": "Chinese Academy of Sciences",
-      "count": 1
-     }
-    ]
-   },
-   "directory": null,
-   "employer": null,
-   "programs": [],
-   "sources": [
-    {
-     "url": "https://omlist.edutool.org/phd/by-year.html",
-     "title": "OM List, PhD graduates by year (people database)"
-    },
-    {
-     "url": "https://www.wikidata.org/wiki/Q17014550",
-     "title": "Wikidata item"
-    }
-   ],
-   "review": {
-    "matches": [],
-    "conflicts": []
-   },
-   "addedAt": "2026-10-16T13:49:36Z",
-   "updatedAt": "2026-10-20T08:28:39Z"
-  },
-  {
    "id": "wd:Q737332",
    "wikidata": "Q737332",
    "name": "Ben-Gurion University of the Negev",
@@ -76506,141 +77359,6 @@
    "updatedAt": "2026-10-20T08:28:39Z"
   },
   {
-   "id": "wd:Q273626",
-   "wikidata": "Q273626",
-   "name": "École polytechnique",
-   "aliases": [
-    "École polytechnique",
-    "Ecole Polytechnique"
-   ],
-   "country": "France",
-   "coords": [
-    48.712,
-    2.21
-   ],
-   "logo": "assets/logos/Q273626.png",
-   "roles": [
-    "phd-institution"
-   ],
-   "people": {
-    "institutions": [
-     {
-      "institutionId": "ecole-polytechnique",
-      "name": "Ecole Polytechnique",
-      "spellings": [
-       "Ecole Polytechnique"
-      ],
-      "people": 1,
-      "verifiedFirstJobs": 0
-     }
-    ],
-    "people": 1,
-    "verifiedFirstJobs": 0,
-    "unresolved": 1,
-    "pending": 0,
-    "notYetCompleted": 0,
-    "firstYear": 1999,
-    "lastYear": 1999,
-    "firstJobTypes": {
-     "tenure-track": 0,
-     "postdoc": 0,
-     "teaching-track": 0,
-     "other-academic": 0,
-     "industry": 0,
-     "government": 0,
-     "nonprofit": 0,
-     "unknown": 0
-    },
-    "topFirstEmployers": []
-   },
-   "directory": null,
-   "employer": null,
-   "programs": [],
-   "sources": [
-    {
-     "url": "https://omlist.edutool.org/phd/by-year.html",
-     "title": "OM List, PhD graduates by year (people database)"
-    },
-    {
-     "url": "https://www.wikidata.org/wiki/Q273626",
-     "title": "Wikidata item"
-    }
-   ],
-   "review": {
-    "matches": [],
-    "conflicts": []
-   },
-   "addedAt": "2026-10-18T05:46:46Z",
-   "updatedAt": "2026-10-20T08:28:39Z"
-  },
-  {
-   "id": "wd:Q1275372",
-   "wikidata": "Q1275372",
-   "name": "ENSAE Paris",
-   "aliases": [
-    "ENSAE Paris"
-   ],
-   "country": "France",
-   "coords": [
-    48.711,
-    2.208
-   ],
-   "logo": "assets/logos/Q1275372.png",
-   "roles": [
-    "phd-institution"
-   ],
-   "people": {
-    "institutions": [
-     {
-      "institutionId": "ensae-paris",
-      "name": "ENSAE Paris",
-      "spellings": [
-       "ENSAE Paris"
-      ],
-      "people": 1,
-      "verifiedFirstJobs": 0
-     }
-    ],
-    "people": 1,
-    "verifiedFirstJobs": 0,
-    "unresolved": 1,
-    "pending": 0,
-    "notYetCompleted": 0,
-    "firstYear": 2023,
-    "lastYear": 2023,
-    "firstJobTypes": {
-     "tenure-track": 0,
-     "postdoc": 0,
-     "teaching-track": 0,
-     "other-academic": 0,
-     "industry": 0,
-     "government": 0,
-     "nonprofit": 0,
-     "unknown": 0
-    },
-    "topFirstEmployers": []
-   },
-   "directory": null,
-   "employer": null,
-   "programs": [],
-   "sources": [
-    {
-     "url": "https://omlist.edutool.org/phd/by-year.html",
-     "title": "OM List, PhD graduates by year (people database)"
-    },
-    {
-     "url": "https://www.wikidata.org/wiki/Q1275372",
-     "title": "Wikidata item"
-    }
-   ],
-   "review": {
-    "matches": [],
-    "conflicts": []
-   },
-   "addedAt": "2026-10-16T13:49:36Z",
-   "updatedAt": "2026-10-20T08:28:39Z"
-  },
-  {
    "id": "wd:Q2322256",
    "wikidata": "Q2322256",
    "name": "Federal University of Pernambuco",
@@ -76705,125 +77423,6 @@
     "conflicts": []
    },
    "addedAt": "2026-10-17T05:53:44Z",
-   "updatedAt": "2026-10-20T08:28:39Z"
-  },
-  {
-   "id": "wd:Q766447",
-   "wikidata": "Q766447",
-   "name": "Federal University of Rio Grande do Sul",
-   "aliases": [
-    "Federal University of Rio Grande do Sul"
-   ],
-   "country": "Brazil",
-   "coords": [
-    -30.034,
-    -51.219
-   ],
-   "logo": "assets/logos/Q766447.png",
-   "roles": [
-    "phd-institution",
-    "first-employer"
-   ],
-   "people": {
-    "institutions": [
-     {
-      "institutionId": "federal-university-of-rio-grande-do-sul",
-      "name": "Federal University of Rio Grande do Sul",
-      "spellings": [
-       "Federal University of Rio Grande do Sul"
-      ],
-      "people": 1,
-      "verifiedFirstJobs": 1
-     }
-    ],
-    "people": 1,
-    "verifiedFirstJobs": 1,
-    "unresolved": 0,
-    "pending": 0,
-    "notYetCompleted": 0,
-    "firstYear": 1999,
-    "lastYear": 1999,
-    "firstJobTypes": {
-     "tenure-track": 0,
-     "postdoc": 0,
-     "teaching-track": 0,
-     "other-academic": 0,
-     "industry": 0,
-     "government": 0,
-     "nonprofit": 0,
-     "unknown": 1
-    },
-    "topFirstEmployers": [
-     {
-      "employer": "Universidade do Vale do Rio dos Sinos (Unisinos)",
-      "count": 1
-     }
-    ]
-   },
-   "directory": null,
-   "employer": {
-    "employers": [
-     {
-      "employerId": "federal-university-of-rio-grande-do-sul",
-      "name": "Federal University of Rio Grande do Sul",
-      "spellings": [
-       "Federal University of Rio Grande do Sul"
-      ],
-      "verifiedFirstJobs": 1
-     }
-    ],
-    "verifiedFirstJobs": 1,
-    "firstCohort": 1997,
-    "lastCohort": 1997,
-    "firstJobTypes": {
-     "tenure-track": 0,
-     "postdoc": 1,
-     "teaching-track": 0,
-     "other-academic": 0,
-     "industry": 0,
-     "government": 0,
-     "nonprofit": 0,
-     "unknown": 0
-    },
-    "sourceInstitutions": [
-     {
-      "institution": "University of Warwick",
-      "count": 1
-     }
-    ],
-    "positions": [
-     {
-      "position": "Post-Doctoral Fellow",
-      "count": 1
-     }
-    ]
-   },
-   "programs": [],
-   "sources": [
-    {
-     "url": "https://omlist.edutool.org/phd/by-year.html",
-     "title": "OM List, PhD graduates by year (people database)"
-    },
-    {
-     "url": "https://www.wikidata.org/wiki/Q766447",
-     "title": "Wikidata item"
-    },
-    {
-     "url": "data/placements.json",
-     "title": "Verified first-job records (people database)"
-    }
-   ],
-   "review": {
-    "matches": [
-     {
-      "source": "employers",
-      "employer": "Federal University of Rio Grande do Sul",
-      "match": "wikidata"
-     }
-    ],
-    "conflicts": []
-   },
-   "addedAt": "2026-10-16T13:49:36Z",
    "updatedAt": "2026-10-20T08:28:39Z"
   },
   {
@@ -76896,79 +77495,6 @@
     "conflicts": []
    },
    "addedAt": "2026-10-16T13:49:36Z",
-   "updatedAt": "2026-10-20T08:28:39Z"
-  },
-  {
-   "id": "wd:Q1665121",
-   "wikidata": "Q1665121",
-   "name": "Grenoble Institute of Technology",
-   "aliases": [
-    "Grenoble Institute of Technology",
-    "National Polytechnic Institute of Grenoble"
-   ],
-   "country": "France",
-   "coords": [
-    45.191,
-    5.717
-   ],
-   "logo": "assets/logos/Q1665121.png",
-   "roles": [
-    "phd-institution"
-   ],
-   "people": {
-    "institutions": [
-     {
-      "institutionId": "national-polytechnic-institute-of-grenoble",
-      "name": "National Polytechnic Institute of Grenoble",
-      "spellings": [
-       "National Polytechnic Institute of Grenoble"
-      ],
-      "people": 1,
-      "verifiedFirstJobs": 1
-     }
-    ],
-    "people": 1,
-    "verifiedFirstJobs": 1,
-    "unresolved": 0,
-    "pending": 0,
-    "notYetCompleted": 0,
-    "firstYear": 1986,
-    "lastYear": 1986,
-    "firstJobTypes": {
-     "tenure-track": 0,
-     "postdoc": 1,
-     "teaching-track": 0,
-     "other-academic": 0,
-     "industry": 0,
-     "government": 0,
-     "nonprofit": 0,
-     "unknown": 0
-    },
-    "topFirstEmployers": [
-     {
-      "employer": "University of Toronto",
-      "count": 1
-     }
-    ]
-   },
-   "directory": null,
-   "employer": null,
-   "programs": [],
-   "sources": [
-    {
-     "url": "https://omlist.edutool.org/phd/by-year.html",
-     "title": "OM List, PhD graduates by year (people database)"
-    },
-    {
-     "url": "https://www.wikidata.org/wiki/Q1665121",
-     "title": "Wikidata item"
-    }
-   ],
-   "review": {
-    "matches": [],
-    "conflicts": []
-   },
-   "addedAt": "2026-10-18T05:46:46Z",
    "updatedAt": "2026-10-20T08:28:39Z"
   },
   {
@@ -77506,74 +78032,6 @@
     "conflicts": []
    },
    "addedAt": "2026-10-17T06:24:04Z",
-   "updatedAt": "2026-10-20T08:28:39Z"
-  },
-  {
-   "id": "wd:Q1132955",
-   "wikidata": "Q1132955",
-   "name": "Lorraine INP",
-   "aliases": [
-    "Lorraine INP",
-    "Institut National Polytechnique de Lorraine"
-   ],
-   "country": "France",
-   "coords": [
-    48.652,
-    6.148
-   ],
-   "logo": "assets/logos/Q1132955.png",
-   "roles": [
-    "phd-institution"
-   ],
-   "people": {
-    "institutions": [
-     {
-      "institutionId": "institut-national-polytechnique-de-lorraine",
-      "name": "Institut National Polytechnique de Lorraine",
-      "spellings": [
-       "Institut National Polytechnique de Lorraine"
-      ],
-      "people": 1,
-      "verifiedFirstJobs": 0
-     }
-    ],
-    "people": 1,
-    "verifiedFirstJobs": 0,
-    "unresolved": 1,
-    "pending": 0,
-    "notYetCompleted": 0,
-    "firstYear": 1990,
-    "lastYear": 1990,
-    "firstJobTypes": {
-     "tenure-track": 0,
-     "postdoc": 0,
-     "teaching-track": 0,
-     "other-academic": 0,
-     "industry": 0,
-     "government": 0,
-     "nonprofit": 0,
-     "unknown": 0
-    },
-    "topFirstEmployers": []
-   },
-   "directory": null,
-   "employer": null,
-   "programs": [],
-   "sources": [
-    {
-     "url": "https://omlist.edutool.org/phd/by-year.html",
-     "title": "OM List, PhD graduates by year (people database)"
-    },
-    {
-     "url": "https://www.wikidata.org/wiki/Q1132955",
-     "title": "Wikidata item"
-    }
-   ],
-   "review": {
-    "matches": [],
-    "conflicts": []
-   },
-   "addedAt": "2026-10-16T13:49:36Z",
    "updatedAt": "2026-10-20T08:28:39Z"
   },
   {
@@ -78612,78 +79070,6 @@
    "updatedAt": "2026-10-20T08:28:39Z"
   },
   {
-   "id": "wd:Q15574",
-   "wikidata": "Q15574",
-   "name": "University of Adelaide",
-   "aliases": [
-    "University of Adelaide"
-   ],
-   "country": "Australia",
-   "coords": [
-    -34.921,
-    138.605
-   ],
-   "logo": "assets/logos/Q15574.png",
-   "roles": [
-    "phd-institution"
-   ],
-   "people": {
-    "institutions": [
-     {
-      "institutionId": "university-of-adelaide",
-      "name": "University of Adelaide",
-      "spellings": [
-       "University of Adelaide"
-      ],
-      "people": 1,
-      "verifiedFirstJobs": 1
-     }
-    ],
-    "people": 1,
-    "verifiedFirstJobs": 1,
-    "unresolved": 0,
-    "pending": 0,
-    "notYetCompleted": 0,
-    "firstYear": 1987,
-    "lastYear": 1987,
-    "firstJobTypes": {
-     "tenure-track": 0,
-     "postdoc": 0,
-     "teaching-track": 0,
-     "other-academic": 0,
-     "industry": 0,
-     "government": 1,
-     "nonprofit": 0,
-     "unknown": 0
-    },
-    "topFirstEmployers": [
-     {
-      "employer": "Ministry of Defence (Mindef), Singapore",
-      "count": 1
-     }
-    ]
-   },
-   "directory": null,
-   "employer": null,
-   "programs": [],
-   "sources": [
-    {
-     "url": "https://omlist.edutool.org/phd/by-year.html",
-     "title": "OM List, PhD graduates by year (people database)"
-    },
-    {
-     "url": "https://www.wikidata.org/wiki/Q15574",
-     "title": "Wikidata item"
-    }
-   ],
-   "review": {
-    "matches": [],
-    "conflicts": []
-   },
-   "addedAt": "2026-10-16T13:49:36Z",
-   "updatedAt": "2026-10-20T08:28:39Z"
-  },
-  {
    "id": "wd:Q13338",
    "wikidata": "Q13338",
    "name": "University of Bordeaux 1",
@@ -78822,79 +79208,6 @@
     "conflicts": []
    },
    "addedAt": "2026-10-17T13:34:53Z",
-   "updatedAt": "2026-10-20T08:28:39Z"
-  },
-  {
-   "id": "wd:Q30946111",
-   "wikidata": "Q30946111",
-   "name": "University of Chinese Academy of Social Sciences",
-   "aliases": [
-    "University of Chinese Academy of Social Sciences",
-    "Graduate School of China's Academy of Social Science"
-   ],
-   "country": "People's Republic of China",
-   "coords": [
-    39.739,
-    116.174
-   ],
-   "logo": "assets/logos/Q30946111.png",
-   "roles": [
-    "phd-institution"
-   ],
-   "people": {
-    "institutions": [
-     {
-      "institutionId": "graduate-school-of-china-s-academy-of-social-science",
-      "name": "Graduate School of China's Academy of Social Science",
-      "spellings": [
-       "Graduate School of China's Academy of Social Science"
-      ],
-      "people": 1,
-      "verifiedFirstJobs": 1
-     }
-    ],
-    "people": 1,
-    "verifiedFirstJobs": 1,
-    "unresolved": 0,
-    "pending": 0,
-    "notYetCompleted": 0,
-    "firstYear": 1997,
-    "lastYear": 1997,
-    "firstJobTypes": {
-     "tenure-track": 0,
-     "postdoc": 1,
-     "teaching-track": 0,
-     "other-academic": 0,
-     "industry": 0,
-     "government": 0,
-     "nonprofit": 0,
-     "unknown": 0
-    },
-    "topFirstEmployers": [
-     {
-      "employer": "Peking University (Guanghua School of Management)",
-      "count": 1
-     }
-    ]
-   },
-   "directory": null,
-   "employer": null,
-   "programs": [],
-   "sources": [
-    {
-     "url": "https://omlist.edutool.org/phd/by-year.html",
-     "title": "OM List, PhD graduates by year (people database)"
-    },
-    {
-     "url": "https://www.wikidata.org/wiki/Q30946111",
-     "title": "Wikidata item"
-    }
-   ],
-   "review": {
-    "matches": [],
-    "conflicts": []
-   },
-   "addedAt": "2026-10-16T13:49:36Z",
    "updatedAt": "2026-10-20T08:28:39Z"
   },
   {
@@ -94363,6 +94676,110 @@
    },
    "addedAt": "2026-10-16T13:49:36Z",
    "updatedAt": "2026-10-16T13:49:36Z"
+  },
+  {
+   "id": "name:centralesupelec",
+   "wikidata": null,
+   "name": "CentraleSupélec",
+   "aliases": [
+    "CentraleSupélec"
+   ],
+   "country": "France",
+   "coords": [
+    48.71,
+    2.167
+   ],
+   "logo": null,
+   "roles": [
+    "directory-university",
+    "first-employer"
+   ],
+   "people": null,
+   "directory": {
+    "universities": [
+     {
+      "id": "centralesupelec",
+      "name": "CentraleSupélec",
+      "spellings": [
+       "CentraleSupélec"
+      ],
+      "country": null,
+      "departmentCount": 1,
+      "match": "new"
+     }
+    ],
+    "departments": [
+     {
+      "id": "centralesupelec--om-list-centralesupelec-reported-doctorate-one-profile-reported-phd-institution",
+      "university": "CentraleSupélec",
+      "school": null,
+      "department": null,
+      "type": null,
+      "facultyUrl": null,
+      "departmentUrl": null
+     }
+    ]
+   },
+   "employer": {
+    "employers": [
+     {
+      "employerId": "centralesupelec",
+      "name": "CentraleSupélec",
+      "spellings": [
+       "CentraleSupélec"
+      ],
+      "verifiedFirstJobs": 1
+     }
+    ],
+    "verifiedFirstJobs": 1,
+    "firstCohort": 2014,
+    "lastCohort": 2014,
+    "firstJobTypes": {
+     "tenure-track": 0,
+     "postdoc": 1,
+     "teaching-track": 0,
+     "other-academic": 0,
+     "industry": 0,
+     "government": 0,
+     "nonprofit": 0,
+     "unknown": 0
+    },
+    "sourceInstitutions": [
+     {
+      "institution": "University of Bordeaux",
+      "count": 1
+     }
+    ],
+    "positions": [
+     {
+      "position": "Postdoctoral Researcher, Industrial Engineering Lab",
+      "count": 1
+     }
+    ]
+   },
+   "programs": [],
+   "sources": [
+    {
+     "url": "https://www.operationsacademia.org/universities",
+     "title": "Operations Academia universities directory (universities database)"
+    },
+    {
+     "url": "data/placements.json",
+     "title": "Verified first-job records (people database)"
+    }
+   ],
+   "review": {
+    "matches": [
+     {
+      "source": "employers",
+      "employer": "CentraleSupélec",
+      "match": "exact"
+     }
+    ],
+    "conflicts": []
+   },
+   "addedAt": "2026-10-25T22:58:21Z",
+   "updatedAt": "2026-10-25T22:58:21Z"
   },
   {
    "id": "wd:Q1805085",
@@ -113242,75 +113659,6 @@
     "conflicts": []
    },
    "addedAt": "2026-10-18T07:09:21Z",
-   "updatedAt": "2026-10-20T08:28:39Z"
-  },
-  {
-   "id": "wd:Q19203245",
-   "wikidata": "Q19203245",
-   "name": "CentraleSupélec",
-   "aliases": [
-    "CentraleSupélec"
-   ],
-   "country": "France",
-   "coords": [
-    48.71,
-    2.167
-   ],
-   "logo": null,
-   "roles": [
-    "first-employer"
-   ],
-   "people": null,
-   "directory": null,
-   "employer": {
-    "employers": [
-     {
-      "employerId": "centralesupelec",
-      "name": "CentraleSupélec",
-      "spellings": [
-       "CentraleSupélec"
-      ],
-      "verifiedFirstJobs": 1
-     }
-    ],
-    "verifiedFirstJobs": 1,
-    "firstCohort": 2014,
-    "lastCohort": 2014,
-    "firstJobTypes": {
-     "tenure-track": 0,
-     "postdoc": 1,
-     "teaching-track": 0,
-     "other-academic": 0,
-     "industry": 0,
-     "government": 0,
-     "nonprofit": 0,
-     "unknown": 0
-    },
-    "sourceInstitutions": [
-     {
-      "institution": "University of Bordeaux",
-      "count": 1
-     }
-    ],
-    "positions": [
-     {
-      "position": "Postdoctoral Researcher, Industrial Engineering Lab",
-      "count": 1
-     }
-    ]
-   },
-   "programs": [],
-   "sources": [
-    {
-     "url": "data/placements.json",
-     "title": "Verified first-job records (people database)"
-    }
-   ],
-   "review": {
-    "matches": [],
-    "conflicts": []
-   },
-   "addedAt": "2026-10-16T13:49:36Z",
    "updatedAt": "2026-10-20T08:28:39Z"
   },
   {
