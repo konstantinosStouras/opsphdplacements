@@ -5,10 +5,10 @@
   "totalOmListFaculty": 2149,
   "facultyWithoutNamedPhdInstitution": 24,
   "distinctReportedInstitutionLabels": 369,
-  "rankedInstitutionLeads": 362,
+  "rankedInstitutionLeads": 355,
   "matchedLeads": 337,
-  "unresolvedLeads": 25,
-  "withVerifiedCurrentRoutes": 222,
+  "unresolvedLeads": 18,
+  "withVerifiedCurrentRoutes": 224,
   "withCompletedCurrentBranchScope": 180,
   "records": [
     {
@@ -19595,6 +19595,93 @@
       "nextStep": "Current scoped doctoral inventory checked; retain evidence and historical limitations"
     },
     {
+      "id": "aix-marseille-universite",
+      "name": "Aix Marseille Université",
+      "sourceUniversityIds": [
+        "aix-marseille-universite"
+      ],
+      "candidateUniversityIds": [
+        "aix-marseille-universite"
+      ],
+      "identityMatch": "accepted university/entity name",
+      "reportedFacultyCount": 3,
+      "reportedNames": [
+        "Aix Marseille Université",
+        "University of Aix-Marseille II"
+      ],
+      "facultyIds": [
+        "omlist-dcb4e3672985176d",
+        "omlist-ecc8113a5a7356f3",
+        "omlist-029b779bba9102d7"
+      ],
+      "sourceUrls": [],
+      "owners": [
+        "integrator"
+      ],
+      "doctoralObservations": [
+        {
+          "status": "partial",
+          "checkedAt": "2026-10-25",
+          "programmeIds": [],
+          "branches": [
+            {
+              "branch": "business",
+              "reviewState": "partial",
+              "conclusion": "Opened official Economics and Management doctoral-school and separate public-management Doctorat en Sciences de Gestion pages. Both show broad management/economics awards without an explicit Operations, Management Science or Industrial Engineering title/specialization. Other host research centers and IAE doctoral routes have not been fully screened.",
+              "sourceUrls": [
+                "https://feg.univ-amu.fr/fr/formation/doctorat-sciences-economiques-sciences-de-gestion",
+                "https://impgt.univ-amu.fr/fr/formations/doctorat-en-sciences-de-gestion"
+              ]
+            },
+            {
+              "branch": "engineering",
+              "reviewState": "partial",
+              "conclusion": "Opened Faculty of Sciences doctorate school inventory and the full ED 353 Sciences pour l'Ingénieur page. ED 353 explicitly names mechanics, physics, micro/nanoelectronics and eight listed themes, with no Industrial Engineering title. Mathematics/IT and other university doctoral schools are not fully adjudicated, so this is not a university-wide negative.",
+              "sourceUrls": [
+                "https://sciences.univ-amu.fr/fr/formation/doctorats",
+                "https://ecole-doctorale-353.univ-amu.fr/"
+              ]
+            }
+          ],
+          "sources": [
+            {
+              "url": "https://feg.univ-amu.fr/fr/formation/doctorat-sciences-economiques-sciences-de-gestion",
+              "checkedAt": "2026-10-25",
+              "outcome": "read",
+              "note": "Opened full broad economics/management doctoral-school page; no qualifying named specialization on page."
+            },
+            {
+              "url": "https://impgt.univ-amu.fr/fr/formations/doctorat-en-sciences-de-gestion",
+              "checkedAt": "2026-10-25",
+              "outcome": "read",
+              "note": "Opened full broad Doctorat en Sciences de Gestion page; not a Management Science degree title."
+            },
+            {
+              "url": "https://sciences.univ-amu.fr/fr/formation/doctorats",
+              "checkedAt": "2026-10-25",
+              "outcome": "read",
+              "note": "Opened Faculty of Sciences doctoral-school inventory, including Mathematics/IT and engineering ED 353."
+            },
+            {
+              "url": "https://ecole-doctorale-353.univ-amu.fr/",
+              "checkedAt": "2026-10-25",
+              "outcome": "read",
+              "note": "Opened full ED 353 page, exact doctoral-school title and eight named research themes; no Industrial Engineering named title."
+            }
+          ],
+          "limitations": [
+            "Do not translate French generic sciences de gestion as formal Management Science; title rule not met by these pages.",
+            "Business-host and engineering doctoral inventories remain incomplete; no negative conclusion.",
+            "Two OM List reported doctorate institution labels remain individual discovery leads only."
+          ],
+          "coverageComplete": false
+        }
+      ],
+      "verifiedCurrentProgrammeIds": [],
+      "branchCoverageComplete": false,
+      "nextStep": "Verify official current relevant doctoral routes across business and engineering; record branch gaps"
+    },
+    {
       "id": "bilkent-university",
       "name": "Bilkent University",
       "sourceUniversityIds": [
@@ -20416,6 +20503,78 @@
       "verifiedCurrentProgrammeIds": [
         "indian-institute-of-management-calcutta--management-phd-operations-management"
       ],
+      "branchCoverageComplete": false,
+      "nextStep": "Verify official current relevant doctoral routes across business and engineering; record branch gaps"
+    },
+    {
+      "id": "mohammed-v-university-in-rabat",
+      "name": "Mohammed V University in Rabat",
+      "sourceUniversityIds": [
+        "mohammed-v-university-in-rabat"
+      ],
+      "candidateUniversityIds": [
+        "mohammed-v-university-in-rabat"
+      ],
+      "identityMatch": "accepted university/entity name",
+      "reportedFacultyCount": 3,
+      "reportedNames": [
+        "Mohammed V University",
+        "Mohammadia School of Engineers"
+      ],
+      "facultyIds": [
+        "omlist-dafbd85d5f83e150",
+        "omlist-28f2c21330ea3b13",
+        "omlist-01900acc56f144ef"
+      ],
+      "sourceUrls": [],
+      "owners": [
+        "integrator"
+      ],
+      "doctoralObservations": [
+        {
+          "status": "verified",
+          "checkedAt": "2026-10-25",
+          "programmeIds": [
+            "mohammed-v-university-in-rabat--engineering-sciences-doctorate-industrial-engineering-logistics-specialty"
+          ],
+          "branches": [
+            {
+              "branch": "business",
+              "reviewState": "unreviewed",
+              "conclusion": "Relevant business doctoral titles not inventoried.",
+              "sourceUrls": []
+            },
+            {
+              "branch": "engineering",
+              "reviewState": "partial",
+              "conclusion": "2025 ENSIAS official thesis-defense notice establishes a qualifying named Industrial Engineering specialty; current 2026–27 doctoral offerings and other technical schools not inventoried.",
+              "sourceUrls": [
+                "https://ensias.um5.ac.ma/sites/ensias.um5.ac.ma/files/Avis_Soutenance_These_Doctorat_Khalil%20ABBAL_17_7_2025.pdf"
+              ]
+            }
+          ],
+          "sources": [
+            {
+              "url": "https://ensias.um5.ac.ma/sites/ensias.um5.ac.ma/files/Avis_Soutenance_These_Doctorat_Khalil%20ABBAL_17_7_2025.pdf",
+              "checkedAt": "2026-10-25",
+              "outcome": "read",
+              "note": "Full two-page ENSIAS official thesis-defense notice; exact doctorate and IE specialty wording."
+            },
+            {
+              "url": "https://cedoc.um5.ac.ma/",
+              "checkedAt": "2026-10-25",
+              "outcome": "read",
+              "note": "Official central doctoral center names university and 2025–26 doctorate pre-registration."
+            }
+          ],
+          "limitations": [
+            "Exact 2026–27 named-specialty admission status unresolved; this proposal should not count as verified active current route until current official intake evidence is read.",
+            "Broader business and technical branch inventories incomplete."
+          ],
+          "coverageComplete": false
+        }
+      ],
+      "verifiedCurrentProgrammeIds": [],
       "branchCoverageComplete": false,
       "nextStep": "Verify official current relevant doctoral routes across business and engineering; record branch gaps"
     },
@@ -21975,6 +22134,93 @@
       "nextStep": "Current scoped doctoral inventory checked; retain evidence and historical limitations"
     },
     {
+      "id": "university-of-bordeaux",
+      "name": "Université de Bordeaux",
+      "sourceUniversityIds": [
+        "university-of-bordeaux"
+      ],
+      "candidateUniversityIds": [
+        "university-of-bordeaux"
+      ],
+      "identityMatch": "accepted university/entity name",
+      "reportedFacultyCount": 3,
+      "reportedNames": [
+        "University of Bordeaux IV",
+        "University of Bordeaux",
+        "Université Bordeaux I"
+      ],
+      "facultyIds": [
+        "omlist-4f0708f5fe3627ee",
+        "omlist-225b1dae6871b2b2",
+        "omlist-e400946c5146c079"
+      ],
+      "sourceUrls": [],
+      "owners": [
+        "integrator"
+      ],
+      "doctoralObservations": [
+        {
+          "status": "partial",
+          "checkedAt": "2026-10-25",
+          "programmeIds": [],
+          "branches": [
+            {
+              "branch": "business",
+              "reviewState": "checked",
+              "conclusion": "Fully opened current EES doctoral-school page lists Sciences économiques, Sciences de gestion, Démographie and agronomy options of those three. Broad Sciences de gestion is not quantitative Management Science, and no title-matching business doctoral specialty or named department is in this read inventory.",
+              "sourceUrls": [
+                "https://doctorat.u-bordeaux.fr/avant-le-doctorat/les-ecoles-doctorales/EES"
+              ]
+            },
+            {
+              "branch": "engineering",
+              "reviewState": "partial",
+              "conclusion": "The fully opened central university doctoral page confirms engineering and mathematics/informatics doctoral schools, but their detailed current pages timed out on direct open. No negative claim about their formal specialties or named areas is made.",
+              "sourceUrls": [
+                "https://www.u-bordeaux.fr/formation/candidatures-et-inscriptions/candidater-luniversite/doctorantes-et-doctorants",
+                "https://doctorat.u-bordeaux.fr/avant-le-doctorat/les-ecoles-doctorales/MI",
+                "https://doctorat.u-bordeaux.fr/avant-le-doctorat/les-ecoles-doctorales/SPI"
+              ]
+            }
+          ],
+          "sources": [
+            {
+              "url": "https://www.u-bordeaux.fr/formation/candidatures-et-inscriptions/candidater-luniversite/doctorantes-et-doctorants",
+              "checkedAt": "2026-10-25",
+              "outcome": "read",
+              "note": "Full current official university doctoral landing page, including current doctoral-school structure."
+            },
+            {
+              "url": "https://doctorat.u-bordeaux.fr/avant-le-doctorat/les-ecoles-doctorales/EES",
+              "checkedAt": "2026-10-25",
+              "outcome": "read",
+              "note": "Full current EES doctoral school specialties and research-unit list."
+            },
+            {
+              "url": "https://doctorat.u-bordeaux.fr/avant-le-doctorat/les-ecoles-doctorales/MI",
+              "checkedAt": "2026-10-25",
+              "outcome": "blocked",
+              "note": "Repeated direct opens timed out; search extracts not used as verification."
+            },
+            {
+              "url": "https://doctorat.u-bordeaux.fr/avant-le-doctorat/les-ecoles-doctorales/SPI",
+              "checkedAt": "2026-10-25",
+              "outcome": "blocked",
+              "note": "Repeated direct opens timed out; search extracts not used as verification."
+            }
+          ],
+          "limitations": [
+            "No qualifying current route claimed pending direct read of plausible formal mathematics/engineering doctoral specialties and named areas.",
+            "Historical Bordeaux I identity is documented separately in continuation-254; no individual 2014 degree conclusion follows from this current inventory."
+          ],
+          "coverageComplete": false
+        }
+      ],
+      "verifiedCurrentProgrammeIds": [],
+      "branchCoverageComplete": false,
+      "nextStep": "Verify official current relevant doctoral routes across business and engineering; record branch gaps"
+    },
+    {
       "id": "universite-laval",
       "name": "Université Laval",
       "sourceUniversityIds": [
@@ -23411,8 +23657,82 @@
       "owners": [
         "integrator"
       ],
-      "doctoralObservations": [],
-      "verifiedCurrentProgrammeIds": [],
+      "doctoralObservations": [
+        {
+          "status": "verified",
+          "checkedAt": "2026-10-25",
+          "programmeIds": [
+            "zhejiang-university--management-science-engineering-doctorate",
+            "zhejiang-university--mathematics-operations-research-control-doctorate"
+          ],
+          "branches": [
+            {
+              "branch": "business",
+              "reviewState": "partial",
+              "conclusion": "Full international 2026 doctoral subject menus read, MSE route verified under actual School of Management. Current domestic doctoral inventory and departmental/named field menus beyond these intake subjects remain unreviewed; no further route assigned.",
+              "sourceUrls": [
+                "https://iczu.zju.edu.cn/admissions/bsyjs_68793/list.htm",
+                "https://iczu.zju.edu.cn/_upload/article/files/ee/aa/610e615a4d6987b200bfa2970f49/73933b2c-2fb8-4eea-a67c-59822f99672f.pdf",
+                "https://iczu.zju.edu.cn/_upload/article/files/ee/aa/610e615a4d6987b200bfa2970f49/e8977482-aa04-48d1-9d7f-faefd04e7cc8.pdf"
+              ]
+            },
+            {
+              "branch": "engineering",
+              "reviewState": "partial",
+              "conclusion": "Complete international 2026 technical doctoral subject menus read. Mechanical, control, computing and other generic technical awards not classified as OR/IE from methods. Domestic doctoral specializations and actual qualifying current technical hosts still require scope review.",
+              "sourceUrls": [
+                "https://iczu.zju.edu.cn/_upload/article/files/ee/aa/610e615a4d6987b200bfa2970f49/73933b2c-2fb8-4eea-a67c-59822f99672f.pdf",
+                "https://iczu.zju.edu.cn/_upload/article/files/ee/aa/610e615a4d6987b200bfa2970f49/e8977482-aa04-48d1-9d7f-faefd04e7cc8.pdf"
+              ]
+            },
+            {
+              "branch": "mathematics",
+              "reviewState": "partial",
+              "conclusion": "Actual 2026 international doctoral Mathematics menu explicitly names Operations Research and Control; route qualification directly evidenced. Full current domestic Mathematics inventory/host follow-up remains incomplete and old refused school endpoint not retried.",
+              "sourceUrls": [
+                "https://iczu.zju.edu.cn/_upload/article/files/ee/aa/610e615a4d6987b200bfa2970f49/73933b2c-2fb8-4eea-a67c-59822f99672f.pdf",
+                "https://iczu.zju.edu.cn/_upload/article/files/ee/aa/610e615a4d6987b200bfa2970f49/e8977482-aa04-48d1-9d7f-faefd04e7cc8.pdf"
+              ]
+            }
+          ],
+          "sources": [
+            {
+              "url": "https://iczu.zju.edu.cn/admissions/bsyjs_68793/list.htm",
+              "checkedAt": "2026-10-25",
+              "outcome": "read",
+              "note": "Full 2026 international doctoral admissions body read, doctoral degree awarded on meeting university requirements, with actual linked Chinese/English teaching-language doctoral catalogues."
+            },
+            {
+              "url": "https://iczu.zju.edu.cn/_upload/article/files/ee/aa/610e615a4d6987b200bfa2970f49/73933b2c-2fb8-4eea-a67c-59822f99672f.pdf",
+              "checkedAt": "2026-10-25",
+              "outcome": "read",
+              "note": "Complete actual 13-page 2026 Chinese-taught international doctoral subject catalogue read across opened excerpts. Management Science and Engineering under School of Management; Mathematics expressly includes Operations Research and Control under School of Mathematical Sciences. Full technical and other subject menus read. International-applicant inventory only, not all domestic doctoral fields."
+            },
+            {
+              "url": "https://iczu.zju.edu.cn/_upload/article/files/ee/aa/610e615a4d6987b200bfa2970f49/e8977482-aa04-48d1-9d7f-faefd04e7cc8.pdf",
+              "checkedAt": "2026-10-25",
+              "outcome": "read",
+              "note": "Complete actual 6-page 2026 English-taught international doctoral subject catalogue (Chinese text) read across excerpts. Same MSE and Mathematics OR/Control fields. Language variants do not constitute additional degrees."
+            },
+            {
+              "url": "https://pi.zju.edu.cn/_upload/article/files/19/18/f35c83144de1be64f1c55f17b8b9/3d420286-4581-45dc-9fe8-e58485ec3f49.pdf",
+              "checkedAt": "2026-10-25",
+              "outcome": "read",
+              "note": "Complete actual 22-page university graduate-degree application rules 2024/53 read across three overlapping excerpts. Effective 1 January 2025; academicdoctoral independent thesis/innovation, proposal/midpoint/predefence/expertreview and public doctoral defence; professionalpractice routes explicitly differentiated."
+            }
+          ],
+          "limitations": [
+            "Positive provision at current 2026 intake is distinct from institution-wide current scope completion. International catalogues are a bounded applicant inventory, not all domestic doctoral routes or formal department list.",
+            "ActualCIAM current unit-source correction is separate 251; do not attach Mathematics doctorate to this centre. Its generic applied-mathematics research title does not establish doctoral administration.",
+            "Generic degree preserved in original language and research-doctorate classification explained by actual programme/qualification composition. Specific diploma category and lower departmental allocation unknown. No person career or graduate enumeration work."
+          ],
+          "coverageComplete": false
+        }
+      ],
+      "verifiedCurrentProgrammeIds": [
+        "zhejiang-university--management-science-engineering-doctorate",
+        "zhejiang-university--mathematics-operations-research-control-doctorate"
+      ],
       "branchCoverageComplete": false,
       "nextStep": "Verify official current relevant doctoral routes across business and engineering; record branch gaps"
     },
@@ -23484,91 +23804,6 @@
           ],
           "limitations": [
             "Current formal named Industrial Engineering doctoral route and complete business/engineering inventories remain unresolved; do not convert a thesis notice into a programme.",
-            "Two OM List reported doctorate institution labels remain individual discovery leads only."
-          ],
-          "coverageComplete": false
-        }
-      ],
-      "verifiedCurrentProgrammeIds": [],
-      "branchCoverageComplete": false,
-      "nextStep": "Verify official current relevant doctoral routes across business and engineering; record branch gaps"
-    },
-    {
-      "id": "aix-marseille-universite",
-      "name": "Aix Marseille Université",
-      "sourceUniversityIds": [
-        "aix-marseille-universite"
-      ],
-      "candidateUniversityIds": [
-        "aix-marseille-universite"
-      ],
-      "identityMatch": "accepted university/entity name",
-      "reportedFacultyCount": 2,
-      "reportedNames": [
-        "Aix Marseille Université"
-      ],
-      "facultyIds": [
-        "omlist-dcb4e3672985176d",
-        "omlist-029b779bba9102d7"
-      ],
-      "sourceUrls": [],
-      "owners": [
-        "integrator"
-      ],
-      "doctoralObservations": [
-        {
-          "status": "partial",
-          "checkedAt": "2026-10-25",
-          "programmeIds": [],
-          "branches": [
-            {
-              "branch": "business",
-              "reviewState": "partial",
-              "conclusion": "Opened official Economics and Management doctoral-school and separate public-management Doctorat en Sciences de Gestion pages. Both show broad management/economics awards without an explicit Operations, Management Science or Industrial Engineering title/specialization. Other host research centers and IAE doctoral routes have not been fully screened.",
-              "sourceUrls": [
-                "https://feg.univ-amu.fr/fr/formation/doctorat-sciences-economiques-sciences-de-gestion",
-                "https://impgt.univ-amu.fr/fr/formations/doctorat-en-sciences-de-gestion"
-              ]
-            },
-            {
-              "branch": "engineering",
-              "reviewState": "partial",
-              "conclusion": "Opened Faculty of Sciences doctorate school inventory and the full ED 353 Sciences pour l'Ingénieur page. ED 353 explicitly names mechanics, physics, micro/nanoelectronics and eight listed themes, with no Industrial Engineering title. Mathematics/IT and other university doctoral schools are not fully adjudicated, so this is not a university-wide negative.",
-              "sourceUrls": [
-                "https://sciences.univ-amu.fr/fr/formation/doctorats",
-                "https://ecole-doctorale-353.univ-amu.fr/"
-              ]
-            }
-          ],
-          "sources": [
-            {
-              "url": "https://feg.univ-amu.fr/fr/formation/doctorat-sciences-economiques-sciences-de-gestion",
-              "checkedAt": "2026-10-25",
-              "outcome": "read",
-              "note": "Opened full broad economics/management doctoral-school page; no qualifying named specialization on page."
-            },
-            {
-              "url": "https://impgt.univ-amu.fr/fr/formations/doctorat-en-sciences-de-gestion",
-              "checkedAt": "2026-10-25",
-              "outcome": "read",
-              "note": "Opened full broad Doctorat en Sciences de Gestion page; not a Management Science degree title."
-            },
-            {
-              "url": "https://sciences.univ-amu.fr/fr/formation/doctorats",
-              "checkedAt": "2026-10-25",
-              "outcome": "read",
-              "note": "Opened Faculty of Sciences doctoral-school inventory, including Mathematics/IT and engineering ED 353."
-            },
-            {
-              "url": "https://ecole-doctorale-353.univ-amu.fr/",
-              "checkedAt": "2026-10-25",
-              "outcome": "read",
-              "note": "Opened full ED 353 page, exact doctoral-school title and eight named research themes; no Industrial Engineering named title."
-            }
-          ],
-          "limitations": [
-            "Do not translate French generic sciences de gestion as formal Management Science; title rule not met by these pages.",
-            "Business-host and engineering doctoral inventories remain incomplete; no negative conclusion.",
             "Two OM List reported doctorate institution labels remain individual discovery leads only."
           ],
           "coverageComplete": false
@@ -25061,6 +25296,87 @@
       "nextStep": "Verify official current relevant doctoral routes across business and engineering; record branch gaps"
     },
     {
+      "id": "imt-atlantique",
+      "name": "IMT Atlantique",
+      "sourceUniversityIds": [
+        "imt-atlantique"
+      ],
+      "candidateUniversityIds": [
+        "imt-atlantique"
+      ],
+      "identityMatch": "accepted university/entity name",
+      "reportedFacultyCount": 2,
+      "reportedNames": [
+        "École des Mines de Nantes",
+        "IMT Atlantique"
+      ],
+      "facultyIds": [
+        "omlist-dda159d4a5088c82",
+        "omlist-b93702403b8faa5c"
+      ],
+      "sourceUrls": [],
+      "owners": [
+        "integrator"
+      ],
+      "doctoralObservations": [
+        {
+          "status": "verified",
+          "checkedAt": "2026-10-25",
+          "programmeIds": [
+            "imt-atlantique--genie-industriel-productique-automatique-robotique-doctorat"
+          ],
+          "branches": [
+            {
+              "branch": "business",
+              "reviewState": "checked",
+              "conclusion": "Full current 30-specialty doctorate list includes broad Sciences de gestion only; this is not quantitative Management Science or Operations Management by title. No other named business specialty meets the strict title rule.",
+              "sourceUrls": [
+                "https://www.imt-atlantique.fr/fr/recherche-innovation/doctorat/30-specialites"
+              ]
+            },
+            {
+              "branch": "engineering",
+              "reviewState": "checked",
+              "conclusion": "Full current 30-specialty inventory contains one named Génie industriel combined specialty under SPIN. Other engineering titles are distinct unrelated disciplines and were not counted.",
+              "sourceUrls": [
+                "https://www.imt-atlantique.fr/fr/recherche-innovation/doctorat/30-specialites"
+              ]
+            }
+          ],
+          "sources": [
+            {
+              "url": "https://www.imt-atlantique.fr/fr/recherche-innovation/doctorat/30-specialites",
+              "checkedAt": "2026-10-25",
+              "outcome": "read",
+              "note": "Full 30 current doctoral specialty headings, including exact combined Industrial Engineering specialty and broad management sciences."
+            },
+            {
+              "url": "https://www.imt-atlantique.fr/fr/recherche-innovation/doctorat",
+              "checkedAt": "2026-10-25",
+              "outcome": "read",
+              "note": "Full current three-year thesis/doctoral school and degree overview."
+            },
+            {
+              "url": "https://www.imt-atlantique.fr/fr/l-ecole/missions",
+              "checkedAt": "2026-10-25",
+              "outcome": "read",
+              "note": "Full current institution and 2017 merger identity."
+            }
+          ],
+          "limitations": [
+            "Current title-scope closure uses the complete official 30-specialty inventory, not a claim about every thesis topic or historical school award.",
+            "Historical 2009 Mines Nantes label remains distinct from the successor's 2017 founding; neither imported individual's degree field was verified."
+          ],
+          "coverageComplete": true
+        }
+      ],
+      "verifiedCurrentProgrammeIds": [
+        "imt-atlantique--genie-industriel-productique-automatique-robotique-doctorat"
+      ],
+      "branchCoverageComplete": true,
+      "nextStep": "Current scoped doctoral inventory checked; retain evidence and historical limitations"
+    },
+    {
       "id": "iim-bangalore",
       "name": "Indian Institute of Management Bangalore",
       "sourceUniversityIds": [
@@ -26236,76 +26552,6 @@
       "verifiedCurrentProgrammeIds": [
         "mines-saint-etienne--industrial-engineering-phd"
       ],
-      "branchCoverageComplete": false,
-      "nextStep": "Verify official current relevant doctoral routes across business and engineering; record branch gaps"
-    },
-    {
-      "id": "mohammed-v-university-in-rabat",
-      "name": "Mohammed V University in Rabat",
-      "sourceUniversityIds": [
-        "mohammed-v-university-in-rabat"
-      ],
-      "candidateUniversityIds": [
-        "mohammed-v-university-in-rabat"
-      ],
-      "identityMatch": "accepted university/entity name",
-      "reportedFacultyCount": 2,
-      "reportedNames": [
-        "Mohammed V University"
-      ],
-      "facultyIds": [
-        "omlist-dafbd85d5f83e150",
-        "omlist-28f2c21330ea3b13"
-      ],
-      "sourceUrls": [],
-      "owners": [
-        "integrator"
-      ],
-      "doctoralObservations": [
-        {
-          "status": "verified",
-          "checkedAt": "2026-10-25",
-          "programmeIds": [
-            "mohammed-v-university-in-rabat--engineering-sciences-doctorate-industrial-engineering-logistics-specialty"
-          ],
-          "branches": [
-            {
-              "branch": "business",
-              "reviewState": "unreviewed",
-              "conclusion": "Relevant business doctoral titles not inventoried.",
-              "sourceUrls": []
-            },
-            {
-              "branch": "engineering",
-              "reviewState": "partial",
-              "conclusion": "2025 ENSIAS official thesis-defense notice establishes a qualifying named Industrial Engineering specialty; current 2026–27 doctoral offerings and other technical schools not inventoried.",
-              "sourceUrls": [
-                "https://ensias.um5.ac.ma/sites/ensias.um5.ac.ma/files/Avis_Soutenance_These_Doctorat_Khalil%20ABBAL_17_7_2025.pdf"
-              ]
-            }
-          ],
-          "sources": [
-            {
-              "url": "https://ensias.um5.ac.ma/sites/ensias.um5.ac.ma/files/Avis_Soutenance_These_Doctorat_Khalil%20ABBAL_17_7_2025.pdf",
-              "checkedAt": "2026-10-25",
-              "outcome": "read",
-              "note": "Full two-page ENSIAS official thesis-defense notice; exact doctorate and IE specialty wording."
-            },
-            {
-              "url": "https://cedoc.um5.ac.ma/",
-              "checkedAt": "2026-10-25",
-              "outcome": "read",
-              "note": "Official central doctoral center names university and 2025–26 doctorate pre-registration."
-            }
-          ],
-          "limitations": [
-            "Exact 2026–27 named-specialty admission status unresolved; this proposal should not count as verified active current route until current official intake evidence is read.",
-            "Broader business and technical branch inventories incomplete."
-          ],
-          "coverageComplete": false
-        }
-      ],
-      "verifiedCurrentProgrammeIds": [],
       "branchCoverageComplete": false,
       "nextStep": "Verify official current relevant doctoral routes across business and engineering; record branch gaps"
     },
@@ -28200,6 +28446,112 @@
       "nextStep": "Verify official current relevant doctoral routes across business and engineering; record branch gaps"
     },
     {
+      "id": "universite-grenoble-alpes",
+      "name": "Université Grenoble Alpes",
+      "sourceUniversityIds": [
+        "universite-grenoble-alpes"
+      ],
+      "candidateUniversityIds": [
+        "universite-grenoble-alpes"
+      ],
+      "identityMatch": "accepted university/entity name",
+      "reportedFacultyCount": 2,
+      "reportedNames": [
+        "Grenoble Alpes University",
+        "University Pierre Mendès France of Grenoble"
+      ],
+      "facultyIds": [
+        "omlist-43f09de7c188c926",
+        "omlist-6438a01d682bd347"
+      ],
+      "sourceUrls": [],
+      "owners": [
+        "integrator"
+      ],
+      "doctoralObservations": [
+        {
+          "status": "verified",
+          "checkedAt": "2026-10-25",
+          "programmeIds": [
+            "universite-grenoble-alpes--industrial-engineering-conception-production-phd"
+          ],
+          "branches": [
+            {
+              "branch": "business",
+              "reviewState": "checked",
+              "conclusion": "Doctoral School of Management Sciences full five-specialty inventory read: Finance, HR, Strategic Management, Marketing, and Information Systems–Supply Chain Management; none is formally named Operations, quantitative Management Science or Industrial Engineering. The broad Gestion school title is not itself a quantitative Management Science qualification.",
+              "sourceUrls": [
+                "https://doctorat.univ-grenoble-alpes.fr/doctoral-college/doctoral-schools/doctoral-school-of-management-sciences-803929.kjsp",
+                "https://doctorat.univ-grenoble-alpes.fr/preparing-a-phd/doctorate-enrolment/application-and-admission-to-doctoral-school-890537.kjsp"
+              ]
+            },
+            {
+              "branch": "engineering",
+              "reviewState": "checked",
+              "conclusion": "Official I-MEP² doctoral school names five PhD specialty domains, including GI Industrial engineering: conception and production. This is the one title-eligible engineering specialty evidenced, while mechanics, materials, electrochemistry and process fields are distinct.",
+              "sourceUrls": [
+                "https://doctorat.univ-grenoble-alpes.fr/preparing-a-phd/doctorate-enrolment/application-and-admission-to-doctoral-school-890537.kjsp",
+                "https://edimep2.univ-grenoble-alpes.fr/doctoral-school/phd-specialities/",
+                "https://edimep2.univ-grenoble-alpes.fr/apply/conditions-and-prerequisites/"
+              ]
+            },
+            {
+              "branch": "mathematics",
+              "reviewState": "checked",
+              "conclusion": "MSTII formal PhD specialty inventory lists Computer Science, Mathematics-Informatics, Applied Mathematics, Mathematics, with no named Operations Research specialty.",
+              "sourceUrls": [
+                "https://doctorat.univ-grenoble-alpes.fr/preparing-a-phd/doctorate-enrolment/application-and-admission-to-doctoral-school-890537.kjsp",
+                "https://edmstii.univ-grenoble-alpes.fr/mstii-doctoral-school/phd-specialities/"
+              ]
+            }
+          ],
+          "sources": [
+            {
+              "url": "https://doctorat.univ-grenoble-alpes.fr/preparing-a-phd/doctorate-enrolment/application-and-admission-to-doctoral-school-890537.kjsp",
+              "checkedAt": "2026-10-25",
+              "outcome": "read",
+              "note": "Full current university Doctoral College enrolment page and school list, updated 2 October 2026."
+            },
+            {
+              "url": "https://doctorat.univ-grenoble-alpes.fr/doctoral-college/doctoral-schools/doctoral-school-of-management-sciences-803929.kjsp",
+              "checkedAt": "2026-10-25",
+              "outcome": "read",
+              "note": "Full official Management Sciences doctoral school page, exact title and five specialties."
+            },
+            {
+              "url": "https://edimep2.univ-grenoble-alpes.fr/doctoral-school/phd-specialities/",
+              "checkedAt": "2026-10-25",
+              "outcome": "read",
+              "note": "Full formal GI Industrial engineering PhD specialty inventory."
+            },
+            {
+              "url": "https://edimep2.univ-grenoble-alpes.fr/apply/conditions-and-prerequisites/",
+              "checkedAt": "2026-10-25",
+              "outcome": "read",
+              "note": "Full engineering doctoral school admissions page confirms current original-thesis route."
+            },
+            {
+              "url": "https://edmstii.univ-grenoble-alpes.fr/mstii-doctoral-school/phd-specialities/",
+              "checkedAt": "2026-10-25",
+              "outcome": "read",
+              "note": "Full math/informatics formal PhD specialty inventory, no OR field."
+            }
+          ],
+          "limitations": [
+            "Formal Industrial engineering: conception and production PhD specialty qualifies; broad Management Sciences school and its five specialties do not.",
+            "The relevant formal fields of business, engineering and mathematics/informatics doctoral schools were read, but additional university schools not exhaustively inventoried; global scope stays partial.",
+            "Imported individual 2021 doctorate remains discovery only."
+          ],
+          "coverageComplete": false
+        }
+      ],
+      "verifiedCurrentProgrammeIds": [
+        "universite-grenoble-alpes--industrial-engineering-conception-production-phd"
+      ],
+      "branchCoverageComplete": false,
+      "nextStep": "Verify official current relevant doctoral routes across business and engineering; record branch gaps"
+    },
+    {
       "id": "universite-moulay-ismail",
       "name": "Université Moulay Ismaïl",
       "sourceUniversityIds": [
@@ -29316,6 +29668,127 @@
       "verifiedCurrentProgrammeIds": [],
       "branchCoverageComplete": false,
       "nextStep": "Verify official current relevant doctoral routes across business and engineering; record branch gaps"
+    },
+    {
+      "id": "university-of-geneva",
+      "name": "University of Geneva",
+      "sourceUniversityIds": [
+        "university-of-geneva"
+      ],
+      "candidateUniversityIds": [
+        "university-of-geneva"
+      ],
+      "identityMatch": "accepted university/entity name",
+      "reportedFacultyCount": 2,
+      "reportedNames": [
+        "Geneva School of Economics and Management",
+        "Université de Genève"
+      ],
+      "facultyIds": [
+        "omlist-908bfee65831d015",
+        "omlist-bd0df95c1dfccf73"
+      ],
+      "sourceUrls": [],
+      "owners": [
+        "integrator"
+      ],
+      "doctoralObservations": [
+        {
+          "status": "no-qualifying-programme-verified",
+          "checkedAt": "2026-10-25",
+          "programmeIds": [],
+          "branches": [
+            {
+              "branch": "business",
+              "reviewState": "checked",
+              "conclusion": "The current GSEM doctoral admissions inventory explicitly lists Economics, Econometrics, Management, Statistics, Finance and Information Systems. None is titled Operations, Operations Research, Operations Management, Management Science or Industrial Engineering. Operations Management on the Institute of Management page is a research area, not shown as an admissions field.",
+              "sourceUrls": [
+                "https://www.unige.ch/gsem/en/programs/phd/admissions",
+                "https://www.unige.ch/gsem/en/research/institutes/iom"
+              ]
+            },
+            {
+              "branch": "mathematics",
+              "reviewState": "checked",
+              "conclusion": "The Faculty of Science current doctoral mentions include Mathematics, Statistics and Informatics. The 2025-26 regulations for each name only those mentions, with no formally named Operations/OR/OM/MS/IE doctoral field. Mathematicians' possible research topics are not assumed to be formal doctoral titles.",
+              "sourceUrls": [
+                "https://www.unige.ch/sciences/enseignements/formations/doctorats",
+                "https://www.unige.ch/sciences/download_file/view/2827/4571",
+                "https://www.unige.ch/sciences/download_file/view/2825/4571",
+                "https://www.unige.ch/sciences/download_file/view/2828/4571"
+              ]
+            },
+            {
+              "branch": "engineering",
+              "reviewState": "checked",
+              "conclusion": "The central university structure lists nine faculties and no engineering faculty. Faculty of Science is the relevant technical host; its central doctoral mentions and section/department inventory contain no Industrial Engineering or Operations title. No separate engineering doctorate branch is indicated by the current structure.",
+              "sourceUrls": [
+                "https://www.unige.ch/gouvernance/structures/",
+                "https://www.unige.ch/sciences/en/lafaculte/organisation",
+                "https://www.unige.ch/sciences/enseignements/formations/doctorats"
+              ]
+            }
+          ],
+          "sources": [
+            {
+              "url": "https://www.unige.ch/gsem/en/programs/phd/admissions",
+              "checkedAt": "2026-10-25",
+              "outcome": "read",
+              "note": "Full current GSEM doctoral admissions page, all six named areas."
+            },
+            {
+              "url": "https://www.unige.ch/gsem/en/research/institutes/iom",
+              "checkedAt": "2026-10-25",
+              "outcome": "read",
+              "note": "Previously opened official Institute of Management page; Operations Management was a research area."
+            },
+            {
+              "url": "https://www.unige.ch/sciences/enseignements/formations/doctorats",
+              "checkedAt": "2026-10-25",
+              "outcome": "read",
+              "note": "Full current Faculty of Science doctorate mentions list, including Mathematics, Statistics and Informatics."
+            },
+            {
+              "url": "https://www.unige.ch/sciences/download_file/view/2827/4571",
+              "checkedAt": "2026-10-25",
+              "outcome": "read",
+              "note": "Full 2025-26 Mathematics mention regulation."
+            },
+            {
+              "url": "https://www.unige.ch/sciences/download_file/view/2825/4571",
+              "checkedAt": "2026-10-25",
+              "outcome": "read",
+              "note": "Full 2025-26 Statistics mention regulation."
+            },
+            {
+              "url": "https://www.unige.ch/sciences/download_file/view/2828/4571",
+              "checkedAt": "2026-10-25",
+              "outcome": "read",
+              "note": "Full 2025-26 Informatics mention regulation."
+            },
+            {
+              "url": "https://www.unige.ch/gouvernance/structures/",
+              "checkedAt": "2026-10-25",
+              "outcome": "read",
+              "note": "Full current central university structure, all nine faculties and interfaculty centers; no engineering faculty."
+            },
+            {
+              "url": "https://www.unige.ch/sciences/en/lafaculte/organisation",
+              "checkedAt": "2026-10-25",
+              "outcome": "read",
+              "note": "Full Faculty of Science structure lists six sections and two departments, no Industrial Engineering or Operations named unit."
+            }
+          ],
+          "limitations": [
+            "This is a bounded current-title-scope conclusion from the central faculties, GSEM doctoral admissions, Science doctoral mention inventory, and three plausible quantitative mention regulations; it does not assert absence of individual Operations-related research topics or historical degrees.",
+            "Neither imported individual doctorate report was person-verified or changed. Continuation-269 remains frozen; this supersedes its incomplete engineering branch."
+          ],
+          "coverageComplete": true
+        }
+      ],
+      "verifiedCurrentProgrammeIds": [],
+      "branchCoverageComplete": true,
+      "nextStep": "Current scoped doctoral inventory checked; retain evidence and historical limitations"
     },
     {
       "id": "university-of-groningen",
@@ -32312,26 +32785,6 @@
       "nextStep": "Verify official current relevant doctoral routes across business and engineering; record branch gaps"
     },
     {
-      "id": "unresolved:ecole des mines de nantes",
-      "name": "École des Mines de Nantes",
-      "sourceUniversityIds": [],
-      "candidateUniversityIds": [],
-      "identityMatch": "unresolved discovery label",
-      "reportedFacultyCount": 1,
-      "reportedNames": [
-        "École des Mines de Nantes"
-      ],
-      "facultyIds": [
-        "omlist-dda159d4a5088c82"
-      ],
-      "sourceUrls": [],
-      "owners": [],
-      "doctoralObservations": [],
-      "verifiedCurrentProgrammeIds": [],
-      "branchCoverageComplete": false,
-      "nextStep": "Resolve official identity and add/associate discovery record without speculative merge"
-    },
-    {
       "id": "unresolved:ecole polytechnique",
       "name": "Ecole Polytechnique",
       "sourceUniversityIds": [],
@@ -32558,26 +33011,6 @@
       "verifiedCurrentProgrammeIds": [],
       "branchCoverageComplete": false,
       "nextStep": "Verify official current relevant doctoral routes across business and engineering; record branch gaps"
-    },
-    {
-      "id": "unresolved:geneva school of economics and management",
-      "name": "Geneva School of Economics and Management",
-      "sourceUniversityIds": [],
-      "candidateUniversityIds": [],
-      "identityMatch": "unresolved discovery label",
-      "reportedFacultyCount": 1,
-      "reportedNames": [
-        "Geneva School of Economics and Management"
-      ],
-      "facultyIds": [
-        "omlist-908bfee65831d015"
-      ],
-      "sourceUrls": [],
-      "owners": [],
-      "doctoralObservations": [],
-      "verifiedCurrentProgrammeIds": [],
-      "branchCoverageComplete": false,
-      "nextStep": "Resolve official identity and add/associate discovery record without speculative merge"
     },
     {
       "id": "unresolved:graduate school of china s academy of social science",
@@ -32831,85 +33264,6 @@
       "verifiedCurrentProgrammeIds": [],
       "branchCoverageComplete": false,
       "nextStep": "Verify official current relevant doctoral routes across business and engineering; record branch gaps"
-    },
-    {
-      "id": "imt-atlantique",
-      "name": "IMT Atlantique",
-      "sourceUniversityIds": [
-        "imt-atlantique"
-      ],
-      "candidateUniversityIds": [
-        "imt-atlantique"
-      ],
-      "identityMatch": "accepted university/entity name",
-      "reportedFacultyCount": 1,
-      "reportedNames": [
-        "IMT Atlantique"
-      ],
-      "facultyIds": [
-        "omlist-b93702403b8faa5c"
-      ],
-      "sourceUrls": [],
-      "owners": [
-        "integrator"
-      ],
-      "doctoralObservations": [
-        {
-          "status": "verified",
-          "checkedAt": "2026-10-25",
-          "programmeIds": [
-            "imt-atlantique--genie-industriel-productique-automatique-robotique-doctorat"
-          ],
-          "branches": [
-            {
-              "branch": "business",
-              "reviewState": "checked",
-              "conclusion": "Full current 30-specialty doctorate list includes broad Sciences de gestion only; this is not quantitative Management Science or Operations Management by title. No other named business specialty meets the strict title rule.",
-              "sourceUrls": [
-                "https://www.imt-atlantique.fr/fr/recherche-innovation/doctorat/30-specialites"
-              ]
-            },
-            {
-              "branch": "engineering",
-              "reviewState": "checked",
-              "conclusion": "Full current 30-specialty inventory contains one named Génie industriel combined specialty under SPIN. Other engineering titles are distinct unrelated disciplines and were not counted.",
-              "sourceUrls": [
-                "https://www.imt-atlantique.fr/fr/recherche-innovation/doctorat/30-specialites"
-              ]
-            }
-          ],
-          "sources": [
-            {
-              "url": "https://www.imt-atlantique.fr/fr/recherche-innovation/doctorat/30-specialites",
-              "checkedAt": "2026-10-25",
-              "outcome": "read",
-              "note": "Full 30 current doctoral specialty headings, including exact combined Industrial Engineering specialty and broad management sciences."
-            },
-            {
-              "url": "https://www.imt-atlantique.fr/fr/recherche-innovation/doctorat",
-              "checkedAt": "2026-10-25",
-              "outcome": "read",
-              "note": "Full current three-year thesis/doctoral school and degree overview."
-            },
-            {
-              "url": "https://www.imt-atlantique.fr/fr/l-ecole/missions",
-              "checkedAt": "2026-10-25",
-              "outcome": "read",
-              "note": "Full current institution and 2017 merger identity."
-            }
-          ],
-          "limitations": [
-            "Current title-scope closure uses the complete official 30-specialty inventory, not a claim about every thesis topic or historical school award.",
-            "Historical 2009 Mines Nantes label remains distinct from the successor's 2017 founding; neither imported individual's degree field was verified."
-          ],
-          "coverageComplete": true
-        }
-      ],
-      "verifiedCurrentProgrammeIds": [
-        "imt-atlantique--genie-industriel-productique-automatique-robotique-doctorat"
-      ],
-      "branchCoverageComplete": true,
-      "nextStep": "Current scoped doctoral inventory checked; retain evidence and historical limitations"
     },
     {
       "id": "iim-ahmedabad",
@@ -35650,26 +36004,6 @@
       ],
       "facultyIds": [
         "omlist-8a617d9d4e723a54"
-      ],
-      "sourceUrls": [],
-      "owners": [],
-      "doctoralObservations": [],
-      "verifiedCurrentProgrammeIds": [],
-      "branchCoverageComplete": false,
-      "nextStep": "Resolve official identity and add/associate discovery record without speculative merge"
-    },
-    {
-      "id": "unresolved:mohammadia school of engineers",
-      "name": "Mohammadia School of Engineers",
-      "sourceUniversityIds": [],
-      "candidateUniversityIds": [],
-      "identityMatch": "unresolved discovery label",
-      "reportedFacultyCount": 1,
-      "reportedNames": [
-        "Mohammadia School of Engineers"
-      ],
-      "facultyIds": [
-        "omlist-01900acc56f144ef"
       ],
       "sourceUrls": [],
       "owners": [],
@@ -39488,26 +39822,6 @@
       "nextStep": "Verify official current relevant doctoral routes across business and engineering; record branch gaps"
     },
     {
-      "id": "unresolved:universite bordeaux i",
-      "name": "Université Bordeaux I",
-      "sourceUniversityIds": [],
-      "candidateUniversityIds": [],
-      "identityMatch": "unresolved discovery label",
-      "reportedFacultyCount": 1,
-      "reportedNames": [
-        "Université Bordeaux I"
-      ],
-      "facultyIds": [
-        "omlist-e400946c5146c079"
-      ],
-      "sourceUrls": [],
-      "owners": [],
-      "doctoralObservations": [],
-      "verifiedCurrentProgrammeIds": [],
-      "branchCoverageComplete": false,
-      "nextStep": "Resolve official identity and add/associate discovery record without speculative merge"
-    },
-    {
       "id": "cadi-ayyad-university",
       "name": "Université Cadi Ayyad",
       "sourceUniversityIds": [
@@ -39823,89 +40137,6 @@
       ],
       "branchCoverageComplete": true,
       "nextStep": "Current scoped doctoral inventory checked; retain evidence and historical limitations"
-    },
-    {
-      "id": "university-of-bordeaux",
-      "name": "Université de Bordeaux",
-      "sourceUniversityIds": [
-        "university-of-bordeaux"
-      ],
-      "candidateUniversityIds": [
-        "university-of-bordeaux"
-      ],
-      "identityMatch": "accepted university/entity name",
-      "reportedFacultyCount": 1,
-      "reportedNames": [
-        "University of Bordeaux"
-      ],
-      "facultyIds": [
-        "omlist-225b1dae6871b2b2"
-      ],
-      "sourceUrls": [],
-      "owners": [
-        "integrator"
-      ],
-      "doctoralObservations": [
-        {
-          "status": "partial",
-          "checkedAt": "2026-10-25",
-          "programmeIds": [],
-          "branches": [
-            {
-              "branch": "business",
-              "reviewState": "checked",
-              "conclusion": "Fully opened current EES doctoral-school page lists Sciences économiques, Sciences de gestion, Démographie and agronomy options of those three. Broad Sciences de gestion is not quantitative Management Science, and no title-matching business doctoral specialty or named department is in this read inventory.",
-              "sourceUrls": [
-                "https://doctorat.u-bordeaux.fr/avant-le-doctorat/les-ecoles-doctorales/EES"
-              ]
-            },
-            {
-              "branch": "engineering",
-              "reviewState": "partial",
-              "conclusion": "The fully opened central university doctoral page confirms engineering and mathematics/informatics doctoral schools, but their detailed current pages timed out on direct open. No negative claim about their formal specialties or named areas is made.",
-              "sourceUrls": [
-                "https://www.u-bordeaux.fr/formation/candidatures-et-inscriptions/candidater-luniversite/doctorantes-et-doctorants",
-                "https://doctorat.u-bordeaux.fr/avant-le-doctorat/les-ecoles-doctorales/MI",
-                "https://doctorat.u-bordeaux.fr/avant-le-doctorat/les-ecoles-doctorales/SPI"
-              ]
-            }
-          ],
-          "sources": [
-            {
-              "url": "https://www.u-bordeaux.fr/formation/candidatures-et-inscriptions/candidater-luniversite/doctorantes-et-doctorants",
-              "checkedAt": "2026-10-25",
-              "outcome": "read",
-              "note": "Full current official university doctoral landing page, including current doctoral-school structure."
-            },
-            {
-              "url": "https://doctorat.u-bordeaux.fr/avant-le-doctorat/les-ecoles-doctorales/EES",
-              "checkedAt": "2026-10-25",
-              "outcome": "read",
-              "note": "Full current EES doctoral school specialties and research-unit list."
-            },
-            {
-              "url": "https://doctorat.u-bordeaux.fr/avant-le-doctorat/les-ecoles-doctorales/MI",
-              "checkedAt": "2026-10-25",
-              "outcome": "blocked",
-              "note": "Repeated direct opens timed out; search extracts not used as verification."
-            },
-            {
-              "url": "https://doctorat.u-bordeaux.fr/avant-le-doctorat/les-ecoles-doctorales/SPI",
-              "checkedAt": "2026-10-25",
-              "outcome": "blocked",
-              "note": "Repeated direct opens timed out; search extracts not used as verification."
-            }
-          ],
-          "limitations": [
-            "No qualifying current route claimed pending direct read of plausible formal mathematics/engineering doctoral specialties and named areas.",
-            "Historical Bordeaux I identity is documented separately in continuation-254; no individual 2014 degree conclusion follows from this current inventory."
-          ],
-          "coverageComplete": false
-        }
-      ],
-      "verifiedCurrentProgrammeIds": [],
-      "branchCoverageComplete": false,
-      "nextStep": "Verify official current relevant doctoral routes across business and engineering; record branch gaps"
     },
     {
       "id": "universite-de-lille",
@@ -40302,110 +40533,6 @@
       "nextStep": "Verify official current relevant doctoral routes across business and engineering; record branch gaps"
     },
     {
-      "id": "universite-grenoble-alpes",
-      "name": "Université Grenoble Alpes",
-      "sourceUniversityIds": [
-        "universite-grenoble-alpes"
-      ],
-      "candidateUniversityIds": [
-        "universite-grenoble-alpes"
-      ],
-      "identityMatch": "accepted university/entity name",
-      "reportedFacultyCount": 1,
-      "reportedNames": [
-        "Grenoble Alpes University"
-      ],
-      "facultyIds": [
-        "omlist-43f09de7c188c926"
-      ],
-      "sourceUrls": [],
-      "owners": [
-        "integrator"
-      ],
-      "doctoralObservations": [
-        {
-          "status": "verified",
-          "checkedAt": "2026-10-25",
-          "programmeIds": [
-            "universite-grenoble-alpes--industrial-engineering-conception-production-phd"
-          ],
-          "branches": [
-            {
-              "branch": "business",
-              "reviewState": "checked",
-              "conclusion": "Doctoral School of Management Sciences full five-specialty inventory read: Finance, HR, Strategic Management, Marketing, and Information Systems–Supply Chain Management; none is formally named Operations, quantitative Management Science or Industrial Engineering. The broad Gestion school title is not itself a quantitative Management Science qualification.",
-              "sourceUrls": [
-                "https://doctorat.univ-grenoble-alpes.fr/doctoral-college/doctoral-schools/doctoral-school-of-management-sciences-803929.kjsp",
-                "https://doctorat.univ-grenoble-alpes.fr/preparing-a-phd/doctorate-enrolment/application-and-admission-to-doctoral-school-890537.kjsp"
-              ]
-            },
-            {
-              "branch": "engineering",
-              "reviewState": "checked",
-              "conclusion": "Official I-MEP² doctoral school names five PhD specialty domains, including GI Industrial engineering: conception and production. This is the one title-eligible engineering specialty evidenced, while mechanics, materials, electrochemistry and process fields are distinct.",
-              "sourceUrls": [
-                "https://doctorat.univ-grenoble-alpes.fr/preparing-a-phd/doctorate-enrolment/application-and-admission-to-doctoral-school-890537.kjsp",
-                "https://edimep2.univ-grenoble-alpes.fr/doctoral-school/phd-specialities/",
-                "https://edimep2.univ-grenoble-alpes.fr/apply/conditions-and-prerequisites/"
-              ]
-            },
-            {
-              "branch": "mathematics",
-              "reviewState": "checked",
-              "conclusion": "MSTII formal PhD specialty inventory lists Computer Science, Mathematics-Informatics, Applied Mathematics, Mathematics, with no named Operations Research specialty.",
-              "sourceUrls": [
-                "https://doctorat.univ-grenoble-alpes.fr/preparing-a-phd/doctorate-enrolment/application-and-admission-to-doctoral-school-890537.kjsp",
-                "https://edmstii.univ-grenoble-alpes.fr/mstii-doctoral-school/phd-specialities/"
-              ]
-            }
-          ],
-          "sources": [
-            {
-              "url": "https://doctorat.univ-grenoble-alpes.fr/preparing-a-phd/doctorate-enrolment/application-and-admission-to-doctoral-school-890537.kjsp",
-              "checkedAt": "2026-10-25",
-              "outcome": "read",
-              "note": "Full current university Doctoral College enrolment page and school list, updated 2 October 2026."
-            },
-            {
-              "url": "https://doctorat.univ-grenoble-alpes.fr/doctoral-college/doctoral-schools/doctoral-school-of-management-sciences-803929.kjsp",
-              "checkedAt": "2026-10-25",
-              "outcome": "read",
-              "note": "Full official Management Sciences doctoral school page, exact title and five specialties."
-            },
-            {
-              "url": "https://edimep2.univ-grenoble-alpes.fr/doctoral-school/phd-specialities/",
-              "checkedAt": "2026-10-25",
-              "outcome": "read",
-              "note": "Full formal GI Industrial engineering PhD specialty inventory."
-            },
-            {
-              "url": "https://edimep2.univ-grenoble-alpes.fr/apply/conditions-and-prerequisites/",
-              "checkedAt": "2026-10-25",
-              "outcome": "read",
-              "note": "Full engineering doctoral school admissions page confirms current original-thesis route."
-            },
-            {
-              "url": "https://edmstii.univ-grenoble-alpes.fr/mstii-doctoral-school/phd-specialities/",
-              "checkedAt": "2026-10-25",
-              "outcome": "read",
-              "note": "Full math/informatics formal PhD specialty inventory, no OR field."
-            }
-          ],
-          "limitations": [
-            "Formal Industrial engineering: conception and production PhD specialty qualifies; broad Management Sciences school and its five specialties do not.",
-            "The relevant formal fields of business, engineering and mathematics/informatics doctoral schools were read, but additional university schools not exhaustively inventoried; global scope stays partial.",
-            "Imported individual 2021 doctorate remains discovery only."
-          ],
-          "coverageComplete": false
-        }
-      ],
-      "verifiedCurrentProgrammeIds": [
-        "universite-grenoble-alpes--industrial-engineering-conception-production-phd"
-      ],
-      "branchCoverageComplete": false,
-      "nextStep": "Verify official current relevant doctoral routes across business and engineering; record branch gaps"
-    },
-    {
       "id": "university-paris-8",
       "name": "Université Paris 8",
       "sourceUniversityIds": [
@@ -40757,26 +40884,6 @@
       ],
       "facultyIds": [
         "omlist-0c34123876d5d669"
-      ],
-      "sourceUrls": [],
-      "owners": [],
-      "doctoralObservations": [],
-      "verifiedCurrentProgrammeIds": [],
-      "branchCoverageComplete": false,
-      "nextStep": "Resolve official identity and add/associate discovery record without speculative merge"
-    },
-    {
-      "id": "unresolved:university of aix marseille ii",
-      "name": "University of Aix-Marseille II",
-      "sourceUniversityIds": [],
-      "candidateUniversityIds": [],
-      "identityMatch": "unresolved discovery label",
-      "reportedFacultyCount": 1,
-      "reportedNames": [
-        "University of Aix-Marseille II"
-      ],
-      "facultyIds": [
-        "omlist-ecc8113a5a7356f3"
       ],
       "sourceUrls": [],
       "owners": [],
@@ -41311,26 +41418,6 @@
       ],
       "facultyIds": [
         "omlist-d9f532981bde36b8"
-      ],
-      "sourceUrls": [],
-      "owners": [],
-      "doctoralObservations": [],
-      "verifiedCurrentProgrammeIds": [],
-      "branchCoverageComplete": false,
-      "nextStep": "Resolve official identity and add/associate discovery record without speculative merge"
-    },
-    {
-      "id": "unresolved:university of bordeaux iv",
-      "name": "University of Bordeaux IV",
-      "sourceUniversityIds": [],
-      "candidateUniversityIds": [],
-      "identityMatch": "unresolved discovery label",
-      "reportedFacultyCount": 1,
-      "reportedNames": [
-        "University of Bordeaux IV"
-      ],
-      "facultyIds": [
-        "omlist-4f0708f5fe3627ee"
       ],
       "sourceUrls": [],
       "owners": [],
@@ -42176,125 +42263,6 @@
       "nextStep": "Current scoped doctoral inventory checked; retain evidence and historical limitations"
     },
     {
-      "id": "university-of-geneva",
-      "name": "University of Geneva",
-      "sourceUniversityIds": [
-        "university-of-geneva"
-      ],
-      "candidateUniversityIds": [
-        "university-of-geneva"
-      ],
-      "identityMatch": "accepted university/entity name",
-      "reportedFacultyCount": 1,
-      "reportedNames": [
-        "Université de Genève"
-      ],
-      "facultyIds": [
-        "omlist-bd0df95c1dfccf73"
-      ],
-      "sourceUrls": [],
-      "owners": [
-        "integrator"
-      ],
-      "doctoralObservations": [
-        {
-          "status": "no-qualifying-programme-verified",
-          "checkedAt": "2026-10-25",
-          "programmeIds": [],
-          "branches": [
-            {
-              "branch": "business",
-              "reviewState": "checked",
-              "conclusion": "The current GSEM doctoral admissions inventory explicitly lists Economics, Econometrics, Management, Statistics, Finance and Information Systems. None is titled Operations, Operations Research, Operations Management, Management Science or Industrial Engineering. Operations Management on the Institute of Management page is a research area, not shown as an admissions field.",
-              "sourceUrls": [
-                "https://www.unige.ch/gsem/en/programs/phd/admissions",
-                "https://www.unige.ch/gsem/en/research/institutes/iom"
-              ]
-            },
-            {
-              "branch": "mathematics",
-              "reviewState": "checked",
-              "conclusion": "The Faculty of Science current doctoral mentions include Mathematics, Statistics and Informatics. The 2025-26 regulations for each name only those mentions, with no formally named Operations/OR/OM/MS/IE doctoral field. Mathematicians' possible research topics are not assumed to be formal doctoral titles.",
-              "sourceUrls": [
-                "https://www.unige.ch/sciences/enseignements/formations/doctorats",
-                "https://www.unige.ch/sciences/download_file/view/2827/4571",
-                "https://www.unige.ch/sciences/download_file/view/2825/4571",
-                "https://www.unige.ch/sciences/download_file/view/2828/4571"
-              ]
-            },
-            {
-              "branch": "engineering",
-              "reviewState": "checked",
-              "conclusion": "The central university structure lists nine faculties and no engineering faculty. Faculty of Science is the relevant technical host; its central doctoral mentions and section/department inventory contain no Industrial Engineering or Operations title. No separate engineering doctorate branch is indicated by the current structure.",
-              "sourceUrls": [
-                "https://www.unige.ch/gouvernance/structures/",
-                "https://www.unige.ch/sciences/en/lafaculte/organisation",
-                "https://www.unige.ch/sciences/enseignements/formations/doctorats"
-              ]
-            }
-          ],
-          "sources": [
-            {
-              "url": "https://www.unige.ch/gsem/en/programs/phd/admissions",
-              "checkedAt": "2026-10-25",
-              "outcome": "read",
-              "note": "Full current GSEM doctoral admissions page, all six named areas."
-            },
-            {
-              "url": "https://www.unige.ch/gsem/en/research/institutes/iom",
-              "checkedAt": "2026-10-25",
-              "outcome": "read",
-              "note": "Previously opened official Institute of Management page; Operations Management was a research area."
-            },
-            {
-              "url": "https://www.unige.ch/sciences/enseignements/formations/doctorats",
-              "checkedAt": "2026-10-25",
-              "outcome": "read",
-              "note": "Full current Faculty of Science doctorate mentions list, including Mathematics, Statistics and Informatics."
-            },
-            {
-              "url": "https://www.unige.ch/sciences/download_file/view/2827/4571",
-              "checkedAt": "2026-10-25",
-              "outcome": "read",
-              "note": "Full 2025-26 Mathematics mention regulation."
-            },
-            {
-              "url": "https://www.unige.ch/sciences/download_file/view/2825/4571",
-              "checkedAt": "2026-10-25",
-              "outcome": "read",
-              "note": "Full 2025-26 Statistics mention regulation."
-            },
-            {
-              "url": "https://www.unige.ch/sciences/download_file/view/2828/4571",
-              "checkedAt": "2026-10-25",
-              "outcome": "read",
-              "note": "Full 2025-26 Informatics mention regulation."
-            },
-            {
-              "url": "https://www.unige.ch/gouvernance/structures/",
-              "checkedAt": "2026-10-25",
-              "outcome": "read",
-              "note": "Full current central university structure, all nine faculties and interfaculty centers; no engineering faculty."
-            },
-            {
-              "url": "https://www.unige.ch/sciences/en/lafaculte/organisation",
-              "checkedAt": "2026-10-25",
-              "outcome": "read",
-              "note": "Full Faculty of Science structure lists six sections and two departments, no Industrial Engineering or Operations named unit."
-            }
-          ],
-          "limitations": [
-            "This is a bounded current-title-scope conclusion from the central faculties, GSEM doctoral admissions, Science doctoral mention inventory, and three plausible quantitative mention regulations; it does not assert absence of individual Operations-related research topics or historical degrees.",
-            "Neither imported individual doctorate report was person-verified or changed. Continuation-269 remains frozen; this supersedes its incomplete engineering branch."
-          ],
-          "coverageComplete": true
-        }
-      ],
-      "verifiedCurrentProgrammeIds": [],
-      "branchCoverageComplete": true,
-      "nextStep": "Current scoped doctoral inventory checked; retain evidence and historical limitations"
-    },
-    {
       "id": "university-of-glasgow",
       "name": "University of Glasgow",
       "sourceUniversityIds": [
@@ -42524,26 +42492,34 @@
       ],
       "doctoralObservations": [
         {
-          "status": "partial",
+          "status": "verified",
           "checkedAt": "2026-10-25",
-          "programmeIds": [],
+          "programmeIds": [
+            "university-of-lausanne--business-analytics-phd"
+          ],
           "branches": [
             {
               "branch": "business",
-              "reviewState": "blocked",
-              "conclusion": "UNIL doctoral funding subsite confirms present PhD activity generally and EPFL confirms historical University of Lausanne PhD awarder. Core HEC Operations department/doctorate page inaccessible by robots policy; no current exact eligible programme counted.",
+              "reviewState": "checked",
+              "conclusion": "Current ten-department and seven-PhD HEC inventories read. Business Analytics explicitly links the actual Department of Operations. Management specialization headings and Actuarial Science research topics checked; generic Information Systems programme does not yield an additional matching named field.",
               "sourceUrls": [
-                "https://wp.unil.ch/acidul/funding-a-phd-or-postdoctorate/",
-                "https://actu.epfl.ch/news/professorship-for-a-former-member-of-the-tom-cha-2/",
-                "https://www.unil.ch/hec/en/home/menuinst/faculty/departments/operations.html"
+                "https://www.unil.ch/hec/en/home/menuinst/faculte/departements.html",
+                "https://www.unil.ch/hec/en/home/menuinst/recherche/ecole-doctorale.html",
+                "https://www.unil.ch/hec/en/home/menuinst/recherche/ecole-doctorale/phd-business-analytics.html",
+                "https://www.unil.ch/hec/en/home/menuinst/recherche/ecole-doctorale/phd-management.html",
+                "https://www.unil.ch/hec/en/home/menuinst/recherche/ecole-doctorale/phd-information-systems.html",
+                "https://www.unil.ch/hec/en/home/menuinst/recherche/ecole-doctorale/phd-actuarial-science.html"
               ]
             },
             {
               "branch": "engineering",
-              "reviewState": "blocked",
-              "conclusion": "Current technical/mathematical doctoral title inventory on core UNIL domain cannot be opened; no claim of absence or route.",
+              "reviewState": "partial",
+              "conclusion": "Current whole-university doctoral curriculum inventory actually expanded/read across all seven faculties. No standalone engineering doctorate listed. SSP offers Mathematics Applied to Humanities and Social Sciences; exact current doctoral mathematical research-field inventory remains a concrete plausible lead. Generic mathematics title itself does not establish an additional Operations route.",
               "sourceUrls": [
-                "https://www.unil.ch/hec/en/home/menuinst/faculty/departments/operations.html"
+                "https://www.unil.ch/unil/en/home.html",
+                "https://www.unil.ch/unil/en/home/menuinst/etudier/doctorat.html",
+                "https://www.unil.ch/unil/en/home/menuinst/recherche/soutien-recherche/doctorat/avant-de-debuter-un-doctorat.html",
+                "https://www.unil.ch/ssp/en/home/menuinst/formations/doctorat.html"
               ]
             }
           ],
@@ -42565,16 +42541,96 @@
               "checkedAt": "2026-10-25",
               "outcome": "blocked",
               "note": "Core unil.ch destination inaccessible by web tool; search declared non-retryable robots.txt restriction. No access bypass."
+            },
+            {
+              "url": "https://www.unil.ch/unil/en/home.html",
+              "checkedAt": "2026-10-25",
+              "outcome": "read",
+              "note": "Actual complete university home read in Chrome: official English University of Lausanne name and all seven faculties; no separate engineering or mathematics faculty in this current frame."
+            },
+            {
+              "url": "https://www.unil.ch/unil/en/home/menuinst/etudier/doctorat.html",
+              "checkedAt": "2026-10-25",
+              "outcome": "read",
+              "note": "Actual central doctorate page read in Chrome: 31 doctoral awards across seven faculties; doctorate entails original scientific research. This page does not enumerate all 31 award titles."
+            },
+            {
+              "url": "https://www.unil.ch/hec/en/home.html",
+              "checkedAt": "2026-10-25",
+              "outcome": "read",
+              "note": "Actual current HEC home read in Chrome establishes Faculty of Business and Economics (HEC Lausanne) parent and current doctoral activity."
+            },
+            {
+              "url": "https://www.unil.ch/hec/en/home/menuinst/faculte/departements.html",
+              "checkedAt": "2026-10-25",
+              "outcome": "read",
+              "note": "Actual full ten-department inventory read in Chrome includes Department of Operations, Actuarial Science and Information Systems."
+            },
+            {
+              "url": "https://www.unil.ch/hec/en/home/menuinst/faculte/departements/do.html",
+              "checkedAt": "2026-10-25",
+              "outcome": "read",
+              "note": "Actual Department of Operations page read, Research section expanded: Operations Research and Supply Chain/Operations Management among explicit research areas."
+            },
+            {
+              "url": "https://www.unil.ch/hec/en/home/menuinst/faculte/departements/do/enseignement.html",
+              "checkedAt": "2026-10-25",
+              "outcome": "read",
+              "note": "Actual Department of Operations teaching page read: Bachelor, Master and doctoral teaching; Masters Business Analytics is not treated as doctoral award."
+            },
+            {
+              "url": "https://www.unil.ch/hec/en/home/menuinst/recherche/ecole-doctorale.html",
+              "checkedAt": "2026-10-25",
+              "outcome": "read",
+              "note": "Actual full HEC doctoral school inventory read: seven named PhD programmes including Business Analytics, Management, Actuarial Science and Information Systems."
+            },
+            {
+              "url": "https://www.unil.ch/hec/en/home/menuinst/recherche/ecole-doctorale/phd-business-analytics.html",
+              "checkedAt": "2026-10-25",
+              "outcome": "read",
+              "note": "Actual complete programme body and learning environment/organisation sections read: PhD in Business Analytics, independent research, thesis proposal and thesis defence; Faculty and Research explicitly links Members of the Department of Operations."
+            },
+            {
+              "url": "https://www.unil.ch/hec/en/home/menuinst/recherche/ecole-doctorale/phd-management.html",
+              "checkedAt": "2026-10-25",
+              "outcome": "read",
+              "note": "Actual PhD Management page read: specialization headings Marketing, Strategy Globalization Society, Accounting and Organizational Behavior, corresponding four faculty departments; no additional Operations title asserted."
+            },
+            {
+              "url": "https://www.unil.ch/hec/en/home/menuinst/recherche/ecole-doctorale/phd-information-systems.html",
+              "checkedAt": "2026-10-25",
+              "outcome": "read",
+              "note": "Actual PhD Information Systems programme body read: research, thesis proposal and thesis defence, Information Systems host; cross-listed EPFL courses do not establish another local programme."
+            },
+            {
+              "url": "https://www.unil.ch/hec/en/home/menuinst/recherche/ecole-doctorale/phd-actuarial-science.html",
+              "checkedAt": "2026-10-25",
+              "outcome": "read",
+              "note": "Actual PhD Actuarial Science page read and Research Topics expanded: risk/credibility theory, financial mathematics/statistics, insurance economics, financial markets/pension funds and actuarial science; no named OR field in this published list."
+            },
+            {
+              "url": "https://www.unil.ch/unil/en/home/menuinst/recherche/soutien-recherche/doctorat/avant-de-debuter-un-doctorat.html",
+              "checkedAt": "2026-10-25",
+              "outcome": "read",
+              "note": "Actual complete central Before you begin page read in Chrome with all seven faculty curriculum accordions expanded. Lists Life Sciences, Neuroscience, Nursing, Medicine/Health Humanities, MD/MD-PhD; Law, Forensic Science, Criminology, Public Administration; Geography, Earth Sciences, Environmental Sciences/Studies, Tourism; seven HEC programmes; Arts; nine SSP doctorates including Applied Mathematics for Human and Social Sciences; Theology and Study of Religions. No standalone Engineering degree in this published frame."
+            },
+            {
+              "url": "https://www.unil.ch/ssp/en/home/menuinst/formations/doctorat.html",
+              "checkedAt": "2026-10-25",
+              "outcome": "read",
+              "note": "Actual full SSP doctoral training page read in Chrome confirms all nine named doctoral programmes, including Doctorate in Mathematics Applied to Humanities and Social Sciences. Research-based thesis and defence framework; footer lists actual Political Studies, Social Sciences, Psychology and Sports Sciences institutes. No specific mathematical doctoral research-field inventory on this page."
             }
           ],
           "limitations": [
-            "No current qualifying route asserted until accessible official current HEC and technical named-title/credential evidence is read.",
-            "Historical PhD person evidence recorded as source reconciliation only; Stage 2 degree/history not commenced."
+            "One current Business Analytics PhD under actual Operations department verified. Whole-university central curriculum inventory now read; remaining specific Mathematics Applied to Humanities and Social Sciences doctoral field inventory is not provided by SSP overview. Retain partial coverage pending actual field/host detail, not generic topic searching or access assumption.",
+            "No additional award or route inferred from statistical consultation infrastructure, broad social sciences mathematics title, cross-listed external courses or admissions background."
           ],
           "coverageComplete": false
         }
       ],
-      "verifiedCurrentProgrammeIds": [],
+      "verifiedCurrentProgrammeIds": [
+        "university-of-lausanne--business-analytics-phd"
+      ],
       "branchCoverageComplete": false,
       "nextStep": "Verify official current relevant doctoral routes across business and engineering; record branch gaps"
     },
@@ -45068,26 +45124,6 @@
       ],
       "branchCoverageComplete": false,
       "nextStep": "Verify official current relevant doctoral routes across business and engineering; record branch gaps"
-    },
-    {
-      "id": "unresolved:university pierre mendes france of grenoble",
-      "name": "University Pierre Mendès France of Grenoble",
-      "sourceUniversityIds": [],
-      "candidateUniversityIds": [],
-      "identityMatch": "unresolved discovery label",
-      "reportedFacultyCount": 1,
-      "reportedNames": [
-        "University Pierre Mendès France of Grenoble"
-      ],
-      "facultyIds": [
-        "omlist-6438a01d682bd347"
-      ],
-      "sourceUrls": [],
-      "owners": [],
-      "doctoralObservations": [],
-      "verifiedCurrentProgrammeIds": [],
-      "branchCoverageComplete": false,
-      "nextStep": "Resolve official identity and add/associate discovery record without speculative merge"
     },
     {
       "id": "vanderbilt-university",

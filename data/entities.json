@@ -18,7 +18,7 @@
    "phdInstitutions": 434,
    "directoryUniversities": 762,
    "firstEmployers": 493,
-   "withPrograms": 350,
+   "withPrograms": 353,
    "inBothDatabases": 363,
    "directoryOnly": 328,
    "peopleOnly": 71,
@@ -44480,7 +44480,8 @@
    "logo": "assets/logos/Q197543.png",
    "roles": [
     "phd-institution",
-    "directory-university"
+    "directory-university",
+    "program-register"
    ],
    "people": {
     "institutions": [
@@ -44548,7 +44549,30 @@
     ]
    },
    "employer": null,
-   "programs": [],
+   "programs": [
+    {
+     "id": "zhejiang-university--management-science-engineering-doctorate",
+     "programName": "管理科学与工程 (Management Science and Engineering)",
+     "specialization": null,
+     "universityId": "zhejiang-university",
+     "school": "管理学院 (School of Management)",
+     "degree": "博士学位",
+     "field": "management-science",
+     "status": "active",
+     "statusAsOf": "2026-10-25"
+    },
+    {
+     "id": "zhejiang-university--mathematics-operations-research-control-doctorate",
+     "programName": "数学 (Mathematics)",
+     "specialization": "运筹学与控制论 (Operations Research and Control)",
+     "universityId": "zhejiang-university",
+     "school": "数学科学学院 (School of Mathematical Sciences)",
+     "degree": "博士学位",
+     "field": "operations-research",
+     "status": "active",
+     "statusAsOf": "2026-10-25"
+    }
+   ],
    "sources": [
     {
      "url": "https://omlist.edutool.org/phd/by-year.html",
@@ -44561,6 +44585,10 @@
     {
      "url": "https://www.operationsacademia.org/universities",
      "title": "Operations Academia universities directory (universities database)"
+    },
+    {
+     "url": "data/doctoral-programs.json",
+     "title": "Historical doctoral program register"
     }
    ],
    "review": {
@@ -44569,12 +44597,22 @@
       "source": "directory",
       "university": "Zhejiang University",
       "match": "exact"
+     },
+     {
+      "source": "programs",
+      "program": "zhejiang-university--management-science-engineering-doctorate",
+      "match": "exact"
+     },
+     {
+      "source": "programs",
+      "program": "zhejiang-university--mathematics-operations-research-control-doctorate",
+      "match": "exact"
      }
     ],
     "conflicts": []
    },
    "addedAt": "2026-10-16T13:49:36Z",
-   "updatedAt": "2026-10-20T08:28:39Z"
+   "updatedAt": "2026-10-25T22:43:32Z"
   },
   {
    "id": "wd:Q263064",
@@ -71493,7 +71531,8 @@
    "logo": "assets/logos/Q658975.png",
    "roles": [
     "phd-institution",
-    "directory-university"
+    "directory-university",
+    "program-register"
    ],
    "people": {
     "institutions": [
@@ -71557,7 +71596,19 @@
     ]
    },
    "employer": null,
-   "programs": [],
+   "programs": [
+    {
+     "id": "university-of-lausanne--business-analytics-phd",
+     "programName": "PhD in Business Analytics",
+     "specialization": null,
+     "universityId": "university-of-lausanne",
+     "school": "Faculty of Business and Economics (HEC Lausanne)",
+     "degree": "PhD",
+     "field": "Operations Research; Operations Management",
+     "status": "active",
+     "statusAsOf": "2026-10-25"
+    }
+   ],
    "sources": [
     {
      "url": "https://omlist.edutool.org/phd/by-year.html",
@@ -71570,6 +71621,10 @@
     {
      "url": "https://www.operationsacademia.org/universities",
      "title": "Operations Academia universities directory (universities database)"
+    },
+    {
+     "url": "data/doctoral-programs.json",
+     "title": "Historical doctoral program register"
     }
    ],
    "review": {
@@ -71578,12 +71633,17 @@
       "source": "directory",
       "university": "University of Lausanne",
       "match": "exact"
+     },
+     {
+      "source": "programs",
+      "program": "university-of-lausanne--business-analytics-phd",
+      "match": "exact"
      }
     ],
     "conflicts": []
    },
    "addedAt": "2026-10-16T13:49:36Z",
-   "updatedAt": "2026-10-25T21:52:11Z"
+   "updatedAt": "2026-10-25T22:43:32Z"
   },
   {
    "id": "wd:Q3551621",
@@ -110789,7 +110849,8 @@
    ],
    "logo": null,
    "roles": [
-    "directory-university"
+    "directory-university",
+    "program-register"
    ],
    "people": null,
    "directory": {
@@ -110818,19 +110879,41 @@
     ]
    },
    "employer": null,
-   "programs": [],
+   "programs": [
+    {
+     "id": "xi-an-jiaotong-university--management-science-engineering-doctorate",
+     "programName": "Management Science and Engineering (管理科学与工程)",
+     "specialization": null,
+     "universityId": "xi-an-jiaotong-university",
+     "school": "School of Management",
+     "degree": "博士学位",
+     "field": "management-science",
+     "status": "active",
+     "statusAsOf": "2026-10-25"
+    }
+   ],
    "sources": [
     {
      "url": "https://www.operationsacademia.org/universities",
      "title": "Operations Academia universities directory (universities database)"
+    },
+    {
+     "url": "data/doctoral-programs.json",
+     "title": "Historical doctoral program register"
     }
    ],
    "review": {
-    "matches": [],
+    "matches": [
+     {
+      "source": "programs",
+      "program": "xi-an-jiaotong-university--management-science-engineering-doctorate",
+      "match": "exact"
+     }
+    ],
     "conflicts": []
    },
    "addedAt": "2026-10-16T13:49:36Z",
-   "updatedAt": "2026-10-16T13:49:36Z"
+   "updatedAt": "2026-10-25T22:43:32Z"
   },
   {
    "id": "name:yale-school-of-management-operations-management-group",
