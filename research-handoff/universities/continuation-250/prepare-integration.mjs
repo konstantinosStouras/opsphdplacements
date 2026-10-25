@@ -1,0 +1,18 @@
+import fs from 'node:fs';
+import crypto from 'node:crypto';
+import {execFileSync} from 'node:child_process';
+const dir='research-handoff/universities/continuation-250',root='research-handoff/universities/',read=p=>JSON.parse(fs.readFileSync(p));
+const ufsc=read(root+'continuation-188/shard-a/universidade-federal-de-santa-catarina.doctoral.json');
+ufsc.sources.push(...['https://ppgep.ufsc.br/gestao-de-operacoes/','https://ppgep.ufsc.br/editais/'].map(url=>({url,checkedAt:'2026-10-25',outcome:'blocked',note:'Integrator followed the actual concentration/admissions link from the read doctoral course page; target returned404. No target content claimed.'})));
+ufsc.limitations.push('Integrator reviewed the full official Doutorado page and its explicitly labelled programme concentration menu. Gestão de Operações is named in that programme menu alongside the doctoral research requirements; this establishes a programme field without claiming current advertised seats. The linked field-detail and admissions index pages returned404.');
+fs.writeFileSync(dir+'/ufsc-reviewed.doctoral.json',JSON.stringify(ufsc,null,2)+'\n');
+const specs=[['university-of-munster',183,183,183],['university-of-padua',184,184,184],['technical-university-of-darmstadt',185,185,185],['tianjin-university',186,187,186],['university-of-porto',187,187,188],['universidade-federal-de-santa-catarina',188,188,188],['university-of-bayreuth',189,189,189]];
+const path=(n,name,suffix)=>root+`continuation-${n}/shard-a/${name}.${suffix}.json`;
+const sources=specs.map(([id,n])=>path(n,id,'source-addition')),unitInputs=specs.map(([id,,n])=>path(n,id,'unit')).concat(['220/marian-original-source-blocker-unit','221/texas-southern-mis-host-unit','222/smsu-business-technology-source-unit','223/tilburg-composite-original-vacancy-limit','224/spartanburg-original-job-subject-unit','225/texas-state-original-is-alias-unit'].map(s=>{const[n,f]=s.split('/');return root+`continuation-${n}/shard-b/${f}.json`;})),programmes=specs.map(([id,,,n])=>id==='universidade-federal-de-santa-catarina'?dir+'/ufsc-reviewed.doctoral.json':path(n,id,'doctoral'));
+const scopes=['194/university-of-central-arkansas','195/universidad-torcuato-di-tella','196/villanova-university'].map(s=>{const[n,f]=s.split('/');return root+`continuation-${n}/shard-c/${f}.doctoral-scope-composite.json`;});
+const m={baseCommit:execFileSync('git',['rev-parse','HEAD'],{encoding:'utf8'}).trim(),sources,unitInputs,programmes,scopes};
+m.frozenInputs=[...new Set([...sources,...sources.map(p=>read(p).sourceCatalogue),...unitInputs,...programmes,...scopes])].map(path=>({path,sha256:crypto.createHash('sha256').update(fs.readFileSync(path)).digest('hex')}));
+fs.writeFileSync(dir+'/integration-manifest.json',JSON.stringify(m,null,2)+'\n');
+fs.writeFileSync(dir+'/apply-phase.mjs',fs.readFileSync(root+'continuation-240/apply-phase.mjs','utf8').replaceAll('continuation-240','continuation-250'));
+fs.writeFileSync(dir+'/audit-cut.mjs',fs.readFileSync(root+'continuation-240/audit-cut.mjs','utf8').replaceAll('continuation-240','continuation-250').replaceAll('506fee4:','a2899a0:').replace("const exceptions=new Map(read(dir+'/title-adjudications.json').map(x=>[x.programmeId,x]));","const exceptions=new Map();"));
+console.log({sources:sources.length,unitReviews:unitInputs.length,doctoralProposals:programmes.length,scopeFollowups:scopes.length});

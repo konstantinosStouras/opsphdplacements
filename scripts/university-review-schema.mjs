@@ -5,7 +5,7 @@ const date = v => /^\d{4}-\d{2}-\d{2}$/.test(v) && !Number.isNaN(Date.parse(v)) 
 const url = v => {
   try { const u = new URL(v); return ['https:', 'http:'].includes(u.protocol) && !u.username && !u.password; } catch { return false; }
 };
-const fields = new Set(['operations-management', 'operations-research', 'industrial-engineering', 'supply-chain', 'logistics']);
+const fields = new Set(['operations-management', 'operations-research', 'management-science', 'industrial-engineering', 'supply-chain', 'logistics']);
 const types = new Set(['department', 'school', 'faculty', 'division', 'group', 'area', 'center', 'institute', 'pillar', 'cluster', 'chair', 'laboratory']);
 const dispositions = new Set(['replaced', 'duplicate', 'out-of-scope', 'not-a-unit', 'unresolved']);
 

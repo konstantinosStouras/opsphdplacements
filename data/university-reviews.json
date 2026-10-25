@@ -2,10 +2,10 @@
   "version": 1,
   "metadata": {
     "definition": "Individual official-source reviews of university names and operations units. The original directory remains in universities.json. Reviewed describes the stated source scope, not an exhaustive current or historical census. Source notes identify the access method where recorded.",
-    "sourceRecords": 750,
-    "attempted": 750,
-    "reviewed": 563,
-    "partial": 182,
+    "sourceRecords": 757,
+    "attempted": 757,
+    "reviewed": 567,
+    "partial": 185,
     "blocked": 5,
     "pending": 0
   },
@@ -45365,8 +45365,8 @@
       "status": "partial",
       "canonicalName": null,
       "universitySourceUrl": null,
-      "checkedAt": "2026-10-20",
-      "reviewer": "Codex in Chrome",
+      "checkedAt": "2026-10-25",
+      "reviewer": "Codex; individually opened original source in Chrome",
       "units": [],
       "decisions": [
         {
@@ -45382,14 +45382,21 @@
           "url": "https://www.marian.edu/directory/",
           "outcome": "read",
           "checkedAt": "2026-10-20"
+        },
+        {
+          "url": "https://www.higheredjobs.com/faculty/details.cfm?JobCode=179156147&Title=Assistant%20Professor%20of%20Business%20Statistics",
+          "checkedAt": "2026-10-25",
+          "outcome": "blocked",
+          "note": "Actual original imported-job source opened in Chrome tab 605414372. Visible Assistant Professor of Business Statistics title and deleted 30 July 2025 notice; employer body gated by reCAPTCHA. Did not interact with challenge or use alternate protected retrieval. Closed own tab. Campus/employer identity not observed."
         }
       ],
       "limitations": [
-        "Marian University has namesakes; import supplies only United States and Business Statistics label. Need original posting/campus evidence before canonical identity or university merge. Logistics/supply-chain program chair is not sufficient to assert a distinct operations unit."
+        "Marian University has namesakes; import supplies only United States and Business Statistics label. Need original posting/campus evidence before canonical identity or university merge. Logistics/supply-chain program chair is not sufficient to assert a distinct operations unit.",
+        "25 October exact source follow-up: original job 179156147 deleted-position body has live reCAPTCHA; no challenge interaction. Namesake campus identity remains unresolved rather than inferred from generic title."
       ],
       "duplicateOf": null,
       "addedAt": "2026-10-20T09:43:28Z",
-      "updatedAt": "2026-10-20T09:43:28Z"
+      "updatedAt": "2026-10-25T20:58:16Z"
     },
     {
       "id": "marquette-university",
@@ -67814,11 +67821,11 @@
     },
     {
       "id": "southwest-minnesota-state-university",
-      "status": "partial",
+      "status": "reviewed",
       "canonicalName": "Southwest Minnesota State University",
-      "universitySourceUrl": "https://www.smsu.edu/academics/departments/bis/index.html",
-      "checkedAt": "2026-10-22",
-      "reviewer": "Codex in Chrome",
+      "universitySourceUrl": "https://www.smsu.edu/academics/schools/business/index.html",
+      "checkedAt": "2026-10-25",
+      "reviewer": "Codex; original employer-attributed posting and official school read in Chrome",
       "duplicateOf": null,
       "units": [
         {
@@ -67837,9 +67844,9 @@
       "decisions": [
         {
           "sourceDepartmentId": "southwest-minnesota-state-university____business-technology",
-          "disposition": "unresolved",
+          "disposition": "not-a-unit",
           "unitIds": [],
-          "reason": "Imported Business Technology label does not appear as a named current department in the opened business structure. Current Business Innovation and Strategy department verified separately; no undocumented historical rename or exact-source replacement inferred."
+          "reason": "Original imported vacancy text actually read: Business Technology is a teaching subject in an Assistant Professor of Management advertisement, alongside other course subjects. It is not an advertised administrative department. Original assertion preserved; no historical rename to Business Innovation and Strategy inferred."
         }
       ],
       "sources": [
@@ -67872,11 +67879,24 @@
           "checkedAt": "2026-10-22",
           "outcome": "read",
           "note": "Exact Master of Science in Cybersecurity,30credits; graduate director describes six-plus masters and licensure/certificates. No technical doctoral award."
+        },
+        {
+          "url": "https://jobs.chronicle.com/job/37938847/assistant-professor-of-management-ifo/",
+          "checkedAt": "2026-10-25",
+          "outcome": "read",
+          "note": "Actual original imported employer-attributed vacancy individually opened in Chrome, full loaded job description and employer sections read. Expired advertisement posted 15 January 2026 explicitly names Southwest Minnesota State University, Marshall. Business Technology is one course teaching subject alongside Management Principles and Entrepreneurship, not a named department. This is the original Chronicle employer publication, not independent official university unit inventory."
+        },
+        {
+          "url": "https://www.smsu.edu/academics/schools/business/index.html",
+          "checkedAt": "2026-10-25",
+          "outcome": "read",
+          "note": "Full substantive current North Star Mutual School of Business page read in Chrome. Four bachelor subjects, MBA, school identity and student organizations. No dated department rename inferred from common programme list or faculty terminal degrees."
         }
       ],
       "limitations": [
-        "Exact historical Business Technology label relationship remains unresolved; source import preserved.",
-        "Current North Star Mutual School of Business name verified, but its precise administrative parent relationship to the department was not explicit on opened pages, so department school field remains null."
+        "The sole imported Business Technology assertion is resolved as course/teaching-subject label, not a historic department. Existing current Business Innovation and Strategy department observation and original date retained.",
+        "Current school/department precise administrative hierarchy is not made more specific from overlapping programme lists; existing department school field stays null. Its nonmatching title is outside current named Operations/MS/IE gate.",
+        "Original current negative doctoral inventory remains independently dated and unchanged. Vacancy asks candidates to hold a PhD/DBA; that qualification is not evidence SMSU awards either degree."
       ],
       "doctoralReview": {
         "status": "no-qualifying-programme-verified",
@@ -67943,7 +67963,7 @@
         "coverageComplete": true
       },
       "addedAt": "2026-10-22T10:26:10Z",
-      "updatedAt": "2026-10-22T10:26:10Z"
+      "updatedAt": "2026-10-25T20:58:16Z"
     },
     {
       "id": "spartanburg-methodist-college",
@@ -67951,15 +67971,15 @@
       "canonicalName": "Spartanburg Methodist College",
       "universitySourceUrl": "https://www.smcsc.edu/academics/",
       "checkedAt": "2026-10-22",
-      "reviewer": "Codex in Chrome",
+      "reviewer": "Codex; original employer-attributed vacancy individually read in Chrome",
       "duplicateOf": null,
       "units": [],
       "decisions": [
         {
           "sourceDepartmentId": "spartanburg-methodist-college____business-stat-da-scm-om",
-          "disposition": "unresolved",
+          "disposition": "not-a-unit",
           "unitIds": [],
-          "reason": "Compound teaching/research subject label does not match a named current administrative unit in opened academic/programme inventories. No separate Business Statistics/Data Analytics/SCM/OM department inferred."
+          "reason": "Original linked InsideHigherEd vacancy actually read: Business Statistics/Analytics, Supply Chain and Operations Management are possible teaching courses for Assistant Professor of Business, not an academic department with the imported compound title."
         },
         {
           "sourceDepartmentId": "spartanburg-methodist-college____statistics-data-analytics",
@@ -67986,14 +68006,25 @@
           "checkedAt": "2026-10-22",
           "outcome": "read",
           "note": "Complete online programme inventory read: associate and bachelor degree options, IT and Business undergraduate concentrations; no graduate/doctoral award. Minor count inconsistencies in descriptive text retained without inventing a graduate programme."
+        },
+        {
+          "url": "https://careers.insidehighered.com/job/3469092/assistant-professor-of-business-statistics-data-analytics/",
+          "checkedAt": "2026-10-25",
+          "outcome": "read",
+          "note": "Full loaded original employer-attributed vacancy individually read in Chrome. Assistant Professor of Business beginning August 2026; statistics/analytics and a second business teaching area. Business Statistics, Analytics, Supply Chain and Operations Management explicitly listed as possible undergraduate courses, not compound academic department. Expired listing remains readable; no login or challenge."
+        },
+        {
+          "url": "https://www.higheredjobs.com/faculty/details.cfm?JobCode=179268322&Title=Assistant%20Professor%20of%20Business%20-%20Statistics%2FData%20Analytics",
+          "checkedAt": "2026-10-25",
+          "outcome": "blocked",
+          "note": "Actual earlier original source opened in Chrome: title and deleted 13 December 2025 notice visible; employer body requires live reCAPTCHA. No interaction or workaround. Did not assume it is identical to later InsideHigherEd role. Own tab closed."
         }
       ],
       "limitations": [
-        "Institution identity verified; administrative host of both historical subject labels remains unresolved.",
-        "Current degree programme descriptions cannot establish department identity or absence of individual Operations coursework/research."
+        "Current compound Business Stat/DA/SCM/OM source assertion resolved as teaching subjects from its actual linked vacancy. No standalone department invented.",
+        "Earlier Statistics/Data Analytics source body is behind deleted-position reCAPTCHA. Its title resembles the later posting, but exact historical host/identity of role is not inferred; that assertion remains unresolved and review partial.",
+        "Existing full current degree inventories and original 22 October dates preserved. Applicant PhD/DBA/MBA requirements do not establish local doctorate provision."
       ],
-      "addedAt": "2026-10-22T10:26:10Z",
-      "updatedAt": "2026-10-22T10:27:31Z",
       "doctoralReview": {
         "status": "no-qualifying-programme-verified",
         "checkedAt": "2026-10-22",
@@ -68044,7 +68075,9 @@
           "Source unit-label ambiguity remains separate from completed current degree-scope check."
         ],
         "coverageComplete": true
-      }
+      },
+      "addedAt": "2026-10-22T10:26:10Z",
+      "updatedAt": "2026-10-25T20:58:16Z"
     },
     {
       "id": "srm-university",
@@ -70712,6 +70745,87 @@
       "updatedAt": "2026-10-25T18:01:14Z"
     },
     {
+      "id": "technical-university-of-darmstadt",
+      "status": "partial",
+      "canonicalName": "Technical University of Darmstadt",
+      "universitySourceUrl": "https://www.tu-darmstadt.de/forschen/wissenschaftlicher_nachwuchs_tu/promotionsinteressierte_tu/index.en.jsp",
+      "checkedAt": "2026-10-25",
+      "reviewer": "Codex via opened official web pages",
+      "duplicateOf": null,
+      "units": [],
+      "decisions": [
+        {
+          "sourceDepartmentId": "technical-university-of-darmstadt--om-list-technical-university-of-darmstadt-reported-doctorate-one-profile-reported-phd-institution",
+          "disposition": "not-a-unit",
+          "unitIds": [],
+          "reason": "Reported doctorate-institution discovery label only; no department assertion or individual degree verification."
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.tu-darmstadt.de/forschen/wissenschaftlicher_nachwuchs_tu/promotionsinteressierte_tu/index.en.jsp",
+          "checkedAt": "2026-10-25",
+          "outcome": "read",
+          "note": "Full current university doctorate guidance: individual or structured research doctorates, degree award by departments."
+        },
+        {
+          "url": "https://www.wi.tu-darmstadt.de/fachbereich/fachgebiete_rw/index.de.jsp",
+          "checkedAt": "2026-10-25",
+          "outcome": "read",
+          "note": "Full Faculty of Law and Economics Fachgebiete inventory explicitly lists Management Science / Operations Research as a professorial subject unit, not a department."
+        }
+      ],
+      "limitations": [
+        "Management Science / Operations Research is a named Fachgebiet (professorial subject area) within the Faculty of Law and Economics, not verified as an independent department/school or formal doctoral specialization. It is withheld from title-eligible unit display pending such evidence.",
+        "Department-wide degree/field inventories and other possible relevant units remain incomplete; individual 2015 award is discovery only."
+      ],
+      "doctoralReview": {
+        "status": "partial",
+        "checkedAt": "2026-10-25",
+        "programmeIds": [],
+        "branches": [
+          {
+            "branch": "business",
+            "reviewState": "partial",
+            "conclusion": "Official faculty Fachgebiete inventory formally names a Management Science / Operations Research professorial subject unit, but current university doctorate guidance says award is by departments and no formal Management Science/OR degree or specialization has been evidenced. Do not infer one from supervisor area.",
+            "sourceUrls": [
+              "https://www.wi.tu-darmstadt.de/fachbereich/fachgebiete_rw/index.de.jsp",
+              "https://www.tu-darmstadt.de/forschen/wissenschaftlicher_nachwuchs_tu/promotionsinteressierte_tu/index.en.jsp"
+            ]
+          },
+          {
+            "branch": "engineering",
+            "reviewState": "partial",
+            "conclusion": "Technical/engineering department doctoral award and named field inventories remain to check; an Industrial Engineering prior-degree prerequisite is not a TU Darmstadt doctoral title.",
+            "sourceUrls": [
+              "https://www.tu-darmstadt.de/forschen/wissenschaftlicher_nachwuchs_tu/promotionsinteressierte_tu/index.en.jsp"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://www.tu-darmstadt.de/forschen/wissenschaftlicher_nachwuchs_tu/promotionsinteressierte_tu/index.en.jsp",
+            "checkedAt": "2026-10-25",
+            "outcome": "read",
+            "note": "Full current university doctorate guidance, departments confer research doctorates."
+          },
+          {
+            "url": "https://www.wi.tu-darmstadt.de/fachbereich/fachgebiete_rw/index.de.jsp",
+            "checkedAt": "2026-10-25",
+            "outcome": "read",
+            "note": "Full formal faculty subject-area inventory, Management Science/Operations Research Fachgebiet."
+          }
+        ],
+        "limitations": [
+          "No qualifying degree title or department/school host yet verified from the official pages read; chair/subject area alone is held out.",
+          "Full current department degree and formal field inventories incomplete; imported individual report is discovery only."
+        ],
+        "coverageComplete": false
+      },
+      "addedAt": "2026-10-25T20:58:16Z",
+      "updatedAt": "2026-10-25T20:58:16Z"
+    },
+    {
       "id": "technical-university-of-munich",
       "status": "partial",
       "canonicalName": "Technical University of Munich",
@@ -73180,17 +73294,17 @@
       "id": "texas-southern-university",
       "status": "partial",
       "canonicalName": "Texas Southern University",
-      "universitySourceUrl": "https://tsu.edu/academics/colleges-and-schools/jhj-school-of-business/index.php",
-      "checkedAt": "2026-10-22",
-      "reviewer": "Codex in Chrome",
+      "universitySourceUrl": "https://catalog.tsu.edu/undergraduate/schools-colleges/business/business-administration/",
+      "checkedAt": "2026-10-25",
+      "reviewer": "Codex; official catalogue overview individually opened",
       "duplicateOf": null,
       "units": [],
       "decisions": [
         {
           "sourceDepartmentId": "texas-southern-university____mis",
-          "disposition": "unresolved",
+          "disposition": "not-a-unit",
           "unitIds": [],
-          "reason": "Current undergraduate source explicitly expands MIS to Management Information Systems programme, but actual department and relevant Ops scope not established. Programme not invented as department."
+          "reason": "Official current catalogue explicitly defines Management Information Systems (MIS) as programme and functional course discipline within actual Department of Business Administration, Jesse H. Jones School of Business. No distinct MIS administrative department verified; loose student-organization wording retained separately. Current Business Administration host title does not match Operations/MS/IE gate."
         },
         {
           "sourceDepartmentId": "texas-southern-university____operations-and-logistics-management",
@@ -73223,12 +73337,18 @@
           "checkedAt": "2026-10-22",
           "outcome": "blocked",
           "note": "Original employer ad visible title Assistant Professor of Management, deleted 3 March 2026. Full deleted text requires reCaptcha. No challenge interaction or workaround. Imported Operations and Logistics Management full historical host remains unverified."
+        },
+        {
+          "url": "https://catalog.tsu.edu/undergraduate/schools-colleges/business/business-administration/",
+          "checkedAt": "2026-10-25",
+          "outcome": "read",
+          "note": "2026–27 Department of Business Administration overview, degree list, functional disciplines and relevant student-organization paragraph individually read, not all later courses. Explicitly houses MIS major/master and MIS/Management Science course disciplines. MIS is not separately named in formal department overview. Student-organization text loosely refers to MIS departments, a discrepancy retained rather than guessed historical restructuring."
         }
       ],
       "limitations": [
-        "Original Operations/Logistics job body blocked by deleted-position reCaptcha; individual limitation, no bypass.",
-        "Current MIS expansion Management Information Systems is verified as programme label, but exact department and qualifying Ops research remit remain unverified.",
-        "Current published doctoral inventory is source-bounded, not historical census or research-field equivalence claim."
+        "Current MIS programme/discipline parent is resolved as Department of Business Administration. Student-organization paragraph also calls MIS a department; no dated historical transition or second current unit inferred.",
+        "Original Operations and Logistics Management source still has live deleted-position reCAPTCHA; historical unit assertion remains unresolved, status partial. No retry or workaround.",
+        "Management Science course discipline is not a named independent department, doctorate or formal specialization. Existing doctorate inventory and original dates remain unchanged."
       ],
       "doctoralReview": {
         "status": "no-qualifying-programme-verified",
@@ -73287,15 +73407,15 @@
         "coverageComplete": true
       },
       "addedAt": "2026-10-22T12:08:40Z",
-      "updatedAt": "2026-10-22T12:08:40Z"
+      "updatedAt": "2026-10-25T20:58:16Z"
     },
     {
       "id": "texas-state-university",
       "status": "partial",
       "canonicalName": "Texas State University",
-      "universitySourceUrl": "https://www.gradcollege.txst.edu/programs/engineering-mgmt-phd.html",
-      "checkedAt": "2026-10-22",
-      "reviewer": "Codex, saved-source exact-title adjudication 25 October 2026",
+      "universitySourceUrl": "https://jobs.chronicle.com/job/37845582/assistant-professor-of-information-systems/",
+      "checkedAt": "2026-10-25",
+      "reviewer": "Codex; original employer-attributed vacancies individually read in Chrome",
       "duplicateOf": null,
       "units": [
         {
@@ -73348,15 +73468,19 @@
         },
         {
           "sourceDepartmentId": "texas-state-university____is",
-          "disposition": "unresolved",
-          "unitIds": [],
-          "reason": "Current exact Information Systems and Analytics department verified, but historical bare Analytics/IS/IS and Analytics job labels have not been independently source-matched; no automatic acronym equivalence."
+          "disposition": "replaced",
+          "unitIds": [
+            "texas-state-university--information-systems-analytics"
+          ],
+          "reason": "Exact original Chronicle Information Systems vacancy now read: expressly hosted by Department of Information Systems and Analytics in McCoy. Imported IS teaching-field abbreviation mapped to that actual host, not invented independent department."
         },
         {
           "sourceDepartmentId": "texas-state-university____is-and-analytics",
-          "disposition": "unresolved",
-          "unitIds": [],
-          "reason": "Current exact Information Systems and Analytics department verified, but historical bare Analytics/IS/IS and Analytics job labels have not been independently source-matched; no automatic acronym equivalence."
+          "disposition": "replaced",
+          "unitIds": [
+            "texas-state-university--information-systems-analytics"
+          ],
+          "reason": "Exact original InsideHigherEd pool posting now read: full Department/School Information Systems and Analytics and McCoy parent explicit. Source abbreviation expanded from actual linked employer content; additional 2025 HigherEdJobs body not claimed read."
         },
         {
           "sourceDepartmentId": "texas-state-university__mccoy-college-of-business__management",
@@ -73433,14 +73557,31 @@
           "checkedAt": "2026-10-22",
           "outcome": "read",
           "note": "Entire Management degree programmes page read. BBA concentrations entrepreneurship, human resources, leadership/decision-making. Generic Management degree not automatically qualifying Operations research unit."
+        },
+        {
+          "url": "https://jobs.chronicle.com/job/37845582/assistant-professor-of-information-systems/",
+          "checkedAt": "2026-10-25",
+          "outcome": "read",
+          "note": "Actual original employer-attributed Chronicle vacancy full job body read in Chrome despite expired listing. Posted 16 June 2025, exact posting 2026002TTL. Assistant Professor of Information Systems expressly hosted by Department of Information Systems and Analytics (ISA), McCoy College. Teaching field and actual department separated; primary current unit already independently verified."
+        },
+        {
+          "url": "https://careers.insidehighered.com/job/3328688/nontenure-faculty-pool-department-of-information-systems-and-analytics/",
+          "checkedAt": "2026-10-25",
+          "outcome": "read",
+          "note": "Actual original employer-attributed InsideHigherEd full job body read. Explicit Department/School Information Systems and Analytics in McCoy; exact posting 202459NTL, original post 20 February 2024, review 31 May 2025, FY24/FY25 pool at San Marcos/Round Rock. OA listing date does not become university original-post date."
+        },
+        {
+          "url": "https://jobs.hr.txstate.edu/postings/54459",
+          "checkedAt": "2026-10-25",
+          "outcome": "blocked",
+          "note": "Original bare Analytics official employer vacancy individually opened in Chrome: posting unavailable, body not observed. No inferred mapping from similar current department or other vacancies. Own tab closed."
         }
       ],
       "limitations": [
-        "Current Engineering Technology standalone programme page omits two PhDs that current 2026–27 catalogue and Graduate College explicitly confirm.",
-        "Bare historical Analytics/IS source labels and relevant Management scope remain unresolved; current full-name ISA department does not automatically settle each old posting.",
-        "Wider Civil/Construction/Materials/Mathematics doctoral fields require separate detailed scope checks; coverage not marked complete.",
-        "Two entry pathways per PhD are same award; IBOE MS and DBA not promoted to PhD.",
-        "25 October 2026 source-bounded title adjudication closes only known actual Management label. Bare Analytics, IS and IS and Analytics historical identity/expansion remain unresolved; review stays partial. Source-check dates preserved; no new primary read claimed."
+        "Two original IS and IS/Analytics assertions resolved to actual ISA department from their linked employer-attributed vacancies, supported by already verified official current unit. Exact nonmatching department title remains outside named Operations/MS/IE display gate.",
+        "Bare Analytics posting 54459 is unavailable; remains unresolved and unit review partial. No fuzzy acronym mapping or assumed duplicate vacancy.",
+        "Existing current doctorate observations and original programme/unit dates retained unchanged. Job applicant PhD/DBA requirements do not establish local PhD provision.",
+        "InsideHigherEd source body original post February 2024 and review May 2025 differ OA June 2025 listing date; preserve date meanings, no overwrite of imported data."
       ],
       "doctoralReview": {
         "status": "verified",
@@ -73561,7 +73702,7 @@
         "coverageComplete": true
       },
       "addedAt": "2026-10-22T12:14:06Z",
-      "updatedAt": "2026-10-25T19:45:59Z"
+      "updatedAt": "2026-10-25T20:58:16Z"
     },
     {
       "id": "texas-tech-university",
@@ -77237,12 +77378,177 @@
       }
     },
     {
+      "id": "tianjin-university",
+      "status": "reviewed",
+      "canonicalName": "Tianjin University",
+      "universitySourceUrl": "https://en.tju.edu.cn/info/1018/11226.htm",
+      "checkedAt": "2026-10-25",
+      "reviewer": "Codex via opened official web pages",
+      "duplicateOf": null,
+      "units": [
+        {
+          "id": "tianjin-university--industrial-engineering",
+          "name": "工业工程系 (Department of Industrial Engineering)",
+          "school": "College of Management and Economics",
+          "type": "department",
+          "fields": [
+            "industrial-engineering"
+          ],
+          "sourceUrl": "https://come.tju.edu.cn/kxyj/yxsz/gygcx.htm",
+          "checkedAt": "2026-10-25",
+          "evidence": "Official current College of Management and Economics department page explicitly names 工业工程系; current department professor page lists a doctoral supervisor taking Management Science and Engineering doctoral applicants."
+        },
+        {
+          "id": "tianjin-university--operations-supply-chain-management",
+          "name": "运营与供应链管理系 (Department of Operations and Supply Chain Management)",
+          "school": "College of Management and Economics",
+          "type": "department",
+          "fields": [
+            "operations-management",
+            "supply-chain"
+          ],
+          "sourceUrl": "https://come.tju.edu.cn/kxyj/yxsz/yyygylglx.htm",
+          "checkedAt": "2026-10-25",
+          "evidence": "Official current college department page explicitly names 运营与供应链管理系 and describes its Management Science and Engineering doctoral pathway in logistics/supply chain, with Management Science and Engineering or Industrial Engineering award wording."
+        },
+        {
+          "id": "tianjin-university--information-management-management-science",
+          "name": "信息管理与管理科学系 (Department of Information Management and Management Science)",
+          "school": "College of Management and Economics",
+          "type": "department",
+          "fields": [
+            "management-science"
+          ],
+          "sourceUrl": "https://come.tju.edu.cn/kxyj/yxsz/xxglyglkxx.htm",
+          "checkedAt": "2026-10-25",
+          "evidence": "Official current college department page names 信息管理与管理科学系. Management Science is the exact named field; no Operations Research assertion is made."
+        }
+      ],
+      "decisions": [
+        {
+          "sourceDepartmentId": "tianjin-university--om-list-tianjin-university-reported-doctorate-one-profile-reported-phd-institution",
+          "disposition": "not-a-unit",
+          "unitIds": [],
+          "reason": "Reported doctorate-institution discovery label only; no department assertion or individual degree verification."
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://en.tju.edu.cn/info/1018/11226.htm",
+          "checkedAt": "2026-10-25",
+          "outcome": "read",
+          "note": "Full official English university 2026 graduate admissions page, current institutional name and doctoral provision."
+        },
+        {
+          "url": "https://come.tju.edu.cn/kxyj/yxsz/gygcx.htm",
+          "checkedAt": "2026-10-25",
+          "outcome": "read",
+          "note": "Full official Industrial Engineering department page."
+        },
+        {
+          "url": "https://come.tju.edu.cn/kxyj/yxsz/yyygylglx.htm",
+          "checkedAt": "2026-10-25",
+          "outcome": "read",
+          "note": "Full official Operations and Supply Chain Management department page and doctoral pathway description."
+        },
+        {
+          "url": "https://come.tju.edu.cn/kxyj/yxsz/xxglyglkxx.htm",
+          "checkedAt": "2026-10-25",
+          "outcome": "read",
+          "note": "Full official Information Management and Management Science department page."
+        },
+        {
+          "url": "https://come.tju.edu.cn/info/1624/10723.htm",
+          "checkedAt": "2026-10-25",
+          "outcome": "read",
+          "note": "Full current official IE department professor profile; PhD admissions field Management Science and Engineering."
+        }
+      ],
+      "limitations": [
+        "Management Science and Engineering is the independently confirmed current PhD discipline; the three department labels are distinct organizational units, not three separately awarded doctoral degrees.",
+        "The Operations department page mentions an Industrial Engineering award alternative, but an independent current admissions route/award is not confirmed and is not separately counted."
+      ],
+      "doctoralReview": {
+        "status": "verified",
+        "checkedAt": "2026-10-25",
+        "programmeIds": [
+          "tianjin-university--management-science-engineering-phd"
+        ],
+        "branches": [
+          {
+            "branch": "business",
+            "reviewState": "partial",
+            "conclusion": "Current College of Management and Economics IE and Operations departments and Management Science and Engineering academic doctorate verified; college discipline matrix also lists Industrial Engineering and Operations Management subdisciplines, but distinct current award pathways require further reconciliation.",
+            "sourceUrls": [
+              "https://come.tju.edu.cn/info/1624/10723.htm",
+              "https://come.tju.edu.cn/kxyj/yxsz/yyygylglx.htm",
+              "https://come.tju.edu.cn/info/1013/11413.htm"
+            ]
+          },
+          {
+            "branch": "engineering",
+            "reviewState": "partial",
+            "conclusion": "College's Industrial Engineering department and hosted Management Science and Engineering academic doctorate verified; wider university engineering/math doctoral field inventory remains incomplete.",
+            "sourceUrls": [
+              "https://come.tju.edu.cn/kxyj/yxsz/gygcx.htm",
+              "https://en.tju.edu.cn/info/1018/11226.htm"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://come.tju.edu.cn/info/1624/10723.htm",
+            "checkedAt": "2026-10-25",
+            "outcome": "read",
+            "note": "Full current IE professor profile gives exact Management Science and Engineering PhD admission field."
+          },
+          {
+            "url": "https://come.tju.edu.cn/kxyj/yxsz/yyygylglx.htm",
+            "checkedAt": "2026-10-25",
+            "outcome": "read",
+            "note": "Full Operations and Supply Chain Management department page lists doctoral pathway and degree alternatives."
+          },
+          {
+            "url": "https://come.tju.edu.cn/kxyj/yxsz/gygcx.htm",
+            "checkedAt": "2026-10-25",
+            "outcome": "read",
+            "note": "Full Industrial Engineering department page."
+          },
+          {
+            "url": "https://come.tju.edu.cn/kxyj/yxsz/xxglyglkxx.htm",
+            "checkedAt": "2026-10-25",
+            "outcome": "read",
+            "note": "Full Information Management and Management Science department page."
+          },
+          {
+            "url": "https://come.tju.edu.cn/info/1013/11413.htm",
+            "checkedAt": "2026-10-25",
+            "outcome": "read",
+            "note": "Current college 2026 doctoral admissions posting (linked detailed PDF not yet read)."
+          },
+          {
+            "url": "https://en.tju.edu.cn/info/1018/11226.htm",
+            "checkedAt": "2026-10-25",
+            "outcome": "read",
+            "note": "Full English 2026 university graduate admission overview."
+          }
+        ],
+        "limitations": [
+          "Current college 2026 detailed doctoral admissions PDF and full university formal doctoral field inventory remain to read; doctoral scope stays partial.",
+          "One Management Science and Engineering academic doctoral route verified; no duplicate Industrial Engineering degree inferred from department wording alone."
+        ],
+        "coverageComplete": false
+      },
+      "addedAt": "2026-10-25T20:58:16Z",
+      "updatedAt": "2026-10-25T20:58:16Z"
+    },
+    {
       "id": "tilburg-university",
       "status": "partial",
       "canonicalName": "Tilburg University",
       "universitySourceUrl": "https://www.tilburguniversity.edu/about/schools/economics-and-management/organization/departments/information-systems-and-operations-management",
       "checkedAt": "2026-10-25",
-      "reviewer": "Codex; opened official web page and university-hosted review PDF",
+      "reviewer": "Codex; official web sources and original vacancy in Chrome",
       "units": [
         {
           "id": "tilburg-university--econometrics-operations-research",
@@ -77336,12 +77642,19 @@
           "checkedAt": "2026-10-25",
           "outcome": "read",
           "note": "University-hosted 2021 research review, relevant organization paragraphs in sections 11.1 (printed page 30) and 12.1 (page 34) individually read, not entire 59-page report. Around 2014–15 Organization and Strategy merged with Information Management as Department of Management. Actual 2015 Information and Supply Chain Management group was one of two sections within that department. Thus imported Management, Information and Supply Chain Management wording conflates a department and its group, not a separate compound-title department. No direct transition date to current ISOM asserted."
+        },
+        {
+          "url": "https://career5.successfactors.eu/career?career_ns=job_listing&company=S003974031P&navBarLevel=JOB_SEARCH&rcm_site_locale=en_US&career_job_req_id=22838&selected_lang=en_US",
+          "checkedAt": "2026-10-25",
+          "outcome": "blocked",
+          "note": "Exact frozen original SuccessFactors vacancy requisition 22838 individually opened in Chrome, omitting obsolete tracking/session parameters. Visible employer platform states job deleted or no longer available; no original body or bare IS expansion observed. No login, protected retrieval or guessed alternative. Own source tab 605414383 closed."
         }
       ],
       "limitations": [
         "Bare imported IS remains unresolved: no original posting body was read to verify expansion or exact host. Review remains partial for that material source assertion.",
         "Historical Management/ISCM department-section distinction is verified; exact departmental transition date to current ISOM remains unknown. No duplicate current unit or programme created.",
-        "Current doctoral programme evidence and original dates preserved separately; this is a source-label/unit update, not a new doctorate."
+        "Current doctoral programme evidence and original dates preserved separately; this is a source-label/unit update, not a new doctorate.",
+        "Exact original IS vacancy requisition 22838 now actually checked and unavailable on employer platform; this remains a material acronym/host gap, not missing generic research-topic exploration."
       ],
       "duplicateOf": null,
       "doctoralReview": {
@@ -77403,7 +77716,7 @@
         "coverageComplete": true
       },
       "addedAt": "2026-10-21T11:51:57Z",
-      "updatedAt": "2026-10-25T20:49:16Z"
+      "updatedAt": "2026-10-25T20:58:16Z"
     },
     {
       "id": "tobb-university-of-economics-and-technology",
@@ -80262,28 +80575,31 @@
       ],
       "duplicateOf": null,
       "addedAt": "2026-10-20T09:25:45Z",
-      "updatedAt": "2026-10-21T11:14:34Z",
+      "updatedAt": "2026-10-25T20:58:16Z",
       "doctoralReview": {
-        "status": "partial",
-        "checkedAt": "2026-10-21",
+        "status": "no-qualifying-programme-verified",
+        "checkedAt": "2026-10-25",
         "programmeIds": [],
         "branches": [
           {
             "branch": "business",
-            "reviewState": "partial",
-            "conclusion": "School of Business current offering includes Doctorado en Ciencia Aplicada y Tecnología, a research dissertation doctorate. Its stated research scope is digital technology/cognitive neuroscience/AI, with broad open disciplinary framing; no explicit Operations specialization established from programme body. Faculty prior Operations PhDs are not programme-field evidence.",
+            "reviewState": "checked",
+            "conclusion": "Full current Business graduate menu and exact Applied Science and Technology doctoral curriculum read. Only doctoral offer has broad nonmatching degree/school titles; Logistics and Operations is an elective, not named doctoral research field or qualifying department. Faculty qualifications and generic research interests do not create local doctorate.",
             "sourceUrls": [
+              "https://www.utdt.edu/posgrados",
               "https://www.utdt.edu/negocios",
               "https://www.utdt.edu/listado_contenidos.php?id_item_menu=43243"
             ]
           },
           {
             "branch": "engineering",
-            "reviewState": "partial",
-            "conclusion": "Current engineering school exists and offers Industrial Engineering; school research includes operations/logistics/optimization. No explicit link of these fields to the broad Applied Science doctorate verified; no distinct Industrial doctorate inferred.",
+            "reviewState": "checked",
+            "conclusion": "Current complete institutional postgraduate/academic-unit menus, actual Engineering and Applied Science school and Industrial Engineering five-year degree context checked. No qualifying named engineering doctoral field/department established. IEprogramme starts March2027 at undergraduate level; broad Applied Science doctorate does not automatically become IE through school research.",
             "sourceUrls": [
+              "https://www.utdt.edu/posgrados",
+              "https://www.utdt.edu/listado_contenidos.php?id_item_menu=43243",
               "https://www.utdt.edu/Ingenieria",
-              "https://www.utdt.edu/listado_contenidos.php?id_item_menu=43243"
+              "https://www.utdt.edu/ver_contenido.php?id_contenido=26059&id_item_menu=41405"
             ]
           }
         ],
@@ -80311,12 +80627,49 @@
             "checkedAt": "2026-10-21",
             "outcome": "read",
             "note": "Full engineering school overview read, Industrial undergraduate route and research laboratories/seminars; no explicit relevant doctoral field."
+          },
+          {
+            "url": "https://www.utdt.edu/posgrados",
+            "checkedAt": "2026-10-25",
+            "outcome": "read",
+            "accessMethod": "web.open/click actual official HTML; authorized fallback",
+            "note": "Complete actual postgraduate admissions programme inventory read, current2027 information sessions and complete academic-unit menu. Only unrelated Politics, International Studies, Law and History doctorates on this general menu; separate Applied Science doctorate verified from Business page rather than assumed absent from general list."
+          },
+          {
+            "url": "https://www.utdt.edu/negocios",
+            "checkedAt": "2026-10-25",
+            "outcome": "read",
+            "accessMethod": "web.open/click actual official HTML; authorized fallback",
+            "note": "Actual complete Business programme menu read: MBA,FinanceMaster,ManagementAnalyticsAIMaster,Doctorado en Ciencia Aplicada y Tecnologia. Faculty qualifications not treated as local awards; ancillary news not used for programme conclusion."
+          },
+          {
+            "url": "https://www.utdt.edu/listado_contenidos.php?id_item_menu=43243",
+            "checkedAt": "2026-10-25",
+            "outcome": "read",
+            "accessMethod": "web.open/click actual official HTML; authorized fallback",
+            "note": "Actual Applied Science and Technology doctoral objective, full study structure and mandatory/elective curriculum read. Original scientific papers, four-year research and doctoral thesis defence. Logistics and Operations is explicitly an elective course, not a named doctoral specialization. Faculty prior Operations PhDs do not confer local matching doctoral title. Broad digital technology, cognitive neuroscience and AI research examples not relabelled OR."
+          },
+          {
+            "url": "https://www.utdt.edu/Ingenieria",
+            "checkedAt": "2026-10-25",
+            "outcome": "read",
+            "accessMethod": "web.open/click actual official HTML; authorized fallback",
+            "note": "Actual Engineering and Applied Science school mission, programme navigation and research-laboratory menu read. Industrial Engineering link is a degree programme, not a named standalone department. Faculty operations/production work and2026research seminars are not independently doctoral field evidence."
+          },
+          {
+            "url": "https://www.utdt.edu/ver_contenido.php?id_contenido=26059&id_item_menu=41405",
+            "checkedAt": "2026-10-25",
+            "outcome": "read",
+            "accessMethod": "web.open/click actual official HTML; authorized fallback",
+            "note": "Actual Industrial Engineering programme level/context, five-year duration, named four concentration areas and March2027 new-degree start read. This is the school undergraduate engineering offer, not a research doctorate; unrelated long course/news sections not used."
           }
         ],
         "limitations": [
-          "Doctoral field-to-Operations mapping unresolved. Broad research-doctorate existence established but no qualifying programme added from faculty qualifications or research interests alone."
+          "Source-bounded current title/field scope, not a claim no individual doctoral Operations thesis is possible. Earlier broad-degree mapping uncertainty retained as history, resolved negatively under stricter title gate rather than by guessing hidden concentrations.",
+          "General postgraduate admissions menu omits Applied Science doctorate; actual current school menu and full doctoral curriculum independently reviewed, so no programme absence inferred from omission alone.",
+          "Original20/21October identity/source facts retained; no new route, faculty career research, browser tabs or public merger commands."
         ],
-        "coverageComplete": false
+        "coverageComplete": true
       }
     },
     {
@@ -80567,6 +80920,107 @@
       },
       "addedAt": "2026-10-20T09:25:45Z",
       "updatedAt": "2026-10-22T17:32:28Z"
+    },
+    {
+      "id": "universidade-federal-de-santa-catarina",
+      "status": "partial",
+      "canonicalName": "Universidade Federal de Santa Catarina",
+      "universitySourceUrl": "https://ppgep.ufsc.br/sobre-doutorado/",
+      "checkedAt": "2026-10-25",
+      "reviewer": "Codex via opened official web page",
+      "duplicateOf": null,
+      "units": [],
+      "decisions": [
+        {
+          "sourceDepartmentId": "universidade-federal-de-santa-catarina--om-list-universidade-federal-de-santa-catarina-reported-doctorate-one-profile-reported-phd-institution",
+          "disposition": "not-a-unit",
+          "unitIds": [],
+          "reason": "Reported doctorate-institution discovery label only; no department assertion or individual degree verification."
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://ppgep.ufsc.br/sobre-doutorado/",
+          "checkedAt": "2026-10-25",
+          "outcome": "read",
+          "note": "Full official postgraduate page confirms doctoral curriculum and site navigation names formal Gestão de Operações concentration."
+        },
+        {
+          "url": "https://deps.ufsc.br/departamento/",
+          "checkedAt": "2026-10-25",
+          "outcome": "blocked",
+          "note": "Official department page full open returned 404 in this access method; search discovery suggests Departamento de Engenharia de Produção e Sistemas but it is not promoted as a reviewed unit."
+        }
+      ],
+      "limitations": [
+        "No independently opened current official department inventory; Engenharia de Produção e Sistemas is not relabelled Industrial Engineering.",
+        "The imported faculty member's 2000 doctoral award and field remain discovery only."
+      ],
+      "doctoralReview": {
+        "status": "verified",
+        "checkedAt": "2026-10-25",
+        "programmeIds": [
+          "universidade-federal-de-santa-catarina--engineering-production-operations-management-doctorate"
+        ],
+        "branches": [
+          {
+            "branch": "business",
+            "reviewState": "partial",
+            "conclusion": "Other university business doctoral fields and school inventories not read.",
+            "sourceUrls": [
+              "https://ppgep.ufsc.br/sobre-doutorado/"
+            ]
+          },
+          {
+            "branch": "engineering",
+            "reviewState": "partial",
+            "conclusion": "PPGEP doctoral research structure and formal Gestão de Operações area read; department and other named technical doctoral programmes remain to inventory.",
+            "sourceUrls": [
+              "https://ppgep.ufsc.br/sobre-doutorado/"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://ppgep.ufsc.br/sobre-doutorado/",
+            "checkedAt": "2026-10-25",
+            "outcome": "read",
+            "note": "Full official doctorate page, thesis and research-credit requirements; menu lists four formal concentration areas including Gestão de Operações; footer last update 22 October 2026."
+          },
+          {
+            "url": "https://ppgep.ufsc.br/selecao-me-e-do-ingresso-20271/",
+            "checkedAt": "2026-10-25",
+            "outcome": "blocked",
+            "note": "Official 2027-entry selection page returned 404 on full open; search discovery text not treated as read evidence."
+          },
+          {
+            "url": "https://ppgep.ufsc.br/files/2026/05/ANEXO-E-2026-2vs.pdf",
+            "checkedAt": "2026-10-25",
+            "outcome": "blocked",
+            "note": "Official 2026 selection attachment returned 404 on full open; search extraction not used as verification."
+          },
+          {
+            "url": "https://ppgep.ufsc.br/gestao-de-operacoes/",
+            "checkedAt": "2026-10-25",
+            "outcome": "blocked",
+            "note": "Integrator followed the actual concentration/admissions link from the read doctoral course page; target returned404. No target content claimed."
+          },
+          {
+            "url": "https://ppgep.ufsc.br/editais/",
+            "checkedAt": "2026-10-25",
+            "outcome": "blocked",
+            "note": "Integrator followed the actual concentration/admissions link from the read doctoral course page; target returned404. No target content claimed."
+          }
+        ],
+        "limitations": [
+          "Current admissions/seat documentation could not be fully opened; title and doctoral research structure derive from the accessible programme page.",
+          "Other branches incomplete; imported individual's 2000 doctorate is unverified discovery.",
+          "Integrator reviewed the full official Doutorado page and its explicitly labelled programme concentration menu. Gestão de Operações is named in that programme menu alongside the doctoral research requirements; this establishes a programme field without claiming current advertised seats. The linked field-detail and admissions index pages returned404."
+        ],
+        "coverageComplete": false
+      },
+      "addedAt": "2026-10-25T20:58:16Z",
+      "updatedAt": "2026-10-25T20:58:16Z"
     },
     {
       "id": "universita-della-svizzera-italiana",
@@ -84911,6 +85365,87 @@
       }
     },
     {
+      "id": "university-of-bayreuth",
+      "status": "partial",
+      "canonicalName": "University of Bayreuth",
+      "universitySourceUrl": "https://www.uni-bayreuth.de/en/doctorate",
+      "checkedAt": "2026-10-25",
+      "reviewer": "Codex via opened official web pages",
+      "duplicateOf": null,
+      "units": [],
+      "decisions": [
+        {
+          "sourceDepartmentId": "university-of-bayreuth--om-list-university-of-bayreuth-reported-doctorate-one-profile-reported-phd-institution",
+          "disposition": "not-a-unit",
+          "unitIds": [],
+          "reason": "Reported doctorate-institution discovery label only; no department assertion or individual degree verification."
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.uni-bayreuth.de/en/doctorate",
+          "checkedAt": "2026-10-25",
+          "outcome": "read",
+          "note": "Full official university doctoral overview identifies University of Bayreuth, seven faculty doctoral routes and five graduate centres."
+        },
+        {
+          "url": "https://www.baying.uni-bayreuth.de/en/doctoral-programs/",
+          "checkedAt": "2026-10-25",
+          "outcome": "read",
+          "note": "Full official BayING inventory lists two engineering structured programmes, Battery Technology and Engineering Science Bayreuth–Australia."
+        }
+      ],
+      "limitations": [
+        "Faculty/school department inventory has not yet been fully read for an officially titled Operations, Management Science or Industrial Engineering unit.",
+        "Generic engineering doctoral eligibility, prerequisite Master's in Industrial Engineering and professorial research chairs are not treated as qualifying programme/unit titles."
+      ],
+      "doctoralReview": {
+        "status": "partial",
+        "checkedAt": "2026-10-25",
+        "programmeIds": [],
+        "branches": [
+          {
+            "branch": "business",
+            "reviewState": "partial",
+            "conclusion": "University doctoral overview confirms BayREW law, ethics, business management and economics graduate centre; formal named Operations/Management Science fields not yet inventoried.",
+            "sourceUrls": [
+              "https://www.uni-bayreuth.de/en/doctorate"
+            ]
+          },
+          {
+            "branch": "engineering",
+            "reviewState": "partial",
+            "conclusion": "Official BayING structured programme inventory contains Battery Technology and Engineering Science Bayreuth–Australia, neither qualifying by formal title. Faculty-level individual doctorates and possible named technical fields remain to assess.",
+            "sourceUrls": [
+              "https://www.uni-bayreuth.de/en/doctorate",
+              "https://www.baying.uni-bayreuth.de/en/doctoral-programs/"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://www.uni-bayreuth.de/en/doctorate",
+            "checkedAt": "2026-10-25",
+            "outcome": "read",
+            "note": "Full official doctoral process page confirms original-thesis doctorates through seven faculties/five centres; no qualifying named title in its overview."
+          },
+          {
+            "url": "https://www.baying.uni-bayreuth.de/en/doctoral-programs/",
+            "checkedAt": "2026-10-25",
+            "outcome": "read",
+            "note": "Full engineering graduate-centre structured programme list: Battery Technology and Engineering Science Bayreuth–Australia."
+          }
+        ],
+        "limitations": [
+          "A current doctorate exists, but no actually opened official page yet establishes a relevant formally named doctoral title, specialization or reviewed department/school title. No verified qualifying route is proposed.",
+          "2025 OM List individual degree report is discovery only; personal credential field remains unverified."
+        ],
+        "coverageComplete": false
+      },
+      "addedAt": "2026-10-25T20:58:16Z",
+      "updatedAt": "2026-10-25T20:58:16Z"
+    },
+    {
       "id": "university-of-birmingham",
       "status": "partial",
       "canonicalName": "University of Birmingham",
@@ -88000,26 +88535,28 @@
       "limitations": [],
       "duplicateOf": null,
       "addedAt": "2026-10-20T10:06:22Z",
-      "updatedAt": "2026-10-22T10:18:05Z",
+      "updatedAt": "2026-10-25T20:58:16Z",
       "doctoralReview": {
-        "status": "partial",
-        "checkedAt": "2026-10-22",
+        "status": "no-qualifying-programme-verified",
+        "checkedAt": "2026-10-25",
         "programmeIds": [],
         "branches": [
           {
             "branch": "business",
-            "reviewState": "partial",
-            "conclusion": "Official university-wide graduate programme inventory could not load; no current doctoral branch determination made from discovery snippet.",
+            "reviewState": "checked",
+            "conclusion": "Official current2026–27 complete graduate degree inventory read: business offers MBA and Master of Accountancy; only PhD titles are Leadership for Inclusion and Equity, Physical Therapy and Psychology. No matching business Operations/MS/IE doctorate verified.",
             "sourceUrls": [
-              "https://uca.edu/graduateschool/gradprograms/"
+              "https://uca.edu/gbulletin/home/",
+              "https://uca.edu/gbulletin/the-graduate-school/"
             ]
           },
           {
             "branch": "engineering",
-            "reviewState": "partial",
-            "conclusion": "Official university-wide graduate programme inventory could not load; no current doctoral branch determination made from discovery snippet.",
+            "reviewState": "checked",
+            "conclusion": "Same complete university-wide graduate degree inventory read; no engineering doctorate listed. Computing, Applied Mathematics and Applied Data Analytics are masters, not doctorate provision. Unrelated health/education PhD and professional clinical doctorates do not qualify.",
             "sourceUrls": [
-              "https://uca.edu/graduateschool/gradprograms/"
+              "https://uca.edu/gbulletin/home/",
+              "https://uca.edu/gbulletin/the-graduate-school/"
             ]
           }
         ],
@@ -88029,12 +88566,35 @@
             "checkedAt": "2026-10-22",
             "outcome": "blocked",
             "note": "Chrome navigation/body timed out; fresh browser state displayed site cannot be reached ERR_TIMED_OUT. No primary programme content read, no qualification inferred."
+          },
+          {
+            "url": "https://uca.edu/gbulletin/home/",
+            "checkedAt": "2026-10-25",
+            "outcome": "read",
+            "accessMethod": "web.open actual official HTML; authorized fallback",
+            "note": "Full official bulletin landing read. Published June2026, identifies this as official current2026–27 Graduate Bulletin effective Fall2026."
+          },
+          {
+            "url": "https://uca.edu/gbulletin/fields-of-study/",
+            "checkedAt": "2026-10-25",
+            "outcome": "blocked",
+            "accessMethod": "web.click actual bulletin Fields of Study link",
+            "note": "Field index fetch timed out, body unread. No retry. Separate current complete degree list on actual Graduate School bulletin page read instead."
+          },
+          {
+            "url": "https://uca.edu/gbulletin/the-graduate-school/",
+            "checkedAt": "2026-10-25",
+            "outcome": "read",
+            "accessMethod": "web.click actual official full HTML; authorized fallback",
+            "note": "Full substantive current Graduate School bulletin read including complete Graduate Degrees and Programs list. PhDs Leadership for Inclusion and Equity, Physical Therapy, Psychology; professional DNP/OTD/DPT separate. Business MBA/MAcc, Applied Data Analytics/Applied Mathematics/Computer Science MS. No relevant business/engineering doctoral title. Visible editorial suggestion to link Graduate School list preserved, not mistaken for additional programme or instruction."
           }
         ],
         "limitations": [
-          "Individual university source unavailable; continue other universities. No claim of programme absence or completed inventory; discovery search result not verification."
+          "Source-bounded current official published bulletin inventory, not a claim that no Operations faculty research exists. Prior22October timed-out graduate-programme site and fresh25October field-index failure remain explicit; neither was retried or treated as programme absence.",
+          "Current bulletin degree-list body contains an editorial note about avoiding conflicting duplicate lists; retained as source limitation, but actual published official complete list is readable and identifies doctoral versus masters awards.",
+          "No browser tabs, public edits or merger commands."
         ],
-        "coverageComplete": false
+        "coverageComplete": true
       }
     },
     {
@@ -97043,6 +97603,87 @@
       }
     },
     {
+      "id": "university-of-munster",
+      "status": "partial",
+      "canonicalName": "University of Münster",
+      "universitySourceUrl": "https://www.wiwi.uni-muenster.de/fakultaet/en/research/doctorate",
+      "checkedAt": "2026-10-25",
+      "reviewer": "Codex via opened official web pages",
+      "duplicateOf": null,
+      "units": [],
+      "decisions": [
+        {
+          "sourceDepartmentId": "university-of-munster--om-list-munster-university-reported-doctorate-one-profile-reported-phd-institution",
+          "disposition": "not-a-unit",
+          "unitIds": [],
+          "reason": "Reported doctorate-institution discovery label only; no department assertion or individual degree verification."
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.wiwi.uni-muenster.de/fakultaet/en/research/doctorate",
+          "checkedAt": "2026-10-25",
+          "outcome": "read",
+          "note": "Full official School of Business and Economics current doctorate overview; university identity, Dr. rer. pol. award."
+        },
+        {
+          "url": "https://www.wiwi.uni-muenster.de/fakultaet/en/research/doctorate/ways-your-doctorate",
+          "checkedAt": "2026-10-25",
+          "outcome": "read",
+          "note": "Full official current dissertation and supervisory-path page; doctorate generally organized through chairs/institutes, not a fixed named Operations field."
+        }
+      ],
+      "limitations": [
+        "No officially titled Operations, quantitative Management Science or Industrial Engineering department/school established from checked business doctoral pages; source only imports a bare institution label.",
+        "Current faculty chair/institute inventory and quantitative/technical doctoral titles remain to review; individual 2006 doctorate is discovery only."
+      ],
+      "doctoralReview": {
+        "status": "partial",
+        "checkedAt": "2026-10-25",
+        "programmeIds": [],
+        "branches": [
+          {
+            "branch": "business",
+            "reviewState": "partial",
+            "conclusion": "School of Business and Economics explicitly offers Dr. rer. pol. academic research doctorates with dissertations and supervision by chairs/institutes, but the checked central pages do not establish a formally named Operations/Management Science doctorate. Relevant institute titles remain to inventory.",
+            "sourceUrls": [
+              "https://www.wiwi.uni-muenster.de/fakultaet/en/research/doctorate",
+              "https://www.wiwi.uni-muenster.de/fakultaet/en/research/doctorate/ways-your-doctorate"
+            ]
+          },
+          {
+            "branch": "engineering",
+            "reviewState": "partial",
+            "conclusion": "University technical/mathematical doctoral titles not yet inventoried; no Industrial Engineering degree is inferred from an unrelated institution's guest professor or admissions prerequisite.",
+            "sourceUrls": [
+              "https://www.wiwi.uni-muenster.de/fakultaet/en/research/doctorate"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://www.wiwi.uni-muenster.de/fakultaet/en/research/doctorate",
+            "checkedAt": "2026-10-25",
+            "outcome": "read",
+            "note": "Full university business school doctorate overview and exact Dr. rer. pol. degree."
+          },
+          {
+            "url": "https://www.wiwi.uni-muenster.de/fakultaet/en/research/doctorate/ways-your-doctorate",
+            "checkedAt": "2026-10-25",
+            "outcome": "read",
+            "note": "Full doctoral pathways page, independent dissertation and chair/institute supervision."
+          }
+        ],
+        "limitations": [
+          "No title-eligible formal route yet verified; relevant business chair/institute and quantitative doctoral-field inventories remain incomplete.",
+          "Imported individual's 2006 doctorate remains discovery-only."
+        ],
+        "coverageComplete": false
+      },
+      "addedAt": "2026-10-25T20:58:16Z",
+      "updatedAt": "2026-10-25T20:58:16Z"
+    },
+    {
       "id": "university-of-navarra",
       "status": "reviewed",
       "canonicalName": "University of Navarra",
@@ -101557,6 +102198,102 @@
       }
     },
     {
+      "id": "university-of-padua",
+      "status": "reviewed",
+      "canonicalName": "University of Padua",
+      "universitySourceUrl": "https://www.unipd.it/en/dottoratoscheda/industrial-engineering",
+      "checkedAt": "2026-10-25",
+      "reviewer": "Codex via opened official web pages",
+      "duplicateOf": null,
+      "units": [
+        {
+          "id": "university-of-padua--industrial-engineering",
+          "name": "Department of Industrial Engineering",
+          "school": null,
+          "type": "department",
+          "fields": [
+            "industrial-engineering"
+          ],
+          "sourceUrl": "https://www.unipd.it/en/dottoratoscheda/industrial-engineering",
+          "checkedAt": "2026-10-25",
+          "evidence": "Full official university doctoral programme page gives Department of Industrial Engineering as contact/host for the explicitly named PhD in Industrial Engineering."
+        }
+      ],
+      "decisions": [
+        {
+          "sourceDepartmentId": "university-of-padua--om-list-university-of-padua-reported-doctorate-one-profile-reported-phd-institution",
+          "disposition": "not-a-unit",
+          "unitIds": [],
+          "reason": "Reported doctorate-institution discovery label only; no department assertion or individual degree verification."
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.unipd.it/en/dottoratoscheda/industrial-engineering",
+          "checkedAt": "2026-10-25",
+          "outcome": "read",
+          "note": "Full university doctoral course page, exact university identity, PhD title, department host and five curricula."
+        },
+        {
+          "url": "https://academics.dii.unipd.it/phd/",
+          "checkedAt": "2026-10-25",
+          "outcome": "read",
+          "note": "Full current department PhD site, 2026 programme introduction and five curricula."
+        }
+      ],
+      "limitations": [
+        "The current PhD title and host department are Industrial Engineering, but its five listed curricula are Chemical/Environmental, Energy, Electrical, Materials and Mechanical Engineering; no separate Operations/IE curriculum is claimed.",
+        "University doctoral title coverage outside this department remains a separate incomplete question; imported individual award is discovery only."
+      ],
+      "doctoralReview": {
+        "status": "verified",
+        "checkedAt": "2026-10-25",
+        "programmeIds": [
+          "university-of-padua--industrial-engineering-phd"
+        ],
+        "branches": [
+          {
+            "branch": "business",
+            "reviewState": "partial",
+            "conclusion": "Other business/management school doctoral title inventory not yet read.",
+            "sourceUrls": [
+              "https://www.unipd.it/en/dottoratoscheda/industrial-engineering"
+            ]
+          },
+          {
+            "branch": "engineering",
+            "reviewState": "partial",
+            "conclusion": "Industrial Engineering PhD and Department of Industrial Engineering verified; its five named curricula are all other engineering fields and not separately counted. Other plausible formal doctoral titles at university level remain to inventory.",
+            "sourceUrls": [
+              "https://www.unipd.it/en/dottoratoscheda/industrial-engineering",
+              "https://academics.dii.unipd.it/phd/"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://www.unipd.it/en/dottoratoscheda/industrial-engineering",
+            "checkedAt": "2026-10-25",
+            "outcome": "read",
+            "note": "Full official current university PhD course title, department and five curricula."
+          },
+          {
+            "url": "https://academics.dii.unipd.it/phd/",
+            "checkedAt": "2026-10-25",
+            "outcome": "read",
+            "note": "Full current official department programme site, 2026 PhD title and curricula."
+          }
+        ],
+        "limitations": [
+          "Qualifying title is the umbrella PhD in Industrial Engineering; no other-engineering curricula independently counted.",
+          "Business and other plausible quantitative doctoral fields remain incomplete; individual 2001 award still discovery only."
+        ],
+        "coverageComplete": false
+      },
+      "addedAt": "2026-10-25T20:58:16Z",
+      "updatedAt": "2026-10-25T20:58:16Z"
+    },
+    {
       "id": "university-of-pennsylvania",
       "status": "reviewed",
       "canonicalName": "University of Pennsylvania",
@@ -102091,6 +102828,102 @@
         ],
         "coverageComplete": true
       }
+    },
+    {
+      "id": "university-of-porto",
+      "status": "reviewed",
+      "canonicalName": "University of Porto",
+      "universitySourceUrl": "https://www.up.pt/feup/en/study/doctoral-degree/doctoral-programmes/feup/683/",
+      "checkedAt": "2026-10-25",
+      "reviewer": "Codex via opened official web pages",
+      "duplicateOf": null,
+      "units": [
+        {
+          "id": "university-of-porto--industrial-engineering-management",
+          "name": "Department of Industrial Engineering and Management",
+          "school": "Faculty of Engineering (FEUP)",
+          "type": "department",
+          "fields": [
+            "industrial-engineering"
+          ],
+          "sourceUrl": "https://www.up.pt/feup/en/organisation/departments/DEGI/",
+          "checkedAt": "2026-10-25",
+          "evidence": "Official FEUP department directory and department page identify DEGI as the Department of Industrial Engineering and Management; the title explicitly includes Industrial Engineering."
+        }
+      ],
+      "decisions": [
+        {
+          "sourceDepartmentId": "university-of-porto--om-list-university-of-porto-reported-doctorate-one-profile-reported-phd-institution",
+          "disposition": "not-a-unit",
+          "unitIds": [],
+          "reason": "Reported doctorate-institution discovery label only; no department assertion or individual degree verification."
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.up.pt/feup/en/organisation/departments/DEGI/",
+          "checkedAt": "2026-10-25",
+          "outcome": "read",
+          "note": "Full official current FEUP department page names the Department of Industrial Engineering and Management and its acronym DEGI."
+        },
+        {
+          "url": "https://www.up.pt/feup/en/study/doctoral-degree/doctoral-programmes/feup/683/",
+          "checkedAt": "2026-10-25",
+          "outcome": "read",
+          "note": "Full official 2026/27 FEUP doctoral course page names the Industrial Engineering and Management programme; 6 semesters, 180 ECTS, original research methods."
+        }
+      ],
+      "limitations": [
+        "The FEUP programme page does not explicitly name DEGI as the formal administrative doctoral host; the programme and DEGI are kept as separate verified observations without claiming a hosting link.",
+        "The imported faculty member's individual 2005 award and field remain discovery only and belong to later person verification."
+      ],
+      "doctoralReview": {
+        "status": "verified",
+        "checkedAt": "2026-10-25",
+        "programmeIds": [
+          "university-of-porto--industrial-engineering-management-doctoral-degree"
+        ],
+        "branches": [
+          {
+            "branch": "business",
+            "reviewState": "partial",
+            "conclusion": "Other university business/management doctoral titles and named quantitative fields not yet inventoried.",
+            "sourceUrls": [
+              "https://www.up.pt/feup/en/study/doctoral-degree/doctoral-programmes/feup/683/"
+            ]
+          },
+          {
+            "branch": "engineering",
+            "reviewState": "partial",
+            "conclusion": "One named Industrial Engineering and Management doctoral course and the separately named DEGI department verified; other plausible current technical doctoral titles remain to check.",
+            "sourceUrls": [
+              "https://www.up.pt/feup/en/study/doctoral-degree/doctoral-programmes/feup/683/",
+              "https://www.up.pt/feup/en/organisation/departments/DEGI/"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://www.up.pt/feup/en/study/doctoral-degree/doctoral-programmes/feup/683/",
+            "checkedAt": "2026-10-25",
+            "outcome": "read",
+            "note": "Full official current doctoral course page; current 2026/27, exact course title, 6-semester research structure."
+          },
+          {
+            "url": "https://www.up.pt/feup/en/organisation/departments/DEGI/",
+            "checkedAt": "2026-10-25",
+            "outcome": "read",
+            "note": "Full official FEUP department page; actual Department of Industrial Engineering and Management identity."
+          }
+        ],
+        "limitations": [
+          "Current programme wording is a Doctoral Degree and describes original research; actual awarded credential wording beyond that was not read.",
+          "Other business and technical doctoral titles remain incomplete; imported individual's 2005 doctorate is not verified by this current-programme review."
+        ],
+        "coverageComplete": false
+      },
+      "addedAt": "2026-10-25T20:58:16Z",
+      "updatedAt": "2026-10-25T20:58:16Z"
     },
     {
       "id": "university-of-puget-sound",
@@ -112281,28 +113114,39 @@
         "Imported Drive ad not opened as PDF preview because current official department already verifies actual name; historical job details remain unaudited."
       ],
       "doctoralReview": {
-        "status": "partial",
-        "checkedAt": "2026-10-22",
+        "status": "no-qualifying-programme-verified",
+        "checkedAt": "2026-10-25",
         "programmeIds": [],
         "branches": [
           {
             "branch": "business",
-            "reviewState": "partial",
-            "conclusion": "Business degree link resolves to universal finder with contradictory zero/no-match UI. Management/Operations department verified, but reliable complete business doctoral inventory and historical analytics hiring source unavailable; no route inferred.",
+            "reviewState": "checked",
+            "conclusion": "Independent actual Business graduate degree menu now fully read: MBA and specialised masters, no business PhD. Management and Operations department identity does not confer doctorate. Historical unavailable analytics hiring source remains separate unit-source limitation, not a current doctoral eligibility gate.",
             "sourceUrls": [
-              "https://www.villanova.edu/university/business/faculty-and-research/faculty-by-department.html#4",
-              "https://www.villanova.edu/university/business/academics.html",
-              "https://jobs.villanova.edu/postings/33341"
+              "https://www.villanova.edu/university/business/academics/graduate-programs.html",
+              "https://www.villanova.edu/university/business/faculty-and-research/faculty-by-department.html#4"
             ]
           },
           {
             "branch": "engineering",
-            "reviewState": "partial",
-            "conclusion": "Current actual Mechanical and Sustainable Engineering PhD concentration pages fully read. Their listed topics do not explicitly establish Ops/OR/IE field; other department/concentration inventories and detailed relevant research scope remain open.",
+            "reviewState": "checked",
+            "conclusion": "Complete current one-PhD Engineering inventory, five host departments and six specialised research headings, current exact Chemical/Biological, Civil/Environmental and Electrical/Computer doctoral fields plus original22October full Mechanical and Sustainable doctoral fields checked. No title-eligible Ops/MS/IE doctorate established. Generic sustainable systems and future individual research interests do not require endless hidden-topic review.",
             "sourceUrls": [
               "https://www.villanova.edu/content/university/engineering/academic-programs/mechanical/doctoral-program.html",
-              "https://www.villanova.edu/content/university/engineering/academic-programs/sustainable/doctoral-program.html",
-              "https://www.villanova.edu/university/business/academics.html"
+              "https://www.villanova.edu/university/engineering/academic-programs/graduate-studies.html",
+              "https://www.villanova.edu/university/engineering/academic-programs/graduate-studies/doctoral-program.html",
+              "https://www.villanova.edu/university/engineering/academic-programs/electrical-computer/doctoral-program.html",
+              "https://www.villanova.edu/university/engineering/academic-programs/chemical-biological/doctoral-program.html",
+              "https://www.villanova.edu/university/engineering/academic-programs/civil-environmental/doctoral-program.html",
+              "https://www.villanova.edu/content/university/engineering/academic-programs/sustainable/doctoral-program.html"
+            ]
+          },
+          {
+            "branch": "mathematics",
+            "reviewState": "checked",
+            "conclusion": "Complete current CLAS inventory explicitly only Philosophy and Theology PhDs; Math,StatisticsDataScience and Computing graduate offers are masters. No matching doctorate.",
+            "sourceUrls": [
+              "https://www.villanova.edu/university/liberal-arts-sciences/graduate-studies/graduate-programs.html"
             ]
           }
         ],
@@ -112336,16 +113180,73 @@
             "checkedAt": "2026-10-22",
             "outcome": "read",
             "note": "Full exact Sustainable Engineering PhD concentration page read: broad whole-systems/STEEP, energy/environment/infrastructure/development/materials/water topics. No explicit Ops/OR/IE concentration inferred from whole-systems language."
+          },
+          {
+            "url": "https://www.villanova.edu/university/business/academics/graduate-programs.html",
+            "checkedAt": "2026-10-25",
+            "outcome": "read",
+            "accessMethod": "web.open/click actual official HTML; authorized fallback",
+            "note": "Complete current actual Business graduate programme menu read: MBA plus specialised masters Accounting/Tax,Finance,BusinessAnalyticsAI,ChurchManagement. No doctoral business programme listed. This independently resolves old unreliable universal finder, not absence from zero-result controls."
+          },
+          {
+            "url": "https://www.villanova.edu/university/liberal-arts-sciences/graduate-studies/graduate-programs.html",
+            "checkedAt": "2026-10-25",
+            "outcome": "read",
+            "accessMethod": "web.open/click actual official HTML; authorized fallback",
+            "note": "Complete current CLAS graduate degree inventory read: explicitly only two PhDs Philosophy and Theology. Math MA,AppliedStatisticsDataScienceMS,ComputerScience/SoftwareEngineeringMS; no relevant technical doctorate."
+          },
+          {
+            "url": "https://www.villanova.edu/content/university/engineering/academic-programs/mechanical/doctoral-program.html",
+            "checkedAt": "2026-10-25",
+            "outcome": "blocked",
+            "accessMethod": "web.open/click actual official HTML; authorized fallback",
+            "note": "Older source path inaccessible through tool today. Prior22October actual read preserved, no alternate path retry. Current independent central Engineering catalogue and other named departmental doctoral fields read."
+          },
+          {
+            "url": "https://www.villanova.edu/university/engineering/academic-programs/graduate-studies.html",
+            "checkedAt": "2026-10-25",
+            "outcome": "read",
+            "accessMethod": "web.open/click actual official HTML; authorized fallback",
+            "note": "Complete current Engineering graduate degree inventory read: one Engineering PhD with five departmental/discipline groupings, distinct twelve masters and certificates. No IE/Operations/MS named doctorate."
+          },
+          {
+            "url": "https://www.villanova.edu/university/engineering/academic-programs/graduate-studies/doctoral-program.html",
+            "checkedAt": "2026-10-25",
+            "outcome": "read",
+            "accessMethod": "web.open/click actual official HTML; authorized fallback",
+            "note": "Full substantive Engineering doctoral framework, complete five host departments and six specialised research-area headings read. Original independent dissertation. Academic/Industry Scholars are professional-development tracks, not Operations doctoral specialties."
+          },
+          {
+            "url": "https://www.villanova.edu/university/engineering/academic-programs/electrical-computer/doctoral-program.html",
+            "checkedAt": "2026-10-25",
+            "outcome": "read",
+            "accessMethod": "web.open/click actual official HTML; authorized fallback",
+            "note": "Full actual department-linked doctoral field list read: antenna/networks/converters/emission control/cybersecurity/hardware-security/communications/microgrids/solar/photonic/pindiode/radar. No matching Operations/MS/IE field."
+          },
+          {
+            "url": "https://www.villanova.edu/university/engineering/academic-programs/chemical-biological/doctoral-program.html",
+            "checkedAt": "2026-10-25",
+            "outcome": "read",
+            "accessMethod": "web.open/click actual official HTML; authorized fallback",
+            "note": "Full actual doctoral field inventory read: biomass,catalysis,computationalmodelling,biomaterials/drugdelivery,gene therapy,bloodsubstitutes,pharmaceuticalprocessing,systemsbiology. No matching field, process-engineering not IE inference."
+          },
+          {
+            "url": "https://www.villanova.edu/university/engineering/academic-programs/civil-environmental/doctoral-program.html",
+            "checkedAt": "2026-10-25",
+            "outcome": "read",
+            "accessMethod": "web.open/click actual official HTML; authorized fallback",
+            "note": "Full actual doctoral field inventory read: Geotechnical,Structural,Transportation,WaterResourcesEnvironmental. No named Operations/MS/IE field. Testimonials incidental and not used for graduate careers."
           }
         ],
         "limitations": [
-          "Mechanical and Sustainable concentration pages describe College of Engineering PhD; do not create multiple engineering degree awards from concentration pages.",
-          "Current doctoral scope unresolved, not a verified negative. Finder malfunction is distinct from absence of programmes."
+          "Current bounded doctoral scope complete; unit review can remain partial solely for unavailable historical analytics hiring assertion, not a fabricated source reconciliation.",
+          "Original Mechanical/Sustainable22October evidence dates retained; older Mechanical path unavailable25October is preserved separately, no false fresh read.",
+          "No assertion no Operations faculty research exists. No browser tabs, career-history work, public edits or merger commands."
         ],
-        "coverageComplete": false
+        "coverageComplete": true
       },
       "addedAt": "2026-10-22T12:14:06Z",
-      "updatedAt": "2026-10-22T12:14:06Z"
+      "updatedAt": "2026-10-25T20:58:16Z"
     },
     {
       "id": "vinuniversity",

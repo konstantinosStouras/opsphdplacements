@@ -49,6 +49,8 @@ test('validation rejects unvisited evidence, unsupported fields and omitted impo
  const faculty = review(); faculty.units[0].type = 'faculty';
  assert.doesNotThrow(() => validateUniversityReviews([faculty], original));
  assert.equal(universityRows(original, [faculty]).find(r => r.id === 'z').units[0].type, 'faculty');
+ const managementScience = review(); managementScience.units[0].fields = ['management-science'];
+ assert.doesNotThrow(() => validateUniversityReviews([managementScience], original));
   for (const mutate of [
     r => r.sources[0].outcome = 'blocked',
     r => r.units[0].fields = ['information-systems'],
