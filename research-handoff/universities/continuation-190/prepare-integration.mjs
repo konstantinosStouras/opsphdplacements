@@ -1,0 +1,16 @@
+// Frozen reviewed successor to live a567ed4. Run once, before integration.
+import fs from 'node:fs';
+import crypto from 'node:crypto';
+const root='research-handoff/universities/',dir=root+'continuation-190',read=p=>JSON.parse(fs.readFileSync(p,'utf8'));
+const path=(n,f)=>root+`continuation-${n}/`+f,write=(p,r)=>fs.writeFileSync(p,JSON.stringify(r,null,2)+'\n');
+const sources=[path(159,'shard-a/australian-national-university.source-addition.json'),path(159,'shard-a/brown-university.source-addition.json'),path(160,'shard-a/california-baptist-university.source-addition.json'),path(160,'shard-a/cadi-ayyad-university.source-addition.json')];
+const unitInputs=[path(163,'shard-a/australian-national-university.unit.json'),path(163,'shard-a/brown-university.unit.json'),path(162,'shard-a/california-baptist-university.unit.json'),path(161,'shard-a/cadi-ayyad-university.unit.json'),path(164,'shard-a/aristotle-university-of-thessaloniki.unit.json'),path(165,'shard-a/amirkabir-university-of-technology.unit.json')];
+const edinburgh=read(path(166,'shard-a/university-of-edinburgh.doctoral.json')),existing=new Set(read('data/doctoral-programs.json').records.map(r=>r.id));
+edinburgh.programmes=edinburgh.programmes.filter(r=>!existing.has(r.id));write(dir+'/edinburgh-additive.json',edinburgh);
+const programmes=[path(161,'shard-a/cadi-ayyad-university.doctoral.json'),path(164,'shard-a/aristotle-university-of-thessaloniki.doctoral.json'),path(167,'shard-a/amirkabir-university-of-technology.doctoral.json'),path(157,'shard-c/university-of-southern-denmark.engineering-operations-phd.json'),path(186,'shard-b/tongji-mathematics-operations-doctorate.json'),path(191,'shard-b/tongji-industrial-engineering-academic-doctorate.json'),dir+'/edinburgh-additive.json'];
+const scopes=[path(163,'shard-a/australian-national-university.doctoral.json'),path(163,'shard-a/brown-university.doctoral.json'),path(162,'shard-a/california-baptist-university.doctoral.json'),path(158,'shard-c/university-of-southern-denmark.doctoral-scope-composite.json'),path(159,'shard-c/university-of-virginia.doctoral-scope-composite.json'),path(160,'shard-c/vrije-universiteit-amsterdam.doctoral-scope-composite.json'),path(161,'shard-c/university-of-missouri.doctoral-scope-composite.json'),path(168,'shard-a/university-of-bologna.doctoral.json')];
+const m={baseCommit:'a567ed47f1210a395ffecae077fbde26c647aef6',sources,unitInputs,programmes,scopes};
+m.frozenInputs=[...new Set([...sources,...sources.map(p=>read(p).sourceCatalogue),...unitInputs,...programmes,...scopes,path(166,'shard-a/university-of-edinburgh.doctoral.json')])].map(path=>({path,sha256:crypto.createHash('sha256').update(fs.readFileSync(path)).digest('hex')}));write(dir+'/integration-manifest.json',m);
+let apply=fs.readFileSync(root+'continuation-182/apply-phase.mjs','utf8').replaceAll('continuation-182','continuation-190');fs.writeFileSync(dir+'/apply-phase.mjs',apply);
+let audit=fs.readFileSync(root+'continuation-182/audit-cut.mjs','utf8').replaceAll('753e78c:','a567ed4:').replaceAll('continuation-182','continuation-190');fs.writeFileSync(dir+'/audit-cut.mjs',audit);
+console.log({sources:sources.length,units:unitInputs.length,programmes:programmes.length,scopes:scopes.length});

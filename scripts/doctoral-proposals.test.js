@@ -34,6 +34,8 @@ test('reviewed descriptive research topics cannot re-enter the named-title regis
  assert(!hasNamedOperationsScope('Doctorat en Génie mécanique'));
  assert(hasNamedOperationsScope('Estadística e investigación operativa'));
  assert(!hasNamedOperationsScope('Investigación en ingeniería mecánica'));
+ assert(hasNamedOperationsScope('Διοίκησης Παραγωγής και επιχειρησιακών λειτουργιών'));
+ assert(!hasNamedOperationsScope('Σχολή Μηχανολόγων Μηχανικών'));
  assert(!hasNamedOperationsScope('Operational Technology'));
  assert(!hasNamedOperationsScope('Process Safety Engineering'));
 });
