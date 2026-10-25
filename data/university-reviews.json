@@ -2,9 +2,9 @@
   "version": 1,
   "metadata": {
     "definition": "Individual official-source reviews of university names and operations units. The original directory remains in universities.json. Reviewed describes the stated source scope, not an exhaustive current or historical census. Source notes identify the access method where recorded.",
-    "sourceRecords": 831,
-    "attempted": 831,
-    "reviewed": 595,
+    "sourceRecords": 832,
+    "attempted": 832,
+    "reviewed": 596,
     "partial": 231,
     "blocked": 5,
     "pending": 0
@@ -10494,9 +10494,9 @@
     },
     {
       "id": "california-institute-of-technology",
-      "status": "partial",
+      "status": "reviewed",
       "canonicalName": "California Institute of Technology",
-      "universitySourceUrl": "https://www.cms.caltech.edu/academics/grad/grad_cms",
+      "universitySourceUrl": "https://gradoffice.caltech.edu/academics/optionreps",
       "checkedAt": "2026-10-25",
       "reviewer": "Codex via opened official web pages",
       "duplicateOf": null,
@@ -10527,31 +10527,46 @@
           "checkedAt": "2026-10-25",
           "outcome": "read",
           "note": "Official graduate degree page confirms academic PhD with research thesis."
+        },
+        {
+          "url": "https://gradoffice.caltech.edu/academics/optionreps",
+          "checkedAt": "2026-10-25",
+          "outcome": "read",
+          "note": "Full Caltech graduate option list establishes current formal option identities across six divisions; none names Operations, Management Science or Industrial Engineering."
+        },
+        {
+          "url": "https://catalog.caltech.edu/current/information-for-graduate-students/special-regulations-for-graduate-options/",
+          "checkedAt": "2026-10-25",
+          "outcome": "read",
+          "note": "Current 2026–27 regulations index lists all graduate option titles, cross-checking present units/options against the strict title rule."
         }
       ],
       "limitations": [
-        "CMS is a broad computing and mathematical sciences unit, not a formally named Operations/Management Science/Industrial Engineering department. Other Caltech divisions and doctoral options remain to review.",
-        "One imported individual degree report remains discovery only."
+        "Original source is a bare institution-level OM List doctorate label, not a department assertion; current official identity and title-matching unit scope resolved. One individual historical doctorate/awarder remains unverified and is outside unit-identity completion.",
+        "Computing and Mathematical Sciences is an actual host but broad title; faculty OR interests do not create a title-eligible unit."
       ],
       "doctoralReview": {
-        "status": "partial",
+        "status": "no-qualifying-programme-verified",
         "checkedAt": "2026-10-25",
         "programmeIds": [],
         "branches": [
           {
             "branch": "engineering",
-            "reviewState": "partial",
-            "conclusion": "Current Computing and Mathematical Sciences PhD page mentions Operations Research as one contributing faculty discipline, while the 2026–27 formal option title/regulations do not name an OR degree or specialty. This descriptive affiliation does not meet the title rule. Remaining Caltech options and formal named fields are unreviewed.",
+            "reviewState": "checked",
+            "conclusion": "The current institute graduate-option inventory and 2026–27 graduate-option regulations were read for Applied and Computational Mathematics, Computational Science and Engineering (minor only), Computer Science, Computing and Mathematical Sciences, Control and Dynamical Systems, Information and Data Science, and Mathematics. None names Operations, Management Science or Industrial Engineering as a doctoral option or formal doctoral field. Operations Research in the CMS description is faculty involvement only. Other engineering option titles in the institute inventory do not match the owner title rule.",
             "sourceUrls": [
-              "https://www.cms.caltech.edu/academics/grad/grad_cms",
-              "https://www.catalog.caltech.edu/current/information-for-graduate-students/special-regulations-for-graduate-options/computing-and-mathematical-science-cms/"
+              "https://gradoffice.caltech.edu/academics/optionreps",
+              "https://catalog.caltech.edu/current/information-for-graduate-students/special-regulations-for-graduate-options/"
             ]
           },
           {
             "branch": "business",
-            "reviewState": "not-reviewed",
-            "conclusion": "No business doctoral branch established; Caltech graduate option inventory remains to adjudicate.",
-            "sourceUrls": []
+            "reviewState": "checked",
+            "conclusion": "Caltech’s complete graduate-option inventory has no business/management graduate option. The Social Science PhD option regulations describe economics and political science, with no named Operations or Management Science doctoral field; undergraduate Business, Economics, and Management courses are not a doctorate.",
+            "sourceUrls": [
+              "https://gradoffice.caltech.edu/academics/optionreps",
+              "https://catalog.caltech.edu/current/information-for-graduate-students/special-regulations-for-graduate-options/social-science-ss/"
+            ]
           }
         ],
         "sources": [
@@ -10572,16 +10587,76 @@
             "checkedAt": "2026-10-25",
             "outcome": "read",
             "note": "Official institute academic PhD/graduate degrees page."
+          },
+          {
+            "url": "https://gradoffice.caltech.edu/academics/optionreps",
+            "checkedAt": "2026-10-25",
+            "outcome": "read",
+            "note": "Full official current inventory or 2026–27 option regulations opened and checked for formal doctoral titles/fields under the strict title gate."
+          },
+          {
+            "url": "https://catalog.caltech.edu/current/information-for-graduate-students/special-regulations-for-graduate-options/",
+            "checkedAt": "2026-10-25",
+            "outcome": "read",
+            "note": "Full official current inventory or 2026–27 option regulations opened and checked for formal doctoral titles/fields under the strict title gate."
+          },
+          {
+            "url": "https://catalog.caltech.edu/current/information-for-graduate-students/special-regulations-for-graduate-options/applied-and-computational-mathematics-acm/",
+            "checkedAt": "2026-10-25",
+            "outcome": "read",
+            "note": "Full official current inventory or 2026–27 option regulations opened and checked for formal doctoral titles/fields under the strict title gate."
+          },
+          {
+            "url": "https://catalog.caltech.edu/current/information-for-graduate-students/special-regulations-for-graduate-options/computational-science-and-engineering-cse/",
+            "checkedAt": "2026-10-25",
+            "outcome": "read",
+            "note": "Full official current inventory or 2026–27 option regulations opened and checked for formal doctoral titles/fields under the strict title gate."
+          },
+          {
+            "url": "https://catalog.caltech.edu/current/information-for-graduate-students/special-regulations-for-graduate-options/computer-science-cs/",
+            "checkedAt": "2026-10-25",
+            "outcome": "read",
+            "note": "Full official current inventory or 2026–27 option regulations opened and checked for formal doctoral titles/fields under the strict title gate."
+          },
+          {
+            "url": "https://catalog.caltech.edu/current/information-for-graduate-students/special-regulations-for-graduate-options/computing-and-mathematical-science-cms/",
+            "checkedAt": "2026-10-25",
+            "outcome": "read",
+            "note": "Full official current inventory or 2026–27 option regulations opened and checked for formal doctoral titles/fields under the strict title gate."
+          },
+          {
+            "url": "https://catalog.caltech.edu/current/information-for-graduate-students/special-regulations-for-graduate-options/control-and-dynamical-systems-cds/",
+            "checkedAt": "2026-10-25",
+            "outcome": "read",
+            "note": "Full official current inventory or 2026–27 option regulations opened and checked for formal doctoral titles/fields under the strict title gate."
+          },
+          {
+            "url": "https://catalog.caltech.edu/current/information-for-graduate-students/special-regulations-for-graduate-options/information-and-data-science-ids/",
+            "checkedAt": "2026-10-25",
+            "outcome": "read",
+            "note": "Full official current inventory or 2026–27 option regulations opened and checked for formal doctoral titles/fields under the strict title gate."
+          },
+          {
+            "url": "https://catalog.caltech.edu/current/information-for-graduate-students/special-regulations-for-graduate-options/mathematics-ma/",
+            "checkedAt": "2026-10-25",
+            "outcome": "read",
+            "note": "Full official current inventory or 2026–27 option regulations opened and checked for formal doctoral titles/fields under the strict title gate."
+          },
+          {
+            "url": "https://catalog.caltech.edu/current/information-for-graduate-students/special-regulations-for-graduate-options/social-science-ss/",
+            "checkedAt": "2026-10-25",
+            "outcome": "read",
+            "note": "Full official current inventory or 2026–27 option regulations opened and checked for formal doctoral titles/fields under the strict title gate."
           }
         ],
         "limitations": [
-          "No qualifying route established from the opened CMS sources; this is not a university-wide negative review.",
-          "Other Caltech options and one imported person's actual award remain unverified."
+          "Source-bounded current negative only. Historical Caltech operations research and the imported individual doctorate/awarder were not adjudicated; no individual degree inference.",
+          "The Computational Science and Engineering document is a PhD minor, not a separate degree. Faculty OR participation and unrelated coursework do not establish a named doctoral title."
         ],
-        "coverageComplete": false
+        "coverageComplete": true
       },
       "addedAt": "2026-10-25T20:23:56Z",
-      "updatedAt": "2026-10-25T20:23:56Z"
+      "updatedAt": "2026-10-25T23:08:46Z"
     },
     {
       "id": "california-state-polytechnic-university-pomona",
@@ -13297,17 +13372,21 @@
           {
             "branch": "business",
             "reviewState": "partial",
-            "conclusion": "WFI Ingolstadt School of Management has research doctorates with dissertation and viva/disputation. Its current academic discipline Management and Organizations includes Operations Management professorships; professor titles alone do not establish a formal named Operations doctoral programme, area or host department. No qualifying route asserted yet.",
+            "conclusion": "KU/WFI authorizes individual research doctorates, but the formal faculty doctorate procedure does not identify an Operations degree or named specialty. A current WFI Operations chair participates in the multi-institution Graduate Program in Operations Management (GPOM), expressly an exchange/doctoral training framework, not a separate KU-awarded route. This named training lead does not establish each participating institution as a distinct Operations awarder; formal WFI award-field linkage remains unresolved.",
             "sourceUrls": [
-              "https://www.ku.de/en/the-ku/faculties/wfi",
-              "https://www.ku.de/en/the-ku/faculties/wfi/research/doctoral-and-post-doctoral-studies"
+              "https://www.ku.de/en/the-ku/faculties/wfi/research/doctoral-and-post-doctoral-studies",
+              "https://www.ku.de/wfi/abwl-supply-chain-management-operations/netzwerke",
+              "https://www.ku.de/en/news/doctoral-students-from-all-over-bavaria-visit-wfi"
             ]
           },
           {
             "branch": "engineering",
-            "reviewState": "not-started",
-            "conclusion": "Other faculties and technical named doctorate/unit inventory not reviewed.",
-            "sourceUrls": []
+            "reviewState": "checked",
+            "conclusion": "The current KU faculty inventory and central list of six faculties with doctoral-degree authority were read. KU has no engineering faculty. Mathematics and Geography is the sole plausible technical doctoral faculty; no Operations, Management Science or Industrial Engineering titled faculty/department is named in the complete faculties inventory. Detailed Math doctoral fields were not established by the central inventory, so a formally named field remains possible but unverified.",
+            "sourceUrls": [
+              "https://www.ku.de/en/the-ku/faculties",
+              "https://www.ku.de/en/research/academic-career/doctoral-candidates/preparation-for-a-doctoral-degree"
+            ]
           }
         ],
         "sources": [
@@ -13322,16 +13401,52 @@
             "checkedAt": "2026-10-25",
             "outcome": "read",
             "note": "Full official business-school doctoral procedure; research dissertation and examination, no exact named Operations award."
+          },
+          {
+            "url": "https://www.ku.de/en/the-ku/faculties",
+            "checkedAt": "2026-10-25",
+            "outcome": "read",
+            "note": "Full current eight-faculty list and subject areas opened; no engineering faculty; Math and Geography and WFI are plausible relevant hosts."
+          },
+          {
+            "url": "https://www.ku.de/en/research/academic-career/doctoral-candidates/preparation-for-a-doctoral-degree",
+            "checkedAt": "2026-10-25",
+            "outcome": "read",
+            "note": "Full six doctoral-authority faculty list and original-dissertation doctoral procedure opened."
+          },
+          {
+            "url": "https://www.ku.de/wfi/abwl-supply-chain-management-operations/netzwerke",
+            "checkedAt": "2026-10-25",
+            "outcome": "read",
+            "note": "Full official WFI Operations chair network page describes GPOM explicitly as joint exchange/education framework for doctoral candidates, not a KU-specific award."
+          },
+          {
+            "url": "https://www.ku.de/en/news/doctoral-students-from-all-over-bavaria-visit-wfi",
+            "checkedAt": "2026-10-25",
+            "outcome": "read",
+            "note": "Full 26 January 2026 KU report identifies GPOM workshop doctoral researchers and supervisors from seven institutions, confirming cross-institution training/network."
+          },
+          {
+            "url": "https://www.ku.de/en/news/phd-workshop-of-the-graduate-program-in-operations-management-at-wfi",
+            "checkedAt": "2026-10-25",
+            "outcome": "read",
+            "note": "Full 29 January 2026 KU report identifies GPOM doctoral research workshop at WFI, not distinct KU Operations degree."
+          },
+          {
+            "url": "https://www.ku.de/die-ku/fakultaeten/wfi/lehrstuehle-und-professuren/betriebswirtschaftslehre/abwl-supply-chain-management-operations",
+            "checkedAt": "2026-10-25",
+            "outcome": "read",
+            "note": "Full chair page says honorary professorship Supply Chain Management & Operations, not department or doctorate; BA&OR is a masters."
           }
         ],
         "limitations": [
-          "Business formal doctoral title/field inventory and technical faculties remain incomplete; Operations professorships are recorded but not promoted to qualifying programmes.",
-          "One OM List 2011 individual doctorate remains discovery only."
+          "Exact WFI doctoral award/field and Math faculty formal doctorate inventory remain unresolved. GPOM is doctoral research training shared with other institutions, not a separate countable award.",
+          "A named chair/professorship is not promoted to a named department/school. OM List individual 2011 doctorate remains unverified."
         ],
         "coverageComplete": false
       },
       "addedAt": "2026-10-25T20:49:16Z",
-      "updatedAt": "2026-10-25T20:49:16Z"
+      "updatedAt": "2026-10-25T23:08:46Z"
     },
     {
       "id": "catolica-lisbon",
@@ -16094,7 +16209,108 @@
       "limitations": [],
       "duplicateOf": null,
       "addedAt": "2026-10-21T07:40:08Z",
-      "updatedAt": "2026-10-21T07:40:08Z"
+      "updatedAt": "2026-10-25T23:08:46Z",
+      "doctoralReview": {
+        "status": "partial",
+        "checkedAt": "2026-10-25",
+        "programmeIds": [],
+        "branches": [
+          {
+            "branch": "business",
+            "reviewState": "checked",
+            "conclusion": "Entire current graduate inventory and actual executive DBA overview checked. DBA kept separate from PhD scope; business MBA/accountancy masters and no other business doctorate in inventory. Current-title adjudication on 25 October: The opened complete 31-result graduate inventory and Mathematics with Computation PhD overview name no doctoral Operations, Management Science or Industrial Engineering title. An Operations Research certificate is a different qualification. The blank/timeout-linked catalogue remains a limitation; unobserved content is not treated as proof of an additional formal specialization.",
+            "sourceUrls": [
+              "https://charleston.edu/academics/programs/index.php?type=Graduate&search=&programs=&gradprograms=&college=&format=&pageindex=0&pagesize=10",
+              "https://charleston.edu/academics/programs/graduate-studies/doctorate-business-administration.php"
+            ]
+          },
+          {
+            "branch": "engineering",
+            "reviewState": "partial",
+            "conclusion": "Full current graduate inventory and Mathematics with Computation PhD overview and research/curriculum panels read. Exact PhD credential established, substantive OR doctoral remit unresolved; linked detailed catalogue unread after blank document and timeout. Current-title adjudication on 25 October: The opened complete 31-result graduate inventory and Mathematics with Computation PhD overview name no doctoral Operations, Management Science or Industrial Engineering title. An Operations Research certificate is a different qualification. The blank/timeout-linked catalogue remains a limitation; unobserved content is not treated as proof of an additional formal specialization.",
+            "sourceUrls": [
+              "https://charleston.edu/academics/programs/index.php?type=Graduate&search=&programs=&gradprograms=&college=&format=&pageindex=2&pagesize=10",
+              "https://charleston.edu/academics/programs/index.php?type=Graduate&search=&programs=&gradprograms=&college=&format=&pageindex=3&pagesize=10",
+              "https://charleston.edu/academics/programs/graduate-studies/phd-math-computation.php"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://charleston.edu/academics/programs/index.php?type=Graduate&search=&programs=&gradprograms=&college=&format=&pageindex=0&pagesize=10",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Graduate radio selected and refreshed page 1 read. Entire four-page 31-result graduate inventory read, including EdD, executive DBA and Mathematics with Computation PhD. OR is certificate, mathematical/computing provision otherwise masters."
+          },
+          {
+            "url": "https://charleston.edu/academics/programs/index.php?type=Graduate&search=&programs=&gradprograms=&college=&format=&pageindex=1&pagesize=10",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Graduate radio selected and refreshed page 2 read. Entire four-page 31-result graduate inventory read, including EdD, executive DBA and Mathematics with Computation PhD. OR is certificate, mathematical/computing provision otherwise masters."
+          },
+          {
+            "url": "https://charleston.edu/academics/programs/index.php?type=Graduate&search=&programs=&gradprograms=&college=&format=&pageindex=2&pagesize=10",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Graduate radio selected and refreshed page 3 read. Entire four-page 31-result graduate inventory read, including EdD, executive DBA and Mathematics with Computation PhD. OR is certificate, mathematical/computing provision otherwise masters."
+          },
+          {
+            "url": "https://charleston.edu/academics/programs/index.php?type=Graduate&search=&programs=&gradprograms=&college=&format=&pageindex=3&pagesize=10",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Graduate radio selected and refreshed page 4 read. Entire four-page 31-result graduate inventory read, including EdD, executive DBA and Mathematics with Computation PhD. OR is certificate, mathematical/computing provision otherwise masters."
+          },
+          {
+            "url": "https://charleston.edu/academics/programs/graduate-studies/doctorate-business-administration.php",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full EDBA overview, mandatory dissertation proposal/defense and professional research-practice purpose read. Exact Executive Doctorate of Business Administration retained separately from PhD; no inclusion under current DBA scope rule."
+          },
+          {
+            "url": "https://charleston.edu/academics/programs/graduate-studies/phd-math-computation.php",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full current Mathematics with Computation PhD overview, research degree wording and actually expanded Diverse Research Opportunities and Industry-Relevant Curriculum panels read. Pure/applied mathematics and mandatory computation, but no explicit doctoral OR/operational-system field established. Separate departmental OR certificate not transferred into PhD."
+          },
+          {
+            "url": "https://catalog.cofc.edu/preview_program.php?catoid=26&poid=5457&hl=%22phd%22&returnto=search",
+            "checkedAt": "2026-10-22",
+            "outcome": "blocked",
+            "note": "Official View Curriculum link opened blank document; subsequent source state read timed out. Catalogue content not read or verified; no access-control bypass attempted."
+          },
+          {
+            "url": "https://today.charleston.edu/2026/06/15/meet-the-graduates-graduate-school-graduates-are-going-places/",
+            "checkedAt": "2026-10-25",
+            "outcome": "read",
+            "note": "Full June 2026 official graduate school article opened. Lists exactly Mathematics with Computation PhD, Learning and Inquiry in Practice EdD, Business Administration DBA as doctorates; Operations Research appears separately under certificates."
+          },
+          {
+            "url": "https://blogs.charleston.edu/math/2023/07/03/mathematics-with-computation-is-the-first-phd-program-at-cofc/",
+            "checkedAt": "2026-10-25",
+            "outcome": "read",
+            "note": "Full Mathematics Department announcement opened; mathematics-with-computation research PhD, no named OR doctoral area described. Historic 2023 source, not current field inventory."
+          },
+          {
+            "url": "https://catalog.cofc.edu/preview_program.php?catoid=26&poid=5457&hl=%22phd%22&returnto=search",
+            "checkedAt": "2026-10-25",
+            "outcome": "blocked",
+            "note": "Fresh official catalogue access via web returned inaccessible; detailed official PhD specialty requirements still unread."
+          },
+          {
+            "url": "https://charleston.edu/academics/programs/graduate-studies/phd-math-computation.php",
+            "checkedAt": "2026-10-25",
+            "outcome": "blocked",
+            "note": "Fresh official programme page timed out; earlier full 22 October read remains evidence of overview."
+          }
+        ],
+        "limitations": [
+          "Current named-title scope only: The opened complete 31-result graduate inventory and Mathematics with Computation PhD overview name no doctoral Operations, Management Science or Industrial Engineering title. An Operations Research certificate is a different qualification. The blank/timeout-linked catalogue remains a limitation; unobserved content is not treated as proof of an additional formal specialization.",
+          "Mathematics department OR certificate is verified separately but does not by itself establish OR doctoral supervision or specialization. Doctoral field mapping remains unresolved, so no qualifying programme absence claim.",
+          "Linked curriculum source unavailable individually; remaining universities continue. Original identity/unit observations and per-fact check dates preserved.",
+          "A fresh 2026 Graduate School doctorate inventory confirms OR as a certificate distinct from all three doctorates, strengthening the current-title negative; detailed catalogue remained inaccessible on 25 October, so potential formally named doctoral research field stays unresolved."
+        ],
+        "coverageComplete": false
+      }
     },
     {
       "id": "college-of-staten-island",
@@ -16681,10 +16897,10 @@
       ],
       "duplicateOf": null,
       "addedAt": "2026-10-21T07:40:08Z",
-      "updatedAt": "2026-10-23T07:20:45Z",
+      "updatedAt": "2026-10-25T23:08:46Z",
       "doctoralReview": {
         "status": "verified",
-        "checkedAt": "2026-10-22",
+        "checkedAt": "2026-10-25",
         "programmeIds": [
           "colorado-state-university--environmental-health-phd-occupational-ergonomics",
           "colorado-state-university--systems-engineering-phd"
@@ -16700,8 +16916,8 @@
           },
           {
             "branch": "engineering",
-            "reviewState": "partial",
-            "conclusion": "Two eligible PhD routes verified. Six broader technical doctorate field inventories and adjacent Industrial Hygiene plus Organizational Learning/Performance/Change actual doctoral overviews examined. No additional award from shared Environmental Health specialization or general workplace change language. Computer Engineering deeper fields and Systems D Eng credential policy remain outstanding.",
+            "reviewState": "checked",
+            "conclusion": "Complete bounded current Graduate School doctorate and business inventory plus plausible Mathematics, Computing, Engineering, Environmental Health and Organizational Learning named-field menus were read across dated sources. Systems Engineering PhD explicitly names Operations Research as an area of study and remains eligible. Environmental Health Occupational Ergonomics and Safety has no exact Ops/MS/IE title, named field or qualifying administrative unit; retain as verified nonmatching observation, excluded from qualifying count. Distinct professional Doctor of Engineering in Systems Engineering is separately documented but not counted as academic research PhD route. Computer Engineering current catalogue confirms six nonmatching focus areas. No concrete title-eligible unread doctoral field lead remains.",
             "sourceUrls": [
               "https://graduateschool.colostate.edu/programs/",
               "https://graduateschool.colostate.edu/programs/systems-engineering-phd/",
@@ -16824,16 +17040,20 @@
             "checkedAt": "2026-10-22",
             "outcome": "blocked",
             "note": "Actual PhD Programs in Computer Engineering link clicked; immediate text still preceding graduate overview, next source-state operation timed out. Destination degree detail not read or verified, no repeated bypass. Individual source limitation while other research continues."
+          },
+          {
+            "url": "https://catalog.colostate.edu/general-catalog/colleges/engineering/electrical-computer/phd-computer-engineering/",
+            "checkedAt": "2026-10-25",
+            "outcome": "read",
+            "note": "Full current 2026–27 Computer Engineering PhD overview, all six named focus areas, and dissertation requirement read. No named Ops/MS/IE field."
           }
         ],
         "limitations": [
-          "Two scoped PhD routes verified; technical current inventory still incomplete. Individual actual doctoral overviews and available full field lists distinguished from source discovery. Original facts/dates preserved.",
-          "Environmental Health general catalogue hyperlink on Graduate School doctorate page points to masters programme; actual college doctoral specialization independently verified, mismatch retained.",
-          "US Doctor of Engineering combines professional industry practicum and research dissertation. Exact credential retained separately pending explicit eligibility policy; neither normalized to PhD nor rejected as lacking research.",
-          "Industrial Hygiene is another specialization within Environmental Health; do not inflate counts by adding duplicate broad award from shared ergonomics training. Education/Human Resource Studies workplace-change doctorate remains an examined related candidate without established Ops field.",
-          "Computer Engineering detailed source unread after official link navigation/source timeout. Current ECE graduate summary itself read, manufacturing/healthcare career industries do not establish doctoral operational research."
+          "Source-bounded current formal title/field review complete; no global historical census or imported individual degree conclusion.",
+          "Previously verified Environmental Health Occupational Ergonomics programme facts remain historical research observations in frozen proposals/public record until integrator title-scope exclusion; this composite intentionally includes only qualifying Systems Engineering PhD.",
+          "Distinct professional D Eng fact remains documented outside qualifying academic research-doctorate count; its credential policy does not keep named-title current scope incomplete."
         ],
-        "coverageComplete": false
+        "coverageComplete": true
       }
     },
     {
@@ -27122,8 +27342,8 @@
           },
           {
             "branch": "engineering",
-            "reviewState": "partial",
-            "conclusion": "Full central doctoral inventory read; Industrial Engineering and Civil mobility/logistics routes verified in the joint FAMU-FSU college, with explicit Civil admission via either institution. All Degree Programs page is access denied. Wider technical/mathematical doctoral fields remain unexhausted; institutional coverage remains incomplete. Current Statistics department PhD specification opened 25 October: exact doctorates Statistics and Biostatistics, no formally named Operations/MS/IE field or host. The official Mathematics admissions link failed to fetch and an alternate official math page returned HTTP 403; no mathematics doctoral field content inferred, so the current technical inventory remains partial.",
+            "reviewState": "checked",
+            "conclusion": "Current FSU central doctoral inventory, joint FAMU–FSU College of Engineering complete graduate degree matrix and departmental doctoral specifications, Statistics PhD specifications, and Mathematics department full four-major PhD inventory/ACM doctoral rules were read. Industrial Engineering route remains verified. Mathematics has pure, applied/computational, financial, biomathematics PhD majors; current ACM and other plausible exact programmes do not name an Operations/MS/IE doctoral field. Former access-denied all-degree page and prior Math URL remain historical access observations; accessible official college matrix and canonical mathematics site resolved the material current named-field scope without accessing those blocked endpoints.",
             "sourceUrls": [
               "https://gradschool.fsu.edu/degrees-and-programs/degree-programs/doctoral-degree-programs",
               "https://eng.famu.fsu.edu/ime",
@@ -27239,18 +27459,52 @@
             "checkedAt": "2026-10-25",
             "outcome": "blocked",
             "note": "Official Mathematics graduate-page full open returned HTTP 403; no page content read or alternate bypass attempted."
+          },
+          {
+            "url": "https://mathematics.fsu.edu/graduate",
+            "checkedAt": "2026-10-25",
+            "outcome": "read",
+            "note": "Full current official degree/major inventory or detailed relevant PhD specification opened; no additional formal Operations/MS/IE field found beyond already verified route."
+          },
+          {
+            "url": "https://mathematics.fsu.edu/graduate/degree-programs",
+            "checkedAt": "2026-10-25",
+            "outcome": "read",
+            "note": "Full current official degree/major inventory or detailed relevant PhD specification opened; no additional formal Operations/MS/IE field found beyond already verified route."
+          },
+          {
+            "url": "https://mathematics.fsu.edu/graduate/degree-programs/applied-and-computational-mathematics",
+            "checkedAt": "2026-10-25",
+            "outcome": "read",
+            "note": "Full current official degree/major inventory or detailed relevant PhD specification opened; no additional formal Operations/MS/IE field found beyond already verified route."
+          },
+          {
+            "url": "https://mathematics.fsu.edu/graduate/degree-programs/financial-mathematics",
+            "checkedAt": "2026-10-25",
+            "outcome": "read",
+            "note": "Full current official degree/major inventory or detailed relevant PhD specification opened; no additional formal Operations/MS/IE field found beyond already verified route."
+          },
+          {
+            "url": "https://mathematics.fsu.edu/graduate/degree-programs/biomathematics",
+            "checkedAt": "2026-10-25",
+            "outcome": "read",
+            "note": "Full current official degree/major inventory or detailed relevant PhD specification opened; no additional formal Operations/MS/IE field found beyond already verified route."
+          },
+          {
+            "url": "https://eng.famu.fsu.edu/academics/graduate",
+            "checkedAt": "2026-10-25",
+            "outcome": "read",
+            "note": "Full current official degree/major inventory or detailed relevant PhD specification opened; no additional formal Operations/MS/IE field found beyond already verified route."
           }
         ],
         "limitations": [
-          "Current title-only review retains ISE PhD. Mathematics doctoral fields could not be opened from official Mathematics pages (fetch error / HTTP 403), so technical named-specialization coverage remains partial. Statistics official doctorate list does not name qualifying fields.",
-          "Current Industrial Engineering, Civil mobility/logistics and MIS doctoral facts are verified; broader technical and mathematical branch coverage remains incomplete.",
-          "Joint programme/provider overlap and degree-title variation are preserved explicitly; no duplicate FAMU programme is assumed.",
-          "Historical Marketing address/source identity issue remains separate from current doctoral inclusion."
+          "Current named-title doctoral inventory is source-bounded; earlier inaccessible URLs were not retried or bypassed. Other-engineering research topics and technical courses are not included as qualifying named fields.",
+          "Original three programme fact records and dates are preserved by scope-only composite; qualifying title eligibility of Civil logistics route remains a separate strict-title filter decision, not a new verified route here."
         ],
-        "coverageComplete": false
+        "coverageComplete": true
       },
       "addedAt": "2026-10-22T12:08:40Z",
-      "updatedAt": "2026-10-25T18:37:28Z"
+      "updatedAt": "2026-10-25T23:08:46Z"
     },
     {
       "id": "frankfurt-school-of-finance-and-management",
@@ -53033,6 +53287,100 @@
       }
     },
     {
+      "id": "national-and-kapodistrian-university-of-athens",
+      "status": "partial",
+      "canonicalName": "National and Kapodistrian University of Athens",
+      "universitySourceUrl": "https://en.uoa.gr/",
+      "checkedAt": "2026-10-25",
+      "reviewer": "Codex via fully opened official university home and doctoral department page",
+      "duplicateOf": null,
+      "units": [],
+      "decisions": [
+        {
+          "sourceDepartmentId": "national-and-kapodistrian-university-of-athens--om-list-university-of-athens-reported-doctorate-one-profile-reported-phd-institution",
+          "disposition": "not-a-unit",
+          "unitIds": [],
+          "reason": "Reported doctorate-institution discovery label only; no department assertion or individual degree verification."
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://en.uoa.gr/",
+          "checkedAt": "2026-10-25",
+          "outcome": "read",
+          "note": "Official 2026 homepage gives canonical institution and uses University of Athens short form in current news; distinct from NTUA."
+        },
+        {
+          "url": "https://en.eds.uoa.gr/studies/doctoral_studies",
+          "checkedAt": "2026-10-25",
+          "outcome": "read",
+          "note": "Official education-department doctoral page confirms research doctorates at the university, but unrelated to strict Ops/IE title qualification."
+        }
+      ],
+      "limitations": [
+        "Current complete university department inventory has not been read; no exact Ops/MS/IE unit title proposed.",
+        "University of Athens here is canonical NKUA, not National Technical University of Athens.",
+        "Imported 2014 individual awarder and field remain source-reported only."
+      ],
+      "doctoralReview": {
+        "status": "partial",
+        "checkedAt": "2026-10-25",
+        "programmeIds": [],
+        "branches": [
+          {
+            "branch": "business",
+            "reviewState": "partial",
+            "conclusion": "Official university is a research doctorate provider, but an exact business doctoral programme/department title inventory was not fully read. Search hits about courses and generic management science prerequisites are not qualifying doctoral titles.",
+            "sourceUrls": [
+              "https://en.uoa.gr/",
+              "https://en.eds.uoa.gr/studies/doctoral_studies"
+            ]
+          },
+          {
+            "branch": "engineering",
+            "reviewState": "partial",
+            "conclusion": "Exact formal current quantitative/technical doctoral named-field inventory remains unread; no Operations, Management Science or Industrial Engineering route claimed. Distinct National Technical University of Athens register must not be merged here.",
+            "sourceUrls": [
+              "https://en.uoa.gr/"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://en.uoa.gr/",
+            "checkedAt": "2026-10-25",
+            "outcome": "read",
+            "note": "Full official canonical NKUA identity, short University of Athens usage and present-day PhD candidate population, without degree-specific fields."
+          },
+          {
+            "url": "https://en.eds.uoa.gr/studies/doctoral_studies",
+            "checkedAt": "2026-10-25",
+            "outcome": "read",
+            "note": "Full official example original-research Doctoral Degree at NKUA; not a relevant field claim."
+          },
+          {
+            "url": "https://en.uoa.gr/studies/postgraduate_programs",
+            "checkedAt": "2026-10-25",
+            "outcome": "blocked",
+            "note": "Direct full open returned 404; search extract was not used for detailed doctoral field conclusions."
+          },
+          {
+            "url": "https://www.pms.uoa.gr/phd-studies-at-pms/?lang=en",
+            "checkedAt": "2026-10-25",
+            "outcome": "blocked",
+            "note": "Direct full open timed out; search extract about generic management science prerequisites was not used as qualification evidence."
+          }
+        ],
+        "limitations": [
+          "Source-frame identity can be reconciled now, but current exact-title doctoral scope is incomplete; no verified qualifying route added.",
+          "Do not conflate NKUA with separate National Technical University of Athens or infer a 2014 person degree field."
+        ],
+        "coverageComplete": false
+      },
+      "addedAt": "2026-10-25T23:08:46Z",
+      "updatedAt": "2026-10-25T23:08:46Z"
+    },
+    {
       "id": "national-chiao-tung-university",
       "status": "reviewed",
       "canonicalName": "National Yang Ming Chiao Tung University",
@@ -62509,7 +62857,94 @@
       ],
       "duplicateOf": null,
       "addedAt": "2026-10-21T07:40:08Z",
-      "updatedAt": "2026-10-21T07:40:08Z"
+      "updatedAt": "2026-10-25T23:08:46Z",
+      "doctoralReview": {
+        "status": "verified",
+        "checkedAt": "2026-10-25",
+        "programmeIds": [
+          "pontificia-universidad-catolica-de-chile-puc--engineering-sciences-doctorate-industrial-transport"
+        ],
+        "branches": [
+          {
+            "branch": "business",
+            "reviewState": "checked",
+            "conclusion": "Current central whole-university doctoral admissions catalogue social science frame read, including Economics. No business Operations doctorate inferred from quantitative facultyarea or masters listings; existing business unit evidence unchanged.",
+            "sourceUrls": [
+              "https://doctorados.uc.cl/admision/fechas-de-postulacion/"
+            ]
+          },
+          {
+            "branch": "engineering",
+            "reviewState": "partial",
+            "conclusion": "Actual Engineering Sciences six doctoral areas and detailed researchlines read, Industrial and Transport verified. Separate DICI current professional component/three actual fields inspected without automatic researchPhD equivalence. Statistics actual doctoralfields checked. Mathematics doctoralpage unavailable, so whole technical coverage incomplete.",
+            "sourceUrls": [
+              "https://doctorados.uc.cl/programa/doctorado-ingenieria-industrial-transporte/",
+              "https://www.ing.uc.cl/programas-de-estudio/postgrado/doctorado-ciencias-la-ingenieria/areas-especializacion-doctorado/",
+              "https://www.ing.uc.cl/programas-de-estudio/postgrado/doctorado-ciencias-la-ingenieria/plan-de-estudios-2/",
+              "https://ingenieriaindustrial.ing.uc.cl/postgrados/",
+              "https://www.ing.uc.cl/programas-de-estudio/postgrado/doctorado-en-ingenieria/lineas-de-investigacion/",
+              "https://doctorados.uc.cl/programa/doctor-en-estadistica/",
+              "https://doctorados.uc.cl/programa/doctorado-en-matematica/"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://doctorados.uc.cl/programa/doctorado-ingenieria-industrial-transporte/",
+            "checkedAt": "2026-10-25",
+            "outcome": "read",
+            "note": "Actual official graduate-school programme description, objectives, graduation profile and two research-line headings read. Exact Doctor en Ciencias de la Ingeniería academic award, Industrial and Transport Engineering named doctoral area; independent original contribution required. English translation link failed timeout separately; no English award conversion."
+          },
+          {
+            "url": "https://www.ing.uc.cl/programas-de-estudio/postgrado/doctorado-ciencias-la-ingenieria/areas-especializacion-doctorado/",
+            "checkedAt": "2026-10-25",
+            "outcome": "read",
+            "note": "Actual full six Engineering Sciences doctoral specialization descriptions and all research-line headings read: Civil, Chemical and Bioprocess, Electrical, Computer Science, Mechanical, Industrial and Transport. Academic research doctorate original contribution expressly stated."
+          },
+          {
+            "url": "https://www.ing.uc.cl/programas-de-estudio/postgrado/doctorado-ciencias-la-ingenieria/plan-de-estudios-2/",
+            "checkedAt": "2026-10-25",
+            "outcome": "read",
+            "note": "Actual full programme study/rules body read:300 credits incl220thesis, candidacy examination, international research stay, publication/patent criterion and thesis/degree examination. Intermediate masters distinct."
+          },
+          {
+            "url": "https://ingenieriaindustrial.ing.uc.cl/postgrados/",
+            "checkedAt": "2026-10-25",
+            "outcome": "read",
+            "note": "Actual full IndustrialEngineering departmental postgraduate listing read: Industrial and Transport Sciences doctorate separately listed from Engineering ScienceswithIndustry doctorate; DIIS and Engineering School parent links explicit."
+          },
+          {
+            "url": "https://doctorados.uc.cl/admision/fechas-de-postulacion/",
+            "checkedAt": "2026-10-25",
+            "outcome": "read",
+            "note": "Actual complete central2027 intake catalogue read through all disciplines and engineeringtechnology section. Lists six named Engineering Sciences areas plus separate DICI; social sciences doctoral list includes Economics, no BusinessAdministration doctor named. Mathematics and Statistics remain distinct."
+          },
+          {
+            "url": "https://www.ing.uc.cl/programas-de-estudio/postgrado/doctorado-en-ingenieria/lineas-de-investigacion/",
+            "checkedAt": "2026-10-25",
+            "outcome": "read",
+            "note": "Actual full DICI current research-lines/profile page read. Explicit dual scientific-technological profile with professional component distinct from traditional academic doctorates; three lines Systems and Processes, Sustainability and Infrastructure, Information and Technology. Not automatically treated PhD-equivalent."
+          },
+          {
+            "url": "https://doctorados.uc.cl/programa/doctor-en-estadistica/",
+            "checkedAt": "2026-10-25",
+            "outcome": "read",
+            "note": "Actual full Statistics doctoral programme read: classical, Bayesian and applied statistics/data science named lines, no named Operations/IE title."
+          },
+          {
+            "url": "https://doctorados.uc.cl/programa/doctorado-en-matematica/",
+            "checkedAt": "2026-10-25",
+            "outcome": "blocked",
+            "note": "Normal central Mathematics programme link failed Timeout fetching. No retry/bypass; mathematical doctoral field scope remains concrete gap."
+          }
+        ],
+        "limitations": [
+          "Remaining Mathematics doctoral field inventory unavailable at actually opened official link; preserve partial scope, not negative from search absence.",
+          "DICI previous industry liaison page links operations research applications, but current actual programme profile professional component and three broad field titles retained as a separate-credential/title candidate, not additional counted route.",
+          "Programme history/establishment and renamed DICI transition dates not inferred. Current Industrial and Transport 2027 intake shown 01 September–30 October 2026 in central catalogue."
+        ],
+        "coverageComplete": false
+      }
     },
     {
       "id": "prairie-view-a-m-university",
@@ -100031,7 +100466,7 @@
       ],
       "duplicateOf": null,
       "addedAt": "2026-10-20T09:34:49Z",
-      "updatedAt": "2026-10-25T22:58:21Z",
+      "updatedAt": "2026-10-25T23:08:46Z",
       "doctoralReview": {
         "status": "verified",
         "checkedAt": "2026-10-25",
@@ -100052,7 +100487,7 @@
           {
             "branch": "engineering",
             "reviewState": "partial",
-            "conclusion": "Exact IE doctorate and full ISE degree inventory verified; broader college field list read but other engineering degree detail cards not reviewed. Follow-up 22 October: full degree-level and interdisciplinary inventories now read, Engineering Management confirmed master’s-only on its page, and Civil PhD field navigation reviewed. Wider engineering doctoral research-field checks remain incomplete; Mechanical PhD source hit a certificate error.",
+            "conclusion": "Exact IE doctorate and full ISE degree inventory verified; broader college field list read but other engineering degree detail cards not reviewed. Follow-up 22 October: full degree-level and interdisciplinary inventories now read, Engineering Management confirmed master’s-only on its page, and Civil PhD field navigation reviewed. Wider engineering doctoral research-field checks remain incomplete; Mechanical PhD source hit a certificate error. Follow-up 25 October: independent central Mechanical five-field description, current CS doctoral requirements and full research-category menu, and both ECE doctoral requirements actually read. No additional qualifying title established. ECE category options were not exposed in the opened faculty-expertise page; this limitation remains explicit.",
             "sourceUrls": [
               "https://www.ie.uh.edu/graduate/degree-programs",
               "https://www.ie.uh.edu/graduate/degree-programs/phd",
@@ -100060,7 +100495,15 @@
               "https://www.ise.uh.edu/graduate/degree-programs/memgmt",
               "https://www.egr.uh.edu/academics/graduate-programs/interdisciplinary-programs",
               "https://www.egr.uh.edu/academics/graduate-programs/programs",
-              "https://cee.uh.edu/programs/civil-graduate/doctor-philosophy-civil-engineering"
+              "https://cee.uh.edu/programs/civil-graduate/doctor-philosophy-civil-engineering",
+              "https://www.uh.edu/graduate-school/admissions/contacts-and-deadlines/",
+              "https://www.uh.edu/graduate-school/academics/doctoral-programs/",
+              "https://www.uh.edu/nsm/computer-science/graduate/phd/",
+              "https://www.uh.edu/nsm/computer-science/research/",
+              "https://www.ee.uh.edu/graduate",
+              "https://www.ee.uh.edu/graduate/degree-programs/computer-engineering-phd-program-video",
+              "https://www.ee.uh.edu/graduate/degree-requirements",
+              "https://www.ee.uh.edu/research/faculty-expertise"
             ]
           },
           {
@@ -100165,12 +100608,67 @@
             "checkedAt": "2026-10-25",
             "outcome": "read",
             "note": "Full actual Statistics and Data Science PhD body and all FAQ text read. Fall 2026 first cohort, exact degree/core/prescribed/other elective menus. Optimization Theory is elective, not an OR doctoral field."
+          },
+          {
+            "url": "https://www.uh.edu/graduate-school/admissions/contacts-and-deadlines/",
+            "checkedAt": "2026-10-25",
+            "outcome": "read",
+            "note": "Read targeted Mechanical, Electrical, Computer and Systems, and Materials programme entries, not the entire 1535-line inventory. Mechanical entry explicitly lists five research areas: applied mechanics, control and dynamical systems, materials science, thermal/fluid sciences and biomedical engineering. No named qualifying Operations field established."
+          },
+          {
+            "url": "https://www.uh.edu/graduate-school/academics/doctoral-programs/",
+            "checkedAt": "2026-10-25",
+            "outcome": "read",
+            "note": "Complete current central doctoral title menu read. It omits Statistics and Data Science and Computer Engineering that are explicitly present on current administering-department pages; therefore not treated as independently exhaustive."
+          },
+          {
+            "url": "https://publications.uh.edu/preview_program.php?catoid=57&poid=19357",
+            "checkedAt": "2026-10-25",
+            "outcome": "blocked",
+            "note": "Actual independently linked Mechanical doctoral catalogue timed out. No retry. Earlier Mechanical departmental certificate error remains untouched."
+          },
+          {
+            "url": "https://www.uh.edu/nsm/computer-science/graduate/phd/",
+            "checkedAt": "2026-10-25",
+            "outcome": "read",
+            "note": "Read complete current Fall 2021 onward doctoral requirements, theory/systems breadth fields, research proposal and dissertation requirements. Later historical requirement sections not fully read. General advisor-topic selection is not a named Operations research area."
+          },
+          {
+            "url": "https://www.uh.edu/nsm/computer-science/research/",
+            "checkedAt": "2026-10-25",
+            "outcome": "read",
+            "note": "Complete five-category research menu read. Combinatorial optimization appears under general theoretical algorithms, not a named doctoral Operations Research field."
+          },
+          {
+            "url": "https://www.ee.uh.edu/graduate",
+            "checkedAt": "2026-10-25",
+            "outcome": "read",
+            "note": "Complete actual graduate programme body read. Both Electrical Engineering and Computer Engineering PhDs explicitly listed, with research-intensive character. No qualifying named Operations title established."
+          },
+          {
+            "url": "https://www.ee.uh.edu/graduate/degree-programs/computer-engineering-phd-program-video",
+            "checkedAt": "2026-10-25",
+            "outcome": "read",
+            "note": "Complete page body consists of title and embedded video. Video not watched and no transcript read; no field inventory inferred."
+          },
+          {
+            "url": "https://www.ee.uh.edu/graduate/degree-requirements",
+            "checkedAt": "2026-10-25",
+            "outcome": "read",
+            "note": "Complete doctoral requirements for both Electrical Engineering and Computer Engineering read through line 115, including prescribed electives. Subsequent MSEE non-thesis specialization introduction and first categories read only; these are explicitly masters specializations, not automatically PhD fields. No complete all-degree page read claimed."
+          },
+          {
+            "url": "https://www.ee.uh.edu/research/faculty-expertise",
+            "checkedAt": "2026-10-25",
+            "outcome": "read",
+            "note": "Complete rendered text read: faculty names and research-area select control, but category options are not exposed in the opened text. No individual profiles or histories read. This extraction does not establish a complete research-field inventory."
           }
         ],
         "limitations": [
           "Two existing verified routes retained unchanged. Full college degree-level inventory checked; broader doctoral research-field coverage remains incomplete. Mechanical PhD source blocked by certificate error, without bypass. No additional PhD inferred from engineering-management, data-science, supply-chain/logistics or project-management master’s offerings.",
           "25 October 2026 fresh Mathematics branch complete within actual two-doctorate/current named-field menu. Statistics and Data Science is a separate actual doctorate first cohort Fall 2026, but its exact title/host and curriculum do not qualify from Optimization Theory elective alone. No new qualifying route.",
-          "Existing two programme cores and original per-fact dates retained exactly. Engineering remains partial; original Mechanical certificate common-name error not retried/bypassed. This follow-up does not assert full institutional doctoral completion."
+          "Existing two programme cores and original per-fact dates retained exactly. Engineering remains partial; original Mechanical certificate common-name error not retried/bypassed. This follow-up does not assert full institutional doctoral completion.",
+          "25 October independent current central and administering-department follow-up narrows the old engineering gap but does not claim complete ECE research-field coverage. Current central doctoral title menu is not exhaustive because newer department-listed Computer Engineering and Statistics/Data Science doctorates are omitted. No new qualifying route and no mechanical certificate bypass."
         ],
         "coverageComplete": false
       }
@@ -130919,10 +131417,10 @@
       ],
       "duplicateOf": null,
       "addedAt": "2026-10-20T11:00:16Z",
-      "updatedAt": "2026-10-22T12:14:06Z",
+      "updatedAt": "2026-10-25T23:08:46Z",
       "doctoralReview": {
         "status": "verified",
-        "checkedAt": "2026-10-22",
+        "checkedAt": "2026-10-25",
         "programmeIds": [
           "wu-vienna--economic-social-sciences-phd-logistics",
           "wu-vienna--social-economic-sciences-doctorate-logistics"
@@ -130930,14 +131428,17 @@
         "branches": [
           {
             "branch": "business",
-            "reviewState": "partial",
-            "conclusion": "Complete university doctoral inventory and exact two broad relevant research-doctorate credentials read; logistics institute explicitly confirms Doctorate/PhD participation. Other Operations/Production/SCM and decision-sciences institute doctoral route detail remains unverified; two broad degrees not multiplied per institute.",
+            "reviewState": "checked",
+            "conclusion": "Complete current five-credential and department/institute menus read. Two already represented broad research credentials cover actual institute Doctorate/PhD pathways; current actual ISOM doctoral topic menu explicitly names Operational Research and Operations Management. No new degree multiplied per department. Earlier BADS future-development observation retained; current inaccessible page is not a concrete unrepresented doctorate lead.",
             "sourceUrls": [
               "https://www.wu.ac.at/en/programs/doctoral-phd-programs",
-              "https://www.wu.ac.at/en/programs/doctoral-phd-programs/doctoral-program-in-social-and-economic-sciences/overview",
-              "https://www.wu.ac.at/en/programs/doctoral-phd-programs/phd-program-in-economic-and-social-sciences/overview",
-              "https://www.wu.ac.at/en/itl/teaching",
-              "https://wu.ac.at/bads"
+              "https://www.wu.ac.at/en/the-university/organizational-structure/academic-units/departments-institutes",
+              "https://www.wu.ac.at/en/statmath",
+              "https://www.wu.ac.at/en/statmath/phd-label-mathematics-in-economics-and-business",
+              "https://www.wu.ac.at/en/statmath/phd-label-mathematics-in-economics-and-business/courses",
+              "https://www.wu.ac.at/en/isom",
+              "https://www.wu.ac.at/en/isom/teaching",
+              "https://www.wu.ac.at/en/programs/doctoral-phd-programs/phd-program-in-economic-and-social-sciences/overview"
             ]
           },
           {
@@ -130950,10 +131451,12 @@
           },
           {
             "branch": "mathematics",
-            "reviewState": "partial",
-            "conclusion": "Statistics and Mathematics unit present in complete inventory; its relevant doctoral research fields not yet individually read.",
+            "reviewState": "checked",
+            "conclusion": "Actual Mathematics in Economics and Business PhD label and complete study programme read. Direct named Optimization and Operations Research doctoral research area links explicitly to existing Economic and Social Sciences PhD with original thesis and defence. This enriches shared parent degree, not another PhD or an inferred Dr.rer.soc.oec. specialization.",
             "sourceUrls": [
-              "https://www.wu.ac.at/en/the-university/organizational-structure/academic-units/departments-institutes"
+              "https://www.wu.ac.at/en/statmath",
+              "https://www.wu.ac.at/en/statmath/phd-label-mathematics-in-economics-and-business",
+              "https://www.wu.ac.at/en/statmath/phd-label-mathematics-in-economics-and-business/courses"
             ]
           }
         ],
@@ -131005,13 +131508,79 @@
             "checkedAt": "2026-10-22",
             "outcome": "read",
             "note": "Full institute Teaching page read: explicitly graduates Bachelors Masters and Doctorates; dedicated Doctorate/PhD paragraph states doctoral/PhD students engaged in institute scientific discourse, interdisciplinary individual framework."
+          },
+          {
+            "url": "https://www.wu.ac.at/en/programs/doctoral-phd-programs",
+            "checkedAt": "2026-10-25",
+            "outcome": "read",
+            "note": "Read actual five-degree inventory, supervision framework and substantive FAQ through subject-selection explanation. Both existing broad credentials retained; Finance, Business Law and International Business Taxation are separate nonmatching subject titles, not multiplied from individual methods.",
+            "accessMethod": "web.open/click actual official HTML; authorized fallback"
+          },
+          {
+            "url": "https://www.wu.ac.at/en/the-university/organizational-structure/academic-units/departments-institutes",
+            "checkedAt": "2026-10-25",
+            "outcome": "read",
+            "note": "Complete substantive department/institute/group inventory read. Actual ISOM department and Statistics and Mathematics institute located; no engineering faculty/department.",
+            "accessMethod": "web.open/click actual official HTML; authorized fallback"
+          },
+          {
+            "url": "https://www.wu.ac.at/en/statmath",
+            "checkedAt": "2026-10-25",
+            "outcome": "read",
+            "note": "Complete substantive institute landing body and navigation read; linked structured Mathematics PhD label identified. News and seminar topics are not additional degrees.",
+            "accessMethod": "web.open/click actual official HTML; authorized fallback"
+          },
+          {
+            "url": "https://www.wu.ac.at/en/statmath/phd-label-mathematics-in-economics-and-business",
+            "checkedAt": "2026-10-25",
+            "outcome": "read",
+            "note": "Complete substantive doctoral label body read: five named doctoral research areas explicitly include Optimization and Operations Research, independent research, support from Statistics and Mathematics plus Production and Supply Chain Management.",
+            "accessMethod": "web.open/click actual official HTML; authorized fallback"
+          },
+          {
+            "url": "https://www.wu.ac.at/en/statmath/phd-label-mathematics-in-economics-and-business/courses",
+            "checkedAt": "2026-10-25",
+            "outcome": "read",
+            "note": "Complete substantive study-programme and thesis guidance read. Explicit parent Economic and Social Sciences PhD curriculum and exact Doctor of Philosophy award; label graduation certificate, original research contributions and doctoral committee defence. No independent Mathematics PhD award invented.",
+            "accessMethod": "web.open/click actual official HTML; authorized fallback"
+          },
+          {
+            "url": "https://www.wu.ac.at/en/isom",
+            "checkedAt": "2026-10-25",
+            "outcome": "read",
+            "note": "Complete substantive current department body read. Actual Information Systems and Operations Management department; generic methods list alone not treated as doctoral route.",
+            "accessMethod": "web.open/click actual official HTML; authorized fallback"
+          },
+          {
+            "url": "https://www.wu.ac.at/en/isom/teaching",
+            "checkedAt": "2026-10-25",
+            "outcome": "read",
+            "note": "Complete substantive teaching body read. Doctorat / PhD dissertation topics currently worked on at department explicitly include Operational Research and Operations Management. Lower bachelor and masters offerings distinguished.",
+            "accessMethod": "web.open/click actual official HTML; authorized fallback"
+          },
+          {
+            "url": "https://www.wu.ac.at/en/programs/doctoral-phd-programs/phd-program-in-economic-and-social-sciences/overview",
+            "checkedAt": "2026-10-25",
+            "outcome": "read",
+            "note": "Complete substantive current parent PhD overview read: academic-unit-supervised dissertations, annual dissertation agreements, supervisor-instigated admissions and exact Doctor of Philosophy award. Original older programme facts retain their dates.",
+            "accessMethod": "web.open/click actual official HTML; authorized fallback"
+          },
+          {
+            "url": "https://wu.ac.at/bads",
+            "checkedAt": "2026-10-25",
+            "outcome": "blocked",
+            "note": "Actual current endpoint inaccessible via tool. No retry or content claim. Prior 22 October actual observation retained: only future PhD-development language, not concrete current unrepresented degree.",
+            "accessMethod": "web.open/click actual official HTML; authorized fallback"
           }
         ],
         "limitations": [
-          "Canonical programme IDs use existing wu-vienna parent; alias record must not become additional provider. Parent identity/unit facts preserved with original dates.",
-          "Two actual degree credentials retained separately, transport/logistics pathway is institute-linked research rather than invented formal specialization. Broader business/mathematics completeness remains open."
+          "Scope-only composition retains both existing exact programme cores and original programme fact dates; separate continuation262 source observation recommends enriching shared PhD with named Mathematics label OR field, not adding duplicate degree.",
+          "Existing Transport and Logistics institute pathway remains. New ISOM Doctorat/PhD topic evidence is additional direct doctoral Operations evidence, not a new award. Mathematics label explicitly supports PhD only, not automatically the separate Austrian doctorate.",
+          "Prior 22 October BADS actual read describes future PhD development only. Current endpoint inaccessible 25 October, not retried; no current BADS content claimed and no concrete missing distinct doctorate established.",
+          "Bounded current degree/host/doctoral-field inventory completion does not assert every supervisor topic examined. No engineering faculty in actual formal inventory. No browser tabs or public merger commands.",
+          "Supersedes scope263 for normal existingProgramId enrichment plus scope composition. Do not subsequently apply unchanged263 core rows after enrichment; use this combined verified superset or refresh263 exact cores to avoid reverting new host/fields. Original per-fact dates must be retained by integrator for unchanged parent credential/logistics facts."
         ],
-        "coverageComplete": false
+        "coverageComplete": true
       }
     },
     {

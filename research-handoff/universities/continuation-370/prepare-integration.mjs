@@ -1,0 +1,10 @@
+import fs from 'node:fs';import crypto from 'node:crypto';import {execFileSync} from 'node:child_process';
+const dir='research-handoff/universities/continuation-370',root='research-handoff/universities/',p=(n,l,f)=>`${root}continuation-${n}/shard-${l}/${f}.json`;
+const sources=[p(303,'a','university-of-athens.source-addition')],unitInputs=[p(303,'a','university-of-athens.unit'),p(307,'a','california-institute-of-technology.unit')];
+const programmes=[p(303,'a','university-of-athens.doctoral'),p(283,'b','puc-chile-industrial-transport-doctorate-partial-scope'),p(264,'c','wu-vienna.existing-parent-enrichment-and-scope')];
+const scopes=[p(304,'a','california-institute-of-technology.doctoral'),p(305,'a','college-of-charleston.doctoral'),p(306,'a','catholic-university-of-eichstatt-ingolstadt.doctoral'),p(310,'a','colorado-state-university.doctoral'),p(309,'a','florida-state-university.doctoral'),p(261,'c','houston.technical-followup-scope-composite')];
+const m={baseCommit:execFileSync('git',['rev-parse','HEAD'],{encoding:'utf8'}).trim(),sources,unitInputs,programmes,scopes};
+m.frozenInputs=[...new Set([...sources,p(303,'a','university-of-athens.source-catalogue'),...unitInputs,...programmes,...scopes])].map(path=>({path,sha256:crypto.createHash('sha256').update(fs.readFileSync(path)).digest('hex')}));
+fs.writeFileSync(dir+'/integration-manifest.json',JSON.stringify(m,null,2)+'\n');
+fs.writeFileSync(dir+'/apply-phase.mjs',fs.readFileSync(root+'continuation-360/apply-phase.mjs','utf8').replaceAll('continuation-360','continuation-370'));
+console.log({sources:sources.length,units:unitInputs.length,programmes:programmes.length,scopes:scopes.length});
