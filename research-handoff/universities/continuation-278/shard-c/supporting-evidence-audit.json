@@ -1,0 +1,578 @@
+{
+  "assessedAt": "2026-10-25",
+  "method": "Exact source tuples only, existing individually read official facts/date preserved; no fresh verification.",
+  "supportingPublicReviews": [
+    {
+      "id": "university-of-alberta",
+      "status": "reviewed",
+      "canonicalName": "University of Alberta",
+      "universitySourceUrl": "https://www.ualberta.ca/en/accounting-business-analytics/index.html",
+      "checkedAt": "2026-10-20",
+      "reviewer": "Codex in Chrome",
+      "units": [
+        {
+          "id": "university-of-alberta--accounting-business-analytics",
+          "name": "Department of Accounting and Business Analytics",
+          "school": "Alberta School of Business",
+          "type": "department",
+          "fields": [
+            "operations-management",
+            "operations-research"
+          ],
+          "sourceUrl": "https://www.ualberta.ca/en/accounting-business-analytics/index.html",
+          "checkedAt": "2026-10-20",
+          "evidence": "Chair message explicitly names department and faculty research in operations management; department lists Operations and Information Systems PhD and operations management undergraduate programs."
+        },
+        {
+          "id": "university-of-alberta--ai-decision-analytics",
+          "name": "AI Centre for Decision Analytics (AI4DA)",
+          "school": null,
+          "type": "center",
+          "fields": [
+            "operations-research",
+            "operations-management",
+            "logistics"
+          ],
+          "sourceUrl": "https://www.ualberta.ca/en/ai-centre-for-decision-analytics/index.html",
+          "checkedAt": "2026-10-20",
+          "evidence": "Official page spells out center title and abbreviation, describes optimization platforms and transportation logistics, healthcare operations and retail decision applications."
+        },
+        {
+          "id": "university-of-alberta--mechanical-engineering",
+          "name": "Department of Mechanical Engineering",
+          "school": "Faculty of Engineering",
+          "type": "department",
+          "fields": [
+            "operations-research",
+            "supply-chain",
+            "logistics"
+          ],
+          "sourceUrl": "https://www.ualberta.ca/en/engineering/mechanical-engineering/research/engineering-systems-integration-reliability-and-operations.html",
+          "checkedAt": "2026-10-20",
+          "evidence": "Official department research area includes Operations Research and Decision Analytics: programming, simulation, queuing and stochastic optimization applied to supply-chain resilience, fleet management, scheduling and logistics."
+        }
+      ],
+      "decisions": [
+        {
+          "sourceDepartmentId": "university-of-alberta____ba",
+          "disposition": "not-a-unit",
+          "unitIds": [],
+          "reason": "BA is an unspecified recruiting shorthand; not published as a department."
+        },
+        {
+          "sourceDepartmentId": "university-of-alberta____operations-management-and-business-analytics",
+          "disposition": "duplicate",
+          "unitIds": [
+            "university-of-alberta--accounting-business-analytics"
+          ],
+          "reason": "These specialties are explicitly covered within current combined department; not retained as a separate department."
+        },
+        {
+          "sourceDepartmentId": "university-of-alberta__alberta-school-of-business__accounting-and-business-analytics",
+          "disposition": "replaced",
+          "unitIds": [
+            "university-of-alberta--accounting-business-analytics"
+          ],
+          "reason": "Full official current department title confirmed by chair message."
+        },
+        {
+          "sourceDepartmentId": "university-of-alberta__alberta-school-of-business__accounting-operations-and-information-systems",
+          "disposition": "replaced",
+          "unitIds": [
+            "university-of-alberta--accounting-business-analytics"
+          ],
+          "reason": "Current official structure uses Department of Accounting and Business Analytics and retains operations and information systems programs; imported historical title not retained as additional current department."
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.ualberta.ca/en/accounting-business-analytics/people.html?discipline=OperationsManagement",
+          "checkedAt": "2026-10-20",
+          "outcome": "read",
+          "note": "Department heading loaded, but faculty list did not; no individual faculty count inferred."
+        },
+        {
+          "url": "https://www.ualberta.ca/en/accounting-business-analytics/index.html",
+          "checkedAt": "2026-10-20",
+          "outcome": "read",
+          "note": "Chair message full department title and explicit operations scope."
+        },
+        {
+          "url": "https://www.ualberta.ca/en/ai-centre-for-decision-analytics/index.html",
+          "checkedAt": "2026-10-20",
+          "outcome": "read",
+          "note": "Center title and optimization/operations/logistics remit."
+        },
+        {
+          "url": "https://www.ualberta.ca/en/engineering/mechanical-engineering/research/index.html",
+          "checkedAt": "2026-10-20",
+          "outcome": "read",
+          "note": "Engineering department identity and research areas."
+        },
+        {
+          "url": "https://www.ualberta.ca/en/engineering/mechanical-engineering/research/engineering-systems-integration-reliability-and-operations.html",
+          "checkedAt": "2026-10-20",
+          "outcome": "read",
+          "note": "Initial navigation timeout; successfully read on following directory link, including Operations Research and Decision Analytics specialization."
+        }
+      ],
+      "limitations": [
+        "No exact historical rename date established for Accounting, Operations and Information Systems; current structure replaces it for present directory display.",
+        "Center parent school not stated unambiguously in reviewed center page; left null."
+      ],
+      "duplicateOf": null,
+      "addedAt": "2026-10-20T09:43:28Z",
+      "updatedAt": "2026-10-25T20:49:16Z",
+      "doctoralReview": {
+        "status": "verified",
+        "checkedAt": "2026-10-25",
+        "programmeIds": [
+          "university-of-alberta--business-operations-information-systems-phd",
+          "university-of-alberta--mechanical-engineering-phd-operations-research"
+        ],
+        "branches": [
+          {
+            "branch": "business",
+            "reviewState": "checked",
+            "conclusion": "Full current OIS specialization and exact thesis-based PhD programme requirements read; actual current department retained.",
+            "sourceUrls": [
+              "https://www.ualberta.ca/en/business/programs/phd/program-overview/specializations/operations-and-information-systems.html",
+              "https://www.ualberta.ca/en/graduate-programs/doctor-of-philosophy-in-business-with-a-specialization-in-operations-and-information-systems.html",
+              "https://www.ualberta.ca/en/accounting-business-analytics/index.html"
+            ]
+          },
+          {
+            "branch": "engineering",
+            "reviewState": "partial",
+            "conclusion": "Full current engineering programme inventory and earlier Mechanical/Civil/Environmental/Mining/Petroleum field checks retained. Newly actual ECE PhD twelve-field list and department thirteen-field inventory plus Computing Science standard/Statistical Machine Learning doctoral routes and sixteen research areas read. No additional title-eligible field established. Separate Engineering Management exact doctoral Operations Research field allocation remains unresolved; challenged163source not retried, no second Mechanical/OR route inferred.",
+            "sourceUrls": [
+              "https://www.ualberta.ca/en/graduate-programs/doctor-of-philosophy-in-engineering-management-mechanical-engineering.html",
+              "https://www.ualberta.ca/en/engineering/mechanical-engineering/research/engineering-systems-integration-reliability-and-operations.html",
+              "https://www.ualberta.ca/en/engineering/mechanical-engineering/graduate/doctor-of-philosophy.html",
+              "https://www.ualberta.ca/en/engineering/programs/graduate/index.html",
+              "https://www.ualberta.ca/en/engineering/civil-environmental-engineering/graduate/index.html",
+              "https://www.ualberta.ca/en/graduate-programs/doctor-of-philosophy-electrical-and-computer-engineering.html",
+              "https://www.ualberta.ca/en/engineering/electrical-computer-engineering/research/index.html",
+              "https://www.ualberta.ca/en/graduate-programs/doctor-of-philosophy-computing-science.html",
+              "https://www.ualberta.ca/en/computing-science/research/research-areas/index.html"
+            ]
+          },
+          {
+            "branch": "mathematics",
+            "reviewState": "checked",
+            "conclusion": "Full current Math/Stats degree-versus-research-field matrix read, including named mathematics/applied mathematics subfields. No additional matching Operations/MS/IE doctoral field established. MDP and Biostatistics explicitly not PhD offerings; embedded Data Science certificate not doctorate.",
+            "sourceUrls": [
+              "https://www.ualberta.ca/en/mathematical-and-statistical-sciences/graduate-studies/programs/index.html"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://www.ualberta.ca/en/business/programs/phd/program-overview/specializations/operations-and-information-systems.html",
+            "checkedAt": "2026-10-21",
+            "outcome": "read",
+            "note": "Full current OISdoctoral specialization, OM/BAresearch training and courses read."
+          },
+          {
+            "url": "https://www.ualberta.ca/en/graduate-programs/doctor-of-philosophy-in-engineering-management-mechanical-engineering.html",
+            "checkedAt": "2026-10-21",
+            "outcome": "read",
+            "note": "Full exact EngineeringManagementPhD programme and dissertation requirements, actualMechanicalEngineeringhost read."
+          },
+          {
+            "url": "https://www.ualberta.ca/en/engineering/mechanical-engineering/research/engineering-systems-integration-reliability-and-operations.html",
+            "checkedAt": "2026-10-21",
+            "outcome": "read",
+            "note": "Full current engineering researcharea and explicit OR/DecisionAnalytics specialization read, including supply-chain/logistics/optimization."
+          },
+          {
+            "url": "https://www.ualberta.ca/en/graduate-programs/doctor-of-philosophy-in-business-with-a-specialization-in-operations-and-information-systems.html",
+            "checkedAt": "2026-10-21",
+            "outcome": "read",
+            "note": "Full current exact BusinessPhD/OIS degree requirements, thesis defence and faculty read."
+          },
+          {
+            "url": "https://www.ualberta.ca/en/accounting-business-analytics/index.html",
+            "checkedAt": "2026-10-20",
+            "outcome": "read",
+            "note": "Prior actuallyread current department chair/programme identity observation retained; OIS doctoral programme explicitly within AccountingBusinessAnalytics department."
+          },
+          {
+            "url": "https://www.ualberta.ca/en/engineering/mechanical-engineering/graduate/doctor-of-philosophy.html",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full current departmental PhD page read: original thesis, Mechanical-specific learning objectives and exact Engineering Systems Integration/Reliability/Operations named area. Separate Engineering Management degree distinguished in own section."
+          },
+          {
+            "url": "https://www.ualberta.ca/en/engineering/mechanical-engineering/research/engineering-systems-integration-reliability-and-operations.html",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full research area and all six named specialization descriptions read; explicit OR/Decision Analytics with planning, scheduling, logistics, queues and supply-chain resilience. Earlier read/date preserved separately."
+          },
+          {
+            "url": "https://www.ualberta.ca/en/engineering/programs/graduate/index.html",
+            "note": "Complete substantive Engineering graduate degree inventory read, including expanded PhD list: Biomedical; Chemical/Materials; Civil/Environmental/Mining/Petroleum; Electrical/Computer/Engineering Physics; Engineering Management; Mechanical. MD/PhD Biomedical separate medical joint pathway, no additional Operations title. Masters, MBA/MEng and certificates distinguished.",
+            "outcome": "read",
+            "checkedAt": "2026-10-25",
+            "accessMethod": "web.open/click actual official HTML; authorized fallback"
+          },
+          {
+            "url": "https://www.ualberta.ca/en/mathematical-and-statistical-sciences/graduate-studies/programs/index.html",
+            "note": "Full actual Math/Stats graduate research-area versus degree matrix read. PhDs Mathematics, Applied Math, Mathematical Finance, Mathematical Physics, Statistics, Statistical Machine Learning. Actual included mathematics/applied mathematics subfields name no Operations/MS/IE. Modelling Data Predictions and Biostatistics explicitly have no PhD in table. Embedded Data Science certificate not another doctorate.",
+            "outcome": "read",
+            "checkedAt": "2026-10-25",
+            "accessMethod": "web.open/click actual official HTML; authorized fallback"
+          },
+          {
+            "url": "https://www.ualberta.ca/en/engineering/civil-environmental-engineering/graduate/index.html",
+            "note": "Full actual Civil/Environmental/Mining/Petroleum graduate programme and named field inventory read: construction, environmental, geotechnical/geoenvironmental, mining, petroleum, structural, transportation, water resources, cross-disciplinary. MSc, MEng, MBA/MEng and PhD distinguished; no directly matching Ops/MS/IE doctoral title in actual field inventory.",
+            "outcome": "read",
+            "checkedAt": "2026-10-25",
+            "accessMethod": "web.open/click actual official HTML; authorized fallback"
+          },
+          {
+            "url": "https://www.ualberta.ca/en/graduate-programs/doctor-of-philosophy-in-engineering-management-mechanical-engineering.html",
+            "note": "Current actual primary URL presents JavaScript robot-verification page; programme body unread on25 October. No reload, challenge interaction or bypass. Older genuinely read programme facts remain separately dated; current access failure does not revoke prior observed award.",
+            "outcome": "blocked",
+            "checkedAt": "2026-10-25",
+            "accessMethod": "web.open/click actual official HTML; authorized fallback"
+          },
+          {
+            "url": "https://www.ualberta.ca/en/graduate-programs/doctor-of-philosophy-electrical-and-computer-engineering.html",
+            "checkedAt": "2026-10-25",
+            "outcome": "read",
+            "accessMethod": "web.open actual official full HTML; authorized fallback",
+            "note": "Full actual ECE PhD programme and complete twelve named research areas read. Original thesis and candidacy required; fields biomedical,communications,computing,control,electromagnetics,energy,circuits,nanodevices,photonics,signal processing,software/intelligent systems,solid-state electronics. No matching Ops/MS/IE named doctoral field."
+          },
+          {
+            "url": "https://www.ualberta.ca/en/engineering/electrical-computer-engineering/research/index.html",
+            "checkedAt": "2026-10-25",
+            "outcome": "read",
+            "accessMethod": "web.open actual official full HTML; authorized fallback",
+            "note": "Full actual department research descriptions and complete thirteen named areas read, adding AI Robotics Machine Learning to programme list. No matching title; individual control/optimization uses not converted into Operations doctorate."
+          },
+          {
+            "url": "https://www.ualberta.ca/en/graduate-programs/doctor-of-philosophy-computing-science.html",
+            "checkedAt": "2026-10-25",
+            "outcome": "read",
+            "accessMethod": "web.open actual official full HTML; authorized fallback",
+            "note": "Full actual Computing Science PhD programme requirements and degree/field inventory read: standard PhD plus Statistical Machine Learning specialization; other Multimedia route only MSc. Original doctoral dissertation and candidacy required. No matching Ops/MS/IE title."
+          },
+          {
+            "url": "https://www.ualberta.ca/en/computing-science/research/research-areas/index.html",
+            "checkedAt": "2026-10-25",
+            "outcome": "read",
+            "accessMethod": "web.open actual official full HTML; authorized fallback",
+            "note": "Entire substantive16-area inventory and descriptions read across two displayed sections, including algorithms,AI,networks,games,graphics,vision,databases,HCI,machine learning,NLP,privacy,reinforcement learning,robotics,software. Broad faculty research categories explicitly distinguished from formal degree specialization. No matching Ops/MS/IE named field."
+          }
+        ],
+        "limitations": [
+          "Scope-only composition preserves both existing doctoral programme exact cores, facts, original source-check dates and title decisions. No new programme or credential refresh.",
+          "Prior completed faculty inventory, Civil/Mining/Petroleum and Mechanical/Math fields retained. Current Electrical/Computer and Science Computing named fields now checked. Only separate Engineering Management exact doctoral OR allocation remains material technical gap; blocked source retained without retry.",
+          "No browser tabs or public merger commands."
+        ],
+        "coverageComplete": false
+      }
+    },
+    {
+      "id": "university-of-calgary",
+      "status": "reviewed",
+      "canonicalName": "University of Calgary",
+      "universitySourceUrl": "https://haskayne.ucalgary.ca/research-and-faculty/academic-areas/operations-and-supply-chain-management",
+      "checkedAt": "2026-10-20",
+      "reviewer": "Codex in Chrome",
+      "units": [
+        {
+          "id": "university-of-calgary--operations-supply-chain",
+          "name": "Operations and Supply Chain Management",
+          "school": "Haskayne School of Business",
+          "type": "area",
+          "fields": [
+            "operations-management",
+            "supply-chain",
+            "logistics",
+            "operations-research"
+          ],
+          "sourceUrl": "https://haskayne.ucalgary.ca/research-and-faculty/academic-areas/operations-and-supply-chain-management",
+          "checkedAt": "2026-10-20",
+          "evidence": "Official page calls this academic specialization and identifies supply-chain network design, facility layout/location, operations strategy and logistics among research strengths, with dedicated faculty and area contact."
+        }
+      ],
+      "decisions": [
+        {
+          "sourceDepartmentId": "university-of-calgary__haskayne-school-of-business__operations-and-supply-chain-management",
+          "disposition": "replaced",
+          "unitIds": [
+            "university-of-calgary--operations-supply-chain"
+          ],
+          "reason": "Official name retained but accurately typed as academic area rather than department."
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://haskayne.ucalgary.ca/research-and-faculty/academic-areas/operations-and-supply-chain-management",
+          "checkedAt": "2026-10-20",
+          "outcome": "read",
+          "note": "Academic area title, scope and faculty."
+        },
+        {
+          "url": "https://schulich.ucalgary.ca/research/research-themes/advanced-materials-and-manufacturing/manufacturing-and-maintenance-systems",
+          "checkedAt": "2026-10-20",
+          "outcome": "read",
+          "note": "Engineering manufacturing theme and faculty affiliations reviewed; primarily automation, materials, design and control; not inferred to be a separate industrial engineering or operations unit."
+        }
+      ],
+      "limitations": [
+        "Engineering manufacturing research was examined but not automatically treated as operations research or an industrial engineering department."
+      ],
+      "duplicateOf": null,
+      "addedAt": "2026-10-20T09:53:41Z",
+      "updatedAt": "2026-10-25T17:43:03Z",
+      "doctoralReview": {
+        "status": "verified",
+        "checkedAt": "2026-10-22",
+        "programmeIds": [
+          "university-of-calgary--management-operations-supply-chain-phd"
+        ],
+        "branches": [
+          {
+            "branch": "business",
+            "reviewState": "checked",
+            "conclusion": "Full ManagementPhD overview, specialization inventory, thesis/admissions and Haskaynehost read. Scope-policy adjudication on 25 October: Actual Show all graduate results expanded and full current university programme/credential inventory read. Management eight doctoral specializations, exact Math/Statistics doctorate and five named specializations, Mechanical/Manufacturing full displayed research listings, Sustainable Systems and Civil exact doctorates/specializations read. Remaining Transportation/Project Management/Sustainable Systems and manufacturing research topics do not create qualifying Ops/IE titles under revised rule; no broad hidden-field census required. No new primary read; original source dates retained.",
+            "sourceUrls": [
+              "https://grad.ucalgary.ca/future-students/graduate/discover-opportunities/explore-programs/management-phd"
+            ]
+          },
+          {
+            "branch": "engineering",
+            "reviewState": "checked",
+            "conclusion": "Full university graduate degree inventory now expanded/read; all Mechanical/Manufacturing programme supervisor research listings expanded/read (not individual histories). Listed manufacturing concerns physical processes, robotics/control/materials; no explicit OR/industrial operations field verified. Newly identified Sustainable Systems Engineering PhD overview, themes and supervisor research list read: sustainability/regenerative systems design and modelling, no qualifying route inferred from SCM career destination alone. Civil, mathematical and other plausibly relevant doctoral fields still require bounded follow-up. Civil Engineering PhD current overview now read with formal Transportation Engineering specialization; department linked research focus explicitly plans and operates traffic, transit and emerging mobility services. Substantive Operations field adjudication pending in separate observation; no additional route counted before integration. Scope-policy adjudication on 25 October: Actual Show all graduate results expanded and full current university programme/credential inventory read. Management eight doctoral specializations, exact Math/Statistics doctorate and five named specializations, Mechanical/Manufacturing full displayed research listings, Sustainable Systems and Civil exact doctorates/specializations read. Remaining Transportation/Project Management/Sustainable Systems and manufacturing research topics do not create qualifying Ops/IE titles under revised rule; no broad hidden-field census required. No new primary read; original source dates retained.",
+            "sourceUrls": [
+              "https://grad.ucalgary.ca/future-students/graduate/discover-opportunities/explore-programs/mechanical-and-manufacturing-engineering-phd",
+              "https://grad.ucalgary.ca/future-students/graduate/discover-opportunities/explore-programs/mechanical-and-manufacturing-engineering-phd",
+              "https://grad.ucalgary.ca/future-students/graduate/discover-opportunities/explore-programs",
+              "https://grad.ucalgary.ca/future-students/graduate/discover-opportunities/explore-programs/sustainable-systems-engineering-phd-thesis",
+              "https://grad.ucalgary.ca/future-students/graduate/discover-opportunities/explore-programs/civil-engineering-phd",
+              "https://schulich.ucalgary.ca/departments/civil-engineering",
+              "https://schulich.ucalgary.ca/civil/research/research-areas"
+            ]
+          },
+          {
+            "branch": "mathematics",
+            "reviewState": "checked",
+            "conclusion": "Current exact Mathematics and Statistics PhD overview explicitly permits industrial mathematics and operations research; research thesis/defense and actual department/faculty host read. One broad doctorate with OR research option, no formal OR concentration inferred. Scope-policy adjudication on 25 October: Actual Show all graduate results expanded and full current university programme/credential inventory read. Management eight doctoral specializations, exact Math/Statistics doctorate and five named specializations, Mechanical/Manufacturing full displayed research listings, Sustainable Systems and Civil exact doctorates/specializations read. Remaining Transportation/Project Management/Sustainable Systems and manufacturing research topics do not create qualifying Ops/IE titles under revised rule; no broad hidden-field census required. No new primary read; original source dates retained.",
+            "sourceUrls": [
+              "https://grad.ucalgary.ca/future-students/graduate/discover-opportunities/explore-programs/math-and-statistics-phd"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://grad.ucalgary.ca/future-students/graduate/discover-opportunities/explore-programs/management-phd",
+            "checkedAt": "2026-10-21",
+            "outcome": "read",
+            "note": "Full current ManagementPhD degree and eight doctoral specializations, originalthesis/defence and facultyhost read."
+          },
+          {
+            "url": "https://grad.ucalgary.ca/future-students/graduate/discover-opportunities/explore-programs/mechanical-and-manufacturing-engineering-phd",
+            "checkedAt": "2026-10-21",
+            "outcome": "read",
+            "note": "Full rendered current MechanicalManufacturingPhD overview, specialization list and first supervisor page read; remaining supervisor pages not read and no individualcareercollection."
+          },
+          {
+            "url": "https://grad.ucalgary.ca/future-students/graduate/discover-opportunities/explore-programs/mechanical-and-manufacturing-engineering-phd",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full current doctoral overview read via actual loaded browser state; actual Show all research listings expanded and every displayed listing read, including later manufacturing/materials/design researchers. No individual biography or employment history collected."
+          },
+          {
+            "url": "https://grad.ucalgary.ca/future-students/graduate/discover-opportunities/explore-programs",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Actual Show all results expanded, then complete current university graduate programme/credential inventory read. Engineering PhDs include Biomedical, Chemical/Petroleum, Civil, Electrical/Computer, Geomatics, Mechanical/Manufacturing and Sustainable Systems; masters/certificates distinct."
+          },
+          {
+            "url": "https://grad.ucalgary.ca/future-students/graduate/discover-opportunities/explore-programs/sustainable-systems-engineering-phd-thesis",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full substantive current doctorate overview, sustainability themes, completion requirements, thesis defense, all four displayed supervisor research fields and Schulich programme office read. SCM listed as career role, not explicitly a doctoral research specialization."
+          },
+          {
+            "url": "https://grad.ucalgary.ca/future-students/graduate/discover-opportunities/explore-programs/math-and-statistics-phd",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full current Mathematics and Statistics doctorate overview, exact departmental/faculty host, five named specializations and original thesis/defense requirements read. Explicit industrial mathematics and operations research doctoral work stated; no individual supervisor biographies or employment histories collected."
+          },
+          {
+            "url": "https://grad.ucalgary.ca/future-students/graduate/discover-opportunities/explore-programs/civil-engineering-phd",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full exact Civil Engineering PhD overview, specialization list, original thesis/open oral defense and Department/Schulich host read. Transportation Engineering and Project Management are explicitly named specializations; not all names automatically qualifying Operations research."
+          },
+          {
+            "url": "https://schulich.ucalgary.ca/departments/civil-engineering",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Current departmental homepage read, exact Department of Civil Engineering and actual research-area navigation."
+          },
+          {
+            "url": "https://schulich.ucalgary.ca/civil/research/research-areas",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full current research-area inventory read; actual Transportation Systems Diagnosis, Monitoring, and Management accordion expanded/read, explicit planning/operation of traffic, transit/emerging mobility, operations analysis, multimodal modelling and air-transport planning/operations."
+          },
+          {
+            "url": "https://haskayne.ucalgary.ca/research-and-faculty/academic-areas/operations-and-supply-chain-management",
+            "checkedAt": "2026-10-20",
+            "outcome": "read",
+            "note": "Academic area title, scope and faculty."
+          },
+          {
+            "url": "https://schulich.ucalgary.ca/research/research-themes/advanced-materials-and-manufacturing/manufacturing-and-maintenance-systems",
+            "checkedAt": "2026-10-20",
+            "outcome": "read",
+            "note": "Engineering manufacturing theme and faculty affiliations reviewed; primarily automation, materials, design and control; not inferred to be a separate industrial engineering or operations unit."
+          }
+        ],
+        "limitations": [
+          "Civil formal Transportation Engineering and Project Management specializations remain genuine but are not renamed Operations/OR from transport planning/operational research descriptions. Earlier substantive-scope candidate preserved in audit.",
+          "Sustainable Systems doctorate and manufacturing research remain real offerings; sustainability models, supply-chain career destinations, robotics/materials/control do not by themselves create named qualifying title.",
+          "Existing Management/Math doctoral records, actual thesis/defense evidence and all original check dates retained unchanged through scope-only operation.",
+          "Scope-only title-policy adjudication from previously opened complete official inventories, not new source verification or historical census. Current programme facts/IDs must remain unchanged through --scope-only integration. All prior scope questions retained in handoff snapshot."
+        ],
+        "coverageComplete": true
+      }
+    },
+    {
+      "id": "university-of-auckland",
+      "status": "reviewed",
+      "canonicalName": "University of Auckland",
+      "universitySourceUrl": "https://www.auckland.ac.nz/en/business/about-business-school/isom.html",
+      "checkedAt": "2026-10-20",
+      "reviewer": "Codex in Chrome",
+      "units": [
+        {
+          "id": "university-of-auckland--isom",
+          "name": "Department of Information Systems and Operations Management (ISOM)",
+          "school": "Business School",
+          "type": "department",
+          "fields": [
+            "operations-management",
+            "supply-chain"
+          ],
+          "sourceUrl": "https://www.auckland.ac.nz/en/business/about-business-school/isom.html",
+          "checkedAt": "2026-10-20",
+          "evidence": "Official page explicitly spells full department name and abbreviation and states it combines information systems, business analytics, operations and supply chain management."
+        },
+        {
+          "id": "university-of-auckland--engineering-science-biomedical",
+          "name": "Department of Engineering Science and Biomedical Engineering",
+          "school": null,
+          "type": "department",
+          "fields": [
+            "operations-research"
+          ],
+          "sourceUrl": "https://www.auckland.ac.nz/en/engineering/about-the-faculty/engineering/engineering-science.html",
+          "checkedAt": "2026-10-20",
+          "evidence": "Official page explicitly names department and identifies operations research among its research fields; mission includes planning and optimization."
+        }
+      ],
+      "decisions": [
+        {
+          "sourceDepartmentId": "university-of-auckland____om-scm",
+          "disposition": "duplicate",
+          "unitIds": [
+            "university-of-auckland--isom"
+          ],
+          "reason": "Operations/supply-chain shorthand refers to specialties explicitly housed in combined verified department."
+        },
+        {
+          "sourceDepartmentId": "university-of-auckland__business-school__information-systems-and-operations-management",
+          "disposition": "replaced",
+          "unitIds": [
+            "university-of-auckland--isom"
+          ],
+          "reason": "Full official combined name and documented abbreviation retained."
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.auckland.ac.nz/en/business/about-business-school/isom.html",
+          "checkedAt": "2026-10-20",
+          "outcome": "read",
+          "note": "Full department title and explicit operations/supply-chain remit."
+        },
+        {
+          "url": "https://www.auckland.ac.nz/en/engineering/about-the-faculty/engineering/engineering-science.html",
+          "checkedAt": "2026-10-20",
+          "outcome": "read",
+          "note": "Full current engineering department name and explicit operations research field."
+        }
+      ],
+      "limitations": [
+        "Engineering parent faculty name not asserted from URL alone; left null."
+      ],
+      "duplicateOf": null,
+      "addedAt": "2026-10-20T09:53:00Z",
+      "updatedAt": "2026-10-21T21:30:10Z",
+      "doctoralReview": {
+        "status": "verified",
+        "checkedAt": "2026-10-21",
+        "programmeIds": [
+          "university-of-auckland--phd-engineering-science-operations-research",
+          "university-of-auckland--phd-operations-supply-chain-management"
+        ],
+        "branches": [
+          {
+            "branch": "business",
+            "reviewState": "checked",
+            "conclusion": "Full explicit doctoral OM/SCM subject page and supervision hosts read.",
+            "sourceUrls": [
+              "https://www.auckland.ac.nz/en/study/study-options/find-a-study-option/operations-supply-chain-management/doctoral.html"
+            ]
+          },
+          {
+            "branch": "engineering",
+            "reviewState": "checked",
+            "conclusion": "Full EngineeringScience and ORdoctoral subject pages read; overlapping OR route consolidated under actual engineering department.",
+            "sourceUrls": [
+              "https://www.auckland.ac.nz/en/study/study-options/find-a-study-option/operations-research/doctoral.html",
+              "https://www.auckland.ac.nz/en/study/study-options/find-a-study-option/engineering-science/doctoral.html",
+              "https://www.auckland.ac.nz/en/engineering/about-the-faculty/engineering/engineering-science.html"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://www.auckland.ac.nz/en/study/study-options/find-a-study-option/operations-supply-chain-management/doctoral.html",
+            "checkedAt": "2026-10-21",
+            "outcome": "read",
+            "note": "Full current OM/SCM doctoral offering, research fields, named departmental supervision and exact PhD route read."
+          },
+          {
+            "url": "https://www.auckland.ac.nz/en/study/study-options/find-a-study-option/operations-research/doctoral.html",
+            "checkedAt": "2026-10-21",
+            "outcome": "read",
+            "note": "Full current OR doctoral offering, proposals/supervision and exact PhD route read; no individualgraduate collection."
+          },
+          {
+            "url": "https://www.auckland.ac.nz/en/study/study-options/find-a-study-option/engineering-science/doctoral.html",
+            "checkedAt": "2026-10-21",
+            "outcome": "read",
+            "note": "Full current EngineeringSciencedoctoral OR research route and common supervisorygroup read."
+          },
+          {
+            "url": "https://www.auckland.ac.nz/en/engineering/about-the-faculty/engineering/engineering-science.html",
+            "checkedAt": "2026-10-20",
+            "outcome": "read",
+            "note": "Prior actuallyopened exact current DepartmentEngineeringScienceBiomedicalEngineering identity and OR remit retained from unitreview."
+          }
+        ],
+        "limitations": [
+          "Current source-bounded business/engineering doctoral review only; no historical programme census. University general PhD award and subject/host routes distinguished; no third degree from overlapping OR page."
+        ],
+        "coverageComplete": true
+      }
+    }
+  ]
+}

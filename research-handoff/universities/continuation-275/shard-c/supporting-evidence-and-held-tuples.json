@@ -1,0 +1,285 @@
+{
+  "assessedAt": "2026-10-25",
+  "method": "Exact tuple composition against existing individually read official unit facts and explicit public decisions. Original20October dates; no fresh source claims.",
+  "held": [
+    {
+      "source": "oa-live-directory",
+      "sourceRecordId": "university-of-chicago__booth-school-of-business__healthcare-analytics",
+      "schoolAsListed": "University of Chicago Booth School of Business",
+      "departmentAsListed": "Healthcare Analytics Laboratory",
+      "reconciliation": {
+        "state": "pending-source-reconciliation",
+        "note": "No exact school/department assertion with an existing official review decision."
+      }
+    }
+  ],
+  "supportingPublicReviews": [
+    {
+      "canonicalName": "University of Chicago",
+      "reviewer": "Codex in Chrome",
+      "units": [
+        {
+          "id": "university-of-chicago--operations-management",
+          "school": "Booth School of Business",
+          "fields": [
+            "operations-management",
+            "operations-research"
+          ],
+          "sourceUrl": "https://www.chicagobooth.edu/faculty/academic-areas/operations-management",
+          "type": "area",
+          "evidence": "Official academic area page identifies operations-management faculty and research including healthcare analytics, criminal-justice operational issues, and management science/OR.",
+          "checkedAt": "2026-10-20",
+          "name": "Operations Management"
+        }
+      ],
+      "decisions": [
+        {
+          "reason": "School-only placeholder is not a separate academic unit.",
+          "disposition": "not-a-unit",
+          "unitIds": [],
+          "sourceDepartmentId": "university-of-chicago__booth-school-of-business"
+        },
+        {
+          "reason": "Official operations area explicitly includes healthcare analytics as research and a teaching lab; not a separate department.",
+          "disposition": "duplicate",
+          "unitIds": [
+            "university-of-chicago--operations-management"
+          ],
+          "sourceDepartmentId": "university-of-chicago__booth-school-of-business__healthcare-analytics"
+        },
+        {
+          "reason": "Official academic area name retained.",
+          "disposition": "replaced",
+          "unitIds": [
+            "university-of-chicago--operations-management"
+          ],
+          "sourceDepartmentId": "university-of-chicago__booth-school-of-business__operations-management"
+        }
+      ],
+      "sources": [
+        {
+          "note": "Area name, healthcare analytics overlap and research remit.",
+          "url": "https://www.chicagobooth.edu/faculty/academic-areas/operations-management",
+          "outcome": "read",
+          "checkedAt": "2026-10-20"
+        },
+        {
+          "note": "Engineering branch reviewed; research domains molecular/bioengineering, quantum, materials/sustainability, not a listed industrial engineering department.",
+          "url": "https://pme.uchicago.edu/",
+          "outcome": "read",
+          "checkedAt": "2026-10-20"
+        }
+      ],
+      "id": "university-of-chicago",
+      "limitations": [
+        "Healthcare Analytics is represented within Operations Management rather than separately as a department."
+      ],
+      "universitySourceUrl": "https://www.chicagobooth.edu/faculty/academic-areas/operations-management",
+      "duplicateOf": null,
+      "checkedAt": "2026-10-20",
+      "status": "reviewed",
+      "addedAt": "2026-10-20T10:06:22Z",
+      "updatedAt": "2026-10-21T11:37:44Z",
+      "doctoralReview": {
+        "status": "verified",
+        "checkedAt": "2026-10-21",
+        "programmeIds": [
+          "university-of-chicago--management-science-operations-management-phd"
+        ],
+        "branches": [
+          {
+            "branch": "business",
+            "reviewState": "checked",
+            "conclusion": "Booth current MSOM PhD dissertation area verified with exact University of Chicago host.",
+            "sourceUrls": [
+              "https://www.chicagobooth.edu/phd/dissertation-areas/management-science-and-operations-management"
+            ]
+          },
+          {
+            "branch": "engineering",
+            "reviewState": "checked",
+            "conclusion": "Full Pritzker Engineering doctoral inventory offers Molecular Engineering and Quantum Science and Engineering, with materials/sustainability,biomedical andquantum institutes; no relevant IE/OR PhD assigned.",
+            "sourceUrls": [
+              "https://pme.uchicago.edu/academics/phd-programs"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://www.chicagobooth.edu/phd/dissertation-areas/management-science-and-operations-management",
+            "checkedAt": "2026-10-21",
+            "outcome": "read",
+            "note": "Full current official PhD dissertation-area and requirements overview read,2026-27handbook link; no individual graduate data collected."
+          },
+          {
+            "url": "https://pme.uchicago.edu/academics/phd-programs",
+            "checkedAt": "2026-10-21",
+            "outcome": "read",
+            "note": "Full current Engineering PhD inventory and research institutes read."
+          }
+        ],
+        "limitations": [
+          "Current scoped business/engineering doctoral inventory; no historical dates inferred."
+        ],
+        "coverageComplete": true
+      }
+    },
+    {
+      "status": "reviewed",
+      "canonicalName": "University of California, Berkeley",
+      "decisions": [
+        {
+          "disposition": "not-a-unit",
+          "unitIds": [],
+          "reason": "University-only placeholder is not a department.",
+          "sourceDepartmentId": "university-of-california-berkeley"
+        },
+        {
+          "disposition": "duplicate",
+          "unitIds": [
+            "university-of-california-berkeley--ieor"
+          ],
+          "reason": "Shorthand and recruiting specialty duplicate verified engineering department.",
+          "sourceDepartmentId": "university-of-california-berkeley____ieor-decision-analytics"
+        },
+        {
+          "disposition": "replaced",
+          "unitIds": [
+            "university-of-california-berkeley--ieor"
+          ],
+          "reason": "Verified full current engineering department replaces imported label.",
+          "sourceDepartmentId": "university-of-california-berkeley____industrial-engineering-and-operations-research"
+        },
+        {
+          "disposition": "out-of-scope",
+          "unitIds": [],
+          "reason": "Official group focuses applied economics, political institutions and public governance, outside operations scope.",
+          "sourceDepartmentId": "university-of-california-berkeley__haas-school-of-business__business-and-public-policy"
+        },
+        {
+          "disposition": "replaced",
+          "unitIds": [
+            "university-of-california-berkeley--oitm"
+          ],
+          "reason": "Full official combined operations group and official abbreviation retained.",
+          "sourceDepartmentId": "university-of-california-berkeley__haas-school-of-business__operations-and-information-technology-management"
+        }
+      ],
+      "sources": [
+        {
+          "note": "Full engineering department identity and scope.",
+          "url": "https://ieor.berkeley.edu/",
+          "outcome": "read",
+          "checkedAt": "2026-10-20"
+        },
+        {
+          "note": "Business group full name and explicit operations remit.",
+          "url": "https://haas.berkeley.edu/oitm/",
+          "outcome": "read",
+          "checkedAt": "2026-10-20"
+        },
+        {
+          "note": "Group faculty directory.",
+          "url": "https://haas.berkeley.edu/oitm/faculty/",
+          "outcome": "read",
+          "checkedAt": "2026-10-20"
+        },
+        {
+          "note": "Public-policy group remit assessed for exclusion.",
+          "url": "https://haas.berkeley.edu/bpp/",
+          "outcome": "read",
+          "checkedAt": "2026-10-20"
+        }
+      ],
+      "duplicateOf": null,
+      "checkedAt": "2026-10-20",
+      "limitations": [],
+      "universitySourceUrl": "https://ieor.berkeley.edu/",
+      "id": "university-of-california-berkeley",
+      "units": [
+        {
+          "name": "Department of Industrial Engineering & Operations Research",
+          "type": "department",
+          "evidence": "Official full page title names department; welcome describes optimization, stochastics and decision analytics for transportation, supply chains, healthcare, energy and other systems.",
+          "fields": [
+            "industrial-engineering",
+            "operations-research",
+            "supply-chain",
+            "logistics"
+          ],
+          "id": "university-of-california-berkeley--ieor",
+          "sourceUrl": "https://ieor.berkeley.edu/",
+          "checkedAt": "2026-10-20",
+          "school": "College of Engineering"
+        },
+        {
+          "name": "Operations & Information Technology Management (OITM)",
+          "type": "group",
+          "evidence": "Official page spells out full group name and acronym; faculty interests include manufacturing/service operations, operations research, decision analysis and supply chains.",
+          "fields": [
+            "operations-management",
+            "operations-research",
+            "supply-chain"
+          ],
+          "id": "university-of-california-berkeley--oitm",
+          "sourceUrl": "https://haas.berkeley.edu/oitm/",
+          "checkedAt": "2026-10-20",
+          "school": "Haas School of Business"
+        }
+      ],
+      "reviewer": "Codex in Chrome",
+      "addedAt": "2026-10-20T10:06:22Z",
+      "updatedAt": "2026-10-21T11:14:34Z",
+      "doctoralReview": {
+        "status": "verified",
+        "checkedAt": "2026-10-21",
+        "programmeIds": [
+          "berkeley-ieor-phd"
+        ],
+        "branches": [
+          {
+            "branch": "business",
+            "reviewState": "checked",
+            "conclusion": "Full current Haas doctoral fields inventory lists Accounting,Business/PublicPolicy,Finance,ManagementOrganizations,Marketing,RealEstate; OITM is current research/education group but not a separately offered PhD field in inventory. No OITM PhD inferred.",
+            "sourceUrls": [
+              "https://haas.berkeley.edu/phd/academics/",
+              "https://haas.berkeley.edu/oitm/"
+            ]
+          },
+          {
+            "branch": "engineering",
+            "reviewState": "checked",
+            "conclusion": "Current IEOR PhD and four-programme departmental inventory verified on official Graduate Division programme page.",
+            "sourceUrls": [
+              "https://grad.berkeley.edu/program/industrial-engineering-and-operations-research-phd/"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://haas.berkeley.edu/phd/academics/",
+            "checkedAt": "2026-10-21",
+            "outcome": "read",
+            "note": "Full Haas current doctoral academic fields and fall2027non-recruiting notices read."
+          },
+          {
+            "url": "https://haas.berkeley.edu/oitm/",
+            "checkedAt": "2026-10-21",
+            "outcome": "read",
+            "note": "Full OITM research group overview read; no standalone PhD programme claimed."
+          },
+          {
+            "url": "https://grad.berkeley.edu/program/industrial-engineering-and-operations-research-phd/",
+            "checkedAt": "2026-10-21",
+            "outcome": "read",
+            "note": "Full current Graduate Division IEOR doctoral award/admissions/research requirements and graduate programme inventory read."
+          }
+        ],
+        "limitations": [
+          "Current scoped doctoral inventory only. No historical OITM/PhD discontinuation date inferred from present inventory."
+        ],
+        "coverageComplete": true
+      }
+    }
+  ]
+}

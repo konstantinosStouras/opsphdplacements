@@ -1,0 +1,677 @@
+{
+  "assessedAt": "2026-10-25",
+  "method": "Exact tuple composition from existing official unit facts/explicit decisions. Original20October check dates retained; no fresh pages.",
+  "held": [
+    {
+      "source": "oa-live-directory",
+      "sourceRecordId": "university-of-california-riverside____is",
+      "schoolAsListed": "School of Business",
+      "departmentAsListed": "Information Systems",
+      "reconciliation": {
+        "state": "pending-source-reconciliation",
+        "note": "No exact school/department assertion with an existing official review decision."
+      }
+    }
+  ],
+  "supportingPublicReviews": [
+    {
+      "id": "university-of-california-davis",
+      "status": "reviewed",
+      "canonicalName": "University of California, Davis",
+      "universitySourceUrl": "https://gsm.ucdavis.edu/faculty/rachel-chen",
+      "checkedAt": "2026-10-20",
+      "reviewer": "Codex in Chrome",
+      "units": [
+        {
+          "id": "university-of-california-davis--operations-management",
+          "name": "Operations Management",
+          "school": "Graduate School of Management",
+          "type": "area",
+          "fields": [
+            "operations-management",
+            "operations-research"
+          ],
+          "sourceUrl": "https://gsm.ucdavis.edu/faculty-and-research/faculty-directory",
+          "checkedAt": "2026-10-20",
+          "evidence": "Official faculty directory includes Operations Management as a group filter. Rachel Chen profile independently identifies pricing, distribution channels, healthcare and service scheduling research and Graduate School of Management university identity."
+        },
+        {
+          "checkedAt": "2026-10-20",
+          "fields": [
+            "operations-research",
+            "operations-management",
+            "logistics"
+          ],
+          "type": "area",
+          "school": "Graduate School of Management",
+          "id": "university-of-california-davis--business-analytics",
+          "sourceUrl": "https://gsm.ucdavis.edu/faculty-and-research/faculty-directory",
+          "evidence": "Selected Business Analytics by label and verified selected filter in official directory; listed David Woodruff. His official profile explicitly identifies business analytics, operations and management science, planning/scheduling under uncertainty, optimization and logistics applications.",
+          "name": "Business Analytics"
+        }
+      ],
+      "decisions": [
+        {
+          "sourceDepartmentId": "university-of-california-davis__graduate-school-of-management__business-analytics",
+          "disposition": "replaced",
+          "unitIds": [
+            "university-of-california-davis--business-analytics"
+          ],
+          "reason": "Separate official faculty area with verified operations-research remit; retained as an area, not falsely merged with Operations Management."
+        },
+        {
+          "sourceDepartmentId": "university-of-california-davis__graduate-school-of-management__operations-management",
+          "disposition": "replaced",
+          "unitIds": [
+            "university-of-california-davis--operations-management"
+          ],
+          "reason": "Operations Management is a faculty/academic area, not a standalone department."
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://gsm.ucdavis.edu/faculty-and-research/faculty-directory",
+          "checkedAt": "2026-10-20",
+          "outcome": "read",
+          "note": "Faculty directory and group filter options read; original query parameters did not reliably persist."
+        },
+        {
+          "url": "https://gsm.ucdavis.edu/faculty/rachel-chen",
+          "checkedAt": "2026-10-20",
+          "outcome": "read",
+          "note": "University affiliation and operations research/teaching discipline corroboration."
+        },
+        {
+          "url": "https://gsm.ucdavis.edu/center-analytics-and-technology-society",
+          "checkedAt": "2026-10-20",
+          "outcome": "read",
+          "note": "Center page describes broad technology transformations; not added without explicit operations-unit remit."
+        },
+        {
+          "url": "https://engineering.ucdavis.edu/about/departments",
+          "checkedAt": "2026-10-20",
+          "outcome": "read",
+          "note": "Eight department directory checked; no industrial engineering department listed."
+        },
+        {
+          "url": "https://gsm.ucdavis.edu/faculty/david-woodruff",
+          "checkedAt": "2026-10-20",
+          "note": "Reached from verified Business Analytics filter; explicit operations research/optimization/logistics remit.",
+          "outcome": "read"
+        }
+      ],
+      "limitations": [
+        "Business Analytics and Operations Management are separate official faculty areas and may share people; not treated as duplicate departments."
+      ],
+      "duplicateOf": null,
+      "addedAt": "2026-10-20T10:06:22Z",
+      "updatedAt": "2026-10-25T20:13:09Z",
+      "doctoralReview": {
+        "status": "verified",
+        "checkedAt": "2026-10-25",
+        "programmeIds": [
+          "university-of-california-davis--transportation-technology-policy-phd-infrastructure-operations"
+        ],
+        "branches": [
+          {
+            "branch": "business",
+            "reviewState": "checked",
+            "conclusion": "Full current GSM programmes inventory read including all graduate degrees; MBA/MM/MPAc/MSBA offerings but no doctorate listed. Faculty PhD credentials do not establish school doctoral provision.",
+            "sourceUrls": [
+              "https://gsm.ucdavis.edu/our-programs"
+            ]
+          },
+          {
+            "branch": "engineering",
+            "reviewState": "checked",
+            "conclusion": "Earlier full current Engineering degree inventory retained; actual current ITS programme and2026–27 PhD-specific catalogue now establish formal Infrastructure & Operations track within TTP PhD. Distinguish actual named track from broad transportation topic and generic logistics methods. No IE/OR relabelling.",
+            "sourceUrls": [
+              "https://engineering.ucdavis.edu/admissions/graduate/programs",
+              "https://its.ucdavis.edu/education/transportation-technology-policy-graduate-group",
+              "https://catalog.ucdavis.edu/departments-programs-degrees/transportation-technology-policy-graduate-group/transportation-technology-policy-phd/",
+              "https://grad.ucdavis.edu/programs/gttp"
+            ]
+          },
+          {
+            "branch": "mathematics",
+            "reviewState": "checked",
+            "conclusion": "Actual current Applied Mathematics PhD overview and full programme doctoral requirements read. Named formal tracks and specialization examples do not name Operations/MS/IE. Optimization/control and faculty research alone not treated as OR. Undergraduate Mathematical Analytics/OR not doctoral proof.",
+            "sourceUrls": [
+              "https://grad.ucdavis.edu/programs/gapm",
+              "https://appliedmath.ucdavis.edu/",
+              "https://appliedmath.ucdavis.edu/graduate/degree_req/phd-degree-req"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://gsm.ucdavis.edu/our-programs",
+            "checkedAt": "2026-10-21",
+            "outcome": "read",
+            "note": "Full current business school programme overview/navigation inventory read."
+          },
+          {
+            "url": "https://engineering.ucdavis.edu/admissions/graduate/programs",
+            "checkedAt": "2026-10-21",
+            "outcome": "read",
+            "note": "Full current engineering graduate degree inventory read, updatedOct21,2026."
+          },
+          {
+            "url": "https://grad.ucdavis.edu/programs/gapm",
+            "checkedAt": "2026-10-21",
+            "outcome": "read",
+            "note": "Full current AppliedMathematics graduate group PhDPlanB overview, optimization/control research and LettersScience lead dean read."
+          },
+          {
+            "url": "https://grad.ucdavis.edu/programs/gapm",
+            "note": "Full substantive current Applied Mathematics graduate programme overview and degree/admission information read. PhD PlanB, interdisciplinary graduate group, College Letters/Science. Named studies include optimization/control but no Operations/MS/IE title; general engineering applications not automatically OR.",
+            "checkedAt": "2026-10-25",
+            "outcome": "read",
+            "accessMethod": "web.open/click actual official HTML; authorized fallback"
+          },
+          {
+            "url": "https://appliedmath.ucdavis.edu/",
+            "note": "Actual programme homepage read; academic announcements and news do not establish named Operations doctoral field. No individual graduate histories collected.",
+            "checkedAt": "2026-10-25",
+            "outcome": "read",
+            "accessMethod": "web.open/click actual official HTML; authorized fallback"
+          },
+          {
+            "url": "https://appliedmath.ucdavis.edu/graduate/degree_req/phd-degree-req",
+            "note": "Full actual PhD degree requirements read, Fall2024 requirements still linked from current programme. Dissertation original publishable contribution and exit seminar; named AreaA/B tracks Analysis/Applied, Data Science, Numerical Methods, Probability, Theoretical CS. Field-specialization examples optimization/probability/biology/signal processing; no explicit Operations title. No doctorate inferred from undergraduate OR curriculum.",
+            "checkedAt": "2026-10-25",
+            "outcome": "read",
+            "accessMethod": "web.open/click actual official HTML; authorized fallback"
+          },
+          {
+            "url": "https://its.ucdavis.edu/education/transportation-technology-policy-graduate-group",
+            "note": "Full current ITS doctoral/MS programme overview read, source updated5October2026. Actual formal three tracks Vehicles/Fuels, Demand/Behavior, Infrastructure/Operations; programme hosted by ITS,60+faculty across12departments. Sustainable freight/logistics explicitly research focus. This is programme-track language, not generic faculty interests.",
+            "checkedAt": "2026-10-25",
+            "outcome": "read",
+            "accessMethod": "web.open/click actual official HTML; authorized fallback"
+          },
+          {
+            "url": "https://catalog.ucdavis.edu/departments-programs-degrees/transportation-technology-policy-graduate-group/transportation-technology-policy-phd/",
+            "note": "Full substantive actual2026–27 PhD-specific catalogue read. Exact Transportation Technology & Policy Doctor of Philosophy. Students choose one of three tracks including Infrastructure & Operations; PhD students follow track curriculum plus extra skills/electives, minimum54units. Catalogue publication27April2026; no separate OR or IE award inferred.",
+            "checkedAt": "2026-10-25",
+            "outcome": "read",
+            "accessMethod": "web.open/click actual official HTML; authorized fallback"
+          },
+          {
+            "url": "https://grad.ucdavis.edu/programs/gttp",
+            "note": "Full substantive current central TTP doctoral programme/degrees/admissions record read. Interdisciplinary Graduate Group hosted by ITS, lead dean College of Engineering; PhD PlanB distinct from MS plans. Current2027 application deadlines and2025 requirements link; doctoral eligibility not inferred from faculty credentials.",
+            "checkedAt": "2026-10-25",
+            "outcome": "read",
+            "accessMethod": "web.open/click actual official HTML; authorized fallback"
+          }
+        ],
+        "limitations": [
+          "Bounded current Business/Engineering inventory previously read and retained with original dates. Mathematics named-field follow-up completed25October; generic optimization/control does not qualify independently.",
+          "Positive inclusion depends on actual named Infrastructure & Operations doctoral track under owner title rule, not generic transportation operations topic. Integrator adjudication requested.",
+          "No claimed separate OR/IE diploma, no new department inferred, no individual graduate research. No source browser tabs created."
+        ],
+        "coverageComplete": true
+      }
+    },
+    {
+      "id": "university-of-california-irvine",
+      "status": "reviewed",
+      "canonicalName": "University of California, Irvine",
+      "universitySourceUrl": "https://merage.uci.edu/research-faculty/academic-areas/operations-decision-technologies.html",
+      "checkedAt": "2026-10-20",
+      "reviewer": "Codex in Chrome",
+      "units": [
+        {
+          "id": "university-of-california-irvine--operations-decision-technologies",
+          "name": "Operations and Decision Technologies",
+          "school": "Paul Merage School of Business",
+          "type": "area",
+          "fields": [
+            "operations-management",
+            "operations-research",
+            "supply-chain",
+            "logistics"
+          ],
+          "sourceUrl": "https://merage.uci.edu/research-faculty/academic-areas/operations-decision-technologies.html",
+          "checkedAt": "2026-10-20",
+          "evidence": "Official academic area explicitly describes optimization, simulation, decision theory, stochastic modeling, supply chains and logistics, with faculty listed."
+        },
+        {
+          "id": "university-of-california-irvine--transportation-systems",
+          "name": "Transportation Systems",
+          "school": "Department of Civil and Environmental Engineering",
+          "type": "area",
+          "fields": [
+            "operations-research",
+            "logistics"
+          ],
+          "sourceUrl": "https://engineering.uci.edu/dept/cee/research/transportation.php",
+          "checkedAt": "2026-10-20",
+          "evidence": "Official department research area identifies planning, operation and management of transport systems, systems analysis/modeling and computational techniques for urban travel and goods movement; dedicated faculty listed."
+        },
+        {
+          "id": "university-of-california-irvine--transportation-institute",
+          "name": "Institute of Transportation Studies",
+          "school": null,
+          "type": "institute",
+          "fields": [
+            "operations-research",
+            "logistics"
+          ],
+          "sourceUrl": "https://its.uci.edu/",
+          "checkedAt": "2026-10-20",
+          "evidence": "Official institute identifies an organized interdisciplinary transportation research unit; engineering Transportation Systems page explicitly links institute with urban travel and goods-movement modeling research."
+        }
+      ],
+      "decisions": [
+        {
+          "sourceDepartmentId": "university-of-california-irvine__paul-merage-school-of-business__operations-and-decision-technologies",
+          "disposition": "replaced",
+          "unitIds": [
+            "university-of-california-irvine--operations-decision-technologies"
+          ],
+          "reason": "Full official name retained and accurately classified academic area."
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://merage.uci.edu/research-faculty/academic-areas/operations-decision-technologies.html",
+          "checkedAt": "2026-10-20",
+          "outcome": "read",
+          "note": "Business academic area full title and explicit operations/supply-chain scope."
+        },
+        {
+          "url": "https://engineering.uci.edu/",
+          "checkedAt": "2026-10-20",
+          "outcome": "read",
+          "note": "Engineering departments and research links reviewed."
+        },
+        {
+          "url": "https://engineering.uci.edu/dept/cee/research/research_thrusts.php",
+          "checkedAt": "2026-10-20",
+          "outcome": "read",
+          "note": "Civil/environmental department full title and transportation research area, affiliated institute."
+        },
+        {
+          "url": "https://engineering.uci.edu/dept/cee/research/transportation.php",
+          "checkedAt": "2026-10-20",
+          "outcome": "read",
+          "note": "Transport modeling, operational management and goods movement research remit."
+        },
+        {
+          "url": "https://its.uci.edu/",
+          "checkedAt": "2026-10-20",
+          "outcome": "read",
+          "note": "Institute identity and multi-school research organization."
+        }
+      ],
+      "limitations": [
+        "Transportation Systems is a research area rather than a separate department; institute is distinct and interdisciplinary, with no exclusive school parent asserted."
+      ],
+      "duplicateOf": null,
+      "addedAt": "2026-10-20T10:06:22Z",
+      "updatedAt": "2026-10-21T11:51:57Z",
+      "doctoralReview": {
+        "status": "verified",
+        "checkedAt": "2026-10-21",
+        "programmeIds": [
+          "university-of-california-irvine--management-phd-operations-decision-technologies",
+          "university-of-california-irvine--transportation-science-phd-logistics"
+        ],
+        "branches": [
+          {
+            "branch": "business",
+            "reviewState": "checked",
+            "conclusion": "Management PhD ODT concentration verified.",
+            "sourceUrls": [
+              "https://merage.uci.edu/programs/phd/index.html"
+            ]
+          },
+          {
+            "branch": "engineering",
+            "reviewState": "checked",
+            "conclusion": "Full engineering departmental/interdisciplinary programme inventory read plus NetworkedSystems and known ITS TransportationScience exact PhD. Logistics explicitly qualifies TransportationScience; NetworkedSystems OR concentration course option alone not a separate qualifying research field.",
+            "sourceUrls": [
+              "https://graduate.eng.uci.edu/academics/programs/",
+              "https://catalogue.uci.edu/interdisciplinarystudies/networkedsystems_phd/",
+              "https://catalogue.uci.edu/interdisciplinarystudies/transportationscience_phd/"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://merage.uci.edu/programs/phd/index.html",
+            "checkedAt": "2026-10-21",
+            "outcome": "read",
+            "note": "Full Merage PhD overview/structure read after navigation timeout completed successfully; exactaward/concentrations verified."
+          },
+          {
+            "url": "https://graduate.eng.uci.edu/academics/programs/",
+            "checkedAt": "2026-10-21",
+            "outcome": "read",
+            "note": "Full current engineering graduate programme inventory read."
+          },
+          {
+            "url": "https://catalogue.uci.edu/interdisciplinarystudies/networkedsystems_phd/",
+            "checkedAt": "2026-10-21",
+            "outcome": "read",
+            "note": "Full2026-27NetworkedSystemsPhD overview read; OR onlyoptionalconcentrationcourse,not doctoralORfield."
+          },
+          {
+            "url": "https://catalogue.uci.edu/interdisciplinarystudies/transportationscience_phd/",
+            "checkedAt": "2026-10-21",
+            "outcome": "read",
+            "note": "Full2026-27TransportationSciencePhD overview read,explicitlogisticsresearchandmultischoolhostrelationship."
+          }
+        ],
+        "limitations": [
+          "Current scoped programmes only; no historical dates inferred or OR coursework converted into a distinct degree."
+        ],
+        "coverageComplete": true
+      }
+    },
+    {
+      "id": "university-of-california-merced",
+      "status": "reviewed",
+      "canonicalName": "University of California, Merced",
+      "universitySourceUrl": "https://mcs.ucmerced.edu/",
+      "checkedAt": "2026-10-20",
+      "reviewer": "Codex in Chrome",
+      "units": [
+        {
+          "id": "university-of-california-merced--management-complex-systems",
+          "name": "Department of Management of Complex Systems (MCS)",
+          "school": "School of Engineering",
+          "type": "department",
+          "fields": [
+            "operations-management"
+          ],
+          "sourceUrl": "https://mcs.ucmerced.edu/",
+          "checkedAt": "2026-10-20",
+          "evidence": "Official site spells out full department title and abbreviation; interdisciplinary management science remit includes service science, information-driven decisions, institutional operations and service delivery. Engineering faculty listing includes behavioral operations research."
+        }
+      ],
+      "decisions": [
+        {
+          "sourceDepartmentId": "university-of-california-merced__school-of-engineering",
+          "disposition": "not-a-unit",
+          "unitIds": [],
+          "reason": "Broad school-only placeholder is not a department; relevant full department recorded separately after source review."
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://engineering.ucmerced.edu/departments/management-complex-systems-mcs",
+          "checkedAt": "2026-10-20",
+          "outcome": "read",
+          "note": "School affiliation, department chair and research expertise including behavioral operations."
+        },
+        {
+          "url": "https://mcs.ucmerced.edu/",
+          "checkedAt": "2026-10-20",
+          "outcome": "read",
+          "note": "Full department title and management science/service science scope; shared management program spans engineering and social/natural sciences."
+        }
+      ],
+      "limitations": [
+        "Broad interdisciplinary department retained for explicit management/service operations remit; not renamed industrial engineering or a standalone operations department."
+      ],
+      "duplicateOf": null,
+      "addedAt": "2026-10-20T10:06:22Z",
+      "updatedAt": "2026-10-25T17:10:32Z",
+      "doctoralReview": {
+        "status": "no-qualifying-programme-verified",
+        "checkedAt": "2026-10-22",
+        "programmeIds": [],
+        "branches": [
+          {
+            "branch": "business",
+            "reviewState": "checked",
+            "conclusion": "Full current university graduate inventory and actual MCS programme/four-theme research scope read. MCS is under Engineering/MIST, not a separate business degree. Generic innovation, organizational decisions, human-natural systems and optimization do not establish qualifying Operations doctoral field in this stated source scope.",
+            "sourceUrls": [
+              "https://mcs.ucmerced.edu/phd-program-info",
+              "https://mcs.ucmerced.edu/research-areas",
+              "https://graduatedivision.ucmerced.edu/academic-studies"
+            ]
+          },
+          {
+            "branch": "engineering",
+            "reviewState": "checked",
+            "conclusion": "Complete current central six-family engineering/computing PhD inventory with all research summaries read, supplemented by exact Mechanical and Aerospace research overview and all ten fields. Published research describes physical/biological/environmental/materials/computing/management themes, no explicit qualifying Ops/OR/IE route established. Source-bounded current inventory checked without inference from generic design/manufacturing or optimization.",
+            "sourceUrls": [
+              "https://engineering.ucmerced.edu/graduate-studies",
+              "https://graduatedivision.ucmerced.edu/academic-studies",
+              "https://graduatedivision.ucmerced.edu/content/mechanical-and-aerospace-engineering-ms-phd"
+            ]
+          },
+          {
+            "branch": "mathematics",
+            "reviewState": "checked",
+            "conclusion": "Current central Applied Mathematics doctoral overview and full department mathematical/application research inventory read. Numerical optimization is a method; no substantive OR/industrial/service-operations field established from those sources.",
+            "sourceUrls": [
+              "https://graduatedivision.ucmerced.edu/content/applied-mathematics-ms-phd",
+              "https://appliedmath.ucmerced.edu/research"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://mcs.ucmerced.edu/phd-program-info",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full exact MCS PhD description read in Chrome; administrative Department of Management of Complex Systems / School of Engineering, MIST Graduate Group programme provision."
+          },
+          {
+            "url": "https://mcs.ucmerced.edu/research-areas",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full four-theme research inventory read: decision support/innovation; coupled systems; people at work; climate/resilience. Optimization appears among methods, not a named OR doctoral field."
+          },
+          {
+            "url": "https://engineering.ucmerced.edu/graduate-studies",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full engineering graduate overview and complete six-programme inventory read. No independent IE/OR award listed; broad doctoral research fields still need individual checks."
+          },
+          {
+            "url": "https://mcs.ucmerced.edu/research-areas",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full four-theme current MCS research page read; decision support/innovation, coupled human-natural systems, people at work, climate sustainability. Broad optimization method and innovative products/services not alone qualifying operational-system research field."
+          },
+          {
+            "url": "https://graduatedivision.ucmerced.edu/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Current Graduate Division homepage programme navigation read; actual Our Graduate Programs link followed."
+          },
+          {
+            "url": "https://graduatedivision.ucmerced.edu/academic-studies",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full current university graduate academic inventory and every engineering/computing, natural sciences, social/humanities programme research summary read. Six engineering/computing PhD families; MCS management offered there, no standalone business PhD. Current Mechanical and Aerospace wording retained separately from older engineering-school inventory."
+          },
+          {
+            "url": "https://graduatedivision.ucmerced.edu/content/mechanical-and-aerospace-engineering-ms-phd",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full current Mechanical and Aerospace M.S./Ph.D. overview and ten research areas read: mechanics/fluids/thermal, controls, design, mechatronics, solar/energy and tribology, no explicit industrial/service operations or OR field."
+          },
+          {
+            "url": "https://graduatedivision.ucmerced.edu/content/applied-mathematics-ms-phd",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full current Applied Mathematics M.S./Ph.D. overview read, modelling/analysis/scientific computing and interdisciplinary mathematical application scope, actual department link followed."
+          },
+          {
+            "url": "https://appliedmath.ucmerced.edu/",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Current Applied Mathematics homepage research navigation read; no individual alumni or graduate directories opened."
+          },
+          {
+            "url": "https://appliedmath.ucmerced.edu/research",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full current mathematical-method and application-area table read; numerical optimization among methods with physical/biological/economics/imaging/network applications. No explicit OR/industrial/service-operations doctoral pathway established from numerical optimization alone."
+          }
+        ],
+        "limitations": [
+          "Current source-bounded university doctoral and plausibly related research-field review; no qualifying route verified, not proof of historical or unadvertised absence.",
+          "Management of Complex Systems remains an exact real PhD, but its four research themes do not establish qualifying Operations/OR/IE/SCM doctoral field from generic management, decision support, optimization, innovation or human-natural systems alone.",
+          "Current central inventory uses Mechanical and Aerospace Engineering; prior engineering-school inventory used Mechanical Engineering. No succession date, formal degree rename or additional award inferred from naming difference.",
+          "No faculty-by-faculty hidden research/dissertation census, graduate enumeration or individual employment research. Existing unit facts/imports preserved.",
+          "Scope-only composite prepared on 25 October from previously read evidence; no fresh source verification. Current retained programme identities and facts must remain unchanged through --scope-only integration. Earlier incomplete scope wording is preserved in the paired handoff snapshot."
+        ],
+        "coverageComplete": true
+      }
+    },
+    {
+      "duplicateOf": null,
+      "sources": [
+        {
+          "url": "https://business.ucr.edu/areas/oscm",
+          "note": "Area identity, common faculty and undergraduate/graduate programs.",
+          "checkedAt": "2026-10-20",
+          "outcome": "read"
+        },
+        {
+          "url": "https://www.engr.ucr.edu/academics",
+          "note": "Five engineering departments and five interdisciplinary programs reviewed; no independent industrial-engineering department listed.",
+          "checkedAt": "2026-10-20",
+          "outcome": "read"
+        }
+      ],
+      "checkedAt": "2026-10-20",
+      "reviewer": "Codex in Chrome",
+      "limitations": [
+        "Graduate-school and School of Business imported labels point to the same functional area, consolidated once."
+      ],
+      "decisions": [
+        {
+          "reason": "Standalone information systems is outside owner scope.",
+          "sourceDepartmentId": "university-of-california-riverside____is",
+          "disposition": "out-of-scope",
+          "unitIds": []
+        },
+        {
+          "reason": "Official functional area is shared across undergraduate and graduate pathways in School of Business, not two departments.",
+          "sourceDepartmentId": "university-of-california-riverside__a-gary-anderson-graduate-school-of-management__operations-and-supply-chain-management",
+          "disposition": "duplicate",
+          "unitIds": [
+            "university-of-california-riverside--operations-supply-chain"
+          ]
+        },
+        {
+          "reason": "Official functional area is shared across undergraduate and graduate pathways in School of Business, not two departments.",
+          "sourceDepartmentId": "university-of-california-riverside__school-of-business__operations-and-supply-chain-management",
+          "disposition": "replaced",
+          "unitIds": [
+            "university-of-california-riverside--operations-supply-chain"
+          ]
+        }
+      ],
+      "universitySourceUrl": "https://business.ucr.edu/areas/oscm",
+      "status": "reviewed",
+      "id": "university-of-california-riverside",
+      "units": [
+        {
+          "type": "area",
+          "evidence": "Official functional area page names full area and abbreviation, faculty, undergraduate/MBA pathways and operations-research methods applied to resource, production and distribution decisions.",
+          "fields": [
+            "operations-management",
+            "operations-research",
+            "supply-chain",
+            "logistics"
+          ],
+          "school": "School of Business",
+          "id": "university-of-california-riverside--operations-supply-chain",
+          "name": "Operations & Supply Chain Management (OSCM)",
+          "checkedAt": "2026-10-20",
+          "sourceUrl": "https://business.ucr.edu/areas/oscm"
+        }
+      ],
+      "canonicalName": "University of California, Riverside",
+      "addedAt": "2026-10-20T09:53:41Z",
+      "updatedAt": "2026-10-25T17:10:32Z",
+      "doctoralReview": {
+        "status": "verified",
+        "checkedAt": "2026-10-22",
+        "programmeIds": [
+          "university-of-california-riverside--business-administration-operations-phd"
+        ],
+        "branches": [
+          {
+            "branch": "business",
+            "reviewState": "checked",
+            "conclusion": "Complete current PhD concentration inventory read: Finance, Strategic Management and Organization, Marketing, Operations. Operations is one concentration of broad Business Administration PhD, not a separate second award.",
+            "sourceUrls": [
+              "https://business.ucr.edu/phd",
+              "https://business.ucr.edu/phd/operations"
+            ]
+          },
+          {
+            "branch": "engineering",
+            "reviewState": "checked",
+            "conclusion": "Full current engineering degree inventory read: six PhDs in Bioengineering, Chemical/Environmental, Computer Science/Engineering, Electrical, Materials, Mechanical. No named Ops/OR/IE doctorate; Engineering Management listed as online masters only. No additional qualifying engineering route established.",
+            "sourceUrls": [
+              "https://www.engr.ucr.edu/academics"
+            ]
+          },
+          {
+            "branch": "mathematics",
+            "reviewState": "checked",
+            "conclusion": "Full four-group current departmental research inventory and every research tab read: Algebra; Analysis; Geometry/Topology; PDE/Applied Mathematics. Optimization, machine learning and scientific computing occur as generic applied mathematical methods; no substantive Ops/OR research field is established in the stated scope. No additional doctorate added and no unbounded dissertation/laboratory census implied.",
+            "sourceUrls": [
+              "https://mathdept.ucr.edu/research-groups-new"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://business.ucr.edu/phd/operations",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full exact concentration programme page individually read in Chrome, with periodic admissions and dissertation requirements."
+          },
+          {
+            "url": "https://business.ucr.edu/phd",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full current four-concentration Business Administration PhD inventory read."
+          },
+          {
+            "url": "https://www.engr.ucr.edu/academics",
+            "checkedAt": "2026-10-20",
+            "outcome": "read",
+            "note": "Earlier individually read engineering unit inventory retained with original source date; does not complete current doctoral field review."
+          },
+          {
+            "url": "https://www.engr.ucr.edu/academics",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full current engineering academics page now read: complete six PhD inventory, five departments/five interdisciplinary programmes. Engineering Management appears only as online masters specialization."
+          },
+          {
+            "url": "https://mathdept.ucr.edu/research-groups-new",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Research overview and PDE/Applied Mathematics tab read, including optimization, scientific computing and machine learning. These methods alone are not OR doctoral field proof."
+          },
+          {
+            "url": "https://mathdept.ucr.edu/research-groups-new",
+            "checkedAt": "2026-10-22",
+            "outcome": "read",
+            "note": "Full current department research inventory and all four selected tabs read, including complete Analysis and Geometry/Topology lists and full PDE/Applied Math subfields. Explicit departmental graduate mentorship statement; no method-to-OR inference."
+          }
+        ],
+        "limitations": [
+          "Current source-bounded business/engineering doctoral inventories and plausibly related mathematical research fields checked. This is not a historical census or a claim about every possible dissertation application.",
+          "Generic mathematical optimization, scientific computing, machine learning and differential equations are not treated as independently qualifying Operations Research provision. Existing Business Administration Operations doctorate facts and dates preserved.",
+          "Scope-only composite prepared on 25 October from previously read evidence; no fresh source verification. Current retained programme identities and facts must remain unchanged through --scope-only integration. Earlier incomplete scope wording is preserved in the paired handoff snapshot."
+        ],
+        "coverageComplete": true
+      }
+    }
+  ]
+}
