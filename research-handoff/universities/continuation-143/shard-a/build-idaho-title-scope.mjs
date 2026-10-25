@@ -1,0 +1,14 @@
+import fs from 'node:fs';
+const src='research-handoff/universities/continuation-37/shard-a/idaho-state-university.doctoral.json';
+const out='research-handoff/universities/continuation-143/shard-a/idaho-state-university.doctoral.json';
+const d=JSON.parse(fs.readFileSync(src,'utf8'));
+d.checkedAt='2026-10-25';
+d.status='no-qualifying-programme-verified';
+d.coverageComplete=true;
+d.programmes=[];
+const branch=d.branches.find(b=>b.branch==='engineering');
+branch.reviewState='checked';
+branch.conclusion+=' Current formal-title adjudication: the full unfiltered graduate award inventory and entire 2026–27 EAS catalog with all twelve concentrations and host departments were read. No title or host names Operations, Management Science, or Industrial Engineering. Transportation, control, nuclear systems, and computational examples are research remits or methods; detailed research-topic coverage is irrelevant to this formal-title-only conclusion.';
+d.limitations.unshift('Current named-title scope conclusion only. The former Civil/transportation research pathway remains a documented source observation but fails the 25 October formal-title gate; no assertion that Idaho State lacks transport or other operational research.');
+d.limitations=d.limitations.map(s=>s.startsWith('One scoped Civil-concentration pathway')?'Historical 22 October topic-scope limitation: the Civil-concentration transport research pathway was verified as a topic, but it is not a qualifying named title under the 25 October rule. Current formal-title inventory is complete from the opened institutional award list and all twelve EAS concentration/host titles.':s).map(s=>s.startsWith('Nuclear fuel-cycle systems studies')?'Historical 22 October topic-scope limitation: nuclear fuel-cycle and mechanical/control research detail remains unresolved; neither exact doctorate, concentration nor host has a qualifying named title in the complete current institutional and EAS inventories.':s);
+fs.writeFileSync(out,JSON.stringify(d,null,2)+'\n');

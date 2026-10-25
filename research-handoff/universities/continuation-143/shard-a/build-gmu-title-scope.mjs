@@ -1,0 +1,17 @@
+import fs from 'node:fs';
+const src='research-handoff/universities/continuation-21/shard-a/george-mason-university.doctoral.json';
+const out='research-handoff/universities/continuation-143/shard-a/george-mason-university.doctoral.json';
+const d=JSON.parse(fs.readFileSync(src,'utf8'));
+d.checkedAt='2026-10-25';
+d.programmes=d.programmes.filter(p=>p.id!=='george-mason-university--civil-infrastructure-engineering-transportation-phd');
+d.coverageComplete=true;
+const b=d.branches.find(x=>x.branch==='engineering');
+b.reviewState='checked';
+b.conclusion='Entire current CEC doctoral programme/concentration inventory read 22 October. SEOR PhD and host title explicitly include Operations Research. Civil transport/construction and Cybersecurity resilient-supply-chain are research interest areas under nonmatching programme and host titles. Cybersecurity linked departmental page remains inaccessible, with no content inferred. On 25 October, complete College of Science doctoral award list and detailed 2026–27 Mathematics and Computational Sciences and Informatics PhD specifications read; neither offers a named Operations, Management Science or Industrial Engineering specialization or host title. Full Business six-concentration inventory read 22 October; Operations Management is the named qualifying concentration.';
+b.sourceUrls.push('https://science.gmu.edu/academics/graduate-programs','https://catalog.gmu.edu/colleges-schools/science/mathematical-sciences/mathematics-phd/','https://catalog.gmu.edu/colleges-schools/science/computational-data-sciences/computational-sciences-informatics-phd/');
+d.sources.push({url:'https://science.gmu.edu/academics/graduate-programs',checkedAt:'2026-10-25',outcome:'read',note:'Opened complete College of Science graduate degree inventory; 12 named doctoral degrees include Mathematics and Computational Sciences and Informatics, none titled Operations, Management Science or Industrial Engineering.'});
+d.sources.push({url:'https://catalog.gmu.edu/colleges-schools/science/mathematical-sciences/mathematics-phd/',checkedAt:'2026-10-25',outcome:'read',note:'Read 2026–27 Mathematics PhD overview and requirements, exact host Department of Mathematical Sciences, core and major/minor fields; no named qualifying specialization.'});
+d.sources.push({url:'https://catalog.gmu.edu/colleges-schools/science/computational-data-sciences/computational-sciences-informatics-phd/',checkedAt:'2026-10-25',outcome:'read',note:'Read 2026–27 Computational Sciences and Informatics PhD overview and requirements; formal emphases Computer Modeling and Simulation and Data Science, no qualifying named title. Optimization is an elective method only.'});
+d.limitations.unshift('Complete only for current official named-title doctoral routes in the opened CEC, Business and College of Science inventories and detailed plausible mathematical/computational programmes. Cybersecurity departmental detail remains inaccessible and historical unit/source identities remain separately unresolved; no claim about all related research.');
+d.limitations=d.limitations.map(s=>s.startsWith('Cybersecurity is an examined related candidate')?'Historical 22 October topic-scope question: Cybersecurity supply-chain security research and departmental detail remain unresolved, but exact doctorate/host titles do not qualify under the 25 October named-title rule.':s);
+fs.writeFileSync(out,JSON.stringify(d,null,2)+'\n');

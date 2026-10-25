@@ -1,0 +1,16 @@
+import fs from 'node:fs';
+const id='binghamton-university';
+const d=JSON.parse(fs.readFileSync(`research-handoff/universities/continuation-52/shard-a/${id}.doctoral.json`));
+const date='2026-10-25';
+const central='https://www.binghamton.edu/academics/programs/?level=gd';
+const watson='https://www.binghamton.edu/watson/programs.html';
+const math='https://www.binghamton.edu/apps/academics/program/gd/mathematical-sciences';
+const mgmt='https://www.binghamton.edu/som/graduate-programs/phd-management/';
+d.checkedAt=date;
+d.coverageComplete=true;
+d.branches[0]={branch:'business',reviewState:'checked',conclusion:'Current university-wide degree finder identifies Management PhD; opened current School of Management doctoral page lists all four formal specialized tracks (Finance, Leadership and Organizational Science, Marketing, Management Information Systems). None has a qualifying Operations, Management Science or Industrial Engineering title. Existing Industrial and Systems Engineering PhD is separate in Watson College.',sourceUrls:[central,mgmt,watson]};
+d.branches[1]={branch:'engineering',reviewState:'checked',conclusion:'Opened current university-wide degree finder and the complete Watson College graduate programme inventory, updated June 2026. Industrial and Systems Engineering PhD is the only named qualifying engineering route; Systems Science is a separate generic PhD and its MS-only Health Systems concentrations are not duplicated. Opened Mathematical Sciences PhD details; its named research areas are algebra, analysis, combinatorics, geometry/topology and statistics, not a formal OR concentration.',sourceUrls:[central,watson,math]};
+const note=(url,text)=>({url,checkedAt:date,outcome:'read',note:text});
+d.sources.push(note(central,'Opened full current university-wide degree finder; relevant doctoral titles and levels screened.'),note(watson,'Opened complete Watson engineering programme inventory updated 25 June 2026; exact ISE, Systems Science and MS-only track levels.'),note(math,'Opened Mathematical Sciences PhD page; no named OR specialization in described research areas.'),note(mgmt,'Opened complete current Management PhD overview and its four formal specialized tracks; none has qualifying title.'));
+d.limitations=['Current named-title scope complete from central degree finder, full Watson graduate inventory, Management PhD track list and Mathematical Sciences detail. Historical/discontinued offerings and individual faculty reported doctorates are separate.','Systems Science topics and mathematical techniques are not promoted into an independent named Operations route.'];
+fs.writeFileSync(`research-handoff/universities/continuation-143/shard-a/${id}.doctoral.json`,JSON.stringify(d,null,2)+'\n');

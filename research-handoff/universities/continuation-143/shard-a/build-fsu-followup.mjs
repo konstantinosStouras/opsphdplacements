@@ -1,0 +1,14 @@
+import fs from 'node:fs';
+const src='research-handoff/universities/continuation-20/shard-a/florida-state-university.doctoral.json';
+const out='research-handoff/universities/continuation-143/shard-a/florida-state-university.doctoral.json';
+const d=JSON.parse(fs.readFileSync(src,'utf8'));
+d.checkedAt='2026-10-25';
+d.programmes=d.programmes.filter(p=>p.id==='florida-state-university--joint-famu-fsu-industrial-engineering-phd');
+const b=d.branches.find(x=>x.branch==='engineering');
+b.sourceUrls.push('https://stat.fsu.edu/graduate/phd-program');
+b.conclusion+=' Current Statistics department PhD specification opened 25 October: exact doctorates Statistics and Biostatistics, no formally named Operations/MS/IE field or host. The official Mathematics admissions link failed to fetch and an alternate official math page returned HTTP 403; no mathematics doctoral field content inferred, so the current technical inventory remains partial.';
+d.sources.push({url:'https://stat.fsu.edu/graduate/phd-program',checkedAt:'2026-10-25',outcome:'read',note:'Read complete current PhD page, exact Statistics and Biostatistics doctorate titles, department and programme structure; no named Operations, Management Science or Industrial Engineering specialization.'});
+d.sources.push({url:'https://www.math.fsu.edu/apply/',checkedAt:'2026-10-25',outcome:'blocked',note:'Official central doctoral list Mathematics admissions link failed to fetch (unexpected status); no page content read.'});
+d.sources.push({url:'https://www.math.fsu.edu/~boyd/graduate-general-info/',checkedAt:'2026-10-25',outcome:'blocked',note:'Official Mathematics graduate-page full open returned HTTP 403; no page content read or alternate bypass attempted.'});
+d.limitations.unshift('Current title-only review retains ISE PhD. Mathematics doctoral fields could not be opened from official Mathematics pages (fetch error / HTTP 403), so technical named-specialization coverage remains partial. Statistics official doctorate list does not name qualifying fields.');
+fs.writeFileSync(out,JSON.stringify(d,null,2)+'\n');
