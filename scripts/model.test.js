@@ -49,3 +49,13 @@ test('an official name review does not merge a namesake in a conflicting country
  const rows=organisationRows({records:[entity('a','Country A'),entity('b','Country B')]},{records:[source]},{records:[review]},...Array.from({length:5},()=>({records:[]})));
  assert.equal(rows.length,2);assert.ok(rows.find(r=>r.entities.some(e=>e.id==='a')).reviews.length);assert.equal(rows.find(r=>r.entities.some(e=>e.id==='b')).reviews.length,0);
 });
+
+test('reviewed school aliases join career-only entities while preserving countries and independent identities',()=>{
+ const entity=(id,name,country='A')=>({id,name,aliases:[name],country,programs:[]});
+ const parent={id:'parent',name:'Parent University',country:'A',departments:[]};
+ const review={id:'parent',canonicalName:parent.name,universitySourceUrl:'https://example.edu',checkedAt:'2026-10-25',status:'reviewed',units:[],limitations:[],decisions:[],organisationAliases:[{name:'School Alias',sourceUrl:'https://example.edu/school',checkedAt:'2026-10-25',evidence:'School belongs to parent.'}]};
+ const run=(country='A',ownReview=false)=>organisationRows({records:[{...entity('p',parent.name),directory:{universities:[{id:'parent'}]}},entity('s','School Alias',country)]},{records:[parent,...(ownReview?[{id:'school',name:'School Alias',country,departments:[]}]:[])]},{records:[review,...(ownReview?[{...review,id:'school',canonicalName:'School Alias',organisationAliases:[]}]:[])]},...Array.from({length:5},()=>({records:[]})));
+ const joined=run();assert.equal(joined.length,1);assert.deepEqual(joined[0].entities.map(e=>e.id),['p','s']);assert(joined[0].names.includes('School Alias'));
+ assert.equal(run('B').length,2);
+ assert.equal(run('A',true).length,2);
+});

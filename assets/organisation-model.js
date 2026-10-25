@@ -37,7 +37,20 @@ export function organisationRows(entities,universities,reviews,programs,faculty,
   for(const g of grouped.values())for(const r of g.reviews)for(const review of r.reviews)for(const a of review.organisationAliases||[]){
    const k=fold(a.name), targets=aliasTargets.get(k)||new Set();targets.add(g);aliasTargets.set(k,targets);
   }
-  for(const [k,targets] of aliasTargets)if(targets.size===1){const g=[...targets][0];if(!names.has(k)||names.get(k)===g){names.set(k,g);g.reviewedAliases=g.reviews.flatMap(r=>r.reviews.flatMap(v=>v.organisationAliases||[])).map(a=>a.name);}}
+  for(const [k,targets] of aliasTargets)if(targets.size===1){
+   const g=[...targets][0],other=names.get(k);
+   if(other&&other!==g&&!other.reviews.length){
+    const countries=r=>new Set([...r.entities.map(e=>e.country),...r.reviews.flatMap(u=>Array.isArray(u.country)?u.country:[u.country])].filter(Boolean));
+    const a=countries(g),b=countries(other);
+    // A separately reviewed identity or conflicting country is never merged.
+    // An existing career-only entity may use an explicitly evidenced alias.
+    if(!a.size||!b.size||[...b].every(c=>a.has(c))){
+     g.entities.push(...other.entities);grouped.delete(other.id);
+     for(const [name,target]of names)if(target===other)names.set(name,g);
+    }
+   }
+   if(!names.has(k)||names.get(k)===g){names.set(k,g);g.reviewedAliases=g.reviews.flatMap(r=>r.reviews.flatMap(v=>v.organisationAliases||[])).map(a=>a.name);}
+  }
   const observed=(name)=>{if(!name)return null;let g=names.get(fold(name));if(!g){g={id:'observed:'+fold(name),name,entities:[],reviews:[],programs:[]};grouped.set(g.id,g);names.set(fold(name),g);}return g;};
   for(const p of [...faculty.records,...roster.records]){const g=observed(p.currentInstitution||p.institution);if(g){g.affiliations||=new Set();g.affiliations.add(p.id);}}
   for(const h of [...histories.records,...linkedin.records])for(const j of h.jobs){const g=observed(j.employerAsWritten);if(g){g.careers||=new Set();g.careers.add(h.id);}}

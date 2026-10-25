@@ -1,0 +1,123 @@
+{
+  "id": "virginia-tech",
+  "status": "partial",
+  "canonicalName": "Virginia Polytechnic Institute and State University",
+  "duplicateOf": null,
+  "universitySourceUrl": "https://bit.vt.edu/academics/graduate-programs/phd-program.html",
+  "reviewer": "Codex in Chrome",
+  "checkedAt": "2026-10-21",
+  "decisions": [
+    {
+      "sourceDepartmentId": "virginia-tech____data-science",
+      "disposition": "unresolved",
+      "unitIds": [],
+      "reason": "Generic Data Science job-topic label cannot be uniquely assigned to BIT/ISE or another administrative host from current evidence."
+    },
+    {
+      "sourceDepartmentId": "virginia-tech____grado-department-of-industrial-and-systems-engineering",
+      "disposition": "replaced",
+      "unitIds": [
+        "virginia-tech--industrial-systems-engineering"
+      ],
+      "reason": "Current exact named department verified."
+    },
+    {
+      "sourceDepartmentId": "virginia-tech____healthcare-operations",
+      "disposition": "not-a-unit",
+      "unitIds": [],
+      "reason": "Actual official medical-school ad uses HealthcareOperationsBusinessAnalytics as interdisciplinary hiring field for SmartHealthcareHub, expressly strategic initiative of VT/VTCarilionSchoolMedicine, not separate HealthcareOperations department. Exact lower administrative appointment not established, no forced ISE/BIT mapping or hub promoted to school/department.",
+      "sourceUrl": "https://medicine.vtc.vt.edu/jobs/Open-Rank-Faculty-Position.html",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "sourceDepartmentId": "virginia-tech__grado-department-of-industrial-and-systems-engineering__operations-research",
+      "disposition": "replaced",
+      "unitIds": [
+        "virginia-tech--industrial-systems-engineering"
+      ],
+      "reason": "Official OR PhD concentration is within Grado ISE; not separate department."
+    },
+    {
+      "sourceDepartmentId": "virginia-tech__pamplin-college-of-business__business-information-technology",
+      "disposition": "replaced",
+      "unitIds": [
+        "virginia-tech--business-information-technology"
+      ],
+      "reason": "Current exact named department verified."
+    }
+  ],
+  "units": [
+    {
+      "id": "virginia-tech--business-information-technology",
+      "name": "Business Information Technology",
+      "type": "department",
+      "school": "Pamplin College of Business",
+      "fields": [
+        "operations-management",
+        "supply-chain"
+      ],
+      "sourceUrl": "https://bit.vt.edu/academics/graduate-programs/phd-program/details.html",
+      "checkedAt": "2026-10-21",
+      "evidence": "Official BIT doctoral page explicitly calls BIT department, operations and supply-chain research curriculum and Pamplin parent breadcrumb."
+    },
+    {
+      "id": "virginia-tech--industrial-systems-engineering",
+      "name": "Grado Department of Industrial and Systems Engineering",
+      "type": "department",
+      "school": "College of Engineering",
+      "fields": [
+        "industrial-engineering",
+        "operations-research"
+      ],
+      "sourceUrl": "https://ise.vt.edu/academics/graduate/phd.html",
+      "checkedAt": "2026-10-21",
+      "evidence": "Official doctoral programme explicitly names Grado Department with CollegeEngineering breadcrumb and relevant OR/manufacturing/systems doctoral concentrations."
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://bit.vt.edu/academics/graduate-programs/phd-program.html",
+      "checkedAt": "2026-10-21",
+      "outcome": "read",
+      "note": "Full BIT doctoral programme overview read, exact full university legal name in footer and common VirginiaTech brand."
+    },
+    {
+      "url": "https://bit.vt.edu/academics/graduate-programs/phd-program/details.html",
+      "checkedAt": "2026-10-21",
+      "outcome": "read",
+      "note": "Full BIT doctoral programme details read, department/college and OM/SCM doctoral curriculum."
+    },
+    {
+      "url": "https://ise.vt.edu/academics/graduate/phd.html",
+      "checkedAt": "2026-10-21",
+      "outcome": "read",
+      "note": "Full ISE PhD programme and complete concentration inventory read."
+    },
+    {
+      "url": "https://ise.vt.edu/academics/graduate/phd/or.html",
+      "checkedAt": "2026-10-21",
+      "outcome": "read",
+      "note": "Full OR doctoral concentration requirements/areas read, including healthcare/publicpolicy and production/supplychain/logistics."
+    },
+    {
+      "url": "https://medicine.vtc.vt.edu/jobs/Open-Rank-Faculty-Position.html",
+      "checkedAt": "2026-10-25",
+      "outcome": "read",
+      "accessMethod": "Actual full official medical-school HTML individually opened via authorized fallback",
+      "note": "Full ad body read: OpenRankFacultyPositionHealthcareOperationsBusinessAnalytics, SmartHealthcareHub expressly strategic initiative of VT and VTCarilionSchoolMedicine. Crosscollege interdisciplinary role; IE/OR expertise qualification not appointment department or own programme."
+    },
+    {
+      "url": "https://jobs.apply.vt.edu/jobs/open-rank-faculty-position-in-healthcare-operations-and-business-analytics-roanoke-virginia-virginia-united-states",
+      "checkedAt": "2026-10-25",
+      "outcome": "blocked",
+      "note": "Actual medicalschoolad linked detail endpoint404; no body read/no retry."
+    }
+  ],
+  "limitations": [
+    "Existing university identity/ISE/BIT units and21October source dates unchanged. Actual25October medicalschoolhiring observation does not refresh degree/PhD facts.",
+    "Imported HealthcareOperations hiring-topic source assertion classified not-a-unit from actual official ad, rawlabel/date preserved; exact originatingOApostingURL not independently recovered, no exactadrecordmatchclaim.",
+    "Actual SmartHealthcareHub strategic initiative distinct from formal department. Interdisciplinary/crosscollege appointment host remains unknown; IE/OR applicant expertise not department or doctorate.",
+    "Generic imported DataScience2025May source label remains unresolved. No unitreview completion claimed and latest publicdoctoralReview preserved separately."
+  ],
+  "assessedAt": "2026-10-25"
+}

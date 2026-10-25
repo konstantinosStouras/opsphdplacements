@@ -12,21 +12,21 @@ Generated from committed-format public datasets by `node scripts/update-research
 | Researched but unresolved | 1070 |
 | Degree completion unconfirmed | 4 |
 | Pending individual review | 0 |
-| Named-scope doctoral register records, including historical and unresolved routes | 379 |
-| Verified relevant doctoral routes (tracks may overlap; admissions may be suspended) | 369 |
-| Institutions with verified relevant doctoral provision | 284 |
+| Named-scope doctoral register records, including historical and unresolved routes | 384 |
+| Verified relevant doctoral routes (tracks may overlap; admissions may be suspended) | 375 |
+| Institutions with verified relevant doctoral provision | 288 |
 | Names on program graduate and placement pages (person-years) | 14451 |
 | of which listed under an operations area | 2161 |
 | Institutions with such a page read | 117 |
 | Listed names already in the people database | 406 |
 | LinkedIn profiles with published history observations | 6 |
 | of which all accessible Experience entries read | 6 |
-| University directory records with completed official-source reviews | 583 |
-| University directory records partially reviewed | 216 |
+| University directory records with completed official-source reviews | 590 |
+| University directory records partially reviewed | 218 |
 | University directory records blocked by source access | 6 |
 | University directory records awaiting review | 0 |
-| Discovery source records with doctoral observations | 765 |
-| of which current branch scope explicitly complete | 566 |
+| Discovery source records with doctoral observations | 774 |
+| of which current branch scope explicitly complete | 570 |
 
 The program register is partial. It includes historical/predecessor records; its total is not the number of active programs worldwide. The graduate lists are what the programs' own pages list (live and archived copies), with the year's meaning as each page gives it; they are partial rosters, not a census. No complete graduate census, comprehensive employment-history panel, advisor dataset or publication-at-graduation dataset has been collected yet. Their schema and research rules are prepared.
 

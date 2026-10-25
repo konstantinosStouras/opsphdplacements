@@ -5,11 +5,11 @@
   "totalOmListFaculty": 2149,
   "facultyWithoutNamedPhdInstitution": 24,
   "distinctReportedInstitutionLabels": 369,
-  "rankedInstitutionLeads": 364,
-  "matchedLeads": 322,
-  "unresolvedLeads": 42,
-  "withVerifiedCurrentRoutes": 214,
-  "withCompletedCurrentBranchScope": 174,
+  "rankedInstitutionLeads": 362,
+  "matchedLeads": 331,
+  "unresolvedLeads": 31,
+  "withVerifiedCurrentRoutes": 218,
+  "withCompletedCurrentBranchScope": 175,
   "records": [
     {
       "id": "massachusetts-institute-of-technology",
@@ -21679,6 +21679,122 @@
       "nextStep": "Current scoped doctoral inventory checked; retain evidence and historical limitations"
     },
     {
+      "id": "university-of-sao-paulo",
+      "name": "Universidade de São Paulo",
+      "sourceUniversityIds": [
+        "university-of-sao-paulo"
+      ],
+      "candidateUniversityIds": [
+        "university-of-sao-paulo"
+      ],
+      "identityMatch": "accepted university/entity name",
+      "reportedFacultyCount": 3,
+      "reportedNames": [
+        "Escola Politécnica da USP",
+        "University of São Paulo"
+      ],
+      "facultyIds": [
+        "omlist-321a639170c643f2",
+        "omlist-8f5cb84538a2db4a",
+        "omlist-a3f93753c7685a36"
+      ],
+      "sourceUrls": [],
+      "owners": [
+        "integrator"
+      ],
+      "doctoralObservations": [
+        {
+          "status": "verified",
+          "checkedAt": "2026-10-25",
+          "programmeIds": [
+            "university-of-sao-paulo--eesc-usp-engenharia-de-producao-processos-gestao-operacoes-doctorate",
+            "university-of-sao-paulo--ep-usp-engenharia-de-producao-gestao-de-operacoes-logistica-doctorate"
+          ],
+          "branches": [
+            {
+              "branch": "business",
+              "reviewState": "partial",
+              "conclusion": "Other USP business/management doctoral fields and actual department/school titles have not been inventoried.",
+              "sourceUrls": []
+            },
+            {
+              "branch": "engineering",
+              "reviewState": "partial",
+              "conclusion": "Both EP-USP São Paulo and EESC-USP São Carlos Production Engineering doctorates verified as separate programmes with formal Operations doctoral research lines; broader engineering named-field inventory remains incomplete.",
+              "sourceUrls": [
+                "https://ppgep.poli.usp.br/contato/",
+                "https://ppgselecao.eesc.usp.br/",
+                "https://posproducao.eesc.usp.br/linhas-de-pesquisa/",
+                "https://posproducao.eesc.usp.br/wp-content/uploads/2022/09/EDITAL-PARA-PROCESSO-SELETIVO-DOUTORADO-divulgado-em-29-04-2022.pdf"
+              ]
+            }
+          ],
+          "sources": [
+            {
+              "url": "https://ppgep.poli.usp.br/contato/",
+              "checkedAt": "2026-10-25",
+              "outcome": "read",
+              "note": "Full official EP-USP doctoral FAQ: doctorate award, formal named research lines, selection choice, research project and thesis examinations."
+            },
+            {
+              "url": "https://pro.poli.usp.br/pos-graduacao/",
+              "checkedAt": "2026-10-25",
+              "outcome": "read",
+              "note": "Full official EP-USP department graduate page confirms Production Engineering doctorate."
+            },
+            {
+              "url": "https://ppgselecao.eesc.usp.br/",
+              "checkedAt": "2026-10-25",
+              "outcome": "read",
+              "note": "Full EESC-USP admissions index: distinct Production Engineering doctorate, continuous 2025–2030 admissions."
+            },
+            {
+              "url": "https://posproducao.eesc.usp.br/linhas-de-pesquisa/",
+              "checkedAt": "2026-10-25",
+              "outcome": "read",
+              "note": "Full EESC-USP formal research-line listing under Processos e Gestão de Operações, doctoral applicability not explicit on page."
+            },
+            {
+              "url": "https://prod.eesc.usp.br/",
+              "checkedAt": "2026-10-25",
+              "outcome": "blocked",
+              "note": "Full-open timeout; did not use indexed summary as confirmation."
+            },
+            {
+              "url": "https://posproducao.eesc.usp.br/wp-content/uploads/2022/09/EDITAL-PARA-PROCESSO-SELETIVO-DOUTORADO-divulgado-em-29-04-2022.pdf",
+              "checkedAt": "2026-10-25",
+              "outcome": "read",
+              "note": "Full six-page official doctoral selection regulation: exact formal Operations concentration, doctoral research proposal and academic degree wording."
+            },
+            {
+              "url": "https://posproducao.eesc.usp.br/faq/",
+              "checkedAt": "2026-10-25",
+              "outcome": "read",
+              "note": "Full current official programme FAQ explicitly describes doctoral thesis defence and final deposit."
+            },
+            {
+              "url": "https://ppgselecao.eesc.usp.br/inc/open_pdf.php?id=862&type=anexo_processo_seletivo",
+              "checkedAt": "2026-10-25",
+              "outcome": "blocked",
+              "note": "Current doctorate admissions PDF linked from official 2026 EESC portal failed full fetch (UnexpectedStatusCode); no terms inferred from inaccessible PDF."
+            }
+          ],
+          "limitations": [
+            "Two distinct campus doctorates with named Operations doctoral research lines verified; 2022 EESC regulation paired with current 2026 admissions and current research-line listing; other university branches remain incomplete.",
+            "USP business and other plausible technical doctoral fields remain incomplete; no claim of all USP relevant programmes.",
+            "OM List individual degree, year and campus remain discovery, not a verified person record."
+          ],
+          "coverageComplete": false
+        }
+      ],
+      "verifiedCurrentProgrammeIds": [
+        "university-of-sao-paulo--ep-usp-engenharia-de-producao-gestao-de-operacoes-logistica-doctorate",
+        "university-of-sao-paulo--eesc-usp-engenharia-de-producao-processos-gestao-operacoes-doctorate"
+      ],
+      "branchCoverageComplete": false,
+      "nextStep": "Verify official current relevant doctoral routes across business and engineering; record branch gaps"
+    },
+    {
       "id": "university-of-cologne",
       "name": "Universität zu Köln",
       "sourceUniversityIds": [
@@ -24366,28 +24482,6 @@
       "nextStep": "Resolve official identity and add/associate discovery record without speculative merge"
     },
     {
-      "id": "unresolved:ecole nationale superieure d arts et metiers",
-      "name": "École Nationale Supérieure d'Arts et Métiers",
-      "sourceUniversityIds": [],
-      "candidateUniversityIds": [],
-      "identityMatch": "unresolved discovery label",
-      "reportedFacultyCount": 2,
-      "reportedNames": [
-        "École Nationale Supérieure d'Arts et Métiers",
-        "Ecole Nationale Superieure d’Arts et Metiers"
-      ],
-      "facultyIds": [
-        "omlist-b74fad9514d311b5",
-        "omlist-568c43516e3fe097"
-      ],
-      "sourceUrls": [],
-      "owners": [],
-      "doctoralObservations": [],
-      "verifiedCurrentProgrammeIds": [],
-      "branchCoverageComplete": false,
-      "nextStep": "Resolve official identity and add/associate discovery record without speculative merge"
-    },
-    {
       "id": "ecole-polytechnique-federale-de-lausanne-epfl",
       "name": "École polytechnique fédérale de Lausanne",
       "sourceUniversityIds": [
@@ -24789,27 +24883,6 @@
       ],
       "branchCoverageComplete": true,
       "nextStep": "Current scoped doctoral inventory checked; retain evidence and historical limitations"
-    },
-    {
-      "id": "unresolved:escola politecnica da usp",
-      "name": "Escola Politécnica da USP",
-      "sourceUniversityIds": [],
-      "candidateUniversityIds": [],
-      "identityMatch": "unresolved discovery label",
-      "reportedFacultyCount": 2,
-      "reportedNames": [
-        "Escola Politécnica da USP"
-      ],
-      "facultyIds": [
-        "omlist-321a639170c643f2",
-        "omlist-a3f93753c7685a36"
-      ],
-      "sourceUrls": [],
-      "owners": [],
-      "doctoralObservations": [],
-      "verifiedCurrentProgrammeIds": [],
-      "branchCoverageComplete": false,
-      "nextStep": "Resolve official identity and add/associate discovery record without speculative merge"
     },
     {
       "id": "georgia-state-university",
@@ -28066,6 +28139,163 @@
         }
       ],
       "verifiedCurrentProgrammeIds": [],
+      "branchCoverageComplete": false,
+      "nextStep": "Verify official current relevant doctoral routes across business and engineering; record branch gaps"
+    },
+    {
+      "id": "universite-moulay-ismail",
+      "name": "Université Moulay Ismaïl",
+      "sourceUniversityIds": [
+        "universite-moulay-ismail"
+      ],
+      "candidateUniversityIds": [
+        "universite-moulay-ismail"
+      ],
+      "identityMatch": "accepted university/entity name",
+      "reportedFacultyCount": 2,
+      "reportedNames": [
+        "École Nationale Supérieure d'Arts et Métiers",
+        "Ecole Nationale Superieure d’Arts et Metiers"
+      ],
+      "facultyIds": [
+        "omlist-b74fad9514d311b5",
+        "omlist-568c43516e3fe097"
+      ],
+      "sourceUrls": [],
+      "owners": [
+        "integrator"
+      ],
+      "doctoralObservations": [
+        {
+          "status": "verified",
+          "checkedAt": "2026-10-25",
+          "programmeIds": [
+            "universite-moulay-ismail--ensam-meknes-genie-industriel-doctorat"
+          ],
+          "branches": [
+            {
+              "branch": "business",
+              "reviewState": "partial",
+              "conclusion": "University-wide business doctorate/specialty inventory not yet reviewed.",
+              "sourceUrls": [
+                "https://www.umi.ac.ma/"
+              ]
+            },
+            {
+              "branch": "engineering",
+              "reviewState": "partial",
+              "conclusion": "Official 2026 ENSAM Meknès Doctorat defense directly identifies Génie Industriel et Intelligence Artificielle specialty; other ENSAM/UMI doctoral specialties and the formal 2026/27 admissions inventory remain to check.",
+              "sourceUrls": [
+                "https://www.ensam-umi.ac.ma/soutenances/contribution-a-loptimisation-de-la-chaine-logistique-hospitaliere-modelisation-et-simulation-multi-agents-du-processus-de-gestion-des-dechets-medicaux-et-pharmaceutiques/",
+                "https://www.ensam-umi.ac.ma/soutenance-de-these-abla-chaouni-benabdellah/"
+              ]
+            }
+          ],
+          "sources": [
+            {
+              "url": "https://www.umi.ac.ma/",
+              "checkedAt": "2026-10-25",
+              "outcome": "read",
+              "note": "Current UMI institution and provider identity."
+            },
+            {
+              "url": "https://www.ensam-umi.ac.ma/soutenances/contribution-a-loptimisation-de-la-chaine-logistique-hospitaliere-modelisation-et-simulation-multi-agents-du-processus-de-gestion-des-dechets-medicaux-et-pharmaceutiques/",
+              "checkedAt": "2026-10-25",
+              "outcome": "read",
+              "note": "Fully opened current 2026 defense: exact Doctorat specialty Génie Industriel et Intelligence Artificielle and parent/school names."
+            },
+            {
+              "url": "https://www.ensam-umi.ac.ma/soutenance-de-these-abla-chaouni-benabdellah/",
+              "checkedAt": "2026-10-25",
+              "outcome": "read",
+              "note": "Official 2019 defense reconciles the ambiguous imported school label to Moroccan ENSAM Meknès/UMI; no person-history conclusion."
+            }
+          ],
+          "limitations": [
+            "One current qualifying named specialty observed; formal current admissions and university-wide scope remain incomplete.",
+            "Parent university is Moulay Ismaïl; do not create a second provider for ENSAM Meknès or conflate with French Arts et Métiers."
+          ],
+          "coverageComplete": false
+        }
+      ],
+      "verifiedCurrentProgrammeIds": [
+        "universite-moulay-ismail--ensam-meknes-genie-industriel-doctorat"
+      ],
+      "branchCoverageComplete": false,
+      "nextStep": "Verify official current relevant doctoral routes across business and engineering; record branch gaps"
+    },
+    {
+      "id": "universite-paris-saclay",
+      "name": "Université Paris-Saclay",
+      "sourceUniversityIds": [
+        "universite-paris-saclay"
+      ],
+      "candidateUniversityIds": [
+        "universite-paris-saclay"
+      ],
+      "identityMatch": "accepted university/entity name",
+      "reportedFacultyCount": 2,
+      "reportedNames": [
+        "Université Paris-Sud 11",
+        "Université Paris-Saclay"
+      ],
+      "facultyIds": [
+        "omlist-cef222d3874bd230",
+        "omlist-307910fcb99fe66e"
+      ],
+      "sourceUrls": [],
+      "owners": [
+        "integrator"
+      ],
+      "doctoralObservations": [
+        {
+          "status": "verified",
+          "checkedAt": "2026-10-25",
+          "programmeIds": [
+            "universite-paris-saclay--interfaces-genie-industriel-doctorat"
+          ],
+          "branches": [
+            {
+              "branch": "business",
+              "reviewState": "checked",
+              "conclusion": "Official full university diploma-specialty list names broad Sciences de Gestion in ED DEM, not quantitative Management Science or Operations; no title-matching business specialty in that institution-wide list.",
+              "sourceUrls": [
+                "https://www.universite-paris-saclay.fr/recherche/doctorat-et-hdr/liste-des-specialites-des-diplomes-de-doctorat-delivres-par-luniversite-paris-saclay"
+              ]
+            },
+            {
+              "branch": "engineering",
+              "reviewState": "partial",
+              "conclusion": "Official full doctoral diploma-specialty list names Génie industriel in ED Interfaces. Relevant host school/department identities and any additional currently offered formally named research areas in separate graduate programmes still require review; EOBE specialty list was also surfaced but does not name IE/OR.",
+              "sourceUrls": [
+                "https://www.universite-paris-saclay.fr/recherche/doctorat-et-hdr/liste-des-specialites-des-diplomes-de-doctorat-delivres-par-luniversite-paris-saclay"
+              ]
+            }
+          ],
+          "sources": [
+            {
+              "url": "https://www.universite-paris-saclay.fr/recherche/doctorat-et-hdr/liste-des-specialites-des-diplomes-de-doctorat-delivres-par-luniversite-paris-saclay",
+              "checkedAt": "2026-10-25",
+              "outcome": "read",
+              "note": "Full official diploma-specialty inventory: exact ED 573 Industrial Engineering doctoral specialty and broad business/technical subject list."
+            },
+            {
+              "url": "https://www.universite-paris-saclay.fr/recherche/doctorat-et-hdr/le-guide-de-la-soutenance-de-doctorat",
+              "checkedAt": "2026-10-25",
+              "outcome": "read",
+              "note": "Full official current research doctorate framework and original thesis/defense requirement."
+            }
+          ],
+          "limitations": [
+            "One exact-title Industrial Engineering research doctorate specialty verified; no other engineering subject substituted by analogy.",
+            "Paris-Sud historical identity and current Paris-Saclay awarder are linked separately in continuation-254; past individual award never rewritten from current successor status."
+          ],
+          "coverageComplete": false
+        }
+      ],
+      "verifiedCurrentProgrammeIds": [
+        "universite-paris-saclay--interfaces-genie-industriel-doctorat"
+      ],
       "branchCoverageComplete": false,
       "nextStep": "Verify official current relevant doctoral routes across business and engineering; record branch gaps"
     },
@@ -35026,11 +35256,15 @@
       "nextStep": "Resolve official identity and add/associate discovery record without speculative merge"
     },
     {
-      "id": "unresolved:mazandaran university of science and technology",
+      "id": "mazandaran-university-of-science-and-technology",
       "name": "Mazandaran University of Science and Technology",
-      "sourceUniversityIds": [],
-      "candidateUniversityIds": [],
-      "identityMatch": "unresolved discovery label",
+      "sourceUniversityIds": [
+        "mazandaran-university-of-science-and-technology"
+      ],
+      "candidateUniversityIds": [
+        "mazandaran-university-of-science-and-technology"
+      ],
+      "identityMatch": "accepted university/entity name",
       "reportedFacultyCount": 1,
       "reportedNames": [
         "Mazandaran University of Science and Technology"
@@ -35039,11 +35273,73 @@
         "omlist-48fa3b62d30e5425"
       ],
       "sourceUrls": [],
-      "owners": [],
-      "doctoralObservations": [],
+      "owners": [
+        "integrator"
+      ],
+      "doctoralObservations": [
+        {
+          "status": "verified",
+          "checkedAt": "2026-10-25",
+          "programmeIds": [
+            "mazandaran-university-of-science-and-technology--industrial-engineering-systems-optimization-doctorate"
+          ],
+          "branches": [
+            {
+              "branch": "business",
+              "reviewState": "checked",
+              "conclusion": "Current two-page official academic group inventory includes Industrial Management and Business Management but no formally named Operations/Management Science doctoral title; department Industrial Management is not translated to quantitative Management Science.",
+              "sourceUrls": [
+                "https://www.ustmb.ac.ir/Groups",
+                "https://www.ustmb.ac.ir/Groups/2"
+              ]
+            },
+            {
+              "branch": "engineering",
+              "reviewState": "checked",
+              "conclusion": "Current official Industrial Engineering department page lists one Doctorate in Industrial Engineering—Systems Optimization, explicitly distinguished from eight master's tracks. Other current group titles do not add separately qualifying named PhDs.",
+              "sourceUrls": [
+                "https://www.ustmb.ac.ir/GetGroup/16/%DA%AF%D8%B1%D9%88%D9%87-%D9%85%D9%87%D9%86%D8%AF%D8%B3%DB%8C-%D8%B5%D9%86%D8%A7%DB%8C%D8%B9",
+                "https://www.ustmb.ac.ir/Groups",
+                "https://www.ustmb.ac.ir/Groups/2"
+              ]
+            }
+          ],
+          "sources": [
+            {
+              "url": "https://www.ustmb.ac.ir/En/",
+              "checkedAt": "2026-10-25",
+              "outcome": "read",
+              "note": "Full official English Babol university homepage confirms institutional identity and Ph.D. level."
+            },
+            {
+              "url": "https://www.ustmb.ac.ir/GetGroup/16/%DA%AF%D8%B1%D9%88%D9%87-%D9%85%D9%87%D9%86%D8%AF%D8%B3%DB%8C-%D8%B5%D9%86%D8%A7%DB%8C%D8%B9",
+              "checkedAt": "2026-10-25",
+              "outcome": "read",
+              "note": "Full exact Industrial Engineering group list identifies doctorate field and eight distinct master's offerings."
+            },
+            {
+              "url": "https://www.ustmb.ac.ir/Groups",
+              "checkedAt": "2026-10-25",
+              "outcome": "read",
+              "note": "Full group inventory first page."
+            },
+            {
+              "url": "https://www.ustmb.ac.ir/Groups/2",
+              "checkedAt": "2026-10-25",
+              "outcome": "read",
+              "note": "Full group inventory second page."
+            }
+          ],
+          "limitations": [
+            "Current named doctoral field verified; exact research doctorate credential still requires thesis/original-research evidence before counted as eligible if importer does not treat generic Persian دکتری as Ph.D.",
+            "Do not confuse separate similarly named Behshahr institution or verify an individual's historical degree from current programme availability."
+          ],
+          "coverageComplete": true
+        }
+      ],
       "verifiedCurrentProgrammeIds": [],
-      "branchCoverageComplete": false,
-      "nextStep": "Resolve official identity and add/associate discovery record without speculative merge"
+      "branchCoverageComplete": true,
+      "nextStep": "Current scoped doctoral inventory checked; retain evidence and historical limitations"
     },
     {
       "id": "mcmaster-university",
@@ -36198,11 +36494,15 @@
       "nextStep": "Verify official current relevant doctoral routes across business and engineering; record branch gaps"
     },
     {
-      "id": "unresolved:rennes school of business",
+      "id": "rennes-school-of-business",
       "name": "Rennes School of Business",
-      "sourceUniversityIds": [],
-      "candidateUniversityIds": [],
-      "identityMatch": "unresolved discovery label",
+      "sourceUniversityIds": [
+        "rennes-school-of-business"
+      ],
+      "candidateUniversityIds": [
+        "rennes-school-of-business"
+      ],
+      "identityMatch": "accepted university/entity name",
       "reportedFacultyCount": 1,
       "reportedNames": [
         "Rennes School of Business"
@@ -36211,11 +36511,57 @@
         "omlist-89f3dd69edef96b4"
       ],
       "sourceUrls": [],
-      "owners": [],
-      "doctoralObservations": [],
+      "owners": [
+        "integrator"
+      ],
+      "doctoralObservations": [
+        {
+          "status": "partial",
+          "checkedAt": "2026-10-25",
+          "programmeIds": [],
+          "branches": [
+            {
+              "branch": "business",
+              "reviewState": "partial",
+              "conclusion": "Current institutional PhD in Management with original research/thesis confirmed. Official page lists no formally named Operations/Management Science specialization and does not connect the named Operations and Analytics department as doctoral host. Do not count a qualifying route until that link or named doctoral area is evidenced. Listed DBAs are separate professional awards and not counted.",
+              "sourceUrls": [
+                "https://www.rennes-sb.com/programmes/phd/phd-management/",
+                "https://www.rennes-sb.com/department/operations-and-analytics/"
+              ]
+            },
+            {
+              "branch": "engineering",
+              "reviewState": "complete",
+              "conclusion": "Current official school PhD programme menu has the Management PhD and professional DBA offerings; no separate engineering faculty or engineering doctorate is claimed by this business school.",
+              "sourceUrls": [
+                "https://www.rennes-sb.com/programmes/phd/phd-management/"
+              ]
+            }
+          ],
+          "sources": [
+            {
+              "url": "https://www.rennes-sb.com/programmes/phd/phd-management/",
+              "checkedAt": "2026-10-25",
+              "outcome": "read",
+              "note": "Full institutional Management PhD page, exact credential and doctoral thesis requirements; no explicit Operations doctoral area or department host."
+            },
+            {
+              "url": "https://www.rennes-sb.com/department/operations-and-analytics/",
+              "checkedAt": "2026-10-25",
+              "outcome": "read",
+              "note": "Full department directory establishes Operations and Analytics department, but not its PhD host role."
+            }
+          ],
+          "limitations": [
+            "The named Operations and Analytics department could support an eligible route if official doctoral programme material links the PhD to the department; current read pages do not establish this.",
+            "Imported person's past degree/field is unverified and is not a current programme source."
+          ],
+          "coverageComplete": false
+        }
+      ],
       "verifiedCurrentProgrammeIds": [],
       "branchCoverageComplete": false,
-      "nextStep": "Resolve official identity and add/associate discovery record without speculative merge"
+      "nextStep": "Verify official current relevant doctoral routes across business and engineering; record branch gaps"
     },
     {
       "id": "rwth-aachen-university",
@@ -37161,11 +37507,15 @@
       "nextStep": "Verify official current relevant doctoral routes across business and engineering; record branch gaps"
     },
     {
-      "id": "unresolved:telecom paris",
+      "id": "telecom-paris",
       "name": "Télécom Paris",
-      "sourceUniversityIds": [],
-      "candidateUniversityIds": [],
-      "identityMatch": "unresolved discovery label",
+      "sourceUniversityIds": [
+        "telecom-paris"
+      ],
+      "candidateUniversityIds": [
+        "telecom-paris"
+      ],
+      "identityMatch": "accepted university/entity name",
       "reportedFacultyCount": 1,
       "reportedNames": [
         "Télécom Paris"
@@ -37174,11 +37524,57 @@
         "omlist-5b10d8f360914848"
       ],
       "sourceUrls": [],
-      "owners": [],
-      "doctoralObservations": [],
+      "owners": [
+        "integrator"
+      ],
+      "doctoralObservations": [
+        {
+          "status": "partial",
+          "checkedAt": "2026-10-25",
+          "programmeIds": [],
+          "branches": [
+            {
+              "branch": "business",
+              "reviewState": "partial",
+              "conclusion": "Opened Télécom Paris specialties page lists Economics/Management/Sociology broad ED IP Paris subject family but no exact named Operations or quantitative Management Science doctoral specialty in its rendered current content; specific school-level subject links remain to inspect after site maintenance.",
+              "sourceUrls": [
+                "https://www.telecom-paris.fr/fr/doctorat/specialites"
+              ]
+            },
+            {
+              "branch": "engineering",
+              "reviewState": "partial",
+              "conclusion": "Opened official specialty overview lists broad engineering and EDMH mathematics families but no named Industrial Engineering/Operations title. Other individual detailed formal fields remain unconfirmed while official site returns maintenance for related pages.",
+              "sourceUrls": [
+                "https://www.telecom-paris.fr/fr/doctorat/specialites",
+                "https://www.telecom-paris.fr/en/phd/grade"
+              ]
+            }
+          ],
+          "sources": [
+            {
+              "url": "https://www.telecom-paris.fr/fr/doctorat/specialites",
+              "checkedAt": "2026-10-25",
+              "outcome": "read",
+              "note": "Full rendered current official doctoral specialty overview; IP Paris awarder wording and broad specialty families, no exact title-matching route."
+            },
+            {
+              "url": "https://www.telecom-paris.fr/en/phd/grade",
+              "checkedAt": "2026-10-25",
+              "outcome": "blocked",
+              "note": "Redirected to official site-maintenance notice; no grade content read."
+            }
+          ],
+          "limitations": [
+            "No qualifying current route is claimed. The current official overview names broad subject families and IP Paris as awarder, but detailed formally named fields and maintenance-affected source pages remain incomplete.",
+            "The reported individual's 2010 doctorate cannot be assigned current IP Paris awarder or current field without historical primary evidence."
+          ],
+          "coverageComplete": false
+        }
+      ],
       "verifiedCurrentProgrammeIds": [],
       "branchCoverageComplete": false,
-      "nextStep": "Resolve official identity and add/associate discovery record without speculative merge"
+      "nextStep": "Verify official current relevant doctoral routes across business and engineering; record branch gaps"
     },
     {
       "id": "texas-tech-university",
@@ -38419,119 +38815,6 @@
       "nextStep": "Verify official current relevant doctoral routes across business and engineering; record branch gaps"
     },
     {
-      "id": "university-of-sao-paulo",
-      "name": "Universidade de São Paulo",
-      "sourceUniversityIds": [
-        "university-of-sao-paulo"
-      ],
-      "candidateUniversityIds": [
-        "university-of-sao-paulo"
-      ],
-      "identityMatch": "accepted university/entity name",
-      "reportedFacultyCount": 1,
-      "reportedNames": [
-        "University of São Paulo"
-      ],
-      "facultyIds": [
-        "omlist-8f5cb84538a2db4a"
-      ],
-      "sourceUrls": [],
-      "owners": [
-        "integrator"
-      ],
-      "doctoralObservations": [
-        {
-          "status": "verified",
-          "checkedAt": "2026-10-25",
-          "programmeIds": [
-            "university-of-sao-paulo--eesc-usp-engenharia-de-producao-processos-gestao-operacoes-doctorate",
-            "university-of-sao-paulo--ep-usp-engenharia-de-producao-gestao-de-operacoes-logistica-doctorate"
-          ],
-          "branches": [
-            {
-              "branch": "business",
-              "reviewState": "partial",
-              "conclusion": "Other USP business/management doctoral fields and actual department/school titles have not been inventoried.",
-              "sourceUrls": []
-            },
-            {
-              "branch": "engineering",
-              "reviewState": "partial",
-              "conclusion": "Both EP-USP São Paulo and EESC-USP São Carlos Production Engineering doctorates verified as separate programmes with formal Operations doctoral research lines; broader engineering named-field inventory remains incomplete.",
-              "sourceUrls": [
-                "https://ppgep.poli.usp.br/contato/",
-                "https://ppgselecao.eesc.usp.br/",
-                "https://posproducao.eesc.usp.br/linhas-de-pesquisa/",
-                "https://posproducao.eesc.usp.br/wp-content/uploads/2022/09/EDITAL-PARA-PROCESSO-SELETIVO-DOUTORADO-divulgado-em-29-04-2022.pdf"
-              ]
-            }
-          ],
-          "sources": [
-            {
-              "url": "https://ppgep.poli.usp.br/contato/",
-              "checkedAt": "2026-10-25",
-              "outcome": "read",
-              "note": "Full official EP-USP doctoral FAQ: doctorate award, formal named research lines, selection choice, research project and thesis examinations."
-            },
-            {
-              "url": "https://pro.poli.usp.br/pos-graduacao/",
-              "checkedAt": "2026-10-25",
-              "outcome": "read",
-              "note": "Full official EP-USP department graduate page confirms Production Engineering doctorate."
-            },
-            {
-              "url": "https://ppgselecao.eesc.usp.br/",
-              "checkedAt": "2026-10-25",
-              "outcome": "read",
-              "note": "Full EESC-USP admissions index: distinct Production Engineering doctorate, continuous 2025–2030 admissions."
-            },
-            {
-              "url": "https://posproducao.eesc.usp.br/linhas-de-pesquisa/",
-              "checkedAt": "2026-10-25",
-              "outcome": "read",
-              "note": "Full EESC-USP formal research-line listing under Processos e Gestão de Operações, doctoral applicability not explicit on page."
-            },
-            {
-              "url": "https://prod.eesc.usp.br/",
-              "checkedAt": "2026-10-25",
-              "outcome": "blocked",
-              "note": "Full-open timeout; did not use indexed summary as confirmation."
-            },
-            {
-              "url": "https://posproducao.eesc.usp.br/wp-content/uploads/2022/09/EDITAL-PARA-PROCESSO-SELETIVO-DOUTORADO-divulgado-em-29-04-2022.pdf",
-              "checkedAt": "2026-10-25",
-              "outcome": "read",
-              "note": "Full six-page official doctoral selection regulation: exact formal Operations concentration, doctoral research proposal and academic degree wording."
-            },
-            {
-              "url": "https://posproducao.eesc.usp.br/faq/",
-              "checkedAt": "2026-10-25",
-              "outcome": "read",
-              "note": "Full current official programme FAQ explicitly describes doctoral thesis defence and final deposit."
-            },
-            {
-              "url": "https://ppgselecao.eesc.usp.br/inc/open_pdf.php?id=862&type=anexo_processo_seletivo",
-              "checkedAt": "2026-10-25",
-              "outcome": "blocked",
-              "note": "Current doctorate admissions PDF linked from official 2026 EESC portal failed full fetch (UnexpectedStatusCode); no terms inferred from inaccessible PDF."
-            }
-          ],
-          "limitations": [
-            "Two distinct campus doctorates with named Operations doctoral research lines verified; 2022 EESC regulation paired with current 2026 admissions and current research-line listing; other university branches remain incomplete.",
-            "USP business and other plausible technical doctoral fields remain incomplete; no claim of all USP relevant programmes.",
-            "OM List individual degree, year and campus remain discovery, not a verified person record."
-          ],
-          "coverageComplete": false
-        }
-      ],
-      "verifiedCurrentProgrammeIds": [
-        "university-of-sao-paulo--ep-usp-engenharia-de-producao-gestao-de-operacoes-logistica-doctorate",
-        "university-of-sao-paulo--eesc-usp-engenharia-de-producao-processos-gestao-operacoes-doctorate"
-      ],
-      "branchCoverageComplete": false,
-      "nextStep": "Verify official current relevant doctoral routes across business and engineering; record branch gaps"
-    },
-    {
       "id": "universidade-federal-de-santa-catarina",
       "name": "Universidade Federal de Santa Catarina",
       "sourceUniversityIds": [
@@ -38850,11 +39133,15 @@
       "nextStep": "Verify official current relevant doctoral routes across business and engineering; record branch gaps"
     },
     {
-      "id": "unresolved:universitat politecnica de catalunya",
+      "id": "universitat-politecnica-de-catalunya",
       "name": "Universitat Politècnica de Catalunya",
-      "sourceUniversityIds": [],
-      "candidateUniversityIds": [],
-      "identityMatch": "unresolved discovery label",
+      "sourceUniversityIds": [
+        "universitat-politecnica-de-catalunya"
+      ],
+      "candidateUniversityIds": [
+        "universitat-politecnica-de-catalunya"
+      ],
+      "identityMatch": "accepted university/entity name",
       "reportedFacultyCount": 1,
       "reportedNames": [
         "Universitat Politècnica de Catalunya"
@@ -38863,11 +39150,70 @@
         "omlist-3488f171dc335d2c"
       ],
       "sourceUrls": [],
-      "owners": [],
-      "doctoralObservations": [],
-      "verifiedCurrentProgrammeIds": [],
+      "owners": [
+        "integrator"
+      ],
+      "doctoralObservations": [
+        {
+          "status": "verified",
+          "checkedAt": "2026-10-25",
+          "programmeIds": [
+            "universitat-politecnica-de-catalunya--statistics-operations-research-doctorate",
+            "universitat-politecnica-de-catalunya--supply-chain-operations-management-doctorate"
+          ],
+          "branches": [
+            {
+              "branch": "business",
+              "reviewState": "partial",
+              "conclusion": "Current Supply Chain and Operations Management doctorate is exact-title positive, structurally sponsored by Department of Management and Industrial and Control Engineering Institute. Other Business Administration and Management programme named fields not yet detailed.",
+              "sourceUrls": [
+                "https://doctorat.upc.edu/en/programmes/supply-chain-and-operations-management",
+                "https://doctorat.upc.edu/en/programmes/"
+              ]
+            },
+            {
+              "branch": "engineering",
+              "reviewState": "partial",
+              "conclusion": "Institution-wide doctorate titles and Statistics and Operations Research doctorate/department read; detailed formal fields of other plausible technical doctorates require bounded check. Industrial Engineering heading itself is a grouping, not third programme.",
+              "sourceUrls": [
+                "https://doctorat.upc.edu/en/programmes/statistics-and-operations-research",
+                "https://doctorat.upc.edu/en/programmes/"
+              ]
+            }
+          ],
+          "sources": [
+            {
+              "url": "https://doctorat.upc.edu/en/programmes/statistics-and-operations-research",
+              "checkedAt": "2026-10-25",
+              "outcome": "read",
+              "note": "Full current OR doctoral programme and promoting OR department."
+            },
+            {
+              "url": "https://doctorat.upc.edu/en/programmes/supply-chain-and-operations-management",
+              "checkedAt": "2026-10-25",
+              "outcome": "read",
+              "note": "Full current exact Operations Management doctoral programme, structural sponsors, research and thesis."
+            },
+            {
+              "url": "https://doctorat.upc.edu/en/programmes/",
+              "checkedAt": "2026-10-25",
+              "outcome": "read",
+              "note": "Full current UPC Doctoral School programme-title inventory."
+            }
+          ],
+          "limitations": [
+            "Two distinct exact-title current doctorates verified; wider named doctoral fields still partial.",
+            "OM List 2008 individual degree field not inferred from these current programmes."
+          ],
+          "coverageComplete": false
+        }
+      ],
+      "verifiedCurrentProgrammeIds": [
+        "universitat-politecnica-de-catalunya--statistics-operations-research-doctorate",
+        "universitat-politecnica-de-catalunya--supply-chain-operations-management-doctorate"
+      ],
       "branchCoverageComplete": false,
-      "nextStep": "Resolve official identity and add/associate discovery record without speculative merge"
+      "nextStep": "Verify official current relevant doctoral routes across business and engineering; record branch gaps"
     },
     {
       "id": "unresolved:universite bordeaux i",
@@ -39207,11 +39553,15 @@
       "nextStep": "Current scoped doctoral inventory checked; retain evidence and historical limitations"
     },
     {
-      "id": "unresolved:universite de lille",
+      "id": "universite-de-lille",
       "name": "Université de Lille",
-      "sourceUniversityIds": [],
-      "candidateUniversityIds": [],
-      "identityMatch": "unresolved discovery label",
+      "sourceUniversityIds": [
+        "universite-de-lille"
+      ],
+      "candidateUniversityIds": [
+        "universite-de-lille"
+      ],
+      "identityMatch": "accepted university/entity name",
       "reportedFacultyCount": 1,
       "reportedNames": [
         "Université de Lille"
@@ -39220,18 +39570,80 @@
         "omlist-c4659ad1abfa433b"
       ],
       "sourceUrls": [],
-      "owners": [],
-      "doctoralObservations": [],
+      "owners": [
+        "integrator"
+      ],
+      "doctoralObservations": [
+        {
+          "status": "partial",
+          "checkedAt": "2026-10-25",
+          "programmeIds": [],
+          "branches": [
+            {
+              "branch": "business",
+              "reviewState": "partial",
+              "conclusion": "ED SESAM current official page names broad Economics/Management disciplines. Official 2024 repository HTML verifies a Lille Doctorat thesis with OR topic, prepared at IÉSEG, but repository HTML labels discipline Sciences économiques, not the formal OR doctorate specialty. The full thesis cover is oversized and not read, so no current OR route is counted yet.",
+              "sourceUrls": [
+                "https://egsesam.univ-lille.fr/presentation-de-lecole-doctorale",
+                "https://pepite.univ-lille.fr/ori-oai-search/notice/view/2024ULILA006?lightbox=true"
+              ]
+            },
+            {
+              "branch": "engineering",
+              "reviewState": "partial",
+              "conclusion": "Science/technology faculty full page names ENGYS and MADIS as doctoral-school links and an Industrial Engineering master's degree only; precise named doctoral subject fields and hosts remain to inspect.",
+              "sourceUrls": [
+                "https://sciences-technologies.univ-lille.fr/nos-formations/offre-de-formation"
+              ]
+            }
+          ],
+          "sources": [
+            {
+              "url": "https://egsesam.univ-lille.fr/presentation-de-lecole-doctorale",
+              "checkedAt": "2026-10-25",
+              "outcome": "read",
+              "note": "Full current SESAM doctoral-school description and broad disciplines."
+            },
+            {
+              "url": "https://pepite.univ-lille.fr/ori-oai-search/notice/view/2024ULILA006?lightbox=true",
+              "checkedAt": "2026-10-25",
+              "outcome": "read",
+              "note": "Full official repository HTML for 2024 Doctorat thesis; OR is title/topic, discipline stored as Sciences économiques."
+            },
+            {
+              "url": "https://sciences-technologies.univ-lille.fr/nos-formations/offre-de-formation",
+              "checkedAt": "2026-10-25",
+              "outcome": "read",
+              "note": "Full current faculty offering page separates Industrial Engineering master's from ENGYS/MADIS doctoral schools."
+            },
+            {
+              "url": "https://doctorat.univ-lille.fr/comment-postuler/",
+              "checkedAt": "2026-10-25",
+              "outcome": "blocked",
+              "note": "Official application page 403; no alternate access attempted."
+            }
+          ],
+          "limitations": [
+            "Potential formal OR doctoral specialty on oversized 2024 thesis cover appears in search extract only; require actually readable official programme document or smaller official field evidence before current route acceptance.",
+            "The imported OM faculty profile may refer to this 2024 thesis, but per-person doctorate verification is Stage 2 and is not asserted here."
+          ],
+          "coverageComplete": false
+        }
+      ],
       "verifiedCurrentProgrammeIds": [],
       "branchCoverageComplete": false,
-      "nextStep": "Resolve official identity and add/associate discovery record without speculative merge"
+      "nextStep": "Verify official current relevant doctoral routes across business and engineering; record branch gaps"
     },
     {
-      "id": "unresolved:universite de montreal",
+      "id": "universite-de-montreal",
       "name": "Université de Montréal",
-      "sourceUniversityIds": [],
-      "candidateUniversityIds": [],
-      "identityMatch": "unresolved discovery label",
+      "sourceUniversityIds": [
+        "universite-de-montreal"
+      ],
+      "candidateUniversityIds": [
+        "universite-de-montreal"
+      ],
+      "identityMatch": "accepted university/entity name",
       "reportedFacultyCount": 1,
       "reportedNames": [
         "Université de Montréal"
@@ -39240,11 +39652,61 @@
         "omlist-084a66721e3df07e"
       ],
       "sourceUrls": [],
-      "owners": [],
-      "doctoralObservations": [],
-      "verifiedCurrentProgrammeIds": [],
+      "owners": [
+        "integrator"
+      ],
+      "doctoralObservations": [
+        {
+          "status": "verified",
+          "checkedAt": "2026-10-25",
+          "programmeIds": [
+            "universite-de-montreal--informatique-diro-phd"
+          ],
+          "branches": [
+            {
+              "branch": "business",
+              "reviewState": "partial",
+              "conclusion": "Other business/management doctorate offerings of UdeM not yet inventoried; do not conflate separately branded HEC Montréal with this provider.",
+              "sourceUrls": [
+                "https://admission.umontreal.ca/programmes/doctorat-en-informatique/impression/format.html"
+              ]
+            },
+            {
+              "branch": "engineering",
+              "reviewState": "partial",
+              "conclusion": "Formal OR department and its Computer Science Ph.D. current host link verified; other science/mathematics/technical named fields remain to check.",
+              "sourceUrls": [
+                "https://diro.umontreal.ca/accueil/",
+                "https://admission.umontreal.ca/programmes/doctorat-en-informatique/impression/format.html"
+              ]
+            }
+          ],
+          "sources": [
+            {
+              "url": "https://diro.umontreal.ca/accueil/",
+              "checkedAt": "2026-10-25",
+              "outcome": "read",
+              "note": "Full current official Department of Computer Science and Operations Research homepage."
+            },
+            {
+              "url": "https://admission.umontreal.ca/programmes/doctorat-en-informatique/impression/format.html",
+              "checkedAt": "2026-10-25",
+              "outcome": "read",
+              "note": "Full current university Computer Science Ph.D. admissions/structure page, formal OR department host and research/thesis."
+            }
+          ],
+          "limitations": [
+            "One host-linked general Computer Science Ph.D. verified; no independent Operations Research degree or specialization invented.",
+            "Other plausible named doctoral routes and separate HEC Montréal boundaries remain to check."
+          ],
+          "coverageComplete": false
+        }
+      ],
+      "verifiedCurrentProgrammeIds": [
+        "universite-de-montreal--informatique-diro-phd"
+      ],
       "branchCoverageComplete": false,
-      "nextStep": "Resolve official identity and add/associate discovery record without speculative merge"
+      "nextStep": "Verify official current relevant doctoral routes across business and engineering; record branch gaps"
     },
     {
       "id": "university-of-sfax",
@@ -39327,11 +39789,15 @@
       "nextStep": "Verify official current relevant doctoral routes across business and engineering; record branch gaps"
     },
     {
-      "id": "unresolved:universite de technologie de troyes",
-      "name": "Université de Technologie de Troyes",
-      "sourceUniversityIds": [],
-      "candidateUniversityIds": [],
-      "identityMatch": "unresolved discovery label",
+      "id": "universite-de-technologie-de-troyes",
+      "name": "Université de technologie de Troyes",
+      "sourceUniversityIds": [
+        "universite-de-technologie-de-troyes"
+      ],
+      "candidateUniversityIds": [
+        "universite-de-technologie-de-troyes"
+      ],
+      "identityMatch": "accepted university/entity name",
       "reportedFacultyCount": 1,
       "reportedNames": [
         "Université de Technologie de Troyes"
@@ -39340,11 +39806,69 @@
         "omlist-9238bde35c0f1c5a"
       ],
       "sourceUrls": [],
-      "owners": [],
-      "doctoralObservations": [],
+      "owners": [
+        "integrator"
+      ],
+      "doctoralObservations": [
+        {
+          "status": "partial",
+          "checkedAt": "2026-10-25",
+          "programmeIds": [],
+          "branches": [
+            {
+              "branch": "business",
+              "reviewState": "checked",
+              "conclusion": "Current 18 September 2026 official complete training inventory lists one engineering doctoral school and three formal specialties, no separate business doctoral school or named Operations/Management Science business specialty.",
+              "sourceUrls": [
+                "https://www.utt.fr/nos-formations"
+              ]
+            },
+            {
+              "branch": "engineering",
+              "reviewState": "partial",
+              "conclusion": "Formal 2026 doctoral offering is Doctorat Sciences pour l'Ingénieur with three listed specialties: Matériaux/Mécanique/Optique/Nanotechnologie, Optimisation et Sûreté des Systèmes, Systèmes SocioTechniques. None exactly names Operations Research or Industrial Engineering. Separate November 2025 university news calls one defense a doctoral thesis 'en recherche opérationnelle'; formal programme/specialty status of that phrase needs adjudication before a qualifying route is counted.",
+              "sourceUrls": [
+                "https://www.utt.fr/formations/doctorat-sciences-pour-l-ingenieur",
+                "https://www.utt.fr/actualites/recherche-operationnelle-isaline-baret-soutient-sa-these-sur-loptimisation-des-investissements-dans-les-systemes-de-sante"
+              ]
+            }
+          ],
+          "sources": [
+            {
+              "url": "https://www.utt.fr/nos-formations",
+              "checkedAt": "2026-10-25",
+              "outcome": "read",
+              "note": "Full current training inventory updated September 2026, exactly three doctoral specializations and separate engineer GI credential."
+            },
+            {
+              "url": "https://www.utt.fr/formations/doctorat-sciences-pour-l-ingenieur",
+              "checkedAt": "2026-10-25",
+              "outcome": "read",
+              "note": "Full current Doctorat Sciences pour l'Ingénieur page: research doctorate, exact three specializations and degree awarded by UTT."
+            },
+            {
+              "url": "https://www.utt.fr/english-version/ecole-doctorale",
+              "checkedAt": "2026-10-25",
+              "outcome": "read",
+              "note": "Full official doctoral school page confirms accreditation and three thematic fields."
+            },
+            {
+              "url": "https://www.utt.fr/actualites/recherche-operationnelle-isaline-baret-soutient-sa-these-sur-loptimisation-des-investissements-dans-les-systemes-de-sante",
+              "checkedAt": "2026-10-25",
+              "outcome": "read",
+              "note": "Full 2025 UTT defense article: topical phrase doctorate in OR, within LIST3N research unit, but not one of current formal doctoral specialties."
+            }
+          ],
+          "limitations": [
+            "No route counted pending adjudication whether 2025 'doctorat en recherche opérationnelle' represents official doctoral research area beyond the three formal specializations, rather than descriptive thesis topic.",
+            "The current Industrial Engineering engineer degree is not a doctoral degree. Imported person's 2016 subject is not verified from today's programmes."
+          ],
+          "coverageComplete": false
+        }
+      ],
       "verifiedCurrentProgrammeIds": [],
       "branchCoverageComplete": false,
-      "nextStep": "Resolve official identity and add/associate discovery record without speculative merge"
+      "nextStep": "Verify official current relevant doctoral routes across business and engineering; record branch gaps"
     },
     {
       "id": "university-of-toulon",
@@ -39525,46 +40049,6 @@
       ],
       "branchCoverageComplete": false,
       "nextStep": "Verify official current relevant doctoral routes across business and engineering; record branch gaps"
-    },
-    {
-      "id": "unresolved:universite paris saclay",
-      "name": "Université Paris-Saclay",
-      "sourceUniversityIds": [],
-      "candidateUniversityIds": [],
-      "identityMatch": "unresolved discovery label",
-      "reportedFacultyCount": 1,
-      "reportedNames": [
-        "Université Paris-Saclay"
-      ],
-      "facultyIds": [
-        "omlist-307910fcb99fe66e"
-      ],
-      "sourceUrls": [],
-      "owners": [],
-      "doctoralObservations": [],
-      "verifiedCurrentProgrammeIds": [],
-      "branchCoverageComplete": false,
-      "nextStep": "Resolve official identity and add/associate discovery record without speculative merge"
-    },
-    {
-      "id": "unresolved:universite paris sud 11",
-      "name": "Université Paris-Sud 11",
-      "sourceUniversityIds": [],
-      "candidateUniversityIds": [],
-      "identityMatch": "unresolved discovery label",
-      "reportedFacultyCount": 1,
-      "reportedNames": [
-        "Université Paris-Sud 11"
-      ],
-      "facultyIds": [
-        "omlist-cef222d3874bd230"
-      ],
-      "sourceUrls": [],
-      "owners": [],
-      "doctoralObservations": [],
-      "verifiedCurrentProgrammeIds": [],
-      "branchCoverageComplete": false,
-      "nextStep": "Resolve official identity and add/associate discovery record without speculative merge"
     },
     {
       "id": "university-college-dublin",
@@ -43301,10 +43785,22 @@
             {
               "branch": "engineering",
               "reviewState": "partial",
-              "conclusion": "Full engineering doctoral overview identifies eight departments with generic PhD/EngD provision. No IE-named department in overview, but detailed named doctoral fields in engineering and mathematics still require bounded check.",
               "sourceUrls": [
-                "https://www.strath.ac.uk/engineering/studywithus/postgraduateresearch/"
-              ]
+                "https://www.strath.ac.uk/engineering/studywithus/postgraduateresearch/",
+                "https://www.strath.ac.uk/courses/research/mathematicsstatistics/",
+                "https://www.strath.ac.uk/courses/research/designmanufacturingengineeringmanagement/",
+                "https://www.strath.ac.uk/courses/research/mechanicalaerospaceengineering/",
+                "https://www.strath.ac.uk/courses/research/electronicelectricalengineering/",
+                "https://www.strath.ac.uk/courses/research/computerinformationsciences/",
+                "https://www.strath.ac.uk/courses/research/civilenvironmentalengineering/",
+                "https://www.strath.ac.uk/courses/research/biomedicalengineering/",
+                "https://www.strath.ac.uk/courses/research/chemicalprocessengineering/",
+                "https://www.strath.ac.uk/courses/research/navalarchitectureoceanmarineengineering/",
+                "https://www.strath.ac.uk/courses/research/architecture/",
+                "https://www.strath.ac.uk/research/subjects/mathematicsstatistics/",
+                "https://www.strath.ac.uk/research/subjects/designmanufacturingengineeringmanagement/engineeringmanagementgroup/"
+              ],
+              "conclusion": "All eight engineering programme title/host and actual published research-area lists plus Mathematics and Computer Information Sciences checked. No additional exact matching doctoral field on programme pages. DMEM explicitly links six doctoral research groups; its Engineering Management group lists Operations Management specialist expertise and Institute Operations Management collaboration. That programme-linked nested offering candidate needs exact title-scope adjudication rather than assumed exclusion/inclusion. All other generic numerical optimization, shipping and manufacturing topics not converted into named OR/IE provision."
             }
           ],
           "sources": [
@@ -43331,11 +43827,85 @@
               "checkedAt": "2026-10-25",
               "outcome": "read",
               "note": "Full Faculty of Engineering postgraduate research overview and eight department titles."
+            },
+            {
+              "url": "https://www.strath.ac.uk/courses/research/mathematicsstatistics/",
+              "checkedAt": "2026-10-25",
+              "outcome": "read",
+              "note": "Actual substantive PhD programme title/host and published doctoral research-area list read via web tool; not every unrelated supervisor project or fee section."
+            },
+            {
+              "url": "https://www.strath.ac.uk/courses/research/designmanufacturingengineeringmanagement/",
+              "checkedAt": "2026-10-25",
+              "outcome": "read",
+              "note": "Actual substantive PhD programme title/host and published doctoral research-area list read via web tool; not every unrelated supervisor project or fee section."
+            },
+            {
+              "url": "https://www.strath.ac.uk/courses/research/mechanicalaerospaceengineering/",
+              "checkedAt": "2026-10-25",
+              "outcome": "read",
+              "note": "Actual substantive PhD programme title/host and published doctoral research-area list read via web tool; not every unrelated supervisor project or fee section."
+            },
+            {
+              "url": "https://www.strath.ac.uk/courses/research/electronicelectricalengineering/",
+              "checkedAt": "2026-10-25",
+              "outcome": "read",
+              "note": "Actual substantive PhD programme title/host and published doctoral research-area list read via web tool; not every unrelated supervisor project or fee section."
+            },
+            {
+              "url": "https://www.strath.ac.uk/courses/research/computerinformationsciences/",
+              "checkedAt": "2026-10-25",
+              "outcome": "read",
+              "note": "Actual substantive PhD programme title/host and published doctoral research-area list read via web tool; not every unrelated supervisor project or fee section."
+            },
+            {
+              "url": "https://www.strath.ac.uk/courses/research/civilenvironmentalengineering/",
+              "checkedAt": "2026-10-25",
+              "outcome": "read",
+              "note": "Actual substantive PhD programme title/host and published doctoral research-area list read via web tool; not every unrelated supervisor project or fee section."
+            },
+            {
+              "url": "https://www.strath.ac.uk/courses/research/biomedicalengineering/",
+              "checkedAt": "2026-10-25",
+              "outcome": "read",
+              "note": "Actual substantive PhD programme title/host and published doctoral research-area list read via web tool; not every unrelated supervisor project or fee section."
+            },
+            {
+              "url": "https://www.strath.ac.uk/courses/research/chemicalprocessengineering/",
+              "checkedAt": "2026-10-25",
+              "outcome": "read",
+              "note": "Actual substantive PhD programme title/host and published doctoral research-area list read via web tool; not every unrelated supervisor project or fee section."
+            },
+            {
+              "url": "https://www.strath.ac.uk/courses/research/navalarchitectureoceanmarineengineering/",
+              "checkedAt": "2026-10-25",
+              "outcome": "read",
+              "note": "Actual substantive PhD programme title/host and published doctoral research-area list read via web tool; not every unrelated supervisor project or fee section."
+            },
+            {
+              "url": "https://www.strath.ac.uk/courses/research/architecture/",
+              "checkedAt": "2026-10-25",
+              "outcome": "read",
+              "note": "Actual substantive PhD programme title/host and published doctoral research-area list read via web tool; not every unrelated supervisor project or fee section."
+            },
+            {
+              "url": "https://www.strath.ac.uk/research/subjects/mathematicsstatistics/",
+              "checkedAt": "2026-10-25",
+              "outcome": "read",
+              "note": "Actual all four mathematics research-group descriptions read; mathematical optimization methods alone not named OR offering."
+            },
+            {
+              "url": "https://www.strath.ac.uk/research/subjects/designmanufacturingengineeringmanagement/engineeringmanagementgroup/",
+              "checkedAt": "2026-10-25",
+              "outcome": "read",
+              "note": "Actual full group expertise read. Operations Management among expertise, programme links group, but precise named doctoral field status pending adjudication."
             }
           ],
           "limitations": [
-            "Business route verified; technical and mathematical exact named doctoral fields not yet fully reconciled.",
-            "OM-reported 2008 person doctorate remains discovery only."
+            "Existing Management Science PhD facts and original dates preserved; scope-only proposal, no new route counted.",
+            "DMEM programme-to-group-to-Operations Management expertise chain is explicit. Whether this supplies a named doctoral research field, rather than group expertise alone, remains pending; do not silently mark full negative scope.",
+            "Architecture and chemical/biomedical/civil named fields reviewed; EngD and industry-based PhD options are distinguished. No professional award conversion or generic Industrial label equated to Industrial Engineering.",
+            "Engineering department-filtered directory links for Biomedical, Chemical and Naval returned internal errors; actual direct primary course pages were separately opened and read successfully."
           ],
           "coverageComplete": false
         }
@@ -43375,20 +43945,40 @@
           "branches": [
             {
               "branch": "business",
-              "reviewState": "partial",
-              "conclusion": "Institution-wide research degree and project catalogue were read; exact business doctoral field and host-unit titles remain unverified.",
+              "reviewState": "checked",
+              "conclusion": "Current complete school six-discipline menu and research-degree areas/three research themes read. No qualifying actual title or named doctoral Operations/MS/IE field established. Crosscutting supplychain research alone insufficient; no claim absence individualOpsresearch.",
               "sourceUrls": [
-                "https://www.utas.edu.au/research/degrees",
-                "https://www.utas.edu.au/research/degrees/available-projects?trk=feed-detail_comments-list_comment-text"
+                "https://www.utas.edu.au/about/academic-structure",
+                "https://www.utas.edu.au/about/academic-structure/business-and-economics",
+                "https://www.utas.edu.au/research/business-economics"
               ]
             },
             {
               "branch": "engineering",
               "reviewState": "partial",
-              "conclusion": "Institution-wide research degree and project catalogue were read; engineering doctoral field and host-unit inventories remain unverified.",
+              "conclusion": "Full central host structure, school three-discipline research-degree menu and all actual Civil/Mechanical/Electrical strength menus read; no qualifying route added. AMC exact institutional/three-theme/study hierarchy read, but exact MarineCraftOperationPhD actual host/doctoral field allocation remains unverified. ICT actual central link timed out; broader scope partial.",
               "sourceUrls": [
-                "https://www.utas.edu.au/research/degrees",
-                "https://www.utas.edu.au/research/degrees/available-projects?trk=feed-detail_comments-list_comment-text"
+                "https://www.utas.edu.au/about/academic-structure/engineering",
+                "https://www.utas.edu.au/research/sciences-engineering/engineering",
+                "https://www.utas.edu.au/research/sciences-engineering/engineering/civil-engineering",
+                "https://www.utas.edu.au/research/sciences-engineering/engineering/mechanical-engineering",
+                "https://www.utas.edu.au/research/sciences-engineering/engineering/electrical-engineering",
+                "https://www.utas.edu.au/amc",
+                "https://www.utas.edu.au/amc/research",
+                "https://www.utas.edu.au/amc/study",
+                "https://www.utas.edu.au/__data/assets/pdf_file/0012/1899336/HDR-2026-Tuition-Fees.pdf",
+                "https://www.utas.edu.au/about/academic-structure/information-and-communication-technology"
+              ]
+            },
+            {
+              "branch": "mathematics",
+              "reviewState": "partial",
+              "conclusion": "Actual Mathematics offers OR research supervision and named OR/StochasticModelling research-specialization heading. Exact MathematicalSciencesPhD current title independently documented, but research-page taxonomy-to-actual doctoral opportunity link remains unresolved. Undergraduate major and generic postgraduate link not automatically PhDfield.",
+              "sourceUrls": [
+                "https://www.utas.edu.au/natural-sciences",
+                "https://www.utas.edu.au/natural-sciences/mathematics",
+                "https://www.utas.edu.au/natural-sciences/mathematics/research",
+                "https://www.utas.edu.au/__data/assets/pdf_file/0012/1899336/HDR-2026-Tuition-Fees.pdf"
               ]
             }
           ],
@@ -43404,10 +43994,125 @@
               "checkedAt": "2026-10-25",
               "outcome": "read",
               "note": "Open official catalogue labels projects by PhD degree type; project title/category cannot be treated as an institutional formal doctoral area."
+            },
+            {
+              "url": "https://www.utas.edu.au/about/academic-structure",
+              "note": "Complete current school/institute structure read; Tasmanian School Business Economics, Engineering, NaturalSciences, ICT, AMC actual hosts distinct.",
+              "checkedAt": "2026-10-25",
+              "outcome": "read",
+              "accessMethod": "Individually opened official full web HTML/PDF via authorized fallback"
+            },
+            {
+              "url": "https://www.utas.edu.au/about/academic-structure/business-and-economics",
+              "note": "Full school body and six discipline headings read: Accounting, BusinessAnalytics, Economics, Finance, Management, Marketing. No matching actual department/school title. No people/careers extracted.",
+              "checkedAt": "2026-10-25",
+              "outcome": "read",
+              "accessMethod": "Individually opened official full web HTML/PDF via authorized fallback"
+            },
+            {
+              "url": "https://www.utas.edu.au/research/business-economics",
+              "note": "Full three-theme research menu and explicit research-degree areas accounting/economics/finance/management/marketing read; supply chains crosscutting topic not named doctoral Operations field.",
+              "checkedAt": "2026-10-25",
+              "outcome": "read",
+              "accessMethod": "Individually opened official full web HTML/PDF via authorized fallback"
+            },
+            {
+              "url": "https://www.utas.edu.au/about/academic-structure/engineering",
+              "note": "Full school overview read; actual Engineering identity, research-degree pathway and research links.",
+              "checkedAt": "2026-10-25",
+              "outcome": "read",
+              "accessMethod": "Individually opened official full web HTML/PDF via authorized fallback"
+            },
+            {
+              "url": "https://www.utas.edu.au/research/sciences-engineering/engineering",
+              "note": "Full research-degree menu names Civil, Mechanical, Electrical; no IndustrialEngineering inferred.",
+              "checkedAt": "2026-10-25",
+              "outcome": "read",
+              "accessMethod": "Individually opened official full web HTML/PDF via authorized fallback"
+            },
+            {
+              "url": "https://www.utas.edu.au/research/sciences-engineering/engineering/civil-engineering",
+              "note": "Full substantive research-strength menu read: structures/materials/acoustics/fluidstructure, not qualifying Operations title.",
+              "checkedAt": "2026-10-25",
+              "outcome": "read",
+              "accessMethod": "Individually opened official full web HTML/PDF via authorized fallback"
+            },
+            {
+              "url": "https://www.utas.edu.au/research/sciences-engineering/engineering/mechanical-engineering",
+              "note": "Full substantive research-strength menu read: thermal/energy/shipdynamics/biomedical; no Ops/MS/IE field.",
+              "checkedAt": "2026-10-25",
+              "outcome": "read",
+              "accessMethod": "Individually opened official full web HTML/PDF via authorized fallback"
+            },
+            {
+              "url": "https://www.utas.edu.au/research/sciences-engineering/engineering/electrical-engineering",
+              "note": "Full substantive electrical field menu read, power/control/computing; network operation not standalone OperationsResearch title.",
+              "checkedAt": "2026-10-25",
+              "outcome": "read",
+              "accessMethod": "Individually opened official full web HTML/PDF via authorized fallback"
+            },
+            {
+              "url": "https://www.utas.edu.au/natural-sciences",
+              "note": "Complete five-discipline and centre menu read, teaching/research undergraduate through PhD.",
+              "checkedAt": "2026-10-25",
+              "outcome": "read",
+              "accessMethod": "Individually opened official full web HTML/PDF via authorized fallback"
+            },
+            {
+              "url": "https://www.utas.edu.au/natural-sciences/mathematics",
+              "note": "Full subject body read; explicit research supervision in decision science(operations research), but separate undergraduate Statistics/DecisionScience major not promoted to PhD concentration.",
+              "checkedAt": "2026-10-25",
+              "outcome": "read",
+              "accessMethod": "Individually opened official full web HTML/PDF via authorized fallback"
+            },
+            {
+              "url": "https://www.utas.edu.au/natural-sciences/mathematics/research",
+              "note": "Full named research-specialization menu read including OperationsResearch(DecisionScience)andStochasticModelling. Postgraduate-project link and researchers interests shown; exact parent doctorate/field linkage pending.",
+              "checkedAt": "2026-10-25",
+              "outcome": "read",
+              "accessMethod": "Individually opened official full web HTML/PDF via authorized fallback"
+            },
+            {
+              "url": "https://www.utas.edu.au/amc",
+              "note": "Full AMC institutional body read, specialist institute of UTas, not separately counted university.",
+              "checkedAt": "2026-10-25",
+              "outcome": "read",
+              "accessMethod": "Individually opened official full web HTML/PDF via authorized fallback"
+            },
+            {
+              "url": "https://www.utas.edu.au/amc/research",
+              "note": "Full three cross-disciplinary themes and honours/masters/PhD opportunity pathway read. Ocean/coastal maritime operations expertise retained, not independently counted OR field.",
+              "checkedAt": "2026-10-25",
+              "outcome": "read",
+              "accessMethod": "Individually opened official full web HTML/PDF via authorized fallback"
+            },
+            {
+              "url": "https://www.utas.edu.au/amc/study",
+              "note": "Full vocational/undergraduate/postgraduate menu read. MaritimeOperations explicitly vocational; separate research-degrees link to university.",
+              "checkedAt": "2026-10-25",
+              "outcome": "read",
+              "accessMethod": "Individually opened official full web HTML/PDF via authorized fallback"
+            },
+            {
+              "url": "https://www.utas.edu.au/__data/assets/pdf_file/0012/1899336/HDR-2026-Tuition-Fees.pdf",
+              "note": "Full two-page current2026HDR award-title list read; exact MathematicalSciencesPhD S9T, MarineCraftOperationPhD J9R, ManagementCommercePhD J9Q shown. Fees not research-field proof; no prices retained.",
+              "checkedAt": "2026-10-25",
+              "outcome": "read",
+              "accessMethod": "Individually opened official full web HTML/PDF via authorized fallback"
+            },
+            {
+              "url": "https://www.utas.edu.au/about/academic-structure/information-and-communication-technology",
+              "checkedAt": "2026-10-25",
+              "outcome": "blocked",
+              "note": "Actual current central academic-structure link timed out; no content read and no retry."
             }
           ],
           "limitations": [
-            "No title-qualified doctoral programme verified from these institution-wide pages; this is a partial review, not a negative university-wide census."
+            "No new eligible programme until actual doctorate-to-Operations field/host linkage established. Source observations can support follow-up without inventing formal concentration.",
+            "Mathematics research-supervision/field menu is concrete lead, distinct from generic method course; exact parentPhD mapping pending.",
+            "MarineCraftOperation is exact singular current degree wording; not silently relabelled OperationsResearch or Management. Vocational MaritimeOperations distinct from researchdoctorate.",
+            "ICT actual endpoint timeout retained; no repeated bypass. Current project catalogue received initial excerpts and targeted text checks only in this follow-up, not a complete3500line fresh review.",
+            "Earlier current source record and per-fact dates preserved; no source import/person degree edits."
           ],
           "coverageComplete": false
         }
