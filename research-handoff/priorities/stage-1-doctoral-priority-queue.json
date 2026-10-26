@@ -6,9 +6,9 @@
   "facultyWithoutNamedPhdInstitution": 24,
   "distinctReportedInstitutionLabels": 369,
   "rankedInstitutionLeads": 355,
-  "matchedLeads": 350,
-  "unresolvedLeads": 5,
-  "withVerifiedCurrentRoutes": 226,
+  "matchedLeads": 352,
+  "unresolvedLeads": 3,
+  "withVerifiedCurrentRoutes": 229,
   "withCompletedCurrentBranchScope": 194,
   "records": [
     {
@@ -5312,26 +5312,30 @@
         },
         {
           "status": "verified",
-          "checkedAt": "2026-10-21",
+          "checkedAt": "2026-10-25",
           "programmeIds": [
+            "erasmus-university-rotterdam--econometrics-management-science-phd",
             "erasmus-university-rotterdam--management-economics-bplis"
           ],
           "branches": [
             {
               "branch": "business",
-              "reviewState": "partial",
-              "conclusion": "ERIM current doctoral programme and explicitly relevant BPLIS specialisation verified. RSM TOM department and Economics Econometric Institute/OR group read. Additional Economics OR doctoral pathway mapping still unresolved; revisit returned individual503 source error.",
+              "reviewState": "checked",
+              "conclusion": "Current ESE PhD programme lists all five doctoral study fields; Econometrics and Management Science is explicit. ERIM BPLIS specialization and RSM TOM department previously checked. The ESE research programme page connects the Management Science theme to the Econometric Institute; no additional relevant named current business field remains in the opened bounded inventory.",
               "sourceUrls": [
                 "https://www.rsm.nl/faculty-research/departments/technology-and-operations-management/",
                 "https://www.rsm.nl/faculty-research/phd-in-management/full-time-phd-programme/",
                 "https://www.eur.nl/en/ese/department-econometrics/about-econometric-institute",
-                "https://www.eur.nl/en/ese/research/phd"
+                "https://www.eur.nl/en/ese/research/phd",
+                "https://www.eur.nl/en/ese/research/phd/phd-programme",
+                "https://www.eur.nl/en/ese/research/research-programmes/econometrics-and-management-science",
+                "https://www.eur.nl/en/ese/research/phd/phd-programme/erasmus-phd-programmes-management-and-economics/full-time"
               ]
             },
             {
               "branch": "engineering",
               "reviewState": "not-present",
-              "conclusion": "Full current university faculty/institute inventory checked; no standalone engineering faculty. Relevant technical Operations Research resides in Economics Econometric Institute, whose additional doctoral pathway mapping remains unresolved.",
+              "conclusion": "Full current university faculty/institute inventory checked; no standalone engineering faculty. The Econometric Institute / Operations Research unit sits within ESE and is linked to the named ESE doctoral field Econometrics and Management Science.",
               "sourceUrls": [
                 "https://www.eur.nl/en/about-university/organisation"
               ]
@@ -5397,14 +5401,38 @@
               "checkedAt": "2026-10-21",
               "outcome": "blocked",
               "note": "Later parent-requested follow-up in Chrome returned This site cannot be reached / ERR_CONNECTION_TIMED_OUT. Earlier read/503 observations preserved; no repeated reload or access bypass attempted."
+            },
+            {
+              "url": "https://www.eur.nl/en/ese/research/phd/phd-programme",
+              "note": "Current official ESE PhD page opened; all five named fields read, including Econometrics and Management Science.",
+              "checkedAt": "2026-10-25",
+              "outcome": "read"
+            },
+            {
+              "url": "https://www.eur.nl/en/ese/research/research-programmes/econometrics-and-management-science",
+              "note": "Current official ESE research-programme page opened; Econometric Institute programme has Econometrics and Management Science themes and names operations research within its remit. Research-programme page alone not treated as an award.",
+              "checkedAt": "2026-10-25",
+              "outcome": "read"
+            },
+            {
+              "url": "https://www.eur.nl/en/ese/research/phd/phd-programme/erasmus-phd-programmes-management-and-economics/full-time",
+              "note": "Current official ERIM full-time programme page opened; confirms ESE PhD degree and relationship to ERIM hosted programme.",
+              "checkedAt": "2026-10-25",
+              "outcome": "read"
+            },
+            {
+              "url": "https://www.eur.nl/en/ese/research/phd/phd-programme",
+              "checkedAt": "2026-10-26",
+              "outcome": "read",
+              "note": "Integrator read the full current ESE PhD inventory: five formal fields, including Econometrics and Management Science. No separately titled award or independent student population inferred."
             }
           ],
           "limitations": [
-            "Current engineering/technical inventory and additional possible Operations Research doctoral pathway not fully resolved.",
-            "Economics OR doctoral overview revisit returned503; full faculty scope now checked, but possible additional OR doctoral route still requires exact award/programme evidence.",
-            "Later Economics PhD follow-up timed out at official university server; exact additional OR doctoral pathway still unknown."
+            "The current named-field doctoral inventory is bounded complete from official ESE PhD, ERIM specialization and university faculty pages. The two registered routes are named fields/pathways and may share an ESE/ERIM PhD population; do not sum them as distinct students or awards. Earlier 503 and timeout attempts remain in source history.",
+            "Integrator read the current official ESE PhD field inventory on 26 October 2026 and confirmed its explicit Econometrics and Management Science field. Existing BPLIS programme facts are preserved separately.",
+            "Alias refers to the same accepted Erasmus University Rotterdam entity; the ESE/ERIM named pathways may share a doctoral population and must not be summed as distinct awards or students. Earlier source failures remain history."
           ],
-          "coverageComplete": false
+          "coverageComplete": true
         }
       ],
       "verifiedCurrentProgrammeIds": [
@@ -31511,11 +31539,15 @@
       "nextStep": "Current scoped doctoral inventory checked; retain evidence and historical limitations"
     },
     {
-      "id": "unresolved:university of york",
+      "id": "university-of-york",
       "name": "University of York",
-      "sourceUniversityIds": [],
-      "candidateUniversityIds": [],
-      "identityMatch": "unresolved discovery label",
+      "sourceUniversityIds": [
+        "university-of-york"
+      ],
+      "candidateUniversityIds": [
+        "university-of-york"
+      ],
+      "identityMatch": "accepted university/entity name",
       "reportedFacultyCount": 2,
       "reportedNames": [
         "University of York"
@@ -31525,11 +31557,69 @@
         "omlist-4063431edb666f51"
       ],
       "sourceUrls": [],
-      "owners": [],
-      "doctoralObservations": [],
-      "verifiedCurrentProgrammeIds": [],
+      "owners": [
+        "integrator"
+      ],
+      "doctoralObservations": [
+        {
+          "status": "verified",
+          "checkedAt": "2026-10-26",
+          "programmeIds": [
+            "university-of-york--management-phd-operations-management-research-area"
+          ],
+          "branches": [
+            {
+              "branch": "business",
+              "reviewState": "checked",
+              "conclusion": "Full current School for Business and Society Study menu read 26 October: it lists one Management PhD and one Social Policy/Social Work PhD/MPhil as school research awards. The Management PhD explicitly names Operations management as doctoral research area; the other named school research award has no matching formal title. Business branch bounded for current named-title register.",
+              "sourceUrls": [
+                "https://www.york.ac.uk/business-society/study/phd-management/",
+                "https://www.york.ac.uk/business-society/research/operations-strategy-governance/",
+                "https://www.york.ac.uk/business-society/study/"
+              ]
+            },
+            {
+              "branch": "engineering",
+              "reviewState": "partial",
+              "conclusion": "Current relevant engineering, Mathematics and Computer Science doctoral named-field inventories remain unread; no institution-wide negative asserted.",
+              "sourceUrls": [
+                "https://www.york.ac.uk/business-society/study/phd-management/"
+              ]
+            }
+          ],
+          "sources": [
+            {
+              "url": "https://www.york.ac.uk/business-society/study/phd-management/",
+              "checkedAt": "2026-10-26",
+              "outcome": "read",
+              "note": "Full current Management PhD page opened in normal Chrome after ordinary web-reader 403; entire doctoral research-area list, research/thesis requirements and school/provider identity read."
+            },
+            {
+              "url": "https://www.york.ac.uk/business-society/research/operations-strategy-governance/",
+              "checkedAt": "2026-10-26",
+              "outcome": "read",
+              "note": "Full School for Business and Society Operations, strategy and governance group page opened in normal Chrome; exact group identity and operations research remit read."
+            },
+            {
+              "url": "https://www.york.ac.uk/business-society/study/",
+              "checkedAt": "2026-10-26",
+              "outcome": "read",
+              "note": "Full current School for Business and Society Study menu opened in Chrome: all subject blocks and degree levels read; Management PhD and Social Policy/Social Work PhD/MPhil are complete listed school research degrees."
+            }
+          ],
+          "limitations": [
+            "Business school current research-degree menu complete for named-title scope. Wider York mathematics/computing/engineering doctoral areas remain incomplete; no institution-wide coverage claim.",
+            "Earlier web-reader 403s superseded by normal Chrome full reads without any access challenge.",
+            "OM List reported 2017/2018 individual doctorates remain discovery only."
+          ],
+          "coverageComplete": false
+        }
+      ],
+      "verifiedCurrentProgrammeIds": [
+        "university-of-york--management-phd-operations-management-research-area"
+      ],
       "branchCoverageComplete": false,
-      "nextStep": "Resolve official identity and add/associate discovery record without speculative merge"
+      "nextStep": "Verify official current relevant doctoral routes across business and engineering; record branch gaps"
     },
     {
       "id": "vrije-universiteit-amsterdam",
@@ -37093,11 +37183,15 @@
       "nextStep": "Current scoped doctoral inventory checked; retain evidence and historical limitations"
     },
     {
-      "id": "unresolved:manchester metropolitan university",
+      "id": "manchester-metropolitan-university",
       "name": "Manchester Metropolitan University",
-      "sourceUniversityIds": [],
-      "candidateUniversityIds": [],
-      "identityMatch": "unresolved discovery label",
+      "sourceUniversityIds": [
+        "manchester-metropolitan-university"
+      ],
+      "candidateUniversityIds": [
+        "manchester-metropolitan-university"
+      ],
+      "identityMatch": "accepted university/entity name",
       "reportedFacultyCount": 1,
       "reportedNames": [
         "Manchester Metropolitan University"
@@ -37106,11 +37200,62 @@
         "omlist-f3b9cc5686d59dfc"
       ],
       "sourceUrls": [],
-      "owners": [],
-      "doctoralObservations": [],
-      "verifiedCurrentProgrammeIds": [],
+      "owners": [
+        "integrator"
+      ],
+      "doctoralObservations": [
+        {
+          "status": "verified",
+          "checkedAt": "2026-10-26",
+          "programmeIds": [
+            "manchester-metropolitan-university--operations-technology-events-hospitality-management-phd"
+          ],
+          "branches": [
+            {
+              "branch": "business",
+              "reviewState": "partial",
+              "conclusion": "Official Operations, Technology, Events and Hospitality Management subject page establishes current PhD and named Operations research area, hosted by formal matching department. Other MMU Business School doctoral subject pages remain unread.",
+              "sourceUrls": [
+                "https://www.mmu.ac.uk/study/postgraduate/research-study/subject/operations-technology-events-and-hospitality-management",
+                "https://www.mmu.ac.uk/about-us/faculties/business-law/business-school/staff/operations-technology-events-hospitality-management"
+              ]
+            },
+            {
+              "branch": "engineering",
+              "reviewState": "partial",
+              "conclusion": "University technical doctoral fields outside the Business School have not been inventoried; no institution-wide exclusion.",
+              "sourceUrls": [
+                "https://www.mmu.ac.uk/study/postgraduate/research-study/subject/operations-technology-events-and-hospitality-management"
+              ]
+            }
+          ],
+          "sources": [
+            {
+              "url": "https://www.mmu.ac.uk/study/postgraduate/research-study/subject/operations-technology-events-and-hospitality-management",
+              "checkedAt": "2026-10-26",
+              "outcome": "read",
+              "note": "Full official subject page opened in Chrome, PhD qualification and all visible areas including expanded Operations/supply chain/project management accordion read."
+            },
+            {
+              "url": "https://www.mmu.ac.uk/about-us/faculties/business-law/business-school/staff/operations-technology-events-hospitality-management",
+              "checkedAt": "2026-10-26",
+              "outcome": "read",
+              "note": "Full official business-school department staff page opened in Chrome, exact department title and operations staff subsection read."
+            }
+          ],
+          "limitations": [
+            "One verified current named Operations PhD subject route; full other business/technical doctoral scope incomplete.",
+            "Prior web-reader 403s superseded for these URLs by ordinary Chrome complete reads; no access challenge encountered.",
+            "Imported individual reported 2018 doctorate not verified."
+          ],
+          "coverageComplete": false
+        }
+      ],
+      "verifiedCurrentProgrammeIds": [
+        "manchester-metropolitan-university--operations-technology-events-hospitality-management-phd"
+      ],
       "branchCoverageComplete": false,
-      "nextStep": "Resolve official identity and add/associate discovery record without speculative merge"
+      "nextStep": "Verify official current relevant doctoral routes across business and engineering; record branch gaps"
     },
     {
       "id": "mazandaran-university-of-science-and-technology",
@@ -37753,25 +37898,28 @@
       ],
       "doctoralObservations": [
         {
-          "status": "partial",
-          "checkedAt": "2026-10-25",
-          "programmeIds": [],
+          "status": "verified",
+          "checkedAt": "2026-10-26",
+          "programmeIds": [
+            "national-and-kapodistrian-university-of-athens--mathematics-doctoral-diploma-statistics-operations-research"
+          ],
           "branches": [
             {
               "branch": "business",
               "reviewState": "partial",
-              "conclusion": "Official university is a research doctorate provider, but an exact business doctoral programme/department title inventory was not fully read. Search hits about courses and generic management science prerequisites are not qualifying doctoral titles.",
+              "conclusion": "Current official Economics and Business Administration departments identified, but full named doctoral-field inventory remains unread; no business-route conclusion.",
               "sourceUrls": [
-                "https://en.uoa.gr/",
-                "https://en.eds.uoa.gr/studies/doctoral_studies"
+                "https://en.uoa.gr/schools_and_departments/school_of_economics_political_sciences"
               ]
             },
             {
               "branch": "engineering",
               "reviewState": "partial",
-              "conclusion": "Exact formal current quantitative/technical doctoral named-field inventory remains unread; no Operations, Management Science or Industrial Engineering route claimed. Distinct National Technical University of Athens register must not be merged here.",
+              "conclusion": "Current Mathematics doctorate and official Statistics and Operations Research doctoral-candidate section establish one named OR research setting. Informatics and other technical formal doctoral field inventories remain incomplete; NKUA is distinct from NTUA.",
               "sourceUrls": [
-                "https://en.uoa.gr/"
+                "https://en.math.uoa.gr/doctoral_studies",
+                "https://en.math.uoa.gr/doctoral_studies/phd_candidates/",
+                "https://en.math.uoa.gr/the_department/organization_and_administration/sections"
               ]
             }
           ],
@@ -37799,16 +37947,49 @@
               "checkedAt": "2026-10-25",
               "outcome": "blocked",
               "note": "Direct full open timed out; search extract about generic management science prerequisites was not used as qualification evidence."
+            },
+            {
+              "url": "https://en.math.uoa.gr/doctoral_studies",
+              "checkedAt": "2026-10-26",
+              "outcome": "read",
+              "note": "Full official Mathematics doctoral page: Doctoral Diploma from original scientific research."
+            },
+            {
+              "url": "https://en.math.uoa.gr/doctoral_studies/phd_candidates/",
+              "checkedAt": "2026-10-26",
+              "outcome": "read",
+              "note": "Full list groups active PhD candidates under Section of Statistics and Operations Research; individual names used only to establish active doctoral area."
+            },
+            {
+              "url": "https://en.math.uoa.gr/the_department/organization_and_administration/sections",
+              "checkedAt": "2026-10-26",
+              "outcome": "read",
+              "note": "Full five-section Mathematics structure, including exact Statistics and Operations Research section."
+            },
+            {
+              "url": "https://en.math.uoa.gr/graduate_studies",
+              "checkedAt": "2026-10-26",
+              "outcome": "read",
+              "note": "Full graduate page separately lists Statistics and Operations Research as an MSc concentration only; not copied as formal PhD specialization."
+            },
+            {
+              "url": "https://en.uoa.gr/schools_and_departments/school_of_economics_political_sciences",
+              "checkedAt": "2026-10-26",
+              "outcome": "read",
+              "note": "Full eight-department business/economics school inventory, but detailed doctoral fields not yet inventoried."
             }
           ],
           "limitations": [
-            "Source-frame identity can be reconciled now, but current exact-title doctoral scope is incomplete; no verified qualifying route added.",
-            "Do not conflate NKUA with separate National Technical University of Athens or infer a 2014 person degree field."
+            "This supersedes the prior no-route state for NKUA with one officially evidenced Mathematics doctoral setting, but does not complete business or wider technical doctoral scope.",
+            "Section type remains subordinate to Department of Mathematics; do not render as independent degree or full department.",
+            "Imported individual reported 2014 degree remains unverified separately."
           ],
           "coverageComplete": false
         }
       ],
-      "verifiedCurrentProgrammeIds": [],
+      "verifiedCurrentProgrammeIds": [
+        "national-and-kapodistrian-university-of-athens--mathematics-doctoral-diploma-statistics-operations-research"
+      ],
       "branchCoverageComplete": false,
       "nextStep": "Verify official current relevant doctoral routes across business and engineering; record branch gaps"
     },

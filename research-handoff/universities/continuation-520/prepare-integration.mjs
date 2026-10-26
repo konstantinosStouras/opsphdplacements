@@ -1,0 +1,12 @@
+import fs from 'node:fs';import crypto from 'node:crypto';import {execFileSync} from 'node:child_process';
+const root='research-handoff/universities/',dir=root+'continuation-520',read=p=>JSON.parse(fs.readFileSync(p)),write=(p,v)=>fs.writeFileSync(p,JSON.stringify(v,null,2)+'\n'),reviews=new Map(read('data/university-reviews.json').records.map(r=>[r.id,r]));
+const union=(a,b)=>[...new Map([...a,...b].map(s=>[JSON.stringify(s),s])).values()],list=(n,suffix,shard)=>fs.readdirSync(root+'continuation-'+n+'/shard-'+shard).filter(f=>f.endsWith(suffix)).map(f=>root+'continuation-'+n+'/shard-'+shard+'/'+f);
+const originalProgrammes=[427,431,430].flatMap(n=>list(n,'.doctoral.json','a')),programmes=[];
+for(const path of originalProgrammes){const p=read(path);p.sources=union(reviews.get(p.universityId)?.doctoralReview?.sources||[],p.sources);const out=dir+'/'+p.universityId+'-integration.json';programmes.push(out);write(out,p);}
+const originals=[...[426,427,428,429,430].flatMap(n=>list(n,'.unit.json','a')),...list(338,'.unit.json','b'),root+'continuation-347/shard-c/toronto.statistical-sciences-bounded-unit-correction.json'];
+const unitInputs=originals.map(path=>{const p=read(path);p.sources=union(reviews.get(p.id)?.sources||[],p.sources);const out=dir+'/'+p.id+'-unit-integration.json';write(out,p);return out;});
+const assertionInputs=[...list(347,'source-assertions.json','c'),...list(338,'assertion-proposals.json','b')],sources=[429,430].flatMap(n=>list(n,'.source-addition.json','a')),sourceCatalogues=[429,430].flatMap(n=>list(n,'.source-catalogue.json','a')),aliasAudit=root+'continuation-351/shard-c/all-accepted-alias-doctoral-mirror-audit.json';
+const m={baseCommit:execFileSync('git',['rev-parse','HEAD'],{encoding:'utf8'}).trim(),sources,sourceCatalogues,unitInputs,programmes,scopes:[],assertionInputs,originalProgrammes,originalUnits:originals,aliasAudit};
+m.frozenInputs=[...sources,...sourceCatalogues,...unitInputs,...programmes,...assertionInputs,...originalProgrammes,...originals,aliasAudit].map(path=>({path,sha256:crypto.createHash('sha256').update(fs.readFileSync(path)).digest('hex')}));write(dir+'/integration-manifest.json',m);
+for(const f of ['apply-phase.mjs','apply-assertions.mjs'])fs.writeFileSync(dir+'/'+f,fs.readFileSync(root+'continuation-510/'+f,'utf8').replaceAll('continuation-510','continuation-520'));
+console.log({sources:sources.length,units:unitInputs.length,newProgrammes:programmes.length,assertions:assertionInputs.reduce((n,p)=>n+read(p).records.length,0),aliasMirrors:read(aliasAudit).records.length});
