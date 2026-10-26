@@ -2,7 +2,7 @@
 
 This is an alphabetical planning snapshot from the published university frame and the OM List reported-PhD-institution queue. It is **not** a list of confirmed PhD providers. Some institutions already have frozen official-source proposals awaiting integrator review and publication; they remain here until the public register records the outcome. A missing or partial doctoral review never means that no qualifying doctorate exists.
 
-The published 835 university/campus source records group into 740 display identities; 267 identities have an incomplete unit review, doctoral branch check or title/host adjudication. Of the source records, 214 have incomplete unit reviews and 218 lack a complete current doctoral branch scope. 0 programme title/host decisions remain pending and are withheld from qualifying counts. The separate OM List queue has 3 reported institution labels still needing identity reconciliation. These lists overlap in real institutions but are not merged without accepted evidence. Source-unit assertions and live directory/posting coverage are additional Stage 1 gates.
+The published 835 university/campus source records group into 740 display identities; 267 identities have an incomplete unit review, doctoral branch check or title/host adjudication. Of the source records, 214 have incomplete unit reviews and 216 lack a complete current doctoral branch scope. 0 programme title/host decisions remain pending and are withheld from qualifying counts. The separate OM List queue has 3 reported institution labels still needing identity reconciliation. These lists overlap in real institutions but are not merged without accepted evidence. Source-unit assertions and live directory/posting coverage are additional Stage 1 gates.
 
 ## In the university/campus discovery frame
 
@@ -253,7 +253,7 @@ The published 835 university/campus source records group into 740 display identi
 | 243 | University of Virginia | doctoral branch scope |
 | 244 | University of Waikato | unit/identity: partial; doctoral branch scope |
 | 245 | University of Wales | unit/identity: partial; doctoral branch scope |
-| 246 | University of Warwick | unit/identity: partial; doctoral branch scope |
+| 246 | University of Warwick | unit/identity: partial |
 | 247 | University of Westminster | unit/identity: partial; doctoral branch scope |
 | 248 | University of Windsor | doctoral branch scope |
 | 249 | University of York | unit/identity: partial; doctoral branch scope |

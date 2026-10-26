@@ -1,0 +1,12 @@
+import fs from 'node:fs';import assert from 'node:assert/strict';import {execFileSync} from 'node:child_process';import {pathToFileURL} from 'node:url';import {resolve} from 'node:path';
+import * as after from '../../../assets/program-model.js';
+const manifest=JSON.parse(fs.readFileSync('research-handoff/universities/continuation-590/integration-manifest.json'));
+const code=execFileSync('git',['show',manifest.baseCommit+':assets/program-model.js'],{encoding:'utf8'}).replace("'./model.js'",JSON.stringify(pathToFileURL(resolve('assets/model.js')).href));
+const before=await import('data:text/javascript;base64,'+Buffer.from(code).toString('base64'));
+const rows=JSON.parse(fs.readFileSync('data/doctoral-programs.json')).records,units=JSON.parse(fs.readFileSync('data/university-reviews.json')).records.flatMap(r=>r.units);
+const added=rows.filter(p=>after.isCurrentPhdProgramme(p)&&after.isNamedOperationsProgramme(p,units)&&!before.isNamedOperationsProgramme(p,units));
+assert.equal(added.length,1);assert.equal(added[0].universityId,'fgv-eaesp');assert.match(added[0].specialization,/Pesquisa Operacional/);
+assert.equal(rows.filter(p=>before.isNamedOperationsProgramme(p,units)&&!after.isNamedOperationsProgramme(p,units)).length,0);
+const newUnits=[...new Map(units.filter(u=>after.hasNamedOperationsScope(u.name)&&!before.hasNamedOperationsScope(u.name)).map(u=>[u.id,u.name])).entries()];
+assert.deepEqual(newUnits.map(([id])=>id),['fgv-eaesp--administracao-producao-operacoes']);
+console.log({newlyVisibleProgramme:added.map(p=>p.id),newlyVisibleUnits:newUnits});

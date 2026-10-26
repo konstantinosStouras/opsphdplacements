@@ -65,6 +65,10 @@ test('reviewed descriptive research topics cannot re-enter the named-title regis
  assert(hasNamedOperationsScope('Gestión de Operaciones (GOP)'));
  assert(!hasNamedOperationsScope('Gestión de la Información'));
 
+ assert(hasNamedOperationsScope('Departamento de Administração da Produção e Operações'));
+ assert(hasNamedOperationsScope('Otimização Estocástica e Pesquisa Operacional'));
+ assert(!hasNamedOperationsScope('Tecnologia Operacional'));
+ assert(!hasNamedOperationsScope('Cooperações internacionais'));
  assert(!hasNamedOperationsScope('Engenharia de Produção'));
  assert(hasNamedOperationsScope('Διοίκησης Παραγωγής και επιχειρησιακών λειτουργιών'));
  assert(!hasNamedOperationsScope('Σχολή Μηχανολόγων Μηχανικών'));
