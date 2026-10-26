@@ -2,7 +2,7 @@
 
 Public website: https://www.stouras.com/opsphdplacements/
 
-Stage 1 integration checkpoint (26 October 2026): 407 qualifying current doctoral programmes and named fields at 303 institutions. Of 835 source records, 624 unit reviews are complete, 206 partial and five blocked; 622 of 815 doctoral observations have complete current branch checks. There are 264 grouped incomplete identities and three unmatched OM List reported-degree labels. Manchester's current academic-unit inventory and business doctoral scope are reviewed; wider technical doctoral fields remain partial. Stage 1 incomplete; Stages 2–4 held. See [current handoff](research-handoff/universities/continuation-650/README.md).
+Stage 1 integration checkpoint (26 October 2026): 408 qualifying current doctoral programmes and named fields at 304 institutions. Of 835 source records, 624 unit reviews are complete, 206 partial and five blocked; 622 of 815 doctoral observations have complete current branch checks. There are 264 grouped incomplete identities and three unmatched OM List reported-degree labels. Manchester's existing doctorate restored after dated academic-division adjudication; ETH's Institute for Operations Research added without another degree. Stage 1 incomplete; Stages 2–4 held. See [current handoff](research-handoff/universities/continuation-660/README.md).
 
 An independent, static research directory for Operations Research, Operations Management and Industrial Engineering. The visual organization is inspired by Econ PhD Placements; all application code is original.
 
