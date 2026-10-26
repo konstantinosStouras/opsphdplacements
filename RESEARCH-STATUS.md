@@ -21,8 +21,8 @@ Generated from committed-format public datasets by `node scripts/update-research
 | Listed names already in the people database | 406 |
 | LinkedIn profiles with published history observations | 6 |
 | of which all accessible Experience entries read | 6 |
-| University directory records with completed official-source reviews | 609 |
-| University directory records partially reviewed | 219 |
+| University directory records with completed official-source reviews | 612 |
+| University directory records partially reviewed | 216 |
 | University directory records blocked by source access | 5 |
 | University directory records awaiting review | 0 |
 | Discovery source records with doctoral observations | 812 |

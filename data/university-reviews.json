@@ -4,8 +4,8 @@
     "definition": "Individual official-source reviews of university names and operations units. The original directory remains in universities.json. Reviewed describes the stated source scope, not an exhaustive current or historical census. Source notes identify the access method where recorded.",
     "sourceRecords": 833,
     "attempted": 833,
-    "reviewed": 609,
-    "partial": 219,
+    "reviewed": 612,
+    "partial": 216,
     "blocked": 5,
     "pending": 0
   },
@@ -3686,10 +3686,10 @@
     },
     {
       "id": "aristotle-university-of-thessaloniki",
-      "status": "partial",
+      "status": "reviewed",
       "canonicalName": "Aristotle University of Thessaloniki",
-      "universitySourceUrl": "https://www.auth.gr/en/school/econ-en/",
-      "checkedAt": "2026-10-25",
+      "universitySourceUrl": "https://www.auth.gr/academicstructure/",
+      "checkedAt": "2026-10-26",
       "reviewer": "Codex via opened official web pages",
       "duplicateOf": null,
       "units": [],
@@ -3725,12 +3725,24 @@
           "checkedAt": "2026-10-25",
           "outcome": "read",
           "note": "Current Mechanical Engineering school has Industrial Management department, which is outside exact qualifying unit titles."
+        },
+        {
+          "url": "https://www.auth.gr/academicstructure/",
+          "checkedAt": "2026-10-26",
+          "outcome": "read",
+          "note": "Full current Greek academic hierarchy listing all faculties, schools, and sectors read; no Operations Research, Management Science or Industrial Engineering formal unit title; Mechanical Engineering sector is Industrial Management."
+        },
+        {
+          "url": "https://www.auth.gr/en/faculties-en/",
+          "checkedAt": "2026-10-26",
+          "outcome": "read",
+          "note": "Full current English university faculty/school list read; Economics, Mathematics/Informatics and Engineering schools have no exact qualifying school title."
         }
       ],
       "limitations": [
-        "One named doctoral research field qualifies, while neither the School of Economics nor Industrial Management department becomes an exact-title qualifying unit.",
-        "Full business and technical source-unit identity reconciliation is incomplete; status remains partial.",
-        "One imported faculty degree mention remains discovery only."
+        "Current full official academic structure and faculty/school lists read; no formal unit with exact Operations, Management Science or Industrial Engineering title. The Mechanical Engineering sector is Industrial Management, which is excluded by the owner’s strict rule.",
+        "Verified Production and Operations Management named doctoral research field in Economics remains a qualifying programme independently of unit title. Other doctoral fields are separate incomplete scope.",
+        "One imported OM List faculty degree mention remains discovery only."
       ],
       "doctoralReview": {
         "status": "verified",
@@ -3791,7 +3803,7 @@
         "coverageComplete": false
       },
       "addedAt": "2026-10-25T19:45:59Z",
-      "updatedAt": "2026-10-25T20:05:21Z"
+      "updatedAt": "2026-10-26T00:49:15Z"
     },
     {
       "id": "arizona-state-university",
@@ -6228,11 +6240,24 @@
       "id": "beijing-jiaotong-university",
       "status": "partial",
       "canonicalName": "Beijing Jiaotong University",
-      "universitySourceUrl": "https://en-sem.bjtu.edu.cn/page-en_Phd.html",
-      "checkedAt": "2026-10-25",
+      "universitySourceUrl": "https://enmece.bjtu.edu.cn/item/3266.html",
+      "checkedAt": "2026-10-26",
       "reviewer": "Codex via opened official web pages",
       "duplicateOf": null,
-      "units": [],
+      "units": [
+        {
+          "id": "beijing-jiaotong-university--industrial-engineering-department",
+          "name": "Department of Industrial Engineering",
+          "school": "School of Mechanical, Electronic and Control Engineering",
+          "type": "department",
+          "fields": [
+            "industrial-engineering"
+          ],
+          "sourceUrl": "https://enmece.bjtu.edu.cn/item/3266.html",
+          "checkedAt": "2026-10-26",
+          "evidence": "Official English school overview lists Department of Industrial Engineering among its formal departments (data as of 31 December 2024). Official 2024 school degree authorization inventory identifies Industrial Engineering only at master level, not a separate Industrial Engineering PhD. Institution has a distinct qualifying Management Science PhD in the School of Economics and Management; no IE doctoral route inferred from unit name."
+        }
+      ],
       "decisions": [
         {
           "sourceDepartmentId": "beijing-jiaotong-university--om-list-beijing-jiaotong-university-reported-doctorate-two-profiles-reported-phd-institution",
@@ -6247,15 +6272,28 @@
           "checkedAt": "2026-10-25",
           "outcome": "read",
           "note": "Opened full official School of Economics and Management doctoral page; its department navigation does not name a Management Science/Operations/IE department."
+        },
+        {
+          "url": "https://enmece.bjtu.edu.cn/item/3266.html",
+          "checkedAt": "2026-10-26",
+          "outcome": "read",
+          "note": "Full official English school overview identifies Industrial Engineering as a formal department, data stated as at 31 December 2024."
+        },
+        {
+          "url": "https://mece.bjtu.edu.cn/cms/item/3090.html",
+          "checkedAt": "2026-10-26",
+          "outcome": "read",
+          "note": "Full 2024 school doctoral/master authorization table: Industrial Engineering code 0802Z1 is master-level; Mechanical and Vehicle Operation doctorates are other-engineering titles."
         }
       ],
       "limitations": [
-        "The qualifying title is the doctoral major Management Science, not a currently verified department name.",
-        "University-wide engineering unit inventory remains open."
+        "Industrial Engineering is a formally named department in an official English school inventory (data as of 2024), but its Industrial Engineering degree authorization is master-level; do not infer an IE PhD hosted here. Existing School of Economics and Management Management Science PhD is a separate qualifying route.",
+        "Current wider university engineering unit/doctoral field inventory remains incomplete; official school list names additional schools not fully screened.",
+        "Two imported OM List person doctorate reports are discovery only."
       ],
       "doctoralReview": {
         "status": "verified",
-        "checkedAt": "2026-10-25",
+        "checkedAt": "2026-10-26",
         "programmeIds": [
           "beijing-jiaotong-university--management-science-phd"
         ],
@@ -6271,9 +6309,10 @@
           {
             "branch": "engineering",
             "reviewState": "partial",
-            "conclusion": "Other university engineering PhD specifications and units have not been inventoried.",
+            "conclusion": "Official School of Mechanical, Electronic and Control Engineering 2024 authorization table read. Industrial Engineering (0802Z1) is a master-level secondary discipline, not an Industrial Engineering doctorate; listed doctorate awards are Mechanical Engineering, Vehicle Operation Engineering, and professional Mechanical Engineering, none exact-title Ops/MS/IE. Other university engineering schools and doctoral fields remain unread.",
             "sourceUrls": [
-              "https://en-sem.bjtu.edu.cn/page-en_Phd.html"
+              "https://mece.bjtu.edu.cn/cms/item/3090.html",
+              "https://enmece.bjtu.edu.cn/item/3266.html"
             ]
           }
         ],
@@ -6283,17 +6322,29 @@
             "checkedAt": "2026-10-25",
             "outcome": "read",
             "note": "Full official School of Economics and Management PhD page, including degree inventory and department navigation."
+          },
+          {
+            "url": "https://mece.bjtu.edu.cn/cms/item/3090.html",
+            "checkedAt": "2026-10-26",
+            "outcome": "read",
+            "note": "Full official 2024 school degree-authorisation table distinguishes IE master-level authorization from unrelated Mechanical/Vehicle doctorate titles."
+          },
+          {
+            "url": "https://enmece.bjtu.edu.cn/item/3266.html",
+            "checkedAt": "2026-10-26",
+            "outcome": "read",
+            "note": "Full official school overview identifies formal IE department and broad doctoral degree levels; does not specify IE doctorate."
           }
         ],
         "limitations": [
-          "Current school page does not establish a named qualifying department, so unit list is empty.",
-          "Engineering branch and other university doctoral titles remain open.",
-          "Two reported faculty doctorates remain individual discovery leads."
+          "Current SEM doctoral Management Science route retained from original 25 October evidence; no second IE route inferred from a master-only authorization.",
+          "Other university engineering-school doctoral titles and fields remain incomplete.",
+          "Two imported OM List reported doctorates remain individual discovery leads."
         ],
         "coverageComplete": false
       },
       "addedAt": "2026-10-25T18:27:40Z",
-      "updatedAt": "2026-10-25T18:27:40Z"
+      "updatedAt": "2026-10-26T00:49:15Z"
     },
     {
       "id": "beijing-normal-hong-kong-baptist-university-bnbu",
@@ -54817,11 +54868,11 @@
     },
     {
       "id": "national-and-kapodistrian-university-of-athens",
-      "status": "partial",
+      "status": "reviewed",
       "canonicalName": "National and Kapodistrian University of Athens",
-      "universitySourceUrl": "https://en.uoa.gr/",
-      "checkedAt": "2026-10-25",
-      "reviewer": "Codex via fully opened official university home and doctoral department page",
+      "universitySourceUrl": "https://en.uoa.gr/about_us/administration/senate",
+      "checkedAt": "2026-10-26",
+      "reviewer": "Codex via fully opened official 2026–2027 Senate chairs and school inventories",
       "duplicateOf": null,
       "units": [],
       "decisions": [
@@ -54844,10 +54895,22 @@
           "checkedAt": "2026-10-25",
           "outcome": "read",
           "note": "Official education-department doctoral page confirms research doctorates at the university, but unrelated to strict Ops/IE title qualification."
+        },
+        {
+          "url": "https://en.uoa.gr/about_us/administration/senate",
+          "checkedAt": "2026-10-26",
+          "outcome": "read",
+          "note": "Current 2026–2027 Senate page explicitly enumerates all nine school deans and chairs of departments, including Economics, Business Administration, Mathematics, Informatics and Digital Industry Technologies; none has an exact Operations, Management Science or Industrial Engineering title."
+        },
+        {
+          "url": "https://en.uoa.gr/schools_and_departments/school_of_economics_political_sciences",
+          "checkedAt": "2026-10-26",
+          "outcome": "read",
+          "note": "Full official eight-department business/economics school menu names Business Administration and Economics but no exact qualifying unit."
         }
       ],
       "limitations": [
-        "Current complete university department inventory has not been read; no exact Ops/MS/IE unit title proposed.",
+        "Current 2026–2027 official school and department chair inventory read; no formally titled Operations, Management Science or Industrial Engineering unit found in that bounded inventory. This does not settle named doctoral fields within other degree titles.",
         "University of Athens here is canonical NKUA, not National Technical University of Athens.",
         "Imported 2014 individual awarder and field remain source-reported only."
       ],
@@ -54907,7 +54970,7 @@
         "coverageComplete": false
       },
       "addedAt": "2026-10-25T23:08:46Z",
-      "updatedAt": "2026-10-25T23:08:46Z"
+      "updatedAt": "2026-10-26T00:49:15Z"
     },
     {
       "id": "national-chiao-tung-university",
@@ -83540,6 +83603,42 @@
           "checkedAt": "2026-10-22",
           "outcome": "read",
           "note": "Entire official current Faculty of Business and Economics doctoral Fields of Study page individually opened/read for alias identity and unit-label reconciliation. Explicit The University of Hong Kong, HKU FBE, exact Innovation and Information Management field, distinct Operations Management subfield with scheduling, queueing, supply chains and transportation. Prior public doctoral award and engineering facts remain their original 21 October check dates, not reverified today."
+        },
+        {
+          "url": "https://www.hkubs.hku.hk/research/academic-areas/",
+          "checkedAt": "2026-10-26",
+          "outcome": "read",
+          "note": "Actual Chrome academic-area inventory lazily loads on normal scroll. All six cards read; selected Innovation and Information Management card and full area description read. Explicit academic area working on information management/business analytics, including logistics/OM; not a department."
+        },
+        {
+          "url": "https://www.hkubs.hku.hk/people/faculty?pg=1&staff_type=faculty&subject_area=innovation-and-information-management&track=professoriate&region=hku",
+          "checkedAt": "2026-10-26",
+          "outcome": "read",
+          "note": "Original imported directory official faculty URL opened in Chrome. Actual visible selected filter Innovation and Information Management confirmed in screenshot, Professoriate filter selected. No individual profiles/history or full faculty roster enumeration performed."
+        },
+        {
+          "url": "https://drive.google.com/file/d/172zJPtoasQEnGor30GpBEGIy4uGMqwr-/view",
+          "checkedAt": "2026-10-26",
+          "outcome": "read",
+          "note": "Entire one-page original university-authored vacancy Ref. 532417 read in normal Chrome Drive viewer. Department FBE, Business Analytics faculty hiring July 2026, main applicant research fields IS/OM/Statistics/others. Original signature explicitly Area Head of Innovation and Information Management, correcting imported reversed-word summary. No degree inferred from applicants. Same Drive fileID as original source, no sharing settings changed."
+        },
+        {
+          "url": "https://drive.google.com/file/d/0Bx4LSJq_x9olaFBFRm5mcDRFQkE/view?usp=sharing",
+          "checkedAt": "2026-10-26",
+          "outcome": "read",
+          "note": "Entire separate one-page historical HKU_Recruiting_2015 university-authored advertisement read in Chrome Drive viewer. Ref201400665, Operations Management faculty position in School of Business, July 2015, closing 31 December 2014. Does not name Information and Innovation Management as actual department; no historical successor/name claim. Existing-account access not universal public accessibility."
+        },
+        {
+          "url": "https://www.higheredjobs.com/faculty/details.cfm?JobCode=179422894&Title=Tenure-Track%20Professor%2FAssociate%20Professor%2FAssistant%20Professor%20in%20Business%20Analytics%20(Several%20Posts)",
+          "checkedAt": "2026-10-26",
+          "outcome": "read",
+          "note": "Complete actual university recruitment body on HigherEdJobs read in Chrome, not snippets: distinct Ref. 534978, July 2027, Faculty of Business and Economics (i.e. HKU Business School), Business Analytics/Statistics, OM and IS faculty hiring/main applicant research fields. Actual linked HKU application landing independently shows same 534978 reference; no form input, terms acceptance, login or submission. Different from 532417 older vacancy despite shared listing URL."
+        },
+        {
+          "url": "http://www.fbe.hku.hk/academic-areas/innovation-and-information-management",
+          "checkedAt": "2026-10-26",
+          "outcome": "blocked",
+          "note": "Exact source university-directory link opened normally once; browser ERR_BLOCKED_BY_CLIENT. No protocol/hostname variants or bypass. This specific older link remains unread."
         }
       ],
       "limitations": [
@@ -83612,7 +83711,7 @@
         "coverageComplete": true
       },
       "addedAt": "2026-10-22T12:21:01Z",
-      "updatedAt": "2026-10-22T12:21:01Z"
+      "updatedAt": "2026-10-26T00:49:15Z"
     },
     {
       "id": "the-university-of-hong-kong-hku",
@@ -95474,10 +95573,10 @@
     },
     {
       "id": "university-of-bologna",
-      "status": "partial",
+      "status": "reviewed",
       "canonicalName": "Alma Mater Studiorum - Università di Bologna",
-      "universitySourceUrl": "https://phd.unibo.it/ibes/en/overview",
-      "checkedAt": "2026-10-25",
+      "universitySourceUrl": "https://www.unibo.it/en/university/organisation-and-campuses/departments",
+      "checkedAt": "2026-10-26",
       "reviewer": "Codex via opened official web pages",
       "duplicateOf": null,
       "units": [
@@ -95520,12 +95619,18 @@
           "checkedAt": "2026-10-25",
           "outcome": "read",
           "note": "2026-27 departmental doctorate list; four courses including Mechanics and Advanced Engineering Sciences."
+        },
+        {
+          "url": "https://www.unibo.it/en/university/organisation-and-campuses/departments",
+          "checkedAt": "2026-10-26",
+          "outcome": "read",
+          "note": "Opened full current official 31-department inventory. Industrial Engineering - DIN is sole exact-title qualifying formal department; Management, Mathematics and DEI have other formal titles."
         }
       ],
       "limitations": [
-        "Operations Research curriculum is hosted by DEI, a separately named engineering department, not by DIN; it is eligible by its own formal curriculum title.",
-        "Four DIN-hosted doctorates have other engineering titles. Their relevance under the reviewed-unit host rule and precise programme inventory require integrator adjudication; no extra route is asserted here.",
-        "Full institution-wide business and engineering unit reconciliation is incomplete; imported person degree reports remain unverified."
+        "Complete current official 31-department inventory read; Industrial Engineering - DIN is the sole exact-title qualifying formal department. The verified Operations Research doctoral curriculum is hosted by separately titled DEI and qualifies by curriculum title, not by DEI department name.",
+        "DIN-hosted aerospace, automotive, health and Mechanics doctorates have other-engineering/health titles and do not automatically qualify from the host name. Prior doctorate observation remains separate and bounded complete.",
+        "Imported individual doctorate reports remain discovery only."
       ],
       "doctoralReview": {
         "status": "verified",
@@ -95693,7 +95798,7 @@
         "coverageComplete": true
       },
       "addedAt": "2026-10-25T19:45:59Z",
-      "updatedAt": "2026-10-25T20:05:21Z"
+      "updatedAt": "2026-10-26T00:49:15Z"
     },
     {
       "id": "university-of-bonn",
@@ -130865,9 +130970,9 @@
       "decisions": [
         {
           "sourceDepartmentId": "washington-and-lee-university__williams-school-of-commerce-economics-and-politics__business-administration",
-          "disposition": "unresolved",
+          "disposition": "out-of-scope",
           "unitIds": [],
-          "reason": "Business Administration Department identity verified, but current overview, curriculum summary and faculty roster do not establish substantive operations/supply-chain remit. A marketing professor's prior supply-chain background alone does not establish current operations research."
+          "reason": "Bounded current named-unit reassessment from actually read 21 October complete department overview, curriculum areas and entire faculty research-summary inventory: current Business Administration remit identifies analytics, marketing, organizational leadership, ethics and strategy, without a substantive Operations/SCM unit or named current research remit. Prior supply-chain background of marketing faculty is not current departmental remit. Preserve prior unresolved reason in audit; no claim no individual work uses Operations methods."
         }
       ],
       "sources": [
@@ -130909,11 +131014,10 @@
         }
       ],
       "limitations": [
-        "No eligible unit verified from the current departmental overviews and displayed faculty evidence; this is not proof that no individual undertakes operations work. Imported broad business department remains scope-unresolved."
+        "Historical uncertainty retained for audit: prior imported broad Business Administration scope was unresolved. That uncertainty is superseded by the 26 October bounded reassessment of actually read 21 October full current department overview, curricular areas and complete faculty-summary inventory; current named-unit decision is out-of-scope. This does not establish historical absence or exclude individual Operations-method use.",
+        "26 October assessment uses existing full unit/curricular/faculty-summary evidence, no fresh webpage verification. Concludes bounded current source-named department scope only, not historic absence or no individual operations-method use."
       ],
       "duplicateOf": null,
-      "addedAt": "2026-10-21T07:40:08Z",
-      "updatedAt": "2026-10-22T11:20:54Z",
       "doctoralReview": {
         "status": "no-qualifying-programme-verified",
         "checkedAt": "2026-10-22",
@@ -130948,7 +131052,9 @@
           "Current explicitly stated degree structure only, not historical absence. Existing unit identities and evidence dates remain unchanged."
         ],
         "coverageComplete": true
-      }
+      },
+      "addedAt": "2026-10-21T07:40:08Z",
+      "updatedAt": "2026-10-26T00:49:15Z"
     },
     {
       "id": "washington-university-in-st-louis",
