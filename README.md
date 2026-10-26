@@ -2,7 +2,7 @@
 
 Public website: https://www.stouras.com/opsphdplacements/
 
-Stage 1 integration checkpoint (26 October 2026): 406 qualifying current doctoral programmes and named fields at 303 institutions; 561 sourced programme observations retained. The 835 source records have 621 completed unit reviews, 209 partial and five blocked; 620 of 815 doctoral observations have complete current branch checks. There are 266 grouped incomplete identities and three unmatched OM List reported-degree labels. Bocconi's current doctoral inventory is checked, with no qualifying named programme or demonstrated PhD host link to its separate SDA Operations group. Stage 1 incomplete; Stages 2–4 held. See [current handoff](research-handoff/universities/continuation-600/README.md).
+Stage 1 integration checkpoint (26 October 2026): 406 qualifying current doctoral programmes and named fields at 303 institutions. Of 835 source records, 621 unit reviews are complete, 209 partial and five blocked; 620 of 815 doctoral observations have complete current branch checks. There are 266 grouped incomplete identities and three unmatched OM List reported-degree labels. Bocconi's Italian and school names now share one organisation display. UCL CORU access restored; Mathematics project evidence retained without inventing a qualifying named doctorate. Stage 1 incomplete; Stages 2–4 held. See [current handoff](research-handoff/universities/continuation-610/README.md).
 
 An independent, static research directory for Operations Research, Operations Management and Industrial Engineering. The visual organization is inspired by Econ PhD Placements; all application code is original.
 
