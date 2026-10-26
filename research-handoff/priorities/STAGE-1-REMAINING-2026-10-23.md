@@ -2,7 +2,7 @@
 
 This is an alphabetical planning snapshot from the published university frame and the OM List reported-PhD-institution queue. It is **not** a list of confirmed PhD providers. Some institutions already have frozen official-source proposals awaiting integrator review and publication; they remain here until the public register records the outcome. A missing or partial doctoral review never means that no qualifying doctorate exists.
 
-The published 835 university/campus source records group into 740 display identities; 269 identities have an incomplete unit review, doctoral branch check or title/host adjudication. Of the source records, 215 have incomplete unit reviews and 220 lack a complete current doctoral branch scope. 0 programme title/host decisions remain pending and are withheld from qualifying counts. The separate OM List queue has 3 reported institution labels still needing identity reconciliation. These lists overlap in real institutions but are not merged without accepted evidence. Source-unit assertions and live directory/posting coverage are additional Stage 1 gates.
+The published 835 university/campus source records group into 740 display identities; 268 identities have an incomplete unit review, doctoral branch check or title/host adjudication. Of the source records, 215 have incomplete unit reviews and 219 lack a complete current doctoral branch scope. 0 programme title/host decisions remain pending and are withheld from qualifying counts. The separate OM List queue has 3 reported institution labels still needing identity reconciliation. These lists overlap in real institutions but are not merged without accepted evidence. Source-unit assertions and live directory/posting coverage are additional Stage 1 gates.
 
 ## In the university/campus discovery frame
 
@@ -240,43 +240,42 @@ The published 835 university/campus source records group into 740 display identi
 | 230 | University of Regensburg | unit/identity: partial; doctoral branch scope |
 | 231 | University of Regina | unit/identity: partial; doctoral branch scope |
 | 232 | University of Salford | unit/identity: partial; doctoral branch scope |
-| 233 | University of Science and Technology of China | doctoral branch scope |
-| 234 | University of Southampton | unit/identity: partial |
-| 235 | University of St.Gallen | unit/identity: partial; doctoral branch scope |
-| 236 | University of Stirling | unit/identity: partial |
-| 237 | University of Strathclyde | unit/identity: partial; doctoral branch scope |
-| 238 | University of Tasmania | unit/identity: partial; doctoral branch scope |
-| 239 | University of Tennessee at Chattanooga | unit/identity: partial |
-| 240 | University of the Virgin Islands | unit/identity: partial |
-| 241 | University of Trento | doctoral branch scope |
-| 242 | University of Tsukuba | unit/identity: partial; doctoral branch scope |
-| 243 | University of Vaasa | unit/identity: partial; doctoral branch scope |
-| 244 | University of Vienna | unit/identity: partial; doctoral branch scope |
-| 245 | University of Virginia | doctoral branch scope |
-| 246 | University of Waikato | unit/identity: partial; doctoral branch scope |
-| 247 | University of Wales | unit/identity: partial; doctoral branch scope |
-| 248 | University of Warwick | unit/identity: partial; doctoral branch scope |
-| 249 | University of Westminster | unit/identity: partial; doctoral branch scope |
-| 250 | University of Windsor | doctoral branch scope |
-| 251 | University of York | unit/identity: partial; doctoral branch scope |
-| 252 | University of Zurich | doctoral branch scope |
-| 253 | Valley City State University | unit/identity: partial |
-| 254 | Villanova University | unit/identity: partial |
-| 255 | Virginia Polytechnic Institute and State University | unit/identity: partial |
-| 256 | Wake Forest University | doctoral branch scope |
-| 257 | Warsaw University of Technology | unit/identity: partial; doctoral branch scope |
-| 258 | Wayne State University | doctoral branch scope |
-| 259 | West Virginia University | doctoral branch scope |
-| 260 | Westfield State University | unit/identity: partial |
-| 261 | Wheaton College of Massachusetts | unit/identity: blocked; doctoral branch scope |
-| 262 | Wichita State University | doctoral branch scope |
-| 263 | World Maritime University | unit/identity: partial |
-| 264 | Wright State University | unit/identity: partial; doctoral branch scope |
-| 265 | Wuhan University | unit/identity: partial; doctoral branch scope |
-| 266 | Xi'an Jiaotong University | unit/identity: partial; doctoral branch scope |
-| 267 | Xi'an Jiaotong-Liverpool University | doctoral branch scope |
-| 268 | Zhejiang University | unit/identity: partial; doctoral branch scope |
-| 269 | 中国科学院数学与系统科学研究院 (Academy of Mathematics and Systems Science) | unit/identity: partial; doctoral branch scope |
+| 233 | University of Southampton | unit/identity: partial |
+| 234 | University of St.Gallen | unit/identity: partial; doctoral branch scope |
+| 235 | University of Stirling | unit/identity: partial |
+| 236 | University of Strathclyde | unit/identity: partial; doctoral branch scope |
+| 237 | University of Tasmania | unit/identity: partial; doctoral branch scope |
+| 238 | University of Tennessee at Chattanooga | unit/identity: partial |
+| 239 | University of the Virgin Islands | unit/identity: partial |
+| 240 | University of Trento | doctoral branch scope |
+| 241 | University of Tsukuba | unit/identity: partial; doctoral branch scope |
+| 242 | University of Vaasa | unit/identity: partial; doctoral branch scope |
+| 243 | University of Vienna | unit/identity: partial; doctoral branch scope |
+| 244 | University of Virginia | doctoral branch scope |
+| 245 | University of Waikato | unit/identity: partial; doctoral branch scope |
+| 246 | University of Wales | unit/identity: partial; doctoral branch scope |
+| 247 | University of Warwick | unit/identity: partial; doctoral branch scope |
+| 248 | University of Westminster | unit/identity: partial; doctoral branch scope |
+| 249 | University of Windsor | doctoral branch scope |
+| 250 | University of York | unit/identity: partial; doctoral branch scope |
+| 251 | University of Zurich | doctoral branch scope |
+| 252 | Valley City State University | unit/identity: partial |
+| 253 | Villanova University | unit/identity: partial |
+| 254 | Virginia Polytechnic Institute and State University | unit/identity: partial |
+| 255 | Wake Forest University | doctoral branch scope |
+| 256 | Warsaw University of Technology | unit/identity: partial; doctoral branch scope |
+| 257 | Wayne State University | doctoral branch scope |
+| 258 | West Virginia University | doctoral branch scope |
+| 259 | Westfield State University | unit/identity: partial |
+| 260 | Wheaton College of Massachusetts | unit/identity: blocked; doctoral branch scope |
+| 261 | Wichita State University | doctoral branch scope |
+| 262 | World Maritime University | unit/identity: partial |
+| 263 | Wright State University | unit/identity: partial; doctoral branch scope |
+| 264 | Wuhan University | unit/identity: partial; doctoral branch scope |
+| 265 | Xi'an Jiaotong University | unit/identity: partial; doctoral branch scope |
+| 266 | Xi'an Jiaotong-Liverpool University | doctoral branch scope |
+| 267 | Zhejiang University | unit/identity: partial; doctoral branch scope |
+| 268 | 中国科学院数学与系统科学研究院 (Academy of Mathematics and Systems Science) | unit/identity: partial; doctoral branch scope |
 
 ## OM List reported PhD institutions without an accepted source-record match
 
