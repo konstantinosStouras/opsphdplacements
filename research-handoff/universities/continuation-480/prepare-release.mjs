@@ -1,0 +1,39 @@
+import fs from 'node:fs';import crypto from 'node:crypto';
+const dir='research-handoff/universities/continuation-480',prefix='research-handoff/universities/',q=JSON.parse(fs.readFileSync('research-handoff/priorities/stage-1-university-queue.json')),groups=q.matchedInstitutionSourceChecks.filter(r=>r.officialUnitComparison==='all-source-unit-assertions-accounted-for').length;
+const stats='400 qualifying doctoral programmes and named fields at 299 institutions; 558 sourced programme observations retained. The 833-record source frame has 603 completed unit reviews, 225 partial and five blocked. Doctoral scope: 812 observations, 608 current branch scopes complete. Remaining: 277 grouped incomplete identities, no pending title/host cases in the reviewed programme set and five unresolved OM List reported-degree labels (overlapping populations).';
+function replace(file,start,line){const old=fs.readFileSync(file,'utf8'),re=new RegExp('^'+start+'.*$','m');if(!re.test(old))throw Error(file);fs.writeFileSync(file,old.replace(re,line));}
+replace('README.md','Stage 1 integration checkpoint',`Stage 1 integration checkpoint (26 October 2026): ${stats} Oklahoma State named Management Science PhD added; Mines Saint-Étienne, KIMEP and Ohio bounded doctoral checks completed. Four separate unit inventories completed. ${groups} of 568 source-institution groups fully accounted for, with 442 pending and 385 unresolved assertion observations. Stage 1 incomplete; Stages 2–4 held. See [current handoff](${dir}/README.md).`);
+replace('TODO.md','Stage 1 update,',`Stage 1 update, 26 October 2026: ${stats} See [continuation480](${dir}/README.md). Continue remaining source assertions, identities and doctoral field checks; Stages 2–4 held. Programme-finder pagination must be fully read before marking inventory scope complete; Ohio correction history retained.`);
+replace('research-handoff/priorities/README.md','Current Stage 1 public scope:',`Current Stage 1 public scope: official programme title, named doctoral research field/specialization or actual department/school host must name Operations, Management Science or Industrial Engineering, including evidenced linguistic equivalents. ${stats} See [continuation480](../universities/continuation-480/README.md). Historical checkpoints retain their original dates.`);
+fs.writeFileSync(dir+'/README.md',`# Stage 1 continuation 480 — 26 October 2026
+
+Reviewed successor to 3dfa83a. ${stats} Stages 2–4 and automation remain held.
+
+## Integrated findings
+
+Oklahoma State: added one academic Business Administration: Management Science and Information Systems PhD, supported by its exact current catalogue title, dissertation requirements and actual Department of Management Science and Information Systems. Corrects the earlier IS/analytics exclusion under the owner's named Management Science scope. Existing Industrial Engineering programme unchanged. The separately reviewed Executive Research PhD has Watson Graduate School of Management as host and no qualifying named field; cross-listing on the MSIS page is not proof of an MSIS host. DBA remains a separate credential. Original B323 and superseding B324 observations are preserved.
+
+Mines Saint-Étienne and KIMEP current doctoral inventories completed, with existing Industrial Engineering programme retained and no new qualifying KIMEP title found. KIMEP's copied curriculum/DBA text is excluded from evidence; its historical OMIS identity remains separately unresolved. Kiel business branch checked; technical Mathematics/Natural Sciences named fields remain incomplete.
+
+Ohio: A399 initially overclaimed completion while six of 24 engineering finder entries were unseen. A407 restored partial coverage. A408 then actually read the second official page; those six entries contain only the existing Mechanical and Systems Engineering doctorate and master's/certificate offerings. Final bounded coverage is complete based on that additional evidence. All three proposals remain portable; no interim overclaim was published and existing IE programme facts are unchanged.
+
+LSU, Mines Saint-Étienne, Loughborough and Liverpool John Moores unit inventories completed through actual official full business/technical menus. Academic/research groups remain groups, not invented departments. Liverpool John Moores doctoral coverage remains separate and incomplete. NUS receives additional official unit identity evidence; no new eligible programme inferred.
+
+66 exact source decisions reconcile full institutional/unit labels, punctuation, named academic areas, known nonmatching departments, degree labels and hiring fields. They account for 73 repeated source observations. Original per-fact source dates remain unchanged. Imported source data, every prior programme and all people/history records are preserved.
+
+## Remaining and held findings
+
+${groups} of 568 source-institution groups have all assertions accounted for; ${568-groups} remain. Pending assertion observations: 442; unresolved inherited: 374; unresolved individual: 11; conflicts: zero. Frozen source coverage remains 5,402 observations, 5,396 matched names and six exclusions. The 277 grouped incomplete identities contain 230 incomplete unit records and 225 incomplete doctoral scopes; these denominators overlap.
+
+Only manifest inputs were integrated. C317 UIC access observation and B326–328 source-access limitations are ancillary only. B323 is superseded by B324. Newer A404–406, A409–410, C325–327 and B329+ proposals remain pending integrator review for the next release. Generic parent-unit reconciliation does not independently establish named-title doctoral eligibility.
+
+## Validation and publication
+
+57 JavaScript tests, four Python schema tests, all dataset validators, research database and static build passed (asset 6f7e5c577738). Preservation audit confirms every prior programme and imported/person/history record unchanged, six permitted unit updates, five doctoral observations and 66 append-only decisions. Visitor-note filter audit passed; organisation audit: 1,258 rows, zero duplicate display names, unchanged person/first-job links. Whitespace check passed.
+
+Predecessor 3dfa83a deployed successfully (run 40249097732). Live IIT Bombay search and expanded evidence show two verified programmes, original dates, new Operations Management evidence and remaining incomplete coverage. This release's live inspection follows deployment.
+`);
+const files=['index.html','README.md','TODO.md','RESEARCH-STATUS.md','research-handoff/priorities/source-unit-reconciliations.json',...['university-reviews','doctoral-programs','entities','record-dates'].map(n=>'data/'+n+'.json'),...['README.md','STAGE-1-REMAINING-2026-10-23.md','stage-1-doctoral-priority-queue.json','stage-1-university-queue.json'].map(n=>'research-handoff/priorities/'+n)];
+function collect(d){for(const e of fs.readdirSync(d,{withFileTypes:true})){const p=d+'/'+e.name;if(e.isDirectory())collect(p);else if(/\.(json|md|mjs|txt)$/.test(p))files.push(p);}}
+const shards=[...Array.from({length:8},(_,i)=>(396+i)+'/shard-a'),'407/shard-a','408/shard-a',...Array.from({length:8},(_,i)=>(317+i)+'/shard-c'),...Array.from({length:9},(_,i)=>(320+i)+'/shard-b')];
+for(const s of shards){const d=prefix+'continuation-'+s;if(fs.existsSync(d))collect(d);}collect(dir);files.push(dir+'/release-files.txt',dir+'/release-hashes.json');const paths=[...new Set(files)].sort();fs.writeFileSync(dir+'/release-files.txt',paths.join('\n')+'\n');fs.writeFileSync(dir+'/release-hashes.json',JSON.stringify({frozenAt:new Date().toISOString(),purpose:'Only manifest inputs integrated. Ohio correction sequence retained; final actual second-page read supports scope closure.',files:paths.filter(p=>p!==dir+'/release-hashes.json').map(path=>({path,sha256:crypto.createHash('sha256').update(fs.readFileSync(path)).digest('hex')}))},null,2)+'\n');console.log({groups,releasePaths:paths.length});

@@ -1,0 +1,178 @@
+{
+  "adjudicatedAt": "2026-10-26",
+  "method": "Actual already-read original official English vacancy and explicit prior raw decision compared individually. No new source retrieval, no arbitrary subject-to-department mapping.",
+  "priorReview": {
+    "id": "kimep-university",
+    "status": "partial",
+    "canonicalName": "KIMEP University",
+    "universitySourceUrl": "https://www.kimep.kz/en/",
+    "checkedAt": "2026-10-22",
+    "reviewer": "Codex in Chrome",
+    "units": [
+      {
+        "name": "Department of Operations Management and Information Systems",
+        "type": "department",
+        "school": "Bang College of Business",
+        "sourceUrl": "https://el2019.kimep.kz/course/index.php?categoryid=12",
+        "evidence": "Official public course hierarchy names this department within Bang College of Business, listing operations management and logistics/supply-chain courses. Current faculty vacancy corroborates operations teaching in the college, but does not name a lower-level department.",
+        "id": "kimep-university--operations-management-information-systems",
+        "fields": [
+          "operations-management",
+          "supply-chain",
+          "logistics"
+        ],
+        "checkedAt": "2026-10-20"
+      }
+    ],
+    "decisions": [
+      {
+        "reason": "OM is a subject abbreviation; official learning platform supplies a named combined department.",
+        "disposition": "replaced",
+        "sourceDepartmentId": "kimep-university____om",
+        "unitIds": [
+          "kimep-university--operations-management-information-systems"
+        ]
+      },
+      {
+        "reason": "Official vacancy uses Operations Management/Business Analytics as faculty position field and identifies Bang College of Business as department; it does not establish a department of that name.",
+        "disposition": "not-a-unit",
+        "sourceDepartmentId": "kimep-university__bang-college-of-business__operations-management-and-business-analytics",
+        "unitIds": [
+          "kimep-university--operations-management-information-systems"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "checkedAt": "2026-10-20",
+        "url": "https://hr.kimep.kz/ru/Home/Vacancy/791",
+        "note": "University and college identity; operations faculty vacancy.",
+        "outcome": "read"
+      },
+      {
+        "checkedAt": "2026-10-20",
+        "url": "https://el2019.kimep.kz/course/index.php?categoryid=12",
+        "note": "Named departmental hierarchy and operations courses; platform footer dates 2019.",
+        "outcome": "read"
+      },
+      {
+        "checkedAt": "2026-10-20",
+        "url": "https://kimep.kz/",
+        "note": "Main site loaded in Kazakh; English college structure not yet examined.",
+        "outcome": "read"
+      },
+      {
+        "url": "https://hr.kimep.kz/en-US/Home/JobSearch",
+        "checkedAt": "2026-10-20",
+        "outcome": "read",
+        "note": "Integrator opened current official vacancies in Chrome; operations/business analytics appointment is listed within Bang College of Business."
+      },
+      {
+        "url": "https://hr.kimep.kz/en-US/Home/Vacancy/791",
+        "checkedAt": "2026-10-20",
+        "outcome": "read",
+        "note": "Integrator read English official vacancy: full university/college names and substantive operations, supply-chain, quality and quantitative-methods remit. It does not establish the current lower-level department name."
+      },
+      {
+        "url": "https://www.kimep.kz/en/",
+        "checkedAt": "2026-10-20",
+        "outcome": "blocked",
+        "note": "English navigation from the official homepage and a fresh English tab timed out in Chrome; current college organization could not be read."
+      },
+      {
+        "url": "https://www.kimep.kz/en/",
+        "checkedAt": "2026-10-22",
+        "outcome": "read",
+        "note": "Current English homepage academic menu lists Business, Social Sciences, Human Sciences and Education, Law, Computer Science and Artificial Intelligence; no separate engineering school listed."
+      },
+      {
+        "url": "https://www.kimep.kz/bang-college-of-business/en/",
+        "checkedAt": "2026-10-22",
+        "outcome": "read",
+        "note": "Full English college degree inventory read: four business PhDs Accounting/Auditing, Finance, Management, Marketing. Faculty Profiles panel explicitly names Finance, Accounting, Management and Marketing department chairs. Management chair profile read only for departmental field mapping; no career data collected. No current OMIS departmental heading observed."
+      },
+      {
+        "url": "https://www.kimep.kz/bang-college-of-business/en/doctor-of-philosophy-in-management/",
+        "checkedAt": "2026-10-22",
+        "outcome": "read",
+        "note": "Mission, Concentrations Offered and Curriculum tabs read. Mission establishes research PhD; concentrations repeat the four broad business fields. Curriculum under Management page is headed DOCTOR OF PHILOSOPHY IN ACCOUNTING AND AUDIT 8D04104. This contradiction prevents reliance on the generic curriculum for an Operations route."
+      },
+      {
+        "url": "https://www.kimep.kz/school-of-computer-science-and-artificial-intelligence/",
+        "checkedAt": "2026-10-22",
+        "outcome": "read",
+        "note": "Full current school homepage read; explicitly currently offers two bachelor programmes Computer Science and Information Systems, prepares graduates for graduate study elsewhere. No doctoral offering listed in this school."
+      }
+    ],
+    "limitations": [
+      "22 October follow-up recovered the current English school/college pages after the earlier timeout. Current Business faculty panel names Management, Marketing, Finance and Accounting departments, but succession from the historical OMIS department remains unverified. Preserve the historical unit evidence/date without asserting current independent OMIS structure.",
+      "Current academic menu has no separate engineering school; Computer Science and Artificial Intelligence expressly lists two bachelor programmes. Wider university doctoral research eligibility remains partial separately."
+    ],
+    "duplicateOf": null,
+    "addedAt": "2026-10-20T09:10:37Z",
+    "updatedAt": "2026-10-22T11:55:34Z",
+    "doctoralReview": {
+      "status": "partial",
+      "checkedAt": "2026-10-22",
+      "programmeIds": [],
+      "branches": [
+        {
+          "branch": "business",
+          "conclusion": "Full English college degree inventory read: four business PhDs Accounting/Auditing, Finance, Management, Marketing. Faculty Profiles panel explicitly names Finance, Accounting, Management and Marketing department chairs. Management chair profile read only for departmental field mapping; no career data collected. No current OMIS departmental heading observed. Mission, Concentrations Offered and Curriculum tabs read. Mission establishes research PhD; concentrations repeat the four broad business fields. Curriculum under Management page is headed DOCTOR OF PHILOSOPHY IN ACCOUNTING AND AUDIT 8D04104. This contradiction prevents reliance on the generic curriculum for an Operations route.",
+          "sourceUrls": [
+            "https://www.kimep.kz/bang-college-of-business/en/",
+            "https://www.kimep.kz/bang-college-of-business/en/doctor-of-philosophy-in-management/"
+          ]
+        },
+        {
+          "branch": "engineering",
+          "conclusion": "Current English homepage academic menu lists Business, Social Sciences, Human Sciences and Education, Law, Computer Science and Artificial Intelligence; no separate engineering school listed. Full current school homepage read; explicitly currently offers two bachelor programmes Computer Science and Information Systems, prepares graduates for graduate study elsewhere. No doctoral offering listed in this school.",
+          "sourceUrls": [
+            "https://www.kimep.kz/en/",
+            "https://www.kimep.kz/school-of-computer-science-and-artificial-intelligence/"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.kimep.kz/en/",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Current English homepage academic menu lists Business, Social Sciences, Human Sciences and Education, Law, Computer Science and Artificial Intelligence; no separate engineering school listed."
+        },
+        {
+          "url": "https://www.kimep.kz/bang-college-of-business/en/",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Full English college degree inventory read: four business PhDs Accounting/Auditing, Finance, Management, Marketing. Faculty Profiles panel explicitly names Finance, Accounting, Management and Marketing department chairs. Management chair profile read only for departmental field mapping; no career data collected. No current OMIS departmental heading observed."
+        },
+        {
+          "url": "https://www.kimep.kz/bang-college-of-business/en/doctor-of-philosophy-in-management/",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Mission, Concentrations Offered and Curriculum tabs read. Mission establishes research PhD; concentrations repeat the four broad business fields. Curriculum under Management page is headed DOCTOR OF PHILOSOPHY IN ACCOUNTING AND AUDIT 8D04104. This contradiction prevents reliance on the generic curriculum for an Operations route."
+        },
+        {
+          "url": "https://www.kimep.kz/school-of-computer-science-and-artificial-intelligence/",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Full current school homepage read; explicitly currently offers two bachelor programmes Computer Science and Information Systems, prepares graduates for graduate study elsewhere. No doctoral offering listed in this school."
+        }
+      ],
+      "limitations": [
+        "Management PhD broad degree established but explicit Operations doctoral research pathway remains unverified. The Management curriculum tab appears to contain Accounting/Audit material; do not infer field eligibility from this inconsistent page.",
+        "Other business PhD research fields and complete wider university doctoral scope remain incomplete. Current departmental succession from historic OMIS remains unverified."
+      ],
+      "coverageComplete": false
+    }
+  },
+  "validation": {
+    "exactUniqueTuples": 2,
+    "pureHelper": "passed"
+  },
+  "limitations": [
+    "Current historical OMIS succession remains unverified and whole unit review remains partial.",
+    "Original source URL exact vacancy791, not a similar current job; raw imported source assertion unchanged.",
+    "Existing raw decision historical OMIS unitIds remain stored in prior review; exact overlay empty unitIds clarifies this vacancy itself does not establish that host."
+  ]
+}

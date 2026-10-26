@@ -1,0 +1,188 @@
+{
+  "id": "oklahoma-state-university",
+  "status": "reviewed",
+  "canonicalName": "Oklahoma State University",
+  "universitySourceUrl": "https://ceat.okstate.edu/iem",
+  "checkedAt": "2026-10-20",
+  "reviewer": "Codex in Chrome",
+  "units": [
+    {
+      "checkedAt": "2026-10-20",
+      "sourceUrl": "https://ceat.okstate.edu/iem",
+      "fields": [
+        "industrial-engineering",
+        "operations-research",
+        "supply-chain",
+        "logistics"
+      ],
+      "name": "School of Industrial Engineering and Management",
+      "school": "College of Engineering, Architecture and Technology",
+      "evidence": "Official school welcome gives full name and production-systems remit; current catalog explicitly lists OR, supply-chain curriculum and logistics certificate.",
+      "id": "oklahoma-state-university--industrial-engineering-management",
+      "type": "school"
+    },
+    {
+      "checkedAt": "2026-10-20",
+      "sourceUrl": "https://business.okstate.edu/departments_programs",
+      "fields": [
+        "supply-chain"
+      ],
+      "name": "School of Marketing and International Business",
+      "school": "Spears School of Business",
+      "evidence": "Current academic department/program inventory explicitly places Supply Chain Management under this named school.",
+      "id": "oklahoma-state-university--marketing-international-business",
+      "type": "school"
+    },
+    {
+      "checkedAt": "2026-10-20",
+      "sourceUrl": "https://business.okstate.edu/CHSI/programs",
+      "fields": [
+        "operations-management"
+      ],
+      "name": "Center for Health Systems Innovation",
+      "school": "Spears School of Business; Center for Health Sciences",
+      "evidence": "Programs page includes rural clinic workflow efficiency, care-delivery models under resource/workforce constraints, and measuring operational impact. Overview establishes joint business/health-sciences position.",
+      "id": "oklahoma-state-university--health-systems-innovation",
+      "type": "center"
+    }
+  ],
+  "decisions": [
+    {
+      "unitIds": [],
+      "sourceDepartmentId": "oklahoma-state-university____mis",
+      "reason": "Standalone MIS is outside requested operations boundary.",
+      "disposition": "out-of-scope"
+    },
+    {
+      "unitIds": [
+        "oklahoma-state-university--industrial-engineering-management"
+      ],
+      "sourceDepartmentId": "oklahoma-state-university__school-of-industrial-engineering-and-management",
+      "reason": "Retained full verified school name and college parent.",
+      "disposition": "replaced"
+    },
+    {
+      "unitIds": [
+        "oklahoma-state-university--health-systems-innovation"
+      ],
+      "sourceDepartmentId": "oklahoma-state-university__spears-school-of-business__management-science-and-information-systems-center-for-health",
+      "reason": "Split conflated label: retained independently verified health-systems center with workflow/operations remit; MSIS department current description focuses information systems/analytics and is excluded.",
+      "disposition": "replaced"
+    }
+  ],
+  "sources": [
+    {
+      "outcome": "read",
+      "url": "https://ceat.okstate.edu/iem",
+      "checkedAt": "2026-10-20",
+      "note": "Full school name and parent; opened via iem.okstate.edu redirect."
+    },
+    {
+      "outcome": "read",
+      "url": "https://catalog.okstate.edu/engineering-architecture-technology/industrial-engineering-management/",
+      "checkedAt": "2026-10-20",
+      "note": "2026-27 catalog establishes industrial engineering, OR, SCM and logistics scope."
+    },
+    {
+      "outcome": "read",
+      "url": "https://business.okstate.edu/departments_programs/msis",
+      "checkedAt": "2026-10-20",
+      "note": "Full MSIS department name checked; information-systems and analytics remit not relabeled operations."
+    },
+    {
+      "outcome": "read",
+      "url": "https://business.okstate.edu/departments_programs",
+      "checkedAt": "2026-10-20",
+      "note": "All eight academic units and program inventory; explicit SCM home in marketing/international-business school."
+    },
+    {
+      "outcome": "read",
+      "url": "https://business.okstate.edu/chsi",
+      "checkedAt": "2026-10-20",
+      "note": "Health-systems center name confirmed."
+    },
+    {
+      "outcome": "read",
+      "url": "https://business.okstate.edu/CHSI/overview",
+      "checkedAt": "2026-10-20",
+      "note": "Joint business/health-sciences affiliation and care-delivery innovation."
+    },
+    {
+      "outcome": "read",
+      "url": "https://business.okstate.edu/CHSI/programs",
+      "checkedAt": "2026-10-20",
+      "note": "Explicit clinical workflow efficiency, operational impact and constrained care delivery establish operations remit."
+    }
+  ],
+  "limitations": [
+    "Center and school types preserved; no standalone supply-chain department invented. Only workflow/care-delivery operations justify health center inclusion, not predictive clinical analytics alone."
+  ],
+  "duplicateOf": null,
+  "addedAt": "2026-10-21T06:57:04Z",
+  "updatedAt": "2026-10-21T21:30:10Z",
+  "doctoralReview": {
+    "status": "verified",
+    "checkedAt": "2026-10-21",
+    "programmeIds": [
+      "oklahoma-state-university--industrial-engineering-management-phd"
+    ],
+    "branches": [
+      {
+        "branch": "business",
+        "reviewState": "checked",
+        "sourceUrls": [
+          "https://catalog.okstate.edu/graduate-college/doctoral/industrial-engineering-management-phd/",
+          "https://catalog.okstate.edu/graduate-college/doctoral/business-administration-management-science-information-systems-phd/",
+          "https://catalog.okstate.edu/spears-business/management-science-information-systems/",
+          "https://catalog.okstate.edu/spears-business/marketing-international-business/"
+        ],
+        "conclusion": "Complete university doctoral inventory checked; potential ManagementScienceInformationSystems and Marketing PhD programme descriptions read. Actual MIS and Marketing research scopes not converted to OM/OR/SCM doctorate from department name or MBA prerequisites."
+      },
+      {
+        "branch": "engineering",
+        "reviewState": "checked",
+        "sourceUrls": [
+          "https://catalog.okstate.edu/graduate-college/doctoral/industrial-engineering-management-phd/",
+          "https://go.okstate.edu/graduate-academics/programs/doctoral/industrial-engineering-and-management-phd"
+        ],
+        "conclusion": "Complete university doctorate inventory and exact IEM programme/current requirements checked; verified relevant Stillwater IEM PhD retained."
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://go.okstate.edu/graduate-academics/programs/doctoral/industrial-engineering-and-management-phd",
+        "checkedAt": "2026-10-21",
+        "outcome": "read",
+        "note": "Exact Doctor of Philosophy IndustrialEngineeringManagement, SchoolIEM and CEAT parent, Stillwater; dissertation requirement and current admissions."
+      },
+      {
+        "url": "https://catalog.okstate.edu/graduate-college/doctoral/industrial-engineering-management-phd/",
+        "checkedAt": "2026-10-21",
+        "outcome": "read",
+        "note": "2026-27 exact PhD requirements, dissertation/defense and complete university DoctoralDegreePrograms inventory in expanded navigation read."
+      },
+      {
+        "url": "https://catalog.okstate.edu/graduate-college/doctoral/business-administration-management-science-information-systems-phd/",
+        "checkedAt": "2026-10-21",
+        "outcome": "read",
+        "note": "Exact BusinessAdministrationMSIS PhD with dissertation; name alone not taken as OperationsResearch specialization."
+      },
+      {
+        "url": "https://catalog.okstate.edu/spears-business/management-science-information-systems/",
+        "checkedAt": "2026-10-21",
+        "outcome": "read",
+        "note": "Overview plus GraduatePrograms tab: explicit businessPhD MIS research, data science/cybersecurity. Broad OR in department overview not relabeled a verified doctoral OR field."
+      },
+      {
+        "url": "https://catalog.okstate.edu/spears-business/marketing-international-business/",
+        "checkedAt": "2026-10-21",
+        "outcome": "read",
+        "note": "GraduatePrograms tab: PhD intensive Marketingresearch, analytics masters/certificates; operations knowledge is MBA-level prerequisite rather than doctoral operations specialization."
+      }
+    ],
+    "limitations": [
+      "Current offerings rather than historical degree coverage. Management Science in combined MIS programme title does not alone establish an operations research doctorate; exact opened doctoral description retained."
+    ],
+    "coverageComplete": true
+  }
+}
