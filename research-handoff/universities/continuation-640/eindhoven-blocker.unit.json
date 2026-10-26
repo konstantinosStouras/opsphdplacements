@@ -1,0 +1,122 @@
+{
+  "id": "eindhoven-university-of-technology-tu-e",
+  "status": "partial",
+  "canonicalName": "Eindhoven University of Technology",
+  "universitySourceUrl": "https://www.tue.nl/faculteit-industrial-engineering-innovation-sciences/studeren/graduate-programs/industrial-engineering-graduate-program/promoveren/phd-program-industrial-engineering",
+  "checkedAt": "2026-10-21",
+  "reviewer": "Codex in Chrome",
+  "units": [
+    {
+      "id": "eindhoven-university-of-technology-tu-e--industrial-engineering-innovation-sciences",
+      "name": "Department of Industrial Engineering and Innovation Sciences",
+      "school": null,
+      "type": "department",
+      "fields": [
+        "industrial-engineering",
+        "operations-research",
+        "supply-chain"
+      ],
+      "sourceUrl": "https://www.tue.nl/faculteit-industrial-engineering-innovation-sciences/studeren/graduate-programs/industrial-engineering-graduate-program/promoveren/phd-program-industrial-engineering",
+      "checkedAt": "2026-10-21",
+      "evidence": "Official PhD programme explicitly names department and subordinate School of Industrial Engineering; university portal corroborates current school hierarchy and SCM/vehicle-routing research."
+    },
+    {
+      "id": "eindhoven-university-of-technology-tu-e--industrial-engineering-school",
+      "name": "School of Industrial Engineering",
+      "school": "Department of Industrial Engineering and Innovation Sciences",
+      "type": "school",
+      "fields": [
+        "industrial-engineering",
+        "operations-research",
+        "supply-chain"
+      ],
+      "sourceUrl": "https://www.tue.nl/faculteit-industrial-engineering-innovation-sciences/studeren/graduate-programs/industrial-engineering-graduate-program/promoveren/phd-program-industrial-engineering",
+      "checkedAt": "2026-10-21",
+      "evidence": "Official PhD programme explicitly states this school hosts Industrial Engineering PhD and its four research groups, including Operations Planning, Accounting and Control."
+    },
+    {
+      "id": "eindhoven-university-of-technology-tu-e--operations-planning-accounting-control",
+      "name": "Operations Planning, Accounting and Control",
+      "school": "School of Industrial Engineering",
+      "type": "group",
+      "fields": [
+        "operations-management",
+        "operations-research",
+        "supply-chain"
+      ],
+      "sourceUrl": "https://www.tue.nl/faculteit-industrial-engineering-innovation-sciences/studeren/graduate-programs/industrial-engineering-graduate-program/promoveren/phd-program-industrial-engineering",
+      "checkedAt": "2026-10-21",
+      "evidence": "Explicitly named research group within Industrial Engineering School hosting PhD projects; current university research portal corroborates doctoral candidate affiliation and OPAC facilities."
+    },
+    {
+      "id": "eindhoven-university-of-technology-tu-e--stochastic-operations-research",
+      "name": "Stochastic Operations Research",
+      "school": "Department of Mathematics and Computer Science",
+      "type": "group",
+      "fields": [
+        "operations-research",
+        "logistics",
+        "operations-management"
+      ],
+      "sourceUrl": "https://www.tue.nl/en/research/research-groups/mathematics/statistics-probability-and-operations-research/stochastic-operations-research",
+      "checkedAt": "2026-10-21",
+      "evidence": "Official current university group page names Stochastic Operations Research within Department of Mathematics and Computer Science. Its research programme explicitly intersects Applied Probability and Operations Research, including queueing and applications to logistics and service operations."
+    }
+  ],
+  "decisions": [
+    {
+      "sourceDepartmentId": "eindhoven-university-of-technology-tu-e__school-of-industrial-engineering__industrial-engineering-and-innovation-sciences",
+      "disposition": "replaced",
+      "unitIds": [
+        "eindhoven-university-of-technology-tu-e--industrial-engineering-innovation-sciences",
+        "eindhoven-university-of-technology-tu-e--industrial-engineering-school",
+        "eindhoven-university-of-technology-tu-e--operations-planning-accounting-control"
+      ],
+      "reason": "Official hierarchy corrects imported reversed department/school relationship: Department of IE and Innovation Sciences contains School of IE; actual OPAC research group retained."
+    }
+  ],
+  "sources": [
+    {
+      "url": "http://opac.ieis.tue.nl/people/",
+      "checkedAt": "2026-10-21",
+      "outcome": "blocked",
+      "note": "Imported legacy source denied by browser client. No bypass attempted; independently discovered current official university programme and research portal read."
+    },
+    {
+      "url": "https://www.tue.nl/faculteit-industrial-engineering-innovation-sciences/studeren/graduate-programs/industrial-engineering-graduate-program/promoveren/phd-program-industrial-engineering",
+      "checkedAt": "2026-10-21",
+      "outcome": "read",
+      "note": "Read exact doctoral programme, university name, actual department/school hierarchy and all four PhD research groups."
+    },
+    {
+      "url": "https://research.tue.nl/en/organisations/industrial-engineering-2/",
+      "checkedAt": "2026-10-21",
+      "outcome": "read",
+      "note": "Read current Industrial Engineering organizational unit within Industrial Engineering and Innovation Sciences, actual current OPAC doctorate research and operations/SCM research context; not graduate roster collection."
+    },
+    {
+      "url": "https://www.tue.nl/en/research/research-groups/mathematics/statistics-probability-and-operations-research/stochastic-operations-research",
+      "checkedAt": "2026-10-21",
+      "outcome": "read",
+      "note": "Read full official Stochastic Operations Research group page, exact departmental host and explicit OR/logistics/service-operations research. No group-specific doctoral offering statement observed."
+    },
+    {
+      "url": "https://www.tue.nl/faculteit-industrial-engineering-innovation-sciences/studeren/graduate-programs/industrial-engineering-graduate-program/promoveren/phd-program-industrial-engineering",
+      "checkedAt": "2026-10-22",
+      "outcome": "read",
+      "note": "Source-name reconciliation: TU Eindhoven. Official Eindhoven University of Technology page uses TU/e and names the School of Industrial Engineering within the Department of Industrial Engineering and Innovation Sciences. The source TU Eindhoven label with that same department is linked to this existing institution; not treated as a separate university or as an official full-name spelling."
+    },
+    {
+      "url": "https://research.tue.nl/en/organisations/",
+      "checkedAt": "2026-10-26",
+      "outcome": "blocked",
+      "note": "Opened complete research-portal organisation directory in Chrome; displayed live security verification. User handoff requested and tab retained for the user. No challenge bypass, portal content read or complete inventory claim."
+    }
+  ],
+  "limitations": [
+    "Other university mathematical/engineering operations groups outside the Industrial Engineering School remain unexamined; no institution-wide complete-unit claim.",
+    "Stochastic Operations Research group now verified separately in Mathematics and Computer Science; exact doctoral programme mapping remains unestablished. Research group directory explicitly warns its own webpage list is incomplete and points to the complete research portal.",
+    "26 October complete research-portal inventory requires a live security-verification handoff. Earlier independently read programme/group sources remain valid within their recorded scope; full technical inventory remains incomplete."
+  ],
+  "duplicateOf": null
+}

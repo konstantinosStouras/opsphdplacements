@@ -2,7 +2,7 @@
 
 Public website: https://www.stouras.com/opsphdplacements/
 
-Stage 1 integration checkpoint (26 October 2026): 407 qualifying current doctoral programmes and named fields at 303 institutions. Of 835 source records, 622 unit reviews are complete, 208 partial and five blocked; 622 of 815 doctoral observations have complete current branch checks. There are 264 grouped incomplete identities and three unmatched OM List reported-degree labels. Karlsruhe now includes its Institute of Human and Industrial Engineering research-doctorate pathway; Cranfield school/centre aliases share one organisation display. Stage 1 incomplete; Stages 2–4 held. See [current handoff](research-handoff/universities/continuation-630/README.md).
+Stage 1 integration checkpoint (26 October 2026): 407 qualifying current doctoral programmes and named fields at 303 institutions. Of 835 source records, 623 unit reviews are complete, 207 partial and five blocked; 622 of 815 doctoral observations have complete current branch checks. There are 264 grouped incomplete identities and three unmatched OM List reported-degree labels. IIT Delhi's current academic-unit inventory is reviewed; its doctoral scope remains partial. Karlsruhe predecessor names share the current institution display with historical labels preserved. Stage 1 incomplete; Stages 2–4 held. See [current handoff](research-handoff/universities/continuation-640/README.md).
 
 An independent, static research directory for Operations Research, Operations Management and Industrial Engineering. The visual organization is inspired by Econ PhD Placements; all application code is original.
 
