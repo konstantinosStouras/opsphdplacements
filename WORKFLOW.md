@@ -340,3 +340,6 @@ Continuation 440 visitor evidence audit: expanded organisation evidence includes
 # Remaining-school report dates
 
 `node scripts/report-stage1-remaining.mjs` derives its report heading date from the current UTC generation date. This is a planning-snapshot date, not a new source check; original evidence dates remain in the records.
+
+
+Stage 1 multi-host clarification (26 October 2026): Tsinghua’s central inventory lists Management Science and Engineering as one academic PhD field, while official pages document SEM, Shenzhen and Construction Management offerings. Preserve the actual hosts as separately dated source observations and an overlap note under the existing named programme unless independent degree identities or formal separate programmes are established. A campus or direction alone is not an extra doctoral award. The existing single school/department summary identifies the previously reviewed host, not an exclusive university-wide list; explain that limitation. Never change the official degree/title to defeat duplicate detection or rename nonqualifying host departments.
