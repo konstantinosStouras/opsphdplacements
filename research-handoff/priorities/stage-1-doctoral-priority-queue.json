@@ -26800,7 +26800,7 @@
       "doctoralObservations": [
         {
           "status": "verified",
-          "checkedAt": "2026-10-25",
+          "checkedAt": "2026-10-26",
           "programmeIds": [
             "middle-east-technical-university--industrial-engineering-phd",
             "middle-east-technical-university--operational-research-phd"
@@ -26808,20 +26808,26 @@
           "branches": [
             {
               "branch": "business",
-              "reviewState": "partial",
-              "conclusion": "Official central catalog lists Business Administration and direct-BS Business Administration PhDs but no eligible named field on that page. A separate older department page mentions Finance and Quantitative Decision Methods tracks; current formal speciality inventory remains to be adjudicated.",
+              "reviewState": "checked",
+              "conclusion": "The full current Department of Business Administration PhD page states exactly two formal tracks, Finance and Quantitative Decision Methods. The latter is not titled Operations or Management Science; decision-sciences seminars are content, not an eligible named track. The registrar full university doctorate list names generic Business Administration PhD; no third qualifying business title. Business title scope bounded complete.",
               "sourceUrls": [
-                "https://catalog.metu.edu.tr/program.php?inst_prog=312"
+                "https://catalog.metu.edu.tr/program.php?inst_prog=312",
+                "https://ba.metu.edu.tr/en/phd",
+                "https://oidb.metu.edu.tr/en/node/31"
               ]
             },
             {
               "branch": "engineering",
               "reviewState": "partial",
-              "conclusion": "Official Industrial Engineering PhD programme list and current graduate-school admission page establish two exact formal IE-hosted PhD titles. Integrated IE doctorate is same degree at alternate entry level, not third route. Other technical schools' detailed formal title inventory remains incomplete.",
+              "conclusion": "Full registrar doctorate titles include existing Industrial Engineering and Operational Research routes. Mathematics and Statistics detailed doctoral pages add no formal eligible area. However the official Institute of Applied Mathematics Scientific Computing recommended-electives page could bear an Operations Research specialized area, and its direct body twice timed out; no doctoral linkage or eligibility can be inferred from search preview. Computer Engineering detailed formal named fields also not exhausted. Engineering branch remains partial.",
               "sourceUrls": [
                 "https://ie.metu.edu.tr/en/phd-programs",
                 "https://fbe.metu.edu.tr/en/node/84",
-                "https://ie.metu.edu.tr/en/phd-operational-research"
+                "https://ie.metu.edu.tr/en/phd-operational-research",
+                "https://oidb.metu.edu.tr/en/node/31",
+                "https://math.metu.edu.tr/phd-program",
+                "https://stat.metu.edu.tr/en/program-0",
+                "https://iam.metu.edu.tr/en/scientific-computing-program-recommended-elective-courses"
               ]
             }
           ],
@@ -26861,11 +26867,41 @@
               "checkedAt": "2026-10-25",
               "outcome": "blocked",
               "note": "Integrated IE PhD detail page ordinary timeout; no second route inferred from navigation alone."
+            },
+            {
+              "url": "https://ba.metu.edu.tr/en/phd",
+              "checkedAt": "2026-10-26",
+              "outcome": "read",
+              "note": "Opened full current Business Administration PhD page: exactly Finance and Quantitative Decision Methods formal tracks; neither exact eligible title."
+            },
+            {
+              "url": "https://oidb.metu.edu.tr/en/node/31",
+              "checkedAt": "2026-10-26",
+              "outcome": "read",
+              "note": "Opened full METU registrar list of doctorates across all five graduate schools and NCC, page updated 31 August 2026; existing IE and Operational Research doctorate titles reconfirmed."
+            },
+            {
+              "url": "https://math.metu.edu.tr/phd-program",
+              "checkedAt": "2026-10-26",
+              "outcome": "read",
+              "note": "Opened full Mathematics PhD page and its listed research branches; no named Operations or Management Science doctoral area."
+            },
+            {
+              "url": "https://stat.metu.edu.tr/en/program-0",
+              "checkedAt": "2026-10-26",
+              "outcome": "read",
+              "note": "Opened full Statistics PhD programme description; no named Operations/Management Science formal PhD field. Separate OR course is not a doctoral specialization."
+            },
+            {
+              "url": "https://iam.metu.edu.tr/en/scientific-computing-program-recommended-elective-courses",
+              "checkedAt": "2026-10-26",
+              "outcome": "blocked",
+              "note": "Official IAM Scientific Computing recommended-electives page timed out on two direct open attempts. Search result suggested Operations Research as a specialized area, but no full body read and no doctorate-field verification is claimed."
             }
           ],
           "limitations": [
-            "Broader business and technical doctoral formal-field inventories incomplete; two routes are positive source-bounded observations, not an exhaustive census.",
-            "Two imported OM List reported doctorates remain discovery leads only."
+            "Business formal PhD tracks are fully read and bounded complete. Technical scope remains partial: official IAM Scientific Computing recommended-electives page timed out twice, so a search-preview Operations Research specialized-area wording cannot be used as verification or exclusion; exact doctorate linkage/title remains unknown. Computer Engineering detailed formal named fields are also not exhausted.",
+            "Two imported OM List reported doctorate awards remain discovery only; no person degree was verified."
           ],
           "coverageComplete": false
         }

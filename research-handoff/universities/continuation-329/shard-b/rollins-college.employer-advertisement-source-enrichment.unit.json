@@ -1,0 +1,183 @@
+{
+  "id": "rollins-college",
+  "status": "reviewed",
+  "canonicalName": "Rollins College",
+  "universitySourceUrl": "https://www.rollins.edu/",
+  "checkedAt": "2026-10-21",
+  "reviewer": "Codex in Chrome",
+  "units": [
+    {
+      "id": "rollins-college--operations-management",
+      "name": "Operations Management",
+      "school": "Crummer Graduate School of Business",
+      "type": "area",
+      "fields": [
+        "operations-management",
+        "supply-chain",
+        "logistics"
+      ],
+      "sourceUrl": "https://crummer.rollins.edu/explore-crummer/faculty/",
+      "checkedAt": "2026-10-21",
+      "evidence": "Current faculty directory explicitly groups faculty under the Operations Management academic area. Yoho is Professor of Operations Management with supply chain and logistics expertise."
+    },
+    {
+      "id": "rollins-college--department-of-business",
+      "name": "Department of Business",
+      "school": null,
+      "type": "department",
+      "fields": [
+        "supply-chain",
+        "operations-management"
+      ],
+      "sourceUrl": "https://www.rollins.edu/business-management/",
+      "checkedAt": "2026-10-21",
+      "evidence": "Official undergraduate page explicitly identifies the Department of Business and its faculty. Its teaching includes Supply Chain Management, covering strategy, planning and operation, with business forum coverage of operations and supply chain management."
+    }
+  ],
+  "decisions": [
+    {
+      "sourceDepartmentId": "rollins-college____supply-chain-management",
+      "disposition": "replaced",
+      "unitIds": [
+        "rollins-college--operations-management",
+        "rollins-college--department-of-business"
+      ],
+      "reason": "Supply Chain Management is not verified as a separate department; relevant work is covered by the verified Crummer Operations Management area and undergraduate Department of Business."
+    },
+    {
+      "sourceDepartmentId": "rollins-college__crummer-graduate-school-of-business__business-analytics",
+      "disposition": "out-of-scope",
+      "unitIds": [],
+      "reason": "Standalone Business Analytics is not retained as an operations department; the current school advertises an analytics certificate, while the verified operations faculty grouping has a separate full name."
+    },
+    {
+      "sourceDepartmentId": "rollins-college__crummer-graduate-school-of-business__operations-and-supply-chain-management",
+      "disposition": "replaced",
+      "unitIds": [
+        "rollins-college--operations-management"
+      ],
+      "reason": "Normalize to the current official academic-area name Operations Management; supply chain is supported remit, not an invented extension to the unit name."
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.rollins.edu/",
+      "checkedAt": "2026-10-21",
+      "outcome": "read",
+      "note": "Official Rollins College identity and Crummer relationship read."
+    },
+    {
+      "url": "https://crummer.rollins.edu/",
+      "checkedAt": "2026-10-21",
+      "outcome": "read",
+      "note": "Official Crummer Graduate School of Business identity read."
+    },
+    {
+      "url": "https://crummer.rollins.edu/explore-crummer/faculty/",
+      "checkedAt": "2026-10-21",
+      "outcome": "read",
+      "note": "Academic Area filter explicitly lists Operations Management; selected results include Yoho, Rappold, Lomas and emeritus Correa. Quantitative Business Analysis selection returned no faculty."
+    },
+    {
+      "url": "https://crummer.rollins.edu/explore-crummer/faculty/keenan-d-yoho-ph-d/",
+      "checkedAt": "2026-10-21",
+      "outcome": "read",
+      "note": "Operations Management professor lists supply chain management, logistics strategy and global operations expertise."
+    },
+    {
+      "url": "https://www.rollins.edu/college-of-liberal-arts/",
+      "checkedAt": "2026-10-21",
+      "outcome": "read",
+      "note": "Undergraduate branch checked."
+    },
+    {
+      "url": "https://www.rollins.edu/academics/",
+      "checkedAt": "2026-10-21",
+      "outcome": "read",
+      "note": "Academic overview checked."
+    },
+    {
+      "url": "https://www.rollins.edu/academics/majors-minors/",
+      "checkedAt": "2026-10-21",
+      "outcome": "read",
+      "note": "Full program list checked including engineering, mathematics and business."
+    },
+    {
+      "url": "https://www.rollins.edu/engineering-studies/",
+      "checkedAt": "2026-10-21",
+      "outcome": "read",
+      "note": "Engineering Studies is a cooperative dual-degree program with Case Western Reserve and Washington University; no Rollins industrial engineering department verified."
+    },
+    {
+      "url": "https://www.rollins.edu/business-management/",
+      "checkedAt": "2026-10-21",
+      "outcome": "read",
+      "note": "Department of Business explicitly named with faculty; its teaching includes Supply Chain Management and business forum coverage of operations and supply chain management."
+    },
+    {
+      "url": "https://careerconnection.aacsb.edu/job/associate-full-professor-business-analytics-winter-park-florida-2270",
+      "checkedAt": "2026-10-26",
+      "outcome": "read",
+      "note": "Complete actual Rollins College-labelled recruitment advertisement body on AACSB Career Connection read through web reader (professional association publisher, not university-hosted page). Crummer faculty Business Analytics hiring position, MBA concentration/certificate teaching, Fall2027, priority1November, employer application instructions. Actual college statement explicit; no separate Business Analytics department asserted. No personal contacts collected; applicant doctorate qualification not local doctoral provision."
+    },
+    {
+      "url": "https://jobs.rollins.edu/jobs/associate-full-professor-business-analytics-orlando-florida-united-states-winter-park-fl",
+      "checkedAt": "2026-10-26",
+      "outcome": "blocked",
+      "note": "Normally opened employer URL discovered in search-chair academic-association announcement; web reader reports URL not accessible, no actual body. No retries or protocol changes. Independently accessible AACSB professional job-board advertisement separately read, not a fetch/proxy workaround."
+    }
+  ],
+  "limitations": [
+    "Department of Business is a broad undergraduate department included on explicit supply chain teaching and operations forum evidence; no separate undergraduate operations department is asserted.",
+    "Crummer Operations Management is an academic area, not a formally named department."
+  ],
+  "duplicateOf": null,
+  "doctoralReview": {
+    "status": "no-qualifying-programme-verified",
+    "checkedAt": "2026-10-22",
+    "programmeIds": [],
+    "branches": [
+      {
+        "branch": "business",
+        "reviewState": "checked",
+        "sourceUrls": [
+          "https://www.rollins.edu/graduate",
+          "https://crummer.rollins.edu/programs-and-offerings/"
+        ],
+        "conclusion": "The full current university graduate overview and Crummer business offerings page were read. Business provision describes four MBA pathways, certificates and executive education, with no current qualifying Operations research doctorate listed."
+      },
+      {
+        "branch": "engineering",
+        "reviewState": "checked",
+        "sourceUrls": [
+          "https://www.rollins.edu/graduate"
+        ],
+        "conclusion": "The complete university graduate overview lists nine masters fields in behavior analysis, business, counseling, human resources, liberal studies, public health, communication and teaching. No engineering doctoral branch is listed."
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.rollins.edu/graduate",
+        "checkedAt": "2026-10-22",
+        "outcome": "read",
+        "note": "Entire current Graduate Studies overview and all nine named masters fields read."
+      },
+      {
+        "url": "https://crummer.rollins.edu/",
+        "checkedAt": "2026-10-22",
+        "outcome": "read",
+        "note": "Full business school homepage read: four MBA pathways, two graduate certificates and executive education."
+      },
+      {
+        "url": "https://crummer.rollins.edu/programs-and-offerings/",
+        "checkedAt": "2026-10-22",
+        "outcome": "read",
+        "note": "Entire current business programmes and offerings page read, including all four MBA routes and other executive/accelerated offerings."
+      }
+    ],
+    "limitations": [
+      "This is a current published-inventory conclusion. Historical doctoral or professional DBA provision has not been adjudicated and is not claimed absent historically."
+    ],
+    "coverageComplete": true
+  }
+}
