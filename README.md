@@ -2,7 +2,7 @@
 
 Public website: https://www.stouras.com/opsphdplacements/
 
-Stage 1 integration checkpoint (26 October 2026): 410 qualifying current doctoral programmes and named fields at 306 institutions. Of 835 source records, 625 unit reviews are complete, 205 partial and five blocked; 624 of 815 doctoral observations have complete current branch checks. There are 262 grouped incomplete identities and three unmatched OM List reported-degree labels. Chalmers current doctoral branch review completed and its evidenced Supply and Operations Management division pathway restored. Stage 1 incomplete; Stages 2–4 held. See [current handoff](research-handoff/universities/continuation-680/README.md).
+Stage 1 integration checkpoint (26 October 2026): 410 qualifying current doctoral programmes and named fields at 306 institutions. Of 835 source records, 625 unit reviews are complete, 205 partial and five blocked; 629 of 815 doctoral observations have complete current branch checks. There are 261 grouped incomplete identities and three unmatched OM List reported-degree labels. UCL current relevant doctoral inventory completed across five reconciled source labels; no new programme added. Stage 1 incomplete; Stages 2–4 held. See [current handoff](research-handoff/universities/continuation-690/README.md).
 
 An independent, static research directory for Operations Research, Operations Management and Industrial Engineering. The visual organization is inspired by Econ PhD Placements; all application code is original.
 
