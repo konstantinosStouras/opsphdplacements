@@ -1,0 +1,4 @@
+import fs from 'node:fs';import crypto from 'node:crypto';import {execFileSync} from 'node:child_process';
+const dir='research-handoff/universities/continuation-540',unitInputs=['the-ohio-state-university','ohio-state-university'].map(id=>dir+'/'+id+'.unit.json'),assertionInputs=[dir+'/source-assertion-proposals.json'];
+const m={baseCommit:execFileSync('git',['rev-parse','HEAD'],{encoding:'utf8'}).trim(),sources:[],unitInputs,programmes:[],scopes:[],assertionInputs};m.frozenInputs=[...unitInputs,...assertionInputs].map(path=>({path,sha256:crypto.createHash('sha256').update(fs.readFileSync(path)).digest('hex')}));fs.writeFileSync(dir+'/integration-manifest.json',JSON.stringify(m,null,2)+'\n');
+for(const f of ['apply-phase.mjs','apply-assertions.mjs','audit-cut.mjs'])fs.writeFileSync(dir+'/'+f,fs.readFileSync('research-handoff/universities/continuation-530/'+f,'utf8').replaceAll('continuation-530','continuation-540'));

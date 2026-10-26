@@ -1,0 +1,408 @@
+{
+  "checkedAt": "2026-10-26",
+  "reason": "Preserve superseded no-rename-evidence limitation and unresolved decision before explicit primary-source correction.",
+  "records": [
+    {
+      "id": "the-ohio-state-university",
+      "status": "reviewed",
+      "canonicalName": "The Ohio State University",
+      "universitySourceUrl": "https://ise.osu.edu/",
+      "checkedAt": "2026-10-20",
+      "reviewer": "Codex in Chrome",
+      "units": [
+        {
+          "type": "department",
+          "id": "the-ohio-state-university--operations-business-analytics",
+          "name": "Department of Operations and Business Analytics",
+          "school": "Max M. Fisher College of Business",
+          "evidence": "Official department name, college header and operations/purchasing/supply-chain mission explicit.",
+          "sourceUrl": "https://fisher.osu.edu/academic-departments/operations-business-analytics/",
+          "fields": [
+            "operations-management",
+            "supply-chain"
+          ],
+          "checkedAt": "2026-10-20"
+        },
+        {
+          "type": "department",
+          "id": "the-ohio-state-university--marketing-logistics",
+          "name": "Department of Marketing and Logistics",
+          "school": "Max M. Fisher College of Business",
+          "evidence": "Official full department heading and separately identified Logistics faculty.",
+          "sourceUrl": "https://fisher.osu.edu/academic-departments/marketing-logistics/faculty-and-staff",
+          "fields": [
+            "logistics"
+          ],
+          "checkedAt": "2026-10-20"
+        },
+        {
+          "type": "department",
+          "id": "the-ohio-state-university--integrated-systems-engineering",
+          "name": "Department of Integrated Systems Engineering",
+          "school": "College of Engineering",
+          "evidence": "Official department name, university identity and OR/analytics research in production, scheduling, supply chain and logistics explicit.",
+          "sourceUrl": "https://ise.osu.edu/operations-research-analytics",
+          "fields": [
+            "operations-research",
+            "supply-chain",
+            "logistics"
+          ],
+          "checkedAt": "2026-10-20"
+        },
+        {
+          "type": "center",
+          "id": "the-ohio-state-university--operational-excellence",
+          "name": "Center for Operational Excellence",
+          "school": "Max M. Fisher College of Business",
+          "evidence": "Official named college center aims to improve processes, lead times, quality and supply-chain relationships; department page confirms affiliation.",
+          "sourceUrl": "https://fisher.osu.edu/centers-partnerships/coe/about-coe",
+          "fields": [
+            "operations-management",
+            "supply-chain"
+          ],
+          "checkedAt": "2026-10-20"
+        }
+      ],
+      "decisions": [
+        {
+          "sourceDepartmentId": "ohio-state-university",
+          "reason": "University placeholder is not an academic unit.",
+          "disposition": "not-a-unit",
+          "unitIds": []
+        },
+        {
+          "sourceDepartmentId": "ohio-state-university__max-m-fisher-college-of-business__management-science",
+          "reason": "Historical Management Science label is not independently established as current department or proved equivalent to current OBA; no guessed rename.",
+          "disposition": "unresolved",
+          "unitIds": []
+        },
+        {
+          "sourceDepartmentId": "ohio-state-university__max-m-fisher-college-of-business__marketing-and-logistics",
+          "reason": "Retained separately verified combined marketing/logistics department.",
+          "disposition": "replaced",
+          "unitIds": [
+            "the-ohio-state-university--marketing-logistics"
+          ]
+        },
+        {
+          "sourceDepartmentId": "ohio-state-university__max-m-fisher-college-of-business__operations-and-business-analytics",
+          "reason": "Normalized operations shorthand to full verified combined department.",
+          "disposition": "replaced",
+          "unitIds": [
+            "the-ohio-state-university--operations-business-analytics"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://fisher.osu.edu/academic-departments/operations-business-analytics/",
+          "outcome": "read",
+          "note": "Full operations department name and explicit scope.",
+          "checkedAt": "2026-10-20"
+        },
+        {
+          "url": "https://fisher.osu.edu/academic-departments/marketing-logistics/faculty-and-staff",
+          "outcome": "read",
+          "note": "Distinct Marketing and Logistics department.",
+          "checkedAt": "2026-10-20"
+        },
+        {
+          "url": "https://ise.osu.edu/",
+          "outcome": "read",
+          "note": "Full engineering department, college parent and The Ohio State University identity.",
+          "checkedAt": "2026-10-20"
+        },
+        {
+          "url": "https://ise.osu.edu/operations-research-analytics",
+          "outcome": "read",
+          "note": "Engineering OR, industrial-systems, supply-chain and logistics research scope.",
+          "checkedAt": "2026-10-20"
+        },
+        {
+          "url": "https://fisher.osu.edu/centers-partnerships/coe/about-coe",
+          "outcome": "read",
+          "note": "Operational excellence center full name and remit.",
+          "checkedAt": "2026-10-20"
+        }
+      ],
+      "limitations": [
+        "Historical Management Science source wording not treated as a verified rename; current full departments recorded independently."
+      ],
+      "duplicateOf": null,
+      "addedAt": "2026-10-21T06:57:04Z",
+      "updatedAt": "2026-10-21T11:14:34Z",
+      "doctoralReview": {
+        "status": "verified",
+        "checkedAt": "2026-10-21",
+        "programmeIds": [
+          "the-ohio-state-university--phd-business-administration-logistics",
+          "the-ohio-state-university--phd-business-administration-operations-management",
+          "the-ohio-state-university--phd-industrial-systems-engineering"
+        ],
+        "branches": [
+          {
+            "branch": "business",
+            "reviewState": "checked",
+            "conclusion": "Entire current Fisher PhD field inventory and separate OM and Logistics pages read. Logistics no-new-openings notice conflicts with general inventory appearance and retained as active programme with specific intake limitation.",
+            "sourceUrls": [
+              "https://fisher.osu.edu/graduate/phd-programs",
+              "https://fisher.osu.edu/academic-departments/management-sciences/operations-management-phd",
+              "https://fisher.osu.edu/academic-departments/marketing-logistics/current-prospective-students/ph.d.-logistics"
+            ]
+          },
+          {
+            "branch": "engineering",
+            "reviewState": "checked",
+            "conclusion": "Entire College engineering/Knowlton graduate inventory read, plus ISE current umbrella and OR doctoral pages; OR is concentration within ISE, no duplicate degree enumeration.",
+            "sourceUrls": [
+              "https://gpadmissions.osu.edu/programs/program.aspx?prog=0121",
+              "https://ise.osu.edu/graduate-programs-ms-and-phd-operations-research",
+              "https://ise.osu.edu/graduate-program",
+              "https://engineering.osu.edu/graduate/graduate-students/degrees-programs"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://gpadmissions.osu.edu/programs/program.aspx?prog=0121",
+            "checkedAt": "2026-10-21",
+            "outcome": "read",
+            "note": "Read full official ISE PhD degree description, concentration inventory and exact credential."
+          },
+          {
+            "url": "https://ise.osu.edu/graduate-programs-ms-and-phd-operations-research",
+            "checkedAt": "2026-10-21",
+            "outcome": "read",
+            "note": "Read full OR doctoral curriculum/research page; retained as concentration of ISE umbrella."
+          },
+          {
+            "url": "https://ise.osu.edu/graduate-program",
+            "checkedAt": "2026-10-21",
+            "outcome": "read",
+            "note": "Read current department graduate page confirming ISE M.S./Ph.D. and concentration model."
+          },
+          {
+            "url": "https://fisher.osu.edu/graduate/phd-programs",
+            "checkedAt": "2026-10-21",
+            "outcome": "read",
+            "note": "Read complete current Fisher doctoral inventory and Business Administration field mapping."
+          },
+          {
+            "url": "https://fisher.osu.edu/academic-departments/management-sciences/operations-management-phd",
+            "checkedAt": "2026-10-21",
+            "outcome": "read",
+            "note": "Read current OM doctorate departmental host and research design."
+          },
+          {
+            "url": "https://fisher.osu.edu/academic-departments/marketing-logistics/current-prospective-students/ph.d.-logistics",
+            "checkedAt": "2026-10-21",
+            "outcome": "read",
+            "note": "Read entire Logistics PhD page including current cohort and explicit no-new-openings notice."
+          },
+          {
+            "url": "https://engineering.osu.edu/graduate/graduate-students/degrees-programs",
+            "checkedAt": "2026-10-21",
+            "outcome": "read",
+            "note": "Read complete College engineering/Knowlton graduate inventory."
+          }
+        ],
+        "limitations": [
+          "Logistics next-academic-year intake has no openings according to programme page; no indefinite suspension, permanent closure or exact calendar closure inferred.",
+          "Current department Integrated Systems Engineering differs from Industrial and Systems Engineering award title; retained separately."
+        ],
+        "coverageComplete": true
+      }
+    },
+    {
+      "id": "ohio-state-university",
+      "status": "reviewed",
+      "canonicalName": "The Ohio State University",
+      "universitySourceUrl": "https://ise.osu.edu/",
+      "checkedAt": "2026-10-20",
+      "reviewer": "Codex in Chrome",
+      "units": [
+        {
+          "type": "department",
+          "id": "the-ohio-state-university--operations-business-analytics",
+          "name": "Department of Operations and Business Analytics",
+          "school": "Max M. Fisher College of Business",
+          "evidence": "Official department name, college header and operations/purchasing/supply-chain mission explicit.",
+          "sourceUrl": "https://fisher.osu.edu/academic-departments/operations-business-analytics/",
+          "fields": [
+            "operations-management",
+            "supply-chain"
+          ],
+          "checkedAt": "2026-10-20"
+        },
+        {
+          "type": "department",
+          "id": "the-ohio-state-university--marketing-logistics",
+          "name": "Department of Marketing and Logistics",
+          "school": "Max M. Fisher College of Business",
+          "evidence": "Official full department heading and separately identified Logistics faculty.",
+          "sourceUrl": "https://fisher.osu.edu/academic-departments/marketing-logistics/faculty-and-staff",
+          "fields": [
+            "logistics"
+          ],
+          "checkedAt": "2026-10-20"
+        },
+        {
+          "type": "department",
+          "id": "the-ohio-state-university--integrated-systems-engineering",
+          "name": "Department of Integrated Systems Engineering",
+          "school": "College of Engineering",
+          "evidence": "Official department name, university identity and OR/analytics research in production, scheduling, supply chain and logistics explicit.",
+          "sourceUrl": "https://ise.osu.edu/operations-research-analytics",
+          "fields": [
+            "operations-research",
+            "supply-chain",
+            "logistics"
+          ],
+          "checkedAt": "2026-10-20"
+        },
+        {
+          "type": "center",
+          "id": "the-ohio-state-university--operational-excellence",
+          "name": "Center for Operational Excellence",
+          "school": "Max M. Fisher College of Business",
+          "evidence": "Official named college center aims to improve processes, lead times, quality and supply-chain relationships; department page confirms affiliation.",
+          "sourceUrl": "https://fisher.osu.edu/centers-partnerships/coe/about-coe",
+          "fields": [
+            "operations-management",
+            "supply-chain"
+          ],
+          "checkedAt": "2026-10-20"
+        }
+      ],
+      "decisions": [
+        {
+          "sourceDepartmentId": "ohio-state-university____om-ba",
+          "reason": "Normalized operations shorthand to full verified combined department.",
+          "disposition": "replaced",
+          "unitIds": [
+            "the-ohio-state-university--operations-business-analytics"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://fisher.osu.edu/academic-departments/operations-business-analytics/",
+          "outcome": "read",
+          "note": "Full operations department name and explicit scope.",
+          "checkedAt": "2026-10-20"
+        },
+        {
+          "url": "https://fisher.osu.edu/academic-departments/marketing-logistics/faculty-and-staff",
+          "outcome": "read",
+          "note": "Distinct Marketing and Logistics department.",
+          "checkedAt": "2026-10-20"
+        },
+        {
+          "url": "https://ise.osu.edu/",
+          "outcome": "read",
+          "note": "Full engineering department, college parent and The Ohio State University identity.",
+          "checkedAt": "2026-10-20"
+        },
+        {
+          "url": "https://ise.osu.edu/operations-research-analytics",
+          "outcome": "read",
+          "note": "Engineering OR, industrial-systems, supply-chain and logistics research scope.",
+          "checkedAt": "2026-10-20"
+        },
+        {
+          "url": "https://fisher.osu.edu/centers-partnerships/coe/about-coe",
+          "outcome": "read",
+          "note": "Operational excellence center full name and remit.",
+          "checkedAt": "2026-10-20"
+        }
+      ],
+      "limitations": [
+        "Historical Management Science source wording not treated as a verified rename; current full departments recorded independently."
+      ],
+      "duplicateOf": "the-ohio-state-university",
+      "addedAt": "2026-10-21T06:57:04Z",
+      "updatedAt": "2026-10-21T11:14:34Z",
+      "doctoralReview": {
+        "status": "verified",
+        "checkedAt": "2026-10-21",
+        "programmeIds": [
+          "the-ohio-state-university--phd-business-administration-logistics",
+          "the-ohio-state-university--phd-business-administration-operations-management",
+          "the-ohio-state-university--phd-industrial-systems-engineering"
+        ],
+        "branches": [
+          {
+            "branch": "business",
+            "reviewState": "checked",
+            "conclusion": "Entire current Fisher PhD field inventory and separate OM and Logistics pages read. Logistics no-new-openings notice conflicts with general inventory appearance and retained as active programme with specific intake limitation.",
+            "sourceUrls": [
+              "https://fisher.osu.edu/graduate/phd-programs",
+              "https://fisher.osu.edu/academic-departments/management-sciences/operations-management-phd",
+              "https://fisher.osu.edu/academic-departments/marketing-logistics/current-prospective-students/ph.d.-logistics"
+            ]
+          },
+          {
+            "branch": "engineering",
+            "reviewState": "checked",
+            "conclusion": "Entire College engineering/Knowlton graduate inventory read, plus ISE current umbrella and OR doctoral pages; OR is concentration within ISE, no duplicate degree enumeration.",
+            "sourceUrls": [
+              "https://gpadmissions.osu.edu/programs/program.aspx?prog=0121",
+              "https://ise.osu.edu/graduate-programs-ms-and-phd-operations-research",
+              "https://ise.osu.edu/graduate-program",
+              "https://engineering.osu.edu/graduate/graduate-students/degrees-programs"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://gpadmissions.osu.edu/programs/program.aspx?prog=0121",
+            "checkedAt": "2026-10-21",
+            "outcome": "read",
+            "note": "Read full official ISE PhD degree description, concentration inventory and exact credential."
+          },
+          {
+            "url": "https://ise.osu.edu/graduate-programs-ms-and-phd-operations-research",
+            "checkedAt": "2026-10-21",
+            "outcome": "read",
+            "note": "Read full OR doctoral curriculum/research page; retained as concentration of ISE umbrella."
+          },
+          {
+            "url": "https://ise.osu.edu/graduate-program",
+            "checkedAt": "2026-10-21",
+            "outcome": "read",
+            "note": "Read current department graduate page confirming ISE M.S./Ph.D. and concentration model."
+          },
+          {
+            "url": "https://fisher.osu.edu/graduate/phd-programs",
+            "checkedAt": "2026-10-21",
+            "outcome": "read",
+            "note": "Read complete current Fisher doctoral inventory and Business Administration field mapping."
+          },
+          {
+            "url": "https://fisher.osu.edu/academic-departments/management-sciences/operations-management-phd",
+            "checkedAt": "2026-10-21",
+            "outcome": "read",
+            "note": "Read current OM doctorate departmental host and research design."
+          },
+          {
+            "url": "https://fisher.osu.edu/academic-departments/marketing-logistics/current-prospective-students/ph.d.-logistics",
+            "checkedAt": "2026-10-21",
+            "outcome": "read",
+            "note": "Read entire Logistics PhD page including current cohort and explicit no-new-openings notice."
+          },
+          {
+            "url": "https://engineering.osu.edu/graduate/graduate-students/degrees-programs",
+            "checkedAt": "2026-10-21",
+            "outcome": "read",
+            "note": "Read complete College engineering/Knowlton graduate inventory."
+          }
+        ],
+        "limitations": [
+          "Logistics next-academic-year intake has no openings according to programme page; no indefinite suspension, permanent closure or exact calendar closure inferred.",
+          "Current department Integrated Systems Engineering differs from Industrial and Systems Engineering award title; retained separately."
+        ],
+        "coverageComplete": true
+      }
+    }
+  ]
+}
