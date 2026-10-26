@@ -12,8 +12,8 @@ Generated from committed-format public datasets by `node scripts/update-research
 | Researched but unresolved | 1070 |
 | Degree completion unconfirmed | 4 |
 | Pending individual review | 0 |
-| Named-scope doctoral register records, including historical and unresolved routes | 404 |
-| Verified relevant doctoral routes (tracks may overlap; admissions may be suspended) | 395 |
+| Named-scope doctoral register records, including historical and unresolved routes | 405 |
+| Verified relevant doctoral routes (tracks may overlap; admissions may be suspended) | 396 |
 | Institutions with verified relevant doctoral provision | 299 |
 | Names on program graduate and placement pages (person-years) | 14451 |
 | of which listed under an operations area | 2161 |
@@ -21,12 +21,12 @@ Generated from committed-format public datasets by `node scripts/update-research
 | Listed names already in the people database | 406 |
 | LinkedIn profiles with published history observations | 6 |
 | of which all accessible Experience entries read | 6 |
-| University directory records with completed official-source reviews | 598 |
-| University directory records partially reviewed | 229 |
+| University directory records with completed official-source reviews | 599 |
+| University directory records partially reviewed | 228 |
 | University directory records blocked by source access | 5 |
 | University directory records awaiting review | 0 |
 | Discovery source records with doctoral observations | 811 |
-| of which current branch scope explicitly complete | 595 |
+| of which current branch scope explicitly complete | 600 |
 
 The program register is partial. It includes historical/predecessor records; its total is not the number of active programs worldwide. The graduate lists are what the programs' own pages list (live and archived copies), with the year's meaning as each page gives it; they are partial rosters, not a census. No complete graduate census, comprehensive employment-history panel, advisor dataset or publication-at-graduation dataset has been collected yet. Their schema and research rules are prepared.
 

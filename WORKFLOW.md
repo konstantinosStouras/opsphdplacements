@@ -337,3 +337,6 @@ Continuation370 (25 October 2026): Additional source-linked doctoral hosts and n
 Continuation380 (25 October 2026): Reconcile source unit assertions by exact source record, school and department tuple, using the actual host and previously read official unit evidence. Preserve original source/check dates and unit type. Compound school-plus-department wording is not another department. Equal generic abbreviations under different schools do not authorize cross-school mapping. Source assertion accounting does not establish doctoral eligibility, historical unit continuity or an individual employment fact.
 
 Continuation 440 visitor evidence audit: expanded organisation evidence includes both university/unit sources and separately stored doctoral-coverage sources, deduplicated by URL, check date, outcome and note. Inspect a completed negative doctoral review as well as a qualifying programme; the initial view alone cannot reveal missing coverage evidence links. Preserve plain-language display filtering for both source sets.
+# Remaining-school report dates
+
+`node scripts/report-stage1-remaining.mjs` derives its report heading date from the current UTC generation date. This is a planning-snapshot date, not a new source check; original evidence dates remain in the records.

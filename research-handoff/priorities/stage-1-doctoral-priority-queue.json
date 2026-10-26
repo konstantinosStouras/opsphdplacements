@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-10-25",
+  "asOf": "2026-10-26",
   "state": "Stage 1 discovery priority; Stage 2 held",
   "method": "First verify PhD institutions reported by the 2,149 OM List faculty, ranked by number of reported faculty; then expand to other OM List/Operations Academia university and job-source candidates. Names are linked only by accepted exact aliases. Imported degree institutions do not establish relevant field, current doctoral provision, degree completion or uninterrupted programme history.",
   "totalOmListFaculty": 2149,
@@ -9,7 +9,7 @@
   "matchedLeads": 349,
   "unresolvedLeads": 6,
   "withVerifiedCurrentRoutes": 226,
-  "withCompletedCurrentBranchScope": 183,
+  "withCompletedCurrentBranchScope": 186,
   "records": [
     {
       "id": "massachusetts-institute-of-technology",
@@ -5189,26 +5189,30 @@
       "doctoralObservations": [
         {
           "status": "verified",
-          "checkedAt": "2026-10-21",
+          "checkedAt": "2026-10-25",
           "programmeIds": [
+            "erasmus-university-rotterdam--econometrics-management-science-phd",
             "erasmus-university-rotterdam--management-economics-bplis"
           ],
           "branches": [
             {
               "branch": "business",
-              "reviewState": "partial",
-              "conclusion": "ERIM current doctoral programme and explicitly relevant BPLIS specialisation verified. RSM TOM department and Economics Econometric Institute/OR group read. Additional Economics OR doctoral pathway mapping still unresolved; revisit returned individual503 source error.",
+              "reviewState": "checked",
+              "conclusion": "Current ESE PhD programme lists all five doctoral study fields; Econometrics and Management Science is explicit. ERIM BPLIS specialization and RSM TOM department previously checked. The ESE research programme page connects the Management Science theme to the Econometric Institute; no additional relevant named current business field remains in the opened bounded inventory.",
               "sourceUrls": [
                 "https://www.rsm.nl/faculty-research/departments/technology-and-operations-management/",
                 "https://www.rsm.nl/faculty-research/phd-in-management/full-time-phd-programme/",
                 "https://www.eur.nl/en/ese/department-econometrics/about-econometric-institute",
-                "https://www.eur.nl/en/ese/research/phd"
+                "https://www.eur.nl/en/ese/research/phd",
+                "https://www.eur.nl/en/ese/research/phd/phd-programme",
+                "https://www.eur.nl/en/ese/research/research-programmes/econometrics-and-management-science",
+                "https://www.eur.nl/en/ese/research/phd/phd-programme/erasmus-phd-programmes-management-and-economics/full-time"
               ]
             },
             {
               "branch": "engineering",
               "reviewState": "not-present",
-              "conclusion": "Full current university faculty/institute inventory checked; no standalone engineering faculty. Relevant technical Operations Research resides in Economics Econometric Institute, whose additional doctoral pathway mapping remains unresolved.",
+              "conclusion": "Full current university faculty/institute inventory checked; no standalone engineering faculty. The Econometric Institute / Operations Research unit sits within ESE and is linked to the named ESE doctoral field Econometrics and Management Science.",
               "sourceUrls": [
                 "https://www.eur.nl/en/about-university/organisation"
               ]
@@ -5274,14 +5278,37 @@
               "checkedAt": "2026-10-21",
               "outcome": "blocked",
               "note": "Later parent-requested follow-up in Chrome returned This site cannot be reached / ERR_CONNECTION_TIMED_OUT. Earlier read/503 observations preserved; no repeated reload or access bypass attempted."
+            },
+            {
+              "url": "https://www.eur.nl/en/ese/research/phd/phd-programme",
+              "note": "Current official ESE PhD page opened; all five named fields read, including Econometrics and Management Science.",
+              "checkedAt": "2026-10-25",
+              "outcome": "read"
+            },
+            {
+              "url": "https://www.eur.nl/en/ese/research/research-programmes/econometrics-and-management-science",
+              "note": "Current official ESE research-programme page opened; Econometric Institute programme has Econometrics and Management Science themes and names operations research within its remit. Research-programme page alone not treated as an award.",
+              "checkedAt": "2026-10-25",
+              "outcome": "read"
+            },
+            {
+              "url": "https://www.eur.nl/en/ese/research/phd/phd-programme/erasmus-phd-programmes-management-and-economics/full-time",
+              "note": "Current official ERIM full-time programme page opened; confirms ESE PhD degree and relationship to ERIM hosted programme.",
+              "checkedAt": "2026-10-25",
+              "outcome": "read"
+            },
+            {
+              "url": "https://www.eur.nl/en/ese/research/phd/phd-programme",
+              "checkedAt": "2026-10-26",
+              "outcome": "read",
+              "note": "Integrator read the full current ESE PhD inventory: five formal fields, including Econometrics and Management Science. No separately titled award or independent student population inferred."
             }
           ],
           "limitations": [
-            "Current engineering/technical inventory and additional possible Operations Research doctoral pathway not fully resolved.",
-            "Economics OR doctoral overview revisit returned503; full faculty scope now checked, but possible additional OR doctoral route still requires exact award/programme evidence.",
-            "Later Economics PhD follow-up timed out at official university server; exact additional OR doctoral pathway still unknown."
+            "The current named-field doctoral inventory is bounded complete from official ESE PhD, ERIM specialization and university faculty pages. The two registered routes are named fields/pathways and may share an ESE/ERIM PhD population; do not sum them as distinct students or awards. Earlier 503 and timeout attempts remain in source history.",
+            "Integrator read the current official ESE PhD field inventory on 26 October 2026 and confirmed its explicit Econometrics and Management Science field. Existing BPLIS programme facts are preserved separately."
           ],
-          "coverageComplete": false
+          "coverageComplete": true
         },
         {
           "status": "verified",
@@ -5381,10 +5408,11 @@
         }
       ],
       "verifiedCurrentProgrammeIds": [
-        "erasmus-university-rotterdam--management-economics-bplis"
+        "erasmus-university-rotterdam--management-economics-bplis",
+        "erasmus-university-rotterdam--econometrics-management-science-phd"
       ],
-      "branchCoverageComplete": false,
-      "nextStep": "Verify official current relevant doctoral routes across business and engineering; record branch gaps"
+      "branchCoverageComplete": true,
+      "nextStep": "Current scoped doctoral inventory checked; retain evidence and historical limitations"
     },
     {
       "id": "the-university-of-texas-at-austin",
@@ -21388,7 +21416,7 @@
       "doctoralObservations": [
         {
           "status": "verified",
-          "checkedAt": "2026-10-22",
+          "checkedAt": "2026-10-25",
           "programmeIds": [
             "george-washington-university--business-decision-sciences-phd",
             "george-washington-university--systems-engineering-operations-research-phd"
@@ -21405,8 +21433,8 @@
             },
             {
               "branch": "engineering",
-              "reviewState": "partial",
-              "conclusion": "EMSE Systems Engineering PhD now explicitly verified with named Operations Research and Management Science focus from current bulletin, resolving earlier field-level gap. Engineering Management doctorate confirmed as research credential but its programme-level Ops field remains unestablished; overview contains erroneous online-masters prose under PhD heading. School-wide six-department inventory read, other departments not yet fully checked; coverage remains incomplete.",
+              "reviewState": "checked",
+              "conclusion": "Current 2026–27 SEAS bulletin lists every school doctoral degree title across the six departments. Only the previously recorded Systems Engineering PhD explicitly names an Operations Research and Management Science focus. Its Engineering Management PhD doctorate requirements page lists dissertation and individually selected focus but no additional formally named Ops/MS/IE focus. Computer Science PhD page enumerates all named focus areas and none matches. Other listed engineering degree titles lack the strict named title/qualifying host; no courses, labs or faculty topics turned into routes.",
               "sourceUrls": [
                 "https://emse.engineering.gwu.edu/academics",
                 "https://emse.engineering.gwu.edu/phd-or-deng-engineering-management#PhDinEngineeringManagement",
@@ -21415,7 +21443,8 @@
                 "https://emse.engineering.gwu.edu/phd-systems-engineering",
                 "https://emse.engineering.gwu.edu/phd-or-deng-engineering-management",
                 "https://bulletin.gwu.edu/engineering-applied-science/engineering-management-systems-engineering/phd-engineering-management/",
-                "https://bulletin.gwu.edu/engineering-applied-science/"
+                "https://bulletin.gwu.edu/engineering-applied-science/",
+                "https://bulletin.gwu.edu/engineering-applied-science/computer-science/phd/"
               ]
             }
           ],
@@ -21485,23 +21514,37 @@
               "checkedAt": "2026-10-22",
               "outcome": "read",
               "note": "Full current engineering school overview read: six exact departments and degrees; individual non-EMSE doctoral areas not yet exhausted."
+            },
+            {
+              "url": "https://bulletin.gwu.edu/engineering-applied-science/",
+              "checkedAt": "2026-10-25",
+              "outcome": "read",
+              "note": "Read complete 2026–27 SEAS doctoral programmes list and six-department faculty structure; only previous Systems Engineering programme has documented formal OR/MS focus."
+            },
+            {
+              "url": "https://bulletin.gwu.edu/engineering-applied-science/computer-science/phd/",
+              "checkedAt": "2026-10-25",
+              "outcome": "read",
+              "note": "Read CS PhD page and its full named focus-area list; no exact Operations/Management Science/Industrial Engineering focus."
+            },
+            {
+              "url": "https://bulletin.gwu.edu/engineering-applied-science/engineering-management-systems-engineering/phd-engineering-management/",
+              "checkedAt": "2026-10-25",
+              "outcome": "read",
+              "note": "Read EM PhD curriculum/requirements and admissions focus wording; no formally named eligible focus. Overview includes misplaced online master prose, so no award fact based on it."
             }
           ],
           "limitations": [
-            "Full current engineering doctoral coverage incomplete.",
-            "Fall2027 business intake closed; no inferred suspension, closure date or student-cohort status.",
-            "Historical/inexact imported ISTM administrative label remains separately unresolved.",
-            "New engineering OR-focus route verified22October from explicit current bulletin; earlier generic-source observations and business21October source-check dates preserved.",
-            "Engineering Management bulletin has inconsistent overview; exact relevant doctoral field remains unresolved without inferring from general methods or title."
+            "This bounded current title/field review covers complete school doctoral-degree list and plausible named CS/EMSE focus menus; does not enumerate unrelated research projects or imply population coverage. The Fall 2027 Decision Sciences intake note is one cycle only."
           ],
-          "coverageComplete": false
+          "coverageComplete": true
         }
       ],
       "verifiedCurrentProgrammeIds": [
         "george-washington-university--systems-engineering-operations-research-phd"
       ],
-      "branchCoverageComplete": false,
-      "nextStep": "Verify official current relevant doctoral routes across business and engineering; record branch gaps"
+      "branchCoverageComplete": true,
+      "nextStep": "Current scoped doctoral inventory checked; retain evidence and historical limitations"
     },
     {
       "id": "university-of-oklahoma",
@@ -32659,7 +32702,7 @@
       "doctoralObservations": [
         {
           "status": "verified",
-          "checkedAt": "2026-10-21",
+          "checkedAt": "2026-10-26",
           "programmeIds": [
             "bayes-business-school--management-operations-phd"
           ],
@@ -32667,18 +32710,25 @@
             {
               "branch": "business",
               "reviewState": "partial",
-              "conclusion": "Conventional PhD inventory lists Accounting, Actuarial Science, Finance and Management/Marketing/Operations Management. Full Management programme explicitly verifies Operations domain. Separate Executive PhD is advertised but its detailed research field/credential scope has not yet been reviewed; no exclusion or inclusion guessed.",
+              "conclusion": "Existing full-time PhD Management/Marketing/Operations Management route remains verified. Current Bayes Executive PhD overview confirms a separate four-year part-time PhD with broad Management and Finance training streams; the detailed Management and research-topics pages timed out on full open. Whether Operations Management is a formal named doctoral research area within that distinct Executive PhD remains unresolved, so no additional route is inferred.",
               "sourceUrls": [
                 "https://www.bayes.citystgeorges.ac.uk/study/phd",
-                "https://www.bayes.citystgeorges.ac.uk/study/phd/management"
+                "https://www.bayes.citystgeorges.ac.uk/study/phd/management",
+                "https://www.bayes.citystgeorges.ac.uk/study/executive-phd",
+                "https://www.bayes.citystgeorges.ac.uk/study/executive-phd/management",
+                "https://www.bayes.citystgeorges.ac.uk/study/executive-phd/research-topics"
               ]
             },
             {
               "branch": "engineering",
-              "reviewState": "partial",
-              "conclusion": "School identity within current City St George's, University of London verified; university-wide engineering doctoral inventory not yet checked in this doctoral review. Earlier unit-only review does not complete doctoral scope.",
+              "reviewState": "checked",
+              "conclusion": "Current City St George’s university-wide postgraduate research-course inventory and Engineering department page enumerate the complete named Engineering doctorates: Civil Engineering, Electrical and Electronic Engineering, and Mechanical Engineering and Aeronautics. Current Mathematics and Computer Science PhD pages list their named research areas; none has a formal Ops/MS/IE title. Maritime Operations and Management appears only as an MSc, not a doctorate. No other strict-title doctoral route evidenced beyond the existing Bayes programme.",
               "sourceUrls": [
-                "https://www.bayes.citystgeorges.ac.uk/about"
+                "https://www.bayes.citystgeorges.ac.uk/about",
+                "https://www.citystgeorges.ac.uk/prospective-students/courses/research",
+                "https://www.citystgeorges.ac.uk/about/schools/science-technology/engineering",
+                "https://www.citystgeorges.ac.uk/prospective-students/courses/research/mathematics",
+                "https://www.citystgeorges.ac.uk/prospective-students/courses/research/computer-science"
               ]
             }
           ],
@@ -32718,17 +32768,58 @@
               "checkedAt": "2026-10-21",
               "outcome": "read",
               "note": "Read full current Management doctoral page: exact title, three broad domains, all research groupings, initial MPhil registration, four-year PhD/dissertation structure and October2026 start."
+            },
+            {
+              "url": "https://www.bayes.citystgeorges.ac.uk/study/executive-phd",
+              "checkedAt": "2026-10-25",
+              "outcome": "read",
+              "note": "Opened full Executive PhD overview: PhD thesis, four years part time, broad management and finance disciplinary training streams; no Operations-specific formal programme title on this overview."
+            },
+            {
+              "url": "https://www.bayes.citystgeorges.ac.uk/study/executive-phd/management",
+              "checkedAt": "2026-10-25",
+              "outcome": "blocked",
+              "note": "Twice full-open returned ordinary fetch timeout; search preview not used as verification of detailed named fields."
+            },
+            {
+              "url": "https://www.bayes.citystgeorges.ac.uk/study/executive-phd/research-topics",
+              "checkedAt": "2026-10-25",
+              "outcome": "blocked",
+              "note": "Full-open returned ordinary fetch timeout; search preview not used as field proof."
+            },
+            {
+              "url": "https://www.citystgeorges.ac.uk/prospective-students/courses/research",
+              "checkedAt": "2026-10-25",
+              "outcome": "read",
+              "note": "Opened complete current university postgraduate-research subject course list, including Business, Computing, Engineering and Mathematics doctoral titles."
+            },
+            {
+              "url": "https://www.citystgeorges.ac.uk/about/schools/science-technology/engineering",
+              "checkedAt": "2026-10-25",
+              "outcome": "read",
+              "note": "Opened current Engineering department page and its complete three research-degree titles; no Operations/IE doctoral title. Maritime Operations and Management is listed only under MSc."
+            },
+            {
+              "url": "https://www.citystgeorges.ac.uk/prospective-students/courses/research/mathematics",
+              "checkedAt": "2026-10-25",
+              "outcome": "read",
+              "note": "Opened full Mathematics PhD page; three named research areas are representation theory, mathematical physics and applied mathematics, with no Ops/MS/IE named field."
+            },
+            {
+              "url": "https://www.citystgeorges.ac.uk/prospective-students/courses/research/computer-science",
+              "checkedAt": "2026-10-25",
+              "outcome": "read",
+              "note": "Opened full Computer Science PhD page and its named research areas, none Ops/MS/IE."
             }
           ],
           "limitations": [
-            "Current university-wide engineering and separate Executive PhD scope remain unresolved; coverageComplete false.",
-            "Bayes and former Cass are one school within City St George's, University of London; no duplicate route or merger with London Business School/federal University of London umbrella inferred."
+            "Executive PhD in Management and research-topics detail pages timed out on full open, so business branch remains partial. Engineering/mathematics/computing current title inventory is bounded checked. Current academic programme record retained with original source dates; no duplicate Executive route invented."
           ],
           "coverageComplete": false
         },
         {
           "status": "verified",
-          "checkedAt": "2026-10-21",
+          "checkedAt": "2026-10-26",
           "programmeIds": [
             "bayes-business-school--management-operations-phd"
           ],
@@ -32736,18 +32827,25 @@
             {
               "branch": "business",
               "reviewState": "partial",
-              "conclusion": "Conventional PhD inventory lists Accounting, Actuarial Science, Finance and Management/Marketing/Operations Management. Full Management programme explicitly verifies Operations domain. Separate Executive PhD is advertised but its detailed research field/credential scope has not yet been reviewed; no exclusion or inclusion guessed.",
+              "conclusion": "Existing full-time PhD Management/Marketing/Operations Management route remains verified. Current Bayes Executive PhD overview confirms a separate four-year part-time PhD with broad Management and Finance training streams; the detailed Management and research-topics pages timed out on full open. Whether Operations Management is a formal named doctoral research area within that distinct Executive PhD remains unresolved, so no additional route is inferred.",
               "sourceUrls": [
                 "https://www.bayes.citystgeorges.ac.uk/study/phd",
-                "https://www.bayes.citystgeorges.ac.uk/study/phd/management"
+                "https://www.bayes.citystgeorges.ac.uk/study/phd/management",
+                "https://www.bayes.citystgeorges.ac.uk/study/executive-phd",
+                "https://www.bayes.citystgeorges.ac.uk/study/executive-phd/management",
+                "https://www.bayes.citystgeorges.ac.uk/study/executive-phd/research-topics"
               ]
             },
             {
               "branch": "engineering",
-              "reviewState": "partial",
-              "conclusion": "School identity within current City St George's, University of London verified; university-wide engineering doctoral inventory not yet checked in this doctoral review. Earlier unit-only review does not complete doctoral scope.",
+              "reviewState": "checked",
+              "conclusion": "Current City St George’s university-wide postgraduate research-course inventory and Engineering department page enumerate the complete named Engineering doctorates: Civil Engineering, Electrical and Electronic Engineering, and Mechanical Engineering and Aeronautics. Current Mathematics and Computer Science PhD pages list their named research areas; none has a formal Ops/MS/IE title. Maritime Operations and Management appears only as an MSc, not a doctorate. No other strict-title doctoral route evidenced beyond the existing Bayes programme.",
               "sourceUrls": [
-                "https://www.bayes.citystgeorges.ac.uk/about"
+                "https://www.bayes.citystgeorges.ac.uk/about",
+                "https://www.citystgeorges.ac.uk/prospective-students/courses/research",
+                "https://www.citystgeorges.ac.uk/about/schools/science-technology/engineering",
+                "https://www.citystgeorges.ac.uk/prospective-students/courses/research/mathematics",
+                "https://www.citystgeorges.ac.uk/prospective-students/courses/research/computer-science"
               ]
             }
           ],
@@ -32787,11 +32885,52 @@
               "checkedAt": "2026-10-21",
               "outcome": "read",
               "note": "Read full current Management doctoral page: exact title, three broad domains, all research groupings, initial MPhil registration, four-year PhD/dissertation structure and October2026 start."
+            },
+            {
+              "url": "https://www.bayes.citystgeorges.ac.uk/study/executive-phd",
+              "checkedAt": "2026-10-25",
+              "outcome": "read",
+              "note": "Opened full Executive PhD overview: PhD thesis, four years part time, broad management and finance disciplinary training streams; no Operations-specific formal programme title on this overview."
+            },
+            {
+              "url": "https://www.bayes.citystgeorges.ac.uk/study/executive-phd/management",
+              "checkedAt": "2026-10-25",
+              "outcome": "blocked",
+              "note": "Twice full-open returned ordinary fetch timeout; search preview not used as verification of detailed named fields."
+            },
+            {
+              "url": "https://www.bayes.citystgeorges.ac.uk/study/executive-phd/research-topics",
+              "checkedAt": "2026-10-25",
+              "outcome": "blocked",
+              "note": "Full-open returned ordinary fetch timeout; search preview not used as field proof."
+            },
+            {
+              "url": "https://www.citystgeorges.ac.uk/prospective-students/courses/research",
+              "checkedAt": "2026-10-25",
+              "outcome": "read",
+              "note": "Opened complete current university postgraduate-research subject course list, including Business, Computing, Engineering and Mathematics doctoral titles."
+            },
+            {
+              "url": "https://www.citystgeorges.ac.uk/about/schools/science-technology/engineering",
+              "checkedAt": "2026-10-25",
+              "outcome": "read",
+              "note": "Opened current Engineering department page and its complete three research-degree titles; no Operations/IE doctoral title. Maritime Operations and Management is listed only under MSc."
+            },
+            {
+              "url": "https://www.citystgeorges.ac.uk/prospective-students/courses/research/mathematics",
+              "checkedAt": "2026-10-25",
+              "outcome": "read",
+              "note": "Opened full Mathematics PhD page; three named research areas are representation theory, mathematical physics and applied mathematics, with no Ops/MS/IE named field."
+            },
+            {
+              "url": "https://www.citystgeorges.ac.uk/prospective-students/courses/research/computer-science",
+              "checkedAt": "2026-10-25",
+              "outcome": "read",
+              "note": "Opened full Computer Science PhD page and its named research areas, none Ops/MS/IE."
             }
           ],
           "limitations": [
-            "Current university-wide engineering and separate Executive PhD scope remain unresolved; coverageComplete false.",
-            "Bayes and former Cass are one school within City St George's, University of London; no duplicate route or merger with London Business School/federal University of London umbrella inferred."
+            "Executive PhD in Management and research-topics detail pages timed out on full open, so business branch remains partial. Engineering/mathematics/computing current title inventory is bounded checked. Current academic programme record retained with original source dates; no duplicate Executive route invented."
           ],
           "coverageComplete": false
         }
@@ -32828,7 +32967,7 @@
       "doctoralObservations": [
         {
           "status": "verified",
-          "checkedAt": "2026-10-22",
+          "checkedAt": "2026-10-25",
           "programmeIds": [
             "city-university-of-hong-kong--decision-analytics-operations-phd",
             "city-university-of-hong-kong--systems-engineering-phd"
@@ -32836,8 +32975,8 @@
           "branches": [
             {
               "branch": "business",
-              "reviewState": "partial",
-              "conclusion": "Full current six-department graduate research-area inventory read. DAO OR/OM PhD verified. Accountancy inventory also names interdisciplinary research with supply-chain management; its exact doctoral route and whether this constitutes a qualifying Operations field remain unresolved, so no automatic additional programme or completion claim. Information Systems draws OR methods for IS topics, not independently inferred an OR doctorate.",
+              "reviewState": "checked",
+              "conclusion": "The full six-department graduate research-area inventory, read 22 October, explicitly places named Operations Research/Operations Management PhD research in DAO. Accountancy lists interdisciplinary supply-chain management research without a distinct Operations, Management Science or Industrial Engineering doctoral field or eligible department title; Information Systems mentions OR methods only. Fresh DAO PhD page read 25 October confirms the existing route and OR/OM streams. No additional strict-title business doctoral route is evidenced by the bounded formal research-area inventory.",
               "sourceUrls": [
                 "https://www.cityu.edu.hk/pg/research-degree-programmes/research-areas",
                 "https://www.cb.cityu.edu.hk/dao/research_degree/",
@@ -32891,21 +33030,31 @@
               "checkedAt": "2026-10-22",
               "outcome": "read",
               "note": "Full current research degree page last modified24September 2026: exact PhD research credential, OM/manufacturing/logistics/SCM scope, thesis requirement, current application and study provision."
+            },
+            {
+              "url": "https://www.cb.cityu.edu.hk/dao/research_degree/",
+              "checkedAt": "2026-10-25",
+              "outcome": "read",
+              "note": "Fresh full current DAO research-degree page confirms MPhil/PhD and two core departmental areas including Operations Research/Operations Management; no new award inferred."
+            },
+            {
+              "url": "https://www.cityu.edu.hk/pg/research-degree-programmes/research-areas",
+              "checkedAt": "2026-10-25",
+              "outcome": "blocked",
+              "note": "Current revisit returned HTTP 403; no workaround attempted. The 22 October fully read official inventory remains dated evidence, not treated as freshly checked."
             }
           ],
           "limitations": [
-            "Accountancy interdisciplinary supply-chain topic requires scope/degree mapping before business inventory completion; coverageComplete false.",
-            "Current departmental official sources corroborate doctoral provision; archived DAO catalogue used only for stated exact title/award/stream, not current fees or unchanged cohort rules.",
-            "No university campus/name merger, historical rename date or individual graduate history inferred."
+            "Current business title scope is bounded by the 22 October full six-department official research-area inventory and fresh DAO page. This does not assert that Accountancy cannot supervise a supply-chain dissertation; its nonmatching topic does not establish another qualifying formal route. Current revisit of the central inventory returned 403; historic read and restriction retained. Systems Engineering is retained as a factual observation and excluded from the public qualifying count by the strict title rule; research topics alone do not qualify it."
           ],
-          "coverageComplete": false
+          "coverageComplete": true
         }
       ],
       "verifiedCurrentProgrammeIds": [
         "city-university-of-hong-kong--decision-analytics-operations-phd"
       ],
-      "branchCoverageComplete": false,
-      "nextStep": "Verify official current relevant doctoral routes across business and engineering; record branch gaps"
+      "branchCoverageComplete": true,
+      "nextStep": "Current scoped doctoral inventory checked; retain evidence and historical limitations"
     },
     {
       "id": "clausthal-university-of-technology",

@@ -26,7 +26,7 @@ const remaining=[...groups.values()].filter(g=>g.unitStates.size||!g.doctoralCom
 const unresolved=doctoral.records.filter(r=>r.identityMatch==='unresolved discovery label')
   .sort((a,b)=>collator.compare(a.name,b.name));
 const lines=[
-  '# Stage 1 institutions still needing checks — updated 25 October 2026',
+  `# Stage 1 institutions still needing checks — updated ${new Intl.DateTimeFormat('en-GB',{day:'numeric',month:'long',year:'numeric',timeZone:'UTC'}).format(new Date())}`,
   '',
   'This is an alphabetical planning snapshot from the published university frame and the OM List reported-PhD-institution queue. It is **not** a list of confirmed PhD providers. Some institutions already have frozen official-source proposals awaiting integrator review and publication; they remain here until the public register records the outcome. A missing or partial doctoral review never means that no qualifying doctorate exists.',
   '',
