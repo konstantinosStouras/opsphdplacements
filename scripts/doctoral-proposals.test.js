@@ -26,6 +26,15 @@ test('Stage 1 public title gate keeps named Ops and IE awards without promoting 
  assert(!hasNamedOperationsScope('PhD in Systems Engineering'));
 });
 const universities=[{id:'u'},{id:'other'}],reviews=[{id:'u',duplicateOf:null,units:[{id:'u--operations'}]},{id:'other',duplicateOf:null,units:[{id:'other--ie'}]}];
+
+test('official singular Operation Management field remains visible without admitting generic engineering operations',()=>{
+ const p={programName:'Business Administration',degree:'PhD',specialization:'Operation Management',status:'active',unitIds:[]};
+ assert(isCurrentPhdProgramme(p)&&isNamedOperationsProgramme(p));
+ assert.equal(p.specialization,'Operation Management');
+ assert(!isNamedOperationsProgramme({...p,specialization:'Operation of industrial machines'}));
+ assert(!isNamedOperationsProgramme({...p,specialization:'Cooperation management'}));
+ assert(!isNamedOperationsProgramme({...p,titleScopeReview:{decision:'excluded'}}));
+});
 test('reviewed descriptive research topics cannot re-enter the named-title register',()=>{
  const p={programName:'PhD in Mechanical Engineering',specialization:'Operations Management laboratory research',unitIds:['lab'],titleScopeReview:{decision:'excluded'}};
  assert(!isNamedOperationsProgramme(p,[{id:'lab',name:'Operations Management Laboratory'}]));
