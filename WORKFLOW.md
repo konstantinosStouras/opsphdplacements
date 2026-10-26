@@ -351,3 +351,7 @@ Official singular field wording (26 October 2026): the precise title “Operatio
 
 
 Portuguese title-display correction (26 October 2026): exact Portuguese Operações and Pesquisa Operacional are accepted equivalents of Operations and Operations Research. The FGV official eight-department list and expanded doctoral Controle e Otimização panel were re-read; the latter explicitly names Otimização Estocástica e Pesquisa Operacional as a research subfield. Preserve these original titles and separate fact dates. Word boundaries prevent matching unrelated cooperações or generic operacional wording. The public change restores one existing doctoral record and one existing department; it creates no new degree or unit. Generic Engenharia de Produção remains excluded under the owner’s title rule. Compare the complete dataset against the previous helper to detect unintended scope changes.
+
+## Parallel stages authorized — 26 October 2026
+
+The owner now explicitly starts Stages 2–4 in three separate project chats while Stage 1 continues. This supersedes earlier sequential holds; it does not mark any stage complete or resume automation. Read [parallel-stage ownership and reporting](research-handoff/parallel-stages-2026-10-26/README.md). Each research chat writes only its assigned proposal lane; the originating chat alone integrates public data and commits/publishes. Every chat states its scope, completed work, remaining tasks, blockers and next action at each checkpoint. Evidence and named-title rules remain unchanged.

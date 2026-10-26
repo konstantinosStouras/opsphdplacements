@@ -1,5 +1,7 @@
 # Operations PhD Placements
 
+Current owner instruction, 26 October 2026: Stages 2–4 are authorized to start in three separate project chats alongside continuing Stage 1. Earlier hold statements below are historical checkpoints. Shared-checkout ownership, identity precedence and mandatory progress reports are in [the parallel-stage contract](research-handoff/parallel-stages-2026-10-26/README.md). Automation stays paused; only the originating integrator publishes.
+
 Public website: https://www.stouras.com/opsphdplacements/
 
 Stage 1 integration checkpoint (26 October 2026): 410 qualifying current doctoral programmes and named fields at 306 institutions. Of 835 source records, 633 unit reviews are complete, 197 partial and five blocked; 633 of 818 doctoral observations have complete current branch checks. There are 253 grouped incomplete identities and three unmatched OM List reported-degree labels. Reconciled stale unit-review limitations at Leipzig, Magdeburg, Brighton, Geneva and Southampton against their later published inventories. Stage 1 incomplete; Stages 2–4 held. See [current handoff](research-handoff/universities/continuation-720/README.md).
