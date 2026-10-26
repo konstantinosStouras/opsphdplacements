@@ -1,0 +1,12 @@
+import fs from 'node:fs';import crypto from 'node:crypto';import {execFileSync} from 'node:child_process';
+const root='research-handoff/universities/',dir=root+'continuation-530',read=p=>JSON.parse(fs.readFileSync(p)),write=(p,v)=>fs.writeFileSync(p,JSON.stringify(v,null,2)+'\n'),reviews=new Map(read('data/university-reviews.json').records.map(r=>[r.id,r]));
+const union=(a,b)=>[...new Map([...a,...b].map(s=>[JSON.stringify(s),s])).values()],list=(n,suffix,shard)=>fs.readdirSync(root+'continuation-'+n+'/shard-'+shard).filter(f=>f.endsWith(suffix)).map(f=>root+'continuation-'+n+'/shard-'+shard+'/'+f);
+const originals=[...[433,434,435,436,437].flatMap(n=>list(n,'.unit.json','a')),...[341,346].flatMap(n=>list(n,'.unit.json','b'))];
+const unitInputs=originals.map(path=>{const p=read(path);p.sources=union(reviews.get(p.id)?.sources||[],p.sources);const out=dir+'/'+p.id+'-unit-integration.json';write(out,p);return out;});
+const originalScopes=[...list(432,'.doctoral.json','a'),root+'continuation-353/shard-c/queensland.complete-bounded-negative-doctoral-scope.json'];
+const scopes=originalScopes.map(path=>{const p=read(path);p.sources=union(reviews.get(p.universityId)?.doctoralReview?.sources||[],p.sources);const out=dir+'/'+p.universityId+'-scope-integration.json';write(out,p);return out;});
+const assertionInputs=[341,346].flatMap(n=>list(n,'assertion-proposals.json','b'));
+const m={baseCommit:execFileSync('git',['rev-parse','HEAD'],{encoding:'utf8'}).trim(),sources:[],unitInputs,programmes:[],scopes,assertionInputs,originalUnits:originals,originalScopes};
+m.frozenInputs=[...unitInputs,...scopes,...assertionInputs,...originals,...originalScopes].map(path=>({path,sha256:crypto.createHash('sha256').update(fs.readFileSync(path)).digest('hex')}));write(dir+'/integration-manifest.json',m);
+for(const f of ['apply-phase.mjs','apply-assertions.mjs'])fs.writeFileSync(dir+'/'+f,fs.readFileSync(root+'continuation-520/'+f,'utf8').replaceAll('continuation-520','continuation-530'));
+console.log({units:unitInputs.length,scopes:scopes.length,assertions:assertionInputs.reduce((n,p)=>n+read(p).records.length,0)});

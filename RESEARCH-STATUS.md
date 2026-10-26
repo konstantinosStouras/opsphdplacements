@@ -21,12 +21,12 @@ Generated from committed-format public datasets by `node scripts/update-research
 | Listed names already in the people database | 406 |
 | LinkedIn profiles with published history observations | 6 |
 | of which all accessible Experience entries read | 6 |
-| University directory records with completed official-source reviews | 615 |
-| University directory records partially reviewed | 215 |
+| University directory records with completed official-source reviews | 620 |
+| University directory records partially reviewed | 210 |
 | University directory records blocked by source access | 5 |
 | University directory records awaiting review | 0 |
 | Discovery source records with doctoral observations | 814 |
-| of which current branch scope explicitly complete | 613 |
+| of which current branch scope explicitly complete | 614 |
 
 The program register is partial. It includes historical/predecessor records; its total is not the number of active programs worldwide. The graduate lists are what the programs' own pages list (live and archived copies), with the year's meaning as each page gives it; they are partial rosters, not a census. No complete graduate census, comprehensive employment-history panel, advisor dataset or publication-at-graduation dataset has been collected yet. Their schema and research rules are prepared.
 

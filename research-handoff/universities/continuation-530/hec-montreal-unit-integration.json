@@ -1,0 +1,116 @@
+{
+  "id": "hec-montreal",
+  "status": "reviewed",
+  "canonicalName": "HEC Montréal",
+  "universitySourceUrl": "https://www.hec.ca/en/management/index.html",
+  "checkedAt": "2026-10-26",
+  "reviewer": "Codex via opened current official HEC Montréal department and complete services/department list",
+  "units": [
+    {
+      "id": "hec-montreal--logistics-operations-management",
+      "name": "Department of Logistics and Operations Management",
+      "school": null,
+      "type": "department",
+      "fields": [
+        "logistics",
+        "operations-management",
+        "operations-research",
+        "supply-chain"
+      ],
+      "sourceUrl": "https://www.hec.ca/en/gol/",
+      "checkedAt": "2026-10-21",
+      "evidence": "Opened official department site and current faculty page; exact department name verified. Its linked doctoral specialization explicitly covers logistics, SCM, empirical operations and applied operational research."
+    },
+    {
+      "id": "hec-montreal--decision-sciences",
+      "name": "Department of Decision Sciences",
+      "school": null,
+      "type": "department",
+      "fields": [
+        "operations-research",
+        "logistics"
+      ],
+      "sourceUrl": "https://www.hec.ca/en/decision-sciences/index.html",
+      "checkedAt": "2026-10-21",
+      "evidence": "Opened official English departmental gateway and linked French department website. Exact English department name verified; current departmental research structure includes urban mobility/logistics optimization, decision-making, GERAD and CIRRELT."
+    }
+  ],
+  "decisions": [
+    {
+      "sourceDepartmentId": "hec-montreal____decision-sciences",
+      "disposition": "replaced",
+      "unitIds": [
+        "hec-montreal--decision-sciences"
+      ],
+      "reason": "Verified current official English department name; imported faculty URL now returns 404, current official gateway remains readable."
+    },
+    {
+      "sourceDepartmentId": "hec-montreal____logistics-and-operations-management",
+      "disposition": "replaced",
+      "unitIds": [
+        "hec-montreal--logistics-operations-management"
+      ],
+      "reason": "Retained exact department identity, added full Department of prefix."
+    },
+    {
+      "sourceDepartmentId": "hec-montreal____management",
+      "disposition": "out-of-scope",
+      "unitIds": [],
+      "reason": "HEC Montréal official department page confirms Department of Management as an actual separate academic department, and the complete official services list independently names it beside Decision Sciences and Logistics and Operations Management. Its exact generic Management title does not meet the 25 October Ops/MS/IE unit-title rule. The imported posting body is unavailable, so this identifies the current formal unit and title scope only, not which department historically placed that advert."
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.hec.ca/en/gol/",
+      "checkedAt": "2026-10-21",
+      "outcome": "read",
+      "note": "Read department name and its programme menu."
+    },
+    {
+      "url": "https://www.hec.ca/en/gol/profs.html",
+      "checkedAt": "2026-10-21",
+      "outcome": "read",
+      "note": "Read current department faculty page header and official institutional name; no individual career research performed."
+    },
+    {
+      "url": "https://www.hec.ca/en/decision-sciences/index.html",
+      "checkedAt": "2026-10-21",
+      "outcome": "read",
+      "note": "Read official English departmental gateway."
+    },
+    {
+      "url": "http://www.hec.ca/mqg/index.html",
+      "checkedAt": "2026-10-21",
+      "outcome": "read",
+      "note": "Read full linked French departmental website and research structure."
+    },
+    {
+      "url": "https://www.hec.ca/en/decision-sciences/profs.html",
+      "checkedAt": "2026-10-21",
+      "outcome": "blocked",
+      "note": "Imported faculty page returns official 404 error."
+    },
+    {
+      "url": "https://www.hec.ca/en/programs/phd",
+      "checkedAt": "2026-10-21",
+      "outcome": "read",
+      "note": "Read full 12-specialization PhD inventory and institutional business-school identity."
+    },
+    {
+      "url": "https://www.hec.ca/en/management/index.html",
+      "checkedAt": "2026-10-26",
+      "outcome": "read",
+      "note": "Opened full official Department of Management page with exact formal title and HEC Montréal ownership; no Operations/Management Science/IE title claimed."
+    },
+    {
+      "url": "https://www.hec.ca/en/contact-us/all-services-and-web-sites",
+      "checkedAt": "2026-10-26",
+      "outcome": "read",
+      "note": "Opened complete official administrative services/department list: separate Decision Sciences, Logistics and Operations Management, and Management departments; no merging on generic label."
+    }
+  ],
+  "limitations": [
+    "Current official unit identities and the title disposition of all imported labels are resolved. The source posting body was not available; no historical advert-to-department assignment or precise date is inferred. Existing Management Science doctorate review remains independent and does not establish its administrative department host."
+  ],
+  "duplicateOf": null
+}
