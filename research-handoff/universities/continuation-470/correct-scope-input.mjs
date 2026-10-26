@@ -1,0 +1,5 @@
+import fs from 'node:fs';import crypto from 'node:crypto';import assert from 'node:assert/strict';
+const dir='research-handoff/universities/continuation-470',path=dir+'/louisiana-state-university-integration.json',p=JSON.parse(fs.readFileSync(path));assert.equal(p.programmes[0].degree,'Ph.D.');
+const existing=JSON.parse(fs.readFileSync('data/doctoral-programs.json')).records.find(r=>r.id===p.programmes[0].id);assert.equal(existing.degree,'PhD');p.programmes[0].degree=existing.degree;
+fs.writeFileSync(path,JSON.stringify(p,null,2)+'\n');const mp=dir+'/integration-manifest.json',m=JSON.parse(fs.readFileSync(mp));m.frozenInputs.find(r=>r.path===path).sha256=crypto.createHash('sha256').update(fs.readFileSync(path)).digest('hex');
+m.integratorCorrections=[{path,reason:'Scope-only LSU proposal punctuation Ph.D. differs from existing literal PhD. Preserve existing credential and all programme facts; only branch coverage is integrated. Original researcher proposal retained unchanged.'}];fs.writeFileSync(mp,JSON.stringify(m,null,2)+'\n');

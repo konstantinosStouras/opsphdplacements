@@ -2,7 +2,7 @@
 
 This is an alphabetical planning snapshot from the published university frame and the OM List reported-PhD-institution queue. It is **not** a list of confirmed PhD providers. Some institutions already have frozen official-source proposals awaiting integrator review and publication; they remain here until the public register records the outcome. A missing or partial doctoral review never means that no qualifying doctorate exists.
 
-The published 833 university/campus source records group into 738 display identities; 280 identities have an incomplete unit review, doctoral branch check or title/host adjudication. Of the source records, 234 have incomplete unit reviews and 231 lack a complete current doctoral branch scope. 0 programme title/host decisions remain pending and are withheld from qualifying counts. The separate OM List queue has 5 reported institution labels still needing identity reconciliation. These lists overlap in real institutions but are not merged without accepted evidence. Source-unit assertions and live directory/posting coverage are additional Stage 1 gates.
+The published 833 university/campus source records group into 738 display identities; 280 identities have an incomplete unit review, doctoral branch check or title/host adjudication. Of the source records, 234 have incomplete unit reviews and 228 lack a complete current doctoral branch scope. 0 programme title/host decisions remain pending and are withheld from qualifying counts. The separate OM List queue has 5 reported institution labels still needing identity reconciliation. These lists overlap in real institutions but are not merged without accepted evidence. Source-unit assertions and live directory/posting coverage are additional Stage 1 gates.
 
 ## In the university/campus discovery frame
 
@@ -84,7 +84,7 @@ The published 833 university/campus source records group into 738 display identi
 | 74 | Indian Institute of Technology Delhi | unit/identity: partial; doctoral branch scope |
 | 75 | Indian Institute of Technology Kharagpur | unit/identity: partial; doctoral branch scope |
 | 76 | Indian School of Business | unit/identity: partial |
-| 77 | Indian Statistical Institute | unit/identity: partial; doctoral branch scope |
+| 77 | Indian Statistical Institute | unit/identity: partial |
 | 78 | Indiana State University | unit/identity: partial |
 | 79 | Indiana University (Kelley) | unit/identity: partial; doctoral branch scope |
 | 80 | Institut Mines-Télécom | unit/identity: partial; doctoral branch scope |
@@ -116,8 +116,8 @@ The published 833 university/campus source records group into 738 display identi
 | 106 | Leipzig University | unit/identity: partial |
 | 107 | Liverpool John Moores University | unit/identity: partial; doctoral branch scope |
 | 108 | Lomonosov Moscow State University | unit/identity: partial; doctoral branch scope |
-| 109 | Loughborough University | unit/identity: partial; doctoral branch scope |
-| 110 | Louisiana State University | unit/identity: partial; doctoral branch scope |
+| 109 | Loughborough University | unit/identity: partial |
+| 110 | Louisiana State University | unit/identity: partial |
 | 111 | Louisiana Tech University | doctoral branch scope |
 | 112 | Ludwig-Maximilians-Universität München | unit/identity: partial; doctoral branch scope |
 | 113 | Management Development Institute Gurgaon | unit/identity: partial; doctoral branch scope |
