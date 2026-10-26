@@ -4,8 +4,8 @@
     "definition": "Individual official-source reviews of university names and operations units. The original directory remains in universities.json. Reviewed describes the stated source scope, not an exhaustive current or historical census. Source notes identify the access method where recorded.",
     "sourceRecords": 833,
     "attempted": 833,
-    "reviewed": 606,
-    "partial": 222,
+    "reviewed": 609,
+    "partial": 219,
     "blocked": 5,
     "pending": 0
   },
@@ -1796,25 +1796,28 @@
       ],
       "doctoralReview": {
         "status": "partial",
-        "checkedAt": "2026-10-25",
+        "checkedAt": "2026-10-26",
         "programmeIds": [],
         "branches": [
           {
             "branch": "business",
-            "reviewState": "partial",
-            "conclusion": "Opened official Economics and Management doctoral-school and separate public-management Doctorat en Sciences de Gestion pages. Both show broad management/economics awards without an explicit Operations, Management Science or Industrial Engineering title/specialization. Other host research centers and IAE doctoral routes have not been fully screened.",
+            "reviewState": "checked",
+            "conclusion": "FEG and IMPGT broad management doctorates plus the actual IAE Aix PhD Programme in Management and CERGAM doctoral research-area list were read. The AMU-awarded IAE credential is Sciences de Gestion (broad management sciences), and CERGAM fields are finance, HR, leadership, public management, marketing, international management, strategy, information systems, innovation and entrepreneurship. No formally named Operations, quantitative Management Science or Industrial Engineering doctoral title/area appears in these current business doctoral host pages.",
             "sourceUrls": [
               "https://feg.univ-amu.fr/fr/formation/doctorat-sciences-economiques-sciences-de-gestion",
-              "https://impgt.univ-amu.fr/fr/formations/doctorat-en-sciences-de-gestion"
+              "https://impgt.univ-amu.fr/fr/formations/doctorat-en-sciences-de-gestion",
+              "https://iae-aix.univ-amu.fr/fr/phd-programme-management",
+              "https://iae-aix.univ-amu.fr/fr/programmes/programmes-de-recherche/programme-doctoral"
             ]
           },
           {
             "branch": "engineering",
             "reviewState": "partial",
-            "conclusion": "Opened Faculty of Sciences doctorate school inventory and the full ED 353 Sciences pour l'Ingénieur page. ED 353 explicitly names mechanics, physics, micro/nanoelectronics and eight listed themes, with no Industrial Engineering title. Mathematics/IT and other university doctoral schools are not fully adjudicated, so this is not a university-wide negative.",
+            "conclusion": "Official Faculty of Sciences doctoral-school inventory and ED353 engineering themes were read previously; current ED184 Mathematics/Informatics admissions page was read 26 October. It names Mathematics, numerical analysis, scientific computing, probability/statistics, discrete mathematics, fundamental informatics and information/systems science as intake disciplines, but no formal Ops/quantitative MS/IE field. Doctoral specialties across all technical hosts and schools remain incompletely inventoried; no university-wide negative claim.",
             "sourceUrls": [
               "https://sciences.univ-amu.fr/fr/formation/doctorats",
-              "https://ecole-doctorale-353.univ-amu.fr/"
+              "https://ecole-doctorale-353.univ-amu.fr/",
+              "https://ecole-doctorale-184.univ-amu.fr/fr/futur-doctorant/admission-requirements"
             ]
           }
         ],
@@ -1842,17 +1845,41 @@
             "checkedAt": "2026-10-25",
             "outcome": "read",
             "note": "Opened full ED 353 page, exact doctoral-school title and eight named research themes; no Industrial Engineering named title."
+          },
+          {
+            "url": "https://iae-aix.univ-amu.fr/fr/phd-programme-management",
+            "checkedAt": "2026-10-26",
+            "outcome": "read",
+            "note": "Full IAE Aix current PhD page identifies AMU-awarded Sciences de Gestion specialty and programme mention, with thesis and defense; not an Operations or quantitative Management Science title."
+          },
+          {
+            "url": "https://iae-aix.univ-amu.fr/fr/programmes/programmes-de-recherche/programme-doctoral",
+            "checkedAt": "2026-10-26",
+            "outcome": "read",
+            "note": "Full IAE doctoral programme page enumerates CERGAM research axes; none is a formally named Operations, Management Science or IE doctoral field."
+          },
+          {
+            "url": "https://ecole-doctorale-184.univ-amu.fr/fr/futur-doctorant/admission-requirements",
+            "checkedAt": "2026-10-26",
+            "outcome": "read",
+            "note": "Full current ED184 admission disciplines and doctoral host lab links read; no exact qualifying title, but not necessarily exhaustive award-specialty inventory."
+          },
+          {
+            "url": "https://ecole-doctorale-184.univ-amu.fr/",
+            "checkedAt": "2026-10-26",
+            "outcome": "blocked",
+            "note": "ED184 main page timed out; not treated as a completed inventory."
           }
         ],
         "limitations": [
-          "Do not translate French generic sciences de gestion as formal Management Science; title rule not met by these pages.",
-          "Business-host and engineering doctoral inventories remain incomplete; no negative conclusion.",
-          "Two OM List reported doctorate institution labels remain individual discovery leads only."
+          "Business doctoral host pages read to a bounded title conclusion; French Sciences de Gestion is broad management sciences, not the narrower quantitative Management Science title.",
+          "Technical ED184 admission disciplines and ED353 themes read, but complete current doctoral-specialty inventory across plausible technical hosts remains incomplete; ED184 main page timed out.",
+          "Imported individual 2008 doctorate reports remain discovery only; historical Aix-Marseille II predecessor label remains separate."
         ],
         "coverageComplete": false
       },
       "addedAt": "2026-10-25T18:27:40Z",
-      "updatedAt": "2026-10-25T22:43:32Z"
+      "updatedAt": "2026-10-26T00:44:32Z"
     },
     {
       "id": "ajman-university",
@@ -4414,10 +4441,10 @@
     },
     {
       "id": "athens-university-of-economics-and-business",
-      "status": "partial",
+      "status": "reviewed",
       "canonicalName": "Athens University of Economics and Business",
-      "universitySourceUrl": "https://dept.aueb.gr/en/dmst",
-      "checkedAt": "2026-10-25",
+      "universitySourceUrl": "https://www.dept.aueb.gr/en/MSc-FM/content/facts-anf-figures",
+      "checkedAt": "2026-10-26",
       "reviewer": "Codex via opened official web pages",
       "duplicateOf": null,
       "units": [
@@ -4454,10 +4481,18 @@
           "checkedAt": "2026-10-25",
           "outcome": "read",
           "note": "Official department doctoral programme page identifies current registered doctoral researchers and fields."
+        },
+        {
+          "url": "https://www.dept.aueb.gr/en/MSc-FM/content/facts-anf-figures",
+          "checkedAt": "2026-10-26",
+          "outcome": "read",
+          "note": "Reopened official complete three-school/eight-department institution inventory: exact Management Science and Technology is the sole formal unit with the owner title, in School of Business."
         }
       ],
       "limitations": [
-        "University-wide additional unit inventory not yet adjudicated."
+        "Current official three-school/eight-department inventory read; Department of Management Science and Technology is the sole exact-title qualifying formal unit. Other named academic research topics in nonmatching departments are not converted to units.",
+        "Current doctorate specializations in other departments remain a separate incomplete doctoralReview scope; this unit closure does not imply all doctoral routes are known.",
+        "Two imported person doctorate reports remain discovery only."
       ],
       "doctoralReview": {
         "status": "verified",
@@ -4533,7 +4568,7 @@
         "coverageComplete": false
       },
       "addedAt": "2026-10-25T18:27:40Z",
-      "updatedAt": "2026-10-25T18:27:40Z"
+      "updatedAt": "2026-10-26T00:44:32Z"
     },
     {
       "id": "auburn-university",
@@ -6053,8 +6088,8 @@
       "id": "beihang-university",
       "status": "partial",
       "canonicalName": "Beihang University",
-      "universitySourceUrl": "https://semen.buaa.edu.cn/info/1073/1661.htm",
-      "checkedAt": "2026-10-25",
+      "universitySourceUrl": "https://semen.buaa.edu.cn/ABOUTSEM/Organizational_Structure.htm",
+      "checkedAt": "2026-10-26",
       "reviewer": "Codex via opened official web pages",
       "duplicateOf": null,
       "units": [
@@ -6082,6 +6117,18 @@
           "sourceUrl": "https://ev.buaa.edu.cn/Schools___Colleges/School_of_Mathematical_Sciences.htm",
           "checkedAt": "2026-10-25",
           "evidence": "Fresh full official School of Mathematical Sciences page explicitly lists Department of Statistics and Operations Research as one of four actual departments. The school separately states it has Mathematics and Statistics doctoral programmes; departmental hosting of either exact degree is not expressly mapped and is not inferred."
+        },
+        {
+          "id": "beihang-university--behavioral-operations-management",
+          "name": "Department of Behavioral and Operations Management",
+          "school": "School of Economics and Management",
+          "type": "department",
+          "fields": [
+            "operations-management"
+          ],
+          "sourceUrl": "https://semen.buaa.edu.cn/info/1073/1659.htm",
+          "checkedAt": "2026-10-26",
+          "evidence": "Current official SEM structure menu literally labels this link Behavior and Operation Management, while its linked official department page literally titles Department of Behavioral and Operations Management (published 2016). The link target establishes one department identity but not a dated name change. The linked profile says it has doctoral activity; no additional current degree route inferred."
         }
       ],
       "decisions": [
@@ -6110,12 +6157,24 @@
           "checkedAt": "2026-10-25",
           "outcome": "read",
           "note": "Full current school page lines 111-120 names actual Department of Statistics and Operations Research, Mathematics and Statistics doctoral programmes, and Operations Research and Optimization research direction within Mathematics."
+        },
+        {
+          "url": "https://semen.buaa.edu.cn/ABOUTSEM/Organizational_Structure.htm",
+          "checkedAt": "2026-10-26",
+          "outcome": "read",
+          "note": "Current full SEM nine-department menu literally lists Behavior and Operation Management and, separately, Management Science and Engineering. The first item links the older profile titled Department of Behavioral and Operations Management."
+        },
+        {
+          "url": "https://semen.buaa.edu.cn/info/1073/1659.htm",
+          "checkedAt": "2026-10-26",
+          "outcome": "read",
+          "note": "Linked full department profile names Behavioral and Operations Management and doctoral activity; page publication 2016, so current degree assignments are not inferred."
         }
       ],
       "limitations": [
-        "Official department page predates current 2026 programme; current department structure should be rechecked against a newer organization inventory.",
-        "Other Beihang schools and engineering doctoral fields have not been inventoried.",
-        "The newly identified Statistics and Operations Research department qualifies as a named unit; the school-level Mathematics/Statistics doctorates are not yet individually mapped to this exact department. No extra programme is inferred from research directions."
+        "Current SEM nine-department menu labels Behavior and Operation Management; its linked department profile (published 2016) titles the same link target Department of Behavioral and Operations Management and says it was originally known as Management Science and Engineering. The current menu also lists Management Science and Engineering separately. Preserve this source wording and unresolved historical split/rename; no duplicate current doctoral route is created.",
+        "Current Mathematical Sciences page separately names Statistics and Operations Research department; exact doctorate assignment to it remains unverified.",
+        "Other Beihang school/unit inventories remain partial; two imported OM person doctorates are discovery only."
       ],
       "doctoralReview": {
         "status": "verified",
@@ -6163,7 +6222,7 @@
         "coverageComplete": false
       },
       "addedAt": "2026-10-25T18:27:40Z",
-      "updatedAt": "2026-10-25T19:22:01Z"
+      "updatedAt": "2026-10-26T00:44:32Z"
     },
     {
       "id": "beijing-jiaotong-university",
@@ -6842,10 +6901,10 @@
     },
     {
       "id": "bi-norwegian-business-school",
-      "status": "partial",
+      "status": "reviewed",
       "canonicalName": "BI Norwegian Business School",
-      "universitySourceUrl": "https://www.bi.no/en/programmes-and-individual-courses/phd/",
-      "checkedAt": "2026-10-25",
+      "universitySourceUrl": "https://www.bi.no/en/research/find-department/",
+      "checkedAt": "2026-10-26",
       "reviewer": "Codex via opened official web pages",
       "duplicateOf": null,
       "units": [
@@ -6888,21 +6947,28 @@
           "checkedAt": "2026-10-25",
           "outcome": "read",
           "note": "Data and Decision Science PhD specialisation is based in Department of Data Science and Analytics; Operations Research is a collaboration/research feature, not the formal specialisation name."
+        },
+        {
+          "url": "https://www.bi.no/en/research/find-department/",
+          "checkedAt": "2026-10-26",
+          "outcome": "read",
+          "note": "Opened full current nine-department BI inventory; Department of Accounting and Operations Management is sole exact-title qualifying formal department."
         }
       ],
       "limitations": [
-        "The currently advertised doctoral specialisations have no title-matching route on the pages read. Historical Ops-named doctoral routes and all current unit affiliations require further review before complete status.",
-        "One imported faculty doctorate remains discovery only."
+        "Current full nine-department official inventory read. Department of Accounting and Operations Management remains the sole exact-title qualifying formal unit; no other department gains eligibility from research topics.",
+        "Current PhD specializations are a separate doctoral-review scope. Departmental Accounting PhD teaching does not imply an Operations PhD; historical doctoral availability is not determined by current titles.",
+        "Imported individual faculty doctorate remains discovery only."
       ],
       "doctoralReview": {
-        "status": "partial",
-        "checkedAt": "2026-10-25",
+        "status": "no-qualifying-programme-verified",
+        "checkedAt": "2026-10-26",
         "programmeIds": [],
         "branches": [
           {
             "branch": "business",
-            "reviewState": "partial",
-            "conclusion": "Current BI PhD specialisation inventory lists Accounting, Economics, Finance, Communication, Leadership and Organisation, Marketing, Strategy/Entrepreneurship/Innovation, and Data and Decision Science. None is formally named Operations/Management Science/Industrial Engineering. The named Accounting and Operations Management department's PhD teaching responsibility is explicitly Accounting; Data and Decision Science is based in a differently named department and OR is only a research collaboration.",
+            "reviewState": "checked",
+            "conclusion": "Reopened current central BI PhD page shows its complete eight named specialisations with 2026/2027 starts: Accounting, Economics, Finance, Communication, Leadership and Organisation, Marketing, Strategy/Entrepreneurship/Innovation, Data and Decision Science. None has exact Operations, Management Science or Industrial Engineering title. Prior full Data and Decision Science page names Data Science and Analytics as host; the Accounting and Operations Management department teaching page names Accounting PhD only. Current bounded formal-title negative; historical offerings not inferred.",
             "sourceUrls": [
               "https://www.bi.no/en/programmes-and-individual-courses/phd/",
               "https://www.bi.no/en/research/find-department/department-of-accounting-and-operations-management/teaching/",
@@ -6911,9 +6977,12 @@
           },
           {
             "branch": "engineering",
-            "reviewState": "not-reviewed",
-            "conclusion": "BI is a business school; no technical doctoral branch has been separately established or inventoried.",
-            "sourceUrls": []
+            "reviewState": "not-present",
+            "conclusion": "BI is an independent business school and its full nine-department official inventory shows no engineering school or Industrial Engineering department; its one central PhD specialisation menu is the institution-wide formal offering list.",
+            "sourceUrls": [
+              "https://www.bi.no/en/research/find-department/",
+              "https://www.bi.no/en/programmes-and-individual-courses/phd/"
+            ]
           }
         ],
         "sources": [
@@ -6934,16 +7003,29 @@
             "checkedAt": "2026-10-25",
             "outcome": "read",
             "note": "Full Data and Decision Science PhD page opened; exact host department and OR collaboration wording."
+          },
+          {
+            "url": "https://www.bi.no/en/research/find-department/",
+            "checkedAt": "2026-10-26",
+            "outcome": "read",
+            "note": "Full nine-department official inventory establishes the business-school unit boundary and no engineering school."
+          },
+          {
+            "url": "https://www.bi.no/en/programmes-and-individual-courses/phd/",
+            "checkedAt": "2026-10-26",
+            "outcome": "read",
+            "note": "Reopened full central PhD menu with all eight current named specialisations and displayed intake years; none exact-title qualifying."
           }
         ],
         "limitations": [
-          "No qualifying current doctoral route established from the opened sources; do not treat the OR collaboration or master's major as a named PhD title.",
-          "Current unit/doctoral scope remains partial, and one imported individual doctorate remains discovery only."
+          "Current formal doctoral title inventory is complete on the opened central BI PhD menu; no qualifying named current route. Historical Ops doctoral offerings and individual graduates are separate historical/person research, not inferred absent.",
+          "The qualifying Accounting and Operations Management department exists, but its listed PhD teaching responsibility is Accounting; no Operations PhD inferred from department name alone.",
+          "One imported faculty doctorate remains discovery only."
         ],
-        "coverageComplete": false
+        "coverageComplete": true
       },
       "addedAt": "2026-10-25T20:23:56Z",
-      "updatedAt": "2026-10-25T20:23:56Z"
+      "updatedAt": "2026-10-26T00:44:32Z"
     },
     {
       "id": "bielefeld-university",
@@ -49092,10 +49174,10 @@
     },
     {
       "id": "management-development-institute-gurgaon",
-      "status": "partial",
+      "status": "reviewed",
       "canonicalName": "Management Development Institute Gurgaon",
-      "universitySourceUrl": "https://mdi.ac.in/programmes/fellow-programme-in-management",
-      "checkedAt": "2026-10-25",
+      "universitySourceUrl": "https://mdi.ac.in/schools",
+      "checkedAt": "2026-10-26",
       "reviewer": "Codex via opened official web pages",
       "duplicateOf": null,
       "units": [],
@@ -49125,12 +49207,24 @@
           "checkedAt": "2026-10-25",
           "outcome": "read",
           "note": "Current 2026 FPM admissions page shows residential and non-residential tracks; specialist field list not on this page."
+        },
+        {
+          "url": "https://mdi.ac.in/schools",
+          "checkedAt": "2026-10-26",
+          "outcome": "read",
+          "note": "Current official schools inventory identifies two schools, Public Policy and Governance and Management of Financial Institutions; neither carries an Operations, Management Science or Industrial Engineering school title."
+        },
+        {
+          "url": "https://mdi.ac.in/faculty",
+          "checkedAt": "2026-10-26",
+          "outcome": "read",
+          "note": "Current official faculty inventory names eight academic areas including Operations Management; this is an academic area, not a separately named school or department."
         }
       ],
       "limitations": [
-        "No actual separately titled Operations Management administrative department or school verified; formal named specialisation belongs to Fellow Programme.",
-        "Institution-wide school/unit and other possible award inventory remains to be fully reconciled.",
-        "Exact credential awarded is Fellow in Management, not a PhD; AIU equivalence and original research must be retained distinctly."
+        "Current official two-school inventory and eight-area faculty taxonomy read; Operations Management is an academic area, not a separate school/department. The existing Fellow Programme named specialization remains the qualifying doctoral title evidence, subject to its separate credential review.",
+        "Exact awarded credential is Fellow in Management, with original research and AIU PhD equivalence; do not relabel it PhD.",
+        "Two imported person doctorate claims remain discovery only; individual qualification is Stage 2."
       ],
       "doctoralReview": {
         "status": "verified",
@@ -49186,7 +49280,7 @@
         "coverageComplete": false
       },
       "addedAt": "2026-10-25T19:22:01Z",
-      "updatedAt": "2026-10-25T19:22:01Z"
+      "updatedAt": "2026-10-26T00:44:32Z"
     },
     {
       "id": "marian-university",
@@ -62774,8 +62868,8 @@
       "id": "osnabruck-university",
       "status": "partial",
       "canonicalName": "Osnabrück University",
-      "universitySourceUrl": "https://www.wiwi.uni-osnabrueck.de/en/forschung/promotion.html",
-      "checkedAt": "2026-10-25",
+      "universitySourceUrl": "https://www.uni-osnabrueck.de/fb6/informatik",
+      "checkedAt": "2026-10-26",
       "reviewer": "Codex via opened official web pages",
       "duplicateOf": null,
       "units": [],
@@ -62805,10 +62899,22 @@
           "checkedAt": "2026-10-25",
           "outcome": "read",
           "note": "Full official Mathematics Institute page enumerates seven research groups; Operations Research not one of their titles."
+        },
+        {
+          "url": "https://www.uni-osnabrueck.de/fb6/informatik",
+          "checkedAt": "2026-10-26",
+          "outcome": "read",
+          "note": "Current official Institute of Computer Science navigation enumerates research groups including Combinatorial Optimization; none has an exact Operations, Management Science or Industrial Engineering title."
+        },
+        {
+          "url": "https://www.uni-osnabrueck.de/fb6/informatik/studium/studiengaenge/promotion",
+          "checkedAt": "2026-10-26",
+          "outcome": "blocked",
+          "note": "Linked Institute doctoral page requires login; public doctoral named-field details not readable. No access workaround attempted."
         }
       ],
       "limitations": [
-        "Official current business subject and mathematics group lists read do not name a qualifying department; wider university source-unit identity checks remain incomplete.",
+        "Current business subjects, Mathematics groups and Computer Science groups read; none has a formal exact qualifying unit title. Institute of Computer Science doctoral details require login and wider university unit identity inventory remains incomplete.",
         "One imported 2010 individual doctorate remains discovery only."
       ],
       "doctoralReview": {
@@ -62861,7 +62967,7 @@
         "coverageComplete": false
       },
       "addedAt": "2026-10-25T20:36:51Z",
-      "updatedAt": "2026-10-25T20:36:51Z"
+      "updatedAt": "2026-10-26T00:44:32Z"
     },
     {
       "id": "otto-von-guericke-university-magdeburg",
@@ -83069,6 +83175,18 @@
           "checkedAt": "2026-10-21",
           "outcome": "read",
           "note": "OR dual-title participating programmes include Business Administration and Industrial Engineering among other majors."
+        },
+        {
+          "url": "https://ist.psu.edu/about/departments",
+          "checkedAt": "2026-10-26",
+          "outcome": "read",
+          "note": "Complete official current three-department inventory actually read in fresh normal Chrome tab after web-reader403. Explicit creation in2025 and actual Department Informatics and Intelligent Systems, within College Information Sciences and Technology, Penn State; no security warning/challenge or workaround."
+        },
+        {
+          "url": "https://ist.psu.edu/about/departments/informatics-intelligent-systems-department",
+          "checkedAt": "2026-10-26",
+          "outcome": "read",
+          "note": "Actual dedicated department main substantive body, degree programme overview and parent identity read in Chrome by following inventory link; exact Department of Informatics and Intelligent Systems. Algorithmic intelligent behaviour, ML/predictive modelling/data mining/causal discovery remit. College-wide Informatics PhD linked. Faculty/lab accordions not expanded; individual careers not read. Known actual title classification needs no unrelated project exploration."
         }
       ],
       "limitations": [],
@@ -83134,7 +83252,7 @@
         "coverageComplete": true
       },
       "addedAt": "2026-10-21T11:02:27Z",
-      "updatedAt": "2026-10-21T11:02:27Z"
+      "updatedAt": "2026-10-26T00:44:32Z"
     },
     {
       "id": "the-university-of-adelaide-historical",
@@ -117166,13 +117284,31 @@
           "checkedAt": "2026-10-21",
           "outcome": "read",
           "note": "Official interprofessional programs page names college and its Industrial Engineering BS, emphasizing system optimization, manufacturing, healthcare and transportation. Department inventory does not list a separate IE department."
+        },
+        {
+          "url": "https://www.sc.edu/study/colleges_schools/engineering_and_computing/departments/integrated_information_technology/",
+          "checkedAt": "2026-10-26",
+          "outcome": "read",
+          "note": "Full actual official department HTML individually opened: exact IIT department, engineering college and stated IT/informatics research remit."
+        },
+        {
+          "url": "https://www.sc.edu/study/colleges_schools/engineering_and_computing/departments/integrated_information_technology/our_research/index.php",
+          "checkedAt": "2026-10-26",
+          "outcome": "read",
+          "note": "Full actual official research HTML individually read: cyberinfrastructure, database/data analytics, health IT/informatics and HCI headings and substantive descriptions. Generic operations wording, TCP optimization and decision-making retained as IT applications, not independently named OM/OR/IE unit."
+        },
+        {
+          "url": "https://sc.edu/study/colleges_schools/moore/study/management_science/index.php",
+          "checkedAt": "2026-10-26",
+          "outcome": "read",
+          "note": "Full actual current Management Science page individually read including degree panels. Explicitly houses Operations and Supply Chain programmes and doctoral Operations Management; full department distinguished from source group wording and centre."
         }
       ],
       "limitations": [
-        "Industrial Engineering is an interprofessional degree program, not a separately named department in the official department inventory; retained its explicitly named college home using school type. No separate department invented."
+        "Industrial Engineering is an interprofessional degree program, not a separately named department in the official department inventory; retained its explicitly named college home using school type. No separate department invented.",
+        "26 October IIT follow-up is bounded current named-unit/remit review. Research includes generic operational improvements, network optimization and decision-making in information technology; not a claim that no individual scholar uses OR methods. No new qualifying unit or doctoral route established.",
+        "Source Operations and Supply Chain Management Group is reconciled at verified administering Management Science department level. No separately named administrative group or new centre inferred from source terminology."
       ],
-      "addedAt": "2026-10-21T08:10:46Z",
-      "updatedAt": "2026-10-21T11:37:44Z",
       "doctoralReview": {
         "status": "verified",
         "checkedAt": "2026-10-21",
@@ -117215,7 +117351,9 @@
           "Current scoped programme inventory only; relevant subfields within generic engineering doctorates would require explicit separate evidence."
         ],
         "coverageComplete": true
-      }
+      },
+      "addedAt": "2026-10-21T08:10:46Z",
+      "updatedAt": "2026-10-26T00:44:32Z"
     },
     {
       "id": "university-of-south-carolina-aiken",
@@ -119589,7 +119727,7 @@
     },
     {
       "id": "university-of-tennessee-at-chattanooga",
-      "status": "reviewed",
+      "status": "partial",
       "canonicalName": "University of Tennessee at Chattanooga",
       "universitySourceUrl": "https://www.utc.edu/engineering-and-computer-science/programs/undergraduate-programs/etm",
       "checkedAt": "2026-10-21",
@@ -119631,9 +119769,9 @@
         },
         {
           "sourceDepartmentId": "university-of-tennessee-at-chattanooga__gary-w-rollins-college-of-business__data-analytics",
-          "disposition": "not-a-unit",
+          "disposition": "unresolved",
           "unitIds": [],
-          "reason": "Official business inventory explicitly lists Master of Science in Data Analytics as degree; business analytics page describes degree and credentials, not a Data Analytics department."
+          "reason": "Correction: actual 26 October official roster explicitly identifies Department Head of Data Analytics. Earlier degree-only/no-department interpretation is overbroad. Actual current department identity evidenced; substantive scoped Operations/OR/IE remit remains unresolved. Generic operations improvement and potential OR Analyst employment on degree page do not establish departmental remit; linked head profile rendered no biography. Prior decision preserved in paired audit."
         }
       ],
       "sources": [
@@ -119660,9 +119798,36 @@
           "checkedAt": "2026-10-21",
           "outcome": "read",
           "note": "Mathematics department doctoral research unit explicitly includes operations research/optimization."
+        },
+        {
+          "url": "https://www.utc.edu/gary-w-rollins-college-of-business/departments",
+          "checkedAt": "2026-10-26",
+          "outcome": "read",
+          "note": "Full department/academic programme inventory read: Business Analytics section, separate MS Data Analytics degree, faculty-and-staff link explicitly Data Analytics."
+        },
+        {
+          "url": "https://www.utc.edu/gary-w-rollins-college-of-business/faculty-and-staff/data-analytics",
+          "checkedAt": "2026-10-26",
+          "outcome": "read",
+          "note": "Full institutional roster read only to establish unit identity: explicit Department Head of Data Analytics. No personal career histories or contact details collected."
+        },
+        {
+          "url": "https://www.utc.edu/business-analytics",
+          "checkedAt": "2026-10-26",
+          "outcome": "read",
+          "note": "Full official linked degree page read, 2012–2024 footer/source-age caveat: generic business decisions/operations improvement and potential Operations Research Analyst employment, not a named academic Operations research unit."
+        },
+        {
+          "url": "https://www.utc.edu/directory/byh151-gary-w-rollins-college-of-business-beni-asllani/byh151",
+          "checkedAt": "2026-10-26",
+          "outcome": "blocked",
+          "note": "Linked institutional department-head profile opened but body only general navigation/footer, no research biography. No career or doctorate facts extracted."
         }
       ],
-      "limitations": [],
+      "limitations": [
+        "Current official department-head title positively establishes Data Analytics department identity. Earlier degree-only interpretation superseded; formal creation/rename date unknown. No eligible unit or doctorate inferred until substantive scoped remit established.",
+        "Full current institutional unit/programme inventory and roster read only for unit identity; no employment histories/contact details collected. Linked degree page footer 2012–2024; linked head profile navigation/footer only, substantive body unavailable."
+      ],
       "duplicateOf": null,
       "doctoralReview": {
         "status": "verified",
@@ -119702,7 +119867,7 @@
         "coverageComplete": true
       },
       "addedAt": "2026-10-21T11:02:27Z",
-      "updatedAt": "2026-10-21T11:02:27Z"
+      "updatedAt": "2026-10-26T00:44:32Z"
     },
     {
       "id": "university-of-tennessee-at-knoxville",
@@ -120530,9 +120695,17 @@
           "checkedAt": "2026-10-21",
           "outcome": "read",
           "note": "Complete official college/academic-unit inventory read; verifies university name, business supply-chain department and industrial engineering department with distinct parents."
+        },
+        {
+          "url": "https://www.utep.edu/business/accounting-and-information-systems/",
+          "checkedAt": "2026-10-26",
+          "outcome": "read",
+          "note": "Actual full current official AIS department HTML individually opened: named department, college, complete programme and four research-area panels. Accounting assurance/reporting/tax, AI/judgment, information systems/controls, organizations/profession. Generic operations-support wording kept distinct from named Operations unit."
         }
       ],
-      "limitations": [],
+      "limitations": [
+        "26 October exact AIS follow-up checks current named departmental remit rather than inferring scope from administrative separation. Generic enterprise-system operations support does not establish distinct substantive OM/OR/IE unit; no claim no individual scholar uses relevant methods. No doctoral award facts refreshed."
+      ],
       "duplicateOf": null,
       "doctoralReview": {
         "status": "no-qualifying-programme-verified",
@@ -120683,7 +120856,7 @@
         "coverageComplete": true
       },
       "addedAt": "2026-10-21T11:02:27Z",
-      "updatedAt": "2026-10-25T21:39:03Z"
+      "updatedAt": "2026-10-26T00:44:32Z"
     },
     {
       "id": "university-of-toledo",
@@ -122674,10 +122847,17 @@
           "checkedAt": "2026-10-22",
           "outcome": "read",
           "note": "Full doctoral programme overview read: Darden host and exactly two programmes of study, DADS and Strategy/Ethics/Entrepreneurship."
+        },
+        {
+          "url": "https://www.darden.virginia.edu/faculty-research/academic-areas/data-analytics-decision-sciences",
+          "checkedAt": "2026-10-26",
+          "outcome": "read",
+          "note": "Actual full official academic-area HTML individually opened: exact full Data Analytics and Decision Sciences name and explicit repeated DADS acronym. Eight-area navigation confirms separate Technology and Operations Management area. No individual faculty histories collected."
         }
       ],
       "limitations": [
-        "DADS is an academic area and programme of study in the Darden Ph.D. Program, not a separately titled Operations Research award. Wider engineering doctoral scope remains incomplete independently."
+        "DADS is an academic area and programme of study in the Darden Ph.D. Program, not a separately titled Operations Research award. Wider engineering doctoral scope remains incomplete independently.",
+        "26 October follow-up establishes exact DADS acronym/current area identity only. Original unit research and doctoral evidence dates retained; no new department, Management Science degree or additional Operations doctorate inferred from methodology descriptions."
       ],
       "duplicateOf": null,
       "doctoralReview": {
@@ -122822,7 +123002,7 @@
         "coverageComplete": false
       },
       "addedAt": "2026-10-21T11:02:27Z",
-      "updatedAt": "2026-10-25T20:05:21Z"
+      "updatedAt": "2026-10-26T00:44:32Z"
     },
     {
       "id": "university-of-waikato",
@@ -128520,7 +128700,7 @@
     },
     {
       "id": "virgina-darden",
-      "status": "partial",
+      "status": "reviewed",
       "canonicalName": "University of Virginia",
       "universitySourceUrl": "https://www.darden.virginia.edu/phd/data-analytics-and-decision-science",
       "checkedAt": "2026-10-21",
@@ -128550,14 +128730,29 @@
           "sourceUrl": "https://engineering.virginia.edu/department/systems-and-information-engineering/research/operations-research-and-analytics",
           "checkedAt": "2026-10-21",
           "evidence": "Official department research page explicitly names Department of Systems and Information Engineering and Operations Research and Analytics subgroup."
+        },
+        {
+          "id": "university-of-virginia--data-analytics-decision-sciences",
+          "name": "Data Analytics and Decision Sciences",
+          "type": "area",
+          "school": "Darden School of Business",
+          "fields": [
+            "operations-research",
+            "operations-management"
+          ],
+          "sourceUrl": "https://www.darden.virginia.edu/faculty-research/academic-areas/data-analytics-decision-sciences",
+          "checkedAt": "2026-10-22",
+          "evidence": "Official current academic-area page establishes exact named area within Darden. Its directly corresponding doctoral page explicitly includes pricing/revenue management and doctoral faculty expertise in public-sector operations, transportation and resource allocation, establishing substantive operational decision research beyond generic methods."
         }
       ],
       "decisions": [
         {
           "sourceDepartmentId": "virgina-darden____dads",
-          "disposition": "unresolved",
-          "unitIds": [],
-          "reason": "DADS programme title expanded as Data Analytics and Decision Sciences on official doctoral page; exact unit operations/OR scope needs adjudication, not inferred from generic analytics."
+          "disposition": "replaced",
+          "unitIds": [
+            "university-of-virginia--data-analytics-decision-sciences"
+          ],
+          "reason": "Correction: prior alias decision expanded DADS but held substantive remit before canonical 22 October official area and doctoral evidence was accepted. Existing canonical Data Analytics and Decision Sciences area establishes substantive operational decision research, and actual 26 October official area page explicitly uses DADS. Exact source now maps to that established area, not a new department or additional award. Prior unresolved reason retained in paired audit."
         }
       ],
       "sources": [
@@ -128584,10 +128779,35 @@
           "checkedAt": "2026-10-21",
           "outcome": "read",
           "note": "Official department OR and Analytics research subgroup."
+        },
+        {
+          "url": "https://www.darden.virginia.edu/faculty-research/academic-areas/data-analytics-decision-sciences",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Full official named academic-area page and complete eight-area navigation read."
+        },
+        {
+          "url": "https://www.darden.virginia.edu/phd/data-analytics-and-decision-science",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Full doctoral field page, all research topics and complete doctoral faculty expertise panel read. Explicit pricing/revenue management and public-sector operations/transportation/resource allocation."
+        },
+        {
+          "url": "https://www.darden.virginia.edu/phd/about",
+          "checkedAt": "2026-10-22",
+          "outcome": "read",
+          "note": "Full doctoral programme overview read: Darden host and exactly two programmes of study, DADS and Strategy/Ethics/Entrepreneurship."
+        },
+        {
+          "url": "https://www.darden.virginia.edu/faculty-research/academic-areas/data-analytics-decision-sciences",
+          "checkedAt": "2026-10-26",
+          "outcome": "read",
+          "note": "Actual full official academic-area HTML individually opened: exact full Data Analytics and Decision Sciences name and explicit repeated DADS acronym. Eight-area navigation confirms separate Technology and Operations Management area. No individual faculty histories collected."
         }
       ],
       "limitations": [
-        "Data Analytics and Decision Sciences / DADS imported unit research-scope adjudication remains open."
+        "Data Analytics and Decision Sciences / DADS imported unit research-scope adjudication remains open.",
+        "Alias-source correction assessed 26 October using accepted canonical 22 October substantive evidence and actually read 26 October acronym usage. Earlier original unit dates retained. Reviewed refers to alias identity/imported assertion; no new global doctoral inventory claim."
       ],
       "duplicateOf": "university-of-virginia",
       "doctoralReview": {
@@ -128732,7 +128952,7 @@
         "coverageComplete": false
       },
       "addedAt": "2026-10-21T11:02:27Z",
-      "updatedAt": "2026-10-25T21:52:11Z"
+      "updatedAt": "2026-10-26T00:44:32Z"
     },
     {
       "id": "virginia-commonwealth-university",

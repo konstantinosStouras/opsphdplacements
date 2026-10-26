@@ -9,7 +9,7 @@
   "matchedLeads": 350,
   "unresolvedLeads": 5,
   "withVerifiedCurrentRoutes": 226,
-  "withCompletedCurrentBranchScope": 193,
+  "withCompletedCurrentBranchScope": 194,
   "records": [
     {
       "id": "massachusetts-institute-of-technology",
@@ -19674,25 +19674,28 @@
       "doctoralObservations": [
         {
           "status": "partial",
-          "checkedAt": "2026-10-25",
+          "checkedAt": "2026-10-26",
           "programmeIds": [],
           "branches": [
             {
               "branch": "business",
-              "reviewState": "partial",
-              "conclusion": "Opened official Economics and Management doctoral-school and separate public-management Doctorat en Sciences de Gestion pages. Both show broad management/economics awards without an explicit Operations, Management Science or Industrial Engineering title/specialization. Other host research centers and IAE doctoral routes have not been fully screened.",
+              "reviewState": "checked",
+              "conclusion": "FEG and IMPGT broad management doctorates plus the actual IAE Aix PhD Programme in Management and CERGAM doctoral research-area list were read. The AMU-awarded IAE credential is Sciences de Gestion (broad management sciences), and CERGAM fields are finance, HR, leadership, public management, marketing, international management, strategy, information systems, innovation and entrepreneurship. No formally named Operations, quantitative Management Science or Industrial Engineering doctoral title/area appears in these current business doctoral host pages.",
               "sourceUrls": [
                 "https://feg.univ-amu.fr/fr/formation/doctorat-sciences-economiques-sciences-de-gestion",
-                "https://impgt.univ-amu.fr/fr/formations/doctorat-en-sciences-de-gestion"
+                "https://impgt.univ-amu.fr/fr/formations/doctorat-en-sciences-de-gestion",
+                "https://iae-aix.univ-amu.fr/fr/phd-programme-management",
+                "https://iae-aix.univ-amu.fr/fr/programmes/programmes-de-recherche/programme-doctoral"
               ]
             },
             {
               "branch": "engineering",
               "reviewState": "partial",
-              "conclusion": "Opened Faculty of Sciences doctorate school inventory and the full ED 353 Sciences pour l'Ingénieur page. ED 353 explicitly names mechanics, physics, micro/nanoelectronics and eight listed themes, with no Industrial Engineering title. Mathematics/IT and other university doctoral schools are not fully adjudicated, so this is not a university-wide negative.",
+              "conclusion": "Official Faculty of Sciences doctoral-school inventory and ED353 engineering themes were read previously; current ED184 Mathematics/Informatics admissions page was read 26 October. It names Mathematics, numerical analysis, scientific computing, probability/statistics, discrete mathematics, fundamental informatics and information/systems science as intake disciplines, but no formal Ops/quantitative MS/IE field. Doctoral specialties across all technical hosts and schools remain incompletely inventoried; no university-wide negative claim.",
               "sourceUrls": [
                 "https://sciences.univ-amu.fr/fr/formation/doctorats",
-                "https://ecole-doctorale-353.univ-amu.fr/"
+                "https://ecole-doctorale-353.univ-amu.fr/",
+                "https://ecole-doctorale-184.univ-amu.fr/fr/futur-doctorant/admission-requirements"
               ]
             }
           ],
@@ -19720,12 +19723,36 @@
               "checkedAt": "2026-10-25",
               "outcome": "read",
               "note": "Opened full ED 353 page, exact doctoral-school title and eight named research themes; no Industrial Engineering named title."
+            },
+            {
+              "url": "https://iae-aix.univ-amu.fr/fr/phd-programme-management",
+              "checkedAt": "2026-10-26",
+              "outcome": "read",
+              "note": "Full IAE Aix current PhD page identifies AMU-awarded Sciences de Gestion specialty and programme mention, with thesis and defense; not an Operations or quantitative Management Science title."
+            },
+            {
+              "url": "https://iae-aix.univ-amu.fr/fr/programmes/programmes-de-recherche/programme-doctoral",
+              "checkedAt": "2026-10-26",
+              "outcome": "read",
+              "note": "Full IAE doctoral programme page enumerates CERGAM research axes; none is a formally named Operations, Management Science or IE doctoral field."
+            },
+            {
+              "url": "https://ecole-doctorale-184.univ-amu.fr/fr/futur-doctorant/admission-requirements",
+              "checkedAt": "2026-10-26",
+              "outcome": "read",
+              "note": "Full current ED184 admission disciplines and doctoral host lab links read; no exact qualifying title, but not necessarily exhaustive award-specialty inventory."
+            },
+            {
+              "url": "https://ecole-doctorale-184.univ-amu.fr/",
+              "checkedAt": "2026-10-26",
+              "outcome": "blocked",
+              "note": "ED184 main page timed out; not treated as a completed inventory."
             }
           ],
           "limitations": [
-            "Do not translate French generic sciences de gestion as formal Management Science; title rule not met by these pages.",
-            "Business-host and engineering doctoral inventories remain incomplete; no negative conclusion.",
-            "Two OM List reported doctorate institution labels remain individual discovery leads only."
+            "Business doctoral host pages read to a bounded title conclusion; French Sciences de Gestion is broad management sciences, not the narrower quantitative Management Science title.",
+            "Technical ED184 admission disciplines and ED353 themes read, but complete current doctoral-specialty inventory across plausible technical hosts remains incomplete; ED184 main page timed out.",
+            "Imported individual 2008 doctorate reports remain discovery only; historical Aix-Marseille II predecessor label remains separate."
           ],
           "coverageComplete": false
         }
@@ -32233,14 +32260,14 @@
       ],
       "doctoralObservations": [
         {
-          "status": "partial",
-          "checkedAt": "2026-10-25",
+          "status": "no-qualifying-programme-verified",
+          "checkedAt": "2026-10-26",
           "programmeIds": [],
           "branches": [
             {
               "branch": "business",
-              "reviewState": "partial",
-              "conclusion": "Current BI PhD specialisation inventory lists Accounting, Economics, Finance, Communication, Leadership and Organisation, Marketing, Strategy/Entrepreneurship/Innovation, and Data and Decision Science. None is formally named Operations/Management Science/Industrial Engineering. The named Accounting and Operations Management department's PhD teaching responsibility is explicitly Accounting; Data and Decision Science is based in a differently named department and OR is only a research collaboration.",
+              "reviewState": "checked",
+              "conclusion": "Reopened current central BI PhD page shows its complete eight named specialisations with 2026/2027 starts: Accounting, Economics, Finance, Communication, Leadership and Organisation, Marketing, Strategy/Entrepreneurship/Innovation, Data and Decision Science. None has exact Operations, Management Science or Industrial Engineering title. Prior full Data and Decision Science page names Data Science and Analytics as host; the Accounting and Operations Management department teaching page names Accounting PhD only. Current bounded formal-title negative; historical offerings not inferred.",
               "sourceUrls": [
                 "https://www.bi.no/en/programmes-and-individual-courses/phd/",
                 "https://www.bi.no/en/research/find-department/department-of-accounting-and-operations-management/teaching/",
@@ -32249,9 +32276,12 @@
             },
             {
               "branch": "engineering",
-              "reviewState": "not-reviewed",
-              "conclusion": "BI is a business school; no technical doctoral branch has been separately established or inventoried.",
-              "sourceUrls": []
+              "reviewState": "not-present",
+              "conclusion": "BI is an independent business school and its full nine-department official inventory shows no engineering school or Industrial Engineering department; its one central PhD specialisation menu is the institution-wide formal offering list.",
+              "sourceUrls": [
+                "https://www.bi.no/en/research/find-department/",
+                "https://www.bi.no/en/programmes-and-individual-courses/phd/"
+              ]
             }
           ],
           "sources": [
@@ -32272,18 +32302,31 @@
               "checkedAt": "2026-10-25",
               "outcome": "read",
               "note": "Full Data and Decision Science PhD page opened; exact host department and OR collaboration wording."
+            },
+            {
+              "url": "https://www.bi.no/en/research/find-department/",
+              "checkedAt": "2026-10-26",
+              "outcome": "read",
+              "note": "Full nine-department official inventory establishes the business-school unit boundary and no engineering school."
+            },
+            {
+              "url": "https://www.bi.no/en/programmes-and-individual-courses/phd/",
+              "checkedAt": "2026-10-26",
+              "outcome": "read",
+              "note": "Reopened full central PhD menu with all eight current named specialisations and displayed intake years; none exact-title qualifying."
             }
           ],
           "limitations": [
-            "No qualifying current doctoral route established from the opened sources; do not treat the OR collaboration or master's major as a named PhD title.",
-            "Current unit/doctoral scope remains partial, and one imported individual doctorate remains discovery only."
+            "Current formal doctoral title inventory is complete on the opened central BI PhD menu; no qualifying named current route. Historical Ops doctoral offerings and individual graduates are separate historical/person research, not inferred absent.",
+            "The qualifying Accounting and Operations Management department exists, but its listed PhD teaching responsibility is Accounting; no Operations PhD inferred from department name alone.",
+            "One imported faculty doctorate remains discovery only."
           ],
-          "coverageComplete": false
+          "coverageComplete": true
         }
       ],
       "verifiedCurrentProgrammeIds": [],
-      "branchCoverageComplete": false,
-      "nextStep": "Verify official current relevant doctoral routes across business and engineering; record branch gaps"
+      "branchCoverageComplete": true,
+      "nextStep": "Current scoped doctoral inventory checked; retain evidence and historical limitations"
     },
     {
       "id": "boston-college",

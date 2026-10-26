@@ -1,0 +1,42 @@
+import fs from 'node:fs';import crypto from 'node:crypto';
+const dir='research-handoff/universities/continuation-500',prefix='research-handoff/universities/',q=JSON.parse(fs.readFileSync('research-handoff/priorities/stage-1-university-queue.json')),groups=q.matchedInstitutionSourceChecks.filter(r=>r.officialUnitComparison==='all-source-unit-assertions-accounted-for').length;
+const stats='400 qualifying doctoral programmes and named fields at 299 institutions; 558 sourced programme observations retained. The 833-record source frame has 609 completed unit reviews, 219 partial and five blocked. Doctoral scope: 812 observations, 609 current branch scopes complete. Remaining: 276 grouped incomplete identities, no pending title/host cases in the reviewed programme set and five unresolved OM List reported-degree labels (overlapping populations).';
+function replace(file,start,line){const old=fs.readFileSync(file,'utf8'),re=new RegExp('^'+start+'.*$','m');if(!re.test(old))throw Error(file);fs.writeFileSync(file,old.replace(re,line));}
+replace('README.md','Stage 1 integration checkpoint',`Stage 1 integration checkpoint (26 October 2026): ${stats} Beihang named Operations department added; BI current doctoral inventory checked; Chattanooga stale degree-only explanation corrected to partial department review. ${groups} of 568 source-institution groups fully accounted for, with 407 pending and 383 unresolved assertion observations. Stage 1 incomplete; Stages 2–4 held. See [current handoff](${dir}/README.md).`);
+replace('TODO.md','Stage 1 update,',`Stage 1 update, 26 October 2026: ${stats} See [continuation500](${dir}/README.md). Continue source assertions, identities and doctoral checks; Stages 2–4 held. Chattanooga actual Data Analytics department identity supersedes prior degree-only reasoning, but scoped remit remains unresolved. Preserve current-menu versus older linked-profile title differences at Beihang.`);
+replace('research-handoff/priorities/README.md','Current Stage 1 public scope:',`Current Stage 1 public scope: official programme title, named doctoral research field/specialization or actual department/school host must name Operations, Management Science or Industrial Engineering, including evidenced linguistic equivalents. ${stats} See [continuation500](../universities/continuation-500/README.md). Historical checkpoints retain their original dates.`);
+fs.writeFileSync(dir+'/README.md',`# Stage 1 continuation 500 — 26 October 2026
+
+Reviewed successor to 2c98a2a. ${stats} Stages 2–4 and automation remain held.
+
+## Integrated findings
+
+Beihang: one additional actual Operations Management department. Current school structure literally uses Behavior and Operation Management; the directly linked older profile uses Department of Behavioral and Operations Management. One linked department identity, no invented rename date. Current concurrent Management Science and Engineering department retained; older predecessor wording is an explicit historical limitation. No new doctoral route inferred from older profile. A420 supersedes A417; root independently opened current official structure.
+
+MDI Gurgaon, Athens University of Economics and Business and BI Norwegian Business School current unit inventories completed. MDI Operations Management remains an academic area, not a department; Fellow credential remains separate from PhD. BI current complete eight-specialisation doctoral menu checked; no qualifying named programme verified. Its actual Accounting and Operations Management department does not convert a specifically Accounting PhD into Operations. Historical provision remains separate. Aix-Marseille business branch checked and ED184 exact Mathematics/Informatics discipline list read; wider technical scope remains partial. A415 supersedes A414.
+
+Osnabrück current Computer Science groups read, but linked doctoral details require login. Review stays partial; no attempted login or bypass, and no source snippet promoted to evidence.
+
+Penn State: full actual three-department college inventory and Informatics and Intelligent Systems department/degrees read in normal Chrome after web-reader failure; exact nonmatching source title excluded without claiming absence of individual OR activity or doctorate. Earlier method-specific access limitation preserved.
+
+South Carolina IIT full actual remit supports exact nonmatching-title source exclusion; Operations/SCM group source maps only to its directly evidenced administering Management Science department, not an invented standalone group. UTEP AIS exact source exclusions follow actual complete programme/research panels. Southern Mississippi repeated school prefix reconciled using original21October evidence.
+
+Virginia: actual full official DADS acronym and accepted canonical area evidence resolve four exact source tuples. Stale virgina-darden alias decision is explicitly corrected; original unresolved reason retained in audit and source dates preserved. No additional degree or independent area counted.
+
+Chattanooga: actual current official roster identifies a Data Analytics department head, correcting earlier degree-only/no-department reasoning. Departmental relevance remains unresolved; status becomes partial and the false old conclusion is explicitly superseded, not hidden. Existing verified units and doctoral facts remain unchanged. C333/334 are supporting partial observations; C339 is the public correction.
+
+## Remaining work
+
+${groups} of568 source-institution groups fully accounted; ${568-groups} incomplete. Pending assertions407, unresolved inherited372 and individual11, zero conflicts. Thirteen exact new decisions account for13 source observations, while corrected older decisions change other state totals. Four unit reviews newly completed and one Chattanooga review reopened, net three additional reviewed records. 276 grouped incomplete identities contain224 incomplete unit records and224 incomplete doctoral scopes; denominators overlap. Frozen5,402 observations remain5,396 matched names and six exclusions.
+
+Only manifest inputs integrated. Original superseded A414/A417 and C331 source enrichment remain portable; A415/A420 and C332 selected. A421 onward, B335 onward and C340 onward are pending next-cut proposals/observations. No person or employment-history work undertaken.
+
+## Validation and publication
+
+57 JavaScript tests, four Python schema tests, dataset validators, research database and static build passed. Preservation audit confirms every programme, imported university and person/history record unchanged;11 permitted unit updates, two doctoral-scope observations and13 append-only decisions. Visitor-note audit passed. Organisation display retains1,258 rows, zero duplicate display names and unchanged people/first-job links. Whitespace checked before commit.
+
+Predecessor2c98a2a deployed successfully (run40250565788). Live Ohio search and expanded evidence confirm completed unit and current doctoral branch review, exact ISE track, preserved25October programme dates and26October inventory sources. This release's live inspection follows deployment.
+`);
+const files=['index.html','README.md','TODO.md','RESEARCH-STATUS.md','research-handoff/priorities/source-unit-reconciliations.json',...['university-reviews','doctoral-programs','entities','record-dates'].map(n=>'data/'+n+'.json'),...['README.md','STAGE-1-REMAINING-2026-10-23.md','stage-1-doctoral-priority-queue.json','stage-1-university-queue.json'].map(n=>'research-handoff/priorities/'+n)];
+function collect(d){for(const e of fs.readdirSync(d,{withFileTypes:true})){const p=d+'/'+e.name;if(e.isDirectory())collect(p);else if(/\.(json|md|mjs|txt)$/.test(p))files.push(p);}}
+for(const s of [...Array.from({length:9},(_,i)=>(412+i)+'/shard-a'),...Array.from({length:9},(_,i)=>(331+i)+'/shard-c'),'333/shard-b']){const d=prefix+'continuation-'+s;if(fs.existsSync(d))collect(d);}collect(dir);files.push(dir+'/release-files.txt',dir+'/release-hashes.json');const paths=[...new Set(files)].sort();fs.writeFileSync(dir+'/release-files.txt',paths.join('\n')+'\n');fs.writeFileSync(dir+'/release-hashes.json',JSON.stringify({frozenAt:new Date().toISOString(),purpose:'Manifest-only integration; source limitations and superseded corrections preserved.',files:paths.filter(p=>p!==dir+'/release-hashes.json').map(path=>({path,sha256:crypto.createHash('sha256').update(fs.readFileSync(path)).digest('hex')}))},null,2)+'\n');console.log({groups,releasePaths:paths.length});
