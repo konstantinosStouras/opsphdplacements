@@ -2,7 +2,7 @@
 
 This is an alphabetical planning snapshot from the published university frame and the OM List reported-PhD-institution queue. It is **not** a list of confirmed PhD providers. Some institutions already have frozen official-source proposals awaiting integrator review and publication; they remain here until the public register records the outcome. A missing or partial doctoral review never means that no qualifying doctorate exists.
 
-The published 835 university/campus source records group into 740 display identities; 264 identities have an incomplete unit review, doctoral branch check or title/host adjudication. Of the source records, 212 have incomplete unit reviews and 213 lack a complete current doctoral branch scope. 0 programme title/host decisions remain pending and are withheld from qualifying counts. The separate OM List queue has 3 reported institution labels still needing identity reconciliation. These lists overlap in real institutions but are not merged without accepted evidence. Source-unit assertions and live directory/posting coverage are additional Stage 1 gates.
+The published 835 university/campus source records group into 740 display identities; 264 identities have an incomplete unit review, doctoral branch check or title/host adjudication. Of the source records, 211 have incomplete unit reviews and 213 lack a complete current doctoral branch scope. 0 programme title/host decisions remain pending and are withheld from qualifying counts. The separate OM List queue has 3 reported institution labels still needing identity reconciliation. These lists overlap in real institutions but are not merged without accepted evidence. Source-unit assertions and live directory/posting coverage are additional Stage 1 gates.
 
 ## In the university/campus discovery frame
 
@@ -163,7 +163,7 @@ The published 835 university/campus source records group into 740 display identi
 | 153 | The University of Adelaide | unit/identity: partial; doctoral branch scope |
 | 154 | The University of British Columbia | unit/identity: partial |
 | 155 | The University of Edinburgh | unit/identity: partial; doctoral branch scope |
-| 156 | The University of Manchester | unit/identity: partial; doctoral branch scope |
+| 156 | The University of Manchester | doctoral branch scope |
 | 157 | The University of Memphis | unit/identity: partial |
 | 158 | The University of Mississippi | unit/identity: partial; doctoral branch scope |
 | 159 | The University of Sheffield | unit/identity: partial; doctoral branch scope |
