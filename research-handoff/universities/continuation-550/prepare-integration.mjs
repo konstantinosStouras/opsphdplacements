@@ -1,0 +1,4 @@
+import fs from 'node:fs';import crypto from 'node:crypto';import {execFileSync} from 'node:child_process';
+const dir='research-handoff/universities/continuation-550',unitInputs=[dir+'/university-of-waikato.unit.json'],scopes=[dir+'/university-of-waikato.doctoral.json'];
+const m={baseCommit:execFileSync('git',['rev-parse','HEAD'],{encoding:'utf8'}).trim(),sources:[],unitInputs,programmes:[],scopes,assertionInputs:[]};m.frozenInputs=[...unitInputs,...scopes].map(path=>({path,sha256:crypto.createHash('sha256').update(fs.readFileSync(path)).digest('hex')}));fs.writeFileSync(dir+'/integration-manifest.json',JSON.stringify(m,null,2)+'\n');
+for(const f of ['apply-phase.mjs','audit-cut.mjs'])fs.writeFileSync(dir+'/'+f,fs.readFileSync('research-handoff/universities/continuation-540/'+f,'utf8').replaceAll('continuation-540','continuation-550').replace('now.length-prior.length,12','now.length-prior.length,0').replace('newExactSourceDecisions:12','newExactSourceDecisions:0'));
