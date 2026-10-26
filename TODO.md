@@ -1,5 +1,7 @@
 # Remaining work and handoff priorities
 
+Publication pitfall, 26 October 2026: continuation570 omitted the regenerated USTC organisation record from its explicit release paths. Deployment failed at the stamp check; continuation571 includes the missing derived record. Before every commit, reconcile any unstaged public-data files against the reviewed cut. See [repair handoff](research-handoff/universities/continuation-571/README.md).
+
 Stage 1 update, 26 October 2026: 404 qualifying doctoral programmes and named fields at 302 institutions; 561 sourced programme observations retained. The 835-record source frame has 620 completed unit reviews, 210 partial and five blocked. Doctoral scope: 814 observations, 616 current branch scopes complete. Remaining: 268 grouped incomplete identities and three unresolved OM List reported-degree labels (overlapping populations). See [continuation570](research-handoff/universities/continuation-570/README.md). USTC dynamic catalogue initial zero-results state is only loading: actual204/120200query returned22doctoral rows and explicit Operations Management directions. Retain historical English degree/title dates separately from new status evidence. Obsolete USTC mathematics and Tsinghua Shenzhen limitations clarified with prior notes preserved. Agents stopped; root works manually. Stages 2–4 and automation held.
 
 ## Active priority order — updated 23 October 2026
