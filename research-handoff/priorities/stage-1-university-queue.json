@@ -1,13 +1,13 @@
 {
   "asOf": "2026-10-26",
   "phase": "active-source-reconciliation",
-  "publishedSourceRecords": 832,
+  "publishedSourceRecords": 833,
   "publishedReviewCounts": {
     "definition": "Individual official-source reviews of university names and operations units. The original directory remains in universities.json. Reviewed describes the stated source scope, not an exhaustive current or historical census. Source notes identify the access method where recorded.",
-    "sourceRecords": 832,
-    "attempted": 832,
+    "sourceRecords": 833,
+    "attempted": 833,
     "reviewed": 599,
-    "partial": 228,
+    "partial": 229,
     "blocked": 5,
     "pending": 0
   },
@@ -20,11 +20,11 @@
     "source-catalogue-official-expansion-2026-10-22.json"
   ],
   "unitAssertionStates": {
-    "accounted-for-by-existing-decision": 3148,
-    "accounted-for-by-individual-decision": 1098,
+    "accounted-for-by-existing-decision": 3144,
+    "accounted-for-by-individual-decision": 1108,
     "unresolved-existing-decision": 382,
     "no-unit-assertion": 201,
-    "pending-source-reconciliation": 556,
+    "pending-source-reconciliation": 550,
     "unresolved-individual-decision": 11
   },
   "matchedInstitutionSourceChecks": [
@@ -13930,7 +13930,7 @@
     },
     {
       "id": "official:university of chicago|united states",
-      "officialUnitComparison": "pending-source-reconciliation",
+      "officialUnitComparison": "all-source-unit-assertions-accounted-for",
       "sourceAssertions": [
         {
           "source": "oa-directory",
@@ -14476,8 +14476,22 @@
           "schoolAsListed": "University of Chicago Booth School of Business",
           "departmentAsListed": "Healthcare Analytics Laboratory",
           "reconciliation": {
-            "state": "pending-source-reconciliation",
-            "note": "No exact school/department assertion with an existing official review decision."
+            "state": "accounted-for-by-individual-decision",
+            "decision": {
+              "source": "oa-live-directory",
+              "sourceRecordId": "university-of-chicago__booth-school-of-business__healthcare-analytics",
+              "school": "University of Chicago Booth School of Business",
+              "department": "Healthcare Analytics Laboratory",
+              "universityId": "university-of-chicago",
+              "disposition": "replaced",
+              "unitIds": [
+                "university-of-chicago--healthcare-analytics-laboratory"
+              ],
+              "sourceUrl": "https://www.chicagobooth.edu/research/tolan/curriculum/healthcare-analytics-laboratory",
+              "checkedAt": "2026-10-26",
+              "evidence": "Exact source names Healthcare Analytics Laboratory. Actual official Tolan lab and affiliates pages establish combined teaching/research laboratory with explicit Operations Management projects. Actual laboratory type retained; no department or additional doctoral award inferred. Generic earlier Healthcare Analytics mappings remain separate."
+            },
+            "note": "Individually adjudicated exact source record and school/department assertion; does not establish doctoral provision."
           }
         },
         {
@@ -100511,7 +100525,7 @@
     },
     {
       "id": "official:university of georgia|united states",
-      "officialUnitComparison": "pending-source-reconciliation",
+      "officialUnitComparison": "all-source-unit-assertions-accounted-for",
       "sourceAssertions": [
         {
           "source": "oa-directory",
@@ -100519,20 +100533,20 @@
           "schoolAsListed": "Terry College of Business",
           "departmentAsListed": "Management Information Systems",
           "reconciliation": {
-            "state": "accounted-for-by-existing-decision",
-            "note": "Exact source school/department assertion already adjudicated; preserves prior evidence dates and does not reverify current provision.",
-            "priorDecisions": [
-              {
-                "universityId": "university-of-georgia",
-                "sourceDepartmentId": "university-of-georgia__terry-college-of-business__management-information-systems",
-                "disposition": "out-of-scope",
-                "unitIds": [],
-                "reason": "Pure Management Information Systems is excluded; official department navigation lists it separately from the verified Management department housing operations teaching.",
-                "reviewCheckedAt": "2026-10-20",
-                "unitEvidence": [],
-                "evidenced": true
-              }
-            ]
+            "state": "accounted-for-by-individual-decision",
+            "decision": {
+              "source": "oa-directory",
+              "sourceRecordId": "university-of-georgia__terry-college-of-business__management-information-systems",
+              "school": "Terry College of Business",
+              "department": "Management Information Systems",
+              "universityId": "university-of-georgia",
+              "disposition": "out-of-scope",
+              "unitIds": [],
+              "sourceUrl": "https://www.terry.uga.edu/departments/mis/",
+              "checkedAt": "2026-10-26",
+              "evidence": "Actual Department of Management Information Systems and full named educational focus reviewed: IT-enabled organizational change, MIS doctorate, cloud/data/security emphases. Distinct Management department hosts Operations/SCM. Common BBA production core and generic business-process/project management are not matching formal Operations fields. Supply Chain Advisory Board actual body names Management despite MIS navigation link. No claim that individual MIS research cannot use operational methods."
+            },
+            "note": "Individually adjudicated exact source record and school/department assertion; does not establish doctoral provision."
           }
         },
         {
@@ -100541,8 +100555,20 @@
           "schoolAsListed": "Terry College of Business",
           "departmentAsListed": "Terry College of Business, Management Information Systems",
           "reconciliation": {
-            "state": "pending-source-reconciliation",
-            "note": "No exact school/department assertion with an existing official review decision."
+            "state": "accounted-for-by-individual-decision",
+            "decision": {
+              "source": "oa-jobs",
+              "sourceRecordId": "2027-university-of-georgia-20260730",
+              "school": "Terry College of Business",
+              "department": "Terry College of Business, Management Information Systems",
+              "universityId": "university-of-georgia",
+              "disposition": "out-of-scope",
+              "unitIds": [],
+              "sourceUrl": "https://www.terry.uga.edu/departments/mis/",
+              "checkedAt": "2026-10-26",
+              "evidence": "Actual Department of Management Information Systems and full named educational focus reviewed: IT-enabled organizational change, MIS doctorate, cloud/data/security emphases. Distinct Management department hosts Operations/SCM. Common BBA production core and generic business-process/project management are not matching formal Operations fields. Supply Chain Advisory Board actual body names Management despite MIS navigation link. No claim that individual MIS research cannot use operational methods."
+            },
+            "note": "Individually adjudicated exact source record and school/department assertion; does not establish doctoral provision."
           }
         },
         {
@@ -100551,20 +100577,20 @@
           "schoolAsListed": "Terry College of Business",
           "departmentAsListed": "Management Information Systems",
           "reconciliation": {
-            "state": "accounted-for-by-existing-decision",
-            "note": "Exact source school/department assertion already adjudicated; preserves prior evidence dates and does not reverify current provision.",
-            "priorDecisions": [
-              {
-                "universityId": "university-of-georgia",
-                "sourceDepartmentId": "university-of-georgia__terry-college-of-business__management-information-systems",
-                "disposition": "out-of-scope",
-                "unitIds": [],
-                "reason": "Pure Management Information Systems is excluded; official department navigation lists it separately from the verified Management department housing operations teaching.",
-                "reviewCheckedAt": "2026-10-20",
-                "unitEvidence": [],
-                "evidenced": true
-              }
-            ]
+            "state": "accounted-for-by-individual-decision",
+            "decision": {
+              "source": "oa-live-directory",
+              "sourceRecordId": "university-of-georgia__terry-college-of-business__management-information-systems",
+              "school": "Terry College of Business",
+              "department": "Management Information Systems",
+              "universityId": "university-of-georgia",
+              "disposition": "out-of-scope",
+              "unitIds": [],
+              "sourceUrl": "https://www.terry.uga.edu/departments/mis/",
+              "checkedAt": "2026-10-26",
+              "evidence": "Actual Department of Management Information Systems and full named educational focus reviewed: IT-enabled organizational change, MIS doctorate, cloud/data/security emphases. Distinct Management department hosts Operations/SCM. Common BBA production core and generic business-process/project management are not matching formal Operations fields. Supply Chain Advisory Board actual body names Management despite MIS navigation link. No claim that individual MIS research cannot use operational methods."
+            },
+            "note": "Individually adjudicated exact source record and school/department assertion; does not establish doctoral provision."
           }
         },
         {
@@ -100573,8 +100599,20 @@
           "schoolAsListed": "Terry College of Business",
           "departmentAsListed": "Terry College of Business, Management Information Systems",
           "reconciliation": {
-            "state": "pending-source-reconciliation",
-            "note": "No exact school/department assertion with an existing official review decision."
+            "state": "accounted-for-by-individual-decision",
+            "decision": {
+              "source": "oa-live-jobs",
+              "sourceRecordId": "2027-university-of-georgia-20260730",
+              "school": "Terry College of Business",
+              "department": "Terry College of Business, Management Information Systems",
+              "universityId": "university-of-georgia",
+              "disposition": "out-of-scope",
+              "unitIds": [],
+              "sourceUrl": "https://www.terry.uga.edu/departments/mis/",
+              "checkedAt": "2026-10-26",
+              "evidence": "Actual Department of Management Information Systems and full named educational focus reviewed: IT-enabled organizational change, MIS doctorate, cloud/data/security emphases. Distinct Management department hosts Operations/SCM. Common BBA production core and generic business-process/project management are not matching formal Operations fields. Supply Chain Advisory Board actual body names Management despite MIS navigation link. No claim that individual MIS research cannot use operational methods."
+            },
+            "note": "Individually adjudicated exact source record and school/department assertion; does not establish doctoral provision."
           }
         }
       ]
@@ -122872,7 +122910,7 @@
     },
     {
       "id": "official:university of washington|united states",
-      "officialUnitComparison": "pending-source-reconciliation",
+      "officialUnitComparison": "all-source-unit-assertions-accounted-for",
       "sourceAssertions": [
         {
           "source": "oa-directory",
@@ -122932,20 +122970,20 @@
           "schoolAsListed": "Michael G. Foster School of Business",
           "departmentAsListed": "Marketing and International Business",
           "reconciliation": {
-            "state": "accounted-for-by-existing-decision",
-            "note": "Exact source school/department assertion already adjudicated; preserves prior evidence dates and does not reverify current provision.",
-            "priorDecisions": [
-              {
-                "universityId": "university-of-washington",
-                "sourceDepartmentId": "university-of-washington__michael-g-foster-school-of-business__marketing-and-international-business",
-                "disposition": "out-of-scope",
-                "unitIds": [],
-                "reason": "Imported marketing/international-business label is outside the requested Operations/OR/IE unit scope.",
-                "reviewCheckedAt": "2026-10-21",
-                "unitEvidence": [],
-                "evidenced": true
-              }
-            ]
+            "state": "accounted-for-by-individual-decision",
+            "decision": {
+              "source": "oa-directory",
+              "sourceRecordId": "university-of-washington__michael-g-foster-school-of-business__marketing-and-international-business",
+              "school": "Michael G. Foster School of Business",
+              "department": "Marketing and International Business",
+              "universityId": "university-of-washington",
+              "disposition": "out-of-scope",
+              "unitIds": [],
+              "sourceUrl": "https://foster.uw.edu/faculty-research/academic-departments/dept-marketing-and-international-business/curriculum/",
+              "checkedAt": "2026-10-26",
+              "evidence": "Actual formal Department of Marketing and International Business and full curricular remit explicitly comprise marketing, international business and business communications, with marketing-analytics/product-marketing specializations. Not a matching Operations/MS/IE department or named field; journal editorial roles not treated as programme fields. Existing ISOM separate. No claim that individual faculty never research Operations; failed Research link/ad body remain limitations."
+            },
+            "note": "Individually adjudicated exact source record and school/department assertion; does not establish doctoral provision."
           }
         },
         {
@@ -123000,8 +123038,20 @@
           "schoolAsListed": "Michael G. Foster School of Business",
           "departmentAsListed": "Michael G. Foster School of Business, Marketing and International Business",
           "reconciliation": {
-            "state": "pending-source-reconciliation",
-            "note": "No exact school/department assertion with an existing official review decision."
+            "state": "accounted-for-by-individual-decision",
+            "decision": {
+              "source": "oa-jobs",
+              "sourceRecordId": "2027-university-of-washington-20260608",
+              "school": "Michael G. Foster School of Business",
+              "department": "Michael G. Foster School of Business, Marketing and International Business",
+              "universityId": "university-of-washington",
+              "disposition": "out-of-scope",
+              "unitIds": [],
+              "sourceUrl": "https://foster.uw.edu/faculty-research/academic-departments/dept-marketing-and-international-business/curriculum/",
+              "checkedAt": "2026-10-26",
+              "evidence": "Actual formal Department of Marketing and International Business and full curricular remit explicitly comprise marketing, international business and business communications, with marketing-analytics/product-marketing specializations. Not a matching Operations/MS/IE department or named field; journal editorial roles not treated as programme fields. Existing ISOM separate. No claim that individual faculty never research Operations; failed Research link/ad body remain limitations."
+            },
+            "note": "Individually adjudicated exact source record and school/department assertion; does not establish doctoral provision."
           }
         },
         {
@@ -123108,20 +123158,20 @@
           "schoolAsListed": "Michael G. Foster School of Business",
           "departmentAsListed": "Marketing and International Business",
           "reconciliation": {
-            "state": "accounted-for-by-existing-decision",
-            "note": "Exact source school/department assertion already adjudicated; preserves prior evidence dates and does not reverify current provision.",
-            "priorDecisions": [
-              {
-                "universityId": "university-of-washington",
-                "sourceDepartmentId": "university-of-washington__michael-g-foster-school-of-business__marketing-and-international-business",
-                "disposition": "out-of-scope",
-                "unitIds": [],
-                "reason": "Imported marketing/international-business label is outside the requested Operations/OR/IE unit scope.",
-                "reviewCheckedAt": "2026-10-21",
-                "unitEvidence": [],
-                "evidenced": true
-              }
-            ]
+            "state": "accounted-for-by-individual-decision",
+            "decision": {
+              "source": "oa-live-directory",
+              "sourceRecordId": "university-of-washington__michael-g-foster-school-of-business__marketing-and-international-business",
+              "school": "Michael G. Foster School of Business",
+              "department": "Marketing and International Business",
+              "universityId": "university-of-washington",
+              "disposition": "out-of-scope",
+              "unitIds": [],
+              "sourceUrl": "https://foster.uw.edu/faculty-research/academic-departments/dept-marketing-and-international-business/curriculum/",
+              "checkedAt": "2026-10-26",
+              "evidence": "Actual formal Department of Marketing and International Business and full curricular remit explicitly comprise marketing, international business and business communications, with marketing-analytics/product-marketing specializations. Not a matching Operations/MS/IE department or named field; journal editorial roles not treated as programme fields. Existing ISOM separate. No claim that individual faculty never research Operations; failed Research link/ad body remain limitations."
+            },
+            "note": "Individually adjudicated exact source record and school/department assertion; does not establish doctoral provision."
           }
         },
         {
@@ -123176,8 +123226,20 @@
           "schoolAsListed": "Michael G. Foster School of Business",
           "departmentAsListed": "Michael G. Foster School of Business, Marketing and International Business",
           "reconciliation": {
-            "state": "pending-source-reconciliation",
-            "note": "No exact school/department assertion with an existing official review decision."
+            "state": "accounted-for-by-individual-decision",
+            "decision": {
+              "source": "oa-live-jobs",
+              "sourceRecordId": "2027-university-of-washington-20260608",
+              "school": "Michael G. Foster School of Business",
+              "department": "Michael G. Foster School of Business, Marketing and International Business",
+              "universityId": "university-of-washington",
+              "disposition": "out-of-scope",
+              "unitIds": [],
+              "sourceUrl": "https://foster.uw.edu/faculty-research/academic-departments/dept-marketing-and-international-business/curriculum/",
+              "checkedAt": "2026-10-26",
+              "evidence": "Actual formal Department of Marketing and International Business and full curricular remit explicitly comprise marketing, international business and business communications, with marketing-analytics/product-marketing specializations. Not a matching Operations/MS/IE department or named field; journal editorial roles not treated as programme fields. Existing ISOM separate. No claim that individual faculty never research Operations; failed Research link/ad body remain limitations."
+            },
+            "note": "Individually adjudicated exact source record and school/department assertion; does not establish doctoral provision."
           }
         },
         {
@@ -123624,7 +123686,7 @@
     },
     {
       "id": "official:university of west florida|united states",
-      "officialUnitComparison": "pending-source-reconciliation",
+      "officialUnitComparison": "all-source-unit-assertions-accounted-for",
       "sourceAssertions": [
         {
           "source": "oa-directory",
@@ -123662,8 +123724,20 @@
           "schoolAsListed": null,
           "departmentAsListed": "TBC",
           "reconciliation": {
-            "state": "pending-source-reconciliation",
-            "note": "No exact school/department assertion with an existing official review decision."
+            "state": "accounted-for-by-individual-decision",
+            "decision": {
+              "source": "oa-live-universities",
+              "sourceRecordId": "university-of-west-florida",
+              "school": null,
+              "department": "TBC",
+              "universityId": "university-of-west-florida",
+              "disposition": "not-a-unit",
+              "unitIds": [],
+              "sourceUrl": "http://uwf.edu/cob/",
+              "checkedAt": "2026-10-22",
+              "evidence": "Exact live university-summary row contains literal TBC with no school; peer institution-only source rows assert no unit. Original imported official college source and complete current school/department inventory were individually read22October. Treat this source placeholder as no named academic unit, preserving raw text without expanding TBC, guessing a department, or replacing it with independently verified Commerce/SCM centre."
+            },
+            "note": "Individually adjudicated exact source record and school/department assertion; does not establish doctoral provision."
           }
         }
       ]
@@ -134223,6 +134297,11 @@
     {
       "id": "national-and-kapodistrian-university-of-athens",
       "name": "University of Athens",
+      "status": "partial"
+    },
+    {
+      "id": "mines-paris-tech",
+      "name": "Mines Paris Tech",
       "status": "partial"
     }
   ],

@@ -1,0 +1,8 @@
+import fs from 'node:fs';import assert from 'node:assert/strict';import {writeComplete} from '../../../scripts/write-complete.mjs';
+const file='data/doctoral-programs.json',d=JSON.parse(fs.readFileSync(file)),p=d.records.find(r=>r.id==='erasmus-university-rotterdam--management-economics-bplis');assert(p);
+const before=structuredClone(p.limitations),old='ERIM is jointly founded by RSM and ESE; do not duplicate this one programme as separate schools’ degrees. Specialisation page links relevant TOM research, while Economics separate OR pathway remains to be mapped.';
+const replacement='ERIM is jointly founded by RSM and ESE; this BPLIS specialization is not duplicated as separate school awards. The ESE PhD field Econometrics and Management Science is now separately documented. These pathways may overlap; counts are named routes, not unique students or awards.';
+assert(p.limitations.includes(old)||p.limitations.includes(replacement));p.limitations=p.limitations.map(s=>s===old?replacement:s);
+if(process.argv.includes('--apply'))writeComplete(file,JSON.stringify(d,null,2)+'\n');
+fs.writeFileSync('research-handoff/universities/continuation-460/erasmus-limitations-correction.json',JSON.stringify({programmeId:p.id,checkedAt:'2026-10-26',sourceUrl:'https://www.eur.nl/en/ese/research/phd/phd-programme',reason:'Current official named-field inventory resolves the earlier mapping limitation. Correct visitor-facing stale limitation only; all degree, programme, source-check and historical facts unchanged.',before,after:p.limitations,apply:process.argv.includes('--apply')},null,2)+'\n');
+console.log({changed:JSON.stringify(before)!==JSON.stringify(p.limitations),apply:process.argv.includes('--apply')});

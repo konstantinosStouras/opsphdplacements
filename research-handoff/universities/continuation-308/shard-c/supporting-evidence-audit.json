@@ -1,0 +1,126 @@
+{
+  "assessedAt": "2026-10-26",
+  "accessMethod": "Actual official full web pages opened with authorized web fallback, no browser tabs created.",
+  "priorReview": {
+    "canonicalName": "University of Chicago",
+    "reviewer": "Codex in Chrome",
+    "units": [
+      {
+        "id": "university-of-chicago--operations-management",
+        "school": "Booth School of Business",
+        "fields": [
+          "operations-management",
+          "operations-research"
+        ],
+        "sourceUrl": "https://www.chicagobooth.edu/faculty/academic-areas/operations-management",
+        "type": "area",
+        "evidence": "Official academic area page identifies operations-management faculty and research including healthcare analytics, criminal-justice operational issues, and management science/OR.",
+        "checkedAt": "2026-10-20",
+        "name": "Operations Management"
+      }
+    ],
+    "decisions": [
+      {
+        "reason": "School-only placeholder is not a separate academic unit.",
+        "disposition": "not-a-unit",
+        "unitIds": [],
+        "sourceDepartmentId": "university-of-chicago__booth-school-of-business"
+      },
+      {
+        "reason": "Official operations area explicitly includes healthcare analytics as research and a teaching lab; not a separate department.",
+        "disposition": "duplicate",
+        "unitIds": [
+          "university-of-chicago--operations-management"
+        ],
+        "sourceDepartmentId": "university-of-chicago__booth-school-of-business__healthcare-analytics"
+      },
+      {
+        "reason": "Official academic area name retained.",
+        "disposition": "replaced",
+        "unitIds": [
+          "university-of-chicago--operations-management"
+        ],
+        "sourceDepartmentId": "university-of-chicago__booth-school-of-business__operations-management"
+      }
+    ],
+    "sources": [
+      {
+        "note": "Area name, healthcare analytics overlap and research remit.",
+        "url": "https://www.chicagobooth.edu/faculty/academic-areas/operations-management",
+        "outcome": "read",
+        "checkedAt": "2026-10-20"
+      },
+      {
+        "note": "Engineering branch reviewed; research domains molecular/bioengineering, quantum, materials/sustainability, not a listed industrial engineering department.",
+        "url": "https://pme.uchicago.edu/",
+        "outcome": "read",
+        "checkedAt": "2026-10-20"
+      }
+    ],
+    "id": "university-of-chicago",
+    "limitations": [
+      "Healthcare Analytics is represented within Operations Management rather than separately as a department."
+    ],
+    "universitySourceUrl": "https://www.chicagobooth.edu/faculty/academic-areas/operations-management",
+    "duplicateOf": null,
+    "checkedAt": "2026-10-20",
+    "status": "reviewed",
+    "addedAt": "2026-10-20T10:06:22Z",
+    "updatedAt": "2026-10-21T11:37:44Z",
+    "doctoralReview": {
+      "status": "verified",
+      "checkedAt": "2026-10-21",
+      "programmeIds": [
+        "university-of-chicago--management-science-operations-management-phd"
+      ],
+      "branches": [
+        {
+          "branch": "business",
+          "reviewState": "checked",
+          "conclusion": "Booth current MSOM PhD dissertation area verified with exact University of Chicago host.",
+          "sourceUrls": [
+            "https://www.chicagobooth.edu/phd/dissertation-areas/management-science-and-operations-management"
+          ]
+        },
+        {
+          "branch": "engineering",
+          "reviewState": "checked",
+          "conclusion": "Full Pritzker Engineering doctoral inventory offers Molecular Engineering and Quantum Science and Engineering, with materials/sustainability,biomedical andquantum institutes; no relevant IE/OR PhD assigned.",
+          "sourceUrls": [
+            "https://pme.uchicago.edu/academics/phd-programs"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.chicagobooth.edu/phd/dissertation-areas/management-science-and-operations-management",
+          "checkedAt": "2026-10-21",
+          "outcome": "read",
+          "note": "Full current official PhD dissertation-area and requirements overview read,2026-27handbook link; no individual graduate data collected."
+        },
+        {
+          "url": "https://pme.uchicago.edu/academics/phd-programs",
+          "checkedAt": "2026-10-21",
+          "outcome": "read",
+          "note": "Full current Engineering PhD inventory and research institutes read."
+        }
+      ],
+      "limitations": [
+        "Current scoped business/engineering doctoral inventory; no historical dates inferred."
+      ],
+      "coverageComplete": true
+    }
+  },
+  "sourceAssertion": {
+    "source": "oa-live-directory",
+    "sourceRecordId": "university-of-chicago__booth-school-of-business__healthcare-analytics",
+    "schoolAsListed": "University of Chicago Booth School of Business",
+    "departmentAsListed": "Healthcare Analytics Laboratory",
+    "reconciliation": {
+      "state": "pending-source-reconciliation",
+      "note": "No exact school/department assertion with an existing official review decision."
+    }
+  },
+  "validation": "Pure unit schema and reconcileSourceUnit accepted virtual composed review. No public merger invoked.",
+  "limitation": "Integrator to adjudicate actual combined teaching/research laboratory inclusion; no change to parent PhD routes."
+}

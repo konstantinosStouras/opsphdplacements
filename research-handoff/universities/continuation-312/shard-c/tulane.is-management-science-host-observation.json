@@ -1,0 +1,57 @@
+{
+  "universityId": "tulane-university",
+  "status": "partial",
+  "assessedAt": "2026-10-26",
+  "accessMethod": "Actual web pages opened individually; no browser tabs or public edits.",
+  "observations": [
+    {
+      "finding": "Employer-attributed Tulane/Freeman full INFORMS advertisement explicitly places Information Systems appointment within Management Science area, anticipated July2027. This is substantive full advertisement text, not search snippet, but external hosting is retained explicitly.",
+      "sourceUrl": "https://careercenter.informs.org/job/assistant-professor-management-science-information-systems-new-orleans-louisiana-5484",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "finding": "Actual official Management Science faculty inventory read. It confirms current area but does not itself describe IS-to-area relationship.",
+      "sourceUrl": "https://freeman.tulane.edu/faculty-research/management-science",
+      "checkedAt": "2026-10-26"
+    },
+    {
+      "finding": "Discovery aggregator links IS and OM titles to same official job1734, so aggregator matching is unreliable. Actual official Tulane recruiting1734 and1738 shell returned zero text; body not verified and no title imported from aggregator.",
+      "sourceUrls": [
+        "https://tulane-ibqejb.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1001/job/1734",
+        "https://tulane-ibqejb.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1001/job/1738"
+      ],
+      "checkedAt": "2026-10-26"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://careercenter.informs.org/job/assistant-professor-management-science-information-systems-new-orleans-louisiana-5484",
+      "checkedAt": "2026-10-26",
+      "outcome": "read",
+      "note": "Actual full employer-attributed advertisement on professional society platform; Management Science area expressly hosts IS appointment."
+    },
+    {
+      "url": "https://freeman.tulane.edu/faculty-research/management-science",
+      "checkedAt": "2026-10-26",
+      "outcome": "read",
+      "note": "Actual full current area faculty inventory; no person histories collected."
+    },
+    {
+      "url": "https://tulane-ibqejb.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1001/job/1734",
+      "checkedAt": "2026-10-26",
+      "outcome": "blocked",
+      "note": "Actual discovered official recruiting page returned zero text/JS shell. No substantive title/body verification."
+    },
+    {
+      "url": "https://tulane-ibqejb.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1001/job/1738",
+      "checkedAt": "2026-10-26",
+      "outcome": "blocked",
+      "note": "Actual discovered official recruiting page returned zero text/JS shell; no body verification."
+    }
+  ],
+  "limitations": [
+    "Suggests older blanket Information Systems source exclusion may be overly broad because actual Management Science host is explicitly named by employer-attributed advertisement. Integrator must adjudicate whether external employer-ad evidence suffices or require official recruiting browser body.",
+    "Do not claim a new IS department or PhD programme from employment requirement. Existing verified Management Science area/core facts and Finance/Accounting-only doctorate scope preserved.",
+    "Exact imported IS tuple remains held until relationship adjudicated; no public correction or source overlay proposed from partial evidence."
+  ]
+}

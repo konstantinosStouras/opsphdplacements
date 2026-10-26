@@ -1,0 +1,91 @@
+{
+  "canonicalName": "University of Chicago",
+  "reviewer": "Codex in Chrome",
+  "units": [
+    {
+      "id": "university-of-chicago--operations-management",
+      "school": "Booth School of Business",
+      "fields": [
+        "operations-management",
+        "operations-research"
+      ],
+      "sourceUrl": "https://www.chicagobooth.edu/faculty/academic-areas/operations-management",
+      "type": "area",
+      "evidence": "Official academic area page identifies operations-management faculty and research including healthcare analytics, criminal-justice operational issues, and management science/OR.",
+      "checkedAt": "2026-10-20",
+      "name": "Operations Management"
+    },
+    {
+      "id": "university-of-chicago--healthcare-analytics-laboratory",
+      "name": "Healthcare Analytics Laboratory",
+      "school": "The University of Chicago Booth School of Business",
+      "type": "laboratory",
+      "fields": [
+        "operations-management",
+        "operations-research"
+      ],
+      "sourceUrl": "https://www.chicagobooth.edu/research/tolan/curriculum/healthcare-analytics-laboratory",
+      "checkedAt": "2026-10-26",
+      "evidence": "Actual Tolan page identifies named laboratory combining MBA action-learning with research and publications. Project descriptions explicitly include Operations Management, capacity planning, staffing and hospital scheduling. Independent Tolan opportunities page recruits laboratory research assistants and mentors. Actual lab retained, not promoted to department or doctoral programme."
+    }
+  ],
+  "decisions": [
+    {
+      "reason": "School-only placeholder is not a separate academic unit.",
+      "disposition": "not-a-unit",
+      "unitIds": [],
+      "sourceDepartmentId": "university-of-chicago__booth-school-of-business"
+    },
+    {
+      "reason": "Official operations area explicitly includes healthcare analytics as research and a teaching lab; not a separate department.",
+      "disposition": "duplicate",
+      "unitIds": [
+        "university-of-chicago--operations-management"
+      ],
+      "sourceDepartmentId": "university-of-chicago__booth-school-of-business__healthcare-analytics"
+    },
+    {
+      "reason": "Official academic area name retained.",
+      "disposition": "replaced",
+      "unitIds": [
+        "university-of-chicago--operations-management"
+      ],
+      "sourceDepartmentId": "university-of-chicago__booth-school-of-business__operations-management"
+    }
+  ],
+  "sources": [
+    {
+      "note": "Area name, healthcare analytics overlap and research remit.",
+      "url": "https://www.chicagobooth.edu/faculty/academic-areas/operations-management",
+      "outcome": "read",
+      "checkedAt": "2026-10-20"
+    },
+    {
+      "note": "Engineering branch reviewed; research domains molecular/bioengineering, quantum, materials/sustainability, not a listed industrial engineering department.",
+      "url": "https://pme.uchicago.edu/",
+      "outcome": "read",
+      "checkedAt": "2026-10-20"
+    },
+    {
+      "url": "https://www.chicagobooth.edu/research/tolan/curriculum/healthcare-analytics-laboratory",
+      "checkedAt": "2026-10-26",
+      "outcome": "read",
+      "note": "Actual official substantive body read: named laboratory, course/research distinction, leadership, research link and Operations Management projects. Individual participant/destination tables not collected as person histories."
+    },
+    {
+      "url": "https://www.chicagobooth.edu/research/tolan/opportunities",
+      "checkedAt": "2026-10-26",
+      "outcome": "read",
+      "note": "Actual Job Openings / Healthcare Analytics Lab affiliates section read: lab recruits research assistants, mentors and content experts. Other events not research outcomes."
+    }
+  ],
+  "id": "university-of-chicago",
+  "limitations": [
+    "Healthcare Analytics is represented within Operations Management rather than separately as a department.",
+    "Healthcare Analytics Laboratory is a combined teaching/research lab, not a department or independent doctorate. Its2026 project announcement coexists with a stale2022–23 course-not-offered sentence; precise historical course delivery is not reconstructed. Earlier generic Healthcare Analytics source mappings to Operations area retained as prior source adjudications; new explicit Laboratory tuple represented by actual lab."
+  ],
+  "universitySourceUrl": "https://www.chicagobooth.edu/faculty/academic-areas/operations-management",
+  "duplicateOf": null,
+  "checkedAt": "2026-10-20",
+  "status": "reviewed"
+}

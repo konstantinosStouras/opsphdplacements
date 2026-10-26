@@ -2,7 +2,7 @@
 
 This is an alphabetical planning snapshot from the published university frame and the OM List reported-PhD-institution queue. It is **not** a list of confirmed PhD providers. Some institutions already have frozen official-source proposals awaiting integrator review and publication; they remain here until the public register records the outcome. A missing or partial doctoral review never means that no qualifying doctorate exists.
 
-The published 832 university/campus source records group into 737 display identities; 280 identities have an incomplete unit review, doctoral branch check or title/host adjudication. Of the source records, 233 have incomplete unit reviews and 232 lack a complete current doctoral branch scope. 0 programme title/host decisions remain pending and are withheld from qualifying counts. The separate OM List queue has 6 reported institution labels still needing identity reconciliation. These lists overlap in real institutions but are not merged without accepted evidence. Source-unit assertions and live directory/posting coverage are additional Stage 1 gates.
+The published 833 university/campus source records group into 738 display identities; 280 identities have an incomplete unit review, doctoral branch check or title/host adjudication. Of the source records, 234 have incomplete unit reviews and 231 lack a complete current doctoral branch scope. 0 programme title/host decisions remain pending and are withheld from qualifying counts. The separate OM List queue has 5 reported institution labels still needing identity reconciliation. These lists overlap in real institutions but are not merged without accepted evidence. Source-unit assertions and live directory/posting coverage are additional Stage 1 gates.
 
 ## In the university/campus discovery frame
 
@@ -79,7 +79,7 @@ The published 832 university/campus source records group into 737 display identi
 | 69 | IÉSEG School of Management | doctoral branch scope |
 | 70 | Imperial College London | unit/identity: partial; doctoral branch scope |
 | 71 | IMT Atlantique | unit/identity: partial |
-| 72 | Indian Institute of Management Calcutta | unit/identity: partial; doctoral branch scope |
+| 72 | Indian Institute of Management Calcutta | unit/identity: partial |
 | 73 | Indian Institute of Technology Bombay | unit/identity: partial; doctoral branch scope |
 | 74 | Indian Institute of Technology Delhi | unit/identity: partial; doctoral branch scope |
 | 75 | Indian Institute of Technology Kharagpur | unit/identity: partial; doctoral branch scope |
@@ -97,33 +97,33 @@ The published 832 university/campus source records group into 737 display identi
 | 87 | IT University of Copenhagen | unit/identity: partial |
 | 88 | James Madison University | unit/identity: partial |
 | 89 | Jilin University | unit/identity: partial; doctoral branch scope |
-| 90 | Johns Hopkins University | doctoral branch scope |
-| 91 | Johnson & Wales University | unit/identity: partial |
-| 92 | Justus Liebig University Giessen | unit/identity: partial; doctoral branch scope |
-| 93 | Kansas State University | unit/identity: partial; doctoral branch scope |
-| 94 | Karlsruhe Institute of Technology | unit/identity: partial; doctoral branch scope |
-| 95 | Kazakh-American Free University | unit/identity: partial |
-| 96 | Kean University | unit/identity: partial |
-| 97 | Kiel University | unit/identity: partial; doctoral branch scope |
-| 98 | KIMEP University | unit/identity: partial; doctoral branch scope |
-| 99 | KNUST | unit/identity: blocked; doctoral branch scope |
-| 100 | Kobe University | unit/identity: partial; doctoral branch scope |
-| 101 | Konan University | unit/identity: partial; doctoral branch scope |
-| 102 | Korea Advanced Institute of Science and Technology | unit/identity: partial; doctoral branch scope |
-| 103 | Korea University | doctoral branch scope |
-| 104 | KTH Royal Institute of Technology | unit/identity: partial; doctoral branch scope |
-| 105 | Kyushu University | unit/identity: partial; doctoral branch scope |
-| 106 | Leiden University | unit/identity: partial; doctoral branch scope |
-| 107 | Leipzig University | unit/identity: partial |
-| 108 | Liverpool John Moores University | unit/identity: partial; doctoral branch scope |
-| 109 | Lomonosov Moscow State University | unit/identity: partial; doctoral branch scope |
-| 110 | Loughborough University | unit/identity: partial; doctoral branch scope |
-| 111 | Louisiana State University | unit/identity: partial; doctoral branch scope |
-| 112 | Louisiana Tech University | doctoral branch scope |
-| 113 | Ludwig-Maximilians-Universität München | unit/identity: partial; doctoral branch scope |
-| 114 | Management Development Institute Gurgaon | unit/identity: partial; doctoral branch scope |
-| 115 | Marian University | unit/identity: partial; doctoral branch scope |
-| 116 | Middle East Technical University | unit/identity: partial; doctoral branch scope |
+| 90 | Johnson & Wales University | unit/identity: partial |
+| 91 | Justus Liebig University Giessen | unit/identity: partial; doctoral branch scope |
+| 92 | Kansas State University | unit/identity: partial; doctoral branch scope |
+| 93 | Karlsruhe Institute of Technology | unit/identity: partial; doctoral branch scope |
+| 94 | Kazakh-American Free University | unit/identity: partial |
+| 95 | Kean University | unit/identity: partial |
+| 96 | Kiel University | unit/identity: partial; doctoral branch scope |
+| 97 | KIMEP University | unit/identity: partial; doctoral branch scope |
+| 98 | KNUST | unit/identity: blocked; doctoral branch scope |
+| 99 | Kobe University | unit/identity: partial; doctoral branch scope |
+| 100 | Konan University | unit/identity: partial; doctoral branch scope |
+| 101 | Korea Advanced Institute of Science and Technology | unit/identity: partial; doctoral branch scope |
+| 102 | Korea University | doctoral branch scope |
+| 103 | KTH Royal Institute of Technology | unit/identity: partial; doctoral branch scope |
+| 104 | Kyushu University | unit/identity: partial; doctoral branch scope |
+| 105 | Leiden University | unit/identity: partial; doctoral branch scope |
+| 106 | Leipzig University | unit/identity: partial |
+| 107 | Liverpool John Moores University | unit/identity: partial; doctoral branch scope |
+| 108 | Lomonosov Moscow State University | unit/identity: partial; doctoral branch scope |
+| 109 | Loughborough University | unit/identity: partial; doctoral branch scope |
+| 110 | Louisiana State University | unit/identity: partial; doctoral branch scope |
+| 111 | Louisiana Tech University | doctoral branch scope |
+| 112 | Ludwig-Maximilians-Universität München | unit/identity: partial; doctoral branch scope |
+| 113 | Management Development Institute Gurgaon | unit/identity: partial; doctoral branch scope |
+| 114 | Marian University | unit/identity: partial; doctoral branch scope |
+| 115 | Middle East Technical University | unit/identity: partial; doctoral branch scope |
+| 116 | Mines Paris – PSL | unit/identity: partial; doctoral branch scope |
 | 117 | Mines Saint-Étienne | unit/identity: partial; doctoral branch scope |
 | 118 | Minnesota State University | unit/identity: partial; doctoral branch scope |
 | 119 | Mohammed V University in Rabat | unit/identity: partial; doctoral branch scope |
@@ -297,9 +297,8 @@ These are names as reported in faculty directory metadata. The name, relevant fi
 |---:|---|---:|
 | 1 | Luxembourg Centre for Logistics and Supply Chain Management | 1 |
 | 2 | Manchester Metropolitan University | 1 |
-| 3 | Mines Paris Tech | 1 |
-| 4 | University of Berlin | 1 |
-| 5 | University of Paris | 1 |
-| 6 | University of York | 2 |
+| 3 | University of Berlin | 1 |
+| 4 | University of Paris | 1 |
+| 5 | University of York | 2 |
 
 Stages 2–4 remain held until Stage 1 is finished.
