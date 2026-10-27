@@ -1,3 +1,5 @@
 # Not integrated in continuation-e
 
 These later proposals are preserved for the next review, not claimed as public findings: Alain Bensoussan and Alan McKinnon source follow-ups, and separate completion/defence milestones for Leann, Cynthia and Kimberly. Review identity, prior observations and actual award/defence/completion wording before merging. Do not replace detailed prior careers with grouped chronology summaries. The reviewed release cut ends at Stage2's 33 revisits and Stage3 continuation16.
+
+Further arrivals during publication are also preserved without integration: Alan Mackelprang, Alan Scheller-Wolf, Albert Ha and Albert Veenstra (Stage2 lane reaches39 partial revisits), and Stage3 continuations17–19 for Kallus residual checks, Adrian Lewis and Alexander Vladimirsky. Their own source limitations and deferred LinkedIn/challenge notes remain intact. Review against the now-published records; do not replay superseded Kallus histories over continuation16 and its integrator corrections.
