@@ -1,5 +1,11 @@
 # Remaining work and handoff priorities
 
+## Stage 3 corrections reviewed — 27 October 2026
+
+- Reviewed correction manifests through69: 40 accepted histories, six new first-job findings; Gan, Garg and Dwivedi's older first-job conclusions corrected to unresolved.
+- Ten candidates reviewed in this correction batch remain scope-held; 15 Cornell candidates remain held overall. Their supported findings and exact scope reasons remain in the portable handoff.
+- Remaining work is individual chronology/degree boundaries, omitted industry detail, unresolved scope and the wider department-roster frontier. Later newly saved proposals require a separate reviewed cut. See [continuation-g](research-handoff/parallel-stages-2026-10-26/review-2026-10-27g/README.md).
+
 ## Latest reviewed continuation-e — 27 October 2026
 
 - Owner's Sohil Shah screenshot and exact LinkedIn URL confirmed 27 October: explicit graduate profile link and visible self-reported September 2018–February 2024 doctoral study range added. Amazon June 2017–May 2024 was already captured; no duplicate job or fabricated new first-job conclusion added. Official degree month/day remain unknown.

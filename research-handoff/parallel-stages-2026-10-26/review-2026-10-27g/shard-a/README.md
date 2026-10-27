@@ -1,0 +1,5 @@
+# Stage 3 review cut 17–35
+
+Guarded public-history replacements only. Current public snapshots and SHA-256 hashes (JSON.stringify record) are in audit.json. Verify each prior hash before integration. Nineteen distinct identities: fourteen replacements, five scope-held. Full original proposals and ready manifests frozen. Earlier employment observations preserved separately; services, chair designations, emeritus observations and duplicate programme rows do not create additional jobs. All histories remain partial. Three first-job proposals are separate for primary-evidence adjudication. No public files or Git changed.
+
+Held identities: Alexander Vladimirsky, David Bindel, David Matteson, Eilyan Bitar and Fengqi You. Matteson historical ORIE visiting appointment is a scope lead, not automatically a qualifying current department or doctorate. Gentsch remains an existing accepted faculty identity but doctorate is unverified; no post-PhD placement claimed. LinkedIn raw complete-section rows are retained where supplied; a complete accessible profile is not a lifetime census. Unknown dates, conflicting dates and prospective roles remain explicit.

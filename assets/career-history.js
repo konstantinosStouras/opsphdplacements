@@ -9,7 +9,7 @@ export function historyIndex(records) {
   }
   return index;
 }
-export const jobText = j => `${j.start?.asWritten || 'Unknown start'} – ${j.end?.asWritten || 'Unknown end'}: ${j.employerAsWritten || 'Employer unknown'} — ${j.titleAsWritten || 'Role unknown'}`;
+export const jobText = j => `${j.observedPeriod?.asWritten ? 'Observed '+j.observedPeriod.asWritten+' (appointment boundaries unknown)' : `${j.start?.asWritten || 'Unknown start'} – ${j.end?.asWritten || 'Unknown end'}`}: ${j.employerAsWritten || 'Employer unknown'} — ${j.titleAsWritten || 'Role unknown'}`;
 
 // Only reviewed primary-career intervals qualify. Never derive continuity from first/current jobs.
 export function careerSummary(history) {

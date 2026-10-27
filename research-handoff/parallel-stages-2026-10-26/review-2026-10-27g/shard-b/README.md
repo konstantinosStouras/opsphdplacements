@@ -1,0 +1,15 @@
+# Shard B review — Stage 3 corrections 36–49
+
+Frozen and reviewed 27 October 2026. This review covers 14 saved correction manifests only; it does not modify public datasets or the original Stage3 lane. All 14 proposal hashes match their ready manifests. Review used saved source-reader evidence without claiming fresh source reads.
+
+Schema: each `*.reviewed.json` is a complete proposed history replacement. Its corresponding `*.prior.json` preserves the public record, or null for a held candidate. `audit.json` records stable IDs, accepted/held status, current prior-record SHA256 (JSON.stringify representation), role counts and all moves to supporting observations. The integrator must verify the prior hash immediately before accepting a replacement. `first-job-recommendations.json` is separate from history integration; no first-placement is automatically authorized by a history update.
+
+Ten existing public faculty identities are eligible for history integration. Four remain outside the public identity register: James Booth, Jayadev Acharya, Jon Kleinberg and Karthik Sridharan. Their statistics/electrical engineering/computer science degree observations do not alone meet the named Operations/Management Science/Industrial Engineering rule, and ORIE graduate-field affiliation is insufficient by itself. Their full corrections remain portable research-only candidates.
+
+Preservation: previous public jobs and supporting observations remain available with original source/check dates, marked as earlier assertions instead of duplicated new jobs. Degree/source observations are combined without silently choosing between conflicting dates. All careers stay partial. LinkedIn capture fields retain the original reader’s date; no LinkedIn profile was newly opened by this reviewer.
+
+Classification: Topaloglu’s two broad faculty/campus memberships overlap separately dated ranks and four short visits lack appointment titles/contracts; retain them as supporting activities. Mays’s named fellowship, Pender’s residence-hall fellowship and Bradic’s center fellowship remain affiliations/distinctions. Muckstadt’s graduate-program committee chair is service. No source observation is deleted.
+
+First-job review priorities: Samorodnitsky has explicit doctorate→UNC→Boston sequencing; Topaloglu has contemporary doctorate→Princeton research fellowship→Cornell sequencing; Pender has explicit Princeton first-postdoctoral-placement evidence. Root should open those primary sources before adjudicating. All other assessments retain their stated limitations: prospective Mays graduation; Dai formal-boundary uncertainty; Wissel degree-spanning ETH role and subsequent industry internship; Muckstadt earlier military service; Caggiano PeopleSoft spanning doctorate; withheld identities and conflicting Sridharan degree/start years. Bradic already has a separate public first-placement verdict; do not duplicate it.
+
+No public write, merge, commit, push or browser-tab operation occurred. Next step is root validation/integration of ten supported history replacements and separate first-job adjudication.

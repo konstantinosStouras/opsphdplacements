@@ -1,5 +1,9 @@
 # Operations PhD Placements
 
+## Latest Stage 3 corrections — 27 October 2026
+
+Reviewed the saved corrections through manifest69: 40 accepted faculty histories now contain 459 structured role observations. Six new first-job findings and three withdrawn insufficiently supported older claims bring the verified faculty total to 2,093. The register remains 3,215 people. Conflicts, scope-held candidates and incomplete careers stay explicit. See [reviewed corrections and remaining work](research-handoff/parallel-stages-2026-10-26/review-2026-10-27g/README.md).
+
 ## Latest continuation — 27 October 2026
 
 The continuation-e reviewed release updates 43 career records (14 OM List, 26 Cornell and three MIT graduates), including three newly created histories. Jacob Mays and Jelena Bradic join the faculty register through explicit qualifying doctorate evidence; actual departmental affiliations are preserved. Faculty now total 3,215, with 2,090 verified first jobs: Sabach, Bradic and Resnick are added, while Kallus's earlier MIT-first claim is corrected to unresolved after concurrent MIT/USC dates were found. Sabrina Zhai's August completion and September Citadel start support the fifth separately counted graduate first job. Sohil and Nicholas remain unresolved. All affected careers remain partial. See [reviewed cut, evidence and remaining work](research-handoff/parallel-stages-2026-10-26/review-2026-10-27e/README.md); older checkpoints below retain their historical counts.

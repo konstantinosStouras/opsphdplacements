@@ -1,0 +1,6 @@
+import fs from 'node:fs';
+const b='research-handoff/parallel-stages-2026-10-26/review-2026-10-27g';
+for(const p of ['README.md','TODO.md',`${b}/README.md`]){
+ let s=fs.readFileSync(p,'utf8');s=s.replaceAll('through manifest66','through manifest69').replaceAll('through66','through69').replaceAll('through 66','through 69').replaceAll('37 accepted faculty histories','40 accepted faculty histories').replaceAll('37 accepted histories','40 accepted histories').replaceAll('411 structured role observations','459 structured role observations').replaceAll('replacing 271','replacing 302').replaceAll('two withdrawn','three withdrawn').replaceAll('withdrawal of two','withdrawal of three').replaceAll('Kyra Gan and Nikhil Garg','Kyra Gan, Nikhil Garg and Raaz Dwivedi').replaceAll('Gan and Garg','Gan, Garg and Dwivedi').replaceAll('2,094','2,093');fs.writeFileSync(p,s);
+}
+fs.appendFileSync('RESEARCH-DESIGN.md','\nContinuation-g final cut also withdraws Dwivedi’s earlier joint-postdoc first-job conclusion: an August education endpoint and an August dissertation-report publication do not establish completion before an August appointment. Both the joint appointment and the uncertainty remain published.\n');

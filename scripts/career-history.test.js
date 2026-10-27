@@ -1,7 +1,12 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {historyIndex,careerSummary,validateCareerHistories} from '../assets/career-history.js';
+import {historyIndex,jobText,careerSummary,validateCareerHistories} from '../assets/career-history.js';
 import {filterRecords,normalize,csv} from '../assets/model.js';
+
+test('dated observations do not imply appointment start or continuous tenure',()=>{
+  assert.equal(jobText({observedPeriod:{asWritten:'March 2008'},employerAsWritten:'University',titleAsWritten:'Visitor'}),'Observed March 2008 (appointment boundaries unknown): University — Visitor');
+  assert.match(jobText({start:{asWritten:'2001'},end:{asWritten:'2003'}}),/^2001 – 2003:/);
+});
 
 test('employer and role filters remain independent and intersect',()=>{
   const rows=[

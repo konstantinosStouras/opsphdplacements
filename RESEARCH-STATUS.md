@@ -7,11 +7,11 @@ Generated from committed-format public datasets by `node scripts/update-research
 | People in the database | 3215 |
 | of which OM List profiles | 2149 |
 | of which operations faculty found on the linked faculty pages | 1066 |
-| Individually reviewed profiles | 3179 |
-| Verified first jobs | 2090 |
-| Researched but unresolved | 1085 |
+| Individually reviewed profiles | 3203 |
+| Verified first jobs | 2093 |
+| Researched but unresolved | 1106 |
 | Degree completion unconfirmed | 4 |
-| Pending individual review | 36 |
+| Pending individual review | 12 |
 | Named-scope doctoral register records, including historical and unresolved routes | 419 |
 | Verified relevant doctoral routes (tracks may overlap; admissions may be suspended) | 410 |
 | Institutions with verified relevant doctoral provision | 306 |
