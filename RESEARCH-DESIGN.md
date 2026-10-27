@@ -341,3 +341,5 @@ Faculty person-scope clarification, 27 October 2026: an individually verified fa
 
 
 Explicit retrospective next-position reporting by a doctoral supervisor can verify a first employer even when its title and start date are unknown. Preserve the named thesis/degree identity, source and sequence wording. Current-affiliation wording alone remains insufficient. Do not manufacture a start year from the doctoral year or fill unknown award dates.
+
+Doctoral milestone clarification, 27 October 2026: separately store advisor-reported graduation/completion, explicit defence and ambiguous graduation-event wording under degreeMilestones. Preserve exact source wording and date precision; do not overwrite degreeReview formal award fields or infer first employment from prospective job announcements. A defence date does not prove completion of all degree requirements.

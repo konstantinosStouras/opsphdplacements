@@ -367,3 +367,5 @@ Continuation-e, 27 October 2026: reviewed proposal snapshots and guarded one-sho
 
 
 Graduate first-employer reviews permit null title and unknown start only with linked explicit-next-position sequence evidence; the validator rejects fabricated dates and requires matching history conclusions. The visitor display labels unknown title/start plainly. Continuation d keeps reviewed/frozen inputs, prior records and integration audits under research-handoff/parallel-stages-2026-10-26/review-2026-10-27d/. Never replay its one-shot scripts.
+
+Continuation-f: degreeMilestones on graduate records are source-linked observations displayed under Reported doctoral milestones. Freeze inputs and assert unchanged degreeReview/firstJobReview values across the graduate register. Regenerate stamps/status, validate and inspect each expanded milestone in preview and live; ambiguous event labels must remain visible.

@@ -67,6 +67,14 @@ export async function renderGraduates(section) {
         nameCell.append(link(`Degree evidence · checked ${d.checkedAt}`, d.sourceUrl));
       }
       const career = careers.get(r.id);
+      if (r.degreeMilestones?.length) {
+        const milestones = document.createElement('details');
+        milestones.append(html('summary', undefined, 'Reported doctoral milestones'));
+        for (const m of r.degreeMilestones) {
+          const p = html('p'); p.append(link(m.displayText, m.sourceUrl), html('small', undefined, `${m.limitation} Source checked ${m.checkedAt}.`)); milestones.append(p);
+        }
+        nameCell.append(milestones);
+      }
       if (career?.profileUrl && /^https:\/\/(?:www\.)?linkedin\.com\/in\//i.test(career.profileUrl)) {
         const profile = html('p'); profile.append(link('LinkedIn profile ↗', career.profileUrl)); nameCell.append(profile);
       }
