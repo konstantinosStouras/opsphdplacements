@@ -1,5 +1,11 @@
 # Remaining work and handoff priorities
 
+## MIT 2021 review — 27 October 2026
+
+- Nine graduate records and six partial career reviews integrated; four first employers accepted. Additional Renegar Milliman history and Bandi's pre-award employment observation preserved.
+- Bandi needs actual completion/appointment-conversion timing and post2024 history; Koduri lacks identity-matched employment evidence. Three faculty career deferrals, three formal award months and nine precise award days remain unresolved.
+- Preserve distinctions between formal conferral, employer-reported completion and publication-based employment observations. A gap between award and earliest documented job does not by itself justify demanding proof against hypothetical unlisted jobs. See [review](research-handoff/parallel-stages-2026-10-26/review-mit-2021-2026-10-27/README.md).
+
 ## MIT 2022–2023 reviewed release — 27 October 2026
 
 - Integrated 30 graduate records, 20 partial histories and 12 first employers; graduate total 17, faculty denominator unchanged.
