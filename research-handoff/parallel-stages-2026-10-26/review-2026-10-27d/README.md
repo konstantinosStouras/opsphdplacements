@@ -9,4 +9,3 @@ Stage 2 lane has 19 partial reviews of 2,149 profiles (2,130 not revisited in th
 Only the integrator edits public data. File-only review helpers preserved source-reader check dates; no claim of reopening LinkedIn. Fourteen faculty histories and five MIT graduate histories were reviewed; one faculty history is newly added. All prior observations and limitations are retained.
 
 Validation: 60 JavaScript tests and four relational-schema tests passed, alongside all data validators and the relational build. Preservation audit confirms exactly 19 changed/new histories and two graduate conclusions, with faculty facts and all 2,088 faculty placements unchanged. Browser preview confirmed Haoyue unknown title/start and expanded sources; Steven old assertion-date limitation; Scully 14-role history. No prohibited export/repository links in rendered view. Graduate table now follows the existing left-alignment rule.
-
