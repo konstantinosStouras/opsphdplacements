@@ -5,10 +5,11 @@ import {fold} from './model.js';
 // program-year is complete. Nothing here is inferred from where people work now.
 import { tiles, fmt, html } from './charts.js';
 import { loadJson } from './analytics.js';
+import {historyIndex, jobText} from './career-history.js';
 
 const link = (text, href) => { const a = html('a', undefined, text); a.href = href; a.target = '_blank'; a.rel = 'noopener noreferrer'; return a; };
 const FIELD = { operations: 'Operations', 'other-field': 'Another field', unstated: 'Area not stated' };
-const MEANING = { graduation: 'graduation year', placement: 'placement year', 'job-market': 'job-market year', 'class-of': 'class year', unstated: 'year as listed, meaning not stated' };
+const MEANING = { thesis: 'thesis year', graduation: 'graduation year', placement: 'placement year', 'job-market': 'job-market year', 'class-of': 'class year', unstated: 'year as listed, meaning not stated' };
 
 export async function renderGraduates(section) {
   const summary = section.querySelector('#graduate-summary'), controls = section.querySelector('#graduate-controls'), note = section.querySelector('#graduate-note'), table = section.querySelector('#graduate-table');
@@ -16,6 +17,8 @@ export async function renderGraduates(section) {
   try { data = await loadJson('data/graduate-lists.json'); }
   catch { note.textContent = 'The graduate lists have not been published yet.'; return; }
   const { metadata: m, records } = data;
+  let careers = new Map();
+  try { careers = historyIndex((await loadJson('data/employment-histories.json')).records); } catch { /* Listings remain available if career evidence cannot load. */ }
   const inst = new Map();
   for (const r of records) { const s = inst.get(r.institution) || { all: 0, operations: 0, years: new Set() }; s.all++; if (r.field === 'operations') s.operations++; if (r.listedYear) s.years.add(r.listedYear); inst.set(r.institution, s); }
   const pages = new Set(records.flatMap(r => r.sightings.map(s => s.pageUrl)));
@@ -56,11 +59,26 @@ export async function renderGraduates(section) {
       const last = r.sightings[r.sightings.length - 1];
       const yearCell = html('td', undefined, r.listedYear ? String(r.listedYear) : '—'); if (r.listedYear) yearCell.append(html('small', undefined, MEANING[last.yearMeaning] || ''));
       const nameCell = html('td'); nameCell.append(html('strong', undefined, r.name));
-      if (r.facultyId) { const a = html('a', undefined, 'in the people database'); a.href = `?q=${encodeURIComponent(r.name)}#explorer`; nameCell.append(html('small'), a); }
+      if (r.facultyId) { const a = html('a', undefined, 'in the people database'); a.href = `?q=${encodeURIComponent(r.facultyName || r.name)}#explorer`; nameCell.append(html('small'), a); }
+      if (r.degreeReview) {
+        const d = r.degreeReview, period = d.period;
+        nameCell.append(html('small', undefined, `Official degree-recipient match: ${period.month === 9 ? 'September ' : ''}${period.year}. ${period.month ? 'Exact day unknown.' : 'Month and day unknown.'}`));
+        nameCell.append(link(`Degree evidence · checked ${d.checkedAt}`, d.sourceUrl));
+      }
+      const career = careers.get(r.id);
+      if (career) {
+        const detail = document.createElement('details');
+        detail.append(html('summary', undefined, `Partial career history: ${career.jobs.length} recorded roles`));
+        for (const j of career.jobs) { const p = html('p'); p.append(link(jobText(j), j.sourceUrl), html('small', undefined, `${j.evidenceNote} · Checked ${j.checkedAt}`)); detail.append(p); }
+        for (const j of career.otherEmploymentMentions || []) { const p = html('p'); p.append(link([j.employerAsWritten,j.titleAsWritten].filter(Boolean).join(' — ') || 'Supporting source',j.sourceUrl),html('small',undefined,`${j.evidenceNote} · Checked ${j.checkedAt}`)); detail.append(p); }
+        detail.append(html('p',undefined,career.coverageNote),html('p',undefined,'First post-PhD job is not verified. This partial history includes roles before and during doctoral study.'));
+        for (const text of career.remainingUnknowns || []) detail.append(html('small',undefined,text));
+        nameCell.append(detail);
+      }
       const instCell = html('td'); instCell.append(r.institution, html('small', undefined, [last.program, FIELD[r.field]].filter(Boolean).join(' · ')));
       const destCell = html('td', undefined, [last.position, last.destination].filter(Boolean).join(', ') || '—'); if (last.degree) destCell.append(html('small', undefined, last.degree));
       const srcCell = html('td');
-      for (const s of r.sightings) { const tag = s.archive === 'internet-archive' || s.sourceUrl.includes('web.archive.org') ? ' (Internet Archive)' : s.archive === 'commoncrawl' ? ' (Common Crawl)' : ''; srcCell.append(link(`${s.sourceDate}${tag}`, s.sourceUrl), ' '); }
+      for (const s of r.sightings) { const tag = s.archive === 'internet-archive' || s.sourceUrl.includes('web.archive.org') ? ' (Internet Archive)' : s.archive === 'commoncrawl' ? ' (Common Crawl)' : ''; srcCell.append(link(`${s.sourceDate || 'Checked ' + s.checkedAt}${tag}`, s.sourceUrl), ' '); }
       tr.append(yearCell, nameCell, instCell, destCell, srcCell); tbody.append(tr);
     } shown = Math.min(rows.length, shown + PAGE); more.hidden = shown >= rows.length; more.textContent = `Show more (${fmt(rows.length - shown)} left)`; };
     t.append(tbody);

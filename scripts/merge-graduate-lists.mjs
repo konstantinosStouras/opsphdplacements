@@ -91,7 +91,7 @@ for (const file of files) {
       records.set(id, rec); added++;
     }
     if (!rec.sightings.some(s => s.sourceUrl === sighting.sourceUrl && s.name === sighting.name)) { rec.sightings.push(sighting); sightings++; }
-    rec.sightings.sort((a, b) => a.sourceDate.localeCompare(b.sourceDate));
+    rec.sightings.sort((a, b) => (a.sourceDate || a.checkedAt || '').localeCompare(b.sourceDate || b.checkedAt || ''));
     // Operations wins over unstated across a person's sightings; a stated other field wins over unstated too.
     const fields = rec.sightings.map(s => fieldOf(s.program, s.pageUrl));
     rec.field = fields.includes('operations') ? 'operations' : fields.includes('other-field') ? 'other-field' : 'unstated';

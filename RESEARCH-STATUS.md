@@ -15,12 +15,12 @@ Generated from committed-format public datasets by `node scripts/update-research
 | Named-scope doctoral register records, including historical and unresolved routes | 419 |
 | Verified relevant doctoral routes (tracks may overlap; admissions may be suspended) | 410 |
 | Institutions with verified relevant doctoral provision | 306 |
-| Names on program graduate and placement pages (person-years) | 14451 |
-| of which listed under an operations area | 2161 |
+| Names on program graduate and placement pages (person-years) | 14465 |
+| of which listed under an operations area | 2175 |
 | Institutions with such a page read | 117 |
-| Listed names already in the people database | 406 |
-| LinkedIn profiles with published history observations | 9 |
-| of which all accessible Experience entries read | 9 |
+| Listed names already in the people database | 409 |
+| LinkedIn profiles with published history observations | 16 |
+| of which all accessible Experience entries read | 15 |
 | University directory records with completed official-source reviews | 633 |
 | University directory records partially reviewed | 197 |
 | University directory records blocked by source access | 5 |

@@ -1,0 +1,27 @@
+{
+  "proposalId":"stage4-mit-namebook-field-coverage-2026-10-27",
+  "checkedAt":"2026-10-27",
+  "integrationStatus":"proposal-only",
+  "scope":"All-page text scan of both official books for exact doctoral Operations Research field labels, followed by review of matching entries; source coverage, not complete real-world census",
+  "method":"Read both PDFs in memory with pypdf. Searched normalized text on every page for Thesis in the field of Operations Research followed by a colon. Reviewed all returned named-entry contexts against the existing reconciliation. Previously matched pages had full-page visual reviews; newly found continuation page 101 was rendered and visually read. Temporary image removed; no full PDF saved.",
+  "sources":[
+    {"year":2024,"url":"https://commencement.mit.edu/sites/default/files/2024-05/MIT.Commencement.2024.Graduates.Name.Book.pdf","pagesScanned":132,"sha256":"36e4a9f45a5c390471c11195d285c7c2072d4a549e44e3dad1cd33bdf87444a9","matchingPdfPagesOneBased":[99],"exactFieldEntries":10},
+    {"year":2025,"url":"https://commencement.mit.edu/sites/default/files/2025-05/MIT.Commencement.2025.Graduates.Name.Book.pdf","pagesScanned":134,"sha256":"a7ce5c49bb897cce57c71ecbd7d160091487c0df098b07652f88bb07847ffd1d","matchingPdfPagesOneBased":[100,101],"exactFieldEntries":19}
+  ],
+  "reviewed2024BookNames":["Kayhan Behdin","Mohammed Amine Bennouna","Moïse Jean-Baptiste Marie Blanchard","Kayla Spring Cummings","Shuvomoy Das Gupta","Sohil Shah","Leann Pearl Geetha Thayaparan","Kimberly M. Villalobos Carballo","Haoyue Wang","Cynthia Zeng"],
+  "reviewed2025BookNames":["Benjamin Marcel Jean-Claude Boucher","Qinyi Chen","Raluca-Ioana Cobzaru","Rares Cristian","Victor A. Gonzalez","Robert Wesley Gurnee","Kevin Kaiwen Hu","Nicholas André G Johnson","Cheol Woo Kim","Angelos Georgios Koulouras","Zhen Lin","Xinming Liu","Yu Ma","Alexander Spassimirov Paskov","Zikai Xiong","Yuanfan Yao","El Ghali Ahmed Zerhouni","Chen Wen Zhai","Jiayu Zhao"],
+  "cohortComparison":{
+    "existing2024ThesisSightings":14,
+    "nineExistingMatchesIn2024Book":9,
+    "fiveExistingExplicitSeptember2024MatchesIn2025Book":5,
+    "additionalExplicit2024OrFieldRecipientsFound":0,
+    "excludedEarlierRecipient":"Kayla Spring Cummings explicitly September 2023",
+    "continuationPageFinding":"2025 book page 101, printed 99, contains Jiayu Zhao without an individual date annotation. September 2024 annotation on that page belongs to Alan Zhang in Management, not Jiayu Zhao. Visually verified.",
+    "other2025NamesStatus":"Remaining names are out-of-window comparison observations, not new 2024 graduates or reviewed careers. No award date inferred from an unannotated ceremony-book entry."
+  },
+  "resolvedScopeQuestion":"No additional exact OR doctoral-field entry was found elsewhere in these two books. This closes the previously unchecked continuation-page search for these exact labels, not all possible doctoral programmes or historical populations.",
+  "degreePrecisionUnchanged":true,
+  "officialIndependentAggregateTotal":null,
+  "cohortCensusComplete":false,
+  "limitations":["Automated text search can miss scanned text, variant field labels or extraction failures. Matched records were reviewed; unrelated pages were not declared manually reviewed.","The books have the same hashes as the earlier sources, not newly corrected editions.","The 2024 front matter supplies a ceremony date but no read rule establishing an award month/day for unannotated names. Nine months and all direct individual award days remain unknown.","No global coverage percentage or programme-founding claim."]
+}
