@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {historyIndex,jobText,careerSummary,validateCareerHistories} from '../assets/career-history.js';
+import {historyIndex,jobText,careerSummary,validateCareerHistories,affiliationCorrection} from '../assets/career-history.js';
 import {filterRecords,normalize,csv} from '../assets/model.js';
 
 test('dated observations do not imply appointment start or continuous tenure',()=>{
@@ -44,4 +44,11 @@ test('history search and CSV preserve evidence fields safely',()=>{
   assert.equal(filterRecords([r],{query:'prior employer'}).length,1);
   assert.match(csv([r]),/"'=unsafe"/);
   assert.match(csv([r]),/historyCheckedAt/);
+});
+
+test('reviewed departure overrides stale directory display only with dated source evidence',()=>{
+ const h={reviewedAffiliation:{directoryStatus:'former',label:'Cornell appointment ended August 2026; new employer unknown',sourceUrl:'https://example.edu/bio',checkedAt:'2026-10-27'}};
+ assert.equal(affiliationCorrection(h),h.reviewedAffiliation);
+ assert.equal(affiliationCorrection({...h,reviewedAffiliation:{...h.reviewedAffiliation,sourceUrl:'javascript:alert(1)'}}),null);
+ assert.equal(affiliationCorrection(),null);
 });

@@ -1,5 +1,10 @@
 # Operations PhD Placements
 
+## Cornell corrections 70–94 — 27 October 2026
+
+Reviewed every remaining correction through94, using88 instead of86. Nineteen existing histories now contain210 employment/appointment observations (117 before), with34 service, honorary, course-detail and student-visit entries retained separately. Four first jobs added: Stoikov at NYU, Averbukh at Salomon Brothers, Scully at UC Berkeley Simons Institute and Shafiee at ETH Zürich. Total verified faculty first jobs:2,097; no pending initial reviews remain, but1,114 are unresolved and4 have unconfirmed completion. All histories remain partial. Terenin’s former Cornell affiliation is visibly corrected without rewriting the original roster. Five reviewed candidates remain scope-held. See [review, validation and remaining work](research-handoff/parallel-stages-2026-10-26/review-2026-10-27h/README.md).
+
+
 ## Latest Stage 3 corrections — 27 October 2026
 
 Reviewed the saved corrections through manifest69: 40 accepted faculty histories now contain 459 structured role observations. Six new first-job findings and three withdrawn insufficiently supported older claims bring the verified faculty total to 2,093. The register remains 3,215 people. Conflicts, scope-held candidates and incomplete careers stay explicit. See [reviewed corrections and remaining work](research-handoff/parallel-stages-2026-10-26/review-2026-10-27g/README.md).

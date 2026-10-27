@@ -1,0 +1,149 @@
+{
+  "checkedAt": "2026-10-27",
+  "recordsReviewed": 19,
+  "scope": "Read-only material audit of replacement jobs, visible notes, current/future flags and date precision; source metadata not stylistically rewritten.",
+  "noUnsupportedFutureOrCurrentFlagFound": true,
+  "issues": [
+    {
+      "id": "roster:cornell-university:kathryn-zhao",
+      "shard": "c",
+      "paths": [
+        "jobs[0]",
+        "jobs[1]",
+        "jobs[4]",
+        "jobs[5]",
+        "jobs[6]",
+        "jobs[7]",
+        "jobs[8]"
+      ],
+      "severity": "material-classification",
+      "finding": "Council, board and membership entries are explicitly of unknown pay and several duplicate volunteering. Keeping these in counted jobs is inconsistent with supporting-activity treatment elsewhere.",
+      "action": "Move these exact observations to otherEmploymentMentions; preserve dates, titles and sources."
+    },
+    {
+      "id": "roster:cornell-university:andrew-chin",
+      "shard": "c",
+      "paths": [
+        "jobs[7]",
+        "jobs[8]"
+      ],
+      "severity": "material-classification",
+      "finding": "Editorial board membership and SQA society directorship have unknown pay and are service activities.",
+      "action": "Move to supporting mentions; preserve the June-versus-September 2014 SQA conflict."
+    },
+    {
+      "id": "roster:cornell-university:alexander-terenin",
+      "shard": "c",
+      "paths": [
+        "jobs[5]",
+        "jobs[6]",
+        "jobs[10]",
+        "jobs[11]"
+      ],
+      "severity": "material-classification",
+      "finding": "College Research Associate is listed as an honor; tutorials are educational activities of unknown pay. Cornell guest lecturing in 2025 overlaps his established Cornell research appointment.",
+      "action": "Move affiliation, tutorials and internal course detail to otherEmploymentMentions. Keep independent research assistantships/internships."
+    },
+    {
+      "id": "roster:cornell-university:ira-globus-harris",
+      "shard": "c",
+      "paths": [
+        "jobs[15]",
+        "jobs[16]",
+        "jobs[17]",
+        "jobs[18]"
+      ],
+      "severity": "duplicate-role-count",
+      "finding": "Four course-detail rows explicitly supplement the aggregate Reed TA/Tutor entry jobs[6]; counting them again inflates role totals.",
+      "action": "Move these course details to supporting mentions, preserving individual subjects and dates."
+    },
+    {
+      "id": "roster:cornell-university:ira-globus-harris",
+      "shard": "c",
+      "paths": [
+        "jobs[4]",
+        "jobs[7]"
+      ],
+      "severity": "material-classification",
+      "finding": "Outreach and community-leader activities have no established paid appointment.",
+      "action": "Keep as supporting activities unless source shows an actual employed role."
+    },
+    {
+      "id": "roster:cornell-university:ira-globus-harris",
+      "shard": "c",
+      "paths": [
+        "jobs[2]"
+      ],
+      "severity": "presentation-chronology",
+      "finding": "The AWS single date range May2021–April2024 renders as an employment interval although notes state it is only an aggregate grouping and the CV separately includes Summer2024.",
+      "action": "Use a clear grouped-period/observedPeriod label rather than imply continuous employment; retain all conflicting seasonal observations."
+    },
+    {
+      "id": "roster:cornell-university:sid-banerjee",
+      "shard": "b",
+      "paths": [
+        "jobs[10]"
+      ],
+      "severity": "material-classification",
+      "finding": "Simons programme organizer explicitly has no established separate paid job.",
+      "action": "Move programme organizer to supporting mentions. Visiting-scientist appointments can stay as sourced appointments."
+    },
+    {
+      "id": "roster:cornell-university:yuchen-wu",
+      "shard": "b",
+      "paths": [
+        "jobs[19]"
+      ],
+      "severity": "material-classification",
+      "finding": "IMSI tutorial instruction is an event activity with unknown pay rather than an established appointment.",
+      "action": "Retain as supporting educational activity."
+    },
+    {
+      "id": "roster:cornell-university:sidney-resnick",
+      "shard": "b",
+      "paths": [
+        "jobs[42]",
+        "jobs[43]",
+        "jobs[44]",
+        "jobs[45]",
+        "jobs[46]",
+        "jobs[47]",
+        "jobs[48]",
+        "jobs[49]"
+      ],
+      "severity": "material-classification",
+      "finding": "Eight added short courses expressly have unknown contract/compensation, and these events are already summarized in otherEmploymentMentions[0].",
+      "action": "Move source observations to supporting mentions, avoiding duplicate text where practical. Do not remove genuine dated visiting appointments."
+    },
+    {
+      "id": "roster:cornell-university:sidney-resnick",
+      "shard": "b",
+      "paths": [
+        "jobs[19].start",
+        "jobs[23–26].start/end",
+        "jobs[28].start/end",
+        "jobs[31–35].start/end",
+        "jobs[42–49].start/end"
+      ],
+      "severity": "date-precision",
+      "finding": "Many explicit calendar dates have null normalized year/month and unknown precision, including May7,2005 and June2009. This loses supported date precision.",
+      "action": "Normalize source-given year/month; retain exact asWritten dates. For June31,2007 retain the impossible day as a conflict, never repair it to June30. July10–24,1997 is an observed interval, not a fabricated open-ended start."
+    },
+    {
+      "id": "roster:cornell-university:ziv-scully",
+      "shard": "c",
+      "paths": [
+        "jobs[15].evidenceNote"
+      ],
+      "severity": "visible-run-on",
+      "finding": "Visible note says \"not degreeconferral or postdegreejob\".",
+      "action": "Replace with \"This is not evidence of degree conferral or a post-degree job.\""
+    }
+  ],
+  "notes": [
+    "Shard B education-endpoint corrections are present: Shafiee and Wu first-job ordering remains unresolved.",
+    "No exact duplicate jobs found; flagged overlapping course details/service count inflation instead.",
+    "Terenin Cornell departure is correctly non-current with August2026 end.",
+    "No edits were made to other shards or public datasets."
+  ]
+}

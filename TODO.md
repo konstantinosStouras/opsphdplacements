@@ -1,5 +1,13 @@
 # Remaining work and handoff priorities
 
+## Cornell corrections 70–94 — 27 October 2026
+
+Reviewed every remaining correction through94, using88 instead of86. Nineteen existing histories now contain210 employment/appointment observations (117 before), with34 service, honorary, course-detail and student-visit entries retained separately. Four first jobs added: Stoikov at NYU, Averbukh at Salomon Brothers, Scully at UC Berkeley Simons Institute and Shafiee at ETH Zürich. Total verified faculty first jobs:2,097; no pending initial reviews remain, but1,114 are unresolved and4 have unconfirmed completion. All histories remain partial. Terenin’s former Cornell affiliation is visibly corrected without rewriting the original roster. Five reviewed candidates remain scope-held. See [review, validation and remaining work](research-handoff/parallel-stages-2026-10-26/review-2026-10-27h/README.md).
+
+- This bounded correction review is complete; the wider Stage3 frontier and per-person gaps are not. Later proposals95 onward are outside this frozen cut.
+- Do not infer degree completion from a LinkedIn/ORCID education endpoint alone. Wu and Globus-Harris remain unresolved; Shafiee was resolved only after an explicit EPFL completion announcement was read.
+
+
 ## Stage 3 corrections reviewed — 27 October 2026
 
 - Reviewed correction manifests through69: 40 accepted histories, six new first-job findings; Gan, Garg and Dwivedi's older first-job conclusions corrected to unresolved.

@@ -11,6 +11,12 @@ export function historyIndex(records) {
 }
 export const jobText = j => `${j.observedPeriod?.asWritten ? 'Observed '+j.observedPeriod.asWritten+' (appointment boundaries unknown)' : `${j.start?.asWritten || 'Unknown start'} – ${j.end?.asWritten || 'Unknown end'}`}: ${j.employerAsWritten || 'Employer unknown'} — ${j.titleAsWritten || 'Role unknown'}`;
 
+// A reviewed departure corrects the display without rewriting the source roster.
+export function affiliationCorrection(history) {
+  const a=history?.reviewedAffiliation;
+  return a?.directoryStatus==='former' && a.label && isSourceUrl(a.sourceUrl) && /^\d{4}-\d{2}-\d{2}$/.test(a.checkedAt||'') ? a : null;
+}
+
 // Only reviewed primary-career intervals qualify. Never derive continuity from first/current jobs.
 export function careerSummary(history) {
   if (!history) return 'Not yet researched';
