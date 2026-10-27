@@ -1,0 +1,5 @@
+# Continuation 14 reviewed cut
+
+Twelve existing Cornell identities; 114 proposed observations reviewed into 74 employment observations and 40 supporting mentions. No public data changed. All histories remain partial. Source proposal hashes and prior record hashes are in audit.json; root must check prior hashes before integration. All prior histories had zero structured jobs, and their observations and stamps are preserved.
+
+Emeritus status, concurrent administrative duties, named-chair distinctions, unqualified visits and service are retained as supporting observations. Explicit special appointments with unknown titles/dates remain unknown. Old CV present labels do not establish current employment. Jackson doctorate-year conflict and Resnick invalid June31 remain explicit. Resnick official CV was reopened; separate first-job decision documents January doctorate / February Technion appointment, preserving the earlier continuing Purdue fellowship. No canonical degree or first-placement changes are embedded in history replacements.

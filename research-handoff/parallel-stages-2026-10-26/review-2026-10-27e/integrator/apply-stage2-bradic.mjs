@@ -1,0 +1,14 @@
+import fs from 'node:fs';import assert from 'node:assert/strict';import crypto from 'node:crypto';
+const root='research-handoff/parallel-stages-2026-10-26/review-2026-10-27e';const read=p=>JSON.parse(fs.readFileSync(p,'utf8')),write=(p,v)=>fs.writeFileSync(p,JSON.stringify(v,null,2)+'\n'),hash=v=>crypto.createHash('sha256').update(JSON.stringify(v)).digest('hex');
+assert.ok(!fs.existsSync(root+'/integrator/stage2-bradic-applied.json'));
+const h=read('data/employment-histories.json');
+for(const a of read(root+'/stage2-additional/audit.json').records){const i=h.records.findIndex(r=>r.id===a.id),r=read(root+'/stage2-additional/'+a.reviewedFile);if(a.priorSha256===null){assert.equal(i,-1);h.records.push(r);}else{assert.equal(hash(h.records[i]),a.priorSha256);h.records[i]=r;}}
+const r=read(root+'/stage3-batch12/jelena-bradic.reviewed.json');assert.ok(!h.records.some(x=>x.id===r.id));
+delete r.personId;delete r.integrationStatus;delete r.publicIntegrationDisposition;
+r.jobs.unshift({employerAsWritten:'Cornell University',titleAsWritten:'Professor, Statistics and Data Science',start:{asWritten:null,year:null,month:null,precision:'unknown'},end:{asWritten:'Present',year:null,month:null,precision:'unknown'},isCurrent:true,sourceUrl:'https://www.jelenabradic.net/',sourceType:'personal-profile',checkedAt:'2026-10-27',evidenceNote:'Current homepage names Cornell professorship and explicitly places UCSD positions before Cornell; appointment start and UCSD end dates remain unknown. Earlier About page still says current UCSD and is retained as a dated source, not current affiliation.'});
+r.sources.push({url:'https://www.jelenabradic.net/',checkedAt:'2026-10-27',outcome:'opened-and-read',note:'Current Cornell professorship and explicit Princeton ORFE doctoral host; older UCSD About page distinguished.'});
+const first=read(root+'/stage3-batch12/bradic-first-job-proposal.json')[0];
+r.firstJobAssessment={status:'verified',definition:'Earliest documented new appointment after doctorate completion',employer:first.employer,title:first.position,appointmentType:'tenure-track',sector:'academia',start:{asWritten:'2011',year:2011,month:null,precision:'year'},checkedAt:'2026-10-27',reason:first.evidenceNote,sources:first.sources};
+r.remainingUnknowns=['Exact degree and appointment months/days remain unknown.','Current Cornell start and UCSD exit date remain unknown; no continuous sector tenure inferred.','Possible omitted roles; career remains partial.'];h.records.push(r);
+const roster=read('data/faculty-rosters.json').records.find(x=>x.id===r.id);assert.equal(roster.review.status,'unresolved');write(root+'/integrator/bradic.prior-roster.json',roster);
+write('data/employment-histories.json',h);write(root+'/integrator/stage2-bradic-applied.json',{stage2Ids:read(root+'/stage2-additional/audit.json').records.map(a=>a.id),facultyAddition:r.id,firstJob:r.id});

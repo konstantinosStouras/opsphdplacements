@@ -1,0 +1,23 @@
+import fs from 'node:fs';
+import assert from 'node:assert/strict';
+import crypto from 'node:crypto';
+const root='research-handoff/parallel-stages-2026-10-26/review-2026-10-27e';
+const read=p=>JSON.parse(fs.readFileSync(p,'utf8')),write=(p,v)=>fs.writeFileSync(p,JSON.stringify(v,null,2)+'\n'),hash=v=>crypto.createHash('sha256').update(JSON.stringify(v)).digest('hex');
+assert.ok(!fs.existsSync(root+'/integrator/final-reviewed-applied.json'));
+const h=read('data/employment-histories.json'),ids=[];
+for(const dir of ['stage3-batch14','stage2-final'])for(const a of read(root+'/'+dir+'/audit.json').records){const i=h.records.findIndex(r=>r.id===a.id);assert.equal(hash(h.records[i]),a.priorSha256);h.records[i]=read(root+'/'+dir+'/'+(a.reviewedFile||a.id+'.reviewed.json'));ids.push(a.id);}
+const d=read(root+'/stage3-batch14/resnick-first-job-decision.json'),r=h.records.find(r=>r.id===d.personId);
+const note=d.evidenceNote+' Purdue fellowship began before the doctorate and may have continued afterward; this identifies the earliest documented new post-degree appointment, not the only employment held after graduation.';
+const source={url:d.sourceUrl,title:'Sidney Resnick authored CV, education and professional experience',checkedAt:d.checkedAt,notes:note};
+r.firstJobAssessment={status:'verified',definition:'Earliest documented new appointment after doctorate completion',employer:d.employer,title:d.title,start:{asWritten:'February 1970',...d.start},checkedAt:d.checkedAt,reason:note,sources:[source]};
+r.remainingUnknowns=[...(r.remainingUnknowns||[]),'Purdue fellowship end within 1970 remains unknown; no exclusive immediate employer or complete career inferred.'];
+write(root+'/integrator/resnick-first-job-proposal.json',[{facultyId:r.id,name:r.name,status:'verified',checkedAt:d.checkedAt,employer:d.employer,position:d.title,placementYear:1970,category:'other-academic',phdYearVerified:1970,phdInstitutionVerified:'Purdue University',evidenceUrl:d.sourceUrl,evidenceNote:note,sources:[source],reason:note}]);
+const policy=read('research-handoff/parallel-stages-2026-10-26/stage-4/nicholas-johnson.affiliate-policy-assessment-2026-10-27.json');write(root+'/mit/nicholas-affiliate-policy.input.json',policy);
+const n=h.records.find(r=>r.id===policy.personId);write(root+'/mit/nicholas-before-affiliate-policy.json',n);
+const i=n.jobs.findIndex(j=>j.employerAsWritten==='Massachusetts Institute of Technology'&&j.titleAsWritten==='Research Affiliate');assert.ok(i>=0);const affiliate=n.jobs.splice(i,1)[0];
+const decision='MIT Research Affiliate is classified here as an unpaid academic affiliation using the official rank definition, not a personal appointment letter. Original profile dates and check date are retained. Radix starts September 2024; August study end is not explicit degree completion, September formal award does not order events within that month, and undated startup work remains unsequenced. First post-PhD employment therefore remains unresolved.';
+n.otherEmploymentMentions.push({...affiliate,evidenceNote:affiliate.evidenceNote+' '+decision,classificationReview:{checkedAt:'2026-10-27',classification:'unpaid-academic-affiliation',basis:'Official rank policy applied to observed title; institutional-context inference',sources:policy.sources}});
+n.sources.push(...policy.sources.map(s=>({...s,outcome:'opened-and-read'})));
+n.remainingUnknowns=[...(n.remainingUnknowns||[]),decision];
+write(root+'/mit/nicholas-affiliate-decision.json',{personId:n.id,checkedAt:'2026-10-27',decision,firstJobStatus:'unresolved',newRoles:0,formalDegreeDatesChanged:false});
+write('data/employment-histories.json',h);write(root+'/integrator/final-reviewed-applied.json',{historyIds:ids,firstJob:r.id,nicholasClassification:n.id});

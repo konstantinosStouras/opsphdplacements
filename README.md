@@ -1,5 +1,9 @@
 # Operations PhD Placements
 
+## Latest continuation — 27 October 2026
+
+The continuation-e reviewed release updates 43 career records (14 OM List, 26 Cornell and three MIT graduates), including three newly created histories. Jacob Mays and Jelena Bradic join the faculty register through explicit qualifying doctorate evidence; actual departmental affiliations are preserved. Faculty now total 3,215, with 2,090 verified first jobs: Sabach, Bradic and Resnick are added, while Kallus's earlier MIT-first claim is corrected to unresolved after concurrent MIT/USC dates were found. Sabrina Zhai's August completion and September Citadel start support the fifth separately counted graduate first job. Sohil and Nicholas remain unresolved. All affected careers remain partial. See [reviewed cut, evidence and remaining work](research-handoff/parallel-stages-2026-10-26/review-2026-10-27e/README.md); older checkpoints below retain their historical counts.
+
 ## Reviewed Stage 2–3 release — 27 October 2026
 
 The reviewed frozen cut adds 52 Cornell ORIE faculty records, preserves nine links to existing people, and retains 17 graduate-field/fellow candidates outside the faculty register pending scope adjudication. Eleven administrative staff are accounted for but excluded. People total 3,213 (2,149 OM List; 1,064 faculty-page). Abderrahmane Abbou’s Delaware postdoc is now the earliest documented new post-PhD job, increasing verified first jobs to 2,088. Eleven OM List histories received supported follow-ups; Cornell source observations cover 58 accepted/existing people, with 17 linked-source partial career histories and the remaining biography-only observations. All histories remain partial. Seven degree-evidence records preserve qualification/defence/award distinctions; unverified date and identity claims remain withheld. See [reviewed release and remaining work](research-handoff/parallel-stages-2026-10-26/integration-2026-10-27/README.md).

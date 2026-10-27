@@ -4,14 +4,14 @@ Generated from committed-format public datasets by `node scripts/update-research
 
 | Measure | Count |
 |---|---:|
-| People in the database | 3213 |
+| People in the database | 3215 |
 | of which OM List profiles | 2149 |
-| of which operations faculty found on the linked faculty pages | 1064 |
-| Individually reviewed profiles | 3175 |
-| Verified first jobs | 2088 |
-| Researched but unresolved | 1083 |
+| of which operations faculty found on the linked faculty pages | 1066 |
+| Individually reviewed profiles | 3179 |
+| Verified first jobs | 2090 |
+| Researched but unresolved | 1085 |
 | Degree completion unconfirmed | 4 |
-| Pending individual review | 38 |
+| Pending individual review | 36 |
 | Named-scope doctoral register records, including historical and unresolved routes | 419 |
 | Verified relevant doctoral routes (tracks may overlap; admissions may be suspended) | 410 |
 | Institutions with verified relevant doctoral provision | 306 |
@@ -19,7 +19,7 @@ Generated from committed-format public datasets by `node scripts/update-research
 | of which listed under an operations area | 2175 |
 | Institutions with such a page read | 117 |
 | Listed names already in the people database | 409 |
-| Additional verified first jobs in graduate register (outside faculty sample) | 4 |
+| Additional verified first jobs in graduate register (outside faculty sample) | 5 |
 | LinkedIn profiles with published history observations | 16 |
 | of which all accessible Experience entries read | 15 |
 | University directory records with completed official-source reviews | 633 |
