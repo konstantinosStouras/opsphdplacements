@@ -1,5 +1,9 @@
 # Remaining work and handoff priorities
 
+## MIT2016 review — 27 October2026
+
+Integrated all nine source-listed identities (eight new, Rong corrected), nine partial careers and Remorov first job. First-job gaps remain for Dunning, Grigas, Youssef and Yuan; four existing faculty assessments retained. Chrome reconnected: complete accessible Youssef/Yuan Experience captured; Dunning prospective testimonial read. Final32 roles/33 supporting observations retain explicit chronology limits. Detailed remaining chronology/degree gaps in the MIT2016 handoff.
+
 ## MIT 2017 review — 27 October 2026
 
 Integrated12 ORC identities,11 new partial histories and Aouad consulting/founder additions; Weinstein's Zillow first job verified. Existing Gupta first placement retained. Handoff: `research-handoff/parallel-stages-2026-10-26/review-mit-2017-2026-10-27/`. Remaining10 first-job cases: Aouad, Cheung, Eschenfeldt, Flajolet, Korolko, Kung, Lubin, Marks, Thraves and Yan. Resolve specific degree/job boundaries, title conflicts, consultancy timing and continuing-service distinctions listed there. Cheung2016/2017 degree conflict remains open; do not infer an explanation. Existing faculty-linked graduate histories now direct readers to their faculty first-job review rather than incorrectly saying it is unverified. This batch does not complete a stage or MIT census.

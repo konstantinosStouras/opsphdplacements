@@ -1,5 +1,7 @@
 # Operations PhD Placements
 
+MIT2016 review (27 October2026): eight new graduate records, Rong Yuan identity/year correction, nine primary-source career histories and one new supported first job (Remorov—BlackRock). Four existing faculty links preserved. Evidence and remaining gaps: `research-handoff/parallel-stages-2026-10-26/review-mit-2016-2026-10-27/`.
+
 MIT2017 review (27 October2026): added12 source-bounded ORC graduate entries,11 career histories and two additions to Ali Aouad's existing history. Published chronology includes50 roles and46 supporting mentions; Weinstein's Zillow first job is supported. Two existing faculty identities are linked, not duplicated. See `research-handoff/parallel-stages-2026-10-26/review-mit-2017-2026-10-27/` for evidence, limitations and publication receipt.
 
 ## MIT 2018 reviewed graduate release — 27 October 2026
