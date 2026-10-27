@@ -77,3 +77,8 @@ Integrated 25 partial histories (103 roles, 20 other mentions, two bounded summa
 ## Revised priority gate — 21 October 2026
 
 The owner now requires completion of the university/unit source frame first, followed by linked-source doctorate/first-job/full-history verification for the 2,149 OM List faculty. Use ../priorities/stage-2-omlist-queue.json after Stage 1. The earlier mixed-source position-179 continuation remains historical, not the current next action. Faculty-page-only and graduate-only research is held; the automation remains paused. Existing observations and proposals must be preserved.
+
+
+## Reviewed parallel-stage release — 27 October 2026
+
+See [integration handoff](../parallel-stages-2026-10-26/integration-2026-10-27/README.md). Eleven OM List histories receive additive evidence without losing earlier source dates. Cornell adds 57 history records and updates Andrea Lodi’s existing record; 17 have linked-career follow-up in this cut, with remaining additions limited to official biography mentions. All remain partial. Publication and unresolved cases are recorded in that handoff, not inferred from proposal totals. Earlier pause statements above are historical; the 26 October parallel-stage ownership contract is current.

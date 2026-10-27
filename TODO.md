@@ -1,5 +1,9 @@
 # Remaining work and handoff priorities
 
+## Reviewed Stage 2–3 release — 27 October 2026
+
+The reviewed frozen cut adds 52 Cornell ORIE faculty records, preserves nine links to existing people, and retains 17 graduate-field/fellow candidates outside the faculty register pending scope adjudication. Eleven administrative staff are accounted for but excluded. People total 3,213 (2,149 OM List; 1,064 faculty-page). Abderrahmane Abbou’s Delaware postdoc is now the earliest documented new post-PhD job, increasing verified first jobs to 2,088. Eleven OM List histories received supported follow-ups; Cornell source observations cover 58 accepted/existing people, with 17 linked-source partial career histories and the remaining biography-only observations. All histories remain partial. Seven degree-evidence records preserve qualification/defence/award distinctions; unverified date and identity claims remain withheld. See [reviewed release and remaining work](research-handoff/parallel-stages-2026-10-26/integration-2026-10-27/README.md).
+
 Current owner instruction, 26 October 2026: Stages 2–4 are authorized to start in three separate project chats alongside continuing Stage 1. Earlier hold statements below are historical checkpoints. Shared-checkout ownership, identity precedence and mandatory progress reports are in [the parallel-stage contract](research-handoff/parallel-stages-2026-10-26/README.md). Automation stays paused; only the originating integrator publishes.
 
 Publication pitfall, 26 October 2026: continuation570 omitted the regenerated USTC organisation record from its explicit release paths. Deployment failed at the stamp check; continuation571 includes the missing derived record. Before every commit, reconcile any unstaged public-data files against the reviewed cut. See [repair handoff](research-handoff/universities/continuation-571/README.md).

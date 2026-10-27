@@ -1,17 +1,17 @@
 # Research status
 
-Generated from committed-format public datasets by `node scripts/update-research-status.mjs`. People-ledger snapshot check date: 2026-10-17. Doctoral source checks run through 2026-10-26. Refresh this file with each data release. Git history identifies the published revision.
+Generated from committed-format public datasets by `node scripts/update-research-status.mjs`. People-ledger snapshot check date: 2026-10-27. Doctoral source checks run through 2026-10-26. Refresh this file with each data release. Git history identifies the published revision.
 
 | Measure | Count |
 |---|---:|
-| People in the database | 3161 |
+| People in the database | 3213 |
 | of which OM List profiles | 2149 |
-| of which operations faculty found on the linked faculty pages | 1012 |
-| Individually reviewed profiles | 3161 |
-| Verified first jobs | 2087 |
-| Researched but unresolved | 1070 |
+| of which operations faculty found on the linked faculty pages | 1064 |
+| Individually reviewed profiles | 3175 |
+| Verified first jobs | 2088 |
+| Researched but unresolved | 1083 |
 | Degree completion unconfirmed | 4 |
-| Pending individual review | 0 |
+| Pending individual review | 38 |
 | Named-scope doctoral register records, including historical and unresolved routes | 419 |
 | Verified relevant doctoral routes (tracks may overlap; admissions may be suspended) | 410 |
 | Institutions with verified relevant doctoral provision | 306 |
@@ -19,8 +19,8 @@ Generated from committed-format public datasets by `node scripts/update-research
 | of which listed under an operations area | 2161 |
 | Institutions with such a page read | 117 |
 | Listed names already in the people database | 406 |
-| LinkedIn profiles with published history observations | 6 |
-| of which all accessible Experience entries read | 6 |
+| LinkedIn profiles with published history observations | 8 |
+| of which all accessible Experience entries read | 8 |
 | University directory records with completed official-source reviews | 633 |
 | University directory records partially reviewed | 197 |
 | University directory records blocked by source access | 5 |

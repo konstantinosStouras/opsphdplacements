@@ -1,0 +1,116 @@
+{
+  "asOf": "2026-10-27",
+  "stage": 2,
+  "scope": "Stage 2: fixed 2149 OM List faculty identities, doctorates/years, first new post-PhD jobs and accessible full histories; source-bounded proposals only.",
+  "status": "active-manual-research-checkpoint",
+  "publishedBaseline": {
+    "asOf": "2026-10-26",
+    "scope": "Public-file snapshot, not proof of deployment; fixed OM List profile IDs, aliases counted separately. No generator run.",
+    "population": 2149,
+    "verifiedFirstJobs": 1524,
+    "withoutVerifiedFirstJob": 625,
+    "placementDegreeYearVerified": 1435,
+    "placementDegreeInstitutionVerified": 775,
+    "withHistoryReviewRecord": 118,
+    "withSourcedRoleObservation": 116,
+    "withoutHistoryReviewRecord": 2031,
+    "completeRealWorldCareers": 0,
+    "completenessNote": "No source observation establishes a complete real-world career. Degree-field counts cover placement rows only.",
+    "inputs": {
+      "data/faculty.json": "6b0ff96b1e27b740d73279997739d0a95b3eb396592673cd38875472ed0ad573",
+      "data/placements.json": "a0c217b6bf6eccd9ce362084324b0236b8c81367a5c18b24ab11ece3006304e9",
+      "data/employment-histories.json": "e9fe90c6602f69038fa1fcf13639a4b2daba548103e2cc6a72f52efb1897e84c",
+      "data/linkedin-histories.json": "5dee658d736d3a202daedc7017d08c9a71fcdb9221a946d94f3188d849ef91b8",
+      "research-handoff/priorities/stage-2-omlist-queue.json": "17a82194ac0808dceb2de2be4489b3e3d1f8904666635ac17f48fcd3dbc67fab"
+    }
+  },
+  "completedSinceStart": {
+    "baselineComputed": true,
+    "uniquePeopleRechecked": 11,
+    "partialReviewsSaved": 11,
+    "officialDegreeProposals": 6,
+    "linkedinExperienceCaptures": 2,
+    "linkedinRoleEntries": 14,
+    "newVerifiedFirstJobs": 0,
+    "publicDataChanges": 0,
+    "degreeRangeObservations": 1,
+    "firstJobProposals": 1
+  },
+  "findings": {
+    "Knemeyer": "Official current role and Maryland doctorate reconfirmed without new year evidence; undated linked ORCID employment captured. New chronology remains missing.",
+    "Chaturvedi": "Official explicit PhD Operations Management IESE 2010 evidence. All seven LinkedIn Experience entries captured; month-level Michigan postdoc and Infosys chronology, Auckland/ISB ended-date conflicts with CV retained.",
+    "Anvuur": "Three dated ORCID roles and duplicate undated Lancaster assertion captured. LinkedIn Experience not visible.",
+    "Elidrissi": "Official thesis record confirms UPHF/EMI cotutelle and 15 December 2020 defense. Two-degree wording remains unresolved; no dated employment.",
+    "Abbou": "Seven LinkedIn roles and UM6P ORCID role; official November 2020 Ph.D. convocation. CIBC ended September 2020, Delaware began March 2021: first-job proposal saved.",
+    "Muntaka": "Official July 2018 PhD; official chronology sections empty; undated LinkedIn Instructor candidate remains provisional.",
+    "Grover": "Official 2024 PhD reconfirmed; no dated industry chronology obtained. ORCID no employment, CIRAS archived, LinkedIn namesakes excluded.",
+    "Ghadge": "Existing 13-role capture preserved; official biography corroborates Cranfield/Heriot-Watt roles and adds undated service mentions.",
+    "Shubham": "Official UC assistant-professor rank reconfirmed, expanded name observed; no dated chronology; dissertation recheck unsuccessful.",
+    "Deshmane": "Official IESE Operations Management PhD 2023 explicit; new personal CV link requires full comparison.",
+    "Roy": "Official biography corroborated; garbled PDF text not accepted as dated facts; browser handoff required."
+  },
+  "remaining": {
+    "withoutPublishedVerifiedFirstJob": 625,
+    "withoutPublishedHistoryReviewRecord": 2031,
+    "profilesNotRecheckedInThisLane": 2138,
+    "reviewedPeopleStillPartial": 11,
+    "note": "Overlapping measures. One first-job proposal awaits review; no public gap count reduced by proposal-only work."
+  },
+  "blockers": [
+    {
+      "personId": "omlist-8190a06eee7eb70d",
+      "type": "individual-source-limitation",
+      "detail": "LinkedIn accessible but Experience not displayed after scrolling; ORCID research continued."
+    },
+    {
+      "personId": "omlist-441bc189c8ec46ef",
+      "type": "source-read-timeout",
+      "detail": "Georgia Tech repository shell opened; metadata read timed out. No new degree check claimed."
+    },
+    {
+      "type": "browser-wide-user-handoff",
+      "personId": "omlist-9e0380f5110816c5",
+      "detail": "Chrome blocked automation because another extension UI is open on Roy PDF. User must dismiss interface."
+    },
+    {
+      "type": "repeated-pdf-extension-handoff",
+      "personId": "omlist-9e0380f5110816c5",
+      "attemptedAt": "2026-10-27",
+      "detail": "PDF navigation again opens extension UI and blocks automation despite owner clearing prior interface. Attach downloaded PDF to permit local visual review."
+    }
+  ],
+  "uncertainties": [
+    "Knemeyer later chronology and ORCID name variant.",
+    "Chaturvedi CV/LinkedIn Auckland and ISB date conflicts; no within-2010 conferral month.",
+    "Global identity/graduate duplicate audit remains unresolved; no name-only merges.",
+    "Elidrissi cotutelle versus biography two-doctorate wording; degree-count interpretation remains open.",
+    "Abbou gaps after Delaware and Toronto sessional lecturer; omitted roles remain possible."
+  ],
+  "nextAction": {
+    "personId": "omlist-9e0380f5110816c5",
+    "name": "Abhishek Roy",
+    "task": "Read owner-attached CV or resume after extension interception resolved; next untouched Abla CHAOUNI Benabdellah."
+  },
+  "integrationStatus": "All new findings proposal-only; public data and shared guides untouched. No commit/push/publication performed.",
+  "validation": {
+    "jsonParse": "passed",
+    "stableIds": "all proposal IDs checked against faculty",
+    "historyCapture": "Aaron three dated roles, one duplicate affiliation; Abbou seven LinkedIn roles plus one ORCID role; LinkedIn section capture separate from career completeness",
+    "datePrecision": "month/year/unknown fields validated",
+    "placementContract": "required fields checked locally; no public merger or shared generator run",
+    "sourceTabs": "sole created source tab closed"
+  },
+  "automation": "Not created or resumed.",
+  "completedThisContinuation": {
+    "newPeopleReviewed": 0,
+    "newFactsVerified": 0,
+    "royReattemptRecorded": true
+  },
+  "currentPublicFileSnapshot": {
+    "checkedAt": "2026-10-26",
+    "verifiedFirstJobs": 1524,
+    "withHistoryReviewRecord": 118,
+    "note": "Read-only local public-file snapshot; does not itself confirm deployment."
+  },
+  "publicationRequest": "Owner authorized handoff, successfully dispatched to originating chat 01a15d79-85b3-7f03-831d-7d87b115657c; publication not yet confirmed."
+}

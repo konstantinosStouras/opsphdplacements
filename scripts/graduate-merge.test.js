@@ -102,7 +102,7 @@ test('status updater executes record stamping from a path containing spaces', t 
   for(const name of ['program-model.js','model.js'])fs.copyFileSync(path.join(repo,'assets',name),path.join(root,'assets',name));
   fs.copyFileSync(path.join(repo, 'scripts/update-research-status.mjs'), path.join(root, 'scripts/update-research-status.mjs'));
   fs.writeFileSync(path.join(root, 'scripts/record-dates.mjs'), "import fs from 'node:fs'; fs.writeFileSync('stamp-ran', 'yes');");
-  for (const name of ['research-status', 'placements', 'doctoral-programs']) {
+  for (const name of ['research-status', 'placements', 'doctoral-programs', 'employment-histories']) {
     fs.writeFileSync(path.join(root, `data/${name}.json`), JSON.stringify({ metadata: { counts: {}, updatedAt: '2026-10-20' }, records: [] }));
   }
   const r = spawnSync(process.execPath, ['scripts/update-research-status.mjs'], { cwd: root, encoding: 'utf8' });
