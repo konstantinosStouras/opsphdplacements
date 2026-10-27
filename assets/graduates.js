@@ -46,7 +46,7 @@ export async function renderGraduates(section) {
 
   const draw = () => {
     const words = fold(q.value).split(/\s+/).filter(Boolean);
-    const rows = records.filter(r => (!instSelect.value || r.institution === instSelect.value) && (fieldSelect.value === '' || (fieldSelect.value === 'operations' ? r.field === 'operations' : r.field !== 'other-field')) && words.every(w => fold([r.name, r.institution, r.listedYear, FIELD[r.field], ...r.sightings.flatMap(s => [s.program, s.destination, s.position])].join(' ')).includes(w)));
+    const rows = records.filter(r => (!instSelect.value || r.institution === instSelect.value) && (fieldSelect.value === '' || (fieldSelect.value === 'operations' ? r.field === 'operations' : r.field !== 'other-field')) && words.every(w => fold([r.name, r.institution, r.listedYear, FIELD[r.field], ...r.sightings.flatMap(s => [s.name, s.program, s.destination, s.position])].join(' ')).includes(w)));
     rows.sort((a, b) => (b.listedYear ?? 0) - (a.listedYear ?? 0) || a.institution.localeCompare(b.institution) || a.name.localeCompare(b.name));
     table.replaceChildren();
     const status = html('p', 'map-note', `${fmt(rows.length)} names${instSelect.value ? '' : ' across ' + fmt(new Set(rows.map(r => r.institution)).size) + ' institutions'}; years as the pages give them.`);
@@ -68,6 +68,16 @@ export async function renderGraduates(section) {
         nameCell.append(link(`Degree evidence · checked ${d.checkedAt}`, d.sourceUrl));
       }
       const career = careers.get(r.id);
+      const identityObservations = r.sightings.filter(s => s.yearMeaning === 'career-observation');
+      if (identityObservations.length) {
+        const detail = document.createElement('details');
+        detail.append(html('summary', undefined, 'Reviewed identity and career observations'));
+        for (const s of identityObservations) {
+          const p = html('p'); p.append(link(`${s.name} · checked ${s.checkedAt}`, s.sourceUrl), html('small', undefined, s.note)); detail.append(p);
+        }
+        detail.append(html('small', undefined, 'These observations do not establish a complete career or a first job.'));
+        nameCell.append(detail);
+      }
       if (r.degreeMilestones?.length) {
         const milestones = document.createElement('details');
         milestones.append(html('summary', undefined, 'Reported doctoral milestones'));
