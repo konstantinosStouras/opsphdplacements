@@ -1,0 +1,15 @@
+# Stage 2–3 continuation — 27 October 2026
+
+Integrator-owned release. Inputs contain the three hash-checked Stage 3 continuation-5 proposals and two new Stage 2 reviews, with prior public histories for preservation. Do not replay the one-shot scripts over newer data.
+
+Cornell organisation search now has one row: five exact career-label aliases, including a newly encountered university/campus spelling, are consolidated. The Lodi composite is a directory association for one multiply affiliated appointment, not a merger of Technion or the joint institute into Cornell. Original career labels and source dates remain intact. Official Cornell Tech governance, Johnson school and Lodi pages were read on 27 October; source URLs and qualifications are in the public university review.
+
+Three biography-only Cornell histories now carry 37 structured position observations: Nathan Kallus (five), Adrian Lewis (22), Mark Lewis (ten). Source notes, overlapping appointments, undated roles and old CV current-label limitations are preserved. Adrian's pre-degree fellowships are not new post-degree jobs; Mark's 1998 degree/postdoc transition lacks months. Nathan's Netflix directorship is self-reported on his linked personal site; it is not inferred from publications.
+
+Andrea Lodi's existing IBM fellowship is dated 2005–2006, Bologna full professorship 2007–2015, and Montreal chair start 2015 from the official Cornell Engineering biography read 27 October. Prior undated observations remain supporting evidence. Montreal end and Cornell start remain unknown; the older Montreal wording is not extended to the present.
+
+Abla Chaouni Benabdellah's three LinkedIn roles replace two undated role observations, which remain supporting notes. Her September 2019 Fès appointment overlaps the reported study period; no degree conferral or first-job conclusion was inferred. Abraham Seidmann's 1980 Texas Tech doctorate and BU emeritus rank were reconfirmed; all 18 prior roles and dates remain. The official confirmation is distinct from his missing emeritus transition date.
+
+Totals remain 3,213 people, 2,088 verified first jobs and 237 partial career-review records. Six histories changed. Stage 2 now has 13 reviewed continuation profiles, not 13 complete careers. Stage 3 has 20 of 75 original non-OM roster sightings with linked-career follow-up; the denominator includes held candidates. Of the previously accepted 41 biography-only histories, three were enriched, leaving 38. Seventeen inclusion candidates remain held. The worldwide roster frontier remains open. Roy's CV and the existing date/identity gaps remain unresolved. Stage 4 submissions are separate pending work, not included here.
+
+Validation: 58 tests and public data/history/university/stamp validators passed. The organisation audit found zero exact-name duplicates, and a separate assertion confirms one Cornell row; this does not establish global semantic deduplication. All existing people and first jobs remain. Publication confirmation follows deployment.

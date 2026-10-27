@@ -381,3 +381,5 @@ Stage 1 continuation 39 (25 October): official current sources verify Colorado S
 
 27 October 2026 live Stage 2–3 follow-up: reconcile the four Cornell-related career-employer display labels listed in research-handoff/parallel-stages-2026-10-26/integration-2026-10-27/publication.md. Zero exact-name duplicates does not prove semantic deduplication; preserve the joint-institute ambiguity and original career labels. Release 2ddc9e7 deployed successfully.
 
+
+27 October continuation: Cornell career aliases reconciled to one directory row; previous four-label follow-up resolved, plus one new campus spelling. Six histories enriched; 38 accepted Cornell histories remain biography-only and 17 inclusion candidates held. See research-handoff/parallel-stages-2026-10-26/integration-2026-10-27b/README.md.

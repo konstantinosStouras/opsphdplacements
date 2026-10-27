@@ -19,8 +19,8 @@ Generated from committed-format public datasets by `node scripts/update-research
 | of which listed under an operations area | 2161 |
 | Institutions with such a page read | 117 |
 | Listed names already in the people database | 406 |
-| LinkedIn profiles with published history observations | 8 |
-| of which all accessible Experience entries read | 8 |
+| LinkedIn profiles with published history observations | 9 |
+| of which all accessible Experience entries read | 9 |
 | University directory records with completed official-source reviews | 633 |
 | University directory records partially reviewed | 197 |
 | University directory records blocked by source access | 5 |

@@ -1,0 +1,289 @@
+{
+  "id": "cornell-university",
+  "status": "reviewed",
+  "canonicalName": "Cornell University",
+  "universitySourceUrl": "https://tech.cornell.edu/about/",
+  "checkedAt": "2026-10-21",
+  "reviewer": "Codex in Chrome",
+  "units": [
+    {
+      "id": "cornell-university--operations-technology-information-management",
+      "name": "Operations, Technology and Information Management",
+      "school": "Cornell SC Johnson College of Business",
+      "type": "area",
+      "fields": [
+        "operations-management",
+        "supply-chain"
+      ],
+      "sourceUrl": "https://business.cornell.edu/expertise/",
+      "checkedAt": "2026-10-21",
+      "evidence": "Current college-wide faculty area explicitly addresses AI-powered operations and supply chains; cross-school area rather than multiple departments."
+    },
+    {
+      "id": "cornell-university--services-management",
+      "name": "Services Management",
+      "school": "Cornell SC Johnson College of Business",
+      "type": "area",
+      "fields": [
+        "operations-management"
+      ],
+      "sourceUrl": "https://business.cornell.edu/expertise/",
+      "checkedAt": "2026-10-21",
+      "evidence": "Current college-wide faculty area researches and teaches service operations in hospitality, travel, tourism and food/beverage industries."
+    },
+    {
+      "id": "cornell-university--operations-research-information-engineering",
+      "name": "School of Operations Research and Information Engineering (ORIE)",
+      "school": "Cornell David A. Duffield College of Engineering",
+      "type": "school",
+      "fields": [
+        "operations-research",
+        "industrial-engineering",
+        "supply-chain",
+        "logistics"
+      ],
+      "sourceUrl": "https://www.orie.cornell.edu/",
+      "checkedAt": "2026-10-21",
+      "evidence": "Official school name and ORIE acronym. Optimization, transportation, supply chains and business operations; Cornell Tech professor biography establishes the same ORIE affiliation across Cornell Tech and Cornell Engineering."
+    },
+    {
+      "id": "cornell-university--data-science-enterprise-society",
+      "name": "Center for Data Science for Enterprise and Society",
+      "school": null,
+      "type": "center",
+      "fields": [
+        "operations-research",
+        "logistics"
+      ],
+      "sourceUrl": "https://datasciencecenter.cornell.edu/research-projects/",
+      "checkedAt": "2026-10-21",
+      "evidence": "Named center has documented operational optimization of Citi Bike docking capacity and service levels; retained for explicit operations research, not generic data science alone."
+    }
+  ],
+  "decisions": [
+    {
+      "sourceDepartmentId": "cornell-university____applied-economics-and-management",
+      "disposition": "not-a-unit",
+      "unitIds": [
+        "cornell-university--operations-technology-information-management"
+      ],
+      "reason": "Broad Dyson school/subject label, not a distinct Operations department; current cross-school Operations faculty area retained."
+    },
+    {
+      "sourceDepartmentId": "cornell-university____center-for-data-science-for-enterprise-and-society",
+      "disposition": "replaced",
+      "unitIds": [
+        "cornell-university--data-science-enterprise-society"
+      ],
+      "reason": "Full center name and substantive operational-optimization projects verified."
+    },
+    {
+      "sourceDepartmentId": "cornell-university____operations-research-and-information-engineering",
+      "disposition": "duplicate",
+      "unitIds": [
+        "cornell-university--operations-research-information-engineering"
+      ],
+      "reason": "Repeated ORIE label or host-school variant consolidated to the officially named school, including Cornell Tech affiliations."
+    },
+    {
+      "sourceDepartmentId": "cornell-university____operations-technology-and-information-management-area",
+      "disposition": "replaced",
+      "unitIds": [
+        "cornell-university--operations-technology-information-management"
+      ],
+      "reason": "Current college-wide faculty area consolidated across imported Nolan/college/unspecified-school variants."
+    },
+    {
+      "sourceDepartmentId": "cornell-university__cornell-peter-and-stephanie-nolan-school-of-hotel-administra__operations-technology-and-information-management-area",
+      "disposition": "duplicate",
+      "unitIds": [
+        "cornell-university--operations-technology-information-management"
+      ],
+      "reason": "Current college-wide faculty area consolidated across imported Nolan/college/unspecified-school variants."
+    },
+    {
+      "sourceDepartmentId": "cornell-university__cornell-sc-johnson-college-of-business__operations-technology-and-information-management-area",
+      "disposition": "duplicate",
+      "unitIds": [
+        "cornell-university--operations-technology-information-management"
+      ],
+      "reason": "Current college-wide faculty area consolidated across imported Nolan/college/unspecified-school variants."
+    },
+    {
+      "sourceDepartmentId": "cornell-university__cornell-sc-johnson-college-of-business__services-management",
+      "disposition": "replaced",
+      "unitIds": [
+        "cornell-university--services-management"
+      ],
+      "reason": "Full official faculty-area name and service-operations remit verified."
+    },
+    {
+      "sourceDepartmentId": "cornell-university__cornell-tech__operations-research-and-information-engineering",
+      "disposition": "duplicate",
+      "unitIds": [
+        "cornell-university--operations-research-information-engineering"
+      ],
+      "reason": "Repeated ORIE label or host-school variant consolidated to the officially named school, including Cornell Tech affiliations."
+    },
+    {
+      "sourceDepartmentId": "cornell-university__duffield-college-of-engineering__operations-research-and-information-engineering-cornell-tech",
+      "disposition": "duplicate",
+      "unitIds": [
+        "cornell-university--operations-research-information-engineering"
+      ],
+      "reason": "Repeated ORIE label or host-school variant consolidated to the officially named school, including Cornell Tech affiliations."
+    },
+    {
+      "sourceDepartmentId": "cornell-university__school-of-operations-research-and-information-engineering-or",
+      "disposition": "duplicate",
+      "unitIds": [
+        "cornell-university--operations-research-information-engineering"
+      ],
+      "reason": "Repeated ORIE label or host-school variant consolidated to the officially named school, including Cornell Tech affiliations."
+    },
+    {
+      "sourceDepartmentId": "cornell-university__school-of-operations-research-and-information-engineering-or__operations-research-and-information-engineering",
+      "disposition": "duplicate",
+      "unitIds": [
+        "cornell-university--operations-research-information-engineering"
+      ],
+      "reason": "Repeated ORIE label or host-school variant consolidated to the officially named school, including Cornell Tech affiliations."
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://business.cornell.edu/expertise/",
+      "checkedAt": "2026-10-21",
+      "outcome": "read",
+      "note": "Current eight faculty areas, including operations/technology/information management and services management, collaborate across the business schools. Operations area explicitly researches supply chains; services area covers service operations."
+    },
+    {
+      "url": "https://www.orie.cornell.edu/",
+      "checkedAt": "2026-10-21",
+      "outcome": "read",
+      "note": "School of Operations Research and Information Engineering (ORIE), Cornell David A. Duffield College of Engineering; optimization of transportation, healthcare, supply chains and business operations."
+    },
+    {
+      "url": "https://tech.cornell.edu/about/",
+      "checkedAt": "2026-10-21",
+      "outcome": "read",
+      "note": "Cornell Tech is a Cornell University campus governed by a council subsidiary to the Cornell University Board of Trustees; joint Technion institute distinguished."
+    },
+    {
+      "url": "https://tech.cornell.edu/people/faculty/",
+      "checkedAt": "2026-10-21",
+      "outcome": "read",
+      "note": "Cornell Tech faculty roster; tenure homes can differ for the joint Technion-Cornell institute."
+    },
+    {
+      "url": "https://tech.cornell.edu/people/huseyin-topaloglu/",
+      "checkedAt": "2026-10-21",
+      "outcome": "read",
+      "note": "Current professor of Operations Research and Information Engineering at Cornell Tech and Cornell Engineering; logistics, supply-chain and retail-operations research."
+    },
+    {
+      "url": "https://datasciencecenter.cornell.edu/",
+      "checkedAt": "2026-10-21",
+      "outcome": "read",
+      "note": "Center full name and mission including digital agriculture production/management and platforms supporting urban infrastructure."
+    },
+    {
+      "url": "https://datasciencecenter.cornell.edu/research-projects/",
+      "checkedAt": "2026-10-21",
+      "outcome": "read",
+      "note": "Substantive operations work: Citi Bike service-level performance and optimized redistribution of docking capacity, plus scheduling and transportation-congestion projects."
+    },
+    {
+      "url": "https://business.cornell.edu/dyson/",
+      "checkedAt": "2026-10-21",
+      "outcome": "read",
+      "note": "Charles H. Dyson School of Applied Economics and Management verified as a Cornell school, not a separate Operations department."
+    },
+    {
+      "url": "https://business.cornell.edu/johnson/",
+      "checkedAt": "2026-10-21",
+      "outcome": "read",
+      "note": "Samuel Curtis Johnson Graduate School of Management verified within Cornell SC Johnson College of Business, including Cornell Tech MBA and Ithaca/New York campus links."
+    }
+  ],
+  "limitations": [
+    "Cornell Tech is retained in provenance as a campus; the joint Technion institute does not imply a merger of Technion with Cornell.",
+    "Applied Economics and Management identifies the broader Dyson school; it is not asserted to be a standalone Operations department. Relevant business work is represented by the current cross-school faculty areas."
+  ],
+  "duplicateOf": null,
+  "addedAt": "2026-10-21T08:10:46Z",
+  "updatedAt": "2026-10-21T11:37:44Z",
+  "doctoralReview": {
+    "status": "verified",
+    "checkedAt": "2026-10-21",
+    "programmeIds": [
+      "cornell-operations-research-phd",
+      "cornell-university--hotel-administration-service-management-phd",
+      "cornell-university--management-otim-phd"
+    ],
+    "branches": [
+      {
+        "branch": "business",
+        "reviewState": "checked",
+        "conclusion": "Full current college doctoral inventory and Management OTIM, Hotel Administration and AEM descriptions checked; Hotel Administration field-specific handbook clarifies actual Service Management specialization.",
+        "sourceUrls": [
+          "https://business.cornell.edu/programs/?type=phd",
+          "https://business.cornell.edu/programs/phd-in-management-otim-concentration/",
+          "https://business.cornell.edu/programs/ph-d-in-hotel-administration/",
+          "https://business.cornell.edu/programs/ph-d-in-applied-economics-and-management/",
+          "https://business.cornell.edu/admissions/graduate/phd-hotel-administration/hotel-administration-phd-student-handbook/"
+        ]
+      },
+      {
+        "branch": "engineering",
+        "reviewState": "checked",
+        "conclusion": "Current ORIE Operations Research doctorate read with explicit Manufacturing Systems Engineering concentration and same Cornell Tech application/curriculum; preserve one degree across campuses.",
+        "sourceUrls": [
+          "https://www.duffield.cornell.edu/orie/phd-operations-research/"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.duffield.cornell.edu/orie/phd-operations-research/",
+        "checkedAt": "2026-10-21",
+        "outcome": "read",
+        "note": "Current Ph.D. Operations Research, actual ORIE school and Duffield College host; concentrations Applied Probability/Statistics, Manufacturing Systems Engineering, Mathematical Programming. Cornell Tech advisor option explicitly same course requirements and application, not separate degree."
+      },
+      {
+        "url": "https://business.cornell.edu/programs/?type=phd",
+        "checkedAt": "2026-10-21",
+        "outcome": "read",
+        "note": "Complete college doctoral inventory nine results: three broad degrees AEM, Hotel Administration and Management, with Management concentration cards not separate degrees."
+      },
+      {
+        "url": "https://business.cornell.edu/programs/phd-in-management-otim-concentration/",
+        "checkedAt": "2026-10-21",
+        "outcome": "read",
+        "note": "Exact Ph.D. in Management, Operations Technology and Information Management concentration; Johnson Graduate School of Management host; inventory/SCM/revenue/service/healthcare/behavioral Operations; Cornell Tech optional later advising location, not separate degree."
+      },
+      {
+        "url": "https://business.cornell.edu/programs/ph-d-in-hotel-administration/",
+        "checkedAt": "2026-10-21",
+        "outcome": "read",
+        "note": "Current Cornell Ph.D. Hotel Administration, Nolan host, explicitly offers Operations specialization and original dissertation with faculty mentorship."
+      },
+      {
+        "url": "https://business.cornell.edu/programs/ph-d-in-applied-economics-and-management/",
+        "checkedAt": "2026-10-21",
+        "outcome": "read",
+        "note": "Current AEM doctorate and four economics concentrations read. General agribusiness/analytics not classified Operations absent explicit relevant doctoral field."
+      },
+      {
+        "url": "https://business.cornell.edu/admissions/graduate/phd-hotel-administration/hotel-administration-phd-student-handbook/",
+        "checkedAt": "2026-10-21",
+        "outcome": "read",
+        "note": "Opened current handbook, general milestones and entire field-specific Hotel Administration section read. Exact current specializations Hospitality Real Estate and Service Management; field explicitly service Operations intersection; required Service Management Research seminars and original research/dissertation. Central marketing page generic operations wording not promoted separate formal named specialization."
+      }
+    ],
+    "limitations": [
+      "Current source-bounded business/ORIE doctoral scope checked; no historical or all-disciplines completeness assertion. Nolan administrative school established but stable reviewed school-unit identifier not yet available."
+    ],
+    "coverageComplete": true
+  }
+}
