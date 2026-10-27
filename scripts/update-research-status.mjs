@@ -8,7 +8,7 @@ const namedPrograms=programs.records.filter(p=>isNamedOperationsProgramme(p,unit
 const currentNamedPrograms=namedPrograms.filter(isCurrentPhdProgramme);
 const counts=ledger.metadata.counts,reviewed=ledger.records.filter(r=>r.status!=='pending').length;
 const gradPath=new URL('../data/graduate-lists.json',import.meta.url),grads=fs.existsSync(gradPath)?JSON.parse(fs.readFileSync(gradPath,'utf8')).metadata:null;
-const gradRows=grads?`| Names on program graduate and placement pages (person-years) | ${grads.records} |\n| of which listed under an operations area | ${grads.byField.operations} |\n| Institutions with such a page read | ${grads.institutions} |\n| Listed names already in the people database | ${grads.linkedToPeople} |\n`:'';
+const gradRows=grads?`| Names on program graduate and placement pages (person-years) | ${grads.records} |\n| of which listed under an operations area | ${grads.byField.operations} |\n| Institutions with such a page read | ${grads.institutions} |\n| Listed names already in the people database | ${grads.linkedToPeople} |\n| Additional verified first jobs in graduate register (outside faculty sample) | ${grads.verifiedGraduateFirstJobs||0} |\n`:'';
 const historyPath=new URL('../data/linkedin-histories.json',import.meta.url);
 const histories=fs.existsSync(historyPath)?JSON.parse(fs.readFileSync(historyPath,'utf8')).records:[];
 const mixedCaptures=read('employment-histories').records.flatMap(h=>h.linkedInCaptures||[]);

@@ -165,3 +165,6 @@ Stage 1 continuation27 (22 October 2026): 379 verified relevant doctoral routes 
 
 27 October Stage 2–3 continuation: Cornell aliases consolidated; six partial careers enriched, including three linked Cornell histories, dated Lodi observations and two OM List follow-ups. Totals remain 3,213 people and 2,088 verified first jobs. See [continuation handoff](research-handoff/parallel-stages-2026-10-26/integration-2026-10-27b/README.md).
 Stage4 MIT2024 release:14 reviewed graduate sightings and7 partial histories are available in the graduate evidence browser. Faculty sample remains3213; verified first jobs2088. See [Stage4 handoff](research-handoff/parallel-stages-2026-10-26/integration-stage4-2026-10-27/README.md).
+
+
+Graduate evidence now includes separately adjudicated first jobs for graduates outside the faculty sample. These are displayed in the graduate register and counted separately from faculty-sample placements.

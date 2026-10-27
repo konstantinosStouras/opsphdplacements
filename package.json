@@ -4,7 +4,7 @@
   "type": "module",
   "scripts": {
     "test": "node --test scripts/model.test.js scripts/graduate-merge.test.js scripts/linkedin-histories.test.js scripts/career-history.test.js scripts/university-reviews.test.js scripts/doctoral-proposals.test.js scripts/source-unit-reconciliation.test.js scripts/campus-identity.test.js",
-    "validate": "node scripts/validate.mjs && node scripts/check-sharing.mjs && node scripts/validate-linkedin-histories.mjs && node scripts/validate-career-histories.mjs && node scripts/validate-university-reviews.mjs && node scripts/record-dates.mjs --check",
+    "validate": "node scripts/validate.mjs && node scripts/check-sharing.mjs && node scripts/validate-linkedin-histories.mjs && node scripts/validate-career-histories.mjs && node scripts/validate-university-reviews.mjs && node scripts/record-dates.mjs --check && node scripts/validate-graduate-first-jobs.mjs",
     "check": "npm run test && npm run validate"
   },
   "engines": {

@@ -28,6 +28,7 @@ export async function renderGraduates(section) {
     { value: fmt(m.byField.operations), label: 'Listed under an operations area', note: `${fmt(m.byField.unstated)} with no area stated, ${fmt(m.byField['other-field'])} in other areas of the same schools` },
     { value: fmt(m.institutions), label: 'Institutions with a list' },
     { value: fmt(m.linkedToPeople), label: 'Already in the people database', note: 'name and PhD institution both match' },
+    { value: fmt(records.filter(r => !r.facultyId && r.firstJobReview?.status === 'verified').length), label: 'Verified first jobs in this graduate register', note: 'Additional to the faculty sample; source-bounded conclusions' },
     { value: yearsSeen.length ? `${Math.min(...yearsSeen)}–${Math.max(...yearsSeen)}` : '—', label: 'Years covered by the pages read so far' },
   ]);
   note.textContent = `Updated ${m.updatedAt}. ${m.note}`;
@@ -66,12 +67,20 @@ export async function renderGraduates(section) {
         nameCell.append(link(`Degree evidence · checked ${d.checkedAt}`, d.sourceUrl));
       }
       const career = careers.get(r.id);
+      const firstJob = r.firstJobReview;
+      if (firstJob?.status === 'verified') {
+        nameCell.append(html('p', undefined, `Verified first job: ${firstJob.employer} — ${firstJob.title} (${firstJob.start.asWritten}).`));
+        const evidence = document.createElement('details'); evidence.append(html('summary',undefined,'First-job evidence and limitations'),html('p',undefined,firstJob.reason),html('p',undefined,firstJob.degreeBoundary));
+        for (const s of firstJob.sources) evidence.append(link(`Source checked ${s.checkedAt}`,s.url),' ');
+        for (const text of firstJob.limitations) evidence.append(html('small',undefined,text));
+        nameCell.append(evidence);
+      }
       if (career) {
         const detail = document.createElement('details');
         detail.append(html('summary', undefined, `Partial career history: ${career.jobs.length} recorded roles`));
         for (const j of career.jobs) { const p = html('p'); p.append(link(jobText(j), j.sourceUrl), html('small', undefined, `${j.evidenceNote} · Checked ${j.checkedAt}`)); detail.append(p); }
         for (const j of career.otherEmploymentMentions || []) { const p = html('p'); p.append(link([j.employerAsWritten,j.titleAsWritten].filter(Boolean).join(' — ') || 'Supporting source',j.sourceUrl),html('small',undefined,`${j.evidenceNote} · Checked ${j.checkedAt}`)); detail.append(p); }
-        detail.append(html('p',undefined,career.coverageNote),html('p',undefined,'First post-PhD job is not verified. This partial history includes roles before and during doctoral study.'));
+        detail.append(html('p',undefined,career.coverageNote),html('p',undefined,`${firstJob?.status === 'verified' ? 'The separate first-job review is shown above.' : 'First post-PhD job is not verified.'} This partial history includes roles before and during doctoral study.`));
         for (const text of career.remainingUnknowns || []) detail.append(html('small',undefined,text));
         nameCell.append(detail);
       }
