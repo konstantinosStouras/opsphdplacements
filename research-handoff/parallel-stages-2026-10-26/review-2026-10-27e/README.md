@@ -20,3 +20,5 @@ Stage 2 through 33 lane revisits; 2,116 not revisited in that lane. Later Alain 
 `stage3-batch15` is a duplicate abandoned Kallus draft and MUST NOT be integrated. `kallus-correction` is superseded by `kallus-final`. Batch13 holds are not public additions. Inputs, prior records, source-check dates and audits preserve rejected/superseded interpretations. `public-preservation-audit.json` enumerates actual changed IDs; raw source documents and private contact details are excluded.
 
 Validation and publication proof are recorded separately after the release. Source-linked findings are public only once deployment succeeds. No scheduled continuation is implied.
+
+Owner follow-up: Sohil's screenshot and explicit https://www.linkedin.com/in/sshah95/ link confirmed the already recorded Amazon interval and MIT study range. The graduate view now shows a labelled LinkedIn profile link and the reported doctoral study dates. Original source-check dates remain intact; owner confirmation is separately dated. This adds no job and does not verify formal degree month or first new post-degree appointment. Header/abstract source text is regenerated to the current totals.

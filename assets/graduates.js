@@ -67,6 +67,9 @@ export async function renderGraduates(section) {
         nameCell.append(link(`Degree evidence · checked ${d.checkedAt}`, d.sourceUrl));
       }
       const career = careers.get(r.id);
+      if (career?.profileUrl && /^https:\/\/(?:www\.)?linkedin\.com\/in\//i.test(career.profileUrl)) {
+        const profile = html('p'); profile.append(link('LinkedIn profile ↗', career.profileUrl)); nameCell.append(profile);
+      }
       const firstJob = r.firstJobReview;
       if (firstJob?.status === 'verified') {
         nameCell.append(html('p', undefined, `Verified first employer: ${firstJob.employer} — ${firstJob.title || 'job title unknown'} (${firstJob.start.asWritten || 'start date unknown'}).`));
@@ -77,7 +80,12 @@ export async function renderGraduates(section) {
       }
       if (career) {
         const detail = document.createElement('details');
-        detail.append(html('summary', undefined, `Partial career history: ${career.jobs.length} recorded roles`));
+        detail.append(html('summary', undefined, `Partial career history: ${career.jobs.length} recorded ${career.jobs.length === 1 ? 'role' : 'roles'}`));
+        if (career.degreeEvidence?.studyRangeAsWritten) {
+          const d = career.degreeEvidence, p = html('p');
+          p.append(link(`${d.institutionAsWritten || 'Doctoral institution'} — ${d.degreeAsWritten || 'Doctoral study'}: ${d.studyRangeAsWritten}`, d.sourceUrl), html('small', undefined, `Self-reported study dates; not an independently verified conferral date. Checked ${d.checkedAt}.`));
+          detail.append(p);
+        }
         for (const j of career.jobs) { const p = html('p'); p.append(link(jobText(j), j.sourceUrl), html('small', undefined, `${j.evidenceNote} · Checked ${j.checkedAt}`)); detail.append(p); }
         for (const j of career.otherEmploymentMentions || []) { const p = html('p'); p.append(link([j.employerAsWritten,j.titleAsWritten].filter(Boolean).join(' — ') || 'Supporting source',j.sourceUrl),html('small',undefined,`${j.evidenceNote} · Checked ${j.checkedAt}`)); detail.append(p); }
         detail.append(html('p',undefined,career.coverageNote),html('p',undefined,`${firstJob?.status === 'verified' ? 'The separate first-job review is shown above.' : 'First post-PhD job is not verified.'} This partial history includes roles before and during doctoral study.`));

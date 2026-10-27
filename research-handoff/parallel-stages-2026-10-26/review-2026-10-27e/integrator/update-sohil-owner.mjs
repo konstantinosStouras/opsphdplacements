@@ -1,0 +1,10 @@
+import fs from 'node:fs';
+const file='data/employment-histories.json',d=JSON.parse(fs.readFileSync(file,'utf8')),r=d.records.find(r=>r.id==='grad:massachusetts-institute-of-technology:sohil-shah:2024');
+const root='research-handoff/parallel-stages-2026-10-26/review-2026-10-27e';
+fs.writeFileSync(root+'/mit/sohil-before-owner-confirmation.json',JSON.stringify(r,null,2)+'\n');
+r.profileUrl='https://www.linkedin.com/in/sshah95/';
+r.followupReviews=[...(r.followupReviews||[]),{checkedAt:'2026-10-27',access:'Owner-supplied screenshot and explicit profile URL; not a new browser read',sourceUrl:r.profileUrl,evidenceNote:'Owner confirms this Sohil Shah identity and profile link. Screenshot shows Amazon Engineer/Scientist June 2017–May 2024, MIT Ph.D. study September 2018–February 2024 and Wisconsin–Madison B.S. 2013–2017. Amazon and MIT ranges agree with previously read profile; no additional job or independently established conferral date.'}];
+r.degreeEvidence.confirmation={checkedAt:'2026-10-27',sourceUrl:r.profileUrl,access:'owner-supplied-screenshot',evidenceNote:'MIT Ph.D. September 2018–February 2024 visible; preserve as reported study range, separately from official year-only degree recipient match.'};
+r.coverageNote+=' Owner confirmed the same LinkedIn profile and supplied its visible Experience/Education screenshot on 27 October 2026; existing job and study dates agree. No new post-PhD appointment is shown.';
+fs.writeFileSync(file,JSON.stringify(d,null,2)+'\n');
+fs.writeFileSync(root+'/mit/sohil-owner-confirmation.json',JSON.stringify({id:r.id,profileUrl:r.profileUrl,checkedAt:'2026-10-27',publicChange:'Explicit LinkedIn profile link and visible self-reported doctoral study range; owner confirmation recorded. Original source observation dates preserved.',newJobs:0,firstJob:'unresolved',formalDegreeDatesChanged:false},null,2)+'\n');

@@ -2,6 +2,8 @@
 
 ## Latest reviewed continuation-e — 27 October 2026
 
+- Owner's Sohil Shah screenshot and exact LinkedIn URL confirmed 27 October: explicit graduate profile link and visible self-reported September 2018–February 2024 doctoral study range added. Amazon June 2017–May 2024 was already captured; no duplicate job or fabricated new first-job conclusion added. Official degree month/day remain unknown.
+
 - Integrated 43 history additions/updates, two faculty identities, three faculty first-job assessments and Sabrina Zhai's Citadel first job. Corrected Kallus's previously verified MIT first-job claim to unresolved because MIT and USC both start July 2015. Public totals: 3,215 faculty, 2,090 verified faculty first jobs, five separately counted graduate first jobs; 248 combined career reviews remain partial/source-bounded.
 - MIT remaining: Sohil's post-degree sequence is unsupported; Nicholas's August study endpoint is not explicit completion, September award and Radix start cannot be ordered within the month, and startup work is undated. MIT Research Affiliate classified as unpaid affiliation from official rank policy with inference caveat; fellowship mention added without inventing employment or dates.
 - Stage 2 reviewed publication cut: 33 people revisited in the current lane, 2,116 not yet revisited in that lane. The 33 are not completed lifetime histories. Later proposals (including Alain Bensoussan and Alan McKinnon) require a subsequent frozen review; preserve rather than silently integrate them.
