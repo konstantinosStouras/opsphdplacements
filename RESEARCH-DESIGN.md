@@ -334,3 +334,6 @@ Stage4 recipient reconciliation,27 October2026: explicit individual award-month 
 
 
 Graduate first-job adjudication: a reviewed graduate record may carry firstJobReview without creating a faculty identity. Earliest documented new appointments after dissertation completion can precede formal conferral; explicit completion-before-employment evidence and the dated chronology are required. Preserve completion versus award dates, unknown exact days and source-bounded limitations. Kim’s Harvard September 2024 postdoc satisfies this rule; the August completion statement and official September recipient annotation remain distinct.
+
+
+Explicit retrospective next-position reporting by a doctoral supervisor can verify a first employer even when its title and start date are unknown. Preserve the named thesis/degree identity, source and sequence wording. Current-affiliation wording alone remains insufficient. Do not manufacture a start year from the doctoral year or fill unknown award dates.

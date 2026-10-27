@@ -168,3 +168,6 @@ Stage4 MIT2024 release:14 reviewed graduate sightings and7 partial histories are
 
 
 Graduate evidence now includes separately adjudicated first jobs for graduates outside the faculty sample. These are displayed in the graduate register and counted separately from faculty-sample placements.
+
+
+27 October 2026 continuation d: four Stage 2 histories reviewed (Hindle, Letchford, Mersereau and Steven), with conflicts and old ORCID assertion dates preserved; ten Cornell histories expanded from continuations 6–9 with 86 structured roles. One new history brings the combined published review count to 245. Two additional MIT first employers accepted from explicit supervisor next-position evidence: Kayhan Behdin at LinkedIn (July 2024 from the separate reviewed chronology), Haoyue Wang at Susquehanna (title and start unknown). Graduate first-employer total is four, separate from 2,088 faculty placements. Sohil Shah, Nicholas Johnson and Sabrina Zhai remain unresolved. Archived corroboration and limitations are included; degree months/days unchanged. All histories remain partial.

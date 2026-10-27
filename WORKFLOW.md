@@ -362,3 +362,6 @@ Stage4 graduate overlay,27 October2026: graduate-lists records may carry degreeR
 
 
 Graduate first-job reviews are stored on the existing graduate-lists record as firstJobReview and mirrored in its employment-history firstJobAssessment. Validate identity, degree evidence, source check dates and month precision; preserve the faculty placements denominator. Run scripts/validate-graduate-first-jobs.mjs, regenerate status/stamps, build, check and inspect expanded graduate evidence before publication.
+
+
+Graduate first-employer reviews permit null title and unknown start only with linked explicit-next-position sequence evidence; the validator rejects fabricated dates and requires matching history conclusions. The visitor display labels unknown title/start plainly. Continuation d keeps reviewed/frozen inputs, prior records and integration audits under research-handoff/parallel-stages-2026-10-26/review-2026-10-27d/. Never replay its one-shot scripts.

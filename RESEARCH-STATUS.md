@@ -19,7 +19,7 @@ Generated from committed-format public datasets by `node scripts/update-research
 | of which listed under an operations area | 2175 |
 | Institutions with such a page read | 117 |
 | Listed names already in the people database | 409 |
-| Additional verified first jobs in graduate register (outside faculty sample) | 2 |
+| Additional verified first jobs in graduate register (outside faculty sample) | 4 |
 | LinkedIn profiles with published history observations | 16 |
 | of which all accessible Experience entries read | 15 |
 | University directory records with completed official-source reviews | 633 |

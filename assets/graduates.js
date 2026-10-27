@@ -69,7 +69,7 @@ export async function renderGraduates(section) {
       const career = careers.get(r.id);
       const firstJob = r.firstJobReview;
       if (firstJob?.status === 'verified') {
-        nameCell.append(html('p', undefined, `Verified first job: ${firstJob.employer} — ${firstJob.title} (${firstJob.start.asWritten}).`));
+        nameCell.append(html('p', undefined, `Verified first employer: ${firstJob.employer} — ${firstJob.title || 'job title unknown'} (${firstJob.start.asWritten || 'start date unknown'}).`));
         const evidence = document.createElement('details'); evidence.append(html('summary',undefined,'First-job evidence and limitations'),html('p',undefined,firstJob.reason),html('p',undefined,firstJob.degreeBoundary));
         for (const s of firstJob.sources) evidence.append(link(`Source checked ${s.checkedAt}`,s.url),' ');
         for (const text of firstJob.limitations) evidence.append(html('small',undefined,text));
