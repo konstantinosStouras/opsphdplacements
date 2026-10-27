@@ -1,5 +1,9 @@
 # Operations PhD Placements
 
+## MIT 2022–2023 graduate review — 27 October 2026
+
+Added 30 source-reconciled MIT graduate records, 20 partial career reviews and 12 supported first-employer findings. The separate graduate first-job total is now 17; faculty totals remain 3,215 people and 2,097 verified first jobs. Eight reviewed graduate cases remain unresolved. See the [review and remaining work](research-handoff/parallel-stages-2026-10-26/review-mit-2022-2023-2026-10-27/README.md).
+
 ## Cornell corrections 70–94 — 27 October 2026
 
 Reviewed every remaining correction through94, using88 instead of86. Nineteen existing histories now contain210 employment/appointment observations (117 before), with34 service, honorary, course-detail and student-visit entries retained separately. Four first jobs added: Stoikov at NYU, Averbukh at Salomon Brothers, Scully at UC Berkeley Simons Institute and Shafiee at ETH Zürich. Total verified faculty first jobs:2,097; no pending initial reviews remain, but1,114 are unresolved and4 have unconfirmed completion. All histories remain partial. Terenin’s former Cornell affiliation is visibly corrected without rewriting the original roster. Five reviewed candidates remain scope-held. See [review, validation and remaining work](research-handoff/parallel-stages-2026-10-26/review-2026-10-27h/README.md).

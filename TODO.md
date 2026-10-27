@@ -1,5 +1,12 @@
 # Remaining work and handoff priorities
 
+## MIT 2022–2023 reviewed release — 27 October 2026
+
+- Integrated 30 graduate records, 20 partial histories and 12 first employers; graduate total 17, faculty denominator unchanged.
+- Eight first jobs remain unresolved: Na, Wilde, Lahlou Kitane, Paskov, Sobiesk, Skali Lami, Cohen and Papalexopoulos. Nineteen formal award months and all 30 individual award days remain unknown. Ten faculty career deferrals remain with Stages 2–3.
+- Gong has existing OM List and faculty-page duplicate rows. The new graduate sighting uses OM List precedence; coordinate a separate correction rather than deleting either row during this release.
+- Source proposals use differing supporting-mention field names. Normalize note/employer/title for public validation and display while preserving original observations. See [review](research-handoff/parallel-stages-2026-10-26/review-mit-2022-2023-2026-10-27/README.md).
+
 ## Cornell corrections 70–94 — 27 October 2026
 
 Reviewed every remaining correction through94, using88 instead of86. Nineteen existing histories now contain210 employment/appointment observations (117 before), with34 service, honorary, course-detail and student-visit entries retained separately. Four first jobs added: Stoikov at NYU, Averbukh at Salomon Brothers, Scully at UC Berkeley Simons Institute and Shafiee at ETH Zürich. Total verified faculty first jobs:2,097; no pending initial reviews remain, but1,114 are unresolved and4 have unconfirmed completion. All histories remain partial. Terenin’s former Cornell affiliation is visibly corrected without rewriting the original roster. Five reviewed candidates remain scope-held. See [review, validation and remaining work](research-handoff/parallel-stages-2026-10-26/review-2026-10-27h/README.md).

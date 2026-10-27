@@ -63,7 +63,8 @@ export async function renderGraduates(section) {
       if (r.facultyId) { const a = html('a', undefined, 'in the people database'); a.href = `?q=${encodeURIComponent(r.facultyName || r.name)}#explorer`; nameCell.append(html('small'), a); }
       if (r.degreeReview) {
         const d = r.degreeReview, period = d.period;
-        nameCell.append(html('small', undefined, `Official degree-recipient match: ${period.month === 9 ? 'September ' : ''}${period.year}. ${period.month ? 'Exact day unknown.' : 'Month and day unknown.'}`));
+        const monthLabel = period.month ? new Intl.DateTimeFormat('en', {month:'long', timeZone:'UTC'}).format(new Date(Date.UTC(period.year, period.month - 1, 1))) + ' ' : '';
+        nameCell.append(html('small', undefined, `Official degree-recipient match: ${monthLabel}${period.year}. ${period.month ? 'Exact day unknown.' : 'Month and day unknown.'}`));
         nameCell.append(link(`Degree evidence · checked ${d.checkedAt}`, d.sourceUrl));
       }
       const career = careers.get(r.id);
@@ -96,6 +97,7 @@ export async function renderGraduates(section) {
         }
         for (const j of career.jobs) { const p = html('p'); p.append(link(jobText(j), j.sourceUrl), html('small', undefined, `${j.evidenceNote} · Checked ${j.checkedAt}`)); detail.append(p); }
         for (const j of career.otherEmploymentMentions || []) { const p = html('p'); p.append(link([j.employerAsWritten,j.titleAsWritten].filter(Boolean).join(' — ') || 'Supporting source',j.sourceUrl),html('small',undefined,`${j.evidenceNote} · Checked ${j.checkedAt}`)); detail.append(p); }
+        for (const j of career.nonEmploymentExperienceEntries || []) { const p = html('p'); p.append(link(`Nonemployment: ${j.titleAsWritten || j.type} (${j.start?.asWritten || 'unknown start'} – ${j.end?.asWritten || 'unknown end'})`,j.sourceUrl),html('small',undefined,`${j.evidenceNote} · Checked ${j.checkedAt}`)); detail.append(p); }
         detail.append(html('p',undefined,career.coverageNote),html('p',undefined,`${firstJob?.status === 'verified' ? 'The separate first-job review is shown above.' : 'First post-PhD job is not verified.'} This partial history includes roles before and during doctoral study.`));
         for (const text of career.remainingUnknowns || []) detail.append(html('small',undefined,text));
         nameCell.append(detail);
