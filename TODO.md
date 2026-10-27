@@ -1,5 +1,12 @@
 # Remaining work and handoff priorities
 
+## MIT 2018 review — 27 October 2026
+
+- Integrated all18 ORC thesis names, one existing Will Ma faculty link,17 partial histories,91 roles and60 supporting observations. Pixton—BYU and Udwani—Columbia postdoc have supported first-job sequences.
+- Fifteen first-job holds: Amjad, Chen, Copenhaver, Dunn, Galle, Chong Yang Goh, Siong Thye Goh, Gutin, Huchette, Li, Owen, Papush, Tracà, Wang and Zhuo. Exact reasons in the [MIT2018 handoff](research-handoff/parallel-stages-2026-10-26/review-mit-2018-2026-10-27/README.md).
+- All18 formal award months/days remain independently unverified; Siong's award year unresolved (profile study endpoint2016 versus thesis2018). Papush January/May and Chen July job versus August/September doctorate remain explicit. Owen's Armoire started during the doctorate; later Verily is not automatically first.
+- Newly observed faculty roles are preserved on graduate identities; Stage3 departmental roster admission/coverage remains separate. Will Ma's existing career ownership unchanged. No complete-career or MIT census claim.
+
 ## MIT 2019 review — 27 October 2026
 
 - Integrated all 17 names from the opened ORC 2019 PhD thesis section, six existing faculty links, ten partial histories, 44 structured roles and 33 supporting observations. Six first employers: McCord—Jump, Pawlowski—nference, Mellou—Microsoft, Fields—Zoba, Nambiar—A*STAR, Mundru—UNC.
