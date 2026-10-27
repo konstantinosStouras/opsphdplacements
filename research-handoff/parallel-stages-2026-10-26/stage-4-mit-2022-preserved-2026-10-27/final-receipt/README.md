@@ -1,0 +1,1 @@
+Final dated preservation receipt and lane status. Earlier checkpoint files remain unchanged. MIT 2022/2023 substantive review and publication are pending a direct owner instruction in the integrator chat; this snapshot does not authorize, perform or claim publication.
