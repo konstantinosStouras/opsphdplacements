@@ -1,5 +1,9 @@
 # Remaining work and handoff priorities
 
+## MIT 2017 review — 27 October 2026
+
+Integrated12 ORC identities,11 new partial histories and Aouad consulting/founder additions; Weinstein's Zillow first job verified. Existing Gupta first placement retained. Handoff: `research-handoff/parallel-stages-2026-10-26/review-mit-2017-2026-10-27/`. Remaining10 first-job cases: Aouad, Cheung, Eschenfeldt, Flajolet, Korolko, Kung, Lubin, Marks, Thraves and Yan. Resolve specific degree/job boundaries, title conflicts, consultancy timing and continuing-service distinctions listed there. Cheung2016/2017 degree conflict remains open; do not infer an explanation. Existing faculty-linked graduate histories now direct readers to their faculty first-job review rather than incorrectly saying it is unverified. This batch does not complete a stage or MIT census.
+
 ## MIT 2018 review — 27 October 2026
 
 - Integrated all18 ORC thesis names, one existing Will Ma faculty link,17 partial histories,91 roles and60 supporting observations. Pixton—BYU and Udwani—Columbia postdoc have supported first-job sequences.

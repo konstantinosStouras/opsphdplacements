@@ -113,7 +113,7 @@ export async function renderGraduates(section) {
         for (const j of career.jobs) { const p = html('p'); p.append(link(jobText(j), j.sourceUrl), html('small', undefined, `${j.evidenceNote} · Checked ${j.checkedAt}`)); detail.append(p); }
         for (const j of career.otherEmploymentMentions || []) { const p = html('p'); const label = j.start || j.end || j.observedPeriod ? jobText(j) : [j.employerAsWritten,j.titleAsWritten].filter(Boolean).join(' — ') || 'Supporting source'; p.append(link(`Supporting observation: ${label}`,j.sourceUrl),html('small',undefined,`${j.evidenceNote} · Checked ${j.checkedAt}`)); detail.append(p); }
         for (const j of career.nonEmploymentExperienceEntries || []) { const p = html('p'); p.append(link(`Nonemployment: ${j.titleAsWritten || j.type} (${j.start?.asWritten || 'unknown start'} – ${j.end?.asWritten || 'unknown end'})`,j.sourceUrl),html('small',undefined,`${j.evidenceNote} · Checked ${j.checkedAt}`)); detail.append(p); }
-        detail.append(html('p',undefined,career.coverageNote),html('p',undefined,`${firstJob?.status === 'verified' ? 'The separate first-job review is shown above.' : 'First post-PhD job is not verified.'} This partial history includes roles before and during doctoral study.`));
+        detail.append(html('p',undefined,career.coverageNote),html('p',undefined,`${firstJob?.status === 'verified' ? 'The separate first-job review is shown above.' : r.facultyId ? 'The first-job review is maintained in the linked people record.' : 'First post-PhD job is not verified.'} This partial history includes roles before and during doctoral study.`));
         for (const text of career.remainingUnknowns || []) detail.append(html('small',undefined,text));
         nameCell.append(detail);
       }

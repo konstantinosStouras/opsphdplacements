@@ -1,5 +1,7 @@
 # Operations PhD Placements
 
+MIT2017 review (27 October2026): added12 source-bounded ORC graduate entries,11 career histories and two additions to Ali Aouad's existing history. Published chronology includes50 roles and46 supporting mentions; Weinstein's Zillow first job is supported. Two existing faculty identities are linked, not duplicated. See `research-handoff/parallel-stages-2026-10-26/review-mit-2017-2026-10-27/` for evidence, limitations and publication receipt.
+
 ## MIT 2018 reviewed graduate release — 27 October 2026
 
 Added 18 source-bounded ORC thesis names, one existing faculty link, 17 partial careers (14 individually read LinkedIn profiles and three primary-source histories), 91 roles and 60 supporting observations. Two supported first employers: Pixton—BYU and Udwani—Columbia postdoc. Graduate register: 14,555 records and 32 separate first-job reviews; combined career reviews: 307. Faculty totals remain unchanged. [Evidence and remaining gaps](research-handoff/parallel-stages-2026-10-26/review-mit-2018-2026-10-27/README.md).
