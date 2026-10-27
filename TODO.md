@@ -1,5 +1,12 @@
 # Remaining work and handoff priorities
 
+## MIT 2020 review — 27 October 2026
+
+- Integrated 16 source-bounded doctoral recipients, seven existing faculty identity links, three additional professional identity observations and six partial histories. Three first employers supported: Hunter—Jump, Li Wang—Lyft and Zhang—Volpe; Hu remains unresolved.
+- Jing Lu needs completion-before-Cruise ordering; January thesis completion does not itself establish all requirements completed. Yuchen Wang needs degree-completion timing relative to July Huawei appointment.
+- Six formal award months and all16 award days remain unknown. Seven existing faculty careers stay with their Stage2/3 owners; Berk/Wheelock, Chodrow and Lamperski require Stage3 admission/full-history adjudication. Their supported identity/current-role observations are published as graduate evidence, without duplicating faculty rows.
+- Hu's start/end and current work remain unknown; other histories remain partial. See [review](research-handoff/parallel-stages-2026-10-26/review-mit-2020-2026-10-27/README.md).
+
 ## MIT 2021 review — 27 October 2026
 
 - Nine graduate records and six partial career reviews integrated; four first employers accepted. Additional Renegar Milliman history and Bandi's pre-award employment observation preserved.

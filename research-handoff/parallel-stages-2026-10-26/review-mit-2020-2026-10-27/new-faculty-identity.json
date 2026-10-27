@@ -1,0 +1,73 @@
+{
+  "schema": "research-only-faculty-identity-transfer-v1",
+  "checkedAt": "2026-10-27",
+  "status": "review-ready; not integrated",
+  "scope": "MIT 2020 graduate identities now observed as faculty; Stage 3 career ownership, no automatic faculty addition",
+  "publicIdentitySearch": {
+    "files": ["data/faculty.json", "data/faculty-roster-people.json", "research-handoff/parallel-stages-2026-10-26/stage-2/claims.json", "research-handoff/parallel-stages-2026-10-26/stage-3/claims.json", "research-handoff/parallel-stages-2026-10-26/stage-4/claims.json"],
+    "result": "No matches for Chodrow, Lamperski, Lauren Berk or Lauren Wheelock in searched public faculty identities and lane claims. Integrator must assign final stable IDs and check latest state before merging."
+  },
+  "records": [
+    {
+      "candidateKey": "mit-or-2020-lauren-elizabeth-berk",
+      "graduateName": "Lauren Elizabeth Berk",
+      "professionalName": "Lauren Wheelock",
+      "aliases": ["Lauren Berk", "Lauren Berk Wheelock"],
+      "identityDecision": "Strong identity match: Boston University identifies Lauren Wheelock's MIT Operations Research doctorate and unusually specific dissertation focus on matrix completion and natural language processing; MIT repository identifies Lauren Elizabeth Berk's matching matrix-factorization/NLP dissertation. Preserve graduate source name and current professional name separately.",
+      "owner": "stage-3",
+      "facultyStatus": "current faculty observed",
+      "sources": [
+        {"url": "https://www.bu.edu/cds-faculty/profile/lauren-wheelock/", "checkedAt": "2026-10-27", "access": "opened primary HTML", "locator": "Biography", "supports": "Clinical Assistant Professor of Computing & Data Sciences at Boston University; MIT Operations Research PhD; Yale mathematics BS; matching dissertation subject. Undated descriptions of consulting, gene-therapy machine learning and educational AI roles lack employers/dates."},
+        {"url": "https://www.bu.edu/cds-faculty/2026/03/25/lauren-wheelock-interdisciplinary-expertise/", "checkedAt": "2026-10-27", "documentDate": "2026-03-25", "access": "opened primary HTML", "locator": "Opening paragraph", "supports": "Joined Boston University as Clinical Assistant Professor in Fall 2025."},
+        {"url": "https://dspace.mit.edu/entities/publication/01b7486a-1045-4806-bffb-7843ec1f1b1f", "checkedAt": "2026-10-27", "access": "opened official repository metadata", "locator": "Author, advisor and Description", "supports": "Lauren Elizabeth Berk; New optimization approaches to matrix factorization problems with connections to natural language processing; adviser Robert Freund; thesis catalog description May 2020. Thesis date is not independently an award date."}
+      ],
+      "careerObservations": [{"employer": "Boston University", "unit": "Faculty of Computing & Data Sciences", "title": "Clinical Assistant Professor", "startText": "Fall 2025", "startYear": 2025, "startMonth": null, "endYear": null, "isCurrentObserved": true}],
+      "firstJobAssessment": null,
+      "limitations": ["No complete career source read; no first-employer conclusion.", "Official professional sources support identity through degree and dissertation subject; do not use private/family/legal search results as identity provenance.", "Stage 3 scope/admission and full history review remain required; no current department relabeling as Operations."]
+    },
+    {
+      "candidateKey": "mit-or-2020-philip-samuel-chodrow",
+      "graduateName": "Philip Samuel Chodrow",
+      "professionalName": "Philip S. Chodrow",
+      "aliases": ["Phil Chodrow", "Philip Chodrow"],
+      "identityDecision": "Institutional faculty page links the personal site and CV, which explicitly identify MIT Operations Research PhD 2015–2020 and match the graduate identity.",
+      "owner": "stage-3",
+      "facultyStatus": "current faculty observed",
+      "sources": [
+        {"url": "https://www.middlebury.edu/college/people/phil-chodrow", "checkedAt": "2026-10-27", "access": "opened primary HTML", "locator": "Title and biography", "supports": "Assistant Professor of Computer Science; MIT Operations Research PhD; two years UCLA visiting mathematics faculty before Middlebury; links personal CV."},
+        {"url": "https://www.philchodrow.prof/cv/cv.pdf", "checkedAt": "2026-10-27", "documentDateText": "Last updated October 2026", "access": "opened primary PDF", "locator": "Page 1 Experience and Education", "supports": "Middlebury Assistant Professor of Computer Science 2022–present; UCLA Hedrick Visiting Assistant Adjunct Professor of Mathematics 2020–2022; MIT Operations Research PhD study period 2015–2020. No appointment months supplied."},
+        {"url": "https://www.middlebury.edu/stories/archive/2022/09/middlebury-welcomes-new-faculty-fall-semester", "checkedAt": "2026-10-27", "documentDate": "2022-09-13", "access": "opened primary HTML", "locator": "Tenured or tenure-track positions list", "supports": "Philip Chodrow joining as Assistant Professor of Computer Science in Fall 2022; listed among tenured/tenure-track entrants."},
+        {"url": "https://www.philchodrow.prof/", "checkedAt": "2026-10-27", "access": "opened personal primary HTML", "locator": "Welcome and July 2026 news", "supports": "Middlebury assistant professor; on leave academic year 2026–2027, not evidence of departure or another employer."}
+      ],
+      "careerObservations": [
+        {"employer": "University of California, Los Angeles", "title": "Hedrick Visiting Assistant Adjunct Professor of Mathematics", "startYear": 2020, "startMonth": null, "endYear": 2022, "endMonth": null},
+        {"employer": "Middlebury College", "title": "Assistant Professor of Computer Science", "startYear": 2022, "startText": "Fall 2022", "startMonth": null, "endYear": null, "isCurrentObserved": true}
+      ],
+      "firstJobAssessment": null,
+      "limitations": ["UCLA is an initial-career candidate, but within-2020 degree/start ordering not independently adjudicated here.", "Read CV page 1 for identity/roles, not a complete career-history audit; no LinkedIn read.", "Non-www personal URL failed in reader; officially linked www URL opened successfully."]
+    },
+    {
+      "candidateKey": "mit-or-2020-jourdain-bernard-lamperski",
+      "graduateName": "Jourdain Bernard Lamperski",
+      "professionalName": "Jourdain Lamperski",
+      "identityDecision": "Pitt faculty biography and personal page both identify MIT Operations Research PhD 2020 and Pitt mathematics BS 2015; contemporary Pitt alumni interview confirms direct graduate-to-faculty transition.",
+      "owner": "stage-3",
+      "facultyStatus": "current adjunct faculty and industry role observed",
+      "sources": [
+        {"url": "https://www.engineering.pitt.edu/people/faculty/jourdain-lamperski/", "checkedAt": "2026-10-27", "access": "opened primary HTML", "locator": "Biography and current title", "supports": "Current Adjunct Assistant Professor of Industrial Engineering; joined department Fall 2020; MIT Operations Research PhD 2020; Pitt mathematics BS 2015."},
+        {"url": "https://www.mathematics.pitt.edu/numb3rs-fall-2020-alumni-spotlight", "checkedAt": "2026-10-27", "documentDateText": "Fall 2020", "access": "opened primary HTML", "locator": "Jourdain Lamperski interview, What are you doing now", "supports": "Self-report in university newsletter: joined Pitt Industrial Engineering as Assistant Professor that fall; immediately preceding activity described as finishing MIT Operations Research PhD."},
+        {"url": "https://jourdainlamperski.com/", "checkedAt": "2026-10-27", "access": "opened personal primary HTML", "locator": "About me", "supports": "Currently Senior Applied Scientist at DEFCON AI and Adjunct Assistant Professor at Pitt Industrial Engineering; previously tenure-track Assistant Professor in same department. No transition dates provided."}
+      ],
+      "careerObservations": [
+        {"employer": "University of Pittsburgh", "unit": "Industrial Engineering", "title": "Assistant Professor", "appointmentTypeExplicit": "tenure track", "startText": "Fall 2020", "startYear": 2020, "startMonth": null, "endYear": null, "isCurrentObserved": false},
+        {"employer": "University of Pittsburgh", "unit": "Industrial Engineering", "title": "Adjunct Assistant Professor", "startYear": null, "endYear": null, "isCurrentObserved": true},
+        {"employer": "DEFCON AI", "title": "Senior Applied Scientist", "startYear": null, "endYear": null, "isCurrentObserved": true}
+      ],
+      "firstJobAssessment": null,
+      "firstJobCandidate": "Pitt Fall 2020 Assistant Professor supported by explicit contemporary sequence; deferred to Stage 3 integrator with cohort degree evidence.",
+      "limitations": ["No dates for industry transition or adjunct conversion.", "No full LinkedIn/complete CV read; do not present three observed roles as full history.", "Preserve concurrent current industry and adjunct roles."]
+    }
+  ],
+  "publicationInstruction": "These are transfer observations only. Preserve them on GitHub; do not claim faculty additions, complete histories or verified first jobs without sole-integrator adjudication.",
+  "browserCleanup": "No browser tabs created; primary sources opened through web reader."
+}

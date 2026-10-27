@@ -1,5 +1,9 @@
 # Operations PhD Placements
 
+## MIT 2020 reviewed graduate release — 27 October 2026
+
+Added 16 officially matched doctoral recipients, seven existing faculty links, three further professional-identity observations, six partial histories and three supported first employers. Graduate first-job reviews now total 24; faculty totals remain unchanged. [Evidence, decisions and remaining work](research-handoff/parallel-stages-2026-10-26/review-mit-2020-2026-10-27/README.md).
+
 ## MIT 2021 reviewed graduate release — 27 October 2026
 
 Added nine source-reconciled graduates, six partial career reviews and four first employers: Amar—Verily, Hazimeh—Google, Sinha—Meta/Facebook and Renegar—Yield10. Bandi and Koduri remain unresolved. Separate graduate first jobs now total 21; faculty counts remain unchanged. See [review, evidence decisions and remaining work](research-handoff/parallel-stages-2026-10-26/review-mit-2021-2026-10-27/README.md).
