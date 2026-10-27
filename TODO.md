@@ -1,5 +1,12 @@
 # Remaining work and handoff priorities
 
+## MIT 2019 review — 27 October 2026
+
+- Integrated all 17 names from the opened ORC 2019 PhD thesis section, six existing faculty links, ten partial histories, 44 structured roles and 33 supporting observations. Six first employers: McCord—Jump, Pawlowski—nference, Mellou—Microsoft, Fields—Zoba, Nambiar—A*STAR, Mundru—UNC.
+- First-job holds: Beeler (same-month completion/start), Burq (2018 employment versus 2019 thesis/degree evidence), Ng (completion before August Google start), Tay (2017 study endpoint, 2018 advisor and 2019 ORC thesis disagreement).
+- Six official September 2019 recipients confirmed; eleven formal award months and all 17 exact award days remain unknown. Fields and Tay formal award years unresolved. Do not promote library thesis dates or study endpoints to conferral.
+- Six linked faculty careers stay with their existing owners. Zadik's Yale/MIT/NYU observations are published in graduate evidence; faculty admission/full-history adjudication remains Stage 3. All histories remain partial. [Review and source limitations](research-handoff/parallel-stages-2026-10-26/review-mit-2019-2026-10-27/README.md).
+
 ## MIT 2020 review — 27 October 2026
 
 - Integrated 16 source-bounded doctoral recipients, seven existing faculty identity links, three additional professional identity observations and six partial histories. Three first employers supported: Hunter—Jump, Li Wang—Lyft and Zhang—Volpe; Hu remains unresolved.

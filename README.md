@@ -1,5 +1,9 @@
 # Operations PhD Placements
 
+## MIT 2019 reviewed graduate release — 27 October 2026
+
+Added 17 source-reconciled ORC graduates, six existing faculty links, ten partial careers and six supported first employers. The graduate register now has 14,537 people and 30 separate first-job reviews; combined career reviews total 290. Faculty totals remain 3,215 people and 2,097 verified first jobs. Degree evidence now distinguishes official recipients, library records, graduation announcements and unresolved award periods. [Evidence, decisions and remaining work](research-handoff/parallel-stages-2026-10-26/review-mit-2019-2026-10-27/README.md).
+
 ## MIT 2020 reviewed graduate release — 27 October 2026
 
 Added 16 officially matched doctoral recipients, seven existing faculty links, three further professional-identity observations searchable by source name and shown in expanded evidence, six partial histories and three supported first employers. Graduate first-job reviews now total 24; faculty totals remain unchanged. [Evidence, decisions and remaining work](research-handoff/parallel-stages-2026-10-26/review-mit-2020-2026-10-27/README.md).

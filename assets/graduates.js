@@ -58,13 +58,18 @@ export async function renderGraduates(section) {
     const addRows = () => { for (const r of rows.slice(shown, shown + PAGE)) {
       const tr = document.createElement('tr');
       const last = r.sightings[r.sightings.length - 1];
-      const yearCell = html('td', undefined, r.listedYear ? String(r.listedYear) : '—'); if (r.listedYear) yearCell.append(html('small', undefined, MEANING[last.yearMeaning] || ''));
+      const yearMeaning = MEANING[last.yearMeaning] || MEANING[r.sightings.find(s => MEANING[s.yearMeaning])?.yearMeaning] || '';
+      const yearCell = html('td', undefined, r.listedYear ? String(r.listedYear) : '—'); if (r.listedYear) yearCell.append(html('small', undefined, yearMeaning));
       const nameCell = html('td'); nameCell.append(html('strong', undefined, r.name));
       if (r.facultyId) { const a = html('a', undefined, 'in the people database'); a.href = `?q=${encodeURIComponent(r.facultyName || r.name)}#explorer`; nameCell.append(html('small'), a); }
       if (r.degreeReview) {
         const d = r.degreeReview, period = d.period;
         const monthLabel = period.month ? new Intl.DateTimeFormat('en', {month:'long', timeZone:'UTC'}).format(new Date(Date.UTC(period.year, period.month - 1, 1))) + ' ' : '';
-        nameCell.append(html('small', undefined, `Official degree-recipient match: ${monthLabel}${period.year}. ${period.month ? 'Exact day unknown.' : 'Month and day unknown.'}`));
+        const degreeLabel = d.status === 'official-recipient-match' ? 'Official degree-recipient match' : d.status === 'library-degree-record' ? 'MIT library degree record' : d.status === 'official-graduation-announcement' ? 'Official graduation announcement' : 'Reported doctorate';
+        const degreeDate = period.year ? `${monthLabel}${period.year}` : 'formal award year unresolved';
+        nameCell.append(html('small', undefined, `${degreeLabel}: ${degreeDate}. ${period.month ? 'Exact day unknown.' : 'Formal award month and day unverified.'}`));
+        if (d.status !== 'official-recipient-match') nameCell.append(html('small', undefined, 'Reported degree or thesis timing is separate from formal conferral.'));
+        if (d.field) nameCell.append(html('small', undefined, `Doctoral field: ${d.field}.`));
         nameCell.append(link(`Degree evidence · checked ${d.checkedAt}`, d.sourceUrl));
       }
       const career = careers.get(r.id);
@@ -75,7 +80,7 @@ export async function renderGraduates(section) {
         for (const s of identityObservations) {
           const p = html('p'); p.append(link(`${s.name} · checked ${s.checkedAt}`, s.sourceUrl), html('small', undefined, s.note)); detail.append(p);
         }
-        detail.append(html('small', undefined, 'These observations do not establish a complete career or a first job.'));
+        detail.append(html('small', undefined, 'These observations do not establish a complete career. Any first-job conclusion is assessed separately below.'));
         nameCell.append(detail);
       }
       if (r.degreeMilestones?.length) {
@@ -106,7 +111,7 @@ export async function renderGraduates(section) {
           detail.append(p);
         }
         for (const j of career.jobs) { const p = html('p'); p.append(link(jobText(j), j.sourceUrl), html('small', undefined, `${j.evidenceNote} · Checked ${j.checkedAt}`)); detail.append(p); }
-        for (const j of career.otherEmploymentMentions || []) { const p = html('p'); p.append(link([j.employerAsWritten,j.titleAsWritten].filter(Boolean).join(' — ') || 'Supporting source',j.sourceUrl),html('small',undefined,`${j.evidenceNote} · Checked ${j.checkedAt}`)); detail.append(p); }
+        for (const j of career.otherEmploymentMentions || []) { const p = html('p'); const label = j.start || j.end || j.observedPeriod ? jobText(j) : [j.employerAsWritten,j.titleAsWritten].filter(Boolean).join(' — ') || 'Supporting source'; p.append(link(`Supporting observation: ${label}`,j.sourceUrl),html('small',undefined,`${j.evidenceNote} · Checked ${j.checkedAt}`)); detail.append(p); }
         for (const j of career.nonEmploymentExperienceEntries || []) { const p = html('p'); p.append(link(`Nonemployment: ${j.titleAsWritten || j.type} (${j.start?.asWritten || 'unknown start'} – ${j.end?.asWritten || 'unknown end'})`,j.sourceUrl),html('small',undefined,`${j.evidenceNote} · Checked ${j.checkedAt}`)); detail.append(p); }
         detail.append(html('p',undefined,career.coverageNote),html('p',undefined,`${firstJob?.status === 'verified' ? 'The separate first-job review is shown above.' : 'First post-PhD job is not verified.'} This partial history includes roles before and during doctoral study.`));
         for (const text of career.remainingUnknowns || []) detail.append(html('small',undefined,text));

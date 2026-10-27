@@ -1,5 +1,7 @@
 # Operations PhD careers: collection and analysis design
 
+MIT 2019 adjudication (27 October 2026): a library degree/thesis year is not an independently verified formal award period. Keep source-specific degree status and unknown formal month/day visible; an official dated graduation announcement supplies an upper completion bound, not an invented individual award date. Explicit personal or institutional doctorate-before-employment narratives may support sequence despite a later/conflicting thesis date, with the conflict retained. An aggregate employer entry's final title must not overwrite a CV's dated initial title; unknown initial titles stay unknown. Clinical professor wording alone does not establish tenure or teaching-track classification.
+
 MIT2020 adjudication (27 October2026): an advisor list saying a graduate “assumed position” does not necessarily identify the first post-PhD job. Check list completeness and explicit ordering; Levi's list omits an independently documented intermediate postdoc for another graduate, so Hu's MGH destination alone cannot establish his first employer. Publish the dated role observation and retain the chronology gap. Explicit graduation-before-appointment evidence can differ from formal award timing; thesis completion alone does not establish completion of all degree requirements.
 
 Version: 16 October 2026. This describes the planned graduate census and career-history extension. The published directory is currently a partial first-placement study of the imported OM List faculty; it is not yet a graduate census.

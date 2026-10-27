@@ -1,0 +1,45 @@
+{
+  "checkedAt": "2026-10-27",
+  "scope": "Independent review of new MIT 2019 public graduate and employment records against saved primary observations, source boundaries and ten profile proposals. No public edits or Git operations.",
+  "result": "two-stale-limitations-to-correct",
+  "checkedCounts": {
+    "newGraduates": 17,
+    "newPartialHistories": 10,
+    "verifiedFirstJobs": 6,
+    "heldFirstJobs": 4,
+    "matchingGraduateHistoryAssessments": 10
+  },
+  "findings": [
+    {
+      "severity": "correction-needed",
+      "person": "Christopher George McCord",
+      "file": "data/employment-histories.json",
+      "field": "remainingUnknowns",
+      "issue": "Still says first-job ordering needs explicit boundary evidence despite integrated Princeton narrative resolving sequence.",
+      "requestedFix": "Retain exact formal award date unknown, remove resolved sequence gap."
+    },
+    {
+      "severity": "correction-needed",
+      "person": "Konstantina Mellou",
+      "file": "data/employment-histories.json",
+      "field": "remainingUnknowns",
+      "issue": "Still says completion before September 2019 postdoc not established despite official June 7 graduate announcement incorporated in degree review.",
+      "requestedFix": "State individual award month/day unknown, remove resolved completion-before-postdoc gap."
+    }
+  ],
+  "verifiedSafeguards": [
+    "All ten graduate/history first-job assessments agree.",
+    "Six first-job boundaries consistent with reviewed evidence; Nambiar initial title remains null, Pawlowski correctly starts as Translational Scientist.",
+    "Mundru personal biography independently reopened and explicitly orders MIT doctorate before UNC.",
+    "Four holds preserve unresolved ordering for Beeler, Burq, Ng and Tay.",
+    "Fields narrative sequence retains formal 2018/2019 award discrepancy.",
+    "Pawlowski source aggregate retained separately and CV role distinctions preserved; final April 2025 departure attributed to LinkedIn.",
+    "Burq promotion, visit and study-role variants retained.",
+    "17 added graduate IDs unique; six faculty links retained."
+  ],
+  "limitations": [
+    "LinkedIn content assessed through root saved full-profile observations, not independently reopened by auditor.",
+    "Mellou official announcement access remains root Chrome attribution; web reader failed.",
+    "No claim of complete cohort careers or exact individual award days."
+  ]
+}
