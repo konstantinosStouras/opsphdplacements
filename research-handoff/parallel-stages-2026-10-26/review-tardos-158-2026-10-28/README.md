@@ -5,3 +5,5 @@ Root read the individual 1996 profile, complete 2004 Tardos biography and dated 
 Correction 159 also reviewed: Cornell July 2007 announcement establishes named chair by publication date, without an exact effective day or new job.
 
 Correction 160: report home explicitly covers 1997–1998. Corrected earlier 1997-only snapshot wording, preserving prior text. No inferred promotion year or duplicate observation.
+
+Copied contributor deferred-source and structural-validation snapshots are planning records, not additional public facts or independent completion assessments. Basu 157 remains held for population scope.
