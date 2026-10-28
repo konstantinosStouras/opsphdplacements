@@ -1,3 +1,5 @@
+Goldberg 162 (28 October 2026): duplicate undergraduate-director mentions consolidated; undated current claim qualified against eCornell and leadership evidence. No end date or succession inferred; faculty/first-job records unchanged. See review-goldberg-162-2026-10-28.
+
 Dwivedi 161 (28 October 2026): Traversal company founding 2024 and public launch June 2025 distinguished from personal LinkedIn co-founder November 2023 and CV CTO/co-founder 2024. All role dates and first-job uncertainty preserved. See review-dwivedi-161-2026-10-28.
 
 Tardos 158 (28 October 2026): Berkeley 1999–2000 sabbatical retrospectively confirmed; 1996 associate and 2004 full-professor snapshots corroborated without promotion dates. First-job and other chronology gaps remain. See review-tardos-158-2026-10-28.
