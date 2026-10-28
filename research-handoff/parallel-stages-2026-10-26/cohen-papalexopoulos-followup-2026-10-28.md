@@ -9,3 +9,6 @@ Theodore: opened MIT-hosted 2023 lung allocation paper, pages1 and9. Completed O
 No new verified first job. Peter's post-PhD employer and Theodore's initial interval remain unresolved. All original roles, degree findings and first-job assessments retained. Do not treat incomplete careers as complete or keep repeating the same searches without new evidence. Next evidence needed: matched employer biography/CV for Peter; dated appointment or explicit first-job narrative covering Theodore's gap. No outreach authorized.
 
 Sources and short per-fact evidence are retained in the companion integration script and public histories; pre-change snapshots preserve the original records. No full source documents, contacts or browser inventory committed. Only task-created tabs closed.
+
+## Publication receipt
+Published release 5f0b88a0bd691085cab524210a3e9de61492849d to main and live website. Deployment run 40635258844 succeeded. Full validation, build and sharing checks passed; both expanded graduate profiles inspected in preview. Live employment histories, graduate lists and record dates exactly match the reviewed local data. Manifest confirms only these two history records changed and all 333 other records, existing roles, degree findings and first-job assessments are preserved. First-job counts unchanged. Companion live receipt records retrieval time.
