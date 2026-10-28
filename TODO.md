@@ -1,5 +1,7 @@
 # Remaining work and handoff priorities
 
+28 October02:39: full Fagnan/Bisias LinkedIn Experience captured (10 and7 entries). Integrated net12 structured roles, including distinct Zillow/Cubist promotions, plus study/internship observations. Both first-job boundaries remain unresolved. Next: Lin full profile/degree-year conflict, then Kallus/King/Wang. See followup-2026-10-28-0239 handoff.
+
 28 October follow-up: Letham's full loaded LinkedIn Experience became accessible; all three entries read and stored. Refined Meta start to June2015, IBM internship to May–August2013 and joint HMS/MGH research assistant to July2009–July2010. Explicit doctorate-before-Meta statement supports Meta first job, initial rank unspecified. MIT2015 first-job gaps now six: Bisias, Fagnan, Kallus, King, Lin and Wang. Older seven-case checkpoint remains historical.
 
 28 October02:09 follow-up: added a dated2017 Google author-biography observation for Ross Michael Anderson; employer start and first-job order remain unknown. ASNY2017 Zhe Zhu/Munich Re registration remains an identity-limited lead, not a new verified job. Next: MIT2015 individual full-history follow-ups; avoid repeating inconclusive MIT2014 employer searches. See dated follow-up handoff.
