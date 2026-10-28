@@ -1,4 +1,6 @@
-Hai Wang follow-up (28 October 2026): official CMU announcement supports a visiting assistant professorship observed 22 April 2020. Added one role with unknown appointment boundaries; first-job sequence remains unresolved. See review-wang-cmu-2026-10-28. New Stage 2 proposals through Franco/Grando/Roth/Lago require additive integrator review; they are not implicitly published.
+Stage 2 four-person continuation (28 October 2026): Franco, Grando, Roth and Lago adjudicated additively; 20 net role entries, three full accessible LinkedIn captures, no first-placement changes. Retain Lago current-status conflict, Grando unknown doctorate and historical Roth chronology. Frozen inputs and audit: review-stage2-four-2026-10-28. Other contributor proposals remain separate and require review.
+
+Hai Wang follow-up (28 October 2026): official CMU announcement supports a visiting assistant professorship observed 22 April 2020. Added one role with unknown appointment boundaries; first-job sequence remains unresolved. Published in 47af603; see review-wang-cmu-2026-10-28.
 
 Schalekamp follow-up (28 October 2026): correction106 adjudicated additively from dated2026CV; Teaching Professor begins July2025 and Senior Lecturer ends June2025. Other career/first-job facts retained. Subsequent root review completed corrections95–127 and published the supported findings in ca6cf4b; see review-cornell-95-127-2026-10-28 for itemized dispositions and remaining scope/evidence holds. Do not replace newer histories with stale proposals.
 
