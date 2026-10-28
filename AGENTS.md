@@ -67,3 +67,6 @@ Stage 1 title correction — 25 October 2026: the public qualifying register and
 ## Parallel stages authorized — 26 October 2026
 
 The owner now explicitly starts Stages 2–4 in three separate project chats while Stage 1 continues. This supersedes earlier sequential holds; it does not mark any stage complete or resume automation. Read [parallel-stage ownership and reporting](research-handoff/parallel-stages-2026-10-26/README.md). Each research chat writes only its assigned proposal lane; the originating chat alone integrates public data and commits/publishes. Every chat states its scope, completed work, remaining tasks, blockers and next action at each checkpoint. Evidence and named-title rules remain unchanged.
+
+## Unavailable sources — owner instruction, 28 October 2026
+Record unavailable individual sources and unresolved evidence in a dated revisit note, then continue accessible cases. Return to the deferred list after completing the available work. This does not authorize bypassing access controls; preserve existing verified facts and original check dates.

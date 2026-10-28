@@ -1,3 +1,5 @@
+Aouad follow-up (28 October 2026): accessible ten-entry LinkedIn capture integrated; Stanford visit and Nomura role added, MIT promotion dated as self-reported, one internal appointment consolidated. CV conflicts and first-job uncertainty retained. See review-aouad-2026-10-28.
+
 Sid Banerjee follow-up (28 October 2026): KTH 2024 biography corroboration added; stale unknown-month wording corrected to existing adviser-reported August 2013 graduation. Stanford CV/LinkedIn start-month conflict and first-job ordering remain unresolved; no roles added. See review-banerjee-2026-10-28.
 
 Stage 2 continuation (28 October 2026): Belloni, Jacquillat, Lavissiere, Pignanelli, Pedraza-Martinez and Roa-Henriquez integrated with nine net roles and six complete accessible LinkedIn captures. Source conflicts and partial-career status retained; no first-job verdict changes. See research-handoff/parallel-stages-2026-10-26/review-stage2-next-six-2026-10-28.
@@ -513,3 +515,5 @@ Kevin Hu adjudication, 27 October 2026: MITRE Senior AI Engineer, November 2024 
 ## Cornell corrections through 127 — 28 October 2026
 
 Reviewed all 33 remaining saved corrections (95–127), preserving supersession and seven scope holds. Integrated 16 existing histories and three first-job decisions: Mark Lewis → UBC (1998), Frans Schalekamp → Tsinghua (2008), Jacob Mays → Cornell (2019), all postdocs. Added four documented roles/observations and corrected chair, degree and appointment evidence without replacing newer histories. See research-handoff/parallel-stages-2026-10-26/review-cornell-95-127-2026-10-28/README.md and its publication receipt. No unreviewed batch merge remains through 127; incomplete career boundaries, candidate identities and degree conflicts remain explicit. Stage 2–3 work is not complete. Do not replay frozen integration recipes.
+
+Cornell correction 131 (28 October 2026): Yuchen Wu's Stanford RegLab summer 2021 student fellowship added as an affiliation only; 16 reviewed jobs unchanged. First-job ordering remains unresolved. See review-wu-131-2026-10-28.
