@@ -1,3 +1,5 @@
+Dwivedi 161 (28 October 2026): Traversal company founding 2024 and public launch June 2025 distinguished from personal LinkedIn co-founder November 2023 and CV CTO/co-founder 2024. All role dates and first-job uncertainty preserved. See review-dwivedi-161-2026-10-28.
+
 Tardos 158 (28 October 2026): Berkeley 1999–2000 sabbatical retrospectively confirmed; 1996 associate and 2004 full-professor snapshots corroborated without promotion dates. First-job and other chronology gaps remain. See review-tardos-158-2026-10-28.
 
 Paul Grigas follow-up (28 October 2026): full accessible six-entry LinkedIn Experience integrated, four net roles and Berkeley rank months. Formal doctorate boundary and July/fall 2016 start discrepancy unresolved. Unavailable adviser CV deferred; see review-grigas-2026-10-28.
