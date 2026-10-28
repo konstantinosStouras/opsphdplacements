@@ -1,3 +1,5 @@
+MIT2015 follow-up (28 October 2026, 03:09 UTC): Maokai Lin full accessible LinkedIn history integrated: three dated roles (net two added). Doctoral-year conflict and first-job sequence remain unresolved. See research-handoff/parallel-stages-2026-10-26/followup-2026-10-28-0309.md.
+
 # Remaining work and handoff priorities
 
 28 October02:39: full Fagnan/Bisias LinkedIn Experience captured (10 and7 entries). Integrated net12 structured roles, including distinct Zillow/Cubist promotions, plus study/internship observations. Both first-job boundaries remain unresolved. Next: Lin full profile/degree-year conflict, then Kallus/King/Wang. See followup-2026-10-28-0239 handoff.
