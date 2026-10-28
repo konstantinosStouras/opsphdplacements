@@ -1,0 +1,3 @@
+# Minca reviewed LinkedIn continuation — 28 October 2026
+
+Root independently identity-matched and read entire four-entry Experience in Chrome, both Cornell children through Education. Split combined Cornell ranks into assistant July2011–June2017 and associate July2017–June2023. Added INRIA doctoral researcher2009–2011 and JP Morgan Quantitative Research April–October2008, self-reported with employment type/pay unknown. Preserved all prior CV appointments, projects, visits and service. ProfessorJuly2023 remains from prior CV. July2011 start versus September2011 doctorate remains unresolved; no new first-job verdict or complete-career claim. Frozen inputs and prior record retained; do not replay.
