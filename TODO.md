@@ -524,3 +524,4 @@ Cornell correction 131 (28 October 2026): Yuchen Wu's Stanford RegLab summer 202
 28 October 2026: Resnick148 identity-matched LinkedIn provenance added after root read of one undated emeritus entry. All40 jobs and first-job assessment unchanged; Ford/AT&T follow-up remains unresolved.
 28 October2026: Wissel136 missing doctorate fields restored from individually read adviser PhD list: ETH Zurich2007. Dissertation publication2008 remains distinct; career and first-job records unchanged.
 28 October2026: Dietrich145 doctorate institution Cornell added from individually read event biography; conflicting1986/1984year evidence held, public year remains unknown.
+28October2026: Kallus146 Yale visit range resolved as7–9October2024 from official visible time elements and their explicit datetime values, root independently inspected. Existing job only; original shorthand retained, MIT/USC first-job tie unchanged.
