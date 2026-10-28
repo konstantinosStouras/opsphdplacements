@@ -54,7 +54,7 @@ function writeComplete(file,content){
   try{
     for(let attempt=0;;attempt++){
       try{fs.renameSync(temporary,file);break;}
-      catch(error){if(attempt>=4||!['UNKNOWN','EBUSY','EPERM','EACCES'].includes(error.code))throw error;Atomics.wait(new Int32Array(new SharedArrayBuffer(4)),0,0,150);}
+      catch(error){if(attempt>=40||!['UNKNOWN','EBUSY','EPERM','EACCES'].includes(error.code))throw error;Atomics.wait(new Int32Array(new SharedArrayBuffer(4)),0,0,250);}
     }
   }finally{if(fs.existsSync(temporary))fs.unlinkSync(temporary);}
 }
