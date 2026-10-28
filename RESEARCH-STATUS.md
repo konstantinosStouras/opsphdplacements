@@ -1,6 +1,6 @@
 # Research status
 
-Generated from committed-format public datasets by `node scripts/update-research-status.mjs`. People-ledger snapshot check date: 2026-10-27. Doctoral source checks run through 2026-10-26. Refresh this file with each data release. Git history identifies the published revision.
+Generated from committed-format public datasets by `node scripts/update-research-status.mjs`. People-ledger snapshot check date: 2026-10-28. Doctoral source checks run through 2026-10-26. Refresh this file with each data release. Git history identifies the published revision.
 
 | Measure | Count |
 |---|---:|
@@ -8,8 +8,8 @@ Generated from committed-format public datasets by `node scripts/update-research
 | of which OM List profiles | 2149 |
 | of which operations faculty found on the linked faculty pages | 1066 |
 | Individually reviewed profiles | 3215 |
-| Verified first jobs | 2097 |
-| Researched but unresolved | 1114 |
+| Verified first jobs | 2100 |
+| Researched but unresolved | 1111 |
 | Degree completion unconfirmed | 4 |
 | Pending individual review | 0 |
 | Named-scope doctoral register records, including historical and unresolved routes | 419 |
