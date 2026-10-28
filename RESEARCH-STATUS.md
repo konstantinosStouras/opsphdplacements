@@ -15,11 +15,11 @@ Generated from committed-format public datasets by `node scripts/update-research
 | Named-scope doctoral register records, including historical and unresolved routes | 419 |
 | Verified relevant doctoral routes (tracks may overlap; admissions may be suspended) | 410 |
 | Institutions with verified relevant doctoral provision | 306 |
-| Names on program graduate and placement pages (person-years) | 14590 |
-| of which listed under an operations area | 2302 |
+| Names on program graduate and placement pages (person-years) | 14600 |
+| of which listed under an operations area | 2312 |
 | Institutions with such a page read | 117 |
-| Listed names already in the people database | 444 |
-| Additional verified first jobs in graduate register (outside faculty sample) | 38 |
+| Listed names already in the people database | 447 |
+| Additional verified first jobs in graduate register (outside faculty sample) | 39 |
 | LinkedIn profiles with published history observations | 77 |
 | of which all accessible Experience entries read | 75 |
 | University directory records with completed official-source reviews | 633 |

@@ -1,0 +1,7 @@
+# MIT Operations Research2013 — bounded initial pass
+
+Checked28October2026. All10 source entries read;8individual degree years corroborated. Fontana/Keller completions unresolved. All10 formal award months/days unknown; O'Hair's explicit June2013 received statement is a separate source-reported milestone. This is proposal-only, not a census or complete careers.
+
+One primary-supported author correction: ORC lists advisor David Simchi-Levi where Yehua Wei authored the exact dissertation. Preserve erroneous source text and do not add the advisor as2013graduate. Four entire accessible LinkedIn profiles retain34Experience entries:33roles and1Google Developer Expert recognition, not provenGoogleemployment. Four additional primaryCVemployment observations are separate. SixStage4career outcomes and fourfacultydeferrals(Bandi,Uichanco,Wei toStage2;O'Hair toStage3with currentfaculty statusunknown). No supported first-job proposal yet.
+
+Slow identity cases: Matthew William Fontana and Philipp Wilhelm Keller. Remaining chronology cases: Cristian Ricardo Figueroa, Matthieu Monsch, Xin Lu and Virot Chiraphadhanakul. See manual lookup notes. Source PDFs and personalcontactdetails excluded. Soleintegrator reviews, preserves and publishes accepted observations; no publicdata/Gitmutation bythislane. Scripts are pureproposal builders, not mergers. Nextsourcecohort2012 requires latestsharedfrontiercheck first.

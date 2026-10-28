@@ -1,3 +1,5 @@
+MIT 2013 (28 October 2026): reviewed ten thesis entries; added six partial career reviews, with Keller identity and degree completion unresolved. Monsch first employer supported at LinkedIn, September 2013; five graduate first jobs and four faculty career follow-ups remain; no formal award dates inferred from study endpoints. Virot credential conflict retained. See review-mit-2013-2026-10-28.
+
 Cornell corrections 129–130 (28 October 2026): Bland promotion-year conflict and planned retirement distinguished from actual retirement; Roundy retirement established only as by September 2020. Existing jobs and first-job assessments preserved; see review-cornell-129-130-2026-10-28.
 
 Cornell correction 128 (28 October 2026): Henderson Michigan-before-Auckland leave and Auckland lecturer 1997–1999 independently confirmed in primary conference biographies. Two existing jobs refined; conflicting 1996/1997 doctorate wording, exact appointment boundaries and full first-job census remain unresolved. See review-henderson-128-2026-10-28.

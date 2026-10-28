@@ -1,5 +1,7 @@
 # Operations PhD Placements
 
+MIT 2013 review (28 October 2026): ten ORC thesis entries, six partial career reviews, 29 structured roles and 13 supporting observations added; three existing faculty identities linked. Corrected Yehua Wei thesis authorship while preserving the source error. One new first employer: Monsch at LinkedIn, September 2013, after adviser-reported August graduation; initial title unknown. Formal award dates and named identity gaps remain unresolved. Graduate register: 14,600; combined career reviews: 347. See research-handoff/parallel-stages-2026-10-26/review-mit-2013-2026-10-28/README.md.
+
 MIT2014 review (28 October 2026): five source-listed graduates and five partial career histories added, including the existing Gupta faculty identity. Two new supported first jobs: Elmachtoub at IBM and Leung at CMU Tepper, both postdocs. Gupta's existing USC assessment is preserved. Graduate register: 14,590; combined career reviews: 341. [Evidence and remaining gaps](research-handoff/parallel-stages-2026-10-26/review-mit-2014-2026-10-28/README.md).
 
 MIT2015 review (28 October 2026): 10 new graduate records, the existing Calmon record reconciled to 2015, nine new partial career histories and additive Calmon/Kallus observations. Five existing faculty identities linked. Four prior first-job assessments retained; seven remain unresolved. Graduate register: 14,585 records; combined career reviews: 336. See [evidence and remaining gaps](research-handoff/parallel-stages-2026-10-26/review-mit-2015-2026-10-28/README.md).

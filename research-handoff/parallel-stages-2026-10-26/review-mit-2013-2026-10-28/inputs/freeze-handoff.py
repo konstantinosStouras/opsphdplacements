@@ -1,0 +1,17 @@
+import json,hashlib
+from pathlib import Path
+P=Path(__file__).resolve().parent;L=P.parent
+def write(f,d):f.write_text(json.dumps(d,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+write(P/'virot-university-cv-observations.json',dict(name='Virot Chiraphadhanakul',checkedAt='2026-10-28',sourceUrl='https://db.tbs.tu.ac.th/dbcenter/en/vprofcv?id=313&pdf=1',sourceDate=None,sourceType='primary-university-hosted-cv',employmentObservations=[dict(employer='Skooldio',title='Managing Director',startAsWritten='2016',endAsWritten='Present'),dict(employer='Facebook Inc.',title='Data Scientist',startAsWritten='2013',endAsWritten='2016'),dict(employer='MIT Operations Research Center',title='Research Assistant',startAsWritten='2007',endAsWritten='2013'),dict(employer='FedEx Services, Pricing Science and Engineering',title='Revenue Management Intern',startAsWritten='2011',endAsWritten='2011')],degreeObservations=[dict(credentialAsWritten='D.B.A.',field='Operations Research',institution='Massachusetts Institute of Technology',year=2013),dict(credentialAsWritten='M.B.A.',field='Dual SM in Transportation and Operations Research',institution='Massachusetts Institute of Technology',year=2010),dict(credentialAsWritten='B.Eng.',field='Computer Engineering',institution='Chulalongkorn University',year=2007)],limitations=['Historical undatedCV Present is not extended to2026.','Degree code errors and managing-director/president title variant retained separately.'],integrationStatus='proposal-only'))
+p=json.loads((P/'progress.json').read_text(encoding='utf-8'));p['additionalPrimaryCVEmploymentObservations']=4;write(P/'progress.json',p)
+for fn in ['progress.json','frontier.json']:
+ f=L/fn;d=json.loads(f.read_text(encoding='utf-8'));d['mit2013Continuation']=p
+ d['mit2020Continuation']['independentPublicationCheck']=json.loads((L/'live-mit-2020-publication-check-2026-10-28.json').read_text(encoding='utf-8'))
+ d['mit2020Continuation']['publicationStatus']='live-public-data-independently-confirmed-2026-10-28'
+ d['currentFrontier'].update(status='MIT2013 bounded initialpass complete; integrator review/preservation pending',nextUnreviewedCohort=2012)
+ write(f,d)
+f=L/'README.md'
+with f.open('a',encoding='utf-8') as out:out.write('\n## MIT2013 initialpass and corrected frontier —28October2026\n\nAll10sourceentries read,8individualdegreeyears corroborated,1primary-supported authorcorrection(YehuaWei replacing mistakenly listed advisor). Fourfullaccessibleprofiles retain34Experienceentries(33roles+1recognition), plus4separateprimaryCV employmentobservations. SixStage4career outcomes and4faculty deferrals; no firstjob proposal accepted yet. Fontana/Keller identities remain slow. All10formalawardmonths/daysunknown. See `mit-or-2013/`. Corrected repeat-review receipt independently content-matched onGitHub at61aa554; new2013preservation pending. MIT2020livecheck:16graduates6histories3firstjobs; Hu/Lu/Yuchenheld. Nextunreviewedcohort2012 after current shared-frontier check.\n')
+files=[dict(file=f.name,sha256Lf=hashlib.sha256(f.read_bytes().replace(b'\r\n',b'\n')).hexdigest(),bytesLf=len(f.read_bytes().replace(b'\r\n',b'\n'))) for f in sorted(P.iterdir()) if f.is_file() and f.name!='publication-ready.json']
+write(P/'publication-ready.json',dict(checkedAt='2026-10-28',integrationStatus='proposal-only-review-required',sourceScope='MITOR2013ten-entryboundedsource',files=files,counts=p,publicDataUntouched=True))
+print('Frozen',len(files),'payload files plusmanifest; own-lane checkpoint current.')
