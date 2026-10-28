@@ -1,5 +1,7 @@
 # Remaining work and handoff priorities
 
+28 October02:09 follow-up: added a dated2017 Google author-biography observation for Ross Michael Anderson; employer start and first-job order remain unknown. ASNY2017 Zhe Zhu/Munich Re registration remains an identity-limited lead, not a new verified job. Next: MIT2015 individual full-history follow-ups; avoid repeating inconclusive MIT2014 employer searches. See dated follow-up handoff.
+
 Owner authorized a bounded six-hour continuation on28 October2026 through07:38 UTC. App heartbeat is configured in the sole-integrator chat; older daily automation remains paused. See `research-handoff/parallel-stages-2026-10-26/six-hour-continuation-2026-10-28.md` for scope, deadline and current checkpoint.
 
 ## MIT2014 review — 28 October 2026
