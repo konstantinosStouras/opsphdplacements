@@ -1,5 +1,7 @@
 # Remaining work and handoff priorities
 
+28 October follow-up: Letham's full loaded LinkedIn Experience became accessible; all three entries read and stored. Refined Meta start to June2015, IBM internship to May–August2013 and joint HMS/MGH research assistant to July2009–July2010. Explicit doctorate-before-Meta statement supports Meta first job, initial rank unspecified. MIT2015 first-job gaps now six: Bisias, Fagnan, Kallus, King, Lin and Wang. Older seven-case checkpoint remains historical.
+
 28 October02:09 follow-up: added a dated2017 Google author-biography observation for Ross Michael Anderson; employer start and first-job order remain unknown. ASNY2017 Zhe Zhu/Munich Re registration remains an identity-limited lead, not a new verified job. Next: MIT2015 individual full-history follow-ups; avoid repeating inconclusive MIT2014 employer searches. See dated follow-up handoff.
 
 Owner authorized a bounded six-hour continuation on28 October2026 through07:38 UTC. App heartbeat is configured in the sole-integrator chat; older daily automation remains paused. See `research-handoff/parallel-stages-2026-10-26/six-hour-continuation-2026-10-28.md` for scope, deadline and current checkpoint.

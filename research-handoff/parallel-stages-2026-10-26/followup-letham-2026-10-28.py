@@ -1,0 +1,31 @@
+"""Root-reviewed additive chronology reconciliation; one-shot guarded."""
+import json,pathlib,copy
+R=pathlib.Path(__file__).resolve().parents[2];O=pathlib.Path(__file__).parent;D='2026-10-28'
+def read(p):return json.loads(p.read_text(encoding='utf8'))
+def write(p,x,n=2):p.write_text(json.dumps(x,ensure_ascii=False,indent=n)+'\n',encoding='utf8')
+def date(y=None,m=None,words=None):return dict(asWritten=words or (f'{y}-{m:02}' if m else str(y) if y else None),year=y,month=m,precision='month' if m else 'year' if y else 'unknown')
+pid='grad:massachusetts-institute-of-technology:benjamin-letham:2015';u='https://www.linkedin.com/in/bletham/';c='https://investors.claritev.com/board-member/ben-letham'
+g=read(R/'data/graduate-lists.json');h=read(R/'data/employment-histories.json');gr=next(x for x in g['records'] if x['id']==pid);hr=next(x for x in h['records'] if x['id']==pid)
+assert not gr.get('firstJobReview')
+obs=dict(personId=pid,name='Benjamin Letham',profileUrl=u,checkedAt=D,reviewer='Codex root, individual Chrome read',identityBasis='MIT OR doctorate2015, exact thesis, Cynthia Rudin adviser and Meta career match the existing identity.',experienceAccess='read-all-visible',profileHistoryComplete=True,careerComplete=False,jobs=[],otherEmploymentMentions=[dict(employerAsWritten='Claritev',titleAsWritten='Board service',sourceUrl=u,checkedAt=D,evidenceNote='Profile activity describes joining Claritev board; relative one-month label is not converted into an exact date.')],degreeObservation='MIT PhD Operations Research study range Sep2010–Jun2015; exact thesis and Cynthia Rudin adviser. Range is not formal conferral. About says doctorate finished before Meta research-scientist career.',limitations=['Meta entry combines current Senior Staff title with employer tenure; promotion date unknown.','No complete lifetime-career claim.'])
+for e,t,typ,start,end in [('Meta','Senior Staff Research Scientist','Full-time',date(2015,6),date(words='Present')),('IBM Research','Research Intern','Internship',date(2013,5),date(2013,8)),('Harvard Medical School and Massachusetts General Hospital','Research Assistant','Full-time',date(2009,7),date(2010,7))]:
+ obs['jobs'].append(dict(employerAsWritten=e,titleAsWritten=t,employmentTypeAsWritten=typ,locationAsWritten=None,start=start,end=end,isCurrent=e=='Meta',sourceUrl=u,checkedAt=D,sourceSection='Experience',evidenceNote='Entire accessible Experience entry read; Meta current rank must not be backdated to employer start.'))
+write(O/'letham-linkedin-2026-10-28.json',obs)
+for j in hr['jobs']:
+ old=copy.deepcopy(j);target=next((x for x in obs['jobs'] if x['employerAsWritten']==j['employerAsWritten']),None)
+ if not target:continue
+ j.update(start=target['start'],end=target['end'],isCurrent=target['isCurrent'],employmentTypeAsWritten=target['employmentTypeAsWritten'],additionalSourceUrls=list(dict.fromkeys(j.get('additionalSourceUrls',[])+[u])))
+ j['evidenceNote']='Official biography corroborated by individually read LinkedIn month dates. '+('Employer tenure begins June2015; initial rank unspecified, later Senior Staff rank not backdated.' if j['employerAsWritten']=='Meta' else 'LinkedIn identifies this May–August2013 appointment as a research internship.')
+ if j['employerAsWritten']=='IBM Research':j['titleAsWritten']='Research Intern'
+for j in hr['otherEmploymentMentions']:
+ if j.get('employerAsWritten')=='Harvard Medical School / Massachusetts General Hospital':
+  j.update(start=date(2009,7),end=date(2010,7),employmentTypeAsWritten='Full-time',additionalSourceUrls=[u],evidenceNote='Joint employer wording retained. Individually read LinkedIn supplies July2009–July2010; official biography corroborates years.')
+hr.update(identityBasis=obs['identityBasis'],experienceAccess='read-all-visible',profileHistoryComplete=True,coverageNote='All three accessible LinkedIn Experience entries read individually, supplemented by official biography. Career remains partial; promotion dates unknown.')
+hr['accessLimitations']=['Earlier same-day read exposed header/activity only; subsequent loaded-profile read exposed all three Experience entries. No source-access bypass.']
+v=dict(status='verified',definition='Earliest documented new appointment after doctorate completion',employer='Meta',title='Research Scientist (initial rank unspecified)',start=date(2015,6),sector='industry',appointmentType='industry',checkedAt=D,reason='Individual About statement places completion of MIT doctorate before the Meta research-scientist career; complete accessible Experience dates Meta from June2015, with earlier roles ending2013 and2010. Official biography corroborates2015 Meta entry and doctoral year.',sources=[dict(url=u,checkedAt=D,evidenceNote='About explicitly places completed MIT PhD before Meta; Experience gives June2015 start and earlier IBM/HMS-MGH roles.'),dict(url=c,checkedAt=D,evidenceNote='Official board biography corroborates Meta since2015, prior IBM2013 and HMS/MGH2009–10, and MIT doctorate2015.')],sequenceEvidence=dict(kind='explicit-next-position',sourceUrl=u),degreeBoundary='Self-reported explicit degree-before-Meta sequence resolves ordering; September2010–June2015 education range is a separate observation, not a formal award date.',limitations=['Sequence and month date rely on individually read self-reported LinkedIn evidence corroborated by official year chronology.','Formal conferral day unknown; Senior Staff promotion date unknown.'])
+gr['firstJobReview']=v;hr['firstJobAssessment']=copy.deepcopy(v)
+milestone=dict(kind='reported-completion',displayText='LinkedIn doctorate study interval ends June2015; About places completed PhD before Meta.',sourceUrl=u,checkedAt=D,evidenceNote=obs['degreeObservation'],limitation='Self-reported study endpoint, not formal conferral.',formalAwardDateAssigned=False)
+gr['degreeMilestones'].append(milestone);hr['degreeMilestones'].append(copy.deepcopy(milestone))
+g['metadata']['verifiedGraduateFirstJobs']=sum(bool(x.get('firstJobReview')) and not x.get('facultyId') for x in g['records'])
+write(R/'data/graduate-lists.json',g,1);write(R/'data/employment-histories.json',h)
+print('Letham: three role-date refinements and supported Meta first job; no new person.')

@@ -1,5 +1,7 @@
 # MIT 2015 reviewed evidence — 28 October 2026
 
+Later28 October follow-up: Letham's entire loaded LinkedIn Experience was accessible and read (three entries). New month dates and explicit doctorate-before-Meta sequence resolve his first-job gap; current Senior Staff title is not backdated. See `../letham-linkedin-2026-10-28.json` and `../followup-letham-2026-10-28.py`. The original checkpoint below documents the earlier limited read; remaining MIT2015 first-job cases are now Bisias, Fagnan, Kallus, King, Lin and Wang.
+
 Scope: the 11 names actually read in MIT ORC's 2015 **PhD** thesis accordion. This is not a complete MIT graduating-class census. Root is the sole integrator; contributors supplied primary-source observations only. Publication receipt follows in PUBLISHED.md.
 
 ## Integrated findings
