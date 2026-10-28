@@ -48,6 +48,7 @@ for (const r of roster.records) {
     title: v.titleConfirmed || null,
     facultyStatus: /emerit|retired/i.test(v.titleConfirmed || '') ? 'retired' : 'active',
     phdYear: v.phdYear ?? null,
+    ...(v.degreeFacts?.length ? { degreeFacts: v.degreeFacts } : {}),
     phdInstitution: v.phdInstitution ? (aliases[v.phdInstitution]?.canonical || v.phdInstitution) : null,
     phdInstitutionAsWritten: v.phdInstitution && aliases[v.phdInstitution] ? v.phdInstitution : undefined,
     phdInstitutionSourceUrl: v.phdInstitution ? v.phdSourceUrl || null : null,
