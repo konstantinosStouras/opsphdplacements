@@ -1,3 +1,5 @@
+Stage 2 continuation (28 October 2026): Belloni, Jacquillat, Lavissiere, Pignanelli, Pedraza-Martinez and Roa-Henriquez integrated with nine net roles and six complete accessible LinkedIn captures. Source conflicts and partial-career status retained; no first-job verdict changes. See research-handoff/parallel-stages-2026-10-26/review-stage2-next-six-2026-10-28.
+
 # Operations PhD Placements
 
 MIT 2013 review (28 October 2026): ten ORC thesis entries, six partial career reviews, 29 structured roles and 13 supporting observations added; three existing faculty identities linked. Corrected Yehua Wei thesis authorship while preserving the source error. One new first employer: Monsch at LinkedIn, September 2013, after adviser-reported August graduation; initial title unknown. Formal award dates and named identity gaps remain unresolved. Graduate register: 14,600; combined career reviews: 347. See research-handoff/parallel-stages-2026-10-26/review-mit-2013-2026-10-28/README.md.
