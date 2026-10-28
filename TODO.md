@@ -1,3 +1,5 @@
+Kleinberg correction 167 (28 October 2026): planned leave evidence independently read; publication held for qualifying scope. Actual leave endpoints remain unknown. See review-kleinberg-167-2026-10-28.
+
 Banerjee correction 166 (28 October 2026): Stanford host corroborates September 2013 postdoc start; CV August start remains conflicting. Existing jobs and unresolved first-job assessment unchanged. See review-banerjee-166-2026-10-28.
 
 Fengqi You correction 165 (28 October 2026): root verified passed PhD examination 22 October 2009, but publication remains held for qualifying population scope. Formal conferral and employment ordering remain unresolved. See review-you-165-2026-10-28.
