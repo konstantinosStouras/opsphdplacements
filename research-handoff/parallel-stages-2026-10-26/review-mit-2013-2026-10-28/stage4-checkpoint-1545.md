@@ -1,0 +1,13 @@
+# Current Stage4 continuation —28October2026
+
+Read the shared root README and reviewed handoff directories before choosing a cohort. A stale own-lane frontier caused repeated2020/2019 checks today; those files are explicitly recheck-only and must not be merged. Original reviews through MIT2014 are authoritative. Corrected reconciliation receipt is pushed at61aa554 and independently content-matched.
+
+**MIT2013 is now published.** Fresh independent public reads at15:45:59UTC confirm10graduates,6partialcareer records and1verifiedfirstemployer: MatthieuMonsch→LinkedIn, September2013, after advisor-reported Augustgraduation. Initialtitle unknown. YehuaWei authorcorrection and MatthewFontana identity/history are live. Source38profileExperienceentries plus4CVcorroborations become29structuredroles and13supportingmentions; oneKeller history record has no verifiedprofessionaljobs. No complete lifetime history/census claimed.
+
+Publication releaseff65e42177e021e41a45ad53fa7727d4792784e8, successfulworkflow40718161972. GitHub researchhead70184b1a7127057d96e4f4ade92bf37b26c3a333 is independently confirmed;19frozenpayloadhashes, manifest and2additivefollowups match committed reviewed sources. See own-lane live and GitHub proof files.
+
+The integrator did not accept profile study endpoints as formal award years. Initial proposal counts are historical research observations, not the published degree-status denominator. Formal award months/days remain unassigned. O'Hair, Monsch, Uichanco and Fontana source-reported graduation milestones stay separate. Keller's identity, degree and conflicting adviser statements remain unresolved. Five graduate first-job holds remain: Chiraphadhanakul, Figueroa, Fontana, Keller and Lu. Fourfacultycareerfollowups remain with owners.
+
+**MIT2012 is active in this lane**, claimed after checking no existingcohortreview/claim. Ten source entries read; primarydegreeidentity evidence saved for all10, eight explicit reportedyears and2unstatedyears. Three source-reported completionmonths remain separate; no formal award dates assigned. ExistingJasonAcimovic unknown-year graduateID retained toavoidduplicate. Cong(Alex)Shi andYuanZhong careers belongStage2; ClaudioTelhaCornejo facultycandidate toStage3. ProposedYuan2011/2012degree-sourceconflict requires integratorreview. Career captures are inprogress; no2012publicationclaim.
+
+Currentbrowser: ownChrome researchtab reused; close when finished. No fullPDFs/sourcecaches/contactdetails saved. No publicmerger/data/Gitmutation bythislane. Soleintegrator reviews/preserves/publishes. No automation or outreach.
