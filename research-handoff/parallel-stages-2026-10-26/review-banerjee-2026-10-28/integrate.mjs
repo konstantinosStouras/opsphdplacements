@@ -1,0 +1,11 @@
+import fs from 'node:fs';import assert from 'node:assert/strict';
+const dir='research-handoff/parallel-stages-2026-10-26/review-banerjee-2026-10-28';fs.mkdirSync(dir,{recursive:true});
+const read=p=>JSON.parse(fs.readFileSync(p)),write=(p,v)=>fs.writeFileSync(p,JSON.stringify(v,null,2)+'\n');
+const p=read('research-handoff/parallel-stages-2026-10-26/stage-3/sid-banerjee-kth-bio-followup-2026-10-28.json'),d=read('data/employment-histories.json'),before=structuredClone(d),r=d.records.find(x=>x.id===p.personId);
+assert.equal(r.checkedAt,'2026-10-27');write(dir+'/prior-record.json',r);write(dir+'/input.json',p);
+const reason='The adviser reports graduation in August 2013. Stanford starts in August 2013 in the CV and September in LinkedIn; the source conflict and ordering within August remain unresolved. No exact conferral day is established.';
+r.remainingUnknowns[0]=reason;r.firstJobAssessment.reason=reason;r.checkedAt='2026-10-28';
+r.otherEmploymentMentions.push({sourceUrl:p.sourceUrl,checkedAt:p.checkedAt,evidenceNote:'July 2024 conference biography corroborates Cornell associate rank, UT Austin doctorate, Stanford postdoc and a broad 2014–2018 Lyft consulting summary. This does not establish uninterrupted consulting; retain the two separately dated CV periods.'});
+r.sources.push({url:p.sourceUrl,checkedAt:p.checkedAt,outcome:'individual-biography-read',note:'Printed page 4 biography only; not a full proceedings read.'});
+for(let i=0;i<d.records.length;i++)if(d.records[i].id!==r.id)assert.deepEqual(d.records[i],before.records[i]);
+write('data/employment-histories.json',d);write(dir+'/audit.json',{id:r.id,jobsUnchanged:true,firstJobStatus:'unresolved',unrelatedHistoriesUnchanged:true,correction:'Replace stale unknown-graduation-month wording with existing adviser-reported August 2013; exact ordering remains unresolved.'});

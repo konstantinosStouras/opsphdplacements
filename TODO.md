@@ -1,3 +1,5 @@
+Sid Banerjee follow-up (28 October 2026): KTH 2024 biography corroboration added; stale unknown-month wording corrected to existing adviser-reported August 2013 graduation. Stanford CV/LinkedIn start-month conflict and first-job ordering remain unresolved; no roles added. See review-banerjee-2026-10-28.
+
 Stage 2 continuation (28 October 2026): Belloni, Jacquillat, Lavissiere, Pignanelli, Pedraza-Martinez and Roa-Henriquez integrated with nine net roles and six complete accessible LinkedIn captures. Source conflicts and partial-career status retained; no first-job verdict changes. See research-handoff/parallel-stages-2026-10-26/review-stage2-next-six-2026-10-28.
 
 MIT 2013 (28 October 2026): reviewed ten thesis entries; added six partial career reviews, with Keller identity and degree completion unresolved. Monsch first employer supported at LinkedIn, September 2013; five graduate first jobs and four faculty career follow-ups remain; no formal award dates inferred from study endpoints. Virot credential conflict retained. See review-mit-2013-2026-10-28.

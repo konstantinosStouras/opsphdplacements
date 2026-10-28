@@ -9,3 +9,5 @@ Belloni's Chicago start August 2026 and Amazon start January 2019 are self-repor
 Frozen inputs, prior records and guarded integration recipe accompany the audit. Unrelated histories were deep-compared and preserved. Public files changed: data/employment-histories.json and its record-date ledger. README and TODO record the checkpoint; generated research status refreshed (counts unchanged). Validation and publication receipt follows separately.
 
 Storage interruption: initial snapshot write stopped before public mutation when C: was full. After checking WORKFLOW and the build script, only the generated SQLite snapshot and generated preview output were cleaned; research sources retained. Preview rebuilt.
+
+Ali Aouad's separate 28 October attempt exposed no readable employment evidence. Its limitation receipt is preserved; the newer 27 October public review was not refreshed or replaced.
