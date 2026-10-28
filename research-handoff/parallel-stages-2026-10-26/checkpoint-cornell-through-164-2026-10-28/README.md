@@ -1,0 +1,3 @@
+# Cornell checkpoint through correction 164
+
+Contributor snapshots preserved for continuation, not independent root source reviews or public dataset counts. Root publication receipts remain authoritative. Goldberg 162 was published and verified; Gan 163 has been pushed for deployment. Duchin 164 and Basu 157 remain held for qualifying population scope; no public update from either. Doikov chronology remains unresolved. Unavailable individual sources are recorded for later return, and partial careers remain partial. The four bounded checks and deferred-source register are preserved without claiming root repeated those reads.
