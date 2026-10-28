@@ -1,3 +1,5 @@
+Cornell 153–155 (28 October 2026): El Housni June 2020 PhD resolves first documented post-PhD employer as Cornell University (Cornell Tech), visiting appointment July 2020. Terenin award March 2022 is distinct from November 2021 viva; Shoemaker associate promotion June 1979. No duplicate roles or complete-career claims. See review-cornell-153-155-2026-10-28; unavailable sources remain deferred.
+
 Stage 2 four Ali profiles (28 October 2026): Fattahi, Makhdoumi, Parlakturk and Taghizadegan integrated with 15 net roles, three complete accessible LinkedIn captures and corrected PLMA expansion. Rank/degree conflicts preserved; no new first-job verdicts. See review-stage2-four-ali-2026-10-28. New Cornell 153–154 require independent adjudication; unavailable individual sources remain deferred.
 
 Cornell 151–152 follow-up (28 October 2026): official UCSD academic-year observations for Bradic and Amazon Scholar title evidence for Sabach published without new jobs or changed dates. Exact transitions remain unresolved. See review-cornell-151-152-2026-10-28; unavailable sources are deferred and Doikov remains unresolved.
@@ -535,3 +537,5 @@ Cornell correction 131 (28 October 2026): Yuchen Wu's Stanford RegLab summer 202
 28 October2026: Wissel136 missing doctorate fields restored from individually read adviser PhD list: ETH Zurich2007. Dissertation publication2008 remains distinct; career and first-job records unchanged.
 28 October2026: Dietrich145 doctorate institution Cornell added from individually read event biography; conflicting1986/1984year evidence held, public year remains unknown.
 28October2026: Kallus146 Yale visit range resolved as7–9October2024 from official visible time elements and their explicit datetime values, root independently inspected. Existing job only; original shorthand retained, MIT/USC first-job tie unchanged.
+
+Cornell 156 (28 October 2026): Nuti UCL honorary affiliation corroborated; appointment dates, pay and doctoral award boundary remain unresolved. Saved in the 153–155 review folder.

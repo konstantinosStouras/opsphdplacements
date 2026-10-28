@@ -8,8 +8,8 @@ Generated from committed-format public datasets by `node scripts/update-research
 | of which OM List profiles | 2149 |
 | of which operations faculty found on the linked faculty pages | 1066 |
 | Individually reviewed profiles | 3215 |
-| Verified first jobs | 2100 |
-| Researched but unresolved | 1111 |
+| Verified first jobs | 2101 |
+| Researched but unresolved | 1110 |
 | Degree completion unconfirmed | 4 |
 | Pending individual review | 0 |
 | Named-scope doctoral register records, including historical and unresolved routes | 419 |
