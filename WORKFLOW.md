@@ -386,3 +386,5 @@ MIT 2022–2023 release: normalize supporting-mention employer/title/evidence fi
 
 
 MIT2016 identity reconciliation: preserve Rong Yuan's existing stable unknown-year graduate ID while updating sourced listedYear/field and adding exact dissertation identity evidence. Retain old affiliation sightings and refresh affected coverage metadata, including the undated bucket. Do not create a second dated ID. Root recipe and audit are in the MIT2016 handoff; never replay an applied integration. Disconnected Chrome limits LinkedIn checks, not independently opened primary evidence.
+
+MIT2015 additive reconciliation: retain existing Calmon graduate ID when supplying a year; preserve every older Calmon/Kallus role and original check date while adding source observations and graduate links. Do not convert a corporate biography's employer-tenure start into the start of its current senior rank. A LinkedIn header-only read is not an Experience capture. The guarded recipe and audit are in the MIT2015 handoff; do not replay after application.

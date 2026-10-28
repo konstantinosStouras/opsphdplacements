@@ -1,5 +1,9 @@
 # Remaining work and handoff priorities
 
+## MIT2015 review — 28 October 2026
+
+All 11 ORC thesis-list identities reviewed: ten added, Calmon existing ID corrected; nine new partial histories, two existing histories enriched. First-job gaps: Bisias, Fagnan, Kallus, King, Letham, Lin and Wang. Lin degree-year conflict remains; all formal award months/days unverified. Four individually opened LinkedIn profiles exposed header/activity only, so no complete Experience capture is claimed. Current full HBS CV returned 404; prior sourced placement retained. See the dated MIT2015 handoff for per-person limitations. This is a source-bounded batch, not stage completion.
+
 ## MIT2016 review — 27 October2026
 
 Integrated all nine source-listed identities (eight new, Rong corrected), nine partial careers and Remorov first job. First-job gaps remain for Dunning, Grigas, Youssef and Yuan; four existing faculty assessments retained. Chrome reconnected: complete accessible Youssef/Yuan Experience captured; Dunning prospective testimonial read. Final32 roles/33 supporting observations retain explicit chronology limits. Detailed remaining chronology/degree gaps in the MIT2016 handoff.

@@ -1,5 +1,7 @@
 # Operations PhD Placements
 
+MIT2015 review (28 October 2026): 10 new graduate records, the existing Calmon record reconciled to 2015, nine new partial career histories and additive Calmon/Kallus observations. Five existing faculty identities linked. Four prior first-job assessments retained; seven remain unresolved. Graduate register: 14,585 records; combined career reviews: 336. See [evidence and remaining gaps](research-handoff/parallel-stages-2026-10-26/review-mit-2015-2026-10-28/README.md).
+
 MIT2016 review (27 October2026): eight new graduate records, Rong Yuan identity/year correction, nine primary-source career histories and one new supported first job (Remorov—BlackRock). Four existing faculty links preserved. Evidence and remaining gaps: `research-handoff/parallel-stages-2026-10-26/review-mit-2016-2026-10-27/`.
 
 MIT2017 review (27 October2026): added12 source-bounded ORC graduate entries,11 career histories and two additions to Ali Aouad's existing history. Published chronology includes50 roles and46 supporting mentions; Weinstein's Zillow first job is supported. Two existing faculty identities are linked, not duplicated. See `research-handoff/parallel-stages-2026-10-26/review-mit-2017-2026-10-27/` for evidence, limitations and publication receipt.
