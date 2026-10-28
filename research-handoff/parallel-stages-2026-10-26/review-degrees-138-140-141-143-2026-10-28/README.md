@@ -1,0 +1,3 @@
+# Four Cornell degree corrections — 28 October 2026
+
+Independently opened evidence supports Eisner: Cornell 1970; Garg: Stanford PhD 2020; Roundy: Stanford 1984; Terenin: Imperial College London 2022. Source roster and derived people updated narrowly. Proposal hashes checked. Existing careers, first-job assessments, conflicts, departure observations and original appointment check dates preserved. Exact conferral dates remain unknown; these corrections do not complete career histories. Garg CV review covered page 1 Education and Academic Employment, not the entire CV. Publication receipt follows deployment.

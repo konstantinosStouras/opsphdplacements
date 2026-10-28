@@ -1,3 +1,5 @@
+Cornell degree follow-up (28 October 2026): corrections 138, 140, 141 and 143 integrated after independent source reading: Eisner Cornell 1970, Garg Stanford 2020, Roundy Stanford 1984, Terenin Imperial 2022. Employment and first-job gaps retained. Remaining frozen corrections: 132, 133, 137, 139, 142, 149, 150. See review-degrees-138-140-141-143-2026-10-28; publication receipt records deployment.
+
 Aouad follow-up (28 October 2026): accessible ten-entry LinkedIn capture integrated; Stanford visit and Nomura role added, MIT promotion dated as self-reported, one internal appointment consolidated. CV conflicts and first-job uncertainty retained. See review-aouad-2026-10-28.
 
 Sid Banerjee follow-up (28 October 2026): KTH 2024 biography corroboration added; stale unknown-month wording corrected to existing adviser-reported August 2013 graduation. Stanford CV/LinkedIn start-month conflict and first-job ordering remain unresolved; no roles added. See review-banerjee-2026-10-28.
