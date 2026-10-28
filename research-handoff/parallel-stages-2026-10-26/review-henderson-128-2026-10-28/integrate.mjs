@@ -1,0 +1,35 @@
+import fs from 'node:fs';
+import assert from 'node:assert/strict';
+const dir=new URL('.',import.meta.url);
+const p=JSON.parse(fs.readFileSync('research-handoff/parallel-stages-2026-10-26/stage-3/corrections/shane-g-henderson-michigan-followup-2026-10-28.json'));
+fs.writeFileSync(new URL('reviewed-proposal.json',dir),JSON.stringify(p,null,2)+'\n');
+const file='data/employment-histories.json',d=JSON.parse(fs.readFileSync(file));
+const r=d.records.find(x=>x.id===p.id);
+assert.equal(r.checkedAt,'2026-10-27');
+assert.equal(r.jobs.length,4);
+const prior=structuredClone(r);
+fs.writeFileSync(new URL('prior-record.json',dir),JSON.stringify(prior,null,2)+'\n');
+for(const employer of ['University of Michigan, Industrial and Operations Engineering','University of Auckland, Engineering Science']){
+ const i=r.jobs.findIndex(j=>j.employerAsWritten===employer);
+ const j=structuredClone(p.jobs.find(j=>j.employerAsWritten===employer));
+ j.sourceType='primary-conference-author-biography';
+ j.priorObservations=[structuredClone(r.jobs[i])];
+ if(employer.startsWith('University of Michigan'))j.evidenceNote='The 1998 author biography dates joining Michigan to 1997 after the Stanford doctorate and describes Auckland as leave from Michigan. The 2000 biography identifies Assistant Professor; initial rank and Michigan endpoint remain unknown. The 1997 biography instead dates Stanford graduation to 1996; that conflict is retained.';
+ else j.evidenceNote='The 2000 author biography explicitly dates the Auckland lectureship to 1997–1999. The 1998 biography says this was while on leave from Michigan. Exact months remain unknown; these are overlapping affiliations rather than successive mutually exclusive jobs.';
+ r.jobs[i]=j;
+}
+r.sources.push(...p.sources.filter(s=>s.checkedAt==='2026-10-28'));
+r.previousCoverageNotes.push({checkedAt:prior.checkedAt,coverageNote:prior.coverageNote,remainingUnknowns:prior.remainingUnknowns});
+r.previousFirstJobAssessments.push({checkedAt:prior.checkedAt,assessment:prior.firstJobAssessment});
+r.coverageNote='Four employment entries retained. Contemporaneous author biographies resolve Michigan-before-Auckland leave and Auckland lecturer dates, 1997–1999. Michigan is the earliest documented postdegree academic appointment; conflicting doctorate-year wording and incomplete all-sector chronology remain explicit.';
+r.remainingUnknowns=[...p.remainingUnknowns,'The minimal LinkedIn profile omits earlier positions; its undetailed Cornell education entry is not accepted as doctorate evidence.'];
+r.firstJobAssessment=structuredClone(p.firstJobAssessment);
+r.checkedAt='2026-10-28';
+r.reviewer='Codex root integration of correction 128; three contemporaneous author biographies independently opened and read';
+r.integrationReview={checkedAt:'2026-10-28',basis:'Read 1998 page 652, 2000 page 536 and 1997 page 215 author biographies through primary hosted PDFs. Additive refinement of two existing jobs; prior Cornell/service and degree observations preserved. No all-sector first-job verdict or degree-year overwrite.'};
+r.workflowReview.completed=false;
+r.workflowReview.completedMeaning='Career chronology remains partial despite the successful early-appointment follow-up.';
+assert.equal(r.jobs.length,prior.jobs.length);
+assert.deepEqual(r.degreeFacts,prior.degreeFacts);
+assert.deepEqual(r.otherEmploymentMentions,prior.otherEmploymentMentions);
+fs.writeFileSync(file,JSON.stringify(d,null,2)+'\n');

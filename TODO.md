@@ -1,3 +1,5 @@
+Cornell correction 128 (28 October 2026): Henderson Michigan-before-Auckland leave and Auckland lecturer 1997–1999 independently confirmed in primary conference biographies. Two existing jobs refined; conflicting 1996/1997 doctorate wording, exact appointment boundaries and full first-job census remain unresolved. See review-henderson-128-2026-10-28.
+
 Manchester follow-up (28 October 2026): seven mathematics themes and 23 expertise areas read in Chrome, resolving the earlier access gap without adding a qualifying programme. Broader technical doctoral fields still require review; coverage remains partial. See research-handoff/universities/review-manchester-2026-10-28.
 
 Stage 2 seven-person continuation (28 October 2026): Pekeč, Otto, Arlotto, Mills, Scott, Estes and Hübner adjudicated; nine net role entries, dated promotions/visits, explicit source conflicts retained. No new first-job verdicts. See review-stage2-seven-2026-10-28. Further lane proposals must be reviewed against these newer histories.
