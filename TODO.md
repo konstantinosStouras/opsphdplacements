@@ -1,3 +1,5 @@
+Omar Skali Lami follow-up (28 October 2026): MIT ORC immediate post-degree testimonial supports QuantumBlack Senior Data Scientist as first documented appointment, exact start unknown. Published graduate first-job reviews now 38; seven 2022/2023 first-job holds remain. Preserve aggregate earlier consulting roles and initial-title distinction; see dated omar-followup handoff.
+
 Cohen/Papalexopoulos follow-up (28 October 2026): added sourced undergraduate research and published doctorate/affiliation observations; corrected unsupported postdoctoral-interval wording. Both first jobs unresolved. See research-handoff/parallel-stages-2026-10-26/cohen-papalexopoulos-followup-2026-10-28.md.
 
 MIT2015 follow-up (28 October 2026, 03:39 UTC): King historical E2E/Accenture appointment corroborated with two opened sources; no new job or first-job conclusion inferred. See research-handoff/parallel-stages-2026-10-26/followup-2026-10-28-0339.md.
