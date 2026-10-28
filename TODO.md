@@ -1,3 +1,5 @@
+Schalekamp follow-up (28 October 2026): correction106 adjudicated additively from dated2026CV; Teaching Professor begins July2025 and Senior Lecturer ends June2025. Other career/first-job facts retained. Remaining Cornell corrections95–127 still require itemized review; do not replace newer histories with stale proposals.
+
 Omar Skali Lami follow-up (28 October 2026): MIT ORC immediate post-degree testimonial supports QuantumBlack Senior Data Scientist as first documented appointment, exact start unknown. Published graduate first-job reviews now 38; seven 2022/2023 first-job holds remain. Preserve aggregate earlier consulting roles and initial-title distinction; see dated omar-followup handoff.
 
 Cohen/Papalexopoulos follow-up (28 October 2026): added sourced undergraduate research and published doctorate/affiliation observations; corrected unsupported postdoctoral-interval wording. Both first jobs unresolved. See research-handoff/parallel-stages-2026-10-26/cohen-papalexopoulos-followup-2026-10-28.md.
