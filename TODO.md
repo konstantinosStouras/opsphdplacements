@@ -1,3 +1,5 @@
+Banerjee correction 166 (28 October 2026): Stanford host corroborates September 2013 postdoc start; CV August start remains conflicting. Existing jobs and unresolved first-job assessment unchanged. See review-banerjee-166-2026-10-28.
+
 Fengqi You correction 165 (28 October 2026): root verified passed PhD examination 22 October 2009, but publication remains held for qualifying population scope. Formal conferral and employment ordering remain unresolved. See review-you-165-2026-10-28.
 
 Gan correction 163 (28 October 2026): April 2022 defense and Harvard summer/fall 2022 cohort evidence added; exact postdoc start and degree boundary remain unresolved. See review-gan-163-2026-10-28.
