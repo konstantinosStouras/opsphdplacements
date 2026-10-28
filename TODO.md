@@ -1,4 +1,6 @@
-Cornell degree follow-up (28 October 2026): corrections 138, 140, 141 and 143 integrated after independent source reading: Eisner Cornell 1970, Garg Stanford 2020, Roundy Stanford 1984, Terenin Imperial 2022. Employment and first-job gaps retained. Remaining frozen corrections: 132, 133, 137, 139, 142, 149, 150. See review-degrees-138-140-141-143-2026-10-28; publication receipt records deployment.
+Cornell magazine follow-up (28 October 2026): corrections 132, 133, 142 and 150 integrated narrowly: Averbukh doctorate 1997, Averbukh/Stoikov ranks observed by 2020, Bland retirement observed by 2020. Exact appointment/retirement dates remain unknown; jobs and first-job conclusions unchanged. Remaining frozen corrections: 137, 139, 149. See review-magazine-132-133-142-150-2026-10-28.
+
+Cornell degree follow-up (28 October 2026): corrections 138, 140, 141 and 143 published in d8de47a after independent source reading: Eisner Cornell 1970, Garg Stanford 2020, Roundy Stanford 1984, Terenin Imperial 2022. Employment and first-job gaps retained. See review-degrees-138-140-141-143-2026-10-28; publication receipt records deployment.
 
 Aouad follow-up (28 October 2026): accessible ten-entry LinkedIn capture integrated; Stanford visit and Nomura role added, MIT promotion dated as self-reported, one internal appointment consolidated. CV conflicts and first-job uncertainty retained. See review-aouad-2026-10-28.
 
