@@ -1,5 +1,7 @@
 # Operations PhD Placements
 
+MIT2014 review (28 October 2026): five source-listed graduates and five partial career histories added, including the existing Gupta faculty identity. Two new supported first jobs: Elmachtoub at IBM and Leung at CMU Tepper, both postdocs. Gupta's existing USC assessment is preserved. Graduate register: 14,590; combined career reviews: 341. [Evidence and remaining gaps](research-handoff/parallel-stages-2026-10-26/review-mit-2014-2026-10-28/README.md).
+
 MIT2015 review (28 October 2026): 10 new graduate records, the existing Calmon record reconciled to 2015, nine new partial career histories and additive Calmon/Kallus observations. Five existing faculty identities linked. Four prior first-job assessments retained; seven remain unresolved. Graduate register: 14,585 records; combined career reviews: 336. See [evidence and remaining gaps](research-handoff/parallel-stages-2026-10-26/review-mit-2015-2026-10-28/README.md).
 
 MIT2016 review (27 October2026): eight new graduate records, Rong Yuan identity/year correction, nine primary-source career histories and one new supported first job (Remorov—BlackRock). Four existing faculty links preserved. Evidence and remaining gaps: `research-handoff/parallel-stages-2026-10-26/review-mit-2016-2026-10-27/`.

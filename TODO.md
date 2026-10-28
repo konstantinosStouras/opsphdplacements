@@ -1,5 +1,9 @@
 # Remaining work and handoff priorities
 
+## MIT2014 review — 28 October 2026
+
+Five source-listed identities integrated with five partial histories, 22 structured roles and 15 supporting mentions. Elmachtoub IBM and Leung CMU postdocs supported as first jobs; Gupta's prior USC assessment preserved. Anderson's Google start/first-job sequence and Zhu's Munich Re title/dates/first-job sequence remain unknown. Leung's entire accessible LinkedIn Experience read (three entries); CityU assistant appointment ends August2022, adjunct start remains unknown. Formal award dates remain distinct from thesis/study milestones. No global stage completion claimed. See dated handoff for evidence and publication verification.
+
 ## MIT2015 review — 28 October 2026
 
 All 11 ORC thesis-list identities reviewed: ten added, Calmon existing ID corrected; nine new partial histories, two existing histories enriched. First-job gaps: Bisias, Fagnan, Kallus, King, Letham, Lin and Wang. Lin degree-year conflict remains; all formal award months/days unverified. Four individually opened LinkedIn profiles exposed header/activity only, so no complete Experience capture is claimed. Current full HBS CV returned 404; prior sourced placement retained. See the dated MIT2015 handoff for per-person limitations. This is a source-bounded batch, not stage completion.
