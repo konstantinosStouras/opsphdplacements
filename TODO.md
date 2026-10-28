@@ -1,3 +1,5 @@
+Tardos 158 (28 October 2026): Berkeley 1999–2000 sabbatical retrospectively confirmed; 1996 associate and 2004 full-professor snapshots corroborated without promotion dates. First-job and other chronology gaps remain. See review-tardos-158-2026-10-28.
+
 Paul Grigas follow-up (28 October 2026): full accessible six-entry LinkedIn Experience integrated, four net roles and Berkeley rank months. Formal doctorate boundary and July/fall 2016 start discrepancy unresolved. Unavailable adviser CV deferred; see review-grigas-2026-10-28.
 
 Cornell 153–155 (28 October 2026): El Housni June 2020 PhD resolves first documented post-PhD employer as Cornell University (Cornell Tech), visiting appointment July 2020. Terenin award March 2022 is distinct from November 2021 viva; Shoemaker associate promotion June 1979. No duplicate roles or complete-career claims. See review-cornell-153-155-2026-10-28; unavailable sources remain deferred.
@@ -543,3 +545,5 @@ Cornell correction 131 (28 October 2026): Yuchen Wu's Stanford RegLab summer 202
 Cornell 156 (28 October 2026): Nuti UCL honorary affiliation corroborated; appointment dates, pay and doctoral award boundary remain unresolved. Saved in the 153–155 review folder.
 
 Cornell 157 remains held for population scope: Statistics appointment/PhD and ORIE graduate-field affiliation alone do not establish qualifying faculty inclusion. Dated rank evidence saved separately; see review-basu-157-2026-10-28.
+
+Tardos 159: named Schurman chair documented by 20 July 2007; exact effective date unknown. Integrated with correction 158.
