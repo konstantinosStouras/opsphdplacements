@@ -1,4 +1,6 @@
-Cornell 151–152 follow-up (28 October 2026): official UCSD academic-year observations for Bradic and Amazon Scholar title evidence for Sabach integrated without new jobs or changed dates. Exact transitions remain unresolved. See review-cornell-151-152-2026-10-28. New Stage 2 four-person continuation remains to adjudicate; unavailable sources are deferred and Doikov remains unresolved.
+Stage 2 four Ali profiles (28 October 2026): Fattahi, Makhdoumi, Parlakturk and Taghizadegan integrated with 15 net roles, three complete accessible LinkedIn captures and corrected PLMA expansion. Rank/degree conflicts preserved; no new first-job verdicts. See review-stage2-four-ali-2026-10-28. New Cornell 153–154 require independent adjudication; unavailable individual sources remain deferred.
+
+Cornell 151–152 follow-up (28 October 2026): official UCSD academic-year observations for Bradic and Amazon Scholar title evidence for Sabach published without new jobs or changed dates. Exact transitions remain unresolved. See review-cornell-151-152-2026-10-28; unavailable sources are deferred and Doikov remains unresolved.
 
 Cornell remaining frozen corrections (28 October 2026): 137, 139, 149 integrated after root source review: López de Prado UNED 2003 and separate Complutense 2011 doctorate; Wells UC Santa Barbara 1987; Dai two complete accessible LinkedIn captures preserving stronger CV dates without duplicate jobs. All saved corrections through 150 now adjudicated; partial careers and residual evidence gaps remain. See review-final-cornell-137-139-149-2026-10-28.
 

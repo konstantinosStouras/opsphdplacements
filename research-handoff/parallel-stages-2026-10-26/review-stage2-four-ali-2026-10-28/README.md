@@ -1,0 +1,3 @@
+# Four OM List faculty follow-ups — 28 October 2026
+
+Root independently reviewed three complete accessible LinkedIn Experience sections (3, 3 and 13 entries), Fattahi nine-page CV, and official profiles. Added 15 net employment observations: Makhdoumi internship, two earlier Parlakturk ranks, twelve Taghizadegan roles. Preserved prior roles, rank conflicts and first-job conclusions. Fattahi PLMA expansion corrected; service and affiliations remain supporting observations. Makhdoumi personal site unavailable to root reader and deferred. No new degree-conferral dates inferred. Public history count unchanged.
