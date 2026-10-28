@@ -2,7 +2,7 @@
 import json,pathlib,copy
 R=pathlib.Path(__file__).resolve().parents[2]; O=pathlib.Path(__file__).parent
 def read(n):return json.loads((R/'data'/f'{n}.json').read_text(encoding='utf8'))
-def save(p,x):p.write_text(json.dumps(x,ensure_ascii=False,indent=2)+'\n',encoding='utf8')
+def save(p,x):p.write_text(json.dumps(x,ensure_ascii=False,indent=1 if p.name=='graduate-lists.json' else 2)+'\n',encoding='utf8')
 g=read('graduate-lists');h=read('employment-histories');ident='grad:massachusetts-institute-of-technology:omar-skali-lami:2022'
 gr=next(r for r in g['records'] if r['id']==ident);hr=next(r for r in h['records'] if r['id']==ident)
 assert not gr.get('firstJobReview') and not hr.get('firstJobAssessment')
