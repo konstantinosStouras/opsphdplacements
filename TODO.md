@@ -1,4 +1,6 @@
-Stage 2 four-person continuation (28 October 2026): Franco, Grando, Roth and Lago adjudicated additively; 20 net role entries, three full accessible LinkedIn captures, no first-placement changes. Retain Lago current-status conflict, Grando unknown doctorate and historical Roth chronology. Frozen inputs and audit: review-stage2-four-2026-10-28. Other contributor proposals remain separate and require review.
+Stage 2 six-person continuation (28 October 2026): Bensoussan, McKinnon, Mackelprang, Scheller-Wolf, Ha and Veenstra adjudicated; three net role entries and bounded corroborating observations. Overlapping Veenstra titles consolidated; earlier detailed McKinnon chronology retained. Sources blocked individually remain limitations. See review-stage2-six-2026-10-28; no new first jobs or complete careers.
+
+Stage 2 four-person continuation (28 October 2026): Franco, Grando, Roth and Lago adjudicated additively; 20 net role entries, three full accessible LinkedIn captures, no first-placement changes. Retain Lago current-status conflict, Grando unknown doctorate and historical Roth chronology. Published 4e976f4. Frozen inputs and audit: review-stage2-four-2026-10-28. Other contributor proposals remain separate and require review.
 
 Hai Wang follow-up (28 October 2026): official CMU announcement supports a visiting assistant professorship observed 22 April 2020. Added one role with unknown appointment boundaries; first-job sequence remains unresolved. Published in 47af603; see review-wang-cmu-2026-10-28.
 
