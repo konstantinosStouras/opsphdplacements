@@ -1,3 +1,5 @@
+MIT2015 follow-up (28 October 2026, 03:39 UTC): King historical E2E/Accenture appointment corroborated with two opened sources; no new job or first-job conclusion inferred. See research-handoff/parallel-stages-2026-10-26/followup-2026-10-28-0339.md.
+
 MIT2015 follow-up (28 October 2026, 03:09 UTC): Maokai Lin full accessible LinkedIn history integrated: three dated roles (net two added). Doctoral-year conflict and first-job sequence remain unresolved. See research-handoff/parallel-stages-2026-10-26/followup-2026-10-28-0309.md.
 
 # Remaining work and handoff priorities
