@@ -519,3 +519,4 @@ Reviewed all 33 remaining saved corrections (95–127), preserving supersession 
 Cornell correction 131 (28 October 2026): Yuchen Wu's Stanford RegLab summer 2021 student fellowship added as an affiliation only; 16 reviewed jobs unchanged. First-job ordering remains unresolved. See review-wu-131-2026-10-28.
 
 28 October 2026: reviewed Cornell corrections 134–135 restore missing public doctorate years for Nathan Kallus (MIT 2015) and Jacob Mays (Northwestern 2019) from individually opened official entries. Degree evidence retained on source roster and derived person; employment/first-job assessments unchanged. Corrections 132–133 and 136 onward remain separately pending.
+28 October 2026: Ira Globus-Harris doctorate institution restored to University of Pennsylvania from individually opened author biography; year remains unknown. Correction144 does not change first-job ordering or population eligibility.
