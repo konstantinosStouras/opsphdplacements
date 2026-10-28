@@ -1,5 +1,7 @@
 # Remaining work and handoff priorities
 
+Owner authorized a bounded six-hour continuation on28 October2026 through07:38 UTC. App heartbeat is configured in the sole-integrator chat; older daily automation remains paused. See `research-handoff/parallel-stages-2026-10-26/six-hour-continuation-2026-10-28.md` for scope, deadline and current checkpoint.
+
 ## MIT2014 review — 28 October 2026
 
 Five source-listed identities integrated with five partial histories, 22 structured roles and 15 supporting mentions. Elmachtoub IBM and Leung CMU postdocs supported as first jobs; Gupta's prior USC assessment preserved. Anderson's Google start/first-job sequence and Zhu's Munich Re title/dates/first-job sequence remain unknown. Leung's entire accessible LinkedIn Experience read (three entries); CityU assistant appointment ends August2022, adjunct start remains unknown. Formal award dates remain distinct from thesis/study milestones. No global stage completion claimed. See dated handoff for evidence and publication verification.
