@@ -14,7 +14,7 @@ export const jobText = j => `${j.observedPeriod?.asWritten ? 'Observed '+j.obser
 // A reviewed departure corrects the display without rewriting the source roster.
 export function affiliationCorrection(history) {
   const a=history?.reviewedAffiliation;
-  return a?.directoryStatus==='former' && a.label && isSourceUrl(a.sourceUrl) && /^\d{4}-\d{2}-\d{2}$/.test(a.checkedAt||'') ? a : null;
+  return a?.directoryStatus==='former' && a.label && (isSourceUrl(a.sourceUrl)||a.publicAffiliationReviewed===true) && /^\d{4}-\d{2}-\d{2}$/.test(a.checkedAt||'') ? a : null;
 }
 
 // Only reviewed primary-career intervals qualify. Never derive continuity from first/current jobs.

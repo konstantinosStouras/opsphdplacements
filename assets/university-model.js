@@ -43,6 +43,7 @@ export function universityRows(imported, observations = []) {
       ...base, name: review?.canonicalName || base.name,
       originals, reviews: checked, units, reviewStatus,
       universitySourceUrl: review?.universitySourceUrl || null,
+      officialIdentityReviewed: !!(review?.universitySourceUrl || review?.officialIdentityReviewed),
       nameCheckedAt: review?.canonicalName ? review.checkedAt : null,
       reviewUpdatedAt: checked.map(r => r.updatedAt).filter(Boolean).sort().at(-1) || null,
       limitations: [...new Set(checked.flatMap(r => r.limitations))],

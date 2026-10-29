@@ -70,3 +70,8 @@ The owner now explicitly starts Stages 2–4 in three separate project chats whi
 
 ## Unavailable sources — owner instruction, 28 October 2026
 Record unavailable individual sources and unresolved evidence in a dated revisit note, then continue accessible cases. Return to the deferred list after completing the available work. This does not authorize bypassing access controls; preserve existing verified facts and original check dates.
+
+
+## Private verification administration — 29 October 2026
+
+People navigation uses `#people`, with older anchors preserved. Individual source links belong only in the authenticated admin Verification column, across People, Organisations and Graduates. Brief Operations Academia and OM List attribution remains public. The public build emits source-free projections without modifying authoritative research inputs or check dates. This supersedes older public source-link display instructions. Firebase Spark project `operations-phd-placements` uses verified owner-only Google access. See [admin/README.md](admin/README.md) for deployment, validation and source handling. Existing public Git history and repository copies are not made private by this change; future private exports must stay out of public Git.
