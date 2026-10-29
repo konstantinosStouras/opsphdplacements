@@ -21,7 +21,7 @@ export function renderCohortStory(host,idx){
  const totals=el('p');totals.className='cohort-totals';
  const note=el('p','Each frame shows one PhD cohort, not cumulative jobs. Bar lengths use a fixed 0–100% scale. Shares use verified first jobs only; unresolved outcomes are excluded. Only years represented in the sample are shown. Small early cohorts can change sharply. This faculty-based sample is not a graduate census.');note.className='map-note';
  const unknown=idx.people.filter(p=>p.placement&&!p.phdYear).length;if(unknown)note.append(` ${unknown} verified first jobs without a known PhD year are outside the animation.`);
- const links=el('a','Inspect verified first jobs in this cohort →');links.href='#explorer';links.className='text-button';
+ const links=el('a','Inspect verified first jobs in this cohort →');links.href='#people';links.className='text-button';
  let pos=0,timer=null,visible=true;
  const reduced=matchMedia('(prefers-reduced-motion: reduce)');let mode=reduced.matches?'paused':'auto';
  const stopTimer=()=>{if(timer!==null){clearInterval(timer);timer=null;}};
@@ -32,7 +32,7 @@ export function renderCohortStory(host,idx){
   stats.categories.forEach((c,i)=>{cells[i].bar.style.transform=`scaleX(${c.share||0})`;cells[i].count.textContent=String(c.count);cells[i].share.textContent=c.share==null?'—':(100*c.share).toFixed(1)+'%';});
   totals.textContent=`${stats.verified} verified first jobs among ${stats.people} people in this cohort · ${stats.unresolved} unresolved · ${stats.other} pending or doctorate unconfirmed.`;
   if(!stats.verified)totals.append(' No verified outcomes: shares are unavailable.');
-  prev.disabled=pos===0;next.disabled=pos===years.length-1;links.href=`?mode=placements&cohort=${stats.year}#explorer`;
+  prev.disabled=pos===0;next.disabled=pos===years.length-1;links.href=`?mode=placements&cohort=${stats.year}#people`;
  };
  const manual=to=>{mode='paused';pos=Math.max(0,Math.min(years.length-1,to));draw();schedule();};
  prev.addEventListener('click',()=>manual(pos-1));next.addEventListener('click',()=>manual(pos+1));year.addEventListener('change',()=>manual(years.indexOf(Number(year.value))));slider.addEventListener('input',()=>manual(Number(slider.value)));

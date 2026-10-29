@@ -84,3 +84,8 @@ Member-unit ownership corrections (25 October 2026): preserve `unitOwnershipCorr
 ## Parallel stages authorized — 26 October 2026
 
 The owner now explicitly starts Stages 2–4 in three separate project chats while Stage 1 continues. This supersedes earlier sequential holds; it does not mark any stage complete or resume automation. Read [parallel-stage ownership and reporting](research-handoff/parallel-stages-2026-10-26/README.md). Each research chat writes only its assigned proposal lane; the originating chat alone integrates public data and commits/publishes. Every chat states its scope, completed work, remaining tasks, blockers and next action at each checkpoint. Evidence and named-title rules remain unchanged.
+
+
+## Private verification administration — 29 October 2026
+
+People navigation uses `#people`, with older anchors preserved. Individual source links belong only in the authenticated admin Verification column, across People, Organisations and Graduates. Brief Operations Academia and OM List attribution remains public. The public build emits source-free projections without modifying authoritative research inputs or check dates. This supersedes older public source-link display instructions. Firebase Spark project `operations-phd-placements` uses verified owner-only Google access. See [admin/README.md](admin/README.md) for deployment, validation and source handling. Existing public Git history and repository copies are not made private by this change; future private exports must stay out of public Git.

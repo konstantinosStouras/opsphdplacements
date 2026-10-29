@@ -1,0 +1,10 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow"><title>Research administration</title><link rel="stylesheet" href="./style.css"><script type="module" src="./app.js"></script></head>
+<body><header><h1>Research administration</h1><p id="identity">Checking access…</p></header><main>
+<p id="status" role="status">Sign-in is required to load research records.</p>
+<button id="login" type="button">Sign in with Google</button><button id="logout" type="button" hidden>Sign out</button>
+<label id="import-control" hidden>Import reviewed private catalog<input id="import" type="file" accept="application/json,.json"></label>
+<section id="workspace" hidden><p>Verification links refer to recorded evidence. They do not verify every fact in a row. Missing profile links have not been guessed.</p>
+<div class="controls"><label>Table<select id="table"><option value="people">People</option><option value="organisations">Organisations</option><option value="graduates">Graduates</option></select></label><label>Search<input type="search" id="search" placeholder="Name or institution"></label><label>Source<select id="source"><option value="">All records</option><option>LinkedIn</option><option>Google Scholar</option><option>ORCID</option><option value="missing">No recorded links</option></select></label></div>
+<p id="count" aria-live="polite"></p><div class="table-wrap" tabindex="0" role="region" aria-label="Research records; scroll horizontally for all columns"><table><thead><tr><th>Name</th><th>Institution</th><th>Year</th><th>Review status</th><th>Verification</th></tr></thead><tbody id="rows"></tbody></table></div>
+<div class="pagination"><button id="previous">Previous</button><span id="page"></span><button id="next">Next</button></div></section></main></body></html>

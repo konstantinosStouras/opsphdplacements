@@ -7,7 +7,7 @@ import { tiles, fmt, html } from './charts.js';
 import { loadJson } from './analytics.js';
 import {historyIndex, jobText} from './career-history.js';
 
-const link = (text, href) => { const a = html('a', undefined, text); a.href = href; a.target = '_blank'; a.rel = 'noopener noreferrer'; return a; };
+const link = (text, href) => html('span', undefined, text);
 const FIELD = { operations: 'Operations', 'other-field': 'Another field', unstated: 'Area not stated' };
 const MEANING = { thesis: 'thesis year', graduation: 'graduation year', placement: 'placement year', 'job-market': 'job-market year', 'class-of': 'class year', unstated: 'year as listed, meaning not stated' };
 
@@ -24,7 +24,7 @@ export async function renderGraduates(section) {
   const pages = new Set(records.flatMap(r => r.sightings.map(s => s.pageUrl)));
   const yearsSeen = records.filter(r => r.listedYear).map(r => r.listedYear);
   tiles(summary, [
-    { value: fmt(m.records), label: 'Names listed, by institution and year', note: `${fmt(m.sightings)} listings across ${fmt(pages.size)} pages` },
+    { value: fmt(m.records), label: 'Names listed, by institution and year', note: `${fmt(m.sightings)} listings across ${fmt(m.sourcePageCount ?? pages.size)} pages` },
     { value: fmt(m.byField.operations), label: 'Listed under an operations area', note: `${fmt(m.byField.unstated)} with no area stated, ${fmt(m.byField['other-field'])} in other areas of the same schools` },
     { value: fmt(m.institutions), label: 'Institutions with a list' },
     { value: fmt(m.linkedToPeople), label: 'Already in the people database', note: 'name and PhD institution both match' },
@@ -51,7 +51,7 @@ export async function renderGraduates(section) {
     table.replaceChildren();
     const status = html('p', 'map-note', `${fmt(rows.length)} names${instSelect.value ? '' : ' across ' + fmt(new Set(rows.map(r => r.institution)).size) + ' institutions'}; years as the pages give them.`);
     const t = document.createElement('table'); const thead = document.createElement('thead'); const hr = document.createElement('tr');
-    for (const h of ['Year', 'Name', 'Institution and area', 'Listed destination', 'Listed on']) hr.append(html('th', undefined, h));
+    for (const h of ['Year', 'Name', 'Institution and area', 'Listed destination']) hr.append(html('th', undefined, h));
     thead.append(hr); t.append(thead);
     const tbody = document.createElement('tbody');
     const PAGE = 120; let shown = 0;
@@ -61,7 +61,7 @@ export async function renderGraduates(section) {
       const yearMeaning = MEANING[last.yearMeaning] || MEANING[r.sightings.find(s => MEANING[s.yearMeaning])?.yearMeaning] || '';
       const yearCell = html('td', undefined, r.listedYear ? String(r.listedYear) : '—'); if (r.listedYear) yearCell.append(html('small', undefined, yearMeaning));
       const nameCell = html('td'); nameCell.append(html('strong', undefined, r.name));
-      if (r.facultyId) { const a = html('a', undefined, 'in the people database'); a.href = `?q=${encodeURIComponent(r.facultyName || r.name)}#explorer`; nameCell.append(html('small'), a); }
+      if (r.facultyId) { const a = html('a', undefined, 'in the people database'); a.href = `?q=${encodeURIComponent(r.facultyName || r.name)}#people`; nameCell.append(html('small'), a); }
       if (r.degreeReview) {
         const d = r.degreeReview, period = d.period;
         const monthLabel = period.month ? new Intl.DateTimeFormat('en', {month:'long', timeZone:'UTC'}).format(new Date(Date.UTC(period.year, period.month - 1, 1))) + ' ' : '';
@@ -110,18 +110,16 @@ export async function renderGraduates(section) {
           p.append(link(`${d.institutionAsWritten || 'Doctoral institution'} — ${d.degreeAsWritten || 'Doctoral study'}: ${d.studyRangeAsWritten}`, d.sourceUrl), html('small', undefined, `Self-reported study dates; not an independently verified conferral date. Checked ${d.checkedAt}.`));
           detail.append(p);
         }
-        for (const j of career.jobs) { const p = html('p'); p.append(link(jobText(j), j.sourceUrl), html('small', undefined, `${j.evidenceNote} · Checked ${j.checkedAt}`)); detail.append(p); }
-        for (const j of career.otherEmploymentMentions || []) { const p = html('p'); const label = j.start || j.end || j.observedPeriod ? jobText(j) : [j.employerAsWritten,j.titleAsWritten].filter(Boolean).join(' — ') || 'Supporting source'; p.append(link(`Supporting observation: ${label}`,j.sourceUrl),html('small',undefined,`${j.evidenceNote} · Checked ${j.checkedAt}`)); detail.append(p); }
-        for (const j of career.nonEmploymentExperienceEntries || []) { const p = html('p'); p.append(link(`Nonemployment: ${j.titleAsWritten || j.type} (${j.start?.asWritten || 'unknown start'} – ${j.end?.asWritten || 'unknown end'})`,j.sourceUrl),html('small',undefined,`${j.evidenceNote} · Checked ${j.checkedAt}`)); detail.append(p); }
+        for (const j of career.jobs) { const p = html('p'); p.append(link(jobText(j), j.sourceUrl), html('small', undefined, `Checked ${j.checkedAt}`)); detail.append(p); }
+        for (const j of career.otherEmploymentMentions || []) { const p = html('p'); const label = j.start || j.end || j.observedPeriod ? jobText(j) : [j.employerAsWritten,j.titleAsWritten].filter(Boolean).join(' — ') || 'Supporting source'; p.append(link(`Supporting observation: ${label}`,j.sourceUrl),html('small',undefined,`Checked ${j.checkedAt}`)); detail.append(p); }
+        for (const j of career.nonEmploymentExperienceEntries || []) { const p = html('p'); p.append(link(`Nonemployment: ${j.titleAsWritten || j.type} (${j.start?.asWritten || 'unknown start'} – ${j.end?.asWritten || 'unknown end'})`,j.sourceUrl),html('small',undefined,`Checked ${j.checkedAt}`)); detail.append(p); }
         detail.append(html('p',undefined,career.coverageNote),html('p',undefined,`${firstJob?.status === 'verified' ? 'The separate first-job review is shown above.' : r.facultyId ? 'The first-job review is maintained in the linked people record.' : 'First post-PhD job is not verified.'} This partial history includes roles before and during doctoral study.`));
         for (const text of career.remainingUnknowns || []) detail.append(html('small',undefined,text));
         nameCell.append(detail);
       }
       const instCell = html('td'); instCell.append(r.institution, html('small', undefined, [last.program, FIELD[r.field]].filter(Boolean).join(' · ')));
       const destCell = html('td', undefined, [last.position, last.destination].filter(Boolean).join(', ') || '—'); if (last.degree) destCell.append(html('small', undefined, last.degree));
-      const srcCell = html('td');
-      for (const s of r.sightings) { const tag = s.archive === 'internet-archive' || s.sourceUrl.includes('web.archive.org') ? ' (Internet Archive)' : s.archive === 'commoncrawl' ? ' (Common Crawl)' : ''; srcCell.append(link(`${s.sourceDate || 'Checked ' + s.checkedAt}${tag}`, s.sourceUrl), ' '); }
-      tr.append(yearCell, nameCell, instCell, destCell, srcCell); tbody.append(tr);
+      tr.append(yearCell, nameCell, instCell, destCell); tbody.append(tr);
     } shown = Math.min(rows.length, shown + PAGE); more.hidden = shown >= rows.length; more.textContent = `Show more (${fmt(rows.length - shown)} left)`; };
     t.append(tbody);
     const more = html('button', 'text-button', ''); more.type = 'button'; more.addEventListener('click', addRows);

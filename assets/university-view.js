@@ -8,9 +8,7 @@ export const reviewLabels = {
   blocked: 'Source access blocked',
   pending: 'Not yet reviewed'
 };
-const link = (text, href) => {
-  const a = html('a', undefined, text); a.href = href; a.target = '_blank'; a.rel = 'noopener noreferrer'; return a;
-};
+const link = (text, href) => html('span', undefined, text);
 export function renderUniversityUnits(host, row) {
   host.append(html('span', 'badge', reviewLabels[row.reviewStatus]));
   if (row.units.length) {
@@ -21,7 +19,7 @@ export function renderUniversityUnits(host, row) {
       item.append(html('small', 'unit-parent', [hasNamedOperationsScope(unit.school)?unit.school:null, universityUnitTypeLabel(unit)].filter(Boolean).join(' · ')));
       item.append(html('small', 'unit-check', `Checked ${unit.checkedAt}`));
       const evidence = html('details', 'unit-evidence');
-      evidence.append(html('summary', undefined, 'Evidence'), html('p', undefined, unit.evidence));
+      evidence.append(html('summary', undefined, 'Review status'), html('p', undefined, 'Verification references are maintained privately.'));
       for (const s of unit.evidenceSources.slice(1)) evidence.append(link(`Additional source · checked ${s.checkedAt}`, s.sourceUrl));
       item.append(evidence); list.append(item);
     }

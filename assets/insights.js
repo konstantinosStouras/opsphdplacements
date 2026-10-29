@@ -185,7 +185,7 @@ const phdInstitutionValues = idx => {const counts=new Map();for(const p of idx.p
 const employerValues = idx => { const c = {}; for (const p of idx.people) if (p.placement) {const name=idx.canonicalName?.(p.placement.employer)||p.placement.employer;c[name]=(c[name]||0)+1;} return [['', 'Choose an employer'], ...Object.entries(c).sort((a, b) => a[0].localeCompare(b[0])).map(([n, k]) => [n, `${n} (${k})`])]; };
 const mainCategory = cats => CATEGORIES.find(c => cats[c.id] === Math.max(0, ...Object.values(cats)));
 const panel = (title, cls) => { const p = html('div', 'profile-panel' + (cls ? ' ' + cls : '')); p.append(html('h4', undefined, title)); const body = html('div'); p.append(body); return [p, body]; };
-const link = (text, href) => { const a = html('a', undefined, text); a.href = href; a.target = '_blank'; a.rel = 'noopener noreferrer'; return a; };
+const link = (text, href) => html('span', undefined, text);
 
 // ---------------------------------------------------------------------------------------------
 // The merged organisation record: the two databases (universities with operations departments, and
@@ -251,7 +251,7 @@ async function entityPanel(body, name, context, actions) {
   foot.append(`Record ${e.id} in the organisation database`, counts ? ` (${fmt(counts.entities)} organisations, ${fmt(counts.inBothDatabases)} in both databases). ` : '. ', 'One organisation, with its source names retained. Missing facts remain unknown.');
   body.append(foot);
 }
-const entityPanelFor = (grid, name, context, actions) => { const [p, b] = panel('Organisation details and sources', 'entity-panel'); b.append(html('p', 'chart-empty', 'Loading the merged record…')); grid.append(p); entityPanel(b, name, context, actions); };
+const entityPanelFor = (grid, name, context, actions) => { const [p, b] = panel('Organisation details', 'entity-panel'); b.append(html('p', 'chart-empty', 'Loading the merged record…')); grid.append(p); entityPanel(b, name, context, actions); };
 
 export function renderProfile(type, hosts, idx, actions) {
   if(idx.canonicalName){profile.phd=idx.canonicalName(profile.phd);profile.employer=idx.canonicalName(profile.employer);profile.compare=profile.compare.map(idx.canonicalName);}
@@ -307,7 +307,7 @@ function renderInstitutionProfile({ controls, content }, idx, actions) {
     rankedRows(b6, { items: m.positions.slice(0, 8).map(([t, n]) => ({ label: t, value: n })), total: m.verifiedCount, emptyText: 'No verified first jobs in this period.' });
     grid.append(p5, p6);
     entityPanelFor(grid, m.name, 'phd', actions);
-    content.append(grid, html('p', 'source-stamp', 'The database includes profiles collected and reviewed from public websites, with directory cross-checks; it does not include every graduate of the program. First jobs are only those verified from a CV, placement report or appointment record; each one is linked from the explorer. Shares of job types are shares of verified first jobs.'));
+    content.append(grid, html('p', 'source-stamp', 'The database includes profiles collected and reviewed from public websites, with directory cross-checks; it does not include every graduate of the program. First jobs are only those verified from a CV, placement report or appointment record; verification references are maintained privately. Shares of job types are shares of verified first jobs.'));
   };
   draw();
 }
@@ -348,7 +348,7 @@ function renderEmployerProfile({ controls, content }, idx, actions) {
     if (!m.recent.length) b4.append(html('p', 'chart-empty', 'No verified first jobs in this period.'));
     grid.append(p3, p4);
     entityPanelFor(grid, m.name, 'employer', actions);
-    content.append(grid, html('p', 'source-stamp', 'Counts are verified first jobs after the PhD among people in this database. They are not the employer\'s total hiring, and they exclude people whose first job is still unresolved or unreviewed. Names link to the evidence used.'));
+    content.append(grid, html('p', 'source-stamp', 'Counts are verified first jobs after the PhD among people in this database. They are not the employer\'s total hiring, and they exclude people whose first job is still unresolved or unreviewed. Verification references are maintained privately.'));
   };
   draw();
 }

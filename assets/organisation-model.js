@@ -11,7 +11,7 @@ export function organisationRows(entities,universities,reviews,programs,faculty,
   // Bridge organisation views only through an already reviewed official identity.
   // A country conflict or multiple candidate reviews is left separate for research.
   const officialNames=new Map();
-  for(const r of units)if(r.universitySourceUrl){const k=fold(r.name);officialNames.set(k,[...(officialNames.get(k)||[]),r]);}
+  for(const r of units)if(r.officialIdentityReviewed){const k=fold(r.name);officialNames.set(k,[...(officialNames.get(k)||[]),r]);}
   const grouped=new Map();
   for(const e of entities.records){
    const rs=[...new Set((e.directory?.universities||[]).map(u=>sourceToReview.get(u.id)).filter(Boolean))];
@@ -19,7 +19,7 @@ export function organisationRows(entities,universities,reviews,programs,faculty,
    const matches=[...new Set(e.aliases.flatMap(n=>officialNames.get(fold(n))||[]))].filter(r=>{
     const countries=Array.isArray(r.country)?r.country:[r.country];return !e.country||!countries.filter(Boolean).length||countries.includes(e.country);
    });
-   const directOfficial=rs.filter(r=>r.universitySourceUrl);
+   const directOfficial=rs.filter(r=>r.officialIdentityReviewed);
    const directNames=new Set(directOfficial.map(r=>fold(r.name)));
    const matchNames=new Set(matches.map(r=>fold(r.name)));
    const official=directNames.size===1?directOfficial[0]:!directOfficial.length&&matchNames.size===1?matches[0]:null;
