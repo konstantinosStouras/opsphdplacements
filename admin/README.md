@@ -31,4 +31,9 @@ The owner signed in and imported the private catalog successfully. The database 
 
 ## Firebase browser key
 
-The Firebase browser API key in `firebase-config.js` is a public project identifier, not a service-account secret. It is restricted to the production website, the Firebase authentication domain and the two local preview origins, and to Cloud Firestore, Cloud Logging, Firebase Management, Identity Toolkit and Token Service APIs. The production-origin configuration request returned 200 and an unapproved origin returned 403. Firestore rules remain the data-access boundary. The generic Google-key GitHub alert is awaiting owner permission to mark this intentional public key as such; no scanning protections were disabled. See https://firebase.google.com/docs/projects/api-keys.
+The Firebase browser API key in `firebase-config.js` is a public project identifier, not a service-account secret. It is restricted to the production website, the Firebase authentication domain and the two local preview origins, and to Cloud Firestore, Cloud Logging, Firebase Management, Identity Toolkit and Token Service APIs. The production-origin configuration request returned 200 and an unapproved origin returned 403. Firestore rules remain the data-access boundary. GitHub alert #1 was resolved as an intentional public Firebase key on 29 October 2026 with explicit owner approval; no scanning protections were disabled. See https://firebase.google.com/docs/projects/api-keys.
+
+
+## Public deployment — 29 October 2026
+
+The missing public admin route was caused by the prepared release remaining unpublished. PR #1 publishes the admin directory through the existing GitHub Pages workflow. The public entry point is https://www.stouras.com/opsphdplacements/admin/ . Check the Pages deployment result before treating this route as live.
