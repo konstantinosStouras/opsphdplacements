@@ -9,6 +9,7 @@ import {renderGraduates} from './graduates.js';
 import {getIndex,coverageLede,renderCoverageYears,renderTrends as renderInsightTrends,renderProfile as renderInsightProfile,presetProfile,renderAvailability} from './insights.js';
 const $=s=>document.querySelector(s), fmt=n=>n.toLocaleString('en-GB');
 const el=(tag,text,cls)=>{const e=document.createElement(tag);if(text!==undefined)e.textContent=displayText(text);if(cls)e.className=cls;return e;};
+const stamp=(added,updated)=>added?`Added ${added.slice(0,16).replace('T',' ')} UTC`+(updated&&updated!==added?` · updated ${updated.slice(0,16).replace('T',' ')} UTC`:''):'';
 const state={faculty:[],placements:[],mode:'faculty',page:0,sort:'name',direction:1,coverage:'map',coverageToken:0,profile:'phd',profileToken:0,trend:'evolution',directoryTrend:'phdYear',filtered:[],progress:null}, SIZE=25;
 function migratePeopleHash(){if(['#explorer','#explorer.','#linkedin-histories'].includes(location.hash)){history.replaceState(null,'',location.pathname+location.search+'#people');$('#people')?.scrollIntoView();}}
 migratePeopleHash();
