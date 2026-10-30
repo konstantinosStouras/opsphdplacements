@@ -7,6 +7,14 @@ service cloud.firestore {
         && request.auth.token.email_verified == true
         && request.auth.token.firebase.sign_in_provider == 'google.com';
     }
+    match /publicColumns/{column} {
+      allow read: if true;
+      allow create, update: if isOwner()
+        && column in ['people-name','people-year','people-phd','people-affiliation','people-history','people-sectors','people-checked','organisations-name','organisations-people','organisations-programmes','graduates-year','graduates-name','graduates-institution','graduates-destination']
+        && request.resource.data.keys().hasOnly(['visible'])
+        && request.resource.data.visible is bool;
+      allow delete: if isOwner();
+    }
     match /adminConfig/{document} { allow read, write: if isOwner(); }
     match /adminSnapshots/{snapshot}/chunks/{chunk} { allow read, write: if isOwner(); }
     match /{document=**} { allow read, write: if false; }

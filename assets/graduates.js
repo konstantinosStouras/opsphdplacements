@@ -56,7 +56,7 @@ export async function renderGraduates(section) {
     const tbody = document.createElement('tbody');
     const PAGE = 120; let shown = 0;
     const addRows = () => { for (const r of rows.slice(shown, shown + PAGE)) {
-      const tr = document.createElement('tr');
+      const tr = document.createElement('tr'); tr.dataset.verificationIds=JSON.stringify([r.id]);
       const last = r.sightings[r.sightings.length - 1];
       const yearMeaning = MEANING[last.yearMeaning] || MEANING[r.sightings.find(s => MEANING[s.yearMeaning])?.yearMeaning] || '';
       const yearCell = html('td', undefined, r.listedYear ? String(r.listedYear) : '—'); if (r.listedYear) yearCell.append(html('small', undefined, yearMeaning));

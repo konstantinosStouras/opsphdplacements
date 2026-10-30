@@ -1,3 +1,5 @@
+30 October 2026 — inline administration: Google owner sign-in is on the main website. People, Organisations and Graduate tables reveal private Verification columns after sign-in. Small column-heading controls save public table visibility in Firestore; the owner sees every column. These display preferences do not alter aggregate statistics, plots or the source-free public datasets. Verification stays access-protected and cannot be made public through these controls. The legacy /admin address redirects to the main People view.
+
 Banerjee correction 166 (28 October 2026): Stanford host corroborates September 2013 postdoc start; CV August start remains conflicting. Existing jobs and unresolved first-job assessment unchanged. See review-banerjee-166-2026-10-28.
 
 Fengqi You correction 165 (28 October 2026): root verified passed PhD examination 22 October 2009, but publication remains held for qualifying population scope. Formal conferral and employment ordering remain unresolved. See review-you-165-2026-10-28.

@@ -1,3 +1,5 @@
+30 October 2026 — inline administration: Google owner sign-in is on the main website. People, Organisations and Graduate tables reveal private Verification columns after sign-in. Small column-heading controls save public table visibility in Firestore; the owner sees every column. These display preferences do not alter aggregate statistics, plots or the source-free public datasets. Verification stays access-protected and cannot be made public through these controls. The legacy /admin address redirects to the main People view.
+
 Stage 2 continuation (28 October 2026): Belloni, Jacquillat, Lavissiere, Pignanelli, Pedraza-Martinez and Roa-Henriquez integrated with nine net roles and six complete accessible LinkedIn captures. Source conflicts and partial-career status retained; no first-job verdict changes. See research-handoff/parallel-stages-2026-10-26/review-stage2-next-six-2026-10-28.
 
 # Operations PhD Placements

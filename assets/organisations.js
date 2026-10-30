@@ -45,6 +45,7 @@ export async function renderOrganisations(section,actions){
   function draw(){
    for(const r of selected.slice(shown,shown+40)){
     const tr=node('tr'),identity=node('td'),people=node('td'),evidence=node('td');
+    tr.dataset.verificationIds=JSON.stringify(r.entities.map(e=>e.id));
     identity.append(node('strong',r.name),node('small',r.countries.join(' · ')||'Country not established'));
     const currentPhds=r.programs.filter(isCurrentPhdProgramme);if(currentPhds.length)identity.append(node('small',currentPhds.length+' verified current doctoral route'+(currentPhds.length===1?'':'s')));
     const aliases=distinctNames(r.names,r.name);if(aliases.length){const d=node('details');d.append(node('summary','Other names in sources'),node('p',aliases.join('; ')));identity.append(d);}
@@ -65,7 +66,7 @@ export async function renderOrganisations(section,actions){
     if(!r.programs.length)detail.append(node('p','No doctoral programme meeting the Operations, Management Science or Industrial Engineering title rule is currently shown here. The coverage notes explain what has been checked and what remains unknown.'));
     evidence.append(detail);tr.append(identity,people,evidence);body.append(tr);
    }
-   shown=Math.min(shown+40,selected.length);count.textContent=`${shown.toLocaleString('en-GB')} of ${selected.length.toLocaleString('en-GB')} matching organisations shown`;more.hidden=shown>=selected.length;
+   document.dispatchEvent(new Event('admin-tables-ready'));shown=Math.min(shown+40,selected.length);count.textContent=`${shown.toLocaleString('en-GB')} of ${selected.length.toLocaleString('en-GB')} matching organisations shown`;more.hidden=shown>=selected.length;
    if(!selected.length){const tr=node('tr'),td=node('td','No matching organisations. Try another name or reset the filters.');td.colSpan=3;tr.append(td);body.append(tr);}
   }
   q.addEventListener('input',filter);role.addEventListener('change',filter);country.addEventListener('change',filter);review.addEventListener('change',filter);more.addEventListener('click',draw);filter();
