@@ -77,3 +77,6 @@ Record unavailable individual sources and unresolved evidence in a dated revisit
 ## Private verification administration — 29 October 2026
 
 People navigation uses `#people`, with older anchors preserved. Individual source links belong only in the authenticated admin Verification column, across People, Organisations and Graduates. Brief Operations Academia and OM List attribution remains public. The public build emits source-free projections without modifying authoritative research inputs or check dates. This supersedes older public source-link display instructions. Firebase Spark project `operations-phd-placements` uses verified owner-only Google access. See [admin/README.md](admin/README.md) for deployment, validation and source handling. Existing public Git history and repository copies are not made private by this change; future private exports must stay out of public Git.
+
+
+People pilot owner instruction — 30 October 2026: implement Anuj Mehrotra only, leaving other rows unchanged. Public full names and private attested aliases; academic CV/bio first, then LinkedIn; LinkedIn primary for people outside academia. Annual incremental additions review, preserving historic check dates and evidence; no recurring task yet. Remove repetitive career display metadata without discarding research evidence. See RESEARCH-DESIGN.md and WORKFLOW.md.

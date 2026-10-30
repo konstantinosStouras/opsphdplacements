@@ -564,3 +564,8 @@ Tardos 159: named Schurman chair documented by 20 July 2007; exact effective dat
 ## Private verification administration — 29 October 2026
 
 People navigation uses `#people`, with older anchors preserved. Individual source links belong only in the authenticated admin Verification column, across People, Organisations and Graduates. Brief Operations Academia and OM List attribution remains public. The public build emits source-free projections without modifying authoritative research inputs or check dates. This supersedes older public source-link display instructions. Firebase Spark project `operations-phd-placements` uses verified owner-only Google access. See [admin/README.md](admin/README.md) for deployment, validation and source handling. Existing public Git history and repository copies are not made private by this change; future private exports must stay out of public Git.
+
+
+People pilot (30 October 2026): reviewed Anuj Mehrotra full-name display, admin-only alias editing/storage, grouped 12-role history without repeated check dates or record stamps, and biography-first verification. No other rows reviewed or rewritten. Next: owner review of pilot, then reconcile the existing linked duplicate before any wider full-name rollout. Annual incremental reviews are a policy only; do not schedule a runner.
+
+People filters (30 October 2026): Institution, PhD institution and Discipline now accept typing and show matching selectable options; support arrows/Enter/Escape, clearing and reset. The table heading is “Current affiliation, position” at the owner’s request; this label does not change the evidence status or freshness of underlying affiliations.

@@ -225,3 +225,8 @@ Latest degree observations (27 October 2026): three reviewed MIT doctoral milest
 ## Private verification administration — 29 October 2026
 
 People navigation uses `#people`, with older anchors preserved. Individual source links belong only in the authenticated admin Verification column, across People, Organisations and Graduates. Brief Operations Academia and OM List attribution remains public. The public build emits source-free projections without modifying authoritative research inputs or check dates. This supersedes older public source-link display instructions. Firebase Spark project `operations-phd-placements` uses verified owner-only Google access. See [admin/README.md](admin/README.md) for deployment, validation and source handling. Existing public Git history and repository copies are not made private by this change; future private exports must stay out of public Git.
+
+
+People presentation pilot (30 October 2026): the source-roster entry for Anuj Mehrotra displays his reviewed full name and grouped career roles. Signed-in owners see a locked Aliases column, with editing enabled for this pilot only, and academic biography before LinkedIn in Verification. Other person records are unchanged; a separate existing entry for the same person remains to reconcile.
+
+People filters (30 October 2026): Institution, PhD institution and Discipline now accept typing and show matching selectable options; support arrows/Enter/Escape, clearing and reset. The table heading is “Current affiliation, position” at the owner’s request; this label does not change the evidence status or freshness of underlying affiliations.

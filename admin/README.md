@@ -50,3 +50,8 @@ The missing public admin route was caused by the prepared release remaining unpu
 
 
 Inline release validation (30 October 2026): 68 tests and all data/stamp validators passed. Browser checks confirmed owner Google sign-in on the main page, 14 ordinary heading controls, stable-ID private verification, public hide/show for People and Organisations, persistence after public reload, continued plot rendering, and zero private cells/controls after sign-out. Anonymous settings writes and private manifest/chunk reads returned 403. Test column changes were restored.
+
+
+People pilot (30 October 2026): Aliases is an always-private People column, alongside always-private Verification. The pilot editor saves attested names to adminConfig/peopleAliases under existing owner-only rules, never publicColumns or public assets. It does not enable public visibility controls for either private column. Editing is currently scoped to Anuj Mehrotra. Sign-out clears alias and catalog state. The academic biography is prioritised over LinkedIn for this pilot; all other source orders stay unchanged.
+
+Pilot validation (30 October 2026): 68 tests plus all data and record-stamp validators passed in the isolated publication tree. Browser checks confirmed filtered suggestions for all three People controls, keyboard selection/reset, 12 retained career roles, private alias save, biography-before-LinkedIn ordering, and zero private columns after sign-out. Underlying person/history datasets are unchanged.
