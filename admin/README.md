@@ -47,3 +47,6 @@ The Firebase browser API key in `firebase-config.js` is a public project identif
 ## Public deployment — 29 October 2026
 
 The missing public admin route was caused by the prepared release remaining unpublished. PR #1 publishes the admin directory through the existing GitHub Pages workflow. The public entry point is https://www.stouras.com/opsphdplacements/admin/ . Check the Pages deployment result before treating this route as live.
+
+
+Inline release validation (30 October 2026): 68 tests and all data/stamp validators passed. Browser checks confirmed owner Google sign-in on the main page, 14 ordinary heading controls, stable-ID private verification, public hide/show for People and Organisations, persistence after public reload, continued plot rendering, and zero private cells/controls after sign-out. Anonymous settings writes and private manifest/chunk reads returned 403. Test column changes were restored.

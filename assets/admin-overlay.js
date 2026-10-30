@@ -79,6 +79,7 @@ button?.addEventListener('click',async()=>{
   catch(error){status.textContent='Sign-in could not finish. '+error.message;}
   finally{button.disabled=false;}
 });
+if(button)button.disabled=false;
 watchUser(async user=>{
   const current=++revision;owner=authorised(user);indices=null;
   document.documentElement.classList.toggle('admin-signed-in',owner);
