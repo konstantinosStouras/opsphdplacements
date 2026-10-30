@@ -9,6 +9,16 @@ export const authorised = user => user?.email===ADMIN_EMAIL && user.emailVerifie
 export const watchUser = callback => onAuthStateChanged(auth,callback);
 export const logout = () => signOut(auth);
 export const watchColumns = (callback,onError) => onSnapshot(collection(db,'publicColumns'),snapshot=>callback(Object.fromEntries(snapshot.docs.map(d=>[d.id,d.data().visible]))),onError);
+export async function readPeopleAliases(){
+  if(!authorised(auth.currentUser))throw Error('Owner sign-in required.');
+  const result=await getDoc(doc(db,'adminConfig','peopleAliases'));
+  return result.exists()?result.data():{};
+}
+export async function savePeopleAliases(id,aliases){
+  if(!authorised(auth.currentUser))throw Error('Owner sign-in required.');
+  if(typeof id!=='string'||!Array.isArray(aliases)||aliases.length>20||aliases.some(a=>typeof a!=='string'||!a.trim()||a.length>150))throw Error('Enter up to 20 names, each under 150 characters.');
+  await setDoc(doc(db,'adminConfig','peopleAliases'),{[id]:{aliases:[...new Set(aliases.map(a=>a.trim()))]}},{merge:true});
+}
 export async function saveColumn(id,visible){
   if(!authorised(auth.currentUser))throw Error('Owner sign-in required.');
   await setDoc(doc(db,'publicColumns',id),{visible});
