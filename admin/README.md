@@ -1,3 +1,13 @@
+# Main-site administration — 30 October 2026
+
+Use **Admin sign-in** in the main navigation; Google sign-in reveals Verification in the existing People, Organisations and Graduate tables. No separate browsing dashboard is required. `/admin` redirects to the main site. Source links remain private and are joined by stable IDs; grouped organisations use their constituent entity IDs. Missing source records are not guessed.
+
+Each ordinary heading has a small public-visibility button for the owner. Amber columns are hidden from public tables, but remain visible in admin mode. Settings persist across browsers through `publicColumns`, whose documents contain only a visibility boolean. Statistics and plots remain public. This is presentation control, not protection for facts already included in public datasets or Git history. Verification is always private and has a locked indicator.
+
+Firebase Spark, the eur3 database, Google owner authentication and the imported catalog were configured and verified on 29 October. Publishing the inline UI does not reimport research data. Session and private catalog remain in memory; sign-out removes private cells.
+
+## Previous implementation checkpoint
+
 # Private research administration — work in progress, 29 October 2026
 
 The owner requested private verification links across People, Organisations and Graduates. All individual links belong in the admin Verification column, including recorded LinkedIn and Google Scholar profiles. Brief OM List and Operations Academia attribution remains public.

@@ -1,6 +1,6 @@
 import {initializeApp} from 'https://www.gstatic.com/firebasejs/13.1.0/firebase-app.js';
 import {getAuth,GoogleAuthProvider,signInWithPopup,signOut,onAuthStateChanged,setPersistence,inMemoryPersistence} from 'https://www.gstatic.com/firebasejs/13.1.0/firebase-auth.js';
-import {getFirestore,doc,getDoc,writeBatch} from 'https://www.gstatic.com/firebasejs/13.1.0/firebase-firestore.js';
+import {getFirestore,doc,getDoc,writeBatch,collection,onSnapshot,setDoc} from 'https://www.gstatic.com/firebasejs/13.1.0/firebase-firestore.js';
 import {firebaseConfig,ADMIN_EMAIL} from './firebase-config.js';
 const app=initializeApp(firebaseConfig),auth=getAuth(app),db=getFirestore(app);
 // Private data is kept in memory; do not enable persistent Firestore caching.
@@ -8,6 +8,11 @@ await setPersistence(auth,inMemoryPersistence);
 export const authorised = user => user?.email===ADMIN_EMAIL && user.emailVerified && user.providerData.some(provider=>provider.providerId==='google.com');
 export const watchUser = callback => onAuthStateChanged(auth,callback);
 export const logout = () => signOut(auth);
+export const watchColumns = (callback,onError) => onSnapshot(collection(db,'publicColumns'),snapshot=>callback(Object.fromEntries(snapshot.docs.map(d=>[d.id,d.data().visible]))),onError);
+export async function saveColumn(id,visible){
+  if(!authorised(auth.currentUser))throw Error('Owner sign-in required.');
+  await setDoc(doc(db,'publicColumns',id),{visible});
+}
 export async function login(){const provider=new GoogleAuthProvider();provider.setCustomParameters({login_hint:ADMIN_EMAIL});return signInWithPopup(auth,provider);}
 const hash = async text => [...new Uint8Array(await crypto.subtle.digest('SHA-256',new TextEncoder().encode(text)))].map(byte=>byte.toString(16).padStart(2,'0')).join('');
 export async function readCatalog(){
